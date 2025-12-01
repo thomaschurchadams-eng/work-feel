@@ -272,6 +272,17 @@ header {
   border: 1px solid #10bfa6;
 }
 
+.article-body {
+  display: none;
+}
+
+.card-read-more {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .card .actions {
   margin-top: auto;
   display: flex;
