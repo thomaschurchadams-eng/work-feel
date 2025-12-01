@@ -1,240 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Credit Union AI Media Platform</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreditUnionAI.fm | Home</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="nav">
-      <div class="brand">
-        <span class="brand-mark">CU</span>
-        <span class="brand-name">Credit Union AI Media</span>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">CreditUnionAI<span>.fm</span></a>
+      <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
       </div>
       <nav class="nav-links">
-        <a href="#overview">Overview</a>
-        <a href="#features">Features</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="insights.html">Insights</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="about.html">About</a>
       </nav>
-      <a class="cta" href="#contact">Request Demo</a>
-    </div>
-
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="eyebrow">Smarter member storytelling</p>
-        <h1>AI-powered media platform built for credit unions</h1>
-        <p class="lead">
-          Launch newsroom-ready campaigns, automate compliance checks, and deliver
-          personalized content to every member channel—without adding headcount.
-        </p>
-        <div class="hero-actions">
-          <a class="cta primary" href="#features">Explore features</a>
-          <a class="cta ghost" href="#contact">Talk to us</a>
-        </div>
-        <div class="stats">
-          <div>
-            <strong>45%</strong>
-            <span>Faster content approvals</span>
-          </div>
-          <div>
-            <strong>3x</strong>
-            <span>More member engagement</span>
-          </div>
-          <div>
-            <strong>99.9%</strong>
-            <span>Automated compliance coverage</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-panel">
-        <div class="panel-card">
-          <h2>Media Control Center</h2>
-          <p>Monitor campaigns, review AI-suggested assets, and ship content to web, email, and branch screens.</p>
-          <ul>
-            <li><span class="tag">Live</span> Omni-channel scheduler</li>
-            <li><span class="tag">AI</span> Tone + compliance scoring</li>
-            <li><span class="tag">New</span> Member sentiment dashboard</li>
-          </ul>
-          <button class="cta primary block">Start a pilot</button>
-        </div>
-      </div>
     </div>
   </header>
 
   <main>
-    <section id="overview" class="section grid two-column">
-      <div>
-        <p class="eyebrow">Built for credit union marketing teams</p>
-        <h2>Media creation, compliance, and delivery in one flow</h2>
-        <p>
-          Consolidate your creative operations with a platform that blends AI drafting,
-          human review, and automated distribution. Give teams the speed they want
-          with the guardrails your board expects.
-        </p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="tag">CreditUnionAI.fm</p>
+          <h1>AI news and insights for credit-union leaders.</h1>
+          <p>Fast, clear briefings on how AI is changing credit unions — without the hype. Curated headlines, expert analysis, and a weekly audio rundown tailored to your members-first strategy.</p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="episodes.html">Listen to Latest Episode</a>
+            <a class="btn btn-outline" href="newsletter.html">Get Weekly Briefing</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>This week</h3>
+          <p>Core upgrades, AI fraud signals, and member service copilots. Plus: vendor scorecard checks and what boards are asking right now.</p>
+          <div class="meta">
+            <span class="pill">Weekly Briefing</span>
+            <span class="pill">6 min listen</span>
+          </div>
+        </div>
       </div>
-      <div class="card-list">
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Latest News</h2>
+            <p class="lead">Curated headlines on AI regulation, vendor moves, and frontline member experience.</p>
+          </div>
+        </div>
+        <div class="grid cards-3">
+          <article class="card">
+            <div class="meta"><span class="tag">Risk</span><span>Sep 9</span></div>
+            <h3>NCUA outlines AI model risk expectations</h3>
+            <p>Supervisory letter draft signals third-party oversight and transparency requirements for AI decisioning tools in lending workflows.</p>
+            <div class="actions">
+              <a class="link" href="#">Read more →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="meta"><span class="tag">Member Experience</span><span>Sep 8</span></div>
+            <h3>Copilots move into live chat</h3>
+            <p>Two major platform vendors launched AI assist for chat reps, surfacing knowledge base answers and next best actions.</p>
+            <div class="actions">
+              <a class="link" href="#">Read more →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="meta"><span class="tag">Operations</span><span>Sep 7</span></div>
+            <h3>Automation pilots target ACH disputes</h3>
+            <p>Selective automation is reducing manual handling time by 30-40% with transparent human review checkpoints.</p>
+            <div class="actions">
+              <a class="link" href="#">Read more →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="meta"><span class="tag">Strategy</span><span>Sep 6</span></div>
+            <h3>Boards ask for AI progress scorecards</h3>
+            <p>Boards are requesting clear views of AI ROI, model governance, and member trust safeguards ahead of budget season.</p>
+            <div class="actions">
+              <a class="link" href="#">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Latest Episode</h2>
+            <p class="lead">A concise audio rundown on AI moves reshaping member service and back office efficiency.</p>
+          </div>
+          <a class="btn btn-primary" href="episodes.html">Browse episodes</a>
+        </div>
         <div class="card">
-          <h3>AI newsroom</h3>
-          <p>Generate member-focused stories, campaign briefs, and talking points that align with your brand voice.</p>
-        </div>
-        <div class="card">
-          <h3>Compliance copilot</h3>
-          <p>Run instant checks against your policy library and document approvals with audit-ready trails.</p>
-        </div>
-        <div class="card">
-          <h3>Signal-led delivery</h3>
-          <p>Target content by life events, membership segments, and branch-level insights with zero manual routing.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="section features">
-      <div class="section-header">
-        <p class="eyebrow">Platform capabilities</p>
-        <h2>Everything you need to turn insights into action</h2>
-        <p class="muted">Purpose-built controls keep your team fast, safe, and on-brand.</p>
-      </div>
-      <div class="feature-grid">
-        <article class="feature">
-          <h3>Unified asset hub</h3>
-          <p>Store brand-safe media, approvals, and usage rights in a single searchable library.</p>
-        </article>
-        <article class="feature">
-          <h3>Member AI profiles</h3>
-          <p>Summarize conversations and feedback to tailor media to real member needs.</p>
-        </article>
-        <article class="feature">
-          <h3>Automated QA</h3>
-          <p>Automatic readability, ADA, and compliance checks with human-in-the-loop overrides.</p>
-        </article>
-        <article class="feature">
-          <h3>Branch screen manager</h3>
-          <p>Schedule localized playlists for lobby displays and ATMs with remote health monitoring.</p>
-        </article>
-        <article class="feature">
-          <h3>Insights & reporting</h3>
-          <p>Measure engagement across channels with attribution tied back to member growth KPIs.</p>
-        </article>
-        <article class="feature">
-          <h3>Secure by design</h3>
-          <p>SOC 2-ready security, SSO/SAML, and data residency options tailored to credit unions.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="workflow" class="section timeline">
-      <div class="section-header">
-        <p class="eyebrow">Delivery workflow</p>
-        <h2>From idea to member channels in minutes</h2>
-        <p class="muted">A guided process that keeps creators, compliance, and IT aligned.</p>
-      </div>
-      <div class="timeline-grid">
-        <div class="timeline-step">
-          <div class="step-number">1</div>
-          <div>
-            <h3>Capture signals</h3>
-            <p>Import member insights from CRM, surveys, and frontline teams to seed AI recommendations.</p>
-          </div>
-        </div>
-        <div class="timeline-step">
-          <div class="step-number">2</div>
-          <div>
-            <h3>Create & co-edit</h3>
-            <p>Draft multi-format stories with AI while collaborating live with marketing and compliance partners.</p>
-          </div>
-        </div>
-        <div class="timeline-step">
-          <div class="step-number">3</div>
-          <div>
-            <h3>Approve with confidence</h3>
-            <p>Track version history, policy scores, and reviewer sign-offs before anything goes live.</p>
-          </div>
-        </div>
-        <div class="timeline-step">
-          <div class="step-number">4</div>
-          <div>
-            <h3>Publish everywhere</h3>
-            <p>Push approved assets to web, email, mobile banking, and digital signage with a single click.</p>
+          <div class="meta"><span class="tag">Podcast</span><span>24 min</span></div>
+          <h3>Building member trust with transparent AI</h3>
+          <p>How one credit union is pairing human review with AI copilots to increase first-contact resolution while keeping members confident.</p>
+          <div class="actions">
+            <button class="play-btn" type="button">▶ Play</button>
+            <a class="link" href="episodes.html">Show notes →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section callout">
-      <div>
-        <p class="eyebrow">Member-first and enterprise-ready</p>
-        <h2>Partner with a platform that respects your mission</h2>
-        <p>
-          We combine credit union expertise with modern AI tooling so you can educate, build trust,
-          and grow membership without compromising on security or compliance.
-        </p>
+    <section class="section">
+      <div class="container">
+        <h2>Why this exists</h2>
+        <p class="lead">CreditUnionAI.fm is a neutral AI news and insights hub for credit unions. We sift the signal from the hype, highlight practical wins, and keep teams aligned on trust, governance, and member-first execution.</p>
       </div>
-      <div class="callout-actions">
-        <a class="cta primary" href="#contact">Schedule a strategy session</a>
-        <a class="cta ghost" href="#overview">See how it works</a>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-header">
-        <p class="eyebrow">Let’s talk</p>
-        <h2>Ready to modernize your media operations?</h2>
-        <p class="muted">Share your priorities and we’ll tailor a pilot for your branches.</p>
-      </div>
-      <form class="contact-form">
-        <div class="form-row">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Jordan Lee" required />
-          </label>
-          <label>
-            Work email
-            <input type="email" name="email" placeholder="you@creditunion.org" required />
-          </label>
-        </div>
-        <div class="form-row">
-          <label>
-            Organization
-            <input type="text" name="org" placeholder="Community Credit Union" />
-          </label>
-          <label>
-            Role
-            <input type="text" name="role" placeholder="Marketing Director" />
-          </label>
-        </div>
-        <label>
-          What can we help you achieve?
-          <textarea name="message" rows="4" placeholder="e.g., automate compliance checks, launch branch screens, increase member engagement"></textarea>
-        </label>
-        <button class="cta primary" type="submit">Submit</button>
-      </form>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-brand">
-      <div class="brand">
-        <span class="brand-mark">CU</span>
-        <span class="brand-name">Credit Union AI Media</span>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;">
+      <div>© CreditUnionAI.fm</div>
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="about.html">About</a>
       </div>
-      <p class="muted">Modern media operations for member-centric credit unions.</p>
-    </div>
-    <div class="footer-links">
-      <a href="#features">Features</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="footer-meta">
-      <span class="tag">SOC2-ready</span>
-      <span class="tag">SSO/SAML</span>
-      <span class="tag">Data residency options</span>
     </div>
   </footer>
+  <script src="assets/app.js"></script>
 </body>
 </html>
