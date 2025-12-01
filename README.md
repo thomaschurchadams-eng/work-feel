@@ -4,14 +4,16 @@ A responsive, multi-page static site for **CreditUnionAI.fm** with shared naviga
 
 ## Preview locally
 
+Quickest path (uses Python, preinstalled on most systems):
+
 1. From the project root, start a lightweight server:
    ```bash
    python3 -m http.server 8000
    ```
-2. Open http://localhost:8000/ in your browser.
-3. Navigate between pages using the top nav (mobile users can toggle the hamburger menu).
+2. Open http://localhost:8000/ in your browser. You can click between `index.html`, `news.html`, `episodes.html`, `insights.html`, `newsletter.html`, and `about.html` from the nav bar.
+3. Stop the server with `Ctrl+C` when finished.
 
-Stop the server with `Ctrl+C` when you are done.
+If you prefer a different port, change `8000` above and open that port in the URL instead.
 
 ## File map
 - `index.html` — Home hero, latest news highlights, latest episode card, and mission statement
