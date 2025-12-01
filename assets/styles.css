@@ -272,8 +272,23 @@ header {
   border: 1px solid #10bfa6;
 }
 
-.article-body {
+.card .article-body {
   display: none;
+}
+
+.article-body {
+  margin-top: 1.25rem;
+  line-height: 1.6;
+}
+
+.article-date {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-tags {
+  margin-bottom: 1rem;
 }
 
 .card-read-more {
