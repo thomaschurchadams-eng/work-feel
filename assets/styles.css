@@ -227,6 +227,8 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
+  row-gap: 8px;
   color: #5c6a82;
   font-size: 14px;
 }
