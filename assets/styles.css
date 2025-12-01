@@ -244,24 +244,30 @@ header {
 }
 
 .label-tag {
-  display: inline-block;
-  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
   font-size: 0.75rem;
-  font-weight: 600;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  font-weight: 700;
+  border-radius: 999px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
+  line-height: 1.1;
+  align-self: flex-start;
+  box-shadow: 0 8px 18px rgba(11, 31, 59, 0.12);
 }
 
 .label-analysis {
   background-color: #0b1f3b;
   color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .label-reporting {
-  background-color: #10bfa6;
+  background-color: rgba(16, 191, 166, 0.14);
   color: #0b1f3b;
+  border: 1px solid #10bfa6;
 }
 
 .card .actions {
