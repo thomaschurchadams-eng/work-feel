@@ -310,6 +310,13 @@ header {
   color: var(--teal);
 }
 
+.filter-btn.active {
+  background: rgba(31, 182, 170, 0.14);
+  border-color: var(--teal);
+  color: var(--navy);
+  box-shadow: 0 8px 20px rgba(31, 182, 170, 0.18);
+}
+
 .form-card {
   max-width: 520px;
   margin: 0 auto;
