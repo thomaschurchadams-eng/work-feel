@@ -218,6 +218,14 @@
       const filterButtons = document.querySelectorAll('.filter-btn[data-filter]');
       const cards = document.querySelectorAll('.grid.cards-3 .card');
 
+      cards.forEach((card) => {
+        if (card.dataset.articleType) return;
+        const isAnalysis = card.querySelector('.label-analysis');
+        const isReporting = card.querySelector('.label-reporting');
+        if (isAnalysis) card.dataset.articleType = 'analysis';
+        if (!card.dataset.articleType && isReporting) card.dataset.articleType = 'reporting';
+      });
+
       const applyFilter = (filter) => {
         cards.forEach((card) => {
           const type = card.getAttribute('data-article-type');
@@ -230,11 +238,13 @@
         button.addEventListener('click', () => {
           filterButtons.forEach((btn) => btn.classList.remove('active'));
           button.classList.add('active');
+          filterButtons.forEach((btn) => btn.setAttribute('aria-pressed', btn === button));
           applyFilter(button.dataset.filter);
         });
       });
 
       const initial = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
+      filterButtons.forEach((btn) => btn.setAttribute('aria-pressed', btn.dataset.filter === initial));
       applyFilter(initial);
     })();
   </script>

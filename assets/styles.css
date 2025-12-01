@@ -292,7 +292,13 @@ header {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  align-items: center;
+  margin: 18px 0;
+  padding: 10px 12px;
+  background: var(--white);
+  border: 1px solid var(--soft-gray);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
 }
 
 .filter-btn {
@@ -303,6 +309,8 @@ header {
   cursor: pointer;
   font-weight: 600;
   color: #304261;
+  min-width: 110px;
+  text-align: center;
 }
 
 .filter-btn:hover {
