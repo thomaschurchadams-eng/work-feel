@@ -1,6 +1,6 @@
-# CreditUnionAI.fm Static Site
+# CreditUnionAI News Static Site
 
-A responsive, multi-page static site for **CreditUnionAI.fm** with shared navigation, footer, and consistent styling across Home, News, Episodes, Insights, Newsletter, and About pages.
+A responsive, multi-page static site for **CreditUnionAI News** with shared navigation, footer, and consistent styling across Home, News, Episodes, Insights, Newsletter, and About pages.
 
 ## Preview locally
 
