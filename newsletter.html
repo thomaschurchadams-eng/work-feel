@@ -40,15 +40,21 @@
               <input id="firstName" name="firstName" type="text" placeholder="Alex">
             </div>
             <button class="btn btn-primary" type="submit">Subscribe</button>
-            <p style="color:#5c6a82; font-weight:600; font-size:0.9rem;">Submissions are saved below so you can keep a record of opt-in requests.</p>
+            <p style="color:#5c6a82; font-weight:600; font-size:0.9rem;">Submissions save to the on-page log and can be exported for your records.</p>
             <div class="notice status" style="display:none;"></div>
           </form>
         </div>
 
         <div class="signup-log" aria-live="polite">
           <div class="signup-log-header">
-            <h3>Recent signups (device-only log)</h3>
-            <p class="muted-text">Entries save to this browser so you can reference requests or export them later.</p>
+            <div>
+              <h3>Recent signups</h3>
+              <p class="muted-text">Entries are stored locally. Export them for your CRM or ESP.</p>
+            </div>
+            <div class="signup-actions">
+              <button type="button" class="signup-action-btn" id="export-signups">Export CSV</button>
+              <button type="button" class="signup-action-btn ghost" id="clear-signups">Clear log</button>
+            </div>
           </div>
           <div id="signup-entries" class="signup-entries"></div>
         </div>
