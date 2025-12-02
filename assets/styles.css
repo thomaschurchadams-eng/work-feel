@@ -371,6 +371,25 @@ header {
   font-size: 0.9rem;
 }
 
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.log-table th,
+.log-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--soft-gray);
+  font-size: 14px;
+}
+
+.log-table th {
+  background: var(--gray);
+  color: var(--navy);
+  font-weight: 800;
+}
+
 .muted-text {
   color: #6b7280;
   font-size: 0.95rem;

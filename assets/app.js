@@ -22,75 +22,39 @@
   });
 
   const newsletterForm = document.querySelector('#newsletter-form');
-  const signupEntriesContainer = document.querySelector('#signup-entries');
+  const signupTableBody = document.querySelector('#signup-table-body');
+  const signupEmptyState = document.querySelector('#signup-empty');
   const exportSignupsBtn = document.querySelector('#export-signups');
   const clearSignupsBtn = document.querySelector('#clear-signups');
-  let signupDbPromise;
+  const SIGNUP_KEY = 'cuai_newsletter_signups';
 
-  const getSignupDb = () => {
-    if (signupDbPromise) return signupDbPromise;
-
-    signupDbPromise = new Promise((resolve, reject) => {
-      const request = indexedDB.open('creditunionai-signups', 1);
-
-      request.onupgradeneeded = () => {
-        const db = request.result;
-        if (!db.objectStoreNames.contains('signups')) {
-          db.createObjectStore('signups', { keyPath: 'id', autoIncrement: true });
-        }
-      };
-
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
-    });
-
-    return signupDbPromise;
-  };
-
-  const loadNewsletterSignups = async () => {
+  const loadSignups = () => {
     try {
-      const db = await getSignupDb();
-      return await new Promise((resolve, reject) => {
-        const transaction = db.transaction('signups', 'readonly');
-        const store = transaction.objectStore('signups');
-        const request = store.getAll();
-        request.onsuccess = () => resolve(request.result || []);
-        request.onerror = () => reject(request.error);
-      });
+      const raw = localStorage.getItem(SIGNUP_KEY);
+      const parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed : [];
     } catch (err) {
-      console.error('Unable to read newsletter signups', err);
+      console.error('Unable to read newsletter signups from localStorage', err);
       return [];
     }
   };
 
-  const saveNewsletterSignup = async (entry) => {
+  const saveSignups = (entries) => {
     try {
-      const db = await getSignupDb();
-      await new Promise((resolve, reject) => {
-        const transaction = db.transaction('signups', 'readwrite');
-        const store = transaction.objectStore('signups');
-        const request = store.add(entry);
-        request.onsuccess = () => resolve(true);
-        request.onerror = () => reject(request.error);
-      });
+      localStorage.setItem(SIGNUP_KEY, JSON.stringify(entries));
     } catch (err) {
-      console.error('Unable to save newsletter signup', err);
+      console.error('Unable to store newsletter signups', err);
     }
   };
 
-  const clearNewsletterSignups = async () => {
-    try {
-      const db = await getSignupDb();
-      await new Promise((resolve, reject) => {
-        const transaction = db.transaction('signups', 'readwrite');
-        const store = transaction.objectStore('signups');
-        const request = store.clear();
-        request.onsuccess = () => resolve(true);
-        request.onerror = () => reject(request.error);
-      });
-    } catch (err) {
-      console.error('Unable to clear newsletter signups', err);
-    }
+  const addSignup = (entry) => {
+    const current = loadSignups();
+    current.push(entry);
+    saveSignups(current);
+  };
+
+  const clearSignups = () => {
+    localStorage.removeItem(SIGNUP_KEY);
   };
 
   const formatTimestamp = (date) => {
@@ -107,52 +71,53 @@
     }
   };
 
-  const renderSignupEntries = async () => {
-    if (!signupEntriesContainer) return;
-    const entries = (await loadNewsletterSignups()).sort((a, b) => {
+  const renderSignupTable = () => {
+    if (!signupTableBody) return;
+    const entries = loadSignups().sort((a, b) => {
       const aDate = new Date(a.isoTimestamp || a.timestamp || 0);
       const bDate = new Date(b.isoTimestamp || b.timestamp || 0);
       return bDate - aDate;
     });
 
+    if (signupEmptyState) {
+      signupEmptyState.style.display = entries.length ? 'none' : 'block';
+    }
+
     if (!entries.length) {
-      signupEntriesContainer.innerHTML = '<p class="muted-text">No signups captured on this device yet.</p>';
+      signupTableBody.innerHTML = '';
       return;
     }
 
-    signupEntriesContainer.innerHTML = entries
-      .map((entry) => {
-        const namePart = entry.firstName ? ` · ${entry.firstName}` : '';
-        return `
-          <div class="signup-entry">
-            <div><strong>${entry.email}</strong>${namePart}</div>
-            <div class="signup-entry-date">${entry.timestamp}</div>
-          </div>
-        `;
-      })
+    signupTableBody.innerHTML = entries
+      .map(
+        (entry) => `
+          <tr>
+            <td>${entry.email}</td>
+            <td>${entry.firstName || ''}</td>
+            <td>${entry.timestamp || ''}</td>
+          </tr>
+        `
+      )
       .join('');
   };
 
   if (newsletterForm) {
-    renderSignupEntries();
-
-    newsletterForm.addEventListener('submit', async (e) => {
+    newsletterForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = newsletterForm.querySelector('#email')?.value?.trim() || '';
       const firstName = newsletterForm.querySelector('#firstName')?.value?.trim() || '';
       const status = newsletterForm.querySelector('.status');
 
       const now = new Date();
-      await saveNewsletterSignup({
+      addSignup({
         email,
         firstName,
         timestamp: formatTimestamp(now),
         isoTimestamp: now.toISOString()
       });
-      await renderSignupEntries();
 
       if (status) {
-        status.textContent = 'Saved to your signup log. We will follow up soon.';
+        status.textContent = 'Thanks for subscribing.';
         status.style.display = 'block';
       }
 
@@ -160,13 +125,17 @@
     });
   }
 
+  if (signupTableBody) {
+    renderSignupTable();
+  }
+
   if (exportSignupsBtn) {
-    exportSignupsBtn.addEventListener('click', async () => {
-      const entries = await loadNewsletterSignups();
+    exportSignupsBtn.addEventListener('click', () => {
+      const entries = loadSignups();
       if (!entries.length) return;
-      const header = 'Email,First Name,Timestamp\n';
+      const header = 'Email,First Name,Subscribed At\n';
       const rows = entries
-        .map((entry) => `${entry.email},${entry.firstName || ''},${entry.timestamp}`)
+        .map((entry) => `${entry.email},${entry.firstName || ''},${entry.timestamp || ''}`)
         .join('\n');
       const blob = new Blob([header + rows], { type: 'text/csv' });
       const url = URL.createObjectURL(blob);
@@ -179,9 +148,9 @@
   }
 
   if (clearSignupsBtn) {
-    clearSignupsBtn.addEventListener('click', async () => {
-      await clearNewsletterSignups();
-      await renderSignupEntries();
+    clearSignupsBtn.addEventListener('click', () => {
+      clearSignups();
+      renderSignupTable();
     });
   }
 })();

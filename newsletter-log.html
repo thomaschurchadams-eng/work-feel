@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CreditUnionAI News | Newsletter</title>
+  <title>CreditUnionAI News | Newsletter Log</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -27,21 +27,24 @@
   <main>
     <section class="section">
       <div class="container">
-        <h1 style="color:#0b1f3b; font-size:32px; margin-bottom:10px;">Weekly AI Briefing</h1>
-        <p class="lead">Every Friday: the 10-minute rundown on AI moves that matter to credit unions, with talking points for your team and board.</p>
-        <div class="card form-card" style="margin-top:20px;">
-          <form id="newsletter-form">
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required>
-            </div>
-            <div>
-              <label for="firstName">First name <span style="color:#5c6a82; font-weight:500;">(optional)</span></label>
-              <input id="firstName" name="firstName" type="text" placeholder="Alex">
-            </div>
-            <button class="btn btn-primary" type="submit">Subscribe</button>
-            <div class="notice status" style="display:none;"></div>
-          </form>
+        <h1 style="color:#0b1f3b; font-size:32px; margin-bottom:10px;">Newsletter Signups (Local Preview)</h1>
+        <p class="lead">These signups are stored in this browser only (localStorage). For production, we will connect this form to a real email platform.</p>
+        <div class="signup-actions" style="margin:16px 0;">
+          <button type="button" class="signup-action-btn" id="export-signups">Export CSV</button>
+          <button type="button" class="signup-action-btn ghost" id="clear-signups">Clear log</button>
+        </div>
+        <div class="card" style="padding:0; overflow-x:auto;">
+          <table class="log-table" style="width:100%; border-collapse:collapse;">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:12px;">Email</th>
+                <th style="text-align:left; padding:12px;">First Name</th>
+                <th style="text-align:left; padding:12px;">Subscribed At</th>
+              </tr>
+            </thead>
+            <tbody id="signup-table-body"></tbody>
+          </table>
+          <p id="signup-empty" class="muted-text" style="padding:12px; margin:0;">No signups captured on this browser yet.</p>
         </div>
       </div>
     </section>
