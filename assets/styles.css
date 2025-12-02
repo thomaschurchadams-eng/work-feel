@@ -545,6 +545,14 @@ input[type="text"]:focus {
   background: rgba(31, 182, 170, 0.22);
 }
 
+.audio-player {
+  margin-top: 8px;
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
 .coming-soon {
   color: #6b7280;
   font-size: 14px;
