@@ -22,8 +22,63 @@
   });
 
   const newsletterForm = document.querySelector('#newsletter-form');
+  const signupEntriesContainer = document.querySelector('#signup-entries');
+
+  const loadNewsletterSignups = () => {
+    try {
+      return JSON.parse(localStorage.getItem('newsletterSignups')) || [];
+    } catch (err) {
+      console.error('Unable to read newsletter signups', err);
+      return [];
+    }
+  };
+
+  const saveNewsletterSignups = (entries) => {
+    try {
+      localStorage.setItem('newsletterSignups', JSON.stringify(entries));
+    } catch (err) {
+      console.error('Unable to save newsletter signups', err);
+    }
+  };
+
+  const formatTimestamp = (date) => {
+    try {
+      return new Intl.DateTimeFormat('en', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit'
+      }).format(date);
+    } catch (err) {
+      return date.toISOString();
+    }
+  };
+
+  const renderSignupEntries = () => {
+    if (!signupEntriesContainer) return;
+    const entries = loadNewsletterSignups();
+
+    if (!entries.length) {
+      signupEntriesContainer.innerHTML = '<p class="muted-text">No signups captured on this device yet.</p>';
+      return;
+    }
+
+    signupEntriesContainer.innerHTML = entries
+      .map((entry) => {
+        const namePart = entry.firstName ? ` · ${entry.firstName}` : '';
+        return `
+          <div class="signup-entry">
+            <div><strong>${entry.email}</strong>${namePart}</div>
+            <div class="signup-entry-date">${entry.timestamp}</div>
+          </div>
+        `;
+      })
+      .join('');
+  };
+
   if (newsletterForm) {
-    const newsletterEmail = 'subscribe@creditunionai.news';
+    renderSignupEntries();
 
     newsletterForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -31,20 +86,21 @@
       const firstName = newsletterForm.querySelector('#firstName')?.value?.trim() || '';
       const status = newsletterForm.querySelector('.status');
 
-      const subject = encodeURIComponent('Subscribe to the Weekly AI Briefing');
-      const bodyLines = [
-        'Please subscribe me to the Weekly AI Briefing.',
-        `Email: ${email || 'N/A'}`,
-        firstName ? `First name: ${firstName}` : 'First name: (not provided)'
-      ];
-      const mailtoLink = `mailto:${newsletterEmail}?subject=${subject}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+      const entries = loadNewsletterSignups();
+      const now = new Date();
+      entries.unshift({
+        email,
+        firstName,
+        timestamp: formatTimestamp(now)
+      });
+      saveNewsletterSignups(entries);
+      renderSignupEntries();
 
       if (status) {
-        status.textContent = 'Opening your email client to finish your subscription…';
+        status.textContent = 'Saved to your signup log. We will follow up soon.';
         status.style.display = 'block';
       }
 
-      window.location.href = mailtoLink;
       newsletterForm.reset();
     });
   }

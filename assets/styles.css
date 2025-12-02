@@ -298,6 +298,48 @@ header {
   font-weight: 600;
 }
 
+.signup-log {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-top: 24px;
+  border: 1px solid var(--soft-gray);
+  box-shadow: var(--shadow);
+}
+
+.signup-log-header h3 {
+  color: var(--navy);
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.signup-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.signup-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid var(--soft-gray);
+}
+
+.signup-entry-date {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.muted-text {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
 .card .actions {
   margin-top: auto;
   display: flex;
