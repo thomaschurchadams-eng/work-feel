@@ -441,6 +441,12 @@ input[type="text"]:focus {
   background: rgba(31, 182, 170, 0.22);
 }
 
+.coming-soon {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .hero-card {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.2);
