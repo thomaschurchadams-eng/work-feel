@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreditUnionAI News | Newsletter</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">CreditUnionAI<span> News</span></a>
+      <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="insights.html">Insights</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 style="color:#0b1f3b; font-size:32px; margin-bottom:10px;">Weekly AI Briefing</h1>
+        <p class="lead">Every Friday: the 10-minute rundown on AI moves that matter to credit unions, with talking points for your team and board.</p>
+        <div class="card form-card" style="margin-top:20px;">
+          <form id="newsletter-form">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="firstName">First name <span style="color:#5c6a82; font-weight:500;">(optional)</span></label>
+              <input id="firstName" name="firstName" type="text" placeholder="Alex">
+            </div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="notice status" style="display:none;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;">
+      <div>© CreditUnionAI News</div>
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
