@@ -94,6 +94,8 @@
           <tr>
             <td>${entry.email}</td>
             <td>${entry.firstName || ''}</td>
+            <td>${entry.lastName || ''}</td>
+            <td>${entry.employer || ''}</td>
             <td>${entry.timestamp || ''}</td>
           </tr>
         `
@@ -106,12 +108,16 @@
       e.preventDefault();
       const email = newsletterForm.querySelector('#email')?.value?.trim() || '';
       const firstName = newsletterForm.querySelector('#firstName')?.value?.trim() || '';
+      const lastName = newsletterForm.querySelector('#lastName')?.value?.trim() || '';
+      const employer = newsletterForm.querySelector('#employer')?.value?.trim() || '';
       const status = newsletterForm.querySelector('.status');
 
       const now = new Date();
       addSignup({
         email,
         firstName,
+        lastName,
+        employer,
         timestamp: formatTimestamp(now),
         isoTimestamp: now.toISOString()
       });
@@ -133,9 +139,14 @@
     exportSignupsBtn.addEventListener('click', () => {
       const entries = loadSignups();
       if (!entries.length) return;
-      const header = 'Email,First Name,Subscribed At\n';
+      const header = 'Email,First Name,Last Name,Employer,Subscribed At\n';
       const rows = entries
-        .map((entry) => `${entry.email},${entry.firstName || ''},${entry.timestamp || ''}`)
+        .map(
+          (entry) =>
+            `${entry.email},${entry.firstName || ''},${entry.lastName || ''},${entry.employer || ''},${
+              entry.timestamp || ''
+            }`
+        )
         .join('\n');
       const blob = new Blob([header + rows], { type: 'text/csv' });
       const url = URL.createObjectURL(blob);
