@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64" role="img" aria-labelledby="title desc">
+  <title id="title">CreditUnionAI News logo</title>
+  <desc id="desc">Three ascending white bars on navy with stacked CreditUnionAI News text.</desc>
+  <rect width="240" height="64" fill="none" />
+  <g transform="translate(8 8)">
+    <rect x="0" y="0" width="56" height="48" rx="8" fill="#0b1f3b" />
+    <rect x="14" y="28" width="8" height="12" rx="2" fill="#ffffff" />
+    <rect x="28" y="20" width="8" height="20" rx="2" fill="#ffffff" />
+    <rect x="42" y="12" width="8" height="28" rx="2" fill="#ffffff" />
+    <text x="72" y="24" fill="#0b1f3b" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">CreditUnionAI</text>
+    <text x="72" y="44" fill="#0b1f3b" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">News</text>
+  </g>
+</svg>
