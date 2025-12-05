@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64" role="img" aria-labelledby="title desc">
   <title id="title">CreditUnionAI News logo</title>
-  <desc id="desc">Deep navy background with three ascending white bars and stacked CreditUnionAI News text.</desc>
-  <rect width="240" height="64" fill="#0b1f3b" rx="10" />
-  <g transform="translate(14 10)">
-    <rect x="0" y="24" width="10" height="18" rx="2" fill="#ffffff" />
-    <rect x="16" y="16" width="10" height="26" rx="2" fill="#ffffff" />
-    <rect x="32" y="6" width="10" height="36" rx="2" fill="#ffffff" />
-    <g fill="#ffffff" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-weight="700">
-      <text x="58" y="22" font-size="18">CreditUnionAI</text>
-      <text x="58" y="42" font-size="16">News</text>
+  <desc id="desc">Deep navy block with three ascending white bars on the left and stacked CreditUnionAI News wordmark on the right.</desc>
+  <rect width="240" height="64" rx="12" fill="#081a33" />
+  <g transform="translate(16 10)">
+    <rect x="0" y="24" width="12" height="18" rx="2" fill="#ffffff" />
+    <rect x="18" y="16" width="12" height="26" rx="2" fill="#ffffff" />
+    <rect x="36" y="6" width="12" height="36" rx="2" fill="#ffffff" />
+    <g fill="#ffffff" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-weight="800">
+      <text x="62" y="22" font-size="17" letter-spacing="0.1px">CreditUnionAI</text>
+      <text x="62" y="42" font-size="15" letter-spacing="0.2px">News</text>
     </g>
   </g>
 </svg>
