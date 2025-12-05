@@ -20,6 +20,7 @@ If you prefer a different port, change `8000` above and open that port in the UR
 - `news.html` — News feed with curated cards and optional tag filter UI (placeholder)
 - `episodes.html` — Podcast episode cards with durations and play buttons (UI only)
 - `insights.html` — Insight/article cards with tags and links
+- `resources.html` — Downloadable toolkits, checklists, and templates for AI initiatives
 - `newsletter.html` — Signup form with inline “Subscribed!” confirmation message
 - `about.html` — What we do, who it’s for, and how it works overview
 - `assets/styles.css` — Shared styling, layout, typography, and responsive behavior
