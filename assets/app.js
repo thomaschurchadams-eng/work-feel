@@ -12,10 +12,22 @@
     });
   }
 
-  const current = window.location.pathname.split('/').pop() || 'index.html';
-  const activeTarget = current === '' ? 'index.html' : current;
+  const currentPath = window.location.pathname;
+  const currentFile = currentPath.split('/').pop() || 'index.html';
+  const normalizeHref = (href) => href.split('/').pop() || href;
+
+  let activeTarget = 'index.html';
+
+  if (currentPath.includes('/news/')) {
+    activeTarget = 'news.html';
+  } else if (currentFile.startsWith('insight-')) {
+    activeTarget = 'insights.html';
+  } else {
+    activeTarget = currentFile === '' ? 'index.html' : currentFile;
+  }
+
   document.querySelectorAll('.nav-links a').forEach((link) => {
-    const href = link.getAttribute('href');
+    const href = normalizeHref(link.getAttribute('href'));
     if (href === activeTarget || (activeTarget === 'index.html' && href === './')) {
       link.classList.add('active');
     }
