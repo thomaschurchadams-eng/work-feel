@@ -1,16 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">CreditUnionAI News logo</title>
-  <desc id="desc">Deep navy capsule with three ascending white bars on the left and stacked CreditUnionAI News wordmark in white and teal on the right.</desc>
-  <rect width="240" height="64" rx="12" fill="#0b1f3b" />
-  <g transform="translate(16 10)">
-    <rect x="0" y="24" width="12" height="18" rx="2" fill="#ffffff" />
-    <rect x="18" y="16" width="12" height="26" rx="2" fill="#ffffff" />
-    <rect x="36" y="6" width="12" height="36" rx="2" fill="#1fb6aa" />
-    <g fill="#ffffff" font-family="'Inter','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="800" letter-spacing="0.2px">
-      <text x="62" y="22" font-size="17">CreditUnionAI</text>
-      <text x="62" y="42" font-size="15">
-        <tspan fill="#1fb6aa">News</tspan>
-      </text>
+  <desc id="desc">Dark navy square with three ascending white bars on the left and the stacked words CreditUnionAI News on the right.</desc>
+  <rect width="512" height="512" fill="#0b1f3b" rx="32" ry="32" />
+  <g fill="#ffffff" transform="translate(72 96)">
+    <rect x="0" y="220" width="60" height="120" rx="12" />
+    <rect x="84" y="160" width="60" height="180" rx="12" />
+    <rect x="168" y="100" width="60" height="240" rx="12" />
+    <g font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" fill="#ffffff" font-size="54" transform="translate(260 140)">
+      <text x="0" y="0">CreditUnionAI</text>
+      <text x="0" y="70">News</text>
     </g>
   </g>
 </svg>
