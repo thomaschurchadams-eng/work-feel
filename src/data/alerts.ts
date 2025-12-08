@@ -9,27 +9,33 @@ export type Alert = {
 
 export const alerts: Alert[] = [
   {
-    id: "openai-structured-docs",
+    id: "openai-enterprise-ai-2025",
     date: "2025-12-08",
-    title: "OpenAI adds automatic structured document extraction",
-    summary: "OpenAI introduced a new toolset that converts PDFs and scanned documents into clean structured data with minimal human cleanup.",
-    whyItMatters: "This reduces manual effort in lending operations, mortgage workflows and fraud documentation for credit unions.",
-    source: "OpenAI enterprise tools update, Dec 2025"
+    title: "OpenAI report shows enterprise AI moving from pilots to workflows",
+    summary:
+      "OpenAI's State of Enterprise AI 2025 report shows weekly usage in ChatGPT Enterprise up sharply year over year, with structured workflows like Projects and Custom GPTs growing much faster than casual use.",
+    whyItMatters:
+      "Credit unions should expect vendors and internal teams to shift from small experiments to embedded AI workflows across operations, risk, and member service, and boards will start asking what that roadmap looks like.",
+    source: "OpenAI State of Enterprise AI 2025 report, Dec 2025"
   },
   {
-    id: "ncua-exam-ai-governance",
-    date: "2025-12-08",
-    title: "NCUA exam teams begin reviewing 2026 AI governance expectations",
-    summary: "NCUA internal teams are modeling how they want examiners to evaluate model oversight, data lineage and AI supported decisioning.",
-    whyItMatters: "Credit unions should expect tighter documentation standards for any AI used in lending, fraud or service workflows.",
-    source: "NCUA internal planning brief, Dec 2025"
+    id: "fiserv-content-next-launch",
+    date: "2025-09-29",
+    title: "Fiserv launches Content Next for AI enabled content and workflow automation",
+    summary:
+      "Fiserv introduced Content Next, a cloud based content management and workflow platform for financial institutions, built with OpenText and designed to add AI powered search, summarization, and process automation.",
+    whyItMatters:
+      "For credit unions on Fiserv or evaluating them, AI enabled content management is becoming a core feature that can cut manual document handling in lending, deposits, and back office operations.",
+    source: "Fiserv Content Next launch announcements, Sept 2025"
   },
   {
-    id: "fiserv-real-time-ops",
-    date: "2025-12-08",
-    title: "Fiserv announces early results from real time AI assisted operations",
-    summary: "Fiserv reports that participating credit unions cut back office processing time by fifteen percent using new LLM based automation features.",
-    whyItMatters: "This signals a shift toward AI powered operational baselines in vendor offerings starting in early 2026.",
-    source: "Fiserv client pilot update, Dec 2025"
+    id: "ncua-ai-governance-briefing",
+    date: "2025-07-24",
+    title: "NCUA board briefing highlights AI use and future governance expectations",
+    summary:
+      "In a July board briefing, NCUA outlined how credit unions and regulators are using AI today and discussed a May 2025 GAO report that recommended updated model risk management guidance for AI in financial services.",
+    whyItMatters:
+      "Credit unions adopting AI now need clearer documentation of model governance, vendor due diligence, and consumer protection impacts, since AI oversight is becoming a core exam topic heading into 2026.",
+    source: "NCUA AI board briefing and GAO 25-107197 report, mid 2025"
   }
 ];
