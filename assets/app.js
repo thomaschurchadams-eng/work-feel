@@ -12,11 +12,19 @@
     });
   }
 
-  const current = window.location.pathname.split('/').pop() || 'index.html';
-  const activeTarget = current === '' ? 'index.html' : current;
+  const normalizePath = (path) => {
+    if (!path) return 'index';
+    const url = new URL(path, window.location.origin);
+    const trimmed = url.pathname.endsWith('/') && url.pathname !== '/' ? url.pathname.slice(0, -1) : url.pathname;
+    const segment = trimmed.split('/').pop() || 'index';
+    const withoutExt = segment.replace('.html', '') || 'index';
+    return withoutExt === '' ? 'index' : withoutExt;
+  };
+
+  const activeTarget = normalizePath(window.location.pathname);
   document.querySelectorAll('.nav-links a').forEach((link) => {
     const href = link.getAttribute('href');
-    if (href === activeTarget || (activeTarget === 'index.html' && href === './')) {
+    if (normalizePath(href) === activeTarget) {
       link.classList.add('active');
     }
   });

@@ -224,6 +224,39 @@ header {
   gap: 12px;
 }
 
+.alerts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.alert-card {
+  gap: 10px;
+}
+
+.alert-date {
+  font-weight: 700;
+  color: #0b645c;
+  font-size: 14px;
+}
+
+.alert-title {
+  font-size: 18px;
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.alert-summary {
+  color: #2d3b51;
+  line-height: 1.5;
+}
+
+.alert-source {
+  color: #5c6a82;
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .card h3 {
   color: var(--navy);
   font-size: 20px;
