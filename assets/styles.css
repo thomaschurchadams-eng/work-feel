@@ -251,6 +251,21 @@ header {
   line-height: 1.5;
 }
 
+.alert-why {
+  color: #0b645c;
+  font-weight: 700;
+  background: #e7f3f1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-left: 4px solid #0b645c;
+  line-height: 1.6;
+}
+
+.alert-why-label {
+  display: inline-block;
+  margin-right: 4px;
+}
+
 .alert-source {
   color: #5c6a82;
   font-weight: 700;
