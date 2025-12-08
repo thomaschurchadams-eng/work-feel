@@ -548,9 +548,22 @@ input[type="text"]:focus {
   margin-top: 50px;
 }
 
+.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .footer .footer-links {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer .footer-connect {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -561,6 +574,19 @@ input[type="text"]:focus {
 
 .footer a:hover {
   color: var(--teal);
+}
+
+.about-connect {
+  margin-top: 50px;
+}
+
+.about-connect ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.about-connect li {
+  margin-bottom: 6px;
 }
 
 .notice {
