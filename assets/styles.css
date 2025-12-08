@@ -226,12 +226,13 @@ header {
 
 .alerts-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch;
 }
 
 .alert-card {
-  gap: 10px;
+  gap: 12px;
 }
 
 .alert-date {
@@ -244,6 +245,7 @@ header {
   font-size: 18px;
   color: var(--navy);
   font-weight: 800;
+  line-height: 1.35;
 }
 
 .alert-summary {
@@ -259,6 +261,7 @@ header {
   border-radius: 8px;
   border-left: 4px solid #0b645c;
   line-height: 1.6;
+  margin-top: 4px;
 }
 
 .alert-why-label {
