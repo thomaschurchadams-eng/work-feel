@@ -13,6 +13,7 @@ const sources = [
   'newsletter.html',
   'newsletter-log.html',
   'news.html',
+  'analysis',
   'ai-guide',
   'alerts',
   'news',
