@@ -397,6 +397,20 @@ header {
   align-items: center;
 }
 
+.admin-key-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-key-row input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--soft-gray);
+  min-width: 260px;
+  flex: 1;
+}
+
 .signup-action-btn {
   padding: 8px 12px;
   border-radius: 10px;

@@ -34,7 +34,12 @@
   const signupEmptyState = document.querySelector('#signup-empty');
   const exportSignupsBtn = document.querySelector('#export-signups');
   const clearSignupsBtn = document.querySelector('#clear-signups');
+  const adminKeyInput = document.querySelector('#admin-key');
+  const loadSignupsBtn = document.querySelector('#load-signups');
+  const logStatus = document.querySelector('#log-status');
   const SIGNUP_KEY = 'cuai_newsletter_signups';
+  let remoteSignups = [];
+  const API_ENDPOINT = '/api/newsletter';
 
   const loadSignups = () => {
     try {
@@ -65,6 +70,23 @@
     localStorage.removeItem(SIGNUP_KEY);
   };
 
+  const submitSignupToApi = async (entry) => {
+    try {
+      const response = await fetch(API_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(entry)
+      });
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+      return true;
+    } catch (err) {
+      console.error('Unable to send signup to API, falling back to local storage', err);
+      return false;
+    }
+  };
+
   const formatTimestamp = (date) => {
     try {
       return new Intl.DateTimeFormat('en', {
@@ -79,36 +101,67 @@
     }
   };
 
-  const renderSignupTable = () => {
+  const renderSignupTable = (entries = []) => {
     if (!signupTableBody) return;
-    const entries = loadSignups().sort((a, b) => {
-      const aDate = new Date(a.isoTimestamp || a.timestamp || 0);
-      const bDate = new Date(b.isoTimestamp || b.timestamp || 0);
-      return bDate - aDate;
-    });
-
-    if (signupEmptyState) {
-      signupEmptyState.style.display = entries.length ? 'none' : 'block';
-    }
-
-    if (!entries.length) {
-      signupTableBody.innerHTML = '';
-      return;
-    }
-
-    signupTableBody.innerHTML = entries
-      .map(
-        (entry) => `
+    const rows = entries.length
+      ? entries
+          .map(
+            (entry) => `
           <tr>
             <td>${entry.email}</td>
             <td>${entry.firstName || ''}</td>
             <td>${entry.lastName || ''}</td>
             <td>${entry.employer || ''}</td>
-            <td>${entry.timestamp || ''}</td>
+            <td>${entry.displayTimestamp || entry.timestamp || ''}</td>
           </tr>
         `
-      )
-      .join('');
+          )
+          .join('')
+      : '';
+
+    signupTableBody.innerHTML = rows;
+
+    if (signupEmptyState) {
+      signupEmptyState.style.display = entries.length ? 'none' : 'block';
+    }
+  };
+
+  const fetchRemoteSignups = async () => {
+    if (!adminKeyInput) return [];
+    const adminKey = adminKeyInput.value.trim();
+    if (!adminKey) {
+      if (logStatus) {
+        logStatus.textContent = 'Enter your admin key to load signups.';
+        logStatus.style.display = 'block';
+      }
+      return [];
+    }
+
+    try {
+      const response = await fetch(API_ENDPOINT, {
+        headers: { 'x-admin-key': adminKey }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Status ${response.status}`);
+      }
+
+      const data = await response.json();
+      remoteSignups = Array.isArray(data) ? data : [];
+      renderSignupTable(remoteSignups);
+      if (logStatus) {
+        logStatus.textContent = `Loaded ${remoteSignups.length} signup${remoteSignups.length === 1 ? '' : 's'}.`;
+        logStatus.style.display = 'block';
+      }
+      return remoteSignups;
+    } catch (err) {
+      console.error('Unable to fetch remote signups', err);
+      if (logStatus) {
+        logStatus.textContent = 'Could not load signups. Check your admin key or server status.';
+        logStatus.style.display = 'block';
+      }
+      return [];
+    }
   };
 
   if (newsletterForm) {
@@ -129,21 +182,29 @@
       }
 
       const now = new Date();
-      addSignup({
+      const entry = {
         email,
         firstName,
         lastName,
         employer,
         timestamp: formatTimestamp(now),
         isoTimestamp: now.toISOString()
+      };
+
+      submitSignupToApi(entry).then((sentToApi) => {
+        if (!sentToApi) {
+          addSignup(entry);
+        }
+
+        if (status) {
+          status.textContent = sentToApi
+            ? 'Thanks for subscribing.'
+            : 'Saved locally. We could not reach the server, but your entry is safe in this browser.';
+          status.style.display = 'block';
+        }
+
+        newsletterForm.reset();
       });
-
-      if (status) {
-        status.textContent = 'Thanks for subscribing.';
-        status.style.display = 'block';
-      }
-
-      newsletterForm.reset();
     });
   }
 
@@ -151,16 +212,20 @@
     renderSignupTable();
   }
 
+  if (loadSignupsBtn) {
+    loadSignupsBtn.addEventListener('click', fetchRemoteSignups);
+  }
+
   if (exportSignupsBtn) {
     exportSignupsBtn.addEventListener('click', () => {
-      const entries = loadSignups();
+      const entries = remoteSignups.length ? remoteSignups : loadSignups();
       if (!entries.length) return;
       const header = 'Email,First Name,Last Name,Employer,Subscribed At\n';
       const rows = entries
         .map(
           (entry) =>
             `${entry.email},${entry.firstName || ''},${entry.lastName || ''},${entry.employer || ''},${
-              entry.timestamp || ''
+              entry.displayTimestamp || entry.timestamp || ''
             }`
         )
         .join('\n');
@@ -175,9 +240,32 @@
   }
 
   if (clearSignupsBtn) {
-    clearSignupsBtn.addEventListener('click', () => {
+    clearSignupsBtn.addEventListener('click', async () => {
+      if (remoteSignups.length && adminKeyInput) {
+        const adminKey = adminKeyInput.value.trim();
+        if (!adminKey) return;
+        try {
+          const response = await fetch(API_ENDPOINT, {
+            method: 'DELETE',
+            headers: { 'x-admin-key': adminKey }
+          });
+          if (!response.ok) {
+            throw new Error('Delete failed');
+          }
+          remoteSignups = [];
+          renderSignupTable([]);
+          if (logStatus) {
+            logStatus.textContent = 'Remote signups cleared.';
+            logStatus.style.display = 'block';
+          }
+          return;
+        } catch (err) {
+          console.error('Unable to clear remote signups', err);
+        }
+      }
+
       clearSignups();
-      renderSignupTable();
+      renderSignupTable([]);
     });
   }
 })();

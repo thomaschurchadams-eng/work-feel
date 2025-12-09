@@ -1,0 +1,10 @@
+{
+  "name": "creditunionai-news",
+  "version": "1.0.0",
+  "description": "Static site with newsletter signup API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
