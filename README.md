@@ -23,6 +23,16 @@ The newsletter form now posts to a lightweight Node server that stores submissio
 2. Start the server: `node server.js` (serves the static site and `/api/newsletter` endpoints).
 3. Load `/newsletter-log.html`, enter the same admin key, and use the **Load signups** button to view, export, or clear entries.
 
+## Build for deployment
+
+Some hosts (including Vercel) expect all static assets to live inside a `public/` output folder. Run:
+
+```bash
+npm run build
+```
+
+This copies the site’s HTML, assets, and article folders into `public/` while preserving the existing `public/sitemap.xml`.
+
 ## File map
 - `index.html` — Home hero, latest news highlights, latest episode card, and mission statement
 - `news.html` — News feed with curated cards and optional tag filter UI (placeholder)
