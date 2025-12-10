@@ -35,6 +35,21 @@ a:hover {
   color: var(--navy);
 }
 
+.nav-links a,
+.footer-links a,
+.btn,
+.link,
+a.inline-flex,
+a.block,
+a[class*="btn"],
+a[class*="button"],
+a[class*="bg-"],
+a[class*="rounded"],
+a[class*="py-"],
+a[class*="px-"] {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   display: block;
