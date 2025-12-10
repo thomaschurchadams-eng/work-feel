@@ -249,6 +249,69 @@ header {
   align-items: stretch;
 }
 
+.alerts-ticker {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--soft-gray);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 14px 0;
+}
+
+.alerts-ticker-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  padding-left: 24px;
+  animation: ticker-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+.alerts-ticker-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.alerts-ticker:hover .alerts-ticker-track {
+  animation-play-state: paused;
+}
+
+.alert-ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  padding-right: 12px;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.alert-ticker-date {
+  color: #0b645c;
+  font-size: 14px;
+}
+
+.alert-ticker-title {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.alert-ticker-source {
+  color: #2d3b51;
+  font-weight: 500;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .alert-card {
   gap: 12px;
 }

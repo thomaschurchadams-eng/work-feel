@@ -85,12 +85,45 @@
       `;
     };
 
-    document.querySelectorAll('.alerts-list[data-alerts]').forEach((container) => {
+    const createTickerItem = (alert) => {
+      const href = alert.url || '#';
+      const tagMarkup = alert.tag ? `<span class="tag">${alert.tag}</span>` : '';
+      const sourceMarkup = alert.source ? `<span class="alert-ticker-source">${alert.source}</span>` : '';
+      const content = `
+        <span class="alert-ticker-date">${alert.date}</span>
+        ${tagMarkup}
+        <span class="alert-ticker-title">${alert.title}</span>
+        ${sourceMarkup}
+      `;
+
+      if (alert.url) {
+        return `<a class="alert-ticker-item" href="${href}">${content}</a>`;
+      }
+
+      return `<div class="alert-ticker-item">${content}</div>`;
+    };
+
+    document.querySelectorAll('[data-alerts]').forEach((container) => {
       const limitAttr = container.getAttribute('data-limit');
       const limit = limitAttr ? parseInt(limitAttr, 10) : undefined;
       const items = Number.isFinite(limit) ? sortedAlerts.slice(0, limit) : sortedAlerts;
 
-      container.innerHTML = items.map(createAlertCard).join('');
+      if (container.hasAttribute('data-ticker')) {
+        const track = container.querySelector('.alerts-ticker-track') || document.createElement('div');
+        track.className = 'alerts-ticker-track';
+        const tickerMarkup = items.map(createTickerItem).join('');
+        track.innerHTML = `
+          <div class="alerts-ticker-group">${tickerMarkup}</div>
+          <div class="alerts-ticker-group" aria-hidden="true">${tickerMarkup}</div>
+        `;
+        container.innerHTML = '';
+        container.appendChild(track);
+        return;
+      }
+
+      if (container.classList.contains('alerts-list')) {
+        container.innerHTML = items.map(createAlertCard).join('');
+      }
     });
   };
 
