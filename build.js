@@ -17,7 +17,8 @@ const sources = [
   'ai-guide',
   'alerts',
   'news',
-  'assets'
+  'assets',
+  'data'
 ];
 
 const ensureDir = (dirPath) => {
