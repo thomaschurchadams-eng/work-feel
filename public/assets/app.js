@@ -35,7 +35,6 @@
       <div class="footer-links">
         <a href="/news.html">News</a>
         <a href="/alerts/">AI Newsroom Alerts</a>
-        <a href="/ai-guide/">AI Guide</a>
         <a href="/episodes.html">Episodes</a>
         <a href="/insights.html">Insights</a>
         <a href="/newsletter.html">Newsletter</a>
