@@ -25,12 +25,14 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--teal);
+  color: var(--navy);
 }
 
 img {
@@ -153,6 +155,7 @@ header {
   letter-spacing: 0.2px;
   border: 1px solid transparent;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
 }
 
 .btn-primary {
