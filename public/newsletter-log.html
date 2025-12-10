@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Newsroom Alerts | CreditUnionAI News</title>
+  <title>CreditUnionAI News | Newsletter Log</title>
   <link rel="preconnect" href="https://creditunionainews.com" />
   <link rel="preload" href="/assets/styles.css" as="style" />
   <link rel="preload" href="/assets/app.js" as="script" />
@@ -18,7 +18,7 @@
       <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
         <span></span><span></span><span></span>
       </div>
-      <nav class="nav-links">
+            <nav class="nav-links">
         <a href="/index.html">Home</a>
         <a href="/news.html">News</a>
         <a href="/alerts/">AI Newsroom Alerts</a>
@@ -33,15 +33,41 @@
 
   <main>
     <section class="section">
-      <div class="container" style="max-width:900px;">
-        <h1>AI Newsroom Alerts</h1>
-        <p class="lead">Fast updates on what is changing in AI and why it matters for credit unions.</p>
-        <div class="alerts-list" data-alerts></div>
+      <div class="container">
+        <h1 style="color:#0b1f3b; font-size:32px; margin-bottom:10px;">Newsletter Signups (Admin)</h1>
+        <p class="lead">Signups are now stored securely on the server. Use your admin key to view or export the log.</p>
+        <div class="card" style="padding:16px; margin-bottom:16px;">
+          <label for="admin-key" class="muted-text" style="display:block; margin-bottom:8px;">Admin key</label>
+          <div class="admin-key-row">
+            <input id="admin-key" name="admin-key" type="password" placeholder="Enter admin key" autocomplete="off">
+            <button type="button" class="signup-action-btn" id="load-signups">Load signups</button>
+          </div>
+          <p id="log-status" class="muted-text" style="display:none; margin:8px 0 0;">Enter your admin key to fetch signups.</p>
+        </div>
+        <div class="signup-actions" style="margin:16px 0;">
+          <button type="button" class="signup-action-btn" id="export-signups">Export CSV</button>
+          <button type="button" class="signup-action-btn ghost" id="clear-signups">Clear log</button>
+        </div>
+        <div class="card" style="padding:0; overflow-x:auto;">
+          <table class="log-table" style="width:100%; border-collapse:collapse;">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:12px;">Email</th>
+                <th style="text-align:left; padding:12px;">First Name</th>
+                <th style="text-align:left; padding:12px;">Last Name</th>
+                <th style="text-align:left; padding:12px;">Employer</th>
+                <th style="text-align:left; padding:12px;">Subscribed At</th>
+              </tr>
+            </thead>
+            <tbody id="signup-table-body"></tbody>
+          </table>
+          <p id="signup-empty" class="muted-text" style="padding:12px; margin:0;">No signups found. Enter your admin key and load the log.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+    <footer class="footer">
     <div class="container footer-container">
       <div>© CreditUnionAI News</div>
       <div class="footer-links">
@@ -64,7 +90,6 @@
       </div>
     </div>
   </footer>
-  <script src="/data/alerts.js"></script>
   <script src="/assets/app.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>

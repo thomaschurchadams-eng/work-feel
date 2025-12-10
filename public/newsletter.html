@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Newsroom Alerts | CreditUnionAI News</title>
+  <title>CreditUnionAI News | Newsletter</title>
   <link rel="preconnect" href="https://creditunionainews.com" />
   <link rel="preload" href="/assets/styles.css" as="style" />
   <link rel="preload" href="/assets/app.js" as="script" />
@@ -18,7 +18,7 @@
       <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
         <span></span><span></span><span></span>
       </div>
-      <nav class="nav-links">
+            <nav class="nav-links">
         <a href="/index.html">Home</a>
         <a href="/news.html">News</a>
         <a href="/alerts/">AI Newsroom Alerts</a>
@@ -33,15 +33,37 @@
 
   <main>
     <section class="section">
-      <div class="container" style="max-width:900px;">
-        <h1>AI Newsroom Alerts</h1>
-        <p class="lead">Fast updates on what is changing in AI and why it matters for credit unions.</p>
-        <div class="alerts-list" data-alerts></div>
+      <div class="container">
+        <h1 style="color:#0b1f3b; font-size:32px; margin-bottom:10px;">Weekly AI Briefing</h1>
+        <p class="lead">Every Friday: the 10-minute rundown on AI moves that matter to credit unions, with talking points for your team and board.</p>
+        <div class="card form-card" style="margin-top:20px;">
+          <form id="newsletter-form">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+            <div>
+              <label for="firstName">First name <span style="color:#5c6a82; font-weight:500;">(optional)</span></label>
+              <input id="firstName" name="firstName" type="text" placeholder="Alex" autocomplete="given-name">
+            </div>
+            <div>
+              <label for="lastName">Last name <span style="color:#5c6a82; font-weight:500;">(optional)</span></label>
+              <input id="lastName" name="lastName" type="text" placeholder="Morgan" autocomplete="family-name">
+            </div>
+            <div>
+              <label for="employer">Employer <span style="color:#5c6a82; font-weight:500;">(optional)</span></label>
+              <input id="employer" name="employer" type="text" placeholder="Example Credit Union" autocomplete="organization">
+            </div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="notice status" style="display:none;"></div>
+            <p class="form-privacy">We respect your privacy. We only use your email to send the CreditUnionAI News newsletter and never share your information.</p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+    <footer class="footer">
     <div class="container footer-container">
       <div>© CreditUnionAI News</div>
       <div class="footer-links">
@@ -64,7 +86,6 @@
       </div>
     </div>
   </footer>
-  <script src="/data/alerts.js"></script>
   <script src="/assets/app.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
