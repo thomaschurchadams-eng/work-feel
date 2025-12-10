@@ -94,7 +94,6 @@
     });
   };
 
-  const newsletterForm = document.querySelector('#newsletter-form');
   const signupTableBody = document.querySelector('#signup-table-body');
   const signupEmptyState = document.querySelector('#signup-empty');
   const exportSignupsBtn = document.querySelector('#export-signups');
@@ -102,69 +101,8 @@
   const adminKeyInput = document.querySelector('#admin-key');
   const loadSignupsBtn = document.querySelector('#load-signups');
   const logStatus = document.querySelector('#log-status');
-  const SIGNUP_KEY = 'cuai_newsletter_signups';
   let remoteSignups = [];
   const API_ENDPOINT = '/api/newsletter';
-
-  const loadSignups = () => {
-    try {
-      const raw = localStorage.getItem(SIGNUP_KEY);
-      const parsed = raw ? JSON.parse(raw) : [];
-      return Array.isArray(parsed) ? parsed : [];
-    } catch (err) {
-      console.error('Unable to read newsletter signups from localStorage', err);
-      return [];
-    }
-  };
-
-  const saveSignups = (entries) => {
-    try {
-      localStorage.setItem(SIGNUP_KEY, JSON.stringify(entries));
-    } catch (err) {
-      console.error('Unable to store newsletter signups', err);
-    }
-  };
-
-  const addSignup = (entry) => {
-    const current = loadSignups();
-    current.push(entry);
-    saveSignups(current);
-  };
-
-  const clearSignups = () => {
-    localStorage.removeItem(SIGNUP_KEY);
-  };
-
-  const submitSignupToApi = async (entry) => {
-    try {
-      const response = await fetch(API_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(entry)
-      });
-      if (!response.ok) {
-        throw new Error('Request failed');
-      }
-      return true;
-    } catch (err) {
-      console.error('Unable to send signup to API, falling back to local storage', err);
-      return false;
-    }
-  };
-
-  const formatTimestamp = (date) => {
-    try {
-      return new Intl.DateTimeFormat('en', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: '2-digit'
-      }).format(date);
-    } catch (err) {
-      return date.toISOString();
-    }
-  };
 
   const renderSignupTable = (entries = []) => {
     if (!signupTableBody) return;
@@ -229,50 +167,6 @@
     }
   };
 
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const email = newsletterForm.querySelector('#email')?.value?.trim() || '';
-      const firstName = newsletterForm.querySelector('#firstName')?.value?.trim() || '';
-      const lastName = newsletterForm.querySelector('#lastName')?.value?.trim() || '';
-      const employer = newsletterForm.querySelector('#employer')?.value?.trim() || '';
-      const status = newsletterForm.querySelector('.status');
-
-      if (!email) {
-        if (status) {
-          status.textContent = 'Please provide an email to subscribe.';
-          status.style.display = 'block';
-        }
-        return;
-      }
-
-      const now = new Date();
-      const entry = {
-        email,
-        firstName,
-        lastName,
-        employer,
-        timestamp: formatTimestamp(now),
-        isoTimestamp: now.toISOString()
-      };
-
-      submitSignupToApi(entry).then((sentToApi) => {
-        if (!sentToApi) {
-          addSignup(entry);
-        }
-
-        if (status) {
-          status.textContent = sentToApi
-            ? 'Thanks for subscribing.'
-            : 'Saved locally. We could not reach the server, but your entry is safe in this browser.';
-          status.style.display = 'block';
-        }
-
-        newsletterForm.reset();
-      });
-    });
-  }
-
   if (signupTableBody) {
     renderSignupTable();
   }
@@ -283,10 +177,9 @@
 
   if (exportSignupsBtn) {
     exportSignupsBtn.addEventListener('click', () => {
-      const entries = remoteSignups.length ? remoteSignups : loadSignups();
-      if (!entries.length) return;
+      if (!remoteSignups.length) return;
       const header = 'Email,First Name,Last Name,Employer,Subscribed At\n';
-      const rows = entries
+      const rows = remoteSignups
         .map(
           (entry) =>
             `${entry.email},${entry.firstName || ''},${entry.lastName || ''},${entry.employer || ''},${
@@ -329,8 +222,12 @@
         }
       }
 
-      clearSignups();
+      remoteSignups = [];
       renderSignupTable([]);
+      if (logStatus) {
+        logStatus.textContent = 'Log cleared locally.';
+        logStatus.style.display = 'block';
+      }
     });
   }
 
