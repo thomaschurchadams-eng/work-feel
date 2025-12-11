@@ -515,6 +515,11 @@ input[type="text"]:focus {
   flex-wrap: wrap;
 }
 
+.footer a[href*="youtube.com"],
+.footer a[href*="youtu.be"] {
+  display: none;
+}
+
 .footer a {
   color: #c8d2e3;
   font-weight: 600;
