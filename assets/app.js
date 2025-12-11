@@ -21,6 +21,16 @@
     }
   });
 
+  const footerLinks = document.querySelectorAll('.footer-links a');
+  footerLinks.forEach((link) => {
+    const text = (link.textContent || '').trim().toLowerCase();
+    const href = (link.getAttribute('href') || '').toLowerCase();
+
+    if (text === 'youtube' || href.includes('youtube.com') || href.includes('youtu.be')) {
+      link.remove();
+    }
+  });
+
   const newsletterForm = document.querySelector('#newsletter-form');
   const signupTableBody = document.querySelector('#signup-table-body');
   const signupEmptyState = document.querySelector('#signup-empty');
