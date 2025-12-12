@@ -68,9 +68,10 @@ header {
 }
 
 .brand-logo {
-  height: 42px;
+  height: 58px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 
 .brand span {
