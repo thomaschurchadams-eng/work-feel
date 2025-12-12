@@ -65,10 +65,13 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  max-height: clamp(62px, 6vw + 30px, 98px);
+  max-width: clamp(240px, 26vw + 80px, 380px);
 }
 
 .brand-logo {
-  max-height: clamp(56px, 6vw + 16px, 82px);
+  height: 100%;
+  max-height: 100%;
   width: auto;
   display: block;
   object-fit: contain;
@@ -585,6 +588,11 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 900px) {
+  .brand {
+    max-height: clamp(56px, 7vw + 20px, 88px);
+    max-width: clamp(210px, 24vw + 70px, 320px);
+  }
+
   .nav-links {
     position: absolute;
     right: 0;
@@ -614,6 +622,11 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 640px) {
+  .brand {
+    max-height: clamp(52px, 8vw + 16px, 78px);
+    max-width: clamp(190px, 26vw + 60px, 280px);
+  }
+
   .navbar {
     padding: 14px 0;
   }
