@@ -22,7 +22,6 @@
         <a href="/index.html">Home</a>
         <a href="/news.html">News</a>
         <a href="/alerts/">AI Newsroom Alerts</a>
-        <a href="/ai-guide/">AI Guide</a>
         <a href="/episodes.html">Episodes</a>
         <a href="/insights.html">Insights</a>
         <a href="/newsletter.html">Newsletter</a>
@@ -48,19 +47,6 @@
 
     <section class="section">
       <div class="container">
-        <div class="card">
-          <p class="tag">AI Guide</p>
-          <h2>AI for Credit Unions, A Practical Guide</h2>
-          <p class="lead">A concise overview of how artificial intelligence is shaping fraud, lending, operations, and member experience in the credit union movement. Updated regularly with new analysis and insights.</p>
-          <div class="button-row">
-            <a class="btn btn-primary" href="/ai-guide/">Read the guide</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
         <div class="section-header">
           <div>
             <h2>AI Newsroom Alerts</h2>
@@ -68,7 +54,9 @@
           </div>
           <a class="link" href="/alerts/">View all alerts →</a>
         </div>
-        <div class="alerts-list" data-alerts data-limit="3"></div>
+        <div class="alerts-ticker" data-alerts data-ticker data-limit="8" aria-live="polite">
+          <div class="alerts-ticker-track"></div>
+        </div>
       </div>
     </section>
 
@@ -166,7 +154,6 @@
       <div class="footer-links">
         <a href="/news.html">News</a>
         <a href="/alerts/">AI Newsroom Alerts</a>
-        <a href="/ai-guide/">AI Guide</a>
         <a href="/episodes.html">Episodes</a>
         <a href="/newsletter.html">Newsletter</a>
         <a href="/about.html">About</a>
@@ -183,7 +170,7 @@
       </div>
     </div>
   </footer>
-  <script src="/data/alerts.js"></script>
+  <script src="/data/alerts.js?v=20250118"></script>
   <script src="/assets/app.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
