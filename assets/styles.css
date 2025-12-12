@@ -25,12 +25,29 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--teal);
+  color: var(--navy);
+}
+
+.nav-links a,
+.footer-links a,
+.btn,
+.link,
+a.inline-flex,
+a.block,
+a[class*="btn"],
+a[class*="button"],
+a[class*="bg-"],
+a[class*="rounded"],
+a[class*="py-"],
+a[class*="px-"] {
+  text-decoration: none;
 }
 
 img {
@@ -115,7 +132,7 @@ header {
 .hero {
   background: linear-gradient(135deg, #0b1f3b 0%, #102b52 55%, #0b1f3b 100%);
   color: var(--white);
-  padding: 80px 0 90px;
+  padding: 72px 0 84px;
 }
 
 .hero-grid {
@@ -153,6 +170,7 @@ header {
   letter-spacing: 0.2px;
   border: 1px solid transparent;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -178,7 +196,7 @@ header {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 64px 0;
 }
 
 .section-header {
@@ -222,6 +240,120 @@ header {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.alerts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.alerts-ticker {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--soft-gray);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 14px 0;
+}
+
+.alerts-ticker-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  padding-left: 24px;
+  animation: ticker-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+.alerts-ticker-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.alerts-ticker:hover .alerts-ticker-track {
+  animation-play-state: paused;
+}
+
+.alert-ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  padding-right: 12px;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.alert-ticker-date {
+  color: #0b645c;
+  font-size: 14px;
+}
+
+.alert-ticker-title {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.alert-ticker-source {
+  color: #2d3b51;
+  font-weight: 500;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.alert-card {
+  gap: 12px;
+}
+
+.alert-date {
+  font-weight: 700;
+  color: #0b645c;
+  font-size: 14px;
+}
+
+.alert-title {
+  font-size: 18px;
+  color: var(--navy);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.alert-summary {
+  color: #2d3b51;
+  line-height: 1.5;
+}
+
+.alert-why {
+  color: #0b645c;
+  font-weight: 700;
+  background: #e7f3f1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-left: 4px solid #0b645c;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+.alert-why-label {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.alert-source {
+  color: #5c6a82;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .card h3 {
@@ -287,6 +419,37 @@ header {
   line-height: 1.6;
 }
 
+.article-body p {
+  margin-bottom: 1rem;
+}
+
+.article-body h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.65rem;
+}
+
+.article-body ul {
+  margin: 12px 0 18px;
+  padding-left: 20px;
+  list-style: disc;
+  display: grid;
+  gap: 8px;
+}
+
+.article-body li {
+  margin-left: 4px;
+}
+
+.article-summary {
+  margin: 0.75rem 0 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 600;
+  color: #243852;
+}
+
 .article-date {
   color: #6b7280;
   font-size: 0.9rem;
@@ -332,6 +495,20 @@ header {
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.admin-key-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-key-row input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--soft-gray);
+  min-width: 260px;
+  flex: 1;
 }
 
 .signup-action-btn {
@@ -477,6 +654,13 @@ header {
 form {
   display: grid;
   gap: 14px;
+}
+
+.form-privacy {
+  color: #5c6a82;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 2px 0 0;
 }
 
 label {

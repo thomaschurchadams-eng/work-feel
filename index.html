@@ -18,13 +18,14 @@
       <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
         <span></span><span></span><span></span>
       </div>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="episodes.html">Episodes</a>
-        <a href="insights.html">Insights</a>
-        <a href="newsletter.html">Newsletter</a>
-        <a href="about.html">About</a>
+            <nav class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/news.html">News</a>
+        <a href="/alerts/">AI Newsroom Alerts</a>
+        <a href="/episodes.html">Episodes</a>
+        <a href="/insights.html">Insights</a>
+        <a href="/newsletter.html">Newsletter</a>
+        <a href="/about.html">About</a>
       </nav>
     </div>
   </header>
@@ -41,12 +42,20 @@
             <a class="btn btn-outline" href="newsletter.html">Get Weekly Briefing</a>
           </div>
         </div>
-        <div class="hero-card">
-          <h3>This week</h3>
-          <p>Core upgrades, AI fraud signals, and member service copilots. Plus: vendor scorecard checks and what boards are asking right now.</p>
-          <div class="meta">
-            <span class="pill">Weekly briefing · Delivered Fridays · 3-min read</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>AI Newsroom Alerts</h2>
+            <p class="lead">Fast updates on what's changing in AI and why it matters for credit unions.</p>
           </div>
+          <a class="link" href="/alerts/">View all alerts →</a>
+        </div>
+        <div class="alerts-ticker" data-alerts data-ticker data-limit="8" aria-live="polite">
+          <div class="alerts-ticker-track"></div>
         </div>
       </div>
     </section>
@@ -60,6 +69,14 @@
           </div>
         </div>
         <div class="grid cards-3">
+          <article class="card">
+            <div class="meta"><span class="tag">Synthetic Data</span><span class="tag">Privacy</span><span class="tag">AI Adoption</span><span>December 2025</span></div>
+            <h3>Synthetic Data Just Went Mainstream, and Credit Unions May Benefit Most</h3>
+            <p>New synthetic-data tools from major labs and cloud providers create safer, realistic datasets that let credit unions test AI without exposing member information.</p>
+            <div class="actions">
+              <a class="link" href="/news.html#article-synthetic-data-mainstream">Read more →</a>
+            </div>
+          </article>
           <article class="card">
             <div class="meta"><span class="tag">NCUA</span><span class="tag">Regulation</span><span class="tag">Governance</span><span class="tag">AI Risk</span><span>November 2025</span></div>
             <h3>NCUA Highlights AI Opportunities and Risks in Updated Resource Center</h3>
@@ -135,10 +152,21 @@
     <div class="container footer-inner">
       <div>© CreditUnionAI News</div>
       <div class="footer-links">
-        <a href="news.html">News</a>
-        <a href="episodes.html">Episodes</a>
-        <a href="newsletter.html">Newsletter</a>
-        <a href="about.html">About</a>
+        <a href="/news.html">News</a>
+        <a href="/alerts/">AI Newsroom Alerts</a>
+        <a href="/episodes.html">Episodes</a>
+        <a href="/newsletter.html">Newsletter</a>
+        <a href="/about.html">About</a>
+      </div>
+      <div class="footer-connect">
+        <strong>Connect:</strong>
+        <a href="mailto:info@creditunionainews.com">info@creditunionainews.com</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://x.com/cuainews?s=21" target="_blank" rel="noopener noreferrer">X</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://youtube.com/@creditunionainews?si=A22oeE1-K1fY0Gww" target="_blank" rel="noopener noreferrer">YouTube</a>
       </div>
       <div class="footer-connect">
         <strong>Connect:</strong>
@@ -152,6 +180,7 @@
       </div>
     </div>
   </footer>
+  <script src="/data/alerts.js?v=20250118"></script>
   <script src="/assets/app.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
