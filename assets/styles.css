@@ -451,8 +451,8 @@ header {
 
 .alerts-track {
   display: inline-flex;
-  align-items: stretch;
-  gap: 14px;
+  align-items: center;
+  gap: 26px;
   animation: alerts-scroll 26s linear infinite;
   will-change: transform;
 }
@@ -479,45 +479,43 @@ header {
 .ticker-item {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 14px;
-  color: #f4f7ff;
+  gap: 12px;
+  padding: 6px 0;
+  color: #eef4ff;
   text-decoration: none;
-  min-width: 280px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  min-width: 0;
+  font-weight: 700;
+  letter-spacing: 0.1px;
 }
 
 .ticker-item:focus-visible,
 .ticker-item:hover {
-  border-color: rgba(124, 244, 223, 0.8);
-  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
-  transform: translateY(-1px);
+  color: #7ff3e4;
 }
 
-.ticker-category {
-  padding: 6px 10px;
-  background: #e0fbf7;
-  color: #0b645c;
-  border-radius: 999px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
+.ticker-item + .ticker-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.32);
+  padding-left: 24px;
+  margin-left: 6px;
 }
 
 .ticker-headline {
   font-weight: 700;
   letter-spacing: 0.1px;
   color: #eef4ff;
+  white-space: nowrap;
 }
 
-.ticker-meta {
-  color: rgba(228, 237, 255, 0.8);
+.ticker-date {
+  color: #b2c7ec;
   font-weight: 700;
-  font-size: 0.9rem;
-  white-space: nowrap;
+  font-size: 0.92rem;
+  letter-spacing: 0.2px;
+}
+
+.ticker-arrow {
+  color: #7ff3e4;
+  font-size: 0.95rem;
 }
 
 .link {

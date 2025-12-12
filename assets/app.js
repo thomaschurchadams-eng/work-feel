@@ -90,7 +90,10 @@
     formatPublished(dateValue) {
       const date = new Date(dateValue);
       if (Number.isNaN(date.getTime())) return '';
-      return new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric' }).format(date);
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
     }
 
     buildItem(alert) {
@@ -100,21 +103,22 @@
       link.setAttribute('role', 'listitem');
       link.setAttribute('tabindex', '0');
 
-      const category = document.createElement('span');
-      category.className = 'ticker-category';
-      category.textContent = alert.category || 'Alert';
+      const published = document.createElement('span');
+      published.className = 'ticker-date';
+      published.textContent = this.formatPublished(alert.publishedAt);
 
       const headline = document.createElement('span');
       headline.className = 'ticker-headline';
       headline.textContent = alert.headline || alert.text || '';
 
-      const meta = document.createElement('span');
-      meta.className = 'ticker-meta';
-      meta.textContent = this.formatPublished(alert.publishedAt);
+      const arrow = document.createElement('span');
+      arrow.className = 'ticker-arrow';
+      arrow.setAttribute('aria-hidden', 'true');
+      arrow.textContent = '→';
 
-      link.appendChild(category);
+      link.appendChild(published);
       link.appendChild(headline);
-      link.appendChild(meta);
+      link.appendChild(arrow);
 
       return link;
     }
