@@ -21,100 +21,143 @@
     }
   });
 
-  const alertsTicker = document.querySelector('#alerts-ticker');
-
-  const alertsData = [
-    {
-      category: 'NCUA',
-      text: 'Supervisory letter draft signals AI model transparency and third-party oversight expectations.',
-      href: '/news.html#article-ncua-ai-opportunities-risks'
-    },
-    {
-      category: 'Fraud',
-      text: 'Credit unions widen pilots of ML-powered fraud defenses as card and account-takeover attacks rise.',
-      href: '/news.html#article-ai-fraud-tools'
-    },
-    {
-      category: 'Member Experience',
-      text: 'Frontline teams trial AI chat to boost member self-service while preserving human handoffs.',
-      href: '/news.html#article-ai-chat-virtual-assistants'
+  class AlertsStore {
+    constructor(initialAlerts = [], limit = 8) {
+      this.alerts = Array.isArray(initialAlerts) ? initialAlerts : [];
+      this.limit = limit;
+      this.listeners = [];
     }
-  ];
 
-  const createTickerItem = (alert) => {
-    const item = document.createElement('div');
-    item.className = 'ticker-item';
-    item.setAttribute('role', 'listitem');
+    setAlerts(alerts) {
+      this.alerts = Array.isArray(alerts) ? alerts : [];
+      this.notify();
+    }
 
-    const category = document.createElement('span');
-    category.className = 'ticker-category';
-    category.textContent = alert.category;
+    addAlert(alert) {
+      this.alerts = [alert, ...this.alerts];
+      this.notify();
+    }
 
-    const body = document.createElement('span');
-    body.textContent = alert.text;
+    getLatest() {
+      return [...this.alerts]
+        .filter((alert) => alert && alert.publishedAt)
+        .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+        .slice(0, this.limit);
+    }
 
-    item.appendChild(category);
-    item.appendChild(body);
+    subscribe(listener) {
+      if (typeof listener !== 'function') return () => {};
+      this.listeners.push(listener);
+      listener(this.getLatest());
+      return () => {
+        this.listeners = this.listeners.filter((fn) => fn !== listener);
+      };
+    }
 
-    if (alert.href) {
+    notify() {
+      const snapshot = this.getLatest();
+      this.listeners.forEach((listener) => listener(snapshot));
+    }
+  }
+
+  class AlertsTicker {
+    constructor(container, store) {
+      this.container = container;
+      this.store = store;
+      this.track = document.createElement('div');
+      this.track.className = 'alerts-track';
+      this.marquee = document.createElement('div');
+      this.marquee.className = 'alerts-marquee';
+      this.marquee.appendChild(this.track);
+      this.container.innerHTML = '';
+      this.container.appendChild(this.marquee);
+
+      this.unsubscribe = this.store.subscribe((alerts) => this.render(alerts));
+      this.bindPauseHandlers();
+      this.handleResize = () => this.setAnimationDuration();
+      window.addEventListener('resize', this.handleResize);
+    }
+
+    bindPauseHandlers() {
+      const pause = () => this.track.classList.add('paused');
+      const resume = () => this.track.classList.remove('paused');
+      this.marquee.addEventListener('mouseenter', pause);
+      this.marquee.addEventListener('mouseleave', resume);
+      this.marquee.addEventListener('focusin', pause);
+      this.marquee.addEventListener('focusout', resume);
+    }
+
+    formatPublished(dateValue) {
+      const date = new Date(dateValue);
+      if (Number.isNaN(date.getTime())) return '';
+      return new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric' }).format(date);
+    }
+
+    buildItem(alert) {
       const link = document.createElement('a');
-      link.className = 'link';
-      link.href = alert.href;
-      link.textContent = 'View update →';
-      item.appendChild(link);
+      link.className = 'ticker-item';
+      link.href = alert.url || alert.slug || '#';
+      link.setAttribute('role', 'listitem');
+      link.setAttribute('tabindex', '0');
+
+      const category = document.createElement('span');
+      category.className = 'ticker-category';
+      category.textContent = alert.category || 'Alert';
+
+      const headline = document.createElement('span');
+      headline.className = 'ticker-headline';
+      headline.textContent = alert.headline || alert.text || '';
+
+      const meta = document.createElement('span');
+      meta.className = 'ticker-meta';
+      meta.textContent = this.formatPublished(alert.publishedAt);
+
+      link.appendChild(category);
+      link.appendChild(headline);
+      link.appendChild(meta);
+
+      return link;
     }
 
-    return item;
-  };
+    setAnimationDuration() {
+      const baseWidth = this.track.scrollWidth / 24;
+      const viewportFactor = window.innerWidth < 640 ? 1.4 : 1;
+      const durationSeconds = Math.max(18, Math.min(42, baseWidth * viewportFactor));
+      this.track.style.animationDuration = `${durationSeconds}s`;
+    }
 
-  const renderAlertsTicker = () => {
-    if (!alertsTicker || !alertsData.length) return;
-    const fragment = document.createDocumentFragment();
-    alertsData.forEach((alert) => fragment.appendChild(createTickerItem(alert)));
-    alertsTicker.innerHTML = '';
-    alertsTicker.appendChild(fragment);
-  };
-
-  const startAlertsAutoScroll = () => {
-    if (!alertsTicker) return;
-    const items = Array.from(alertsTicker.querySelectorAll('.ticker-item'));
-    if (items.length <= 1) return;
-
-    const scrollToItem = (index) => {
-      const target = items[index];
-      if (!target) return;
-      alertsTicker.scrollTo({ left: target.offsetLeft, behavior: 'smooth' });
-    };
-
-    let activeIndex = 0;
-    let tickerTimer = setInterval(() => {
-      activeIndex = (activeIndex + 1) % items.length;
-      scrollToItem(activeIndex);
-    }, 4500);
-
-    const pauseTicker = () => {
-      if (tickerTimer) {
-        clearInterval(tickerTimer);
-        tickerTimer = null;
+    render(alerts) {
+      if (!this.track || !Array.isArray(alerts) || !alerts.length) {
+        this.track.innerHTML = '';
+        return;
       }
-    };
 
-    const resumeTicker = () => {
-      if (tickerTimer) return;
-      tickerTimer = setInterval(() => {
-        activeIndex = (activeIndex + 1) % items.length;
-        scrollToItem(activeIndex);
-      }, 4500);
-    };
+      const items = alerts.map((alert) => this.buildItem(alert));
+      const clones = items.map((item) => {
+        const clone = item.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        clone.tabIndex = -1;
+        clone.classList.add('ticker-duplicate');
+        return clone;
+      });
+      const loopItems = [...items, ...clones];
 
-    alertsTicker.addEventListener('mouseenter', pauseTicker);
-    alertsTicker.addEventListener('mouseleave', resumeTicker);
-    alertsTicker.addEventListener('focusin', pauseTicker);
-    alertsTicker.addEventListener('focusout', resumeTicker);
-  };
+      this.track.innerHTML = '';
+      loopItems.forEach((item) => this.track.appendChild(item));
 
-  renderAlertsTicker();
-  startAlertsAutoScroll();
+      requestAnimationFrame(() => this.setAnimationDuration());
+    }
+  }
+
+  const alertsTickerEl = document.querySelector('#alerts-ticker');
+  const alertsStore = new AlertsStore(window.CUAI_ALERTS || [], 10);
+  window.CUAIAlertsStore = alertsStore;
+  window.refreshAlertsTicker = (alerts) => alertsStore.setAlerts(alerts);
+  window.pushAlertToTicker = (alert) => alertsStore.addAlert(alert);
+
+  if (alertsTickerEl) {
+    new AlertsTicker(alertsTickerEl, alertsStore);
+  }
 
   const newsletterForm = document.querySelector('#newsletter-form');
   const signupTableBody = document.querySelector('#signup-table-body');

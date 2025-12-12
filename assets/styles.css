@@ -438,31 +438,64 @@ header {
 }
 
 .alerts-ticker {
-  display: grid;
-  grid-auto-flow: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.alerts-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+.alerts-track {
+  display: inline-flex;
+  align-items: stretch;
   gap: 14px;
-  overflow-x: auto;
-  padding: 6px 0;
-  scroll-snap-type: x mandatory;
+  animation: alerts-scroll 26s linear infinite;
+  will-change: transform;
+}
+
+.alerts-track.paused {
+  animation-play-state: paused;
+}
+
+@keyframes alerts-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .alerts-track {
+    animation: none;
+  }
 }
 
 .ticker-item {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #e8f0ff;
-  padding: 12px 14px;
-  border-radius: 14px;
-  min-width: 280px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-  scroll-snap-align: start;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  color: #f4f7ff;
+  text-decoration: none;
+  min-width: 280px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.ticker-item .link {
-  color: #7cf4df;
-  white-space: nowrap;
+.ticker-item:focus-visible,
+.ticker-item:hover {
+  border-color: rgba(124, 244, 223, 0.8);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
+  transform: translateY(-1px);
 }
 
 .ticker-category {
@@ -472,6 +505,19 @@ header {
   border-radius: 999px;
   font-weight: 800;
   letter-spacing: 0.2px;
+}
+
+.ticker-headline {
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  color: #eef4ff;
+}
+
+.ticker-meta {
+  color: rgba(228, 237, 255, 0.8);
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .link {
