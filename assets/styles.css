@@ -67,6 +67,12 @@ header {
   gap: 10px;
 }
 
+.brand-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
 .brand span {
   color: var(--teal);
 }
