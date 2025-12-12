@@ -68,7 +68,7 @@ header {
 }
 
 .brand-logo {
-  height: 58px;
+  max-height: clamp(56px, 6vw + 16px, 82px);
   width: auto;
   display: block;
   object-fit: contain;
