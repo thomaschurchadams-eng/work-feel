@@ -66,14 +66,14 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 48px;
-  max-height: 48px;
-  max-width: 340px;
+  height: 56px;
+  max-height: 56px;
+  max-width: 360px;
 }
 
 .brand-logo {
   height: 100%;
-  max-height: 48px;
+  max-height: 56px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -591,9 +591,9 @@ input[type="text"]:focus {
 
 @media (max-width: 900px) {
   .brand {
-    height: 44px;
-    max-height: 44px;
-    max-width: 300px;
+    height: 50px;
+    max-height: 50px;
+    max-width: 320px;
   }
 
   .nav-links {
@@ -626,9 +626,9 @@ input[type="text"]:focus {
 
 @media (max-width: 640px) {
   .brand {
-    height: 40px;
-    max-height: 40px;
-    max-width: 260px;
+    height: 42px;
+    max-height: 42px;
+    max-width: 280px;
   }
 
   .navbar {
