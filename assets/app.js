@@ -21,6 +21,101 @@
     }
   });
 
+  const alertsTicker = document.querySelector('#alerts-ticker');
+
+  const alertsData = [
+    {
+      category: 'NCUA',
+      text: 'Supervisory letter draft signals AI model transparency and third-party oversight expectations.',
+      href: '/news.html#article-ncua-ai-opportunities-risks'
+    },
+    {
+      category: 'Fraud',
+      text: 'Credit unions widen pilots of ML-powered fraud defenses as card and account-takeover attacks rise.',
+      href: '/news.html#article-ai-fraud-tools'
+    },
+    {
+      category: 'Member Experience',
+      text: 'Frontline teams trial AI chat to boost member self-service while preserving human handoffs.',
+      href: '/news.html#article-ai-chat-virtual-assistants'
+    }
+  ];
+
+  const createTickerItem = (alert) => {
+    const item = document.createElement('div');
+    item.className = 'ticker-item';
+    item.setAttribute('role', 'listitem');
+
+    const category = document.createElement('span');
+    category.className = 'ticker-category';
+    category.textContent = alert.category;
+
+    const body = document.createElement('span');
+    body.textContent = alert.text;
+
+    item.appendChild(category);
+    item.appendChild(body);
+
+    if (alert.href) {
+      const link = document.createElement('a');
+      link.className = 'link';
+      link.href = alert.href;
+      link.textContent = 'View update →';
+      item.appendChild(link);
+    }
+
+    return item;
+  };
+
+  const renderAlertsTicker = () => {
+    if (!alertsTicker || !alertsData.length) return;
+    const fragment = document.createDocumentFragment();
+    alertsData.forEach((alert) => fragment.appendChild(createTickerItem(alert)));
+    alertsTicker.innerHTML = '';
+    alertsTicker.appendChild(fragment);
+  };
+
+  const startAlertsAutoScroll = () => {
+    if (!alertsTicker) return;
+    const items = Array.from(alertsTicker.querySelectorAll('.ticker-item'));
+    if (items.length <= 1) return;
+
+    const scrollToItem = (index) => {
+      const target = items[index];
+      if (!target) return;
+      alertsTicker.scrollTo({ left: target.offsetLeft, behavior: 'smooth' });
+    };
+
+    let activeIndex = 0;
+    let tickerTimer = setInterval(() => {
+      activeIndex = (activeIndex + 1) % items.length;
+      scrollToItem(activeIndex);
+    }, 4500);
+
+    const pauseTicker = () => {
+      if (tickerTimer) {
+        clearInterval(tickerTimer);
+        tickerTimer = null;
+      }
+    };
+
+    const resumeTicker = () => {
+      if (tickerTimer) return;
+      tickerTimer = setInterval(() => {
+        activeIndex = (activeIndex + 1) % items.length;
+        scrollToItem(activeIndex);
+      }, 4500);
+    };
+
+    alertsTicker.addEventListener('mouseenter', pauseTicker);
+    alertsTicker.addEventListener('mouseleave', resumeTicker);
+    alertsTicker.addEventListener('focusin', pauseTicker);
+    alertsTicker.addEventListener('focusout', resumeTicker);
+  };
+
+  renderAlertsTicker();
+  startAlertsAutoScroll();
+
   const newsletterForm = document.querySelector('#newsletter-form');
   const signupTableBody = document.querySelector('#signup-table-body');
   const signupEmptyState = document.querySelector('#signup-empty');
