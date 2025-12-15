@@ -54,6 +54,28 @@
     }
   }
 
+  document.querySelectorAll('.footer .footer-links').forEach((links) => {
+    if (!links) return;
+
+    const existingFooterLink = links.querySelector('a[href$="/alerts/"]');
+    if (existingFooterLink) {
+      existingFooterLink.textContent = 'AI Newsroom Alerts';
+      existingFooterLink.href = '/alerts/';
+      return;
+    }
+
+    const alertsFooterLink = document.createElement('a');
+    alertsFooterLink.href = '/alerts/';
+    alertsFooterLink.textContent = 'AI Newsroom Alerts';
+
+    const firstFooterLink = links.querySelector('a');
+    if (firstFooterLink) {
+      firstFooterLink.insertAdjacentElement('beforebegin', alertsFooterLink);
+    } else {
+      links.appendChild(alertsFooterLink);
+    }
+  });
+
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
   const currentPath = normalizePath(window.location.pathname);
 
