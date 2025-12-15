@@ -1,4 +1,32 @@
 (function () {
+  const tickerData = [
+    {
+      label: 'NCUA',
+      text: 'NCUA highlights AI opportunities and risks for credit unions',
+      href: '/news.html#article-ncua-ai-opportunities-risks'
+    },
+    {
+      label: 'Fraud',
+      text: 'Credit unions increase adoption of AI-powered fraud defenses',
+      href: '/news.html#article-ai-fraud-tools'
+    },
+    {
+      label: 'Member Experience',
+      text: 'AI chat and virtual assistants gain traction in digital strategies',
+      href: '/news.html#article-ai-chat-virtual-assistants'
+    },
+    {
+      label: 'Underwriting',
+      text: 'Lenders explore AI-enhanced underwriting to speed decisioning',
+      href: '/news.html#article-ai-underwriting-decisioning'
+    },
+    {
+      label: 'Automation',
+      text: 'Prioritizing AI automation with clear governance and data guardrails',
+      href: '/insight-prioritizing-ai-automation.html'
+    }
+  ];
+
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -153,4 +181,49 @@
       renderSignupTable();
     });
   }
+
+  const header = document.querySelector('header');
+  const buildTicker = () => {
+    if (!header || !tickerData.length) return;
+
+    const tickerBar = document.createElement('div');
+    tickerBar.className = 'ticker-bar';
+    tickerBar.innerHTML = `
+      <div class="container ticker-track" aria-label="Latest updates">
+        <div class="ticker-label">In this issue</div>
+        <div class="ticker-window">
+          <div class="ticker-strip" role="list"></div>
+        </div>
+      </div>
+    `;
+
+    header.appendChild(tickerBar);
+
+    const strip = tickerBar.querySelector('.ticker-strip');
+    if (!strip) return;
+
+    const renderItems = () =>
+      tickerData
+        .map(
+          (item) => `
+            <a class="ticker-item" href="${item.href}" role="listitem">
+              <span class="ticker-pill">${item.label}</span>
+              <span class="ticker-text">${item.text}</span>
+            </a>
+          `
+        )
+        .join('');
+
+    strip.innerHTML = `${renderItems()}${renderItems()}`;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const toggleAnimation = () => {
+      strip.style.animationPlayState = prefersReducedMotion.matches ? 'paused' : 'running';
+    };
+
+    toggleAnimation();
+    prefersReducedMotion.addEventListener('change', toggleAnimation);
+  };
+
+  buildTicker();
 })();

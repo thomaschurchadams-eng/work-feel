@@ -59,6 +59,80 @@ header {
   padding: 16px 0;
 }
 
+.ticker-bar {
+  background: #0f294b;
+  color: var(--white);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.ticker-label {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+.ticker-window {
+  overflow: hidden;
+  flex: 1;
+}
+
+.ticker-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  white-space: nowrap;
+  animation: ticker-scroll 26s linear infinite;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.ticker-item:hover {
+  background: rgba(31, 182, 170, 0.18);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.ticker-pill {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.ticker-text {
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .brand {
   font-weight: 800;
   color: var(--navy);
