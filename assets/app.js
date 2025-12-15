@@ -1,40 +1,28 @@
 (function () {
   const alertsData = [
     {
-      label: 'NCUA',
-      headline: 'NCUA highlights AI opportunities and risks for credit unions',
+      label: 'OpenAI',
+      headline: 'OpenAI board withdraws lawsuit; no GPT-5 release timeline yet',
       summary:
-        'NCUA expands its AI resource center, calling for explainability, vendor oversight, and robust data governance.',
-      slug: 'ncua-ai-opportunities-risks',
-      link: '/news.html#article-ncua-ai-opportunities-risks'
+        'The board signals a reset by dropping litigation and declining to set a GPT-5 schedule while safety reviews continue.',
+      slug: 'openai-board-withdraws-lawsuit',
+      link: '/news/ai-governance-board-expectations.html'
+    },
+    {
+      label: 'Member Insights',
+      headline: 'Search data shows members want AI for tailored support and budgeting',
+      summary:
+        'Members increasingly search for AI-driven financial coaching, pushing credit unions to personalize advice and savings nudges.',
+      slug: 'ai-member-tailored-support',
+      link: '/news/ai-personalization-digital-banking.html'
     },
     {
       label: 'Fraud',
-      headline: 'Credit unions increase adoption of AI-powered fraud defenses',
-      summary: 'Rising fraud sophistication is accelerating investment in machine-learning detection and monitoring.',
-      slug: 'ai-fraud-tools',
-      link: '/news.html#article-ai-fraud-tools'
-    },
-    {
-      label: 'Member Experience',
-      headline: 'AI chat and virtual assistants gain traction in digital strategies',
-      summary: 'Conversational AI is reducing call-center load while improving self-service experiences for members.',
-      slug: 'ai-chat-virtual-assistants',
-      link: '/news.html#article-ai-chat-virtual-assistants'
-    },
-    {
-      label: 'Underwriting',
-      headline: 'Lenders explore AI-enhanced underwriting to speed decisioning',
-      summary: 'Credit unions are piloting decisioning models with governance guardrails to accelerate approvals.',
-      slug: 'ai-underwriting-decisioning',
-      link: '/news.html#article-ai-underwriting-decisioning'
-    },
-    {
-      label: 'Automation',
-      headline: 'Prioritizing AI automation with clear governance and data guardrails',
-      summary: 'Operational playbooks emphasize data quality, compliance checks, and front-line change management.',
-      slug: 'ai-automation-governance',
-      link: '/insight-prioritizing-ai-automation.html'
+      headline: 'Members say AI fraud protection is a must-have benefit',
+      summary:
+        'Heightened scams are raising expectations for real-time anomaly detection, proactive alerts, and frictionless remediation.',
+      slug: 'ai-fraud-protection-necessity',
+      link: '/news/ai-powered-fraud-tools.html'
     }
   ];
 
@@ -50,12 +38,19 @@
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
 
-    const alertsLinkExists = !!navLinks.querySelector('a[href$="/alerts/"]');
-    if (!alertsLinkExists) {
+    const existingAlertsLink = navLinks.querySelector('a[href$="/alerts/"]');
+    if (existingAlertsLink) {
+      existingAlertsLink.textContent = 'AI Newsroom Alerts';
+    } else {
       const alertsLink = document.createElement('a');
       alertsLink.href = '/alerts/';
-      alertsLink.textContent = 'Alerts';
-      navLinks.insertBefore(alertsLink, navLinks.querySelector('a[href$="newsletter.html"]'));
+      alertsLink.textContent = 'AI Newsroom Alerts';
+      const firstNav = navLinks.querySelector('a');
+      if (firstNav) {
+        firstNav.insertAdjacentElement('afterend', alertsLink);
+      } else {
+        navLinks.appendChild(alertsLink);
+      }
     }
   }
 
