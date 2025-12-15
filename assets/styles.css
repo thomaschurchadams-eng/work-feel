@@ -679,6 +679,11 @@ form {
   text-decoration: underline;
 }
 
+.inline-subscribe {
+  display: inline-block;
+  margin-top: 12px;
+}
+
 .form-disclaimer {
   color: #4b5563;
   margin: -4px 0 0;
