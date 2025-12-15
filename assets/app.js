@@ -316,14 +316,7 @@
       }
 
       const subject = 'Subscribe to Weekly AI Briefing';
-      const bodyLines = [
-        'Please add me to the CreditUnionAI News Weekly AI Briefing list.',
-        `Email: ${email}`
-      ];
-
-      if (firstName) {
-        bodyLines.push(`Name: ${firstName}`);
-      }
+      const bodyLines = ['Please add me to the CreditUnionAI News Weekly AI Briefing list.'];
 
       const mailtoHref = `mailto:info@creditunionainews.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
         bodyLines.join('\n')
