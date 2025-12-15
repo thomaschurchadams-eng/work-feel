@@ -43,6 +43,10 @@ img {
   margin: 0 auto;
 }
 
+.narrow {
+  max-width: 880px;
+}
+
 header {
   background: var(--white);
   box-shadow: 0 12px 30px rgba(11, 31, 59, 0.08);
@@ -611,6 +615,12 @@ header {
   margin: 0 auto;
 }
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 form {
   display: grid;
   gap: 14px;
@@ -625,6 +635,45 @@ form {
   gap: 28px;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.sponsorships-hero {
+  padding-top: 48px;
+  padding-bottom: 26px;
+}
+
+.sponsor-card {
+  padding: 28px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(11, 31, 59, 0.08);
+}
+
+.sponsor-card h2 {
+  margin-top: 0;
+}
+
+.sponsorship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.sponsorship-form-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.sponsorship-form .actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.full-width {
+  grid-column: 1 / -1;
 }
 
 .subscribe-copy h1 {
@@ -731,6 +780,23 @@ input[type="text"] {
 
 input[type="email"]:focus,
 input[type="text"]:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(31, 182, 170, 0.2);
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--soft-gray);
+  background: #fafbfe;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus,
+textarea:focus {
   outline: none;
   border-color: var(--teal);
   box-shadow: 0 0 0 3px rgba(31, 182, 170, 0.2);

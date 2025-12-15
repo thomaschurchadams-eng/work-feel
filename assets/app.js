@@ -174,11 +174,29 @@
       const alertsLink = document.createElement('a');
       alertsLink.href = '/alerts/';
       alertsLink.textContent = 'AI Newsroom Alerts';
+      alertsLink.addEventListener('click', () => navLinks.classList.remove('open'));
       const firstNav = navLinks.querySelector('a');
       if (firstNav) {
         firstNav.insertAdjacentElement('afterend', alertsLink);
       } else {
         navLinks.appendChild(alertsLink);
+      }
+    }
+
+    const sponsorshipLink = navLinks.querySelector(
+      'a[href$="/sponsorships/"], a[href$="sponsorships.html"], a[href$="/sponsorships"]'
+    );
+
+    if (!sponsorshipLink) {
+      const sponsorAnchor = document.createElement('a');
+      sponsorAnchor.href = '/sponsorships/';
+      sponsorAnchor.textContent = 'Sponsorships';
+      sponsorAnchor.addEventListener('click', () => navLinks.classList.remove('open'));
+      const aboutLink = navLinks.querySelector('a[href*="about"]');
+      if (aboutLink) {
+        aboutLink.insertAdjacentElement('beforebegin', sponsorAnchor);
+      } else {
+        navLinks.appendChild(sponsorAnchor);
       }
     }
   }
@@ -202,6 +220,27 @@
       firstFooterLink.insertAdjacentElement('beforebegin', alertsFooterLink);
     } else {
       links.appendChild(alertsFooterLink);
+    }
+  });
+
+  document.querySelectorAll('.footer .footer-links').forEach((links) => {
+    if (!links) return;
+
+    const sponsorshipLink = links.querySelector(
+      'a[href$="/sponsorships/"], a[href$="sponsorships.html"], a[href$="/sponsorships"]'
+    );
+
+    if (sponsorshipLink) return;
+
+    const sponsorAnchor = document.createElement('a');
+    sponsorAnchor.href = '/sponsorships/';
+    sponsorAnchor.textContent = 'Sponsorships';
+
+    const aboutLink = links.querySelector('a[href*="about"]');
+    if (aboutLink) {
+      aboutLink.insertAdjacentElement('beforebegin', sponsorAnchor);
+    } else {
+      links.appendChild(sponsorAnchor);
     }
   });
 
@@ -325,6 +364,38 @@
       window.location.href = mailtoHref;
 
       newsletterForm.reset();
+    });
+  }
+
+  const sponsorshipForm = document.querySelector('#sponsorship-form');
+
+  if (sponsorshipForm) {
+    sponsorshipForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(sponsorshipForm);
+      const name = (formData.get('name') || '').toString().trim();
+      const organization = (formData.get('organization') || '').toString().trim();
+      const role = (formData.get('role') || '').toString().trim();
+      const email = (formData.get('email') || '').toString().trim();
+      const interest = (formData.get('interest') || '').toString().trim();
+      const message = (formData.get('message') || '').toString().trim();
+
+      const bodyLines = [
+        'Sponsorship inquiry for CreditUnionAI News',
+        name ? `Name: ${name}` : '',
+        organization ? `Organization: ${organization}` : '',
+        role ? `Role: ${role}` : '',
+        email ? `Email: ${email}` : '',
+        interest ? `Partnership interest: ${interest}` : '',
+        message ? `Message / goals: ${message}` : ''
+      ].filter(Boolean);
+
+      const mailtoHref = `mailto:info@creditunionainews.com?subject=${encodeURIComponent(
+        'Sponsorship inquiry'
+      )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+      window.location.href = mailtoHref;
     });
   }
 
