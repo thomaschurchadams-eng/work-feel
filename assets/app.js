@@ -90,6 +90,28 @@
     }
   ];
 
+  const parseAlertDate = (entry) => new Date(entry?.date || entry?.published || entry?.timestamp || 0);
+
+  // Prepare alerts once for all consumers: newest-first and deduped by source URL or headline
+  const preparedAlerts = (() => {
+    const seenUrls = new Set();
+    const seenHeadlines = new Set();
+
+    return [...alertsData]
+      .sort((a, b) => parseAlertDate(b) - parseAlertDate(a))
+      .filter((alert) => {
+        const urlKey = alert.sourceUrl?.trim().toLowerCase();
+        const headlineKey = alert.headline?.trim().toLowerCase();
+        const isDuplicate = (urlKey && seenUrls.has(urlKey)) || (headlineKey && seenHeadlines.has(headlineKey));
+
+        if (isDuplicate) return false;
+
+        if (urlKey) seenUrls.add(urlKey);
+        if (headlineKey) seenHeadlines.add(headlineKey);
+        return true;
+      });
+  })();
+
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -285,7 +307,7 @@
 
   const header = document.querySelector('header');
   const buildTicker = () => {
-    if (!header || !alertsData.length) return;
+    if (!header || !preparedAlerts.length) return;
 
     const tickerBar = document.createElement('div');
     tickerBar.className = 'ticker-bar';
@@ -304,7 +326,7 @@
     if (!strip) return;
 
     const renderItems = () =>
-      alertsData
+      preparedAlerts
         .map(
           (item) => `
             <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
@@ -330,22 +352,20 @@
 
   const alertsList = document.querySelector('#alerts-list');
 
-  const parseAlertDate = (entry) => new Date(entry?.date || entry?.published || entry?.timestamp || 0);
-
   const renderAlerts = () => {
-    if (!alertsList || !alertsData.length) return;
+    if (!alertsList || !preparedAlerts.length) return;
 
-    const sortedAlerts = [...alertsData].sort((a, b) => parseAlertDate(b) - parseAlertDate(a));
-
-    alertsList.innerHTML = sortedAlerts
+    alertsList.innerHTML = preparedAlerts
       .map(
         (item) => `
           <article class="card alert-card" id="${item.slug}">
             <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span></div>
-            <h3>${item.headline}</h3>
-            <p class="alert-summary">${item.summary}</p>
-            <p class="alert-impact"><span class="muted-label">Credit union impact:</span> ${item.impact || ''}</p>
-            <p class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></p>
+            <div class="alert-content">
+              <h3>${item.headline}</h3>
+              <p class="alert-summary">${item.summary}</p>
+              <p class="alert-impact"><span class="muted-label">Credit union impact:</span> ${item.impact || ''}</p>
+              <p class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></p>
+            </div>
             <p class="alert-date">${item.date || ''}</p>
           </article>
         `
