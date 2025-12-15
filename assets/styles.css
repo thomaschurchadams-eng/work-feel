@@ -616,6 +616,92 @@ form {
   gap: 14px;
 }
 
+.subscribe-hero {
+  padding-top: 40px;
+}
+
+.subscribe-hero-grid {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.subscribe-copy h1 {
+  margin-bottom: 10px;
+}
+
+.trust-bullets {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 16px 0 0;
+  color: #304261;
+  font-weight: 700;
+}
+
+.trust-bullets li {
+  padding: 8px 12px;
+  background: rgba(11, 31, 59, 0.05);
+  border-radius: 12px;
+}
+
+.subscribe-card {
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(11, 31, 59, 0.08);
+}
+
+.subscribe-form {
+  gap: 16px;
+}
+
+.subscribe-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.subscribe-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.mailto-secondary {
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mailto-secondary:hover {
+  text-decoration: underline;
+}
+
+.form-disclaimer {
+  color: #4b5563;
+  margin: -4px 0 0;
+}
+
+.subscribe-benefits .card {
+  min-height: 220px;
+}
+
+.feature-list {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #304261;
+}
+
+.feature-text {
+  color: #304261;
+  line-height: 1.7;
+}
+
 label {
   font-weight: 700;
   color: var(--navy);

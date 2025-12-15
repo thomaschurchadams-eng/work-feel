@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CreditUnionAI News | Newsletter</title>
+  <title>CreditUnionAI News | Subscribe</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -20,30 +20,68 @@
         <a href="news.html">News</a>
         <a href="episodes.html">Episodes</a>
         <a href="insights.html">Insights</a>
-        <a href="newsletter.html">Newsletter</a>
+        <a href="newsletter.html">Subscribe</a>
         <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="section">
-      <div class="container">
-        <h1 style="color:#0b1f3b; font-size:32px; margin-bottom:10px;">Weekly AI Briefing</h1>
-        <p class="lead">Every Friday: the 10-minute rundown on AI moves that matter to credit unions, with talking points for your team and board.</p>
-        <div class="card form-card" style="margin-top:20px;">
-          <form id="newsletter-form">
+    <section class="section subscribe-hero">
+      <div class="container subscribe-hero-grid">
+        <div class="subscribe-copy">
+          <p class="eyebrow">Weekly AI Briefing</p>
+          <h1>Subscribe</h1>
+          <p class="lead">Weekly AI Briefing for credit union leaders. Fast, practical updates with clear takeaways.</p>
+          <ul class="trust-bullets">
+            <li>5-minute read</li>
+            <li>No spam. Unsubscribe anytime.</li>
+          </ul>
+        </div>
+        <div class="card form-card subscribe-card">
+          <form id="newsletter-form" class="subscribe-form">
             <div>
               <label for="email">Email</label>
               <input id="email" name="email" type="email" placeholder="you@example.com" required>
             </div>
             <div>
-              <label for="firstName">First name <span style="color:#5c6a82; font-weight:500;">(optional)</span></label>
+              <label for="firstName">First name <span class="muted-label">(optional)</span></label>
               <input id="firstName" name="firstName" type="text" placeholder="Alex">
             </div>
-            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="subscribe-actions">
+              <button class="btn btn-primary subscribe-btn" type="submit">Subscribe</button>
+              <a class="mailto-secondary" href="mailto:info@creditunionainews.com?subject=Subscribe%20to%20Weekly%20AI%20Briefing&body=Please%20add%20me%20to%20the%20CreditUnionAI%20News%20Weekly%20AI%20Briefing%20list.%20Email:%20%5Byour%20email%5D">Or email us to subscribe</a>
+            </div>
+            <p class="form-disclaimer">We use your email only for the Weekly AI Briefing.</p>
             <div class="notice status" style="display:none;"></div>
           </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section subscribe-benefits">
+      <div class="container">
+        <div class="grid cards-3">
+          <div class="card">
+            <h3>What you’ll get</h3>
+            <ul class="feature-list">
+              <li>AI news that matters to credit unions</li>
+              <li>Vendor moves and market shifts</li>
+              <li>Regulatory and risk signals</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Who it’s for</h3>
+            <ul class="feature-list">
+              <li>CEO, COO, CIO</li>
+              <li>Digital and payments leaders</li>
+              <li>Risk and compliance teams</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Frequency</h3>
+            <p class="feature-text">Weekly — delivered ahead of your team huddles so you can brief leaders before the weekend.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -55,7 +93,7 @@
       <div class="footer-links">
         <a href="news.html">News</a>
         <a href="episodes.html">Episodes</a>
-        <a href="newsletter.html">Newsletter</a>
+        <a href="newsletter.html">Subscribe</a>
         <a href="about.html">About</a>
       </div>
     </div>

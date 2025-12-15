@@ -315,6 +315,22 @@
         status.style.display = 'block';
       }
 
+      const subject = 'Subscribe to Weekly AI Briefing';
+      const bodyLines = [
+        'Please add me to the CreditUnionAI News Weekly AI Briefing list.',
+        `Email: ${email}`
+      ];
+
+      if (firstName) {
+        bodyLines.push(`Name: ${firstName}`);
+      }
+
+      const mailtoHref = `mailto:info@creditunionainews.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        bodyLines.join('\n')
+      )}`;
+
+      window.location.href = mailtoHref;
+
       newsletterForm.reset();
     });
   }
