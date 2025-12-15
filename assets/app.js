@@ -254,10 +254,6 @@
             <div class="meta"><span class="tag">${item.label}</span><span class="tag">Alert</span></div>
             <h3>${item.headline}</h3>
             <p>${item.summary}</p>
-            <div class="actions">
-              <a class="link" href="/alerts/#${item.slug}">Permalink →</a>
-              <a class="link" href="${item.link}">Full coverage →</a>
-            </div>
           </article>
         `
       )
