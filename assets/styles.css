@@ -43,12 +43,17 @@ img {
   margin: 0 auto;
 }
 
+.narrow {
+  max-width: 880px;
+}
+
 header {
   background: var(--white);
   box-shadow: 0 12px 30px rgba(11, 31, 59, 0.08);
   position: sticky;
   top: 0;
   z-index: 20;
+  min-height: 64px;
 }
 
 .navbar {
@@ -58,6 +63,81 @@ header {
   padding: 16px 0;
 }
 
+.ticker-bar {
+  background: #0f294b;
+  color: var(--white);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.ticker-label {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: var(--teal);
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.ticker-window {
+  overflow: hidden;
+  flex: 1;
+}
+
+.ticker-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  white-space: nowrap;
+  animation: ticker-scroll 26s linear infinite;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.ticker-item:hover {
+  background: rgba(31, 182, 170, 0.18);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.ticker-pill {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.ticker-text {
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .brand {
   font-weight: 800;
   color: var(--navy);
@@ -65,6 +145,17 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  height: 98px;
+  max-height: 98px;
+  max-width: 450px;
+}
+
+.brand-logo {
+  height: 100%;
+  max-height: 98px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .brand span {
@@ -218,9 +309,60 @@ header {
   gap: 12px;
 }
 
+.card.alert-card {
+  gap: 14px;
+  line-height: 1.7;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.alert-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
 .card h3 {
   color: var(--navy);
   font-size: 20px;
+}
+
+.alert-summary {
+  color: #304261;
+}
+
+.alert-impact,
+.alert-source {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.alert-impact {
+  margin-top: -4px;
+}
+
+.alert-source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.alert-source a {
+  color: var(--teal);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.alert-date {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: -2px;
+}
+
+.muted-label {
+  color: #6b7280;
+  font-weight: 700;
 }
 
 .meta {
@@ -243,6 +385,11 @@ header {
   color: #0b645c;
   font-weight: 700;
   font-size: 13px;
+}
+
+.tag-secondary {
+  background: rgba(11, 31, 59, 0.08);
+  color: #243852;
 }
 
 .label-tag {
@@ -468,9 +615,152 @@ header {
   margin: 0 auto;
 }
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 form {
   display: grid;
   gap: 14px;
+}
+
+.subscribe-hero {
+  padding-top: 40px;
+}
+
+.subscribe-hero-grid {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.sponsorships-hero {
+  padding-top: 48px;
+  padding-bottom: 26px;
+}
+
+.sponsor-card {
+  padding: 28px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(11, 31, 59, 0.08);
+}
+
+.sponsor-card h2 {
+  margin-top: 0;
+}
+
+.sponsor-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: stretch;
+}
+
+.sponsorship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.sponsorship-form-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.sponsorship-form .actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.subscribe-copy h1 {
+  margin-bottom: 10px;
+}
+
+.trust-bullets {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 16px 0 0;
+  color: #304261;
+  font-weight: 700;
+}
+
+.trust-bullets li {
+  padding: 8px 12px;
+  background: rgba(11, 31, 59, 0.05);
+  border-radius: 12px;
+}
+
+.subscribe-card {
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(11, 31, 59, 0.08);
+}
+
+.subscribe-form {
+  gap: 16px;
+}
+
+.subscribe-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.subscribe-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.mailto-secondary {
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mailto-secondary:hover {
+  text-decoration: underline;
+}
+
+.inline-subscribe {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.form-disclaimer {
+  color: #4b5563;
+  margin: -4px 0 0;
+}
+
+.subscribe-benefits .card {
+  min-height: 220px;
+}
+
+.feature-list {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #304261;
+}
+
+.feature-text {
+  color: #304261;
+  line-height: 1.7;
 }
 
 label {
@@ -497,6 +787,23 @@ input[type="text"] {
 
 input[type="email"]:focus,
 input[type="text"]:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(31, 182, 170, 0.2);
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--soft-gray);
+  background: #fafbfe;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus,
+textarea:focus {
   outline: none;
   border-color: var(--teal);
   box-shadow: 0 0 0 3px rgba(31, 182, 170, 0.2);
@@ -578,6 +885,12 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 900px) {
+  .brand {
+    height: 88px;
+    max-height: 88px;
+    max-width: 360px;
+  }
+
   .nav-links {
     position: absolute;
     right: 0;
@@ -607,6 +920,12 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 640px) {
+  .brand {
+    height: 74px;
+    max-height: 74px;
+    max-width: 320px;
+  }
+
   .navbar {
     padding: 14px 0;
   }
