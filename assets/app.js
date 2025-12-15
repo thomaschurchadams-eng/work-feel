@@ -190,7 +190,7 @@
     tickerBar.className = 'ticker-bar';
     tickerBar.innerHTML = `
       <div class="container ticker-track" aria-label="Latest updates">
-        <div class="ticker-label">In this issue</div>
+        <div class="ticker-label">AI Newsroom Alerts</div>
         <div class="ticker-window">
           <div class="ticker-strip" role="list"></div>
         </div>
