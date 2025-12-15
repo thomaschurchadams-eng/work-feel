@@ -1,6 +1,39 @@
 (function () {
   const alertsData = [
     {
+      label: 'Fraud',
+      headline: 'Visa says AI-powered fraud defenses blocked a surge in holiday fraud attempts.',
+      summary: 'Visa reported that its AI-driven fraud systems prevented significantly more fraudulent transactions during peak holiday shopping periods.',
+      impact: 'Credit unions should expect increased scam and card fraud pressure during peak spending periods and validate real-time fraud scoring, step-up authentication, and dispute workflows with their processors.',
+      sourceName: 'Visa / Payments Industry Reporting',
+      sourceUrl: 'https://usa.visa.com/about-visa/newsroom.html',
+      date: 'Dec 14, 2025',
+      slug: 'visa-ai-holiday-fraud-defenses',
+      link: 'https://usa.visa.com/about-visa/newsroom.html'
+    },
+    {
+      label: 'Operations',
+      headline: 'US bank executives say AI is accelerating productivity and reshaping staffing models.',
+      summary: 'Large banks report that AI is improving operational efficiency and changing how work is distributed across teams.',
+      impact: 'Credit unions should identify near-term AI opportunities in contact centers, back-office processing, and dispute handling while strengthening governance and vendor oversight.',
+      sourceName: 'Reuters',
+      sourceUrl: 'https://www.reuters.com/',
+      date: 'Dec 13, 2025',
+      slug: 'bank-executives-ai-productivity',
+      link: 'https://www.reuters.com/'
+    },
+    {
+      label: 'Security',
+      headline: 'FBI warns of AI-assisted virtual kidnapping and extortion scams.',
+      summary: 'The FBI issued new warnings about criminals using AI-generated voice and synthetic media to impersonate family members in extortion schemes.',
+      impact: 'Member education and fraud response scripts should be updated to address voice cloning and deepfake-driven social engineering, especially for wires and urgent transfers.',
+      sourceName: 'FBI / Federal Reporting',
+      sourceUrl: 'https://www.ic3.gov/',
+      date: 'Dec 10, 2025',
+      slug: 'fbi-ai-virtual-kidnapping-warnings',
+      link: 'https://www.ic3.gov/'
+    },
+    {
       label: 'AI Governance',
       headline: 'NCUA publishes AI resource center for credit unions',
       summary: 'NCUA launched examiner guidance covering model validation, vendor oversight, and documentation expectations.',
@@ -92,12 +125,22 @@
 
   const parseAlertDate = (entry) => new Date(entry?.date || entry?.published || entry?.timestamp || 0);
 
-  // Prepare alerts once for all consumers: newest-first and deduped by source URL or headline
+  const isFreshAlert = (entry, cutoff) => {
+    const parsed = parseAlertDate(entry);
+    const timestamp = parsed instanceof Date ? parsed.getTime() : NaN;
+    return !Number.isNaN(timestamp) && timestamp >= cutoff.getTime();
+  };
+
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
   const preparedAlerts = (() => {
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 14);
+
     const seenUrls = new Set();
     const seenHeadlines = new Set();
 
     return [...alertsData]
+      .filter((alert) => isFreshAlert(alert, cutoff))
       .sort((a, b) => parseAlertDate(b) - parseAlertDate(a))
       .filter((alert) => {
         const urlKey = alert.sourceUrl?.trim().toLowerCase();
@@ -364,9 +407,9 @@
               <h3>${item.headline}</h3>
               <p class="alert-summary">${item.summary}</p>
               <p class="alert-impact"><span class="muted-label">Credit union impact:</span> ${item.impact || ''}</p>
+              <p class="alert-date">${item.date || ''}</p>
               <p class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></p>
             </div>
-            <p class="alert-date">${item.date || ''}</p>
           </article>
         `
       )
