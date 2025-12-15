@@ -305,9 +305,51 @@ header {
   gap: 12px;
 }
 
+.card.alert-card {
+  gap: 14px;
+  line-height: 1.7;
+}
+
 .card h3 {
   color: var(--navy);
   font-size: 20px;
+}
+
+.alert-summary {
+  color: #304261;
+}
+
+.alert-impact,
+.alert-source {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.alert-impact {
+  margin-top: -4px;
+}
+
+.alert-source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.alert-source a {
+  color: var(--teal);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.alert-date {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: -2px;
+}
+
+.muted-label {
+  color: #6b7280;
+  font-weight: 700;
 }
 
 .meta {
@@ -330,6 +372,11 @@ header {
   color: #0b645c;
   font-weight: 700;
   font-size: 13px;
+}
+
+.tag-secondary {
+  background: rgba(11, 31, 59, 0.08);
+  color: #243852;
 }
 
 .label-tag {
