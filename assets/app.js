@@ -1,6 +1,46 @@
 (function () {
   const alertsData = [
     {
+      label: 'AI Governance',
+      headline: 'NCUA publishes AI resource center for credit unions',
+      summary:
+        'NCUA launched a resource center clarifying exam expectations, model validation, and vendor oversight for AI deployments. Credit union impact: clarifies documentation and governance steps examiners will expect. Source: NCUA – https://ncua.gov/newsroom (Jan 9, 2025).',
+      slug: 'ncua-ai-resource-center',
+      link: '/news/ncua-ai-resource-center.html'
+    },
+    {
+      label: 'Fraud',
+      headline: 'Visa and Mastercard sync AI fraud defenses across issuers',
+      summary:
+        'Network providers are coordinating AI-driven risk signals to cut false positives while catching coordinated card fraud faster. Credit union impact: expect higher fraud-blocking accuracy without adding friction for members. Source: PaymentsDive – https://www.paymentsdive.com/ (Jan 7, 2025).',
+      slug: 'visa-mastercard-ai-fraud-network',
+      link: '/news/visa-mastercard-ai-fraud.html'
+    },
+    {
+      label: 'Operations',
+      headline: 'Jack Henry adds AI agent handoffs to digital banking suite',
+      summary:
+        'The core provider is rolling out AI copilots for frontline staff and member chat, including automated summaries into the CRM. Credit union impact: smoother support workflows with less manual note-taking and shorter handle times. Source: Jack Henry – https://jackhenry.com/ (Jan 6, 2025).',
+      slug: 'jack-henry-ai-agent-suite',
+      link: '/news/jack-henry-ai-features.html'
+    },
+    {
+      label: 'Member Experience',
+      headline: 'Fintechs raise expectations for AI-first service journeys',
+      summary:
+        'New entrants are marketing AI-led onboarding, proactive nudges, and multilingual support as default experiences. Credit union impact: higher bar for self-service speed and personalization to retain digital-first members. Source: Finextra – https://www.finextra.com/ (Jan 3, 2025).',
+      slug: 'fintechs-raise-ai-support',
+      link: '/news/fintechs-raise-expectations.html'
+    },
+    {
+      label: 'Payments',
+      headline: 'FedNow real-time growth pressures staffing and alerts',
+      summary:
+        'Rising instant-payment volume is driving demand for automated fraud holds and 24/7 exception handling. Credit union impact: teams need AI-assisted monitoring and member notifications to meet round-the-clock expectations. Source: Federal Reserve – https://www.frbservices.org/ (Dec 20, 2024).',
+      slug: 'fednow-instant-payments-growth',
+      link: '/news/fednow-instant-payments-growth.html'
+    },
+    {
       label: 'OpenAI',
       headline: 'OpenAI board withdraws lawsuit; no GPT-5 release timeline yet',
       summary:
