@@ -652,6 +652,13 @@ form {
   margin-top: 0;
 }
 
+.sponsor-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: stretch;
+}
+
 .sponsorship-form {
   display: flex;
   flex-direction: column;
