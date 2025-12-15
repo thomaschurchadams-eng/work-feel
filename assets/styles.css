@@ -78,6 +78,7 @@ header {
   letter-spacing: 0.4px;
   color: var(--teal);
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 .ticker-window {

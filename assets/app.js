@@ -1,29 +1,40 @@
 (function () {
-  const tickerData = [
+  const alertsData = [
     {
       label: 'NCUA',
-      text: 'NCUA highlights AI opportunities and risks for credit unions',
-      href: '/news.html#article-ncua-ai-opportunities-risks'
+      headline: 'NCUA highlights AI opportunities and risks for credit unions',
+      summary:
+        'NCUA expands its AI resource center, calling for explainability, vendor oversight, and robust data governance.',
+      slug: 'ncua-ai-opportunities-risks',
+      link: '/news.html#article-ncua-ai-opportunities-risks'
     },
     {
       label: 'Fraud',
-      text: 'Credit unions increase adoption of AI-powered fraud defenses',
-      href: '/news.html#article-ai-fraud-tools'
+      headline: 'Credit unions increase adoption of AI-powered fraud defenses',
+      summary: 'Rising fraud sophistication is accelerating investment in machine-learning detection and monitoring.',
+      slug: 'ai-fraud-tools',
+      link: '/news.html#article-ai-fraud-tools'
     },
     {
       label: 'Member Experience',
-      text: 'AI chat and virtual assistants gain traction in digital strategies',
-      href: '/news.html#article-ai-chat-virtual-assistants'
+      headline: 'AI chat and virtual assistants gain traction in digital strategies',
+      summary: 'Conversational AI is reducing call-center load while improving self-service experiences for members.',
+      slug: 'ai-chat-virtual-assistants',
+      link: '/news.html#article-ai-chat-virtual-assistants'
     },
     {
       label: 'Underwriting',
-      text: 'Lenders explore AI-enhanced underwriting to speed decisioning',
-      href: '/news.html#article-ai-underwriting-decisioning'
+      headline: 'Lenders explore AI-enhanced underwriting to speed decisioning',
+      summary: 'Credit unions are piloting decisioning models with governance guardrails to accelerate approvals.',
+      slug: 'ai-underwriting-decisioning',
+      link: '/news.html#article-ai-underwriting-decisioning'
     },
     {
       label: 'Automation',
-      text: 'Prioritizing AI automation with clear governance and data guardrails',
-      href: '/insight-prioritizing-ai-automation.html'
+      headline: 'Prioritizing AI automation with clear governance and data guardrails',
+      summary: 'Operational playbooks emphasize data quality, compliance checks, and front-line change management.',
+      slug: 'ai-automation-governance',
+      link: '/insight-prioritizing-ai-automation.html'
     }
   ];
 
@@ -38,13 +49,22 @@
     navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
+
+    const alertsLinkExists = !!navLinks.querySelector('a[href$="/alerts/"]');
+    if (!alertsLinkExists) {
+      const alertsLink = document.createElement('a');
+      alertsLink.href = '/alerts/';
+      alertsLink.textContent = 'Alerts';
+      navLinks.insertBefore(alertsLink, navLinks.querySelector('a[href$="newsletter.html"]'));
+    }
   }
 
-  const current = window.location.pathname.split('/').pop() || 'index.html';
-  const activeTarget = current === '' ? 'index.html' : current;
+  const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+  const currentPath = normalizePath(window.location.pathname);
+
   document.querySelectorAll('.nav-links a').forEach((link) => {
-    const href = link.getAttribute('href');
-    if (href === activeTarget || (activeTarget === 'index.html' && href === './')) {
+    const linkPath = normalizePath(new URL(link.getAttribute('href'), window.location.origin).pathname);
+    if (linkPath === currentPath || (currentPath === '/' && linkPath === '/index.html')) {
       link.classList.add('active');
     }
   });
@@ -184,13 +204,13 @@
 
   const header = document.querySelector('header');
   const buildTicker = () => {
-    if (!header || !tickerData.length) return;
+    if (!header || !alertsData.length) return;
 
     const tickerBar = document.createElement('div');
     tickerBar.className = 'ticker-bar';
     tickerBar.innerHTML = `
       <div class="container ticker-track" aria-label="Latest updates">
-        <div class="ticker-label">AI Newsroom Alerts</div>
+        <a class="ticker-label" href="/alerts/">AI Newsroom Alerts</a>
         <div class="ticker-window">
           <div class="ticker-strip" role="list"></div>
         </div>
@@ -203,12 +223,12 @@
     if (!strip) return;
 
     const renderItems = () =>
-      tickerData
+      alertsData
         .map(
           (item) => `
-            <a class="ticker-item" href="${item.href}" role="listitem">
+            <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
               <span class="ticker-pill">${item.label}</span>
-              <span class="ticker-text">${item.text}</span>
+              <span class="ticker-text">${item.headline}</span>
             </a>
           `
         )
@@ -226,4 +246,28 @@
   };
 
   buildTicker();
+
+  const alertsList = document.querySelector('#alerts-list');
+
+  const renderAlerts = () => {
+    if (!alertsList || !alertsData.length) return;
+
+    alertsList.innerHTML = alertsData
+      .map(
+        (item) => `
+          <article class="card" id="${item.slug}">
+            <div class="meta"><span class="tag">${item.label}</span><span class="tag">Alert</span></div>
+            <h3>${item.headline}</h3>
+            <p>${item.summary}</p>
+            <div class="actions">
+              <a class="link" href="/alerts/#${item.slug}">Permalink →</a>
+              <a class="link" href="${item.link}">Full coverage →</a>
+            </div>
+          </article>
+        `
+      )
+      .join('');
+  };
+
+  renderAlerts();
 })();
