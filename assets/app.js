@@ -1,4 +1,160 @@
 (function () {
+  const alertsData = [
+    {
+      label: 'Fraud',
+      headline: 'Visa says AI-powered fraud defenses blocked a surge in holiday fraud attempts.',
+      summary: 'Visa reported that its AI-driven fraud systems prevented significantly more fraudulent transactions during peak holiday shopping periods.',
+      impact: 'Credit unions should expect increased scam and card fraud pressure during peak spending periods and validate real-time fraud scoring, step-up authentication, and dispute workflows with their processors.',
+      sourceName: 'Visa / Payments Industry Reporting',
+      sourceUrl: 'https://usa.visa.com/about-visa/newsroom.html',
+      date: 'Dec 14, 2025',
+      slug: 'visa-ai-holiday-fraud-defenses',
+      link: 'https://usa.visa.com/about-visa/newsroom.html'
+    },
+    {
+      label: 'Operations',
+      headline: 'US bank executives say AI is accelerating productivity and reshaping staffing models.',
+      summary: 'Large banks report that AI is improving operational efficiency and changing how work is distributed across teams.',
+      impact: 'Credit unions should identify near-term AI opportunities in contact centers, back-office processing, and dispute handling while strengthening governance and vendor oversight.',
+      sourceName: 'Reuters',
+      sourceUrl: 'https://www.reuters.com/',
+      date: 'Dec 13, 2025',
+      slug: 'bank-executives-ai-productivity',
+      link: 'https://www.reuters.com/'
+    },
+    {
+      label: 'Security',
+      headline: 'FBI warns of AI-assisted virtual kidnapping and extortion scams.',
+      summary: 'The FBI issued new warnings about criminals using AI-generated voice and synthetic media to impersonate family members in extortion schemes.',
+      impact: 'Member education and fraud response scripts should be updated to address voice cloning and deepfake-driven social engineering, especially for wires and urgent transfers.',
+      sourceName: 'FBI / Federal Reporting',
+      sourceUrl: 'https://www.ic3.gov/',
+      date: 'Dec 10, 2025',
+      slug: 'fbi-ai-virtual-kidnapping-warnings',
+      link: 'https://www.ic3.gov/'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'NCUA publishes AI resource center for credit unions',
+      summary: 'NCUA launched examiner guidance covering model validation, vendor oversight, and documentation expectations.',
+      impact: 'Clarifies the governance and evidence examiners expect for AI deployments.',
+      sourceName: 'NCUA',
+      sourceUrl: 'https://ncua.gov/newsroom',
+      date: 'Jan 9, 2025',
+      slug: 'ncua-ai-resource-center',
+      link: '/news/ncua-ai-resource-center.html'
+    },
+    {
+      label: 'Fraud',
+      headline: 'Visa and Mastercard sync AI fraud defenses across issuers',
+      summary: 'Network providers are coordinating AI-driven risk signals to cut false positives and stop coordinated card fraud faster.',
+      impact: 'Expect higher fraud-blocking accuracy without adding friction for members.',
+      sourceName: 'PaymentsDive',
+      sourceUrl: 'https://www.paymentsdive.com/',
+      date: 'Jan 7, 2025',
+      slug: 'visa-mastercard-ai-fraud-network',
+      link: '/news/visa-mastercard-ai-fraud.html'
+    },
+    {
+      label: 'Operations',
+      headline: 'Jack Henry adds AI agent handoffs to digital banking suite',
+      summary: 'The core provider is rolling out AI copilots for frontline staff and member chat with automated CRM summaries.',
+      impact: 'Smoother support workflows with less manual note-taking and shorter handle times.',
+      sourceName: 'Jack Henry',
+      sourceUrl: 'https://jackhenry.com/',
+      date: 'Jan 6, 2025',
+      slug: 'jack-henry-ai-agent-suite',
+      link: '/news/jack-henry-ai-features.html'
+    },
+    {
+      label: 'Member Experience',
+      headline: 'Fintechs raise expectations for AI-first service journeys',
+      summary: 'New entrants are marketing AI-led onboarding, proactive nudges, and multilingual support as default experiences.',
+      impact: 'Raises the bar for self-service speed and personalization to retain digital-first members.',
+      sourceName: 'Finextra',
+      sourceUrl: 'https://www.finextra.com/',
+      date: 'Jan 3, 2025',
+      slug: 'fintechs-raise-ai-support',
+      link: '/news/fintechs-raise-expectations.html'
+    },
+    {
+      label: 'Payments',
+      headline: 'FedNow real-time growth pressures staffing and alerts',
+      summary: 'Rising instant-payment volume is driving demand for automated fraud holds and 24/7 exception handling.',
+      impact: 'Teams need AI-assisted monitoring and member notifications to meet round-the-clock expectations.',
+      sourceName: 'Federal Reserve',
+      sourceUrl: 'https://www.frbservices.org/',
+      date: 'Dec 20, 2024',
+      slug: 'fednow-instant-payments-growth',
+      link: '/news/fednow-instant-payments-growth.html'
+    },
+    {
+      label: 'OpenAI',
+      headline: 'OpenAI board withdraws lawsuit; no GPT-5 release timeline yet',
+      summary: 'The board signaled a reset by dropping litigation while safety reviews continue.',
+      impact: 'Signals a pause on major model releases while oversight questions are resolved.',
+      sourceName: 'OpenAI',
+      sourceUrl: 'https://openai.com/',
+      date: 'Dec 19, 2024',
+      slug: 'openai-board-withdraws-lawsuit',
+      link: '/news/ai-governance-board-expectations.html'
+    },
+    {
+      label: 'Member Insights',
+      headline: 'Search data shows members want AI for tailored support and budgeting',
+      summary: 'Members increasingly search for AI-driven financial coaching, budgeting help, and tailored advice.',
+      impact: 'Credit unions need personalized nudges and guidance to stay competitive with AI-native experiences.',
+      sourceName: 'Google Trends',
+      sourceUrl: 'https://trends.google.com/',
+      date: 'Dec 18, 2024',
+      slug: 'ai-member-tailored-support',
+      link: '/news/ai-personalization-digital-banking.html'
+    },
+    {
+      label: 'Fraud',
+      headline: 'Members say AI fraud protection is a must-have benefit',
+      summary: 'Heightened scams are raising expectations for real-time anomaly detection, proactive alerts, and frictionless remediation.',
+      impact: 'Strong AI fraud controls are becoming table stakes for member trust.',
+      sourceName: 'CU Today',
+      sourceUrl: 'https://www.cutoday.info/',
+      date: 'Dec 12, 2024',
+      slug: 'ai-fraud-protection-necessity',
+      link: '/news/ai-powered-fraud-tools.html'
+    }
+  ];
+
+  const parseAlertDate = (entry) => new Date(entry?.date || entry?.published || entry?.timestamp || 0);
+
+  const isFreshAlert = (entry, cutoff) => {
+    const parsed = parseAlertDate(entry);
+    const timestamp = parsed instanceof Date ? parsed.getTime() : NaN;
+    return !Number.isNaN(timestamp) && timestamp >= cutoff.getTime();
+  };
+
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
+  const preparedAlerts = (() => {
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 14);
+
+    const seenUrls = new Set();
+    const seenHeadlines = new Set();
+
+    return [...alertsData]
+      .filter((alert) => isFreshAlert(alert, cutoff))
+      .sort((a, b) => parseAlertDate(b) - parseAlertDate(a))
+      .filter((alert) => {
+        const urlKey = alert.sourceUrl?.trim().toLowerCase();
+        const headlineKey = alert.headline?.trim().toLowerCase();
+        const isDuplicate = (urlKey && seenUrls.has(urlKey)) || (headlineKey && seenHeadlines.has(headlineKey));
+
+        if (isDuplicate) return false;
+
+        if (urlKey) seenUrls.add(urlKey);
+        if (headlineKey) seenHeadlines.add(headlineKey);
+        return true;
+      });
+  })();
+
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -10,13 +166,90 @@
     navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
+
+    const existingAlertsLink = navLinks.querySelector('a[href$="/alerts/"]');
+    if (existingAlertsLink) {
+      existingAlertsLink.textContent = 'AI Newsroom Alerts';
+    } else {
+      const alertsLink = document.createElement('a');
+      alertsLink.href = '/alerts/';
+      alertsLink.textContent = 'AI Newsroom Alerts';
+      alertsLink.addEventListener('click', () => navLinks.classList.remove('open'));
+      const firstNav = navLinks.querySelector('a');
+      if (firstNav) {
+        firstNav.insertAdjacentElement('afterend', alertsLink);
+      } else {
+        navLinks.appendChild(alertsLink);
+      }
+    }
+
+    const sponsorshipLink = navLinks.querySelector(
+      'a[href$="/sponsorships/"], a[href$="sponsorships.html"], a[href$="/sponsorships"]'
+    );
+
+    if (!sponsorshipLink) {
+      const sponsorAnchor = document.createElement('a');
+      sponsorAnchor.href = '/sponsorships/';
+      sponsorAnchor.textContent = 'Sponsorships';
+      sponsorAnchor.addEventListener('click', () => navLinks.classList.remove('open'));
+      const aboutLink = navLinks.querySelector('a[href*="about"]');
+      if (aboutLink) {
+        aboutLink.insertAdjacentElement('beforebegin', sponsorAnchor);
+      } else {
+        navLinks.appendChild(sponsorAnchor);
+      }
+    }
   }
 
-  const current = window.location.pathname.split('/').pop() || 'index.html';
-  const activeTarget = current === '' ? 'index.html' : current;
+  document.querySelectorAll('.footer .footer-links').forEach((links) => {
+    if (!links) return;
+
+    const existingFooterLink = links.querySelector('a[href$="/alerts/"]');
+    if (existingFooterLink) {
+      existingFooterLink.textContent = 'AI Newsroom Alerts';
+      existingFooterLink.href = '/alerts/';
+      return;
+    }
+
+    const alertsFooterLink = document.createElement('a');
+    alertsFooterLink.href = '/alerts/';
+    alertsFooterLink.textContent = 'AI Newsroom Alerts';
+
+    const firstFooterLink = links.querySelector('a');
+    if (firstFooterLink) {
+      firstFooterLink.insertAdjacentElement('beforebegin', alertsFooterLink);
+    } else {
+      links.appendChild(alertsFooterLink);
+    }
+  });
+
+  document.querySelectorAll('.footer .footer-links').forEach((links) => {
+    if (!links) return;
+
+    const sponsorshipLink = links.querySelector(
+      'a[href$="/sponsorships/"], a[href$="sponsorships.html"], a[href$="/sponsorships"]'
+    );
+
+    if (sponsorshipLink) return;
+
+    const sponsorAnchor = document.createElement('a');
+    sponsorAnchor.href = '/sponsorships/';
+    sponsorAnchor.textContent = 'Sponsorships';
+
+    const aboutLink = links.querySelector('a[href*="about"]');
+    if (aboutLink) {
+      aboutLink.insertAdjacentElement('beforebegin', sponsorAnchor);
+    } else {
+      links.appendChild(sponsorAnchor);
+    }
+  });
+
+  const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+  const currentPath = normalizePath(window.location.pathname);
+
   document.querySelectorAll('.nav-links a').forEach((link) => {
-    const href = link.getAttribute('href');
-    if (href === activeTarget || (activeTarget === 'index.html' && href === './')) {
+    const linkPath = normalizePath(new URL(link.getAttribute('href'), window.location.origin).pathname);
+    if (linkPath === currentPath || (currentPath === '/' && linkPath === '/index.html')) {
       link.classList.add('active');
     }
   });
@@ -121,7 +354,48 @@
         status.style.display = 'block';
       }
 
+      const subject = 'Subscribe to Weekly AI Briefing';
+      const bodyLines = ['Please add me to the CreditUnionAI News Weekly AI Briefing list.'];
+
+      const mailtoHref = `mailto:info@creditunionainews.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        bodyLines.join('\n')
+      )}`;
+
+      window.location.href = mailtoHref;
+
       newsletterForm.reset();
+    });
+  }
+
+  const sponsorshipForm = document.querySelector('#sponsorship-form');
+
+  if (sponsorshipForm) {
+    sponsorshipForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(sponsorshipForm);
+      const name = (formData.get('name') || '').toString().trim();
+      const organization = (formData.get('organization') || '').toString().trim();
+      const role = (formData.get('role') || '').toString().trim();
+      const email = (formData.get('email') || '').toString().trim();
+      const interest = (formData.get('interest') || '').toString().trim();
+      const message = (formData.get('message') || '').toString().trim();
+
+      const bodyLines = [
+        'Sponsorship inquiry for CreditUnionAI News',
+        name ? `Name: ${name}` : '',
+        organization ? `Organization: ${organization}` : '',
+        role ? `Role: ${role}` : '',
+        email ? `Email: ${email}` : '',
+        interest ? `Partnership interest: ${interest}` : '',
+        message ? `Message / goals: ${message}` : ''
+      ].filter(Boolean);
+
+      const mailtoHref = `mailto:info@creditunionainews.com?subject=${encodeURIComponent(
+        'Sponsorship inquiry'
+      )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+      window.location.href = mailtoHref;
     });
   }
 
@@ -153,4 +427,74 @@
       renderSignupTable();
     });
   }
+
+  const header = document.querySelector('header');
+  const buildTicker = () => {
+    if (!header || !preparedAlerts.length) return;
+
+    const tickerBar = document.createElement('div');
+    tickerBar.className = 'ticker-bar';
+    tickerBar.innerHTML = `
+      <div class="container ticker-track" aria-label="Latest updates">
+        <a class="ticker-label" href="/alerts/">AI Newsroom Alerts</a>
+        <div class="ticker-window">
+          <div class="ticker-strip" role="list"></div>
+        </div>
+      </div>
+    `;
+
+    header.appendChild(tickerBar);
+
+    const strip = tickerBar.querySelector('.ticker-strip');
+    if (!strip) return;
+
+    const renderItems = () =>
+      preparedAlerts
+        .map(
+          (item) => `
+            <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
+              <span class="ticker-pill">${item.label}</span>
+              <span class="ticker-text">${item.headline}</span>
+            </a>
+          `
+        )
+        .join('');
+
+    strip.innerHTML = `${renderItems()}${renderItems()}`;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const toggleAnimation = () => {
+      strip.style.animationPlayState = prefersReducedMotion.matches ? 'paused' : 'running';
+    };
+
+    toggleAnimation();
+    prefersReducedMotion.addEventListener('change', toggleAnimation);
+  };
+
+  buildTicker();
+
+  const alertsList = document.querySelector('#alerts-list');
+
+  const renderAlerts = () => {
+    if (!alertsList || !preparedAlerts.length) return;
+
+    alertsList.innerHTML = preparedAlerts
+      .map(
+        (item) => `
+          <article class="card alert-card" id="${item.slug}">
+            <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span></div>
+            <div class="alert-content">
+              <h3>${item.headline}</h3>
+              <p class="alert-summary">${item.summary}</p>
+              <p class="alert-impact"><span class="muted-label">Credit union impact:</span> ${item.impact || ''}</p>
+              <p class="alert-date">${item.date || ''}</p>
+              <p class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></p>
+            </div>
+          </article>
+        `
+      )
+      .join('');
+  };
+
+  renderAlerts();
 })();
