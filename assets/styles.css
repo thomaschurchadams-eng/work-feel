@@ -428,6 +428,16 @@ header {
   line-height: 1.6;
 }
 
+.article-body ul {
+  margin: 0 0 1rem 1.25rem;
+  padding-left: 1rem;
+  list-style-position: outside;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
 .article-date {
   color: #6b7280;
   font-size: 0.9rem;
