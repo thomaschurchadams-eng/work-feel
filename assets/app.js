@@ -204,13 +204,13 @@
       }
     }
 
-    const hasSponsorshipLink = Array.from(navLinks.querySelectorAll('a')).some((link) => {
+    const sponsorshipAnchors = Array.from(navLinks.querySelectorAll('a')).filter((link) => {
       const href = link.getAttribute('href') || '';
-      const normalizedHref = normalizePath(new URL(href, window.location.origin).pathname);
-      return normalizedHref === '/sponsorships' || normalizedHref === '/sponsorships/index.html';
+      const normalizedHref = normalizePath(new URL(href, window.location.href).pathname);
+      return normalizedHref === '/sponsorships';
     });
 
-    if (!hasSponsorshipLink) {
+    if (!sponsorshipAnchors.length) {
       const sponsorAnchor = document.createElement('a');
       sponsorAnchor.href = '/sponsorships/';
       sponsorAnchor.textContent = 'Sponsorships';
@@ -221,6 +221,8 @@
       } else {
         navLinks.appendChild(sponsorAnchor);
       }
+    } else if (sponsorshipAnchors.length > 1) {
+      sponsorshipAnchors.slice(1).forEach((duplicate) => duplicate.remove());
     }
   }
 
