@@ -204,11 +204,13 @@
       }
     }
 
-    const sponsorshipLink = navLinks.querySelector(
-      'a[href$="/sponsorships/"], a[href$="sponsorships.html"], a[href$="/sponsorships"]'
-    );
+    const hasSponsorshipLink = Array.from(navLinks.querySelectorAll('a')).some((link) => {
+      const href = link.getAttribute('href') || '';
+      const normalizedHref = normalizePath(new URL(href, window.location.origin).pathname);
+      return normalizedHref === '/sponsorships' || normalizedHref === '/sponsorships/index.html';
+    });
 
-    if (!sponsorshipLink) {
+    if (!hasSponsorshipLink) {
       const sponsorAnchor = document.createElement('a');
       sponsorAnchor.href = '/sponsorships/';
       sponsorAnchor.textContent = 'Sponsorships';
