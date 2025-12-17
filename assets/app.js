@@ -1,37 +1,45 @@
 (function () {
   const alertsData = [
     {
-      label: 'Fraud',
-      headline: 'Visa says AI-powered fraud defenses blocked a surge in holiday fraud attempts.',
-      summary: 'Visa reported that its AI-driven fraud systems prevented significantly more fraudulent transactions during peak holiday shopping periods.',
-      impact: 'Credit unions should expect increased scam and card fraud pressure during peak spending periods and validate real-time fraud scoring, step-up authentication, and dispute workflows with their processors.',
-      sourceName: 'Visa / Payments Industry Reporting',
-      sourceUrl: 'https://usa.visa.com/about-visa/newsroom.html',
-      date: 'Dec 14, 2025',
-      slug: 'visa-ai-holiday-fraud-defenses',
-      link: 'https://usa.visa.com/about-visa/newsroom.html'
+      label: 'AI Governance',
+      headline: 'Trump signs executive order aiming to limit state AI regulations',
+      summary:
+        'President Donald Trump signed an executive order directing federal agencies to challenge certain state AI laws and reduce a patchwork of state regulation.',
+      impact:
+        'Credit unions operating across multiple states may need to adjust AI governance and vendor oversight as the federal and state regulatory environment shifts.',
+      sourceName: 'AP News',
+      sourceUrl: 'https://apnews.com/article/9cb4dd1bc249e404260b3dc233217388',
+      date: 'Dec 16, 2025',
+      slug: 'trump-executive-order-ai-regulation',
+      link: 'https://apnews.com/article/9cb4dd1bc249e404260b3dc233217388'
     },
     {
-      label: 'Operations',
-      headline: 'US bank executives say AI is accelerating productivity and reshaping staffing models.',
-      summary: 'Large banks report that AI is improving operational efficiency and changing how work is distributed across teams.',
-      impact: 'Credit unions should identify near-term AI opportunities in contact centers, back-office processing, and dispute handling while strengthening governance and vendor oversight.',
-      sourceName: 'Reuters',
-      sourceUrl: 'https://www.reuters.com/',
-      date: 'Dec 13, 2025',
-      slug: 'bank-executives-ai-productivity',
-      link: 'https://www.reuters.com/'
+      label: 'Lending',
+      headline: 'Banks face pressure from fintechs and agentic AI as credit products evolve',
+      summary:
+        'PYMNTS reports growing pressure on banks from fintechs and new agentic AI capabilities as consumers expect flexible credit delivered in real time.',
+      impact:
+        'Credit unions should watch how agentic AI changes underwriting, repayment flexibility, and servicing expectations, and stress test risk controls before adopting similar models.',
+      sourceName: 'PYMNTS',
+      sourceUrl: 'https://www.pymnts.com/news/payment-methods/2025/credit-is-being-rewritten-and-banks-are-running-out-of-time-says-thredd-ceo/',
+      date: 'Dec 17, 2025',
+      slug: 'agentic-ai-credit-product-pressure',
+      link: 'https://www.pymnts.com/news/payment-methods/2025/credit-is-being-rewritten-and-banks-are-running-out-of-time-says-thredd-ceo/'
     },
     {
-      label: 'Security',
-      headline: 'FBI warns of AI-assisted virtual kidnapping and extortion scams.',
-      summary: 'The FBI issued new warnings about criminals using AI-generated voice and synthetic media to impersonate family members in extortion schemes.',
-      impact: 'Member education and fraud response scripts should be updated to address voice cloning and deepfake-driven social engineering, especially for wires and urgent transfers.',
-      sourceName: 'FBI / Federal Reporting',
-      sourceUrl: 'https://www.ic3.gov/',
-      date: 'Dec 10, 2025',
-      slug: 'fbi-ai-virtual-kidnapping-warnings',
-      link: 'https://www.ic3.gov/'
+      label: 'Member Experience',
+      headline: 'Member Loyalty Group launches AI tool to help credit unions respond to member feedback faster',
+      summary:
+        'Member Loyalty Group announced an AI powered feature that helps credit unions generate faster, more consistent replies to member feedback.',
+      impact:
+        'This is a practical near term automation use case for member experience teams, but it should be paired with clear tone guidelines, approvals, and auditability.',
+      sourceName: 'Business Wire',
+      sourceUrl:
+        'https://www.businesswire.com/news/home/20251216488272/en/Member-Loyalty-Group-Introduces-AI-Powered-Solution-to-Help-Credit-Unions-Close-the-Feedback-Loop-Faster-More-Effectively',
+      date: 'Dec 16, 2025',
+      slug: 'member-loyalty-group-ai-feedback-tool',
+      link:
+        'https://www.businesswire.com/news/home/20251216488272/en/Member-Loyalty-Group-Introduces-AI-Powered-Solution-to-Help-Credit-Unions-Close-the-Feedback-Loop-Faster-More-Effectively'
     },
     {
       label: 'AI Governance',
@@ -123,25 +131,34 @@
     }
   ];
 
-  const parseAlertDate = (entry) => new Date(entry?.date || entry?.published || entry?.timestamp || 0);
+  const parseAlertDate = (entry) => {
+    const raw = entry?.date || entry?.published || entry?.timestamp || '';
+    if (!raw) return null;
 
-  const isFreshAlert = (entry, cutoff) => {
-    const parsed = parseAlertDate(entry);
-    const timestamp = parsed instanceof Date ? parsed.getTime() : NaN;
-    return !Number.isNaN(timestamp) && timestamp >= cutoff.getTime();
+    const normalized = typeof raw === 'string' ? raw.trim() : raw;
+    const parsed = new Date(normalized);
+
+    if (!Number.isNaN(parsed.getTime())) return parsed;
+
+    if (typeof normalized === 'string') {
+      const fallback = new Date(normalized.replace(/-/g, '/'));
+      if (!Number.isNaN(fallback.getTime())) return fallback;
+    }
+
+    return null;
   };
 
-  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
-  const preparedAlerts = (() => {
+  const getRecentAlerts = (alerts, days = 14) => {
     const cutoff = new Date();
-    cutoff.setDate(cutoff.getDate() - 14);
+    cutoff.setDate(cutoff.getDate() - days);
 
     const seenUrls = new Set();
     const seenHeadlines = new Set();
 
-    return [...alertsData]
-      .filter((alert) => isFreshAlert(alert, cutoff))
-      .sort((a, b) => parseAlertDate(b) - parseAlertDate(a))
+    return alerts
+      .map((alert) => ({ ...alert, parsedDate: parseAlertDate(alert) }))
+      .filter(({ parsedDate }) => parsedDate && parsedDate.getTime() >= cutoff.getTime())
+      .sort((a, b) => b.parsedDate - a.parsedDate)
       .filter((alert) => {
         const urlKey = alert.sourceUrl?.trim().toLowerCase();
         const headlineKey = alert.headline?.trim().toLowerCase();
@@ -152,8 +169,14 @@
         if (urlKey) seenUrls.add(urlKey);
         if (headlineKey) seenHeadlines.add(headlineKey);
         return true;
-      });
-  })();
+      })
+      .map(({ parsedDate, ...rest }) => rest);
+  };
+
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
+  const preparedAlerts = getRecentAlerts(alertsData);
+
+  const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
@@ -183,11 +206,13 @@
       }
     }
 
-    const sponsorshipLink = navLinks.querySelector(
-      'a[href$="/sponsorships/"], a[href$="sponsorships.html"], a[href$="/sponsorships"]'
-    );
+    const sponsorshipAnchors = Array.from(navLinks.querySelectorAll('a')).filter((link) => {
+      const href = link.getAttribute('href') || '';
+      const normalizedHref = normalizePath(new URL(href, window.location.href).pathname);
+      return normalizedHref === '/sponsorships';
+    });
 
-    if (!sponsorshipLink) {
+    if (!sponsorshipAnchors.length) {
       const sponsorAnchor = document.createElement('a');
       sponsorAnchor.href = '/sponsorships/';
       sponsorAnchor.textContent = 'Sponsorships';
@@ -198,6 +223,8 @@
       } else {
         navLinks.appendChild(sponsorAnchor);
       }
+    } else if (sponsorshipAnchors.length > 1) {
+      sponsorshipAnchors.slice(1).forEach((duplicate) => duplicate.remove());
     }
   }
 
@@ -244,7 +271,6 @@
     }
   });
 
-  const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
   const currentPath = normalizePath(window.location.pathname);
 
   document.querySelectorAll('.nav-links a').forEach((link) => {
@@ -476,7 +502,18 @@
   const alertsList = document.querySelector('#alerts-list');
 
   const renderAlerts = () => {
-    if (!alertsList || !preparedAlerts.length) return;
+    if (!alertsList) return;
+
+    if (!preparedAlerts.length) {
+      alertsList.innerHTML = `
+        <article class="card alert-card" aria-live="polite">
+          <div class="alert-content">
+            <h3>No alerts in the last 14 days. Check back soon.</h3>
+          </div>
+        </article>
+      `;
+      return;
+    }
 
     alertsList.innerHTML = preparedAlerts
       .map(
@@ -487,8 +524,7 @@
               <h3>${item.headline}</h3>
               <p class="alert-summary">${item.summary}</p>
               <p class="alert-impact"><span class="muted-label">Credit union impact:</span> ${item.impact || ''}</p>
-              <p class="alert-date">${item.date || ''}</p>
-              <p class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></p>
+              <p class="alert-meta"><span class="alert-date">${item.date || ''}</span> · <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p>
             </div>
           </article>
         `
