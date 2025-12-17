@@ -176,6 +176,8 @@
   // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
   const preparedAlerts = getRecentAlerts(alertsData);
 
+  const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -269,7 +271,6 @@
     }
   });
 
-  const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
   const currentPath = normalizePath(window.location.pathname);
 
   document.querySelectorAll('.nav-links a').forEach((link) => {
