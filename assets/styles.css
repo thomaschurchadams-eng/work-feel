@@ -864,10 +864,20 @@ textarea:focus {
 
 .audio-player {
   margin-top: 8px;
+  background: var(--white);
+  border: 1px solid var(--soft-gray);
+  border-radius: 12px;
+  padding: 12px;
 }
 
 .audio-player audio {
   width: 100%;
+}
+
+.audio-player iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
 }
 
 .coming-soon {
