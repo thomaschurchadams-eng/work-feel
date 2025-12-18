@@ -1,6 +1,47 @@
 (function () {
   const alertsData = [
     {
+      label: 'Agentic AI',
+      headline: 'Major banks prepare customer-facing agentic AI trials amid regulatory scrutiny',
+      summary:
+        'Reuters reports that British banks such as NatWest, Lloyds and Starling are working with the Financial Conduct Authority (FCA) to pilot agentic AI systems capable of planning and acting autonomously — a shift from back-office use that raises new governance and stability concerns.',
+      impact:
+        'As autonomous AI moves closer to consumer finance applications, credit unions should monitor evolving governance expectations and risk frameworks emerging from regulator-bank dialogues.',
+      sourceName: 'Reuters',
+      sourceUrl: 'https://www.reuters.com/markets/funds/agentic-ai-race-by-british-banks-raises-new-risks-regulator-2025-12-17/',
+      date: 'Dec 17, 2025',
+      slug: 'agentic-ai-customer-facing-trials-fca',
+      link: 'https://www.reuters.com/markets/funds/agentic-ai-race-by-british-banks-raises-new-risks-regulator-2025-12-17/'
+    },
+    {
+      label: 'Fraud',
+      headline: 'AI fraud detection firm Informed.IQ secures $63M investment to expand services',
+      summary:
+        'Invictus Growth Partners has invested $63 million in Informed.IQ, a provider of AI-powered fraud detection and loan verification services used by major lenders; the funding will support expansion into mortgage and consumer lending fraud markets.',
+      impact:
+        'Advanced AI for fraud prevention affects risk models and vendor decisions for credit unions evaluating next-gen detection tools in lending and compliance workflows.',
+      sourceName: 'AInvest/Reuters',
+      sourceUrl:
+        'https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_FWN3XM0BP%3A0-informed-iq-secures-63-million-from-invictus-growth-partners/',
+      date: 'Dec 16, 2025',
+      slug: 'informed-iq-63m-funding-fraud-expansion',
+      link:
+        'https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_FWN3XM0BP%3A0-informed-iq-secures-63-million-from-invictus-growth-partners/'
+    },
+    {
+      label: 'Infrastructure',
+      headline: 'AI infrastructure services become foundational for financial services computing',
+      summary:
+        'Recent industry analysis highlights that AI infrastructure services — spanning data orchestration, accelerators and lifecycle management platforms — are evolving from niche add-ons to central components of enterprise computing stacks in banking and financial services.',
+      impact:
+        'As financial institutions deepen AI use, infrastructure choices increasingly influence cost, scalability and governance decisions for all AI initiatives credit unions may consider.',
+      sourceName: 'RTInsights',
+      sourceUrl: 'https://www.rtinsights.com/ai-infrastructure-services-banking-and-financial-services-new-foundation-for-computing/',
+      date: 'Dec 16, 2025',
+      slug: 'ai-infrastructure-foundational-financial-services',
+      link: 'https://www.rtinsights.com/ai-infrastructure-services-banking-and-financial-services-new-foundation-for-computing/'
+    },
+    {
       label: 'AI Governance',
       headline: 'Trump signs executive order aiming to limit state AI regulations',
       summary:
