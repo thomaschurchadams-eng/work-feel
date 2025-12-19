@@ -1,47 +1,6 @@
 (function () {
   const alertsData = [
     {
-      label: 'Personalization',
-      headline: 'AI personalization platform expands into banking and credit unions',
-      summary:
-        'Psympl’s psychographic AI–driven personalization tools are now being deployed by community banks and credit unions, enabling scalable motivation-based engagement across marketing and member service programs.',
-      impact:
-        'AI personalization tools entering CU and community bank workflows can help drive member engagement and retention, but also raise questions about data strategy and operational readiness.',
-      sourceName: 'Investors Hangout',
-      sourceUrl:
-        'https://investorshangout.com/psympl-partners-with-marketmatch-for-banking-personalization-491352-/',
-      date: '2025-12-18',
-      slug: 'psympl-ai-personalization-banking-credit-unions',
-      link:
-        'https://investorshangout.com/psympl-partners-with-marketmatch-for-banking-personalization-491352-/'
-    },
-    {
-      label: 'Customer Service',
-      headline: 'European insurer adopts AI knowledge hub and agent for customer support',
-      summary:
-        'Achmea selected the eGain AI Knowledge Hub and AI Agent to modernize its customer support systems, illustrating broader enterprise adoption of AI agents for customer service and operational automation.',
-      impact:
-        'As insurers and financial services firms automate service with AI, credit unions should evaluate how similar tools could improve member service while balancing trust and controls.',
-      sourceName: 'StockTitan News',
-      sourceUrl: 'https://www.stocktitan.net/news/EGAN/achmea-selects-e-gain-ai-knowledge-hub-and-ai-agent-to-power-digital-7lji3wtyhc4l.html',
-      date: '2025-12-18',
-      slug: 'achmea-egain-ai-knowledge-hub-agent',
-      link: 'https://www.stocktitan.net/news/EGAN/achmea-selects-e-gain-ai-knowledge-hub-and-ai-agent-to-power-digital-7lji3wtyhc4l.html'
-    },
-    {
-      label: 'Payments',
-      headline: 'Railsr partners with Equals Money and Okta for AI-driven payments security',
-      summary:
-        'Railsr has partnered with Equals Money and Okta to enhance AI-driven payments infrastructure and security, advancing automated fraud controls and payment workflows in fintech.',
-      impact:
-        'Advancements in AI-powered payments security and automation may affect credit union payment partnerships, fraud mitigation strategies, and digital service expectations.',
-      sourceName: 'Global Banking & Finance',
-      sourceUrl: 'https://www.globalbankingandfinance.com/equals-money-railsr-partners-with-okta-to-secure-ai-driven-payments/',
-      date: '2025-12-18',
-      slug: 'railsr-equals-okta-ai-payments-security',
-      link: 'https://www.globalbankingandfinance.com/equals-money-railsr-partners-with-okta-to-secure-ai-driven-payments/'
-    },
-    {
       label: 'Agentic AI',
       headline: 'Major banks prepare customer-facing agentic AI trials amid regulatory scrutiny',
       summary:
@@ -72,6 +31,19 @@
     {
       label: 'Infrastructure',
       headline: 'AI infrastructure services become foundational for financial services computing',
+      summary:
+        'Recent industry analysis highlights that AI infrastructure services — spanning data orchestration, accelerators and lifecycle management platforms — are evolving from niche add-ons to central components of enterprise computing stacks in banking and financial services.',
+      impact:
+        'As financial institutions deepen AI use, infrastructure choices increasingly influence cost, scalability and governance decisions for all AI initiatives credit unions may consider.',
+      sourceName: 'RTInsights',
+      sourceUrl: 'https://www.rtinsights.com/ai-infrastructure-services-banking-and-financial-services-new-foundation-for-computing/',
+      date: 'Dec 16, 2025',
+      slug: 'ai-infrastructure-foundational-financial-services',
+      link: 'https://www.rtinsights.com/ai-infrastructure-services-banking-and-financial-services-new-foundation-for-computing/'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'Trump signs executive order aiming to limit state AI regulations',
       summary:
         'Recent industry analysis highlights that AI infrastructure services — spanning data orchestration, accelerators and lifecycle management platforms — are evolving from niche add-ons to central components of enterprise computing stacks in banking and financial services.',
       impact:
