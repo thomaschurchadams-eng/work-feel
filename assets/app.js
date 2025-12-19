@@ -222,11 +222,61 @@
   // Predefined fallback images for cards that do not declare their own artwork.
   // Tries user-provided PNG/JPG first; if missing, falls back to bundled SVGs.
   const fallbackImageSets = [
-    { candidates: ['/assets/Articalimage1.png', '/assets/Articalimage1.jpg', '/assets/Articalimage1.jpeg'], fallback: '/assets/Articalimage1.svg' },
-    { candidates: ['/assets/Articalimage2.png', '/assets/Articalimage2.jpg', '/assets/Articalimage2.jpeg'], fallback: '/assets/Articalimage2.svg' },
-    { candidates: ['/assets/Articalimage3.png', '/assets/Articalimage3.jpg', '/assets/Articalimage3.jpeg'], fallback: '/assets/Articalimage3.svg' },
-    { candidates: ['/assets/Articalimage4.png', '/assets/Articalimage4.jpg', '/assets/Articalimage4.jpeg'], fallback: '/assets/Articalimage4.svg' },
-    { candidates: ['/assets/Articalimage5.png', '/assets/Articalimage5.jpg', '/assets/Articalimage5.jpeg'], fallback: '/assets/Articalimage5.svg' }
+    {
+      candidates: [
+        '/assets/Articalimage1.png',
+        '/assets/Articalimage1.jpg',
+        '/assets/Articalimage1.jpeg',
+        '/assets/Articleimage1.png',
+        '/assets/Articleimage1.jpg',
+        '/assets/Articleimage1.jpeg'
+      ],
+      fallback: '/assets/Articalimage1.svg'
+    },
+    {
+      candidates: [
+        '/assets/Articalimage2.png',
+        '/assets/Articalimage2.jpg',
+        '/assets/Articalimage2.jpeg',
+        '/assets/Articleimage2.png',
+        '/assets/Articleimage2.jpg',
+        '/assets/Articleimage2.jpeg'
+      ],
+      fallback: '/assets/Articalimage2.svg'
+    },
+    {
+      candidates: [
+        '/assets/Articalimage3.png',
+        '/assets/Articalimage3.jpg',
+        '/assets/Articalimage3.jpeg',
+        '/assets/Articleimage3.png',
+        '/assets/Articleimage3.jpg',
+        '/assets/Articleimage3.jpeg'
+      ],
+      fallback: '/assets/Articalimage3.svg'
+    },
+    {
+      candidates: [
+        '/assets/Articalimage4.png',
+        '/assets/Articalimage4.jpg',
+        '/assets/Articalimage4.jpeg',
+        '/assets/Articleimage4.png',
+        '/assets/Articleimage4.jpg',
+        '/assets/Articleimage4.jpeg'
+      ],
+      fallback: '/assets/Articalimage4.svg'
+    },
+    {
+      candidates: [
+        '/assets/Articalimage5.png',
+        '/assets/Articalimage5.jpg',
+        '/assets/Articalimage5.jpeg',
+        '/assets/Articleimage5.png',
+        '/assets/Articleimage5.jpg',
+        '/assets/Articleimage5.jpeg'
+      ],
+      fallback: '/assets/Articalimage5.svg'
+    }
   ];
 
   const applyFallbackImages = () => {
