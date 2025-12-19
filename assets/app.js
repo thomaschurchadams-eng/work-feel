@@ -220,13 +220,13 @@
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
   // Predefined fallback images for cards that do not declare their own artwork.
-  // Uses PNG first (for user-provided artwork), and falls back to bundled SVGs if missing.
-  const fallbackImagePairs = [
-    { primary: '/assets/Articalimage1.png', fallback: '/assets/Articalimage1.svg' },
-    { primary: '/assets/Articalimage2.png', fallback: '/assets/Articalimage2.svg' },
-    { primary: '/assets/Articalimage3.png', fallback: '/assets/Articalimage3.svg' },
-    { primary: '/assets/Articalimage4.png', fallback: '/assets/Articalimage4.svg' },
-    { primary: '/assets/Articalimage5.png', fallback: '/assets/Articalimage5.svg' }
+  // Tries user-provided PNG/JPG first; if missing, falls back to bundled SVGs.
+  const fallbackImageSets = [
+    { candidates: ['/assets/Articalimage1.png', '/assets/Articalimage1.jpg', '/assets/Articalimage1.jpeg'], fallback: '/assets/Articalimage1.svg' },
+    { candidates: ['/assets/Articalimage2.png', '/assets/Articalimage2.jpg', '/assets/Articalimage2.jpeg'], fallback: '/assets/Articalimage2.svg' },
+    { candidates: ['/assets/Articalimage3.png', '/assets/Articalimage3.jpg', '/assets/Articalimage3.jpeg'], fallback: '/assets/Articalimage3.svg' },
+    { candidates: ['/assets/Articalimage4.png', '/assets/Articalimage4.jpg', '/assets/Articalimage4.jpeg'], fallback: '/assets/Articalimage4.svg' },
+    { candidates: ['/assets/Articalimage5.png', '/assets/Articalimage5.jpg', '/assets/Articalimage5.jpeg'], fallback: '/assets/Articalimage5.svg' }
   ];
 
   const applyFallbackImages = () => {
@@ -235,16 +235,33 @@
 
     cards.forEach((card, index) => {
       if (card.querySelector('.card-image') || card.querySelector('img')) return;
-      const imagePair = fallbackImagePairs[index % fallbackImagePairs.length];
+      const imageSet = fallbackImageSets[index % fallbackImageSets.length];
       const wrapper = document.createElement('div');
       wrapper.className = 'card-image';
       const img = document.createElement('img');
-      img.src = imagePair.primary;
-      img.onerror = () => {
-        if (img.dataset.triedFallback) return;
-        img.dataset.triedFallback = 'true';
-        img.src = imagePair.fallback;
+      const trySources = [...imageSet.candidates, imageSet.fallback];
+      let sourceIndex = 0;
+
+      const tryNext = () => {
+        if (sourceIndex >= trySources.length) return;
+        const nextSrc = trySources[sourceIndex++];
+        img.src = nextSrc;
       };
+
+      img.onerror = () => {
+        if (sourceIndex >= trySources.length) return;
+        tryNext();
+      };
+
+      img.addEventListener('load', () => {
+        // If the loaded source is the last (fallback), signal in the console to help debugging missing assets.
+        if (img.src.endsWith(imageSet.fallback)) {
+          // eslint-disable-next-line no-console
+          console.info(`Card fallback image used default asset: ${imageSet.fallback}`);
+        }
+      });
+
+      tryNext();
       const heading = card.querySelector('h3');
       img.alt = heading?.textContent?.trim() || 'Article illustration';
       wrapper.appendChild(img);
