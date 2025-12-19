@@ -7,13 +7,13 @@
         'Psympl’s psychographic AI–driven personalization tools are now being deployed by community banks and credit unions, enabling scalable motivation-based engagement across marketing and member service programs.',
       impact:
         'AI personalization tools entering CU and community bank workflows can help drive member engagement and retention, but also raise questions about data strategy and operational readiness.',
-      sourceName: 'Psympl / PR Newswire',
+      sourceName: 'Investors Hangout',
       sourceUrl:
-        'https://www.prnewswire.com/news-releases/psympl-expands-psychographic-ai-driven-personalization-into-banking-and-credit-unions-through-partnership-with-marketmatch-302645522.html',
+        'https://investorshangout.com/psympl-partners-with-marketmatch-for-banking-personalization-491352-/',
       date: '2025-12-18',
       slug: 'psympl-ai-personalization-banking-credit-unions',
       link:
-        'https://www.prnewswire.com/news-releases/psympl-expands-psychographic-ai-driven-personalization-into-banking-and-credit-unions-through-partnership-with-marketmatch-302645522.html'
+        'https://investorshangout.com/psympl-partners-with-marketmatch-for-banking-personalization-491352-/'
     },
     {
       label: 'Customer Service',
@@ -81,19 +81,6 @@
       date: 'Dec 16, 2025',
       slug: 'ai-infrastructure-foundational-financial-services',
       link: 'https://www.rtinsights.com/ai-infrastructure-services-banking-and-financial-services-new-foundation-for-computing/'
-    },
-    {
-      label: 'AI Governance',
-      headline: 'Trump signs executive order aiming to limit state AI regulations',
-      summary:
-        'President Donald Trump signed an executive order directing federal agencies to challenge certain state AI laws and reduce a patchwork of state regulation.',
-      impact:
-        'Credit unions operating across multiple states may need to adjust AI governance and vendor oversight as the federal and state regulatory environment shifts.',
-      sourceName: 'AP News',
-      sourceUrl: 'https://apnews.com/article/9cb4dd1bc249e404260b3dc233217388',
-      date: 'Dec 16, 2025',
-      slug: 'trump-executive-order-ai-regulation',
-      link: 'https://apnews.com/article/9cb4dd1bc249e404260b3dc233217388'
     },
     {
       label: 'Lending',
