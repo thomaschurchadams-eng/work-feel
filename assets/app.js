@@ -219,13 +219,14 @@
 
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
-  // Predefined fallback images for cards that do not declare their own artwork
-  const fallbackImages = [
-    '/assets/Articalimage1.svg',
-    '/assets/Articalimage2.svg',
-    '/assets/Articalimage3.svg',
-    '/assets/Articalimage4.svg',
-    '/assets/Articalimage5.svg'
+  // Predefined fallback images for cards that do not declare their own artwork.
+  // Uses PNG first (for user-provided artwork), and falls back to bundled SVGs if missing.
+  const fallbackImagePairs = [
+    { primary: '/assets/Articalimage1.png', fallback: '/assets/Articalimage1.svg' },
+    { primary: '/assets/Articalimage2.png', fallback: '/assets/Articalimage2.svg' },
+    { primary: '/assets/Articalimage3.png', fallback: '/assets/Articalimage3.svg' },
+    { primary: '/assets/Articalimage4.png', fallback: '/assets/Articalimage4.svg' },
+    { primary: '/assets/Articalimage5.png', fallback: '/assets/Articalimage5.svg' }
   ];
 
   const applyFallbackImages = () => {
@@ -234,11 +235,16 @@
 
     cards.forEach((card, index) => {
       if (card.querySelector('.card-image') || card.querySelector('img')) return;
-      const imagePath = fallbackImages[index % fallbackImages.length];
+      const imagePair = fallbackImagePairs[index % fallbackImagePairs.length];
       const wrapper = document.createElement('div');
       wrapper.className = 'card-image';
       const img = document.createElement('img');
-      img.src = imagePath;
+      img.src = imagePair.primary;
+      img.onerror = () => {
+        if (img.dataset.triedFallback) return;
+        img.dataset.triedFallback = 'true';
+        img.src = imagePair.fallback;
+      };
       const heading = card.querySelector('h3');
       img.alt = heading?.textContent?.trim() || 'Article illustration';
       wrapper.appendChild(img);
