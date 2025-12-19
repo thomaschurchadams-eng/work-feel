@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">AI Insight illustration 4</title>
+  <desc id="desc">Minimal bars for insight fallback image.</desc>
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eaf5ff" />
+      <stop offset="100%" stop-color="#d6e9f7" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="28" fill="url(#g4)" />
+  <rect x="120" y="140" width="560" height="46" rx="12" fill="#0f294b" opacity="0.12" />
+  <rect x="120" y="206" width="440" height="46" rx="12" fill="#1fb6aa" opacity="0.25" />
+  <rect x="120" y="272" width="500" height="46" rx="12" fill="#0f294b" opacity="0.12" />
+  <text x="140" y="118" font-family="'Inter', 'Segoe UI', system-ui" font-size="26" font-weight="700" fill="#0f294b">AI Strategy</text>
+</svg>

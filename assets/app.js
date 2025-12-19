@@ -219,6 +219,35 @@
 
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
+  // Predefined fallback images for cards that do not declare their own artwork
+  const fallbackImages = [
+    '/assets/Articalimage1.svg',
+    '/assets/Articalimage2.svg',
+    '/assets/Articalimage3.svg',
+    '/assets/Articalimage4.svg',
+    '/assets/Articalimage5.svg'
+  ];
+
+  const applyFallbackImages = () => {
+    const cards = document.querySelectorAll('.grid.cards-3 .card');
+    if (!cards.length) return;
+
+    cards.forEach((card, index) => {
+      if (card.querySelector('.card-image') || card.querySelector('img')) return;
+      const imagePath = fallbackImages[index % fallbackImages.length];
+      const wrapper = document.createElement('div');
+      wrapper.className = 'card-image';
+      const img = document.createElement('img');
+      img.src = imagePath;
+      const heading = card.querySelector('h3');
+      img.alt = heading?.textContent?.trim() || 'Article illustration';
+      wrapper.appendChild(img);
+      card.insertBefore(wrapper, card.firstChild);
+    });
+  };
+
+  applyFallbackImages();
+
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 

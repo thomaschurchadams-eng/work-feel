@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">AI Insight illustration 1</title>
+  <desc id="desc">Abstract gradient background for article fallback image.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f3ff" />
+      <stop offset="50%" stop-color="#cbe7f5" />
+      <stop offset="100%" stop-color="#b7dff0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="28" fill="url(#g1)" />
+  <rect x="52" y="82" width="696" height="286" rx="18" fill="rgba(12,47,91,0.08)" />
+  <text x="64" y="138" font-family="'Inter', 'Segoe UI', system-ui" font-size="38" font-weight="700" fill="#0f294b">AI Insight</text>
+  <text x="64" y="190" font-family="'Inter', 'Segoe UI', system-ui" font-size="24" font-weight="600" fill="#1fb6aa">Fallback Image</text>
+</svg>
