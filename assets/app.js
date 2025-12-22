@@ -240,8 +240,9 @@
       .map(({ parsedDate, ...rest }) => rest);
   };
 
-  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within the defined window
   const preparedAlerts = getRecentAlerts(alertsData);
+  const tickerAlerts = preparedAlerts.slice(0, 2);
 
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
@@ -746,7 +747,7 @@
 
   const header = document.querySelector('header');
   const buildTicker = () => {
-    if (!header || !preparedAlerts.length) return;
+    if (!header || !tickerAlerts.length) return;
 
     const tickerBar = document.createElement('div');
     tickerBar.className = 'ticker-bar';
@@ -765,7 +766,7 @@
     if (!strip) return;
 
     const renderItems = () =>
-      preparedAlerts
+      tickerAlerts
         .map(
           (item) => `
             <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
