@@ -799,7 +799,7 @@
       alertsList.innerHTML = `
         <article class="card alert-card" aria-live="polite">
           <div class="alert-content">
-            <h3>No alerts in the last 14 days. Check back soon.</h3>
+            <h3>No alerts in the last 60 days. Check back soon.</h3>
           </div>
         </article>
       `;
