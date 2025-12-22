@@ -1,6 +1,32 @@
 (function () {
   const alertsData = [
     {
+      label: 'Payments',
+      headline: 'Fed seeks feedback on limited “payment accounts” for some firms',
+      summary:
+        'The Federal Reserve is seeking public comment on a proposal to create limited “payment accounts” for select non-bank financial firms, offering access to Fed payment services for clearing and settling transactions without full bank privileges.',
+      impact:
+        'Expanded access to core Fed payment infrastructure may influence how credit unions partner with fintechs for settlement and payments workflows, necessitating operational and compliance evaluations.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/sustainability/boards-policy-regulation/fed-seeks-feedback-limited-payment-accounts-some-firms-2025-12-19/',
+      date: 'Dec 19, 2025',
+      slug: 'fed-feedback-limited-payment-accounts'
+    },
+    {
+      label: 'Agentic AI',
+      headline: 'AWS and Microsoft present agentic AI’s business case for banking tech',
+      summary:
+        'Commentary from AWS and Microsoft highlights how agentic AI — systems that coordinate multiple AI components — is advancing practical use in financial services to accelerate risk, compliance, and analytic workflows at scale.',
+      impact:
+        'As agentic AI gains traction in regulated settings, credit unions should prepare governance and risk frameworks to evaluate similar technologies for member-facing and internal operations.',
+      sourceName: 'PYMNTS',
+      sourceUrl:
+        'https://www.pymnts.com/artificial-intelligence-2/2025/aws-and-microsoft-present-agentic-ais-banking-business-case/',
+      date: 'Dec 22, 2025',
+      slug: 'aws-microsoft-agentic-ai-banking-business-case'
+    },
+    {
       label: 'Agentic AI',
       headline: 'Major banks prepare customer-facing agentic AI trials amid regulatory scrutiny',
       summary:
