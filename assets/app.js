@@ -45,14 +45,14 @@
       label: 'AI Governance',
       headline: 'Trump signs executive order aiming to limit state AI regulations',
       summary:
-        'Recent industry analysis highlights that AI infrastructure services — spanning data orchestration, accelerators and lifecycle management platforms — are evolving from niche add-ons to central components of enterprise computing stacks in banking and financial services.',
+        'President Donald Trump signed an executive order directing federal agencies to challenge certain state AI laws and reduce a patchwork of state regulation.',
       impact:
-        'As financial institutions deepen AI use, infrastructure choices increasingly influence cost, scalability and governance decisions for all AI initiatives credit unions may consider.',
-      sourceName: 'RTInsights',
-      sourceUrl: 'https://www.rtinsights.com/ai-infrastructure-services-banking-and-financial-services-new-foundation-for-computing/',
+        'Credit unions operating across multiple states may need to adjust AI governance and vendor oversight as the federal and state regulatory environment shifts.',
+      sourceName: 'AP News',
+      sourceUrl: 'https://apnews.com/article/9cb4dd1bc249e404260b3dc233217388',
       date: 'Dec 16, 2025',
-      slug: 'ai-infrastructure-foundational-financial-services',
-      link: 'https://www.rtinsights.com/ai-infrastructure-services-banking-and-financial-services-new-foundation-for-computing/'
+      slug: 'trump-executive-order-ai-regulation',
+      link: 'https://apnews.com/article/9cb4dd1bc249e404260b3dc233217388'
     },
     {
       label: 'Lending',
