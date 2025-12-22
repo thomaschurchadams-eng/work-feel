@@ -215,7 +215,7 @@
     return null;
   };
 
-  const getRecentAlerts = (alerts, days = 14) => {
+  const getRecentAlerts = (alerts, days = 60) => {
     const cutoff = new Date();
     cutoff.setDate(cutoff.getDate() - days);
 
