@@ -1,6 +1,32 @@
 (function () {
   const alertsData = [
     {
+      label: 'Payments',
+      headline: 'Fed seeks feedback on limited “payment accounts” for some firms',
+      summary:
+        'The Federal Reserve is seeking public comment on a proposal to create limited “payment accounts” for select non-bank financial firms, offering access to Fed payment services for clearing and settling transactions without full bank privileges.',
+      impact:
+        'Expanded access to core Fed payment infrastructure may influence how credit unions partner with fintechs for settlement and payments workflows, necessitating operational and compliance evaluations.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/sustainability/boards-policy-regulation/fed-seeks-feedback-limited-payment-accounts-some-firms-2025-12-19/',
+      date: 'Dec 19, 2025',
+      slug: 'fed-feedback-limited-payment-accounts'
+    },
+    {
+      label: 'Agentic AI',
+      headline: 'AWS and Microsoft present agentic AI’s business case for banking tech',
+      summary:
+        'Commentary from AWS and Microsoft highlights how agentic AI — systems that coordinate multiple AI components — is advancing practical use in financial services to accelerate risk, compliance, and analytic workflows at scale.',
+      impact:
+        'As agentic AI gains traction in regulated settings, credit unions should prepare governance and risk frameworks to evaluate similar technologies for member-facing and internal operations.',
+      sourceName: 'PYMNTS',
+      sourceUrl:
+        'https://www.pymnts.com/artificial-intelligence-2/2025/aws-and-microsoft-present-agentic-ais-banking-business-case/',
+      date: 'Dec 22, 2025',
+      slug: 'aws-microsoft-agentic-ai-banking-business-case'
+    },
+    {
       label: 'Agentic AI',
       headline: 'Major banks prepare customer-facing agentic AI trials amid regulatory scrutiny',
       summary:
@@ -189,7 +215,7 @@
     return null;
   };
 
-  const getRecentAlerts = (alerts, days = 14) => {
+  const getRecentAlerts = (alerts, days = 60) => {
     const cutoff = new Date();
     cutoff.setDate(cutoff.getDate() - days);
 
@@ -214,8 +240,9 @@
       .map(({ parsedDate, ...rest }) => rest);
   };
 
-  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within the defined window
   const preparedAlerts = getRecentAlerts(alertsData);
+  const tickerAlerts = preparedAlerts.slice(0, 2);
 
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
@@ -720,7 +747,7 @@
 
   const header = document.querySelector('header');
   const buildTicker = () => {
-    if (!header || !preparedAlerts.length) return;
+    if (!header || !tickerAlerts.length) return;
 
     const tickerBar = document.createElement('div');
     tickerBar.className = 'ticker-bar';
@@ -739,7 +766,7 @@
     if (!strip) return;
 
     const renderItems = () =>
-      preparedAlerts
+      tickerAlerts
         .map(
           (item) => `
             <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
@@ -772,7 +799,7 @@
       alertsList.innerHTML = `
         <article class="card alert-card" aria-live="polite">
           <div class="alert-content">
-            <h3>No alerts in the last 14 days. Check back soon.</h3>
+            <h3>No alerts in the last 60 days. Check back soon.</h3>
           </div>
         </article>
       `;
