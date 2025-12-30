@@ -1,5 +1,68 @@
-(function () {
+  (function () {
   const alertsData = [
+    {
+      label: 'Payments',
+      headline: 'Visa Signals AI Checkout Could Soon Go Mainstream',
+      summary:
+        'Visa says autonomous, AI-initiated payment transactions have been completed successfully in hundreds of secure tests across its network, indicating a shift toward AI agent-enabled commerce at checkout that could reshape procurement flows.',
+      impact:
+        'As autonomous AI payment capabilities emerge, credit unions should anticipate new authentication and fraud risk vectors and consider how these capabilities might affect member transactions, risk controls, and digital product strategies.',
+      sourceName: 'Digital Commerce 360 (reporting on Visa)',
+      sourceUrl: 'https://www.digitalcommerce360.com/2025/12/29/visa-signals-ai-checkout-could-soon-go-mainstream/',
+      date: 'Dec 29, 2025',
+      slug: 'visa-ai-checkout-mainstream'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'FCA Warns Banks as Agentic AI Nears Consumer Rollout',
+      summary:
+        'Britain’s Financial Conduct Authority cautions that the rapid adoption of agentic AI—which can act autonomously—poses new risks as banks prepare to launch customer-facing pilots, and it plans to extend oversight using existing compliance frameworks.',
+      impact:
+        'Credit unions evaluating or piloting advanced AI should watch evolving regulatory expectations around autonomous AI, especially for consumer-facing use cases, governance, and consumer protection obligations.',
+      sourceName: 'CeFPro (based on FCA commentary)',
+      sourceUrl: 'https://connect.cefpro.com/article/view/fca-warns-banks-as-agentic-ai-nears-consumer-rollout',
+      date: 'Dec 23, 2025',
+      slug: 'fca-agentic-ai-consumer-rollout-warning'
+    },
+    {
+      label: 'Fraud',
+      headline: 'ANZ, Westpac Shift AI Focus to Cybersecurity and Scam Detection',
+      summary:
+        'Leading Australian banks including ANZ and Westpac are redirecting AI investments toward real-time behavioral biometrics and risk scoring to detect scams and fraud before transactions complete, treating AI as a proactive defense layer.',
+      impact:
+        'Credit unions should consider similar risk-centric AI deployments—not just efficiency projects—to strengthen fraud defenses and protect members as attackers increasingly use sophisticated tools.',
+      sourceName: 'The Australian',
+      sourceUrl:
+        'https://www.theaustralian.com.au/business/technology/inside-the-highstakes-race-to-use-artificial-intelligence-for-combating-australias-fraud-crisis/news-story/82ea858653749bcecc78690aca454ecb',
+      date: 'Dec 26, 2025',
+      slug: 'anz-westpac-ai-cybersecurity-scam-detection'
+    },
+    {
+      label: 'Payments',
+      headline: 'Fed seeks feedback on limited “payment accounts” for some firms',
+      summary:
+        'The Federal Reserve is seeking public comment on a proposal to create limited “payment accounts” for select non-bank financial firms, offering access to Fed payment services for clearing and settling transactions without full bank privileges.',
+      impact:
+        'Expanded access to core Fed payment infrastructure may influence how credit unions partner with fintechs for settlement and payments workflows, necessitating operational and compliance evaluations.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/sustainability/boards-policy-regulation/fed-seeks-feedback-limited-payment-accounts-some-firms-2025-12-19/',
+      date: 'Dec 19, 2025',
+      slug: 'fed-feedback-limited-payment-accounts'
+    },
+    {
+      label: 'Agentic AI',
+      headline: 'AWS and Microsoft present agentic AI’s business case for banking tech',
+      summary:
+        'Commentary from AWS and Microsoft highlights how agentic AI — systems that coordinate multiple AI components — is advancing practical use in financial services to accelerate risk, compliance, and analytic workflows at scale.',
+      impact:
+        'As agentic AI gains traction in regulated settings, credit unions should prepare governance and risk frameworks to evaluate similar technologies for member-facing and internal operations.',
+      sourceName: 'PYMNTS',
+      sourceUrl:
+        'https://www.pymnts.com/artificial-intelligence-2/2025/aws-and-microsoft-present-agentic-ais-banking-business-case/',
+      date: 'Dec 22, 2025',
+      slug: 'aws-microsoft-agentic-ai-banking-business-case'
+    },
     {
       label: 'Agentic AI',
       headline: 'Major banks prepare customer-facing agentic AI trials amid regulatory scrutiny',
@@ -189,7 +252,7 @@
     return null;
   };
 
-  const getRecentAlerts = (alerts, days = 14) => {
+  const getRecentAlerts = (alerts, days = 60) => {
     const cutoff = new Date();
     cutoff.setDate(cutoff.getDate() - days);
 
@@ -214,8 +277,9 @@
       .map(({ parsedDate, ...rest }) => rest);
   };
 
-  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within the defined window
   const preparedAlerts = getRecentAlerts(alertsData);
+  const tickerAlerts = preparedAlerts.slice(0, 2);
 
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
@@ -720,7 +784,7 @@
 
   const header = document.querySelector('header');
   const buildTicker = () => {
-    if (!header || !preparedAlerts.length) return;
+    if (!header || !tickerAlerts.length) return;
 
     const tickerBar = document.createElement('div');
     tickerBar.className = 'ticker-bar';
@@ -739,7 +803,7 @@
     if (!strip) return;
 
     const renderItems = () =>
-      preparedAlerts
+      tickerAlerts
         .map(
           (item) => `
             <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
@@ -772,7 +836,7 @@
       alertsList.innerHTML = `
         <article class="card alert-card" aria-live="polite">
           <div class="alert-content">
-            <h3>No alerts in the last 14 days. Check back soon.</h3>
+            <h3>No alerts in the last 60 days. Check back soon.</h3>
           </div>
         </article>
       `;
