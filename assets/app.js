@@ -1,5 +1,42 @@
-(function () {
+  (function () {
   const alertsData = [
+    {
+      label: 'Payments',
+      headline: 'Visa Signals AI Checkout Could Soon Go Mainstream',
+      summary:
+        'Visa says autonomous, AI-initiated payment transactions have been completed successfully in hundreds of secure tests across its network, indicating a shift toward AI agent-enabled commerce at checkout that could reshape procurement flows.',
+      impact:
+        'As autonomous AI payment capabilities emerge, credit unions should anticipate new authentication and fraud risk vectors and consider how these capabilities might affect member transactions, risk controls, and digital product strategies.',
+      sourceName: 'Digital Commerce 360 (reporting on Visa)',
+      sourceUrl: 'https://www.digitalcommerce360.com/2025/12/29/visa-signals-ai-checkout-could-soon-go-mainstream/',
+      date: 'Dec 29, 2025',
+      slug: 'visa-ai-checkout-mainstream'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'FCA Warns Banks as Agentic AI Nears Consumer Rollout',
+      summary:
+        'Britain’s Financial Conduct Authority cautions that the rapid adoption of agentic AI—which can act autonomously—poses new risks as banks prepare to launch customer-facing pilots, and it plans to extend oversight using existing compliance frameworks.',
+      impact:
+        'Credit unions evaluating or piloting advanced AI should watch evolving regulatory expectations around autonomous AI, especially for consumer-facing use cases, governance, and consumer protection obligations.',
+      sourceName: 'CeFPro (based on FCA commentary)',
+      sourceUrl: 'https://connect.cefpro.com/article/view/fca-warns-banks-as-agentic-ai-nears-consumer-rollout',
+      date: 'Dec 23, 2025',
+      slug: 'fca-agentic-ai-consumer-rollout-warning'
+    },
+    {
+      label: 'Fraud',
+      headline: 'ANZ, Westpac Shift AI Focus to Cybersecurity and Scam Detection',
+      summary:
+        'Leading Australian banks including ANZ and Westpac are redirecting AI investments toward real-time behavioral biometrics and risk scoring to detect scams and fraud before transactions complete, treating AI as a proactive defense layer.',
+      impact:
+        'Credit unions should consider similar risk-centric AI deployments—not just efficiency projects—to strengthen fraud defenses and protect members as attackers increasingly use sophisticated tools.',
+      sourceName: 'The Australian',
+      sourceUrl:
+        'https://www.theaustralian.com.au/business/technology/inside-the-highstakes-race-to-use-artificial-intelligence-for-combating-australias-fraud-crisis/news-story/82ea858653749bcecc78690aca454ecb',
+      date: 'Dec 26, 2025',
+      slug: 'anz-westpac-ai-cybersecurity-scam-detection'
+    },
     {
       label: 'Payments',
       headline: 'Fed seeks feedback on limited “payment accounts” for some firms',
