@@ -290,10 +290,7 @@
       candidates: [
         '/assets/Articalimage1.png',
         '/assets/Articalimage1.jpg',
-        '/assets/Articalimage1.jpeg',
-        '/assets/Articleimage1.png',
-        '/assets/Articleimage1.jpg',
-        '/assets/Articleimage1.jpeg'
+        '/assets/Articalimage1.jpeg'
       ],
       fallback: '/assets/Articalimage1.svg'
     },
@@ -345,10 +342,7 @@
       candidates: [
         '/assets/Articalimage6.png',
         '/assets/Articalimage6.jpg',
-        '/assets/Articalimage6.jpeg',
-        '/assets/Articleimage6.png',
-        '/assets/Articleimage6.jpg',
-        '/assets/Articleimage6.jpeg'
+        '/assets/Articalimage6.jpeg'
       ],
       fallback: '/assets/Articalimage1.svg'
     },
@@ -356,10 +350,7 @@
       candidates: [
         '/assets/Articalimage7.png',
         '/assets/Articalimage7.jpg',
-        '/assets/Articalimage7.jpeg',
-        '/assets/Articleimage7.png',
-        '/assets/Articleimage7.jpg',
-        '/assets/Articleimage7.jpeg'
+        '/assets/Articalimage7.jpeg'
       ],
       fallback: '/assets/Articalimage2.svg'
     },
@@ -367,10 +358,7 @@
       candidates: [
         '/assets/Articalimage8.png',
         '/assets/Articalimage8.jpg',
-        '/assets/Articalimage8.jpeg',
-        '/assets/Articleimage8.png',
-        '/assets/Articleimage8.jpg',
-        '/assets/Articleimage8.jpeg'
+        '/assets/Articalimage8.jpeg'
       ],
       fallback: '/assets/Articalimage3.svg'
     },
@@ -378,10 +366,7 @@
       candidates: [
         '/assets/Articalimage9.png',
         '/assets/Articalimage9.jpg',
-        '/assets/Articalimage9.jpeg',
-        '/assets/Articleimage9.png',
-        '/assets/Articleimage9.jpg',
-        '/assets/Articleimage9.jpeg'
+        '/assets/Articalimage9.jpeg'
       ],
       fallback: '/assets/Articalimage4.svg'
     },
@@ -389,10 +374,7 @@
       candidates: [
         '/assets/Articalimage10.png',
         '/assets/Articalimage10.jpg',
-        '/assets/Articalimage10.jpeg',
-        '/assets/Articleimage10.png',
-        '/assets/Articleimage10.jpg',
-        '/assets/Articleimage10.jpeg'
+        '/assets/Articalimage10.jpeg'
       ],
       fallback: '/assets/Articalimage5.svg'
     },
@@ -400,10 +382,7 @@
       candidates: [
         '/assets/Articalimage11.png',
         '/assets/Articalimage11.jpg',
-        '/assets/Articalimage11.jpeg',
-        '/assets/Articleimage11.png',
-        '/assets/Articleimage11.jpg',
-        '/assets/Articleimage11.jpeg'
+        '/assets/Articalimage11.jpeg'
       ],
       fallback: '/assets/Articalimage1.svg'
     },
@@ -411,10 +390,7 @@
       candidates: [
         '/assets/Articalimage12.png',
         '/assets/Articalimage12.jpg',
-        '/assets/Articalimage12.jpeg',
-        '/assets/Articleimage12.png',
-        '/assets/Articleimage12.jpg',
-        '/assets/Articleimage12.jpeg'
+        '/assets/Articalimage12.jpeg'
       ],
       fallback: '/assets/Articalimage2.svg'
     },
@@ -422,10 +398,7 @@
       candidates: [
         '/assets/Articalimage13.png',
         '/assets/Articalimage13.jpg',
-        '/assets/Articalimage13.jpeg',
-        '/assets/Articleimage13.png',
-        '/assets/Articleimage13.jpg',
-        '/assets/Articleimage13.jpeg'
+        '/assets/Articalimage13.jpeg'
       ],
       fallback: '/assets/Articalimage3.svg'
     },
@@ -433,10 +406,7 @@
       candidates: [
         '/assets/Articalimage14.png',
         '/assets/Articalimage14.jpg',
-        '/assets/Articalimage14.jpeg',
-        '/assets/Articleimage14.png',
-        '/assets/Articleimage14.jpg',
-        '/assets/Articleimage14.jpeg'
+        '/assets/Articalimage14.jpeg'
       ],
       fallback: '/assets/Articalimage4.svg'
     },
@@ -444,10 +414,7 @@
       candidates: [
         '/assets/Articalimage15.png',
         '/assets/Articalimage15.jpg',
-        '/assets/Articalimage15.jpeg',
-        '/assets/Articleimage15.png',
-        '/assets/Articleimage15.jpg',
-        '/assets/Articleimage15.jpeg'
+        '/assets/Articalimage15.jpeg'
       ],
       fallback: '/assets/Articalimage5.svg'
     },
@@ -455,10 +422,7 @@
       candidates: [
         '/assets/Articalimage16.png',
         '/assets/Articalimage16.jpg',
-        '/assets/Articalimage16.jpeg',
-        '/assets/Articleimage16.png',
-        '/assets/Articleimage16.jpg',
-        '/assets/Articleimage16.jpeg'
+        '/assets/Articalimage16.jpeg'
       ],
       fallback: '/assets/Articalimage1.svg'
     }
