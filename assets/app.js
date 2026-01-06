@@ -1,5 +1,68 @@
-(function () {
+  (function () {
   const alertsData = [
+    {
+      label: 'Payments',
+      headline: 'Visa Signals AI Checkout Could Soon Go Mainstream',
+      summary:
+        'Visa says autonomous, AI-initiated payment transactions have been completed successfully in hundreds of secure tests across its network, indicating a shift toward AI agent-enabled commerce at checkout that could reshape procurement flows.',
+      impact:
+        'As autonomous AI payment capabilities emerge, credit unions should anticipate new authentication and fraud risk vectors and consider how these capabilities might affect member transactions, risk controls, and digital product strategies.',
+      sourceName: 'Digital Commerce 360 (reporting on Visa)',
+      sourceUrl: 'https://www.digitalcommerce360.com/2025/12/29/visa-signals-ai-checkout-could-soon-go-mainstream/',
+      date: 'Dec 29, 2025',
+      slug: 'visa-ai-checkout-mainstream'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'FCA Warns Banks as Agentic AI Nears Consumer Rollout',
+      summary:
+        'Britain’s Financial Conduct Authority cautions that the rapid adoption of agentic AI—which can act autonomously—poses new risks as banks prepare to launch customer-facing pilots, and it plans to extend oversight using existing compliance frameworks.',
+      impact:
+        'Credit unions evaluating or piloting advanced AI should watch evolving regulatory expectations around autonomous AI, especially for consumer-facing use cases, governance, and consumer protection obligations.',
+      sourceName: 'CeFPro (based on FCA commentary)',
+      sourceUrl: 'https://connect.cefpro.com/article/view/fca-warns-banks-as-agentic-ai-nears-consumer-rollout',
+      date: 'Dec 23, 2025',
+      slug: 'fca-agentic-ai-consumer-rollout-warning'
+    },
+    {
+      label: 'Fraud',
+      headline: 'ANZ, Westpac Shift AI Focus to Cybersecurity and Scam Detection',
+      summary:
+        'Leading Australian banks including ANZ and Westpac are redirecting AI investments toward real-time behavioral biometrics and risk scoring to detect scams and fraud before transactions complete, treating AI as a proactive defense layer.',
+      impact:
+        'Credit unions should consider similar risk-centric AI deployments—not just efficiency projects—to strengthen fraud defenses and protect members as attackers increasingly use sophisticated tools.',
+      sourceName: 'The Australian',
+      sourceUrl:
+        'https://www.theaustralian.com.au/business/technology/inside-the-highstakes-race-to-use-artificial-intelligence-for-combating-australias-fraud-crisis/news-story/82ea858653749bcecc78690aca454ecb',
+      date: 'Dec 26, 2025',
+      slug: 'anz-westpac-ai-cybersecurity-scam-detection'
+    },
+    {
+      label: 'Payments',
+      headline: 'Fed seeks feedback on limited “payment accounts” for some firms',
+      summary:
+        'The Federal Reserve is seeking public comment on a proposal to create limited “payment accounts” for select non-bank financial firms, offering access to Fed payment services for clearing and settling transactions without full bank privileges.',
+      impact:
+        'Expanded access to core Fed payment infrastructure may influence how credit unions partner with fintechs for settlement and payments workflows, necessitating operational and compliance evaluations.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/sustainability/boards-policy-regulation/fed-seeks-feedback-limited-payment-accounts-some-firms-2025-12-19/',
+      date: 'Dec 19, 2025',
+      slug: 'fed-feedback-limited-payment-accounts'
+    },
+    {
+      label: 'Agentic AI',
+      headline: 'AWS and Microsoft present agentic AI’s business case for banking tech',
+      summary:
+        'Commentary from AWS and Microsoft highlights how agentic AI — systems that coordinate multiple AI components — is advancing practical use in financial services to accelerate risk, compliance, and analytic workflows at scale.',
+      impact:
+        'As agentic AI gains traction in regulated settings, credit unions should prepare governance and risk frameworks to evaluate similar technologies for member-facing and internal operations.',
+      sourceName: 'PYMNTS',
+      sourceUrl:
+        'https://www.pymnts.com/artificial-intelligence-2/2025/aws-and-microsoft-present-agentic-ais-banking-business-case/',
+      date: 'Dec 22, 2025',
+      slug: 'aws-microsoft-agentic-ai-banking-business-case'
+    },
     {
       label: 'Agentic AI',
       headline: 'Major banks prepare customer-facing agentic AI trials amid regulatory scrutiny',
@@ -189,7 +252,7 @@
     return null;
   };
 
-  const getRecentAlerts = (alerts, days = 14) => {
+  const getRecentAlerts = (alerts, days = 60) => {
     const cutoff = new Date();
     cutoff.setDate(cutoff.getDate() - days);
 
@@ -214,233 +277,11 @@
       .map(({ parsedDate, ...rest }) => rest);
   };
 
-  // Prepare alerts once for all consumers: freshest-first, deduped, and within a 14-day window
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within the defined window
   const preparedAlerts = getRecentAlerts(alertsData);
+  const tickerAlerts = preparedAlerts.slice(0, 2);
 
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
-
-  // Predefined fallback images for cards that do not declare their own artwork.
-  // Tries user-provided PNG/JPG first; if missing, falls back to bundled SVGs.
-  const fallbackImageSets = [
-    {
-      candidates: [
-        '/assets/Articalimage1.png',
-        '/assets/Articalimage1.jpg',
-        '/assets/Articalimage1.jpeg',
-        '/assets/Articleimage1.png',
-        '/assets/Articleimage1.jpg',
-        '/assets/Articleimage1.jpeg'
-      ],
-      fallback: '/assets/Articalimage1.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage2.png',
-        '/assets/Articalimage2.jpg',
-        '/assets/Articalimage2.jpeg',
-        '/assets/Articleimage2.png',
-        '/assets/Articleimage2.jpg',
-        '/assets/Articleimage2.jpeg'
-      ],
-      fallback: '/assets/Articalimage2.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage3.png',
-        '/assets/Articalimage3.jpg',
-        '/assets/Articalimage3.jpeg',
-        '/assets/Articleimage3.png',
-        '/assets/Articleimage3.jpg',
-        '/assets/Articleimage3.jpeg'
-      ],
-      fallback: '/assets/Articalimage3.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage4.png',
-        '/assets/Articalimage4.jpg',
-        '/assets/Articalimage4.jpeg',
-        '/assets/Articleimage4.png',
-        '/assets/Articleimage4.jpg',
-        '/assets/Articleimage4.jpeg'
-      ],
-      fallback: '/assets/Articalimage4.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage5.png',
-        '/assets/Articalimage5.jpg',
-        '/assets/Articalimage5.jpeg',
-        '/assets/Articleimage5.png',
-        '/assets/Articleimage5.jpg',
-        '/assets/Articleimage5.jpeg'
-      ],
-      fallback: '/assets/Articalimage5.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage6.png',
-        '/assets/Articalimage6.jpg',
-        '/assets/Articalimage6.jpeg',
-        '/assets/Articleimage6.png',
-        '/assets/Articleimage6.jpg',
-        '/assets/Articleimage6.jpeg'
-      ],
-      fallback: '/assets/Articalimage1.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage7.png',
-        '/assets/Articalimage7.jpg',
-        '/assets/Articalimage7.jpeg',
-        '/assets/Articleimage7.png',
-        '/assets/Articleimage7.jpg',
-        '/assets/Articleimage7.jpeg'
-      ],
-      fallback: '/assets/Articalimage2.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage8.png',
-        '/assets/Articalimage8.jpg',
-        '/assets/Articalimage8.jpeg',
-        '/assets/Articleimage8.png',
-        '/assets/Articleimage8.jpg',
-        '/assets/Articleimage8.jpeg'
-      ],
-      fallback: '/assets/Articalimage3.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage9.png',
-        '/assets/Articalimage9.jpg',
-        '/assets/Articalimage9.jpeg',
-        '/assets/Articleimage9.png',
-        '/assets/Articleimage9.jpg',
-        '/assets/Articleimage9.jpeg'
-      ],
-      fallback: '/assets/Articalimage4.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage10.png',
-        '/assets/Articalimage10.jpg',
-        '/assets/Articalimage10.jpeg',
-        '/assets/Articleimage10.png',
-        '/assets/Articleimage10.jpg',
-        '/assets/Articleimage10.jpeg'
-      ],
-      fallback: '/assets/Articalimage5.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage11.png',
-        '/assets/Articalimage11.jpg',
-        '/assets/Articalimage11.jpeg',
-        '/assets/Articleimage11.png',
-        '/assets/Articleimage11.jpg',
-        '/assets/Articleimage11.jpeg'
-      ],
-      fallback: '/assets/Articalimage1.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage12.png',
-        '/assets/Articalimage12.jpg',
-        '/assets/Articalimage12.jpeg',
-        '/assets/Articleimage12.png',
-        '/assets/Articleimage12.jpg',
-        '/assets/Articleimage12.jpeg'
-      ],
-      fallback: '/assets/Articalimage2.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage13.png',
-        '/assets/Articalimage13.jpg',
-        '/assets/Articalimage13.jpeg',
-        '/assets/Articleimage13.png',
-        '/assets/Articleimage13.jpg',
-        '/assets/Articleimage13.jpeg'
-      ],
-      fallback: '/assets/Articalimage3.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage14.png',
-        '/assets/Articalimage14.jpg',
-        '/assets/Articalimage14.jpeg',
-        '/assets/Articleimage14.png',
-        '/assets/Articleimage14.jpg',
-        '/assets/Articleimage14.jpeg'
-      ],
-      fallback: '/assets/Articalimage4.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage15.png',
-        '/assets/Articalimage15.jpg',
-        '/assets/Articalimage15.jpeg',
-        '/assets/Articleimage15.png',
-        '/assets/Articleimage15.jpg',
-        '/assets/Articleimage15.jpeg'
-      ],
-      fallback: '/assets/Articalimage5.svg'
-    },
-    {
-      candidates: [
-        '/assets/Articalimage16.png',
-        '/assets/Articalimage16.jpg',
-        '/assets/Articalimage16.jpeg',
-        '/assets/Articleimage16.png',
-        '/assets/Articleimage16.jpg',
-        '/assets/Articleimage16.jpeg'
-      ],
-      fallback: '/assets/Articalimage1.svg'
-    }
-  ];
-
-  const applyFallbackImages = () => {
-    const cards = document.querySelectorAll('.grid.cards-3 .card');
-    if (!cards.length) return;
-
-    cards.forEach((card, index) => {
-      if (card.querySelector('.card-image') || card.querySelector('img')) return;
-      const imageSet = fallbackImageSets[index % fallbackImageSets.length];
-      const wrapper = document.createElement('div');
-      wrapper.className = 'card-image';
-      const img = document.createElement('img');
-      const trySources = [...imageSet.candidates, imageSet.fallback];
-      let sourceIndex = 0;
-
-      const tryNext = () => {
-        if (sourceIndex >= trySources.length) return;
-        const nextSrc = trySources[sourceIndex++];
-        img.src = nextSrc;
-      };
-
-      img.onerror = () => {
-        if (sourceIndex >= trySources.length) return;
-        tryNext();
-      };
-
-      img.addEventListener('load', () => {
-        // If the loaded source is the last (fallback), signal in the console to help debugging missing assets.
-        if (img.src.endsWith(imageSet.fallback)) {
-          // eslint-disable-next-line no-console
-          console.info(`Card fallback image used default asset: ${imageSet.fallback}`);
-        }
-      });
-
-      tryNext();
-      const heading = card.querySelector('h3');
-      img.alt = heading?.textContent?.trim() || 'Article illustration';
-      wrapper.appendChild(img);
-      card.insertBefore(wrapper, card.firstChild);
-    });
-  };
-
-  applyFallbackImages();
 
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
@@ -720,7 +561,7 @@
 
   const header = document.querySelector('header');
   const buildTicker = () => {
-    if (!header || !preparedAlerts.length) return;
+    if (!header || !tickerAlerts.length) return;
 
     const tickerBar = document.createElement('div');
     tickerBar.className = 'ticker-bar';
@@ -739,7 +580,7 @@
     if (!strip) return;
 
     const renderItems = () =>
-      preparedAlerts
+      tickerAlerts
         .map(
           (item) => `
             <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
@@ -772,7 +613,7 @@
       alertsList.innerHTML = `
         <article class="card alert-card" aria-live="polite">
           <div class="alert-content">
-            <h3>No alerts in the last 14 days. Check back soon.</h3>
+            <h3>No alerts in the last 60 days. Check back soon.</h3>
           </div>
         </article>
       `;
