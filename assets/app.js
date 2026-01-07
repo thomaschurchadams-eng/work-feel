@@ -2,6 +2,18 @@
   const alertsData = [
     {
       label: 'Payments',
+      headline: 'Fintech Vendors Use CES to Signal Next Phase of AI-Driven Payments and Authentication',
+      summary:
+        'At CES this week, major payments and fintech vendors highlighted AI-enabled authentication, real-time risk scoring, and agent-assisted transaction flows as near-term capabilities rather than long-range concepts. The focus shifted away from consumer novelty toward institutional-grade controls around authorization, fraud prevention, and payment integrity.',
+      impact:
+        'For credit unions, this underscores that AI-enhanced payment security is becoming table stakes. Governance, fraud controls, and member protections need to advance in lockstep with vendor roadmaps to meet rising expectations for authentication and transaction integrity.',
+      sourceName: 'CES 2026 vendor briefings',
+      sourceUrl: 'https://www.ces.tech/',
+      date: 'Jan 6, 2026',
+      slug: 'ces-fintech-ai-payments-authentication'
+    },
+    {
+      label: 'Payments',
       headline: 'Visa Signals AI Checkout Could Soon Go Mainstream',
       summary:
         'Visa says autonomous, AI-initiated payment transactions have been completed successfully in hundreds of secure tests across its network, indicating a shift toward AI agent-enabled commerce at checkout that could reshape procurement flows.',
