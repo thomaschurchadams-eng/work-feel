@@ -1,6 +1,19 @@
   (function () {
   const alertsData = [
     {
+      label: 'AI Governance',
+      headline: 'JPMorgan Chase to Replace External Proxy Advisors With In-House AI Voting Tool',
+      summary:
+        'JPMorgan Chase’s asset and wealth management division will stop using external proxy advisory firms and instead roll out an AI-powered internal voting platform called Proxy IQ in the U.S. beginning April 1, 2026.',
+      impact:
+        'For credit unions, the shift shows how large institutions are embedding AI into governance decisions, raising expectations for oversight, auditability, and benchmark standards that community institutions may need to meet as they adopt similar tools.',
+      sourceName: 'Business Insider',
+      sourceUrl:
+        'https://www.businessinsider.com/jpmorgan-ditches-proxy-adivsory-firms-for-ai-shareholder-votes-memo-2026-1',
+      date: 'Jan 29, 2026',
+      slug: 'jpmorgan-ai-proxy-voting-tool'
+    },
+    {
       label: 'Payments',
       headline: 'Fintech Vendors Use CES to Signal Next Phase of AI-Driven Payments and Authentication',
       summary:
