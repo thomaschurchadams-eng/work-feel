@@ -1,6 +1,32 @@
   (function () {
   const alertsData = [
     {
+      label: 'AI Governance',
+      headline: 'JPMorgan Chase to Replace External Proxy Advisors With In-House AI Voting Tool',
+      summary:
+        'JPMorgan Chase’s asset and wealth management division will stop using external proxy advisory firms and instead roll out an AI-powered internal voting platform called Proxy IQ in the U.S. beginning April 1, 2026.',
+      impact:
+        'For credit unions, the shift shows how large institutions are embedding AI into governance decisions, raising expectations for oversight, auditability, and benchmark standards that community institutions may need to meet as they adopt similar tools.',
+      sourceName: 'Business Insider',
+      sourceUrl:
+        'https://www.businessinsider.com/jpmorgan-ditches-proxy-adivsory-firms-for-ai-shareholder-votes-memo-2026-1',
+      date: 'Jan 7, 2026',
+      slug: 'jpmorgan-ai-proxy-voting-tool'
+    },
+    {
+      label: 'AI Strategy',
+      headline: 'Bridgewater’s Ray Dalio Says AI Boom Has Entered Early Bubble Phase',
+      summary:
+        'Bridgewater Associates founder Ray Dalio warned that the rapid growth of AI-related stocks may represent an early bubble phase, with valuations driven more by speculation than sustainable fundamentals. His commentary highlights broader concerns about AI investment excess even as markets price in continued AI-led growth.',
+      impact:
+        'Rising enthusiasm and capital flows into AI may drive expectations around adoption and performance. Credit unions should benchmark investment decisions against value creation rather than hype, ensuring governance and risk frameworks keep pace with strategic AI spending.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/business/ai-boom-is-early-bubble-phase-bridgewater-founder-ray-dalio-says-2026-01-05/',
+      date: 'Jan 5, 2026',
+      slug: 'ray-dalio-ai-bubble-phase'
+    },
+    {
       label: 'Payments',
       headline: 'Fintech Vendors Use CES to Signal Next Phase of AI-Driven Payments and Authentication',
       summary:
