@@ -10,7 +10,7 @@
       sourceName: 'Business Insider',
       sourceUrl:
         'https://www.businessinsider.com/jpmorgan-ditches-proxy-adivsory-firms-for-ai-shareholder-votes-memo-2026-1',
-      date: 'Jan 29, 2026',
+      date: 'Jan 7, 2026',
       slug: 'jpmorgan-ai-proxy-voting-tool'
     },
     {
