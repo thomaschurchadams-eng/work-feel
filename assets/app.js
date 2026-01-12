@@ -1,6 +1,45 @@
   (function () {
   const alertsData = [
     {
+      label: 'AI Strategy',
+      headline: 'UK Financial Services Hiring Rises on AI and Data Demand',
+      summary:
+        'Financial institutions in the UK increased hiring for AI, data, and compliance roles as firms accelerate technology adoption despite broader economic uncertainty.',
+      impact:
+        'Rising competition for AI and data talent will push credit unions toward greater reliance on vendors, managed services, and automation, increasing the importance of third-party risk management and clear ownership of AI-enabled processes.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/sustainability/boards-policy-regulation/demand-ai-tech-experts-pushes-uk-financial-sector-vacancies-up-12-recruiter-says-2026-01-12/',
+      date: 'Jan 12, 2026',
+      slug: 'uk-financial-services-ai-data-hiring-demand'
+    },
+    {
+      label: 'AI Strategy',
+      headline: 'TCS Revenue Beat Signals Continued Enterprise AI Spend',
+      summary:
+        'Tata Consultancy Services reported slightly stronger-than-expected quarterly revenue, driven in part by sustained enterprise demand for AI and digital transformation projects.',
+      impact:
+        'Continued AI investment by large service providers signals that core processors and systems integrators will increasingly bundle AI capabilities into standard offerings, affecting pricing, contract structures, and expectations around AI governance.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/world/india/indias-tcs-beats-quarterly-revenue-estimate-2026-01-12/',
+      date: 'Jan 12, 2026',
+      slug: 'tcs-revenue-beat-enterprise-ai-spend'
+    },
+    {
+      label: 'Fraud',
+      headline: 'Financial Regulators Highlight AI as Key Tool in Fraud Prevention',
+      summary:
+        'Financial authorities emphasized the growing role of artificial intelligence in detecting mule accounts and complex digital fraud patterns at a major banking technology forum.',
+      impact:
+        'Regulatory emphasis on AI-driven fraud controls raises expectations that credit unions can explain how AI is used in fraud detection, how outcomes are monitored, and how models are governed within existing compliance frameworks.',
+      sourceName: 'The Economic Times',
+      sourceUrl:
+        'https://m.economictimes.com/news/economy/policy/financial-services-secretary-flags-digital-risks-says-ai-key-to-tackling-mule-accounts/articleshow/126442892.cms',
+      date: 'Jan 11, 2026',
+      slug: 'regulators-ai-fraud-prevention-tool'
+    },
+    {
       label: 'Fraud',
       headline: 'FBI Warns AI Is Helping Criminals Circumvent Identity Verification Systems',
       summary:
