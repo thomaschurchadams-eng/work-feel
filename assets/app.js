@@ -1,6 +1,32 @@
   (function () {
   const alertsData = [
     {
+      label: 'Fraud',
+      headline: 'FBI Warns AI Is Helping Criminals Circumvent Identity Verification Systems',
+      summary:
+        'The FBI’s Internet Crime Complaint Center reports that sophisticated fraud rings are using AI to generate realistic fake IDs, social-media personas, and manipulated video content that can fool customer identification programs (CIP) and biometric systems.',
+      impact:
+        'This alert highlights a rapidly evolving threat vector. Credit unions must consider whether current CIP and identity-proofing tools are resilient against AI-assisted impersonation and fraudulent documentation.',
+      sourceName: 'The Financial Brand',
+      sourceUrl:
+        'https://thefinancialbrand.com/news/banking-technology/ai-id-fraud-bank-194966',
+      date: 'Jan 9, 2026',
+      slug: 'fbi-ai-identity-verification-circumvention'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'NCUA Expands AI Resource Hub to Support Member Services and Fraud Tools',
+      summary:
+        'The National Credit Union Administration (NCUA) has released an expanded AI Resource Hub providing guidance for credit unions considering or using AI for member services, fraud detection, and operational automation. The hub includes tools and recommended practices to help institutions evaluate AI use cases and governance.',
+      impact:
+        'The NCUA’s updated hub signals that regulators are actively supporting AI awareness and readiness, making governance and risk frameworks around AI even more critical.',
+      sourceName: 'Consumer Financial Services Law Monitor (based on NCUA update)',
+      sourceUrl:
+        'https://www.consumerfinancialserviceslawmonitor.com/2026/01/ncua-issues-updated-ai-resource-hub/',
+      date: 'Jan 7, 2026',
+      slug: 'ncua-ai-resource-hub-expanded'
+    },
+    {
       label: 'AI Governance',
       headline: 'JPMorgan Chase to Replace External Proxy Advisors With In-House AI Voting Tool',
       summary:
