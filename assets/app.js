@@ -1,6 +1,44 @@
   (function () {
   const alertsData = [
     {
+      label: 'Fraud',
+      headline: 'Revolut introduces new security measure aimed at impersonation scams',
+      summary:
+        'Revolut rolled out a new security feature to reduce impersonation scams, responding to rising fraud where criminals pose as the bank or trusted parties.',
+      impact:
+        'Expect the scam/fraud bar to rise fast. This directly affects member protection workflows: call center authentication, outbound communications, scam warnings, and reimbursement pressure. CU leaders should ask their vendors (core/digital banking + call center + fraud) about: real-time “scam signals,” step-up authentication triggers, verified call features, and how alerts are tuned to avoid warning fatigue. This also impacts examiner posture—scams are becoming a controls + governance issue, not just fraud losses.',
+      sourceName: 'Finextra',
+      sourceUrl: 'https://www.finextra.com/newsarticle/47134/revolut-to-tackle-impersonation-scams',
+      date: 'Jan 13, 2026',
+      slug: 'revolut-security-measure-impersonation-scams'
+    },
+    {
+      label: 'Payments',
+      headline: 'FIS launches AI transaction platform for “agentic commerce” with Mastercard + Visa',
+      summary:
+        'FIS announced an AI transaction platform designed to let banks participate in “agentic commerce,” where AI agents initiate and complete purchases. FIS says the offering will help issuers stay “top of wallet” while adding fraud protections, and is being developed in partnership with Mastercard and Visa.',
+      impact:
+        'This is a vendor roadmap signal that agent-driven transactions are moving from concept to packaging. CU execs should expect card and digital banking vendors to introduce new add-ons (and pricing tiers) around AI-mediated checkout, plus new risk controls for “non-human initiated” transactions. Start pushing vendors now on: liability model, dispute handling, tokenization defaults, and how agent transactions will be labeled in authorization + statements (this will hit member trust + Reg E workflows).',
+      sourceName: 'FIS',
+      sourceUrl:
+        'https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-launches-industry-first-ai-transaction-platform-to-help-banks-lead',
+      date: 'Jan 12, 2026',
+      slug: 'fis-agentic-commerce-transaction-platform'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'NIST asks for public input on securing AI agents',
+      summary:
+        'NIST is seeking public input on how to better secure agentic AI systems, citing expanding use and risk. The focus is on managing security gaps as AI agents begin acting autonomously in sensitive environments.',
+      impact:
+        'This is a regulatory-expectations early warning. Within 6–18 months, examiners will increasingly ask: “What controls do you have for agent-like behavior in vendor tools?” If your contact center, digital banking, fraud case management, or employee copilots can take actions (not just suggest), you’ll need policy + model risk treatment: access control boundaries, audit logging, human-in-the-loop requirements, incident response playbooks, and third-party risk language that explicitly covers “AI agents.”',
+      sourceName: 'BankInfoSecurity (reporting on NIST)',
+      sourceUrl:
+        'https://www.bankinfosecurity.com/nist-calls-for-public-to-help-better-secure-ai-agents-a-30500',
+      date: 'Jan 12, 2026',
+      slug: 'nist-public-input-securing-ai-agents'
+    },
+    {
       label: 'AI Strategy',
       headline: 'UK Financial Services Hiring Rises on AI and Data Demand',
       summary:
@@ -382,7 +420,7 @@
 
   // Prepare alerts once for all consumers: freshest-first, deduped, and within the defined window
   const preparedAlerts = getRecentAlerts(alertsData);
-  const tickerAlerts = preparedAlerts.slice(0, 2);
+  const tickerAlerts = preparedAlerts.slice(0, 3);
 
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
