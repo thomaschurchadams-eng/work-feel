@@ -616,6 +616,14 @@ header {
   gap: 6px;
 }
 
+.highlight-link {
+  background: rgba(31, 182, 170, 0.18);
+  border-radius: 6px;
+  color: var(--navy);
+  font-weight: 700;
+  padding: 0 4px;
+}
+
 .insight-status {
   font-size: 0.9rem;
   color: #6b7280;
