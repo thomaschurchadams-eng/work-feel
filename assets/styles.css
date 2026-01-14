@@ -616,14 +616,6 @@ header {
   gap: 6px;
 }
 
-.larky-link {
-  color: #6d28d9;
-  font-weight: 700;
-}
-
-.larky-link:visited {
-  color: #5b21b6;
-}
 
 .insight-status {
   font-size: 0.9rem;
