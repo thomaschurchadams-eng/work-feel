@@ -1,6 +1,43 @@
   (function () {
   const alertsData = [
     {
+      label: 'Payments',
+      headline: 'Mastercard pushes standards for AI-driven “agentic commerce”',
+      summary:
+        'Mastercard announced it is working with major tech partners to define how AI agents will initiate and complete payments on behalf of consumers in “agentic commerce” scenarios, emphasizing identity, trust, and secure interactions at scale.',
+      impact:
+        'This is an early payments vendor roadmap signal. As AI agents become capable of initiating and authorizing member purchases, CUs need to prepare for changes in authentication patterns, fraud risk, and dispute workflows. Expect questions in card/processing contracts about agent identity verification, liability splits when an AI initiates a transaction, and updated chargeback evidence requirements. (Levers: (a) core/digital banking & payments roadmap; (c) fraud/identity/dispute workflows)',
+      sourceName: 'Axios',
+      sourceUrl: 'https://www.axios.com/2026/01/20/mastercard-ai-checkout-agentic-commerce',
+      date: 'Jan 20, 2026',
+      slug: 'mastercard-standards-agentic-commerce'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'UK lawmakers urge regulators to adopt AI stress tests for financial services',
+      summary:
+        'A UK parliamentary committee urged UK financial regulators to conduct AI-specific stress tests and provide clearer guidance for firms using AI, warning that the current “wait-and-see” approach could leave consumers and markets exposed to risks from unregulated or opaque AI use.',
+      impact:
+        'This development signals a regulatory expectations shift toward proactive governance and model oversight. Credit unions should strengthen AI governance frameworks, incorporating scenario-based testing for bias, correlated decisioning, model drift, and operational risk. Consider documenting third-party model testing scripts and downturn scenarios as part of examiner-ready submissions. (Levers: (b) examiner/regulatory expectations & governance; (f) data governance/third-party risk management)',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/sustainability/boards-policy-regulation/britain-needs-ai-stress-tests-financial-services-lawmakers-say-2026-01-20/',
+      date: 'Jan 20, 2026',
+      slug: 'uk-lawmakers-ai-stress-tests-financial-services'
+    },
+    {
+      label: 'AI Strategy',
+      headline: 'Citi reveals 4,000-person internal AI workforce program',
+      summary:
+        'Business Insider reports that Citi has built an internal AI workforce of approximately 4,000 employees participating in a decentralized “AI Champions and Accelerators” program that embeds AI tools and training across business units.',
+      impact:
+        'This is a staffing, skills, and operating model signal: integration of AI into roles at scale is emerging as a competitive advantage. Credit unions should consider similar peer-to-peer training models (AI ambassadors or “AI fluency champions”) to accelerate adoption across risk, compliance, operations, and technology teams. Build internal AI competency pathways and certification standards to match rising vendor expectations on usage and controls. (Levers: (e) staffing & training; (b) governance controls)',
+      sourceName: 'Business Insider',
+      sourceUrl: 'https://www.businessinsider.com/citi-bank-ai-accelerators-volunteers-2025-12',
+      date: 'Jan 20, 2026',
+      slug: 'citi-internal-ai-workforce-program'
+    },
+    {
       label: 'Fraud',
       headline: 'Revolut introduces new security measure aimed at impersonation scams',
       summary:
