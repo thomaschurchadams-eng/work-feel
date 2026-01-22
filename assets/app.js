@@ -1,6 +1,45 @@
   (function () {
   const alertsData = [
     {
+      label: 'AI Governance',
+      headline: 'South Korea launches landmark AI law with rules for high-impact uses including finance',
+      summary:
+        'South Korea implemented a comprehensive AI regulation framework (the AI Basic Act), including requirements like human oversight for high-impact AI (including finance) and labeling of generative AI outputs, with a grace period before penalties apply.',
+      impact:
+        'This is an early “template” regulation: human oversight + labeling + accountability for high-impact AI. CU executives should treat this as a preview of where governance is going: formal AI inventories, role-based approvals, monitoring, and clear disclosure controls. It also strengthens the case to require vendors (core/digital banking/fraud/ID) to provide auditable evidence of oversight and model controls. (Levers: (b) governance/model risk controls; (f) third-party risk management; (a) vendor roadmap/packaging)',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/world/asia-pacific/south-korea-launches-landmark-laws-regulate-ai-startups-warn-compliance-burdens-2026-01-22/',
+      date: 'Jan 22, 2026',
+      slug: 'south-korea-ai-basic-act-high-impact-uses'
+    },
+    {
+      label: 'Payments',
+      headline: 'PayPal frames the “AI shopping protocol” moment: identity and fraud controls become the rails',
+      summary:
+        'PayPal published a newsroom post positioning the emerging “AI shopping protocol” trend around trust, verified identity, fraud protection, and payment authorization as AI agents increasingly mediate checkout and purchases.',
+      impact:
+        'This is a payments/identity roadmap tell: agentic checkout will be packaged as identity + authorization + risk scoring. Credit unions should push card and digital wallet partners on (1) how delegated/agent authority is validated, (2) what new fraud signals are shared back to issuers, and (3) how dispute evidence changes when “the agent did it.” Expect this to show up as new pricing tiers, risk products, and contract language. (Levers: (a) payments/vendor roadmap & contract terms; (c) fraud/disputes workflows; (f) third-party risk)',
+      sourceName: 'PayPal Newsroom (primary company statement)',
+      sourceUrl:
+        'https://newsroom.paypal-corp.com/2026-01-22-Making-Sense-of-the-AI-Shopping-Protocol-Moment',
+      date: 'Jan 22, 2026',
+      slug: 'paypal-ai-shopping-protocol-identity-fraud-controls'
+    },
+    {
+      label: 'Fraud',
+      headline: 'ABA highlights WEF/Accenture warning: AI is “supercharging” cybercrime and fraud',
+      summary:
+        'An ABA Banking Journal summary of the World Economic Forum/Accenture Global Cybersecurity Outlook flags AI as accelerating the cybersecurity arms race and cyber-enabled fraud as a leading trend for 2026.',
+      impact:
+        'Treat this as a staffing + operating model signal: fraud teams will need new playbooks for deepfakes, synthetic identity, and AI-driven social engineering. CUs should update member protection workflows (IDV step-ups, call center verification, dispute intake scripts) and renegotiate fraud/ID vendor commitments around model refresh cadence, explainability, and fraud-loss KPIs. (Levers: (c) fraud/identity/member protection workflows; (e) staffing/training; (a) vendor packaging/terms)',
+      sourceName: 'ABA Banking Journal',
+      sourceUrl:
+        'https://bankingjournal.aba.com/2026/01/survey-ai-fraud-among-top-cybersecurity-trends-for-2026/',
+      date: 'Jan 21, 2026',
+      slug: 'aba-wef-accenture-ai-supercharging-cybercrime-fraud'
+    },
+    {
       label: 'Payments',
       headline: 'Mastercard pushes standards for AI-driven “agentic commerce”',
       summary:
