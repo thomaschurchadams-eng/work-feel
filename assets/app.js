@@ -1,6 +1,45 @@
   (function () {
   const alertsData = [
     {
+      label: 'Fraud',
+      headline: 'Civic Identity Apps, Tokenisation, & AI to Revolutionise Fraud & Security Globally',
+      summary:
+        'Juniper Research’s new “Fraud & Security Tech Horizon” report identifies civic identity apps, tokenisation, and AI as the leading fraud/security technologies expected to have significant impact in 2026, with standardised digital identity wallets and risk-based fraud automation rising sharply.',
+      impact:
+        'Expect vendor roadmaps and contract terms for fraud monitoring, KYC/onboarding, and identity platforms to shift toward tokenised identity and adaptive AI scoring. CUs should prioritize evaluation of third-party digital ID solutions and demand roadmap transparency on how vendors will meet evolving standards and compliance expectations tied to emerging digital identity ecosystems. (Levers: a, f)',
+      sourceName: 'Juniper Research via GlobeNewswire / Yahoo Finance',
+      sourceUrl:
+        'https://www.juniperresearch.com/press/civic-identity-apps-tokenisation-ai-revolutionisse-fraud-security/',
+      date: 'Jan 26, 2026',
+      slug: 'civic-identity-apps-tokenisation-ai-revolutionise-fraud-security'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'Deploying AI in Financial Services in the UK: FCA and Data Protection Considerations',
+      summary:
+        'A legal briefing highlights increasing integration of AI across UK financial institutions — from risk management and fraud detection to customer service — and emphasizes the need for regulated entities to align AI deployments with current UK financial supervision, data protection, and vendor governance frameworks.',
+      impact:
+        'This signals regulator expectations around AI risk controls, vendor governance, and privacy safeguards are tightening globally. CUs should ready model risk documentation, clarify data governance and vendor oversight policies, and ensure third-party AI systems (fraud scoring, automated servicing, analytics) have compliant data protection frameworks to satisfy examiners and reduce legal exposure. (Levers: b, f)',
+      sourceName: 'Kennedys Law / legal briefing',
+      sourceUrl:
+        'https://www.kennedyslaw.com/en/thought-leadership/article/2026/deploying-ai-in-financial-services-in-the-uk-fca-and-data-protection-considerations',
+      date: 'Jan 26, 2026',
+      slug: 'uk-fca-data-protection-ai-deployment-considerations'
+    },
+    {
+      label: 'AI Strategy',
+      headline: 'Financial Services Set for Hiring Spree for AI Experts in 2026',
+      summary:
+        'British banks and financial firms are accelerating recruitment of AI, behavioral science, and ethical AI specialists after a slow 2025 hiring environment, with many planning to expand teams in 2026 to manage AI risk, governance, and product development.',
+      impact:
+        'CU leadership should anticipate staffing and skills gaps as demand for AI governance, model risk, and fraud/AML automation talent grows. Strategic planning should include training, re-skilling, or partnerships to strengthen internal capabilities in AI risk oversight, model validation, and secure implementation of AI-enabled member services. (Levers: e, b)',
+      sourceName: 'City A.M.',
+      sourceUrl:
+        'https://www.cityam.com/financial-services-on-hiring-spree-for-ai-experts-in-2026/',
+      date: 'Jan 26, 2026',
+      slug: 'financial-services-ai-hiring-spree-2026'
+    },
+    {
       label: 'AI Governance',
       headline: 'South Korea launches landmark AI law with rules for high-impact uses including finance',
       summary:
