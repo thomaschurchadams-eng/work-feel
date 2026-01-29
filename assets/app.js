@@ -1,6 +1,45 @@
   (function () {
   const alertsData = [
     {
+      label: 'Operations',
+      headline: 'Nationwide Expands AWS Partnership to Deepen AI Use',
+      summary:
+        'Nationwide Building Society has expanded its strategic partnership with Amazon Web Services to deploy AI-powered tools — from contact center assist to analytics — across service operations and member interactions.',
+      impact:
+        'This highlights how financial institutions are operationalizing cloud + AI to enhance member service, fraud detection/analytics, and staff productivity. Credit unions should assess vendor roadmaps and contract terms around AI integration (especially cloud dependencies), and consider pilot programs for contact center AI and real-time analytics to modernize member experience. (Levers: a, d, f)',
+      sourceName: 'Computer Weekly',
+      sourceUrl:
+        'https://www.computerweekly.com/news/366637853/Nationwide-expands-Amazon-Web-Services-partnership-to-delve-deeper-into-AI',
+      date: 'Jan 28, 2026',
+      slug: 'nationwide-expands-aws-partnership-ai-use'
+    },
+    {
+      label: 'Payments',
+      headline: 'Mastercard Tests AI Shopping Assistant with Banks',
+      summary:
+        'Mastercard conducted an “agentic transaction” trial in Australia where an AI assistant completed purchases on behalf of consumers in partnership with local banks, highlighting both convenience gains and security/verification challenges.',
+      impact:
+        'As “AI shopping assistants” and agentic payments emerge, credit unions need to anticipate payments logic, fraud detection, and member authorization workflows evolving. These experiments underscore the need to adapt fraud/AML systems and contact center protocols to handle autonomous payment agents securely — especially around transaction transparency and identity verification. (Levers: a, c, d)',
+      sourceName: 'news.com.au',
+      sourceUrl:
+        'https://www.news.com.au/finance/money/spending/game-changer-new-way-aussies-can-shop-using-ai/news-story/9392028e7b317a21654eca56a69cfb20',
+      date: 'Jan 28, 2026',
+      slug: 'mastercard-tests-ai-shopping-assistant-banks'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'UK Regulator Kicks Off AI Retail Finance Review',
+      summary:
+        'The UK’s Financial Conduct Authority has launched the Mills Review to assess how advanced AI technologies — including agentic systems — might reshape competition, consumer outcomes, and market structure in retail finance through mid-2026. The review does not impose new rules yet but sets expectations about future regulatory direction.',
+      impact:
+        'This forward-looking regulatory scrutiny signals rising expectations around AI governance, compliance documentation, and risk controls. Credit unions should ensure vendor contracts and internal model risk frameworks — especially for fraud detection, member servicing bots, and automated decisioning — are well-documented and explainable ahead of future U.S. examiner attention. (Levers: b, f)',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/sustainability/boards-policy-regulation/uk-regulator-kicks-off-review-impact-ai-retail-finance-2026-01-27/',
+      date: 'Jan 27, 2026',
+      slug: 'uk-regulator-ai-retail-finance-review'
+    },
+    {
       label: 'Fraud',
       headline: 'Civic Identity Apps, Tokenisation, & AI to Revolutionise Fraud & Security Globally',
       summary:
