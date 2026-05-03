@@ -1016,14 +1016,35 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
+  header {
+    min-height: 56px;
+  }
+
   .brand {
-    height: 74px;
-    max-height: 74px;
-    max-width: 320px;
+    height: 44px;
+    max-height: 44px;
+    max-width: 220px;
+  }
+
+  .brand-logo {
+    max-height: 44px;
   }
 
   .navbar {
-    padding: 14px 0;
+    padding: 8px 0;
+  }
+
+  .nav-links {
+    left: 0;
+    right: 0;
+    top: calc(100% + 6px);
+    width: 100%;
+    min-width: 0;
+    max-height: calc(100vh - 80px);
+  }
+
+  .nav-links a {
+    width: 100%;
   }
 
   .hero {
