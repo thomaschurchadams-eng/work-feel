@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AI-assisted coding risk review for credit unions</title>
+  <desc id="desc">Editorial illustration of AI-generated code being reviewed with vendor risk, security, and member data controls.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#06162e"/>
+      <stop offset="0.58" stop-color="#0d3150"/>
+      <stop offset="1" stop-color="#0fb4a7"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b1f3b"/>
+      <stop offset="1" stop-color="#102f56"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#021126" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1040" cy="110" r="190" fill="#7ef5df" opacity="0.11"/>
+  <circle cx="150" cy="560" r="260" fill="#ffffff" opacity="0.06"/>
+  <g filter="url(#shadow)">
+    <rect x="118" y="108" width="720" height="422" rx="28" fill="url(#screen)" stroke="#7ef5df" stroke-opacity="0.28"/>
+    <rect x="148" y="142" width="660" height="52" rx="14" fill="#071a32"/>
+    <circle cx="178" cy="168" r="8" fill="#ff6b6b"/><circle cx="204" cy="168" r="8" fill="#ffd166"/><circle cx="230" cy="168" r="8" fill="#42d392"/>
+    <g font-family="SFMono-Regular, Consolas, monospace" font-size="23" fill="#d9fff6" opacity="0.9">
+      <text x="170" y="240">if member_data.access == approved:</text>
+      <text x="200" y="282" fill="#7ef5df">run_ai_assist(review=True)</text>
+      <text x="170" y="324">else:</text>
+      <text x="200" y="366" fill="#ffcf70">block_shadow_workflow()</text>
+      <text x="170" y="438" fill="#a8c7e8">// change control required</text>
+    </g>
+    <path d="M642 230 l54 31 v62 c0 58-31 96-54 110-23-14-54-52-54-110v-62z" fill="#0fb4a7" opacity="0.22" stroke="#7ef5df" stroke-width="4"/>
+    <path d="M616 322 l21 21 42-54" fill="none" stroke="#7ef5df" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="878" y="146" width="222" height="104" rx="22" fill="#ffffff" opacity="0.95"/>
+    <circle cx="923" cy="198" r="24" fill="#ffcf70"/>
+    <path d="M923 181v22" stroke="#0b1f3b" stroke-width="7" stroke-linecap="round"/><circle cx="923" cy="216" r="4" fill="#0b1f3b"/>
+    <rect x="965" y="176" width="92" height="12" rx="6" fill="#0b1f3b" opacity="0.28"/>
+    <rect x="965" y="202" width="116" height="12" rx="6" fill="#0b1f3b" opacity="0.18"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="850" y="294" width="260" height="204" rx="26" fill="#f7fbff"/>
+    <rect x="884" y="333" width="86" height="14" rx="7" fill="#0b1f3b" opacity="0.72"/>
+    <rect x="884" y="374" width="188" height="12" rx="6" fill="#0fb4a7" opacity="0.5"/>
+    <rect x="884" y="411" width="150" height="12" rx="6" fill="#0fb4a7" opacity="0.34"/>
+    <rect x="884" y="448" width="178" height="12" rx="6" fill="#0fb4a7" opacity="0.22"/>
+    <circle cx="1046" cy="344" r="28" fill="#0b1f3b" opacity="0.1"/>
+    <path d="M1032 344h28M1046 330v28" stroke="#0b1f3b" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  </g>
+  <g opacity="0.95">
+    <circle cx="312" cy="590" r="48" fill="#ffd0a6"/>
+    <path d="M232 675c8-74 148-74 160 0" fill="#d9fff6" opacity="0.9"/>
+    <circle cx="502" cy="590" r="48" fill="#9fd7ff"/>
+    <path d="M420 675c8-74 150-74 164 0" fill="#b8f3e8" opacity="0.9"/>
+    <circle cx="684" cy="590" r="48" fill="#caa6ff"/>
+    <path d="M606 675c8-74 144-74 158 0" fill="#f8fbff" opacity="0.9"/>
+  </g>
+</svg>
