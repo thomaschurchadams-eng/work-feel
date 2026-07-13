@@ -2,6 +2,45 @@
   const alertsData = [
     {
       label: 'Operations',
+      headline: 'Wall Street Banks Move AI Agents Into Daily Operations',
+      summary:
+        'Major banks are expanding agentic AI assistants across wealth management, client vetting, trading and treasury, with Morgan Stanley preparing client-facing tests and BNY assigning digital workers login credentials and human managers.',
+      impact:
+        'Credit unions should require every AI agent to have a named human owner, least-privilege system access, logged actions and explicit approval boundaries before a vendor can move from staff assistance to transactions or member-facing work. Contract reviews should also define incident reporting, audit access and responsibility for agent errors.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/business/finance/wall-street-banks-ramp-up-digital-assistants-bid-to-win-productivity-race-2026-07-13/',
+      date: 'Jul 13, 2026',
+      slug: 'wall-street-banks-agentic-ai-daily-operations'
+    },
+    {
+      label: 'Third-Party Risk',
+      headline: 'UK Places Four Cloud Giants Under Direct Financial Oversight',
+      summary:
+        'HM Treasury designated Microsoft, Google Cloud, AWS and Oracle as critical third parties to the financial sector, bringing their systemic services under joint oversight by the Bank of England, Prudential Regulation Authority and Financial Conduct Authority from July 13.',
+      impact:
+        'Because many fraud, analytics and generative-AI products depend on these cloud platforms, credit unions should map cloud concentration across vendors and strengthen resilience clauses, recovery objectives, audit rights and exit plans. The UK move is a practical benchmark for third-party oversight even where U.S. rules are less prescriptive.',
+      sourceName: 'HM Treasury',
+      sourceUrl:
+        'https://www.gov.uk/government/news/uk-financial-system-strengthened-with-new-safeguards-for-major-technology-providers',
+      date: 'Jul 10, 2026',
+      slug: 'uk-cloud-giants-critical-financial-third-parties'
+    },
+    {
+      label: 'Cybersecurity',
+      headline: 'ECB Gives Banks Deadline for AI Cyber-Defense Plans',
+      summary:
+        'The European Central Bank gave euro-zone banks until October 31 to prepare plans for AI-enabled cyber threats, prioritizing internet-facing systems, third-party and open-source components, faster vulnerability remediation, monitoring and recovery.',
+      impact:
+        'Credit unions should treat this as an examiner-readiness signal: inventory exposed assets and AI dependencies, set patching and vendor-notification service levels, and test a scenario in which AI accelerates exploitation of a shared provider. Fraud, cyber and core contracts should state who monitors emerging model capabilities and who acts when risk changes.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/legal/litigation/ecb-tells-banks-draw-up-plans-against-ai-attacks-amid-disruption-fears-2026-07-07/',
+      date: 'Jul 7, 2026',
+      slug: 'ecb-ai-cyber-defense-plans-deadline'
+    },
+    {
+      label: 'Operations',
       headline: 'Nationwide Expands AWS Partnership to Deepen AI Use',
       summary:
         'Nationwide Building Society has expanded its strategic partnership with Amazon Web Services to deploy AI-powered tools — from contact center assist to analytics — across service operations and member interactions.',
@@ -547,7 +586,7 @@
     return null;
   };
 
-  const getRecentAlerts = (alerts, days = 60) => {
+  const getRecentAlerts = (alerts, days = 14) => {
     const cutoff = new Date();
     cutoff.setDate(cutoff.getDate() - days);
 
@@ -1131,7 +1170,7 @@
       alertsList.innerHTML = `
         <article class="card alert-card" aria-live="polite">
           <div class="alert-content">
-            <h3>No alerts in the last 60 days. Check back soon.</h3>
+            <h3>No alerts in the last 14 days. Check back soon.</h3>
           </div>
         </article>
       `;
@@ -1146,7 +1185,7 @@
             <div class="alert-content">
               <h3>${item.headline}</h3>
               <p class="alert-summary">${item.summary}</p>
-              <p class="alert-impact"><span class="muted-label">Credit union impact:</span> ${item.impact || ''}</p>
+              <p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p>
               <p class="alert-meta"><span class="alert-date">${item.date || ''}</span> · <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p>
             </div>
           </article>
