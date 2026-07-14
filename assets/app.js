@@ -1,6 +1,45 @@
   (function () {
   const alertsData = [
     {
+      label: 'Cybersecurity',
+      headline: 'Canadian Regulator Warns Frontier AI Is Shrinking Banks’ Cyber Response Window',
+      summary:
+        'Reuters reported on July 13 that Canada’s Office of the Superintendent of Financial Institutions warned major banks and insurers that frontier AI models could accelerate cyberattacks and leave less time to find and fix vulnerabilities in legacy systems.',
+      impact:
+        'Credit unions should shorten patching and vendor-notification timelines for internet-facing and legacy systems, document which providers monitor frontier-model capabilities, and tabletop an AI-assisted exploitation scenario. Core, cloud and cybersecurity contracts should define rapid escalation, evidence sharing and responsibility when the threat window suddenly contracts.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/world/canada-regulator-cited-anthropics-claude-mythos-warning-banks-cyber-risks-email-2026-07-13/',
+      date: 'Jul 14, 2026',
+      slug: 'canada-osfi-frontier-ai-cyber-response-window'
+    },
+    {
+      label: 'Identity',
+      headline: 'ITU Launches Trust and Identity Standards Work for AI Agents',
+      summary:
+        'The International Telecommunication Union launched a focus group on July 9 to develop identity, trust, interoperability and continuous-assurance frameworks for autonomous AI agents, including agents that execute financial transactions.',
+      impact:
+        'Credit unions should ask payments, digital-banking and identity vendors how an agent’s identity and delegated authority will be authenticated, logged, limited and revoked. New contracts should require traceable agent credentials, human control points and evidence that unauthorized agent actions can be stopped and investigated.',
+      sourceName: 'International Telecommunication Union',
+      sourceUrl:
+        'https://www.itu.int/en/mediacentre/Pages/PR-2026-07-09-focus-group-agentic-AI.aspx',
+      date: 'Jul 14, 2026',
+      slug: 'itu-trust-identity-standards-ai-agents'
+    },
+    {
+      label: 'Operations',
+      headline: 'FCA Reports AI-Assisted Triage Cut Low-Risk Case Processing to Six Minutes',
+      summary:
+        'In a July 8 speech, the UK Financial Conduct Authority said its use of data, AI and improved systems reduced average processing time for its lowest-risk supervisory cases from four hours to six minutes and cut their share of the supervisory caseload by 38%.',
+      impact:
+        'Credit unions can apply the same pattern to compliance and operations queues: use AI to assemble evidence and rank lower-risk cases while keeping policy thresholds, exceptions and final accountability with people. Any pilot should track false negatives, overrides, processing time and member impact before broader automation.',
+      sourceName: 'Financial Conduct Authority',
+      sourceUrl:
+        'https://www.fca.org.uk/news/speeches/showing-our-workings-solving-growth-risk-and-trust',
+      date: 'Jul 14, 2026',
+      slug: 'fca-ai-data-low-risk-case-triage'
+    },
+    {
       label: 'Operations',
       headline: 'Wall Street Banks Move AI Agents Into Daily Operations',
       summary:
