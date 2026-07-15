@@ -1,6 +1,46 @@
   (function () {
   const alertsData = [
     {
+      label: 'Payments',
+      headline: 'Thredd Joins Visa Agentic Ready Program; Zilch Set as Early Issuer',
+      summary:
+        'Thredd announced on July 15 that it joined Visa’s Agentic Ready program, enabling European issuers to support AI-agent-initiated payments without rebuilding their payment infrastructure; Zilch will be among the first issuers on the platform to enable the capability.',
+      impact:
+        'Credit unions should ask card processors and network partners when agent-initiated transaction indicators, cardholder-consent evidence, authentication controls and dispute data will enter their roadmaps. Before enabling the channel, update fraud rules and test how authorization, revocation, chargebacks and member complaints will work when an AI agent initiates the purchase.',
+      sourceName: 'Business Wire',
+      sourceUrl:
+        'https://www.businesswire.com/news/home/20260715738845/en/Thredd-Joins-The-Visa-Agentic-Ready-Programme-Bringing-Agent-Network-Readiness-To-Issuers-Across-Europe-Starting-With-Zilch',
+      date: 'Jul 15, 2026',
+      slug: 'thredd-visa-agentic-ready-zilch'
+    },
+    {
+      label: 'Fraud & AML',
+      headline: 'Unit21 Adds TRM Labs Blockchain Signals to AI-Native Financial-Crime Workflows',
+      summary:
+        'Unit21 announced on July 14 that TRM Labs wallet-screening and transaction-monitoring intelligence is now integrated into Unit21’s AI agents, rules and investigation workflows, bringing crypto and fiat risk signals into one financial-crime operations environment.',
+      impact:
+        'Credit unions with digital-asset exposure or fintech partners should assess whether fraud and AML systems connect activity across payment rails instead of reviewing crypto and fiat separately. Vendor reviews should require data-lineage documentation, explainable alert and case histories, human approval for filings or account actions, and clear responsibility for tuning models and thresholds.',
+      sourceName: 'Unit21',
+      sourceUrl:
+        'https://www.unit21.ai/blog/trm-labs-unit21-on-chain-risk-native-to-your-investigation-workflow',
+      date: 'Jul 15, 2026',
+      slug: 'unit21-trm-labs-ai-financial-crime-workflows'
+    },
+    {
+      label: 'Regulation',
+      headline: 'Fed Vice Chair Backs Risk-Proportionate AI Supervision for Smaller Banks',
+      summary:
+        'In a July 14 speech, Federal Reserve Vice Chair for Supervision Michelle Bowman said financial institutions should use existing risk-management frameworks with controls tailored to each AI application, and that lower-risk uses should receive a calibrated supervisory approach that does not disadvantage smaller banks.',
+      impact:
+        'Although the remarks address banks rather than create a new credit-union rule, credit unions can operationalize the same principle by inventorying AI uses, assigning risk tiers and documenting stronger testing, monitoring and human review for lending or other member-impacting decisions. Vendor evidence and board reporting should scale with the use case’s legal, model and member risk.',
+      sourceName: 'Federal Reserve Board',
+      sourceUrl:
+        'https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm',
+      date: 'Jul 15, 2026',
+      slug: 'fed-bowman-risk-proportionate-ai-supervision'
+    },
+
+    {
       label: 'Cybersecurity',
       headline: 'Canadian Regulator Warns Frontier AI Is Shrinking Banks’ Cyber Response Window',
       summary:
