@@ -1,6 +1,46 @@
   (function () {
   const alertsData = [
     {
+      label: 'Lending',
+      headline: 'Clutch Makes Credit-Union Lending Automation System Generally Available',
+      summary:
+        'Clutch announced on July 15 that its Lending Automation System is generally available after two years of development with credit-union partners. The platform combines digital application capture, AI-powered decisioning based on each credit union’s policies and member relationship data, and staff workflows for applications requiring human judgment.',
+      impact:
+        'Credit unions evaluating lending automation should require vendors to document policy configuration, data lineage, model validation, adverse-action reasoning, fair-lending testing and staff override controls. A phased rollout should compare approval quality, exceptions, member complaints and processing time before expanding automated decisioning.',
+      sourceName: 'Clutch via PR Newswire',
+      sourceUrl:
+        'https://www.prnewswire.com/news-releases/clutch-launches-lending-automation-system-las-the-first-automated-lending-platform-built-exclusively-for-credit-unions-302825880.html',
+      date: 'Jul 16, 2026',
+      slug: 'clutch-lending-automation-system-general-availability'
+    },
+    {
+      label: 'Identity & Fraud',
+      headline: 'Alloy Puts Agentic AI Into Production Across Identity and Fraud Workflows',
+      summary:
+        'Alloy said on July 15 that it launched an AI Assistant for risk and compliance work and placed agentic AI solutions into production across the customer lifecycle, from application through login, transactions and account changes. The company also reported that more than 900 financial institutions and fintechs now use its platform.',
+      impact:
+        'Credit unions should ask identity and fraud vendors which recommendations or actions are automated, where staff approval remains mandatory and how every decision is logged. Contracts and monitoring should address model-change notices, false-positive and false-negative performance, data retention, authentication friction and rapid rollback when member impact rises.',
+      sourceName: 'Alloy',
+      sourceUrl:
+        'https://www.alloy.com/about/press/alloy-h1-momentum',
+      date: 'Jul 16, 2026',
+      slug: 'alloy-agentic-ai-identity-fraud-production'
+    },
+    {
+      label: 'Workforce',
+      headline: 'Bank of America Reports 300-Plus Approved AI Use Cases and 400,000 Daily Prompts',
+      summary:
+        'American Banker reported on July 15 that Bank of America executives disclosed more than 300 approved AI use cases and over 400,000 employee prompts per day during the bank’s second-quarter earnings call. Executives said the tools support client-meeting preparation, software development, service and other employee workflows.',
+      impact:
+        'Credit unions can use the disclosure as a measurement benchmark: track active users, approved use cases, cycle time, error and override rates, service quality and business outcomes rather than counting licenses or pilots. Scaling should be paired with role-based training, prompt and data controls, named workflow owners and periodic review of whether each use still produces value.',
+      sourceName: 'American Banker',
+      sourceUrl:
+        'https://www.americanbanker.com/news/bank-of-americas-moynihan-touts-good-economics-of-ai',
+      date: 'Jul 16, 2026',
+      slug: 'bank-of-america-ai-use-cases-daily-prompts'
+    },
+
+    {
       label: 'Payments',
       headline: 'Thredd Joins Visa Agentic Ready Program; Zilch Set as Early Issuer',
       summary:
