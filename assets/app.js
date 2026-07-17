@@ -1,6 +1,46 @@
   (function () {
   const alertsData = [
     {
+      label: 'Identity & Fraud',
+      headline: 'Fourthline and Veridas Agree to Merge AI Identity and Compliance Platforms',
+      summary:
+        'Fourthline and Veridas announced on July 16 that they signed an agreement to merge, combining KYC and AML orchestration with biometric authentication and anti-fraud technology under a single AI architecture. The transaction is expected to close in the second half of 2026, subject to regulatory approvals and customary conditions.',
+      impact:
+        'Credit unions using either provider, or evaluating consolidated identity platforms, should request the integration roadmap, model and data migration plans, service-level commitments and notice rights before renewing. Due diligence should also test whether combining onboarding, authentication and AML functions creates concentration risk, and require continuity, audit and exit provisions during the phased integration.',
+      sourceName: 'Veridas',
+      sourceUrl:
+        'https://veridas.com/en/veridas-and-fourthline-join-forces/',
+      date: 'Jul 17, 2026',
+      slug: 'fourthline-veridas-merge-ai-identity-compliance'
+    },
+    {
+      label: 'Lending',
+      headline: 'ConnectOne Deploys nCino AI Agents Across Commercial Lending',
+      summary:
+        'nCino announced on July 14 that ConnectOne Bank is deploying its Banking Advisor in production and two custom AI agents across commercial-lending workflows. The agents are designed to support document retrieval and relationship-management tasks while the bank builds additional skills on nCino’s Agentic Operating System.',
+      impact:
+        'Credit unions considering lending agents should define which documents and systems each agent may access, require human approval for credit decisions and member communications, and measure accuracy, exceptions and time saved by workflow. Vendor contracts should address agent configuration ownership, audit logs, model changes, data retention and rollback if production performance deteriorates.',
+      sourceName: 'nCino via GlobeNewswire',
+      sourceUrl:
+        'https://www.globenewswire.com/news-release/2026/07/14/3326739/0/en/connectone-bank-is-building-the-future-of-commercial-lending-on-ncino-s-agentic-operating-system.html',
+      date: 'Jul 17, 2026',
+      slug: 'connectone-ncino-ai-agents-commercial-lending'
+    },
+    {
+      label: 'Cybersecurity',
+      headline: 'White House Forms AI Cybersecurity Coordination Group for Critical Services',
+      summary:
+        'Reuters reported on July 14 that the White House established a group bringing AI developers together with essential-service providers to share vulnerabilities found by advanced AI systems and coordinate responses. The effort covers critical services including financial institutions and follows a June directive involving Treasury and other federal agencies.',
+      impact:
+        'Credit unions should ask core, cloud and cybersecurity vendors how intelligence from the new coordination channel will reach customers, who owns remediation and what notification timelines apply. Incident plans should include rapid validation and patching of AI-discovered vulnerabilities, compensating controls for legacy systems and evidence-sharing obligations across third parties.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/technology/us-launch-ai-cybersecurity-coordination-group-white-house-says-2026-07-14/',
+      date: 'Jul 17, 2026',
+      slug: 'white-house-ai-cybersecurity-coordination-group'
+    },
+
+    {
       label: 'Lending',
       headline: 'Clutch Makes Credit-Union Lending Automation System Generally Available',
       summary:
