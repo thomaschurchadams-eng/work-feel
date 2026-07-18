@@ -19,6 +19,7 @@ const readMeta = (html, key, property = false) => {
 for (const file of files) {
   const html = fs.readFileSync(file, 'utf8');
   const errors = [];
+  if (/<meta\s+[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) errors.push('published article cannot be noindex');
   const title = html.match(/<title>([^<]+)<\/title>/i)?.[1]?.trim() || '';
   const description = readMeta(html, 'description');
   const canonical = html.match(/<link\s+[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["']/i)?.[1] || '';
