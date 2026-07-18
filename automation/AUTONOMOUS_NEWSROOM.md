@@ -49,3 +49,8 @@ Read `automation/analytics-measurement.json` and `automation/ANALYTICS.md` for e
 ## SEO and discovery package
 
 Read `automation/seo-policy.json` and `automation/SEO_GOOGLE_NEWS.md` for every full article. Use the correct SEO-complete News or Insights template. Add canonical, Open Graph, Twitter, publication/modified, section, author, publisher, image and keyword metadata plus valid `NewsArticle` or `Article` JSON-LD. Include at least two genuinely relevant internal article links selected by shared function and technology. Update `sitemap.xml` and `sitemap.txt`; for News, also maintain `news-sitemap.xml` with only articles from the prior 48 hours. Run `node scripts/validate-seo-package.mjs <article-file>` before publishing. SEO validation is a hard production gate.
+
+
+## Friday weekly briefing
+
+On Friday, after the standard article decision, read `automation/newsletter-rules.json`, `automation/NEWSLETTER.md` and `automation/newsletter-state.json`. Create the weekly web edition from the prior seven days when enough qualified coverage exists. Publish it at `/newsletter/YYYY-MM-DD.html`, update the archive markers in `newsletter.html`, both standard sitemaps and newsletter state, then run `node scripts/validate-newsletter.mjs <edition-file>`. Publish the web edition without claiming email delivery while the provider status is `not-connected`.
