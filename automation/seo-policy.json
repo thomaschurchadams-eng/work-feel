@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "site": {
+    "name": "CreditUnionAI News",
+    "url": "https://creditunionainews.com/",
+    "language": "en",
+    "publisherType": "Organization",
+    "publisherLogo": "https://creditunionainews.com/assets/download.png",
+    "authorName": "CreditUnionAI News Staff",
+    "authorUrl": "https://creditunionainews.com/about.html"
+  },
+  "routes": {
+    "news": {"pathPattern": "^/news/[a-z0-9-]+\\.html$", "schemaType": "NewsArticle", "index": "/news.html"},
+    "insights": {"pathPattern": "^/insight-[a-z0-9-]+\\.html$", "schemaType": "Article", "index": "/insights.html"}
+  },
+  "requirements": {
+    "titleCharacters": {"min": 25, "max": 110},
+    "descriptionCharacters": {"min": 50, "max": 160},
+    "headlineCharacters": {"max": 110},
+    "image": {"absoluteHttps": true, "recommendedWidth": 1200, "recommendedHeight": 630},
+    "relatedInternalLinks": 2,
+    "externalSourceLinks": 1,
+    "newsSitemapWindowHours": 48
+  },
+  "requiredMeta": [
+    "description", "canonical", "og:title", "og:description", "og:type", "og:url",
+    "og:image", "twitter:card", "twitter:title", "twitter:description", "twitter:image",
+    "article:published_time", "article:modified_time", "article:section"
+  ],
+  "requiredStructuredData": [
+    "headline", "description", "image", "datePublished", "dateModified",
+    "author", "publisher", "mainEntityOfPage", "articleSection", "keywords"
+  ],
+  "internalLinking": {
+    "rule": "Include at least two genuinely relevant internal article links. Prefer one matching the primary credit-union function and one matching the technology; never fabricate relevance merely to satisfy the count.",
+    "avoid": ["self-links", "generic homepage-only related coverage", "repeated anchor text", "unrelated links"]
+  }
+}
