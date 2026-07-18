@@ -1394,4 +1394,109 @@
   };
 
   renderAlerts();
+
+  // Privacy-safe publication analytics. Never include email addresses, names, or article text.
+  const initPublicationAnalytics = () => {
+    const sendEvent = (name, params = {}) => {
+      if (typeof window.gtag !== 'function') return;
+      const cleanParams = Object.fromEntries(
+        Object.entries(params).filter(([, value]) => value !== undefined && value !== null && value !== '')
+      );
+      window.gtag('event', name, cleanParams);
+    };
+
+    const body = document.body;
+    const path = window.location.pathname;
+    const articleBody = document.querySelector('.article-body');
+    const isArticle = Boolean(articleBody);
+    const section =
+      body.dataset.section ||
+      (path.startsWith('/news/') ? 'news' : path.startsWith('/insight-') ? 'insights' : 'site');
+    const tags = Array.from(document.querySelectorAll('.article-tags .tag'))
+      .map((tag) => tag.textContent.trim())
+      .filter(Boolean)
+      .slice(0, 5)
+      .join('|');
+    const canonical = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+    const title = document.querySelector('h1')?.textContent?.trim() || document.title;
+    const dimensions = {
+      content_section: section,
+      content_title: title.slice(0, 100),
+      content_path: path,
+      canonical_url: canonical,
+      editorial_function: body.dataset.editorialFunction || 'unclassified',
+      technology: body.dataset.technology || 'unclassified',
+      content_format: body.dataset.contentFormat || (isArticle ? 'article' : 'page'),
+      audience: body.dataset.audience || 'all',
+      maturity: body.dataset.maturity || 'unclassified',
+      article_tags: tags || 'untagged'
+    };
+
+    if (isArticle) {
+      sendEvent('article_view', dimensions);
+
+      let activeSeconds = 0;
+      let engagementSent = false;
+      window.setInterval(() => {
+        if (document.visibilityState !== 'visible') return;
+        activeSeconds += 1;
+        if (!engagementSent && activeSeconds >= 30) {
+          engagementSent = true;
+          sendEvent('engaged_reader', { ...dimensions, engagement_seconds: 30 });
+        }
+      }, 1000);
+
+      const sentDepths = new Set();
+      const recordDepth = () => {
+        const available = document.documentElement.scrollHeight - window.innerHeight;
+        if (available <= 0) return;
+        const percent = Math.round((window.scrollY / available) * 100);
+        [25, 50, 75, 90].forEach((depth) => {
+          if (percent >= depth && !sentDepths.has(depth)) {
+            sentDepths.add(depth);
+            sendEvent('scroll_depth', { ...dimensions, percent_scrolled: depth });
+          }
+        });
+      };
+      window.addEventListener('scroll', recordDepth, { passive: true });
+      recordDepth();
+    }
+
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href]');
+      if (!link) return;
+      const url = new URL(link.href, window.location.href);
+      const label = (link.textContent || link.getAttribute('aria-label') || '').trim().slice(0, 80);
+      const sameHost = url.hostname === window.location.hostname;
+      const inArticle = Boolean(link.closest('.article-body'));
+      const inRelated = Boolean(link.closest('.related-coverage'));
+      const isSubscribe =
+        /newsletter|subscribe/i.test(url.pathname + label) ||
+        (url.protocol === 'mailto:' && /subscribe/i.test(url.search + label));
+
+      if (isSubscribe) {
+        sendEvent('newsletter_intent', {
+          ...dimensions,
+          link_location: inArticle ? 'article' : 'site',
+          link_label: label
+        });
+      }
+      if (inRelated && sameHost) {
+        sendEvent('related_content_click', {
+          ...dimensions,
+          destination_path: url.pathname,
+          link_label: label
+        });
+      } else if (!sameHost && url.protocol.startsWith('http')) {
+        sendEvent(inArticle ? 'source_click' : 'outbound_click', {
+          ...dimensions,
+          destination_host: url.hostname,
+          link_label: label
+        });
+      }
+    });
+  };
+
+  initPublicationAnalytics();
+
 })();
