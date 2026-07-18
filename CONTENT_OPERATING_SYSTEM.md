@@ -1,72 +1,24 @@
 # CreditUnionAI News Content Operating System
 
-## Core Approval Rule
-Tom approves content before it becomes part of the live editorial experience.
+## Core Publishing Rule
+CreditUnionAI News operates in automatic-production mode. Routine articles do not require Tom's approval.
 
-Default approach: use a Vercel preview first, then Tom decides where it should appear.
+Candidates must pass the source, confidence, originality, and quality hard stops in `automation/publishing-rules.json`. Passing stories publish directly to `main` and Vercel production. Failed candidates are logged with reasons instead of being routed for routine approval.
 
-## Preview-First Publishing Workflow
+## Automated Editorial Workflow
 
-### 1. Draft locally
-Sugerman drafts the article, image, metadata, and source notes locally.
+1. Gather credible developments from public sources.
+2. Normalize candidates using `automation/editorial-taxonomy.json`.
+3. Score newsworthiness, credit-union relevance, coverage gaps, originality, source quality, and urgency.
+4. Reject candidates that fail a hard stop or minimum score.
+5. Select a balanced weekly portfolio across functions, technologies, formats, audiences, and maturity levels.
+6. Generate the article, image, metadata, source notes, sitemap entry, and social distribution assets.
+7. Run link, markup, metadata, similarity, sourcing, and conflict checks.
+8. Commit successful packages directly to `main`; Vercel deploys production automatically.
+9. Append the published story to `automation/coverage-ledger.json`.
+10. Use the Monday analytics review to recommend adjustments to targets, weights, timing, and content mix.
 
-### 2. Create one full preview package
-Sugerman prepares the article, image, metadata, and page layout together as a single reviewable package.
-
-The preview package includes:
-- headline
-- article body
-- hero/card image
-- alt text
-- SEO/social metadata
-- source links or source notes
-- conflict/safety notes
-- proposed URL
-
-Tom should be able to approve or revise the article and image together from one Vercel preview link.
-
-Tom can reply:
-- `Preview it`
-- `Revise copy: ...`
-- `Revise image: ...`
-- `Hold`
-- `Reject`
-
-### 3. Push to a preview branch, not main
-Sugerman creates a branch like:
-- `preview/ai-acceptable-use-policy`
-- `preview/vendor-due-diligence-checklist`
-
-This triggers a Vercel Preview Deployment without changing the production site.
-
-### 4. Tom reviews the Vercel preview link
-Sugerman sends the Vercel preview URL in chat.
-
-Tom reviews it on phone/desktop and replies:
-- `Approve preview`
-- `Revise: ...`
-- `Reject`
-
-### 5. Placement decision
-After Tom approves the preview, Sugerman asks or recommends placement:
-- Publish article page only
-- Add to News page
-- Feature on Home page
-- Add to Insights page
-- Add to newsletter draft
-- Add to sitemap
-- Create LinkedIn post draft
-
-Tom can say:
-- `Put it on News`
-- `Put it on Home and News`
-- `Article page only for now`
-- `Hold for newsletter`
-
-### 6. Production publish
-Only after Tom approves preview + placement, Sugerman merges/pushes the final approved changes to `main`.
-
-Vercel production deploys from `main`.
+Infrastructure, templates, and site-wide design changes still use a branch and pull request. The automatic-production rule applies to validated editorial packages.
 
 ## Conflict-Safe Rules
 - Use public sources only.
@@ -156,5 +108,5 @@ Approved — article page only / Approved — put on News / Approved — put on 
 - Repo: `thomaschurchadams-eng/work-feel`
 - Hosting: Vercel
 - Site type: static HTML/CSS/JS
-- Preview publishing: push branch → Vercel Preview Deployment
-- Production publishing: merge/push to `main` → Vercel Production Deployment
+- Editorial publishing: validated article package → direct commit to `main` → Vercel Production Deployment
+- Infrastructure publishing: branch → pull request → merge to `main`
