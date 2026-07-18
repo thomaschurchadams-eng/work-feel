@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "privacy": {
+    "prohibitedParameters": ["email", "first_name", "last_name", "full_name", "article_text", "form_value"],
+    "rule": "Never send personally identifiable information or free-form user input to analytics."
+  },
+  "editorialDimensions": {
+    "content_section": ["news", "insights", "alerts", "site"],
+    "editorial_function": ["board-strategy", "lending-collections", "payments-deposits", "risk-compliance", "it-data-cybersecurity", "operations", "member-service", "marketing-growth", "finance-treasury", "hr-training", "vendor-management"],
+    "technology": ["generative-ai", "agents-automation", "fraud-analytics", "identity-biometrics", "core-api-cloud", "data-decisioning", "conversational-ai", "personalization", "realtime-embedded-finance", "workforce-learning", "regtech-monitoring", "privacy-security"],
+    "content_format": ["breaking-brief", "reported-news", "analysis", "case-study", "interview", "comparison", "checklist", "explainer", "data-brief", "opinion", "weekly-roundup"],
+    "audience": ["board", "executive", "functional-leader", "practitioner", "frontline"],
+    "maturity": ["breaking", "emerging", "practical-now", "scaling", "long-term"]
+  },
+  "events": {
+    "article_view": "A full News or Insights article loads.",
+    "engaged_reader": "The article remains visible for 30 active seconds.",
+    "scroll_depth": "The reader reaches 25, 50, 75 or 90 percent.",
+    "source_click": "The reader opens an external source from an article.",
+    "related_content_click": "The reader follows an internal related-coverage link.",
+    "newsletter_intent": "The reader clicks a newsletter or subscribe action.",
+    "outbound_click": "The reader opens another external destination."
+  },
+  "bodyDataAttributes": {
+    "data-section": "news or insights",
+    "data-editorial-function": "one editorial function id",
+    "data-technology": "one technology id",
+    "data-content-format": "one format id",
+    "data-audience": "one audience id",
+    "data-maturity": "one maturity id"
+  }
+}
