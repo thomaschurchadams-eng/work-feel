@@ -26,20 +26,12 @@ Good motifs:
 - payments/authentication visuals
 - governance/compliance review scenes
 
-## Image Creation Workflow
-1. Sugerman proposes an image concept with the article approval packet.
-2. Tom approves the article and image direction in chat.
-3. Sugerman generates or selects the image.
-4. Sugerman saves image in `/assets/` with a clean descriptive filename.
-5. Sugerman adds alt text and metadata.
-6. Tom approves before publish.
-
-## Approval Packet Image Fields
-- Image concept:
-- Proposed filename:
-- Alt text:
-- Style notes:
-- Risk notes: no real logos, no confidential data, no misleading claims
+## Automated Image Workflow
+1. Create or select an image that matches the article and publication style.
+2. Save it in `/assets/` with a descriptive lowercase kebab-case filename.
+3. Add accurate alt text and social metadata.
+4. Validate that it contains no fake readable text, unauthorized logos, confidential data, distorted people, or misleading product representations.
+5. Include it in the same production package as the article. Routine images do not require human approval.
 
 ## Prompt Template
 Create a professional editorial image for a financial services publication about [TOPIC]. Show [SCENE]. Visual style: modern, credible, clean, executive-facing, realistic but lightly stylized. Include subtle abstract AI/data network elements. No readable text, no logos, no brand marks, no distorted faces or hands. Color palette: navy, blue, white, muted gold accents. Aspect ratio 16:9.
