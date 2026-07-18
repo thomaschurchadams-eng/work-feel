@@ -1,6 +1,46 @@
   (function () {
   const alertsData = [
     {
+      label: 'Member Experience',
+      headline: 'Visa Opens AI Financial Assistant Pilot to U.S. Issuers in August',
+      summary:
+        'Visa announced on July 14 that its AI Financial Assistant will be available to U.S. financial institutions for pilot in August. The white-label service brings personalized spending insights and natural-language guidance into issuer apps and can support actions such as locking a card or setting alerts.',
+      impact:
+        'Credit unions should ask Visa and digital-banking providers about pilot eligibility, pricing, integration responsibilities and the data used to ground recommendations. Before launch, define which actions require step-up authentication, test response accuracy and accessibility, preserve staff escalation paths, and monitor complaints, enrollment, task completion and member outcomes.',
+      sourceName: 'Visa',
+      sourceUrl:
+        'https://investor.visa.com/news/news-details/2026/Visa-Introduces-AI-Financial-Assistant-Helping-Banks-Guide-Customers-from-Insight-to-Action/default.aspx',
+      date: 'Jul 18, 2026',
+      slug: 'visa-ai-financial-assistant-us-issuer-pilot'
+    },
+    {
+      label: 'Lending Technology',
+      headline: 'Fuse Launches Free AI-Generated Application Portal for Credit Unions',
+      summary:
+        'Fuse announced on July 14 that the base version of its AI-generated point-of-sale and account-opening portal is free for credit unions, with optional automation features priced per application. Fuse said the system uses a credit union’s website to generate a branded, mobile-first application portal.',
+      impact:
+        'The pricing model gives credit unions a lower-commitment way to test a member application experience, but “free” should not shorten due diligence. Teams should validate security, accessibility, data ownership, fair-lending and adverse-action workflows, integration and support costs, service levels, exit rights, and the per-application economics of every optional feature before production use.',
+      sourceName: 'Fuse via Business Wire',
+      sourceUrl:
+        'https://www.businesswire.com/news/home/20260714196885/en/The-first-AI-generated-POS-built-for-Credit-Unions-costs-nothing-to-run-and-nothing-to-own',
+      date: 'Jul 18, 2026',
+      slug: 'fuse-free-ai-generated-credit-union-application-portal'
+    },
+    {
+      label: 'Data & Access',
+      headline: 'Grasshopper Becomes First Bank Listed in Anthropic’s MCP Directory',
+      summary:
+        'Grasshopper Bank announced on July 14 that it became the first bank listed in Anthropic’s MCP Directory. Business clients can discover its Narmi-built connector inside Claude and authorize read-only access to account and transaction data through OAuth 2.0 without sharing banking credentials.',
+      impact:
+        'Credit unions evaluating AI data connectors should treat them as a new digital-banking access channel: define permitted data, consent and revocation flows, token duration, logging, rate limits and third-party incident duties. Initial access should remain read-only, with clear member-facing explanations and monitoring for unusual queries, data leakage and unauthorized connections.',
+      sourceName: 'Grasshopper Bank',
+      sourceUrl:
+        'https://www.grasshopper.bank/who-we-are/blog/grasshopper-becomes-the-first-bank-listed-in-anthropics-mcp-directory/',
+      date: 'Jul 18, 2026',
+      slug: 'grasshopper-first-bank-anthropic-mcp-directory'
+    },
+
+    {
       label: 'Identity & Fraud',
       headline: 'Fourthline and Veridas Agree to Merge AI Identity and Compliance Platforms',
       summary:
