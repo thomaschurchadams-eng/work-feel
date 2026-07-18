@@ -1395,6 +1395,24 @@
 
   renderAlerts();
 
+
+  const addArticleNewsletterCta = () => {
+    const articleBody = document.querySelector('.article-body');
+    if (!articleBody || document.querySelector('.article-newsletter-cta')) return;
+    const callout = document.createElement('aside');
+    callout.className = 'article-newsletter-cta';
+    callout.setAttribute('aria-label', 'CreditUnionAI Weekly Briefing');
+    callout.innerHTML = `
+      <p class="eyebrow">CreditUnionAI Weekly Briefing</p>
+      <h2>Turn this story into a weekly operating advantage.</h2>
+      <p>Get the most important AI developments and practical credit-union implications every Friday.</p>
+      <a class="btn btn-primary" href="/newsletter.html?source=article-bottom">See the briefing</a>
+    `;
+    articleBody.insertAdjacentElement('afterend', callout);
+  };
+
+  addArticleNewsletterCta();
+
   // Privacy-safe publication analytics. Never include email addresses, names, or article text.
   const initPublicationAnalytics = () => {
     const sendEvent = (name, params = {}) => {

@@ -1055,3 +1055,26 @@ textarea:focus {
     padding: 60px 0;
   }
 }
+
+
+/* Weekly briefing and conversion */
+.newsletter-hero { background:linear-gradient(135deg,#0b1f3b,#123b5a); color:#fff; padding:72px 0; }
+.newsletter-hero-grid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr); gap:42px; align-items:center; }
+.newsletter-hero h1 { font-size:clamp(36px,5vw,58px); line-height:1.05; max-width:780px; margin:10px 0 18px; }
+.newsletter-hero .lead { color:#dbe8f2; font-size:1.12rem; max-width:720px; }
+.eyebrow { color:var(--teal); font-size:.78rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.newsletter-benefits { display:flex; flex-wrap:wrap; gap:10px; margin:24px 0; }
+.newsletter-benefits span { border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:7px 12px; font-size:.9rem; }
+.signup-note { color:#b9c9d7; font-size:.86rem; margin-top:12px; max-width:560px; }
+.newsletter-preview { background:#fff; color:var(--text); padding:28px; border-radius:18px; box-shadow:var(--shadow); }
+.newsletter-preview h2 { color:var(--navy); margin:8px 0 14px; }
+.newsletter-preview ul { padding-left:20px; display:grid; gap:10px; }
+.newsletter-archive { display:grid; gap:18px; }
+.newsletter-empty { background:#fff; border:1px solid var(--soft-gray); border-radius:var(--radius); padding:28px; }
+.newsletter-edition { max-width:780px; background:#fff; border-radius:18px; padding:clamp(24px,5vw,52px); box-shadow:var(--shadow); }
+.newsletter-edition section { margin-top:32px; }
+.newsletter-edition ul,.newsletter-edition ol { padding-left:24px; }
+.newsletter-cta,.article-newsletter-cta { background:#0f294b; color:#fff; border-radius:16px; padding:24px; margin-top:32px; }
+.newsletter-cta h2,.article-newsletter-cta h2 { color:#fff; }
+.article-newsletter-cta p { color:#dbe8f2; margin:7px 0 16px; }
+@media (max-width:800px) { .newsletter-hero-grid { grid-template-columns:1fr; } }

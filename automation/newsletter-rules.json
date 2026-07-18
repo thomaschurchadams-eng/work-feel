@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "title": "CreditUnionAI Weekly Briefing",
+  "cadence": "Friday",
+  "routePattern": "/newsletter/{yyyy-mm-dd}.html",
+  "selection": {
+    "lookbackDays": 7,
+    "leadStoryCount": 1,
+    "additionalStoryCount": {"min": 3, "max": 5},
+    "alertCount": {"min": 2, "max": 4},
+    "minimumDistinctFunctions": 3,
+    "minimumDistinctTechnologies": 2,
+    "hardStops": ["duplicate angles", "unsupported claims", "all stories from one function", "generic AI summary without credit-union implications"]
+  },
+  "sections": [
+    "The week in one minute",
+    "Lead story",
+    "What changed",
+    "What credit unions should do next",
+    "Worth your time",
+    "Subscribe"
+  ],
+  "voice": {
+    "lengthWords": {"min": 600, "max": 1000},
+    "principles": ["concise", "reported", "operational", "varied", "human editorial voice"],
+    "avoid": ["article-summary collage", "repetitive intros", "inflated urgency", "AI-written framing", "unsourced predictions"]
+  },
+  "publication": {
+    "archiveIndex": "/newsletter.html",
+    "archiveMarkers": ["<!-- NEWSLETTER_ARCHIVE_START -->", "<!-- NEWSLETTER_ARCHIVE_END -->"],
+    "updateSitemaps": true,
+    "emailProviderRequiredForSending": true,
+    "publishWebEditionWithoutProvider": true
+  }
+}
