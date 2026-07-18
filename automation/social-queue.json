@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "status": "draft-generation-enabled",
+  "items": [],
+  "requiredFields": ["id","articleUrl","platform","format","copy","scheduledFor","status"],
+  "formats": ["launch-post","executive-takeaway","carousel-outline","role-specific-excerpt","weekly-roundup"],
+  "note": "The newsroom creates and schedules five differentiated LinkedIn packages each week. Direct posting activates when a callable social publishing connector is available."
+}
