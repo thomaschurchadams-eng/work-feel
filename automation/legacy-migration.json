@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-18",
+  "policy": {
+    "batchSize": 1,
+    "preserveUrls": true,
+    "requireValidation": [
+      "news-package",
+      "analytics",
+      "seo"
+    ],
+    "productionVerification": true
+  },
+  "summary": {
+    "total": 39,
+    "completed": 1,
+    "pending": 38
+  },
+  "articles": [
+    {
+      "path": "insight-ai-already-in-use.html",
+      "status": "pending"
+    },
+    {
+      "path": "insight-prioritizing-ai-automation.html",
+      "status": "pending"
+    },
+    {
+      "path": "insight-credit-union-ai-use-cases.html",
+      "status": "pending"
+    },
+    {
+      "path": "insight-ces-ai-financial-services.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/osfi-agentic-ai-risk-controls-credit-unions.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/jack-henry-ai-features.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-execution-gap-credit-unions-2026.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-personalization-digital-banking.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/chatgpt-health-ai-banking-front-door.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/klarna-ai-customer-service-limits.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/fis-fraud-suite-upgrade.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/microsoft-optimind-ai-governance-credit-unions.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/senate-ai-hearing-credit-unions-2026.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-credit-union-member-messaging.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/fintechs-raise-expectations.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/informed-iq-investment-ai-loan-fraud.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ces-2026-ai-financial-infrastructure.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-agents-bank-compliance-credit-unions.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-acceptable-use-policy-credit-unions.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ncr-voyix-ai-tools.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-contact-summaries.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-powered-fraud-tools.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/core-banking-ai-addons.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-chat-virtual-assistants.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/fednow-instant-payments-growth.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-document-automation-bottlenecks.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ncuas-ai-opportunities-risks.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-governance-board-expectations.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/posh-ai-operating-procedures-banking.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/velocity-ccu-point-predictive-autopass.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/chatgpt-5-2-credit-union-uses.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/banks-ai-agents-daily-operations-credit-unions.html",
+      "status": "completed",
+      "migratedAt": "2026-07-18",
+      "dimensions": {
+        "section": "news",
+        "editorialFunction": "operations",
+        "technology": "agents-automation",
+        "contentFormat": "reported-news",
+        "audience": "functional-leader",
+        "maturity": "scaling"
+      }
+    },
+    {
+      "path": "news/ai-benchmarks-credit-unions-2026.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-vendor-due-diligence-checklist-credit-unions.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ncua-ai-resource-center.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/visa-mastercard-ai-fraud.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/ai-enhanced-underwriting-decisioning.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/credit-union-board-ai-risk-oversight.html",
+      "status": "pending"
+    },
+    {
+      "path": "news/vibe-coding-banking-credit-unions.html",
+      "status": "pending"
+    }
+  ]
+}
