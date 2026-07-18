@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-18",
+  "baseUrl": "https://creditunionainews.com",
+  "minimumArticles": 4,
+  "hubs": [
+    {
+      "id": "lending-ai",
+      "type": "function",
+      "label": "Lending & Collections AI",
+      "description": "Practical reporting on AI underwriting, document automation, fraud controls and collections workflows for credit-union lending teams.",
+      "function": "lending-collections",
+      "technology": "decisioning-underwriting",
+      "articles": [
+        {
+          "path": "news/ai-enhanced-underwriting-decisioning.html",
+          "title": "AI-Enhanced Underwriting and Decisioning",
+          "summary": "How credit unions can evaluate AI-supported lending decisions."
+        },
+        {
+          "path": "news/informed-iq-investment-ai-loan-fraud.html",
+          "title": "Informed.IQ Investment Highlights AI Loan-Fraud Controls",
+          "summary": "What automated verification means for lending operations."
+        },
+        {
+          "path": "news/velocity-ccu-point-predictive-autopass.html",
+          "title": "Velocity CCU Uses Predictive Autopass",
+          "summary": "A credit-union lending implementation with operational lessons."
+        },
+        {
+          "path": "news/ai-document-automation-bottlenecks.html",
+          "title": "AI Document Automation Targets Bottlenecks",
+          "summary": "Where workflow automation can reduce lending friction."
+        },
+        {
+          "path": "news/ai-vendor-due-diligence-checklist-credit-unions.html",
+          "title": "AI Vendor Due-Diligence Checklist",
+          "summary": "Controls to apply before buying lending AI."
+        }
+      ]
+    },
+    {
+      "id": "fraud-security-ai",
+      "type": "function",
+      "label": "Fraud, Identity & Cybersecurity AI",
+      "description": "Current AI developments affecting fraud prevention, identity, disputes, cybersecurity and member protection.",
+      "function": "it-data-cybersecurity",
+      "technology": "fraud-identity",
+      "articles": [
+        {
+          "path": "news/visa-mastercard-ai-fraud.html",
+          "title": "Visa and Mastercard Expand AI Fraud Tools",
+          "summary": "What network-level AI changes mean for credit unions."
+        },
+        {
+          "path": "news/ai-powered-fraud-tools.html",
+          "title": "AI-Powered Fraud Tools for Credit Unions",
+          "summary": "Operational considerations for detection and response."
+        },
+        {
+          "path": "news/fis-fraud-suite-upgrade.html",
+          "title": "FIS Upgrades Its Fraud Suite",
+          "summary": "Vendor-roadmap implications for fraud teams."
+        },
+        {
+          "path": "news/informed-iq-investment-ai-loan-fraud.html",
+          "title": "AI Verification Targets Loan Fraud",
+          "summary": "The intersection of lending automation and identity risk."
+        },
+        {
+          "path": "news/ai-vendor-due-diligence-checklist-credit-unions.html",
+          "title": "AI Vendor Due-Diligence Checklist",
+          "summary": "Questions for security, data and third-party risk reviews."
+        }
+      ]
+    },
+    {
+      "id": "operations-ai",
+      "type": "function",
+      "label": "Credit Union Operations AI",
+      "description": "AI agents, workflow automation, document processing and operating-model changes for credit-union leaders.",
+      "function": "operations",
+      "technology": "agents-automation",
+      "articles": [
+        {
+          "path": "news/banks-ai-agents-daily-operations-credit-unions.html",
+          "title": "Major Banks Move AI Agents Into Daily Operations",
+          "summary": "Control lessons for credit unions deploying digital workers."
+        },
+        {
+          "path": "news/posh-ai-operating-procedures-banking.html",
+          "title": "Posh AI Brings Operating Procedures Into Banking Workflows",
+          "summary": "How embedded guidance changes frontline execution."
+        },
+        {
+          "path": "news/ai-contact-summaries.html",
+          "title": "AI Contact Summaries Move Into Service Operations",
+          "summary": "Benefits and controls for automated documentation."
+        },
+        {
+          "path": "news/ai-document-automation-bottlenecks.html",
+          "title": "AI Document Automation Targets Bottlenecks",
+          "summary": "Where automation can improve throughput."
+        },
+        {
+          "path": "insight-prioritizing-ai-automation.html",
+          "title": "How to Prioritize AI Automation",
+          "summary": "A durable framework for selecting operational use cases."
+        }
+      ]
+    },
+    {
+      "id": "compliance-governance",
+      "type": "function",
+      "label": "AI Compliance & Governance",
+      "description": "Board oversight, model governance, regulatory developments and vendor controls for responsible credit-union AI.",
+      "function": "risk-compliance",
+      "technology": "governance-risk",
+      "articles": [
+        {
+          "path": "news/ncua-ai-resource-center.html",
+          "title": "NCUA AI Resource Center",
+          "summary": "Regulatory resources for credit-union AI programs."
+        },
+        {
+          "path": "news/ncuas-ai-opportunities-risks.html",
+          "title": "NCUA on AI Opportunities and Risks",
+          "summary": "What the regulator’s posture means operationally."
+        },
+        {
+          "path": "news/credit-union-board-ai-risk-oversight.html",
+          "title": "Credit-Union Board AI Risk Oversight",
+          "summary": "Questions directors should ask management."
+        },
+        {
+          "path": "news/ai-governance-board-expectations.html",
+          "title": "AI Governance and Board Expectations",
+          "summary": "How oversight responsibilities are evolving."
+        },
+        {
+          "path": "news/ai-acceptable-use-policy-credit-unions.html",
+          "title": "An AI Acceptable-Use Policy for Credit Unions",
+          "summary": "A practical foundation for workforce AI controls."
+        },
+        {
+          "path": "news/ai-vendor-due-diligence-checklist-credit-unions.html",
+          "title": "AI Vendor Due-Diligence Checklist",
+          "summary": "Contracting and control questions for third parties."
+        }
+      ]
+    },
+    {
+      "id": "member-experience-ai",
+      "type": "function",
+      "label": "Member Experience AI",
+      "description": "AI personalization, virtual assistants, messaging and service workflows shaping the credit-union member experience.",
+      "function": "member-service",
+      "technology": "personalization-service",
+      "articles": [
+        {
+          "path": "news/ai-personalization-digital-banking.html",
+          "title": "AI Personalization in Digital Banking",
+          "summary": "How relevance and privacy intersect in member journeys."
+        },
+        {
+          "path": "news/ai-chat-virtual-assistants.html",
+          "title": "AI Chat and Virtual Assistants",
+          "summary": "Operational lessons for member-service deployments."
+        },
+        {
+          "path": "news/ai-credit-union-member-messaging.html",
+          "title": "AI in Credit-Union Member Messaging",
+          "summary": "Controls for useful, trustworthy communication."
+        },
+        {
+          "path": "news/chatgpt-health-ai-banking-front-door.html",
+          "title": "ChatGPT Health and the Banking Front Door",
+          "summary": "How consumer AI could reshape service expectations."
+        },
+        {
+          "path": "news/fintechs-raise-expectations.html",
+          "title": "Fintechs Raise Member Expectations",
+          "summary": "Competitive implications for credit-union experience teams."
+        }
+      ]
+    },
+    {
+      "id": "ai-agents-automation",
+      "type": "technology",
+      "label": "AI Agents & Automation",
+      "description": "Coverage of agentic AI, digital workers and workflow automation across credit-union functions.",
+      "function": "operations",
+      "technology": "agents-automation",
+      "articles": [
+        {
+          "path": "news/banks-ai-agents-daily-operations-credit-unions.html",
+          "title": "Major Banks Move AI Agents Into Daily Operations",
+          "summary": "A control model for agents with system access."
+        },
+        {
+          "path": "news/ai-agents-bank-compliance-credit-unions.html",
+          "title": "AI Agents Are Coming to Banking",
+          "summary": "What compliance teams need to prepare."
+        },
+        {
+          "path": "news/osfi-agentic-ai-risk-controls-credit-unions.html",
+          "title": "OSFI Highlights Agentic-AI Risk Controls",
+          "summary": "Lessons from prudential guidance."
+        },
+        {
+          "path": "news/ai-document-automation-bottlenecks.html",
+          "title": "AI Document Automation Targets Bottlenecks",
+          "summary": "Where autonomous workflows can create value."
+        },
+        {
+          "path": "insight-prioritizing-ai-automation.html",
+          "title": "How to Prioritize AI Automation",
+          "summary": "A framework for selecting high-value processes."
+        }
+      ]
+    },
+    {
+      "id": "ai-fraud-identity",
+      "type": "technology",
+      "label": "AI Fraud & Identity Technology",
+      "description": "Technology updates in AI fraud detection, identity verification and member-protection systems.",
+      "function": "it-data-cybersecurity",
+      "technology": "fraud-identity",
+      "articles": [
+        {
+          "path": "news/visa-mastercard-ai-fraud.html",
+          "title": "Visa and Mastercard Expand AI Fraud Tools",
+          "summary": "Network technology and credit-union implications."
+        },
+        {
+          "path": "news/fis-fraud-suite-upgrade.html",
+          "title": "FIS Upgrades Its Fraud Suite",
+          "summary": "A vendor-platform update for fraud leaders."
+        },
+        {
+          "path": "news/ai-powered-fraud-tools.html",
+          "title": "AI-Powered Fraud Tools",
+          "summary": "A practical overview for credit unions."
+        },
+        {
+          "path": "news/informed-iq-investment-ai-loan-fraud.html",
+          "title": "AI Verification Targets Loan Fraud",
+          "summary": "Automated document and identity checks."
+        }
+      ]
+    },
+    {
+      "id": "generative-ai",
+      "type": "technology",
+      "label": "Generative AI for Credit Unions",
+      "description": "Generative-AI platforms, assistants and practical use cases for credit-union teams.",
+      "function": "board-strategy",
+      "technology": "generative-ai",
+      "articles": [
+        {
+          "path": "news/chatgpt-5-2-credit-union-uses.html",
+          "title": "ChatGPT 5.2: Credit-Union Uses",
+          "summary": "Practical implications of a major model update."
+        },
+        {
+          "path": "insight-ai-already-in-use.html",
+          "title": "AI Is Already in Use",
+          "summary": "How credit unions can discover and govern existing adoption."
+        },
+        {
+          "path": "insight-credit-union-ai-use-cases.html",
+          "title": "Credit-Union AI Use Cases",
+          "summary": "A cross-functional view of valuable applications."
+        },
+        {
+          "path": "news/ai-credit-union-member-messaging.html",
+          "title": "AI in Member Messaging",
+          "summary": "Where generative AI meets communications risk."
+        },
+        {
+          "path": "news/ai-acceptable-use-policy-credit-unions.html",
+          "title": "An AI Acceptable-Use Policy",
+          "summary": "Workforce guardrails for generative tools."
+        }
+      ]
+    },
+    {
+      "id": "ai-governance-risk",
+      "type": "technology",
+      "label": "AI Governance & Model Risk",
+      "description": "Policies, oversight structures, benchmarks and risk controls for scaling AI responsibly.",
+      "function": "risk-compliance",
+      "technology": "governance-risk",
+      "articles": [
+        {
+          "path": "news/microsoft-optimind-ai-governance-credit-unions.html",
+          "title": "Microsoft Optimind and AI Governance",
+          "summary": "What new governance tooling may mean for institutions."
+        },
+        {
+          "path": "news/ai-benchmarks-credit-unions-2026.html",
+          "title": "AI Benchmarks for Credit Unions",
+          "summary": "Measures leaders can use to track responsible adoption."
+        },
+        {
+          "path": "news/credit-union-board-ai-risk-oversight.html",
+          "title": "Board AI Risk Oversight",
+          "summary": "A director-level control agenda."
+        },
+        {
+          "path": "news/ai-governance-board-expectations.html",
+          "title": "AI Governance and Board Expectations",
+          "summary": "How accountability is evolving."
+        },
+        {
+          "path": "news/ai-vendor-due-diligence-checklist-credit-unions.html",
+          "title": "AI Vendor Due-Diligence Checklist",
+          "summary": "Third-party model and data controls."
+        }
+      ]
+    },
+    {
+      "id": "ai-personalization-service",
+      "type": "technology",
+      "label": "AI Personalization & Service",
+      "description": "AI technology for digital banking, contact centers, member communication and individualized service.",
+      "function": "member-service",
+      "technology": "personalization-service",
+      "articles": [
+        {
+          "path": "news/ai-personalization-digital-banking.html",
+          "title": "AI Personalization in Digital Banking",
+          "summary": "Technology choices and member-trust considerations."
+        },
+        {
+          "path": "news/ai-chat-virtual-assistants.html",
+          "title": "AI Chat and Virtual Assistants",
+          "summary": "Deployment patterns for financial institutions."
+        },
+        {
+          "path": "news/ncr-voyix-ai-tools.html",
+          "title": "NCR Voyix Adds AI Tools",
+          "summary": "Vendor capabilities for service and operations."
+        },
+        {
+          "path": "news/ai-contact-summaries.html",
+          "title": "AI Contact Summaries",
+          "summary": "Automation for service documentation."
+        },
+        {
+          "path": "news/klarna-ai-customer-service-limits.html",
+          "title": "Klarna Shows the Limits of AI Customer Service",
+          "summary": "Why human escalation still matters."
+        }
+      ]
+    }
+  ]
+}
