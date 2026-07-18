@@ -6,16 +6,17 @@ Publish six to eight credible, varied CreditUnionAI News stories each week and c
 
 ## Standard run
 
-1. Read the taxonomy, source registry, publishing rules, coverage ledger, voice guide, image guidelines, newsroom state, current homepage, news index, sitemap, and recent article files.
+1. Read the taxonomy, editorial router, source registry, publishing rules, coverage ledger, image taxonomy, image ledger, voice guide, image guidelines, newsroom state, current homepage, News and Insights indexes, sitemap, and recent article files.
 2. Search the prior 24–48 hours across every beat. Prefer primary documents and developments with a clear credit-union operating implication.
 3. Build a candidate set before drafting. Normalize every candidate to the taxonomy and score it with the coverage engine.
 4. Select only candidates that meet the score and hard-stop rules. Never write a weak story merely to meet volume.
-5. Choose the correct format and length. Reporting must lead with the verified event; analysis must add original synthesis rather than paraphrase sources.
-6. Create a clean kebab-case article URL under `/news/`. Include title, description, canonical URL, Open Graph metadata, date, byline, tags, source links, related coverage, and accessible image treatment.
-7. Update `news.html`, the homepage when appropriate, `sitemap.xml`, `sitemap.txt`, `coverage-ledger.json`, `newsroom-state.json`, and `social-queue.json` in the same commit.
-8. Validate links, paths, HTML structure, dates, metadata, duplication, attribution, source support, and conflict rules.
-9. Commit the complete validated package directly to `main` with `Publish: <headline>`.
-10. Confirm the Vercel production deployment is READY and verify the article URL. If deployment or verification fails, fix or revert only the new package; do not leave a broken production state.
+5. Apply `editorial-routing.json`. Send time-sensitive events and reporting to News; send durable playbooks, comparisons, explainers, case studies, interviews, and evergreen synthesis to Insights.
+6. Create the correct clean URL: `/news/{slug}.html` for News or `/insight-{slug}.html` for Insights. Include title, description, canonical URL, Open Graph metadata, date, byline, tags, source links, related coverage, and accessible image treatment.
+7. Generate three materially different image concepts using `image-taxonomy.json`, score them against `image-ledger.json`, and use only the highest-scoring concept that passes every hard rule.
+8. Update the appropriate section index, the homepage when warranted, `sitemap.xml`, `sitemap.txt`, `coverage-ledger.json`, `image-ledger.json`, `newsroom-state.json`, and `social-queue.json` in the same commit.
+9. Validate links, paths, HTML structure, dates, metadata, duplication, attribution, source support, routing, image novelty, and conflict rules.
+10. Commit the complete validated package directly to `main` with `Publish: <headline>`.
+11. Confirm the Vercel production deployment is READY and verify the article URL and correct section placement. If deployment or verification fails, fix or revert only the new package; do not leave a broken production state.
 
 ## Breaking-news run
 

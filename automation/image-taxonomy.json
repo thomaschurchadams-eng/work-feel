@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "mediums":["editorial-photography","tactile-paper-cut","dimensional-3d","architectural-isometric","mixed-media-collage","ink-and-linocut","refined-data-abstraction","macro-still-life","cinematic-conceptual","soft-editorial-illustration"],
+  "subjects":["member-interaction","frontline-workflow","documents-and-controls","physical-metaphor","operations-environment","abstract-data-system","financial-object-study","architecture-and-infrastructure","human-machine-handoff","risk-and-security"],
+  "compositions":["wide-environmental","tight-close-up","overhead-flat-lay","asymmetric-editorial","layered-depth","split-comparison","single-object-negative-space","diagonal-motion","modular-grid","foreground-background-tension"],
+  "perspectives":["eye-level","overhead","low-angle","isometric","macro","through-glass","long-lens","cutaway"],
+  "palettes":["navy-teal","amber-charcoal","emerald-cream","burgundy-sand","cobalt-coral","slate-lime","monochrome-ink","plum-gold","terracotta-sky","graphite-electric-yellow"],
+  "lighting":["soft-daylight","high-contrast-studio","cinematic-side-light","diffused-overcast","warm-practical","graphic-flat-light","rim-light","natural-window-light"],
+  "textures":["clean-photographic","paper-fiber","matte-clay","polished-metal","newsprint-grain","frosted-glass","fabric-and-wood","ink-wash"],
+  "hardRules": {
+    "sameMediumConsecutiveMax":1,
+    "samePaletteInLastFiveMax":2,
+    "blueDominantInLastFiveMax":2,
+    "boardroomInLastTenMax":1,
+    "exactCombinationLookback":20,
+    "prohibited":["glowing-brain","robot-handshake","generic-holographic-bank","fake-readable-text","unauthorized-logo","recognizable-public-figure","distorted-hands-or-faces"]
+  },
+  "selection":"Generate three concepts with different mediums and subjects. Score all three against the ledger. Use the highest-scoring concept that passes every hard rule."
+}

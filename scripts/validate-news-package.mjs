@@ -9,7 +9,7 @@ for(const file of files){
     doctype:/<!DOCTYPE html>/i.test(html),
     title:/<title>[^<]{12,}<\/title>/i.test(html),
     description:/<meta name="description" content="[^"]{50,160}"/i.test(html),
-    canonical:/<link rel="canonical" href="https:\/\/creditunionainews\.com\/news\/[^"]+"/i.test(html),
+    canonical:/<link rel="canonical" href="https:\/\/creditunionainews\.com\/(?:news\/[^\"]+|insight-[^\"]+)"/i.test(html),
     ogTitle:/<meta property="og:title"/i.test(html),
     publishedDate:/<time[^>]*datetime="\d{4}-\d{2}-\d{2}"/i.test(html)||/class="article-date"[^>]*>[^<]*\d{4}/i.test(html),
     byline:/CreditUnionAI News Staff/i.test(html),

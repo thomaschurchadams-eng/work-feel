@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "principle": "Route by reader promise, not by whether AI helped write it. News explains what changed; Insights helps readers make a durable decision or perform a task.",
+  "news": {
+    "index":"news.html",
+    "pathPattern":"news/{slug}.html",
+    "formats":["breaking-brief","reported-news","weekly-roundup"],
+    "conditionalFormats":["analysis","data-brief"],
+    "criteria":["time-sensitive development","new regulation or official guidance","verified company or credit-union action","transaction, launch, incident, hearing, filing, or measurable event"],
+    "minimumCurrentEventWeight":0.6
+  },
+  "insights": {
+    "index":"insights.html",
+    "pathPattern":"insight-{slug}.html",
+    "formats":["case-study","interview","comparison","checklist","explainer","opinion"],
+    "conditionalFormats":["analysis","data-brief"],
+    "criteria":["durable operating guidance","original synthesis across multiple sources","role-specific playbook","decision framework","implementation or measurement guidance"],
+    "minimumDurableValueWeight":0.6
+  },
+  "conflictRule":"When both qualify, use News if the headline depends on something that happened recently; use Insights if the article remains useful after the triggering event is no longer news.",
+  "homepage":"Feature the strongest current item from either section; do not treat homepage placement as a third content type."
+}
