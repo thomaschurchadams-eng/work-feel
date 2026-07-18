@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "mode": "automatic-production",
+  "humanApprovalRequired": false,
+  "weeklyTargets": {"siteStoriesMin":6,"siteStoriesMax":8,"linkedinPosts":5},
+  "selection": {
+    "minimumScore": 62,
+    "maximumSamePrimaryFunctionPerWeek": 2,
+    "maximumSamePrimaryTechnologyPerWeek": 2,
+    "minimumDistinctFunctionsPerWeek": 5,
+    "minimumDistinctFormatsPerWeek": 3,
+    "lookbackDays": 28
+  },
+  "hardStops": [
+    "missing-public-source-url",
+    "source-tier-below-2",
+    "confidence-below-0.7",
+    "unsupported-claim",
+    "confidential-or-nonpublic-information",
+    "undisclosed-sponsored-content",
+    "duplicate-or-near-duplicate"
+  ],
+  "productionBehavior": "Candidates that pass hard stops and score at or above the minimum publish directly to main. Failed candidates are logged with reasons and do not request routine human approval.",
+  "weights": {
+    "newsworthiness":0.22,
+    "creditUnionRelevance":0.23,
+    "coverageGap":0.20,
+    "originality":0.15,
+    "sourceQuality":0.10,
+    "urgency":0.10
+  }
+}

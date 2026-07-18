@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
+  "articles": []
+}
