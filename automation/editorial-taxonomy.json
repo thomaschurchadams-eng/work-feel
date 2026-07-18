@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "functions": [
+    {"id":"board-strategy","label":"Board and Strategy","targetShare":0.09},
+    {"id":"lending-collections","label":"Lending and Collections","targetShare":0.11},
+    {"id":"payments-deposits","label":"Payments and Deposits","targetShare":0.11},
+    {"id":"risk-compliance","label":"Risk and Compliance","targetShare":0.11},
+    {"id":"it-data-cybersecurity","label":"IT, Data and Cybersecurity","targetShare":0.12},
+    {"id":"operations","label":"Operations","targetShare":0.10},
+    {"id":"member-service","label":"Member Service","targetShare":0.09},
+    {"id":"marketing-growth","label":"Marketing and Growth","targetShare":0.07},
+    {"id":"finance-treasury","label":"Finance and Treasury","targetShare":0.06},
+    {"id":"hr-training","label":"HR and Training","targetShare":0.06},
+    {"id":"vendor-management","label":"Vendor Management","targetShare":0.08}
+  ],
+  "technologies": [
+    {"id":"generative-ai","label":"Generative AI and Copilots"},
+    {"id":"agents-automation","label":"AI Agents and Automation"},
+    {"id":"fraud-analytics","label":"Fraud and Behavioral Analytics"},
+    {"id":"identity-biometrics","label":"Identity and Biometrics"},
+    {"id":"core-api-cloud","label":"Core Modernization, APIs and Cloud"},
+    {"id":"data-decisioning","label":"Data Platforms and Decision Intelligence"},
+    {"id":"conversational-ai","label":"Conversational AI"},
+    {"id":"personalization","label":"Personalization and Predictive Analytics"},
+    {"id":"realtime-embedded-finance","label":"Real-Time Payments and Embedded Finance"},
+    {"id":"workforce-learning","label":"Workforce AI and Learning Technology"},
+    {"id":"regtech-monitoring","label":"Regtech and Third-Party Monitoring"},
+    {"id":"privacy-security","label":"Privacy-Enhancing and Security Technology"}
+  ],
+  "formats": ["breaking-brief","reported-news","analysis","case-study","interview","comparison","checklist","explainer","data-brief","opinion","weekly-roundup"],
+  "maturity": ["breaking","emerging","practical-now","scaling","long-term"],
+  "angles": ["opportunity","risk","implementation","results","governance","member-impact","workforce-impact"],
+  "audiences": ["board","executive","functional-leader","practitioner","frontline"],
+  "institutionSizes": ["small","midsize","large","all"]
+}
