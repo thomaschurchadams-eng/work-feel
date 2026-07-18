@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "editions": [],
+  "lastGeneratedAt": null,
+  "emailSending": {
+    "status": "not-connected",
+    "rule": "Publish the web edition and archive it, but do not claim it was emailed until a provider confirms delivery."
+  }
+}
