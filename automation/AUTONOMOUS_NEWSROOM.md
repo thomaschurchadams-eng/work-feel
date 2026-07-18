@@ -54,3 +54,8 @@ Read `automation/seo-policy.json` and `automation/SEO_GOOGLE_NEWS.md` for every 
 ## Friday weekly briefing
 
 On Friday, after the standard article decision, read `automation/newsletter-rules.json`, `automation/NEWSLETTER.md` and `automation/newsletter-state.json`. Create the weekly web edition from the prior seven days when enough qualified coverage exists. Publish it at `/newsletter/YYYY-MM-DD.html`, update the archive markers in `newsletter.html`, both standard sitemaps and newsletter state, then run `node scripts/validate-newsletter.mjs <edition-file>`. Publish the web edition without claiming email delivery while the provider status is `not-connected`.
+
+
+## Autonomous retention
+
+Read `automation/retention-policy.json` and `automation/RETENTION.md` during the first Monday growth review each month. Run retention maintenance in apply mode, commit safe deletions and ledger/report updates automatically, validate the site, and verify production. Do not request approval. Never treat missing analytics, search or backlink evidence as zero; published content must satisfy every evidence gate before deletion. Roll back the cleanup commit if production verification fails.
