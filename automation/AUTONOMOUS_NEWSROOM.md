@@ -39,3 +39,8 @@ Create one LinkedIn package for each weekday, but do not make every post an arti
 ## Failure behavior
 
 Do not publish when evidence, confidence, attribution, or technical validation fails. Record the candidate and exact reason in `newsroom-state.json`. Routine failures should not request human approval. Notify Tom only for repeated pipeline failures, production breakage, potential legal/reputational risk, or an editorial-policy decision the rules do not resolve.
+
+
+## Analytics package
+
+Read `automation/analytics-measurement.json` and `automation/ANALYTICS.md` for every full article. Add valid editorial analytics attributes to the article `body` using taxonomy IDs for section, function, technology, format, audience and maturity. Run `node scripts/validate-analytics.mjs <article-file>` before publishing. The shared tracker records article view, engaged reading, scroll depth, source clicks, related-coverage clicks, newsletter intent and outbound clicks. Never send names, email addresses, form values, article text or other personally identifiable/free-form data to analytics.
