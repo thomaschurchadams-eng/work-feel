@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "weights": {
+    "operationalMateriality": 25,
+    "creditUnionSpecificity": 20,
+    "sourceQuality": 20,
+    "novelty": 15,
+    "timeliness": 10,
+    "crossFunctionalValue": 10
+  },
+  "thresholds": {
+    "ignore": 0,
+    "trackerOnly": 60,
+    "alert": 78,
+    "news": 84
+  },
+  "hardStops": [
+    "No attributable source URL",
+    "Duplicate fingerprint inside the deduplication window",
+    "Pure marketing language with no specific product, policy, integration or operating change",
+    "No credible credit-union implication",
+    "Publication date cannot be verified"
+  ],
+  "fingerprintFields": [
+    "normalizedOwner",
+    "normalizedTitle",
+    "eventDate",
+    "sourceUrl"
+  ],
+  "routingTieBreakers": [
+    "Prefer tracker-only when evidence is real but narrow.",
+    "Prefer Alert when time-sensitive awareness is the primary value.",
+    "Prefer News when multiple sources or material operational implications require explanation.",
+    "Prefer Insight only when the analysis remains useful beyond the triggering event."
+  ]
+}
