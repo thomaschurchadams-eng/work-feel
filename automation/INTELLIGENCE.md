@@ -19,3 +19,5 @@ Vendor marketing remains labeled `vendor-claim` until corroborated. Tracker incl
 Update the registries, affected public pages and related topic hubs in the same production package. Run `node scripts/validate-intelligence.mjs` before publication and verify the live tracker records after deployment.
 
 Production release: the Intelligence layer is validated in preview and deployed from `main`.
+
+The monitoring backbone is defined in `automation/INTELLIGENCE_MONITORING.md`; its accepted public changes appear at `/intelligence/changes.html`.
