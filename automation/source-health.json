@@ -2,10 +2,10 @@
   "version": 1,
   "updatedAt": "2026-07-19",
   "lastFullArchiveCheck": null,
-  "lastRecentCheck": null,
+  "lastRecentCheck": "2026-07-19T16:08:00-04:00",
   "summary": {
-    "checkedUrls": 0,
-    "healthy": 0,
+    "checkedUrls": 4,
+    "healthy": 4,
     "redirected": 0,
     "temporarilyUnavailable": 0,
     "removed": 0,
@@ -13,5 +13,38 @@
     "superseded": 0,
     "unverified": 0
   },
-  "sources": []
+  "sources": [
+    {
+      "url": "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+      "status": "healthy",
+      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "articlePaths": [
+        "news/osfi-agentic-ai-risk-controls-credit-unions.html"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/world/canada/regulator-cited-anthropics-claude-mythos-warning-banks-cyber-risks-email-2026-07-13/",
+      "status": "healthy",
+      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "articlePaths": [
+        "news/osfi-agentic-ai-risk-controls-credit-unions.html"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/business/finance/wall-street-banks-ramp-up-digital-assistants-bid-to-win-productivity-race-2026-07-13/",
+      "status": "healthy",
+      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "articlePaths": [
+        "news/banks-ai-agents-daily-operations-credit-unions.html"
+      ]
+    },
+    {
+      "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/corporate-communications/pdf/2026/BANKING_2026_AIPulseSurvey_Q2.pdf",
+      "status": "healthy",
+      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "articlePaths": [
+        "news/banks-ai-agents-daily-operations-credit-unions.html"
+      ]
+    }
+  ]
 }
