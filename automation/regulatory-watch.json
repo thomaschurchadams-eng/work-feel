@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-19",
+  "description": "Dated regulatory and supervisory signals relevant to credit-union AI. This is an editorial tracker, not legal advice.",
+  "records": [
+    {
+      "id": "ncua-ai-resources",
+      "authority": "National Credit Union Administration",
+      "jurisdiction": "United States — federal credit unions",
+      "functions": [
+        "board-strategy",
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "governance-risk",
+        "generative-ai"
+      ],
+      "lastReviewed": "2026-07-19",
+      "developments": [
+        {
+          "date": "2026-07-19",
+          "type": "resource",
+          "title": "NCUA AI resources",
+          "summary": "Centralized agency materials on artificial intelligence considerations for credit unions.",
+          "status": "active",
+          "sourceUrl": "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/credit-union-artificial-intelligence-ai-resources",
+          "relatedCoverage": "news/ncua-ai-resource-center.html"
+        }
+      ]
+    },
+    {
+      "id": "ncua-ai-risk",
+      "authority": "National Credit Union Administration",
+      "jurisdiction": "United States — federal credit unions",
+      "functions": [
+        "board-strategy",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "governance-risk"
+      ],
+      "lastReviewed": "2026-07-19",
+      "developments": [
+        {
+          "date": "2026-07-19",
+          "type": "supervisory-signal",
+          "title": "AI opportunities and risks",
+          "summary": "Existing newsroom coverage tracks the agency’s public framing of benefits, consumer protection and governance risks.",
+          "status": "monitoring",
+          "sourceUrl": "https://ncua.gov/newsroom",
+          "relatedCoverage": "news/ncuas-ai-opportunities-risks.html"
+        }
+      ]
+    },
+    {
+      "id": "osfi-agentic-ai",
+      "authority": "Office of the Superintendent of Financial Institutions",
+      "jurisdiction": "Canada — federally regulated financial institutions",
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "technologies": [
+        "agents-automation",
+        "governance-risk"
+      ],
+      "lastReviewed": "2026-07-19",
+      "developments": [
+        {
+          "date": "2026-07-14",
+          "type": "guidance",
+          "title": "Agentic AI risk controls",
+          "summary": "A prudential signal covering access, data, incident response and third-party resilience with transferable lessons for credit unions.",
+          "status": "informational",
+          "sourceUrl": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library",
+          "relatedCoverage": "news/osfi-agentic-ai-risk-controls-credit-unions.html"
+        }
+      ]
+    },
+    {
+      "id": "us-senate-ai-finance",
+      "authority": "United States Senate",
+      "jurisdiction": "United States",
+      "functions": [
+        "board-strategy",
+        "risk-compliance",
+        "member-service"
+      ],
+      "technologies": [
+        "governance-risk",
+        "decisioning-underwriting"
+      ],
+      "lastReviewed": "2026-07-19",
+      "developments": [
+        {
+          "date": "2026-07-19",
+          "type": "hearing",
+          "title": "AI, financial services and consumer protection",
+          "summary": "Existing coverage tracks congressional attention to affordability, innovation, accountability and consumer protection.",
+          "status": "monitoring",
+          "sourceUrl": "https://www.banking.senate.gov/hearings",
+          "relatedCoverage": "news/senate-ai-hearing-credit-unions-2026.html"
+        }
+      ]
+    }
+  ]
+}

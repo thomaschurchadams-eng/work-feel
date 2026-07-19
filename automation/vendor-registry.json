@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-19",
+  "description": "Evidence-backed vendor change records supporting CreditUnionAI News coverage. Inclusion is not endorsement.",
+  "vendors": [
+    {
+      "id": "jack-henry",
+      "name": "Jack Henry",
+      "category": "Core and digital banking",
+      "capabilities": [
+        "digital banking",
+        "member messaging",
+        "workflow automation",
+        "anomaly detection"
+      ],
+      "functions": [
+        "operations",
+        "member-service",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "agents-automation",
+        "personalization-service",
+        "fraud-identity"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "product-update",
+          "summary": "Tracker initialized from existing reporting on AI features associated with digital-banking workflows.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.jackhenry.com/newsroom",
+          "relatedCoverage": "news/jack-henry-ai-features.html"
+        }
+      ]
+    },
+    {
+      "id": "fis",
+      "name": "FIS",
+      "category": "Payments and financial technology",
+      "capabilities": [
+        "fraud detection",
+        "behavioral analytics",
+        "payments risk"
+      ],
+      "functions": [
+        "payments-deposits",
+        "it-data-cybersecurity",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "decisioning-underwriting"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "product-update",
+          "summary": "Tracker initialized from existing reporting on AI and machine-learning fraud capabilities.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.fisglobal.com/en/about-us/media-room",
+          "relatedCoverage": "news/fis-fraud-suite-upgrade.html"
+        }
+      ]
+    },
+    {
+      "id": "ncr-voyix",
+      "name": "NCR Voyix",
+      "category": "Digital commerce and self-service",
+      "capabilities": [
+        "ATM operations",
+        "cash forecasting",
+        "maintenance workflows"
+      ],
+      "functions": [
+        "operations",
+        "finance-treasury",
+        "member-service"
+      ],
+      "technologies": [
+        "agents-automation",
+        "predictive-analytics"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "product-update",
+          "summary": "Tracker initialized from existing reporting on AI-assisted branch and ATM operations.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.ncrvoyix.com/about/newsroom",
+          "relatedCoverage": "news/ncr-voyix-ai-tools.html"
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "name": "Visa",
+      "category": "Card network",
+      "capabilities": [
+        "transaction risk",
+        "fraud detection",
+        "issuer alerts"
+      ],
+      "functions": [
+        "payments-deposits",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "predictive-analytics"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "product-update",
+          "summary": "Tracker initialized from existing reporting on network-level AI fraud capabilities.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://usa.visa.com/about-visa/newsroom.html",
+          "relatedCoverage": "news/visa-mastercard-ai-fraud.html"
+        }
+      ]
+    },
+    {
+      "id": "mastercard",
+      "name": "Mastercard",
+      "category": "Card network",
+      "capabilities": [
+        "transaction risk",
+        "fraud detection",
+        "cross-border risk"
+      ],
+      "functions": [
+        "payments-deposits",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "predictive-analytics"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "product-update",
+          "summary": "Tracker initialized from existing reporting on network-level AI fraud capabilities.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.mastercard.com/news/",
+          "relatedCoverage": "news/visa-mastercard-ai-fraud.html"
+        }
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "category": "Enterprise technology",
+      "capabilities": [
+        "AI governance",
+        "agent management",
+        "enterprise productivity"
+      ],
+      "functions": [
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "operations"
+      ],
+      "technologies": [
+        "governance-risk",
+        "agents-automation",
+        "generative-ai"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "governance-update",
+          "summary": "Tracker initialized from existing analysis of enterprise AI governance tooling.",
+          "evidenceLevel": "reported",
+          "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/",
+          "relatedCoverage": "news/microsoft-optimind-ai-governance-credit-unions.html"
+        }
+      ]
+    },
+    {
+      "id": "posh-ai",
+      "name": "Posh AI",
+      "category": "Conversational and workflow AI",
+      "capabilities": [
+        "banking assistants",
+        "operating procedures",
+        "employee enablement"
+      ],
+      "functions": [
+        "member-service",
+        "operations",
+        "hr-training"
+      ],
+      "technologies": [
+        "generative-ai",
+        "agents-automation",
+        "personalization-service"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "product-update",
+          "summary": "Tracker initialized from existing reporting on AI-supported banking operating procedures.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.posh.ai/news",
+          "relatedCoverage": "news/posh-ai-operating-procedures-banking.html"
+        }
+      ]
+    },
+    {
+      "id": "point-predictive",
+      "name": "Point Predictive",
+      "category": "Lending risk technology",
+      "capabilities": [
+        "loan fraud detection",
+        "predictive risk",
+        "automated decision support"
+      ],
+      "functions": [
+        "lending-collections",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "decisioning-underwriting",
+        "predictive-analytics"
+      ],
+      "lastReviewed": "2026-07-19",
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "type": "deployment",
+          "summary": "Tracker initialized from existing coverage of a credit-union lending risk implementation.",
+          "evidenceLevel": "reported",
+          "sourceUrl": "https://pointpredictive.com/news/",
+          "relatedCoverage": "news/velocity-ccu-point-predictive-autopass.html"
+        }
+      ]
+    }
+  ]
+}
