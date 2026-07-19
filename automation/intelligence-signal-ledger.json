@@ -2,5 +2,26 @@
   "version": 1,
   "updatedAt": "2026-07-19",
   "description": "Append-only fingerprints for verified intelligence signals. Prevents duplicate tracker updates and repetitive coverage.",
-  "signals": []
+  "signals": [
+    {
+      "fingerprint": "visa|visa-introduces-platform-for-stablecoin-minting-movement-and-management|2026-07-16|https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22041.html",
+      "detectedAt": "2026-07-19T15:14:00-04:00",
+      "sourceId": "visa-news",
+      "sourceUrl": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22041.html",
+      "title": "Visa Introduces Platform for Stablecoin Minting, Movement and Management",
+      "eventDate": "2026-07-16",
+      "decision": "no-action",
+      "reason": "Verified payments infrastructure announcement, but it contains no substantive AI development or specific AI operating implication for credit unions."
+    },
+    {
+      "fingerprint": "americas-credit-unions|bringing-expert-perspective-to-ncuas-credit-union-roundtables|2026-07-17|https://www.americascreditunions.org/news-media/news/bringing-expert-perspective-ncuas-credit-union-roundtables",
+      "detectedAt": "2026-07-19T15:14:00-04:00",
+      "sourceId": "cuna-news",
+      "sourceUrl": "https://www.americascreditunions.org/news-media/news/bringing-expert-perspective-ncuas-credit-union-roundtables",
+      "title": "Bringing expert perspective to NCUA's credit union roundtables",
+      "eventDate": "2026-07-17",
+      "decision": "no-action",
+      "reason": "Event recap mentions artificial intelligence but reports no specific policy, product, supervisory expectation or operating change; below the tracker threshold."
+    }
+  ]
 }

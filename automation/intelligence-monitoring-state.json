@@ -1,115 +1,115 @@
 {
   "version": 1,
   "updatedAt": "2026-07-19",
-  "lastSuccessfulRun": null,
-  "lastAttemptedRun": null,
+  "lastSuccessfulRun": "2026-07-19T15:14:00-04:00",
+  "lastAttemptedRun": "2026-07-19T15:14:00-04:00",
   "sourceState": {
     "ncua-ai-resources": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "ncua-newsroom": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "cfpb-newsroom": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "federal-reserve-news": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "occ-news": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "unavailable"
     },
     "fdic-news": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "senate-banking-hearings": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "jack-henry-news": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "unavailable"
     },
     "fis-media": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "unavailable"
     },
     "ncr-voyix-news": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "unavailable"
     },
     "visa-news": {
-      "lastChecked": null,
-      "lastChanged": null,
-      "lastFingerprint": null,
-      "status": "pending"
+      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChanged": "2026-07-16",
+      "lastFingerprint": "visa|visa-introduces-platform-for-stablecoin-minting-movement-and-management|2026-07-16|https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22041.html",
+      "status": "ok"
     },
     "mastercard-news": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "microsoft-365-blog": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "point-predictive-news": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     },
     "cuna-news": {
-      "lastChecked": null,
-      "lastChanged": null,
-      "lastFingerprint": null,
-      "status": "pending"
+      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChanged": "2026-07-17",
+      "lastFingerprint": "americas-credit-unions|bringing-expert-perspective-to-ncuas-credit-union-roundtables|2026-07-17|https://www.americascreditunions.org/news-media/news/bringing-expert-perspective-ncuas-credit-union-roundtables",
+      "status": "ok"
     },
     "nafcu-legacy-reference": {
-      "lastChecked": null,
+      "lastChecked": "2026-07-19T15:14:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "pending"
+      "status": "ok"
     }
   },
   "metrics": {
-    "runs": 0,
-    "sourcesChecked": 0,
-    "signalsDetected": 0,
+    "runs": 1,
+    "sourcesChecked": 16,
+    "signalsDetected": 2,
     "signalsAccepted": 0,
     "trackerUpdates": 0,
     "alertsPublished": 0,
     "articlesPublished": 0,
     "duplicatesRejected": 0,
-    "weakSignalsRejected": 0
+    "weakSignalsRejected": 2
   }
 }
