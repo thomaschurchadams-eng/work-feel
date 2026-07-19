@@ -17,3 +17,5 @@ For every verified development, decide whether it warrants a tracker-only update
 Vendor marketing remains labeled `vendor-claim` until corroborated. Tracker inclusion is not endorsement. Regulatory summaries link to the primary authority and are not legal advice.
 
 Update the registries, affected public pages and related topic hubs in the same production package. Run `node scripts/validate-intelligence.mjs` before publication and verify the live tracker records after deployment.
+
+Production release: the Intelligence layer is validated in preview and deployed from `main`.
