@@ -1078,3 +1078,15 @@ textarea:focus {
 .newsletter-cta h2,.article-newsletter-cta h2 { color:#fff; }
 .article-newsletter-cta p { color:#dbe8f2; margin:7px 0 16px; }
 @media (max-width:800px) { .newsletter-hero-grid { grid-template-columns:1fr; } }
+
+
+.article-correction {
+  margin: 22px 0;
+  padding: 16px 18px;
+  border-left: 5px solid var(--teal);
+  background: #eef9f7;
+  border-radius: 8px;
+}
+.article-correction[data-correction-type="correction"] { border-left-color: #b45309; background: #fff7ed; }
+.article-correction[data-correction-type="retraction"] { border-left-color: #b91c1c; background: #fef2f2; }
+.article-correction time { display: block; font-weight: 700; margin-bottom: 4px; }

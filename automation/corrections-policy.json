@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-19",
+  "purpose": "Keep an autonomous publication accurate without silently changing substantive reporting.",
+  "cadence": {
+    "recentPublishedDays": 30,
+    "recentCheck": "daily",
+    "highTrafficCheck": "daily",
+    "fullArchiveCheck": "weekly",
+    "intelligenceSources": "per assigned source cadence"
+  },
+  "classifications": {
+    "maintenance": {
+      "visibleNotice": false,
+      "examples": [
+        "typography that does not change meaning",
+        "formatting",
+        "accessible alt text",
+        "broken internal navigation"
+      ],
+      "requirements": [
+        "commit history",
+        "source-health update when applicable"
+      ]
+    },
+    "update": {
+      "visibleNotice": true,
+      "noticeLabel": "Update",
+      "examples": [
+        "source URL moved",
+        "primary source added context",
+        "status changed after publication",
+        "new evidence materially improves the article without making it originally false"
+      ],
+      "requirements": [
+        "timestamp",
+        "plain-language description",
+        "dateModified",
+        "ledger entry"
+      ]
+    },
+    "correction": {
+      "visibleNotice": true,
+      "noticeLabel": "Correction",
+      "examples": [
+        "incorrect fact",
+        "misattribution",
+        "materially misleading wording",
+        "wrong date, number, organization or status"
+      ],
+      "requirements": [
+        "timestamp",
+        "what was wrong",
+        "correct information",
+        "supporting source",
+        "dateModified",
+        "ledger entry"
+      ]
+    },
+    "retraction": {
+      "visibleNotice": true,
+      "noticeLabel": "Retraction",
+      "examples": [
+        "central claim is unsupported",
+        "source was fraudulent",
+        "article cannot be corrected without replacing its premise"
+      ],
+      "requirements": [
+        "preserve URL",
+        "remove article from active listings and recommendation modules",
+        "prominent explanation",
+        "noindex",
+        "ledger entry",
+        "sitemap and intelligence updates"
+      ]
+    }
+  },
+  "automation": {
+    "approvalRequired": false,
+    "allowSilentSubstantiveRewrite": false,
+    "preservePublishedUrl": true,
+    "missingSourceIsNotProofOfError": true,
+    "archiveUnavailableEvidence": true,
+    "minimumCorroborationForCorrection": 1,
+    "correctionSourcePreference": [
+      "primary authority",
+      "primary company record",
+      "court or regulatory record",
+      "high-quality independent reporting"
+    ],
+    "rollbackOnValidationOrProductionFailure": true
+  },
+  "noticeMarkup": {
+    "containerClass": "article-correction",
+    "dataAttribute": "data-correction-type",
+    "allowedTypes": [
+      "update",
+      "correction",
+      "retraction"
+    ],
+    "requiredElements": [
+      "time",
+      "summary"
+    ]
+  },
+  "sourceHealthStatuses": [
+    "healthy",
+    "redirected",
+    "temporarily-unavailable",
+    "removed",
+    "contradicted",
+    "superseded",
+    "unverified"
+  ],
+  "escalation": [
+    "Conflicting authoritative sources cannot be reconciled automatically.",
+    "A legal, safety or reputational issue cannot be corrected confidently from attributable evidence.",
+    "Production rollback fails."
+  ]
+}
