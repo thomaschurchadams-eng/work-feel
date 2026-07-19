@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-19",
+  "lastSuccessfulRun": null,
+  "lastAttemptedRun": null,
+  "sourceState": {
+    "ncua-ai-resources": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "ncua-newsroom": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "cfpb-newsroom": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "federal-reserve-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "occ-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "fdic-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "senate-banking-hearings": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "jack-henry-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "fis-media": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "ncr-voyix-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "visa-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "mastercard-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "microsoft-365-blog": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "point-predictive-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "cuna-news": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    },
+    "nafcu-legacy-reference": {
+      "lastChecked": null,
+      "lastChanged": null,
+      "lastFingerprint": null,
+      "status": "pending"
+    }
+  },
+  "metrics": {
+    "runs": 0,
+    "sourcesChecked": 0,
+    "signalsDetected": 0,
+    "signalsAccepted": 0,
+    "trackerUpdates": 0,
+    "alertsPublished": 0,
+    "articlesPublished": 0,
+    "duplicatesRejected": 0,
+    "weakSignalsRejected": 0
+  }
+}
