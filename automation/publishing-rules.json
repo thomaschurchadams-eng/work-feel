@@ -1,8 +1,12 @@
 {
-  "version": 1,
+  "version": 2,
   "mode": "automatic-production",
   "humanApprovalRequired": false,
-  "weeklyTargets": {"siteStoriesMin":6,"siteStoriesMax":8,"linkedinPosts":5},
+  "weeklyTargets": {
+    "siteStoriesMin": 6,
+    "siteStoriesMax": 8,
+    "linkedinPosts": 5
+  },
   "selection": {
     "minimumScore": 62,
     "maximumSamePrimaryFunctionPerWeek": 2,
@@ -22,11 +26,28 @@
   ],
   "productionBehavior": "Candidates that pass hard stops and score at or above the minimum publish directly to main. Failed candidates are logged with reasons and do not request routine human approval.",
   "weights": {
-    "newsworthiness":0.22,
-    "creditUnionRelevance":0.23,
-    "coverageGap":0.20,
-    "originality":0.15,
-    "sourceQuality":0.10,
-    "urgency":0.10
+    "newsworthiness": 0.22,
+    "creditUnionRelevance": 0.23,
+    "coverageGap": 0.2,
+    "originality": 0.15,
+    "sourceQuality": 0.1,
+    "urgency": 0.1
+  },
+  "standardCycle": {
+    "fullArticleTarget": 1,
+    "alertTarget": 3,
+    "minimumCandidatesToEvaluate": 12,
+    "minimumDistinctBeatsToSearch": 6,
+    "candidateLookbackHours": 72,
+    "continueAfterRejectedCandidate": true,
+    "continueAfterDuplicateCandidate": true,
+    "fallbackOrder": [
+      "next-highest-ranked-current-event",
+      "durable-multi-source-insight",
+      "credit-union-specific-case-study",
+      "data-led-explainer"
+    ],
+    "completionRule": "Do not end a standard cycle after the first rejected or duplicate candidate. Continue through the ranked pool until one full article and three distinct alerts publish, or every qualified candidate in the expanded search has been exhausted.",
+    "shortfallRule": "Never weaken evidence or quality gates to fill a slot. When a target remains unfilled, record the candidates evaluated, rejection reason for each, beats and sources searched, and the exact evidence gap."
   }
 }
