@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18",
+  "updatedAt": "2026-07-20",
   "policy": {
     "batchSize": 1,
     "preserveUrls": true,
@@ -13,13 +13,22 @@
   },
   "summary": {
     "total": 39,
-    "completed": 1,
-    "pending": 38
+    "completed": 2,
+    "pending": 37
   },
   "articles": [
     {
       "path": "insight-ai-already-in-use.html",
-      "status": "pending"
+      "status": "completed",
+      "migratedAt": "2026-07-20",
+      "dimensions": {
+        "section": "insights",
+        "editorialFunction": "board-strategy",
+        "technology": "generative-ai",
+        "contentFormat": "analysis",
+        "audience": "executive",
+        "maturity": "practical-now"
+      }
     },
     {
       "path": "insight-prioritizing-ai-automation.html",

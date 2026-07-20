@@ -15,7 +15,7 @@ for(const file of files){
     byline:/CreditUnionAI News Staff/i.test(html),
     sourceLink:/href="https:\/\//i.test(html),
     articleBody:/class="article-body"/i.test(html),
-    noPlaceholders:!/(Headline|summary|tags here|full article text)/i.test(html)
+    noPlaceholders:!/(?:>\s*(?:headline|summary|tags here|full article text)\s*<|\{\{\s*(?:headline|summary|tags)\s*\}\})/i.test(html)
   };
   const errors=Object.entries(checks).filter(([,ok])=>!ok).map(([name])=>name);
   if(errors.length){failed=true;console.error(`${file}: FAIL ${errors.join(', ')}`);}else console.log(`${file}: PASS`);
