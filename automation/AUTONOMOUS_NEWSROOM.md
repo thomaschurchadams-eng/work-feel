@@ -7,13 +7,13 @@ Publish six to eight credible, varied CreditUnionAI News stories each week and c
 ## Standard run
 
 1. Read the taxonomy, editorial router, source registry, publishing rules, coverage ledger, image taxonomy, image ledger, voice guide, image guidelines, newsroom state, current homepage, News and Insights indexes, sitemap, and recent article files.
-2. Search the prior 24–48 hours across every beat. Prefer primary documents and developments with a clear credit-union operating implication.
-3. Build a candidate set before drafting. Normalize every candidate to the taxonomy and score it with the coverage engine.
-4. Select only candidates that meet the score and hard-stop rules. Never write a weak story merely to meet volume.
+2. Search the prior 24–72 hours across at least six distinct beats. Prefer primary documents and developments with a clear credit-union operating implication.
+3. Build a pool of at least 12 distinct candidates before drafting. Normalize every candidate to the taxonomy and score the complete pool with the coverage engine.
+4. Target one full News or Insights article and three distinct Alerts in each weekday standard cycle. A rejected, duplicate, or Alert-only candidate is a routing result, not the end of the run. Continue down the ranked pool until the targets are filled or every qualified candidate is exhausted. For the full article, fall back in order to the next current event, a durable multi-source Insight, a credit-union case study, then a data-led explainer. Never weaken evidence or quality gates merely to meet volume.
 5. Apply `editorial-routing.json`. Send time-sensitive events and reporting to News; send durable playbooks, comparisons, explainers, case studies, interviews, and evergreen synthesis to Insights.
 6. Create the correct clean URL: `/news/{slug}.html` for News or `/insight-{slug}.html` for Insights. Include title, description, canonical URL, Open Graph metadata, date, byline, tags, source links, related coverage, and accessible image treatment.
 7. Generate three materially different image concepts using `image-taxonomy.json`, score them against `image-ledger.json`, and use only the highest-scoring concept that passes every hard rule.
-8. Update the appropriate section index, the homepage when warranted, `sitemap.xml`, `sitemap.txt`, `coverage-ledger.json`, `image-ledger.json`, `newsroom-state.json`, and `social-queue.json` in the same commit.
+8. Update the appropriate section index, the homepage whenever any full article or Alert publishes, `sitemap.xml`, `sitemap.txt`, `coverage-ledger.json`, `image-ledger.json`, `newsroom-state.json`, and `social-queue.json` in the same commit. The homepage must visibly identify the newest publication, including an Alert when no newer full article exists.
 9. Validate links, paths, HTML structure, dates, metadata, duplication, attribution, source support, routing, image novelty, and conflict rules.
 10. Commit the complete validated package directly to `main` with `Publish: <headline>`.
 11. Confirm the Vercel production deployment is READY and verify the article URL and correct section placement. If deployment or verification fails, fix or revert only the new package; do not leave a broken production state.
@@ -38,7 +38,7 @@ Create one LinkedIn package for each weekday, but do not make every post an arti
 
 ## Failure behavior
 
-Do not publish when evidence, confidence, attribution, or technical validation fails. Record the candidate and exact reason in `newsroom-state.json`. Routine failures should not request human approval. Notify Tom only for repeated pipeline failures, production breakage, potential legal/reputational risk, or an editorial-policy decision the rules do not resolve.
+Do not publish when evidence, confidence, attribution, or technical validation fails. Record every evaluated candidate and exact rejection reason in `newsroom-state.json`, then continue to the next candidate. A standard cycle may finish below target only after the 12-candidate pool, expanded 72-hour search, fallback formats, and all qualified candidates have been exhausted. Record the shortfall as a degraded cycle with the beats and sources searched; do not describe it as a successful target cycle. Routine failures should not request human approval. Notify Tom only for repeated pipeline failures, production breakage, potential legal/reputational risk, or an editorial-policy decision the rules do not resolve.
 
 
 ## Analytics package
