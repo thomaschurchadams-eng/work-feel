@@ -827,6 +827,32 @@
   const preparedAlerts = getRecentAlerts(alertsData);
   const tickerAlerts = preparedAlerts.slice(0, 3);
 
+
+  const renderLatestHomepageAlert = () => {
+    const container = document.querySelector('#latest-alert');
+    const item = preparedAlerts[0];
+    if (!container || !item) return;
+
+    container.innerHTML = `
+      <div class="latest-alert-header">
+        <div>
+          <p class="eyebrow">Latest AI Newsroom Alert</p>
+          <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span><span class="latest-alert-date">${item.date}</span></div>
+        </div>
+        <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
+      </div>
+      <h2 id="latest-alert-heading">${item.headline}</h2>
+      <p class="latest-alert-summary">${item.summary}</p>
+      <p class="latest-alert-impact"><strong>What this means for credit unions:</strong> ${item.impact}</p>
+      <div class="latest-alert-actions">
+        <a class="link" href="/alerts/#${item.slug}">Read the Alert →</a>
+        <a class="link" href="${item.sourceUrl}" target="_blank" rel="noopener">Primary source: ${item.sourceName} ↗</a>
+      </div>
+    `;
+  };
+
+  renderLatestHomepageAlert();
+
   const normalizePath = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
 
   // Predefined fallback images for cards that do not declare their own artwork.
