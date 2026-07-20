@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19",
+  "updatedAt": "2026-07-20",
   "description": "Evidence-backed vendor change records supporting CreditUnionAI News coverage. Inclusion is not endorsement.",
   "vendors": [
     {
@@ -45,7 +45,8 @@
       "capabilities": [
         "fraud detection",
         "behavioral analytics",
-        "payments risk"
+        "payments risk",
+        "defensive software security"
       ],
       "functions": [
         "payments-deposits",
@@ -59,8 +60,16 @@
       "sources": [
         "https://www.fisglobal.com/en/about-us/media-room"
       ],
-      "lastReviewed": "2026-07-19",
+      "lastReviewed": "2026-07-20",
       "signals": [
+        {
+          "date": "2026-07-17",
+          "type": "partnership",
+          "summary": "FIS says it joined Anthropic's Project Glasswing and is testing Mythos 5 as an additional defensive-security layer for scanning and evaluating its own systems.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services",
+          "relatedCoverage": "alerts/index.html"
+        },
         {
           "date": "2026-07-19",
           "type": "product-update",

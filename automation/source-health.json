@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19",
+  "updatedAt": "2026-07-20",
   "lastFullArchiveCheck": null,
-  "lastRecentCheck": "2026-07-19T16:08:00-04:00",
+  "lastRecentCheck": "2026-07-20T06:08:00-04:00",
   "summary": {
-    "checkedUrls": 4,
-    "healthy": 4,
+    "checkedUrls": 5,
+    "healthy": 2,
     "redirected": 0,
-    "temporarilyUnavailable": 0,
+    "temporarilyUnavailable": 3,
     "removed": 0,
     "contradicted": 0,
     "superseded": 0,
@@ -15,33 +15,43 @@
   },
   "sources": [
     {
+      "url": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "articlePaths": [
+        "alerts/index.html",
+        "intelligence/vendors.html",
+        "intelligence/changes.html"
+      ]
+    },
+    {
       "url": "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
       "status": "healthy",
-      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "articlePaths": [
         "news/osfi-agentic-ai-risk-controls-credit-unions.html"
       ]
     },
     {
       "url": "https://www.reuters.com/world/canada/regulator-cited-anthropics-claude-mythos-warning-banks-cyber-risks-email-2026-07-13/",
-      "status": "healthy",
-      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "status": "temporarily-unavailable",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "articlePaths": [
         "news/osfi-agentic-ai-risk-controls-credit-unions.html"
       ]
     },
     {
       "url": "https://www.reuters.com/business/finance/wall-street-banks-ramp-up-digital-assistants-bid-to-win-productivity-race-2026-07-13/",
-      "status": "healthy",
-      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "status": "temporarily-unavailable",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "articlePaths": [
         "news/banks-ai-agents-daily-operations-credit-unions.html"
       ]
     },
     {
       "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/corporate-communications/pdf/2026/BANKING_2026_AIPulseSurvey_Q2.pdf",
-      "status": "healthy",
-      "lastChecked": "2026-07-19T16:08:00-04:00",
+      "status": "temporarily-unavailable",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "articlePaths": [
         "news/banks-ai-agents-daily-operations-credit-unions.html"
       ]

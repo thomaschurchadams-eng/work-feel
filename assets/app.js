@@ -1,6 +1,19 @@
   (function () {
   const alertsData = [
     {
+      label: 'Cybersecurity',
+      headline: 'FIS Tests Anthropic Mythos 5 on Its Own Financial Infrastructure',
+      summary:
+        'FIS announced on July 17 that it joined Anthropic\'s Project Glasswing and is testing Mythos 5 to scan and evaluate its own systems for software vulnerabilities. FIS said the defensive-security initiative is separate from its commercial deployment of Anthropic AI agents.',
+      impact:
+        'Credit unions that rely on FIS should ask which products and hosted environments are in scope, how discovered vulnerabilities are validated and prioritized, and when clients will be notified of findings that affect them. Vendor oversight should also cover human review of model findings, remediation service levels, audit evidence, incident escalation and compensating controls when fixes cannot be deployed immediately.',
+      sourceName: 'FIS',
+      sourceUrl:
+        'https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services',
+      date: 'Jul 20, 2026',
+      slug: 'fis-tests-anthropic-mythos-5-financial-infrastructure'
+    },
+    {
       label: 'Member Experience',
       headline: 'Visa Opens AI Financial Assistant Pilot to U.S. Issuers in August',
       summary:

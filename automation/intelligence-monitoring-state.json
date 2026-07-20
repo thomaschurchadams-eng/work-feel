@@ -1,95 +1,95 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19",
-  "lastSuccessfulRun": "2026-07-19T15:14:00-04:00",
-  "lastAttemptedRun": "2026-07-19T15:14:00-04:00",
+  "updatedAt": "2026-07-20",
+  "lastSuccessfulRun": "2026-07-20T06:08:00-04:00",
+  "lastAttemptedRun": "2026-07-20T06:08:00-04:00",
   "sourceState": {
     "ncua-ai-resources": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "ncua-newsroom": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "cfpb-newsroom": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "federal-reserve-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "occ-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "unavailable"
     },
     "fdic-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "senate-banking-hearings": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "jack-henry-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "unavailable"
     },
     "fis-media": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
-      "lastChanged": null,
-      "lastFingerprint": null,
-      "status": "unavailable"
+      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChanged": "2026-07-17",
+      "lastFingerprint": "fis|fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services|2026-07-17|https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services",
+      "status": "ok"
     },
     "ncr-voyix-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "unavailable"
     },
     "visa-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": "2026-07-16",
       "lastFingerprint": "visa|visa-introduces-platform-for-stablecoin-minting-movement-and-management|2026-07-16|https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22041.html",
       "status": "ok"
     },
     "mastercard-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "microsoft-365-blog": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "point-predictive-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
     },
     "cuna-news": {
-      "lastChecked": "2026-07-19T15:14:00-04:00",
+      "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": "2026-07-17",
       "lastFingerprint": "americas-credit-unions|bringing-expert-perspective-to-ncuas-credit-union-roundtables|2026-07-17|https://www.americascreditunions.org/news-media/news/bringing-expert-perspective-ncuas-credit-union-roundtables",
       "status": "ok"
@@ -102,12 +102,12 @@
     }
   },
   "metrics": {
-    "runs": 1,
-    "sourcesChecked": 16,
-    "signalsDetected": 2,
-    "signalsAccepted": 0,
-    "trackerUpdates": 0,
-    "alertsPublished": 0,
+    "runs": 2,
+    "sourcesChecked": 31,
+    "signalsDetected": 3,
+    "signalsAccepted": 1,
+    "trackerUpdates": 1,
+    "alertsPublished": 1,
     "articlesPublished": 0,
     "duplicatesRejected": 0,
     "weakSignalsRejected": 2
