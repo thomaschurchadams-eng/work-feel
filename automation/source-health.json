@@ -1,13 +1,13 @@
 {
   "version": 1,
   "updatedAt": "2026-07-20",
-  "lastFullArchiveCheck": null,
+  "lastFullArchiveCheck": "2026-07-20T08:25:00-04:00",
   "lastRecentCheck": "2026-07-20T06:08:00-04:00",
   "summary": {
-    "checkedUrls": 5,
-    "healthy": 2,
+    "checkedUrls": 28,
+    "healthy": 26,
     "redirected": 0,
-    "temporarilyUnavailable": 3,
+    "temporarilyUnavailable": 2,
     "removed": 0,
     "contradicted": 0,
     "superseded": 0,
@@ -15,19 +15,17 @@
   },
   "sources": [
     {
-      "url": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services",
+      "url": "https://ncua.gov/newsroom/press-release/2025/ncua-board-briefed-artificial-intelligence-post-exam-survey-results-and-central-liquidity-fund",
       "status": "healthy",
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
       "articlePaths": [
-        "alerts/index.html",
-        "intelligence/vendors.html",
-        "intelligence/changes.html"
+        "insight-ai-already-in-use.html"
       ]
     },
     {
       "url": "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
       "status": "healthy",
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
       "articlePaths": [
         "news/osfi-agentic-ai-risk-controls-credit-unions.html"
       ]
@@ -35,25 +33,212 @@
     {
       "url": "https://www.reuters.com/world/canada/regulator-cited-anthropics-claude-mythos-warning-banks-cyber-risks-email-2026-07-13/",
       "status": "temporarily-unavailable",
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
       "articlePaths": [
         "news/osfi-agentic-ai-risk-controls-credit-unions.html"
       ]
     },
     {
+      "url": "https://www.jackhenry.com/newsroom",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/jack-henry-ai-features.html"
+      ]
+    },
+    {
+      "url": "https://www.cutoday.info/",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ai-execution-gap-credit-unions-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.pymnts.com/",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ai-execution-gap-credit-unions-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.cuinsight.com/",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ai-execution-gap-credit-unions-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/business/business-leaders-agree-ai-is-future-they-just-wish-it-worked-right-now-2025-12-16/?utm_source=chatgpt.com",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/klarna-ai-customer-service-limits.html"
+      ]
+    },
+    {
+      "url": "https://www.fisglobal.com/en/about-us/media-room",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/fis-fraud-suite-upgrade.html"
+      ]
+    },
+    {
+      "url": "https://www.banking.senate.gov/newsroom/majority/chairman-scott-leads-ai-hearing-focused-on-affordability-american-innovation-and-national-security",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/senate-ai-hearing-credit-unions-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.banking.senate.gov/newsroom/minority/at-ai-hearing-warren-probes-witnesses-on-national-security-economic-risks-of-unregulated-big-tech",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/senate-ai-hearing-credit-unions-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.banking.senate.gov/download/rinehart-testimony-6-11-26",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/senate-ai-hearing-credit-unions-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.americascreditunions.org/issue/technology-and-emerging-issues",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/senate-ai-hearing-credit-unions-2026.html"
+      ]
+    },
+    {
+      "url": "https://nudge.larky.com",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ai-credit-union-member-messaging.html"
+      ]
+    },
+    {
+      "url": "https://www.wsj.com/articles/invictus-growth-partners-acquires-ai-based-fraud-detection-company-efe52047?utm_source=chatgpt.com",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/informed-iq-investment-ai-loan-fraud.html"
+      ]
+    },
+    {
+      "url": "https://ncua.gov/ai",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ai-acceptable-use-policy-credit-unions.html",
+        "news/ai-vendor-due-diligence-checklist-credit-unions.html"
+      ]
+    },
+    {
+      "url": "https://home.treasury.gov/system/files/136/Artificial-Intelligence-in-Financial-Services.pdf",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ai-acceptable-use-policy-credit-unions.html",
+        "news/ai-vendor-due-diligence-checklist-credit-unions.html"
+      ]
+    },
+    {
+      "url": "https://www.ncrvoyix.com/about/newsroom",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ncr-voyix-ai-tools.html"
+      ]
+    },
+    {
+      "url": "https://www.frbservices.org/financial-services/fednow",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/fednow-instant-payments-growth.html"
+      ]
+    },
+    {
+      "url": "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/credit-union-artificial-intelligence-ai-resources",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ncuas-ai-opportunities-risks.html",
+        "news/ncua-ai-resource-center.html"
+      ]
+    },
+    {
+      "url": "https://www.consumerfinancialserviceslawmonitor.com/",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ncuas-ai-opportunities-risks.html"
+      ]
+    },
+    {
+      "url": "https://www.gao.gov/",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/ncuas-ai-opportunities-risks.html"
+      ]
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20251217646720/en/How-Poshs-AI-Operating-Procedures-Redefine-Banking-Automation-with-Agentic-Reasoning?utm_source=chatgpt.com",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/posh-ai-operating-procedures-banking.html"
+      ]
+    },
+    {
+      "url": "https://www.finopotamus.com/post/velocity-community-credit-union-adopts-point-predictive-s-autopass-to-combat-all-forms-of-fraud?utm_source=chatgpt.com",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/velocity-ccu-point-predictive-autopass.html"
+      ]
+    },
+    {
       "url": "https://www.reuters.com/business/finance/wall-street-banks-ramp-up-digital-assistants-bid-to-win-productivity-race-2026-07-13/",
       "status": "temporarily-unavailable",
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
       "articlePaths": [
         "news/banks-ai-agents-daily-operations-credit-unions.html"
       ]
     },
     {
       "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/corporate-communications/pdf/2026/BANKING_2026_AIPulseSurvey_Q2.pdf",
-      "status": "temporarily-unavailable",
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
       "articlePaths": [
         "news/banks-ai-agents-daily-operations-credit-unions.html"
+      ]
+    },
+    {
+      "url": "https://usa.visa.com/about-visa/newsroom.html",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/visa-mastercard-ai-fraud.html"
+      ]
+    },
+    {
+      "url": "https://www.mastercard.com/news/",
+      "status": "healthy",
+      "lastChecked": "2026-07-20T08:25:00-04:00",
+      "articlePaths": [
+        "news/visa-mastercard-ai-fraud.html"
       ]
     }
   ]
