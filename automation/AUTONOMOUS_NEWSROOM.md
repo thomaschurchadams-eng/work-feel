@@ -2,60 +2,57 @@
 
 ## Objective
 
-Publish six to eight credible, varied CreditUnionAI News stories each week and create five differentiated LinkedIn packages. Routine validated articles publish directly to production without human approval.
+Publish reliable, credible CreditUnionAI News coverage directly to production without routine human approval. Reliability takes priority over bundling unrelated newsroom work into one run.
 
-## Standard run
+## Operating model
 
-1. Read the taxonomy, editorial router, source registry, publishing rules, coverage ledger, image taxonomy, image ledger, voice guide, image guidelines, newsroom state, current homepage, News and Insights indexes, sitemap, and recent article files.
-2. Search the prior 24–72 hours across at least six distinct beats. Prefer primary documents and developments with a clear credit-union operating implication.
-3. Build a pool of at least 12 distinct candidates before drafting. Normalize every candidate to the taxonomy and score the complete pool with the coverage engine.
-4. Target one full News or Insights article and three distinct Alerts in each weekday standard cycle. A rejected, duplicate, or Alert-only candidate is a routing result, not the end of the run. Continue down the ranked pool until the targets are filled or every qualified candidate is exhausted. For the full article, fall back in order to the next current event, a durable multi-source Insight, a credit-union case study, then a data-led explainer. Never weaken evidence or quality gates merely to meet volume.
-5. Apply `editorial-routing.json`. Send time-sensitive events and reporting to News; send durable playbooks, comparisons, explainers, case studies, interviews, and evergreen synthesis to Insights.
-6. Create the correct clean URL: `/news/{slug}.html` for News or `/insight-{slug}.html` for Insights. Include title, description, canonical URL, Open Graph metadata, date, byline, tags, source links, related coverage, and accessible image treatment.
-7. Generate three materially different image concepts using `image-taxonomy.json`, score them against `image-ledger.json`, and use only the highest-scoring concept that passes every hard rule.
-8. Update the appropriate section index, the homepage whenever any full article or Alert publishes, `sitemap.xml`, `sitemap.txt`, `coverage-ledger.json`, `image-ledger.json`, `newsroom-state.json`, and `social-queue.json` in the same commit. The homepage must visibly identify the newest publication, including an Alert when no newer full article exists.
-9. Validate links, paths, HTML structure, dates, metadata, duplication, attribution, source support, routing, image novelty, and conflict rules.
-10. Commit the complete validated package directly to `main` with `Publish: <headline>`.
-11. Confirm the Vercel production deployment is READY and verify the article URL and correct section placement. If deployment or verification fails, fix or revert only the new package; do not leave a broken production state.
+The newsroom uses separate, single-purpose cycles:
 
-## Breaking-news run
+1. **Article cycle** — publishes one full News or Insights article.
+2. **Alert cycle** — publishes Alerts and maintains the ticker.
+3. **Maintenance cycle** — handles archive migration, Intelligence maintenance, corrections, source health, newsletters and retention.
 
-Publish outside the standard schedule only when a development is time-sensitive, well sourced, materially relevant to credit unions, and scores at least 78. Breaking items may be 250–450 words but must still pass every hard stop. Avoid publishing multiple incremental rewrites of the same event.
+A cycle must not take ownership of another cycle's work. Do not combine article publishing, Alert publishing and maintenance in one scheduled run.
 
-## Weekly portfolio
+## Article cycle
 
-- Monday: outlook or trend brief
-- Tuesday: reported news plus practical article
-- Wednesday: reported news or flagship analysis
-- Thursday: reported news plus case study, interview, comparison, or explainer
-- Friday: weekly briefing or data-led roundup
+1. Read only the files required for the article: `editorial-routing.json`, `editorial-taxonomy.json`, `publishing-rules.json`, `coverage-ledger.json`, `image-taxonomy.json`, `image-ledger.json`, `editorial-voice.md`, `analytics-measurement.json`, `seo-policy.json`, the relevant article template, the homepage, the correct section index, sitemaps and articles from the prior 14 days.
+2. Search the prior 24–72 hours across at least four distinct beats and evaluate at least six credible candidates. Prefer primary documents and developments with a clear credit-union operating implication.
+3. Select one candidate that clears all hard stops. If no current-event candidate qualifies, use the fallback order in `publishing-rules.json`: durable multi-source Insight, credit-union case study, then data-led explainer. Do not publish weak or unsupported material.
+4. Route the article before drafting. Use News when the headline depends on a recent event; otherwise use Insights.
+5. Produce one complete article package only: article, one passing 1200×630 image, metadata, byline, sources, internal links, correct section index, homepage placement, sitemaps, coverage ledger, image ledger, newsroom state, daily-cycle state and social queue when appropriate.
+6. Run only the validators relevant to the article package, including analytics and SEO. Do not run unrelated Intelligence, corrections, retention, newsletter or archive-migration work.
+7. Re-read `main` immediately before writing, preserve concurrent changes, commit the complete package directly to `main`, confirm the Vercel deployment is READY and verify the live article, image, listing and homepage.
 
-Target at least five distinct credit-union functions and three formats per week. No primary function or technology should lead more than two scheduled stories unless the news cycle clearly demands it.
+## Alert cycle
 
-## Social package
+1. Read the Alerts data/page, ticker implementation, homepage latest-alert module, coverage ledger, source registry, publishing rules and daily-cycle state.
+2. The morning run may publish up to the number of Alerts still needed to reach the daily target of three. Later runs may publish at most one genuinely new breaking Alert.
+3. Each Alert requires a factual headline, neutral summary, specific operational credit-union implication, date, source name and direct source URL.
+4. Enforce exact one-to-one mapping between published Alerts and ticker items, newest-first order and the rolling 14-day window.
+5. Update only the Alerts page/data, ticker, homepage latest-alert module, relevant ledgers and daily-cycle state. Do not create a full article, hero image, topic hub, Intelligence tracker update, correction audit or archive migration during an Alert cycle.
+6. Re-read `main` immediately before writing, commit one atomic Alert package, confirm Vercel READY and verify the live Alerts page, ticker and homepage.
 
-Create one LinkedIn package for each weekday, but do not make every post an article advertisement. Rotate among launch post, useful native insight, carousel outline, role-specific takeaway, pointed industry question, and weekly roundup. Each package should have a strong first line, substantive native value, one specific discussion prompt, article URL, and scheduled time in Eastern Time.
+## Maintenance cycle
+
+Maintenance work is separate from publishing. Growth review, source health, corrections, Intelligence, newsletters, legacy migration and retention each run in their own scheduled task or an explicitly scoped maintenance run. Maintenance failure must not block a valid article or Alert package.
+
+## Concurrency and state
+
+- Only one scheduled publisher should write at a time.
+- Do not schedule article, Alert or feature publishers for the same start time.
+- `daily-cycle-state.json` is a reporting ledger, not a lock. When the date changes, move the prior `current` object to `history` and initialize the new date before recording output.
+- Re-read `main` immediately before every write. If another commit landed during the run, merge its current content rather than overwriting it.
+- Use one commit per completed package. Do not create repeated scan-only commits when nothing publishes; record nonpublication in the scheduled-run result instead.
 
 ## Failure behavior
 
-Do not publish when evidence, confidence, attribution, or technical validation fails. Record every evaluated candidate and exact rejection reason in `newsroom-state.json`, then continue to the next candidate. A standard cycle may finish below target only after the 12-candidate pool, expanded 72-hour search, fallback formats, and all qualified candidates have been exhausted. Record the shortfall as a degraded cycle with the beats and sources searched; do not describe it as a successful target cycle. Routine failures should not request human approval. Notify Tom only for repeated pipeline failures, production breakage, potential legal/reputational risk, or an editorial-policy decision the rules do not resolve.
+Continue to the next candidate after a rejection, but keep the scope bounded. An article cycle may stop after the six-candidate, four-beat pool and fallback formats are exhausted. An Alert cycle may stop when no qualifying Alert exists. Report the exact blocker for repeated failures, permission errors, validation failures or production breakage. Do not request routine editorial approval.
 
+## Analytics and SEO
 
-## Analytics package
+For every full article, add valid editorial analytics attributes and complete canonical, social, publication and JSON-LD metadata. Include at least two genuinely relevant internal article links. Update standard sitemaps and, for eligible News, the 48-hour news sitemap. Run `node scripts/validate-analytics.mjs <article-file>` and `node scripts/validate-seo-package.mjs <article-file>` as hard production gates.
 
-Read `automation/analytics-measurement.json` and `automation/ANALYTICS.md` for every full article. Add valid editorial analytics attributes to the article `body` using taxonomy IDs for section, function, technology, format, audience and maturity. Run `node scripts/validate-analytics.mjs <article-file>` before publishing. The shared tracker records article view, engaged reading, scroll depth, source clicks, related-coverage clicks, newsletter intent and outbound clicks. Never send names, email addresses, form values, article text or other personally identifiable/free-form data to analytics.
+## Weekly portfolio
 
-
-## SEO and discovery package
-
-Read `automation/seo-policy.json` and `automation/SEO_GOOGLE_NEWS.md` for every full article. Use the correct SEO-complete News or Insights template. Add canonical, Open Graph, Twitter, publication/modified, section, author, publisher, image and keyword metadata plus valid `NewsArticle` or `Article` JSON-LD. Include at least two genuinely relevant internal article links selected by shared function and technology. Update `sitemap.xml` and `sitemap.txt`; for News, also maintain `news-sitemap.xml` with only articles from the prior 48 hours. Run `node scripts/validate-seo-package.mjs <article-file>` before publishing. SEO validation is a hard production gate.
-
-
-## Friday weekly briefing
-
-On Friday, after the standard article decision, read `automation/newsletter-rules.json`, `automation/NEWSLETTER.md` and `automation/newsletter-state.json`. Create the weekly web edition from the prior seven days when enough qualified coverage exists. Publish it at `/newsletter/YYYY-MM-DD.html`, update the archive markers in `newsletter.html`, both standard sitemaps and newsletter state, then run `node scripts/validate-newsletter.mjs <edition-file>`. Publish the web edition without claiming email delivery while the provider status is `not-connected`.
-
-
-## Autonomous retention
-
-Read `automation/retention-policy.json` and `automation/RETENTION.md` during the first Monday growth review each month. Run retention maintenance in apply mode, commit safe deletions and ledger/report updates automatically, validate the site, and verify production. Do not request approval. Never treat missing analytics, search or backlink evidence as zero; published content must satisfy every evidence gate before deletion. Roll back the cleanup commit if production verification fails.
+Target five weekday article cycles plus differentiated Alerts. Additional deeper features may be restored only after the core article and Alert cycles demonstrate reliable production without overlap.
