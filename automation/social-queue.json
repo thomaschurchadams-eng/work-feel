@@ -1,6 +1,7 @@
 {
-  "version": 1,
-  "status": "buffer-queue-enabled",
+  "version": 2,
+  "status": "buffer-growth-loop-enabled",
+  "trackingPolicyEffectiveAt": "2026-07-22T18:46:00Z",
   "items": [
     {
       "id": "linkedin-bank-of-america-ericaassist-2026-07-22",
@@ -10,6 +11,7 @@
       "copy": "The most useful detail in Bank of America’s EricaAssist upgrade is not the model. It is the placement: AI assembles guidance inside the service employee’s workflow while the employee remains responsible for the conversation. For credit-union contact centers, that suggests a practical sequence—start with approved-source retrieval and next-step prompts, measure accuracy and repeat contacts alongside speed, and keep account changes behind existing approvals. What evidence would your team require before putting real-time AI guidance beside frontline staff? https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
       "scheduledFor": "2026-07-22T16:58:00-04:00",
       "status": "scheduled",
+      "trackingStatus": "legacy-untagged-baseline",
       "bufferPostId": "6a610ac5233e19378b1c1db4",
       "bufferChannelId": "6a53df0880cc80cdcaa76fb8",
       "bufferChannelName": "CreditUnionAI News",
@@ -21,6 +23,7 @@
     }
   ],
   "requiredFields": ["id", "articleUrl", "platform", "format", "copy", "scheduledFor", "status"],
+  "trackedItemFields": ["distributionUrl", "trackingStatus"],
   "formats": ["launch-post", "executive-takeaway", "carousel-outline", "role-specific-excerpt", "weekly-roundup"],
-  "note": "The newsroom creates up to five differentiated LinkedIn packages each week. Eligible queued items are added automatically to the next available CreditUnionAI News Buffer slot after the corresponding site content is verified live."
+  "note": "Beginning after trackingPolicyEffectiveAt, every queued LinkedIn item must keep articleUrl canonical, include a UTM-tagged distributionUrl, use distributionUrl in copy, and pass the tracked production scheduler. The July 22 post is retained as an explicitly untagged timing baseline."
 }
