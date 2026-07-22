@@ -1335,25 +1335,18 @@
   const header = document.querySelector('header');
   const buildTicker = () => {
     const current = normalizePath(window.location.pathname);
-    if (!header || !tickerAlerts.length || !['/', '/alerts'].includes(current)) return;
-    const tickerBar = document.createElement('div');
+    const item = tickerAlerts[0];
+    if (!header || !item || !['/', '/alerts'].includes(current)) return;
+    const tickerBar = document.createElement('aside');
     tickerBar.className = 'ticker-bar';
+    tickerBar.setAttribute('aria-label', 'Latest CreditUnionAI News alert');
     tickerBar.innerHTML = `
-      <div class="container ticker-track" aria-label="Latest alerts">
-        <a class="ticker-label" href="/alerts/">Latest Alerts</a>
-        <div class="ticker-window"><div class="ticker-strip"></div></div>
+      <div class="container ticker-track ticker-track-single">
+        <a class="ticker-label" href="/alerts/">Latest Alert</a>
+        <a class="ticker-item ticker-item-single" href="/alerts/#${item.slug}"><span class="ticker-pill">${item.label}</span><span class="ticker-text">${item.headline}</span></a>
       </div>
     `;
     header.insertAdjacentElement('afterend', tickerBar);
-    const strip = tickerBar.querySelector('.ticker-strip');
-    if (!strip) return;
-    const items = tickerAlerts.slice(0, 3);
-    const renderItems = () => items.map((item) => `<a class="ticker-item" href="/alerts/#${item.slug}"><span class="ticker-pill">${item.label}</span><span class="ticker-text">${item.headline}</span></a>`).join('');
-    strip.innerHTML = `${renderItems()}${renderItems()}`;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const toggleAnimation = () => { strip.style.animationPlayState = prefersReducedMotion.matches ? 'paused' : 'running'; };
-    toggleAnimation();
-    prefersReducedMotion.addEventListener('change', toggleAnimation);
   };
 
   buildTicker();
