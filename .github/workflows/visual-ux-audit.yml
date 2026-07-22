@@ -31,7 +31,7 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Audit production rendering
         run: node scripts/visual-ux-audit.mjs
-      - name: Commit rendered verification
+      - name: Commit final rendered verification
         run: |
           git config user.name 'CUAI UX Audit'
           git config user.email 'actions@users.noreply.github.com'
@@ -40,5 +40,5 @@ jobs:
             echo 'No audit output changed.'
             exit 0
           fi
-          git commit -m 'Audit: verify rendered UX after conversion remediation'
+          git commit -m 'Audit: confirm final rendered UX baseline'
           git push origin HEAD:main
