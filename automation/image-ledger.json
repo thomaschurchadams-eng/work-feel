@@ -1,5 +1,21 @@
 {
   "version":1,
   "description":"Append one record for every production hero image. Keep at least the most recent 50 records.",
-  "images":[]
+  "images":[
+    {
+      "id": "bank-of-america-ericaassist-generative-ai",
+      "articleUrl": "/news/bank-of-america-ericaassist-generative-ai.html",
+      "imagePath": "/assets/bank-of-america-ericaassist-generative-ai.jpg",
+      "publishedAt": "2026-07-22T07:00:00-04:00",
+      "medium": "editorial-photography",
+      "subject": "human-machine-handoff",
+      "composition": "foreground-background-tension",
+      "perspective": "through-glass",
+      "palette": "terracotta-sky",
+      "lighting": "natural-window-light",
+      "texture": "clean-photographic",
+      "scene": "contact-center-workstation",
+      "conceptScore": 98.6
+    }
+  ]
 }

@@ -1,5 +1,20 @@
 {
   "version": 1,
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
-  "articles": []
+  "articles": [
+    {
+      "id": "bank-of-america-ericaassist-generative-ai",
+      "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+      "url": "/news/bank-of-america-ericaassist-generative-ai.html",
+      "publishedAt": "2026-07-22T07:00:00-04:00",
+      "section": "news",
+      "functions": ["member-service", "operations"],
+      "technologies": ["conversational-ai", "generative-ai"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "maturity": "scaling",
+      "sourceTier": 1,
+      "score": 92.7
+    }
+  ]
 }

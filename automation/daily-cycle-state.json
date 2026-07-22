@@ -6,27 +6,45 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-20",
-    "fullArticleCount": 0,
-    "alertCount": 1,
-    "evaluatedCandidateCount": 1,
-    "beatsSearched": [],
+    "date": "2026-07-22",
+    "fullArticleCount": 1,
+    "alertCount": 0,
+    "evaluatedCandidateCount": 6,
+    "beatsSearched": ["member-service", "operations", "payments-deposits", "board-strategy", "finance-treasury", "vendor-management"],
     "publications": [
       {
-        "type": "alert",
-        "title": "FIS Tests Anthropic Mythos 5 on Its Own Financial Infrastructure",
-        "url": "https://creditunionainews.com/alerts/#fis-tests-anthropic-mythos-5-financial-infrastructure"
+        "type": "article",
+        "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+        "url": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html"
       }
     ],
-    "rejections": [
-      {
-        "title": "FIS and Anthropic Extend Partnership on Trusted AI for Financial Services",
-        "reason": "duplicate-or-near-duplicate for a separate full article"
-      }
-    ],
-    "status": "in-progress",
-    "updatedAt": "2026-07-20T15:35:00-04:00"
+    "rejections": [],
+    "status": "article-complete",
+    "updatedAt": "2026-07-22T07:00:00-04:00"
   },
-  "history": [],
+  "history": [
+    {
+      "date": "2026-07-20",
+      "fullArticleCount": 0,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 1,
+      "beatsSearched": [],
+      "publications": [
+        {
+          "type": "alert",
+          "title": "FIS Tests Anthropic Mythos 5 on Its Own Financial Infrastructure",
+          "url": "https://creditunionainews.com/alerts/#fis-tests-anthropic-mythos-5-financial-infrastructure"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "FIS and Anthropic Extend Partnership on Trusted AI for Financial Services",
+          "reason": "duplicate-or-near-duplicate for a separate full article"
+        }
+      ],
+      "status": "in-progress",
+      "updatedAt": "2026-07-20T15:35:00-04:00"
+    }
+  ],
   "note": "Shared idempotent state for the Daily Edition and Alerts desk. Move the prior current object to history when the date changes."
 }
