@@ -1,6 +1,45 @@
   (function () {
   const alertsData = [
     {
+      label: 'AI Governance',
+      headline: 'OpenAI Adds BNY and Nubank Chiefs to Its Boards',
+      summary:
+        'OpenAI announced on July 21 that BNY Chairman and CEO Robin Vince and Nubank founder, Chairman and CEO David Vélez joined the boards of both the OpenAI Foundation and OpenAI Group PBC. OpenAI said the appointments add financial-services, technology and institutional-governance experience to its oversight.',
+      impact:
+        'Credit-union boards and vendor-management teams should treat the appointments as a strategic signal, not evidence of a new banking product. When assessing OpenAI-based services, continue to require institution-specific controls for data use, model changes, resilience, human oversight and accountability rather than assuming financial-sector representation on the vendor\'s boards resolves those risks.',
+      sourceName: 'OpenAI',
+      sourceUrl:
+        'https://openai.com/index/david-velez-robin-vince-join-openai-boards/',
+      date: 'Jul 22, 2026',
+      slug: 'openai-adds-bny-nubank-chiefs-boards'
+    },
+    {
+      label: 'Core & Digital Banking',
+      headline: 'Intellect Launches AI-First Suite for Credit Unions and Mutuals',
+      summary:
+        'Intellect Design Arena announced on July 20 a global Credit Union Solution Suite that combines core banking, AI-powered lending and digital engagement on its composable eMACH.ai platform. The company says the managed SaaS offering can support phased modernization and draws on its work with more than 90 credit unions.',
+      impact:
+        'Credit unions evaluating the suite should separate the vendor\'s performance claims from verified results and require references for comparable institutions. Due diligence should test migration sequencing, data portability, model governance, lending explanations and fair-lending controls, fraud-model validation, accessibility, service levels, integration ownership and exit costs across the bundled components.',
+      sourceName: 'Intellect Design Arena',
+      sourceUrl:
+        'https://www.intellectdesign.com/media/intellect-design-arena-launches-credit-union-solution-suite-purpose-built-for-credit-unions-and-mutuals-globally/',
+      date: 'Jul 22, 2026',
+      slug: 'intellect-ai-first-credit-union-solution-suite'
+    },
+    {
+      label: 'Payments & Cards',
+      headline: 'Samsung Launches U.S. Galaxy Card With Barclays and Visa',
+      summary:
+        'Samsung launched its first U.S. co-branded credit card with Barclays on July 20. The Visa-network Galaxy Card lets applicants open and manage the account, review spending and redeem rewards through Samsung Wallet, extending the device maker\'s role in the U.S. payments relationship.',
+      impact:
+        'Credit-union card and digital teams should benchmark the wallet-native application, servicing and rewards journey against their own mobile experience. Partnership reviews should also examine who controls member data and the primary interface, how authentication and disputes work across the issuer, network and wallet, and whether rewards economics support sustainable acquisition rather than short-term switching.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/business/finance/samsung-launches-first-us-credit-card-with-barclays-signals-ambitions-deeper-2026-07-20/',
+      date: 'Jul 22, 2026',
+      slug: 'samsung-galaxy-card-barclays-visa-us'
+    },
+    {
       label: 'Cybersecurity',
       headline: 'FIS Tests Anthropic Mythos 5 on Its Own Financial Infrastructure',
       summary:

@@ -8,19 +8,41 @@
   "current": {
     "date": "2026-07-22",
     "fullArticleCount": 1,
-    "alertCount": 0,
-    "evaluatedCandidateCount": 6,
-    "beatsSearched": ["member-service", "operations", "payments-deposits", "board-strategy", "finance-treasury", "vendor-management"],
+    "alertCount": 3,
+    "evaluatedCandidateCount": 9,
+    "beatsSearched": [
+      "member-service",
+      "operations",
+      "payments-deposits",
+      "board-strategy",
+      "finance-treasury",
+      "vendor-management"
+    ],
     "publications": [
       {
         "type": "article",
         "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
         "url": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html"
+      },
+      {
+        "type": "alert",
+        "title": "OpenAI Adds BNY and Nubank Chiefs to Its Boards",
+        "url": "https://creditunionainews.com/alerts/#openai-adds-bny-nubank-chiefs-boards"
+      },
+      {
+        "type": "alert",
+        "title": "Intellect Launches AI-First Suite for Credit Unions and Mutuals",
+        "url": "https://creditunionainews.com/alerts/#intellect-ai-first-credit-union-solution-suite"
+      },
+      {
+        "type": "alert",
+        "title": "Samsung Launches U.S. Galaxy Card With Barclays and Visa",
+        "url": "https://creditunionainews.com/alerts/#samsung-galaxy-card-barclays-visa-us"
       }
     ],
     "rejections": [],
-    "status": "article-complete",
-    "updatedAt": "2026-07-22T07:00:00-04:00"
+    "status": "complete",
+    "updatedAt": "2026-07-22T08:00:00-04:00"
   },
   "history": [
     {
