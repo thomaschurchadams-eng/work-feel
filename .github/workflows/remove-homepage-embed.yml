@@ -1,0 +1,33 @@
+name: Remove Homepage Media Embed
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/remove-homepage-embed.mjs
+      - .github/workflows/remove-homepage-embed.yml
+permissions:
+  contents: write
+concurrency:
+  group: final-ux-write
+  cancel-in-progress: false
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/remove-homepage-embed.mjs
+      - run: |
+          git diff --check
+          ! grep -q 'open.spotify.com/embed' index.html
+      - run: |
+          git config user.name 'CUAI UX Remediation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html
+          git commit -m 'UX: replace homepage media embed with episode link'
+          git pull --rebase origin main
+          git push origin HEAD:main
