@@ -1,0 +1,35 @@
+name: Finalize Rendered UX
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/finalize-rendered-ux.mjs
+      - .github/workflows/finalize-rendered-ux.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/finalize-rendered-ux.mjs
+      - run: |
+          git diff --check
+          node --check assets/app.js
+          grep -q 'ticker-track-single' assets/app.js
+      - run: |
+          git config user.name 'CUAI UX Remediation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add assets/app.js assets/styles.css
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'UX: finalize ticker accessibility and mobile density'
+          git push origin HEAD:main
