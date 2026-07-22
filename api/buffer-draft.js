@@ -50,24 +50,32 @@ function loadQueueItem(itemId) {
   return { item };
 }
 
+function requestValue(req, key) {
+  const queryValue = req.query?.[key];
+  if (typeof queryValue === 'string') return queryValue;
+  const bodyValue = req.body?.[key];
+  return typeof bodyValue === 'string' ? bodyValue : '';
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store, max-age=0');
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
 
-  if (req.method !== 'POST') {
-    res.setHeader('Allow', 'POST');
+  if (!['GET', 'POST'].includes(req.method)) {
+    res.setHeader('Allow', 'GET, POST');
     return res.status(405).json({ ok: false, error: 'method_not_allowed' });
   }
 
   const apiKey = process.env.BUFFER_API_KEY;
   if (!apiKey) return res.status(500).json({ ok: false, error: 'buffer_api_key_missing' });
 
-  const suppliedCommit = typeof req.body?.commitSha === 'string' ? req.body.commitSha : '';
+  const suppliedCommit = requestValue(req, 'commitSha');
   const deploymentCommit = process.env.VERCEL_GIT_COMMIT_SHA || '';
   if (!deploymentCommit || suppliedCommit !== deploymentCommit) {
     return res.status(403).json({ ok: false, error: 'deployment_commit_mismatch' });
   }
 
-  const itemId = typeof req.body?.itemId === 'string' ? req.body.itemId : '';
+  const itemId = requestValue(req, 'itemId');
   const loaded = loadQueueItem(itemId);
   if (loaded.error) return res.status(400).json({ ok: false, error: loaded.error });
   const { item } = loaded;
