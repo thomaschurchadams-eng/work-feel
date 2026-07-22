@@ -1,0 +1,4145 @@
+{
+  "generatedAt": "2026-07-22T19:48:11.616Z",
+  "results": [
+    {
+      "page": "Home",
+      "path": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "metrics": {
+        "title": "CreditUnionAI News | Home",
+        "url": "https://creditunionainews.com/",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 5710
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 193,
+          "bottom": 193
+        },
+        "ticker": {
+          "x": 0,
+          "y": 130,
+          "width": 1440,
+          "height": 63,
+          "bottom": 193
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [
+          "AI Newsroom Alerts",
+          "News",
+          "Insights",
+          "Topics",
+          "Intelligence",
+          "Episodes",
+          "Subscribe",
+          "Sponsorships",
+          "About",
+          "LinkedIn"
+        ],
+        "navLinkCount": 10,
+        "h1": {
+          "text": "Artificial Intelligence News and Analysis for Credit Unions",
+          "rect": {
+            "x": 120,
+            "y": 330,
+            "width": 1200,
+            "height": 106,
+            "bottom": 435
+          },
+          "fontSize": "46px",
+          "lineHeight": "52.9px"
+        },
+        "cardCount": 18,
+        "ctas": [
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 872,
+              "y": 42,
+              "width": 117,
+              "height": 46,
+              "bottom": 88
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 1274,
+              "y": 46,
+              "width": 46,
+              "height": 38,
+              "bottom": 84
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 318,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2587,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Listen to Latest Episode",
+            "href": "https://creditunionainews.com/episodes.html",
+            "rect": {
+              "x": 120,
+              "y": 527,
+              "width": 261,
+              "height": 52,
+              "bottom": 578
+            }
+          },
+          {
+            "label": "Get Weekly Briefing",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 395,
+              "y": 527,
+              "width": 222,
+              "height": 52,
+              "bottom": 578
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
+            "rect": {
+              "x": 141,
+              "y": 1991,
+              "width": 116,
+              "height": 26,
+              "bottom": 2016
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/osfi-agentic-ai-risk-controls-credit-unions.html",
+            "rect": {
+              "x": 446,
+              "y": 1991,
+              "width": 116,
+              "height": 26,
+              "bottom": 2016
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/banks-ai-agents-daily-operations-credit-unions.html",
+            "rect": {
+              "x": 751,
+              "y": 1991,
+              "width": 116,
+              "height": 26,
+              "bottom": 2016
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/senate-ai-hearing-credit-unions-2026.html",
+            "rect": {
+              "x": 1056,
+              "y": 1991,
+              "width": 116,
+              "height": 26,
+              "bottom": 2016
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/ai-acceptable-use-policy-credit-unions.html",
+            "rect": {
+              "x": 141,
+              "y": 2592,
+              "width": 116,
+              "height": 26,
+              "bottom": 2618
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/ai-vendor-due-diligence-checklist-credit-unions.html",
+            "rect": {
+              "x": 446,
+              "y": 2592,
+              "width": 116,
+              "height": 26,
+              "bottom": 2618
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/credit-union-board-ai-risk-oversight.html",
+            "rect": {
+              "x": 751,
+              "y": 2592,
+              "width": 116,
+              "height": 26,
+              "bottom": 2618
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/microsoft-optimind-ai-governance-credit-unions.html",
+            "rect": {
+              "x": 1056,
+              "y": 2592,
+              "width": 116,
+              "height": 26,
+              "bottom": 2618
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/ai-credit-union-member-messaging.html",
+            "rect": {
+              "x": 141,
+              "y": 3318,
+              "width": 116,
+              "height": 26,
+              "bottom": 3344
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/insight-credit-union-ai-use-cases.html",
+            "rect": {
+              "x": 446,
+              "y": 3318,
+              "width": 116,
+              "height": 26,
+              "bottom": 3344
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-chatgpt-health-ai-banking-front-door",
+            "rect": {
+              "x": 751,
+              "y": 3318,
+              "width": 116,
+              "height": 26,
+              "bottom": 3344
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-ces-2026-ai-financial-infrastructure",
+            "rect": {
+              "x": 1056,
+              "y": 3318,
+              "width": 116,
+              "height": 26,
+              "bottom": 3344
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-ai-benchmarks-credit-unions-2026",
+            "rect": {
+              "x": 141,
+              "y": 3961,
+              "width": 116,
+              "height": 26,
+              "bottom": 3987
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-chatgpt-5-2-credit-union-uses",
+            "rect": {
+              "x": 446,
+              "y": 3961,
+              "width": 116,
+              "height": 26,
+              "bottom": 3987
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-posh-ai-operating-procedures-banking",
+            "rect": {
+              "x": 751,
+              "y": 3961,
+              "width": 116,
+              "height": 26,
+              "bottom": 3987
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-informed-iq-investment-ai-loan-fraud",
+            "rect": {
+              "x": 1056,
+              "y": 3961,
+              "width": 116,
+              "height": 26,
+              "bottom": 3987
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-klarna-ai-customer-service-limits",
+            "rect": {
+              "x": 141,
+              "y": 4578,
+              "width": 116,
+              "height": 26,
+              "bottom": 4604
+            }
+          },
+          {
+            "label": "Browse episodes",
+            "href": "https://creditunionainews.com/episodes.html",
+            "rect": {
+              "x": 1127,
+              "y": 4777,
+              "width": 193,
+              "height": 52,
+              "bottom": 4829
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 661,
+              "y": 5623,
+              "width": 89,
+              "height": 26,
+              "bottom": 5648
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 120,
+              "y": 5664,
+              "width": 18,
+              "height": 18,
+              "bottom": 5682
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Artificial Intelligence News and Analysis for Credit Unions",
+            "rect": {
+              "x": 120,
+              "y": 330,
+              "width": 1200,
+              "height": 106,
+              "bottom": 435
+            },
+            "fontSize": "46px"
+          },
+          {
+            "level": "H2",
+            "text": "OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "rect": {
+              "x": 159,
+              "y": 800,
+              "width": 1126,
+              "height": 109,
+              "bottom": 909
+            },
+            "fontSize": "34px"
+          },
+          {
+            "level": "H2",
+            "text": "Latest News",
+            "rect": {
+              "x": 120,
+              "y": 1314,
+              "width": 686,
+              "height": 45,
+              "bottom": 1359
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+            "rect": {
+              "x": 141,
+              "y": 1711,
+              "width": 243,
+              "height": 128,
+              "bottom": 1839
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Canada’s New AI Risk Bulletin Gives Credit Unions a Control Checklist",
+            "rect": {
+              "x": 446,
+              "y": 1711,
+              "width": 243,
+              "height": 128,
+              "bottom": 1839
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Major Banks Move AI Agents Into Daily Operations",
+            "rect": {
+              "x": 751,
+              "y": 1670,
+              "width": 243,
+              "height": 96,
+              "bottom": 1766
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Senate AI Hearing Sends Credit Unions a Clear Signal",
+            "rect": {
+              "x": 1056,
+              "y": 1711,
+              "width": 243,
+              "height": 96,
+              "bottom": 1807
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "What Credit Unions Should Include in an AI Acceptable-Use Policy",
+            "rect": {
+              "x": 141,
+              "y": 2312,
+              "width": 243,
+              "height": 128,
+              "bottom": 2440
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "AI Vendor Due Diligence Checklist for Credit Unions",
+            "rect": {
+              "x": 446,
+              "y": 2312,
+              "width": 243,
+              "height": 96,
+              "bottom": 2408
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "How Credit Union Boards Should Oversee AI Risk",
+            "rect": {
+              "x": 751,
+              "y": 2312,
+              "width": 243,
+              "height": 96,
+              "bottom": 2408
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Why Microsoft’s Optimind Launch Signals the Next Phase of AI Adoption for Credit Unions",
+            "rect": {
+              "x": 1056,
+              "y": 2312,
+              "width": 243,
+              "height": 160,
+              "bottom": 2472
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "How AI Is Reshaping Credit Union Member Messaging Without Losing Trust",
+            "rect": {
+              "x": 141,
+              "y": 2955,
+              "width": 243,
+              "height": 128,
+              "bottom": 3083
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Credit Union AI Use Cases: Practical Examples That Matter Today",
+            "rect": {
+              "x": 446,
+              "y": 2955,
+              "width": 243,
+              "height": 128,
+              "bottom": 3083
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ChatGPT Health Signals How AI Will Become the Front Door for Banking",
+            "rect": {
+              "x": 751,
+              "y": 2996,
+              "width": 243,
+              "height": 128,
+              "bottom": 3124
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "CES 2026 Signals a Shift Toward AI as Financial Infrastructure, Not Experimentation",
+            "rect": {
+              "x": 1056,
+              "y": 2955,
+              "width": 243,
+              "height": 160,
+              "bottom": 3115
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "AI Benchmarks for Credit Unions: What “Good” Looks Like Going Into 2026",
+            "rect": {
+              "x": 141,
+              "y": 3681,
+              "width": 243,
+              "height": 128,
+              "bottom": 3809
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ChatGPT 5.2: Practical ways staff can use it without creating risk",
+            "rect": {
+              "x": 446,
+              "y": 3640,
+              "width": 243,
+              "height": 128,
+              "bottom": 3768
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Posh introduces “AI Operating Procedures” for regulated banking workflows",
+            "rect": {
+              "x": 751,
+              "y": 3640,
+              "width": 243,
+              "height": 160,
+              "bottom": 3800
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Investment firm takes controlling stake in Informed.IQ",
+            "rect": {
+              "x": 1056,
+              "y": 3640,
+              "width": 243,
+              "height": 96,
+              "bottom": 3736
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Klarna and others reset expectations for customer service AI",
+            "rect": {
+              "x": 141,
+              "y": 4324,
+              "width": 243,
+              "height": 128,
+              "bottom": 4452
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H2",
+            "text": "Latest Episode",
+            "rect": {
+              "x": 120,
+              "y": 4765,
+              "width": 736,
+              "height": 45,
+              "bottom": 4809
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "Podcast Episode 2 — “Why Credit Unions Can’t Wait on AI”",
+            "rect": {
+              "x": 141,
+              "y": 4931,
+              "width": 1158,
+              "height": 32,
+              "bottom": 4963
+            },
+            "fontSize": "20px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts News Insights Topics Intelligence Episodes Subscribe Sponsorships About LinkedIn AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals CreditUnionAI News Artificial Intelligence News and Analysis for Credit Unions Coverage of artificial intelligence regulation, fraud, operations, vendors, and strategy for credit unions. Listen to Latest Episode Get Weekly Briefing LATEST AI NEWSROOM ALERT Member Service Alert Jul 22, 2026 View all Alerts OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Me"
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "aria-required-children",
+          "impact": "critical",
+          "description": "Ensure elements with an ARIA role that require child roles contain them",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 20
+        },
+        {
+          "id": "frame-title",
+          "impact": "serious",
+          "description": "Ensure <iframe> and <frame> elements have an accessible name",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "Home",
+      "path": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "metrics": {
+        "title": "CreditUnionAI News | Home",
+        "url": "https://creditunionainews.com/",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 13697
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 123,
+          "bottom": 123
+        },
+        "ticker": {
+          "x": 0,
+          "y": 60,
+          "width": 390,
+          "height": 63,
+          "bottom": 123
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [],
+        "navLinkCount": 0,
+        "h1": {
+          "text": "Artificial Intelligence News and Analysis for Credit Unions",
+          "rect": {
+            "x": 16,
+            "y": 250,
+            "width": 359,
+            "height": 147,
+            "bottom": 397
+          },
+          "fontSize": "32px",
+          "lineHeight": "36.8px"
+        },
+        "cardCount": 18,
+        "ctas": [
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 213,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2483,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Listen to Latest Episode",
+            "href": "https://creditunionainews.com/episodes.html",
+            "rect": {
+              "x": 16,
+              "y": 514,
+              "width": 261,
+              "height": 52,
+              "bottom": 565
+            }
+          },
+          {
+            "label": "Get Weekly Briefing",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 16,
+              "y": 579,
+              "width": 222,
+              "height": 52,
+              "bottom": 631
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
+            "rect": {
+              "x": 37,
+              "y": 2591,
+              "width": 116,
+              "height": 26,
+              "bottom": 2617
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/osfi-agentic-ai-risk-controls-credit-unions.html",
+            "rect": {
+              "x": 37,
+              "y": 3177,
+              "width": 116,
+              "height": 26,
+              "bottom": 3203
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/banks-ai-agents-daily-operations-credit-unions.html",
+            "rect": {
+              "x": 37,
+              "y": 3763,
+              "width": 116,
+              "height": 26,
+              "bottom": 3788
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/senate-ai-hearing-credit-unions-2026.html",
+            "rect": {
+              "x": 37,
+              "y": 4317,
+              "width": 116,
+              "height": 26,
+              "bottom": 4342
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/ai-acceptable-use-policy-credit-unions.html",
+            "rect": {
+              "x": 37,
+              "y": 4861,
+              "width": 116,
+              "height": 26,
+              "bottom": 4887
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/ai-vendor-due-diligence-checklist-credit-unions.html",
+            "rect": {
+              "x": 37,
+              "y": 5415,
+              "width": 116,
+              "height": 26,
+              "bottom": 5441
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/credit-union-board-ai-risk-oversight.html",
+            "rect": {
+              "x": 37,
+              "y": 5903,
+              "width": 116,
+              "height": 26,
+              "bottom": 5928
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/microsoft-optimind-ai-governance-credit-unions.html",
+            "rect": {
+              "x": 37,
+              "y": 6495,
+              "width": 116,
+              "height": 26,
+              "bottom": 6520
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news/ai-credit-union-member-messaging.html",
+            "rect": {
+              "x": 37,
+              "y": 7081,
+              "width": 116,
+              "height": 26,
+              "bottom": 7106
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/insight-credit-union-ai-use-cases.html",
+            "rect": {
+              "x": 37,
+              "y": 7641,
+              "width": 116,
+              "height": 26,
+              "bottom": 7666
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-chatgpt-health-ai-banking-front-door",
+            "rect": {
+              "x": 37,
+              "y": 8242,
+              "width": 116,
+              "height": 26,
+              "bottom": 8267
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-ces-2026-ai-financial-infrastructure",
+            "rect": {
+              "x": 37,
+              "y": 8926,
+              "width": 116,
+              "height": 26,
+              "bottom": 8951
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-ai-benchmarks-credit-unions-2026",
+            "rect": {
+              "x": 37,
+              "y": 9512,
+              "width": 116,
+              "height": 26,
+              "bottom": 9537
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-chatgpt-5-2-credit-union-uses",
+            "rect": {
+              "x": 37,
+              "y": 10097,
+              "width": 116,
+              "height": 26,
+              "bottom": 10123
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-posh-ai-operating-procedures-banking",
+            "rect": {
+              "x": 37,
+              "y": 10715,
+              "width": 116,
+              "height": 26,
+              "bottom": 10741
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-informed-iq-investment-ai-loan-fraud",
+            "rect": {
+              "x": 37,
+              "y": 11301,
+              "width": 116,
+              "height": 26,
+              "bottom": 11326
+            }
+          },
+          {
+            "label": "Read more →",
+            "href": "https://creditunionainews.com/news.html#article-klarna-ai-customer-service-limits",
+            "rect": {
+              "x": 37,
+              "y": 11861,
+              "width": 116,
+              "height": 26,
+              "bottom": 11887
+            }
+          },
+          {
+            "label": "Browse episodes",
+            "href": "https://creditunionainews.com/episodes.html",
+            "rect": {
+              "x": 16,
+              "y": 12171,
+              "width": 193,
+              "height": 52,
+              "bottom": 12223
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 210,
+              "y": 13561,
+              "width": 89,
+              "height": 26,
+              "bottom": 13586
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 288,
+              "y": 13644,
+              "width": 18,
+              "height": 26,
+              "bottom": 13669
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Artificial Intelligence News and Analysis for Credit Unions",
+            "rect": {
+              "x": 16,
+              "y": 250,
+              "width": 359,
+              "height": 147,
+              "bottom": 397
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H2",
+            "text": "OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "rect": {
+              "x": 43,
+              "y": 892,
+              "width": 309,
+              "height": 154,
+              "bottom": 1046
+            },
+            "fontSize": "24px"
+          },
+          {
+            "level": "H2",
+            "text": "Latest News",
+            "rect": {
+              "x": 16,
+              "y": 1946,
+              "width": 359,
+              "height": 45,
+              "bottom": 1991
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+            "rect": {
+              "x": 37,
+              "y": 2369,
+              "width": 317,
+              "height": 96,
+              "bottom": 2465
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Canada’s New AI Risk Bulletin Gives Credit Unions a Control Checklist",
+            "rect": {
+              "x": 37,
+              "y": 2955,
+              "width": 317,
+              "height": 96,
+              "bottom": 3051
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Major Banks Move AI Agents Into Daily Operations",
+            "rect": {
+              "x": 37,
+              "y": 3540,
+              "width": 317,
+              "height": 96,
+              "bottom": 3636
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Senate AI Hearing Sends Credit Unions a Clear Signal",
+            "rect": {
+              "x": 37,
+              "y": 4126,
+              "width": 317,
+              "height": 64,
+              "bottom": 4190
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "What Credit Unions Should Include in an AI Acceptable-Use Policy",
+            "rect": {
+              "x": 37,
+              "y": 4639,
+              "width": 317,
+              "height": 96,
+              "bottom": 4735
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "AI Vendor Due Diligence Checklist for Credit Unions",
+            "rect": {
+              "x": 37,
+              "y": 5225,
+              "width": 317,
+              "height": 64,
+              "bottom": 5289
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "How Credit Union Boards Should Oversee AI Risk",
+            "rect": {
+              "x": 37,
+              "y": 5738,
+              "width": 317,
+              "height": 64,
+              "bottom": 5802
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Why Microsoft’s Optimind Launch Signals the Next Phase of AI Adoption for Credit Unions",
+            "rect": {
+              "x": 37,
+              "y": 6266,
+              "width": 317,
+              "height": 128,
+              "bottom": 6394
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "How AI Is Reshaping Credit Union Member Messaging Without Losing Trust",
+            "rect": {
+              "x": 37,
+              "y": 6858,
+              "width": 317,
+              "height": 96,
+              "bottom": 6954
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Credit Union AI Use Cases: Practical Examples That Matter Today",
+            "rect": {
+              "x": 37,
+              "y": 7444,
+              "width": 317,
+              "height": 96,
+              "bottom": 7540
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ChatGPT Health Signals How AI Will Become the Front Door for Banking",
+            "rect": {
+              "x": 37,
+              "y": 8045,
+              "width": 317,
+              "height": 96,
+              "bottom": 8141
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "CES 2026 Signals a Shift Toward AI as Financial Infrastructure, Not Experimentation",
+            "rect": {
+              "x": 37,
+              "y": 8646,
+              "width": 317,
+              "height": 128,
+              "bottom": 8774
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "AI Benchmarks for Credit Unions: What “Good” Looks Like Going Into 2026",
+            "rect": {
+              "x": 37,
+              "y": 9289,
+              "width": 317,
+              "height": 96,
+              "bottom": 9385
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ChatGPT 5.2: Practical ways staff can use it without creating risk",
+            "rect": {
+              "x": 37,
+              "y": 9875,
+              "width": 317,
+              "height": 96,
+              "bottom": 9971
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Posh introduces “AI Operating Procedures” for regulated banking workflows",
+            "rect": {
+              "x": 37,
+              "y": 10461,
+              "width": 317,
+              "height": 128,
+              "bottom": 10589
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Investment firm takes controlling stake in Informed.IQ",
+            "rect": {
+              "x": 37,
+              "y": 11078,
+              "width": 317,
+              "height": 96,
+              "bottom": 11174
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Klarna and others reset expectations for customer service AI",
+            "rect": {
+              "x": 37,
+              "y": 11664,
+              "width": 317,
+              "height": 96,
+              "bottom": 11760
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H2",
+            "text": "Latest Episode",
+            "rect": {
+              "x": 16,
+              "y": 12028,
+              "width": 359,
+              "height": 45,
+              "bottom": 12072
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "Podcast Episode 2 — “Why Credit Unions Can’t Wait on AI”",
+            "rect": {
+              "x": 37,
+              "y": 12312,
+              "width": 317,
+              "height": 96,
+              "bottom": 12408
+            },
+            "fontSize": "20px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals CreditUnionAI News Artificial Intelligence News and Analysis for Credit Unions Coverage of artificial intelligence regulation, fraud, operations, vendors, and strategy for credit unions. Listen to Latest Episode Get Weekly Briefing LATEST AI NEWSROOM ALERT Member Service Alert Jul 22, 2026 View all Alerts OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs. What this me",
+        "mobileMenu": {
+          "open": true,
+          "rect": {
+            "x": 16,
+            "y": 66,
+            "width": 359,
+            "height": 642,
+            "bottom": 708
+          },
+          "viewportHeight": 844,
+          "scrollHeight": 642,
+          "clientHeight": 642
+        }
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 20
+        },
+        {
+          "id": "frame-title",
+          "impact": "serious",
+          "description": "Ensure <iframe> and <frame> elements have an accessible name",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "Article",
+      "path": "/news/bank-of-america-ericaassist-generative-ai.html",
+      "viewport": "desktop",
+      "status": 200,
+      "metrics": {
+        "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees | CreditUnionAI News",
+        "url": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 3331
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 193,
+          "bottom": 193
+        },
+        "ticker": {
+          "x": 0,
+          "y": 130,
+          "width": 1440,
+          "height": 63,
+          "bottom": 193
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [
+          "AI Newsroom Alerts",
+          "News",
+          "Insights",
+          "Topics",
+          "Intelligence",
+          "Episodes",
+          "Subscribe",
+          "Sponsorships",
+          "About",
+          "LinkedIn"
+        ],
+        "navLinkCount": 10,
+        "h1": {
+          "text": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+          "rect": {
+            "x": 320,
+            "y": 301,
+            "width": 800,
+            "height": 102,
+            "bottom": 403
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 0,
+        "ctas": [
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 872,
+              "y": 42,
+              "width": 117,
+              "height": 46,
+              "bottom": 88
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 1274,
+              "y": 46,
+              "width": 46,
+              "height": 38,
+              "bottom": 84
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 318,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2587,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "See the briefing",
+            "href": "https://creditunionainews.com/newsletter.html?source=article-bottom",
+            "rect": {
+              "x": 344,
+              "y": 2980,
+              "width": 186,
+              "height": 52,
+              "bottom": 3032
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 661,
+              "y": 3243,
+              "width": 89,
+              "height": 26,
+              "bottom": 3269
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 120,
+              "y": 3285,
+              "width": 18,
+              "height": 18,
+              "bottom": 3303
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+            "rect": {
+              "x": 320,
+              "y": 301,
+              "width": 800,
+              "height": 102,
+              "bottom": 403
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H2",
+            "text": "The design choice matters more than the headline",
+            "rect": {
+              "x": 320,
+              "y": 1419,
+              "width": 800,
+              "height": 36,
+              "bottom": 1456
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Controls credit unions should test first",
+            "rect": {
+              "x": 320,
+              "y": 1864,
+              "width": 800,
+              "height": 36,
+              "bottom": 1901
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "A useful benchmark, not a transferable result",
+            "rect": {
+              "x": 320,
+              "y": 2335,
+              "width": 800,
+              "height": 36,
+              "bottom": 2371
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "Related coverage",
+            "rect": {
+              "x": 320,
+              "y": 2620,
+              "width": 800,
+              "height": 30,
+              "bottom": 2650
+            },
+            "fontSize": "18.72px"
+          },
+          {
+            "level": "H2",
+            "text": "Turn this story into a weekly operating advantage.",
+            "rect": {
+              "x": 344,
+              "y": 2842,
+              "width": 752,
+              "height": 90,
+              "bottom": 2931
+            },
+            "fontSize": "28px"
+          }
+        ],
+        "article": {
+          "rect": {
+            "x": 320,
+            "y": 1074,
+            "width": 800,
+            "height": 1669,
+            "bottom": 2743
+          },
+          "paragraphCount": 11,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "25.6px",
+          "newsletterCta": {
+            "x": 320,
+            "y": 2775,
+            "width": 800,
+            "height": 281,
+            "bottom": 3056
+          }
+        },
+        "visibleTextStart": "AI Newsroom Alerts News Insights Topics Intelligence Episodes Subscribe Sponsorships About LinkedIn AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals ← Back to NewsREPORTING Bank of America Puts Generative AI Beside 18,000 Service Employees July 22, 2026 By CreditUnionAI News Staff Member ServiceGenerative AIContact CentersHuman Oversight Bank of America has added generative AI to EricaAssist, an employee-facing service tool used by more than 18,000 representatives. The deployment gives credit unions a concrete operating model to examine: use AI to assemble guidance during a conversation while keeping the employee responsible for the interaction. Bank of America said Tuesday that it has expanded EricaAssist with generative AI that supplies contextual guidance to cu"
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "page": "Article",
+      "path": "/news/bank-of-america-ericaassist-generative-ai.html",
+      "viewport": "mobile",
+      "status": 200,
+      "metrics": {
+        "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees | CreditUnionAI News",
+        "url": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 5126
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 123,
+          "bottom": 123
+        },
+        "ticker": {
+          "x": 0,
+          "y": 60,
+          "width": 390,
+          "height": 63,
+          "bottom": 123
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [],
+        "navLinkCount": 0,
+        "h1": {
+          "text": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+          "rect": {
+            "x": 16,
+            "y": 221,
+            "width": 359,
+            "height": 205,
+            "bottom": 426
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 0,
+        "ctas": [
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 213,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2483,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "See the briefing",
+            "href": "https://creditunionainews.com/newsletter.html?source=article-bottom",
+            "rect": {
+              "x": 40,
+              "y": 4694,
+              "width": 186,
+              "height": 52,
+              "bottom": 4746
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 210,
+              "y": 4989,
+              "width": 89,
+              "height": 26,
+              "bottom": 5014
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 288,
+              "y": 5072,
+              "width": 18,
+              "height": 26,
+              "bottom": 5098
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+            "rect": {
+              "x": 16,
+              "y": 221,
+              "width": 359,
+              "height": 205,
+              "bottom": 426
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H2",
+            "text": "The design choice matters more than the headline",
+            "rect": {
+              "x": 16,
+              "y": 1729,
+              "width": 359,
+              "height": 109,
+              "bottom": 1838
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Controls credit unions should test first",
+            "rect": {
+              "x": 16,
+              "y": 2631,
+              "width": 359,
+              "height": 73,
+              "bottom": 2704
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "A useful benchmark, not a transferable result",
+            "rect": {
+              "x": 16,
+              "y": 3573,
+              "width": 359,
+              "height": 109,
+              "bottom": 3682
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "Related coverage",
+            "rect": {
+              "x": 16,
+              "y": 4161,
+              "width": 359,
+              "height": 30,
+              "bottom": 4191
+            },
+            "fontSize": "18.72px"
+          },
+          {
+            "level": "H2",
+            "text": "Turn this story into a weekly operating advantage.",
+            "rect": {
+              "x": 40,
+              "y": 4460,
+              "width": 311,
+              "height": 134,
+              "bottom": 4594
+            },
+            "fontSize": "28px"
+          }
+        ],
+        "article": {
+          "rect": {
+            "x": 16,
+            "y": 1000,
+            "width": 359,
+            "height": 3361,
+            "bottom": 4361
+          },
+          "paragraphCount": 11,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "25.6px",
+          "newsletterCta": {
+            "x": 16,
+            "y": 4393,
+            "width": 359,
+            "height": 377,
+            "bottom": 4770
+          }
+        },
+        "visibleTextStart": "AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals ← Back to NewsREPORTING Bank of America Puts Generative AI Beside 18,000 Service Employees July 22, 2026 By CreditUnionAI News Staff Member ServiceGenerative AIContact CentersHuman Oversight Bank of America has added generative AI to EricaAssist, an employee-facing service tool used by more than 18,000 representatives. The deployment gives credit unions a concrete operating model to examine: use AI to assemble guidance during a conversation while keeping the employee responsible for the interaction. Bank of America said Tuesday that it has expanded EricaAssist with generative AI that supplies contextual guidance to customer-service employees during live conversations. The bank says the tool can summarize why a clien",
+        "mobileMenu": {
+          "open": true,
+          "rect": {
+            "x": 16,
+            "y": 66,
+            "width": 359,
+            "height": 642,
+            "bottom": 708
+          },
+          "viewportHeight": 844,
+          "scrollHeight": 642,
+          "clientHeight": 642
+        }
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "page": "Newsletter",
+      "path": "/newsletter.html",
+      "viewport": "desktop",
+      "status": 200,
+      "metrics": {
+        "title": "CreditUnionAI Weekly Briefing | Subscribe",
+        "url": "https://creditunionainews.com/newsletter.html",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 1399
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 193,
+          "bottom": 193
+        },
+        "ticker": {
+          "x": 0,
+          "y": 130,
+          "width": 1440,
+          "height": 63,
+          "bottom": 193
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [
+          "AI Newsroom Alerts",
+          "News",
+          "Insights",
+          "Topics",
+          "Intelligence",
+          "Episodes",
+          "Subscribe",
+          "Sponsorships",
+          "About",
+          "LinkedIn"
+        ],
+        "navLinkCount": 10,
+        "h1": {
+          "text": "The important AI developments—without the noise.",
+          "rect": {
+            "x": 120,
+            "y": 295,
+            "width": 780,
+            "height": 183,
+            "bottom": 477
+          },
+          "fontSize": "58px",
+          "lineHeight": "60.9px"
+        },
+        "cardCount": 0,
+        "ctas": [
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 872,
+              "y": 42,
+              "width": 117,
+              "height": 46,
+              "bottom": 88
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 1274,
+              "y": 46,
+              "width": 46,
+              "height": 38,
+              "bottom": 84
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 318,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2587,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Request a subscription",
+            "href": "mailto:info@creditunionainews.com?subject=Subscribe%20to%20CreditUnionAI%20Weekly%20Briefing&body=Please%20add%20me%20to%20the%20CreditUnionAI%20Weekly%20Briefing.",
+            "rect": {
+              "x": 120,
+              "y": 640,
+              "width": 250,
+              "height": 52,
+              "bottom": 691
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 661,
+              "y": 1311,
+              "width": 89,
+              "height": 26,
+              "bottom": 1337
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 120,
+              "y": 1353,
+              "width": 18,
+              "height": 18,
+              "bottom": 1371
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "The important AI developments—without the noise.",
+            "rect": {
+              "x": 120,
+              "y": 295,
+              "width": 780,
+              "height": 183,
+              "bottom": 477
+            },
+            "fontSize": "58px"
+          },
+          {
+            "level": "H2",
+            "text": "The week in one minute",
+            "rect": {
+              "x": 972,
+              "y": 370,
+              "width": 320,
+              "height": 77,
+              "bottom": 447
+            },
+            "fontSize": "24px"
+          },
+          {
+            "level": "H2",
+            "text": "Recent editions",
+            "rect": {
+              "x": 120,
+              "y": 909,
+              "width": 306,
+              "height": 45,
+              "bottom": 954
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "The first automated edition is being prepared.",
+            "rect": {
+              "x": 149,
+              "y": 1039,
+              "width": 1142,
+              "height": 30,
+              "bottom": 1069
+            },
+            "fontSize": "18.72px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts News Insights Topics Intelligence Episodes Subscribe Sponsorships About LinkedIn AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals FRIDAY INTELLIGENCE FOR CREDIT-UNION LEADERS The important AI developments—without the noise. A concise weekly briefing connecting AI, fintech and regulation to the decisions credit-union boards, executives and functional leaders actually face. 5-minute read Practical implications No generic AI recap Request a subscription This opens an email request. Automated email signup is coming when the sending platform is connected. EVERY EDITION INCLUDES The week in one minute The one development leaders should understand What changed across vendors, regulation and operations Specific actions for credit-union teams Only the li"
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 5
+        }
+      ]
+    },
+    {
+      "page": "Newsletter",
+      "path": "/newsletter.html",
+      "viewport": "mobile",
+      "status": 200,
+      "metrics": {
+        "title": "CreditUnionAI Weekly Briefing | Subscribe",
+        "url": "https://creditunionainews.com/newsletter.html",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 2026
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 123,
+          "bottom": 123
+        },
+        "ticker": {
+          "x": 0,
+          "y": 60,
+          "width": 390,
+          "height": 63,
+          "bottom": 123
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [],
+        "navLinkCount": 0,
+        "h1": {
+          "text": "The important AI developments—without the noise.",
+          "rect": {
+            "x": 16,
+            "y": 245,
+            "width": 359,
+            "height": 151,
+            "bottom": 396
+          },
+          "fontSize": "36px",
+          "lineHeight": "37.8px"
+        },
+        "cardCount": 0,
+        "ctas": [
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 213,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2483,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Request a subscription",
+            "href": "mailto:info@creditunionainews.com?subject=Subscribe%20to%20CreditUnionAI%20Weekly%20Briefing&body=Please%20add%20me%20to%20the%20CreditUnionAI%20Weekly%20Briefing.",
+            "rect": {
+              "x": 16,
+              "y": 693,
+              "width": 250,
+              "height": 52,
+              "bottom": 745
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 210,
+              "y": 1890,
+              "width": 89,
+              "height": 26,
+              "bottom": 1915
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 288,
+              "y": 1973,
+              "width": 18,
+              "height": 26,
+              "bottom": 1998
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "The important AI developments—without the noise.",
+            "rect": {
+              "x": 16,
+              "y": 245,
+              "width": 359,
+              "height": 151,
+              "bottom": 396
+            },
+            "fontSize": "36px"
+          },
+          {
+            "level": "H2",
+            "text": "The week in one minute",
+            "rect": {
+              "x": 44,
+              "y": 921,
+              "width": 303,
+              "height": 77,
+              "bottom": 998
+            },
+            "fontSize": "24px"
+          },
+          {
+            "level": "H2",
+            "text": "Recent editions",
+            "rect": {
+              "x": 16,
+              "y": 1401,
+              "width": 306,
+              "height": 45,
+              "bottom": 1446
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H3",
+            "text": "The first automated edition is being prepared.",
+            "rect": {
+              "x": 45,
+              "y": 1530,
+              "width": 301,
+              "height": 60,
+              "bottom": 1590
+            },
+            "fontSize": "18.72px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals FRIDAY INTELLIGENCE FOR CREDIT-UNION LEADERS The important AI developments—without the noise. A concise weekly briefing connecting AI, fintech and regulation to the decisions credit-union boards, executives and functional leaders actually face. 5-minute read Practical implications No generic AI recap Request a subscription This opens an email request. Automated email signup is coming when the sending platform is connected. EVERY EDITION INCLUDES The week in one minute The one development leaders should understand What changed across vendors, regulation and operations Specific actions for credit-union teams Only the links worth your time BRIEFING ARCHIVE Recent editions Web editions appear here each Friday. The first",
+        "mobileMenu": {
+          "open": true,
+          "rect": {
+            "x": 16,
+            "y": 66,
+            "width": 359,
+            "height": 642,
+            "bottom": 708
+          },
+          "viewportHeight": 844,
+          "scrollHeight": 642,
+          "clientHeight": 642
+        }
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 5
+        }
+      ]
+    },
+    {
+      "page": "Topics",
+      "path": "/topics.html",
+      "viewport": "desktop",
+      "status": 200,
+      "metrics": {
+        "title": "Credit Union AI Topics | CreditUnionAI News",
+        "url": "https://creditunionainews.com/topics.html",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 2803
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 193,
+          "bottom": 193
+        },
+        "ticker": {
+          "x": 0,
+          "y": 130,
+          "width": 1440,
+          "height": 63,
+          "bottom": 193
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [
+          "AI Newsroom Alerts",
+          "News",
+          "Insights",
+          "Topics",
+          "Intelligence",
+          "Episodes",
+          "Subscribe",
+          "Sponsorships",
+          "About",
+          "LinkedIn"
+        ],
+        "navLinkCount": 10,
+        "h1": {
+          "text": "Credit Union AI Topics",
+          "rect": {
+            "x": 120,
+            "y": 300,
+            "width": 850,
+            "height": 51,
+            "bottom": 351
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 10,
+        "ctas": [
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 872,
+              "y": 42,
+              "width": 117,
+              "height": 46,
+              "bottom": 88
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 1274,
+              "y": 46,
+              "width": 46,
+              "height": 38,
+              "bottom": 84
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 318,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2587,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/lending-ai.html",
+            "rect": {
+              "x": 141,
+              "y": 599,
+              "width": 1158,
+              "height": 26,
+              "bottom": 625
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/fraud-security-ai.html",
+            "rect": {
+              "x": 141,
+              "y": 808,
+              "width": 1158,
+              "height": 26,
+              "bottom": 834
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/operations-ai.html",
+            "rect": {
+              "x": 141,
+              "y": 1017,
+              "width": 1158,
+              "height": 26,
+              "bottom": 1043
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/compliance-governance.html",
+            "rect": {
+              "x": 141,
+              "y": 1226,
+              "width": 1158,
+              "height": 26,
+              "bottom": 1252
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/member-experience-ai.html",
+            "rect": {
+              "x": 141,
+              "y": 1436,
+              "width": 1158,
+              "height": 26,
+              "bottom": 1461
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-agents-automation.html",
+            "rect": {
+              "x": 141,
+              "y": 1645,
+              "width": 1158,
+              "height": 26,
+              "bottom": 1670
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-fraud-identity.html",
+            "rect": {
+              "x": 141,
+              "y": 1854,
+              "width": 1158,
+              "height": 26,
+              "bottom": 1880
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/generative-ai.html",
+            "rect": {
+              "x": 141,
+              "y": 2063,
+              "width": 1158,
+              "height": 26,
+              "bottom": 2089
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-governance-risk.html",
+            "rect": {
+              "x": 141,
+              "y": 2272,
+              "width": 1158,
+              "height": 26,
+              "bottom": 2298
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-personalization-service.html",
+            "rect": {
+              "x": 141,
+              "y": 2481,
+              "width": 1158,
+              "height": 26,
+              "bottom": 2507
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 661,
+              "y": 2716,
+              "width": 89,
+              "height": 26,
+              "bottom": 2741
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 120,
+              "y": 2757,
+              "width": 18,
+              "height": 18,
+              "bottom": 2775
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Credit Union AI Topics",
+            "rect": {
+              "x": 120,
+              "y": 300,
+              "width": 850,
+              "height": 51,
+              "bottom": 351
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H2",
+            "text": "Lending & Collections AI",
+            "rect": {
+              "x": 141,
+              "y": 505,
+              "width": 1158,
+              "height": 45,
+              "bottom": 549
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Fraud, Identity & Cybersecurity AI",
+            "rect": {
+              "x": 141,
+              "y": 714,
+              "width": 1158,
+              "height": 45,
+              "bottom": 759
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Credit Union Operations AI",
+            "rect": {
+              "x": 141,
+              "y": 923,
+              "width": 1158,
+              "height": 45,
+              "bottom": 968
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Compliance & Governance",
+            "rect": {
+              "x": 141,
+              "y": 1132,
+              "width": 1158,
+              "height": 45,
+              "bottom": 1177
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Member Experience AI",
+            "rect": {
+              "x": 141,
+              "y": 1341,
+              "width": 1158,
+              "height": 45,
+              "bottom": 1386
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Agents & Automation",
+            "rect": {
+              "x": 141,
+              "y": 1550,
+              "width": 1158,
+              "height": 45,
+              "bottom": 1595
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Fraud & Identity Technology",
+            "rect": {
+              "x": 141,
+              "y": 1760,
+              "width": 1158,
+              "height": 45,
+              "bottom": 1804
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Generative AI for Credit Unions",
+            "rect": {
+              "x": 141,
+              "y": 1969,
+              "width": 1158,
+              "height": 45,
+              "bottom": 2014
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Governance & Model Risk",
+            "rect": {
+              "x": 141,
+              "y": 2178,
+              "width": 1158,
+              "height": 45,
+              "bottom": 2223
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Personalization & Service",
+            "rect": {
+              "x": 141,
+              "y": 2387,
+              "width": 1158,
+              "height": 45,
+              "bottom": 2432
+            },
+            "fontSize": "28px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts News Insights Topics Intelligence Episodes Subscribe Sponsorships About LinkedIn AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals COVERAGE DIRECTORY Credit Union AI Topics Follow the developments that matter to your role. These hubs organize reporting and practical insights across credit-union functions and emerging technologies. FUNCTION Lending & Collections AI Practical reporting on AI underwriting, document automation, fraud controls and collections workflows for credit-union lending teams. Explore topic → FUNCTION Fraud, Identity & Cybersecurity AI Current AI developments affecting fraud prevention, identity, disputes, cybersecurity and member protection. Explore topic → FUNCTION Credit Union Operations AI AI agents, workflow automation, do"
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 10
+        }
+      ]
+    },
+    {
+      "page": "Topics",
+      "path": "/topics.html",
+      "viewport": "mobile",
+      "status": 200,
+      "metrics": {
+        "title": "Credit Union AI Topics | CreditUnionAI News",
+        "url": "https://creditunionainews.com/topics.html",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 3969
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 123,
+          "bottom": 123
+        },
+        "ticker": {
+          "x": 0,
+          "y": 60,
+          "width": 390,
+          "height": 63,
+          "bottom": 123
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [],
+        "navLinkCount": 0,
+        "h1": {
+          "text": "Credit Union AI Topics",
+          "rect": {
+            "x": 16,
+            "y": 220,
+            "width": 359,
+            "height": 102,
+            "bottom": 322
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 10,
+        "ctas": [
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 213,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2483,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/lending-ai.html",
+            "rect": {
+              "x": 37,
+              "y": 743,
+              "width": 317,
+              "height": 26,
+              "bottom": 768
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/fraud-security-ai.html",
+            "rect": {
+              "x": 37,
+              "y": 1048,
+              "width": 317,
+              "height": 26,
+              "bottom": 1074
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/operations-ai.html",
+            "rect": {
+              "x": 37,
+              "y": 1379,
+              "width": 317,
+              "height": 26,
+              "bottom": 1404
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/compliance-governance.html",
+            "rect": {
+              "x": 37,
+              "y": 1684,
+              "width": 317,
+              "height": 26,
+              "bottom": 1710
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/member-experience-ai.html",
+            "rect": {
+              "x": 37,
+              "y": 2015,
+              "width": 317,
+              "height": 26,
+              "bottom": 2040
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-agents-automation.html",
+            "rect": {
+              "x": 37,
+              "y": 2320,
+              "width": 317,
+              "height": 26,
+              "bottom": 2345
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-fraud-identity.html",
+            "rect": {
+              "x": 37,
+              "y": 2625,
+              "width": 317,
+              "height": 26,
+              "bottom": 2651
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/generative-ai.html",
+            "rect": {
+              "x": 37,
+              "y": 2930,
+              "width": 317,
+              "height": 26,
+              "bottom": 2956
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-governance-risk.html",
+            "rect": {
+              "x": 37,
+              "y": 3235,
+              "width": 317,
+              "height": 26,
+              "bottom": 3261
+            }
+          },
+          {
+            "label": "Explore topic →",
+            "href": "https://creditunionainews.com/topics/ai-personalization-service.html",
+            "rect": {
+              "x": 37,
+              "y": 3566,
+              "width": 317,
+              "height": 26,
+              "bottom": 3592
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 210,
+              "y": 3832,
+              "width": 89,
+              "height": 26,
+              "bottom": 3857
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 288,
+              "y": 3915,
+              "width": 18,
+              "height": 26,
+              "bottom": 3941
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Credit Union AI Topics",
+            "rect": {
+              "x": 16,
+              "y": 220,
+              "width": 359,
+              "height": 102,
+              "bottom": 322
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H2",
+            "text": "Lending & Collections AI",
+            "rect": {
+              "x": 37,
+              "y": 527,
+              "width": 317,
+              "height": 90,
+              "bottom": 617
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Fraud, Identity & Cybersecurity AI",
+            "rect": {
+              "x": 37,
+              "y": 858,
+              "width": 317,
+              "height": 90,
+              "bottom": 947
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Credit Union Operations AI",
+            "rect": {
+              "x": 37,
+              "y": 1163,
+              "width": 317,
+              "height": 90,
+              "bottom": 1252
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Compliance & Governance",
+            "rect": {
+              "x": 37,
+              "y": 1494,
+              "width": 317,
+              "height": 90,
+              "bottom": 1583
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Member Experience AI",
+            "rect": {
+              "x": 37,
+              "y": 1799,
+              "width": 317,
+              "height": 90,
+              "bottom": 1888
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Agents & Automation",
+            "rect": {
+              "x": 37,
+              "y": 2129,
+              "width": 317,
+              "height": 90,
+              "bottom": 2219
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Fraud & Identity Technology",
+            "rect": {
+              "x": 37,
+              "y": 2435,
+              "width": 317,
+              "height": 90,
+              "bottom": 2524
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Generative AI for Credit Unions",
+            "rect": {
+              "x": 37,
+              "y": 2740,
+              "width": 317,
+              "height": 90,
+              "bottom": 2829
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Governance & Model Risk",
+            "rect": {
+              "x": 37,
+              "y": 3045,
+              "width": 317,
+              "height": 90,
+              "bottom": 3135
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Personalization & Service",
+            "rect": {
+              "x": 37,
+              "y": 3350,
+              "width": 317,
+              "height": 90,
+              "bottom": 3440
+            },
+            "fontSize": "28px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals COVERAGE DIRECTORY Credit Union AI Topics Follow the developments that matter to your role. These hubs organize reporting and practical insights across credit-union functions and emerging technologies. FUNCTION Lending & Collections AI Practical reporting on AI underwriting, document automation, fraud controls and collections workflows for credit-union lending teams. Explore topic → FUNCTION Fraud, Identity & Cybersecurity AI Current AI developments affecting fraud prevention, identity, disputes, cybersecurity and member protection. Explore topic → FUNCTION Credit Union Operations AI AI agents, workflow automation, document processing and operating-model changes for credit-union leaders. Explore topic → FUNCTION AI ",
+        "mobileMenu": {
+          "open": true,
+          "rect": {
+            "x": 16,
+            "y": 66,
+            "width": 359,
+            "height": 642,
+            "bottom": 708
+          },
+          "viewportHeight": 844,
+          "scrollHeight": 642,
+          "clientHeight": 642
+        }
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 10
+        }
+      ]
+    },
+    {
+      "page": "Intelligence",
+      "path": "/intelligence/",
+      "viewport": "desktop",
+      "status": 200,
+      "metrics": {
+        "title": "Credit Union AI Intelligence | CreditUnionAI News",
+        "url": "https://creditunionainews.com/intelligence/",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 1635
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 193,
+          "bottom": 193
+        },
+        "ticker": {
+          "x": 0,
+          "y": 130,
+          "width": 1440,
+          "height": 63,
+          "bottom": 193
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [
+          "AI Newsroom Alerts",
+          "News",
+          "Insights",
+          "Topics",
+          "Intelligence",
+          "Episodes",
+          "Subscribe",
+          "Sponsorships",
+          "About",
+          "LinkedIn"
+        ],
+        "navLinkCount": 10,
+        "h1": {
+          "text": "Credit Union AI Intelligence",
+          "rect": {
+            "x": 120,
+            "y": 300,
+            "width": 850,
+            "height": 51,
+            "bottom": 351
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 4,
+        "ctas": [
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 872,
+              "y": 42,
+              "width": 117,
+              "height": 46,
+              "bottom": 88
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 1274,
+              "y": 46,
+              "width": 46,
+              "height": 38,
+              "bottom": 84
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 318,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2587,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Explore vendors →",
+            "href": "https://creditunionainews.com/intelligence/vendors.html",
+            "rect": {
+              "x": 141,
+              "y": 676,
+              "width": 1158,
+              "height": 26,
+              "bottom": 701
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 661,
+              "y": 1548,
+              "width": 89,
+              "height": 26,
+              "bottom": 1573
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 120,
+              "y": 1589,
+              "width": 18,
+              "height": 18,
+              "bottom": 1607
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Credit Union AI Intelligence",
+            "rect": {
+              "x": 120,
+              "y": 300,
+              "width": 850,
+              "height": 51,
+              "bottom": 351
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Vendor Tracker",
+            "rect": {
+              "x": 141,
+              "y": 581,
+              "width": 1158,
+              "height": 45,
+              "bottom": 626
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Regulatory Watch",
+            "rect": {
+              "x": 141,
+              "y": 791,
+              "width": 1158,
+              "height": 45,
+              "bottom": 835
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Latest Intelligence Changes",
+            "rect": {
+              "x": 141,
+              "y": 1000,
+              "width": 1158,
+              "height": 45,
+              "bottom": 1044
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "How this intelligence is built",
+            "rect": {
+              "x": 141,
+              "y": 1194,
+              "width": 1158,
+              "height": 45,
+              "bottom": 1238
+            },
+            "fontSize": "28px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts News Insights Topics Intelligence Episodes Subscribe Sponsorships About LinkedIn AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals EVIDENCE LAYER Credit Union AI Intelligence Evidence-backed vendor and regulatory intelligence for credit unions, connected to current reporting and practical analysis. Track what vendors are changing, what regulators are signaling and how each development connects to credit-union functions. Records preserve sources and evidence labels; tracker inclusion is not endorsement. MARKET INTELLIGENCE AI Vendor Tracker Search normalized vendor capabilities and dated signals across core, digital banking, payments, fraud, lending and enterprise technology. Explore vendors → POLICY INTELLIGENCE Regulatory Watch Follow primary-so"
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "page": "Intelligence",
+      "path": "/intelligence/",
+      "viewport": "mobile",
+      "status": 200,
+      "metrics": {
+        "title": "Credit Union AI Intelligence | CreditUnionAI News",
+        "url": "https://creditunionainews.com/intelligence/",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 2186
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 123,
+          "bottom": 123
+        },
+        "ticker": {
+          "x": 0,
+          "y": 60,
+          "width": 390,
+          "height": 63,
+          "bottom": 123
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [],
+        "navLinkCount": 0,
+        "h1": {
+          "text": "Credit Union AI Intelligence",
+          "rect": {
+            "x": 16,
+            "y": 220,
+            "width": 359,
+            "height": 102,
+            "bottom": 322
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 4,
+        "ctas": [
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 213,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2483,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Explore vendors →",
+            "href": "https://creditunionainews.com/intelligence/vendors.html",
+            "rect": {
+              "x": 37,
+              "y": 826,
+              "width": 317,
+              "height": 26,
+              "bottom": 852
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 210,
+              "y": 2050,
+              "width": 89,
+              "height": 26,
+              "bottom": 2075
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 288,
+              "y": 2133,
+              "width": 18,
+              "height": 26,
+              "bottom": 2158
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Credit Union AI Intelligence",
+            "rect": {
+              "x": 16,
+              "y": 220,
+              "width": 359,
+              "height": 102,
+              "bottom": 322
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H2",
+            "text": "AI Vendor Tracker",
+            "rect": {
+              "x": 37,
+              "y": 655,
+              "width": 317,
+              "height": 45,
+              "bottom": 700
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Regulatory Watch",
+            "rect": {
+              "x": 37,
+              "y": 941,
+              "width": 317,
+              "height": 45,
+              "bottom": 986
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "Latest Intelligence Changes",
+            "rect": {
+              "x": 37,
+              "y": 1227,
+              "width": 317,
+              "height": 90,
+              "bottom": 1316
+            },
+            "fontSize": "28px"
+          },
+          {
+            "level": "H2",
+            "text": "How this intelligence is built",
+            "rect": {
+              "x": 37,
+              "y": 1517,
+              "width": 317,
+              "height": 90,
+              "bottom": 1606
+            },
+            "fontSize": "28px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals EVIDENCE LAYER Credit Union AI Intelligence Evidence-backed vendor and regulatory intelligence for credit unions, connected to current reporting and practical analysis. Track what vendors are changing, what regulators are signaling and how each development connects to credit-union functions. Records preserve sources and evidence labels; tracker inclusion is not endorsement. MARKET INTELLIGENCE AI Vendor Tracker Search normalized vendor capabilities and dated signals across core, digital banking, payments, fraud, lending and enterprise technology. Explore vendors → POLICY INTELLIGENCE Regulatory Watch Follow primary-source guidance, hearings, resources and supervisory signals, mapped to affected functions and technol",
+        "mobileMenu": {
+          "open": true,
+          "rect": {
+            "x": 16,
+            "y": 66,
+            "width": 359,
+            "height": 642,
+            "bottom": 708
+          },
+          "viewportHeight": 844,
+          "scrollHeight": 642,
+          "clientHeight": 642
+        }
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "page": "Alerts",
+      "path": "/alerts/",
+      "viewport": "desktop",
+      "status": 200,
+      "metrics": {
+        "title": "CreditUnionAI News | AI Newsroom Alerts",
+        "url": "https://creditunionainews.com/alerts/",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 7308
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 193,
+          "bottom": 193
+        },
+        "ticker": {
+          "x": 0,
+          "y": 130,
+          "width": 1440,
+          "height": 63,
+          "bottom": 193
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [
+          "AI Newsroom Alerts",
+          "News",
+          "Insights",
+          "Topics",
+          "Intelligence",
+          "Episodes",
+          "Subscribe",
+          "Sponsorships",
+          "About",
+          "LinkedIn"
+        ],
+        "navLinkCount": 10,
+        "h1": {
+          "text": "AI Newsroom Alerts",
+          "rect": {
+            "x": 120,
+            "y": 283,
+            "width": 680,
+            "height": 51,
+            "bottom": 334
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 22,
+        "ctas": [
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 872,
+              "y": 42,
+              "width": 117,
+              "height": 46,
+              "bottom": 88
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 1274,
+              "y": 46,
+              "width": 46,
+              "height": 38,
+              "bottom": 84
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 318,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2587,
+              "y": 141,
+              "width": 792,
+              "height": 41,
+              "bottom": 182
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 661,
+              "y": 7221,
+              "width": 89,
+              "height": 26,
+              "bottom": 7246
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 120,
+              "y": 7262,
+              "width": 18,
+              "height": 18,
+              "bottom": 7280
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "AI Newsroom Alerts",
+            "rect": {
+              "x": 120,
+              "y": 283,
+              "width": 680,
+              "height": 51,
+              "bottom": 334
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H3",
+            "text": "OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "rect": {
+              "x": 141,
+              "y": 459,
+              "width": 243,
+              "height": 136,
+              "bottom": 595
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "OpenAI Adds BNY and Nubank Chiefs to Its Boards",
+            "rect": {
+              "x": 446,
+              "y": 459,
+              "width": 243,
+              "height": 102,
+              "bottom": 561
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Intellect Launches AI-First Suite for Credit Unions and Mutuals",
+            "rect": {
+              "x": 751,
+              "y": 501,
+              "width": 243,
+              "height": 136,
+              "bottom": 637
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Samsung Launches U.S. Galaxy Card With Barclays and Visa",
+            "rect": {
+              "x": 1056,
+              "y": 459,
+              "width": 243,
+              "height": 136,
+              "bottom": 595
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "FIS Tests Anthropic Mythos 5 on Its Own Financial Infrastructure",
+            "rect": {
+              "x": 141,
+              "y": 1672,
+              "width": 243,
+              "height": 136,
+              "bottom": 1808
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Visa Opens AI Financial Assistant Pilot to U.S. Issuers in August",
+            "rect": {
+              "x": 446,
+              "y": 1672,
+              "width": 243,
+              "height": 136,
+              "bottom": 1808
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Fuse Launches Free AI-Generated Application Portal for Credit Unions",
+            "rect": {
+              "x": 751,
+              "y": 1672,
+              "width": 243,
+              "height": 136,
+              "bottom": 1808
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Grasshopper Becomes First Bank Listed in Anthropic’s MCP Directory",
+            "rect": {
+              "x": 1056,
+              "y": 1672,
+              "width": 243,
+              "height": 136,
+              "bottom": 1808
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Fourthline and Veridas Agree to Merge AI Identity and Compliance Platforms",
+            "rect": {
+              "x": 141,
+              "y": 2759,
+              "width": 243,
+              "height": 170,
+              "bottom": 2929
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ConnectOne Deploys nCino AI Agents Across Commercial Lending",
+            "rect": {
+              "x": 446,
+              "y": 2759,
+              "width": 243,
+              "height": 136,
+              "bottom": 2895
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "White House Forms AI Cybersecurity Coordination Group for Critical Services",
+            "rect": {
+              "x": 751,
+              "y": 2759,
+              "width": 243,
+              "height": 136,
+              "bottom": 2895
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Clutch Makes Credit-Union Lending Automation System Generally Available",
+            "rect": {
+              "x": 1056,
+              "y": 2759,
+              "width": 243,
+              "height": 136,
+              "bottom": 2895
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Alloy Puts Agentic AI Into Production Across Identity and Fraud Workflows",
+            "rect": {
+              "x": 141,
+              "y": 3933,
+              "width": 243,
+              "height": 136,
+              "bottom": 4069
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Bank of America Reports 300-Plus Approved AI Use Cases and 400,000 Daily Prompts",
+            "rect": {
+              "x": 446,
+              "y": 3933,
+              "width": 243,
+              "height": 170,
+              "bottom": 4103
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Thredd Joins Visa Agentic Ready Program; Zilch Set as Early Issuer",
+            "rect": {
+              "x": 751,
+              "y": 3933,
+              "width": 243,
+              "height": 136,
+              "bottom": 4069
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Unit21 Adds TRM Labs Blockchain Signals to AI-Native Financial-Crime Workflows",
+            "rect": {
+              "x": 1056,
+              "y": 3933,
+              "width": 243,
+              "height": 170,
+              "bottom": 4103
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Fed Vice Chair Backs Risk-Proportionate AI Supervision for Smaller Banks",
+            "rect": {
+              "x": 141,
+              "y": 5055,
+              "width": 243,
+              "height": 136,
+              "bottom": 5191
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Canadian Regulator Warns Frontier AI Is Shrinking Banks’ Cyber Response Window",
+            "rect": {
+              "x": 446,
+              "y": 5055,
+              "width": 243,
+              "height": 170,
+              "bottom": 5225
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ITU Launches Trust and Identity Standards Work for AI Agents",
+            "rect": {
+              "x": 751,
+              "y": 5055,
+              "width": 243,
+              "height": 136,
+              "bottom": 5191
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "FCA Reports AI-Assisted Triage Cut Low-Risk Case Processing to Six Minutes",
+            "rect": {
+              "x": 1056,
+              "y": 5055,
+              "width": 243,
+              "height": 170,
+              "bottom": 5225
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Wall Street Banks Move AI Agents Into Daily Operations",
+            "rect": {
+              "x": 141,
+              "y": 6173,
+              "width": 243,
+              "height": 102,
+              "bottom": 6275
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "UK Places Four Cloud Giants Under Direct Financial Oversight",
+            "rect": {
+              "x": 446,
+              "y": 6173,
+              "width": 243,
+              "height": 102,
+              "bottom": 6275
+            },
+            "fontSize": "20px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts News Insights Topics Intelligence Episodes Subscribe Sponsorships About LinkedIn AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals AI NEWSROOM AI Newsroom Alerts Fast, source-linked developments with practical implications for credit-union leaders. Member Service Alert OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs. What this means for credit unions: Credit unions evaluating voice agents should "
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 23
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "Alerts",
+      "path": "/alerts/",
+      "viewport": "mobile",
+      "status": 200,
+      "metrics": {
+        "title": "CreditUnionAI News | AI Newsroom Alerts",
+        "url": "https://creditunionainews.com/alerts/",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 19356
+        },
+        "horizontalOverflow": false,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 123,
+          "bottom": 123
+        },
+        "ticker": {
+          "x": 0,
+          "y": 60,
+          "width": 390,
+          "height": 63,
+          "bottom": 123
+        },
+        "stickyHeader": "sticky",
+        "navLinks": [],
+        "navLinkCount": 0,
+        "h1": {
+          "text": "AI Newsroom Alerts",
+          "rect": {
+            "x": 16,
+            "y": 203,
+            "width": 359,
+            "height": 51,
+            "bottom": 254
+          },
+          "fontSize": "32px",
+          "lineHeight": "51.2px"
+        },
+        "cardCount": 22,
+        "ctas": [
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 213,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
+            "rect": {
+              "x": 2483,
+              "y": 71,
+              "width": 792,
+              "height": 41,
+              "bottom": 112
+            }
+          },
+          {
+            "label": "Subscribe",
+            "href": "https://creditunionainews.com/newsletter.html",
+            "rect": {
+              "x": 210,
+              "y": 19220,
+              "width": 89,
+              "height": 26,
+              "bottom": 19245
+            }
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/creditunionai-news/",
+            "rect": {
+              "x": 288,
+              "y": 19303,
+              "width": 18,
+              "height": 26,
+              "bottom": 19328
+            }
+          }
+        ],
+        "forms": [],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "AI Newsroom Alerts",
+            "rect": {
+              "x": 16,
+              "y": 203,
+              "width": 359,
+              "height": 51,
+              "bottom": 254
+            },
+            "fontSize": "32px"
+          },
+          {
+            "level": "H3",
+            "text": "OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+            "rect": {
+              "x": 37,
+              "y": 430,
+              "width": 317,
+              "height": 102,
+              "bottom": 532
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "OpenAI Adds BNY and Nubank Chiefs to Its Boards",
+            "rect": {
+              "x": 37,
+              "y": 1300,
+              "width": 317,
+              "height": 68,
+              "bottom": 1368
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Intellect Launches AI-First Suite for Credit Unions and Mutuals",
+            "rect": {
+              "x": 37,
+              "y": 2162,
+              "width": 317,
+              "height": 102,
+              "bottom": 2264
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Samsung Launches U.S. Galaxy Card With Barclays and Visa",
+            "rect": {
+              "x": 37,
+              "y": 3059,
+              "width": 317,
+              "height": 102,
+              "bottom": 3161
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "FIS Tests Anthropic Mythos 5 on Its Own Financial Infrastructure",
+            "rect": {
+              "x": 37,
+              "y": 3900,
+              "width": 317,
+              "height": 102,
+              "bottom": 4002
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Visa Opens AI Financial Assistant Pilot to U.S. Issuers in August",
+            "rect": {
+              "x": 37,
+              "y": 4742,
+              "width": 317,
+              "height": 102,
+              "bottom": 4844
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Fuse Launches Free AI-Generated Application Portal for Credit Unions",
+            "rect": {
+              "x": 37,
+              "y": 5558,
+              "width": 317,
+              "height": 102,
+              "bottom": 5660
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Grasshopper Becomes First Bank Listed in Anthropic’s MCP Directory",
+            "rect": {
+              "x": 37,
+              "y": 6402,
+              "width": 317,
+              "height": 102,
+              "bottom": 6504
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Fourthline and Veridas Agree to Merge AI Identity and Compliance Platforms",
+            "rect": {
+              "x": 37,
+              "y": 7218,
+              "width": 317,
+              "height": 102,
+              "bottom": 7320
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ConnectOne Deploys nCino AI Agents Across Commercial Lending",
+            "rect": {
+              "x": 37,
+              "y": 8114,
+              "width": 317,
+              "height": 102,
+              "bottom": 8216
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "White House Forms AI Cybersecurity Coordination Group for Critical Services",
+            "rect": {
+              "x": 37,
+              "y": 9010,
+              "width": 317,
+              "height": 102,
+              "bottom": 9112
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Clutch Makes Credit-Union Lending Automation System Generally Available",
+            "rect": {
+              "x": 37,
+              "y": 9906,
+              "width": 317,
+              "height": 102,
+              "bottom": 10008
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Alloy Puts Agentic AI Into Production Across Identity and Fraud Workflows",
+            "rect": {
+              "x": 37,
+              "y": 10778,
+              "width": 317,
+              "height": 102,
+              "bottom": 10880
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Bank of America Reports 300-Plus Approved AI Use Cases and 400,000 Daily Prompts",
+            "rect": {
+              "x": 37,
+              "y": 11649,
+              "width": 317,
+              "height": 136,
+              "bottom": 11785
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Thredd Joins Visa Agentic Ready Program; Zilch Set as Early Issuer",
+            "rect": {
+              "x": 37,
+              "y": 12553,
+              "width": 317,
+              "height": 102,
+              "bottom": 12655
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Unit21 Adds TRM Labs Blockchain Signals to AI-Native Financial-Crime Workflows",
+            "rect": {
+              "x": 37,
+              "y": 13369,
+              "width": 317,
+              "height": 136,
+              "bottom": 13505
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Fed Vice Chair Backs Risk-Proportionate AI Supervision for Smaller Banks",
+            "rect": {
+              "x": 37,
+              "y": 14220,
+              "width": 317,
+              "height": 136,
+              "bottom": 14356
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Canadian Regulator Warns Frontier AI Is Shrinking Banks’ Cyber Response Window",
+            "rect": {
+              "x": 37,
+              "y": 15097,
+              "width": 317,
+              "height": 136,
+              "bottom": 15233
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "ITU Launches Trust and Identity Standards Work for AI Agents",
+            "rect": {
+              "x": 37,
+              "y": 15920,
+              "width": 317,
+              "height": 102,
+              "bottom": 16022
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "FCA Reports AI-Assisted Triage Cut Low-Risk Case Processing to Six Minutes",
+            "rect": {
+              "x": 37,
+              "y": 16741,
+              "width": 317,
+              "height": 102,
+              "bottom": 16843
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "Wall Street Banks Move AI Agents Into Daily Operations",
+            "rect": {
+              "x": 37,
+              "y": 17535,
+              "width": 317,
+              "height": 102,
+              "bottom": 17637
+            },
+            "fontSize": "20px"
+          },
+          {
+            "level": "H3",
+            "text": "UK Places Four Cloud Giants Under Direct Financial Oversight",
+            "rect": {
+              "x": 37,
+              "y": 18299,
+              "width": 317,
+              "height": 102,
+              "bottom": 18401
+            },
+            "fontSize": "20px"
+          }
+        ],
+        "article": null,
+        "visibleTextStart": "AI Newsroom Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals AI NEWSROOM AI Newsroom Alerts Fast, source-linked developments with practical implications for credit-union leaders. Member Service Alert OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs. What this means for credit unions: Credit unions evaluating voice agents should require strong caller verification that does not rely on voice alone, least-privilege system access,",
+        "mobileMenu": {
+          "open": true,
+          "rect": {
+            "x": 16,
+            "y": 66,
+            "width": 359,
+            "height": 642,
+            "bottom": 708
+          },
+          "viewportHeight": 844,
+          "scrollHeight": 642,
+          "clientHeight": 642
+        }
+      },
+      "axeViolations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 23
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}
