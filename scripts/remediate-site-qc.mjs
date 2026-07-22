@@ -4,13 +4,16 @@ import path from 'node:path';
 const ROOT = process.cwd();
 const ORIGIN = 'https://creditunionainews.com';
 const TODAY = new Date().toISOString().slice(0, 10);
-const SKIP_DIRS = new Set(['.git', '.vercel', 'node_modules', 'api', 'automation']);
-const UTILITY_FILES = new Set(['corrections.html', 'intelligence/changes.html', 'privacy.html', 'subscribe.html']);
-const SITEMAP_EXCLUSIONS = new Set([
-  'index.html',
-  'intelligence/index.html',
-  ...UTILITY_FILES
+const SKIP_DIRS = new Set(['.git', '.vercel', 'node_modules', 'api', 'automation', 'tests']);
+const UTILITY_FILES = new Set([
+  'corrections.html',
+  'intelligence/changes.html',
+  'privacy.html',
+  'subscribe.html',
+  'newsletter-log.html',
+  'news/article-template.html'
 ]);
+const SITEMAP_EXCLUSIONS = new Set([...UTILITY_FILES]);
 
 const LINKEDIN_ICON = '<svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span>';
 
@@ -101,6 +104,10 @@ function canonicalPath(file) {
   return `/${file}`;
 }
 
+function isArticleFile(file) {
+  return (file.startsWith('news/') && file.endsWith('.html') && file !== 'news/article-template.html') || /^insight-[^/]+\.html$/.test(file);
+}
+
 function deriveDescription(html, file) {
   if (DESCRIPTION_OVERRIDES.has(file)) return DESCRIPTION_OVERRIDES.get(file);
   const heading = stripTags((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || '');
@@ -145,8 +152,99 @@ function fixAlertsHeading(html) {
   );
 }
 
+function inferDimensions(html, file) {
+  const text = stripTags(html).toLowerCase();
+  const functionId = /loan|lending|underwriting|collections/.test(text)
+    ? 'lending-collections'
+    : /payment|card|deposit|fednow|wallet/.test(text)
+      ? 'payments-deposits'
+      : /fraud|identity|compliance|regulat|governance|risk/.test(text)
+        ? 'risk-compliance'
+        : /cyber|security|cloud|api|data/.test(text)
+          ? 'it-data-cybersecurity'
+          : /member service|contact center|customer service|messaging|assistant/.test(text)
+            ? 'member-service'
+            : /vendor|core banking|provider/.test(text)
+              ? 'vendor-management'
+              : /marketing|growth|personalization/.test(text)
+                ? 'marketing-growth'
+                : /workforce|employee|training|skills/.test(text)
+                  ? 'hr-training'
+                  : 'operations';
+
+  const technology = /fraud/.test(text)
+    ? 'fraud-analytics'
+    : /identity|biometric/.test(text)
+      ? 'identity-biometrics'
+      : /agentic|ai agent|automation/.test(text)
+        ? 'agents-automation'
+        : /core banking|cloud|api|mcp/.test(text)
+          ? 'core-api-cloud'
+          : /underwriting|decisioning|analytics/.test(text)
+            ? 'data-decisioning'
+            : /chat|assistant|contact center|voice/.test(text)
+              ? 'conversational-ai'
+              : /personalization|recommendation/.test(text)
+                ? 'personalization'
+                : /privacy|cyber|security/.test(text)
+                  ? 'privacy-security'
+                  : /regulat|compliance|governance/.test(text)
+                    ? 'regtech-monitoring'
+                    : 'generative-ai';
+
+  const format = /checklist/.test(text)
+    ? 'checklist'
+    : /how to|guide|what .* should|framework/.test(text)
+      ? 'explainer'
+      : file.startsWith('insight-')
+        ? 'analysis'
+        : 'reported-news';
+  const audience = /board|director/.test(text) ? 'board' : /frontline|employee|agent/.test(text) ? 'practitioner' : 'executive';
+  const maturity = /future|long-term|next phase/.test(text) ? 'emerging' : 'practical-now';
+  return { section: file.startsWith('news/') ? 'news' : 'insights', functionId, technology, format, audience, maturity };
+}
+
+function ensureArticleDimensions(html, file) {
+  if (!isArticleFile(file) || /\bdata-section=["']/.test(html)) return html;
+  const dims = inferDimensions(html, file);
+  return html.replace(/<body\b([^>]*)>/i, `<body$1 data-section="${dims.section}" data-editorial-function="${dims.functionId}" data-technology="${dims.technology}" data-content-format="${dims.format}" data-audience="${dims.audience}" data-maturity="${dims.maturity}" data-qc-inferred="true">`);
+}
+
+function absoluteUrl(raw, file) {
+  if (!raw) return null;
+  try { return new URL(raw, `${ORIGIN}${canonicalPath(file)}`).href; } catch { return null; }
+}
+
+function ensureArticleSchema(html, file, description) {
+  if (!isArticleFile(file) || /["']@type["']\s*:\s*["'](?:NewsArticle|Article)["']/i.test(html)) return html;
+  const headline = stripTags((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || (html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || 'CreditUnionAI News article');
+  const firstImage = (html.match(/<img\b[^>]*src=["']([^"']+)["']/i) || [])[1] || '/assets/download.png';
+  const dateMatch = (html.match(/<time\b[^>]*datetime=["']([^"']+)["']/i) || [])[1]
+    || (html.match(/<meta\b[^>]*property=["']article:published_time["'][^>]*content=["']([^"']+)["']/i) || [])[1];
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': file.startsWith('news/') ? 'NewsArticle' : 'Article',
+    headline,
+    description,
+    mainEntityOfPage: `${ORIGIN}${canonicalPath(file)}`,
+    image: [absoluteUrl(firstImage, file)],
+    author: { '@type': 'Organization', name: 'CreditUnionAI News' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'CreditUnionAI News',
+      logo: { '@type': 'ImageObject', url: `${ORIGIN}/assets/download.png` }
+    },
+    dateModified: TODAY
+  };
+  if (dateMatch) schema.datePublished = dateMatch;
+  const tag = `  <script type="application/ld+json">${JSON.stringify(schema)}</script>\n`;
+  return html.replace(/<\/head>/i, `${tag}</head>`);
+}
+
 function validPublicHtml(file) {
-  return file.endsWith('.html') && !file.startsWith('templates/') && !SITEMAP_EXCLUSIONS.has(file);
+  if (!file.endsWith('.html') || file.startsWith('templates/') || file.startsWith('tests/')) return false;
+  if (SITEMAP_EXCLUSIONS.has(file)) return false;
+  return true;
 }
 
 function sitemapUrl(file) {
@@ -154,7 +252,7 @@ function sitemapUrl(file) {
 }
 
 function writeSitemaps(files) {
-  const urls = files.filter(validPublicHtml).map(sitemapUrl).sort((a, b) => {
+  const urls = [...new Set(files.filter(validPublicHtml).map(sitemapUrl))].sort((a, b) => {
     if (a === `${ORIGIN}/`) return -1;
     if (b === `${ORIGIN}/`) return 1;
     return a.localeCompare(b);
@@ -162,6 +260,7 @@ function writeSitemaps(files) {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </url>`).join('\n')}\n</urlset>\n`;
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
   fs.writeFileSync(path.join(ROOT, 'sitemap.txt'), `${urls.join('\n')}\n`);
+  return urls.length;
 }
 
 function writeRedirectConfig() {
@@ -170,10 +269,16 @@ function writeRedirectConfig() {
   if (fs.existsSync(configPath)) {
     try { config = JSON.parse(fs.readFileSync(configPath, 'utf8')); } catch { config = {}; }
   }
-  const redirects = Array.isArray(config.redirects) ? config.redirects : [];
-  const retained = redirects.filter((entry) => entry.source !== '/subscribe.html');
-  retained.push({ source: '/subscribe.html', destination: '/newsletter.html', permanent: true });
-  config.redirects = retained;
+  const managedSources = new Set(['/subscribe.html', '/intelligence/index.html', '/newsletter-log.html', '/news/article-template.html', '/tests/:path*']);
+  const redirects = Array.isArray(config.redirects) ? config.redirects.filter((entry) => !managedSources.has(entry.source)) : [];
+  redirects.push(
+    { source: '/subscribe.html', destination: '/newsletter.html', permanent: true },
+    { source: '/intelligence/index.html', destination: '/intelligence/', permanent: true },
+    { source: '/newsletter-log.html', destination: '/newsletter.html', permanent: true },
+    { source: '/news/article-template.html', destination: '/news.html', permanent: true },
+    { source: '/tests/:path*', destination: '/', permanent: false }
+  );
+  config.redirects = redirects;
   fs.writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
 }
 
@@ -197,17 +302,18 @@ for (const file of htmlFiles) {
     html = ensureViewport(html);
   }
 
+  let description = '';
   if (!file.startsWith('templates/') && file !== 'subscribe.html') {
-    const description = DESCRIPTION_OVERRIDES.get(file) || (() => {
-      const existing = (html.match(/<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i) || [])[1];
-      return existing && existing.trim().length > 20 ? existing.trim() : deriveDescription(html, file);
-    })();
+    const existing = (html.match(/<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i) || [])[1];
+    description = DESCRIPTION_OVERRIDES.get(file) || (existing && existing.trim().length > 20 ? existing.trim() : deriveDescription(html, file));
     html = upsertMeta(html, 'description', description);
     html = upsertCanonical(html, `${ORIGIN}${canonicalPath(file)}`);
   }
 
   if (UTILITY_FILES.has(file) && file !== 'subscribe.html') html = upsertMeta(html, 'robots', 'noindex,follow');
   if (file === 'alerts/index.html') html = fixAlertsHeading(html);
+  html = ensureArticleDimensions(html, file);
+  html = ensureArticleSchema(html, file, description || deriveDescription(html, file));
 
   html = html
     .replace(/\.\.\/alerts\/#fis-tests-anthropic-mythos-5-financial-infrastructure/g, '/alerts/')
@@ -221,6 +327,6 @@ for (const file of htmlFiles) {
 
 writeSubscribeFallback();
 writeRedirectConfig();
-writeSitemaps(allFiles);
+const sitemapEntries = writeSitemaps(allFiles);
 
-console.log(JSON.stringify({ changedHtmlFiles: changed, sitemapEntries: allFiles.filter(validPublicHtml).length, date: TODAY }, null, 2));
+console.log(JSON.stringify({ changedHtmlFiles: changed, sitemapEntries, date: TODAY }, null, 2));
