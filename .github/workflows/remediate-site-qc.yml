@@ -1,0 +1,49 @@
+name: Remediate Site QC
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/remediate-site-qc.mjs
+      - .github/workflows/remediate-site-qc.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: remediate-site-qc
+  cancel-in-progress: false
+
+jobs:
+  remediate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply deterministic remediation
+        run: node scripts/remediate-site-qc.mjs
+
+      - name: Validate generated files
+        run: |
+          git diff --check
+          node -e "JSON.parse(require('fs').readFileSync('vercel.json','utf8'))"
+          grep -q '<urlset' sitemap.xml
+          grep -q 'AI Newsroom Alerts' alerts/index.html
+          ! grep -R '<a[^>]*>Corrections</a>' --include='*.html' .
+          ! grep -R '>Changes</a>' --include='*.html' intelligence
+
+      - name: Commit remediation
+        run: |
+          if git diff --quiet; then
+            echo 'No remediation changes required.'
+            exit 0
+          fi
+          git config user.name 'CUAI Site QC'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          git commit -m 'QC: standardize site chrome and public utility pages'
+          git push origin HEAD:main
