@@ -1134,102 +1134,28 @@
   const navLinks = document.querySelector('.nav-links');
 
   if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+    const setMenu = (open) => {
+      navLinks.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', String(open));
+      navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    };
+    navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+    navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setMenu(false); });
+    document.addEventListener('click', (event) => {
+      if (!navLinks.classList.contains('open')) return;
+      if (!navLinks.contains(event.target) && !navToggle.contains(event.target)) setMenu(false);
     });
-
-    navLinks.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => navLinks.classList.remove('open'));
-    });
-
-    const existingAlertsLink = navLinks.querySelector('a[href$="/alerts/"]');
-    if (existingAlertsLink) {
-      existingAlertsLink.textContent = 'AI Newsroom Alerts';
-    } else {
-      const alertsLink = document.createElement('a');
-      alertsLink.href = '/alerts/';
-      alertsLink.textContent = 'AI Newsroom Alerts';
-      alertsLink.addEventListener('click', () => navLinks.classList.remove('open'));
-      const firstNav = navLinks.querySelector('a');
-      if (firstNav) {
-        firstNav.insertAdjacentElement('afterend', alertsLink);
-      } else {
-        navLinks.appendChild(alertsLink);
-      }
-    }
-
-    const sponsorshipAnchors = Array.from(navLinks.querySelectorAll('a')).filter((link) => {
-      const href = link.getAttribute('href') || '';
-      const normalizedHref = normalizePath(new URL(href, window.location.href).pathname);
-      return normalizedHref === '/sponsorships';
-    });
-
-    if (!sponsorshipAnchors.length) {
-      const sponsorAnchor = document.createElement('a');
-      sponsorAnchor.href = '/sponsorships/';
-      sponsorAnchor.textContent = 'Sponsorships';
-      sponsorAnchor.addEventListener('click', () => navLinks.classList.remove('open'));
-      const aboutLink = navLinks.querySelector('a[href*="about"]');
-      if (aboutLink) {
-        aboutLink.insertAdjacentElement('beforebegin', sponsorAnchor);
-      } else {
-        navLinks.appendChild(sponsorAnchor);
-      }
-    } else if (sponsorshipAnchors.length > 1) {
-      sponsorshipAnchors.slice(1).forEach((duplicate) => duplicate.remove());
-    }
   }
 
-  document.querySelectorAll('.footer .footer-links').forEach((links) => {
-    if (!links) return;
-
-    const existingFooterLink = links.querySelector('a[href$="/alerts/"]');
-    if (existingFooterLink) {
-      existingFooterLink.textContent = 'AI Newsroom Alerts';
-      existingFooterLink.href = '/alerts/';
-      return;
-    }
-
-    const alertsFooterLink = document.createElement('a');
-    alertsFooterLink.href = '/alerts/';
-    alertsFooterLink.textContent = 'AI Newsroom Alerts';
-
-    const firstFooterLink = links.querySelector('a');
-    if (firstFooterLink) {
-      firstFooterLink.insertAdjacentElement('beforebegin', alertsFooterLink);
-    } else {
-      links.appendChild(alertsFooterLink);
-    }
-  });
-
-  document.querySelectorAll('.footer .footer-links').forEach((links) => {
-    if (!links) return;
-
-    const sponsorshipLink = links.querySelector(
-      'a[href$="/sponsorships/"], a[href$="sponsorships.html"], a[href$="/sponsorships"]'
-    );
-
-    if (sponsorshipLink) return;
-
-    const sponsorAnchor = document.createElement('a');
-    sponsorAnchor.href = '/sponsorships/';
-    sponsorAnchor.textContent = 'Sponsorships';
-
-    const aboutLink = links.querySelector('a[href*="about"]');
-    if (aboutLink) {
-      aboutLink.insertAdjacentElement('beforebegin', sponsorAnchor);
-    } else {
-      links.appendChild(sponsorAnchor);
-    }
-  });
-
   const currentPath = normalizePath(window.location.pathname);
-
   document.querySelectorAll('.nav-links a').forEach((link) => {
     const linkPath = normalizePath(new URL(link.getAttribute('href'), window.location.origin).pathname);
-    if (linkPath === currentPath || (currentPath === '/' && linkPath === '/index.html')) {
-      link.classList.add('active');
-    }
+    const active = linkPath === currentPath
+      || (currentPath.startsWith('/news/') && linkPath === '/news.html')
+      || (currentPath.startsWith('/insight-') && linkPath === '/insights.html')
+      || (currentPath.startsWith('/intelligence/') && linkPath === '/intelligence');
+    if (active) link.classList.add('active');
   });
 
   const newsletterForm = document.querySelector('#newsletter-form');
@@ -1408,43 +1334,24 @@
 
   const header = document.querySelector('header');
   const buildTicker = () => {
-    if (!header || !tickerAlerts.length) return;
-
+    const current = normalizePath(window.location.pathname);
+    if (!header || !tickerAlerts.length || !['/', '/alerts'].includes(current)) return;
     const tickerBar = document.createElement('div');
     tickerBar.className = 'ticker-bar';
     tickerBar.innerHTML = `
-      <div class="container ticker-track" aria-label="Latest updates">
-        <a class="ticker-label" href="/alerts/">AI Newsroom Alerts</a>
-        <div class="ticker-window">
-          <div class="ticker-strip" role="list"></div>
-        </div>
+      <div class="container ticker-track" aria-label="Latest alerts">
+        <a class="ticker-label" href="/alerts/">Latest Alerts</a>
+        <div class="ticker-window"><div class="ticker-strip"></div></div>
       </div>
     `;
-
-    header.appendChild(tickerBar);
-
+    header.insertAdjacentElement('afterend', tickerBar);
     const strip = tickerBar.querySelector('.ticker-strip');
     if (!strip) return;
-
-    const renderItems = () =>
-      tickerAlerts
-        .map(
-          (item) => `
-            <a class="ticker-item" href="/alerts/#${item.slug}" role="listitem">
-              <span class="ticker-pill">${item.label}</span>
-              <span class="ticker-text">${item.headline}</span>
-            </a>
-          `
-        )
-        .join('');
-
+    const items = tickerAlerts.slice(0, 3);
+    const renderItems = () => items.map((item) => `<a class="ticker-item" href="/alerts/#${item.slug}"><span class="ticker-pill">${item.label}</span><span class="ticker-text">${item.headline}</span></a>`).join('');
     strip.innerHTML = `${renderItems()}${renderItems()}`;
-
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const toggleAnimation = () => {
-      strip.style.animationPlayState = prefersReducedMotion.matches ? 'paused' : 'running';
-    };
-
+    const toggleAnimation = () => { strip.style.animationPlayState = prefersReducedMotion.matches ? 'paused' : 'running'; };
     toggleAnimation();
     prefersReducedMotion.addEventListener('change', toggleAnimation);
   };
@@ -1452,38 +1359,32 @@
   buildTicker();
 
   const alertsList = document.querySelector('#alerts-list');
+  const alertSearch = document.querySelector('#alert-search');
+  const alertCount = document.querySelector('#alert-count');
+  const alertsMore = document.querySelector('#alerts-more');
+  const showMoreAlerts = document.querySelector('#show-more-alerts');
+  let alertLimit = 12;
 
   const renderAlerts = () => {
     if (!alertsList) return;
-
-    if (!preparedAlerts.length) {
-      alertsList.innerHTML = `
-        <article class="card alert-card" aria-live="polite">
-          <div class="alert-content">
-            <h3>No alerts in the last 14 days. Check back soon.</h3>
-          </div>
-        </article>
-      `;
-      return;
+    const query = (alertSearch?.value || '').trim().toLowerCase();
+    const filtered = preparedAlerts.filter((item) => !query || [item.label, item.headline, item.summary, item.impact, item.sourceName].join(' ').toLowerCase().includes(query));
+    const visible = filtered.slice(0, alertLimit);
+    if (alertCount) alertCount.textContent = query ? `${filtered.length} matching alerts` : `${filtered.length} recent alerts`;
+    if (!filtered.length) {
+      alertsList.innerHTML = '<article class="card alert-card" aria-live="polite"><div class="alert-content"><h3>No matching alerts.</h3><p>Try a broader topic or vendor name.</p></div></article>';
+    } else {
+      alertsList.innerHTML = visible.map((item) => `
+        <article class="card alert-card" id="${item.slug}">
+          <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span></div>
+          <div class="alert-content"><h3>${item.headline}</h3><p class="alert-summary">${item.summary}</p><p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p><p class="alert-meta"><span class="alert-date">${item.date || ''}</span> · <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p></div>
+        </article>`).join('');
     }
-
-    alertsList.innerHTML = preparedAlerts
-      .map(
-        (item) => `
-          <article class="card alert-card" id="${item.slug}">
-            <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span></div>
-            <div class="alert-content">
-              <h3>${item.headline}</h3>
-              <p class="alert-summary">${item.summary}</p>
-              <p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p>
-              <p class="alert-meta"><span class="alert-date">${item.date || ''}</span> · <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p>
-            </div>
-          </article>
-        `
-      )
-      .join('');
+    if (alertsMore) alertsMore.hidden = visible.length >= filtered.length;
   };
 
+  alertSearch?.addEventListener('input', () => { alertLimit = 12; renderAlerts(); });
+  showMoreAlerts?.addEventListener('click', () => { alertLimit += 12; renderAlerts(); });
   renderAlerts();
 
 

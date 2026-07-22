@@ -27,39 +27,35 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-        <header>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
     <div class="container navbar">
       <a href="/" class="brand" aria-label="CreditUnionAI News home">
-        <img src="/assets/download.png" alt="CreditUnionAI News logo" class="brand-logo">
+        <img src="/assets/download.png" alt="CreditUnionAI News" class="brand-logo">
       </a>
-      <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+      <button type="button" class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
         <span></span><span></span><span></span>
-      </div>
-      <nav class="nav-links" aria-label="Primary navigation">
+      </button>
+      <nav id="primary-navigation" class="nav-links" aria-label="Primary navigation">
         <a href="/alerts/">Alerts</a>
         <a href="/news.html">News</a>
         <a href="/insights.html">Insights</a>
-        <a href="/topics.html">Topics</a>
         <a href="/intelligence/">Intelligence</a>
         <a href="/episodes.html">Episodes</a>
-        <a href="/newsletter.html">Subscribe</a>
-        <a href="/about.html">About</a>
-        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span></a>
+        <a class="nav-subscribe" href="/newsletter.html">Subscribe</a>
+        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="Follow CreditUnionAI News on LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span></a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <p class="tag">CreditUnionAI News</p>
           <h1>Artificial Intelligence News and Analysis for Credit Unions</h1>
           <p>Coverage of artificial intelligence regulation, fraud, operations, vendors, and strategy for credit unions.</p>
-          <div class="button-row">
-            <a class="btn btn-primary" href="episodes.html">Listen to Latest Episode</a>
-            <a class="btn btn-outline" href="newsletter.html">Get Weekly Briefing</a>
-          </div>
+          <div class="button-row"><a class="btn btn-primary" href="newsletter.html">Get Weekly Briefing</a><a class="btn btn-outline" href="news.html">Read Latest News</a></div>
         </div>
       </div>
     </section>
@@ -81,7 +77,7 @@
             <p class="lead">Curated headlines on AI regulation, vendor moves, and frontline member experience.</p>
           </div>
         </div>
-        <div class="grid cards-3">
+        <div class="grid cards-3 home-news-grid">
           <article class="card">
             <div class="card-image"><img src="assets/bank-of-america-ericaassist-generative-ai.jpg" alt="Contact-center employee using an abstract real-time guidance interface during a client call"></div>
             <div class="meta"><span class="tag">Reporting</span><span class="tag">Member Service</span><span class="tag">Generative AI</span></div>
@@ -89,23 +85,21 @@
             <p>EricaAssist offers credit unions a practical model for governed, employee-facing generative AI inside service workflows.</p>
             <div class="actions"><a class="link" href="/news/bank-of-america-ericaassist-generative-ai.html">Read more →</a></div>
           </article>
-
-          <article class="card">
+<article class="card">
             <div class="card-image"><img src="assets/osfi-agentic-ai-risk-controls-credit-unions.jpg" alt="Layered paper-cut clock and security vault illustrating compressed AI risk response time"></div>
             <div class="meta"><span class="tag">Reporting</span><span class="tag">AI Governance</span><span class="tag">Cybersecurity</span><span class="tag">Third-Party Risk</span></div>
             <h3>Canada’s New AI Risk Bulletin Gives Credit Unions a Control Checklist</h3>
             <p>OSFI’s new guidance turns agentic AI risk into concrete controls for access, data, incident response and vendor resilience.</p>
             <div class="actions"><a class="link" href="/news/osfi-agentic-ai-risk-controls-credit-unions.html">Read more →</a></div>
           </article>
-
-          <article class="card">
+<article class="card">
             <div class="card-image"><img src="assets/banks-ai-agents-daily-operations-credit-unions.jpg" alt="Isometric financial operations network showing AI tasks passing through security and human-approval gates"></div>
             <div class="meta"><span class="tag">Reporting</span><span class="tag">AI Agents</span><span class="tag">Operations</span><span class="tag">Governance</span></div>
             <h3>Major Banks Move AI Agents Into Daily Operations</h3>
             <p>AI agents are gaining logins, tasks and system access. Credit unions need named owners, permission controls and human approval gates.</p>
             <div class="actions"><a class="link" href="/news/banks-ai-agents-daily-operations-credit-unions.html">Read more →</a></div>
           </article>
-          <article class="card">
+<article class="card">
             <div class="card-image">
               <img src="assets/senate-ai-hearing-credit-unions-2026.jpg" alt="Credit union executives reviewing an artificial intelligence governance dashboard in a boardroom">
             </div>
@@ -114,7 +108,7 @@
             <p>Policymakers are pairing AI's potential for faster, more affordable financial services with demands for consumer protection and accountability.</p>
             <div class="actions"><a class="link" href="/news/senate-ai-hearing-credit-unions-2026.html">Read more →</a></div>
           </article>
-          <article class="card">
+<article class="card">
             <div class="card-image">
               <img src="assets/ai-acceptable-use-policy-credit-unions.png" alt="Credit union leaders reviewing AI governance policies in a modern boardroom">
             </div>
@@ -123,7 +117,7 @@
             <p>Practical rules that protect member data, preserve human judgment, and give teams clear boundaries for employee AI use.</p>
             <div class="actions"><a class="link" href="/news/ai-acceptable-use-policy-credit-unions.html">Read more →</a></div>
           </article>
-          <article class="card">
+<article class="card">
             <div class="card-image">
               <img src="assets/Articleimage3.png" alt="AI vendor risk and due diligence dashboard illustration for credit unions">
             </div>
@@ -132,130 +126,13 @@
             <p>A practical way to evaluate AI vendors before tools become embedded in member, lending, fraud, or operations workflows.</p>
             <div class="actions"><a class="link" href="/news/ai-vendor-due-diligence-checklist-credit-unions.html">Read more →</a></div>
           </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/credit-union-board-ai-risk-oversight.png" alt="Credit union board members reviewing AI risk oversight materials">
-            </div>
-            <div class="meta"><span class="tag">Analysis</span><span class="tag">Boards</span><span class="tag">Governance</span></div>
-            <h3>How Credit Union Boards Should Oversee AI Risk</h3>
-            <p>Board-level questions for overseeing AI adoption, vendor risk, data protection, human review, and accountability.</p>
-            <div class="actions"><a class="link" href="/news/credit-union-board-ai-risk-oversight.html">Read more →</a></div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/MSOptimind.jpg" alt="Microsoft Optimind governance illustration">
-            </div>
-            <div class="meta"><span class="tag">Analysis</span><span class="tag">Governance</span><span class="tag">Operations</span><span class="tag">Strategy</span></div>
-            <h3>Why Microsoft’s Optimind Launch Signals the Next Phase of AI Adoption for Credit Unions</h3>
-            <p>The shift from AI experiments to governed, operational AI is now unavoidable.</p>
-            <div class="actions">
-              <a class="link" href="/news/microsoft-optimind-ai-governance-credit-unions.html">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/pushalerts.jpg" alt="Mobile push notification alert illustration">
-            </div>
-            <div class="meta"><span class="tag">Analysis</span><span class="tag">Messaging</span><span class="tag">Member Experience</span><span class="tag">Engagement</span></div>
-            <h3>How AI Is Reshaping Credit Union Member Messaging Without Losing Trust</h3>
-            <p>Why AI-assisted messaging is emerging as a practical, trust-preserving entry point for credit unions.</p>
-            <div class="actions">
-              <a class="link" href="/news/ai-credit-union-member-messaging.html">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/CUAIusedcases.jpg" alt="Credit union AI use cases illustration">
-            </div>
-            <div class="meta"><span class="tag">Analysis</span><span class="tag">Operations</span><span class="tag">Strategy</span><span class="tag">Member Experience</span></div>
-            <h3>Credit Union AI Use Cases: Practical Examples That Matter Today</h3>
-            <p>Practical applications across fraud, lending, compliance, marketing, and internal productivity.</p>
-            <div class="actions">
-              <a class="link" href="/insight-credit-union-ai-use-cases.html">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/ChatGPTArticle.jpg" alt="ChatGPT Health banking interface illustration">
-            </div>
-            <div class="meta"><span class="tag">Analysis</span><span class="tag">AI Platforms</span><span class="tag">Data Aggregation</span><span class="tag">Member Experience</span><span class="tag">Strategy</span></div>
-            <h3>ChatGPT Health Signals How AI Will Become the Front Door for Banking</h3>
-            <p>ChatGPT Health previews how AI platforms could become the primary interface for banking and fintech.</p>
-            <div class="actions">
-              <a class="link" href="/news.html#article-chatgpt-health-ai-banking-front-door">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/CESArticleimage.jpg" alt="CES 2026 AI infrastructure illustration">
-            </div>
-            <div class="meta"><span class="tag">Reporting</span><span class="tag">Payments</span><span class="tag">Authentication</span><span class="tag">Fraud</span><span class="tag">Governance</span></div>
-            <h3>CES 2026 Signals a Shift Toward AI as Financial Infrastructure, Not Experimentation</h3>
-            <p>Fintech and payments vendors emphasized AI as embedded infrastructure for authentication, fraud prevention, compliance workflows, and transaction decisioning.</p>
-            <div class="actions">
-              <a class="link" href="/news.html#article-ces-2026-ai-financial-infrastructure">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/ArticleImage17.jpg" alt="Credit union AI benchmark illustration">
-            </div>
-            <div class="meta"><span class="tag">Analysis</span><span class="tag">Governance</span><span class="tag">Fraud</span><span class="tag">Operations</span><span class="tag">Strategy</span></div>
-            <h3>AI Benchmarks for Credit Unions: What “Good” Looks Like Going Into 2026</h3>
-            <p>Practical benchmarks for AI governance, fraud defenses, employee enablement, and operational gains heading into 2026.</p>
-            <div class="actions">
-              <a class="link" href="/news.html#article-ai-benchmarks-credit-unions-2026">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/Articalimage6.jpg" alt="AI assistant guidance illustration">
-            </div>
-            <div class="meta"><span class="tag">Analysis</span><span class="tag">Productivity</span><span class="tag">Operations</span><span class="tag">Safety</span></div>
-            <h3>ChatGPT 5.2: Practical ways staff can use it without creating risk</h3>
-            <p>How frontline, operations, lending, and compliance teams can safely benefit from the latest assistant improvements.</p>
-            <div class="actions">
-              <a class="link" href="/news.html#article-chatgpt-5-2-credit-union-uses">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/Articleimage4.png" alt="Credit union AI operations illustration">
-            </div>
-            <div class="meta"><span class="tag">Reporting</span><span class="tag">Agentic AI</span><span class="tag">Operations</span><span class="tag">Governance</span></div>
-            <h3>Posh introduces “AI Operating Procedures” for regulated banking workflows</h3>
-            <p>Posh framed structured AI Operating Procedures to pair agentic automation with bank-grade controls and auditability.</p>
-            <div class="actions">
-              <a class="link" href="/news.html#article-posh-ai-operating-procedures-banking">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/Articleimage5.png" alt="Financial analytics illustration">
-            </div>
-            <div class="meta"><span class="tag">Reporting</span><span class="tag">Fraud</span><span class="tag">Lending</span><span class="tag">Verification</span></div>
-            <h3>Investment firm takes controlling stake in Informed.IQ</h3>
-            <p>Invictus Growth Partners’ investment underscores lender demand for AI fraud detection and document verification.</p>
-            <div class="actions">
-              <a class="link" href="/news.html#article-informed-iq-investment-ai-loan-fraud">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-image">
-              <img src="assets/Articleimage2.png" alt="Customer support AI illustration">
-            </div>
-            <div class="meta"><span class="tag">Reporting</span><span class="tag">Customer Service</span><span class="tag">AI</span><span class="tag">Operations</span></div>
-            <h3>Klarna and others reset expectations for customer service AI</h3>
-            <p>Reuters highlights firms keeping escalation paths in place as AI handles simpler service requests.</p>
-            <div class="actions">
-              <a class="link" href="/news.html#article-klarna-ai-customer-service-limits">Read more →</a>
-            </div>
-          </article>
+<div class="home-news-actions"><a class="btn btn-primary" href="/news.html">View all News</a><a class="btn" href="/topics.html">Browse by topic</a></div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="growth-band"><div class="container"><div class="growth-band-shell"><div><p class="eyebrow">CreditUnionAI Weekly Briefing</p><h2>One useful briefing. Every Friday.</h2><p>The developments credit-union leaders need to understand, translated into practical operating implications.</p></div><div class="button-row"><a class="btn btn-primary" href="/newsletter.html">Get the weekly briefing</a></div></div></div></section>
+<section class="section">
       <div class="container">
           <div class="section-header">
             <div>
@@ -266,10 +143,9 @@
           </div>
           <div class="card">
             <div class="meta"><span class="tag">Podcast</span></div>
-            <h3>Podcast Episode 2 — “Why Credit Unions Can’t Wait on AI”</h3>
-            <p>In this SEO-optimized briefing, we explain why artificial intelligence has become essential to credit-union strategy, growth, and member experience. Learn how AI is improving underwriting speed, strengthening fraud detection, enhancing contact-center performance, and streamlining key operational processes across the credit-union industry. This episode breaks down real use cases, early-adopter advantages, and the practical steps credit unions can take to begin implementing AI today. If you’re evaluating AI for lending, payments, risk, compliance, or digital transformation, this concise analysis will help you understand what’s working, what’s changing, and what leaders need to do next. CreditUnionAI News delivers clear, jargon-free insights designed for executives navigating rapid technology change in financial services.</p>
+            <h3>Podcast Episode 2 — “Why Credit Unions Can’t Wait on AI”</h3><p class="podcast-summary">A concise discussion of where AI is already improving lending, fraud prevention, member service and operations—and what credit-union leaders should do next.</p>
             <div class="audio-player">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5TCLteYhY7R2gUDp5MTGCd?utm_source=generator" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe title="CreditUnionAI News media player" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5TCLteYhY7R2gUDp5MTGCd?utm_source=generator" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
           </div>
       </div>
@@ -277,20 +153,23 @@
 
   </main>
 
-        <footer class="footer">
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;">
-      <div>© CreditUnionAI News</div>
+          <footer class="footer">
+    <div class="container footer-shell">
+      <div class="footer-brand">© CreditUnionAI News</div>
       <div class="footer-links">
+        <a href="/alerts/">Alerts</a>
         <a href="/news.html">News</a>
         <a href="/insights.html">Insights</a>
         <a href="/topics.html">Topics</a>
         <a href="/intelligence/">Intelligence</a>
+        <a href="/episodes.html">Episodes</a>
         <a href="/newsletter.html">Subscribe</a>
+        <a href="/sponsorships/">Sponsorships</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="/corrections.html">Editorial Standards</a>
         <a href="/privacy.html">Privacy</a>
-        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span></a>
+        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="Follow CreditUnionAI News on LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span></a>
       </div>
     </div>
   </footer>
