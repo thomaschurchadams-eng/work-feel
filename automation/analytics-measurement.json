@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "privacy": {
     "prohibitedParameters": ["email", "first_name", "last_name", "full_name", "article_text", "form_value"],
     "rule": "Never send personally identifiable information or free-form user input to analytics."
@@ -28,5 +28,19 @@
     "data-content-format": "one format id",
     "data-audience": "one audience id",
     "data-maturity": "one maturity id"
+  },
+  "distributionTracking": {
+    "linkedin": {
+      "utm_source": "linkedin",
+      "utm_medium": "organic_social",
+      "utm_campaign": "cuai_news",
+      "utm_content": "Use the immutable automation/social-queue.json item id.",
+      "rule": "Keep articleUrl canonical. Store the tagged URL separately as distributionUrl and use distributionUrl in the LinkedIn post copy."
+    }
+  },
+  "growthWindows": {
+    "operationalDays": 7,
+    "trendDays": 28,
+    "rule": "Use the 7-day view for current operations and the 28-day view for directional decisions. Do not treat pending or unavailable metrics as zero."
   }
 }
