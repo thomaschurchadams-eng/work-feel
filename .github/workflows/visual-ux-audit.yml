@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: rendered-visual-ux-audit
+  group: final-ux-write
   cancel-in-progress: false
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Audit production rendering
         run: node scripts/visual-ux-audit.mjs
-      - name: Commit final no-ticker verification
+      - name: Commit final accessible verification
         run: |
           git config user.name 'CUAI UX Audit'
           git config user.email 'actions@users.noreply.github.com'
@@ -41,4 +41,5 @@ jobs:
             exit 0
           fi
           git commit -m 'Audit: confirm accessible rendered UX baseline'
+          git pull --rebase origin main
           git push origin HEAD:main
