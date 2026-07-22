@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T19:57:46.039Z",
+  "generatedAt": "2026-07-22T20:03:49.277Z",
   "results": [
     {
       "page": "Home",
@@ -83,20 +83,9 @@
             "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
             "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
             "rect": {
-              "x": 253,
+              "x": 245,
               "y": 84,
-              "width": 790,
-              "height": 39,
-              "bottom": 123
-            }
-          },
-          {
-            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
-            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
-            "rect": {
-              "x": 2517,
-              "y": 84,
-              "width": 790,
+              "width": 1075,
               "height": 39,
               "bottom": 123
             }
@@ -382,19 +371,13 @@
           }
         ],
         "article": null,
-        "visibleTextStart": "Skip to content Alerts News Insights Intelligence Episodes Subscribe LinkedIn Latest Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals CreditUnionAI News Artificial Intelligence News and Analysis for Credit Unions Coverage of artificial intelligence regulation, fraud, operations, vendors, and strategy for credit unions. Get Weekly Briefing Read Latest News LATEST AI NEWSROOM ALERT Member Service Alert Jul 22, 2026 View all Alerts OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring "
+        "visibleTextStart": "Skip to content Alerts News Insights Intelligence Episodes Subscribe LinkedIn Latest Alert Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support CreditUnionAI News Artificial Intelligence News and Analysis for Credit Unions Coverage of artificial intelligence regulation, fraud, operations, vendors, and strategy for credit unions. Get Weekly Briefing Read Latest News LATEST AI NEWSROOM ALERT Member Service Alert Jul 22, 2026 View all Alerts OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs. What this means for credit unions: Credit unions evaluating voice agents should require strong caller verification that does not rely on voice alone, least-privilege system access, explicit approval boundaries, complete action logs and reliable staff handoffs. Pilots should also test accuracy, accessibility, complaint handl"
       },
       "axeViolations": [
         {
           "id": "aria-required-children",
           "impact": "critical",
           "description": "Ensure elements with an ARIA role that require child roles contain them",
-          "nodes": 1
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "description": "Ensure all page content is contained by landmarks",
           "nodes": 1
         }
       ]
@@ -413,7 +396,7 @@
         },
         "document": {
           "width": 390,
-          "height": 7144
+          "height": 6046
         },
         "horizontalOverflow": false,
         "header": {
@@ -445,7 +428,7 @@
           "fontSize": "32px",
           "lineHeight": "36.8px"
         },
-        "cardCount": 7,
+        "cardCount": 5,
         "ctas": [
           {
             "label": "Get Weekly Briefing",
@@ -503,36 +486,14 @@
             }
           },
           {
-            "label": "Read more →",
-            "href": "https://creditunionainews.com/news/ai-acceptable-use-policy-credit-unions.html",
-            "rect": {
-              "x": 37,
-              "y": 4757,
-              "width": 116,
-              "height": 26,
-              "bottom": 4782
-            }
-          },
-          {
-            "label": "Read more →",
-            "href": "https://creditunionainews.com/news/ai-vendor-due-diligence-checklist-credit-unions.html",
-            "rect": {
-              "x": 37,
-              "y": 5310,
-              "width": 116,
-              "height": 26,
-              "bottom": 5336
-            }
-          },
-          {
             "label": "Browse by topic",
             "href": "https://creditunionainews.com/topics.html",
             "rect": {
               "x": 16,
-              "y": 5451,
+              "y": 4352,
               "width": 359,
               "height": 52,
-              "bottom": 5502
+              "bottom": 4404
             }
           },
           {
@@ -540,10 +501,10 @@
             "href": "https://creditunionainews.com/newsletter.html",
             "rect": {
               "x": 40,
-              "y": 5838,
+              "y": 4740,
               "width": 311,
               "height": 52,
-              "bottom": 5890
+              "bottom": 4791
             }
           },
           {
@@ -551,10 +512,10 @@
             "href": "https://creditunionainews.com/episodes.html",
             "rect": {
               "x": 16,
-              "y": 6114,
+              "y": 5015,
               "width": 193,
               "height": 52,
-              "bottom": 6165
+              "bottom": 5066
             }
           },
           {
@@ -562,10 +523,10 @@
             "href": "https://creditunionainews.com/newsletter.html",
             "rect": {
               "x": 234,
-              "y": 7014,
+              "y": 5915,
               "width": 89,
               "height": 26,
-              "bottom": 7039
+              "bottom": 5941
             }
           },
           {
@@ -573,10 +534,10 @@
             "href": "https://www.linkedin.com/company/creditunionai-news/",
             "rect": {
               "x": 288,
-              "y": 7091,
+              "y": 5992,
               "width": 18,
               "height": 26,
-              "bottom": 7116
+              "bottom": 6018
             }
           }
         ],
@@ -667,38 +628,14 @@
             "fontSize": "20px"
           },
           {
-            "level": "H3",
-            "text": "What Credit Unions Should Include in an AI Acceptable-Use Policy",
-            "rect": {
-              "x": 37,
-              "y": 4534,
-              "width": 317,
-              "height": 96,
-              "bottom": 4630
-            },
-            "fontSize": "20px"
-          },
-          {
-            "level": "H3",
-            "text": "AI Vendor Due Diligence Checklist for Credit Unions",
-            "rect": {
-              "x": 37,
-              "y": 5120,
-              "width": 317,
-              "height": 64,
-              "bottom": 5184
-            },
-            "fontSize": "20px"
-          },
-          {
             "level": "H2",
             "text": "One useful briefing. Every Friday.",
             "rect": {
               "x": 40,
-              "y": 5623,
+              "y": 4524,
               "width": 311,
               "height": 77,
-              "bottom": 5700
+              "bottom": 4601
             },
             "fontSize": "24px"
           },
@@ -707,10 +644,10 @@
             "text": "Latest Episode",
             "rect": {
               "x": 16,
-              "y": 5970,
+              "y": 4871,
               "width": 359,
               "height": 45,
-              "bottom": 6015
+              "bottom": 4916
             },
             "fontSize": "28px"
           },
@@ -719,10 +656,10 @@
             "text": "Podcast Episode 2 — “Why Credit Unions Can’t Wait on AI”",
             "rect": {
               "x": 37,
-              "y": 6255,
+              "y": 5156,
               "width": 317,
               "height": 96,
-              "bottom": 6351
+              "bottom": 5252
             },
             "fontSize": "20px"
           }
@@ -743,7 +680,14 @@
           "clientHeight": 372
         }
       },
-      "axeViolations": []
+      "axeViolations": [
+        {
+          "id": "aria-required-children",
+          "impact": "critical",
+          "description": "Ensure elements with an ARIA role that require child roles contain them",
+          "nodes": 1
+        }
+      ]
     },
     {
       "page": "Article",
@@ -2629,20 +2573,9 @@
             "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
             "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
             "rect": {
-              "x": 253,
+              "x": 245,
               "y": 84,
-              "width": 790,
-              "height": 39,
-              "bottom": 123
-            }
-          },
-          {
-            "label": "Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support",
-            "href": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support",
-            "rect": {
-              "x": 2517,
-              "y": 84,
-              "width": 790,
+              "width": 1075,
               "height": 39,
               "bottom": 123
             }
@@ -2830,19 +2763,13 @@
           }
         ],
         "article": null,
-        "visibleTextStart": "Skip to content Alerts News Insights Intelligence Episodes Subscribe LinkedIn Latest Alerts Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI Governance OpenAI Adds BNY and Nubank Chiefs to Its Boards Core & Digital Banking Intellect Launches AI-First Suite for Credit Unions and Mutuals AI NEWSROOM AI Newsroom Alerts Fast, source-linked developments with practical implications for credit-union leaders. Search recent alerts 22 recent alerts Member Service Alert OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs. What this means for credit unions: Credit unions evaluating voice age"
+        "visibleTextStart": "Skip to content Alerts News Insights Intelligence Episodes Subscribe LinkedIn Latest Alert Member Service OpenAI Launches Presence as BBVA Explores Banking Voice Support AI NEWSROOM AI Newsroom Alerts Fast, source-linked developments with practical implications for credit-union leaders. Search recent alerts 22 recent alerts Member Service Alert OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs. What this means for credit unions: Credit unions evaluating voice agents should require strong caller verification that does not rely on voice alone, least-privilege system access, explicit approval boundaries, complete action logs and reliable staff handoffs. Pilots should also test accuracy, accessibility, complaint handling, data retention and change controls; BBVA's exploration is not evidence of production performance or credit-union read"
       },
       "axeViolations": [
         {
           "id": "heading-order",
           "impact": "moderate",
           "description": "Ensure the order of headings is semantically correct",
-          "nodes": 1
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "description": "Ensure all page content is contained by landmarks",
           "nodes": 1
         }
       ]
