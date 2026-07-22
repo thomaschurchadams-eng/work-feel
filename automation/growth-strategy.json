@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-22T18:46:00Z",
+  "status": "baseline-collection",
+  "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
+  "measurementWindows": {
+    "operationalDays": 7,
+    "trendDays": 28
+  },
+  "currentDistributionPolicy": {
+    "channel": "CreditUnionAI News LinkedIn",
+    "frequency": "At most one post per weekday and five per week.",
+    "postingTimesEastern": {
+      "monday": "12:30",
+      "tuesday": "11:30",
+      "wednesday": "11:30",
+      "thursday": "11:30",
+      "friday": "12:30"
+    },
+    "tracking": {
+      "utm_source": "linkedin",
+      "utm_medium": "organic_social",
+      "utm_campaign": "cuai_news",
+      "utm_content": "social queue item id"
+    }
+  },
+  "decisionThresholds": {
+    "minimumMetricsReadyPostsForTimingRecommendation": 8,
+    "minimumComparablePostsForFormatOrTopicAdjustment": 3,
+    "minimumRepeatedPeriodsForStructuralChange": 2,
+    "rule": "Do not treat pending metrics, inaccessible analytics or one anomalous post as evidence for a structural change."
+  },
+  "activeExperiments": [],
+  "productionGuidance": {
+    "priorityTopics": [],
+    "priorityAudiences": [],
+    "priorityFormats": [],
+    "linkedinHookGuidance": [],
+    "articleOpeningGuidance": [],
+    "visualGuidance": [],
+    "conversionGuidance": [],
+    "deprioritize": []
+  },
+  "guardrails": [
+    "Never lower sourcing, originality, corrections, SEO, analytics or image quality gates to improve traffic.",
+    "Do not optimize solely for impressions, reactions or clicks; include engaged reading, depth, newsletter intent and return behavior.",
+    "Preserve editorial diversity and continue covering material developments even when they are not historically high-traffic topics.",
+    "Run at most two clearly defined production experiments at once.",
+    "Do not change the fixed LinkedIn posting schedule automatically; recommend a schedule change only after the stated sample threshold is met.",
+    "Never use personal data, names, email addresses, form values or free-form reader input in analytics or strategy decisions."
+  ],
+  "decisionLog": []
+}
