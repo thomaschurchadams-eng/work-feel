@@ -4,6 +4,26 @@
       "source": "/subscribe.html",
       "destination": "/newsletter.html",
       "permanent": true
+    },
+    {
+      "source": "/intelligence/index.html",
+      "destination": "/intelligence/",
+      "permanent": true
+    },
+    {
+      "source": "/newsletter-log.html",
+      "destination": "/newsletter.html",
+      "permanent": true
+    },
+    {
+      "source": "/news/article-template.html",
+      "destination": "/news.html",
+      "permanent": true
+    },
+    {
+      "source": "/tests/:path*",
+      "destination": "/",
+      "permanent": false
     }
   ]
 }
