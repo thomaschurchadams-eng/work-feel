@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T20:15:36.664Z",
+  "generatedAt": "2026-07-22T20:31:14.059Z",
   "results": [
     {
       "page": "Home",
@@ -15,7 +15,7 @@
         },
         "document": {
           "width": 1440,
-          "height": 3768
+          "height": 3546
         },
         "horizontalOverflow": false,
         "header": {
@@ -184,14 +184,25 @@
             }
           },
           {
+            "label": "Listen to the episode",
+            "href": "https://creditunionainews.com/episodes.html",
+            "rect": {
+              "x": 141,
+              "y": 3230,
+              "width": 233,
+              "height": 52,
+              "bottom": 3281
+            }
+          },
+          {
             "label": "Subscribe",
             "href": "https://creditunionainews.com/newsletter.html",
             "rect": {
               "x": 938,
-              "y": 3672,
+              "y": 3450,
               "width": 89,
               "height": 26,
-              "bottom": 3698
+              "bottom": 3476
             }
           },
           {
@@ -199,10 +210,10 @@
             "href": "https://www.linkedin.com/company/creditunionai-news/",
             "rect": {
               "x": 1302,
-              "y": 3714,
+              "y": 3492,
               "width": 18,
               "height": 26,
-              "bottom": 3740
+              "bottom": 3518
             }
           }
         ],
@@ -356,14 +367,7 @@
         "article": null,
         "visibleTextStart": "Skip to content Alerts News Insights Intelligence Episodes Subscribe LinkedIn CreditUnionAI News Artificial Intelligence News and Analysis for Credit Unions Coverage of artificial intelligence regulation, fraud, operations, vendors, and strategy for credit unions. Get Weekly Briefing Read Latest News LATEST AI NEWSROOM ALERT Member Service Alert Jul 22, 2026 View all Alerts OpenAI Launches Presence as BBVA Explores Banking Voice Support OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs. What this means for credit unions: Credit unions evaluating voice agents should require strong caller verification that does not rely on voice alone, least-privilege system access, explicit approval boundaries, complete action logs and reliable staff handoffs. Pilots should also test accuracy, accessibility, complaint handling, data retention and change controls; BBVA's exploration is not evidence of production pe"
       },
-      "axeViolations": [
-        {
-          "id": "aria-required-children",
-          "impact": "critical",
-          "description": "Ensure elements with an ARIA role that require child roles contain them",
-          "nodes": 1
-        }
-      ]
+      "axeViolations": []
     },
     {
       "page": "Home",
@@ -379,7 +383,7 @@
         },
         "document": {
           "width": 390,
-          "height": 6046
+          "height": 5824
         },
         "horizontalOverflow": false,
         "header": {
@@ -496,14 +500,25 @@
             }
           },
           {
+            "label": "Listen to the episode",
+            "href": "https://creditunionainews.com/episodes.html",
+            "rect": {
+              "x": 37,
+              "y": 5404,
+              "width": 233,
+              "height": 52,
+              "bottom": 5456
+            }
+          },
+          {
             "label": "Subscribe",
             "href": "https://creditunionainews.com/newsletter.html",
             "rect": {
               "x": 234,
-              "y": 5915,
+              "y": 5693,
               "width": 89,
               "height": 26,
-              "bottom": 5941
+              "bottom": 5719
             }
           },
           {
@@ -511,10 +526,10 @@
             "href": "https://www.linkedin.com/company/creditunionai-news/",
             "rect": {
               "x": 288,
-              "y": 5992,
+              "y": 5770,
               "width": 18,
               "height": 26,
-              "bottom": 6018
+              "bottom": 5796
             }
           }
         ],
@@ -657,14 +672,7 @@
           "clientHeight": 372
         }
       },
-      "axeViolations": [
-        {
-          "id": "aria-required-children",
-          "impact": "critical",
-          "description": "Ensure elements with an ARIA role that require child roles contain them",
-          "nodes": 1
-        }
-      ]
+      "axeViolations": []
     },
     {
       "page": "Article",
