@@ -1,6 +1,19 @@
   (function () {
   const alertsData = [
     {
+      label: 'Member Service',
+      headline: 'OpenAI Launches Presence as BBVA Explores Banking Voice Support',
+      summary:
+        'OpenAI launched Presence on July 22 through a limited general-availability program for eligible enterprise customers. The product supports voice and chat agents that can use approved company systems, take permitted actions and escalate to people; BBVA Mexico is a design partner exploring AI-powered voice support for everyday banking needs.',
+      impact:
+        'Credit unions evaluating voice agents should require strong caller verification that does not rely on voice alone, least-privilege system access, explicit approval boundaries, complete action logs and reliable staff handoffs. Pilots should also test accuracy, accessibility, complaint handling, data retention and change controls; BBVA\'s exploration is not evidence of production performance or credit-union readiness.',
+      sourceName: 'OpenAI',
+      sourceUrl:
+        'https://openai.com/index/introducing-openai-presence/',
+      date: 'Jul 22, 2026',
+      slug: 'openai-presence-bbva-banking-voice-support'
+    },
+    {
       label: 'AI Governance',
       headline: 'OpenAI Adds BNY and Nubank Chiefs to Its Boards',
       summary:

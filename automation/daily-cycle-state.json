@@ -8,8 +8,8 @@
   "current": {
     "date": "2026-07-22",
     "fullArticleCount": 1,
-    "alertCount": 3,
-    "evaluatedCandidateCount": 9,
+    "alertCount": 4,
+    "evaluatedCandidateCount": 10,
     "beatsSearched": [
       "member-service",
       "operations",
@@ -38,11 +38,16 @@
         "type": "alert",
         "title": "Samsung Launches U.S. Galaxy Card With Barclays and Visa",
         "url": "https://creditunionainews.com/alerts/#samsung-galaxy-card-barclays-visa-us"
+      },
+      {
+        "type": "alert",
+        "title": "OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+        "url": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support"
       }
     ],
     "rejections": [],
     "status": "complete",
-    "updatedAt": "2026-07-22T08:00:00-04:00"
+    "updatedAt": "2026-07-22T12:00:00-04:00"
   },
   "history": [
     {
