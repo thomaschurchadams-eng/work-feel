@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: final-ux-write
+  group: homepage-embed-write
   cancel-in-progress: false
 jobs:
   remove:
