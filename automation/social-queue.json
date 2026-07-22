@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "buffer-draft-enabled",
+  "status": "buffer-queue-enabled",
   "items": [
     {
       "id": "linkedin-bank-of-america-ericaassist-2026-07-22",
@@ -8,17 +8,19 @@
       "platform": "linkedin",
       "format": "role-specific-excerpt",
       "copy": "The most useful detail in Bank of America’s EricaAssist upgrade is not the model. It is the placement: AI assembles guidance inside the service employee’s workflow while the employee remains responsible for the conversation. For credit-union contact centers, that suggests a practical sequence—start with approved-source retrieval and next-step prompts, measure accuracy and repeat contacts alongside speed, and keep account changes behind existing approvals. What evidence would your team require before putting real-time AI guidance beside frontline staff? https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
-      "scheduledFor": "2026-07-22T10:15:00-04:00",
-      "status": "drafted",
+      "scheduledFor": "2026-07-22T16:58:00-04:00",
+      "status": "scheduled",
       "bufferPostId": "6a610ac5233e19378b1c1db4",
       "bufferChannelId": "6a53df0880cc80cdcaa76fb8",
       "bufferChannelName": "CreditUnionAI News",
       "draftedAt": "2026-07-22T14:24:06-04:00",
-      "lastAttemptAt": "2026-07-22T14:24:06-04:00",
-      "lastResult": "created"
+      "scheduledAt": "2026-07-22T14:29:39-04:00",
+      "bufferDueAt": "2026-07-22T20:58:00.000Z",
+      "lastAttemptAt": "2026-07-22T14:29:39-04:00",
+      "lastResult": "promoted-draft-to-queue"
     }
   ],
   "requiredFields": ["id", "articleUrl", "platform", "format", "copy", "scheduledFor", "status"],
   "formats": ["launch-post", "executive-takeaway", "carousel-outline", "role-specific-excerpt", "weekly-roundup"],
-  "note": "The newsroom creates up to five differentiated LinkedIn packages each week. Queued items are drafted through the production Buffer endpoint after the corresponding site content is verified live."
+  "note": "The newsroom creates up to five differentiated LinkedIn packages each week. Eligible queued items are added automatically to the next available CreditUnionAI News Buffer slot after the corresponding site content is verified live."
 }
