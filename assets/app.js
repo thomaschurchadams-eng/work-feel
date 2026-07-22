@@ -1332,24 +1332,6 @@
     });
   }
 
-  const header = document.querySelector('header');
-  const buildTicker = () => {
-    const current = normalizePath(window.location.pathname);
-    const item = tickerAlerts[0];
-    if (!header || !item || !['/', '/alerts'].includes(current)) return;
-    const tickerBar = document.createElement('aside');
-    tickerBar.className = 'ticker-bar';
-    tickerBar.setAttribute('aria-label', 'Latest CreditUnionAI News alert');
-    tickerBar.innerHTML = `
-      <div class="container ticker-track ticker-track-single">
-        <a class="ticker-label" href="/alerts/">Latest Alert</a>
-        <a class="ticker-item ticker-item-single" href="/alerts/#${item.slug}"><span class="ticker-pill">${item.label}</span><span class="ticker-text">${item.headline}</span></a>
-      </div>
-    `;
-    header.insertAdjacentElement('afterend', tickerBar);
-  };
-
-  buildTicker();
 
   const alertsList = document.querySelector('#alerts-list');
   const alertSearch = document.querySelector('#alert-search');
