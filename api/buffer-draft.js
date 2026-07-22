@@ -3,6 +3,7 @@ const path = require('node:path');
 
 const BUFFER_API_URL = 'https://api.buffer.com';
 const ALLOWED_HOST = 'creditunionainews.com';
+const DEFAULT_LINKEDIN_CHANNEL_NAME = 'creditunionai news';
 
 async function bufferRequest(apiKey, query, variables = {}) {
   const response = await fetch(BUFFER_API_URL, {
@@ -55,6 +56,10 @@ function requestValue(req, key) {
   if (typeof queryValue === 'string') return queryValue;
   const bodyValue = req.body?.[key];
   return typeof bodyValue === 'string' ? bodyValue : '';
+}
+
+function normalizedName(channel) {
+  return String(channel.displayName || channel.name || '').trim().toLowerCase();
 }
 
 module.exports = async function handler(req, res) {
@@ -119,11 +124,12 @@ module.exports = async function handler(req, res) {
     );
 
     const configuredChannelId = process.env.BUFFER_LINKEDIN_CHANNEL_ID || '';
+    const namedChannel = linkedinChannels.find(
+      (entry) => normalizedName(entry) === DEFAULT_LINKEDIN_CHANNEL_NAME
+    );
     const channel = configuredChannelId
       ? linkedinChannels.find((entry) => entry.id === configuredChannelId)
-      : linkedinChannels.length === 1
-        ? linkedinChannels[0]
-        : null;
+      : namedChannel || (linkedinChannels.length === 1 ? linkedinChannels[0] : null);
 
     if (!channel) {
       return res.status(409).json({
@@ -135,6 +141,10 @@ module.exports = async function handler(req, res) {
           service: entry.service
         }))
       });
+    }
+
+    if (normalizedName(channel) !== DEFAULT_LINKEDIN_CHANNEL_NAME) {
+      return res.status(409).json({ ok: false, error: 'linkedin_channel_name_mismatch' });
     }
 
     const existingData = await bufferRequest(
