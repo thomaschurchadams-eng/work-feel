@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-07-22T07:00:00-04:00",
+  "lastStandardRun": "2026-07-23T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
-    "url": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
-    "publishedAt": "2026-07-22T07:00:00-04:00",
+    "title": "Communication FCU Moves AI Lending Decisioning Into Production",
+    "url": "https://creditunionainews.com/news/communication-fcu-scienaptic-ai-lending.html",
+    "publishedAt": "2026-07-23T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
@@ -13,6 +13,36 @@
       "date": "2026-07-20",
       "headline": "FIS and Anthropic Extend Partnership on Trusted AI for Financial Services",
       "reason": "duplicate-or-near-duplicate: the evidence was already published as today's AI Newsroom Alert, and the single vendor-supplied claim does not justify a separate full article"
+    },
+    {
+      "date": "2026-07-23",
+      "headline": "Zest AI Named to CNBC World's Top Fintech Companies 2026",
+      "reason": "award announcement without a new credit-union deployment, product capability or independently verifiable operating result"
+    },
+    {
+      "date": "2026-07-23",
+      "headline": "Alkami Announces AI Webinar on Conversational Banking",
+      "reason": "event promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-07-23",
+      "headline": "Bank of America Enhances EricaAssist With Generative AI",
+      "reason": "duplicate-or-near-duplicate: published as the July 22 Daily Article"
+    },
+    {
+      "date": "2026-07-23",
+      "headline": "CCG Catalyst Reviews AI Agents and Connectors",
+      "reason": "sector commentary without a distinct new event or direct operational deployment"
+    },
+    {
+      "date": "2026-07-23",
+      "headline": "ABA Comments on FSB AI Sound Practices",
+      "reason": "credible policy commentary but weaker direct credit-union applicability than the selected production deployment"
+    },
+    {
+      "date": "2026-07-23",
+      "headline": "America's Credit Unions Sends Senate Digital-Asset Letter",
+      "reason": "material policy advocacy, but the evidence did not support a sufficiently specific AI or automation angle for this publication"
     }
   ],
   "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible."

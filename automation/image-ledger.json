@@ -3,6 +3,21 @@
   "description":"Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images":[
     {
+      "id": "communication-fcu-scienaptic-ai-lending",
+      "articleUrl": "/news/communication-fcu-scienaptic-ai-lending.html",
+      "imagePath": "/assets/communication-fcu-scienaptic-ai-lending.jpg",
+      "publishedAt": "2026-07-23T07:00:00-04:00",
+      "medium": "tactile-paper-cut",
+      "subject": "documents-and-controls",
+      "composition": "diagonal-motion",
+      "perspective": "overhead",
+      "palette": "emerald-cream",
+      "lighting": "soft-daylight",
+      "texture": "paper-fiber",
+      "scene": "loan-decisioning-layers",
+      "conceptScore": 97.8
+    },
+    {
       "id": "bank-of-america-ericaassist-generative-ai",
       "articleUrl": "/news/bank-of-america-ericaassist-generative-ai.html",
       "imagePath": "/assets/bank-of-america-ericaassist-generative-ai.jpg",

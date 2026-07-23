@@ -6,50 +6,99 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-22",
+    "date": "2026-07-23",
     "fullArticleCount": 1,
-    "alertCount": 4,
-    "evaluatedCandidateCount": 10,
+    "alertCount": 0,
+    "evaluatedCandidateCount": 8,
     "beatsSearched": [
-      "member-service",
-      "operations",
+      "lending-collections",
+      "risk-compliance",
       "payments-deposits",
+      "it-data-cybersecurity",
       "board-strategy",
-      "finance-treasury",
       "vendor-management"
     ],
     "publications": [
       {
         "type": "article",
-        "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
-        "url": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html"
-      },
-      {
-        "type": "alert",
-        "title": "OpenAI Adds BNY and Nubank Chiefs to Its Boards",
-        "url": "https://creditunionainews.com/alerts/#openai-adds-bny-nubank-chiefs-boards"
-      },
-      {
-        "type": "alert",
-        "title": "Intellect Launches AI-First Suite for Credit Unions and Mutuals",
-        "url": "https://creditunionainews.com/alerts/#intellect-ai-first-credit-union-solution-suite"
-      },
-      {
-        "type": "alert",
-        "title": "Samsung Launches U.S. Galaxy Card With Barclays and Visa",
-        "url": "https://creditunionainews.com/alerts/#samsung-galaxy-card-barclays-visa-us"
-      },
-      {
-        "type": "alert",
-        "title": "OpenAI Launches Presence as BBVA Explores Banking Voice Support",
-        "url": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support"
+        "title": "Communication FCU Moves AI Lending Decisioning Into Production",
+        "url": "https://creditunionainews.com/news/communication-fcu-scienaptic-ai-lending.html"
       }
     ],
-    "rejections": [],
-    "status": "complete",
-    "updatedAt": "2026-07-22T12:00:00-04:00"
+    "rejections": [
+      {
+        "title": "Bank of America Enhances EricaAssist With Generative AI",
+        "reason": "duplicate of the July 22 Daily Article"
+      },
+      {
+        "title": "Zest AI Named to CNBC World's Top Fintech Companies 2026",
+        "reason": "award announcement without a new operating development"
+      },
+      {
+        "title": "Alkami Announces AI Webinar on Conversational Banking",
+        "reason": "event promotion rather than a completed material development"
+      },
+      {
+        "title": "CCG Catalyst Reviews AI Agents and Connectors",
+        "reason": "commentary without a distinct new event"
+      },
+      {
+        "title": "ABA Comments on FSB AI Sound Practices",
+        "reason": "weaker direct credit-union applicability than the selected deployment"
+      },
+      {
+        "title": "America's Credit Unions Sends Senate Digital-Asset Letter",
+        "reason": "insufficiently specific AI or automation angle"
+      }
+    ],
+    "status": "in-progress",
+    "updatedAt": "2026-07-23T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-22",
+      "fullArticleCount": 1,
+      "alertCount": 4,
+      "evaluatedCandidateCount": 10,
+      "beatsSearched": [
+        "member-service",
+        "operations",
+        "payments-deposits",
+        "board-strategy",
+        "finance-treasury",
+        "vendor-management"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "Bank of America Puts Generative AI Beside 18,000 Service Employees",
+          "url": "https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html"
+        },
+        {
+          "type": "alert",
+          "title": "OpenAI Adds BNY and Nubank Chiefs to Its Boards",
+          "url": "https://creditunionainews.com/alerts/#openai-adds-bny-nubank-chiefs-boards"
+        },
+        {
+          "type": "alert",
+          "title": "Intellect Launches AI-First Suite for Credit Unions and Mutuals",
+          "url": "https://creditunionainews.com/alerts/#intellect-ai-first-credit-union-solution-suite"
+        },
+        {
+          "type": "alert",
+          "title": "Samsung Launches U.S. Galaxy Card With Barclays and Visa",
+          "url": "https://creditunionainews.com/alerts/#samsung-galaxy-card-barclays-visa-us"
+        },
+        {
+          "type": "alert",
+          "title": "OpenAI Launches Presence as BBVA Explores Banking Voice Support",
+          "url": "https://creditunionainews.com/alerts/#openai-presence-bbva-banking-voice-support"
+        }
+      ],
+      "rejections": [],
+      "status": "complete",
+      "updatedAt": "2026-07-22T12:00:00-04:00"
+    },
     {
       "date": "2026-07-20",
       "fullArticleCount": 0,

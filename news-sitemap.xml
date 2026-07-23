@@ -3,6 +3,14 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <!-- Automation keeps only News articles published within the prior 48 hours. -->
   <url>
+    <loc>https://creditunionainews.com/news/communication-fcu-scienaptic-ai-lending.html</loc>
+    <news:news>
+      <news:publication><news:name>CreditUnionAI News</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-07-23T07:00:00-04:00</news:publication_date>
+      <news:title>Communication FCU Moves AI Lending Decisioning Into Production</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html</loc>
     <news:news>
       <news:publication><news:name>CreditUnionAI News</news:name><news:language>en</news:language></news:publication>
