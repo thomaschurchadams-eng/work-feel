@@ -71,25 +71,21 @@ function validateScheduledFor(value) {
   if (delta > MAX_ADVANCE_MS) return { error: 'scheduled_for_too_far_ahead' };
 
   const parts = easternParts(dueAt);
-  const weekday = parts.weekday;
-  const hour = Number(parts.hour);
-  const minute = Number(parts.minute);
-
-  const expected = weekday === 'Mon' || weekday === 'Fri'
+  const expected = parts.weekday === 'Mon' || parts.weekday === 'Fri'
     ? { hour: 12, minute: 30 }
-    : ['Tue', 'Wed', 'Thu'].includes(weekday)
+    : ['Tue', 'Wed', 'Thu'].includes(parts.weekday)
       ? { hour: 11, minute: 30 }
       : null;
 
   if (!expected) return { error: 'scheduled_for_weekend' };
-  if (hour !== expected.hour || minute !== expected.minute) {
+  if (Number(parts.hour) !== expected.hour || Number(parts.minute) !== expected.minute) {
     return {
       error: 'scheduled_for_outside_policy',
       expectedEasternTime: `${String(expected.hour).padStart(2, '0')}:${String(expected.minute).padStart(2, '0')}`
     };
   }
 
-  return { dueAt, dueAtIso: dueAt.toISOString(), easternDate: easternDateKey(dueAt) };
+  return { dueAtIso: dueAt.toISOString(), easternDate: easternDateKey(dueAt) };
 }
 
 function loadQueueItem(itemId) {
@@ -103,20 +99,27 @@ function loadQueueItem(itemId) {
   if (typeof item.copy !== 'string' || item.copy.trim().length < 20) return { error: 'queue_item_copy_invalid' };
 
   let articleUrl;
+  let distributionUrl;
   try {
     articleUrl = new URL(item.articleUrl);
+    distributionUrl = new URL(item.distributionUrl || item.articleUrl);
   } catch {
     return { error: 'queue_item_url_invalid' };
   }
 
-  if (articleUrl.protocol !== 'https:' || articleUrl.hostname !== ALLOWED_HOST) {
+  if (
+    articleUrl.protocol !== 'https:' || articleUrl.hostname !== ALLOWED_HOST ||
+    distributionUrl.protocol !== 'https:' || distributionUrl.hostname !== ALLOWED_HOST
+  ) {
     return { error: 'queue_item_url_not_allowed' };
   }
-  if (!item.copy.includes(item.articleUrl)) return { error: 'queue_item_link_missing' };
+
+  const previewUrl = distributionUrl.toString();
+  if (!item.copy.includes(previewUrl)) return { error: 'queue_item_link_missing' };
 
   const schedule = validateScheduledFor(item.scheduledFor);
   if (schedule.error) return schedule;
-  return { item, schedule };
+  return { item, schedule, previewUrl };
 }
 
 module.exports = async function handler(req, res) {
@@ -146,16 +149,12 @@ module.exports = async function handler(req, res) {
       expectedEasternTime: loaded.expectedEasternTime
     });
   }
-  const { item, schedule } = loaded;
+  const { item, schedule, previewUrl } = loaded;
 
   try {
-    const accountData = await bufferRequest(
-      apiKey,
-      `query BufferAccount {
-        account { organizations { id name } }
-      }`
-    );
-
+    const accountData = await bufferRequest(apiKey, `query BufferAccount {
+      account { organizations { id name } }
+    }`);
     const organizations = accountData?.account?.organizations || [];
     if (organizations.length !== 1) {
       return res.status(409).json({
@@ -166,48 +165,27 @@ module.exports = async function handler(req, res) {
     }
 
     const organization = organizations[0];
-    const channelData = await bufferRequest(
-      apiKey,
-      `query BufferChannels($organizationId: OrganizationId!) {
-        channels(input: { organizationId: $organizationId }) {
-          id
-          name
-          displayName
-          service
-          isQueuePaused
-        }
-      }`,
-      { organizationId: organization.id }
-    );
+    const channelData = await bufferRequest(apiKey, `query BufferChannels($organizationId: OrganizationId!) {
+      channels(input: { organizationId: $organizationId }) {
+        id name displayName service isQueuePaused
+      }
+    }`, { organizationId: organization.id });
 
     const channel = (channelData?.channels || []).find(
-      (entry) =>
-        String(entry.service || '').toLowerCase().includes('linkedin') &&
+      (entry) => String(entry.service || '').toLowerCase().includes('linkedin') &&
         normalizedName(entry) === LINKEDIN_CHANNEL_NAME
     );
+    if (!channel) return res.status(409).json({ ok: false, error: 'creditunionai_linkedin_channel_not_found' });
+    if (channel.isQueuePaused) return res.status(409).json({ ok: false, error: 'linkedin_channel_queue_paused' });
 
-    if (!channel) {
-      return res.status(409).json({ ok: false, error: 'creditunionai_linkedin_channel_not_found' });
-    }
-    if (channel.isQueuePaused) {
-      return res.status(409).json({ ok: false, error: 'linkedin_channel_queue_paused' });
-    }
-
-    const existingData = await bufferRequest(
-      apiKey,
-      `query ExistingPosts($organizationId: OrganizationId!, $channelId: ChannelId!) {
-        posts(
-          first: 100
-          input: {
-            organizationId: $organizationId
-            filter: { status: [scheduled, sending, sent], channelIds: [$channelId] }
-          }
-        ) {
-          edges { node { id text status channelId createdAt dueAt sentAt } }
-        }
-      }`,
-      { organizationId: organization.id, channelId: channel.id }
-    );
+    const existingData = await bufferRequest(apiKey, `query ExistingPosts($organizationId: OrganizationId!, $channelId: ChannelId!) {
+      posts(first: 100, input: {
+        organizationId: $organizationId,
+        filter: { status: [scheduled, sending, sent], channelIds: [$channelId] }
+      }) {
+        edges { node { id text status channelId createdAt dueAt sentAt } }
+      }
+    }`, { organizationId: organization.id, channelId: channel.id });
 
     const existingPosts = (existingData?.posts?.edges || []).map((edge) => edge.node);
     const duplicate = existingPosts.find((post) => post.text === item.copy);
@@ -231,7 +209,6 @@ module.exports = async function handler(req, res) {
       const date = new Date(timestamp);
       return !Number.isNaN(date.getTime()) && easternDateKey(date) === schedule.easternDate;
     });
-
     if (sameDayPost) {
       return res.status(409).json({
         ok: false,
@@ -243,29 +220,38 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    const createdData = await bufferRequest(
-      apiKey,
-      `mutation ScheduleLinkedInPost($input: CreatePostInput!) {
-        createPost(input: $input) {
-          ... on PostActionSuccess {
-            post { id text status channelId createdAt dueAt sentAt }
+    const createdData = await bufferRequest(apiKey, `mutation ScheduleLinkedInPost($input: CreatePostInput!) {
+      createPost(input: $input) {
+        ... on PostActionSuccess {
+          post {
+            id text status channelId createdAt dueAt sentAt
+            metadata {
+              ... on LinkedInPostMetadata {
+                linkAttachment { url expandedUrl title text thumbnail thumbnails }
+              }
+            }
           }
-          ... on MutationError { message }
         }
-      }`,
-      {
-        input: {
-          text: item.copy,
-          channelId: channel.id,
-          schedulingType: 'automatic',
-          mode: 'customScheduled',
-          dueAt: schedule.dueAtIso,
-          saveToDraft: false,
-          aiAssisted: true,
-          source: 'creditunionainews'
+        ... on MutationError { message }
+      }
+    }`, {
+      input: {
+        text: item.copy,
+        channelId: channel.id,
+        schedulingType: 'automatic',
+        mode: 'customScheduled',
+        dueAt: schedule.dueAtIso,
+        saveToDraft: false,
+        aiAssisted: true,
+        source: 'creditunionainews',
+        assets: [],
+        metadata: {
+          linkedin: {
+            linkAttachment: { url: previewUrl }
+          }
         }
       }
-    );
+    });
 
     const result = createdData?.createPost;
     if (!result?.post) {
@@ -273,6 +259,15 @@ module.exports = async function handler(req, res) {
         ok: false,
         error: 'buffer_schedule_creation_failed',
         message: result?.message || 'Buffer did not return a scheduled post.'
+      });
+    }
+
+    const linkAttachment = result.post.metadata?.linkAttachment || null;
+    if (!linkAttachment?.url) {
+      return res.status(502).json({
+        ok: false,
+        error: 'buffer_link_preview_missing',
+        message: 'Buffer scheduled the post without returning a LinkedIn link preview.'
       });
     }
 
@@ -286,7 +281,12 @@ module.exports = async function handler(req, res) {
       sentAt: result.post.sentAt || null,
       easternDate: schedule.easternDate,
       channelId: channel.id,
-      channelName: channel.displayName || channel.name
+      channelName: channel.displayName || channel.name,
+      linkPreview: {
+        url: linkAttachment.url,
+        title: linkAttachment.title || null,
+        thumbnail: linkAttachment.thumbnail || linkAttachment.thumbnails?.[0] || null
+      }
     });
   } catch (error) {
     return res.status(error.status === 401 ? 401 : 502).json({
