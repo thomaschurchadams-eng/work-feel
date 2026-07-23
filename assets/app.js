@@ -1,6 +1,45 @@
   (function () {
   const alertsData = [
     {
+      label: 'Instant Payments',
+      headline: 'Kansas City Fed Counts 588 Small Credit Unions on FedNow',
+      summary:
+        'The Federal Reserve Bank of Kansas City reported on July 21 that 588 credit unions with less than $10 billion in assets had adopted FedNow as of July 2026. That represents 13.6% of small credit unions, while the number participating grew 46.3% from a year earlier.',
+      impact:
+        'Credit unions that are not live on FedNow should benchmark their roadmap against the growing peer group and decide whether to begin with receive-only or both send and receive. Readiness reviews should cover core connectivity, 24/7 fraud monitoring and exception handling, liquidity, member authentication, transaction limits, staffing and specific member or business-payment use cases.',
+      sourceName: 'Federal Reserve Bank of Kansas City',
+      sourceUrl:
+        'https://www.kansascityfed.org/banking/community-banking-bulletins/highlight-smaller-institutions-embrace-faster-payments-with-fednow/',
+      date: 'Jul 23, 2026',
+      slug: 'kansas-city-fed-small-credit-union-fednow-adoption'
+    },
+    {
+      label: 'AI Governance',
+      headline: 'Glia Adds Topic-Level Response Controls to Its Banking AI Agent',
+      summary:
+        'Glia announced on July 21 three response modes for its Glia Banker voice and digital AI agent. The vendor says financial institutions can assign different levels of response flexibility by task or topic, ranging from approved wording to responses composed from institution-designated content.',
+      impact:
+        'Credit unions evaluating the controls should map each member-service topic to a risk tier, keep high-stakes actions and regulated disclosures tightly constrained, and test grounding, escalation, logs and prompt-injection defenses in every mode. Glia’s security and performance statements are vendor claims and should be validated through contracts, testing and ongoing monitoring.',
+      sourceName: 'Glia',
+      sourceUrl:
+        'https://www.glia.com/news/glia-banker-response-modes',
+      date: 'Jul 23, 2026',
+      slug: 'glia-topic-level-ai-response-controls'
+    },
+    {
+      label: 'Fraud Prevention',
+      headline: 'Credit Union Groups Launch August Check-Fraud Campaign',
+      summary:
+        'America’s Credit Unions said on July 22 that it and the American Association of Credit Union Leagues are supporting an America Saves campaign beginning August 3. The four-week program provides credit unions with consumer education materials on check-fraud types, detection and victim response.',
+      impact:
+        'Credit unions can use the August materials as a member-education layer, but should connect the campaign to operational controls: review deposit holds and exception rules, train frontline staff on altered and counterfeit checks, reinforce positive-pay options for business members, publish clear reporting steps and track whether campaign traffic changes fraud reports or losses.',
+      sourceName: 'America’s Credit Unions',
+      sourceUrl:
+        'https://www.americascreditunions.org/news-media/news/new-campaign-launch-aims-stop-check-fraud-it-starts',
+      date: 'Jul 23, 2026',
+      slug: 'credit-union-groups-august-check-fraud-campaign'
+    },
+    {
       label: 'Member Service',
       headline: 'OpenAI Launches Presence as BBVA Explores Banking Voice Support',
       summary:

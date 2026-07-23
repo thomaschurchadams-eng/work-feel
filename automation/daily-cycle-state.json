@@ -8,8 +8,8 @@
   "current": {
     "date": "2026-07-23",
     "fullArticleCount": 1,
-    "alertCount": 0,
-    "evaluatedCandidateCount": 8,
+    "alertCount": 3,
+    "evaluatedCandidateCount": 15,
     "beatsSearched": [
       "lending-collections",
       "risk-compliance",
@@ -23,6 +23,21 @@
         "type": "article",
         "title": "Communication FCU Moves AI Lending Decisioning Into Production",
         "url": "https://creditunionainews.com/news/communication-fcu-scienaptic-ai-lending.html"
+      },
+      {
+        "type": "alert",
+        "title": "Kansas City Fed Counts 588 Small Credit Unions on FedNow",
+        "url": "https://creditunionainews.com/alerts/#kansas-city-fed-small-credit-union-fednow-adoption"
+      },
+      {
+        "type": "alert",
+        "title": "Glia Adds Topic-Level Response Controls to Its Banking AI Agent",
+        "url": "https://creditunionainews.com/alerts/#glia-topic-level-ai-response-controls"
+      },
+      {
+        "type": "alert",
+        "title": "Credit Union Groups Launch August Check-Fraud Campaign",
+        "url": "https://creditunionainews.com/alerts/#credit-union-groups-august-check-fraud-campaign"
       }
     ],
     "rejections": [
@@ -49,10 +64,26 @@
       {
         "title": "America's Credit Unions Sends Senate Digital-Asset Letter",
         "reason": "insufficiently specific AI or automation angle"
+      },
+      {
+        "title": "Addition Financial Launches Treasury Management Services",
+        "reason": "useful product expansion but weaker technology significance than the selected payments data"
+      },
+      {
+        "title": "Chime Expands Into Self-Directed Investing",
+        "reason": "no accessible direct announcement with enough verified implementation detail"
+      },
+      {
+        "title": "Ramp Launches Token Spend Management",
+        "reason": "enterprise spend-control development with limited direct credit-union operating relevance"
+      },
+      {
+        "title": "ABA Comments on FSB AI Sound Practices",
+        "reason": "already evaluated in the article cycle and less immediately actionable than the selected AI control release"
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-07-23T07:00:00-04:00"
+    "status": "complete",
+    "updatedAt": "2026-07-23T08:00:00-04:00"
   },
   "history": [
     {
