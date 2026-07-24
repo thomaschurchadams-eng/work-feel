@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-07-23T07:00:00-04:00",
+  "lastStandardRun": "2026-07-24T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Communication FCU Moves AI Lending Decisioning Into Production",
-    "url": "https://creditunionainews.com/news/communication-fcu-scienaptic-ai-lending.html",
-    "publishedAt": "2026-07-23T07:00:00-04:00",
+    "title": "Genpact Launches Agentic AI for AML Alert Investigations",
+    "url": "https://creditunionainews.com/news/genpact-agentic-ai-aml-investigations.html",
+    "publishedAt": "2026-07-24T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
@@ -43,6 +43,41 @@
       "date": "2026-07-23",
       "headline": "America's Credit Unions Sends Senate Digital-Asset Letter",
       "reason": "material policy advocacy, but the evidence did not support a sufficiently specific AI or automation angle for this publication"
+    },
+    {
+      "date": "2026-07-24",
+      "headline": "BPI Proposes Controls for Sharing Sensitive Data With Regulators",
+      "reason": "credible cybersecurity guidance, but less directly tied to AI operations than the selected AML-agent launch"
+    },
+    {
+      "date": "2026-07-24",
+      "headline": "Credit Union Trades Recommend More Support for De Novo Charters",
+      "reason": "high credit-union relevance but no sufficiently specific AI or automation development"
+    },
+    {
+      "date": "2026-07-24",
+      "headline": "Alkami Highlights Quontic Bank's Integrated Digital Journey",
+      "reason": "vendor case study with limited independently verifiable implementation detail and no credit-union deployment"
+    },
+    {
+      "date": "2026-07-24",
+      "headline": "NCUA Revisits Stablecoin Issuance by Credit Union Subsidiaries",
+      "reason": "material payments policy candidate, but weaker AI relevance and less complete fresh primary-source evidence than the selected story"
+    },
+    {
+      "date": "2026-07-24",
+      "headline": "Bank Trades Respond to FSB Responsible AI Sound Practices",
+      "reason": "policy commentary rather than a new deployment or completed operating development"
+    },
+    {
+      "date": "2026-07-24",
+      "headline": "Creatio Promotes a Banking AI Summit",
+      "reason": "event promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-07-24",
+      "headline": "Nintex Publishes NCUA Exam-Readiness Guidance",
+      "reason": "vendor commentary rather than a distinct new event"
     }
   ],
   "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible."

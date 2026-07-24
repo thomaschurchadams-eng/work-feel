@@ -3,6 +3,20 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "genpact-agentic-ai-aml-investigations",
+      "title": "Genpact Launches Agentic AI for AML Alert Investigations",
+      "url": "/news/genpact-agentic-ai-aml-investigations.html",
+      "publishedAt": "2026-07-24T07:00:00-04:00",
+      "section": "news",
+      "functions": ["risk-compliance", "vendor-management"],
+      "technologies": ["agents-automation"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "maturity": "practical-now",
+      "sourceTier": 1,
+      "score": 95.0
+    },
+    {
       "id": "communication-fcu-scienaptic-ai-lending",
       "title": "Communication FCU Moves AI Lending Decisioning Into Production",
       "url": "/news/communication-fcu-scienaptic-ai-lending.html",

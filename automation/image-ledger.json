@@ -3,6 +3,21 @@
   "description":"Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images":[
     {
+      "id": "genpact-agentic-ai-aml-investigations",
+      "articleUrl": "/news/genpact-agentic-ai-aml-investigations.html",
+      "imagePath": "/assets/genpact-agentic-ai-aml-investigations.jpg",
+      "publishedAt": "2026-07-24T07:00:00-04:00",
+      "medium": "dimensional-3d",
+      "subject": "abstract-data-system",
+      "composition": "modular-grid",
+      "perspective": "isometric",
+      "palette": "amber-charcoal",
+      "lighting": "graphic-flat-light",
+      "texture": "polished-metal",
+      "scene": "aml-agent-checkpoints",
+      "conceptScore": 98.6
+    },
+    {
       "id": "communication-fcu-scienaptic-ai-lending",
       "articleUrl": "/news/communication-fcu-scienaptic-ai-lending.html",
       "imagePath": "/assets/communication-fcu-scienaptic-ai-lending.jpg",

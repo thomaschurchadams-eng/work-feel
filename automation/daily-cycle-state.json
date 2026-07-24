@@ -6,86 +6,140 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-23",
+    "date": "2026-07-24",
     "fullArticleCount": 1,
-    "alertCount": 3,
-    "evaluatedCandidateCount": 15,
+    "alertCount": 0,
+    "evaluatedCandidateCount": 8,
     "beatsSearched": [
-      "lending-collections",
       "risk-compliance",
       "payments-deposits",
       "it-data-cybersecurity",
+      "member-service",
+      "operations",
       "board-strategy",
       "vendor-management"
     ],
     "publications": [
       {
         "type": "article",
-        "title": "Communication FCU Moves AI Lending Decisioning Into Production",
-        "url": "https://creditunionainews.com/news/communication-fcu-scienaptic-ai-lending.html"
-      },
-      {
-        "type": "alert",
-        "title": "Kansas City Fed Counts 588 Small Credit Unions on FedNow",
-        "url": "https://creditunionainews.com/alerts/#kansas-city-fed-small-credit-union-fednow-adoption"
-      },
-      {
-        "type": "alert",
-        "title": "Glia Adds Topic-Level Response Controls to Its Banking AI Agent",
-        "url": "https://creditunionainews.com/alerts/#glia-topic-level-ai-response-controls"
-      },
-      {
-        "type": "alert",
-        "title": "Credit Union Groups Launch August Check-Fraud Campaign",
-        "url": "https://creditunionainews.com/alerts/#credit-union-groups-august-check-fraud-campaign"
+        "title": "Genpact Launches Agentic AI for AML Alert Investigations",
+        "url": "https://creditunionainews.com/news/genpact-agentic-ai-aml-investigations.html"
       }
     ],
     "rejections": [
       {
-        "title": "Bank of America Enhances EricaAssist With Generative AI",
-        "reason": "duplicate of the July 22 Daily Article"
+        "title": "BPI Proposes Controls for Sharing Sensitive Data With Regulators",
+        "reason": "credible cybersecurity guidance, but less directly tied to AI operations than the selected AML-agent launch"
       },
       {
-        "title": "Zest AI Named to CNBC World's Top Fintech Companies 2026",
-        "reason": "award announcement without a new operating development"
+        "title": "Credit Union Trades Recommend More Support for De Novo Charters",
+        "reason": "high credit-union relevance but no sufficiently specific AI or automation development"
       },
       {
-        "title": "Alkami Announces AI Webinar on Conversational Banking",
+        "title": "Alkami Highlights Quontic Bank's Integrated Digital Journey",
+        "reason": "vendor case study with limited independently verifiable implementation detail and no credit-union deployment"
+      },
+      {
+        "title": "NCUA Revisits Stablecoin Issuance by Credit Union Subsidiaries",
+        "reason": "material payments policy candidate, but weaker AI relevance and less complete fresh primary-source evidence than the selected story"
+      },
+      {
+        "title": "Bank Trades Respond to FSB Responsible AI Sound Practices",
+        "reason": "policy commentary rather than a new deployment or completed operating development"
+      },
+      {
+        "title": "Creatio Promotes a Banking AI Summit",
         "reason": "event promotion rather than a completed material development"
       },
       {
-        "title": "CCG Catalyst Reviews AI Agents and Connectors",
-        "reason": "commentary without a distinct new event"
-      },
-      {
-        "title": "ABA Comments on FSB AI Sound Practices",
-        "reason": "weaker direct credit-union applicability than the selected deployment"
-      },
-      {
-        "title": "America's Credit Unions Sends Senate Digital-Asset Letter",
-        "reason": "insufficiently specific AI or automation angle"
-      },
-      {
-        "title": "Addition Financial Launches Treasury Management Services",
-        "reason": "useful product expansion but weaker technology significance than the selected payments data"
-      },
-      {
-        "title": "Chime Expands Into Self-Directed Investing",
-        "reason": "no accessible direct announcement with enough verified implementation detail"
-      },
-      {
-        "title": "Ramp Launches Token Spend Management",
-        "reason": "enterprise spend-control development with limited direct credit-union operating relevance"
-      },
-      {
-        "title": "ABA Comments on FSB AI Sound Practices",
-        "reason": "already evaluated in the article cycle and less immediately actionable than the selected AI control release"
+        "title": "Nintex Publishes NCUA Exam-Readiness Guidance",
+        "reason": "vendor commentary rather than a distinct new event"
       }
     ],
-    "status": "complete",
-    "updatedAt": "2026-07-23T08:00:00-04:00"
+    "status": "article-complete",
+    "updatedAt": "2026-07-24T07:18:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-23",
+      "fullArticleCount": 1,
+      "alertCount": 3,
+      "evaluatedCandidateCount": 15,
+      "beatsSearched": [
+        "lending-collections",
+        "risk-compliance",
+        "payments-deposits",
+        "it-data-cybersecurity",
+        "board-strategy",
+        "vendor-management"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "Communication FCU Moves AI Lending Decisioning Into Production",
+          "url": "https://creditunionainews.com/news/communication-fcu-scienaptic-ai-lending.html"
+        },
+        {
+          "type": "alert",
+          "title": "Kansas City Fed Counts 588 Small Credit Unions on FedNow",
+          "url": "https://creditunionainews.com/alerts/#kansas-city-fed-small-credit-union-fednow-adoption"
+        },
+        {
+          "type": "alert",
+          "title": "Glia Adds Topic-Level Response Controls to Its Banking AI Agent",
+          "url": "https://creditunionainews.com/alerts/#glia-topic-level-ai-response-controls"
+        },
+        {
+          "type": "alert",
+          "title": "Credit Union Groups Launch August Check-Fraud Campaign",
+          "url": "https://creditunionainews.com/alerts/#credit-union-groups-august-check-fraud-campaign"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Bank of America Enhances EricaAssist With Generative AI",
+          "reason": "duplicate of the July 22 Daily Article"
+        },
+        {
+          "title": "Zest AI Named to CNBC World's Top Fintech Companies 2026",
+          "reason": "award announcement without a new operating development"
+        },
+        {
+          "title": "Alkami Announces AI Webinar on Conversational Banking",
+          "reason": "event promotion rather than a completed material development"
+        },
+        {
+          "title": "CCG Catalyst Reviews AI Agents and Connectors",
+          "reason": "commentary without a distinct new event"
+        },
+        {
+          "title": "ABA Comments on FSB AI Sound Practices",
+          "reason": "weaker direct credit-union applicability than the selected deployment"
+        },
+        {
+          "title": "America's Credit Unions Sends Senate Digital-Asset Letter",
+          "reason": "insufficiently specific AI or automation angle"
+        },
+        {
+          "title": "Addition Financial Launches Treasury Management Services",
+          "reason": "useful product expansion but weaker technology significance than the selected payments data"
+        },
+        {
+          "title": "Chime Expands Into Self-Directed Investing",
+          "reason": "no accessible direct announcement with enough verified implementation detail"
+        },
+        {
+          "title": "Ramp Launches Token Spend Management",
+          "reason": "enterprise spend-control development with limited direct credit-union operating relevance"
+        },
+        {
+          "title": "ABA Comments on FSB AI Sound Practices",
+          "reason": "already evaluated in the article cycle and less immediately actionable than the selected AI control release"
+        }
+      ],
+      "status": "complete",
+      "updatedAt": "2026-07-23T08:00:00-04:00"
+    },
     {
       "date": "2026-07-22",
       "fullArticleCount": 1,
