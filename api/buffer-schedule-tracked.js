@@ -1,6 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const scheduleHandler = require('./buffer-schedule');
+const scheduleHandler = require('./buffer-schedule-image');
 
 const ALLOWED_HOST = 'creditunionainews.com';
 const REQUIRED_UTM = {
