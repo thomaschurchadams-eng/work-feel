@@ -11,9 +11,20 @@
       "format": "executive-takeaway",
       "copy": "FinCEN's new student-aid fraud alert is an implementation brief for credit unions, not just a warning. The strongest detection pattern combines refund descriptors with beneficiary mismatch, new-account age, shared devices or IPs, and rapid movement through P2P, wires or digital assets. The operational takeaway: test whether your synthetic-identity and mule controls can see the one-refund/one-account model without treating one unusual transaction as determinative. https://creditunionainews.com/news/fincen-ai-student-aid-fraud.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-fincen-ai-student-aid-fraud-2026-07-27",
       "scheduledFor": "2026-07-27T12:30:00-04:00",
-      "status": "queued",
+      "status": "scheduled",
       "trackingStatus": "utm-tagged",
-      "queuedAt": "2026-07-27T07:28:00-04:00"
+      "queuedAt": "2026-07-27T07:13:00-04:00",
+      "postId": "6a673eb5c6ec24e0f363f45e",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "channelName": "CreditUnionAI News",
+      "scheduledAt": "2026-07-27T07:19:15-04:00",
+      "bufferDueAt": "2026-07-27T16:30:00.000Z",
+      "lastAttemptAt": "2026-07-27T07:19:15-04:00",
+      "lastResult": "created",
+      "duplicate": false,
+      "imageAttached": true,
+      "imageUrl": "https://creditunionainews.com/assets/fincen-ai-student-aid-fraud.jpg",
+      "imageMimeType": "image/jpeg"
     },
     {
       "id": "linkedin-genpact-agentic-ai-aml-investigations-2026-07-24",
