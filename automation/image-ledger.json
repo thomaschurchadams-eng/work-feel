@@ -3,6 +3,21 @@
   "description":"Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images":[
     {
+      "id": "fincen-ai-student-aid-fraud",
+      "articleUrl": "/news/fincen-ai-student-aid-fraud.html",
+      "imagePath": "/assets/fincen-ai-student-aid-fraud.jpg",
+      "publishedAt": "2026-07-27T07:00:00-04:00",
+      "medium": "screen-print-editorial",
+      "subject": "identity-and-payment-paths",
+      "composition": "converging-flow",
+      "perspective": "flat-orthographic",
+      "palette": "navy-coral-mint",
+      "lighting": "flat-graphic",
+      "texture": "ink-and-paper-grain",
+      "scene": "student-aid-refund-verification",
+      "conceptScore": 98.1
+    },
+    {
       "id": "genpact-agentic-ai-aml-investigations",
       "articleUrl": "/news/genpact-agentic-ai-aml-investigations.html",
       "imagePath": "/assets/genpact-agentic-ai-aml-investigations.jpg",

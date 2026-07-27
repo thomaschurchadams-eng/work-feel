@@ -3,6 +3,20 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fincen-ai-student-aid-fraud",
+      "title": "FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud",
+      "url": "/news/fincen-ai-student-aid-fraud.html",
+      "publishedAt": "2026-07-27T07:00:00-04:00",
+      "section": "news",
+      "functions": ["risk-compliance", "it-data-cybersecurity", "operations"],
+      "technologies": ["fraud-analytics", "data-decisioning"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "maturity": "practical-now",
+      "sourceTier": 1,
+      "score": 97.2
+    },
+    {
       "id": "genpact-agentic-ai-aml-investigations",
       "title": "Genpact Launches Agentic AI for AML Alert Investigations",
       "url": "/news/genpact-agentic-ai-aml-investigations.html",

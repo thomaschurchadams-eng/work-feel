@@ -6,15 +6,14 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-24",
+    "date": "2026-07-27",
     "fullArticleCount": 1,
     "alertCount": 0,
-    "evaluatedCandidateCount": 8,
+    "evaluatedCandidateCount": 7,
     "beatsSearched": [
       "risk-compliance",
       "payments-deposits",
       "it-data-cybersecurity",
-      "member-service",
       "operations",
       "board-strategy",
       "vendor-management"
@@ -22,44 +21,65 @@
     "publications": [
       {
         "type": "article",
-        "title": "Genpact Launches Agentic AI for AML Alert Investigations",
-        "url": "https://creditunionainews.com/news/genpact-agentic-ai-aml-investigations.html"
+        "title": "FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud",
+        "url": "https://creditunionainews.com/news/fincen-ai-student-aid-fraud.html"
       }
     ],
     "rejections": [
       {
-        "title": "BPI Proposes Controls for Sharing Sensitive Data With Regulators",
-        "reason": "credible cybersecurity guidance, but less directly tied to AI operations than the selected AML-agent launch"
+        "title": "Suspected North Korean Applicants Target a UK Bank's Remote Roles",
+        "reason": "material cyber and insider-risk signal, but the new incident depended on an unnamed bank and a single secondary report"
       },
       {
-        "title": "Credit Union Trades Recommend More Support for De Novo Charters",
-        "reason": "high credit-union relevance but no sufficiently specific AI or automation development"
+        "title": "Cognizant and Gulf Edge Announce Enterprise AI Partnership",
+        "reason": "broad regional partnership without a completed credit-union or community-financial-institution deployment"
       },
       {
-        "title": "Alkami Highlights Quontic Bank's Integrated Digital Journey",
-        "reason": "vendor case study with limited independently verifiable implementation detail and no credit-union deployment"
+        "title": "VAST Data Expands AMD AI Infrastructure Collaboration",
+        "reason": "credible infrastructure development but insufficiently specific credit-union operating relevance"
       },
       {
-        "title": "NCUA Revisits Stablecoin Issuance by Credit Union Subsidiaries",
-        "reason": "material payments policy candidate, but weaker AI relevance and less complete fresh primary-source evidence than the selected story"
+        "title": "AI Watermarking Market Forecast",
+        "reason": "market forecast rather than a completed operational or policy development"
       },
       {
-        "title": "Bank Trades Respond to FSB Responsible AI Sound Practices",
-        "reason": "policy commentary rather than a new deployment or completed operating development"
+        "title": "DOJ Describes AI-Generated Records in Medicaid Fraud Pleas",
+        "reason": "credible enforcement development but less directly actionable for credit-union controls than FinCEN's detailed red flags"
       },
       {
-        "title": "Creatio Promotes a Banking AI Summit",
-        "reason": "event promotion rather than a completed material development"
-      },
-      {
-        "title": "Nintex Publishes NCUA Exam-Readiness Guidance",
-        "reason": "vendor commentary rather than a distinct new event"
+        "title": "ANSR and HFS Release Generative Enterprise Survey",
+        "reason": "enterprise survey with limited direct applicability to regulated credit-union operations"
       }
     ],
     "status": "article-complete",
-    "updatedAt": "2026-07-24T07:18:00-04:00"
+    "updatedAt": "2026-07-27T07:31:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-24",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 8,
+      "beatsSearched": [
+        "risk-compliance",
+        "payments-deposits",
+        "it-data-cybersecurity",
+        "member-service",
+        "operations",
+        "board-strategy",
+        "vendor-management"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "Genpact Launches Agentic AI for AML Alert Investigations",
+          "url": "https://creditunionainews.com/news/genpact-agentic-ai-aml-investigations.html"
+        }
+      ],
+      "rejections": [],
+      "status": "article-complete",
+      "updatedAt": "2026-07-24T07:18:00-04:00"
+    },
     {
       "date": "2026-07-23",
       "fullArticleCount": 1,

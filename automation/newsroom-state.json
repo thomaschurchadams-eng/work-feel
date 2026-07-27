@@ -1,14 +1,44 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-07-24T07:00:00-04:00",
+  "lastStandardRun": "2026-07-27T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Genpact Launches Agentic AI for AML Alert Investigations",
-    "url": "https://creditunionainews.com/news/genpact-agentic-ai-aml-investigations.html",
-    "publishedAt": "2026-07-24T07:00:00-04:00",
+    "title": "FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud",
+    "url": "https://creditunionainews.com/news/fincen-ai-student-aid-fraud.html",
+    "publishedAt": "2026-07-27T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-07-27",
+      "headline": "Suspected North Korean Applicants Target a UK Bank's Remote Roles",
+      "reason": "material cyber and insider-risk signal, but the new incident depended on an unnamed bank and a single secondary report"
+    },
+    {
+      "date": "2026-07-27",
+      "headline": "Cognizant and Gulf Edge Announce Enterprise AI Partnership",
+      "reason": "broad regional partnership without a completed credit-union or community-financial-institution deployment"
+    },
+    {
+      "date": "2026-07-27",
+      "headline": "VAST Data Expands AMD AI Infrastructure Collaboration",
+      "reason": "credible infrastructure development but insufficiently specific credit-union operating relevance"
+    },
+    {
+      "date": "2026-07-27",
+      "headline": "AI Watermarking Market Forecast",
+      "reason": "market forecast rather than a completed operational or policy development"
+    },
+    {
+      "date": "2026-07-27",
+      "headline": "DOJ Describes AI-Generated Records in Medicaid Fraud Pleas",
+      "reason": "credible enforcement development but less directly actionable for credit-union controls than FinCEN's detailed red flags"
+    },
+    {
+      "date": "2026-07-27",
+      "headline": "ANSR and HFS Release Generative Enterprise Survey",
+      "reason": "enterprise survey with limited direct applicability to regulated credit-union operations"
+    },
     {
       "date": "2026-07-20",
       "headline": "FIS and Anthropic Extend Partnership on Trusted AI for Financial Services",
