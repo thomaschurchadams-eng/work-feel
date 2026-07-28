@@ -3,6 +3,21 @@
   "description":"Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images":[
     {
+      "id": "credit-unions-fed-payment-account-guardrails",
+      "articleUrl": "/news/credit-unions-fed-payment-account-guardrails.html",
+      "imagePath": "/assets/credit-unions-fed-payment-account-guardrails.jpg",
+      "publishedAt": "2026-07-28T07:00:00-04:00",
+      "medium": "technical-blueprint",
+      "subject": "payment-rail-access",
+      "composition": "central-gateway-flow",
+      "perspective": "wide-oblique",
+      "palette": "cobalt-cyan-safety-orange",
+      "lighting": "restrained-luminous",
+      "texture": "blueprint-paper-and-etched-lines",
+      "scene": "supervised-payment-account-gateway",
+      "conceptScore": 98.4
+    },
+    {
       "id": "fincen-ai-student-aid-fraud",
       "articleUrl": "/news/fincen-ai-student-aid-fraud.html",
       "imagePath": "/assets/fincen-ai-student-aid-fraud.jpg",

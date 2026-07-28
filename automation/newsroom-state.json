@@ -1,14 +1,49 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-07-27T07:00:00-04:00",
+  "lastStandardRun": "2026-07-28T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud",
-    "url": "https://creditunionainews.com/news/fincen-ai-student-aid-fraud.html",
-    "publishedAt": "2026-07-27T07:00:00-04:00",
+    "title": "Credit Unions Ask Fed for AML Guardrails on Payment Accounts",
+    "url": "https://creditunionainews.com/news/credit-unions-fed-payment-account-guardrails.html",
+    "publishedAt": "2026-07-28T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-07-28",
+      "headline": "Mastercard Adds Merchant-Side Scam Prevention Rules",
+      "reason": "material payments development, but the available fresh reporting did not expose a complete direct program document with enough implementation detail for a full article"
+    },
+    {
+      "date": "2026-07-28",
+      "headline": "AKUVO Announces 16 New Collections Customers",
+      "reason": "credit-union relevance was strong, but adoption and performance claims came from a single vendor announcement without independent customer confirmation"
+    },
+    {
+      "date": "2026-07-28",
+      "headline": "Everwise Builds a Formal Fintech Ventures Arm",
+      "reason": "useful case study, but it was a secondary feature rather than a new primary-source operating development"
+    },
+    {
+      "date": "2026-07-28",
+      "headline": "Appeals Court Extends NCUA Board-Member Briefing Timeline",
+      "reason": "material governance development but no direct AI, automation or payment-technology operating implication"
+    },
+    {
+      "date": "2026-07-28",
+      "headline": "FHFA Proposes Underserved-Markets Flexibility",
+      "reason": "credible housing-finance policy candidate with weaker direct technology relevance than the selected payment-infrastructure story"
+    },
+    {
+      "date": "2026-07-28",
+      "headline": "FinCEN Issues Venezuela Enforcement Policy Statement",
+      "reason": "fresh primary-source compliance development, but its scope was narrower for U.S. credit-union operations than the selected Fed-access proposal"
+    },
+    {
+      "date": "2026-07-28",
+      "headline": "Progress Links AI Search Visibility to Credit-Union CMS Governance",
+      "reason": "vendor thought leadership rather than a completed product, policy or credit-union operating event"
+    },
     {
       "date": "2026-07-27",
       "headline": "Suspected North Korean Applicants Target a UK Bank's Remote Roles",

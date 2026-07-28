@@ -3,6 +3,20 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-unions-fed-payment-account-guardrails",
+      "title": "Credit Unions Ask Fed for AML Guardrails on Payment Accounts",
+      "url": "/news/credit-unions-fed-payment-account-guardrails.html",
+      "publishedAt": "2026-07-28T07:00:00-04:00",
+      "section": "news",
+      "functions": ["payments-deposits", "risk-compliance", "vendor-management"],
+      "technologies": ["realtime-embedded-finance", "regtech-monitoring"],
+      "format": "reported-news",
+      "audience": "executive",
+      "maturity": "emerging",
+      "sourceTier": 1,
+      "score": 96.4
+    },
+    {
       "id": "fincen-ai-student-aid-fraud",
       "title": "FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud",
       "url": "/news/fincen-ai-student-aid-fraud.html",

@@ -6,55 +6,109 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "fullArticleCount": 1,
     "alertCount": 0,
-    "evaluatedCandidateCount": 7,
+    "evaluatedCandidateCount": 8,
     "beatsSearched": [
-      "risk-compliance",
       "payments-deposits",
+      "risk-compliance",
       "it-data-cybersecurity",
       "operations",
       "board-strategy",
-      "vendor-management"
+      "vendor-management",
+      "lending-collections"
     ],
     "publications": [
       {
         "type": "article",
-        "title": "FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud",
-        "url": "https://creditunionainews.com/news/fincen-ai-student-aid-fraud.html"
+        "title": "Credit Unions Ask Fed for AML Guardrails on Payment Accounts",
+        "url": "https://creditunionainews.com/news/credit-unions-fed-payment-account-guardrails.html"
       }
     ],
     "rejections": [
       {
-        "title": "Suspected North Korean Applicants Target a UK Bank's Remote Roles",
-        "reason": "material cyber and insider-risk signal, but the new incident depended on an unnamed bank and a single secondary report"
+        "title": "Mastercard Adds Merchant-Side Scam Prevention Rules",
+        "reason": "material payments development, but the available fresh reporting did not expose a complete direct program document with enough implementation detail for a full article"
       },
       {
-        "title": "Cognizant and Gulf Edge Announce Enterprise AI Partnership",
-        "reason": "broad regional partnership without a completed credit-union or community-financial-institution deployment"
+        "title": "AKUVO Announces 16 New Collections Customers",
+        "reason": "credit-union relevance was strong, but adoption and performance claims came from a single vendor announcement without independent customer confirmation"
       },
       {
-        "title": "VAST Data Expands AMD AI Infrastructure Collaboration",
-        "reason": "credible infrastructure development but insufficiently specific credit-union operating relevance"
+        "title": "Everwise Builds a Formal Fintech Ventures Arm",
+        "reason": "useful case study, but it was a secondary feature rather than a new primary-source operating development"
       },
       {
-        "title": "AI Watermarking Market Forecast",
-        "reason": "market forecast rather than a completed operational or policy development"
+        "title": "Appeals Court Extends NCUA Board-Member Briefing Timeline",
+        "reason": "material governance development but no direct AI, automation or payment-technology operating implication"
       },
       {
-        "title": "DOJ Describes AI-Generated Records in Medicaid Fraud Pleas",
-        "reason": "credible enforcement development but less directly actionable for credit-union controls than FinCEN's detailed red flags"
+        "title": "FHFA Proposes Underserved-Markets Flexibility",
+        "reason": "credible housing-finance policy candidate with weaker direct technology relevance than the selected payment-infrastructure story"
       },
       {
-        "title": "ANSR and HFS Release Generative Enterprise Survey",
-        "reason": "enterprise survey with limited direct applicability to regulated credit-union operations"
+        "title": "FinCEN Issues Venezuela Enforcement Policy Statement",
+        "reason": "fresh primary-source compliance development, but its scope was narrower for U.S. credit-union operations than the selected Fed-access proposal"
+      },
+      {
+        "title": "Progress Links AI Search Visibility to Credit-Union CMS Governance",
+        "reason": "vendor thought leadership rather than a completed product, policy or credit-union operating event"
       }
     ],
     "status": "article-complete",
-    "updatedAt": "2026-07-27T07:31:00-04:00"
+    "updatedAt": "2026-07-28T07:14:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-27",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 7,
+      "beatsSearched": [
+        "risk-compliance",
+        "payments-deposits",
+        "it-data-cybersecurity",
+        "operations",
+        "board-strategy",
+        "vendor-management"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud",
+          "url": "https://creditunionainews.com/news/fincen-ai-student-aid-fraud.html"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Suspected North Korean Applicants Target a UK Bank's Remote Roles",
+          "reason": "material cyber and insider-risk signal, but the new incident depended on an unnamed bank and a single secondary report"
+        },
+        {
+          "title": "Cognizant and Gulf Edge Announce Enterprise AI Partnership",
+          "reason": "broad regional partnership without a completed credit-union or community-financial-institution deployment"
+        },
+        {
+          "title": "VAST Data Expands AMD AI Infrastructure Collaboration",
+          "reason": "credible infrastructure development but insufficiently specific credit-union operating relevance"
+        },
+        {
+          "title": "AI Watermarking Market Forecast",
+          "reason": "market forecast rather than a completed operational or policy development"
+        },
+        {
+          "title": "DOJ Describes AI-Generated Records in Medicaid Fraud Pleas",
+          "reason": "credible enforcement development but less directly actionable for credit-union controls than FinCEN's detailed red flags"
+        },
+        {
+          "title": "ANSR and HFS Release Generative Enterprise Survey",
+          "reason": "enterprise survey with limited direct applicability to regulated credit-union operations"
+        }
+      ],
+      "status": "article-complete",
+      "updatedAt": "2026-07-27T07:31:00-04:00"
+    },
     {
       "date": "2026-07-24",
       "fullArticleCount": 1,
