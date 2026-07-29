@@ -2203,3 +2203,20 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
     animation: none;
   }
 }
+
+
+/* QC: prevent editorial grids from reserving empty feature rows */
+.page-home .home-news-grid > .card:first-child,
+.page-news-index main .cards-3 > .card:first-child,
+.page-insights-index main .cards-3 > .card:first-child {
+  grid-row: auto;
+}
+
+/* The homepage has no secondary hero panel, so do not reserve an empty column. */
+.page-home .hero-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.page-home .hero h1 {
+  max-width: 1080px;
+}
