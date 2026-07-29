@@ -1,4 +1,16 @@
   (function () {
+  const pagePath = window.location.pathname;
+  const isNewsArticle = pagePath.startsWith('/news/');
+  const isInsightArticle = pagePath.startsWith('/insight-');
+  if (isNewsArticle || isInsightArticle) {
+    document.body.classList.add('page-article');
+  }
+  if (isNewsArticle) {
+    document.body.classList.add('page-news-article');
+  } else if (isInsightArticle) {
+    document.body.classList.add('page-insight-article');
+  }
+
   const alertsData = [
     {
       label: 'Instant Payments',
@@ -951,6 +963,7 @@
   const fallbackImageSets = [
     {
       candidates: [
+        '/assets/Articalimage1.svg',
         '/assets/Articalimage1.png',
         '/assets/Articalimage1.jpg',
         '/assets/Articalimage1.jpeg',
@@ -962,6 +975,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage2.svg',
         '/assets/Articalimage2.png',
         '/assets/Articalimage2.jpg',
         '/assets/Articalimage2.jpeg',
@@ -973,6 +987,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage3.svg',
         '/assets/Articalimage3.png',
         '/assets/Articalimage3.jpg',
         '/assets/Articalimage3.jpeg',
@@ -984,6 +999,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage4.svg',
         '/assets/Articalimage4.png',
         '/assets/Articalimage4.jpg',
         '/assets/Articalimage4.jpeg',
@@ -995,6 +1011,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage5.svg',
         '/assets/Articalimage5.png',
         '/assets/Articalimage5.jpg',
         '/assets/Articalimage5.jpeg',
@@ -1006,6 +1023,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage6.jpg',
         '/assets/Articalimage6.png',
         '/assets/Articalimage6.jpg',
         '/assets/Articalimage6.jpeg',
@@ -1017,6 +1035,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage7.jpg',
         '/assets/Articalimage7.png',
         '/assets/Articalimage7.jpg',
         '/assets/Articalimage7.jpeg',
@@ -1028,6 +1047,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage8.jpg',
         '/assets/Articalimage8.png',
         '/assets/Articalimage8.jpg',
         '/assets/Articalimage8.jpeg',
@@ -1039,6 +1059,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage9.jpg',
         '/assets/Articalimage9.png',
         '/assets/Articalimage9.jpg',
         '/assets/Articalimage9.jpeg',
@@ -1050,6 +1071,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage10.jpg',
         '/assets/Articalimage10.png',
         '/assets/Articalimage10.jpg',
         '/assets/Articalimage10.jpeg',
@@ -1061,6 +1083,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage11.jpg',
         '/assets/Articalimage11.png',
         '/assets/Articalimage11.jpg',
         '/assets/Articalimage11.jpeg',
@@ -1072,6 +1095,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage12.jpg',
         '/assets/Articalimage12.png',
         '/assets/Articalimage12.jpg',
         '/assets/Articalimage12.jpeg',
@@ -1083,6 +1107,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage13.jpg',
         '/assets/Articalimage13.png',
         '/assets/Articalimage13.jpg',
         '/assets/Articalimage13.jpeg',
@@ -1094,6 +1119,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage14.jpg',
         '/assets/Articalimage14.png',
         '/assets/Articalimage14.jpg',
         '/assets/Articalimage14.jpeg',
@@ -1105,6 +1131,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage15.jpg',
         '/assets/Articalimage15.png',
         '/assets/Articalimage15.jpg',
         '/assets/Articalimage15.jpeg',
@@ -1116,6 +1143,7 @@
     },
     {
       candidates: [
+        '/assets/Articalimage16.jpg',
         '/assets/Articalimage16.png',
         '/assets/Articalimage16.jpg',
         '/assets/Articalimage16.jpeg',
@@ -1403,7 +1431,8 @@
 
 
   const addArticleNewsletterCta = () => {
-    const articleBody = document.querySelector('.article-body');
+    if (!document.body.classList.contains('page-article')) return;
+    const articleBody = document.querySelector('main .article-body');
     if (!articleBody || document.querySelector('.article-newsletter-cta')) return;
     const callout = document.createElement('aside');
     callout.className = 'article-newsletter-cta';
