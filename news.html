@@ -586,7 +586,7 @@
         cards.forEach((card) => {
           const type = card.getAttribute('data-article-type');
           const visible = filter === 'all' || type === filter;
-          card.style.display = visible ? 'flex' : 'none';
+          card.style.display = visible ? '' : 'none';
         });
       };
 
