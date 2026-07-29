@@ -1,4 +1,14 @@
   (function () {
+  const pagePath = window.location.pathname;
+  if (document.querySelector('.article-body')) {
+    document.body.classList.add('page-article');
+  }
+  if (pagePath.startsWith('/news/')) {
+    document.body.classList.add('page-news-article');
+  } else if (pagePath.startsWith('/insight-')) {
+    document.body.classList.add('page-insight-article');
+  }
+
   const alertsData = [
     {
       label: 'Instant Payments',
