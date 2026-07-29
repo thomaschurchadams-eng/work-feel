@@ -3,13 +3,40 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "heritage-hub-kiro-ai-money-coach",
+      "title": "Heritage Hub Will Launch an AI Money Coach for Members",
+      "url": "/news/heritage-hub-kiro-ai-money-coach.html",
+      "publishedAt": "2026-07-29T07:00:00-04:00",
+      "section": "news",
+      "functions": [
+        "member-service",
+        "vendor-management"
+      ],
+      "technologies": [
+        "personalization",
+        "conversational-ai"
+      ],
+      "format": "reported-news",
+      "audience": "executive",
+      "maturity": "emerging",
+      "sourceTier": 2,
+      "score": 88.6
+    },
+    {
       "id": "credit-unions-fed-payment-account-guardrails",
       "title": "Credit Unions Ask Fed for AML Guardrails on Payment Accounts",
       "url": "/news/credit-unions-fed-payment-account-guardrails.html",
       "publishedAt": "2026-07-28T07:00:00-04:00",
       "section": "news",
-      "functions": ["payments-deposits", "risk-compliance", "vendor-management"],
-      "technologies": ["realtime-embedded-finance", "regtech-monitoring"],
+      "functions": [
+        "payments-deposits",
+        "risk-compliance",
+        "vendor-management"
+      ],
+      "technologies": [
+        "realtime-embedded-finance",
+        "regtech-monitoring"
+      ],
       "format": "reported-news",
       "audience": "executive",
       "maturity": "emerging",
@@ -22,8 +49,15 @@
       "url": "/news/fincen-ai-student-aid-fraud.html",
       "publishedAt": "2026-07-27T07:00:00-04:00",
       "section": "news",
-      "functions": ["risk-compliance", "it-data-cybersecurity", "operations"],
-      "technologies": ["fraud-analytics", "data-decisioning"],
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "technologies": [
+        "fraud-analytics",
+        "data-decisioning"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "maturity": "practical-now",
@@ -36,13 +70,18 @@
       "url": "/news/genpact-agentic-ai-aml-investigations.html",
       "publishedAt": "2026-07-24T07:00:00-04:00",
       "section": "news",
-      "functions": ["risk-compliance", "vendor-management"],
-      "technologies": ["agents-automation"],
+      "functions": [
+        "risk-compliance",
+        "vendor-management"
+      ],
+      "technologies": [
+        "agents-automation"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "maturity": "practical-now",
       "sourceTier": 1,
-      "score": 95.0
+      "score": 95
     },
     {
       "id": "communication-fcu-scienaptic-ai-lending",
@@ -50,8 +89,13 @@
       "url": "/news/communication-fcu-scienaptic-ai-lending.html",
       "publishedAt": "2026-07-23T07:00:00-04:00",
       "section": "news",
-      "functions": ["lending-collections", "vendor-management"],
-      "technologies": ["data-decisioning"],
+      "functions": [
+        "lending-collections",
+        "vendor-management"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "maturity": "scaling",
@@ -64,8 +108,14 @@
       "url": "/news/bank-of-america-ericaassist-generative-ai.html",
       "publishedAt": "2026-07-22T07:00:00-04:00",
       "section": "news",
-      "functions": ["member-service", "operations"],
-      "technologies": ["conversational-ai", "generative-ai"],
+      "functions": [
+        "member-service",
+        "operations"
+      ],
+      "technologies": [
+        "conversational-ai",
+        "generative-ai"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "maturity": "scaling",

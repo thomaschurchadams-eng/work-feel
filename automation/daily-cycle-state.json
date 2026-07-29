@@ -6,60 +6,113 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-28",
+    "date": "2026-07-29",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 8,
     "beatsSearched": [
-      "payments-deposits",
-      "risk-compliance",
-      "it-data-cybersecurity",
-      "operations",
-      "board-strategy",
+      "member-service",
       "vendor-management",
-      "lending-collections"
+      "risk-compliance",
+      "payments-deposits",
+      "it-data-cybersecurity",
+      "operations"
     ],
     "publications": [
       {
         "type": "article",
-        "title": "Credit Unions Ask Fed for AML Guardrails on Payment Accounts",
-        "url": "https://creditunionainews.com/news/credit-unions-fed-payment-account-guardrails.html"
+        "title": "Heritage Hub Will Launch an AI Money Coach for Members",
+        "url": "https://creditunionainews.com/news/heritage-hub-kiro-ai-money-coach.html"
       }
     ],
     "rejections": [
       {
-        "title": "Mastercard Adds Merchant-Side Scam Prevention Rules",
-        "reason": "material payments development, but the available fresh reporting did not expose a complete direct program document with enough implementation detail for a full article"
+        "title": "Fenergo Launches Fen-AI Agent Orchestration Platform",
+        "reason": "credible compliance-platform launch, but its bank-focused agent governance angle closely overlapped the July 24 AML-agent article and lacked a new credit-union deployment"
       },
       {
-        "title": "AKUVO Announces 16 New Collections Customers",
-        "reason": "credit-union relevance was strong, but adoption and performance claims came from a single vendor announcement without independent customer confirmation"
+        "title": "Cross River Will Power X Money",
+        "reason": "material embedded-finance development with broad competitive implications, but weaker direct credit-union relevance than the selected member-service deployment"
       },
       {
-        "title": "Everwise Builds a Formal Fintech Ventures Arm",
-        "reason": "useful case study, but it was a secondary feature rather than a new primary-source operating development"
+        "title": "Standard Chartered Expands AI While Cutting Back-Office Roles",
+        "reason": "credible workforce and strategy signal from a global bank, but the operating details were not specific enough to U.S. credit unions"
       },
       {
-        "title": "Appeals Court Extends NCUA Board-Member Briefing Timeline",
-        "reason": "material governance development but no direct AI, automation or payment-technology operating implication"
+        "title": "Eltropy Takes Agentic AI on a Fall Conference Roadshow",
+        "reason": "event promotion rather than a completed product, policy or credit-union operating development"
       },
       {
-        "title": "FHFA Proposes Underserved-Markets Flexibility",
-        "reason": "credible housing-finance policy candidate with weaker direct technology relevance than the selected payment-infrastructure story"
+        "title": "Credit Union Loans Increased 0.12% in May",
+        "reason": "fresh credit-union data but no distinct AI, automation or digital-operating development for this publication"
       },
       {
-        "title": "FinCEN Issues Venezuela Enforcement Policy Statement",
-        "reason": "fresh primary-source compliance development, but its scope was narrower for U.S. credit-union operations than the selected Fed-access proposal"
+        "title": "Agencies Discuss Younger Americans in the Financial Marketplace",
+        "reason": "credible policy discussion with limited new implementation detail and no specific AI operating event"
       },
       {
-        "title": "Progress Links AI Search Visibility to Credit-Union CMS Governance",
-        "reason": "vendor thought leadership rather than a completed product, policy or credit-union operating event"
+        "title": "Your Next AI Failure Will Pass Every Control You Have",
+        "reason": "useful industry commentary on agent governance but not a new independently verifiable event"
       }
     ],
     "status": "article-complete",
-    "updatedAt": "2026-07-28T07:14:00-04:00"
+    "updatedAt": "2026-07-29T07:14:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-28",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 8,
+      "beatsSearched": [
+        "payments-deposits",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "operations",
+        "board-strategy",
+        "vendor-management",
+        "lending-collections"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "Credit Unions Ask Fed for AML Guardrails on Payment Accounts",
+          "url": "https://creditunionainews.com/news/credit-unions-fed-payment-account-guardrails.html"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Mastercard Adds Merchant-Side Scam Prevention Rules",
+          "reason": "material payments development, but the available fresh reporting did not expose a complete direct program document with enough implementation detail for a full article"
+        },
+        {
+          "title": "AKUVO Announces 16 New Collections Customers",
+          "reason": "credit-union relevance was strong, but adoption and performance claims came from a single vendor announcement without independent customer confirmation"
+        },
+        {
+          "title": "Everwise Builds a Formal Fintech Ventures Arm",
+          "reason": "useful case study, but it was a secondary feature rather than a new primary-source operating development"
+        },
+        {
+          "title": "Appeals Court Extends NCUA Board-Member Briefing Timeline",
+          "reason": "material governance development but no direct AI, automation or payment-technology operating implication"
+        },
+        {
+          "title": "FHFA Proposes Underserved-Markets Flexibility",
+          "reason": "credible housing-finance policy candidate with weaker direct technology relevance than the selected payment-infrastructure story"
+        },
+        {
+          "title": "FinCEN Issues Venezuela Enforcement Policy Statement",
+          "reason": "fresh primary-source compliance development, but its scope was narrower for U.S. credit-union operations than the selected Fed-access proposal"
+        },
+        {
+          "title": "Progress Links AI Search Visibility to Credit-Union CMS Governance",
+          "reason": "vendor thought leadership rather than a completed product, policy or credit-union operating event"
+        }
+      ],
+      "status": "article-complete",
+      "updatedAt": "2026-07-28T07:14:00-04:00"
+    },
     {
       "date": "2026-07-27",
       "fullArticleCount": 1,

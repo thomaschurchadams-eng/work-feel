@@ -1,7 +1,22 @@
 {
-  "version":1,
-  "description":"Append one record for every production hero image. Keep at least the most recent 50 records.",
-  "images":[
+  "version": 1,
+  "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
+  "images": [
+    {
+      "id": "heritage-hub-kiro-ai-money-coach",
+      "articleUrl": "/news/heritage-hub-kiro-ai-money-coach.html",
+      "imagePath": "/assets/heritage-hub-kiro-ai-money-coach.jpg",
+      "publishedAt": "2026-07-29T07:00:00-04:00",
+      "medium": "macro-still-life",
+      "subject": "member-interaction",
+      "composition": "asymmetric-editorial",
+      "perspective": "overhead",
+      "palette": "plum-gold",
+      "lighting": "cinematic-side-light",
+      "texture": "brushed-brass-and-paper-fiber",
+      "scene": "guided-financial-path",
+      "conceptScore": 98
+    },
     {
       "id": "credit-unions-fed-payment-account-guardrails",
       "articleUrl": "/news/credit-unions-fed-payment-account-guardrails.html",
