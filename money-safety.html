@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>AI Money Safety | CreditUnionAI News</title>
+  <meta name="description" content="A source-led consumer guide to AI-enabled money scams, starting with voice-clone fake emergencies.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    :root { --ink: #0b1f3b; --paper: #f7f4ed; --copper: #b6643a; --mist: #e8eef3; --slate: #40536a; }
+    body.money-safety { background: var(--paper); color: var(--ink); }
+    .ms-shell { width: min(92%, 1160px); margin: 0 auto; }
+    .ms-top { background: #fffdf9; border-bottom: 1px solid #d7d1c8; }
+    .ms-top .ms-shell { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .ms-brand { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.02em; }
+    .ms-brand img { width: 48px; height: 48px; object-fit: contain; }
+    .ms-brand span { display: block; line-height: 1.05; font-family: Georgia, serif; font-size: 20px; }
+    .ms-top-note { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: #6d5547; font-weight: 800; }
+    .ms-hero { background: radial-gradient(circle at 78% 22%, #314d6f 0, #142d4a 26%, #091a30 70%); color: #fff; padding: 72px 0 68px; }
+    .ms-hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: 50px; align-items: end; }
+    .ms-kicker { color: #e5b18e; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 800; margin-bottom: 16px; }
+    .ms-hero h1, .ms-section h2, .ms-guide h2 { font-family: Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+    .ms-hero h1 { font-size: clamp(45px, 7vw, 78px); max-width: 760px; line-height: .97; margin: 0 0 22px; }
+    .ms-lead { font-size: clamp(18px, 2vw, 22px); color: #d9e5ef; max-width: 680px; line-height: 1.45; }
+    .ms-promise { border-left: 3px solid var(--copper); background: rgba(255,255,255,.07); padding: 26px; }
+    .ms-promise strong { display: block; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: #f1c2a3; margin-bottom: 10px; }
+    .ms-promise p { color: #edf3f8; font-size: 17px; line-height: 1.5; }
+    .ms-meta { color: #5d6c7d; font-size: 14px; padding: 18px 0; border-bottom: 1px solid #d7d1c8; }
+    .ms-guide { padding: 64px 0 52px; }
+    .ms-guide-head { max-width: 770px; }
+    .ms-guide h2 { font-size: clamp(34px, 5vw, 54px); line-height: 1.02; margin: 10px 0 18px; }
+    .ms-guide-intro { font-size: 19px; color: var(--slate); max-width: 720px; }
+    .ms-signals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 35px 0 44px; }
+    .ms-signal { border-top: 2px solid var(--ink); padding: 17px 5px 4px; }
+    .ms-signal b { display: block; font-size: 17px; margin-bottom: 5px; }
+    .ms-signal span { color: var(--slate); font-size: 15px; line-height: 1.45; }
+    .ms-actions { background: #fffdf9; border: 1px solid #d7d1c8; padding: 34px; }
+    .ms-actions h3 { font-family: Georgia, serif; font-size: 31px; margin: 0 0 24px; }
+    .ms-action-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+    .ms-action { border-left: 3px solid var(--copper); padding-left: 16px; }
+    .ms-action-num { color: var(--copper); font-weight: 800; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    .ms-action h4 { font-family: Georgia, serif; font-size: 26px; margin: 5px 0 7px; }
+    .ms-action p { color: var(--slate); line-height: 1.52; }
+    .ms-sources { padding: 56px 0; border-top: 1px solid #d7d1c8; }
+    .ms-section-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 48px; }
+    .ms-section h2 { font-size: 39px; line-height: 1.03; margin: 8px 0 14px; }
+    .ms-section p { color: var(--slate); }
+    .ms-source-list { list-style: none; display: grid; gap: 12px; }
+    .ms-source-list a { display: block; background: #fffdf9; border: 1px solid #d7d1c8; padding: 17px 19px; font-weight: 700; color: var(--ink); }
+    .ms-source-list a:hover { border-color: var(--copper); color: var(--ink); }
+    .ms-source-list small { display: block; font-weight: 500; color: #607083; margin-top: 4px; }
+    .ms-alerts { background: var(--mist); padding: 50px 0; }
+    .ms-alert-box { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: center; border-left: 3px solid var(--copper); padding-left: 24px; }
+    .ms-alert-box h2 { font-family: Georgia, serif; font-size: 33px; margin: 0 0 7px; }
+    .ms-alert-box p { color: var(--slate); max-width: 660px; }
+    .ms-alert-box button { background: transparent; border: 1px solid #8492a0; color: #607083; padding: 13px 18px; font: inherit; font-weight: 700; cursor: not-allowed; white-space: nowrap; }
+    .ms-note { font-size: 13px; color: #5d6c7d; padding: 22px 0 38px; }
+    .ms-footer { background: var(--ink); color: #dce7f0; padding: 28px 0; font-size: 14px; }
+    .ms-footer a { text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 760px) { .ms-top .ms-shell { min-height: 64px; } .ms-brand img { width: 40px; height: 40px; } .ms-top-note { font-size: 10px; text-align: right; } .ms-hero { padding: 54px 0 48px; } .ms-hero-grid, .ms-section-grid { grid-template-columns: 1fr; gap: 28px; } .ms-signals, .ms-action-grid { grid-template-columns: 1fr; gap: 20px; } .ms-actions { padding: 25px 20px; } .ms-alert-box { grid-template-columns: 1fr; gap: 18px; } .ms-alert-box button { justify-self: start; } }
+  </style>
+</head>
+<body class="money-safety">
+  <header class="ms-top">
+    <div class="ms-shell">
+      <div class="ms-brand"><img src="/assets/download.png" alt="CreditUnionAI News"><span>CreditUnionAI<br>News</span></div>
+      <div class="ms-top-note">Consumer concept · Draft</div>
+    </div>
+  </header>
+  <main>
+    <section class="ms-hero">
+      <div class="ms-shell ms-hero-grid">
+        <div>
+          <p class="ms-kicker">AI Money Safety</p>
+          <h1>Pause. Check. Protect your money.</h1>
+          <p class="ms-lead">Straightforward guides to AI-enabled scams, built from public-agency guidance and written for everyday decisions—not fear or hype.</p>
+        </div>
+        <aside class="ms-promise"><strong>Our promise</strong><p>We show where the guidance comes from, separate verified facts from practical steps, and link you to the original source.</p></aside>
+      </div>
+    </section>
+    <div class="ms-shell ms-meta">First guide published July 30, 2026 · Editorial review July 30, 2026 · Sources checked before publication</div>
+    <section class="ms-guide">
+      <div class="ms-shell">
+        <div class="ms-guide-head">
+          <p class="ms-kicker" style="color:#a65432">Guide 01 · Voice-clone fake emergencies</p>
+          <h2>If a loved one sounds panicked, don’t trust the voice alone.</h2>
+          <p class="ms-guide-intro">A scammer may use a short audio clip to imitate a family member, then pressure you to send money immediately. The FTC says to slow down and verify independently.</p>
+        </div>
+        <div class="ms-signals" aria-label="Warning signs">
+          <div class="ms-signal"><b>Urgency</b><span>They insist you must act now.</span></div>
+          <div class="ms-signal"><b>Secrecy</b><span>They tell you not to call anyone else.</span></div>
+          <div class="ms-signal"><b>Unusual payment</b><span>They ask for a wire, crypto, gift card, or payment app transfer.</span></div>
+        </div>
+        <section class="ms-actions" aria-labelledby="stop-verify-secure"><h3 id="stop-verify-secure">What to do next</h3>
+          <div class="ms-action-grid">
+            <article class="ms-action"><div class="ms-action-num">01</div><h4>Stop</h4><p>Do not send money, share a code, or stay on the call because someone creates pressure. Hanging up is okay.</p></article>
+            <article class="ms-action"><div class="ms-action-num">02</div><h4>Verify</h4><p>Call or message your loved one using a number you already know—not a number the caller gives you. Check with another trusted person if needed.</p></article>
+            <article class="ms-action"><div class="ms-action-num">03</div><h4>Secure</h4><p>If you sent money or shared account information, contact your financial institution right away and report the scam to the FTC.</p></article>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="ms-sources">
+      <div class="ms-shell ms-section-grid">
+        <div class="ms-section"><p class="ms-kicker" style="color:#a65432">Source desk</p><h2>Read the original guidance.</h2><p>These are the public resources that informed this guide. Links go directly to the agency source.</p></div>
+        <ul class="ms-source-list">
+          <li><a href="https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money" target="_blank" rel="noopener">FTC: Scammers use fake emergencies to steal your money<small>Voice-cloning, independently verifying an emergency, and reporting fraud.</small></a></li>
+          <li><a href="https://mycreditunion.gov/protect-your-money/prevention/frauds-scams" target="_blank" rel="noopener">NCUA / MyCreditUnion.gov: Frauds &amp; Scams<small>Consumer information about common fraud and imposter scams.</small></a></li>
+          <li><a href="https://www.consumerfinance.gov/consumer-tools/fraud/" target="_blank" rel="noopener">CFPB: Fraud and scams<small>Consumer tools for recognizing, preventing, and responding to scams.</small></a></li>
+          <li><a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener">ReportFraud.ftc.gov<small>FTC’s official fraud reporting destination.</small></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="ms-alerts"><div class="ms-shell ms-alert-box"><div><h2>AI Money Safety alerts are in development.</h2><p>This is a concept page. There is no email signup or alert service active yet; when one exists, it will clearly explain what it sends and how to unsubscribe.</p></div><button type="button" disabled aria-disabled="true">Email alerts · Coming soon</button></div></section>
+    <div class="ms-shell ms-note"><strong>Editorial standards:</strong> We link to primary public-agency guidance, date our reviews, and update a guide when its core source changes. This page is general information only—not financial, legal, or personalized security advice. For a suspected scam or account issue, contact your financial institution directly using a number you trust.</div>
+  </main>
+  <footer class="ms-footer"><div class="ms-shell">© CreditUnionAI News · AI Money Safety is a consumer concept. <a href="/corrections.html">Editorial standards</a></div></footer>
+</body>
+</html>
