@@ -215,6 +215,7 @@ module.exports = async function handler(req, res) {
       .map((post) => {
         const item = ledger.find((entry) =>
           entry.bufferPostId === post.id ||
+          entry.postId === post.id ||
           (entry.distributionUrl && post.text.includes(entry.distributionUrl)) ||
           (entry.articleUrl && post.text.includes(entry.articleUrl))
         );
