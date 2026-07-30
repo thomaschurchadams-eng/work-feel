@@ -4,6 +4,20 @@
   "trackingPolicyEffectiveAt": "2026-07-22T18:46:00Z",
   "items": [
     {
+      "id": "linkedin-velera-risk-alert-manager-fraud-response-2026-07-30",
+      "articleUrl": "https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html",
+      "distributionUrl": "https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-velera-risk-alert-manager-fraud-response-2026-07-30",
+      "platform": "linkedin",
+      "format": "executive-takeaway",
+      "copy": "Velera's new Risk Alert Manager shifts the fraud question from detection speed to response speed. For credit-union leaders, the operating takeaway is to measure alert-to-review, alert-to-action and member-resolution time separately—then balance faster card controls against false positives, unnecessary reissues and member friction. https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-velera-risk-alert-manager-fraud-response-2026-07-30",
+      "scheduledFor": "2026-07-30T11:30:00-04:00",
+      "status": "queued",
+      "trackingStatus": "utm-tagged",
+      "queuedAt": "2026-07-30T07:18:00-04:00",
+      "imageUrl": "https://creditunionainews.com/assets/velera-risk-alert-manager-fraud-response.jpg",
+      "imageAlt": "Linocut illustration of a fraud analyst directing suspicious card signals through response controls"
+    },
+    {
       "id": "linkedin-credit-unions-fed-payment-account-guardrails-2026-07-28",
       "articleUrl": "https://creditunionainews.com/news/credit-unions-fed-payment-account-guardrails.html",
       "distributionUrl": "https://creditunionainews.com/news/credit-unions-fed-payment-account-guardrails.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-credit-unions-fed-payment-account-guardrails-2026-07-28",
@@ -108,8 +122,25 @@
       "lastResult": "promoted-draft-to-queue"
     }
   ],
-  "requiredFields": ["id", "articleUrl", "platform", "format", "copy", "scheduledFor", "status"],
-  "trackedItemFields": ["distributionUrl", "trackingStatus"],
-  "formats": ["launch-post", "executive-takeaway", "carousel-outline", "role-specific-excerpt", "weekly-roundup"],
+  "requiredFields": [
+    "id",
+    "articleUrl",
+    "platform",
+    "format",
+    "copy",
+    "scheduledFor",
+    "status"
+  ],
+  "trackedItemFields": [
+    "distributionUrl",
+    "trackingStatus"
+  ],
+  "formats": [
+    "launch-post",
+    "executive-takeaway",
+    "carousel-outline",
+    "role-specific-excerpt",
+    "weekly-roundup"
+  ],
   "note": "Beginning after trackingPolicyEffectiveAt, every queued LinkedIn item must keep articleUrl canonical, include a UTM-tagged distributionUrl, use distributionUrl in copy, and pass the tracked production scheduler. The July 22 post is retained as an explicitly untagged timing baseline."
 }
