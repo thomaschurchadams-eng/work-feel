@@ -6,59 +6,112 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-29",
+    "date": "2026-07-30",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 8,
     "beatsSearched": [
-      "member-service",
-      "vendor-management",
-      "risk-compliance",
-      "payments-deposits",
       "it-data-cybersecurity",
-      "operations"
+      "payments-deposits",
+      "operations",
+      "risk-compliance",
+      "member-service",
+      "vendor-management"
     ],
     "publications": [
       {
         "type": "article",
-        "title": "Heritage Hub Will Launch an AI Money Coach for Members",
-        "url": "https://creditunionainews.com/news/heritage-hub-kiro-ai-money-coach.html"
+        "title": "Velera Gives Credit Unions Near-Real-Time Card Fraud Controls",
+        "url": "https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html"
       }
     ],
     "rejections": [
       {
-        "title": "Fenergo Launches Fen-AI Agent Orchestration Platform",
-        "reason": "credible compliance-platform launch, but its bank-focused agent governance angle closely overlapped the July 24 AML-agent article and lacked a new credit-union deployment"
+        "title": "InvestiFi Raises $20 Million for Embedded Investing",
+        "reason": "credit-union relevance was strong, but the funding event offered less immediate operating impact and limited AI specificity"
       },
       {
-        "title": "Cross River Will Power X Money",
-        "reason": "material embedded-finance development with broad competitive implications, but weaker direct credit-union relevance than the selected member-service deployment"
+        "title": "Strivve Secures Chartway Ventures in CUSO-Backed Capital Raise",
+        "reason": "payments relevance was credible, but the capital raise did not establish a new product deployment or measurable operating outcome"
+      },
+      {
+        "title": "BaFin Plans More Direct Monitoring of Bank and Insurer AI",
+        "reason": "authoritative regulatory development, but its German scope was less directly actionable for U.S. credit unions"
+      },
+      {
+        "title": "Fenergo Launches Fen-AI Agent Orchestration Platform",
+        "reason": "credible compliance launch, but bank-focused and closely overlapping the July 24 agentic AML article"
       },
       {
         "title": "Standard Chartered Expands AI While Cutting Back-Office Roles",
-        "reason": "credible workforce and strategy signal from a global bank, but the operating details were not specific enough to U.S. credit unions"
+        "reason": "credible workforce signal, but operating details were not specific enough to U.S. credit unions"
       },
       {
-        "title": "Eltropy Takes Agentic AI on a Fall Conference Roadshow",
-        "reason": "event promotion rather than a completed product, policy or credit-union operating development"
+        "title": "Gemineye Reports Consumer Sentiment on AI Banking",
+        "reason": "survey-led vendor material without a distinct product, policy or credit-union operating event"
       },
       {
-        "title": "Credit Union Loans Increased 0.12% in May",
-        "reason": "fresh credit-union data but no distinct AI, automation or digital-operating development for this publication"
-      },
-      {
-        "title": "Agencies Discuss Younger Americans in the Financial Marketplace",
-        "reason": "credible policy discussion with limited new implementation detail and no specific AI operating event"
-      },
-      {
-        "title": "Your Next AI Failure Will Pass Every Control You Have",
-        "reason": "useful industry commentary on agent governance but not a new independently verifiable event"
+        "title": "AFC Highlights Identity Fraud in Student Aid",
+        "reason": "material fraud subject, but substantially duplicated the July 27 FinCEN student-aid fraud coverage"
       }
     ],
     "status": "article-complete",
-    "updatedAt": "2026-07-29T07:14:00-04:00"
+    "updatedAt": "2026-07-30T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-29",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 8,
+      "beatsSearched": [
+        "member-service",
+        "vendor-management",
+        "risk-compliance",
+        "payments-deposits",
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "Heritage Hub Will Launch an AI Money Coach for Members",
+          "url": "https://creditunionainews.com/news/heritage-hub-kiro-ai-money-coach.html"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Fenergo Launches Fen-AI Agent Orchestration Platform",
+          "reason": "credible compliance-platform launch, but its bank-focused agent governance angle closely overlapped the July 24 AML-agent article and lacked a new credit-union deployment"
+        },
+        {
+          "title": "Cross River Will Power X Money",
+          "reason": "material embedded-finance development with broad competitive implications, but weaker direct credit-union relevance than the selected member-service deployment"
+        },
+        {
+          "title": "Standard Chartered Expands AI While Cutting Back-Office Roles",
+          "reason": "credible workforce and strategy signal from a global bank, but the operating details were not specific enough to U.S. credit unions"
+        },
+        {
+          "title": "Eltropy Takes Agentic AI on a Fall Conference Roadshow",
+          "reason": "event promotion rather than a completed product, policy or credit-union operating development"
+        },
+        {
+          "title": "Credit Union Loans Increased 0.12% in May",
+          "reason": "fresh credit-union data but no distinct AI, automation or digital-operating development for this publication"
+        },
+        {
+          "title": "Agencies Discuss Younger Americans in the Financial Marketplace",
+          "reason": "credible policy discussion with limited new implementation detail and no specific AI operating event"
+        },
+        {
+          "title": "Your Next AI Failure Will Pass Every Control You Have",
+          "reason": "useful industry commentary on agent governance but not a new independently verifiable event"
+        }
+      ],
+      "status": "article-complete",
+      "updatedAt": "2026-07-29T07:14:00-04:00"
+    },
     {
       "date": "2026-07-28",
       "fullArticleCount": 1,

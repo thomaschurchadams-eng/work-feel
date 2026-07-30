@@ -3,6 +3,26 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "velera-risk-alert-manager-fraud-response",
+      "title": "Velera Gives Credit Unions Near-Real-Time Card Fraud Controls",
+      "url": "/news/velera-risk-alert-manager-fraud-response.html",
+      "publishedAt": "2026-07-30T07:00:00-04:00",
+      "section": "news",
+      "functions": [
+        "it-data-cybersecurity",
+        "payments-deposits",
+        "operations"
+      ],
+      "technologies": [
+        "fraud-analytics"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "maturity": "scaling",
+      "sourceTier": 1,
+      "score": 94.2
+    },
+    {
       "id": "heritage-hub-kiro-ai-money-coach",
       "title": "Heritage Hub Will Launch an AI Money Coach for Members",
       "url": "/news/heritage-hub-kiro-ai-money-coach.html",

@@ -1,14 +1,49 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-07-29T07:00:00-04:00",
+  "lastStandardRun": "2026-07-30T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Heritage Hub Will Launch an AI Money Coach for Members",
-    "url": "https://creditunionainews.com/news/heritage-hub-kiro-ai-money-coach.html",
-    "publishedAt": "2026-07-29T07:00:00-04:00",
+    "title": "Velera Gives Credit Unions Near-Real-Time Card Fraud Controls",
+    "url": "https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html",
+    "publishedAt": "2026-07-30T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-07-30",
+      "headline": "InvestiFi Raises $20 Million for Embedded Investing",
+      "reason": "credit-union relevance was strong, but the funding event offered less immediate operating impact and limited AI specificity"
+    },
+    {
+      "date": "2026-07-30",
+      "headline": "Strivve Secures Chartway Ventures in CUSO-Backed Capital Raise",
+      "reason": "payments relevance was credible, but the capital raise did not establish a new product deployment or measurable operating outcome"
+    },
+    {
+      "date": "2026-07-30",
+      "headline": "BaFin Plans More Direct Monitoring of Bank and Insurer AI",
+      "reason": "authoritative regulatory development, but its German scope was less directly actionable for U.S. credit unions"
+    },
+    {
+      "date": "2026-07-30",
+      "headline": "Fenergo Launches Fen-AI Agent Orchestration Platform",
+      "reason": "credible compliance launch, but bank-focused and closely overlapping the July 24 agentic AML article"
+    },
+    {
+      "date": "2026-07-30",
+      "headline": "Standard Chartered Expands AI While Cutting Back-Office Roles",
+      "reason": "credible workforce signal, but operating details were not specific enough to U.S. credit unions"
+    },
+    {
+      "date": "2026-07-30",
+      "headline": "Gemineye Reports Consumer Sentiment on AI Banking",
+      "reason": "survey-led vendor material without a distinct product, policy or credit-union operating event"
+    },
+    {
+      "date": "2026-07-30",
+      "headline": "AFC Highlights Identity Fraud in Student Aid",
+      "reason": "material fraud subject, but substantially duplicated the July 27 FinCEN student-aid fraud coverage"
+    },
     {
       "date": "2026-07-29",
       "headline": "Fenergo Launches Fen-AI Agent Orchestration Platform",
@@ -180,13 +215,5 @@
       "reason": "vendor commentary rather than a distinct new event"
     }
   ],
-  "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible.",
-  "socialDistributionBlocker": {
-    "date": "2026-07-29",
-    "articleId": "heritage-hub-kiro-ai-money-coach",
-    "scheduledFor": "2026-07-29T11:30:00-04:00",
-    "attemptedAt": "2026-07-29T07:23:00-04:00",
-    "status": "not-queued",
-    "reason": "Repository safety controls rejected rewriting the public social queue because it contains historical Buffer post and channel identifiers. The queue item was not created, the Buffer scheduling endpoint was not invoked, and no LinkedIn post was scheduled."
-  }
+  "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible."
 }
