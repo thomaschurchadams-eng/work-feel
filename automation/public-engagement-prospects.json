@@ -1,8 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30T19:45:00Z",
+  "updatedAt": "2026-07-31T19:55:00Z",
   "privacy": "Store no names, email addresses, form values or other reader-level personal data.",
   "prospects": [
+    {
+      "id": "arizona-financial-creatio-workflow-interview-2026-07-31",
+      "organizationType": "credit-union",
+      "opportunityType": "media-interview",
+      "sourceUrl": "https://www.creatio.com/company/news/24941",
+      "relatedArticleUrl": "https://creditunionainews.com/news/arizona-financial-creatio-agentic-ai-workflows.html",
+      "evidence": [
+        "Publicly announced credit-union workflow modernization with future agentic automation",
+        "Material unanswered questions about implementation sequence, operating baselines and human-oversight controls",
+        "Official public media-relations channel available"
+      ],
+      "status": "gmail-draft-created",
+      "objective": "Request an interview about implementation sequencing, workflow baselines, governance and the conditions for expanding agent authority.",
+      "nextReviewAt": "2026-08-07"
+    },
     {
       "id": "velera-risk-alert-manager-follow-up-2026-07-30",
       "organizationType": "payments-credit-union-service-organization",
