@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-31T19:56:00Z",
+  "updatedAt": "2026-07-22T18:46:00Z",
   "status": "baseline-collection",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -49,19 +49,5 @@
     "Do not change the fixed LinkedIn posting schedule automatically; recommend a schedule change only after the stated sample threshold is met.",
     "Never use personal data, names, email addresses, form values or free-form reader input in analytics or strategy decisions."
   ],
-  "decisionLog": [
-    {
-      "date": "2026-07-31",
-      "window": "28-day",
-      "evidence": {
-        "metricsReadyLinkedInPosts": 8,
-        "linkedinImpressions": 860,
-        "recordedLinkedInClicks": 0,
-        "ga4AttributedSessions": null,
-        "onsiteAnalyticsStatus": "not-retrieved"
-      },
-      "decision": "Keep the current weekday posting schedule and start no experiment.",
-      "reason": "The minimum timing sample is now met, but results are concentrated in two posts, comparable weekday and format samples remain too small, and onsite engagement data was not retrieved."
-    }
-  ]
+  "decisionLog": []
 }
