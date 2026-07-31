@@ -1,14 +1,49 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-07-30T07:00:00-04:00",
+  "lastStandardRun": "2026-07-31T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Velera Gives Credit Unions Near-Real-Time Card Fraud Controls",
-    "url": "https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html",
-    "publishedAt": "2026-07-30T07:00:00-04:00",
+    "title": "Arizona Financial Selects Agentic AI Platform for Member Workflows",
+    "url": "https://creditunionainews.com/news/arizona-financial-creatio-agentic-ai-workflows.html",
+    "publishedAt": "2026-07-31T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-07-31",
+      "headline": "Alkami Expands Plaid Integration for Connected Digital Banking",
+      "reason": "live and credit-union-relevant, but the data-connectivity expansion had less immediate AI operating impact than the selected workflow deployment"
+    },
+    {
+      "date": "2026-07-31",
+      "headline": "Bank of America Plans to Acquire MDSec Consulting",
+      "reason": "well-sourced cybersecurity development, but it lacked a direct credit-union deployment and followed recent Bank of America coverage"
+    },
+    {
+      "date": "2026-07-31",
+      "headline": "Lloyds Sets AI-Backed £2 Billion Cost-Savings Target",
+      "reason": "material workforce and strategy signal, but Lloyds disclosed few implementation details and limited direct U.S. credit-union applicability"
+    },
+    {
+      "date": "2026-07-31",
+      "headline": "Prismm Estimates $1.5 Trillion in Deposits at Wealth-Transfer Risk",
+      "reason": "important deposit-retention theme, but the headline estimate depended on a vendor index without enough public methodology for a full article"
+    },
+    {
+      "date": "2026-07-31",
+      "headline": "BIS Says Attackers Hold an AI Advantage in Financial Cybersecurity",
+      "reason": "credible cyber-risk analysis, but it overlapped the selected week's fraud and cybersecurity concentration without a new credit-union operating event"
+    },
+    {
+      "date": "2026-07-31",
+      "headline": "Golden 1 Receives Leadership and Workplace Recognition",
+      "reason": "credit-union-specific but an awards announcement rather than a new technology, policy or operating development"
+    },
+    {
+      "date": "2026-07-31",
+      "headline": "Finovate Previews 14 AI Demonstrators",
+      "reason": "useful market scan but promotional event coverage without completed deployments or independent performance evidence"
+    },
     {
       "date": "2026-07-30",
       "headline": "InvestiFi Raises $20 Million for Embedded Investing",

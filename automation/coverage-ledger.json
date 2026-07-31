@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "arizona-financial-creatio-agentic-ai-workflows",
+      "title": "Arizona Financial Selects Agentic AI Platform for Member Workflows",
+      "url": "/news/arizona-financial-creatio-agentic-ai-workflows.html",
+      "publishedAt": "2026-07-31T07:00:00-04:00",
+      "section": "news",
+      "functions": [
+        "member-service",
+        "operations",
+        "vendor-management"
+      ],
+      "technologies": [
+        "agents-automation",
+        "personalization"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "maturity": "emerging",
+      "sourceTier": 2,
+      "score": 91.8
+    },
+    {
       "id": "velera-risk-alert-manager-fraud-response",
       "title": "Velera Gives Credit Unions Near-Real-Time Card Fraud Controls",
       "url": "/news/velera-risk-alert-manager-fraud-response.html",

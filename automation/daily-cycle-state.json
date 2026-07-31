@@ -6,59 +6,112 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-30",
+    "date": "2026-07-31",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 8,
     "beatsSearched": [
+      "member-service",
+      "operations",
+      "vendor-management",
       "it-data-cybersecurity",
       "payments-deposits",
-      "operations",
-      "risk-compliance",
-      "member-service",
-      "vendor-management"
+      "risk-compliance"
     ],
     "publications": [
       {
         "type": "article",
-        "title": "Velera Gives Credit Unions Near-Real-Time Card Fraud Controls",
-        "url": "https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html"
+        "title": "Arizona Financial Selects Agentic AI Platform for Member Workflows",
+        "url": "https://creditunionainews.com/news/arizona-financial-creatio-agentic-ai-workflows.html"
       }
     ],
     "rejections": [
       {
-        "title": "InvestiFi Raises $20 Million for Embedded Investing",
-        "reason": "credit-union relevance was strong, but the funding event offered less immediate operating impact and limited AI specificity"
+        "title": "Alkami Expands Plaid Integration for Connected Digital Banking",
+        "reason": "live and credit-union-relevant, but the data-connectivity expansion had less immediate AI operating impact than the selected workflow deployment"
       },
       {
-        "title": "Strivve Secures Chartway Ventures in CUSO-Backed Capital Raise",
-        "reason": "payments relevance was credible, but the capital raise did not establish a new product deployment or measurable operating outcome"
+        "title": "Bank of America Plans to Acquire MDSec Consulting",
+        "reason": "well-sourced cybersecurity development, but it lacked a direct credit-union deployment and followed recent Bank of America coverage"
       },
       {
-        "title": "BaFin Plans More Direct Monitoring of Bank and Insurer AI",
-        "reason": "authoritative regulatory development, but its German scope was less directly actionable for U.S. credit unions"
+        "title": "Lloyds Sets AI-Backed £2 Billion Cost-Savings Target",
+        "reason": "material workforce and strategy signal, but Lloyds disclosed few implementation details and limited direct U.S. credit-union applicability"
       },
       {
-        "title": "Fenergo Launches Fen-AI Agent Orchestration Platform",
-        "reason": "credible compliance launch, but bank-focused and closely overlapping the July 24 agentic AML article"
+        "title": "Prismm Estimates $1.5 Trillion in Deposits at Wealth-Transfer Risk",
+        "reason": "important deposit-retention theme, but the headline estimate depended on a vendor index without enough public methodology for a full article"
       },
       {
-        "title": "Standard Chartered Expands AI While Cutting Back-Office Roles",
-        "reason": "credible workforce signal, but operating details were not specific enough to U.S. credit unions"
+        "title": "BIS Says Attackers Hold an AI Advantage in Financial Cybersecurity",
+        "reason": "credible cyber-risk analysis, but it overlapped the selected week's fraud and cybersecurity concentration without a new credit-union operating event"
       },
       {
-        "title": "Gemineye Reports Consumer Sentiment on AI Banking",
-        "reason": "survey-led vendor material without a distinct product, policy or credit-union operating event"
+        "title": "Golden 1 Receives Leadership and Workplace Recognition",
+        "reason": "credit-union-specific but an awards announcement rather than a new technology, policy or operating development"
       },
       {
-        "title": "AFC Highlights Identity Fraud in Student Aid",
-        "reason": "material fraud subject, but substantially duplicated the July 27 FinCEN student-aid fraud coverage"
+        "title": "Finovate Previews 14 AI Demonstrators",
+        "reason": "useful market scan but promotional event coverage without completed deployments or independent performance evidence"
       }
     ],
     "status": "article-complete",
-    "updatedAt": "2026-07-30T07:00:00-04:00"
+    "updatedAt": "2026-07-31T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-30",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 8,
+      "beatsSearched": [
+        "it-data-cybersecurity",
+        "payments-deposits",
+        "operations",
+        "risk-compliance",
+        "member-service",
+        "vendor-management"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "Velera Gives Credit Unions Near-Real-Time Card Fraud Controls",
+          "url": "https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "InvestiFi Raises $20 Million for Embedded Investing",
+          "reason": "credit-union relevance was strong, but the funding event offered less immediate operating impact and limited AI specificity"
+        },
+        {
+          "title": "Strivve Secures Chartway Ventures in CUSO-Backed Capital Raise",
+          "reason": "payments relevance was credible, but the capital raise did not establish a new product deployment or measurable operating outcome"
+        },
+        {
+          "title": "BaFin Plans More Direct Monitoring of Bank and Insurer AI",
+          "reason": "authoritative regulatory development, but its German scope was less directly actionable for U.S. credit unions"
+        },
+        {
+          "title": "Fenergo Launches Fen-AI Agent Orchestration Platform",
+          "reason": "credible compliance launch, but bank-focused and closely overlapping the July 24 agentic AML article"
+        },
+        {
+          "title": "Standard Chartered Expands AI While Cutting Back-Office Roles",
+          "reason": "credible workforce signal, but operating details were not specific enough to U.S. credit unions"
+        },
+        {
+          "title": "Gemineye Reports Consumer Sentiment on AI Banking",
+          "reason": "survey-led vendor material without a distinct product, policy or credit-union operating event"
+        },
+        {
+          "title": "AFC Highlights Identity Fraud in Student Aid",
+          "reason": "material fraud subject, but substantially duplicated the July 27 FinCEN student-aid fraud coverage"
+        }
+      ],
+      "status": "article-complete",
+      "updatedAt": "2026-07-30T07:00:00-04:00"
+    },
     {
       "date": "2026-07-29",
       "fullArticleCount": 1,
