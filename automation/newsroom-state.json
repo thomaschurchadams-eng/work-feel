@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-07-31T07:00:00-04:00",
+  "lastStandardRun": "2026-08-03T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Arizona Financial Selects Agentic AI Platform for Member Workflows",
-    "url": "https://creditunionainews.com/news/arizona-financial-creatio-agentic-ai-workflows.html",
-    "publishedAt": "2026-07-31T07:00:00-04:00",
-    "route": "news"
+    "title": "A Six-Step AI Workforce Plan for Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-workforce-plan.html",
+    "publishedAt": "2026-08-03T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-03",
+      "headline": "Credit Union Groups Open August Check-Fraud Campaign",
+      "reason": "useful fraud education, but already covered as a site Alert and did not support a distinct full article"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Senate Starts Pre-Recess Financial-Services Agenda",
+      "reason": "fresh policy scheduling with no specific AI, fintech or credit-union operating decision yet"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Lloyds Sets an AI-Backed Cost-Savings Plan",
+      "reason": "material workforce signal, but outside the bounded freshness window and without credit-union-specific implementation evidence"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Bank of America Plans to Acquire MDSec Consulting",
+      "reason": "credible cybersecurity development, but outside the bounded freshness window and overlapping recent Bank of America coverage"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "BaFin Expands Direct Supervision of Financial-Sector AI",
+      "reason": "authoritative regulatory signal, but outside the freshness window and less directly actionable for U.S. credit unions"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Standard Chartered Links AI Expansion to Back-Office Changes",
+      "reason": "credible workforce trend, but outside the freshness window and lacking a transferable credit-union implementation record"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Credit Union AI Vendor Due-Diligence Scorecard",
+      "reason": "durable fallback concept rejected as duplicative of the live vendor due-diligence checklist"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Mortgage AI Implementation Gates",
+      "reason": "useful lending concept, but the available source set was less complete than the selected workforce package"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Treasury AI Business-Case Framework",
+      "reason": "valuable finance concept, but the workforce gap was larger and more differentiated from current live coverage"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Marketing Review for AI-Generated Member Communications",
+      "reason": "practical marketing concept, but it overlapped existing member-messaging and acceptable-use guidance"
+    },
+    {
+      "date": "2026-08-03",
+      "headline": "Collections AI Exception-Handling Playbook",
+      "reason": "role-relevant concept, but authoritative source coverage was not yet sufficient for a complete original package"
+    },
     {
       "date": "2026-07-31",
       "headline": "Alkami Expands Plaid Integration for Connected Digital Banking",
@@ -250,5 +305,22 @@
       "reason": "vendor commentary rather than a distinct new event"
     }
   ],
-  "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible."
+  "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible.",
+  "portfolioOpportunities": [
+    {
+      "functionalArea": "lending-mortgage-collections",
+      "opportunity": "A source-backed mortgage or collections implementation guide with explicit exception controls",
+      "priority": "next"
+    },
+    {
+      "functionalArea": "finance-treasury",
+      "opportunity": "A practical AI business-case and benefits-realization framework for CFO teams",
+      "priority": "high"
+    },
+    {
+      "functionalArea": "marketing-communications",
+      "opportunity": "A member-communications review and disclosure playbook that does not duplicate acceptable-use coverage",
+      "priority": "high"
+    }
+  ]
 }

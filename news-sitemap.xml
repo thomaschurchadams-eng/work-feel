@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <!-- Automation keeps only News articles published within the prior 48 hours. -->
-  <url>
-    <loc>https://creditunionainews.com/news/arizona-financial-creatio-agentic-ai-workflows.html</loc>
-    <news:news>
-      <news:publication><news:name>CreditUnionAI News</news:name><news:language>en</news:language></news:publication>
-      <news:publication_date>2026-07-31T07:00:00-04:00</news:publication_date>
-      <news:title>Arizona Financial Selects Agentic AI Platform for Member Workflows</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/velera-risk-alert-manager-fraud-response.html</loc>
-    <news:news>
-      <news:publication><news:name>CreditUnionAI News</news:name><news:language>en</news:language></news:publication>
-      <news:publication_date>2026-07-30T07:00:00-04:00</news:publication_date>
-      <news:title>Velera Gives Credit Unions Near-Real-Time Card Fraud Controls</news:title>
-    </news:news>
-  </url>
+  <!-- No News articles remain inside the rolling 48-hour eligibility window. -->
 </urlset>

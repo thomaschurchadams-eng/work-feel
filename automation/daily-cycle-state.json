@@ -6,59 +6,135 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-07-31",
+    "date": "2026-08-03",
     "fullArticleCount": 1,
     "alertCount": 0,
-    "evaluatedCandidateCount": 8,
+    "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "member-service",
-      "operations",
-      "vendor-management",
+      "hr-training",
+      "risk-compliance",
       "it-data-cybersecurity",
-      "payments-deposits",
-      "risk-compliance"
+      "operations",
+      "lending-collections",
+      "finance-treasury",
+      "marketing-growth"
     ],
     "publications": [
       {
         "type": "article",
-        "title": "Arizona Financial Selects Agentic AI Platform for Member Workflows",
-        "url": "https://creditunionainews.com/news/arizona-financial-creatio-agentic-ai-workflows.html"
+        "classification": "Insights",
+        "title": "A Six-Step AI Workforce Plan for Credit Unions",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-workforce-plan.html",
+        "primaryFunctionalAudience": "HR, workforce and training leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "not-created-library-priority"
       }
     ],
     "rejections": [
       {
-        "title": "Alkami Expands Plaid Integration for Connected Digital Banking",
-        "reason": "live and credit-union-relevant, but the data-connectivity expansion had less immediate AI operating impact than the selected workflow deployment"
+        "title": "Credit Union Groups Open August Check-Fraud Campaign",
+        "reason": "useful fraud education, but already covered as a site Alert and did not support a distinct full article"
+      },
+      {
+        "title": "Senate Starts Pre-Recess Financial-Services Agenda",
+        "reason": "fresh policy scheduling with no specific AI, fintech or credit-union operating decision yet"
+      },
+      {
+        "title": "Lloyds Sets an AI-Backed Cost-Savings Plan",
+        "reason": "material workforce signal, but outside the bounded freshness window and without credit-union-specific implementation evidence"
       },
       {
         "title": "Bank of America Plans to Acquire MDSec Consulting",
-        "reason": "well-sourced cybersecurity development, but it lacked a direct credit-union deployment and followed recent Bank of America coverage"
+        "reason": "credible cybersecurity development, but outside the bounded freshness window and overlapping recent Bank of America coverage"
       },
       {
-        "title": "Lloyds Sets AI-Backed £2 Billion Cost-Savings Target",
-        "reason": "material workforce and strategy signal, but Lloyds disclosed few implementation details and limited direct U.S. credit-union applicability"
+        "title": "BaFin Expands Direct Supervision of Financial-Sector AI",
+        "reason": "authoritative regulatory signal, but outside the freshness window and less directly actionable for U.S. credit unions"
       },
       {
-        "title": "Prismm Estimates $1.5 Trillion in Deposits at Wealth-Transfer Risk",
-        "reason": "important deposit-retention theme, but the headline estimate depended on a vendor index without enough public methodology for a full article"
+        "title": "Standard Chartered Links AI Expansion to Back-Office Changes",
+        "reason": "credible workforce trend, but outside the freshness window and lacking a transferable credit-union implementation record"
       },
       {
-        "title": "BIS Says Attackers Hold an AI Advantage in Financial Cybersecurity",
-        "reason": "credible cyber-risk analysis, but it overlapped the selected week's fraud and cybersecurity concentration without a new credit-union operating event"
+        "title": "Credit Union AI Vendor Due-Diligence Scorecard",
+        "reason": "durable fallback concept rejected as duplicative of the live vendor due-diligence checklist"
       },
       {
-        "title": "Golden 1 Receives Leadership and Workplace Recognition",
-        "reason": "credit-union-specific but an awards announcement rather than a new technology, policy or operating development"
+        "title": "Mortgage AI Implementation Gates",
+        "reason": "useful lending concept, but the available source set was less complete than the selected workforce package"
       },
       {
-        "title": "Finovate Previews 14 AI Demonstrators",
-        "reason": "useful market scan but promotional event coverage without completed deployments or independent performance evidence"
+        "title": "Treasury AI Business-Case Framework",
+        "reason": "valuable finance concept, but the workforce gap was larger and more differentiated from current live coverage"
+      },
+      {
+        "title": "Marketing Review for AI-Generated Member Communications",
+        "reason": "practical marketing concept, but it overlapped existing member-messaging and acceptable-use guidance"
+      },
+      {
+        "title": "Collections AI Exception-Handling Playbook",
+        "reason": "role-relevant concept, but authoritative source coverage was not yet sufficient for a complete original package"
       }
     ],
     "status": "article-complete",
-    "updatedAt": "2026-07-31T07:00:00-04:00"
+    "activeExperimentContext": "none; baseline collection",
+    "nextCoverageGap": "lending, mortgage and collections implementation guidance",
+    "updatedAt": "2026-08-03T07:03:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-07-31",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 8,
+      "beatsSearched": [
+        "member-service",
+        "operations",
+        "vendor-management",
+        "it-data-cybersecurity",
+        "payments-deposits",
+        "risk-compliance"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "title": "Arizona Financial Selects Agentic AI Platform for Member Workflows",
+          "url": "https://creditunionainews.com/news/arizona-financial-creatio-agentic-ai-workflows.html"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Alkami Expands Plaid Integration for Connected Digital Banking",
+          "reason": "live and credit-union-relevant, but the data-connectivity expansion had less immediate AI operating impact than the selected workflow deployment"
+        },
+        {
+          "title": "Bank of America Plans to Acquire MDSec Consulting",
+          "reason": "well-sourced cybersecurity development, but it lacked a direct credit-union deployment and followed recent Bank of America coverage"
+        },
+        {
+          "title": "Lloyds Sets AI-Backed £2 Billion Cost-Savings Target",
+          "reason": "material workforce and strategy signal, but Lloyds disclosed few implementation details and limited direct U.S. credit-union applicability"
+        },
+        {
+          "title": "Prismm Estimates $1.5 Trillion in Deposits at Wealth-Transfer Risk",
+          "reason": "important deposit-retention theme, but the headline estimate depended on a vendor index without enough public methodology for a full article"
+        },
+        {
+          "title": "BIS Says Attackers Hold an AI Advantage in Financial Cybersecurity",
+          "reason": "credible cyber-risk analysis, but it overlapped the selected week's fraud and cybersecurity concentration without a new credit-union operating event"
+        },
+        {
+          "title": "Golden 1 Receives Leadership and Workplace Recognition",
+          "reason": "credit-union-specific but an awards announcement rather than a new technology, policy or operating development"
+        },
+        {
+          "title": "Finovate Previews 14 AI Demonstrators",
+          "reason": "useful market scan but promotional event coverage without completed deployments or independent performance evidence"
+        }
+      ],
+      "status": "article-complete",
+      "updatedAt": "2026-07-31T07:00:00-04:00"
+    },
     {
       "date": "2026-07-30",
       "fullArticleCount": 1,

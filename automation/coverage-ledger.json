@@ -3,6 +3,42 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-workforce-plan",
+      "title": "A Six-Step AI Workforce Plan for Credit Unions",
+      "url": "/insight-credit-union-ai-workforce-plan.html",
+      "publishedAt": "2026-08-03T07:00:00-04:00",
+      "section": "insights",
+      "beat": "workforce",
+      "functions": [
+        "hr-training",
+        "operations",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "workforce-learning",
+        "agents-automation"
+      ],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "HR, workforce and training leaders",
+      "secondaryAudiences": [
+        "operations leaders",
+        "risk and compliance leaders",
+        "technology leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "not-created-library-priority",
+      "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
+      "internalLinkTargets": [
+        "/news/ai-acceptable-use-policy-credit-unions.html",
+        "/news/bank-of-america-ericaassist-generative-ai.html",
+        "/news/arizona-financial-creatio-agentic-ai-workflows.html"
+      ],
+      "sourceTier": 1,
+      "score": 92.6
+    },
+    {
       "id": "arizona-financial-creatio-agentic-ai-workflows",
       "title": "Arizona Financial Selects Agentic AI Platform for Member Workflows",
       "url": "/news/arizona-financial-creatio-agentic-ai-workflows.html",
