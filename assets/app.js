@@ -13,6 +13,45 @@
 
   const alertsData = [
     {
+      label: 'Member Service',
+      headline: 'Arizona Financial Selects Agentic AI Platform for Member Workflows',
+      summary:
+        'Creatio announced on July 30 that Arizona Financial Credit Union selected its agentic AI platform for sales and member-service workflows. The credit union said the implementation will unify member data and support guided work across teams.',
+      impact:
+        'Credit unions considering agentic service platforms should start with defined staff handoffs, least-privilege access, controlled use cases and measurable member-outcome tests. Vendor diligence should cover data integration, audit logs, model changes, escalation paths and rollback before broader deployment.',
+      sourceName: 'Creatio',
+      sourceUrl:
+        'https://www.creatio.com/company/news/24941',
+      date: 'Jul 30, 2026',
+      slug: 'arizona-financial-creatio-agentic-ai-workflows'
+    },
+    {
+      label: 'Payments & Compliance',
+      headline: 'Credit Union Groups Seek AML Guardrails for Fed Payment Accounts',
+      summary:
+        'America\'s Credit Unions said on July 28 that the Federal Reserve should clarify Bank Secrecy Act, anti-money-laundering and supervisory safeguards before advancing its proposed special-purpose Payment Accounts.',
+      impact:
+        'Payments, compliance and risk teams should assess whether any new payment-rail access model has clear eligibility, monitoring, illicit-finance controls, accountability and escalation requirements before planning participation or partnerships.',
+      sourceName: 'America\'s Credit Unions',
+      sourceUrl:
+        'https://www.americascreditunions.org/news-media/news/feds-payment-account-prototype-requires-additional-risk-consideration',
+      date: 'Jul 28, 2026',
+      slug: 'credit-union-groups-fed-payment-account-aml-guardrails'
+    },
+    {
+      label: 'Fraud & Compliance',
+      headline: 'FinCEN Issues Student-Aid Fraud Alert for Financial Institutions',
+      summary:
+        'FinCEN issued an Alert on July 24 describing fraud schemes that use stolen identities, synthetic documents and AI-assisted coursework to obtain federal student-aid refunds and move proceeds through financial accounts.',
+      impact:
+        'Fraud and BSA teams should test whether controls connect unusual refund activity with new-account age, identity inconsistencies, shared devices or addresses, rapid transfers and mule-account signals, while preserving human review before account action or reporting decisions.',
+      sourceName: 'FinCEN',
+      sourceUrl:
+        'https://www.fincen.gov/system/files/2026-07/FinCEN-Alert-Fraud-Schemes-Targeting-Federal-Student-Aid.pdf',
+      date: 'Jul 24, 2026',
+      slug: 'fincen-student-aid-fraud-alert'
+    },
+    {
       label: 'Instant Payments',
       headline: 'Kansas City Fed Counts 588 Small Credit Unions on FedNow',
       summary:
