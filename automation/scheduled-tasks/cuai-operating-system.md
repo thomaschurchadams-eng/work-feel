@@ -42,6 +42,17 @@ After the day's article handoff has completed or been recorded, run one bounded 
 
 The Alerts archive remains an archive. The homepage must never feature an Alert older than 72 hours. When no qualified fresh Alert exists, show the approved non-alert fallback rather than elevating stale material.
 
+
+### What-to-watch freshness loop
+
+When no fresh Alert is active, maintain the homepage's non-alert fallback in `assets/app.js` as follows:
+
+- Before writing, inspect the current homepage cards and existing `homepageWatchState`. Select up to three already-published News or Insights items that are source-qualified, operationally useful, from distinct beats, and not already featured in the homepage card grid or represented by a current Alert.
+- Update `homepageWatchState.reviewedAt` with the current ISO date and `homepageWatchState.items` with only the selected internal `href` and concise reader-facing `label`. Treat every selection as editorial curation, not a new publication.
+- Each selection expires automatically after seven days. On every weekday review, replace it with newer qualifying coverage; never retain, recycle, or refresh its date merely to avoid the evergreen fallback.
+- If no timely non-duplicative items qualify, clear `homepageWatchState.items`. The site will show its maintained evergreen vendor due-diligence tool instead. Do not fabricate urgency or use an Alert/archive item simply to fill the module.
+- Validate that the homepage shows either a fresh Alert, fresh non-duplicative watch items, or the evergreen fallback; that all links resolve; and that no selected item duplicates a homepage card, active Alert, or materially identical article.
+
 ## Selective LinkedIn policy
 
 LinkedIn is a selective channel:
