@@ -884,6 +884,13 @@
     }
   ];
 
+  // Maintained by the weekday operating cycle. Items expire automatically after seven days.
+  const homepageWatchState = {
+    reviewedAt: '',
+    items: []
+  };
+
+
   const parseAlertDate = (entry) => {
     const raw = entry?.date || entry?.published || entry?.timestamp || '';
     if (!raw) return null;
@@ -900,6 +907,19 @@
 
     return null;
   };
+
+  const getFreshHomepageWatchItems = () => {
+    const reviewedAt = parseAlertDate({ date: homepageWatchState.reviewedAt });
+    if (!reviewedAt) return [];
+    const ageMs = Date.now() - reviewedAt.getTime();
+    if (ageMs < 0 || ageMs > 7 * 24 * 60 * 60 * 1000) return [];
+    return Array.isArray(homepageWatchState.items)
+      ? homepageWatchState.items
+          .filter((item) => item && item.href && item.label)
+          .slice(0, 3)
+      : [];
+  };
+
 
   const getRecentAlerts = (alerts, days = 14) => {
     const cutoff = new Date();
@@ -938,19 +958,28 @@
 
     const item = homepageAlerts[0];
     if (!item) {
-      container.innerHTML = `
-        <div class="latest-alert-header">
-          <div><p class="eyebrow">What to watch</p></div>
-          <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
-        </div>
-        <h2 id="latest-alert-heading">Three operating decisions worth watching</h2>
-        <p class="latest-alert-summary">There is no current source-gated Alert. These reporting threads point to decisions credit-union teams can prepare for now.</p>
-        <div class="latest-alert-actions">
-          <a class="link" href="/news/osfi-agentic-ai-risk-controls-credit-unions.html">Agentic AI controls →</a>
-          <a class="link" href="/news/communication-fcu-scienaptic-ai-lending.html">Lending decisioning →</a>
-          <a class="link" href="/news/fis-fraud-suite-upgrade.html">Fraud operations →</a>
-        </div>
-      `;
+      const watchItems = getFreshHomepageWatchItems();
+      if (watchItems.length) {
+        container.innerHTML = `
+          <div class="latest-alert-header">
+            <div><p class="eyebrow">What to watch</p></div>
+            <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
+          </div>
+          <h2 id="latest-alert-heading">Current decisions for credit-union teams</h2>
+          <p class="latest-alert-summary">No current source-gated Alert is active. These recent, independently selected reporting threads are worth tracking.</p>
+          <div class="latest-alert-actions">${watchItems.map((watch) => `<a class="link" href="${watch.href}">${watch.label} →</a>`).join('')}</div>
+        `;
+      } else {
+        container.innerHTML = `
+          <div class="latest-alert-header">
+            <div><p class="eyebrow">Practical resource</p></div>
+            <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
+          </div>
+          <h2 id="latest-alert-heading">A practical tool for the next AI vendor decision</h2>
+          <p class="latest-alert-summary">No current source-gated Alert is active. Use this maintained guide to prepare a rigorous vendor review.</p>
+          <div class="latest-alert-actions"><a class="link" href="/news/ai-vendor-due-diligence-checklist-credit-unions.html">Use the AI vendor due-diligence checklist →</a></div>
+        `;
+      }
       return;
     }
 
