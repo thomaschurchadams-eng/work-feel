@@ -4,7 +4,7 @@
 
 This is the authoritative operating policy for the **CUAI Operating System** ChatGPT Cloud task. Read this file from `main` before every run. If another prompt, prior chat, or stale instruction conflicts with this file, this file controls.
 
-This policy coordinates the newsroom portfolio and operating handoffs. It does not create scheduled tasks, change Cloud schedules/models/permissions, publish production content by itself, create Alerts, or perform social activity unless a separately authorized, current task policy explicitly allows it.
+This policy coordinates the newsroom portfolio and operating handoffs. It does not create scheduled tasks or change Cloud schedules/models/permissions. It may run the bounded Alert cycle defined below after the day's article handoff has completed or been recorded; it must not publish full articles, perform unrelated maintenance, or perform social activity unless a separately authorized, current task policy explicitly allows it.
 
 ## Operating principle
 
@@ -30,11 +30,17 @@ Each operating review should:
    - Library: durable, evergreen portfolio asset; no routine LinkedIn promotion.
 6. Keep a clear distinction between a recommendation, a publication decision, and a completed production action.
 
-## Alert evaluation and homepage freshness
+## Daily Alert cycle and homepage freshness
 
-Evaluate whether a qualified Alert exists each day using the existing Alert standards: factual headline, direct source, date, neutral summary, and specific credit-union operating implication. Do not create an Alert unless it qualifies and the separate Alert workflow authorizes publication.
+After the day's article handoff has completed or been recorded, run one bounded Alert cycle. Read the existing Alert standards, Alerts data/page, ticker implementation, source registry, coverage ledger, publishing rules and daily-cycle state before writing.
 
-The Alerts archive remains an archive. The homepage must never feature an Alert older than 72 hours. When no qualified fresh Alert exists, the homepage should show the approved neutral state linking to Alerts, rather than elevating stale material. Do not solve a stale homepage state by creating weak or manufactured Alerts.
+- Search primary and credible sources across relevant beats for genuinely new, time-sensitive, operationally material developments since the last completed Alert cycle.
+- Publish up to three qualified Alerts when the morning target has not been met; otherwise publish at most one genuinely new breaking Alert. Never lower sourcing, originality, correction, or editorial-trust gates to fill a target.
+- Each Alert requires a factual headline, direct source URL, source name, date, neutral summary and a specific credit-union operating implication. Do not republish a full article as an Alert unless the Alert supplies a distinct urgent action the article does not already cover.
+- Update the Alerts archive/data, ticker, homepage module, relevant ledgers and daily-cycle state in one atomic package. Re-read `main` immediately before writing, preserve concurrent changes, run the relevant validators, confirm a READY production deployment, and verify the live Alerts page, ticker and homepage.
+- If no Alert qualifies, record the evidence gap in the task outcome. Do not manufacture an Alert.
+
+The Alerts archive remains an archive. The homepage must never feature an Alert older than 72 hours. When no qualified fresh Alert exists, show the approved non-alert fallback rather than elevating stale material.
 
 ## Selective LinkedIn policy
 
@@ -60,7 +66,7 @@ The operating system coordinates; focused publisher tasks publish.
 
 After a publisher completes a verified run, accept only its handoff record: publication status, classification, functional audience, topic, source type, live URL, validation/deployment result, homepage treatment, LinkedIn decision, Alert consideration, and blocker if any.
 
-Do not reopen or duplicate the publisher's work in the same run. Do not combine article publishing, Alert publishing, maintenance, and social activity into one broad cycle. Any follow-on work must be separately scoped and governed by its own current policy.
+Do not reopen or duplicate the publisher's work in the same run. The bounded Alert cycle above is the only permitted publishing follow-on in this task; do not combine it with full-article publishing, maintenance, or social activity.
 
 ## Reporting and failure behavior
 
