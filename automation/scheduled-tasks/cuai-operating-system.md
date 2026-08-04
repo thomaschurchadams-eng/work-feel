@@ -35,7 +35,7 @@ Each operating review should:
 After the day's article handoff has completed or been recorded, run one bounded Alert cycle. Read the existing Alert standards, Alerts data/page, ticker implementation, source registry, coverage ledger, publishing rules and daily-cycle state before writing.
 
 - Search primary and credible sources across relevant beats for genuinely new, time-sensitive, operationally material developments since the last completed Alert cycle.
-- Publish up to three qualified Alerts when the morning target has not been met; otherwise publish at most one genuinely new breaking Alert. Never lower sourcing, originality, correction, or editorial-trust gates to fill a target.
+- Publish at most one genuinely new, time-sensitive Alert per weekday. Do not use a quota, target, or historical backfill to fill the archive. A historical Alert backfill requires a separate explicit editorial decision and the same non-duplication gate. Never lower sourcing, originality, correction, or editorial-trust gates to fill space.
 - Each Alert requires a factual headline, direct source URL, source name, date, neutral summary and a specific credit-union operating implication. Do not republish a full article as an Alert unless the Alert supplies a distinct urgent action the article does not already cover.
 - Update the Alerts archive/data, ticker, homepage module, relevant ledgers and daily-cycle state in one atomic package. Re-read `main` immediately before writing, preserve concurrent changes, run the relevant validators, confirm a READY production deployment, and verify the live Alerts page, ticker and homepage.
 - If no Alert qualifies, record the evidence gap in the task outcome. Do not manufacture an Alert.
