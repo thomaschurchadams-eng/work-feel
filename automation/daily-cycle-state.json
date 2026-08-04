@@ -6,82 +6,214 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-03",
+    "date": "2026-08-04",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "hr-training",
+      "lending-collections",
       "risk-compliance",
+      "finance-treasury",
       "it-data-cybersecurity",
       "operations",
-      "lending-collections",
-      "finance-treasury",
+      "hr-training",
+      "payments-deposits",
       "marketing-growth"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "Insights",
-        "title": "A Six-Step AI Workforce Plan for Credit Unions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-workforce-plan.html",
-        "primaryFunctionalAudience": "HR, workforce and training leaders",
+        "title": "Seven Go-Live Tests for AI in Credit Union Mortgage Lending",
+        "url": "https://creditunionainews.com/insight-credit-union-mortgage-ai-go-live-tests.html",
+        "primaryFunctionalAudience": "Mortgage and lending leaders",
         "promotionPriority": "Library",
         "socialDecision": "not-created-library-priority"
       }
     ],
     "rejections": [
       {
-        "title": "Credit Union Groups Open August Check-Fraud Campaign",
-        "reason": "useful fraud education, but already covered as a site Alert and did not support a distinct full article"
+        "title": "America's Credit Unions Releases a New Economic and Credit Union Forecast",
+        "reason": "fresh and relevant to finance leaders, but the public page provided only a video overview while supporting figures and methodology were member-gated, leaving insufficient evidence for a full article",
+        "primaryAudience": "finance and treasury leaders",
+        "secondaryAudiences": [
+          "executives",
+          "lending leaders"
+        ]
       },
       {
-        "title": "Senate Starts Pre-Recess Financial-Services Agenda",
-        "reason": "fresh policy scheduling with no specific AI, fintech or credit-union operating decision yet"
+        "title": "Treasury Removes Disparate-Impact Provisions From Department Regulations",
+        "reason": "a current regulatory development, but the accessible material did not yet establish the exact operational scope and implementation consequences for credit-union lending teams",
+        "primaryAudience": "risk, legal and compliance leaders",
+        "secondaryAudiences": [
+          "lending leaders",
+          "executives"
+        ]
       },
       {
-        "title": "Lloyds Sets an AI-Backed Cost-Savings Plan",
-        "reason": "material workforce signal, but outside the bounded freshness window and without credit-union-specific implementation evidence"
+        "title": "TruStage Reports Progress Restoring Systems After Its Cyber Incident",
+        "reason": "material to credit-union operations, but the latest official milestone was dated July 31 and fresh secondary reporting did not add a sufficiently distinct verified event inside the 72-hour window",
+        "primaryAudience": "technology and cybersecurity leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "vendor-management teams"
+        ]
       },
       {
-        "title": "Bank of America Plans to Acquire MDSec Consulting",
-        "reason": "credible cybersecurity development, but outside the bounded freshness window and overlapping recent Bank of America coverage"
+        "title": "Chime Cuts About 10 Percent of Its Workforce as It Cites AI Efficiency",
+        "reason": "credible workforce evidence, but the July 31 event was outside the bounded freshness window and closely overlapped the prior day's workforce implementation Insight",
+        "primaryAudience": "HR and workforce leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "executives"
+        ]
       },
       {
-        "title": "BaFin Expands Direct Supervision of Financial-Sector AI",
-        "reason": "authoritative regulatory signal, but outside the freshness window and less directly actionable for U.S. credit unions"
+        "title": "Deutsche Bank Requires AI Training for Its 200 Most Senior Leaders",
+        "reason": "fresh workforce signal, but the evidence was paywalled secondary reporting about a non-U.S. bank and overlapped the new credit-union workforce plan",
+        "primaryAudience": "executives and board leaders",
+        "secondaryAudiences": [
+          "HR and training leaders",
+          "technology leaders"
+        ]
       },
       {
-        "title": "Standard Chartered Links AI Expansion to Back-Office Changes",
-        "reason": "credible workforce trend, but outside the freshness window and lacking a transferable credit-union implementation record"
+        "title": "EU AI Act Transparency Obligations Begin Applying",
+        "reason": "authoritative and current, but direct applicability to U.S. credit unions was limited without an EU-facing use case or a separate domestic operating event",
+        "primaryAudience": "risk and compliance leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "vendor-management teams"
+        ]
       },
       {
-        "title": "Credit Union AI Vendor Due-Diligence Scorecard",
-        "reason": "durable fallback concept rejected as duplicative of the live vendor due-diligence checklist"
+        "title": "Large Credit Unions Report Faster Mortgage Growth in the Second Quarter",
+        "reason": "important lending signal, but the fresh summary was paywalled and the primary NCUA data had not been assembled and validated into a reproducible full-article analysis",
+        "primaryAudience": "mortgage and lending leaders",
+        "secondaryAudiences": [
+          "finance leaders",
+          "executives"
+        ]
       },
       {
-        "title": "Mortgage AI Implementation Gates",
-        "reason": "useful lending concept, but the available source set was less complete than the selected workforce package"
-      },
-      {
-        "title": "Treasury AI Business-Case Framework",
-        "reason": "valuable finance concept, but the workforce gap was larger and more differentiated from current live coverage"
-      },
-      {
-        "title": "Marketing Review for AI-Generated Member Communications",
-        "reason": "practical marketing concept, but it overlapped existing member-messaging and acceptable-use guidance"
+        "title": "Credit Union Groups Open an August Check-Fraud Campaign",
+        "reason": "useful fraud-prevention material, but it was already covered as a site Alert and did not support a distinct full article",
+        "primaryAudience": "payments and fraud leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "marketing and communications teams"
+        ]
       },
       {
         "title": "Collections AI Exception-Handling Playbook",
-        "reason": "role-relevant concept, but authoritative source coverage was not yet sufficient for a complete original package"
+        "reason": "role-relevant evergreen concept, but the authoritative source set remained less complete than the selected mortgage control package",
+        "primaryAudience": "collections leaders",
+        "secondaryAudiences": [
+          "risk and compliance leaders",
+          "operations leaders"
+        ]
+      },
+      {
+        "title": "Treasury AI Business-Case Framework",
+        "reason": "qualified evergreen opportunity, but the mortgage implementation gap was next in the approved portfolio ledger and had the stronger current primary-source package",
+        "primaryAudience": "finance and treasury leaders",
+        "secondaryAudiences": [
+          "executives",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Marketing Review for AI-Generated Member Communications",
+        "reason": "practical evergreen concept, but it still overlapped existing member-messaging and acceptable-use coverage more than the selected mortgage guide",
+        "primaryAudience": "marketing and communications leaders",
+        "secondaryAudiences": [
+          "risk and compliance leaders",
+          "member-service leaders"
+        ]
       }
     ],
     "status": "article-complete",
     "activeExperimentContext": "none; baseline collection",
-    "nextCoverageGap": "lending, mortgage and collections implementation guidance",
-    "updatedAt": "2026-08-03T07:03:00-04:00"
+    "nextCoverageGap": "finance and treasury AI business-case and benefits-realization guidance",
+    "updatedAt": "2026-08-04T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-03",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "hr-training",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "operations",
+        "lending-collections",
+        "finance-treasury",
+        "marketing-growth"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "A Six-Step AI Workforce Plan for Credit Unions",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-workforce-plan.html",
+          "primaryFunctionalAudience": "HR, workforce and training leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "not-created-library-priority"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Credit Union Groups Open August Check-Fraud Campaign",
+          "reason": "useful fraud education, but already covered as a site Alert and did not support a distinct full article"
+        },
+        {
+          "title": "Senate Starts Pre-Recess Financial-Services Agenda",
+          "reason": "fresh policy scheduling with no specific AI, fintech or credit-union operating decision yet"
+        },
+        {
+          "title": "Lloyds Sets an AI-Backed Cost-Savings Plan",
+          "reason": "material workforce signal, but outside the bounded freshness window and without credit-union-specific implementation evidence"
+        },
+        {
+          "title": "Bank of America Plans to Acquire MDSec Consulting",
+          "reason": "credible cybersecurity development, but outside the bounded freshness window and overlapping recent Bank of America coverage"
+        },
+        {
+          "title": "BaFin Expands Direct Supervision of Financial-Sector AI",
+          "reason": "authoritative regulatory signal, but outside the freshness window and less directly actionable for U.S. credit unions"
+        },
+        {
+          "title": "Standard Chartered Links AI Expansion to Back-Office Changes",
+          "reason": "credible workforce trend, but outside the freshness window and lacking a transferable credit-union implementation record"
+        },
+        {
+          "title": "Credit Union AI Vendor Due-Diligence Scorecard",
+          "reason": "durable fallback concept rejected as duplicative of the live vendor due-diligence checklist"
+        },
+        {
+          "title": "Mortgage AI Implementation Gates",
+          "reason": "useful lending concept, but the available source set was less complete than the selected workforce package"
+        },
+        {
+          "title": "Treasury AI Business-Case Framework",
+          "reason": "valuable finance concept, but the workforce gap was larger and more differentiated from current live coverage"
+        },
+        {
+          "title": "Marketing Review for AI-Generated Member Communications",
+          "reason": "practical marketing concept, but it overlapped existing member-messaging and acceptable-use guidance"
+        },
+        {
+          "title": "Collections AI Exception-Handling Playbook",
+          "reason": "role-relevant concept, but authoritative source coverage was not yet sufficient for a complete original package"
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "none; baseline collection",
+      "nextCoverageGap": "lending, mortgage and collections implementation guidance",
+      "updatedAt": "2026-08-03T07:03:00-04:00"
+    },
     {
       "date": "2026-07-31",
       "fullArticleCount": 1,

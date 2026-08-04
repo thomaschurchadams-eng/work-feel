@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-03T07:00:00-04:00",
+  "lastStandardRun": "2026-08-04T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "A Six-Step AI Workforce Plan for Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-workforce-plan.html",
-    "publishedAt": "2026-08-03T07:00:00-04:00",
+    "title": "Seven Go-Live Tests for AI in Credit Union Mortgage Lending",
+    "url": "https://creditunionainews.com/insight-credit-union-mortgage-ai-go-live-tests.html",
+    "publishedAt": "2026-08-04T07:00:00-04:00",
     "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-04",
+      "headline": "America's Credit Unions Releases a New Economic and Credit Union Forecast",
+      "reason": "fresh and relevant to finance leaders, but the public page provided only a video overview while supporting figures and methodology were member-gated, leaving insufficient evidence for a full article"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Treasury Removes Disparate-Impact Provisions From Department Regulations",
+      "reason": "a current regulatory development, but the accessible material did not yet establish the exact operational scope and implementation consequences for credit-union lending teams"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "TruStage Reports Progress Restoring Systems After Its Cyber Incident",
+      "reason": "material to credit-union operations, but the latest official milestone was dated July 31 and fresh secondary reporting did not add a sufficiently distinct verified event inside the 72-hour window"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Chime Cuts About 10 Percent of Its Workforce as It Cites AI Efficiency",
+      "reason": "credible workforce evidence, but the July 31 event was outside the bounded freshness window and closely overlapped the prior day's workforce implementation Insight"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Deutsche Bank Requires AI Training for Its 200 Most Senior Leaders",
+      "reason": "fresh workforce signal, but the evidence was paywalled secondary reporting about a non-U.S. bank and overlapped the new credit-union workforce plan"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "EU AI Act Transparency Obligations Begin Applying",
+      "reason": "authoritative and current, but direct applicability to U.S. credit unions was limited without an EU-facing use case or a separate domestic operating event"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Large Credit Unions Report Faster Mortgage Growth in the Second Quarter",
+      "reason": "important lending signal, but the fresh summary was paywalled and the primary NCUA data had not been assembled and validated into a reproducible full-article analysis"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Credit Union Groups Open an August Check-Fraud Campaign",
+      "reason": "useful fraud-prevention material, but it was already covered as a site Alert and did not support a distinct full article"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Collections AI Exception-Handling Playbook",
+      "reason": "role-relevant evergreen concept, but the authoritative source set remained less complete than the selected mortgage control package"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Treasury AI Business-Case Framework",
+      "reason": "qualified evergreen opportunity, but the mortgage implementation gap was next in the approved portfolio ledger and had the stronger current primary-source package"
+    },
+    {
+      "date": "2026-08-04",
+      "headline": "Marketing Review for AI-Generated Member Communications",
+      "reason": "practical evergreen concept, but it still overlapped existing member-messaging and acceptable-use coverage more than the selected mortgage guide"
+    },
     {
       "date": "2026-08-03",
       "headline": "Credit Union Groups Open August Check-Fraud Campaign",
@@ -308,18 +363,18 @@
   "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible.",
   "portfolioOpportunities": [
     {
-      "functionalArea": "lending-mortgage-collections",
-      "opportunity": "A source-backed mortgage or collections implementation guide with explicit exception controls",
-      "priority": "next"
-    },
-    {
       "functionalArea": "finance-treasury",
       "opportunity": "A practical AI business-case and benefits-realization framework for CFO teams",
-      "priority": "high"
+      "priority": "next"
     },
     {
       "functionalArea": "marketing-communications",
       "opportunity": "A member-communications review and disclosure playbook that does not duplicate acceptable-use coverage",
+      "priority": "high"
+    },
+    {
+      "functionalArea": "lending-mortgage-collections",
+      "opportunity": "A source-backed collections exception and borrower-assistance implementation guide",
       "priority": "high"
     }
   ]
