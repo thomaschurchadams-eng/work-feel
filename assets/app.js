@@ -926,15 +926,29 @@
       .map(({ parsedDate, ...rest }) => rest);
   };
 
-  // Prepare alerts once for all consumers: freshest-first, deduped, and within the defined window
+  // Keep the archive and ticker on their existing recent window; homepage priority needs a stricter freshness rule.
   const preparedAlerts = getRecentAlerts(alertsData);
+  const homepageAlerts = getRecentAlerts(alertsData, 3);
   const tickerAlerts = preparedAlerts.slice(0, 3);
 
 
   const renderLatestHomepageAlert = () => {
     const container = document.querySelector('#latest-alert');
-    const item = preparedAlerts[0];
-    if (!container || !item) return;
+    if (!container) return;
+
+    const item = homepageAlerts[0];
+    if (!item) {
+      container.innerHTML = `
+        <div class="latest-alert-header">
+          <div><p class="eyebrow">AI Newsroom Alerts</p></div>
+          <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
+        </div>
+        <h2 id="latest-alert-heading">No current verified alerts</h2>
+        <p class="latest-alert-summary">There are no verified newsroom alerts from the last 72 hours. Explore the Alerts archive for recent source-linked developments.</p>
+        <div class="latest-alert-actions"><a class="link" href="/alerts/">Browse Alerts →</a></div>
+      `;
+      return;
+    }
 
     container.innerHTML = `
       <div class="latest-alert-header">
