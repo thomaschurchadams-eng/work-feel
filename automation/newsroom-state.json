@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-04T07:00:00-04:00",
+  "lastStandardRun": "2026-08-05T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Seven Go-Live Tests for AI in Credit Union Mortgage Lending",
-    "url": "https://creditunionainews.com/insight-credit-union-mortgage-ai-go-live-tests.html",
-    "publishedAt": "2026-08-04T07:00:00-04:00",
-    "route": "insights"
+    "title": "RBFCU Scam Complaints Put Fraud-Claim Investigations Under Scrutiny",
+    "url": "https://creditunionainews.com/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
+    "publishedAt": "2026-08-05T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-05",
+      "headline": "JPMorgan Expands Critical-Infrastructure Alliance to AI Risk",
+      "reason": "credible and timely, but the cross-industry alliance did not yet establish a credit-union-specific control, deployment or operating decision"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "Kansas City Fed President Flags Financial Risks Around the AI Buildout",
+      "reason": "authoritative macro signal, but too broad to support a distinct credit-union operating article without institution-level exposure data"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "Bank of America and USAA Cross-License Banking and AI Patents",
+      "reason": "relevant to vendor and technology leaders, but deal terms and transferable credit-union implications were undisclosed and Bank of America was recently covered"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "Upstart Reports Higher AI-Lending Originations in Second Quarter",
+      "reason": "fresh vendor financial results, but the disclosure did not provide independently verified credit-union borrower, risk or portfolio outcomes"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "BECU and SAFE Credit Union Receive Merger Approvals",
+      "reason": "material credit-union governance news, but it lacked a distinct technology, fraud, payment or digital-operating development for this publication"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "Defense Credit Union Council and Visa Discuss Payments Modernization",
+      "reason": "useful payments perspective, but conference commentary did not establish a new product, policy or measurable implementation event"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "Treasury Removes Disparate-Impact Provisions From Department Regulations",
+      "reason": "current and potentially important, but the accessible evidence still did not establish the exact implementation scope for credit-union lending and compliance teams"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "America's Credit Unions Publishes a New Economic Forecast",
+      "reason": "relevant to finance leaders, but the public page did not expose enough methodology and underlying figures for a reproducible full analysis"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "U.K. Banks Test Defenses Against AI-Enabled Cyberattacks",
+      "reason": "credible security exercise, but its non-U.S. scope and limited public scenario detail made the direct credit-union operating value weaker than the selected case"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "Collections AI Exception-Handling Playbook",
+      "reason": "a differentiated evergreen opportunity, but the selected current event had stronger direct evidence and more immediate fraud-claim decision value"
+    },
+    {
+      "date": "2026-08-05",
+      "headline": "Treasury AI Business-Case Framework",
+      "reason": "the highest-value remaining portfolio gap, but the selected current event was materially timely and did not duplicate recent coverage"
+    },
     {
       "date": "2026-08-04",
       "headline": "America's Credit Unions Releases a New Economic and Credit Union Forecast",

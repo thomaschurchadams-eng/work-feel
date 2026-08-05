@@ -6,6 +6,106 @@
     "alerts": 3
   },
   "current": {
+    "date": "2026-08-05",
+    "fullArticleCount": 1,
+    "alertCount": 0,
+    "evaluatedCandidateCount": 12,
+    "beatsSearched": [
+      "risk-compliance",
+      "it-data-cybersecurity",
+      "payments-deposits",
+      "finance-treasury",
+      "operations",
+      "lending-collections",
+      "executive-governance",
+      "vendor-management"
+    ],
+    "publications": [
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "RBFCU Scam Complaints Put Fraud-Claim Investigations Under Scrutiny",
+        "url": "https://creditunionainews.com/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
+        "primaryFunctionalAudience": "Fraud operations and compliance leaders",
+        "promotionPriority": "High",
+        "socialDecision": "eligible-high-priority-handed-off; not-created-in-article-cycle"
+      }
+    ],
+    "rejections": [
+      {
+        "title": "JPMorgan Expands Critical-Infrastructure Alliance to AI Risk",
+        "reason": "timely but not yet tied to a credit-union-specific control, deployment or operating decision",
+        "primaryAudience": "technology and cybersecurity leaders",
+        "secondaryAudiences": ["executives", "vendor-management teams"]
+      },
+      {
+        "title": "Kansas City Fed President Flags Financial Risks Around the AI Buildout",
+        "reason": "authoritative macro signal without institution-level exposure evidence for a direct credit-union article",
+        "primaryAudience": "finance and treasury leaders",
+        "secondaryAudiences": ["executives", "risk leaders"]
+      },
+      {
+        "title": "Bank of America and USAA Cross-License Banking and AI Patents",
+        "reason": "deal terms and transferable credit-union implications were undisclosed, and Bank of America was recently covered",
+        "primaryAudience": "technology leaders",
+        "secondaryAudiences": ["vendor-management teams", "executives"]
+      },
+      {
+        "title": "Upstart Reports Higher AI-Lending Originations in Second Quarter",
+        "reason": "vendor financial results without independently verified credit-union borrower, risk or portfolio outcomes",
+        "primaryAudience": "lending leaders",
+        "secondaryAudiences": ["finance leaders", "vendor-management teams"]
+      },
+      {
+        "title": "BECU and SAFE Credit Union Receive Merger Approvals",
+        "reason": "material governance news without a distinct technology, fraud, payment or digital-operating development",
+        "primaryAudience": "executives and board leaders",
+        "secondaryAudiences": ["operations leaders", "finance leaders"]
+      },
+      {
+        "title": "Defense Credit Union Council and Visa Discuss Payments Modernization",
+        "reason": "conference commentary without a new product, policy or measurable implementation event",
+        "primaryAudience": "payments leaders",
+        "secondaryAudiences": ["technology leaders", "executives"]
+      },
+      {
+        "title": "Treasury Removes Disparate-Impact Provisions From Department Regulations",
+        "reason": "the accessible evidence did not establish exact implementation scope for credit-union lending and compliance teams",
+        "primaryAudience": "risk, legal and compliance leaders",
+        "secondaryAudiences": ["lending leaders", "executives"]
+      },
+      {
+        "title": "America's Credit Unions Publishes a New Economic Forecast",
+        "reason": "the public page did not expose enough methodology and figures for a reproducible full analysis",
+        "primaryAudience": "finance and treasury leaders",
+        "secondaryAudiences": ["executives", "lending leaders"]
+      },
+      {
+        "title": "U.K. Banks Test Defenses Against AI-Enabled Cyberattacks",
+        "reason": "non-U.S. scope and limited public scenario detail weakened the direct credit-union operating value",
+        "primaryAudience": "technology and cybersecurity leaders",
+        "secondaryAudiences": ["risk leaders", "operations leaders"]
+      },
+      {
+        "title": "Collections AI Exception-Handling Playbook",
+        "reason": "qualified evergreen concept displaced by a materially timely, stronger-sourced fraud-claim development",
+        "primaryAudience": "collections leaders",
+        "secondaryAudiences": ["risk leaders", "operations leaders"]
+      },
+      {
+        "title": "Treasury AI Business-Case Framework",
+        "reason": "remains the highest portfolio gap, but the selected current event had more immediate decision value",
+        "primaryAudience": "finance and treasury leaders",
+        "secondaryAudiences": ["executives", "technology leaders"]
+      }
+    ],
+    "status": "article-complete",
+    "activeExperimentContext": "none; baseline collection",
+    "nextCoverageGap": "finance and treasury AI business-case and benefits-realization guidance",
+    "updatedAt": "2026-08-05T07:00:00-04:00"
+  },
+  "history": [
+    {
     "date": "2026-08-04",
     "fullArticleCount": 1,
     "alertCount": 0,
@@ -137,7 +237,6 @@
     "nextCoverageGap": "finance and treasury AI business-case and benefits-realization guidance",
     "updatedAt": "2026-08-04T07:00:00-04:00"
   },
-  "history": [
     {
       "date": "2026-08-03",
       "fullArticleCount": 1,
