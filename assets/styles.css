@@ -2326,3 +2326,19 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
   }
   .institute-banner-inner { z-index: 2; }
 }
+
+
+/* Final desktop balance: use the full canvas so the people sit center-right without an empty image panel. */
+@media (min-width: 721px) {
+  .institute-banner::before {
+    inset: 0;
+    left: 0;
+    background-position: 63% center;
+    background-size: auto 118%;
+  }
+  .institute-banner::after {
+    left: 0;
+    width: 60%;
+    background: linear-gradient(to right, #edf4f8 0%, #edf4f8 38%, rgba(237, 244, 248, .76) 68%, rgba(237, 244, 248, 0) 100%);
+  }
+}
