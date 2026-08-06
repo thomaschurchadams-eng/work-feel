@@ -2301,3 +2301,28 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
   }
   .institute-banner-inner { position: relative; z-index: 1; }
 }
+
+
+/* Reliable desktop image blend: show the people and soften only the image's left edge. */
+@media (min-width: 721px) {
+  .institute-banner::before {
+    background-position: left center;
+    background-size: auto 112%;
+    left: 27%;
+    -webkit-mask-image: none;
+    mask-image: none;
+    opacity: 1;
+    z-index: 0;
+  }
+  .institute-banner::after {
+    background: linear-gradient(to right, #edf4f8 0%, rgba(237, 244, 248, .88) 32%, rgba(237, 244, 248, 0) 100%);
+    content: "";
+    inset-block: 0;
+    left: 27%;
+    pointer-events: none;
+    position: absolute;
+    width: 30%;
+    z-index: 1;
+  }
+  .institute-banner-inner { z-index: 2; }
+}
