@@ -2393,3 +2393,26 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
   .institute-banner-cta { background: #fff; color: #0b315b; }
   .institute-banner-cta:hover { background: #b8dcff; color: #071b36; }
 }
+
+
+/* Approved light desktop artwork: a single continuous cool-stone canvas, with no CSS image overlays. */
+@media (min-width: 721px) {
+  .institute-banner {
+    background-color: #dbe5ed;
+    background-image: url("/assets/cooperative-ai-institute-banner-light-v2.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-bottom: 10px solid #fff;
+    border-top: 1px solid #b9cedc;
+    color: #0b315b;
+  }
+  .institute-banner::before,
+  .institute-banner::after { display: none; }
+  .institute-banner-inner { min-height: 276px; }
+  .institute-banner-kicker { border-color: #6689a5; color: #234e72; }
+  .institute-banner strong { color: #0b315b; }
+  .institute-banner p span { color: #36536a; }
+  .institute-banner-cta { background: #0b4d8d; color: #fff; }
+  .institute-banner-cta:hover { background: #063862; color: #fff; }
+}
