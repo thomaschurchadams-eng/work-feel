@@ -2342,3 +2342,21 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
     background: linear-gradient(to right, #edf4f8 0%, #edf4f8 38%, rgba(237, 244, 248, .76) 68%, rgba(237, 244, 248, 0) 100%);
   }
 }
+
+
+/* Desktop ad uses the source image at a natural proportion: full right edge, no empty panel or cropped heads. */
+@media (min-width: 721px) {
+  .institute-banner { min-height: 276px; }
+  .institute-banner::before {
+    background-position: right center;
+    background-size: auto 100%;
+    inset: 0;
+    left: 0;
+  }
+  .institute-banner::after {
+    background: linear-gradient(to right, #edf4f8 0%, rgba(237, 244, 248, .95) 34%, rgba(237, 244, 248, .40) 70%, rgba(237, 244, 248, 0) 100%);
+    left: 42%;
+    width: 31%;
+  }
+  .institute-banner-inner { min-height: 276px; }
+}
