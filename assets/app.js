@@ -11,6 +11,27 @@
     document.body.classList.add('page-insight-article');
   }
 
+
+  const addInstituteBanner = () => {
+    if (document.querySelector('.institute-banner')) return;
+    const header = document.querySelector('header');
+    if (!header) return;
+    const banner = document.createElement('aside');
+    banner.className = 'institute-banner institute-banner--sponsored';
+    banner.setAttribute('aria-label', 'Sponsored: Cooperative AI Institute');
+    banner.innerHTML = `
+      <div class="container institute-banner-inner">
+        <div class="institute-banner-copy">
+          <span class="institute-banner-kicker">Sponsored</span>
+          <p><strong>Cooperative AI Institute</strong><span>Practical AI readiness for credit unions.</span></p>
+          <a class="institute-banner-cta" href="https://www.cooperativeaiinstitute.com/early-access-guide?source=creditunionainews&amp;medium=site-banner&amp;campaign=early-access">Explore Early Access <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    `;
+    header.insertAdjacentElement('afterend', banner);
+  };
+  addInstituteBanner();
+
   const alertsData = [
     {
       label: 'Instant Payments',

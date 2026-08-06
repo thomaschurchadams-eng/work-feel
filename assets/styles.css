@@ -2220,3 +2220,28 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
 .page-home .hero h1 {
   max-width: 1080px;
 }
+
+
+/* Sponsored Cooperative AI Institute placement */
+.institute-banner {
+  background:
+    linear-gradient(90deg, rgba(7, 27, 54, 0.99) 0%, rgba(7, 27, 54, 0.96) 40%, rgba(7, 27, 54, 0.52) 62%, rgba(7, 27, 54, 0.08) 100%),
+    url("https://raw.githubusercontent.com/thomaschurchadams-eng/work-feel/codex/institute-banner-mock/cooperative-ai-institute-sponsored-banner.png") center / cover no-repeat,
+    #071b36;
+  color: #f6f9ff;
+  position: relative;
+  z-index: 10;
+}
+.institute-banner-inner { display: flex; align-items: center; min-height: 190px; padding: 22px 0; }
+.institute-banner-copy { display: flex; align-items: flex-start; flex-direction: column; gap: 13px; max-width: 590px; }
+.institute-banner-kicker { border: 1px solid rgba(186, 220, 255, .48); border-radius: 999px; color: #b8dcff; font-size: .68rem; font-weight: 800; letter-spacing: .12em; padding: 4px 9px; text-transform: uppercase; }
+.institute-banner p { display: grid; gap: 5px; line-height: 1.16; margin: 0; }
+.institute-banner strong { color: #fff; font-size: clamp(1.45rem, 2.5vw, 2.1rem); letter-spacing: -.03em; }
+.institute-banner p span { color: #d8e9fa; font-size: 1rem; }
+.institute-banner-cta { background: #fff; border-radius: 999px; color: #0b315b; display: inline-flex; font-size: .82rem; font-weight: 800; letter-spacing: .02em; padding: 11px 16px; }
+.institute-banner-cta:hover { background: #b8dcff; color: #071b36; }
+@media (max-width: 720px) {
+  .institute-banner { background-position: 68% center; }
+  .institute-banner-inner { align-items: flex-end; min-height: 350px; padding: 18px 0; }
+  .institute-banner-copy { max-width: 340px; }
+}
