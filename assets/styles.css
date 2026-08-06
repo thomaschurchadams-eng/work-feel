@@ -2370,3 +2370,26 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
     width: 56%;
   }
 }
+
+
+/* Desktop simplification: the original continuous image is the composition; no overlay or artificial seam. */
+@media (min-width: 721px) {
+  .institute-banner {
+    background-color: #061b34;
+    background-image: url("https://raw.githubusercontent.com/thomaschurchadams-eng/work-feel/codex/institute-banner-mock/cooperative-ai-institute-sponsored-banner.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-bottom: 8px solid #edf4f8;
+    border-top: 1px solid #b9cedc;
+    color: #f6f9ff;
+  }
+  .institute-banner::before,
+  .institute-banner::after { display: none; }
+  .institute-banner-inner { min-height: 276px; }
+  .institute-banner-kicker { border-color: rgba(186, 220, 255, .48); color: #b8dcff; }
+  .institute-banner strong { color: #fff; }
+  .institute-banner p span { color: #d8e9fa; }
+  .institute-banner-cta { background: #fff; color: #0b315b; }
+  .institute-banner-cta:hover { background: #b8dcff; color: #071b36; }
+}
