@@ -2360,3 +2360,13 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
   }
   .institute-banner-inner { min-height: 276px; }
 }
+
+
+/* Seamless desktop crossfade: transparent at both boundaries, opaque only where the image meets the copy. */
+@media (min-width: 721px) {
+  .institute-banner::after {
+    background: linear-gradient(to right, rgba(237, 244, 248, 0) 0%, rgba(237, 244, 248, .58) 18%, rgba(237, 244, 248, .96) 38%, rgba(237, 244, 248, .76) 62%, rgba(237, 244, 248, .22) 84%, rgba(237, 244, 248, 0) 100%);
+    left: 24%;
+    width: 56%;
+  }
+}
