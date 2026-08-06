@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-05T07:00:00-04:00",
+  "lastStandardRun": "2026-08-06T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "RBFCU Scam Complaints Put Fraud-Claim Investigations Under Scrutiny",
-    "url": "https://creditunionainews.com/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
-    "publishedAt": "2026-08-05T07:00:00-04:00",
-    "route": "news"
+    "title": "A CFO’s AI Business-Case Framework for Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-business-case-framework.html",
+    "publishedAt": "2026-08-06T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-06",
+      "headline": "Visa Agrees to Acquire BioCatch for $2.4 Billion",
+      "reason": "material payments and fraud infrastructure news, but it would have extended the site's recent concentration in fraud coverage and the announced transaction does not yet establish credit-union implementation outcomes"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "UW Credit Union Selects Fiserv DNA Core",
+      "reason": "directly relevant core-modernization announcement, but the accessible evidence was vendor-led and did not provide independently verifiable migration scope, member outcomes or operating milestones"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "Former Patelco Audit Executive Alleges Retaliation Over Cybersecurity Findings",
+      "reason": "potentially material governance and cyber-risk case, but allegation-heavy coverage required the underlying complaint and responses from the named parties before a full article"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "Patelco Invests in Payfinia Payments CUSO",
+      "reason": "credible credit-union payments development, but it was a minority investment announcement without a new production milestone or measurable member outcome"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "CommLoan Reports Credit Unions in More Than a Third of Second-Quarter CRE Deals",
+      "reason": "useful commercial-lending signal, but the performance figures and case claims came from the platform provider without an independently reproducible transaction dataset"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "U.K. Government Leaves Open Mandatory AI Rules",
+      "reason": "timely policy signal, but direct applicability to U.S. credit unions was limited and no domestic implementation decision followed"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "Alkami Opens Registration for Its 2027 Technology Conference",
+      "reason": "event promotion rather than a completed product, policy or operating development"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "Credit Union 1 Expands Branded ATM Access in Alaska",
+      "reason": "member-access development with limited AI or automation evidence and weaker portfolio value than the selected finance framework"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "Collections AI Exception-Handling Playbook",
+      "reason": "qualified evergreen opportunity, but the finance and treasury gap had been repeatedly deferred and had the stronger current authoritative source package"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "AI-Generated Member Communications Review Playbook",
+      "reason": "qualified evergreen opportunity, but it overlapped existing messaging and acceptable-use coverage more than the selected CFO framework"
+    },
+    {
+      "date": "2026-08-06",
+      "headline": "Vendor Exit-Cost Checklist for Credit Unions",
+      "reason": "useful procurement concept, but narrower than the selected lifecycle-cost and benefits-realization framework"
+    },
     {
       "date": "2026-08-05",
       "headline": "JPMorgan Expands Critical-Infrastructure Alliance to AI Risk",
@@ -420,12 +475,12 @@
     {
       "functionalArea": "finance-treasury",
       "opportunity": "A practical AI business-case and benefits-realization framework for CFO teams",
-      "priority": "next"
+      "priority": "completed-2026-08-06"
     },
     {
       "functionalArea": "marketing-communications",
       "opportunity": "A member-communications review and disclosure playbook that does not duplicate acceptable-use coverage",
-      "priority": "high"
+      "priority": "next"
     },
     {
       "functionalArea": "lending-mortgage-collections",

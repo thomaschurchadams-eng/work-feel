@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-business-case-framework",
+      "title": "A CFO’s AI Business-Case Framework for Credit Unions",
+      "url": "/insight-credit-union-ai-business-case-framework.html",
+      "publishedAt": "2026-08-06T07:00:00-04:00",
+      "section": "insights",
+      "beat": "finance-treasury",
+      "functions": ["finance-treasury", "executive-governance", "operations", "it-data-cybersecurity", "vendor-management"],
+      "technologies": ["agents-automation"],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Finance and treasury leaders",
+      "secondaryAudiences": ["executives and board leaders", "operations leaders", "technology leaders", "vendor-management teams"],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "not-created-library-priority",
+      "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
+      "internalLinkTargets": ["/insight-prioritizing-ai-automation.html", "/news/ai-vendor-due-diligence-checklist-credit-unions.html"],
+      "sourceTier": 1,
+      "score": 97.4
+    },
+    {
       "id": "rbfcu-impersonation-scam-regulation-e-investigations",
       "title": "RBFCU Scam Complaints Put Fraud-Claim Investigations Under Scrutiny",
       "url": "/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
