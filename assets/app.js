@@ -11,6 +11,29 @@
     document.body.classList.add('page-insight-article');
   }
 
+
+  const addInstituteBanner = () => {
+    if (document.querySelector('.institute-banner')) return;
+    const header = document.querySelector('header');
+    if (!header) return;
+
+    const banner = document.createElement('aside');
+    banner.className = 'institute-banner institute-banner--sponsored';
+    banner.setAttribute('aria-label', 'Sponsored: Cooperative AI Institute');
+    banner.innerHTML = `
+      <div class="container institute-banner-inner">
+        <div class="institute-banner-copy">
+          <span class="institute-banner-kicker">Sponsored</span>
+          <p><strong>Cooperative AI Institute</strong><span>Practical AI readiness for credit unions.</span></p>
+          <a class="institute-banner-cta" href="https://www.cooperativeaiinstitute.com/early-access-guide?source=creditunionainews&amp;medium=site-banner&amp;campaign=early-access">Explore Early Access <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    `;
+    header.insertAdjacentElement('afterend', banner);
+  };
+
+  addInstituteBanner();
+
   const alertsData = [
     {
       label: 'Instant Payments',
@@ -884,13 +907,6 @@
     }
   ];
 
-  // Maintained by the weekday operating cycle. Items expire automatically after seven days.
-  const homepageWatchState = {
-    reviewedAt: '',
-    items: []
-  };
-
-
   const parseAlertDate = (entry) => {
     const raw = entry?.date || entry?.published || entry?.timestamp || '';
     if (!raw) return null;
@@ -907,19 +923,6 @@
 
     return null;
   };
-
-  const getFreshHomepageWatchItems = () => {
-    const reviewedAt = parseAlertDate({ date: homepageWatchState.reviewedAt });
-    if (!reviewedAt) return [];
-    const ageMs = Date.now() - reviewedAt.getTime();
-    if (ageMs < 0 || ageMs > 7 * 24 * 60 * 60 * 1000) return [];
-    return Array.isArray(homepageWatchState.items)
-      ? homepageWatchState.items
-          .filter((item) => item && item.href && item.label)
-          .slice(0, 3)
-      : [];
-  };
-
 
   const getRecentAlerts = (alerts, days = 14) => {
     const cutoff = new Date();
@@ -946,42 +949,15 @@
       .map(({ parsedDate, ...rest }) => rest);
   };
 
-  // Keep the archive and ticker on their existing recent window; homepage priority needs a stricter freshness rule.
+  // Prepare alerts once for all consumers: freshest-first, deduped, and within the defined window
   const preparedAlerts = getRecentAlerts(alertsData);
-  const homepageAlerts = getRecentAlerts(alertsData, 3);
   const tickerAlerts = preparedAlerts.slice(0, 3);
 
 
   const renderLatestHomepageAlert = () => {
     const container = document.querySelector('#latest-alert');
-    if (!container) return;
-
-    const item = homepageAlerts[0];
-    if (!item) {
-      const watchItems = getFreshHomepageWatchItems();
-      if (watchItems.length) {
-        container.innerHTML = `
-          <div class="latest-alert-header">
-            <div><p class="eyebrow">What to watch</p></div>
-            <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
-          </div>
-          <h2 id="latest-alert-heading">Current decisions for credit-union teams</h2>
-          <p class="latest-alert-summary">No current source-gated Alert is active. These recent, independently selected reporting threads are worth tracking.</p>
-          <div class="latest-alert-actions">${watchItems.map((watch) => `<a class="link" href="${watch.href}">${watch.label} →</a>`).join('')}</div>
-        `;
-      } else {
-        container.innerHTML = `
-          <div class="latest-alert-header">
-            <div><p class="eyebrow">Practical resource</p></div>
-            <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
-          </div>
-          <h2 id="latest-alert-heading">A practical tool for the next AI vendor decision</h2>
-          <p class="latest-alert-summary">No current source-gated Alert is active. Use this maintained guide to prepare a rigorous vendor review.</p>
-          <div class="latest-alert-actions"><a class="link" href="/news/ai-vendor-due-diligence-checklist-credit-unions.html">Use the AI vendor due-diligence checklist →</a></div>
-        `;
-      }
-      return;
-    }
+    const item = preparedAlerts[0];
+    if (!container || !item) return;
 
     container.innerHTML = `
       <div class="latest-alert-header">
