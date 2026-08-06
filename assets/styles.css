@@ -2416,3 +2416,12 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
   .institute-banner-cta { background: #0b4d8d; color: #fff; }
   .institute-banner-cta:hover { background: #063862; color: #fff; }
 }
+
+
+/* Continuous desktop image: the light artwork covers the whole banner so there is no join between copy and photography. */
+@media (min-width: 721px) {
+  .institute-banner {
+    background-position: center top;
+    background-size: cover;
+  }
+}
