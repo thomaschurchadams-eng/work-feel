@@ -2245,3 +2245,35 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
   .institute-banner-inner { align-items: flex-end; min-height: 350px; padding: 18px 0; }
   .institute-banner-copy { max-width: 340px; }
 }
+
+
+/* Keep the sponsored unit clearly distinct from News navigation and preserve the people image. */
+.institute-banner {
+  background-color: #edf4f8;
+  background-image:
+    linear-gradient(90deg, #edf4f8 0%, #edf4f8 47%, rgba(237, 244, 248, .88) 61%, rgba(237, 244, 248, .10) 100%),
+    url("https://raw.githubusercontent.com/thomaschurchadams-eng/work-feel/codex/institute-banner-mock/cooperative-ai-institute-sponsored-banner.png");
+  background-position: center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, auto 100%;
+  border-bottom: 1px solid #b9cedc;
+  border-top: 1px solid #b9cedc;
+  color: #0b315b;
+}
+.institute-banner-inner { min-height: 204px; }
+.institute-banner-kicker { border-color: #6689a5; color: #234e72; }
+.institute-banner strong { color: #0b315b; }
+.institute-banner p span { color: #36536a; }
+.institute-banner-cta { background: #0b4d8d; color: #fff; }
+.institute-banner-cta:hover { background: #063862; color: #fff; }
+
+@media (max-width: 720px) {
+  .institute-banner {
+    background-image:
+      linear-gradient(0deg, #edf4f8 0%, rgba(237, 244, 248, .92) 47%, rgba(237, 244, 248, .18) 100%),
+      url("https://raw.githubusercontent.com/thomaschurchadams-eng/work-feel/codex/institute-banner-mock/cooperative-ai-institute-sponsored-banner.png");
+    background-position: center, right top;
+    background-size: cover, auto 100%;
+  }
+  .institute-banner-inner { align-items: flex-start; min-height: 355px; padding-top: 172px; }
+}
