@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-member-communications-review",
+      "title": "Eight Checks for AI-Generated Credit Union Member Communications",
+      "url": "/insight-credit-union-ai-member-communications-review.html",
+      "publishedAt": "2026-08-07T07:00:00-04:00",
+      "section": "insights",
+      "beat": "marketing-growth",
+      "functions": ["marketing-growth", "member-service", "risk-compliance", "it-data-cybersecurity"],
+      "technologies": ["generative-ai", "conversational-ai"],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing and communications leaders",
+      "secondaryAudiences": ["member-service leaders", "risk and compliance leaders", "technology leaders"],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "not-created-library-priority",
+      "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
+      "internalLinkTargets": ["/news/ai-acceptable-use-policy-credit-unions.html", "/news/ai-credit-union-member-messaging.html"],
+      "sourceTier": 1,
+      "score": 96.9
+    },
+    {
       "id": "credit-union-ai-business-case-framework",
       "title": "A CFO’s AI Business-Case Framework for Credit Unions",
       "url": "/insight-credit-union-ai-business-case-framework.html",

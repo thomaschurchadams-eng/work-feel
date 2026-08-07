@@ -1,14 +1,25 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-06T07:00:00-04:00",
+  "lastStandardRun": "2026-08-07T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "A CFO’s AI Business-Case Framework for Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-business-case-framework.html",
-    "publishedAt": "2026-08-06T07:00:00-04:00",
+    "title": "Eight Checks for AI-Generated Credit Union Member Communications",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-member-communications-review.html",
+    "publishedAt": "2026-08-07T07:00:00-04:00",
     "route": "insights"
   },
   "failedCandidates": [
+    {"date":"2026-08-07","headline":"African Diaspora Federal Credit Union Closes","reason":"authoritative and current, but a small-credit-union liquidation without a distinct AI, fintech or digital-operating development"},
+    {"date":"2026-08-07","headline":"Visa Agrees to Acquire BioCatch","reason":"still material but already evaluated, inside a recent fraud-heavy coverage run and without a new credit-union implementation milestone"},
+    {"date":"2026-08-07","headline":"UW Credit Union Selects Fiserv DNA Core","reason":"directly relevant but the evidence remained vendor-led and did not add an independently verifiable migration or operating milestone"},
+    {"date":"2026-08-07","headline":"Patelco Invests in Payfinia Payments CUSO","reason":"credible payments investment without production outcomes or a distinct new event since the prior evaluation"},
+    {"date":"2026-08-07","headline":"ROAD to Housing Act Regulatory Summary","reason":"secondary vendor analysis of a broad law; primary implementation guidance was not yet complete enough for a credit-union operating article"},
+    {"date":"2026-08-07","headline":"Alkami Opens Registration for Its 2027 Conference","reason":"event promotion rather than a completed material development"},
+    {"date":"2026-08-07","headline":"Bank Fraud Technology Advancement Act","reason":"important policy concept but not a new development within the 72-hour window"},
+    {"date":"2026-08-07","headline":"Credit Union 1 Expands Branded ATM Access","reason":"member-access development with limited AI relevance and no new evidence since the prior review"},
+    {"date":"2026-08-07","headline":"Collections AI Exception-Handling Playbook","reason":"qualified evergreen opportunity, but marketing and communications was the higher-priority unserved functional gap"},
+    {"date":"2026-08-07","headline":"Vendor Exit-Cost Checklist","reason":"qualified procurement concept, but narrower and less differentiated from the previous day's lifecycle-cost framework"},
+    {"date":"2026-08-07","headline":"AI Chatbot Escalation Case Study","reason":"useful concept, but the broader communications release gate served more channels and functions with stronger authoritative support"},
     {
       "date": "2026-08-06",
       "headline": "Visa Agrees to Acquire BioCatch for $2.4 Billion",
@@ -480,12 +491,12 @@
     {
       "functionalArea": "marketing-communications",
       "opportunity": "A member-communications review and disclosure playbook that does not duplicate acceptable-use coverage",
-      "priority": "next"
+      "priority": "completed-2026-08-07"
     },
     {
       "functionalArea": "lending-mortgage-collections",
       "opportunity": "A source-backed collections exception and borrower-assistance implementation guide",
-      "priority": "high"
+      "priority": "next"
     }
   ]
 }
