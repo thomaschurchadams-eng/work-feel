@@ -4,7 +4,7 @@
 
 This is the authoritative operating policy for the **Publish CUAI Daily Article** ChatGPT Cloud task. Read this file from `main` before every run. If a task prompt, prior chat, or stale memory conflicts with this file, this file controls.
 
-This policy governs one daily article cycle. It does not authorize new scheduled tasks, changes to Cloud schedules/models/permissions, unrelated maintenance, new Alerts, or publication outside the normal site workflow.
+This policy governs one daily article cycle plus the bounded LinkedIn distribution step for qualifying **High** articles. It does not authorize new scheduled tasks, changes to Cloud schedules/models/permissions, unrelated maintenance, new Alerts, or publication outside the normal site workflow.
 
 ## Mission
 
@@ -14,7 +14,7 @@ Reliability, source quality, and usefulness outrank volume.
 
 ## Required research and selection
 
-1. Read the current production policy inputs needed for the cycle, including the newsroom runbook, publishing rules, taxonomy, coverage ledger, source registry, analytics/SEO rules, relevant templates, current homepage, current section indexes, and recently published articles.
+1. Read the current production policy inputs needed for the cycle, including the newsroom runbook, publishing rules, taxonomy, coverage ledger, source registry, analytics/SEO rules, relevant templates, current homepage, current section indexes, recently published articles, `automation/social-queue.json`, and the current daily-cycle state.
 2. Search across at least four distinct functional or editorial beats. Evaluate at least six credible candidates when current developments are available.
 3. Prefer primary sources, official documents, regulators, credit unions, vendors making attributable announcements, and credible reporting. A candidate must have a specific, explainable credit-union implication.
 4. Avoid repeating a recent topic, source, organization, format, or functional audience unless there is material new information.
@@ -36,14 +36,47 @@ For one approved article only:
 - Run all applicable validation and production checks. Verify the production deployment is ready and the live article, image, listing, and any homepage placement render correctly.
 - Never publish unsupported claims, invented quotes, implied partnerships, fabricated performance results, or stale facts presented as current.
 
-## Selective LinkedIn rule
+## Selective LinkedIn distribution
 
-LinkedIn is a selective distribution channel, not a mirror of daily output.
+LinkedIn is a selective distribution channel, not a mirror of daily output. The daily article cycle owns the bounded social-distribution action for qualifying High articles so that no separate handoff is required.
 
-- Queue or publish a LinkedIn post only for a **High** classification, or for an explicitly approved exception.
-- The post must accurately reflect the published article, include the live URL, avoid unverified claims, and use the approved social workflow.
+### Eligibility
+
+- Create and schedule a LinkedIn post only for a **High** classification, or for an explicitly approved exception.
 - Do not create a social post for Standard or Library content merely because an article was published.
-- Do not change LinkedIn schedules, credentials, permissions, or automations in this cycle.
+- The article must already be live and production-verified before scheduling LinkedIn.
+- The post must accurately reflect the published article, include one concrete operational takeaway, avoid unverified claims, and use the approved CreditUnionAI News company-page workflow only. Never post automatically to Tom Church-Adams's personal LinkedIn profile.
+
+### Queue and tracking requirements
+
+For each qualifying High article:
+
+1. Re-read `automation/social-queue.json` from current `main` immediately before writing.
+2. Confirm there is no existing queue item or Buffer post for the same article and no item already reserved for the chosen America/New_York calendar date.
+3. Enforce a hard limit of one CreditUnionAI News LinkedIn post per America/New_York calendar day and five per week.
+4. Create one immutable queue item whose id begins with `linkedin-`, preserving the established schema and using:
+   - `articleUrl` as the canonical live article URL;
+   - `distributionUrl` equal to `articleUrl` plus exactly `utm_source=linkedin`, `utm_medium=organic_social`, `utm_campaign=cuai_news`, and `utm_content=<queue item id>`;
+   - `trackingStatus` as `utm-tagged`;
+   - the article hero `imageUrl` and `imageAlt` when available;
+   - concise company-page copy that uses the UTM-tagged `distributionUrl`.
+5. Use the fixed Eastern posting times already established for CUAI: Monday and Friday at 12:30 p.m.; Tuesday, Wednesday and Thursday at 11:30 a.m. Never schedule weekends.
+6. If today's fixed posting time is at least five minutes ahead and the date is free, use today. Otherwise reserve the next eligible weekday at its fixed posting time. Do not silently choose an arbitrary later time on the same day.
+7. Commit the queue item, confirm the resulting Vercel production deployment is READY, and obtain the exact deployed commit SHA.
+8. Schedule the item by fetching `https://creditunionainews.com/api/buffer-schedule-tracked?itemId=<URL_ENCODED_ITEM_ID>&commitSha=<DEPLOYED_COMMIT_SHA>`. Treat only HTTP 200 or 201 with `ok=true` as success.
+9. On success, re-read current `main`, update the queue item with the scheduler result fields already used by the ledger, including `status` (`scheduled` or `sent` as reported), `postId`, `channelId`, `channelName`, `scheduledAt`, `bufferDueAt`, `lastAttemptAt`, `lastResult`, `duplicate`, and image-attachment metadata when returned. Commit that ledger update and confirm the resulting production deployment is READY.
+10. On scheduler failure, keep exactly one queued item, record the precise blocker and attempt time, do not create a duplicate item, and report the failure.
+
+### One-time recovery of missed High handoffs
+
+At the start of each weekday article cycle, inspect the prior seven calendar days in the established publication/daily-cycle ledger for any article recorded as High with a social decision equivalent to `eligible-high-priority-handed-off` or otherwise eligible but not represented in `automation/social-queue.json`.
+
+- Recover at most one such missed High article per run, newest first, using the same queue, tracking, fixed-time, duplicate, weekly-limit, deployment and Buffer scheduling rules above.
+- Recover only if the article is still materially current and the live article remains production-valid.
+- If the current day's article also qualifies as High, preserve the one-post-per-day rule and reserve the second qualifying item for the next eligible free weekday slot.
+- Once no qualifying missed High article remains, this recovery step becomes a no-op.
+
+Do not change LinkedIn credentials, Buffer credentials, channel permissions, posting-time policy, or Cloud automation schedules in this cycle.
 
 ## Analytics learning loop
 
@@ -53,6 +86,6 @@ Use available analytics and prior outcomes to improve future selection: favor to
 
 ## Publish-to-operate handoff
 
-Once the article package is live and verified, hand off only the relevant result to the operating-system policy: classification, portfolio/coverage update, analytics fields, LinkedIn decision, and any alert consideration. Do not run Alerts, maintenance, growth, newsletter, or social activity inside this article cycle.
+Once the article package and any qualifying LinkedIn distribution step are complete, hand off only the relevant result to the operating-system policy: classification, portfolio/coverage update, analytics fields, LinkedIn decision and scheduling result, and any alert consideration. Do not run Alerts, maintenance, growth, or newsletter activity inside this article cycle.
 
-The Cloud task must finish with a concise operational record: published or not published, classification, live URL if published, validation/deployment status, LinkedIn decision, and any blocker.
+The Cloud task must finish with a concise operational record: published or not published, classification, live URL if published, validation/deployment status, LinkedIn decision and scheduling status when applicable, any recovered missed High article, and any blocker.
