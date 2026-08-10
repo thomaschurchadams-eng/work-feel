@@ -6,17 +6,17 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "fullArticleCount": 1,
     "alertCount": 0,
-    "evaluatedCandidateCount": 12,
+    "evaluatedCandidateCount": 14,
     "beatsSearched": [
-      "marketing-growth",
+      "regulatory-governance",
       "member-service",
-      "risk-compliance",
-      "it-data-cybersecurity",
-      "payments-deposits",
+      "operations-workforce",
       "lending-collections",
+      "payments-deposits",
+      "it-data-cybersecurity",
       "vendor-management",
       "executive-governance"
     ],
@@ -24,80 +24,125 @@
       {
         "type": "article",
         "classification": "Insights",
-        "title": "Eight Checks for AI-Generated Credit Union Member Communications",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-member-communications-review.html",
-        "primaryFunctionalAudience": "Marketing and communications leaders",
+        "title": "A Stop-or-Continue Playbook for AI in Credit Union Collections",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-collections-exception-playbook.html",
+        "primaryFunctionalAudience": "Collections and borrower-assistance leaders",
         "promotionPriority": "Library",
         "socialDecision": "not-created-library-priority"
       }
     ],
     "rejections": [
       {
-        "title": "African Diaspora Federal Credit Union Closes",
-        "reason": "current but no distinct AI, fintech or digital-operating development",
+        "title": "Senate Confirms John Crews to the NCUA Board",
+        "reason": "authoritative and current, but the appointment did not yet create a distinct credit-union operating or technology decision",
         "primaryAudience": "executives and board leaders",
         "secondaryAudiences": [
-          "finance leaders",
-          "risk leaders"
+          "risk and compliance leaders",
+          "strategy leaders"
         ]
       },
       {
-        "title": "Visa Agrees to Acquire BioCatch",
-        "reason": "already evaluated, recent fraud concentration and no new credit-union implementation milestone",
-        "primaryAudience": "payments and fraud leaders",
+        "title": "America's Credit Unions Highlights AI Member-Service Results",
+        "reason": "recent industry roundup, but it repackaged previously announced deployments and vendor-supplied results without a new implementation event",
+        "primaryAudience": "member-service leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "executives"
+        ]
+      },
+      {
+        "title": "CU 2.0 Launches AI Coaching for Credit Unions",
+        "reason": "current but primarily a consultancy promotion with early benefit claims that were not independently verifiable",
+        "primaryAudience": "executives and innovation leaders",
+        "secondaryAudiences": [
+          "workforce leaders",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Eltropy Publishes a Four-Stage AI Adoption Playbook",
+        "reason": "useful vendor guidance rather than a completed policy, product or credit-union operating development",
+        "primaryAudience": "technology leaders",
+        "secondaryAudiences": [
+          "member-service leaders",
+          "executives"
+        ]
+      },
+      {
+        "title": "AltaOne Launches AnyTimePay",
+        "reason": "directly relevant to member liquidity, but outside the 72-hour window and reliant on vendor-supplied benefit and risk claims",
+        "primaryAudience": "payments and product leaders",
+        "secondaryAudiences": [
+          "risk leaders",
+          "member-service leaders"
+        ]
+      },
+      {
+        "title": "HuLoop Reports First-Half Credit-Union Growth",
+        "reason": "outside the freshness window and based on vendor growth claims without institution-level operating outcomes",
+        "primaryAudience": "operations leaders",
         "secondaryAudiences": [
           "technology leaders",
           "vendor-management teams"
         ]
       },
       {
-        "title": "UW Credit Union Selects Fiserv DNA Core",
-        "reason": "vendor-led evidence without a verifiable migration or operating milestone",
-        "primaryAudience": "technology and operations leaders",
+        "title": "Tavant Integrates Touchless Lending With Empower",
+        "reason": "mortgage infrastructure development outside the freshness window with no verified credit-union production result",
+        "primaryAudience": "mortgage leaders",
         "secondaryAudiences": [
-          "executives",
-          "vendor-management teams"
+          "technology leaders",
+          "operations leaders"
         ]
       },
       {
-        "title": "Patelco Invests in Payfinia Payments CUSO",
-        "reason": "investment announcement without production outcomes or a distinct new event",
-        "primaryAudience": "payments leaders",
+        "title": "Great Lakes Credit Union Invests in Nook",
+        "reason": "credible fintech investment outside the freshness window, without a deployment milestone or measurable member outcome",
+        "primaryAudience": "executives and strategy leaders",
         "secondaryAudiences": [
-          "executives",
-          "vendor-management teams"
+          "vendor-management teams",
+          "product leaders"
         ]
       },
       {
-        "title": "ROAD to Housing Act Regulatory Summary",
-        "reason": "secondary vendor analysis while primary implementation guidance remains incomplete",
-        "primaryAudience": "lending and compliance leaders",
+        "title": "NCUA Advances Eleven Deregulatory Proposals",
+        "reason": "material regulatory agenda but outside the freshness window and too broad for a distinct AI or fintech operating article in this cycle",
+        "primaryAudience": "risk and compliance leaders",
         "secondaryAudiences": [
           "executives",
           "operations leaders"
         ]
       },
       {
-        "title": "Alkami Opens Registration for Its 2027 Conference",
-        "reason": "event promotion rather than a completed material development",
-        "primaryAudience": "technology leaders",
+        "title": "Illinois Valley Credit Union and Credit Union 1 Advance Merger",
+        "reason": "current credit-union operations update without a distinct technology, payments, fraud or digital-operating development",
+        "primaryAudience": "executives and board leaders",
         "secondaryAudiences": [
-          "marketing teams",
-          "executives"
+          "operations leaders",
+          "technology leaders"
         ]
       },
       {
-        "title": "Bank Fraud Technology Advancement Act",
-        "reason": "important policy concept but not a new development within the 72-hour window",
-        "primaryAudience": "fraud and risk leaders",
+        "title": "Proof Publishes a Credit-Union Digital-Transformation Article",
+        "reason": "vendor content marketing rather than a verifiable deployment, policy change or operating result",
+        "primaryAudience": "operations leaders",
         "secondaryAudiences": [
           "technology leaders",
-          "executives"
+          "vendor-management teams"
         ]
       },
       {
-        "title": "Credit Union 1 Expands Branded ATM Access",
-        "reason": "member-access news with limited AI relevance and no new evidence since prior review",
+        "title": "Vendor Analysis Flags the UAD 3.6 Mortgage Deadline",
+        "reason": "potentially useful implementation context, but outside the freshness window and dependent on secondary vendor analysis",
+        "primaryAudience": "mortgage leaders",
+        "secondaryAudiences": [
+          "risk and compliance leaders",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Credit Union 1 Expands ATM Branding",
+        "reason": "current member-access update with limited AI relevance and insufficient decision value for a full article",
         "primaryAudience": "operations leaders",
         "secondaryAudiences": [
           "payments leaders",
@@ -105,39 +150,160 @@
         ]
       },
       {
-        "title": "Collections AI Exception-Handling Playbook",
-        "reason": "qualified evergreen opportunity, but marketing and communications was the higher-priority unserved gap",
-        "primaryAudience": "collections leaders",
+        "title": "Filene Announces a Money20/20 Partnership",
+        "reason": "conference partnership promotion rather than a completed material development",
+        "primaryAudience": "innovation leaders",
         "secondaryAudiences": [
-          "risk leaders",
-          "operations leaders"
-        ]
-      },
-      {
-        "title": "Vendor Exit-Cost Checklist",
-        "reason": "qualified concept but narrower and less differentiated from the prior lifecycle-cost framework",
-        "primaryAudience": "vendor-management teams",
-        "secondaryAudiences": [
-          "finance leaders",
+          "executives",
           "technology leaders"
-        ]
-      },
-      {
-        "title": "AI Chatbot Escalation Case Study",
-        "reason": "useful but the broader communications release gate served more channels with stronger support",
-        "primaryAudience": "member-service leaders",
-        "secondaryAudiences": [
-          "marketing teams",
-          "risk leaders"
         ]
       }
     ],
     "status": "article-complete",
-    "activeExperimentContext": "none; baseline collection",
-    "nextCoverageGap": "collections AI exception handling and borrower-assistance guidance",
-    "updatedAt": "2026-08-07T07:00:00-04:00"
+    "activeExperimentContext": "none; growth strategy remains in baseline collection",
+    "nextCoverageGap": "AI vendor exit, data-portability and model-transition planning",
+    "recoveredSocial": {
+      "articleTitle": "RBFCU Scam Complaints Put Fraud-Claim Investigations Under Scrutiny",
+      "articleUrl": "https://creditunionainews.com/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
+      "promotionPriority": "High",
+      "decision": "queued-for-one-time-recovery",
+      "scheduledFor": "2026-08-10T12:30:00-04:00"
+    },
+    "updatedAt": "2026-08-10T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-07",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "marketing-growth",
+        "member-service",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "payments-deposits",
+        "lending-collections",
+        "vendor-management",
+        "executive-governance"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "Eight Checks for AI-Generated Credit Union Member Communications",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-member-communications-review.html",
+          "primaryFunctionalAudience": "Marketing and communications leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "not-created-library-priority"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "African Diaspora Federal Credit Union Closes",
+          "reason": "current but no distinct AI, fintech or digital-operating development",
+          "primaryAudience": "executives and board leaders",
+          "secondaryAudiences": [
+            "finance leaders",
+            "risk leaders"
+          ]
+        },
+        {
+          "title": "Visa Agrees to Acquire BioCatch",
+          "reason": "already evaluated, recent fraud concentration and no new credit-union implementation milestone",
+          "primaryAudience": "payments and fraud leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "UW Credit Union Selects Fiserv DNA Core",
+          "reason": "vendor-led evidence without a verifiable migration or operating milestone",
+          "primaryAudience": "technology and operations leaders",
+          "secondaryAudiences": [
+            "executives",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Patelco Invests in Payfinia Payments CUSO",
+          "reason": "investment announcement without production outcomes or a distinct new event",
+          "primaryAudience": "payments leaders",
+          "secondaryAudiences": [
+            "executives",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "ROAD to Housing Act Regulatory Summary",
+          "reason": "secondary vendor analysis while primary implementation guidance remains incomplete",
+          "primaryAudience": "lending and compliance leaders",
+          "secondaryAudiences": [
+            "executives",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "Alkami Opens Registration for Its 2027 Conference",
+          "reason": "event promotion rather than a completed material development",
+          "primaryAudience": "technology leaders",
+          "secondaryAudiences": [
+            "marketing teams",
+            "executives"
+          ]
+        },
+        {
+          "title": "Bank Fraud Technology Advancement Act",
+          "reason": "important policy concept but not a new development within the 72-hour window",
+          "primaryAudience": "fraud and risk leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Credit Union 1 Expands Branded ATM Access",
+          "reason": "member-access news with limited AI relevance and no new evidence since prior review",
+          "primaryAudience": "operations leaders",
+          "secondaryAudiences": [
+            "payments leaders",
+            "marketing teams"
+          ]
+        },
+        {
+          "title": "Collections AI Exception-Handling Playbook",
+          "reason": "qualified evergreen opportunity, but marketing and communications was the higher-priority unserved gap",
+          "primaryAudience": "collections leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "Vendor Exit-Cost Checklist",
+          "reason": "qualified concept but narrower and less differentiated from the prior lifecycle-cost framework",
+          "primaryAudience": "vendor-management teams",
+          "secondaryAudiences": [
+            "finance leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "AI Chatbot Escalation Case Study",
+          "reason": "useful but the broader communications release gate served more channels with stronger support",
+          "primaryAudience": "member-service leaders",
+          "secondaryAudiences": [
+            "marketing teams",
+            "risk leaders"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "none; baseline collection",
+      "nextCoverageGap": "collections AI exception handling and borrower-assistance guidance",
+      "updatedAt": "2026-08-07T07:00:00-04:00"
+    },
     {
       "date": "2026-08-06",
       "fullArticleCount": 1,

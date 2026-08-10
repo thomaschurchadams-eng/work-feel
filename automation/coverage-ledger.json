@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-collections-exception-playbook",
+      "title": "A Stop-or-Continue Playbook for AI in Credit Union Collections",
+      "url": "/insight-credit-union-ai-collections-exception-playbook.html",
+      "publishedAt": "2026-08-10T07:00:00-04:00",
+      "section": "insights",
+      "beat": "lending-collections",
+      "functions": ["lending-collections", "risk-compliance", "operations", "member-service", "it-data-cybersecurity"],
+      "technologies": ["agents-automation"],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "Collections and borrower-assistance leaders",
+      "secondaryAudiences": ["risk and compliance leaders", "operations leaders", "member-service leaders", "technology leaders"],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "not-created-library-priority",
+      "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
+      "internalLinkTargets": ["/news/rbfcu-impersonation-scam-regulation-e-investigations.html", "/insight-credit-union-ai-workforce-plan.html", "/news/ai-document-automation-bottlenecks.html"],
+      "sourceTier": 1,
+      "score": 97.1
+    },
+    {
       "id": "credit-union-ai-member-communications-review",
       "title": "Eight Checks for AI-Generated Credit Union Member Communications",
       "url": "/insight-credit-union-ai-member-communications-review.html",

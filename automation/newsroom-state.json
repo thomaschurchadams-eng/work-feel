@@ -1,14 +1,28 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-07T07:00:00-04:00",
+  "lastStandardRun": "2026-08-10T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Eight Checks for AI-Generated Credit Union Member Communications",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-member-communications-review.html",
-    "publishedAt": "2026-08-07T07:00:00-04:00",
+    "title": "A Stop-or-Continue Playbook for AI in Credit Union Collections",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-collections-exception-playbook.html",
+    "publishedAt": "2026-08-10T07:00:00-04:00",
     "route": "insights"
   },
   "failedCandidates": [
+    {"date":"2026-08-10","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative and current, but the appointment did not yet create a distinct credit-union operating or technology decision"},
+    {"date":"2026-08-10","headline":"America's Credit Unions Highlights AI Member-Service Results","reason":"recent industry roundup, but it repackaged previously announced deployments and vendor-supplied results without a new implementation event"},
+    {"date":"2026-08-10","headline":"CU 2.0 Launches AI Coaching for Credit Unions","reason":"current but primarily a consultancy promotion with early benefit claims that were not independently verifiable"},
+    {"date":"2026-08-10","headline":"Eltropy Publishes a Four-Stage AI Adoption Playbook","reason":"useful vendor guidance rather than a completed policy, product or credit-union operating development"},
+    {"date":"2026-08-10","headline":"AltaOne Launches AnyTimePay","reason":"directly relevant to member liquidity, but the announcement was outside the 72-hour window and relied on vendor-supplied benefit and risk claims"},
+    {"date":"2026-08-10","headline":"HuLoop Reports First-Half Credit-Union Growth","reason":"outside the freshness window and based on vendor growth claims without institution-level operating outcomes"},
+    {"date":"2026-08-10","headline":"Tavant Integrates Touchless Lending With Empower","reason":"mortgage infrastructure development outside the freshness window with no verified credit-union production result"},
+    {"date":"2026-08-10","headline":"Great Lakes Credit Union Invests in Nook","reason":"credible fintech investment outside the freshness window, without a new deployment milestone or measurable member outcome"},
+    {"date":"2026-08-10","headline":"NCUA Advances Eleven Deregulatory Proposals","reason":"material regulatory agenda but outside the freshness window and too broad to support a distinct AI or fintech operating article in this cycle"},
+    {"date":"2026-08-10","headline":"Illinois Valley Credit Union and Credit Union 1 Advance Merger","reason":"current credit-union operations update without a distinct technology, payments, fraud or digital-operating development"},
+    {"date":"2026-08-10","headline":"Proof Publishes a Credit-Union Digital-Transformation Article","reason":"vendor content marketing rather than a verifiable new deployment, policy change or operating result"},
+    {"date":"2026-08-10","headline":"Vendor Analysis Flags the UAD 3.6 Mortgage Deadline","reason":"potentially useful implementation context, but outside the freshness window and dependent on secondary vendor analysis"},
+    {"date":"2026-08-10","headline":"Credit Union 1 Expands ATM Branding","reason":"current member-access update with limited AI relevance and insufficient decision value for a full article"},
+    {"date":"2026-08-10","headline":"Filene Announces a Money20/20 Partnership","reason":"conference partnership promotion rather than a completed material development"},
     {"date":"2026-08-07","headline":"African Diaspora Federal Credit Union Closes","reason":"authoritative and current, but a small-credit-union liquidation without a distinct AI, fintech or digital-operating development"},
     {"date":"2026-08-07","headline":"Visa Agrees to Acquire BioCatch","reason":"still material but already evaluated, inside a recent fraud-heavy coverage run and without a new credit-union implementation milestone"},
     {"date":"2026-08-07","headline":"UW Credit Union Selects Fiserv DNA Core","reason":"directly relevant but the evidence remained vendor-led and did not add an independently verifiable migration or operating milestone"},
@@ -496,6 +510,11 @@
     {
       "functionalArea": "lending-mortgage-collections",
       "opportunity": "A source-backed collections exception and borrower-assistance implementation guide",
+      "priority": "completed-2026-08-10"
+    },
+    {
+      "functionalArea": "vendor-management",
+      "opportunity": "An AI vendor exit, data-portability and model-transition playbook",
       "priority": "next"
     }
   ]
