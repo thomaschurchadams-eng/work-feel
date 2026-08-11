@@ -1163,7 +1163,7 @@ main h1 { line-height:1.15; }
 .alerts-more[hidden] { display:none; }
 .newsletter-value-grid { margin-top:28px; }
 .newsletter-value-grid .card { min-height:190px; }
-.newsletter-request-note { color:#dbe8f2; font-size:.9rem; margin-top:12px; max-width:580px; }\n.newsletter-email-fallback { margin-top:16px; color:#dbe8f2; font-size:.95rem; }\n.newsletter-email-fallback p { margin:4px 0; }\n.newsletter-email-fallback a { color:#fff; font-weight:700; text-decoration:underline; text-underline-offset:3px; overflow-wrap:anywhere; }
+.newsletter-request-note { color:#dbe8f2; font-size:.9rem; margin-top:12px; max-width:580px; }
 .intelligence-method { margin-top:32px; }
 .intelligence-method .button-row { margin-top:16px; }
 @media (max-width:900px) {
