@@ -3,6 +3,21 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "guardian-credit-union-data-breach-response",
+      "articleUrl": "/news/guardian-credit-union-data-breach-response.html",
+      "imagePath": "/assets/guardian-credit-union-data-breach-response.jpg",
+      "publishedAt": "2026-08-11T07:00:00-04:00",
+      "medium": "editorial-photography",
+      "subject": "physical-metaphor",
+      "composition": "wide-environmental",
+      "perspective": "eye-level",
+      "palette": "graphite-electric-yellow-burgundy",
+      "lighting": "high-contrast-studio",
+      "texture": "clean-photographic",
+      "scene": "three-clock-cyber-incident-response",
+      "conceptScore": 99.0
+    },
+    {
       "id": "credit-union-ai-collections-exception-playbook",
       "articleUrl": "/insight-credit-union-ai-collections-exception-playbook.html",
       "imagePath": "/assets/credit-union-ai-collections-exception-playbook.jpg",

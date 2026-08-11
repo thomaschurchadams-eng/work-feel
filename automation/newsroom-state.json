@@ -1,14 +1,27 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-10T07:00:00-04:00",
+  "lastStandardRun": "2026-08-11T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "A Stop-or-Continue Playbook for AI in Credit Union Collections",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-collections-exception-playbook.html",
-    "publishedAt": "2026-08-10T07:00:00-04:00",
-    "route": "insights"
+    "title": "Guardian Credit Union Breach Notice Puts Three Response Clocks in Focus",
+    "url": "https://creditunionainews.com/news/guardian-credit-union-data-breach-response.html",
+    "publishedAt": "2026-08-11T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {"date":"2026-08-11","headline":"Civic Federal Credit Union Is Classified as Undercapitalized","reason":"material financial-health development, but accessible evidence did not establish a distinct AI, fintech or digital-operating decision for a full article"},
+    {"date":"2026-08-11","headline":"Credit-Union Board Member Is Indicted in Elder-Fraud Case","reason":"current criminal allegation with limited technology decision value and no adjudicated findings"},
+    {"date":"2026-08-11","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative governance event, but it did not yet create a specific new operating obligation or technology decision"},
+    {"date":"2026-08-11","headline":"Credit Unions Seek Mortgage-Relief Flexibility From CFPB","reason":"relevant policy advocacy, but the request was not an enacted rule or agency implementation action"},
+    {"date":"2026-08-11","headline":"U1 Credit Union Launches MessagePay","reason":"directly relevant product announcement, but evidence was limited to institution and vendor claims without operating outcomes"},
+    {"date":"2026-08-11","headline":"Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion","reason":"current conversion update without a distinct technology, payments, fraud or member-experience milestone"},
+    {"date":"2026-08-11","headline":"Moody's Flags Rising AI Vendor Dependence","reason":"useful vendor-risk context, but broad banking analysis without a new credit-union event or primary-source implementation action"},
+    {"date":"2026-08-11","headline":"Data-Center Financing Raises New Credit-Risk Questions","reason":"material broader-market lending issue with limited immediate credit-union applicability and no institution-specific action"},
+    {"date":"2026-08-11","headline":"AI Does the Legwork While Humans Keep the Last Word","reason":"timely commentary rather than a new verifiable product, policy or operating development"},
+    {"date":"2026-08-11","headline":"Finovate Promotes a Credit Union Spotlight","reason":"event promotion rather than a completed material development"},
+    {"date":"2026-08-11","headline":"Chartway Receives a Top Workplaces Award","reason":"credible workforce recognition without a distinct AI, automation or operating decision"},
+    {"date":"2026-08-11","headline":"Credit-Union CD Rate Rankings Update","reason":"consumer rate snapshot without durable operating, technology or governance value for the publication"},
+    {"date":"2026-08-11","headline":"Eltropy and Industry Groups Promote AI Training Content","reason":"vendor and webinar promotion without a completed deployment, policy change or independently verified result"},
     {"date":"2026-08-10","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative and current, but the appointment did not yet create a distinct credit-union operating or technology decision"},
     {"date":"2026-08-10","headline":"America's Credit Unions Highlights AI Member-Service Results","reason":"recent industry roundup, but it repackaged previously announced deployments and vendor-supplied results without a new implementation event"},
     {"date":"2026-08-10","headline":"CU 2.0 Launches AI Coaching for Credit Unions","reason":"current but primarily a consultancy promotion with early benefit claims that were not independently verifiable"},

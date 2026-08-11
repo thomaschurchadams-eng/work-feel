@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "guardian-credit-union-data-breach-response",
+      "title": "Guardian Credit Union Breach Notice Puts Three Response Clocks in Focus",
+      "url": "/news/guardian-credit-union-data-breach-response.html",
+      "publishedAt": "2026-08-11T07:00:00-04:00",
+      "section": "news",
+      "beat": "it-data-cybersecurity",
+      "functions": ["it-data-cybersecurity", "risk-compliance", "operations", "member-service", "vendor-management"],
+      "technologies": ["privacy-security"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Cybersecurity and risk leaders",
+      "secondaryAudiences": ["legal and compliance leaders", "member-service leaders", "operations leaders", "vendor-management teams"],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "queued",
+      "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
+      "internalLinkTargets": ["/news/ai-vendor-due-diligence-checklist-credit-unions.html", "/news/rbfcu-impersonation-scam-regulation-e-investigations.html"],
+      "sourceTier": 1,
+      "score": 96.7
+    },
+    {
       "id": "credit-union-ai-collections-exception-playbook",
       "title": "A Stop-or-Continue Playbook for AI in Credit Union Collections",
       "url": "/insight-credit-union-ai-collections-exception-playbook.html",
