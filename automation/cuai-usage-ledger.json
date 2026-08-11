@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Operational workload attribution for CUAI agents; not exact OpenAI token, credit, or plan-percentage accounting.",
+  "usageAttributionDefault": "operational-proxy",
+  "entries": []
+}
