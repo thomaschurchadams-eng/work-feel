@@ -1,51 +1,63 @@
 # CUAI CEO Report
 
-**As of:** 2026-08-11T11:11:00-04:00
+**As of:** 2026-08-11T11:26:00-04:00
 
 ## System health
 
-**Healthy.** The latest `main` production deployment (`f877a9ddb4a8397fd16dfce9f81f73fbcdf08c14`) is READY, the Guardian article returns HTTP 200 from production, and Vercel reports no runtime errors in the prior 24 hours. The daily newsroom state is `article-complete`.
+**Degraded for measurement; production is healthy.** The current CUAI production deployment is READY and Vercel reports no runtime errors in the prior 24 hours. The daily newsroom cycle is complete and today's article is live. The measurement view is degraded because the current ChatGPT connector runtime exposes no Google Analytics reporting action, so GA4 could not be retrieved in this manual CEO run.
+
+## Data-source status
+
+- **GitHub:** Retrieved successfully — newsroom state, social queue, analytics policy, growth strategy and current reporting state.
+- **Buffer:** Retrieved successfully from the production `/api/buffer-metrics` endpoint using the current production commit.
+- **Vercel production/runtime:** Retrieved successfully — production is READY and no runtime errors were found in the prior 24 hours.
+- **GA4:** **Retrieval failure.** CUAI is instrumented for GA4 measurement ID `G-RF6EFK06G5`, but no `Google_Analytics` tool/action is exposed in the current ChatGPT connector runtime. This is a connector/reporting-surface blocker, not evidence of zero traffic and not evidence that the site instrumentation is missing.
+- **Vercel Web Analytics:** Metrics retrieval unavailable in this run because the exposed Vercel tools provide deployment/runtime access but no Web Analytics metrics action.
+- **Google Search Console:** Retrieval unavailable in this run because no Search Console reporting action is exposed in the current connector runtime.
 
 ## Newsroom output
 
 - Published: **Guardian Credit Union Breach Notice Puts Three Response Clocks in Focus** — https://creditunionainews.com/news/guardian-credit-union-data-breach-response.html
 - Route/classification: News; promotion priority High.
 - Selection work: 14 candidates evaluated across 8 beats.
-- Production: live article verified with canonical metadata, image, analytics tag and NewsArticle structured data.
-- LinkedIn: one CreditUnionAI News company-page item is scheduled for **11:30 a.m. ET on August 11**. Buffer created the item successfully; the ledger shows no duplicate and the image is attached.
+- LinkedIn: one CreditUnionAI News company-page post is scheduled for **11:30 a.m. ET on August 11** with the approved UTM-tagged distribution URL, image attached and no duplicate recorded.
 
 ## Reliability
 
-No material production incident is active. Today's publication, deployment and LinkedIn handoff all completed successfully.
+No material production incident is active. Publication, deployment and today's LinkedIn handoff completed successfully. The August 10 missed High-priority LinkedIn handoff was also successfully recovered by the current recovery path.
 
-A reliability/measurement issue remains worth diagnosing: the current Buffer metrics endpoint marks the August 10 post as UTM-tracked, but several older 28-day posts are reported as `utmTracked=false` even though the current social ledger contains UTM distribution URLs for them. That may reflect historical post text rather than a current scheduler defect. No automatic code change was made because root cause is not yet established.
-
-The August 10 missed-high-priority LinkedIn handoff was successfully recovered by the existing recovery path, providing evidence that the new recovery policy is functioning.
+The historical attribution diagnostic remains open: the Buffer feed recognizes the August 10 post as UTM-tracked while several older sent posts are `utmTracked=false` despite current ledger entries containing distribution URLs. Root cause is not established, so no scheduler or attribution code was changed blindly.
 
 ## Portfolio and growth
 
-The newsroom's next recorded coverage gap is **AI vendor exit, data portability and model-transition planning**.
+**GA4 unavailable this run**, so no claim is being made about LinkedIn sessions, article-engagement conversion or newsletter-intent conversion.
 
-Buffer's current 28-day company-page view contains 8 metrics-ready posts with **735 impressions, 534 reach and 5.81% mean engagement rate**. Distribution is highly concentrated: the July 22 and July 23 posts account for 656 of those 735 impressions. The only metrics-ready post in the latest 7-day window has **8 impressions, 5 reach and 12.5% engagement rate**. The strongest management signal is therefore weak recent reach, but the recent sample is too small to justify a structural timing/topic change. Today's Guardian post has not yet reached its 11:30 a.m. send time, so it has no mature performance data.
+Buffer's current 28-day view contains **8 metrics-ready posts, 735 impressions, 534 reach and 5.81% mean engagement rate**. The latest 7-day view contains only **1 metrics-ready post with 8 impressions, 5 reach and 12.5% engagement rate**. Performance is concentrated in the July 22 and July 23 posts, which account for most 28-day impressions. The actionable conclusion is not to extend baseline collection; it is to run a bounded distribution experiment while repairing joined-funnel measurement.
+
+## Active experiment
+
+**`linkedin-relevance-led-hook-2026-08-12` — Active.**
+
+Hypothesis: for otherwise-qualified High-priority stories, a concise LinkedIn opening that leads with the named institution/event, why it matters now and one concrete credit-union operating action will improve median reach and attributable site sessions without reducing engagement quality.
+
+Bounded change: apply this hook to the next **3** otherwise-qualified High-priority company-page posts after August 11. Existing posting times, one-post-per-day/five-per-week limits, UTM policy, images and editorial gates remain unchanged.
+
+Primary metric: median **GA4 LinkedIn sessions per post by `utm_content`** once GA4 reporting is available. Buffer impressions/reach and engagement rate are guardrails, not substitutes for GA4. Review after three metrics-ready experiment posts with GA4 attribution, or after 10 business days if GA4 remains blocked.
 
 ## Process evolution
 
-- The CEO management report and operational usage ledger are now the shared reporting surface for ChatGPT and Codex.
-- Reliability polling has been reduced to three weekday checkpoints (8 a.m., noon and 5 p.m. ET) to cut unnecessary agent usage while preserving the main failure windows.
-- Open diagnostic: determine why historical sent posts show mixed UTM-tracking status before changing attribution or scheduler code. Treat this as measurement investigation, not a confirmed production defect.
-
-**Next measurement checkpoint:** review the Guardian post after Buffer metrics mature and compare its reach/click attribution with the August 10 recovered post before changing distribution strategy.
+- **Baseline phase ended:** `automation/growth-strategy.json` has been changed from `baseline-collection` to `active-optimization`.
+- **Anti-stall rule:** insufficient sample can no longer be the only conclusion in two consecutive CEO reviews; the second review must execute a safe sample/measurement improvement action.
+- **Measurement priority:** GA4 reporting access and historical UTM attribution are now explicit diagnostics rather than reasons to postpone experimentation.
 
 ## Delegated work
 
-No specialist subagents were required for this manual CEO review. The review used the existing publisher output, GitHub operating state, Vercel production/runtime evidence and Buffer metrics directly.
+No specialist subagents were required for this run. The CEO used the existing publisher output, GitHub state, Buffer metrics and Vercel production/runtime evidence. A future analytics specialist may be delegated once a GA4 reporting action is available.
 
 ## Usage and workload
 
-This manual review records operational workload only; it is **not exact OpenAI token, credit, cost or percentage-of-Pro usage**.
-
-Observable workload included: today's publisher evaluating 14 candidates across 8 beats; 1 article publication; 1 successful LinkedIn scheduling attempt; CEO review of current repository/state and recent publishing history; production deployment verification; 1 runtime-error check; 1 live-article verification; and 1 Buffer metrics retrieval. No specialist subagents were spawned and the Reliability Watch has not yet recorded a scheduled run.
+Operational workload only — **not exact OpenAI tokens, credits, cost or percentage of the Pro allowance**. This run included GitHub strategy/state review, a fresh Buffer metrics query, GA4 connector discovery/retrieval attempt, Vercel runtime-health retrieval, one growth-strategy change and reporting updates. No specialist subagents were spawned.
 
 ## Tom decision required
 
-**None.** The system can continue operating under the current guardrails. The UTM-attribution inconsistency should be diagnosed automatically before any code change is considered.
+**None right now.** The system has moved into active optimization. The next scheduled CEO run must retry GA4 in its own runtime; if GA4 is also unavailable there, the missing reporting connector/access should be escalated as the specific blocker rather than resetting to baseline collection.

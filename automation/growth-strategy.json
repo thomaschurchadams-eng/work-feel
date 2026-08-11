@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T18:46:00Z",
-  "status": "baseline-collection",
+  "updatedAt": "2026-08-11T15:25:00Z",
+  "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
     "operationalDays": 7,
@@ -28,14 +28,40 @@
     "minimumMetricsReadyPostsForTimingRecommendation": 8,
     "minimumComparablePostsForFormatOrTopicAdjustment": 3,
     "minimumRepeatedPeriodsForStructuralChange": 2,
-    "rule": "Do not treat pending metrics, inaccessible analytics or one anomalous post as evidence for a structural change."
+    "rule": "Use imperfect but directionally useful evidence for reversible experiments. Do not treat pending metrics, inaccessible analytics or one anomalous post as evidence for a structural change. If insufficient sample blocks two consecutive CEO reviews, the second review must take a safe action to improve sample quality or measurement."
   },
-  "activeExperiments": [],
+  "activeExperiments": [
+    {
+      "id": "linkedin-relevance-led-hook-2026-08-12",
+      "status": "active",
+      "hypothesis": "For otherwise-qualified High-priority CUAI stories, opening the LinkedIn post with the named institution or event plus one immediate operating consequence will improve median reach and attributable site sessions versus the recent promoted-post cohort without reducing engagement quality.",
+      "evidence": [
+        "The current 28-day Buffer view contains 8 metrics-ready company-page posts with 735 total impressions and 534 reach, but performance is highly concentrated in the July 22 and July 23 posts.",
+        "The latest metrics-ready post has 8 impressions and 5 reach, indicating a current distribution problem worth testing rather than extending baseline collection.",
+        "GA4 reporting is instrumented but could not be retrieved in the 2026-08-11 manual CEO run because no Google Analytics reporting action is exposed in the current ChatGPT connector runtime."
+      ],
+      "boundedChange": "For the next 3 otherwise-qualified High-priority company-page posts after August 11, keep the existing schedule, frequency and editorial gates, but use a concise relevance-led opening: named institution/event -> why it matters now -> one concrete credit-union operating action. Preserve the approved UTM-tagged distributionUrl and existing image rules.",
+      "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content once GA4 reporting is available. Do not declare a winner from Buffer alone while GA4 is unavailable.",
+      "guardrailMetrics": [
+        "Buffer median impressions and reach",
+        "Buffer engagement rate",
+        "GA4 engaged-reader rate",
+        "GA4 90% scroll rate",
+        "GA4 newsletter-intent rate",
+        "one-post-per-day and five-per-week distribution limits"
+      ],
+      "startDate": "2026-08-12",
+      "reviewCondition": "Review after 3 experiment posts are metrics-ready in Buffer and have GA4 attribution, or after 10 business days if GA4 remains unavailable. If GA4 remains blocked at that point, connector/reporting recovery becomes the priority action rather than extending baseline collection.",
+      "rollback": "Remove this hook guidance and return to the prior copy framing. No schedule, credentials, editorial gates or publishing authority need to change."
+    }
+  ],
   "productionGuidance": {
     "priorityTopics": [],
     "priorityAudiences": [],
     "priorityFormats": [],
-    "linkedinHookGuidance": [],
+    "linkedinHookGuidance": [
+      "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12: for the next 3 otherwise-qualified High-priority LinkedIn posts after August 11, open concisely with the named institution/event, why it matters now, and one concrete credit-union operating action. Keep existing scheduling, UTM, editorial and image guardrails unchanged."
+    ],
     "articleOpeningGuidance": [],
     "visualGuidance": [],
     "conversionGuidance": [],
@@ -49,5 +75,13 @@
     "Do not change the fixed LinkedIn posting schedule automatically; recommend a schedule change only after the stated sample threshold is met.",
     "Never use personal data, names, email addresses, form values or free-form reader input in analytics or strategy decisions."
   ],
-  "decisionLog": []
+  "decisionLog": [
+    {
+      "timestamp": "2026-08-11T15:25:00Z",
+      "decision": "End indefinite baseline collection and begin active optimization with one bounded LinkedIn hook experiment.",
+      "evidence": "Eight Buffer posts are metrics-ready in the 28-day window, recent reach is weak, and waiting for a perfect sample has become an operating blocker. GA4 is instrumented but was unavailable to the manual CEO run because the current ChatGPT connector runtime exposes no Google Analytics reporting action.",
+      "uncertainty": "Historical UTM attribution is mixed and GA4 could not be retrieved in this run, so the experiment is reversible and site-session conclusions must wait for authoritative GA4 data.",
+      "nextCheckpoint": "Three metrics-ready experiment posts with GA4 attribution, or 10 business days if GA4 reporting remains blocked."
+    }
+  ]
 }
