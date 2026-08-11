@@ -2,5 +2,34 @@
   "schemaVersion": 1,
   "purpose": "Operational workload attribution for CUAI agents; not exact OpenAI token, credit, or plan-percentage accounting.",
   "usageAttributionDefault": "operational-proxy",
-  "entries": []
+  "entries": [
+    {
+      "timestamp": "2026-08-11T11:11:00-04:00",
+      "actor": "cuai-ceo",
+      "runType": "manual",
+      "trigger": "Tom requested the first CUAI CEO review immediately after initializing the reporting dashboard.",
+      "status": "success",
+      "workUnits": {
+        "publisherCandidatesEvaluated": 14,
+        "publisherBeatsSearched": 8,
+        "articlesPublished": 1,
+        "socialSchedulingAttempts": 1,
+        "socialSchedulingSuccesses": 1,
+        "recentCommitsReviewed": 8,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "liveArticleChecks": 1,
+        "bufferMetricsQueries": 1,
+        "specialistSubagentsSpawned": 0,
+        "reliabilityWatchScheduledRunsObserved": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer"
+      ],
+      "summary": "Reviewed today's completed newsroom cycle, verified the Guardian article live in production, confirmed the LinkedIn handoff is scheduled for 11:30 a.m. ET without duplication, checked Vercel for runtime errors, reviewed Buffer performance, and identified weak recent LinkedIn reach plus a historical UTM-attribution inconsistency for automatic diagnosis. No production failure required recovery.",
+      "usageAttribution": "operational-proxy"
+    }
+  ]
 }
