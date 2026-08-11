@@ -1,0 +1,61 @@
+# CUAI Agent Reporting Contract
+
+## Purpose
+
+Make CreditUnionAI News agent work visible, auditable, and easy to inspect from GitHub or the Codex desktop workspace without relying on ChatGPT task history.
+
+## Canonical management report
+
+The latest management view lives at:
+
+`automation/reports/cuai-ceo-latest.md`
+
+The CUAI CEO must refresh this file on each successful weekday CEO run. It is a rolling snapshot, not an append-only log.
+
+Required sections:
+
+- `As of` — ISO timestamp in America/New_York context.
+- `System health` — healthy, degraded, or blocked, with concrete evidence.
+- `Newsroom output` — latest article outcome, classification, live URL when present, validation/deployment state, and LinkedIn decision/status.
+- `Reliability` — incidents detected, recoveries completed, unresolved blockers, and repeated failure patterns.
+- `Portfolio and growth` — strongest evidence-backed coverage, audience, distribution, search, or analytics signal; distinguish immature/missing data from zero.
+- `Process evolution` — low-risk improvements made, experiments opened/closed, before/after behavior, and rollback instructions when a change was implemented.
+- `Delegated work` — specialist subagents or focused investigations used in the run and their outcome.
+- `Tom decision required` — only items that exceed existing authority or need access/approval. Write `None` when there is nothing to escalate.
+
+Keep this report concise enough to review in roughly five minutes.
+
+## Usage ledger
+
+The canonical CUAI activity ledger lives at:
+
+`automation/cuai-usage-ledger.json`
+
+This ledger is an operational attribution record, not a claim of exact OpenAI token or credit consumption. OpenAI plan usage may not expose exact per-task cost, so the ledger records observable workload that can be correlated with the native ChatGPT/Codex Usage dashboard.
+
+Each material CUAI agent run should append one entry containing:
+
+- `timestamp`
+- `actor` — e.g. `daily-publisher`, `cuai-ceo`, `reliability-watch`, or a named specialist subagent role
+- `runType` — scheduled, recovery, delegated-research, delegated-engineering, delegated-analysis, or manual
+- `trigger`
+- `status` — success, no-op, recovered, degraded, or blocked
+- `workUnits` — counts when known: searches, candidate evaluations, files changed, commits, deployments checked, social scheduling attempts, specialist subagents spawned
+- `externalSystemsTouched` — e.g. GitHub, Vercel, Buffer, Google Analytics, Search Console
+- `summary`
+- `usageAttribution` — always `operational-proxy` unless exact native per-run usage is actually retrieved from an authoritative OpenAI source
+
+Do not invent token counts, credit counts, percentage-of-plan figures, or cost estimates.
+
+## Reporting discipline
+
+1. Prefer existing evidence and current repository state over memory.
+2. Record no-op watchdog checks compactly; do not create noisy commits for every healthy hourly/polling check. The Reliability Watch should write only when it detects/recoveries a material issue, when a recurring failure pattern changes, or when the reporting/usage ledger needs a meaningful state transition.
+3. The CEO may aggregate multiple watchdog no-op checks into one daily usage entry rather than writing one repository commit per check.
+4. Preserve concurrent changes. Re-read `main` before writing.
+5. Use narrow, reversible changes. Never let reporting changes alter editorial or publishing authority.
+6. If GitHub writing is blocked, return the exact reporting blocker in the task result rather than silently omitting the report.
+
+## Codex desktop usage
+
+When the `work-feel` repository is open in Codex, the user can ask for the current CUAI management view by referencing `automation/reports/cuai-ceo-latest.md` and `automation/cuai-usage-ledger.json`. These files are the shared management surface between ChatGPT scheduled agents and Codex.
