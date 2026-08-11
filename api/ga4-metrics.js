@@ -166,25 +166,52 @@ async function runReport(config, token, body) {
   return mapReport(payload);
 }
 
-function dateRange(days) {
-  return [{ startDate: `${days - 1}daysAgo`, endDate: 'today' }];
+function dateRange(days, offsetDays = 0) {
+  return [{
+    startDate: `${days + offsetDays - 1}daysAgo`,
+    endDate: offsetDays === 0 ? 'today' : `${offsetDays}daysAgo`
+  }];
+}
+
+function searchConsoleRequest(dates) {
+  return {
+    dateRanges: dates,
+    dimensions: [{ name: 'organicGoogleSearchQuery' }],
+    metrics: [
+      { name: 'organicGoogleSearchClicks' },
+      { name: 'organicGoogleSearchImpressions' },
+      { name: 'organicGoogleSearchClickThroughRate' },
+      { name: 'organicGoogleSearchAveragePosition' }
+    ],
+    orderBys: [{ metric: { metricName: 'organicGoogleSearchImpressions' }, desc: true }],
+    limit: '50'
+  };
+}
+
+function overviewRequest(dates) {
+  return {
+    dateRanges: dates,
+    metrics: [
+      { name: 'activeUsers' },
+      { name: 'newUsers' },
+      { name: 'sessions' },
+      { name: 'engagedSessions' },
+      { name: 'engagementRate' },
+      { name: 'screenPageViews' },
+      { name: 'scrolledUsers' }
+    ]
+  };
+}
+
+async function queryOverviewWindow(config, token, days, offsetDays) {
+  const report = await runReport(config, token, overviewRequest(dateRange(days, offsetDays)));
+  return { days, offsetDays, overview: report.rows[0] || {} };
 }
 
 async function queryWindow(config, token, days) {
-  const dates = dateRange(days);
+  const dates = dateRange(days, 0);
   const [overview, acquisition, linkedin, events, pages] = await Promise.all([
-    runReport(config, token, {
-      dateRanges: dates,
-      metrics: [
-        { name: 'activeUsers' },
-        { name: 'newUsers' },
-        { name: 'sessions' },
-        { name: 'engagedSessions' },
-        { name: 'engagementRate' },
-        { name: 'screenPageViews' },
-        { name: 'scrolledUsers' }
-      ]
-    }),
+    runReport(config, token, overviewRequest(dates)),
     runReport(config, token, {
       dateRanges: dates,
       dimensions: [
@@ -255,18 +282,7 @@ async function queryWindow(config, token, days) {
   let searchConsole = null;
   let searchConsoleError = null;
   try {
-    searchConsole = await runReport(config, token, {
-      dateRanges: dates,
-      dimensions: [{ name: 'landingPage' }],
-      metrics: [
-        { name: 'organicGoogleSearchClicks' },
-        { name: 'organicGoogleSearchImpressions' },
-        { name: 'organicGoogleSearchClickThroughRate' },
-        { name: 'organicGoogleSearchAveragePosition' }
-      ],
-      orderBys: [{ metric: { metricName: 'organicGoogleSearchImpressions' }, desc: true }],
-      limit: '50'
-    });
+    searchConsole = await runReport(config, token, searchConsoleRequest(dates));
   } catch (error) {
     searchConsoleError = {
       code: error.code || 'search_console_unavailable',
@@ -326,9 +342,14 @@ module.exports = async function handler(req, res) {
 
   try {
     const token = await getAccessToken(config);
-    const [sevenDay, twentyEightDay] = await Promise.all([
-      queryWindow(config, token, 7),
-      queryWindow(config, token, 28)
+    // Keep each detail window below GA4's concurrent-request ceiling.
+    const sevenDay = await queryWindow(config, token, 7);
+    const twentyEightDay = await queryWindow(config, token, 28);
+    const ninetyDay = await queryWindow(config, token, 90);
+    const [priorSevenDay, priorTwentyEightDay, priorNinetyDay] = await Promise.all([
+      queryOverviewWindow(config, token, 7, 7),
+      queryOverviewWindow(config, token, 28, 28),
+      queryOverviewWindow(config, token, 90, 90)
     ]);
 
     return res.status(200).json({
@@ -337,7 +358,8 @@ module.exports = async function handler(req, res) {
       source: 'google-analytics-data-api',
       propertyId: config.propertyId,
       privacy: 'Aggregate reporting only. The endpoint does not return names, emails, form values, client IDs, user IDs or free-form reader input.',
-      windows: { sevenDay, twentyEightDay }
+      windows: { sevenDay, twentyEightDay, ninetyDay },
+      comparisons: { priorSevenDay, priorTwentyEightDay, priorNinetyDay }
     });
   } catch (error) {
     const status = error.code === 'ga4_property_access_denied' ? 403 : 502;
@@ -348,3 +370,5 @@ module.exports = async function handler(req, res) {
     });
   }
 };
+
+module.exports._test = { dateRange, searchConsoleRequest, overviewRequest };
