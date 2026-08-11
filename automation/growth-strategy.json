@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T15:25:00Z",
+  "updatedAt": "2026-08-11T16:57:00Z",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -38,10 +38,10 @@
       "evidence": [
         "The current 28-day Buffer view contains 8 metrics-ready company-page posts with 735 total impressions and 534 reach, but performance is highly concentrated in the July 22 and July 23 posts.",
         "The latest metrics-ready post has 8 impressions and 5 reach, indicating a current distribution problem worth testing rather than extending baseline collection.",
-        "GA4 reporting is instrumented but could not be retrieved in the 2026-08-11 manual CEO run because no Google Analytics reporting action is exposed in the current ChatGPT connector runtime."
+        "GA4 reporting is live through the privacy-safe production endpoint. The current 28-day window records 10 LinkedIn campaign sessions at 20% engagement; the current 7-day window records 1 LinkedIn session and no engaged LinkedIn session."
       ],
       "boundedChange": "For the next 3 otherwise-qualified High-priority company-page posts after August 11, keep the existing schedule, frequency and editorial gates, but use a concise relevance-led opening: named institution/event -> why it matters now -> one concrete credit-union operating action. Preserve the approved UTM-tagged distributionUrl and existing image rules.",
-      "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content once GA4 reporting is available. Do not declare a winner from Buffer alone while GA4 is unavailable.",
+      "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content. Target at least 2 sessions per experiment post, median Buffer reach of 12 or more, and median Buffer engagement rate of at least 5% by 2026-08-21.",
       "guardrailMetrics": [
         "Buffer median impressions and reach",
         "Buffer engagement rate",
@@ -51,7 +51,7 @@
         "one-post-per-day and five-per-week distribution limits"
       ],
       "startDate": "2026-08-12",
-      "reviewCondition": "Review after 3 experiment posts are metrics-ready in Buffer and have GA4 attribution, or after 10 business days if GA4 remains unavailable. If GA4 remains blocked at that point, connector/reporting recovery becomes the priority action rather than extending baseline collection.",
+      "reviewCondition": "Execute 3 otherwise-qualified High-priority experiment posts by 2026-08-18 and review preliminary GA4 attribution on 2026-08-18. Make the outcome decision on 2026-08-21 using median sessions per post, reach and engagement; do not extend the experiment solely to collect another baseline.",
       "rollback": "Remove this hook guidance and return to the prior copy framing. No schedule, credentials, editorial gates or publishing authority need to change."
     }
   ],
