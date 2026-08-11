@@ -39,6 +39,34 @@ The read-only production endpoint `/api/buffer-metrics` returns the prior 28 day
 
 Buffer refreshes post metrics approximately daily. A recent post with no metrics or a null `metricsUpdatedAt` is pending, not a zero-performance post.
 
+## GA4 reporting feed
+
+The read-only endpoint `/api/ga4-metrics?commitSha=<CURRENT_PRODUCTION_COMMIT_SHA>` queries the Google Analytics Data API and returns privacy-safe aggregate 7-day and 28-day views for the CEO/growth loop.
+
+It reports:
+
+- site active users, new users, sessions, engaged sessions, engagement rate and page views;
+- acquisition by session source, medium and campaign;
+- LinkedIn sessions by `utm_content` using GA4's `sessionManualAdContent`, filtered to `linkedin / organic_social / cuai_news`;
+- CUAI editorial event totals (`article_view`, `engaged_reader`, `scroll_depth`, `source_click`, `related_content_click`, `newsletter_intent`, `outbound_click`);
+- page-level views, users, 90% scrolled users and engagement duration;
+- Search Console landing-page metrics when the GA4 property has an active Search Console link and the requested fields are available.
+
+The endpoint never returns service-account secrets, client IDs, user IDs, names, email addresses, form values or free-form reader input. It rejects requests that do not supply the exact deployed Git commit SHA.
+
+### Required Vercel environment
+
+The reporting endpoint requires:
+
+- `GA4_PROPERTY_ID` — the numeric GA4 property ID (not the `G-...` measurement ID), and
+- either `GA4_SERVICE_ACCOUNT_JSON`, or both `GA4_CLIENT_EMAIL` and `GA4_PRIVATE_KEY`.
+
+The Google Cloud project behind the service account must have the Google Analytics Data API enabled. Add the service-account email to the CUAI GA4 property with read-only Viewer access. Keep credentials only in Vercel environment variables; never commit them to GitHub.
+
+If configuration is absent, `/api/ga4-metrics` returns `ga4_reporting_not_configured` with only the missing configuration categories. If the service account lacks property access, it returns `ga4_property_access_denied`. The CEO must treat either result as a reporting blocker, never as zero traffic.
+
+GA4's built-in `scrolledUsers` metric represents users reaching at least 90% of a page. CUAI's custom 50% scroll event can be counted as `scroll_depth`, but a reliable 50%-versus-90% Data API breakout requires the threshold event parameter to be registered as a GA4 custom dimension.
+
 ## Weekly growth review
 
 Analyze the full path:
