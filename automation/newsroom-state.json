@@ -1,14 +1,28 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-11T07:00:00-04:00",
+  "lastStandardRun": "2026-08-12T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Guardian Credit Union Breach Notice Puts Three Response Clocks in Focus",
-    "url": "https://creditunionainews.com/news/guardian-credit-union-data-breach-response.html",
-    "publishedAt": "2026-08-11T07:00:00-04:00",
-    "route": "news"
+    "title": "An AI Vendor Exit Playbook for Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-vendor-exit-playbook.html",
+    "publishedAt": "2026-08-12T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {"date":"2026-08-12","headline":"Civic Federal Credit Union Is Classified as Undercapitalized","reason":"material financial-health development, but the available evidence did not establish a distinct AI, fintech or digital-operating decision"},
+    {"date":"2026-08-12","headline":"Credit-Union Board Member Is Indicted in Elder-Fraud Case","reason":"a criminal allegation without adjudicated findings and limited technology decision value"},
+    {"date":"2026-08-12","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative governance news, but no specific new operating obligation or technology decision followed"},
+    {"date":"2026-08-12","headline":"Credit Unions Seek Mortgage-Relief Flexibility From CFPB","reason":"relevant advocacy, but the request was not an enacted rule or implementation action"},
+    {"date":"2026-08-12","headline":"U1 Credit Union Launches MessagePay","reason":"relevant product announcement supported mainly by institution and vendor claims without operating outcomes"},
+    {"date":"2026-08-12","headline":"Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion","reason":"current conversion update without a distinct digital, payments or member-experience milestone"},
+    {"date":"2026-08-12","headline":"Moody's Flags Rising AI Vendor Dependence","reason":"useful banking context without a new credit-union event or primary-source implementation action"},
+    {"date":"2026-08-12","headline":"Data-Center Financing Raises New Credit-Risk Questions","reason":"broader-market lending issue with limited immediate credit-union applicability"},
+    {"date":"2026-08-12","headline":"RBI Governor Says AI Can Transform Lending","reason":"non-U.S. policy commentary without a direct credit-union operating action"},
+    {"date":"2026-08-12","headline":"Moneyling Promotes AI Financial Planning Beyond General Chatbots","reason":"vendor content marketing rather than a verified deployment or policy event"},
+    {"date":"2026-08-12","headline":"Young Professionals Summit Adds an AI Session","reason":"event promotion rather than a completed material development"},
+    {"date":"2026-08-12","headline":"NASCUS Promotes Its State System Summit","reason":"event promotion without a new supervisory action"},
+    {"date":"2026-08-12","headline":"CCUA Promotes Accessibility Financial Education","reason":"useful training topic but not an article-grade current development"},
+    {"date":"2026-08-12","headline":"League Promotes a Wild West of AI Webinar","reason":"event promotion rather than a completed material development"},
     {"date":"2026-08-11","headline":"Civic Federal Credit Union Is Classified as Undercapitalized","reason":"material financial-health development, but accessible evidence did not establish a distinct AI, fintech or digital-operating decision for a full article"},
     {"date":"2026-08-11","headline":"Credit-Union Board Member Is Indicted in Elder-Fraud Case","reason":"current criminal allegation with limited technology decision value and no adjudicated findings"},
     {"date":"2026-08-11","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative governance event, but it did not yet create a specific new operating obligation or technology decision"},
@@ -528,6 +542,11 @@
     {
       "functionalArea": "vendor-management",
       "opportunity": "An AI vendor exit, data-portability and model-transition playbook",
+      "priority": "completed-2026-08-12"
+    },
+    {
+      "functionalArea": "member-service",
+      "opportunity": "An AI accessibility and disability-inclusive member-service testing playbook",
       "priority": "next"
     }
   ]

@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-vendor-exit-playbook",
+      "title": "An AI Vendor Exit Playbook for Credit Unions",
+      "url": "/insight-credit-union-ai-vendor-exit-playbook.html",
+      "publishedAt": "2026-08-12T07:00:00-04:00",
+      "section": "insights",
+      "beat": "vendor-management",
+      "functions": ["vendor-management", "it-data-cybersecurity", "risk-compliance", "operations", "finance-treasury", "executive-governance"],
+      "technologies": ["agents-automation"],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor-management and technology leaders",
+      "secondaryAudiences": ["risk and compliance leaders", "operations leaders", "finance and treasury leaders", "executives and board leaders"],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "not-created-library-priority",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 not applied because Library articles are not promoted on LinkedIn",
+      "internalLinkTargets": ["/news/ai-vendor-due-diligence-checklist-credit-unions.html", "/insight-credit-union-ai-business-case-framework.html"],
+      "sourceTier": 1,
+      "score": 98.1
+    },
+    {
       "id": "guardian-credit-union-data-breach-response",
       "title": "Guardian Credit Union Breach Notice Puts Three Response Clocks in Focus",
       "url": "/news/guardian-credit-union-data-breach-response.html",
