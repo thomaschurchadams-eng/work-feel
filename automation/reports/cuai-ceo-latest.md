@@ -1,76 +1,104 @@
 # CUAI CEO Report
 
-**As of:** 2026-08-11T12:57:00-04:00
-**Operating posture:** Act now against the live 7-day baseline; do not wait for another baseline.
+**As of:** 2026-08-12T09:50:00-04:00  
+**Operating posture:** Active optimization. Volume is accelerating; engagement depth and LinkedIn reach are the current constraints.
 
 ## Desktop dashboard
 
 | Area | Current evidence | Goal and deadline | Owner / next review |
 |---|---|---|---|
-| System | Production `c57d0a3` READY; GA4 and Buffer endpoints HTTP 200; no Vercel runtime errors in 24h | Keep production READY, endpoints `ok=true`, and zero unresolved runtime-error clusters through Aug. 18 | Reliability Watch / Aug. 12 daily check; CEO Aug. 18 |
-| Publishing | 15 complete article cycles, 15 articles, 8 alerts and 161 candidates evaluated since July 20 | Publish 5 validated weekday articles by Aug. 18; 100% complete deployment/live checks; preserve one-article-per-day policy | Daily Publisher / Aug. 18 |
-| LinkedIn | 9 metrics-ready posts: 735 impressions, 534 reach, 5.17% mean engagement; only 10 attributable GA4 sessions in 28d and 1 in 7d | Run 3 relevance-led posts by Aug. 18; median reach >=12, median GA4 sessions/post >=2, engagement >=5% by Aug. 21 | Distribution Agent / Aug. 18 and Aug. 21 |
-| GA4 growth | 7d: 40 users, 59 sessions, 122 views, 17 engaged sessions, 28.8% engagement, 6 90%-scrollers | By Aug. 18: >=50 users, >=70 sessions, >=150 views, >=24 engaged sessions, >=34% engagement, >=10 90%-scrollers | Growth Agent / Aug. 18 |
-| Conversion | 7d newsletter intent 0; source clicks 1. 28d newsletter intent 13 events/5 users | By Aug. 18: >=4 newsletter-intent events from >=3 users and >=3 source clicks | Conversion Agent / Aug. 18 |
-| Acquisition | 28d direct 163/197 sessions (82.7%); Google 13 sessions at 61.5% engagement; LinkedIn 10 at 20% | Reduce direct share to <=78% and raise Google + LinkedIn to >=30 combined sessions in the rolling 28d by Aug. 31 | Growth + SEO Agents / Aug. 18 checkpoint; Aug. 31 decision |
+| System | Production `1b83f57` READY; GA4 and Buffer endpoints HTTP 200/`ok=true`; no Vercel runtime errors in 24h | Keep production READY, both endpoints healthy, and zero unresolved production incidents >1 hour through Aug. 18 | Reliability Watch / Aug. 13 |
+| Publishing | Aug. 12 Library Insight live: **An AI Vendor Exit Playbook for Credit Unions**; 14 candidates evaluated; no LinkedIn item created by policy | Complete 5/5 weekday cycles through Aug. 18 with 100% deployment/live validation and no forced High classification | Daily Publisher / Aug. 13 |
+| GA4 growth | 7d: 46 users, 67 sessions, 172 views, 15 engaged sessions, 22.4% engagement, 8 90%-scrollers. 28d: 122 users, 206 sessions, 547 views, 73 engaged sessions, 35.4% engagement, 28 90%-scrollers | By Aug. 18: >=55 users, >=80 sessions, >=190 views, >=22 engaged sessions, >=30% engagement, >=10 90%-scrollers | Growth Agent / Aug. 13 |
+| LinkedIn | 7d: 2 metrics-ready posts, 19 impressions, 11 reach, 10.8% mean Buffer engagement; GA4 3 attributed sessions and 0 engaged sessions. 28d: 9 posts, 746 impressions, 540 reach, 12 attributed sessions, 2 engaged | Execute the 3-post relevance-led experiment on the next otherwise-qualified High posts; by Aug. 21 median reach >=12, median GA4 sessions/post >=2, Buffer engagement >=5%, and >=1 engaged LinkedIn session across the cohort | Distribution Agent / Aug. 13 and Aug. 21 |
+| Conversion | 7d newsletter intent: 37 events from only 3 users; source clicks: 1. 28d: 50 intent events from 6 users | By Aug. 18: >=5 unique newsletter-intent users and >=3 source clicks in the rolling 7d; treat repeated events from the same user as concentration, not conversion growth | Conversion Agent / Aug. 13 |
+| Acquisition | Direct is 57/67 sessions (85.1%) in 7d and 171/206 (83.0%) in 28d. Google: 6 weekly sessions at 66.7% engagement. LinkedIn: 3 weekly sessions at 0% engagement | By Aug. 31 reduce direct share to <=78% and raise Google + LinkedIn to >=30 combined rolling-28d sessions | Growth + SEO / Aug. 18 checkpoint |
 
 ## System health
 
-**Healthy.** The current production deployment is READY on commit `c57d0a39447b7bbca27433e360f817981b027cdc`. The privacy-safe GA4 and Buffer feeds both returned HTTP 200 with `ok=true`; Vercel found no runtime-error clusters in the prior 24 hours. Production logs include five 200s plus two 403s and one 503 from the earlier commit-guard/configuration setup; the credential and property configuration were auto-fixed by adding the read-only GA4 service account and redeploying the same production commit. The live feed now proves recovery.
+**Healthy core system; measurement partially degraded.** The latest production deployment is READY on `1b83f5719e6853207a7979990e4cd18cbfdf434c`. The live GA4 endpoint returned HTTP 200 with property `520110560`; the live Buffer endpoint returned HTTP 200; Vercel reported no runtime-error clusters in the prior 24 hours. Search Console remains unavailable inside the GA4 feed because the optional Search Console dimension/metric request is incompatible; the current connector runtime does not expose a direct Search Console reporting action. Vercel production/runtime health is available, but this runtime does not expose Vercel Web Analytics visitor/referrer reports.
 
-## Newsroom output and historical performance
+## Newsroom output and portfolio
 
-- Latest: **Guardian Credit Union Breach Notice Puts Three Response Clocks in Focus** — https://creditunionainews.com/news/guardian-credit-union-data-breach-response.html
-- Classification/audience: News; High priority; cybersecurity and risk leaders.
-- LinkedIn: sent August 11 at 11:30 a.m. ET with approved UTM and image; no duplicate.
-- Repository history since July 20: **15 complete article cycles, 15 full articles, 8 alerts and 161 evaluated candidates**. This is the available publishing-history baseline.
-- The GA4 endpoint exposes only rolling **7-day and 28-day** windows. Trailing 90-day, immediately prior-period and year-over-year comparisons are unavailable in the current endpoint; that limits comparison depth but does not block the goals or assignments below.
+- **Published Aug. 12:** [An AI Vendor Exit Playbook for Credit Unions](https://creditunionainews.com/insight-credit-union-ai-vendor-exit-playbook.html).
+- Classification: **Insights / Library**, vendor-management and technology leaders, source tier 1, score 98.1.
+- Social decision: `not-created-library-priority`; the active LinkedIn hook experiment was correctly not applied because Library articles are not promoted.
+- The live article, canonical metadata, analytics tag and page load were verified HTTP 200.
+- Since July 20, the available operating history now represents **16 completed article cycles, 16 full articles, 8 alerts and 175 evaluated candidates**.
+- The newsroom's next stated coverage gap is **AI accessibility and disability-inclusive member-service testing**. This is a portfolio signal, not an instruction to force an article without evidence.
 
 ## GA4 growth and audience quality
 
-| Metric | 7 days | 28 days | 7d versus 28d weekly pace |
+| Metric | 7 days | 28 days | 7d vs 28d weekly pace |
 |---|---:|---:|---:|
-| Active users | 40 | 116 | +38% |
-| New users | 38 | 113 | +35% |
-| Sessions | 59 | 197 | +20% |
-| Page views | 122 | 492 | -1% |
-| Engaged sessions | 17 | 73 | -7% |
-| Engagement rate | 28.8% | 37.1% | -8.2 points |
-| 90% scrollers | 6 | 28 | -14% |
+| Active users | 46 | 122 | +50.8% |
+| Sessions | 67 | 206 | +30.1% |
+| Page views | 172 | 547 | +25.8% |
+| Engaged sessions | 15 | 73 | -17.8% |
+| Engagement rate | 22.4% | 35.4% | -13.0 pts |
+| 90% scrollers | 8 | 28 | +14.3% |
 
-Audience acquisition is accelerating, but depth is not. The homepage produced 80 of 122 weekly views (65.6%), so the immediate conversion job is moving homepage visitors into articles and newsletter intent. Google organic is the highest-quality meaningful channel at 66.7% weekly engagement. LinkedIn produced one weekly session with no engaged session.
+The audience is growing faster than the 28-day weekly pace, but the new volume is shallower. The homepage still dominates entry behavior: 88 of 172 weekly page views. Newsletter traffic also jumped to 39 weekly views, but 37 newsletter-intent events came from only three users, so event count alone is not a credible conversion KPI.
 
-Promising content signals are actionable now: both users on the Senate AI hearing article reached 90% scroll; the Communication FCU/Scienaptic article produced 408 seconds of 28-day engagement across three users; the RBFCU article reached four users but only one 90%-scroller. Use these as hook and internal-link inputs, not as reasons to narrow editorial coverage.
+Google organic remains the strongest meaningful acquisition quality signal: 6 weekly sessions with 66.7% engagement. Direct remains too dominant at 85.1% of weekly sessions, indicating attribution and discoverability still need work.
 
-## LinkedIn and publishing priorities
+## LinkedIn joined funnel
 
-The 28-day Buffer cohort has **9 metrics-ready posts, 735 impressions, 534 reach, one reaction, zero comments and zero shares**. Distribution is highly concentrated: the July 23 Communication FCU post generated 426 impressions/332 reach and the July 22 EricaAssist post 230/165. The recent two-post window generated only 8 impressions and 5 reach. GA4 records 10 campaign-attributed LinkedIn sessions in 28 days at 20% engagement.
+The 7-day Buffer cohort has two metrics-ready posts: 19 impressions, 11 reach and 10.8% mean engagement. Those posts generated 3 GA4 LinkedIn campaign sessions and zero engaged sessions. The current issue is therefore **reach first, qualified onsite engagement second**.
 
-The existing relevance-led hook experiment remains active, but it now has hard deadlines: publish the next three otherwise-qualified High-priority posts with the named institution/event, immediate operating consequence and one concrete action; preserve the schedule, UTM, image and editorial gates. Success by Aug. 21 is median reach >=12, median attributable sessions >=2 per post and median engagement >=5%.
+The 28-day Buffer cohort has 9 metrics-ready posts, 746 impressions and 540 reach. Performance is extremely concentrated: the July 22 EricaAssist and July 23 Communication FCU posts account for 87.9% of impressions and 92.0% of reach. The recent two-post cohort has higher percentage engagement but a tiny audience base, so percentage engagement must not be mistaken for distribution recovery.
 
-## Auto-fixes and improvements
+Reliability Watch fixed a material measurement false negative this morning: PR #119 now reconciles approved repository UTMs when Buffer does not echo the exact sent URL, and PR #120 records the recovery. The July 22 EricaAssist post remains correctly untracked because no historical repository distribution URL exists; do not invent one retroactively.
 
-- **Completed:** created minimum read-only GA4 service-account access, enabled the Analytics Data API, stored credentials as sensitive Production-only Vercel variables, redeployed the unchanged production commit, and verified HTTP 200/`ok=true`.
-- **Open automatic fix:** split the incompatible Search Console dimension/metric request so organic clicks, impressions, CTR and position can be retrieved without degrading GA4. Deadline Aug. 14; rollback is removal of the optional Search Console subquery only.
-- **Open measurement improvement:** register the scroll-threshold parameter as a GA4 custom dimension or document why the existing event cannot support a reliable 50%/90% split. Deadline Aug. 17; do not change the measurement tag.
-- **Open attribution cleanup:** reconcile the seven older Buffer records marked `utmTracked=false` with their repository distribution URLs, without rewriting sent posts. Deadline Aug. 14.
+## Experiment
 
-## CEO priorities and agent commitments
+**Active:** `linkedin-relevance-led-hook-2026-08-12`.
 
-| Priority | Owner / role | Commitment | Deadline | Success metric | Next review |
-|---|---|---|---|---|---|
-| 1 | Growth Agent | Improve homepage-to-article paths and apply high-relevance internal links to the current top entry surfaces | Aug. 14 | Weekly article views >=30 and homepage share <=60% | Aug. 18 |
-| 2 | Distribution Agent | Execute 3 relevance-led LinkedIn posts with intact UTMs and no duplicates | Aug. 18 | Median reach >=12; median GA4 sessions/post >=2; engagement >=5% by Aug. 21 | Aug. 18/21 |
-| 3 | Conversion Agent | Strengthen newsletter CTA placement on homepage and high-engagement articles using existing approved behavior | Aug. 14 | >=4 weekly intent events from >=3 users by Aug. 18 | Aug. 18 |
-| 4 | Analytics Engineer | Repair optional Search Console query compatibility and add 90d/prior-period windows to the endpoint if quota-compatible | Aug. 14 | Search Console returns data or a clean no-data result; 90d and prior-period fields covered by tests | Aug. 14 |
-| 5 | Analytics Engineer | Resolve/document the 50% scroll custom-dimension path | Aug. 17 | Report exposes reliable 50% and 90% depth, or records the exact non-destructive blocker | Aug. 18 |
-| 6 | Reliability Watch | Check GA4/Buffer endpoint health, production deployment and runtime errors daily | Daily through Aug. 18 | 100% checks completed; zero unresolved production incidents >1 hour | Aug. 18 |
-| 7 | Daily Publisher | Maintain one validated weekday article while applying experiment guidance only to eligible High-priority posts | Aug. 18 | 5/5 weekday cycles complete; 100% deployment/live validation | Aug. 18 |
+No experiment post has yet qualified after the Aug. 12 start. For the next three otherwise-qualified High-priority company-page posts, preserve the fixed schedule and editorial gates but open with: named institution/event -> why it matters now -> one concrete operating action. Review preliminary results Aug. 18 and make the outcome decision Aug. 21. Do not manufacture High-priority stories merely to fill the experiment.
 
-## Agent activity and usage
+## Auto-fixes and process evolution
 
-This delegated CEO run reviewed the reporting contract, newsroom state, growth strategy, social queue and historical cycle ledger; queried live GA4 and Buffer; checked Vercel production logs and runtime errors; and updated the CEO report, growth state and operational usage ledger. Usage is an **operational proxy**, not a claim of exact OpenAI tokens, credits, plan percentage or cost. No specialist subagents were spawned inside this run.
+- **Completed today:** Buffer UTM reconciliation false negatives were repaired, regression-tested, preview-validated, merged in PR #119 and verified in production; the recovery was recorded in PR #120.
+- **Do not merge stale draft PR #118 wholesale.** It contains useful unsuperseded analytics work, but its UTM reconciliation changes are now superseded by PR #119 and its base is stale. Extract only the 90-day/prior-period reporting and Search Console work into a fresh narrow branch from current `main`.
+- **Measurement quality:** the GA4 feed still reports Search Console incompatibility and lacks a reliable 50% scroll breakout. Preserve the existing `scrolledUsers` historical 90% series; any custom 50% series must start prospectively after a valid custom-definition path is confirmed.
 
-## Tom decision required
+## CEO priorities
 
-**No decision is required from Tom.** All current work fits existing authority. Agents have the assignments above; the next CEO review is **August 18, 2026**, with an interim engineering/attribution checkpoint on **August 14** and LinkedIn outcome checkpoint on **August 21**.
+1. **Recover engagement depth while preserving traffic growth.** Volume is ahead of the 28-day pace, but engaged-session pace is down 17.8% and engagement rate is down 13 points.
+2. **Fix distribution reach, not just post copy.** Recent LinkedIn engagement percentages are acceptable on very small denominators; reach and qualified GA4 sessions are the binding constraint.
+3. **Finish the measurement layer cleanly.** Separate the useful historical/Search Console work from stale PR #118 and validate it against current production without touching credentials or the measurement tag.
+
+## Agent commitments
+
+| Owner | Commitment | Deadline | Success metric | Next review |
+|---|---|---|---|---|
+| Daily Publisher | Complete the next weekday article cycle using current coverage gaps and growth guidance only among otherwise-qualified candidates | Aug. 13 | One validated article or a documented quality-gated no-publication outcome; 100% live/deployment checks | Aug. 13 |
+| Growth Agent | Improve homepage-to-article continuation and prioritize high-depth internal paths without narrowing editorial coverage | Aug. 14 | Rolling 7d engaged sessions >=20 and engagement rate >=28% at interim checkpoint | Aug. 13 |
+| Conversion Agent | Audit newsletter-intent concentration and use unique intent users as the primary conversion signal | Aug. 14 | Determine whether repeated events are expected user behavior/QA noise; no PII; rolling 7d unique intent users >=5 by Aug. 18 | Aug. 13 |
+| Distribution Agent | Apply the relevance-led hook to every otherwise-qualified High post until the three-post cohort is complete | Aug. 18 | Median reach >=12; median GA4 sessions/post >=2; Buffer engagement >=5%; >=1 engaged LinkedIn session by Aug. 21 | Aug. 13 / Aug. 21 |
+| Analytics Engineer | Rebase only the unsuperseded historical-window/Search Console work from draft PR #118 onto current `main`; leave UTM work out | Aug. 14 | Fresh narrow PR; regression tests pass; preview READY; after safe merge GA4 remains HTTP 200 and returns 90d/prior aggregates plus Search Console data or a clean isolated no-data/error result | Aug. 14 |
+| Reliability Watch | Continue production, GA4, Buffer and runtime checks and recover only material failures | Daily | Zero unresolved material incidents >1 hour; no duplicate social scheduling | Aug. 13 |
+
+## Delegated work and agent activity
+
+- **Daily Publisher:** evaluated 14 candidates across the current cycle and published one Library Insight; no social handoff was appropriate.
+- **Reliability Watch:** detected and recovered the Buffer UTM reporting false-negative pattern, added a regression test, merged PR #119 and recorded the recovery in PR #120.
+- **CUAI CEO:** reviewed the current operating policy, analytics contract, growth strategy, newsroom/coverage/source state, social queue, recent commits, prior CEO report and usage ledger; queried live GA4 and Buffer; checked production deployment/runtime health; verified today's live article; reviewed stale draft PR #118 for unsuperseded work.
+- **Specialist subagents spawned:** 0 in this run.
+
+## Data-source status
+
+- **GA4 endpoint:** retrieved successfully, HTTP 200 / `ok=true`, property `520110560`.
+- **Buffer:** retrieved successfully, HTTP 200 / `ok=true`, 9/9 metrics-ready posts in 28d.
+- **Vercel production/runtime:** retrieved successfully; current production READY, no 24h runtime errors.
+- **Search Console:** not retrieved; GA4 optional query returns an incompatible dimension/metric error and no direct reporting action is exposed in this runtime.
+- **Vercel Web Analytics:** not retrieved; current Vercel connector exposes deployment/runtime observability but not Web Analytics visitor/referrer metrics.
+- **GitHub:** retrieved successfully from current `main`.
+
+## Usage
+
+Usage remains an **operational proxy**, not exact OpenAI tokens, credits, plan percentage or cost. Observable workload for this CEO run: 11 management/evidence files reviewed, 12 recent commits reviewed, 14 publisher candidates represented, 1 GA4 query, 1 Buffer query, 1 production deployment check, 1 runtime-error check, 1 live-article verification and 1 open analytics PR reviewed. No specialist subagents were spawned.
+
+## Decisions required from Tom
+
+**None.** Current priorities and assignments fit existing authority. Do not ask Tom to repair GA4, UTMs, Search Console or distribution mechanics unless a future run proves that access or authority is genuinely required.
