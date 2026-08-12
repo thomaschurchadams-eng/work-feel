@@ -87,6 +87,36 @@
       ],
       "summary": "Produced the first fully live GA4-backed CUAI CEO operating report. Confirmed production and both reporting endpoints healthy; analyzed 7-day and 28-day acquisition, engagement, content, conversion and LinkedIn data; incorporated the full available publishing history; identified unavailable 90-day, prior-period and year-over-year comparisons without blocking action; set dated numerical goals; and assigned concrete work to publishing, distribution, growth, conversion, analytics and reliability roles.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-12T08:10:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability check found the production Buffer metrics feed falsely labeling repository-UTM-tagged CUAI LinkedIn posts as untracked because it required the exact distribution URL to appear in Buffer's returned post text.",
+      "status": "recovered",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "socialQueueChecks": 1,
+        "liveArticleChecks": 1,
+        "homepageChecks": 1,
+        "runtimeErrorChecks": 1,
+        "bufferMetricsQueries": 3,
+        "productionDeploymentChecks": 2,
+        "previewDeploymentChecks": 1,
+        "reportingCodeFilesChanged": 1,
+        "regressionTestsAdded": 1,
+        "commitsCreated": 2,
+        "pullRequestsCreated": 1,
+        "pullRequestsMerged": 1,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer"
+      ],
+      "summary": "Confirmed the August 12 publisher cycle, live article, homepage and production runtime were healthy. Recovered a material Buffer reporting false negative by reconciling approved repository distribution URLs as UTM evidence when Buffer does not echo the exact sent URL. Validated the narrow fix on a READY preview, merged PR #119, verified the resulting production deployment READY, and confirmed the live Buffer endpoint now reports tracked recent posts correctly while preserving the pre-tracking EricaAssist exception. No sent post, credential, schedule, destination, editorial gate or social limit changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
