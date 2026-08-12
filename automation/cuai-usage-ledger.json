@@ -147,6 +147,34 @@
       ],
       "summary": "Confirmed production, GA4 and Buffer healthy after the morning UTM reconciliation recovery; reviewed the August 12 Library Insight and current coverage state; found 7-day users, sessions and views running ahead of the 28-day weekly pace while engaged sessions and engagement rate lag; identified LinkedIn reach and qualified onsite engagement as the distribution constraint; kept the relevance-led experiment active without forcing a High story; and assigned concrete growth, conversion, distribution, analytics and reliability work. Search Console remains isolated as an optional incompatible Data API query, and stale draft PR #118 must not be merged wholesale because its UTM work is superseded by PR #119.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-12T17:12:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Post-publication policy change in PR #122 explicitly made the August 12 vendor-exit Library Insight eligible for selective LinkedIn, but the existing publication state and social queue still reflected the earlier Library-exclusion decision and PR #122 intentionally did not create a queue item or call Buffer.",
+      "status": "recovered",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "policyReconciliationChecks": 2,
+        "socialQueueChecks": 2,
+        "liveArticleChecks": 1,
+        "previewDeploymentChecks": 1,
+        "productionDeploymentChecks": 2,
+        "socialSchedulingAttempts": 1,
+        "socialSchedulingSuccesses": 1,
+        "commitsCreatedBeforeLedgerRecord": 2,
+        "pullRequestsCreatedBeforeLedgerRecord": 1,
+        "pullRequestsMergedBeforeLedgerRecord": 1,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer"
+      ],
+      "summary": "Diagnosed a stale LinkedIn handoff after the authoritative policy changed later in the day. The article itself and production were healthy. Because Wednesday's fixed 11:30 a.m. ET slot had passed, reserved the next eligible fixed slot—Thursday August 13 at 11:30 a.m. ET—using the approved company-page workflow, exact CUAI UTMs and existing hero image. Validated a READY preview, merged PR #123, verified production READY on the exact deployed commit, invoked the tracked scheduler once, and received HTTP 201/ok=true with Buffer post 6a7ce17164b274b4d967ad74 scheduled for 2026-08-13T15:30:00Z. No duplicate, credential, destination, editorial gate, or cadence limit changed. Prevention recommendation: any future eligibility-policy change affecting a same-day publication should explicitly reconcile that publication against the social queue before the policy PR is considered operationally complete.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
