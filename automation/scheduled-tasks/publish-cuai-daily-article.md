@@ -4,7 +4,7 @@
 
 This is the authoritative operating policy for the **Publish CUAI Daily Article** ChatGPT Cloud task. Read this file from `main` before every run. If a task prompt, prior chat, or stale memory conflicts with this file, this file controls.
 
-This policy governs one daily article cycle plus the bounded LinkedIn distribution step for qualifying **High** articles. It does not authorize new scheduled tasks, changes to Cloud schedules/models/permissions, unrelated maintenance, new Alerts, or publication outside the normal site workflow.
+This policy governs one daily article cycle plus the bounded LinkedIn distribution step for qualifying **High** articles and selectively qualified **Library** Insights. It does not authorize new scheduled tasks, changes to Cloud schedules/models/permissions, unrelated maintenance, new Alerts, or publication outside the normal site workflow.
 
 ## Mission
 
@@ -21,7 +21,7 @@ Reliability, source quality, and usefulness outrank volume.
 5. Classify the candidate before drafting:
    - **High** — material, time-sensitive, primary-source-backed development with a clear operating implication. Eligible for selective LinkedIn promotion.
    - **Standard** — useful, credible article that serves the portfolio but is not a must-know event. Publish to site when it passes all gates; normally do not promote on LinkedIn.
-   - **Library** — durable, evergreen, multi-source guide, case study, or explainer. Use to strengthen the evergreen backlog; normally do not promote on LinkedIn.
+   - **Library** — durable, evergreen, multi-source guide, case study, or explainer. Use to strengthen the evergreen backlog; consider for LinkedIn only when it passes the selective Library gate below.
 6. If no current-event candidate qualifies, use the approved content-portfolio fallback: select the strongest unserved **Library** topic from the evergreen backlog, then a durable multi-source Insight, credit-union case study, or data-led explainer. Do not lower standards merely to fill a daily slot.
 7. If nothing clears the evidence and quality gates, do not publish. Record the non-publication result in the Cloud task outcome.
 
@@ -38,18 +38,23 @@ For one approved article only:
 
 ## Selective LinkedIn distribution
 
-LinkedIn is a selective distribution channel, not a mirror of daily output. The daily article cycle owns the bounded social-distribution action for qualifying High articles so that no separate handoff is required.
+LinkedIn is a selective distribution channel, not a mirror of daily output. The daily article cycle owns the bounded social-distribution action for qualifying High articles and selectively qualified Library Insights so that no separate handoff is required.
 
 ### Eligibility
 
-- Create and schedule a LinkedIn post only for a **High** classification, or for an explicitly approved exception.
-- Do not create a social post for Standard or Library content merely because an article was published.
+- Create and schedule a LinkedIn post for a qualifying **High** article, or for a **Library** Insight only when all of these are true:
+  1. it addresses an executive or functional-leader decision with material credit-union relevance;
+  2. it gives leaders a concrete action, control, operating framework, or decision tool they can apply;
+  3. the promotion angle is specific and useful rather than a generic summary of evergreen content; and
+  4. every existing live-URL, quality, duplicate, daily/weekly cadence, fixed-time, queue, tracking, image, deployment, and Buffer safeguard below passes.
+- Classification alone must never automatically include or exclude a Library Insight. Do not create a social post for Standard content, or for a Library Insight that fails any part of the selective Library gate, merely because an article was published.
+- Under this gate, **“An AI Vendor Exit Playbook for Credit Unions” qualifies**: it addresses an executive vendor-risk and continuity decision and provides an actionable exit-planning framework. It must still be withheld or deferred if a duplicate or cadence/scheduling safeguard fails.
 - The article must already be live and production-verified before scheduling LinkedIn.
 - The post must accurately reflect the published article, include one concrete operational takeaway, avoid unverified claims, and use the approved CreditUnionAI News company-page workflow only. Never post automatically to Tom Church-Adams's personal LinkedIn profile.
 
 ### Queue and tracking requirements
 
-For each qualifying High article:
+For each qualifying High article or selectively qualified Library Insight:
 
 1. Re-read `automation/social-queue.json` from current `main` immediately before writing.
 2. Confirm there is no existing queue item or Buffer post for the same article and no item already reserved for the chosen America/New_York calendar date.
