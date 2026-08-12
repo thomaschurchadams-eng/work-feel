@@ -64,6 +64,42 @@ function latestTimestamp(values) {
   return new Date(Math.max(...valid.map((value) => value.getTime()))).toISOString();
 }
 
+function hasTrackedDistributionUrl(value) {
+  try {
+    const url = new URL(String(value || ''));
+    return url.searchParams.get('utm_source') === 'linkedin' &&
+      url.searchParams.get('utm_medium') === 'organic_social' &&
+      Boolean(url.searchParams.get('utm_campaign'));
+  } catch {
+    return false;
+  }
+}
+
+function reconcileUtmTracking(item, post) {
+  const ledgerUrl = item?.distributionUrl || null;
+  const sentText = String(post?.text || '');
+  const sentLink = post?.externalLink || '';
+  const observedOnSentPost = hasTrackedDistributionUrl(sentLink) ||
+    (ledgerUrl ? sentText.includes(ledgerUrl) : false);
+  const recordedInLedger = hasTrackedDistributionUrl(ledgerUrl);
+
+  return {
+    utmTracked: observedOnSentPost || recordedInLedger,
+    utmTrackingEvidence: observedOnSentPost
+      ? 'sent-post'
+      : recordedInLedger
+        ? 'repository-ledger'
+        : 'none',
+    utmReconciliationStatus: observedOnSentPost
+      ? 'confirmed'
+      : recordedInLedger
+        ? 'reconciled-without-rewriting-sent-post'
+        : ledgerUrl
+          ? 'ledger-url-missing-required-utm-values'
+          : 'repository-distribution-url-missing'
+  };
+}
+
 function summarize(posts, days, now) {
   const cutoff = now.getTime() - (days * DAY_MS);
   const selected = posts.filter((post) => {
@@ -220,6 +256,7 @@ module.exports = async function handler(req, res) {
           (entry.articleUrl && post.text.includes(entry.articleUrl))
         );
         const metrics = normalizeMetrics(post.metrics);
+        const utm = reconcileUtmTracking(item, post);
         return {
           postId: post.id,
           itemId: item?.id || null,
@@ -230,7 +267,7 @@ module.exports = async function handler(req, res) {
           dueAt: post.dueAt || null,
           sentAt: post.sentAt || null,
           externalLink: post.externalLink || null,
-          utmTracked: Boolean(item?.distributionUrl && post.text.includes(item.distributionUrl)),
+          ...utm,
           metrics,
           metricsUpdatedAt: post.metricsUpdatedAt || null
         };
@@ -262,3 +299,5 @@ module.exports = async function handler(req, res) {
     });
   }
 };
+
+module.exports._test = { hasTrackedDistributionUrl, reconcileUtmTracking };
