@@ -65,7 +65,9 @@ The Google Cloud project behind the service account must have the Google Analyti
 
 If configuration is absent, `/api/ga4-metrics` returns `ga4_reporting_not_configured` with only the missing configuration categories. If the service account lacks property access, it returns `ga4_property_access_denied`. The CEO must treat either result as a reporting blocker, never as zero traffic.
 
-GA4's built-in `scrolledUsers` metric represents users reaching at least 90% of a page. CUAI's custom 50% scroll event can be counted as `scroll_depth`, but a reliable 50%-versus-90% Data API breakout requires the threshold event parameter to be registered as a GA4 custom dimension.
+GA4's built-in `scrolledUsers` metric represents users reaching at least 90% of a page. CUAI already emits one privacy-safe `scroll_depth` event at 25%, 50%, 75% and 90% with the numeric event parameter `percent_scrolled`; no measurement-tag change is required.
+
+For a reliable 50%-versus-90% Data API breakout, an Analytics administrator must make this non-destructive GA4 configuration change: **Admin → Data display → Custom definitions → Create custom dimension**; name it `Scroll depth percent`, choose event scope, and set the event parameter to `percent_scrolled`. After GA4 finishes processing the definition, query dimension `customEvent:percent_scrolled` with `eventName=scroll_depth` and metrics `activeUsers` and `eventCount`. Historical values collected before registration are not backfilled, so keep `scrolledUsers` as the historical 90% series and begin the comparable custom 50%/90% series from the registration date. This does not alter the `G-...` measurement tag, page behavior, schedules or editorial workflow.
 
 ## Weekly growth review
 
