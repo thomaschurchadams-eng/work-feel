@@ -257,12 +257,15 @@ async function queryWindow(config, token, days) {
   try {
     searchConsole = await runReport(config, token, {
       dateRanges: dates,
+      dimensions: [{ name: 'landingPage' }],
       metrics: [
         { name: 'organicGoogleSearchClicks' },
         { name: 'organicGoogleSearchImpressions' },
         { name: 'organicGoogleSearchClickThroughRate' },
         { name: 'organicGoogleSearchAveragePosition' }
-      ]
+      ],
+      orderBys: [{ metric: { metricName: 'organicGoogleSearchImpressions' }, desc: true }],
+      limit: '50'
     });
   } catch (error) {
     searchConsoleError = {
