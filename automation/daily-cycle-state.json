@@ -6,15 +6,15 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 14,
     "beatsSearched": [
-      "it-data-cybersecurity",
       "regulatory-governance",
-      "lending-mortgage",
+      "fraud-security",
       "payments-deposits",
+      "lending-mortgage",
       "operations-member-service",
       "finance-treasury",
       "vendor-management",
@@ -23,54 +23,54 @@
     "publications": [
       {
         "type": "article",
-        "classification": "Insights",
-        "title": "An AI Vendor Exit Playbook for Credit Unions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-vendor-exit-playbook.html",
-        "primaryFunctionalAudience": "Vendor-management and technology leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "not-created-library-priority"
+        "classification": "News",
+        "title": "FinCEN Ends U.S. Company BOI Reports, but Credit Union CDD Duties Remain",
+        "url": "https://creditunionainews.com/news/fincen-boi-rule-credit-union-cdd.html",
+        "primaryFunctionalAudience": "BSA/AML and compliance leaders",
+        "promotionPriority": "High",
+        "socialDecision": "eligible-high-reserve-next-free-slot"
       }
     ],
     "rejections": [
       {
-        "title": "Civic Federal Credit Union Is Classified as Undercapitalized",
-        "reason": "material financial-health development, but the available evidence did not establish a distinct AI, fintech or digital-operating decision",
-        "primaryAudience": "finance and treasury leaders",
-        "secondaryAudiences": [
-          "executives and board leaders",
-          "risk leaders"
-        ]
-      },
-      {
-        "title": "Credit-Union Board Member Is Indicted in Elder-Fraud Case",
-        "reason": "a criminal allegation without adjudicated findings and limited technology decision value",
-        "primaryAudience": "risk and compliance leaders",
-        "secondaryAudiences": [
-          "executives and board leaders",
-          "fraud leaders"
-        ]
-      },
-      {
-        "title": "Senate Confirms John Crews to the NCUA Board",
-        "reason": "authoritative governance news, but no specific new operating obligation or technology decision followed",
-        "primaryAudience": "executives and board leaders",
+        "title": "Caller Authentication and STIR/SHAKEN Framework Letter",
+        "reason": "relevant fraud-policy advocacy, but not an adopted framework or implementation action",
+        "primaryAudience": "fraud and security leaders",
         "secondaryAudiences": [
           "risk and compliance leaders",
-          "strategy leaders"
+          "technology leaders"
         ]
       },
       {
-        "title": "Credit Unions Seek Mortgage-Relief Flexibility From CFPB",
-        "reason": "relevant advocacy, but the request was not an enacted rule or implementation action",
-        "primaryAudience": "mortgage and lending leaders",
+        "title": "Nine Credit Unions Join Velera Digital Asset Lab",
+        "reason": "vendor-led exploration announcement without production outcomes or member-impact evidence",
+        "primaryAudience": "payments and innovation leaders",
         "secondaryAudiences": [
-          "risk and compliance leaders",
+          "technology leaders",
+          "executives"
+        ]
+      },
+      {
+        "title": "TruStage Cyber Incident Update",
+        "reason": "no material new primary-source fact beyond the previously covered incident-response issue",
+        "primaryAudience": "cybersecurity and risk leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Payfinia and MAP Embedded-Payments Partnership",
+        "reason": "vendor partnership announcement without a verified credit-union production milestone",
+        "primaryAudience": "payments and product leaders",
+        "secondaryAudiences": [
+          "technology leaders",
           "operations leaders"
         ]
       },
       {
-        "title": "U1 Credit Union Launches MessagePay",
-        "reason": "relevant product announcement supported mainly by institution and vendor claims without operating outcomes",
+        "title": "U1 Credit Union MessagePay Launch",
+        "reason": "institution and vendor claims without operating outcomes; already evaluated in recent cycles",
         "primaryAudience": "payments and product leaders",
         "secondaryAudiences": [
           "member-service leaders",
@@ -78,35 +78,53 @@
         ]
       },
       {
-        "title": "Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion",
-        "reason": "current conversion update without a distinct digital, payments or member-experience milestone",
-        "primaryAudience": "operations leaders",
+        "title": "FinovateFall Credit-Union Demo Companies",
+        "reason": "event promotion rather than a completed material development",
+        "primaryAudience": "innovation and technology leaders",
         "secondaryAudiences": [
-          "executives and board leaders",
-          "technology leaders"
+          "executives",
+          "vendor-management teams"
         ]
       },
       {
-        "title": "Moody's Flags Rising AI Vendor Dependence",
-        "reason": "useful banking context without a new credit-union event or primary-source implementation action",
+        "title": "Ncontracts Inc. 5000 Recognition",
+        "reason": "vendor award and growth promotion without a new operating decision for credit unions",
         "primaryAudience": "vendor-management teams",
         "secondaryAudiences": [
-          "technology leaders",
+          "risk leaders",
           "executives"
         ]
       },
       {
-        "title": "Data-Center Financing Raises New Credit-Risk Questions",
-        "reason": "broader-market lending issue with limited immediate credit-union applicability",
-        "primaryAudience": "lending and risk leaders",
+        "title": "Remote Banking Advancements at Employee Resources Credit Union",
+        "reason": "sponsored-style promotional coverage without independent deployment evidence",
+        "primaryAudience": "digital-banking and member-service leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "operations leaders"
+        ]
+      },
+      {
+        "title": "Weekly Mortgage Rate Update",
+        "reason": "consumer market snapshot without a distinct credit-union technology or operating decision",
+        "primaryAudience": "mortgage and lending leaders",
         "secondaryAudiences": [
           "finance leaders",
-          "executives"
+          "marketing teams"
         ]
       },
       {
-        "title": "RBI Governor Says AI Can Transform Lending",
-        "reason": "non-U.S. policy commentary without a direct credit-union operating action",
+        "title": "Bank of America Critical-Infrastructure and AI Financing Commitment",
+        "reason": "broad bank financing pledge with limited direct credit-union operating action",
+        "primaryAudience": "finance and treasury leaders",
+        "secondaryAudiences": [
+          "executives",
+          "lending leaders"
+        ]
+      },
+      {
+        "title": "RBI Commentary on AI in Lending",
+        "reason": "non-U.S. policy commentary without a direct credit-union implementation event",
         "primaryAudience": "lending and strategy leaders",
         "secondaryAudiences": [
           "technology leaders",
@@ -114,57 +132,189 @@
         ]
       },
       {
-        "title": "Moneyling Promotes AI Financial Planning Beyond General Chatbots",
-        "reason": "vendor content marketing rather than a verified deployment or policy event",
-        "primaryAudience": "product and member-experience leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "marketing teams"
-        ]
-      },
-      {
-        "title": "Young Professionals Summit Adds an AI Session",
-        "reason": "event promotion rather than a completed material development",
+        "title": "AI Workforce Transformation Commentary",
+        "reason": "commentary rather than a new verifiable policy, deployment or operating result",
         "primaryAudience": "HR and workforce leaders",
         "secondaryAudiences": [
-          "innovation leaders",
-          "executives"
-        ]
-      },
-      {
-        "title": "NASCUS Promotes Its State System Summit",
-        "reason": "event promotion without a new supervisory action",
-        "primaryAudience": "risk and compliance leaders",
-        "secondaryAudiences": [
-          "executives and board leaders",
-          "legal teams"
-        ]
-      },
-      {
-        "title": "CCUA Promotes Accessibility Financial Education",
-        "reason": "useful training topic but not an article-grade current development",
-        "primaryAudience": "member-service and marketing leaders",
-        "secondaryAudiences": [
-          "risk leaders",
-          "training teams"
-        ]
-      },
-      {
-        "title": "League Promotes a Wild West of AI Webinar",
-        "reason": "event promotion rather than a completed material development",
-        "primaryAudience": "technology and risk leaders",
-        "secondaryAudiences": [
           "executives",
-          "operations leaders"
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Small Credit Union Resource Center",
+        "reason": "useful resource but no distinct AI, fintech or digital-operating development",
+        "primaryAudience": "small-credit-union executives",
+        "secondaryAudiences": [
+          "operations leaders",
+          "technology leaders"
         ]
       }
     ],
     "status": "article-complete",
-    "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 not applied because Library articles are not promoted on LinkedIn",
+    "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
     "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
-    "updatedAt": "2026-08-12T07:00:00-04:00"
+    "updatedAt": "2026-08-13T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-12",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 14,
+      "beatsSearched": [
+        "it-data-cybersecurity",
+        "regulatory-governance",
+        "lending-mortgage",
+        "payments-deposits",
+        "operations-member-service",
+        "finance-treasury",
+        "vendor-management",
+        "workforce"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "An AI Vendor Exit Playbook for Credit Unions",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-vendor-exit-playbook.html",
+          "primaryFunctionalAudience": "Vendor-management and technology leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "not-created-library-priority"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Civic Federal Credit Union Is Classified as Undercapitalized",
+          "reason": "material financial-health development, but the available evidence did not establish a distinct AI, fintech or digital-operating decision",
+          "primaryAudience": "finance and treasury leaders",
+          "secondaryAudiences": [
+            "executives and board leaders",
+            "risk leaders"
+          ]
+        },
+        {
+          "title": "Credit-Union Board Member Is Indicted in Elder-Fraud Case",
+          "reason": "a criminal allegation without adjudicated findings and limited technology decision value",
+          "primaryAudience": "risk and compliance leaders",
+          "secondaryAudiences": [
+            "executives and board leaders",
+            "fraud leaders"
+          ]
+        },
+        {
+          "title": "Senate Confirms John Crews to the NCUA Board",
+          "reason": "authoritative governance news, but no specific new operating obligation or technology decision followed",
+          "primaryAudience": "executives and board leaders",
+          "secondaryAudiences": [
+            "risk and compliance leaders",
+            "strategy leaders"
+          ]
+        },
+        {
+          "title": "Credit Unions Seek Mortgage-Relief Flexibility From CFPB",
+          "reason": "relevant advocacy, but the request was not an enacted rule or implementation action",
+          "primaryAudience": "mortgage and lending leaders",
+          "secondaryAudiences": [
+            "risk and compliance leaders",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "U1 Credit Union Launches MessagePay",
+          "reason": "relevant product announcement supported mainly by institution and vendor claims without operating outcomes",
+          "primaryAudience": "payments and product leaders",
+          "secondaryAudiences": [
+            "member-service leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion",
+          "reason": "current conversion update without a distinct digital, payments or member-experience milestone",
+          "primaryAudience": "operations leaders",
+          "secondaryAudiences": [
+            "executives and board leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Moody's Flags Rising AI Vendor Dependence",
+          "reason": "useful banking context without a new credit-union event or primary-source implementation action",
+          "primaryAudience": "vendor-management teams",
+          "secondaryAudiences": [
+            "technology leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Data-Center Financing Raises New Credit-Risk Questions",
+          "reason": "broader-market lending issue with limited immediate credit-union applicability",
+          "primaryAudience": "lending and risk leaders",
+          "secondaryAudiences": [
+            "finance leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "RBI Governor Says AI Can Transform Lending",
+          "reason": "non-U.S. policy commentary without a direct credit-union operating action",
+          "primaryAudience": "lending and strategy leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk leaders"
+          ]
+        },
+        {
+          "title": "Moneyling Promotes AI Financial Planning Beyond General Chatbots",
+          "reason": "vendor content marketing rather than a verified deployment or policy event",
+          "primaryAudience": "product and member-experience leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "marketing teams"
+          ]
+        },
+        {
+          "title": "Young Professionals Summit Adds an AI Session",
+          "reason": "event promotion rather than a completed material development",
+          "primaryAudience": "HR and workforce leaders",
+          "secondaryAudiences": [
+            "innovation leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "NASCUS Promotes Its State System Summit",
+          "reason": "event promotion without a new supervisory action",
+          "primaryAudience": "risk and compliance leaders",
+          "secondaryAudiences": [
+            "executives and board leaders",
+            "legal teams"
+          ]
+        },
+        {
+          "title": "CCUA Promotes Accessibility Financial Education",
+          "reason": "useful training topic but not an article-grade current development",
+          "primaryAudience": "member-service and marketing leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "training teams"
+          ]
+        },
+        {
+          "title": "League Promotes a Wild West of AI Webinar",
+          "reason": "event promotion rather than a completed material development",
+          "primaryAudience": "technology and risk leaders",
+          "secondaryAudiences": [
+            "executives",
+            "operations leaders"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 not applied because Library articles are not promoted on LinkedIn",
+      "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
+      "updatedAt": "2026-08-12T07:00:00-04:00"
+    },
     {
       "date": "2026-08-11",
       "fullArticleCount": 1,

@@ -3,6 +3,43 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fincen-boi-rule-credit-union-cdd",
+      "title": "FinCEN Ends U.S. Company BOI Reports, but Credit Union CDD Duties Remain",
+      "url": "/news/fincen-boi-rule-credit-union-cdd.html",
+      "publishedAt": "2026-08-13T07:00:00-04:00",
+      "section": "news",
+      "beat": "regulatory-governance",
+      "functions": [
+        "risk-compliance",
+        "operations",
+        "product-digital",
+        "it-data-cybersecurity",
+        "executive-governance"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "BSA/AML and compliance leaders",
+      "secondaryAudiences": [
+        "business-services and product leaders",
+        "operations leaders",
+        "technology and regtech leaders",
+        "executives"
+      ],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-reserve-next-free-slot",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the LinkedIn package; article selection and editorial structure were not altered",
+      "internalLinkTargets": [
+        "/news/ai-vendor-due-diligence-checklist-credit-unions.html",
+        "/news/ai-acceptable-use-policy-credit-unions.html"
+      ],
+      "sourceTier": 1,
+      "score": 98.6
+    },
+    {
       "id": "credit-union-ai-vendor-exit-playbook",
       "title": "An AI Vendor Exit Playbook for Credit Unions",
       "url": "/insight-credit-union-ai-vendor-exit-playbook.html",

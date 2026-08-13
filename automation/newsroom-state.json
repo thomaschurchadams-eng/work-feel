@@ -1,14 +1,79 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-12T07:00:00-04:00",
+  "lastStandardRun": "2026-08-13T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "An AI Vendor Exit Playbook for Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-vendor-exit-playbook.html",
-    "publishedAt": "2026-08-12T07:00:00-04:00",
-    "route": "insights"
+    "title": "FinCEN Ends U.S. Company BOI Reports, but Credit Union CDD Duties Remain",
+    "url": "https://creditunionainews.com/news/fincen-boi-rule-credit-union-cdd.html",
+    "publishedAt": "2026-08-13T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-13",
+      "headline": "Caller Authentication and STIR/SHAKEN Framework Letter",
+      "reason": "relevant fraud-policy advocacy, but not an adopted framework or implementation action"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "Nine Credit Unions Join Velera Digital Asset Lab",
+      "reason": "vendor-led exploration announcement without production outcomes or member-impact evidence"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "TruStage Cyber Incident Update",
+      "reason": "no material new primary-source fact beyond the previously covered incident-response issue"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "Payfinia and MAP Embedded-Payments Partnership",
+      "reason": "vendor partnership announcement without a verified credit-union production milestone"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "U1 Credit Union MessagePay Launch",
+      "reason": "institution and vendor claims without operating outcomes; already evaluated in recent cycles"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "FinovateFall Credit-Union Demo Companies",
+      "reason": "event promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "Ncontracts Inc. 5000 Recognition",
+      "reason": "vendor award and growth promotion without a new operating decision for credit unions"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "Remote Banking Advancements at Employee Resources Credit Union",
+      "reason": "sponsored-style promotional coverage without independent deployment evidence"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "Weekly Mortgage Rate Update",
+      "reason": "consumer market snapshot without a distinct credit-union technology or operating decision"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "Bank of America Critical-Infrastructure and AI Financing Commitment",
+      "reason": "broad bank financing pledge with limited direct credit-union operating action"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "RBI Commentary on AI in Lending",
+      "reason": "non-U.S. policy commentary without a direct credit-union implementation event"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "AI Workforce Transformation Commentary",
+      "reason": "commentary rather than a new verifiable policy, deployment or operating result"
+    },
+    {
+      "date": "2026-08-13",
+      "headline": "Small Credit Union Resource Center",
+      "reason": "useful resource but no distinct AI, fintech or digital-operating development"
+    },
     {"date":"2026-08-12","headline":"Civic Federal Credit Union Is Classified as Undercapitalized","reason":"material financial-health development, but the available evidence did not establish a distinct AI, fintech or digital-operating decision"},
     {"date":"2026-08-12","headline":"Credit-Union Board Member Is Indicted in Elder-Fraud Case","reason":"a criminal allegation without adjudicated findings and limited technology decision value"},
     {"date":"2026-08-12","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative governance news, but no specific new operating obligation or technology decision followed"},
