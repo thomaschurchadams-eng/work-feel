@@ -6,7 +6,7 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-13",
+    "date": "2026-08-14",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 14,
@@ -24,35 +24,35 @@
       {
         "type": "article",
         "classification": "News",
-        "title": "FinCEN Ends U.S. Company BOI Reports, but Credit Union CDD Duties Remain",
-        "url": "https://creditunionainews.com/news/fincen-boi-rule-credit-union-cdd.html",
-        "primaryFunctionalAudience": "BSA/AML and compliance leaders",
+        "title": "Colorado’s ASSET Act Creates a Fraud-Hold Workflow for Credit Unions",
+        "url": "https://creditunionainews.com/news/colorado-asset-act-credit-union-fraud-holds.html",
+        "primaryFunctionalAudience": "Fraud operations and compliance leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-08-14"
+        "socialDecision": "eligible-high-reserve-next-free-slot"
       }
     ],
     "rejections": [
       {
-        "title": "Caller Authentication and STIR/SHAKEN Framework Letter",
-        "reason": "relevant fraud-policy advocacy, but not an adopted framework or implementation action",
-        "primaryAudience": "fraud and security leaders",
+        "title": "FinCEN Human-Smuggling Trends Analysis",
+        "reason": "authoritative and current, but it would repeat the prior day’s FinCEN and BSA/AML source concentration; retained as an alert and future coverage opportunity",
+        "primaryAudience": "BSA/AML and fraud leaders",
         "secondaryAudiences": [
-          "risk and compliance leaders",
-          "technology leaders"
-        ]
-      },
-      {
-        "title": "Nine Credit Unions Join Velera Digital Asset Lab",
-        "reason": "vendor-led exploration announcement without production outcomes or member-impact evidence",
-        "primaryAudience": "payments and innovation leaders",
-        "secondaryAudiences": [
-          "technology leaders",
+          "payments leaders",
           "executives"
         ]
       },
       {
-        "title": "TruStage Cyber Incident Update",
-        "reason": "no material new primary-source fact beyond the previously covered incident-response issue",
+        "title": "Navy Federal Mobile-Banking Outage",
+        "reason": "material member-service disruption, but accessible evidence lacked an official incident report, root cause or recovery controls",
+        "primaryAudience": "digital-banking and operations leaders",
+        "secondaryAudiences": [
+          "member-service leaders",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "TruStage Cyberattack Recovery Update",
+        "reason": "no material primary-source resolution or operating fact beyond the previously evaluated incident-response issue",
         "primaryAudience": "cybersecurity and risk leaders",
         "secondaryAudiences": [
           "operations leaders",
@@ -60,102 +60,252 @@
         ]
       },
       {
-        "title": "Payfinia and MAP Embedded-Payments Partnership",
-        "reason": "vendor partnership announcement without a verified credit-union production milestone",
-        "primaryAudience": "payments and product leaders",
+        "title": "Blend and Prove Prefill Integration",
+        "reason": "vendor-controlled conversion claims without independently verified credit-union production outcomes",
+        "primaryAudience": "lending and digital-product leaders",
         "secondaryAudiences": [
           "technology leaders",
-          "operations leaders"
+          "member-experience leaders"
         ]
       },
       {
-        "title": "U1 Credit Union MessagePay Launch",
-        "reason": "institution and vendor claims without operating outcomes; already evaluated in recent cycles",
-        "primaryAudience": "payments and product leaders",
+        "title": "Synchrony Appoints a Chief AI Officer",
+        "reason": "large-bank workforce development with indirect credit-union applicability and no new operating control",
+        "primaryAudience": "executives and strategy leaders",
         "secondaryAudiences": [
-          "member-service leaders",
-          "technology leaders"
+          "technology leaders",
+          "HR leaders"
         ]
       },
       {
-        "title": "FinovateFall Credit-Union Demo Companies",
-        "reason": "event promotion rather than a completed material development",
-        "primaryAudience": "innovation and technology leaders",
+        "title": "Loan Vision Launches Luna Mortgage Accounting AI",
+        "reason": "vendor product launch without a verified credit-union deployment, control assessment or result",
+        "primaryAudience": "mortgage finance leaders",
         "secondaryAudiences": [
-          "executives",
+          "technology leaders",
           "vendor-management teams"
         ]
       },
       {
-        "title": "Ncontracts Inc. 5000 Recognition",
-        "reason": "vendor award and growth promotion without a new operating decision for credit unions",
+        "title": "Kinective Inc. 5000 Recognition",
+        "reason": "vendor award and promotion rather than a new infrastructure decision or production milestone",
         "primaryAudience": "vendor-management teams",
         "secondaryAudiences": [
-          "risk leaders",
+          "technology leaders",
           "executives"
         ]
       },
       {
-        "title": "Remote Banking Advancements at Employee Resources Credit Union",
-        "reason": "sponsored-style promotional coverage without independent deployment evidence",
-        "primaryAudience": "digital-banking and member-service leaders",
+        "title": "PenFed Branch Opening",
+        "reason": "institutional expansion without a distinct AI, fintech or digital-operating development",
+        "primaryAudience": "operations and member-service leaders",
         "secondaryAudiences": [
-          "technology leaders",
+          "marketing leaders",
+          "executives"
+        ]
+      },
+      {
+        "title": "Wescom Second-Quarter Earnings After Layoffs",
+        "reason": "secondary and paywalled reporting with limited AI or fintech decision value",
+        "primaryAudience": "finance and workforce leaders",
+        "secondaryAudiences": [
+          "executives",
           "operations leaders"
         ]
       },
       {
-        "title": "Weekly Mortgage Rate Update",
-        "reason": "consumer market snapshot without a distinct credit-union technology or operating decision",
-        "primaryAudience": "mortgage and lending leaders",
-        "secondaryAudiences": [
-          "finance leaders",
-          "marketing teams"
-        ]
-      },
-      {
-        "title": "Bank of America Critical-Infrastructure and AI Financing Commitment",
-        "reason": "broad bank financing pledge with limited direct credit-union operating action",
-        "primaryAudience": "finance and treasury leaders",
-        "secondaryAudiences": [
-          "executives",
-          "lending leaders"
-        ]
-      },
-      {
-        "title": "RBI Commentary on AI in Lending",
-        "reason": "non-U.S. policy commentary without a direct credit-union implementation event",
-        "primaryAudience": "lending and strategy leaders",
+        "title": "Nine Credit Unions Join Velera Digital Asset Lab",
+        "reason": "vendor-led exploration announcement already evaluated, without production outcomes",
+        "primaryAudience": "payments and innovation leaders",
         "secondaryAudiences": [
           "technology leaders",
-          "risk leaders"
+          "executives"
         ]
       },
       {
-        "title": "AI Workforce Transformation Commentary",
+        "title": "Credit-Union Workforce Transformation Commentary",
         "reason": "commentary rather than a new verifiable policy, deployment or operating result",
         "primaryAudience": "HR and workforce leaders",
         "secondaryAudiences": [
-          "executives",
+          "operations leaders",
+          "executives"
+        ]
+      },
+      {
+        "title": "Caller Authentication and STIR/SHAKEN Advocacy",
+        "reason": "relevant fraud-policy advocacy already evaluated, but not an enacted framework or implementation action",
+        "primaryAudience": "fraud and security leaders",
+        "secondaryAudiences": [
+          "risk leaders",
           "technology leaders"
         ]
       },
       {
-        "title": "Small Credit Union Resource Center",
-        "reason": "useful resource but no distinct AI, fintech or digital-operating development",
-        "primaryAudience": "small-credit-union executives",
+        "title": "Finovate and Conference Promotions",
+        "reason": "event promotion rather than completed material developments",
+        "primaryAudience": "innovation and technology leaders",
         "secondaryAudiences": [
-          "operations leaders",
-          "technology leaders"
+          "executives",
+          "vendor-management teams"
         ]
       }
     ],
     "status": "article-complete",
     "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
     "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
-    "updatedAt": "2026-08-13T07:00:00-04:00"
+    "updatedAt": "2026-08-14T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-13",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 14,
+      "beatsSearched": [
+        "regulatory-governance",
+        "fraud-security",
+        "payments-deposits",
+        "lending-mortgage",
+        "operations-member-service",
+        "finance-treasury",
+        "vendor-management",
+        "workforce"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "FinCEN Ends U.S. Company BOI Reports, but Credit Union CDD Duties Remain",
+          "url": "https://creditunionainews.com/news/fincen-boi-rule-credit-union-cdd.html",
+          "primaryFunctionalAudience": "BSA/AML and compliance leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-08-14"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Caller Authentication and STIR/SHAKEN Framework Letter",
+          "reason": "relevant fraud-policy advocacy, but not an adopted framework or implementation action",
+          "primaryAudience": "fraud and security leaders",
+          "secondaryAudiences": [
+            "risk and compliance leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Nine Credit Unions Join Velera Digital Asset Lab",
+          "reason": "vendor-led exploration announcement without production outcomes or member-impact evidence",
+          "primaryAudience": "payments and innovation leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "TruStage Cyber Incident Update",
+          "reason": "no material new primary-source fact beyond the previously covered incident-response issue",
+          "primaryAudience": "cybersecurity and risk leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Payfinia and MAP Embedded-Payments Partnership",
+          "reason": "vendor partnership announcement without a verified credit-union production milestone",
+          "primaryAudience": "payments and product leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "U1 Credit Union MessagePay Launch",
+          "reason": "institution and vendor claims without operating outcomes; already evaluated in recent cycles",
+          "primaryAudience": "payments and product leaders",
+          "secondaryAudiences": [
+            "member-service leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "FinovateFall Credit-Union Demo Companies",
+          "reason": "event promotion rather than a completed material development",
+          "primaryAudience": "innovation and technology leaders",
+          "secondaryAudiences": [
+            "executives",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Ncontracts Inc. 5000 Recognition",
+          "reason": "vendor award and growth promotion without a new operating decision for credit unions",
+          "primaryAudience": "vendor-management teams",
+          "secondaryAudiences": [
+            "risk leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Remote Banking Advancements at Employee Resources Credit Union",
+          "reason": "sponsored-style promotional coverage without independent deployment evidence",
+          "primaryAudience": "digital-banking and member-service leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "Weekly Mortgage Rate Update",
+          "reason": "consumer market snapshot without a distinct credit-union technology or operating decision",
+          "primaryAudience": "mortgage and lending leaders",
+          "secondaryAudiences": [
+            "finance leaders",
+            "marketing teams"
+          ]
+        },
+        {
+          "title": "Bank of America Critical-Infrastructure and AI Financing Commitment",
+          "reason": "broad bank financing pledge with limited direct credit-union operating action",
+          "primaryAudience": "finance and treasury leaders",
+          "secondaryAudiences": [
+            "executives",
+            "lending leaders"
+          ]
+        },
+        {
+          "title": "RBI Commentary on AI in Lending",
+          "reason": "non-U.S. policy commentary without a direct credit-union implementation event",
+          "primaryAudience": "lending and strategy leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk leaders"
+          ]
+        },
+        {
+          "title": "AI Workforce Transformation Commentary",
+          "reason": "commentary rather than a new verifiable policy, deployment or operating result",
+          "primaryAudience": "HR and workforce leaders",
+          "secondaryAudiences": [
+            "executives",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Small Credit Union Resource Center",
+          "reason": "useful resource but no distinct AI, fintech or digital-operating development",
+          "primaryAudience": "small-credit-union executives",
+          "secondaryAudiences": [
+            "operations leaders",
+            "technology leaders"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
+      "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
+      "updatedAt": "2026-08-13T07:00:00-04:00"
+    },
     {
       "date": "2026-08-12",
       "fullArticleCount": 1,

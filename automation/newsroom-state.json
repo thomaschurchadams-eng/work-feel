@@ -1,14 +1,27 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-13T07:00:00-04:00",
+  "lastStandardRun": "2026-08-14T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "FinCEN Ends U.S. Company BOI Reports, but Credit Union CDD Duties Remain",
-    "url": "https://creditunionainews.com/news/fincen-boi-rule-credit-union-cdd.html",
-    "publishedAt": "2026-08-13T07:00:00-04:00",
+    "title": "Colorado’s ASSET Act Creates a Fraud-Hold Workflow for Credit Unions",
+    "url": "https://creditunionainews.com/news/colorado-asset-act-credit-union-fraud-holds.html",
+    "publishedAt": "2026-08-14T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {"date":"2026-08-14","headline":"FinCEN Human-Smuggling Trends Analysis","reason":"authoritative and current, but it would repeat the prior day’s FinCEN and BSA/AML source concentration; retained as an alert and future coverage opportunity"},
+    {"date":"2026-08-14","headline":"Navy Federal Mobile-Banking Outage","reason":"material member-service disruption, but accessible evidence lacked an official incident report, root cause or recovery controls"},
+    {"date":"2026-08-14","headline":"TruStage Cyberattack Recovery Update","reason":"no material primary-source resolution or operating fact beyond the previously evaluated incident-response issue"},
+    {"date":"2026-08-14","headline":"Blend and Prove Prefill Integration","reason":"vendor-controlled conversion claims without independently verified credit-union production outcomes"},
+    {"date":"2026-08-14","headline":"Synchrony Appoints a Chief AI Officer","reason":"large-bank workforce development with indirect credit-union applicability and no new operating control"},
+    {"date":"2026-08-14","headline":"Loan Vision Launches Luna Mortgage Accounting AI","reason":"vendor product launch without a verified credit-union deployment, control assessment or result"},
+    {"date":"2026-08-14","headline":"Kinective Inc. 5000 Recognition","reason":"vendor award and promotion rather than a new infrastructure decision or production milestone"},
+    {"date":"2026-08-14","headline":"PenFed Branch Opening","reason":"institutional expansion without a distinct AI, fintech or digital-operating development"},
+    {"date":"2026-08-14","headline":"Wescom Second-Quarter Earnings After Layoffs","reason":"secondary and paywalled reporting with limited AI or fintech decision value"},
+    {"date":"2026-08-14","headline":"Nine Credit Unions Join Velera Digital Asset Lab","reason":"vendor-led exploration announcement already evaluated, without production outcomes"},
+    {"date":"2026-08-14","headline":"Credit-Union Workforce Transformation Commentary","reason":"commentary rather than a new verifiable policy, deployment or operating result"},
+    {"date":"2026-08-14","headline":"Caller Authentication and STIR/SHAKEN Advocacy","reason":"relevant fraud-policy advocacy already evaluated, but not an enacted framework or implementation action"},
+    {"date":"2026-08-14","headline":"Finovate and Conference Promotions","reason":"event promotion rather than completed material developments"},
     {
       "date": "2026-08-13",
       "headline": "Caller Authentication and STIR/SHAKEN Framework Letter",

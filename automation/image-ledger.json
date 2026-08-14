@@ -3,6 +3,21 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "colorado-asset-act-credit-union-fraud-holds",
+      "articleUrl": "/news/colorado-asset-act-credit-union-fraud-holds.html",
+      "imagePath": "/assets/colorado-asset-act-credit-union-fraud-holds.jpg",
+      "publishedAt": "2026-08-14T07:00:00-04:00",
+      "medium": "macro-still-life",
+      "subject": "physical-metaphor",
+      "composition": "overhead-flat-lay",
+      "perspective": "overhead",
+      "palette": "amber-charcoal-burgundy",
+      "lighting": "cinematic-side-light",
+      "texture": "polished-metal-paper-fiber-stone-frosted-glass",
+      "scene": "disbursement-hold-report-notice-and-review-workflow",
+      "conceptScore": 99.2
+    },
+    {
       "id": "fincen-boi-rule-credit-union-cdd",
       "articleUrl": "/news/fincen-boi-rule-credit-union-cdd.html",
       "imagePath": "/assets/fincen-boi-rule-credit-union-cdd.jpg",
