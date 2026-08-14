@@ -90,6 +90,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
       "summary": "Confirmed the August 13 publisher cycle, current social reservations, Buffer handoff and Vercel runtime were healthy; the recovered vendor-exit LinkedIn item sent at the fixed 11:30 a.m. ET slot with approved UTMs and no duplicate. Investigated the repeated optional Search Console failure in the GA4 reporting feed. Two narrow repairs (#126 and #127) each passed READY preview/build validation but failed the Production-only Google Analytics Data API check: the first used an invalid dimension and the second still returned an incompatible dimensions/metrics error. Immediately rolled both speculative changes back in PR #128, restored the pre-repair reporting code, verified Production READY on commit 20f4d45, and confirmed core GA4 remains HTTP 200. Search Console reporting remains isolated and degraded; the next safe path is a documented direct Search Console reporting/API integration rather than another speculative GA4 Core Reporting query. No credentials, tracking, editorial rules, social destination, cadence limits or publishing behavior changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-14T09:50:00-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI CEO operating review after the August 14 publisher cycle, with live GA4/Buffer retrieval and follow-up on the isolated Search Console degradation.",
+      "status": "success-with-search-measurement-degraded",
+      "workUnits": {"repositoryManagementFilesReviewed":12,"recentCommitsReviewed":30,"publisherCandidatesRepresented":14,"publisherBeatsRepresented":8,"articlesPublished":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeHealthChecks":1,"liveArticleChecks":1,"searchConsolePreviewProbes":1,"pluginAvailabilityChecks":1,"reportingBranchesCreated":1,"reportingFilesUpdated":2,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
+      "summary": "Confirmed Aug. 14 production READY on 4a107cc with live GA4 and Buffer both HTTP 200/ok=true and no production warning/error/fatal logs in 24 hours. Verified the Colorado ASSET Act article live, High priority, and scheduled for the next free LinkedIn slot on Aug. 17 while today's FinCEN High post remains scheduled for 12:30 p.m. ET. Joined current distribution and onsite evidence: 3 metrics-ready Buffer posts produced 27 impressions/17 reach, while GA4 attributes 4 LinkedIn sessions and 1 engaged session; 7-day users are 24.2% above the 28-day weekly pace, but page views are 21.1% below pace and engaged sessions 20.0% below, leaving depth as the main growth constraint. Reviewed the isolated direct Search Console API probe; its preview is READY but returns search_console_service_account_missing, so it remains unmerged under the fully-validated-change rule. Updated the CEO report and usage ledger with dated goals and owner commitments.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
