@@ -101,6 +101,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
       "summary": "Confirmed Aug. 14 production READY on 4a107cc with live GA4 and Buffer both HTTP 200/ok=true and no production warning/error/fatal logs in 24 hours. Verified the Colorado ASSET Act article live, High priority, and scheduled for the next free LinkedIn slot on Aug. 17 while today's FinCEN High post remains scheduled for 12:30 p.m. ET. Joined current distribution and onsite evidence: 3 metrics-ready Buffer posts produced 27 impressions/17 reach, while GA4 attributes 4 LinkedIn sessions and 1 engaged session; 7-day users are 24.2% above the 28-day weekly pace, but page views are 21.1% below pace and engaged sessions 20.0% below, leaving depth as the main growth constraint. Reviewed the isolated direct Search Console API probe; its preview is READY but returns search_console_service_account_missing, so it remains unmerged under the fully-validated-change rule. Updated the CEO report and usage ledger with dated goals and owner commitments.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-17T09:55:00-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI CEO operating review after the August 17 publisher cycle, with mandatory live GA4/Buffer retrieval and active self-healing.",
+      "status": "success-with-search-measurement-degraded",
+      "workUnits": {"repositoryManagementFilesReviewed":14,"recentCommitsReviewed":30,"publisherCandidatesRepresented":14,"publisherBeatsRepresented":8,"articlesPublished":1,"ga4MetricsQueries":2,"bufferMetricsQueries":2,"productionDeploymentChecks":4,"runtimeHealthChecks":1,"liveArticleChecks":2,"analyticsDefectsDiagnosed":1,"analyticsRepairBranchesCreated":1,"analyticsRepairFilesChanged":2,"previewDeploymentChecks":1,"pullRequestsCreated":1,"pullRequestsMerged":1,"reportingBranchesCreated":1,"reportingFilesUpdated":3,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
+      "summary": "Confirmed the Aug. 17 High newsroom publication and current production/GA4/Buffer state, then found a material article-runtime measurement defect: several recent articles referenced missing assets/site.js while the canonical analytics bundle is assets/app.js. Overall GA4 traffic remained available through the inline tag, but CUAI custom article/depth/conversion event history on affected pages was incomplete. Implemented a backward-compatible site.js loader plus validator protection on a feature branch, validated READY Preview and both shared assets, reviewed and merged PR #131, verified READY Production on commit 833bddc and production site.js HTTP 200, then reran GA4 and Buffer on that exact Production commit. Search Console remains degraded by the known incompatible optional GA4 query. Created an auditable improvement ledger and refreshed the management report and usage ledger.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

@@ -1,108 +1,136 @@
 # CUAI CEO Report
 
-**As of:** 2026-08-14T09:50:00-04:00  
-**Operating posture:** Active optimization. Publishing, production, GA4 and Buffer are healthy; LinkedIn reach and onsite engagement depth remain the main growth constraints. Search Console measurement remains isolated and degraded.
+**As of:** 2026-08-17T09:55:00-04:00  
+**Operating posture:** Active optimization. Production, core GA4 and Buffer are healthy. A material article-script instrumentation defect was repaired in this run; historical custom editorial-event data on affected pages is therefore quality-degraded before the repair. Search Console remains isolated and degraded.
 
 ## Desktop dashboard
 
 | Area | Current evidence | Goal and deadline | Owner / next review |
 |---|---|---|---|
-| System | Production `4a107cc` READY; GA4 and Buffer endpoints HTTP 200/`ok=true`; no Vercel production warning/error/fatal logs in 24h | Keep production READY, both reporting endpoints healthy, and zero unresolved production incidents >1 hour through Aug. 21 | Reliability Watch / Aug. 17 |
-| Publishing | Aug. 14 News article live: **Colorado’s ASSET Act Creates a Fraud-Hold Workflow for Credit Unions**; 14 candidates evaluated across 8 beats | Complete the next 5 weekday cycles with 100% live/deployment validation and no forced classifications | Daily Publisher / Aug. 17 |
-| LinkedIn | FinCEN High post scheduled today at 12:30 p.m. ET; Colorado High post scheduled Aug. 17 at 12:30 p.m. ET | Complete the current 3-post High-priority hook cohort by Aug. 21; median reach >=12, median GA4 sessions/post >=2, Buffer engagement >=5%, and >=1 engaged LinkedIn session across the cohort | Distribution Agent / Aug. 17 and Aug. 21 |
-| GA4 growth | 7d: 41 users, 55 sessions, 113 views, 17 engaged sessions, 30.9% engagement, 8 90%-scrollers. 28d: 132 users, 219 sessions, 573 views, 85 engaged sessions, 38.8% engagement, 29 90%-scrollers | By Aug. 21: >=60 users, >=80 sessions, >=180 views, >=25 engaged sessions, >=33% engagement, >=10 90%-scrollers | Growth Agent / Aug. 17 |
-| Acquisition | 7d direct 47/55 sessions (85.5%), Google 4, LinkedIn 4. 28d direct 182/219 (83.1%), Google 15, LinkedIn 13 | By Aug. 31 reduce direct share to <=78% and raise Google + LinkedIn to >=35 combined rolling-28d sessions | Growth + SEO / Aug. 21 checkpoint |
-| Conversion | 7d newsletter intent 38 events from 3 users; newsletter page 45 views from 4 users; source clicks 1; no related-content-click row returned | By Aug. 21: >=5 unique newsletter-intent users and >=3 source-click users; diagnose repeat/QA concentration before changing CTA placement | Conversion Agent / Aug. 17 |
+| System | Production `833bddc` READY; GA4 and Buffer HTTP 200/`ok=true`; production `/assets/site.js` repaired from 404 to 200; no Vercel runtime errors found in the prior 24h check | Keep production READY, both reporting endpoints healthy, and zero unresolved production incidents >1 hour through Aug. 21 | Reliability Watch / Aug. 18 |
+| Publishing | Aug. 17 High News live: **House Bill Would Expand Federal Credit Union Investment Authority**; 14 candidates evaluated across 8 beats | Complete next weekday cycle with 100% deployment/live validation and no forced classification; search the current accessibility/member-service gap without forcing publication | Daily Publisher / Aug. 18 |
+| LinkedIn | Colorado High post scheduled Aug. 17 at 12:30 p.m. ET; investment-authority High post scheduled Aug. 18 at 11:30 a.m. ET | Complete the current 3-post High-priority hook cohort by Aug. 18; decide by Aug. 21. Targets: median reach >=12, median GA4 sessions/post >=2, Buffer engagement >=5% | Distribution Agent / Aug. 18 and Aug. 21 |
+| Reliable GA4 traffic | 7d: 56 users, 64 sessions, 122 views. 28d: 151 users, 231 sessions, 573 views | By Aug. 21: >=65 users, >=75 sessions and >=150 page views in rolling 7d | Growth Agent / Aug. 18 |
+| Engagement | 7d: 19 engaged sessions, 29.7% engagement, 6 GA4 90%-scrolled users. 28d: 83, 35.9%, 30. Custom CUAI article-event history is incomplete on pages that referenced missing `site.js` pre-fix | By Aug. 24, after repaired measurement has had time to observe traffic: >=25 engaged sessions, >=33% engagement and >=10 90%-scrolled users in rolling 7d | Growth + Analytics / Aug. 18 checkpoint |
+| Acquisition | 7d direct 54/64 sessions (84.4%), LinkedIn 5, Google 3. 28d direct 191/231 (82.7%), LinkedIn 15, Google 15 | By Aug. 31 reduce direct share to <=78% and raise Google + LinkedIn to >=40 combined rolling-28d sessions | Growth + Distribution / Aug. 21 |
+| Conversion | 7d newsletter-intent 38 events from 3 users; raw event count is concentrated. No 7d source-click or related-content-click row. Custom event history is partially incomplete pre-fix | By Aug. 24: >=6 unique newsletter-intent users and >=3 source-click users in 7d, evaluated on post-repair instrumentation rather than raw repeat events | Conversion + Analytics / Aug. 18 checkpoint |
 
-## System health
+## Data-source status
 
-**Healthy core system; search measurement degraded.** The latest READY production deployment is `4a107ccd4bd74d57b19fbfd1c6cf967bee4b4725`, created from the completed Colorado LinkedIn schedule ledger update. The live GA4 endpoint returned HTTP 200 with `ok=true`, `source=google-analytics-data-api`, property `520110560`; the live Buffer endpoint returned HTTP 200 with `ok=true`, `source=buffer`; Vercel returned no production warning/error/fatal logs in the prior 24 hours.
-
-Search Console remains unavailable inside the GA4 feed. The optional GA4 request still returns `ga4_data_api_error` with the dimensions/metrics incompatibility message. Reliability Watch already proved two speculative GA4-query repairs unsafe in Production and rolled them back in PR #128. A safer direct Search Console API probe exists on branch commit `e1423c8`; its Vercel preview is READY, but functional validation stops at HTTP 503 `search_console_service_account_missing` because Preview does not receive the Production-only read credential. No Search Console plugin/action is available in the current runtime. Under the current guardrails, the direct probe must not merge until a safe Preview credential path is explicitly authorized.
+- **GitHub:** retrieved successfully from current `main`; publisher policy, newsroom runbook, analytics policy/config, growth strategy, social queue, source-health state, reporting contract, latest report/ledger, relevant article/template/runtime files and 30 recent commits were reviewed.
+- **Vercel production/runtime:** retrieved successfully. The post-repair production deployment is READY on `833bddc9cb0bc1b7555d5cb40da41c9566147edc`. The current site-script compatibility asset returns HTTP 200. The prior 24-hour runtime check found no production errors.
+- **GA4 endpoint:** retrieved successfully after resolving the exact current Production commit; HTTP 200, `ok=true`, `source=google-analytics-data-api`, property `520110560`.
+- **Buffer:** retrieved successfully against the exact current Production commit; HTTP 200, `ok=true`, `source=buffer`; 4/4 7-day posts and 11/11 28-day posts have metrics ready.
+- **Search Console via GA4:** not retrieved. The optional request returns `ga4_data_api_error`: the requested organic Google Search metrics and dimension are incompatible.
+- **Search Console direct action:** unavailable in the current runtime. An existing isolated direct-read preview remains functionally blocked because the read-only Google credential is not available in Vercel Preview (`search_console_service_account_missing`).
 
 ## Newsroom output and portfolio
 
-- **Published Aug. 14:** [Colorado’s ASSET Act Creates a Fraud-Hold Workflow for Credit Unions](https://creditunionainews.com/news/colorado-asset-act-credit-union-fraud-holds.html).
-- Classification: **News / High**, fraud-security beat, primarily fraud operations and compliance leaders, source tier 1, score 98.8.
-- The live article returned HTTP 200 with canonical metadata, GA4 tag, NewsArticle structured data, required editorial analytics attributes, newsletter CTA and related coverage present.
-- The cycle evaluated **14 candidates across 8 beats** and rejected weaker vendor launches, event promotion, commentary, uncorroborated outage reporting and repetitive FinCEN coverage rather than lowering the article gate.
-- Recent portfolio sequence is diversified across vendor-management (Aug. 12), regulatory-governance (Aug. 13) and fraud-security (Aug. 14). The current coverage gap remains **AI accessibility and disability-inclusive member-service testing**; treat it as a search priority, never a publication mandate.
+- **Published Aug. 17:** [House Bill Would Expand Federal Credit Union Investment Authority](https://creditunionainews.com/news/federal-credit-union-investment-authority-bill.html).
+- Classification: **News / High**, finance/treasury primary function with board-strategy and risk/compliance relevance; source tier 1; publisher score 98.3.
+- The cycle evaluated **14 candidates across 8 beats** and preserved the publication gate rather than forcing weaker candidates.
+- The article is live and production-verified. Its operational framing is appropriately cautious: the introduced bill is treated as a preparation signal, not present investment authority.
+- Recent portfolio coverage spans vendor management, regulatory/compliance, fraud/security and finance/treasury. The current search gap remains **AI accessibility and disability-inclusive member-service testing**; HR/workforce also merits deliberate scanning when credible current evidence exists. Neither is a publication quota.
 
 ## LinkedIn and joined funnel
 
-The selective Library gate is functioning as intended: the vendor-exit Library Insight sent Aug. 13 through the approved company-page workflow. Today’s FinCEN High post is scheduled for **Aug. 14 at 12:30 p.m. ET**, and today’s Colorado High article is scheduled for the next free fixed slot, **Aug. 17 at 12:30 p.m. ET**, preserving the one-post-per-day and five-per-week limits.
+The current standardized UTM path is healthy. Current company-page posts preserve `linkedin / organic_social / cuai_news / <immutable item id>`, and the legacy July 22 EricaAssist post remains correctly quality-labeled as historically unattributable rather than being retrofitted.
 
-Current 7-day Buffer evidence covers **3 metrics-ready sent posts: 27 impressions, 17 reach, 5.42% mean Buffer engagement**. GA4 attributes **4 LinkedIn campaign sessions and 1 engaged session** to current UTM-tagged posts, for a directional funnel of 27 impressions -> 4 sessions -> 1 engaged session. The session yield is materially stronger than the broader recent history, but the sample is tiny and reach remains the limiting stage.
+The clean recent cohort that overlaps current GA4 evidence is:
 
-The 28-day Buffer cohort has **10 metrics-ready posts, 755 impressions and 547 reach**. One legacy EricaAssist post contributed 230 impressions / 165 reach but has no recoverable historical distribution URL and must remain outside fully attributable comparisons. The remaining tagged cohort therefore represents **525 known-tagged impressions**, while GA4 records **13 LinkedIn campaign sessions and 3 engaged sessions**. Historical channel attribution remains quality-labeled rather than discarded.
+- Guardian: **29 Buffer impressions / 20 reach -> 3 GA4 sessions -> 1 engaged session**.
+- Vendor Exit: **2 / 2 -> 1 -> 0**.
+- FinCEN BOI: **4 / 3 -> 1 -> 0**.
 
-## GA4 growth and audience quality
+Combined: **35 impressions / 25 reach -> 5 attributable GA4 sessions -> 1 engaged session**. This suggests traffic yield from the small exposed audience is usable, while LinkedIn reach is still the main distribution constraint.
+
+Buffer 7d overall: **4 posts, 47 impressions, 33 reach, 2.95% mean engagement**. Buffer 28d: **11 posts, 775 impressions, 563 reach, 4.09% mean engagement**. The older Communication FCU post accounts for a large share of historical reach; do not generalize from it alone.
+
+The FinCEN High post is experiment observation #1: **4 impressions, 3 reach, 0% Buffer engagement, 1 GA4 session, 0 engaged sessions**. Colorado is scheduled today at **12:30 p.m. ET** as observation #2; the Aug. 17 investment-authority article is scheduled **Aug. 18 at 11:30 a.m. ET** as observation #3. No cadence increase or duplicate post was introduced.
+
+## GA4 growth and evidence quality
 
 | Metric | 7 days | 28 days | 7d vs 28d weekly pace |
 |---|---:|---:|---:|
-| Active users | 41 | 132 | +24.2% |
-| Sessions | 55 | 219 | +0.5% |
-| Page views | 113 | 573 | -21.1% |
-| Engaged sessions | 17 | 85 | -20.0% |
-| Engagement rate | 30.9% | 38.8% | -7.9 pts |
-| 90% scrollers | 8 | 29 | +10.3% |
+| Active users | 56 | 151 | +48.3% |
+| Sessions | 64 | 231 | +10.8% |
+| Page views | 122 | 573 | -14.8% |
+| Engaged sessions | 19 | 83 | -8.4% |
+| Engagement rate | 29.7% | 35.9% | -6.2 pts |
+| GA4 90% scrolled users | 6 | 30 | -20.0% |
 
-Audience volume is still healthy relative to the 28-day pace, but depth remains the binding constraint: users are +24.2% above weekly pace while page views are -21.1% and engaged sessions are -20.0%. The homepage and newsletter page account for 90 of 113 weekly page views, while article-level traffic is thin. The 38 newsletter-intent events came from only three users, so raw event volume is not a trustworthy conversion KPI without de-concentrating repeat/QA behavior.
+**Reliable history:** users, sessions, page views and source/medium acquisition continue to be usable because the inline GA4 configuration was present on affected articles. Audience acquisition is therefore genuinely ahead of the 28-day weekly pace even though page consumption is not keeping up.
 
-Acquisition is also still too dependent on direct traffic: 85.5% of weekly sessions and 83.1% of 28-day sessions. Google organic and LinkedIn each contributed four sessions in the current week; Google quality weakened this week to 25% engagement, while LinkedIn produced 25% engagement. Do not overreact to either from four sessions.
+**Quality-degraded history:** CUAI custom events such as `article_view`, `engaged_reader`, custom `scroll_depth`, `newsletter_intent`, `source_click` and `related_content_click` were not reliably emitted on recent articles that referenced the nonexistent `/assets/site.js`. The CEO must not use pre-repair custom-event totals from those pages as though measurement were complete. GA4's own engaged-session, engagement-rate and built-in 90%-scrolled-user metrics remain useful aggregate signals, but article-level custom depth/conversion conclusions need post-repair evidence.
 
-## Experiment
+The newsletter-intent concentration was separately inspected: `assets/app.js` emits the event on subscribe/newsletter link clicks, not automatically on page load. The 38 events from three users therefore warrant a unique-user KPI rather than an assumption that 38 separate readers expressed intent. No root cause was established for a second instrumentation bug, so no CTA change was made.
 
-**Active:** `linkedin-relevance-led-hook-2026-08-12`.
+## Active experiment
 
-Hypothesis: otherwise-qualified High-priority posts that lead with the named institution/event, immediate consequence and one concrete credit-union action will improve reach and attributable sessions without reducing onsite engagement quality.
+**Only active growth experiment:** `linkedin-relevance-led-hook-2026-08-12`.
 
-The FinCEN post scheduled for Aug. 14 becomes experiment observation #1 after send; the Colorado post scheduled for Aug. 17 becomes observation #2. The recovered vendor-exit Library post remains useful distribution evidence but does not enter the High-only comparison cohort. Keep the cohort at three otherwise-qualified High posts. Preliminary review Aug. 18; decision review Aug. 21. Stop or revise if median reach remains <12, median GA4 sessions/post remains <2, or onsite engagement deteriorates materially.
+**Hypothesis:** on otherwise-qualified High stories, leading with the named institution/event, immediate consequence and one concrete credit-union action will improve reach and attributable sessions without degrading onsite quality.
 
-## Auto-fixes and process evolution
+**Evidence:** current clean LinkedIn attribution is working, but reach is small; FinCEN observation #1 is below target.  
+**Bounded change:** hook/framing only; preserve editorial selection, post frequency, fixed schedule, destination, image controls and immutable UTMs.  
+**Primary metrics:** Buffer reach, GA4 attributed sessions/post, Buffer engagement, engaged LinkedIn sessions as a quality guardrail.  
+**Start:** Aug. 12.  
+**Review/stop:** complete three High observations by Aug. 18; preliminary review Aug. 18; decision Aug. 21. Revise/stop if median reach remains <12, median GA4 sessions/post <2 or onsite quality materially worsens.
 
-- **No new production auto-fix merged this run.** Core production is healthy.
-- **Search Console prevention path advanced but is intentionally unmerged:** reviewed the isolated direct Search Console API probe at `e1423c8`; preview builds READY but functional validation is blocked by `search_console_service_account_missing`. This avoids a third speculative Production-only GA4 query change.
-- **Attribution quality remains repaired:** the Buffer reconciliation fix continues to mark current repository-UTM posts as tracked while preserving the July 22 legacy exception instead of inventing a URL.
-- **Distribution sample improvement is active:** two qualified High posts are now reserved in consecutive eligible slots without increasing cadence or relaxing editorial gates.
+No second growth experiment is opened today. Instead, the CEO executed the higher-value measurement repair so the next onsite optimization decision is based on functioning instrumentation rather than knowingly incomplete custom-event history. This is active optimization through self-healing, not a return to baseline collection.
+
+## Reliability and auto-fix
+
+### Completed: article shared-script recovery
+
+Root cause was established during this run: several recent published articles referenced `/assets/site.js`; the file did not exist in GitHub or Production and returned HTTP 404. The canonical article template uses `/assets/app.js`, which contains the CUAI custom editorial analytics layer.
+
+A narrow repair was implemented on `fix/cuai-site-script-recovery-2026-08-17`:
+
+1. Added `/assets/site.js` as a backward-compatible loader for the canonical `/assets/app.js` bundle, avoiding a mass rewrite of already-published articles.
+2. Strengthened `scripts/validate-analytics.mjs` so a new article fails validation when it references a missing shared `app.js`/`site.js` asset.
+3. Passed Node syntax checks, reached READY Preview, verified Preview `site.js` and `app.js` HTTP 200, reviewed the two-file diff, merged **PR #131**, reached READY Production on `833bddc`, verified Production `site.js` HTTP 200, then reran GA4 and Buffer successfully on that exact Production commit.
+
+Risk was low and backward-compatible; no credentials, editorial gates, schedule, destination, legal terms or external authority changed. Rollback is simply PR #131 reversal/removal of the compatibility loader plus validator check.
+
+## Improvement backlog
+
+A canonical `automation/improvement-ledger.json` now records auditable evidence, proposed change, benefit, risk, validation, status/result and rollback.
+
+1. **Article shared-script compatibility:** completed via PR #131; production verified.
+2. **Search Console direct read:** remains blocked on safe read-only Preview credential; no unvalidated Production change merged.
+3. **Source-health refresh:** queued because `automation/source-health.json` was last fully checked July 20. Reliability/source-health maintenance owns a bounded refresh by **Aug. 18 at 5:00 p.m. ET**, including the current Aug. 11-17 primary-source set.
 
 ## CEO priorities
 
-1. **Recover onsite engagement depth while holding audience volume.** By Aug. 21 reach at least 25 engaged sessions, 180 page views and 33% engagement in the rolling 7-day window.
-2. **Turn the next two High posts into useful distribution evidence.** Deliver FinCEN today and Colorado Monday with immutable UTMs, then evaluate reach -> attributed session -> engaged session as the primary funnel.
-3. **Resolve Search Console through a safe direct-read path, not another speculative GA4 query.** Do not merge the probe until Preview can authenticate read-only and the endpoint is functionally validated.
+1. **Protect measurement integrity, then recover reading depth.** Hold the stronger audience acquisition while verifying that post-repair article events behave normally; target >=65 users, >=75 sessions and >=150 page views by Aug. 21, then >=25 engaged sessions / >=33% engagement / >=10 90%-scrollers by Aug. 24.
+2. **Finish the current LinkedIn experiment cleanly.** Deliver Colorado today and the investment-authority post tomorrow with exact UTMs and no duplicate; make the experiment decision Aug. 21 instead of extending the cohort indefinitely.
+3. **Refresh stale source health without burdening the publisher.** Complete the bounded maintenance check by Aug. 18 and keep temporary-source failures distinct from removals or contradictions.
 
 ## Agent commitments
 
 | Owner | Commitment | Deadline | Success metric | Next review |
 |---|---|---|---|---|
-| Daily Publisher | Complete the next weekday cycle, preserving source/coverage diversity and treating accessibility as a search priority only when evidence qualifies | Aug. 17 | One validated article or documented quality-gated no-publication outcome; 100% live/deployment checks | Aug. 17 |
-| Growth Agent | Diagnose why user volume is ahead of pace while article/page depth is behind, using page and event evidence rather than raw newsletter clicks | Aug. 17 | Identify top 3 depth constraints and one reversible onsite experiment; interim 7d >=20 engaged sessions and >=130 page views | Aug. 17 |
-| Conversion Agent | Audit the 38 newsletter-intent events / 3-user concentration using aggregate counts only | Aug. 17 | Establish whether repeat/QA concentration explains the event spike and set unique-intent-user KPI; no PII | Aug. 17 |
-| Distribution Agent | Deliver FinCEN today and preserve Colorado’s Aug. 17 slot; continue the three-High-post hook cohort | Aug. 17 | No duplicate; UTMs preserved; FinCEN becomes observation #1 and Colorado #2; cohort targets unchanged | Aug. 17 / Aug. 21 |
-| Analytics Engineer | Keep the direct Search Console probe isolated and unmerged until Preview can authenticate read-only; do not retry GA4 dimension/metric guesses | Aug. 18 | READY preview plus HTTP 200 `source=google-search-console-api`, or exact access blocker; zero regression to GA4 | Aug. 18 |
-| Reliability Watch | Continue production, GA4, Buffer and social-handoff checks; aggregate healthy polls and escalate only material state changes | Daily | Zero unresolved material incidents >1 hour; no duplicate social scheduling; reporting endpoints remain healthy | Aug. 17 |
+| Daily Publisher | Complete the next weekday article cycle and scan accessibility/member-service plus HR/workforce gaps alongside the full beat set without forcing publication | Aug. 18 | One fully validated article or quality-gated no-publication outcome; 100% live/deployment checks; shared-script validator passes | Aug. 18 |
+| Distribution Agent | Deliver Colorado today and investment-authority Aug. 18 using existing fixed slots and immutable UTMs | Aug. 18 11:30 a.m. ET | Both eligible sends have no duplicate/UTM failure; High experiment reaches three observations | Aug. 18 / Aug. 21 |
+| Growth + Analytics | Verify post-repair custom event integrity on new article traffic and separate reliable aggregate GA4 metrics from degraded pre-fix custom-event history | Aug. 18 | No broken shared-script references; newly observed article traffic can emit CUAI custom events; no fabricated zero where traffic is absent | Aug. 18 |
+| Conversion Agent | Use unique newsletter-intent users rather than raw event count and defer CTA treatment changes until post-repair custom-event evidence is clean | Aug. 18 | KPI definition uses unique users; no PII; next experiment proposal only if post-repair evidence supports it | Aug. 18 |
+| Reliability / Source Health | Refresh stale source-health ledger and current primary-source links outside the publisher cycle | Aug. 18 5:00 p.m. ET | Existing registry and recent sources rechecked; statuses evidence-backed; no published content removed from temporary unavailability alone | Aug. 19 |
+| Analytics Engineer | Keep direct Search Console probe isolated until read-only Preview authentication exists; do not retry speculative GA4 search queries | Aug. 21 | HTTP 200 direct Search Console read in Preview or exact access blocker; zero GA4 regression | Aug. 21 |
+| Reliability Watch | Continue production, GA4, Buffer and social-handoff checks; aggregate healthy polls | Daily | Zero unresolved material incidents >1 hour; reporting endpoints healthy; no duplicate social handoff | Aug. 18 |
 
 ## Delegated work and agent activity
 
-- **Daily Publisher:** evaluated 14 candidates across 8 beats, published one High News article, validated production and reserved its LinkedIn package for the next free fixed slot.
-- **Reliability Watch:** prior material Search Console investigation established that two GA4-query fixes fail Production-only validation and rolled them back safely; no new core incident observed this run.
-- **CUAI CEO:** reviewed 12 management/evidence inputs and 30 recent commits; retrieved live GA4 and Buffer; checked latest production deployment, runtime warnings/errors/fatals, current article, social queue, attribution state and the direct Search Console probe; refreshed the management report and usage ledger on a dedicated reporting branch.
-- **Specialist subagents spawned:** 0. Parallel specialist delegation was not necessary because the current blockers were already isolated and the reporting work was sequential.
-
-## Data-source status
-
-- **GA4 endpoint:** retrieved successfully, HTTP 200 / `ok=true` / `source=google-analytics-data-api`, property `520110560`.
-- **Buffer:** retrieved successfully, HTTP 200 / `ok=true` / `source=buffer`; 3/3 metrics-ready posts in 7d and 10/10 in 28d.
-- **Vercel production/runtime:** retrieved successfully; latest production READY on `4a107cc`; no production warning/error/fatal logs in 24h.
-- **Search Console via GA4:** not retrieved; optional request returns `ga4_data_api_error` because the dimensions and organic-search metrics are incompatible.
-- **Search Console direct API:** not retrieved; isolated preview probe returns HTTP 503 `search_console_service_account_missing` before any Search Console API request can run. No direct Search Console connector/plugin is available.
-- **GitHub:** retrieved successfully from current `main`; authoritative publisher policy, analytics policy, growth strategy, source registry, coverage ledger, daily/newsroom state, social queue, reporting contract, recent commits, prior CEO report and usage ledger were reviewed.
+- **Daily Publisher:** evaluated 14 candidates across 8 beats, published one High News article, validated Production and queued its company-page LinkedIn package for Aug. 18.
+- **Distribution:** today's Colorado post remains scheduled for Aug. 17 at 12:30 p.m. ET; the investment-authority article occupies the next eligible Aug. 18 11:30 a.m. ET slot with approved UTM structure.
+- **Reliability Watch:** no separate material recovery entry was required before this CEO run; healthy/no-op checks remain aggregated rather than creating poll noise.
+- **CUAI CEO:** reviewed approximately 14 management/evidence files plus 30 recent commits; resolved current Production twice across the repair lifecycle; retrieved GA4 and Buffer before/after the repair; checked production/runtime/live-article state; diagnosed one material analytics/runtime defect; created and validated a two-file repair; merged PR #131; verified new Production; created the improvement ledger; and refreshed management/usage reporting.
+- **Specialist subagents spawned:** 0. The material issue was localized enough to resolve sequentially without adding a persistent role or unnecessary delegation.
 
 ## Usage
 
-Usage is an **operational workload proxy**, not exact OpenAI tokens, credits, plan percentage or cost. Observable workload for this CEO run: 12 management/evidence inputs reviewed, 30 recent commits reviewed, 14 publisher candidates and 8 beats represented, 1 GA4 query, 1 Buffer query, 1 production deployment check, 1 runtime health check, 1 live-article verification, 1 direct Search Console preview probe, 1 plugin availability check, 1 reporting branch created, and 2 reporting files updated. No specialist subagents were spawned.
+Usage is an **operational workload proxy**, not exact OpenAI tokens, credits, plan percentage or cost. Observable work this run includes management-file/commit review, live GA4 and Buffer queries, Vercel deployment/runtime checks, live asset/article verification, one analytics root-cause investigation, one feature branch, two repair files, one preview validation, one low-risk PR merge, post-merge Production verification, and three management/reporting files refreshed or created. Exact native per-run OpenAI usage was not available and is not estimated.
 
 ## Decisions required from Tom
 
-**One access decision:** authorize a safe Vercel Preview credential path for the existing read-only Google service account (or an equivalent read-only Search Console test credential) so the isolated direct Search Console probe can be functionally validated before merge. Until then, Search Console measurement remains degraded but core GA4, publishing and distribution remain healthy.
+**One access action:** authorize a safe Vercel Preview path for the existing read-only Google service-account credential (or an equivalent read-only Search Console test credential) so the isolated direct Search Console probe can be functionally validated before merge. Do not paste the credential into chat. Core publishing, GA4 and Buffer do not depend on this access.

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-17T09:55:00-04:00",
+  "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
+  "entries": [
+    {
+      "id": "site-script-compatibility-2026-08-17",
+      "evidence": "Multiple recent published articles referenced /assets/site.js, while the canonical article template references /assets/app.js. The production /assets/site.js path returned HTTP 404. assets/app.js contains the CUAI article_view, engaged_reader, scroll_depth, newsletter_intent, source_click and related_content_click logic, so affected pages retained basic inline GA4 page measurement but did not reliably execute the CUAI editorial event layer.",
+      "proposedChange": "Restore /assets/site.js as a backward-compatible loader for the canonical /assets/app.js bundle and make the analytics validator fail when a new article references a missing shared app/site script.",
+      "expectedBenefit": "Restore custom editorial measurement and shared article behavior on already-published pages without rewriting them, while preventing the same broken-asset class from passing future publication validation.",
+      "risk": "low",
+      "validation": [
+        "node syntax checks passed for the compatibility loader and validator",
+        "Vercel preview reached READY",
+        "preview /assets/site.js returned HTTP 200 and loaded /assets/app.js",
+        "preview /assets/app.js returned HTTP 200",
+        "PR #131 diff was reviewed and mergeability verified",
+        "production deployment reached READY on commit 833bddc9cb0bc1b7555d5cb40da41c9566147edc",
+        "production /assets/site.js returned HTTP 200",
+        "GA4 and Buffer reporting endpoints remained HTTP 200/ok=true after deployment"
+      ],
+      "status": "completed",
+      "result": "PR #131 merged. Historical overall GA4 traffic/acquisition remains usable, but CUAI custom article-event history on pages that referenced the missing script is quality-labeled as incomplete before the repair.",
+      "rollback": "Revert PR #131 or remove assets/site.js and revert the validator's shared-script existence check."
+    },
+    {
+      "id": "search-console-direct-read-2026-08-13",
+      "evidence": "The canonical GA4 reporting endpoint still returns ga4_data_api_error for its optional Search Console request because the requested organic-search metrics and dimension are incompatible. Two speculative GA4-query changes were previously rolled back after Production-only validation failed. An isolated direct Search Console probe has a READY preview but cannot authenticate because the read-only Google credential is not available in Preview.",
+      "proposedChange": "Validate the isolated direct Search Console API read path using a safe read-only Preview credential before any merge; do not retry speculative GA4 dimension/metric combinations in Production.",
+      "expectedBenefit": "Restore search-performance reporting without risking the healthy core GA4 feed or weakening credential boundaries.",
+      "risk": "low-to-medium",
+      "validation": [
+        "existing direct-read preview build is READY",
+        "functional validation currently stops at search_console_service_account_missing",
+        "no direct Search Console connector/plugin is available in the current runtime"
+      ],
+      "status": "blocked-on-preview-readonly-credential",
+      "result": "No unvalidated Search Console change is merged; GA4 core reporting remains healthy.",
+      "rollback": "No Production change is currently active."
+    },
+    {
+      "id": "source-health-refresh-2026-08-17",
+      "evidence": "automation/source-health.json was last fully checked on 2026-07-20 and records 28 URLs, including two temporarily unavailable sources. The ledger is now stale relative to the current newsroom cycle.",
+      "proposedChange": "Run a bounded source-health maintenance refresh against the existing registry and the primary sources used in the most recent Aug. 11-17 newsroom cycle; update statuses only from verified checks.",
+      "expectedBenefit": "Reduce stale-source and broken-link risk without adding work to the daily article publisher.",
+      "risk": "low",
+      "validation": [
+        "recheck each existing source URL",
+        "verify current primary-source links used in the latest newsroom cycle",
+        "preserve temporarily unavailable versus removed/contradicted distinctions"
+      ],
+      "status": "queued",
+      "owner": "reliability/source-health maintenance",
+      "deadline": "2026-08-18T17:00:00-04:00",
+      "result": "Pending next maintenance cycle.",
+      "rollback": "Revert only any inaccurate source-health status changes; do not alter published reporting solely because a source is temporarily unavailable."
+    }
+  ]
+}
