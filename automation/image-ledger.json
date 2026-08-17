@@ -3,6 +3,25 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "federal-credit-union-investment-authority-bill",
+      "articleUrl": "/news/federal-credit-union-investment-authority-bill.html",
+      "imagePath": "/assets/federal-credit-union-investment-authority-bill.jpg",
+      "publishedAt": "2026-08-17T07:00:00-04:00",
+      "medium": "ink-and-linocut",
+      "subject": "financial-object-study",
+      "composition": "asymmetric-editorial",
+      "perspective": "eye-level",
+      "palette": "monochrome-ink-terracotta-cream",
+      "lighting": "graphic-flat-light",
+      "texture": "newsprint-grain-paper-fiber-ink-wash",
+      "scene": "proposed-corporate-debt-and-asset-backed-security-paths-behind-statutory-gate",
+      "conceptScore": 99.1,
+      "conceptAlternatives": [
+        {"medium":"soft-editorial-illustration","subject":"documents-and-controls","score":96.8},
+        {"medium":"mixed-media-collage","subject":"architecture-and-infrastructure","score":97.4}
+      ]
+    },
+    {
       "id": "colorado-asset-act-credit-union-fraud-holds",
       "articleUrl": "/news/colorado-asset-act-credit-union-fraud-holds.html",
       "imagePath": "/assets/colorado-asset-act-credit-union-fraud-holds.jpg",

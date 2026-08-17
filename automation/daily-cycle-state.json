@@ -6,17 +6,17 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-14",
+    "date": "2026-08-17",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 14,
     "beatsSearched": [
+      "finance-treasury",
       "regulatory-governance",
       "fraud-security",
       "payments-deposits",
       "lending-mortgage",
       "operations-member-service",
-      "finance-treasury",
       "vendor-management",
       "workforce"
     ],
@@ -24,98 +24,98 @@
       {
         "type": "article",
         "classification": "News",
-        "title": "Colorado’s ASSET Act Creates a Fraud-Hold Workflow for Credit Unions",
-        "url": "https://creditunionainews.com/news/colorado-asset-act-credit-union-fraud-holds.html",
-        "primaryFunctionalAudience": "Fraud operations and compliance leaders",
+        "title": "House Bill Would Expand Federal Credit Union Investment Authority",
+        "url": "https://creditunionainews.com/news/federal-credit-union-investment-authority-bill.html",
+        "primaryFunctionalAudience": "Finance and treasury leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-08-17"
+        "socialDecision": "eligible-high-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "FinCEN Human-Smuggling Trends Analysis",
-        "reason": "authoritative and current, but it would repeat the prior day’s FinCEN and BSA/AML source concentration; retained as an alert and future coverage opportunity",
-        "primaryAudience": "BSA/AML and fraud leaders",
+        "title": "CFPB Ends Public Complaint Narratives and Visualizations",
+        "reason": "material complaint-data change, but its direct credit-union decision value was less specific than the selected federal-credit-union investment bill",
+        "primaryAudience": "compliance and complaint-management leaders",
         "secondaryAudiences": [
-          "payments leaders",
+          "operations leaders",
+          "data and analytics leaders"
+        ]
+      },
+      {
+        "title": "Strata Credit Union Selects Alkami Digital Banking",
+        "reason": "vendor-supplied selection announcement without production outcomes or independently verified member impact",
+        "primaryAudience": "digital-banking and member-service leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "360factors Launches Fair-Lending Compliance Testing Agent",
+        "reason": "vendor product claim without a verified credit-union deployment, control review or performance evidence",
+        "primaryAudience": "fair-lending and compliance leaders",
+        "secondaryAudiences": [
+          "lending leaders",
+          "data teams"
+        ]
+      },
+      {
+        "title": "Western Union and Intermex Regulatory Update",
+        "reason": "important remittance transaction development but indirect credit-union applicability and unresolved California approval",
+        "primaryAudience": "payments leaders",
+        "secondaryAudiences": [
+          "risk leaders",
           "executives"
         ]
       },
       {
-        "title": "Navy Federal Mobile-Banking Outage",
-        "reason": "material member-service disruption, but accessible evidence lacked an official incident report, root cause or recovery controls",
-        "primaryAudience": "digital-banking and operations leaders",
+        "title": "ABA Calls for Federal AI Regulation",
+        "reason": "advocacy position rather than enacted guidance or an operating event, with weaker direct credit-union applicability",
+        "primaryAudience": "risk and governance leaders",
         "secondaryAudiences": [
-          "member-service leaders",
+          "executives",
           "technology leaders"
         ]
       },
       {
-        "title": "TruStage Cyberattack Recovery Update",
-        "reason": "no material primary-source resolution or operating fact beyond the previously evaluated incident-response issue",
-        "primaryAudience": "cybersecurity and risk leaders",
+        "title": "AI Agents as Insider-Risk Commentary",
+        "reason": "credible security analysis but commentary without a new primary-source incident, standard or control requirement",
+        "primaryAudience": "cybersecurity leaders",
         "secondaryAudiences": [
-          "operations leaders",
-          "vendor-management teams"
+          "risk leaders",
+          "technology leaders"
         ]
       },
       {
-        "title": "Blend and Prove Prefill Integration",
-        "reason": "vendor-controlled conversion claims without independently verified credit-union production outcomes",
-        "primaryAudience": "lending and digital-product leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "member-experience leaders"
-        ]
-      },
-      {
-        "title": "Synchrony Appoints a Chief AI Officer",
-        "reason": "large-bank workforce development with indirect credit-union applicability and no new operating control",
-        "primaryAudience": "executives and strategy leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "HR leaders"
-        ]
-      },
-      {
-        "title": "Loan Vision Launches Luna Mortgage Accounting AI",
-        "reason": "vendor product launch without a verified credit-union deployment, control assessment or result",
-        "primaryAudience": "mortgage finance leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "vendor-management teams"
-        ]
-      },
-      {
-        "title": "Kinective Inc. 5000 Recognition",
-        "reason": "vendor award and promotion rather than a new infrastructure decision or production milestone",
-        "primaryAudience": "vendor-management teams",
-        "secondaryAudiences": [
-          "technology leaders",
-          "executives"
-        ]
-      },
-      {
-        "title": "PenFed Branch Opening",
-        "reason": "institutional expansion without a distinct AI, fintech or digital-operating development",
+        "title": "Wisconsin Credit Unions Respond to Tornado",
+        "reason": "valuable member-service response but limited primary operational detail for a differentiated full article",
         "primaryAudience": "operations and member-service leaders",
         "secondaryAudiences": [
-          "marketing leaders",
+          "executives",
+          "business-continuity teams"
+        ]
+      },
+      {
+        "title": "OCC Updates Bank Accounting Advisory Series",
+        "reason": "current accounting guidance for national banks and federal savings associations, not directly applicable to credit unions",
+        "primaryAudience": "finance and accounting leaders",
+        "secondaryAudiences": [
+          "audit leaders",
           "executives"
         ]
       },
       {
-        "title": "Wescom Second-Quarter Earnings After Layoffs",
-        "reason": "secondary and paywalled reporting with limited AI or fintech decision value",
-        "primaryAudience": "finance and workforce leaders",
+        "title": "Mortgage Rates Edge Lower",
+        "reason": "market snapshot without a distinct credit-union operating, technology or policy decision",
+        "primaryAudience": "mortgage and lending leaders",
         "secondaryAudiences": [
-          "executives",
-          "operations leaders"
+          "finance leaders",
+          "marketing teams"
         ]
       },
       {
-        "title": "Nine Credit Unions Join Velera Digital Asset Lab",
-        "reason": "vendor-led exploration announcement already evaluated, without production outcomes",
+        "title": "OwlPay Harbor Reports Cross-Border Volume Growth",
+        "reason": "vendor financial update with no verified credit-union adoption or operating implication",
         "primaryAudience": "payments and innovation leaders",
         "secondaryAudiences": [
           "technology leaders",
@@ -123,39 +123,189 @@
         ]
       },
       {
-        "title": "Credit-Union Workforce Transformation Commentary",
-        "reason": "commentary rather than a new verifiable policy, deployment or operating result",
-        "primaryAudience": "HR and workforce leaders",
+        "title": "PenFed Opens Texas Financial Center",
+        "reason": "branch expansion without a distinct technology, policy or operating control development",
+        "primaryAudience": "operations and member-service leaders",
         "secondaryAudiences": [
-          "operations leaders",
+          "marketing leaders",
           "executives"
         ]
       },
       {
-        "title": "Caller Authentication and STIR/SHAKEN Advocacy",
-        "reason": "relevant fraud-policy advocacy already evaluated, but not an enacted framework or implementation action",
-        "primaryAudience": "fraud and security leaders",
+        "title": "BayPort Earns Workplace Recognition",
+        "reason": "award announcement rather than a new workforce practice or measurable implementation result",
+        "primaryAudience": "HR and workforce leaders",
         "secondaryAudiences": [
-          "risk leaders",
-          "technology leaders"
+          "executives",
+          "marketing leaders"
         ]
       },
       {
-        "title": "Finovate and Conference Promotions",
-        "reason": "event promotion rather than completed material developments",
-        "primaryAudience": "innovation and technology leaders",
+        "title": "Justice Department Bank-Fraud and Laundering Cases",
+        "reason": "credible enforcement activity but case-specific facts did not establish a new general credit-union control requirement",
+        "primaryAudience": "fraud and BSA/AML leaders",
         "secondaryAudiences": [
-          "executives",
-          "vendor-management teams"
+          "risk leaders",
+          "payments leaders"
         ]
       }
     ],
     "status": "article-complete",
     "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
     "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
-    "updatedAt": "2026-08-14T07:00:00-04:00"
+    "updatedAt": "2026-08-17T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-14",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 14,
+      "beatsSearched": [
+        "regulatory-governance",
+        "fraud-security",
+        "payments-deposits",
+        "lending-mortgage",
+        "operations-member-service",
+        "finance-treasury",
+        "vendor-management",
+        "workforce"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Colorado’s ASSET Act Creates a Fraud-Hold Workflow for Credit Unions",
+          "url": "https://creditunionainews.com/news/colorado-asset-act-credit-union-fraud-holds.html",
+          "primaryFunctionalAudience": "Fraud operations and compliance leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-08-17"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "FinCEN Human-Smuggling Trends Analysis",
+          "reason": "authoritative and current, but it would repeat the prior day’s FinCEN and BSA/AML source concentration; retained as an alert and future coverage opportunity",
+          "primaryAudience": "BSA/AML and fraud leaders",
+          "secondaryAudiences": [
+            "payments leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Navy Federal Mobile-Banking Outage",
+          "reason": "material member-service disruption, but accessible evidence lacked an official incident report, root cause or recovery controls",
+          "primaryAudience": "digital-banking and operations leaders",
+          "secondaryAudiences": [
+            "member-service leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "TruStage Cyberattack Recovery Update",
+          "reason": "no material primary-source resolution or operating fact beyond the previously evaluated incident-response issue",
+          "primaryAudience": "cybersecurity and risk leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Blend and Prove Prefill Integration",
+          "reason": "vendor-controlled conversion claims without independently verified credit-union production outcomes",
+          "primaryAudience": "lending and digital-product leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "member-experience leaders"
+          ]
+        },
+        {
+          "title": "Synchrony Appoints a Chief AI Officer",
+          "reason": "large-bank workforce development with indirect credit-union applicability and no new operating control",
+          "primaryAudience": "executives and strategy leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "HR leaders"
+          ]
+        },
+        {
+          "title": "Loan Vision Launches Luna Mortgage Accounting AI",
+          "reason": "vendor product launch without a verified credit-union deployment, control assessment or result",
+          "primaryAudience": "mortgage finance leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Kinective Inc. 5000 Recognition",
+          "reason": "vendor award and promotion rather than a new infrastructure decision or production milestone",
+          "primaryAudience": "vendor-management teams",
+          "secondaryAudiences": [
+            "technology leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "PenFed Branch Opening",
+          "reason": "institutional expansion without a distinct AI, fintech or digital-operating development",
+          "primaryAudience": "operations and member-service leaders",
+          "secondaryAudiences": [
+            "marketing leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Wescom Second-Quarter Earnings After Layoffs",
+          "reason": "secondary and paywalled reporting with limited AI or fintech decision value",
+          "primaryAudience": "finance and workforce leaders",
+          "secondaryAudiences": [
+            "executives",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "Nine Credit Unions Join Velera Digital Asset Lab",
+          "reason": "vendor-led exploration announcement already evaluated, without production outcomes",
+          "primaryAudience": "payments and innovation leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Credit-Union Workforce Transformation Commentary",
+          "reason": "commentary rather than a new verifiable policy, deployment or operating result",
+          "primaryAudience": "HR and workforce leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Caller Authentication and STIR/SHAKEN Advocacy",
+          "reason": "relevant fraud-policy advocacy already evaluated, but not an enacted framework or implementation action",
+          "primaryAudience": "fraud and security leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Finovate and Conference Promotions",
+          "reason": "event promotion rather than completed material developments",
+          "primaryAudience": "innovation and technology leaders",
+          "secondaryAudiences": [
+            "executives",
+            "vendor-management teams"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
+      "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
+      "updatedAt": "2026-08-14T07:00:00-04:00"
+    },
     {
       "date": "2026-08-13",
       "fullArticleCount": 1,

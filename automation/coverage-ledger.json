@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "federal-credit-union-investment-authority-bill",
+      "title": "House Bill Would Expand Federal Credit Union Investment Authority",
+      "url": "/news/federal-credit-union-investment-authority-bill.html",
+      "publishedAt": "2026-08-17T07:00:00-04:00",
+      "section": "news",
+      "beat": "finance-treasury",
+      "functions": ["finance-treasury", "board-strategy", "risk-compliance"],
+      "technologies": ["data-decisioning"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Finance and treasury leaders",
+      "secondaryAudiences": ["boards and executives", "risk and compliance leaders", "investment and asset-liability management teams"],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-pending-live-verification",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the LinkedIn package if cadence and scheduling gates pass; article selection and editorial structure were not altered",
+      "internalLinkTargets": ["/insight-credit-union-ai-business-case-framework.html", "/insight-credit-union-ai-vendor-exit-playbook.html"],
+      "sourceTier": 1,
+      "score": 98.3
+    },
+    {
       "id": "colorado-asset-act-credit-union-fraud-holds",
       "title": "Colorado’s ASSET Act Creates a Fraud-Hold Workflow for Credit Unions",
       "url": "/news/colorado-asset-act-credit-union-fraud-holds.html",
