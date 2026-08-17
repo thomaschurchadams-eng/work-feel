@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
+import path from 'node:path';
 
 const file = process.argv[2];
 if (!file) {
@@ -23,9 +24,26 @@ for (const [attribute, allowed] of Object.entries({
   const value = body.match(new RegExp(`${attribute}=["']([^"']+)["']`, 'i'))?.[1];
   if (value && !allowed.includes(value)) invalid.push(`${attribute}=${value}`);
 }
-if (missing.length || invalid.length) {
+
+const scriptSources = Array.from(html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi), (match) => match[1]);
+const sharedScript = scriptSources.find((src) => /(?:^|\/)(?:app|site)\.js(?:[?#].*)?$/i.test(src));
+let missingSharedScript = null;
+if (!sharedScript) {
+  missingSharedScript = 'missing shared article script reference (assets/app.js or assets/site.js)';
+} else {
+  const cleanSource = sharedScript.split(/[?#]/, 1)[0];
+  const resolved = cleanSource.startsWith('/')
+    ? path.resolve(process.cwd(), `.${cleanSource}`)
+    : path.resolve(path.dirname(file), cleanSource);
+  if (!fs.existsSync(resolved)) {
+    missingSharedScript = `shared article script does not exist: ${sharedScript}`;
+  }
+}
+
+if (missing.length || invalid.length || missingSharedScript) {
   if (missing.length) console.error(`Missing analytics attributes: ${missing.join(', ')}`);
   if (invalid.length) console.error(`Invalid analytics values: ${invalid.join(', ')}`);
+  if (missingSharedScript) console.error(missingSharedScript);
   process.exit(1);
 }
 console.log(`Analytics metadata valid: ${file}`);
