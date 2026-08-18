@@ -134,6 +134,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
       "summary": "Confirmed the August 18 publisher outcome and core production runtime were healthy, then recovered the repeated internal social sent-state drift under the idempotent rule added in PR #133. Re-read live Buffer evidence, matched 12 modern tracked queue items by exact item/post ID and non-null sentAt, and updated only those existing records to sent with authoritative sentAt/externalLink fields. Preserved the August 19 Treasury reservation, immutable UTMs, schedule/channel/image history and the legacy July 22 EricaAssist baseline; made no scheduler call and created no replacement post. Validated a READY preview, merged PR #134, verified READY Production on a1fc7d4, and re-read the live Buffer endpoint successfully on that exact commit.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-18T16:56:46-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability check found the previously blocked direct Search Console read path had been validated and merged in PR #136, while automation/improvement-ledger.json and the usage ledger still recorded the Search Console measurement path as blocked/degraded.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"socialQueueChecks":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"searchConsoleEndpointQueries":1,"reliabilityStateRecordsUpdated":2,"recoveryBranchesCreated":1,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Google Search Console"],
+      "summary": "Diagnosed a stale reliability-state record rather than a live production failure. Verified the August 18 publisher outcome remained complete, the Treasury article remained live, Production was READY on Search Console merge commit 50255d1, the direct Search Console endpoint returned HTTP 200/ok=true with siteFullUser aggregate 7-day/28-day data, and Vercel reported no runtime errors in 24 hours. Updated the improvement ledger from blocked to completed and recorded this recovery without changing credentials, schedules, editorial policy, social reservations, GA4 collection or external authority. Durable prevention: when a previously blocked reliability item is merged and Production-validated, the same recovery cycle should close its improvement-ledger state and append the required reliability-watch usage entry.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-18T12:00:14-04:00",
+  "updatedAt": "2026-08-18T16:56:46-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -25,18 +25,24 @@
     },
     {
       "id": "search-console-direct-read-2026-08-13",
-      "evidence": "The canonical GA4 reporting endpoint still returns ga4_data_api_error for its optional Search Console request because the requested organic-search metrics and dimension are incompatible. Two speculative GA4-query changes were previously rolled back after Production-only validation failed. An isolated direct Search Console probe has a READY preview but cannot authenticate because the read-only Google credential is not available in Preview.",
-      "proposedChange": "Validate the isolated direct Search Console API read path using a safe read-only Preview credential before any merge; do not retry speculative GA4 dimension/metric combinations in Production.",
+      "evidence": "The canonical GA4 reporting endpoint's optional Search Console query was incompatible, and two speculative GA4-query repairs were rolled back after Production-only validation failed. The isolated direct Search Console path was then blocked because Preview lacked the existing read-only Google credential. That credential path was safely made available to Preview, allowing the isolated direct endpoint to be functionally validated without altering GA4 collection or editorial authority.",
+      "proposedChange": "Use the isolated direct Search Console API read path for aggregate search-performance reporting instead of retrying incompatible GA4 Core Reporting dimension/metric combinations.",
       "expectedBenefit": "Restore search-performance reporting without risking the healthy core GA4 feed or weakening credential boundaries.",
       "risk": "low-to-medium",
       "validation": [
-        "existing direct-read preview build is READY",
-        "functional validation currently stops at search_console_service_account_missing",
-        "no direct Search Console connector/plugin is available in the current runtime"
+        "fresh feature branch was based on current main",
+        "Vercel Preview reached READY",
+        "Preview returned HTTP 200 with ok=true and source=google-search-console-api",
+        "Preview exposed only aggregate 7-day and 28-day Search Console metrics",
+        "PR #136 changed only api/search-console-metrics.js and reused the existing read-only service account",
+        "PR #136 merged as commit 50255d19520505c4fe8cf50833f48323946f656f",
+        "resulting Production deployment reached READY",
+        "Production /api/search-console-metrics returned HTTP 200/ok=true with permissionLevel siteFullUser and aggregate 7-day/28-day data",
+        "no production runtime errors were present in the subsequent 24-hour check"
       ],
-      "status": "blocked-on-preview-readonly-credential",
-      "result": "No unvalidated Search Console change is merged; GA4 core reporting remains healthy.",
-      "rollback": "No Production change is currently active."
+      "status": "completed",
+      "result": "PR #136 merged and the direct Search Console endpoint is now validated in Production. The previous Search Console measurement blocker is cleared; core GA4 remains separate and healthy.",
+      "rollback": "Revert PR #136 to remove the direct Search Console endpoint; core GA4 collection and reporting are independent and should remain unchanged."
     },
     {
       "id": "source-health-refresh-2026-08-17",
