@@ -42,7 +42,6 @@ After the day's article handoff has completed or been recorded, run one bounded 
 
 The Alerts archive remains an archive. The homepage must never feature an Alert older than 72 hours. When no qualified fresh Alert exists, show the approved non-alert fallback rather than elevating stale material.
 
-
 ### What-to-watch freshness loop
 
 When no fresh Alert is active, maintain the homepage's non-alert fallback in `assets/app.js` as follows:
@@ -62,6 +61,17 @@ LinkedIn is a selective channel:
 - Do not mirror every article, Alert, or evergreen item to LinkedIn.
 - Preserve existing social safeguards, voice, approvals, schedules, credentials, and permissions.
 - Log the reason for promotion or non-promotion so analytics can improve future choices.
+
+### Sent-state reconciliation
+
+The repository social queue is the operational ledger, but Buffer is authoritative for whether a scheduled company-page post has actually sent. During an operating or reliability review, reconcile stale internal status when the evidence is exact and unambiguous:
+
+- If `/api/buffer-metrics` matches the existing queue item and `postId` and reports a non-null `sentAt`, while that same repository item still says `status: scheduled`, update only the existing item in place to the established sent-state fields supported by the queue schema, including `status: sent`, `sentAt` and `externalLink` when returned.
+- Preserve the immutable item id, canonical `articleUrl`, tagged `distributionUrl`, `scheduledFor`, `postId`, channel, image metadata and all cadence/tracking history. Never create a replacement item and never call the scheduler merely to reconcile state.
+- Treat the operation as idempotent. If Buffer evidence is pending, ambiguous, missing, or mismatched, do not rewrite the queue; report the exact blocker instead.
+- Aggregate routine sent-state reconciliations with the next material operating/reliability commit rather than creating poll-noise commits.
+
+This is internal state repair only. It does not authorize a new post, schedule change, destination change, credential change or broader social activity.
 
 ## Analytics learning loop
 
