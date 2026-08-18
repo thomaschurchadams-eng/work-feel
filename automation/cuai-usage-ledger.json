@@ -112,6 +112,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
       "summary": "Confirmed the Aug. 17 High newsroom publication and current production/GA4/Buffer state, then found a material article-runtime measurement defect: several recent articles referenced missing assets/site.js while the canonical analytics bundle is assets/app.js. Overall GA4 traffic remained available through the inline tag, but CUAI custom article/depth/conversion event history on affected pages was incomplete. Implemented a backward-compatible site.js loader plus validator protection on a feature branch, validated READY Preview and both shared assets, reviewed and merged PR #131, verified READY Production on commit 833bddc and production site.js HTTP 200, then reran GA4 and Buffer on that exact Production commit. Search Console remains degraded by the known incompatible optional GA4 query. Created an auditable improvement ledger and refreshed the management report and usage ledger.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-18T09:55:30-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI CEO operating review after the August 18 publisher cycle, with mandatory live GA4/Buffer retrieval and active optimization.",
+      "status": "success-with-search-measurement-degraded",
+      "workUnits": {"repositoryManagementFilesReviewed":14,"recentCommitsReviewed":30,"publisherCandidatesRepresented":14,"publisherBeatsRepresented":8,"articlesPublished":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeHealthChecks":1,"liveArticleChecks":1,"growthStrategyChanges":1,"experimentsOpened":1,"operatingPolicyChanges":1,"improvementLedgerChanges":1,"reportingBranchesCreated":1,"previewDeploymentChecks":1,"pullRequestsCreated":1,"reportingFilesUpdated":2,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
+      "summary": "Resolved Production commit 099e43d and successfully retrieved live GA4 and Buffer data, verified the Aug. 18 Treasury stablecoin High article live, and found zero Vercel runtime errors in 24 hours. Current 7-day users remain above the 28-day weekly pace, but sessions, page views, engaged sessions and 90% scrolling lag materially; because depth has constrained multiple consecutive CEO reviews, opened a bounded three-article decision-first opening experiment on clean post-repair instrumentation. The first two High-post hook observations remain below target and the third is scheduled for Aug. 18 at 11:30 a.m. ET, with the decision still due Aug. 21. Diagnosed repeated internal social-ledger drift where Buffer confirms sent posts but repository items remain scheduled; implemented an idempotent prevention rule that reconciles only exact sent evidence without calling the scheduler. Search Console remains degraded on the known incompatible optional GA4 query and blocked on safe Preview read-only authentication for the isolated direct path. Prepared PR #133 on a READY Vercel Preview and refreshed the CEO report and workload ledger.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
