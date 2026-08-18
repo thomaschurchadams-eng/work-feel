@@ -1,40 +1,209 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-17T07:00:00-04:00",
+  "lastStandardRun": "2026-08-18T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "House Bill Would Expand Federal Credit Union Investment Authority",
-    "url": "https://creditunionainews.com/news/federal-credit-union-investment-authority-bill.html",
-    "publishedAt": "2026-08-17T07:00:00-04:00",
+    "title": "Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules",
+    "url": "https://creditunionainews.com/news/treasury-stablecoin-rule-credit-union-shares.html",
+    "publishedAt": "2026-08-18T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
-    {"date":"2026-08-17","headline":"CFPB Ends Public Complaint Narratives and Visualizations","reason":"material complaint-data change, but its direct credit-union decision value was less specific than the selected federal-credit-union investment bill"},
-    {"date":"2026-08-17","headline":"Strata Credit Union Selects Alkami Digital Banking","reason":"vendor-supplied selection announcement without production outcomes or independently verified member impact"},
-    {"date":"2026-08-17","headline":"360factors Launches Fair-Lending Compliance Testing Agent","reason":"vendor product claim without a verified credit-union deployment, control review or performance evidence"},
-    {"date":"2026-08-17","headline":"Western Union and Intermex Regulatory Update","reason":"important remittance transaction development but indirect credit-union applicability and unresolved California approval"},
-    {"date":"2026-08-17","headline":"ABA Calls for Federal AI Regulation","reason":"advocacy position rather than enacted guidance or an operating event, with weaker direct credit-union applicability"},
-    {"date":"2026-08-17","headline":"AI Agents as Insider-Risk Commentary","reason":"credible security analysis but commentary without a new primary-source incident, standard or control requirement"},
-    {"date":"2026-08-17","headline":"Wisconsin Credit Unions Respond to Tornado","reason":"valuable member-service response but limited primary operational detail for a differentiated full article"},
-    {"date":"2026-08-17","headline":"OCC Updates Bank Accounting Advisory Series","reason":"current accounting guidance for national banks and federal savings associations, not directly applicable to credit unions"},
-    {"date":"2026-08-17","headline":"Mortgage Rates Edge Lower","reason":"market snapshot without a distinct credit-union operating, technology or policy decision"},
-    {"date":"2026-08-17","headline":"OwlPay Harbor Reports Cross-Border Volume Growth","reason":"vendor financial update with no verified credit-union adoption or operating implication"},
-    {"date":"2026-08-17","headline":"PenFed Opens Texas Financial Center","reason":"branch expansion without a distinct technology, policy or operating control development"},
-    {"date":"2026-08-17","headline":"BayPort Earns Workplace Recognition","reason":"award announcement rather than a new workforce practice or measurable implementation result"},
-    {"date":"2026-08-17","headline":"Justice Department Bank-Fraud and Laundering Cases","reason":"credible enforcement activity but case-specific facts did not establish a new general credit-union control requirement"},
-    {"date":"2026-08-14","headline":"FinCEN Human-Smuggling Trends Analysis","reason":"authoritative and current, but it would repeat the prior day’s FinCEN and BSA/AML source concentration; retained as an alert and future coverage opportunity"},
-    {"date":"2026-08-14","headline":"Navy Federal Mobile-Banking Outage","reason":"material member-service disruption, but accessible evidence lacked an official incident report, root cause or recovery controls"},
-    {"date":"2026-08-14","headline":"TruStage Cyberattack Recovery Update","reason":"no material primary-source resolution or operating fact beyond the previously evaluated incident-response issue"},
-    {"date":"2026-08-14","headline":"Blend and Prove Prefill Integration","reason":"vendor-controlled conversion claims without independently verified credit-union production outcomes"},
-    {"date":"2026-08-14","headline":"Synchrony Appoints a Chief AI Officer","reason":"large-bank workforce development with indirect credit-union applicability and no new operating control"},
-    {"date":"2026-08-14","headline":"Loan Vision Launches Luna Mortgage Accounting AI","reason":"vendor product launch without a verified credit-union deployment, control assessment or result"},
-    {"date":"2026-08-14","headline":"Kinective Inc. 5000 Recognition","reason":"vendor award and promotion rather than a new infrastructure decision or production milestone"},
-    {"date":"2026-08-14","headline":"PenFed Branch Opening","reason":"institutional expansion without a distinct AI, fintech or digital-operating development"},
-    {"date":"2026-08-14","headline":"Wescom Second-Quarter Earnings After Layoffs","reason":"secondary and paywalled reporting with limited AI or fintech decision value"},
-    {"date":"2026-08-14","headline":"Nine Credit Unions Join Velera Digital Asset Lab","reason":"vendor-led exploration announcement already evaluated, without production outcomes"},
-    {"date":"2026-08-14","headline":"Credit-Union Workforce Transformation Commentary","reason":"commentary rather than a new verifiable policy, deployment or operating result"},
-    {"date":"2026-08-14","headline":"Caller Authentication and STIR/SHAKEN Advocacy","reason":"relevant fraud-policy advocacy already evaluated, but not an enacted framework or implementation action"},
-    {"date":"2026-08-14","headline":"Finovate and Conference Promotions","reason":"event promotion rather than completed material developments"},
+    {
+      "date": "2026-08-18",
+      "headline": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
+      "reason": "vendor-controlled scale claim without institution-level outcomes or independent verification"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "Credit Union Trade Group Files Federal AI Priorities",
+      "reason": "advocacy position without an enacted rule, institution-level implementation or new operating control"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "Real-Time Transfer Case Study Reports $8.5 Million in Six Months",
+      "reason": "paywalled secondary reporting without accessible underlying institution documentation"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "CFPB Complaint Database Public-Narrative Change",
+      "reason": "already evaluated in the prior run and less directly actionable than the selected Treasury proposal"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "TruStage Cyber Incident Recovery Update",
+      "reason": "overlapped recent breach-response coverage and supplied limited new primary-source control detail"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "FASB Derivatives and Hedging Accounting Comments",
+      "reason": "advocacy on a proposed accounting standard rather than a final requirement or operating event"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "FFIEC CAMELS Transparency Comments",
+      "reason": "advocacy on a supervisory proposal with less immediate operating specificity"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "Check-Fraud Education Campaign Commentary",
+      "reason": "already represented in recent Alert coverage without a distinct new control requirement"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "Credit Union Trade Association Name and Domicile Change",
+      "reason": "corporate administrative change without a material credit-union operating decision"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "SwipeSimple Adds ACH for Merchants",
+      "reason": "merchant-fintech feature launch with indirect applicability and no verified credit-union deployment"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "Desert Financial Expands Indirect Auto Capacity",
+      "reason": "vendor-led case study with limited primary methodology and no sufficiently fresh independent evidence"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "Generation Z Financial-Trust Survey",
+      "reason": "paywalled secondary reporting with inaccessible primary methodology and no distinct implementation event"
+    },
+    {
+      "date": "2026-08-18",
+      "headline": "Former Credit Union Manager Sentenced for Theft",
+      "reason": "case-specific law-enforcement development without a new general control requirement"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "CFPB Ends Public Complaint Narratives and Visualizations",
+      "reason": "material complaint-data change, but its direct credit-union decision value was less specific than the selected federal-credit-union investment bill"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "Strata Credit Union Selects Alkami Digital Banking",
+      "reason": "vendor-supplied selection announcement without production outcomes or independently verified member impact"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "360factors Launches Fair-Lending Compliance Testing Agent",
+      "reason": "vendor product claim without a verified credit-union deployment, control review or performance evidence"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "Western Union and Intermex Regulatory Update",
+      "reason": "important remittance transaction development but indirect credit-union applicability and unresolved California approval"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "ABA Calls for Federal AI Regulation",
+      "reason": "advocacy position rather than enacted guidance or an operating event, with weaker direct credit-union applicability"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "AI Agents as Insider-Risk Commentary",
+      "reason": "credible security analysis but commentary without a new primary-source incident, standard or control requirement"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "Wisconsin Credit Unions Respond to Tornado",
+      "reason": "valuable member-service response but limited primary operational detail for a differentiated full article"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "OCC Updates Bank Accounting Advisory Series",
+      "reason": "current accounting guidance for national banks and federal savings associations, not directly applicable to credit unions"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "Mortgage Rates Edge Lower",
+      "reason": "market snapshot without a distinct credit-union operating, technology or policy decision"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "OwlPay Harbor Reports Cross-Border Volume Growth",
+      "reason": "vendor financial update with no verified credit-union adoption or operating implication"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "PenFed Opens Texas Financial Center",
+      "reason": "branch expansion without a distinct technology, policy or operating control development"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "BayPort Earns Workplace Recognition",
+      "reason": "award announcement rather than a new workforce practice or measurable implementation result"
+    },
+    {
+      "date": "2026-08-17",
+      "headline": "Justice Department Bank-Fraud and Laundering Cases",
+      "reason": "credible enforcement activity but case-specific facts did not establish a new general credit-union control requirement"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "FinCEN Human-Smuggling Trends Analysis",
+      "reason": "authoritative and current, but it would repeat the prior day’s FinCEN and BSA/AML source concentration; retained as an alert and future coverage opportunity"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Navy Federal Mobile-Banking Outage",
+      "reason": "material member-service disruption, but accessible evidence lacked an official incident report, root cause or recovery controls"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "TruStage Cyberattack Recovery Update",
+      "reason": "no material primary-source resolution or operating fact beyond the previously evaluated incident-response issue"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Blend and Prove Prefill Integration",
+      "reason": "vendor-controlled conversion claims without independently verified credit-union production outcomes"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Synchrony Appoints a Chief AI Officer",
+      "reason": "large-bank workforce development with indirect credit-union applicability and no new operating control"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Loan Vision Launches Luna Mortgage Accounting AI",
+      "reason": "vendor product launch without a verified credit-union deployment, control assessment or result"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Kinective Inc. 5000 Recognition",
+      "reason": "vendor award and promotion rather than a new infrastructure decision or production milestone"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "PenFed Branch Opening",
+      "reason": "institutional expansion without a distinct AI, fintech or digital-operating development"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Wescom Second-Quarter Earnings After Layoffs",
+      "reason": "secondary and paywalled reporting with limited AI or fintech decision value"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Nine Credit Unions Join Velera Digital Asset Lab",
+      "reason": "vendor-led exploration announcement already evaluated, without production outcomes"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Credit-Union Workforce Transformation Commentary",
+      "reason": "commentary rather than a new verifiable policy, deployment or operating result"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Caller Authentication and STIR/SHAKEN Advocacy",
+      "reason": "relevant fraud-policy advocacy already evaluated, but not an enacted framework or implementation action"
+    },
+    {
+      "date": "2026-08-14",
+      "headline": "Finovate and Conference Promotions",
+      "reason": "event promotion rather than completed material developments"
+    },
     {
       "date": "2026-08-13",
       "headline": "Caller Authentication and STIR/SHAKEN Framework Letter",
@@ -100,58 +269,266 @@
       "headline": "Small Credit Union Resource Center",
       "reason": "useful resource but no distinct AI, fintech or digital-operating development"
     },
-    {"date":"2026-08-12","headline":"Civic Federal Credit Union Is Classified as Undercapitalized","reason":"material financial-health development, but the available evidence did not establish a distinct AI, fintech or digital-operating decision"},
-    {"date":"2026-08-12","headline":"Credit-Union Board Member Is Indicted in Elder-Fraud Case","reason":"a criminal allegation without adjudicated findings and limited technology decision value"},
-    {"date":"2026-08-12","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative governance news, but no specific new operating obligation or technology decision followed"},
-    {"date":"2026-08-12","headline":"Credit Unions Seek Mortgage-Relief Flexibility From CFPB","reason":"relevant advocacy, but the request was not an enacted rule or implementation action"},
-    {"date":"2026-08-12","headline":"U1 Credit Union Launches MessagePay","reason":"relevant product announcement supported mainly by institution and vendor claims without operating outcomes"},
-    {"date":"2026-08-12","headline":"Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion","reason":"current conversion update without a distinct digital, payments or member-experience milestone"},
-    {"date":"2026-08-12","headline":"Moody's Flags Rising AI Vendor Dependence","reason":"useful banking context without a new credit-union event or primary-source implementation action"},
-    {"date":"2026-08-12","headline":"Data-Center Financing Raises New Credit-Risk Questions","reason":"broader-market lending issue with limited immediate credit-union applicability"},
-    {"date":"2026-08-12","headline":"RBI Governor Says AI Can Transform Lending","reason":"non-U.S. policy commentary without a direct credit-union operating action"},
-    {"date":"2026-08-12","headline":"Moneyling Promotes AI Financial Planning Beyond General Chatbots","reason":"vendor content marketing rather than a verified deployment or policy event"},
-    {"date":"2026-08-12","headline":"Young Professionals Summit Adds an AI Session","reason":"event promotion rather than a completed material development"},
-    {"date":"2026-08-12","headline":"NASCUS Promotes Its State System Summit","reason":"event promotion without a new supervisory action"},
-    {"date":"2026-08-12","headline":"CCUA Promotes Accessibility Financial Education","reason":"useful training topic but not an article-grade current development"},
-    {"date":"2026-08-12","headline":"League Promotes a Wild West of AI Webinar","reason":"event promotion rather than a completed material development"},
-    {"date":"2026-08-11","headline":"Civic Federal Credit Union Is Classified as Undercapitalized","reason":"material financial-health development, but accessible evidence did not establish a distinct AI, fintech or digital-operating decision for a full article"},
-    {"date":"2026-08-11","headline":"Credit-Union Board Member Is Indicted in Elder-Fraud Case","reason":"current criminal allegation with limited technology decision value and no adjudicated findings"},
-    {"date":"2026-08-11","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative governance event, but it did not yet create a specific new operating obligation or technology decision"},
-    {"date":"2026-08-11","headline":"Credit Unions Seek Mortgage-Relief Flexibility From CFPB","reason":"relevant policy advocacy, but the request was not an enacted rule or agency implementation action"},
-    {"date":"2026-08-11","headline":"U1 Credit Union Launches MessagePay","reason":"directly relevant product announcement, but evidence was limited to institution and vendor claims without operating outcomes"},
-    {"date":"2026-08-11","headline":"Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion","reason":"current conversion update without a distinct technology, payments, fraud or member-experience milestone"},
-    {"date":"2026-08-11","headline":"Moody's Flags Rising AI Vendor Dependence","reason":"useful vendor-risk context, but broad banking analysis without a new credit-union event or primary-source implementation action"},
-    {"date":"2026-08-11","headline":"Data-Center Financing Raises New Credit-Risk Questions","reason":"material broader-market lending issue with limited immediate credit-union applicability and no institution-specific action"},
-    {"date":"2026-08-11","headline":"AI Does the Legwork While Humans Keep the Last Word","reason":"timely commentary rather than a new verifiable product, policy or operating development"},
-    {"date":"2026-08-11","headline":"Finovate Promotes a Credit Union Spotlight","reason":"event promotion rather than a completed material development"},
-    {"date":"2026-08-11","headline":"Chartway Receives a Top Workplaces Award","reason":"credible workforce recognition without a distinct AI, automation or operating decision"},
-    {"date":"2026-08-11","headline":"Credit-Union CD Rate Rankings Update","reason":"consumer rate snapshot without durable operating, technology or governance value for the publication"},
-    {"date":"2026-08-11","headline":"Eltropy and Industry Groups Promote AI Training Content","reason":"vendor and webinar promotion without a completed deployment, policy change or independently verified result"},
-    {"date":"2026-08-10","headline":"Senate Confirms John Crews to the NCUA Board","reason":"authoritative and current, but the appointment did not yet create a distinct credit-union operating or technology decision"},
-    {"date":"2026-08-10","headline":"America's Credit Unions Highlights AI Member-Service Results","reason":"recent industry roundup, but it repackaged previously announced deployments and vendor-supplied results without a new implementation event"},
-    {"date":"2026-08-10","headline":"CU 2.0 Launches AI Coaching for Credit Unions","reason":"current but primarily a consultancy promotion with early benefit claims that were not independently verifiable"},
-    {"date":"2026-08-10","headline":"Eltropy Publishes a Four-Stage AI Adoption Playbook","reason":"useful vendor guidance rather than a completed policy, product or credit-union operating development"},
-    {"date":"2026-08-10","headline":"AltaOne Launches AnyTimePay","reason":"directly relevant to member liquidity, but the announcement was outside the 72-hour window and relied on vendor-supplied benefit and risk claims"},
-    {"date":"2026-08-10","headline":"HuLoop Reports First-Half Credit-Union Growth","reason":"outside the freshness window and based on vendor growth claims without institution-level operating outcomes"},
-    {"date":"2026-08-10","headline":"Tavant Integrates Touchless Lending With Empower","reason":"mortgage infrastructure development outside the freshness window with no verified credit-union production result"},
-    {"date":"2026-08-10","headline":"Great Lakes Credit Union Invests in Nook","reason":"credible fintech investment outside the freshness window, without a new deployment milestone or measurable member outcome"},
-    {"date":"2026-08-10","headline":"NCUA Advances Eleven Deregulatory Proposals","reason":"material regulatory agenda but outside the freshness window and too broad to support a distinct AI or fintech operating article in this cycle"},
-    {"date":"2026-08-10","headline":"Illinois Valley Credit Union and Credit Union 1 Advance Merger","reason":"current credit-union operations update without a distinct technology, payments, fraud or digital-operating development"},
-    {"date":"2026-08-10","headline":"Proof Publishes a Credit-Union Digital-Transformation Article","reason":"vendor content marketing rather than a verifiable new deployment, policy change or operating result"},
-    {"date":"2026-08-10","headline":"Vendor Analysis Flags the UAD 3.6 Mortgage Deadline","reason":"potentially useful implementation context, but outside the freshness window and dependent on secondary vendor analysis"},
-    {"date":"2026-08-10","headline":"Credit Union 1 Expands ATM Branding","reason":"current member-access update with limited AI relevance and insufficient decision value for a full article"},
-    {"date":"2026-08-10","headline":"Filene Announces a Money20/20 Partnership","reason":"conference partnership promotion rather than a completed material development"},
-    {"date":"2026-08-07","headline":"African Diaspora Federal Credit Union Closes","reason":"authoritative and current, but a small-credit-union liquidation without a distinct AI, fintech or digital-operating development"},
-    {"date":"2026-08-07","headline":"Visa Agrees to Acquire BioCatch","reason":"still material but already evaluated, inside a recent fraud-heavy coverage run and without a new credit-union implementation milestone"},
-    {"date":"2026-08-07","headline":"UW Credit Union Selects Fiserv DNA Core","reason":"directly relevant but the evidence remained vendor-led and did not add an independently verifiable migration or operating milestone"},
-    {"date":"2026-08-07","headline":"Patelco Invests in Payfinia Payments CUSO","reason":"credible payments investment without production outcomes or a distinct new event since the prior evaluation"},
-    {"date":"2026-08-07","headline":"ROAD to Housing Act Regulatory Summary","reason":"secondary vendor analysis of a broad law; primary implementation guidance was not yet complete enough for a credit-union operating article"},
-    {"date":"2026-08-07","headline":"Alkami Opens Registration for Its 2027 Conference","reason":"event promotion rather than a completed material development"},
-    {"date":"2026-08-07","headline":"Bank Fraud Technology Advancement Act","reason":"important policy concept but not a new development within the 72-hour window"},
-    {"date":"2026-08-07","headline":"Credit Union 1 Expands Branded ATM Access","reason":"member-access development with limited AI relevance and no new evidence since the prior review"},
-    {"date":"2026-08-07","headline":"Collections AI Exception-Handling Playbook","reason":"qualified evergreen opportunity, but marketing and communications was the higher-priority unserved functional gap"},
-    {"date":"2026-08-07","headline":"Vendor Exit-Cost Checklist","reason":"qualified procurement concept, but narrower and less differentiated from the previous day's lifecycle-cost framework"},
-    {"date":"2026-08-07","headline":"AI Chatbot Escalation Case Study","reason":"useful concept, but the broader communications release gate served more channels and functions with stronger authoritative support"},
+    {
+      "date": "2026-08-12",
+      "headline": "Civic Federal Credit Union Is Classified as Undercapitalized",
+      "reason": "material financial-health development, but the available evidence did not establish a distinct AI, fintech or digital-operating decision"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Credit-Union Board Member Is Indicted in Elder-Fraud Case",
+      "reason": "a criminal allegation without adjudicated findings and limited technology decision value"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Senate Confirms John Crews to the NCUA Board",
+      "reason": "authoritative governance news, but no specific new operating obligation or technology decision followed"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Credit Unions Seek Mortgage-Relief Flexibility From CFPB",
+      "reason": "relevant advocacy, but the request was not an enacted rule or implementation action"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "U1 Credit Union Launches MessagePay",
+      "reason": "relevant product announcement supported mainly by institution and vendor claims without operating outcomes"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion",
+      "reason": "current conversion update without a distinct digital, payments or member-experience milestone"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Moody's Flags Rising AI Vendor Dependence",
+      "reason": "useful banking context without a new credit-union event or primary-source implementation action"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Data-Center Financing Raises New Credit-Risk Questions",
+      "reason": "broader-market lending issue with limited immediate credit-union applicability"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "RBI Governor Says AI Can Transform Lending",
+      "reason": "non-U.S. policy commentary without a direct credit-union operating action"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Moneyling Promotes AI Financial Planning Beyond General Chatbots",
+      "reason": "vendor content marketing rather than a verified deployment or policy event"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "Young Professionals Summit Adds an AI Session",
+      "reason": "event promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "NASCUS Promotes Its State System Summit",
+      "reason": "event promotion without a new supervisory action"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "CCUA Promotes Accessibility Financial Education",
+      "reason": "useful training topic but not an article-grade current development"
+    },
+    {
+      "date": "2026-08-12",
+      "headline": "League Promotes a Wild West of AI Webinar",
+      "reason": "event promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Civic Federal Credit Union Is Classified as Undercapitalized",
+      "reason": "material financial-health development, but accessible evidence did not establish a distinct AI, fintech or digital-operating decision for a full article"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Credit-Union Board Member Is Indicted in Elder-Fraud Case",
+      "reason": "current criminal allegation with limited technology decision value and no adjudicated findings"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Senate Confirms John Crews to the NCUA Board",
+      "reason": "authoritative governance event, but it did not yet create a specific new operating obligation or technology decision"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Credit Unions Seek Mortgage-Relief Flexibility From CFPB",
+      "reason": "relevant policy advocacy, but the request was not an enacted rule or agency implementation action"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "U1 Credit Union Launches MessagePay",
+      "reason": "directly relevant product announcement, but evidence was limited to institution and vendor claims without operating outcomes"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Illinois Valley Credit Union and Credit Union 1 Advance Merger Conversion",
+      "reason": "current conversion update without a distinct technology, payments, fraud or member-experience milestone"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Moody's Flags Rising AI Vendor Dependence",
+      "reason": "useful vendor-risk context, but broad banking analysis without a new credit-union event or primary-source implementation action"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Data-Center Financing Raises New Credit-Risk Questions",
+      "reason": "material broader-market lending issue with limited immediate credit-union applicability and no institution-specific action"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "AI Does the Legwork While Humans Keep the Last Word",
+      "reason": "timely commentary rather than a new verifiable product, policy or operating development"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Finovate Promotes a Credit Union Spotlight",
+      "reason": "event promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Chartway Receives a Top Workplaces Award",
+      "reason": "credible workforce recognition without a distinct AI, automation or operating decision"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Credit-Union CD Rate Rankings Update",
+      "reason": "consumer rate snapshot without durable operating, technology or governance value for the publication"
+    },
+    {
+      "date": "2026-08-11",
+      "headline": "Eltropy and Industry Groups Promote AI Training Content",
+      "reason": "vendor and webinar promotion without a completed deployment, policy change or independently verified result"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Senate Confirms John Crews to the NCUA Board",
+      "reason": "authoritative and current, but the appointment did not yet create a distinct credit-union operating or technology decision"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "America's Credit Unions Highlights AI Member-Service Results",
+      "reason": "recent industry roundup, but it repackaged previously announced deployments and vendor-supplied results without a new implementation event"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "CU 2.0 Launches AI Coaching for Credit Unions",
+      "reason": "current but primarily a consultancy promotion with early benefit claims that were not independently verifiable"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Eltropy Publishes a Four-Stage AI Adoption Playbook",
+      "reason": "useful vendor guidance rather than a completed policy, product or credit-union operating development"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "AltaOne Launches AnyTimePay",
+      "reason": "directly relevant to member liquidity, but the announcement was outside the 72-hour window and relied on vendor-supplied benefit and risk claims"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "HuLoop Reports First-Half Credit-Union Growth",
+      "reason": "outside the freshness window and based on vendor growth claims without institution-level operating outcomes"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Tavant Integrates Touchless Lending With Empower",
+      "reason": "mortgage infrastructure development outside the freshness window with no verified credit-union production result"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Great Lakes Credit Union Invests in Nook",
+      "reason": "credible fintech investment outside the freshness window, without a new deployment milestone or measurable member outcome"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "NCUA Advances Eleven Deregulatory Proposals",
+      "reason": "material regulatory agenda but outside the freshness window and too broad to support a distinct AI or fintech operating article in this cycle"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Illinois Valley Credit Union and Credit Union 1 Advance Merger",
+      "reason": "current credit-union operations update without a distinct technology, payments, fraud or digital-operating development"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Proof Publishes a Credit-Union Digital-Transformation Article",
+      "reason": "vendor content marketing rather than a verifiable new deployment, policy change or operating result"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Vendor Analysis Flags the UAD 3.6 Mortgage Deadline",
+      "reason": "potentially useful implementation context, but outside the freshness window and dependent on secondary vendor analysis"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Credit Union 1 Expands ATM Branding",
+      "reason": "current member-access update with limited AI relevance and insufficient decision value for a full article"
+    },
+    {
+      "date": "2026-08-10",
+      "headline": "Filene Announces a Money20/20 Partnership",
+      "reason": "conference partnership promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "African Diaspora Federal Credit Union Closes",
+      "reason": "authoritative and current, but a small-credit-union liquidation without a distinct AI, fintech or digital-operating development"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "Visa Agrees to Acquire BioCatch",
+      "reason": "still material but already evaluated, inside a recent fraud-heavy coverage run and without a new credit-union implementation milestone"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "UW Credit Union Selects Fiserv DNA Core",
+      "reason": "directly relevant but the evidence remained vendor-led and did not add an independently verifiable migration or operating milestone"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "Patelco Invests in Payfinia Payments CUSO",
+      "reason": "credible payments investment without production outcomes or a distinct new event since the prior evaluation"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "ROAD to Housing Act Regulatory Summary",
+      "reason": "secondary vendor analysis of a broad law; primary implementation guidance was not yet complete enough for a credit-union operating article"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "Alkami Opens Registration for Its 2027 Conference",
+      "reason": "event promotion rather than a completed material development"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "Bank Fraud Technology Advancement Act",
+      "reason": "important policy concept but not a new development within the 72-hour window"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "Credit Union 1 Expands Branded ATM Access",
+      "reason": "member-access development with limited AI relevance and no new evidence since the prior review"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "Collections AI Exception-Handling Playbook",
+      "reason": "qualified evergreen opportunity, but marketing and communications was the higher-priority unserved functional gap"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "Vendor Exit-Cost Checklist",
+      "reason": "qualified procurement concept, but narrower and less differentiated from the previous day's lifecycle-cost framework"
+    },
+    {
+      "date": "2026-08-07",
+      "headline": "AI Chatbot Escalation Case Study",
+      "reason": "useful concept, but the broader communications release gate served more channels and functions with stronger authoritative support"
+    },
     {
       "date": "2026-08-06",
       "headline": "Visa Agrees to Acquire BioCatch for $2.4 Billion",

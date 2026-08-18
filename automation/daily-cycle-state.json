@@ -6,98 +6,80 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-17",
+    "date": "2026-08-18",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 14,
     "beatsSearched": [
-      "finance-treasury",
       "regulatory-governance",
-      "fraud-security",
       "payments-deposits",
+      "fraud-security",
+      "vendor-management",
+      "finance-treasury",
       "lending-mortgage",
       "operations-member-service",
-      "vendor-management",
       "workforce"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "House Bill Would Expand Federal Credit Union Investment Authority",
-        "url": "https://creditunionainews.com/news/federal-credit-union-investment-authority-bill.html",
-        "primaryFunctionalAudience": "Finance and treasury leaders",
+        "title": "Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules",
+        "url": "https://creditunionainews.com/news/treasury-stablecoin-rule-credit-union-shares.html",
+        "primaryFunctionalAudience": "Payments and digital-asset leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-08-18"
+        "socialDecision": "pending-live-verification-next-free-slot-2026-08-19"
       }
     ],
     "rejections": [
       {
-        "title": "CFPB Ends Public Complaint Narratives and Visualizations",
-        "reason": "material complaint-data change, but its direct credit-union decision value was less specific than the selected federal-credit-union investment bill",
-        "primaryAudience": "compliance and complaint-management leaders",
+        "title": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
+        "reason": "vendor-controlled scale claim without institution-level outcomes or independent verification",
+        "primaryAudience": "technology and digital-banking leaders",
+        "secondaryAudiences": [
+          "vendor-management teams",
+          "member-experience leaders"
+        ]
+      },
+      {
+        "title": "Credit Union Trade Group Files Federal AI Priorities",
+        "reason": "relevant advocacy position but no enacted rule, institution-level implementation or new operating control",
+        "primaryAudience": "governance and compliance leaders",
+        "secondaryAudiences": [
+          "executives",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Real-Time Transfer Case Study Reports $8.5 Million in Six Months",
+        "reason": "potentially useful payments result, but the accessible evidence was paywalled secondary reporting without underlying institution documentation",
+        "primaryAudience": "payments and digital-banking leaders",
         "secondaryAudiences": [
           "operations leaders",
-          "data and analytics leaders"
+          "finance leaders"
         ]
       },
       {
-        "title": "Strata Credit Union Selects Alkami Digital Banking",
-        "reason": "vendor-supplied selection announcement without production outcomes or independently verified member impact",
-        "primaryAudience": "digital-banking and member-service leaders",
+        "title": "CFPB Complaint Database Public-Narrative Change",
+        "reason": "material complaint-management development already evaluated in the prior run and less directly actionable than the selected Treasury proposal",
+        "primaryAudience": "complaint-management and compliance leaders",
         "secondaryAudiences": [
-          "technology leaders",
-          "vendor-management teams"
-        ]
-      },
-      {
-        "title": "360factors Launches Fair-Lending Compliance Testing Agent",
-        "reason": "vendor product claim without a verified credit-union deployment, control review or performance evidence",
-        "primaryAudience": "fair-lending and compliance leaders",
-        "secondaryAudiences": [
-          "lending leaders",
+          "operations leaders",
           "data teams"
         ]
       },
       {
-        "title": "Western Union and Intermex Regulatory Update",
-        "reason": "important remittance transaction development but indirect credit-union applicability and unresolved California approval",
-        "primaryAudience": "payments leaders",
+        "title": "TruStage Cyber Incident Recovery Update",
+        "reason": "ongoing incident reporting overlapped recent breach-response coverage and supplied limited new primary-source control detail",
+        "primaryAudience": "cybersecurity and risk leaders",
         "secondaryAudiences": [
-          "risk leaders",
-          "executives"
+          "operations leaders",
+          "vendor-management teams"
         ]
       },
       {
-        "title": "ABA Calls for Federal AI Regulation",
-        "reason": "advocacy position rather than enacted guidance or an operating event, with weaker direct credit-union applicability",
-        "primaryAudience": "risk and governance leaders",
-        "secondaryAudiences": [
-          "executives",
-          "technology leaders"
-        ]
-      },
-      {
-        "title": "AI Agents as Insider-Risk Commentary",
-        "reason": "credible security analysis but commentary without a new primary-source incident, standard or control requirement",
-        "primaryAudience": "cybersecurity leaders",
-        "secondaryAudiences": [
-          "risk leaders",
-          "technology leaders"
-        ]
-      },
-      {
-        "title": "Wisconsin Credit Unions Respond to Tornado",
-        "reason": "valuable member-service response but limited primary operational detail for a differentiated full article",
-        "primaryAudience": "operations and member-service leaders",
-        "secondaryAudiences": [
-          "executives",
-          "business-continuity teams"
-        ]
-      },
-      {
-        "title": "OCC Updates Bank Accounting Advisory Series",
-        "reason": "current accounting guidance for national banks and federal savings associations, not directly applicable to credit unions",
+        "title": "FASB Derivatives and Hedging Accounting Comments",
+        "reason": "credit-union advocacy on a proposed accounting standard rather than a final requirement or operating event",
         "primaryAudience": "finance and accounting leaders",
         "secondaryAudiences": [
           "audit leaders",
@@ -105,57 +87,225 @@
         ]
       },
       {
-        "title": "Mortgage Rates Edge Lower",
-        "reason": "market snapshot without a distinct credit-union operating, technology or policy decision",
-        "primaryAudience": "mortgage and lending leaders",
-        "secondaryAudiences": [
-          "finance leaders",
-          "marketing teams"
-        ]
-      },
-      {
-        "title": "OwlPay Harbor Reports Cross-Border Volume Growth",
-        "reason": "vendor financial update with no verified credit-union adoption or operating implication",
-        "primaryAudience": "payments and innovation leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "executives"
-        ]
-      },
-      {
-        "title": "PenFed Opens Texas Financial Center",
-        "reason": "branch expansion without a distinct technology, policy or operating control development",
-        "primaryAudience": "operations and member-service leaders",
-        "secondaryAudiences": [
-          "marketing leaders",
-          "executives"
-        ]
-      },
-      {
-        "title": "BayPort Earns Workplace Recognition",
-        "reason": "award announcement rather than a new workforce practice or measurable implementation result",
-        "primaryAudience": "HR and workforce leaders",
+        "title": "FFIEC CAMELS Transparency Comments",
+        "reason": "advocacy on a supervisory proposal with less immediate operating specificity than the selected federal rulemaking",
+        "primaryAudience": "risk and governance leaders",
         "secondaryAudiences": [
           "executives",
-          "marketing leaders"
+          "audit leaders"
         ]
       },
       {
-        "title": "Justice Department Bank-Fraud and Laundering Cases",
-        "reason": "credible enforcement activity but case-specific facts did not establish a new general credit-union control requirement",
-        "primaryAudience": "fraud and BSA/AML leaders",
+        "title": "Check-Fraud Education Campaign Commentary",
+        "reason": "campaign and commentary material already represented in recent Alert coverage, without a distinct new control requirement",
+        "primaryAudience": "fraud and payments leaders",
+        "secondaryAudiences": [
+          "member-communications teams",
+          "operations leaders"
+        ]
+      },
+      {
+        "title": "Credit Union Trade Association Name and Domicile Change",
+        "reason": "corporate administrative change without a material credit-union operating decision",
+        "primaryAudience": "executives",
+        "secondaryAudiences": [
+          "communications leaders",
+          "governance teams"
+        ]
+      },
+      {
+        "title": "SwipeSimple Adds ACH for Merchants",
+        "reason": "merchant-fintech feature launch with indirect credit-union applicability and no verified credit-union deployment",
+        "primaryAudience": "payments and product leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Desert Financial Expands Indirect Auto Capacity",
+        "reason": "vendor-led case study with limited primary methodology and no sufficiently fresh independent evidence",
+        "primaryAudience": "auto-lending leaders",
+        "secondaryAudiences": [
+          "finance leaders",
+          "operations leaders"
+        ]
+      },
+      {
+        "title": "Generation Z Financial-Trust Survey",
+        "reason": "paywalled secondary reporting with inaccessible primary methodology and no distinct implementation event",
+        "primaryAudience": "marketing and member-experience leaders",
+        "secondaryAudiences": [
+          "product leaders",
+          "executives"
+        ]
+      },
+      {
+        "title": "Former Credit Union Manager Sentenced for Theft",
+        "reason": "case-specific law-enforcement development that did not establish a new general control requirement",
+        "primaryAudience": "fraud and internal-audit leaders",
         "secondaryAudiences": [
           "risk leaders",
-          "payments leaders"
+          "executives"
         ]
       }
     ],
     "status": "article-complete",
     "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
     "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
-    "updatedAt": "2026-08-17T07:00:00-04:00"
+    "updatedAt": "2026-08-18T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-17",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 14,
+      "beatsSearched": [
+        "finance-treasury",
+        "regulatory-governance",
+        "fraud-security",
+        "payments-deposits",
+        "lending-mortgage",
+        "operations-member-service",
+        "vendor-management",
+        "workforce"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "House Bill Would Expand Federal Credit Union Investment Authority",
+          "url": "https://creditunionainews.com/news/federal-credit-union-investment-authority-bill.html",
+          "primaryFunctionalAudience": "Finance and treasury leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-08-18"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "CFPB Ends Public Complaint Narratives and Visualizations",
+          "reason": "material complaint-data change, but its direct credit-union decision value was less specific than the selected federal-credit-union investment bill",
+          "primaryAudience": "compliance and complaint-management leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "data and analytics leaders"
+          ]
+        },
+        {
+          "title": "Strata Credit Union Selects Alkami Digital Banking",
+          "reason": "vendor-supplied selection announcement without production outcomes or independently verified member impact",
+          "primaryAudience": "digital-banking and member-service leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "360factors Launches Fair-Lending Compliance Testing Agent",
+          "reason": "vendor product claim without a verified credit-union deployment, control review or performance evidence",
+          "primaryAudience": "fair-lending and compliance leaders",
+          "secondaryAudiences": [
+            "lending leaders",
+            "data teams"
+          ]
+        },
+        {
+          "title": "Western Union and Intermex Regulatory Update",
+          "reason": "important remittance transaction development but indirect credit-union applicability and unresolved California approval",
+          "primaryAudience": "payments leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "ABA Calls for Federal AI Regulation",
+          "reason": "advocacy position rather than enacted guidance or an operating event, with weaker direct credit-union applicability",
+          "primaryAudience": "risk and governance leaders",
+          "secondaryAudiences": [
+            "executives",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "AI Agents as Insider-Risk Commentary",
+          "reason": "credible security analysis but commentary without a new primary-source incident, standard or control requirement",
+          "primaryAudience": "cybersecurity leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Wisconsin Credit Unions Respond to Tornado",
+          "reason": "valuable member-service response but limited primary operational detail for a differentiated full article",
+          "primaryAudience": "operations and member-service leaders",
+          "secondaryAudiences": [
+            "executives",
+            "business-continuity teams"
+          ]
+        },
+        {
+          "title": "OCC Updates Bank Accounting Advisory Series",
+          "reason": "current accounting guidance for national banks and federal savings associations, not directly applicable to credit unions",
+          "primaryAudience": "finance and accounting leaders",
+          "secondaryAudiences": [
+            "audit leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Mortgage Rates Edge Lower",
+          "reason": "market snapshot without a distinct credit-union operating, technology or policy decision",
+          "primaryAudience": "mortgage and lending leaders",
+          "secondaryAudiences": [
+            "finance leaders",
+            "marketing teams"
+          ]
+        },
+        {
+          "title": "OwlPay Harbor Reports Cross-Border Volume Growth",
+          "reason": "vendor financial update with no verified credit-union adoption or operating implication",
+          "primaryAudience": "payments and innovation leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "PenFed Opens Texas Financial Center",
+          "reason": "branch expansion without a distinct technology, policy or operating control development",
+          "primaryAudience": "operations and member-service leaders",
+          "secondaryAudiences": [
+            "marketing leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "BayPort Earns Workplace Recognition",
+          "reason": "award announcement rather than a new workforce practice or measurable implementation result",
+          "primaryAudience": "HR and workforce leaders",
+          "secondaryAudiences": [
+            "executives",
+            "marketing leaders"
+          ]
+        },
+        {
+          "title": "Justice Department Bank-Fraud and Laundering Cases",
+          "reason": "credible enforcement activity but case-specific facts did not establish a new general credit-union control requirement",
+          "primaryAudience": "fraud and BSA/AML leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "payments leaders"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
+      "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
+      "updatedAt": "2026-08-17T07:00:00-04:00"
+    },
     {
       "date": "2026-08-14",
       "fullArticleCount": 1,

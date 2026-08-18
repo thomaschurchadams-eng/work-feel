@@ -3,6 +3,25 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "treasury-stablecoin-rule-credit-union-shares",
+      "articleUrl": "/news/treasury-stablecoin-rule-credit-union-shares.html",
+      "imagePath": "/assets/treasury-stablecoin-rule-credit-union-shares.jpg",
+      "publishedAt": "2026-08-18T07:00:00-04:00",
+      "medium": "mixed-media-collage",
+      "subject": "physical-metaphor",
+      "composition": "layered-depth",
+      "perspective": "eye-level",
+      "palette": "emerald-cream",
+      "lighting": "soft-daylight",
+      "texture": "paper-fiber",
+      "scene": "stablecoin-definition-fork-between-licensed-issuer-vault-and-credit-union-share-motif",
+      "conceptScore": 71.2,
+      "conceptAlternatives": [
+        {"medium":"soft-editorial-illustration","subject":"documents-and-controls","score":70.1},
+        {"medium":"dimensional-3d","subject":"architecture-and-infrastructure","score":62.8}
+      ]
+    },
+    {
       "id": "federal-credit-union-investment-authority-bill",
       "articleUrl": "/news/federal-credit-union-investment-authority-bill.html",
       "imagePath": "/assets/federal-credit-union-investment-authority-bill.jpg",

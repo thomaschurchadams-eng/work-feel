@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "treasury-stablecoin-rule-credit-union-shares",
+      "title": "Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules",
+      "url": "/news/treasury-stablecoin-rule-credit-union-shares.html",
+      "publishedAt": "2026-08-18T07:00:00-04:00",
+      "section": "news",
+      "beat": "payments-deposits",
+      "functions": ["payments-deposits", "risk-compliance", "finance-treasury", "it-data-cybersecurity", "vendor-management", "board-strategy"],
+      "technologies": ["realtime-embedded-finance"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments and digital-asset leaders",
+      "secondaryAudiences": ["compliance and legal leaders", "finance and treasury leaders", "technology and data leaders", "vendor-management teams", "boards and executives"],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "pending-live-verification-next-free-slot-2026-08-19",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the LinkedIn package if cadence and scheduling gates pass; article selection and editorial structure were not altered",
+      "internalLinkTargets": ["/news/credit-unions-fed-payment-account-guardrails.html", "/insight-credit-union-ai-vendor-exit-playbook.html"],
+      "sourceTier": 1,
+      "score": 99.0
+    },
+    {
       "id": "federal-credit-union-investment-authority-bill",
       "title": "House Bill Would Expand Federal Credit Union Investment Authority",
       "url": "/news/federal-credit-union-investment-authority-bill.html",
