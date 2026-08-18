@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-18T09:55:30-04:00",
+  "updatedAt": "2026-08-18T12:00:14-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "id": "social-queue-sent-state-reconciliation-2026-08-18",
-      "evidence": "The live Buffer metrics feed reports Colorado ASSET Act, FinCEN BOI, Vendor Exit and Guardian posts as sent with exact post IDs and sentAt timestamps, while their existing automation/social-queue.json records still retain status: scheduled. The mismatch has recurred across multiple items and can confuse handoff/reliability reporting even though delivery itself is healthy.",
+      "evidence": "The live Buffer metrics feed reports multiple tracked CUAI company-page posts as sent with exact item IDs, post IDs and sentAt timestamps, while their existing automation/social-queue.json records retained status: scheduled. The mismatch recurred across the tracked queue and could confuse handoff/reliability reporting even though delivery itself was healthy.",
       "proposedChange": "Make the existing operating/reliability review reconcile an exact Buffer-sent item to the existing social-queue item in place, without creating a replacement post or calling the scheduler.",
       "expectedBenefit": "Keep the internal social handoff ledger consistent with authoritative delivery evidence, eliminate repeated manual interpretation, and reduce false recovery/duplicate risk.",
       "risk": "low",
@@ -65,13 +65,15 @@
         "new policy requires exact queue-item and postId match plus non-null Buffer sentAt",
         "reconciliation is idempotent and preserves immutable UTM, schedule, post, channel and image fields",
         "policy explicitly forbids scheduler calls, replacement items, destination changes, credentials or cadence changes",
-        "ambiguous or pending Buffer evidence remains a blocker rather than a guessed state rewrite"
+        "live Buffer metrics were re-read and exact sent evidence matched 12 tracked repository items",
+        "the Aug. 19 Treasury reservation remained scheduled and untouched",
+        "the legacy July 22 EricaAssist baseline remained untouched because it uses the legacy bufferPostId schema rather than the exact postId rule"
       ],
-      "status": "prevention-policy-implemented",
+      "status": "completed",
       "owner": "CUAI Operating System / Reliability Watch",
       "deadline": "2026-08-19T10:00:00-04:00",
-      "result": "The durable sent-state reconciliation rule was added on the Aug. 18 CEO feature branch. Existing stale items should be reconciled idempotently in the next material operating/reliability commit; no external LinkedIn action is required.",
-      "rollback": "Remove the Sent-state reconciliation subsection from automation/scheduled-tasks/cuai-operating-system.md; no external post or credential state would need rollback."
+      "result": "Reliability Watch reconciled 12 exact tracked Buffer-sent items in place to status sent and recorded Buffer sentAt/externalLink evidence. No scheduler call, replacement post, UTM change, destination change, cadence change or credential action occurred.",
+      "rollback": "Revert only the social-queue sent-state fields if any exact Buffer evidence is later shown to be mismatched; the external posts themselves are unchanged."
     }
   ]
 }
