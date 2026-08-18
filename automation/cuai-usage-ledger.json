@@ -123,6 +123,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
       "summary": "Resolved Production commit 099e43d and successfully retrieved live GA4 and Buffer data, verified the Aug. 18 Treasury stablecoin High article live, and found zero Vercel runtime errors in 24 hours. Current 7-day users remain above the 28-day weekly pace, but sessions, page views, engaged sessions and 90% scrolling lag materially; because depth has constrained multiple consecutive CEO reviews, opened a bounded three-article decision-first opening experiment on clean post-repair instrumentation. The first two High-post hook observations remain below target and the third is scheduled for Aug. 18 at 11:30 a.m. ET, with the decision still due Aug. 21. Diagnosed repeated internal social-ledger drift where Buffer confirms sent posts but repository items remain scheduled; implemented an idempotent prevention rule that reconciles only exact sent evidence without calling the scheduler. Search Console remains degraded on the known incompatible optional GA4 query and blocked on safe Preview read-only authentication for the isolated direct path. Prepared PR #133 on a READY Vercel Preview and refreshed the CEO report and workload ledger.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-18T12:08:35-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability check found the repeated internal social-ledger drift identified by the CEO was still present: Buffer authoritatively showed tracked company-page posts as sent while automation/social-queue.json retained status scheduled.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":2,"runtimeErrorChecks":1,"previewDeploymentChecks":1,"socialLedgerItemsReconciled":12,"improvementLedgerChanges":1,"recoveryBranchesCreated":1,"recoveryPullRequestsCreated":1,"recoveryPullRequestsMerged":1,"recoveryFilesChanged":2,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
+      "summary": "Confirmed the August 18 publisher outcome and core production runtime were healthy, then recovered the repeated internal social sent-state drift under the idempotent rule added in PR #133. Re-read live Buffer evidence, matched 12 modern tracked queue items by exact item/post ID and non-null sentAt, and updated only those existing records to sent with authoritative sentAt/externalLink fields. Preserved the August 19 Treasury reservation, immutable UTMs, schedule/channel/image history and the legacy July 22 EricaAssist baseline; made no scheduler call and created no replacement post. Validated a READY preview, merged PR #134, verified READY Production on a1fc7d4, and re-read the live Buffer endpoint successfully on that exact commit.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
