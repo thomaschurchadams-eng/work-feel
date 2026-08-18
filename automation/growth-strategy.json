@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T16:57:00Z",
+  "updatedAt": "2026-08-18T09:55:30-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -36,11 +36,12 @@
       "status": "active",
       "hypothesis": "For otherwise-qualified High-priority CUAI stories, opening the LinkedIn post with the named institution or event plus one immediate operating consequence will improve median reach and attributable site sessions versus the recent promoted-post cohort without reducing engagement quality.",
       "evidence": [
-        "The current 28-day Buffer view contains 8 metrics-ready company-page posts with 735 total impressions and 534 reach, but performance is highly concentrated in the July 22 and July 23 posts.",
-        "The latest metrics-ready post has 8 impressions and 5 reach, indicating a current distribution problem worth testing rather than extending baseline collection.",
-        "GA4 reporting is live through the privacy-safe production endpoint. The current 28-day window records 10 LinkedIn campaign sessions at 20% engagement; the current 7-day window records 1 LinkedIn session and no engaged LinkedIn session."
+        "The current 28-day Buffer view contains 12 metrics-ready company-page posts with 777 total impressions and 565 reach, but performance remains highly concentrated in the July 22 and July 23 posts.",
+        "FinCEN BOI, the first High-priority experiment observation, has 4 impressions, 3 reach, 1 attributable GA4 session and 0 engaged sessions.",
+        "Colorado ASSET Act, the second High-priority experiment observation, has 2 impressions and 2 reach in Buffer; no GA4 session is yet attributable to its utm_content.",
+        "The third High-priority observation, the federal-credit-union investment-authority article, is scheduled for August 18 at 11:30 a.m. ET with the approved immutable UTM structure."
       ],
-      "boundedChange": "For the next 3 otherwise-qualified High-priority company-page posts after August 11, keep the existing schedule, frequency and editorial gates, but use a concise relevance-led opening: named institution/event -> why it matters now -> one concrete credit-union operating action. Preserve the approved UTM-tagged distributionUrl and existing image rules.",
+      "boundedChange": "For the 3 otherwise-qualified High-priority company-page posts after August 11, keep the existing schedule, frequency and editorial gates, but use a concise relevance-led opening: named institution/event -> why it matters now -> one concrete credit-union operating action. Preserve the approved UTM-tagged distributionUrl and existing image rules.",
       "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content. Target at least 2 sessions per experiment post, median Buffer reach of 12 or more, and median Buffer engagement rate of at least 5% by 2026-08-21.",
       "guardrailMetrics": [
         "Buffer median impressions and reach",
@@ -51,8 +52,31 @@
         "one-post-per-day and five-per-week distribution limits"
       ],
       "startDate": "2026-08-12",
-      "reviewCondition": "Execute 3 otherwise-qualified High-priority experiment posts by 2026-08-18 and review preliminary GA4 attribution on 2026-08-18. Make the outcome decision on 2026-08-21 using median sessions per post, reach and engagement; do not extend the experiment solely to collect another baseline.",
+      "reviewCondition": "Complete the third High-priority observation on August 18 and make the outcome decision on August 21 using median sessions per post, reach and engagement. Do not extend the experiment solely to collect another baseline. If the third post does not materially reverse the first two observations, prepare a replacement framing test rather than preserving the current hook by default.",
       "rollback": "Remove this hook guidance and return to the prior copy framing. No schedule, credentials, editorial gates or publishing authority need to change."
+    },
+    {
+      "id": "article-decision-first-opening-2026-08-18",
+      "status": "active",
+      "hypothesis": "A tighter decision-first opening on otherwise-qualified articles will improve qualified reading depth by making the operating consequence and reader action explicit before background chronology.",
+      "evidence": [
+        "Current GA4 7-day users are 47 versus a 28-day weekly pace of 38.25, but sessions are 52 versus a weekly pace of 58 and page views are 57 versus 143.25.",
+        "Current 7-day engaged sessions are 11 versus a 28-day weekly pace of 20.5, engagement rate is 21.2% versus 35.3%, and 90%-scrolled users are 3 versus a weekly pace of 7.75.",
+        "Reading-depth weakness has appeared in multiple consecutive CEO reviews, so another wait-for-sample conclusion would not meet the active-optimization rule.",
+        "The August 17 shared-script repair restored the CUAI custom article-event layer, allowing the next cohort to be measured on clean post-repair instrumentation."
+      ],
+      "boundedChange": "For the next 3 otherwise-qualified News or Insights articles after August 18, make the first approximately 80-120 words answer three questions in plain language: what changed or what decision is at issue, why a credit-union leader should care now, and one concrete action or control to consider. Preserve source standards, neutral framing, article selection, factual nuance, overall structure, CTA, schedule and publication gates.",
+      "primaryMetric": "Recover qualified reading depth across the 3-article cohort: target a rolling 7-day engagement rate of at least 30%, at least 18 engaged sessions and at least 6 built-in 90%-scrolled users by 2026-08-28, while not reducing rolling 7-day active users below 40.",
+      "guardrailMetrics": [
+        "GA4 active users and sessions",
+        "GA4 engaged sessions and engagement rate",
+        "GA4 built-in 90% scrolled users",
+        "CUAI engaged_reader and scroll_depth events on post-repair traffic",
+        "source quality and editorial classification unchanged"
+      ],
+      "startDate": "2026-08-18",
+      "reviewCondition": "Review after 3 qualifying post-repair articles or on August 28, whichever comes first. Stop or revise if engagement/depth does not improve directionally, if the opening becomes formulaic or overstates urgency, or if source/editorial guardrails are pressured.",
+      "rollback": "Remove the decision-first opening guidance and return to normal article-opening discretion; no site code, schedule, credential or external authority changes are required."
     }
   ],
   "productionGuidance": {
@@ -60,9 +84,11 @@
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12: for the next 3 otherwise-qualified High-priority LinkedIn posts after August 11, open concisely with the named institution/event, why it matters now, and one concrete credit-union operating action. Keep existing scheduling, UTM, editorial and image guardrails unchanged."
+      "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12: complete the third otherwise-qualified High-priority observation on August 18. Keep existing scheduling, UTM, editorial and image guardrails unchanged; make the experiment decision on August 21."
     ],
-    "articleOpeningGuidance": [],
+    "articleOpeningGuidance": [
+      "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18: for the next 3 otherwise-qualified News or Insights articles after August 18, use the first approximately 80-120 words to state the decision/change, why it matters now, and one concrete credit-union action or control before background chronology. Preserve all sourcing and editorial gates."
+    ],
     "visualGuidance": [],
     "conversionGuidance": [],
     "deprioritize": []
@@ -82,6 +108,13 @@
       "evidence": "Eight Buffer posts are metrics-ready in the 28-day window, recent reach is weak, and waiting for a perfect sample has become an operating blocker. GA4 is instrumented but was unavailable to the manual CEO run because the current ChatGPT connector runtime exposes no Google Analytics reporting action.",
       "uncertainty": "Historical UTM attribution is mixed and GA4 could not be retrieved in this run, so the experiment is reversible and site-session conclusions must wait for authoritative GA4 data.",
       "nextCheckpoint": "Three metrics-ready experiment posts with GA4 attribution, or 10 business days if GA4 reporting remains blocked."
+    },
+    {
+      "timestamp": "2026-08-18T09:55:30-04:00",
+      "decision": "Open a second, bounded article-opening experiment because qualified reading depth has underperformed the 28-day pace across consecutive CEO reviews while acquisition remains comparatively stronger.",
+      "evidence": "Live GA4 shows 47 users, 52 sessions, 57 page views, 11 engaged sessions, 21.2% engagement and 3 built-in 90%-scrolled users in 7 days versus 153 users, 232 sessions, 573 views, 82 engaged sessions, 35.3% engagement and 31 90%-scrolled users in 28 days. The shared-script measurement repair is now live, so the next article cohort can be evaluated on clean post-repair instrumentation.",
+      "uncertainty": "The rolling 7-day window can move sharply when one high-volume day rolls off, so the experiment is reversible and does not change article selection, schedule or editorial standards.",
+      "nextCheckpoint": "Three qualifying post-repair articles or 2026-08-28, whichever comes first."
     }
   ]
 }
