@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-17T09:55:00-04:00",
+  "updatedAt": "2026-08-18T09:55:30-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -41,7 +41,7 @@
     {
       "id": "source-health-refresh-2026-08-17",
       "evidence": "automation/source-health.json was last fully checked on 2026-07-20 and records 28 URLs, including two temporarily unavailable sources. The ledger is now stale relative to the current newsroom cycle.",
-      "proposedChange": "Run a bounded source-health maintenance refresh against the existing registry and the primary sources used in the most recent Aug. 11-17 newsroom cycle; update statuses only from verified checks.",
+      "proposedChange": "Run a bounded source-health maintenance refresh against the existing registry and the primary sources used in the most recent Aug. 11-18 newsroom cycle; update statuses only from verified checks.",
       "expectedBenefit": "Reduce stale-source and broken-link risk without adding work to the daily article publisher.",
       "risk": "low",
       "validation": [
@@ -52,8 +52,26 @@
       "status": "queued",
       "owner": "reliability/source-health maintenance",
       "deadline": "2026-08-18T17:00:00-04:00",
-      "result": "Pending next maintenance cycle.",
+      "result": "Pending the bounded Aug. 18 maintenance cycle; no source-health status is being inferred from age alone.",
       "rollback": "Revert only any inaccurate source-health status changes; do not alter published reporting solely because a source is temporarily unavailable."
+    },
+    {
+      "id": "social-queue-sent-state-reconciliation-2026-08-18",
+      "evidence": "The live Buffer metrics feed reports Colorado ASSET Act, FinCEN BOI, Vendor Exit and Guardian posts as sent with exact post IDs and sentAt timestamps, while their existing automation/social-queue.json records still retain status: scheduled. The mismatch has recurred across multiple items and can confuse handoff/reliability reporting even though delivery itself is healthy.",
+      "proposedChange": "Make the existing operating/reliability review reconcile an exact Buffer-sent item to the existing social-queue item in place, without creating a replacement post or calling the scheduler.",
+      "expectedBenefit": "Keep the internal social handoff ledger consistent with authoritative delivery evidence, eliminate repeated manual interpretation, and reduce false recovery/duplicate risk.",
+      "risk": "low",
+      "validation": [
+        "new policy requires exact queue-item and postId match plus non-null Buffer sentAt",
+        "reconciliation is idempotent and preserves immutable UTM, schedule, post, channel and image fields",
+        "policy explicitly forbids scheduler calls, replacement items, destination changes, credentials or cadence changes",
+        "ambiguous or pending Buffer evidence remains a blocker rather than a guessed state rewrite"
+      ],
+      "status": "prevention-policy-implemented",
+      "owner": "CUAI Operating System / Reliability Watch",
+      "deadline": "2026-08-19T10:00:00-04:00",
+      "result": "The durable sent-state reconciliation rule was added on the Aug. 18 CEO feature branch. Existing stale items should be reconciled idempotently in the next material operating/reliability commit; no external LinkedIn action is required.",
+      "rollback": "Remove the Sent-state reconciliation subsection from automation/scheduled-tasks/cuai-operating-system.md; no external post or credential state would need rollback."
     }
   ]
 }
