@@ -167,6 +167,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
       "summary": "Confirmed Production READY on commit 33c41c5 with no runtime errors, retrieved live GA4, Buffer and direct Search Console data, and verified the Aug. 19 Veridian/Greenlight Standard News article live after the publisher evaluated 13 candidates across 8 beats. The strongest joined-funnel signal is weak recent LinkedIn distribution—14 impressions/12 reach/0% mean engagement across four 7-day metrics-ready posts producing 3 GA4 LinkedIn sessions and 0 engaged sessions—while overall active users remain slightly above the 28-day weekly pace but page views, engaged sessions and 90% scrolling lag materially. The three-post relevance-led LinkedIn hook cohort is complete and below every target, so stopped it instead of extending it and opened a bounded operating-tension-first replacement for future High posts without changing schedule, UTMs, destinations, images or editorial gates. Continued the decision-first article-opening cohort with Veridian as article 1 of 3. Direct Search Console is healthy and shows 423 impressions/1 click over 7 days; the incompatible optional GA4-linked Search Console subsection remains isolated and non-blocking. Refreshed the CEO report and workload ledger on a dedicated reporting branch.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-19T12:05:39-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found the August 19 Treasury LinkedIn item had completed successfully in Buffer at the fixed 11:30 a.m. ET slot, while automation/social-queue.json still retained status scheduled without the authoritative sent timestamp or LinkedIn URL.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"searchConsoleEndpointQueries":1,"socialLedgerItemsReconciled":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":2,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Search Console"],
+      "summary": "Diagnosed repository delivery-state lag after an otherwise healthy asynchronous Buffer send, not an external delivery failure. Buffer matched the existing Treasury queue item by exact item ID and post ID and returned sentAt 2026-08-19T15:30:44.624Z, the approved CreditUnionAI News company-page link, and confirmed UTM tracking. Reconciled that one existing item in place to sent with the authoritative sentAt/externalLink fields; made no scheduler call, replacement post, UTM change, destination change, cadence change, credential action or editorial change. The August 19 publisher outcome is complete, the Veridian article is live, Production was READY on the pre-recovery main commit with no runtime errors in 24 hours, and direct Search Console remained HTTP 200/ok=true. The existing exact-match reconciliation rule is the durable prevention mechanism and was applied idempotently after the send completed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
