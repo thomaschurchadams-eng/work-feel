@@ -3,6 +3,21 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "veridian-greenlight-family-finance-app",
+      "articleUrl": "/news/veridian-greenlight-family-finance-app.html",
+      "imagePath": "/assets/veridian-greenlight-family-finance-app.jpg",
+      "publishedAt": "2026-08-19T07:00:00-04:00",
+      "medium": "tactile-paper-cut",
+      "subject": "member-interaction",
+      "composition": "asymmetric-editorial",
+      "perspective": "eye-level",
+      "palette": "burgundy-sand",
+      "lighting": "soft-daylight",
+      "texture": "paper-fiber",
+      "scene": "embedded-family-finance-service",
+      "conceptScore": 71.2
+    },
+    {
       "id": "treasury-stablecoin-rule-credit-union-shares",
       "articleUrl": "/news/treasury-stablecoin-rule-credit-union-shares.html",
       "imagePath": "/assets/treasury-stablecoin-rule-credit-union-shares.jpg",
@@ -17,8 +32,16 @@
       "scene": "stablecoin-definition-fork-between-licensed-issuer-vault-and-credit-union-share-motif",
       "conceptScore": 71.2,
       "conceptAlternatives": [
-        {"medium":"soft-editorial-illustration","subject":"documents-and-controls","score":70.1},
-        {"medium":"dimensional-3d","subject":"architecture-and-infrastructure","score":62.8}
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "documents-and-controls",
+          "score": 70.1
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "architecture-and-infrastructure",
+          "score": 62.8
+        }
       ]
     },
     {
@@ -36,8 +59,16 @@
       "scene": "proposed-corporate-debt-and-asset-backed-security-paths-behind-statutory-gate",
       "conceptScore": 99.1,
       "conceptAlternatives": [
-        {"medium":"soft-editorial-illustration","subject":"documents-and-controls","score":96.8},
-        {"medium":"mixed-media-collage","subject":"architecture-and-infrastructure","score":97.4}
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "documents-and-controls",
+          "score": 96.8
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "architecture-and-infrastructure",
+          "score": 97.4
+        }
       ]
     },
     {
@@ -98,7 +129,7 @@
       "lighting": "high-contrast-studio",
       "texture": "clean-photographic",
       "scene": "three-clock-cyber-incident-response",
-      "conceptScore": 99.0
+      "conceptScore": 99
     },
     {
       "id": "credit-union-ai-collections-exception-playbook",

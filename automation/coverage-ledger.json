@@ -3,25 +3,80 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "veridian-greenlight-family-finance-app",
+      "title": "Veridian Embeds Greenlight Family Finance Tools in Its App",
+      "url": "/news/veridian-greenlight-family-finance-app.html",
+      "publishedAt": "2026-08-19T07:00:00-04:00",
+      "section": "news",
+      "beat": "product-member-experience",
+      "functions": [
+        "member-service",
+        "marketing-growth",
+        "operations",
+        "vendor-management",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "realtime-embedded-finance"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Digital product and member-experience leaders",
+      "secondaryAudiences": [
+        "operations and member-service leaders",
+        "marketing and growth leaders",
+        "technology and data leaders",
+        "vendor-management teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 1 of 3; selection, sourcing, factual nuance and classification were unchanged. LinkedIn hook experiment not applied because the article is Standard priority.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/news/heritage-hub-kiro-ai-money-coach.html"
+      ],
+      "sourceTier": 1,
+      "score": 84.6
+    },
+    {
       "id": "treasury-stablecoin-rule-credit-union-shares",
       "title": "Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules",
       "url": "/news/treasury-stablecoin-rule-credit-union-shares.html",
       "publishedAt": "2026-08-18T07:00:00-04:00",
       "section": "news",
       "beat": "payments-deposits",
-      "functions": ["payments-deposits", "risk-compliance", "finance-treasury", "it-data-cybersecurity", "vendor-management", "board-strategy"],
-      "technologies": ["realtime-embedded-finance"],
+      "functions": [
+        "payments-deposits",
+        "risk-compliance",
+        "finance-treasury",
+        "it-data-cybersecurity",
+        "vendor-management",
+        "board-strategy"
+      ],
+      "technologies": [
+        "realtime-embedded-finance"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Payments and digital-asset leaders",
-      "secondaryAudiences": ["compliance and legal leaders", "finance and treasury leaders", "technology and data leaders", "vendor-management teams", "boards and executives"],
+      "secondaryAudiences": [
+        "compliance and legal leaders",
+        "finance and treasury leaders",
+        "technology and data leaders",
+        "vendor-management teams",
+        "boards and executives"
+      ],
       "maturity": "breaking",
       "promotionPriority": "High",
       "socialDecision": "scheduled-2026-08-19",
       "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the LinkedIn package if cadence and scheduling gates pass; article selection and editorial structure were not altered",
-      "internalLinkTargets": ["/news/credit-unions-fed-payment-account-guardrails.html", "/insight-credit-union-ai-vendor-exit-playbook.html"],
+      "internalLinkTargets": [
+        "/news/credit-unions-fed-payment-account-guardrails.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
       "sourceTier": 1,
-      "score": 99.0
+      "score": 99
     },
     {
       "id": "federal-credit-union-investment-authority-bill",
@@ -30,17 +85,30 @@
       "publishedAt": "2026-08-17T07:00:00-04:00",
       "section": "news",
       "beat": "finance-treasury",
-      "functions": ["finance-treasury", "board-strategy", "risk-compliance"],
-      "technologies": ["data-decisioning"],
+      "functions": [
+        "finance-treasury",
+        "board-strategy",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Finance and treasury leaders",
-      "secondaryAudiences": ["boards and executives", "risk and compliance leaders", "investment and asset-liability management teams"],
+      "secondaryAudiences": [
+        "boards and executives",
+        "risk and compliance leaders",
+        "investment and asset-liability management teams"
+      ],
       "maturity": "breaking",
       "promotionPriority": "High",
       "socialDecision": "scheduled-2026-08-18",
       "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the LinkedIn package if cadence and scheduling gates pass; article selection and editorial structure were not altered",
-      "internalLinkTargets": ["/insight-credit-union-ai-business-case-framework.html", "/insight-credit-union-ai-vendor-exit-playbook.html"],
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-business-case-framework.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
       "sourceTier": 1,
       "score": 98.3
     },
@@ -51,17 +119,35 @@
       "publishedAt": "2026-08-14T07:00:00-04:00",
       "section": "news",
       "beat": "fraud-security",
-      "functions": ["risk-compliance", "operations", "member-service", "payments-deposits", "lending-collections", "it-data-cybersecurity"],
-      "technologies": ["fraud-analytics"],
+      "functions": [
+        "risk-compliance",
+        "operations",
+        "member-service",
+        "payments-deposits",
+        "lending-collections",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-analytics"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Fraud operations and compliance leaders",
-      "secondaryAudiences": ["frontline and member-service leaders", "deposit and payments operations leaders", "lending leaders", "technology and data leaders", "executives"],
+      "secondaryAudiences": [
+        "frontline and member-service leaders",
+        "deposit and payments operations leaders",
+        "lending leaders",
+        "technology and data leaders",
+        "executives"
+      ],
       "maturity": "breaking",
       "promotionPriority": "High",
       "socialDecision": "scheduled-2026-08-17",
       "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the LinkedIn package; article selection and editorial structure were not altered",
-      "internalLinkTargets": ["/news/rbfcu-impersonation-scam-regulation-e-investigations.html", "/news/fincen-ai-student-aid-fraud.html"],
+      "internalLinkTargets": [
+        "/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
+        "/news/fincen-ai-student-aid-fraud.html"
+      ],
       "sourceTier": 1,
       "score": 98.8
     },
@@ -109,17 +195,34 @@
       "publishedAt": "2026-08-12T07:00:00-04:00",
       "section": "insights",
       "beat": "vendor-management",
-      "functions": ["vendor-management", "it-data-cybersecurity", "risk-compliance", "operations", "finance-treasury", "executive-governance"],
-      "technologies": ["agents-automation"],
+      "functions": [
+        "vendor-management",
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "operations",
+        "finance-treasury",
+        "executive-governance"
+      ],
+      "technologies": [
+        "agents-automation"
+      ],
       "format": "checklist",
       "audience": "functional-leader",
       "primaryAudience": "Vendor-management and technology leaders",
-      "secondaryAudiences": ["risk and compliance leaders", "operations leaders", "finance and treasury leaders", "executives and board leaders"],
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "operations leaders",
+        "finance and treasury leaders",
+        "executives and board leaders"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Library",
       "socialDecision": "not-created-library-priority",
       "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 not applied because Library articles are not promoted on LinkedIn",
-      "internalLinkTargets": ["/news/ai-vendor-due-diligence-checklist-credit-unions.html", "/insight-credit-union-ai-business-case-framework.html"],
+      "internalLinkTargets": [
+        "/news/ai-vendor-due-diligence-checklist-credit-unions.html",
+        "/insight-credit-union-ai-business-case-framework.html"
+      ],
       "sourceTier": 1,
       "score": 98.1
     },
@@ -130,17 +233,33 @@
       "publishedAt": "2026-08-11T07:00:00-04:00",
       "section": "news",
       "beat": "it-data-cybersecurity",
-      "functions": ["it-data-cybersecurity", "risk-compliance", "operations", "member-service", "vendor-management"],
-      "technologies": ["privacy-security"],
+      "functions": [
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "operations",
+        "member-service",
+        "vendor-management"
+      ],
+      "technologies": [
+        "privacy-security"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Cybersecurity and risk leaders",
-      "secondaryAudiences": ["legal and compliance leaders", "member-service leaders", "operations leaders", "vendor-management teams"],
+      "secondaryAudiences": [
+        "legal and compliance leaders",
+        "member-service leaders",
+        "operations leaders",
+        "vendor-management teams"
+      ],
       "maturity": "breaking",
       "promotionPriority": "High",
       "socialDecision": "scheduled-2026-08-11",
       "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
-      "internalLinkTargets": ["/news/ai-vendor-due-diligence-checklist-credit-unions.html", "/news/rbfcu-impersonation-scam-regulation-e-investigations.html"],
+      "internalLinkTargets": [
+        "/news/ai-vendor-due-diligence-checklist-credit-unions.html",
+        "/news/rbfcu-impersonation-scam-regulation-e-investigations.html"
+      ],
       "sourceTier": 1,
       "score": 96.7
     },
@@ -151,17 +270,34 @@
       "publishedAt": "2026-08-10T07:00:00-04:00",
       "section": "insights",
       "beat": "lending-collections",
-      "functions": ["lending-collections", "risk-compliance", "operations", "member-service", "it-data-cybersecurity"],
-      "technologies": ["agents-automation"],
+      "functions": [
+        "lending-collections",
+        "risk-compliance",
+        "operations",
+        "member-service",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "agents-automation"
+      ],
       "format": "checklist",
       "audience": "functional-leader",
       "primaryAudience": "Collections and borrower-assistance leaders",
-      "secondaryAudiences": ["risk and compliance leaders", "operations leaders", "member-service leaders", "technology leaders"],
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "operations leaders",
+        "member-service leaders",
+        "technology leaders"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Library",
       "socialDecision": "not-created-library-priority",
       "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
-      "internalLinkTargets": ["/news/rbfcu-impersonation-scam-regulation-e-investigations.html", "/insight-credit-union-ai-workforce-plan.html", "/news/ai-document-automation-bottlenecks.html"],
+      "internalLinkTargets": [
+        "/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
+        "/insight-credit-union-ai-workforce-plan.html",
+        "/news/ai-document-automation-bottlenecks.html"
+      ],
       "sourceTier": 1,
       "score": 97.1
     },
@@ -172,17 +308,32 @@
       "publishedAt": "2026-08-07T07:00:00-04:00",
       "section": "insights",
       "beat": "marketing-growth",
-      "functions": ["marketing-growth", "member-service", "risk-compliance", "it-data-cybersecurity"],
-      "technologies": ["generative-ai", "conversational-ai"],
+      "functions": [
+        "marketing-growth",
+        "member-service",
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "generative-ai",
+        "conversational-ai"
+      ],
       "format": "checklist",
       "audience": "functional-leader",
       "primaryAudience": "Marketing and communications leaders",
-      "secondaryAudiences": ["member-service leaders", "risk and compliance leaders", "technology leaders"],
+      "secondaryAudiences": [
+        "member-service leaders",
+        "risk and compliance leaders",
+        "technology leaders"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Library",
       "socialDecision": "not-created-library-priority",
       "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
-      "internalLinkTargets": ["/news/ai-acceptable-use-policy-credit-unions.html", "/news/ai-credit-union-member-messaging.html"],
+      "internalLinkTargets": [
+        "/news/ai-acceptable-use-policy-credit-unions.html",
+        "/news/ai-credit-union-member-messaging.html"
+      ],
       "sourceTier": 1,
       "score": 96.9
     },
@@ -193,17 +344,33 @@
       "publishedAt": "2026-08-06T07:00:00-04:00",
       "section": "insights",
       "beat": "finance-treasury",
-      "functions": ["finance-treasury", "executive-governance", "operations", "it-data-cybersecurity", "vendor-management"],
-      "technologies": ["agents-automation"],
+      "functions": [
+        "finance-treasury",
+        "executive-governance",
+        "operations",
+        "it-data-cybersecurity",
+        "vendor-management"
+      ],
+      "technologies": [
+        "agents-automation"
+      ],
       "format": "explainer",
       "audience": "functional-leader",
       "primaryAudience": "Finance and treasury leaders",
-      "secondaryAudiences": ["executives and board leaders", "operations leaders", "technology leaders", "vendor-management teams"],
+      "secondaryAudiences": [
+        "executives and board leaders",
+        "operations leaders",
+        "technology leaders",
+        "vendor-management teams"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Library",
       "socialDecision": "not-created-library-priority",
       "activeExperimentContext": "none; growth strategy remains in baseline collection with no active experiments or production guidance",
-      "internalLinkTargets": ["/insight-prioritizing-ai-automation.html", "/news/ai-vendor-due-diligence-checklist-credit-unions.html"],
+      "internalLinkTargets": [
+        "/insight-prioritizing-ai-automation.html",
+        "/news/ai-vendor-due-diligence-checklist-credit-unions.html"
+      ],
       "sourceTier": 1,
       "score": 97.4
     },

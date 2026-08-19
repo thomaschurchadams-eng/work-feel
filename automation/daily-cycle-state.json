@@ -6,156 +6,297 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-18",
+    "date": "2026-08-19",
     "fullArticleCount": 1,
     "alertCount": 0,
-    "evaluatedCandidateCount": 14,
+    "evaluatedCandidateCount": 13,
     "beatsSearched": [
+      "product-member-experience",
       "regulatory-governance",
-      "payments-deposits",
       "fraud-security",
-      "vendor-management",
-      "finance-treasury",
+      "payments-deposits",
       "lending-mortgage",
-      "operations-member-service",
+      "operations",
+      "vendor-management",
       "workforce"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules",
-        "url": "https://creditunionainews.com/news/treasury-stablecoin-rule-credit-union-shares.html",
-        "primaryFunctionalAudience": "Payments and digital-asset leaders",
-        "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-08-19"
+        "title": "Veridian Embeds Greenlight Family Finance Tools in Its App",
+        "url": "https://creditunionainews.com/news/veridian-greenlight-family-finance-app.html",
+        "primaryFunctionalAudience": "Digital product and member-experience leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-priority"
       }
     ],
     "rejections": [
       {
-        "title": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
-        "reason": "vendor-controlled scale claim without institution-level outcomes or independent verification",
-        "primaryAudience": "technology and digital-banking leaders",
-        "secondaryAudiences": [
-          "vendor-management teams",
-          "member-experience leaders"
-        ]
-      },
-      {
-        "title": "Credit Union Trade Group Files Federal AI Priorities",
-        "reason": "relevant advocacy position but no enacted rule, institution-level implementation or new operating control",
-        "primaryAudience": "governance and compliance leaders",
-        "secondaryAudiences": [
-          "executives",
-          "technology leaders"
-        ]
-      },
-      {
-        "title": "Real-Time Transfer Case Study Reports $8.5 Million in Six Months",
-        "reason": "potentially useful payments result, but the accessible evidence was paywalled secondary reporting without underlying institution documentation",
-        "primaryAudience": "payments and digital-banking leaders",
-        "secondaryAudiences": [
-          "operations leaders",
-          "finance leaders"
-        ]
-      },
-      {
-        "title": "CFPB Complaint Database Public-Narrative Change",
-        "reason": "material complaint-management development already evaluated in the prior run and less directly actionable than the selected Treasury proposal",
-        "primaryAudience": "complaint-management and compliance leaders",
-        "secondaryAudiences": [
-          "operations leaders",
-          "data teams"
-        ]
-      },
-      {
-        "title": "TruStage Cyber Incident Recovery Update",
-        "reason": "ongoing incident reporting overlapped recent breach-response coverage and supplied limited new primary-source control detail",
-        "primaryAudience": "cybersecurity and risk leaders",
-        "secondaryAudiences": [
-          "operations leaders",
-          "vendor-management teams"
-        ]
-      },
-      {
-        "title": "FASB Derivatives and Hedging Accounting Comments",
-        "reason": "credit-union advocacy on a proposed accounting standard rather than a final requirement or operating event",
-        "primaryAudience": "finance and accounting leaders",
-        "secondaryAudiences": [
-          "audit leaders",
-          "executives"
-        ]
-      },
-      {
-        "title": "FFIEC CAMELS Transparency Comments",
-        "reason": "advocacy on a supervisory proposal with less immediate operating specificity than the selected federal rulemaking",
-        "primaryAudience": "risk and governance leaders",
-        "secondaryAudiences": [
-          "executives",
-          "audit leaders"
-        ]
-      },
-      {
-        "title": "Check-Fraud Education Campaign Commentary",
-        "reason": "campaign and commentary material already represented in recent Alert coverage, without a distinct new control requirement",
-        "primaryAudience": "fraud and payments leaders",
-        "secondaryAudiences": [
-          "member-communications teams",
-          "operations leaders"
-        ]
-      },
-      {
-        "title": "Credit Union Trade Association Name and Domicile Change",
-        "reason": "corporate administrative change without a material credit-union operating decision",
-        "primaryAudience": "executives",
-        "secondaryAudiences": [
-          "communications leaders",
-          "governance teams"
-        ]
-      },
-      {
-        "title": "SwipeSimple Adds ACH for Merchants",
-        "reason": "merchant-fintech feature launch with indirect credit-union applicability and no verified credit-union deployment",
-        "primaryAudience": "payments and product leaders",
+        "title": "Identifi Announces 16 New Bank and Credit Union Customers",
+        "reason": "vendor growth announcement without institution-specific implementation results or independently verified outcomes",
+        "primaryAudience": "operations and records-management leaders",
         "secondaryAudiences": [
           "technology leaders",
           "vendor-management teams"
         ]
       },
       {
-        "title": "Desert Financial Expands Indirect Auto Capacity",
-        "reason": "vendor-led case study with limited primary methodology and no sufficiently fresh independent evidence",
-        "primaryAudience": "auto-lending leaders",
+        "title": "Narmi AI DecisionAssist for Account Opening",
+        "reason": "vendor product material without a dated, verified credit-union deployment or production performance evidence",
+        "primaryAudience": "digital-account-opening leaders",
         "secondaryAudiences": [
-          "finance leaders",
-          "operations leaders"
+          "fraud leaders",
+          "technology leaders"
         ]
       },
       {
-        "title": "Generation Z Financial-Trust Survey",
-        "reason": "paywalled secondary reporting with inaccessible primary methodology and no distinct implementation event",
-        "primaryAudience": "marketing and member-experience leaders",
+        "title": "Synchrony Appoints a Chief AI Officer",
+        "reason": "large-bank personnel development with indirect credit-union applicability and no new operating control",
+        "primaryAudience": "executives and AI strategy leaders",
         "secondaryAudiences": [
-          "product leaders",
-          "executives"
+          "HR leaders",
+          "technology leaders"
         ]
       },
       {
-        "title": "Former Credit Union Manager Sentenced for Theft",
-        "reason": "case-specific law-enforcement development that did not establish a new general control requirement",
-        "primaryAudience": "fraud and internal-audit leaders",
+        "title": "MUFG Runs Blockchain JGB Repo Proof of Concept",
+        "reason": "non-U.S. wholesale-market experiment with indirect credit-union applicability and no current member-operating decision",
+        "primaryAudience": "finance and treasury leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "payments leaders"
+        ]
+      },
+      {
+        "title": "FS-ISAC AI-Enabled Vulnerability Discovery Advisory",
+        "reason": "important security topic, but accessible public evidence did not establish a fresh dated incident, standard or credit-union-specific control change",
+        "primaryAudience": "cybersecurity leaders",
         "secondaryAudiences": [
           "risk leaders",
-          "executives"
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Mortgage Rates Move Lower",
+        "reason": "market snapshot without a distinct credit-union policy, technology or implementation decision",
+        "primaryAudience": "mortgage leaders",
+        "secondaryAudiences": [
+          "finance leaders",
+          "marketing teams"
+        ]
+      },
+      {
+        "title": "EECU Names a Chief Growth and Marketing Officer",
+        "reason": "personnel announcement without a new measurable growth, technology or operating practice",
+        "primaryAudience": "marketing and growth leaders",
+        "secondaryAudiences": [
+          "executives",
+          "HR leaders"
+        ]
+      },
+      {
+        "title": "Worth Credit Union Names a Chief Growth Officer",
+        "reason": "personnel announcement with insufficient implementation detail for a differentiated full article",
+        "primaryAudience": "marketing and growth leaders",
+        "secondaryAudiences": [
+          "executives",
+          "HR leaders"
+        ]
+      },
+      {
+        "title": "FHLBank Chicago Hosts Housing-Finance Roundtable",
+        "reason": "event recap without an adopted policy, transaction or new operating requirement",
+        "primaryAudience": "mortgage and finance leaders",
+        "secondaryAudiences": [
+          "executives",
+          "government-affairs teams"
+        ]
+      },
+      {
+        "title": "Clutch Small-Business AI Maturity Survey",
+        "reason": "non-credit-union survey with vendor-defined maturity categories and limited direct operating specificity",
+        "primaryAudience": "strategy leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "HR leaders"
+        ]
+      },
+      {
+        "title": "Wyoming Stable Token Migrates to Chainlink",
+        "reason": "payments-infrastructure change with no verified credit-union role and less direct value than recent stablecoin coverage",
+        "primaryAudience": "payments and digital-asset leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "risk leaders"
+        ]
+      },
+      {
+        "title": "Bank and Credit Union Fraud Seminar Announcements",
+        "reason": "event promotion rather than completed fraud-control implementation or authoritative new guidance",
+        "primaryAudience": "fraud leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "training teams"
         ]
       }
     ],
     "status": "article-complete",
-    "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
+    "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 1 of 3; selection, sourcing, factual nuance and classification were unchanged. LinkedIn hook experiment not applied because the article is Standard priority.",
     "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
-    "updatedAt": "2026-08-18T07:00:00-04:00"
+    "updatedAt": "2026-08-19T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-18",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 14,
+      "beatsSearched": [
+        "regulatory-governance",
+        "payments-deposits",
+        "fraud-security",
+        "vendor-management",
+        "finance-treasury",
+        "lending-mortgage",
+        "operations-member-service",
+        "workforce"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules",
+          "url": "https://creditunionainews.com/news/treasury-stablecoin-rule-credit-union-shares.html",
+          "primaryFunctionalAudience": "Payments and digital-asset leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-08-19"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
+          "reason": "vendor-controlled scale claim without institution-level outcomes or independent verification",
+          "primaryAudience": "technology and digital-banking leaders",
+          "secondaryAudiences": [
+            "vendor-management teams",
+            "member-experience leaders"
+          ]
+        },
+        {
+          "title": "Credit Union Trade Group Files Federal AI Priorities",
+          "reason": "relevant advocacy position but no enacted rule, institution-level implementation or new operating control",
+          "primaryAudience": "governance and compliance leaders",
+          "secondaryAudiences": [
+            "executives",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Real-Time Transfer Case Study Reports $8.5 Million in Six Months",
+          "reason": "potentially useful payments result, but the accessible evidence was paywalled secondary reporting without underlying institution documentation",
+          "primaryAudience": "payments and digital-banking leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "finance leaders"
+          ]
+        },
+        {
+          "title": "CFPB Complaint Database Public-Narrative Change",
+          "reason": "material complaint-management development already evaluated in the prior run and less directly actionable than the selected Treasury proposal",
+          "primaryAudience": "complaint-management and compliance leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "data teams"
+          ]
+        },
+        {
+          "title": "TruStage Cyber Incident Recovery Update",
+          "reason": "ongoing incident reporting overlapped recent breach-response coverage and supplied limited new primary-source control detail",
+          "primaryAudience": "cybersecurity and risk leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "FASB Derivatives and Hedging Accounting Comments",
+          "reason": "credit-union advocacy on a proposed accounting standard rather than a final requirement or operating event",
+          "primaryAudience": "finance and accounting leaders",
+          "secondaryAudiences": [
+            "audit leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "FFIEC CAMELS Transparency Comments",
+          "reason": "advocacy on a supervisory proposal with less immediate operating specificity than the selected federal rulemaking",
+          "primaryAudience": "risk and governance leaders",
+          "secondaryAudiences": [
+            "executives",
+            "audit leaders"
+          ]
+        },
+        {
+          "title": "Check-Fraud Education Campaign Commentary",
+          "reason": "campaign and commentary material already represented in recent Alert coverage, without a distinct new control requirement",
+          "primaryAudience": "fraud and payments leaders",
+          "secondaryAudiences": [
+            "member-communications teams",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "Credit Union Trade Association Name and Domicile Change",
+          "reason": "corporate administrative change without a material credit-union operating decision",
+          "primaryAudience": "executives",
+          "secondaryAudiences": [
+            "communications leaders",
+            "governance teams"
+          ]
+        },
+        {
+          "title": "SwipeSimple Adds ACH for Merchants",
+          "reason": "merchant-fintech feature launch with indirect credit-union applicability and no verified credit-union deployment",
+          "primaryAudience": "payments and product leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Desert Financial Expands Indirect Auto Capacity",
+          "reason": "vendor-led case study with limited primary methodology and no sufficiently fresh independent evidence",
+          "primaryAudience": "auto-lending leaders",
+          "secondaryAudiences": [
+            "finance leaders",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "Generation Z Financial-Trust Survey",
+          "reason": "paywalled secondary reporting with inaccessible primary methodology and no distinct implementation event",
+          "primaryAudience": "marketing and member-experience leaders",
+          "secondaryAudiences": [
+            "product leaders",
+            "executives"
+          ]
+        },
+        {
+          "title": "Former Credit Union Manager Sentenced for Theft",
+          "reason": "case-specific law-enforcement development that did not establish a new general control requirement",
+          "primaryAudience": "fraud and internal-audit leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "executives"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "ACTIVE EXPERIMENT linkedin-relevance-led-hook-2026-08-12 reserved for the High-priority LinkedIn package; editorial selection and article structure were not altered",
+      "nextCoverageGap": "AI accessibility and disability-inclusive member-service testing",
+      "updatedAt": "2026-08-18T07:00:00-04:00"
+    },
     {
       "date": "2026-08-17",
       "fullArticleCount": 1,

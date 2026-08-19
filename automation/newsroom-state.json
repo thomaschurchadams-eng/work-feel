@@ -1,14 +1,74 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-18T07:00:00-04:00",
+  "lastStandardRun": "2026-08-19T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules",
-    "url": "https://creditunionainews.com/news/treasury-stablecoin-rule-credit-union-shares.html",
-    "publishedAt": "2026-08-18T07:00:00-04:00",
+    "title": "Veridian Embeds Greenlight Family Finance Tools in Its App",
+    "url": "https://creditunionainews.com/news/veridian-greenlight-family-finance-app.html",
+    "publishedAt": "2026-08-19T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-19",
+      "headline": "Identifi Announces 16 New Bank and Credit Union Customers",
+      "reason": "vendor growth announcement without institution-specific implementation results or independently verified outcomes"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "Narmi AI DecisionAssist for Account Opening",
+      "reason": "vendor product material without a dated, verified credit-union deployment or production performance evidence"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "Synchrony Appoints a Chief AI Officer",
+      "reason": "large-bank personnel development with indirect credit-union applicability and no new operating control"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "MUFG Runs Blockchain JGB Repo Proof of Concept",
+      "reason": "non-U.S. wholesale-market experiment with indirect credit-union applicability and no current member-operating decision"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "FS-ISAC AI-Enabled Vulnerability Discovery Advisory",
+      "reason": "important security topic, but accessible public evidence did not establish a fresh dated incident, standard or credit-union-specific control change"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "Mortgage Rates Move Lower",
+      "reason": "market snapshot without a distinct credit-union policy, technology or implementation decision"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "EECU Names a Chief Growth and Marketing Officer",
+      "reason": "personnel announcement without a new measurable growth, technology or operating practice"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "Worth Credit Union Names a Chief Growth Officer",
+      "reason": "personnel announcement with insufficient implementation detail for a differentiated full article"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "FHLBank Chicago Hosts Housing-Finance Roundtable",
+      "reason": "event recap without an adopted policy, transaction or new operating requirement"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "Clutch Small-Business AI Maturity Survey",
+      "reason": "non-credit-union survey with vendor-defined maturity categories and limited direct operating specificity"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "Wyoming Stable Token Migrates to Chainlink",
+      "reason": "payments-infrastructure change with no verified credit-union role and less direct value than recent stablecoin coverage"
+    },
+    {
+      "date": "2026-08-19",
+      "headline": "Bank and Credit Union Fraud Seminar Announcements",
+      "reason": "event promotion rather than completed fraud-control implementation or authoritative new guidance"
+    },
     {
       "date": "2026-08-18",
       "headline": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
