@@ -145,6 +145,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Google Search Console"],
       "summary": "Diagnosed a stale reliability-state record rather than a live production failure. Verified the August 18 publisher outcome remained complete, the Treasury article remained live, Production was READY on Search Console merge commit 50255d1, the direct Search Console endpoint returned HTTP 200/ok=true with siteFullUser aggregate 7-day/28-day data, and Vercel reported no runtime errors in 24 hours. Updated the improvement ledger from blocked to completed and recorded this recovery without changing credentials, schedules, editorial policy, social reservations, GA4 collection or external authority. Durable prevention: when a previously blocked reliability item is merged and Production-validated, the same recovery cycle should close its improvement-ledger state and append the required reliability-watch usage entry.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-19T08:03:09-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found the bounded source-health refresh created on August 17 was still queued after its August 18 deadline, leaving the source-health ledger stale at its July 20 check date.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"socialQueueChecks":1,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":2,"searchConsoleEndpointQueries":1,"sourceRegistryUrlsChecked":28,"recentPrimarySourcesChecked":15,"sourceStatusChanges":7,"improvementLedgerChanges":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":3,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Search Console", "public source sites"],
+      "summary": "Diagnosed an internal maintenance-handoff miss rather than a production outage. The August 19 article and homepage were live, current Production was READY, Vercel showed no error/fatal runtime logs in 24 hours, the direct Search Console endpoint remained HTTP 200/ok=true, and the August 19 company LinkedIn reservation remained unique and not yet due at the time of review. Rechecked all 28 registered source URLs and 15 recent primary official sources, refreshed the source-health ledger to 23 healthy, three redirected and two conservatively temporarily unavailable, and closed the overdue improvement item. No article, editorial gate, UTM, social reservation, credential, task schedule or external publication was changed. Durable prevention: overdue queued improvement deadlines should be treated as reliability handoffs that must be executed or explicitly re-dated with evidence.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
