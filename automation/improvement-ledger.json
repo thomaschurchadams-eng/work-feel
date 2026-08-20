@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-19T08:03:09-04:00",
+  "updatedAt": "2026-08-20T09:29:44-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -84,6 +84,22 @@
       "deadline": "2026-08-19T10:00:00-04:00",
       "result": "Reliability Watch reconciled 12 exact tracked Buffer-sent items in place to status sent and recorded Buffer sentAt/externalLink evidence. No scheduler call, replacement post, UTM change, destination change, cadence change or credential action occurred.",
       "rollback": "Revert only the social-queue sent-state fields if any exact Buffer evidence is later shown to be mismatched; the external posts themselves are unchanged."
+    },
+    {
+      "id": "experiment-state-cross-ledger-sync-2026-08-20",
+      "evidence": "The August 20 daily-cycle state and coverage ledger both record the accessible-AI member-service Insight as article 2 of 3 in the decision-first opening experiment, while automation/growth-strategy.json still said article 1 of 3 with two observations remaining. The publisher had completed correctly; the stale value existed only in management guidance.",
+      "proposedChange": "During each CEO run, reconcile active experiment cohort counts and status against current daily-cycle and coverage ledgers before updating growth strategy and the rolling CEO report. Correct the August 20 strategy state to cohort 2 of 3 with one qualifying observation remaining.",
+      "expectedBenefit": "Prevent conflicting agent instructions, accidental experiment overrun and management decisions based on stale cohort counts without adding a new persistent workflow.",
+      "risk": "low",
+      "validation": [
+        "automation/daily-cycle-state.json and automation/coverage-ledger.json independently agree that the August 20 article is cohort observation 2 of 3",
+        "growth strategy was updated to cohort 2 of 3 with exactly one qualifying article remaining",
+        "the two-experiment maximum, sourcing standards, article selection, LinkedIn schedule, UTMs, credentials and external authority were unchanged",
+        "the correction is reporting/strategy state only and is reversible without affecting any published article or social post"
+      ],
+      "status": "completed",
+      "result": "The August 20 CEO cycle synchronized the decision-first experiment state and made cross-ledger reconciliation an explicit CEO reporting discipline. No production behavior or external action changed.",
+      "rollback": "Revert only the growth-strategy, improvement-ledger and CEO-report state wording if the underlying daily-cycle or coverage evidence is later found incorrect; published content and scheduled social items are unaffected."
     }
   ]
 }
