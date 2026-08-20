@@ -189,6 +189,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
       "summary": "Confirmed Production READY on commit 9ed5e9c with no warning/error/fatal runtime logs, retrieved live GA4, Buffer and direct Search Console data, and verified the Aug. 20 accessible-AI member-service Library Insight live after the publisher evaluated 14 candidates across 8 beats. The article selectively qualifies for company-page promotion and is uniquely scheduled for 11:30 a.m. ET with exact UTMs and image. The strongest joined-funnel signal remains weak qualified LinkedIn traffic: 34 Buffer impressions/17 reach/12.22% mean engagement across five 7-day posts produced 3 GA4 LinkedIn sessions and 0 engaged sessions; Treasury's 44.4% Buffer engagement came from two comments on only two people reached and yielded one GA4 session with no engagement. Overall reading depth improved modestly from the prior CEO read but remains below the 28-day pace: 12 engaged sessions, 25.5% engagement and 5 90%-scrolled users. Today's article is decision-first cohort observation 2 of 3, while the High-only operating-tension LinkedIn experiment still has zero qualifying observations. Direct Search Console is healthy at 472 impressions/3 clicks in 7 days versus 2,359/15 in 28 days, with CTR essentially unchanged; no third experiment was opened. Repaired stale management state where growth strategy still recorded the article cohort as 1 of 3 despite daily-cycle and coverage ledgers recording 2 of 3, and documented the cross-ledger synchronization improvement.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-20T16:59:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found the August 20 accessible-AI LinkedIn item had completed successfully in Buffer at the fixed 11:30 a.m. ET slot, while automation/social-queue.json still retained status scheduled without the authoritative sent timestamp or LinkedIn URL.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"socialLedgerItemsReconciled":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":2,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
+      "summary": "Diagnosed repository delivery-state lag after an otherwise healthy asynchronous Buffer send, not an external delivery failure. Buffer matched the existing August 20 accessibility-test-plan queue item by exact item ID and post ID and returned sentAt 2026-08-20T15:30:30.435Z, the approved CreditUnionAI News company-page link, and confirmed UTM tracking. Reconciled that one existing item in place to sent with the authoritative sentAt/externalLink fields; made no scheduler call, replacement post, UTM change, destination change, cadence change, credential action or editorial change. The August 20 publisher outcome is complete, the accessibility article is live, current Production is READY with no runtime errors in 24 hours, and the existing exact-match sent-state reconciliation rule remains the durable prevention mechanism.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
