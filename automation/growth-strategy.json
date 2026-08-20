@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T09:42:17-04:00",
+  "updatedAt": "2026-08-20T09:29:44-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -39,7 +39,7 @@
         "The completed relevance-led cohort missed every primary target: FinCEN BOI produced 4 impressions / 3 reach / 1 GA4 session / 0 engaged sessions; Colorado ASSET Act produced 4 impressions / 3 reach / 1 GA4 session / 0 engaged sessions; federal-credit-union investment authority produced 4 impressions / 4 reach / 0 currently attributable GA4 session and 0 Buffer engagement.",
         "Across those three completed observations, median Buffer reach is 3, median Buffer engagement is 0%, and median GA4 LinkedIn sessions per post is 1 versus targets of reach >=12, engagement >=5%, and sessions >=2.",
         "Recent pre-experiment problem-led posts provide directional—not controlled—evidence for an alternative: Guardian breach response reached 21 on 30 impressions, while RBFCU impersonation reached 8 on 12 impressions with 8.33% Buffer engagement. Topic and timing confounding remain material.",
-        "The already-scheduled August 19 Treasury post is not being changed retrospectively; the replacement framing starts with the next otherwise-qualified High-priority post after that reservation."
+        "The August 19 Treasury post was already scheduled before this treatment opened and is excluded from the cohort. The selectively promoted August 20 Library Insight is also excluded because this experiment is intentionally scoped to otherwise-qualified High-priority posts. No qualifying operating-tension observation has completed yet."
       ],
       "boundedChange": "For the next 3 otherwise-qualified High-priority company-page posts after the August 19 Treasury reservation, keep the existing schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. Lead with the operating tension/decision or member/control problem in the first sentence, name the institution/event as evidence in the next sentence, and end with one concrete credit-union action.",
       "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content. Target at least 2 sessions per experiment post, median Buffer reach of 12 or more, and median Buffer engagement rate of at least 5%.",
@@ -60,10 +60,10 @@
       "status": "active",
       "hypothesis": "A tighter decision-first opening on otherwise-qualified articles will improve qualified reading depth by making the operating consequence and reader action explicit before background chronology.",
       "evidence": [
-        "Fresh August 19 GA4 still shows the same depth constraint: 43 active users in 7 days versus a 28-day weekly pace of 38.75, but only 48 sessions versus 57.5 pace, 51 page views versus 135.5, 11 engaged sessions versus 20.75, 22.9% engagement versus 36.1%, and 4 built-in 90%-scrolled users versus an 8-user weekly pace.",
-        "Reading-depth weakness has appeared in multiple consecutive CEO reviews, so another wait-for-sample conclusion would not meet the active-optimization rule.",
+        "Fresh August 20 GA4 still shows the same depth constraint: 39 active users in 7 days versus a 28-day weekly pace of 38.5, but only 47 sessions versus 56.25 pace, 48 page views versus 123.75, 12 engaged sessions versus 20, 25.5% engagement versus 35.6%, and 5 built-in 90%-scrolled users versus an 8-user weekly pace.",
+        "Depth moved modestly in the right direction from the August 19 CEO read—engaged sessions 11 to 12, engagement 22.9% to 25.5%, and built-in 90%-scrolled users 4 to 5—but remains below target. Active users moved from 43 to 39, one below the >=40 guardrail, so the final cohort observation should be completed before a structural decision unless quality deteriorates further.",
         "The August 17 shared-script repair restored the CUAI custom article-event layer, allowing the cohort to be measured on clean post-repair instrumentation.",
-        "The August 19 Veridian/Greenlight News article is cohort article 1 of 3 and uses the decision-first opening without changing selection, source quality, factual nuance or classification."
+        "The August 19 Veridian/Greenlight News article is cohort article 1 of 3. The August 20 accessible-AI member-service Library Insight is cohort article 2 of 3; both used the decision-first opening without changing selection, source quality, factual nuance or classification."
       ],
       "boundedChange": "For the next 3 otherwise-qualified News or Insights articles after August 18, make the first approximately 80-120 words answer three questions in plain language: what changed or what decision is at issue, why a credit-union leader should care now, and one concrete action or control to consider. Preserve source standards, neutral framing, article selection, factual nuance, overall structure, CTA, schedule and publication gates.",
       "primaryMetric": "Recover qualified reading depth across the 3-article cohort: target a rolling 7-day engagement rate of at least 30%, at least 18 engaged sessions and at least 6 built-in 90%-scrolled users by 2026-08-28, while not reducing rolling 7-day active users below 40.",
@@ -84,10 +84,10 @@
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: do not alter the already-scheduled August 19 Treasury post. For the next 3 otherwise-qualified High-priority posts after it, lead with the operating tension/decision before the named institution or event; preserve schedule, UTM, editorial and image guardrails."
+      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: for the next 3 otherwise-qualified High-priority posts after the already-scheduled August 19 Treasury post, lead with the operating tension/decision before the named institution or event; preserve schedule, UTM, editorial and image guardrails. The August 20 selectively promoted Library Insight does not count toward this High-only cohort."
     ],
     "articleOpeningGuidance": [
-      "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18: cohort article 1 of 3 published August 19. For the remaining 2 otherwise-qualified News or Insights articles, use the first approximately 80-120 words to state the decision/change, why it matters now, and one concrete credit-union action or control before background chronology. Preserve all sourcing and editorial gates."
+      "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18: cohort article 2 of 3 published August 20. For the remaining 1 otherwise-qualified News or Insights article, use the first approximately 80-120 words to state the decision/change, why it matters now, and one concrete credit-union action or control before background chronology. Preserve all sourcing and editorial gates."
     ],
     "visualGuidance": [],
     "conversionGuidance": [],
@@ -122,6 +122,13 @@
       "evidence": "All three relevance-led observations are metrics-ready and materially below target: each has 4 Buffer impressions; reach is 3, 3 and 4; median Buffer engagement is 0%; and current GA4 attribution is 1, 1 and 0 sessions, with zero engaged sessions. This is enough directional evidence to stop rather than extend the treatment. Problem-led Guardian and RBFCU posts provide a plausible alternative framing signal, but topic/timing confounding means the replacement remains a bounded experiment.",
       "uncertainty": "LinkedIn company-page samples remain small and topic effects are substantial. The decision is therefore a reversible framing change only; it does not alter schedule, promotion eligibility, editorial selection, UTMs, images or destination.",
       "nextCheckpoint": "Three qualifying operating-tension High posts or 2026-09-02, whichever comes first."
+    },
+    {
+      "timestamp": "2026-08-20T09:29:44-04:00",
+      "decision": "Continue the decision-first article-opening treatment through its third and final qualifying observation rather than changing the treatment mid-cohort.",
+      "evidence": "The August 20 article is cohort observation 2 of 3. Live GA4 shows modest depth improvement versus the prior CEO read—25.5% engagement, 12 engaged sessions and 5 90%-scrolled users versus 22.9%, 11 and 4—but all remain below the >=30%, >=18 and >=6 targets. Active users are 39, one below the >=40 guardrail.",
+      "uncertainty": "The rolling seven-day window remains sensitive to days rolling in and out, and the current cohort is incomplete. No third experiment is opened; the final observation is the smallest reversible way to resolve the treatment.",
+      "nextCheckpoint": "The next qualifying News or Insights article, or 2026-08-28 if the cohort does not complete sooner."
     }
   ]
 }
