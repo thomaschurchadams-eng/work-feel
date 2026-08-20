@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-accessibility-test-plan",
+      "title": "Eight Tests for Accessible AI Member Service at Credit Unions",
+      "url": "/insight-credit-union-ai-accessibility-test-plan.html",
+      "publishedAt": "2026-08-20T07:00:00-04:00",
+      "section": "insights",
+      "beat": "member-service-accessibility",
+      "functions": [
+        "member-service",
+        "operations",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "vendor-management"
+      ],
+      "technologies": [
+        "conversational-ai",
+        "privacy-security"
+      ],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "Member-service and digital-accessibility leaders",
+      "secondaryAudiences": [
+        "operations leaders",
+        "technology and digital-banking leaders",
+        "risk and compliance leaders",
+        "vendor-management teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-selective-library-pending-live-verification",
+      "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 2 of 3; selection, sourcing, factual nuance and Library classification were unchanged. The High-only LinkedIn hook experiment does not apply.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-member-communications-review.html",
+        "/news/ai-vendor-due-diligence-checklist-credit-unions.html"
+      ],
+      "sourceTier": 1,
+      "score": 97.2
+    },
+    {
       "id": "veridian-greenlight-family-finance-app",
       "title": "Veridian Embeds Greenlight Family Finance Tools in Its App",
       "url": "/news/veridian-greenlight-family-finance-app.html",

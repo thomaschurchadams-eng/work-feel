@@ -3,6 +3,33 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-accessibility-test-plan",
+      "articleUrl": "/insight-credit-union-ai-accessibility-test-plan.html",
+      "imagePath": "/assets/credit-union-ai-accessibility-test-plan.jpg",
+      "publishedAt": "2026-08-20T07:00:00-04:00",
+      "medium": "soft-editorial-illustration",
+      "subject": "human-machine-handoff",
+      "composition": "modular-grid",
+      "perspective": "isometric",
+      "palette": "cobalt-coral",
+      "lighting": "graphic-flat-light",
+      "texture": "ink-wash",
+      "scene": "accessible-member-service-control-desk",
+      "conceptScore": 77.2,
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "architecture-and-infrastructure",
+          "score": 74
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "score": 51.7
+        }
+      ]
+    },
+    {
       "id": "veridian-greenlight-family-finance-app",
       "articleUrl": "/news/veridian-greenlight-family-finance-app.html",
       "imagePath": "/assets/veridian-greenlight-family-finance-app.jpg",

@@ -1,14 +1,79 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-19T07:00:00-04:00",
+  "lastStandardRun": "2026-08-20T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Veridian Embeds Greenlight Family Finance Tools in Its App",
-    "url": "https://creditunionainews.com/news/veridian-greenlight-family-finance-app.html",
-    "publishedAt": "2026-08-19T07:00:00-04:00",
-    "route": "news"
+    "title": "Eight Tests for Accessible AI Member Service at Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-accessibility-test-plan.html",
+    "publishedAt": "2026-08-20T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-20",
+      "headline": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
+      "reason": "vendor-controlled adoption claim without institution-level outcomes, methodology or independent verification"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Narmi AI DecisionAssist for Account Opening",
+      "reason": "vendor product material without a dated, verified credit-union deployment or production performance evidence"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Identifi Announces 16 New Bank and Credit Union Customers",
+      "reason": "vendor growth announcement without institution-specific implementation results or independently verified outcomes"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Georgia Businessman Charged with $24 Million Bank Fraud",
+      "reason": "case-specific allegation involving a bank, with no credit-union-specific event or new general operating requirement"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Justice Department Announces Iranian Cyber-Theft Charges",
+      "reason": "material cyber enforcement but no verified credit-union or financial-services target and no new sector control requirement"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "CFTC Innovation Advisory Committee Meeting",
+      "reason": "upcoming meeting agenda rather than a completed decision, rule or operating requirement"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Federal Reserve July Meeting Minutes",
+      "reason": "macroeconomic policy context without a distinct new credit-union operating, technology or compliance decision"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Check-Fraud Detection Campaign Week",
+      "reason": "education campaign already represented in recent Alert coverage, without a distinct new control requirement"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Bank and Credit Union Fraud Seminar Announcements",
+      "reason": "event promotion rather than completed fraud-control implementation or authoritative guidance"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Mortgage Rates Move Lower",
+      "reason": "market snapshot without a distinct credit-union policy, technology or implementation decision"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Technology Credit Union Selects eGain AI Knowledge Hub",
+      "reason": "outside the 72-hour window and a vendor-led selection announcement without verified production outcomes"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "UW Credit Union Selects Fiserv DNA",
+      "reason": "outside the 72-hour window and a vendor-led core-selection announcement without current implementation results"
+    },
+    {
+      "date": "2026-08-20",
+      "headline": "Wyoming Stable Token Migrates to Chainlink",
+      "reason": "no verified credit-union role and insufficiently distinct from recent stablecoin coverage"
+    },
     {
       "date": "2026-08-19",
       "headline": "Identifi Announces 16 New Bank and Credit Union Customers",
@@ -1075,6 +1140,11 @@
     {
       "functionalArea": "member-service",
       "opportunity": "An AI accessibility and disability-inclusive member-service testing playbook",
+      "priority": "completed-2026-08-20"
+    },
+    {
+      "functionalArea": "lending-member-business-services",
+      "opportunity": "Small-business lending and member-business-services AI implementation controls",
       "priority": "next"
     }
   ]
