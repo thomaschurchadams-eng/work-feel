@@ -3,6 +3,40 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ncua-federal-credit-union-board-meeting-schedule",
+      "title": "NCUA Clears Eligible Federal Credit Unions to Cut Board Meetings to Six a Year",
+      "url": "/news/ncua-federal-credit-union-board-meeting-schedule.html",
+      "publishedAt": "2026-08-21T07:00:00-04:00",
+      "section": "news",
+      "beat": "regulatory-governance",
+      "functions": [
+        "board-strategy",
+        "risk-compliance",
+        "operations"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
+      "format": "reported-news",
+      "audience": "board",
+      "primaryAudience": "Federal credit union board chairs, CEOs and governance leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "corporate secretaries and legal teams",
+        "senior management"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-pending-live-verification",
+      "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 3 of 3; selection, sourcing and factual nuance were unchanged. ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19 reserved for the High-priority LinkedIn package after live verification.",
+      "internalLinkTargets": [
+        "/news/credit-union-board-ai-risk-oversight.html",
+        "/news/federal-credit-union-investment-authority-bill.html"
+      ],
+      "sourceTier": 2,
+      "score": 84.9
+    },
+    {
       "id": "credit-union-ai-accessibility-test-plan",
       "title": "Eight Tests for Accessible AI Member Service at Credit Unions",
       "url": "/insight-credit-union-ai-accessibility-test-plan.html",

@@ -3,6 +3,33 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ncua-federal-credit-union-board-meeting-schedule",
+      "articleUrl": "/news/ncua-federal-credit-union-board-meeting-schedule.html",
+      "imagePath": "/assets/ncua-federal-credit-union-board-meeting-schedule.jpg",
+      "publishedAt": "2026-08-21T07:00:00-04:00",
+      "medium": "macro-still-life",
+      "subject": "documents-and-controls",
+      "composition": "overhead-flat-lay",
+      "perspective": "overhead",
+      "palette": "slate-lime",
+      "lighting": "high-contrast-studio",
+      "texture": "polished-metal",
+      "scene": "six-position-board-calendar-with-quarterly-checkpoints-and-rating-gate",
+      "conceptScore": 62.9,
+      "conceptAlternatives": [
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "score": 60.9
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "operations-environment",
+          "score": 58.9
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-accessibility-test-plan",
       "articleUrl": "/insight-credit-union-ai-accessibility-test-plan.html",
       "imagePath": "/assets/credit-union-ai-accessibility-test-plan.jpg",

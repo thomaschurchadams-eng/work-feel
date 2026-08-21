@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://creditunionainews.com/news/ncua-federal-credit-union-board-meeting-schedule.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>CreditUnionAI News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-21T07:00:00-04:00</news:publication_date>
+      <news:title>NCUA Clears Eligible Federal Credit Unions to Cut Board Meetings to Six a Year</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://creditunionainews.com/news/veridian-greenlight-family-finance-app.html</loc>
     <news:news>
       <news:publication>
@@ -10,28 +21,6 @@
       </news:publication>
       <news:publication_date>2026-08-19T07:00:00-04:00</news:publication_date>
       <news:title>Veridian Embeds Greenlight Family Finance Tools in Its App</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/treasury-stablecoin-rule-credit-union-shares.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-18T07:00:00-04:00</news:publication_date>
-      <news:title>Treasury Asks Where Credit Union Shares Fit in Stablecoin Rules</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/federal-credit-union-investment-authority-bill.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-17T07:00:00-04:00</news:publication_date>
-      <news:title>House Bill Would Expand Federal Credit Union Investment Authority</news:title>
     </news:news>
   </url>
 </urlset>

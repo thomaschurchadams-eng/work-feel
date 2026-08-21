@@ -1,14 +1,79 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-20T07:00:00-04:00",
+  "lastStandardRun": "2026-08-21T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Eight Tests for Accessible AI Member Service at Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-accessibility-test-plan.html",
-    "publishedAt": "2026-08-20T07:00:00-04:00",
-    "route": "insights"
+    "title": "NCUA Clears Eligible Federal Credit Unions to Cut Board Meetings to Six a Year",
+    "url": "https://creditunionainews.com/news/ncua-federal-credit-union-board-meeting-schedule.html",
+    "publishedAt": "2026-08-21T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-21",
+      "headline": "SBA Proposes a $5.031 Million Small-Business Threshold for Credit Unions",
+      "reason": "credible proposed rule but indirect and not yet final; the new FCU governance option creates the stronger immediate institutional decision"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Appli Reports Loan Conversion at Baton Rouge Telco FCU",
+      "reason": "vendor-controlled performance claims without independently verifiable methodology or institution-supplied outcome evidence"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Velera Publishes a Consumer-Engaged Fraud Playbook",
+      "reason": "useful vendor guidance but not a distinct new event or authoritative control requirement for a full article"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "TruStage Cancels Discovery 2026 During Cyberattack Recovery",
+      "reason": "material operational update but limited new public control detail and substantial overlap with recent breach-response coverage"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Credit Union Loan Growth Accelerates in June",
+      "reason": "portfolio data snapshot without a distinct new policy or implementation decision beyond routine monitoring"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Reseda Group Invests in Goodbuy",
+      "reason": "investment and product announcement without credit-union deployment results or measurable member outcomes"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Clutch Says Its Platform Reaches 30 Million Credit Union Members",
+      "reason": "vendor-controlled scale claim without institution-level outcomes, methodology or independent verification"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Jack Henry Announces Continuous AI Capabilities",
+      "reason": "vendor product announcement without a dated credit-union implementation or verified production evidence"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Credit Union Professional Development Program Highlights Underwriter Training",
+      "reason": "training case study with limited independent evidence and no new sector-wide operating requirement"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Credit Union Housing-Finance Event Reviews Market Access",
+      "reason": "event recap without an adopted policy, transaction or distinct new mortgage implementation requirement"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Nebraska Grand Jury Adds a Credit Union Fraud Count",
+      "reason": "case-specific allegation without a new general control standard or sufficiently broad operating implication"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "Entersekt Publishes a Financial Authentication Survey",
+      "reason": "vendor-sponsored survey with insufficient methodology and no distinct credit-union event or control change"
+    },
+    {
+      "date": "2026-08-21",
+      "headline": "State Supervisors Comment on Proposed CAMELS Revisions",
+      "reason": "outside the 72-hour window and a comment on a proposal rather than a final supervisory change"
+    },
     {
       "date": "2026-08-20",
       "headline": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",

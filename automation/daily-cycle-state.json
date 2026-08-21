@@ -6,35 +6,89 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 14,
     "beatsSearched": [
-      "member-service-accessibility",
       "regulatory-governance",
+      "lending-small-business",
       "fraud-security",
-      "lending-mortgage",
-      "payments-deposits",
-      "vendor-management",
       "it-data-cybersecurity",
-      "operations"
+      "product-member-experience",
+      "workforce",
+      "payments-deposits",
+      "enforcement"
     ],
     "publications": [
       {
         "type": "article",
-        "classification": "Insights",
-        "title": "Eight Tests for Accessible AI Member Service at Credit Unions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-accessibility-test-plan.html",
-        "primaryFunctionalAudience": "Member-service and digital-accessibility leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "scheduled-2026-08-20-11:30-et"
+        "classification": "News",
+        "title": "NCUA Clears Eligible Federal Credit Unions to Cut Board Meetings to Six a Year",
+        "url": "https://creditunionainews.com/news/ncua-federal-credit-union-board-meeting-schedule.html",
+        "primaryFunctionalAudience": "Federal credit union board chairs, CEOs and governance leaders",
+        "promotionPriority": "High",
+        "socialDecision": "eligible-high-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
-        "reason": "vendor-controlled adoption claim without institution-level outcomes, methodology or independent verification",
+        "title": "SBA Proposes a $5.031 Million Small-Business Threshold for Credit Unions",
+        "reason": "credible proposed rule but indirect and not yet final; the new FCU governance option creates the stronger immediate institutional decision",
+        "primaryAudience": "small-business lending and member-business-services leaders",
+        "secondaryAudiences": [
+          "compliance leaders",
+          "finance leaders"
+        ]
+      },
+      {
+        "title": "Appli Reports Loan Conversion at Baton Rouge Telco FCU",
+        "reason": "vendor-controlled performance claims without independently verifiable methodology or institution-supplied outcome evidence",
+        "primaryAudience": "consumer-lending leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Velera Publishes a Consumer-Engaged Fraud Playbook",
+        "reason": "useful vendor guidance but not a distinct new event or authoritative control requirement for a full article",
+        "primaryAudience": "fraud and payments leaders",
+        "secondaryAudiences": [
+          "member-service leaders",
+          "marketing teams"
+        ]
+      },
+      {
+        "title": "TruStage Cancels Discovery 2026 During Cyberattack Recovery",
+        "reason": "material operational update but limited new public control detail and substantial overlap with recent breach-response coverage",
+        "primaryAudience": "cybersecurity and business-continuity leaders",
+        "secondaryAudiences": [
+          "executives",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Credit Union Loan Growth Accelerates in June",
+        "reason": "portfolio data snapshot without a distinct new policy or implementation decision beyond routine monitoring",
+        "primaryAudience": "lending and finance leaders",
+        "secondaryAudiences": [
+          "executives",
+          "risk leaders"
+        ]
+      },
+      {
+        "title": "Reseda Group Invests in Goodbuy",
+        "reason": "investment and product announcement without credit-union deployment results or measurable member outcomes",
+        "primaryAudience": "product and innovation leaders",
+        "secondaryAudiences": [
+          "executives",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Clutch Says Its Platform Reaches 30 Million Credit Union Members",
+        "reason": "vendor-controlled scale claim without institution-level outcomes, methodology or independent verification",
         "primaryAudience": "technology and digital-banking leaders",
         "secondaryAudiences": [
           "member-service leaders",
@@ -42,120 +96,216 @@
         ]
       },
       {
-        "title": "Narmi AI DecisionAssist for Account Opening",
-        "reason": "vendor product material without a dated, verified credit-union deployment or production performance evidence",
-        "primaryAudience": "digital-account-opening leaders",
+        "title": "Jack Henry Announces Continuous AI Capabilities",
+        "reason": "vendor product announcement without a dated credit-union implementation or verified production evidence",
+        "primaryAudience": "technology and operations leaders",
         "secondaryAudiences": [
-          "fraud leaders",
-          "technology leaders"
-        ]
-      },
-      {
-        "title": "Identifi Announces 16 New Bank and Credit Union Customers",
-        "reason": "vendor growth announcement without institution-specific implementation results or independently verified outcomes",
-        "primaryAudience": "operations and records-management leaders",
-        "secondaryAudiences": [
-          "technology leaders",
+          "risk leaders",
           "vendor-management teams"
         ]
       },
       {
-        "title": "Georgia Businessman Charged with $24 Million Bank Fraud",
-        "reason": "case-specific allegation involving a bank, with no credit-union-specific event or new general operating requirement",
-        "primaryAudience": "commercial-lending and fraud leaders",
+        "title": "Credit Union Professional Development Program Highlights Underwriter Training",
+        "reason": "training case study with limited independent evidence and no new sector-wide operating requirement",
+        "primaryAudience": "HR and workforce leaders",
         "secondaryAudiences": [
-          "risk leaders",
-          "internal audit teams"
-        ]
-      },
-      {
-        "title": "Justice Department Announces Iranian Cyber-Theft Charges",
-        "reason": "material cyber enforcement but no verified credit-union or financial-services target and no new sector control requirement",
-        "primaryAudience": "cybersecurity leaders",
-        "secondaryAudiences": [
-          "risk leaders",
-          "technology leaders"
-        ]
-      },
-      {
-        "title": "CFTC Innovation Advisory Committee Meeting",
-        "reason": "upcoming meeting agenda rather than a completed decision, rule or operating requirement",
-        "primaryAudience": "governance and digital-asset leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk leaders"
-        ]
-      },
-      {
-        "title": "Federal Reserve July Meeting Minutes",
-        "reason": "macroeconomic policy context without a distinct new credit-union operating, technology or compliance decision",
-        "primaryAudience": "finance and treasury leaders",
-        "secondaryAudiences": [
-          "executives",
-          "lending leaders"
-        ]
-      },
-      {
-        "title": "Check-Fraud Detection Campaign Week",
-        "reason": "education campaign already represented in recent Alert coverage, without a distinct new control requirement",
-        "primaryAudience": "fraud and payments leaders",
-        "secondaryAudiences": [
-          "member-communications teams",
+          "lending leaders",
           "operations leaders"
         ]
       },
       {
-        "title": "Bank and Credit Union Fraud Seminar Announcements",
-        "reason": "event promotion rather than completed fraud-control implementation or authoritative guidance",
-        "primaryAudience": "fraud leaders",
+        "title": "Credit Union Housing-Finance Event Reviews Market Access",
+        "reason": "event recap without an adopted policy, transaction or distinct new mortgage implementation requirement",
+        "primaryAudience": "mortgage and community-development leaders",
         "secondaryAudiences": [
-          "operations leaders",
-          "training teams"
+          "executives",
+          "government-affairs teams"
         ]
       },
       {
-        "title": "Mortgage Rates Move Lower",
-        "reason": "market snapshot without a distinct credit-union policy, technology or implementation decision",
-        "primaryAudience": "mortgage leaders",
+        "title": "Nebraska Grand Jury Adds a Credit Union Fraud Count",
+        "reason": "case-specific allegation without a new general control standard or sufficiently broad operating implication",
+        "primaryAudience": "fraud and legal leaders",
         "secondaryAudiences": [
-          "finance leaders",
-          "marketing teams"
+          "internal audit teams",
+          "operations leaders"
         ]
       },
       {
-        "title": "Technology Credit Union Selects eGain AI Knowledge Hub",
-        "reason": "outside the 72-hour window and a vendor-led selection announcement without verified production outcomes",
-        "primaryAudience": "contact-center and member-service leaders",
+        "title": "Entersekt Publishes a Financial Authentication Survey",
+        "reason": "vendor-sponsored survey with insufficient methodology and no distinct credit-union event or control change",
+        "primaryAudience": "identity and cybersecurity leaders",
         "secondaryAudiences": [
-          "technology leaders",
-          "vendor-management teams"
+          "digital-banking leaders",
+          "fraud leaders"
         ]
       },
       {
-        "title": "UW Credit Union Selects Fiserv DNA",
-        "reason": "outside the 72-hour window and a vendor-led core-selection announcement without current implementation results",
-        "primaryAudience": "technology and operations leaders",
+        "title": "State Supervisors Comment on Proposed CAMELS Revisions",
+        "reason": "outside the 72-hour window and a comment on a proposal rather than a final supervisory change",
+        "primaryAudience": "risk and compliance leaders",
         "secondaryAudiences": [
-          "vendor-management teams",
-          "member-experience leaders"
-        ]
-      },
-      {
-        "title": "Wyoming Stable Token Migrates to Chainlink",
-        "reason": "no verified credit-union role and insufficiently distinct from recent stablecoin coverage",
-        "primaryAudience": "payments and digital-asset leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk leaders"
+          "executives",
+          "state-chartered credit union boards"
         ]
       }
     ],
     "status": "article-complete",
-    "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 2 of 3; selection, sourcing, factual nuance and Library classification were unchanged. The High-only LinkedIn hook experiment does not apply.",
+    "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 3 of 3; the opening states the decision, relevance and immediate controls in the first 80-120 words. Selection, sourcing and factual nuance were unchanged. ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19 reserved for the High-priority LinkedIn package after live verification.",
     "nextCoverageGap": "Small-business lending and member-business-services AI implementation controls",
-    "updatedAt": "2026-08-20T07:00:00-04:00"
+    "updatedAt": "2026-08-21T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-08-20",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 14,
+      "beatsSearched": [
+        "member-service-accessibility",
+        "regulatory-governance",
+        "fraud-security",
+        "lending-mortgage",
+        "payments-deposits",
+        "vendor-management",
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "Eight Tests for Accessible AI Member Service at Credit Unions",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-accessibility-test-plan.html",
+          "primaryFunctionalAudience": "Member-service and digital-accessibility leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "scheduled-2026-08-20-11:30-et"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Clutch Reports 30 Million Credit-Union Members on Its AI Platform",
+          "reason": "vendor-controlled adoption claim without institution-level outcomes, methodology or independent verification",
+          "primaryAudience": "technology and digital-banking leaders",
+          "secondaryAudiences": [
+            "member-service leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Narmi AI DecisionAssist for Account Opening",
+          "reason": "vendor product material without a dated, verified credit-union deployment or production performance evidence",
+          "primaryAudience": "digital-account-opening leaders",
+          "secondaryAudiences": [
+            "fraud leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "Identifi Announces 16 New Bank and Credit Union Customers",
+          "reason": "vendor growth announcement without institution-specific implementation results or independently verified outcomes",
+          "primaryAudience": "operations and records-management leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "Georgia Businessman Charged with $24 Million Bank Fraud",
+          "reason": "case-specific allegation involving a bank, with no credit-union-specific event or new general operating requirement",
+          "primaryAudience": "commercial-lending and fraud leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "internal audit teams"
+          ]
+        },
+        {
+          "title": "Justice Department Announces Iranian Cyber-Theft Charges",
+          "reason": "material cyber enforcement but no verified credit-union or financial-services target and no new sector control requirement",
+          "primaryAudience": "cybersecurity leaders",
+          "secondaryAudiences": [
+            "risk leaders",
+            "technology leaders"
+          ]
+        },
+        {
+          "title": "CFTC Innovation Advisory Committee Meeting",
+          "reason": "upcoming meeting agenda rather than a completed decision, rule or operating requirement",
+          "primaryAudience": "governance and digital-asset leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk leaders"
+          ]
+        },
+        {
+          "title": "Federal Reserve July Meeting Minutes",
+          "reason": "macroeconomic policy context without a distinct new credit-union operating, technology or compliance decision",
+          "primaryAudience": "finance and treasury leaders",
+          "secondaryAudiences": [
+            "executives",
+            "lending leaders"
+          ]
+        },
+        {
+          "title": "Check-Fraud Detection Campaign Week",
+          "reason": "education campaign already represented in recent Alert coverage, without a distinct new control requirement",
+          "primaryAudience": "fraud and payments leaders",
+          "secondaryAudiences": [
+            "member-communications teams",
+            "operations leaders"
+          ]
+        },
+        {
+          "title": "Bank and Credit Union Fraud Seminar Announcements",
+          "reason": "event promotion rather than completed fraud-control implementation or authoritative guidance",
+          "primaryAudience": "fraud leaders",
+          "secondaryAudiences": [
+            "operations leaders",
+            "training teams"
+          ]
+        },
+        {
+          "title": "Mortgage Rates Move Lower",
+          "reason": "market snapshot without a distinct credit-union policy, technology or implementation decision",
+          "primaryAudience": "mortgage leaders",
+          "secondaryAudiences": [
+            "finance leaders",
+            "marketing teams"
+          ]
+        },
+        {
+          "title": "Technology Credit Union Selects eGain AI Knowledge Hub",
+          "reason": "outside the 72-hour window and a vendor-led selection announcement without verified production outcomes",
+          "primaryAudience": "contact-center and member-service leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "vendor-management teams"
+          ]
+        },
+        {
+          "title": "UW Credit Union Selects Fiserv DNA",
+          "reason": "outside the 72-hour window and a vendor-led core-selection announcement without current implementation results",
+          "primaryAudience": "technology and operations leaders",
+          "secondaryAudiences": [
+            "vendor-management teams",
+            "member-experience leaders"
+          ]
+        },
+        {
+          "title": "Wyoming Stable Token Migrates to Chainlink",
+          "reason": "no verified credit-union role and insufficiently distinct from recent stablecoin coverage",
+          "primaryAudience": "payments and digital-asset leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk leaders"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 2 of 3; selection, sourcing, factual nuance and Library classification were unchanged. The High-only LinkedIn hook experiment does not apply.",
+      "nextCoverageGap": "Small-business lending and member-business-services AI implementation controls",
+      "updatedAt": "2026-08-20T07:00:00-04:00"
+    },
     {
       "date": "2026-08-19",
       "fullArticleCount": 1,
