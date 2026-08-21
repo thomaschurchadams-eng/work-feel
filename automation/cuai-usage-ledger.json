@@ -222,6 +222,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
       "summary": "Diagnosed an internal workflow-contract drift, not a publisher, Alert-service, Buffer or production outage. The authoritative Publish CUAI Daily Article policy explicitly owns one article plus bounded LinkedIn distribution and does not authorize Alerts, while the newsroom runbook separates Article and Alert cycles; stale publishing-rules completion wording still required one article and three Alerts in the same standard cycle. Clarified cycle ownership so the article cycle completes after one valid article (or exhaustion of qualified article candidates) and the separate Alert cycle retains the three-alert daily target. Today’s article outcome is complete and live, Production is READY with no runtime errors, Buffer is HTTP 200/ok=true, and the unique Friday 12:30 p.m. ET company-page reservation remains not yet due with immutable UTMs. No Alert, social post, credential, schedule, destination, editorial/source gate or published content was created or changed. Durable prevention: keep completion semantics scoped to the cycle that owns the work whenever newsroom responsibilities are split.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-21T17:04:20-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found the machine-readable publishing rules still imposed a three-Alert daily target after the earlier cycle-ownership fix, conflicting with the authoritative CUAI Operating System policy that permits at most one qualified Alert per weekday and explicitly forbids an Alert quota or target.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"policyConsistencyChecks":4,"dailyCycleStateChecks":1,"socialQueueChecks":1,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":2,"recoveryBranchesCreated":1,"recoveryConfigFilesChanged":1,"previewDeploymentChecks":1,"usageLedgerChanges":1,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
+      "summary": "Diagnosed repeated internal workflow-contract drift, not a publisher, Buffer or production outage. The authoritative CUAI Operating System allows at most one genuinely new qualified Alert per weekday and says not to use a quota or target, while publishing-rules.json still declared three Alerts per day. Updated the machine-readable rules to max one Alert per weekday with quota disabled, made the authoritative operating policy explicit, and classified the legacy daily-cycle-state alerts=3 counter as non-authoritative metadata rather than rewriting historical state. The feature-branch Vercel Preview reached READY and the preview homepage returned HTTP 200. Current Production remains READY, the latest article and homepage return HTTP 200, Vercel reports no runtime errors, and Buffer confirms the exact August 21 company-page post sent with immutable CUAI UTMs. No Alert, social post, credential, schedule, destination, source gate or published content was created or changed. Durable prevention: quantity and cycle semantics in machine-readable publishing rules must mirror the authoritative task policy; legacy counters cannot override it.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
