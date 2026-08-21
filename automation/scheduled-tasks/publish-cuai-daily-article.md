@@ -8,22 +8,24 @@ This policy governs one daily article cycle plus the bounded LinkedIn distributi
 
 ## Mission
 
-Publish one credible, useful CreditUnionAI News article only when it has a clear, source-supported implication for credit-union decision makers. Serve a broad functional audience across executive leadership, boards, risk and compliance, lending, payments, fraud, operations, member service, marketing, data/technology, HR/workforce, finance, and strategy.
+Publish one credible, useful CreditUnionAI News article only when it has a clear, source-supported implication for credit-union decision makers **and a substantive AI or technology operating connection**. CUAI is an AI-intelligence publication, not a general credit-union newswire. Preserve broad functional coverage across boards, risk, lending, payments, fraud, operations, member service, marketing, data/technology, HR/workforce, finance and strategy through AI, automation, data/decisioning, cybersecurity or fraud technology, digital banking/payments technology, or technology-governance lenses.
 
-Reliability, source quality, and usefulness outrank volume.
+A general credit-union regulatory, macroeconomic, personnel, legal, finance, market or governance development does not qualify for a full CUAI article when the AI/technology connection is merely incidental or appears only as an internal-link aside. Do not manufacture an AI angle to make a general story fit.
+
+Reliability, source quality, mission fit, and usefulness outrank volume.
 
 ## Required research and selection
 
 1. Read the current production policy inputs needed for the cycle, including the newsroom runbook, publishing rules, taxonomy, coverage ledger, source registry, analytics/SEO rules, relevant templates, current homepage, current section indexes, recently published articles, `automation/social-queue.json`, and the current daily-cycle state.
 2. Search across at least four distinct functional or editorial beats. Evaluate at least six credible candidates when current developments are available.
-3. Prefer primary sources, official documents, regulators, credit unions, vendors making attributable announcements, and credible reporting. A candidate must have a specific, explainable credit-union implication.
+3. Prefer primary sources, official documents, regulators, credit unions, vendors making attributable announcements, and credible reporting. A candidate must have both a specific, explainable credit-union implication and the substantive AI/technology operating connection defined in the Mission section.
 4. Avoid repeating a recent topic, source, organization, format, or functional audience unless there is material new information.
 5. Classify the candidate before drafting:
    - **High** — material, time-sensitive, primary-source-backed development with a clear operating implication. Eligible for selective LinkedIn promotion.
    - **Standard** — useful, credible article that serves the portfolio but is not a must-know event. Publish to site when it passes all gates; normally do not promote on LinkedIn.
    - **Library** — durable, evergreen, multi-source guide, case study, or explainer. Use to strengthen the evergreen backlog; consider for LinkedIn only when it passes the selective Library gate below.
-6. If no current-event candidate qualifies, use the approved content-portfolio fallback: select the strongest unserved **Library** topic from the evergreen backlog, then a durable multi-source Insight, credit-union case study, or data-led explainer. Do not lower standards merely to fill a daily slot.
-7. If nothing clears the evidence and quality gates, do not publish. Record the non-publication result in the Cloud task outcome.
+6. If no current-event candidate qualifies, use the approved content-portfolio fallback: select the strongest unserved **Library** topic from the evergreen backlog, then a durable multi-source Insight, credit-union case study, or data-led explainer. The fallback must still pass the AI/technology mission-fit gate. Do not lower standards merely to fill a daily slot.
+7. If nothing clears the evidence, mission-fit, and quality gates, do not publish. Record the non-publication result in the Cloud task outcome.
 
 ## Article package and production safeguards
 
@@ -87,10 +89,14 @@ Do not change LinkedIn credentials, Buffer credentials, channel permissions, pos
 
 After publication, record the classification, functional audience, topic, source type, format, homepage treatment, and LinkedIn decision in the established ledger/state.
 
-Use available analytics and prior outcomes to improve future selection: favor topics, formats, audiences, and distribution choices that demonstrate qualified engagement; avoid overreacting to one result. Analytics guide the portfolio—they do not override source quality, editorial standards, or audience coverage.
+Use available analytics and prior outcomes to improve future selection: favor topics, formats, audiences, and distribution choices that demonstrate qualified engagement; avoid overreacting to one result. Analytics guide the portfolio—they do not override source quality, mission fit, editorial standards, or audience coverage.
 
 ## Publish-to-operate handoff
 
 Once the article package and any qualifying LinkedIn distribution step are complete, hand off only the relevant result to the operating-system policy: classification, portfolio/coverage update, analytics fields, LinkedIn decision and scheduling result, and any alert consideration. Do not run Alerts, maintenance, growth, or newsletter activity inside this article cycle.
+
+## Existing Aug. 21 publication
+
+The August 21, 2026 NCUA board-meeting article and its already-created company-page reservation predate this mission-fit clarification. Do not delete, rewrite, duplicate, cancel, or reschedule that published/scheduled package solely because of this policy clarification. Apply the strengthened mission-fit gate prospectively beginning with the next article cycle.
 
 The Cloud task must finish with a concise operational record: published or not published, classification, live URL if published, validation/deployment status, LinkedIn decision and scheduling status when applicable, any recovered missed High article, and any blocker.
