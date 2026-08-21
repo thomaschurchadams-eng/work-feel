@@ -1,11 +1,22 @@
 {
-  "version": 2,
+  "version": 3,
   "mode": "automatic-production",
   "humanApprovalRequired": false,
   "weeklyTargets": {
     "siteStoriesMin": 6,
     "siteStoriesMax": 8,
     "linkedinPosts": 5
+  },
+  "missionFit": {
+    "required": true,
+    "rule": "Every full article must have a substantive, source-supported operating implication involving AI, automation, data/decisioning, cybersecurity or fraud technology, digital banking/payments technology, or technology governance. Preserve broad functional coverage through those lenses. General credit-union regulation, macroeconomics, personnel, legal, finance, market or governance developments do not qualify by themselves when the technology/AI connection is only incidental or an internal-link aside.",
+    "examplesInScope": [
+      "AI governance and board oversight",
+      "automated lending or fraud controls",
+      "digital member-service and accessibility technology",
+      "payments, identity, cybersecurity and data technology",
+      "AI workforce, vendor and compliance implementation"
+    ]
   },
   "selection": {
     "minimumScore": 62,
@@ -22,7 +33,8 @@
     "unsupported-claim",
     "confidential-or-nonpublic-information",
     "undisclosed-sponsored-content",
-    "duplicate-or-near-duplicate"
+    "duplicate-or-near-duplicate",
+    "missing-ai-or-technology-operating-implication"
   ],
   "productionBehavior": "Candidates that pass hard stops and score at or above the minimum publish directly to main. Failed candidates are logged with reasons and do not request routine human approval.",
   "weights": {
@@ -48,6 +60,6 @@
       "data-led-explainer"
     ],
     "completionRule": "Do not end a standard cycle after the first rejected or duplicate candidate. Continue through the ranked pool until one full article and three distinct alerts publish, or every qualified candidate in the expanded search has been exhausted.",
-    "shortfallRule": "Never weaken evidence or quality gates to fill a slot. When a target remains unfilled, record the candidates evaluated, rejection reason for each, beats and sources searched, and the exact evidence gap."
+    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. When a target remains unfilled, record the candidates evaluated, rejection reason for each, beats and sources searched, and the exact evidence gap."
   }
 }
