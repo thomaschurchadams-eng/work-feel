@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "mode": "automatic-production",
   "humanApprovalRequired": false,
   "weeklyTargets": {
@@ -46,12 +46,14 @@
     "urgency": 0.1
   },
   "cycleOwnership": {
-    "articleCycle": "Owns one full News or Insights article only. It must not publish Alerts or remain open solely because the daily Alert target is unfilled.",
-    "alertCycle": "Owns Alerts separately. The daily Alert target remains three and is tracked in daily-cycle-state.json."
+    "articleCycle": "Owns one full News or Insights article only. It must not publish Alerts or remain open solely because no Alert was published.",
+    "alertCycle": "Owns Alerts separately under automation/scheduled-tasks/cuai-operating-system.md. It may publish at most one genuinely new, time-sensitive, qualified Alert per weekday and has no quota or minimum target. Any legacy alert target count in daily-cycle-state.json is non-authoritative metadata and must not drive publication behavior."
   },
   "standardCycle": {
     "fullArticleTarget": 1,
-    "alertTarget": 3,
+    "alertTarget": null,
+    "alertMaximumPerWeekday": 1,
+    "alertQuotaEnabled": false,
     "minimumCandidatesToEvaluate": 12,
     "minimumDistinctBeatsToSearch": 6,
     "candidateLookbackHours": 72,
@@ -63,7 +65,7 @@
       "credit-union-specific-case-study",
       "data-led-explainer"
     ],
-    "completionRule": "For the article cycle, do not end after the first rejected or duplicate candidate. Continue through the ranked pool until one full article publishes, or every qualified article candidate in the expanded search has been exhausted. The separate Alert cycle owns the three-alert daily target; an Alert shortfall must not block or extend article-cycle completion.",
-    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. When the article target remains unfilled, record the candidates evaluated, rejection reason for each, beats and sources searched, and the exact evidence gap. Alert shortfalls are recorded and handled only by the separate Alert cycle."
+    "completionRule": "For the article cycle, do not end after the first rejected or duplicate candidate. Continue through the ranked pool until one full article publishes, or every qualified article candidate in the expanded search has been exhausted. The separate Alert cycle may publish at most one qualified Alert per weekday and has no quota; Alert non-publication must not block or extend article-cycle completion.",
+    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. When the article target remains unfilled, record the candidates evaluated, rejection reason for each, beats and sources searched, and the exact evidence gap. The separate Alert cycle records a no-Alert outcome when nothing qualifies; that is not a quota shortfall."
   }
 }
