@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-20T09:29:44-04:00",
+  "updatedAt": "2026-08-21T09:18:30-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -100,6 +100,23 @@
       "status": "completed",
       "result": "The August 20 CEO cycle synchronized the decision-first experiment state and made cross-ledger reconciliation an explicit CEO reporting discipline. No production behavior or external action changed.",
       "rollback": "Revert only the growth-strategy, improvement-ledger and CEO-report state wording if the underlying daily-cycle or coverage evidence is later found incorrect; published content and scheduled social items are unaffected."
+    },
+    {
+      "id": "ai-technology-mission-fit-gate-2026-08-21",
+      "evidence": "The August 21 publisher selected a strong, well-sourced federal-credit-union board-meeting governance story, but the article's thesis is general governance rather than AI or technology intelligence. The current task mission is to make CreditUnionAI News the most useful, credible AI intelligence source for credit-union leaders, and broad functional coverage should therefore be achieved through AI, automation, data, cybersecurity/fraud technology, digital-banking/payments technology or technology-governance implications rather than general credit-union news. The existing publishing policy required credit-union relevance but did not explicitly hard-stop a story whose AI/technology connection was only incidental.",
+      "proposedChange": "Add a prospective mission-fit gate to the daily article policy and publishing rules: every full article must have a substantive, source-supported AI or technology operating implication; do not manufacture an AI angle; preserve broad functional coverage through those lenses. Grandfather the already-published and already-scheduled August 21 package rather than rewriting, canceling or duplicating it.",
+      "expectedBenefit": "Reduce brand dilution and opportunity cost from general-industry stories while keeping CUAI useful to boards, lending, payments, fraud, operations, member service, marketing, HR, finance and other leaders through an explicit AI/technology lens.",
+      "risk": "low-to-medium",
+      "validation": [
+        "publishing-rules.json adds an explicit missionFit rule and a missing-ai-or-technology-operating-implication hard stop without weakening any source, confidence, originality or quality gate",
+        "the authoritative daily article policy adds the same prospective mission-fit requirement and explicitly prohibits manufacturing an AI angle",
+        "the existing August 21 article and scheduled company-page item are grandfathered and left untouched",
+        "fixed LinkedIn cadence, UTMs, destinations, credentials, schedules and external authority are unchanged",
+        "Vercel Preview reached READY on the branch after both policy/config changes"
+      ],
+      "status": "completed",
+      "result": "The next article cycle must be substantively AI/technology relevant, not merely credit-union relevant. The change strengthens mission alignment while preserving current publication reliability and the existing August 21 scheduled handoff.",
+      "rollback": "Revert the August 21 mission-fit edits to publishing-rules.json and publish-cuai-daily-article.md. The already-published content, social queue and analytics systems are unaffected."
     }
   ]
 }
