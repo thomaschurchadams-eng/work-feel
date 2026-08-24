@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T09:18:30-04:00",
+  "updatedAt": "2026-08-24T10:49:36-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -37,10 +37,10 @@
       "hypothesis": "For otherwise-qualified High-priority CUAI stories, opening with the credit-union operating tension or decision before naming the institution/event will improve qualified reach and attributable site sessions versus the completed relevance-led cohort without reducing engagement quality.",
       "evidence": [
         "The completed relevance-led cohort missed every primary target: FinCEN BOI produced 4 impressions / 3 reach / 1 GA4 session / 0 engaged sessions; Colorado ASSET Act produced 4 impressions / 3 reach / 1 GA4 session / 0 engaged sessions; federal-credit-union investment authority produced 4 impressions / 4 reach / 0 currently attributable GA4 session and 0 Buffer engagement.",
-        "Across those three completed observations, median Buffer reach is 3, median Buffer engagement is 0%, and median GA4 LinkedIn sessions per post is 1 versus targets of reach >=12, engagement >=5%, and sessions >=2.",
-        "Recent pre-experiment problem-led posts provide directional—not controlled—evidence for an alternative: Guardian breach response reached 21 on 31 impressions, while RBFCU impersonation reached 8 on 13 impressions with 7.69% Buffer engagement. Topic and timing confounding remain material.",
-        "The August 19 Treasury post was already scheduled before this treatment opened and is excluded from the cohort. The selectively promoted August 20 Library Insight is also excluded because this experiment is intentionally scoped to otherwise-qualified High-priority posts.",
-        "The August 21 NCUA board-meeting High article is the first qualifying operating-tension observation. Its company-page copy leads with the oversight tension before naming NCUA, preserves exact CUAI UTMs and image rules, and is uniquely scheduled for Friday August 21 at 12:30 p.m. ET. It is not yet due or metrics-ready at this CEO checkpoint."
+        "Across those three completed observations, median Buffer reach was 3, median Buffer engagement was 0%, and median GA4 LinkedIn sessions per post was 1 versus targets of reach >=12, engagement >=5%, and sessions >=2.",
+        "Recent pre-experiment problem-led posts provided directional—not controlled—evidence for an alternative: Guardian breach response reached 21 on 31 impressions, while RBFCU impersonation reached 8 on 13 impressions with 7.69% Buffer engagement. Topic and timing confounding remain material.",
+        "The August 19 Treasury post was already scheduled before this treatment opened and is excluded from the cohort. The selectively promoted August 20 and August 24 Library Insights are also excluded because this experiment is intentionally scoped to otherwise-qualified High-priority posts.",
+        "Observation 1 is now metrics-ready: the August 21 NCUA High post produced 6 Buffer impressions, 4 reach and 0% Buffer engagement; GA4 attributes 1 LinkedIn session and 0 engaged sessions to its exact utm_content. This first observation is below all three targets, but one observation is not enough to stop the bounded three-post treatment."
       ],
       "boundedChange": "For the next 3 otherwise-qualified High-priority company-page posts after the August 19 Treasury reservation, keep the existing schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. Lead with the operating tension/decision or member/control problem in the first sentence, name the institution/event as evidence in the next sentence, and end with one concrete credit-union action.",
       "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content. Target at least 2 sessions per experiment post, median Buffer reach of 12 or more, and median Buffer engagement rate of at least 5%.",
@@ -55,6 +55,29 @@
       "startDate": "2026-08-19",
       "reviewCondition": "Review after 3 qualifying High-priority posts or on 2026-09-02, whichever comes first. Stop or revise if the treatment does not improve median sessions/reach directionally, if engagement quality deteriorates, or if the framing becomes sensational or overstates urgency.",
       "rollback": "Remove the operating-tension hook guidance and return to normal post-copy discretion. No schedule, credentials, editorial gates, destinations or publishing authority need to change."
+    },
+    {
+      "id": "newsletter-contextual-value-proposition-2026-08-24",
+      "status": "active",
+      "hypothesis": "For otherwise-qualified News and Insights articles, making the existing end-of-article newsletter invitation explicitly connect the article's operating decision to the recurring value of the CUAI Weekly Briefing will increase distinct newsletter-intent activity without reducing reading depth.",
+      "evidence": [
+        "Live GA4 shows 33 active users, 39 sessions and 10 engaged sessions in seven days versus a 28-day weekly pace of 41.25 users, 58.25 sessions and 20 engaged sessions; the largest acquisition shortfall is direct traffic at 29 sessions versus a 49.5-session weekly pace.",
+        "Search is not the current acquisition failure: direct Search Console shows 7 clicks from 535 impressions in seven days versus a 28-day weekly pace of 4.75 clicks from 643.5 impressions, and Google organic contributes 6 GA4 sessions versus a 5-session weekly pace.",
+        "LinkedIn exposure is also roughly on or above pace: Buffer shows 46 impressions / 21 reach in seven days versus a 28-day weekly pace of 39.25 / 20, while GA4 attributes 3 LinkedIn sessions versus a 3.25-session pace.",
+        "GA4 returns no seven-day newsletter_intent row despite 5 active engaged_reader users. The 28-day view contains 45 newsletter_intent events from only 5 users, so historical intent is concentrated and should be treated as directional rather than a clean per-article baseline."
+      ],
+      "boundedChange": "For the next 3 otherwise-qualified News or Insights articles published after August 24, change only the sentence immediately beside the existing end-of-article newsletter CTA so it names the functional operating value the reader will receive from the CUAI Weekly Briefing. Keep the CTA placement, button, destination, form behavior, article selection, sourcing, headline, schedule, analytics instrumentation and all editorial gates unchanged. Do not retrofit already-published articles.",
+      "primaryMetric": "Distinct GA4 active users generating newsletter_intent during the cohort. Target at least 2 active newsletter-intent users and at least 4 newsletter_intent events in the rolling seven-day view by cohort review.",
+      "guardrailMetrics": [
+        "seven-day engaged_reader active users",
+        "seven-day engagement rate",
+        "GA4 built-in 90% scrolled users",
+        "article factual/editorial quality",
+        "no change to newsletter destination, form, data collection or placement"
+      ],
+      "startDate": "2026-08-24",
+      "reviewCondition": "Review after 3 qualifying post-August-24 articles or on 2026-09-04, whichever comes first. Stop or revise if newsletter-intent remains absent, if seven-day engagement rate falls more than 5 percentage points from the 25.6% start reading without a clear traffic-mix explanation, or if the copy becomes generic or promotional rather than decision-useful.",
+      "rollback": "Remove the contextual CTA-copy guidance and return to the existing newsletter invitation language. The newsletter destination, form, analytics, published articles and external authority remain unchanged."
     }
   ],
   "productionGuidance": {
@@ -62,13 +85,15 @@
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: observation 1 is the August 21 NCUA board-meeting High post, scheduled for 12:30 p.m. ET. For the next 2 otherwise-qualified High-priority posts, lead with the operating tension/decision before the named institution or event; preserve schedule, UTM, editorial and image guardrails."
+      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: observation 1 is complete and below target at 6 Buffer impressions / 4 reach / 0% engagement -> 1 GA4 session / 0 engaged. For the next 2 otherwise-qualified High-priority posts, continue the bounded treatment: lead with the operating tension/decision before the named institution or event and preserve schedule, UTM, editorial and image guardrails."
     ],
     "articleOpeningGuidance": [
       "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. The formal experiment is closed; normal editorial discretion and all sourcing/factual-nuance gates apply."
     ],
     "visualGuidance": [],
-    "conversionGuidance": [],
+    "conversionGuidance": [
+      "ACTIVE EXPERIMENT newsletter-contextual-value-proposition-2026-08-24: for the next 3 otherwise-qualified News or Insights articles after August 24, change only the sentence beside the existing end-of-article newsletter CTA so it connects the article's functional operating decision to the recurring value of the CUAI Weekly Briefing. Do not change placement, button, destination, form behavior, data collection, selection or editorial standards."
+    ],
     "deprioritize": []
   },
   "guardrails": [
@@ -114,6 +139,13 @@
       "evidence": "The August 21 NCUA News article completed cohort observation 3 of 3. Live GA4 now shows a 34.5% seven-day engagement rate, clearing the >=30% rate target and recovering close to the 28-day 36.4% rate. However absolute seven-day depth and traffic remain below the experiment targets and trend pace: 10 engaged sessions versus the >=18 target, 4 built-in 90%-scrolled users versus >=6, and 24 active users versus the >=40 guardrail; the 28-day totals are 82 engaged sessions, 32 90%-scrolled users and 155 active users. The cohort coincided with better engagement rate but materially lower site volume, so the aggregate evidence does not support a causal keep decision for a rigid opening formula.",
       "uncertainty": "Rolling seven-day traffic is volatile and the three cohort articles have too little page-level traffic to separate the opening treatment from acquisition and topic effects. The experiment is therefore closed rather than extended indefinitely; the useful editorial principle is retained without a mandatory formula.",
       "nextCheckpoint": "Keep the operating-tension LinkedIn experiment as the only active production experiment. Reconsider a structured article-opening test only when a future cohort can be evaluated with sufficiently attributable page-level traffic rather than site-wide absolute counts."
+    },
+    {
+      "timestamp": "2026-08-24T10:49:36-04:00",
+      "decision": "Continue the operating-tension LinkedIn treatment through its remaining two qualifying High observations and open a second bounded experiment on contextual newsletter CTA copy for the next three articles.",
+      "evidence": "Observation 1 of the operating-tension treatment is now metrics-ready but weak at 6 impressions / 4 reach / 0% Buffer engagement -> 1 GA4 session / 0 engaged. The broader seven-day funnel shows Buffer exposure roughly on pace and Google/search clicks healthy, while direct traffic, absolute engaged sessions and owned-audience intent remain weak: GA4 reports 29 direct sessions versus a 49.5-session weekly pace, 10 engaged sessions versus a 20-session pace, and no seven-day newsletter_intent row. This supports preserving the bounded LinkedIn treatment rather than changing schedule and using the available second experiment slot on a reversible conversion-copy test.",
+      "uncertainty": "LinkedIn samples remain small and newsletter-intent history is concentrated: the 28-day endpoint reports 45 intent events from only 5 users. The CTA experiment therefore changes only contextual copy and uses distinct active users plus reading-depth guardrails rather than treating event count alone as conversion truth.",
+      "nextCheckpoint": "Two more qualifying High operating-tension posts or 2026-09-02; three post-August-24 CTA-treatment articles or 2026-09-04."
     }
   ]
 }
