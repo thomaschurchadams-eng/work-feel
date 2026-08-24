@@ -255,6 +255,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
       "summary": "Diagnosed a blocked internal reporting handoff rather than a production, publisher, analytics or social-delivery failure. The August 24 article outcome is complete and live, Production is READY with no runtime errors, GA4/Buffer/direct Search Console are HTTP 200/ok=true on the exact current Production commit, and today’s 12:30 p.m. ET company-page reservation remains unique, UTM-tagged and not yet due. The final CEO reporting branch was exactly current with main, all three branch previews were READY, and its changes were limited to the canonical CEO report, measured LinkedIn experiment state, and a bounded Alert-policy single-source audit. Recovered the handoff through PR #147 without touching content, credentials, schedules, destinations, editorial/source gates or the social queue. Root cause: the successful CEO run stopped after writing the final reporting branch and did not promote its canonical management-state updates to main. Durable prevention: a successful weekday CEO run should not be considered complete until the reporting branch is either merged to main or explicitly records a blocked merge outcome.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-24T17:07:59-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found the August 24 small-business-lending LinkedIn item had sent successfully in Buffer at the fixed 12:30 p.m. ET slot while automation/social-queue.json still retained status scheduled; this was another recurrence of the known asynchronous sent-state handoff drift.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"socialLedgerItemsReconciled":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":3,"policyFilesChanged":1,"previewDeploymentChecks":1,"usageLedgerChanges":1,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
+      "summary": "Diagnosed repeated repository delivery-state lag after a healthy asynchronous Buffer send, not an external posting failure. Buffer exactly matched the existing August 24 small-business-lending queue item and post ID and returned sentAt 2026-08-24T16:30:29.418Z, the approved CreditUnionAI News company-page link and confirmed sent-post UTM tracking. Reconciled only that existing item in place to sent; made no scheduler call, replacement post, UTM change, destination change, cadence change, credential action or editorial change. Because the same failure pattern has recurred repeatedly, tightened the authoritative sent-state reconciliation contract so an operating or reliability run that observes exact sent evidence after the fixed due time must commit the state repair in that run instead of deferring it to an unrelated future commit. The state/policy recovery Preview reached READY and its live Buffer endpoint returned HTTP 200/ok=true with the exact sent item; the production article remained HTTP 200 and Vercel reported no production runtime errors in the prior 24 hours.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

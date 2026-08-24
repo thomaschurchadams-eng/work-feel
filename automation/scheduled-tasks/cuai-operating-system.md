@@ -69,7 +69,7 @@ The repository social queue is the operational ledger, but Buffer is authoritati
 - If `/api/buffer-metrics` matches the existing queue item and `postId` and reports a non-null `sentAt`, while that same repository item still says `status: scheduled`, update only the existing item in place to the established sent-state fields supported by the queue schema, including `status: sent`, `sentAt` and `externalLink` when returned.
 - Preserve the immutable item id, canonical `articleUrl`, tagged `distributionUrl`, `scheduledFor`, `postId`, channel, image metadata and all cadence/tracking history. Never create a replacement item and never call the scheduler merely to reconcile state.
 - Treat the operation as idempotent. If Buffer evidence is pending, ambiguous, missing, or mismatched, do not rewrite the queue; report the exact blocker instead.
-- Aggregate routine sent-state reconciliations with the next material operating/reliability commit rather than creating poll-noise commits.
+- Once the fixed posting time has passed and exact Buffer sent evidence exists, a stale repository `scheduled` state is a material handoff transition. An operating or reliability run that observes that exact condition must reconcile and commit the existing item in the current run rather than deferring it to a future unrelated commit. Checks performed before the due time, or without exact Buffer sent evidence, remain no-ops and must not create poll-noise commits.
 
 This is internal state repair only. It does not authorize a new post, schedule change, destination change, credential change or broader social activity.
 
