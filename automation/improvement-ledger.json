@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-21T09:18:30-04:00",
+  "updatedAt": "2026-08-24T10:49:36-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -117,6 +117,26 @@
       "status": "completed",
       "result": "The next article cycle must be substantively AI/technology relevant, not merely credit-union relevant. The change strengthens mission alignment while preserving current publication reliability and the existing August 21 scheduled handoff.",
       "rollback": "Revert the August 21 mission-fit edits to publishing-rules.json and publish-cuai-daily-article.md. The already-published content, social queue and analytics systems are unaffected."
+    },
+    {
+      "id": "alert-policy-single-source-2026-08-24",
+      "evidence": "Three related reliability recoveries were required across PRs #143, #144 and #145 because Alert quantity and cycle semantics were duplicated across article-cycle completion rules, machine-readable publishing rules and the newsroom runbook. The authoritative CUAI Operating System now says at most one genuinely new qualified Alert per weekday with no quota or minimum target, and those primary surfaces are aligned. However automation/daily-cycle-state.json still contains the legacy top-level dailyTargets.alerts=3 metadata. Repository search found dailyTargets only in that state file, but an external consumer cannot be excluded from repository evidence alone.",
+      "proposedChange": "Perform a bounded schema-consumer audit, then remove or explicitly deprecate the remaining numeric Alert target and add a consistency check that prevents runbooks, rules or state metadata from reintroducing an Alert quota that conflicts with the authoritative operating-system policy.",
+      "expectedBenefit": "Eliminate repeated manual policy-drift recovery, reduce conflicting agent instructions and keep Alert quantity semantics single-sourced without changing the actual Alert schedule or authority.",
+      "risk": "low-to-medium",
+      "validation": [
+        "PR #143 separated article-cycle completion from the Alert cycle",
+        "PR #144 aligned machine-readable publishing rules to max one/no quota",
+        "PR #145 aligned the newsroom runbook to the same authoritative operating policy",
+        "current Production is READY and Vercel reports no runtime errors after PR #145",
+        "repository search on current main found dailyTargets only in automation/daily-cycle-state.json",
+        "the remaining alerts=3 field is already treated as non-authoritative legacy metadata rather than an instruction"
+      ],
+      "status": "queued",
+      "owner": "Reliability Watch / CUAI Operating System",
+      "deadline": "2026-08-26T12:00:00-04:00",
+      "result": "Not rewritten in this CEO run because the remaining state field may have an external consumer not visible in repository search. Current authoritative policy is aligned and production is healthy; the safe next step is a bounded consumer audit plus validator/single-source cleanup rather than another blind schema edit.",
+      "rollback": "If a later cleanup changes the state schema and a hidden consumer breaks, restore the legacy field while retaining the authoritative no-quota policy and consistency validator. No published content, social post or external Alert action is affected."
     }
   ]
 }
