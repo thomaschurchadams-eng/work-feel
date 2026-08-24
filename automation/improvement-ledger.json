@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-21T09:18:30-04:00",
+  "updatedAt": "2026-08-24T11:03:00-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -117,6 +117,27 @@
       "status": "completed",
       "result": "The next article cycle must be substantively AI/technology relevant, not merely credit-union relevant. The change strengthens mission alignment while preserving current publication reliability and the existing August 21 scheduled handoff.",
       "rollback": "Revert the August 21 mission-fit edits to publishing-rules.json and publish-cuai-daily-article.md. The already-published content, social queue and analytics systems are unaffected."
+    },
+    {
+      "id": "search-compounding-growth-2026-08-24",
+      "evidence": "Current 7-day site audience is below the 28-day weekly pace, but Google organic remains the strongest meaningful acquisition channel by engagement quality. Direct Search Console for August 17-23 reports 535 impressions / 7 clicks / 1.31% CTR, while GA4 reports 6 Google-organic sessions with 4 engaged sessions. Page-level traction is concentrated in OSFI agentic-AI controls, RBFCU impersonation investigations and Velera fraud response, which together produced 5 Search Console clicks in the current 7-day window.",
+      "proposedChange": "Open a 14-day search-compounding experiment: add contextual reciprocal internal links among the proven OSFI/RBFCU/Velera cluster and use search-supported adjacent themes only as a tie-breaker when multiple future stories independently satisfy the same editorial bar. Preserve broad coverage and queue snippet/title work only where evidence and editorial clarity support it.",
+      "expectedBenefit": "Turn emerging organic search visibility into a compounding qualified-acquisition channel without sacrificing editorial independence, topic diversity or reader quality.",
+      "risk": "low",
+      "validation": [
+        "feature branch growth/search-compounding-2026-08-24 was created from current main",
+        "automation/growth-strategy.json contains exactly two active experiments and a dated September 7 review/rollback condition",
+        "Velera now links contextually to the existing RBFCU and OSFI coverage without changing the article's factual claims, title, sources or canonical URL",
+        "OSFI now links contextually to the existing Velera and RBFCU coverage without changing the article's factual claims, title, sources or canonical URL",
+        "Vercel Preview is READY and both treatment pages return HTTP 200",
+        "Preview growth-strategy.json returns HTTP 200 as valid application/json",
+        "a minor copied SVG path regression on the Velera Preview was detected before merge and corrected on the feature branch"
+      ],
+      "status": "active",
+      "owner": "CUAI CEO / Growth",
+      "deadline": "2026-09-07T17:00:00-04:00",
+      "result": "Experiment opened; outcome pending 14 days of post-change Search Console and GA4 evidence. Baseline is 5 combined rolling-7-day clicks across OSFI/RBFCU/Velera and 6 sitewide Google-organic sessions.",
+      "rollback": "Revert the search-compounding feature change: remove the added contextual links and search-supported tie-breaker. No schedule, credentials, published factual claims or source policy needs to change."
     }
   ]
 }
