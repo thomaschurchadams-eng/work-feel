@@ -14,6 +14,8 @@ The newsroom uses separate, single-purpose cycles:
 
 A cycle must not take ownership of another cycle's work. Do not combine article publishing, Alert publishing and maintenance in one scheduled run.
 
+For Alert quantity, cadence and task authority, `automation/scheduled-tasks/cuai-operating-system.md` is authoritative. This runbook must not introduce a quota or target that conflicts with that policy.
+
 ## Article cycle
 
 1. Read only the files required for the article: `editorial-routing.json`, `editorial-taxonomy.json`, `publishing-rules.json`, `coverage-ledger.json`, `image-taxonomy.json`, `image-ledger.json`, `editorial-voice.md`, `analytics-measurement.json`, `seo-policy.json`, the relevant article template, the homepage, the correct section index, sitemaps and articles from the prior 14 days.
@@ -26,8 +28,8 @@ A cycle must not take ownership of another cycle's work. Do not combine article 
 
 ## Alert cycle
 
-1. Read the Alerts data/page, ticker implementation, homepage latest-alert module, coverage ledger, source registry, publishing rules and daily-cycle state.
-2. The morning run may publish up to the number of Alerts still needed to reach the daily target of three. Later runs may publish at most one genuinely new breaking Alert.
+1. Read the Alerts data/page, ticker implementation, homepage latest-alert module, coverage ledger, source registry, publishing rules, daily-cycle state and the authoritative CUAI Operating System policy.
+2. Search for genuinely new, time-sensitive, qualified developments and publish at most one Alert per weekday. There is no Alert quota or minimum target; if nothing qualifies, record the no-Alert outcome and stop.
 3. Each Alert requires a factual headline, neutral summary, specific operational credit-union implication, date, source name and direct source URL.
 4. Enforce exact one-to-one mapping between published Alerts and ticker items, newest-first order and the rolling 14-day window.
 5. Update only the Alerts page/data, ticker, homepage latest-alert module, relevant ledgers and daily-cycle state. Do not create a full article, hero image, topic hub, Intelligence tracker update, correction audit or archive migration during an Alert cycle.
@@ -55,4 +57,4 @@ For every full article, add valid editorial analytics attributes and complete ca
 
 ## Weekly portfolio
 
-Target five weekday article cycles plus differentiated Alerts. Additional deeper features may be restored only after the core article and Alert cycles demonstrate reliable production without overlap.
+Target five weekday article cycles plus selectively qualified Alerts. Additional deeper features may be restored only after the core article and Alert cycles demonstrate reliable production without overlap.
