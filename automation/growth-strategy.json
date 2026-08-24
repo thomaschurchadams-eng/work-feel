@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T09:18:30-04:00",
+  "updatedAt": "2026-08-24T10:54:39-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -40,7 +40,7 @@
         "Across those three completed observations, median Buffer reach is 3, median Buffer engagement is 0%, and median GA4 LinkedIn sessions per post is 1 versus targets of reach >=12, engagement >=5%, and sessions >=2.",
         "Recent pre-experiment problem-led posts provide directional—not controlled—evidence for an alternative: Guardian breach response reached 21 on 31 impressions, while RBFCU impersonation reached 8 on 13 impressions with 7.69% Buffer engagement. Topic and timing confounding remain material.",
         "The August 19 Treasury post was already scheduled before this treatment opened and is excluded from the cohort. The selectively promoted August 20 Library Insight is also excluded because this experiment is intentionally scoped to otherwise-qualified High-priority posts.",
-        "The August 21 NCUA board-meeting High article is the first qualifying operating-tension observation. Its company-page copy leads with the oversight tension before naming NCUA, preserves exact CUAI UTMs and image rules, and is uniquely scheduled for Friday August 21 at 12:30 p.m. ET. It is not yet due or metrics-ready at this CEO checkpoint."
+        "The August 21 NCUA board-meeting High article is the first qualifying operating-tension observation. Its company-page copy leads with the oversight tension before naming NCUA, preserves exact CUAI UTMs and image rules, and was sent August 21 at 12:30 p.m. ET."
       ],
       "boundedChange": "For the next 3 otherwise-qualified High-priority company-page posts after the August 19 Treasury reservation, keep the existing schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. Lead with the operating tension/decision or member/control problem in the first sentence, name the institution/event as evidence in the next sentence, and end with one concrete credit-union action.",
       "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content. Target at least 2 sessions per experiment post, median Buffer reach of 12 or more, and median Buffer engagement rate of at least 5%.",
@@ -55,14 +55,38 @@
       "startDate": "2026-08-19",
       "reviewCondition": "Review after 3 qualifying High-priority posts or on 2026-09-02, whichever comes first. Stop or revise if the treatment does not improve median sessions/reach directionally, if engagement quality deteriorates, or if the framing becomes sensational or overstates urgency.",
       "rollback": "Remove the operating-tension hook guidance and return to normal post-copy discretion. No schedule, credentials, editorial gates, destinations or publishing authority need to change."
+    },
+    {
+      "id": "search-compounding-cluster-2026-08-24",
+      "status": "active",
+      "hypothesis": "Strengthening internal connections around CUAI pages that already earn Google visibility, while using those proven themes only as a tie-breaker for otherwise-qualified adjacent coverage, will increase qualified organic clicks and sessions without reducing editorial quality or reader engagement.",
+      "evidence": [
+        "Direct Search Console for August 17-23 shows 535 impressions, 7 clicks, 1.31% CTR and average position 23.77 versus 2,574 impressions, 19 clicks, 0.74% CTR and average position 21.24 over 28 days. Recent clicks and CTR are ahead of the 28-day weekly pace even though total site audience is below pace.",
+        "GA4 Google organic is high quality: 6 sessions / 4 engaged sessions / 66.7% engagement over 7 days versus 20 / 13 / 65% over 28 days.",
+        "Current page-level search traction is concentrated in operational AI/fraud-control coverage: OSFI agentic-AI controls has 16 impressions / 2 clicks / position 5.13; RBFCU impersonation investigations has 102 / 2 / 16.23; Velera fraud response has 54 / 1 / 8.24. The News hub has 81 impressions / 0 clicks / position 16.20 and remains an explicit snippet/intent opportunity rather than a reason to rewrite articles for SEO."
+      ],
+      "boundedChange": "For 14 days, strengthen contextual internal links among the existing OSFI agentic-AI controls, RBFCU fraud-investigation and Velera fraud-response pages; use Search Console evidence only as a tie-breaker when multiple new stories independently clear the same sourcing, mission-fit and priority gates; and queue snippet/title improvements only where page-level evidence and editorial clarity support them. Do not manufacture search topics, change the publication schedule, weaken coverage diversity, or rewrite substantive factual claims solely for SEO.",
+      "primaryMetric": "Increase combined rolling-7-day Search Console clicks across the OSFI/RBFCU/Velera treatment cluster from the August 17-23 baseline of 5 to at least 8, while increasing sitewide GA4 Google-organic sessions from 6 to at least 8 in a rolling 7-day window by review.",
+      "guardrailMetrics": [
+        "Google-organic engagement rate remains at or above 50%",
+        "No sourcing, mission-fit, originality or factual-nuance gate is weakened",
+        "No more-material story is displaced solely because another topic has search traction",
+        "No material ranking deterioration of more than five positions across two or more treatment pages is accepted without review",
+        "No publication cadence or LinkedIn schedule change"
+      ],
+      "startDate": "2026-08-24",
+      "reviewCondition": "Review on 2026-09-07 or after 14 complete days of post-change Search Console data, whichever produces the cleaner comparison. Keep if clicks and organic sessions improve directionally with engagement guardrails intact; revise or stop if the cluster does not lift qualified acquisition or if topic selection starts to narrow coverage unnaturally.",
+      "rollback": "Remove the search-supported tie-breaker and revert only the added contextual internal links. Existing articles, sourcing, schedules and search reporting remain otherwise unchanged."
     }
   ],
   "productionGuidance": {
-    "priorityTopics": [],
+    "priorityTopics": [
+      "SEARCH-SUPPORTED TIE-BREAKER through 2026-09-07: when multiple stories independently clear the same editorial bar, prefer mission-aligned adjacent coverage that deepens proven organic clusters in AI risk controls, fraud response/investigations and vendor/operational controls. This is a tie-breaker only; never suppress more material coverage or manufacture a search topic."
+    ],
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: observation 1 is the August 21 NCUA board-meeting High post, scheduled for 12:30 p.m. ET. For the next 2 otherwise-qualified High-priority posts, lead with the operating tension/decision before the named institution or event; preserve schedule, UTM, editorial and image guardrails."
+      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: observation 1 is the August 21 NCUA board-meeting High post. For the next 2 otherwise-qualified High-priority posts, lead with the operating tension/decision before the named institution or event; preserve schedule, UTM, editorial and image guardrails."
     ],
     "articleOpeningGuidance": [
       "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. The formal experiment is closed; normal editorial discretion and all sourcing/factual-nuance gates apply."
@@ -114,6 +138,13 @@
       "evidence": "The August 21 NCUA News article completed cohort observation 3 of 3. Live GA4 now shows a 34.5% seven-day engagement rate, clearing the >=30% rate target and recovering close to the 28-day 36.4% rate. However absolute seven-day depth and traffic remain below the experiment targets and trend pace: 10 engaged sessions versus the >=18 target, 4 built-in 90%-scrolled users versus >=6, and 24 active users versus the >=40 guardrail; the 28-day totals are 82 engaged sessions, 32 90%-scrolled users and 155 active users. The cohort coincided with better engagement rate but materially lower site volume, so the aggregate evidence does not support a causal keep decision for a rigid opening formula.",
       "uncertainty": "Rolling seven-day traffic is volatile and the three cohort articles have too little page-level traffic to separate the opening treatment from acquisition and topic effects. The experiment is therefore closed rather than extended indefinitely; the useful editorial principle is retained without a mandatory formula.",
       "nextCheckpoint": "Keep the operating-tension LinkedIn experiment as the only active production experiment. Reconsider a structured article-opening test only when a future cohort can be evaluated with sufficiently attributable page-level traffic rather than site-wide absolute counts."
+    },
+    {
+      "timestamp": "2026-08-24T10:54:39-04:00",
+      "decision": "Open a second bounded growth experiment focused on compounding Google search acquisition rather than leaving Search Console opportunities in a passive queue.",
+      "evidence": "Current site audience is below the 28-day weekly pace, while Google organic remains the strongest meaningful acquisition channel by engagement quality and Search Console clicks/CTR are improving. OSFI, RBFCU and Velera already have page-one or near-page-one visibility and measurable clicks, providing enough evidence for a low-risk internal-linking and adjacent-coverage treatment.",
+      "uncertainty": "Search volumes are still small and page rankings can move for reasons unrelated to CUAI changes. The treatment therefore avoids aggressive keyword rewrites, schedule changes or topic forcing and uses a 14-day reversible cohort with engagement and coverage guardrails.",
+      "nextCheckpoint": "2026-09-07 or 14 complete days of post-change Search Console data."
     }
   ]
 }
