@@ -233,6 +233,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
       "summary": "Diagnosed repeated internal workflow-contract drift, not a publisher, Buffer or production outage. The authoritative CUAI Operating System allows at most one genuinely new qualified Alert per weekday and says not to use a quota or target, while publishing-rules.json still declared three Alerts per day. Updated the machine-readable rules to max one Alert per weekday with quota disabled, made the authoritative operating policy explicit, and classified the legacy daily-cycle-state alerts=3 counter as non-authoritative metadata rather than rewriting historical state. The feature-branch Vercel Preview reached READY and the preview homepage returned HTTP 200. Current Production remains READY, the latest article and homepage return HTTP 200, Vercel reports no runtime errors, and Buffer confirms the exact August 21 company-page post sent with immutable CUAI UTMs. No Alert, social post, credential, schedule, destination, source gate or published content was created or changed. Durable prevention: quantity and cycle semantics in machine-readable publishing rules must mirror the authoritative task policy; legacy counters cannot override it.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-24T08:24:36-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found two internal reliability-state failures: Buffer authoritatively showed the August 21 NCUA LinkedIn post as sent while automation/social-queue.json still said scheduled, and automation/AUTONOMOUS_NEWSROOM.md still retained the obsolete three-Alert target after the authoritative CUAI Operating System and publishing rules had moved to max one/no quota.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"policyConsistencyChecks":4,"dailyCycleStateChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":2,"socialLedgerItemsReconciled":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":3,"policyFilesChanged":1,"previewDeploymentChecks":2,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
+      "summary": "Diagnosed two internal handoff/state failures rather than external outages. Buffer exactly matched the existing August 21 NCUA queue item and post ID and returned sentAt 2026-08-21T16:30:32.514Z plus the approved CreditUnionAI News company-page link with UTM tracking, so reconciled only that existing item in place and made no scheduler call. Also removed the stale three-Alert target from the newsroom runbook and made the authoritative CUAI Operating System policy explicit, preventing the repeated quota drift from re-entering through a second workflow reference. The August 24 publisher outcome is complete, the current article is HTTP 200, Production is READY with no runtime errors, and today's 12:30 p.m. ET LinkedIn reservation remains unique, UTM-tagged and not yet due. The recovery branch previews are READY. No credentials, schedules, destinations, editorial/source gates, extra content or social reservations were changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
