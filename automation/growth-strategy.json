@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-24T10:54:39-04:00",
+  "updatedAt": "2026-08-24T11:05:36-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -39,8 +39,8 @@
         "The completed relevance-led cohort missed every primary target: FinCEN BOI produced 4 impressions / 3 reach / 1 GA4 session / 0 engaged sessions; Colorado ASSET Act produced 4 impressions / 3 reach / 1 GA4 session / 0 engaged sessions; federal-credit-union investment authority produced 4 impressions / 4 reach / 0 currently attributable GA4 session and 0 Buffer engagement.",
         "Across those three completed observations, median Buffer reach is 3, median Buffer engagement is 0%, and median GA4 LinkedIn sessions per post is 1 versus targets of reach >=12, engagement >=5%, and sessions >=2.",
         "Recent pre-experiment problem-led posts provide directional—not controlled—evidence for an alternative: Guardian breach response reached 21 on 31 impressions, while RBFCU impersonation reached 8 on 13 impressions with 7.69% Buffer engagement. Topic and timing confounding remain material.",
-        "The August 19 Treasury post was already scheduled before this treatment opened and is excluded from the cohort. The selectively promoted August 20 Library Insight is also excluded because this experiment is intentionally scoped to otherwise-qualified High-priority posts.",
-        "The August 21 NCUA board-meeting High article is the first qualifying operating-tension observation. Its company-page copy leads with the oversight tension before naming NCUA, preserves exact CUAI UTMs and image rules, and was sent August 21 at 12:30 p.m. ET."
+        "The August 19 Treasury post was already scheduled before this treatment opened and is excluded from the cohort. The selectively promoted August 20 and August 24 Library Insights are also excluded because this experiment is intentionally scoped to otherwise-qualified High-priority posts.",
+        "Observation 1 is metrics-ready: the August 21 NCUA board-meeting High post produced 6 Buffer impressions, 4 reach and 0% engagement; GA4 attributes 1 exact-utm_content LinkedIn session and 0 engaged sessions. This first observation is below all three targets, so two qualifying High observations remain before the bounded cohort decision."
       ],
       "boundedChange": "For the next 3 otherwise-qualified High-priority company-page posts after the August 19 Treasury reservation, keep the existing schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. Lead with the operating tension/decision or member/control problem in the first sentence, name the institution/event as evidence in the next sentence, and end with one concrete credit-union action.",
       "primaryMetric": "Median GA4 LinkedIn sessions per post attributed by utm_content. Target at least 2 sessions per experiment post, median Buffer reach of 12 or more, and median Buffer engagement rate of at least 5%.",
@@ -86,7 +86,7 @@
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: observation 1 is the August 21 NCUA board-meeting High post. For the next 2 otherwise-qualified High-priority posts, lead with the operating tension/decision before the named institution or event; preserve schedule, UTM, editorial and image guardrails."
+      "ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19: observation 1 is complete and below target at 6 Buffer impressions / 4 reach / 0% engagement -> 1 GA4 session / 0 engaged. For the next 2 otherwise-qualified High-priority posts, continue the treatment without changing schedule: lead with the operating tension/decision before the named institution or event and preserve UTM, editorial and image guardrails."
     ],
     "articleOpeningGuidance": [
       "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. The formal experiment is closed; normal editorial discretion and all sourcing/factual-nuance gates apply."
