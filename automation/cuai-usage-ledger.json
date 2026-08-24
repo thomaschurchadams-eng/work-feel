@@ -244,6 +244,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
       "summary": "Diagnosed two internal handoff/state failures rather than external outages. Buffer exactly matched the existing August 21 NCUA queue item and post ID and returned sentAt 2026-08-21T16:30:32.514Z plus the approved CreditUnionAI News company-page link with UTM tracking, so reconciled only that existing item in place and made no scheduler call. Also removed the stale three-Alert target from the newsroom runbook and made the authoritative CUAI Operating System policy explicit, preventing the repeated quota drift from re-entering through a second workflow reference. The August 24 publisher outcome is complete, the current article is HTTP 200, Production is READY with no runtime errors, and today's 12:30 p.m. ET LinkedIn reservation remains unique, UTM-tagged and not yet due. The recovery branch previews are READY. No credentials, schedules, destinations, editorial/source gates, extra content or social reservations were changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-24T12:08:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found the successful August 24 CUAI CEO run had refreshed its final management state only on reporting/cuai-ceo-2026-08-24-final, leaving the canonical automation/reports/cuai-ceo-latest.md on main stale at August 21 and omitting the current experiment/improvement state from the shared management surface.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"publicationLedgerChecks":2,"socialQueueChecks":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"searchConsoleEndpointQueries":1,"reportingBranchChecks":1,"previewDeploymentChecks":3,"recoveryPullRequestsCreated":1,"reportingStateFilesRecovered":3,"usageLedgerChanges":1,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
+      "summary": "Diagnosed a blocked internal reporting handoff rather than a production, publisher, analytics or social-delivery failure. The August 24 article outcome is complete and live, Production is READY with no runtime errors, GA4/Buffer/direct Search Console are HTTP 200/ok=true on the exact current Production commit, and today’s 12:30 p.m. ET company-page reservation remains unique, UTM-tagged and not yet due. The final CEO reporting branch was exactly current with main, all three branch previews were READY, and its changes were limited to the canonical CEO report, measured LinkedIn experiment state, and a bounded Alert-policy single-source audit. Recovered the handoff through PR #147 without touching content, credentials, schedules, destinations, editorial/source gates or the social queue. Root cause: the successful CEO run stopped after writing the final reporting branch and did not promote its canonical management-state updates to main. Durable prevention: a successful weekday CEO run should not be considered complete until the reporting branch is either merged to main or explicitly records a blocked merge outcome.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
