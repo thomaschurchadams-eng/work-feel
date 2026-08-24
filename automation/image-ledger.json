@@ -3,6 +3,34 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-small-business-lending-controls",
+      "articleUrl": "/insight-credit-union-ai-small-business-lending-controls.html",
+      "imagePath": "/assets/credit-union-ai-small-business-lending-controls.jpg",
+      "publishedAt": "2026-08-24T07:00:00-04:00",
+      "medium": "dimensional-3d",
+      "subject": "financial-object-study",
+      "composition": "single-object-negative-space",
+      "perspective": "overhead",
+      "palette": "amber-charcoal",
+      "lighting": "high-contrast-studio",
+      "texture": "polished-metal",
+      "scene": "modular-business-loan-file-with-seven-physical-control-tabs",
+      "conceptScore": 67.2,
+      "conceptAlternatives": [
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "score": 51.3
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "human-machine-handoff",
+          "score": 76.4,
+          "rejected": "invalid-composition"
+        }
+      ]
+    },
+    {
       "id": "ncua-federal-credit-union-board-meeting-schedule",
       "articleUrl": "/news/ncua-federal-credit-union-board-meeting-schedule.html",
       "imagePath": "/assets/ncua-federal-credit-union-board-meeting-schedule.jpg",

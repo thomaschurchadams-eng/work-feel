@@ -1,14 +1,74 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-21T07:00:00-04:00",
+  "lastStandardRun": "2026-08-24T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "NCUA Clears Eligible Federal Credit Unions to Cut Board Meetings to Six a Year",
-    "url": "https://creditunionainews.com/news/ncua-federal-credit-union-board-meeting-schedule.html",
-    "publishedAt": "2026-08-21T07:00:00-04:00",
-    "route": "news"
+    "title": "Seven Controls for AI in Credit Union Small-Business Lending",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-small-business-lending-controls.html",
+    "publishedAt": "2026-08-24T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-24",
+      "headline": "KeyPoint Credit Union Reports Agentic AI Contact-Center Results",
+      "reason": "vendor-controlled performance claims, including resolution and volume-reduction rates, without independent methodology or credit-union-owned production evidence"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "Desert Financial Reports 66% Indirect-Auto Funding Efficiency Gain",
+      "reason": "August 12 vendor press release resurfaced in the current feed; its material outcome claim remains vendor-controlled and outside the 72-hour event window"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "WestStar Credit Union Selects BOND.AI for Member Personalization",
+      "reason": "vendor selection without verified implementation results, control detail or independently supported member outcomes"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "Synthesis Launches CRE Lending Suite for Banks and Credit Unions",
+      "reason": "vendor product launch without a named credit-union deployment, independently verified operating result or authoritative new requirement"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "Granite State Credit Union Plans Digital-Banking Platform Upgrade",
+      "reason": "institutional maintenance notice without enough platform, control or implementation evidence for a distinct reported article"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "AI Vendor Concentration Raises Financial-Institution Resilience Questions",
+      "reason": "indirect secondary coverage with limited credit-union-specific evidence and no new sector operating requirement"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "Community-Bank Commentary Proposes Guardrails for Agentic AI",
+      "reason": "opinion and vendor commentary rather than a completed credit-union implementation or authoritative control change"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "Canadian Real-Time-Rail Rulebook Sets a Q4 Launch Path",
+      "reason": "material Canadian payments development with insufficient direct U.S. credit-union operating relevance for a full article"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "LAFCU Promotes an AI and Cybersecurity Workshop for Entrepreneurs",
+      "reason": "event promotion rather than a completed AI, security or small-business-services implementation"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "Credit Union Strategy Article Links AI Adoption to Member Expectations",
+      "reason": "useful strategy commentary but no distinct new implementation evidence, decision framework or source-backed operating change"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "CU*Answers Lists Sageworks and REPAY Integration Work",
+      "reason": "project-list update without enough implementation detail, outcome evidence or a completed material change for a reported article"
+    },
+    {
+      "date": "2026-08-24",
+      "headline": "Weekly Fintech Roundup Tracks Swift and Bank Platform Changes",
+      "reason": "multi-item secondary roundup with weak direct credit-union relevance and no single sufficiently developed operating thesis"
+    },
     {
       "date": "2026-08-21",
       "headline": "SBA Proposes a $5.031 Million Small-Business Threshold for Credit Unions",
@@ -1210,6 +1270,11 @@
     {
       "functionalArea": "lending-member-business-services",
       "opportunity": "Small-business lending and member-business-services AI implementation controls",
+      "priority": "completed-2026-08-24"
+    },
+    {
+      "functionalArea": "internal-audit-model-risk",
+      "opportunity": "An AI model-inventory, change-control and audit-evidence playbook for credit unions",
       "priority": "next"
     }
   ]

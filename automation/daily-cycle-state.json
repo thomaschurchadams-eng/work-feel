@@ -6,6 +6,112 @@
     "alerts": 3
   },
   "current": {
+    "date": "2026-08-24",
+    "fullArticleCount": 1,
+    "alertCount": 0,
+    "evaluatedCandidateCount": 13,
+    "beatsSearched": [
+      "lending-small-business",
+      "member-service",
+      "product-personalization",
+      "vendor-management",
+      "digital-banking-operations",
+      "payments-infrastructure",
+      "fraud-security",
+      "board-strategy"
+    ],
+    "publications": [
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "Seven Controls for AI in Credit Union Small-Business Lending",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-small-business-lending-controls.html",
+        "primaryFunctionalAudience": "Small-business lending and member-business-services leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-selective-library-pending-live-verification"
+      }
+    ],
+    "rejections": [
+      {
+        "title": "KeyPoint Credit Union Reports Agentic AI Contact-Center Results",
+        "reason": "vendor-controlled performance claims without independent methodology or credit-union-owned production evidence",
+        "primaryAudience": "member-service and contact-center leaders",
+        "secondaryAudiences": ["operations leaders", "technology leaders"]
+      },
+      {
+        "title": "Desert Financial Reports 66% Indirect-Auto Funding Efficiency Gain",
+        "reason": "vendor press release outside the event window with an uncorroborated material outcome claim",
+        "primaryAudience": "indirect-auto lending leaders",
+        "secondaryAudiences": ["operations leaders", "vendor-management teams"]
+      },
+      {
+        "title": "WestStar Credit Union Selects BOND.AI for Member Personalization",
+        "reason": "vendor selection without verified implementation results, control detail or independent member outcomes",
+        "primaryAudience": "digital product and member-experience leaders",
+        "secondaryAudiences": ["marketing leaders", "vendor-management teams"]
+      },
+      {
+        "title": "Synthesis Launches CRE Lending Suite for Banks and Credit Unions",
+        "reason": "vendor launch without a named credit-union deployment, independent result or authoritative new requirement",
+        "primaryAudience": "commercial-lending leaders",
+        "secondaryAudiences": ["operations leaders", "vendor-management teams"]
+      },
+      {
+        "title": "Granite State Credit Union Plans Digital-Banking Platform Upgrade",
+        "reason": "maintenance notice without enough platform, control or implementation evidence for reported coverage",
+        "primaryAudience": "digital-banking and operations leaders",
+        "secondaryAudiences": ["member-service leaders", "technology leaders"]
+      },
+      {
+        "title": "AI Vendor Concentration Raises Financial-Institution Resilience Questions",
+        "reason": "indirect secondary coverage with limited credit-union-specific evidence and no new operating requirement",
+        "primaryAudience": "vendor-risk leaders",
+        "secondaryAudiences": ["technology leaders", "executives"]
+      },
+      {
+        "title": "Community-Bank Commentary Proposes Guardrails for Agentic AI",
+        "reason": "opinion rather than a completed credit-union implementation or authoritative control change",
+        "primaryAudience": "AI governance leaders",
+        "secondaryAudiences": ["operations leaders", "risk leaders"]
+      },
+      {
+        "title": "Canadian Real-Time-Rail Rulebook Sets a Q4 Launch Path",
+        "reason": "material Canadian payments development with insufficient direct U.S. credit-union relevance",
+        "primaryAudience": "payments leaders",
+        "secondaryAudiences": ["operations leaders", "technology leaders"]
+      },
+      {
+        "title": "LAFCU Promotes an AI and Cybersecurity Workshop for Entrepreneurs",
+        "reason": "event promotion rather than a completed AI, security or small-business-services implementation",
+        "primaryAudience": "small-business services leaders",
+        "secondaryAudiences": ["marketing leaders", "cybersecurity leaders"]
+      },
+      {
+        "title": "Credit Union Strategy Article Links AI Adoption to Member Expectations",
+        "reason": "strategy commentary without distinct new implementation evidence or a source-backed operating change",
+        "primaryAudience": "boards and strategy leaders",
+        "secondaryAudiences": ["member-experience leaders", "technology leaders"]
+      },
+      {
+        "title": "CU*Answers Lists Sageworks and REPAY Integration Work",
+        "reason": "project-list update without enough implementation detail, outcome evidence or a completed material change",
+        "primaryAudience": "technology and operations leaders",
+        "secondaryAudiences": ["lending leaders", "payments leaders"]
+      },
+      {
+        "title": "Weekly Fintech Roundup Tracks Swift and Bank Platform Changes",
+        "reason": "secondary roundup with weak direct credit-union relevance and no sufficiently developed operating thesis",
+        "primaryAudience": "payments and fintech leaders",
+        "secondaryAudiences": ["technology leaders", "strategy leaders"]
+      }
+    ],
+    "status": "article-complete-pending-live-verification",
+    "activeExperimentContext": "The completed decision-first article learning was applied with normal editorial discretion: the opening states the operating decision early without forcing a fixed template. The active High-only LinkedIn hook experiment does not apply to this Library Insight.",
+    "nextCoverageGap": "AI model inventory, change control and audit evidence for internal-audit and model-risk teams",
+    "updatedAt": "2026-08-24T07:00:00-04:00"
+  },
+  "history": [
+    {
     "date": "2026-08-21",
     "fullArticleCount": 1,
     "alertCount": 0,
@@ -154,8 +260,7 @@
     "activeExperimentContext": "ACTIVE EXPERIMENT article-decision-first-opening-2026-08-18 applied as cohort article 3 of 3; the opening states the decision, relevance and immediate controls in the first 80-120 words. Selection, sourcing and factual nuance were unchanged. ACTIVE EXPERIMENT linkedin-operating-tension-hook-2026-08-19 reserved for the High-priority LinkedIn package after live verification.",
     "nextCoverageGap": "Small-business lending and member-business-services AI implementation controls",
     "updatedAt": "2026-08-21T07:00:00-04:00"
-  },
-  "history": [
+    },
     {
       "date": "2026-08-20",
       "fullArticleCount": 1,
