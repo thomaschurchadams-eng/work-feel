@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-24T11:03:00-04:00",
+  "updatedAt": "2026-08-24T11:05:36-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -9,16 +9,7 @@
       "proposedChange": "Restore /assets/site.js as a backward-compatible loader for the canonical /assets/app.js bundle and make the analytics validator fail when a new article references a missing shared app/site script.",
       "expectedBenefit": "Restore custom editorial measurement and shared article behavior on already-published pages without rewriting them, while preventing the same broken-asset class from passing future publication validation.",
       "risk": "low",
-      "validation": [
-        "node syntax checks passed for the compatibility loader and validator",
-        "Vercel preview reached READY",
-        "preview /assets/site.js returned HTTP 200 and loaded /assets/app.js",
-        "preview /assets/app.js returned HTTP 200",
-        "PR #131 diff was reviewed and mergeability verified",
-        "production deployment reached READY on commit 833bddc9cb0bc1b7555d5cb40da41c9566147edc",
-        "production /assets/site.js returned HTTP 200",
-        "GA4 and Buffer reporting endpoints remained HTTP 200/ok=true after deployment"
-      ],
+      "validation": ["node syntax checks passed for the compatibility loader and validator","Vercel preview reached READY","preview /assets/site.js returned HTTP 200 and loaded /assets/app.js","preview /assets/app.js returned HTTP 200","PR #131 diff was reviewed and mergeability verified","production deployment reached READY on commit 833bddc9cb0bc1b7555d5cb40da41c9566147edc","production /assets/site.js returned HTTP 200","GA4 and Buffer reporting endpoints remained HTTP 200/ok=true after deployment"],
       "status": "completed",
       "result": "PR #131 merged. Historical overall GA4 traffic/acquisition remains usable, but CUAI custom article-event history on pages that referenced the missing script is quality-labeled as incomplete before the repair.",
       "rollback": "Revert PR #131 or remove assets/site.js and revert the validator's shared-script existence check."
@@ -29,17 +20,7 @@
       "proposedChange": "Use the isolated direct Search Console API read path for aggregate search-performance reporting instead of retrying incompatible GA4 Core Reporting dimension/metric combinations.",
       "expectedBenefit": "Restore search-performance reporting without risking the healthy core GA4 feed or weakening credential boundaries.",
       "risk": "low-to-medium",
-      "validation": [
-        "fresh feature branch was based on current main",
-        "Vercel Preview reached READY",
-        "Preview returned HTTP 200 with ok=true and source=google-search-console-api",
-        "Preview exposed only aggregate 7-day and 28-day Search Console metrics",
-        "PR #136 changed only api/search-console-metrics.js and reused the existing read-only service account",
-        "PR #136 merged as commit 50255d19520505c4fe8cf50833f48323946f656f",
-        "resulting Production deployment reached READY",
-        "Production /api/search-console-metrics returned HTTP 200/ok=true with permissionLevel siteFullUser and aggregate 7-day/28-day data",
-        "no production runtime errors were present in the subsequent 24-hour check"
-      ],
+      "validation": ["fresh feature branch was based on current main","Vercel Preview reached READY","Preview returned HTTP 200 with ok=true and source=google-search-console-api","Preview exposed only aggregate 7-day and 28-day Search Console metrics","PR #136 changed only api/search-console-metrics.js and reused the existing read-only service account","PR #136 merged as commit 50255d19520505c4fe8cf50833f48323946f656f","resulting Production deployment reached READY","Production /api/search-console-metrics returned HTTP 200/ok=true with permissionLevel siteFullUser and aggregate 7-day/28-day data","no production runtime errors were present in the subsequent 24-hour check"],
       "status": "completed",
       "result": "PR #136 merged and the direct Search Console endpoint is now validated in Production. The previous Search Console measurement blocker is cleared; core GA4 remains separate and healthy.",
       "rollback": "Revert PR #136 to remove the direct Search Console endpoint; core GA4 collection and reporting are independent and should remain unchanged."
@@ -50,14 +31,7 @@
       "proposedChange": "Run a bounded source-health maintenance refresh against the existing registry and the primary sources used in the most recent Aug. 11-18 newsroom cycle; update statuses only from verified checks.",
       "expectedBenefit": "Reduce stale-source and broken-link risk without adding work to the daily article publisher.",
       "risk": "low",
-      "validation": [
-        "rechecked all 28 existing source-registry URLs using direct retrieval and authoritative search fallback where a direct fetch was transiently unavailable",
-        "confirmed 23 registry URLs healthy, three redirected to current canonical locations, and two temporarily unavailable without evidence of removal or contradiction",
-        "verified 15 current primary official sources used across the Aug. 11-18 newsroom cycle",
-        "preserved temporarily unavailable versus removed/contradicted distinctions",
-        "made no editorial, sourcing-gate or published-article changes based solely on temporary source availability",
-        "recorded canonical redirect targets for NCR Voyix, the NCUA AI resource path and Mastercard News"
-      ],
+      "validation": ["rechecked all 28 existing source-registry URLs using direct retrieval and authoritative search fallback where a direct fetch was transiently unavailable","confirmed 23 registry URLs healthy, three redirected to current canonical locations, and two temporarily unavailable without evidence of removal or contradiction","verified 15 current primary official sources used across the Aug. 11-18 newsroom cycle","preserved temporarily unavailable versus removed/contradicted distinctions","made no editorial, sourcing-gate or published-article changes based solely on temporary source availability","recorded canonical redirect targets for NCR Voyix, the NCUA AI resource path and Mastercard News"],
       "status": "completed",
       "owner": "reliability/source-health maintenance",
       "deadline": "2026-08-18T17:00:00-04:00",
@@ -71,14 +45,7 @@
       "proposedChange": "Make the existing operating/reliability review reconcile an exact Buffer-sent item to the existing social-queue item in place, without creating a replacement post or calling the scheduler.",
       "expectedBenefit": "Keep the internal social handoff ledger consistent with authoritative delivery evidence, eliminate repeated manual interpretation, and reduce false recovery/duplicate risk.",
       "risk": "low",
-      "validation": [
-        "new policy requires exact queue-item and postId match plus non-null Buffer sentAt",
-        "reconciliation is idempotent and preserves immutable UTM, schedule, post, channel and image fields",
-        "policy explicitly forbids scheduler calls, replacement items, destination changes, credentials or cadence changes",
-        "live Buffer metrics were re-read and exact sent evidence matched 12 tracked repository items",
-        "the Aug. 19 Treasury reservation remained scheduled and untouched",
-        "the legacy July 22 EricaAssist baseline remained untouched because it uses the legacy bufferPostId schema rather than the exact postId rule"
-      ],
+      "validation": ["new policy requires exact queue-item and postId match plus non-null Buffer sentAt","reconciliation is idempotent and preserves immutable UTM, schedule, post, channel and image fields","policy explicitly forbids scheduler calls, replacement items, destination changes, credentials or cadence changes","live Buffer metrics were re-read and exact sent evidence matched 12 tracked repository items","the Aug. 19 Treasury reservation remained scheduled and untouched","the legacy July 22 EricaAssist baseline remained untouched because it uses the legacy bufferPostId schema rather than the exact postId rule"],
       "status": "completed",
       "owner": "CUAI Operating System / Reliability Watch",
       "deadline": "2026-08-19T10:00:00-04:00",
@@ -91,12 +58,7 @@
       "proposedChange": "During each CEO run, reconcile active experiment cohort counts and status against current daily-cycle and coverage ledgers before updating growth strategy and the rolling CEO report. Correct the August 20 strategy state to cohort 2 of 3 with one qualifying observation remaining.",
       "expectedBenefit": "Prevent conflicting agent instructions, accidental experiment overrun and management decisions based on stale cohort counts without adding a new persistent workflow.",
       "risk": "low",
-      "validation": [
-        "automation/daily-cycle-state.json and automation/coverage-ledger.json independently agree that the August 20 article is cohort observation 2 of 3",
-        "growth strategy was updated to cohort 2 of 3 with exactly one qualifying article remaining",
-        "the two-experiment maximum, sourcing standards, article selection, LinkedIn schedule, UTMs, credentials and external authority were unchanged",
-        "the correction is reporting/strategy state only and is reversible without affecting any published article or social post"
-      ],
+      "validation": ["automation/daily-cycle-state.json and automation/coverage-ledger.json independently agree that the August 20 article is cohort observation 2 of 3","growth strategy was updated to cohort 2 of 3 with exactly one qualifying article remaining","the two-experiment maximum, sourcing standards, article selection, LinkedIn schedule, UTMs, credentials and external authority were unchanged","the correction is reporting/strategy state only and is reversible without affecting any published article or social post"],
       "status": "completed",
       "result": "The August 20 CEO cycle synchronized the decision-first experiment state and made cross-ledger reconciliation an explicit CEO reporting discipline. No production behavior or external action changed.",
       "rollback": "Revert only the growth-strategy, improvement-ledger and CEO-report state wording if the underlying daily-cycle or coverage evidence is later found incorrect; published content and scheduled social items are unaffected."
@@ -107,13 +69,7 @@
       "proposedChange": "Add a prospective mission-fit gate to the daily article policy and publishing rules: every full article must have a substantive, source-supported AI or technology operating implication; do not manufacture an AI angle; preserve broad functional coverage through those lenses. Grandfather the already-published and already-scheduled August 21 package rather than rewriting, canceling or duplicating it.",
       "expectedBenefit": "Reduce brand dilution and opportunity cost from general-industry stories while keeping CUAI useful to boards, lending, payments, fraud, operations, member service, marketing, HR, finance and other leaders through an explicit AI/technology lens.",
       "risk": "low-to-medium",
-      "validation": [
-        "publishing-rules.json adds an explicit missionFit rule and a missing-ai-or-technology-operating-implication hard stop without weakening any source, confidence, originality or quality gate",
-        "the authoritative daily article policy adds the same prospective mission-fit requirement and explicitly prohibits manufacturing an AI angle",
-        "the existing August 21 article and scheduled company-page item are grandfathered and left untouched",
-        "fixed LinkedIn cadence, UTMs, destinations, credentials, schedules and external authority are unchanged",
-        "Vercel Preview reached READY on the branch after both policy/config changes"
-      ],
+      "validation": ["publishing-rules.json adds an explicit missionFit rule and a missing-ai-or-technology-operating-implication hard stop without weakening any source, confidence, originality or quality gate","the authoritative daily article policy adds the same prospective mission-fit requirement and explicitly prohibits manufacturing an AI angle","the existing August 21 article and scheduled company-page item are grandfathered and left untouched","fixed LinkedIn cadence, UTMs, destinations, credentials, schedules and external authority are unchanged","Vercel Preview reached READY on the branch after both policy/config changes"],
       "status": "completed",
       "result": "The next article cycle must be substantively AI/technology relevant, not merely credit-union relevant. The change strengthens mission alignment while preserving current publication reliability and the existing August 21 scheduled handoff.",
       "rollback": "Revert the August 21 mission-fit edits to publishing-rules.json and publish-cuai-daily-article.md. The already-published content, social queue and analytics systems are unaffected."
@@ -124,20 +80,25 @@
       "proposedChange": "Open a 14-day search-compounding experiment: add contextual reciprocal internal links among the proven OSFI/RBFCU/Velera cluster and use search-supported adjacent themes only as a tie-breaker when multiple future stories independently satisfy the same editorial bar. Preserve broad coverage and queue snippet/title work only where evidence and editorial clarity support it.",
       "expectedBenefit": "Turn emerging organic search visibility into a compounding qualified-acquisition channel without sacrificing editorial independence, topic diversity or reader quality.",
       "risk": "low",
-      "validation": [
-        "feature branch growth/search-compounding-2026-08-24 was created from current main",
-        "automation/growth-strategy.json contains exactly two active experiments and a dated September 7 review/rollback condition",
-        "Velera now links contextually to the existing RBFCU and OSFI coverage without changing the article's factual claims, title, sources or canonical URL",
-        "OSFI now links contextually to the existing Velera and RBFCU coverage without changing the article's factual claims, title, sources or canonical URL",
-        "Vercel Preview is READY and both treatment pages return HTTP 200",
-        "Preview growth-strategy.json returns HTTP 200 as valid application/json",
-        "a minor copied SVG path regression on the Velera Preview was detected before merge and corrected on the feature branch"
-      ],
+      "validation": ["feature branch growth/search-compounding-2026-08-24 was created from current main","automation/growth-strategy.json contains exactly two active experiments and a dated September 7 review/rollback condition","Velera now links contextually to the existing RBFCU and OSFI coverage without changing the article's factual claims, title, sources or canonical URL","OSFI now links contextually to the existing Velera and RBFCU coverage without changing the article's factual claims, title, sources or canonical URL","Vercel Preview is READY and both treatment pages return HTTP 200","Preview growth-strategy.json returns HTTP 200 as valid application/json","a minor copied SVG path regression on the Velera Preview was detected before merge and corrected on the feature branch"],
       "status": "active",
       "owner": "CUAI CEO / Growth",
       "deadline": "2026-09-07T17:00:00-04:00",
       "result": "Experiment opened; outcome pending 14 days of post-change Search Console and GA4 evidence. Baseline is 5 combined rolling-7-day clicks across OSFI/RBFCU/Velera and 6 sitewide Google-organic sessions.",
       "rollback": "Revert the search-compounding feature change: remove the added contextual links and search-supported tie-breaker. No schedule, credentials, published factual claims or source policy needs to change."
+    },
+    {
+      "id": "alert-policy-single-source-2026-08-24",
+      "evidence": "Three related reliability recoveries were required across PRs #143, #144 and #145 because Alert quantity and cycle semantics were duplicated across article-cycle completion rules, machine-readable publishing rules and the newsroom runbook. The authoritative CUAI Operating System now says at most one genuinely new qualified Alert per weekday with no quota or minimum target, and those primary surfaces are aligned. However automation/daily-cycle-state.json still contains legacy top-level dailyTargets.alerts=3 metadata. Repository search found dailyTargets only in that state file, but an external consumer cannot be excluded from repository evidence alone.",
+      "proposedChange": "Perform a bounded schema-consumer audit, then remove or explicitly deprecate the remaining numeric Alert target and add a consistency check that prevents runbooks, rules or state metadata from reintroducing an Alert quota that conflicts with the authoritative operating-system policy.",
+      "expectedBenefit": "Eliminate repeated manual policy-drift recovery, reduce conflicting agent instructions and keep Alert quantity semantics single-sourced without changing the actual Alert schedule or authority.",
+      "risk": "low-to-medium",
+      "validation": ["PR #143 separated article-cycle completion from the Alert cycle","PR #144 aligned machine-readable publishing rules to max one/no quota","PR #145 aligned the newsroom runbook to the same authoritative operating policy","current Production is READY and Vercel reports no runtime errors after PR #145","repository search on current main found dailyTargets only in automation/daily-cycle-state.json","the remaining alerts=3 field is already treated as non-authoritative legacy metadata rather than an instruction"],
+      "status": "queued",
+      "owner": "Reliability Watch / CUAI Operating System",
+      "deadline": "2026-08-26T12:00:00-04:00",
+      "result": "Not rewritten in this CEO run because the remaining state field may have an external consumer not visible in repository search. Current authoritative policy is aligned and production is healthy; the safe next step is a bounded consumer audit plus validator/single-source cleanup rather than another blind schema edit.",
+      "rollback": "If a later cleanup changes the state schema and a hidden consumer breaks, restore the legacy field while retaining the authoritative no-quota policy and consistency validator. No published content, social post or external Alert action is affected."
     }
   ]
 }
