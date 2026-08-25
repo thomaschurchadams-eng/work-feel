@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-24T11:05:36-04:00",
+  "updatedAt": "2026-08-25T09:46:33-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, bounded change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -99,6 +99,19 @@
       "deadline": "2026-08-26T12:00:00-04:00",
       "result": "Not rewritten in this CEO run because the remaining state field may have an external consumer not visible in repository search. Current authoritative policy is aligned and production is healthy; the safe next step is a bounded consumer audit plus validator/single-source cleanup rather than another blind schema edit.",
       "rollback": "If a later cleanup changes the state schema and a hidden consumer breaks, restore the legacy field while retaining the authoritative no-quota policy and consistency validator. No published content, social post or external Alert action is affected."
+    },
+    {
+      "id": "publisher-outcome-observability-2026-08-25",
+      "evidence": "The scheduled Publish CUAI Daily Article task recorded a run at 2026-08-25T12:13:46Z, but current main still contained the August 24 daily-cycle state and no August 25 commit, article, or non-publication/blocker outcome. The Reliability Watch ran earlier at 08:03 ET and therefore could not validate the post-run outcome. Existing policy explicitly allowed a non-publication result to live only in the Cloud task result, which is not available as authoritative input to the CEO or Reliability Watch. Repository evidence therefore could not distinguish a valid quality-gated no-publication from a failed/missing run.",
+      "proposedChange": "Require each scheduled article cycle to persist exactly one dated machine-readable outcome in automation/daily-cycle-state.json: normal package state when an article publishes, a state-only no-article-published outcome with candidate/beat/rejection evidence when the pool is exhausted, or a blocked outcome with the exact blocker when GitHub remains writable.",
+      "expectedBenefit": "Make every publisher cycle auditable to the CEO and Reliability Watch, eliminate ambiguous missed-run diagnoses, and allow reliability recovery to distinguish legitimate editorial non-publication from operational failure without adding external authority or content volume pressure.",
+      "risk": "low",
+      "validation": ["feature branch ceo/publisher-outcome-observability-2026-08-25 was created from current main","final change was limited to the authoritative publisher policy and autonomous-newsroom runbook","Vercel Preview reached READY","Preview publisher policy returned HTTP 200 and contained the machine-observable outcome contract","Preview newsroom runbook returned HTTP 200 with aligned state and failure behavior","PR #149 was mergeable with successful Vercel status","PR #149 merged as commit af53556c3195034c1e32a832a3b25d92a128b2ae","no Cloud schedule, model, permission, credential, destination, cadence, sourcing gate, mission-fit gate, or external publishing authority changed"],
+      "status": "completed",
+      "owner": "CUAI CEO / Reliability Watch",
+      "deadline": "2026-08-25T12:00:00-04:00",
+      "result": "PR #149 is merged. Beginning with the next scheduled article cycle, a valid non-publication or material pre-publication blocker must be visible in canonical repository state instead of existing only in the task result. The August 25 historical run remains outcome-unknown; the fix is prospective and deliberately does not invent candidate or blocker data that was not recorded.",
+      "rollback": "Revert PR #149 to restore the prior task-result-only non-publication behavior. No published article, social post, schedule, credential, or external destination is affected."
     }
   ]
 }
