@@ -25,6 +25,7 @@ For Alert quantity, cadence and task authority, `automation/scheduled-tasks/cuai
 5. Produce one complete article package only: article, one passing 1200×630 image, metadata, byline, sources, internal links, correct section index, homepage placement, sitemaps, coverage ledger, image ledger, newsroom state, daily-cycle state and social queue when appropriate.
 6. Run only the validators relevant to the article package, including analytics and SEO. Do not run unrelated Intelligence, corrections, retention, newsletter or archive-migration work.
 7. Re-read `main` immediately before writing, preserve concurrent changes, commit the complete package directly to `main`, confirm the Vercel deployment is READY and verify the live article, image, listing and homepage.
+8. Every scheduled article cycle must leave one dated machine-observable outcome in `automation/daily-cycle-state.json`. A published article records the normal package state. If nothing qualifies, persist `fullArticleCount: 0`, the candidate/beat evidence available, rejection/evidence-gap detail and a `no-article-published` status. If a material pre-publication blocker occurs and GitHub remains writable, persist a `blocked` status with the exact blocker. This outcome-only state is reliability evidence, not editorial content.
 
 ## Alert cycle
 
@@ -45,11 +46,13 @@ Maintenance work is separate from publishing. Growth review, source health, corr
 - Do not schedule article, Alert or feature publishers for the same start time.
 - `daily-cycle-state.json` is a reporting ledger, not a lock. When the date changes, move the prior `current` object to `history` and initialize the new date before recording output.
 - Re-read `main` immediately before every write. If another commit landed during the run, merge its current content rather than overwriting it.
-- Use one commit per completed package. Do not create repeated scan-only commits when nothing publishes; record nonpublication in the scheduled-run result instead.
+- Use one commit per completed article package. Do not create repeated scan-only content commits when nothing publishes. A single state-only commit recording a scheduled cycle's `no-article-published` or `blocked` outcome is required machine-observable reliability state and is not considered scan noise.
 
 ## Failure behavior
 
-Continue to the next candidate after a rejection, but keep the scope bounded. An article cycle may stop after the six-candidate, four-beat pool and fallback formats are exhausted. An Alert cycle may stop when no qualifying Alert exists. Report the exact blocker for repeated failures, permission errors, validation failures or production breakage. Do not request routine editorial approval.
+Continue to the next candidate after a rejection, but keep the scope bounded. An article cycle may stop after the six-candidate, four-beat pool and fallback formats are exhausted. When it stops without publication, persist the dated non-publication evidence in `daily-cycle-state.json` before completion. If a material blocker stops the article cycle after the policy is readable, persist the blocker there when GitHub remains writable. An Alert cycle may stop when no qualifying Alert exists. Report the exact blocker for repeated failures, permission errors, validation failures or production breakage. Do not request routine editorial approval.
+
+If GitHub access itself prevents the required outcome write, report that exact GitHub failure instead of fabricating state.
 
 ## Analytics and SEO
 
