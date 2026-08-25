@@ -25,7 +25,7 @@ Reliability, source quality, mission fit, and usefulness outrank volume.
    - **Standard** — useful, credible article that serves the portfolio but is not a must-know event. Publish to site when it passes all gates; normally do not promote on LinkedIn.
    - **Library** — durable, evergreen, multi-source guide, case study, or explainer. Use to strengthen the evergreen backlog; consider for LinkedIn only when it passes the selective Library gate below.
 6. If no current-event candidate qualifies, use the approved content-portfolio fallback: select the strongest unserved **Library** topic from the evergreen backlog, then a durable multi-source Insight, credit-union case study, or data-led explainer. The fallback must still pass the AI/technology mission-fit gate. Do not lower standards merely to fill a daily slot.
-7. If nothing clears the evidence, mission-fit, and quality gates, do not publish. Record the non-publication result in the Cloud task outcome.
+7. If nothing clears the evidence, mission-fit, and quality gates, do not publish. Record the non-publication result as the machine-observable outcome required below.
 
 ## Article package and production safeguards
 
@@ -37,6 +37,18 @@ For one approved article only:
 - Use one atomic commit for the complete article package. Do not create scan-only commits.
 - Run all applicable validation and production checks. Verify the production deployment is ready and the live article, image, listing, and any homepage placement render correctly.
 - Never publish unsupported claims, invented quotes, implied partnerships, fabricated performance results, or stale facts presented as current.
+
+## Machine-observable run outcome
+
+Every scheduled weekday article cycle must leave exactly one dated, machine-readable outcome in `automation/daily-cycle-state.json` so the CEO and Reliability Watch can distinguish a valid non-publication from a failed or missing run.
+
+- If an article publishes, the normal article package must update the state as it does today.
+- If no article publishes after the qualified pool and fallbacks are exhausted, initialize or update the current date with `fullArticleCount: 0`, a status equivalent to `no-article-published`, the evaluated candidate count, beats searched, rejection reasons when available, and the exact evidence/mission-fit/quality gap. Commit that state-only outcome. This is required reliability state, not a scan-only content commit.
+- If the run reaches a material pre-publication blocker after this policy is readable, persist a status equivalent to `blocked` with the exact blocker and any completed search/evaluation evidence before stopping, when GitHub writing itself is still available.
+- If GitHub read/write access is itself the blocker, do not fabricate state; report the exact GitHub blocker in the task result.
+- A no-publication or blocked outcome must not create an article, Alert, social reservation, scheduler call, or unrelated maintenance change.
+
+Do not consider the scheduled article cycle complete until either the published article package or the no-publication/blocked state outcome is persisted to the canonical repository path, except when GitHub access itself prevents that persistence.
 
 ## Selective LinkedIn distribution
 
@@ -99,4 +111,4 @@ Once the article package and any qualifying LinkedIn distribution step are compl
 
 The August 21, 2026 NCUA board-meeting article and its already-created company-page reservation predate this mission-fit clarification. Do not delete, rewrite, duplicate, cancel, or reschedule that published/scheduled package solely because of this policy clarification. Apply the strengthened mission-fit gate prospectively beginning with the next article cycle.
 
-The Cloud task must finish with a concise operational record: published or not published, classification, live URL if published, validation/deployment status, LinkedIn decision and scheduling status when applicable, any recovered missed High article, and any blocker.
+The Cloud task must finish with a concise operational record: published or not published, classification, live URL if published, validation/deployment status, LinkedIn decision and scheduling status when applicable, any recovered missed High article, and any blocker. The same outcome must also be represented in the canonical repository state under the machine-observable outcome rule above unless GitHub access itself is unavailable.
