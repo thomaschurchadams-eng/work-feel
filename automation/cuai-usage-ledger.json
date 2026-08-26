@@ -288,6 +288,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
       "summary": "Confirmed the August 26 publisher outcome is complete and machine-observable: 12 candidates across 8 beats produced the Library Insight 'An AI Inventory and Change-Control Playbook for Credit Unions,' which is live and selectively scheduled for the CreditUnionAI News company page at 11:30 a.m. ET with exact UTMs. Resolved current Production, retrieved and revalidated GA4/Buffer/direct Search Console before and after the low-risk reliability merge, and confirmed no Vercel runtime errors. Seven-day GA4 is 33 active users/36 sessions/7 engaged sessions versus 164/220/76 over 28 days; Google organic remains the strongest meaningful acquisition channel at 6 sessions/4 engaged/66.7%, while LinkedIn has 82 Buffer impressions/52 reach but only 3 GA4 sessions and 0 engaged sessions. Direct Search Console is 494 impressions/6 clicks/1.21% CTR over seven days versus 2,616/20/0.76% over 28 days; the active OSFI/RBFCU/Velera cluster is at 4 clicks during the early post-change period. Kept both active growth experiments unchanged. Completed a durable prevention step for the repeated Alert-quota policy-drift class through PR #151: a compatibility-safe validator now enforces max-one/no-quota semantics across authoritative policy surfaces while preserving the legacy daily-cycle alert counter as non-authoritative metadata for backward compatibility. Refreshed the canonical CEO report and workload ledger; no credential, schedule, destination, editorial gate or external authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-08-26T12:23:30-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability review found the August 26 AI-inventory LinkedIn item had sent successfully in Buffer at the fixed 11:30 a.m. ET slot while automation/social-queue.json on main still retained status scheduled without the authoritative sent timestamp or LinkedIn URL.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"socialLedgerItemsReconciled":1,"recoveryBranchesReused":1,"previewDeploymentChecks":1,"usageLedgerChanges":1,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
+      "summary": "Diagnosed repository delivery-state lag after an otherwise healthy asynchronous Buffer send, not an external posting failure. Buffer exactly matched the existing August 26 AI-inventory queue item and post ID and returned sentAt 2026-08-26T15:30:34.036Z, the approved CreditUnionAI News company-page link and confirmed sent-post UTM tracking. Reconciled only that existing item in place to sent with the authoritative sentAt/externalLink fields, reusing the already-created purpose-matched recovery branch; made no scheduler call, replacement post, UTM change, destination change, cadence change, credential action or editorial change. The August 26 publisher outcome is complete and machine-observable, current Production was READY with no runtime errors, and the recovery Preview was READY with its Buffer endpoint returning HTTP 200/ok=true for the exact sent item. The existing exact-match sent-state reconciliation rule remains the durable prevention mechanism.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
