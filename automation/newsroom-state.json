@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-24T07:00:00-04:00",
+  "lastStandardRun": "2026-08-26T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Seven Controls for AI in Credit Union Small-Business Lending",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-small-business-lending-controls.html",
-    "publishedAt": "2026-08-24T07:00:00-04:00",
+    "title": "An AI Inventory and Change-Control Playbook for Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-inventory-change-control.html",
+    "publishedAt": "2026-08-26T07:00:00-04:00",
     "route": "insights"
   },
   "failedCandidates": [
@@ -1275,6 +1275,11 @@
     {
       "functionalArea": "internal-audit-model-risk",
       "opportunity": "An AI model-inventory, change-control and audit-evidence playbook for credit unions",
+      "priority": "completed-2026-08-26"
+    },
+    {
+      "functionalArea": "operations-contact-center",
+      "opportunity": "A source-backed AI quality-assurance and knowledge-change playbook for contact-center leaders",
       "priority": "next"
     }
   ]

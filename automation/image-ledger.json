@@ -3,6 +3,33 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-inventory-change-control",
+      "articleUrl": "/insight-credit-union-ai-inventory-change-control.html",
+      "imagePath": "/assets/credit-union-ai-inventory-change-control.jpg",
+      "publishedAt": "2026-08-26T07:00:00-04:00",
+      "medium": "cinematic-conceptual",
+      "subject": "architecture-and-infrastructure",
+      "composition": "diagonal-motion",
+      "perspective": "low-angle",
+      "palette": "terracotta-sky",
+      "lighting": "diffused-overcast",
+      "texture": "fabric-and-wood",
+      "scene": "modular-ai-system-catalog-with-versioned-components-moving-through-a-control-gate",
+      "conceptScore": 82.1,
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "abstract-data-system",
+          "score": 66.6
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "score": 61.9
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-small-business-lending-controls",
       "articleUrl": "/insight-credit-union-ai-small-business-lending-controls.html",
       "imagePath": "/assets/credit-union-ai-small-business-lending-controls.jpg",

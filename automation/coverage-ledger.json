@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-inventory-change-control",
+      "title": "An AI Inventory and Change-Control Playbook for Credit Unions",
+      "url": "/insight-credit-union-ai-inventory-change-control.html",
+      "publishedAt": "2026-08-26T07:00:00-04:00",
+      "section": "insights",
+      "beat": "internal-audit-model-risk",
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "vendor-management",
+        "board-strategy"
+      ],
+      "technologies": [
+        "regtech-monitoring",
+        "data-decisioning"
+      ],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "Internal-audit and model-risk leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "technology and data leaders",
+        "vendor-management teams",
+        "executives and board leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-selective-library-pending-live-verification",
+      "activeExperimentContext": "The search-supported cluster experiment informed internal links to AI governance and vendor-control coverage without changing selection, sourcing or factual nuance. The High-only LinkedIn hook experiment does not apply to this Library Insight.",
+      "internalLinkTargets": [
+        "/insight-ai-already-in-use.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/news/credit-union-board-ai-risk-oversight.html"
+      ],
+      "sourceTier": 1,
+      "score": 80.4
+    },
+    {
       "id": "credit-union-ai-small-business-lending-controls",
       "title": "Seven Controls for AI in Credit Union Small-Business Lending",
       "url": "/insight-credit-union-ai-small-business-lending-controls.html",
