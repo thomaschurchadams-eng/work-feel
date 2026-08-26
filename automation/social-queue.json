@@ -11,11 +11,21 @@
       "format": "executive-takeaway",
       "copy": "An AI system can change materially without changing its model name. Internal-audit and model-risk leaders should inventory the full production configuration—model, prompts, knowledge, data, integrations and permissions—and require one traceable file for tests, approvals, monitoring and rollback before a consequential change goes live. https://creditunionainews.com/insight-credit-union-ai-inventory-change-control.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-credit-union-ai-inventory-change-control-2026-08-26",
       "scheduledFor": "2026-08-26T11:30:00-04:00",
-      "status": "queued",
+      "status": "scheduled",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-08-26T07:27:32-04:00",
       "imageUrl": "https://creditunionainews.com/assets/credit-union-ai-inventory-change-control.jpg",
-      "imageAlt": "Terracotta and pale-blue AI system modules move through a controlled archival gate into an organized evidence file"
+      "imageAlt": "Terracotta and pale-blue AI system modules move through a controlled archival gate into an organized evidence file",
+      "postId": "6a8ecdee499d620d471c0d97",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "channelName": "CreditUnionAI News",
+      "scheduledAt": "2026-08-26T07:28:46-04:00",
+      "bufferDueAt": "2026-08-26T15:30:00.000Z",
+      "lastAttemptAt": "2026-08-26T07:28:46-04:00",
+      "lastResult": "created",
+      "duplicate": false,
+      "imageAttached": true,
+      "imageMimeType": "image/jpeg"
     },
     {
       "id": "linkedin-credit-union-ai-small-business-lending-controls-2026-08-24",
