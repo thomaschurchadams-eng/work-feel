@@ -1,14 +1,74 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-26T07:00:00-04:00",
+  "lastStandardRun": "2026-08-27T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "An AI Inventory and Change-Control Playbook for Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-inventory-change-control.html",
-    "publishedAt": "2026-08-26T07:00:00-04:00",
-    "route": "insights"
+    "title": "Orion Financial Connects Digital Banking and Lending on Narmi",
+    "url": "https://creditunionainews.com/news/orion-financial-embedded-digital-lending.html",
+    "publishedAt": "2026-08-27T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-08-27",
+      "headline": "MDT Partners with OnTrac AI on Credit-Union AI Readiness",
+      "reason": "consulting partnership launch without implementation outcomes and with substantial overlap to recent AI governance, business-case and change-control coverage"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Vancity Extends Its JUDI.AI Small-Business Lending Contract",
+      "reason": "vendor-announced renewal without current production measures or independent outcome evidence, overlapping the August 24 lending-control guide"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Arise Financial Discusses AI Back-Office Automation",
+      "reason": "current podcast about an older deployment without a fresh institution-owned evidence package or new operating change"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Anthropic Expands Access to Advanced Cybersecurity Capabilities",
+      "reason": "general AI-security development without a verified credit-union deployment, financial-sector requirement or institution-specific control decision"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "CISA Publishes Its Weekly Vulnerability Summary",
+      "reason": "broad vulnerability inventory without one new financial-sector or credit-union-specific threat supporting a distinct full-article thesis"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Alkami Reports Credit-Union Growth Benchmarks from FI Navigator",
+      "reason": "vendor-sponsored proprietary benchmark claims without enough public methodology for independent coverage"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Credit Union Trade Group Calls for BSA Modernization",
+      "reason": "important advocacy and workload evidence, but no adopted requirement and only an incidental AI or technology operating connection"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Stablecoin Card Spending Forecast to Reach $50 Billion",
+      "reason": "vendor forecast without transparent methodology, a direct credit-union role or a new implementation requirement"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Century Federal Credit Union Launches a New Website",
+      "reason": "member-facing technology launch with limited detail and no sufficiently distinct integration, control or outcome evidence"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Gulf Winds Credit Union Pursues Bank Acquisition and Rebrand",
+      "reason": "material M&A development whose named technology partner does not create a substantive new AI or technology operating event"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "Report Says Credit-Union Chatbot Adoption Reached 46 Percent",
+      "reason": "secondary summary of proprietary findings without accessible methodology, institution-level outcomes or a discrete current implementation"
+    },
+    {
+      "date": "2026-08-27",
+      "headline": "ACUMA Lists Partner Expectations During a Technology Transition",
+      "reason": "useful durable advice but not a discrete event, overlapping recent vendor-exit and change-control coverage"
+    },
     {
       "date": "2026-08-24",
       "headline": "KeyPoint Credit Union Reports Agentic AI Contact-Center Results",

@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "orion-financial-embedded-digital-lending",
+      "title": "Orion Financial Connects Digital Banking and Lending on Narmi",
+      "url": "/news/orion-financial-embedded-digital-lending.html",
+      "publishedAt": "2026-08-27T07:00:00-04:00",
+      "section": "news",
+      "beat": "lending-digital-experience",
+      "functions": [
+        "lending-collections",
+        "member-service",
+        "operations",
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "vendor-management"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "core-api-cloud"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Digital lending and member-experience leaders",
+      "secondaryAudiences": [
+        "lending operations leaders",
+        "risk and compliance leaders",
+        "technology and data leaders",
+        "vendor-management teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "The search-supported cluster experiment informed links to lending controls and change-control evidence without changing selection, sourcing or factual nuance. The High-only LinkedIn operating-tension experiment does not apply to this Standard article.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-small-business-lending-controls.html",
+        "/insight-credit-union-ai-inventory-change-control.html"
+      ],
+      "sourceTier": 1,
+      "score": 84.2
+    },
+    {
       "id": "credit-union-ai-inventory-change-control",
       "title": "An AI Inventory and Change-Control Playbook for Credit Unions",
       "url": "/insight-credit-union-ai-inventory-change-control.html",

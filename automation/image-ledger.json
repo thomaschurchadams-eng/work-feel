@@ -3,6 +3,35 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "orion-financial-embedded-digital-lending",
+      "articleUrl": "/news/orion-financial-embedded-digital-lending.html",
+      "imagePath": "/assets/orion-financial-embedded-digital-lending.jpg",
+      "publishedAt": "2026-08-27T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-photography",
+      "subject": "frontline-workflow",
+      "composition": "foreground-background-tension",
+      "perspective": "through-glass",
+      "palette": "graphite-electric-yellow",
+      "lighting": "natural-window-light",
+      "texture": "clean-photographic",
+      "scene": "member-loan-request-moving-through-a-transparent-digital-bridge-into-a-staff-review-workspace",
+      "conceptScore": 94.9,
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "operations-environment",
+          "score": 83.3
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "score": 50.4
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-inventory-change-control",
       "articleUrl": "/insight-credit-union-ai-inventory-change-control.html",
       "imagePath": "/assets/credit-union-ai-inventory-change-control.jpg",

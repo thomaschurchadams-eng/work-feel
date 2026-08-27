@@ -6,6 +6,148 @@
     "alerts": 3
   },
   "current": {
+    "date": "2026-08-27",
+    "fullArticleCount": 1,
+    "alertCount": 0,
+    "evaluatedCandidateCount": 13,
+    "beatsSearched": [
+      "lending-digital-experience",
+      "ai-strategy-workforce",
+      "small-business-lending",
+      "operations-backoffice",
+      "cybersecurity-resilience",
+      "payments-digital-assets",
+      "regulatory-compliance",
+      "digital-banking-core"
+    ],
+    "publications": [
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Orion Financial Connects Digital Banking and Lending on Narmi",
+        "url": "https://creditunionainews.com/news/orion-financial-embedded-digital-lending.html",
+        "primaryFunctionalAudience": "Digital lending and member-experience leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-priority"
+      }
+    ],
+    "rejections": [
+      {
+        "title": "MDT Partners with OnTrac AI on Credit-Union AI Readiness",
+        "reason": "credit-union-specific and mission-fit, but a consulting partnership launch without implementation outcomes and with substantial overlap to recent AI governance, business-case and change-control coverage",
+        "primaryAudience": "AI strategy and transformation leaders",
+        "secondaryAudiences": [
+          "executives",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Vancity Extends Its JUDI.AI Small-Business Lending Contract",
+        "reason": "vendor-announced contract renewal without current production measures or independent outcome evidence, and the operating thesis overlaps the August 24 small-business lending control guide",
+        "primaryAudience": "small-business lending leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Arise Financial Discusses AI Back-Office Automation",
+        "reason": "current podcast about an older deployment, relying on secondary interview claims without a fresh institution-owned evidence package or new operating change",
+        "primaryAudience": "operations and lending leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "workforce leaders"
+        ]
+      },
+      {
+        "title": "Anthropic Expands Access to Advanced Cybersecurity Capabilities",
+        "reason": "material general AI-security development but no verified credit-union deployment, financial-sector requirement or institution-specific control decision",
+        "primaryAudience": "cybersecurity leaders",
+        "secondaryAudiences": [
+          "technology leaders",
+          "vendor-risk teams"
+        ]
+      },
+      {
+        "title": "CISA Publishes Its Weekly Vulnerability Summary",
+        "reason": "broad vulnerability inventory without one new financial-sector or credit-union-specific threat that supports a distinct full-article operating thesis",
+        "primaryAudience": "cybersecurity leaders",
+        "secondaryAudiences": [
+          "technology operations",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Alkami Reports Credit-Union Growth Benchmarks from FI Navigator",
+        "reason": "vendor-sponsored proprietary benchmark claims remain unsupported by enough public methodology for independent reported coverage",
+        "primaryAudience": "digital-banking and strategy leaders",
+        "secondaryAudiences": [
+          "finance leaders",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "Credit Union Trade Group Calls for BSA Modernization",
+        "reason": "important advocacy and workload evidence, but no adopted requirement and the AI or technology operating connection is incidental",
+        "primaryAudience": "BSA/AML and compliance leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "executives"
+        ]
+      },
+      {
+        "title": "Stablecoin Card Spending Forecast to Reach $50 Billion",
+        "reason": "vendor forecast reported secondhand without transparent methodology, a direct credit-union role or a new implementation requirement",
+        "primaryAudience": "payments leaders",
+        "secondaryAudiences": [
+          "digital-asset teams",
+          "strategy leaders"
+        ]
+      },
+      {
+        "title": "Century Federal Credit Union Launches a New Website",
+        "reason": "member-facing technology launch with limited public detail and no sufficiently distinct integration, control or outcome evidence",
+        "primaryAudience": "digital product and member-experience leaders",
+        "secondaryAudiences": [
+          "marketing leaders",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Gulf Winds Credit Union Pursues Bank Acquisition and Rebrand",
+        "reason": "material M&A development, but the named technology partner does not create a substantive new AI or technology operating event",
+        "primaryAudience": "executives and strategy leaders",
+        "secondaryAudiences": [
+          "integration leaders",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "Report Says Credit-Union Chatbot Adoption Reached 46 Percent",
+        "reason": "secondary summary of proprietary survey findings without accessible methodology, institution-level outcomes or a discrete current implementation",
+        "primaryAudience": "member-service and contact-center leaders",
+        "secondaryAudiences": [
+          "digital product leaders",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "ACUMA Lists Partner Expectations During a Technology Transition",
+        "reason": "useful durable advice but not a discrete current event, and the control thesis overlaps recent vendor-exit and change-control coverage",
+        "primaryAudience": "mortgage and technology leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "vendor-management teams"
+        ]
+      }
+    ],
+    "status": "article-complete",
+    "activeExperimentContext": "The search-supported cluster experiment informed contextual links to lending and change-control coverage without changing selection, sourcing or factual nuance. The High-only LinkedIn operating-tension experiment does not apply to this Standard article.",
+    "nextCoverageGap": "AI quality assurance, knowledge-change control and escalation evidence for contact-center operations",
+    "updatedAt": "2026-08-27T07:00:00-04:00"
+  },
+  "history": [
+    {
     "date": "2026-08-26",
     "fullArticleCount": 1,
     "alertCount": 0,
@@ -145,8 +287,7 @@
     "activeExperimentContext": "The search-supported cluster experiment informed contextual links to AI governance and vendor-control coverage without changing selection, sourcing or factual nuance. The High-only LinkedIn operating-tension experiment does not apply to this Library Insight.",
     "nextCoverageGap": "AI quality assurance, knowledge-change control and escalation evidence for contact-center operations",
     "updatedAt": "2026-08-26T07:28:46-04:00"
-  },
-  "history": [
+    },
     {
       "date": "2026-08-24",
       "fullArticleCount": 1,
