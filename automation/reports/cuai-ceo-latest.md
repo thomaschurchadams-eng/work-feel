@@ -1,111 +1,111 @@
 # CUAI CEO Report
 
-**As of:** 2026-08-27T09:18:00-04:00  
-**Operating posture:** Active optimization. Production, GA4, Buffer and direct Search Console are healthy. The August 27 publisher cycle is complete and machine-observable. One operating handoff remains degraded outside current CEO authority: the source-controlled `CUAI Operating System` Cloud task, which owns the bounded weekday Alert and homepage-freshness cycle, is absent from the active Cloud-task inventory.
+**As of:** 2026-08-28T09:35:00-04:00  
+**Operating posture:** Active optimization. Publishing, Production and all required reporting paths are healthy. The post-publication operating handoff remains degraded because the source-controlled `CUAI Operating System` Cloud task is absent from the active task inventory; its bounded Alert and homepage-freshness cycle therefore cannot run without a Tom-authorized task configuration action.
 
 ## System health
 
-**Degraded for the post-publication operating handoff; healthy for production, publishing and measurement.** The latest READY Vercel Production deployment at retrieval time is exact main commit `e304d191c1592c36348a1a7378416ca89c48dd5e`. On that commit, `/api/ga4-metrics` returned HTTP 200 with `ok=true` and `source=google-analytics-data-api`; `/api/buffer-metrics` returned HTTP 200 with `ok=true` and `source=buffer`; `/api/search-console-metrics` returned HTTP 200 with `ok=true` and `source=google-search-console-api`; and Vercel reported no runtime error clusters in the prior 24 hours. The August 27 article and homepage both return HTTP 200.
+**Degraded for the post-publication operating handoff; healthy for production, publishing and measurement.** The latest READY Vercel Production deployment is exact `main` commit `2eeaa892ee8d8124320e739c6a910dd81b12fde3`. On that commit, `/api/ga4-metrics` returned HTTP 200 with `ok=true` and `source=google-analytics-data-api`; `/api/buffer-metrics` returned HTTP 200 with `ok=true` and `source=buffer`; `/api/search-console-metrics` returned HTTP 200 with `ok=true` and `source=google-search-console-api`; and Vercel returned no runtime error clusters in the prior 24 hours. The August 28 article returns HTTP 200 live.
 
-The optional Search Console subsection inside `/api/ga4-metrics` still returns the known incompatible-dimensions `ga4_data_api_error`. It remains non-blocking because the validated direct Search Console endpoint is healthy. GA4's `scrolledUsers` is the supported 90% scroll measure; no reliable 50%-versus-90% threshold breakout is available in the current reporting path.
+The optional Search Console subsection inside `/api/ga4-metrics` still returns the known incompatible-dimensions `ga4_data_api_error`; this is non-blocking because the validated direct Search Console endpoint is healthy. GA4 `scrolledUsers` remains the supported 90% scroll measure; no reliable 50%-versus-90% threshold breakout is available through the current Data API path.
 
-The unresolved reliability issue is the missing `CUAI Operating System` Cloud task. Current active-task inspection confirms the daily publisher, CEO and Reliability Watch tasks are active, but `CUAI Operating System` is not. Its authoritative repository policy owns the bounded weekday Alert cycle and homepage-freshness fallback. Reliability Watch recorded the same condition on August 26 and again after today's completed publisher run. Restoring or re-enabling that task changes Cloud task configuration and therefore requires Tom under the existing authorization boundary; the CEO did not create, enable, reschedule or modify a Cloud task.
+The active Cloud-task inventory contains Publish CUAI Daily Article, CUAI CEO and CUAI Reliability Watch but no `CUAI Operating System`. The repository policy for that missing task owns the bounded weekday Alert cycle and homepage-freshness fallback. Reliability Watch recorded the same blocker again on August 28 through PR #157. No substitute task was created and no existing task was modified because Cloud task schedule/model/permission changes remain outside CEO authority.
 
 ## Data-source status
 
-- **GitHub:** retrieved successfully from current `main`; daily-publisher and operating-system policies, machine-readable publishing rules, analytics measurement/guidance, growth strategy, daily-cycle state, coverage ledger, source registry/health, social queue, improvement state, reporting contract, rolling report and 30 recent commits were reviewed.
-- **Vercel Production/runtime:** retrieved successfully; Production is READY on `e304d191...`; no runtime error clusters were returned for the prior 24 hours.
-- **GA4 endpoint:** retrieved successfully on the exact current Production commit; HTTP 200, `ok=true`, `source=google-analytics-data-api`.
-- **Buffer:** retrieved successfully on the exact current Production commit; HTTP 200, `ok=true`, `source=buffer`; 4/4 seven-day and 13/13 28-day sent posts are metrics-ready.
+- **GitHub:** retrieved successfully from current `main`; publisher/operating policies, analytics guidance, growth strategy, daily-cycle state, coverage/source state, social queue, improvement/reporting state and 30 recent commits were reviewed.
+- **Vercel Production/runtime:** retrieved successfully; Production is READY on `2eeaa892...`; no runtime error clusters were returned for the prior 24 hours.
+- **GA4 endpoint:** retrieved successfully on the exact Production commit; HTTP 200, `ok=true`, `source=google-analytics-data-api`.
+- **Buffer:** retrieved successfully on the exact Production commit; HTTP 200, `ok=true`, `source=buffer`; 3/3 seven-day and 12/12 28-day sent posts are metrics-ready.
 - **Search Console:** retrieved successfully through the direct Production endpoint; HTTP 200, `ok=true`, `source=google-search-console-api`, `permissionLevel=siteFullUser`.
-- **Cloud task inventory:** retrieved successfully. `CUAI Operating System` remains absent while its source-controlled policy remains current; this is the exact blocker for the Alert/homepage-freshness handoff.
+- **Cloud task inventory:** retrieved successfully; `CUAI Operating System` remains absent. This is the exact blocker for the Alert/homepage-freshness handoff.
 
 ## Newsroom output
 
-**Published August 27:** [Orion Financial Connects Digital Banking and Lending on Narmi](https://creditunionainews.com/news/orion-financial-embedded-digital-lending.html).
+**Published August 28:** [Seven Controls for AI Quality Assurance in Credit Union Contact Centers](https://creditunionainews.com/insight-credit-union-ai-contact-center-qa-controls.html).
 
-Classification is **News / Standard**, primary beat lending-digital-experience, source tier 1, score 84.2. The publisher evaluated **13 candidates across 8 beats** and rejected weaker vendor-controlled, overlapping, non-credit-union, stale or mission-fit-insufficient candidates rather than lowering the gate. The article serves digital-lending/member-experience leaders while also covering lending operations, risk/compliance, technology/data and vendor management. It is live with complete metadata, a 1200×630 hero image, source links, internal links and a newsletter CTA.
+Classification is **Insights / Library**, primary beat member-service/contact-center, source tier 1, score 86.4. The publisher evaluated **13 candidates across 8 beats** and rejected weaker vendor-controlled, duplicative, portfolio-concentrated, non-current or mission-fit-insufficient candidates rather than lowering the gate. The article serves contact-center/member-service leaders and also covers operations, risk/compliance, technology/data and vendor management. It is live with complete metadata, a 1200×630 hero image, analytics dimensions, source links, internal links and a newsletter CTA.
 
-The article is correctly **not selected for LinkedIn** because Standard content is not routinely promoted. No social queue item or scheduler call was created. The search-compounding experiment informed internal links to the existing lending-control and change-control coverage, but it did not change article selection, sourcing, factual nuance or classification.
+The Library Insight passed the selective-promotion gate because it gives functional leaders a concrete seven-control release/test framework. Its company-page item is uniquely scheduled for **12:30 p.m. ET on August 28** with exact CUAI UTMs, image attached, no duplicate and Buffer post ID `6a916ce15ee9a378a49d54d6`. The copy explicitly promises the risk-tiered test library, production scorecard and shutdown evidence, making it observation 1 of the revised LinkedIn decision-tool-promise experiment. It is not yet due at this CEO checkpoint.
 
-The next explicit coverage gap remains **AI quality assurance, knowledge-change control and escalation evidence for contact-center operations**. HR/workforce, marketing/growth, payments/cards and finance should remain in the scan set when primary evidence is material enough; the gap is a portfolio signal, not a publication quota.
+The next portfolio gap is **AI-assisted workforce quality coaching and performance-measurement controls for HR and operations leaders**. This is a scan priority, not a publication quota; material executive strategy, boards, fraud/security, payments/cards, marketing/growth and finance developments remain eligible when evidence is stronger.
 
 ## LinkedIn and joined funnel
 
-Current seven-day Buffer exposure is **70 impressions / 51 reach / 0% mean engagement** across four metrics-ready posts versus **191 impressions / 116 reach / 5.16% mean engagement** across 28 days. The 28-day weekly pace is about 47.8 impressions and 29 reach, so current exposure is above pace even though current Buffer engagement is zero.
+Current seven-day Buffer exposure is **67 impressions / 51 reach / 0% mean engagement** across three metrics-ready sent posts versus **177 impressions / 111 reach / 5.03% mean engagement** across 28 days. The 28-day weekly pace is about **44 impressions / 28 reach**, so exposure remains above pace while platform engagement is materially weaker.
 
-GA4 attributes **4 LinkedIn sessions and 0 engaged sessions** in seven days versus **13 sessions and 2 engaged sessions** over 28 days. The current post-level rows are one exact session each from the August 19 Treasury, August 21 NCUA, August 24 small-business-lending and August 26 AI-inventory posts, all with zero engaged sessions in the current seven-day window. The clearest exposure/quality mismatch is the August 24 Library post: **56 Buffer impressions / 43 reach -> 1 exact GA4 session -> 0 engaged sessions**. The August 26 Library post is **4 / 3 -> 1 / 0**. Reach is therefore no longer the only bottleneck; message-to-destination conversion and qualified reading are the current problem.
+GA4 attributes **2 LinkedIn sessions and 0 engaged sessions** over seven days versus **12 sessions and 2 engaged sessions** over 28 days. The current exact rows are the August 24 small-business-lending Library post and August 26 AI-inventory Library post, one session each and zero engaged sessions. The August 24 item alone produced **57 Buffer impressions / 44 reach -> 1 exact GA4 session -> 0 engaged sessions**; August 26 produced **4 / 3 -> 1 / 0**. The dominant distribution problem is therefore no longer simple exposure. It is converting company-page reach into qualified onsite reading.
 
-Because the High-only operating-tension experiment produced only one qualifying observation through three later publication cycles, its sample design itself became a blocker across consecutive CEO reviews. This run revises rather than extends it indefinitely: the replacement experiment applies to the next three posts that independently qualify under the existing High or selective-Library promotion rules. It does **not** broaden eligibility or create extra posts.
+Today's August 28 Library post is the first clean observation under the revised decision-tool-promise treatment and has not yet sent. No interpretation should be attached to it before Buffer and exact `utm_content` evidence refresh.
 
 ## Portfolio and growth
 
 | Metric | 7 days | 28 days | 28d weekly pace | Current vs pace |
 |---|---:|---:|---:|---:|
-| Active users | 33 | 159 | 39.75 | -17.0% |
-| Sessions | 36 | 206 | 51.5 | -30.1% |
-| Page views | 36 | 369 | 92.25 | -61.0% |
-| Engaged sessions | 5 | 65 | 16.25 | -69.2% |
-| Engagement rate | 13.9% | 31.6% | — | -17.7 pts |
-| GA4 90% scrolled users | 1 | 25 | 6.25 | -84.0% |
+| Active users | 29 | 159 | 39.75 | -27.0% |
+| Sessions | 30 | 202 | 50.5 | -40.6% |
+| Page views | 32 | 361 | 90.25 | -64.5% |
+| Engaged sessions | 7 | 65 | 16.25 | -56.9% |
+| Engagement rate | 23.3% | 32.2% | — | -8.8 pts |
+| GA4 90% scrolled users | 2 | 25 | 6.25 | -68.0% |
 
-Qualified reading depth has deteriorated further in the rolling seven-day window. Direct remains the largest volume source at **26 sessions / 4 engaged / 15.4% engagement**, well below its 28-day quality rate of 29.3%. LinkedIn is **4 / 0 / 0%**. Google organic has also weakened in the current window to **4 sessions / 1 engaged / 25% engagement**, versus **23 / 13 / 56.5%** over 28 days. That puts the current search-quality guardrail below the active experiment's >=50% target, although the current organic sample is only four sessions and the treatment cannot yet be identified as the cause.
+Absolute audience and reading depth remain below the 28-day weekly pace. Direct traffic is **24 sessions / 5 engaged / 20.8% engagement** over seven days versus **167 / 49 / 29.3%** over 28 days. Google organic is **4 / 2 / 50%** versus **22 / 13 / 59.1%**, while LinkedIn is **2 / 0 / 0%** versus **12 / 2 / 16.7%**. Google remains the higher-quality meaningful acquisition channel, but its volume is below the search experiment's eight-session target.
 
-Current seven-day CUAI editorial events are **8 `article_view`, 2 `scroll_depth` and 1 `engaged_reader`**. No seven-day `newsletter_intent`, `source_click` or `related_content_click` row is returned. The 28-day view contains **60 article views, 47 scroll-depth events, 38 newsletter-intent events from 3 users, 18 engaged-reader events, 1 outbound click and 1 source click**. Absence of a seven-day event row is not treated as invented zero reader intent beyond what the endpoint actually returns.
+Current seven-day CUAI editorial events are **4 `article_view`, 6 `scroll_depth` and 2 `engaged_reader`** events. No seven-day `newsletter_intent`, `source_click` or `related_content_click` row is returned. The 28-day view contains **57 article views, 47 scroll-depth events, 38 newsletter-intent events from 3 users, 18 engaged-reader events, 1 outbound click and 1 source click**. Missing seven-day event rows are treated as absent reporting rows, not invented reader-level conclusions.
 
-Direct Search Console reports **407 impressions / 5 clicks / 1.23% CTR / average position 23.62** over August 20–26 versus **2,539 / 20 / 0.79% / 21.13** over 28 days. Current clicks equal the 28-day weekly pace of five while impressions are below pace. The OSFI/RBFCU/Velera search-treatment cluster is now **3 rolling-seven-day clicks** versus the five-click baseline: OSFI 1 click at position 5.7, RBFCU 1 at 17.1 and Velera 1 at 6.9. The positions remain inside the ranking guardrail, so the treatment is not stopped on ranking evidence.
+Direct Search Console reports **448 impressions / 2 clicks / 0.45% CTR / average position 24.05** over August 21–27 versus **2,581 / 20 / 0.77% / 20.88** over 28 days. Search clicks are materially below the 28-day weekly pace of five. The active OSFI/RBFCU/Velera treatment cluster has **1 current rolling-seven-day click**—Velera, at average position 7.19—versus the five-click baseline and target of at least eight. OSFI remains strongly ranked at average position 3.57 but has no current click; RBFCU is no longer a current top-page click row. The treatment has not breached the explicit two-page ranking stop condition.
 
-The search experiment remains active, but its quality guardrail is now explicitly on watch. If Google-organic engagement remains below 50% once the rolling window reaches at least six organic sessions, or two treatment pages deteriorate by more than five positions, the experiment will receive an early revise/stop review rather than waiting automatically until September 7.
+Google-organic engagement is exactly **50% on four sessions**, meeting—but not exceeding—the quality guardrail. The experiment's early-review trigger requires sub-50% engagement once the rolling window reaches at least six sessions or two treatment-page ranking breaches; neither condition is currently met. The treatment therefore remains active, but acquisition performance is weak and should not be extended automatically beyond its September 7 review.
 
 ## Active experiments
 
-### 1. LinkedIn decision-tool promise — opened August 27
+### 1. LinkedIn decision-tool promise — observation 1 scheduled
 
-**Hypothesis:** posts that already qualify for promotion will produce more qualified reading when the copy makes both the operating decision/control and the useful reader outcome explicit, rather than optimizing the opening hook alone.
+**Hypothesis:** independently eligible company-page posts will produce more qualified traffic when copy makes both the operating decision/control and the useful reader outcome explicit.
 
-**Bounded change:** next three independently qualified High or selectively approved Library company-page posts. Promotion eligibility, schedule, cadence, destination, image rules, editorial gates and UTMs are unchanged. Standard content does not become eligible. The copy must state the concrete operating decision/control first and one specific reader outcome from the linked piece.
+**Bounded change:** next three independently qualified High or selectively approved Library posts; promotion eligibility, fixed schedule, cadence, destination, image rules, editorial gates and UTMs remain unchanged. Standard content cannot be promoted simply to fill the cohort.
 
-**Primary targets:** median >=2 exact GA4 LinkedIn sessions/post and at least 2 of 3 posts producing >=1 engaged session; Buffer median reach >=12 is a supporting exposure target. **Review:** after three qualifying promoted posts or September 10. **Rollback:** remove the guidance and return to normal social-copy discretion; no external state changes are required.
+**Primary targets:** median >=2 exact GA4 LinkedIn sessions per post and at least 2 of 3 posts with >=1 engaged session; median Buffer reach >=12 is a supporting exposure target. **Review:** after three observations or September 10. Today's contact-center QA Library post is observation 1 and is scheduled for 12:30 p.m. ET.
 
-This experiment replaces the High-only operating-tension cohort with a **revise** decision. The old treatment had one observation: 6 impressions / 4 reach / 0% Buffer engagement -> 1 GA4 session / 0 engaged. The change improves sample quality without adding promotions or weakening editorial selectivity.
+### 2. Search compounding cluster — active, acquisition weak
 
-### 2. Search compounding cluster — active, quality guardrail on watch
+**Hypothesis:** stronger contextual links around already-visible OSFI/RBFCU/Velera pages, plus a search-supported tie-breaker only among otherwise-equivalent editorial candidates, will compound qualified organic acquisition.
 
-The OSFI/RBFCU/Velera internal-link and search-supported editorial tie-breaker treatment remains active. Current cluster clicks are **3** versus baseline **5** and target **>=8**. Sitewide Google organic is **4 sessions / 25% engagement** versus the six-session/66.7% baseline and target **>=8 sessions with engagement >=50%**. Rankings have not breached the experiment stop rule.
+**Current:** cluster **1 click vs 5 baseline / >=8 target**; sitewide Google organic **4 sessions / 50% engagement vs 6-session/66.7% baseline and >=8-session target**. Current rankings do not trigger the stop rule. **Review:** September 7, with early review if engagement falls below 50% at >=6 sessions or two treatment pages lose more than five positions.
 
-Search-supported topics remain a tie-breaker only among otherwise-equivalent qualified candidates. They cannot suppress more material coverage, manufacture an AI angle or change publication cadence. No snippet rewrite is being forced while organic quality is below guardrail and the core treatment is still early.
+No third experiment is opened. Search evidence remains a tie-breaker only and cannot suppress more material coverage or manufacture an AI angle.
 
 ## Reliability
 
-**No production auto-fix was required.** Current Production, article delivery, GA4, Buffer, direct Search Console and social sent-state are healthy. The prior publisher-outcome observability and Alert-policy consistency fixes remain intact.
+**No in-authority production repair was required in this CEO run.** Publishing, live article delivery, Vercel, GA4, Buffer and direct Search Console are healthy. The publisher-outcome observability, sent-state reconciliation and Alert-policy consistency protections remain intact.
 
-**Unresolved external-authority blocker:** the `CUAI Operating System` Cloud task remains absent from the active task inventory. Reliability Watch has now recorded this condition twice—August 26 and August 27. The task owns the bounded weekday Alert cycle and homepage-freshness fallback; repository policy says the homepage must not surface an Alert older than 72 hours and must instead use fresh `homepageWatchState` items or the evergreen fallback. This cycle cannot run while the task is absent. The CEO cannot safely restore it because changing Cloud task schedules/models/permissions is explicitly reserved for Tom. No substitute task was created and no unrelated agent was given that authority.
+**Unresolved blocker requiring Tom:** `CUAI Operating System` is still missing from the active Cloud-task inventory. Its absence has now been independently recorded on August 26, 27 and 28. The task owns the bounded Alert cycle and homepage-freshness fallback; the repository policy explicitly does not authorize another role to assume that external task authority. Reliability Watch recorded today's recurrence through PR #157. Creating or re-enabling the task remains a Cloud task configuration change and was not performed autonomously.
 
-The durable prevention recommendation remains: persistent source-controlled Cloud-task policies should have an active-task existence check that escalates a missing task before its owned handoff becomes stale. Implementing that check inside a task still does not authorize creating or enabling the missing task.
+The durable prevention recommendation remains an existence check for every source-controlled persistent Cloud-task policy, with escalation before its owned handoff becomes stale. That check can detect the problem but does not itself authorize creation or re-enablement.
 
 ## Process evolution
 
-1. **Revised a stalled experiment instead of waiting for an artificial High-only sample.** The LinkedIn treatment now measures message-to-destination quality across posts that would independently be promoted anyway, preserving all promotion and editorial guardrails.
-2. **Made the search quality guardrail operational.** Current Google-organic engagement is below 50%; an explicit early-review condition prevents the 14-day test from continuing blindly if quality remains weak as the sample grows.
-3. **Kept Cloud-task authority explicit.** The missing Operating System task is escalated as a configuration blocker rather than silently reassigning its Alert/homepage responsibility to the CEO, publisher or Reliability Watch.
+1. **The revised LinkedIn experiment now has a clean first observation.** Today's selectively qualified Library package explicitly names both the control decision and the usable decision tool without broadening promotion eligibility or increasing post volume.
+2. **Search weakness is now separated from ranking failure.** Current clicks collapsed while Velera/OSFI rankings remain healthy; the experiment stays bounded until the documented guardrail/review condition rather than forcing a broad SEO rewrite from one rolling window.
+3. **Authority drift remains blocked.** Repeated absence of the Operating System task is not being “fixed” by quietly moving Alerts/homepage ownership into the CEO, publisher or Reliability Watch.
 
 ## CEO priorities
 
-1. **Convert existing LinkedIn reach into qualified reading.** Run the revised decision-tool-promise treatment only on independently eligible promotions and measure exact UTM sessions plus engaged-session incidence rather than celebrating reach alone.
-2. **Protect search quality while the compounding test matures.** Track cluster clicks/rankings and Google-organic engagement; trigger the documented early review if the quality guardrail remains breached at a usable session count.
-3. **Restore the missing post-publication operating handoff.** Tom should restore or re-enable the existing `CUAI Operating System` Cloud task under its previously approved configuration; do not broaden any other role to compensate.
+1. **Convert existing LinkedIn reach into qualified reading.** Allow today's decision-tool-promise observation to send and evaluate exact UTM sessions plus engaged-session incidence before changing treatment.
+2. **Make the September 7 search decision on acquisition, not impressions alone.** Track cluster clicks, Google sessions/engagement and treatment-page rankings; stop or revise if the documented conditions fail rather than extending the experiment for more time.
+3. **Restore the missing post-publication operating handoff.** Tom should restore or re-enable the existing `CUAI Operating System` Cloud task under its previously approved configuration; do not broaden another role to compensate.
 
 ## Delegated work and agent activity
 
-- **Daily Publisher:** evaluated **13 candidates across 8 beats**, published one Standard News article, validated it live and correctly created no LinkedIn item.
-- **Distribution:** four seven-day sent posts are metrics-ready. No duplicate, stale sent-state or scheduler failure is present; today's Standard article has no social reservation by design.
-- **Reliability Watch:** morning run verified today's publisher and Production but confirmed the existing Operating System task remains absent; it recorded the blocker without changing Cloud task settings.
-- **CUAI CEO:** reviewed current management/policy/state sources and **30 recent commits**; resolved exact Production; retrieved GA4, Buffer and direct Search Console; checked runtime, live article, homepage and active Cloud-task inventory; joined the distribution-to-reading funnel; reviewed both growth experiments; revised the stalled LinkedIn experiment without broadening promotion authority; and refreshed the canonical reporting handoff.
-- **Specialist subagents spawned:** 0; the evidence was sufficiently localized and parallel delegation would not improve the decision.
+- **Daily Publisher:** evaluated **13 candidates across 8 beats**, published one Library Insight, validated it live and scheduled its selectively qualified company-page package for August 28 at 12:30 p.m. ET.
+- **Distribution:** three seven-day sent posts are metrics-ready; today's item is uniquely scheduled with exact UTMs and is not yet due. No duplicate or scheduler failure is present.
+- **Reliability Watch:** confirmed the repeated missing Operating System task and recorded the continuing blocker through PR #157; no Cloud task settings were changed.
+- **CUAI CEO:** reviewed current management/policy/state inputs and **30 recent commits**; resolved exact Production; retrieved GA4, Buffer and direct Search Console; checked runtime, live article and active Cloud-task inventory; joined the distribution/search/acquisition evidence; reviewed both active experiments; and refreshed the management handoff.
+- **Specialist subagents spawned:** 0; evidence was sufficiently localized and parallel delegation would not improve the decision.
 
 ## Usage
 
-Usage remains an **operational workload proxy**, not exact OpenAI tokens, credits, plan percentage or cost. Observable work in this run includes management/policy/state review, 30 recent commits, the 13-candidate/8-beat publisher outcome, one exact-Production GA4 query, one Buffer query, one direct Search Console query, Production/runtime/live-page checks, one Cloud-task inventory check, two growth-experiment reviews, one bounded experiment revision, one reporting branch and the canonical report/usage handoff. No exact native per-run OpenAI usage was retrieved or estimated.
+Usage remains an **operational workload proxy**, not exact OpenAI tokens, credits, plan percentage or cost. Observable CEO work in this run includes management/policy/state review, 30 recent commits, the 13-candidate/8-beat publisher outcome, one exact-Production GA4 query, one Buffer query, one direct Search Console query, one Production deployment resolution, one runtime-health check, one live-article check, one Cloud-task inventory check and two growth-experiment reviews. Exact native per-run OpenAI usage was not retrieved or estimated.
 
 ## Tom decision required
 
