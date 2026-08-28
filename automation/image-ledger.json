@@ -3,6 +3,35 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-contact-center-qa-controls",
+      "articleUrl": "/insight-credit-union-ai-contact-center-qa-controls.html",
+      "imagePath": "/assets/credit-union-ai-contact-center-qa-controls.jpg",
+      "publishedAt": "2026-08-28T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "macro-still-life",
+      "subject": "physical-metaphor",
+      "composition": "modular-grid",
+      "perspective": "macro",
+      "palette": "plum-gold",
+      "lighting": "warm-practical",
+      "texture": "fabric-and-wood",
+      "scene": "seven-physical-quality-control-tokens-checking-an-ai-service-path-before-a-human-handoff",
+      "conceptScore": 67.5,
+      "conceptAlternatives": [
+        {
+          "medium": "mixed-media-collage",
+          "subject": "frontline-workflow",
+          "score": 55
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "member-interaction",
+          "score": 54.9
+        }
+      ]
+    },
+    {
       "id": "orion-financial-embedded-digital-lending",
       "articleUrl": "/news/orion-financial-embedded-digital-lending.html",
       "imagePath": "/assets/orion-financial-embedded-digital-lending.jpg",

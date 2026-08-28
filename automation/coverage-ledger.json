@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-contact-center-qa-controls",
+      "title": "Seven Controls for AI Quality Assurance in Credit Union Contact Centers",
+      "url": "/insight-credit-union-ai-contact-center-qa-controls.html",
+      "publishedAt": "2026-08-28T07:00:00-04:00",
+      "section": "insights",
+      "beat": "member-service-contact-center",
+      "functions": [
+        "member-service",
+        "operations",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "vendor-management"
+      ],
+      "technologies": [
+        "conversational-ai",
+        "generative-ai"
+      ],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "Contact-center and member-service leaders",
+      "secondaryAudiences": [
+        "operations leaders",
+        "risk and compliance leaders",
+        "technology and data leaders",
+        "vendor-management teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "selective-library-eligible-pending-live-verification",
+      "activeExperimentContext": "The search-supported cluster experiment informed relevant internal links without changing selection, sourcing or factual nuance. The active LinkedIn decision-tool promise experiment is reserved for the selectively qualified social package after live verification.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-inventory-change-control.html",
+        "/insight-credit-union-ai-accessibility-test-plan.html",
+        "/insight-credit-union-ai-member-communications-review.html"
+      ],
+      "sourceTier": 1,
+      "score": 86.4
+    },
+    {
       "id": "orion-financial-embedded-digital-lending",
       "title": "Orion Financial Connects Digital Banking and Lending on Narmi",
       "url": "/news/orion-financial-embedded-digital-lending.html",
