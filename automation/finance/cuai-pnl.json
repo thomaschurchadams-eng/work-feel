@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "company": "CreditUnionAI News",
+  "basis": "management-pnl",
+  "currency": "USD",
+  "status": "uninitialized",
+  "asOf": null,
+  "currentPeriod": {
+    "start": "2026-09-01",
+    "end": "2026-09-30",
+    "revenueActual": null,
+    "directCostsActual": null,
+    "grossProfitActual": null,
+    "operatingExpensesActual": null,
+    "operatingProfitLossActual": null
+  },
+  "revenueCategories": {
+    "sponsorships": null,
+    "advertising": null,
+    "mediaPlacements": null,
+    "eventsPartnerships": null,
+    "affiliateReferralEarned": null,
+    "other": null
+  },
+  "costCategories": {
+    "directRevenueDelivery": null,
+    "hostingDeployment": null,
+    "aiModelApiSoftware": null,
+    "socialDistributionTools": null,
+    "domainsEmailAnalytics": null,
+    "designContentTools": null,
+    "contractorsProfessionalServices": null,
+    "marketingAudienceAcquisition": null,
+    "sharedUnallocated": null,
+    "other": null
+  },
+  "committed": [],
+  "forecast": {
+    "revenue": null,
+    "costs": null,
+    "breakEvenRevenue": null,
+    "notes": []
+  },
+  "crossCompanyAttribution": {
+    "caiQualifiedVisits": null,
+    "caiLeadSignals": null,
+    "caiRevenueAttributed": null,
+    "note": "CAI revenue is not CUAI revenue unless a documented intercompany charge or revenue-share exists."
+  },
+  "evidence": [],
+  "unknowns": [
+    "Initial revenue and cost reconciliation not yet completed."
+  ],
+  "lastClose": null,
+  "lastUpdatedBy": null
+}
