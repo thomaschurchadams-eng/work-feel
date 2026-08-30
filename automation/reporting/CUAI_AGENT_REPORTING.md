@@ -4,6 +4,16 @@
 
 Make CreditUnionAI News agent work visible, auditable, and easy to inspect from GitHub or the Codex desktop workspace without relying on ChatGPT task history.
 
+## Persistent-role coordination
+
+Every persistent CUAI role that uses this reporting contract must also read `automation/agent-system/CUAI_AGENT_PROTOCOL.md` and GitHub issue #160 (`https://github.com/thomaschurchadams-eng/work-feel/issues/160`) at the start of its run.
+
+Issue #160 is the live asynchronous agent bus for assignments, handoffs, decisions, incidents, recoveries, completions, and Tom escalations. Routine coordination belongs there rather than in production files so agent communication does not create unnecessary Vercel deployments.
+
+The bus adds coordination only. It never overrides the role's authoritative publishing, editorial, reliability, external-action, spending, privacy, credential, schedule, or Tom-approval boundaries. Existing domain ledgers remain authoritative for production truth.
+
+The `cuai-ceo` should use the bus to assign bounded cross-functional work and close the loop on completed handoffs. `reliability-watch` should treat materially stale, duplicated, conflicting, or repeatedly blocked bus handoffs as an additional reliability signal. Healthy no-op reliability checks should not create bus comments.
+
 ## Canonical management report
 
 The latest management view lives at:
@@ -17,10 +27,10 @@ Required sections:
 - `As of` — ISO timestamp in America/New_York context.
 - `System health` — healthy, degraded, or blocked, with concrete evidence.
 - `Newsroom output` — latest article outcome, classification, live URL when present, validation/deployment state, and LinkedIn decision/status.
-- `Reliability` — incidents detected, recoveries completed, unresolved blockers, and repeated failure patterns.
+- `Reliability` — incidents detected, recoveries completed, unresolved blockers, repeated failure patterns, and material agent-bus handoff failures when present.
 - `Portfolio and growth` — strongest evidence-backed coverage, audience, distribution, search, or analytics signal; distinguish immature/missing data from zero.
 - `Process evolution` — low-risk improvements made, experiments opened/closed, before/after behavior, and rollback instructions when a change was implemented.
-- `Delegated work` — specialist subagents or focused investigations used in the run and their outcome.
+- `Delegated work` — specialist subagents, focused investigations, and material open/completed agent-bus assignments used in the run and their outcome.
 - `Tom decision required` — only items that exceed existing authority or need access/approval. Write `None` when there is nothing to escalate.
 
 Keep this report concise enough to review in roughly five minutes.
@@ -53,9 +63,10 @@ Do not invent token counts, credit counts, percentage-of-plan figures, or cost e
 2. Record no-op watchdog checks compactly; do not create noisy commits for every healthy hourly/polling check. The Reliability Watch should write only when it detects/recoveries a material issue, when a recurring failure pattern changes, or when the reporting/usage ledger needs a meaningful state transition.
 3. The CEO may aggregate multiple watchdog no-op checks into one daily usage entry rather than writing one repository commit per check.
 4. Preserve concurrent changes. Re-read `main` before writing.
-5. Use narrow, reversible changes. Never let reporting changes alter editorial or publishing authority.
+5. Use narrow, reversible changes. Never let reporting or agent-bus changes alter editorial or publishing authority.
 6. If GitHub writing is blocked, return the exact reporting blocker in the task result rather than silently omitting the report.
+7. Use issue #160 for routine cross-agent coordination; do not create a repository commit merely to record an assignment or handoff.
 
 ## Codex desktop usage
 
-When the `work-feel` repository is open in Codex, the user can ask for the current CUAI management view by referencing `automation/reports/cuai-ceo-latest.md` and `automation/cuai-usage-ledger.json`. These files are the shared management surface between ChatGPT scheduled agents and Codex.
+When the `work-feel` repository is open in Codex, the user can ask for the current CUAI management view by referencing `automation/reports/cuai-ceo-latest.md`, `automation/cuai-usage-ledger.json`, and issue #160. These are the shared management and coordination surfaces between ChatGPT scheduled agents and Codex.
