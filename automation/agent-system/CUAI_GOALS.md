@@ -15,21 +15,21 @@ The North Star is durable. The operating goals below are intentionally short-cyc
 
 ## North Star
 
-**NS1 — Become the most useful and trusted AI intelligence source for credit-union leaders.**
+**NS1 — Become the most useful, trusted, commercially sustainable AI intelligence source for credit-union leaders and a meaningful growth engine for CAI.**
 
-Interpret "useful" as qualified readership and evidence of substantive engagement, not raw impressions. Interpret "trusted" as strong sourcing, accurate framing, clear credit-union relevance, and reliable production/distribution.
+Interpret "useful" as qualified readership and evidence of substantive engagement, not raw impressions. Interpret "trusted" as strong sourcing, accurate framing, clear credit-union relevance, and reliable production/distribution. Commercial activity must remain clearly separated from editorial judgment.
 
 ## Current 30-day goals
 
-### G1 — Establish and improve qualified readership
+### G1 — Grow qualified audience aggressively
 
-**Outcome:** More credit-union leaders reach and consume CUAI content, with a trustworthy measurement baseline.
+**Outcome:** CUAI reaches materially more credit-union leaders and functional decision makers.
 
-**September target:** Establish a reliable qualified-readership baseline from the canonical GA4 reporting path as early in the cycle as data allows, then finish September with directional improvement in qualified readership versus that baseline. Use 7-day and 28-day views appropriately; do not manufacture a percentage target when the baseline is not yet trustworthy.
+**September target:** If the August 31 28-day GA4 baseline is trustworthy, increase qualified site users by at least 50% by the final comparable September measurement window, while also improving or maintaining deep-read quality such as 90%-scroll behavior. If the 28-day baseline is not trustworthy, establish a valid baseline no later than the first week of September and target at least 50% growth in the final complete 7-day qualified-user window versus the first complete 7-day baseline. The CEO may use Search Console, LinkedIn-attributed sessions, direct/return behavior, and content cohorts to diagnose the growth constraint.
 
-**Primary evidence:** GA4 endpoint users/sessions, page performance, 90%-scroll users, acquisition/source-medium, LinkedIn-attributed sessions, and Search Console when available.
+**Primary evidence:** GA4 endpoint users/sessions, qualified article views, 90%-scroll users, acquisition/source-medium, LinkedIn-attributed sessions, return behavior where available, and Search Console.
 
-**Guardrails:** Do not trade sourcing quality, editorial relevance, or coverage breadth for traffic. Never treat Buffer impressions as site readership.
+**Guardrails:** Do not trade sourcing quality, editorial relevance, or coverage breadth for traffic. Never treat Buffer impressions as site readership. Growth tactics must remain consistent with CUAI's editorial trust.
 
 ### G2 — Prove at least one engagement improvement
 
@@ -51,11 +51,33 @@ Interpret "useful" as qualified readership and evidence of substantive engagemen
 
 **Guardrails:** Autonomy never expands external authority. Tom approval remains required wherever existing policies require it.
 
+### G4 — Build CUAI's own revenue engine
+
+**Outcome:** CUAI begins funding itself through credible commercial products such as sponsorships, advertising, sponsored placements, research partnerships, events, or other audience-appropriate revenue streams.
+
+**September target:** Define a commercially coherent first monetization package with inventory, buyer profile, value proposition, delivery/measurement method, and clearly labeled pricing assumptions; build a qualified sponsor/advertiser opportunity pipeline; and secure at least one paid sponsorship, advertising booking, or equivalent directly attributable CUAI commercial revenue event by month-end if the required external outreach/commitment approvals are granted. If approval is the blocker, the CEO must escalate the smallest specific approval needed rather than substituting internal busywork.
+
+**Primary evidence:** Verified sponsor/advertiser inquiries, approved outreach responses, proposals, bookings, payment records, campaign delivery evidence, and attributable revenue.
+
+**Guardrails:** Sponsorship or advertising must never buy favorable coverage, suppress negative coverage, determine editorial selection, or be disguised as independent journalism. Paid content and house promotion must be clearly labeled. Agents must obtain Tom approval before external outreach, pricing commitments, contracts, spending, or other actions already outside their authority.
+
+### G5 — Make CUAI a measurable growth channel for CAI
+
+**Outcome:** CUAI does not merely coexist with CAI; it sends relevant credit-union leaders into CAI's commercial funnel while preserving CUAI's editorial independence.
+
+**September target:** Establish or verify at least one recurring, clearly labeled CUAI-to-CAI promotional surface with end-to-end UTM/analytics attribution; generate at least 25 qualified CAI site sessions attributable to CUAI and at least one qualified CAI lead, Early Access intent, buyer inquiry, or equivalent commercial-intent event attributable to CUAI by month-end. If current measurement cannot support those figures, repairing the attribution path becomes the first bounded action.
+
+**Primary evidence:** CUAI outbound click events, tagged CAI sessions, CAI funnel/intake events, attributable inquiries, and commercial-intent evidence.
+
+**Guardrails:** CAI promotion must be visibly distinct from independent editorial coverage. CUAI must not distort news selection or factual framing to favor CAI. Do not imply independent endorsement where CUAI and CAI share ownership.
+
 ## Current priority order
 
 1. **G3 — Prove the autonomous operating loop** while the new agent bus is being validated in live cycles.
-2. **G1 — Establish and improve qualified readership.**
-3. **G2 — Prove at least one engagement improvement.**
+2. **G1 — Grow qualified audience aggressively.**
+3. **G5 — Make CUAI a measurable growth channel for CAI.**
+4. **G4 — Build CUAI's own revenue engine.**
+5. **G2 — Prove at least one engagement improvement.**
 
 The CEO may change the *operating priority order* when evidence shows a different constraint, but it must record the reason and may not change the goals themselves without Tom.
 
@@ -68,13 +90,23 @@ Every material CEO decision or cross-functional assignment should answer:
 3. **What is the smallest reversible action likely to improve it?**
 4. **Who owns the action?**
 5. **What measure will show whether it worked?**
-6. **When will the CEO review it?**
+6. **What approval boundary applies?**
+7. **When will the CEO review it?**
 
-Agent-bus assignments and material handoffs should include `goalId:` using `G1`, `G2`, `G3`, or `NS1` when directly relevant. Work with no credible connection to a current goal should normally not be created.
+Agent-bus assignments and material handoffs should include `goalId:` using `G1`, `G2`, `G3`, `G4`, `G5`, or `NS1` when directly relevant. Work with no credible connection to a current goal should normally not be created.
 
 ## Baseline rule
 
 When a target lacks a trustworthy baseline, the first action is to establish the baseline from authoritative data. Missing data is not zero. If measurement is unavailable, the CEO may open one bounded measurement-quality assignment before opening optimization work dependent on that metric.
+
+## Commercial/editorial firewall
+
+CUAI may monetize its audience and promote CAI, but commercial goals never override editorial standards.
+
+- Editorial selection, sourcing, factual framing, corrections, and criticism remain independent of sponsors, advertisers, and CAI commercial interests.
+- Paid/sponsored content and CAI house promotion must be clearly labeled and analytically separable from ordinary editorial content.
+- Commercial performance may influence where CUAI invests in distribution, formats, and product packaging, but never whether a materially important story is covered accurately.
+- Any conflict between commercial goals and editorial trust is resolved in favor of editorial trust and escalated to Tom when material.
 
 ## Month-end reset
 
