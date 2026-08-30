@@ -6,10 +6,12 @@ This file defines the goals that the CreditUnionAI News agent organization is tr
 
 **Owner:** Tom  
 **Operating owner:** `cuai-ceo`  
-**Initial 90-day window:** 2026-08-31 through 2026-11-29  
-**Review cadence:** CEO reviews progress weekly; Tom reviews or changes top-level goals when needed.
+**Current operating cycle:** 2026-08-31 through 2026-09-30  
+**Review cadence:** CEO reviews progress weekly; Tom reviews or changes top-level goals when needed. At the end of the cycle, close, carry forward, or replace each goal based on evidence.
 
 The CEO may update baselines, progress, confidence, and evidence in management reporting. It may propose goal changes, but it must not silently change a goal's intent, target, review date, or guardrails. Any material goal change requires Tom.
+
+The North Star is durable. The operating goals below are intentionally short-cycle and should normally be reset monthly rather than treated as a new 90-day planning period.
 
 ## North Star
 
@@ -17,33 +19,33 @@ The CEO may update baselines, progress, confidence, and evidence in management r
 
 Interpret "useful" as qualified readership and evidence of substantive engagement, not raw impressions. Interpret "trusted" as strong sourcing, accurate framing, clear credit-union relevance, and reliable production/distribution.
 
-## 90-day goals
+## Current 30-day goals
 
-### G1 — Grow qualified readership
+### G1 — Establish and improve qualified readership
 
-**Outcome:** More credit-union leaders reach and consume CUAI content.
+**Outcome:** More credit-union leaders reach and consume CUAI content, with a trustworthy measurement baseline.
 
-**Provisional target:** By 2026-11-29, increase both 28-day site users and 90%-scroll users by at least 25% versus the first complete 28-day baseline available after 2026-08-31.
+**September target:** Establish a reliable qualified-readership baseline from the canonical GA4 reporting path as early in the cycle as data allows, then finish September with directional improvement in qualified readership versus that baseline. Use 7-day and 28-day views appropriately; do not manufacture a percentage target when the baseline is not yet trustworthy.
 
-**Primary evidence:** GA4 endpoint users/sessions, page performance, 90%-scroll users, acquisition/source-medium, and Search Console when available.
+**Primary evidence:** GA4 endpoint users/sessions, page performance, 90%-scroll users, acquisition/source-medium, LinkedIn-attributed sessions, and Search Console when available.
 
 **Guardrails:** Do not trade sourcing quality, editorial relevance, or coverage breadth for traffic. Never treat Buffer impressions as site readership.
 
-### G2 — Increase useful engagement and conversion intent
+### G2 — Prove at least one engagement improvement
 
-**Outcome:** Readers do something that indicates the content helped them: read deeply, continue to related material, inspect sources, or express newsletter/return intent.
+**Outcome:** Identify and retain at least one bounded editorial, distribution, or conversion change that measurably improves substantive reader behavior.
 
-**Provisional target:** Improve the combined rate of substantive editorial actions per session by at least 20% versus the first complete baseline available after 2026-08-31. Use only events actually available in the canonical analytics endpoint; document the exact event set used for the baseline and keep it consistent unless measurement is intentionally improved.
+**September target:** Run no more than two active experiments at once and, by 2026-09-30, have at least one completed experiment with an evidence-backed keep/revise/stop decision. A "keep" requires directional improvement in a substantive engagement measure versus its valid comparison period; activity alone does not count.
 
-**Primary evidence:** 90%-scroll users, related-content clicks, source clicks, newsletter-intent activity, article views, and other established CUAI editorial events.
+**Primary evidence:** 90%-scroll users, related-content clicks, source clicks, newsletter-intent activity, article views, attributed sessions, and other established CUAI editorial events.
 
 **Guardrails:** Do not optimize for shallow clicks, sensational framing, or repetitive high-performing topics at the expense of important coverage.
 
-### G3 — Make CUAI reliably autonomous
+### G3 — Prove the autonomous operating loop
 
 **Outcome:** Routine publishing, distribution, measurement, recovery, and cross-agent coordination operate without Tom unless an existing approval boundary is reached.
 
-**Provisional target:** Across the 90-day window, at least 95% of scheduled weekday article cycles leave a valid machine-observable outcome; no duplicate LinkedIn posts; no material editorial/sourcing-gate breach; and at least 90% of routine internal handoffs requiring no Tom approval are completed or explicitly blocked/superseded without Tom intervention.
+**September target:** At least 95% of scheduled weekday article cycles leave a valid machine-observable outcome; no duplicate LinkedIn posts; no material editorial/sourcing-gate breach; and at least 90% of routine internal agent-bus handoffs requiring no Tom approval are completed, explicitly blocked, or superseded without Tom intervention. Complete enough live bus cycles to make a keep/revise decision on the coordination design by month-end.
 
 **Primary evidence:** `automation/daily-cycle-state.json`, `automation/social-queue.json`, Reliability Watch outcomes, issue #160 agent-bus events, and `automation/cuai-usage-ledger.json`.
 
@@ -51,9 +53,9 @@ Interpret "useful" as qualified readership and evidence of substantive engagemen
 
 ## Current priority order
 
-1. **G3 — Reliable autonomy** until the agent bus and handoffs have completed enough live cycles to be trusted.
-2. **G1 — Qualified readership growth.**
-3. **G2 — Useful engagement and conversion intent.**
+1. **G3 — Prove the autonomous operating loop** while the new agent bus is being validated in live cycles.
+2. **G1 — Establish and improve qualified readership.**
+3. **G2 — Prove at least one engagement improvement.**
 
 The CEO may change the *operating priority order* when evidence shows a different constraint, but it must record the reason and may not change the goals themselves without Tom.
 
@@ -73,3 +75,7 @@ Agent-bus assignments and material handoffs should include `goalId:` using `G1`,
 ## Baseline rule
 
 When a target lacks a trustworthy baseline, the first action is to establish the baseline from authoritative data. Missing data is not zero. If measurement is unavailable, the CEO may open one bounded measurement-quality assignment before opening optimization work dependent on that metric.
+
+## Month-end reset
+
+During the final CEO review of September, assess each goal as `achieved | partial | missed | superseded`, record the evidence, and propose the next short operating cycle. Do not automatically roll the same goals forward or create another 90-day period without Tom's approval.
