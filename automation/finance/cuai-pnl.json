@@ -1,10 +1,10 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "company": "CreditUnionAI News",
   "basis": "management-pnl",
   "currency": "USD",
-  "status": "uninitialized",
-  "asOf": null,
+  "status": "initialized-partial",
+  "asOf": "2026-08-31",
   "currentPeriod": {
     "start": "2026-09-01",
     "end": "2026-09-30",
@@ -12,7 +12,65 @@
     "directCostsActual": null,
     "grossProfitActual": null,
     "operatingExpensesActual": null,
-    "operatingProfitLossActual": null
+    "operatingProfitLossActual": null,
+    "status": "not-started"
+  },
+  "cashOperatingPnl": {
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "status": "provisional-partial-close",
+    "verifiedRevenueIdentified": 0.0,
+    "verifiedDirectCuaiCostsIdentified": 0.0,
+    "revenueActual": null,
+    "operatingCostsActual": null,
+    "operatingProfitLossActual": null,
+    "note": "No CUAI-specific August revenue or August cash operating cost was verified in the connected evidence inspected. These zero identified amounts are not asserted as complete company totals because several platform bills and shared-service allocations remain unavailable or unresolved."
+  },
+  "fullyLoadedEconomics": {
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "status": "partial",
+    "platformMonthlyRunRate": null,
+    "knownMinimumMonthlyEconomicCost": 0.94,
+    "knownMinimumMonthlyEconomicCostBasis": "Management amortization of the verified $11.25 creditunionainews.com domain purchase over 12 months; cash was paid 2025-12-01, not in August 2026.",
+    "sharedUnallocatedTechnologyChargesCurrentMonth": {
+      "total": 96.99,
+      "items": [
+        {
+          "vendor": "OpenAI",
+          "amount": 40.0,
+          "status": "allocation-unresolved",
+          "note": "Two posted August ChatGPT/OpenAI charges; CUAI/CAI/other allocation not established."
+        },
+        {
+          "vendor": "Synthesia",
+          "amount": 29.0,
+          "status": "allocation-unresolved",
+          "note": "Recurring technology-service charge; no CUAI repository evidence found in this review."
+        },
+        {
+          "vendor": "ElevenLabs",
+          "amount": 5.0,
+          "status": "allocation-unresolved",
+          "note": "Recurring technology-service charge; no CUAI repository evidence found in this review."
+        },
+        {
+          "vendor": "Microsoft",
+          "amount": 22.99,
+          "status": "allocation-unresolved",
+          "note": "Recurring technology-service charge; CUAI-specific use not established."
+        }
+      ],
+      "note": "Excluded from CUAI fully loaded total until an allocation basis is documented; these are not asserted CUAI costs."
+    },
+    "nonCashImputedCosts": {
+      "tomUnpaidTime": null,
+      "note": "Not included absent an approved management-cost convention."
+    }
   },
   "revenueCategories": {
     "sponsorships": null,
@@ -27,19 +85,116 @@
     "hostingDeployment": null,
     "aiModelApiSoftware": null,
     "socialDistributionTools": null,
-    "domainsEmailAnalytics": null,
-    "designContentTools": null,
+    "domainsDnsSsl": 0.94,
+    "emailWorkspace": null,
+    "developerTooling": null,
+    "databaseStorage": null,
+    "analyticsSearch": null,
+    "designContentMedia": null,
+    "monitoringSecurityBackup": null,
+    "paymentBillingFees": null,
+    "newsletterEmailDistribution": null,
     "contractorsProfessionalServices": null,
     "marketingAudienceAcquisition": null,
+    "dataResearchSubscriptions": null,
+    "accountingLegalAdminSoftware": null,
     "sharedUnallocated": null,
     "other": null
   },
+  "platformCostInventory": [
+    {
+      "service": "creditunionainews.com domain",
+      "category": "domainsDnsSsl",
+      "relationship": "direct-cuai",
+      "status": "verified",
+      "lastVerifiedCashAmount": 11.25,
+      "lastVerifiedCashDate": "2025-12-01",
+      "managementMonthlyAmount": 0.94,
+      "cadence": "renewal cadence not verified",
+      "evidence": "Vercel receipt CNVMBPOQ-0001"
+    },
+    {
+      "service": "Vercel hosting/deployment",
+      "category": "hostingDeployment",
+      "relationship": "direct-cuai",
+      "status": "cost-unavailable",
+      "amount": null,
+      "evidence": "Active CUAI Vercel deployments verified in repository/GitHub notifications; no distinct hosting charge identified in linked transaction history."
+    },
+    {
+      "service": "Buffer",
+      "category": "socialDistributionTools",
+      "relationship": "direct-cuai",
+      "status": "cost-unavailable",
+      "amount": null,
+      "evidence": "CUAI Buffer API integration is in the repository and CUAI Buffer activity emails are present; no Buffer billing charge identified in linked transaction history."
+    },
+    {
+      "service": "Google Workspace for creditunionainews.com",
+      "category": "emailWorkspace",
+      "relationship": "direct-cuai",
+      "status": "cost-unavailable",
+      "amount": null,
+      "evidence": "Google Workspace organization/account for creditunionainews.com verified by business email; billing amount not found."
+    },
+    {
+      "service": "GitHub",
+      "category": "developerTooling",
+      "relationship": "direct-cuai",
+      "status": "cost-unavailable",
+      "amount": null,
+      "evidence": "Repository is actively used for CUAI; no GitHub merchant charge identified in linked transaction history."
+    },
+    {
+      "service": "GA4 / Search Console",
+      "category": "analyticsSearch",
+      "relationship": "direct-cuai",
+      "status": "cost-unavailable",
+      "amount": null,
+      "evidence": "CUAI repository contains GA4 and Search Console reporting integrations; no separately attributable billing identified."
+    },
+    {
+      "service": "OpenAI / ChatGPT",
+      "category": "aiModelApiSoftware",
+      "relationship": "shared-unallocated-candidate",
+      "status": "allocation-unresolved",
+      "augustPostedAmount": 40.0,
+      "evidence": "Linked transaction history contains two August OpenAI/ChatGPT charges; CUAI share not established."
+    },
+    {
+      "service": "Synthesia",
+      "category": "designContentMedia",
+      "relationship": "shared-unallocated-candidate",
+      "status": "allocation-unresolved",
+      "augustPostedAmount": 29.0,
+      "evidence": "Recurring linked-card charge; no CUAI repository reference found in this review."
+    },
+    {
+      "service": "ElevenLabs",
+      "category": "designContentMedia",
+      "relationship": "shared-unallocated-candidate",
+      "status": "allocation-unresolved",
+      "augustPostedAmount": 5.0,
+      "evidence": "Recurring linked-card charge; no CUAI repository reference found in this review."
+    },
+    {
+      "service": "Microsoft",
+      "category": "developerTooling",
+      "relationship": "shared-unallocated-candidate",
+      "status": "allocation-unresolved",
+      "augustPostedAmount": 22.99,
+      "evidence": "Recurring linked-card charge; CUAI-specific use not established."
+    }
+  ],
   "committed": [],
   "forecast": {
     "revenue": null,
     "costs": null,
     "breakEvenRevenue": null,
-    "notes": []
+    "notes": [
+      "Break-even cannot be calculated until direct platform billing and shared-service allocation are sufficiently complete.",
+      "No verified current sponsor/advertiser pipeline was found in the inspected repository or August CUAI-specific email search."
+    ]
   },
   "crossCompanyAttribution": {
     "caiQualifiedVisits": null,
@@ -47,10 +202,48 @@
     "caiRevenueAttributed": null,
     "note": "CAI revenue is not CUAI revenue unless a documented intercompany charge or revenue-share exists."
   },
-  "evidence": [],
-  "unknowns": [
-    "Initial revenue and cost reconciliation not yet completed."
+  "evidence": [
+    {
+      "type": "connected-financial-accounts",
+      "scope": "Posted transaction history across currently linked accounts; transaction dataset reports full-history coverage. Institution sync timestamps vary through 2026-08-31 and freshness is not guaranteed for late same-day postings.",
+      "privacy": "No account identifiers or unrelated personal transaction details stored in this ledger."
+    },
+    {
+      "type": "business-email",
+      "scope": "CUAI-specific billing/activity search through 2026-08-31.",
+      "findings": [
+        "Verified Vercel domain receipt for creditunionainews.com: $11.25 paid 2025-12-01.",
+        "Verified active Buffer use, Google Workspace organization, and Vercel deployment activity; associated recurring billing amounts were not found."
+      ]
+    },
+    {
+      "type": "github",
+      "scope": "CUAI main repository and issue #160.",
+      "findings": [
+        "Buffer is an active CUAI production integration.",
+        "No CUAI repository references were found for Synthesia or ElevenLabs in this review.",
+        "No current sponsor/advertising pipeline ledger was found by repository search."
+      ]
+    }
   ],
-  "lastClose": null,
-  "lastUpdatedBy": null
+  "unknowns": [
+    "Complete current Vercel hosting/deployment billing amount.",
+    "Buffer plan/billing amount.",
+    "Google Workspace billing amount for creditunionainews.com.",
+    "GitHub billed-tier cost attributable to CUAI, if any.",
+    "Any database/storage, monitoring/security, newsletter-distribution, research-data, accounting/legal/admin, contractor, or paid-acquisition costs not evidenced in current connected sources.",
+    "Allocation basis for OpenAI, Synthesia, ElevenLabs, Microsoft, and any other shared technology subscriptions.",
+    "Whether any CUAI revenue was received through an unconnected payment system or account.",
+    "Current sponsor/advertiser pipeline and commercial commitments, if maintained outside the inspected repository/email evidence."
+  ],
+  "lastClose": {
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "status": "provisional-partial",
+    "closedOn": "2026-08-31",
+    "note": "Initial month-end management close established the platform-cost inventory and evidence gaps. Final completeness is deferred because late August postings and several platform billing sources/allocation decisions remain unresolved."
+  },
+  "lastUpdatedBy": "cuai-cfo"
 }
