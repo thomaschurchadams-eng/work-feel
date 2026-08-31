@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "cornerstone-rippleshot-credit-union-fraud-network",
+      "title": "Cornerstone Opens Shared Fraud Intelligence to 600 Credit Unions",
+      "url": "/news/cornerstone-rippleshot-credit-union-fraud-network.html",
+      "publishedAt": "2026-08-31T07:00:00-04:00",
+      "section": "news",
+      "beat": "fraud-security",
+      "functions": [
+        "it-data-cybersecurity",
+        "payments-deposits",
+        "risk-compliance",
+        "operations",
+        "vendor-management"
+      ],
+      "technologies": [
+        "fraud-analytics",
+        "data-decisioning"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Fraud operations and payments leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "technology and data leaders",
+        "vendor-management teams",
+        "member-service leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "The search-supported cluster experiment informed relevant fraud-control links without changing selection, sourcing or factual nuance. The LinkedIn decision-tool promise experiment does not apply to Standard content.",
+      "internalLinkTargets": [
+        "/news/velera-risk-alert-manager-fraud-response.html",
+        "/news/rbfcu-impersonation-scam-regulation-e-investigations.html"
+      ],
+      "sourceTier": 1,
+      "score": 87.6
+    },
+    {
       "id": "credit-union-ai-contact-center-qa-controls",
       "title": "Seven Controls for AI Quality Assurance in Credit Union Contact Centers",
       "url": "/insight-credit-union-ai-contact-center-qa-controls.html",

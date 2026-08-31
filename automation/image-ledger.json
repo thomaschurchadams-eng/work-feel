@@ -3,6 +3,37 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "cornerstone-rippleshot-credit-union-fraud-network",
+      "articleUrl": "/news/cornerstone-rippleshot-credit-union-fraud-network.html",
+      "imagePath": "/assets/cornerstone-rippleshot-credit-union-fraud-network.jpg",
+      "publishedAt": "2026-08-31T07:00:00-04:00",
+      "medium": "refined-data-abstraction",
+      "subject": "risk-and-security",
+      "composition": "wide-environmental",
+      "perspective": "cutaway",
+      "palette": "burgundy-sand",
+      "lighting": "soft-daylight",
+      "texture": "frosted-glass",
+      "scene": "regional-credit-union-fraud-signals-converging-into-a-shared-early-warning-network",
+      "conceptScore": 83.3,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "architecture-and-infrastructure",
+          "score": 80.6
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "abstract-data-system",
+          "score": 60.1
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-contact-center-qa-controls",
       "articleUrl": "/insight-credit-union-ai-contact-center-qa-controls.html",
       "imagePath": "/assets/credit-union-ai-contact-center-qa-controls.jpg",
