@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T09:15:00-04:00",
+  "updatedAt": "2026-09-01T09:20:00-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -36,12 +36,12 @@
       "status": "active",
       "hypothesis": "For company-page posts that already qualify independently under the existing High or selective-Library promotion rules, making the reader outcome explicit in the post copy will improve qualified site traffic and engaged sessions versus continuing to optimize only the opening hook.",
       "evidence": [
-        "The High-only operating-tension experiment produced only one qualifying observation from August 21 through August 27 despite three subsequent publication cycles; the August 24 and August 26 articles were Library and the August 27 article is Standard. The single High observation produced 6 Buffer impressions / 4 reach / 0% engagement -> 1 exact GA4 LinkedIn session / 0 engaged sessions.",
-        "The broader seven-day LinkedIn funnel is now 70 Buffer impressions / 51 reach across four metrics-ready posts -> 4 exact GA4 LinkedIn sessions -> 0 engaged sessions. Over 28 days it is 191 impressions / 116 reach -> 13 GA4 sessions -> 2 engaged sessions.",
-        "The August 24 selectively promoted Library post reached 43 people on 56 impressions but produced 1 exact GA4 session and 0 engaged sessions. The August 26 Library post produced 4 impressions / 3 reach -> 1 GA4 session / 0 engaged. Reach can therefore rise without producing qualified reading.",
-        "Insufficient High-only sample has materially limited the hook decision across consecutive CEO reviews. The replacement improves sample quality without increasing promotion volume: it applies only when a post independently qualifies under existing promotion policy and does not change schedule, eligibility, destination, UTMs or editorial selection."
+        "The prior High-only operating-tension experiment was sample-blocked across consecutive CEO reviews, so the replacement cohort uses only posts that independently qualify under existing High or selective-Library rules without increasing promotion volume.",
+        "The first completed treatment observation, the August 28 contact-center QA Library post, currently shows 5 Buffer impressions / 2 reach / 0% engagement and 1 exact GA4 LinkedIn session / 0 engaged sessions.",
+        "The current seven-day joined funnel is 11 Buffer impressions / 5 reach across two metrics-ready posts -> 2 exact GA4 LinkedIn sessions -> 0 engaged sessions, versus 181 impressions / 115 reach and 13 GA4 LinkedIn sessions / 2 engaged sessions over 28 days.",
+        "The September 1 FSB frontier-AI cyber-resilience High post independently qualifies and is scheduled for 11:30 a.m. ET with exact CUAI UTMs. It will become treatment observation 2 only after authoritative send and metrics evidence are available."
       ],
-      "boundedChange": "For the next 3 independently qualified company-page posts, whether High or selectively approved Library, keep promotion eligibility, fixed schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. In the post copy, state the concrete credit-union operating decision, control or problem first and then state one specific reader outcome from the linked piece (for example the checklist, test, evidence set or decision the reader can use). Do not create extra posts or promote Standard content to fill the cohort.",
+      "boundedChange": "For the next 3 independently qualified company-page posts, whether High or selectively approved Library, keep promotion eligibility, fixed schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. In the post copy, state the concrete credit-union operating decision, control or problem first and then state one specific reader outcome from the linked piece. Do not create extra posts or promote Standard content to fill the cohort.",
       "primaryMetric": "Exact GA4 LinkedIn traffic and quality by utm_content. Target median >=2 sessions per experiment post and at least 2 of 3 posts producing >=1 engaged session. Use Buffer reach as a supporting exposure metric, with a directional target of median reach >=12.",
       "guardrailMetrics": [
         "No change to High/Library promotion eligibility",
@@ -55,42 +55,28 @@
       "startDate": "2026-08-27",
       "reviewCondition": "Review after 3 independently qualified promoted posts or on 2026-09-10, whichever comes first. Keep only if exact GA4 sessions and engaged-session incidence improve directionally without degrading editorial trust or onsite quality; otherwise revise or stop.",
       "rollback": "Remove the decision-tool promise guidance and return company-page copy to normal editorial discretion. Promotion eligibility, schedules, credentials, destinations and published articles remain unchanged."
-    },
+    }
+  ],
+  "closedExperiments": [
     {
       "id": "search-compounding-cluster-2026-08-24",
-      "status": "active",
-      "hypothesis": "Strengthening internal connections around CUAI pages that already earn Google visibility, while using those proven themes only as a tie-breaker for otherwise-qualified adjacent coverage, will increase qualified organic clicks and sessions without reducing editorial quality or reader engagement.",
-      "evidence": [
-        "Baseline at experiment open: direct Search Console for August 17-23 showed 535 impressions / 7 clicks / 1.31% CTR and the OSFI/RBFCU/Velera treatment cluster produced 5 rolling-seven-day clicks; GA4 Google organic was 6 sessions / 4 engaged / 66.7% engagement.",
-        "Current August 20-26 Search Console is 407 impressions / 5 clicks / 1.23% CTR / average position 23.62. The treatment cluster is 3 clicks: OSFI 1 at position 5.7, RBFCU 1 at 17.1 and Velera 1 at 6.9. Rankings remain inside the experiment guardrails even though cluster clicks are below baseline.",
-        "Current GA4 Google organic is 4 sessions / 1 engaged / 25% engagement over seven days versus 23 / 13 / 56.5% over 28 days. The quality guardrail is currently below target, but only four current sessions are in the rolling window and the treatment cannot yet be attributed as the cause.",
-        "The News hub remains a search-intent opportunity at 68 impressions / 0 clicks / position 17.38 over seven days, but no snippet rewrite is being forced while the core treatment remains early and organic quality is below guardrail."
-      ],
-      "boundedChange": "For 14 days, strengthen contextual internal links among the existing OSFI agentic-AI controls, RBFCU fraud-investigation and Velera fraud-response pages; use Search Console evidence only as a tie-breaker when multiple new stories independently clear the same sourcing, mission-fit and priority gates; and queue snippet/title improvements only where page-level evidence and editorial clarity support them. Do not manufacture search topics, change the publication schedule, weaken coverage diversity, or rewrite substantive factual claims solely for SEO.",
-      "primaryMetric": "Increase combined rolling-7-day Search Console clicks across the OSFI/RBFCU/Velera treatment cluster from the August 17-23 baseline of 5 to at least 8, while increasing sitewide GA4 Google-organic sessions from 6 to at least 8 in a rolling 7-day window by review.",
-      "guardrailMetrics": [
-        "Google-organic engagement rate remains at or above 50%",
-        "No sourcing, mission-fit, originality or factual-nuance gate is weakened",
-        "No more-material story is displaced solely because another topic has search traction",
-        "No material ranking deterioration of more than five positions across two or more treatment pages is accepted without review",
-        "No publication cadence or LinkedIn schedule change"
-      ],
-      "startDate": "2026-08-24",
-      "reviewCondition": "Review on 2026-09-07 or after 14 complete days of post-change Search Console data, whichever produces the cleaner comparison. Keep if clicks and organic sessions improve directionally with engagement guardrails intact; revise or stop if the cluster does not lift qualified acquisition or if topic selection starts to narrow coverage unnaturally. Escalate to an early revise/stop review if Google-organic engagement remains below 50% after the rolling window reaches at least 6 organic sessions or if two treatment-page rankings breach the five-position guardrail.",
-      "rollback": "Remove the search-supported tie-breaker and revert only the added contextual internal links. Existing articles, sourcing, schedules and search reporting remain otherwise unchanged."
+      "status": "stopped-2026-09-01",
+      "decision": "Stop the search-supported editorial tie-breaker early because the experiment hit its explicit quality-review trigger and failed to lift the treatment cluster.",
+      "baseline": "OSFI/RBFCU/Velera produced 5 rolling-seven-day Search Console clicks; GA4 Google organic was 6 sessions / 4 engaged / 66.7% engagement.",
+      "finalEvidence": "For August 25-31, the treatment cluster produced 1 click, entirely from Velera, versus the baseline of 5 and target of 8. Sitewide Google organic reached the volume target at 8 sessions, but only 3 were engaged, a 37.5% engagement rate versus the >=50% guardrail. OSFI and Velera rankings remained strong at average positions 2.7 and 7.28, so this is not a ranking-collapse diagnosis.",
+      "outcome": "Do not use search traction as an editorial topic-selection tie-breaker. Existing contextual links that remain substantively useful are retained as ordinary editorial cross-links rather than treated as an optimization mechanism; no new links will be added under this experiment. Future search work should target a specific page/query-intent problem with its own bounded treatment rather than steering coverage themes.",
+      "rollback": "The search-supported editorial tie-breaker has been removed from production guidance. Existing schedules, sourcing, published factual claims and search reporting remain unchanged."
     }
   ],
   "productionGuidance": {
-    "priorityTopics": [
-      "SEARCH-SUPPORTED TIE-BREAKER through 2026-09-07: when multiple stories independently clear the same editorial bar, prefer mission-aligned adjacent coverage that deepens proven organic clusters in AI risk controls, fraud response/investigations and vendor/operational controls. This is a tie-breaker only; never suppress more material coverage or manufacture a search topic."
-    ],
+    "priorityTopics": [],
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-decision-tool-promise-2026-08-27: for the next 3 independently qualified High or selectively approved Library posts, preserve existing promotion eligibility and fixed schedule; state the operating decision/control first and one specific useful reader outcome from the linked piece. Do not promote Standard content or create extra posts to fill the cohort."
+      "ACTIVE EXPERIMENT linkedin-decision-tool-promise-2026-08-27: observation 1 is complete and below target; the September 1 FSB High post is a pending second observation until authoritative send/metrics evidence arrives. For independently qualified High or selectively approved Library posts, preserve existing eligibility and schedule; state the operating decision/control first and one specific useful reader outcome. Do not promote Standard content or create extra posts to fill the cohort."
     ],
     "articleOpeningGuidance": [
-      "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. The formal experiment is closed; normal editorial discretion and all sourcing/factual-nuance gates apply."
+      "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. Normal editorial discretion and all sourcing/factual-nuance gates apply."
     ],
     "visualGuidance": [],
     "conversionGuidance": [],
@@ -108,51 +94,51 @@
     {
       "timestamp": "2026-08-11T15:25:00Z",
       "decision": "End indefinite baseline collection and begin active optimization with one bounded LinkedIn hook experiment.",
-      "evidence": "Eight Buffer posts are metrics-ready in the 28-day window, recent reach is weak, and waiting for a perfect sample has become an operating blocker. GA4 is instrumented but was unavailable to the manual CEO run because the current ChatGPT connector runtime exposes no Google Analytics reporting action.",
-      "uncertainty": "Historical UTM attribution is mixed and GA4 could not be retrieved in this run, so the experiment is reversible and site-session conclusions must wait for authoritative GA4 data.",
-      "nextCheckpoint": "Three metrics-ready experiment posts with GA4 attribution, or 10 business days if GA4 reporting remains blocked."
+      "evidence": "Eight Buffer posts were metrics-ready and recent reach was weak; waiting for a perfect sample had become an operating blocker.",
+      "uncertainty": "Historical UTM attribution was mixed and GA4 was unavailable in that runtime, so the first treatment was reversible.",
+      "nextCheckpoint": "Three metrics-ready experiment posts with GA4 attribution, or 10 business days if GA4 reporting remained blocked."
     },
     {
       "timestamp": "2026-08-18T09:55:30-04:00",
-      "decision": "Open a second, bounded article-opening experiment because qualified reading depth has underperformed the 28-day pace across consecutive CEO reviews while acquisition remains comparatively stronger.",
-      "evidence": "Live GA4 shows 47 users, 52 sessions, 57 page views, 11 engaged sessions, 21.2% engagement and 3 built-in 90%-scrolled users in 7 days versus 153 users, 232 sessions, 573 views, 82 engaged sessions, 35.3% engagement and 31 90%-scrolled users in 28 days. The shared-script measurement repair is now live, so the next article cohort can be evaluated on clean post-repair instrumentation.",
-      "uncertainty": "The rolling 7-day window can move sharply when one high-volume day rolls off, so the experiment is reversible and does not change article selection, schedule or editorial standards.",
-      "nextCheckpoint": "Three qualifying post-repair articles or 2026-08-28, whichever comes first."
+      "decision": "Open a bounded article-opening experiment because qualified reading depth had underperformed across consecutive CEO reviews.",
+      "evidence": "Live GA4 showed 47 users / 52 sessions / 11 engaged sessions / 21.2% engagement / 3 90%-scrolled users in 7 days versus 153 / 232 / 82 / 35.3% / 31 over 28 days.",
+      "uncertainty": "Rolling seven-day windows are volatile, so the treatment did not alter article selection, schedule or editorial standards.",
+      "nextCheckpoint": "Three qualifying post-repair articles or 2026-08-28."
     },
     {
       "timestamp": "2026-08-19T09:42:17-04:00",
       "decision": "Stop the completed relevance-led LinkedIn hook treatment and replace it with an operating-tension-first hook for future High-priority posts.",
-      "evidence": "All three relevance-led observations are metrics-ready and materially below target: each has 4 Buffer impressions; reach is 3, 3 and 4; median Buffer engagement is 0%; and current GA4 attribution is 1, 1 and 0 sessions, with zero engaged sessions. This is enough directional evidence to stop rather than extend the treatment. Problem-led Guardian and RBFCU posts provide a plausible alternative framing signal, but topic/timing confounding means the replacement remains a bounded experiment.",
-      "uncertainty": "LinkedIn company-page samples remain small and topic effects are substantial. The decision is therefore a reversible framing change only; it does not alter schedule, promotion eligibility, editorial selection, UTMs, images or destination.",
-      "nextCheckpoint": "Three qualifying operating-tension High posts or 2026-09-02, whichever comes first."
-    },
-    {
-      "timestamp": "2026-08-20T09:29:44-04:00",
-      "decision": "Continue the decision-first article-opening treatment through its third and final qualifying observation rather than changing the treatment mid-cohort.",
-      "evidence": "The August 20 article is cohort observation 2 of 3. Live GA4 shows modest depth improvement versus the prior CEO read—25.5% engagement, 12 engaged sessions and 5 90%-scrolled users versus 22.9%, 11 and 4—but all remain below the >=30%, >=18 and >=6 targets. Active users are 39, one below the >=40 guardrail.",
-      "uncertainty": "The rolling seven-day window remains sensitive to days rolling in and out, and the current cohort is incomplete. No third experiment is opened; the final observation is the smallest reversible way to resolve the treatment.",
-      "nextCheckpoint": "The next qualifying News or Insights article, or 2026-08-28 if the cohort does not complete sooner."
+      "evidence": "All three relevance-led observations were materially below reach/session targets and had zero engaged sessions.",
+      "uncertainty": "Topic and timing effects remained material, so the replacement stayed bounded and reversible.",
+      "nextCheckpoint": "Three qualifying operating-tension High posts or 2026-09-02."
     },
     {
       "timestamp": "2026-08-21T09:18:30-04:00",
-      "decision": "Close the three-article decision-first opening experiment with a revise decision: retain early decision/consequence clarity as editorial discretion, but stop the mandatory 80–120-word treatment and do not claim it solved absolute reading-depth volume.",
-      "evidence": "The August 21 NCUA News article completed cohort observation 3 of 3. Live GA4 now shows a 34.5% seven-day engagement rate, clearing the >=30% rate target and recovering close to the 28-day 36.4% rate. However absolute seven-day depth and traffic remain below the experiment targets and trend pace: 10 engaged sessions versus the >=18 target, 4 built-in 90%-scrolled users versus >=6, and 24 active users versus the >=40 guardrail; the 28-day totals are 82 engaged sessions, 32 90%-scrolled users and 155 active users. The cohort coincided with better engagement rate but materially lower site volume, so the aggregate evidence does not support a causal keep decision for a rigid opening formula.",
-      "uncertainty": "Rolling seven-day traffic is volatile and the three cohort articles have too little page-level traffic to separate the opening treatment from acquisition and topic effects. The experiment is therefore closed rather than extended indefinitely; the useful editorial principle is retained without a mandatory formula.",
-      "nextCheckpoint": "Keep the operating-tension LinkedIn experiment as the only active production experiment. Reconsider a structured article-opening test only when a future cohort can be evaluated with sufficiently attributable page-level traffic rather than site-wide absolute counts."
+      "decision": "Close the three-article decision-first opening experiment with a revise decision: retain early decision/consequence clarity as editorial discretion, but stop the mandatory template.",
+      "evidence": "Seven-day engagement rate recovered to 34.5%, but absolute engaged sessions, 90% scrollers and active users remained below target/pacing.",
+      "uncertainty": "Cohort-page traffic was too small to isolate the opening treatment causally.",
+      "nextCheckpoint": "Reconsider structure only when page-level cohort evidence is sufficiently attributable."
     },
     {
       "timestamp": "2026-08-24T10:54:39-04:00",
-      "decision": "Open a second bounded growth experiment focused on compounding Google search acquisition rather than leaving Search Console opportunities in a passive queue.",
-      "evidence": "Current site audience is below the 28-day weekly pace, while Google organic remains the strongest meaningful acquisition channel by engagement quality and Search Console clicks/CTR are improving. OSFI, RBFCU and Velera already have page-one or near-page-one visibility and measurable clicks, providing enough evidence for a low-risk internal-linking and adjacent-coverage treatment.",
-      "uncertainty": "Search volumes are still small and page rankings can move for reasons unrelated to CUAI changes. The treatment therefore avoids aggressive keyword rewrites, schedule changes or topic forcing and uses a 14-day reversible cohort with engagement and coverage guardrails.",
-      "nextCheckpoint": "2026-09-07 or 14 complete days of post-change Search Console data."
+      "decision": "Open a bounded search-compounding experiment around pages already earning Google visibility.",
+      "evidence": "Google organic had strong engagement quality and OSFI/RBFCU/Velera had measurable search visibility/clicks.",
+      "uncertainty": "Search volumes were small, so the treatment avoided aggressive keyword rewrites, schedule changes or topic forcing.",
+      "nextCheckpoint": "2026-09-07 or early quality-trigger review."
     },
     {
       "timestamp": "2026-08-27T09:15:00-04:00",
-      "decision": "Revise the High-only operating-tension LinkedIn experiment into a decision-tool-promise experiment across the next three independently qualified High or selectively approved Library promotions, without increasing promotion volume or changing eligibility.",
-      "evidence": "The High-only treatment produced only one qualifying observation through three consecutive later publication cycles, so its sample design itself became the operating blocker. Meanwhile the broader current funnel shows 70 Buffer impressions / 51 reach -> 4 exact GA4 LinkedIn sessions -> 0 engaged sessions, demonstrating that better exposure is not translating into qualified reading. The replacement tests message-to-destination promise using posts that would be promoted anyway.",
-      "uncertainty": "Post-level samples remain small and topic effects are material. The change therefore does not alter what gets promoted, when it posts, or where it links; it only standardizes the reader-outcome promise for a bounded cohort.",
-      "nextCheckpoint": "Three independently qualified promoted posts or 2026-09-10, whichever comes first."
+      "decision": "Revise the High-only operating-tension LinkedIn experiment into a decision-tool-promise experiment across the next three independently qualified High or selectively approved Library promotions.",
+      "evidence": "The High-only treatment was sample-blocked while broader LinkedIn exposure still failed to create engaged reading.",
+      "uncertainty": "Post-level samples remain small and topic effects are material; eligibility, schedule and volume remain unchanged.",
+      "nextCheckpoint": "Three independently qualified promoted posts or 2026-09-10."
+    },
+    {
+      "timestamp": "2026-09-01T09:20:00-04:00",
+      "decision": "Stop the search-compounding cluster experiment early and remove search traction as an editorial topic-selection tie-breaker.",
+      "evidence": "The explicit early review trigger is met: Google organic now has a usable 8-session rolling window but only 3 engaged sessions (37.5% versus the >=50% guardrail), while the treatment cluster fell to 1 click versus a 5-click baseline and >=8 target. Treatment-page rankings remain healthy, arguing against a ranking-collapse diagnosis.",
+      "uncertainty": "The small search sample prevents attributing the quality decline to the internal links themselves. Existing substantively useful cross-links therefore remain editorial links, but no further topic steering or link expansion will occur under the stopped treatment.",
+      "nextCheckpoint": "Use the freed experiment slot only for a specific, measurable acquisition or conversion problem with a bounded treatment; do not open a replacement solely to keep two experiments active."
     }
   ]
 }
