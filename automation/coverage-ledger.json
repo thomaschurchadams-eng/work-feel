@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fsb-frontier-ai-cyber-risk-financial-system",
+      "title": "FSB Tells Financial Firms to Prepare for AI-Accelerated Cyber Disruption",
+      "url": "/news/fsb-frontier-ai-cyber-risk-financial-system.html",
+      "publishedAt": "2026-09-01T07:00:00-04:00",
+      "section": "news",
+      "beat": "cybersecurity-resilience",
+      "functions": [
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "vendor-management",
+        "operations",
+        "board-strategy"
+      ],
+      "technologies": [
+        "privacy-security",
+        "generative-ai"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Technology, cybersecurity and operational-resilience leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "vendor-management teams",
+        "operations leaders",
+        "executives and board leaders"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-awaiting-live-verification",
+      "activeExperimentContext": "The search-supported cluster experiment informed links to AI change-control and vendor-continuity coverage without changing selection, sourcing or factual nuance. The active LinkedIn decision-tool promise experiment is reserved for the independently eligible High-priority social package after live verification.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-inventory-change-control.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/news/osfi-agentic-ai-risk-controls-credit-unions.html"
+      ],
+      "sourceTier": 1,
+      "score": 92.2
+    },
+    {
       "id": "cornerstone-rippleshot-credit-union-fraud-network",
       "title": "Cornerstone Opens Shared Fraud Intelligence to 600 Credit Unions",
       "url": "/news/cornerstone-rippleshot-credit-union-fraud-network.html",

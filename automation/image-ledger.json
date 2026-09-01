@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fsb-frontier-ai-cyber-risk-financial-system",
+      "articleUrl": "/news/fsb-frontier-ai-cyber-risk-financial-system.html",
+      "imagePath": "/assets/fsb-frontier-ai-cyber-risk-financial-system.jpg",
+      "publishedAt": "2026-09-01T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "physical-metaphor",
+      "composition": "single-object-negative-space",
+      "perspective": "low-angle",
+      "palette": "slate-lime",
+      "lighting": "rim-light",
+      "texture": "matte-clay",
+      "scene": "resilient-financial-system-core-reassembled-from-clean-independent-components-after-an-ai-accelerated-cyber-shock",
+      "conceptScore": 62.4,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "risk-and-security",
+          "score": 53.5
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "architecture-and-infrastructure",
+          "score": 47.4
+        }
+      ]
+    },
+    {
       "id": "cornerstone-rippleshot-credit-union-fraud-network",
       "articleUrl": "/news/cornerstone-rippleshot-credit-union-fraud-network.html",
       "imagePath": "/assets/cornerstone-rippleshot-credit-union-fraud-network.jpg",

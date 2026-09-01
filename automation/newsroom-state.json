@@ -1,14 +1,74 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-08-27T07:00:00-04:00",
+  "lastStandardRun": "2026-09-01T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Orion Financial Connects Digital Banking and Lending on Narmi",
-    "url": "https://creditunionainews.com/news/orion-financial-embedded-digital-lending.html",
-    "publishedAt": "2026-08-27T07:00:00-04:00",
+    "title": "FSB Tells Financial Firms to Prepare for AI-Accelerated Cyber Disruption",
+    "url": "https://creditunionainews.com/news/fsb-frontier-ai-cyber-risk-financial-system.html",
+    "publishedAt": "2026-09-01T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-01",
+      "headline": "Canadian Ukrainian Credit Union Builds an Agentic CRM Foundation",
+      "reason": "current institution deployment with an attributable 400-lead claim, but the primary announcement fell outside the 72-hour window and the outcome evidence is vendor-supplied"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "Narmi Launches AI DecisionAssist for Account Opening",
+      "reason": "mission-fit vendor launch, but no named credit-union deployment and early approval and review-time claims lack independent production evidence"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "India Prepares Agentic Payments on UPI",
+      "reason": "material global payments infrastructure development, but no direct U.S. credit-union operating change or institution implementation"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "MPS Credit Union Begins a Core Conversion",
+      "reason": "current credit-union technology event, but a planned routine conversion without vendor detail, measurable outcome or distinct AI operating thesis"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "Congressional Federal Credit Union Completes Technology Modernization",
+      "reason": "current institution transition, but no new platform capability, AI connection or verified operating result was disclosed"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "Florida West Coast Credit Union Starts a Core Conversion",
+      "reason": "current digital-banking change with member instructions, but no differentiated technology evidence or post-conversion result"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "CISA Publishes the Weekly Vulnerability Summary",
+      "reason": "credible current source, but a broad vulnerability inventory without a specific financial-sector or credit-union threat supporting a full article"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "America’s Credit Unions Reports CTR and SAR Modernization Needs",
+      "reason": "current compliance evidence, but no adopted rule and the AI or technology operating connection is incidental"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "America’s Credit Unions Calls for Check-Fraud Protection",
+      "reason": "important fraud advocacy, but the current item does not establish a new technology deployment, control standard or binding requirement"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "Socure Acquires Fravity for Agentic Fraud Operations",
+      "reason": "credible current vendor transaction already evaluated on August 31; no new credit-union implementation or outcome has emerged"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "Credit Union Times Discusses Simplifying AI Agent Experience",
+      "reason": "current industry commentary without a primary implementation evidence package, adopted standard or distinct operating event"
+    },
+    {
+      "date": "2026-09-01",
+      "headline": "Alkami Repeats Its Digital-Banking Market Ranking",
+      "reason": "vendor recognition and proprietary growth claims without a new product capability, institution deployment or public methodology"
+    },
     {
       "date": "2026-08-27",
       "headline": "MDT Partners with OnTrac AI on Credit-Union AI Readiness",
@@ -1340,6 +1400,11 @@
     {
       "functionalArea": "operations-contact-center",
       "opportunity": "A source-backed AI quality-assurance and knowledge-change playbook for contact-center leaders",
+      "priority": "completed-2026-08-28"
+    },
+    {
+      "functionalArea": "hr-workforce-coaching",
+      "opportunity": "AI-assisted workforce coaching and performance-measurement controls for HR and operations leaders",
       "priority": "next"
     }
   ]
