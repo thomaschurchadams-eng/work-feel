@@ -11,11 +11,21 @@
       "format": "executive-takeaway",
       "copy": "Cybersecurity leaders should test whether critical services can be rebuilt from clean components when normal identity, administration and provider paths cannot be trusted. The FSB's frontier-AI warning gives credit unions a concrete resilience agenda: map common dependencies, measure patch speed without weakening change control, and prove clean-system recovery. https://creditunionainews.com/news/fsb-frontier-ai-cyber-risk-financial-system.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-fsb-frontier-ai-cyber-risk-financial-system-2026-09-01",
       "scheduledFor": "2026-09-01T11:30:00-04:00",
-      "status": "queued",
+      "status": "scheduled",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-09-01T07:09:00-04:00",
       "imageUrl": "https://creditunionainews.com/assets/fsb-frontier-ai-cyber-risk-financial-system.jpg",
-      "imageAlt": "A modular financial-system core with isolated cables and clean recovery components ready to reconnect"
+      "imageAlt": "A modular financial-system core with isolated cables and clean recovery components ready to reconnect",
+      "postId": "6a96b2875ab766d1d74a3003",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "channelName": "CreditUnionAI News",
+      "scheduledAt": "2026-09-01T07:09:59-04:00",
+      "bufferDueAt": "2026-09-01T15:30:00.000Z",
+      "lastAttemptAt": "2026-09-01T07:09:59-04:00",
+      "lastResult": "created",
+      "duplicate": false,
+      "imageAttached": true,
+      "imageMimeType": "image/jpeg"
     },
     {
       "id": "linkedin-credit-union-ai-contact-center-qa-controls-2026-08-28",
