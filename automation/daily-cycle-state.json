@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-09-02",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 13,
     "beatsSearched": [
       "payments-member-liquidity",
@@ -29,6 +29,11 @@
         "primaryFunctionalAudience": "Payments, deposit-product and member-experience leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-priority"
+      },
+      {
+        "type": "alert",
+        "title": "America’s Credit Unions Releases a 50-State AI Law Guide",
+        "url": "https://creditunionainews.com/alerts/#americas-credit-unions-50-state-ai-law-guide"
       }
     ],
     "rejections": [
@@ -124,7 +129,7 @@
       },
       {
         "title": "America's Credit Unions Maps State-by-State AI Requirements",
-        "reason": "assigned to the separate operating-system Alert cycle and currently blocked there; not duplicated inside the full-article cycle",
+        "reason": "assigned to the separate operating-system Alert cycle; not duplicated inside the full-article cycle",
         "primaryAudience": "AI governance and compliance leaders",
         "secondaryAudiences": [
           "technology leaders",
@@ -141,11 +146,11 @@
         ]
       }
     ],
-    "status": "article-complete",
+    "status": "article-and-alert-complete",
     "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted workforce coaching and performance-measurement controls for HR and operations leaders",
-    "updatedAt": "2026-09-02T07:00:00-04:00"
+    "updatedAt": "2026-09-02T12:07:12-04:00"
   },
   "history": [
     {
@@ -568,7 +573,7 @@
           ]
         }
       ],
-      "status": "article-complete",
+      "status": "article-and-social-complete",
       "activeExperimentContext": "The search-supported cluster experiment informed relevant internal links without changing selection, sourcing or factual nuance. The active LinkedIn decision-tool promise experiment is reserved for the selectively qualified social package after live verification.",
       "nextCoverageGap": "AI-assisted workforce quality coaching and performance-measurement controls for HR and operations leaders",
       "updatedAt": "2026-08-28T07:11:29-04:00"
