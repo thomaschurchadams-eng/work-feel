@@ -6,148 +6,290 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-01",
+    "date": "2026-09-02",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 13,
     "beatsSearched": [
-      "ai-financial-stability",
-      "cybersecurity-resilience",
+      "payments-member-liquidity",
       "digital-banking-core",
-      "data-ai-strategy",
-      "payments-digital-infrastructure",
+      "ai-policy-governance",
+      "cybersecurity-resilience",
       "fraud-security",
       "regulatory-compliance",
+      "finance-treasury",
       "hr-workforce"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "FSB Tells Financial Firms to Prepare for AI-Accelerated Cyber Disruption",
-        "url": "https://creditunionainews.com/news/fsb-frontier-ai-cyber-risk-financial-system.html",
-        "primaryFunctionalAudience": "Technology, cybersecurity and operational-resilience leaders",
-        "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-09-01-11:30-et"
+        "title": "Navigator Adds AI-Assessed Earned Wage Access for Members",
+        "url": "https://creditunionainews.com/news/navigator-credit-union-ai-earned-wage-access.html",
+        "primaryFunctionalAudience": "Payments, deposit-product and member-experience leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-priority"
       }
     ],
     "rejections": [
       {
-        "title": "Canadian Ukrainian Credit Union Builds an Agentic CRM Foundation",
-        "reason": "current institution deployment with an attributable 400-lead claim, but the primary announcement fell outside the 72-hour window and the outcome evidence is vendor-supplied",
-        "primaryAudience": "functional leaders",
+        "title": "What Credit Unions Should Measure in AI-Assisted Employee Coaching",
+        "reason": "strong durable coverage gap, but held as the next fallback because a current credit-union AI product event qualified for News",
+        "primaryAudience": "HR and operations leaders",
         "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
+          "risk and compliance leaders",
+          "frontline supervisors"
         ]
       },
       {
-        "title": "Narmi Launches AI DecisionAssist for Account Opening",
-        "reason": "mission-fit vendor launch, but no named credit-union deployment and early approval and review-time claims lack independent production evidence",
-        "primaryAudience": "functional leaders",
+        "title": "WeDevelopment Federal Credit Union Merges Into CommunityAmerica",
+        "reason": "material credit-union event, but it does not disclose a substantive AI, automation, data or digital-technology operating change",
+        "primaryAudience": "executives and board leaders",
+        "secondaryAudiences": [
+          "operations leaders",
+          "integration teams"
+        ]
+      },
+      {
+        "title": "U.S. Presses G20 for a Hands-Off Approach to AI Regulation",
+        "reason": "current global AI-policy signal without a direct credit-union requirement, implementation event or financial-services control change",
+        "primaryAudience": "executives and policy leaders",
+        "secondaryAudiences": [
+          "risk and compliance leaders",
+          "technology leaders"
+        ]
+      },
+      {
+        "title": "FSB Warns Frontier AI Could Magnify Cyber Risk",
+        "reason": "duplicate-or-near-duplicate: published as the September 1 Daily Article with no new FSB evidence since publication",
+        "primaryAudience": "technology and cybersecurity leaders",
+        "secondaryAudiences": [
+          "risk leaders",
+          "operational-resilience teams"
+        ]
+      },
+      {
+        "title": "Cornerstone Opens Shared Fraud Intelligence to 600 Credit Unions",
+        "reason": "duplicate-or-near-duplicate: published as the August 31 Daily Article",
+        "primaryAudience": "fraud operations and payments leaders",
         "secondaryAudiences": [
           "technology leaders",
-          "risk and operations leaders"
+          "risk and compliance leaders"
+        ]
+      },
+      {
+        "title": "MPS Credit Union Begins a Multi-Day Core Conversion",
+        "reason": "current credit-union technology event, but a routine conversion without vendor detail, differentiated capability or post-conversion outcome evidence",
+        "primaryAudience": "technology and operations leaders",
+        "secondaryAudiences": [
+          "member-service leaders",
+          "vendor-management teams"
+        ]
+      },
+      {
+        "title": "NCUA Prohibits Three Individuals From Credit Union Work",
+        "reason": "credible current enforcement action without a substantive AI, fraud-technology, data or digital operating implication",
+        "primaryAudience": "compliance and legal leaders",
+        "secondaryAudiences": [
+          "executives",
+          "operations leaders"
+        ]
+      },
+      {
+        "title": "Blockchain Association Challenges Stablecoin Deposit-Flight Warnings",
+        "reason": "current advocacy position without a new rule, credit-union implementation or independently supported operating result",
+        "primaryAudience": "payments and treasury leaders",
+        "secondaryAudiences": [
+          "executives",
+          "risk and compliance leaders"
+        ]
+      },
+      {
+        "title": "OCC and FDIC Refocus Bank Supervision on Material Financial Risk",
+        "reason": "current bank-supervision change that does not apply to credit unions and lacks a substantive technology operating thesis for this publication",
+        "primaryAudience": "risk and compliance leaders",
+        "secondaryAudiences": [
+          "executives",
+          "internal-audit leaders"
         ]
       },
       {
         "title": "India Prepares Agentic Payments on UPI",
-        "reason": "material global payments infrastructure development, but no direct U.S. credit-union operating change or institution implementation",
-        "primaryAudience": "functional leaders",
+        "reason": "material agentic-payments development, but no direct U.S. credit-union operating change, deployment or control requirement",
+        "primaryAudience": "payments and technology leaders",
         "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
+          "risk leaders",
+          "digital-product teams"
         ]
       },
       {
-        "title": "MPS Credit Union Begins a Core Conversion",
-        "reason": "current credit-union technology event, but a planned routine conversion without vendor detail, measurable outcome or distinct AI operating thesis",
-        "primaryAudience": "functional leaders",
+        "title": "America's Credit Unions Maps State-by-State AI Requirements",
+        "reason": "assigned to the separate operating-system Alert cycle and currently blocked there; not duplicated inside the full-article cycle",
+        "primaryAudience": "AI governance and compliance leaders",
         "secondaryAudiences": [
           "technology leaders",
-          "risk and operations leaders"
+          "legal teams"
         ]
       },
       {
-        "title": "Congressional Federal Credit Union Completes Technology Modernization",
-        "reason": "current institution transition, but no new platform capability, AI connection or verified operating result was disclosed",
-        "primaryAudience": "functional leaders",
+        "title": "Federal Reserve Governor Barr Keeps a Rate Hike on the Table",
+        "reason": "important macroeconomic signal, but the AI reference is incidental and no technology operating implication supports a CUAI article",
+        "primaryAudience": "finance and treasury leaders",
         "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
-        ]
-      },
-      {
-        "title": "Florida West Coast Credit Union Starts a Core Conversion",
-        "reason": "current digital-banking change with member instructions, but no differentiated technology evidence or post-conversion result",
-        "primaryAudience": "functional leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
-        ]
-      },
-      {
-        "title": "CISA Publishes the Weekly Vulnerability Summary",
-        "reason": "credible current source, but a broad vulnerability inventory without a specific financial-sector or credit-union threat supporting a full article",
-        "primaryAudience": "functional leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
-        ]
-      },
-      {
-        "title": "America’s Credit Unions Reports CTR and SAR Modernization Needs",
-        "reason": "current compliance evidence, but no adopted rule and the AI or technology operating connection is incidental",
-        "primaryAudience": "functional leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
-        ]
-      },
-      {
-        "title": "America’s Credit Unions Calls for Check-Fraud Protection",
-        "reason": "important fraud advocacy, but the current item does not establish a new technology deployment, control standard or binding requirement",
-        "primaryAudience": "functional leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
-        ]
-      },
-      {
-        "title": "Socure Acquires Fravity for Agentic Fraud Operations",
-        "reason": "credible current vendor transaction already evaluated on August 31; no new credit-union implementation or outcome has emerged",
-        "primaryAudience": "functional leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
-        ]
-      },
-      {
-        "title": "Credit Union Times Discusses Simplifying AI Agent Experience",
-        "reason": "current industry commentary without a primary implementation evidence package, adopted standard or distinct operating event",
-        "primaryAudience": "functional leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
-        ]
-      },
-      {
-        "title": "Alkami Repeats Its Digital-Banking Market Ranking",
-        "reason": "vendor recognition and proprietary growth claims without a new product capability, institution deployment or public methodology",
-        "primaryAudience": "functional leaders",
-        "secondaryAudiences": [
-          "technology leaders",
-          "risk and operations leaders"
+          "executives",
+          "asset-liability teams"
         ]
       }
     ],
     "status": "article-complete",
-    "activeExperimentContext": "The search-supported cluster experiment informed relevant resilience links without changing selection, sourcing or factual nuance. The active LinkedIn decision-tool promise experiment is reserved for the independently eligible High-priority social package after live verification.",
+    "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted workforce coaching and performance-measurement controls for HR and operations leaders",
-    "updatedAt": "2026-09-01T07:09:59-04:00"
+    "updatedAt": "2026-09-02T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-01",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 13,
+      "beatsSearched": [
+        "ai-financial-stability",
+        "cybersecurity-resilience",
+        "digital-banking-core",
+        "data-ai-strategy",
+        "payments-digital-infrastructure",
+        "fraud-security",
+        "regulatory-compliance",
+        "hr-workforce"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "FSB Tells Financial Firms to Prepare for AI-Accelerated Cyber Disruption",
+          "url": "https://creditunionainews.com/news/fsb-frontier-ai-cyber-risk-financial-system.html",
+          "primaryFunctionalAudience": "Technology, cybersecurity and operational-resilience leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-09-01-11:30-et"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Canadian Ukrainian Credit Union Builds an Agentic CRM Foundation",
+          "reason": "current institution deployment with an attributable 400-lead claim, but the primary announcement fell outside the 72-hour window and the outcome evidence is vendor-supplied",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "Narmi Launches AI DecisionAssist for Account Opening",
+          "reason": "mission-fit vendor launch, but no named credit-union deployment and early approval and review-time claims lack independent production evidence",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "India Prepares Agentic Payments on UPI",
+          "reason": "material global payments infrastructure development, but no direct U.S. credit-union operating change or institution implementation",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "MPS Credit Union Begins a Core Conversion",
+          "reason": "current credit-union technology event, but a planned routine conversion without vendor detail, measurable outcome or distinct AI operating thesis",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "Congressional Federal Credit Union Completes Technology Modernization",
+          "reason": "current institution transition, but no new platform capability, AI connection or verified operating result was disclosed",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "Florida West Coast Credit Union Starts a Core Conversion",
+          "reason": "current digital-banking change with member instructions, but no differentiated technology evidence or post-conversion result",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "CISA Publishes the Weekly Vulnerability Summary",
+          "reason": "credible current source, but a broad vulnerability inventory without a specific financial-sector or credit-union threat supporting a full article",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "America’s Credit Unions Reports CTR and SAR Modernization Needs",
+          "reason": "current compliance evidence, but no adopted rule and the AI or technology operating connection is incidental",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "America’s Credit Unions Calls for Check-Fraud Protection",
+          "reason": "important fraud advocacy, but the current item does not establish a new technology deployment, control standard or binding requirement",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "Socure Acquires Fravity for Agentic Fraud Operations",
+          "reason": "credible current vendor transaction already evaluated on August 31; no new credit-union implementation or outcome has emerged",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "Credit Union Times Discusses Simplifying AI Agent Experience",
+          "reason": "current industry commentary without a primary implementation evidence package, adopted standard or distinct operating event",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        },
+        {
+          "title": "Alkami Repeats Its Digital-Banking Market Ranking",
+          "reason": "vendor recognition and proprietary growth claims without a new product capability, institution deployment or public methodology",
+          "primaryAudience": "functional leaders",
+          "secondaryAudiences": [
+            "technology leaders",
+            "risk and operations leaders"
+          ]
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "The search-supported cluster experiment informed relevant resilience links without changing selection, sourcing or factual nuance. The active LinkedIn decision-tool promise experiment is reserved for the independently eligible High-priority social package after live verification.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted workforce coaching and performance-measurement controls for HR and operations leaders",
+      "updatedAt": "2026-09-01T07:09:59-04:00"
+    },
     {
       "date": "2026-08-31",
       "fullArticleCount": 1,

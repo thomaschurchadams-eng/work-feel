@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "navigator-credit-union-ai-earned-wage-access",
+      "articleUrl": "/news/navigator-credit-union-ai-earned-wage-access.html",
+      "imagePath": "/assets/navigator-credit-union-ai-earned-wage-access.jpg",
+      "publishedAt": "2026-09-02T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "architectural-isometric",
+      "subject": "architecture-and-infrastructure",
+      "composition": "split-comparison",
+      "perspective": "isometric",
+      "palette": "amber-charcoal",
+      "lighting": "cinematic-side-light",
+      "texture": "polished-metal",
+      "scene": "a-controlled-bridge-links-completed-work-to-a-credit-union-deposit-before-the-distant-payday-marker",
+      "conceptScore": 69.2,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "financial-object-study",
+          "score": 63.1
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "member-interaction",
+          "score": 53.9
+        }
+      ]
+    },
+    {
       "id": "fsb-frontier-ai-cyber-risk-financial-system",
       "articleUrl": "/news/fsb-frontier-ai-cyber-risk-financial-system.html",
       "imagePath": "/assets/fsb-frontier-ai-cyber-risk-financial-system.jpg",

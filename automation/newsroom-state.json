@@ -1,14 +1,74 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-01T07:00:00-04:00",
+  "lastStandardRun": "2026-09-02T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "FSB Tells Financial Firms to Prepare for AI-Accelerated Cyber Disruption",
-    "url": "https://creditunionainews.com/news/fsb-frontier-ai-cyber-risk-financial-system.html",
-    "publishedAt": "2026-09-01T07:00:00-04:00",
+    "title": "Navigator Adds AI-Assessed Earned Wage Access for Members",
+    "url": "https://creditunionainews.com/news/navigator-credit-union-ai-earned-wage-access.html",
+    "publishedAt": "2026-09-02T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-02",
+      "headline": "What Credit Unions Should Measure in AI-Assisted Employee Coaching",
+      "reason": "strong durable coverage gap, but held as the next fallback because a current credit-union AI product event qualified for News"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "WeDevelopment Federal Credit Union Merges Into CommunityAmerica",
+      "reason": "material credit-union event, but it does not disclose a substantive AI, automation, data or digital-technology operating change"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "U.S. Presses G20 for a Hands-Off Approach to AI Regulation",
+      "reason": "current global AI-policy signal without a direct credit-union requirement, implementation event or financial-services control change"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "FSB Warns Frontier AI Could Magnify Cyber Risk",
+      "reason": "duplicate-or-near-duplicate: published as the September 1 Daily Article with no new FSB evidence since publication"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "Cornerstone Opens Shared Fraud Intelligence to 600 Credit Unions",
+      "reason": "duplicate-or-near-duplicate: published as the August 31 Daily Article"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "MPS Credit Union Begins a Multi-Day Core Conversion",
+      "reason": "current credit-union technology event, but a routine conversion without vendor detail, differentiated capability or post-conversion outcome evidence"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "NCUA Prohibits Three Individuals From Credit Union Work",
+      "reason": "credible current enforcement action without a substantive AI, fraud-technology, data or digital operating implication"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "Blockchain Association Challenges Stablecoin Deposit-Flight Warnings",
+      "reason": "current advocacy position without a new rule, credit-union implementation or independently supported operating result"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "OCC and FDIC Refocus Bank Supervision on Material Financial Risk",
+      "reason": "current bank-supervision change that does not apply to credit unions and lacks a substantive technology operating thesis for this publication"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "India Prepares Agentic Payments on UPI",
+      "reason": "material agentic-payments development, but no direct U.S. credit-union operating change, deployment or control requirement"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "America's Credit Unions Maps State-by-State AI Requirements",
+      "reason": "assigned to the separate operating-system Alert cycle and currently blocked there; not duplicated inside the full-article cycle"
+    },
+    {
+      "date": "2026-09-02",
+      "headline": "Federal Reserve Governor Barr Keeps a Rate Hike on the Table",
+      "reason": "important macroeconomic signal, but the AI reference is incidental and no technology operating implication supports a CUAI article"
+    },
     {
       "date": "2026-09-01",
       "headline": "Canadian Ukrainian Credit Union Builds an Agentic CRM Foundation",

@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "navigator-credit-union-ai-earned-wage-access",
+      "title": "Navigator Adds AI-Assessed Earned Wage Access for Members",
+      "url": "/news/navigator-credit-union-ai-earned-wage-access.html",
+      "publishedAt": "2026-09-02T07:00:00-04:00",
+      "section": "news",
+      "beat": "payments-member-liquidity",
+      "functions": [
+        "payments-deposits",
+        "member-service",
+        "risk-compliance",
+        "vendor-management",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "realtime-embedded-finance"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, deposit-product and member-experience leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "technology and data leaders",
+        "vendor-management teams",
+        "member-service leaders"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-inventory-change-control.html",
+        "/news/veridian-greenlight-family-finance-app.html"
+      ],
+      "sourceTier": 2,
+      "score": 74.2
+    },
+    {
       "id": "fsb-frontier-ai-cyber-risk-financial-system",
       "title": "FSB Tells Financial Firms to Prepare for AI-Accelerated Cyber Disruption",
       "url": "/news/fsb-frontier-ai-cyber-risk-financial-system.html",
