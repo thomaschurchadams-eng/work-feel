@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T09:22:00-04:00",
+  "updatedAt": "2026-09-02T09:44:00-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -118,6 +118,18 @@
       "owner": "CUAI CEO / Reporting",
       "result": "Safe full-ledger retrieval is available in this runtime and is used in the September 1 reporting branch to close the prior append-path degradation.",
       "rollback": "If validation finds any historical mismatch, revert only the September 1 ledger commit and retain the agent-bus recovery evidence."
+    },
+    {
+      "id": "alert-atomic-state-preservation-2026-09-02",
+      "evidence": "The qualified September 1 AI-law Alert handoff hit the same safe-edit limitation twice. The first recovery branch changed only assets/app.js and was correctly left unmerged because the authoritative Alert contract requires an atomic package. The second branch attempted the atomic state write, but compare against September 2 main showed automation/daily-cycle-state.json at +488/-3276, which would discard most audit history even though its Preview was READY.",
+      "proposedChange": "Make complete-blob retrieval and explicit history-preservation validation mandatory for Alert/state whole-file writes. Add an executable daily-cycle preservation validator and require connector-only runs to perform the equivalent branch-vs-main history check before merge.",
+      "expectedBenefit": "Prevent a recovery workflow from corrupting append-style newsroom state, turn repeated connector limitations into a deterministic safe-stop rule, and make READY Preview insufficient evidence when state history is destructive.",
+      "risk": "low",
+      "validation": ["new validator passes Node syntax check","synthetic preserved-history test passes","synthetic one-entry history shrink is rejected","current unsafe recovery branch remains unmerged after compare proved destructive state shrink","authoritative Operating System policy now requires full-blob retrieval and a pre-merge preservation invariant"],
+      "status": "completed",
+      "owner": "CUAI CEO / Reliability Watch / CUAI Operating System",
+      "result": "The destructive recovery path is contained and a durable non-destructive state-write contract is prepared on the September 2 CEO branch. The qualified Alert remains unpublished until a workflow can produce the complete atomic package without dropping history; no partial or destructive production change is accepted.",
+      "rollback": "Revert the September 2 Operating System policy and validator additions. The blocked recovery branches and Production content remain otherwise unchanged."
     }
   ]
 }

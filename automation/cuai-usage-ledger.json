@@ -293,7 +293,7 @@
       "timestamp": "2026-08-26T12:23:30-04:00",
       "actor": "reliability-watch",
       "runType": "recovery",
-      "trigger": "Reliability review found the August 26 AI-inventory LinkedIn item had sent successfully in Buffer at the fixed 11:30 a.m. ET slot while automation/social-queue.json on main still retained status scheduled without the authoritative sent timestamp or LinkedIn URL.",
+      "trigger": "Scheduled reliability check found the August 26 AI-inventory LinkedIn item had sent successfully in Buffer at the fixed 11:30 a.m. ET slot while automation/social-queue.json on main still retained status scheduled without the authoritative sent timestamp or LinkedIn URL.",
       "status": "recovered",
       "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"socialLedgerItemsReconciled":1,"recoveryBranchesReused":1,"previewDeploymentChecks":1,"usageLedgerChanges":1,"specialistSubagentsSpawned":0},
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
@@ -408,6 +408,17 @@
       "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"socialLedgerItemsReconciled":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":2,"previewDeploymentChecks":1,"usageLedgerChanges":1,"socialSchedulingAttempts":0,"specialistSubagentsSpawned":0},
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
       "summary": "Diagnosed repository delivery-state lag after a healthy asynchronous Buffer send, not an external posting failure. Buffer exactly matched the existing September 1 FSB frontier-AI cyber-resilience queue item and post ID 6a96b2875ab766d1d74a3003 and returned sentAt 2026-09-01T15:30:28.283Z, the approved CreditUnionAI News company-page link, and confirmed sent-post UTM tracking. Reconciled only that existing item in place from scheduled to sent with authoritative sentAt/externalLink fields; made no scheduler call, replacement post, UTM change, destination change, cadence change, credential action or editorial change. The September 1 publisher outcome remains complete, the live article returns HTTP 200, current Production was READY with no runtime errors, and the recovery Preview reached READY with its Buffer endpoint confirming the exact sent item and UTM state. This is a recurrence of the known asynchronous sent-state drift; the durable prevention remains the current idempotent exact item/post-ID reconciliation contract, applied at the first post-due reliability/operating check rather than by adding a credential-bearing callback that would broaden production authority.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-02T10:04:00-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI CEO operating review after the September 2 publisher cycle, with mandatory live GA4/Buffer/Search Console retrieval and follow-through on the repeated Alert atomic-write failure.",
+      "status": "degraded",
+      "workUnits": {"repositoryManagementFilesReviewed":17,"recentCommitsReviewed":30,"publisherCandidatesRepresented":13,"publisherBeatsRepresented":8,"articlesPublished":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"searchConsoleEndpointQueries":1,"productionDeploymentChecks":1,"runtimeHealthChecks":1,"liveArticleChecks":1,"growthExperimentsReviewed":1,"reliabilityRecoveryAttemptsObserved":2,"reliabilityImprovementsImplemented":1,"validatorsAdded":1,"previewDeploymentChecks":1,"improvementLedgerChanges":1,"reportingFilesUpdated":4,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
+      "summary": "Verified the September 2 Standard Navigator earned-wage-access article live after 13 candidates across eight beats, with no LinkedIn item as required by Standard promotion policy. Resolved exact Production commit 6652c4f2 and retrieved canonical GA4, Buffer and direct Search Console at HTTP 200/ok=true; Vercel reports no runtime errors. Seven-day GA4 is 43 active users/47 sessions/11 engaged versus 178/218/66 over 28 days; Google organic is 6 sessions/4 engaged/66.7%, while LinkedIn has only 12 Buffer impressions/6 reach across three metrics-ready posts and 1 exact GA4 session/0 engaged. Direct Search Console is 384 impressions/1 click/0.26% CTR versus 2,303/16/0.69% over 28 days. Kept the one active LinkedIn decision-tool-promise experiment unchanged through observation 3. A qualified September 1 AI-law Alert remains blocked after two recovery attempts because the atomic branch would destructively shrink daily-cycle history; kept that branch unmerged and added a full-blob/history-preservation invariant plus validator so READY Preview can no longer override append-state safety. Refreshed the rolling management report and workload ledger without changing credentials, schedules, pricing, legal terms or external authority.",
       "usageAttribution": "operational-proxy"
     }
   ]

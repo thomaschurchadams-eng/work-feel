@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T09:20:00-04:00",
+  "updatedAt": "2026-09-02T09:40:00-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -37,9 +37,9 @@
       "hypothesis": "For company-page posts that already qualify independently under the existing High or selective-Library promotion rules, making the reader outcome explicit in the post copy will improve qualified site traffic and engaged sessions versus continuing to optimize only the opening hook.",
       "evidence": [
         "The prior High-only operating-tension experiment was sample-blocked across consecutive CEO reviews, so the replacement cohort uses only posts that independently qualify under existing High or selective-Library rules without increasing promotion volume.",
-        "The first completed treatment observation, the August 28 contact-center QA Library post, currently shows 5 Buffer impressions / 2 reach / 0% engagement and 1 exact GA4 LinkedIn session / 0 engaged sessions.",
-        "The current seven-day joined funnel is 11 Buffer impressions / 5 reach across two metrics-ready posts -> 2 exact GA4 LinkedIn sessions -> 0 engaged sessions, versus 181 impressions / 115 reach and 13 GA4 LinkedIn sessions / 2 engaged sessions over 28 days.",
-        "The September 1 FSB frontier-AI cyber-resilience High post independently qualifies and is scheduled for 11:30 a.m. ET with exact CUAI UTMs. It will become treatment observation 2 only after authoritative send and metrics evidence are available."
+        "Treatment observation 1, the August 28 contact-center QA Library post, now shows 5 Buffer impressions / 2 reach / 0% engagement and 1 exact GA4 LinkedIn session / 0 engaged sessions.",
+        "Treatment observation 2, the September 1 FSB frontier-AI cyber-resilience High post, sent successfully with exact CUAI UTMs. Buffer currently reports 1 impression / 1 reach / 0% engagement; the current GA4 LinkedIn utm_content breakdown returns no exact row for that post yet, so do not invent a session count.",
+        "The current seven-day joined funnel is 12 Buffer impressions / 6 reach across three metrics-ready posts -> 1 exact GA4 LinkedIn session / 0 engaged sessions returned in the current utm_content breakdown, versus 183 impressions / 117 reach and 13 GA4 LinkedIn sessions / 2 engaged sessions over 28 days. Exposure is materially weak, but promotion volume will not be increased or Standard content promoted merely to improve the sample."
       ],
       "boundedChange": "For the next 3 independently qualified company-page posts, whether High or selectively approved Library, keep promotion eligibility, fixed schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. In the post copy, state the concrete credit-union operating decision, control or problem first and then state one specific reader outcome from the linked piece. Do not create extra posts or promote Standard content to fill the cohort.",
       "primaryMetric": "Exact GA4 LinkedIn traffic and quality by utm_content. Target median >=2 sessions per experiment post and at least 2 of 3 posts producing >=1 engaged session. Use Buffer reach as a supporting exposure metric, with a directional target of median reach >=12.",
@@ -73,7 +73,7 @@
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-decision-tool-promise-2026-08-27: observation 1 is complete and below target; the September 1 FSB High post is a pending second observation until authoritative send/metrics evidence arrives. For independently qualified High or selectively approved Library posts, preserve existing eligibility and schedule; state the operating decision/control first and one specific useful reader outcome. Do not promote Standard content or create extra posts to fill the cohort."
+      "ACTIVE EXPERIMENT linkedin-decision-tool-promise-2026-08-27: observations 1 and 2 are now exposure-metrics-ready and both are below the supporting reach target; only observation 1 currently has an exact GA4 utm_content row, at 1 session / 0 engaged. Continue unchanged through the next independently qualified High or selectively approved Library promotion; do not promote Standard content, add posting volume, or change cadence to fill the cohort."
     ],
     "articleOpeningGuidance": [
       "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. Normal editorial discretion and all sourcing/factual-nuance gates apply."
@@ -139,6 +139,13 @@
       "evidence": "The explicit early review trigger is met: Google organic now has a usable 8-session rolling window but only 3 engaged sessions (37.5% versus the >=50% guardrail), while the treatment cluster fell to 1 click versus a 5-click baseline and >=8 target. Treatment-page rankings remain healthy, arguing against a ranking-collapse diagnosis.",
       "uncertainty": "The small search sample prevents attributing the quality decline to the internal links themselves. Existing substantively useful cross-links therefore remain editorial links, but no further topic steering or link expansion will occur under the stopped treatment.",
       "nextCheckpoint": "Use the freed experiment slot only for a specific, measurable acquisition or conversion problem with a bounded treatment; do not open a replacement solely to keep two experiments active."
+    },
+    {
+      "timestamp": "2026-09-02T09:40:00-04:00",
+      "decision": "Keep the LinkedIn decision-tool-promise treatment unchanged through its third independently qualified observation rather than changing copy, cadence or eligibility mid-cohort.",
+      "evidence": "Observations 1 and 2 both have very low Buffer exposure and zero Buffer engagement; observation 1 produced 1 exact GA4 session / 0 engaged, while observation 2 has no current exact GA4 utm_content row. The broader seven-day LinkedIn channel is 12 impressions / 6 reach with 1 exact GA4 session / 0 engaged returned.",
+      "uncertainty": "The treatment is currently constrained by platform exposure as much as reader-promise quality. Increasing posting volume or promoting Standard content would confound the test and violate existing distribution rules.",
+      "nextCheckpoint": "The next independently qualified High/selective-Library promotion or 2026-09-10. If a third observation is similarly underexposed, close or redesign around distribution mechanics rather than extending the copy treatment indefinitely."
     }
   ]
 }

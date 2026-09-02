@@ -40,6 +40,15 @@ After the day's article handoff has completed or been recorded, run one bounded 
 - Update the Alerts archive/data, ticker, homepage module, relevant ledgers and daily-cycle state in one atomic package. Re-read `main` immediately before writing, preserve concurrent changes, run the relevant validators, confirm a READY production deployment, and verify the live Alerts page, ticker and homepage.
 - If no Alert qualifies, record the evidence gap in the task outcome. Do not manufacture an Alert.
 
+### State-preservation invariant for Alert writes
+
+Alert recovery is not complete merely because a Preview is READY. Shared append-style state must remain intact.
+
+- Never reconstruct `automation/daily-cycle-state.json`, `automation/cuai-usage-ledger.json`, or another large append-style ledger from a truncated snippet. When a whole-file replacement is the only available writer, resolve the exact current `main` blob SHA and retrieve the complete blob before preparing the replacement. If complete retrieval is unavailable, block the write and report the limitation.
+- Before any Alert/state branch is merged, compare it with current `main`. `automation/daily-cycle-state.json` history must not shrink, every pre-existing dated history entry must remain present, and the current date must not regress. Unexpected deletion of existing ledger/history state is a hard stop even when the article/Alert change itself is correct.
+- In a checkout-capable workspace, run `node scripts/validate-daily-cycle-preservation.mjs automation/daily-cycle-state.json main` whenever an Alert package changes daily-cycle state. In a connector-only runtime, perform the equivalent branch-vs-`main` comparison and explicit history-preservation check before merge.
+- Re-read `main` again immediately before the final write/merge. Atomicity means the complete required Alert package and complete preserved state move together; never merge a partial Alert package or a state rewrite that discards concurrent/audit history.
+
 The Alerts archive remains an archive. The homepage must never feature an Alert older than 72 hours. When no qualified fresh Alert exists, show the approved non-alert fallback rather than elevating stale material.
 
 ### What-to-watch freshness loop
