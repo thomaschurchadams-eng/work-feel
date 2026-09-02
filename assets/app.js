@@ -34,6 +34,19 @@
 
   const alertsData = [
     {
+      label: 'AI Governance',
+      headline: 'America’s Credit Unions Releases a 50-State AI Law Guide',
+      summary:
+        'America’s Credit Unions released a state-by-state AI law resource on August 31 covering current and upcoming laws that may affect credit unions, with statute links, effective dates, requirements, prohibitions and identified credit-union impacts.',
+      impact:
+        'Credit-union compliance, legal and AI-governance teams should use the guide to map applicable state requirements by operating footprint, assign owners and effective dates, and verify vendor and internal AI controls against the underlying statutes before implementation. The overview is a tracking aid, not a substitute for institution-specific legal review.',
+      sourceName: 'America’s Credit Unions',
+      sourceUrl:
+        'https://www.americascreditunions.org/news-media/news/now-available-resource-covers-ai-laws-all-50-states',
+      date: 'Sep 1, 2026',
+      slug: 'americas-credit-unions-50-state-ai-law-guide'
+    },
+    {
       label: 'Instant Payments',
       headline: 'Kansas City Fed Counts 588 Small Credit Unions on FedNow',
       summary:
