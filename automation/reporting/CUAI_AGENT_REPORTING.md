@@ -65,6 +65,10 @@ Each material CUAI agent run should append one entry containing:
 
 Do not invent token counts, credit counts, percentage-of-plan figures, cost estimates, revenue, sponsor pipeline, or CAI lead counts.
 
+### Large-ledger safe append
+
+When the available writer replaces the complete file, never reconstruct `automation/cuai-usage-ledger.json` from a truncated snippet. Resolve the exact current ledger blob SHA and retrieve the complete Git blob before preparing the replacement. If complete retrieval succeeds, append against that complete blob, re-read `main` immediately before writing, and preserve every pre-existing entry. If complete retrieval is unavailable or the blob SHA changed and cannot be safely reconciled, leave the ledger unchanged and report the exact blocker rather than degrading automatically to a truncated whole-file write.
+
 ## Reporting discipline
 
 1. Prefer existing evidence and current repository state over memory.
