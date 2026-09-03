@@ -34,6 +34,19 @@
 
   const alertsData = [
     {
+      label: 'Fraud & BSA',
+      headline: 'FinCEN and NCUA Clarify What Credit Unions Can Tell Members During Fraud Reviews',
+      summary:
+        'FinCEN, NCUA and the other federal banking agencies issued a joint statement on September 2 clarifying that SAR confidentiality rules do not prevent financial institutions from communicating with customers about potentially fraudulent transactions, other suspicious activity or account closures. The statement does not change BSA requirements or create new supervisory expectations.',
+      impact:
+        'Credit-union fraud, BSA/AML and member-service teams should review investigation and closure scripts so staff can give members timely, useful information without revealing whether a SAR was filed or disclosing protected SAR content. Align escalation paths across fraud, compliance and frontline teams, and document the boundary between permissible customer communication and prohibited SAR disclosure rather than defaulting to unnecessary silence.',
+      sourceName: 'FinCEN, NCUA and federal banking agencies',
+      sourceUrl:
+        'https://www.fincen.gov/news/news-releases/fincen-agencies-issue-joint-statement-suspicious-activity-report-confidentiality',
+      date: 'Sep 3, 2026',
+      slug: 'fincen-ncua-sar-confidentiality-customer-communications'
+    },
+    {
       label: 'AI Governance',
       headline: 'America’s Credit Unions Releases a 50-State AI Law Guide',
       summary:
@@ -422,8 +435,7 @@
       impact:
         'This forward-looking regulatory scrutiny signals rising expectations around AI governance, compliance documentation, and risk controls. Credit unions should ensure vendor contracts and internal model risk frameworks — especially for fraud detection, member servicing bots, and automated decisioning — are well-documented and explainable ahead of future U.S. examiner attention. (Levers: b, f)',
       sourceName: 'Reuters',
-      sourceUrl:
-        'https://www.reuters.com/sustainability/boards-policy-regulation/uk-regulator-kicks-off-review-impact-ai-retail-finance-2026-01-27/',
+      sourceUrl: 'https://www.reuters.com/sustainability/boards-policy-regulation/uk-regulator-kicks-off-review-impact-ai-retail-finance-2026-01-27/',
       date: 'Jan 27, 2026',
       slug: 'uk-regulator-ai-retail-finance-review'
     },
