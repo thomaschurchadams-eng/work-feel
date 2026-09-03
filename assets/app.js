@@ -24,7 +24,7 @@
         <div class="institute-banner-copy">
           <span class="institute-banner-kicker">Sponsored</span>
           <p><strong>Cooperative AI Institute</strong><span>Practical AI readiness for credit unions.</span></p>
-          <a class="institute-banner-cta" href="https://www.cooperativeaiinstitute.com/early-access-guide?source=creditunionainews&amp;medium=site-banner&amp;campaign=early-access">Explore Early Access <span aria-hidden="true">→</span></a>
+          <a class="institute-banner-cta" href="https://www.cooperativeaiinstitute.com/early-access-guide?utm_source=creditunionainews&amp;utm_medium=site_banner&amp;utm_campaign=cai_early_access&amp;utm_content=sitewide_banner">Explore Early Access <span aria-hidden="true">→</span></a>
         </div>
       </div>
     `;
@@ -1612,6 +1612,16 @@
         sendEvent('newsletter_intent', {
           ...dimensions,
           link_location: inArticle ? 'article' : 'site',
+          link_label: label
+        });
+      }
+      const inInstituteBanner = Boolean(link.closest('.institute-banner'));
+      if (inInstituteBanner && url.hostname.endsWith('cooperativeaiinstitute.com')) {
+        sendEvent('cai_banner_click', {
+          ...dimensions,
+          campaign: 'cai_early_access',
+          banner_location: 'sitewide_header',
+          destination_path: url.pathname,
           link_label: label
         });
       }
