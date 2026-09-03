@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "members-1st-delfi-ai-balance-sheet-cuso",
+      "articleUrl": "/news/members-1st-delfi-ai-balance-sheet-cuso.html",
+      "imagePath": "/assets/members-1st-delfi-ai-balance-sheet-cuso.jpg",
+      "publishedAt": "2026-09-03T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "mixed-media-collage",
+      "subject": "documents-and-controls",
+      "composition": "modular-grid",
+      "perspective": "overhead",
+      "palette": "monochrome-ink",
+      "lighting": "graphic-flat-light",
+      "texture": "newsprint-grain",
+      "scene": "an-asset-liability-evidence-file-separates-data-assumptions-model-scenarios-recommendations-approvals-and-execution",
+      "conceptScore": 69.6,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "score": 62.6
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "abstract-system-map",
+          "score": 56.4
+        }
+      ]
+    },
+    {
       "id": "navigator-credit-union-ai-earned-wage-access",
       "articleUrl": "/news/navigator-credit-union-ai-earned-wage-access.html",
       "imagePath": "/assets/navigator-credit-union-ai-earned-wage-access.jpg",

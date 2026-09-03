@@ -3,6 +3,46 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "members-1st-delfi-ai-balance-sheet-cuso",
+      "title": "Members 1st Invests in AI Balance-Sheet CUSO",
+      "url": "/news/members-1st-delfi-ai-balance-sheet-cuso.html",
+      "publishedAt": "2026-09-03T07:00:00-04:00",
+      "section": "news",
+      "beat": "finance-treasury-ai",
+      "functions": [
+        "finance-treasury",
+        "board-strategy",
+        "risk-compliance",
+        "vendor-management",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "agents-automation",
+        "data-decisioning"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Finance, treasury and asset-liability management leaders",
+      "secondaryAudiences": [
+        "board and executive leaders",
+        "risk and compliance leaders",
+        "technology and data leaders",
+        "vendor and CUSO governance teams"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-inventory-change-control.html",
+        "/insight-credit-union-ai-business-case-framework.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/news/federal-credit-union-investment-authority-bill.html"
+      ],
+      "sourceTier": 1,
+      "score": 78.1
+    },
+    {
       "id": "navigator-credit-union-ai-earned-wage-access",
       "title": "Navigator Adds AI-Assessed Earned Wage Access for Members",
       "url": "/news/navigator-credit-union-ai-earned-wage-access.html",
