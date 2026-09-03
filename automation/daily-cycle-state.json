@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-09-03",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 13,
     "beatsSearched": [
       "finance-treasury-ai",
@@ -29,6 +29,11 @@
         "primaryFunctionalAudience": "Finance, treasury and asset-liability management leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-priority"
+      },
+      {
+        "type": "alert",
+        "title": "FinCEN and NCUA Clarify What Credit Unions Can Tell Members During Fraud Reviews",
+        "url": "https://creditunionainews.com/alerts/#fincen-ncua-sar-confidentiality-customer-communications"
       }
     ],
     "rejections": [
@@ -141,11 +146,11 @@
         ]
       }
     ],
-    "status": "article-complete",
+    "status": "article-and-alert-complete",
     "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted workforce coaching and performance-measurement controls for HR and operations leaders",
-    "updatedAt": "2026-09-03T07:12:00-04:00"
+    "updatedAt": "2026-09-03T15:47:45-04:00"
   },
   "history": [
     {
@@ -290,7 +295,7 @@
         }
       ],
       "status": "article-and-alert-complete",
-      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+      "activeExperimentContext": "The search-supported cluster experiment informed relevant internal links without changing selection, sourcing or factual nuance. The active LinkedIn decision-tool promise experiment is reserved for the selectively qualified social package after live verification.",
       "recoveredMissedHighArticle": null,
       "nextCoverageGap": "AI-assisted workforce coaching and performance-measurement controls for HR and operations leaders",
       "updatedAt": "2026-09-02T12:07:12-04:00"
