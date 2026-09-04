@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "raiz-digital-account-opening-case-study",
+      "articleUrl": "/news/raiz-digital-account-opening-case-study.html",
+      "imagePath": "/assets/raiz-digital-platform-account-opening.jpg",
+      "publishedAt": "2026-09-04T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut",
+      "subject": "member-interaction",
+      "composition": "layered-depth",
+      "perspective": "eye-level",
+      "palette": "cobalt-coral",
+      "lighting": "high-contrast-studio",
+      "texture": "paper-fiber",
+      "scene": "a-paper-member-token-crosses-from-a-branch-counter-to-a-mobile-onboarding-channel-while-staff-retain-an-exception-path",
+      "conceptScore": 81,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "operations-environment",
+          "score": 75.8
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "frontline-workflow",
+          "score": 60.6
+        }
+      ]
+    },
+    {
       "id": "members-1st-delfi-ai-balance-sheet-cuso",
       "articleUrl": "/news/members-1st-delfi-ai-balance-sheet-cuso.html",
       "imagePath": "/assets/members-1st-delfi-ai-balance-sheet-cuso.jpg",

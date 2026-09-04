@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "raiz-digital-account-opening-case-study",
+      "title": "Raiz Case Study Reports Four-Minute Online Account Opening",
+      "url": "/news/raiz-digital-account-opening-case-study.html",
+      "publishedAt": "2026-09-04T07:00:00-04:00",
+      "section": "news",
+      "beat": "digital-banking-onboarding",
+      "functions": [
+        "operations",
+        "member-service",
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "marketing-growth"
+      ],
+      "technologies": [
+        "core-api-cloud",
+        "identity-biometrics",
+        "data-decisioning"
+      ],
+      "format": "case-study",
+      "audience": "functional-leader",
+      "primaryAudience": "Digital banking, operations and member-experience leaders",
+      "secondaryAudiences": [
+        "fraud and risk leaders",
+        "branch and member-service leaders",
+        "technology and data leaders",
+        "vendor-management teams"
+      ],
+      "maturity": "scaling",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+      "internalLinkTargets": [
+        "/news/orion-financial-embedded-digital-lending.html",
+        "/insight-credit-union-ai-inventory-change-control.html"
+      ],
+      "sourceTier": 2,
+      "score": 76
+    },
+    {
       "id": "members-1st-delfi-ai-balance-sheet-cuso",
       "title": "Members 1st Invests in AI Balance-Sheet CUSO",
       "url": "/news/members-1st-delfi-ai-balance-sheet-cuso.html",
