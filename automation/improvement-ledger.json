@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-02T09:44:00-04:00",
+  "updatedAt": "2026-09-04T10:12:00-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -130,6 +130,42 @@
       "owner": "CUAI CEO / Reliability Watch / CUAI Operating System",
       "result": "The destructive recovery path is contained and a durable non-destructive state-write contract is prepared on the September 2 CEO branch. The qualified Alert remains unpublished until a workflow can produce the complete atomic package without dropping history; no partial or destructive production change is accepted.",
       "rollback": "Revert the September 2 Operating System policy and validator additions. The blocked recovery branches and Production content remain otherwise unchanged."
+    },
+    {
+      "id": "cuai-to-cai-attribution-2026-09-03",
+      "evidence": "The sitewide sponsored CAI banner previously used nonstandard source/medium/campaign query parameters, so CUAI could not reliably join its own banner interaction to downstream CAI acquisition under the established UTM convention.",
+      "proposedChange": "Standardize the existing sponsored banner destination to utm_source=creditunionainews, utm_medium=site_banner, utm_campaign=cai_early_access, utm_content=sitewide_banner and add a privacy-safe cai_banner_click event without changing the destination, disclosure or external authority.",
+      "expectedBenefit": "Make G5 CUAI-to-CAI demand generation measurable from the CUAI side and enable downstream CAI reconciliation without treating missing attribution as zero demand.",
+      "risk": "low",
+      "validation": ["PR #175 limited the change to assets/app.js","standard UTM fields now match normal analytics semantics","dedicated cai_banner_click event contains no PII or free-form reader input","change merged as f060a1995350f719a0dd44271cb3c1a9d6173dfd","subsequent Production and analytics checks remain healthy"],
+      "status": "completed",
+      "owner": "CUAI CEO / Growth",
+      "result": "CUAI banner-side attribution is now standardized and privacy-safe. Downstream CAI sessions/intent still require CAI-side evidence before G5 progress can be claimed; unavailable is not zero.",
+      "rollback": "Revert PR #175 to restore the prior banner query parameters and remove the dedicated banner event."
+    },
+    {
+      "id": "stale-alert-pr-conflict-prevention-2026-09-03",
+      "evidence": "PR #176 staged a SAR-confidentiality Alert during candidate evaluation, but the same Operating System cycle later recorded a definitive no-Alert outcome for that candidate. Leaving the mergeable PR open created a contradictory future publication path.",
+      "proposedChange": "Treat any open Alert PR that contradicts a later same-cycle completion event as a material conflicting handoff; close or supersede it before the operating cycle is considered clean.",
+      "expectedBenefit": "Prevent rejected Alert candidates from becoming live later through stale branches and preserve the final operating decision as authoritative.",
+      "risk": "low",
+      "validation": ["later same-cycle no-Alert completion explicitly rejected the candidate","PR #176 was closed without merge","current main and live Alerts remained unchanged","PR #177 recorded the reliability recovery and workload entry","post-recovery Production remained READY with no runtime errors"],
+      "status": "completed",
+      "owner": "Reliability Watch / CUAI Operating System",
+      "result": "The stale conflicting Alert PR was contained without publishing rejected content. Future same-cycle contradictions are now a reliability condition rather than routine branch clutter.",
+      "rollback": "No production rollback is required; reopen the stale PR only if newer verified evidence supersedes the final no-Alert decision."
+    },
+    {
+      "id": "news-hub-snippet-treatment-2026-09-04",
+      "evidence": "Direct Search Console shows /news.html at 176 impressions / 0 clicks / position 14.54 over the seven days ending September 3 and 496 impressions / 0 clicks / position 16.75 over 28 days. The current title is generic while the visible H1 already states the specific page intent: AI News for Credit Unions.",
+      "proposedChange": "Run a metadata-only title/description experiment on /news.html, preserving the canonical URL, route, body, article ordering, editorial selection and publication cadence.",
+      "expectedBenefit": "Convert existing Google visibility into qualified visits without steering editorial coverage toward search demand.",
+      "risk": "low if changed with a narrow patch; elevated if the only available mutation requires whole-file replacement of the large shared static page",
+      "validation": ["repeated page-specific Search Console evidence supports the hypothesis","current metadata and H1 were directly inspected","whole-file replacement is not accepted as a safe way to implement this metadata-only treatment in the current CEO connector runtime"],
+      "status": "queued-safe-edit-required",
+      "owner": "CUAI CEO / Growth",
+      "result": "Not opened as an active experiment in this run. The second experiment slot remains free until the metadata can be changed through a narrow, reviewable patch or equivalent safe edit path; no risky rewrite was merged merely to create activity.",
+      "rollback": "Not applicable until treatment is implemented; if later opened, rollback is metadata-only restoration."
     }
   ]
 }
