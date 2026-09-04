@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T10:05:00-04:00",
+  "updatedAt": "2026-09-02T09:40:00-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -37,9 +37,9 @@
       "hypothesis": "For company-page posts that already qualify independently under the existing High or selective-Library promotion rules, making the reader outcome explicit in the post copy will improve qualified site traffic and engaged sessions versus continuing to optimize only the opening hook.",
       "evidence": [
         "The prior High-only operating-tension experiment was sample-blocked across consecutive CEO reviews, so the replacement cohort uses only posts that independently qualify under existing High or selective-Library rules without increasing promotion volume.",
-        "Treatment observation 1, the August 28 contact-center QA Library post, has 5 Buffer impressions / 2 reach / 0% engagement. A prior exact GA4 read attributed 1 session / 0 engaged; the current rolling-seven-day exact utm_content breakdown no longer returns that row, so the historical attribution remains quality-labeled rather than invented into the current window.",
-        "Treatment observation 2, the September 1 FSB frontier-AI cyber-resilience High post, sent successfully with exact CUAI UTMs and currently has 1 Buffer impression / 1 reach / 0% engagement. The current GA4 exact utm_content breakdown does not return that post, so no session count is inferred.",
-        "Current seven-day Buffer exposure across the two metrics-ready experiment posts is only 6 impressions / 3 reach / 0% mean engagement. The site-level LinkedIn channel has 2 GA4 sessions / 1 engaged session in seven days, but those sessions are not currently attributable to the active experiment item IDs."
+        "Treatment observation 1, the August 28 contact-center QA Library post, now shows 5 Buffer impressions / 2 reach / 0% engagement and 1 exact GA4 LinkedIn session / 0 engaged sessions.",
+        "Treatment observation 2, the September 1 FSB frontier-AI cyber-resilience High post, sent successfully with exact CUAI UTMs. Buffer currently reports 1 impression / 1 reach / 0% engagement; the current GA4 LinkedIn utm_content breakdown returns no exact row for that post yet, so do not invent a session count.",
+        "The current seven-day joined funnel is 12 Buffer impressions / 6 reach across three metrics-ready posts -> 1 exact GA4 LinkedIn session / 0 engaged sessions returned in the current utm_content breakdown, versus 183 impressions / 117 reach and 13 GA4 LinkedIn sessions / 2 engaged sessions over 28 days. Exposure is materially weak, but promotion volume will not be increased or Standard content promoted merely to improve the sample."
       ],
       "boundedChange": "For the next 3 independently qualified company-page posts, whether High or selectively approved Library, keep promotion eligibility, fixed schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. In the post copy, state the concrete credit-union operating decision, control or problem first and then state one specific reader outcome from the linked piece. Do not create extra posts or promote Standard content to fill the cohort.",
       "primaryMetric": "Exact GA4 LinkedIn traffic and quality by utm_content. Target median >=2 sessions per experiment post and at least 2 of 3 posts producing >=1 engaged session. Use Buffer reach as a supporting exposure metric, with a directional target of median reach >=12.",
@@ -53,31 +53,8 @@
         "no sensational or overstated promise in social copy"
       ],
       "startDate": "2026-08-27",
-      "reviewCondition": "Review after 3 independently qualified promoted posts or on 2026-09-10, whichever comes first. Keep only if exact GA4 sessions and engaged-session incidence improve directionally without degrading editorial trust or onsite quality; otherwise revise or stop. If observation 3 is similarly underexposed, stop or redesign around distribution mechanics rather than extending copy changes indefinitely.",
+      "reviewCondition": "Review after 3 independently qualified promoted posts or on 2026-09-10, whichever comes first. Keep only if exact GA4 sessions and engaged-session incidence improve directionally without degrading editorial trust or onsite quality; otherwise revise or stop.",
       "rollback": "Remove the decision-tool promise guidance and return company-page copy to normal editorial discretion. Promotion eligibility, schedules, credentials, destinations and published articles remain unchanged."
-    },
-    {
-      "id": "news-hub-search-snippet-2026-09-04",
-      "status": "active",
-      "hypothesis": "The News hub is already appearing frequently in Google around the edge of page one/page two, but its generic title and description do not clearly communicate the page's credit-union AI-news intent. A precise, non-keyword-stuffed title/meta treatment will convert existing impressions into qualified organic visits without changing editorial coverage.",
-      "evidence": [
-        "Direct Search Console for August 28-September 3 shows /news.html at 176 impressions / 0 clicks / 0% CTR / average position 14.54.",
-        "The 28-day view shows /news.html at 496 impressions / 0 clicks / 0% CTR / average position 16.75, confirming the no-click pattern across repeated periods rather than one anomalous week.",
-        "The current page title is generic ('CreditUnionAI News | News') while the visible H1 already states 'AI News for Credit Unions'. Current Google organic quality is strong enough to protect: 4 sessions / 3 engaged / 75% engagement over seven days versus 22 / 14 / 63.6% over 28 days."
-      ],
-      "boundedChange": "Change only the /news.html HTML title, meta description, Open Graph title/description and Twitter title/description to state the existing page intent more clearly: current AI and technology news for credit-union leaders with practical operating implications. Preserve canonical URL, route, body copy, article ordering, filters, editorial selection, publication cadence and all sourcing/mission-fit gates.",
-      "primaryMetric": "Exact /news.html Search Console clicks and CTR. Baseline: 176 impressions / 0 clicks / 0% CTR / position 14.54 in the seven-day window ending September 3. Target: at least 3 clicks and >=1% CTR in a complete post-indexing rolling-seven-day window, while average position remains no worse than 20 and sitewide GA4 Google-organic engagement remains >=50%.",
-      "guardrailMetrics": [
-        "No article-body, article-order, topic-selection or route changes",
-        "Canonical URL remains https://creditunionainews.com/news.html",
-        "No keyword stuffing or misleading promise",
-        "Google-organic engagement remains >=50% at a usable sample",
-        "Review any /news.html average-position deterioration greater than five positions across two consecutive reads",
-        "No LinkedIn schedule, eligibility, credential or destination change"
-      ],
-      "startDate": "2026-09-04",
-      "reviewCondition": "Review on 2026-09-18 or after 14 complete post-indexing days, whichever gives the cleaner comparison. Keep if clicks/CTR improve with position and engagement guardrails intact; revise or stop if CTR remains 0 after at least 150 post-change impressions, if the page loses more than five positions across repeated reads, or if organic engagement quality breaches the guardrail at a usable sample.",
-      "rollback": "Restore the prior /news.html title and social/meta descriptions only. No article, route, schedule, analytics configuration or editorial policy needs to change."
     }
   ],
   "closedExperiments": [
@@ -96,7 +73,7 @@
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-decision-tool-promise-2026-08-27: observations 1 and 2 remain severely underexposed at a combined 6 Buffer impressions / 3 reach / 0% mean engagement. Continue only through the next independently qualified High or selectively approved Library promotion; do not promote Standard content, add posting volume, or change cadence to fill the cohort."
+      "ACTIVE EXPERIMENT linkedin-decision-tool-promise-2026-08-27: observations 1 and 2 are now exposure-metrics-ready and both are below the supporting reach target; only observation 1 currently has an exact GA4 utm_content row, at 1 session / 0 engaged. Continue unchanged through the next independently qualified High or selectively approved Library promotion; do not promote Standard content, add posting volume, or change cadence to fill the cohort."
     ],
     "articleOpeningGuidance": [
       "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. Normal editorial discretion and all sourcing/factual-nuance gates apply."
@@ -166,16 +143,9 @@
     {
       "timestamp": "2026-09-02T09:40:00-04:00",
       "decision": "Keep the LinkedIn decision-tool-promise treatment unchanged through its third independently qualified observation rather than changing copy, cadence or eligibility mid-cohort.",
-      "evidence": "Observations 1 and 2 both have very low Buffer exposure and zero Buffer engagement; observation 1 produced 1 exact GA4 session / 0 engaged in a prior read, while observation 2 has no current exact GA4 utm_content row. Increasing posting volume or promoting Standard content would confound the treatment.",
-      "uncertainty": "The treatment is currently constrained by platform exposure as much as reader-promise quality.",
+      "evidence": "Observations 1 and 2 both have very low Buffer exposure and zero Buffer engagement; observation 1 produced 1 exact GA4 session / 0 engaged, while observation 2 has no current exact GA4 utm_content row. The broader seven-day LinkedIn channel is 12 impressions / 6 reach with 1 exact GA4 session / 0 engaged returned.",
+      "uncertainty": "The treatment is currently constrained by platform exposure as much as reader-promise quality. Increasing posting volume or promoting Standard content would confound the test and violate existing distribution rules.",
       "nextCheckpoint": "The next independently qualified High/selective-Library promotion or 2026-09-10. If a third observation is similarly underexposed, close or redesign around distribution mechanics rather than extending the copy treatment indefinitely."
-    },
-    {
-      "timestamp": "2026-09-04T10:05:00-04:00",
-      "decision": "Use the freed second experiment slot for a page-specific News-hub search-snippet treatment rather than returning to search-led editorial topic steering.",
-      "evidence": "The News hub has repeated meaningful Google visibility but zero clicks: 176 impressions / 0 clicks / position 14.54 over seven days and 496 / 0 / 16.75 over 28 days. Its generic title does not match its visible credit-union AI-news H1 as clearly as it could.",
-      "uncertainty": "Search snippets and rankings are partly controlled by Google and may change independently of metadata. The treatment therefore changes metadata only, preserves the canonical URL and editorial body, and uses explicit position/engagement guardrails.",
-      "nextCheckpoint": "2026-09-18 or 14 complete post-indexing days."
     }
   ]
 }
