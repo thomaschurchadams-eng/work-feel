@@ -1,7 +1,7 @@
 # CUAI CEO Report
 
-**As of:** 2026-09-04T10:15:00-04:00  
-**Operating posture:** Active optimization. Friday Output SLA is met. Production and required analytics reads are healthy. One LinkedIn growth experiment remains active; the second experiment slot stays deliberately free because the evidence-backed News-hub snippet treatment cannot be implemented through a sufficiently narrow write path in the current CEO runtime.
+**As of:** 2026-09-04T15:13:07-04:00  
+**Operating posture:** Active optimization. Friday Output SLA is met and the weekday operating loop is closed through the Alert/homepage-freshness cycle. Production and required analytics reads are healthy. One LinkedIn growth experiment remains active; the second experiment slot stays deliberately free because the evidence-backed News-hub snippet treatment cannot be implemented through a sufficiently narrow write path in the current CEO runtime.
 
 ## Data-source status
 
@@ -10,7 +10,7 @@
 - **GA4 endpoint:** retrieved successfully using exact Production commit; HTTP 200, `ok=true`, `source=google-analytics-data-api`, property `520110560`.
 - **Buffer:** retrieved successfully using exact Production commit; HTTP 200, `ok=true`, `source=buffer`; 2/2 seven-day and 13/13 28-day sent posts have metrics ready.
 - **Search Console:** the optional subsection inside `/api/ga4-metrics` still returns the known isolated `ga4_data_api_error` for incompatible organic-search dimensions/metrics. The validated direct `/api/search-console-metrics` path returned HTTP 200, `ok=true`, `source=google-search-console-api`, `permissionLevel=siteFullUser`; search reporting is therefore available and not degraded.
-- **ChatGPT Cloud task inventory:** retrieved successfully. Publish CUAI Daily Article, CUAI Operating System, CUAI Reliability Watch, CUAI CEO and CUAI CFO are present/enabled. Today's Operating System Alert/homepage cycle is due later and is not a current morning blocker.
+- **ChatGPT Cloud task inventory:** retrieved successfully. Publish CUAI Daily Article, CUAI Operating System, CUAI Reliability Watch, CUAI CEO and CUAI CFO are present/enabled. The September 4 Operating System cycle is complete with a valid no-Alert/homepage-freshness outcome.
 
 ## Newsroom outcome
 
@@ -62,6 +62,7 @@ The strongest page-specific opportunity remains `/news.html`: **176 impressions 
 1. **G5 attribution repaired:** PR #175 standardized the existing sponsored CAI banner to normal UTM fields and added a privacy-safe `cai_banner_click` event. This makes CUAI-side referral intent measurable without changing the sponsored disclosure or destination. Downstream CAI sessions/intent still require CAI-side evidence; missing downstream evidence is not zero demand.
 2. **Stale Alert branch class contained:** Reliability Watch closed PR #176 after it contradicted the later authoritative same-cycle no-Alert completion; PR #177 recorded the recovery. A rejected candidate therefore has no live merge path.
 3. **News-hub snippet treatment queued safely:** repeated Search Console evidence supports a metadata-only test, but the current whole-file connector write is not a sufficiently narrow implementation path. The treatment remains queued rather than creating activity through a risky rewrite.
+4. **Friday Alert/homepage cycle closed safely:** no new Alert was published. FinCEN's September 3 digital-asset scam-center Alert is operationally material, but no authoritative publication timestamp proves it appeared after the completed September 3 CUAI Alert cycle, so using it September 4 would be an unapproved historical backfill. The September 1 AI-law Alert has aged out of the homepage's 72-hour priority window; all timely <=7-day News/Insights candidates are already in the homepage card grid, so no non-duplicative watch item qualifies and the maintained evergreen vendor due-diligence fallback is the correct live state. The audit-only `homepageWatchState.reviewedAt` field remains blank because `assets/app.js` cannot be safely whole-file replaced from truncated retrieval solely to stamp a review date.
 
 Source-health registry remains last fully refreshed August 19 at 23 healthy / 3 redirected / 2 temporarily unavailable / 0 removed or contradicted. No current newsroom evidence indicates a source-health incident, but the next bounded maintenance refresh should not silently drift indefinitely.
 
@@ -70,7 +71,7 @@ Source-health registry remains last fully refreshed August 19 at 23 healthy / 3 
 **Score: met.** Evidence for the week:
 - **Weekday article outcomes:** Monday Cornerstone/Rippleshot Standard; Tuesday FSB High; Wednesday Navigator Standard; Thursday Members 1st/Delfi Standard; Friday Raiz Standard. All five weekday cycles are machine-observable.
 - **LinkedIn decisions:** explicit for each article. Tuesday's independently eligible FSB item sent with exact CUAI UTMs; Standard articles were correctly not selected. No duplicate or quota-filling post was created.
-- **Alert/homepage freshness:** the qualified America’s Credit Unions 50-state AI-law Alert was safely recovered/published September 2 with preserved state. The restored Operating System recorded a valid no-Alert/fresh-homepage outcome September 3 and is enabled for today's later cycle.
+- **Alert/homepage freshness:** the qualified America’s Credit Unions 50-state AI-law Alert was safely recovered/published September 2 with preserved state. The September 3 and September 4 Operating System cycles both left valid no-Alert outcomes. By Friday the AI-law Alert aged out of homepage priority, and because every timely non-duplicative candidate is already in the homepage card grid, the evergreen vendor due-diligence fallback correctly remains the homepage freshness state.
 - **Growth/conversion execution:** the weak search-compounding treatment was stopped on its guardrail September 1 rather than extended; PR #175 repaired CUAI→CAI attribution; the News-hub no-click opportunity is now evidence-scoped for a future safe metadata treatment.
 - **G4 commercial progress:** the internal `Founding AI Intelligence Partner` package exists. Numeric sponsor pricing remains deliberately TBD because the CFO close is provisional/partial and setting prices from incomplete cost evidence would be false precision.
 
@@ -87,12 +88,12 @@ No corrective action is required to claim the SLA. The most important next-cycle
 - **Daily Publisher:** evaluated 13 candidates across 8 beats; published one Standard News article; verified live production; made an explicit no-LinkedIn decision.
 - **CUAI CEO:** reviewed authoritative management/policy/state inputs, agent bus and 30 recent commits; resolved exact Production; queried GA4, Buffer and direct Search Console; checked exact-deployment runtime and live article; scored weekly SLA; reviewed the active experiment; reviewed G5 attribution and reliability recoveries; refreshed canonical reporting/improvement state.
 - **Reliability Watch:** current morning check found no material Production incident; prior stale Alert PR conflict was recovered and recorded.
-- **CUAI Operating System:** enabled; September 3 cycle recorded a valid no-Alert outcome while preserving the fresh AI-law Alert. Today's cycle is due later.
-- **Specialist subagents:** 0; the evidence was sufficiently localized for direct CEO decisions.
+- **CUAI Operating System:** completed the September 4 bounded scan; published no Alert, allowed the stale AI-law Alert to age off homepage priority, found no non-duplicative <=7-day watch candidate outside the existing homepage grid, preserved the evergreen fallback, and recorded the outcome on issue #160. The weekly competitive-distribution scan was not repeated because this week's dedupe key is already completed.
+- **Specialist subagents:** 0; the evidence was sufficiently localized for direct operating decisions.
 
 ## Usage
 
-Usage is an **operational workload proxy**, not exact OpenAI tokens, credits, plan percentage or cost. Observable work includes repository/state review, 30 recent commits, exact Production/deployment checks, three analytics/reporting reads (GA4, Buffer, direct Search Console), runtime/live-page verification, Cloud-task inventory review, experiment review, weekly SLA scoring and reporting/improvement-state updates. Exact native per-run OpenAI usage was not retrieved and is not estimated.
+Usage is an **operational workload proxy**, not exact OpenAI tokens, credits, plan percentage or cost. Observable work includes repository/state review, 30 recent commits, exact Production/deployment checks, three analytics/reporting reads (GA4, Buffer, direct Search Console), runtime/live-page verification, Cloud-task inventory review, experiment review, weekly SLA scoring, a bounded public Alert scan, homepage freshness/deduplication review, agent-bus completion reporting and canonical management-report refresh. Exact native per-run OpenAI usage was not retrieved and is not estimated. The large append-only `automation/cuai-usage-ledger.json` was not rewritten in this connector runtime because safe append/patch semantics are unavailable; no historical audit state was risked to force an entry.
 
 ## Tom decision required
 
