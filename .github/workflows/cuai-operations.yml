@@ -1,0 +1,41 @@
+name: CUAI verified operations
+on:
+  deployment_status:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cuai-production-operations
+  cancel-in-progress: false
+jobs:
+  operate:
+    if: >-
+      github.repository == 'thomaschurchadams-eng/work-feel' &&
+      ((github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+       (github.event.deployment_status.state == 'success' && github.event.deployment.ref == 'main' &&
+        (github.event.deployment.environment == 'Production' || github.event.deployment.environment == 'production')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+      id-token: write
+    env:
+      DEPLOYED_SHA: ${{ github.event.deployment.sha || github.sha }}
+    steps:
+      - name: Read the deployed revision
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ${{ env.DEPLOYED_SHA }}
+          persist-credentials: false
+      - name: Verify authorization and process bounded operations
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/run-secure-operations.cjs
+      - name: Preserve outcome receipts
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: cuai-operation-receipts-${{ github.run_id }}-${{ github.run_attempt }}
+          path: operation-receipts/
+          if-no-files-found: ignore
+          retention-days: 14

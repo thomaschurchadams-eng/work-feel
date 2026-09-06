@@ -1,3 +1,4 @@
+const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -123,11 +124,12 @@ function loadQueueItem(itemId) {
 }
 
 module.exports = async function handler(req, res) {
+  if (!await authorize(req, res)) return;
   res.setHeader('Cache-Control', 'no-store, max-age=0');
   res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
 
-  if (!['GET', 'POST'].includes(req.method)) {
-    res.setHeader('Allow', 'GET, POST');
+  if (!['POST'].includes(req.method)) {
+    res.setHeader('Allow', 'POST');
     return res.status(405).json({ ok: false, error: 'method_not_allowed' });
   }
 

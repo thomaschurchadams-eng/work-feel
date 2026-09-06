@@ -1,3 +1,4 @@
+const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -122,9 +123,10 @@ function imageAssets(post) {
 }
 
 module.exports = async function handler(req, res) {
+  if (!await authorize(req, res)) return;
   res.setHeader('Cache-Control', 'no-store, max-age=0');
   res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
-  if (!['GET', 'POST'].includes(req.method)) return res.status(405).json({ ok: false, error: 'method_not_allowed' });
+  if (!['POST'].includes(req.method)) return res.status(405).json({ ok: false, error: 'method_not_allowed' });
   const apiKey = process.env.BUFFER_API_KEY;
   if (!apiKey) return res.status(500).json({ ok: false, error: 'buffer_api_key_missing' });
   if (!process.env.VERCEL_GIT_COMMIT_SHA || value(req, 'commitSha') !== process.env.VERCEL_GIT_COMMIT_SHA) {
