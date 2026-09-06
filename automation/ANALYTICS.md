@@ -90,3 +90,8 @@ Diagnostic rules:
 - Strong LinkedIn and onsite outcomes across comparable posts: increase production around the winning topic, audience and format while preserving editorial diversity.
 
 Also review Vercel visitors, page views, referrers and production health. Recommend schedule or portfolio changes only when the sample is sufficient. Never send or report email addresses, names, form values, or free-form reader input.
+
+
+## Authenticated source collection — September 5, 2026
+
+The SHA-only URLs above are historical. Production metrics require the trusted GitHub workflow identity described in `SECURE-OPERATIONS.md`. Retrieve the latest `CUAI verified operations` source receipts; do not treat inaccessible live endpoints as zero data or try to expose credentials in a URL.

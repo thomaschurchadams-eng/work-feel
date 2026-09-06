@@ -1,3 +1,4 @@
+const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -148,6 +149,7 @@ function summarize(posts, days, now) {
 }
 
 module.exports = async function handler(req, res) {
+  if (!await authorize(req, res)) return;
   res.setHeader('Cache-Control', 'no-store, max-age=0');
   res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
 

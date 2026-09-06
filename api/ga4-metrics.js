@@ -1,3 +1,4 @@
+const { authorize } = require('../lib/operations-auth');
 const crypto = require('node:crypto');
 
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
@@ -291,6 +292,7 @@ async function queryWindow(config, token, days) {
 }
 
 module.exports = async function handler(req, res) {
+  if (!await authorize(req, res)) return;
   res.setHeader('Cache-Control', 'no-store, max-age=0');
   res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
 

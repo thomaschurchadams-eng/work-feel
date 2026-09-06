@@ -1,3 +1,4 @@
+const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
 const scheduleHandler = require('./buffer-schedule-image');
@@ -79,6 +80,8 @@ function validateTracking(item) {
 }
 
 module.exports = async function handler(req, res) {
+  if (req.method !== 'POST') return res.status(405).json({ok:false,error:'method_not_allowed'});
+  if (!await authorize(req, res)) return;
   res.setHeader('Cache-Control', 'no-store, max-age=0');
   res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
 
