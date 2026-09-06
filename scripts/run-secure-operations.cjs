@@ -20,7 +20,22 @@ async function recordQueue(id,original,result){
 (async()=>{
  if(!/^[a-f0-9]{40}$/.test(process.env.DEPLOYED_SHA||''))throw Error('invalid_deployment_sha');
  const current=await github('/commits/main');if(current.sha!==process.env.DEPLOYED_SHA){receipts.status='superseded';save();console.log('A newer main commit exists; its production deployment owns the next run.');return;}
- const health=await invoke('operations-health',{});if(health.status!==200||!health.data.ok||health.data.commit!==process.env.DEPLOYED_SHA||health.data.environment!=='production')throw Error('production_identity_check_failed');
+ // Main pushes can precede Vercel promotion. Poll only the authenticated,
+ // read-only health check for at most three minutes; operations remain gated.
+ const deadline=Date.now()+180000;let productionReady=false;
+ do {
+  const latest=await github('/commits/main');
+  if(latest.sha!==process.env.DEPLOYED_SHA){receipts.status='superseded';save();return;}
+  try {
+   const health=await invoke('operations-health',{});
+   receipts.productionCheck={status:health.status,commit:health.data.commit,environment:health.data.environment,error:health.data.error};
+   productionReady=health.status===200&&health.data.ok===true&&health.data.commit===process.env.DEPLOYED_SHA&&health.data.environment==='production';
+  }catch(error){receipts.productionCheck={error:error.message};}
+  if(productionReady)break;
+  if(Date.now()>=deadline)break;
+  await new Promise(resolve=>setTimeout(resolve,5000));
+ }while(Date.now()<deadline);
+ if(!productionReady)throw Error('production_identity_check_failed');
  receipts.authentication='verified';save();
  // Metrics are read-only. A source failure is recorded without concealing it or
  // preventing an independently eligible distribution item from being checked.
