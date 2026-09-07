@@ -453,6 +453,17 @@
       "externalSystemsTouched": ["GitHub", "Vercel"],
       "summary": "Diagnosed an internal abandoned-branch handoff, not a production or publisher outage. PR #176 was opened at 4:10 p.m. ET to stage a FinCEN/NCUA SAR-confidentiality Alert, but the same CUAI Operating System cycle later recorded its final 4:20 p.m. ET outcome that no Alert qualified because the FinCEN statement changed no BSA requirement or supervisory expectation and lacked the required technology-operating change. The open mergeable PR therefore contradicted the later authoritative task outcome and would have risked publishing rejected content; it also carried an unrelated historical experiment-context edit. Closed the stale PR without merging. Current main remained unchanged, Production stayed READY on f060a1995350f719a0dd44271cb3c1a9d6173dfd, the live article and Alerts surface remained HTTP 200 with the existing September 1 AI-law Alert, no runtime errors were found, and the September 3 Standard article/social state remained complete with no LinkedIn item required. Durable prevention: any operating-cycle branch or PR staged during candidate evaluation must be closed or explicitly superseded before the cycle posts a final no-Alert completion, and reliability should treat an open PR that contradicts a later same-cycle completion event as a material conflicting handoff.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-07T12:23:52-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review found the September 7 publisher daily-cycle history-loss incident was fully recovered in Production, but its required reliability-watch workload record was still missing from the canonical usage ledger because the prior run treated whole-file mutation as blocked despite complete Git-blob retrieval being available.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"publicationLedgerChecks":1,"socialQueueChecks":1,"activeCloudTaskChecks":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"usageLedgerChecks":2,"completeBlobRetrievals":1,"usageLedgerChanges":1,"recoveryBranchesCreated":1,"socialSchedulingAttempts":0,"specialistSubagentsSpawned":0},
+      "externalSystemsTouched": ["GitHub", "Vercel", "ChatGPT Cloud tasks"],
+      "summary": "Diagnosed a reporting-state omission after the core September 7 recovery, not a remaining publisher, social or production outage. Verified the ORNL FCU Standard article outcome is machine-observable and live, current Production is READY on exact main with no runtime errors, no September 7 LinkedIn reservation exists as required for Standard content, and the CUAI Operating System task is enabled with its later weekday cycle not yet due. Retrieved the exact current usage-ledger blob in full, preserved every existing historical entry, and appended only this missing reliability-watch recovery record on a feature branch for branch-vs-main validation before merge. No content, scheduler, UTM, destination, credential, editorial gate, Cloud-task setting or external authority changed. Durable prevention: when exact complete Git-blob retrieval succeeds, use the established full-blob plus branch-diff preservation path rather than treating the absence of a narrow patch API by itself as a reporting blocker.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
