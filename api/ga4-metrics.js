@@ -11,7 +11,8 @@ const CUAI_EVENTS = [
   'source_click',
   'related_content_click',
   'newsletter_intent',
-  'outbound_click'
+  'outbound_click',
+  'cai_banner_click'
 ];
 
 function requestValue(req, key) {

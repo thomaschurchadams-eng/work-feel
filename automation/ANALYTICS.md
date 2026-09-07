@@ -33,6 +33,12 @@ The LinkedIn copy must use `distributionUrl`, not the untagged canonical URL. Do
 
 The production scheduler at `/api/buffer-schedule-tracked` rejects queued items with missing, altered, or unapproved UTM parameters. The canonical page remains unchanged for SEO and internal linking.
 
+## CUAI-to-CAI attribution
+
+The sitewide Cooperative AI Institute banner is a clearly labeled sponsored/house promotional surface and must remain separate from independent editorial performance. Its destination uses the privacy-safe attribution contract in `automation/analytics-measurement.json`: `creditunionainews / site_banner / cai_early_access / sitewide_banner`.
+
+The shared tracker sends `cai_banner_click` when a reader clicks that banner. The GA4 reporting feed includes this event in the same aggregate event table as CUAI editorial/conversion events so the CEO can measure the CUAI-side referral signal. Downstream CAI sessions, intent and leads require CAI-side evidence and must not be inferred from a CUAI banner click alone.
+
 ## Buffer performance feed
 
 The read-only production endpoint `/api/buffer-metrics` returns the prior 28 days of sent CreditUnionAI News LinkedIn posts, normalized Buffer metrics, metric freshness, ledger matching, and separate 7-day and 28-day summaries. It accepts only the exact current Vercel deployment commit and never returns the Buffer API key, account member data, names, email addresses, form values, or reader-level data.
@@ -48,7 +54,7 @@ It reports:
 - site active users, new users, sessions, engaged sessions, engagement rate and page views;
 - acquisition by session source, medium and campaign;
 - LinkedIn sessions by `utm_content` using GA4's `sessionManualAdContent`, filtered to `linkedin / organic_social / cuai_news`;
-- CUAI editorial event totals (`article_view`, `engaged_reader`, `scroll_depth`, `source_click`, `related_content_click`, `newsletter_intent`, `outbound_click`);
+- CUAI editorial/conversion event totals (`article_view`, `engaged_reader`, `scroll_depth`, `source_click`, `related_content_click`, `newsletter_intent`, `outbound_click`, `cai_banner_click`);
 - page-level views, users, 90% scrolled users and engagement duration;
 - Search Console landing-page metrics when the GA4 property has an active Search Console link and the requested fields are available.
 
@@ -77,7 +83,8 @@ Analyze the full path:
 4. article views and engaged-reader rate;
 5. 50% and 90% scroll rates;
 6. source and related-content clicks;
-7. newsletter-intent rate and return visits.
+7. newsletter-intent rate and return visits;
+8. clearly labeled CUAI-to-CAI banner clicks and downstream CAI attribution when independently available.
 
 Compare results by editorial function, technology, format, audience, maturity, section, landing page, post format, publication weekday and posting time. Use the 7-day view for operating observations and the 28-day view for directional decisions. Do not change the publishing mix or schedule from one anomalous post; require a reasonable comparable sample or a repeated pattern.
 

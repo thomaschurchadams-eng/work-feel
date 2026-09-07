@@ -19,7 +19,8 @@
     "source_click": "The reader opens an external source from an article.",
     "related_content_click": "The reader follows an internal related-coverage link.",
     "newsletter_intent": "The reader clicks a newsletter or subscribe action.",
-    "outbound_click": "The reader opens another external destination."
+    "outbound_click": "The reader opens another external destination.",
+    "cai_banner_click": "The reader clicks the clearly labeled sitewide Cooperative AI Institute sponsored banner."
   },
   "bodyDataAttributes": {
     "data-section": "news or insights",
@@ -36,6 +37,13 @@
       "utm_campaign": "cuai_news",
       "utm_content": "Use the immutable automation/social-queue.json item id.",
       "rule": "Keep articleUrl canonical. Store the tagged URL separately as distributionUrl and use distributionUrl in the LinkedIn post copy."
+    },
+    "cai": {
+      "utm_source": "creditunionainews",
+      "utm_medium": "site_banner",
+      "utm_campaign": "cai_early_access",
+      "utm_content": "sitewide_banner",
+      "rule": "Keep the CAI banner clearly labeled Sponsored, use only privacy-safe attribution fields, and report banner clicks separately from independent editorial performance."
     }
   },
   "growthWindows": {
