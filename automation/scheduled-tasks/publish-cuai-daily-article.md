@@ -50,6 +50,15 @@ Every scheduled weekday article cycle must leave exactly one dated, machine-read
 
 Do not consider the scheduled article cycle complete until either the published article package or the no-publication/blocked state outcome is persisted to the canonical repository path, except when GitHub access itself prevents that persistence.
 
+### State-preservation invariant for daily article writes
+
+`automation/daily-cycle-state.json` is append-style audit state. Advancing the current date must never discard the prior completed cycle.
+
+- Re-read the exact current `main` state immediately before the article package write. When `current.date` changes, move the complete prior `current` object into `history` before replacing `current`; do not reconstruct the file from a truncated snippet or a stale historical slice.
+- When a whole-file replacement is the only available writer, resolve the exact current `main` blob SHA and retrieve the complete blob before preparing the replacement. If complete retrieval is unavailable, block the state write rather than risking audit-history loss.
+- Before merge or direct publication, compare the proposed state with the immediately preceding `main`. Every pre-existing dated history entry must remain present, the prior `current` date must be present in the new history when the date advances, history must not shrink, and the new `current.date` must not regress. Any unexplained deletion is a hard stop even when the article itself validates.
+- In a checkout-capable workspace, run `node scripts/validate-daily-cycle-preservation.mjs automation/daily-cycle-state.json main` whenever the publisher changes daily-cycle state. In a connector-only runtime, perform the equivalent branch-vs-`main` date/history-preservation comparison before writing or merging.
+
 ## Selective LinkedIn distribution
 
 LinkedIn is a selective distribution channel, not a mirror of daily output. The daily article cycle owns the bounded social-distribution action for qualifying High articles and selectively qualified Library Insights so that no separate handoff is required.
