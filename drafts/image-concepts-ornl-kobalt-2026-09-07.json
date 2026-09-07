@@ -1,0 +1,41 @@
+[
+  {
+    "medium": "ink-and-linocut",
+    "subject": "risk-and-security",
+    "composition": "diagonal-motion",
+    "perspective": "cutaway",
+    "palette": "emerald-cream",
+    "lighting": "diffused-overcast",
+    "texture": "ink-wash",
+    "scene": "vendor-evidence-packets-pass-through-an-automated-review-gate-before-reaching-a-human-risk-approval-desk",
+    "topicFit": 95,
+    "editorialClarity": 94,
+    "prohibitedElements": []
+  },
+  {
+    "medium": "editorial-photography",
+    "subject": "operations-environment",
+    "composition": "tight-close-up",
+    "perspective": "through-glass",
+    "palette": "plum-gold",
+    "lighting": "warm-practical",
+    "texture": "clean-photographic",
+    "scene": "risk-analyst-workspace-with-abstracted-vendor-files-evidence-tabs-and-a-separate-human-approval-tray",
+    "topicFit": 90,
+    "editorialClarity": 92,
+    "prohibitedElements": []
+  },
+  {
+    "medium": "cinematic-conceptual",
+    "subject": "human-machine-handoff",
+    "composition": "asymmetric-editorial",
+    "perspective": "long-lens",
+    "palette": "graphite-electric-yellow",
+    "lighting": "natural-window-light",
+    "texture": "fabric-and-wood",
+    "scene": "structured-control-evidence-emerges-from-an-automated-review-channel-and-stops-at-a-manual-risk-decision-point",
+    "topicFit": 94,
+    "editorialClarity": 95,
+    "prohibitedElements": []
+  }
+]

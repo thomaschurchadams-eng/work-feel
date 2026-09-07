@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ornl-fcu-kobalt-ai-vendor-risk",
+      "title": "ORNL FCU Selects AI Platform for Vendor Risk Reviews",
+      "url": "/news/ornl-fcu-kobalt-ai-vendor-risk.html",
+      "publishedAt": "2026-09-07T07:00:00-04:00",
+      "section": "news",
+      "beat": "vendor-risk-compliance-ai",
+      "functions": [
+        "risk-compliance",
+        "vendor-management",
+        "operations",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "regtech-monitoring",
+        "agents-automation",
+        "data-decisioning"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Risk, compliance and vendor-management leaders",
+      "secondaryAudiences": [
+        "technology and data leaders",
+        "operations leaders",
+        "internal-audit teams",
+        "board and executive leaders"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-inventory-change-control.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
+      "sourceTier": 2,
+      "score": 71.9
+    },
+    {
       "id": "raiz-digital-account-opening-case-study",
       "title": "Raiz Case Study Reports Four-Minute Online Account Opening",
       "url": "/news/raiz-digital-account-opening-case-study.html",

@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-04T07:00:00-04:00",
+  "lastStandardRun": "2026-09-07T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Raiz Case Study Reports Four-Minute Online Account Opening",
-    "url": "https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html",
-    "publishedAt": "2026-09-04T07:00:00-04:00",
+    "title": "ORNL FCU Selects AI Platform for Vendor Risk Reviews",
+    "url": "https://creditunionainews.com/news/ornl-fcu-kobalt-ai-vendor-risk.html",
+    "publishedAt": "2026-09-07T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-07",
+      "headline": "What Credit Unions Should Measure in AI-Assisted Employee Coaching",
+      "reason": "highest portfolio-gap score, but held as the next durable fallback because a current named credit-union AI risk implementation qualified for News"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "UNFCU Gives Members Immediate Digital Access to Replacement Cards",
+      "reason": "strong credit-union product launch, but its digital-card workflow contains less differentiated AI or automation evidence than the selected vendor-risk implementation"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "AmeriCU Investments Introduces AssetMap for Member Financial Planning",
+      "reason": "named credit-union adoption with limited disclosed automation detail, implementation measures or member-outcome evidence"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "Revolut Receives Conditional U.S. National Bank Approval",
+      "reason": "material competitive event, but the technology connection is indirect and the decision does not apply to credit unions"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "Federal Reserve Publishes 2026 Financial-System Cybersecurity Report",
+      "reason": "authoritative cyber source with indirect credit-union applicability and close portfolio overlap with the September 1 frontier-AI resilience article"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "FS-ISAC Names an Interim Chief Executive",
+      "reason": "credible sector-governance news without a new operating control, threat finding or credit-union technology decision"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "Tri City National Bank Launches Alkami Digital Sales and Service",
+      "reason": "current bank implementation without a credit-union deployment or a distinct AI operating result"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "LoanPro and CheckAlt Add Faster Payment Processing",
+      "reason": "vendor integration with no named credit-union deployment, production measure or differentiated AI capability"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "August Jobs Report Raises New Rate-Path Questions",
+      "reason": "material macroeconomic news, but the technology connection is incidental and does not support a CUAI operating thesis"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "Bank of America Announces Senior-Note Redemptions",
+      "reason": "routine capital-markets activity without a substantive AI, automation or credit-union operating implication"
+    },
+    {
+      "date": "2026-09-07",
+      "headline": "NCUA Artificial-Intelligence Control Primer for Credit Unions",
+      "reason": "authoritative evergreen guidance already incorporated across recent coverage; no fresh event supports a separate article today"
+    },
     {
       "date": "2026-09-04",
       "headline": "Freedom Credit Union Taps Salus for Automated Microloans",

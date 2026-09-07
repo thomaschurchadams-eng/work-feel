@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ornl-fcu-kobalt-ai-vendor-risk",
+      "articleUrl": "/news/ornl-fcu-kobalt-ai-vendor-risk.html",
+      "imagePath": "/assets/ornl-fcu-kobalt-ai-vendor-risk.jpg",
+      "publishedAt": "2026-09-07T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "ink-and-linocut",
+      "subject": "risk-and-security",
+      "composition": "diagonal-motion",
+      "perspective": "cutaway",
+      "palette": "emerald-cream",
+      "lighting": "diffused-overcast",
+      "texture": "ink-wash",
+      "scene": "vendor-evidence-packets-pass-through-an-automated-review-gate-before-reaching-a-human-risk-approval-desk",
+      "conceptScore": 68.7,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "cinematic-conceptual",
+          "subject": "human-machine-handoff",
+          "score": 68.6
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "operations-environment",
+          "score": 59.7
+        }
+      ]
+    },
+    {
       "id": "raiz-digital-account-opening-case-study",
       "articleUrl": "/news/raiz-digital-account-opening-case-study.html",
       "imagePath": "/assets/raiz-digital-platform-account-opening.jpg",
