@@ -3,7 +3,7 @@ const REPO='thomaschurchadams-eng/work-feel';
 const API='https://api.github.com/repos/'+REPO;
 const SITE='https://creditunionainews.com';
 const headers={Authorization:'Bearer '+process.env.GITHUB_TOKEN,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
-const receipts={startedAt:new Date().toISOString(),commit:process.env.DEPLOYED_SHA,authentication:'unverified',actions:[],errors:[]};
+const receipts={startedAt:new Date().toISOString(),commit:process.env.DEPLOYED_SHA,authentication:'unverified',actions:[],sourceRetries:[],errors:[]};
 fs.mkdirSync('operation-receipts',{recursive:true});
 const save=()=>fs.writeFileSync('operation-receipts/run.json',JSON.stringify(receipts,null,2)+'\n');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -16,7 +16,7 @@ async function readSource(route){
   response=await invoke(route,{});
   const deploymentRace=response.status===403&&response.data?.error==='deployment_commit_mismatch';
   if(!deploymentRace||attempt===3)return response;
-  receipts.actions.push({route,action:'retry-transient-deployment-mismatch',attempt});save();
+  receipts.sourceRetries.push({route,reason:'deployment_commit_mismatch',attempt});save();
   await sleep(5000);
  }
  return response;
@@ -59,6 +59,6 @@ async function recordQueue(id,original,result){
  // quality, tracking, live article/image, fixed time and duplicate/day limits.
  if(candidates.length){const item=candidates[0];const result=await invoke('buffer-schedule-tracked',{itemId:item.id});receipts.actions.push({itemId:item.id,...result});save();if([200,201].includes(result.status)&&result.data.ok&&typeof result.data.postId==='string'&&result.data.postId.length>0){await recordQueue(item.id,item,result.data);}else receipts.errors.push({route:'buffer-schedule-tracked',error:result.data.error||'schedule_receipt_missing'});}
  receipts.completedAt=new Date().toISOString();receipts.status=receipts.errors.length?'attention':'verified';save();
- console.log('Production identity verified; '+receipts.actions.length+' bounded actions; '+receipts.errors.length+' source/action exceptions.');
+ console.log('Production identity verified; '+receipts.actions.length+' distribution attempts; '+receipts.errors.length+' source/action exceptions.');
  if(receipts.errors.length)process.exitCode=1;
 })().catch(error=>{receipts.errors.push({error:error.message});receipts.status='failed';save();console.error(error.message);process.exitCode=1;});
