@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-07T07:00:00-04:00",
+  "lastStandardRun": "2026-09-08T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "ORNL FCU Selects AI Platform for Vendor Risk Reviews",
-    "url": "https://creditunionainews.com/news/ornl-fcu-kobalt-ai-vendor-risk.html",
-    "publishedAt": "2026-09-07T07:00:00-04:00",
-    "route": "news"
+    "title": "A Scorecard for AI-Assisted Employee Coaching at Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-employee-coaching-scorecard.html",
+    "publishedAt": "2026-09-08T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-08",
+      "headline": "Aviva Investors Plans to Make Generative AI Use a Staff Objective",
+      "reason": "current workforce signal, but it is an asset-manager policy without a credit-union implementation, result or direct operating requirement"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "ECB Worker Survey Finds AI Use Rising Alongside Uneven Productivity Gains",
+      "reason": "useful background evidence, but the European worker survey is not a credit-union event and does not support a standalone U.S. operating brief"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "UNFCU Gives Members Immediate Digital Access to Replacement Cards",
+      "reason": "credible digital-card workflow, but it is four days old, was already evaluated, and discloses no differentiated AI capability or operating result"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "AmeriCU Investments Introduces AssetMap for Member Financial Planning",
+      "reason": "named credit-union adoption with limited automation detail and no implementation or member-outcome evidence"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "Truliant Introduces a Transparent Credit Card",
+      "reason": "credit-union product news whose technology connection is routine digital servicing rather than a substantive AI or technology operating change"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "Federal Reserve Publishes a Financial-System Cybersecurity Report",
+      "reason": "authoritative but indirect credit-union applicability and close overlap with the September 1 frontier-AI cyber-resilience article"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "Protectt.ai Launches Security Controls for Model Context Protocol",
+      "reason": "current technical release without a named U.S. financial-institution or credit-union deployment, independent validation or operating result"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "Blue Machines AI Launches a Banking Speech-to-Text Model for India",
+      "reason": "vendor launch centered on Indian languages and infrastructure, with no U.S. credit-union deployment or transferable outcome evidence"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "NCUA Artificial-Intelligence Control Resources for Credit Unions",
+      "reason": "authoritative evergreen resources used as supporting evidence, but no fresh update supports a separate article"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "FSB Sound Practices for Financial Institutions' Responsible AI Adoption",
+      "reason": "credible June consultation already overtaken in the recent portfolio by the September 1 frontier-AI resilience coverage"
+    },
+    {
+      "date": "2026-09-08",
+      "headline": "FinovateFall Sets an AI-Heavy Demo Slate for September",
+      "reason": "event preview without demonstrated credit-union implementation evidence or a decision-ready operating result"
+    },
     {
       "date": "2026-09-07",
       "headline": "What Credit Unions Should Measure in AI-Assisted Employee Coaching",
@@ -1640,6 +1695,11 @@
     {
       "functionalArea": "hr-workforce-coaching",
       "opportunity": "AI-assisted workforce coaching and performance-measurement controls for HR and operations leaders",
+      "priority": "completed-2026-09-08"
+    },
+    {
+      "functionalArea": "marketing-growth",
+      "opportunity": "AI-assisted member segmentation, campaign measurement and offer-suppression controls for marketing leaders",
       "priority": "next"
     }
   ]

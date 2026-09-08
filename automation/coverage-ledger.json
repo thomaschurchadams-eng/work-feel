@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-employee-coaching-scorecard",
+      "title": "A Scorecard for AI-Assisted Employee Coaching at Credit Unions",
+      "url": "/insight-credit-union-ai-employee-coaching-scorecard.html",
+      "publishedAt": "2026-09-08T07:00:00-04:00",
+      "section": "insights",
+      "beat": "hr-workforce-coaching",
+      "functions": [
+        "hr-training",
+        "operations",
+        "risk-compliance",
+        "member-service"
+      ],
+      "technologies": [
+        "workforce-learning",
+        "data-decisioning",
+        "generative-ai"
+      ],
+      "format": "comparison",
+      "audience": "functional-leader",
+      "primaryAudience": "HR, learning and operations leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "member-service leaders",
+        "frontline supervisors",
+        "technology and data leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-library-pending-live-verification",
+      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment supports a specific promotion angle only after the article is live; selection, sourcing and factual nuance were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-workforce-plan.html",
+        "/insight-credit-union-ai-contact-center-qa-controls.html"
+      ],
+      "sourceTier": 1,
+      "score": 78.8
+    },
+    {
       "id": "ornl-fcu-kobalt-ai-vendor-risk",
       "title": "ORNL FCU Selects AI Platform for Vendor Risk Reviews",
       "url": "/news/ornl-fcu-kobalt-ai-vendor-risk.html",
