@@ -15,11 +15,11 @@
 
 ## System health
 
-**Healthy core / measurement degraded.** Current `main` is `356eb9aba31df6eb687c3ce5c6c4d5d86a17c8ae`, the exact September 8 LinkedIn sent-state recovery merge. Reliability Watch verified Production READY on that merge, reran authenticated verified operations with no distribution actions, and found no Vercel runtime errors. The article and social delivery are not implicated in the GA4 measurement incident.
+**Healthy core / measurement degraded.** The production/recovery state reviewed includes September 8 LinkedIn sent-state merge `356eb9aba31df6eb687c3ce5c6c4d5d86a17c8ae`. Reliability Watch verified Production READY on that merge, reran authenticated verified operations with no distribution actions, and found no Vercel runtime errors. The article and social delivery are not implicated in the GA4 measurement incident.
 
 ## Data-source status
 
-- **GitHub / agent bus:** current `main`, authoritative operating policy, goals, coordination/output/reporting contracts, current publisher handoff, reliability recovery, CFO handoff and Alert/homepage completion were reviewed.
+- **GitHub / agent bus:** current repository state, authoritative operating policy, goals, coordination/output/reporting contracts, current publisher handoff, reliability recovery, CFO handoff and Alert/homepage completion were reviewed.
 - **GA4:** prior authenticated aggregate metrics remain usable subject to their existing integrity checks, but a missing low-volume event row must not be interpreted as zero while thresholding metadata is discarded by `api/ga4-metrics.js`.
 - **Buffer:** exact post id `6a9ff1bd9a6cf52c7fd6e694` sent at `2026-09-08T15:30:30.921Z`; LinkedIn delivery was reconciled to the existing queue item only.
 - **Source health:** canonical source-health ledger remains due for its bounded refresh by 2026-09-09T17:00:00-04:00.
