@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T09:14:33-04:00",
+  "updatedAt": "2026-09-09T09:55:00-04:00",
   "status": "active-optimization",
   "objective": "Grow a qualified credit-union audience while preserving editorial trust, usefulness, topic diversity and production quality.",
   "measurementWindows": {
@@ -30,36 +30,17 @@
     "minimumRepeatedPeriodsForStructuralChange": 2,
     "rule": "Use imperfect but directionally useful evidence for reversible experiments. Do not treat pending metrics, inaccessible analytics or one anomalous post as evidence for a structural change. If insufficient sample blocks two consecutive CEO reviews, the second review must take a safe action to improve sample quality or measurement."
   },
-  "activeExperiments": [
+  "activeExperiments": [],
+  "closedExperiments": [
     {
       "id": "linkedin-decision-tool-promise-2026-08-27",
-      "status": "active",
-      "hypothesis": "For company-page posts that already qualify independently under the existing High or selective-Library promotion rules, making the reader outcome explicit in the post copy will improve qualified site traffic and engaged sessions versus continuing to optimize only the opening hook.",
-      "evidence": [
-        "The prior High-only operating-tension experiment was sample-blocked across consecutive CEO reviews, so the replacement cohort uses only posts that independently qualify under existing High or selective-Library rules without increasing promotion volume.",
-        "Treatment observation 1, the August 28 contact-center QA Library post, shows 5 Buffer impressions / 2 reach / 0% engagement and one clean matching GA4 LinkedIn session / 0 engaged sessions.",
-        "Treatment observation 2, the September 1 FSB frontier-AI cyber-resilience High post, sent successfully with exact CUAI UTMs and has 1 Buffer impression / 1 reach / 0% engagement. The current GA4 post-level breakdown does not return a clean matching FSB row, so no exact session count is assigned to that post.",
-        "Treatment observation 3 is the September 8 employee-coaching scorecard Library Insight. It independently cleared the selective-Library gate after 12 candidates across nine beats, is live and production-verified, and is scheduled for 11:30 a.m. ET through CUAI verified operations with postId 6a9ff1bd9a6cf52c7fd6e694, exact UTMs, image attached and no duplicate. It is not yet due or metrics-ready at this CEO checkpoint.",
-        "Exact-current GA4 reports 4 LinkedIn / organic_social / cuai_news sessions and 2 engaged sessions over seven days, but every post-level sessionManualAdContent row currently carries the August 19 Treasury item id while landing on the homepage, Members 1st and Raiz pages. Those landing paths do not match the Treasury queue item's canonical article path. The social queue and verified scheduler receipts preserve the required exact UTMs, so this mismatch is a post-level attribution-quality problem; its underlying GA4 cause is not yet established."
-      ],
-      "boundedChange": "For 3 independently qualified company-page posts, whether High or selectively approved Library, keep promotion eligibility, fixed schedule, frequency, destination, image rules, editorial gates and immutable UTMs unchanged. In the post copy, state the concrete credit-union operating decision, control or problem first and then state one specific reader outcome from the linked piece. Do not create extra posts or promote Standard content to fill the cohort.",
-      "primaryMetric": "Post-level GA4 LinkedIn traffic and quality by utm_content, counted as exact only when the returned sessionManualAdContent matches the queue item id and the returned landing page matches that item's canonical article path. Mismatched rows are excluded from post-level experiment scoring but channel-level LinkedIn sessions remain a supporting aggregate. Target median >=2 clean matching sessions per experiment post and at least 2 of 3 posts producing >=1 engaged session. Use Buffer reach as a supporting exposure metric, with a directional target of median reach >=12.",
-      "guardrailMetrics": [
-        "No change to High/Library promotion eligibility",
-        "No Standard article promoted solely to fill the experiment",
-        "Buffer impressions and reach",
-        "GA4 engaged-reader and 90% scroll signals",
-        "GA4 newsletter-intent when returned",
-        "Post-level GA4 rows must match both immutable utm_content and the queue item's canonical landing path before being called exact attribution",
-        "one-post-per-day and five-per-week distribution limits",
-        "no sensational or overstated promise in social copy"
-      ],
-      "startDate": "2026-08-27",
-      "reviewCondition": "Review after the September 8 observation has sent and has authoritative Buffer/GA4 evidence, or on 2026-09-10, whichever comes first. Keep only if clean matching GA4 sessions and engaged-session incidence improve directionally without degrading editorial trust or onsite quality. If the third post is again severely underexposed, stop or redesign around distribution mechanics instead of extending the copy treatment.",
-      "rollback": "Remove the decision-tool promise guidance and return company-page copy to normal editorial discretion. Promotion eligibility, schedules, credentials, destinations and published articles remain unchanged."
-    }
-  ],
-  "closedExperiments": [
+      "status": "stopped-2026-09-09",
+      "decision": "Stop the completed three-post copy treatment rather than extend it. The cohort does not support a keep decision because exact post-level GA4 attribution remains unreliable, and Buffer behavior does not show a repeatable engagement lift.",
+      "baseline": "The treatment was opened after the prior High-only hook test remained sample-starved and LinkedIn exposure was failing to convert into engaged reading.",
+      "finalEvidence": "Observation 1 (Aug. 28 contact-center QA) produced 5 Buffer impressions / 2 reach / 0% engagement and one clean matching GA4 session / 0 engaged. Observation 2 (Sep. 1 FSB frontier-AI) produced 1 impression / 1 reach / 0% engagement with no clean matching GA4 post row. Observation 3 (Sep. 8 employee coaching) is now metrics-ready at 23 impressions / 19 reach / 0% engagement. Exact-current GA4 reports 3 LinkedIn channel sessions / 1 engaged over seven days, but all current post-level rows still carry the Aug. 19 Treasury utm_content while landing on unrelated pages, so none can be assigned to Sep. 8 as exact attribution.",
+      "outcome": "Do not extend the decision-tool-promise copy guidance or open another copy-only cohort while post-level attribution is unresolved. Return company-page copy to normal editorial discretion under existing eligibility, cadence, UTM and image rules. Preserve channel-level LinkedIn aggregates as usable supporting evidence. A bounded attribution-integrity diagnostic is assigned to Reliability Watch through issue #160; this is measurement work, not a new growth experiment.",
+      "rollback": "No production rollback is required. If later evidence establishes trustworthy post-level attribution and a specific copy hypothesis, a new bounded experiment may be opened prospectively without rewriting historical posts."
+    },
     {
       "id": "search-compounding-cluster-2026-08-24",
       "status": "stopped-2026-09-01",
@@ -75,7 +56,7 @@
     "priorityAudiences": [],
     "priorityFormats": [],
     "linkedinHookGuidance": [
-      "ACTIVE EXPERIMENT linkedin-decision-tool-promise-2026-08-27: observation 3 is the September 8 employee-coaching Library post, independently qualified and scheduled for 11:30 a.m. ET. Preserve eligibility, cadence, UTMs and image/editorial guardrails. After it sends and metrics refresh, close or revise the cohort rather than extending it indefinitely. Count a GA4 post-level result as exact only when both utm_content and landing path match the queue item; use channel-level LinkedIn sessions only as supporting evidence when those fields conflict."
+      "No active LinkedIn copy experiment. Use normal editorial discretion for otherwise-eligible High/selective-Library posts while preserving fixed cadence, eligibility, immutable UTMs and image rules. Do not start another copy-only treatment until post-level attribution integrity is resolved or a different specific measurable constraint is established."
     ],
     "articleOpeningGuidance": [
       "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. Normal editorial discretion and all sourcing/factual-nuance gates apply."
@@ -155,6 +136,13 @@
       "evidence": "The September 8 employee-coaching Library Insight independently qualifies and is scheduled at the fixed 11:30 a.m. ET slot. Exact-current verified GA4 reports 4 LinkedIn channel sessions / 2 engaged over seven days, but its post-level rows all carry the August 19 Treasury content id while landing on the homepage, Members 1st and Raiz pages. Current social queue and verified workflow receipts preserve the required immutable UTMs, so those conflicting GA4 rows cannot support an exact-post experiment conclusion.",
       "uncertainty": "The underlying GA4 cause of the sessionManualAdContent/landing-page mismatch is not established. No UTM, scheduler or external-post rewrite is authorized from this evidence; channel-level LinkedIn acquisition remains usable while exact-post rows are quality-filtered.",
       "nextCheckpoint": "After the September 8 post sends and Buffer/GA4 metrics refresh, or 2026-09-10 at the latest, make a keep/revise/stop decision."
+    },
+    {
+      "timestamp": "2026-09-09T09:55:00-04:00",
+      "decision": "Stop the completed LinkedIn decision-tool-promise copy treatment and shift the next learning action to attribution integrity rather than extending copy optimization.",
+      "evidence": "All three treatment posts are now metrics-ready in Buffer: 5 impressions / 2 reach / 0% engagement; 1 / 1 / 0%; and 23 / 19 / 0%. The third post clears the directional reach target but still has zero Buffer engagement. Exact-current GA4 has 3 LinkedIn channel sessions / 1 engaged over seven days, while every current post-level row still carries the Aug. 19 Treasury content id on unrelated landing paths, preventing a valid exact-post primary-metric read.",
+      "uncertainty": "The experiment cannot establish whether copy caused or failed to cause onsite improvement because post-level attribution is not trustworthy. This is not treated as evidence that LinkedIn itself has zero value; channel-level acquisition remains usable.",
+      "nextCheckpoint": "Reliability Watch to establish a trustworthy privacy-safe post-level reporting path or a durable unavailable-state guard by 2026-09-10; do not open another copy-only experiment before that diagnostic closes."
     }
   ]
 }
