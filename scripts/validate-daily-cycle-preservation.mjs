@@ -62,6 +62,12 @@ if (base.current?.date && candidate.current?.date && candidate.current.date < ba
   fail(`current date regressed from ${base.current.date} to ${candidate.current.date}`);
 }
 
+if (base.current?.date && candidate.current?.date && candidate.current.date > base.current.date) {
+  if (!candidateDates.has(base.current.date)) {
+    fail(`candidate advanced current date to ${candidate.current.date} without preserving prior current ${base.current.date} in history`);
+  }
+}
+
 console.log(
   `daily-cycle preservation validation passed: ${candidate.history.length} history entries; ` +
   `all ${baseDates.length} dated base entries preserved from ${baseRef}`
