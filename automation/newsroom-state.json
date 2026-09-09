@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-08T07:00:00-04:00",
+  "lastStandardRun": "2026-09-09T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "A Scorecard for AI-Assisted Employee Coaching at Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-employee-coaching-scorecard.html",
-    "publishedAt": "2026-09-08T07:00:00-04:00",
-    "route": "insights"
+    "title": "Dort Financial Moves Personalized Member Offers to the Cloud",
+    "url": "https://creditunionainews.com/news/dort-financial-movemint-personalization-cloud.html",
+    "publishedAt": "2026-09-09T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-09",
+      "headline": "NACUSO CEO Briefs Credit Union Leaders on AI Governance and CUSO Investment Limits",
+      "reason": "credit-union governance signal, but the vendor-hosted session discloses no implemented control, independent result or new rule"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Elements Financial Launches a Unified Digital-Banking Platform",
+      "reason": "current named credit-union launch with broad member-service features, but no differentiated AI capability or disclosed adoption and outcome evidence"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Eleven NCUA Deregulation Rules Take Effect",
+      "reason": "authoritative and material for credit unions, but the technology connection is administrative rather than a substantive AI or operating-system change"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Small Credit Unions Use Fintech Products to Reach Younger Members",
+      "reason": "useful multi-credit-union case evidence, but it is five days old and less current than the selected named implementation"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Chime Agrees to Buy Stride Bank for $590 Million",
+      "reason": "high-newsworthiness banking transaction with indirect credit-union relevance and no specific credit-union technology decision"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Dallas Fed Outlines Information-Sharing Defenses Against AI-Driven Fraud",
+      "reason": "credible operating guidance, but indirect credit-union applicability and close overlap with recent fraud-network and cyber-resilience coverage"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Google Cloud and Accenture Expand Forward-Deployed AI Engineering",
+      "reason": "material enterprise-AI delivery model without a named credit-union implementation or direct operating requirement"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Blue Machines Launches a Banking Speech-to-Text Model for India",
+      "reason": "vendor launch centered on Indian languages and infrastructure, with no U.S. credit-union deployment or transferable outcome evidence"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "FinovateFall Opens an AI-Heavy Financial-Technology Demo Program",
+      "reason": "event program without demonstrated credit-union implementation evidence or a decision-ready operating result"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "Federal Reserve Publishes a Financial-System Cybersecurity Report",
+      "reason": "authoritative but indirect credit-union applicability and close overlap with September 1 frontier-AI cyber-resilience coverage"
+    },
+    {
+      "date": "2026-09-09",
+      "headline": "NCUA Artificial-Intelligence Control Resources for Credit Unions",
+      "reason": "authoritative evergreen resources used as supporting evidence, but no fresh update supports a separate article"
+    },
     {
       "date": "2026-09-08",
       "headline": "Aviva Investors Plans to Make Generative AI Use a Staff Objective",
@@ -1700,6 +1755,11 @@
     {
       "functionalArea": "marketing-growth",
       "opportunity": "AI-assisted member segmentation, campaign measurement and offer-suppression controls for marketing leaders",
+      "priority": "completed-2026-09-09"
+    },
+    {
+      "functionalArea": "lending-consumer",
+      "opportunity": "AI-assisted loan pricing, exception monitoring and borrower-outcome controls for consumer-lending leaders",
       "priority": "next"
     }
   ]

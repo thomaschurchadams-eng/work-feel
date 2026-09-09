@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "dort-financial-movemint-personalization-cloud",
+      "articleUrl": "/news/dort-financial-movemint-personalization-cloud.html",
+      "imagePath": "/assets/dort-financial-movemint-personalization-cloud.jpg",
+      "publishedAt": "2026-09-09T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "soft-editorial-illustration",
+      "subject": "member-interaction",
+      "composition": "wide-environmental",
+      "perspective": "eye-level",
+      "palette": "graphite-electric-yellow",
+      "lighting": "graphic-flat-light",
+      "texture": "paper-fiber",
+      "scene": "personalized-product-offers-travel-from-a-legacy-system-to-digital-member-channels-with-visible-suppression-and-review-detours",
+      "conceptScore": 53.8,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "score": 52.6
+        },
+        {
+          "medium": "cinematic-conceptual",
+          "subject": "architecture-and-infrastructure",
+          "score": 48.3
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-employee-coaching-scorecard",
       "articleUrl": "/insight-credit-union-ai-employee-coaching-scorecard.html",
       "imagePath": "/assets/credit-union-ai-employee-coaching-scorecard.jpg",

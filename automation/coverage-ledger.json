@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "dort-financial-movemint-personalization-cloud",
+      "title": "Dort Financial Moves Personalized Member Offers to the Cloud",
+      "url": "/news/dort-financial-movemint-personalization-cloud.html",
+      "publishedAt": "2026-09-09T07:00:00-04:00",
+      "section": "news",
+      "beat": "marketing-personalization-cloud",
+      "functions": [
+        "marketing-growth",
+        "member-service",
+        "operations",
+        "it-data-cybersecurity",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "personalization",
+        "core-api-cloud",
+        "data-decisioning"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing, growth and digital-banking leaders",
+      "secondaryAudiences": [
+        "member-experience leaders",
+        "lending and product leaders",
+        "risk and compliance leaders",
+        "technology and data leaders"
+      ],
+      "maturity": "scaling",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-priority",
+      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-inventory-change-control.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
+      "sourceTier": 2,
+      "score": 79.7
+    },
+    {
       "id": "credit-union-ai-employee-coaching-scorecard",
       "title": "A Scorecard for AI-Assisted Employee Coaching at Credit Unions",
       "url": "/insight-credit-union-ai-employee-coaching-scorecard.html",
