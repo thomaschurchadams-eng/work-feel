@@ -1,100 +1,95 @@
-# CUAI CEO Report
+# CUAI CEO — Latest
 
-**As of:** 2026-09-08T15:41:00-04:00  
-**Operating posture:** Healthy core production with one measurement-quality incident isolated from editorial/production state. September 8 has a complete Library article outcome, the selected company-page post has authoritatively sent, and the bounded Alert/homepage-freshness cycle completed as a no-op. `cai_banner_click` volume is **unverified, not zero**, pending CoS-owned `INC-CUAI-GA4-001` validation.
+## As of
+2026-09-09T09:58:00-04:00
 
 ## Goal progress
-
-**Priority order:** G3 reliability and editorial trust -> G1 audience growth -> G5 CUAI-to-CAI growth -> G4 revenue -> G2 learning velocity.
-
-- **G1 audience growth:** last authenticated operating snapshot remains **182 rolling-28-day active users**, up **13.0%** from the August 31 baseline of 161 and **60 users short** of the September target of at least 242. Seven-day active users were 50. No newer authenticated audience snapshot was retrieved in this operating pass.
-- **G2 engagement learning:** the third decision-tool-promise LinkedIn observation has now sent, but refreshed post-level evidence is not yet available. Keep the experiment open and fail closed on attribution; do not extend or open a second experiment merely for sample size.
-- **G3 autonomous operating loop:** September 8 article, distribution reconciliation, and Alert/homepage cycle all have machine-observable outcomes. The recurring repository sent-state lag was recovered without a duplicate scheduler call. Source-health maintenance remains the next open reliability obligation, due September 9.
-- **G4 monetization:** Founding AI Intelligence Partner package remains internal with pricing TBD. The internal research-only prospect set remains non-contacted. The September 7 CFO handoff confirms exact break-even/run-rate pricing is still unsupported because several shared/platform costs remain unallocated or unavailable.
-- **G5 CAI growth:** the labeled CUAI -> CAI banner and event contract remain in source, but banner-click volume cannot currently be established from a missing GA4 row because the endpoint discards GA4 `subjectToThresholding` metadata. Treat the metric as unavailable until `INC-CUAI-GA4-001` is resolved; do not trigger a CTA optimization from the apparent omission.
+- **Current priority:** G3 operating reliability first, then G1 qualified audience growth, G5 attributable CUAI→CAI demand, G4 monetization, G2 retained learning.
+- **G1 audience:** exact-current verified GA4 reports **183 rolling-28-day active users**, up **13.7%** from the August 31 baseline of 161 and progressing toward the September target of >=242. Seven-day active users are **50**, about **9% above** the current 28-day weekly pace; sessions are **56** versus a 28-day total of 206.
+- **G2 learning:** the three-post LinkedIn decision-tool-promise cohort is complete and stopped. It cannot support a keep decision because exact post-level GA4 attribution remains unreliable; Buffer shows no engagement on any of the three observations. The next learning action is an attribution-integrity diagnostic, not another copy-only experiment.
+- **G3 reliability:** Production is healthy, but `automation/daily-cycle-state.json` on current `main` is corrupt/non-UTF-8 after the September 9 publisher write. PR #193 has merged durable prevention, but the current state still requires a full-history-safe recovery.
+- **G4 commercial:** the internal Founding AI Intelligence Partner package and eight-organization research-only sponsor opportunity pipeline remain available. No outreach, pricing commitment, spend or external commercial action occurred in this run.
+- **G5 CAI growth:** CUAI-side banner attribution remains instrumented, but current `cai_banner_click` volume is **unverified, not zero**, while the CoS-owned GA4 thresholding metadata incident remains under validation. No downstream CAI session/intent/lead claim is made without CAI-side evidence.
 
 ## System health
+**Degraded.** Vercel Production is READY on exact commit `ded6b3e8f028a27a8a7e440ba2907882a1ec1a41`, the current article is live, and Vercel reports no runtime errors in the prior 24 hours. The material defect is repository state: `automation/daily-cycle-state.json` still points to corrupt blob `bbe71865ddad41bc232e697ac97db9fe18a0b461` and cannot be safely parsed from `main`.
 
-**Healthy core / measurement degraded.** The production/recovery state reviewed includes September 8 LinkedIn sent-state merge `356eb9aba31df6eb687c3ce5c6c4d5d86a17c8ae`. Reliability Watch verified Production READY on that merge, reran authenticated verified operations with no distribution actions, and found no Vercel runtime errors. The article and social delivery are not implicated in the GA4 measurement incident.
-
-## Data-source status
-
-- **GitHub / agent bus:** current repository state, authoritative operating policy, goals, coordination/output/reporting contracts, current publisher handoff, reliability recovery, CFO handoff and Alert/homepage completion were reviewed.
-- **GA4:** prior authenticated aggregate metrics remain usable subject to their existing integrity checks, but a missing low-volume event row must not be interpreted as zero while thresholding metadata is discarded by `api/ga4-metrics.js`.
-- **Buffer:** exact post id `6a9ff1bd9a6cf52c7fd6e694` sent at `2026-09-08T15:30:30.921Z`; LinkedIn delivery was reconciled to the existing queue item only.
-- **Source health:** canonical source-health ledger remains due for its bounded refresh by 2026-09-09T17:00:00-04:00.
+The direct public GA4 URL correctly returned HTTP 401 because the SHA-only path is historical after the September 5 security change. Mandatory analytics were successfully retrieved instead from the trusted `CUAI verified operations` workflow on the exact current Production commit: GA4 HTTP 200/`ok=true`/`source=google-analytics-data-api`, Buffer HTTP 200/`ok=true`, and direct Search Console HTTP 200/`ok=true` with `siteFullUser` permission.
 
 ## Newsroom output
-
-**Published September 8:** [A Scorecard for AI-Assisted Employee Coaching at Credit Unions](https://creditunionainews.com/insight-credit-union-ai-employee-coaching-scorecard.html).
-
-Classification: **Insights / Library**. The publisher evaluated **12 candidates across 9 beats** and filled the HR/workforce coaching and performance-measurement gap. The next deliberate coverage gap is **AI-assisted member segmentation, campaign measurement and offer-suppression controls for marketing/growth leaders**.
-
-## Distribution and freshness
-
-The September 8 employee-coaching company-page item has **sent**, not merely scheduled. Exact Buffer evidence: post id `6a9ff1bd9a6cf52c7fd6e694`, sent at `2026-09-08T15:30:30.921Z`, with the existing approved UTM destination and no duplicate/reschedule.
-
-The bounded September 8 Alert/homepage cycle is complete. No new Alert qualified: the new FinCEN aviation-procurement item lacked a substantive CUAI AI/technology operating implication; other September 8 vendor/trade items did not clear freshness, urgency, independence and non-duplication gates. The September 1 AI-law Alert is older than 72 hours, all timely internal News/Insights candidates are already represented in the homepage grid, and `homepageWatchState` remains empty, so the evergreen fallback is the correct homepage state. No production mutation was required.
-
-The weekly competitive-distribution scan was **not rerun** because the week-37 scan completed Monday and remains current.
-
-## Audience growth
-
-Last authenticated snapshot:
-
-| Metric | 7 days | 28 days |
-|---|---:|---:|
-| Active users | 50 | 182 |
-| Sessions | 57 | 206 |
-| Page views | 68 | 243 |
-| Engaged sessions | 16 | 63 |
-| Engagement rate | 28.1% | 30.6% |
-| GA4 90%-scrolled users | 5 | 17 |
-
-Direct Search Console at that snapshot showed **397 impressions / 4 clicks / 1.01% CTR / average position 22.87** over seven days. The News hub remained the clearest bounded search opportunity at **104 impressions / 0 clicks**, but it stays queued while the current LinkedIn experiment is unresolved.
-
-## Engagement learning
-
-Observation 3 has sent, but no refreshed clean post-level GA4 evidence was retrieved in this pass. The experiment remains governed by the existing integrity rule: both `sessionManualAdContent` and landing path must match the canonical queue item before a session is attributed. No tracking rewrite or additional copy-only cohort is authorized from ambiguous evidence.
-
-## Revenue
-
-The latest CFO reconciliation through September 7 keeps actuals, shared-unallocated costs and unavailable costs separate. A September Microsoft charge of **$22.99** remains a shared candidate and is excluded from CUAI actuals pending allocation; the known minimum monthly economic cost remains only the **$0.94 domain amortization**. Complete CUAI revenue, complete operating cost, operating result and platform run rate are not yet computable. Do not derive sponsor pricing or break-even from this incomplete cost base.
-
-The internal sponsor pipeline remains research-only. No outreach, pricing commitment, contract, spend or editorial entitlement was created in this run.
-
-## CAI growth
-
-`cai_banner_click` is configured as a privacy-safe CUAI-side referral event, but current banner volume is **unverified**. PR #186 correctly identified that `api/ga4-metrics.js` currently preserves `currencyCode`, `timeZone` and `dataLossFromOtherRow` while dropping GA4 `subjectToThresholding`. Therefore a missing low-volume event row cannot establish zero clicks. CoS owns `INC-CUAI-GA4-001`; the operating system will not optimize from this metric until validation closes.
+- **September 9:** published **“Dort Financial Moves Personalized Member Offers to the Cloud”** — News / Standard — https://creditunionainews.com/news/dort-financial-movemint-personalization-cloud.html
+- Publisher handoff records **12 candidates across 12 beats**, with marketing/growth personalization as the filled coverage gap and **AI-assisted loan pricing, exception monitoring and borrower-outcome controls** as the next stated gap.
+- Standard classification correctly produced **no LinkedIn item** today.
+- Article package, hero, News index and homepage were Production-verified before the state corruption was detected. The article itself is not the incident.
 
 ## Reliability
+- **Open incident:** September 9 daily-cycle state corruption. The pre-publisher parent `6fa9ba0b9e5d55b51af6a714b61b0b1dbda95ae0` has a complete valid state blob preserving September 8 and prior history; the publisher commit corrupted the stored September 9 state blob after local/pre-write validation.
+- **Durable prevention completed:** PR #193 requires prior-current preservation when dates advance and requires re-fetching/parsing the exact committed state blob plus post-write preservation validation before a publisher may report persistence success.
+- **Recovery still blocked:** the current connector write is whole-file replacement. Re-emitting/reconstructing the 4,110-line append-style state without a checkout/patch-capable history-preserving path would create unacceptable audit-loss risk. Reliability Watch correctly stopped rather than rolling back to September 8 or reconstructing from the corrupt blob.
+- Until the current state is safely recovered, later Alert/state writers should stop instead of rebuilding from the corrupt object. This puts today’s later Alert/homepage-freshness state handoff at risk even though Production is healthy.
+- **Source-health refresh** remains due by 2026-09-09T17:00:00-04:00; it is not overdue at this checkpoint.
 
-1. **September 8 LinkedIn state lag — recovered.** Exact Buffer sent evidence was reconciled to the existing queue item via PR #191; no scheduler call, duplicate, UTM/timing/destination/credential or cadence change occurred.
-2. **GA4 thresholding metadata — open under CoS.** Editorial and production state remain healthy; G5 event volume is unavailable pending validation.
-3. **Source-health refresh — open.** `cuai-20260907-ceo-source-health-refresh` remains assigned to Reliability Watch with a September 9 deadline.
-4. **Usage-ledger append — reporting degraded, not forced.** Reliability Watch could retrieve the complete ledger blob but the connector writer requires a complete replacement string. The large append-style ledger was left untouched rather than risk history loss.
+## Audience growth
+Exact-current authenticated GA4:
+- **7d:** 50 active users, 56 sessions, 16 engaged sessions, **28.6% engagement**, 67 page views, 4 built-in 90%-scrolled users.
+- **28d:** 183 active users, 206 sessions, 63 engaged sessions, **30.6% engagement**, 242 page views, 17 built-in 90%-scrolled users.
+- Seven-day audience and session volume are running modestly above the 28-day weekly pace, while engagement rate is slightly softer. This is growth with quality broadly holding, not a breakout.
+
+Acquisition quality:
+- **LinkedIn 7d:** 3 sessions / 1 engaged / 33.3% engagement; 28d: 13 / 3 / 23.1%.
+- **Google organic 7d:** 2 sessions / 2 engaged / 100%; 28d: 22 / 15 / 68.2%. Google remains high quality but very small in current volume.
+- Search Console: **298 impressions / 3 clicks / 1.01% CTR** over 7 days versus **2,102 / 16 / 0.76%** over 28 days. `/news.html` still has 84 impressions / 0 clicks in 7 days, but the metadata treatment remains queued rather than opened while G3 state recovery and attribution integrity are more constrained.
+
+Editorial/conversion events:
+- 7d: 29 article views, 22 `scroll_depth` events, 10 `engaged_reader`, 2 related-content clicks.
+- 28d: 88 article views, 68 `scroll_depth`, 24 `engaged_reader`, 2 related-content clicks, 1 outbound click.
+- `source_click`, `newsletter_intent`, and `cai_banner_click` rows were not returned in the current aggregate event table. Missing `cai_banner_click` is **unverified, not zero** while thresholding metadata handling is under validation. Do not infer a 50%/90% scroll breakout beyond the reported built-in `scrolledUsers` metric.
+
+## Engagement learning
+The LinkedIn decision-tool-promise experiment is **stopped September 9** after three observations:
+- Aug. 28 contact-center QA: **5 impressions / 2 reach / 0% Buffer engagement**; one clean matching GA4 session / 0 engaged.
+- Sep. 1 FSB frontier-AI: **1 / 1 / 0%**; no clean matching current GA4 post row.
+- Sep. 8 employee coaching: **23 impressions / 19 reach / 0%**; this clears the directional reach target but still shows no Buffer engagement.
+
+Channel-level LinkedIn remains usable at 3 sessions / 1 engaged over 7 days. Post-level GA4 is not currently trustworthy for the treatment: all returned rows still carry the Aug. 19 Treasury `utm_content` while landing on unrelated pages. The social queue and verified scheduler receipts preserve the intended immutable UTMs, so sent-post rewrites are not authorized from this evidence.
+
+**Decision:** stop the copy treatment; return social copy to normal editorial discretion. Reliability Watch has a bounded G2 assignment on issue #160 to establish a trustworthy privacy-safe post-level attribution path or a durable unavailable-state guard by September 10. No new growth experiment is opened solely to fill an experiment slot.
+
+## Revenue
+- Founding AI Intelligence Partner internal package remains defined; numeric pricing remains intentionally uncommitted.
+- The eight-organization sponsor opportunity file remains a research-only pipeline, not outreach, bookings, probability-weighted revenue, or editorial entitlement.
+- No external sponsor contact, pricing change, contract, invoice, spend or payment action occurred.
+
+## CAI growth
+- Sponsored/house CAI banner remains clearly separated from independent editorial performance and uses the standardized privacy-safe UTM contract.
+- Current CUAI-side banner-click volume remains unverified because the GA4 reporting feed does not yet preserve enough thresholding metadata to treat a missing low-volume row as zero.
+- No downstream CAI sessions, intent or leads are inferred without independent CAI-side evidence.
 
 ## Process evolution
-
-- **Fail-closed GA4 correction proposal:** preserve the existing `cai_banner_click` collection/reporting contract, add `subjectToThresholding` to the normalized GA4 report metadata, and make consumers treat a missing event row as `unavailable` whenever thresholding applies. Only declare a true zero when the response establishes that the result is not thresholded and the query semantics otherwise support zero.
-- **Rollback instructions for PR #185:** if the event-query change must be withdrawn before a safe correction is validated, revert PR #185's three changes together: remove `cai_banner_click` from `CUAI_EVENTS` in `api/ga4-metrics.js`, revert the corresponding CUAI-to-CAI reporting language in `automation/ANALYTICS.md`, and revert the `cai_banner_click`/CAI distribution additions in `automation/analytics-measurement.json`; then validate the reporting endpoint and management report before reintroducing the event. This is a proposal only; no rollback was executed because CoS owns the incident.
+1. **State-write self-healing:** PR #193 closes the prevention gap that allowed a locally validated state update to land as a corrupt stored blob. Future publisher completion now depends on exact post-write blob verification.
+2. **Experiment discipline:** stopped the completed copy treatment instead of extending it through ambiguous attribution; this frees the system from optimizing copy against an unreliable primary metric.
+3. **Measurement assignment:** opened one bounded attribution-integrity diagnostic on the agent bus. It may improve reporting/measurement only; it may not rewrite sent UTMs, change credentials, posting schedules, destinations or external authority.
 
 ## Delegated work
-
-- **G3 / Reliability Watch:** source-health refresh remains open, due September 9.
-- **G5 / Chief of Staff:** `INC-CUAI-GA4-001` validation/correction decision remains canonical with CoS. Banner volume stays unverified pending closure.
-- **G2 / CEO:** score or revise the LinkedIn experiment only after refreshed clean observation-3 evidence is available.
-
-No new cross-functional assignment was opened in this run; existing work already covers the active constraints.
+- **Reliability Watch / G3:** recover September 9 daily-cycle state only through a complete-history-safe path; no rollback that erases today’s article outcome and no reconstruction from the corrupt blob.
+- **Reliability Watch / G2:** issue #160 assignment `cuai-20260909-ceo-linkedin-attribution-diagnostic`; establish a trustworthy post-level LinkedIn GA4 read or durable unavailable-state reporting guard by September 10.
+- **Reliability Watch / source maintenance:** existing source-health refresh remains due September 9 at 17:00 ET.
+- Specialist subagents spawned by CEO in this run: **0**.
 
 ## Output SLA trajectory
+**At risk through Wednesday.** Monday–Wednesday article outcomes are accounted for and each has an explicit LinkedIn decision. September 9 published a Standard article and correctly created no social post. Weekly growth/conversion execution occurred through closure of the completed LinkedIn treatment and the new attribution diagnostic; G4 commercial progress remains present. The risk is today’s later Alert/homepage-freshness state handoff, which should not write against the corrupt daily-cycle state until recovery is safe.
 
-**On track through Tuesday.** Monday and Tuesday article outcomes are machine-observable, both have explicit distribution decisions, Tuesday's selected Library post is now confirmed sent, and both weekday Alert/homepage cycles are complete. No Alert quota was invented and no editorial/source gate was weakened.
+## Usage/reporting
+- Observable CEO workload this run: authoritative policy/management review, 30 recent commits inspected, 12-candidate/12-beat publisher outcome reviewed, one exact Production deployment resolved, one Vercel runtime-health check, one authenticated verified-operations receipt set read (GA4 + Buffer + Search Console), one experiment closed, one agent-bus diagnostic assignment created, and reporting/growth-state updates prepared. Usage attribution is **operational-proxy only**.
+- **Usage-ledger append blocker:** the current linked GitHub writer exposes whole-file replacement for the large append-only `automation/cuai-usage-ledger.json`. Although complete blob retrieval is readable for review, this runtime does not expose a narrow append/patch operation that can safely mutate it without retransmitting the entire history. This run therefore does **not** claim the canonical Sep. 9 CEO ledger append completed; the report and agent bus preserve the observable workload until a complete-blob-safe append path is executed.
 
-## Usage
-
-This operating pass performed policy/bus review, handoff reconciliation, current-source validation for the GA4 caution, dedupe verification, Alert/homepage completion consumption and management-report refresh. The canonical usage ledger was not rewritten because the available whole-file writer is unsafe for a large append-style audit ledger without a preservation-safe append path. No token, credit or cost figure is inferred.
+## Data sources successfully retrieved
+- **GitHub:** current `main`, newsroom/goal/cadence/analytics/growth/coverage/source/reliability/reporting state, recent commits, issue #160 handoffs, PR #193 evidence.
+- **Vercel Production/runtime:** latest READY Production commit `ded6b3e8f028a27a8a7e440ba2907882a1ec1a41`; zero runtime errors in prior 24 hours.
+- **GA4:** authenticated `CUAI verified operations` receipt on exact Production; HTTP 200, `ok=true`, `source=google-analytics-data-api`.
+- **Buffer:** authenticated verified-operations receipt; HTTP 200, `ok=true`.
+- **Search Console:** authenticated verified-operations receipt; HTTP 200, `ok=true`, `source=google-search-console-api`, permission `siteFullUser`.
+- **Missing/degraded source:** canonical daily-cycle state is unreadable/corrupt; usage-ledger Sep. 9 append is not safely writable through the current narrow-write surface.
 
 ## Tom decision required
-
-**Commercial only:** approve or decline first sponsor outreach if desired. Suggested first prospect remains **Kobalt Labs**. No newsroom, reliability, Alert, publishing or GA4 incident action requires Tom in this operating pass.
+None. The current blockers are internal reliability/measurement work within existing authority; no external approval is needed unless future sponsor outreach or commercial terms are proposed.
