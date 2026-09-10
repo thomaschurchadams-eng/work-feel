@@ -3,7 +3,7 @@ const REPO='thomaschurchadams-eng/work-feel';
 const API='https://api.github.com/repos/'+REPO;
 const SITE='https://creditunionainews.com';
 const headers={Authorization:'Bearer '+process.env.GITHUB_TOKEN,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
-const receipts={startedAt:new Date().toISOString(),commit:process.env.DEPLOYED_SHA,authentication:'unverified',actions:[],sourceRetries:[],errors:[]};
+const receipts={startedAt:new Date().toISOString(),commit:process.env.DEPLOYED_SHA,authentication:'unverified',actions:[],reconciliations:[],sourceRetries:[],errors:[]};
 fs.mkdirSync('operation-receipts',{recursive:true});
 const save=()=>fs.writeFileSync('operation-receipts/run.json',JSON.stringify(receipts,null,2)+'\n');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -29,6 +29,26 @@ async function recordQueue(id,original,result){
  Object.assign(item,{status:result.status||'scheduled',postId:result.postId,channelId:result.channelId,channelName:result.channelName,scheduledAt:new Date().toISOString(),bufferDueAt:result.dueAt,lastAttemptAt:new Date().toISOString(),lastResult:'verified secure workflow receipt',duplicate:!!result.duplicate,imageAttached:result.imageAttached});
  await github('/contents/automation/social-queue.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'Record verified CUAI distribution receipt',sha:latest.sha,branch:'main',content:Buffer.from(JSON.stringify(queue,null,2)+'\n').toString('base64')})});
 }
+async function reconcileSentQueue(bufferResponse){
+ if(bufferResponse?.status!==200||bufferResponse.data?.ok!==true||!Array.isArray(bufferResponse.data.posts))return 0;
+ const channel=bufferResponse.data.channel||{};
+ const sentPosts=new Map(bufferResponse.data.posts.filter(post=>typeof post.itemId==='string'&&typeof post.postId==='string'&&typeof post.sentAt==='string'&&typeof post.externalLink==='string').map(post=>[post.itemId,post]));
+ if(!sentPosts.size)return 0;
+ const latest=await github('/contents/automation/social-queue.json?ref=main');const queue=JSON.parse(Buffer.from(latest.content,'base64').toString());let changed=0;
+ for(const item of queue.items){
+  if(item.status!=='scheduled'||typeof item.postId!=='string'||Date.parse(item.scheduledFor)>Date.now())continue;
+  const post=sentPosts.get(item.id);if(!post||post.postId!==item.postId)continue;
+  if(post.articleUrl!==item.articleUrl||post.distributionUrl!==item.distributionUrl||post.scheduledFor!==item.scheduledFor)continue;
+  if(channel.id&&item.channelId!==channel.id)continue;
+  if(channel.name&&item.channelName!==channel.name)continue;
+  Object.assign(item,{status:'sent',sentAt:post.sentAt,externalLink:post.externalLink});changed++;
+ }
+ if(!changed)return 0;
+ const current=await github('/commits/main');if(current.sha!==process.env.DEPLOYED_SHA)throw Error('main_changed_before_sent_reconcile');
+ await github('/contents/automation/social-queue.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'Reconcile verified CUAI LinkedIn sent state',sha:latest.sha,branch:'main',content:Buffer.from(JSON.stringify(queue,null,2)+'\n').toString('base64')})});
+ receipts.reconciliations.push({type:'buffer-sent-state',count:changed});save();
+ return changed;
+}
 (async()=>{
  if(!/^[a-f0-9]{40}$/.test(process.env.DEPLOYED_SHA||''))throw Error('invalid_deployment_sha');
  const current=await github('/commits/main');if(current.sha!==process.env.DEPLOYED_SHA){receipts.status='superseded';save();console.log('A newer main commit exists; its production deployment owns the next run.');return;}
@@ -52,7 +72,14 @@ async function recordQueue(id,original,result){
  // Metrics are read-only. Vercel route propagation can briefly lag the verified
  // production health check, so retry only the exact deployment-mismatch case.
  // Other source failures remain visible immediately and never become zero data.
- for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(response,null,2)+'\n');if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){receipts.errors.push({route,error:error.message});}}
+ let bufferMetrics=null;
+ for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(response,null,2)+'\n');if(route==='buffer-metrics')bufferMetrics=response;if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){receipts.errors.push({route,error:error.message});}}
+ // Buffer is authoritative for sent state. Reconcile only an exact existing
+ // scheduled item after its fixed due time, with matching immutable URLs,
+ // reservation, channel and post id. A reconciliation commit ends this run;
+ // the resulting main push owns any later queued scheduling work.
+ const reconciled=await reconcileSentQueue(bufferMetrics);
+ if(reconciled){receipts.completedAt=new Date().toISOString();receipts.status=receipts.errors.length?'attention':'verified';save();console.log('Production identity verified; 0 distribution attempts; '+reconciled+' sent-state reconciliations; '+receipts.errors.length+' source/action exceptions.');if(receipts.errors.length)process.exitCode=1;return;}
  const queue=JSON.parse(fs.readFileSync('automation/social-queue.json','utf8'));
  const candidates=queue.items.filter(x=>x.status==='queued'&&Date.parse(x.scheduledFor)>Date.now()+5*60000).sort((a,b)=>Date.parse(a.scheduledFor)-Date.parse(b.scheduledFor));
  // Process one reserved item per run. Existing endpoint validates channel,
