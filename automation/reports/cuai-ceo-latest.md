@@ -1,49 +1,69 @@
 # CUAI CEO Operating Report
 
 ## As of
-2026-09-09T16:01:00-04:00
+2026-09-10T09:45:00-04:00
 
 ## Goal progress
-- **G3 autonomous operating loop:** Recovered. PR #196 restored `automation/daily-cycle-state.json` from preserved last-good history and the current stored blob is valid UTF-8 JSON; PR #197 recorded the reliability recovery without changing content, social, editorial, credential or Cloud-task authority. The September 9 publisher outcome is now machine-readable again.
-- **G1 audience growth:** Latest verified reporting remains 185 rolling-28-day active users versus the September baseline of 161 (+14.9%); target remains at least 242 on a comparable September window.
-- **G2 engagement improvement:** The three-post LinkedIn experiment is complete and stopped. Post-level GA4 attribution remains unreliable because of `utm_content` conflicts; the existing reliability diagnostic remains open and should not be interpreted as a zero-result experiment.
-- **G5 CAI demand generation:** `cai_banner_click` volume remains **unverified, not zero**, while INC-CUAI-GA4-001 remains CoS-owned. Do not claim qualified CAI sessions or leads until thresholding/attribution handling is validated.
-- **G4 commercial visibility:** Founding AI Intelligence Partner package and research-only sponsor pipeline remain internal. No outreach, spend, pricing or contracting action was taken.
+- **G3 autonomous operating loop — healthy for production, maintenance watch open.** The September 9 daily-cycle corruption was recovered in PR #196 and the full usage-history handoff gap was recovered in PR #198. Current September 10 state is valid, preserves September 9/8/7 history, and records one completed High article after 13 candidates across 10 beats. Current Production is READY on exact commit `5967fc2c8af7db1df568e6c02fe5bd5029f980b0`; the live article is HTTP 200 and Vercel reports no runtime errors in the last 24 hours. Source-health maintenance is stale and has been reassigned as a reliability condition rather than treated as complete.
+- **G1 qualified audience growth — +13.0% versus September baseline, but recent pace softened.** Rolling-28-day active users are 182 versus the August 31 baseline of 161 and target of 242. Seven-day active users are 43, about 5.5% below the current 28-day weekly pace; sessions are 47 versus a 51.5 weekly pace and engaged sessions 14 versus 16.75.
+- **G2 engagement learning — no active production experiment.** The LinkedIn decision-tool-promise cohort was stopped September 9. Current exact-Production GA4 now contains one clean September 8 post-level row plus one conflicting historical Treasury-content/RAIZ-landing row, so post-level evidence is quality-labeled rather than discarded wholesale. No UTM or instrumentation repair is authorized until root cause is established. The queued `/news.html` metadata treatment remains the strongest next bounded test, but it is not active until a safe narrow page patch can be preview-validated.
+- **G5 CUAI→CAI demand generation — measurement still incomplete, not zero.** The current GA4 event response does not return `cai_banner_click` or newsletter-intent rows. Do not infer zero activity from absent rows. INC-CUAI-GA4-001 remains the controlling attribution/thresholding issue.
+- **G4 commercial visibility — internal package/pipeline preserved.** The Founding AI Intelligence Partner package and eight-organization research-only opportunity pipeline remain internal; no outreach, pricing, spend or contracting action occurred.
 
 ## System health
-**Healthy for production; degraded for measurement.** Current `main` is healthy after the September 9 state recovery. The core publisher/operating loop is no longer blocked by the daily-state corruption. Measurement caveats remain open under G2/G5.
+**Degraded for measurement/maintenance; healthy for publishing and Production.** GitHub state, publisher outcome, Vercel Production/runtime, authenticated GA4, Buffer and direct Search Console are all current and successful. Remaining degradation is narrow: historical LinkedIn post-level attribution contains at least one conflicting row, and `automation/source-health.json` has not been refreshed since August 19.
 
-## Newsroom/output SLA
-- September 9 publisher handoff consumed: **“Dort Financial Moves Personalized Member Offers to the Cloud”** is the one completed article outcome for the day, classified **News / Standard**.
-- Standard classification correctly produced no LinkedIn queue item.
-- Week-to-date output SLA remains on track through Wednesday: one valid weekday article outcome per day with an explicit LinkedIn decision.
-- Current portfolio gap remains **AI-assisted loan pricing, exception monitoring and borrower-outcome controls for consumer-lending leaders**.
+## Newsroom output
+- **Published:** “FinCEN and NCUA Clarify Digital ID Use for Credit-Union CIP” — News / High — https://creditunionainews.com/news/fincen-ncua-digital-credentials-credit-union-cip.html
+- Publisher evaluated **13 candidates across 10 beats** and recorded no missed High article. Primary audience: BSA/AML, digital-onboarding and fraud leaders.
+- Live exact-deployment article check returned HTTP 200 with canonical/NewsArticle metadata and the current article body.
+- **LinkedIn:** one unique company-page item is scheduled for **11:30 a.m. ET September 10** with the exact CUAI UTM convention, image and Buffer post ID already recorded. It is not yet due at this CEO checkpoint.
+- Next coverage gap remains **AI-assisted loan pricing, exception monitoring and borrower-outcome controls for consumer-lending leaders**.
 
-## Alert and homepage freshness
-- **No September 9 Alert published.** The strongest regulator item found was the interagency FinCEN/NCUA digital-credential CIP FAQ issued September 8. Public evidence shows it was observable before the prior completed Alert cycle, so using it today would be an unauthorized historical backfill.
-- September 9 Alliant/Blend digital-home-lending news is useful article material but not an urgent Alert: the AI document-extraction capability is planned rather than a new immediate control or requirement.
-- The CrossState/Rippleshot fraud announcement does not clear the Alert bar and overlaps recent Rippleshot fraud-network coverage.
-- No current Alert is within the homepage 72-hour priority window. All timely internal News/Insights candidates from the current seven-day window are already represented in the homepage card grid, so the evergreen due-diligence fallback remains the correct visible state.
-- `assets/app.js` still has an empty `homepageWatchState`. No production mutation was made solely to stamp `reviewedAt` because this connector runtime only exposes whole-file replacement for the 97.5 KB shared app file; without a safe patch/checkout path, rewriting it would create unnecessary preservation risk. Functional homepage state is already correct.
+## Audience growth and engagement
+Authenticated exact-Production GA4 (`google-analytics-data-api`):
+- **7d:** 43 active users / 47 sessions / 14 engaged sessions / 29.8% engagement / 53 page views / 2 90%-scrolled users.
+- **28d:** 182 active users / 206 sessions / 67 engaged sessions / 32.5% engagement / 241 page views / 17 90%-scrolled users.
+- 50% scroll is still unavailable as a reliable Data API breakout because the threshold parameter is not registered as a GA4 custom dimension.
+- **LinkedIn channel 7d:** 2 sessions / 0 engaged. The September 8 employee-coaching post has one clean exact row: 1 session / 0 engaged; a second row carries the old August 19 Treasury `utm_content` while landing on the Raiz page and is excluded from exact-post conclusions.
+- **LinkedIn channel 28d:** 13 sessions / 3 engaged (23.1% engagement).
+- **Google organic 7d:** 1 session / 1 engaged; **28d:** 22 / 15 engaged (68.2%). The seven-day Google sample is too small for a directional quality conclusion by itself.
+- Current event rows: 7d article_view 24 / engaged_reader 2 / scroll_depth 2; 28d article_view 94 / engaged_reader 22 / scroll_depth 70 / related_content_click 2 / outbound_click 1. `source_click`, `newsletter_intent` and `cai_banner_click` are not returned in the current event table and are treated as unavailable, not inferred zero.
 
-## Reliability / maintenance
-- Consumed reliability recovery evidence from PRs #196 and #197; no duplicate recovery assignment created.
-- Existing source-health refresh assignment remains open with a September 9 17:00 ET deadline. `automation/source-health.json` is still dated August 19 as of this run, so it was not falsely marked complete or duplicated.
-- Current operating-run usage-ledger append was not attempted through the connector-only whole-file writer. The ledger is append-style and 92 KB; a safe full-history-preserving checkout/append path is required.
+Buffer company-page evidence:
+- **7d:** 31 impressions / 26 reach / 0% mean engagement across the one metrics-ready post (September 8).
+- **28d:** 171 impressions / 114 reach / 3.06% mean engagement across 12 metrics-ready posts.
+- Joined directionally with GA4, the current seven-day funnel is **31 impressions / 26 reach → 2 LinkedIn sessions → 0 engaged sessions**; only one of those sessions is cleanly attributable to the September 8 post.
 
-## Audience / engagement evidence
-Latest verified CEO metrics retained pending the open diagnostic:
-- GA4 7d: 52 active users, 58 sessions, 16 engaged sessions.
-- GA4 28d: 185 active users, 208 sessions, 63 engaged sessions.
-- Search Console 7d: 298 impressions, 3 clicks (1.01% CTR); `/news.html` remains an opportunity at 84 impressions and 0 clicks.
-- Search Console 28d: 2,102 impressions, 16 clicks (0.76% CTR).
+Direct Search Console (`google-search-console-api`):
+- **7d:** 351 impressions / 3 clicks / 0.85% CTR / average position 25.42.
+- **28d:** 2,109 impressions / 17 clicks / 0.81% CTR / average position 22.88.
+- `/news.html` remains the clearest page-level acquisition opportunity: **97 impressions / 0 clicks / position 29.01 over 7d** versus **484 / 0 / position 18.68 over 28d**. This supports a metadata-only snippet treatment, but the ranking deterioration means position must be a guardrail rather than attributing zero clicks only to copy.
 
-## Competitive distribution
-This week’s Monday competitive-distribution scan is already complete and was not rerun. No external contact, directory submission, trial or paid-tool action was taken.
+## Reliability and process evolution
+- **Daily-cycle recovery:** closed before this run. September 10 state is valid UTF-8 JSON with preserved history after the PR #193/#196 preservation controls.
+- **Usage-history recovery:** PR #198 safely appended the previously deferred September 9 CEO/Operating System records plus the September 10 Reliability Watch recovery using complete-blob preservation.
+- **Source-health maintenance:** `automation/source-health.json` is still dated August 19. CEO posted a new G3 Reliability Watch assignment on issue #160 requiring a bounded source refresh plus a staleness guard so overdue maintenance cannot disappear silently. No schedule change was requested or authorized.
+- **LinkedIn attribution:** current evidence shows the reporting path can produce a correct `utm_content` + landing-page pair, but historical conflicting pairs remain. Continue the existing exact-match quality rule; do not rewrite UTMs or claim root cause until diagnostic evidence establishes it.
 
-## Delegated / open work
-1. Reliability Watch: LinkedIn attribution diagnostic — open, review after September 10 at 12:00 ET.
-2. Reliability Watch: bounded source-health refresh — open, due September 9 at 17:00 ET.
+## Experiment state
+- **Active production experiments: 0.** This is intentional, not baseline collection.
+- **Next bounded candidate:** `/news.html` search-snippet metadata treatment already recorded in the improvement backlog. Evidence strengthened to 484 28-day impressions and zero clicks, but it remains unopened until a narrow title/description patch can be validated without rewriting the large shared page through an unsafe whole-file path.
+- Do not reopen a copy-only LinkedIn experiment while exact post attribution is mixed.
 
-## Tom decision needed
+## Output SLA trajectory
+**On track through Thursday.** September 7–10 each has a machine-observable article outcome and explicit LinkedIn decision; September 8’s eligible LinkedIn item is reconciled sent, September 10’s High item is scheduled and not yet due. The bounded Alert/homepage-freshness cycle remains owned by CUAI Operating System later today. Weekly growth/conversion execution is represented by the attribution-quality decision and queued search-snippet treatment; G4 commercial package/pipeline progress already exists. Friday will receive the formal `met | partially met | missed` score.
+
+## Data sources retrieved this run
+- **GitHub:** success — current `main`, publisher/state/social/growth/goals/cadence/reporting/source-health/improvement surfaces, issue #160 and recent commits.
+- **Vercel Production/runtime:** success — latest READY Production commit `5967fc2c8af7db1df568e6c02fe5bd5029f980b0`; no runtime errors in prior 24h; live article HTTP 200.
+- **GA4 canonical reporting:** success through the authenticated `CUAI verified operations` receipt for the exact Production commit — HTTP 200, `ok=true`, `source=google-analytics-data-api`. An unauthenticated direct request returns HTTP 401 by design under the secure-operations policy and is not a GA4 retrieval failure.
+- **Buffer:** success through the same verified-operations receipt — HTTP 200, `ok=true`, `source=buffer`.
+- **Search Console:** success through the direct authenticated reporting receipt — HTTP 200, `ok=true`, `source=google-search-console-api`. The optional GA4-embedded Search Console subsection still returns `ga4_data_api_error` for incompatible dimensions/metrics and is ignored because the validated direct path succeeded.
+
+## Delegated work
+1. **Reliability Watch / G3:** refresh stale source-health state and add/enforce a staleness guard; assigned on issue #160, no Tom approval required.
+2. **Reliability Watch / G2:** existing post-level LinkedIn attribution-integrity diagnostic remains applicable; current evidence is partial rather than all-or-nothing.
+
+## Tom decision required
 **None.**
