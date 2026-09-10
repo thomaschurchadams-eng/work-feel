@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fincen-ncua-digital-credentials-credit-union-cip",
+      "articleUrl": "/news/fincen-ncua-digital-credentials-credit-union-cip.html",
+      "imagePath": "/assets/fincen-ncua-digital-credentials-credit-union-cip.jpg",
+      "publishedAt": "2026-09-10T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "macro-still-life",
+      "subject": "documents-and-controls",
+      "composition": "asymmetric-editorial",
+      "perspective": "macro",
+      "palette": "navy-teal",
+      "lighting": "high-contrast-studio",
+      "texture": "frosted-glass",
+      "scene": "a-government-issued-verifiable-digital-credential-passes-through-an-inspection-gate-before-branching-to-in-person-web-and-mobile-onboarding-paths",
+      "conceptScore": 86.8,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "risk-and-security",
+          "score": 78.4
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "human-machine-handoff",
+          "score": 73.1
+        }
+      ]
+    },
+    {
       "id": "dort-financial-movemint-personalization-cloud",
       "articleUrl": "/news/dort-financial-movemint-personalization-cloud.html",
       "imagePath": "/assets/dort-financial-movemint-personalization-cloud.jpg",

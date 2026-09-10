@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18",
+  "updatedAt": "2026-09-10",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -47,6 +47,11 @@
       "function": "it-data-cybersecurity",
       "technology": "fraud-identity",
       "articles": [
+        {
+          "path": "news/fincen-ncua-digital-credentials-credit-union-cip.html",
+          "title": "FinCEN and NCUA Clarify Digital ID Use for Credit-Union CIP",
+          "summary": "How qualifying digital credentials fit existing customer-identification controls."
+        },
         {
           "path": "news/visa-mastercard-ai-fraud.html",
           "title": "Visa and Mastercard Expand AI Fraud Tools",
@@ -117,6 +122,11 @@
       "function": "risk-compliance",
       "technology": "governance-risk",
       "articles": [
+        {
+          "path": "news/fincen-ncua-digital-credentials-credit-union-cip.html",
+          "title": "FinCEN and NCUA Clarify Digital ID Use for Credit-Union CIP",
+          "summary": "A regulatory clarification for digital identity policy, fraud review and evidence."
+        },
         {
           "path": "news/ncua-ai-resource-center.html",
           "title": "NCUA AI Resource Center",
@@ -227,6 +237,11 @@
       "function": "it-data-cybersecurity",
       "technology": "fraud-identity",
       "articles": [
+        {
+          "path": "news/fincen-ncua-digital-credentials-credit-union-cip.html",
+          "title": "FinCEN and NCUA Clarify Digital ID Use for Credit-Union CIP",
+          "summary": "What government-issued digital credentials require in credit-union onboarding."
+        },
         {
           "path": "news/visa-mastercard-ai-fraud.html",
           "title": "Visa and Mastercard Expand AI Fraud Tools",

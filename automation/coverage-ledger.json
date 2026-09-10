@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fincen-ncua-digital-credentials-credit-union-cip",
+      "title": "FinCEN and NCUA Clarify Digital ID Use for Credit-Union CIP",
+      "url": "/news/fincen-ncua-digital-credentials-credit-union-cip.html",
+      "publishedAt": "2026-09-10T07:00:00-04:00",
+      "section": "news",
+      "beat": "digital-identity-cip",
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "operations",
+        "member-service",
+        "vendor-management"
+      ],
+      "technologies": [
+        "identity-biometrics",
+        "regtech-monitoring",
+        "privacy-security"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "BSA/AML, digital-onboarding and fraud leaders",
+      "secondaryAudiences": [
+        "technology and data leaders",
+        "member-service and operations leaders",
+        "vendor-management teams",
+        "risk and compliance leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/news/raiz-digital-account-opening-case-study.html",
+        "/insight-credit-union-ai-accessibility-test-plan.html"
+      ],
+      "sourceTier": 1,
+      "score": 92.7
+    },
+    {
       "id": "dort-financial-movemint-personalization-cloud",
       "title": "Dort Financial Moves Personalized Member Offers to the Cloud",
       "url": "/news/dort-financial-movemint-personalization-cloud.html",

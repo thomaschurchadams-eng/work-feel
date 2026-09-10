@@ -6,75 +6,173 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "fullArticleCount": 1,
     "alertCount": 0,
-    "evaluatedCandidateCount": 12,
-    "beatsSearchedCount": 12,
+    "evaluatedCandidateCount": 13,
+    "beatsSearchedCount": 10,
+    "beatsSearched": [
+      "digital-identity-cip",
+      "agentic-payments",
+      "finance-financial-stability",
+      "lending-underwriting",
+      "fraud-real-time-payments",
+      "enterprise-ai-delivery",
+      "digital-home-lending",
+      "digital-banking-member-experience",
+      "regulatory-governance",
+      "cybersecurity-resilience"
+    ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Dort Financial Moves Personalized Member Offers to the Cloud",
-        "url": "https://creditunionainews.com/news/dort-financial-movemint-personalization-cloud.html",
-        "primaryFunctionalAudience": "Marketing, growth and digital-banking leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-priority"
+        "title": "FinCEN and NCUA Clarify Digital ID Use for Credit-Union CIP",
+        "url": "https://creditunionainews.com/news/fincen-ncua-digital-credentials-credit-union-cip.html",
+        "primaryFunctionalAudience": "BSA/AML, digital-onboarding and fraud leaders",
+        "promotionPriority": "High",
+        "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "NACUSO CEO Briefs Credit Union Leaders on AI Governance and CUSO Investment Limits",
-        "reason": "credit-union governance signal, but the vendor-hosted session discloses no implemented control, independent result or new rule"
+        "title": "Visa, Mastercard and Ant International Propose an AI-Agent Payment Trust Framework",
+        "reason": "current and material to payments, but the initiative is an early standards-development effort without a credit-union implementation, liability rule or operating result"
       },
       {
-        "title": "Elements Financial Launches a Unified Digital-Banking Platform",
-        "reason": "named credit-union launch but no differentiated AI, disclosed adoption or outcome"
+        "title": "BIS Head Warns the AI Investment Boom Could Create Financial-Stability Risk",
+        "reason": "authoritative macro-financial warning with indirect credit-union applicability and no institution-level operating requirement"
       },
       {
-        "title": "Eleven NCUA Deregulation Rules Take Effect",
-        "reason": "material regulatory event, but the technology connection is administrative rather than a substantive AI or operating-technology change"
+        "title": "India Plans an AI-Agent Registry for UPI Payments",
+        "reason": "substantive agentic-payments development, but it is India-specific and does not establish a U.S. credit-union rule, deployment or transferable result"
       },
       {
-        "title": "Small Credit Unions Use Fintech Products to Reach Younger Members",
-        "reason": "useful credit-union evidence, but five days old and less current than the selected named implementation"
+        "title": "HyperVerge Launches AI Agents for Small-Business Underwriting",
+        "reason": "useful lending workflow and vendor-reported time measures, but the pilots are outside the United States and disclose no credit-union implementation or independent validation"
       },
       {
-        "title": "Chime Agrees to Buy Stride Bank for $590 Million",
-        "reason": "high-newsworthiness fintech transaction with indirect credit-union relevance and no specific credit-union technology decision"
-      },
-      {
-        "title": "Dallas Fed Outlines Information-Sharing Defenses Against AI-Driven Fraud",
-        "reason": "credible guidance with indirect credit-union applicability and overlap with recent fraud and cybersecurity coverage"
+        "title": "Payments Leaders Say Fraud Intervention Windows Are Shrinking Toward One Minute",
+        "reason": "credible real-time fraud signal from the Indian UPI market, but no direct U.S. credit-union requirement or verified domestic operating outcome"
       },
       {
         "title": "Google Cloud and Accenture Expand Forward-Deployed AI Engineering",
         "reason": "material enterprise-AI delivery model without a named credit-union implementation or direct operating requirement"
       },
       {
-        "title": "Blue Machines Launches a Banking Speech-to-Text Model for India",
-        "reason": "India-focused vendor launch without a U.S. credit-union deployment or transferable outcome evidence"
+        "title": "Alliant Credit Union Selects Blend for Digital Home Lending",
+        "reason": "named credit-union modernization with planned AI document extraction, but the implementation and AI capability are not yet in production and no outcome is disclosed"
       },
       {
-        "title": "FinovateFall Opens an AI-Heavy Financial-Technology Demo Program",
-        "reason": "event program without a demonstrated credit-union implementation or decision-ready operating result"
+        "title": "Elements Financial Launches a Unified Digital-Banking Platform",
+        "reason": "named credit-union launch with broad member-service features, but no differentiated AI capability, adoption measure or operating result"
       },
       {
-        "title": "Federal Reserve Publishes a Financial-System Cybersecurity Report",
-        "reason": "authoritative source with indirect credit-union applicability and overlap with September 1 resilience coverage"
+        "title": "Eleven NCUA Deregulation Rules Take Effect",
+        "reason": "material regulatory event for credit unions, but the technology connection is administrative rather than a substantive AI or operating-technology change"
       },
       {
-        "title": "NCUA Artificial-Intelligence Control Resources for Credit Unions",
-        "reason": "authoritative evergreen resource without a fresh update supporting a separate article"
+        "title": "OpenAI Calls for Mandatory National AI Safety Rules",
+        "reason": "major AI-policy position, but it does not create a current financial-services or credit-union operating requirement"
+      },
+      {
+        "title": "Visa Describes a Shift Toward Continuous AI-Driven Cyber Defense",
+        "reason": "current cybersecurity strategy with relevance to payments providers, but the accessible evidence does not establish a specific credit-union deployment or independently measurable result"
+      },
+      {
+        "title": "Falcon Launches Transaction-Executing Banking AI Agents",
+        "reason": "current agentic core-banking launch, but it lacks a named U.S. financial-institution deployment, independent validation or credit-union operating result"
       }
     ],
     "status": "article-complete",
-    "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+    "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted loan pricing, exception monitoring and borrower-outcome controls for consumer-lending leaders",
-    "updatedAt": "2026-09-09T07:17:51-04:00"
+    "updatedAt": "2026-09-10T07:17:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-09",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "governance-cuso-ai",
+        "digital-banking-member-experience",
+        "regulatory-governance",
+        "small-credit-union-fintech",
+        "fintech-competition",
+        "fraud-cybersecurity",
+        "enterprise-ai-delivery",
+        "conversational-ai",
+        "fintech-vendor-events",
+        "financial-system-cybersecurity",
+        "regulatory-ai-governance",
+        "marketing-personalization-cloud"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Dort Financial Moves Personalized Member Offers to the Cloud",
+          "url": "https://creditunionainews.com/news/dort-financial-movemint-personalization-cloud.html",
+          "primaryFunctionalAudience": "Marketing, growth and digital-banking leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-priority"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "NACUSO CEO Briefs Credit Union Leaders on AI Governance and CUSO Investment Limits",
+          "reason": "credit-union governance signal, but the vendor-hosted session discloses no implemented control, independent result or new rule"
+        },
+        {
+          "title": "Elements Financial Launches a Unified Digital-Banking Platform",
+          "reason": "named credit-union launch but no differentiated AI, disclosed adoption or outcome"
+        },
+        {
+          "title": "Eleven NCUA Deregulation Rules Take Effect",
+          "reason": "material regulatory event, but the technology connection is administrative rather than a substantive AI or operating-technology change"
+        },
+        {
+          "title": "Small Credit Unions Use Fintech Products to Reach Younger Members",
+          "reason": "useful credit-union evidence, but five days old and less current than the selected named implementation"
+        },
+        {
+          "title": "Chime Agrees to Buy Stride Bank for $590 Million",
+          "reason": "high-newsworthiness fintech transaction with indirect credit-union relevance and no specific credit-union technology decision"
+        },
+        {
+          "title": "Dallas Fed Outlines Information-Sharing Defenses Against AI-Driven Fraud",
+          "reason": "credible guidance with indirect credit-union applicability and overlap with recent fraud and cybersecurity coverage"
+        },
+        {
+          "title": "Google Cloud and Accenture Expand Forward-Deployed AI Engineering",
+          "reason": "material enterprise-AI delivery model without a named credit-union implementation or direct operating requirement"
+        },
+        {
+          "title": "Blue Machines Launches a Banking Speech-to-Text Model for India",
+          "reason": "India-focused vendor launch without a U.S. credit-union deployment or transferable outcome evidence"
+        },
+        {
+          "title": "FinovateFall Opens an AI-Heavy Financial-Technology Demo Program",
+          "reason": "event program without a demonstrated credit-union implementation or decision-ready operating result"
+        },
+        {
+          "title": "Federal Reserve Publishes a Financial-System Cybersecurity Report",
+          "reason": "authoritative source with indirect credit-union applicability and overlap with September 1 resilience coverage"
+        },
+        {
+          "title": "NCUA Artificial-Intelligence Control Resources for Credit Unions",
+          "reason": "authoritative evergreen resource without a fresh update supporting a separate article"
+        }
+      ],
+      "status": "article-complete",
+      "activeExperimentContext": "The active LinkedIn decision-tool promise experiment does not apply to Standard content; selection, sourcing and factual nuance were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted loan pricing, exception monitoring and borrower-outcome controls for consumer-lending leaders",
+      "updatedAt": "2026-09-09T07:17:51-04:00"
+    },
     {
       "date": "2026-09-08",
       "fullArticleCount": 1,
