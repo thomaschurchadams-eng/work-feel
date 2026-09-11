@@ -530,6 +530,150 @@
       "externalSystemsTouched": ["GitHub", "Vercel"],
       "summary": "Diagnosed a reporting-state handoff omission, not a publisher, social-delivery or Production outage. The September 9 CEO and Operating System completions both explicitly recorded that their canonical usage-ledger appends were deferred because the prior connector-only path could not safely preserve the large ledger. This run retrieved the exact current Git blob in full, preserved every existing historical entry, and appended only those two evidence-backed missing workload records plus this reliability recovery record on a dedicated branch for branch-vs-main validation. Current September 10 publishing state is healthy: the FinCEN/NCUA digital-credentials article is recorded as High, state preservation retained September 9/8 and older history, the unique company-page item has the exact CUAI UTMs and verified Buffer receipt for the fixed Thursday 11:30 a.m. ET slot and is not yet due, Production is READY on exact current main, the article is live, and Vercel reports no runtime errors. No scheduler call, replacement post, content, credential, UTM, destination, editorial gate, Cloud-task setting or external authority changed. Durable prevention: when a material agent must defer a canonical usage append, its agent-bus completion should retain enough observable workload evidence for a later full-blob recovery, and Reliability Watch should reconcile the pending append at the first run where complete-blob retrieval is available.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-10T10:24:31-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI CEO operating review after the September 10 High publisher cycle, with exact-current authenticated GA4, Buffer and Search Console retrieval, active optimization, source-health maintenance review and Output-SLA tracking.",
+      "status": "degraded",
+      "workUnits": {
+        "repositoryManagementFilesReviewed": 17,
+        "recentCommitsReviewed": 30,
+        "publisherCandidatesRepresented": 13,
+        "publisherBeatsRepresented": 10,
+        "articlesPublished": 1,
+        "socialReservationsObserved": 1,
+        "ga4MetricsQueries": 1,
+        "bufferMetricsQueries": 1,
+        "searchConsoleEndpointQueries": 1,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "liveArticleChecks": 1,
+        "growthExperimentsReviewed": 0,
+        "growthOpportunitiesReviewed": 1,
+        "reliabilityAssignmentsObserved": 2,
+        "reportingBranchesCreated": 1,
+        "reportingFilesUpdated": 2,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer",
+        "Google Analytics",
+        "Google Search Console"
+      ],
+      "summary": "Restores the explicitly deferred canonical workload attribution for the September 10 CEO review from its authoritative reporting branch and management evidence. The run verified exact Production, authenticated GA4/Buffer/Search Console receipts, the live High digital-credentials article and its unique fixed-slot LinkedIn reservation; it kept post-level attribution quality-labeled and assigned the stale source-health condition to Reliability Watch. No credential, schedule, pricing, legal, spend, editorial-gate or external-authority change occurred.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-10T12:16:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability Watch found the September 10 Buffer post had sent at the fixed slot while automation/social-queue.json still retained scheduled state, and recovered the repeated post-send handoff drift.",
+      "status": "recovered",
+      "workUnits": {
+        "socialQueueChecks": 2,
+        "bufferSentEvidenceChecks": 1,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "previewDeploymentChecks": 1,
+        "recoveryCodeFilesChanged": 1,
+        "recoveryPullRequestsCreated": 1,
+        "recoveryPullRequestsMerged": 1,
+        "secureOperationsRunsVerified": 1,
+        "sentStateReconciliations": 1,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer"
+      ],
+      "summary": "Restores the deferred reporting record for the September 10 sent-state recovery. Exact Buffer evidence matched the existing item/post IDs, URL, UTM-tagged distribution URL, fixed time and approved CreditUnionAI News channel. PR #201 added durable exact-match post-due reconciliation, secure operations completed with zero distribution attempts and one sent-state reconciliation, and canonical queue state was updated to sent without changing UTMs, schedule, destination, credentials or editorial authority.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-10T15:52:16-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded September 10 post-publisher Alert and homepage-freshness cycle after consuming the current publisher and reliability handoffs.",
+      "status": "success",
+      "workUnits": {
+        "dailyCycleStateChecks": 1,
+        "socialStateHandoffsConsumed": 1,
+        "alertCandidatesReviewed": 3,
+        "alertDecisionsRecorded": 1,
+        "homepageFreshnessChecks": 1,
+        "competitiveScanDedupeChecks": 1,
+        "productionMutations": 0,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub"
+      ],
+      "summary": "Restores the deferred canonical workload attribution for the completed September 10 Operating System cycle. The cycle recorded no qualifying Alert after reviewing the bounded current candidates, consumed the already-reconciled LinkedIn sent state, kept the evergreen homepage fallback because the prior Alert was outside the 72-hour window, avoided rerunning the already-completed week-37 competitive scan, and made no Production mutation or social action.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-10T17:07:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability Watch recovered the overdue source-health maintenance handoff and contained stale PR #200 after its ledger patch was found to include unintended historical mutations.",
+      "status": "recovered",
+      "workUnits": {
+        "sourceRegistryUrlsChecked": 28,
+        "recentPrimarySourcesChecked": 15,
+        "sourceHealthFilesChanged": 1,
+        "previewDeploymentChecks": 1,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "liveArticleChecks": 1,
+        "recoveryPullRequestsCreated": 1,
+        "recoveryPullRequestsMerged": 1,
+        "stalePullRequestsClosed": 1,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "public source sites"
+      ],
+      "summary": "Restores the deferred reporting record for the September 10 source-health recovery. All 28 registered sources plus 15 recent primary sources were rechecked; the ledger moved to 24 healthy, three redirected and one temporarily unavailable. PR #202 changed only source-health state and was Production-validated. Unsafe stale PR #200 was closed without merge because it contained two unrelated historical ledger edits. No publishing, social, schedule, credential, editorial-gate, spend or external-authority change occurred.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-11T07:57:54-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review found four evidence-backed September 10 material workload records still absent from automation/cuai-usage-ledger.json even though exact-current complete Git-blob retrieval and a history-preserving checkout patch path are available.",
+      "status": "recovered",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "dailyCycleStateChecks": 1,
+        "publicationLedgerChecks": 1,
+        "socialQueueChecks": 1,
+        "productionDeploymentChecks": 2,
+        "runtimeErrorChecks": 1,
+        "liveArticleChecks": 1,
+        "usageLedgerChecks": 2,
+        "completeBlobRetrievals": 1,
+        "pendingUsageRecordsRecovered": 4,
+        "usageLedgerChanges": 1,
+        "recoveryBranchesCreated": 2,
+        "recoveryPullRequestsCreated": 1,
+        "recoveryPullRequestsMerged": 1,
+        "previewDeploymentChecks": 1,
+        "socialSchedulingAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel"
+      ],
+      "summary": "Diagnosed a canonical reporting-handoff omission, not a publisher, deployment or social failure. Current September 11 article state is complete, the High VantageScore item has one unique UTM-tagged company-page reservation for the fixed 12:30 p.m. ET slot and is not yet due, exact-current Production is READY, the live article returns HTTP 200 and Vercel reports no runtime errors. Recovered the four deferred September 10 workload records from authoritative evidence using an exact-current checkout append that preserves every prior ledger entry, with an append-only clean PR diff and no content, scheduler, UTM, destination, credential, editorial-gate, Cloud-task or external-authority change.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
