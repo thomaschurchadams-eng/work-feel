@@ -34,6 +34,19 @@
 
   const alertsData = [
     {
+      label: 'Third-Party Risk',
+      headline: 'Regulators Propose New Third-Party Risk Guidance for Credit Unions',
+      summary:
+        'Federal banking and credit-union regulators proposed principles-based guidance on September 11 to help banks and credit unions tailor third-party risk management to the risks of individual relationships. The proposal is non-binding, and comments are due 60 days after Federal Register publication.',
+      impact:
+        'Credit unions should compare current vendor and AI/technology-provider due diligence, monitoring, concentration and exit controls with the proposal, focusing effort on the relationships that can cause the most harm. Because the guidance is proposed rather than final, vendor-management, technology, legal and compliance teams should track the Federal Register notice and treat the framework as a comment-and-readiness signal, not a new binding requirement.',
+      sourceName: 'FDIC / Federal Reserve / NCUA / OCC',
+      sourceUrl:
+        'https://www.occ.treas.gov/news-issuances/news-releases/2026/nr-ia-2026-77.html',
+      date: 'Sep 11, 2026',
+      slug: 'regulators-propose-third-party-risk-guidance-credit-unions'
+    },
+    {
       label: 'AI Governance',
       headline: 'America’s Credit Unions Releases a 50-State AI Law Guide',
       summary:

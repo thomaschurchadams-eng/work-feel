@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-09-11",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -34,6 +34,11 @@
         "primaryFunctionalAudience": "Mortgage lending, secondary-market and compliance leaders",
         "promotionPriority": "High",
         "socialDecision": "scheduled-2026-09-11-12:30-et"
+      },
+      {
+        "type": "alert",
+        "title": "Regulators Propose New Third-Party Risk Guidance for Credit Unions",
+        "url": "https://creditunionainews.com/alerts/#regulators-propose-third-party-risk-guidance-credit-unions"
       }
     ],
     "rejections": [
@@ -82,11 +87,11 @@
         "reason": "relevant educational programming, but it is an event rather than a new implementation, rule, evidence package or operating result"
       }
     ],
-    "status": "article-complete",
+    "status": "article-and-alert-complete",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI portfolio value realization, investment thresholds and shutdown criteria for board and strategy leaders",
-    "updatedAt": "2026-09-11T07:17:30-04:00"
+    "updatedAt": "2026-09-11T16:50:00-04:00"
   },
   "history": [
     {
