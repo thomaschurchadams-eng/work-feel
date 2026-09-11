@@ -194,7 +194,7 @@
       "timestamp": "2026-08-20T16:59:00-04:00",
       "actor": "reliability-watch",
       "runType": "recovery",
-      "trigger": "Reliability review found the August 20 accessible-AI LinkedIn item had completed successfully in Buffer at the fixed 11:30 a.m. ET slot while automation/social-queue.json still retained status scheduled without the authoritative sent timestamp or LinkedIn URL.",
+      "trigger": "Reliability review found the August 20 accessible-AI LinkedIn item had completed successfully in Buffer at the fixed 11:30 a.m. ET slot, while automation/social-queue.json still retained status scheduled without the authoritative sent timestamp or LinkedIn URL.",
       "status": "recovered",
       "workUnits": {"publisherRunChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"socialLedgerItemsReconciled":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":2,"specialistSubagentsSpawned":0},
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
@@ -673,44 +673,6 @@
         "Vercel"
       ],
       "summary": "Diagnosed a canonical reporting-handoff omission, not a publisher, deployment or social failure. Current September 11 article state is complete, the High VantageScore item has one unique UTM-tagged company-page reservation for the fixed 12:30 p.m. ET slot and is not yet due, exact-current Production is READY, the live article returns HTTP 200 and Vercel reports no runtime errors. Recovered the four deferred September 10 workload records from authoritative evidence using an exact-current checkout append that preserves every prior ledger entry, with an append-only clean PR diff and no content, scheduler, UTM, destination, credential, editorial-gate, Cloud-task or external-authority change.",
-      "usageAttribution": "operational-proxy"
-    },
-    {
-      "timestamp": "2026-09-11T09:20:00-04:00",
-      "actor": "cuai-ceo",
-      "runType": "scheduled",
-      "trigger": "Friday CUAI CEO operating review after the September 11 High publisher cycle, with exact-current authenticated analytics retrieval, active optimization, reliability follow-through and formal weekly Output-SLA scoring.",
-      "status": "success-with-attribution-observability-degraded",
-      "workUnits": {
-        "repositoryManagementFilesReviewed": 16,
-        "recentCommitsReviewed": 30,
-        "publisherCandidatesRepresented": 12,
-        "publisherBeatsRepresented": 12,
-        "articlesPublished": 1,
-        "socialReservationsObserved": 1,
-        "verifiedOperationsRunsReviewed": 1,
-        "ga4MetricsQueries": 1,
-        "bufferMetricsQueries": 1,
-        "searchConsoleEndpointQueries": 1,
-        "productionDeploymentChecks": 1,
-        "runtimeErrorChecks": 1,
-        "growthMeasurementDiagnosticsReviewed": 1,
-        "attributionDiagnosticsClosed": 1,
-        "outputSlaScores": 1,
-        "reportingBranchesCreated": 1,
-        "reportingFilesUpdated": 2,
-        "agentBusEventsWritten": 1,
-        "reliabilityRecoveriesObserved": 1,
-        "specialistSubagentsSpawned": 0
-      },
-      "externalSystemsTouched": [
-        "GitHub",
-        "Vercel",
-        "Buffer",
-        "Google Analytics",
-        "Google Search Console"
-      ],
-      "summary": "Verified the September 11 High VantageScore article cycle after 12 candidates across 12 beats and its unique Friday 12:30 p.m. ET company-page reservation; resolved exact Production on 8de43474a9f4379c54b4bd3256b3fa73ff4a3fcc, reviewed authenticated verified-operations run #43, retrieved GA4, Buffer and direct Search Console, and confirmed no Vercel runtime errors. Current GA4 is 47 active users/48 sessions/13 engaged over seven days versus 175/194/65 over 28 days; rolling-28 users are 8.7% above the August 31 baseline but engagement quality is softer. Buffer is 32 impressions/27 reach over seven days versus 168/113 over 28 days, joining to 2 LinkedIn sessions/0 engaged versus 12/3. Closed the overdue LinkedIn post-attribution diagnostic by requiring both immutable queue id and canonical landing path to match before a row is used for exact-post scoring; conflicting historical rows remain excluded and no sent UTM was rewritten. Source health is current, PR #203 recovered deferred September 10 workload history append-only, and the September 7–11 Output SLA scores met. No credential, schedule, pricing, legal, spend, editorial-gate or external-authority change occurred.",
       "usageAttribution": "operational-proxy"
     }
   ]
