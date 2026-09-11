@@ -117,10 +117,10 @@
       "timestamp": "2026-08-18T09:55:30-04:00",
       "actor": "cuai-ceo",
       "runType": "scheduled",
-      "trigger": "Weekday CUAI CEO operating review after the August 18 publisher cycle, with mandatory live GA4/Buffer retrieval and active optimization.",
+      "trigger": "Weekday CUAI CEO operating review after the August 18 publisher cycle, with mandatory live GA4/Buffer/Search Console retrieval and active optimization.",
       "status": "success-with-search-measurement-degraded",
       "workUnits": {"repositoryManagementFilesReviewed":14,"recentCommitsReviewed":30,"publisherCandidatesRepresented":14,"publisherBeatsRepresented":8,"articlesPublished":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"productionDeploymentChecks":1,"runtimeHealthChecks":1,"liveArticleChecks":1,"growthStrategyChanges":1,"experimentsOpened":1,"operatingPolicyChanges":1,"improvementLedgerChanges":1,"reportingBranchesCreated":1,"previewDeploymentChecks":1,"pullRequestsCreated":1,"reportingFilesUpdated":2,"specialistSubagentsSpawned":0},
-      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics"],
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
       "summary": "Resolved Production commit 099e43d and successfully retrieved live GA4 and Buffer data, verified the Aug. 18 Treasury stablecoin High article live, and found zero Vercel runtime errors in 24 hours. Current 7-day users remain above the 28-day weekly pace, but sessions, page views, engaged sessions and 90% scrolling lag materially; because depth has constrained multiple consecutive CEO reviews, opened a bounded three-article decision-first opening experiment on clean post-repair instrumentation. The first two High-post hook observations remain below target and the third is scheduled for Aug. 18 at 11:30 a.m. ET, with the decision still due Aug. 21. Diagnosed repeated internal social-ledger drift where Buffer confirms sent posts but repository items remain scheduled; implemented an idempotent prevention rule that reconciles only exact sent evidence without calling the scheduler. Search Console remains degraded on the known incompatible optional GA4 query and blocked on safe Preview read-only authentication for the isolated direct path. Prepared PR #133 on a READY Vercel Preview and refreshed the CEO report and workload ledger.",
       "usageAttribution": "operational-proxy"
     },
@@ -130,7 +130,7 @@
       "runType": "recovery",
       "trigger": "Scheduled reliability check found the repeated internal social-ledger drift identified by the CEO was still present: Buffer authoritatively showed tracked company-page posts as sent while automation/social-queue.json retained status scheduled.",
       "status": "recovered",
-      "workUnits": {"publisherRunChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":2,"runtimeErrorChecks":1,"previewDeploymentChecks":1,"socialLedgerItemsReconciled":12,"improvementLedgerChanges":1,"recoveryBranchesCreated":1,"recoveryPullRequestsCreated":1,"recoveryPullRequestsMerged":1,"recoveryFilesChanged":2,"specialistSubagentsSpawned":0},
+      "workUnits": {"publisherRunChecks":1,"socialQueueChecks":2,"bufferMetricsQueries":2,"productionDeploymentChecks":2,"runtimeErrorChecks":1,"previewDeploymentChecks":1,"socialLedgerItemsReconciled":12,"improvementLedgerChanges":1,"recoveryBranchesCreated":1,"recoveryFilesChanged":2,"specialistSubagentsSpawned":0},
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer"],
       "summary": "Confirmed the August 18 publisher outcome and core production runtime were healthy, then recovered the repeated internal social sent-state drift under the idempotent rule added in PR #133. Re-read live Buffer evidence, matched 12 modern tracked queue items by exact item/post ID and non-null sentAt, and updated only those existing records to sent with authoritative sentAt/externalLink fields. Preserved the August 19 Treasury reservation, immutable UTMs, schedule/channel/image history and the legacy July 22 EricaAssist baseline; made no scheduler call and created no replacement post. Validated a READY preview, merged PR #134, verified READY Production on a1fc7d4, and re-read the live Buffer endpoint successfully on that exact commit.",
       "usageAttribution": "operational-proxy"
@@ -286,7 +286,7 @@
       "status": "success",
       "workUnits": {"repositoryManagementFilesReviewed":15,"recentCommitsReviewed":30,"publisherCandidatesRepresented":12,"publisherBeatsRepresented":8,"articlesPublished":1,"socialReservationsObserved":1,"ga4MetricsQueries":2,"bufferMetricsQueries":2,"searchConsoleEndpointQueries":2,"productionDeploymentChecks":3,"runtimeHealthChecks":2,"liveArticleChecks":1,"growthExperimentsReviewed":2,"featureBranchesCreated":2,"validatorsAdded":1,"previewDeploymentChecks":1,"pullRequestsCreated":1,"pullRequestsMerged":1,"reliabilityImprovementsImplemented":1,"reportingFilesUpdated":2,"specialistSubagentsSpawned":0},
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
-      "summary": "Confirmed the August 26 publisher outcome is complete and machine-observable: 12 candidates across 8 beats produced the Library Insight 'An AI Inventory and Change-Control Playbook for Credit Unions,' which is live and selectively scheduled for the CreditUnionAI News company page at 11:30 a.m. ET with exact UTMs. Resolved current Production, retrieved and revalidated GA4/Buffer/direct Search Console before and after the low-risk reliability merge, and confirmed no Vercel runtime errors. Seven-day GA4 is 33 active users/36 sessions/7 engaged sessions versus 164/220/76 over 28 days; Google organic remains the strongest meaningful acquisition channel at 6 sessions/4 engaged/66.7%, while LinkedIn has 82 Buffer impressions/52 reach but only 3 GA4 sessions and 0 engaged sessions. Direct Search Console is 494 impressions/6 clicks/1.21% CTR over seven days versus 2,616/20/0.76% over 28 days; the active OSFI/RBFCU/Velera cluster is at 4 clicks during the early post-change period. Kept both active growth experiments unchanged. Completed a durable prevention step for the repeated Alert-quota policy-drift class through PR #151: a compatibility-safe validator now enforces max-one/no-quota semantics across authoritative policy surfaces while preserving the legacy daily-cycle alert counter as non-authoritative metadata for backward compatibility. Refreshed the canonical CEO report and workload ledger; no credential, schedule, destination, editorial gate or external authority changed.",
+      "summary": "Confirmed the August 26 publisher outcome is complete and machine-observable: 12 candidates across 8 beats produced the Library Insight 'An AI Inventory and Change-Control Playbook for Credit Unions,' which is live and selectively scheduled for the CreditUnionAI News company page at 11:30 a.m. ET with exact UTMs. Resolved exact Production, retrieved and revalidated GA4/Buffer/direct Search Console before and after the low-risk reliability merge, and confirmed no Vercel runtime errors. Seven-day GA4 is 33 active users/36 sessions/7 engaged sessions versus 164/220/76 over 28 days; Google organic remains the strongest meaningful acquisition channel at 6 sessions/4 engaged/66.7%, while LinkedIn has 82 Buffer impressions/52 reach but only 3 GA4 sessions and 0 engaged sessions. Direct Search Console is 494 impressions/6 clicks/1.21% CTR over seven days versus 2,616/20/0.76% over 28 days; the active OSFI/RBFCU/Velera cluster is at 4 clicks during the early post-change period. Kept both active growth experiments unchanged. Completed a durable prevention step for the repeated Alert-quota policy-drift class through PR #151: a compatibility-safe validator now enforces max-one/no-quota semantics across authoritative policy surfaces while preserving the legacy daily-cycle alert counter as non-authoritative metadata for backward compatibility. Refreshed the canonical CEO report and workload ledger; no credential, schedule, destination, editorial gate or external authority changed.",
       "usageAttribution": "operational-proxy"
     },
     {
@@ -701,6 +701,68 @@
         "Buffer"
       ],
       "summary": "Diagnosed a repeated repository delivery-state handoff gap rather than an external posting failure. The September 11 High VantageScore item was uniquely reserved for the approved CreditUnionAI News company page at 12:30 p.m. ET with the existing CUAI UTMs and Buffer post ID. After the fixed due time, re-ran the already-approved idempotent CUAI verified-operations job; exact Buffer evidence matched the existing item/post ID, immutable URLs, fixed slot and channel. The run completed with 0 distribution attempts, 1 sent-state reconciliation and 0 source/action exceptions. Canonical social state now records sentAt 2026-09-11T16:30:30.047Z and the authoritative LinkedIn share URL. Exact-current Production is READY on the reconciliation commit and the live article remains HTTP 200 with no Vercel runtime errors. No duplicate, replacement post, UTM, destination, schedule, credential, editorial gate or external authority changed. Durable prevention remains the exact-match reconciliation path at the first post-due operating or reliability check; no schedule change was made because Reliability Watch lacks authority to alter task schedules.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-11T09:41:16-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "September 11 Friday CEO operating review completed with explicit Output-SLA scoring, measurement-quality controls and a deferred history-preserving canonical usage append.",
+      "status": "success",
+      "workUnits": {
+        "publisherCandidatesRepresented": 12,
+        "publisherBeatsRepresented": 12,
+        "articlesPublished": 1,
+        "socialReservationsObserved": 1,
+        "ga4MetricsQueries": 1,
+        "bufferMetricsQueries": 1,
+        "searchConsoleEndpointQueries": 1,
+        "productionDeploymentChecks": 2,
+        "outputSlaReviews": 1,
+        "reportingPullRequestsMerged": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer",
+        "Google Analytics",
+        "Google Search Console"
+      ],
+      "summary": "Restores the explicitly deferred canonical workload attribution for the September 11 Friday CEO review from authoritative issue evidence. The review refreshed and merged the canonical CEO report through PR #204, verified Production healthy, scored the September 7–11 Output-SLA as met, reviewed the High VantageScore publisher outcome and its one unique fixed-slot company-page reservation, and retained the two-field queue-id plus landing-path rule for exact LinkedIn post attribution. The direct whole-file ledger attempt was reverted before PR creation because history preservation was not strong enough; this append records the completed run without rewriting its outcome.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-11T16:58:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability Watch found a qualified September 11 third-party-risk Alert handoff blocked because the Operating System run could not safely update daily-cycle state from truncated views, and also found the September 11 CEO workload append still pending a history-preserving exact-current path.",
+      "status": "recovered",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "dailyCycleStateChecks": 2,
+        "socialQueueChecks": 1,
+        "operatingOutcomeChecks": 1,
+        "primarySourcesVerified": 1,
+        "recoveryBranchesCreated": 2,
+        "recoveryPullRequestsCreated": 2,
+        "recoveryPullRequestsMerged": 2,
+        "recoveryFilesChanged": 3,
+        "historyPreservationValidations": 2,
+        "previewDeploymentChecks": 2,
+        "productionDeploymentChecks": 2,
+        "liveArticleChecks": 1,
+        "liveAlertArtifactChecks": 1,
+        "runtimeErrorChecks": 1,
+        "pendingUsageRecordsRecovered": 1,
+        "usageLedgerChanges": 1,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "public regulator source"
+      ],
+      "summary": "Recovered the blocked September 11 third-party-risk Alert handoff after diagnosing a state-write safety limitation rather than an editorial, deployment or social failure. Using exact current main and complete state, added only the qualified regulator Alert to the site bundle and September 11 daily-cycle current state, preserved all prior daily-cycle history, validated the two-file PR #206 on a READY Preview, merged it and verified Production READY on the exact merge commit with the live VantageScore article HTTP 200, the production app bundle containing the recovered Alert and zero Vercel runtime errors. The September 11 LinkedIn item was already sent and reconciled with its original fixed slot, company destination and UTMs, so no scheduler call was made. This reporting follow-up also restores the separately deferred September 11 CEO usage record through an exact-current append-only ledger path. Durable prevention: stateful Operating System runs should use complete exact-current blobs or a patch-capable transactional update path before mutating append-style state; material recoveries are not complete until their usage records are appended through the same history-preserving discipline.",
       "usageAttribution": "operational-proxy"
     }
   ]
