@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fannie-freddie-vantagescore-credit-union-mortgages",
+      "articleUrl": "/news/fannie-freddie-vantagescore-credit-union-mortgages.html",
+      "imagePath": "/assets/fannie-freddie-vantagescore-credit-union-mortgages.jpg",
+      "publishedAt": "2026-09-11T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "financial-object-study",
+      "composition": "split-comparison",
+      "perspective": "isometric",
+      "palette": "amber-charcoal",
+      "lighting": "cinematic-side-light",
+      "texture": "polished-metal",
+      "scene": "a-mortgage-file-chooses-between-two-score-model-modules-before-passing-through-underwriting-pricing-retention-and-delivery-controls",
+      "conceptScore": 84.9,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "mixed-media-collage",
+          "subject": "abstract-data-system",
+          "score": 78.6
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "documents-and-controls",
+          "score": 73.2
+        }
+      ]
+    },
+    {
       "id": "fincen-ncua-digital-credentials-credit-union-cip",
       "articleUrl": "/news/fincen-ncua-digital-credentials-credit-union-cip.html",
       "imagePath": "/assets/fincen-ncua-digital-credentials-credit-union-cip.jpg",

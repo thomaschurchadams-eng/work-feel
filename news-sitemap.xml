@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://creditunionainews.com/news/fannie-freddie-vantagescore-credit-union-mortgages.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>CreditUnionAI News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-11T07:00:00-04:00</news:publication_date>
+      <news:title>Fannie and Freddie Open VantageScore 4.0 to All Approved Lenders</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://creditunionainews.com/news/fincen-ncua-digital-credentials-credit-union-cip.html</loc>
     <news:news>
       <news:publication>
@@ -21,39 +32,6 @@
       </news:publication>
       <news:publication_date>2026-09-09T07:00:00-04:00</news:publication_date>
       <news:title>Dort Financial Moves Personalized Member Offers to the Cloud</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/ornl-fcu-kobalt-ai-vendor-risk.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-07T07:00:00-04:00</news:publication_date>
-      <news:title>ORNL FCU Selects AI Platform for Vendor Risk Reviews</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-04T07:00:00-04:00</news:publication_date>
-      <news:title>Raiz Case Study Reports Four-Minute Online Account Opening</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/members-1st-delfi-ai-balance-sheet-cuso.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-03T07:00:00-04:00</news:publication_date>
-      <news:title>Members 1st Invests in AI Balance-Sheet CUSO</news:title>
     </news:news>
   </url>
 </urlset>

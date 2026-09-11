@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -12,6 +12,11 @@
       "function": "lending-collections",
       "technology": "decisioning-underwriting",
       "articles": [
+        {
+          "path": "news/fannie-freddie-vantagescore-credit-union-mortgages.html",
+          "title": "Fannie and Freddie Open VantageScore 4.0 to All Approved Lenders",
+          "summary": "How broader VantageScore 4.0 availability changes mortgage model-choice, pricing and delivery controls."
+        },
         {
           "path": "news/ai-enhanced-underwriting-decisioning.html",
           "title": "AI-Enhanced Underwriting and Decisioning",
