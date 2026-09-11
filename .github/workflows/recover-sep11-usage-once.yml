@@ -1,0 +1,60 @@
+name: Stage September 11 reliability usage recovery
+on:
+  push:
+    branches:
+      - reliability/stage-sep11-sent-recovery-usage-2026-09-11
+permissions:
+  contents: write
+jobs:
+  append:
+    if: ${{ !contains(github.event.head_commit.message, '[usage-recovery-applied]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: reliability/stage-sep11-sent-recovery-usage-2026-09-11
+      - name: Append record without rewriting prior history
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const ledgerPath = 'automation/cuai-usage-ledger.json';
+          const payloadPath = 'automation/tmp/reliability-sep11-sent-recovery-usage.json';
+          const raw = fs.readFileSync(ledgerPath, 'utf8');
+          const before = JSON.parse(raw);
+          const record = JSON.parse(fs.readFileSync(payloadPath, 'utf8'));
+          if (!Array.isArray(before.entries)) throw new Error('usage ledger entries missing');
+          if (before.entries.some(e => e.timestamp === record.timestamp && e.actor === record.actor)) {
+            console.log('Recovery record already present; no append needed.');
+            process.exit(0);
+          }
+          const suffix = '  ]\n}\n';
+          if (!raw.endsWith(suffix)) throw new Error('unexpected usage-ledger ending');
+          const prefix = raw.slice(0, -suffix.length);
+          if (!prefix.endsWith('\n')) throw new Error('unexpected entry boundary');
+          const entry = JSON.stringify(record, null, 2).split('\n').map(line => '    ' + line).join('\n');
+          const next = prefix.slice(0, -1) + ',\n' + entry + '\n' + suffix;
+          const after = JSON.parse(next);
+          if (after.entries.length !== before.entries.length + 1) throw new Error('append count mismatch');
+          for (let i = 0; i < before.entries.length; i++) {
+            if (JSON.stringify(before.entries[i]) !== JSON.stringify(after.entries[i])) {
+              throw new Error('historical entry changed at index ' + i);
+            }
+          }
+          const appended = after.entries[after.entries.length - 1];
+          if (JSON.stringify(appended) !== JSON.stringify(record)) throw new Error('appended record mismatch');
+          fs.writeFileSync(ledgerPath, next);
+          console.log('History preserved; appended exactly one reliability-watch record.');
+          NODE
+      - name: Commit only the canonical usage ledger
+        run: |
+          if git diff --quiet -- automation/cuai-usage-ledger.json; then
+            echo 'No ledger change required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add automation/cuai-usage-ledger.json
+          git diff --cached --check
+          git commit -m 'Record September 11 Reliability Watch sent-state recovery [usage-recovery-applied]'
+          git push origin HEAD:reliability/stage-sep11-sent-recovery-usage-2026-09-11
