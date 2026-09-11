@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-09-11T12:32:48-04:00",
+  "actor": "reliability-watch",
+  "runType": "recovery",
+  "trigger": "Reliability review ran just after the September 11 fixed LinkedIn slot and found the exact Buffer item had sent while automation/social-queue.json still retained scheduled state because no post-due secure-operations invocation had yet reconciled it.",
+  "status": "recovered",
+  "workUnits": {
+    "publisherRunChecks": 1,
+    "dailyCycleStateChecks": 1,
+    "socialQueueChecks": 2,
+    "productionDeploymentChecks": 2,
+    "runtimeErrorChecks": 1,
+    "liveArticleChecks": 1,
+    "secureOperationsRunsRetried": 1,
+    "secureOperationsRunsVerified": 1,
+    "sentStateReconciliations": 1,
+    "socialSchedulingAttempts": 0,
+    "usageLedgerChecks": 1,
+    "usageLedgerChanges": 1
+  },
+  "externalSystemsTouched": [
+    "GitHub",
+    "Vercel",
+    "Buffer"
+  ],
+  "summary": "Diagnosed a repeated repository delivery-state handoff gap rather than an external posting failure. The September 11 High VantageScore item was uniquely reserved for the approved CreditUnionAI News company page at 12:30 p.m. ET with the existing CUAI UTMs and Buffer post ID. After the fixed due time, re-ran the already-approved idempotent CUAI verified-operations job; exact Buffer evidence matched the existing item/post ID, immutable URLs, fixed slot and channel. The run completed with 0 distribution attempts, 1 sent-state reconciliation and 0 source/action exceptions. Canonical social state now records sentAt 2026-09-11T16:30:30.047Z and the authoritative LinkedIn share URL. Exact-current Production is READY on the reconciliation commit and the live article remains HTTP 200 with no Vercel runtime errors. No duplicate, replacement post, UTM, destination, schedule, credential, editorial gate or external authority changed. Durable prevention remains the exact-match reconciliation path at the first post-due operating or reliability check; no schedule change was made because Reliability Watch lacks authority to alter task schedules.",
+  "usageAttribution": "operational-proxy"
+}
