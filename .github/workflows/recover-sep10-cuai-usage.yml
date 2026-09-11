@@ -1,0 +1,66 @@
+name: One-shot CUAI usage recovery
+on:
+  push:
+    branches:
+      - reliability/stage-sep10-usage-recovery-2026-09-11
+permissions:
+  contents: write
+jobs:
+  recover:
+    if: >-
+      github.repository == 'thomaschurchadams-eng/work-feel' &&
+      github.ref == 'refs/heads/reliability/stage-sep10-usage-recovery-2026-09-11' &&
+      github.event.head_commit.message != 'Recover deferred Sep 10 CUAI usage records [usage-recovery-applied]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: reliability/stage-sep10-usage-recovery-2026-09-11
+          fetch-depth: 0
+      - name: Append pending records without rewriting history
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const ledgerPath = 'automation/cuai-usage-ledger.json';
+          const pendingPath = 'automation/recovery/pending-usage-sep10-2026-09-11.json';
+          const raw = fs.readFileSync(ledgerPath, 'utf8');
+          const before = JSON.parse(raw);
+          const pending = JSON.parse(fs.readFileSync(pendingPath, 'utf8'));
+          if (!Array.isArray(before.entries) || !Array.isArray(pending.entries)) throw new Error('invalid ledger or payload shape');
+          if (pending.entries.length !== 5) throw new Error(`expected 5 pending records, got ${pending.entries.length}`);
+          const key = e => `${e.timestamp}|${e.actor}|${e.trigger}`;
+          const existing = new Set(before.entries.map(key));
+          const pendingKeys = pending.entries.map(key);
+          if (new Set(pendingKeys).size !== pendingKeys.length) throw new Error('duplicate key inside pending payload');
+          const alreadyPresent = pendingKeys.filter(k => existing.has(k));
+          if (alreadyPresent.length) throw new Error(`pending record already present: ${alreadyPresent.join(', ')}`);
+          const close = raw.lastIndexOf('\n  ]\n}');
+          if (close < 0) throw new Error('canonical entries-array closing marker not found');
+          const formatted = pending.entries.map(entry => JSON.stringify(entry, null, 2).split('\n').map(line => `    ${line}`).join('\n')).join(',\n');
+          const updated = raw.slice(0, close) + ',\n' + formatted + raw.slice(close);
+          const after = JSON.parse(updated);
+          if (after.entries.length !== before.entries.length + pending.entries.length) throw new Error('entry count invariant failed');
+          for (let i = 0; i < before.entries.length; i++) {
+            if (JSON.stringify(after.entries[i]) !== JSON.stringify(before.entries[i])) throw new Error(`historical entry ${i} changed`);
+          }
+          for (let i = 0; i < pending.entries.length; i++) {
+            if (JSON.stringify(after.entries[before.entries.length + i]) !== JSON.stringify(pending.entries[i])) throw new Error(`appended entry ${i} mismatch`);
+          }
+          fs.writeFileSync(ledgerPath, updated, 'utf8');
+          NODE
+      - name: Validate narrow diff
+        run: |
+          git diff --check
+          test "$(git diff --name-only | wc -l | tr -d ' ')" = "1"
+          test "$(git diff --name-only)" = "automation/cuai-usage-ledger.json"
+          node -e "JSON.parse(require('fs').readFileSync('automation/cuai-usage-ledger.json','utf8')); console.log('ledger-json-valid')"
+          git diff --numstat -- automation/cuai-usage-ledger.json
+      - name: Commit recovered ledger on staging branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add automation/cuai-usage-ledger.json
+          git commit -m 'Recover deferred Sep 10 CUAI usage records [usage-recovery-applied]'
+          git push origin HEAD:reliability/stage-sep10-usage-recovery-2026-09-11
