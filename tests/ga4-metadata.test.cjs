@@ -25,9 +25,9 @@ test('GA4 normalization preserves completeness and thresholding evidence', () =>
   assert.deepEqual(reportEvidence(mapped), { rowCount: 1, metadata: mapped.metadata });
 });
 
-test('missing GA4 completeness flags remain unknown instead of false', () => {
+test('omitted GA4 completeness flags retain the API default of false', () => {
   const mapped = mapReport({ rows: [] });
-  assert.equal(mapped.metadata.subjectToThresholding, null);
-  assert.equal(mapped.metadata.dataLossFromOtherRow, null);
+  assert.equal(mapped.metadata.subjectToThresholding, false);
+  assert.equal(mapped.metadata.dataLossFromOtherRow, false);
   assert.deepEqual(mapped.metadata.samplingMetadatas, []);
 });

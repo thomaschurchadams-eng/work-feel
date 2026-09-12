@@ -143,8 +143,8 @@ function mapReport(payload) {
     metadata: {
       currencyCode: payload.metadata?.currencyCode || null,
       timeZone: payload.metadata?.timeZone || null,
-      dataLossFromOtherRow: payload.metadata?.dataLossFromOtherRow ?? null,
-      subjectToThresholding: payload.metadata?.subjectToThresholding ?? null,
+      dataLossFromOtherRow: Boolean(payload.metadata?.dataLossFromOtherRow),
+      subjectToThresholding: Boolean(payload.metadata?.subjectToThresholding),
       samplingMetadatas: payload.metadata?.samplingMetadatas || [],
       schemaRestrictionResponse: payload.metadata?.schemaRestrictionResponse || null,
       emptyReason: payload.metadata?.emptyReason || null
