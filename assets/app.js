@@ -1545,11 +1545,12 @@
   // Privacy-safe publication analytics. Never include email addresses, names, or article text.
   const initPublicationAnalytics = () => {
     const sendEvent = (name, params = {}) => {
-      if (typeof window.gtag !== 'function') return;
+      if (typeof window.gtag !== 'function') return false;
       const cleanParams = Object.fromEntries(
         Object.entries(params).filter(([, value]) => value !== undefined && value !== null && value !== '')
       );
       window.gtag('event', name, cleanParams);
+      return true;
     };
 
     const body = document.body;
@@ -1630,13 +1631,35 @@
       }
       const inInstituteBanner = Boolean(link.closest('.institute-banner'));
       if (inInstituteBanner && url.hostname.endsWith('cooperativeaiinstitute.com')) {
-        sendEvent('cai_banner_click', {
+        const shouldWaitForAnalytics =
+          event.button === 0 &&
+          !event.metaKey &&
+          !event.ctrlKey &&
+          !event.shiftKey &&
+          !event.altKey &&
+          !link.target;
+        let navigationCompleted = false;
+        const continueNavigation = () => {
+          if (navigationCompleted) return;
+          navigationCompleted = true;
+          window.location.assign(url.href);
+        };
+        const bannerEvent = {
           ...dimensions,
           campaign: 'cai_early_access',
           banner_location: 'sitewide_header',
           destination_path: url.pathname,
-          link_label: label
-        });
+          link_label: label,
+          ...(shouldWaitForAnalytics
+            ? { event_callback: continueNavigation, event_timeout: 400 }
+            : {})
+        };
+
+        if (shouldWaitForAnalytics && typeof window.gtag === 'function') {
+          event.preventDefault();
+          window.setTimeout(continueNavigation, 500);
+        }
+        sendEvent('cai_banner_click', bannerEvent);
       }
       if (inRelated && sameHost) {
         sendEvent('related_content_click', {
