@@ -35,9 +35,13 @@ The production scheduler at `/api/buffer-schedule-tracked` rejects queued items 
 
 ## CUAI-to-CAI attribution
 
-The sitewide Cooperative AI Institute banner is a clearly labeled sponsored/house promotional surface and must remain separate from independent editorial performance. Its destination uses the privacy-safe attribution contract in `automation/analytics-measurement.json`: `creditunionainews / site_banner / cai_early_access / sitewide_banner`.
+CAI promotions are clearly labeled sponsored/house surfaces and remain separate from independent editorial performance. The September 2026 experiment shows one message in two locations: the sitewide header and a compact contextual follow-up on the home, News, Insights and article surfaces. A browser receives the same randomly selected message on return visits through a local-storage assignment; no identity or form data is stored.
 
-The shared tracker sends `cai_banner_click` when a reader clicks that banner. For an ordinary same-tab click, navigation waits for GA4's event callback with a 500 ms fallback; modified and new-tab clicks do not delay the browser because the source page remains open. The GA4 reporting feed includes this event in the same aggregate event table as CUAI editorial/conversion events so the CEO can measure the CUAI-side referral signal. Downstream CAI sessions, intent and leads require CAI-side evidence and must not be inferred from a CUAI banner click alone.
+The two messages test current training against current readiness. Both lead to CAI's live Early Access guide and use `creditunionainews / site_banner / cai_current_readiness_sep2026 / <placement>_<variant id>`. The copy promotes continuously current training and readiness; it does not claim that CAI presently awards a verified formal certification.
+
+A viewable impression is recorded after at least 50 percent of a banner is visible. The tracker sends generic `cai_banner_impression` and `cai_banner_click` events plus short cell-specific event names for every placement/message combination listed in `automation/cai-banner-experiment.json`. This makes all four CTRs available through the existing reporting feed without a new GA4 custom dimension. For an ordinary same-tab click, navigation waits for GA4's event callback with a 500 ms fallback; modified and new-tab clicks do not delay the browser because the source page remains open. Downstream CAI sessions, intent and leads require CAI-side evidence and must not be inferred from a CUAI banner click alone.
+
+Run the experiment for at least 14 days and 100 viewable impressions per variant. Declare a message winner only with at least five clicks, a 25 percent or greater relative CTR lift, and at least one independently observed CAI intent event or lead. If results are inconclusive, continue to 250 impressions per variant and retain the clearer message. Stop the experiment for a broken destination, misleading claim, editorial confusion, or a material accessibility or performance regression. Exclude internal verification traffic from customer conclusions.
 
 ## Buffer performance feed
 
@@ -54,7 +58,7 @@ It reports:
 - site active users, new users, sessions, engaged sessions, engagement rate and page views;
 - acquisition by session source, medium and campaign;
 - LinkedIn sessions by `utm_content` using GA4's `sessionManualAdContent`, filtered to `linkedin / organic_social / cuai_news`;
-- CUAI editorial/conversion event totals (`article_view`, `engaged_reader`, `scroll_depth`, `source_click`, `related_content_click`, `newsletter_intent`, `outbound_click`, `cai_banner_click`);
+- CUAI editorial/conversion event totals (`article_view`, `engaged_reader`, `scroll_depth`, `source_click`, `related_content_click`, `newsletter_intent`, `outbound_click`, CAI banner impressions and clicks, and the two banner message variants);
 - page-level views, users, 90% scrolled users and engagement duration;
 - Search Console landing-page metrics when the GA4 property has an active Search Console link and the requested fields are available.
 
