@@ -37,7 +37,7 @@ The production scheduler at `/api/buffer-schedule-tracked` rejects queued items 
 
 The sitewide Cooperative AI Institute banner is a clearly labeled sponsored/house promotional surface and must remain separate from independent editorial performance. Its destination uses the privacy-safe attribution contract in `automation/analytics-measurement.json`: `creditunionainews / site_banner / cai_early_access / sitewide_banner`.
 
-The shared tracker sends `cai_banner_click` when a reader clicks that banner. The GA4 reporting feed includes this event in the same aggregate event table as CUAI editorial/conversion events so the CEO can measure the CUAI-side referral signal. Downstream CAI sessions, intent and leads require CAI-side evidence and must not be inferred from a CUAI banner click alone.
+The shared tracker sends `cai_banner_click` when a reader clicks that banner. For an ordinary same-tab click, navigation waits for GA4's event callback with a 500 ms fallback; modified and new-tab clicks do not delay the browser because the source page remains open. The GA4 reporting feed includes this event in the same aggregate event table as CUAI editorial/conversion events so the CEO can measure the CUAI-side referral signal. Downstream CAI sessions, intent and leads require CAI-side evidence and must not be inferred from a CUAI banner click alone.
 
 ## Buffer performance feed
 
