@@ -143,8 +143,20 @@ function mapReport(payload) {
     metadata: {
       currencyCode: payload.metadata?.currencyCode || null,
       timeZone: payload.metadata?.timeZone || null,
-      dataLossFromOtherRow: Boolean(payload.metadata?.dataLossFromOtherRow)
+      dataLossFromOtherRow: Boolean(payload.metadata?.dataLossFromOtherRow),
+      subjectToThresholding: Boolean(payload.metadata?.subjectToThresholding),
+      samplingMetadatas: payload.metadata?.samplingMetadatas || [],
+      schemaRestrictionResponse: payload.metadata?.schemaRestrictionResponse || null,
+      emptyReason: payload.metadata?.emptyReason || null
     }
+  };
+}
+
+function reportEvidence(report) {
+  if (!report) return null;
+  return {
+    rowCount: report.rowCount,
+    metadata: report.metadata
   };
 }
 
@@ -285,6 +297,14 @@ async function queryWindow(config, token, days) {
     pages: pages.rows,
     searchConsole: searchConsole?.rows || null,
     searchConsoleError,
+    reportEvidence: {
+      overview: reportEvidence(overview),
+      acquisition: reportEvidence(acquisition),
+      linkedin: reportEvidence(linkedin),
+      events: reportEvidence(events),
+      pages: reportEvidence(pages),
+      searchConsole: reportEvidence(searchConsole)
+    },
     notes: {
       scroll90: '`scrolledUsers` is GA4\'s built-in 90% scroll metric.',
       scroll50: '50% scroll requires the CUAI scroll threshold event parameter to be registered as a GA4 custom dimension before the Data API can break it out reliably.'
@@ -351,3 +371,5 @@ module.exports = async function handler(req, res) {
     });
   }
 };
+
+module.exports._test = { mapReport, reportEvidence };
