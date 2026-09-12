@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "privacy": {
     "prohibitedParameters": ["email", "first_name", "last_name", "full_name", "article_text", "form_value"],
     "rule": "Never send personally identifiable information or free-form user input to analytics."
@@ -20,7 +20,16 @@
     "related_content_click": "The reader follows an internal related-coverage link.",
     "newsletter_intent": "The reader clicks a newsletter or subscribe action.",
     "outbound_click": "The reader opens another external destination.",
-    "cai_banner_click": "The reader clicks the clearly labeled sitewide Cooperative AI Institute sponsored banner."
+    "cai_banner_impression": "At least half of a labeled Cooperative AI Institute promotional banner becomes visible.",
+    "cai_banner_click": "The reader clicks a labeled Cooperative AI Institute promotional banner.",
+    "cai_bn_imp_hdr_v1a": "Header impression for current-training message A.",
+    "cai_bn_imp_hdr_v1b": "Header impression for current-readiness message B.",
+    "cai_bn_imp_ctx_v1a": "Contextual impression for current-training message A.",
+    "cai_bn_imp_ctx_v1b": "Contextual impression for current-readiness message B.",
+    "cai_bn_click_hdr_v1a": "Header click for current-training message A.",
+    "cai_bn_click_hdr_v1b": "Header click for current-readiness message B.",
+    "cai_bn_click_ctx_v1a": "Contextual click for current-training message A.",
+    "cai_bn_click_ctx_v1b": "Contextual click for current-readiness message B."
   },
   "bodyDataAttributes": {
     "data-section": "news or insights",
@@ -41,9 +50,9 @@
     "cai": {
       "utm_source": "creditunionainews",
       "utm_medium": "site_banner",
-      "utm_campaign": "cai_early_access",
-      "utm_content": "sitewide_banner",
-      "rule": "Keep the CAI banner clearly labeled Sponsored, use only privacy-safe attribution fields, and report banner clicks separately from independent editorial performance."
+      "utm_campaign": "cai_current_readiness_sep2026",
+      "utm_content": "<placement>_<stable variant id>",
+      "rule": "Keep every CAI banner clearly labeled Sponsored, assign one stable message per browser, use only privacy-safe attribution fields, and report impressions and clicks separately from independent editorial performance."
     }
   },
   "growthWindows": {

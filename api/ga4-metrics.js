@@ -12,7 +12,16 @@ const CUAI_EVENTS = [
   'related_content_click',
   'newsletter_intent',
   'outbound_click',
-  'cai_banner_click'
+  'cai_banner_impression',
+  'cai_banner_click',
+  'cai_bn_imp_hdr_v1a',
+  'cai_bn_imp_hdr_v1b',
+  'cai_bn_imp_ctx_v1a',
+  'cai_bn_imp_ctx_v1b',
+  'cai_bn_click_hdr_v1a',
+  'cai_bn_click_hdr_v1b',
+  'cai_bn_click_ctx_v1a',
+  'cai_bn_click_ctx_v1b'
 ];
 
 function requestValue(req, key) {

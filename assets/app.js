@@ -12,25 +12,90 @@
   }
 
 
-  const addInstituteBanner = () => {
-    if (document.querySelector('.institute-banner')) return;
-    const header = document.querySelector('header');
-    if (!header) return;
-    const banner = document.createElement('aside');
-    banner.className = 'institute-banner institute-banner--sponsored';
-    banner.setAttribute('aria-label', 'Sponsored: Cooperative AI Institute');
-    banner.innerHTML = `
+  const caiBannerExperiment = {
+    id: 'cai_current_readiness_2026_09',
+    storageKey: 'cuai_cai_banner_variant_2026_09',
+    campaign: 'cai_current_readiness_sep2026',
+    variants: [
+      {
+        id: 'v1a_current_training',
+        headline: 'AI training should move as fast as AI does.',
+        detail: 'Current, credit-union-specific practice for new models, emerging risks, and the decisions teams face now.',
+        cta: 'See current training'
+      },
+      {
+        id: 'v1b_current_readiness',
+        headline: 'Prepare your credit union for what changed in AI this week.',
+        detail: 'Build durable judgment, then keep it current as models, regulation, and industry practice evolve.',
+        cta: 'Explore current readiness'
+      }
+    ]
+  };
+
+  const chooseCaiBannerVariant = () => {
+    try {
+      const stored = window.localStorage.getItem(caiBannerExperiment.storageKey);
+      const match = caiBannerExperiment.variants.find((variant) => variant.id === stored);
+      if (match) return match;
+      const values = new Uint32Array(1);
+      window.crypto.getRandomValues(values);
+      const selected = caiBannerExperiment.variants[values[0] % caiBannerExperiment.variants.length];
+      window.localStorage.setItem(caiBannerExperiment.storageKey, selected.id);
+      return selected;
+    } catch {
+      return caiBannerExperiment.variants[Math.floor(Math.random() * caiBannerExperiment.variants.length)];
+    }
+  };
+
+  const instituteBannerMarkup = (variant, placement) => {
+    const destination = new URL('https://www.cooperativeaiinstitute.com/early-access-guide');
+    destination.search = new URLSearchParams({
+      utm_source: 'creditunionainews',
+      utm_medium: 'site_banner',
+      utm_campaign: caiBannerExperiment.campaign,
+      utm_content: `${placement}_${variant.id}`
+    }).toString();
+    return `
       <div class="container institute-banner-inner">
         <div class="institute-banner-copy">
-          <span class="institute-banner-kicker">Sponsored</span>
-          <p><strong>Cooperative AI Institute</strong><span>Practical AI readiness for credit unions.</span></p>
-          <a class="institute-banner-cta" href="https://www.cooperativeaiinstitute.com/early-access-guide?utm_source=creditunionainews&amp;utm_medium=site_banner&amp;utm_campaign=cai_early_access&amp;utm_content=sitewide_banner">Explore Early Access <span aria-hidden="true">→</span></a>
+          <span class="institute-banner-kicker">Sponsored · Cooperative AI Institute</span>
+          <p><strong>${variant.headline}</strong><span>${variant.detail}</span></p>
+          <a class="institute-banner-cta" href="${destination.href}">${variant.cta} <span aria-hidden="true">→</span></a>
         </div>
       </div>
     `;
-    header.insertAdjacentElement('afterend', banner);
   };
-  addInstituteBanner();
+
+  const createInstituteBanner = (variant, placement, compact = false) => {
+    const banner = document.createElement('aside');
+    banner.className = `institute-banner institute-banner--sponsored${compact ? ' institute-banner--compact' : ''}`;
+    banner.dataset.caiBannerExperiment = caiBannerExperiment.id;
+    banner.dataset.caiBannerVariant = variant.id;
+    banner.dataset.caiBannerPlacement = placement;
+    banner.setAttribute('aria-label', `Sponsored: Cooperative AI Institute — ${placement.replaceAll('_', ' ')}`);
+    banner.innerHTML = instituteBannerMarkup(variant, placement);
+    return banner;
+  };
+
+  const addInstituteBanners = () => {
+    if (document.querySelector('.institute-banner')) return;
+    const header = document.querySelector('header');
+    if (!header) return;
+    const variant = chooseCaiBannerVariant();
+    header.insertAdjacentElement('afterend', createInstituteBanner(variant, 'sitewide_header'));
+
+    const isExperimentSurface =
+      document.body.classList.contains('page-home') ||
+      isNewsArticle ||
+      isInsightArticle ||
+      ['/news.html', '/insights.html'].includes(pagePath);
+    if (!isExperimentSurface) return;
+    const secondaryAnchor = document.body.classList.contains('page-home')
+      ? document.querySelector('.latest-alert-section')
+      : document.querySelector('.article-body') || document.querySelector('main > section:first-of-type');
+    secondaryAnchor?.insertAdjacentElement('afterend', createInstituteBanner(variant, 'contextual_followup', true));
+  };
+  addInstituteBanners();
 
   const alertsData = [
     {
@@ -1580,6 +1645,42 @@
       article_tags: tags || 'untagged'
     };
 
+    const bannerImpressions = new Set();
+    const bannerCellEventName = (kind, placement, variantId) => {
+      const placementCode = placement === 'sitewide_header' ? 'hdr' : 'ctx';
+      const variantCode = variantId.startsWith('v1a_') ? 'v1a' : 'v1b';
+      return `cai_bn_${kind}_${placementCode}_${variantCode}`;
+    };
+    const recordBannerImpression = (banner) => {
+      const experimentId = banner.dataset.caiBannerExperiment || 'unassigned';
+      const variantId = banner.dataset.caiBannerVariant || 'unassigned';
+      const placement = banner.dataset.caiBannerPlacement || 'unassigned';
+      const impressionKey = `${experimentId}:${variantId}:${placement}`;
+      if (bannerImpressions.has(impressionKey)) return;
+      bannerImpressions.add(impressionKey);
+      const impressionEvent = {
+        ...dimensions,
+        experiment_id: experimentId,
+        variant_id: variantId,
+        banner_location: placement,
+        campaign: caiBannerExperiment.campaign
+      };
+      sendEvent(bannerCellEventName('imp', placement, variantId), impressionEvent);
+      sendEvent('cai_banner_impression', impressionEvent);
+    };
+
+    const instituteBanners = Array.from(document.querySelectorAll('.institute-banner'));
+    if ('IntersectionObserver' in window) {
+      const bannerObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting || entry.intersectionRatio < 0.5) return;
+          recordBannerImpression(entry.target);
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.5 });
+      instituteBanners.forEach((banner) => bannerObserver.observe(banner));
+    }
+
     if (isArticle) {
       sendEvent('article_view', dimensions);
 
@@ -1629,8 +1730,12 @@
           link_label: label
         });
       }
-      const inInstituteBanner = Boolean(link.closest('.institute-banner'));
+      const instituteBanner = link.closest('.institute-banner');
+      const inInstituteBanner = Boolean(instituteBanner);
       if (inInstituteBanner && url.hostname.endsWith('cooperativeaiinstitute.com')) {
+        const experimentId = instituteBanner.dataset.caiBannerExperiment || 'unassigned';
+        const variantId = instituteBanner.dataset.caiBannerVariant || 'unassigned';
+        const placement = instituteBanner.dataset.caiBannerPlacement || 'unassigned';
         const shouldWaitForAnalytics =
           event.button === 0 &&
           !event.metaKey &&
@@ -1646,20 +1751,25 @@
         };
         const bannerEvent = {
           ...dimensions,
-          campaign: 'cai_early_access',
-          banner_location: 'sitewide_header',
+          experiment_id: experimentId,
+          variant_id: variantId,
+          campaign: caiBannerExperiment.campaign,
+          banner_location: placement,
           destination_path: url.pathname,
-          link_label: label,
-          ...(shouldWaitForAnalytics
-            ? { event_callback: continueNavigation, event_timeout: 400 }
-            : {})
+          link_label: label
         };
 
         if (shouldWaitForAnalytics && typeof window.gtag === 'function') {
           event.preventDefault();
           window.setTimeout(continueNavigation, 500);
         }
-        sendEvent('cai_banner_click', bannerEvent);
+        sendEvent(bannerCellEventName('click', placement, variantId), bannerEvent);
+        sendEvent('cai_banner_click', {
+          ...bannerEvent,
+          ...(shouldWaitForAnalytics
+            ? { event_callback: continueNavigation, event_timeout: 400 }
+            : {})
+        });
       }
       if (inRelated && sameHost) {
         sendEvent('related_content_click', {

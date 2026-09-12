@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "experimentId": "cai_current_readiness_2026_09",
+  "status": "release_candidate",
+  "cost": "$0 incremental recurring cost",
+  "objective": "Learn which truthful CAI value proposition produces qualified interest from CUAI readers.",
+  "destination": "https://www.cooperativeaiinstitute.com/early-access-guide",
+  "audienceAllocation": {
+    "method": "stable browser-local 50/50 assignment",
+    "storageKey": "cuai_cai_banner_variant_2026_09",
+    "personalData": false
+  },
+  "variants": [
+    {
+      "id": "v1a_current_training",
+      "headline": "AI training should move as fast as AI does.",
+      "cta": "See current training"
+    },
+    {
+      "id": "v1b_current_readiness",
+      "headline": "Prepare your credit union for what changed in AI this week.",
+      "cta": "Explore current readiness"
+    }
+  ],
+  "placements": ["sitewide_header", "contextual_followup"],
+  "measurement": {
+    "viewableImpression": "At least 50 percent of the banner is visible.",
+    "unsupportedBrowserRule": "When viewability cannot be established because IntersectionObserver is unavailable, omit the impression; clicks still record.",
+    "genericEvents": ["cai_banner_impression", "cai_banner_click"],
+    "cellEvents": [
+      "cai_bn_imp_hdr_v1a",
+      "cai_bn_imp_hdr_v1b",
+      "cai_bn_imp_ctx_v1a",
+      "cai_bn_imp_ctx_v1b",
+      "cai_bn_click_hdr_v1a",
+      "cai_bn_click_hdr_v1b",
+      "cai_bn_click_ctx_v1a",
+      "cai_bn_click_ctx_v1b"
+    ],
+    "utmCampaign": "cai_current_readiness_sep2026",
+    "utmContent": "<placement>_<variant id>"
+  },
+  "decisionRule": {
+    "minimumRunDays": 14,
+    "minimumViewableImpressionsPerVariant": 100,
+    "minimumClicksForWinner": 5,
+    "minimumRelativeCtrLift": 0.25,
+    "qualifiedSignalRequired": "At least one independently observed CAI intent event or lead from the winning variant.",
+    "inconclusive": "Continue to 250 viewable impressions per variant, then retain the clearer message if no winner emerges."
+  },
+  "stopConditions": [
+    "The destination is unavailable or materially misleading.",
+    "The message implies delivery that CAI cannot verify.",
+    "The placement causes editorial confusion or a material accessibility or performance regression."
+  ],
+  "claimBoundary": "This experiment promotes current training and readiness. It does not claim that CAI presently awards a verified formal certification.",
+  "governance": "Internal verification traffic is excluded from customer conclusions. CUAI editorial coverage remains independent from CAI promotion."
+}
