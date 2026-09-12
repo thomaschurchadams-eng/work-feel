@@ -25,6 +25,7 @@
   "placements": ["sitewide_header", "contextual_followup"],
   "measurement": {
     "viewableImpression": "At least 50 percent of the banner is visible.",
+    "unsupportedBrowserRule": "When viewability cannot be established because IntersectionObserver is unavailable, omit the impression; clicks still record.",
     "genericEvents": ["cai_banner_impression", "cai_banner_click"],
     "cellEvents": [
       "cai_bn_imp_hdr_v1a",

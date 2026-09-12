@@ -1679,8 +1679,6 @@
         });
       }, { threshold: 0.5 });
       instituteBanners.forEach((banner) => bannerObserver.observe(banner));
-    } else {
-      instituteBanners.forEach(recordBannerImpression);
     }
 
     if (isArticle) {

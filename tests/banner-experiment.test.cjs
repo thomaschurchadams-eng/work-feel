@@ -25,6 +25,7 @@ test('each banner carries privacy-safe placement and variant attribution', () =>
   assert.match(app, /banner\.dataset\.caiBannerVariant/);
   assert.match(app, /banner\.dataset\.caiBannerPlacement/);
   assert.match(app, /threshold: 0\.5/);
+  assert.doesNotMatch(app, /instituteBanners\.forEach\(recordBannerImpression\)/);
   assert.match(app, /sendEvent\('cai_banner_impression'/);
   assert.match(app, /sendEvent\('cai_banner_click'/);
   assert.match(app, /event_callback: continueNavigation/);
