@@ -6,94 +6,177 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-11",
+    "date": "2026-09-14",
     "fullArticleCount": 1,
-    "alertCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "mortgage-credit-score-decisioning",
-      "enterprise-ai-governance",
-      "digital-banking-competition",
+      "cybersecurity-vulnerability-management",
+      "fraud-aml-scams",
+      "ai-policy-governance",
+      "enterprise-financial-services-ai",
+      "third-party-risk-management",
+      "credit-union-ai-adoption",
+      "ai-portfolio-investment",
       "agentic-banking-governance",
-      "payments-modernization",
-      "regulatory-ai-oversight",
-      "ai-cyber-misuse",
-      "finance-financial-stability",
-      "conversational-ai",
-      "communications-compliance",
-      "payments-card-products",
-      "responsible-ai-training"
+      "core-banking-agents",
+      "cyber-financial-contagion",
+      "fraud-technology-legislation",
+      "federal-vulnerability-prioritization"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Fannie and Freddie Open VantageScore 4.0 to All Approved Lenders",
-        "url": "https://creditunionainews.com/news/fannie-freddie-vantagescore-credit-union-mortgages.html",
-        "primaryFunctionalAudience": "Mortgage lending, secondary-market and compliance leaders",
+        "title": "FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks",
+        "url": "https://creditunionainews.com/news/fs-isac-ai-vulnerability-patch-timelines.html",
+        "primaryFunctionalAudience": "Technology, cybersecurity and operational-resilience leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-09-11-12:30-et"
-      },
-      {
-        "type": "alert",
-        "title": "Regulators Propose New Third-Party Risk Guidance for Credit Unions",
-        "url": "https://creditunionainews.com/alerts/#regulators-propose-third-party-risk-guidance-credit-unions"
+        "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "OpenAI Launches ChatGPT for Financial Services",
-        "reason": "major primary-source-backed AI launch, but the initial workflows center on investment banking and equity research and have a less direct credit-union operating implication than the selected mortgage decisioning change"
+        "title": "FATF Warns AI Is Lowering the Scale Needed to Run Global Scams",
+        "reason": "current and material, but the selected FS-ISAC advisory is primary-source financial-sector guidance with more direct credit-union controls"
       },
       {
-        "title": "Nubank Launches U.S. Savings, Card and Remittance Products",
-        "reason": "material digital-banking competition, but the launch does not disclose a differentiated AI or technology operating change for credit unions"
+        "title": "Regulators Propose Updated Third-Party Risk Guidance",
+        "reason": "already covered in the September 11 Alert; a full article would duplicate that cycle"
+      },
+      {
+        "title": "OpenAI Launches ChatGPT for Financial Services",
+        "reason": "initial workflows center on investment banking and equity research rather than a direct credit-union operating change"
+      },
+      {
+        "title": "AI Safety Slowdown Calls Raise Governance Questions for Financial Firms",
+        "reason": "indirect credit-union applicability and no current financial-institution operating requirement"
+      },
+      {
+        "title": "House Fraud Technology Bill Would Study AI Pilots for Smaller Financial Institutions",
+        "reason": "June report is outside the 72-hour news window and creates no new authority today"
       },
       {
         "title": "State Bank of India Proposes a Know-Your-Agent Framework",
-        "reason": "useful agentic-banking control concept, but it is an India-specific proposal rather than an adopted U.S. financial-institution requirement"
+        "reason": "India-specific rather than an adopted U.S. credit-union requirement"
       },
       {
-        "title": "India Adds Tap-and-Pay to UPI",
-        "reason": "significant payments modernization, but it is specific to India's payment infrastructure and creates no direct U.S. credit-union implementation decision"
+        "title": "Americas Credit Unions Reports Broad Generative-AI Adoption",
+        "reason": "outside the news window and scored below the publishing threshold"
       },
       {
-        "title": "SEBI Moves Toward a Global AI Supervisory Toolkit and Tokenized Settlement",
-        "reason": "substantive securities-market technology development, but it is India-specific and does not establish a transferable near-term credit-union operating requirement"
+        "title": "Cornerstone Finds Credit Unions Expanding AI Investment Plans",
+        "reason": "not current and scored below the publishing threshold"
       },
       {
-        "title": "Anthropic Reports Blocking AI Misuse in Cyber and Biological Research",
-        "reason": "important model-safety evidence without a financial-services-specific event, credit-union deployment or new operating requirement"
+        "title": "Falcon Launches Transaction-Executing Banking AI Agents",
+        "reason": "no named U.S. credit-union deployment, independent validation or operating result"
       },
       {
-        "title": "Fitch Models a Recession Scenario From an AI-Equity Correction",
-        "reason": "credible macro-financial stress scenario, but it is not the rating agency's base case and has only an indirect credit-union technology implication"
+        "title": "Researchers Model Cyber-Financial Contagion From AI Vendor Compromise",
+        "reason": "synthetic network study without a direct credit-union event or validated production result"
       },
       {
-        "title": "Blue Machines Launches a Banking Speech-to-Text Model",
-        "reason": "current vendor benchmarks, but the model is designed for Indian languages and infrastructure and has no disclosed U.S. credit-union deployment or independent outcome"
-      },
-      {
-        "title": "FCC Moves Toward TCPA Relief Requested by Credit Unions",
-        "reason": "material communications-compliance development, but the technology connection is administrative rather than a substantive AI or operating-technology change"
-      },
-      {
-        "title": "Navy Federal Launches a New Travel Rewards Card",
-        "reason": "named credit-union product launch whose digital servicing features are routine and do not establish a substantive AI, automation or data-decisioning change"
-      },
-      {
-        "title": "Wipfli and CUNA Strategic Services Hold a Responsible-AI Webinar",
-        "reason": "relevant educational programming, but it is an event rather than a new implementation, rule, evidence package or operating result"
+        "title": "CISA Replaces CVSS-Only Remediation With Risk-Based Security Update Deadlines",
+        "reason": "June directive binds federal civilian agencies rather than credit unions and is no longer current news"
       }
     ],
-    "status": "article-and-alert-complete",
+    "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI portfolio value realization, investment thresholds and shutdown criteria for board and strategy leaders",
-    "updatedAt": "2026-09-11T16:50:00-04:00"
+    "updatedAt": "2026-09-14T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-11",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "mortgage-credit-score-decisioning",
+        "enterprise-ai-governance",
+        "digital-banking-competition",
+        "agentic-banking-governance",
+        "payments-modernization",
+        "regulatory-ai-oversight",
+        "ai-cyber-misuse",
+        "finance-financial-stability",
+        "conversational-ai",
+        "communications-compliance",
+        "payments-card-products",
+        "responsible-ai-training"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Fannie and Freddie Open VantageScore 4.0 to All Approved Lenders",
+          "url": "https://creditunionainews.com/news/fannie-freddie-vantagescore-credit-union-mortgages.html",
+          "primaryFunctionalAudience": "Mortgage lending, secondary-market and compliance leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-09-11-12:30-et"
+        },
+        {
+          "type": "alert",
+          "title": "Regulators Propose New Third-Party Risk Guidance for Credit Unions",
+          "url": "https://creditunionainews.com/alerts/#regulators-propose-third-party-risk-guidance-credit-unions"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "OpenAI Launches ChatGPT for Financial Services",
+          "reason": "major primary-source-backed AI launch, but the initial workflows center on investment banking and equity research and have a less direct credit-union operating implication than the selected mortgage decisioning change"
+        },
+        {
+          "title": "Nubank Launches U.S. Savings, Card and Remittance Products",
+          "reason": "material digital-banking competition, but the launch does not disclose a differentiated AI or technology operating change for credit unions"
+        },
+        {
+          "title": "State Bank of India Proposes a Know-Your-Agent Framework",
+          "reason": "useful agentic-banking control concept, but it is an India-specific proposal rather than an adopted U.S. financial-institution requirement"
+        },
+        {
+          "title": "India Adds Tap-and-Pay to UPI",
+          "reason": "significant payments modernization, but it is specific to India's payment infrastructure and creates no direct U.S. credit-union implementation decision"
+        },
+        {
+          "title": "SEBI Moves Toward a Global AI Supervisory Toolkit and Tokenized Settlement",
+          "reason": "substantive securities-market technology development, but it is India-specific and does not establish a transferable near-term credit-union operating requirement"
+        },
+        {
+          "title": "Anthropic Reports Blocking AI Misuse in Cyber and Biological Research",
+          "reason": "important model-safety evidence without a financial-services-specific event, credit-union deployment or new operating requirement"
+        },
+        {
+          "title": "Fitch Models a Recession Scenario From an AI-Equity Correction",
+          "reason": "credible macro-financial stress scenario, but it is not the rating agency's base case and has only an indirect credit-union technology implication"
+        },
+        {
+          "title": "Blue Machines Launches a Banking Speech-to-Text Model",
+          "reason": "current vendor benchmarks, but the model is designed for Indian languages and infrastructure and has no disclosed U.S. credit-union deployment or independent outcome"
+        },
+        {
+          "title": "FCC Moves Toward TCPA Relief Requested by Credit Unions",
+          "reason": "material communications-compliance development, but the technology connection is administrative rather than a substantive AI or operating-technology change"
+        },
+        {
+          "title": "Navy Federal Launches a New Travel Rewards Card",
+          "reason": "named credit-union product launch whose digital servicing features are routine and do not establish a substantive AI, automation or data-decisioning change"
+        },
+        {
+          "title": "Wipfli and CUNA Strategic Services Hold a Responsible-AI Webinar",
+          "reason": "relevant educational programming, but it is an event rather than a new implementation, rule, evidence package or operating result"
+        }
+      ],
+      "status": "article-and-alert-complete",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI portfolio value realization, investment thresholds and shutdown criteria for board and strategy leaders",
+      "updatedAt": "2026-09-11T16:50:00-04:00"
+    },
     {
       "date": "2026-09-10",
       "fullArticleCount": 1,

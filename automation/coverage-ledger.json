@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fs-isac-ai-vulnerability-patch-timelines",
+      "title": "FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks",
+      "url": "/news/fs-isac-ai-vulnerability-patch-timelines.html",
+      "publishedAt": "2026-09-14T07:00:00-04:00",
+      "section": "news",
+      "beat": "cybersecurity-vulnerability-management",
+      "functions": ["it-data-cybersecurity", "vendor-management", "operations", "board-strategy"],
+      "technologies": ["privacy-security", "generative-ai", "agents-automation"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Technology, cybersecurity and operational-resilience leaders",
+      "secondaryAudiences": ["vendor-management teams", "business system owners", "executive and board risk committees"],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": ["/news/fsb-frontier-ai-cyber-risk-financial-system.html", "/insight-credit-union-ai-inventory-change-control.html"],
+      "sourceTier": 1,
+      "score": 78.4
+    },
+    {
       "id": "fannie-freddie-vantagescore-credit-union-mortgages",
       "title": "Fannie and Freddie Open VantageScore 4.0 to All Approved Lenders",
       "url": "/news/fannie-freddie-vantagescore-credit-union-mortgages.html",

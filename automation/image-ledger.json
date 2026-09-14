@@ -3,6 +3,28 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fs-isac-ai-vulnerability-patch-timelines",
+      "articleUrl": "/news/fs-isac-ai-vulnerability-patch-timelines.html",
+      "imagePath": "/assets/fs-isac-ai-vulnerability-patch-timelines.jpg",
+      "publishedAt": "2026-09-14T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut",
+      "subject": "abstract-data-system",
+      "composition": "diagonal-motion",
+      "perspective": "overhead",
+      "palette": "burgundy-sand",
+      "lighting": "high-contrast-studio",
+      "texture": "paper-fiber",
+      "scene": "exposed-software-components-move-through-testing-patching-segmentation-and-inventory-paths-into-isolated-protected-systems",
+      "conceptScore": 88.2,
+      "dimensions": {"width": 1200, "height": 630},
+      "conceptAlternatives": [
+        {"medium": "dimensional-3d", "subject": "risk-and-security", "score": 52.4},
+        {"medium": "tactile-paper-cut", "subject": "human-machine-handoff", "score": 75.6}
+      ]
+    },
+    {
       "id": "fannie-freddie-vantagescore-credit-union-mortgages",
       "articleUrl": "/news/fannie-freddie-vantagescore-credit-union-mortgages.html",
       "imagePath": "/assets/fannie-freddie-vantagescore-credit-union-mortgages.jpg",

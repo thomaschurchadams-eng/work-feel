@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-11T07:00:00-04:00",
+  "lastStandardRun": "2026-09-14T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Fannie and Freddie Open VantageScore 4.0 to All Approved Lenders",
-    "url": "https://creditunionainews.com/news/fannie-freddie-vantagescore-credit-union-mortgages.html",
-    "publishedAt": "2026-09-11T07:00:00-04:00",
+    "title": "FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks",
+    "url": "https://creditunionainews.com/news/fs-isac-ai-vulnerability-patch-timelines.html",
+    "publishedAt": "2026-09-14T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-14",
+      "headline": "FATF Warns AI Is Lowering the Scale Needed to Run Global Scams",
+      "reason": "current and material, but the selected FS-ISAC advisory is primary-source financial-sector guidance with more direct credit-union controls"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "Regulators Propose Updated Third-Party Risk Guidance",
+      "reason": "authoritative and directly relevant, but it was already covered in the September 11 Alert and a full article would duplicate that cycle"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "OpenAI Launches ChatGPT for Financial Services",
+      "reason": "major AI launch whose initial workflows center on investment banking and equity research rather than a direct credit-union operating change"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "AI Safety Slowdown Calls Raise Governance Questions for Financial Firms",
+      "reason": "high-newsworthiness AI policy debate with indirect credit-union applicability and no current financial-institution operating requirement"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "House Fraud Technology Bill Would Study AI Pilots for Smaller Financial Institutions",
+      "reason": "directly relevant primary legislation, but its June report is outside the 72-hour news window and creates no new authority today"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "State Bank of India Proposes a Know-Your-Agent Framework",
+      "reason": "useful agentic-banking control concept, but it is India-specific rather than an adopted U.S. credit-union requirement"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "America's Credit Unions Reports Broad Generative-AI Adoption",
+      "reason": "useful credit-union adoption evidence, but the August 28 publication is outside the news window and scored below the publishing threshold"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "Cornerstone Finds Credit Unions Expanding AI Investment Plans",
+      "reason": "relevant portfolio background, but the report is not current and scored below the publishing threshold"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "Falcon Launches Transaction-Executing Banking AI Agents",
+      "reason": "current vendor launch without a named U.S. credit-union deployment, independent validation or operating result"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "Researchers Model Cyber-Financial Contagion From AI Vendor Compromise",
+      "reason": "interesting early research based on a synthetic network, without a direct credit-union event or validated production result"
+    },
+    {
+      "date": "2026-09-14",
+      "headline": "CISA Replaces CVSS-Only Remediation With Risk-Based Security Update Deadlines",
+      "reason": "authoritative supporting evidence, but the June directive binds federal civilian agencies rather than credit unions and is no longer current news"
+    },
     {
       "date": "2026-09-11",
       "headline": "OpenAI Launches ChatGPT for Financial Services",
