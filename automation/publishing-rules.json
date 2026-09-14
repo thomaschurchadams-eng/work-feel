@@ -34,9 +34,16 @@
     "confidential-or-nonpublic-information",
     "undisclosed-sponsored-content",
     "duplicate-or-near-duplicate",
-    "missing-ai-or-technology-operating-implication"
+    "missing-ai-or-technology-operating-implication",
+    "unsafe-secondary-daily-state-finalization"
   ],
   "productionBehavior": "Candidates that pass hard stops and score at or above the minimum publish directly to main. Failed candidates are logged with reasons and do not request routine human approval.",
+  "statePersistence": {
+    "auditPath": "automation/daily-cycle-state.json",
+    "connectorOnlySecondaryFinalization": "forbidden",
+    "rule": "After the article package has persisted the dated daily-cycle outcome, a connector-only runtime must not perform a second whole-file replacement merely to finalize deployment or social fields. Treat automation/social-queue.json and the coverage ledger as authoritative for final distribution truth. If daily-cycle reconciliation is still useful, defer it to a checkout-capable, history-preserving path that runs scripts/validate-daily-cycle-preservation.mjs against current main and re-fetches the committed blob for strict UTF-8/JSON and preservation verification.",
+    "reason": "The September 9 and September 14 secondary finalization writes corrupted the append-style daily-cycle ledger despite the primary publication outcome already being safely persisted."
+  },
   "weights": {
     "newsworthiness": 0.22,
     "creditUnionRelevance": 0.23,

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { isDeepStrictEqual } from 'node:util';
 
 const statePath = process.argv[2] || 'automation/daily-cycle-state.json';
 const requestedBaseRef = process.argv[3] || process.env.CUAI_BASE_REF || 'main';
@@ -9,7 +10,16 @@ function fail(message) {
   process.exit(1);
 }
 
-function readJson(label, text) {
+function decodeUtf8(label, bytes) {
+  try {
+    return new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+  } catch (error) {
+    fail(`${label} is not valid UTF-8 (${error.message})`);
+  }
+}
+
+function readJson(label, bytes) {
+  const text = decodeUtf8(label, bytes);
   try {
     return JSON.parse(text);
   } catch (error) {
@@ -21,25 +31,25 @@ if (!fs.existsSync(statePath)) {
   fail(`candidate file is missing: ${statePath}`);
 }
 
-const candidate = readJson('candidate state', fs.readFileSync(statePath, 'utf8'));
+const candidate = readJson('candidate state', fs.readFileSync(statePath));
 
-let baseText;
+let baseBytes;
 let baseRef = requestedBaseRef;
 try {
-  baseText = execFileSync('git', ['show', `${baseRef}:${statePath}`], { encoding: 'utf8' });
+  baseBytes = execFileSync('git', ['show', `${baseRef}:${statePath}`]);
 } catch {
   if (requestedBaseRef !== 'main') {
     fail(`could not read ${statePath} from base ref ${requestedBaseRef}`);
   }
   baseRef = 'HEAD^';
   try {
-    baseText = execFileSync('git', ['show', `${baseRef}:${statePath}`], { encoding: 'utf8' });
+    baseBytes = execFileSync('git', ['show', `${baseRef}:${statePath}`]);
   } catch {
     fail(`could not read a base copy of ${statePath}; pass an explicit base ref`);
   }
 }
 
-const base = readJson(`base state (${baseRef})`, baseText);
+const base = readJson(`base state (${baseRef})`, baseBytes);
 
 if (!Array.isArray(base.history)) {
   fail('base state does not contain a history array');
@@ -51,11 +61,26 @@ if (candidate.history.length < base.history.length) {
   fail(`history shrank from ${base.history.length} entries to ${candidate.history.length}`);
 }
 
-const baseDates = base.history.map((entry) => entry?.date).filter(Boolean);
-const candidateDates = new Set(candidate.history.map((entry) => entry?.date).filter(Boolean));
-const missingDates = baseDates.filter((date) => !candidateDates.has(date));
-if (missingDates.length) {
-  fail(`candidate dropped existing history dates: ${missingDates.join(', ')}`);
+const candidateHistoryByDate = new Map();
+for (const entry of candidate.history) {
+  const date = entry?.date;
+  if (!date) continue;
+  if (candidateHistoryByDate.has(date)) {
+    fail(`candidate contains duplicate history date: ${date}`);
+  }
+  candidateHistoryByDate.set(date, entry);
+}
+
+for (const baseEntry of base.history) {
+  const date = baseEntry?.date;
+  if (!date) continue;
+  const candidateEntry = candidateHistoryByDate.get(date);
+  if (!candidateEntry) {
+    fail(`candidate dropped existing history date: ${date}`);
+  }
+  if (!isDeepStrictEqual(candidateEntry, baseEntry)) {
+    fail(`candidate mutated existing history entry: ${date}`);
+  }
 }
 
 if (base.current?.date && candidate.current?.date && candidate.current.date < base.current.date) {
@@ -63,12 +88,16 @@ if (base.current?.date && candidate.current?.date && candidate.current.date < ba
 }
 
 if (base.current?.date && candidate.current?.date && candidate.current.date > base.current.date) {
-  if (!candidateDates.has(base.current.date)) {
+  const preservedPriorCurrent = candidateHistoryByDate.get(base.current.date);
+  if (!preservedPriorCurrent) {
     fail(`candidate advanced current date to ${candidate.current.date} without preserving prior current ${base.current.date} in history`);
+  }
+  if (!isDeepStrictEqual(preservedPriorCurrent, base.current)) {
+    fail(`candidate advanced current date to ${candidate.current.date} but did not preserve the complete prior current ${base.current.date}`);
   }
 }
 
 console.log(
   `daily-cycle preservation validation passed: ${candidate.history.length} history entries; ` +
-  `all ${baseDates.length} dated base entries preserved from ${baseRef}`
+  `all ${base.history.length} base history entries are unchanged from ${baseRef}`
 );
