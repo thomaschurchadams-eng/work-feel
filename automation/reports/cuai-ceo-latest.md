@@ -1,84 +1,128 @@
 # CUAI CEO Operating Report
 
 ## As of
-2026-09-14T09:24:22-04:00
+2026-09-14T15:27:29-04:00
 
 ## Goal progress
-- **G3 autonomous operating loop — degraded by a repeated state-write failure, while publication/distribution are operational.** The September 14 publisher completed a qualified High article and one eligible company-page reservation, but its secondary finalization write collapsed `automation/daily-cycle-state.json` at commit `5dc473fbe6758ad6b33c71dd7b942826e8139c0e`. Reliability Watch recovered the exact last valid state through PR #210 without losing prior audit history. The recovered state is valid JSON but intentionally retains stale pre-finalization `status`/`socialDecision` fields; social delivery truth remains intact in `automation/social-queue.json`. This repeated the September 9 whole-file state-write class and is now the strongest G3 constraint.
-- **G1 qualified audience growth — +16.8% versus the September baseline.** Authenticated GA4 on exact current Production reports **188 rolling-28-day active users**, versus the August 31 baseline of 161 and target of 242. Seven-day active users are **59**, about 25.5% above the 28-day weekly pace of 47, with essentially stable engagement quality at **34.4% over 7d vs 34.8% over 28d**. Deep-read evidence is weaker: **0 90%-scrolled users over 7d vs 14 over 28d**.
-- **G5 CUAI→CAI demand generation — banner-side measurement is now observable; downstream attribution remains unproven.** The authenticated GA4 event report returns **10 viewable CAI banner impressions from 6 users and 4 generic banner clicks from 2 users**. The event report is explicitly not thresholded, sampled or affected by `other`-row data loss. This is meaningful measurement progress, but it is **not yet customer-demand or conversion evidence**: internal verification traffic must be excluded, only one cell-specific click (`hdr_v1b`) is visible, and no downstream CAI session/intent/lead tied to `creditunionainews / site_banner / cai_current_readiness_sep2026` was independently retrieved in this run.
-- **G2 engagement learning — one live CAI message/placement experiment, no LinkedIn copy experiment.** The prior three-post LinkedIn decision-tool-promise treatment remains stopped. The measured CAI banner test is the current bounded optimization: current-training versus current-readiness copy across sitewide header/contextual follow-up. Its decision rule remains at least 14 days, 100 viewable impressions per variant, at least 5 clicks, >=25% relative CTR lift, and an independently observed CAI intent/lead before declaring a winner. Current volume is far below the decision threshold.
-- **G4 commercial visibility — package/pipeline are preserved but remain research-only.** The Founding AI Intelligence Partner package and eight-organization internal research pipeline remain the current assets. The September 14 CFO reconciliation verified no CUAI-specific revenue, sponsor booking, qualified sponsor confirmation or payment in inspected evidence; research-only organizations are not counted as revenue or booked pipeline.
+- **G3 autonomous operating loop — recovered, with two reconciliation caveats.** Reliability Watch completed the durable prevention work for the repeated September 9/14 whole-file daily-cycle corruption. PR #211 merged as `fb0531a8e918602d3954dd2860a2030baf74dd17`; the publishing rules now forbid connector-only secondary whole-file daily-state finalization and the validator rejects invalid UTF-8, duplicate history dates, history mutation and incomplete prior-current preservation. Verified-operations run #56 authenticated that exact revision and returned Production HTTP 200 with no operation errors. The remaining caveats are reporting-only: `daily-cycle-state.json` intentionally retains the safely recovered pre-finalization fields, and today's LinkedIn item is past its scheduled time but still says `scheduled` because the latest authenticated Buffer receipt was generated before the post was due. No sent state is inferred without an exact `sentAt` match.
+- **G1 qualified audience growth — +20.5% versus the September baseline.** Authenticated GA4 on exact Production reports **194 rolling-28-day active users**, versus the August 31 baseline of 161 and target of 242. Seven-day active users are **65**. Engagement quality is **31.3% over 7d vs 33.8% over 28d**; deep-read evidence remains weak at **1 90%-scrolled user over 7d vs 15 over 28d**.
+- **G5 CUAI→CAI demand generation — source-side delivery is verified; customer attribution is not.** CUAI analytics property **520110560** reports **14 generic CAI banner impressions, 4 `cai_banner_click` events and 4 `outbound_click` events** over the current 7-day window. The event report preserves completeness metadata: `subjectToThresholding=false`, `dataLossFromOtherRow=false`, `samplingMetadatas=[]`. The known two internal validation clicks must be excluded. That leaves two unmatched source-side click events, but they are **not counted as customer demand** without destination-side evidence from CAI analytics property **538586591**. The property-ID check is mandatory in future receipts.
+- **G2 engagement learning — one live CAI banner experiment; no second experiment opened.** The stopped LinkedIn decision-tool-promise treatment remains stopped. The current banner experiment is still below its decision thresholds, so no variant winner is declared.
+- **G4 commercial visibility — package/pipeline remain research-only.** The Founding AI Intelligence Partner package and eight-organization research list remain internal research assets. September 14 CFO evidence verified no CUAI-specific sponsor booking, payment or qualified sponsor confirmation in inspected evidence; no external commercial action occurred.
 
 ## System health
-**Degraded.** Publishing and Production are healthy, but the repeated whole-file daily-cycle finalization failure is a material G3 reliability defect and reporting state is not fully reconciled. Latest exact Production is **READY** on `4857ba9b1f9b166e371bfa5a86feed124c68097f` (`dpl_A1rQPZ4j9AcGj1GjEmbyjfjMkUBj`); Vercel reports **no runtime errors in the prior 24 hours**. `CUAI verified operations` run #54 completed successfully on that exact commit with `authentication: verified`, Production HTTP 200, no operation errors, and authenticated GA4/Buffer/Search Console receipts. Source health remains current through September 10: **28 registered URLs checked, 24 healthy, 3 redirected, 1 temporarily unavailable, 0 removed/contradicted, plus 15 recent primary sources**.
+**Degraded but materially improved.** Publishing and Production are healthy, and the repeated daily-state corruption class now has a merged prevention control. Current `main` is `fb0531a8e918602d3954dd2860a2030baf74dd17`; verified-operations run #56 completed successfully on that exact commit with `authentication: verified`, Production HTTP 200, no secure-operation errors, and fresh GA4/Buffer/Search Console receipts. The two remaining G3 issues are stale-but-preserved daily-cycle finalization fields and today's post-delivery state, which cannot be reconciled until an authenticated Buffer receipt exposes an exact `sentAt`/external link for post `6aa7d87cc3bdc6ddb266c875`.
 
 ## Newsroom output
 - **Published:** “FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks” — **News / High** — https://creditunionainews.com/news/fs-isac-ai-vulnerability-patch-timelines.html
 - Publisher screened **12 candidates across 12 beats**; selected score **78.4**; no missed High recovery. Primary audience: technology, cybersecurity and operational-resilience leaders.
-- Publisher handoff verifies the article, 1200x630 hero, homepage, News index and fraud/security topic hub live on Production.
-- **LinkedIn:** scheduled for **12:30 p.m. ET September 14** via one unique CreditUnionAI News company-page queue item. Buffer post id `6aa7d87cc3bdc6ddb266c875`; immutable CUAI UTMs; image attached; `duplicate: false`. It is not yet due at this CEO checkpoint.
-- **Next portfolio gap:** AI portfolio value realization, investment thresholds and shutdown criteria for board and strategy leaders.
+- Coverage ledger, homepage and live site all contain the article. The six current homepage cards span cybersecurity, mortgage lending, digital identity, personalization, workforce AI and vendor risk.
+- **LinkedIn:** one unique company-page item was scheduled for **12:30 p.m. ET September 14**, Buffer post id `6aa7d87cc3bdc6ddb266c875`, immutable CUAI UTMs, image attached, `duplicate: false`. Repository status remains `scheduled`. Verified-operations run #56 was generated at **11:40 a.m. ET**, before the due time, so it cannot establish sent state. Do not retry or rewrite without a later exact Buffer match.
+- **Next portfolio gap:** AI portfolio value realization, investment thresholds and shutdown criteria for board/strategy leaders. Current-week coverage is comparatively concentrated in IT/cybersecurity, risk/compliance and operations; dedicated finance/treasury and payments/deposits coverage is thinner and should be sourced only where a substantive technology/AI operating implication exists.
 
 ## Alert and homepage freshness
-Today's bounded Alert/homepage-freshness cycle remains owned by the existing CUAI Operating System after the article handoff. This CEO run did not duplicate that function or create an Alert. The current daily-cycle state shows `alertCount: 0` at this checkpoint; this is not a prediction of the later operating-cycle outcome.
+**Completed — no new Alert published.** A broad current scan across regulators, credit-union sources, fintech/financial-services developments and AI/fraud/payment signals did not produce a genuinely new, urgent, qualified Alert after the September 11 cycle. The September 3 FinCEN scam-center alert is material but is a historical backfill candidate and remains ineligible. Current broader AI/fraud developments lack a new U.S. credit-union operating requirement or sufficiently direct urgent action to clear the Alert gate.
+
+The September 11 third-party-risk Alert is now beyond the 72-hour homepage priority window. `homepageWatchState.items` is already empty, and all timely non-Alert News/Insights candidates from the last seven days are already represented in the six-card homepage grid, so the maintained evergreen fallback is the correct live state. `homepageWatchState.reviewedAt` remains blank: the available GitHub connector exposes only a whole-file replacement path for the large `assets/app.js`, and the complete file cannot be safely reconstructed from truncated connector output. Under the state-preservation rule, no audit-only whole-file rewrite was attempted. This is a precise write-path blocker, not a content blocker; the live fallback behavior is already correct.
+
+## Monday portfolio review
+- **Goal order remains G3 → G1 → G5 → G4 → G2.** G3's repeated corruption defect has a deployed prevention control; the next reliability check is to observe the next publisher cycle without a secondary daily-state rewrite and to reconcile today's social delivery only from exact evidence.
+- **Coverage balance:** recent output serves IT/cybersecurity, risk/compliance, lending, member service, marketing, HR and vendor management well. The strongest next editorial gap is the publisher-identified board/strategy topic on AI portfolio value realization; finance/treasury and payments/deposits are secondary coverage gaps, subject to the same mission-fit and source-quality gates.
+- **Growth:** 28-day active users are 194, up 20.5% from baseline, but search CTR and deep reading remain weak. `/news.html` remains a visibility surface rather than a proven conversion win: Search Console shows **75 impressions / 0 clicks / position 31.25 over 7d** and **492 / 0 / position 19.58 over 28d** in the latest authenticated receipt.
+- **Measurement:** source-side CAI banner events are complete enough to say they were observed, not enough to call them customer demand. Preserve property `520110560` for CUAI source analytics and property `538586591` for CAI destination analytics; exclude the two known internal test clicks and require CAI-side session/intent evidence before demand claims.
+- **Output-SLA trajectory:** Monday has one qualified article outcome, an explicit social decision, a completed no-Alert/homepage-freshness review and the weekly competitive-distribution scan below. The week is on track; do not lower gates to increase volume.
+
+## Weekly competitive-distribution scan — September 14
+Question: **Where are credit-union leaders already consuming information that CUAI is not yet meaningfully present?** Public/free evidence only. Public Similarweb domain-specific competitor estimates were not surfaced by search this week, so no traffic numbers are invented or used.
+
+1. **LinkedIn newsletter — Credit Union AI Guy**  
+   Evidence: https://www.linkedin.com/newsletters/credit-union-ai-guy-7417791939053510656 — weekly newsletter, publicly states 1,000+ readers and shows credit-union AI case-study editions.  
+   Opportunity type: `LinkedIn`  
+   Mechanism: recurring in-feed subscription/distribution rather than relying only on company-page posts.  
+   Audience fit: credit-union AI practitioners and leaders already consuming CU-specific AI content on LinkedIn.  
+   Smallest bounded action: prepare an internal three-issue CUAI LinkedIn-newsletter pilot brief using existing independent editorial content; **do not launch or broaden social activity without Tom approval**.  
+   Success measure: qualified newsletter subscribers, tagged site sessions, engaged-session rate and repeat readers.
+
+2. **CUInsight contributor/newsletter ecosystem**  
+   Evidence: https://www.cuinsight.com/community/page/2/ shows a broad contributor community; https://www.cuinsight.com/press-releases/ identifies CUInsight as a current credit-union news/industry surface with a daily-newsletter audience and an explicit submission route for press material.  
+   Opportunity type: `syndication | newsletter | backlink`  
+   Mechanism: earned contributed expertise or citation can put a CUAI resource inside an established credit-union reading habit and create referral/backlink discovery.  
+   Audience fit: broad credit-union leadership, vendor and practitioner audience.  
+   Smallest bounded action: identify one proven, non-promotional CUAI evergreen decision resource and draft an editorial pitch/citation packet; **external contact requires Tom approval**. Do not use paid placement or compromise editorial independence.  
+   Success measure: accepted earned placement/citation, referral sessions, backlinks and engaged sessions.
+
+3. **CreditUnions.com / Callahan research surface**  
+   Evidence: https://creditunions.com/contact/ explicitly invites recommendations for future topics its team should research and cover.  
+   Opportunity type: `referral | backlink | search`  
+   Mechanism: evidence-rich topic recommendations can earn independent coverage/citation and expose CUAI research to leaders already using Callahan's data/research ecosystem.  
+   Audience fit: credit-union executives and functional leaders seeking industry data and operating benchmarks.  
+   Smallest bounded action: select one evidence-rich tracker/benchmark topic with clear provenance and draft a topic recommendation; **do not submit without Tom approval**.  
+   Success measure: accepted research topic, earned CUAI citation/backlink, qualified referral sessions.
+
+4. **CUbroadcast interviews and event coverage**  
+   Evidence: https://www.cubroadcast.com/about.html says it interviews credit-union, CUSO, vendor, regulator and league leaders nationwide; its 2026 archive contains repeated AI/digital-transformation interviews with credit-union executives.  
+   Opportunity type: `community | syndication | other`  
+   Mechanism: an evidence-led interview can reach leaders in a video format and event ecosystem CUAI does not currently use, while generating an earned link/reference.  
+   Audience fit: innovation, technology, operations and executive leaders.  
+   Smallest bounded action: prepare one interview thesis only after a CUAI tracker/benchmark has proven provenance, quality and repeatable value; **contact requires Tom approval**.  
+   Success measure: earned interview/mention, referral sessions and qualified downstream engagement.
+
+5. **America's Credit Unions Operations & Technology Councils' Conference, Sep. 21–24**  
+   Evidence: https://www.americascreditunions.org/events-training/councils-conference/operations-technology-councils-conference — the event explicitly targets credit-union operations, technology and member-experience professionals and centers AI adoption, fraud prevention and digital transformation.  
+   Opportunity type: `event/resource | search`  
+   Mechanism: timely independent companion coverage around the decision problems on the agenda can capture search/attention while leaders are actively consuming those topics.  
+   Audience fit: direct match to CUAI's technology/operations/member-experience audience.  
+   Smallest bounded action: route the public agenda to the daily publisher as candidate-source input for a genuinely newsworthy or durable decision resource; no event contact, attendance commitment, sponsorship or spend is authorized here.  
+   Success measure: qualified organic/search sessions and engagement on any independently selected conference-aligned coverage; any external event action requires Tom approval.
 
 ## Audience growth
-Authenticated exact-Production GA4 checkpoint from verified-operations run #54:
-- **7d:** 59 active users / 61 sessions / 21 engaged sessions / **34.4% engagement** / 75 page views / **0 90%-scrolled users**.
-- **28d:** 188 active users / 210 sessions / 73 engaged sessions / **34.8% engagement** / 255 page views / **14 90%-scrolled users**.
-- **Google organic:** 1 session / 1 engaged over 7d; 19 / 14 engaged over 28d. Bing contributed 4 sessions / 0 engaged over 7d.
-- **Search Console direct:** **374 impressions / 2 clicks / 0.53% CTR / position 21.71 over 7d** versus **2,045 / 16 / 0.78% / 22.16 over 28d**. Search visibility is improving versus the September 11 checkpoint, but CTR remains below the 28-day rate.
-- `/news.html`: **75 impressions / 0 clicks / position 31.25 over 7d** versus **492 / 0 / 19.58 over 28d**. Keep the metadata treatment inactive: current ranking deterioration still confounds a clean snippet-conversion test.
+Authenticated exact-Production GA4 checkpoint from verified-operations run #56:
+- **7d:** 65 active users / 67 sessions / 21 engaged sessions / **31.3% engagement** / 78 page views / **1 90%-scrolled user**.
+- **28d:** 194 active users / 216 sessions / 73 engaged sessions / **33.8% engagement** / 258 page views / **15 90%-scrolled users**.
+- **Search Console:** **374 impressions / 2 clicks / 0.53% CTR / position 21.71 over 7d** versus **2,045 / 16 / 0.78% / 22.16 over 28d**.
+- **LinkedIn joined funnel:** GA4 shows 4 LinkedIn organic-social sessions over 7d. The authenticated Buffer receipt generated before today's post was due reports 35 impressions / 29 reach / 0% mean engagement across the prior 3 metrics-ready posts over 7d, and 164 impressions / 110 reach / 3.06% mean engagement across 12 metrics-ready posts over 28d.
 
 ## Engagement learning
-- **LinkedIn joined funnel:** Buffer reports **35 impressions / 29 reach / 0% mean engagement across 3 metrics-ready posts over 7d**; GA4 reports **4 LinkedIn sessions / 1 engaged**. Over 28d Buffer reports **164 impressions / 110 reach / 3.06% mean engagement across 12 metrics-ready posts**; GA4 reports **14 LinkedIn sessions / 4 engaged**.
-- Exact post-level attribution has improved: September 8 employee coaching, September 10 FinCEN/NCUA digital credentials, and September 11 VantageScore each have one GA4 session whose `utm_content` and canonical landing path agree; all three have 0 engaged sessions. A historical Treasury content id landing on `/` remains conflicting and is excluded from exact-post scoring.
-- **Editorial events:** 7d = 33 `article_view`, 2 `engaged_reader`, and 2 `scroll_depth` events. The endpoint returned no 7d `source_click`, `related_content_click`, or `newsletter_intent` rows.
-- **Current bounded experiment:** `cai_current_readiness_2026_09`. GA4 reports 10 viewable generic impressions and 4 generic clicks, with event-report completeness metadata showing no thresholding, sampling or `other`-row loss. Cell events currently show 8 header-v1b impressions, 1 contextual-v1b impression, 1 header-v1a impression and 1 header-v1b click. Do not infer variant CTR winners from the remaining generic clicks until cell attribution and internal-test exclusion are reconciled.
+- Current editorial event evidence remains shallow relative to audience growth. The 7-day window contains 34 `article_view`, 2 `engaged_reader` and 6 `scroll_depth` events; only one user reached the 90% page-depth condition in the overview.
+- The CAI banner test is observable but immature: 14 generic impressions, 4 generic clicks, and only one cell-specific click in the current authenticated source-side report. Do not infer a winning message or placement.
+- The two known internal validation clicks are excluded from customer-demand conclusions. The two remaining generic source-side clicks are unmatched and remain unclassified until CAI destination property `538586591` independently shows attributable session/intent evidence.
 
 ## CAI growth
-CUAI-side banner measurement is functioning. The current evidence is **10 viewable impressions / 4 clicks**, not zero. However G5 remains incomplete because:
-1. internal validation traffic must be excluded from customer conclusions;
-2. generic versus cell-specific click counts do not yet support a complete variant-level join; and
-3. no independently retrieved downstream CAI session, intent, qualified lead or purchase tied to the current CUAI banner campaign is available in this CEO run.
+Banner delivery incident `INC-CUAI-BANNER-DELIVERY-002` is resolved. Source-side instrumentation is live in CUAI property `520110560`; the required destination-side property is `538586591`. Current GA4 report-evidence metadata for the CUAI event query is explicitly complete with respect to thresholding/sampling (`subjectToThresholding=false`, `dataLossFromOtherRow=false`, `samplingMetadatas=[]`).
 
-The public CAI checkout service is treated as operational from the September 11 Chief-of-Staff correction, but that service-health verification is not conversion/revenue evidence. CUAI remains one relevant source/distribution channel for general CAI preparedness while editorial selection stays independent.
+Known internal test traffic: **2 `cai_banner_click` + 2 `outbound_click`**. These events are not customer demand. Current source-side totals are 4 + 4, leaving two unmatched click events after the known test exclusion; they remain unverified as customer activity until CAI-side attribution is observed. No CAI session, intent, qualified lead or purchase is claimed in this report.
 
 ## Revenue
-No new external commercial action occurred. The internal Founding AI Intelligence Partner package and eight-organization research-only pipeline remain current. CFO evidence through September 14 verifies **$0 CUAI-specific revenue in the inspected evidence** and no sponsor booking/payment; completeness of total CUAI revenue/cost remains unavailable, so this is not presented as a definitive company P&L total. External sponsor outreach, pricing commitments, spend and contracting remain outside autonomous authority.
+No new external commercial action occurred. CFO evidence through September 14 verifies no CUAI-specific sponsor booking/payment in inspected evidence; finance completeness remains partial, so this is not presented as a definitive total-company P&L. External sponsor outreach, pricing commitments, spend and contracting remain outside autonomous authority.
 
 ## Reliability and process evolution
-- **Recovered today:** PR #210 restored `automation/daily-cycle-state.json` from the exact last valid pre-corruption blob after the publisher finalization write collapsed the file. Prior history was preserved; no article, social, UTM, schedule, credential or editorial state was changed by the recovery.
-- **Repeated-failure diagnosis:** the September 9 committed-blob guard did not prevent recurrence on September 14. Reliability Watch's durable recommendation is now controlling: avoid secondary whole-file daily-cycle finalization rewrites; use a transactional/history-safe patch path and reject any state commit whose stored blob is not valid UTF-8 JSON or structurally collapses relative to its parent. This is a system-design defect, not another one-off patch condition.
-- **Experiment-state mismatch identified:** the measured CAI banner experiment is live in Production and producing events while `automation/growth-strategy.json` still shows no active experiments and `automation/cai-banner-experiment.json` still says `release_candidate`. Treat the live test as one active experiment operationally; reconcile management/config state only through a narrow history-safe change, without altering banner behavior or external authority.
-- **Source diversity remains healthy enough for normal operation:** September 10 source-health refresh found no removed/contradicted source and one conservatively temporary-unavailable registry entry.
+- **Resolved:** repeated secondary daily-cycle finalization corruption now has a merged preventive control through PR #211 / `fb0531a8e918602d3954dd2860a2030baf74dd17`.
+- **Preserve source of truth:** coverage ledger and social queue remain authoritative for final distribution truth; `daily-cycle-state.json` is not rewritten merely to finalize deployment/social fields.
+- **Social reconciliation:** today's post is past due, but no authenticated post-due Buffer receipt was available in this run. Do not retry, duplicate or mark sent without exact `postId` + `sentAt` evidence.
+- **Homepage audit stamp:** live fallback is correct, but `homepageWatchState.reviewedAt` could not be safely persisted because `assets/app.js` is a large whole-file surface and the connector response is truncated. Do not reconstruct it from excerpts.
+- **Usage ledger:** the required CEO/operating append to `automation/cuai-usage-ledger.json` is not claimed complete for the same history-preservation reason; the available connector writer is whole-file only for a large append-style audit ledger.
 
 ## Pineview continuous-growth signals — September 14
-- **Audience signal:** rolling-28-day active users reached **188**, up **16.8%** from the September baseline of 161; seven-day audience pace is stronger, but 90%-scroll depth is currently weak.
-- **Product signal:** the CAI banner path is now generating measurable CUAI-side clicks, but attribution must be completed before treating it as demand. The immediate product/measurement priority is variant-complete click attribution plus independently observed CAI-side session/intent evidence, not more promotional volume.
-- **Reusable-asset signal:** today's FS-ISAC story reinforces a reusable executive-control theme around patch velocity, asset visibility and AI-agent boundaries. The next under-served reusable decision asset remains AI portfolio value realization / investment thresholds / shutdown criteria. These are editorial/product signals only; no house promotion or production change was created from this handoff.
+- **Audience:** rolling-28-day active users reached 194 (+20.5% versus baseline), but search CTR and deep reading remain the quality constraints.
+- **Distribution:** the weekly scan points to embedded credit-union information habits — LinkedIn newsletters, CUInsight, Callahan/CreditUnions.com, CUbroadcast and major CU technology events — rather than more generic social volume.
+- **Reusable opportunity:** the next useful decision resource is still AI portfolio value realization / investment thresholds / shutdown criteria. It is a candidate editorial/benchmark theme, **not a proprietary asset claim** until provenance, rights, quality and repeatable value are proven.
+- **Measurement:** improve CUAI→CAI destination attribution before increasing promotional volume; preserve completeness metadata and internal-test exclusions.
 
 ## Output SLA
-**Current trajectory: on track, with G3 reliability risk.** Monday has one qualified weekday article outcome and an explicit LinkedIn decision. The later Alert/homepage-freshness cycle has not yet occurred. Weekly G1/G5 conversion work is active through the measured CAI banner path, and G4 commercial assets remain current. The repeated daily-cycle state-finalization defect is the single most important reliability risk to the week's SLA; do not lower editorial or distribution gates to compensate.
+**Monday trajectory: on track, with bounded reconciliation gaps.** One qualified weekday article outcome is complete, the social decision is explicit, the bounded Alert/homepage review is complete with no new Alert, and the weekly competitive-distribution scan is complete. G3 prevention work is merged. The open caveats are evidence reconciliation, not missing editorial output: today's LinkedIn sent state remains unverified, the homepage review timestamp could not be safely written, and downstream CAI demand remains unproven.
 
 ## Data sources retrieved this run
-- **GitHub:** current `main`; authoritative publisher policy; goals/cadence/reporting contract; analytics measurement and interpretation; growth strategy; daily-cycle/social state; source health; improvement state; issue #160 handoffs/recovery/CFO handoff; recent commits; current CAI banner experiment definition.
-- **Vercel:** latest exact Production `dpl_A1rQPZ4j9AcGj1GjEmbyjfjMkUBj` on `4857ba9b1f9b166e371bfa5a86feed124c68097f` is READY; current 24-hour runtime-error query returns no errors.
-- **GA4:** successfully retrieved via authenticated `CUAI verified operations` run #54 on exact Production. Receipt: HTTP 200, `ok=true`, `source=google-analytics-data-api`, property `520110560`. Direct unauthenticated endpoint access returns 401 by design and is not treated as a GA4 failure. Report-evidence metadata for overview/acquisition/LinkedIn/events/pages shows no thresholding, sampling or `other`-row data loss.
-- **Buffer:** successfully retrieved via authenticated verified-operations receipt; 3/3 recent posts and 12/12 28-day posts are metrics-ready.
-- **Search Console:** successfully retrieved through the validated direct Search Console receipt. The optional embedded GA4 Search Console query still returns the known incompatible-dimensions/metrics error and remains non-blocking.
-- **Missing source:** downstream CAI analytics/commerce evidence was not available through the CUAI verified-operations receipt in this run; no CAI session, intent, lead or purchase is inferred from CUAI banner clicks.
+- **GitHub:** authoritative CUAI operating policy; goals/protocol/cadence/reporting contract; issue #160 handoffs; current coverage ledger/taxonomy/source registry/publishing rules/analytics/SEO; Alerts page and app state; daily/social state; current report; PR #211 merge revision.
+- **CUAI verified operations #56:** exact commit `fb0531a8e918602d3954dd2860a2030baf74dd17`; authenticated Production HTTP 200; no secure-operation errors; GA4 property `520110560`; Buffer and Search Console receipts.
+- **GA4 completeness:** events metadata `subjectToThresholding=false`, `dataLossFromOtherRow=false`, `samplingMetadatas=[]`.
+- **CAI destination property required for attribution:** `538586591`; no authenticated CAI-side receipt was retrieved in this run.
+- **Public/free distribution scan:** LinkedIn public newsletter surface, CUInsight, CreditUnions.com, CUbroadcast, America's Credit Unions event pages; Similarweb public search only, with no domain-specific competitor estimate used.
+- **Public Alert scan:** current regulator/credit-union/financial-services/AI/fraud/payment web evidence. No genuinely new qualified post-September-11 Alert was found.
 
 ## Delegated work
-1. **Reliability Watch / G3:** September 14 state-corruption recovery completed. Durable prevention remains the highest-value internal reliability priority; no parallel repair was started by the CEO.
-2. **CFO / G4:** September 14 finance reconciliation completed; commercial research assets remain separated from verified revenue/booking evidence.
+1. **Reliability Watch / G3:** durable daily-state prevention is completed; no duplicate repair assignment opened.
+2. **CFO / G4:** September 14 reconciliation consumed; no external commercial action authorized.
 3. **Specialist subagents:** 0.
 
-## Usage reporting
-Observable workload for this CEO run: authoritative repository/policy/state review; recent commit and agent-bus review; one exact Production resolution; one authenticated GA4 receipt; one Buffer receipt; one direct Search Console receipt; one runtime-error check; one live-experiment/completeness review; one reliability-incident review; one CFO handoff review; one management-report refresh. `usageAttribution` remains **operational-proxy**; no exact OpenAI tokens, credits, plan percentage or cost were retrieved or inferred.
-
-The required September 14 `cuai-ceo` append to `automation/cuai-usage-ledger.json` is **not claimed complete in this run**. The canonical ledger is a large append-style audit surface, and the available contents writer requires a whole-file replacement. Given today's repeat corruption of another large append-style JSON file and the existing Reliability Watch deferral for its own September 14 ledger entry, this CEO run will not reconstruct or overwrite that ledger from a truncated retrieval. The run evidence is preserved in this management report and issue #160 until a history-preserving append path is used.
-
 ## Tom decision required
-**None.**
+**None for today's operating cycle.** The distribution opportunities that require external contact or broadened LinkedIn activity remain proposals only and require Tom approval before action.
