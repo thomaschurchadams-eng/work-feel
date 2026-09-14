@@ -15,6 +15,10 @@ Quickest path (uses Python, preinstalled on most systems):
 
 If you prefer a different port, change `8000` above and open that port in the URL instead.
 
+## Sitemap
+
+Search crawlers can discover site pages through `sitemap.xml` at the project root. When running locally, load http://localhost:8000/sitemap.xml to verify each section and content URL is listed.
+
 ## File map
 - `index.html` — Home hero, latest news highlights, latest episode card, and mission statement
 - `news.html` — News feed with curated cards and optional tag filter UI (placeholder)
