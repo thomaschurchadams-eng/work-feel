@@ -3,23 +3,79 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fatf-ai-enabled-scams-credit-union-controls",
+      "title": "FATF President Warns AI Is Lowering the Cost of Global Scams",
+      "url": "/news/fatf-ai-enabled-scams-credit-union-controls.html",
+      "publishedAt": "2026-09-15T07:00:00-04:00",
+      "section": "news",
+      "beat": "fraud-ai-enabled-scams",
+      "functions": [
+        "risk-compliance",
+        "payments-deposits",
+        "operations",
+        "member-service",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-analytics",
+        "generative-ai",
+        "identity-biometrics",
+        "data-decisioning"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Fraud operations, BSA/AML and payments leaders",
+      "secondaryAudiences": [
+        "member-service leaders",
+        "digital-banking leaders",
+        "risk and compliance leaders",
+        "technology and data leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/news/cornerstone-rippleshot-credit-union-fraud-network.html",
+        "/news/fincen-ncua-digital-credentials-credit-union-cip.html"
+      ],
+      "sourceTier": 2,
+      "score": 76.8
+    },
+    {
       "id": "fs-isac-ai-vulnerability-patch-timelines",
       "title": "FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks",
       "url": "/news/fs-isac-ai-vulnerability-patch-timelines.html",
       "publishedAt": "2026-09-14T07:00:00-04:00",
       "section": "news",
       "beat": "cybersecurity-vulnerability-management",
-      "functions": ["it-data-cybersecurity", "vendor-management", "operations", "board-strategy"],
-      "technologies": ["privacy-security", "generative-ai", "agents-automation"],
+      "functions": [
+        "it-data-cybersecurity",
+        "vendor-management",
+        "operations",
+        "board-strategy"
+      ],
+      "technologies": [
+        "privacy-security",
+        "generative-ai",
+        "agents-automation"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Technology, cybersecurity and operational-resilience leaders",
-      "secondaryAudiences": ["vendor-management teams", "business system owners", "executive and board risk committees"],
+      "secondaryAudiences": [
+        "vendor-management teams",
+        "business system owners",
+        "executive and board risk committees"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "High",
       "socialDecision": "scheduled-2026-09-14-12:30-et",
       "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
-      "internalLinkTargets": ["/news/fsb-frontier-ai-cyber-risk-financial-system.html", "/insight-credit-union-ai-inventory-change-control.html"],
+      "internalLinkTargets": [
+        "/news/fsb-frontier-ai-cyber-risk-financial-system.html",
+        "/insight-credit-union-ai-inventory-change-control.html"
+      ],
       "sourceTier": 1,
       "score": 78.4
     },

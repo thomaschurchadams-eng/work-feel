@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fatf-ai-enabled-scams-credit-union-controls",
+      "articleUrl": "/news/fatf-ai-enabled-scams-credit-union-controls.html",
+      "imagePath": "/assets/fatf-ai-enabled-scams-credit-union-controls.jpg",
+      "publishedAt": "2026-09-15T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "mixed-media-collage",
+      "subject": "identity-and-payment-paths",
+      "composition": "asymmetric-editorial",
+      "perspective": "overhead",
+      "palette": "terracotta-sky",
+      "lighting": "graphic-flat-light",
+      "texture": "paper-fiber-newsprint-acetate-and-brushed-metal",
+      "scene": "fragmented-synthetic-identities-and-digital-messages-converge-through-a-verification-and-hold-checkpoint-toward-a-protected-member-account",
+      "conceptScore": 89.2,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "risk-and-security",
+          "score": 80.4
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "physical-metaphor",
+          "score": 77.6
+        }
+      ]
+    },
+    {
       "id": "fs-isac-ai-vulnerability-patch-timelines",
       "articleUrl": "/news/fs-isac-ai-vulnerability-patch-timelines.html",
       "imagePath": "/assets/fs-isac-ai-vulnerability-patch-timelines.jpg",
@@ -18,10 +51,21 @@
       "texture": "paper-fiber",
       "scene": "exposed-software-components-move-through-testing-patching-segmentation-and-inventory-paths-into-isolated-protected-systems",
       "conceptScore": 88.2,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "dimensional-3d", "subject": "risk-and-security", "score": 52.4},
-        {"medium": "tactile-paper-cut", "subject": "human-machine-handoff", "score": 75.6}
+        {
+          "medium": "dimensional-3d",
+          "subject": "risk-and-security",
+          "score": 52.4
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "human-machine-handoff",
+          "score": 75.6
+        }
       ]
     },
     {

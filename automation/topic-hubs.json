@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-15",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -52,6 +52,11 @@
       "function": "it-data-cybersecurity",
       "technology": "fraud-identity",
       "articles": [
+        {
+          "path": "news/fatf-ai-enabled-scams-credit-union-controls.html",
+          "title": "FATF President Warns AI Is Lowering the Cost of Global Scams",
+          "summary": "Join member reports, verification, payment intervention and recovery on one fraud-response clock."
+        },
         {
           "path": "news/fs-isac-ai-vulnerability-patch-timelines.html",
           "title": "FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks",

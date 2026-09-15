@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-14T07:00:00-04:00",
+  "lastStandardRun": "2026-09-15T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks",
-    "url": "https://creditunionainews.com/news/fs-isac-ai-vulnerability-patch-timelines.html",
-    "publishedAt": "2026-09-14T07:00:00-04:00",
+    "title": "FATF President Warns AI Is Lowering the Cost of Global Scams",
+    "url": "https://creditunionainews.com/news/fatf-ai-enabled-scams-credit-union-controls.html",
+    "publishedAt": "2026-09-15T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-15",
+      "headline": "A Portfolio Scorecard for Scaling, Holding or Stopping Credit Union AI",
+      "reason": "qualified Library fallback, but the current FATF warning is time-sensitive and scored higher in the normal selection order"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "Anthropic Packages Claude for Financial Advisers",
+      "reason": "current enterprise-AI launch centered on advisers and wealth workflows, without a direct credit-union operating change"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "Hyperlayer Launches a Programmable Banking Layer in the U.S.",
+      "reason": "current vendor launch naming credit unions but disclosing no production credit-union deployment or independently validated result"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "A UK Credit Union Adds One-Stop Bereavement Notification",
+      "reason": "useful member-service workflow outside the United States with no substantive AI or decisioning change"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "NCUA Reports Second-Quarter Credit Union System Performance",
+      "reason": "authoritative and highly credit-union relevant, but the AI or operating-technology connection would be incidental rather than source-supported"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "FSB Roundtable Re-emphasizes Cross-Sector Operational Resilience",
+      "reason": "credible but less current, with close overlap to September 1 and September 14 resilience coverage"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "Regulators Propose Principles-Based Third-Party Risk Guidance",
+      "reason": "already covered in the September 11 Alert; a full article would duplicate that cycle"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "Scienaptic Announces a Credit-Union AI Conference",
+      "reason": "event promotion rather than a completed implementation, rule or independently validated operating result"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "Treasury Says Financial-Sector AI Is Moving from Strategy to Scale",
+      "reason": "authoritative supporting context from June rather than a current event inside the 72-hour news window"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "State Bank of India Proposes Know-Your-Agent Controls",
+      "reason": "useful agent-governance concept, but India-specific and not an adopted U.S. credit-union requirement"
+    },
+    {
+      "date": "2026-09-15",
+      "headline": "Generation Alpha Is Already Using AI for Money Help",
+      "reason": "vendor-sponsored survey outside the current news window, with limited operating evidence for credit unions"
+    },
     {
       "date": "2026-09-14",
       "headline": "FATF Warns AI Is Lowering the Scale Needed to Run Global Scams",
