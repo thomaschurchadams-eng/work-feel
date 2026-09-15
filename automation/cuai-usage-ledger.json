@@ -308,7 +308,7 @@
       "status": "blocked",
       "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"socialQueueChecks":1,"activeCloudTaskChecks":1,"operatingPolicyChecks":2,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"bufferMetricsQueries":1,"searchConsoleEndpointQueries":1,"homepageChecks":1,"usageLedgerChanges":1,"specialistSubagentsSpawned":0},
       "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Search Console", "ChatGPT Cloud tasks"],
-      "summary": "Diagnosed a Cloud-task configuration/execution-layer blocker, not a production outage. The repository's scheduled-task README says there are two existing Cloud tasks, Publish CUAI Daily Article and CUAI Operating System; the current active task inventory includes the publisher but not CUAI Operating System. The latter policy owns the bounded weekday Alert cycle and homepage freshness review. Corroborating state: the August 26 article outcome is complete, social sent state is reconciled, Production is READY on exact main commit 69ff4b25c5db8552b7b7d7bfa3d046f086cbb27e, the current article, homepage, Buffer and direct Search Console are healthy, and Vercel has no runtime errors, while assets/app.js still has an empty homepageWatchState and has not been modified since August 6. No task was created, re-enabled, rescheduled or otherwise changed because this reliability task explicitly lacks authority to alter Cloud task schedules, models or permissions. Recovery requires restoring or re-enabling the existing CUAI Operating System task under its previously approved configuration. Durable prevention: add an active-task existence check for both source-controlled Cloud-task policies to the daily reliability contract.",
+      "summary": "Diagnosed a Cloud-task configuration/execution-layer blocker, not a production outage. The repository's scheduled-task README says there are two existing Cloud tasks, Publish CUAI Daily Article and CUAI Operating System; the current active task inventory includes the publisher but not CUAI Operating System. The latter policy owns the bounded weekday Alert cycle and homepage freshness review. Corroborating state: the August 26 article outcome is complete, social sent state is reconciled, Production is READY on exact main commit 69ff4b25c5db8552b7b7d7bfa3d046f086cbb27e, the current article, homepage, Buffer and direct Search Console are healthy, and assets/app.js still has an empty homepageWatchState and has not been modified since August 6. No task was created, re-enabled, rescheduled or otherwise changed because this reliability task explicitly lacks authority to alter Cloud task schedules, models or permissions. Recovery requires restoring or re-enabling the existing CUAI Operating System task under its previously approved configuration. Durable prevention: add an active-task existence check for both source-controlled Cloud-task policies to the daily reliability contract.",
       "usageAttribution": "operational-proxy"
     },
     {
@@ -701,6 +701,83 @@
         "Buffer"
       ],
       "summary": "Diagnosed a repeated repository delivery-state handoff gap rather than an external posting failure. The September 11 High VantageScore item was uniquely reserved for the approved CreditUnionAI News company page at 12:30 p.m. ET with the existing CUAI UTMs and Buffer post ID. After the fixed due time, re-ran the already-approved idempotent CUAI verified-operations job; exact Buffer evidence matched the existing item/post ID, immutable URLs, fixed slot and channel. The run completed with 0 distribution attempts, 1 sent-state reconciliation and 0 source/action exceptions. Canonical social state now records sentAt 2026-09-11T16:30:30.047Z and the authoritative LinkedIn share URL. Exact-current Production is READY on the reconciliation commit and the live article remains HTTP 200 with no Vercel runtime errors. No duplicate, replacement post, UTM, destination, schedule, credential, editorial gate or external authority changed. Durable prevention remains the exact-match reconciliation path at the first post-due operating or reliability check; no schedule change was made because Reliability Watch lacks authority to alter task schedules.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-11T09:41:16-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Weekday Friday CEO operating review after the September 11 High publisher cycle, with exact Production analytics, Output-SLA scoring and attribution-quality review.",
+      "status": "success",
+      "workUnits": {"publisherCandidatesRepresented":12,"publisherBeatsRepresented":12,"articlesPublished":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"searchConsoleEndpointQueries":1,"productionDeploymentChecks":2,"reportingPullRequestsMerged":1,"outputSlaReviews":1},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
+      "summary": "Restores the explicitly deferred September 11 CEO workload record from the authoritative completion event. The run verified the VantageScore News/High article and exact Production analytics, scored the September 7–11 Output SLA as met, and established the two-field LinkedIn attribution-quality rule requiring both immutable queue-id and canonical landing-path matches. PR #204 refreshed the canonical CEO report. No production/runtime fault or external-authority change occurred; the original usage append was intentionally deferred because the available whole-file path could not prove history preservation.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-11T17:18:40-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability Watch recovered the qualified September 11 third-party-risk Alert after the Operating System correctly blocked a whole-file write that could not prove daily-cycle history preservation.",
+      "status": "recovered",
+      "workUnits": {"dailyCycleStateChecks":2,"alertRecoveries":1,"recoveryFilesChanged":2,"previewDeploymentChecks":1,"productionDeploymentChecks":1,"liveAlertChecks":1,"runtimeErrorChecks":1,"recoveryPullRequestsCreated":1,"recoveryPullRequestsMerged":1,"socialSchedulingAttempts":0},
+      "externalSystemsTouched": ["GitHub", "Vercel"],
+      "summary": "Restores the missing reliability record for PR #206. The recovery added the already-qualified joint-regulator Third-Party Risk Alert and updated only the September 11 current daily-cycle object while preserving all prior history. The branch changed exactly two files, Preview was READY, PR #206 merged as b68b39b31b1dd825c7c93c49d0590ecd83c5ccb0, exact-current Production was READY, the Alert and VantageScore article were live, social state remained sent with the original CUAI UTMs, and no scheduler action occurred. The core recovery succeeded; only its reporting handoff had remained absent from the usage ledger.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-14T07:54:03-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability Watch found the September 14 publisher finalization commit had collapsed automation/daily-cycle-state.json into an unreadable non-UTF-8 blob, repeating the September 9 state-write failure class.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":4,"socialQueueChecks":1,"previewDeploymentChecks":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"recoveryFilesChanged":1,"recoveryPullRequestsCreated":1,"recoveryPullRequestsMerged":1,"socialSchedulingAttempts":0},
+      "externalSystemsTouched": ["GitHub", "Vercel"],
+      "summary": "Restores the deferred reporting record for the September 14 daily-cycle recovery. Commit 5dc473fbe6758ad6b33c71dd7b942826e8139c0e had changed the ledger by +1/-4448 and stored a blob that failed strict UTF-8 JSON parsing. PR #210 restored the exact last-valid blob byte-for-byte, preserved September 14 current state and all prior history, reached READY Preview and Production, and left the unique 12:30 p.m. ET company-page reservation untouched with its original UTMs and Buffer post ID. No scheduler retry or authority expansion occurred.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-14T09:33:28-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Monday CEO operating review after the September 14 High publisher cycle and immediate daily-cycle corruption recovery.",
+      "status": "degraded",
+      "workUnits": {"publisherCandidatesRepresented":12,"publisherBeatsRepresented":12,"articlesPublished":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"searchConsoleEndpointQueries":1,"productionDeploymentChecks":1,"reliabilityRecoveriesObserved":1,"reliabilityAssignmentsOpened":1,"reportingFilesUpdated":1},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
+      "summary": "Restores the explicitly deferred September 14 CEO workload attribution. The run verified the FS-ISAC News/High publication, healthy authenticated GA4/Buffer/Search Console receipts and the existing 12:30 p.m. ET company-page reservation, while correctly keeping G3 degraded because the repeated destructive daily-state finalization defect had not yet received a durable prevention fix. The CEO assigned that prevention work to Reliability Watch and made no parallel content, schedule/model, spend, external-contact or banner change.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-14T11:42:19-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability Watch followed the repeated September 9/14 daily-cycle corruption pattern to its secondary connector-side whole-file finalization write and implemented a durable prevention control.",
+      "status": "recovered",
+      "workUnits": {"dailyCycleStateChecks":2,"policyFilesChanged":1,"validatorFilesChanged":1,"validatorTestCases":5,"previewDeploymentChecks":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"recoveryPullRequestsCreated":1,"recoveryPullRequestsMerged":1,"socialSchedulingAttempts":0},
+      "externalSystemsTouched": ["GitHub", "Vercel"],
+      "summary": "Restores the deferred reporting record for the durable prevention recovery. PR #211 merged as fb0531a8e918602d3954dd2860a2030baf74dd17, forbidding connector-only secondary whole-file daily-state finalization after the dated outcome is persisted and hardening the preservation validator against invalid UTF-8, duplicate history dates, mutation of existing history and incomplete prior-current preservation. Five synthetic validation cases passed, the two-file PR reached READY Preview and Production, the FS-ISAC article remained HTTP 200, and the existing social reservation was untouched. No content, editorial gate, UTM, destination, credential, schedule or authority changed.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-14T15:40:00-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded September 14 post-publisher Alert/homepage-freshness cycle plus Monday portfolio and competitive-distribution review.",
+      "status": "success",
+      "workUnits": {"dailyCycleStateChecks":1,"socialStateHandoffsConsumed":1,"alertDecisionsRecorded":1,"homepageFreshnessChecks":1,"competitiveDistributionOpportunitiesReviewed":5,"productionMutations":0,"socialSchedulingAttempts":0},
+      "externalSystemsTouched": ["GitHub", "Buffer", "Google Analytics"],
+      "summary": "Restores the deferred September 14 Operating System workload record. The cycle consumed the completed publisher and durable reliability handoffs, verified the FS-ISAC post had sent exactly once and been reconciled without retry, found no genuinely new urgent qualified Alert, confirmed the evergreen homepage fallback was correct after the September 11 Alert aged past 72 hours, and completed the weekly five-opportunity competitive-distribution scan. CUAI source analytics remained property 520110560 and CAI destination analytics property 538586591; the known two internal validation clicks remained excluded from customer-demand conclusions. No external outreach, paid action, publication, scheduler call or authority expansion occurred.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-15T08:16:41-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review found the canonical CUAI usage ledger still ended at September 11 12:32 ET despite six later evidence-backed material runs explicitly deferring or missing their canonical workload records.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"publicationLedgerChecks":1,"socialQueueChecks":1,"productionDeploymentChecks":1,"runtimeErrorChecks":1,"liveArticleChecks":1,"usageLedgerChecks":2,"completeBlobRetrievals":1,"pendingUsageRecordsRecovered":6,"usageLedgerChanges":1,"recoveryBranchesCreated":1,"recoveryPullRequestsCreated":1,"recoveryPullRequestsMerged":1,"socialSchedulingAttempts":0},
+      "externalSystemsTouched": ["GitHub", "Vercel"],
+      "summary": "Diagnosed a repeated canonical reporting-handoff omission, not a publisher, deployment or social failure. Exact current main records the September 15 FATF News/High article after 12 candidates across 12 beats; the public article is HTTP 200; Production is READY on exact main with no recent runtime errors; and the one UTM-tagged CreditUnionAI News LinkedIn item is uniquely scheduled for the fixed 11:30 a.m. ET slot and is not yet due. Retrieved the complete current usage-ledger blob, preserved all existing entries, and recovered six evidence-backed deferred records from September 11 and September 14 plus this reliability record through an append-only feature-branch change. No content, scheduler, UTM, destination, credential, editorial gate, Cloud-task setting, spend or external authority changed.",
       "usageAttribution": "operational-proxy"
     }
   ]
