@@ -779,6 +779,50 @@
       "externalSystemsTouched": ["GitHub", "Vercel"],
       "summary": "Diagnosed a repeated canonical reporting-handoff omission, not a publisher, deployment or social failure. Exact current main records the September 15 FATF News/High article after 12 candidates across 12 beats; the public article is HTTP 200; Production is READY on exact main with no recent runtime errors; and the one UTM-tagged CreditUnionAI News LinkedIn item is uniquely scheduled for the fixed 11:30 a.m. ET slot and is not yet due. Retrieved the complete current usage-ledger blob, preserved all existing entries, and recovered six evidence-backed deferred records from September 11 and September 14 plus this reliability record through an append-only feature-branch change. No content, scheduler, UTM, destination, credential, editorial gate, Cloud-task setting, spend or external authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-15T09:43:15-04:00",
+      "actor": "cuai-ceo",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI CEO operating review after the September 15 High publisher cycle, with exact-Production analytics, attribution-quality review and current reliability evidence.",
+      "status": "success",
+      "workUnits": {"publisherCandidatesRepresented":12,"publisherBeatsRepresented":12,"articlesPublished":1,"ga4MetricsQueries":1,"bufferMetricsQueries":1,"searchConsoleEndpointQueries":1,"productionDeploymentChecks":2,"verifiedOperationsRunsReviewed":1,"reportingPullRequestsMerged":1},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
+      "summary": "Restores the explicitly deferred September 15 CEO workload record from its authoritative completion event. The run verified the FATF News/High article and exact Production analytics, preserved the CUAI source analytics property 520110560 and CAI destination property 538586591 distinction with known internal validation clicks excluded, and merged PR #213 to refresh the rolling CEO report and reconcile only the already-live CAI banner experiment status metadata. No production behavior, editorial gate, schedule, destination, credential, spend or external authority changed.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-15T12:11:10-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Reliability Watch found the September 15 FATF LinkedIn item had sent at the fixed 11:30 a.m. ET slot while automation/social-queue.json still retained scheduled state because no post-due reconciliation had yet run.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"socialQueueChecks":2,"bufferSentEvidenceChecks":1,"productionDeploymentChecks":2,"runtimeErrorChecks":1,"secureOperationsRunsRetried":1,"secureOperationsRunsVerified":1,"sentStateReconciliations":1,"socialSchedulingAttempts":0,"ga4SourceReadAttempts":1,"ga4SourceReadFailures":1,"searchConsoleSourceReads":1,"usageLedgerChecks":1},
+      "externalSystemsTouched": ["GitHub", "Vercel", "Buffer", "Google Analytics", "Google Search Console"],
+      "summary": "Restores the deferred reporting record for the September 15 sent-state recovery. Exact Buffer evidence matched the existing FATF queue item/post ID and fixed company-page slot; the idempotent verified-operations path made zero distribution attempts and reconciled exactly one existing item to sent with the authoritative sentAt and LinkedIn URL while preserving UTMs, schedule, channel and duplicate=false. A read-only GA4 source request timed out with one observed 502 during the recovery while Buffer and Search Console reads succeeded; no publication or distribution depended on GA4, so the incident was classified as transient unless repeated. No replacement post, credential, schedule, destination or editorial authority changed.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-15T15:43:29-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded September 15 post-publisher Alert, homepage-freshness and portfolio coordination cycle after consuming the completed publisher and sent-state handoffs.",
+      "status": "success",
+      "workUnits": {"dailyCycleStateChecks":1,"socialStateHandoffsConsumed":1,"alertCandidatesReviewed":5,"alertDecisionsRecorded":1,"homepageFreshnessChecks":1,"weeklyCompetitiveScanDedupeChecks":1,"productionMutations":0,"socialSchedulingAttempts":0},
+      "externalSystemsTouched": ["GitHub", "public sources"],
+      "summary": "Restores the deferred September 15 Operating System workload record from its authoritative completion event. The cycle consumed the FATF publisher and reconciled social handoffs without reopening either, found no genuinely new urgent qualified Alert, confirmed the evergreen homepage fallback remained correct because no timely non-duplicative watch items qualified, and reconciled week-38 competitive-scan dedupe to the already-authoritative September 14 Monday review. The G5 property-ID distinction and internal-test exclusion were preserved. No production mutation, new social action, external outreach, paid action, credential, schedule or authority expansion occurred.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-15T17:26:39-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review found three evidence-backed September 15 material workload records still explicitly deferred from the canonical CUAI usage ledger even though exact-current complete Git-blob retrieval and a history-preserving feature-branch path are available.",
+      "status": "recovered",
+      "workUnits": {"publisherRunChecks":1,"dailyCycleStateChecks":1,"publicationLedgerChecks":1,"socialQueueChecks":1,"productionDeploymentChecks":2,"runtimeErrorChecks":2,"runtime5xxLogChecks":1,"usageLedgerChecks":2,"completeBlobRetrievals":1,"pendingUsageRecordsRecovered":3,"usageLedgerChanges":1,"recoveryBranchesCreated":1,"recoveryPullRequestsCreated":1,"recoveryPullRequestsMerged":1,"previewDeploymentChecks":1,"socialSchedulingAttempts":0},
+      "externalSystemsTouched": ["GitHub", "Vercel"],
+      "summary": "Diagnosed another canonical reporting-handoff omission, not a live publisher, social-delivery or Production outage. Exact current main records the September 15 FATF article, the company-page item sent and reconciled exactly once with its original UTMs/post ID, and a completed no-Alert/homepage Operating System outcome. Production is READY on exact pre-recovery main, Vercel reports no current runtime errors or 5xx logs, so the earlier isolated GA4 502 has not presented as an ongoing runtime failure. Retrieved the complete current usage-ledger blob, preserved every existing entry, and recovered the explicitly deferred September 15 CEO, sent-state recovery and Operating System records plus this reliability record through an append-only feature-branch change. No content, scheduler, UTM, destination, credential, editorial gate, Cloud-task setting, spend or external authority changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
