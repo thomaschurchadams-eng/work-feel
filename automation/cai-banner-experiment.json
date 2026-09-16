@@ -37,6 +37,12 @@
       "cai_bn_click_ctx_v1a",
       "cai_bn_click_ctx_v1b"
     ],
+    "variantScoring": {
+      "cellInstrumentationCommit": "4819860289811e8a63332aa5d86c2f98c6f6df8e",
+      "cellInstrumentationStartedAt": "2026-09-12T20:22:23Z",
+      "rule": "Score variants only from cell-specific events collected after this timestamp. Generic banner events are aggregate health signals and may contain pre-cell or internal-validation history; never back-allocate unmatched generic clicks to a variant.",
+      "internalValidationRule": "Exclude known internal validation traffic from customer conclusions before scoring."
+    },
     "utmCampaign": "cai_current_readiness_sep2026",
     "utmContent": "<placement>_<variant id>"
   },
