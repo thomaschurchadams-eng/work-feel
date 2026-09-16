@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-portfolio-stop-scale-scorecard",
+      "articleUrl": "/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
+      "imagePath": "/assets/credit-union-ai-portfolio-stop-scale-scorecard.jpg",
+      "publishedAt": "2026-09-16T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "architectural-isometric",
+      "subject": "portfolio-decision-junction",
+      "composition": "wide-branching-paths",
+      "perspective": "elevated-oblique",
+      "palette": "navy-mineral-blue-coral-sand",
+      "lighting": "soft-directional-daylight",
+      "texture": "matte-wood-frosted-acrylic-and-paper-grain",
+      "scene": "seven-initiative-blocks-pass-through-a-review-junction-toward-scale-hold-or-controlled-retirement",
+      "conceptScore": 91.1,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "documents-and-controls",
+          "score": 78.8
+        },
+        {
+          "medium": "screen-print-illustration",
+          "subject": "financial-object-study",
+          "score": 80.7
+        }
+      ]
+    },
+    {
       "id": "fatf-ai-enabled-scams-credit-union-controls",
       "articleUrl": "/news/fatf-ai-enabled-scams-credit-union-controls.html",
       "imagePath": "/assets/fatf-ai-enabled-scams-credit-union-controls.jpg",

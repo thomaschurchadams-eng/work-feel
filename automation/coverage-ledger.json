@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-portfolio-stop-scale-scorecard",
+      "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",
+      "url": "/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
+      "publishedAt": "2026-09-16T07:00:00-04:00",
+      "section": "insights",
+      "beat": "ai-portfolio-value-governance",
+      "functions": [
+        "board-strategy",
+        "finance-treasury",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "vendor-management"
+      ],
+      "technologies": [
+        "governance-risk",
+        "data-decisioning",
+        "agents-automation"
+      ],
+      "format": "decision-framework",
+      "audience": "executive-board",
+      "primaryAudience": "Board, strategy, finance and technology leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "business system owners",
+        "vendor-management teams",
+        "internal-audit leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-business-case-framework.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
+      "sourceTier": 1,
+      "score": 83.4
+    },
+    {
       "id": "fatf-ai-enabled-scams-credit-union-controls",
       "title": "FATF President Warns AI Is Lowering the Cost of Global Scams",
       "url": "/news/fatf-ai-enabled-scams-credit-union-controls.html",

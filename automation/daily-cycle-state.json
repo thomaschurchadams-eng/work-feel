@@ -6,89 +6,172 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-15",
+    "date": "2026-09-16",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "fraud-ai-enabled-scams",
-      "financial-crime-aml",
-      "payments-intervention",
-      "digital-identity",
-      "cybersecurity-resilience",
-      "regulation-policy",
-      "credit-union-system-performance",
-      "enterprise-ai-vendors",
-      "digital-banking-core",
-      "ai-portfolio-investment",
-      "lending-decisioning",
-      "member-experience"
+      "ai-portfolio-value-governance",
+      "credit-union-lending-platforms",
+      "fraud-network-intelligence",
+      "cybersecurity-ai-guidance",
+      "payments-fraud-scoring",
+      "digital-wallets",
+      "consumer-ai-finance",
+      "ai-policy-governance",
+      "digital-bank-competition",
+      "enterprise-financial-services-ai",
+      "credit-union-future-models",
+      "lending-payment-prediction"
     ],
     "publications": [
       {
         "type": "article",
-        "classification": "News",
-        "title": "FATF President Warns AI Is Lowering the Cost of Global Scams",
-        "url": "https://creditunionainews.com/news/fatf-ai-enabled-scams-credit-union-controls.html",
-        "primaryFunctionalAudience": "Fraud operations, BSA/AML and payments leaders",
-        "promotionPriority": "High",
+        "classification": "Insights",
+        "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
+        "primaryFunctionalAudience": "Board, strategy, finance and technology leaders",
+        "promotionPriority": "Library",
         "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "A Portfolio Scorecard for Scaling, Holding or Stopping Credit Union AI",
-        "reason": "qualified Library fallback, but the current FATF warning is time-sensitive and scored higher in the normal selection order"
+        "title": "Embers Credit Union Goes Live With MANTL Loan Origination",
+        "reason": "current credit-union implementation, but it discloses a routine loan-origination rollout without a substantive AI, data, cyber or decisioning change"
+      },
+      {
+        "title": "LEVERAGE Expands Rippleshot Fraud Intelligence",
+        "reason": "credible credit-union fraud technology, but it overlaps the August 31 Cornerstone and Rippleshot network article and adds no distinct operating result"
+      },
+      {
+        "title": "New York Cyber Guidance Returns to the AI-Risk Conversation",
+        "reason": "important guidance for covered institutions, but the underlying DFS AI cybersecurity guidance is not a new September 16 action"
+      },
+      {
+        "title": "Visa Adds a Unified Fraud Score to A2A Protect",
+        "reason": "current network-product update without a named U.S. credit-union deployment, independent validation or credit-union-specific control change"
+      },
+      {
+        "title": "Mastercard Launches Wallet Pay",
+        "reason": "material payments development, but it provides no direct credit-union implementation result or substantive AI and decisioning connection"
+      },
+      {
+        "title": "Experian Launches a Credit-Card Comparison App on ChatGPT",
+        "reason": "current consumer-distribution launch without a direct credit-union operating change, named integration or independently validated member result"
+      },
+      {
+        "title": "European Leaders Reopen the AI-Regulation Pace Debate",
+        "reason": "major AI policy discussion with indirect U.S. credit-union applicability and no current financial-institution operating requirement"
+      },
+      {
+        "title": "Revolut Wins a Swiss Banking License",
+        "reason": "significant digital-bank expansion, but the event does not disclose a differentiated AI or automation change for U.S. credit unions"
       },
       {
         "title": "Anthropic Packages Claude for Financial Advisers",
         "reason": "current enterprise-AI launch centered on advisers and wealth workflows, without a direct credit-union operating change"
       },
       {
-        "title": "Hyperlayer Launches a Programmable Banking Layer in the U.S.",
-        "reason": "current vendor launch naming credit unions but disclosing no production credit-union deployment or independently validated result"
+        "title": "What a Fully AI-Operated Credit Union Might Be",
+        "reason": "current industry commentary rather than a completed implementation, authoritative guidance or independently validated result"
       },
       {
-        "title": "A UK Credit Union Adds One-Stop Bereavement Notification",
-        "reason": "useful member-service workflow outside the United States with no substantive AI or decisioning change"
-      },
-      {
-        "title": "NCUA Reports Second-Quarter Credit Union System Performance",
-        "reason": "authoritative and highly credit-union relevant, but the AI or operating-technology connection would be incidental rather than source-supported"
-      },
-      {
-        "title": "FSB Roundtable Re-emphasizes Cross-Sector Operational Resilience",
-        "reason": "credible but less current, with close overlap to September 1 and September 14 resilience coverage"
-      },
-      {
-        "title": "Regulators Propose Principles-Based Third-Party Risk Guidance",
-        "reason": "already covered in the September 11 Alert; a full article would duplicate that cycle"
-      },
-      {
-        "title": "Scienaptic Announces a Credit-Union AI Conference",
-        "reason": "event promotion rather than a completed implementation, rule or independently validated operating result"
-      },
-      {
-        "title": "Treasury Says Financial-Sector AI Is Moving from Strategy to Scale",
-        "reason": "authoritative supporting context from June rather than a current event inside the 72-hour news window"
-      },
-      {
-        "title": "State Bank of India Proposes Know-Your-Agent Controls",
-        "reason": "useful agent-governance concept, but India-specific and not an adopted U.S. credit-union requirement"
-      },
-      {
-        "title": "Generation Alpha Is Already Using AI for Money Help",
-        "reason": "vendor-sponsored survey outside the current news window, with limited operating evidence for credit unions"
+        "title": "MessagePay Predicts When Credit-Union Borrowers Will Pay",
+        "reason": "relevant lending-technology announcement outside the preferred current window, without enough independently validated outcome evidence to displace the Library need"
       }
     ],
     "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI portfolio value realization, investment thresholds and shutdown criteria for board and strategy leaders",
-    "updatedAt": "2026-09-15T07:00:00-04:00"
+    "nextCoverageGap": "AI-assisted loan pricing, exception monitoring and borrower-outcome controls",
+    "updatedAt": "2026-09-16T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-15",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "fraud-ai-enabled-scams",
+        "financial-crime-aml",
+        "payments-intervention",
+        "digital-identity",
+        "cybersecurity-resilience",
+        "regulation-policy",
+        "credit-union-system-performance",
+        "enterprise-ai-vendors",
+        "digital-banking-core",
+        "ai-portfolio-investment",
+        "lending-decisioning",
+        "member-experience"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "FATF President Warns AI Is Lowering the Cost of Global Scams",
+          "url": "https://creditunionainews.com/news/fatf-ai-enabled-scams-credit-union-controls.html",
+          "primaryFunctionalAudience": "Fraud operations, BSA/AML and payments leaders",
+          "promotionPriority": "High",
+          "socialDecision": "eligible-pending-live-verification"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "A Portfolio Scorecard for Scaling, Holding or Stopping Credit Union AI",
+          "reason": "qualified Library fallback, but the current FATF warning is time-sensitive and scored higher in the normal selection order"
+        },
+        {
+          "title": "Anthropic Packages Claude for Financial Advisers",
+          "reason": "current enterprise-AI launch centered on advisers and wealth workflows, without a direct credit-union operating change"
+        },
+        {
+          "title": "Hyperlayer Launches a Programmable Banking Layer in the U.S.",
+          "reason": "current vendor launch naming credit unions but disclosing no production credit-union deployment or independently validated result"
+        },
+        {
+          "title": "A UK Credit Union Adds One-Stop Bereavement Notification",
+          "reason": "useful member-service workflow outside the United States with no substantive AI or decisioning change"
+        },
+        {
+          "title": "NCUA Reports Second-Quarter Credit Union System Performance",
+          "reason": "authoritative and highly credit-union relevant, but the AI or operating-technology connection would be incidental rather than source-supported"
+        },
+        {
+          "title": "FSB Roundtable Re-emphasizes Cross-Sector Operational Resilience",
+          "reason": "credible but less current, with close overlap to September 1 and September 14 resilience coverage"
+        },
+        {
+          "title": "Regulators Propose Principles-Based Third-Party Risk Guidance",
+          "reason": "already covered in the September 11 Alert; a full article would duplicate that cycle"
+        },
+        {
+          "title": "Scienaptic Announces a Credit-Union AI Conference",
+          "reason": "event promotion rather than a completed implementation, rule or independently validated operating result"
+        },
+        {
+          "title": "Treasury Says Financial-Sector AI Is Moving from Strategy to Scale",
+          "reason": "authoritative supporting context from June rather than a current event inside the 72-hour news window"
+        },
+        {
+          "title": "State Bank of India Proposes Know-Your-Agent Controls",
+          "reason": "useful agent-governance concept, but India-specific and not an adopted U.S. credit-union requirement"
+        },
+        {
+          "title": "Generation Alpha Is Already Using AI for Money Help",
+          "reason": "vendor-sponsored survey outside the current news window, with limited operating evidence for credit unions"
+        }
+      ],
+      "status": "article-complete-pending-deployment",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI portfolio value realization, investment thresholds and shutdown criteria for board and strategy leaders",
+      "updatedAt": "2026-09-15T07:00:00-04:00"
+    },
     {
       "date": "2026-09-14",
       "fullArticleCount": 1,

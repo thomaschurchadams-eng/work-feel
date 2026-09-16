@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -137,6 +137,11 @@
       "function": "risk-compliance",
       "technology": "governance-risk",
       "articles": [
+        {
+          "path": "insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
+          "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",
+          "summary": "A board-ready framework for scaling, holding or retiring AI initiatives based on value, controls, readiness and exit."
+        },
         {
           "path": "news/fincen-ncua-digital-credentials-credit-union-cip.html",
           "title": "FinCEN and NCUA Clarify Digital ID Use for Credit-Union CIP",
