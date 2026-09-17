@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-loan-pricing-controls",
+      "articleUrl": "/insight-credit-union-ai-loan-pricing-controls.html",
+      "imagePath": "/assets/credit-union-ai-loan-pricing-controls.jpg",
+      "publishedAt": "2026-09-17T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-photography",
+      "subject": "financial-object-study",
+      "composition": "foreground-background-tension",
+      "perspective": "overhead",
+      "palette": "navy-teal-copper",
+      "lighting": "soft-directional-studio",
+      "texture": "brushed-metal-acrylic-matte-paper-and-stone",
+      "scene": "loan-offer-cards-pass-through-transparent-pricing-guardrails-an-exception-tray-and-a-separate-review-stage",
+      "conceptScore": 90.4,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "human-machine-handoff",
+          "score": 79.6
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "score": 77.9
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-portfolio-stop-scale-scorecard",
       "articleUrl": "/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
       "imagePath": "/assets/credit-union-ai-portfolio-stop-scale-scorecard.jpg",

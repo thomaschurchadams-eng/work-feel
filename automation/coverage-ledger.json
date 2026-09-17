@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-loan-pricing-controls",
+      "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
+      "url": "/insight-credit-union-ai-loan-pricing-controls.html",
+      "publishedAt": "2026-09-17T07:00:00-04:00",
+      "section": "insights",
+      "beat": "loan-pricing-ai-controls",
+      "functions": [
+        "lending-collections",
+        "risk-compliance",
+        "finance-treasury",
+        "operations",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "governance-risk",
+        "regtech-monitoring"
+      ],
+      "format": "control-framework",
+      "audience": "functional-leader",
+      "primaryAudience": "Consumer lending, pricing, compliance and finance leaders",
+      "secondaryAudiences": [
+        "fair-lending and legal teams",
+        "loan operations leaders",
+        "technology and data leaders",
+        "internal-audit teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/news/fannie-freddie-vantagescore-credit-union-mortgages.html",
+        "/insight-credit-union-ai-small-business-lending-controls.html"
+      ],
+      "sourceTier": 1,
+      "score": 85.2
+    },
+    {
       "id": "credit-union-ai-portfolio-stop-scale-scorecard",
       "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",
       "url": "/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",

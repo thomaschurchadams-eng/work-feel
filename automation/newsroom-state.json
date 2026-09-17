@@ -1,14 +1,74 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-16T07:00:00-04:00",
+  "lastStandardRun": "2026-09-17T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
-    "publishedAt": "2026-09-16T07:00:00-04:00",
+    "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-loan-pricing-controls.html",
+    "publishedAt": "2026-09-17T07:00:00-04:00",
     "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-17",
+      "headline": "CSBS Releases an AI Supervisory Framework",
+      "reason": "current and authoritative, but its direct scope is state-chartered banks and nonbanks rather than a new credit-union requirement"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "Millennium Corporate and Pidgin Expand Real-Time Payment Access",
+      "reason": "directly relevant to nearly 300 credit unions, but vendor-led rollout evidence does not disclose a validated operating result or a substantive new AI control"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "Workers Credit Union Creates AI Leadership Roles",
+      "reason": "a useful organizational signal without a completed implementation, measured outcome or new control requirement"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "NCUA Chairman Emphasizes Technology and Innovation",
+      "reason": "leadership direction rather than a new rule, supervisory control or credit-union implementation result"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "OpenAI Introduces a Model-Misbehavior Disclosure Framework",
+      "reason": "important general AI-safety development with no financial-services-specific event or direct credit-union operating requirement"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "Revolut Faces a Ransom Demand After a Data Breach",
+      "reason": "material digital-bank security event, but it concerns a non-U.S. institution and does not establish a distinct credit-union AI or control change"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "Anthropic Documents AI-Powered Dating-App Scams",
+      "reason": "useful scam intelligence but less directly actionable for credit-union controls than the September 15 FATF coverage"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "Richmond Fed Reviews FedNow Adoption and Usage",
+      "reason": "authoritative payments analysis without a new credit-union implementation decision or material AI connection"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
+      "reason": "useful draft guidance, but it is a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "Treasury Reports July International Capital Data",
+      "reason": "current primary-source financial data without a substantive credit-union AI, automation or digital-operating implication"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "Cambridge Publishes a Global AI in Financial Services Report",
+      "reason": "useful cross-sector research but not a current credit-union event or a new U.S. operating requirement"
+    },
+    {
+      "date": "2026-09-17",
+      "headline": "NTT DATA Reports on AI Adoption in Banking",
+      "reason": "commercial cross-industry research without a named credit-union implementation or independently validated outcome that clears the News threshold"
+    },
     {
       "date": "2026-09-16",
       "headline": "Embers Credit Union Goes Live With MANTL Loan Origination",

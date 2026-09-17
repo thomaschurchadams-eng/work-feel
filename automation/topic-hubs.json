@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -12,6 +12,11 @@
       "function": "lending-collections",
       "technology": "decisioning-underwriting",
       "articles": [
+        {
+          "path": "insight-credit-union-ai-loan-pricing-controls.html",
+          "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
+          "summary": "How to govern pricing boundaries, exceptions, evidence, borrower outcomes and rollback."
+        },
         {
           "path": "news/fannie-freddie-vantagescore-credit-union-mortgages.html",
           "title": "Fannie and Freddie Open VantageScore 4.0 to All Approved Lenders",

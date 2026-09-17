@@ -6,89 +6,176 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-16",
+    "date": "2026-09-17",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "ai-portfolio-value-governance",
-      "credit-union-lending-platforms",
-      "fraud-network-intelligence",
-      "cybersecurity-ai-guidance",
-      "payments-fraud-scoring",
-      "digital-wallets",
-      "consumer-ai-finance",
-      "ai-policy-governance",
-      "digital-bank-competition",
-      "enterprise-financial-services-ai",
-      "credit-union-future-models",
-      "lending-payment-prediction"
+      "loan-pricing-ai-controls",
+      "credit-union-payments-infrastructure",
+      "state-supervision-ai",
+      "fraud-and-scam-intelligence",
+      "cybersecurity-and-data-breaches",
+      "digital-identity-and-onboarding",
+      "regulation-and-policy",
+      "member-experience-ai",
+      "vendor-and-enterprise-ai",
+      "payments-and-fednow",
+      "model-risk-and-governance",
+      "finance-and-alm"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "Insights",
-        "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
-        "primaryFunctionalAudience": "Board, strategy, finance and technology leaders",
+        "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-loan-pricing-controls.html",
+        "primaryFunctionalAudience": "Consumer lending, pricing, compliance and finance leaders",
         "promotionPriority": "Library",
         "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "Embers Credit Union Goes Live With MANTL Loan Origination",
-        "reason": "current credit-union implementation, but it discloses a routine loan-origination rollout without a substantive AI, data, cyber or decisioning change"
+        "title": "CSBS Releases an AI Supervisory Framework",
+        "reason": "current and authoritative, but its direct scope is state-chartered banks and nonbanks rather than a new credit-union requirement"
       },
       {
-        "title": "LEVERAGE Expands Rippleshot Fraud Intelligence",
-        "reason": "credible credit-union fraud technology, but it overlaps the August 31 Cornerstone and Rippleshot network article and adds no distinct operating result"
+        "title": "Millennium Corporate and Pidgin Expand Real-Time Payment Access",
+        "reason": "directly relevant to nearly 300 credit unions, but vendor-led rollout evidence does not disclose a validated operating result or a substantive new AI control"
       },
       {
-        "title": "New York Cyber Guidance Returns to the AI-Risk Conversation",
-        "reason": "important guidance for covered institutions, but the underlying DFS AI cybersecurity guidance is not a new September 16 action"
+        "title": "Workers Credit Union Creates AI Leadership Roles",
+        "reason": "a useful organizational signal without a completed implementation, measured outcome or new control requirement"
       },
       {
-        "title": "Visa Adds a Unified Fraud Score to A2A Protect",
-        "reason": "current network-product update without a named U.S. credit-union deployment, independent validation or credit-union-specific control change"
+        "title": "NCUA Chairman Emphasizes Technology and Innovation",
+        "reason": "leadership direction rather than a new rule, supervisory control or credit-union implementation result"
       },
       {
-        "title": "Mastercard Launches Wallet Pay",
-        "reason": "material payments development, but it provides no direct credit-union implementation result or substantive AI and decisioning connection"
+        "title": "OpenAI Introduces a Model-Misbehavior Disclosure Framework",
+        "reason": "important general AI-safety development with no financial-services-specific event or direct credit-union operating requirement"
       },
       {
-        "title": "Experian Launches a Credit-Card Comparison App on ChatGPT",
-        "reason": "current consumer-distribution launch without a direct credit-union operating change, named integration or independently validated member result"
+        "title": "Revolut Faces a Ransom Demand After a Data Breach",
+        "reason": "material digital-bank security event, but it concerns a non-U.S. institution and does not establish a distinct credit-union AI or control change"
       },
       {
-        "title": "European Leaders Reopen the AI-Regulation Pace Debate",
-        "reason": "major AI policy discussion with indirect U.S. credit-union applicability and no current financial-institution operating requirement"
+        "title": "Anthropic Documents AI-Powered Dating-App Scams",
+        "reason": "useful scam intelligence but less directly actionable for credit-union controls than the September 15 FATF coverage"
       },
       {
-        "title": "Revolut Wins a Swiss Banking License",
-        "reason": "significant digital-bank expansion, but the event does not disclose a differentiated AI or automation change for U.S. credit unions"
+        "title": "Richmond Fed Reviews FedNow Adoption and Usage",
+        "reason": "authoritative payments analysis without a new credit-union implementation decision or material AI connection"
       },
       {
-        "title": "Anthropic Packages Claude for Financial Advisers",
-        "reason": "current enterprise-AI launch centered on advisers and wealth workflows, without a direct credit-union operating change"
+        "title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
+        "reason": "useful draft guidance, but it is a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
       },
       {
-        "title": "What a Fully AI-Operated Credit Union Might Be",
-        "reason": "current industry commentary rather than a completed implementation, authoritative guidance or independently validated result"
+        "title": "Treasury Reports July International Capital Data",
+        "reason": "current primary-source financial data without a substantive credit-union AI, automation or digital-operating implication"
       },
       {
-        "title": "MessagePay Predicts When Credit-Union Borrowers Will Pay",
-        "reason": "relevant lending-technology announcement outside the preferred current window, without enough independently validated outcome evidence to displace the Library need"
+        "title": "Cambridge Publishes a Global AI in Financial Services Report",
+        "reason": "useful cross-sector research but not a current credit-union event or a new U.S. operating requirement"
+      },
+      {
+        "title": "NTT DATA Reports on AI Adoption in Banking",
+        "reason": "commercial cross-industry research without a named credit-union implementation or independently validated outcome that clears the News threshold"
       }
     ],
     "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted loan pricing, exception monitoring and borrower-outcome controls",
-    "updatedAt": "2026-09-16T07:00:00-04:00"
+    "nextCoverageGap": "AI-assisted liquidity forecasting, deposit pricing and ALM scenario controls",
+    "updatedAt": "2026-09-17T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-16",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "ai-portfolio-value-governance",
+        "credit-union-lending-platforms",
+        "fraud-network-intelligence",
+        "cybersecurity-ai-guidance",
+        "payments-fraud-scoring",
+        "digital-wallets",
+        "consumer-ai-finance",
+        "ai-policy-governance",
+        "digital-bank-competition",
+        "enterprise-financial-services-ai",
+        "credit-union-future-models",
+        "lending-payment-prediction"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
+          "primaryFunctionalAudience": "Board, strategy, finance and technology leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "eligible-pending-live-verification"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Embers Credit Union Goes Live With MANTL Loan Origination",
+          "reason": "current credit-union implementation, but it discloses a routine loan-origination rollout without a substantive AI, data, cyber or decisioning change"
+        },
+        {
+          "title": "LEVERAGE Expands Rippleshot Fraud Intelligence",
+          "reason": "credible credit-union fraud technology, but it overlaps the August 31 Cornerstone and Rippleshot network article and adds no distinct operating result"
+        },
+        {
+          "title": "New York Cyber Guidance Returns to the AI-Risk Conversation",
+          "reason": "important guidance for covered institutions, but the underlying DFS AI cybersecurity guidance is not a new September 16 action"
+        },
+        {
+          "title": "Visa Adds a Unified Fraud Score to A2A Protect",
+          "reason": "current network-product update without a named U.S. credit-union deployment, independent validation or credit-union-specific control change"
+        },
+        {
+          "title": "Mastercard Launches Wallet Pay",
+          "reason": "material payments development, but it provides no direct credit-union implementation result or substantive AI and decisioning connection"
+        },
+        {
+          "title": "Experian Launches a Credit-Card Comparison App on ChatGPT",
+          "reason": "current consumer-distribution launch without a direct credit-union operating change, named integration or independently validated member result"
+        },
+        {
+          "title": "European Leaders Reopen the AI-Regulation Pace Debate",
+          "reason": "major AI policy discussion with indirect U.S. credit-union applicability and no current financial-institution operating requirement"
+        },
+        {
+          "title": "Revolut Wins a Swiss Banking License",
+          "reason": "significant digital-bank expansion, but the event does not disclose a differentiated AI or automation change for U.S. credit unions"
+        },
+        {
+          "title": "Anthropic Packages Claude for Financial Advisers",
+          "reason": "current enterprise-AI launch centered on advisers and wealth workflows, without a direct credit-union operating change"
+        },
+        {
+          "title": "What a Fully AI-Operated Credit Union Might Be",
+          "reason": "current industry commentary rather than a completed implementation, authoritative guidance or independently validated result"
+        },
+        {
+          "title": "MessagePay Predicts When Credit-Union Borrowers Will Pay",
+          "reason": "relevant lending-technology announcement outside the preferred current window, without enough independently validated outcome evidence to displace the Library need"
+        }
+      ],
+      "status": "article-complete-pending-deployment",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted loan pricing, exception monitoring and borrower-outcome controls",
+      "updatedAt": "2026-09-16T07:00:00-04:00"
+    },
     {
       "date": "2026-09-15",
       "fullArticleCount": 1,
