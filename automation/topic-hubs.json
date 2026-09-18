@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -142,6 +142,11 @@
       "function": "risk-compliance",
       "technology": "governance-risk",
       "articles": [
+        {
+          "path": "insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
+          "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
+          "summary": "A treasury control framework for authoritative data, tiered scenarios, pricing authority, contingency funding and rollback."
+        },
         {
           "path": "insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
           "title": "A Stop-or-Scale Scorecard for Credit Union AI Portfolios",

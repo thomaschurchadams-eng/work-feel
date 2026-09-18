@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-liquidity-deposit-pricing-controls",
+      "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
+      "url": "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
+      "publishedAt": "2026-09-18T07:00:00-04:00",
+      "section": "insights",
+      "beat": "liquidity-deposit-pricing-ai-controls",
+      "functions": [
+        "finance-treasury",
+        "board-strategy",
+        "risk-compliance",
+        "operations",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "governance-risk",
+        "regtech-monitoring"
+      ],
+      "format": "control-framework",
+      "audience": "functional-leader",
+      "primaryAudience": "Finance, treasury and asset-liability management leaders",
+      "secondaryAudiences": [
+        "board and strategy leaders",
+        "risk and compliance leaders",
+        "deposit-product leaders",
+        "technology and data teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/news/members-1st-delfi-ai-balance-sheet-cuso.html",
+        "/insight-credit-union-ai-portfolio-stop-scale-scorecard.html"
+      ],
+      "sourceTier": 1,
+      "score": 84.6
+    },
+    {
       "id": "credit-union-ai-loan-pricing-controls",
       "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
       "url": "/insight-credit-union-ai-loan-pricing-controls.html",

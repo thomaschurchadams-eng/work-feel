@@ -1,14 +1,74 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-17T07:00:00-04:00",
+  "lastStandardRun": "2026-09-18T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-loan-pricing-controls.html",
-    "publishedAt": "2026-09-17T07:00:00-04:00",
+    "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
+    "publishedAt": "2026-09-18T07:00:00-04:00",
     "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-18",
+      "headline": "Mastercard and Alchemy Advance Agentic Shopping",
+      "reason": "current ecosystem development without a new credit-union operating requirement, named implementation or independently validated member outcome"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "JPMorgan Uses Claude for Spending and Security Controls",
+      "reason": "a useful external benchmark, but the institution-specific implementation does not establish a new credit-union requirement or transferable validated result"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "America's Credit Unions Publishes a Regulatory-Relief Package",
+      "reason": "relevant policy advocacy without a substantive new AI, automation or digital-operating implication for this publication cycle"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "FMSI Announces an Operations and Technology Conference",
+      "reason": "event promotion rather than a completed implementation, authoritative guidance or independently validated operating result"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
+      "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI or decisioning change"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "OpenAI Introduces a Model-Misbehavior Disclosure Framework",
+      "reason": "important general model-safety development with no direct credit-union or financial-services operating event"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "Justice Department Signals AI-Safety Antitrust Coordination",
+      "reason": "current general AI-policy signal with indirect credit-union applicability and no immediate financial-institution operating requirement"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "Brazilian Fintech Growth Raises Over-Indebtedness Concerns",
+      "reason": "current international digital-bank risk coverage without a U.S. credit-union implementation, rule or direct AI control change"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "Apple Pay Plans an India Rollout With Axis Bank",
+      "reason": "material international payments development without a U.S. credit-union implementation decision or distinct operating implication"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "Consumer Deposit Rates Shift After the Federal Reserve Decision",
+      "reason": "useful market context for treasury teams, but general rate reporting does not constitute a substantive AI or technology event"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
+      "reason": "useful draft guidance, but it remains a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
+    },
+    {
+      "date": "2026-09-18",
+      "headline": "CSBS AI Supervisory Framework Remains the State-Banking Benchmark",
+      "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current event clears the News threshold"
+    },
     {
       "date": "2026-09-17",
       "headline": "CSBS Releases an AI Supervisory Framework",
@@ -2100,6 +2160,16 @@
     {
       "functionalArea": "lending-consumer",
       "opportunity": "AI-assisted loan pricing, exception monitoring and borrower-outcome controls for consumer-lending leaders",
+      "priority": "completed-2026-09-17"
+    },
+    {
+      "functionalArea": "finance-treasury",
+      "opportunity": "AI-assisted liquidity forecasting, deposit pricing and ALM scenario controls",
+      "priority": "completed-2026-09-18"
+    },
+    {
+      "functionalArea": "operations-branch-network",
+      "opportunity": "AI-assisted branch network planning, service-demand forecasting and staffing controls",
       "priority": "next"
     }
   ]

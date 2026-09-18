@@ -6,93 +6,144 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-17",
+    "date": "2026-09-18",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "loan-pricing-ai-controls",
-      "credit-union-payments-infrastructure",
-      "state-supervision-ai",
-      "fraud-and-scam-intelligence",
-      "cybersecurity-and-data-breaches",
-      "digital-identity-and-onboarding",
-      "regulation-and-policy",
-      "member-experience-ai",
-      "vendor-and-enterprise-ai",
-      "payments-and-fednow",
-      "model-risk-and-governance",
-      "finance-and-alm"
+      "agentic-commerce",
+      "large-bank-generative-ai",
+      "credit-union-regulatory-advocacy",
+      "credit-union-operations-events",
+      "credit-union-digital-banking",
+      "model-safety-governance",
+      "ai-policy-and-antitrust",
+      "digital-bank-competition",
+      "international-wallets",
+      "deposit-pricing-and-rates",
+      "cybersecurity-ai-reporting",
+      "state-supervision-ai"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "Insights",
-        "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-loan-pricing-controls.html",
-        "primaryFunctionalAudience": "Consumer lending, pricing, compliance and finance leaders",
+        "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
+        "primaryFunctionalAudience": "Finance, treasury and asset-liability management leaders",
         "promotionPriority": "Library",
         "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "CSBS Releases an AI Supervisory Framework",
-        "reason": "current and authoritative, but its direct scope is state-chartered banks and nonbanks rather than a new credit-union requirement"
+        "title": "Mastercard and Alchemy Advance Agentic Shopping",
+        "reason": "current ecosystem development without a new credit-union operating requirement, named implementation or independently validated member outcome"
       },
       {
-        "title": "Millennium Corporate and Pidgin Expand Real-Time Payment Access",
-        "reason": "directly relevant to nearly 300 credit unions, but vendor-led rollout evidence does not disclose a validated operating result or a substantive new AI control"
+        "title": "JPMorgan Uses Claude for Spending and Security Controls",
+        "reason": "a useful external benchmark, but the institution-specific implementation does not establish a new credit-union requirement or transferable validated result"
       },
       {
-        "title": "Workers Credit Union Creates AI Leadership Roles",
-        "reason": "a useful organizational signal without a completed implementation, measured outcome or new control requirement"
+        "title": "America's Credit Unions Publishes a Regulatory-Relief Package",
+        "reason": "relevant policy advocacy without a substantive new AI, automation or digital-operating implication for this publication cycle"
       },
       {
-        "title": "NCUA Chairman Emphasizes Technology and Innovation",
-        "reason": "leadership direction rather than a new rule, supervisory control or credit-union implementation result"
+        "title": "FMSI Announces an Operations and Technology Conference",
+        "reason": "event promotion rather than a completed implementation, authoritative guidance or independently validated operating result"
+      },
+      {
+        "title": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
+        "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI or decisioning change"
       },
       {
         "title": "OpenAI Introduces a Model-Misbehavior Disclosure Framework",
-        "reason": "important general AI-safety development with no financial-services-specific event or direct credit-union operating requirement"
+        "reason": "important general model-safety development with no direct credit-union or financial-services operating event"
       },
       {
-        "title": "Revolut Faces a Ransom Demand After a Data Breach",
-        "reason": "material digital-bank security event, but it concerns a non-U.S. institution and does not establish a distinct credit-union AI or control change"
+        "title": "Justice Department Signals AI-Safety Antitrust Coordination",
+        "reason": "current general AI-policy signal with indirect credit-union applicability and no immediate financial-institution operating requirement"
       },
       {
-        "title": "Anthropic Documents AI-Powered Dating-App Scams",
-        "reason": "useful scam intelligence but less directly actionable for credit-union controls than the September 15 FATF coverage"
+        "title": "Brazilian Fintech Growth Raises Over-Indebtedness Concerns",
+        "reason": "current international digital-bank risk coverage without a U.S. credit-union implementation, rule or direct AI control change"
       },
       {
-        "title": "Richmond Fed Reviews FedNow Adoption and Usage",
-        "reason": "authoritative payments analysis without a new credit-union implementation decision or material AI connection"
+        "title": "Apple Pay Plans an India Rollout With Axis Bank",
+        "reason": "material international payments development without a U.S. credit-union implementation decision or distinct operating implication"
+      },
+      {
+        "title": "Consumer Deposit Rates Shift After the Federal Reserve Decision",
+        "reason": "useful market context for treasury teams, but general rate reporting does not constitute a substantive AI or technology event"
       },
       {
         "title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
-        "reason": "useful draft guidance, but it is a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
+        "reason": "useful draft guidance, but it remains a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
       },
       {
-        "title": "Treasury Reports July International Capital Data",
-        "reason": "current primary-source financial data without a substantive credit-union AI, automation or digital-operating implication"
-      },
-      {
-        "title": "Cambridge Publishes a Global AI in Financial Services Report",
-        "reason": "useful cross-sector research but not a current credit-union event or a new U.S. operating requirement"
-      },
-      {
-        "title": "NTT DATA Reports on AI Adoption in Banking",
-        "reason": "commercial cross-industry research without a named credit-union implementation or independently validated outcome that clears the News threshold"
+        "title": "CSBS AI Supervisory Framework Remains the State-Banking Benchmark",
+        "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current event clears the News threshold"
       }
     ],
     "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted liquidity forecasting, deposit pricing and ALM scenario controls",
-    "updatedAt": "2026-09-17T07:00:00-04:00"
+    "nextCoverageGap": "AI-assisted branch network planning, service-demand forecasting and staffing controls",
+    "updatedAt": "2026-09-18T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-17",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "loan-pricing-ai-controls",
+        "credit-union-payments-infrastructure",
+        "state-supervision-ai",
+        "fraud-and-scam-intelligence",
+        "cybersecurity-and-data-breaches",
+        "digital-identity-and-onboarding",
+        "regulation-and-policy",
+        "member-experience-ai",
+        "vendor-and-enterprise-ai",
+        "payments-and-fednow",
+        "model-risk-and-governance",
+        "finance-and-alm"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-loan-pricing-controls.html",
+          "primaryFunctionalAudience": "Consumer lending, pricing, compliance and finance leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "eligible-pending-live-verification"
+        }
+      ],
+      "rejections": [
+        {"title": "CSBS Releases an AI Supervisory Framework", "reason": "current and authoritative, but its direct scope is state-chartered banks and nonbanks rather than a new credit-union requirement"},
+        {"title": "Millennium Corporate and Pidgin Expand Real-Time Payment Access", "reason": "directly relevant to nearly 300 credit unions, but vendor-led rollout evidence does not disclose a validated operating result or a substantive new AI control"},
+        {"title": "Workers Credit Union Creates AI Leadership Roles", "reason": "a useful organizational signal without a completed implementation, measured outcome or new control requirement"},
+        {"title": "NCUA Chairman Emphasizes Technology and Innovation", "reason": "leadership direction rather than a new rule, supervisory control or credit-union implementation result"},
+        {"title": "OpenAI Introduces a Model-Misbehavior Disclosure Framework", "reason": "important general AI-safety development with no financial-services-specific event or direct credit-union operating requirement"},
+        {"title": "Revolut Faces a Ransom Demand After a Data Breach", "reason": "material digital-bank security event, but it concerns a non-U.S. institution and does not establish a distinct credit-union AI or control change"},
+        {"title": "Anthropic Documents AI-Powered Dating-App Scams", "reason": "useful scam intelligence but less directly actionable for credit-union controls than the September 15 FATF coverage"},
+        {"title": "Richmond Fed Reviews FedNow Adoption and Usage", "reason": "authoritative payments analysis without a new credit-union implementation decision or material AI connection"},
+        {"title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting", "reason": "useful draft guidance, but it is a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"},
+        {"title": "Treasury Reports July International Capital Data", "reason": "current primary-source financial data without a substantive credit-union AI, automation or digital-operating implication"},
+        {"title": "Cambridge Publishes a Global AI in Financial Services Report", "reason": "useful cross-sector research but not a current credit-union event or a new U.S. operating requirement"},
+        {"title": "NTT DATA Reports on AI Adoption in Banking", "reason": "commercial cross-industry research without a named credit-union implementation or independently validated outcome that clears the News threshold"}
+      ],
+      "status": "article-complete-pending-deployment",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted liquidity forecasting, deposit pricing and ALM scenario controls",
+      "updatedAt": "2026-09-17T07:00:00-04:00"
+    },
     {
       "date": "2026-09-16",
       "fullArticleCount": 1,
