@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-21",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -107,6 +107,11 @@
       "function": "operations",
       "technology": "agents-automation",
       "articles": [
+        {
+          "path": "news/sharetec-core-outage-credit-union-failover.html",
+          "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
+          "summary": "Test failure domains, restoration order and transaction reconciliation for hosted-core resilience."
+        },
         {
           "path": "news/banks-ai-agents-daily-operations-credit-unions.html",
           "title": "Major Banks Move AI Agents Into Daily Operations",

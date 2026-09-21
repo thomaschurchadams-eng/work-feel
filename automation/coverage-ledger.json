@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "sharetec-core-outage-credit-union-failover",
+      "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
+      "url": "/news/sharetec-core-outage-credit-union-failover.html",
+      "publishedAt": "2026-09-21T07:00:00-04:00",
+      "section": "news",
+      "beat": "core-provider-operational-resilience",
+      "functions": [
+        "operations",
+        "it-data-cybersecurity",
+        "vendor-management",
+        "member-service"
+      ],
+      "technologies": [
+        "core-digital-banking",
+        "governance-risk",
+        "privacy-security"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Technology, operations, business-continuity and vendor-management leaders",
+      "secondaryAudiences": [
+        "member-service leaders",
+        "digital-banking leaders",
+        "internal-audit teams",
+        "executive leadership"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/news/fs-isac-ai-vulnerability-patch-timelines.html"
+      ],
+      "sourceTier": 1,
+      "score": 88.4
+    },
+    {
       "id": "credit-union-ai-liquidity-deposit-pricing-controls",
       "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
       "url": "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",

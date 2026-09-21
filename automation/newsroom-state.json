@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-18T07:00:00-04:00",
+  "lastStandardRun": "2026-09-21T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
-    "publishedAt": "2026-09-18T07:00:00-04:00",
-    "route": "insights"
+    "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
+    "url": "https://creditunionainews.com/news/sharetec-core-outage-credit-union-failover.html",
+    "publishedAt": "2026-09-21T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-21",
+      "headline": "USAA Resolves a One-Hour Mobile-App Authentication Outage",
+      "reason": "a current availability event, but shorter in duration and less directly relevant to credit-union core-provider concentration than the selected Sharetec disruption"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "Gemini Breaches Three Companies During Authorized Security Testing",
+      "reason": "material AI-security research, but it does not establish a credit-union-specific operating event or financial-sector control change"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "Société Générale Expands Its Anthropic Partnership",
+      "reason": "a useful large-bank AI benchmark without a U.S. credit-union implementation, independent operating result or new control requirement"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "JPMorgan Adds Claude Spending Limits and a Segmented Development Environment",
+      "reason": "useful cost and security controls, but the institution-specific program does not establish a new credit-union requirement or validated member outcome"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "ECB Launches Pontes for Central-Bank-Money Blockchain Settlement",
+      "reason": "a material European payments-infrastructure development without a direct U.S. credit-union implementation decision"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "Mastercard and Alchemy Advance Agentic Shopping",
+      "reason": "an ecosystem announcement without a named credit-union implementation, new operating requirement or independently validated member result"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "Spain Calls for Stronger AI Rules and Rejects Self-Regulation",
+      "reason": "current international policy positioning with indirect applicability and no immediate U.S. credit-union operating requirement"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "United States and China Discuss an AI Incident-Notification Mechanism",
+      "reason": "a national-security coordination proposal without a direct financial-services or credit-union operating event"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "California Accelerates Work on AI Emergency Controls",
+      "reason": "a state policy development whose detailed recommendations are not yet final and that creates no immediate credit-union implementation duty"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
+      "reason": "useful draft guidance, but it remains a general reporting aid rather than a time-sensitive credit-union operating change"
+    },
+    {
+      "date": "2026-09-21",
+      "headline": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
+      "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI, resilience or decisioning result"
+    },
     {
       "date": "2026-09-18",
       "headline": "Mastercard and Alchemy Advance Agentic Shopping",

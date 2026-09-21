@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "sharetec-core-outage-credit-union-failover",
+      "articleUrl": "/news/sharetec-core-outage-credit-union-failover.html",
+      "imagePath": "/assets/sharetec-core-outage-credit-union-failover.jpg",
+      "publishedAt": "2026-09-21T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "cinematic-editorial-3d",
+      "subject": "infrastructure-concentration-and-failover",
+      "composition": "mirrored-cutaway-with-downstream-services",
+      "perspective": "elevated-frontal-cutaway",
+      "palette": "steel-blue-teal-graphite-amber-red",
+      "lighting": "cool-technical-with-localized-heat",
+      "texture": "brushed-metal-concrete-insulated-pipe-and-condensation",
+      "scene": "mirrored-data-center-cooling-systems-show-an-overheated-primary-side-a-blocked-failover-junction-and-staged-restoration-to-downstream-institutions",
+      "conceptScore": 92.1,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "documentary-editorial-photography",
+          "subject": "data-center-operations",
+          "score": 81
+        },
+        {
+          "medium": "architectural-paper-cut",
+          "subject": "shared-failure-domains",
+          "score": 79.2
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-liquidity-deposit-pricing-controls",
       "articleUrl": "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
       "imagePath": "/assets/credit-union-ai-liquidity-deposit-pricing-controls.jpg",
@@ -18,10 +51,21 @@
       "texture": "frosted-glass-brushed-metal-and-water",
       "scene": "transparent-liquidity-reservoir-feeds-governed-scenario-channels-toward-a-stable-reserve-basin-with-a-separate-manual-contingency-lever",
       "conceptScore": 91.8,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "architectural-isometric", "subject": "scenario-paths-and-controls", "score": 80.2},
-        {"medium": "mixed-media-collage", "subject": "balance-sheet-signals", "score": 77.4}
+        {
+          "medium": "architectural-isometric",
+          "subject": "scenario-paths-and-controls",
+          "score": 80.2
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "balance-sheet-signals",
+          "score": 77.4
+        }
       ]
     },
     {

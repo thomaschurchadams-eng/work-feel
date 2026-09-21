@@ -6,93 +6,176 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-18",
+    "date": "2026-09-21",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "agentic-commerce",
+      "credit-union-core-operations",
+      "financial-app-availability",
+      "ai-cybersecurity-testing",
       "large-bank-generative-ai",
-      "credit-union-regulatory-advocacy",
-      "credit-union-operations-events",
-      "credit-union-digital-banking",
-      "model-safety-governance",
-      "ai-policy-and-antitrust",
-      "digital-bank-competition",
-      "international-wallets",
-      "deposit-pricing-and-rates",
+      "enterprise-ai-cost-controls",
+      "blockchain-settlement-infrastructure",
+      "agentic-commerce",
+      "international-ai-policy",
+      "ai-incident-coordination",
+      "state-ai-governance",
       "cybersecurity-ai-reporting",
-      "state-supervision-ai"
+      "credit-union-digital-banking"
     ],
     "publications": [
       {
         "type": "article",
-        "classification": "Insights",
-        "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
-        "primaryFunctionalAudience": "Finance, treasury and asset-liability management leaders",
-        "promotionPriority": "Library",
+        "classification": "News",
+        "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
+        "url": "https://creditunionainews.com/news/sharetec-core-outage-credit-union-failover.html",
+        "primaryFunctionalAudience": "Technology, operations, business-continuity and vendor-management leaders",
+        "promotionPriority": "High",
         "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
+        "title": "USAA Resolves a One-Hour Mobile-App Authentication Outage",
+        "reason": "a current availability event, but shorter in duration and less directly relevant to credit-union core-provider concentration than the selected Sharetec disruption"
+      },
+      {
+        "title": "Gemini Breaches Three Companies During Authorized Security Testing",
+        "reason": "material AI-security research, but it does not establish a credit-union-specific operating event or financial-sector control change"
+      },
+      {
+        "title": "Société Générale Expands Its Anthropic Partnership",
+        "reason": "a useful large-bank AI benchmark without a U.S. credit-union implementation, independent operating result or new control requirement"
+      },
+      {
+        "title": "JPMorgan Adds Claude Spending Limits and a Segmented Development Environment",
+        "reason": "useful cost and security controls, but the institution-specific program does not establish a new credit-union requirement or validated member outcome"
+      },
+      {
+        "title": "ECB Launches Pontes for Central-Bank-Money Blockchain Settlement",
+        "reason": "a material European payments-infrastructure development without a direct U.S. credit-union implementation decision"
+      },
+      {
         "title": "Mastercard and Alchemy Advance Agentic Shopping",
-        "reason": "current ecosystem development without a new credit-union operating requirement, named implementation or independently validated member outcome"
+        "reason": "an ecosystem announcement without a named credit-union implementation, new operating requirement or independently validated member result"
       },
       {
-        "title": "JPMorgan Uses Claude for Spending and Security Controls",
-        "reason": "a useful external benchmark, but the institution-specific implementation does not establish a new credit-union requirement or transferable validated result"
+        "title": "Spain Calls for Stronger AI Rules and Rejects Self-Regulation",
+        "reason": "current international policy positioning with indirect applicability and no immediate U.S. credit-union operating requirement"
       },
       {
-        "title": "America's Credit Unions Publishes a Regulatory-Relief Package",
-        "reason": "relevant policy advocacy without a substantive new AI, automation or digital-operating implication for this publication cycle"
+        "title": "United States and China Discuss an AI Incident-Notification Mechanism",
+        "reason": "a national-security coordination proposal without a direct financial-services or credit-union operating event"
       },
       {
-        "title": "FMSI Announces an Operations and Technology Conference",
-        "reason": "event promotion rather than a completed implementation, authoritative guidance or independently validated operating result"
-      },
-      {
-        "title": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
-        "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI or decisioning change"
-      },
-      {
-        "title": "OpenAI Introduces a Model-Misbehavior Disclosure Framework",
-        "reason": "important general model-safety development with no direct credit-union or financial-services operating event"
-      },
-      {
-        "title": "Justice Department Signals AI-Safety Antitrust Coordination",
-        "reason": "current general AI-policy signal with indirect credit-union applicability and no immediate financial-institution operating requirement"
-      },
-      {
-        "title": "Brazilian Fintech Growth Raises Over-Indebtedness Concerns",
-        "reason": "current international digital-bank risk coverage without a U.S. credit-union implementation, rule or direct AI control change"
-      },
-      {
-        "title": "Apple Pay Plans an India Rollout With Axis Bank",
-        "reason": "material international payments development without a U.S. credit-union implementation decision or distinct operating implication"
-      },
-      {
-        "title": "Consumer Deposit Rates Shift After the Federal Reserve Decision",
-        "reason": "useful market context for treasury teams, but general rate reporting does not constitute a substantive AI or technology event"
+        "title": "California Accelerates Work on AI Emergency Controls",
+        "reason": "a state policy development whose detailed recommendations are not yet final and that creates no immediate credit-union implementation duty"
       },
       {
         "title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
-        "reason": "useful draft guidance, but it remains a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
+        "reason": "useful draft guidance, but it remains a general reporting aid rather than a time-sensitive credit-union operating change"
       },
       {
-        "title": "CSBS AI Supervisory Framework Remains the State-Banking Benchmark",
-        "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current event clears the News threshold"
+        "title": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
+        "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI, resilience or decisioning result"
       }
     ],
     "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted branch network planning, service-demand forecasting and staffing controls",
-    "updatedAt": "2026-09-18T07:00:00-04:00"
+    "updatedAt": "2026-09-21T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-18",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "agentic-commerce",
+        "large-bank-generative-ai",
+        "credit-union-regulatory-advocacy",
+        "credit-union-operations-events",
+        "credit-union-digital-banking",
+        "model-safety-governance",
+        "ai-policy-and-antitrust",
+        "digital-bank-competition",
+        "international-wallets",
+        "deposit-pricing-and-rates",
+        "cybersecurity-ai-reporting",
+        "state-supervision-ai"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "Seven Controls for AI in Credit Union Liquidity and Deposit Pricing",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
+          "primaryFunctionalAudience": "Finance, treasury and asset-liability management leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "eligible-pending-live-verification"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Mastercard and Alchemy Advance Agentic Shopping",
+          "reason": "current ecosystem development without a new credit-union operating requirement, named implementation or independently validated member outcome"
+        },
+        {
+          "title": "JPMorgan Uses Claude for Spending and Security Controls",
+          "reason": "a useful external benchmark, but the institution-specific implementation does not establish a new credit-union requirement or transferable validated result"
+        },
+        {
+          "title": "America's Credit Unions Publishes a Regulatory-Relief Package",
+          "reason": "relevant policy advocacy without a substantive new AI, automation or digital-operating implication for this publication cycle"
+        },
+        {
+          "title": "FMSI Announces an Operations and Technology Conference",
+          "reason": "event promotion rather than a completed implementation, authoritative guidance or independently validated operating result"
+        },
+        {
+          "title": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
+          "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI or decisioning change"
+        },
+        {
+          "title": "OpenAI Introduces a Model-Misbehavior Disclosure Framework",
+          "reason": "important general model-safety development with no direct credit-union or financial-services operating event"
+        },
+        {
+          "title": "Justice Department Signals AI-Safety Antitrust Coordination",
+          "reason": "current general AI-policy signal with indirect credit-union applicability and no immediate financial-institution operating requirement"
+        },
+        {
+          "title": "Brazilian Fintech Growth Raises Over-Indebtedness Concerns",
+          "reason": "current international digital-bank risk coverage without a U.S. credit-union implementation, rule or direct AI control change"
+        },
+        {
+          "title": "Apple Pay Plans an India Rollout With Axis Bank",
+          "reason": "material international payments development without a U.S. credit-union implementation decision or distinct operating implication"
+        },
+        {
+          "title": "Consumer Deposit Rates Shift After the Federal Reserve Decision",
+          "reason": "useful market context for treasury teams, but general rate reporting does not constitute a substantive AI or technology event"
+        },
+        {
+          "title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
+          "reason": "useful draft guidance, but it remains a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
+        },
+        {
+          "title": "CSBS AI Supervisory Framework Remains the State-Banking Benchmark",
+          "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current event clears the News threshold"
+        }
+      ],
+      "status": "article-complete-pending-deployment",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted branch network planning, service-demand forecasting and staffing controls",
+      "updatedAt": "2026-09-18T07:00:00-04:00"
+    },
     {
       "date": "2026-09-17",
       "fullArticleCount": 1,
@@ -125,18 +208,54 @@
         }
       ],
       "rejections": [
-        {"title": "CSBS Releases an AI Supervisory Framework", "reason": "current and authoritative, but its direct scope is state-chartered banks and nonbanks rather than a new credit-union requirement"},
-        {"title": "Millennium Corporate and Pidgin Expand Real-Time Payment Access", "reason": "directly relevant to nearly 300 credit unions, but vendor-led rollout evidence does not disclose a validated operating result or a substantive new AI control"},
-        {"title": "Workers Credit Union Creates AI Leadership Roles", "reason": "a useful organizational signal without a completed implementation, measured outcome or new control requirement"},
-        {"title": "NCUA Chairman Emphasizes Technology and Innovation", "reason": "leadership direction rather than a new rule, supervisory control or credit-union implementation result"},
-        {"title": "OpenAI Introduces a Model-Misbehavior Disclosure Framework", "reason": "important general AI-safety development with no financial-services-specific event or direct credit-union operating requirement"},
-        {"title": "Revolut Faces a Ransom Demand After a Data Breach", "reason": "material digital-bank security event, but it concerns a non-U.S. institution and does not establish a distinct credit-union AI or control change"},
-        {"title": "Anthropic Documents AI-Powered Dating-App Scams", "reason": "useful scam intelligence but less directly actionable for credit-union controls than the September 15 FATF coverage"},
-        {"title": "Richmond Fed Reviews FedNow Adoption and Usage", "reason": "authoritative payments analysis without a new credit-union implementation decision or material AI connection"},
-        {"title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting", "reason": "useful draft guidance, but it is a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"},
-        {"title": "Treasury Reports July International Capital Data", "reason": "current primary-source financial data without a substantive credit-union AI, automation or digital-operating implication"},
-        {"title": "Cambridge Publishes a Global AI in Financial Services Report", "reason": "useful cross-sector research but not a current credit-union event or a new U.S. operating requirement"},
-        {"title": "NTT DATA Reports on AI Adoption in Banking", "reason": "commercial cross-industry research without a named credit-union implementation or independently validated outcome that clears the News threshold"}
+        {
+          "title": "CSBS Releases an AI Supervisory Framework",
+          "reason": "current and authoritative, but its direct scope is state-chartered banks and nonbanks rather than a new credit-union requirement"
+        },
+        {
+          "title": "Millennium Corporate and Pidgin Expand Real-Time Payment Access",
+          "reason": "directly relevant to nearly 300 credit unions, but vendor-led rollout evidence does not disclose a validated operating result or a substantive new AI control"
+        },
+        {
+          "title": "Workers Credit Union Creates AI Leadership Roles",
+          "reason": "a useful organizational signal without a completed implementation, measured outcome or new control requirement"
+        },
+        {
+          "title": "NCUA Chairman Emphasizes Technology and Innovation",
+          "reason": "leadership direction rather than a new rule, supervisory control or credit-union implementation result"
+        },
+        {
+          "title": "OpenAI Introduces a Model-Misbehavior Disclosure Framework",
+          "reason": "important general AI-safety development with no financial-services-specific event or direct credit-union operating requirement"
+        },
+        {
+          "title": "Revolut Faces a Ransom Demand After a Data Breach",
+          "reason": "material digital-bank security event, but it concerns a non-U.S. institution and does not establish a distinct credit-union AI or control change"
+        },
+        {
+          "title": "Anthropic Documents AI-Powered Dating-App Scams",
+          "reason": "useful scam intelligence but less directly actionable for credit-union controls than the September 15 FATF coverage"
+        },
+        {
+          "title": "Richmond Fed Reviews FedNow Adoption and Usage",
+          "reason": "authoritative payments analysis without a new credit-union implementation decision or material AI connection"
+        },
+        {
+          "title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
+          "reason": "useful draft guidance, but it is a general cybersecurity reporting aid rather than a time-sensitive credit-union operating change"
+        },
+        {
+          "title": "Treasury Reports July International Capital Data",
+          "reason": "current primary-source financial data without a substantive credit-union AI, automation or digital-operating implication"
+        },
+        {
+          "title": "Cambridge Publishes a Global AI in Financial Services Report",
+          "reason": "useful cross-sector research but not a current credit-union event or a new U.S. operating requirement"
+        },
+        {
+          "title": "NTT DATA Reports on AI Adoption in Banking",
+          "reason": "commercial cross-industry research without a named credit-union implementation or independently validated outcome that clears the News threshold"
+        }
       ],
       "status": "article-complete-pending-deployment",
       "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
