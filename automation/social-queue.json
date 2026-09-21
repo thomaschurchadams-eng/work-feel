@@ -11,7 +11,7 @@
       "format": "executive-takeaway",
       "copy": "A cooling-system failure became a multi-credit-union core outage—and reports say the failover did not work properly. The operating takeaway: test whether redundant hosting actually crosses failure domains, rehearse recovery order, preserve member communications and reconcile transactions before declaring recovery complete. https://creditunionainews.com/news/sharetec-core-outage-credit-union-failover.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-sharetec-core-outage-credit-union-failover-2026-09-21",
       "scheduledFor": "2026-09-21T12:30:00-04:00",
-      "status": "scheduled",
+      "status": "sent",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-09-21T07:12:00-04:00",
       "imageUrl": "https://creditunionainews.com/assets/sharetec-core-outage-credit-union-failover.jpg",
@@ -24,7 +24,9 @@
       "lastAttemptAt": "2026-09-21T11:12:12.249Z",
       "lastResult": "verified secure workflow receipt",
       "duplicate": false,
-      "imageAttached": true
+      "imageAttached": true,
+      "sentAt": "2026-09-21T16:30:30.624Z",
+      "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7507838680334680064"
     },
     {
       "id": "linkedin-credit-union-ai-liquidity-deposit-pricing-controls-2026-09-18",
