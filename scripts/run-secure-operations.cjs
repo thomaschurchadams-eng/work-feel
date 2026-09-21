@@ -2,14 +2,24 @@ const fs=require('node:fs');
 const REPO='thomaschurchadams-eng/work-feel';
 const API='https://api.github.com/repos/'+REPO;
 const SITE='https://creditunionainews.com';
+const REPORT_ONLY_FILES=new Set(['automation/reports/cuai-ceo-latest.md','automation/cuai-usage-ledger.json']);
 const headers={Authorization:'Bearer '+process.env.GITHUB_TOKEN,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
 const receipts={startedAt:new Date().toISOString(),commit:process.env.DEPLOYED_SHA,authentication:'unverified',actions:[],reconciliations:[],sourceRetries:[],errors:[]};
+let operationCommit=process.env.DEPLOYED_SHA;
 fs.mkdirSync('operation-receipts',{recursive:true});
 const save=()=>fs.writeFileSync('operation-receipts/run.json',JSON.stringify(receipts,null,2)+'\n');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function github(path,options={}){const response=await fetch(API+path,{...options,headers:{...headers,...options.headers},signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error('github_'+response.status);return response.json();}
 async function identity(){const url=new URL(process.env.ACTIONS_ID_TOKEN_REQUEST_URL);url.searchParams.set('audience',SITE+'/operations');const response=await fetch(url,{headers:{Authorization:'Bearer '+process.env.ACTIONS_ID_TOKEN_REQUEST_TOKEN},signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error('identity_'+response.status);const data=await response.json();if(typeof data.value!=='string')throw Error('identity_missing');console.log('::add-mask::'+data.value);return data.value;}
-async function invoke(route,payload){const token=await identity();const response=await fetch(SITE+'/api/'+route,{method:'POST',redirect:'error',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({...payload,commitSha:process.env.DEPLOYED_SHA}),signal:AbortSignal.timeout(25000)});const data=await response.json();return {status:response.status,data};}
+async function invoke(route,payload){const token=await identity();const response=await fetch(SITE+'/api/'+route,{method:'POST',redirect:'error',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({...payload,commitSha:operationCommit}),signal:AbortSignal.timeout(25000)});const data=await response.json();return {status:response.status,data};}
+async function reportOnlyDrift(productionSha,runSha){
+ if(productionSha===runSha)return {allowed:true,files:[]};
+ if(!/^[a-f0-9]{40}$/.test(productionSha||''))return {allowed:false,files:[]};
+ const comparison=await github('/compare/'+productionSha+'...'+runSha);
+ const files=Array.isArray(comparison.files)?comparison.files.map(file=>file.filename):[];
+ const ancestor=comparison.status==='ahead'&&comparison.merge_base_commit?.sha===productionSha&&comparison.behind_by===0;
+ return {allowed:ancestor&&files.length>0&&files.length<300&&files.every(file=>REPORT_ONLY_FILES.has(file)),files};
+}
 async function readSource(route){
  let response;
  for(let attempt=1;attempt<=3;attempt++){
@@ -52,16 +62,19 @@ async function reconcileSentQueue(bufferResponse){
 (async()=>{
  if(!/^[a-f0-9]{40}$/.test(process.env.DEPLOYED_SHA||''))throw Error('invalid_deployment_sha');
  const current=await github('/commits/main');if(current.sha!==process.env.DEPLOYED_SHA){receipts.status='superseded';save();console.log('A newer main commit exists; its production deployment owns the next run.');return;}
- // Main pushes can precede Vercel promotion. Poll only the authenticated,
- // read-only health check for at most three minutes; operations remain gated.
+ // Main pushes can precede Vercel promotion. A report-only commit may also be
+ // intentionally skipped by Vercel, so allow only the two canonical reporting
+ // files to drift while all production-facing repository state remains exact.
  const deadline=Date.now()+180000;let productionReady=false;
  do {
   const latest=await github('/commits/main');
   if(latest.sha!==process.env.DEPLOYED_SHA){receipts.status='superseded';save();return;}
   try {
    const health=await invoke('operations-health',{});
-   receipts.productionCheck={status:health.status,commit:health.data.commit,environment:health.data.environment,error:health.data.error};
-   productionReady=health.status===200&&health.data.ok===true&&health.data.commit===process.env.DEPLOYED_SHA&&health.data.environment==='production';
+   const drift=health.status===200&&health.data?.ok===true?await reportOnlyDrift(health.data.commit,process.env.DEPLOYED_SHA):{allowed:false,files:[]};
+   receipts.productionCheck={status:health.status,commit:health.data.commit,runCommit:process.env.DEPLOYED_SHA,environment:health.data.environment,error:health.data.error,reportOnlyDrift:drift.allowed,driftFiles:drift.files};
+   productionReady=health.status===200&&health.data.ok===true&&health.data.environment==='production'&&drift.allowed;
+   if(productionReady)operationCommit=health.data.commit;
   }catch(error){receipts.productionCheck={error:error.message};}
   if(productionReady)break;
   if(Date.now()>=deadline)break;
