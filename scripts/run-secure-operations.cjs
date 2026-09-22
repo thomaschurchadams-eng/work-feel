@@ -16,9 +16,11 @@ async function reportOnlyDrift(productionSha,runSha){
  if(productionSha===runSha)return {allowed:true,files:[]};
  if(!/^[a-f0-9]{40}$/.test(productionSha||''))return {allowed:false,files:[]};
  const comparison=await github('/compare/'+productionSha+'...'+runSha);
- const files=Array.isArray(comparison.files)?comparison.files.map(file=>file.filename):[];
+ const changedFiles=Array.isArray(comparison.files)?comparison.files:[];
+ const files=changedFiles.map(file=>file.filename);
  const ancestor=comparison.status==='ahead'&&comparison.merge_base_commit?.sha===productionSha&&comparison.behind_by===0;
- return {allowed:ancestor&&files.length>0&&files.length<300&&files.every(file=>REPORT_ONLY_FILES.has(file)),files};
+ const reportOnly=changedFiles.every(file=>REPORT_ONLY_FILES.has(file.filename)&&!file.previous_filename);
+ return {allowed:ancestor&&files.length>0&&files.length<300&&reportOnly,files};
 }
 async function readSource(route){
  let response;
