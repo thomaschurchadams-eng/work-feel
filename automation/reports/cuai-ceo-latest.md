@@ -1,107 +1,108 @@
 # CUAI CEO Operating Report
 
 ## As of
-2026-09-21T09:24:48-04:00
+2026-09-22T09:44:00-04:00
 
 ## Goal progress
-- **G3 autonomous operating loop — live newsroom, secure operations and Production are healthy; canonical workload reporting remains degraded.** The September 21 publisher left a complete machine-observable outcome after screening 12 candidates across 12 beats, published and live-validated one High News article, and created exactly one fixed-slot CreditUnionAI News company-page reservation with `duplicate=false`. Reliability Watch also closed the repeated secure-operations production-identity deadlock in PR #221: reporting-only drift is now tolerated only when Production remains an ancestor and every intervening file is one of the two canonical reporting files; production-facing drift still fails closed. Exact READY Production at the measurement checkpoint is `75623600c9c60915ca3fcdd05c7be1c4673b98a7`; the live article returns HTTP 200 and Vercel reports no runtime errors in the prior 24 hours. The remaining G3 blocker is the canonical usage-ledger backlog: `automation/cuai-usage-ledger.json` still ends on September 15, while evidence-backed September 16-18 workload plus the September 21 Reliability Watch recovery are preserved in issue #160 pending a history-safe append path.
-- **G1 qualified audience growth — 232 rolling-28-day active users, +44.1% versus the August 31 baseline of 161.** The September target is 242, so the current rolling window is 10 users short. Exact-current authenticated GA4 reports **69 active users / 73 sessions / 31 engaged sessions / 42.47% engagement / 104 page views / 9 90%-scrolled users over 7 days**, versus **232 / 251 / 96 / 38.25% / 337 / 22 over 28 days**. Current volume and substantive engagement are ahead of the 28-day weekly pace.
-- **G5 CUAI→CAI demand generation — source-side experiment measurement remains valid; downstream demand is still unverified.** The current GA4 receipt reports **121 generic viewable banner impressions**, exactly reconciled to cell impressions (**36 header-training + 4 contextual-training + 69 header-readiness + 12 contextual-readiness**). Generic clicks remain **5** while returned cell-specific clicks remain **2 header-readiness**. Preserve the post-September-12 scoring boundary, exclude known internal validation traffic and never back-allocate unmatched generic clicks. CAI destination property **538586591** was not retrieved in this run, so qualified CAI sessions/intent/leads/purchases remain unavailable rather than zero.
-- **G4 commercial output — internally ready, externally inactive.** The existing sponsorship package and research-qualified internal pipeline remain current. CAI public checkout entry is operational for Individual $49/month, Team $299/month, Institutional $799/month and Vendor Risk $249 one time, with owner email-link sign-in previously verified; this is service-health evidence only, not purchase, conversion or revenue evidence. CUAI remains one relevant distribution/source channel for CAI general preparedness while editorial selection stays independent.
-- **G2 engagement learning — one active experiment, no winner.** `cai_current_readiness_2026_09` remains the sole active experiment. Returned viewable impressions are A=40 and B=81, both below the 100-per-variant gate and the experiment is still inside its 14-day minimum. No independently observed CAI intent/lead exists in current evidence, so no winner is declared and no second experiment is opened simply to increase test volume.
+- **G3 autonomous operating loop — newsroom, Production and authenticated source retrieval are healthy; canonical workload reporting remains degraded.** The September 22 publisher persisted a complete dated outcome after screening 12 candidates across 12 beats, published one Library Insight, validated 44-entry daily-state preservation and created exactly one selective CreditUnionAI News company-page reservation with `duplicate=false`. Reliability Watch closed the report-only rename edge case in PR #222, and exact Production plus the post-merge verified-operations run were healthy. The unresolved G3 blocker remains `automation/cuai-usage-ledger.json`, which still ends at the September 15 Reliability Watch entry; later evidence-backed workloads remain on the existing strictly additive history-safe recovery lane.
+- **G1 qualified audience growth — the raw rolling-user threshold is now above the September target.** Exact authenticated GA4 reports **250 rolling-28-day active users**, versus the August 31 baseline of 161 and the September target of 242: **+55.3%** versus baseline and 8 users above target. Quality is mixed rather than uniformly stronger: **79 active users / 84 sessions / 26 engaged / 30.95% engagement / 108 page views / 9 90%-scrolled users over 7 days**, versus **250 / 270 / 96 / 35.56% / 352 / 23 over 28 days**. Seven-day 90%-scroll depth is ahead of the 28-day weekly pace, while engagement rate is below the 28-day rate.
+- **G5 CUAI→CAI demand generation — source-side exposure is measurable; downstream CAI demand remains unverified.** CUAI property `520110560` reports **142 complete viewable banner impressions** over 28 days, exactly reconciling to cell impressions: training A **54** (48 header + 6 contextual) and readiness B **88** (76 + 12). Generic clicks are 5 while returned cell-specific clicks are 2 readiness-header clicks. Per the persisted scoring rule, unmatched generic clicks are not allocated to variants, known internal validation is excluded from customer conclusions, and CAI destination property `538586591` was not retrieved, so qualified sessions/intent/leads/purchases remain unavailable rather than zero.
+- **G4 commercial output — internally ready, externally inactive.** The Founding AI Intelligence Partner package remains internally defined with pricing still TBD, and the eight-company pipeline remains research-qualified only. No sponsor outreach, proposal, pricing commitment, contract, spend or verified CUAI revenue event was retrieved or authorized.
+- **G2 engagement learning — no active LinkedIn/editorial production experiment; one active G5 conversion experiment continues.** The prior LinkedIn decision-tool-promise cohort remains closed. `cai_current_readiness_2026_09` is active separately as the CUAI→CAI conversion experiment and has no winner.
 
 ## System health
-**Degraded only for canonical workload reporting; newsroom, Production and authenticated measurement are healthy.** Latest READY Production at the analytics checkpoint is deployment `dpl_7VEdzRPaSbRf7MSto85Pxm6RdKAS` on exact commit `75623600c9c60915ca3fcdd05c7be1c4673b98a7`. The September 21 article returns HTTP 200 and Vercel reports no runtime errors in the prior 24 hours.
+**Degraded only for canonical workload reporting.** At the measurement checkpoint, latest READY Production was deployment `dpl_J73Z1a5kNeTaQqhbwzmvdyxXJePT` on exact commit `0e7243c741f566178f364b9a3f2cc1d715c4ba1e`. The September 22 article returned HTTP 200 and Vercel reported no runtime errors in the prior 24 hours.
 
-The required direct public probe of `/api/ga4-metrics?commitSha=75623600...` returned HTTP 401 `unauthorized`, which is expected because Production metrics require trusted secure-workflow identity. This was not treated as zero traffic. Exact-current `CUAI verified operations` run #79 on the same SHA then completed successfully with Production identity verified, zero distribution attempts and zero source/action exceptions; its preserved artifact returned GA4 HTTP 200 / `ok=true` / `source=google-analytics-data-api` / property `520110560`, Buffer HTTP 200 and direct Search Console HTTP 200. Under `automation/ANALYTICS.md`, those authenticated exact-current source receipts are the canonical read path.
+A direct request to `/api/ga4-metrics?commitSha=0e7243...` returned HTTP 401 `unauthorized`, consistent with the repository's trusted-workflow identity requirement and not treated as zero traffic. Exact-current `CUAI verified operations` run `35725546782` on that same commit then completed successfully with Production identity verified, zero distribution attempts, zero source retries and zero source/action errors. Its receipt returned GA4 HTTP 200 / `ok=true` / `source=google-analytics-data-api` / property `520110560`, Buffer HTTP 200 and direct Search Console HTTP 200.
 
 ## Newsroom output
-- **Published:** “Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions” — **News / High** — https://creditunionainews.com/news/sharetec-core-outage-credit-union-failover.html
-- Publisher screened **12 candidates across 12 beats** and did not force broader financial-services developments whose credit-union consequence or AI/technology operating connection was insufficient.
-- Article, 1200×630 hero, homepage, News index, operations hub and sitemaps were validated; the live article is HTTP 200.
-- **Next coverage gap:** AI-assisted branch-network planning, service-demand forecasting and staffing controls.
+- **Published:** “Seven Controls for AI-Assisted Branch Planning at Credit Unions” — **Insights / Library** — https://creditunionainews.com/insight-credit-union-ai-branch-demand-staffing-controls.html
+- Publisher screened **12 candidates across 12 beats**; no current News candidate cleared the threshold. The Library fallback completed the previously identified branch-network/service-demand/staffing gap without lowering sourcing or mission-fit gates.
+- Article package, analytics, SEO, LinkedIn policy and daily-state preservation checks passed; current Production serves the live article HTTP 200.
+- **Next coverage gap:** AI-assisted complaint analysis, root-cause detection and member-remediation controls.
 
 ## Distribution
-- September 21 company-page item is uniquely **scheduled for 12:30 p.m. ET** with exact CUAI UTMs, image attached, Buffer post `6ab1110b50b63a1b7652ef30`, `duplicate=false`; it is not yet due at this CEO checkpoint.
-- Buffer **7d:** 5 metrics-ready posts, **33 impressions / 20 reach / 0% mean engagement**. **28d:** 12 metrics-ready posts, **148 impressions / 107 reach / 0%**. Seven-day exposure is below the 28-day weekly pace; increasing posting volume is not authorized or supported.
-- GA4 LinkedIn `organic_social / cuai_news` produced **4 sessions / 1 engaged over 7d** versus **14 / 4 over 28d**. The four clean current post-level rows each match immutable `utm_content` to the canonical landing page; September 15 FATF produced the only engaged session among them. Historical mismatched rows remain excluded from exact-post scoring.
-- Joined signal: site growth and depth are improving while LinkedIn qualified exposure remains small. The next optimization should not be more posts; it should preserve selective distribution and learn from clean attributable sessions.
+- September 22 company-page item is uniquely **scheduled for 11:30 a.m. ET** with exact CUAI UTMs, image attached, Buffer post `6ab2635bb093a512d28a8332`, `duplicate=false`; it was not yet due at this CEO checkpoint.
+- Buffer **7d:** 5 metrics-ready posts, **34 impressions / 20 reach / 1 reaction / 8.89% mean engagement**. **28d:** 12 metrics-ready posts, **90 impressions / 60 reach / 1 reaction / 3.70% mean engagement**.
+- GA4 LinkedIn `organic_social / cuai_news` produced **4 sessions / 0 engaged over 7d** versus **15 / 4 over 28d**. The current seven-day post rows all match immutable `utm_content` to their canonical landing pages; historical mismatches remain quality-labeled.
+- Joined signal: recent LinkedIn exposure remains small, and the current clean UTM traffic did not produce engaged sessions. The September 21 Sharetec post produced one Buffer reaction but its one clean GA4 session was unengaged; one post is not a basis for structural schedule/topic change.
 
 ## Audience growth
 ### GA4 — authenticated exact-current receipt
-- **7d:** 69 active users; 73 sessions; 31 engaged; 42.47% engagement; 104 page views; 9 90%-scrolled users.
-- **28d:** 232 active users; 251 sessions; 96 engaged; 38.25% engagement; 337 page views; 22 90%-scrolled users.
-- Acquisition 7d: direct **51 sessions / 21 engaged**; Google organic **6 / 5**; Bing organic **4 / 2**; LinkedIn `organic_social / cuai_news` **4 / 1**. A `(not set)/(not set)` row carrying the CAI campaign has **4 / 0** on the CUAI property and is not treated as CAI destination demand.
-- Editorial/conversion events 7d: **45 article views / 36 users**, **9 engaged-reader events / 6 users**, **33 `scroll_depth` events / 7 users**, **2 outbound clicks**. No `newsletter_intent` or `related_content_click` row was returned in the seven-day event table.
-- Do not infer a custom 50%-versus-90% scroll breakout. `scrolledUsers=9` is GA4's built-in 90%-scroll user metric; generic `scroll_depth` includes multiple thresholds not reliably split in the current Data API schema.
+- **7d:** 79 active users; 84 sessions; 26 engaged; 30.95% engagement; 108 page views; 9 90%-scrolled users.
+- **28d:** 250 active users; 270 sessions; 96 engaged; 35.56% engagement; 352 page views; 23 90%-scrolled users.
+- G1 raw user threshold: **250 vs 242 target**, +55.3% from the 161 baseline. Keep the quality guardrail active because seven-day engagement rate remains below the 28-day rate even though deep-scroll pace is stronger.
+- Acquisition 7d: direct **56 sessions / 17 engaged**; Google organic **6 / 5**; Bing organic **4 / 2**; LinkedIn `organic_social / cuai_news` **4 / 0**. A `(not set)/(not set)` row carrying `cai_current_readiness_sep2026` has **4 / 0** on the CUAI property and is not treated as CAI destination demand.
+- Editorial/conversion events 7d: **52 article views / 41 users**, **11 engaged-reader events / 8 users**, **33 `scroll_depth` events / 7 users**, **2 outbound clicks**. No seven-day `newsletter_intent` or `related_content_click` row was returned.
+- Do not infer a custom 50%-versus-90% scroll breakout. `scrolledUsers=9` is GA4's built-in 90%-scroll user metric; generic `scroll_depth` contains multiple thresholds without a registered dimension for safe threshold reporting.
 
 ### Search Console — authenticated direct fallback
-- **7d (Sep. 14-20):** **8 clicks / 330 impressions / 2.42% CTR / avg position 21.63**.
-- **28d:** **17 / 1,821 / 0.93% / position 21.49**.
-- Search click efficiency improved materially despite lower impression pace: the NCUA board-meeting schedule produced 3 seven-day clicks, Raiz digital-account-opening 2, and the homepage, employee-coaching scorecard and Velera risk-alert page one each. The sample remains too small to justify search-led editorial topic steering.
+- **7d:** **6 clicks / 275 impressions / 2.18% CTR / avg position 22.44**.
+- **28d:** **16 / 1,756 / 0.91% / position 21.71**.
+- Search click efficiency is above the 28-day rate while impression volume is below its weekly pace. The NCUA board schedule generated 3 seven-day clicks; homepage, employee-coaching scorecard and Velera risk-alert page generated one each. This does not justify search-led editorial topic steering.
 - GA4-embedded Search Console remains unavailable because the requested organic-search fields are incompatible in the GA4 Data API query; direct authenticated Search Console remains the validated fallback.
 
 ## Engagement learning
 ### Experiment: `cai_current_readiness_2026_09`
 - **Hypothesis:** current-readiness framing generates more qualified CAI interest than current-training framing among CUAI readers.
-- **Evidence:** 121 complete viewable impressions; variant totals A=40 and B=81; 5 generic clicks but only 2 returned cell-specific header-readiness clicks; no downstream CAI intent/lead receipt.
+- **Evidence:** 142 complete viewable impressions; training A=54 and readiness B=88; 5 generic clicks; 2 returned readiness-header cell clicks; no independently observed CAI intent/lead receipt.
 - **Bounded change:** stable browser-local 50/50 assignment across the existing sitewide header and contextual follow-up; no editorial selection, destination, schedule, pricing or authority change.
 - **Primary metric:** customer-only cell CTR plus independently observed CAI qualified intent.
 - **Guardrails:** editorial independence; known internal validation excluded; completeness/thresholding metadata preserved; unmatched generic clicks never assigned to a variant; no conversion/revenue claim without CAI-side evidence.
 - **Scoring start:** `2026-09-12T20:22:23Z`.
-- **Review/stop:** minimum 14 days, 100 viewable impressions per variant, >=5 clicks, >=25% relative CTR lift and >=1 independently observed CAI intent event/lead; stop for broken/misleading destination or material editorial/accessibility/performance regression.
-- **Decision today:** continue; **no winner**. Do not open a second experiment merely to increase volume.
+- **Review/stop:** minimum 14 days, 100 viewable impressions per variant, >=5 clicks, >=25% relative CTR lift and >=1 independently observed CAI intent event/lead; stop for a broken/misleading destination or material editorial/accessibility/performance regression.
+- **Decision today:** continue; **no winner**. A=54 and B=88 are still below the 100-per-variant gate, the 14-day minimum has not elapsed, and downstream qualified intent is not independently observed.
 
 ## Reliability
-1. **Secure-operations production-identity deadlock recovered.** PR #221 merged as `75623600...`, allowing only canonical reporting-only drift while retaining fail-closed behavior for any production-facing drift. Exact-merge Production reached READY and exact-current verified operations succeeded.
-2. **Daily-cycle preservation remains healthy.** The September 21 publisher advanced current state to the new date while retaining prior history; no recurrence of the September 9/14 corruption class was observed.
-3. **Canonical usage-ledger recovery remains open and bounded.** The ledger still ends on the September 15 Reliability Watch entry. Eleven evidence-backed September 16-18 records plus the September 21 Reliability Watch recovery remain preserved in issue #160, but this connector runtime still exposes only whole-file replacement and cannot safely pipe the fetched ~123 KB blob into the writer by reference. Do not reconstruct the file manually after the prior historical mutation. A checkout/patch-capable additive-only append remains the safe completion path.
+1. **Report-only rename edge case recovered.** PR #222 merged as `0e7243c741f566178f364b9a3f2cc1d715c4ba1e`. The secure-operations runner now rejects report-only drift entries carrying `previous_filename`, preventing a production-facing path renamed into an allowlisted report path from being misclassified. Four regression scenarios passed; exact-merge Production is READY and the post-merge verified-operations run succeeded. No evidence indicates the edge case occurred in an actual prior run.
+2. **Daily-cycle preservation remains healthy.** September 22 advanced current state while retaining 44 prior history entries; no recurrence of the September 9/14 corruption class was observed.
+3. **Canonical usage-ledger recovery remains open and bounded.** `automation/cuai-usage-ledger.json` still ends on the September 15 Reliability Watch entry. Later evidence-backed workload records, including today's Reliability Watch recovery and this CEO run, require a strictly additive history-preserving append. This connector exposes complete-file replacement rather than a narrow patch writer; after a prior reconstruction mutated historical data, no unsafe whole-file rewrite is permitted.
 
 ## Revenue
-- G4 sponsorship package and internal opportunity pipeline remain current; no verified paid CUAI sponsorship/revenue event was retrieved this run.
-- No outreach, pricing commitment, contract, spend or sponsor contact was authorized or performed.
-- CAI operational checkout availability is not CUAI revenue and is not conversion evidence.
+- Founding AI Intelligence Partner package: internally ready as a package hypothesis; numeric pricing remains TBD pending better cost/allocation evidence and Tom approval.
+- Research-qualified internal pipeline: Kobalt Labs, Scienaptic AI, Rippleshot, Velera, Narmi, Delfi, Posh and Zest AI. This is category-fit research, not sponsor interest or revenue probability.
+- No external commercial action or spend occurred.
 
 ## CAI growth
 - CUAI source analytics property: **520110560**. CAI destination analytics property: **538586591**.
-- Source-side banner measurement: **121 complete viewable impressions; A=40, B=81; 5 generic clicks; 2 returned cell-specific readiness clicks**.
-- Known internal validation traffic remains excluded from customer conclusions. Current authenticated CUAI reporting reports no thresholding/sampling/other-row loss for the source-side event table.
-- CAI destination property evidence was **not retrieved** this run. Therefore qualified CAI sessions, intent, leads, purchases and revenue are **unavailable, not zero**.
-- Current priority remains proving end-to-end CUAI→CAI attribution without increasing house-promotion volume or changing editorial selection.
+- Source-side banner measurement: **142 complete viewable impressions; A=54, B=88; 5 generic clicks; 2 returned readiness-header cell clicks**.
+- Current authenticated source reports preserve `subjectToThresholding=false`, `dataLossFromOtherRow=false` and no sampling metadata; known internal validation remains excluded from customer conclusions.
+- CAI destination property evidence was **not retrieved**. Qualified CAI sessions, intent, leads, purchases and revenue therefore remain **unavailable, not zero**.
+- The September 16 G5 attribution-integrity assignment is completed: the generic/cell click gap is explained by mixed pre-cell/internal-validation history rather than evidence of current dropped cell events. Variant scoring remains cell-specific after the persisted start timestamp.
 
 ## Process evolution
-1. **PR #221 closed a repeated system-design failure rather than repeating the patch.** Secure operations now tolerates only reporting-only main/Production drift and fails closed for production-facing drift.
-2. **Attribution quality is now materially cleaner.** Current seven-day LinkedIn post rows match both immutable queue id and landing page, so they can be used as fully attributable observations; historical conflicts remain quality-labeled rather than discarded wholesale.
-3. **No second growth experiment opened.** Current G1 volume/depth is ahead of pace and the active CAI experiment still has an unresolved downstream-measurement constraint; additional experimentation would add noise rather than address the highest-value constraint.
+1. **PR #222 closes a concrete authentication/identity edge case before it becomes an incident class.** Rollback is a revert of the two-file reliability patch; no publishing/social/editorial state changed.
+2. **G1 crossed the September raw user-growth threshold without changing cadence or editorial standards.** The next optimization constraint is qualified acquisition/engagement, not higher article or LinkedIn volume.
+3. **Coverage continues to broaden by function through durable decision assets.** Today's branch-planning framework closes the prior operations/workforce gap; the next bounded gap shifts to complaint-analysis/root-cause/member-remediation controls.
 
 ## Delegated work
-- **Publisher:** 12 candidates / 12 beats / 1 High News article / 1 selective company-page reservation; live/Production handoff complete.
-- **Reliability Watch:** recovered the secure-operations identity deadlock through PR #221; usage-ledger backlog remains its existing bounded recovery lane, with no duplicate recovery assignment opened.
-- **CUAI Operating System:** September 21 Alert/homepage-freshness cycle remains due later under its existing cadence; no early duplicate cycle was initiated.
+- **Publisher:** 12 candidates / 12 beats / 1 Library Insight / 1 selective company-page reservation; live Production handoff complete.
+- **Reliability Watch:** PR #222 merged after a 2-file change, 4 regression scenarios, Preview/code-review validation and exact Production revalidation; 0 social attempts or sent-state reconciliations.
+- **CUAI Operating System:** September 21 cycle completed with no new Alert and correct evergreen homepage fallback. September 22's separate Alert/homepage-freshness cycle remains due later under its existing cadence and must not be duplicated here.
 - **Specialist subagents:** 0.
 
 ## Output SLA
-**Monday trajectory: on track.** September 21 has one qualified article outcome and an explicit LinkedIn decision. The separate bounded Alert/homepage-freshness cycle remains due later under its existing cadence and must not manufacture an Alert. G5 conversion measurement remains active and G4 commercial assets remain current. No quality, sourcing, social, legal, approval or production gate was lowered.
+**Tuesday trajectory: on track.** Monday and Tuesday each have a qualified article outcome and explicit LinkedIn decision. Monday's bounded Alert/homepage-freshness cycle completed with no new Alert and correct evergreen fallback; Tuesday's separate cycle remains due later under its existing cadence. G5 conversion work is active, and G4 package/pipeline state remains current. No quality, sourcing, social, legal, approval or production gate was lowered.
 
 ## Usage
-**Operational-proxy only.** No token, credit, Pro-plan percentage or cost estimate is inferred. Observable September 21 CEO workload includes the current repository/policy review, 30 recent commits reviewed, exact Production/live/runtime checks, one direct GA4 probe, one authenticated exact-current GA4/Buffer/Search Console receipt bundle, one active-experiment review and one management-report refresh. The canonical usage-ledger append for this run is **pending-safe-append** because the runtime still lacks a history-safe append/patch writer for the complete large ledger; this run's exact workload evidence is preserved in the management report and should be appended by the existing Reliability Watch recovery lane without rewriting history.
+**Operational-proxy only.** No token, credit, Pro-plan percentage or cost estimate is inferred. Observable September 22 CEO workload includes authoritative policy/state review, 30 recent commits, exact Production/live/runtime checks, one direct GA4 probe, one exact-current authenticated GA4/Buffer/Search Console receipt bundle, active-experiment review, agent-bus/reliability review and one management-report refresh. The canonical ledger append for this run is **pending-safe-append** under the existing Reliability Watch lane because a narrow history-safe append writer is unavailable in this connector runtime. This run's exact workload evidence is preserved here and must not be added through a lossy reconstruction.
 
-## Pineview signals — dated 2026-09-21
-- **Audience:** rolling-28-day active users are **232 (+44.1% vs 161 baseline)** and only 10 short of the September target; seven-day engagement is **42.47%** with **9 90%-scrolled users**, while LinkedIn remains underexposed at **33 impressions / 20 reach**.
-- **Product:** CUAI-side CAI measurement has advanced to **121 exactly reconciled viewable impressions**, but the experiment remains below its decision gate and downstream CAI demand is unverified.
-- **Reusable asset:** today's Sharetec resilience report creates an evidence-based vendor-failover/continuity reference for core-provider concentration risk. The next identified reusable gap remains AI-assisted branch-network planning, service-demand forecasting and staffing controls. These are editorial/reusable signals, not proprietary-asset claims absent provenance, rights and repeatable value.
+## Pineview signals — dated 2026-09-22
+- **Audience:** rolling-28-day active users reached **250**, +55.3% from the 161 baseline and 8 above the 242 September threshold. Seven-day deep-scroll pace is stronger than the 28-day weekly pace, but engagement rate is lower at 30.95% versus 35.56%; LinkedIn remains small at **34 impressions / 20 reach -> 4 clean UTM sessions / 0 engaged**.
+- **Product:** CUAI-side CAI exposure advanced to **142 fully reconciled viewable impressions**, A=54/B=88, while downstream CAI demand remains unverified. No winner or conversion claim is supported.
+- **Reusable asset:** today's branch-planning control framework creates a durable operations/workforce decision resource. The next identified reusable gap is complaint analysis, root-cause detection and member-remediation controls. These are reusable editorial signals, not proprietary-asset claims absent provenance, rights, quality and repeatable value.
 
 ## Data sources retrieved this run
-- GitHub `main`, publisher policy, goals, output cadence, analytics measurement/rules, growth strategy, daily-cycle state, social queue, improvement ledger, reporting contract, active CAI experiment, recent commits and issue #160 handoffs — **retrieved**.
-- Vercel latest READY Production / exact commit / live September 21 article — **retrieved; healthy**.
+- GitHub `main`, newsroom/publisher/operating policies, goals, output cadence, analytics measurement/rules, growth strategy, coverage/source-health ledgers, daily-cycle state, social queue, improvement ledger, reporting contract, active CAI experiment, G4 package/pipeline, recent commits and issue #160 handoffs — **retrieved**.
+- Vercel latest READY Production / exact commit / live September 22 article — **retrieved; healthy**.
 - Vercel 24-hour runtime errors — **retrieved; none**.
-- Direct public GA4 endpoint on exact Production `75623600...` — **HTTP 401 `unauthorized` because trusted secure-workflow identity is required; not zero traffic**.
-- Exact-current authenticated GA4 through `CUAI verified operations` run #79 — **retrieved; HTTP 200 / `ok=true` / `source=google-analytics-data-api` / property 520110560**.
+- Direct GA4 request on exact Production `0e7243c...` — **HTTP 401 `unauthorized` because trusted secure-workflow identity is required; not zero traffic**.
+- Exact-current authenticated GA4 through `CUAI verified operations` run `35725546782` — **retrieved; HTTP 200 / `ok=true` / `source=google-analytics-data-api` / property 520110560**.
 - Buffer company-page metrics from the same exact-current authenticated receipt — **retrieved; HTTP 200**.
 - Direct Search Console from the same exact-current authenticated receipt — **retrieved; HTTP 200**.
 - GA4-embedded Search Console — **unavailable because the requested Google organic-search fields are incompatible; direct Search Console fallback used**.
 - CAI destination GA4 property **538586591** — **not retrieved**; downstream demand remains unavailable, not zero.
-- Canonical usage-ledger append — **blocked** by absence of a history-safe append/patch writer in this connector runtime; no unsafe reconstruction attempted.
+- Canonical usage-ledger append — **blocked** by absence of a narrow history-safe append/patch writer in this connector runtime; no unsafe reconstruction attempted.
 
 ## Tom decision required
 None.
