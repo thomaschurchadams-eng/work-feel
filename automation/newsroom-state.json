@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-21T07:00:00-04:00",
+  "lastStandardRun": "2026-09-22T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
-    "url": "https://creditunionainews.com/news/sharetec-core-outage-credit-union-failover.html",
-    "publishedAt": "2026-09-21T07:00:00-04:00",
-    "route": "news"
+    "title": "Seven Controls for AI-Assisted Branch Planning at Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-branch-demand-staffing-controls.html",
+    "publishedAt": "2026-09-22T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-22",
+      "headline": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
+      "reason": "a material agentic-commerce warning from major banks, but it does not establish a credit-union-specific operating event, rule or implementation result"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "Aikido Launches a Locally Run Cybersecurity AI Model",
+      "reason": "a current cybersecurity product launch without a named U.S. financial-institution deployment or validated credit-union operating result"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "Priority Technology Agrees to a CEO-Led Take-Private Deal",
+      "reason": "a material payments-company transaction without a substantive new AI, automation or credit-union operating implication"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "ECB Opens Pontes Blockchain Settlement Link",
+      "reason": "a material European wholesale-settlement development without a direct U.S. credit-union implementation decision"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "Fed and Bank of England Probe Banks’ Trading-Firm Exposure",
+      "reason": "current risk oversight tied to an AI-focused fund loss, but it does not create a credit-union operating requirement or transferable implementation case"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "Investors Hedge Across the U.S.-China AI Divide",
+      "reason": "important market context with no direct credit-union technology decision or member-service consequence"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "Meta’s Consumer AI Agent Drives a Market Rally",
+      "reason": "a consumer-platform and market development without a credit-union deployment, control change or validated outcome"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "Kremlin-Linked Forgery Network Moved Funds Through Global Banks",
+      "reason": "material financial-crime reporting, but the disclosed event does not provide a sufficiently specific new AI or credit-union technology operating angle"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "NIST Seeks Comment on AI-Assisted Cybersecurity Reporting",
+      "reason": "useful draft guidance, but it remains a general reporting aid rather than a new credit-union operating event"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "FMSI Promotes an Operations and Technology Conference",
+      "reason": "event promotion rather than completed implementation, authoritative guidance or independently validated operating evidence"
+    },
+    {
+      "date": "2026-09-22",
+      "headline": "CSBS AI Supervisory Framework Remains a State-Banking Benchmark",
+      "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current implementation clears the News threshold"
+    },
     {
       "date": "2026-09-21",
       "headline": "USAA Resolves a One-Hour Mobile-App Authentication Outage",
@@ -2225,6 +2280,11 @@
     {
       "functionalArea": "operations-branch-network",
       "opportunity": "AI-assisted branch network planning, service-demand forecasting and staffing controls",
+      "priority": "completed-2026-09-22"
+    },
+    {
+      "functionalArea": "member-service-complaints",
+      "opportunity": "AI-assisted complaint analysis, root-cause detection and member-remediation controls",
       "priority": "next"
     }
   ]

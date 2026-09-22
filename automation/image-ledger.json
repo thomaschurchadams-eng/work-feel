@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-branch-demand-staffing-controls",
+      "articleUrl": "/insight-credit-union-ai-branch-demand-staffing-controls.html",
+      "imagePath": "/assets/credit-union-ai-branch-demand-staffing-controls.jpg",
+      "publishedAt": "2026-09-22T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-architectural-3d",
+      "subject": "branch-network-demand-and-human-review",
+      "composition": "wide-channel-to-network-flow",
+      "perspective": "elevated-oblique",
+      "palette": "ivory-charcoal-plum-terracotta-brass",
+      "lighting": "soft-directional-studio",
+      "texture": "paper-frosted-acrylic-brass-and-matte-stone",
+      "scene": "member-service-channels-flow-through-a-demand-forecast-and-human-review-gate-toward-three-branch-locations-and-an-evidence-archive",
+      "conceptScore": 92.4,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "branch-service-operations",
+          "score": 81.4
+        },
+        {
+          "medium": "paper-cut-diagram",
+          "subject": "demand-and-staffing-controls",
+          "score": 79.8
+        }
+      ]
+    },
+    {
       "id": "sharetec-core-outage-credit-union-failover",
       "articleUrl": "/news/sharetec-core-outage-credit-union-failover.html",
       "imagePath": "/assets/sharetec-core-outage-credit-union-failover.jpg",

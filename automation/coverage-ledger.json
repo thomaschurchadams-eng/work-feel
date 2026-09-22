@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-branch-demand-staffing-controls",
+      "title": "Seven Controls for AI-Assisted Branch Planning at Credit Unions",
+      "url": "/insight-credit-union-ai-branch-demand-staffing-controls.html",
+      "publishedAt": "2026-09-22T07:00:00-04:00",
+      "section": "insights",
+      "beat": "branch-network-demand-staffing-ai-controls",
+      "functions": [
+        "operations",
+        "member-service",
+        "hr-workforce",
+        "board-strategy",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "governance-risk",
+        "agents-automation"
+      ],
+      "format": "control-framework",
+      "audience": "functional-leader",
+      "primaryAudience": "Operations, retail delivery and workforce-planning leaders",
+      "secondaryAudiences": [
+        "branch and regional leaders",
+        "member-service leaders",
+        "human-resources leaders",
+        "technology and data teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-employee-coaching-scorecard.html",
+        "/news/sharetec-core-outage-credit-union-failover.html"
+      ],
+      "sourceTier": 1,
+      "score": 85.2
+    },
+    {
       "id": "sharetec-core-outage-credit-union-failover",
       "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
       "url": "/news/sharetec-core-outage-credit-union-failover.html",

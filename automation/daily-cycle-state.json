@@ -6,89 +6,172 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-21",
+    "date": "2026-09-22",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "credit-union-core-operations",
-      "financial-app-availability",
-      "ai-cybersecurity-testing",
-      "large-bank-generative-ai",
-      "enterprise-ai-cost-controls",
+      "agentic-commerce-and-payments",
+      "cybersecurity-ai-tools",
+      "payments-company-strategy",
       "blockchain-settlement-infrastructure",
-      "agentic-commerce",
-      "international-ai-policy",
-      "ai-incident-coordination",
-      "state-ai-governance",
+      "market-and-counterparty-risk",
+      "ai-investment-and-geopolitics",
+      "consumer-ai-platforms",
+      "financial-crime-and-aml",
       "cybersecurity-ai-reporting",
-      "credit-union-digital-banking"
+      "credit-union-operations-events",
+      "state-supervision-ai",
+      "branch-network-and-workforce-planning"
     ],
     "publications": [
       {
         "type": "article",
-        "classification": "News",
-        "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
-        "url": "https://creditunionainews.com/news/sharetec-core-outage-credit-union-failover.html",
-        "primaryFunctionalAudience": "Technology, operations, business-continuity and vendor-management leaders",
-        "promotionPriority": "High",
-        "socialDecision": "queued-2026-09-21-12:30-et"
+        "classification": "Insights",
+        "title": "Seven Controls for AI-Assisted Branch Planning at Credit Unions",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-branch-demand-staffing-controls.html",
+        "primaryFunctionalAudience": "Operations, retail delivery and workforce-planning leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "USAA Resolves a One-Hour Mobile-App Authentication Outage",
-        "reason": "a current availability event, but shorter in duration and less directly relevant to credit-union core-provider concentration than the selected Sharetec disruption"
+        "title": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
+        "reason": "a material agentic-commerce warning from major banks, but it does not establish a credit-union-specific operating event, rule or implementation result"
       },
       {
-        "title": "Gemini Breaches Three Companies During Authorized Security Testing",
-        "reason": "material AI-security research, but it does not establish a credit-union-specific operating event or financial-sector control change"
+        "title": "Aikido Launches a Locally Run Cybersecurity AI Model",
+        "reason": "a current cybersecurity product launch without a named U.S. financial-institution deployment or validated credit-union operating result"
       },
       {
-        "title": "Société Générale Expands Its Anthropic Partnership",
-        "reason": "a useful large-bank AI benchmark without a U.S. credit-union implementation, independent operating result or new control requirement"
+        "title": "Priority Technology Agrees to a CEO-Led Take-Private Deal",
+        "reason": "a material payments-company transaction without a substantive new AI, automation or credit-union operating implication"
       },
       {
-        "title": "JPMorgan Adds Claude Spending Limits and a Segmented Development Environment",
-        "reason": "useful cost and security controls, but the institution-specific program does not establish a new credit-union requirement or validated member outcome"
+        "title": "ECB Opens Pontes Blockchain Settlement Link",
+        "reason": "a material European wholesale-settlement development without a direct U.S. credit-union implementation decision"
       },
       {
-        "title": "ECB Launches Pontes for Central-Bank-Money Blockchain Settlement",
-        "reason": "a material European payments-infrastructure development without a direct U.S. credit-union implementation decision"
+        "title": "Fed and Bank of England Probe Banks’ Trading-Firm Exposure",
+        "reason": "current risk oversight tied to an AI-focused fund loss, but it does not create a credit-union operating requirement or transferable implementation case"
       },
       {
-        "title": "Mastercard and Alchemy Advance Agentic Shopping",
-        "reason": "an ecosystem announcement without a named credit-union implementation, new operating requirement or independently validated member result"
+        "title": "Investors Hedge Across the U.S.-China AI Divide",
+        "reason": "important market context with no direct credit-union technology decision or member-service consequence"
       },
       {
-        "title": "Spain Calls for Stronger AI Rules and Rejects Self-Regulation",
-        "reason": "current international policy positioning with indirect applicability and no immediate U.S. credit-union operating requirement"
+        "title": "Meta’s Consumer AI Agent Drives a Market Rally",
+        "reason": "a consumer-platform and market development without a credit-union deployment, control change or validated outcome"
       },
       {
-        "title": "United States and China Discuss an AI Incident-Notification Mechanism",
-        "reason": "a national-security coordination proposal without a direct financial-services or credit-union operating event"
+        "title": "Kremlin-Linked Forgery Network Moved Funds Through Global Banks",
+        "reason": "material financial-crime reporting, but the disclosed event does not provide a sufficiently specific new AI or credit-union technology operating angle"
       },
       {
-        "title": "California Accelerates Work on AI Emergency Controls",
-        "reason": "a state policy development whose detailed recommendations are not yet final and that creates no immediate credit-union implementation duty"
+        "title": "NIST Seeks Comment on AI-Assisted Cybersecurity Reporting",
+        "reason": "useful draft guidance, but it remains a general reporting aid rather than a new credit-union operating event"
       },
       {
-        "title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
-        "reason": "useful draft guidance, but it remains a general reporting aid rather than a time-sensitive credit-union operating change"
+        "title": "FMSI Promotes an Operations and Technology Conference",
+        "reason": "event promotion rather than completed implementation, authoritative guidance or independently validated operating evidence"
       },
       {
-        "title": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
-        "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI, resilience or decisioning result"
+        "title": "CSBS AI Supervisory Framework Remains a State-Banking Benchmark",
+        "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current implementation clears the News threshold"
       }
     ],
-    "status": "article-live-social-queued",
+    "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted branch network planning, service-demand forecasting and staffing controls",
-    "updatedAt": "2026-09-21T07:00:00-04:00"
+    "nextCoverageGap": "AI-assisted complaint analysis, root-cause detection and member-remediation controls",
+    "updatedAt": "2026-09-22T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-21",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "credit-union-core-operations",
+        "financial-app-availability",
+        "ai-cybersecurity-testing",
+        "large-bank-generative-ai",
+        "enterprise-ai-cost-controls",
+        "blockchain-settlement-infrastructure",
+        "agentic-commerce",
+        "international-ai-policy",
+        "ai-incident-coordination",
+        "state-ai-governance",
+        "cybersecurity-ai-reporting",
+        "credit-union-digital-banking"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
+          "url": "https://creditunionainews.com/news/sharetec-core-outage-credit-union-failover.html",
+          "primaryFunctionalAudience": "Technology, operations, business-continuity and vendor-management leaders",
+          "promotionPriority": "High",
+          "socialDecision": "queued-2026-09-21-12:30-et"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "USAA Resolves a One-Hour Mobile-App Authentication Outage",
+          "reason": "a current availability event, but shorter in duration and less directly relevant to credit-union core-provider concentration than the selected Sharetec disruption"
+        },
+        {
+          "title": "Gemini Breaches Three Companies During Authorized Security Testing",
+          "reason": "material AI-security research, but it does not establish a credit-union-specific operating event or financial-sector control change"
+        },
+        {
+          "title": "Société Générale Expands Its Anthropic Partnership",
+          "reason": "a useful large-bank AI benchmark without a U.S. credit-union implementation, independent operating result or new control requirement"
+        },
+        {
+          "title": "JPMorgan Adds Claude Spending Limits and a Segmented Development Environment",
+          "reason": "useful cost and security controls, but the institution-specific program does not establish a new credit-union requirement or validated member outcome"
+        },
+        {
+          "title": "ECB Launches Pontes for Central-Bank-Money Blockchain Settlement",
+          "reason": "a material European payments-infrastructure development without a direct U.S. credit-union implementation decision"
+        },
+        {
+          "title": "Mastercard and Alchemy Advance Agentic Shopping",
+          "reason": "an ecosystem announcement without a named credit-union implementation, new operating requirement or independently validated member result"
+        },
+        {
+          "title": "Spain Calls for Stronger AI Rules and Rejects Self-Regulation",
+          "reason": "current international policy positioning with indirect applicability and no immediate U.S. credit-union operating requirement"
+        },
+        {
+          "title": "United States and China Discuss an AI Incident-Notification Mechanism",
+          "reason": "a national-security coordination proposal without a direct financial-services or credit-union operating event"
+        },
+        {
+          "title": "California Accelerates Work on AI Emergency Controls",
+          "reason": "a state policy development whose detailed recommendations are not yet final and that creates no immediate credit-union implementation duty"
+        },
+        {
+          "title": "NIST Seeks Comment on Using AI for Cybersecurity Framework Reporting",
+          "reason": "useful draft guidance, but it remains a general reporting aid rather than a time-sensitive credit-union operating change"
+        },
+        {
+          "title": "Self-Help Federal Credit Union Upgrades Its Digital Experience",
+          "reason": "a real credit-union rollout, but the disclosed website, login and mobile changes are routine digital upgrades without a material AI, resilience or decisioning result"
+        }
+      ],
+      "status": "article-live-social-queued",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted branch network planning, service-demand forecasting and staffing controls",
+      "updatedAt": "2026-09-21T07:00:00-04:00"
+    },
     {
       "date": "2026-09-18",
       "fullArticleCount": 1,
