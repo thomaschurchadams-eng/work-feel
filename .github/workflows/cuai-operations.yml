@@ -3,6 +3,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Post-slot reconciliation sweep. 17:45 UTC is after the latest approved
+    # 12:30 p.m. ET company-page slot year-round, including DST transitions.
+    - cron: '45 17 * * 1-5'
 permissions:
   contents: read
 concurrency:
@@ -13,7 +17,7 @@ jobs:
     if: >-
       github.repository == 'thomaschurchadams-eng/work-feel' &&
       github.ref == 'refs/heads/main' &&
-      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
     runs-on: ubuntu-latest
     timeout-minutes: 8
     permissions:
