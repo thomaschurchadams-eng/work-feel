@@ -11,11 +11,20 @@
       "format": "operational-takeaway",
       "copy": "SoFi has moved more than $25 billion in annualized card volume onto settlement using its bank-issued stablecoin. The operating takeaway for credit unions: separate member authorization from settlement, define redemption and liquidity paths, reconcile every network and ledger state, and test the fallback before treating stablecoin rails as treasury infrastructure. https://creditunionainews.com/news/sofi-stablecoin-card-settlement.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-sofi-stablecoin-card-settlement-2026-09-23",
       "scheduledFor": "2026-09-23T11:30:00-04:00",
-      "status": "queued",
+      "status": "scheduled",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-09-23T07:18:00-04:00",
       "imageUrl": "https://creditunionainews.com/assets/sofi-stablecoin-card-settlement.jpg",
-      "imageAlt": "An unbranded payment card sends transaction flows across a transparent settlement bridge through a control gate into reserve and reconciliation ledgers"
+      "imageAlt": "An unbranded payment card sends transaction flows across a transparent settlement bridge through a control gate into reserve and reconciliation ledgers",
+      "postId": "6ab3b61a869f311f6395826b",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "channelName": "CreditUnionAI News",
+      "scheduledAt": "2026-09-23T11:20:58.742Z",
+      "bufferDueAt": "2026-09-23T15:30:00.000Z",
+      "lastAttemptAt": "2026-09-23T11:20:58.742Z",
+      "lastResult": "verified secure workflow receipt",
+      "duplicate": false,
+      "imageAttached": true
     },
     {
       "id": "linkedin-credit-union-ai-branch-demand-staffing-controls-2026-09-22",
