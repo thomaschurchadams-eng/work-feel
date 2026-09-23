@@ -6,89 +6,172 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-22",
+    "date": "2026-09-23",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
+      "stablecoin-card-settlement",
+      "cybersecurity-ai-services",
+      "ai-enabled-cybercrime",
+      "digital-asset-market-structure",
       "agentic-commerce-and-payments",
-      "cybersecurity-ai-tools",
-      "payments-company-strategy",
-      "blockchain-settlement-infrastructure",
-      "market-and-counterparty-risk",
-      "ai-investment-and-geopolitics",
-      "consumer-ai-platforms",
-      "financial-crime-and-aml",
-      "cybersecurity-ai-reporting",
-      "credit-union-operations-events",
-      "state-supervision-ai",
-      "branch-network-and-workforce-planning"
+      "foundation-models",
+      "credit-union-regulation-and-litigation",
+      "credit-union-collections-technology",
+      "financial-services-ai-research",
+      "credit-union-digital-assets",
+      "blockchain-supervision",
+      "complaint-analysis-and-remediation"
     ],
     "publications": [
       {
         "type": "article",
-        "classification": "Insights",
-        "title": "Seven Controls for AI-Assisted Branch Planning at Credit Unions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-branch-demand-staffing-controls.html",
-        "primaryFunctionalAudience": "Operations, retail delivery and workforce-planning leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "queued-2026-09-22-11:30-et"
+        "classification": "News",
+        "title": "SoFi Puts Card Settlement on Its Bank-Issued Stablecoin",
+        "url": "https://creditunionainews.com/news/sofi-stablecoin-card-settlement.html",
+        "primaryFunctionalAudience": "Payments, treasury, digital-assets and risk leaders",
+        "promotionPriority": "High",
+        "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
-        "reason": "a material agentic-commerce warning from major banks, but it does not establish a credit-union-specific operating event, rule or implementation result"
+        "title": "Palo Alto Networks Launches Continuous Frontier AI Defense",
+        "reason": "a current cybersecurity service launch using multiple frontier models, but it has no named credit-union implementation or independently validated financial-sector result"
       },
       {
-        "title": "Aikido Launches a Locally Run Cybersecurity AI Model",
-        "reason": "a current cybersecurity product launch without a named U.S. financial-institution deployment or validated credit-union operating result"
+        "title": "Microsoft Disrupts the EvilTokens AI-Powered Cybercrime Service",
+        "reason": "a material account-takeover threat and enforcement action, but the disclosed event does not establish a new credit-union operating requirement or implementation decision"
       },
       {
-        "title": "Priority Technology Agrees to a CEO-Led Take-Private Deal",
-        "reason": "a material payments-company transaction without a substantive new AI, automation or credit-union operating implication"
+        "title": "Binance Buys a $100 Million Stake in Circle",
+        "reason": "a significant digital-asset transaction without a direct credit-union settlement, custody or member-service implementation"
       },
       {
-        "title": "ECB Opens Pontes Blockchain Settlement Link",
-        "reason": "a material European wholesale-settlement development without a direct U.S. credit-union implementation decision"
+        "title": "Meta Rolls Out Muse Shopping Through Shopify and Twilio",
+        "reason": "a current agentic-commerce development without a credit-union deployment, card-control change or validated member outcome"
       },
       {
-        "title": "Fed and Bank of England Probe Banks’ Trading-Firm Exposure",
-        "reason": "current risk oversight tied to an AI-focused fund loss, but it does not create a credit-union operating requirement or transferable implementation case"
+        "title": "Anthropic Launches Claude Opus 5.5",
+        "reason": "a general foundation-model release without a named credit-union operating result or new financial-services control requirement"
       },
       {
-        "title": "Investors Hedge Across the U.S.-China AI Divide",
-        "reason": "important market context with no direct credit-union technology decision or member-service consequence"
+        "title": "Appeals Court Considers NCUA Board-Member Removal Protections",
+        "reason": "material credit-union governance litigation without a substantive AI, automation, payments or digital-operating change"
       },
       {
-        "title": "Meta’s Consumer AI Agent Drives a Market Rally",
-        "reason": "a consumer-platform and market development without a credit-union deployment, control change or validated outcome"
+        "title": "MessagePay Adds Predictive Analytics for Borrower Payments",
+        "reason": "a credit-union-relevant product launch from September 3, but older than the current News window and still lacks independent outcome evidence"
       },
       {
-        "title": "Kremlin-Linked Forgery Network Moved Funds Through Global Banks",
-        "reason": "material financial-crime reporting, but the disclosed event does not provide a sufficiently specific new AI or credit-union technology operating angle"
+        "title": "Cambridge Publishes a Global AI in Financial Services Report",
+        "reason": "useful sector research for later analysis, but it does not create a time-sensitive credit-union operating decision for this cycle"
       },
       {
-        "title": "NIST Seeks Comment on AI-Assisted Cybersecurity Reporting",
-        "reason": "useful draft guidance, but it remains a general reporting aid rather than a new credit-union operating event"
+        "title": "America's Credit Unions Maintains Its Stablecoin Policy Record",
+        "reason": "relevant policy background, but no new filing or decision in the current cycle clears the News threshold"
       },
       {
-        "title": "FMSI Promotes an Operations and Technology Conference",
-        "reason": "event promotion rather than completed implementation, authoritative guidance or independently validated operating evidence"
+        "title": "NCUA Financial Technology and Digital Assets Resource Remains Current",
+        "reason": "authoritative background last updated in June, not a new supervisory or implementation event"
       },
       {
-        "title": "CSBS AI Supervisory Framework Remains a State-Banking Benchmark",
-        "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current implementation clears the News threshold"
+        "title": "AI Complaint Analysis and Remediation Control Framework",
+        "reason": "the standing coverage gap remains suitable for a future Library Insight, but the current SoFi settlement event is materially more timely and decision-relevant"
       }
     ],
-    "status": "article-live-social-queued",
+    "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted complaint analysis, root-cause detection and member-remediation controls",
-    "updatedAt": "2026-09-22T07:15:00-04:00"
+    "updatedAt": "2026-09-23T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-22",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "agentic-commerce-and-payments",
+        "cybersecurity-ai-tools",
+        "payments-company-strategy",
+        "blockchain-settlement-infrastructure",
+        "market-and-counterparty-risk",
+        "ai-investment-and-geopolitics",
+        "consumer-ai-platforms",
+        "financial-crime-and-aml",
+        "cybersecurity-ai-reporting",
+        "credit-union-operations-events",
+        "state-supervision-ai",
+        "branch-network-and-workforce-planning"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "Seven Controls for AI-Assisted Branch Planning at Credit Unions",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-branch-demand-staffing-controls.html",
+          "primaryFunctionalAudience": "Operations, retail delivery and workforce-planning leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "queued-2026-09-22-11:30-et"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
+          "reason": "a material agentic-commerce warning from major banks, but it does not establish a credit-union-specific operating event, rule or implementation result"
+        },
+        {
+          "title": "Aikido Launches a Locally Run Cybersecurity AI Model",
+          "reason": "a current cybersecurity product launch without a named U.S. financial-institution deployment or validated credit-union operating result"
+        },
+        {
+          "title": "Priority Technology Agrees to a CEO-Led Take-Private Deal",
+          "reason": "a material payments-company transaction without a substantive new AI, automation or credit-union operating implication"
+        },
+        {
+          "title": "ECB Opens Pontes Blockchain Settlement Link",
+          "reason": "a material European wholesale-settlement development without a direct U.S. credit-union implementation decision"
+        },
+        {
+          "title": "Fed and Bank of England Probe Banks’ Trading-Firm Exposure",
+          "reason": "current risk oversight tied to an AI-focused fund loss, but it does not create a credit-union operating requirement or transferable implementation case"
+        },
+        {
+          "title": "Investors Hedge Across the U.S.-China AI Divide",
+          "reason": "important market context with no direct credit-union technology decision or member-service consequence"
+        },
+        {
+          "title": "Meta’s Consumer AI Agent Drives a Market Rally",
+          "reason": "a consumer-platform and market development without a credit-union deployment, control change or validated outcome"
+        },
+        {
+          "title": "Kremlin-Linked Forgery Network Moved Funds Through Global Banks",
+          "reason": "material financial-crime reporting, but the disclosed event does not provide a sufficiently specific new AI or credit-union technology operating angle"
+        },
+        {
+          "title": "NIST Seeks Comment on AI-Assisted Cybersecurity Reporting",
+          "reason": "useful draft guidance, but it remains a general reporting aid rather than a new credit-union operating event"
+        },
+        {
+          "title": "FMSI Promotes an Operations and Technology Conference",
+          "reason": "event promotion rather than completed implementation, authoritative guidance or independently validated operating evidence"
+        },
+        {
+          "title": "CSBS AI Supervisory Framework Remains a State-Banking Benchmark",
+          "reason": "authoritative background for state banks and nonbanks, but no new credit-union requirement or current implementation clears the News threshold"
+        }
+      ],
+      "status": "article-live-social-queued",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted complaint analysis, root-cause detection and member-remediation controls",
+      "updatedAt": "2026-09-22T07:15:00-04:00"
+    },
     {
       "date": "2026-09-21",
       "fullArticleCount": 1,

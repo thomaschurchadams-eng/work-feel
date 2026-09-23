@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "sofi-stablecoin-card-settlement",
+      "articleUrl": "/news/sofi-stablecoin-card-settlement.html",
+      "imagePath": "/assets/sofi-stablecoin-card-settlement.jpg",
+      "publishedAt": "2026-09-23T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-architectural-3d",
+      "subject": "card-settlement-bridge-and-control-gate",
+      "composition": "left-to-right-card-to-reserve-flow",
+      "perspective": "elevated-oblique",
+      "palette": "navy-cobalt-teal-silver-amber",
+      "lighting": "controlled-technical-studio",
+      "texture": "brushed-metal-glass-and-luminous-data-rails",
+      "scene": "an-unbranded-payment-card-sends-transaction-flows-across-a-transparent-settlement-bridge-through-a-control-gate-into-reserve-and-reconciliation-ledgers",
+      "conceptScore": 92.6,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "card-treasury-operations",
+          "score": 80.8
+        },
+        {
+          "medium": "paper-cut-diagram",
+          "subject": "settlement-and-reconciliation",
+          "score": 78.9
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-branch-demand-staffing-controls",
       "articleUrl": "/insight-credit-union-ai-branch-demand-staffing-controls.html",
       "imagePath": "/assets/credit-union-ai-branch-demand-staffing-controls.jpg",

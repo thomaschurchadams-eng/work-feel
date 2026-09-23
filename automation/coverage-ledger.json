@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "sofi-stablecoin-card-settlement",
+      "title": "SoFi Puts Card Settlement on Its Bank-Issued Stablecoin",
+      "url": "/news/sofi-stablecoin-card-settlement.html",
+      "publishedAt": "2026-09-23T07:00:00-04:00",
+      "section": "news",
+      "beat": "stablecoin-card-settlement-infrastructure",
+      "functions": [
+        "payments",
+        "finance-treasury",
+        "risk-compliance",
+        "operations",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "payments-rails",
+        "blockchain-stablecoins",
+        "governance-risk"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, treasury, digital-assets and risk leaders",
+      "secondaryAudiences": [
+        "card operations leaders",
+        "finance and accounting teams",
+        "technology and resilience leaders",
+        "legal and compliance teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
+        "/news/treasury-stablecoin-rule-credit-union-shares.html"
+      ],
+      "sourceTier": 1,
+      "score": 89.1
+    },
+    {
       "id": "credit-union-ai-branch-demand-staffing-controls",
       "title": "Seven Controls for AI-Assisted Branch Planning at Credit Unions",
       "url": "/insight-credit-union-ai-branch-demand-staffing-controls.html",
