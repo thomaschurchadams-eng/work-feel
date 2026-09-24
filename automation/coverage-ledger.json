@@ -3,6 +3,46 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-complaint-analysis-controls",
+      "title": "Seven Controls for AI-Assisted Complaint Analysis at Credit Unions",
+      "url": "/insight-credit-union-ai-complaint-analysis-controls.html",
+      "publishedAt": "2026-09-24T07:00:00-04:00",
+      "section": "insights",
+      "beat": "complaint-analysis-root-cause-remediation-ai-controls",
+      "functions": [
+        "member-service",
+        "risk-compliance",
+        "operations",
+        "it-data-cybersecurity",
+        "legal"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "governance-risk",
+        "regtech-monitoring",
+        "agents-automation"
+      ],
+      "format": "control-framework",
+      "audience": "functional-leader",
+      "primaryAudience": "Member-service, complaints, compliance and operations leaders",
+      "secondaryAudiences": [
+        "contact-center leaders",
+        "legal and fair-lending teams",
+        "internal-audit teams",
+        "technology and data teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-library-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-contact-center-qa-controls.html",
+        "/insight-credit-union-ai-accessibility-test-plan.html"
+      ],
+      "sourceTier": 1,
+      "score": 85.6
+    },
+    {
       "id": "sofi-stablecoin-card-settlement",
       "title": "SoFi Puts Card Settlement on Its Bank-Issued Stablecoin",
       "url": "/news/sofi-stablecoin-card-settlement.html",

@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-23T07:00:00-04:00",
+  "lastStandardRun": "2026-09-24T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "SoFi Puts Card Settlement on Its Bank-Issued Stablecoin",
-    "url": "https://creditunionainews.com/news/sofi-stablecoin-card-settlement.html",
-    "publishedAt": "2026-09-23T07:00:00-04:00",
-    "route": "news"
+    "title": "Seven Controls for AI-Assisted Complaint Analysis at Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-complaint-analysis-controls.html",
+    "publishedAt": "2026-09-24T07:00:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-24",
+      "headline": "Family First Credit Union Executive Departure Follows an AI-Altered Social Post Controversy",
+      "reason": "a current AI-authenticity and executive-governance signal, but disclosed sources do not establish employment causality, a new credit-union operating requirement or a transferable implementation result"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "MVB Bank Uses AI to Tighten Fintech Partner Oversight",
+      "reason": "a useful bank implementation benchmark, but not a credit-union deployment and the vendor-described performance claims lack independent validation"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
+      "reason": "a material agentic-commerce warning already screened this week; it still does not create a new credit-union rule, implementation or operating event"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "SoFi Settles Card Payments on Its Bank-Issued Stablecoin",
+      "reason": "the material operating event was published by CreditUnionAI News on September 23 and has no new fact that warrants duplicate coverage"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "Sharetec Reports Continued Recovery After Its Core-Service Outage",
+      "reason": "the same underlying disruption was covered as a High article on September 21; recovery updates do not create a distinct technology decision today"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "NCUA Artificial Intelligence Resource Hub Remains Current",
+      "reason": "authoritative implementation background last updated April 28, but no new September 24 supervisory directive or credit-union requirement was identified"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "ECB Opens Pontes Blockchain Settlement Link",
+      "reason": "a material European wholesale-settlement development without a direct U.S. credit-union implementation decision"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "Mastercard Expands Agentic Shopping Infrastructure",
+      "reason": "a payments-ecosystem signal without a named credit-union deployment, new card-control requirement or independently validated member result"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "September Vendor-Management Guidance Emphasizes Performance Risk",
+      "reason": "useful vendor-authored operating advice, but not a completed implementation, official requirement or independently reported current event"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "CFPB Updates Its Consumer Complaint Process Page",
+      "reason": "the September 22 page modification is current source maintenance and does not disclose a new complaint rule or financial-institution operating requirement"
+    },
+    {
+      "date": "2026-09-24",
+      "headline": "CFPB Consumer Complaint Database Remains Available for Market Context",
+      "reason": "valuable external evidence with explicit representativeness limits, but not a new current event and not a substitute for credit-union case-level evidence"
+    },
     {
       "date": "2026-09-23",
       "headline": "Palo Alto Networks Launches Continuous Frontier AI Defense",
@@ -2340,6 +2395,11 @@
     {
       "functionalArea": "member-service-complaints",
       "opportunity": "AI-assisted complaint analysis, root-cause detection and member-remediation controls",
+      "priority": "completed-2026-09-24"
+    },
+    {
+      "functionalArea": "risk-compliance-policy-management",
+      "opportunity": "AI-assisted policy and procedure maintenance, regulatory-change mapping and evidence controls",
       "priority": "next"
     }
   ]

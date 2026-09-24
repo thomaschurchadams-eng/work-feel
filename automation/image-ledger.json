@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-complaint-analysis-controls",
+      "articleUrl": "/insight-credit-union-ai-complaint-analysis-controls.html",
+      "imagePath": "/assets/credit-union-ai-complaint-analysis-controls.jpg",
+      "publishedAt": "2026-09-24T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-isometric-illustration",
+      "subject": "complaint-analysis-human-review-and-remediation",
+      "composition": "left-to-right-evidence-to-human-decision-flow",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-cyan-teal-amber-white",
+      "lighting": "calm-technical-studio",
+      "texture": "frosted-glass-luminous-data-rails-and-matte-panels",
+      "scene": "member-complaint-records-pass-through-an-analytical-clustering-layer-to-a-human-review-gate-remediation-checklist-member-response-and-evidence-archive",
+      "conceptScore": 93.1,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "complaint-review-operations",
+          "score": 81.2
+        },
+        {
+          "medium": "paper-cut-diagram",
+          "subject": "case-routing-and-remediation",
+          "score": 79.7
+        }
+      ]
+    },
+    {
       "id": "sofi-stablecoin-card-settlement",
       "articleUrl": "/news/sofi-stablecoin-card-settlement.html",
       "imagePath": "/assets/sofi-stablecoin-card-settlement.jpg",
