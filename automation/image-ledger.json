@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-policy-maintenance-controls",
+      "articleUrl": "/insight-credit-union-ai-policy-maintenance-controls.html",
+      "imagePath": "/assets/credit-union-ai-policy-maintenance-controls.jpg",
+      "publishedAt": "2026-09-25T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-isometric-illustration",
+      "subject": "regulatory-change-mapping-and-human-approval",
+      "composition": "left-to-right-source-to-control-evidence-flow",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-teal-cream-coral-green",
+      "lighting": "crisp-controlled-technical-studio",
+      "texture": "frosted-glass-luminous-data-rails-and-paper-documents",
+      "scene": "authoritative-regulatory-sources-pass-through-an-ai-comparison-layer-and-human-approval-gate-into-policy-procedure-training-and-evidence-records",
+      "conceptScore": 93.4,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "policy-review-operations",
+          "score": 80.9
+        },
+        {
+          "medium": "paper-cut-diagram",
+          "subject": "regulatory-change-control",
+          "score": 79.5
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-complaint-analysis-controls",
       "articleUrl": "/insight-credit-union-ai-complaint-analysis-controls.html",
       "imagePath": "/assets/credit-union-ai-complaint-analysis-controls.jpg",

@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-24T07:00:00-04:00",
+  "lastStandardRun": "2026-09-25T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Seven Controls for AI-Assisted Complaint Analysis at Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-complaint-analysis-controls.html",
-    "publishedAt": "2026-09-24T07:00:00-04:00",
+    "title": "Seven Controls for AI-Assisted Policy Maintenance at Credit Unions",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-policy-maintenance-controls.html",
+    "publishedAt": "2026-09-25T07:00:00-04:00",
     "route": "insights"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-25",
+      "headline": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
+      "reason": "a material agentic-commerce warning already screened this week, without a new credit-union rule, implementation or operating event today"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "Palo Alto Networks Launches Continuous Frontier AI Defense",
+      "reason": "a current cybersecurity service launch without a named credit-union implementation or independently validated financial-sector result"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "SoFi Settles Card Payments on Its Bank-Issued Stablecoin",
+      "reason": "the underlying launch was published by CreditUnionAI News on September 23 and has no new fact that warrants duplicate coverage"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "Societe Generale Links AI to Its 2029 Efficiency Plan",
+      "reason": "a significant global-bank strategy signal with limited implementation detail and no direct U.S. credit-union operating event"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "Senate Prepares for Vote on Penny Bill",
+      "reason": "current credit-union policy activity without a substantive AI, automation or digital-operating change"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "America's Credit Unions Promotes a Gen Z Technology Strategy",
+      "reason": "useful trade-association commentary rather than a completed implementation, official requirement or independently reported current event"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "NCUA Artificial Intelligence Resource Hub Remains Current",
+      "reason": "authoritative implementation background last updated April 28, but no new September 25 supervisory directive or credit-union requirement was identified"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "NIST Seeks Comment on AI-Assisted Cybersecurity Framework Reporting",
+      "reason": "a useful public draft for later control analysis, but not a final requirement or a credit-union-specific operating event"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "FFIEC Industry Outreach Continues to Publish Supervisory Updates",
+      "reason": "an authoritative monitoring channel rather than a new rule, deployment or decision in the current cycle"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "Federal Register Current Issue Contains No Qualifying Credit-Union Technology Event",
+      "reason": "the authoritative daily issue was reviewed, but no new item cleared the publication threshold for this cycle"
+    },
+    {
+      "date": "2026-09-25",
+      "headline": "NCUA Rules and Guidance Sources Remain Available for Change Monitoring",
+      "reason": "essential primary-source infrastructure for the selected Library framework, not a standalone current News event"
+    },
     {
       "date": "2026-09-24",
       "headline": "Family First Credit Union Executive Departure Follows an AI-Altered Social Post Controversy",
@@ -2400,6 +2455,11 @@
     {
       "functionalArea": "risk-compliance-policy-management",
       "opportunity": "AI-assisted policy and procedure maintenance, regulatory-change mapping and evidence controls",
+      "priority": "completed-2026-09-25"
+    },
+    {
+      "functionalArea": "vendor-management-procurement",
+      "opportunity": "AI-assisted procurement, contract-obligation monitoring and renewal-decision controls",
       "priority": "next"
     }
   ]

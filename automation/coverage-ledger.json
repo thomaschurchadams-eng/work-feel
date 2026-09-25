@@ -3,6 +3,46 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-policy-maintenance-controls",
+      "title": "Seven Controls for AI-Assisted Policy Maintenance at Credit Unions",
+      "url": "/insight-credit-union-ai-policy-maintenance-controls.html",
+      "publishedAt": "2026-09-25T07:00:00-04:00",
+      "section": "insights",
+      "beat": "policy-maintenance-regulatory-change-ai-controls",
+      "functions": [
+        "risk-compliance",
+        "legal",
+        "operations",
+        "internal-audit-model-risk",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "regtech-monitoring",
+        "governance-risk",
+        "agents-automation",
+        "data-decisioning"
+      ],
+      "format": "control-framework",
+      "audience": "functional-leader",
+      "primaryAudience": "Compliance, legal, risk and operations leaders",
+      "secondaryAudiences": [
+        "internal-audit teams",
+        "policy and procedure owners",
+        "technology and data teams",
+        "vendor-management leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-library-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-inventory-change-control.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
+      "sourceTier": 1,
+      "score": 86.4
+    },
+    {
       "id": "credit-union-ai-complaint-analysis-controls",
       "title": "Seven Controls for AI-Assisted Complaint Analysis at Credit Unions",
       "url": "/insight-credit-union-ai-complaint-analysis-controls.html",
