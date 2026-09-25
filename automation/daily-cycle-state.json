@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-09-25",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -34,6 +34,11 @@
         "primaryFunctionalAudience": "Compliance, legal, risk and operations leaders",
         "promotionPriority": "Library",
         "socialDecision": "queued-2026-09-25-12:30-et"
+      },
+      {
+        "type": "alert",
+        "title": "Reuters Reports €95 Million AI Impersonation Fraud at Intesa Private-Banking Arm",
+        "url": "https://creditunionainews.com/alerts/#intesa-fideuram-ai-impersonation-transfer-fraud"
       }
     ],
     "rejections": [
@@ -82,11 +87,11 @@
         "reason": "essential primary-source infrastructure for the selected Library framework, not a standalone current News event"
       }
     ],
-    "status": "article-complete-pending-deployment",
+    "status": "article-and-alert-complete",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted procurement, contract-obligation monitoring and renewal-decision controls",
-    "updatedAt": "2026-09-25T07:00:00-04:00"
+    "updatedAt": "2026-09-25T15:21:37-04:00"
   },
   "history": [
     {
@@ -173,87 +178,87 @@
       "updatedAt": "2026-09-24T07:00:00-04:00"
     },
     {
-    "date": "2026-09-23",
-    "fullArticleCount": 1,
-    "alertCount": 0,
-    "evaluatedCandidateCount": 12,
-    "beatsSearchedCount": 12,
-    "beatsSearched": [
-      "stablecoin-card-settlement",
-      "cybersecurity-ai-services",
-      "ai-enabled-cybercrime",
-      "digital-asset-market-structure",
-      "agentic-commerce-and-payments",
-      "foundation-models",
-      "credit-union-regulation-and-litigation",
-      "credit-union-collections-technology",
-      "financial-services-ai-research",
-      "credit-union-digital-assets",
-      "blockchain-supervision",
-      "complaint-analysis-and-remediation"
-    ],
-    "publications": [
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "SoFi Puts Card Settlement on Its Bank-Issued Stablecoin",
-        "url": "https://creditunionainews.com/news/sofi-stablecoin-card-settlement.html",
-        "primaryFunctionalAudience": "Payments, treasury, digital-assets and risk leaders",
-        "promotionPriority": "High",
-        "socialDecision": "eligible-pending-live-verification"
-      }
-    ],
-    "rejections": [
-      {
-        "title": "Palo Alto Networks Launches Continuous Frontier AI Defense",
-        "reason": "a current cybersecurity service launch using multiple frontier models, but it has no named credit-union implementation or independently validated financial-sector result"
-      },
-      {
-        "title": "Microsoft Disrupts the EvilTokens AI-Powered Cybercrime Service",
-        "reason": "a material account-takeover threat and enforcement action, but the disclosed event does not establish a new credit-union operating requirement or implementation decision"
-      },
-      {
-        "title": "Binance Buys a $100 Million Stake in Circle",
-        "reason": "a significant digital-asset transaction without a direct credit-union settlement, custody or member-service implementation"
-      },
-      {
-        "title": "Meta Rolls Out Muse Shopping Through Shopify and Twilio",
-        "reason": "a current agentic-commerce development without a credit-union deployment, card-control change or validated member outcome"
-      },
-      {
-        "title": "Anthropic Launches Claude Opus 5.5",
-        "reason": "a general foundation-model release without a named credit-union operating result or new financial-services control requirement"
-      },
-      {
-        "title": "Appeals Court Considers NCUA Board-Member Removal Protections",
-        "reason": "material credit-union governance litigation without a substantive AI, automation, payments or digital-operating change"
-      },
-      {
-        "title": "MessagePay Adds Predictive Analytics for Borrower Payments",
-        "reason": "a credit-union-relevant product launch from September 3, but older than the current News window and still lacks independent outcome evidence"
-      },
-      {
-        "title": "Cambridge Publishes a Global AI in Financial Services Report",
-        "reason": "useful sector research for later analysis, but it does not create a time-sensitive credit-union operating decision for this cycle"
-      },
-      {
-        "title": "America's Credit Unions Maintains Its Stablecoin Policy Record",
-        "reason": "relevant policy background, but no new filing or decision in the current cycle clears the News threshold"
-      },
-      {
-        "title": "NCUA Financial Technology and Digital Assets Resource Remains Current",
-        "reason": "authoritative background last updated in June, not a new supervisory or implementation event"
-      },
-      {
-        "title": "AI Complaint Analysis and Remediation Control Framework",
-        "reason": "the standing coverage gap remains suitable for a future Library Insight, but the current SoFi settlement event is materially more timely and decision-relevant"
-      }
-    ],
-    "status": "article-complete-pending-deployment",
-    "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
-    "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted complaint analysis, root-cause detection and member-remediation controls",
-    "updatedAt": "2026-09-23T07:00:00-04:00"
+      "date": "2026-09-23",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "stablecoin-card-settlement",
+        "cybersecurity-ai-services",
+        "ai-enabled-cybercrime",
+        "digital-asset-market-structure",
+        "agentic-commerce-and-payments",
+        "foundation-models",
+        "credit-union-regulation-and-litigation",
+        "credit-union-collections-technology",
+        "financial-services-ai-research",
+        "credit-union-digital-assets",
+        "blockchain-supervision",
+        "complaint-analysis-and-remediation"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "SoFi Puts Card Settlement on Its Bank-Issued Stablecoin",
+          "url": "https://creditunionainews.com/news/sofi-stablecoin-card-settlement.html",
+          "primaryFunctionalAudience": "Payments, treasury, digital-assets and risk leaders",
+          "promotionPriority": "High",
+          "socialDecision": "eligible-pending-live-verification"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Palo Alto Networks Launches Continuous Frontier AI Defense",
+          "reason": "a current cybersecurity service launch using multiple frontier models, but it has no named credit-union implementation or independently validated financial-sector result"
+        },
+        {
+          "title": "Microsoft Disrupts the EvilTokens AI-Powered Cybercrime Service",
+          "reason": "a material account-takeover threat and enforcement action, but the disclosed event does not establish a new credit-union operating requirement or implementation decision"
+        },
+        {
+          "title": "Binance Buys a $100 Million Stake in Circle",
+          "reason": "a significant digital-asset transaction without a direct credit-union settlement, custody or member-service implementation"
+        },
+        {
+          "title": "Meta Rolls Out Muse Shopping Through Shopify and Twilio",
+          "reason": "a current agentic-commerce development without a credit-union deployment, card-control change or validated member outcome"
+        },
+        {
+          "title": "Anthropic Launches Claude Opus 5.5",
+          "reason": "a general foundation-model release without a named credit-union operating result or new financial-services control requirement"
+        },
+        {
+          "title": "Appeals Court Considers NCUA Board-Member Removal Protections",
+          "reason": "material credit-union governance litigation without a substantive AI, automation, payments or digital-operating change"
+        },
+        {
+          "title": "MessagePay Adds Predictive Analytics for Borrower Payments",
+          "reason": "a credit-union-relevant product launch from September 3, but older than the current News window and still lacks independent outcome evidence"
+        },
+        {
+          "title": "Cambridge Publishes a Global AI in Financial Services Report",
+          "reason": "useful sector research for later analysis, but it does not create a time-sensitive credit-union operating decision for this cycle"
+        },
+        {
+          "title": "America's Credit Unions Maintains Its Stablecoin Policy Record",
+          "reason": "relevant policy background, but no new filing or decision in the current cycle clears the News threshold"
+        },
+        {
+          "title": "NCUA Financial Technology and Digital Assets Resource Remains Current",
+          "reason": "authoritative background last updated in June, not a new supervisory or implementation event"
+        },
+        {
+          "title": "AI Complaint Analysis and Remediation Control Framework",
+          "reason": "the standing coverage gap remains suitable for a future Library Insight, but the current SoFi settlement event is materially more timely and decision-relevant"
+        }
+      ],
+      "status": "article-complete-pending-deployment",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted complaint analysis, root-cause detection and member-remediation controls",
+      "updatedAt": "2026-09-23T07:00:00-04:00"
     },
     {
       "date": "2026-09-22",
