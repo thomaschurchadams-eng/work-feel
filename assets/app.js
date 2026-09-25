@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'AI Fraud',
+      headline: 'Reuters Reports €95 Million AI Impersonation Fraud at Intesa Private-Banking Arm',
+      summary:
+        'Reuters reported on September 25 that fraudsters used WhatsApp and an AI-cloned voice to impersonate senior figures and induce Fideuram, Intesa Sanpaolo’s private-banking arm, to transfer €95 million to overseas accounts. Reuters said roughly €53 million was recovered and about €36 million remained missing; Intesa Sanpaolo and Fideuram declined to comment.',
+      impact:
+        'Credit unions should treat urgent payment instructions delivered through messaging or voice as untrusted until independently verified, require dual authorization and an out-of-band callback for exceptional or high-value transfers, and make rapid freeze, recall and escalation procedures part of treasury and fraud playbooks. This is a reported Italian-bank fraud case, not a U.S. credit-union incident.',
+      sourceName: 'Reuters',
+      sourceUrl:
+        'https://www.reuters.com/legal/government/ai-messaging-scam-costs-italys-top-bank-intesa-millions-sources-say-2026-09-25/',
+      date: 'Sep 25, 2026',
+      slug: 'intesa-fideuram-ai-impersonation-transfer-fraud'
+    },
+    {
       label: 'Third-Party Risk',
       headline: 'Regulators Propose New Third-Party Risk Guidance for Credit Unions',
       summary:
