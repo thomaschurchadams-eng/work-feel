@@ -110,3 +110,11 @@ Approved — article page only / Approved — put on News / Approved — put on 
 - Site type: static HTML/CSS/JS
 - Editorial publishing: validated article package → direct commit to `main` → Vercel Production Deployment
 - Infrastructure publishing: branch → pull request → merge to `main`
+
+## CUAI Weekly video release placement — September 28, 2026
+
+An approved video launch includes the current episode page, Episodes archive and a homepage feature above the long news feed. Replace the prior homepage feature rather than accumulating cards; preserve older episodes in the archive. Include a story-led headline, thumbnail, week-ending date, measured runtime and Watch CTA. No autoplay. Verify desktop/mobile discovery, destination, captions and sources before marking the release complete.
+
+Promotional copy leads with CUAI journalism, not voice-provider or preset names. Keep Sarah/ElevenLabs settings in internal production records. Retain plain AI-narration transparency in episode credits and applicable platform disclosures; preserve all required asset credits. Do not impersonate a human reporter.
+
+Use existing GA4 cuai_weekly_click (episode_id, placement, link_type) for homepage CTA clicks; no internal UTM tags, personal data or new services. Record comparable seven-day episode visits and platform retention when actually available, keeping internal checks separate and missing data unknown. Click instrumentation is not proof of analytics ingestion. The permanent Production Bible and weekly prompt remain in Pineview; this rule ensures website publishers preserve episode discovery. This does not grant future video publishing approval.
