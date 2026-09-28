@@ -25,7 +25,7 @@
   <meta name="twitter:description" content="AI news and alerts for credit unions, covering governance, fraud, and member experience.">
   <meta name="twitter:image" content="https://creditunionainews.com/assets/download.png">
   <link rel="stylesheet" href="assets/styles.css">
-</head>
+<style>.weekly-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:2rem;align-items:center}.weekly-grid img{display:block;width:100%;height:auto;border-radius:8px}.weekly-grid h2{font-size:clamp(1.7rem,3vw,2.6rem);line-height:1.15}.weekly-grid .btn-outline{color:#142536;border-color:#142536}.weekly-grid a:focus-visible{outline:3px solid #167b88;outline-offset:5px}@media(max-width:700px){.weekly-grid{grid-template-columns:1fr;gap:1rem}}</style></head>
 <body class="page-home">
         <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
@@ -59,6 +59,11 @@
         </div>
       </div>
     </section>
+
+<section class="section cuai-weekly-feature" aria-labelledby="weekly-heading">
+<div class="container"><p class="eyebrow">Watch CUAI Weekly</p><p>The week’s consequential credit-union developments—and why they matter—in under four minutes.</p>
+<div class="weekly-grid"><a data-weekly-link="thumbnail" href="/episodes/cuai-weekly-2026-09-28.html" aria-label="Watch CUAI Weekly: Membership growth hides a divide"><img src="/assets/cuai-weekly-2026-09-28.png" alt="CUAI Weekly: Membership growth hides a divide" width="1280" height="720" loading="lazy"></a>
+<div><p class="eyebrow">Week ending September 27, 2026 · 3 min 12 sec</p><h2 id="weekly-heading">Membership growth hides a divide</h2><p>New NCUA figures reveal uneven membership growth. Plus: AI workflow tools and a planned payments network.</p><div class="button-row"><a class="btn btn-primary" data-weekly-link="watch" href="/episodes/cuai-weekly-2026-09-28.html">Watch this week’s briefing</a><a class="btn btn-outline" href="/episodes.html">All episodes</a></div></div></div></div></section>
 
     <section class="latest-alert-section" aria-labelledby="latest-alert-heading">
       <div class="container">
@@ -212,22 +217,7 @@
     </section>
 
     <section class="growth-band"><div class="container"><div class="growth-band-shell"><div><p class="eyebrow">CreditUnionAI Weekly Briefing</p><h2>One useful briefing. Every Friday.</h2><p>The developments credit-union leaders need to understand, translated into practical operating implications.</p></div><div class="button-row"><a class="btn btn-primary" href="/newsletter.html">Get the weekly briefing</a></div></div></div></section>
-<section class="section">
-      <div class="container">
-          <div class="section-header">
-            <div>
-              <h2>Latest Episode</h2>
-              <p class="lead">A concise audio rundown on AI moves reshaping member service and back office efficiency.</p>
-            </div>
-            <a class="btn btn-primary" href="episodes.html">Browse episodes</a>
-          </div>
-          <div class="card">
-            <div class="meta"><span class="tag">Podcast</span></div>
-            <h3>Podcast Episode 2 — “Why Credit Unions Can’t Wait on AI”</h3><p class="podcast-summary">A concise discussion of where AI is already improving lending, fraud prevention, member service and operations—and what credit-union leaders should do next.</p>
-            <div class="button-row"><a class="btn btn-primary" href="/episodes.html">Listen to the episode</a></div>
-          </div>
-      </div>
-    </section>
+
 
   </main>
 
@@ -252,5 +242,7 @@
     </div>
   </footer>
   <script src="assets/app.js"></script>
-</body>
+<script>
+document.querySelectorAll('[data-weekly-link]').forEach(function(link){link.addEventListener('click',function(){if(typeof gtag==='function'){gtag('event','cuai_weekly_click',{episode_id:'2026-09-28',placement:'homepage',link_type:link.dataset.weeklyLink,transport_type:'beacon'});}});});
+</script></body>
 </html>
