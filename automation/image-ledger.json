@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-contract-monitoring-controls",
+      "articleUrl": "/insight-credit-union-ai-contract-monitoring-controls.html",
+      "imagePath": "/assets/credit-union-ai-contract-monitoring-controls.jpg",
+      "publishedAt": "2026-09-28T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-isometric-illustration",
+      "subject": "contract-obligation-monitoring-and-human-renewal-decision",
+      "composition": "left-to-right-contract-analysis-decision-and-evidence-flow",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-cyan-teal-white-amber",
+      "lighting": "confident-controlled-technical-studio",
+      "texture": "frosted-glass-luminous-data-rails-and-paper-contracts",
+      "scene": "vendor-agreements-pass-through-an-ai-obligation-mapping-layer-to-a-human-decision-gate-renewal-paths-and-an-evidence-archive",
+      "conceptScore": 93.6,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "contract-review-operations",
+          "score": 81.0
+        },
+        {
+          "medium": "paper-cut-diagram",
+          "subject": "vendor-obligation-and-renewal-controls",
+          "score": 79.8
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-policy-maintenance-controls",
       "articleUrl": "/insight-credit-union-ai-policy-maintenance-controls.html",
       "imagePath": "/assets/credit-union-ai-policy-maintenance-controls.jpg",

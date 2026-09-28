@@ -6,94 +6,177 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-25",
+    "date": "2026-09-28",
     "fullArticleCount": 1,
-    "alertCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
+      "ai-misalignment-critical-infrastructure",
       "agentic-commerce-and-payments",
       "cybersecurity-ai-services",
-      "stablecoin-card-settlement",
-      "global-bank-ai-strategy",
-      "credit-union-policy-advocacy",
-      "credit-union-digital-strategy",
+      "stablecoin-regulation",
+      "payments-technology-transactions",
+      "ai-infrastructure-financing",
+      "global-ai-capital-markets",
       "ncua-ai-supervision",
-      "nist-ai-cybersecurity-guidance",
-      "ffiec-supervisory-outreach",
-      "federal-register-monitoring",
-      "ncua-rules-and-guidance",
-      "policy-maintenance-regulatory-change"
+      "third-party-vendor-guidance",
+      "ffiec-outsourced-resilience",
+      "nist-third-party-ai-risk",
+      "procurement-contract-obligation-monitoring"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "Insights",
-        "title": "Seven Controls for AI-Assisted Policy Maintenance at Credit Unions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-policy-maintenance-controls.html",
-        "primaryFunctionalAudience": "Compliance, legal, risk and operations leaders",
+        "title": "Seven Controls for AI-Assisted Contract Monitoring at Credit Unions",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-contract-monitoring-controls.html",
+        "primaryFunctionalAudience": "Procurement, vendor-management, legal and operations leaders",
         "promotionPriority": "Library",
-        "socialDecision": "queued-2026-09-25-12:30-et"
-      },
-      {
-        "type": "alert",
-        "title": "Reuters Reports €95 Million AI Impersonation Fraud at Intesa Private-Banking Arm",
-        "url": "https://creditunionainews.com/alerts/#intesa-fideuram-ai-impersonation-transfer-fraud"
+        "socialDecision": "eligible-library-pending-live-verification"
       }
     ],
     "rejections": [
       {
+        "title": "Australian Cyber Security Centre Warns of AI Misalignment Risks",
+        "reason": "a current critical-infrastructure alert with useful safeguards, but no new U.S. credit-union requirement, implementation or operating event"
+      },
+      {
         "title": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
-        "reason": "a material agentic-commerce warning already screened this week, without a new credit-union rule, implementation or operating event today"
+        "reason": "a material agentic-commerce warning already screened last week, with no new credit-union rule, implementation or operating fact today"
       },
       {
         "title": "Palo Alto Networks Launches Continuous Frontier AI Defense",
         "reason": "a current cybersecurity service launch without a named credit-union implementation or independently validated financial-sector result"
       },
       {
-        "title": "SoFi Settles Card Payments on Its Bank-Issued Stablecoin",
-        "reason": "the underlying launch was published by CreditUnionAI News on September 23 and has no new fact that warrants duplicate coverage"
+        "title": "European Central Banks Seek Changes to Stablecoin Reserve Rules",
+        "reason": "a material European policy proposal without a direct U.S. credit-union implementation decision"
       },
       {
-        "title": "Societe Generale Links AI to Its 2029 Efficiency Plan",
-        "reason": "a significant global-bank strategy signal with limited implementation detail and no direct U.S. credit-union operating event"
+        "title": "Priority Technology Agrees to a CEO-Led Take-Private Deal",
+        "reason": "a payments-technology transaction without a substantive new AI or credit-union operating implication"
       },
       {
-        "title": "Senate Prepares for Vote on Penny Bill",
-        "reason": "current credit-union policy activity without a substantive AI, automation or digital-operating change"
+        "title": "Bond Investors Reprice AI Infrastructure Debt",
+        "reason": "important AI investment context without a specific credit-union technology decision or member-service consequence"
       },
       {
-        "title": "America's Credit Unions Promotes a Gen Z Technology Strategy",
-        "reason": "useful trade-association commentary rather than a completed implementation, official requirement or independently reported current event"
+        "title": "Investors Hedge Across the U.S.-China AI Divide",
+        "reason": "a global capital-markets signal with no direct credit-union operating decision"
       },
       {
         "title": "NCUA Artificial Intelligence Resource Hub Remains Current",
-        "reason": "authoritative implementation background last updated April 28, but no new September 25 supervisory directive or credit-union requirement was identified"
+        "reason": "authoritative implementation background last updated April 28, but no new September 28 supervisory directive or credit-union requirement was identified"
       },
       {
-        "title": "NIST Seeks Comment on AI-Assisted Cybersecurity Framework Reporting",
-        "reason": "a useful public draft for later control analysis, but not a final requirement or a credit-union-specific operating event"
+        "title": "NCUA Third-Party Relationship Guidance Remains the Primary Credit-Union Baseline",
+        "reason": "authoritative support for the selected Library framework, not a new rule, deployment or current operating event"
       },
       {
-        "title": "FFIEC Industry Outreach Continues to Publish Supervisory Updates",
-        "reason": "an authoritative monitoring channel rather than a new rule, deployment or decision in the current cycle"
+        "title": "FFIEC Outsourced Technology Resilience Guidance Remains Current",
+        "reason": "an important control source for contract and continuity oversight, but not a new current event"
       },
       {
-        "title": "Federal Register Current Issue Contains No Qualifying Credit-Union Technology Event",
-        "reason": "the authoritative daily issue was reviewed, but no new item cleared the publication threshold for this cycle"
-      },
-      {
-        "title": "NCUA Rules and Guidance Sources Remain Available for Change Monitoring",
-        "reason": "essential primary-source infrastructure for the selected Library framework, not a standalone current News event"
+        "title": "NIST AI RMF Playbook Addresses Third-Party AI Monitoring",
+        "reason": "durable implementation guidance used in the selected Insight rather than a time-sensitive credit-union News event"
       }
     ],
-    "status": "article-and-alert-complete",
+    "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted procurement, contract-obligation monitoring and renewal-decision controls",
-    "updatedAt": "2026-09-25T15:21:37-04:00"
+    "nextCoverageGap": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
+    "updatedAt": "2026-09-28T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-25",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "agentic-commerce-and-payments",
+        "cybersecurity-ai-services",
+        "stablecoin-card-settlement",
+        "global-bank-ai-strategy",
+        "credit-union-policy-advocacy",
+        "credit-union-digital-strategy",
+        "ncua-ai-supervision",
+        "nist-ai-cybersecurity-guidance",
+        "ffiec-supervisory-outreach",
+        "federal-register-monitoring",
+        "ncua-rules-and-guidance",
+        "policy-maintenance-regulatory-change"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "Seven Controls for AI-Assisted Policy Maintenance at Credit Unions",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-policy-maintenance-controls.html",
+          "primaryFunctionalAudience": "Compliance, legal, risk and operations leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "queued-2026-09-25-12:30-et"
+        },
+        {
+          "type": "alert",
+          "title": "Reuters Reports €95 Million AI Impersonation Fraud at Intesa Private-Banking Arm",
+          "url": "https://creditunionainews.com/alerts/#intesa-fideuram-ai-impersonation-transfer-fraud"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
+          "reason": "a material agentic-commerce warning already screened this week, without a new credit-union rule, implementation or operating event today"
+        },
+        {
+          "title": "Palo Alto Networks Launches Continuous Frontier AI Defense",
+          "reason": "a current cybersecurity service launch without a named credit-union implementation or independently validated financial-sector result"
+        },
+        {
+          "title": "SoFi Settles Card Payments on Its Bank-Issued Stablecoin",
+          "reason": "the underlying launch was published by CreditUnionAI News on September 23 and has no new fact that warrants duplicate coverage"
+        },
+        {
+          "title": "Societe Generale Links AI to Its 2029 Efficiency Plan",
+          "reason": "a significant global-bank strategy signal with limited implementation detail and no direct U.S. credit-union operating event"
+        },
+        {
+          "title": "Senate Prepares for Vote on Penny Bill",
+          "reason": "current credit-union policy activity without a substantive AI, automation or digital-operating change"
+        },
+        {
+          "title": "America's Credit Unions Promotes a Gen Z Technology Strategy",
+          "reason": "useful trade-association commentary rather than a completed implementation, official requirement or independently reported current event"
+        },
+        {
+          "title": "NCUA Artificial Intelligence Resource Hub Remains Current",
+          "reason": "authoritative implementation background last updated April 28, but no new September 25 supervisory directive or credit-union requirement was identified"
+        },
+        {
+          "title": "NIST Seeks Comment on AI-Assisted Cybersecurity Framework Reporting",
+          "reason": "a useful public draft for later control analysis, but not a final requirement or a credit-union-specific operating event"
+        },
+        {
+          "title": "FFIEC Industry Outreach Continues to Publish Supervisory Updates",
+          "reason": "an authoritative monitoring channel rather than a new rule, deployment or decision in the current cycle"
+        },
+        {
+          "title": "Federal Register Current Issue Contains No Qualifying Credit-Union Technology Event",
+          "reason": "the authoritative daily issue was reviewed, but no new item cleared the publication threshold for this cycle"
+        },
+        {
+          "title": "NCUA Rules and Guidance Sources Remain Available for Change Monitoring",
+          "reason": "essential primary-source infrastructure for the selected Library framework, not a standalone current News event"
+        }
+      ],
+      "status": "article-and-alert-complete",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted procurement, contract-obligation monitoring and renewal-decision controls",
+      "updatedAt": "2026-09-25T15:21:37-04:00"
+    },
     {
       "date": "2026-09-24",
       "fullArticleCount": 1,

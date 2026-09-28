@@ -3,6 +3,46 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-contract-monitoring-controls",
+      "title": "Seven Controls for AI-Assisted Contract Monitoring at Credit Unions",
+      "url": "/insight-credit-union-ai-contract-monitoring-controls.html",
+      "publishedAt": "2026-09-28T07:00:00-04:00",
+      "section": "insights",
+      "beat": "procurement-contract-obligation-monitoring-ai-controls",
+      "functions": [
+        "vendor-management",
+        "risk-compliance",
+        "legal",
+        "operations",
+        "finance-treasury"
+      ],
+      "technologies": [
+        "regtech-monitoring",
+        "governance-risk",
+        "agents-automation",
+        "data-decisioning"
+      ],
+      "format": "control-framework",
+      "audience": "functional-leader",
+      "primaryAudience": "Procurement, vendor-management, legal and operations leaders",
+      "secondaryAudiences": [
+        "technology and information-security leaders",
+        "finance and treasury teams",
+        "internal-audit teams",
+        "business-continuity leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-library-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/insight-credit-union-ai-policy-maintenance-controls.html"
+      ],
+      "sourceTier": 1,
+      "score": 86.8
+    },
+    {
       "id": "credit-union-ai-policy-maintenance-controls",
       "title": "Seven Controls for AI-Assisted Policy Maintenance at Credit Unions",
       "url": "/insight-credit-union-ai-policy-maintenance-controls.html",
