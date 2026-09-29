@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "functions": [
     {"id":"board-strategy","label":"Board and Strategy","targetShare":0.09},
     {"id":"lending-collections","label":"Lending and Collections","targetShare":0.11},
@@ -14,6 +14,7 @@
     {"id":"vendor-management","label":"Vendor Management","targetShare":0.08}
   ],
   "technologies": [
+    {"id":"industry-development","label":"Industry development — no technology connection required"},
     {"id":"generative-ai","label":"Generative AI and Copilots"},
     {"id":"agents-automation","label":"AI Agents and Automation"},
     {"id":"fraud-analytics","label":"Fraud and Behavioral Analytics"},

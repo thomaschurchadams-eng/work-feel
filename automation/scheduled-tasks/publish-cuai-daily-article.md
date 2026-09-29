@@ -8,28 +8,26 @@ This policy governs one daily article cycle plus the bounded LinkedIn distributi
 
 ## Mission
 
-Publish one credible, useful CreditUnionAI News article only when it has a clear, source-supported implication for credit-union decision makers **and a substantive AI or technology operating connection**. CUAI is an AI-intelligence publication, not a general credit-union newswire. Preserve broad functional coverage across boards, risk, lending, payments, fraud, operations, member service, marketing, data/technology, HR/workforce, finance and strategy through AI, automation, data/decisioning, cybersecurity or fraud technology, digital banking/payments technology, or technology-governance lenses.
-
-A general credit-union regulatory, macroeconomic, personnel, legal, finance, market or governance development does not qualify for a full CUAI article when the AI/technology connection is merely incidental or appears only as an internal-link aside. Do not manufacture an AI angle to make a general story fit.
+Cover consequential credit-union industry developments with a concrete, source-supported implication for CU decision makers. AI and technology remain signature strengths, not mandatory angles. Material regulation, finance, lending, payments, member service, workforce, competition and governance qualify without an invented AI connection. Reject routine personnel notices, promotion-only releases and generic developments without meaningful CU consequence.
 
 Reliability, source quality, mission fit, and usefulness outrank volume.
 
 ## Required research and selection
 
 1. Read the current production policy inputs needed for the cycle, including the newsroom runbook, publishing rules, taxonomy, coverage ledger, source registry, analytics/SEO rules, relevant templates, current homepage, current section indexes, recently published articles, `automation/social-queue.json`, and the current daily-cycle state.
-2. Search across at least four distinct functional or editorial beats. Evaluate at least six credible candidates when current developments are available.
-3. Prefer primary sources, official documents, regulators, credit unions, vendors making attributable announcements, and credible reporting. A candidate must have both a specific, explainable credit-union implication and the substantive AI/technology operating connection defined in the Mission section.
+2. Search across at least six distinct functional or editorial beats. Evaluate at least twelve credible candidates when current developments are available.
+3. Prefer primary sources, official documents, regulators, credit unions, vendors making attributable announcements, and credible reporting. A candidate must have a specific, explainable credit-union implication under the Mission section.
 4. Avoid repeating a recent topic, source, organization, format, or functional audience unless there is material new information.
 5. Classify the candidate before drafting:
    - **High** — material, time-sensitive, primary-source-backed development with a clear operating implication. Eligible for selective LinkedIn promotion.
    - **Standard** — useful, credible article that serves the portfolio but is not a must-know event. Publish to site when it passes all gates; normally do not promote on LinkedIn.
    - **Library** — durable, evergreen, multi-source guide, case study, or explainer. Use to strengthen the evergreen backlog; consider for LinkedIn only when it passes the selective Library gate below.
-6. If no current-event candidate qualifies, use the approved content-portfolio fallback: select the strongest unserved **Library** topic from the evergreen backlog, then a durable multi-source Insight, credit-union case study, or data-led explainer. The fallback must still pass the AI/technology mission-fit gate. Do not lower standards merely to fill a daily slot.
+6. If no current-event candidate qualifies, use the approved content-portfolio fallback: select the strongest unserved **Library** topic from the evergreen backlog, then a durable multi-source Insight, credit-union case study, or data-led explainer. The fallback must still pass the credit-union relevance gate. Do not lower standards merely to fill a daily slot.
 7. If nothing clears the evidence, mission-fit, and quality gates, do not publish. Record the non-publication result as the machine-observable outcome required below.
 
 ## Article package and production safeguards
 
-For one approved article only:
+For each qualifying article, sequentially:
 
 - Route as News when the thesis depends on a recent event; otherwise route as Insights.
 - Produce a complete, source-linked article with accurate date, clear headline, neutral framing, practical implication, relevant internal links, appropriate image, metadata, correct section index, homepage placement where warranted, sitemap/ledger updates, and required analytics/SEO data.
@@ -122,3 +120,15 @@ Once the article package and any qualifying LinkedIn distribution step are compl
 The August 21, 2026 NCUA board-meeting article and its already-created company-page reservation predate this mission-fit clarification. Do not delete, rewrite, duplicate, cancel, or reschedule that published/scheduled package solely because of this policy clarification. Apply the strengthened mission-fit gate prospectively beginning with the next article cycle.
 
 The Cloud task must finish with a concise operational record: published or not published, classification, live URL if published, validation/deployment status, LinkedIn decision and scheduling status when applicable, any recovered missed High article, and any blocker. The same outcome must also be represented in the canonical repository state under the machine-observable outcome rule above unless GitHub access itself is unavailable.
+
+## September 29 owner-approved breadth and volume alignment
+
+Tom requested implementation of broader CUAI coverage and increased volume in the Chief of Staff conversation. Effective September 30, this section supersedes conflicting one-article-only or mandatory-technology-angle language in historical prompts and rules. Preserve existing schedules, credentials, validations and selective LinkedIn limits.
+
+Use `publishing-rules.json` weekday targets: Monday/Wednesday/Friday two articles, Tuesday/Thursday one, eight per full week, maximum two per weekday. This is an evidence-gated target, not a quota. Complete and verify the first package before attempting the second. Re-read main and preserve all same-day publications and prior history in every write; increment actual counts, never replace the first outcome. If the second slot cannot qualify, retain the first publication and record the unfilled slot and reason. Existing dailyTargets metadata is legacy; version 6 publishing rules govern the new targets.
+
+At most twelve well-supported candidates across six beats are sufficient for the normal bounded scan; no endless searching to fill slots. Include official OpenAI, Anthropic, Microsoft and Google/DeepMind announcements when relevant, alongside regulators, CU primary reporting and broader industry sources. Peter Diamandis MetaTrends is a discovery input when accessible, not independent substantiation. Do not bypass source-access restrictions. Distinguish announcement, preview and actual availability; attribute vendor benchmarks and verify consequential claims.
+
+Prefer reported news, short source-backed explainers, data briefs and case studies alongside practical guidance. Aim for three formats and five functions weekly; cap repetitive framework/checklist pieces at two combined unless a material-news exception is recorded. Nontechnology stories use `industry-development` as their taxonomy marker rather than inventing a technology link.
+
+Review two full weeks on October 16: delivery, corrections, breadth, actual usage and available engagement. Ten articles per week remains a later decision. No new recurring cost or paid service is authorized. If second slots create material evidence, deployment or usage problems, stop those slots and preserve the healthy primary cycle.
