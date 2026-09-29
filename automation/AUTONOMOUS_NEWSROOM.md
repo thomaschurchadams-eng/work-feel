@@ -8,7 +8,7 @@ Publish reliable, credible CreditUnionAI News coverage directly to production wi
 
 The newsroom uses separate, single-purpose cycles:
 
-1. **Article cycle** — publishes one full News or Insights article.
+1. **Article cycle** — publishes one primary News or Insights article plus one distinct qualified second article on Monday, Wednesday and Friday, under publishing-rules.json.
 2. **Alert cycle** — publishes Alerts and maintains the ticker.
 3. **Maintenance cycle** — handles archive migration, Intelligence maintenance, corrections, source health, newsletters and retention.
 
@@ -19,10 +19,10 @@ For Alert quantity, cadence and task authority, `automation/scheduled-tasks/cuai
 ## Article cycle
 
 1. Read only the files required for the article: `editorial-routing.json`, `editorial-taxonomy.json`, `publishing-rules.json`, `coverage-ledger.json`, `image-taxonomy.json`, `image-ledger.json`, `editorial-voice.md`, `analytics-measurement.json`, `seo-policy.json`, the relevant article template, the homepage, the correct section index, sitemaps and articles from the prior 14 days.
-2. Search the prior 24–72 hours across at least four distinct beats and evaluate at least six credible candidates. Prefer primary documents and developments with a clear credit-union operating implication.
+2. Search the prior 24–72 hours across at least six distinct beats and evaluate at least twelve credible candidates. Prefer primary documents and developments with a clear credit-union operating implication.
 3. Select one candidate that clears all hard stops. If no current-event candidate qualifies, use the fallback order in `publishing-rules.json`: durable multi-source Insight, credit-union case study, then data-led explainer. Do not publish weak or unsupported material.
 4. Route the article before drafting. Use News when the headline depends on a recent event; otherwise use Insights.
-5. Produce one complete article package only: article, one passing 1200×630 image, metadata, byline, sources, internal links, correct section index, homepage placement, sitemaps, coverage ledger, image ledger, newsroom state, daily-cycle state and social queue when appropriate.
+5. Produce each complete article package sequentially: article, one passing 1200×630 image, metadata, byline, sources, internal links, correct section index, homepage placement, sitemaps, coverage ledger, image ledger, newsroom state, daily-cycle state and social queue when appropriate.
 6. Run only the validators relevant to the article package, including analytics and SEO. Do not run unrelated Intelligence, corrections, retention, newsletter or archive-migration work.
 7. Re-read `main` immediately before writing, preserve concurrent changes, commit the complete package directly to `main`, confirm the Vercel deployment is READY and verify the live article, image, listing and homepage.
 8. Every scheduled article cycle must leave one dated machine-observable outcome in `automation/daily-cycle-state.json`. A published article records the normal package state. If nothing qualifies, persist `fullArticleCount: 0`, the candidate/beat evidence available, rejection/evidence-gap detail and a `no-article-published` status. If a material pre-publication blocker occurs and GitHub remains writable, persist a `blocked` status with the exact blocker. This outcome-only state is reliability evidence, not editorial content.
@@ -50,7 +50,7 @@ Maintenance work is separate from publishing. Growth review, source health, corr
 
 ## Failure behavior
 
-Continue to the next candidate after a rejection, but keep the scope bounded. An article cycle may stop after the six-candidate, four-beat pool and fallback formats are exhausted. When it stops without publication, persist the dated non-publication evidence in `daily-cycle-state.json` before completion. If a material blocker stops the article cycle after the policy is readable, persist the blocker there when GitHub remains writable. An Alert cycle may stop when no qualifying Alert exists. Report the exact blocker for repeated failures, permission errors, validation failures or production breakage. Do not request routine editorial approval.
+Continue to the next candidate after a rejection, but keep the scope bounded. An article cycle may stop after the twelve-candidate, six-beat pool and fallback formats are exhausted. When it stops without publication, persist the dated non-publication evidence in `daily-cycle-state.json` before completion. If a material blocker stops the article cycle after the policy is readable, persist the blocker there when GitHub remains writable. An Alert cycle may stop when no qualifying Alert exists. Report the exact blocker for repeated failures, permission errors, validation failures or production breakage. Do not request routine editorial approval.
 
 If GitHub access itself prevents the required outcome write, report that exact GitHub failure instead of fabricating state.
 
@@ -60,4 +60,4 @@ For every full article, add valid editorial analytics attributes and complete ca
 
 ## Weekly portfolio
 
-Target five weekday article cycles plus selectively qualified Alerts. Additional deeper features may be restored only after the core article and Alert cycles demonstrate reliable production without overlap.
+Target eight articles across the existing five weekday cycles: 2/1/2/1/2. Follow the September 29 expansion section in the article policy and the version 6 publishing rules. Alerts remain separate and have no quota. Preserve earlier same-day outcomes; stop second slots if quality or existing usage cannot support them.
