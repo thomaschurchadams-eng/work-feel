@@ -6,89 +6,172 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "ai-misalignment-critical-infrastructure",
-      "agentic-commerce-and-payments",
-      "cybersecurity-ai-services",
-      "stablecoin-regulation",
-      "payments-technology-transactions",
-      "ai-infrastructure-financing",
-      "global-ai-capital-markets",
-      "ncua-ai-supervision",
-      "third-party-vendor-guidance",
-      "ffiec-outsourced-resilience",
-      "nist-third-party-ai-risk",
-      "procurement-contract-obligation-monitoring"
+      "mobile-wallet-issuer-fees-antitrust",
+      "small-business-credit-risk-ai-investment",
+      "enterprise-ai-budgeting",
+      "credit-union-financial-crime-governance",
+      "third-party-data-breach-response",
+      "stablecoin-institutional-payments",
+      "ai-infrastructure-deployment",
+      "ai-macroeconomic-risk",
+      "agent-safety-platforms",
+      "ai-enabled-cybersecurity-threats",
+      "account-to-account-fraud-scoring",
+      "international-ai-policy"
     ],
     "publications": [
       {
         "type": "article",
-        "classification": "Insights",
-        "title": "Seven Controls for AI-Assisted Contract Monitoring at Credit Unions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-contract-monitoring-controls.html",
-        "primaryFunctionalAudience": "Procurement, vendor-management, legal and operations leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "queued-2026-09-28-12:30-et"
+        "classification": "News",
+        "title": "Apple Pay Fee Case Expands to a Nationwide Issuer Class",
+        "url": "https://creditunionainews.com/news/apple-pay-card-issuer-class-certification.html",
+        "primaryFunctionalAudience": "Payments, finance, legal and card-operations leaders",
+        "promotionPriority": "High",
+        "socialDecision": "eligible-high-priority-pending-live-validation"
       }
     ],
     "rejections": [
       {
-        "title": "Australian Cyber Security Centre Warns of AI Misalignment Risks",
-        "reason": "a current critical-infrastructure alert with useful safeguards, but no new U.S. credit-union requirement, implementation or operating event"
+        "title": "SMB Lending Expands as Delinquencies and AI Investment Rise",
+        "reason": "a current multi-institution survey with useful risk signals, but no named credit-union implementation, new rule or independently validated operating result"
       },
       {
-        "title": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
-        "reason": "a material agentic-commerce warning already screened last week, with no new credit-union rule, implementation or operating fact today"
+        "title": "Financial Firms Lead Enterprise AI Spending Plans",
+        "reason": "a survey of large financial-services and insurance companies without a credit-union-specific decision, deployment or measured result"
       },
       {
-        "title": "Palo Alto Networks Launches Continuous Frontier AI Defense",
-        "reason": "a current cybersecurity service launch without a named credit-union implementation or independently validated financial-sector result"
+        "title": "Former JAFCU CEO Faces Federal Charges",
+        "reason": "a material credit-union governance and alleged financial-crime event without the substantive AI or technology operating connection required for CUAI publication"
       },
       {
-        "title": "European Central Banks Seek Changes to Stablecoin Reserve Rules",
-        "reason": "a material European policy proposal without a direct U.S. credit-union implementation decision"
+        "title": "FAIRWINDS Vendor Breach Draws Law-Firm Investigation",
+        "reason": "a relevant third-party security event disclosed last week, but the current report adds no material technical finding, regulatory action or transferable implementation detail"
       },
       {
-        "title": "Priority Technology Agrees to a CEO-Led Take-Private Deal",
-        "reason": "a payments-technology transaction without a substantive new AI or credit-union operating implication"
+        "title": "Citi and Coinbase Expand Institutional Stablecoin Payments",
+        "reason": "a current bank and digital-asset partnership without a named credit-union implementation or immediate operating decision"
       },
       {
-        "title": "Bond Investors Reprice AI Infrastructure Debt",
-        "reason": "important AI investment context without a specific credit-union technology decision or member-service consequence"
+        "title": "Cerebras Supplies AI Systems to Gimlet Labs",
+        "reason": "a large AI-infrastructure deployment with no direct credit-union technology decision or member-service implication"
       },
       {
-        "title": "Investors Hedge Across the U.S.-China AI Divide",
-        "reason": "a global capital-markets signal with no direct credit-union operating decision"
+        "title": "Federal Reserve Governor Links AI Demand to Near-Term Inflation",
+        "reason": "useful macroeconomic context without a specific credit-union implementation, control change or technology operating event"
       },
       {
-        "title": "NCUA Artificial Intelligence Resource Hub Remains Current",
-        "reason": "authoritative implementation background last updated April 28, but no new September 28 supervisory directive or credit-union requirement was identified"
+        "title": "Nvidia Launches OpenShell and Sentry Agent-Safety Tools",
+        "reason": "a current vendor-tool launch without a named credit-union deployment or independently validated financial-sector result"
       },
       {
-        "title": "NCUA Third-Party Relationship Guidance Remains the Primary Credit-Union Baseline",
-        "reason": "authoritative support for the selected Library framework, not a new rule, deployment or current operating event"
+        "title": "AI Is Accelerating Hacking Against Smaller Institutions",
+        "reason": "broad secondary threat analysis without a discrete new credit-union incident, official directive or implementation result"
       },
       {
-        "title": "FFIEC Outsourced Technology Resilience Guidance Remains Current",
-        "reason": "an important control source for contract and continuity oversight, but not a new current event"
+        "title": "Visa Adds a Unified Fraud Score to A2A Protect",
+        "reason": "a relevant AI fraud-control launch from September 11 that falls outside the current News window and lacks a named U.S. credit-union deployment"
       },
       {
-        "title": "NIST AI RMF Playbook Addresses Third-Party AI Monitoring",
-        "reason": "durable implementation guidance used in the selected Insight rather than a time-sensitive credit-union News event"
+        "title": "European AI Policy and Investment Initiatives Continue",
+        "reason": "international policy context without a new U.S. credit-union requirement or operating decision in the current cycle"
       }
     ],
     "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
-    "updatedAt": "2026-09-28T07:00:00-04:00"
+    "updatedAt": "2026-09-29T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-28",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "ai-misalignment-critical-infrastructure",
+        "agentic-commerce-and-payments",
+        "cybersecurity-ai-services",
+        "stablecoin-regulation",
+        "payments-technology-transactions",
+        "ai-infrastructure-financing",
+        "global-ai-capital-markets",
+        "ncua-ai-supervision",
+        "third-party-vendor-guidance",
+        "ffiec-outsourced-resilience",
+        "nist-third-party-ai-risk",
+        "procurement-contract-obligation-monitoring"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "Seven Controls for AI-Assisted Contract Monitoring at Credit Unions",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-contract-monitoring-controls.html",
+          "primaryFunctionalAudience": "Procurement, vendor-management, legal and operations leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "queued-2026-09-28-12:30-et"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Australian Cyber Security Centre Warns of AI Misalignment Risks",
+          "reason": "a current critical-infrastructure alert with useful safeguards, but no new U.S. credit-union requirement, implementation or operating event"
+        },
+        {
+          "title": "Banks Warn AI Shopping Bots Raise Scam, Fraud and Privacy Risks",
+          "reason": "a material agentic-commerce warning already screened last week, with no new credit-union rule, implementation or operating fact today"
+        },
+        {
+          "title": "Palo Alto Networks Launches Continuous Frontier AI Defense",
+          "reason": "a current cybersecurity service launch without a named credit-union implementation or independently validated financial-sector result"
+        },
+        {
+          "title": "European Central Banks Seek Changes to Stablecoin Reserve Rules",
+          "reason": "a material European policy proposal without a direct U.S. credit-union implementation decision"
+        },
+        {
+          "title": "Priority Technology Agrees to a CEO-Led Take-Private Deal",
+          "reason": "a payments-technology transaction without a substantive new AI or credit-union operating implication"
+        },
+        {
+          "title": "Bond Investors Reprice AI Infrastructure Debt",
+          "reason": "important AI investment context without a specific credit-union technology decision or member-service consequence"
+        },
+        {
+          "title": "Investors Hedge Across the U.S.-China AI Divide",
+          "reason": "a global capital-markets signal with no direct credit-union operating decision"
+        },
+        {
+          "title": "NCUA Artificial Intelligence Resource Hub Remains Current",
+          "reason": "authoritative implementation background last updated April 28, but no new September 28 supervisory directive or credit-union requirement was identified"
+        },
+        {
+          "title": "NCUA Third-Party Relationship Guidance Remains the Primary Credit-Union Baseline",
+          "reason": "authoritative support for the selected Library framework, not a new rule, deployment or current operating event"
+        },
+        {
+          "title": "FFIEC Outsourced Technology Resilience Guidance Remains Current",
+          "reason": "an important control source for contract and continuity oversight, but not a new current event"
+        },
+        {
+          "title": "NIST AI RMF Playbook Addresses Third-Party AI Monitoring",
+          "reason": "durable implementation guidance used in the selected Insight rather than a time-sensitive credit-union News event"
+        }
+      ],
+      "status": "article-complete-pending-deployment",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
+      "updatedAt": "2026-09-28T07:00:00-04:00"
+    },
     {
       "date": "2026-09-25",
       "fullArticleCount": 1,

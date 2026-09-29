@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "apple-pay-card-issuer-class-certification",
+      "articleUrl": "/news/apple-pay-card-issuer-class-certification.html",
+      "imagePath": "/assets/apple-pay-card-issuer-class-certification.jpg",
+      "publishedAt": "2026-09-29T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-paper-cut-3d-illustration",
+      "subject": "card-issuer-class-certification-and-mobile-wallet-fee-evidence",
+      "composition": "issuer-network-through-courthouse-gate-to-payment-terminal-and-ledger",
+      "perspective": "wide-elevated-oblique",
+      "palette": "deep-navy-slate-cream-copper-amber",
+      "lighting": "controlled-serious-editorial-studio",
+      "texture": "architectural-stone-paper-records-and-luminous-payment-rails",
+      "scene": "many-distinct-card-issuers-and-records-converge-through-a-neutral-certification-gate-toward-tap-to-pay-infrastructure-and-a-transaction-fee-ledger",
+      "conceptScore": 94.1,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "issuer-fee-evidence-review",
+          "score": 81.3
+        },
+        {
+          "medium": "flat-paper-diagram",
+          "subject": "class-certification-and-payment-records",
+          "score": 80.1
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-contract-monitoring-controls",
       "articleUrl": "/insight-credit-union-ai-contract-monitoring-controls.html",
       "imagePath": "/assets/credit-union-ai-contract-monitoring-controls.jpg",

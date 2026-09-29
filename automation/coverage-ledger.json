@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "apple-pay-card-issuer-class-certification",
+      "title": "Apple Pay Fee Case Expands to a Nationwide Issuer Class",
+      "url": "/news/apple-pay-card-issuer-class-certification.html",
+      "publishedAt": "2026-09-29T07:00:00-04:00",
+      "section": "news",
+      "beat": "mobile-wallet-issuer-fees-antitrust",
+      "functions": [
+        "payments-deposits",
+        "finance-treasury",
+        "legal",
+        "risk-compliance",
+        "operations"
+      ],
+      "technologies": [
+        "realtime-embedded-finance",
+        "data-decisioning",
+        "governance-risk"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, finance, legal and card-operations leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "internal-audit teams",
+        "technology and digital-banking leaders",
+        "executive management"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-priority-pending-live-validation",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/news/sofi-stablecoin-card-settlement.html",
+        "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html"
+      ],
+      "sourceTier": 1,
+      "score": 95.2
+    },
+    {
       "id": "credit-union-ai-contract-monitoring-controls",
       "title": "Seven Controls for AI-Assisted Contract Monitoring at Credit Unions",
       "url": "/insight-credit-union-ai-contract-monitoring-controls.html",

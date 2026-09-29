@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-28T07:00:00-04:00",
+  "lastStandardRun": "2026-09-29T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Seven Controls for AI-Assisted Contract Monitoring at Credit Unions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-contract-monitoring-controls.html",
-    "publishedAt": "2026-09-28T07:00:00-04:00",
-    "route": "insights"
+    "title": "Apple Pay Fee Case Expands to a Nationwide Issuer Class",
+    "url": "https://creditunionainews.com/news/apple-pay-card-issuer-class-certification.html",
+    "publishedAt": "2026-09-29T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-09-29",
+      "headline": "SMB Lending Expands as Delinquencies and AI Investment Rise",
+      "reason": "a current multi-institution survey with useful risk signals, but no named credit-union implementation, new rule or independently validated operating result"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "Financial Firms Lead Enterprise AI Spending Plans",
+      "reason": "a survey of large financial-services and insurance companies without a credit-union-specific decision, deployment or measured result"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "Former JAFCU CEO Faces Federal Charges",
+      "reason": "a material credit-union governance and alleged financial-crime event without the substantive AI or technology operating connection required for CUAI publication"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "FAIRWINDS Vendor Breach Draws Law-Firm Investigation",
+      "reason": "a relevant third-party security event disclosed last week, but the current report adds no material technical finding, regulatory action or transferable implementation detail"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "Citi and Coinbase Expand Institutional Stablecoin Payments",
+      "reason": "a current bank and digital-asset partnership without a named credit-union implementation or immediate operating decision"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "Cerebras Supplies AI Systems to Gimlet Labs",
+      "reason": "a large AI-infrastructure deployment with no direct credit-union technology decision or member-service implication"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "Federal Reserve Governor Links AI Demand to Near-Term Inflation",
+      "reason": "useful macroeconomic context without a specific credit-union implementation, control change or technology operating event"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "Nvidia Launches OpenShell and Sentry Agent-Safety Tools",
+      "reason": "a current vendor-tool launch without a named credit-union deployment or independently validated financial-sector result"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "AI Is Accelerating Hacking Against Smaller Institutions",
+      "reason": "broad secondary threat analysis without a discrete new credit-union incident, official directive or implementation result"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "Visa Adds a Unified Fraud Score to A2A Protect",
+      "reason": "a relevant AI fraud-control launch from September 11 that falls outside the current News window and lacks a named U.S. credit-union deployment"
+    },
+    {
+      "date": "2026-09-29",
+      "headline": "European AI Policy and Investment Initiatives Continue",
+      "reason": "international policy context without a new U.S. credit-union requirement or operating decision in the current cycle"
+    },
     {
       "date": "2026-09-28",
       "headline": "Australian Cyber Security Centre Warns of AI Misalignment Risks",
@@ -2515,6 +2570,11 @@
     {
       "functionalArea": "vendor-management-procurement",
       "opportunity": "AI-assisted procurement, contract-obligation monitoring and renewal-decision controls",
+      "priority": "completed-2026-09-28"
+    },
+    {
+      "functionalArea": "board-governance-management-information",
+      "opportunity": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
       "priority": "next"
     }
   ]
