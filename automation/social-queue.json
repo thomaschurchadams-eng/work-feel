@@ -34,7 +34,7 @@
       "format": "operational-takeaway",
       "copy": "A $1 million token pilot is not general availability, regulatory approval or proof of scale. The operating takeaway for credit unions evaluating CUUSD: verify reserve and redemption, bind wallets to approved institutions, separate on-chain finality from internal authority, reconcile every token to the books, and test the exit path. https://creditunionainews.com/news/alloya-cuusd-stablecoin-pilot.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-alloya-cuusd-stablecoin-pilot-2026-09-30",
       "scheduledFor": "2026-09-30T11:30:00-04:00",
-      "status": "scheduled",
+      "status": "sent",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-09-30T07:20:00-04:00",
       "imageUrl": "https://creditunionainews.com/assets/alloya-cuusd-stablecoin-pilot.jpg",
@@ -47,7 +47,9 @@
       "lastAttemptAt": "2026-09-30T11:30:38.270Z",
       "lastResult": "verified secure workflow receipt",
       "duplicate": false,
-      "imageAttached": true
+      "imageAttached": true,
+      "sentAt": "2026-09-30T15:30:46.846Z",
+      "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7511085139117080577"
     },
     {
       "id": "linkedin-apple-pay-card-issuer-class-certification-2026-09-29",
