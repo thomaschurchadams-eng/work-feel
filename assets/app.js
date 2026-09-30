@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Agent Security',
+      headline: 'Reuters Reports FTC Probe of OpenAI, Anthropic and METR Over Agentic-AI Security Risks',
+      summary:
+        'Reuters, following an initial New York Post report and citing a senior FTC official, reported on September 30 that the Federal Trade Commission is conducting an industry-wide probe into Anthropic, OpenAI and other AI labs over potential consumer risks from agentic AI. Reuters said the FTC plans formal information demands and executive testimony, and described the inquiry as the first U.S. enforcement action focused on rogue AI agents; the named organizations did not immediately comment.',
+      impact:
+        'Credit unions evaluating autonomous agents should treat the probe as a vendor-risk and accountability signal: require clear tool and data boundaries, complete agent activity logs, rapid incident disclosure, containment and kill-switch procedures, and contract terms covering audit access and responsibility for unauthorized actions. This is not a new credit-union rule or a finding that any named company violated the law.',
+      sourceName: 'Reuters (New York Post first reported)',
+      sourceUrl:
+        'https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/',
+      date: 'Sep 30, 2026',
+      slug: 'ftc-agentic-ai-security-probe-openai-anthropic-metr'
+    },
+    {
       label: 'AI Fraud',
       headline: 'Reuters Reports €95 Million AI Impersonation Fraud at Intesa Private-Banking Arm',
       summary:
@@ -1011,7 +1024,7 @@
 
   // Maintained by the weekday operating cycle. Items expire automatically after seven days.
   const homepageWatchState = {
-    reviewedAt: '',
+    reviewedAt: '2026-09-30T15:25:00-04:00',
     items: []
   };
 
@@ -1121,7 +1134,7 @@
       <p class="latest-alert-impact"><strong>What this means for credit unions:</strong> ${item.impact}</p>
       <div class="latest-alert-actions">
         <a class="link" href="/alerts/#${item.slug}">Read the Alert →</a>
-        <a class="link" href="${item.sourceUrl}" target="_blank" rel="noopener">Primary source: ${item.sourceName} ↗</a>
+        <a class="link" href="${item.sourceUrl}" target="_blank" rel="noopener">Source: ${item.sourceName} ↗</a>
       </div>
     `;
   };
