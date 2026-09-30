@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-board-reporting-decision-evidence",
+      "articleUrl": "/insight-credit-union-ai-board-reporting-decision-evidence.html",
+      "imagePath": "/assets/credit-union-ai-board-reporting-decision-evidence.jpg",
+      "publishedAt": "2026-09-30T07:30:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-cinematic-photoreal-illustration",
+      "subject": "board-decision-packet-and-source-evidence",
+      "composition": "directors-around-decision-packet-linked-to-evidence-thresholds-and-owners",
+      "perspective": "wide-boardroom-oblique",
+      "palette": "deep-navy-slate-warm-wood-cyan-amber",
+      "lighting": "confident-natural-boardroom-light",
+      "texture": "paper-evidence-glass-data-layers-and-polished-wood",
+      "scene": "credit-union-directors-review-a-decision-packet-connected-to-source-evidence-risk-thresholds-and-accountable-management-owners",
+      "conceptScore": 94.0,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-paper-cut-illustration",
+          "subject": "board-decision-evidence-chain",
+          "score": 82.1
+        },
+        {
+          "medium": "isometric-diagram",
+          "subject": "management-information-to-board-decision",
+          "score": 80.8
+        }
+      ]
+    },
+    {
       "id": "alloya-cuusd-stablecoin-pilot",
       "articleUrl": "/news/alloya-cuusd-stablecoin-pilot.html",
       "imagePath": "/assets/alloya-cuusd-stablecoin-pilot.jpg",

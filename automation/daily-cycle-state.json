@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-09-30",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -34,6 +34,15 @@
         "primaryFunctionalAudience": "Payments, treasury, digital-assets and risk leaders",
         "promotionPriority": "High",
         "socialDecision": "queued-2026-09-30-11:30-et"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "A Decision-Evidence Standard for AI-Assisted Credit Union Board Reporting",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
+        "primaryFunctionalAudience": "Board chairs, CEOs, corporate secretaries and strategy leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-pending-live-verification-and-next-free-slot"
       }
     ],
     "rejections": [
@@ -78,11 +87,11 @@
         "reason": "UK-specific and less directly actionable for U.S. credit-union operations"
       }
     ],
-    "status": "article-1-verified-social-queued-pending-article-2",
+    "status": "two-article-target-complete-pending-article-2-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
-    "updatedAt": "2026-09-30T07:20:00-04:00"
+    "nextCoverageGap": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
+    "updatedAt": "2026-09-30T07:30:00-04:00"
   },
   "history": [
     {

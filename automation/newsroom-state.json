@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-30T07:00:00-04:00",
+  "lastStandardRun": "2026-09-30T07:30:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
-    "url": "https://creditunionainews.com/news/alloya-cuusd-stablecoin-pilot.html",
-    "publishedAt": "2026-09-30T07:00:00-04:00",
-    "route": "news"
+    "title": "A Decision-Evidence Standard for AI-Assisted Credit Union Board Reporting",
+    "url": "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
+    "publishedAt": "2026-09-30T07:30:00-04:00",
+    "route": "insights"
   },
   "failedCandidates": [
     {
@@ -2625,7 +2625,12 @@
     {
       "functionalArea": "board-governance-management-information",
       "opportunity": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
-      "priority": "in-progress-2026-09-30"
+      "priority": "completed-2026-09-30"
+    },
+    {
+      "functionalArea": "product-management-member-outcomes",
+      "opportunity": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
+      "priority": "next"
     }
   ]
 }

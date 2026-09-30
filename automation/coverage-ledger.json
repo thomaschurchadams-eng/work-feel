@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-board-reporting-decision-evidence",
+      "title": "A Decision-Evidence Standard for AI-Assisted Credit Union Board Reporting",
+      "url": "/insight-credit-union-ai-board-reporting-decision-evidence.html",
+      "publishedAt": "2026-09-30T07:30:00-04:00",
+      "section": "insights",
+      "beat": "board-reporting-management-information-decision-evidence",
+      "functions": [
+        "board-strategy",
+        "risk-compliance",
+        "finance-treasury",
+        "technology",
+        "operations"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "governance-risk",
+        "generative-ai"
+      ],
+      "format": "explainer",
+      "audience": "board",
+      "primaryAudience": "Board chairs, CEOs, corporate secretaries and strategy leaders",
+      "secondaryAudiences": [
+        "risk and compliance leaders",
+        "finance and treasury teams",
+        "technology and data leaders",
+        "internal-audit teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-pending-live-verification-and-next-free-slot",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-portfolio-stop-scale-scorecard.html",
+        "/insight-credit-union-ai-inventory-change-control.html"
+      ],
+      "sourceTier": 1,
+      "score": 91.4
+    },
+    {
       "id": "alloya-cuusd-stablecoin-pilot",
       "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
       "url": "/news/alloya-cuusd-stablecoin-pilot.html",
