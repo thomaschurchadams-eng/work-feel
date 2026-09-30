@@ -1991,6 +1991,37 @@
       ],
       "summary": "Verified current main and Production on fcaeed630cde52e2a20eb62fb5bcda775ae1c328, with no Vercel runtime errors. The September 29 CreditUnionAI News LinkedIn reservation sent exactly once and automation/social-queue.json now carries the authoritative sentAt and LinkedIn URL with original UTMs, channel, post ID and duplicate=false; the reconciliation commit changed only social-queue state. Attempted the repeated-pattern durable fix for the read-only deployment_commit_mismatch race on a fresh feature branch, but the security-sensitive runner write was blocked before mutation, so no partial code change was created. The canonical usage ledger still has an unreconciled September 16-28 gap. No content, schedule, destination, credential, editorial gate, spend or external authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-30T07:37:25-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review confirmed the recurring report-only deployment/source-read retry defect remains present after today's healthy publisher and distribution handoffs, and attempted the narrow durable runner repair from exact current main.",
+      "status": "degraded",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "dailyCycleStateChecks": 2,
+        "publicationLedgerChecks": 1,
+        "socialQueueChecks": 2,
+        "productionDeploymentChecks": 2,
+        "runtimeErrorChecks": 1,
+        "verifiedOperationsRunsReviewed": 3,
+        "verifiedOperationsJobLogsReviewed": 2,
+        "sourceRetryDefectChecks": 1,
+        "recoveryBranchesCreated": 2,
+        "secureRunnerWriteAttempts": 2,
+        "secureRunnerWritesBlocked": 2,
+        "codeFilesChanged": 0,
+        "socialSchedulingAttempts": 0,
+        "usageLedgerChecks": 2
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer"
+      ],
+      "summary": "Verified September 30 current main and exact READY Production after two machine-observable article outcomes. The Alloya CUUSD High item is uniquely scheduled for the fixed Wednesday 11:30 a.m. ET CreditUnionAI News slot with original CUAI UTMs, image, postId and duplicate=false; the Board Reporting Library item is uniquely scheduled for the next free fixed slot on October 1 at 11:30 a.m. ET, preserving one-post-per-day and the weekly limit. Current verified-operations runs succeeded and Vercel reports no runtime errors. Reconfirmed the repeated read-only defect in scripts/run-secure-operations.cjs: after deployment_commit_mismatch, source retries retain the stale operationCommit instead of refreshing the effective READY Production SHA. Created fresh recovery branches from exact current main and attempted the narrow fail-closed refresh repair, but the security-sensitive runner write was blocked before mutation; branch comparison proved zero changed files and zero commits. The canonical usage ledger still has the unreconciled September 16-28 historical gap. No content, scheduler, UTM, destination, credential, editorial gate, Cloud-task setting, spend or external authority changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
