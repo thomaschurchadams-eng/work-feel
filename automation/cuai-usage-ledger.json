@@ -2058,6 +2058,37 @@
       ],
       "summary": "Published one qualified September 30 Agent Security Alert from Reuters reporting on the FTC's industry-wide probe of OpenAI, Anthropic, METR and other AI labs over agentic-AI consumer and security risks. Clarified that New York Post reported first and changed the homepage attribution label from Primary source to Source. The two-file Alert package preserved all 50 prior daily-cycle history entries byte-for-byte, kept both completed articles intact, and merged as commit 7133f12. Production is READY on the exact commit, the verified operations workflow succeeded, the live homepage and Alerts archive show the new Alert, and Vercel reports no runtime errors. Fresh authenticated operating evidence reports 340 rolling-28-day active users, 363 sessions, 114 engaged sessions and 23 90%-scrolled users; LinkedIn contributed 17 sessions/4 engaged, Search Console 15 clicks from 1,315 impressions, and Buffer 143 impressions/103 reach. Growth volume is above the September threshold, while qualified acquisition and deep reading remain the operational constraint. The next portfolio gap remains AI-assisted product governance, member-outcome monitoring and product-retirement controls; no second weekly distribution scan, social retry, outreach, spend, schedule, credential or permission change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-30T16:39:51.882-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review reconfirmed the recurring report-only deployment/source-read retry defect and recovered it through the previously blocked narrow runner and regression-test patch.",
+      "status": "recovered",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "dailyCycleStateChecks": 1,
+        "socialQueueChecks": 1,
+        "usageLedgerChecks": 1,
+        "sourceRetryDefectChecks": 1,
+        "codeFilesChanged": 2,
+        "regressionTestsRun": 18,
+        "validationCommandsRun": 4,
+        "previewDeploymentChecks": 1,
+        "productionDeploymentChecks": 2,
+        "runtimeErrorChecks": 2,
+        "verifiedOperationsRunsReviewed": 1,
+        "recoveryBranchesCreated": 1,
+        "recoveryPullRequestsCreated": 1,
+        "recoveryPullRequestsMerged": 1,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel"
+      ],
+      "summary": "Recovered the repeated report-only deployment/source-read race in scripts/run-secure-operations.cjs. Root cause was that an exact deployment_commit_mismatch retry retained the stale operationCommit after Production advanced. PR #232 now rechecks that main is unchanged, refreshes the authoritative Production health commit, revalidates that any drift is limited to the two approved reporting files, retries with the refreshed commit, and fails closed before any scheduling or reconciliation if Production identity is invalid or operational files changed. All 18 repository tests passed, syntax and diff validation passed, the two-file Vercel Preview was READY, PR #232 merged as c7108d760d19b88ab3246fae33e757faa04a82ad, exact-current Production is READY, verified-operations run 36774020831 completed with 0 distribution attempts and 0 source/action exceptions, and Vercel reports no runtime errors. Today's two articles, one Alert, sent LinkedIn post, and October 1 reservation remain intact. The historical September 16-28 usage-ledger backlog remains unreconciled. No content, scheduler, UTM, destination, credential, editorial gate, Cloud-task setting, spend or external authority changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
