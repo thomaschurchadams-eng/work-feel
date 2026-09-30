@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "alloya-cuusd-stablecoin-pilot",
+      "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
+      "url": "/news/alloya-cuusd-stablecoin-pilot.html",
+      "publishedAt": "2026-09-30T07:00:00-04:00",
+      "section": "news",
+      "beat": "stablecoin-institutional-payments",
+      "functions": [
+        "payments-deposits",
+        "finance-treasury",
+        "risk-compliance",
+        "operations",
+        "technology"
+      ],
+      "technologies": [
+        "realtime-embedded-finance",
+        "governance-risk",
+        "data-decisioning"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, treasury, digital-assets and risk leaders",
+      "secondaryAudiences": [
+        "compliance and BSA/AML teams",
+        "finance and accounting teams",
+        "technology and information-security leaders",
+        "executive management"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/news/sofi-stablecoin-card-settlement.html",
+        "/news/fincen-ncua-digital-credentials-credit-union-cip.html"
+      ],
+      "sourceTier": 1,
+      "score": 96.1
+    },
+    {
       "id": "apple-pay-card-issuer-class-certification",
       "title": "Apple Pay Fee Case Expands to a Nationwide Issuer Class",
       "url": "/news/apple-pay-card-issuer-class-certification.html",

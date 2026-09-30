@@ -6,89 +6,168 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-29",
+    "date": "2026-09-30",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "mobile-wallet-issuer-fees-antitrust",
-      "small-business-credit-risk-ai-investment",
-      "enterprise-ai-budgeting",
-      "credit-union-financial-crime-governance",
-      "third-party-data-breach-response",
       "stablecoin-institutional-payments",
-      "ai-infrastructure-deployment",
-      "ai-macroeconomic-risk",
+      "credit-union-digital-payments",
+      "credit-union-data-products",
+      "digital-banking-platforms",
+      "enterprise-ai-agents",
+      "ai-public-policy",
+      "ai-enabled-cybersecurity",
+      "mortgage-credit-scoring",
+      "consumer-ai-platforms",
       "agent-safety-platforms",
-      "ai-enabled-cybersecurity-threats",
-      "account-to-account-fraud-scoring",
-      "international-ai-policy"
+      "international-ai-policy",
+      "board-governance-management-information"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Apple Pay Fee Case Expands to a Nationwide Issuer Class",
-        "url": "https://creditunionainews.com/news/apple-pay-card-issuer-class-certification.html",
-        "primaryFunctionalAudience": "Payments, finance, legal and card-operations leaders",
+        "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
+        "url": "https://creditunionainews.com/news/alloya-cuusd-stablecoin-pilot.html",
+        "primaryFunctionalAudience": "Payments, treasury, digital-assets and risk leaders",
         "promotionPriority": "High",
-        "socialDecision": "queued-2026-09-29-11:30-et"
+        "socialDecision": "eligible-pending-live-verification"
       }
     ],
     "rejections": [
       {
-        "title": "SMB Lending Expands as Delinquencies and AI Investment Rise",
-        "reason": "a current multi-institution survey with useful risk signals, but no named credit-union implementation, new rule or independently validated operating result"
+        "title": "Center Parc Credit Union Adds Alacriti Loan Payments",
+        "reason": "current deployment, but a standard vendor announcement with less system-wide consequence than the selected stablecoin pilot"
       },
       {
-        "title": "Financial Firms Lead Enterprise AI Spending Plans",
-        "reason": "a survey of large financial-services and insurance companies without a credit-union-specific decision, deployment or measured result"
+        "title": "CUDX Introduces Cooperative Intelligence Data Products",
+        "reason": "promotional launch material without independently verified implementation results"
       },
       {
-        "title": "Former JAFCU CEO Faces Federal Charges",
-        "reason": "a material credit-union governance and alleged financial-crime event without the substantive AI or technology operating connection required for CUAI publication"
+        "title": "PSECU Selects Candescent Digital Banking Platform",
+        "reason": "single vendor announcement without measured member or operating outcomes"
       },
       {
-        "title": "FAIRWINDS Vendor Breach Draws Law-Firm Investigation",
-        "reason": "a relevant third-party security event disclosed last week, but the current report adds no material technical finding, regulatory action or transferable implementation detail"
+        "title": "OpenAI Launches Enterprise Agent Workspace",
+        "reason": "no named credit-union deployment or credit-union-specific operating decision"
       },
       {
-        "title": "Citi and Coinbase Expand Institutional Stablecoin Payments",
-        "reason": "a current bank and digital-asset partnership without a named credit-union implementation or immediate operating decision"
+        "title": "White House Announces Voluntary AI Commitments",
+        "reason": "no binding credit-union requirement or specific implementation deadline"
       },
       {
-        "title": "Cerebras Supplies AI Systems to Gimlet Labs",
-        "reason": "a large AI-infrastructure deployment with no direct credit-union technology decision or member-service implication"
+        "title": "Visa Warns of AI-Accelerated Cyber Threats",
+        "reason": "weaker primary-source evidence and overlap with recent FS-ISAC cyber coverage"
       },
       {
-        "title": "Federal Reserve Governor Links AI Demand to Near-Term Inflation",
-        "reason": "useful macroeconomic context without a specific credit-union implementation, control change or technology operating event"
+        "title": "Rocket Expands VantageScore Use",
+        "reason": "substantially duplicates the September 11 VantageScore implementation coverage"
       },
       {
-        "title": "Nvidia Launches OpenShell and Sentry Agent-Safety Tools",
-        "reason": "a current vendor-tool launch without a named credit-union deployment or independently validated financial-sector result"
+        "title": "Microsoft Expands Copilot Into a Consumer Super-App",
+        "reason": "no named credit-union deployment or immediate regulated-finance operating event"
       },
       {
-        "title": "AI Is Accelerating Hacking Against Smaller Institutions",
-        "reason": "broad secondary threat analysis without a discrete new credit-union incident, official directive or implementation result"
+        "title": "Nvidia Releases Agent Safety Platform",
+        "reason": "no credit-union implementation and already screened in the prior cycle"
       },
       {
-        "title": "Visa Adds a Unified Fraud Score to A2A Protect",
-        "reason": "a relevant AI fraud-control launch from September 11 that falls outside the current News window and lacks a named U.S. credit-union deployment"
-      },
-      {
-        "title": "European AI Policy and Investment Initiatives Continue",
-        "reason": "international policy context without a new U.S. credit-union requirement or operating decision in the current cycle"
+        "title": "Bank of England Studies AI Debt and Intervention Risk",
+        "reason": "UK-specific and less directly actionable for U.S. credit-union operations"
       }
     ],
-    "status": "article-complete-pending-deployment",
+    "status": "article-1-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
-    "updatedAt": "2026-09-29T07:00:00-04:00"
+    "updatedAt": "2026-09-30T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-29",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "mobile-wallet-issuer-fees-antitrust",
+        "small-business-credit-risk-ai-investment",
+        "enterprise-ai-budgeting",
+        "credit-union-financial-crime-governance",
+        "third-party-data-breach-response",
+        "stablecoin-institutional-payments",
+        "ai-infrastructure-deployment",
+        "ai-macroeconomic-risk",
+        "agent-safety-platforms",
+        "ai-enabled-cybersecurity-threats",
+        "account-to-account-fraud-scoring",
+        "international-ai-policy"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Apple Pay Fee Case Expands to a Nationwide Issuer Class",
+          "url": "https://creditunionainews.com/news/apple-pay-card-issuer-class-certification.html",
+          "primaryFunctionalAudience": "Payments, finance, legal and card-operations leaders",
+          "promotionPriority": "High",
+          "socialDecision": "queued-2026-09-29-11:30-et"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "SMB Lending Expands as Delinquencies and AI Investment Rise",
+          "reason": "a current multi-institution survey with useful risk signals, but no named credit-union implementation, new rule or independently validated operating result"
+        },
+        {
+          "title": "Financial Firms Lead Enterprise AI Spending Plans",
+          "reason": "a survey of large financial-services and insurance companies without a credit-union-specific decision, deployment or measured result"
+        },
+        {
+          "title": "Former JAFCU CEO Faces Federal Charges",
+          "reason": "a material credit-union governance and alleged financial-crime event without the substantive AI or technology operating connection required for CUAI publication"
+        },
+        {
+          "title": "FAIRWINDS Vendor Breach Draws Law-Firm Investigation",
+          "reason": "a relevant third-party security event disclosed last week, but the current report adds no material technical finding, regulatory action or transferable implementation detail"
+        },
+        {
+          "title": "Citi and Coinbase Expand Institutional Stablecoin Payments",
+          "reason": "a current bank and digital-asset partnership without a named credit-union implementation or immediate operating decision"
+        },
+        {
+          "title": "Cerebras Supplies AI Systems to Gimlet Labs",
+          "reason": "a large AI-infrastructure deployment with no direct credit-union technology decision or member-service implication"
+        },
+        {
+          "title": "Federal Reserve Governor Links AI Demand to Near-Term Inflation",
+          "reason": "useful macroeconomic context without a specific credit-union implementation, control change or technology operating event"
+        },
+        {
+          "title": "Nvidia Launches OpenShell and Sentry Agent-Safety Tools",
+          "reason": "a current vendor-tool launch without a named credit-union deployment or independently validated financial-sector result"
+        },
+        {
+          "title": "AI Is Accelerating Hacking Against Smaller Institutions",
+          "reason": "broad secondary threat analysis without a discrete new credit-union incident, official directive or implementation result"
+        },
+        {
+          "title": "Visa Adds a Unified Fraud Score to A2A Protect",
+          "reason": "a relevant AI fraud-control launch from September 11 that falls outside the current News window and lacks a named U.S. credit-union deployment"
+        },
+        {
+          "title": "European AI Policy and Investment Initiatives Continue",
+          "reason": "international policy context without a new U.S. credit-union requirement or operating decision in the current cycle"
+        }
+      ],
+      "status": "article-complete-pending-deployment",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
+      "updatedAt": "2026-09-29T07:00:00-04:00"
+    },
     {
       "date": "2026-09-28",
       "fullArticleCount": 1,

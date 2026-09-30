@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-29T07:00:00-04:00",
+  "lastStandardRun": "2026-09-30T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "Apple Pay Fee Case Expands to a Nationwide Issuer Class",
-    "url": "https://creditunionainews.com/news/apple-pay-card-issuer-class-certification.html",
-    "publishedAt": "2026-09-29T07:00:00-04:00",
+    "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
+    "url": "https://creditunionainews.com/news/alloya-cuusd-stablecoin-pilot.html",
+    "publishedAt": "2026-09-30T07:00:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
@@ -2488,6 +2488,56 @@
       "date": "2026-07-24",
       "headline": "Nintex Publishes NCUA Exam-Readiness Guidance",
       "reason": "vendor commentary rather than a distinct new event"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "Center Parc Credit Union Adds Alacriti Loan Payments",
+      "reason": "a current credit-union deployment, but a standard vendor announcement with less system-wide consequence than the selected institutional stablecoin pilot"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "CUDX Introduces Cooperative Intelligence Data Products",
+      "reason": "credit-union-specific and AI-relevant, but promotional launch material without independently verified implementation results"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "PSECU Selects Candescent Digital Banking Platform",
+      "reason": "a material platform decision, but the available evidence was a single vendor announcement without measured member or operating outcomes"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "OpenAI Launches Enterprise Agent Workspace",
+      "reason": "a current enterprise release without a named credit-union deployment or credit-union-specific operating decision"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "White House Announces Voluntary AI Commitments",
+      "reason": "a broad voluntary policy signal without a binding credit-union requirement or specific implementation deadline"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "Visa Warns of AI-Accelerated Cyber Threats",
+      "reason": "credible sector relevance, but weaker primary-source evidence and substantial overlap with recent FS-ISAC cyber coverage"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "Rocket Expands VantageScore Use",
+      "reason": "a material mortgage-market signal that substantially duplicates the September 11 VantageScore implementation coverage"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "Microsoft Expands Copilot Into a Consumer Super-App",
+      "reason": "a significant technology release without a named credit-union deployment or immediate regulated-finance operating event"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "Nvidia Releases Agent Safety Platform",
+      "reason": "a vendor platform release without a credit-union implementation and already covered in the prior bounded candidate cycle"
+    },
+    {
+      "date": "2026-09-30",
+      "headline": "Bank of England Studies AI Debt and Intervention Risk",
+      "reason": "authoritative analysis, but UK-specific and less directly actionable for U.S. credit-union operations than the selected packages"
     }
   ],
   "notes": "Automation updates this file on each newsroom run so retries are idempotent and failures remain visible.",
@@ -2575,7 +2625,7 @@
     {
       "functionalArea": "board-governance-management-information",
       "opportunity": "AI-assisted board reporting, management-information synthesis and decision-evidence controls",
-      "priority": "next"
+      "priority": "in-progress-2026-09-30"
     }
   ]
 }

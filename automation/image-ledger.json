@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "alloya-cuusd-stablecoin-pilot",
+      "articleUrl": "/news/alloya-cuusd-stablecoin-pilot.html",
+      "imagePath": "/assets/alloya-cuusd-stablecoin-pilot.jpg",
+      "publishedAt": "2026-09-30T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-cinematic-3d-illustration",
+      "subject": "controlled-institutional-stablecoin-pilot",
+      "composition": "secured-token-across-reserve-identity-and-reconciliation-checkpoints",
+      "perspective": "wide-elevated-oblique",
+      "palette": "deep-navy-cyan-teal-white-amber",
+      "lighting": "controlled-institutional-studio",
+      "texture": "frosted-glass-metallic-token-and-luminous-data-rails",
+      "scene": "a-secured-institutional-token-moves-across-a-controlled-blockchain-payment-network-between-reserve-identity-and-reconciliation-checkpoints",
+      "conceptScore": 94.4,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "institutional-payment-pilot-control-room",
+          "score": 81.4
+        },
+        {
+          "medium": "paper-cut-diagram",
+          "subject": "stablecoin-reserve-redemption-and-reconciliation",
+          "score": 80.6
+        }
+      ]
+    },
+    {
       "id": "apple-pay-card-issuer-class-certification",
       "articleUrl": "/news/apple-pay-card-issuer-class-certification.html",
       "imagePath": "/assets/apple-pay-card-issuer-class-certification.jpg",
