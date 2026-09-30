@@ -2022,6 +2022,42 @@
       ],
       "summary": "Verified September 30 current main and exact READY Production after two machine-observable article outcomes. The Alloya CUUSD High item is uniquely scheduled for the fixed Wednesday 11:30 a.m. ET CreditUnionAI News slot with original CUAI UTMs, image, postId and duplicate=false; the Board Reporting Library item is uniquely scheduled for the next free fixed slot on October 1 at 11:30 a.m. ET, preserving one-post-per-day and the weekly limit. Current verified-operations runs succeeded and Vercel reports no runtime errors. Reconfirmed the repeated read-only defect in scripts/run-secure-operations.cjs: after deployment_commit_mismatch, source retries retain the stale operationCommit instead of refreshing the effective READY Production SHA. Created fresh recovery branches from exact current main and attempted the narrow fail-closed refresh repair, but the security-sensitive runner write was blocked before mutation; branch comparison proved zero changed files and zero commits. The canonical usage ledger still has the unreconciled September 16-28 historical gap. No content, scheduler, UTM, destination, credential, editorial gate, Cloud-task setting, spend or external authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-09-30T15:35:00-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI Operating System run after the completed September 30 two-article publisher handoff.",
+      "status": "success",
+      "workUnits": {
+        "policyAndCoordinationFilesReviewed": 5,
+        "agentBusCommentsReviewed": 30,
+        "portfolioArticlesReviewed": 23,
+        "publicSearchQueries": 8,
+        "alertCandidatesEvaluated": 5,
+        "filesChanged": 2,
+        "pullRequestsMerged": 1,
+        "dailyCycleHistoryEntriesPreserved": 50,
+        "previewDeploymentsChecked": 2,
+        "productionDeploymentsChecked": 1,
+        "liveHomepageChecks": 1,
+        "liveAlertsArchiveChecks": 1,
+        "runtimeErrorChecks": 1,
+        "analyticsReceiptBundlesReviewed": 1,
+        "socialSchedulingAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer",
+        "Google Analytics",
+        "Search Console",
+        "public web",
+        "creditunionainews.com"
+      ],
+      "summary": "Published one qualified September 30 Agent Security Alert from Reuters reporting on the FTC's industry-wide probe of OpenAI, Anthropic, METR and other AI labs over agentic-AI consumer and security risks. Clarified that New York Post reported first and changed the homepage attribution label from Primary source to Source. The two-file Alert package preserved all 50 prior daily-cycle history entries byte-for-byte, kept both completed articles intact, and merged as commit 7133f12. Production is READY on the exact commit, the verified operations workflow succeeded, the live homepage and Alerts archive show the new Alert, and Vercel reports no runtime errors. Fresh authenticated operating evidence reports 340 rolling-28-day active users, 363 sessions, 114 engaged sessions and 23 90%-scrolled users; LinkedIn contributed 17 sessions/4 engaged, Search Console 15 clicks from 1,315 impressions, and Buffer 143 impressions/103 reach. Growth volume is above the September threshold, while qualified acquisition and deep reading remain the operational constraint. The next portfolio gap remains AI-assisted product governance, member-outcome monitoring and product-retirement controls; no second weekly distribution scan, social retry, outreach, spend, schedule, credential or permission change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
