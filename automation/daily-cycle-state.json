@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-09-30",
     "fullArticleCount": 2,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -43,6 +43,11 @@
         "primaryFunctionalAudience": "Board chairs, CEOs, corporate secretaries and strategy leaders",
         "promotionPriority": "Library",
         "socialDecision": "queued-2026-10-01-11:30-et-next-free-slot"
+      },
+      {
+        "type": "alert",
+        "title": "Reuters Reports FTC Probe of OpenAI, Anthropic and METR Over Agentic-AI Security Risks",
+        "url": "https://creditunionainews.com/alerts/#ftc-agentic-ai-security-probe-openai-anthropic-metr"
       }
     ],
     "rejections": [
@@ -87,11 +92,11 @@
         "reason": "UK-specific and less directly actionable for U.S. credit-union operations"
       }
     ],
-    "status": "two-article-target-complete-live-verified",
+    "status": "two-article-and-alert-complete",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
-    "updatedAt": "2026-09-30T07:45:00-04:00"
+    "updatedAt": "2026-09-30T15:25:00-04:00"
   },
   "history": [
     {
