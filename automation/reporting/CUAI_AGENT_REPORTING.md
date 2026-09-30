@@ -4,6 +4,14 @@
 
 Make CreditUnionAI News agent work visible, auditable, and easy to inspect from GitHub or the Codex desktop workspace without relying on ChatGPT task history.
 
+## Current reporting lifecycle
+
+The standalone scheduled `cuai-ceo` management role is retired. Watney is Tom's main coordination contact and reads existing operational evidence through authorized sources. The CEO-specific run and reporting requirements below describe the historical scheduled role; they do not require its acknowledgment, automatic regeneration of `automation/reports/cuai-ceo-latest.md`, a new assignment, or a review deadline. The existing snapshot remains dated evidence, not a newly refreshed report.
+
+Issue #160's event schema, fields, and destinations remain unchanged, including handoffs to `cuai-ceo` as compatibility receipts. Retirement alone, including an unacknowledged compatibility receipt, is not a stale-handoff incident. Genuine overdue explicit assignments, operational failures, and material ledger receipts remain subject to existing controls.
+
+This clarification transfers no external-action, publishing, finance, credential, or production authority and adds no roles, schedules, reports, or runtime dependencies. Existing editorial portfolio control, analytics learning, alerts, homepage maintenance, and distribution checks remain in force.
+
 ## Persistent-role coordination
 
 Every persistent CUAI role that uses this reporting contract must also read all three coordination surfaces at the start of its run:
@@ -24,7 +32,7 @@ The latest management view lives at:
 
 `automation/reports/cuai-ceo-latest.md`
 
-The CUAI CEO must refresh this file on each successful weekday CEO run. It is a rolling snapshot, not an append-only log.
+Historically, the CUAI CEO refreshed this file on each successful weekday CEO run as a rolling snapshot, not an append-only log. Retirement creates no automatic refresh requirement.
 
 Required sections:
 
