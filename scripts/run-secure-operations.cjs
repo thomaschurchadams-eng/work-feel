@@ -28,7 +28,15 @@ async function readSource(route){
   response=await invoke(route,{});
   const deploymentRace=response.status===403&&response.data?.error==='deployment_commit_mismatch';
   if(!deploymentRace||attempt===3)return response;
-  receipts.sourceRetries.push({route,reason:'deployment_commit_mismatch',attempt});save();
+  const previousCommit=operationCommit;
+  const current=await github('/commits/main');
+  if(current.sha!==process.env.DEPLOYED_SHA)throw Error('main_changed_during_source_retry');
+  const health=await invoke('operations-health',{});
+  const drift=health.status===200&&health.data?.ok===true?await reportOnlyDrift(health.data.commit,process.env.DEPLOYED_SHA):{allowed:false,files:[]};
+  const refreshed=health.status===200&&health.data.ok===true&&health.data.environment==='production'&&drift.allowed;
+  if(!refreshed)throw Error('production_identity_refresh_failed');
+  operationCommit=health.data.commit;
+  receipts.sourceRetries.push({route,reason:'deployment_commit_mismatch',attempt,fromCommit:previousCommit,toCommit:operationCommit});save();
   await sleep(5000);
  }
  return response;
@@ -88,7 +96,7 @@ async function reconcileSentQueue(bufferResponse){
  // production health check, so retry only the exact deployment-mismatch case.
  // Other source failures remain visible immediately and never become zero data.
  let bufferMetrics=null;
- for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(response,null,2)+'\n');if(route==='buffer-metrics')bufferMetrics=response;if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){receipts.errors.push({route,error:error.message});}}
+ for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(response,null,2)+'\n');if(route==='buffer-metrics')bufferMetrics=response;if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){if(['main_changed_during_source_retry','production_identity_refresh_failed'].includes(error.message))throw error;receipts.errors.push({route,error:error.message});}}
  // Buffer is authoritative for sent state. Reconcile only an exact existing
  // scheduled item after its fixed due time, with matching immutable URLs,
  // reservation, channel and post id. A reconciliation commit ends this run;
