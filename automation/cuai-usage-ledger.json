@@ -2195,6 +2195,28 @@
       ],
       "summary": "Published one qualified October 1 Credit Union Liquidation Alert from NCUA's direct September 30 notice that Jackson Area Federal Credit Union was liquidated after Five Star Credit Union purchased some assets and assumed member shares. PR #238 merged as 72f8ef8caff1a21cf84e82f03b66838b5f71f0f4 after review; the first review found a missing ticker renderer, and the final package restored a site-wide, deduplicated rolling 14-day ticker linking each Alert exactly once. The package preserved all 51 prior daily-cycle history entries byte-for-byte, kept the completed Gulf Winds article intact, and advanced today's Alert count from 0 to 1. Exact production was READY; live checks showed the new Alert on the homepage, Alert archive and ticker with no site runtime errors. The Board Reporting LinkedIn post was observed sent exactly once at 11:30 a.m. ET with duplicate=false. Fresh authenticated evidence reports 364 rolling-28-day active users, 385 sessions, 115 engaged sessions and 500 pageviews; Search Console reports 17 clicks from 1,303 impressions. Volume is above the September threshold, while engagement depth and qualified acquisition remain the operating constraint. CAI measurement recorded 324 banner impressions (132 A, 192 B), 6 generic clicks and 3 attributable B-header clicks; downstream CAI destination evidence remains unavailable rather than zero, so no winner was declared. The next portfolio gap remains AI-assisted product governance, member-outcome monitoring and product-retirement controls in a non-control-framework format. The W40 competitive-distribution scan was not duplicated. The historical September 16-28 usage-ledger backlog remains unreconciled. No social creation, outreach, spend, schedule, credential, permission, pricing, legal, privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T20:40:16+00:00",
+      "actor": "cuai-podcast-website",
+      "runType": "manual",
+      "trigger": "Tom approved the final podcast mix and publication to the existing show and website; delegated website release uses direct approved audio while Spotify is blocked.",
+      "status": "success",
+      "workUnits": {
+        "filesChanged": 7,
+        "repositoryTestsPassed": 71,
+        "browserViewportsChecked": 2,
+        "podcastEpisodesPrepared": 1,
+        "articlesPublished": 0,
+        "socialSchedulingAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "ChatGPT Library",
+        "GitHub"
+      ],
+      "summary": "Prepared and tested the approved 6:14 podcast website package with byte-identical audio, source-qualified show notes, approved narration script, home/directory links and regular sitemaps. Desktop/mobile native playback passed. This entry records preparation and release initiation, not a verified production outcome; Spotify publication remains pending. Existing reporting, article inventory and release controls preserved.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
