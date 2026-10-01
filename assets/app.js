@@ -1100,8 +1100,36 @@
   // Keep the archive and ticker on their existing recent window; homepage priority needs a stricter freshness rule.
   const preparedAlerts = getRecentAlerts(alertsData);
   const homepageAlerts = getRecentAlerts(alertsData, 3);
-  const tickerAlerts = preparedAlerts.slice(0, 3);
+  const tickerAlerts = preparedAlerts;
 
+  const renderAlertsTicker = () => {
+    const header = document.querySelector('.site-header');
+    if (!header || !tickerAlerts.length || document.querySelector('#alerts-ticker')) return;
+
+    const ticker = document.createElement('section');
+    ticker.id = 'alerts-ticker';
+    ticker.className = 'ticker-bar';
+    ticker.setAttribute('aria-label', 'Recent AI Newsroom Alerts');
+    ticker.innerHTML = `
+      <div class="container ticker-track">
+        <a class="ticker-label" href="/alerts/">Alerts</a>
+        <div class="ticker-window">
+          <div class="ticker-strip">
+            ${tickerAlerts.map((item) => `
+              <a class="ticker-item" href="/alerts/#${item.slug}">
+                <span class="ticker-pill">${item.label}</span>
+                <span class="ticker-text">${item.headline}</span>
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    `;
+
+    header.insertAdjacentElement('afterend', ticker);
+  };
+
+  renderAlertsTicker();
 
   const renderLatestHomepageAlert = () => {
     const container = document.querySelector('#latest-alert');
