@@ -4,6 +4,14 @@
 
 Turn the existing CreditUnionAI News scheduled roles into a coordinated asynchronous agent organization without adding unnecessary persistent agents or turning routine handoffs into production deployments.
 
+## Current coordination lifecycle
+
+The standalone scheduled `cuai-ceo` management role is retired. Watney is Tom's main coordination contact and reads existing operational evidence through authorized sources. References below to CEO orchestration describe the historical scheduled role, not an active schedule or a new assignment of authority.
+
+Issue #160 retains its existing event schema, fields, and destinations, including publisher handoffs to `cuai-ceo` as compatibility receipts. The retired scheduled CEO requires no acknowledgment, automatic management-report regeneration, new assignment, or review deadline. Retirement alone, including an unacknowledged compatibility receipt, is not a stale-handoff incident. Genuine overdue explicit assignments, operational failures, and material ledger receipts remain governed by existing controls.
+
+This clarification transfers no external-action, publishing, finance, credential, or production authority. Existing editorial portfolio control, analytics learning, alerts, homepage maintenance, and distribution checks remain in force. It adds no roles, schedules, reports, or runtime dependencies.
+
 ## Runtime bus
 
 The authoritative fast-changing agent communication surface is GitHub issue #160:
@@ -31,7 +39,7 @@ Every persistent role must read the goals file before acting on agent-bus work. 
 ## Persistent roles
 
 - `daily-publisher` — owns the weekday article cycle and bounded eligible LinkedIn distribution under `automation/scheduled-tasks/publish-cuai-daily-article.md`.
-- `cuai-ceo` — owns cross-functional prioritization, bounded internal decisions, delegation, goal progress, commercial prioritization within authority, and escalation to Tom.
+- `cuai-ceo` — owns cross-functional prioritization, bounded internal decisions, delegation, goal progress, commercial prioritization within authority, and escalation to Tom.- `cuai-ceo` — retired standalone scheduled management role; retained as a compatibility receipt destination under the lifecycle clarification above.
 - `reliability-watch` — owns operational failure detection, safe recovery, stale-handoff detection, and duplicate/conflict detection.
 - `specialist:<name>` — temporary delegated subagent; not a persistent role.
 
@@ -72,7 +80,7 @@ Post one compact issue comment for each material state transition. Use the field
 
 Never put credentials, secrets, tokens, customer PII, private email content, sponsor-confidential information, or sensitive unpublished material in the bus.
 
-## CEO orchestration
+## CEO orchestration## Historical CEO orchestration
 
 The CEO is the coordinating role, not another worker queue.
 
