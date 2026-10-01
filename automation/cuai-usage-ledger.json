@@ -2195,6 +2195,36 @@
       ],
       "summary": "Published one qualified October 1 Credit Union Liquidation Alert from NCUA's direct September 30 notice that Jackson Area Federal Credit Union was liquidated after Five Star Credit Union purchased some assets and assumed member shares. PR #238 merged as 72f8ef8caff1a21cf84e82f03b66838b5f71f0f4 after review; the first review found a missing ticker renderer, and the final package restored a site-wide, deduplicated rolling 14-day ticker linking each Alert exactly once. The package preserved all 51 prior daily-cycle history entries byte-for-byte, kept the completed Gulf Winds article intact, and advanced today's Alert count from 0 to 1. Exact production was READY; live checks showed the new Alert on the homepage, Alert archive and ticker with no site runtime errors. The Board Reporting LinkedIn post was observed sent exactly once at 11:30 a.m. ET with duplicate=false. Fresh authenticated evidence reports 364 rolling-28-day active users, 385 sessions, 115 engaged sessions and 500 pageviews; Search Console reports 17 clicks from 1,303 impressions. Volume is above the September threshold, while engagement depth and qualified acquisition remain the operating constraint. CAI measurement recorded 324 banner impressions (132 A, 192 B), 6 generic clicks and 3 attributable B-header clicks; downstream CAI destination evidence remains unavailable rather than zero, so no winner was declared. The next portfolio gap remains AI-assisted product governance, member-outcome monitoring and product-retirement controls in a non-control-framework format. The W40 competitive-distribution scan was not duplicated. The historical September 16-28 usage-ledger backlog remains unreconciled. No social creation, outreach, spend, schedule, credential, permission, pricing, legal, privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T16:40:49-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review found the September 14 high-priority daily-cycle finalization-prevention assignment still open on the agent bus even though the durable prevention fix and canonical recovery evidence were already complete.",
+      "status": "recovered",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "dailyCycleStateChecks": 1,
+        "publicationLedgerChecks": 2,
+        "socialQueueChecks": 1,
+        "productionDeploymentChecks": 2,
+        "runtimeErrorChecks": 1,
+        "verifiedOperationsRunsReviewed": 1,
+        "agentBusAssignmentsReviewed": 3,
+        "reliabilityPreventionChecks": 1,
+        "staleAgentBusHandoffsRecovered": 1,
+        "issueCommentsCreated": 1,
+        "usageLedgerChecks": 1,
+        "liveArticleChecks": 2,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "creditunionainews.com"
+      ],
+      "summary": "Recovered a stale internal reliability handoff without changing production behavior. Issue #160 still showed the September 14 high-priority assignment to eliminate destructive daily-cycle finalization writes as open, although PR #211 merged the durable prevention as fb0531a8e918602d3954dd2860a2030baf74dd17 and the canonical usage ledger already recorded that recovery. Current main retains the machine-readable hard stop against connector-only secondary whole-file finalization and the validator's fatal UTF-8, duplicate-date, immutable-history and exact prior-current preservation checks. The October 1 operating cycle preserved all 51 prior daily-cycle history entries; exact-current Production is READY; workflow run 36915956593 succeeded; the Gulf Winds article returned HTTP 200 from both public and exact deployment URLs; today's sole LinkedIn item remains sent exactly once with duplicate=false. Added issue #160 completion comment 5940141775 using the original dedupe key and nextOwner none. Root cause was an omitted agent-bus closeout after the code recovery and ledger record were completed. The earlier live-page fetch ambiguity was transient and self-resolved on immediate retry. The historical September 16-28 usage-ledger backlog remains unreconciled. No code, content, social item, schedule, destination, UTM, credential, editorial gate, spend or external authority changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
