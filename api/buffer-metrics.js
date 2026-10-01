@@ -228,6 +228,7 @@ module.exports = async function handler(req, res) {
               dueAt
               sentAt
               externalLink
+              assets { mimeType }
               metrics {
                 type
                 name
@@ -269,6 +270,7 @@ module.exports = async function handler(req, res) {
           dueAt: post.dueAt || null,
           sentAt: post.sentAt || null,
           externalLink: post.externalLink || null,
+          videoAttached: post.assets?.length === 1 && post.assets[0].mimeType === 'video/mp4',
           ...utm,
           metrics,
           metricsUpdatedAt: post.metricsUpdatedAt || null
