@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Credit Union Liquidation',
+      headline: 'NCUA Liquidates Jackson Area FCU; Five Star Assumes Member Shares',
+      summary:
+        'The National Credit Union Administration said on September 30 that Five Star Credit Union purchased some assets and assumed the share accounts of Jackson Area Federal Credit Union before NCUA liquidated the institution. NCUA said Jackson Area was insolvent, had violated federal law and rules including operating in an unsafe and unsound manner, and had no prospect of restoring viable operations. The credit union served 15,704 members and reported about $60 million in assets; NCUA said transferring members should experience no service interruption and insured accounts remain protected.',
+      impact:
+        'Credit-union boards, supervisory committees, executives and internal-audit teams should treat the liquidation as a safety-and-soundness and governance signal: independently reconcile external account and call-report evidence, test management-override and high-risk-transfer controls, verify escalation authority, and keep continuity and member-communication plans ready for a rapid assumption or resolution. This is an institution-specific liquidation, not a new rule or evidence of system-wide distress.',
+      sourceName: 'National Credit Union Administration',
+      sourceUrl:
+        'https://ncua.gov/newsroom/press-release/2026/jackson-area-federal-credit-union-closes-five-star-credit-union-assumes-members-and-shares',
+      date: 'Sep 30, 2026',
+      slug: 'ncua-liquidates-jackson-area-fcu-five-star-assumes-shares'
+    },
+    {
       label: 'Agent Security',
       headline: 'Reuters Reports FTC Probe of OpenAI, Anthropic and METR Over Agentic-AI Security Risks',
       summary:

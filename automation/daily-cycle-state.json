@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-10-01",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -34,6 +34,11 @@
         "primaryFunctionalAudience": "Board, strategy, operations and integration leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "alert",
+        "title": "NCUA Liquidates Jackson Area FCU; Five Star Assumes Member Shares",
+        "url": "https://creditunionainews.com/alerts/#ncua-liquidates-jackson-area-fcu-five-star-assumes-shares"
       }
     ],
     "rejections": [
@@ -82,11 +87,11 @@
         "reason": "useful policy context incorporated into the selected transaction story rather than published as a separate article"
       }
     ],
-    "status": "article-complete-pending-deployment",
+    "status": "article-and-alert-complete",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
-    "updatedAt": "2026-10-01T07:00:00-04:00"
+    "updatedAt": "2026-10-01T15:22:00-04:00"
   },
   "history": [
     {
