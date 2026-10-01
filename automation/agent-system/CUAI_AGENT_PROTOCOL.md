@@ -39,7 +39,7 @@ Every persistent role must read the goals file before acting on agent-bus work. 
 ## Persistent roles
 
 - `daily-publisher` — owns the weekday article cycle and bounded eligible LinkedIn distribution under `automation/scheduled-tasks/publish-cuai-daily-article.md`.
-- `cuai-ceo` — owns cross-functional prioritization, bounded internal decisions, delegation, goal progress, commercial prioritization within authority, and escalation to Tom.- `cuai-ceo` — retired standalone scheduled management role; retained as a compatibility receipt destination under the lifecycle clarification above.
+- `cuai-ceo` — retired standalone scheduled management role; retained as a compatibility receipt destination under the lifecycle clarification above.
 - `reliability-watch` — owns operational failure detection, safe recovery, stale-handoff detection, and duplicate/conflict detection.
 - `specialist:<name>` — temporary delegated subagent; not a persistent role.
 
@@ -80,7 +80,7 @@ Post one compact issue comment for each material state transition. Use the field
 
 Never put credentials, secrets, tokens, customer PII, private email content, sponsor-confidential information, or sensitive unpublished material in the bus.
 
-## CEO orchestration## Historical CEO orchestration
+## Historical CEO orchestration
 
 The CEO is the coordinating role, not another worker queue.
 
