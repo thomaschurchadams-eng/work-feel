@@ -8,17 +8,27 @@ test('signature, algorithm and key failures reject the token',async()=>{for(cons
 test('all endpoints reject public SHA-only calls before any downstream request',async()=>{let calls=0;const saved=global.fetch;global.fetch=async()=>{calls++;throw Error('Unexpected external request');};try{for(const name of ['buffer-schedule','buffer-schedule-image','buffer-schedule-tracked','buffer-metrics','ga4-metrics','search-console-metrics','operations-health']){const handler=require('../api/'+name);let status,result;const response={setHeader(){},status(value){status=value;return this;},json(value){result=value;return this;}};await handler({method:'POST',headers:{},query:{commitSha:'public'},body:{commitSha:'public'}},response);assert.equal(status,401,name);assert.equal(result.ok,false);}assert.equal(calls,0);}finally{global.fetch=saved;}});
 const vm=require('node:vm');const fs=require('node:fs');
 const runner=fs.readFileSync(require('node:path').join(__dirname,'../scripts/run-secure-operations.cjs'),'utf8');
-async function runWorkflow({moved=false,healthFailure=false,timeout=false,queued=false,noReceipt=false,queueChanged=false,delayedHealth=false,productionDrift=null,sourceRace=null,queryFixture=false}={}){
- const sha='a'.repeat(40),productionSha=productionDrift||sourceRace?'c'.repeat(40):sha,calls=[],files={};let healthCalls=0,virtualNow=Date.now(),currentProductionSha=productionSha;class Clock extends Date {static now(){return virtualNow;}};const item={id:'linkedin-test',status:'queued',scheduledFor:new Date(Date.now()+86400000).toISOString(),articleUrl:'https://creditunionainews.com/article',copy:'example'};
- const fakeFs={mkdirSync(){},writeFileSync(path,value){files[path]=value;},readFileSync(){return JSON.stringify({items:queued?[item]:[]});}};
+async function runWorkflow({moved=false,healthFailure=false,timeout=false,queued=false,noReceipt=false,queueChanged=false,delayedHealth=false,productionDrift=null,sourceRace=null,queryFixture=false,refreshFailure=null,reconcile=false,metricFailure=false}={}){
+ const sha='a'.repeat(40),productionSha=productionDrift||sourceRace?'c'.repeat(40):sha,calls=[],files={};let healthCalls=0,virtualNow=Date.now(),currentProductionSha=productionSha,refreshPending=false,refreshFaultInjected=false;class Clock extends Date {static now(){return virtualNow;}};const item={id:'linkedin-test',status:'queued',scheduledFor:new Date(Date.now()+86400000).toISOString(),articleUrl:'https://creditunionainews.com/article',copy:'example'};
+ const scheduled={id:'scheduled-test',status:'scheduled',postId:'sent-post',scheduledFor:new Date(Date.now()-60000).toISOString(),articleUrl:'https://creditunionainews.com/sent-article',distributionUrl:'https://creditunionainews.com/sent-article?utm_source=linkedin',channelId:'channel-test'};
+ const queueItems=[...(queued?[item]:[]),...(reconcile?[scheduled]:[])];
+ const fakeFs={mkdirSync(){},writeFileSync(path,value){files[path]=value;},readFileSync(){return JSON.stringify({items:queueItems});}};
  const processStub={env:{DEPLOYED_SHA:sha,GITHUB_TOKEN:'github-fixture',ACTIONS_ID_TOKEN_REQUEST_URL:'https://identity.example/token',ACTIONS_ID_TOKEN_REQUEST_TOKEN:'fixture'}};
  const fetcher=async(url,options={})=>{calls.push({url:String(url),options});let body={ok:true},status=200;
+ const failureTarget=refreshFailure?.split(':')[0],failureMode=refreshFailure?.split(':')[1];
+ const isRefreshTarget=!refreshFaultInjected&&refreshPending&&(failureTarget==='main'&&String(url).endsWith('/commits/main')||failureTarget==='identity'&&String(url).startsWith('https://identity.example/')||failureTarget==='health'&&String(url).endsWith('/operations-health')||failureTarget==='compare'&&String(url).includes('/compare/'));
+ if(isRefreshTarget)refreshFaultInjected=true;
+ if(isRefreshTarget&&failureMode==='non-error')throw null;
+ if(isRefreshTarget&&failureMode==='timeout')throw Object.assign(Error('private transport details'),{name:'TimeoutError'});
+ if(isRefreshTarget&&failureMode==='http')return {ok:false,status:503,json:async()=>({ok:false,error:'private provider details'})};
+ if(isRefreshTarget&&failureMode==='json')return {ok:true,status:200,json:async()=>{throw SyntaxError('private malformed response');}};
+ if(isRefreshTarget&&failureMode==='malformed')return {ok:true,status:200,json:async()=>failureTarget==='identity'?{value:null}:failureTarget==='main'?{sha:null}:failureTarget==='health'?{ok:true,environment:'production',commit:'malformed'}:{}};
  if(String(url).endsWith('/commits/main'))body={sha:moved?'b'.repeat(40):sha};
  else if(String(url).includes('/compare/')){const comparedSha=String(url).split('/compare/')[1].split('...')[0],unsafe=productionDrift==='unsafe'||sourceRace==='unsafe'&&comparedSha==='b'.repeat(40);body={status:'ahead',merge_base_commit:{sha:comparedSha},behind_by:0,files:[{filename:unsafe?'automation/social-queue.json':'automation/reports/cuai-ceo-latest.md',...(productionDrift==='rename'?{previous_filename:'assets/app.js'}:{})}]};}
  else if(String(url).startsWith('https://identity.example/'))body={value:'signed-fixture'};
- else if(String(url).endsWith('/operations-health')){healthCalls++;if(sourceRace&&healthCalls>1)currentProductionSha=sourceRace==='unsafe'?'b'.repeat(40):sha;body=healthFailure||(delayedHealth&&healthCalls===1)?{ok:false}:{ok:true,commit:currentProductionSha,environment:'production'};}
- else if(String(url).includes('/contents/automation/social-queue.json')&&options.method!=='PUT')body={sha:'queue-version',content:Buffer.from(JSON.stringify({items:[{...item,...(queueChanged?{copy:'Changed after scheduling'}:{})},{id:'untouched',status:'sent'}]})).toString('base64')};
- else if(String(url).includes('/api/')){assert.equal(options.method,'POST');assert.equal(options.headers.Authorization,'Bearer signed-fixture');const suppliedCommit=JSON.parse(options.body).commitSha;if(sourceRace&&String(url).endsWith('/ga4-metrics')&&suppliedCommit===productionSha){status=403;body={ok:false,error:'deployment_commit_mismatch'};}else assert.equal(suppliedCommit,currentProductionSha);if(queryFixture&&String(url).endsWith('/search-console-metrics'))body={ok:true,windows:{sevenDay:{aggregate:{clicks:2},topPages:[{page:'https://creditunionainews.com/news.html',clicks:2}],topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:2}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',page:'https://creditunionainews.com/news.html',clicks:2}],queryReporting:{queries:{status:'available'}}},twentyEightDay:{topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}]}}};if(String(url).endsWith('/buffer-schedule-tracked')){if(timeout)throw Error('ambiguous timeout');if(!noReceipt)body={ok:true,postId:'buffer-receipt',status:'scheduled'};}}
+ else if(String(url).endsWith('/operations-health')){healthCalls++;if(sourceRace&&healthCalls>1)currentProductionSha=sourceRace==='unsafe'||failureTarget==='compare'?'b'.repeat(40):sha;body=healthFailure||(delayedHealth&&healthCalls===1)?{ok:false}:{ok:true,commit:currentProductionSha,environment:'production'};}
+ else if(String(url).includes('/contents/automation/social-queue.json')&&options.method!=='PUT')body={sha:'queue-version',content:Buffer.from(JSON.stringify({items:[...(queued?[{...item,...(queueChanged?{copy:'Changed after scheduling'}:{})}]:[]),...(reconcile?[scheduled]:[]),{id:'untouched',status:'sent'}]})).toString('base64')};
+ else if(String(url).includes('/api/')){assert.equal(options.method,'POST');assert.equal(options.headers.Authorization,'Bearer signed-fixture');const suppliedCommit=JSON.parse(options.body).commitSha;if(sourceRace&&String(url).endsWith('/ga4-metrics')&&suppliedCommit===productionSha){status=403;body={ok:false,error:'deployment_commit_mismatch'};refreshPending=true;}else if(!refreshFailure)assert.equal(suppliedCommit,currentProductionSha);if(metricFailure&&String(url).endsWith('/ga4-metrics'))throw Error('metric retrieval unavailable');if(reconcile&&String(url).endsWith('/buffer-metrics'))body={ok:true,channel:{id:'channel-test'},posts:[{...scheduled,itemId:scheduled.id,sentAt:new Date(Date.now()-30000).toISOString(),externalLink:'https://linkedin.com/posts/fixture'}]};if(queryFixture&&String(url).endsWith('/search-console-metrics'))body={ok:true,windows:{sevenDay:{aggregate:{clicks:2},topPages:[{page:'https://creditunionainews.com/news.html',clicks:2}],topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:2}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',page:'https://creditunionainews.com/news.html',clicks:2}],queryReporting:{queries:{status:'available'}}},twentyEightDay:{topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}]}}};if(String(url).endsWith('/buffer-schedule-tracked')){if(timeout)throw Error('ambiguous timeout');if(!noReceipt)body={ok:true,postId:'buffer-receipt',status:'scheduled'};}}
  return {ok:status<400,status,json:async()=>body};};
  await vm.runInNewContext(runner,{require:name=>name==='node:fs'?fakeFs:require(name),process:processStub,fetch:fetcher,URL,AbortSignal,Buffer,Date:Clock,setTimeout:(fn,delay)=>{virtualNow+=delay;fn();},console:{log(){},error(){}}});
  return {calls,files,process:processStub,productionSha};
@@ -44,4 +54,32 @@ test('uploaded reporting receipts omit query strings while retaining metrics and
  assert.equal(data.windows.twentyEightDay.topQueries[0].clicks,3);
  assert.equal(data.windows.sevenDay.queryReporting.queries.status,'available');
  assert.equal(data.windows.sevenDay.queryTextPersistence,'omitted_from_operation_receipts');
+});
+
+// These fixtures can perform real queue writes in the harness. Refresh failure
+// must stop both paths even when later metric calls would otherwise succeed.
+test('sent-state reconciliation fixture writes its exact existing reservation',async()=>{
+ const result=await runWorkflow({queued:true,reconcile:true});
+ assert.equal(result.calls.filter(c=>c.options.method==='PUT').length,1);
+ assert.equal(result.calls.some(c=>c.url.endsWith('/buffer-schedule-tracked')),false);
+ assert.equal(JSON.parse(result.files['operation-receipts/run.json']).reconciliations[0].count,1);
+});
+for(const target of ['main','identity','health','compare'])for(const mode of ['http','timeout','json','malformed','non-error'])for(const reconcile of [false,true]){
+ test(`refresh ${target} ${mode} blocks ${reconcile?'reconciliation':'queued scheduling'}`,async()=>{
+  const result=await runWorkflow({sourceRace:'report',refreshFailure:`${target}:${mode}`,queued:true,reconcile});
+  assert.equal(result.process.exitCode,1);
+  assert.equal(result.calls.some(c=>c.url.endsWith('/buffer-schedule-tracked')),false);
+  assert.equal(result.calls.some(c=>c.options.method==='PUT'),false);
+  const receipt=JSON.parse(result.files['operation-receipts/run.json']);
+  assert.equal(receipt.status,'failed');
+  assert.equal(receipt.errors.at(-1).error,'production_identity_refresh_failed');
+  assert.equal(JSON.stringify(result.files).includes('private'),false);
+ });
+}
+test('ordinary metric failure stays nonfatal for a verified queued reservation',async()=>{
+ const result=await runWorkflow({queued:true,metricFailure:true});
+ assert.equal(result.calls.filter(c=>c.url.endsWith('/buffer-schedule-tracked')).length,1);
+ assert.equal(result.calls.filter(c=>c.options.method==='PUT').length,1);
+ assert.equal(result.process.exitCode,1);
+ assert.equal(JSON.parse(result.files['operation-receipts/run.json']).status,'attention');
 });

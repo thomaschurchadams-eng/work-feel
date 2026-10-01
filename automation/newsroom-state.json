@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-09-30T07:30:00-04:00",
+  "lastStandardRun": "2026-10-01T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "A Decision-Evidence Standard for AI-Assisted Credit Union Board Reporting",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
-    "publishedAt": "2026-09-30T07:30:00-04:00",
-    "route": "insights"
+    "title": "Gulf Winds Lines Up a Second Bank Acquisition",
+    "url": "https://creditunionainews.com/news/gulf-winds-peoples-exchange-bank-acquisition.html",
+    "publishedAt": "2026-10-01T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-10-01",
+      "headline": "FTC Opens Agentic-AI Security Probe",
+      "reason": "already covered by the September 30 operating-system Alert; a full article would duplicate the same event"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "Bank of England Warns on AI and Debt Risks",
+      "reason": "material international signal, but less direct for U.S. credit-union operations and overlapping recent AI-cyber coverage"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "Visa Open-Sources AI Cyber Defense Components",
+      "reason": "current financial-sector security development, but overlaps recent FS-ISAC and FTC agentic-risk coverage"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "ASIC Reviews Banking AI and Customer Impacts",
+      "reason": "Australian supervisory review without a new U.S. credit-union obligation"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "Federal Reserve Stablecoin Proposal Includes Insured Credit-Union Shares",
+      "reason": "material proposal already covered in the CUAI stablecoin portfolio and would create a third payments-led article this week"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "NCUA Q2 State-Level Credit Union Data",
+      "reason": "authoritative data released September 23 but outside the current News window and without a distinct new operating event"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "UFCU Opens Temple College Branch",
+      "reason": "local branch expansion without a system-wide operating implication"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "Mainstreet Credit Union Adds Operations Center and Branch",
+      "reason": "facility expansion announcement without independent outcome evidence"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "GECU Receives Approval for Bank of the Southwest Acquisition",
+      "reason": "material consolidation event from August 27, outside the current News window"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "Alliant Selects Blend for Digital Home Lending",
+      "reason": "vendor and credit-union announcement from September 9 without measured borrower outcomes"
+    },
+    {
+      "date": "2026-10-01",
+      "headline": "FDIC Merger Proposal Draws Credit-Union Objections",
+      "reason": "useful policy context incorporated into the selected transaction story rather than published as a separate article"
+    },
     {
       "date": "2026-09-29",
       "headline": "SMB Lending Expands as Delinquencies and AI Investment Rise",

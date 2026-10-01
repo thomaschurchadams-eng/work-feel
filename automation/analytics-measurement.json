@@ -7,7 +7,7 @@
   "editorialDimensions": {
     "content_section": ["news", "insights", "alerts", "site"],
     "editorial_function": ["board-strategy", "lending-collections", "payments-deposits", "risk-compliance", "it-data-cybersecurity", "operations", "member-service", "marketing-growth", "finance-treasury", "hr-training", "vendor-management"],
-    "technology": ["generative-ai", "agents-automation", "fraud-analytics", "identity-biometrics", "core-api-cloud", "data-decisioning", "conversational-ai", "personalization", "realtime-embedded-finance", "workforce-learning", "regtech-monitoring", "privacy-security"],
+    "technology": ["industry-development", "generative-ai", "agents-automation", "fraud-analytics", "identity-biometrics", "core-api-cloud", "data-decisioning", "conversational-ai", "personalization", "realtime-embedded-finance", "workforce-learning", "regtech-monitoring", "privacy-security"],
     "content_format": ["breaking-brief", "reported-news", "analysis", "case-study", "interview", "comparison", "checklist", "explainer", "data-brief", "opinion", "weekly-roundup"],
     "audience": ["board", "executive", "functional-leader", "practitioner", "frontline"],
     "maturity": ["breaking", "emerging", "practical-now", "scaling", "long-term"]

@@ -6,99 +6,182 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-09-30",
-    "fullArticleCount": 2,
-    "alertCount": 1,
+    "date": "2026-10-01",
+    "fullArticleCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "stablecoin-institutional-payments",
-      "credit-union-digital-payments",
-      "credit-union-data-products",
-      "digital-banking-platforms",
-      "enterprise-ai-agents",
-      "ai-public-policy",
-      "ai-enabled-cybersecurity",
-      "mortgage-credit-scoring",
-      "consumer-ai-platforms",
-      "agent-safety-platforms",
-      "international-ai-policy",
-      "board-governance-management-information"
+      "credit-union-bank-acquisitions",
+      "regulation-and-merger-policy",
+      "agentic-ai-consumer-protection",
+      "financial-system-ai-risk",
+      "payments-cybersecurity",
+      "international-bank-ai-supervision",
+      "stablecoin-reserve-policy",
+      "credit-union-system-data",
+      "branch-and-member-access",
+      "facilities-and-operations",
+      "digital-mortgage-lending",
+      "product-governance-and-member-outcomes"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
-        "url": "https://creditunionainews.com/news/alloya-cuusd-stablecoin-pilot.html",
-        "primaryFunctionalAudience": "Payments, treasury, digital-assets and risk leaders",
-        "promotionPriority": "High",
-        "socialDecision": "queued-2026-09-30-11:30-et"
-      },
-      {
-        "type": "article",
-        "classification": "Insights",
-        "title": "A Decision-Evidence Standard for AI-Assisted Credit Union Board Reporting",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
-        "primaryFunctionalAudience": "Board chairs, CEOs, corporate secretaries and strategy leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "queued-2026-10-01-11:30-et-next-free-slot"
-      },
-      {
-        "type": "alert",
-        "title": "Reuters Reports FTC Probe of OpenAI, Anthropic and METR Over Agentic-AI Security Risks",
-        "url": "https://creditunionainews.com/alerts/#ftc-agentic-ai-security-probe-openai-anthropic-metr"
+        "title": "Gulf Winds Lines Up a Second Bank Acquisition",
+        "url": "https://creditunionainews.com/news/gulf-winds-peoples-exchange-bank-acquisition.html",
+        "primaryFunctionalAudience": "Board, strategy, operations and integration leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
       }
     ],
     "rejections": [
       {
-        "title": "Center Parc Credit Union Adds Alacriti Loan Payments",
-        "reason": "current deployment, but a standard vendor announcement with less system-wide consequence than the selected stablecoin pilot"
+        "title": "FTC Opens Agentic-AI Security Probe",
+        "reason": "already covered by the September 30 operating-system Alert; a full article would duplicate the same event"
       },
       {
-        "title": "CUDX Introduces Cooperative Intelligence Data Products",
-        "reason": "promotional launch material without independently verified implementation results"
+        "title": "Bank of England Warns on AI and Debt Risks",
+        "reason": "material international signal, but less direct for U.S. credit-union operations and overlapping recent AI-cyber coverage"
       },
       {
-        "title": "PSECU Selects Candescent Digital Banking Platform",
-        "reason": "single vendor announcement without measured member or operating outcomes"
+        "title": "Visa Open-Sources AI Cyber Defense Components",
+        "reason": "current financial-sector security development, but overlaps recent FS-ISAC and FTC agentic-risk coverage"
       },
       {
-        "title": "OpenAI Launches Enterprise Agent Workspace",
-        "reason": "no named credit-union deployment or credit-union-specific operating decision"
+        "title": "ASIC Reviews Banking AI and Customer Impacts",
+        "reason": "Australian supervisory review without a new U.S. credit-union obligation"
       },
       {
-        "title": "White House Announces Voluntary AI Commitments",
-        "reason": "no binding credit-union requirement or specific implementation deadline"
+        "title": "Federal Reserve Stablecoin Proposal Includes Insured Credit-Union Shares",
+        "reason": "material proposal already covered in the CUAI stablecoin portfolio and would create a third payments-led article this week"
       },
       {
-        "title": "Visa Warns of AI-Accelerated Cyber Threats",
-        "reason": "weaker primary-source evidence and overlap with recent FS-ISAC cyber coverage"
+        "title": "NCUA Q2 State-Level Credit Union Data",
+        "reason": "authoritative data released September 23 but outside the current News window and without a distinct new operating event"
       },
       {
-        "title": "Rocket Expands VantageScore Use",
-        "reason": "substantially duplicates the September 11 VantageScore implementation coverage"
+        "title": "UFCU Opens Temple College Branch",
+        "reason": "local branch expansion without a system-wide operating implication"
       },
       {
-        "title": "Microsoft Expands Copilot Into a Consumer Super-App",
-        "reason": "no named credit-union deployment or immediate regulated-finance operating event"
+        "title": "Mainstreet Credit Union Adds Operations Center and Branch",
+        "reason": "facility expansion announcement without independent outcome evidence"
       },
       {
-        "title": "Nvidia Releases Agent Safety Platform",
-        "reason": "no credit-union implementation and already screened in the prior cycle"
+        "title": "GECU Receives Approval for Bank of the Southwest Acquisition",
+        "reason": "material consolidation event from August 27, outside the current News window"
       },
       {
-        "title": "Bank of England Studies AI Debt and Intervention Risk",
-        "reason": "UK-specific and less directly actionable for U.S. credit-union operations"
+        "title": "Alliant Selects Blend for Digital Home Lending",
+        "reason": "vendor and credit-union announcement from September 9 without measured borrower outcomes"
+      },
+      {
+        "title": "FDIC Merger Proposal Draws Credit-Union Objections",
+        "reason": "useful policy context incorporated into the selected transaction story rather than published as a separate article"
       }
     ],
-    "status": "two-article-and-alert-complete",
+    "status": "article-complete-pending-deployment",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
-    "updatedAt": "2026-09-30T15:25:00-04:00"
+    "updatedAt": "2026-10-01T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-09-30",
+      "fullArticleCount": 2,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "stablecoin-institutional-payments",
+        "credit-union-digital-payments",
+        "credit-union-data-products",
+        "digital-banking-platforms",
+        "enterprise-ai-agents",
+        "ai-public-policy",
+        "ai-enabled-cybersecurity",
+        "mortgage-credit-scoring",
+        "consumer-ai-platforms",
+        "agent-safety-platforms",
+        "international-ai-policy",
+        "board-governance-management-information"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
+          "url": "https://creditunionainews.com/news/alloya-cuusd-stablecoin-pilot.html",
+          "primaryFunctionalAudience": "Payments, treasury, digital-assets and risk leaders",
+          "promotionPriority": "High",
+          "socialDecision": "queued-2026-09-30-11:30-et"
+        },
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "A Decision-Evidence Standard for AI-Assisted Credit Union Board Reporting",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
+          "primaryFunctionalAudience": "Board chairs, CEOs, corporate secretaries and strategy leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "queued-2026-10-01-11:30-et-next-free-slot"
+        },
+        {
+          "type": "alert",
+          "title": "Reuters Reports FTC Probe of OpenAI, Anthropic and METR Over Agentic-AI Security Risks",
+          "url": "https://creditunionainews.com/alerts/#ftc-agentic-ai-security-probe-openai-anthropic-metr"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Center Parc Credit Union Adds Alacriti Loan Payments",
+          "reason": "current deployment, but a standard vendor announcement with less system-wide consequence than the selected stablecoin pilot"
+        },
+        {
+          "title": "CUDX Introduces Cooperative Intelligence Data Products",
+          "reason": "promotional launch material without independently verified implementation results"
+        },
+        {
+          "title": "PSECU Selects Candescent Digital Banking Platform",
+          "reason": "single vendor announcement without measured member or operating outcomes"
+        },
+        {
+          "title": "OpenAI Launches Enterprise Agent Workspace",
+          "reason": "no named credit-union deployment or credit-union-specific operating decision"
+        },
+        {
+          "title": "White House Announces Voluntary AI Commitments",
+          "reason": "no binding credit-union requirement or specific implementation deadline"
+        },
+        {
+          "title": "Visa Warns of AI-Accelerated Cyber Threats",
+          "reason": "weaker primary-source evidence and overlap with recent FS-ISAC cyber coverage"
+        },
+        {
+          "title": "Rocket Expands VantageScore Use",
+          "reason": "substantially duplicates the September 11 VantageScore implementation coverage"
+        },
+        {
+          "title": "Microsoft Expands Copilot Into a Consumer Super-App",
+          "reason": "no named credit-union deployment or immediate regulated-finance operating event"
+        },
+        {
+          "title": "Nvidia Releases Agent Safety Platform",
+          "reason": "no credit-union implementation and already screened in the prior cycle"
+        },
+        {
+          "title": "Bank of England Studies AI Debt and Intervention Risk",
+          "reason": "UK-specific and less directly actionable for U.S. credit-union operations"
+        }
+      ],
+      "status": "two-article-and-alert-complete",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
+      "updatedAt": "2026-09-30T15:25:00-04:00"
+    },
     {
       "date": "2026-09-29",
       "fullArticleCount": 1,

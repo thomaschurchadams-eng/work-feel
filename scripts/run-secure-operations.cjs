@@ -35,14 +35,19 @@ async function reportOnlyDrift(productionSha,runSha){
  const reportOnly=changedFiles.every(file=>REPORT_ONLY_FILES.has(file.filename)&&!file.previous_filename);
  return {allowed:ancestor&&files.length>0&&files.length<300&&reportOnly,files};
 }
+class ProductionIdentityRefreshError extends Error {
+ constructor(message='production_identity_refresh_failed'){super(message);this.name='ProductionIdentityRefreshError';this.code='production_identity_refresh_failed';}
+}
 async function readSource(route){
  let response;
  for(let attempt=1;attempt<=3;attempt++){
   response=await invoke(route,{});
   const deploymentRace=response.status===403&&response.data?.error==='deployment_commit_mismatch';
   if(!deploymentRace||attempt===3)return response;
+  try {
   const previousCommit=operationCommit;
   const current=await github('/commits/main');
+  if(!/^[a-f0-9]{40}$/.test(current?.sha||''))throw Error('production_identity_refresh_failed');
   if(current.sha!==process.env.DEPLOYED_SHA)throw Error('main_changed_during_source_retry');
   const health=await invoke('operations-health',{});
   const drift=health.status===200&&health.data?.ok===true?await reportOnlyDrift(health.data.commit,process.env.DEPLOYED_SHA):{allowed:false,files:[]};
@@ -51,6 +56,11 @@ async function readSource(route){
   operationCommit=health.data.commit;
   receipts.sourceRetries.push({route,reason:'deployment_commit_mismatch',attempt,fromCommit:previousCommit,toCommit:operationCommit});save();
   await sleep(5000);
+  }catch(error){
+   // Every refresh failure invalidates action authorization, including transport,
+   // JSON and malformed identity errors. Do not persist raw provider error text.
+   throw new ProductionIdentityRefreshError(error?.message==='main_changed_during_source_retry'?error.message:undefined);
+  }
  }
  return response;
 }
@@ -109,7 +119,7 @@ async function reconcileSentQueue(bufferResponse){
  // production health check, so retry only the exact deployment-mismatch case.
  // Other source failures remain visible immediately and never become zero data.
  let bufferMetrics=null;
- for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(receiptResponse(route,response),null,2)+'\n');if(route==='buffer-metrics')bufferMetrics=response;if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){if(['main_changed_during_source_retry','production_identity_refresh_failed'].includes(error.message))throw error;receipts.errors.push({route,error:error.message});}}
+ for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(receiptResponse(route,response),null,2)+'\n');if(route==='buffer-metrics')bufferMetrics=response;if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){if(error instanceof ProductionIdentityRefreshError)throw error;receipts.errors.push({route,error:error.message});}}
  // Buffer is authoritative for sent state. Reconcile only an exact existing
  // scheduled item after its fixed due time, with matching immutable URLs,
  // reservation, channel and post id. A reconciliation commit ends this run;
