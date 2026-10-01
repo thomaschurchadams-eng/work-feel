@@ -127,3 +127,24 @@ test('calendar and crossover match the enabled coordinator exactly', () => {
     {date:'2026-11-10',time:'10:00'},{date:'2026-11-12',time:'11:30'}]);
   const shifted=timedPolicy().timingTest; shifted.assignments[0].date='2026-10-19'; assert.equal(testValid(shifted),false);
 });
+
+for (const branch of ['High', 'Library', 'media']) test(`${branch} selection rejects a different-URL adaptation of an already reserved parent`, () => {
+  const candidate = branch === 'media' ? asset : { id: 'adaptation', canonicalUrl: 'https://creditunionainews.com/news/adaptation.html', eligible: true, classification: branch, parentPublicationId: asset.parentPublicationId };
+  for (const status of ['planned', 'queued', 'sent']) {
+    const queue = [{ ...queueItem('original', '2026-10-05', status), parentPublicationId: asset.parentPublicationId }];
+    const before = JSON.stringify(queue);
+    const args = { date: '2026-10-06', queue, media: branch === 'media' ? [candidate] : [], articles: branch === 'media' ? [] : [candidate] };
+    assert.equal(selectSlot(args).status, 'no-qualified-selection');
+    const unrelated = { ...candidate, id: 'unrelated', canonicalUrl: 'https://creditunionainews.com/news/unrelated.html', parentPublicationId: 'different-parent' };
+    assert.equal(selectSlot({ ...args, media: branch === 'media' ? [candidate, unrelated] : [], articles: branch === 'media' ? [] : [candidate, unrelated] }).assetId, 'unrelated');
+    assert.equal(JSON.stringify(queue), before);
+  }
+});
+test('article candidates without parent IDs retain URL deduplication and legacy eligibility', () => {
+  for (const classification of ['High', 'Library']) {
+    const queue = [queueItem('old', '2026-10-05')];
+    const candidate = { id: 'legacy', canonicalUrl: 'https://creditunionainews.com/news/legacy.html', eligible: true, classification };
+    assert.equal(selectSlot({ date: '2026-10-06', queue, articles: [candidate] }).assetId, 'legacy');
+    assert.equal(selectSlot({ date: '2026-10-06', queue, articles: [{ ...candidate, canonicalUrl: queue[0].articleUrl }] }).status, 'no-qualified-selection');
+  }
+});

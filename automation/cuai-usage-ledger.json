@@ -2268,6 +2268,26 @@
       ],
       "summary": "Prepared isolated local media calendar, manifest, shared day/week slot validator, inactive exact-date October20–November12 timing plan, separate visual templates and publisher handoff. Preserved production/queue history, eight-article cadence and existing sole LinkedIn executor; X remains blocked. Corrected ElevenLabs balance to 28856 remaining, distinct from the 30000 recurring ceiling. All87tests and local module layout QA pass. This records local preparation only; no calendar deployment, schedule change or new content/social publication.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T21:46:43+00:00",
+      "actor": "cuai-media-calendar-review",
+      "runType": "recovery",
+      "trigger": "Post-merge PR241 review identified parent-publication deduplication missing from High/Library selection; PR240 review requested deployment provenance clarification.",
+      "status": "recovered",
+      "workUnits": {
+        "filesChanged": 3,
+        "existingRepositoryTestsPassed": 87,
+        "newRegressionTestsPassed": 4,
+        "productionDeploymentChecks": 1,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel"
+      ],
+      "summary": "Added the same parentPublicationId guard to High, Library and media selection; 91 tests pass including distinct-URL adaptation regressions, unrelated-parent fallback, legacy candidates and immutable planned/queued/sent reservations. No duplicate social post was reported or created. Append-only provenance clarification for the reliability-watch entry dated 2026-10-01T16:40:49-04:00 (PR240): its exact-current Production READY wording predates verification of the concurrent podcast release and must not be used as proof of that release. Superseding verification at 2026-10-01T21:45:16Z checked main SHA 34834038c66604faac8af71e88a186a1c47f9ed5, deployment dpl_9UoqMVC1XVRvwn8i14Qc1aawYLrQ, READY production with creditunionainews.com alias and matching deployment SHA. This establishes the checked revision and time, not an outage or verification of a later unobserved revision. Preserve all earlier entries; the September16–28 historical ledger gap remains separate and unreconciled. This entry records the local repair and observed prior production identity; its own release is verified through the subsequent deployment/workflow receipt.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
