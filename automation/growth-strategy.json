@@ -70,7 +70,7 @@
     "Do not optimize solely for impressions, reactions or clicks; include engaged reading, depth, newsletter intent and return behavior.",
     "Preserve editorial diversity and continue covering material developments even when they are not historically high-traffic topics.",
     "Run at most two clearly defined production experiments at once.",
-    "Do not change the fixed LinkedIn posting schedule automatically; recommend a schedule change only after the stated sample threshold is met.",
+    "Preserve fixed LinkedIn midday times except exact approved timing-test assignments after validated format baseline, under automation/media-policy.json; no arbitrary schedule changes.",
     "Never use personal data, names, email addresses, form values or free-form reader input in analytics or strategy decisions."
   ],
   "decisionLog": [
@@ -144,5 +144,15 @@
       "uncertainty": "The experiment cannot establish whether copy caused or failed to cause onsite improvement because post-level attribution is not trustworthy. This is not treated as evidence that LinkedIn itself has zero value; channel-level acquisition remains usable.",
       "nextCheckpoint": "Reliability Watch to establish a trustworthy privacy-safe post-level reporting path or a durable unavailable-state guard by 2026-09-10; do not open another copy-only experiment before that diagnostic closes."
     }
-  ]
+  ],
+  "mediaLearning": {
+    "policy": "automation/media-policy.json",
+    "phase": "fixed-midday-format-baseline",
+    "fixedAgeDays": 7,
+    "minimumValidatedObservationsPerFormat": 3,
+    "timingCohort": "Eight exact dates, four morning/four weekday midday, after baseline, within six weeks; no simultaneous format/copy/frequency change.",
+    "attribution": "Exact asset/post/channel and UTM landing-path match; missing, stale or mismatched is unknown.",
+    "xStatus": "blocked-unverified-identity-routing",
+    "budget": "30000 recurring monthly credits; corrected remaining28856 including current rollover allowance; refresh live balance/billing period before synthesis."
+  }
 }

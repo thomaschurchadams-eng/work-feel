@@ -31,3 +31,7 @@ Generic glowing brains, robot handshakes, holographic bank buildings, repetitive
 
 ## Prompt construction
 Describe the specific editorial idea, chosen taxonomy dimensions, subject, visual metaphor, and why it fits the article. End with: no readable text, logos, trademarks, watermarks, or recognizable real people; 1200×630 landscape.
+
+## Separate media modules — approved October 1 calendar
+
+Cartoons, source-backed charts and decision cards use `templates/media/` and the media manifest. They are separate editorial modules, with their own source/rights record and accessible text alternative. Intentional editorial labels are permitted inside these modules. This is not an exception to the text-free article hero rules above; do not place a labeled chart or cartoon in the article hero slot. Require auditable dates, units, denominators and uncertainty for charts; label cartoons as editorial interpretation and avoid invented quotations or unsupported allegations.

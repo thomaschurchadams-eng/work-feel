@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "owner": "cuai-media-coordinator",
+  "socialQueue": "automation/social-queue.json",
+  "rule": "Prepare at least two business days ahead. The existing daily publisher selects one eligible shared social slot; the media coordinator never calls a social provider.",
+  "assets": [
+    {
+      "id": "podcast-member-front-door-2026-10-01",
+      "format": "podcast",
+      "targetDate": "2026-10-01",
+      "status": "published",
+      "canonicalUrl": "https://creditunionainews.com/episodes/when-ai-becomes-the-members-front-door.html",
+      "audioUrl": "https://creditunionainews.com/assets/audio/cuai-member-front-door-2026-10-01.m4a",
+      "spotifyUrl": "https://open.spotify.com/episode/2FBiXmLqsFgSLjYb1CFYZB",
+      "audioSha256": "219e4d8545ee22d4628172844496d6afaa9efb9f3b8a8242efb31a09011fbd83",
+      "socialDecision": "not-selected",
+      "note": "Existing approved publication recorded for October accounting; no retrospective social reservation."
+    }
+  ],
+  "planned": [
+    {
+      "id": "chart-2026-10-06",
+      "format": "chart",
+      "targetDate": "2026-10-06",
+      "status": "planned"
+    },
+    {
+      "id": "short-video-2026-10-08",
+      "format": "short-video",
+      "targetDate": "2026-10-08",
+      "status": "planned"
+    },
+    {
+      "id": "cartoon-2026-10-09",
+      "format": "cartoon",
+      "targetDate": "2026-10-09",
+      "status": "planned"
+    },
+    {
+      "id": "decision-card-2026-10-13",
+      "format": "decision-card",
+      "targetDate": "2026-10-13",
+      "status": "planned"
+    },
+    {
+      "id": "podcast-2026-10-15",
+      "format": "podcast",
+      "targetDate": "2026-10-15",
+      "status": "planned"
+    },
+    {
+      "id": "short-video-2026-10-15",
+      "format": "short-video",
+      "targetDate": "2026-10-15",
+      "status": "planned"
+    },
+    {
+      "id": "cartoon-2026-10-16",
+      "format": "cartoon",
+      "targetDate": "2026-10-16",
+      "status": "planned"
+    },
+    {
+      "id": "chart-2026-10-20",
+      "format": "chart",
+      "targetDate": "2026-10-20",
+      "status": "planned"
+    },
+    {
+      "id": "short-video-2026-10-22",
+      "format": "short-video",
+      "targetDate": "2026-10-22",
+      "status": "planned"
+    },
+    {
+      "id": "cartoon-2026-10-23",
+      "format": "cartoon",
+      "targetDate": "2026-10-23",
+      "status": "planned"
+    },
+    {
+      "id": "decision-card-2026-10-27",
+      "format": "decision-card",
+      "targetDate": "2026-10-27",
+      "status": "planned"
+    },
+    {
+      "id": "podcast-2026-10-29",
+      "format": "podcast",
+      "targetDate": "2026-10-29",
+      "status": "planned"
+    },
+    {
+      "id": "short-video-2026-10-29",
+      "format": "short-video",
+      "targetDate": "2026-10-29",
+      "status": "planned"
+    },
+    {
+      "id": "cartoon-2026-10-30",
+      "format": "cartoon",
+      "targetDate": "2026-10-30",
+      "status": "planned"
+    }
+  ]
+}

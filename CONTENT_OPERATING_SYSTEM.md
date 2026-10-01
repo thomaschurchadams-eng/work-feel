@@ -28,34 +28,17 @@ Infrastructure, templates, and site-wide design changes still use a branch and p
 - Clearly label sponsored content.
 - Preserve editorial independence from advertisers and vendors.
 
-## Image Workflow
-Images are approved as part of the full Vercel article preview, not as a separate production step.
+## Image and media workflow
 
-1. Sugerman drafts the article and creates/selects the image.
-2. Article + image are placed together on a preview branch.
-3. Tom reviews the full Vercel preview page.
-4. Tom can approve the whole package or ask for copy/image revisions.
-5. Only approved article/image packages move to production placement.
+Validated routine editorial packages follow the current direct-production article policy. Use the concept-selection and text-free hero rules in IMAGE_GUIDELINES.md. Infrastructure, templates and site-wide changes retain branch/PR review.
 
-## Weekly Publishing Schedule — Starter Version
+## Current publishing targets
 
-### Monday — AI News Brief
-Short news article based on public developments from regulators, vendors, or credit union ecosystem sources.
+The controlling version 6 publishing rules and September 29 publisher expansion target eight qualified full articles per full week: Monday/Wednesday/Friday two, Tuesday/Thursday one; maximum two per weekday. No candidate is published solely to fill a slot. Alerts remain separate with no quota. The website briefing is not an automated email delivery pipeline.
 
-### Wednesday — Practical Insight / Playbook
-Evergreen article for credit union leaders, boards, operations, risk, fraud, lending, or member experience teams.
+## Approved recurring media — October 1, 2026
 
-### Friday — Weekly Briefing / Newsletter Draft
-A concise weekly roundup:
-- 3–5 important AI/credit union developments
-- why they matter
-- action items for leaders
-- links back to site articles
-
-## Suggested Publishing Targets
-- 2 articles per week minimum
-- 1 newsletter per week
-- 1 sponsor/revenue asset per week until sponsorships are ready
+Read automation/media-policy.json and automation/scheduled-tasks/cuai-media-coordinator.md. Prepare separate visual modules and source-qualified podcast/video packages at least two business days ahead. Media never replaces an article slot or increments fullArticleCount. The sole LinkedIn executor remains the existing verified workflow; the daily publisher selects media/news inside the shared one-per-weekday/five-per-week cap, preserving all reservations. Keep midday baseline timing; only exact dated timing-test assignments after validated baseline may use 10:00 ET. X remains blocked pending verified identity and authorized routing. Do not add article jobs, paid AI video, subscriptions, credentials or scopes.
 
 ## Status Labels
 - Idea
@@ -118,3 +101,5 @@ An approved video launch includes the current episode page, Episodes archive and
 Promotional copy leads with CUAI journalism, not voice-provider or preset names. Keep Sarah/ElevenLabs settings in internal production records. Retain plain AI-narration transparency in episode credits and applicable platform disclosures; preserve all required asset credits. Do not impersonate a human reporter.
 
 Use existing GA4 cuai_weekly_click (episode_id, placement, link_type) for homepage CTA clicks; no internal UTM tags, personal data or new services. Record comparable seven-day episode visits and platform retention when actually available, keeping internal checks separate and missing data unknown. Click instrumentation is not proof of analytics ingestion. The permanent Production Bible and weekly prompt remain in Pineview; this rule ensures website publishers preserve episode discovery. This does not grant future video publishing approval.
+
+Exact planned timing crossover (Eastern): October20 10:00, October22 11:30, October27 11:30, October29 10:00, November3 11:30, November5 10:00, November10 10:00, November12 11:30. Experiment ID:cuai-timing-media-2026-10-20. These are an inactive plan, not currently authorized morning executions. Select one comparable format and verify baseline before activation; if baseline is not ready, retain midday and report the missed test slot. Do not shift the cohort dates, weaken baseline gates, mix formats or invent replacement dates. The runtime accepts only these exact date/time pairs.
