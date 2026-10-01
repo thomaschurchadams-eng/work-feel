@@ -106,3 +106,17 @@ Also review Vercel visitors, page views, referrers and production health. Recomm
 ## Authenticated source collection — September 5, 2026
 
 The SHA-only URLs above are historical. Production metrics require the trusted GitHub workflow identity described in `SECURE-OPERATIONS.md`. Retrieve the latest `CUAI verified operations` source receipts; do not treat inaccessible live endpoints as zero data or try to expose credentials in a URL.
+
+## Search Console query detail (local review proposal)
+
+The direct `/api/search-console-metrics` response adds `topQueries` (25 rows) and `topQueryPages` (50 query/page pairs) to each existing 7-day and 28-day window. Existing `aggregate` and `topPages` fields remain compatible. It uses the existing service account, readonly scope, trusted workflow identity and exact deployment-commit check. No new permission, provider configuration, or credential is needed by this patch.
+
+Requests explicitly use finalized data in Pacific calendar dates through yesterday. These are requested windows, not proof that yesterday's data is available: Search Console is delayed, not a real-time story feed. Each detail view reports availability, row limits, returned/redacted counts, aggregation type and incomplete coverage. Optional detail failures preserve totals/page reporting and mark detail unavailable. Empty detail rows cannot establish absent demand. Query rows are top rows by clicks; anonymized queries, provider limits and contact-detail exclusions mean they must never be summed to reconstruct totals.
+
+Query text is restricted internal reporting data. Obvious email/phone-like queries and overly long values are omitted as an additional precaution, not a guarantee that all sensitive text can be recognized. Keep responses out of public pages, committed receipts and fixtures containing real queries. Do not infer reader identities or expose credentials. The endpoint retains no-store/noindex headers.
+
+In editorial review, compare 7-day and 28-day query/page evidence for recurring questions or unmet explanations. Treat small samples, missing detail and delayed data as uncertainty. Search evidence can inform candidates within existing mission-fit, sourcing, relevance, freshness and quality rules; it must not mandate an article, rewrite source gates, or change the existing publishing cadence or scheduled prompts.
+
+API behavior reference: https://developers.google.com/webmaster-tools/v1/searchanalytics/query
+
+The operations runner strips each query string from saved Search Console receipts before their existing GitHub Actions artifact upload. Aggregate/page fields, detail metrics and availability evidence remain; `queryTextPersistence` marks the omission. Query text is available only in the authorized endpoint response, not in public pages, client code, logs, or uploaded receipts. The patch does not introduce another privileged query consumer or change scheduled prompts.

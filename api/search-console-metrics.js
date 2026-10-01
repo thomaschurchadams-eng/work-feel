@@ -130,12 +130,46 @@ function pacificDate(daysAgo) {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
+// Query text remains restricted to authorized reporting. Exclude obvious contact details.
+function safeQuery(value) {
+  return typeof value === 'string' && value.length <= 300 &&
+    !/[\w.+-]+@[\w.-]+\.[a-z]{2,}/i.test(value) &&
+    !/(?:\+?\d[\s().-]*){7,}/.test(value);
+}
+
+async function queryDetail(token, endpoint, baseBody, dimensions, rowLimit) {
+  try {
+    const result = await googleRequest(token, endpoint, {
+      method: 'POST', body: JSON.stringify({ ...baseBody, dimensions, rowLimit })
+    });
+    const sourceRows = (result.rows || []).slice(0, rowLimit);
+    const rows = sourceRows.filter(row => safeQuery(row.keys?.[0])).map(row => ({
+      query: row.keys[0],
+      ...(dimensions.includes('page') ? { page: row.keys?.[1] || null } : {}),
+      clicks: row.clicks ?? 0, impressions: row.impressions ?? 0,
+      ctr: row.ctr ?? 0, position: row.position ?? null
+    }));
+    return { rows, evidence: {
+      status: 'available', rowLimit, returnedRows: rows.length,
+      redactedRows: sourceRows.length - rows.length,
+      limitReached: sourceRows.length === rowLimit,
+      responseAggregationType: result.responseAggregationType || null,
+      complete: false,
+      note: 'Top rows by clicks; anonymized queries and API limits omit data. Do not sum rows to reconstruct totals.'
+    } };
+  } catch (error) {
+    // An optional detail failure must not discard compatible aggregate/page reporting.
+    return { rows: [], evidence: { status: 'unavailable', rowLimit, complete: false,
+      error: error.code || 'search_console_api_error' } };
+  }
+}
+
 async function queryWindow(token, siteUrl, days) {
   const endDate = pacificDate(1);
   const startDate = pacificDate(days);
-  const baseBody = { startDate, endDate };
+  const baseBody = { startDate, endDate, dataState: 'final' };
   const endpoint = `${SEARCH_CONSOLE_API_BASE}/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`;
-  const [aggregate, pages] = await Promise.all([
+  const [aggregate, pages, queries, queryPages] = await Promise.all([
     googleRequest(token, endpoint, {
       method: 'POST',
       body: JSON.stringify(baseBody)
@@ -143,7 +177,9 @@ async function queryWindow(token, siteUrl, days) {
     googleRequest(token, endpoint, {
       method: 'POST',
       body: JSON.stringify({ ...baseBody, dimensions: ['page'], rowLimit: 25 })
-    })
+    }),
+    queryDetail(token, endpoint, baseBody, ['query'], 25),
+    queryDetail(token, endpoint, baseBody, ['query', 'page'], 50)
   ]);
   const aggregateRow = aggregate.rows?.[0] || null;
   return {
@@ -156,6 +192,10 @@ async function queryWindow(token, siteUrl, days) {
       ctr: aggregateRow.ctr ?? 0,
       position: aggregateRow.position ?? null
     } : { clicks: 0, impressions: 0, ctr: 0, position: null },
+    topQueries: queries.rows,
+    topQueryPages: queryPages.rows,
+    queryReporting: { queries: queries.evidence, queryPages: queryPages.evidence },
+    freshness: { dataState: 'final', timeZone: 'America/Los_Angeles', requestedEndDate: endDate, note: 'Historical finalized data; recent days may not yet be available. Not a real-time feed.' },
     topPages: (pages.rows || []).map((row) => ({
       page: row.keys?.[0] || null,
       clicks: row.clicks ?? 0,
@@ -211,7 +251,7 @@ module.exports = async function handler(req, res) {
       source: 'google-search-console-api',
       siteUrl: selected.siteUrl,
       permissionLevel: selected.permissionLevel || null,
-      privacy: 'Aggregate Search Console reporting only; no reader identities or credentials are returned.',
+      privacy: 'Aggregate Search Console metrics and provider-disclosed query text for authorized internal reporting only; obvious contact details are omitted. No reader-level records or credentials are returned; query text may still contain sensitive information.',
       windows: { sevenDay, twentyEightDay }
     });
   } catch (error) {
@@ -223,3 +263,5 @@ module.exports = async function handler(req, res) {
     });
   }
 };
+
+module.exports._test = { queryWindow, safeQuery };
