@@ -2484,3 +2484,52 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
     gap: 12px;
   }
 }
+
+
+/* ALERT_TICKER_RENDERER */
+.ticker-window {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ticker-window::-webkit-scrollbar {
+  display: none;
+}
+
+.ticker-strip {
+  animation: none;
+  width: max-content;
+}
+
+.ticker-item {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 700px) {
+  .ticker-bar {
+    display: block;
+  }
+
+  .ticker-track {
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .ticker-label {
+    font-size: 0.68rem;
+    padding-top: 5px;
+  }
+
+  .ticker-strip {
+    gap: 12px;
+  }
+
+  .ticker-item {
+    max-width: 78vw;
+  }
+
+  .ticker-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
