@@ -570,31 +570,24 @@
       "publishedAt": "2026-09-09T07:00:00-04:00",
       "width": 1200,
       "height": 630,
-      "medium": "soft-editorial-illustration",
-      "subject": "member-interaction",
-      "composition": "wide-environmental",
-      "perspective": "eye-level",
-      "palette": "graphite-electric-yellow",
-      "lighting": "graphic-flat-light",
-      "texture": "paper-fiber",
-      "scene": "personalized-product-offers-travel-from-a-legacy-system-to-digital-member-channels-with-visible-suppression-and-review-detours",
-      "conceptScore": 53.8,
+      "medium": "tactile-paper-assemblage",
+      "subject": "documents-and-controls",
+      "composition": "overhead-diagonal-flow",
+      "perspective": "overhead",
+      "palette": "cobalt-coral-cream-mint",
+      "lighting": "soft-daylight",
+      "texture": "paper-fiber-vellum-matte-card",
+      "scene": "member-message-review-gates",
       "dimensions": {
         "width": 1200,
         "height": 630
       },
-      "conceptAlternatives": [
-        {
-          "medium": "macro-still-life",
-          "subject": "financial-object-study",
-          "score": 52.6
-        },
-        {
-          "medium": "cinematic-conceptual",
-          "subject": "architecture-and-infrastructure",
-          "score": 48.3
-        }
-      ]
+      "reuse": {
+        "sourceImagePath": "/assets/credit-union-ai-member-communications-review.jpg",
+        "sourceArticleUrl": "/insight-credit-union-ai-member-communications-review.html",
+        "reason": "Replace an undecodable JPEG with the verified existing member communications review illustration; retain the Dort image URL.",
+        "reviewDate": "2026-10-01"
+      }
     },
     {
       "id": "credit-union-ai-employee-coaching-scorecard",

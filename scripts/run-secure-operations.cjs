@@ -8,6 +8,19 @@ const receipts={startedAt:new Date().toISOString(),commit:process.env.DEPLOYED_S
 let operationCommit=process.env.DEPLOYED_SHA;
 fs.mkdirSync('operation-receipts',{recursive:true});
 const save=()=>fs.writeFileSync('operation-receipts/run.json',JSON.stringify(receipts,null,2)+'\n');
+// Uploaded receipts have a broader repository audience than the reporting identity.
+// Keep query strings in the authorized response only, never in persisted artifacts.
+function receiptResponse(route,response){
+ if(route!=='search-console-metrics')return response;
+ const sanitized=JSON.parse(JSON.stringify(response));
+ for(const window of Object.values(sanitized.data?.windows||{})){
+  for(const key of ['topQueries','topQueryPages']){
+   if(Array.isArray(window[key]))window[key]=window[key].map(({query,...metrics})=>metrics);
+  }
+  window.queryTextPersistence='omitted_from_operation_receipts';
+ }
+ return sanitized;
+}
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function github(path,options={}){const response=await fetch(API+path,{...options,headers:{...headers,...options.headers},signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error('github_'+response.status);return response.json();}
 async function identity(){const url=new URL(process.env.ACTIONS_ID_TOKEN_REQUEST_URL);url.searchParams.set('audience',SITE+'/operations');const response=await fetch(url,{headers:{Authorization:'Bearer '+process.env.ACTIONS_ID_TOKEN_REQUEST_TOKEN},signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error('identity_'+response.status);const data=await response.json();if(typeof data.value!=='string')throw Error('identity_missing');console.log('::add-mask::'+data.value);return data.value;}
@@ -22,14 +35,19 @@ async function reportOnlyDrift(productionSha,runSha){
  const reportOnly=changedFiles.every(file=>REPORT_ONLY_FILES.has(file.filename)&&!file.previous_filename);
  return {allowed:ancestor&&files.length>0&&files.length<300&&reportOnly,files};
 }
+class ProductionIdentityRefreshError extends Error {
+ constructor(message='production_identity_refresh_failed'){super(message);this.name='ProductionIdentityRefreshError';this.code='production_identity_refresh_failed';}
+}
 async function readSource(route){
  let response;
  for(let attempt=1;attempt<=3;attempt++){
   response=await invoke(route,{});
   const deploymentRace=response.status===403&&response.data?.error==='deployment_commit_mismatch';
   if(!deploymentRace||attempt===3)return response;
+  try {
   const previousCommit=operationCommit;
   const current=await github('/commits/main');
+  if(!/^[a-f0-9]{40}$/.test(current?.sha||''))throw Error('production_identity_refresh_failed');
   if(current.sha!==process.env.DEPLOYED_SHA)throw Error('main_changed_during_source_retry');
   const health=await invoke('operations-health',{});
   const drift=health.status===200&&health.data?.ok===true?await reportOnlyDrift(health.data.commit,process.env.DEPLOYED_SHA):{allowed:false,files:[]};
@@ -38,6 +56,11 @@ async function readSource(route){
   operationCommit=health.data.commit;
   receipts.sourceRetries.push({route,reason:'deployment_commit_mismatch',attempt,fromCommit:previousCommit,toCommit:operationCommit});save();
   await sleep(5000);
+  }catch(error){
+   // Every refresh failure invalidates action authorization, including transport,
+   // JSON and malformed identity errors. Do not persist raw provider error text.
+   throw new ProductionIdentityRefreshError(error?.message==='main_changed_during_source_retry'?error.message:undefined);
+  }
  }
  return response;
 }
@@ -96,7 +119,7 @@ async function reconcileSentQueue(bufferResponse){
  // production health check, so retry only the exact deployment-mismatch case.
  // Other source failures remain visible immediately and never become zero data.
  let bufferMetrics=null;
- for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(response,null,2)+'\n');if(route==='buffer-metrics')bufferMetrics=response;if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){if(['main_changed_during_source_retry','production_identity_refresh_failed'].includes(error.message))throw error;receipts.errors.push({route,error:error.message});}}
+ for(const route of ['ga4-metrics','search-console-metrics','buffer-metrics']){try{const response=await readSource(route);fs.writeFileSync('operation-receipts/'+route+'.json',JSON.stringify(receiptResponse(route,response),null,2)+'\n');if(route==='buffer-metrics')bufferMetrics=response;if(response.status>=400||!response.data.ok)receipts.errors.push({route,error:response.data.error||'source_failed'});}catch(error){if(error instanceof ProductionIdentityRefreshError)throw error;receipts.errors.push({route,error:error.message});}}
  // Buffer is authoritative for sent state. Reconcile only an exact existing
  // scheduled item after its fixed due time, with matching immutable URLs,
  // reservation, channel and post id. A reconciliation commit ends this run;

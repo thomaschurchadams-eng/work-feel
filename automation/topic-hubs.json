@@ -408,6 +408,96 @@
           "summary": "Why human escalation still matters."
         }
       ]
+    },
+    {
+      "id": "payments",
+      "type": "function",
+      "label": "Payments & Digital Money",
+      "description": "Payments networks, stablecoins, settlement and access controls for credit unions and payments providers.",
+      "function": "cross-functional",
+      "technology": "cross-technology",
+      "articles": [
+        {
+          "path": "news/alloya-cuusd-stablecoin-pilot.html",
+          "title": "Alloya Launches $1 Million CUUSD Stablecoin Pilot",
+          "summary": "Alloya and Appex launched a controlled $1 million CUUSD pilot for institutional payments, giving credit unions a live test of stablecoin controls."
+        },
+        {
+          "path": "news/sofi-stablecoin-card-settlement.html",
+          "title": "SoFi Puts Card Settlement on Its Bank-Issued Stablecoin",
+          "summary": "SoFi has made SoFiUSD operational for Mastercard card settlement, giving credit unions a benchmark for liquidity, reconciliation and failover controls."
+        },
+        {
+          "path": "news/fednow-instant-payments-growth.html",
+          "title": "FedNow Adoption Grows as More Credit Unions Enable Instant Payments",
+          "summary": "FedNow Adoption Grows as More Credit Unions Enable Instant Payments. The Federal Reserve reports steady increases in financial institutions joining the…"
+        },
+        {
+          "path": "news/credit-unions-fed-payment-account-guardrails.html",
+          "title": "Credit Unions Ask Fed for AML Guardrails on Payment Accounts",
+          "summary": "Credit unions want the Fed to define AML supervision and operating controls before opening special-purpose payment accounts to eligible firms."
+        }
+      ]
+    },
+    {
+      "id": "core-digital-banking",
+      "type": "function",
+      "label": "Core Technology & Digital Banking",
+      "description": "Core resilience, digital platforms and integration decisions for credit-union teams and technology providers.",
+      "function": "cross-functional",
+      "technology": "cross-technology",
+      "articles": [
+        {
+          "path": "news/sharetec-core-outage-credit-union-failover.html",
+          "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
+          "summary": "A Sharetec outage disrupted credit-union core and digital services, exposing the need to test failure domains, recovery order and member continuity."
+        },
+        {
+          "path": "news/orion-financial-embedded-digital-lending.html",
+          "title": "Orion Financial Connects Digital Banking and Lending on Narmi",
+          "summary": "Orion Financial is live on Narmi Lend, linking digital banking, loan applications and core data. Here are the controls leaders should test next."
+        },
+        {
+          "path": "news/core-banking-ai-addons.html",
+          "title": "Core Banking Providers Expand AI Add-Ons for Credit Unions",
+          "summary": "Core Banking Providers Expand AI Add-Ons for Credit Unions. Major core providers are rolling out new AI-driven features for fraud, analytics, and operations."
+        },
+        {
+          "path": "news/jack-henry-ai-features.html",
+          "title": "Jack Henry Introduces New AI Features for Digital Banking Clients",
+          "summary": "Jack Henry Introduces New AI Features for Digital Banking Clients. Jack Henry announced expanded AI capabilities within its Banno Digital Platform,…"
+        }
+      ]
+    },
+    {
+      "id": "vendors-partners",
+      "type": "function",
+      "label": "Vendors & Partners",
+      "description": "Evidence, risk and implementation questions for credit-union buyers, fintech and AI vendors, and consultants.",
+      "function": "cross-functional",
+      "technology": "cross-technology",
+      "articles": [
+        {
+          "path": "news/ornl-fcu-kobalt-ai-vendor-risk.html",
+          "title": "ORNL FCU Selects AI Platform for Vendor Risk Reviews",
+          "summary": "ORNL FCU selected Kobalt Labs for vendor risk reviews. The operating test is traceable evidence, human approval and measurable review quality."
+        },
+        {
+          "path": "news/ai-vendor-due-diligence-checklist-credit-unions.html",
+          "title": "AI Vendor Due Diligence Checklist for Credit Unions",
+          "summary": "A practical checklist for credit union leaders reviewing AI vendors, data use, oversight, explainability, monitoring, and member impact."
+        },
+        {
+          "path": "insight-credit-union-ai-contract-monitoring-controls.html",
+          "title": "Seven Controls for AI-Assisted Contract Monitoring at Credit Unions",
+          "summary": "Seven controls for credit unions using AI to extract contract obligations, monitor vendors and support renewal, renegotiation and exit decisions."
+        },
+        {
+          "path": "insight-credit-union-ai-vendor-exit-playbook.html",
+          "title": "An AI Vendor Exit Playbook for Credit Unions",
+          "summary": "A seven-step playbook for credit unions to preserve data, evidence and service continuity when replacing or retiring an AI vendor."
+        }
+      ]
     }
   ]
 }
