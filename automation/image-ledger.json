@@ -3,6 +3,39 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "gulf-winds-peoples-exchange-bank-acquisition",
+      "articleUrl": "/news/gulf-winds-peoples-exchange-bank-acquisition.html",
+      "imagePath": "/assets/gulf-winds-peoples-exchange-bank-acquisition.jpg",
+      "publishedAt": "2026-10-01T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-ink-and-linocut-illustration",
+      "subject": "multi-institution-acquisition-and-integration",
+      "composition": "three-community-financial-institutions-connected-by-separate-integration-paths",
+      "perspective": "wide-elevated-regional-map",
+      "palette": "burgundy-warm-sand-cream-charcoal-emerald",
+      "lighting": "measured-editorial-daylight",
+      "texture": "tactile-newsprint-and-carved-ink",
+      "scene": "three-community-financial-institutions-connect-through-due-diligence-and-service-continuity-checkpoints-on-a-regional-map",
+      "conceptScore": 94.2,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "integration-ledgers-and-branch-network-map",
+          "score": 82.0
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "community-service-continuity-across-two-acquisitions",
+          "score": 80.7
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-board-reporting-decision-evidence",
       "articleUrl": "/insight-credit-union-ai-board-reporting-decision-evidence.html",
       "imagePath": "/assets/credit-union-ai-board-reporting-decision-evidence.jpg",

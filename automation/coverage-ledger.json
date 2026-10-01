@@ -3,6 +3,45 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "gulf-winds-peoples-exchange-bank-acquisition",
+      "title": "Gulf Winds Lines Up a Second Bank Acquisition",
+      "url": "/news/gulf-winds-peoples-exchange-bank-acquisition.html",
+      "publishedAt": "2026-10-01T07:00:00-04:00",
+      "section": "news",
+      "beat": "credit-union-bank-acquisition-integration",
+      "functions": [
+        "board-strategy",
+        "operations",
+        "member-service",
+        "finance-treasury",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "industry-development",
+        "core-api-cloud",
+        "data-decisioning"
+      ],
+      "format": "reported-news",
+      "audience": "executive",
+      "primaryAudience": "Board, strategy, operations and integration leaders",
+      "secondaryAudiences": [
+        "member-service leaders",
+        "finance and treasury teams",
+        "technology and data leaders",
+        "risk and compliance leaders"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-branch-demand-staffing-controls.html",
+        "/insight-credit-union-ai-board-reporting-decision-evidence.html"
+      ],
+      "sourceTier": 1,
+      "score": 76.2
+    },
+    {
       "id": "credit-union-ai-board-reporting-decision-evidence",
       "title": "A Decision-Evidence Standard for AI-Assisted Credit Union Board Reporting",
       "url": "/insight-credit-union-ai-board-reporting-decision-evidence.html",

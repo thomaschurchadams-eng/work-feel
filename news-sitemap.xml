@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://creditunionainews.com/news/gulf-winds-peoples-exchange-bank-acquisition.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>CreditUnionAI News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-01T07:00:00-04:00</news:publication_date>
+      <news:title>Gulf Winds Lines Up a Second Bank Acquisition</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://creditunionainews.com/news/alloya-cuusd-stablecoin-pilot.html</loc>
     <news:news>
       <news:publication>
@@ -10,17 +21,6 @@
       </news:publication>
       <news:publication_date>2026-09-30T07:00:00-04:00</news:publication_date>
       <news:title>Alloya Launches $1 Million CUUSD Stablecoin Pilot</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/fs-isac-ai-vulnerability-patch-timelines.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T07:00:00-04:00</news:publication_date>
-      <news:title>FS-ISAC Tells Financial Firms to Compress Patch Timelines for AI-Era Attacks</news:title>
     </news:news>
   </url>
 </urlset>
