@@ -2247,6 +2247,27 @@
       ],
       "summary": "Recovered a stale internal reliability handoff without changing production behavior. Issue #160 still showed the September 14 high-priority assignment to eliminate destructive daily-cycle finalization writes as open, although PR #211 merged the durable prevention as fb0531a8e918602d3954dd2860a2030baf74dd17 and the canonical usage ledger already recorded that recovery. Current main retains the machine-readable hard stop against connector-only secondary whole-file finalization and the validator's fatal UTF-8, duplicate-date, immutable-history and exact prior-current preservation checks. The October 1 operating cycle preserved all 51 prior daily-cycle history entries; exact-current Production is READY; workflow run 36915956593 succeeded; the Gulf Winds article returned HTTP 200 from both public and exact deployment URLs; today's sole LinkedIn item remains sent exactly once with duplicate=false. Added issue #160 completion comment 5940141775 using the original dedupe key and nextOwner none. Root cause was an omitted agent-bus closeout after the code recovery and ledger record were completed. The earlier live-page fetch ambiguity was transient and self-resolved on immediate retry. The historical September 16-28 usage-ledger backlog remains unreconciled. No code, content, social item, schedule, destination, UTM, credential, editorial gate, spend or external authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T21:04:26+00:00",
+      "actor": "cuai-media-calendar-review",
+      "runType": "delegated-engineering",
+      "trigger": "Tom approved recurring media and bounded timing; coordinator requested local tested integration before infrastructure release.",
+      "status": "success",
+      "workUnits": {
+        "filesChanged": 17,
+        "existingRepositoryTestsPassed": 71,
+        "newTestsPassed": 16,
+        "browserViewportsChecked": 2,
+        "deploymentsPublished": 0,
+        "socialSchedulingAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub"
+      ],
+      "summary": "Prepared isolated local media calendar, manifest, shared day/week slot validator, inactive exact-date October20–November12 timing plan, separate visual templates and publisher handoff. Preserved production/queue history, eight-article cadence and existing sole LinkedIn executor; X remains blocked. Corrected ElevenLabs balance to 28856 remaining, distinct from the 30000 recurring ceiling. All87tests and local module layout QA pass. This records local preparation only; no calendar deployment, schedule change or new content/social publication.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

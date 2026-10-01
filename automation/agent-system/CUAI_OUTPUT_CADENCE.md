@@ -6,7 +6,7 @@ This file defines the outward-facing work CreditUnionAI News should produce. It 
 ## Weekday production SLA
 
 ### 1. Full editorial output
-- **Target:** one qualified full News or Insights article every weekday through the existing Daily Publisher cycle.
+- **Target:** eight qualified full News or Insights articles per full week through the existing Daily Publisher: Monday/Wednesday/Friday two, Tuesday/Thursday one; maximum two per weekday.
 - A valid non-publication outcome is acceptable when no candidate clears the editorial/source gates. Quality gates are never lowered to hit volume.
 - Every cycle must still leave a machine-observable outcome and handoff.
 
@@ -33,3 +33,7 @@ CUAI is judged on useful qualified output, not raw content count. A week with fe
 
 ## Reporting
 The CEO should include a concise weekly `Output SLA` status: `met | partially met | missed`, with evidence and the single most important corrective action when not met.
+
+## Approved media calendar — October 1, 2026
+
+Use `automation/media-policy.json` and `automation/scheduled-tasks/cuai-media-coordinator.md` for separate source-qualified cartoons, charts/decision cards, podcasts and short videos. These do not count as articles. The media coordinator prepares and hands off; the existing publisher and trusted workflow own the shared LinkedIn queue and executor. Media replaces a selection inside the one-weekday/five-weekly cap. X remains blocked pending verified identity/routing. Dates are targets, never permission to lower gates or create filler.

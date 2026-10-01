@@ -1,13 +1,13 @@
 const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
+const { validateSchedule, checkCapacity, mediaReady } = require('../lib/media-slots.cjs');
+const MEDIA_POLICY = require('../automation/media-policy.json');
 
 const BUFFER_API_URL = 'https://api.buffer.com';
 const HOST = 'creditunionainews.com';
 const CHANNEL_NAME = 'creditunionai news';
 const TIME_ZONE = 'America/New_York';
-const MIN_ADVANCE_MS = 5 * 60 * 1000;
-const MAX_ADVANCE_MS = 8 * 24 * 60 * 60 * 1000;
 
 async function bufferRequest(apiKey, query, variables = {}) {
   const response = await fetch(BUFFER_API_URL, {
@@ -43,21 +43,6 @@ function easternDate(date) {
   return `${p.year}-${p.month}-${p.day}`;
 }
 
-function validateSchedule(raw) {
-  const dueAt = new Date(raw);
-  if (!raw || Number.isNaN(dueAt.getTime())) return { error: 'scheduled_for_invalid' };
-  const advance = dueAt.getTime() - Date.now();
-  if (advance < MIN_ADVANCE_MS) return { error: 'scheduled_for_not_in_future' };
-  if (advance > MAX_ADVANCE_MS) return { error: 'scheduled_for_too_far_ahead' };
-  const p = easternParts(dueAt);
-  const expected = ['Mon', 'Fri'].includes(p.weekday) ? [12, 30]
-    : ['Tue', 'Wed', 'Thu'].includes(p.weekday) ? [11, 30] : null;
-  if (!expected) return { error: 'scheduled_for_weekend' };
-  if (Number(p.hour) !== expected[0] || Number(p.minute) !== expected[1]) {
-    return { error: 'scheduled_for_outside_policy' };
-  }
-  return { dueAt: dueAt.toISOString(), date: easternDate(dueAt) };
-}
 
 function loadItem(itemId) {
   const queue = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'automation', 'social-queue.json'), 'utf8'));
@@ -79,7 +64,13 @@ function loadItem(itemId) {
     return { error: 'queue_item_url_not_allowed' };
   }
   if (!item.copy.includes(distribution.toString())) return { error: 'queue_item_link_missing' };
-  const schedule = validateSchedule(item.scheduledFor);
+  if (item.contentKind === 'media') {
+    const manifest = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'automation', 'media-manifest.json'), 'utf8'));
+    const asset = manifest.assets?.find(entry => entry.id === item.mediaAssetId);
+    const due = new Date(item.scheduledFor);
+    if (!Number.isFinite(due.getTime()) || !mediaReady(asset, easternDate(due)) || asset.canonicalUrl !== item.articleUrl || asset.thumbnailUrl !== item.imageUrl || asset.format !== item.mediaFormat || asset.altText !== item.imageAlt) return { error: 'media_package_not_verified' };
+  } else if (item.contentKind && item.contentKind !== 'article') return { error: 'queue_item_content_kind_invalid' };
+  const schedule = validateSchedule(item.scheduledFor, item);
   return schedule.error ? schedule : { item, articleUrl: article.toString(), schedule };
 }
 
@@ -150,6 +141,7 @@ module.exports = async function handler(req, res) {
       String(entry.service || '').toLowerCase().includes('linkedin') &&
       String(entry.displayName || entry.name || '').trim().toLowerCase() === CHANNEL_NAME);
     if (!channel) return res.status(409).json({ ok: false, error: 'creditunionai_linkedin_channel_not_found' });
+    if (channel.id !== MEDIA_POLICY.distribution.channelId) return res.status(409).json({ ok: false, error: 'linkedin_channel_identity_mismatch' });
     if (channel.isQueuePaused) return res.status(409).json({ ok: false, error: 'linkedin_channel_queue_paused' });
 
     const existingData = await bufferRequest(apiKey, `query ($organizationId: OrganizationId!, $channelId: ChannelId!) {
@@ -160,14 +152,16 @@ module.exports = async function handler(req, res) {
     const existing = (existingData.posts?.edges || []).map((edge) => edge.node);
     const duplicate = existing.find((post) => post.text === loaded.item.copy);
     if (duplicate) {
+      if (loaded.item.postId && loaded.item.postId !== duplicate.id) return res.status(409).json({ ok: false, error: 'duplicate_post_receipt_mismatch' });
       if (!imageAssets(duplicate).length) return res.status(409).json({ ok: false, error: 'duplicate_post_missing_image', postId: duplicate.id });
       return res.status(200).json({ ok: true, duplicate: true, postId: duplicate.id, status: duplicate.status, dueAt: duplicate.dueAt, imageAttached: true });
     }
-    const dayConflict = existing.find((post) => {
-      const timestamp = post.dueAt || post.sentAt;
-      return timestamp && easternDate(new Date(timestamp)) === loaded.schedule.date;
-    });
-    if (dayConflict) return res.status(409).json({ ok: false, error: 'linkedin_daily_cap_conflict', existingPostId: dayConflict.id });
+    if (loaded.item.postId) return res.status(409).json({ ok: false, error: 'queue_item_existing_receipt_requires_reconciliation' });
+    // The shared queue is the sole slot ledger; reconcile provider receipts without
+    // counting the current item twice. The provider also catches external posts.
+    const queue = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'automation', 'social-queue.json'), 'utf8'));
+    const capacity = checkCapacity(loaded.schedule.date, queue.items || [], existing, loaded.item.postId || loaded.item.id);
+    if (capacity.error) return res.status(409).json({ ok: false, error: capacity.error });
 
     const created = await bufferRequest(apiKey, `mutation ($input: CreatePostInput!) {
       createPost(input: $input) {

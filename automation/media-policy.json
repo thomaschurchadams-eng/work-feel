@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "timeZone": "America/New_York",
+  "articleCadence": {
+    "Monday": 2,
+    "Tuesday": 1,
+    "Wednesday": 2,
+    "Thursday": 1,
+    "Friday": 2
+  },
+  "distribution": {
+    "platform": "linkedin",
+    "channelId": "6a53df0880cc80cdcaa76fb8",
+    "channelName": "CreditUnionAI News",
+    "maximumPerDay": 1,
+    "maximumPerWeek": 5,
+    "weekStarts": "Monday",
+    "x": {
+      "status": "blocked",
+      "reason": "identity-and-authorized-routing-unverified"
+    }
+  },
+  "mediaCadence": {
+    "cartoon": {
+      "startDate": "2026-10-09",
+      "weekday": "Friday",
+      "intervalDays": 7
+    },
+    "visual": {
+      "startDate": "2026-10-06",
+      "weekday": "Tuesday",
+      "intervalDays": 7,
+      "formats": [
+        "chart",
+        "decision-card"
+      ]
+    },
+    "podcast": {
+      "monthlyTarget": 3,
+      "octoberDates": [
+        "2026-10-01",
+        "2026-10-15",
+        "2026-10-29"
+      ],
+      "monthlyThursdayWeeks": [
+        1,
+        3,
+        "last"
+      ]
+    },
+    "short-video": {
+      "monthlyTarget": 4,
+      "octoberDates": [
+        "2026-10-08",
+        "2026-10-15",
+        "2026-10-22",
+        "2026-10-29"
+      ],
+      "monthlyThursdayWeeks": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "preparationBusinessDays": 2,
+  "budget": {
+    "provider": "ElevenLabs",
+    "recurringMonthlyCreditCeiling": 30000,
+    "plannedMonthlySpeechBaseline": 21306,
+    "observedRemainingCredits": 28856,
+    "observedAllowanceIncludingRollover": 39681,
+    "observedUsedCredits": 10825,
+    "observationSource": "Tom-confirmed coordinator correction, October 1, 2026; refresh provider balance and billing period before synthesis",
+    "allowOverage": false
+  },
+  "timingTest": {
+    "status": "planned",
+    "baselineValidatedObservations": 0,
+    "minimumBaselineObservations": 3,
+    "format": null,
+    "experimentId": "cuai-timing-media-2026-10-20",
+    "startsOn": "2026-10-20",
+    "endsOn": "2026-11-12",
+    "maximumDays": 42,
+    "minimumObservationsPerArm": 4,
+    "fixedMetricAgeDays": 7,
+    "assignments": [
+      {
+        "date": "2026-10-20",
+        "time": "10:00"
+      },
+      {
+        "date": "2026-10-22",
+        "time": "11:30"
+      },
+      {
+        "date": "2026-10-27",
+        "time": "11:30"
+      },
+      {
+        "date": "2026-10-29",
+        "time": "10:00"
+      },
+      {
+        "date": "2026-11-03",
+        "time": "11:30"
+      },
+      {
+        "date": "2026-11-05",
+        "time": "10:00"
+      },
+      {
+        "date": "2026-11-10",
+        "time": "10:00"
+      },
+      {
+        "date": "2026-11-12",
+        "time": "11:30"
+      }
+    ]
+  }
+}
