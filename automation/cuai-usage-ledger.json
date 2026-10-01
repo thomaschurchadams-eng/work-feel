@@ -2118,6 +2118,41 @@
       ],
       "summary": "Detected and recovered a stale internal reliability handoff: issue #160 still showed the September 22 high-priority report-only deployment/source-read race assignment as open after PR #232 fixed it. Confirmed the fail-closed refresh logic remains on current main 226878150de6d30e7ca34ba38a7463ce91b397a1; exact Production is READY; current verified-operations run 36854040850 succeeded with 0 distribution attempts and 0 source/action exceptions; Vercel reports no runtime errors; today's article is live; and today's sole LinkedIn reservation remains unique, not due, and duplicate=false. Added issue #160 recovery comment 5931337208 with the original dedupe key and nextOwner none. Root cause was an omitted agent-bus closeout after the code recovery and usage-ledger record were completed. No code, content, schedule, destination, UTM, credential, editorial gate, spend or external authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T12:20:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability review found the retired CUAI CEO lifecycle clarification stranded in stale draft PR #229 while canonical coordination and reporting files still described the retired schedule as active.",
+      "status": "recovered",
+      "workUnits": {
+        "publisherRunChecks": 1,
+        "dailyCycleStateChecks": 1,
+        "publicationLedgerChecks": 2,
+        "socialQueueChecks": 2,
+        "productionDeploymentChecks": 3,
+        "previewDeploymentChecks": 1,
+        "runtimeErrorChecks": 2,
+        "verifiedOperationsRunsReviewed": 2,
+        "verifiedOperationsJobLogsReviewed": 1,
+        "workflowReferenceChecks": 1,
+        "documentationFilesChanged": 2,
+        "stalePullRequestsClosed": 1,
+        "sentStateReconciliationsObserved": 1,
+        "issueCommentsCreated": 2,
+        "recoveryBranchesCreated": 1,
+        "recoveryPullRequestsCreated": 1,
+        "recoveryPullRequestsMerged": 1,
+        "usageLedgerChecks": 1,
+        "socialSchedulingAttempts": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer"
+      ],
+      "summary": "Recovered a canonical workflow-reference gap. The scheduled cuai-ceo role had been retired, but the lifecycle clarification remained only in stale draft PR #229, leaving main's CUAI_AGENT_PROTOCOL.md and CUAI_AGENT_REPORTING.md describing that schedule as active. PR #236 rebased the exact previously reviewed two-file documentation change onto current main, identifies Watney as Tom's evidence-review contact, retains cuai-ceo issue destinations only as compatibility receipts, and removes acknowledgment, report-regeneration, assignment and review-deadline expectations without changing schedules, permissions or authority. The exact two-file diff passed a READY Preview and merged as 259ab4f47bd250d32e1d6cb63fa2a17fd77ea551; verified-operations run 36890955088 completed with 0 distribution attempts, 1 exact sent-state reconciliation and 0 source/action exceptions. The Board Reporting LinkedIn post sent exactly once at its fixed 11:30 a.m. ET slot with original post ID, UTM, image, company destination and duplicate=false; reconciliation main c682e2d610d0bbd913b41071ee443d0c163bc6f4 is READY Production with no runtime errors. PR #229 was closed as superseded and issue #160 recovery comment 5935621935 records the closeout. The historical September 16-28 usage-ledger backlog remains unreconciled.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
