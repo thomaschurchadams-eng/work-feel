@@ -2153,6 +2153,48 @@
       ],
       "summary": "Recovered a canonical workflow-reference gap. The scheduled cuai-ceo role had been retired, but the lifecycle clarification remained only in stale draft PR #229, leaving main's CUAI_AGENT_PROTOCOL.md and CUAI_AGENT_REPORTING.md describing that schedule as active. PR #236 rebased the exact previously reviewed two-file documentation change onto current main, identifies Watney as Tom's evidence-review contact, retains cuai-ceo issue destinations only as compatibility receipts, and removes acknowledgment, report-regeneration, assignment and review-deadline expectations without changing schedules, permissions or authority. The exact two-file diff passed a READY Preview and merged as 259ab4f47bd250d32e1d6cb63fa2a17fd77ea551; verified-operations run 36890955088 completed with 0 distribution attempts, 1 exact sent-state reconciliation and 0 source/action exceptions. The Board Reporting LinkedIn post sent exactly once at its fixed 11:30 a.m. ET slot with original post ID, UTM, image, company destination and duplicate=false; reconciliation main c682e2d610d0bbd913b41071ee443d0c163bc6f4 is READY Production with no runtime errors. PR #229 was closed as superseded and issue #160 recovery comment 5935621935 records the closeout. The historical September 16-28 usage-ledger backlog remains unreconciled.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T15:40:00-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Weekday CUAI Operating System run after the completed October 1 Gulf Winds publisher handoff and bounded Alert/homepage-freshness review.",
+      "status": "success",
+      "workUnits": {
+        "policyAndCoordinationFilesReviewed": 5,
+        "agentBusCommentsReviewed": 35,
+        "completedPublisherHandoffsConsumed": 1,
+        "completedReliabilityHandoffsConsumed": 2,
+        "portfolioArticlesReviewed": 24,
+        "publicSearchQueries": 7,
+        "alertCandidatesEvaluated": 6,
+        "alertsPublished": 1,
+        "filesChanged": 3,
+        "pullRequestsMerged": 1,
+        "dailyCycleHistoryEntriesPreserved": 51,
+        "codeReviewFindingsResolved": 1,
+        "previewDeploymentsChecked": 1,
+        "productionDeploymentsChecked": 1,
+        "liveHomepageChecks": 1,
+        "liveAlertsArchiveChecks": 1,
+        "liveTickerChecks": 2,
+        "runtimeErrorChecks": 1,
+        "analyticsReceiptBundlesReviewed": 1,
+        "socialSentStateReconciliationsObserved": 1,
+        "socialSchedulingAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer",
+        "Google Analytics",
+        "Search Console",
+        "public web",
+        "creditunionainews.com"
+      ],
+      "summary": "Published one qualified October 1 Credit Union Liquidation Alert from NCUA's direct September 30 notice that Jackson Area Federal Credit Union was liquidated after Five Star Credit Union purchased some assets and assumed member shares. PR #238 merged as 72f8ef8caff1a21cf84e82f03b66838b5f71f0f4 after review; the first review found a missing ticker renderer, and the final package restored a site-wide, deduplicated rolling 14-day ticker linking each Alert exactly once. The package preserved all 51 prior daily-cycle history entries byte-for-byte, kept the completed Gulf Winds article intact, and advanced today's Alert count from 0 to 1. Exact production was READY; live checks showed the new Alert on the homepage, Alert archive and ticker with no site runtime errors. The Board Reporting LinkedIn post was observed sent exactly once at 11:30 a.m. ET with duplicate=false. Fresh authenticated evidence reports 364 rolling-28-day active users, 385 sessions, 115 engaged sessions and 500 pageviews; Search Console reports 17 clicks from 1,303 impressions. Volume is above the September threshold, while engagement depth and qualified acquisition remain the operating constraint. CAI measurement recorded 324 banner impressions (132 A, 192 B), 6 generic clicks and 3 attributable B-header clicks; downstream CAI destination evidence remains unavailable rather than zero, so no winner was declared. The next portfolio gap remains AI-assisted product governance, member-outcome monitoring and product-retirement controls in a non-control-framework format. The W40 competitive-distribution scan was not duplicated. The historical September 16-28 usage-ledger backlog remains unreconciled. No social creation, outreach, spend, schedule, credential, permission, pricing, legal, privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
