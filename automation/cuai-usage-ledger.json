@@ -2288,6 +2288,47 @@
       ],
       "summary": "Added the same parentPublicationId guard to High, Library and media selection; 91 tests pass including distinct-URL adaptation regressions, unrelated-parent fallback, legacy candidates and immutable planned/queued/sent reservations. No duplicate social post was reported or created. Append-only provenance clarification for the reliability-watch entry dated 2026-10-01T16:40:49-04:00 (PR240): its exact-current Production READY wording predates verification of the concurrent podcast release and must not be used as proof of that release. Superseding verification at 2026-10-01T21:45:16Z checked main SHA 34834038c66604faac8af71e88a186a1c47f9ed5, deployment dpl_9UoqMVC1XVRvwn8i14Qc1aawYLrQ, READY production with creditunionainews.com alias and matching deployment SHA. This establishes the checked revision and time, not an outage or verification of a later unobserved revision. Preserve all earlier entries; the September16–28 historical ledger gap remains separate and unreconciled. This entry records the local repair and observed prior production identity; its own release is verified through the subsequent deployment/workflow receipt.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T22:27:17+00:00",
+      "actor": "cuai-native-video-review",
+      "runType": "delegated-engineering",
+      "trigger": "Coordinator requested the smallest tested local extension for the existing four monthly company LinkedIn short videos; no release or live test post.",
+      "status": "success",
+      "workUnits": {
+        "filesChanged": 13,
+        "existingRepositoryTestsPassed": 91,
+        "newRegressionTestsPassed": 12,
+        "providerReadEvidenceInspected": 1,
+        "socialSchedulingAttempts": 0,
+        "videosRendered": 0,
+        "deploymentsPublished": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub"
+      ],
+      "summary": "Prepared local native H.264 MP4 payload and conservative permanent same-host public validation in the sole existing scheduler. Preserved PR242 parent-publication deduplication, shared daily/weekly caps, immutable reservations, existing image behavior and production/OIDC authorization. Pending/failure/ambiguous and lost endpoint responses retain blocked reconciliation receipts and any real provider post ID without blind retry; sent reconciliation requires an actual video asset. 103 tests pass. Planned October8/15/22/29 entries remain planned with no finished file; narration-only audio is not a video. Harmless inspection of existing trusted run36931192827 found Buffer metrics HTTP200/oktrue for company channel6a53df0880cc80cdcaa76fb8 at2026-10-01T21:49:39.353Z; this verifies that prior read, not live native-video processing/publication or a later deployment. No credential/scope/provider/task configuration, content generation, social post, infrastructure release or timing activation.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-01T22:32:51+00:00",
+      "actor": "cuai-native-video-review",
+      "runType": "delegated-engineering",
+      "trigger": "Tom authorized the bounded native-video integration release through existing draft PR/check/review/deploy controls, with no actual post or rendering.",
+      "status": "success",
+      "workUnits": {
+        "filesChanged": 13,
+        "repositoryTestsPassed": 104,
+        "socialSchedulingAttempts": 0,
+        "videosRendered": 0,
+        "deploymentsPublished": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub"
+      ],
+      "summary": "Reviewed the exact native-video diff for scope, security, shared caps and idempotent receipts. Refreshed main at3843bae2c518306ecd05a96af7cd61d5317c3309; no conflicts. Added fail-closed guards against image downgrade of a native package and a different provider due time; 104 tests pass, including all103prior tests and a new native-reservation/payload regression. Preserved every earlier ledger byte, queue/content/production histories and PR242 parent deduplication. This records review and local pre-release validation only; actual deployment and trusted workflow identity will be established in the subsequent release receipt. No test post, footage generation, host/permission/spend change or timing activation.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

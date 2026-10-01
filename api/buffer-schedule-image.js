@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { validateSchedule, checkCapacity, mediaReady } = require('../lib/media-slots.cjs');
 const MEDIA_POLICY = require('../automation/media-policy.json');
+const { validateVideo, inspectPublicVideo, videoReceipt } = require('../lib/native-video.cjs');
 
 const BUFFER_API_URL = 'https://api.buffer.com';
 const HOST = 'creditunionainews.com';
@@ -53,6 +54,7 @@ function loadItem(itemId) {
   if (typeof item.copy !== 'string' || item.copy.trim().length < 20) return { error: 'queue_item_copy_invalid' };
   let article;
   let distribution;
+  let nativeVideo = null;
   try {
     article = new URL(item.articleUrl);
     distribution = new URL(item.distributionUrl);
@@ -67,11 +69,16 @@ function loadItem(itemId) {
   if (item.contentKind === 'media') {
     const manifest = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'automation', 'media-manifest.json'), 'utf8'));
     const asset = manifest.assets?.find(entry => entry.id === item.mediaAssetId);
+    if ((asset?.distributionMode === 'native-video' || asset?.nativeVideo) && item.mediaType !== 'video') return { error: 'native_video_required' };
     const due = new Date(item.scheduledFor);
+    nativeVideo = item.mediaType === 'video' ? asset?.nativeVideo : null;
+    if (item.mediaType === 'video' && (!asset?.nativeVideo || validateVideo(asset.nativeVideo) || item.mediaFormat !== 'short-video' || asset.nativeVideo.url !== item.videoUrl || asset.nativeVideo.sha256 !== item.videoSha256 || asset.transcriptUrl !== item.articleUrl)) return { error: 'native_video_manifest_mismatch' };
     if (!Number.isFinite(due.getTime()) || !mediaReady(asset, easternDate(due)) || asset.canonicalUrl !== item.articleUrl || asset.thumbnailUrl !== item.imageUrl || asset.format !== item.mediaFormat || asset.altText !== item.imageAlt) return { error: 'media_package_not_verified' };
-  } else if (item.contentKind && item.contentKind !== 'article') return { error: 'queue_item_content_kind_invalid' };
+  } else if (item.mediaType === 'video') return { error: 'native_video_requires_verified_media' };
+  else if (item.contentKind && item.contentKind !== 'article') return { error: 'queue_item_content_kind_invalid' };
+  if (item.mediaType && !['image', 'video'].includes(item.mediaType)) return { error: 'unsupported_media_type' };
   const schedule = validateSchedule(item.scheduledFor, item);
-  return schedule.error ? schedule : { item, articleUrl: article.toString(), schedule };
+  return schedule.error ? schedule : { item, articleUrl: article.toString(), schedule, nativeVideo };
 }
 
 function meta(html, key, attribute = 'property') {
@@ -126,9 +133,14 @@ module.exports = async function handler(req, res) {
   const loaded = loadItem(value(req, 'itemId'));
   if (loaded.error) return res.status(400).json({ ok: false, error: loaded.error });
 
+  let mutationAttempted = false;
   try {
-    const media = await heroImage(loaded.item, loaded.articleUrl);
+    const media = loaded.nativeVideo ? await inspectPublicVideo(loaded.nativeVideo).catch(error => ({ error: /^video_[a-z_]+$/.test(error.message) ? error.message : 'video_public_validation_failed' })) : await heroImage(loaded.item, loaded.articleUrl);
     if (media.error) return res.status(422).json({ ok: false, ...media });
+    if (loaded.nativeVideo) {
+      const page = await fetch(loaded.articleUrl, { redirect: 'error', signal: AbortSignal.timeout(10000) });
+      if (!page.ok || !String(page.headers.get('content-type') || '').includes('text/html')) return res.status(422).json({ ok: false, error: 'video_transcript_page_unavailable' });
+    }
 
     const account = await bufferRequest(apiKey, 'query { account { organizations { id name } } }');
     const organizations = account?.account?.organizations || [];
@@ -145,14 +157,20 @@ module.exports = async function handler(req, res) {
     if (channel.isQueuePaused) return res.status(409).json({ ok: false, error: 'linkedin_channel_queue_paused' });
 
     const existingData = await bufferRequest(apiKey, `query ($organizationId: OrganizationId!, $channelId: ChannelId!) {
-      posts(first: 100, input: { organizationId: $organizationId, filter: { status: [scheduled, sending, sent], channelIds: [$channelId] } }) {
+      posts(first: 100, input: { organizationId: $organizationId, filter: { status: ${loaded.nativeVideo ? '[scheduled, sending, sent, error, draft, needs_approval]' : '[scheduled, sending, sent]'}, channelIds: [$channelId] } }) {
         edges { node { id text status dueAt sentAt assets { id mimeType source thumbnail } } }
+        pageInfo { hasNextPage }
       }
     }`, { organizationId, channelId: channel.id });
+    if (loaded.nativeVideo && existingData.posts?.pageInfo?.hasNextPage !== false) return res.status(409).json({ ok: false, error: 'buffer_video_inventory_incomplete' });
     const existing = (existingData.posts?.edges || []).map((edge) => edge.node);
     const duplicate = existing.find((post) => post.text === loaded.item.copy);
     if (duplicate) {
       if (loaded.item.postId && loaded.item.postId !== duplicate.id) return res.status(409).json({ ok: false, error: 'duplicate_post_receipt_mismatch' });
+      if (loaded.nativeVideo) {
+        const receipt = videoReceipt(duplicate, media, { duplicate: true, dueAt: loaded.schedule.dueAt, channelId: channel.id, channelName: channel.displayName || channel.name });
+        return res.status(receipt.ok ? 200 : 202).json(receipt);
+      }
       if (!imageAssets(duplicate).length) return res.status(409).json({ ok: false, error: 'duplicate_post_missing_image', postId: duplicate.id });
       return res.status(200).json({ ok: true, duplicate: true, postId: duplicate.id, status: duplicate.status, dueAt: duplicate.dueAt, imageAttached: true });
     }
@@ -163,6 +181,7 @@ module.exports = async function handler(req, res) {
     const capacity = checkCapacity(loaded.schedule.date, queue.items || [], existing, loaded.item.postId || loaded.item.id);
     if (capacity.error) return res.status(409).json({ ok: false, error: capacity.error });
 
+    mutationAttempted = true;
     const created = await bufferRequest(apiKey, `mutation ($input: CreatePostInput!) {
       createPost(input: $input) {
         ... on PostActionSuccess { post { id text status dueAt sentAt assets { id mimeType source thumbnail } } }
@@ -177,10 +196,15 @@ module.exports = async function handler(req, res) {
       saveToDraft: false,
       aiAssisted: true,
       source: 'creditunionainews',
-      assets: [{ image: { url: media.url, metadata: { altText: media.altText } } }]
+      assets: loaded.nativeVideo ? [{ video: { url: media.url } }] : [{ image: { url: media.url, metadata: { altText: media.altText } } }]
     } });
     const result = created.createPost;
+    if (!result?.post && loaded.nativeVideo) return res.status(202).json({ ok: false, mediaType: 'video', status: 'blocked', channelId: MEDIA_POLICY.distribution.channelId, channelName: 'CreditUnionAI News', dueAt: loaded.schedule.dueAt, videoUrl: loaded.nativeVideo.url, videoAttached: false, nativeVideoReceiptState: 'failed', reconciliationRequired: true, error: 'buffer_video_creation_rejected' });
     if (!result?.post) return res.status(502).json({ ok: false, error: 'buffer_schedule_creation_failed', message: result?.message });
+    if (loaded.nativeVideo) {
+      const receipt = videoReceipt(result.post, media, { duplicate: false, itemId: loaded.item.id, dueAt: loaded.schedule.dueAt, channelId: channel.id, channelName: channel.displayName || channel.name });
+      return res.status(receipt.ok ? 201 : 202).json(receipt);
+    }
     const images = imageAssets(result.post);
     if (!images.length) return res.status(502).json({ ok: false, error: 'buffer_image_asset_missing', postId: result.post.id });
     return res.status(201).json({
@@ -191,6 +215,7 @@ module.exports = async function handler(req, res) {
       imageUrl: images[0].source || media.url, imageMimeType: images[0].mimeType || media.contentType
     });
   } catch (error) {
+    if (loaded.nativeVideo && mutationAttempted) return res.status(202).json({ ok: false, mediaType: 'video', status: 'blocked', channelId: MEDIA_POLICY.distribution.channelId, channelName: 'CreditUnionAI News', dueAt: loaded.schedule.dueAt, videoUrl: loaded.nativeVideo.url, videoAttached: false, nativeVideoReceiptState: 'ambiguous', reconciliationRequired: true, error: 'buffer_video_creation_outcome_unknown' });
     return res.status(error.status === 401 ? 401 : 502).json({
       ok: false,
       error: error.status === 401 ? 'buffer_authentication_failed' : 'buffer_api_error',
