@@ -32,7 +32,7 @@ The latest management view lives at:
 
 `automation/reports/cuai-ceo-latest.md`
 
-The CUAI CEO must refresh this file on each successful weekday CEO run. It is a rolling snapshot, not an append-only log.Historically, the CUAI CEO refreshed this file on each successful weekday CEO run as a rolling snapshot, not an append-only log. Retirement creates no automatic refresh requirement.
+Historically, the CUAI CEO refreshed this file on each successful weekday CEO run as a rolling snapshot, not an append-only log. Retirement creates no automatic refresh requirement.
 
 Required sections:
 
