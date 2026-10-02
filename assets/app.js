@@ -1640,12 +1640,12 @@
     const visible = filtered.slice(0, alertLimit);
     if (alertCount) alertCount.textContent = query ? `${filtered.length} matching alerts` : `${filtered.length} recent alerts`;
     if (!filtered.length) {
-      alertsList.innerHTML = '<article class="card alert-card" aria-live="polite"><div class="alert-content"><h3>No matching alerts.</h3><p>Try a broader topic or vendor name.</p></div></article>';
+      alertsList.innerHTML = '<article class="card alert-card" aria-live="polite"><div class="alert-content"><h3 class="card-title">No matching alerts.</h3><p>Try a broader topic or vendor name.</p></div></article>';
     } else {
       alertsList.innerHTML = visible.map((item) => `
         <article class="card alert-card" id="${item.slug}">
           <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span></div>
-          <div class="alert-content"><h3>${item.headline}</h3><p class="alert-summary">${item.summary}</p><p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p><p class="alert-meta"><span class="alert-date">${item.date || ''}</span> · <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p></div>
+          <div class="alert-content"><h3 class="card-title">${item.headline}</h3><p class="alert-summary">${item.summary}</p><p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p><p class="alert-meta"><span class="alert-date">${item.date || ''}</span> · <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p></div>
         </article>`).join('');
     }
     if (alertsMore) alertsMore.hidden = visible.length >= filtered.length;
@@ -1665,7 +1665,7 @@
     callout.setAttribute('aria-label', 'CreditUnionAI Weekly Briefing');
     callout.innerHTML = `
       <p class="eyebrow">CreditUnionAI Weekly Briefing</p>
-      <h2>Continue with a published weekly briefing.</h2>
+      <h2 class="section-title">Continue with a published weekly briefing.</h2>
       <p>Explore CUAI Weekly web briefings and follow the original sources behind the reporting.</p>
       <a class="btn btn-primary" href="/newsletter.html?source=article-bottom">Browse web briefings</a>
     `;

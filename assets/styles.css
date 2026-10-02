@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--gray);
   color: var(--text);
   line-height: 1.6;
@@ -1224,7 +1224,7 @@ main h1 { line-height:1.15; }
   --radius: 2px;
   --shadow: 0 12px 30px rgba(7, 23, 39, 0.08);
   --font-display: Georgia, "Times New Roman", serif;
-  --font-sans: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html {
@@ -1500,15 +1500,6 @@ a:hover {
   line-height: 1.08;
 }
 
-main > .section:first-child > .container > h1 {
-  border-bottom: 2px solid var(--navy-deep);
-  color: var(--navy-deep) !important;
-  font-family: var(--font-display);
-  font-size: clamp(2.6rem, 5vw, 4.75rem) !important;
-  line-height: 1.02;
-  margin-bottom: 16px !important;
-  padding-bottom: 17px;
-}
 
 .lead {
   color: var(--muted);
@@ -2533,3 +2524,39 @@ body:is(.page-article, [data-section="news"], [data-section="insights"]) h1 {
     text-overflow: ellipsis;
   }
 }
+
+/* Shared semantic roles: keep page, section and card hierarchy independent of DOM depth. */
+:root { --title-page: clamp(2rem, 4.2vw, 3.5rem); --title-section: clamp(1.5rem, 2.5vw, 2.15rem); --title-card: clamp(1.3rem, 1.8vw, 1.65rem); --reading-width: 76ch; }
+body main h1.page-title { font-size:var(--title-page); line-height:1.12; letter-spacing:-.025em; margin:0 0 1.15rem; padding-bottom:.9rem; border-bottom:2px solid var(--navy-deep); overflow-wrap:anywhere; }
+body main .hero h1.page-title, body main .newsletter-hero h1.page-title { font-size:clamp(2.25rem,4.5vw,4rem); line-height:1.08; border:0; padding-bottom:0; }
+body main h2.section-title { font-size:var(--title-section); line-height:1.2; margin:1.8rem 0 .8rem; overflow-wrap:anywhere; }
+body main .section-header h2.section-title { margin:0; }
+body main .card h2.section-title, body main .card h2.card-title, body main .card h3.card-title, body main .card h3 { font-size:var(--title-card); line-height:1.23; margin:0; overflow-wrap:anywhere; }
+body main .newsletter-preview h2.section-title, body main .hero-card h2.section-title { font-size:1.55rem; margin:.65rem 0; }
+body main .latest-alert-shell h2.section-title { font-size:clamp(1.7rem,3vw,2.6rem); line-height:1.15; margin:.7rem 0; }
+.card[hidden] { display:none; }
+.latest-alert-shell .eyebrow, .latest-alert-shell .label-tag, .latest-alert-shell .link, .latest-alert-shell .alert-source a { color:var(--copper-light); }
+.latest-alert-shell .link:hover, .latest-alert-shell .alert-source a:hover { color:var(--white); }
+.page-prose main .container, .page-media main .episode-body, .newsletter-edition { max-width:var(--reading-width); }
+.page-prose main p, .page-media main p, .newsletter-edition p { line-height:1.7; }
+.page-prose main p + p, .page-media main p + p, .newsletter-edition p + p { margin-top:1rem; }
+.page-prose main h2.section-title, .page-media main h2.section-title { margin-top:2rem; }
+.page-prose main li + li, .page-media main li + li { margin-top:.45rem; }
+.page-media main .episode-note { margin:1.25rem 0; }
+.page-media main .episode-body > ul, .page-media main .episode-body > ol { margin-bottom:1.5rem; }
+.page-media main .episode-body details p { margin-top:1rem; }
+.page-media main .episode-player { border-radius:var(--radius); }
+.inquiry-form input, .inquiry-form select, .inquiry-form textarea { border-radius:var(--radius); }
+.episode-archive-note { color:var(--muted); max-width:var(--reading-width); margin:1rem 0; }
+@media(max-width:700px) {
+  body main h1.page-title { font-size:clamp(2rem,8.6vw,2.5rem); }
+  body main .hero h1.page-title, body main .newsletter-hero h1.page-title { font-size:clamp(2rem,9vw,2.6rem); }
+  body main h2.section-title { font-size:1.6rem; }
+  body main .card h2.section-title, body main .card h2.card-title, body main .card h3.card-title, body main .card h3 { font-size:1.4rem; }
+  .page-prose main .container, .page-media main .episode-body { width:calc(100% - 32px); }
+}
+
+/* Action text must keep contrast when an action appears inside article prose. */
+body main a.btn.btn-primary, body main a.btn.btn-primary:hover { color:var(--white); }
+
+body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { color:#dce4e9; }
