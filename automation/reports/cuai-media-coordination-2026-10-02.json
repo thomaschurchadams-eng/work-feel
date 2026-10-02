@@ -98,5 +98,36 @@
     "verifiedBeforeRecordWrites": true
   },
   "recordPersistencePurpose": "Canonical asset reuse and blocked-release handoff metadata only; no public chart page/image/MP4 or social reservation is included.",
-  "handoffPacketLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448"
+  "handoffPacketLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448",
+  "preparationCompletion": {
+    "completedAt": "2026-10-02T13:17:53+00:00",
+    "status": "prepared-local-unpublished",
+    "copyProvenance": "Exact surviving parent-supplied title/body/caption/alt/social copy; repository chart-module template",
+    "sourceCheckedAt": "2026-10-02T13:07:55+00:00",
+    "assetSha256": "28830de3f2280236b8dc4e6c23d775c51d916316fa246e13185b9840df1c96cf",
+    "desktopMobileWidths": [
+      1440,
+      390
+    ],
+    "browserErrors": 0,
+    "horizontalOverflow": false,
+    "keyboardDataTablePassed": true,
+    "accessibleAltAndRowHeaders": true,
+    "exactCopyVerified": true,
+    "publicRoutePublished": false,
+    "queueWrites": 0,
+    "socialSchedulingAttempts": 0,
+    "providerCreditsConsumed": 0,
+    "X": "held-existing-route-unverified",
+    "repositoryTestsPassed": 104,
+    "handoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448",
+    "localPackage": "cuai-oct6-chart-prepared",
+    "manifestId": "chart-2026-10-06",
+    "parentPublicationId": "ncua-q2-2026-membership-institution-distribution",
+    "publicationNotBefore": "2026-10-06",
+    "releaseGate": "Sole publisher must recheck current source/main/shared reservations, High-news precedence, parent deduplication and caps; verify production canonical/image, replace social placeholder with exact verified URL/UTMs before publishing.",
+    "handoffLibraryVersion": 1,
+    "handoffPackageSHA256": "74e95eb648ba5f59be8da27ab96aff95a850768abb9d0c19308153c1ec3e978d",
+    "handoffFileName": "cuai-oct2-preparation-handoff.zip"
+  }
 }
