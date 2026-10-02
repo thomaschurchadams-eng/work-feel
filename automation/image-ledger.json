@@ -3,6 +3,28 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "cdfi-certification-credit-union-accountability-proposal",
+      "articleUrl": "/news/cdfi-certification-credit-union-accountability-proposal.html",
+      "imagePath": "/assets/cdfi-certification-credit-union-accountability-proposal.jpg",
+      "publishedAt": "2026-10-02T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-cinematic-3d-illustration",
+      "subject": "cdfi-accountability-and-target-market-activity",
+      "composition": "community-financial-institution-moving-through-activity-and-governance-gates",
+      "perspective": "wide-elevated-oblique",
+      "palette": "deep-navy-teal-amber-cream",
+      "lighting": "controlled-institutional-studio",
+      "texture": "glass-paper-metal-and-luminous-data-paths",
+      "scene": "community-financial-institution-moves-through-activity-measurement-and-governance-review-toward-a-revised-certification-gateway",
+      "conceptScore": 93.8,
+      "dimensions": {"width": 1200, "height": 630},
+      "conceptAlternatives": [
+        {"medium": "editorial-paper-cut", "subject": "target-market-activity-evidence", "score": 82.4},
+        {"medium": "isometric-editorial", "subject": "cdfi-certification-transition", "score": 80.9}
+      ]
+    },
+    {
       "id": "fcc-tcpa-revoke-all-credit-union-alerts",
       "articleUrl": "/news/fcc-tcpa-revoke-all-credit-union-alerts.html",
       "imagePath": "/assets/fcc-tcpa-revoke-all-credit-union-alerts.jpg",

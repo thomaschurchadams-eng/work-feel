@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-02",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -33,7 +33,16 @@
         "url": "https://creditunionainews.com/news/fcc-tcpa-revoke-all-credit-union-alerts.html",
         "primaryFunctionalAudience": "Member-service, compliance, fraud and communications leaders",
         "promotionPriority": "High",
-        "socialDecision": "eligible-high-pending-live-verification"
+        "socialDecision": "scheduled-2026-10-02-12:30-et-verified-receipt"
+      },
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Treasury Proposal Would Change How CDFI Credit Unions Prove Accountability",
+        "url": "https://creditunionainews.com/news/cdfi-certification-credit-union-accountability-proposal.html",
+        "primaryFunctionalAudience": "CDFI, compliance, community-development and strategy leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
       }
     ],
     "rejections": [
@@ -78,11 +87,11 @@
         "reason": "credible analysis of future competition, but commentary rather than a discrete credit-union event or rule"
       }
     ],
-    "status": "primary-article-complete-second-slot-in-progress",
+    "status": "two-article-cycle-complete",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
-    "updatedAt": "2026-10-02T07:05:00-04:00"
+    "updatedAt": "2026-10-02T07:35:00-04:00"
   },
   "history": [
     {
