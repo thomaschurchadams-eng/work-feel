@@ -22,7 +22,40 @@
       "id": "chart-2026-10-06",
       "format": "chart",
       "targetDate": "2026-10-06",
-      "status": "planned"
+      "status": "planned",
+      "preparationStatus": "prepared-asset-source-copy-pending",
+      "preparedAt": "2026-10-02T12:53:16+00:00",
+      "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+      "sourceURLs": [
+        "https://ncua.gov/analysis/credit-union-corporate-call-report-data/ncua-quarterly-us-map-review/second-quarter-2026",
+        "https://ncua.gov/newsroom/press-release/2026/ncua-releases-2026-q2-state-level-credit-union-data"
+      ],
+      "sourceReleaseDate": "2026-09-23",
+      "sourceCheckedAt": "2026-10-02T12:53:16+00:00",
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": false,
+      "productionVerified": false,
+      "publicationNotBefore": "2026-10-06",
+      "libraryAssetId": "libfile_c0671d1987d8819180b11ca97585f127",
+      "assetSha256": "28830de3f2280236b8dc4e6c23d775c51d916316fa246e13185b9840df1c96cf",
+      "assetMimeType": "image/png",
+      "assetBytes": 136411,
+      "width": 1200,
+      "height": 630,
+      "altText": "Stacked bar: about 56% of federally insured credit unions had fewer members at June 30, 2026 than a year earlier; about 44% had the same or more. Shares count institutions, not member churn.",
+      "methodology": "Approximate shares of federally insured credit unions. NCUA reports about 56% with fewer members; about 44% is 100% minus that rounded share, not a separately reported exact statistic. This is institution-level year-over-year membership change, not a member churn rate. Aggregate membership can grow while a majority of institutions shrink.",
+      "parentPublicationId": "ncua-q2-2026-membership-institution-distribution",
+      "releaseGates": {
+        "parentPreparedModuleAndCopy": "pending-supported-source-transfer",
+        "sourceAndDate": "verified",
+        "altAndDataTable": "prepared-for-review",
+        "desktopMobileAndAccessibilityQA": "not-performed-in-this-pass",
+        "dueDate": "hold-until-2026-10-06",
+        "productionIdentityAndPublicURL": "not-published",
+        "socialSelection": "sole-publisher-recheck-High-priority-and-shared-caps"
+      },
+      "coordinationHandoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448"
     },
     {
       "id": "short-video-2026-10-08",
@@ -30,7 +63,44 @@
       "targetDate": "2026-10-08",
       "status": "planned",
       "distributionMode": "native-video",
-      "nativeVideo": null
+      "nativeVideo": null,
+      "preparationStatus": "review-blocked",
+      "reviewPackageRecordedAt": "2026-10-02T12:53:16+00:00",
+      "canonicalUrl": "https://creditunionainews.com/episodes/when-ai-becomes-the-members-front-door.html",
+      "parentPublicationId": "podcast-member-front-door-2026-10-01",
+      "publicationNotBefore": "2026-10-08",
+      "accessibilityVerified": false,
+      "productionVerified": false,
+      "reviewReferences": {
+        "video": "libfile_fa5a65fd6c8481919d86f0230cfc1b3d",
+        "thumbnail": "libfile_c6ea3996f93c8191ba082b2a028c375a",
+        "transcript": "libfile_707d6c25e53c8191900d78300cb578bb",
+        "provisionalSRT": "libfile_0cc29784193481918a1d73561248d578",
+        "storyboardReleaseSocialCopy": "libfile_4ef9dd4727e48191b4cd5fc994b0df76"
+      },
+      "reviewTechnicalMetadata": {
+        "durationSeconds": 73.333333,
+        "width": 720,
+        "height": 1280,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "frameRate": 24,
+        "bytes": 2313959,
+        "provenance": "October1 Library release notes; not a final master or a listening/sync verification in this pass"
+      },
+      "thumbnailSha256": "b9de34ae598d1ac7f86ccfc4282047f35fa7773f089c9c86eb1f8fda3516cee0",
+      "requiredNarrationReplacement": "On September thirtieth, Mastercard announced an AI-transaction probability score entering U.S. testing.",
+      "releaseBlockers": [
+        "Spoken This week date wording must be corrected using the exact replacement line.",
+        "Caption timings are provisional: align to the actual corrected waveform and retime downstream visuals.",
+        "Actual listening QA must check every spoken word, pronunciation, pacing, splice quality and caption sync.",
+        "Persistent review label remains; remove only after acceptance.",
+        "Recheck Mastercard testing qualifier/source freshness and episode/Spotify links for October8.",
+        "Verify final MP4 hash/full probe/burned-in captions/canonical transcript/permanent public URL and exact production identity."
+      ],
+      "nextOwner": "existing provider/audio-video handoff owner",
+      "nextStep": "Reuse the original diagrams, narration, thumbnail and copy. Owner first reviews current credit entitlement before any necessary correction; no render, credit use or browser work in this coordination pass. Keep nativeVideo null until a genuinely finished production-verified master exists.",
+      "coordinationHandoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448"
     },
     {
       "id": "cartoon-2026-10-09",
@@ -110,5 +180,6 @@
       "targetDate": "2026-10-30",
       "status": "planned"
     }
-  ]
+  ],
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-02.json"
 }
