@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-02",
+  "checkedAt": "2026-10-02T12:53:16+00:00",
+  "trigger": "parent delegation for first scheduled multimedia coordination pass in the existing implementation task",
+  "scheduledTriggerIndependentlyVerified": false,
+  "endToEndNativeVideoSuccess": false,
+  "baseMainSHA": "4ee5c3cc829135c75fa97693980b64eb89df8790",
+  "noMediaReleaseDueToday": true,
+  "publisher": {
+    "date": "2026-10-02",
+    "fullArticleCount": 2,
+    "status": "two-article-cycle-complete",
+    "cadencePreserved": "2/1/2/1/2; eight per full week",
+    "latestReceiptRun": 37000276614,
+    "latestReceiptStatus": "verified",
+    "latestReceiptGeneratedAt": "2026-10-02T11:18:43.464Z",
+    "latestReceiptActions": 0,
+    "latestReceiptErrors": 0
+  },
+  "reservations": {
+    "today": {
+      "itemId": "linkedin-fcc-tcpa-revoke-all-credit-union-alerts-2026-10-02",
+      "status": "scheduled",
+      "postId": "6abf9242b41a266eabf6c1ac",
+      "dueAt": "2026-10-02T16:30:00.000Z",
+      "creationReceiptRun": 36999956389,
+      "creationHTTPStatus": 201,
+      "imageAttached": true,
+      "duplicate": false,
+      "note": "Not yet due at this pass; preserve existing receipt, no resubmission."
+    },
+    "weekOfSeptember28": {
+      "count": 5,
+      "cap": 5
+    },
+    "october6QueueCapacity": "free-at-checked-main; not reserved or guaranteed",
+    "october8QueueCapacity": "free-at-checked-main; not reserved or guaranteed",
+    "providerFutureInventory": "No new provider inventory call; future outside-queue posts are not independently rechecked by this pass.",
+    "queueWrites": 0
+  },
+  "chart": {
+    "manifestId": "chart-2026-10-06",
+    "assetReused": true,
+    "sourceAndReleaseDateVerified": true,
+    "parentPreparedModuleCopy": "awaiting-supported-transfer; cloud workspace is not a Mac path",
+    "publicRelease": "held until October6 and final publisher QA/production verification",
+    "articleCountIncrement": 0
+  },
+  "video": {
+    "manifestId": "short-video-2026-10-08",
+    "reviewPackageReused": true,
+    "readyToPublish": false,
+    "blockedGates": [
+      "Spoken This week date wording must be corrected using the exact replacement line.",
+      "Caption timings are provisional: align to the actual corrected waveform and retime downstream visuals.",
+      "Actual listening QA must check every spoken word, pronunciation, pacing, splice quality and caption sync.",
+      "Persistent review label remains; remove only after acceptance.",
+      "Recheck Mastercard testing qualifier/source freshness and episode/Spotify links for October8.",
+      "Verify final MP4 hash/full probe/burned-in captions/canonical transcript/permanent public URL and exact production identity."
+    ],
+    "nextOwner": "existing provider/audio-video handoff owner",
+    "nativeVideo": null,
+    "newAudioOrFootageGenerated": false
+  },
+  "credits": {
+    "lastObservedRemaining": 28856,
+    "observationDate": "2026-10-01",
+    "currentBalanceQuote": null,
+    "currentBalanceVerified": false,
+    "creditConsumptionThisPass": 0,
+    "recurringMonthlyCeiling": 30000,
+    "baselinePlan": 21306,
+    "overageAllowed": false,
+    "note": "Yesterday’s verified balance is historical. Provider handoff owner must refresh billing period, model-specific cost and actual remaining credits before any synthesis."
+  },
+  "timingTest": {
+    "status": "planned-baseline-gated",
+    "baselineValidatedObservations": 0,
+    "assignmentsUnchanged": true
+  },
+  "X": "blocked-unchanged",
+  "sitePublicationActions": 0,
+  "socialSchedulingAttempts": 0,
+  "browserWork": 0,
+  "nextStep": "Finish supported transfer of parent chart module/copy, prepare the review-only canonical page, then persist metadata/handoff only through the existing workflow; no early public asset release.",
+  "validation": {
+    "repositoryTestsPassed": 104,
+    "uniqueCanonicalManifestEntries": true,
+    "publishedPodcastAndOtherCalendarItemsPreserved": true,
+    "queueDailyCycleCoverageImagesMediaPolicyUnchanged": true,
+    "desktopMobileBrowserQA": "not-performed-per-pass-scope",
+    "actualVideoListeningAndSyncQA": "not-performed; separate owner"
+  },
+  "currentProduction": {
+    "sha": "4ee5c3cc829135c75fa97693980b64eb89df8790",
+    "deployment": "dpl_7t16FysSwpAPqWU51mqFjcMVKDNd",
+    "state": "READY",
+    "verifiedBeforeRecordWrites": true
+  },
+  "recordPersistencePurpose": "Canonical asset reuse and blocked-release handoff metadata only; no public chart page/image/MP4 or social reservation is included.",
+  "handoffPacketLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448"
+}
