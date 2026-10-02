@@ -5,7 +5,7 @@ import { applySiteDesign, siteHeader, siteFooter } from './site-design.mjs';
 const ROOT = process.cwd();
 const ORIGIN = 'https://creditunionainews.com';
 const TODAY = new Date().toISOString().slice(0, 10);
-const SKIP_DIRS = new Set(['.git', '.vercel', 'node_modules', 'api', 'automation', 'tests']);
+const SKIP_DIRS = new Set(['.git', '.vercel', 'node_modules', 'api', 'automation', 'tests', 'drafts', 'review', 'design-results']);
 const UTILITY_FILES = new Set([
   'corrections.html',
   'intelligence/changes.html',
@@ -219,9 +219,29 @@ function writeSitemaps(files) {
     if (b === `${ORIGIN}/`) return 1;
     return a.localeCompare(b);
   });
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </url>`).join('\n')}\n</urlset>\n`;
-  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
-  fs.writeFileSync(path.join(ROOT, 'sitemap.txt'), `${urls.join('\n')}\n`);
+  const xmlPath = path.join(ROOT, 'sitemap.xml');
+  const existingXml = fs.existsSync(xmlPath) ? fs.readFileSync(xmlPath, 'utf8') : '';
+  const entries = [...existingXml.matchAll(/\s*<url>[\s\S]*?<\/url>/g)]
+    .map(match => ({ xml: match[0], url: (match[0].match(/<loc>([^<]+)<\/loc>/) || [])[1] }));
+  const wanted = new Set(urls);
+  const retained = entries.filter(entry => wanted.has(entry.url));
+  const present = new Set(retained.map(entry => entry.url));
+  const added = urls.filter(url => !present.has(url));
+  // Chrome maintenance is not evidence of a publication date. Preserve each
+  // existing entry (including lastmod/priority/changefreq) and its ordering.
+  // Newly discovered URLs have no inferred lastmod; the publisher owns dates.
+  if (retained.length !== entries.length || added.length || !existingXml) {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${retained.map(entry => entry.xml).join('')}${added.map(url => `\n  <url>\n    <loc>${url}</loc>\n  </url>`).join('')}\n</urlset>\n`;
+    fs.writeFileSync(xmlPath, xml);
+  }
+  const txtPath = path.join(ROOT, 'sitemap.txt');
+  const existingTxt = fs.existsSync(txtPath) ? fs.readFileSync(txtPath, 'utf8') : '';
+  const listed = existingTxt.split(/\r?\n/).filter(Boolean);
+  const kept = listed.filter(url => wanted.has(url));
+  const missing = urls.filter(url => !kept.includes(url));
+  if (kept.length !== listed.length || missing.length || !existingTxt) {
+    fs.writeFileSync(txtPath, `${[...kept, ...missing].join('\n')}\n`);
+  }
   return urls.length;
 }
 
@@ -266,9 +286,12 @@ for (const file of htmlFiles) {
 
   let description = '';
   if (!file.startsWith('templates/') && file !== 'subscribe.html') {
-    const existing = (html.match(/<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i) || [])[1];
-    description = DESCRIPTION_OVERRIDES.get(file) || (existing && existing.trim().length > 20 ? existing.trim() : deriveDescription(html, file));
-    html = upsertMeta(html, 'description', description);
+    const descriptionTag = (html.match(/<meta\b[^>]*name=["']description["'][^>]*>/i) || [])[0];
+    const existing = (descriptionTag?.match(/\bcontent=(["'])([\s\S]*?)\1/i) || [])[2];
+    // An existing editorial description is authoritative. Match its actual
+    // delimiter so an apostrophe inside double quotes never truncates it.
+    description = existing?.trim() || DESCRIPTION_OVERRIDES.get(file) || deriveDescription(html, file);
+    if (!existing?.trim()) html = upsertMeta(html, 'description', description);
     html = upsertCanonical(html, `${ORIGIN}${canonicalPath(file)}`);
   }
 

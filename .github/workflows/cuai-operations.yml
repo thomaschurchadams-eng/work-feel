@@ -10,6 +10,8 @@ on:
       - 'templates/**'
       - 'scripts/*design*.mjs'
       - 'scripts/generate-topic-hubs.mjs'
+      - 'scripts/remediate-site-qc.mjs'
+      - 'tests/*.test.cjs'
       - 'tests/design/**'
       - 'package*.json'
       - '.github/workflows/cuai-operations.yml'
