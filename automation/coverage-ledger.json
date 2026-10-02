@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fcc-tcpa-revoke-all-credit-union-alerts",
+      "title": "FCC Narrows TCPA ‘Revoke All’ Rule for Credit Union Alerts",
+      "url": "/news/fcc-tcpa-revoke-all-credit-union-alerts.html",
+      "publishedAt": "2026-10-02T07:05:00-04:00",
+      "section": "news",
+      "beat": "member-communications-tcpa-consent",
+      "functions": ["member-service", "risk-compliance", "marketing-growth", "operations", "it-data-cybersecurity"],
+      "technologies": ["regtech-monitoring", "fraud-analytics"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Member-service, compliance, fraud and communications leaders",
+      "secondaryAudiences": ["marketing leaders", "contact-center operations", "technology and vendor-management teams"],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-pending-live-verification",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": ["/insight-credit-union-ai-member-communications-review.html", "/insight-credit-union-ai-policy-maintenance-controls.html"],
+      "sourceTier": 1,
+      "score": 96.4
+    },
+    {
       "id": "gulf-winds-peoples-exchange-bank-acquisition",
       "title": "Gulf Winds Lines Up a Second Bank Acquisition",
       "url": "/news/gulf-winds-peoples-exchange-bank-acquisition.html",

@@ -3,6 +3,28 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fcc-tcpa-revoke-all-credit-union-alerts",
+      "articleUrl": "/news/fcc-tcpa-revoke-all-credit-union-alerts.html",
+      "imagePath": "/assets/fcc-tcpa-revoke-all-credit-union-alerts.jpg",
+      "publishedAt": "2026-10-02T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-cinematic-3d-illustration",
+      "subject": "category-specific-consent-and-secure-fraud-alerts",
+      "composition": "central-mobile-alert-with-separate-communication-category-controls",
+      "perspective": "wide-low-oblique",
+      "palette": "deep-navy-cyan-teal-amber",
+      "lighting": "controlled-night-studio",
+      "texture": "glass-metal-and-luminous-signal-rings",
+      "scene": "secure-mobile-notification-remains-active-while-separate-communication-categories-are-switched-on-or-off",
+      "conceptScore": 94.1,
+      "dimensions": {"width": 1200, "height": 630},
+      "conceptAlternatives": [
+        {"medium": "paper-cut-editorial", "subject": "consent-categories-and-fraud-alert-channel", "score": 82.0},
+        {"medium": "macro-still-life", "subject": "message-routing-and-revocation-controls", "score": 80.8}
+      ]
+    },
+    {
       "id": "gulf-winds-peoples-exchange-bank-acquisition",
       "articleUrl": "/news/gulf-winds-peoples-exchange-bank-acquisition.html",
       "imagePath": "/assets/gulf-winds-peoples-exchange-bank-acquisition.jpg",
