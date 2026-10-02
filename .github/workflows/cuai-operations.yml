@@ -2,6 +2,17 @@ name: CUAI verified operations
 on:
   push:
     branches: [main]
+  pull_request:
+    paths:
+      - '**.html'
+      - 'assets/styles.css'
+      - 'assets/app.js'
+      - 'templates/**'
+      - 'scripts/*design*.mjs'
+      - 'scripts/generate-topic-hubs.mjs'
+      - 'tests/design/**'
+      - 'package*.json'
+      - '.github/workflows/cuai-operations.yml'
   workflow_dispatch:
   schedule:
     # Post-slot reconciliation sweep. 17:45 UTC is after the latest approved
@@ -10,9 +21,49 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: cuai-production-operations
+  group: ${{ github.event_name == 'pull_request' && format('cuai-design-{0}', github.event.pull_request.number) || 'cuai-production-operations' }}
   cancel-in-progress: false
 jobs:
+  design-checks:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: read
+    steps:
+      - name: Read exact review revision
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Use Node for design checks
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install pinned free test dependencies
+        run: npm ci
+      - name: Install test browser
+        run: npx playwright-core install --with-deps chromium
+      - name: Check canonical shell and existing regressions
+        run: |
+          npm run check:design
+          npm test
+      - name: Check rendered interactions, typography and accessibility
+        run: npm run test:design
+      - name: Preserve exact revision and review evidence
+        if: always()
+        run: |
+          mkdir -p design-results
+          git rev-parse HEAD > design-results/revision.txt
+      - name: Upload review screenshots and checks
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: cuai-design-review-${{ github.event.pull_request.head.sha }}
+          path: design-results/
+          if-no-files-found: warn
+          retention-days: 14
   operate:
     if: >-
       github.repository == 'thomaschurchadams-eng/work-feel' &&
