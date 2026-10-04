@@ -23,7 +23,7 @@
       "format": "chart",
       "targetDate": "2026-10-06",
       "status": "planned",
-      "preparationStatus": "prepared-local-unpublished",
+      "preparationStatus": "prepared-unpublished-social-reservation-held",
       "preparedAt": "2026-10-02T12:53:16+00:00",
       "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
       "sourceURLs": [
@@ -31,7 +31,7 @@
         "https://ncua.gov/newsroom/press-release/2026/ncua-releases-2026-q2-state-level-credit-union-data"
       ],
       "sourceReleaseDate": "2026-09-23",
-      "sourceCheckedAt": "2026-10-02T13:07:55+00:00",
+      "sourceCheckedAt": "2026-10-04T13:17:14.127249+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": true,
@@ -50,10 +50,10 @@
         "parentPreparedModuleAndCopy": "received-exact-parent-copy/template-assembled",
         "sourceAndDate": "verified",
         "altAndDataTable": "locally-verified",
-        "desktopMobileAndAccessibilityQA": "local-1440px-and-390px-passed",
+        "desktopMobileAndAccessibilityQA": "October4 local 390/1440 and axe passed; source/table/keyboard verified",
         "dueDate": "hold-until-2026-10-06",
         "productionIdentityAndPublicURL": "not-published",
-        "socialSelection": "sole-publisher-recheck-High-priority-and-shared-caps"
+        "socialSelection": "hold until future provider inventory, dedup, High-news and shared capacity are verified by existing publisher"
       },
       "coordinationHandoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448",
       "preparationCompletedAt": "2026-10-02T13:17:53+00:00",
@@ -63,7 +63,18 @@
       "preparationVerificationScope": "Local draft only; productionVerified remains false. Image is separate from article heroes.",
       "preparedPackageLibraryVersion": 1,
       "preparedPackageSHA256": "74e95eb648ba5f59be8da27ab96aff95a850768abb9d0c19308153c1ec3e978d",
-      "preparedPackageFileName": "cuai-oct2-preparation-handoff.zip"
+      "preparedPackageFileName": "cuai-oct2-preparation-handoff.zip",
+      "preparationRecheckedAt": "2026-10-04T13:19:21.855483+00:00",
+      "currentShellPreparedAtMainSHA": "a3976ae405f86656d483b8c0cbe2bf019220d0ad",
+      "latestPreparationPackage": {
+        "libraryFileId": "libfile_6f72c0cd231481918ba4ec38e5f8f7cc",
+        "fileName": "cuai-oct4-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "07c6d1f1fe2629540145c8e7a68acf755547293b6d2d9491755fbaf5c52a199b"
+      },
+      "latestPreparationPageMemberPath": "reused-chart/chart/media/credit-union-membership-q2-2026.html",
+      "thumbnailUrl": "https://creditunionainews.com/assets/cuai-membership-q2-2026-chart.png",
+      "socialDecision": "held-future-provider-inventory-unknown"
     },
     {
       "id": "short-video-2026-10-08",
@@ -114,7 +125,55 @@
       "id": "cartoon-2026-10-09",
       "format": "cartoon",
       "targetDate": "2026-10-09",
-      "status": "planned"
+      "status": "planned",
+      "title": "Beautiful. Where are the sources?",
+      "preparationStatus": "prepared-unpublished-social-dedup-held",
+      "preparedAt": "2026-10-04T13:19:21.855483+00:00",
+      "sourceCheckedAt": "2026-10-04T13:17:14.127249+00:00",
+      "canonicalUrl": "https://creditunionainews.com/media/ai-board-packet-sources-cartoon.html",
+      "thumbnailUrl": "https://creditunionainews.com/assets/cuai-board-packet-sources-cartoon-2026-10-09.png",
+      "assetSha256": "db68a8fa8726350c13cee34a3d86136637d9c1ad402bdf5b08da8c0967a4f8ea",
+      "assetBytes": 2265478,
+      "assetMimeType": "image/png",
+      "width": 1730,
+      "height": 909,
+      "altText": "Editorial cartoon: a colleague holds a handsome AI board packet beside a printer while another points to an empty folder labeled Sources. Caption: Beautiful. Where are the sources?",
+      "caption": "Beautiful. Where are the sources?",
+      "textAlternative": "In a fictional print room, one colleague proudly holds a bound packet labeled AI board packet. Another points to a large, visibly empty Sources folder. The contrast is the joke: a polished packet still needs evidence. The caption is invented editorial dialogue, not a quotation from a real person.",
+      "sourceURLs": [
+        "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
+        "https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Risk-ManagementGovernance/RiskManagementComponents.htm",
+        "https://airc.nist.gov/airmf-resources/playbook/govern/",
+        "https://home.treasury.gov/news/press-releases/sb0401"
+      ],
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": true,
+      "productionVerified": false,
+      "publicationNotBefore": "2026-10-09",
+      "preparedPackage": {
+        "libraryFileId": "libfile_6f72c0cd231481918ba4ec38e5f8f7cc",
+        "fileName": "cuai-oct4-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "07c6d1f1fe2629540145c8e7a68acf755547293b6d2d9491755fbaf5c52a199b"
+      },
+      "assetPackageMemberPath": "cartoon/assets/cuai-board-packet-sources-cartoon-2026-10-09.png",
+      "preparedPageMemberPath": "cartoon/media/ai-board-packet-sources-cartoon.html",
+      "parentPublicationId": "insight-credit-union-ai-board-reporting-decision-evidence",
+      "socialDecision": "held-underlying-publication-already-promoted",
+      "socialDedupEvidence": {
+        "existingQueueItemId": "linkedin-credit-union-ai-board-reporting-decision-evidence-2026-10-01",
+        "postId": "6abcf58bf9fcc8033908b104",
+        "canonicalSourceUrl": "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
+        "note": "Do not evade dedup by assigning a new parent identity. Source article historical queue entry has no parentPublicationId; preserve history and hold for existing publisher assessment."
+      },
+      "rightsNote": "Original illustration made with built-in AI image generation; fictional people, invented editorial dialogue; no logos, copied assets or actual-event claim",
+      "releaseGates": {
+        "dueDate": "hold-until-2026-10-09",
+        "desktopMobileAndAccessibilityQA": "October4 local 390/1440 and axe passed; alt/caption/long description verified",
+        "productionIdentityAndPublicURL": "not-published",
+        "socialSelection": "held; preserve underlying publication deduplication and future provider inventory check"
+      }
     },
     {
       "id": "decision-card-2026-10-13",
@@ -189,5 +248,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-02.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-04.json"
 }

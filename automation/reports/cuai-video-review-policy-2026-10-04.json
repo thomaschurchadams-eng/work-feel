@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-04T13:18:13.673713+00:00",
+  "authorization": "Tom October4 13:12:30UTC Sentinel_3a75737bb2c08191bf1c7286205938aa; production-craft clarification 13:13:25UTC",
+  "status": "workflow-step-prepared-for-PR",
+  "policyFiles": [
+    "automation/media-policy.json",
+    "automation/scheduled-tasks/cuai-media-coordinator.md"
+  ],
+  "scheduleId": "6abec7df5cf481918b7a34d350950a33",
+  "scheduleEnabled": true,
+  "scheduleLastRun": "2026-10-02T12:43:42.762367+00:00",
+  "scheduleChanged": false,
+  "promptReadFinding": "Existing prompt directs reading existing publishing policies, media manifest, social reservations and provider receipts, and reviewing content/format weekly; it does not name the coordinator policy file explicitly. Latest October2 scheduled invocation exists; that alone cannot prove every future run loads this precise policy.",
+  "minimalPromptAppendIfExplicitRoutingNeeded": "Read automation/scheduled-tasks/cuai-media-coordinator.md and automation/media-policy.json on current main, including the after-publication live-playback and production-craft review plus complementary seven-day same-post results review.",
+  "currentReviewDue": {
+    "newlyDueVerifiedPublicVideo": false,
+    "scope": "Current manifest has one published podcast, no published short-video asset. October8 video remains review-blocked/nativeVideo null. Trusted October4 sent-post receipt contains no videoAttached posts in its reporting window. This does not establish the absence of older or unrecorded videos.",
+    "actualProviderVideoPostId": null,
+    "playbackReviewPerformed": false,
+    "industryExamplesViewed": 0,
+    "selectedImprovement": null,
+    "reason": "No verified published video identified to trigger this new step; do not create a fictitious receipt or claim playback/craft observations."
+  },
+  "validation": {
+    "repositoryTestsPassed": 106,
+    "previousPolicyFieldsPreserved": true,
+    "existingManifestAndQueueUntouchedByPolicyChange": true,
+    "noNewTrackerScheduleExecutorOrPublication": true
+  }
+}

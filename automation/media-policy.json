@@ -120,5 +120,85 @@
         "time": "11:30"
       }
     ]
+  },
+  "videoReview": {
+    "owner": "cuai-media-coordinator",
+    "recordLocation": "existing immutable asset manifest entry and publication receipt; no separate tracker",
+    "livePlayback": {
+      "due": "first existing coordinator pass after each verified video publication",
+      "requiresActualPublicPlayback": true,
+      "codeOrDecodeTestsSufficient": false,
+      "reviewAreas": [
+        "hook",
+        "clarity",
+        "story structure",
+        "pacing",
+        "length",
+        "visual consistency",
+        "sound",
+        "audio and caption accuracy/synchronization",
+        "mobile accessibility and professionalism",
+        "factual framing"
+      ]
+    },
+    "productionCraft": {
+      "cadence": "after every video publication, independently of analytics",
+      "minimumViewedExamples": 2,
+      "maximumViewedExamples": 3,
+      "examples": "accessible, high-quality explainer/news/industry videos genuinely viewed with sound",
+      "evidence": "dated source links, viewing scope/time ranges, access limitations and specific observed techniques",
+      "techniques": [
+        "hook",
+        "story structure",
+        "graphics",
+        "pacing",
+        "sound",
+        "captions",
+        "mobile professionalism"
+      ],
+      "transcriptsEstablish": "wording/content only, never visual or audio craft",
+      "adaptation": "one suitable original adaptation for the next episode within existing budget, rights and caps",
+      "inaccessibleExamples": "mark unknown/blocked; do not claim viewing or substitute transcript-only craft review",
+      "prohibited": [
+        "copying assets",
+        "cloning a creator formula",
+        "new subscriptions"
+      ]
+    },
+    "sevenDayResults": {
+      "dueDaysAfterActualPublication": 7,
+      "matchingRequired": [
+        "immutable asset ID/hash",
+        "actual provider post ID and verified company channel",
+        "canonical URL/UTM landing path",
+        "matching measurement age"
+      ],
+      "freshness": "fresh same-post metrics; missing, stale, mismatched or inaccessible measurements are unknown",
+      "inference": "show counts and denominators; no causal conclusions from a small sample; metrics complement craft learning"
+    },
+    "receiptFields": [
+      "assetId",
+      "assetSha256",
+      "canonicalUrl",
+      "publishedAt",
+      "actualProviderPostId",
+      "publicPostUrl",
+      "livePlaybackDueAt",
+      "livePlaybackStatus",
+      "livePlaybackEvidenceLinks",
+      "craftReviewDueAt",
+      "craftReviewStatus",
+      "viewedExamples",
+      "observedTechniques",
+      "selectedNextEpisodeImprovement",
+      "selectionRationale",
+      "sevenDayDueAt",
+      "sevenDayStatus",
+      "sevenDayEvidenceLinks",
+      "measurementAsOf",
+      "accessLimitations"
+    ],
+    "publicationIdentity": "derive due dates from actual verified destination publication, not target/scheduled date; never invent a provider post ID for website-only or blocked publication",
+    "changeControl": "choose one evidence-grounded production change at a time for the next episode; preserve separate timing experiment and publication safeguards; no automatic modification of published videos, new release, spend, permission, schedule or executor"
   }
 }
