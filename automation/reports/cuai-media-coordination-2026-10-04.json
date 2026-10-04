@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-04T13:17:14.127249+00:00",
+  "baseMainSHA": "a3976ae405f86656d483b8c0cbe2bf019220d0ad",
+  "status": "prepared-unpublished",
+  "noReleaseBefore": {
+    "chart": "2026-10-06",
+    "cartoon": "2026-10-09"
+  },
+  "sourceChecks": {
+    "chart": {
+      "sourceURLs": [
+        "https://ncua.gov/analysis/credit-union-corporate-call-report-data/ncua-quarterly-us-map-review/second-quarter-2026",
+        "https://ncua.gov/newsroom/press-release/2026/ncua-releases-2026-q2-state-level-credit-union-data"
+      ],
+      "officialClaim": "about 56% of institutions had fewer members; aggregate membership grew",
+      "derivedClaim": "about 44% is approximate rounded complement, not churn",
+      "releaseDate": "2026-09-23",
+      "sourceCheckedAt": "2026-10-04T13:17:14.127249+00:00",
+      "rights": "Original CUAI chart using public NCUA data; unchanged PNG and original Library identities preserved"
+    },
+    "cartoon": {
+      "sourceURLs": [
+        "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
+        "https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Risk-ManagementGovernance/RiskManagementComponents.htm",
+        "https://airc.nist.gov/airmf-resources/playbook/govern/",
+        "https://home.treasury.gov/news/press-releases/sb0401"
+      ],
+      "sourceCheckedAt": "2026-10-04T13:17:14.127249+00:00",
+      "rights": "Original illustration made with built-in AI image generation; fictional people, invented editorial dialogue; no logos, copied assets or actual-event claim",
+      "interpretation": "Polished AI board reporting still requires traceable inputs and accountable review; sources do not describe the fictional scene"
+    }
+  },
+  "accessibility": {
+    "localWidths": [
+      390,
+      1440
+    ],
+    "casesPassed": 4,
+    "axeViolations": 0,
+    "overflow": false,
+    "brokenImages": 0,
+    "keyboardChartTable": "passed; two scoped row headers",
+    "menuEscape": "passed",
+    "visualReview": "actual chart and cartoon PNGs and local mobile/desktop screenshots viewed",
+    "textAlternatives": "chart table/units/denominator/rounded complement; cartoon alt, caption and extended fictional scene description"
+  },
+  "reservation": {
+    "queueDatesOct6Oct9": "free only in checked repository queue",
+    "providerFutureInventory": "unknown; trusted October4 receipt is sent-only",
+    "chart": "hold reservation until existing authorized future inventory check establishes free date; then exact planned item only",
+    "cartoon": "hold social selection; underlying board-reporting article already promoted October1, no parent-ID bypass",
+    "existingBoardPostId": "6abcf58bf9fcc8033908b104",
+    "queueWrites": 0,
+    "providerMutations": 0
+  },
+  "videoOwner": "existing audio/video owner unchanged; no synthesis, credits, corrected master or new playback claim",
+  "releaseInstructions": "Sole publisher re-reads main/High-news/shared caps/parent dedup, verifies sources and release date, removes draft/noindex at release, publishes separate media module, verifies exact production URLs and bytes, and only then promotes the same planned reservation if one is legitimately created. Future URLs remain unpublished.",
+  "productionVerified": false,
+  "X": "blocked unchanged",
+  "handoffPackage": {
+    "libraryFileId": "libfile_6f72c0cd231481918ba4ec38e5f8f7cc",
+    "fileName": "cuai-oct4-media-preparation-handoff.zip",
+    "version": 0,
+    "sha256": "07c6d1f1fe2629540145c8e7a68acf755547293b6d2d9491755fbaf5c52a199b"
+  },
+  "trigger": "parent-delegated continuation of existing approved media preparation",
+  "scheduledTriggerIndependentlyVerified": true,
+  "scheduledInvocationThisPass": false,
+  "existingScheduleLastRun": "2026-10-02T12:43:42.762367+00:00",
+  "noWeekendInvocationExpected": true,
+  "validation": {
+    "repositoryTestsPassed": 106,
+    "localBrowserCasesPassed": 4,
+    "publishedPodcastAndOtherCalendarItemsPreserved": true,
+    "socialQueueUnchanged": true
+  },
+  "videoReviewPolicy": "narrow existing-policy addition through branch/PR; see cuai-video-review-policy-2026-10-04.json",
+  "currentDesignRelease": {
+    "PR": 246,
+    "mainSHA": "a3976ae405f86656d483b8c0cbe2bf019220d0ad",
+    "deploymentId": "dpl_Bk5FsiLsYsa49QcoGC6RC3snjCxa",
+    "productionState": "READY",
+    "productionBrowserChecksPassed": 40,
+    "siteRemediationRun": 37204304387,
+    "operationsRun": 37204304392,
+    "publicAlias": "https://creditunionainews.com/"
+  }
+}
