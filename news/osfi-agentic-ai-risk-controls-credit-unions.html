@@ -21,17 +21,18 @@
       <nav id="primary-navigation" class="nav-links" aria-label="Primary navigation">
         <a href="/alerts/">Alerts</a>
         <a href="/news.html">News</a>
+        <a href="/topics.html">Topics</a>
         <a href="/insights.html">Insights</a>
         <a href="/intelligence/">Intelligence</a>
         <a href="/episodes.html">Episodes</a>
-        <a class="nav-subscribe" href="/newsletter.html">Subscribe</a>
+        <a class="nav-subscribe" href="/newsletter.html">Briefings</a>
         <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="Follow CreditUnionAI News on LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span></a>
       </nav>
     </div>
   </header>
-<main id="main-content"><section class="section"><div class="container" style="max-width:800px;">
+<main id="main-content" tabindex="-1"><section class="section"><div class="container" style="max-width:800px;">
 <div class="article-kicker-row"><a class="link" href="../news.html">← Back to News</a><span class="label-tag label-reporting">Reporting</span></div>
-<h1>Canada’s New AI Risk Bulletin Gives Credit Unions a Control Checklist</h1><p class="article-date">July 14, 2026</p>
+<h1 class="page-title">Canada’s New AI Risk Bulletin Gives Credit Unions a Control Checklist</h1><p class="article-date">July 14, 2026</p>
 <div class="article-tags"><span class="tag">AI Governance</span><span class="tag">Cybersecurity</span><span class="tag">Third-Party Risk</span><span class="tag">Operational Resilience</span></div>
 <p class="article-summary">OSFI’s new guidance turns agentic AI risk into concrete controls for access, data, incident response and vendor resilience.</p>
 <img class="article-hero" src="../assets/osfi-agentic-ai-risk-controls-credit-unions.jpg" alt="Layered paper-cut clock and security vault illustrating compressed AI risk response time">
@@ -39,21 +40,21 @@
 <p>Canada’s federal banking regulator has published an unusually concrete control list for generative and agentic AI, moving the conversation from broad principles to the mechanics of identity, permissions, data, software changes and incident response.</p>
 <p>The <a class="link" href="https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational" target="_blank" rel="noopener noreferrer">Office of the Superintendent of Financial Institutions bulletin</a>, dated July 2026 and modified July 13, says AI can increase the speed, scale and automation of cyber and operational risks. It also warns that autonomous systems may turn an inaccurate model output into an unvalidated downstream action.</p>
 <p><a class="link" href="https://www.reuters.com/world/canada/regulator-cited-anthropics-claude-mythos-warning-banks-cyber-risks-email-2026-07-13/" target="_blank" rel="noopener noreferrer">Reuters reported July 13</a> that OSFI had separately warned major Canadian banks and insurers that frontier models may accelerate attacks and shrink the time available to find and patch weaknesses in legacy systems.</p>
-<h2>A control list, not a new rule</h2>
+<h2 class="section-title">A control list, not a new rule</h2>
 <p>OSFI describes its technology bulletins as sound practices, not regulatory expectations. The document applies to Canada’s federally regulated financial institutions and aligns its recommendations with existing Canadian guidance on technology, operational resilience and third-party risk.</p>
 <p>That distinction matters for U.S. credit unions: this is not a new NCUA requirement. But the controls are specific enough to serve as a practical benchmark for boards, technology teams and vendor managers already deciding where agents may act.</p>
 <p>OSFI says institutions should assign each agent a unique non-human identity, apply least privilege, scope permissions and use just-in-time access with short-lived credentials. It also recommends tool allow-lists, API gateways and approval checkpoints for high-impact actions, plus logging and periodic access recertification.</p>
 <p>Those measures extend the identity model already familiar to cybersecurity teams. A credit union should be able to answer who owns an agent, which systems and data it can reach, which actions require a person, and how its access can be suspended without disabling an entire workflow.</p>
-<h2>The vendor questions become operational</h2>
+<h2 class="section-title">The vendor questions become operational</h2>
 <p>The bulletin also tells institutions to map internal and external AI dependencies to critical operations, test outage scenarios, maintain manual fallbacks, assess portability and require third parties to disclose how they use AI in service delivery.</p>
 <p>For credit unions, that turns AI oversight into contract work. Core, digital-banking, contact-center, lending and fraud vendors should identify embedded models, subprocessors, APIs and agent permissions. Contracts should cover material model or tool changes, incident notification, audit evidence, continuity procedures and data handling in prompts, outputs and logs. Our <a class="link" href="/news/ai-vendor-due-diligence-checklist-credit-unions.html">AI vendor due-diligence checklist</a> provides a starting structure.</p>
 <p>OSFI also recommends treating AI output as an input to a decision rather than a definitive outcome. Material or high-impact decisions should retain accountable human oversight and auditable documentation. That is especially relevant when agents support lending, disputes, fraud holds or member communications, where a plausible but wrong output can quickly become a member-impacting action.</p>
-<h2>What credit unions should do now</h2>
+<h2 class="section-title">What credit unions should do now</h2>
 <p>A useful first step is to select one live or planned AI workflow and document five things: its named business owner, non-human identity, approved tools and data, human approval boundary, and manual fallback. Then run an incident exercise covering prompt injection, sensitive-data leakage or an unavailable third-party model.</p>
 <p>Security teams should also feed agent activity into existing monitoring, while change-management teams review model, prompt, data-source and tool updates as controlled technology changes. AI-generated code should pass the same vulnerability checks and production approvals as human-written code.</p>
 <p>That same control-plane discipline appears in CUAI’s reporting on <a class="link" href="/news/velera-risk-alert-manager-fraud-response.html">near-real-time fraud response at Velera</a>, where permissions and audit trails shape how quickly staff can act, and in our <a class="link" href="/news/rbfcu-impersonation-scam-regulation-e-investigations.html">RBFCU impersonation-scam investigation coverage</a>, where transaction evidence determines whether a fast decision is defensible after the fact.</p>
 <p>OSFI’s message complements the broader shift described in our coverage of <a class="link" href="/news/banks-ai-agents-daily-operations-credit-unions.html">banks moving AI agents into daily operations</a>. The competitive question is no longer only whether to deploy agents. It is whether the institution can identify, constrain, monitor and recover from them as reliably as any other privileged operator.</p>
-<h2>Sources</h2>
+<h2 class="section-title">Sources</h2>
 <ul>
 <li><a class="link" href="https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational" target="_blank" rel="noopener noreferrer">Office of the Superintendent of Financial Institutions: Generative and Agentic Artificial Intelligence bulletin</a></li>
 <li><a class="link" href="https://www.reuters.com/world/canada/regulator-cited-anthropics-claude-mythos-warning-banks-cyber-risks-email-2026-07-13/" target="_blank" rel="noopener noreferrer">Reuters: Canadian regulator warns banks about frontier-AI cyber risk</a></li>
@@ -70,7 +71,7 @@
         <a href="/topics.html">Topics</a>
         <a href="/intelligence/">Intelligence</a>
         <a href="/episodes.html">Episodes</a>
-        <a href="/newsletter.html">Subscribe</a>
+        <a href="/newsletter.html">Briefings</a>
         <a href="/sponsorships/">Sponsorships</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>

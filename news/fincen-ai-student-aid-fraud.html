@@ -80,23 +80,24 @@
       <nav id="primary-navigation" class="nav-links" aria-label="Primary navigation">
         <a href="/alerts/">Alerts</a>
         <a href="/news.html">News</a>
+        <a href="/topics.html">Topics</a>
         <a href="/insights.html">Insights</a>
         <a href="/intelligence/">Intelligence</a>
         <a href="/episodes.html">Episodes</a>
-        <a class="nav-subscribe" href="/newsletter.html">Subscribe</a>
+        <a class="nav-subscribe" href="/newsletter.html">Briefings</a>
         <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="Follow CreditUnionAI News on LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span></a>
       </nav>
     </div>
   </header>
 
-  <main id="main-content"><section class="section"><div class="container" style="max-width:800px;">
+  <main id="main-content" tabindex="-1"><section class="section"><div class="container" style="max-width:800px;">
     <div class="article-kicker-row">
       <a class="link" href="../news.html">← Back to News</a>
       <span class="label-tag label-reporting">Reporting</span>
     </div>
     <article>
       <div class="article-header">
-        <h1>FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud</h1>
+        <h1 class="page-title">FinCEN Tells Credit Unions to Watch for AI-Enabled Student Aid Fraud</h1>
         <time class="article-date" datetime="2026-07-27">July 27, 2026</time>
         <p class="article-byline">By CreditUnionAI News Staff</p>
         <!-- ARTICLE_CORRECTION_NOTICE -->
@@ -117,7 +118,7 @@
 
         <p>FinCEN also describes “straw students” who knowingly provide their identities for a fee, corrupt school insiders and criminal brokers who open accounts to receive and move the proceeds. The alert does not estimate how much of the fraud involves AI specifically. It says the Department of Education prevented more than $1 billion in student-aid fraud during 2025, while the techniques and red flags draw from Bank Secrecy Act data, law enforcement, foreign financial intelligence units and public reporting.</p>
 
-        <h2>The financial trail starts with a refund</h2>
+        <h2 class="section-title">The financial trail starts with a refund</h2>
 
         <p>Student aid is paid to the school first. After tuition and fees are covered, the remaining amount can be refunded to the student, commonly through an ACH payment from the institution or a payment intermediary. FinCEN says transaction descriptions may contain “refund,” a school name or abbreviation and sometimes the intended student's name.</p>
 
@@ -125,7 +126,7 @@
 
         <p>The alert also addresses a more evasive “one-to-one” model. Criminal brokers may open many accounts so each receives only one refund, avoiding the obvious concentration of multiple beneficiaries in one account. FinCEN points to clusters of accounts created online within a short period, accessed from the same device or out-of-state or international IP address, and followed by rapid movement of funds.</p>
 
-        <h2>Rules need identity and device context</h2>
+        <h2 class="section-title">Rules need identity and device context</h2>
 
         <p>A simple keyword rule for “college refund” would be noisy. FinCEN explicitly says no single red flag determines that activity is suspicious. Credit unions should combine ACH descriptors with member profile, beneficiary-name matching, account age, device and IP relationships, velocity and the destination of outgoing funds.</p>
 
@@ -133,7 +134,7 @@
 
         <p>The same design principle applies to automated detection. Models may find weak relationships across devices, identities and payment paths, but investigators need an intelligible case trail. Each alert should show which refund, identity mismatch, shared access signal and outbound transaction contributed to the escalation. That reduces the risk of treating a student or family member's legitimate arrangement as fraud solely because it looks unusual.</p>
 
-        <h2>Update SAR procedures and member response</h2>
+        <h2 class="section-title">Update SAR procedures and member response</h2>
 
         <p>For suspicious activity tied to this pattern, FinCEN asks institutions to include <strong>FIN-2026-FSAFRAUD</strong> in SAR field 2 and the narrative, select “Fraud – Other,” and add “Federal Student Aid Fraud” in the text box. Existing SAR thresholds, timing and documentation requirements still apply.</p>
 
@@ -144,22 +145,22 @@
     </article>
 
     <aside class="article-newsletter-cta" aria-label="Weekly Briefing subscription">
-      <h2>Put this week's credit-union AI developments in context.</h2>
+      <h2 class="section-title">Put this week's credit-union AI developments in context.</h2>
       <p>Get the operational implications, evidence and decisions worth carrying into the next week.</p>
       <a class="btn btn-primary" href="../newsletter.html">Subscribe to the Weekly Briefing</a>
     </aside>
 
     <section class="related-coverage" aria-labelledby="related-heading">
-      <h2 id="related-heading">Related coverage</h2>
+      <h2 id="related-heading" class="section-title">Related coverage</h2>
       <div class="grid cards-2">
         <article class="card">
           <p class="eyebrow">Analysis</p>
-          <h3><a href="ai-powered-fraud-tools.html">AI-Powered Fraud Detection: What Credit Unions Need to Know</a></h3>
+          <h3 class="card-title"><a href="ai-powered-fraud-tools.html">AI-Powered Fraud Detection: What Credit Unions Need to Know</a></h3>
           <p>How to evaluate automated fraud signals, explainability, false positives and escalation design.</p>
         </article>
         <article class="card">
           <p class="eyebrow">Guide</p>
-          <h3><a href="ai-document-automation-bottlenecks.html">Document Automation Is Moving Into the Hard Part</a></h3>
+          <h3 class="card-title"><a href="ai-document-automation-bottlenecks.html">Document Automation Is Moving Into the Hard Part</a></h3>
           <p>Why identity evidence, exception handling and human review matter when AI processes documents.</p>
         </article>
       </div>
@@ -176,13 +177,13 @@
         <a href="/topics.html">Topics</a>
         <a href="/intelligence/">Intelligence</a>
         <a href="/episodes.html">Episodes</a>
-        <a href="/newsletter.html">Subscribe</a>
+        <a href="/newsletter.html">Briefings</a>
         <a href="/sponsorships/">Sponsorships</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="/corrections.html">Editorial Standards</a>
         <a href="/privacy.html">Privacy</a>
-        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="Follow CreditUnionAI News on LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span></a>
       </div>
     </div>
   </footer>

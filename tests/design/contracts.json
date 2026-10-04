@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "reviewRequired": "Changes to these acceptance bounds need explicit PR rationale and before/after Preview evidence. Tests never regenerate or accept their own baselines.",
+  "primaryNavigation": ["Alerts", "News", "Topics", "Insights", "Intelligence", "Episodes", "Briefings", "LinkedIn"],
+  "pageTitleMinimumPx": 32,
+  "ordinaryCardTitleMaximumPx": 28,
+  "normalTextContrastMinimum": 4.5,
+  "routes": ["/", "/topics.html", "/topics/payments.html", "/news.html", "/news/fcc-tcpa-revoke-all-credit-union-alerts.html", "/insights.html", "/episodes.html", "/episodes/when-ai-becomes-the-members-front-door.html", "/episodes/cuai-weekly-2026-09-28.html", "/newsletter.html", "/about.html", "/privacy.html", "/contact.html", "/intelligence/vendors.html", "/intelligence/regulatory-watch.html", "/alerts/", "/sponsorships/"]
+}

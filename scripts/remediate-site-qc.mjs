@@ -1,10 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { applySiteDesign, siteHeader, siteFooter } from './site-design.mjs';
 
 const ROOT = process.cwd();
 const ORIGIN = 'https://creditunionainews.com';
 const TODAY = new Date().toISOString().slice(0, 10);
-const SKIP_DIRS = new Set(['.git', '.vercel', 'node_modules', 'api', 'automation', 'tests']);
+const SKIP_DIRS = new Set(['.git', '.vercel', 'node_modules', 'api', 'automation', 'tests', 'drafts', 'review', 'design-results']);
 const UTILITY_FILES = new Set([
   'corrections.html',
   'intelligence/changes.html',
@@ -15,47 +16,8 @@ const UTILITY_FILES = new Set([
 ]);
 const SITEMAP_EXCLUSIONS = new Set([...UTILITY_FILES]);
 
-const LINKEDIN_ICON = '<svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.111v1.561h.043c.434-.82 1.494-1.685 3.073-1.685 3.287 0 3.894 2.164 3.894 4.977v6.599zM5.337 7.433a1.804 1.804 0 1 1 0-3.608 1.804 1.804 0 0 1 0 3.608zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="sr-only">LinkedIn</span>';
-
-const HEADER = `  <header>
-    <div class="container navbar">
-      <a href="/" class="brand" aria-label="CreditUnionAI News home">
-        <img src="/assets/download.png" alt="CreditUnionAI News logo" class="brand-logo">
-      </a>
-      <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
-        <span></span><span></span><span></span>
-      </div>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="/alerts/">Alerts</a>
-        <a href="/news.html">News</a>
-        <a href="/insights.html">Insights</a>
-        <a href="/topics.html">Topics</a>
-        <a href="/intelligence/">Intelligence</a>
-        <a href="/episodes.html">Episodes</a>
-        <a href="/newsletter.html">Subscribe</a>
-        <a href="/about.html">About</a>
-        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="LinkedIn">${LINKEDIN_ICON}</a>
-      </nav>
-    </div>
-  </header>`;
-
-const FOOTER = `  <footer class="footer">
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;">
-      <div>© CreditUnionAI News</div>
-      <div class="footer-links">
-        <a href="/news.html">News</a>
-        <a href="/insights.html">Insights</a>
-        <a href="/topics.html">Topics</a>
-        <a href="/intelligence/">Intelligence</a>
-        <a href="/newsletter.html">Subscribe</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/corrections.html">Editorial Standards</a>
-        <a href="/privacy.html">Privacy</a>
-        <a class="social-link" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener" aria-label="LinkedIn">${LINKEDIN_ICON}</a>
-      </div>
-    </div>
-  </footer>`;
+const HEADER = siteHeader;
+const FOOTER = siteFooter;
 
 const DESCRIPTION_OVERRIDES = new Map([
   ['episodes.html', 'Listen to concise CreditUnionAI News podcast episodes on artificial intelligence strategy, operations, governance and member experience.'],
@@ -141,7 +103,7 @@ function ensureViewport(html) {
 function normalizeChrome(html) {
   if (/<header\b[^>]*>[\s\S]*?<\/header>/i.test(html)) html = html.replace(/<header\b[^>]*>[\s\S]*?<\/header>/i, HEADER);
   if (/<footer\b[^>]*>[\s\S]*?<\/footer>/i.test(html)) html = html.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/i, FOOTER);
-  return html;
+  return applySiteDesign(html);
 }
 
 function fixAlertsHeading(html) {
@@ -257,9 +219,29 @@ function writeSitemaps(files) {
     if (b === `${ORIGIN}/`) return 1;
     return a.localeCompare(b);
   });
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </url>`).join('\n')}\n</urlset>\n`;
-  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
-  fs.writeFileSync(path.join(ROOT, 'sitemap.txt'), `${urls.join('\n')}\n`);
+  const xmlPath = path.join(ROOT, 'sitemap.xml');
+  const existingXml = fs.existsSync(xmlPath) ? fs.readFileSync(xmlPath, 'utf8') : '';
+  const entries = [...existingXml.matchAll(/\s*<url>[\s\S]*?<\/url>/g)]
+    .map(match => ({ xml: match[0], url: (match[0].match(/<loc>([^<]+)<\/loc>/) || [])[1] }));
+  const wanted = new Set(urls);
+  const retained = entries.filter(entry => wanted.has(entry.url));
+  const present = new Set(retained.map(entry => entry.url));
+  const added = urls.filter(url => !present.has(url));
+  // Chrome maintenance is not evidence of a publication date. Preserve each
+  // existing entry (including lastmod/priority/changefreq) and its ordering.
+  // Newly discovered URLs have no inferred lastmod; the publisher owns dates.
+  if (retained.length !== entries.length || added.length || !existingXml) {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${retained.map(entry => entry.xml).join('')}${added.map(url => `\n  <url>\n    <loc>${url}</loc>\n  </url>`).join('')}\n</urlset>\n`;
+    fs.writeFileSync(xmlPath, xml);
+  }
+  const txtPath = path.join(ROOT, 'sitemap.txt');
+  const existingTxt = fs.existsSync(txtPath) ? fs.readFileSync(txtPath, 'utf8') : '';
+  const listed = existingTxt.split(/\r?\n/).filter(Boolean);
+  const kept = listed.filter(url => wanted.has(url));
+  const missing = urls.filter(url => !kept.includes(url));
+  if (kept.length !== listed.length || missing.length || !existingTxt) {
+    fs.writeFileSync(txtPath, `${[...kept, ...missing].join('\n')}\n`);
+  }
   return urls.length;
 }
 
@@ -304,9 +286,12 @@ for (const file of htmlFiles) {
 
   let description = '';
   if (!file.startsWith('templates/') && file !== 'subscribe.html') {
-    const existing = (html.match(/<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i) || [])[1];
-    description = DESCRIPTION_OVERRIDES.get(file) || (existing && existing.trim().length > 20 ? existing.trim() : deriveDescription(html, file));
-    html = upsertMeta(html, 'description', description);
+    const descriptionTag = (html.match(/<meta\b[^>]*name=["']description["'][^>]*>/i) || [])[0];
+    const existing = (descriptionTag?.match(/\bcontent=(["'])([\s\S]*?)\1/i) || [])[2];
+    // An existing editorial description is authoritative. Match its actual
+    // delimiter so an apostrophe inside double quotes never truncates it.
+    description = existing?.trim() || DESCRIPTION_OVERRIDES.get(file) || deriveDescription(html, file);
+    if (!existing?.trim()) html = upsertMeta(html, 'description', description);
     html = upsertCanonical(html, `${ORIGIN}${canonicalPath(file)}`);
   }
 
