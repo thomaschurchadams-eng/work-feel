@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T20:25:03.386Z",
+  "updatedAt": "2026-10-05T20:26:05.992Z",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -169,20 +169,24 @@
     },
     {
       "id": "on-screen-ai-presenter-format-research-2026-10-05",
-      "evidence": "Tom proposed an on-screen AI person/presenter format. The reference Short open in Safari is being reviewed separately by existing Mac worker 01a10dbb-ea65-75af-9bbc-1976e499f026; exact clip identity, viewing observations and official options/cost comparison are pending. No viewing or listening is claimed in this record.",
-      "proposedChange": "Research an on-screen AI presenter as an alternative future CUAI short-video format within existing media preparation; await the existing worker's reference analysis and official option/cost findings before proposing a bounded trial.",
+      "evidence": "Tom proposed an on-screen AI person/presenter format. Existing reference-review worker reported genuinely observed frames/transcript from ZeroZero's Noon ET Bulletin Oct5, approximately 40 seconds: vertical split with story photos above a chest-up front-facing female presenter, changing mint/dark/white grid backgrounds and an opening brand tile. Embedded text and YouTube captions compete. These are the worker's observations, not this recording agent's viewing or listening.",
+      "proposedChange": "Research a small CUAI presenter opening followed by source graphics, one caption layer, source/date labeling, transparent AI-presenter labeling if a synthetic presenter is used, and explicit editor accountability. This is an alternative future format research option only; await verified official provider options/cost/usage findings before any bounded trial.",
       "expectedBenefit": "Hypothesis only: a visible presenter may offer a distinct news-update format. No measured benefit or performance claim.",
       "risk": "Pending review: presenter/voice permissions, disclosure, source fidelity, accessibility, visual quality, provider cost/credits and actual complete-cut hearing/viewing QA.",
       "validation": [
-        "Reference clip identity and genuine viewing notes pending from existing worker",
         "Official provider options, costs and permitted usage pending from existing worker",
         "No avatar creation, production, provider trial, spend, new asset purchase or publication authorized",
-        "No intro sound selected; correction listening/splice/caption gates remain open"
+        "No intro sound selected; correction listening/splice/caption gates remain open",
+        "Reference URL and worker-observed frames/transcript received; presenter origin/vendor and hearing/lip-sync remain unverified",
+        "Official provider comparison pending; free/trial suitability and external narration permissions are not certified here"
       ],
       "status": "research-only-no-production-authorization",
       "owner": "existing CUAI media coordinator / current reference-review worker",
       "result": "Idea recorded only. No avatar or presenter asset created; no provider credits used, no schedule/executor change, no publication.",
-      "rollback": "Not applicable: no production treatment or asset exists. Retain or close the research candidate after user review."
+      "rollback": "Not applicable: no production treatment or asset exists. Retain or close the research candidate after user review.",
+      "referenceUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0",
+      "referenceTitle": "ZeroZero — Noon ET Bulletin Oct5",
+      "referenceLimitations": "The Made with AI disclosure does not prove the presenter is synthetic or identify a vendor. Actual hearing and lip-sync QA are unverified. No provider has been selected."
     }
   ]
 }
