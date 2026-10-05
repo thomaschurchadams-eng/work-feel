@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-05",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -33,7 +33,16 @@
         "url": "https://creditunionainews.com/news/occ-crypto-trust-charter-lawsuit.html",
         "primaryFunctionalAudience": "Payments, digital-assets, risk and strategy leaders",
         "promotionPriority": "High",
-        "socialDecision": "queued-2026-10-05-12:30-et-pending-secure-receipt"
+        "socialDecision": "scheduled-2026-10-05-12:30-et-verified-receipt"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "A Member-Outcome Gate for Credit Union Product Decisions",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-product-governance-outcome-gate.html",
+        "primaryFunctionalAudience": "Product, strategy, member-experience and risk leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "not-created-daily-high-priority-slot-occupied"
       }
     ],
     "rejections": [
@@ -46,14 +55,13 @@
       {"title": "OCC Digital-Asset Application Pipeline", "reason": "authoritative evidence incorporated into the selected lawsuit article rather than treated as a separate event"},
       {"title": "NCUA 2026 Supervisory Priorities", "reason": "authoritative background for durable controls, but no new October 5 directive"},
       {"title": "Agentic AI for Continuous Credit Monitoring", "reason": "interview-led vendor perspective without a named credit-union deployment or independently measured result"},
-      {"title": "NIST AI Risk Management Framework", "reason": "durable governance source evaluated for the fallback Insight rather than a current News event"},
-      {"title": "Product Governance and Member-Outcome Review", "reason": "qualified as a durable fallback candidate and reserved for independent second-slot validation"}
+      {"title": "NIST AI Risk Management Framework", "reason": "durable governance source incorporated into the selected Insight rather than treated as a current News event"}
     ],
-    "status": "first-monday-article-complete-second-slot-in-validation",
+    "status": "two-article-cycle-complete",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
-    "updatedAt": "2026-10-05T07:35:00-04:00"
+    "nextCoverageGap": "AI-assisted collections strategy, hardship-treatment monitoring and member-remediation controls",
+    "updatedAt": "2026-10-05T08:05:00-04:00"
   },
   "history": [
     {
