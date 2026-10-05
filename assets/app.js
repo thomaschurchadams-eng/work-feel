@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Digital Asset AML',
+      headline: 'FinCEN Withdraws Two Proposed Digital-Asset Rules',
+      summary:
+        'The Financial Crimes Enforcement Network said on October 5 that it withdrew two proposals affecting convertible virtual currency: one would have imposed recordkeeping, verification and reporting requirements on certain transactions involving unhosted wallets, and the other would have imposed a special measure on convertible-virtual-currency mixing. FinCEN said it considered public comments and withdrew the proposals as part of the administration’s deregulatory agenda and effort to make digital-asset rules fit for purpose.',
+      impact:
+        'Credit unions and digital-asset partners should update regulatory inventories and implementation roadmaps to identify both proposals as withdrawn, remove build or reporting tasks based only on the proposed text, and preserve controls required by current law and risk. Existing BSA/AML, customer-identification, sanctions, suspicious-activity and transaction-monitoring obligations still apply; compliance and legal owners should approve any roadmap change rather than treating withdrawal of a proposal as removal of current duties.',
+      sourceName: 'Financial Crimes Enforcement Network',
+      sourceUrl:
+        'https://www.fincen.gov/news/news-releases/fincen-announces-withdrawals-proposed-digital-asset-related-rules',
+      date: 'Oct 5, 2026',
+      slug: 'fincen-withdraws-proposed-digital-asset-rules'
+    },
+    {
       label: 'Credit Union Liquidation',
       headline: 'NCUA Liquidates Jackson Area FCU; Five Star Assumes Member Shares',
       summary:
