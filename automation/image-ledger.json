@@ -3,6 +3,28 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "occ-crypto-trust-charter-lawsuit",
+      "articleUrl": "/news/occ-crypto-trust-charter-lawsuit.html",
+      "imagePath": "/assets/occ-crypto-trust-charter-lawsuit.jpg",
+      "publishedAt": "2026-10-05T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "photorealistic-editorial-still-life",
+      "subject": "trust-charter-regulatory-perimeter",
+      "composition": "balanced-scale-with-vault-key-and-secured-digital-asset",
+      "perspective": "wide-eye-level",
+      "palette": "slate-charcoal-brass-teal",
+      "lighting": "cool-morning-with-controlled-amber-highlight",
+      "texture": "brass-glass-stone-and-polished-wood",
+      "scene": "a-brass-scale-balances-a-traditional-vault-key-against-a-secured-digital-asset-in-a-courtroom-setting",
+      "conceptScore": 94.0,
+      "dimensions": {"width": 1200, "height": 630},
+      "conceptAlternatives": [
+        {"medium": "editorial-paper-cut", "subject": "charter-boundary-and-payment-rails", "score": 82.3},
+        {"medium": "architectural-illustration", "subject": "trust-charter-entry-path", "score": 80.7}
+      ]
+    },
+    {
       "id": "cdfi-certification-credit-union-accountability-proposal",
       "articleUrl": "/news/cdfi-certification-credit-union-accountability-proposal.html",
       "imagePath": "/assets/cdfi-certification-credit-union-accountability-proposal.jpg",

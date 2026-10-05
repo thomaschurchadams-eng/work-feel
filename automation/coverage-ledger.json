@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "occ-crypto-trust-charter-lawsuit",
+      "title": "Crypto Trust-Charter Fight Moves to Federal Court",
+      "url": "/news/occ-crypto-trust-charter-lawsuit.html",
+      "publishedAt": "2026-10-05T07:35:00-04:00",
+      "section": "news",
+      "beat": "digital-asset-chartering-regulatory-perimeter",
+      "functions": ["board-strategy", "risk-compliance", "payments-deposits", "vendor-management", "member-service"],
+      "technologies": ["realtime-embedded-finance", "regtech-monitoring"],
+      "format": "reported-news",
+      "audience": "executive",
+      "primaryAudience": "Payments, digital-assets, risk and strategy leaders",
+      "secondaryAudiences": ["board leaders", "vendor-management teams", "member-communications and compliance leaders"],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "queued-2026-10-05-12:30-et-pending-secure-receipt",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "internalLinkTargets": ["/news/alloya-cuusd-stablecoin-pilot.html", "/insight-credit-union-ai-contract-monitoring-controls.html"],
+      "sourceTier": 1,
+      "score": 94.2
+    },
+    {
       "id": "cdfi-certification-credit-union-accountability-proposal",
       "title": "Treasury Proposal Would Change How CDFI Credit Unions Prove Accountability",
       "url": "/news/cdfi-certification-credit-union-accountability-proposal.html",
