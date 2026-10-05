@@ -2503,6 +2503,42 @@
       },
       "summary": "Recorded the existing audio owner’s actual103-credit debit once, live remaining28856→28753 and used10825→10928 with allowance39681. Verified received Generation1 MP3 bytes/hash and afinfo; original narration unchanged. No further generation, full narration regeneration or provider UI access by recorder. Hearing/certified cutpoints/splice/caption alignment remain incomplete; graphics13.1–19.4 is not certified audio timing. Sep28–Oct28 credit period is inferred, account-specific reset timestamp not exposed. Refresh live entitlement and shared ledger before any further consumption.",
       "usageAttribution": "operational-proxy for recorder workload; actual provider debit from authorized owner receipt"
+    },
+    {
+      "timestamp": "2026-10-05T19:52:08.314Z",
+      "actor": "cuai-operating-system",
+      "runType": "monday-operating-review",
+      "trigger": "Scheduled bounded CreditUnionAI News Monday operating review and weekly competitive-distribution scan.",
+      "status": "success",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 121,
+        "portfolioArticlesReviewed": 56,
+        "currentWeekArticlesReviewed": 2,
+        "editorialCandidatesReviewed": 12,
+        "alertCandidatesScreened": 5,
+        "alertsPublished": 1,
+        "alertFilesChanged": 2,
+        "pullRequestsMerged": 1,
+        "dailyHistoryEntriesPreserved": 53,
+        "competitiveDistributionOpportunities": 5,
+        "analyticsWindowsReviewed": 2,
+        "exactSocialSentReceiptsReconciled": 1,
+        "liveBrowserChecks": 4,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News production",
+        "Google Analytics 4 via latest trusted operations artifact",
+        "Google Search Console via latest trusted operations artifact",
+        "Buffer via exact sent receipt",
+        "public primary and industry sources"
+      ],
+      "summary": "Completed the October 5 Monday operating review after the publisher’s two-article handoff. The week is on trajectory at 2/8 articles with News and Insight represented; the strongest next editorial gap is collections strategy, hardship-treatment monitoring and member-remediation controls, with workforce and marketing also sparse. Published one same-day, source-linked FinCEN Alert on withdrawal of two proposed digital-asset rules, preserved all 53 history entries and both article outcomes, and verified production homepage, ticker and archive after Vercel READY. Reconciled the exact OCC LinkedIn sent receipt without retry. Latest authenticated October 2 analytics still show audience volume but weaker depth/qualified acquisition and no independent CAI-destination conversion evidence. Completed the W41 public/free competitive-distribution scan with five bounded earned-channel opportunities (Finopotamus, Credit Union tech-talk, NACUSO Knowledge Center, The Financial Brand and Credit Union Times); no defensible public Similarweb domain estimates were asserted. No outreach, submission, account creation, trial, spend, social expansion or new assignment occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
