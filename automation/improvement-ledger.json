@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T20:30:13.049Z",
+  "updatedAt": "2026-10-05T20:36:02.355Z",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -212,6 +212,51 @@
         "possibleFutureTrial": "Research proposal only: private 10–15-second neutral technical insert using an appropriately licensed stock presenter, explicit AI-presenter label and editor accountability; assess fit against source graphics without claiming synthetic provenance for the reference. Provider terms, existing audio permissions, actual hearing/lip-sync and fresh account costs must be cleared first.",
         "executionAuthorization": "none: no new account, clone, upload, generation, purchase, spend, publication or final presenter/intro selection"
       }
+    },
+    {
+      "id": "broadcast-news-opener-reference-research-2026-10-05",
+      "evidence": "Tom rejected the three cue concepts after receiving the corrected sound-only samples: these are not intro sounds. The intended brief is a polished news-style opening leading into the presenter. The isolated sound effects missed that brief; louder exports addressed level only and did not resolve the concept.",
+      "proposedChange": "Reference-first research by the existing parent research worker: find 2–3 professionally produced news-opener previews with verified licensing context, document each actual brand cue/build/resolution/voice handoff, then establish a suitable CUAI opening structure for hearing-capable review before proposing any new audio.",
+      "expectedBenefit": "Hypothesis only: a professional news-opening structure may better fit the intended presenter format; no benefit, selection or approval is claimed.",
+      "risk": "Reference licensing and production permission must be verified independently; previews are references, not licensed production assets. Actual hearing quality, voice handoff, accessibility, source fidelity and final-release acceptance remain unverified.",
+      "validation": [
+        "All three current cue concepts rejected as intro options, including original comparisons, sound-only revisions and louder comparison revisions",
+        "No further variants, new audio, generation credits, spending or files authorized before a better reference and hearing review",
+        "Existing parent research worker owns professional reference discovery; no duplicate worker, executor or schedule created",
+        "Narration correction remains received; original sentence boundaries, splice/caption/graphics alignment and full-cut hearing QA still pending"
+      ],
+      "status": "reference-research-only-current-cues-rejected",
+      "owner": "existing parent research worker / existing CUAI media coordinator",
+      "result": "No intro selected. Stop generating variants of the current signals. The next step is research and actual review, not further audio exports.",
+      "rollback": "No production treatment exists; retain rejected review artifacts as history without publishing them.",
+      "rejectedConcepts": [
+        {
+          "option": 1,
+          "name": "sonic sting",
+          "originalLibraryId": "libfile_4b83e374bd3481918c776776b5147aef",
+          "soundOnlyLibraryId": "libfile_fbe6979b9ce481919b8502064a6a7c1a",
+          "louderComparisonLibraryId": "libfile_8f679885b23c8191aa023e05b9ec2583",
+          "decision": "rejected-as-intro-option"
+        },
+        {
+          "option": 2,
+          "name": "percussive cue",
+          "originalLibraryId": "libfile_768e973ddf1c8191b1272abe264fab81",
+          "soundOnlyLibraryId": "libfile_c64ec08a47448191ac577ef9bcf327d0",
+          "louderComparisonLibraryId": "libfile_dec7a3d91b388191bb0948eb9bcc7ab2",
+          "decision": "rejected-as-intro-option"
+        },
+        {
+          "option": 3,
+          "name": "subtle bed",
+          "originalLibraryId": "libfile_739c8dedee988191b3adb95b393c30fd",
+          "soundOnlyLibraryId": "libfile_e95a361bc77881918ef7f2d529ab6125",
+          "louderComparisonLibraryId": "libfile_3e22eea490a88191ae7364f2a6db4391",
+          "decision": "rejected-as-intro-option"
+        }
+      ],
+      "narrationCorrectionLibraryId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+      "selectedIntro": null
     }
   ]
 }
