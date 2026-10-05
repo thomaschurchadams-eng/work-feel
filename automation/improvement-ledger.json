@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T20:26:05.992Z",
+  "updatedAt": "2026-10-05T20:30:13.049Z",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -174,11 +174,11 @@
       "expectedBenefit": "Hypothesis only: a visible presenter may offer a distinct news-update format. No measured benefit or performance claim.",
       "risk": "Pending review: presenter/voice permissions, disclosure, source fidelity, accessibility, visual quality, provider cost/credits and actual complete-cut hearing/viewing QA.",
       "validation": [
-        "Official provider options, costs and permitted usage pending from existing worker",
         "No avatar creation, production, provider trial, spend, new asset purchase or publication authorized",
         "No intro sound selected; correction listening/splice/caption gates remain open",
         "Reference URL and worker-observed frames/transcript received; presenter origin/vendor and hearing/lip-sync remain unverified",
-        "Official provider comparison pending; free/trial suitability and external narration permissions are not certified here"
+        "Official pricing/help/terms/moderation/licensing pages reviewed read-only on October5; actual account unknown and annual/rate details retain confirmation caveats",
+        "No provider trial or private production authorized; broad terms restrictions remain a research gate"
       ],
       "status": "research-only-no-production-authorization",
       "owner": "existing CUAI media coordinator / current reference-review worker",
@@ -186,7 +186,32 @@
       "rollback": "Not applicable: no production treatment or asset exists. Retain or close the research candidate after user review.",
       "referenceUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0",
       "referenceTitle": "ZeroZero — Noon ET Bulletin Oct5",
-      "referenceLimitations": "The Made with AI disclosure does not prove the presenter is synthetic or identify a vendor. Actual hearing and lip-sync QA are unverified. No provider has been selected."
+      "referenceLimitations": "The Made with AI disclosure does not prove the presenter is synthetic or identify a vendor. Actual hearing and lip-sync QA are unverified. No provider has been selected.",
+      "providerResearch": {
+        "checkedAt": "2026-10-05",
+        "accountEntitlements": "unknown; no account accessed",
+        "heygen": {
+          "publicPricing": "Creator $29 monthly with 600 credits confirmed on public pricing page. Parent worker reported $24/month annual ($288/year) and Avatar IV Video Look 31 / Avatar V 48 credits per minute; annual quote and generation rates require fresh official/account confirmation before any use.",
+          "pricingSource": "https://www.heygen.com/pricing",
+          "freeUse": "Section4 restricts Free output to personal, noncommercial/internal evaluation and prohibits redistribution/commercial use. Do not produce a public CUAI trial asset on Free.",
+          "termsSource": "https://www.heygen.com/terms",
+          "additionalTermsCaveat": "Section2 also prohibits accessing Services for benchmarking, comparative or competitive purposes; a proposed private comparison is not automatically a permitted provider trial. Resolve permitted evaluation purpose before execution.",
+          "narration": "Official Studio guide documents upload of existing prerecorded audio; no upload authorized.",
+          "narrationSource": "https://help.heygen.com/en/articles/11049837-create-your-first-video-in-our-studio",
+          "moderation": "Political opinions and content related to political matters fall within broad non-permissible wording; do not assume all regulatory/policy news is acceptable.",
+          "moderationSource": "https://www.heygen.com/moderation-policy"
+        },
+        "synthesia": {
+          "publicPricing": "Starter $29/month billed monthly confirmed. Basic public page states 10 minutes monthly with 500 credits; download/logo removal appear as paid features. Annual pricing text is inconsistent and must be confirmed at checkout before any purchase; no checkout authorized.",
+          "pricingSource": "https://www.synthesia.io/pricing",
+          "narration": "External prerecorded narration upload is Enterprise-only under official July23,2026 help article; low-cost Starter therefore does not establish reuse of approved Liam audio.",
+          "narrationSource": "https://help.synthesia.io/en/articles/6341873-how-do-i-upload-an-audio-file-to-synthesia",
+          "licensing": "Official stock/synthetic-avatar guidance allows organic website/social sharing, prohibits any paid promotion; custom-avatar permissions differ. No paid promotion, custom likeness or clone authorized.",
+          "licensingSource": "https://help.synthesia.io/en/articles/6341928-synthesia-video-licensing"
+        },
+        "possibleFutureTrial": "Research proposal only: private 10–15-second neutral technical insert using an appropriately licensed stock presenter, explicit AI-presenter label and editor accountability; assess fit against source graphics without claiming synthetic provenance for the reference. Provider terms, existing audio permissions, actual hearing/lip-sync and fresh account costs must be cleared first.",
+        "executionAuthorization": "none: no new account, clone, upload, generation, purchase, spend, publication or final presenter/intro selection"
+      }
     }
   ]
 }
