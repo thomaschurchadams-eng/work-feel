@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-10-05",
     "fullArticleCount": 2,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -43,6 +43,11 @@
         "primaryFunctionalAudience": "Product, strategy, member-experience and risk leaders",
         "promotionPriority": "Library",
         "socialDecision": "not-created-daily-high-priority-slot-occupied"
+      },
+      {
+        "type": "alert",
+        "title": "FinCEN Withdraws Two Proposed Digital-Asset Rules",
+        "url": "https://creditunionainews.com/alerts/#fincen-withdraws-proposed-digital-asset-rules"
       }
     ],
     "rejections": [
@@ -57,11 +62,11 @@
       {"title": "Agentic AI for Continuous Credit Monitoring", "reason": "interview-led vendor perspective without a named credit-union deployment or independently measured result"},
       {"title": "NIST AI Risk Management Framework", "reason": "durable governance source incorporated into the selected Insight rather than treated as a current News event"}
     ],
-    "status": "two-article-cycle-complete",
+    "status": "two-article-and-alert-cycle-complete",
     "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted collections strategy, hardship-treatment monitoring and member-remediation controls",
-    "updatedAt": "2026-10-05T07:35:00-04:00"
+    "updatedAt": "2026-10-05T15:40:00-04:00"
   },
   "history": [
     {
