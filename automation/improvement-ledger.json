@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T20:36:02.355Z",
+  "updatedAt": "2026-10-05T20:38:23.907Z",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -227,7 +227,7 @@
       ],
       "status": "reference-research-only-current-cues-rejected",
       "owner": "existing parent research worker / existing CUAI media coordinator",
-      "result": "No intro selected. Stop generating variants of the current signals. The next step is research and actual review, not further audio exports.",
+      "result": "Professional reference candidates recorded only; actual audition, exact permitted treatment, licence and hearing review pending. No intro selected; current procedural cue families remain rejected.",
       "rollback": "No production treatment exists; retain rejected review artifacts as history without publishing them.",
       "rejectedConcepts": [
         {
@@ -256,7 +256,44 @@
         }
       ],
       "narrationCorrectionLibraryId": "libfile_00b21c9750b481919d52b61b1a3ca169",
-      "selectedIntro": null
+      "selectedIntro": null,
+      "referenceResearch": {
+        "reportedAt": "2026-10-05T20:37:00Z",
+        "provenance": "Parent research worker findings; two preview links delivered to user. This recording agent has not played the previews or independently certified purchasing/licensing terms. Recheck exact licence, account, claims process and price before any authorized production use.",
+        "references": [
+          {
+            "name": "WarmWolf — Tech News Logo",
+            "url": "https://audiojungle.net/item/tech-news-logo/62517237",
+            "role": "modern opener audition candidate",
+            "description": "Creator-described minimal modern electronic news logo, 9 seconds",
+            "reportedPrice": "$7 before tax/handling; not purchased",
+            "reportedRights": "Music Standard permits commercial web/social use and edits; connected-series limit reported as 52 editions within one year before renewal/additional licence. No standalone audio/source redistribution or trademark use.",
+            "reportedClaims": "Seller reports no Content ID and no PRO; not an independent claim-free certification.",
+            "status": "reference-only-unpurchased-unlicensed-unheard"
+          },
+          {
+            "name": "David Fesliyan — The Team",
+            "url": "https://www.fesliyanstudios.com/royalty-free-music/download/the-team/370",
+            "role": "traditional broadcast comparison",
+            "description": "Creator-provided news-intro brass A/B versions",
+            "reportedPrice": "Commercial donation licence at chosen amount; no donation or licence acquired",
+            "reportedRights": "Reported perpetual project use and no attribution after licence. No standalone music distribution or YouTube live-stream use.",
+            "reportedClaims": "YouTube channel clearance needed; claims remain possible.",
+            "status": "reference-only-unpurchased-unlicensed-unheard"
+          },
+          {
+            "name": "Kevin MacLeod — News Theme",
+            "url": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100544",
+            "role": "free attribution-based research alternative",
+            "description": "Reported CC BY 4.0 commercial/edit use with creator credit, licence link and change indication",
+            "reportedRights": "Attribution/licence/change notice obligations must be satisfied; no asset has been downloaded or adapted in this task.",
+            "reportedClaims": "Content ID preregistered claim process reported; not claim-free.",
+            "status": "reference-only-unheard-no-production-use"
+          }
+        ],
+        "recommendation": "Audition the modern candidate first for composed build/title/resolution and ducking into voice. A 2–5-second CUAI treatment is only a proposal; user has not selected it and actual structure/timing cannot be certified without listening.",
+        "executionRestriction": "Do not use paid previews in production. No purchase, asset download, new audio generation, provider credits, spending or intro selection authorized. Keep all previous cue concepts rejected."
+      }
     }
   ]
 }
