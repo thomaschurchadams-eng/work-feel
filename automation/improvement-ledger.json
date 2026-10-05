@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T10:12:00-04:00",
+  "updatedAt": "2026-10-05T20:25:03.386Z",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -166,6 +166,23 @@
       "owner": "CUAI CEO / Growth",
       "result": "Not opened as an active experiment in this run. The second experiment slot remains free until the metadata can be changed through a narrow, reviewable patch or equivalent safe edit path; no risky rewrite was merged merely to create activity.",
       "rollback": "Not applicable until treatment is implemented; if later opened, rollback is metadata-only restoration."
+    },
+    {
+      "id": "on-screen-ai-presenter-format-research-2026-10-05",
+      "evidence": "Tom proposed an on-screen AI person/presenter format. The reference Short open in Safari is being reviewed separately by existing Mac worker 01a10dbb-ea65-75af-9bbc-1976e499f026; exact clip identity, viewing observations and official options/cost comparison are pending. No viewing or listening is claimed in this record.",
+      "proposedChange": "Research an on-screen AI presenter as an alternative future CUAI short-video format within existing media preparation; await the existing worker's reference analysis and official option/cost findings before proposing a bounded trial.",
+      "expectedBenefit": "Hypothesis only: a visible presenter may offer a distinct news-update format. No measured benefit or performance claim.",
+      "risk": "Pending review: presenter/voice permissions, disclosure, source fidelity, accessibility, visual quality, provider cost/credits and actual complete-cut hearing/viewing QA.",
+      "validation": [
+        "Reference clip identity and genuine viewing notes pending from existing worker",
+        "Official provider options, costs and permitted usage pending from existing worker",
+        "No avatar creation, production, provider trial, spend, new asset purchase or publication authorized",
+        "No intro sound selected; correction listening/splice/caption gates remain open"
+      ],
+      "status": "research-only-no-production-authorization",
+      "owner": "existing CUAI media coordinator / current reference-review worker",
+      "result": "Idea recorded only. No avatar or presenter asset created; no provider credits used, no schedule/executor change, no publication.",
+      "rollback": "Not applicable: no production treatment or asset exists. Retain or close the research candidate after user review."
     }
   ]
 }
