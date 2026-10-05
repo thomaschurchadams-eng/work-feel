@@ -2460,6 +2460,49 @@
       ],
       "summary": "Current main contains the complete Monday two-article outcome and existing OCC scheduled company-page post; preserved both. Chart October6/cartoon October9 package/hash and previous QA reused; public page/image URLs remain404. No future provider inventory claim or new reservation; preserve cartoon source-publication dedup. October8 correction stays with existing audio owner: current credit entitlement, spoken-date correction, listening/alignment and final-master gates remain incomplete. No screen/foreground browser/ElevenLabs attempt because job application executor controls the Mac. Identified existing September28 YouTube episode as a seven-day-anniversary review candidate outside monthly-short manifest; public episode200/embed identity verified, YouTube fetch throttled, actual playback/craft and exact-age provider results remain unknown. No watched-example or improvement claim; preserve independent craft-learning requirement. No schedule/policy/executor/publication changes.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-05T14:16:58.142141+00:00",
+      "actor": "cuai-media-coordinator",
+      "runType": "record-existing-audio-owner-correction-debit",
+      "status": "received-byte-verified; listening-and-alignment-held",
+      "providerCreditObservation": {
+        "actualDebit": 103,
+        "remainingBefore": 28856,
+        "remainingAfter": 28753,
+        "allowanceIncludingRollover": 39681,
+        "usedBefore": 10825,
+        "usedAfter": 10928,
+        "source": "audio-owner live provider observation; no later debit reported at handoff",
+        "freshCheckRequiredBeforeAnyFurtherConsumption": true
+      },
+      "artifactLibraryFileId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+      "artifactSHA256": "3f1e4f51648a0c51c09f20d5494766f95fb75ad572889d7dd1e6ec2baea77277",
+      "billingObservation": {
+        "plan": "Starter",
+        "billing": "yearly",
+        "annualPriceUSD": 60,
+        "renewalDate": "2027-09-28",
+        "autoTopUp": "Off",
+        "inferredMonthlyCreditPeriod": {
+          "start": "2026-09-28",
+          "end": "2026-10-28",
+          "status": "inferred from billing anniversary and official monthly-reset policy, not an exposed account-specific reset timestamp"
+        },
+        "accountSpecificMonthlyResetTimestamp": null
+      },
+      "workUnits": {
+        "providerCreditsConsumedByAuthorizedAudioOwner": 103,
+        "providerCreditsConsumedByRecordingAgent": 0,
+        "generateClicksByAuthorizedOwner": 1,
+        "automaticVariantsReturned": 2,
+        "variantsDownloaded": 1,
+        "retries": 0,
+        "publications": 0,
+        "socialQueueWrites": 0
+      },
+      "summary": "Recorded the existing audio owner’s actual103-credit debit once, live remaining28856→28753 and used10825→10928 with allowance39681. Verified received Generation1 MP3 bytes/hash and afinfo; original narration unchanged. No further generation, full narration regeneration or provider UI access by recorder. Hearing/certified cutpoints/splice/caption alignment remain incomplete; graphics13.1–19.4 is not certified audio timing. Sep28–Oct28 credit period is inferred, account-specific reset timestamp not exposed. Refresh live entitlement and shared ledger before any further consumption.",
+      "usageAttribution": "operational-proxy for recorder workload; actual provider debit from authorized owner receipt"
     }
   ]
 }

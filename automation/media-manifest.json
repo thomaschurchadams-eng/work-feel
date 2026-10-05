@@ -118,8 +118,17 @@
         "Verify final MP4 hash/full probe/burned-in captions/canonical transcript/permanent public URL and exact production identity."
       ],
       "nextOwner": "existing provider/audio-video handoff owner",
-      "nextStep": "Reuse the original diagrams, narration, thumbnail and copy. Owner first reviews current credit entitlement before any necessary correction; no render, credit use or browser work in this coordination pass. Keep nativeVideo null until a genuinely finished production-verified master exists.",
-      "coordinationHandoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448"
+      "nextStep": "Use the received Generation1 correction; no regeneration. Actual listening must certify original sentence boundaries, then splice/alignment/full-cut review and final gates. Keep nativeVideo null and productionVerified false. Fresh provider/ledger check required before any additional consumption.",
+      "coordinationHandoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448",
+      "narrationCorrection": {
+        "libraryFileId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+        "fileName": "cuai-oct8-liam-v3-correction-generation1.mp3",
+        "sha256": "3f1e4f51648a0c51c09f20d5494766f95fb75ad572889d7dd1e6ec2baea77277",
+        "bytes": 112232,
+        "reportedCreditDebit": 103,
+        "receiptPath": "automation/reports/cuai-oct8-narration-correction-2026-10-05.json",
+        "qualityStatus": "received-byte-verified; actual listening/cutpoints/splice/captions pending"
+      }
     },
     {
       "id": "cartoon-2026-10-09",
