@@ -3,6 +3,28 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "plaid-ai-cash-flow-underwriting",
+      "articleUrl": "/news/plaid-ai-cash-flow-underwriting.html",
+      "imagePath": "/assets/plaid-ai-cash-flow-underwriting.jpg",
+      "publishedAt": "2026-10-06T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-cinematic-3d-illustration",
+      "subject": "transaction-sequence-cash-flow-underwriting",
+      "composition": "transaction-markers-pass-through-analysis-lens-to-neutral-decision-checkpoint",
+      "perspective": "wide-elevated-oblique",
+      "palette": "deep-navy-teal-amber-ivory",
+      "lighting": "controlled-institutional-studio",
+      "texture": "glass-metal-paper-and-luminous-data-paths",
+      "scene": "income-bill-savings-and-expense-markers-retain-their-order-through-an-analysis-lens-before-a-neutral-lending-decision",
+      "conceptScore": 94.1,
+      "dimensions": {"width": 1200, "height": 630},
+      "conceptAlternatives": [
+        {"medium": "editorial-paper-cut", "subject": "cash-flow-sequence-and-credit-decision", "score": 82.5},
+        {"medium": "macro-still-life", "subject": "transaction-timeline-and-model-validation", "score": 80.9}
+      ]
+    },
+    {
       "id": "credit-union-ai-product-governance-outcome-gate",
       "articleUrl": "/insight-credit-union-ai-product-governance-outcome-gate.html",
       "imagePath": "/assets/credit-union-ai-product-governance-outcome-gate.jpg",

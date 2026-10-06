@@ -6,69 +6,86 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-05",
-    "fullArticleCount": 2,
-    "alertCount": 1,
+    "date": "2026-10-06",
+    "fullArticleCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "digital-asset-chartering",
-      "payments-and-stablecoins",
-      "consumer-financial-protection",
-      "credit-union-supervision",
-      "fraud-and-bsa-aml",
-      "ai-cybersecurity",
-      "lending-and-credit",
-      "community-bank-competition",
-      "member-service-and-complaints",
-      "product-governance",
-      "third-party-risk",
-      "board-strategy"
+      "cash-flow-underwriting",
+      "ai-enabled-cybersecurity",
+      "ai-infrastructure-finance",
+      "international-bank-ai",
+      "credit-union-alternative-data",
+      "payment-operations",
+      "credit-union-insurance",
+      "dispute-management",
+      "fintech-lending-partnerships",
+      "digital-banking",
+      "workforce-and-leadership",
+      "branch-and-retail-delivery"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Crypto Trust-Charter Fight Moves to Federal Court",
-        "url": "https://creditunionainews.com/news/occ-crypto-trust-charter-lawsuit.html",
-        "primaryFunctionalAudience": "Payments, digital-assets, risk and strategy leaders",
+        "title": "Plaid Adds Transaction-Sequence AI to Cash-Flow Underwriting",
+        "url": "https://creditunionainews.com/news/plaid-ai-cash-flow-underwriting.html",
+        "primaryFunctionalAudience": "Lending, credit-risk, compliance and data leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-10-05-12:30-et-verified-receipt"
-      },
-      {
-        "type": "article",
-        "classification": "Insights",
-        "title": "A Member-Outcome Gate for Credit Union Product Decisions",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-product-governance-outcome-gate.html",
-        "primaryFunctionalAudience": "Product, strategy, member-experience and risk leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "not-created-daily-high-priority-slot-occupied"
-      },
-      {
-        "type": "alert",
-        "title": "FinCEN Withdraws Two Proposed Digital-Asset Rules",
-        "url": "https://creditunionainews.com/alerts/#fincen-withdraws-proposed-digital-asset-rules"
+        "socialDecision": "queued-2026-10-06-11:30-et-pending-secure-receipt"
       }
     ],
     "rejections": [
-      {"title": "Banks Face the Deposit-Side Effects of Consumer AI Agents", "reason": "credible commentary about future margin pressure, but not a discrete event or primary-source operating change"},
-      {"title": "Visa Open-Sources AI Cyber Defense Components", "reason": "current and consequential, but overlaps recent FS-ISAC and agentic-security coverage without a new credit-union implementation"},
-      {"title": "ASIC Reviews Banking AI and Customer Impacts", "reason": "authoritative supervisory review, but Australian and without a new U.S. credit-union obligation"},
-      {"title": "ICBA Urges OCC to Refine Matters-Requiring-Attention Rule", "reason": "current examination-policy advocacy with weaker direct credit-union and technology consequence"},
-      {"title": "FinCEN Proposes Action Against a Shadow-Banking Network", "reason": "material BSA/AML proposal, but the source package did not establish a distinct credit-union operating change for this cycle"},
-      {"title": "Fannie and Freddie Offer Temporary UAD 3.6 Exception", "reason": "useful mortgage implementation relief, but weaker technology and system-wide consequence than the selected charter litigation"},
-      {"title": "OCC Digital-Asset Application Pipeline", "reason": "authoritative evidence incorporated into the selected lawsuit article rather than treated as a separate event"},
-      {"title": "NCUA 2026 Supervisory Priorities", "reason": "authoritative background for durable controls, but no new October 5 directive"},
-      {"title": "Agentic AI for Continuous Credit Monitoring", "reason": "interview-led vendor perspective without a named credit-union deployment or independently measured result"},
-      {"title": "NIST AI Risk Management Framework", "reason": "durable governance source incorporated into the selected Insight rather than treated as a current News event"}
+      {"title":"AI-Assisted Attacks Target South Korean Banks","reason":"overseas reporting without a confirmed U.S. credit-union incident, directive or transferable implementation detail"},
+      {"title":"Banks Arrange $60 Billion Anthropic Chip-Financing Package","reason":"material AI-infrastructure finance without a direct credit-union operating decision"},
+      {"title":"HSBC Opens Singapore AI Hub","reason":"international bank initiative without a U.S. credit-union implementation"},
+      {"title":"Mission Federal Discusses Alternative-Data Adoption","reason":"useful vendor-hosted implementation context incorporated into the selected article"},
+      {"title":"PortX Adds Unified Payment-Operations Manager","reason":"vendor launch without a named credit-union deployment or independently measured result"},
+      {"title":"Credit Unions First and CU*SOUTH Add Insurance Partnership","reason":"promotional partnership announcement without a demonstrated operating or member outcome"},
+      {"title":"Quavo AI Disputes Platform Receives SOC 1 Type 1 Report","reason":"vendor control milestone rather than a credit-union deployment or measured outcome"},
+      {"title":"Commonwealth Credit Union Expands Upstart Partnership","reason":"September 23 announcement resurfaced without a new October operating fact"},
+      {"title":"PSECU Selects Candescent for Digital Banking","reason":"September 29 vendor announcement outside the current News window"},
+      {"title":"CUES Names Emerge Program Judges","reason":"routine personnel and event promotion without a material operating consequence"},
+      {"title":"BayPort Reopens a Branch After Renovation","reason":"local facility news without a system-wide technology or operating implication"}
     ],
-    "status": "two-article-and-alert-cycle-complete",
-    "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+    "status": "article-cycle-complete",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the published headline and opening lead with the concrete underwriting workflow change. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted collections strategy, hardship-treatment monitoring and member-remediation controls",
-    "updatedAt": "2026-10-05T15:40:00-04:00"
+    "updatedAt": "2026-10-06T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-05",
+      "fullArticleCount": 2,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": ["digital-asset-chartering", "payments-and-stablecoins", "consumer-financial-protection", "credit-union-supervision", "fraud-and-bsa-aml", "ai-cybersecurity", "lending-and-credit", "community-bank-competition", "member-service-and-complaints", "product-governance", "third-party-risk", "board-strategy"],
+      "publications": [
+        {"type":"article","classification":"News","title":"Crypto Trust-Charter Fight Moves to Federal Court","url":"https://creditunionainews.com/news/occ-crypto-trust-charter-lawsuit.html","primaryFunctionalAudience":"Payments, digital-assets, risk and strategy leaders","promotionPriority":"High","socialDecision":"scheduled-2026-10-05-12:30-et-verified-receipt"},
+        {"type":"article","classification":"Insights","title":"A Member-Outcome Gate for Credit Union Product Decisions","url":"https://creditunionainews.com/insight-credit-union-ai-product-governance-outcome-gate.html","primaryFunctionalAudience":"Product, strategy, member-experience and risk leaders","promotionPriority":"Library","socialDecision":"not-created-daily-high-priority-slot-occupied"},
+        {"type":"alert","title":"FinCEN Withdraws Two Proposed Digital-Asset Rules","url":"https://creditunionainews.com/alerts/#fincen-withdraws-proposed-digital-asset-rules"}
+      ],
+      "rejections": [
+        {"title":"Banks Face the Deposit-Side Effects of Consumer AI Agents","reason":"credible commentary about future margin pressure, but not a discrete event or primary-source operating change"},
+        {"title":"Visa Open-Sources AI Cyber Defense Components","reason":"current and consequential, but overlaps recent FS-ISAC and agentic-security coverage without a new credit-union implementation"},
+        {"title":"ASIC Reviews Banking AI and Customer Impacts","reason":"authoritative supervisory review, but Australian and without a new U.S. credit-union obligation"},
+        {"title":"ICBA Urges OCC to Refine Matters-Requiring-Attention Rule","reason":"current examination-policy advocacy with weaker direct credit-union and technology consequence"},
+        {"title":"FinCEN Proposes Action Against a Shadow-Banking Network","reason":"material BSA/AML proposal, but the source package did not establish a distinct credit-union operating change for this cycle"},
+        {"title":"Fannie and Freddie Offer Temporary UAD 3.6 Exception","reason":"useful mortgage implementation relief, but weaker technology and system-wide consequence than the selected charter litigation"},
+        {"title":"OCC Digital-Asset Application Pipeline","reason":"authoritative evidence incorporated into the selected lawsuit article rather than treated as a separate event"},
+        {"title":"NCUA 2026 Supervisory Priorities","reason":"authoritative background for durable controls, but no new October 5 directive"},
+        {"title":"Agentic AI for Continuous Credit Monitoring","reason":"interview-led vendor perspective without a named credit-union deployment or independently measured result"},
+        {"title":"NIST AI Risk Management Framework","reason":"durable governance source incorporated into the selected Insight rather than treated as a current News event"}
+      ],
+      "status": "two-article-and-alert-cycle-complete",
+      "activeExperimentContext": "No active editorial or LinkedIn copy experiment changed selection, sourcing, classification or factual nuance.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted collections strategy, hardship-treatment monitoring and member-remediation controls",
+      "updatedAt": "2026-10-05T15:40:00-04:00"
+    },
     {
       "date": "2026-10-02",
       "fullArticleCount": 2,

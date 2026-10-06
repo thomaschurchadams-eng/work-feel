@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "plaid-ai-cash-flow-underwriting",
+      "title": "Plaid Adds Transaction-Sequence AI to Cash-Flow Underwriting",
+      "url": "/news/plaid-ai-cash-flow-underwriting.html",
+      "publishedAt": "2026-10-06T07:00:00-04:00",
+      "section": "news",
+      "beat": "cash-flow-underwriting-transaction-sequence-models",
+      "functions": ["lending-collections", "risk-compliance", "it-data-cybersecurity", "member-service"],
+      "technologies": ["data-decisioning", "generative-ai", "regtech-monitoring"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Lending, credit-risk, compliance and data leaders",
+      "secondaryAudiences": ["consumer-lending teams", "model-risk and fair-lending leaders", "member-service and dispute teams"],
+      "maturity": "emerging",
+      "promotionPriority": "High",
+      "socialDecision": "queued-2026-10-06-11:30-et-pending-secure-receipt",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening lead with the concrete underwriting workflow change. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": ["/insight-credit-union-ai-loan-pricing-controls.html", "/news/fannie-freddie-vantagescore-credit-union-mortgages.html"],
+      "sourceTier": 1,
+      "score": 91.8
+    },
+    {
       "id": "credit-union-ai-product-governance-outcome-gate",
       "title": "A Member-Outcome Gate for Credit Union Product Decisions",
       "url": "/insight-credit-union-ai-product-governance-outcome-gate.html",

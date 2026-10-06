@@ -1,14 +1,25 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-10-05T07:35:00-04:00",
+  "lastStandardRun": "2026-10-06T07:00:00-04:00",
   "lastBreakingRun": "2026-07-20T15:03:00-04:00",
   "lastPublishedArticle": {
-    "title": "A Member-Outcome Gate for Credit Union Product Decisions",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-product-governance-outcome-gate.html",
-    "publishedAt": "2026-10-05T07:35:00-04:00",
-    "route": "insights"
+    "title": "Plaid Adds Transaction-Sequence AI to Cash-Flow Underwriting",
+    "url": "https://creditunionainews.com/news/plaid-ai-cash-flow-underwriting.html",
+    "publishedAt": "2026-10-06T07:00:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {"date":"2026-10-06","headline":"AI-Assisted Attacks Target South Korean Banks","reason":"current and consequential security reporting, but overseas and without a confirmed U.S. credit-union incident, directive or transferable implementation detail"},
+    {"date":"2026-10-06","headline":"Banks Arrange $60 Billion Anthropic Chip-Financing Package","reason":"material AI-infrastructure finance, but without a direct credit-union operating decision or member-service consequence"},
+    {"date":"2026-10-06","headline":"HSBC Opens Singapore AI Hub","reason":"a current international bank initiative with limited detail and no U.S. credit-union implementation"},
+    {"date":"2026-10-06","headline":"Mission Federal Discusses Alternative-Data Adoption","reason":"useful credit-union implementation context incorporated into the selected article, but vendor-hosted and without independent outcome evidence"},
+    {"date":"2026-10-06","headline":"PortX Adds Unified Payment-Operations Manager","reason":"relevant payment-operations launch without a named credit-union deployment or independently measured result"},
+    {"date":"2026-10-06","headline":"Credit Unions First and CU*SOUTH Add Insurance Partnership","reason":"credit-union ecosystem partnership with promotional sourcing and no demonstrated operating or member outcome"},
+    {"date":"2026-10-06","headline":"Quavo AI Disputes Platform Receives SOC 1 Type 1 Report","reason":"a vendor control milestone rather than a new credit-union deployment, policy change or measured member outcome"},
+    {"date":"2026-10-06","headline":"Commonwealth Credit Union Expands Upstart Partnership","reason":"a September 23 announcement resurfaced this week without a new October operating fact"},
+    {"date":"2026-10-06","headline":"PSECU Selects Candescent for Digital Banking","reason":"a September 29 vendor announcement outside the current News window and without measured implementation results"},
+    {"date":"2026-10-06","headline":"CUES Names Emerge Program Judges","reason":"routine personnel and event promotion without a material technology or operating consequence"},
+    {"date":"2026-10-06","headline":"BayPort Reopens a Branch After Renovation","reason":"local facility news without a system-wide credit-union technology or operating implication"},
     {"date":"2026-10-05","headline":"Banks Face the Deposit-Side Effects of Consumer AI Agents","reason":"credible commentary about future margin pressure, but not a discrete event or primary-source operating change"},
     {"date":"2026-10-05","headline":"Visa Open-Sources AI Cyber Defense Components","reason":"current and consequential, but overlaps recent FS-ISAC and agentic-security coverage without a new credit-union implementation"},
     {"date":"2026-10-05","headline":"ASIC Reviews Banking AI and Customer Impacts","reason":"authoritative supervisory review, but Australian and without a new U.S. credit-union obligation"},
