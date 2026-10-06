@@ -2539,6 +2539,31 @@
       ],
       "summary": "Completed the October 5 Monday operating review after the publisher’s two-article handoff. The week is on trajectory at 2/8 articles with News and Insight represented; the strongest next editorial gap is collections strategy, hardship-treatment monitoring and member-remediation controls, with workforce and marketing also sparse. Published one same-day, source-linked FinCEN Alert on withdrawal of two proposed digital-asset rules, preserved all 53 history entries and both article outcomes, and verified production homepage, ticker and archive after Vercel READY. Reconciled the exact OCC LinkedIn sent receipt without retry. Latest authenticated October 2 analytics still show audience volume but weaker depth/qualified acquisition and no independent CAI-destination conversion evidence. Completed the W41 public/free competitive-distribution scan with five bounded earned-channel opportunities (Finopotamus, Credit Union tech-talk, NACUSO Knowledge Center, The Financial Brand and Credit Union Times); no defensible public Similarweb domain estimates were asserted. No outreach, submission, account creation, trial, spend, social expansion or new assignment occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-06T12:51:20.626294+00:00",
+      "actor": "cuai-media-coordinator",
+      "runType": "existing-Tuesday-chart-publication-and-media-review",
+      "status": "chart-published-website-verified; social/video-quality holds preserved",
+      "workUnits": {
+        "mediaPublished": 1,
+        "articlesPublishedByCoordinator": 0,
+        "socialSchedulingAttemptsByCoordinator": 0,
+        "newReservations": 0,
+        "creditsConsumed": 0,
+        "newAudioOrImagesGenerated": 0,
+        "newSchedulesOrExecutors": 0,
+        "actualPublishedVideosWatched": 0,
+        "industryExamplesWatchedWithSound": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub current policies/queue and existing trusted artifacts",
+        "Vercel read-only exact deployment",
+        "public NCUA sources",
+        "CUAI local/public isolated browser checks"
+      ],
+      "summary": "Published due original October6 membership chart with accessible data table/method and replacement home feature, preserved original image identity/hash and all articles/daily counts/coverage/history. Exact production page/image and four mobile/desktop cases verified. Today Plaid High LinkedIn post is already scheduled with actual Buffer ID; no chart reservation or provider mutation. Confirmed successful runner-gap recovery and today real scheduling receipt without replay. Oct8 received correction remains listening/cutpoint/splice/caption/final-master blocked; no regenerated narration, rejected cue variant or avatar. Oct9 cartoon prepared and independently releasable on due date while social parent dedup remains held. Historical video actual playback/craft and exact-age same-post results remain unknown; no viewing or outcome fabricated. No speech credits, spend, schedule or executor changes.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

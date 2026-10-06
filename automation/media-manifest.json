@@ -15,15 +15,13 @@
       "audioSha256": "219e4d8545ee22d4628172844496d6afaa9efb9f3b8a8242efb31a09011fbd83",
       "socialDecision": "not-selected",
       "note": "Existing approved publication recorded for October accounting; no retrospective social reservation."
-    }
-  ],
-  "planned": [
+    },
     {
       "id": "chart-2026-10-06",
       "format": "chart",
       "targetDate": "2026-10-06",
-      "status": "planned",
-      "preparationStatus": "prepared-unpublished-social-reservation-held",
+      "status": "published",
+      "preparationStatus": "published-website-verified-social-held-existing-slot",
       "preparedAt": "2026-10-02T12:53:16+00:00",
       "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
       "sourceURLs": [
@@ -31,11 +29,11 @@
         "https://ncua.gov/newsroom/press-release/2026/ncua-releases-2026-q2-state-level-credit-union-data"
       ],
       "sourceReleaseDate": "2026-09-23",
-      "sourceCheckedAt": "2026-10-04T13:17:14.127249+00:00",
+      "sourceCheckedAt": "2026-10-06T12:51:20.626294+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": true,
-      "productionVerified": false,
+      "productionVerified": true,
       "publicationNotBefore": "2026-10-06",
       "libraryAssetId": "libfile_c0671d1987d8819180b11ca97585f127",
       "assetSha256": "28830de3f2280236b8dc4e6c23d775c51d916316fa246e13185b9840df1c96cf",
@@ -50,10 +48,10 @@
         "parentPreparedModuleAndCopy": "received-exact-parent-copy/template-assembled",
         "sourceAndDate": "verified",
         "altAndDataTable": "locally-verified",
-        "desktopMobileAndAccessibilityQA": "October4 local 390/1440 and axe passed; source/table/keyboard verified",
-        "dueDate": "hold-until-2026-10-06",
-        "productionIdentityAndPublicURL": "not-published",
-        "socialSelection": "hold until future provider inventory, dedup, High-news and shared capacity are verified by existing publisher"
+        "desktopMobileAndAccessibilityQA": "October6 local and public 390/1440, table keyboard/menu, axe passed",
+        "dueDate": "passed-2026-10-06",
+        "productionIdentityAndPublicURL": "verified-exact-commit/page/image/hash",
+        "socialSelection": "October6 existing Plaid High-article slot preserved; publisher owns any later selection under source-age, dedup, inventory and shared caps"
       },
       "coordinationHandoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448",
       "preparationCompletedAt": "2026-10-02T13:17:53+00:00",
@@ -74,8 +72,28 @@
       },
       "latestPreparationPageMemberPath": "reused-chart/chart/media/credit-union-membership-q2-2026.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-membership-q2-2026-chart.png",
-      "socialDecision": "held-future-provider-inventory-unknown"
-    },
+      "socialDecision": "held-today-existing-High-article-reservation",
+      "websitePublishedAt": "2026-10-06T12:48:24.946000+00:00",
+      "productionVerification": {
+        "publicationCommit": "06c985fbfbbe4c7139798310dcc80f5b3dc5c015",
+        "deploymentId": "dpl_GDdVnfpedeXaDp9RM3BMi8xnXkK8",
+        "target": "production",
+        "state": "READY",
+        "verifiedAt": "2026-10-06T12:51:20.626294+00:00",
+        "pageHTTP": 200,
+        "imageHTTP": 200,
+        "imageSHA256": "28830de3f2280236b8dc4e6c23d775c51d916316fa246e13185b9840df1c96cf",
+        "pageSHA256": "8b01bdf5eac6773d1060531d0947b113e460dd12ab0f90d8a0a9536863796e69",
+        "byteIdentical": true,
+        "liveDesktopMobileCasesPassed": 4,
+        "axeViolations": 0,
+        "operationsRun": 37465917141
+      },
+      "actualProviderPostId": null,
+      "publicPostUrl": null
+    }
+  ],
+  "planned": [
     {
       "id": "short-video-2026-10-08",
       "format": "short-video",
@@ -257,5 +275,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-05.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-06.json"
 }
