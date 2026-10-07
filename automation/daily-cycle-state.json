@@ -7,13 +7,14 @@
   },
   "current": {
     "date": "2026-10-07",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": ["credit-scoring-and-model-competition", "enterprise-ai-workspaces", "voice-ai-investment", "ai-infrastructure-finance", "financial-sector-cybersecurity", "macroeconomic-ai-risk", "mortgage-technology", "cash-flow-underwriting", "credit-union-regulation", "consumer-financial-protection", "collections-and-hardship", "vendor-management-and-workforce"],
     "publications": [
-      {"type":"article","classification":"News","title":"FICO Cuts 15% of Jobs as It Adds AI to Product Development","url":"https://creditunionainews.com/news/fico-ai-restructuring-credit-score-competition.html","primaryFunctionalAudience":"Lending, model-risk, vendor-management and technology leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
+      {"type":"article","classification":"News","title":"FICO Cuts 15% of Jobs as It Adds AI to Product Development","url":"https://creditunionainews.com/news/fico-ai-restructuring-credit-score-competition.html","primaryFunctionalAudience":"Lending, model-risk, vendor-management and technology leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+      {"type":"article","classification":"Insights","title":"A Hardship-Treatment Record for AI-Assisted Credit Union Collections","url":"https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html","primaryFunctionalAudience":"Collections, lending, member-assistance and compliance leaders","promotionPriority":"Library","socialDecision":"not-created-published-media-won-shared-slot"}
     ],
     "rejections": [
       {"title":"Claude Enters Google Workspace Beta","reason":"useful enterprise-tool availability signal without a financial-institution deployment, control change or measured credit-union outcome"},
@@ -28,11 +29,11 @@
       {"title":"CFPB Consumer-Finance Resources","reason":"authoritative background without a new rule, enforcement action or operating change for this cycle"},
       {"title":"FICO Investor Commentary on Competitive Pressure","reason":"secondary analysis incorporated as context for the selected FICO filing rather than treated as a distinct article"}
     ],
-    "status": "first-of-two-article-packages-complete",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the FICO headline leads with the source-supported workforce and AI development change, and the opening translates it into a concrete credit-union vendor-review workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "two-article-cycle-complete",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: both packages lead with a concrete operating change or decision record and translate it into a reviewable credit-union workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted collections strategy, hardship-treatment monitoring and member-remediation controls",
-    "updatedAt": "2026-10-07T07:00:00-04:00"
+    "nextCoverageGap": "AI-assisted marketing attribution, offer suppression and member-consent controls",
+    "updatedAt": "2026-10-07T07:30:00-04:00"
   },
   "history": [
     {
