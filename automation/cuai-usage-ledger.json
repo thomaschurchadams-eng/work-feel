@@ -2662,6 +2662,43 @@
       ],
       "summary": "Diagnosed operations run 37623147936 attempt 1: it failed closed during production identity refresh after initial authentication and exact production verification, before any source retry or distribution action. The sanitized receipt does not expose the underlying provider error, so no narrower cause is asserted. Retried only the failed job after confirming Vercel Production READY on exact SHA 035e7f946e130d0eda684275935c5f77ed0d1ed4. Attempt 2 succeeded on unchanged code and SHA with production identity verified, 0 distribution attempts, 1 exact sent-state reconciliation and 0 source/action exceptions, establishing a transient external identity/route-propagation failure rather than code, configuration or state corruption. The existing LinkedIn chart reservation was reconciled in place to sent with original postId 6ac62b4f0ea81feae6a7620f, sentAt 2026-10-07T15:30:29.942Z, exact CUAI UTM URL, approved company channel, image and duplicate=false. Current main 07d6d64ea1e28951c41a250721f848f0fc188a39 is READY and runtime-error-free. Durable recommendation: retain fail-closed authorization and add non-secret classified refresh-stage telemetry/counters so future transient OIDC, health-route and GitHub-compare failures can be distinguished without exposing credentials or raw provider payloads.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-07T19:21:42.606Z",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Scheduled bounded CreditUnionAI News operating review for 2026-10-07.",
+      "status": "success",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 128,
+        "portfolioArticlesReviewed": 59,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 5,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "alertCandidatesScreened": 6,
+        "alertsPublished": 0,
+        "homepageFreshnessChecks": 1,
+        "analyticsWindowsReviewed": 2,
+        "reliabilityHandoffsConsumed": 2,
+        "deploymentsChecked": 1,
+        "liveBrowserChecks": 3,
+        "exactSocialSentReceiptsReconciled": 1,
+        "socialSchedulingAttempts": 0,
+        "competitiveDistributionScansRun": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel via completed reliability receipt",
+        "CreditUnionAI News production",
+        "Buffer via exact sent receipt",
+        "public primary and credible news sources",
+        "latest trusted Google Analytics 4 and Search Console evidence"
+      ],
+      "summary": "Completed the October 7 bounded operating review after consuming the publisher’s two-article handoff. Both new articles are live and the week is on trajectory at 5/8; the collections/hardship/remediation gap is closed. No new Alert qualified: the FICO workforce/AI change is already today’s full article, official NCUA, FinCEN, CFPB and CISA surfaces showed no newer U.S. credit-union directive or incident, and public reporting on South Korean bank attacks still lacks a U.S. credit-union incident or specific transferable directive. The October 5 FinCEN Alert remains within the 72-hour homepage window and live, so no homepage mutation was needed. Consumed the production-identity transient failure and completed recovery receipts; the existing chart LinkedIn item was reconciled in place as sent with postId 6ac62b4f0ea81feae6a7620f, sentAt 2026-10-07T15:30:29.942Z and duplicate=false, with no retry or replacement. In the latest 15-item portfolio, News/Insight is 9/6 across three formats; risk/compliance and operations remain concentrated while marketing-growth appears once. The next candidate remains AI-assisted marketing attribution, offer suppression and member-consent controls. Latest authenticated analytics remains dated October 2; goals are stale after September 30 and independent CAI-destination conversion evidence remains unavailable. The W41 distribution scan was not duplicated. No outreach, spend, new assignment, publication expansion, credential or policy change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
