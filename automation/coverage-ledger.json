@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fico-ai-restructuring-credit-score-competition",
+      "title": "FICO Cuts 15% of Jobs as It Adds AI to Product Development",
+      "url": "/news/fico-ai-restructuring-credit-score-competition.html",
+      "publishedAt": "2026-10-07T07:00:00-04:00",
+      "section": "news",
+      "beat": "credit-scoring-vendor-change-and-model-competition",
+      "functions": ["lending-collections", "vendor-management", "risk-compliance", "it-data-cybersecurity"],
+      "technologies": ["data-decisioning", "generative-ai", "governance-risk"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Lending, model-risk, vendor-management and technology leaders",
+      "secondaryAudiences": ["mortgage and consumer-lending teams", "procurement and business-continuity leaders", "compliance and fair-lending teams"],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline leads with the source-supported workforce and AI product-development change, and the opening converts it into a concrete credit-union vendor-review workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": ["/news/fannie-freddie-vantagescore-credit-union-mortgages.html", "/insight-credit-union-ai-inventory-change-control.html"],
+      "sourceTier": 1,
+      "score": 84.6
+    },
+    {
       "id": "plaid-ai-cash-flow-underwriting",
       "title": "Plaid Adds Transaction-Sequence AI to Cash-Flow Underwriting",
       "url": "/news/plaid-ai-cash-flow-underwriting.html",

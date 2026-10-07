@@ -3,6 +3,28 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fico-ai-restructuring-credit-score-competition",
+      "articleUrl": "/news/fico-ai-restructuring-credit-score-competition.html",
+      "imagePath": "/assets/fico-ai-restructuring-credit-score-competition.jpg",
+      "publishedAt": "2026-10-07T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-dimensional-paper-cut-3d-illustration",
+      "subject": "credit-scoring-vendor-change-and-model-competition",
+      "composition": "organizational-layers-and-two-score-paths-converge-on-lender-checkpoint",
+      "perspective": "wide-eye-level",
+      "palette": "deep-navy-slate-cyan-restrained-amber",
+      "lighting": "controlled-analytical-studio",
+      "texture": "paper-glass-metal-and-luminous-data-paths",
+      "scene": "organizational-layers-and-two-credit-scoring-paths-converge-around-a-transparent-risk-gauge-and-lender-decision-checkpoint",
+      "conceptScore": 93.7,
+      "dimensions": {"width": 1200, "height": 630},
+      "conceptAlternatives": [
+        {"medium": "editorial-collage", "subject": "vendor-restructuring-and-credit-score-choice", "score": 82.2},
+        {"medium": "architectural-editorial", "subject": "model-provider-change-review", "score": 80.8}
+      ]
+    },
+    {
       "id": "plaid-ai-cash-flow-underwriting",
       "articleUrl": "/news/plaid-ai-cash-flow-underwriting.html",
       "imagePath": "/assets/plaid-ai-cash-flow-underwriting.jpg",

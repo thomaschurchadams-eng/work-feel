@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://creditunionainews.com/news/fico-ai-restructuring-credit-score-competition.html</loc>
+    <news:news>
+      <news:publication><news:name>CreditUnionAI News</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-10-07T07:00:00-04:00</news:publication_date>
+      <news:title>FICO Cuts 15% of Jobs as It Adds AI to Product Development</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://creditunionainews.com/news/plaid-ai-cash-flow-underwriting.html</loc>
     <news:news>
       <news:publication><news:name>CreditUnionAI News</news:name><news:language>en</news:language></news:publication>
@@ -15,39 +23,6 @@
       <news:publication><news:name>CreditUnionAI News</news:name><news:language>en</news:language></news:publication>
       <news:publication_date>2026-10-05T07:35:00-04:00</news:publication_date>
       <news:title>Crypto Trust-Charter Fight Moves to Federal Court</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/cdfi-certification-credit-union-accountability-proposal.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-02T07:35:00-04:00</news:publication_date>
-      <news:title>Treasury Proposal Would Change How CDFI Credit Unions Prove Accountability</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/fcc-tcpa-revoke-all-credit-union-alerts.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-02T07:05:00-04:00</news:publication_date>
-      <news:title>FCC Narrows TCPA “Revoke All” Rule for Credit Union Alerts</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://creditunionainews.com/news/gulf-winds-peoples-exchange-bank-acquisition.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>CreditUnionAI News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-01T07:00:00-04:00</news:publication_date>
-      <news:title>Gulf Winds Lines Up a Second Bank Acquisition</news:title>
     </news:news>
   </url>
 </urlset>
