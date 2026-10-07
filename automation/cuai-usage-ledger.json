@@ -2636,6 +2636,32 @@
       },
       "summary": "Read current main policy/manifest/queue/full shared ledger and trusted actual publisher receipt. Preserved October1 podcast and exact October6 chart image/page; existing publisher scheduled chart for October7 with real post6ac62b4f0ea81feae6a7620f; scheduling is not sent proof. Refreshed independent October9 cartoon source checks and current CSS/JS desktop/mobile accessibility QA; original image unchanged, public destination404 and release held until due date, parent dedup preserved. October8 approved correction hash preserved, existing actual103debit not duplicated; hearing/certified boundaries/splice/caption/final-master remain with existing hearing-capable audio/video owner. No failed-access retry, synthesis, regenerated asset, social call, purchase, policy or schedule change. Historical video playback/craft and exact-age same-post results remain unknown; no false listening/viewing/metrics claim. Local execution worked, no computer disconnection observed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-07T15:38:05.197Z",
+      "actor": "reliability-watch",
+      "runType": "reliability-watch",
+      "trigger": "Open production-identity-refresh incident reliability:2026-10-07:production-identity-refresh:37623147936.",
+      "status": "recovered",
+      "workUnits": {
+        "failedWorkflowRunsInspected": 1,
+        "failedWorkflowJobRetries": 1,
+        "productionDeploymentChecks": 2,
+        "runtimeErrorChecks": 1,
+        "livePublicationChecks": 2,
+        "distributionAttempts": 0,
+        "exactSocialSentReceiptsReconciled": 1,
+        "replacementPostsCreated": 0,
+        "duplicateReservationsCreated": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer via existing secure workflow",
+        "CreditUnionAI News production"
+      ],
+      "summary": "Diagnosed operations run 37623147936 attempt 1: it failed closed during production identity refresh after initial authentication and exact production verification, before any source retry or distribution action. The sanitized receipt does not expose the underlying provider error, so no narrower cause is asserted. Retried only the failed job after confirming Vercel Production READY on exact SHA 035e7f946e130d0eda684275935c5f77ed0d1ed4. Attempt 2 succeeded on unchanged code and SHA with production identity verified, 0 distribution attempts, 1 exact sent-state reconciliation and 0 source/action exceptions, establishing a transient external identity/route-propagation failure rather than code, configuration or state corruption. The existing LinkedIn chart reservation was reconciled in place to sent with original postId 6ac62b4f0ea81feae6a7620f, sentAt 2026-10-07T15:30:29.942Z, exact CUAI UTM URL, approved company channel, image and duplicate=false. Current main 07d6d64ea1e28951c41a250721f848f0fc188a39 is READY and runtime-error-free. Durable recommendation: retain fail-closed authorization and add non-secret classified refresh-stage telemetry/counters so future transient OIDC, health-route and GitHub-compare failures can be distinguished without exposing credentials or raw provider payloads.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
