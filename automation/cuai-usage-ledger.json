@@ -2618,6 +2618,24 @@
       ],
       "summary": "Observed the existing secure workflow reconcile the October 6 Plaid LinkedIn item in place after the operating review’s initial post-due evidence check. Canonical queue status is sent with postId 6ac4d81ed27c7ddce31be028, sentAt 2026-10-06T15:30:29.123Z, duplicate=false and the exact LinkedIn external link. No scheduler retry, replacement post or broader social action occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-07T12:43:13.915754+00:00",
+      "actor": "cuai-media-coordinator",
+      "runType": "existing-Wednesday-multimedia-coordination",
+      "status": "completed-independent-cartoon-preparation; October8-hearing-and-final-master-blocked",
+      "workUnits": {
+        "mediaPublished": 0,
+        "newSocialSchedulingAttempts": 0,
+        "newReservations": 0,
+        "creditsConsumed": 0,
+        "newAudioOrImagesGenerated": 0,
+        "newSchedulesOrManagers": 0,
+        "actualPublishedVideosWatched": 0,
+        "industryExamplesWatchedWithSound": 0
+      },
+      "summary": "Read current main policy/manifest/queue/full shared ledger and trusted actual publisher receipt. Preserved October1 podcast and exact October6 chart image/page; existing publisher scheduled chart for October7 with real post6ac62b4f0ea81feae6a7620f; scheduling is not sent proof. Refreshed independent October9 cartoon source checks and current CSS/JS desktop/mobile accessibility QA; original image unchanged, public destination404 and release held until due date, parent dedup preserved. October8 approved correction hash preserved, existing actual103debit not duplicated; hearing/certified boundaries/splice/caption/final-master remain with existing hearing-capable audio/video owner. No failed-access retry, synthesis, regenerated asset, social call, purchase, policy or schedule change. Historical video playback/craft and exact-age same-post results remain unknown; no false listening/viewing/metrics claim. Local execution worked, no computer disconnection observed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

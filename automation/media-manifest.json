@@ -58,7 +58,7 @@
       "title": "Most credit unions had fewer members. Start the growth discussion with a reconciliation.",
       "preparedPagePath": "media/credit-union-membership-q2-2026.html",
       "preparedPackageLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448",
-      "preparationVerificationScope": "Local draft only; productionVerified remains false. Image is separate from article heroes.",
+      "preparationVerificationScope": "Historical preparation-package checks were local only; later productionVerification records the verified published website.",
       "preparedPackageLibraryVersion": 1,
       "preparedPackageSHA256": "74e95eb648ba5f59be8da27ab96aff95a850768abb9d0c19308153c1ec3e978d",
       "preparedPackageFileName": "cuai-oct2-preparation-handoff.zip",
@@ -72,7 +72,7 @@
       },
       "latestPreparationPageMemberPath": "reused-chart/chart/media/credit-union-membership-q2-2026.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-membership-q2-2026-chart.png",
-      "socialDecision": "queued-2026-10-07-11:30-et-pending-secure-receipt",
+      "socialDecision": "scheduled-2026-10-07-11:30-et-real-receipt",
       "websitePublishedAt": "2026-10-06T12:48:24.946000+00:00",
       "productionVerification": {
         "publicationCommit": "06c985fbfbbe4c7139798310dcc80f5b3dc5c015",
@@ -89,8 +89,19 @@
         "axeViolations": 0,
         "operationsRun": 37465917141
       },
-      "actualProviderPostId": null,
-      "publicPostUrl": null
+      "actualProviderPostId": "6ac62b4f0ea81feae6a7620f",
+      "publicPostUrl": null,
+      "providerStatus": "scheduled",
+      "socialReceipt": {
+        "runId": 37613517649,
+        "postId": "6ac62b4f0ea81feae6a7620f",
+        "status": "scheduled",
+        "channelId": "6a53df0880cc80cdcaa76fb8",
+        "dueAt": "2026-10-07T15:30:00.000Z",
+        "duplicate": false,
+        "sentAt": null,
+        "verifiedAt": "2026-10-07T12:43:13.915754+00:00"
+      }
     }
   ],
   "planned": [
@@ -156,7 +167,7 @@
       "title": "Beautiful. Where are the sources?",
       "preparationStatus": "prepared-unpublished-social-dedup-held",
       "preparedAt": "2026-10-04T13:19:21.855483+00:00",
-      "sourceCheckedAt": "2026-10-04T13:17:14.127249+00:00",
+      "sourceCheckedAt": "2026-10-07T12:43:13.915754+00:00",
       "canonicalUrl": "https://creditunionainews.com/media/ai-board-packet-sources-cartoon.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-board-packet-sources-cartoon-2026-10-09.png",
       "assetSha256": "db68a8fa8726350c13cee34a3d86136637d9c1ad402bdf5b08da8c0967a4f8ea",
@@ -197,10 +208,11 @@
       "rightsNote": "Original illustration made with built-in AI image generation; fictional people, invented editorial dialogue; no logos, copied assets or actual-event claim",
       "releaseGates": {
         "dueDate": "hold-until-2026-10-09",
-        "desktopMobileAndAccessibilityQA": "October4 local 390/1440 and axe passed; alt/caption/long description verified",
+        "desktopMobileAndAccessibilityQA": "October7 current CSS/JS at 390/1440, menu/Escape, image/alt/caption/long description and axe passed; draft remains unpublished",
         "productionIdentityAndPublicURL": "not-published",
         "socialSelection": "held; preserve underlying publication deduplication and future provider inventory check"
-      }
+      },
+      "preparationRecheckedAt": "2026-10-07T12:43:13.915754+00:00"
     },
     {
       "id": "decision-card-2026-10-13",
@@ -275,5 +287,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-06.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-07.json"
 }
