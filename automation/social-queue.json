@@ -16,7 +16,7 @@
       "parentPublicationId": "ncua-q2-2026-membership-institution-distribution",
       "copy": "NCUA reports that about 56% of federally insured credit unions had fewer members on June 30, 2026 than one year earlier. The chart's approximately 44% complement describes institutions—not member churn—and shows why aggregate growth can hide institution-level decline. The operating takeaway: reconcile membership change by field of membership, market and channel before choosing a growth intervention. https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
       "scheduledFor": "2026-10-07T11:30:00-04:00",
-      "status": "scheduled",
+      "status": "sent",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-10-07T07:30:00-04:00",
       "imageUrl": "https://creditunionainews.com/assets/cuai-membership-q2-2026-chart.png",
@@ -29,7 +29,9 @@
       "lastAttemptAt": "2026-10-07T11:21:51.779Z",
       "lastResult": "verified secure workflow receipt",
       "duplicate": false,
-      "imageAttached": true
+      "imageAttached": true,
+      "sentAt": "2026-10-07T15:30:29.942Z",
+      "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008"
     },
     {
       "id": "linkedin-plaid-ai-cash-flow-underwriting-2026-10-06",
