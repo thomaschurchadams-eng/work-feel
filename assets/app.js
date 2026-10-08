@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Agentic Cyberattack',
+      headline: 'CrowdStrike Finds ARTEX AI Agent in South Korean Financial-Sector Attacks',
+      summary:
+        'CrowdStrike said on October 7 that it identified infrastructure associated with a campaign against South Korean financial organizations that resulted in exfiltrated data. Open directories contained Claude Code session histories, ARTEX configuration files and memory files, giving investigators direct evidence that a threat actor used an open-source agentic penetration-testing tool alongside large language models. CrowdStrike assessed with moderate confidence that the unattributed actor was likely Chinese-speaking and financially motivated; it said the number of affected organizations remained unconfirmed.',
+      impact:
+        'Credit-union security teams should review internet-facing and third-party loan, application and employee-support portals for unauthorized access, preserve and examine relevant logs, and add AI-agent-assisted reconnaissance and exploitation to threat-hunting and incident-response scenarios. Use CrowdStrike’s published observables and MITRE ATT&CK mappings where applicable, while avoiding unsupported attribution or any assumption that a U.S. credit union was compromised.',
+      sourceName: 'CrowdStrike',
+      sourceUrl:
+        'https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/',
+      date: 'Oct 8, 2026',
+      slug: 'crowdstrike-artex-ai-agent-south-korean-finance-attacks'
+    },
+    {
       label: 'Digital Asset AML',
       headline: 'FinCEN Withdraws Two Proposed Digital-Asset Rules',
       summary:
