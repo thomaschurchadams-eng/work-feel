@@ -6,36 +6,66 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-07",
-    "fullArticleCount": 2,
+    "date": "2026-10-08",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
-    "beatsSearched": ["credit-scoring-and-model-competition", "enterprise-ai-workspaces", "voice-ai-investment", "ai-infrastructure-finance", "financial-sector-cybersecurity", "macroeconomic-ai-risk", "mortgage-technology", "cash-flow-underwriting", "credit-union-regulation", "consumer-financial-protection", "collections-and-hardship", "vendor-management-and-workforce"],
+    "beatsSearched": ["ai-search-and-financial-product-discovery", "fintech-lending-partnerships", "international-bank-workforce", "bank-earnings-and-rates", "global-ai-safety", "macroeconomic-ai-risk", "fraud-policy-and-advocacy", "credit-union-technology-events", "digital-member-service", "member-cybersecurity", "ai-lending-decisioning", "credit-union-data-platforms"],
     "publications": [
-      {"type":"article","classification":"News","title":"FICO Cuts 15% of Jobs as It Adds AI to Product Development","url":"https://creditunionainews.com/news/fico-ai-restructuring-credit-score-competition.html","primaryFunctionalAudience":"Lending, model-risk, vendor-management and technology leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
-      {"type":"article","classification":"Insights","title":"A Hardship-Treatment Record for AI-Assisted Credit Union Collections","url":"https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html","primaryFunctionalAudience":"Collections, lending, member-assistance and compliance leaders","promotionPriority":"Library","socialDecision":"not-created-published-media-won-shared-slot"}
+      {"type":"article","classification":"News","title":"Fintel Study Finds Affiliates Shape AI Financial-Product Recommendations","url":"https://creditunionainews.com/news/fintel-ai-search-financial-product-recommendations.html","primaryFunctionalAudience":"Marketing, digital-growth and member-acquisition leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
     ],
     "rejections": [
-      {"title":"Claude Enters Google Workspace Beta","reason":"useful enterprise-tool availability signal without a financial-institution deployment, control change or measured credit-union outcome"},
-      {"title":"ElevenLabs Plans Major India Investment","reason":"material voice-AI expansion without a U.S. credit-union operating consequence"},
-      {"title":"SpaceX Seeks AI-Infrastructure Financing","reason":"large capital-market development without a direct credit-union decision"},
-      {"title":"JPMorgan Raises AI-Driven Cyber-Risk Estimate","reason":"executive risk claim without an accompanying directive, incident detail or transferable control specification"},
-      {"title":"IMF Assesses AI and Global Debt Risks","reason":"broad macroeconomic analysis with weaker immediate credit-union implementation value"},
-      {"title":"Google Adds Nuclear-Power Supply for AI Demand","reason":"AI infrastructure announcement without a specific credit-union operating implication"},
-      {"title":"Valon Raises Capital for Mortgage AI Platform","reason":"funding event and vendor claims without a named credit-union deployment or independently measured result"},
-      {"title":"Plaid Expands AI Cash-Flow Scores","reason":"duplicate of the October 6 CreditUnionAI News article"},
-      {"title":"NCUA Technology and Emerging-Issues Resources","reason":"authoritative background but no new October 7 directive or completed event"},
-      {"title":"CFPB Consumer-Finance Resources","reason":"authoritative background without a new rule, enforcement action or operating change for this cycle"},
-      {"title":"FICO Investor Commentary on Competitive Pressure","reason":"secondary analysis incorporated as context for the selected FICO filing rather than treated as a distinct article"}
+      {"title":"CU Denver Partners With Upstart","reason":"partnership announcement without a go-live date or measured outcome, in a lending function already heavily covered this week"},
+      {"title":"HSBC Plans Wealth-Unit Job Cuts","reason":"foreign-bank workforce development and near-duplicate of the October 7 FICO restructuring story"},
+      {"title":"U.S. Bank Earnings and Rate Outlook","reason":"forecast commentary rather than a completed event or authoritative operating change"},
+      {"title":"Singapore AI Forum Bubble and Safety Warnings","reason":"broad global conference commentary without a specific U.S. credit-union operating decision"},
+      {"title":"IMF AI and Debt Risk Analysis","reason":"macroeconomic analysis without an immediate credit-union implementation requirement"},
+      {"title":"America's Credit Unions DOJ Fraud Listening Session","reason":"advocacy and stakeholder input without a directive or completed operating outcome"},
+      {"title":"GoWest MAXX Technology Remarks","reason":"event commentary without a new verified operating fact"},
+      {"title":"Royal Credit Union Intelligent Front Door Concept","reason":"proposal-stage concept without a deployed or independently verified implementation"},
+      {"title":"R1CU Member Shield Concept","reason":"proposal-stage concept without a deployed or independently verified implementation"},
+      {"title":"Department of Commerce FCU Selects Scienaptic","reason":"vendor-supplied selection without independent outcomes, in a lending function already heavily covered this week"},
+      {"title":"CUDX AI-Ready Data Products","reason":"September 29 announcement outside the current News window and a general platform commitment without a shipped product or outcome"}
     ],
-    "status": "two-article-cycle-complete",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: both packages lead with a concrete operating change or decision record and translate it into a reviewable credit-union workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "article-cycle-complete-with-correction",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the published headline and opening lead with the concrete AI-search measurement problem. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
-    "nextCoverageGap": "AI-assisted marketing attribution, offer suppression and member-consent controls",
-    "updatedAt": "2026-10-07T07:30:00-04:00"
+    "correctionOutcome": {"type":"correction","articleUrl":"https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html","title":"Alkami Reports Raiz Online Account Applications Take Three–Five Minutes","status":"published-with-visible-notice-and-ledger","source":"Alkami case-study table"},
+    "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
+    "updatedAt": "2026-10-08T07:00:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-07",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": ["credit-scoring-and-model-competition", "enterprise-ai-workspaces", "voice-ai-investment", "ai-infrastructure-finance", "financial-sector-cybersecurity", "macroeconomic-ai-risk", "mortgage-technology", "cash-flow-underwriting", "credit-union-regulation", "consumer-financial-protection", "collections-and-hardship", "vendor-management-and-workforce"],
+      "publications": [
+        {"type":"article","classification":"News","title":"FICO Cuts 15% of Jobs as It Adds AI to Product Development","url":"https://creditunionainews.com/news/fico-ai-restructuring-credit-score-competition.html","primaryFunctionalAudience":"Lending, model-risk, vendor-management and technology leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+        {"type":"article","classification":"Insights","title":"A Hardship-Treatment Record for AI-Assisted Credit Union Collections","url":"https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html","primaryFunctionalAudience":"Collections, lending, member-assistance and compliance leaders","promotionPriority":"Library","socialDecision":"not-created-published-media-won-shared-slot"}
+      ],
+      "rejections": [
+        {"title":"Claude Enters Google Workspace Beta","reason":"useful enterprise-tool availability signal without a financial-institution deployment, control change or measured credit-union outcome"},
+        {"title":"ElevenLabs Plans Major India Investment","reason":"material voice-AI expansion without a U.S. credit-union operating consequence"},
+        {"title":"SpaceX Seeks AI-Infrastructure Financing","reason":"large capital-market development without a direct credit-union decision"},
+        {"title":"JPMorgan Raises AI-Driven Cyber-Risk Estimate","reason":"executive risk claim without an accompanying directive, incident detail or transferable control specification"},
+        {"title":"IMF Assesses AI and Global Debt Risks","reason":"broad macroeconomic analysis with weaker immediate credit-union implementation value"},
+        {"title":"Google Adds Nuclear-Power Supply for AI Demand","reason":"AI infrastructure announcement without a specific credit-union operating implication"},
+        {"title":"Valon Raises Capital for Mortgage AI Platform","reason":"funding event and vendor claims without a named credit-union deployment or independently measured result"},
+        {"title":"Plaid Expands AI Cash-Flow Scores","reason":"duplicate of the October 6 CreditUnionAI News article"},
+        {"title":"NCUA Technology and Emerging-Issues Resources","reason":"authoritative background but no new October 7 directive or completed event"},
+        {"title":"CFPB Consumer-Finance Resources","reason":"authoritative background without a new rule, enforcement action or operating change for this cycle"},
+        {"title":"FICO Investor Commentary on Competitive Pressure","reason":"secondary analysis incorporated as context for the selected FICO filing rather than treated as a distinct article"}
+      ],
+      "status": "two-article-cycle-complete",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: both packages lead with a concrete operating change or decision record and translate it into a reviewable credit-union workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted marketing attribution, offer suppression and member-consent controls",
+      "updatedAt": "2026-10-07T07:30:00-04:00"
+    },
     {
       "date": "2026-10-06",
       "fullArticleCount": 1,

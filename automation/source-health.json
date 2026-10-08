@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-10-08",
   "lastFullArchiveCheck": "2026-09-10T16:54:48-04:00",
-  "lastRecentCheck": "2026-09-10T16:54:48-04:00",
+  "lastRecentCheck": "2026-10-08T07:00:00-04:00",
   "summary": {
-    "checkedUrls": 28,
-    "healthy": 24,
+    "checkedUrls": 29,
+    "healthy": 25,
     "redirected": 3,
     "temporarilyUnavailable": 1,
     "removed": 0,
@@ -186,6 +186,12 @@
       "lastChecked": "2026-09-10T16:54:48-04:00",
       "resolvedUrl": "https://www.mastercard.com/us/en/news-and-trends/stories.html",
       "articlePaths": ["news/visa-mastercard-ai-fraud.html"]
+    },
+    {
+      "url": "https://www.alkami.com/resources/client-success/case-study/how-raiz-federal-credit-union-is-building-a-digital-forward-member-experience-with-alkamis-digital-sales-service-platform/",
+      "status": "healthy",
+      "lastChecked": "2026-10-08T07:00:00-04:00",
+      "articlePaths": ["news/raiz-digital-account-opening-case-study.html"]
     }
   ],
   "recentPrimaryChecks": [

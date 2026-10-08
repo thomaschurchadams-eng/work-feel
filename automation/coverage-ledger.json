@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fintel-ai-search-financial-product-recommendations",
+      "title": "Fintel Study Finds Affiliates Shape AI Financial-Product Recommendations",
+      "url": "/news/fintel-ai-search-financial-product-recommendations.html",
+      "publishedAt": "2026-10-08T07:00:00-04:00",
+      "section": "news",
+      "beat": "ai-search-financial-product-discovery",
+      "functions": ["marketing-growth", "member-service", "risk-compliance", "vendor-management"],
+      "technologies": ["generative-ai", "personalization", "regtech-monitoring"],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing, digital-growth and member-acquisition leaders",
+      "secondaryAudiences": ["member-experience teams", "compliance and legal reviewers", "analytics and vendor-management teams"],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening lead with the concrete AI-search measurement problem. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": ["/news/fcc-tcpa-revoke-all-credit-union-alerts.html", "/news/dort-financial-movemint-personalization-cloud.html"],
+      "sourceTier": 2,
+      "score": 79.4
+    },
+    {
       "id": "credit-union-ai-collections-hardship-treatment-record",
       "title": "A Hardship-Treatment Record for AI-Assisted Credit Union Collections",
       "url": "/insight-credit-union-ai-collections-hardship-treatment-record.html",
@@ -928,7 +949,7 @@
     },
     {
       "id": "raiz-digital-account-opening-case-study",
-      "title": "Raiz Case Study Reports Four-Minute Online Account Opening",
+      "title": "Alkami Reports Raiz Online Account Applications Take Three–Five Minutes",
       "url": "/news/raiz-digital-account-opening-case-study.html",
       "publishedAt": "2026-09-04T07:00:00-04:00",
       "section": "news",

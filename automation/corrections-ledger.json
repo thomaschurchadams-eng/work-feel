@@ -1,6 +1,19 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19",
+  "updatedAt": "2026-10-08T07:00:00-04:00",
   "description": "Append-only public-interest audit trail for substantive updates, corrections and retractions. Routine maintenance remains in Git history.",
-  "entries": []
+  "entries": [
+    {
+      "id": "raiz-online-application-duration-2026-10-08",
+      "articlePath": "news/raiz-digital-account-opening-case-study.html",
+      "articleUrl": "https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html",
+      "type": "correction",
+      "publishedAt": "2026-10-08T07:00:00-04:00",
+      "summary": "The original headline described a four-minute result as online account opening. Alkami's detailed table identifies three–five minutes as the application duration and treats funding and access separately, so the headline was narrowed while the original publication date remained unchanged.",
+      "trigger": "Independent source review after a bounded factual-accuracy handoff.",
+      "sources": [
+        "https://www.alkami.com/resources/client-success/case-study/how-raiz-federal-credit-union-is-building-a-digital-forward-member-experience-with-alkamis-digital-sales-service-platform/"
+      ]
+    }
+  ]
 }

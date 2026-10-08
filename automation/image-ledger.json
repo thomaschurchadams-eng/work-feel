@@ -3,6 +3,28 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fintel-ai-search-financial-product-recommendations",
+      "articleUrl": "/news/fintel-ai-search-financial-product-recommendations.html",
+      "imagePath": "/assets/ai-search-financial-product-recommendations.jpg",
+      "publishedAt": "2026-10-08T07:00:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-mixed-media-3d-still-life",
+      "subject": "ai-search-source-provenance-and-financial-product-recommendations",
+      "composition": "source-signals-pass-through-transparent-answer-prism-to-product-cards",
+      "perspective": "wide-eye-level",
+      "palette": "deep-navy-teal-warm-ivory-muted-coral-brass",
+      "lighting": "focused-analytical-studio",
+      "texture": "frosted-glass-paper-and-metal",
+      "scene": "publication-pages-and-member-search-signals-flow-through-a-transparent-answer-prism-toward-neutral-financial-product-cards",
+      "conceptScore": 94.3,
+      "dimensions": {"width": 1200, "height": 630},
+      "conceptAlternatives": [
+        {"medium": "editorial-paper-cut", "subject": "ai-search-citation-paths", "score": 82.7},
+        {"medium": "architectural-editorial", "subject": "financial-product-discovery-gateway", "score": 81.1}
+      ]
+    },
+    {
       "id": "credit-union-ai-collections-hardship-treatment-record",
       "articleUrl": "/insight-credit-union-ai-collections-hardship-treatment-record.html",
       "imagePath": "/assets/credit-union-ai-collections-hardship-treatment-record.jpg",
