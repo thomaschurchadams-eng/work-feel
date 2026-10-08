@@ -2786,6 +2786,36 @@
       ],
       "summary": "Completed the October 8 bounded operating review after consuming the publisher’s verified Standard data-brief handoff and completed Raiz factual-correction closeout. Today’s article is live, Thursday’s slot is met and the week is 6/8. Published one new source-led Alert from CrowdStrike’s October 7 report on ARTEX and LLM-assisted attacks against South Korean financial organizations, corroborated by Reuters on October 8. The Alert uses the primary CrowdStrike source, states that affected-organization count and attribution remain unconfirmed, gives a specific credit-union security implication, and does not assert a U.S. credit-union compromise. PR #254 changed only assets/app.js and the current October 8 daily outcome; all 56 prior history entries were preserved. Production is READY on fd55fb3daf10f1d86ebd7cd1012c069ee266305b, and the homepage, ticker, archive and article were verified live with no site-origin runtime error. The PR’s verified-operations design job failed on five pre-existing article shell-sync findings unrelated to the Alert; no design maintenance was added. Recent 15 remains 9 News/6 Insights but now spans four formats; marketing-growth rises to 2/15 while risk/compliance remains 15/15 and operations 11/15. Preserve the publisher’s next candidate: AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes. Latest authenticated analytics remains dated October 2; CAI-destination conversion evidence remains unavailable and the goal file remains stale after September 30. The W41 distribution scan was not duplicated. No social post, retry, outreach, spend, new assignment, credential, schedule, permission or policy change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-08T20:39:40.849Z",
+      "actor": "reliability-watch",
+      "runType": "reliability-watch",
+      "trigger": "October 8 reliability check found a failed canonical design-validation job on five published pages after the ARTEX Alert release.",
+      "status": "recovered-validation",
+      "workUnits": {
+        "workflowRunsInspected": 1,
+        "workflowJobsInspected": 1,
+        "staleShellPagesDetected": 5,
+        "staleShellPagesSynchronized": 5,
+        "featureBranchesCreated": 2,
+        "pullRequestsMerged": 1,
+        "designValidationRunsPassed": 1,
+        "previewDeploymentsChecked": 1,
+        "productionDeploymentChecks": 1,
+        "livePublicationChecks": 2,
+        "runtimeErrorChecks": 1,
+        "socialDistributionAttempts": 0,
+        "replacementPostsCreated": 0,
+        "duplicateReservationsCreated": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News production"
+      ],
+      "summary": "Diagnosed CUAI verified operations run 37831538498: its design-checks job failed because five current article pages had stale shared header/footer markup and semantic design roles. The ARTEX Alert changed only assets/app.js and the current daily outcome, so the failure was pre-existing state drift rather than an Alert regression or transient external failure. PR #255 applied the repository's existing deterministic site-design synchronizer to exactly the five reported pages; article claims, dates, URLs, analytics, publication state and social state were unchanged. The canonical design check then passed, the exact-head Vercel Preview was READY, code review completed without findings, and the repair merged as e68e5df8bea8af052b43e2a32f92f217fa9122a1. Vercel Production reached READY on that exact SHA, the Fintel article and October 8 Alerts page returned HTTP 200, and no Production runtime errors were found. Durable prevention: invoke the same design-shell synchronizer or its check in the publisher path before article PR creation so new pages cannot leave canonical shell drift for a later unrelated validation run.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
