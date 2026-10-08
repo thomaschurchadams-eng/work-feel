@@ -8,12 +8,13 @@
   "current": {
     "date": "2026-10-08",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": ["ai-search-and-financial-product-discovery", "fintech-lending-partnerships", "international-bank-workforce", "bank-earnings-and-rates", "global-ai-safety", "macroeconomic-ai-risk", "fraud-policy-and-advocacy", "credit-union-technology-events", "digital-member-service", "member-cybersecurity", "ai-lending-decisioning", "credit-union-data-platforms"],
     "publications": [
-      {"type":"article","classification":"News","title":"Fintel Study Finds Affiliates Shape AI Financial-Product Recommendations","url":"https://creditunionainews.com/news/fintel-ai-search-financial-product-recommendations.html","primaryFunctionalAudience":"Marketing, digital-growth and member-acquisition leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
+      {"type":"article","classification":"News","title":"Fintel Study Finds Affiliates Shape AI Financial-Product Recommendations","url":"https://creditunionainews.com/news/fintel-ai-search-financial-product-recommendations.html","primaryFunctionalAudience":"Marketing, digital-growth and member-acquisition leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+      {"type":"alert","title":"CrowdStrike Finds ARTEX AI Agent in South Korean Financial-Sector Attacks","url":"https://creditunionainews.com/alerts/#crowdstrike-artex-ai-agent-south-korean-finance-attacks"}
     ],
     "rejections": [
       {"title":"CU Denver Partners With Upstart","reason":"partnership announcement without a go-live date or measured outcome, in a lending function already heavily covered this week"},
@@ -28,12 +29,12 @@
       {"title":"Department of Commerce FCU Selects Scienaptic","reason":"vendor-supplied selection without independent outcomes, in a lending function already heavily covered this week"},
       {"title":"CUDX AI-Ready Data Products","reason":"September 29 announcement outside the current News window and a general platform commitment without a shipped product or outcome"}
     ],
-    "status": "article-cycle-complete-with-correction",
+    "status": "article-alert-and-correction-cycle-complete",
     "activeExperimentContext": "October 5 workflow-outcome hook cohort: the published headline and opening lead with the concrete AI-search measurement problem. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "correctionOutcome": {"type":"correction","articleUrl":"https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html","title":"Alkami Reports Raiz Online Account Applications Take Three–Five Minutes","status":"published-with-visible-notice-and-ledger","source":"Alkami case-study table"},
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-08T07:00:00-04:00"
+    "updatedAt": "2026-10-08T15:20:00-04:00"
   },
   "history": [
     {
