@@ -2724,6 +2724,27 @@
       ],
       "summary": "Verified the October 8 article cycle and Raiz factual correction on current main 03e9fd6fe5bfc6a69327605c48141595a597a6ef: Vercel Production is READY on that exact SHA, the new Fintel article and corrected Raiz page return HTTP 200, and no runtime errors were found. The Raiz change preserved the September 4 publication date and URL, updated title/H1/metadata/index references, added a visible October 8 correction notice and public ledger entry, and was accepted in daily-publisher receipt 6058619022. The original dedupe editorial:raiz-application-headline:2026-10-08 nevertheless remained open because completion was reported under a different daily-publisher dedupe; reliability-watch restored the missing same-dedupe closeout. Separately, media-manifest asset short-video-2026-10-08 remains preparationStatus review-blocked with nativeVideo null and productionVerified false. Its approved narration correction is byte-verified, but actual hearing, sentence-boundary certification, splice/caption alignment and full-cut acceptance remain incomplete; existing evidence says no named available hearing-capable owner is proven and Tom's human hearing review is required. No social submission, retry, replacement, schedule change or duplicate was created. Durable prevention: require every correction owner to emit a same-dedupe terminal receipt, and require media plans to name a demonstrably capable reviewer with an acceptance receipt before the target date.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-08T13:03:17.625632+00:00",
+      "actor": "cuai-media-coordinator",
+      "runType": "existing-October8-multimedia-coordination",
+      "status": "October8-target-held;October9-cartoon-ready-for-dated-website-gates;October13-card-andOctober15-scripts-prepared",
+      "workUnits": {
+        "mediaPublished": 0,
+        "newSocialSchedulingAttempts": 0,
+        "newReservations": 0,
+        "creditsConsumed": 0,
+        "newSpeechGenerated": 0,
+        "originalDecisionCardsPrepared": 1,
+        "podcastScriptsPrepared": 1,
+        "shortVideoScriptsAndStoryboardsPrepared": 1,
+        "newSchedulesOrPermissions": 0,
+        "actualPublishedVideosWatched": 0,
+        "industryExamplesWatchedWithSound": 0
+      },
+      "summary": "Fresh-read current main coordinator/policy/manifest/completed publisher/bus/queue/provider receipts/full ledger. Recorded held October8 production target honestly, preserved delivered pre-splice visual candidate and existing103-credit correction; no hearing retry, regeneration, guessed splice or automatic catch-up. Actual Tom hearing acceptance remains the same dependency; coordinator retains assembly. Refreshed independently releasable October9 original cartoon with current-main shell/source/rights/text alternatives and mobile/desktop QA, preserving parent social dedup. Prepared original October13 hardship decision card/accessibility page and distinct October15 podcast/short-video scripts/storyboard from verified existing article/current NCUA/NIST sources, labeled editorial recommendations. No synthesis/model cost/duration certainty claimed; fresh actual provider budget required before consumption. Consumed exact chart sent receipt in place; no provider action/new reservation. Saved owned Library preparation package. PR251, Raiz correction, unrelated production histories, article counts, queues, policies, scopes and schedules preserved.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
