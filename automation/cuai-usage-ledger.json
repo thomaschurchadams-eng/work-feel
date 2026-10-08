@@ -2699,6 +2699,31 @@
       ],
       "summary": "Completed the October 7 bounded operating review after consuming the publisher’s two-article handoff. Both new articles are live and the week is on trajectory at 5/8; the collections/hardship/remediation gap is closed. No new Alert qualified: the FICO workforce/AI change is already today’s full article, official NCUA, FinCEN, CFPB and CISA surfaces showed no newer U.S. credit-union directive or incident, and public reporting on South Korean bank attacks still lacks a U.S. credit-union incident or specific transferable directive. The October 5 FinCEN Alert remains within the 72-hour homepage window and live, so no homepage mutation was needed. Consumed the production-identity transient failure and completed recovery receipts; the existing chart LinkedIn item was reconciled in place as sent with postId 6ac62b4f0ea81feae6a7620f, sentAt 2026-10-07T15:30:29.942Z and duplicate=false, with no retry or replacement. In the latest 15-item portfolio, News/Insight is 9/6 across three formats; risk/compliance and operations remain concentrated while marketing-growth appears once. The next candidate remains AI-assisted marketing attribution, offer suppression and member-consent controls. Latest authenticated analytics remains dated October 2; goals are stale after September 30 and independent CAI-destination conversion evidence remains unavailable. The W41 distribution scan was not duplicated. No outreach, spend, new assignment, publication expansion, credential or policy change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-08T11:48:40.139Z",
+      "actor": "reliability-watch",
+      "runType": "reliability-watch",
+      "trigger": "October 8 reliability check found a completed editorial correction with a stale open handoff and a target-day short-video capability blocker.",
+      "status": "recovered-handoff; degraded-media",
+      "workUnits": {
+        "repositoryStateFilesReviewed": 7,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "livePublicationChecks": 2,
+        "openHandoffsReconciled": 1,
+        "blockedMediaHandoffsVerified": 1,
+        "socialDistributionAttempts": 0,
+        "replacementPostsCreated": 0,
+        "duplicateReservationsCreated": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News production"
+      ],
+      "summary": "Verified the October 8 article cycle and Raiz factual correction on current main 03e9fd6fe5bfc6a69327605c48141595a597a6ef: Vercel Production is READY on that exact SHA, the new Fintel article and corrected Raiz page return HTTP 200, and no runtime errors were found. The Raiz change preserved the September 4 publication date and URL, updated title/H1/metadata/index references, added a visible October 8 correction notice and public ledger entry, and was accepted in daily-publisher receipt 6058619022. The original dedupe editorial:raiz-application-headline:2026-10-08 nevertheless remained open because completion was reported under a different daily-publisher dedupe; reliability-watch restored the missing same-dedupe closeout. Separately, media-manifest asset short-video-2026-10-08 remains preparationStatus review-blocked with nativeVideo null and productionVerified false. Its approved narration correction is byte-verified, but actual hearing, sentence-boundary certification, splice/caption alignment and full-cut acceptance remain incomplete; existing evidence says no named available hearing-capable owner is proven and Tom's human hearing review is required. No social submission, retry, replacement, schedule change or duplicate was created. Durable prevention: require every correction owner to emit a same-dedupe terminal receipt, and require media plans to name a demonstrably capable reviewer with an acceptance receipt before the target date.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
