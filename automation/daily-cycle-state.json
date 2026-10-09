@@ -8,13 +8,14 @@
   "current": {
     "date": "2026-10-09",
     "fullArticleCount": 2,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": ["bsa-aml-and-card-risk", "credit-union-member-facing-ai", "enterprise-ai-agents", "financial-sector-cybersecurity", "deepfake-and-finance-fraud", "fraud-operations-agents", "agentic-commerce-identity", "bank-earnings-and-rates", "macroeconomic-outlook", "ai-company-finance", "ai-vendor-pricing", "credit-union-payment-controls"],
     "publications": [
       {"type":"article","classification":"News","title":"OCC Fines American Express $350 Million Over AML Program Failures","url":"https://creditunionainews.com/news/american-express-aml-enforcement.html","primaryFunctionalAudience":"BSA/AML, card-risk, internal-audit and board leaders","promotionPriority":"High","socialDecision":"scheduled-2026-10-09-12:30-et-verified-receipt"},
-      {"type":"article","classification":"News","title":"PSECU Plans Gemini-Powered Financial Guidance for Members","url":"https://creditunionainews.com/news/psecu-gemini-member-guidance.html","primaryFunctionalAudience":"Member-experience, digital-banking, product and risk leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
+      {"type":"article","classification":"News","title":"PSECU Plans Gemini-Powered Financial Guidance for Members","url":"https://creditunionainews.com/news/psecu-gemini-member-guidance.html","primaryFunctionalAudience":"Member-experience, digital-banking, product and risk leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+      {"type":"alert","title":"NCUA Proposes Stablecoin Activity Reporting on Form 5300","url":"https://creditunionainews.com/alerts/#ncua-proposes-stablecoin-activity-reporting-form-5300","source":"Federal Register","sourceUrl":"https://www.federalregister.gov/d/2026-20729","operatingImplication":"Inventory stablecoin custody, cryptographic-key control, issuer exposure and balance-sheet data; assign authoritative reporting owners and test proposed quarterly data lineage before the March 31, 2027 report date."}
     ],
     "rejections": [
       {"title":"Google Cloud Introduces a Universal Gemini Agent for Work","reason":"broad enterprise launch and financial-services preview with less direct credit-union value than the named PSECU deployment"},
@@ -28,11 +29,11 @@
       {"title":"AI Model Vendors Intensify Price Competition","reason":"general procurement context below the editorial score threshold and without a discrete credit-union operating event"},
       {"title":"Credit Unions Review Treasury Improper-Payment Controls","reason":"routine trade-association background below the score threshold and without a new directive"}
     ],
-    "status": "two-article-cycle-complete",
+    "status": "two-article-plus-alert-cycle-complete",
     "activeExperimentContext": "October 5 workflow-outcome hook cohort: both packages lead with a completed enforcement outcome or controlled member-guidance rollout and translate it into a reviewable credit-union workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-09T07:35:00-04:00"
+    "updatedAt": "2026-10-09T15:58:00-04:00"
   },
   "history": [
     {
