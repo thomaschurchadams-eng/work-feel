@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Stablecoin Reporting',
+      headline: 'NCUA Proposes Stablecoin Activity Reporting on Form 5300',
+      summary:
+        'The NCUA published an October 9 proposal to revise Form 5300 by adding a new Schedule J for payment-stablecoin activity. The schedule would add 26 accounts: eight for custody of permitted payment stablecoin issuer reserve assets, nine for cryptographic-key custody and control, five for direct exposure to permitted issuers, and four for payment stablecoins held on a credit union’s balance sheet. The revisions are proposed to take effect with the March 31, 2027 report date, and the agency requested public comment.',
+      impact:
+        'Credit unions with stablecoin custody, key-control, issuer-exposure or balance-sheet activity should inventory the proposed fields, identify authoritative data sources and owners, and test whether records can support quarterly reporting. Compliance, finance, operations and information-security teams should review definitions and data lineage together; institutions may also assess whether a comment on clarity, burden or implementation is warranted during the 60-day comment period.',
+      sourceName: 'Federal Register',
+      sourceUrl:
+        'https://www.federalregister.gov/d/2026-20729',
+      date: 'Oct 9, 2026',
+      slug: 'ncua-proposes-stablecoin-activity-reporting-form-5300'
+    },
+    {
       label: 'Agentic Cyberattack',
       headline: 'CrowdStrike Finds ARTEX AI Agent in South Korean Financial-Sector Attacks',
       summary:
