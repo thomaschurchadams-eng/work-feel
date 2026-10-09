@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "american-express-aml-enforcement",
+      "title": "OCC Fines American Express $350 Million Over AML Program Failures",
+      "url": "/news/american-express-aml-enforcement.html",
+      "publishedAt": "2026-10-09T07:05:00-04:00",
+      "section": "news",
+      "beat": "bsa-aml-card-risk-and-transaction-monitoring",
+      "functions": ["risk-compliance", "operations", "it-data-cybersecurity"],
+      "technologies": ["regtech-monitoring"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "BSA/AML, card-risk, internal-audit and board leaders",
+      "secondaryAudiences": ["fraud and financial-crimes teams", "technology and data leaders", "operations and training leaders"],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-priority-pending-live-verification",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline leads with the completed enforcement action and the opening converts it into a product-risk reconciliation test. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": ["/news/genpact-agentic-ai-aml-investigations.html", "/insight-credit-union-ai-board-reporting-decision-evidence.html"],
+      "sourceTier": 1,
+      "score": 76.4
+    },
+    {
       "id": "fintel-ai-search-financial-product-recommendations",
       "title": "Fintel Study Finds Affiliates Shape AI Financial-Product Recommendations",
       "url": "/news/fintel-ai-search-financial-product-recommendations.html",

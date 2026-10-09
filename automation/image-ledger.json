@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "american-express-aml-enforcement",
+      "articleUrl": "/news/american-express-aml-enforcement.html",
+      "imagePath": "/assets/american-express-aml-enforcement.jpg",
+      "publishedAt": "2026-10-09T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "risk-and-security",
+      "composition": "diagonal-motion",
+      "perspective": "isometric",
+      "palette": "amber-charcoal",
+      "lighting": "cinematic-side-light",
+      "texture": "polished-metal",
+      "scene": "card-transaction-streams-pass-monitoring-control-gates-while-warning-paths-remain-open",
+      "conceptScore": 98.6,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "ad59009a01eb9891e79bc78a8d5e0a6289c709034469911bf526e6edf1d5f0ac",
+      "conceptAlternatives": [
+        {"medium": "tactile-paper-cut", "subject": "documents-and-controls", "score": 91.6},
+        {"medium": "architectural-isometric", "subject": "architecture-and-infrastructure", "score": 90.4}
+      ]
+    },
+    {
       "id": "fintel-ai-search-financial-product-recommendations",
       "articleUrl": "/news/fintel-ai-search-financial-product-recommendations.html",
       "imagePath": "/assets/ai-search-financial-product-recommendations.jpg",

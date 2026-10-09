@@ -6,37 +6,65 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-08",
+    "date": "2026-10-09",
     "fullArticleCount": 1,
-    "alertCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
-    "beatsSearched": ["ai-search-and-financial-product-discovery", "fintech-lending-partnerships", "international-bank-workforce", "bank-earnings-and-rates", "global-ai-safety", "macroeconomic-ai-risk", "fraud-policy-and-advocacy", "credit-union-technology-events", "digital-member-service", "member-cybersecurity", "ai-lending-decisioning", "credit-union-data-platforms"],
+    "beatsSearched": ["bsa-aml-and-card-risk", "credit-union-member-facing-ai", "enterprise-ai-agents", "financial-sector-cybersecurity", "deepfake-and-finance-fraud", "fraud-operations-agents", "agentic-commerce-identity", "bank-earnings-and-rates", "macroeconomic-outlook", "ai-company-finance", "ai-vendor-pricing", "credit-union-payment-controls"],
     "publications": [
-      {"type":"article","classification":"News","title":"Fintel Study Finds Affiliates Shape AI Financial-Product Recommendations","url":"https://creditunionainews.com/news/fintel-ai-search-financial-product-recommendations.html","primaryFunctionalAudience":"Marketing, digital-growth and member-acquisition leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
-      {"type":"alert","title":"CrowdStrike Finds ARTEX AI Agent in South Korean Financial-Sector Attacks","url":"https://creditunionainews.com/alerts/#crowdstrike-artex-ai-agent-south-korean-finance-attacks"}
+      {"type":"article","classification":"News","title":"OCC Fines American Express $350 Million Over AML Program Failures","url":"https://creditunionainews.com/news/american-express-aml-enforcement.html","primaryFunctionalAudience":"BSA/AML, card-risk, internal-audit and board leaders","promotionPriority":"High","socialDecision":"eligible-high-priority-pending-live-verification"}
     ],
     "rejections": [
-      {"title":"CU Denver Partners With Upstart","reason":"partnership announcement without a go-live date or measured outcome, in a lending function already heavily covered this week"},
-      {"title":"HSBC Plans Wealth-Unit Job Cuts","reason":"foreign-bank workforce development and near-duplicate of the October 7 FICO restructuring story"},
-      {"title":"U.S. Bank Earnings and Rate Outlook","reason":"forecast commentary rather than a completed event or authoritative operating change"},
-      {"title":"Singapore AI Forum Bubble and Safety Warnings","reason":"broad global conference commentary without a specific U.S. credit-union operating decision"},
-      {"title":"IMF AI and Debt Risk Analysis","reason":"macroeconomic analysis without an immediate credit-union implementation requirement"},
-      {"title":"America's Credit Unions DOJ Fraud Listening Session","reason":"advocacy and stakeholder input without a directive or completed operating outcome"},
-      {"title":"GoWest MAXX Technology Remarks","reason":"event commentary without a new verified operating fact"},
-      {"title":"Royal Credit Union Intelligent Front Door Concept","reason":"proposal-stage concept without a deployed or independently verified implementation"},
-      {"title":"R1CU Member Shield Concept","reason":"proposal-stage concept without a deployed or independently verified implementation"},
-      {"title":"Department of Commerce FCU Selects Scienaptic","reason":"vendor-supplied selection without independent outcomes, in a lending function already heavily covered this week"},
-      {"title":"CUDX AI-Ready Data Products","reason":"September 29 announcement outside the current News window and a general platform commitment without a shipped product or outcome"}
+      {"title":"Google Cloud Introduces a Universal Gemini Agent for Work","reason":"broad enterprise launch and financial-services preview with less direct credit-union value than the named PSECU deployment"},
+      {"title":"AI Agent Lowers the Barrier for Financial-Sector Cyberattacks","reason":"duplicate of the October 8 source-led Alert on the same ARTEX campaign"},
+      {"title":"Finance Leaders Report Rising Deepfake Exposure","reason":"vendor survey of broad corporate-finance leaders without a named credit-union implementation or independently measured outcome"},
+      {"title":"Feedzai Launches a Fraud-Operations AI Agent","reason":"vendor launch below the source-tier gate and without a named credit-union deployment"},
+      {"title":"Vendors Add Identity Controls for Agentic Commerce","reason":"vendor announcements below the source-tier gate and without a named credit-union deployment"},
+      {"title":"Large Banks Prepare to Report Third-Quarter Earnings","reason":"forecast commentary rather than a completed event or authoritative operating change"},
+      {"title":"Global Growth Outlook Points to Slower Expansion","reason":"macroeconomic forecast without a specific credit-union operating decision"},
+      {"title":"OpenAI Revenue Outlook Raises New Funding Questions","reason":"corporate-finance development without a direct credit-union implementation consequence"},
+      {"title":"AI Model Vendors Intensify Price Competition","reason":"general procurement context below the editorial score threshold and without a discrete credit-union operating event"},
+      {"title":"Credit Unions Review Treasury Improper-Payment Controls","reason":"routine trade-association background below the score threshold and without a new directive"}
     ],
-    "status": "article-alert-and-correction-cycle-complete",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the published headline and opening lead with the concrete AI-search measurement problem. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "first-article-package-complete-second-slot-pending",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline leads with the completed enforcement action and the opening converts it into a product-risk reconciliation test. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
-    "correctionOutcome": {"type":"correction","articleUrl":"https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html","title":"Alkami Reports Raiz Online Account Applications Take Three–Five Minutes","status":"published-with-visible-notice-and-ledger","source":"Alkami case-study table"},
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-08T15:20:00-04:00"
+    "updatedAt": "2026-10-09T07:05:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-08",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": ["ai-search-and-financial-product-discovery", "fintech-lending-partnerships", "international-bank-workforce", "bank-earnings-and-rates", "global-ai-safety", "macroeconomic-ai-risk", "fraud-policy-and-advocacy", "credit-union-technology-events", "digital-member-service", "member-cybersecurity", "ai-lending-decisioning", "credit-union-data-platforms"],
+      "publications": [
+        {"type":"article","classification":"News","title":"Fintel Study Finds Affiliates Shape AI Financial-Product Recommendations","url":"https://creditunionainews.com/news/fintel-ai-search-financial-product-recommendations.html","primaryFunctionalAudience":"Marketing, digital-growth and member-acquisition leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+        {"type":"alert","title":"CrowdStrike Finds ARTEX AI Agent in South Korean Financial-Sector Attacks","url":"https://creditunionainews.com/alerts/#crowdstrike-artex-ai-agent-south-korean-finance-attacks"}
+      ],
+      "rejections": [
+        {"title":"CU Denver Partners With Upstart","reason":"partnership announcement without a go-live date or measured outcome, in a lending function already heavily covered this week"},
+        {"title":"HSBC Plans Wealth-Unit Job Cuts","reason":"foreign-bank workforce development and near-duplicate of the October 7 FICO restructuring story"},
+        {"title":"U.S. Bank Earnings and Rate Outlook","reason":"forecast commentary rather than a completed event or authoritative operating change"},
+        {"title":"Singapore AI Forum Bubble and Safety Warnings","reason":"broad global conference commentary without a specific U.S. credit-union operating decision"},
+        {"title":"IMF AI and Debt Risk Analysis","reason":"macroeconomic analysis without an immediate credit-union implementation requirement"},
+        {"title":"America's Credit Unions DOJ Fraud Listening Session","reason":"advocacy and stakeholder input without a directive or completed operating outcome"},
+        {"title":"GoWest MAXX Technology Remarks","reason":"event commentary without a new verified operating fact"},
+        {"title":"Royal Credit Union Intelligent Front Door Concept","reason":"proposal-stage concept without a deployed or independently verified implementation"},
+        {"title":"R1CU Member Shield Concept","reason":"proposal-stage concept without a deployed or independently verified implementation"},
+        {"title":"Department of Commerce FCU Selects Scienaptic","reason":"vendor-supplied selection without independent outcomes, in a lending function already heavily covered this week"},
+        {"title":"CUDX AI-Ready Data Products","reason":"September 29 announcement outside the current News window and a general platform commitment without a shipped product or outcome"}
+      ],
+      "status": "article-alert-and-correction-cycle-complete",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the published headline and opening lead with the concrete AI-search measurement problem. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "recoveredMissedHighArticle": null,
+      "correctionOutcome": {"type":"correction","articleUrl":"https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html","title":"Alkami Reports Raiz Online Account Applications Take Three–Five Minutes","status":"published-with-visible-notice-and-ledger","source":"Alkami case-study table"},
+      "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
+      "updatedAt": "2026-10-08T15:20:00-04:00"
+    },
     {
       "date": "2026-10-07",
       "fullArticleCount": 2,
