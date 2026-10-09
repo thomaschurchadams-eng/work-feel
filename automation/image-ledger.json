@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "psecu-gemini-member-guidance",
+      "articleUrl": "/news/psecu-gemini-member-guidance.html",
+      "imagePath": "/assets/psecu-gemini-member-guidance.jpg",
+      "publishedAt": "2026-10-09T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "cinematic-conceptual",
+      "subject": "member-interaction",
+      "composition": "layered-depth",
+      "perspective": "eye-level",
+      "palette": "navy-teal",
+      "lighting": "soft-daylight",
+      "texture": "frosted-glass",
+      "scene": "member-reviews-ai-generated-financial-guidance-with-consent-evidence-and-human-action-controls-visible",
+      "conceptScore": 99.1,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "3066c067c268d9d902153d0dc26cbd5b07967b57b858acfea5af4329ced34425",
+      "conceptAlternatives": [
+        {"medium": "editorial-photography", "subject": "member-digital-guidance", "score": 92.4},
+        {"medium": "editorial-illustration", "subject": "ai-guidance-controls", "score": 91.2}
+      ]
+    },
+    {
       "id": "american-express-aml-enforcement",
       "articleUrl": "/news/american-express-aml-enforcement.html",
       "imagePath": "/assets/american-express-aml-enforcement.jpg",
