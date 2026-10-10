@@ -2560,3 +2560,15 @@ body main .latest-alert-shell h2.section-title { font-size:clamp(1.7rem,3vw,2.6r
 body main a.btn.btn-primary, body main a.btn.btn-primary:hover { color:var(--white); }
 
 body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { color:#dce4e9; }
+
+/* Secondary process disclosure stays readable, including at text zoom. */
+.page-prose main #editorial-process p {
+  font-size: .875rem;
+  line-height: 1.65;
+  color: #475569;
+}
+.page-prose main #editorial-process a {
+  color: #173d65;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
