@@ -16,6 +16,20 @@ on:
       - 'package*.json'
       - '.github/workflows/cuai-operations.yml'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Existing operations or read-only GA4 diagnostic
+        type: choice
+        options: [operations, ga4-readonly]
+        default: operations
+      diagnosticStart:
+        description: Read-only diagnostic inclusive start (YYYY-MM-DD, max 28 days)
+        type: string
+        default: ''
+      diagnosticEnd:
+        description: Read-only diagnostic inclusive end (at least two UTC days ago)
+        type: string
+        default: ''
   schedule:
     # Post-slot reconciliation sweep. 17:45 UTC is after the latest approved
     # 12:30 p.m. ET company-page slot year-round, including DST transitions.
@@ -87,6 +101,9 @@ jobs:
       - name: Verify authorization and process bounded operations
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          CUAI_OPERATION_MODE: ${{ inputs.mode }}
+          CUAI_DIAGNOSTIC_START: ${{ inputs.diagnosticStart }}
+          CUAI_DIAGNOSTIC_END: ${{ inputs.diagnosticEnd }}
         run: node scripts/run-secure-operations.cjs
       - name: Preserve outcome receipts
         if: always()
