@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-fcra-liability-house-vote",
+      "title": "Credit Union Coalition Pushes House Vote on FCRA Liability Caps",
+      "url": "/news/credit-union-fcra-liability-house-vote.html",
+      "publishedAt": "2026-10-12T07:05:00-04:00",
+      "section": "news",
+      "beat": "consumer-reporting-liability-and-legislation",
+      "functions": ["risk-compliance", "lending-collections", "board-strategy"],
+      "technologies": ["industry-development"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Compliance, consumer-lending, legal and credit-reporting leaders",
+      "secondaryAudiences": ["board and strategy leaders", "member-service and dispute teams", "vendor-management leaders"],
+      "maturity": "breaking",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI legislative story. The October 12 early review remains evidence-limited; no mature comparable performance claim was used.",
+      "internalLinkTargets": ["/news/fico-ai-restructuring-credit-score-competition.html", "/news/fannie-freddie-vantagescore-credit-union-mortgages.html"],
+      "sourceTier": 1,
+      "score": 81.2
+    },
+    {
       "id": "psecu-gemini-member-guidance",
       "title": "PSECU Plans Gemini-Powered Financial Guidance for Members",
       "url": "/news/psecu-gemini-member-guidance.html",

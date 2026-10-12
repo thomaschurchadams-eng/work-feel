@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-fcra-liability-house-vote",
+      "articleUrl": "/news/credit-union-fcra-liability-house-vote.html",
+      "imagePath": "/assets/credit-union-fcra-liability-house-vote.jpg",
+      "publishedAt": "2026-10-12T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "ink-and-linocut",
+      "subject": "documents-and-controls",
+      "composition": "asymmetric-editorial",
+      "perspective": "overhead",
+      "palette": "burgundy-sand",
+      "lighting": "graphic-flat-light",
+      "texture": "newsprint-grain",
+      "scene": "credit-report-and-legal-documents-approach-a-congressional-vote-through-balanced-review-scales",
+      "conceptScore": 98.9,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "facd9d73aa9ee085c1402c1261d809d1c7ce80004157b8582c12ee33d67acc58",
+      "conceptAlternatives": [
+        {"medium": "architectural-isometric", "subject": "legislative-process-and-controls", "score": 91.8},
+        {"medium": "tactile-paper-cut", "subject": "consumer-reporting-documents", "score": 90.7}
+      ]
+    },
+    {
       "id": "psecu-gemini-member-guidance",
       "articleUrl": "/news/psecu-gemini-member-guidance.html",
       "imagePath": "/assets/psecu-gemini-member-guidance.jpg",

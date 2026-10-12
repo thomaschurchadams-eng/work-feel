@@ -1,14 +1,24 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-10-09T07:35:00-04:00",
+  "lastStandardRun": "2026-10-12T07:05:00-04:00",
   "lastBreakingRun": "2026-10-09T07:05:00-04:00",
   "lastPublishedArticle": {
-    "title": "PSECU Plans Gemini-Powered Financial Guidance for Members",
-    "url": "https://creditunionainews.com/news/psecu-gemini-member-guidance.html",
-    "publishedAt": "2026-10-09T07:35:00-04:00",
+    "title": "Credit Union Coalition Pushes House Vote on FCRA Liability Caps",
+    "url": "https://creditunionainews.com/news/credit-union-fcra-liability-house-vote.html",
+    "publishedAt": "2026-10-12T07:05:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {"date":"2026-10-12","headline":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud and Raiz coverage area"},
+    {"date":"2026-10-12","headline":"Delfi Launches Risk and Return Benchmark for Credit Unions","reason":"vendor launch without independently measured operating results and near-duplicate of recent Delfi coverage"},
+    {"date":"2026-10-12","headline":"PenFed Launches Defender Rewards Credit Card","reason":"product promotion without a material technology, regulatory or system-wide operating change"},
+    {"date":"2026-10-12","headline":"TransUnion Launches First Look Mortgage Tool","reason":"vendor launch without a named credit-union deployment or independently measured borrower outcome"},
+    {"date":"2026-10-12","headline":"Revolut Expands Proprietary AI Models","reason":"international fintech development with limited direct U.S. credit-union consequence"},
+    {"date":"2026-10-12","headline":"UFCU Names Digital Strategy Vice President","reason":"routine personnel announcement without a new implementation or measurable operating outcome"},
+    {"date":"2026-10-12","headline":"OnPoint Opens New Branch","reason":"local branch expansion without a system-wide operating implication"},
+    {"date":"2026-10-12","headline":"Hughes Launches Affinity Debit Cards","reason":"member-promotion announcement without a consequential operating or technology change"},
+    {"date":"2026-10-12","headline":"Alkami Promotes AI Webinar for Credit Unions","reason":"event promotion rather than a completed event, directive or implementation"},
+    {"date":"2026-10-12","headline":"Google Raises Employee Data Acquisition Concerns","reason":"general enterprise issue without a concrete credit-union operating consequence"},
     {"date":"2026-10-09","headline":"Google Cloud Introduces a Universal Gemini Agent for Work","reason":"broad enterprise launch and financial-services preview with less direct credit-union value than the named PSECU deployment"},
     {"date":"2026-10-09","headline":"AI Agent Lowers the Barrier for Financial-Sector Cyberattacks","reason":"duplicate of the October 8 source-led Alert on the same ARTEX campaign"},
     {"date":"2026-10-09","headline":"Finance Leaders Report Rising Deepfake Exposure","reason":"vendor survey of broad corporate-finance leaders without a named credit-union implementation or independently measured outcome"},

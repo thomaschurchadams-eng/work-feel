@@ -6,36 +6,64 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-09",
-    "fullArticleCount": 2,
-    "alertCount": 1,
+    "date": "2026-10-12",
+    "fullArticleCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
-    "beatsSearched": ["bsa-aml-and-card-risk", "credit-union-member-facing-ai", "enterprise-ai-agents", "financial-sector-cybersecurity", "deepfake-and-finance-fraud", "fraud-operations-agents", "agentic-commerce-identity", "bank-earnings-and-rates", "macroeconomic-outlook", "ai-company-finance", "ai-vendor-pricing", "credit-union-payment-controls"],
+    "beatsSearched": ["consumer-reporting-and-litigation", "housing-affordability-and-cusos", "fraud-analytics", "alm-and-balance-sheet", "credit-union-products", "mortgage-technology", "fintech-competition", "credit-union-leadership", "branch-and-retail-delivery", "member-affinity-products", "credit-union-events", "employee-data-and-ai"],
     "publications": [
-      {"type":"article","classification":"News","title":"OCC Fines American Express $350 Million Over AML Program Failures","url":"https://creditunionainews.com/news/american-express-aml-enforcement.html","primaryFunctionalAudience":"BSA/AML, card-risk, internal-audit and board leaders","promotionPriority":"High","socialDecision":"scheduled-2026-10-09-12:30-et-verified-receipt"},
-      {"type":"article","classification":"News","title":"PSECU Plans Gemini-Powered Financial Guidance for Members","url":"https://creditunionainews.com/news/psecu-gemini-member-guidance.html","primaryFunctionalAudience":"Member-experience, digital-banking, product and risk leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
-      {"type":"alert","title":"NCUA Proposes Stablecoin Activity Reporting on Form 5300","url":"https://creditunionainews.com/alerts/#ncua-proposes-stablecoin-activity-reporting-form-5300","source":"Federal Register","sourceUrl":"https://www.federalregister.gov/d/2026-20729","operatingImplication":"Inventory stablecoin custody, cryptographic-key control, issuer exposure and balance-sheet data; assign authoritative reporting owners and test proposed quarterly data lineage before the March 31, 2027 report date."}
+      {"type":"article","classification":"News","title":"Credit Union Coalition Pushes House Vote on FCRA Liability Caps","url":"https://creditunionainews.com/news/credit-union-fcra-liability-house-vote.html","primaryFunctionalAudience":"Compliance, consumer-lending, legal and credit-reporting leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
     ],
     "rejections": [
-      {"title":"Google Cloud Introduces a Universal Gemini Agent for Work","reason":"broad enterprise launch and financial-services preview with less direct credit-union value than the named PSECU deployment"},
-      {"title":"AI Agent Lowers the Barrier for Financial-Sector Cyberattacks","reason":"duplicate of the October 8 source-led Alert on the same ARTEX campaign"},
-      {"title":"Finance Leaders Report Rising Deepfake Exposure","reason":"vendor survey of broad corporate-finance leaders without a named credit-union implementation or independently measured outcome"},
-      {"title":"Feedzai Launches a Fraud-Operations AI Agent","reason":"vendor launch below the source-tier gate and without a named credit-union deployment"},
-      {"title":"Vendors Add Identity Controls for Agentic Commerce","reason":"vendor announcements below the source-tier gate and without a named credit-union deployment"},
-      {"title":"Large Banks Prepare to Report Third-Quarter Earnings","reason":"forecast commentary rather than a completed event or authoritative operating change"},
-      {"title":"Global Growth Outlook Points to Slower Expansion","reason":"macroeconomic forecast without a specific credit-union operating decision"},
-      {"title":"OpenAI Revenue Outlook Raises New Funding Questions","reason":"corporate-finance development without a direct credit-union implementation consequence"},
-      {"title":"AI Model Vendors Intensify Price Competition","reason":"general procurement context below the editorial score threshold and without a discrete credit-union operating event"},
-      {"title":"Credit Unions Review Treasury Improper-Payment Controls","reason":"routine trade-association background below the score threshold and without a new directive"}
+      {"title":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud and Raiz coverage area"},
+      {"title":"Delfi Launches Risk and Return Benchmark for Credit Unions","reason":"vendor launch without independently measured operating results and near-duplicate of recent Delfi coverage"},
+      {"title":"PenFed Launches Defender Rewards Credit Card","reason":"product promotion without a material technology, regulatory or system-wide operating change"},
+      {"title":"TransUnion Launches First Look Mortgage Tool","reason":"vendor launch without a named credit-union deployment or independently measured borrower outcome"},
+      {"title":"Revolut Expands Proprietary AI Models","reason":"international fintech development with limited direct U.S. credit-union consequence"},
+      {"title":"UFCU Names Digital Strategy Vice President","reason":"routine personnel announcement without a new implementation or measurable operating outcome"},
+      {"title":"OnPoint Opens New Branch","reason":"local branch expansion without a system-wide operating implication"},
+      {"title":"Hughes Launches Affinity Debit Cards","reason":"member-promotion announcement without a consequential operating or technology change"},
+      {"title":"Alkami Promotes AI Webinar for Credit Unions","reason":"event promotion rather than a completed event, directive or implementation"},
+      {"title":"Google Raises Employee Data Acquisition Concerns","reason":"general enterprise issue without a concrete credit-union operating consequence"}
     ],
-    "status": "two-article-plus-alert-cycle-complete",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: both packages lead with a completed enforcement outcome or controlled member-guidance rollout and translate it into a reviewable credit-union workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "one-article-cycle-in-progress",
+    "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI legislative story. The October 12 early review remains evidence-limited; no mature comparable performance claim was used in selection or framing.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-09T15:58:00-04:00"
+    "updatedAt": "2026-10-12T07:05:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-09",
+      "fullArticleCount": 2,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": ["bsa-aml-and-card-risk", "credit-union-member-facing-ai", "enterprise-ai-agents", "financial-sector-cybersecurity", "deepfake-and-finance-fraud", "fraud-operations-agents", "agentic-commerce-identity", "bank-earnings-and-rates", "macroeconomic-outlook", "ai-company-finance", "ai-vendor-pricing", "credit-union-payment-controls"],
+      "publications": [
+        {"type":"article","classification":"News","title":"OCC Fines American Express $350 Million Over AML Program Failures","url":"https://creditunionainews.com/news/american-express-aml-enforcement.html","primaryFunctionalAudience":"BSA/AML, card-risk, internal-audit and board leaders","promotionPriority":"High","socialDecision":"scheduled-2026-10-09-12:30-et-verified-receipt"},
+        {"type":"article","classification":"News","title":"PSECU Plans Gemini-Powered Financial Guidance for Members","url":"https://creditunionainews.com/news/psecu-gemini-member-guidance.html","primaryFunctionalAudience":"Member-experience, digital-banking, product and risk leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+        {"type":"alert","title":"NCUA Proposes Stablecoin Activity Reporting on Form 5300","url":"https://creditunionainews.com/alerts/#ncua-proposes-stablecoin-activity-reporting-form-5300","source":"Federal Register","sourceUrl":"https://www.federalregister.gov/d/2026-20729","operatingImplication":"Inventory stablecoin custody, cryptographic-key control, issuer exposure and balance-sheet data; assign authoritative reporting owners and test proposed quarterly data lineage before the March 31, 2027 report date."}
+      ],
+      "rejections": [
+        {"title":"Google Cloud Introduces a Universal Gemini Agent for Work","reason":"broad enterprise launch and financial-services preview with less direct credit-union value than the named PSECU deployment"},
+        {"title":"AI Agent Lowers the Barrier for Financial-Sector Cyberattacks","reason":"duplicate of the October 8 source-led Alert on the same ARTEX campaign"},
+        {"title":"Finance Leaders Report Rising Deepfake Exposure","reason":"vendor survey of broad corporate-finance leaders without a named credit-union implementation or independently measured outcome"},
+        {"title":"Feedzai Launches a Fraud-Operations AI Agent","reason":"vendor launch below the source-tier gate and without a named credit-union deployment"},
+        {"title":"Vendors Add Identity Controls for Agentic Commerce","reason":"vendor announcements below the source-tier gate and without a named credit-union deployment"},
+        {"title":"Large Banks Prepare to Report Third-Quarter Earnings","reason":"forecast commentary rather than a completed event or authoritative operating change"},
+        {"title":"Global Growth Outlook Points to Slower Expansion","reason":"macroeconomic forecast without a specific credit-union operating decision"},
+        {"title":"OpenAI Revenue Outlook Raises New Funding Questions","reason":"corporate-finance development without a direct credit-union implementation consequence"},
+        {"title":"AI Model Vendors Intensify Price Competition","reason":"general procurement context below the editorial score threshold and without a discrete credit-union operating event"},
+        {"title":"Credit Unions Review Treasury Improper-Payment Controls","reason":"routine trade-association background below the score threshold and without a new directive"}
+      ],
+      "status": "two-article-plus-alert-cycle-complete",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: both packages lead with a completed enforcement outcome or controlled member-guidance rollout and translate it into a reviewable credit-union workflow. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
+      "updatedAt": "2026-10-09T15:58:00-04:00"
+    },
     {
       "date": "2026-10-08",
       "fullArticleCount": 1,
