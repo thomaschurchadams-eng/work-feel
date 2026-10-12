@@ -182,6 +182,14 @@
       ],
       "status": "research-only-no-production-authorization",
       "owner": "existing CUAI media coordinator / current reference-review worker",
+      "outcomeCheck": {
+        "acceptedDirection": "Explore a visible AI-presenter news opening, subject to existing rights, disclosure, hearing and editorial gates.",
+        "latestArtifact": "The October 12 media handoff records a separate caption-led silent short-video review alternative for October 15; it is local and unpublished (automation/reports/cuai-media-coordination-2026-10-12.json).",
+        "acceptanceGap": "Text-led silent cards do not demonstrate the accepted visible-presenter direction. The separate alternative is not a substitute or presenter acceptance receipt.",
+        "nextStep": "The existing media coordinator should compare each candidate with this direction, explain divergence, and propose the smallest permitted presenter-compatible review path using verified provider, rights and hearing evidence; carry out only steps already authorized.",
+        "acceptanceEvidence": "A reviewable presenter treatment with permitted rights, disclosure, source fidelity, accessibility and hearing/lip-sync QA, followed by Tom’s editorial acceptance before any production use.",
+        "deferredTrigger": "Permitted provider route, rights and hearing-capable review evidence become available; unresolved gates stay blocked."
+      },
       "result": "Idea recorded only. No avatar or presenter asset created; no provider credits used, no schedule/executor change, no publication.",
       "rollback": "Not applicable: no production treatment or asset exists. Retain or close the research candidate after user review.",
       "referenceUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0",
@@ -354,3 +362,4 @@
     }
   ]
 }
+
