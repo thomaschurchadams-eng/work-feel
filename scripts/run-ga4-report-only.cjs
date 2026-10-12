@@ -16,7 +16,7 @@ async function run({ env = process.env, fetcher = fetch, save = () => {} } = {})
   const invoke = async (route, body) => {
     const response = await fetcher(SITE + '/api/' + route, { method: 'POST', redirect: 'error', headers: { Authorization: 'Bearer ' + value, 'Content-Type': 'application/json' }, body: JSON.stringify({ ...body, commitSha: sha }), signal: AbortSignal.timeout(route === 'ga4-metrics' ? 240000 : 10000) });
     const data = await response.json();
-    if (!response.ok || !data.ok) throw Error('report_request_failed_' + response.status);
+    if (!response.ok || (!data.ok && !(route === 'ga4-metrics' && data.status === 'unavailable' && data.propertyId === '520110560' && data.reports && typeof data.reports === 'object'))) throw Error('report_request_failed_' + response.status);
     return data;
   };
   const health = await invoke('operations-health', {});

@@ -29,11 +29,11 @@ test('compatibility evidence fails closed on omissions; partial failures preserv
 test('unknown landing paths and hosts never reach persisted aggregates',()=>{
   assert.deepEqual(safeRows([{landingPage:'/reader@example.com',hostName:'private-host',sessions:2},{landingPage:'/',hostName:'creditunionainews.com'}]),[{landingPage:'(unrecognized path withheld)',hostName:'(other hostname withheld)',sessions:2},{landingPage:'/',hostName:'creditunionainews.com'}]);
 });
-async function runnerFixture({health={},failure='',invalidDates=false}={}) {
+async function runnerFixture({health={},failure='',invalidDates=false,unavailable=false}={}) {
   const calls=[],saved=[];const sha='a'.repeat(40);
   const data=await run({env:{DEPLOYED_SHA:sha,ACTIONS_ID_TOKEN_REQUEST_URL:'https://identity.example/token',ACTIONS_ID_TOKEN_REQUEST_TOKEN:'fixture',...(invalidDates?{REPORT_START_DATE:'today'}:{})},save: x=>saved.push(x),fetcher:async(url,options)=>{
     calls.push({url:String(url),options});const route=String(url).split('/').pop();
-    const body=String(url).startsWith('https://identity.example')?{value:'secret-fixture'}:route==='operations-health'?{ok:true,commit:sha,environment:'production',...health}:{ok:true,status:'complete'};
+    const body=String(url).startsWith('https://identity.example')?{value:'secret-fixture'}:route==='operations-health'?{ok:true,commit:sha,environment:'production',...health}:unavailable?{ok:false,status:'unavailable',propertyId:'520110560',reports:{overview:{status:'error',error:'ga4_report_failed'}}}:{ok:true,status:'complete'};
     return {ok:route!==failure,status:route===failure?403:200,json:async()=>body};
   }});return {calls,saved,data};
 }
@@ -89,4 +89,13 @@ test('GA4 function budget covers cold auth, token, probe and slowest parallel re
   assert.equal(config.functions['api/ga4-metrics.js'].maxDuration,60);
   assert.ok(config.functions['api/ga4-metrics.js'].maxDuration*1000 >= 5000+10000+10000+10000+10000+15000);
   assert.equal(Object.keys(config.functions).length,1);
+});
+
+test('all-unavailable diagnostics preserve structured failure evidence without bearer identity',async()=>{
+  const result=await runnerFixture({unavailable:true});
+  assert.equal(result.data.ok,false);assert.equal(result.data.status,'unavailable');
+  assert.equal(result.saved.length,1);assert.equal(result.saved[0].data.reports.overview.error,'ga4_report_failed');
+  assert.ok(!JSON.stringify(result.saved).includes('secret-fixture'));assert.equal(result.calls.length,3);
+  const source=fs.readFileSync(require.resolve('../scripts/run-ga4-report-only.cjs'),'utf8');
+  assert.match(source,/if \(data.status !== 'complete'\) process.exitCode = 1/);
 });

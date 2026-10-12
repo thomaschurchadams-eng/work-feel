@@ -41,8 +41,11 @@ cannot recover unrecorded historical referral sources.
 
 This draft requires parent confirmation of release authority before merge or
 deployment. Existing main pushes still trigger the normal operations job; a merge
-can therefore cause existing publishing/reconciliation behavior. Coordinate that
-release with the parent rather than dispatching operations during investigation.
+can therefore cause existing publishing/reconciliation behavior. An ordinary main merge is therefore unsuitable for a reporting-only release.
+One possible path is a separately parent-approved merge commit containing
+`[skip actions]`, followed by verified Vercel deployment and then the manual
+metrics-only dispatch. Confirm that both CI skip behavior and deployment
+propagation are honored; no release is authorized by this runbook.
 The endpoint and workflow must both be on main, with the same deployed SHA, before
 real reports can be retrieved. The existing production GA4 environment must remain
 configured; no credentials belong in GitHub workflow inputs or artifacts. Allow
@@ -63,8 +66,9 @@ cannot replace pending production operations. It invokes identity, operations-he
 operations runner, reads queues, calls Buffer, writes GitHub content, schedules,
 publishes or reconciles. It fails on deployment drift without retries that could
 change the target revision. Aggregate receipts are retained for seven days as
-`cuai-ga4-direct-<SHA>-<run ID>`. Partial reports are uploaded but mark the run as
-requiring attention. Do not dispatch the workflow without metrics_only=true for
+`cuai-ga4-direct-<SHA>-<run ID>`. Partial and all-unavailable structured diagnostic reports are uploaded but
+mark the run as requiring attention (exit code 1); sanitized per-report error
+codes are preserved without provider messages or bearer identities. Do not dispatch the workflow without metrics_only=true for
 this investigation. No live report was requested during implementation.
 
 Reference reporting run: https://github.com/thomaschurchadams-eng/work-feel/actions/runs/37996020957
