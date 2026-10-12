@@ -34,7 +34,7 @@ async function recover({ key, steps, load, save, acquire, isClosed, close, maxAt
       if (observed === 'done') {
         const verified=await call(step.verify,`${step.id}:verify`);
         if (!verified.ok) return state;
-        if (!verified.value) { state.status = 'blocked-ambiguous'; state.reason = `${step.id}:verification`; await save(state); return state; }
+        if (verified.value !== true) { state.status = 'blocked-ambiguous'; state.reason = `${step.id}:verification`; await save(state); return state; }
         state.steps[step.id] = { status: 'verified' }; await save(state); continue;
       }
       if (observed !== 'not-done' || (checkpoint.status === 'started' && !step.safeToResume)) {
@@ -50,7 +50,7 @@ async function recover({ key, steps, load, save, acquire, isClosed, close, maxAt
       if (!after.ok) return state;
       const postVerified=after.value==='done' ? await call(step.verify,`${step.id}:post-verify`) : {ok:true,value:false};
       if (!postVerified.ok) return state;
-      if (after.value !== 'done' || !postVerified.value) { state.status = 'blocked-ambiguous'; state.reason = `${step.id}:postcondition`; await save(state); return state; }
+      if (after.value !== 'done' || postVerified.value !== true) { state.status = 'blocked-ambiguous'; state.reason = `${step.id}:postcondition`; await save(state); return state; }
       state.steps[step.id] = { status: 'verified' }; await save(state);
     }
     // The external close must be keyed by the original incident. A failed final save

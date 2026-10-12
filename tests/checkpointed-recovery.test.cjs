@@ -149,3 +149,20 @@ test('durable adapter resumes only unfinished safe step after interrupted stage'
     assert.deepEqual((await store.load(key)).steps,{write:{status:'verified'},verify:{status:'verified'}});
   } finally { await fs.rm(directory,{recursive:true,force:true}); }
 });
+
+test('malformed truthy prior verification cannot complete or close incident', async () => {
+  let closes=0, runs=0;
+  const f=fixture([{id:'write',reconcile:async()=> 'done',run:async()=>{runs++},verify:async()=>({verified:false})}]);
+  f.args.close=async()=>{closes++};
+  assert.equal((await recover(f.args)).status,'blocked-ambiguous');
+  assert.equal((await recover(f.args)).status,'blocked-ambiguous');
+  assert.equal(runs,0);assert.equal(closes,0);
+});
+test('malformed truthy post-run verification cannot complete or close incident', async () => {
+  let done=false,closes=0,runs=0;
+  const f=fixture([{id:'write',reconcile:async()=>done?'done':'not-done',run:async()=>{runs++;done=true},verify:async()=>({verified:false})}]);
+  f.args.close=async()=>{closes++};
+  assert.equal((await recover(f.args)).status,'blocked-ambiguous');
+  assert.equal((await recover(f.args)).status,'blocked-ambiguous');
+  assert.equal(runs,1);assert.equal(closes,0);
+});

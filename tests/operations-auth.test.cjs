@@ -114,9 +114,22 @@ test('failed production wait emits same-run recovery handoff with zero side effe
  const receipt=JSON.parse(result.files['operation-receipts/run.json']);
  assert.equal(receipt.status,'failed');
  assert.equal(receipt.recovery.failedStage,'production-identity');
- assert.equal(receipt.recovery.actionAttempts,0);
+ assert.equal(receipt.recovery.actionMayHaveStarted,false);
+ assert.equal(receipt.recovery.acknowledgedActions,0);
  assert.equal(receipt.recovery.reconciliations,0);
  assert.equal(receipt.recovery.requiresExternalReconciliation,true);
  assert.match(receipt.recovery.incidentKey,/^operations:unknown-run:a{40}$/);
  assert.equal(result.calls.some(c=>c.url.endsWith('/buffer-schedule-tracked')),false);
+});
+
+test('lost distribution response remains an unknown started action with zero acknowledgments',async()=>{
+ const result=await runWorkflow({queued:true,timeout:true});
+ const receipt=JSON.parse(result.files['operation-receipts/run.json']);
+ assert.equal(receipt.status,'failed');
+ assert.equal(receipt.recovery.failedStage,'distribution');
+ assert.equal(receipt.recovery.actionMayHaveStarted,true);
+ assert.equal(receipt.recovery.acknowledgedActions,0);
+ assert.equal(receipt.recovery.requiresExternalReconciliation,true);
+ assert.equal(receipt.actionStarted.outcome,'unknown-until-reconciled');
+ assert.equal(result.calls.filter(c=>c.url.endsWith('/buffer-schedule-tracked')).length,1);
 });
