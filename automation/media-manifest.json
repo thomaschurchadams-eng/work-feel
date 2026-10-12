@@ -104,6 +104,111 @@
         "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
         "sentEvidence": "Canonical social queue in main07d6d64 plus recovered trusted operations37623147936 attempt2; exact existing ID/channel/trackedURL/image match; no new provider action"
       }
+    },
+    {
+      "id": "decision-card-2026-10-13",
+      "format": "decision-card",
+      "targetDate": "2026-10-13",
+      "status": "ready",
+      "title": "Before AI Recommends Hardship Treatment, Connect Four Parts of the Decision",
+      "preparationStatus": "ready-local-source-rights-accessibility-tested; unpublished until due-date production gates",
+      "preparedAt": "2026-10-08T13:03:17.625632+00:00",
+      "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+      "thumbnailUrl": "https://creditunionainews.com/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
+      "altText": "Decision card: connect member facts, approved options, a named human decision and follow-up in one hardship-treatment record. Hold the recommendation when a required part is missing. Editorial control suggestion, not a new regulatory requirement.",
+      "sourceURLs": [
+        "https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html",
+        "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/appendix-Appendix%20B%20to%20Part%20741",
+        "https://airc.nist.gov/airmf-resources/playbook/govern/",
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ],
+      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": true,
+      "productionVerified": false,
+      "publicationNotBefore": "2026-10-13",
+      "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
+      "assetSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
+      "assetBytes": 79845,
+      "assetMimeType": "image/png",
+      "width": 1200,
+      "height": 630,
+      "rightsNote": "Original locally rendered CUAI typography/diagram; no copied images, real member data or paid footage.",
+      "preparedPackage": {
+        "libraryFileId": "libfile_f5d0753bb3e48191a2f687be47004cdd",
+        "fileName": "cuai-oct8-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "a864338df4fc01ddc3049c29694f0dcf8d07b0275b0d3e04dc0f54b733226d41"
+      },
+      "assetPackageMemberPath": "site/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
+      "preparedPageMemberPath": "site/media/hardship-treatment-decision-card.html",
+      "socialDecision": "not-reserved; existing publisher selects only after due-date production gates and underlying-publication dedup",
+      "releaseGates": {
+        "sourceAndClaims": "October12 story200 unchanged hash352c3de9; current eCFR written-workout-policy baseline/NIST voluntary governance; editorial four-part synthesis, no new directive/performance claim",
+        "desktopMobileAndAccessibilityQA": "October12 current-main shell/CSS/JS390/1440, image/alt/text alternative/navigation/Escape;axe0, no overflow/errors",
+        "dueDate": "hold-until-2026-10-13",
+        "productionIdentityAndPublicURL": "not-published"
+      },
+      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "latestPreparationPackage": {
+        "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+        "fileName": "cuai-oct12-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+      },
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "Run independent due-date website release/source gates onOctober13; publisher alone selects/promotes any same-parent reservation after production verification."
+    },
+    {
+      "id": "cartoon-2026-10-16",
+      "format": "cartoon",
+      "targetDate": "2026-10-16",
+      "status": "ready",
+      "title": "Approved by whom?",
+      "preparationStatus": "ready-local-original-fictional-cartoon; source-rights-accessibility-tested-unpublished",
+      "preparedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "publicationNotBefore": "2026-10-16",
+      "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
+      "thumbnailUrl": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+      "altText": "Original fictional editorial cartoon: a colleague points to an AI recommendation marked Approved while its human-owner field is blank and the chair labeled Decision Owner is empty. Invented dialogue: Approved by whom?",
+      "caption": "Approved by whom?",
+      "textAlternative": "A fictional colleague points at an AI recommendation marked Approved. The human-owner field is blank; the adjacent Decision Owner chair is empty. The invented question highlights missing accountable human judgment, not a real event or allegation.",
+      "sourceURLs": [
+        "https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html",
+        "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/appendix-Appendix%20B%20to%20Part%20741",
+        "https://airc.nist.gov/airmf-resources/playbook/govern/",
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ],
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": true,
+      "productionVerified": false,
+      "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
+      "rightsNote": "Original locally drawn CUAI vector illustration; invented fictional scene/dialogue, no third-party assets, logos, real member facts or paid footage.",
+      "assetSha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
+      "assetBytes": 51953,
+      "assetMimeType": "image/png",
+      "width": 1200,
+      "height": 630,
+      "preparedPackage": {
+        "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+        "fileName": "cuai-oct12-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+      },
+      "assetPackageMemberPath": "site/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+      "preparedPageMemberPath": "site/media/human-decision-owner-cartoon.html",
+      "socialDecision": "not-reserved; same parent asOctober13card/October15podcast/video; at most one underlying-publication promotion",
+      "releaseGates": {
+        "dueDate": "hold-until-2026-10-16",
+        "sourceAndClaims": "fictional editorial synthesis from verified hardship-reporting/NCUA/NIST sources; not new rule or real-event claim",
+        "desktopMobileAndAccessibilityQA": "October12 four visualpage cases total390/1440;Fridaypage2cases axe0, no overflow/broken images/script errors;navigation/Escape",
+        "productionIdentityAndPublicURL": "not-published"
+      },
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "Independent due-date website release gates; preserve original PNG identity and underlying-publication social dedup."
     }
   ],
   "planned": [
@@ -149,7 +254,7 @@
         "Verify final MP4 hash/full probe/burned-in captions/canonical transcript/permanent public URL and exact production identity."
       ],
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Tom actual hearing review must certify original sentence boundaries and replacement acceptance. Coordinator then splices the existing correction, aligns captions/downstream visuals and obtains full finished-cut hearing/visual acceptance. No generation, guessed splice, publication or automatic catch-up.",
+      "nextStep": "Keep held; reuse original and existing103-credit correction only after hash-bound speech timing and actual hearing acceptance through a permitted route. No guessed cutpoints, generation, publication or automatic catch-up.",
       "coordinationHandoffLibraryId": "libfile_69ccd37ac39c81919fe81afd435a4448",
       "narrationCorrection": {
         "libraryFileId": "libfile_00b21c9750b481919d52b61b1a3ca169",
@@ -168,8 +273,14 @@
         "bytes": 4073342,
         "status": "not a corrected final master"
       },
-      "humanDependency": "Actual hearing acceptance by Tom; no named available hearing-capable automated owner is evidenced. Existing coordinator retains assembly responsibility.",
-      "coordinationRecheckedAt": "2026-10-08T13:03:17.625632+00:00"
+      "humanDependency": "No permitted hearing/alignment route available here. Existing coordinator owns capability recovery and assembly; parent handles only the genuine capability exception. No default manual timestamp assignment to Tom.",
+      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "separateSilentReview": {
+        "libraryFileId": "libfile_2cfd58ecec6c8191adccbd8a865a2885",
+        "fileName": "CUAI_SILENT_REVIEW_CANDIDATE_NOT_RELEASE_READY.mp4",
+        "sha256": "1ee126273b1feb704dca59cd6b6a7b3bbfbaa56975c4474b6bb63bdb49f1e134",
+        "status": "distinct unpublished review; does not complete held narrated target"
+      }
     },
     {
       "id": "cartoon-2026-10-09",
@@ -233,58 +344,12 @@
       }
     },
     {
-      "id": "decision-card-2026-10-13",
-      "format": "decision-card",
-      "targetDate": "2026-10-13",
-      "status": "planned",
-      "title": "Before AI Recommends Hardship Treatment, Connect Four Parts of the Decision",
-      "preparationStatus": "prepared-local-source-rights-accessibility-verified-unpublished",
-      "preparedAt": "2026-10-08T13:03:17.625632+00:00",
-      "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
-      "thumbnailUrl": "https://creditunionainews.com/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
-      "altText": "Decision card: connect member facts, approved options, a named human decision and follow-up in one hardship-treatment record. Hold the recommendation when a required part is missing. Editorial control suggestion, not a new regulatory requirement.",
-      "sourceURLs": [
-        "https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html",
-        "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/appendix-Appendix%20B%20to%20Part%20741",
-        "https://airc.nist.gov/airmf-resources/playbook/govern/",
-        "https://www.nist.gov/itl/ai-risk-management-framework"
-      ],
-      "sourceCheckedAt": "2026-10-08T13:03:17.625632+00:00",
-      "sourceVerified": true,
-      "rightsVerified": true,
-      "accessibilityVerified": true,
-      "productionVerified": false,
-      "publicationNotBefore": "2026-10-13",
-      "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
-      "assetSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
-      "assetBytes": 79845,
-      "assetMimeType": "image/png",
-      "width": 1200,
-      "height": 630,
-      "rightsNote": "Original locally rendered CUAI typography/diagram; no copied images, real member data or paid footage.",
-      "preparedPackage": {
-        "libraryFileId": "libfile_f5d0753bb3e48191a2f687be47004cdd",
-        "fileName": "cuai-oct8-media-preparation-handoff.zip",
-        "version": 0,
-        "sha256": "a864338df4fc01ddc3049c29694f0dcf8d07b0275b0d3e04dc0f54b733226d41"
-      },
-      "assetPackageMemberPath": "site/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
-      "preparedPageMemberPath": "site/media/hardship-treatment-decision-card.html",
-      "socialDecision": "not-reserved; existing publisher selects only after due-date production gates and underlying-publication dedup",
-      "releaseGates": {
-        "sourceAndClaims": "October8 verified existing story200, current eCFR written workout policy baseline and NIST voluntary governance; four-part structure is editorial synthesis, not a new directive/performance claim",
-        "desktopMobileAndAccessibilityQA": "2cases390/1440 passed; axe0; image/text alternative/menu/Escape; externalrequests blocked",
-        "dueDate": "hold-until-2026-10-13",
-        "productionIdentityAndPublicURL": "not-published"
-      }
-    },
-    {
       "id": "podcast-2026-10-15",
       "format": "podcast",
       "targetDate": "2026-10-15",
       "status": "planned",
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "source-qualified-script-prepared; synthesis-listening-final-asset-gates-pending",
+      "preparationStatus": "unchanged-source-qualified-script; narrated production held for fresh entitlement and permitted hearing/alignment route",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -295,7 +360,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-08T13:03:17.625632+00:00",
+      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -320,9 +385,16 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Fresh-check sources, shared ledger and live provider balance/billing; confirm existing approved voice/model and bounded model-specific budget before synthesis. Then actual listening, measured duration, accessible transcript/caption/final-asset and production gates.",
+      "nextStep": "Coordinator verifies actual live billing/balance/model budget and available hearing/alignment capability before new synthesis; then actual listening, measured duration, final accessibility/playback and due-date release gates. No generation during this pass.",
       "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
-      "craftLearning": "No new sound-viewed industry examples or evidence-grounded craft adaptation claimed. Sound access remains unsupported here; existing review gates retained."
+      "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
+      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "latestPreparationPackage": {
+        "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+        "fileName": "cuai-oct12-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+      }
     },
     {
       "id": "short-video-2026-10-15",
@@ -332,7 +404,7 @@
       "distributionMode": "native-video",
       "nativeVideo": null,
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "source-qualified-script-prepared; synthesis-listening-final-asset-gates-pending",
+      "preparationStatus": "unchanged-source-qualified-script; narrated production held for fresh entitlement and permitted hearing/alignment route",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -343,7 +415,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-08T13:03:17.625632+00:00",
+      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -368,16 +440,45 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Fresh-check sources, shared ledger and live provider balance/billing; confirm existing approved voice/model and bounded model-specific budget before synthesis. Then actual listening, measured duration, accessible transcript/caption/final-asset and production gates.",
+      "nextStep": "Coordinator verifies actual live billing/balance/model budget and available hearing/alignment capability before new synthesis; then actual listening, measured duration, final accessibility/playback and due-date release gates. No generation during this pass.",
       "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
-      "craftLearning": "No new sound-viewed industry examples or evidence-grounded craft adaptation claimed. Sound access remains unsupported here; existing review gates retained.",
-      "storyboardMemberPath": "short-video-oct15-storyboard.json"
-    },
-    {
-      "id": "cartoon-2026-10-16",
-      "format": "cartoon",
-      "targetDate": "2026-10-16",
-      "status": "planned"
+      "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
+      "storyboardMemberPath": "short-video-oct15-storyboard.json",
+      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "latestPreparationPackage": {
+        "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+        "fileName": "cuai-oct12-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+      },
+      "silentReviewAlternative": {
+        "id": "short-video-2026-10-15-silent-review",
+        "mode": "caption-led-silent",
+        "preparedAt": "2026-10-12T13:39:33.834078+00:00",
+        "preparedPackage": {
+          "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+          "fileName": "cuai-oct12-media-preparation-handoff.zip",
+          "version": 0,
+          "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+        },
+        "packageMemberPath": "oct15-silent-review-v2/review.mp4",
+        "sha256": "542dea47900743f796e04e970bc0a87c932b0f11bcda8556c8af4a33f63d3322",
+        "bytes": 2806508,
+        "durationSeconds": 41.041666666666664,
+        "width": 720,
+        "height": 1280,
+        "frameRate": 24,
+        "audioTracks": 0,
+        "displayCaptionTimingVerified": true,
+        "audioAlignmentVerified": false,
+        "nativeCaptionFramesInspected": 9,
+        "technicalPlayback": "390/1440 no overflow or script errors;41.04seconds continuous browser decode reached ended; not final editorial playback acceptance",
+        "status": "tested-local-review-only; not narrated completion or automatic substitute",
+        "finalPlaybackAccepted": false,
+        "productionVerified": false,
+        "nativeVideo": null,
+        "draftTooling": "PR259 tested locally only; remains draft/unmerged, no active production integration"
+      }
     },
     {
       "id": "chart-2026-10-20",
@@ -426,5 +527,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-08.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-12.json"
 }
