@@ -1,1 +1,1 @@
-{"probe":"binding-restored","incident":"nonproduction-only","tx":"binding-restore-20261012","states":{"probe":{"key":"probe","phase":"verified"}},"leases":{},"appliedTransactions":["binding-e2e-20261012"]}
+{"probe":"binding-restored","incident":"nonproduction-only","tx":"binding-restore-20261012","states":{"probe":{"key":"probe","phase":"binding-confirmed"}},"leases":{},"appliedTransactions":["binding-e2e-20261012","checked-in-binding-20261012"]}
