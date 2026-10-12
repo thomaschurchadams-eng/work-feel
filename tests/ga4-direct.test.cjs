@@ -67,3 +67,26 @@ test('reporting endpoint checks trusted identity, exact deployment, dates and pr
     assert.equal(status,{identity:401,sha:403,dates:400,property:503,direct:200}[scenario]);assert.equal(queries,scenario==='direct'?1:0);assert.equal(data.ok,scenario==='direct');
   }
 });
+test('metrics-only dispatch concurrency cannot replace pending production operations',()=>{
+  const workflow=fs.readFileSync(require('node:path').join(__dirname,'../.github/workflows/cuai-operations.yml'),'utf8');
+  const group=workflow.split('\n').find(line=>line.startsWith('  group:')).trim();
+  assert.equal(group,"group: ${{ github.event_name == 'pull_request' && format('cuai-design-{0}', github.event.pull_request.number) || (github.event_name == 'workflow_dispatch' && inputs.metrics_only == true && 'cuai-ga4-reporting') || 'cuai-production-operations' }}");
+  // Evaluate the boolean/string semantics of the exact expression above.
+  const select=(event,metricsOnly,number=7)=>event==='pull_request'&&`cuai-design-${number}`||(event==='workflow_dispatch'&&metricsOnly===true&&'cuai-ga4-reporting')||'cuai-production-operations';
+  assert.equal(select('workflow_dispatch',true),'cuai-ga4-reporting');
+  for(const [event,input] of [['push',undefined],['schedule',undefined],['workflow_dispatch',false],['workflow_dispatch',undefined],['push',true]])assert.equal(select(event,input),'cuai-production-operations');
+  assert.equal(select('pull_request',true),'cuai-design-7');assert.match(workflow,/cancel-in-progress: false/);
+});
+test('GA4 function budget covers cold auth, token, probe and slowest parallel report pair',()=>{
+  const root=require('node:path').join(__dirname,'..');
+  const config=JSON.parse(fs.readFileSync(root+'/vercel.json','utf8'));
+  const auth=fs.readFileSync(root+'/lib/operations-auth.js','utf8');
+  const endpoint=fs.readFileSync(root+'/api/ga4-metrics.js','utf8');
+  const diagnostic=fs.readFileSync(root+'/lib/ga4-direct.js','utf8');
+  assert.match(auth,/AbortSignal.timeout\(5000\)/);
+  assert.equal((endpoint.match(/AbortSignal.timeout\(10000\)/g)||[]).length,3);
+  assert.match(diagnostic,/await Promise.all\(Object.entries\(definitions\).map/);
+  assert.equal(config.functions['api/ga4-metrics.js'].maxDuration,60);
+  assert.ok(config.functions['api/ga4-metrics.js'].maxDuration*1000 >= 5000+10000+10000+10000+10000+15000);
+  assert.equal(Object.keys(config.functions).length,1);
+});

@@ -34,7 +34,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: ${{ github.event_name == 'pull_request' && format('cuai-design-{0}', github.event.pull_request.number) || 'cuai-production-operations' }}
+  group: ${{ github.event_name == 'pull_request' && format('cuai-design-{0}', github.event.pull_request.number) || (github.event_name == 'workflow_dispatch' && inputs.metrics_only == true && 'cuai-ga4-reporting') || 'cuai-production-operations' }}
   cancel-in-progress: false
 jobs:
   design-checks:

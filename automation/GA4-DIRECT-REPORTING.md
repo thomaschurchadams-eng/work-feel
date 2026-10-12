@@ -46,13 +46,20 @@ release with the parent rather than dispatching operations during investigation.
 The endpoint and workflow must both be on main, with the same deployed SHA, before
 real reports can be retrieved. The existing production GA4 environment must remain
 configured; no credentials belong in GitHub workflow inputs or artifacts. Allow
-at least 35 seconds endpoint execution for the bounded parallel queries.
+the configured 60-second GA4 function execution budget at deployment. The cold
+identity-key lookup can use 5 seconds, OAuth token 10 seconds, timezone probe 10
+seconds, then the slowest parallel compatibility/report pair 10 + 10 seconds:
+45 seconds of sequential network budget in total, leaving 15 seconds for local
+processing and serialization. The runner's 240-second request timeout and the
+job's eight-minute timeout exceed that endpoint budget. Deployment must confirm
+that the function's 60-second maxDuration setting is honored.
 
 After authorized release and verified production propagation, manually dispatch
 **CUAI verified operations** on main with **metrics_only = true**, optionally
 supplying both dates. This excludes the operate job and runs only
 `scripts/run-ga4-report-only.cjs` with contents:read and existing id-token:write.
-It invokes identity, operations-health, then ga4-metrics; it never imports the
+It uses a separate cuai-ga4-reporting concurrency group so reporting dispatches
+cannot replace pending production operations. It invokes identity, operations-health, then ga4-metrics; it never imports the
 operations runner, reads queues, calls Buffer, writes GitHub content, schedules,
 publishes or reconciles. It fails on deployment drift without retries that could
 change the target revision. Aggregate receipts are retained for seven days as
