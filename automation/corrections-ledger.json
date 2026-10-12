@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T07:00:00-04:00",
+  "updatedAt": "2026-10-12T12:00:00Z",
   "description": "Append-only public-interest audit trail for substantive updates, corrections and retractions. Routine maintenance remains in Git history.",
   "entries": [
     {
@@ -9,10 +9,22 @@
       "articleUrl": "https://creditunionainews.com/news/raiz-digital-account-opening-case-study.html",
       "type": "correction",
       "publishedAt": "2026-10-08T07:00:00-04:00",
-      "summary": "The original headline described a four-minute result as online account opening. Alkami's detailed table identifies three–five minutes as the application duration and treats funding and access separately, so the headline was narrowed while the original publication date remained unchanged.",
+      "summary": "The original headline described a four-minute result as online account opening. Alkami's detailed table identifies three\u2013five minutes as the application duration and treats funding and access separately, so the headline was narrowed while the original publication date remained unchanged.",
       "trigger": "Independent source review after a bounded factual-accuracy handoff.",
       "sources": [
         "https://www.alkami.com/resources/client-success/case-study/how-raiz-federal-credit-union-is-building-a-digital-forward-member-experience-with-alkamis-digital-sales-service-platform/"
+      ]
+    },
+    {
+      "id": "fintel-affiliate-answer-denominator-2026-10-12",
+      "articlePath": "news/fintel-ai-search-financial-product-recommendations.html",
+      "articleUrl": "https://creditunionainews.com/news/fintel-ai-search-financial-product-recommendations.html",
+      "type": "correction",
+      "publishedAt": "2026-10-12T12:00:00Z",
+      "summary": "The original article misstated the denominator for Fintel Connect\u2019s over-54% affiliate result as citations. The release measures recommendation answers citing an affiliate page. The original publication date is unchanged.",
+      "trigger": "Focused source-to-claim verification of the October 7 release.",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/fintel-connect-releases-2026-ai-search-guide-revealing-what-determines-whether-financial-brands-get-recommended-in-ai-generated-answers-302900598.html"
       ]
     }
   ]

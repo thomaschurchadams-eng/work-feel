@@ -5,5 +5,16 @@
   "emailSending": {
     "status": "not-connected",
     "rule": "Publish the web edition and archive it, but do not claim it was emailed until a provider confirms delivery."
+  },
+  "implementationStatus": "approved-not-started",
+  "approvedSample": {
+    "cadence": "Friday",
+    "wordRange": {
+      "min": 600,
+      "max": 750
+    },
+    "sequence": "sample-first",
+    "providerGate": "Separate provider approval required before setup or sending.",
+    "addressGate": "Sender and reply-to addresses require approval before sending."
   }
 }

@@ -1,0 +1,7 @@
+# Bounded recovery under Reliability Watch
+
+Run 38257568883 stopped at a three-minute production identity wait for eb075a6. Exact deployment later reached READY, with zero side effects in the failed receipt. Readiness alone did not close the original incident. This is a recovery gap, not a reason to repeat all actions.
+
+The existing `reliability-watch` owner uses `checkpointed-recovery.cjs` for a single incident key. The caller must persist each checkpoint durably, query authoritative external state for each step, and supply a postcondition verifier. A delayed exact-SHA READY deployment is reconciled as done; an interrupted step is resumed only when reconciliation proves it unfinished and safe. A started external write with no exact outcome evidence is ambiguous and blocks. Permission denial blocks; unchanged approval must not be requested again. The attempt cap is three, defaults to two, and does not create a scheduler or role.
+
+Do not infer success from a successful write API response or a malformed final output. Reconcile the externally stored record and verify it before closing the same `dedupeKey`/incident key on issue #160. A duplicate callback reads the completed checkpoint and makes no write. Production actions remain subject to the existing role policy and approval gates. This module performs no external operations on its own.

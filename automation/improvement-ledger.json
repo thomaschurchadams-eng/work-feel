@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T20:38:23.907Z",
+  "updatedAt": "2026-10-12T12:00:00Z",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -294,6 +294,63 @@
         "recommendation": "Audition the modern candidate first for composed build/title/resolution and ducking into voice. A 2–5-second CUAI treatment is only a proposal; user has not selected it and actual structure/timing cannot be certified without listening.",
         "executionRestriction": "Do not use paid previews in production. No purchase, asset download, new audio generation, provider credits, spending or intro selection authorized. Keep all previous cue concepts rejected."
       }
+    },
+    {
+      "id": "checkpointed-incident-recovery-2026-10-12",
+      "source": "Tom approval and operations run 38257568883 on eb075a6",
+      "decision": "accepted",
+      "owner": "reliability-watch",
+      "nextStep": "Review this draft PR; apply bounded recovery only through the existing owner after merge and ordinary authorization checks.",
+      "acceptanceEvidence": "Exact deployment reconciled READY; original incident key closed after verified postconditions; zero duplicate external writes in interrupted and malformed-output cases.",
+      "deferredTrigger": null,
+      "status": "draft-pr",
+      "evidence": "The run exhausted a three-minute identity wait; later exact deployment READY did not close the failed operation and its receipt showed zero side effects.",
+      "proposedChange": "Checkpoint each safe recovery stage, classify failures, reconcile external outcomes before resuming, and close the original incident key only after verification.",
+      "expectedBenefit": "Finish recoverable failed operations without duplicate side effects.",
+      "risk": "Ambiguous provider outcomes and permission denials must stay blocked.",
+      "validation": [
+        "Focused delayed-ready, interrupted-stage, duplicate-callback, malformed-output and permission fixtures added; local Node runtime unavailable."
+      ],
+      "result": "Code and runbook prepared on draft branch; no production recovery triggered.",
+      "rollback": "Revert module and runbook policy change."
+    },
+    {
+      "id": "focused-source-claim-verification-2026-10-12",
+      "source": "Tom approval and Fintel Connect October 7 release",
+      "decision": "accepted",
+      "owner": "daily-publisher",
+      "nextStep": "Review correction and focused fixture before merge; use source-to-claim checks for consequential numbers, dates, attribution and scope.",
+      "acceptanceEvidence": "Fintel denominator matches recommendation answers; Raiz application/funding distinction and clean claims pass focused fixtures; visible correction and ledger record present.",
+      "deferredTrigger": null,
+      "status": "draft-pr",
+      "evidence": "Published Fintel article said over 54% of citations; release says over 54% of recommendation answers cite an affiliate page.",
+      "proposedChange": "Correct the Fintel claim and add a small explicit source-to-claim fixture gate.",
+      "expectedBenefit": "Catch material denominator and scope errors before publication.",
+      "risk": "Fixture checks require an editor to supply exact source evidence and cannot independently establish source truth.",
+      "validation": [
+        "Primary release wording checked directly; focused fixtures added; local Node runtime unavailable."
+      ],
+      "result": "Correction prepared as a draft PR only.",
+      "rollback": "Revert only if source evidence disproves the correction."
+    },
+    {
+      "id": "friday-newsletter-sample-2026-10-12",
+      "source": "Tom-approved Friday sample-first newsletter decision",
+      "decision": "accepted-with-gates",
+      "owner": "existing newsroom owner",
+      "nextStep": "Create and review one 600–750-word Friday sample within existing editorial limits; decide separately on provider setup after approved address and provider evidence.",
+      "acceptanceEvidence": "Reviewed sample with verified links, dates and source claims; provider and sending address explicitly approved before any email send.",
+      "deferredTrigger": "Sample accepted and provider/address gates resolved.",
+      "status": "approved-not-started",
+      "evidence": "Prior task-creation attempts did not start implementation; newsletter-state editions remains empty and emailSending is not-connected.",
+      "proposedChange": "Prepare a Friday web sample first, then assess provider/address setup separately.",
+      "expectedBenefit": "Validate editorial format before email infrastructure.",
+      "risk": "Do not imply delivery or a working subscriber system.",
+      "validation": [
+        "No edition recorded and no provider connected."
+      ],
+      "result": "Decision recorded only; implementation and provider setup have not started.",
+      "rollback": "Revisit approved sample format with Tom before changing it."
     }
   ]
 }
