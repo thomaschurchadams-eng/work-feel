@@ -16,6 +16,17 @@ on:
       - 'package*.json'
       - '.github/workflows/cuai-operations.yml'
   workflow_dispatch:
+    inputs:
+      metrics_only:
+        description: 'Read aggregate GA4 Direct diagnostic only'
+        type: boolean
+        default: false
+      report_start_date:
+        description: 'Optional inclusive YYYY-MM-DD (both dates required, max 28 days)'
+        type: string
+      report_end_date:
+        description: 'Optional inclusive YYYY-MM-DD before property today'
+        type: string
   schedule:
     # Post-slot reconciliation sweep. 17:45 UTC is after the latest approved
     # 12:30 p.m. ET company-page slot year-round, including DST transitions.
@@ -68,6 +79,7 @@ jobs:
           retention-days: 14
   operate:
     if: >-
+      inputs.metrics_only != true &&
       github.repository == 'thomaschurchadams-eng/work-feel' &&
       github.ref == 'refs/heads/main' &&
       (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
@@ -96,3 +108,32 @@ jobs:
           path: operation-receipts/
           if-no-files-found: ignore
           retention-days: 14
+  metrics-only:
+    if: >-
+      github.event_name == 'workflow_dispatch' && inputs.metrics_only == true &&
+      github.repository == 'thomaschurchadams-eng/work-feel' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Read exact reporting revision
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Read Direct aggregate diagnostics
+        env:
+          DEPLOYED_SHA: ${{ github.sha }}
+          REPORT_START_DATE: ${{ inputs.report_start_date }}
+          REPORT_END_DATE: ${{ inputs.report_end_date }}
+        run: node scripts/run-ga4-report-only.cjs
+      - name: Preserve aggregate reporting evidence
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: cuai-ga4-direct-${{ github.sha }}-${{ github.run_id }}
+          path: ga4-report-receipts/
+          if-no-files-found: ignore
+          retention-days: 7
