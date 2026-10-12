@@ -166,3 +166,12 @@ test('malformed truthy post-run verification cannot complete or close incident',
   assert.equal((await recover(f.args)).status,'blocked-ambiguous');
   assert.equal(runs,1);assert.equal(closes,0);
 });
+
+test('already closed October 12 incident is a read-only replay',async()=>{
+ let callbacks=0;
+ const closed={key,status:'completed',attempts:0,steps:{deployment:{status:'verified'}}};
+ const f=fixture([{id:'deployment',reconcile:async()=>{callbacks++},run:async()=>{callbacks++},verify:async()=>{callbacks++}}],closed);
+ f.args.close=async()=>{callbacks++};
+ assert.equal((await recover(f.args)).status,'completed');
+ assert.equal(callbacks,0);
+});

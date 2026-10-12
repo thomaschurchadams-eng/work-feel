@@ -7,3 +7,5 @@ The existing `reliability-watch` owner uses `checkpointed-recovery.cjs` for a si
 Do not infer success from a successful write API response or a malformed final output. Reconcile the externally stored record and verify it before closing the same `dedupeKey`/incident key on issue #160. A duplicate callback reads the completed checkpoint and makes no write. Production actions remain subject to the existing role policy and approval gates. This module performs no external operations on its own.
 
 The helper and file adapter are prepared for the existing owner; they are not wired into `run-secure-operations.cjs` or an active Cloud task. That runner has separate production authority. Review and integrate only within the existing Reliability Watch execution path before describing recovery as automatic.
+
+A proposed Git-ref adapter lives in `git-ref-checkpoint-store.cjs`. It is disabled until the bound connector’s compare-and-swap behavior is independently verified. The October 12 nonproduction probe produced an `UNKNOWN` response on a competing/stale update, so the enabled task must not depend on this adapter yet.
