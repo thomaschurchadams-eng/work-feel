@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "selectionRule": "Prefer primary sources. A vendor announcement may establish what was announced but not whether it works; material performance claims require independent corroboration.",
+  "tiers": {
+    "1": "Regulator, government, court, legislature, credit union, audited filing, research paper, or directly responsible organization",
+    "2": "Credible independent reporting, established trade publication, or attributable expert research",
+    "3": "Vendor marketing, consultancy commentary, event recap, or uncorroborated secondary summary",
+    "4": "Anonymous, scraped, synthetic, unverifiable, or low-accountability source"
+  },
+  "beats": [
+    {"id":"regulation-policy","domains":["ncua.gov","consumerfinance.gov","federalreserve.gov","ffiec.gov","fincen.gov","ftc.gov","gao.gov","congress.gov","sec.gov"]},
+    {"id":"security-fraud","domains":["cisa.gov","fbi.gov","ic3.gov","nist.gov","justice.gov"]},
+    {"id":"credit-union-industry","domains":["americascreditunions.org","filene.org","creditunions.com","cutoday.info","cuinsight.com"]},
+    {"id":"financial-reporting","domains":["reuters.com","americanbanker.com","fintechfutures.com","thefinancialbrand.com"]},
+    {"id":"payments-core-fintech","domains":["frbservices.org","theclearinghouse.org","nachacorporation.com","visa.com","mastercard.com","jackhenry.com","fiserv.com","velera.com","alkami.com","q2.com"]},
+    {"id":"ai-research-platforms","domains":["openai.com","anthropic.com","deepmind.google","microsoft.com","aws.amazon.com","arxiv.org","acm.org","ieee.org"]}
+  ],
+  "discoveryQueries": [
+    "credit union artificial intelligence",
+    "credit union fintech launch",
+    "credit union fraud technology",
+    "credit union lending automation",
+    "credit union payments modernization",
+    "credit union member experience technology",
+    "credit union cybersecurity vendor",
+    "credit union workforce AI",
+    "banking AI regulation",
+    "community financial institution technology"
+  ]
+}

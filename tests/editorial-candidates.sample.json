@@ -1,0 +1,32 @@
+[
+  {
+    "id":"lending-decisioning-example",
+    "title":"A New Decisioning Model Changes Credit Union Loan Reviews",
+    "sourceUrl":"https://example.org/primary-announcement",
+    "sourcePublishedAt":"2026-07-18T12:00:00Z",
+    "sourceTier":1,
+    "confidence":0.94,
+    "functions":["lending-collections"],
+    "technologies":["data-decisioning"],
+    "format":"reported-news",
+    "maturity":"practical-now",
+    "angles":["implementation"],
+    "audiences":["functional-leader"],
+    "institutionSize":"all",
+    "newsworthiness":84,
+    "creditUnionRelevance":92
+  },
+  {
+    "id":"weak-vendor-example",
+    "title":"Vendor Says Its AI Will Transform Everything",
+    "sourceUrl":"",
+    "sourcePublishedAt":"2026-07-10T12:00:00Z",
+    "sourceTier":4,
+    "confidence":0.45,
+    "functions":["operations"],
+    "technologies":["generative-ai"],
+    "format":"reported-news",
+    "newsworthiness":40,
+    "creditUnionRelevance":35
+  }
+]

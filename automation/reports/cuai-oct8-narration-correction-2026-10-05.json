@@ -1,0 +1,98 @@
+{
+  "id": "oct8-liam-v3-correction-generation1-2026-10-05",
+  "recordedAt": "2026-10-05T14:16:58.142141+00:00",
+  "baseMainSHA": "4be7465a289d2c440860e32bfcf1879bdfc2577d",
+  "observationSource": "Existing authorized audio owner delegated artifact and live account receipt October5; recorder verified downloaded bytes/afinfo but did not independently access provider UI.",
+  "libraryFileId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+  "fileId": "file_00000000637c820cbd3aee85bfb36f58",
+  "fileName": "cuai-oct8-liam-v3-correction-generation1.mp3",
+  "bytes": 112232,
+  "sha256": "3f1e4f51648a0c51c09f20d5494766f95fb75ad572889d7dd1e6ec2baea77277",
+  "format": {
+    "codec": "mp3",
+    "channels": 1,
+    "sampleRate": 44100,
+    "bitRate": 128000,
+    "afinfoEstimatedDurationSeconds": 5.955875,
+    "MP3Packets": 228,
+    "uiRoundedDuration": "0:05"
+  },
+  "exactApprovedText": "On September thirtieth, Mastercard announced an AI-transaction probability score entering U.S. testing.",
+  "voice": "Liam - Energetic, Social Media Creator",
+  "model": "Eleven v3",
+  "stability": 0.5,
+  "providerAction": {
+    "generateClicks": 1,
+    "automaticVariantsReturned": 2,
+    "selectedVariant": "Generation1",
+    "downloadedVariants": [
+      "Generation1"
+    ],
+    "retries": 0,
+    "fullNarrationRegenerated": false
+  },
+  "creditObservation": {
+    "actualDebit": 103,
+    "remainingBefore": 28856,
+    "remainingAfter": 28753,
+    "allowanceIncludingRollover": 39681,
+    "usedBefore": 10825,
+    "usedAfter": 10928,
+    "source": "audio-owner live provider observation; no later debit reported at handoff",
+    "freshCheckRequiredBeforeAnyFurtherConsumption": true
+  },
+  "billingObservation": {
+    "plan": "Starter",
+    "billing": "yearly",
+    "annualPriceUSD": 60,
+    "renewalDate": "2027-09-28",
+    "autoTopUp": "Off",
+    "inferredMonthlyCreditPeriod": {
+      "start": "2026-09-28",
+      "end": "2026-10-28",
+      "status": "inferred from billing anniversary and official monthly-reset policy, not an exposed account-specific reset timestamp"
+    },
+    "accountSpecificMonthlyResetTimestamp": null
+  },
+  "originalNarration": {
+    "libraryFileId": "libfile_68478b4967488191b0334946ec043bbb",
+    "sha256": "48a96de25ae4abd7ef80a083535d5deebcc4bbad5e866078ec293389ded5204b",
+    "unchanged": true
+  },
+  "qualityStatus": {
+    "correctionBytesAndMetadataVerified": true,
+    "actualListeningVerified": false,
+    "originalAudioCutPointsCertified": false,
+    "replacementAlignmentVerified": false,
+    "captionAlignmentVerified": false,
+    "finishedReviewMaster": false,
+    "productionVerified": false,
+    "note": "13.1–19.4 is provisional graphics/caption timing, not certified audio timing. No guessed splice or final-master claim."
+  },
+  "recordingAgentCreditConsumption": 0,
+  "publicationActions": 0,
+  "queueWrites": 0,
+  "nextAction": "Existing review owner must actually hear original/context/correction and certify phrase boundaries; splice only that sentence, align every downstream caption/graphic to finished waveform, listen entire cut and perform final native-master/source/production gates. No further synthesis without fresh shared-ledger/provider check.",
+  "hearingCapabilityBlocker": "Supported audio delivery attempt returned: audio content omitted because you do not support audio input. No actual hearing available in this runtime; do not certify cutpoints, splice, pronunciation or captions.",
+  "technicalDecodeEvidence": {
+    "correctionDecodedFrames": 262656,
+    "correctionDecodedDurationSeconds": 5.955918367346939,
+    "originalDecodedFrames": 3233664,
+    "originalDecodedDurationSeconds": 73.32571428571428,
+    "sampleRate": 44100,
+    "channels": 1,
+    "fullScaleSamplesBoth": 0,
+    "scope": "Native PCM decode, not listening or semantic alignment."
+  },
+  "validation": {
+    "targetedMediaTestsPassed": 28,
+    "debitArithmeticAndHistoryPreservationPassed": true
+  },
+  "listeningHandoff": {
+    "libraryFileId": "libfile_0523ca6ac6f88191ad72e0da4fa930f2",
+    "fileName": "cuai-oct8-correction-listening-handoff.zip",
+    "version": 0,
+    "sha256": "630388c23c81aa1eb237d6e5ed8eb9b3572ff0ded04c98f233697217a845134b",
+    "status": "playable private original-plus-correction review; not a corrected final master"
+  }
+}

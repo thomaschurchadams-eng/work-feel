@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">AI Insight illustration 3</title>
+  <desc id="desc">Diagonal stripe fallback artwork.</desc>
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fbff" />
+      <stop offset="100%" stop-color="#e2effa" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="28" fill="url(#g3)" />
+  <g stroke="#1fb6aa" stroke-width="10" opacity="0.2">
+    <line x1="120" y1="-40" x2="600" y2="440" />
+    <line x1="200" y1="-40" x2="680" y2="440" />
+    <line x1="-40" y1="60" x2="360" y2="460" />
+    <line x1="40" y1="60" x2="440" y2="460" />
+  </g>
+  <text x="64" y="120" font-family="'Inter', 'Segoe UI', system-ui" font-size="32" font-weight="700" fill="#0f294b">AI Governance</text>
+  <text x="64" y="168" font-family="'Inter', 'Segoe UI', system-ui" font-size="22" font-weight="600" fill="#1fb6aa">Illustration</text>
+</svg>

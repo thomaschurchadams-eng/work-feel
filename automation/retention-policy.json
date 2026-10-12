@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "mode": "autonomous",
+  "approvalRequired": false,
+  "timezone": "America/New_York",
+  "schedule": "First Monday of each month during the weekly growth review",
+  "safety": {
+    "neverDeletePaths": ["index.html", "news.html", "insights.html", "newsletter.html", "about.html", "contact.html", "privacy.html", "sitemap.xml", "sitemap.txt", "news-sitemap.xml", "robots.txt", "assets/download.png"],
+    "neverDeleteBranches": ["main"],
+    "requireCleanValidationAfterApply": true,
+    "requireReadyProductionDeployment": true,
+    "rollbackOnProductionFailure": true,
+    "noGitHistoryRewrite": true
+  },
+  "assets": {
+    "extensions": [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg", ".avif"],
+    "orphanGraceDays": 30,
+    "rejectedGenerationRetentionDays": 7,
+    "maximumRecommendedBytes": 500000,
+    "deleteOnlyWhenUnreferencedAcrossTextFiles": true,
+    "keepFinalAssetWhileReferencingPageExists": true
+  },
+  "publishedContent": {
+    "minimumAgeDays": 540,
+    "automaticDeletionRequiresAll": [
+      "zero_organic_sessions_180d",
+      "zero_search_impressions_180d",
+      "zero_referring_domains",
+      "no_unique_information",
+      "not_historically_material",
+      "not_linked_from_retained_content",
+      "replacement_or_410_defined"
+    ],
+    "preferredActions": ["refresh", "consolidate_with_301", "archive_with_context", "delete_with_301_or_410"],
+    "neverDeleteForAgeAlone": true,
+    "keepNewsletterEditions": true
+  },
+  "alerts": {
+    "liveWindowDays": 14,
+    "detailedRecordRetentionDays": 365,
+    "then": "retain monthly aggregate and remove redundant detail"
+  },
+  "operationalData": {
+    "newsroomDetailedDays": 90,
+    "socialQueueDetailedDays": 90,
+    "analyticsRawExportDays": 90,
+    "keepWeeklyMonthlyAggregates": true
+  },
+  "branches": {
+    "mergedGraceDays": 14,
+    "abandonedReviewDays": 30,
+    "abandonedDeleteDays": 90,
+    "deleteAbandonedOnlyWhen": ["no_open_pull_request", "not_a_production_branch", "no_unique_unmerged_work"]
+  },
+  "deployments": {
+    "keepProduction": true,
+    "keepRollbackCandidates": 3,
+    "previewRetentionDays": 30,
+    "keepPreviewWhen": ["open_pull_request", "active_branch", "incident_evidence"]
+  },
+  "reporting": {
+    "writePath": "automation/retention-report.json",
+    "notifyOnlyFor": ["production_rollback", "validation_failure", "policy_blocker", "material_cost_anomaly"]
+  }
+}

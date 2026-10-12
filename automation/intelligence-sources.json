@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-19",
+  "policy": {
+    "defaultLookbackHours": 72,
+    "maxLookbackDays": 7,
+    "minimumAlertScore": 78,
+    "minimumNewsScore": 84,
+    "deduplicationDays": 30,
+    "requirePrimarySourceForTrackerUpdate": true
+  },
+  "sources": [
+    {
+      "id": "ncua-ai-resources",
+      "name": "NCUA AI Resources",
+      "owner": "NCUA",
+      "type": "regulator",
+      "url": "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/credit-union-artificial-intelligence-ai-resources",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "risk-compliance",
+        "board-strategy"
+      ],
+      "technologies": [
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "ncua-newsroom",
+      "name": "NCUA Newsroom",
+      "owner": "NCUA",
+      "type": "regulator",
+      "url": "https://ncua.gov/newsroom",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "risk-compliance",
+        "board-strategy"
+      ],
+      "technologies": [
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "cfpb-newsroom",
+      "name": "CFPB Newsroom",
+      "owner": "CFPB",
+      "type": "regulator",
+      "url": "https://www.consumerfinance.gov/about-us/newsroom/",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "risk-compliance",
+        "lending-collections",
+        "member-service"
+      ],
+      "technologies": [
+        "governance-risk",
+        "decisioning-underwriting"
+      ]
+    },
+    {
+      "id": "federal-reserve-news",
+      "name": "Federal Reserve Press Releases",
+      "owner": "Federal Reserve",
+      "type": "regulator",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "payments-deposits",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "governance-risk",
+        "payments-infrastructure"
+      ]
+    },
+    {
+      "id": "occ-news",
+      "name": "OCC News and Issuances",
+      "owner": "OCC",
+      "type": "regulator",
+      "url": "https://www.occ.treas.gov/news-issuances/index-news-issuances.html",
+      "priority": "medium",
+      "cadence": "daily",
+      "functions": [
+        "risk-compliance",
+        "board-strategy"
+      ],
+      "technologies": [
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "fdic-news",
+      "name": "FDIC News",
+      "owner": "FDIC",
+      "type": "regulator",
+      "url": "https://www.fdic.gov/news/",
+      "priority": "medium",
+      "cadence": "daily",
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "governance-risk",
+        "fraud-identity"
+      ]
+    },
+    {
+      "id": "senate-banking-hearings",
+      "name": "Senate Banking Hearings",
+      "owner": "U.S. Senate Banking Committee",
+      "type": "legislature",
+      "url": "https://www.banking.senate.gov/hearings",
+      "priority": "medium",
+      "cadence": "daily",
+      "functions": [
+        "board-strategy",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "jack-henry-news",
+      "name": "Jack Henry Newsroom",
+      "owner": "Jack Henry",
+      "type": "vendor",
+      "url": "https://www.jackhenry.com/newsroom",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "operations",
+        "member-service",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "agents-automation",
+        "personalization-service",
+        "fraud-identity"
+      ]
+    },
+    {
+      "id": "fis-media",
+      "name": "FIS Media Room",
+      "owner": "FIS",
+      "type": "vendor",
+      "url": "https://www.fisglobal.com/en/about-us/media-room",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "payments-deposits",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "predictive-analytics"
+      ]
+    },
+    {
+      "id": "ncr-voyix-news",
+      "name": "NCR Voyix Newsroom",
+      "owner": "NCR Voyix",
+      "type": "vendor",
+      "url": "https://www.ncrvoyix.com/about/newsroom",
+      "priority": "medium",
+      "cadence": "daily",
+      "functions": [
+        "operations",
+        "finance-treasury"
+      ],
+      "technologies": [
+        "agents-automation",
+        "predictive-analytics"
+      ]
+    },
+    {
+      "id": "visa-news",
+      "name": "Visa Newsroom",
+      "owner": "Visa",
+      "type": "network",
+      "url": "https://usa.visa.com/about-visa/newsroom.html",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "payments-deposits",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "payments-infrastructure"
+      ]
+    },
+    {
+      "id": "mastercard-news",
+      "name": "Mastercard Newsroom",
+      "owner": "Mastercard",
+      "type": "network",
+      "url": "https://www.mastercard.com/news/",
+      "priority": "high",
+      "cadence": "daily",
+      "functions": [
+        "payments-deposits",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "payments-infrastructure"
+      ]
+    },
+    {
+      "id": "microsoft-365-blog",
+      "name": "Microsoft 365 Blog",
+      "owner": "Microsoft",
+      "type": "technology",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/",
+      "priority": "medium",
+      "cadence": "daily",
+      "functions": [
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "technologies": [
+        "generative-ai",
+        "agents-automation",
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "point-predictive-news",
+      "name": "Point Predictive News",
+      "owner": "Point Predictive",
+      "type": "vendor",
+      "url": "https://pointpredictive.com/news/",
+      "priority": "medium",
+      "cadence": "daily",
+      "functions": [
+        "lending-collections",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "fraud-identity",
+        "decisioning-underwriting"
+      ]
+    },
+    {
+      "id": "cuna-news",
+      "name": "America's Credit Unions News",
+      "owner": "America's Credit Unions",
+      "type": "industry",
+      "url": "https://www.americascreditunions.org/news-media/news",
+      "priority": "medium",
+      "cadence": "daily",
+      "functions": [
+        "cross-functional"
+      ],
+      "technologies": [
+        "cross-technology"
+      ]
+    },
+    {
+      "id": "nafcu-legacy-reference",
+      "name": "Credit Union Policy and Advocacy Signals",
+      "owner": "Industry associations",
+      "type": "industry",
+      "url": "https://www.americascreditunions.org/advocacy",
+      "priority": "medium",
+      "cadence": "weekly",
+      "functions": [
+        "risk-compliance",
+        "board-strategy"
+      ],
+      "technologies": [
+        "governance-risk"
+      ]
+    }
+  ]
+}

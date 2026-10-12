@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-05",
+  "checkedAt": "2026-10-05T13:38:09.883854+00:00",
+  "trigger": "parent-delegated existing approved multimedia coordination; no new schedule",
+  "baseMainSHA": "b57bad309a33c7e4abc1dba7b61315959c42f87a",
+  "status": "no-media-readiness-change; existing holds preserved",
+  "production": {
+    "deploymentId": "dpl_D8Vpt71Qnyc2EmgHx7rMzfQ4W1fQ",
+    "state": "READY",
+    "target": "production",
+    "sha": "b57bad309a33c7e4abc1dba7b61315959c42f87a",
+    "verifiedOperationsRun": 37305501540,
+    "receiptCompletedAt": "2026-10-05T11:50:37.822Z",
+    "receiptStatus": "verified",
+    "receiptMutationActions": 0,
+    "receiptErrors": 0
+  },
+  "publisher": {
+    "date": "2026-10-05",
+    "fullArticleCount": 2,
+    "status": "scheduled",
+    "cadenceUnchanged": "2/1/2/1/2; media never increments fullArticleCount",
+    "socialItemId": "linkedin-occ-crypto-trust-charter-lawsuit-2026-10-05",
+    "postId": "6ac3895753279f4f19be5b8f",
+    "scheduledFor": "2026-10-05T12:30:00-04:00",
+    "companyChannelId": "6a53df0880cc80cdcaa76fb8",
+    "note": "Not yet due at check; preserve existing slot, no resubmission."
+  },
+  "chart": {
+    "id": "chart-2026-10-06",
+    "status": "prepared-unpublished",
+    "publicationNotBefore": "2026-10-06",
+    "sourceCheckedAt": "2026-10-04T13:17:14.127249+00:00",
+    "latestPackageLibraryId": "libfile_6f72c0cd231481918ba4ec38e5f8f7cc",
+    "latestPackageSHA256": "07c6d1f1fe2629540145c8e7a68acf755547293b6d2d9491755fbaf5c52a199b",
+    "localPackageHashReverified": true,
+    "publicPageHTTP": 404,
+    "publicImageHTTP": 404,
+    "socialDecision": "held-future-provider-inventory-unknown",
+    "nextAction": "Existing publisher rechecks source freshness, exact production page/image, High-news precedence, future provider inventory, parent dedup and shared caps on/after October6; no queue item added this pass."
+  },
+  "cartoon": {
+    "id": "cartoon-2026-10-09",
+    "status": "prepared-unpublished",
+    "publicationNotBefore": "2026-10-09",
+    "publicPageHTTP": 404,
+    "publicImageHTTP": 404,
+    "socialDecision": "held-underlying-publication-already-promoted",
+    "existingBoardReportingPostId": "6abcf58bf9fcc8033908b104",
+    "nextAction": "Website release can qualify independently on/after October9; preserve social dedup and do not invent another parent identity."
+  },
+  "shortVideo": {
+    "id": "short-video-2026-10-08",
+    "status": "review-blocked",
+    "nativeVideo": null,
+    "requiredNarrationReplacement": "On September thirtieth, Mastercard announced an AI-transaction probability score entering U.S. testing.",
+    "owner": "existing provider/audio-video handoff owner",
+    "screenDependency": "Mac screen/foreground browser/ElevenLabs reserved by active job application executor 01a10c2d-3d51-74ab-8e7a-feb0b792f023. No screen or provider attempt made.",
+    "remainingGates": [
+      "date-correct narration from existing authorized owner",
+      "actual listening for every word, pronunciation, pacing and splice quality",
+      "caption/waveform/downstream visual alignment",
+      "remove review label only after acceptance",
+      "source freshness/testing qualifier and canonical episode/Spotify links",
+      "finished MP4 measured metadata/hash, burned-in captions, transcript and exact production identity"
+    ],
+    "correctedMasterReceivedThisPass": false
+  },
+  "credits": {
+    "currentBalanceVerified": false,
+    "lastObservedRemaining": 28856,
+    "observationDate": "2026-10-01",
+    "currentBalanceQuote": null,
+    "creditsConsumed": 0,
+    "monthlyCeiling": 30000,
+    "noOverage": true,
+    "note": "Historical balance is not current entitlement. Existing owner refreshes billing period, balance and model-specific bounded correction cost before synthesis."
+  },
+  "videoReviewCandidates": [
+    {
+      "assetId": "cuai-weekly-2026-09-28",
+      "canonicalUrl": "https://creditunionainews.com/episodes/cuai-weekly-2026-09-28.html",
+      "publicPageHTTP": 200,
+      "providerVideoUrl": "https://www.youtube.com/watch?v=XO2EyGXyC_Q",
+      "providerVideoId": "XO2EyGXyC_Q",
+      "actualLinkedInProviderPostId": null,
+      "assetSha256": null,
+      "displayedPublicationDate": "2026-09-28",
+      "exactActualPublicationTime": null,
+      "reviewIdentifiedAt": "2026-10-05T13:38:09.883854+00:00",
+      "livePlaybackStatus": "pending-access; not watched",
+      "craftReviewStatus": "pending-genuine-viewing; no examples viewed",
+      "viewedExamples": [],
+      "selectedNextEpisodeImprovement": null,
+      "accessLimitations": [
+        "Public episode response contains the expected YouTube embed; HTTP200 is not playback verification.",
+        "YouTube fetch was throttled; no retry or viewing claim.",
+        "Foreground screen/browser unavailable due to active application executor; defer actual playback and 2–3-example craft review to existing owner."
+      ],
+      "sevenDayStatus": "review-candidate on seven-day anniversary; exact-age/provider evidence unknown",
+      "evidenceSourceRun": 37305501540,
+      "measurementAsOf": "2026-10-05T11:50:35.699Z",
+      "canonicalPageAggregate": {
+        "window": "trailing seven days, not verified exact-age post snapshot",
+        "pagePath": "/episodes/cuai-weekly-2026-09-28.html",
+        "screenPageViews": 1,
+        "activeUsers": 1,
+        "userEngagementDurationSeconds": 324,
+        "limitations": "Site activity is not a video view, completion or retention. Exact publication timestamp, YouTube analytics and internal-QA exclusion are unverified; no causal inference."
+      },
+      "nextAction": "Existing coordinator genuinely reviews public playback plus 2–3 accessible examples after screen handoff, selecting one original next-episode improvement within existing rights/budget/caps; use fresh exact-age metrics when genuinely available."
+    }
+  ],
+  "reservations": {
+    "selectorOctober5": "reserved-existing-OCC-item",
+    "selectorOctober6": "no-qualified-selection; prepared item remains in planned, no public asset",
+    "selectorOctober9": "no-qualified-selection; prepared item remains in planned and social-dedup held",
+    "futureProviderInventory": "unknown; current trusted Buffer reporting is sent-only",
+    "queueWrites": 0,
+    "providerMutations": 0
+  },
+  "policyAndAssetsReused": true,
+  "postPublicationCraftPolicyPresent": true,
+  "priorLocalQAReused": "October4 four 390/1440 desktop/mobile cases passed; current app/style/design code unchanged since that QA",
+  "newBrowserOrScreenWork": 0,
+  "newArticles": 0,
+  "newMediaReleased": 0,
+  "october1EpisodeRegenerated": false,
+  "scheduleChanges": 0,
+  "X": "blocked unchanged",
+  "timingTest": "planned baseline-gated unchanged",
+  "privacy": "No raw search queries, private analytics payloads, credentials or transfer URLs copied into these records.",
+  "validation": {
+    "targetedMediaTestsPassed": 28,
+    "priorLedgerTextPreserved": true,
+    "manifestAssetsAndOtherFieldsPreserved": true,
+    "sharedQueueDailyCoveragePolicyUnchanged": true,
+    "noPublicationOrProviderOrScreenActions": true
+  }
+}

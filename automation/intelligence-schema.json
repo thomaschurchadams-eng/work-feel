@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-19",
+  "recordTypes": {
+    "vendor": {
+      "required": [
+        "id",
+        "name",
+        "category",
+        "capabilities",
+        "functions",
+        "technologies",
+        "signals",
+        "sources",
+        "lastReviewed"
+      ],
+      "signalRequired": [
+        "date",
+        "type",
+        "summary",
+        "evidenceLevel",
+        "sourceUrl",
+        "relatedCoverage"
+      ],
+      "allowedSignalTypes": [
+        "product-update",
+        "partnership",
+        "deployment",
+        "funding",
+        "acquisition",
+        "pricing",
+        "integration",
+        "governance-update"
+      ],
+      "allowedEvidenceLevels": [
+        "primary",
+        "corroborated",
+        "reported",
+        "vendor-claim"
+      ]
+    },
+    "regulatory": {
+      "required": [
+        "id",
+        "authority",
+        "jurisdiction",
+        "functions",
+        "technologies",
+        "developments",
+        "lastReviewed"
+      ],
+      "developmentRequired": [
+        "date",
+        "type",
+        "title",
+        "summary",
+        "status",
+        "sourceUrl",
+        "relatedCoverage"
+      ],
+      "allowedTypes": [
+        "guidance",
+        "rulemaking",
+        "hearing",
+        "enforcement",
+        "speech",
+        "resource",
+        "supervisory-signal"
+      ],
+      "allowedStatuses": [
+        "proposed",
+        "active",
+        "final",
+        "informational",
+        "monitoring"
+      ]
+    }
+  },
+  "routing": {
+    "trackerOnly": "Verified evidence that changes a vendor or regulator record but does not justify a standalone story.",
+    "alert": "New, time-sensitive and operationally material evidence.",
+    "news": "A significant current development requiring sourced explanation.",
+    "insight": "Durable analysis supported by multiple intelligence records.",
+    "benchmark": "A recurring comparison with sufficient normalized records and disclosed methodology."
+  },
+  "guardrails": [
+    "Never infer adoption from marketing claims.",
+    "Label vendor claims as vendor-claim unless independently corroborated.",
+    "Never invent pricing, deployments, quotes, integrations or regulatory expectations.",
+    "Preserve source URLs and an audit trail when records change.",
+    "Do not assign a numeric ranking until the methodology and sample are publishable."
+  ]
+}

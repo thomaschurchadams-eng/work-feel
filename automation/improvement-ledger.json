@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-12T12:00:00Z",
+  "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
+  "entries": [
+    {
+      "id": "site-script-compatibility-2026-08-17",
+      "evidence": "Multiple recent published articles referenced /assets/site.js while the canonical article template references /assets/app.js; production /assets/site.js returned 404 and affected pages therefore lacked reliable CUAI custom editorial events.",
+      "proposedChange": "Restore /assets/site.js as a backward-compatible loader for /assets/app.js and make validation fail when a new article references a missing shared script.",
+      "expectedBenefit": "Restore custom editorial measurement on historical pages and prevent recurrence.",
+      "risk": "low",
+      "validation": ["syntax checks passed","Vercel preview READY","preview /assets/site.js and /assets/app.js HTTP 200","PR #131 merged","production /assets/site.js HTTP 200","GA4 and Buffer stayed healthy"],
+      "status": "completed",
+      "result": "PR #131 merged; historical custom-event history before repair remains quality-labeled incomplete where the script was missing.",
+      "rollback": "Revert PR #131 and the validator change."
+    },
+    {
+      "id": "search-console-direct-read-2026-08-13",
+      "evidence": "The optional Search Console query embedded in the GA4 endpoint was incompatible. Two speculative GA4-query repairs failed Production validation and were rolled back; an isolated direct Search Console read path was then validated using existing read-only credentials.",
+      "proposedChange": "Use the isolated direct Search Console API read path for aggregate search-performance reporting instead of retrying incompatible GA4 Core Reporting combinations.",
+      "expectedBenefit": "Restore search reporting without risking core GA4.",
+      "risk": "low-to-medium",
+      "validation": ["fresh branch","Preview HTTP 200 ok=true source=google-search-console-api","PR #136 merged","Production endpoint HTTP 200 with siteFullUser aggregate data","no runtime errors"],
+      "status": "completed",
+      "result": "PR #136 merged; direct Search Console is the validated fallback while the optional embedded GA4 query remains isolated and non-blocking.",
+      "rollback": "Revert PR #136; core GA4 is independent."
+    },
+    {
+      "id": "source-health-refresh-2026-08-17",
+      "evidence": "The source-health ledger became stale and a bounded refresh missed its internal deadline.",
+      "proposedChange": "Refresh the existing registry and recent primary sources; treat overdue queued improvements as handoff conditions.",
+      "expectedBenefit": "Reduce stale-source and broken-link risk without burdening the daily publisher.",
+      "risk": "low",
+      "validation": ["28 registered URLs rechecked","15 recent primary official sources verified","23 healthy / 3 redirected / 2 temporarily unavailable","no removed or contradicted source"],
+      "status": "completed",
+      "owner": "reliability/source-health maintenance",
+      "result": "Recovered August 19; source-health state is current through 2026-08-19 with temporary-unavailable status preserved conservatively.",
+      "rollback": "Revert only inaccurate source-status or redirect changes."
+    },
+    {
+      "id": "social-queue-sent-state-reconciliation-2026-08-18",
+      "evidence": "Buffer authoritatively showed tracked posts as sent while repository queue items repeatedly remained scheduled.",
+      "proposedChange": "Reconcile an exact Buffer-sent item to the existing queue item in place without creating a replacement or calling the scheduler.",
+      "expectedBenefit": "Keep delivery state authoritative and prevent duplicate recovery risk.",
+      "risk": "low",
+      "validation": ["exact queue-item/postId plus non-null sentAt required","idempotent fields only","immutable UTM/schedule/channel/image preserved","multiple later sent-state recoveries used the rule successfully"],
+      "status": "completed",
+      "owner": "CUAI Operating System / Reliability Watch",
+      "result": "Exact-match reconciliation is established and has been applied repeatedly without duplicate posts or scheduler calls.",
+      "rollback": "Revert only incorrect sent-state fields if exact evidence is later disproved."
+    },
+    {
+      "id": "experiment-state-cross-ledger-sync-2026-08-20",
+      "evidence": "Experiment cohort counts diverged between daily-cycle/coverage ledgers and management guidance.",
+      "proposedChange": "Reconcile experiment cohort status against current production ledgers during every CEO run before changing strategy state.",
+      "expectedBenefit": "Prevent conflicting agent instructions and accidental experiment overrun.",
+      "risk": "low",
+      "validation": ["daily-cycle and coverage ledgers independently agreed","growth strategy was corrected","no external behavior changed"],
+      "status": "completed",
+      "result": "Cross-ledger synchronization is now a CEO reporting discipline.",
+      "rollback": "Revert only management-state wording if underlying production evidence is later shown wrong."
+    },
+    {
+      "id": "ai-technology-mission-fit-gate-2026-08-21",
+      "evidence": "A strong general credit-union governance story passed the prior relevance rule despite lacking a substantive AI/technology thesis.",
+      "proposedChange": "Require every future full article to have a substantive, source-supported AI or technology operating implication; never manufacture an AI angle.",
+      "expectedBenefit": "Reduce brand dilution while preserving broad functional coverage through technology/AI lenses.",
+      "risk": "low-to-medium",
+      "validation": ["publishing rules and publisher policy aligned","hard stop added without weakening sourcing","existing August 21 package grandfathered","Preview READY"],
+      "status": "completed",
+      "result": "The publisher now requires substantive AI/technology mission fit prospectively.",
+      "rollback": "Revert the August 21 mission-fit policy edits; published content is unaffected."
+    },
+    {
+      "id": "search-compounding-growth-2026-08-24",
+      "evidence": "At experiment open, OSFI/RBFCU/Velera produced 5 rolling-seven-day Search Console clicks and Google organic was 6 sessions / 4 engaged / 66.7% engagement. The treatment added contextual links and allowed search evidence only as a tie-breaker between otherwise-equivalent editorial candidates.",
+      "proposedChange": "Run a bounded 14-day search-compounding treatment while preserving sourcing, mission fit, material-news priority and coverage diversity.",
+      "expectedBenefit": "Convert emerging organic visibility into qualified acquisition without turning CUAI into an SEO-led newsroom.",
+      "risk": "low",
+      "validation": ["feature branch and READY Preview validated at launch","no schedule/source/editorial authority change","direct Search Console remained healthy","September 1 review used exact Production GA4 and direct Search Console"],
+      "status": "completed",
+      "owner": "CUAI CEO / Growth",
+      "result": "Stopped early on September 1 under the experiment's own quality trigger. Search Console for August 25-31 shows the treatment cluster at 1 click, entirely Velera, versus the 5-click baseline and >=8 target. GA4 Google organic reached 8 sessions but only 3 engaged, 37.5% versus the >=50% guardrail at a usable sample of 8. OSFI and Velera rankings remain strong at positions 2.7 and 7.28, so the result does not indicate ranking collapse. The search-supported editorial topic tie-breaker is removed. Existing contextual links remain only where independently editorially useful and will not be expanded as part of this stopped treatment.",
+      "rollback": "Search-supported editorial tie-breaker removed from growth guidance. Existing schedules, sourcing and factual content unchanged."
+    },
+    {
+      "id": "alert-policy-single-source-2026-08-24",
+      "evidence": "Repeated recoveries were required because Alert quantity semantics were duplicated across multiple policy/runbook/state surfaces.",
+      "proposedChange": "Enforce max-one/no-quota semantics across authoritative policy while preserving compatibility-sensitive legacy state metadata until consumers can be ruled out.",
+      "expectedBenefit": "Prevent repeated policy drift without blind schema deletion.",
+      "risk": "low-to-medium",
+      "validation": ["PRs #143-145 aligned primary policy surfaces","PR #151 added executable consistency validator","Preview and Production READY","GA4/Buffer/Search Console remained healthy"],
+      "status": "completed",
+      "owner": "Reliability Watch / CUAI Operating System",
+      "result": "PR #151 closed the repeated Alert-quota drift class while preserving legacy non-authoritative metadata for compatibility.",
+      "rollback": "Revert PR #151 to remove the consistency validator."
+    },
+    {
+      "id": "publisher-outcome-observability-2026-08-25",
+      "evidence": "The August 25 publisher task ran but left no dated article, non-publication or blocker state, making a legitimate quality-gated no-publication indistinguishable from a failed/missing run.",
+      "proposedChange": "Require every scheduled article cycle to persist one dated machine-readable outcome: published, no-article-published with evidence, or blocked with exact blocker when GitHub is writable.",
+      "expectedBenefit": "Make publisher outcomes auditable and recoverable without increasing publication pressure.",
+      "risk": "low",
+      "validation": ["PR #149 scoped to publisher/runbook policy","Preview READY","PR #149 merged","August 26 and subsequent cycles persisted complete dated outcomes"],
+      "status": "completed",
+      "owner": "CUAI CEO / Reliability Watch",
+      "result": "Prospective observability contract is working; the historical August 25 outcome remains unknown rather than reconstructed.",
+      "rollback": "Revert PR #149; published content and schedules are unaffected."
+    },
+    {
+      "id": "usage-ledger-full-blob-write-2026-09-01",
+      "evidence": "The August 31 Operating System recovery was verified on the agent bus, but a source-controlled usage-ledger append was left pending because the previous runtime only used truncated bounded file retrieval and correctly refused to reconstruct a large append-only ledger from partial history.",
+      "proposedChange": "Use the exact current Git blob SHA to retrieve the complete UTF-8 ledger before any whole-file mutation, preserve every historical entry byte-for-byte in logical content, then append the missing verified recovery entry and the current CEO entry.",
+      "expectedBenefit": "Restore safe append-only workload attribution without truncating audit history and provide a reusable write pattern for large JSON ledgers.",
+      "risk": "low",
+      "validation": ["current file blob SHA resolved from main","Git blob retrieval returned the complete ledger through the August 28 final entry","no historical entry was discarded in the prepared replacement","new entries use operational-proxy only and contain no invented token/cost data"],
+      "status": "completed",
+      "owner": "CUAI CEO / Reporting",
+      "result": "Safe full-ledger retrieval is available in this runtime and is used in the September 1 reporting branch to close the prior append-path degradation.",
+      "rollback": "If validation finds any historical mismatch, revert only the September 1 ledger commit and retain the agent-bus recovery evidence."
+    },
+    {
+      "id": "alert-atomic-state-preservation-2026-09-02",
+      "evidence": "The qualified September 1 AI-law Alert handoff hit the same safe-edit limitation twice. The first recovery branch changed only assets/app.js and was correctly left unmerged because the authoritative Alert contract requires an atomic package. The second branch attempted the atomic state write, but compare against September 2 main showed automation/daily-cycle-state.json at +488/-3276, which would discard most audit history even though its Preview was READY.",
+      "proposedChange": "Make complete-blob retrieval and explicit history-preservation validation mandatory for Alert/state whole-file writes. Add an executable daily-cycle preservation validator and require connector-only runs to perform the equivalent branch-vs-main history check before merge.",
+      "expectedBenefit": "Prevent a recovery workflow from corrupting append-style newsroom state, turn repeated connector limitations into a deterministic safe-stop rule, and make READY Preview insufficient evidence when state history is destructive.",
+      "risk": "low",
+      "validation": ["new validator passes Node syntax check","synthetic preserved-history test passes","synthetic one-entry history shrink is rejected","current unsafe recovery branch remains unmerged after compare proved destructive state shrink","authoritative Operating System policy now requires full-blob retrieval and a pre-merge preservation invariant"],
+      "status": "completed",
+      "owner": "CUAI CEO / Reliability Watch / CUAI Operating System",
+      "result": "The destructive recovery path is contained and a durable non-destructive state-write contract is prepared on the September 2 CEO branch. The qualified Alert remains unpublished until a workflow can produce the complete atomic package without dropping history; no partial or destructive production change is accepted.",
+      "rollback": "Revert the September 2 Operating System policy and validator additions. The blocked recovery branches and Production content remain otherwise unchanged."
+    },
+    {
+      "id": "cuai-to-cai-attribution-2026-09-03",
+      "evidence": "The sitewide sponsored CAI banner previously used nonstandard source/medium/campaign query parameters, so CUAI could not reliably join its own banner interaction to downstream CAI acquisition under the established UTM convention.",
+      "proposedChange": "Standardize the existing sponsored banner destination to utm_source=creditunionainews, utm_medium=site_banner, utm_campaign=cai_early_access, utm_content=sitewide_banner and add a privacy-safe cai_banner_click event without changing the destination, disclosure or external authority.",
+      "expectedBenefit": "Make G5 CUAI-to-CAI demand generation measurable from the CUAI side and enable downstream CAI reconciliation without treating missing attribution as zero demand.",
+      "risk": "low",
+      "validation": ["PR #175 limited the change to assets/app.js","standard UTM fields now match normal analytics semantics","dedicated cai_banner_click event contains no PII or free-form reader input","change merged as f060a1995350f719a0dd44271cb3c1a9d6173dfd","subsequent Production and analytics checks remain healthy"],
+      "status": "completed",
+      "owner": "CUAI CEO / Growth",
+      "result": "CUAI banner-side attribution is now standardized and privacy-safe. Downstream CAI sessions/intent still require CAI-side evidence before G5 progress can be claimed; unavailable is not zero.",
+      "rollback": "Revert PR #175 to restore the prior banner query parameters and remove the dedicated banner event."
+    },
+    {
+      "id": "stale-alert-pr-conflict-prevention-2026-09-03",
+      "evidence": "PR #176 staged a SAR-confidentiality Alert during candidate evaluation, but the same Operating System cycle later recorded a definitive no-Alert outcome for that candidate. Leaving the mergeable PR open created a contradictory future publication path.",
+      "proposedChange": "Treat any open Alert PR that contradicts a later same-cycle completion event as a material conflicting handoff; close or supersede it before the operating cycle is considered clean.",
+      "expectedBenefit": "Prevent rejected Alert candidates from becoming live later through stale branches and preserve the final operating decision as authoritative.",
+      "risk": "low",
+      "validation": ["later same-cycle no-Alert completion explicitly rejected the candidate","PR #176 was closed without merge","current main and live Alerts remained unchanged","PR #177 recorded the reliability recovery and workload entry","post-recovery Production remained READY with no runtime errors"],
+      "status": "completed",
+      "owner": "Reliability Watch / CUAI Operating System",
+      "result": "The stale conflicting Alert PR was contained without publishing rejected content. Future same-cycle contradictions are now a reliability condition rather than routine branch clutter.",
+      "rollback": "No production rollback is required; reopen the stale PR only if newer verified evidence supersedes the final no-Alert decision."
+    },
+    {
+      "id": "news-hub-snippet-treatment-2026-09-04",
+      "evidence": "Direct Search Console shows /news.html at 176 impressions / 0 clicks / position 14.54 over the seven days ending September 3 and 496 impressions / 0 clicks / position 16.75 over 28 days. The current title is generic while the visible H1 already states the specific page intent: AI News for Credit Unions.",
+      "proposedChange": "Run a metadata-only title/description experiment on /news.html, preserving the canonical URL, route, body, article ordering, editorial selection and publication cadence.",
+      "expectedBenefit": "Convert existing Google visibility into qualified visits without steering editorial coverage toward search demand.",
+      "risk": "low if changed with a narrow patch; elevated if the only available mutation requires whole-file replacement of the large shared static page",
+      "validation": ["repeated page-specific Search Console evidence supports the hypothesis","current metadata and H1 were directly inspected","whole-file replacement is not accepted as a safe way to implement this metadata-only treatment in the current CEO connector runtime"],
+      "status": "queued-safe-edit-required",
+      "owner": "CUAI CEO / Growth",
+      "result": "Not opened as an active experiment in this run. The second experiment slot remains free until the metadata can be changed through a narrow, reviewable patch or equivalent safe edit path; no risky rewrite was merged merely to create activity.",
+      "rollback": "Not applicable until treatment is implemented; if later opened, rollback is metadata-only restoration."
+    },
+    {
+      "id": "on-screen-ai-presenter-format-research-2026-10-05",
+      "evidence": "Tom proposed an on-screen AI person/presenter format. Existing reference-review worker reported genuinely observed frames/transcript from ZeroZero's Noon ET Bulletin Oct5, approximately 40 seconds: vertical split with story photos above a chest-up front-facing female presenter, changing mint/dark/white grid backgrounds and an opening brand tile. Embedded text and YouTube captions compete. These are the worker's observations, not this recording agent's viewing or listening.",
+      "proposedChange": "Research a small CUAI presenter opening followed by source graphics, one caption layer, source/date labeling, transparent AI-presenter labeling if a synthetic presenter is used, and explicit editor accountability. This is an alternative future format research option only; await verified official provider options/cost/usage findings before any bounded trial.",
+      "expectedBenefit": "Hypothesis only: a visible presenter may offer a distinct news-update format. No measured benefit or performance claim.",
+      "risk": "Pending review: presenter/voice permissions, disclosure, source fidelity, accessibility, visual quality, provider cost/credits and actual complete-cut hearing/viewing QA.",
+      "validation": [
+        "No avatar creation, production, provider trial, spend, new asset purchase or publication authorized",
+        "No intro sound selected; correction listening/splice/caption gates remain open",
+        "Reference URL and worker-observed frames/transcript received; presenter origin/vendor and hearing/lip-sync remain unverified",
+        "Official pricing/help/terms/moderation/licensing pages reviewed read-only on October5; actual account unknown and annual/rate details retain confirmation caveats",
+        "No provider trial or private production authorized; broad terms restrictions remain a research gate"
+      ],
+      "status": "research-only-no-production-authorization",
+      "owner": "existing CUAI media coordinator / current reference-review worker",
+      "outcomeCheck": {
+        "acceptedDirection": "Explore a visible AI-presenter news opening, subject to existing rights, disclosure, hearing and editorial gates.",
+        "latestArtifact": "The October 12 media handoff records a separate caption-led silent short-video review alternative for October 15; it is local and unpublished (automation/reports/cuai-media-coordination-2026-10-12.json).",
+        "acceptanceGap": "Text-led silent cards do not demonstrate the accepted visible-presenter direction. The separate alternative is not a substitute or presenter acceptance receipt.",
+        "nextStep": "The existing media coordinator should compare each candidate with this direction, explain divergence, and propose the smallest permitted presenter-compatible review path using verified provider, rights and hearing evidence; carry out only steps already authorized.",
+        "acceptanceEvidence": "A reviewable presenter treatment with permitted rights, disclosure, source fidelity, accessibility and hearing/lip-sync QA, followed by Tom’s editorial acceptance before any production use.",
+        "deferredTrigger": "Permitted provider route, rights and hearing-capable review evidence become available; unresolved gates stay blocked."
+      },
+      "result": "Idea recorded only. No avatar or presenter asset created; no provider credits used, no schedule/executor change, no publication.",
+      "rollback": "Not applicable: no production treatment or asset exists. Retain or close the research candidate after user review.",
+      "referenceUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0",
+      "referenceTitle": "ZeroZero — Noon ET Bulletin Oct5",
+      "referenceLimitations": "The Made with AI disclosure does not prove the presenter is synthetic or identify a vendor. Actual hearing and lip-sync QA are unverified. No provider has been selected.",
+      "providerResearch": {
+        "checkedAt": "2026-10-05",
+        "accountEntitlements": "unknown; no account accessed",
+        "heygen": {
+          "publicPricing": "Creator $29 monthly with 600 credits confirmed on public pricing page. Parent worker reported $24/month annual ($288/year) and Avatar IV Video Look 31 / Avatar V 48 credits per minute; annual quote and generation rates require fresh official/account confirmation before any use.",
+          "pricingSource": "https://www.heygen.com/pricing",
+          "freeUse": "Section4 restricts Free output to personal, noncommercial/internal evaluation and prohibits redistribution/commercial use. Do not produce a public CUAI trial asset on Free.",
+          "termsSource": "https://www.heygen.com/terms",
+          "additionalTermsCaveat": "Section2 also prohibits accessing Services for benchmarking, comparative or competitive purposes; a proposed private comparison is not automatically a permitted provider trial. Resolve permitted evaluation purpose before execution.",
+          "narration": "Official Studio guide documents upload of existing prerecorded audio; no upload authorized.",
+          "narrationSource": "https://help.heygen.com/en/articles/11049837-create-your-first-video-in-our-studio",
+          "moderation": "Political opinions and content related to political matters fall within broad non-permissible wording; do not assume all regulatory/policy news is acceptable.",
+          "moderationSource": "https://www.heygen.com/moderation-policy"
+        },
+        "synthesia": {
+          "publicPricing": "Starter $29/month billed monthly confirmed. Basic public page states 10 minutes monthly with 500 credits; download/logo removal appear as paid features. Annual pricing text is inconsistent and must be confirmed at checkout before any purchase; no checkout authorized.",
+          "pricingSource": "https://www.synthesia.io/pricing",
+          "narration": "External prerecorded narration upload is Enterprise-only under official July23,2026 help article; low-cost Starter therefore does not establish reuse of approved Liam audio.",
+          "narrationSource": "https://help.synthesia.io/en/articles/6341873-how-do-i-upload-an-audio-file-to-synthesia",
+          "licensing": "Official stock/synthetic-avatar guidance allows organic website/social sharing, prohibits any paid promotion; custom-avatar permissions differ. No paid promotion, custom likeness or clone authorized.",
+          "licensingSource": "https://help.synthesia.io/en/articles/6341928-synthesia-video-licensing"
+        },
+        "possibleFutureTrial": "Research proposal only: private 10–15-second neutral technical insert using an appropriately licensed stock presenter, explicit AI-presenter label and editor accountability; assess fit against source graphics without claiming synthetic provenance for the reference. Provider terms, existing audio permissions, actual hearing/lip-sync and fresh account costs must be cleared first.",
+        "executionAuthorization": "none: no new account, clone, upload, generation, purchase, spend, publication or final presenter/intro selection"
+      }
+    },
+    {
+      "id": "broadcast-news-opener-reference-research-2026-10-05",
+      "evidence": "Tom rejected the three cue concepts after receiving the corrected sound-only samples: these are not intro sounds. The intended brief is a polished news-style opening leading into the presenter. The isolated sound effects missed that brief; louder exports addressed level only and did not resolve the concept.",
+      "proposedChange": "Reference-first research by the existing parent research worker: find 2–3 professionally produced news-opener previews with verified licensing context, document each actual brand cue/build/resolution/voice handoff, then establish a suitable CUAI opening structure for hearing-capable review before proposing any new audio.",
+      "expectedBenefit": "Hypothesis only: a professional news-opening structure may better fit the intended presenter format; no benefit, selection or approval is claimed.",
+      "risk": "Reference licensing and production permission must be verified independently; previews are references, not licensed production assets. Actual hearing quality, voice handoff, accessibility, source fidelity and final-release acceptance remain unverified.",
+      "validation": [
+        "All three current cue concepts rejected as intro options, including original comparisons, sound-only revisions and louder comparison revisions",
+        "No further variants, new audio, generation credits, spending or files authorized before a better reference and hearing review",
+        "Existing parent research worker owns professional reference discovery; no duplicate worker, executor or schedule created",
+        "Narration correction remains received; original sentence boundaries, splice/caption/graphics alignment and full-cut hearing QA still pending"
+      ],
+      "status": "reference-research-only-current-cues-rejected",
+      "owner": "existing parent research worker / existing CUAI media coordinator",
+      "result": "Professional reference candidates recorded only; actual audition, exact permitted treatment, licence and hearing review pending. No intro selected; current procedural cue families remain rejected.",
+      "rollback": "No production treatment exists; retain rejected review artifacts as history without publishing them.",
+      "rejectedConcepts": [
+        {
+          "option": 1,
+          "name": "sonic sting",
+          "originalLibraryId": "libfile_4b83e374bd3481918c776776b5147aef",
+          "soundOnlyLibraryId": "libfile_fbe6979b9ce481919b8502064a6a7c1a",
+          "louderComparisonLibraryId": "libfile_8f679885b23c8191aa023e05b9ec2583",
+          "decision": "rejected-as-intro-option"
+        },
+        {
+          "option": 2,
+          "name": "percussive cue",
+          "originalLibraryId": "libfile_768e973ddf1c8191b1272abe264fab81",
+          "soundOnlyLibraryId": "libfile_c64ec08a47448191ac577ef9bcf327d0",
+          "louderComparisonLibraryId": "libfile_dec7a3d91b388191bb0948eb9bcc7ab2",
+          "decision": "rejected-as-intro-option"
+        },
+        {
+          "option": 3,
+          "name": "subtle bed",
+          "originalLibraryId": "libfile_739c8dedee988191b3adb95b393c30fd",
+          "soundOnlyLibraryId": "libfile_e95a361bc77881918ef7f2d529ab6125",
+          "louderComparisonLibraryId": "libfile_3e22eea490a88191ae7364f2a6db4391",
+          "decision": "rejected-as-intro-option"
+        }
+      ],
+      "narrationCorrectionLibraryId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+      "selectedIntro": null,
+      "referenceResearch": {
+        "reportedAt": "2026-10-05T20:37:00Z",
+        "provenance": "Parent research worker findings; two preview links delivered to user. This recording agent has not played the previews or independently certified purchasing/licensing terms. Recheck exact licence, account, claims process and price before any authorized production use.",
+        "references": [
+          {
+            "name": "WarmWolf — Tech News Logo",
+            "url": "https://audiojungle.net/item/tech-news-logo/62517237",
+            "role": "modern opener audition candidate",
+            "description": "Creator-described minimal modern electronic news logo, 9 seconds",
+            "reportedPrice": "$7 before tax/handling; not purchased",
+            "reportedRights": "Music Standard permits commercial web/social use and edits; connected-series limit reported as 52 editions within one year before renewal/additional licence. No standalone audio/source redistribution or trademark use.",
+            "reportedClaims": "Seller reports no Content ID and no PRO; not an independent claim-free certification.",
+            "status": "reference-only-unpurchased-unlicensed-unheard"
+          },
+          {
+            "name": "David Fesliyan — The Team",
+            "url": "https://www.fesliyanstudios.com/royalty-free-music/download/the-team/370",
+            "role": "traditional broadcast comparison",
+            "description": "Creator-provided news-intro brass A/B versions",
+            "reportedPrice": "Commercial donation licence at chosen amount; no donation or licence acquired",
+            "reportedRights": "Reported perpetual project use and no attribution after licence. No standalone music distribution or YouTube live-stream use.",
+            "reportedClaims": "YouTube channel clearance needed; claims remain possible.",
+            "status": "reference-only-unpurchased-unlicensed-unheard"
+          },
+          {
+            "name": "Kevin MacLeod — News Theme",
+            "url": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100544",
+            "role": "free attribution-based research alternative",
+            "description": "Reported CC BY 4.0 commercial/edit use with creator credit, licence link and change indication",
+            "reportedRights": "Attribution/licence/change notice obligations must be satisfied; no asset has been downloaded or adapted in this task.",
+            "reportedClaims": "Content ID preregistered claim process reported; not claim-free.",
+            "status": "reference-only-unheard-no-production-use"
+          }
+        ],
+        "recommendation": "Audition the modern candidate first for composed build/title/resolution and ducking into voice. A 2–5-second CUAI treatment is only a proposal; user has not selected it and actual structure/timing cannot be certified without listening.",
+        "executionRestriction": "Do not use paid previews in production. No purchase, asset download, new audio generation, provider credits, spending or intro selection authorized. Keep all previous cue concepts rejected."
+      }
+    },
+    {
+      "id": "checkpointed-incident-recovery-2026-10-12",
+      "source": "Tom approval and operations run 38257568883 on eb075a6",
+      "decision": "accepted",
+      "owner": "reliability-watch",
+      "nextStep": "Review this draft PR; apply bounded recovery only through the existing owner after merge and ordinary authorization checks.",
+      "acceptanceEvidence": "Exact deployment reconciled READY; original incident key closed after verified postconditions; zero duplicate external writes in interrupted and malformed-output cases.",
+      "deferredTrigger": null,
+      "status": "draft-pr",
+      "evidence": "The run exhausted a three-minute identity wait; later exact deployment READY did not close the failed operation and its receipt showed zero side effects.",
+      "proposedChange": "Checkpoint each safe recovery stage, classify failures, reconcile external outcomes before resuming, and close the original incident key only after verification.",
+      "expectedBenefit": "Finish recoverable failed operations without duplicate side effects.",
+      "risk": "Ambiguous provider outcomes and permission denials must stay blocked.",
+      "validation": [
+        "Focused delayed-ready, interrupted-stage, duplicate-callback, malformed-output and permission fixtures added; local Node runtime unavailable."
+      ],
+      "result": "Code and runbook prepared on draft branch; no production recovery triggered.",
+      "rollback": "Revert module and runbook policy change."
+    },
+    {
+      "id": "focused-source-claim-verification-2026-10-12",
+      "source": "Tom approval and Fintel Connect October 7 release",
+      "decision": "accepted",
+      "owner": "daily-publisher",
+      "nextStep": "Review correction and focused fixture before merge; use source-to-claim checks for consequential numbers, dates, attribution and scope.",
+      "acceptanceEvidence": "Fintel denominator matches recommendation answers; Raiz application/funding distinction and clean claims pass focused fixtures; visible correction and ledger record present.",
+      "deferredTrigger": null,
+      "status": "draft-pr",
+      "evidence": "Published Fintel article said over 54% of citations; release says over 54% of recommendation answers cite an affiliate page.",
+      "proposedChange": "Correct the Fintel claim and add a small explicit source-to-claim fixture gate.",
+      "expectedBenefit": "Catch material denominator and scope errors before publication.",
+      "risk": "Fixture checks require an editor to supply exact source evidence and cannot independently establish source truth.",
+      "validation": [
+        "Primary release wording checked directly; focused fixtures added; local Node runtime unavailable."
+      ],
+      "result": "Correction prepared as a draft PR only.",
+      "rollback": "Revert only if source evidence disproves the correction."
+    },
+    {
+      "id": "friday-newsletter-sample-2026-10-12",
+      "source": "Tom-approved Friday sample-first newsletter decision; private sample delivered to Tom",
+      "decision": "accepted-with-gates",
+      "owner": "existing newsroom owner",
+      "nextStep": "Use Tom’s approved private sample as the editorial model for the Friday format. Provider setup and physical mailing address remain separate unresolved gates; no subscriber send or production release is authorized.",
+      "acceptanceEvidence": "Tom approved the delivered sample as the editorial model. Publication readiness still requires source, link and date checks; provider and physical mailing address gates remain unresolved before any subscriber send.",
+      "deferredTrigger": "Provider choice and physical mailing address resolved, followed by separate authorization for subscriber sending or production release.",
+      "status": "sample-editorially-approved-implementation-not-started",
+      "evidence": "Private sample was delivered to Tom and he approved it as the editorial model. Prior task-creation attempts did not start site implementation; newsletter-state editions remains empty and emailSending is not-connected.",
+      "proposedChange": "Review the delivered private sample first, then implement the approved Friday format and assess provider/address setup separately.",
+      "expectedBenefit": "Validate editorial format before email infrastructure.",
+      "risk": "Private sample delivery is not newsletter publication, email delivery to subscribers or a working subscriber system.",
+      "validation": [
+        "Private sample delivered to Tom; no public edition recorded and no provider connected."
+      ],
+      "result": "Private sample delivered and approved as the editorial model. Site implementation, provider setup and subscriber sending have not started.",
+      "rollback": "Revisit approved sample format with Tom before changing it."
+    }
+  ]
+}
+

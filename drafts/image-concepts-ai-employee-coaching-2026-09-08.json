@@ -1,0 +1,44 @@
+[
+  {
+    "id": "coaching-scorecard-soft-illustration",
+    "medium": "soft-editorial-illustration",
+    "subject": "frontline-workflow",
+    "composition": "split-comparison",
+    "perspective": "eye-level",
+    "palette": "terracotta-sky",
+    "lighting": "diffused-overcast",
+    "texture": "ink-wash",
+    "scene": "a-supervisor-and-employee-review-balanced-coaching-signals-while-a-separate-closed-lane-keeps-discipline-and-pay-decisions-outside-the-tool",
+    "topicFit": 96,
+    "editorialClarity": 93,
+    "prohibitedElements": []
+  },
+  {
+    "id": "coaching-scorecard-still-life",
+    "medium": "macro-still-life",
+    "subject": "documents-and-controls",
+    "composition": "overhead-flat-lay",
+    "perspective": "overhead",
+    "palette": "emerald-cream",
+    "lighting": "high-contrast-studio",
+    "texture": "fabric-and-wood",
+    "scene": "six-balanced-measurement-tokens-surround-a-coaching-workbook-while-a-sealed-employment-decision-folder-remains-physically-separated",
+    "topicFit": 94,
+    "editorialClarity": 96,
+    "prohibitedElements": []
+  },
+  {
+    "id": "coaching-scorecard-data-abstraction",
+    "medium": "refined-data-abstraction",
+    "subject": "abstract-data-system",
+    "composition": "asymmetric-editorial",
+    "perspective": "cutaway",
+    "palette": "plum-gold",
+    "lighting": "rim-light",
+    "texture": "frosted-glass",
+    "scene": "six-independent-measurement-lanes-feed-a-coaching-review-station-while-a-quarantined-side-channel-prevents-their-automatic-use-for-pay-discipline-or-promotion",
+    "topicFit": 98,
+    "editorialClarity": 91,
+    "prohibitedElements": []
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-06",
+  "checkedAt": "2026-10-06T12:51:20.626294+00:00",
+  "trigger": "existing approved multimedia coordinator; no new job",
+  "baseMainSHA": "568a18ce5e1c7218a01b04f84cb34fb2c1ec04c3",
+  "status": "chart-published-website-verified; social/video-quality holds preserved",
+  "chart": {
+    "id": "chart-2026-10-06",
+    "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+    "title": "Most credit unions had fewer members. Start the growth discussion with a reconciliation.",
+    "state": "published/end-to-end website verified; not socially published",
+    "assetLibraryId": "libfile_c0671d1987d8819180b11ca97585f127",
+    "assetSHA256": "28830de3f2280236b8dc4e6c23d775c51d916316fa246e13185b9840df1c96cf",
+    "production": {
+      "publicationCommit": "06c985fbfbbe4c7139798310dcc80f5b3dc5c015",
+      "deploymentId": "dpl_GDdVnfpedeXaDp9RM3BMi8xnXkK8",
+      "target": "production",
+      "state": "READY",
+      "verifiedAt": "2026-10-06T12:51:20.626294+00:00",
+      "pageHTTP": 200,
+      "imageHTTP": 200,
+      "imageSHA256": "28830de3f2280236b8dc4e6c23d775c51d916316fa246e13185b9840df1c96cf",
+      "pageSHA256": "8b01bdf5eac6773d1060531d0947b113e460dd12ab0f90d8a0a9536863796e69",
+      "byteIdentical": true,
+      "liveDesktopMobileCasesPassed": 4,
+      "axeViolations": 0,
+      "operationsRun": 37465917141
+    },
+    "sourceURLs": [
+      "https://ncua.gov/analysis/credit-union-corporate-call-report-data/ncua-quarterly-us-map-review/second-quarter-2026",
+      "https://ncua.gov/newsroom/press-release/2026/ncua-releases-2026-q2-state-level-credit-union-data"
+    ],
+    "sourceCheckedAt": "2026-10-06T12:51:20.626294+00:00",
+    "method": "NCUA rounded 56% institution-level decline; approximate 44% complement; not member churn. Editorial membership bridge explicitly attributed to CUAI.",
+    "socialDecision": "held-today-existing-High-article-reservation",
+    "actualProviderPostId": null,
+    "nextOwner": "existing article publisher",
+    "nextAction": "Keep today existing Plaid reservation. Consider chart only in a future genuinely free eligible slot with fresh source/age, provider inventory, parent dedup and shared caps; no automatic rescheduling."
+  },
+  "publisher": {
+    "date": "2026-10-06",
+    "fullArticleCount": 1,
+    "mediaFullArticleCountIncrement": 0,
+    "articleId": "plaid-ai-cash-flow-underwriting",
+    "socialItemId": "linkedin-plaid-ai-cash-flow-underwriting-2026-10-06",
+    "postId": "6ac4d81ed27c7ddce31be028",
+    "scheduledFor": "2026-10-06T11:30:00-04:00",
+    "status": "scheduled",
+    "channelId": "6a53df0880cc80cdcaa76fb8",
+    "receiptRun": 37455053494,
+    "note": "Exact real scheduled receipt, not sent proof; preserve existing reservation."
+  },
+  "runnerRecovery": {
+    "failedRuns": [
+      37370171149,
+      37371010939
+    ],
+    "cause": "GitHub-hosted runner acquisition/internal server errors; no executed job steps",
+    "recoveredRun": 37388020869,
+    "recoveredExactSHA": "f4b3a555d0c0bd9f6d3875e32fc7626e5fa70689",
+    "status": "verified; actions0/errors0",
+    "todayPublisherRun": 37455053494,
+    "todayPublisherOutcome": "verified; existing executor scheduled exactly one Plaid post with real ID; no coordinator replay",
+    "chartRun": 37465917141,
+    "chartOutcome": "verified; actions0/errors0"
+  },
+  "shortVideo": {
+    "id": "short-video-2026-10-08",
+    "state": "prepared review package; release blocked",
+    "correctionLibraryId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+    "correctionSHA256": "3f1e4f51648a0c51c09f20d5494766f95fb75ad572889d7dd1e6ec2baea77277",
+    "actualCorrectionDebitAlreadyRecorded": 103,
+    "nativeVideo": null,
+    "actualListeningCompleted": false,
+    "certifiedCutpoints": false,
+    "spliceAndCaptionAlignmentCertified": false,
+    "noUseOfGraphicsAsAudioCutpoints": true,
+    "introDecision": "all three cues and louder revisions rejected; professional references direction-only; no purchase/licence/track selection",
+    "presenterDecision": "research only; no avatar generation/purchase",
+    "nextOwner": "existing audio/video handoff owner with actual hearing capability",
+    "nextAction": "Listen to approved correction/original, certify boundaries and compose/align final cut; no narration regeneration. Full-cut hearing, captions/visuals, final hash/native metadata and production gates remain required."
+  },
+  "cartoon": {
+    "id": "cartoon-2026-10-09",
+    "state": "prepared-unpublished",
+    "publicationNotBefore": "2026-10-09",
+    "socialDecision": "held underlying board-reporting article already promoted October1",
+    "nextAction": "Independent site release on/after October9 if current source/rights/accessibility/production gates pass; do not change parent identity to evade social dedup."
+  },
+  "futureTargets": "Oct13 decision card, podcastsOct15/29, shortsOct15/22/29 remain plans; prepare two working days ahead, no fabricated assets",
+  "credits": {
+    "consumedThisPass": 0,
+    "monthlyCeiling": 30000,
+    "plannedBaseline": 21306,
+    "lastOwnerObservedRemaining": 28753,
+    "lastOwnerObservedAllowanceIncludingRollover": 39681,
+    "lastOwnerObservedUsed": 10928,
+    "observationDate": "2026-10-05",
+    "currentLiveBalanceVerified": false,
+    "actualCorrectionDebitRecordedOnce": 103,
+    "cycle": "Sep28-Oct28 inferred from billing anniversary/policy; account-specific reset timestamp unknown",
+    "nextAction": "Fresh live account/billing, shared ledger and reservations required before any synthesis; no rendering attempted"
+  },
+  "publishedVideoReviews": [
+    {
+      "assetId": "cuai-weekly-2026-09-28",
+      "canonicalUrl": "https://creditunionainews.com/episodes/cuai-weekly-2026-09-28.html",
+      "providerVideoId": "XO2EyGXyC_Q",
+      "actualProviderPostId": null,
+      "assetSHA256": null,
+      "actualPublicationTime": null,
+      "livePlaybackStatus": "blocked/incomplete: this runtime cannot hear; no full actual playback review claimed",
+      "craftReviewStatus": "pending 2\u20133 genuinely viewed-with-sound examples; existing professional references not certified hearing/craft observations",
+      "viewedExamples": [],
+      "selectedNextEpisodeImprovement": null,
+      "sevenDayStatus": "unknown/incomplete: exact publication timestamp and same-post matching-age provider results unavailable",
+      "freshEvidenceRun": 37455053494,
+      "limitations": "Fresh private analytics source is available, but site aggregate counts do not prove video playback/retention or exact-age provider results. No missing metric replaced with zero.",
+      "nextOwner": "existing coordinator/hearing-capable review owner",
+      "nextAction": "Complete genuine public playback and source-linked examples with sound; obtain actual publication identity and same-post aged metrics before performance conclusion."
+    }
+  ],
+  "validation": {
+    "testsPassed": 106,
+    "localBrowserCasesPassed": 4,
+    "publicBrowserCasesPassed": 4,
+    "axeViolations": 0,
+    "changedPagesCanonical": true,
+    "existingDesignCheckFindings": [
+      "insight-credit-union-ai-product-governance-outcome-gate.html",
+      "news/occ-crypto-trust-charter-lawsuit.html",
+      "news/plaid-ai-cash-flow-underwriting.html"
+    ],
+    "designFindingScope": "Inherited unchanged main files; new chart/home shell matches canonical design. No unrelated repair.",
+    "queueDailyStateCoverageAndPoliciesPreserved": true,
+    "priorLedgerEntriesPreserved": true
+  },
+  "workUnits": {
+    "mediaPublished": 1,
+    "articlesPublishedByCoordinator": 0,
+    "socialSchedulingAttemptsByCoordinator": 0,
+    "newReservations": 0,
+    "creditsConsumed": 0,
+    "newAudioOrImagesGenerated": 0,
+    "newSchedulesOrExecutors": 0,
+    "actualPublishedVideosWatched": 0,
+    "industryExamplesWatchedWithSound": 0
+  },
+  "privacy": "No raw queries, credentials, private analytics payloads or signed transfer URLs copied to report",
+  "X": "blocked unchanged",
+  "timingTest": "planned/inactive; existing midday slots preserved"
+}

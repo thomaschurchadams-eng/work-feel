@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">AI Insight illustration 5</title>
+  <desc id="desc">Circular node illustration for fallback image.</desc>
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2f9ff" />
+      <stop offset="100%" stop-color="#d8ecf8" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="28" fill="url(#g5)" />
+  <g stroke="#0f294b" stroke-width="4" opacity="0.14">
+    <line x1="200" y1="190" x2="350" y2="120" />
+    <line x1="350" y1="120" x2="500" y2="190" />
+    <line x1="200" y1="260" x2="350" y2="330" />
+    <line x1="350" y1="330" x2="500" y2="260" />
+    <line x1="200" y1="190" x2="200" y2="260" />
+    <line x1="500" y1="190" x2="500" y2="260" />
+    <line x1="350" y1="120" x2="350" y2="330" />
+  </g>
+  <g fill="#1fb6aa" opacity="0.26">
+    <circle cx="200" cy="190" r="34" />
+    <circle cx="350" cy="120" r="36" />
+    <circle cx="500" cy="190" r="34" />
+    <circle cx="200" cy="260" r="32" />
+    <circle cx="350" cy="330" r="36" />
+    <circle cx="500" cy="260" r="32" />
+  </g>
+  <text x="400" y="230" text-anchor="middle" font-family="'Inter', 'Segoe UI', system-ui" font-size="26" font-weight="700" fill="#0f294b">AI Networks</text>
+</svg>

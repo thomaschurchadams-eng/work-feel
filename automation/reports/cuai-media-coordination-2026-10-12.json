@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-12",
+  "checkedAt": "2026-10-12T13:39:33.834078+00:00",
+  "baseMainSHA": "6b8529222bd26ce9ff95e8eeb2a6bd1653a49ca6",
+  "owner": "cuai-media-coordinator",
+  "status": "independent visuals locally ready; October15 scripts reused and separate silent alternative tested; narrated capability held",
+  "preparedPackage": {
+    "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+    "fileName": "cuai-oct12-media-preparation-handoff.zip",
+    "version": 0,
+    "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+  },
+  "October13": {
+    "assetId": "decision-card-2026-10-13",
+    "status": "ready-local-unpublished",
+    "preparedAtPreserved": "2026-10-08T13:03:17.625632+00:00",
+    "imageSha256Preserved": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f"
+  },
+  "October15": {
+    "podcastScriptHashPreserved": "3bcdbdc39e242fc5278ffd50d2a2aeef6ad256eafb2d5e399ddb30d9700703b9",
+    "shortScriptHashPreserved": "1a2c0b06eb9ac879f033ff9473f9b5d38084e557103a797a01776e9257b3ac1d",
+    "silentAlternative": {
+      "id": "short-video-2026-10-15-silent-review",
+      "mode": "caption-led-silent",
+      "preparedAt": "2026-10-12T13:39:33.834078+00:00",
+      "preparedPackage": {
+        "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+        "fileName": "cuai-oct12-media-preparation-handoff.zip",
+        "version": 0,
+        "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+      },
+      "packageMemberPath": "oct15-silent-review-v2/review.mp4",
+      "sha256": "542dea47900743f796e04e970bc0a87c932b0f11bcda8556c8af4a33f63d3322",
+      "bytes": 2806508,
+      "durationSeconds": 41.041666666666664,
+      "width": 720,
+      "height": 1280,
+      "frameRate": 24,
+      "audioTracks": 0,
+      "displayCaptionTimingVerified": true,
+      "audioAlignmentVerified": false,
+      "nativeCaptionFramesInspected": 9,
+      "technicalPlayback": "390/1440 no overflow or script errors;41.04seconds continuous browser decode reached ended; not final editorial playback acceptance",
+      "status": "tested-local-review-only; not narrated completion or automatic substitute",
+      "finalPlaybackAccepted": false,
+      "productionVerified": false,
+      "nativeVideo": null,
+      "draftTooling": "PR259 tested locally only; remains draft/unmerged, no active production integration"
+    },
+    "narratedStatus": "held pending fresh live entitlement and permitted hearing/alignment route; no speech generation"
+  },
+  "October16": {
+    "assetId": "cartoon-2026-10-16",
+    "title": "Approved by whom?",
+    "status": "ready-local-unpublished",
+    "sha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9"
+  },
+  "October8": {
+    "status": "held; target outcome and historical103debit preserved",
+    "manualTimestampAssignmentToTom": false,
+    "separateSilentReview": {
+      "libraryFileId": "libfile_2cfd58ecec6c8191adccbd8a865a2885",
+      "fileName": "CUAI_SILENT_REVIEW_CANDIDATE_NOT_RELEASE_READY.mp4",
+      "sha256": "1ee126273b1feb704dca59cd6b6a7b3bbfbaa56975c4474b6bb63bdb49f1e134",
+      "status": "distinct unpublished review; does not complete held narrated target"
+    }
+  },
+  "October9Cartoon": {
+    "status": "unchanged localcommitf9cffdcdf61a44db82aefb127e1d911b94e9e910; public404; prior binary upload/Git credential blocker not retried"
+  },
+  "destinationChecks": {
+    "spotify": {
+      "uri": "spotify:show:75lxapwEB5R0cILl84bJMg",
+      "name": "CreditUnionAI News",
+      "creator": "CreditUnionAI News",
+      "catalogStatus": "PLAYABLE",
+      "uploadAuthority": "not established by public catalog read; no publishing action"
+    },
+    "linkedin": {
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "channelName": "CreditUnionAI News",
+      "source": "current canonical secure-workflow queue receipt; no direct coordinator provider call",
+      "acceptedSentPostId": "6ac8cc083cdd14dcd26b9fac",
+      "sentAt": "2026-10-09T16:30:55.670Z",
+      "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7514361766286622720"
+    },
+    "elevenlabs": {
+      "currentBalance": null,
+      "currentBillingCycle": null,
+      "currentModelSpecificBudget": null,
+      "historical103DebitPreserved": true,
+      "freshEntitlementRequiredBeforeGeneration": true,
+      "generationActions": 0,
+      "creditsConsumed": 0,
+      "accessFailureRetry": false
+    }
+  },
+  "draftEngineering": {
+    "pr259": "draft/unmerged on8270856c865eb3500c2bc99fd499b6c4019ffe16; tests113/CI40pass/PreviewREADY; local review use only",
+    "pr258": "separately blocked, untouched"
+  },
+  "selection": "Read-only selector now returns prepared-selection for the ready card, not scheduling eligibility. Same parent for card/podcast/video/cartoon; publisher selects at most one underlying-publication promotion and preserves any reservation. No queue write.",
+  "validation": {
+    "mainRegressionTestsPassed": 106,
+    "targetedManifestTestsPassed": 28,
+    "canonicalShellStale": 0,
+    "topicHubsChecked": 13,
+    "visualBrowserCasesPassed": 4,
+    "visualAxeViolations": 0,
+    "silentBrowserCasesPassed": 2,
+    "silentFullDecodeVerified": true,
+    "silentAudioTracks": 0,
+    "silentNativeCueFramesInspected": 9,
+    "originalScriptsAndCardHashesPreserved": true
+  },
+  "workUnits": {
+    "mediaPublished": 0,
+    "speechGenerated": 0,
+    "creditsConsumed": 0,
+    "newSocialCalls": 0,
+    "newReservations": 0,
+    "originalCartoonsPrepared": 1,
+    "silentReviewAlternativesPrepared": 1,
+    "newSchedulesCredentialsPermissions": 0,
+    "actualSoundViewedReferenceVideos": 0
+  },
+  "nextOwner": "cuai-media-coordinator; existing daily publisher retains sole queue/promotion authority",
+  "nextAction": "DueOctober13 independent website release gates for qualified card; preserve one parent across card/podcast/short/cartoon. Hold narrated synthesis until verified entitlement and permitted hearing route. No catch-up or displacement.",
+  "userDependency": {
+    "routineVisuals": "No new confirmation needed; normal due-date independent publication/source/production checks remain.",
+    "narratedOutputs": "Existing coordinator needs a permitted hearing/alignment route and fresh live entitlement before generation/splicing; no default manual timestamp assignment to Tom.",
+    "engineering": "PR259 remains draft pending parent release confirmation; local review use is not merge/activation.",
+    "spotify": "Correct show identity verified; upload authority/readiness still unverified and cannot be inferred."
+  },
+  "sevenDayReview": "No newly published video; no fabricated metrics/craft/audio acceptance. Existing chart sentOctober7 is not yet7days old onOctober12.",
+  "privacy": "Public source URLs and bounded aggregate receipts only; no private queries, provider keys, temporary play URIs, signed links or member data."
+}

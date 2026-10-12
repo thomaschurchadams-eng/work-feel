@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-08",
+  "checkedAt": "2026-10-08T13:03:17.625632+00:00",
+  "baseMainSHA": "1d93fec691e970641a8704e2f5fa325800b32ca5",
+  "owner": "cuai-media-coordinator",
+  "status": "October8-target-held;October9-cartoon-ready-for-dated-website-gates;October13-card-andOctober15-scripts-prepared",
+  "preparedPackage": {
+    "libraryFileId": "libfile_f5d0753bb3e48191a2f687be47004cdd",
+    "fileName": "cuai-oct8-media-preparation-handoff.zip",
+    "version": 0,
+    "sha256": "a864338df4fc01ddc3049c29694f0dcf8d07b0275b0d3e04dc0f54b733226d41"
+  },
+  "October8": {
+    "assetId": "short-video-2026-10-08",
+    "targetOutcome": "October8 production target held; no automatic catch-up or replacement social item",
+    "preSpliceCandidate": {
+      "libraryFileId": "libfile_d1159313f9148191ba71364b28d407b3",
+      "sha256": "7c33102b223006d67da5ba91b6674e6a67821457fcfec5aa4ea25ea337eac9f1",
+      "bytes": 4073342,
+      "status": "not a corrected final master"
+    },
+    "correction": {
+      "libraryFileId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+      "fileName": "cuai-oct8-liam-v3-correction-generation1.mp3",
+      "sha256": "3f1e4f51648a0c51c09f20d5494766f95fb75ad572889d7dd1e6ec2baea77277",
+      "bytes": 112232,
+      "reportedCreditDebit": 103,
+      "receiptPath": "automation/reports/cuai-oct8-narration-correction-2026-10-05.json",
+      "qualityStatus": "received-byte-verified; actual listening/cutpoints/splice/captions pending"
+    },
+    "actualListeningCompleted": false,
+    "cutpointsCertified": false,
+    "spliceCaptionAlignmentCertified": false,
+    "nativeVideo": null,
+    "productionVerified": false,
+    "nextOwner": "cuai-media-coordinator",
+    "humanDependency": "Actual hearing acceptance by Tom; no named available hearing-capable automated owner is evidenced. Existing coordinator retains assembly responsibility.",
+    "nextStep": "Tom actual hearing review must certify original sentence boundaries and replacement acceptance. Coordinator then splices the existing correction, aligns captions/downstream visuals and obtains full finished-cut hearing/visual acceptance. No generation, guessed splice, publication or automatic catch-up.",
+    "sourceCheck": "Mastercard September30 announcement still describes U.S. testing; no broad-adoption claim",
+    "sourceURL": "https://www.mastercard.com/us/en/news-and-trends/press/2026/september/new-trust-and-intelligence-services.html",
+    "hearingAttempts": 0,
+    "automaticCatchUp": false
+  },
+  "October9": {
+    "assetId": "cartoon-2026-10-09",
+    "caption": "Beautiful. Where are the sources?",
+    "sha256": "db68a8fa8726350c13cee34a3d86136637d9c1ad402bdf5b08da8c0967a4f8ea",
+    "localChecksPassed": 2,
+    "axeViolations": 0,
+    "publicPageHTTP": 404,
+    "publicImageHTTP": 404,
+    "socialDecision": "held-underlying-publication-already-promoted",
+    "nextAction": "Coordinator fresh-checks due date/source/current shell, releases independent website module on/afterOct9 only after complete production gates; preserve social dedup hold."
+  },
+  "October13": {
+    "assetId": "decision-card-2026-10-13",
+    "title": "Before AI Recommends Hardship Treatment, Connect Four Parts of the Decision",
+    "imageSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
+    "localChecksPassed": 2,
+    "axeViolations": 0,
+    "nextAction": "Coordinator rechecks sources/due date and normal production identity/URL gates before independent website card release; publisher alone assesses shared social selection/dedup."
+  },
+  "October15": {
+    "assetIds": [
+      "podcast-2026-10-15",
+      "short-video-2026-10-15"
+    ],
+    "podcastWords": 385,
+    "shortWords": 93,
+    "speechPreparationBudget": {
+      "status": "preparation-only; synthesis held pending live balance/billing and final source/script/voice checks",
+      "provider": "ElevenLabs",
+      "currentEntitlement": "unknown; last actual observation remaining28753/allowance39681/used10928 after already-recorded103 debit, not current entitlement",
+      "monthlyCeiling": 30000,
+      "plannedMonthlyBaseline": 21306,
+      "additionalCreditsConsumed": 0,
+      "newReservations": 0,
+      "noTopUpOrOverage": true,
+      "drafts": [
+        {
+          "assetId": "podcast-2026-10-15",
+          "characters": 2636,
+          "words": 385,
+          "creditEstimate": null,
+          "estimateLimitation": "voice/model not yet confirmed against live authorized provider; character count is workload evidence, not guaranteed model-specific price",
+          "retryBudget": 0,
+          "fullNarrationRegeneration": false,
+          "measuredDurationSeconds": null
+        },
+        {
+          "assetId": "short-video-2026-10-15",
+          "characters": 587,
+          "words": 93,
+          "creditEstimate": null,
+          "estimateLimitation": "voice/model not yet confirmed against live authorized provider; character count is workload evidence, not guaranteed model-specific price",
+          "retryBudget": 0,
+          "fullNarrationRegeneration": false,
+          "measuredDurationSeconds": null
+        }
+      ]
+    },
+    "narrationRendered": false,
+    "measuredDurationSeconds": null,
+    "nextAction": "Existing coordinator proceeds through current provider-budget/source/audio/caption/rights/accessibility gates; no user approval invented for ordinary preparation."
+  },
+  "acceptedPriorSocialReceipt": {
+    "assetId": "chart-2026-10-06",
+    "postId": "6ac62b4f0ea81feae6a7620f",
+    "sentAt": "2026-10-07T15:30:29.942Z",
+    "channelId": "6a53df0880cc80cdcaa76fb8",
+    "channelName": "CreditUnionAI News",
+    "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
+    "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
+    "duplicate": false,
+    "imageAttached": true,
+    "receiptSource": "Current main canonical queue + terminal successful trusted run37623147936 attempt2; not independent audible/playback review"
+  },
+  "validation": {
+    "mediaTestsPassed": 28,
+    "localBrowserCasesPassed": 4,
+    "widths": [
+      390,
+      1440
+    ],
+    "axeViolations": 0,
+    "originalImageCorrectionCandidateHashesPreserved": true,
+    "unrelatedManifestEntriesAndAllTargetsPreserved": true
+  },
+  "workUnits": {
+    "mediaPublished": 0,
+    "newSocialSchedulingAttempts": 0,
+    "newReservations": 0,
+    "creditsConsumed": 0,
+    "newSpeechGenerated": 0,
+    "originalDecisionCardsPrepared": 1,
+    "podcastScriptsPrepared": 1,
+    "shortVideoScriptsAndStoryboardsPrepared": 1,
+    "newSchedulesOrPermissions": 0,
+    "actualPublishedVideosWatched": 0,
+    "industryExamplesWatchedWithSound": 0
+  },
+  "preserved": [
+    "PR251 draft/release pause",
+    "Raiz completed correction",
+    "daily article counts and coverage",
+    "existing queue immutable IDs and weekday caps",
+    "inactive timing cohort",
+    "policy/schedules/authentication/credentials/scopes",
+    "historical103debit exactly once"
+  ],
+  "privacy": "Public source URLs and non-secret aggregate receipts only; no raw queries, provider keys, signed transfers or private member data."
+}

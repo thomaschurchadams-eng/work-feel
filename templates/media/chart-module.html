@@ -1,0 +1,7 @@
+<!-- Use source-backed data; render an HTML table alongside the chart. No invented figures. -->
+<figure class="cuai-media-module" aria-labelledby="{{ASSET_ID}}-caption" style="max-width:960px;margin:2rem auto;padding:1rem;box-sizing:border-box">
+  <p>Data chart · <time datetime="{{PUBLISHED_DATE}}">{{DISPLAY_DATE}}</time></p>
+  <img src="{{IMAGE_URL}}" alt="{{ALT_TEXT}}" width="1200" height="630" loading="lazy" style="display:block;max-width:100%;height:auto">
+  <figcaption id="{{ASSET_ID}}-caption"><strong>{{TITLE}}</strong><p>{{FINDING_AND_LIMITATIONS}}</p><p>Period: {{DATA_PERIOD}}. Units and denominator: {{UNITS_AND_DENOMINATOR}}. Source: <a href="{{SOURCE_URL}}">{{SOURCE_LABEL}}</a>. {{RIGHTS_CREDIT}}</p></figcaption>
+  <details><summary>Read the chart data</summary><div style="overflow-x:auto"><table><caption>{{TABLE_CAPTION}}</caption><thead><tr><th scope="col">{{CATEGORY_LABEL}}</th><th scope="col">{{VALUE_LABEL}}</th></tr></thead><tbody>{{SOURCE_BACKED_TABLE_ROWS}}</tbody></table></div></details>
+</figure>

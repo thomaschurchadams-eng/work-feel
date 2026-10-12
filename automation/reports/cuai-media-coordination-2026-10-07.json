@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-07",
+  "checkedAt": "2026-10-07T12:43:13.915754+00:00",
+  "baseMainSHA": "648ca6bea222f2e7cc981014ae55edbedd18adc7",
+  "status": "completed-independent-cartoon-preparation; October8-hearing-and-final-master-blocked",
+  "ownership": "existing coordinator; article publisher sole LinkedIn writer; existing audio/video owner performs hearing/alignment",
+  "completedReleases": {
+    "October1Episode": "preserved; public page200; no regeneration",
+    "October6Chart": "preserved exact page/image hashes; public200; no republication",
+    "chartSocial": {
+      "runId": 37613517649,
+      "postId": "6ac62b4f0ea81feae6a7620f",
+      "status": "scheduled",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "dueAt": "2026-10-07T15:30:00.000Z",
+      "duplicate": false,
+      "sentAt": null,
+      "verifiedAt": "2026-10-07T12:43:13.915754+00:00"
+    },
+    "chartSocialLimitation": "Scheduled receipt is not sent proof; exact public post URL and sentAt unknown until existing workflow reconciliation after due time."
+  },
+  "cartoon": {
+    "assetId": "cartoon-2026-10-09",
+    "state": "prepared-unpublished",
+    "notBefore": "2026-10-09",
+    "imageSHA256": "db68a8fa8726350c13cee34a3d86136637d9c1ad402bdf5b08da8c0967a4f8ea",
+    "localBrowserCasesPassed": 2,
+    "widths": [
+      390,
+      1440
+    ],
+    "axeViolations": 0,
+    "caption": "Beautiful. Where are the sources?",
+    "sourceURLs": [
+      "https://creditunionainews.com/insight-credit-union-ai-board-reporting-decision-evidence.html",
+      "https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Risk-ManagementGovernance/RiskManagementComponents.htm",
+      "https://airc.nist.gov/airmf-resources/playbook/govern/",
+      "https://home.treasury.gov/news/press-releases/sb0401"
+    ],
+    "sourceCheck": "NCUA oversight/MIS, NIST documentation/accountability and Treasury resources re-opened; context article and governance topic HTTP200. Fictional scene not an actual-event claim. Original AI-assisted artwork/rights record preserved.",
+    "publicPageHTTP": 404,
+    "publicImageHTTP": 404,
+    "socialDecision": "held-underlying-publication-already-promoted",
+    "nextAction": "Release independent website module on/after October9 after due-date fresh source/current shell/production checks; retain existing source-publication dedup and no second social post."
+  },
+  "shortVideo": {
+    "assetId": "short-video-2026-10-08",
+    "state": "review-blocked",
+    "correctionLibraryFileId": "libfile_00b21c9750b481919d52b61b1a3ca169",
+    "correctionSHA256": "3f1e4f51648a0c51c09f20d5494766f95fb75ad572889d7dd1e6ec2baea77277",
+    "correctionDebitAlreadyRecorded": 103,
+    "actualListeningCompleted": false,
+    "certifiedCutpoints": false,
+    "spliceCaptionAlignmentCertified": false,
+    "nativeVideo": null,
+    "productionVerified": false,
+    "blocker": "This runtime does not support audio input. Do not retry unchanged hearing/access blocker or substitute code/decoding for hearing.",
+    "sourceURLs": [
+      "https://investor.mastercard.com/investor-news/investor-news-details/2026/Mastercard-Advances-Agentic-Commerce-With-New-Trust-and-Intelligence-Services/default.aspx",
+      "https://www.mastercard.com/us/en/news-and-trends/press/2026/september/new-trust-and-intelligence-services.html"
+    ],
+    "sourceCheck": "September30 announcement still states rolling out for U.S. testing; supports bounded historical wording only, not broad adoption. Recheck on release day.",
+    "nextOwner": "existing audio/video handoff owner with actual hearing capability",
+    "nextAction": "Listen original and approved Generation1; certify real sentence boundaries; splice only approved correction; retime every affected caption/graphic; full-cut hearing/visual acceptance then final content-addressed MP4/probe/hash/burned-caption/transcript/source/production gates. Do not use graphics13.1\u201319.4 as audio boundaries.",
+    "hearingHandoffLibraryId": "libfile_0523ca6ac6f88191ad72e0da4fa930f2",
+    "rejectedIntroCues": "remain rejected; no selected track/purchase/licence",
+    "presenter": "research only; no generation"
+  },
+  "publishedVideoReview": {
+    "assetId": "cuai-weekly-2026-09-28",
+    "canonicalUrl": "https://creditunionainews.com/episodes/cuai-weekly-2026-09-28.html",
+    "providerVideoId": "XO2EyGXyC_Q",
+    "actualPublicationTime": null,
+    "actualProviderPostId": null,
+    "assetSHA256": null,
+    "livePlaybackStatus": "blocked/incomplete: actual with-sound playback cannot be certified here",
+    "craftReviewStatus": "pending 2\u20133 genuinely viewed-with-sound examples; no invented observations",
+    "viewedExamples": [],
+    "selectedNextEpisodeImprovement": null,
+    "sevenDayStatus": "unknown: exact actual publication identity and same-post matching-age measurements unavailable",
+    "nextOwner": "existing coordinator/hearing-capable owner",
+    "nextAction": "Complete actual live playback and source-linked craft review independently of analytics; match seven-day measurements to actual post/channel/landing path/publication age. Missing counts remain unknown, not zero."
+  },
+  "credits": {
+    "consumedThisPass": 0,
+    "newSynthesisAttempts": 0,
+    "recurringMonthlyCeiling": 30000,
+    "plannedBaseline": 21306,
+    "lastOwnerObservedRemaining": 28753,
+    "lastOwnerObservedAllowanceIncludingRollover": 39681,
+    "lastOwnerObservedUsed": 10928,
+    "lastObservationDate": "2026-10-05",
+    "currentLiveBalanceVerified": false,
+    "rule": "Historical balance not entitlement; no provider UI attempt needed because no synthesis. Refresh live account/cycle/shared ledger/reservations before any future consumption.",
+    "accountSpecificResetTimestamp": null
+  },
+  "validation": {
+    "testsPassed": 28,
+    "localCartoonCasesPassed": 2,
+    "actualScreenshotsViewed": 1,
+    "selectorOctober7": "reserved existing chart item",
+    "selectorOctober8": "no-qualified-selection",
+    "queueArticleCountsAndCoveragePreserved": true,
+    "policiesAndSchedulesPreserved": true,
+    "priorLedgerEntriesPreserved": true
+  },
+  "connection": {
+    "computerDisconnectionObserved": false,
+    "localExecutionWorked": true,
+    "noHearingCapability": "unchanged capability limitation, not proven computer disconnection"
+  },
+  "workUnits": {
+    "mediaPublished": 0,
+    "newSocialSchedulingAttempts": 0,
+    "newReservations": 0,
+    "creditsConsumed": 0,
+    "newAudioOrImagesGenerated": 0,
+    "newSchedulesOrManagers": 0,
+    "actualPublishedVideosWatched": 0,
+    "industryExamplesWatchedWithSound": 0
+  },
+  "privacy": "No raw queries/private analytics payloads/credentials/signed transfer URLs saved; inspected existing run.json only.",
+  "X": "blocked unchanged",
+  "timingTest": "inactive unchanged"
+}
