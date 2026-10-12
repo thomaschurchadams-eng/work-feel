@@ -101,3 +101,51 @@ test('permission denial in incident closure is persisted and never repeated', as
   assert.equal((await recover(f.args)).status,'blocked-permission');
   assert.equal(closes,1);
 });
+
+test('malformed truthy incident state cannot mark recovery completed', async () => {
+  let closes=0;
+  const f=fixture([{id:'read',reconcile:async()=> 'done',run:async()=>{},verify:async()=>true}]);
+  f.args.isClosed=async()=>({closed:false});
+  f.args.close=async()=>{closes++};
+  assert.equal((await recover(f.args)).status,'blocked-ambiguous');
+  assert.equal(closes,0);
+});
+test('dead worker lease is reclaimed once; competing resumers serialize', async () => {
+  const {spawnSync}=require('node:child_process');
+  const directory=await fs.mkdtemp(path.join(os.tmpdir(),'cuai-recovery-crash-'));
+  try {
+    const modulePath=require.resolve('../automation/recovery/file-store.cjs');
+    const child=spawnSync(process.execPath,['-e',`const {fileStore}=require(${JSON.stringify(modulePath)});fileStore(${JSON.stringify(directory)}).acquire(${JSON.stringify(key)}).then(()=>process.exit(0));`],{encoding:'utf8'});
+    assert.equal(child.status,0,child.stderr);
+    const store=fileStore(directory); let written=false,writes=0,closed=false,closes=0;
+    const args={key,steps:[{id:'write',reconcile:async()=>written?'done':'not-done',run:async()=>{writes++;written=true},verify:async()=>written}],...store,isClosed:async()=>closed,close:async()=>{closes++;closed=true}};
+    const results=await Promise.all([recover(args),recover(args)]);
+    assert.deepEqual(results.map(x=>x.status),['completed','completed']);
+    assert.equal(writes,1);assert.equal(closes,1);
+  } finally { await fs.rm(directory,{recursive:true,force:true}); }
+});
+
+test('durable adapter closes original delayed-deployment incident after readiness changes', async () => {
+  const directory=await fs.mkdtemp(path.join(os.tmpdir(),'cuai-recovery-deployment-'));
+  try {
+    const store=fileStore(directory),incident='operations:38257568883:eb075a6';
+    await store.save({key:incident,status:'exhausted',attempts:2,steps:{deployment:{status:'started'}}});
+    let ready=false,closes=0,closed=false,writes=0;
+    const args={key:incident,...store,steps:[{id:'deployment',safeToResume:true,reconcile:async()=>ready?'done':'not-done',run:async()=>{writes++},verify:async()=>ready}],isClosed:async()=>closed,close:async actual=>{assert.equal(actual,incident);closes++;closed=true}};
+    assert.equal((await recover(args)).status,'exhausted');
+    ready=true;
+    assert.equal((await recover(args)).status,'completed');
+    assert.equal(writes,0);assert.equal(closes,1);
+    assert.equal((await store.load(incident)).status,'completed');
+  } finally { await fs.rm(directory,{recursive:true,force:true}); }
+});
+test('durable adapter resumes only unfinished safe step after interrupted stage', async () => {
+  const directory=await fs.mkdtemp(path.join(os.tmpdir(),'cuai-recovery-resume-'));
+  try {
+    const store=fileStore(directory);await store.save({key,status:'working',attempts:1,steps:{write:{status:'started'}}});
+    let written=true,verified=false,writes=0,closed=false;
+    const args={key,...store,steps:[{id:'write',reconcile:async()=>written?'done':'ambiguous',run:async()=>{writes++},verify:async()=>written},{id:'verify',safeToResume:true,reconcile:async()=>verified?'done':'not-done',run:async()=>{verified=true},verify:async()=>verified}],isClosed:async()=>closed,close:async()=>{closed=true}};
+    assert.equal((await recover(args)).status,'completed');assert.equal(writes,0);
+    assert.deepEqual((await store.load(key)).steps,{write:{status:'verified'},verify:{status:'verified'}});
+  } finally { await fs.rm(directory,{recursive:true,force:true}); }
+});

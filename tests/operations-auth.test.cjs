@@ -108,3 +108,15 @@ test('a native scheduling success must contain a verified video receipt; known I
  const result=await runWorkflow({queued:true,nativeItem:true});const writes=result.calls.filter(c=>c.options.method==='PUT');assert.equal(writes.length,1);
  const data=JSON.parse(Buffer.from(JSON.parse(writes[0].options.body).content,'base64').toString());assert.equal(data.items[0].status,'blocked');assert.equal(data.items[0].postId,'buffer-receipt');assert.equal(data.items[0].videoAttached,false);assert.equal(result.process.exitCode,1);
 });
+
+test('failed production wait emits same-run recovery handoff with zero side effects',async()=>{
+ const result=await runWorkflow({healthFailure:true});
+ const receipt=JSON.parse(result.files['operation-receipts/run.json']);
+ assert.equal(receipt.status,'failed');
+ assert.equal(receipt.recovery.failedStage,'production-identity');
+ assert.equal(receipt.recovery.actionAttempts,0);
+ assert.equal(receipt.recovery.reconciliations,0);
+ assert.equal(receipt.recovery.requiresExternalReconciliation,true);
+ assert.match(receipt.recovery.incidentKey,/^operations:unknown-run:a{40}$/);
+ assert.equal(result.calls.some(c=>c.url.endsWith('/buffer-schedule-tracked')),false);
+});

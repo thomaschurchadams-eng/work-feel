@@ -57,12 +57,14 @@ async function recover({ key, steps, load, save, acquire, isClosed, close, maxAt
     // cannot cause a second close: the next call reconciles that exact external key.
     const priorClose=await call(()=>isClosed(key),'incident:reconcile-close');
     if (!priorClose.ok) return state;
+    if (typeof priorClose.value !== 'boolean') { state.status='blocked-ambiguous'; state.reason='malformed-close-state'; await save(state); return state; }
     if (!priorClose.value) {
       const closed=await call(()=>close(key),'incident:close');
       if (!closed.ok) return state;
     }
     const confirmed=await call(()=>isClosed(key),'incident:verify-close');
     if (!confirmed.ok) return state;
+    if (typeof confirmed.value !== 'boolean') { state.status='blocked-ambiguous'; state.reason='malformed-close-state'; await save(state); return state; }
     if (!confirmed.value) { state.status = 'blocked-ambiguous'; state.reason = 'close-unconfirmed'; await save(state); return state; }
     state.status = 'completed'; await save(state);
     return state;

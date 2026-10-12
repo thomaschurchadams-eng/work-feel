@@ -7,6 +7,8 @@ const REPORT_ONLY_FILES=new Set(['automation/reports/cuai-ceo-latest.md','automa
 const headers={Authorization:'Bearer '+process.env.GITHUB_TOKEN,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
 const receipts={startedAt:new Date().toISOString(),commit:process.env.DEPLOYED_SHA,authentication:'unverified',actions:[],reconciliations:[],sourceRetries:[],errors:[]};
 let operationCommit=process.env.DEPLOYED_SHA;
+let recoveryStage='production-identity';
+const incidentKey=`operations:${process.env.GITHUB_RUN_ID||'unknown-run'}:${process.env.DEPLOYED_SHA||'unknown-sha'}`;
 fs.mkdirSync('operation-receipts',{recursive:true});
 const save=()=>fs.writeFileSync('operation-receipts/run.json',JSON.stringify(receipts,null,2)+'\n');
 // Uploaded receipts have a broader repository audience than the reporting identity.
@@ -127,6 +129,7 @@ async function reconcileSentQueue(bufferResponse){
  }while(Date.now()<deadline);
  if(!productionReady)throw Error('production_identity_check_failed');
  receipts.authentication='verified';save();
+ recoveryStage='source-reads';
  // Metrics are read-only. Vercel route propagation can briefly lag the verified
  // production health check, so retry only the exact deployment-mismatch case.
  // Other source failures remain visible immediately and never become zero data.
@@ -136,14 +139,16 @@ async function reconcileSentQueue(bufferResponse){
  // scheduled item after its fixed due time, with matching immutable URLs,
  // reservation, channel and post id. A reconciliation commit ends this run;
  // the resulting main push owns any later queued scheduling work.
+ recoveryStage='sent-state-reconciliation';
  const reconciled=await reconcileSentQueue(bufferMetrics);
  if(reconciled){receipts.completedAt=new Date().toISOString();receipts.status=receipts.errors.length?'attention':'verified';save();console.log('Production identity verified; 0 distribution attempts; '+reconciled+' sent-state reconciliations; '+receipts.errors.length+' source/action exceptions.');if(receipts.errors.length)process.exitCode=1;return;}
  const queue=JSON.parse(fs.readFileSync('automation/social-queue.json','utf8'));
  const candidates=queue.items.filter(x=>x.status==='queued'&&Date.parse(x.scheduledFor)>Date.now()+5*60000).sort((a,b)=>Date.parse(a.scheduledFor)-Date.parse(b.scheduledFor));
  // Process one reserved item per run. Existing endpoint validates channel,
  // quality, tracking, live article/image, fixed time and duplicate/day limits.
+ recoveryStage='distribution';
  if(candidates.length){const item=candidates[0];const result=await invoke('buffer-schedule-tracked',{itemId:item.id},item.mediaType==='video'?item:null);receipts.actions.push({itemId:item.id,...result});save();if(([200,201].includes(result.status)&&result.data.ok&&typeof result.data.postId==='string'&&result.data.postId.length>0)||(result.status===202&&result.data.mediaType==='video'&&result.data.reconciliationRequired===true&&result.data.status==='blocked')){await recordQueue(item.id,item,result.data);if(result.data.reconciliationRequired)receipts.errors.push({route:'buffer-schedule-tracked',error:'native_video_receipt_requires_reconciliation',postId:result.data.postId});}else receipts.errors.push({route:'buffer-schedule-tracked',error:result.data.error||'schedule_receipt_missing'});}
  receipts.completedAt=new Date().toISOString();receipts.status=receipts.errors.length?'attention':'verified';save();
  console.log('Production identity verified; '+receipts.actions.length+' distribution attempts; '+receipts.errors.length+' source/action exceptions.');
  if(receipts.errors.length)process.exitCode=1;
-})().catch(error=>{receipts.errors.push({error:error.message});receipts.status='failed';save();console.error(error.message);process.exitCode=1;});
+})().catch(error=>{receipts.errors.push({error:error.message});receipts.status='failed';receipts.recovery={incidentKey,failedStage:recoveryStage,actionAttempts:receipts.actions.length,reconciliations:receipts.reconciliations.length,requiresExternalReconciliation:true};save();console.error(error.message);process.exitCode=1;});
