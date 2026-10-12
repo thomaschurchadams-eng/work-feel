@@ -7,6 +7,10 @@
     "rule": "Publish the web edition and archive it, but do not claim it was emailed until a provider confirms delivery."
   },
   "implementationStatus": "approved-not-started",
+  "privateSample": {
+    "status": "delivered-editorial-review-pending",
+    "publicEdition": false
+  },
   "approvedSample": {
     "cadence": "Friday",
     "wordRange": {
