@@ -338,18 +338,18 @@
       "source": "Tom-approved Friday sample-first newsletter decision; private sample delivered to Tom",
       "decision": "accepted-with-gates",
       "owner": "existing newsroom owner",
-      "nextStep": "Obtain Tom’s editorial decision on the delivered 600–750-word private sample. Start implementation only after sample approval; decide separately on provider setup after provider and address gates.",
-      "acceptanceEvidence": "Tom’s editorial acceptance of the delivered sample, including verified links, dates and source claims; separate provider and sender/reply-to address approval before any email send.",
-      "deferredTrigger": "Sample accepted and provider/address gates resolved.",
-      "status": "private-sample-delivered-editorial-review-pending",
-      "evidence": "Private sample was delivered to Tom. Prior task-creation attempts did not start site implementation; newsletter-state editions remains empty and emailSending is not-connected.",
+      "nextStep": "Use Tom’s approved private sample as the editorial model for the Friday format. Provider setup and physical mailing address remain separate unresolved gates; no subscriber send or production release is authorized.",
+      "acceptanceEvidence": "Tom approved the delivered sample as the editorial model. Publication readiness still requires source, link and date checks; provider and physical mailing address gates remain unresolved before any subscriber send.",
+      "deferredTrigger": "Provider choice and physical mailing address resolved, followed by separate authorization for subscriber sending or production release.",
+      "status": "sample-editorially-approved-implementation-not-started",
+      "evidence": "Private sample was delivered to Tom and he approved it as the editorial model. Prior task-creation attempts did not start site implementation; newsletter-state editions remains empty and emailSending is not-connected.",
       "proposedChange": "Review the delivered private sample first, then implement the approved Friday format and assess provider/address setup separately.",
       "expectedBenefit": "Validate editorial format before email infrastructure.",
       "risk": "Private sample delivery is not newsletter publication, email delivery to subscribers or a working subscriber system.",
       "validation": [
         "Private sample delivered to Tom; no public edition recorded and no provider connected."
       ],
-      "result": "Private sample delivered; editorial approval pending. Site implementation and provider setup have not started.",
+      "result": "Private sample delivered and approved as the editorial model. Site implementation, provider setup and subscriber sending have not started.",
       "rollback": "Revisit approved sample format with Tom before changing it."
     }
   ]

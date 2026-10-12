@@ -1,6 +1,6 @@
 # Weekly briefing automation
 
-Status: approved Friday 600–750-word sample-first format. A private sample was delivered to Tom; editorial approval is pending. Site implementation and provider setup have not started. Prior task-creation attempts are not evidence of an active run. The steps below describe the intended editorial workflow after the sample is reviewed. Provider selection and sender/reply-to address approval are separate gates; no email sending is authorized by this document.
+Status: approved Friday 600–750-word sample-first format. A private sample was delivered to Tom and approved as the editorial model. Site implementation and provider setup have not started. Prior task-creation attempts are not evidence of an active run. The steps below describe the intended editorial workflow after the sample is reviewed. Provider selection and sender/reply-to address approval are separate gates; no email sending is authorized by this document.
 
 1. Read `automation/newsletter-rules.json`, the coverage ledger, recent News, Insights and Alerts, and `automation/newsletter-state.json`.
 2. Select one lead story, three to five additional stories and two to four important alerts. Cover at least three credit-union functions and two technologies.
