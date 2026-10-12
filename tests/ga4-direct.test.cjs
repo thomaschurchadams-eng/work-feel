@@ -99,3 +99,16 @@ test('all-unavailable diagnostics preserve structured failure evidence without b
   const source=fs.readFileSync(require.resolve('../scripts/run-ga4-report-only.cjs'),'utf8');
   assert.match(source,/if \(data.status !== 'complete'\) process.exitCode = 1/);
 });
+
+test('provider truncation below row limit preserves reasons and prevents complete diagnostic status',async()=>{
+  const {mapReport}=require('../api/ga4-metrics')._test;
+  const reasons=[{dataTruncationType:'DATA_TRUNCATION_TYPE_PROPERTY',dataTruncationDate:'2026-09-01',dataTruncationDateRanges:[{startDate:'2026-08-01',endDate:'2026-08-31'}],dataTruncationMessage:'Data before retention date is truncated.'}];
+  const report=async body=>mapReport({dimensionHeaders:[],metricHeaders:[{name:'sessions'}],rows:[{metricValues:[{value:'2'}]}],rowCount:1,metadata:{timeZone:'America/New_York',...(body.dimensions?.[0]?.name==='country'?{dataTruncationReasons:reasons}:{})}});
+  const data=await queryDirect({}, {report,compatibility:async shape=>shapeEvidence(shape)},new Date('2026-10-12T12:00:00Z'));
+  assert.equal(data.ok,true);assert.equal(data.status,'partial');
+  const country=data.reports.countries;
+  assert.equal(country.status,'ok');assert.equal(country.rowCount,country.rows.length);assert.ok(country.rowCount<country.limit);assert.equal(country.truncated,true);
+  assert.deepEqual(country.metadata.dataTruncationReasons,reasons);assert.equal(data.reports.daily.truncated,false);
+  const complete=await queryDirect({}, {report:async()=>mapReport({rowCount:0,rows:[],metadata:{timeZone:'America/New_York'}}),compatibility:async shape=>shapeEvidence(shape)},new Date('2026-10-12T12:00:00Z'));
+  assert.equal(complete.status,'complete');assert.equal(complete.reports.countries.truncated,false);
+});

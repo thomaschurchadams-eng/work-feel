@@ -156,6 +156,7 @@ function mapReport(payload) {
       dataLossFromOtherRow: Boolean(payload.metadata?.dataLossFromOtherRow),
       subjectToThresholding: Boolean(payload.metadata?.subjectToThresholding),
       samplingMetadatas: payload.metadata?.samplingMetadatas || [],
+      dataTruncationReasons: payload.metadata?.dataTruncationReasons || [],
       schemaRestrictionResponse: payload.metadata?.schemaRestrictionResponse || null,
       emptyReason: payload.metadata?.emptyReason || null
     }

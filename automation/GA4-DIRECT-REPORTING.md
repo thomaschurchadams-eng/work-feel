@@ -25,7 +25,10 @@ per other report, no pagination. Read dateRange on rows to distinguish current
 from previous. Missing dates are not proof of zero traffic.
 
 Receipts include exact SHA, property, timezone, both date intervals, generation
-time, row counts/limits and truncation, sampling, threshold and restriction flags.
+time, row counts/limits and truncation, provider dataTruncationReasons, sampling,
+threshold and restriction flags. Provider truncation marks a report truncated
+even when every returned row fits under the limit; any truncated report makes
+the overall diagnostic partial and requires attention.
 Generation time is not an ingestion watermark. Recent data can still be revised.
 Hostnames other than the canonical site/www are withheld as another-host bucket;
 landing pages are restricted to the committed public-path allowlist. Updating that
