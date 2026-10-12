@@ -33,9 +33,9 @@ function fakeConnector() {
     },
     async mcp__codex_apps__github_update_ref({sha:commit,expected_sha,force}) {
       assert.equal(force,false);
-      if(head!==expected_sha) throw Error('UNKNOWN');
+      if(head!==expected_sha) return {isError:true,content:[{type:'text',text:'UNKNOWN'}]};
       head=commit;
-      if(unknown) { unknown=false; throw Error('UNKNOWN'); }
+      if(unknown) { unknown=false; return {isError:true,content:[{type:'text',text:'UNKNOWN'}]}; }
       return ok({success:true});
     }
   };
@@ -68,6 +68,6 @@ test('competing stale update cannot overwrite the winner',async()=>{
   const binding=githubConnectorBinding({tools:api.tools,repository:'owner/repo',branch:api.branch,path:api.path});
   const first=await binding.read();
   await binding.cas(first.sha,{winner:'first'});
-  await assert.rejects(binding.cas(first.sha,{winner:'second'}),/UNKNOWN/);
+  await assert.rejects(binding.cas(first.sha,{winner:'second'}),/checkpoint_connector_error/);
   assert.equal((await binding.read()).document.winner,'first');
 });
