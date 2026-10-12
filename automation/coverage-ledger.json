@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "noffcu-duome-shared-equity-homeownership",
+      "title": "New Orleans Firemen’s FCU Invests in Shared-Equity Homeownership CUSO",
+      "url": "/news/noffcu-duome-shared-equity-homeownership.html",
+      "publishedAt": "2026-10-12T07:35:00-04:00",
+      "section": "news",
+      "beat": "shared-equity-homeownership-and-cusos",
+      "functions": ["lending-collections", "member-service", "board-strategy", "finance-treasury"],
+      "technologies": ["industry-development"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Mortgage lending, community-development and strategy leaders",
+      "secondaryAudiences": ["finance and investment leaders", "compliance and fair-lending teams", "member-experience leaders"],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI investment story. The October 12 early review remains evidence-limited; no mature comparable performance claim was used.",
+      "internalLinkTargets": ["/news/fannie-freddie-vantagescore-credit-union-mortgages.html", "/insight-credit-union-mortgage-ai-go-live-tests.html"],
+      "sourceTier": 2,
+      "score": 78.6
+    },
+    {
       "id": "credit-union-fcra-liability-house-vote",
       "title": "Credit Union Coalition Pushes House Vote on FCRA Liability Caps",
       "url": "/news/credit-union-fcra-liability-house-vote.html",

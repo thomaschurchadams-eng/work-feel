@@ -7,13 +7,14 @@
   },
   "current": {
     "date": "2026-10-12",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": ["consumer-reporting-and-litigation", "housing-affordability-and-cusos", "fraud-analytics", "alm-and-balance-sheet", "credit-union-products", "mortgage-technology", "fintech-competition", "credit-union-leadership", "branch-and-retail-delivery", "member-affinity-products", "credit-union-events", "employee-data-and-ai"],
     "publications": [
-      {"type":"article","classification":"News","title":"Credit Union Coalition Pushes House Vote on FCRA Liability Caps","url":"https://creditunionainews.com/news/credit-union-fcra-liability-house-vote.html","primaryFunctionalAudience":"Compliance, consumer-lending, legal and credit-reporting leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
+      {"type":"article","classification":"News","title":"Credit Union Coalition Pushes House Vote on FCRA Liability Caps","url":"https://creditunionainews.com/news/credit-union-fcra-liability-house-vote.html","primaryFunctionalAudience":"Compliance, consumer-lending, legal and credit-reporting leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+      {"type":"article","classification":"News","title":"New Orleans Firemen’s FCU Invests in Shared-Equity Homeownership CUSO","url":"https://creditunionainews.com/news/noffcu-duome-shared-equity-homeownership.html","primaryFunctionalAudience":"Mortgage lending, community-development and strategy leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
     ],
     "rejections": [
       {"title":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud and Raiz coverage area"},
@@ -27,11 +28,11 @@
       {"title":"Alkami Promotes AI Webinar for Credit Unions","reason":"event promotion rather than a completed event, directive or implementation"},
       {"title":"Google Raises Employee Data Acquisition Concerns","reason":"general enterprise issue without a concrete credit-union operating consequence"}
     ],
-    "status": "one-article-cycle-in-progress",
+    "status": "two-article-cycle-complete",
     "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI legislative story. The October 12 early review remains evidence-limited; no mature comparable performance claim was used in selection or framing.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-12T07:05:00-04:00"
+    "updatedAt": "2026-10-12T07:35:00-04:00"
   },
   "history": [
     {

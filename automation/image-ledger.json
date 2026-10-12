@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "noffcu-duome-shared-equity-homeownership",
+      "articleUrl": "/news/noffcu-duome-shared-equity-homeownership.html",
+      "imagePath": "/assets/noffcu-duome-shared-equity-homeownership.jpg",
+      "publishedAt": "2026-10-12T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "architectural-isometric",
+      "subject": "architecture-and-infrastructure",
+      "composition": "split-comparison",
+      "perspective": "isometric",
+      "palette": "emerald-cream",
+      "lighting": "soft-daylight",
+      "texture": "matte-clay",
+      "scene": "homeownership-structure-splits-between-member-mortgage-and-shared-equity-capital-with-credit-union-governance-visible",
+      "conceptScore": 98.7,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "6bbcfa4393598eb2e54c2a61f73b38869838b40a86aa6ece7a79dec0baabe0ea",
+      "conceptAlternatives": [
+        {"medium": "ink-and-linocut", "subject": "shared-home-ownership", "score": 91.5},
+        {"medium": "tactile-paper-cut", "subject": "mortgage-and-equity-paths", "score": 90.9}
+      ]
+    },
+    {
       "id": "credit-union-fcra-liability-house-vote",
       "articleUrl": "/news/credit-union-fcra-liability-house-vote.html",
       "imagePath": "/assets/credit-union-fcra-liability-house-vote.jpg",
