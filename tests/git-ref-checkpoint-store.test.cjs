@@ -13,10 +13,10 @@ function connector({lostOnce=false}={}) {
   snapshot:()=>({revision,document})
  };
 }
-test('unverified connector cannot activate checkpoint store',()=>assert.throws(()=>gitRefCheckpointStore({read:async()=>{},cas:async()=>{},ownerId:'one',ownerLive:async()=>false}),/checkpoint_cas_unverified/));
+test('unverified connector cannot activate checkpoint store',()=>assert.throws(()=>gitRefCheckpointStore({read:async()=>{},cas:async()=>{},executionId:'test-run-0',ownerLive:async()=>false}),/checkpoint_cas_unverified/));
 test('atomic connector serializes competing owners for one incident',async()=>{
  const c=connector(),options={...c,casVerified:true,ownerLive:async()=>true};
- const a=gitRefCheckpointStore({...options,ownerId:'a'}),b=gitRefCheckpointStore({...options,ownerId:'b'});
+ const a=gitRefCheckpointStore({...options,executionId:'test-run-a'}),b=gitRefCheckpointStore({...options,executionId:'test-run-b'});
  const result=await Promise.allSettled([a.acquire('incident'),b.acquire('incident')]);
  assert.equal(result.filter(x=>x.status==='fulfilled').length,1);
  assert.equal(result.filter(x=>x.status==='rejected').length,1);
@@ -24,7 +24,7 @@ test('atomic connector serializes competing owners for one incident',async()=>{
  assert.equal(Object.keys(c.snapshot().document.leases).length,0);
 });
 test('lost successful CAS response is reconciled without replay',async()=>{
- const c=connector({lostOnce:true}),store=gitRefCheckpointStore({...c,casVerified:true,ownerId:'owner',ownerLive:async()=>true});
+ const c=connector({lostOnce:true}),store=gitRefCheckpointStore({...c,casVerified:true,executionId:'test-run-lost',ownerLive:async()=>true});
  const release=await store.acquire('incident');
  await store.save({key:'incident',status:'working',steps:{},attempts:0});
  assert.equal((await store.load('incident')).status,'working');
@@ -32,10 +32,10 @@ test('lost successful CAS response is reconciled without replay',async()=>{
  assert.equal(Object.keys(c.snapshot().document.leases).length,0);
 });
 test('lease is not reclaimed on time alone; verified dead owner may be replaced',async()=>{
- const c=connector(),live=gitRefCheckpointStore({...c,casVerified:true,ownerId:'live',ownerLive:async()=>true});
+ const c=connector(),live=gitRefCheckpointStore({...c,casVerified:true,executionId:'test-run-live',ownerLive:async()=>true});
  await live.acquire('incident');
- const waiting=gitRefCheckpointStore({...c,casVerified:true,ownerId:'next',ownerLive:async()=>true});
+ const waiting=gitRefCheckpointStore({...c,casVerified:true,executionId:'test-run-next',ownerLive:async()=>true});
  await assert.rejects(waiting.acquire('incident'),/recovery_lease_busy/);
- const afterDeath=gitRefCheckpointStore({...c,casVerified:true,ownerId:'next',ownerLive:async()=>false});
+ const afterDeath=gitRefCheckpointStore({...c,casVerified:true,executionId:'test-run-next',ownerLive:async()=>({stopped:true,evidence:'terminal run receipt'})});
  const release=await afterDeath.acquire('incident');await release();
 });

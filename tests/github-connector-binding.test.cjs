@@ -45,7 +45,7 @@ function fakeConnector() {
 test('connector binding preserves other files and supplies a durable checkpoint lease',async()=>{
   const api=fakeConnector();
   const binding=githubConnectorBinding({tools:api.tools,repository:'owner/repo',branch:api.branch,path:api.path});
-  const store=gitRefCheckpointStore({...binding,ownerId:'test-worker',ownerLive:async()=>true,casVerified:true});
+  const store=gitRefCheckpointStore({...binding,executionId:'test-run-1',ownerLive:async()=>({stopped:false}),casVerified:true});
   const release=await store.acquire('incident');
   await store.save({key:'incident',phase:'verified'});
   assert.equal((await store.load('incident')).phase,'verified');
@@ -56,7 +56,7 @@ test('connector binding preserves other files and supplies a durable checkpoint 
 test('lost success response is reconciled by transaction readback',async()=>{
   const api=fakeConnector();
   const binding=githubConnectorBinding({tools:api.tools,repository:'owner/repo',branch:api.branch,path:api.path});
-  const store=gitRefCheckpointStore({...binding,ownerId:'test-worker',ownerLive:async()=>true,casVerified:true});
+  const store=gitRefCheckpointStore({...binding,executionId:'test-run-2',ownerLive:async()=>({stopped:false}),casVerified:true});
   api.loseNextResponse();
   const release=await store.acquire('incident');
   assert.ok(api.head()!==api.base);
@@ -70,4 +70,19 @@ test('competing stale update cannot overwrite the winner',async()=>{
   await binding.cas(first.sha,{winner:'first'});
   await assert.rejects(binding.cas(first.sha,{winner:'second'}),/checkpoint_connector_error/);
   assert.equal((await binding.read()).document.winner,'first');
+});
+
+test('lease recovery needs exact execution stop evidence; unknown owner blocks',async()=>{
+  const api=fakeConnector();
+  const binding=githubConnectorBinding({tools:api.tools,repository:'owner/repo',branch:api.branch,path:api.path});
+  const first=gitRefCheckpointStore({...binding,executionId:'task-run-1',ownerLive:async()=>({stopped:false}),casVerified:true});
+  await first.acquire('incident'); // Simulated process exit leaves its lease.
+  const uncertain=gitRefCheckpointStore({...binding,executionId:'task-run-2',ownerLive:async()=>false,casVerified:true});
+  await assert.rejects(uncertain.acquire('incident'),/recovery_lease_busy/);
+  const second=gitRefCheckpointStore({...binding,executionId:'task-run-2',ownerLive:async id=>{
+    assert.equal(id,'task-run-1');return {stopped:true,evidence:'authoritative execution terminal receipt'};
+  },casVerified:true});
+  const release=await second.acquire('incident');
+  assert.equal((await binding.read()).document.leases.incident.executionId,'task-run-2');
+  await release();
 });

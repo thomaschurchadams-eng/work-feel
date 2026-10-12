@@ -128,7 +128,7 @@ test('dead worker lease is reclaimed once; competing resumers serialize', async 
 test('durable adapter closes original delayed-deployment incident after readiness changes', async () => {
   const directory=await fs.mkdtemp(path.join(os.tmpdir(),'cuai-recovery-deployment-'));
   try {
-    const store=fileStore(directory),incident='operations:38257568883:eb075a6';
+    const store=fileStore(directory),incident='media:2026-10-12:coordination';
     await store.save({key:incident,status:'exhausted',attempts:2,steps:{deployment:{status:'started'}}});
     let ready=false,closes=0,closed=false,writes=0;
     const args={key:incident,...store,steps:[{id:'deployment',safeToResume:true,reconcile:async()=>ready?'done':'not-done',run:async()=>{writes++},verify:async()=>ready}],isClosed:async()=>closed,close:async actual=>{assert.equal(actual,incident);closes++;closed=true}};
@@ -167,11 +167,10 @@ test('malformed truthy post-run verification cannot complete or close incident',
   assert.equal(runs,1);assert.equal(closes,0);
 });
 
-test('already closed October 12 incident is a read-only replay',async()=>{
- let callbacks=0;
+test('completed checkpoint requires authoritative external closure',async()=>{
  const closed={key,status:'completed',attempts:0,steps:{deployment:{status:'verified'}}};
- const f=fixture([{id:'deployment',reconcile:async()=>{callbacks++},run:async()=>{callbacks++},verify:async()=>{callbacks++}}],closed);
- f.args.close=async()=>{callbacks++};
+ const f=fixture([{id:'deployment',reconcile:async()=>{throw Error('should not run')},run:async()=>{throw Error('should not run')},verify:async()=>{throw Error('should not run')}}],closed);
+ await assert.rejects(recover(f.args),/completed_checkpoint_unconfirmed/);
+ f.args.isClosed=async()=>true;
  assert.equal((await recover(f.args)).status,'completed');
- assert.equal(callbacks,0);
 });

@@ -119,6 +119,9 @@ test('failed production wait emits same-run recovery handoff with zero side effe
  assert.equal(receipt.recovery.reconciliations,0);
  assert.equal(receipt.recovery.requiresExternalReconciliation,true);
  assert.match(receipt.recovery.incidentKey,/^operations:unknown-run:a{40}$/);
+ assert.equal(receipt.recovery.operationId,receipt.recovery.incidentKey);
+ assert.equal(receipt.recovery.busDedupeKey,null);
+ assert.equal(receipt.recovery.busMappingRequired,true);
  assert.equal(result.calls.some(c=>c.url.endsWith('/buffer-schedule-tracked')),false);
 });
 

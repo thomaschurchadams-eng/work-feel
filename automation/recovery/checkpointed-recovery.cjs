@@ -16,6 +16,13 @@ async function recover({ key, steps, load, save, acquire, isClosed, close, maxAt
   try {
     const state = await load(key) || { key, status: 'working', steps: {}, attempts: 0 };
     if (state.key !== key) throw Error('incident_key_mismatch');
+    if (state.status === 'completed') {
+      // A local checkpoint is not evidence that the issue-bus incident closed.
+      // Never issue a second close from this path when the external read fails.
+      const closed=await isClosed(key);
+      if (closed !== true) throw Object.assign(Error('completed_checkpoint_unconfirmed'),{code:'AMBIGUOUS_OUTCOME'});
+      return state;
+    }
     if (TERMINAL.has(state.status)) return state;
     const call = async (fn, reason) => {
       try { return { ok:true, value:await fn() }; }
