@@ -2565,3 +2565,5 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
 .briefing-offer{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:2.25rem;background:#eef3f2;border-left:4px solid #167b88}.briefing-offer>div{max-width:720px}.briefing-offer p:last-child{line-height:1.65}.briefing-offer .btn{flex:none}.briefing-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}.briefing-services .card{height:100%}.briefing-services .card p{line-height:1.65}.briefing-cta{background:#142536;color:#fff;padding:2.5rem}.briefing-cta p{max-width:720px;line-height:1.65}.briefing-cta .btn-outline{color:#fff;border-color:#fff}@media(max-width:800px){.briefing-offer{display:block}.briefing-offer .btn{margin-top:1rem}.briefing-services{grid-template-columns:1fr}}
 
 .page-briefings-speaking .hero h1.page-title{max-width:100%;overflow-wrap:anywhere}.page-briefings-speaking .hero .btn{max-width:100%;white-space:normal;text-align:center}@media(max-width:700px){.page-briefings-speaking .hero h1.page-title{font-size:clamp(2rem,8vw,2.6rem)}}
+
+.briefing-offer .eyebrow{color:var(--link-teal)}
