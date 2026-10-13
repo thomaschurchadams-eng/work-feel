@@ -1,21 +1,69 @@
 {
   "schemaVersion": 1,
-  "status": "public draft evaluation fixture of paraphrased public facts; source rights review pending",
-  "records": [{
-    "id": "ornl-kobalt-selection-2026-09-04",
-    "institution": "ORNL Federal Credit Union",
-    "useCase": "third-party risk and vendor reviews",
-    "stage": "selected; production deployment unverified",
-    "claim": {"text": "Kobalt says its platform extracts evidence, identifies control gaps and produces risk analyses", "attribution": "provider announcement", "status": "claimed"},
-    "independentlySupportedResult": null,
-    "dates": {"originalAnnouncement": "2026-09-04", "cuaiReporting": "2026-09-07", "goLive": null, "resultMeasurement": null},
-    "sources": [{"url": "https://www.cuinsight.com/press-release/ornl-fcu-selects-kobalt-labs-to-modernize-risk-and-compliance-operations/", "type": "provider announcement", "rights": "facts only; no redistribution or training license established"}, {"path": "news/ornl-fcu-kobalt-ai-vendor-risk.html", "type": "CUAI reporting", "rights": "internal factual index only"}],
-    "uncertainty": ["go-live unknown", "independent efficiency or risk-quality result unknown", "final vendor decision authority unknown"],
-    "corrections": []
-  }],
+  "status": "public draft evaluation fixture of paraphrased public facts; original content reuse and training unlicensed",
+  "records": [
+    {
+      "id": "ornl-kobalt-selection-2026-09-04",
+      "institution": "ORNL Federal Credit Union",
+      "useCase": "third-party risk and vendor reviews",
+      "stage": "selected; production deployment unverified",
+      "claim": {
+        "text": "Kobalt says its platform extracts evidence, identifies control gaps and produces risk analyses",
+        "attribution": "provider announcement",
+        "status": "claimed"
+      },
+      "independentlySupportedResult": null,
+      "dates": {
+        "originalAnnouncement": "2026-09-04",
+        "cuaiReporting": "2026-09-07",
+        "goLive": null,
+        "resultMeasurement": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cuinsight.com/press-release/ornl-fcu-selects-kobalt-labs-to-modernize-risk-and-compliance-operations/",
+          "type": "provider announcement",
+          "rights": "CUInsight terms/copyright pages restrict reuse of site content without authorization; this record stores no copied source passage and grants no training or redistribution rights"
+        },
+        {
+          "path": "news/ornl-fcu-kobalt-ai-vendor-risk.html",
+          "type": "CUAI reporting",
+          "rights": "internal factual index only"
+        }
+      ],
+      "uncertainty": [
+        "go-live unknown",
+        "independent efficiency or risk-quality result unknown",
+        "final vendor decision authority unknown"
+      ],
+      "corrections": []
+    }
+  ],
   "evaluationCases": [
-    {"id": "selection-versus-live", "recordId": "ornl-kobalt-selection-2026-09-04", "predicate": "hasVerifiedGoLive", "expected": false},
-    {"id": "claim-versus-result", "recordId": "ornl-kobalt-selection-2026-09-04", "predicate": "hasIndependentResult", "expected": false},
-    {"id": "rights", "recordId": "ornl-kobalt-selection-2026-09-04", "predicate": "hasTrainingLicense", "expected": false}
-  ]
+    {
+      "id": "selection-versus-live",
+      "recordId": "ornl-kobalt-selection-2026-09-04",
+      "predicate": "hasVerifiedGoLive",
+      "expected": false
+    },
+    {
+      "id": "claim-versus-result",
+      "recordId": "ornl-kobalt-selection-2026-09-04",
+      "predicate": "hasIndependentResult",
+      "expected": false
+    },
+    {
+      "id": "rights",
+      "recordId": "ornl-kobalt-selection-2026-09-04",
+      "predicate": "hasTrainingLicense",
+      "expected": false
+    }
+  ],
+  "rightsReview": {
+    "reviewedAt": "2026-10-13",
+    "sourceDateConfirmedAt": "https://www.cuinsight.com/press-release/ornl-fcu-selects-kobalt-labs-to-modernize-risk-and-compliance-operations/",
+    "terms": "https://www.cuinsight.com/terms-of-service/",
+    "copyright": "https://www.cuinsight.com/copyright-use/",
+    "finding": "Original announcement date and selection are confirmed. CUInsight restricts reuse of site content; no training, copied-content redistribution, or public dataset license is established. Review needed before broader asset use."
+  }
 }
