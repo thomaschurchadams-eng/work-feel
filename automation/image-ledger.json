@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "bank-regulators-agentic-ai-shutdown-controls",
+      "articleUrl": "/news/bank-regulators-agentic-ai-shutdown-controls.html",
+      "imagePath": "/assets/bank-regulators-agentic-ai-shutdown-controls.jpg",
+      "publishedAt": "2026-10-13T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "handcrafted-macro-still-life",
+      "subject": "agentic-ai-control-and-recovery",
+      "composition": "asymmetric-control-gate",
+      "perspective": "wide-eye-level",
+      "palette": "midnight-navy-copper-ivory-cyan",
+      "lighting": "controlled-side-light",
+      "texture": "deckled-paper-brushed-metal-translucent-resin",
+      "scene": "autonomous-decision-path-approaches-manual-authorization-gate-audit-markers-and-shutdown-lever-with-recovery-routes",
+      "conceptScore": 98.4,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "283753d131485520da3ab6d98ed8774f212b9bd35af15a882181b97fe28ad0d9",
+      "conceptAlternatives": [
+        {"medium": "architectural-isometric", "subject": "agent-authority-and-recovery", "score": 91.2},
+        {"medium": "editorial-collage", "subject": "ai-audit-and-shutdown-controls", "score": 90.4}
+      ]
+    },
+    {
       "id": "noffcu-duome-shared-equity-homeownership",
       "articleUrl": "/news/noffcu-duome-shared-equity-homeownership.html",
       "imagePath": "/assets/noffcu-duome-shared-equity-homeownership.jpg",

@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "bank-regulators-agentic-ai-shutdown-controls",
+      "title": "Bank Regulators Probe Agentic AI Shutdown Controls",
+      "url": "/news/bank-regulators-agentic-ai-shutdown-controls.html",
+      "publishedAt": "2026-10-13T07:35:00-04:00",
+      "section": "news",
+      "beat": "agentic-ai-supervision-and-operational-resilience",
+      "functions": ["it-data-cybersecurity", "risk-compliance", "operations", "vendor-management"],
+      "technologies": ["agents-automation", "generative-ai"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Technology, cybersecurity, operational-resilience and vendor-risk leaders",
+      "secondaryAudiences": ["risk and compliance leaders", "internal-audit and model-risk teams", "board and strategy leaders"],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening lead with the concrete supervisory evidence test—agent authority, human approval, audit trails and recovery. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": ["/news/fsb-frontier-ai-cyber-risk-financial-system.html", "/insight-credit-union-ai-inventory-change-control.html"],
+      "sourceTier": 2,
+      "score": 79.2
+    },
+    {
       "id": "noffcu-duome-shared-equity-homeownership",
       "title": "New Orleans Firemen’s FCU Invests in Shared-Equity Homeownership CUSO",
       "url": "/news/noffcu-duome-shared-equity-homeownership.html",

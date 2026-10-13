@@ -6,18 +6,19 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-12",
-    "fullArticleCount": 2,
+    "date": "2026-10-13",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
-    "beatsSearched": ["consumer-reporting-and-litigation", "housing-affordability-and-cusos", "fraud-analytics", "alm-and-balance-sheet", "credit-union-products", "mortgage-technology", "fintech-competition", "credit-union-leadership", "branch-and-retail-delivery", "member-affinity-products", "credit-union-events", "employee-data-and-ai"],
+    "beatsSearched": ["agentic-ai-supervision-and-operational-resilience", "financial-stability-and-cyber-risk", "digital-banking-migration", "fraud-analytics", "alm-and-balance-sheet", "credit-union-card-products", "mortgage-technology", "fintech-ai-competition", "credit-union-workforce-leadership", "branch-and-retail-delivery", "member-affinity-products", "employee-data-and-ai"],
     "publications": [
-      {"type":"article","classification":"News","title":"Credit Union Coalition Pushes House Vote on FCRA Liability Caps","url":"https://creditunionainews.com/news/credit-union-fcra-liability-house-vote.html","primaryFunctionalAudience":"Compliance, consumer-lending, legal and credit-reporting leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
-      {"type":"article","classification":"News","title":"New Orleans Firemen’s FCU Invests in Shared-Equity Homeownership CUSO","url":"https://creditunionainews.com/news/noffcu-duome-shared-equity-homeownership.html","primaryFunctionalAudience":"Mortgage lending, community-development and strategy leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
+      {"type":"article","classification":"News","title":"Bank Regulators Probe Agentic AI Shutdown Controls","url":"https://creditunionainews.com/news/bank-regulators-agentic-ai-shutdown-controls.html","primaryFunctionalAudience":"Technology, cybersecurity, operational-resilience and vendor-risk leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
     ],
     "rejections": [
-      {"title":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud and Raiz coverage area"},
+      {"title":"IMF Warns AI Could Amplify Financial-Stability and Cyber Risk","reason":"important global analysis but no discrete U.S. credit-union directive or implementation event"},
+      {"title":"Self-Help Credit Union Plans a Digital Experience Upgrade","reason":"migration announcement without a completed implementation or measured member outcome"},
+      {"title":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud area"},
       {"title":"Delfi Launches Risk and Return Benchmark for Credit Unions","reason":"vendor launch without independently measured operating results and near-duplicate of recent Delfi coverage"},
       {"title":"PenFed Launches Defender Rewards Credit Card","reason":"product promotion without a material technology, regulatory or system-wide operating change"},
       {"title":"TransUnion Launches First Look Mortgage Tool","reason":"vendor launch without a named credit-union deployment or independently measured borrower outcome"},
@@ -25,16 +26,44 @@
       {"title":"UFCU Names Digital Strategy Vice President","reason":"routine personnel announcement without a new implementation or measurable operating outcome"},
       {"title":"OnPoint Opens New Branch","reason":"local branch expansion without a system-wide operating implication"},
       {"title":"Hughes Launches Affinity Debit Cards","reason":"member-promotion announcement without a consequential operating or technology change"},
-      {"title":"Alkami Promotes AI Webinar for Credit Unions","reason":"event promotion rather than a completed event, directive or implementation"},
       {"title":"Google Raises Employee Data Acquisition Concerns","reason":"general enterprise issue without a concrete credit-union operating consequence"}
     ],
-    "status": "two-article-cycle-complete",
-    "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI legislative story. The October 12 early review remains evidence-limited; no mature comparable performance claim was used in selection or framing.",
+    "status": "one-article-cycle-complete",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening lead with the concrete supervisory evidence test—agent authority, human approval, audit trails and recovery. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-12T07:35:00-04:00"
+    "updatedAt": "2026-10-13T07:35:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-12",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": ["consumer-reporting-and-litigation", "housing-affordability-and-cusos", "fraud-analytics", "alm-and-balance-sheet", "credit-union-products", "mortgage-technology", "fintech-competition", "credit-union-leadership", "branch-and-retail-delivery", "member-affinity-products", "credit-union-events", "employee-data-and-ai"],
+      "publications": [
+        {"type":"article","classification":"News","title":"Credit Union Coalition Pushes House Vote on FCRA Liability Caps","url":"https://creditunionainews.com/news/credit-union-fcra-liability-house-vote.html","primaryFunctionalAudience":"Compliance, consumer-lending, legal and credit-reporting leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"},
+        {"type":"article","classification":"News","title":"New Orleans Firemen’s FCU Invests in Shared-Equity Homeownership CUSO","url":"https://creditunionainews.com/news/noffcu-duome-shared-equity-homeownership.html","primaryFunctionalAudience":"Mortgage lending, community-development and strategy leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
+      ],
+      "rejections": [
+        {"title":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud and Raiz coverage area"},
+        {"title":"Delfi Launches Risk and Return Benchmark for Credit Unions","reason":"vendor launch without independently measured operating results and near-duplicate of recent Delfi coverage"},
+        {"title":"PenFed Launches Defender Rewards Credit Card","reason":"product promotion without a material technology, regulatory or system-wide operating change"},
+        {"title":"TransUnion Launches First Look Mortgage Tool","reason":"vendor launch without a named credit-union deployment or independently measured borrower outcome"},
+        {"title":"Revolut Expands Proprietary AI Models","reason":"international fintech development with limited direct U.S. credit-union consequence"},
+        {"title":"UFCU Names Digital Strategy Vice President","reason":"routine personnel announcement without a new implementation or measurable operating outcome"},
+        {"title":"OnPoint Opens New Branch","reason":"local branch expansion without a system-wide operating implication"},
+        {"title":"Hughes Launches Affinity Debit Cards","reason":"member-promotion announcement without a consequential operating or technology change"},
+        {"title":"Alkami Promotes AI Webinar for Credit Unions","reason":"event promotion rather than a completed event, directive or implementation"},
+        {"title":"Google Raises Employee Data Acquisition Concerns","reason":"general enterprise issue without a concrete credit-union operating consequence"}
+      ],
+      "status": "two-article-cycle-complete",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI legislative story. The October 12 early review remains evidence-limited; no mature comparable performance claim was used in selection or framing.",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
+      "updatedAt": "2026-10-12T07:35:00-04:00"
+    },
     {
       "date": "2026-10-09",
       "fullArticleCount": 2,
