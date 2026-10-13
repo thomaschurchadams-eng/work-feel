@@ -28,7 +28,8 @@ class RoadmapTest(unittest.TestCase):
     def event(self, eid, stage, evidence, key='dataset', **kw):
         e = dict(eventId=eid, action='transition', key=key, stage=stage, evidence=evidence, **kw)
         verifier = (lambda _: accepted_receipt(key, self.s['items'][key]['owner'])) if stage == 'building' else None
-        self.s = apply(self.s, e, handoff_verifier=verifier)
+        qa_verifier = (lambda _: {**evidence, 'source':'local test runner receipt', 'sourceVerified':True}) if stage == 'qa' else None
+        self.s = apply(self.s, e, handoff_verifier=verifier, qa_verifier=qa_verifier)
     def build_to_gate(self):
         self.event('r','ranked',dict(source='report', observedAt=NOW, finding='qualified'))
         self.event('b','building',dict(acceptedHandoff='handoff-1',acceptedBy=self.s['items']['dataset']['owner'],scope='bounded',sourceVersion='source-A'))
@@ -99,6 +100,8 @@ class RoadmapTest(unittest.TestCase):
             self.event('failed','qa',{**QA,'testResult':'failed'})
         with self.assertRaisesRegex(ValueError,'QA source version'):
             self.event('wrong-source','qa',{**QA,'sourceVersion':'source-B'})
+        with self.assertRaisesRegex(ValueError,'verified exact-version test receipt'):
+            apply(self.s,dict(eventId='unverified-qa',action='transition',key='dataset',stage='qa',evidence=QA))
         self.event('q','qa',QA)
         self.event('g','blocked-release',dict(gate='approval',releaseOwner='Tom'))
         self.approval()
