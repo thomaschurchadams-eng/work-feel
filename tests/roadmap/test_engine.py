@@ -50,6 +50,24 @@ class RoadmapTest(unittest.TestCase):
         self.assertEqual(reconcile(self.s,'b',[body])['outbox']['b']['status'],'confirmed')
         self.assertEqual(reconcile(self.s,'b',[body,body])['outbox']['b']['status'],'conflict')
         self.assertEqual(self.s['outbox']['b']['destination'],'thomaschurchadams-eng/work-feel#160')
+    def test_stale_evidence_unknown_source_and_user_next(self):
+        s=apply(self.s,dict(eventId='choice',action='override',key='other',choice='next',authority='Tom',reason='October PRODUCT direction'))
+        s=apply(s,dict(eventId='new',action='evidence',key='dataset',evidence=dict(source='report',observedAt='2026-10-13'),signals={'goal':5}))
+        s=apply(s,dict(eventId='old',action='evidence',key='dataset',evidence=dict(source='stale report',observedAt='2026-09-30'),signals={'goal':99}))
+        self.assertEqual(s['items']['dataset']['signals']['goal'],5)
+        self.assertEqual(next_item(s)['id'],'other')
+        unknown=apply(s,dict(eventId='unavailable',action='evidence',key='other',evidence=dict(source='analytics unavailable',observedAt='2026-10-14')))
+        self.assertEqual(unknown['items']['other']['signals'],self.s['items']['other']['signals'])
+    def test_wrong_version_preview_cannot_complete(self):
+        self.event('r','ranked',dict(source='report',observedAt='today',finding='good'))
+        self.event('b','building',dict(acceptedHandoff='owner',scope='bounded'))
+        self.event('q','qa',dict(testCommand='tests',testResult='passed',artifactHash='final-hash'))
+        self.event('g','blocked-release',dict(gate='approval',releaseOwner='Tom'))
+        self.s=apply(self.s,dict(eventId='a',action='approval',key='dataset',scope='release',authority='Tom',evidence={'approvalId':'a1'}))
+        self.event('rel','released',dict(approvalId='a1',deploymentId='fixture'),scope='release')
+        with self.assertRaisesRegex(ValueError,'differs from tested QA version'):
+            self.event('wrong','verified-complete',dict(verification='preview only',observedAt='today',artifactHash='old-hash'))
+
     def test_cai_separate_brand_and_acceptance_evidence(self):
         s=blank('cai')
         s=apply(s,dict(eventId='c1',action='intake',key='product',title='PRODUCT prototype',kind='enhancement'))
