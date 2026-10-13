@@ -47,19 +47,37 @@ def handoff_from_issue(comments, brand, comment_id, owner_login):
         raise ValueError('handoff comment missing or ambiguous')
     return handoff(matches[0], brand, owner_login)
 
+def checkout_integrity(root, expected_commit, artifact):
+    """Reject changed tracked/untracked inputs; permit only generated Python bytecode."""
+    head = subprocess.run(('git','rev-parse','HEAD'),cwd=root,capture_output=True,text=True,check=True).stdout.strip()
+    if head != expected_commit:
+        raise ValueError('checkout HEAD changed during QA')
+    status = subprocess.run(('git','status','--porcelain','-z','--untracked-files=all'),
+                            cwd=root,capture_output=True,check=True).stdout
+    for entry in filter(None,status.split(b'\0')):
+        code = entry[:2].decode()
+        path = entry[3:].decode()
+        parts = Path(path).parts
+        if code == '??' and '__pycache__' in parts and path.endswith('.pyc'):
+            continue
+        raise ValueError(f'checkout has dirty input: {path}')
+    ignored = subprocess.run(('git','status','--porcelain','--ignored','--untracked-files=normal'),
+                             cwd=root,capture_output=True,text=True,check=True).stdout
+    allowed_generated = ('node_modules','node_modules/','dist/','.wrangler/','.next/','.vinext/','design-results/')
+    for line in ignored.splitlines():
+        if line.startswith('!! ') and line[3:] not in allowed_generated:
+            raise ValueError(f'unexpected ignored input: {line[3:]}')
+    return hashlib.sha256(artifact.read_bytes()).hexdigest()
+
+
 def qa_run(repo_root, brand, artifact_path, source_version):
-    """Run bounded repository checks; bind result to exact checked-out commit and bytes."""
+    """Run bounded repository checks; bind result to unchanged exact commit/bytes."""
     root = Path(repo_root).resolve()
     artifact = (root / artifact_path).resolve()
     if root not in artifact.parents or not artifact.is_file():
         raise ValueError('artifact outside checkout or missing')
-    commit = subprocess.run(('git','rev-parse','HEAD'), cwd=root, capture_output=True, text=True, check=True).stdout.strip()
-    if source_version != commit:
-        raise ValueError('source version differs from checkout')
-    relative = artifact.relative_to(root)
-    status = subprocess.run(('git','status','--porcelain','--',str(relative)), cwd=root, capture_output=True, text=True, check=True)
-    if status.stdout.strip():
-        raise ValueError('artifact is not committed at exact checkout head')
+    if brand not in QA_COMMANDS: raise ValueError('unknown brand')
+    before = checkout_integrity(root,source_version,artifact)
     commands = []
     for argv in QA_COMMANDS[brand]:
         if brand == 'cai' and argv == ('node','--test'):
@@ -69,9 +87,12 @@ def qa_run(repo_root, brand, artifact_path, source_version):
         outcome = subprocess.run(argv, cwd=root, capture_output=True, text=True)
         if outcome.returncode:
             raise ValueError(f'QA failed: {" ".join(argv)}: {outcome.stderr[-500:]}')
+    after = checkout_integrity(root,source_version,artifact)
+    if before != after:
+        raise ValueError('artifact changed during QA')
     return dict(testCommand=' && '.join(' '.join(c) for c in commands), testResult='passed',
-                artifactHash=hashlib.sha256(artifact.read_bytes()).hexdigest(), commitSha=commit,
-                sourceVersion=commit, source=f'local checkout {root} at {commit}', sourceVerified=True)
+                artifactHash=after, commitSha=source_version,
+                sourceVersion=source_version, source=f'local checkout {root} at {source_version}', sourceVerified=True)
 
 def deployment_read(result, expected):
     """Require exact immutable production identity from a trusted deployment read."""
