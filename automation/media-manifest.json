@@ -479,7 +479,7 @@
       "distributionMode": "native-video",
       "nativeVideo": null,
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "unchanged-source-qualified-script; narrated production held for fresh entitlement and permitted hearing/alignment route",
+      "preparationStatus": "Tom-selected narration variant1 byte-verified; private intro/music/visual assembly and final listening/caption/playback gates pending",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -507,15 +507,16 @@
         "assetId": "short-video-2026-10-15",
         "characters": 587,
         "words": 93,
-        "creditEstimate": null,
-        "estimateLimitation": "voice/model not yet confirmed against live authorized provider; character count is workload evidence, not guaranteed model-specific price",
+        "creditEstimate": 587,
+        "estimateLimitation": "Publishedv3website1credit/character and live stagedLiam withoutmultiplierwarning; actualsingle-request587debit now verified from provider history.",
         "retryBudget": 0,
         "fullNarrationRegeneration": false,
-        "measuredDurationSeconds": null
+        "measuredDurationSeconds": 40.829375,
+        "actualDebit": 587
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator retains production ownership: establish permitted hearing/alignment capability and accepted current-story narration; refresh live billing/balance/model-specific cost against full ledger before any authorized synthesis. Then actual listening, measured duration, final accessible playback and October15 release gates. No unchanged audio/lip-sync retry or silent substitution.",
+      "nextStep": "Assemble private selectedtake1 with brief branded intro and rights-verified music/visuals; preserve originals, no additional speech/presenter generation. Final actual full-video listening and caption sync required before due-date release/publisher gates.",
       "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
       "craftLearning": "Private silent A/B preparation remains unaccepted and is not narrated completion. Tom rejected text-card treatment for YouTube; approved still direction uses an original fictional presenter, story imagery and one caption layer. No actual sound-viewed benchmark claim. Six-second natural presenter animation remains blocked: existing account lip-sync route blank, account-specific quote/model terms/entitlement and explicit bounded test approval unavailable. Do not retry unchanged blank route or spend.",
       "storyboardMemberPath": "short-video-oct15-storyboard.json",
@@ -556,8 +557,8 @@
       },
       "capacityDependency": {
         "audioInputStatus": "unsupported; no unchanged retry during this calendar pass",
-        "narration": "no accepted current-story audio",
-        "freshProviderEntitlement": "required before synthesis; October12 readonly remaining28753/allowance39681/used10928 is historical, exact monthly reset not exposed",
+        "narration": "selected hardship_narration_variant_1.mp3 delivered",
+        "freshProviderEntitlement": "Fresh provider request used10928→11515, one587debit; monthly reset timestamp not exposed; future consumption still fresh-checked",
         "creditCeiling": 30000,
         "plannedBaseline": 21306,
         "planningMarginBeforeRevisions": 8694,
@@ -576,6 +577,86 @@
         "presenterAnimation": "blocked-account-readable-quote-terms-and-specific-test-approval; no retry or spend",
         "benchmarkUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0&list=YS",
         "benchmarkScope": "Earlier visual-only observation; audio not heard, production vendor/identity unknown; no new viewing claim."
+      },
+      "narrationArtifacts": {
+        "id": "oct15-hardship-narration-single-request-2026-10-13",
+        "source": "Verified original local hardship_narration_manifest.md from existing exclusive native-CUA provider; bothfiles byte/hash/afinfo verified by coordinator",
+        "generatedAt": "2026-10-13T19:46:00Z",
+        "generationTimePrecision": "provider reports about19:46UTC, not exact second",
+        "receivedAt": "2026-10-13T19:57:38.252881+00:00",
+        "scriptCharacters": 587,
+        "scriptWords": 93,
+        "exactScriptSha256": "9d1aef8400e21a656121840bad8e1559af6c44d052d512672b2578e739d87b49",
+        "voice": "Liam - Energetic, Social Media Creator",
+        "model": "Eleven v3",
+        "stability": 0.5,
+        "format": {
+          "codec": "MP3",
+          "sampleRate": 44100,
+          "bitRate": 128000,
+          "channels": 1
+        },
+        "providerCreditObservation": {
+          "usedBefore": 10928,
+          "usedAfter": 11515,
+          "actualDebit": 587,
+          "allowanceIncludingRollover": 39681,
+          "remainingAfterCalculated": 28166,
+          "remainingCalculation": "39681-11515; derived from unchanged allowance, not an independent after-generation remaining-UI claim",
+          "alreadyRecorded103CorrectionIncludedInUsedBefore": true
+        },
+        "generateClicks": 1,
+        "automaticVariantsReturned": 2,
+        "generationRecords": [
+          {
+            "generationId": "FpIjgcRABiApAiBtb4x6",
+            "credits": 587
+          },
+          {
+            "generationId": "mmc3oOjZWS4fhBDOrLai",
+            "credits": 0
+          }
+        ],
+        "fileGenerationMappingVerified": false,
+        "fileGenerationMappingNote": "Filevariant1 had download suffix-2, variant2 no suffix; labels follow sorted filenames. Do not map selectedvariant1 to Generation1 ID without evidence.",
+        "variants": [
+          {
+            "fileName": "hardship_narration_variant_1.mp3",
+            "libraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+            "bytes": 670208,
+            "sha256": "99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+            "durationSeconds": 40.829375,
+            "selectedByTom": true
+          },
+          {
+            "fileName": "hardship_narration_variant_2.mp3",
+            "libraryFileId": "libfile_eae6f8f8d2848191922c2345ecb2db6a",
+            "bytes": 640951,
+            "sha256": "c0ad6d0a666fe5b2e4ef1f6b3a01387493142dac70ad6bcf19df47aa800cfc62",
+            "durationSeconds": 39.000812,
+            "selectedByTom": false
+          }
+        ],
+        "selection": {
+          "selectedFileName": "hardship_narration_variant_1.mp3",
+          "selectedLibraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+          "selectedBy": "Tom",
+          "sourceMessage": "Sentinel_3b8cc8b69a808191881a51d2832b1c0f",
+          "selectedAt": "2026-10-13T19:54:00Z",
+          "selectionMeaning": "Audio take choice; no claim of full-video listening/caption sync or paid-presenter approval"
+        },
+        "retryBudget": 0,
+        "additionalNarrationRequested": false,
+        "actualListeningByCoordinator": false,
+        "fullVideoPlaybackAccepted": false,
+        "captionAlignmentVerified": false,
+        "introMusicAssembly": "private preparation in progress; past rejectedopener concepts not reused",
+        "presenterGenerationApproved": false,
+        "providerActionsByCoordinator": 0,
+        "status": "selected-narration-byte-verified; private assembly and final listening/playback gates incomplete",
+        "budgetRole": "existing planned baseline production, not extra experiment",
+        "productionVerified": false,
+        "nativeVideo": null
       }
     },
     {
