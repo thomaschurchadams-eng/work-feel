@@ -77,6 +77,11 @@ def qa_run(repo_root, brand, artifact_path, source_version):
     if root not in artifact.parents or not artifact.is_file():
         raise ValueError('artifact outside checkout or missing')
     if brand not in QA_COMMANDS: raise ValueError('unknown brand')
+    relative = artifact.relative_to(root)
+    tracked = subprocess.run(('git','ls-files','--error-unmatch','--',str(relative)),
+                             cwd=root,capture_output=True,text=True)
+    if tracked.returncode or tracked.stdout.strip() != str(relative):
+        raise ValueError('QA artifact must be Git tracked at exact checkout head')
     before = checkout_integrity(root,source_version,artifact)
     commands = []
     for argv in QA_COMMANDS[brand]:
