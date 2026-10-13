@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'automation' / 'roadmap'))
 from engine import apply, blank, next_item, reconcile, digest
 from receipts import approval as verified_approval_comment
-from integrations import issue_read, approval_from_issue, deployment_read, qa_run, QA_COMMANDS
+from integrations import issue_read, approval_from_issue, deployment_read, qa_run, QA_COMMANDS, vercel_list_result
 from orchestrate import run_once
 
 NOW = '2026-10-13'
@@ -176,7 +176,7 @@ class RoadmapTest(unittest.TestCase):
     def test_qa_command_contracts(self):
         for brand, commands in QA_COMMANDS.items():
             self.assertTrue(commands)
-            self.assertTrue(all(isinstance(cmd,tuple) and cmd[0] == 'python3' for cmd in commands),brand)
+            self.assertTrue(all(isinstance(cmd,tuple) and cmd[0] in ('python3','npm','node','./node_modules/.bin/vinext','./node_modules/.bin/eslint') for cmd in commands),brand)
 
     def test_connected_read_contracts_fail_closed(self):
         body='\n'.join(f'{k}: {v}' for k,v in approved_receipt().items() if k in ('approvalId','itemKey','actionClass','scope','artifactHash','commitSha','sourceVersion','status'))
@@ -193,6 +193,14 @@ class RoadmapTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'differs'): deployment_read({**actual,'commitSha':'wrong'},expected)
         with self.assertRaisesRegex(ValueError,'not READY'): deployment_read({**actual,'environment':'preview'},expected)
         with self.assertRaisesRegex(ValueError,'exact identity'): deployment_read({'state':'READY'},expected)
+        preview={'result':{'deployments':{'deployments':[dict(id='deployment-X',state='READY',target=None,meta={'githubCommitSha':'commit-A'})]}}}
+        with self.assertRaisesRegex(ValueError,'READY production'):
+            vercel_list_result(preview,expected)
+        production={'result':{'deployments':{'deployments':[dict(id='deployment-X',state='READY',target='production',meta={'githubCommitSha':'commit-A'})]}}}
+        with self.assertRaisesRegex(ValueError,'artifact proof unavailable'):
+            vercel_list_result(production,expected)
+        proof=dict(deploymentId='deployment-X',artifactHash='artifact-A',sourceVerified=True)
+        self.assertEqual(vercel_list_result(production,expected,proof)['sourceVerified'],True)
         with self.assertRaisesRegex(ValueError,'source version differs'):
             qa_run(Path(__file__).resolve().parents[2],'cuai','automation/roadmap/engine.py','stale-commit')
 
