@@ -74,7 +74,7 @@ def bus_comment(state, item, kind, event_id, evidence):
                       f"nextOwner: {item['owner']}"))
 
 
-def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoint_verifier=None, qa_verifier=None):
+def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoint_verifier=None, qa_verifier=None, deployment_verifier=None):
     """Pure reducer. A repeated event is a no-op; conflicting identity fails closed."""
     state = copy.deepcopy(state)
     if state["brand"] not in BRANDS:
@@ -208,6 +208,9 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                 release = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "released"), None)
                 if not release or any(evidence[k] != release[k] for k in ("deploymentId", "commitSha", "artifactHash")):
                     raise ValueError("completion differs from released deployment")
+                production = deployment_verifier(event) if deployment_verifier else None
+                if not isinstance(production, dict) or not production.get("sourceVerified") or not production.get("source") or any(production.get(k) != evidence[k] for k in ("deploymentId", "commitSha", "artifactHash", "environment")):
+                    raise ValueError("completion needs authoritative production receipt")
             if stage == "released":
                 required = event.get("scope")
                 qa = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "qa"), None)
@@ -223,6 +226,9 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                                            and (not x.get("expiresAt") or x["expiresAt"] > max(evidence["observedAt"], datetime.now(timezone.utc).date().isoformat()))
                                            for x in item["approvalScopes"]):
                     raise ValueError("genuinely missing release authority")
+                deployment = deployment_verifier(event) if deployment_verifier else None
+                if not isinstance(deployment, dict) or not deployment.get("sourceVerified") or not deployment.get("source") or any(deployment.get(k) != evidence[k] for k in ("deploymentId", "commitSha", "artifactHash")):
+                    raise ValueError("release needs authoritative deployment receipt")
             item["stage"] = stage
             item["history"].append({"eventId": eid, "stage": stage, "evidence": evidence})
             if stage in ("building", "blocked-release", "verified-complete"):
