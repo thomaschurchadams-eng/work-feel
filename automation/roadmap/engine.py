@@ -176,7 +176,7 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
             if stage not in allowed.get(item["stage"], set()):
                 raise ValueError("unsafe stage transition")
             require_evidence(stage, evidence)
-            if stage == "building" and item["stage"] == "ranked":
+            if stage == "building":
                 if evidence["acceptedBy"] != item["owner"]:
                     raise ValueError("receiving owner must accept handoff")
                 receipt = handoff_verifier(event) if handoff_verifier else None
@@ -185,11 +185,12 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                     raise ValueError("handoff needs authoritative receiving-owner receipt")
                 if not receipt.get("source") or not receipt.get("sourceVerified"):
                     raise ValueError("unverified handoff source")
-                if active(state):
-                    raise ValueError("one active development item per brand")
-                chosen = next_item(state)
-                if chosen["id"] != key and not event.get("safeCheckpoint"):
-                    raise ValueError("higher ranked Next exists; record safe checkpoint")
+                if item["stage"] == "ranked":
+                    if active(state):
+                        raise ValueError("one active development item per brand")
+                    chosen = next_item(state)
+                    if chosen["id"] != key and not event.get("safeCheckpoint"):
+                        raise ValueError("higher ranked Next exists; record safe checkpoint")
             if stage == "qa":
                 if evidence["testResult"] != "passed":
                     raise ValueError("failed QA cannot advance")
@@ -216,6 +217,9 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                 qa = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "qa"), None)
                 if not qa or any(evidence[k] != qa[k] for k in ("artifactHash", "commitSha", "sourceVersion")):
                     raise ValueError("release differs from tested artifact")
+                fresh = approval_verifier(event) if approval_verifier else None
+                if not isinstance(fresh, dict) or not fresh.get("sourceVerified") or fresh.get("status") != "active" or fresh.get("authority") != "Tom":
+                    raise ValueError("release needs fresh authoritative approval")
                 if not required or not any(x["scope"] == required and x["approvalId"] == evidence["approvalId"]
                                            and x["artifactHash"] == evidence["artifactHash"]
                                            and x["commitSha"] == evidence["commitSha"]
@@ -223,6 +227,8 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                                            and x["actionClass"] == evidence["actionClass"]
                                            and x["itemKey"] == key
                                            and x["status"] == "active"
+                                           and all(fresh.get(k) == x.get(k) for k in ("approvalId", "source", "scope", "actionClass", "itemKey", "artifactHash", "commitSha", "sourceVersion"))
+                                           and (not fresh.get("expiresAt") or fresh["expiresAt"] > max(evidence["observedAt"], datetime.now(timezone.utc).date().isoformat()))
                                            and (not x.get("expiresAt") or x["expiresAt"] > max(evidence["observedAt"], datetime.now(timezone.utc).date().isoformat()))
                                            for x in item["approvalScopes"]):
                     raise ValueError("genuinely missing release authority")
@@ -240,15 +246,22 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
     return state
 
 
-def reconcile(state, event_id, remote_comments, fresh_complete=False, recovery_receipt=None):
+def reconcile(state, event_id, remote_comments, fresh_complete=False, recovery_receipt=None, recovery_verifier=None):
     """Never downgrade a known receipt from a stale or partial issue read."""
     state = copy.deepcopy(state)
     entry = state["outbox"][event_id]
     if recovery_receipt:
-        if recovery_receipt.get("eventId") != event_id or recovery_receipt.get("status") != "resolved" or not recovery_receipt.get("source"):
+        verified = recovery_verifier(recovery_receipt) if recovery_verifier else None
+        expected_key = re.search(r"(?m)^dedupeKey: (.+)$", entry["body"]).group(1)
+        expected_owner = re.search(r"(?m)^nextOwner: (.+)$", entry["body"]).group(1)
+        if not isinstance(verified, dict) or any(verified.get(k) != v for k,v in
+            (("eventId",event_id),("dedupeKey",expected_key),("owner",expected_owner),
+             ("bodyHash",digest(entry["body"])),("priorStatus",entry["status"]),("status","resolved"))):
             raise ValueError("invalid authoritative recovery receipt")
-        entry["status"] = "confirmed" if recovery_receipt.get("posted") else "pending"
-        entry["recoverySource"] = recovery_receipt["source"]
+        if not verified.get("sourceVerified") or not verified.get("source") or verified.get("observedAt", "") < datetime.now(timezone.utc).date().isoformat():
+            raise ValueError("recovery receipt not fresh or verified")
+        entry["status"] = "confirmed" if verified.get("posted") else "pending"
+        entry["recoverySource"] = verified["source"]
         return state
     if not fresh_complete:
         if entry["status"] == "pending":
