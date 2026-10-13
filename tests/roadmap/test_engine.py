@@ -10,6 +10,8 @@ class RoadmapTest(unittest.TestCase):
         self.s = apply(self.s, dict(eventId='i1', action='intake', key='dataset', title='Deployment dataset', kind='data-asset', sources=['a'], signals={'goal': 2}))
         self.s = apply(self.s, dict(eventId='i2', action='intake', key='other', title='Other', kind='enhancement', signals={'goal': 1}))
     def event(self, eid, stage, evidence, **kw):
+        if stage == 'building' and 'acceptedBy' not in evidence:
+            evidence = {**evidence, 'acceptedBy': self.s['items']['dataset']['owner']}
         self.s = apply(self.s, dict(eventId=eid, action='transition', key='dataset', stage=stage, evidence=evidence, **kw))
     def test_full_dry_run_and_prior_approval_reuse(self):
         self.event('r','ranked',dict(source='report', observedAt='2026-10-13', finding='qualified'))
@@ -36,7 +38,7 @@ class RoadmapTest(unittest.TestCase):
         self.assertIsNone(next_item(new))
         with self.assertRaisesRegex(ValueError,'one active'):
             newer=apply(new,dict(eventId='other-rank',action='transition',key='other',stage='ranked',evidence=dict(source='report',observedAt='today',finding='good')))
-            apply(newer,dict(eventId='other-build',action='transition',key='other',stage='building',evidence=dict(acceptedHandoff='yes',scope='bounded')))
+            apply(newer,dict(eventId='other-build',action='transition',key='other',stage='building',evidence=dict(acceptedHandoff='yes',acceptedBy=newer['items']['other']['owner'],scope='bounded')))
     def test_overrides_preserved(self):
         s=apply(self.s,dict(eventId='reject',action='override',key='other',choice='reject',authority='Tom',reason='no fit'))
         self.assertEqual(s['items']['other']['stage'],'rejected')
@@ -76,7 +78,7 @@ class RoadmapTest(unittest.TestCase):
         s=apply(s,dict(eventId='c2',action='transition',key='product',stage='ranked',evidence=dict(source='decision',observedAt='today',finding='selected')))
         with self.assertRaisesRegex(ValueError,'acceptedHandoff'):
             apply(s,dict(eventId='c3',action='transition',key='product',stage='building',evidence=dict(scope='private')))
-        s=apply(s,dict(eventId='c3',action='transition',key='product',stage='building',evidence=dict(acceptedHandoff='existing owner receipt',scope='private')))
+        s=apply(s,dict(eventId='c3',action='transition',key='product',stage='building',evidence=dict(acceptedHandoff='existing owner receipt',acceptedBy=s['items']['product']['owner'],scope='private')))
         self.assertEqual(s['outbox']['c3']['destination'],'thomaschurchadams-eng/cooperative-ai-institute-rebuild#12')
 
     def test_evidence_and_scope_fail_closed(self):
