@@ -1,11 +1,16 @@
 import sys
 import unittest
+import subprocess
+import tempfile
+from datetime import datetime, timezone, timedelta
+from unittest.mock import patch
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'automation' / 'roadmap'))
 from engine import apply, blank, next_item, reconcile, digest
 from receipts import approval as verified_approval_comment
 from integrations import issue_read, approval_from_issue, deployment_read, qa_run, QA_COMMANDS, vercel_list_result
 from orchestrate import run_once
+from host_bridge import SnapshotProvider
 
 NOW = '2026-10-13'
 QA = dict(testCommand='python -m unittest', testResult='passed', artifactHash='artifact-A', commitSha='commit-A', sourceVersion='source-A')
@@ -179,6 +184,44 @@ class RoadmapTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'authoritative issue'):
             verified_approval_comment({**good,'url':'https://github.com/thomaschurchadams-eng/work-feel/issues/161#issuecomment-123'},'cuai')
 
+    def test_host_bridge_requires_fresh_exact_connected_snapshot(self):
+        now=datetime.now(timezone.utc)
+        payload=dict(sourceTool='github_fetch_issue_comments',repository='thomaschurchadams-eng/work-feel',
+                     issueNumber=160,isError=False,complete=True,fetchedAt=now.isoformat(),comments=[])
+        self.assertEqual(SnapshotProvider(payload,'cuai').fetch_issue_comments('cuai')[1],True)
+        for bad in ({'complete':False},{'issueNumber':161},{'repository':'other/repo'},
+                    {'fetchedAt':(now-timedelta(hours=1)).isoformat()},{'isError':True}):
+            with self.assertRaises(ValueError): SnapshotProvider({**payload,**bad},'cuai')
+
+    def test_qa_rejects_dirty_inputs_and_mutation(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            subprocess.run(('git','init','-q'),cwd=root,check=True)
+            for name in ('artifact.json','src.py','tests_case.py','package.json'):
+                (root/name).write_text('baseline')
+            (root/'.gitignore').write_text('.env\n')
+            subprocess.run(('git','add','.'),cwd=root,check=True)
+            subprocess.run(('git','-c','user.name=Test','-c','user.email=test@example.invalid',
+                            'commit','-qm','baseline'),cwd=root,check=True)
+            head=subprocess.run(('git','rev-parse','HEAD'),cwd=root,capture_output=True,text=True,check=True).stdout.strip()
+            with patch.dict(QA_COMMANDS,{'cuai':(('python3','-c','print("pass")'),)}):
+                self.assertEqual(qa_run(root,'cuai','artifact.json',head)['commitSha'],head)
+                for name in ('src.py','tests_case.py','package.json'):
+                    (root/name).write_text('dirty')
+                    with self.assertRaisesRegex(ValueError,'dirty input'):
+                        qa_run(root,'cuai','artifact.json',head)
+                    (root/name).write_text('baseline')
+            with patch.dict(QA_COMMANDS,{'cuai':(('python3','-c',"from pathlib import Path; Path('src.py').write_text('mutated')"),)}):
+                with self.assertRaisesRegex(ValueError,'dirty input'):
+                    qa_run(root,'cuai','artifact.json',head)
+            (root/'src.py').write_text('baseline')
+            with patch.dict(QA_COMMANDS,{'cuai':(('python3','-c',"from pathlib import Path; p=Path('__pycache__/generated.pyc'); p.parent.mkdir(exist_ok=True); p.write_bytes(b'generated')"),)}):
+                self.assertEqual(qa_run(root,'cuai','artifact.json',head)['testResult'],'passed')
+            (root/'.env').write_text('unexpected ignored file')
+            with patch.dict(QA_COMMANDS,{'cuai':(('python3','-c','print(1)'),)}):
+                with self.assertRaisesRegex(ValueError,'unexpected ignored input'):
+                    qa_run(root,'cuai','artifact.json',head)
+
     def test_qa_command_contracts(self):
         for brand, commands in QA_COMMANDS.items():
             self.assertTrue(commands)
@@ -207,7 +250,7 @@ class RoadmapTest(unittest.TestCase):
             vercel_list_result(production,expected)
         proof=dict(deploymentId='deployment-X',artifactHash='artifact-A',sourceVerified=True)
         self.assertEqual(vercel_list_result(production,expected,proof)['sourceVerified'],True)
-        with self.assertRaisesRegex(ValueError,'source version differs'):
+        with self.assertRaisesRegex(ValueError,'checkout HEAD changed'):
             qa_run(Path(__file__).resolve().parents[2],'cuai','automation/roadmap/engine.py','stale-commit')
 
     def test_orchestrator_uses_fresh_owner_receipt_and_blocks_missing_one(self):
