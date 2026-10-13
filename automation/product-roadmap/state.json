@@ -20,7 +20,7 @@
       "id": "cuai-deployment-evidence-v1",
       "kind": "data-asset",
       "override": null,
-      "owner": "CUAI Operating System via Watney",
+      "owner": "cuai-operating-system",
       "signals": {
         "evidence": 2,
         "goal": 3,
@@ -36,7 +36,7 @@
   "outbox": {},
   "schema": 1,
   "seenEvents": {
-    "cuai-pilot-intake-20261013": "96c6b7b01324024a8f113b540ee4addd1510fb9417cadfd395512655b3d1bac8",
+    "cuai-pilot-intake-20261013": "2efcbba8d005c9ed8e73fd7323bf9b452c35c464fca6c8f60592c305ffbdfb7f",
     "cuai-pilot-rank-20261013": "bd1aabbfba9adb9b378ba9ac30fa243631c1a5a31422916e4662bc7b2ed4d82c"
   }
 }
