@@ -1,0 +1,81 @@
+{
+  "brand": "cuai",
+  "decisions": [],
+  "items": {
+    "cuai-deployment-evidence-v1": {
+      "approvalScopes": [],
+      "evidence": {},
+      "goalId": null,
+      "history": [
+        {
+          "eventId": "cuai-pilot-rank-20261013",
+          "evidence": {
+            "finding": "selection and claimed capability distinguished from outcome",
+            "observedAt": "2026-10-13",
+            "source": "CUAI qualified reporting"
+          },
+          "stage": "ranked"
+        },
+        {
+          "eventId": "cuai-pilot-build-20261013",
+          "evidence": {
+            "acceptedHandoff": "local implementation assignment; remote issue receipt pending reconciliation",
+            "scope": "private provenance and evaluation fixture only"
+          },
+          "stage": "building"
+        },
+        {
+          "eventId": "cuai-pilot-qa-20261013",
+          "evidence": {
+            "artifactHash": "48ff72c84a51b91b4afc68dd692803936f9186bb86afac86303d41e34d08da24",
+            "testCommand": "python3 automation/product-roadmap/verify.py; python3 -m unittest discover -s tests/roadmap",
+            "testResult": "1 record, 3 cases, 7 scenario tests passed"
+          },
+          "stage": "qa"
+        },
+        {
+          "eventId": "cuai-pilot-release-gate-20261013",
+          "evidence": {
+            "gate": "source rights verification and exact public-release approval; no training license",
+            "releaseOwner": "Tom with existing publisher/deploy owner"
+          },
+          "stage": "blocked-release"
+        }
+      ],
+      "id": "cuai-deployment-evidence-v1",
+      "kind": "data-asset",
+      "override": null,
+      "owner": "CUAI Operating System via Watney",
+      "signals": {
+        "evidence": 2,
+        "goal": 3,
+        "user": 3
+      },
+      "sources": [
+        "news/ornl-fcu-kobalt-ai-vendor-risk.html"
+      ],
+      "stage": "blocked-release",
+      "title": "Deployment evidence data and evaluation asset"
+    }
+  },
+  "outbox": {
+    "cuai-pilot-build-20261013": {
+      "body": "eventId: cuai-pilot-build-20261013\neventType: handoff\nfrom: roadmap-adapter\nto: CUAI Operating System via Watney\ngoalId: unassigned\npriority: normal\nobjective: Deployment evidence data and evaluation asset\ndedupeKey: roadmap:cuai:cuai-deployment-evidence-v1\nstatus: building\nevidence: {\"acceptedHandoff\": \"local implementation assignment; remote issue receipt pending reconciliation\", \"scope\": \"private provenance and evaluation fixture only\"}\ntomApprovalRequired: no\nnextOwner: CUAI Operating System via Watney",
+      "destination": "thomaschurchadams-eng/work-feel#160",
+      "status": "pending"
+    },
+    "cuai-pilot-release-gate-20261013": {
+      "body": "eventId: cuai-pilot-release-gate-20261013\neventType: escalation\nfrom: roadmap-adapter\nto: CUAI Operating System via Watney\ngoalId: unassigned\npriority: normal\nobjective: Deployment evidence data and evaluation asset\ndedupeKey: roadmap:cuai:cuai-deployment-evidence-v1\nstatus: blocked-release\nevidence: {\"gate\": \"source rights verification and exact public-release approval; no training license\", \"releaseOwner\": \"Tom with existing publisher/deploy owner\"}\ntomApprovalRequired: yes\nnextOwner: CUAI Operating System via Watney",
+      "destination": "thomaschurchadams-eng/work-feel#160",
+      "status": "pending"
+    }
+  },
+  "schema": 1,
+  "seenEvents": {
+    "cuai-pilot-build-20261013": "db0c913dd13d969b6facde80c64b9eccb728f4f6482dfcc12c61ebab5c10d39d",
+    "cuai-pilot-intake-20261013": "96c6b7b01324024a8f113b540ee4addd1510fb9417cadfd395512655b3d1bac8",
+    "cuai-pilot-qa-20261013": "b7f03b5cda957123d1d66a4a3cb197b24412f057bcc17eff7bb63ab42a77d730",
+    "cuai-pilot-rank-20261013": "bd1aabbfba9adb9b378ba9ac30fa243631c1a5a31422916e4662bc7b2ed4d82c",
+    "cuai-pilot-release-gate-20261013": "9cad0bb01dc0b0e566e0a1da17af21dec13a0c6aee938ed94b4480b3f768aeef"
+  }
+}
