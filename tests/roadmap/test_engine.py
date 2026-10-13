@@ -294,3 +294,54 @@ class RoadmapTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'stage evidence'): self.event('r','ranked',{})
 
 if __name__=='__main__': unittest.main()
+
+class IntegrationBoundaryTest(unittest.TestCase):
+    def test_guarded_commit_conflict_uncertain_write_and_idempotence(self):
+        from persistence import commit, Conflict
+        class Store:
+            def __init__(self, state): self.state=state; self.rev=1; self.uncertain=False
+            def read(self, brand): return self.state,self.rev
+            def compare_and_swap(self, brand, revision, state, proposal_hash):
+                if revision != self.rev: raise Conflict('revision changed')
+                self.state=state; self.rev+=1
+                if self.uncertain: raise TimeoutError('response lost')
+                return self.rev
+        base=blank('cuai'); proposal=apply(base,dict(eventId='i',action='intake',key='one',kind='enhancement',title='One'))
+        store=Store(base)
+        self.assertEqual(commit(store,'cuai',1,digest(base),proposal)[1],'committed')
+        self.assertEqual(commit(store,'cuai',1,digest(base),proposal)[1],'already-committed')
+        with self.assertRaises(Conflict): commit(store,'cuai',1,digest(base),base)
+        second=apply(proposal,dict(eventId='j',action='intake',key='two',kind='enhancement',title='Two'))
+        store.uncertain=True
+        self.assertEqual(commit(store,'cuai',2,digest(proposal),second)[1],'already-committed')
+
+    def test_candidate_intake_deduplicates_and_preserves_stale_signals(self):
+        from intake import planning_events
+        record=dict(key='Pilot Data',kind='data-asset',title='Pilot',source='report',observedAt='2026-10-13',finding='qualified',signals={'goal':3})
+        s=blank('cuai')
+        events=planning_events(s,[record]); self.assertEqual(len(events),3)
+        for event in events: s=apply(s,event)
+        for event in planning_events(s,[record]): s=apply(s,event)
+        self.assertEqual(len(s['items']),1)
+        old={**record,'source':'older','observedAt':'2026-09-01','signals':{'goal':99}}
+        for event in planning_events(s,[old]): s=apply(s,event)
+        self.assertEqual(s['items']['pilot-data']['signals']['goal'],3)
+        self.assertEqual(s['items']['pilot-data']['stage'],'ranked')
+
+    def test_live_provider_rereads_revoked_approval_at_release(self):
+        class ChangingProvider:
+            def __init__(self): self.calls=0
+            def fetch_issue_comments(self, brand):
+                self.calls+=1
+                return {'comments':[]},True
+            def fetch_deployment(self, brand, deployment_id): raise AssertionError('deployment should not be read')
+            def checkout_root(self, brand): raise AssertionError('checkout should not be read')
+        provider=ChangingProvider()
+        state=blank('cuai')
+        state=apply(state,dict(eventId='intake',action='intake',key='pilot',kind='data-asset',title='Pilot'))
+        event=dict(eventId='approval',action='approval',key='pilot',scope='release',actionClass='public-release',evidence={'approvalId':'a','commentId':1})
+        result,report=run_once(state,[event],provider)
+        self.assertGreaterEqual(provider.calls,2)
+        self.assertEqual(result,state)
+        self.assertEqual(report['applied'],[])
+        self.assertEqual(report['blocked'][0][0],'approval')
