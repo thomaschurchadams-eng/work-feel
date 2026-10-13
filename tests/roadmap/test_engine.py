@@ -10,7 +10,7 @@ from engine import apply, blank, next_item, reconcile, digest
 from receipts import approval as verified_approval_comment
 from integrations import issue_read, approval_from_issue, deployment_read, qa_run, QA_COMMANDS, vercel_list_result
 from orchestrate import run_once
-from host_bridge import SnapshotProvider
+from host_bridge import SnapshotProvider, require_planning_events
 
 NOW = '2026-10-13'
 QA = dict(testCommand='python -m unittest', testResult='passed', artifactHash='artifact-A', commitSha='commit-A', sourceVersion='source-A')
@@ -184,6 +184,12 @@ class RoadmapTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'authoritative issue'):
             verified_approval_comment({**good,'url':'https://github.com/thomaschurchadams-eng/work-feel/issues/161#issuecomment-123'},'cuai')
 
+    def test_snapshot_bridge_rejects_protected_events(self):
+        require_planning_events([dict(action='intake'),dict(action='transition',stage='ranked')])
+        for action in (dict(action='approval'),dict(action='override'),dict(action='transition',stage='building'),dict(action='transition',stage='released')):
+            with self.assertRaisesRegex(ValueError,'planning events only'):
+                require_planning_events([action])
+
     def test_host_bridge_requires_fresh_exact_connected_snapshot(self):
         now=datetime.now(timezone.utc)
         payload=dict(sourceTool='github_fetch_issue_comments',repository='thomaschurchadams-eng/work-feel',
@@ -199,7 +205,7 @@ class RoadmapTest(unittest.TestCase):
             subprocess.run(('git','init','-q'),cwd=root,check=True)
             for name in ('artifact.json','src.py','tests_case.py','package.json'):
                 (root/name).write_text('baseline')
-            (root/'.gitignore').write_text('.env\n')
+            (root/'.gitignore').write_text('.env\ndist/\n')
             subprocess.run(('git','add','.'),cwd=root,check=True)
             subprocess.run(('git','-c','user.name=Test','-c','user.email=test@example.invalid',
                             'commit','-qm','baseline'),cwd=root,check=True)
@@ -217,6 +223,12 @@ class RoadmapTest(unittest.TestCase):
             (root/'src.py').write_text('baseline')
             with patch.dict(QA_COMMANDS,{'cuai':(('python3','-c',"from pathlib import Path; p=Path('__pycache__/generated.pyc'); p.parent.mkdir(exist_ok=True); p.write_bytes(b'generated')"),)}):
                 self.assertEqual(qa_run(root,'cuai','artifact.json',head)['testResult'],'passed')
+            generated=root/'dist'/'generated.json'
+            generated.parent.mkdir()
+            generated.write_text('generated')
+            with patch.dict(QA_COMMANDS,{'cuai':(('python3','-c','print(1)'),)}):
+                with self.assertRaisesRegex(ValueError,'Git tracked'):
+                    qa_run(root,'cuai','dist/generated.json',head)
             (root/'.env').write_text('unexpected ignored file')
             with patch.dict(QA_COMMANDS,{'cuai':(('python3','-c','print(1)'),)}):
                 with self.assertRaisesRegex(ValueError,'unexpected ignored input'):
@@ -250,7 +262,7 @@ class RoadmapTest(unittest.TestCase):
             vercel_list_result(production,expected)
         proof=dict(deploymentId='deployment-X',artifactHash='artifact-A',sourceVerified=True)
         self.assertEqual(vercel_list_result(production,expected,proof)['sourceVerified'],True)
-        with self.assertRaisesRegex(ValueError,'checkout HEAD changed'):
+        with self.assertRaisesRegex(ValueError,'Git tracked'):
             qa_run(Path(__file__).resolve().parents[2],'cuai','automation/roadmap/engine.py','stale-commit')
 
     def test_orchestrator_uses_fresh_owner_receipt_and_blocks_missing_one(self):
