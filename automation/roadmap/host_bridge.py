@@ -10,6 +10,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from engine import BUS, next_item, digest
 from orchestrate import ReadProvider, run_once
+from intake import planning_events
 
 class SnapshotProvider(ReadProvider):
     def __init__(self, payload, brand, checkout_root=None):
@@ -42,6 +43,7 @@ def main():
     parser.add_argument('--state',type=Path,required=True)
     parser.add_argument('--snapshot',type=Path,required=True)
     parser.add_argument('--events',type=Path)
+    parser.add_argument('--candidates',type=Path)
     parser.add_argument('--checkout-root',type=Path)
     args=parser.parse_args()
     state=json.loads(args.state.read_text())
@@ -49,6 +51,8 @@ def main():
     payload=json.loads(args.snapshot.read_text())
     provider=SnapshotProvider(payload,args.brand,args.checkout_root)
     events=json.loads(args.events.read_text()) if args.events else []
+    if args.candidates:
+        events += planning_events(state,json.loads(args.candidates.read_text()))
     require_planning_events(events)
     proposed,result=run_once(state,events,provider)
     nxt=next_item(proposed)
