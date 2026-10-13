@@ -18,6 +18,9 @@ def approved_receipt(**changes):
                    artifactHash='artifact-A', commitSha='commit-A', sourceVersion='source-A', status='active',
                    expiresAt='2026-11-01'), **changes}
 
+def decision_receipt(item, choice):
+    return dict(itemKey=item,choice=choice,authority='Tom',status='approved',source='verified owner decision',sourceVerified=True)
+
 def accepted_receipt(item, owner):
     return dict(itemKey=item, owner=owner, receiptId='handoff-1', actionClass='build', sourceVersion='source-A', status='accepted',
                 source='https://github.com/example/issue/2#comment', sourceVerified=True)
@@ -69,8 +72,8 @@ class RoadmapTest(unittest.TestCase):
         self.event('r','ranked',dict(source='report',observedAt=NOW,finding='good'))
         self.event('b','building',dict(acceptedHandoff='handoff-1',acceptedBy=self.s['items']['dataset']['owner'],scope='bounded',sourceVersion='source-A'))
         e=dict(eventId='defer',action='override',key='dataset',choice='defer',authority='Tom',reason='new priority')
-        with self.assertRaisesRegex(ValueError,'safe checkpoint'): apply(self.s,e)
-        s=apply(self.s,e,checkpoint_verifier=lambda _: dict(itemKey='dataset',owner=self.s['items']['dataset']['owner'],status='accepted',source='owner checkpoint',sourceVerified=True,recoveryOwner='reliability-watch',artifactHash='artifact-A'))
+        with self.assertRaisesRegex(ValueError,'safe checkpoint'): apply(self.s,e,decision_verifier=lambda _:decision_receipt('dataset','defer'))
+        s=apply(self.s,e,decision_verifier=lambda _:decision_receipt('dataset','defer'),checkpoint_verifier=lambda _: dict(itemKey='dataset',owner=self.s['items']['dataset']['owner'],status='accepted',source='owner checkpoint',sourceVerified=True,recoveryOwner='reliability-watch',artifactHash='artifact-A'))
         self.assertEqual(s['items']['dataset']['stage'],'deferred')
         self.assertEqual(next_item(s)['id'],'other')
         self.assertEqual(s['items']['dataset']['history'][-2]['stage'],'safe-checkpoint')
@@ -94,7 +97,10 @@ class RoadmapTest(unittest.TestCase):
         recovery=dict(eventId='b',dedupeKey=key,owner=self.s['items']['dataset']['owner'],bodyHash=digest(body),priorStatus='conflict',status='resolved',source='owner check',sourceVerified=True,observedAt=NOW,posted=False)
         self.assertEqual(reconcile(conflict,'b',[],recovery_receipt=recovery,recovery_verifier=lambda _: recovery)['outbox']['b']['status'],'pending')
     def test_stale_evidence_unknown_source_and_user_next(self):
-        s=apply(self.s,dict(eventId='choice',action='override',key='other',choice='next',authority='Tom',reason='October PRODUCT direction'))
+        choice=dict(eventId='choice',action='override',key='other',choice='next',authority='Tom',reason='October PRODUCT direction')
+        with self.assertRaisesRegex(ValueError,'authoritative Tom decision'):
+            apply(self.s,choice)
+        s=apply(self.s,choice,decision_verifier=lambda _:decision_receipt('other','next'))
         s=apply(s,dict(eventId='new',action='evidence',key='dataset',evidence=dict(source='report',observedAt=NOW),signals={'goal':5}))
         s=apply(s,dict(eventId='old',action='evidence',key='dataset',evidence=dict(source='stale report',observedAt='2026-09-30'),signals={'goal':99}))
         self.assertEqual(s['items']['dataset']['signals']['goal'],5)
