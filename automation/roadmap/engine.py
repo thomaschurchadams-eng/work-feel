@@ -14,7 +14,7 @@ BUS = {"cuai": "thomaschurchadams-eng/work-feel#160", "cai": "thomaschurchadams-
 OWNER = {"cuai": "existing development owner via Watney coordination", "cai": "existing CAI product/implementation owner"}
 EVIDENCE = {
     "ranked": ("source", "observedAt", "finding"),
-    "building": ("acceptedHandoff", "scope"),
+    "building": ("acceptedHandoff", "acceptedBy", "scope"),
     "qa": ("testCommand", "testResult", "artifactHash"),
     "blocked-release": ("gate", "releaseOwner"),
     "released": ("approvalId", "deploymentId", "commitSha", "rollbackOwner", "rollbackSteps"),
@@ -144,6 +144,8 @@ def apply(state, event):
                 raise ValueError("unsafe stage transition")
             require_evidence(stage, evidence)
             if stage == "building" and item["stage"] == "ranked":
+                if evidence["acceptedBy"] != item["owner"]:
+                    raise ValueError("receiving owner must accept handoff")
                 if active(state):
                     raise ValueError("one active development item per brand")
                 chosen = next_item(state)
