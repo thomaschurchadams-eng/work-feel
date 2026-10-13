@@ -74,7 +74,7 @@ def bus_comment(state, item, kind, event_id, evidence):
                       f"nextOwner: {item['owner']}"))
 
 
-def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoint_verifier=None, qa_verifier=None, deployment_verifier=None):
+def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoint_verifier=None, qa_verifier=None, deployment_verifier=None, decision_verifier=None):
     """Pure reducer. A repeated event is a no-op; conflicting identity fails closed."""
     state = copy.deepcopy(state)
     if state["brand"] not in BRANDS:
@@ -120,6 +120,9 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
             choice = event.get("choice")
             if choice not in ("next", "defer", "reject", "clear") or not event.get("authority"):
                 raise ValueError("explicit authority and choice required")
+            decision = decision_verifier(event) if decision_verifier else None
+            if not isinstance(decision, dict) or not decision.get("sourceVerified") or not decision.get("source") or any(decision.get(k) != v for k,v in (("itemKey",key),("choice",choice),("authority","Tom"),("status","approved"))):
+                raise ValueError("override requires authoritative Tom decision receipt")
             item["override"] = None if choice == "clear" else choice
             if choice in ("defer", "reject"):
                 if item in active(state):
