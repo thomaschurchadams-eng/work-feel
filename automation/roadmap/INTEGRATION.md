@@ -1,0 +1,15 @@
+# Roadmap adapter integration boundary
+
+`orchestrate.run_once(state, events, provider)` is a bounded pass for an existing owner. It first obtains a complete fresh issue read, reconciles the local outbox, then reduces candidate events. It performs no remote write, publication, deployment or scheduling. `ReadProvider` declares the three required host reads: complete connected GitHub issue comments, exact deployment identity, and an exact committed checkout for local QA. `integrations.py` validates the connected GitHub response shape, exact issue/author, local test result, and production receipt. The reducer re-reads approval at release so a changed or revoked approval cannot ride a cached registration. Rebuild requires a new version-bound receiving-owner receipt. A recovery receipt must bind event, dedupe key, owner, body hash, prior status and fresh authoritative source.
+
+## Verified access boundary, October 13
+
+`gh api repos/thomaschurchadams-eng/work-feel/issues/160` returned `Get "https://api.github.com/repos/thomaschurchadams-eng/work-feel/issues/160": Forbidden`. The connected `github_fetch_issue_comments` read succeeded and returned all 143 comments with `url`, `id`, `body` and `user.login` fields. A standalone Python or scheduled task cannot call that ChatGPT connector directly. The existing scheduled owner must supply its fresh connected read to the adapter; saved JSON fixtures cannot be treated as current authority. The current Vercel combined-status result says `success` but does not by itself supply a production deployment ID, exact source SHA and artifact hash, so it cannot satisfy the release or completion adapter.
+
+## Draft-only use
+
+Run `python3 -m unittest discover -s tests/roadmap -q`, `python3 automation/product-roadmap/verify.py`, and `python3 automation/roadmap/cli.py dry-run --brand cuai --state automation/product-roadmap/state.json --events <candidate-events.json>` in a checkout. CAI uses the same CLI under `operations/product-roadmap/`. `OWNER_INVOCATION_DRAFT.patch` shows the smallest owner-policy insertion; it has not been applied to live instructions. No extra schedule or PM reactivation is needed.
+
+## Activation evidence still required
+
+The authorized host must provide a fresh complete issue read from the connected GitHub tool and a source-bound production deployment read containing exact ID, commit and artifact hash. A receiving existing owner must accept the chosen item through the authoritative issue, or the item remains ranked. Only then can a scoped build event advance. Exact-version QA must pass from a committed checkout. Release still requires Tom's matching active approval when existing policy requires it, current production-read validation and existing deploy gates. This draft does not request those actions or treat a CI preview as production evidence.
