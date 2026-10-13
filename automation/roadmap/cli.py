@@ -13,6 +13,7 @@ p.add_argument("--state", type=Path, required=True)
 p.add_argument("--events", type=Path)
 p.add_argument("--comments", type=Path)
 p.add_argument("--event-id")
+p.add_argument("--fresh-complete", action="store_true", help="Use only after a complete authoritative issue read")
 a = p.parse_args()
 state = json.loads(a.state.read_text()) if a.state.exists() else blank(a.brand)
 if state["brand"] != a.brand:
@@ -25,7 +26,7 @@ if a.command in ("apply", "dry-run"):
 elif a.command == "reconcile":
     if not a.comments or not a.event_id:
         p.error("--comments and --event-id required")
-    state = reconcile(state, a.event_id, json.loads(a.comments.read_text()))
+    state = reconcile(state, a.event_id, json.loads(a.comments.read_text()), fresh_complete=a.fresh_complete)
 result = {"brand": a.brand, "next": next_item(state),
           "ranked": [{"id": i["id"], "score": rank(i), "stage": i["stage"]}
                      for i in sorted(state["items"].values(), key=lambda i: (-rank(i), i["id"]))],
