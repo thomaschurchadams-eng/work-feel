@@ -17,8 +17,8 @@ EVIDENCE = {
     "building": ("acceptedHandoff", "scope"),
     "qa": ("testCommand", "testResult", "artifactHash"),
     "blocked-release": ("gate", "releaseOwner"),
-    "released": ("approvalId", "deploymentId"),
-    "verified-complete": ("verification", "observedAt", "artifactHash"),
+    "released": ("approvalId", "deploymentId", "commitSha", "rollbackOwner", "rollbackSteps"),
+    "verified-complete": ("verification", "observedAt", "artifactHash", "environment", "deploymentId"),
 }
 
 
@@ -153,6 +153,8 @@ def apply(state, event):
                 qa_hashes = [h["evidence"]["artifactHash"] for h in item["history"] if h["stage"] == "qa"]
                 if not qa_hashes or evidence["artifactHash"] != qa_hashes[-1]:
                     raise ValueError("final artifact differs from tested QA version")
+                if evidence["environment"] != "production":
+                    raise ValueError("preview cannot verify production completion")
             if stage == "released":
                 required = event.get("scope")
                 if not required or not any(x["scope"] == required and x["approvalId"] == evidence["approvalId"]
