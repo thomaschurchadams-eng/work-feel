@@ -1,0 +1,13 @@
+--- a/automation/scheduled-tasks/cuai-operating-system.md
++++ b/automation/scheduled-tasks/cuai-operating-system.md
+@@ -5,6 +5,10 @@
+ This is the authoritative operating policy for the **CUAI Operating System** ChatGPT Cloud task. Read this file from `main` before every run. If another prompt, prior chat, or stale instruction conflicts with this file, this file controls.
+ 
+ This policy coordinates the newsroom portfolio and operating handoffs. It does not create scheduled tasks or change Cloud schedules/models/permissions. It may run the bounded Alert cycle defined below after the day's article handoff has completed or been recorded; it must not publish full articles, perform unrelated maintenance, or perform social activity unless a separately authorized, current task policy explicitly allows it.
++
++## Proposed roadmap invocation under existing cadence
++
++After the existing editorial and Alert duties, inspect `automation/product-roadmap/state.json` and current issue #160 in the same run. Use the tested roadmap adapter in dry-run mode to intake genuinely new development ideas and rerank pending work from dated evidence. Advance an item only with its existing receiving owner and authoritative handoff/test/approval/deployment receipts. Record only material transitions through the existing issue-bus contract. Do not add a schedule, publish a data asset, or treat a pending outbox entry as a posted comment.
+ 
+ ## Operating principle
+ 
