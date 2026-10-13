@@ -109,9 +109,9 @@
       "id": "decision-card-2026-10-13",
       "format": "decision-card",
       "targetDate": "2026-10-13",
-      "status": "ready",
+      "status": "published",
       "title": "Before AI Recommends Hardship Treatment, Connect Four Parts of the Decision",
-      "preparationStatus": "ready-local-source-rights-accessibility-tested; unpublished until due-date production gates",
+      "preparationStatus": "published-verified-independent-website-decision-card",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
@@ -122,11 +122,11 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": true,
-      "productionVerified": false,
+      "productionVerified": true,
       "publicationNotBefore": "2026-10-13",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
       "assetSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
@@ -146,19 +146,81 @@
       "socialDecision": "not-reserved; existing publisher selects only after due-date production gates and underlying-publication dedup",
       "releaseGates": {
         "sourceAndClaims": "October12 story200 unchanged hash352c3de9; current eCFR written-workout-policy baseline/NIST voluntary governance; editorial four-part synthesis, no new directive/performance claim",
-        "desktopMobileAndAccessibilityQA": "October12 current-main shell/CSS/JS390/1440, image/alt/text alternative/navigation/Escape;axe0, no overflow/errors",
-        "dueDate": "hold-until-2026-10-13",
-        "productionIdentityAndPublicURL": "not-published"
+        "desktopMobileAndAccessibilityQA": "October13 current-main390/1440 card/home four local and four livecases; axe0, navigation/Escape, no overflow/broken images/errors",
+        "dueDate": "passed-2026-10-13",
+        "productionIdentityAndPublicURL": "exact-production-READY; public page/image/home byte identity verified"
       },
-      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
         "version": 0,
         "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
       },
-      "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Run independent due-date website release/source gates onOctober13; publisher alone selects/promotes any same-parent reservation after production verification."
+      "nextOwner": "daily-publisher",
+      "nextStep": "Re-read current manifest and queue; sole publisher may select this released card for the existing October13 11:30ET slot if still free and parent not promoted. Existing trusted executor only; no additional post or reservation replacement.",
+      "publishedAt": "2026-10-13T13:01:55.431000+00:00",
+      "publicationReceipt": {
+        "assetId": "decision-card-2026-10-13",
+        "assetSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
+        "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+        "publishedAt": "2026-10-13T13:01:55.431000+00:00",
+        "verifiedAt": "2026-10-13T13:06:07.099358+00:00",
+        "productionCommitSha": "e00505ac0df983df7b8a2d802eac35383bbdb0f5",
+        "deploymentId": "dpl_2CjjBRMNA1dKguWR55HGbQNVHwL2",
+        "deploymentTarget": "production",
+        "deploymentState": "READY",
+        "productionAlias": "creditunionainews.com",
+        "workflowRunId": 38401722842,
+        "workflowConclusion": "success",
+        "receiptArtifactId": 11815926092,
+        "receiptArtifactSha256": "1c2cbee6eec4611947f6f237f0681d877830d53d8a4a9fdaa4012e69332cf774",
+        "publicPageSha256": "df306248a0534837e79e903e6d396b2740cc0565d8eba8d23255b2ccd365af28",
+        "publicByteMatches": [
+          "card HTML",
+          "card PNG",
+          "homepage",
+          "sitemap",
+          "lending topic return path",
+          "previous chart archive"
+        ],
+        "sourceVerified": true,
+        "rightsVerified": true,
+        "accessibilityVerified": true,
+        "browserQA": {
+          "viewports": [
+            390,
+            1440
+          ],
+          "routes": [
+            "card",
+            "home"
+          ],
+          "cases": 4,
+          "axeViolations": 0,
+          "overflow": false,
+          "brokenImages": 0,
+          "scriptErrors": 0,
+          "mobileNavigationEscape": "passed"
+        },
+        "tests": {
+          "nodePassed": 106,
+          "renderedSitePassed": 40,
+          "canonicalShellStale": 0,
+          "topicHubs": 13,
+          "localCardHomeCases": 4
+        },
+        "runtimeErrorFatalScan": {
+          "window": "30m",
+          "deploymentId": "dpl_2CjjBRMNA1dKguWR55HGbQNVHwL2",
+          "returnedGroups": 0,
+          "scope": "No error/fatal records returned for this exact deployment; not an all-time availability claim"
+        },
+        "actualProviderPostId": null,
+        "publicPostUrl": null,
+        "socialState": "not-reserved; publisher alone owns queue selection and existing executor",
+        "sourceQuality": "Published October7 analysis unchanged; NCUA AppendixB written-workout controls plus NIST voluntary accountability guidance. Four-part layout is editorial synthesis, not new rule, legal-applicability certification or proven AI outcome. No confidential member data or third-party artwork."
+      }
     },
     {
       "id": "cartoon-2026-10-16",
@@ -168,7 +230,7 @@
       "title": "Approved by whom?",
       "preparationStatus": "ready-local-original-fictional-cartoon; source-rights-accessibility-tested-unpublished",
       "preparedAt": "2026-10-12T13:39:33.834078+00:00",
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "publicationNotBefore": "2026-10-16",
       "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
@@ -204,11 +266,12 @@
       "releaseGates": {
         "dueDate": "hold-until-2026-10-16",
         "sourceAndClaims": "fictional editorial synthesis from verified hardship-reporting/NCUA/NIST sources; not new rule or real-event claim",
-        "desktopMobileAndAccessibilityQA": "October12 four visualpage cases total390/1440;Fridaypage2cases axe0, no overflow/broken images/script errors;navigation/Escape",
+        "desktopMobileAndAccessibilityQA": "October13 unchanged original image/page, current main CSS/JS390/1440 two private cases;axe0/no overflow/broken images/errors; draft retained",
         "productionIdentityAndPublicURL": "not-published"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Independent due-date website release gates; preserve original PNG identity and underlying-publication social dedup."
+      "nextStep": "Retain October16 publication-not-before; coordinator runs source and exact production gates on due date. Same-parent social dedup applies; publisher alone selects, no additional promotion.",
+      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00"
     }
   ],
   "planned": [
@@ -360,7 +423,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -385,15 +448,27 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator verifies actual live billing/balance/model budget and available hearing/alignment capability before new synthesis; then actual listening, measured duration, final accessibility/playback and due-date release gates. No generation during this pass.",
+      "nextStep": "Coordinator retains production ownership: establish permitted hearing/alignment capability and accepted current-story narration; refresh live billing/balance/model-specific cost against full ledger before any authorized synthesis. Then actual listening, measured duration, final accessible playback and October15 release gates. No unchanged audio/lip-sync retry or silent substitution.",
       "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
       "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
-      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
         "version": 0,
         "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+      },
+      "capacityDependency": {
+        "audioInputStatus": "unsupported; no unchanged retry during this calendar pass",
+        "narration": "no accepted current-story audio",
+        "freshProviderEntitlement": "required before synthesis; October12 readonly remaining28753/allowance39681/used10928 is historical, exact monthly reset not exposed",
+        "creditCeiling": 30000,
+        "plannedBaseline": 21306,
+        "planningMarginBeforeRevisions": 8694,
+        "creditsUsedThisPass": 0,
+        "finalListeningAlignmentPlayback": "required and not certified",
+        "nextOwner": "cuai-media-coordinator",
+        "spotifyUploadAuthority": "public show identity is not upload authority; no authenticated existing-show upload access verified"
       }
     },
     {
@@ -415,7 +490,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -440,11 +515,11 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator verifies actual live billing/balance/model budget and available hearing/alignment capability before new synthesis; then actual listening, measured duration, final accessibility/playback and due-date release gates. No generation during this pass.",
+      "nextStep": "Coordinator retains production ownership: establish permitted hearing/alignment capability and accepted current-story narration; refresh live billing/balance/model-specific cost against full ledger before any authorized synthesis. Then actual listening, measured duration, final accessible playback and October15 release gates. No unchanged audio/lip-sync retry or silent substitution.",
       "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
-      "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
+      "craftLearning": "Private silent A/B preparation remains unaccepted and is not narrated completion. Tom rejected text-card treatment for YouTube; approved still direction uses an original fictional presenter, story imagery and one caption layer. No actual sound-viewed benchmark claim. Six-second natural presenter animation remains blocked: existing account lip-sync route blank, account-specific quote/model terms/entitlement and explicit bounded test approval unavailable. Do not retry unchanged blank route or spend.",
       "storyboardMemberPath": "short-video-oct15-storyboard.json",
-      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -478,6 +553,29 @@
         "productionVerified": false,
         "nativeVideo": null,
         "draftTooling": "PR259 tested locally only; remains draft/unmerged, no active production integration"
+      },
+      "capacityDependency": {
+        "audioInputStatus": "unsupported; no unchanged retry during this calendar pass",
+        "narration": "no accepted current-story audio",
+        "freshProviderEntitlement": "required before synthesis; October12 readonly remaining28753/allowance39681/used10928 is historical, exact monthly reset not exposed",
+        "creditCeiling": 30000,
+        "plannedBaseline": 21306,
+        "planningMarginBeforeRevisions": 8694,
+        "creditsUsedThisPass": 0,
+        "finalListeningAlignmentPlayback": "required and not certified",
+        "nextOwner": "cuai-media-coordinator",
+        "spotifyUploadAuthority": null
+      },
+      "pictureLedPreparation": {
+        "originalPresenterStillLibraryFileId": "libfile_72cd3a093a3c8191b991463bc59e912f",
+        "originalPresenterStillSha256": "68a163680294fd25a7f4ca1c99b3b8740e73b2e2778030fae8516dbadda68341",
+        "status": "still concept only, not animated presenter or release-ready video",
+        "privateCutBLibraryFileId": "libfile_37a85c46da4c81919d748af8ff2f967e",
+        "privateCutBSha256": "9817b8ebbefeb38a9b81c7fd80f17281d680ca770c139a738d5ea41586728da1",
+        "privateCutBStatus": "silent visual comparison only; not substitute for accepted narration/professional final cut",
+        "presenterAnimation": "blocked-account-readable-quote-terms-and-specific-test-approval; no retry or spend",
+        "benchmarkUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0&list=YS",
+        "benchmarkScope": "Earlier visual-only observation; audio not heard, production vendor/identity unknown; no new viewing claim."
       }
     },
     {
@@ -527,5 +625,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-12.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-13.json"
 }

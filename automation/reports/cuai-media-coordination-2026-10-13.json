@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-13",
+  "checkedAt": "2026-10-13T13:06:07.099358+00:00",
+  "owner": "cuai-media-coordinator",
+  "currentMainBeforeContent": "e37d06c6770456beabd9a83d65bf19ba934cdcfe",
+  "currentMainContentRelease": "e00505ac0df983df7b8a2d802eac35383bbdb0f5",
+  "recordsFullyRead": [
+    "coordinator policy",
+    "media policy",
+    "media manifest (all15entries)",
+    "full98-entry usage ledger",
+    "all42 social queue items/reservations",
+    "completed daily cycle and history",
+    "coverage ledger",
+    "existing publication/handoff receipts on issue160"
+  ],
+  "sourceQuality": "Published October7 analysis unchanged; NCUA AppendixB written-workout controls plus NIST voluntary accountability guidance. Four-part layout is editorial synthesis, not new rule, legal-applicability certification or proven AI outcome. No confidential member data or third-party artwork.",
+  "sourceUrls": [
+    "https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html",
+    "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/appendix-Appendix%20B%20to%20Part%20741",
+    "https://airc.nist.gov/airmf-resources/playbook/govern/",
+    "https://www.nist.gov/itl/ai-risk-management-framework"
+  ],
+  "sourceArticleSha256": "352c3de966f9c46effa73688b911b98a6626cd6c5ff45e5aa7a772e593f18a2e",
+  "calendar": {
+    "2026-10-13": {
+      "assetId": "decision-card-2026-10-13",
+      "state": "website-published-verified",
+      "receipt": {
+        "assetId": "decision-card-2026-10-13",
+        "assetSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
+        "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+        "publishedAt": "2026-10-13T13:01:55.431000+00:00",
+        "verifiedAt": "2026-10-13T13:06:07.099358+00:00",
+        "productionCommitSha": "e00505ac0df983df7b8a2d802eac35383bbdb0f5",
+        "deploymentId": "dpl_2CjjBRMNA1dKguWR55HGbQNVHwL2",
+        "deploymentTarget": "production",
+        "deploymentState": "READY",
+        "productionAlias": "creditunionainews.com",
+        "workflowRunId": 38401722842,
+        "workflowConclusion": "success",
+        "receiptArtifactId": 11815926092,
+        "receiptArtifactSha256": "1c2cbee6eec4611947f6f237f0681d877830d53d8a4a9fdaa4012e69332cf774",
+        "publicPageSha256": "df306248a0534837e79e903e6d396b2740cc0565d8eba8d23255b2ccd365af28",
+        "publicByteMatches": [
+          "card HTML",
+          "card PNG",
+          "homepage",
+          "sitemap",
+          "lending topic return path",
+          "previous chart archive"
+        ],
+        "sourceVerified": true,
+        "rightsVerified": true,
+        "accessibilityVerified": true,
+        "browserQA": {
+          "viewports": [
+            390,
+            1440
+          ],
+          "routes": [
+            "card",
+            "home"
+          ],
+          "cases": 4,
+          "axeViolations": 0,
+          "overflow": false,
+          "brokenImages": 0,
+          "scriptErrors": 0,
+          "mobileNavigationEscape": "passed"
+        },
+        "tests": {
+          "nodePassed": 106,
+          "renderedSitePassed": 40,
+          "canonicalShellStale": 0,
+          "topicHubs": 13,
+          "localCardHomeCases": 4
+        },
+        "runtimeErrorFatalScan": {
+          "window": "30m",
+          "deploymentId": "dpl_2CjjBRMNA1dKguWR55HGbQNVHwL2",
+          "returnedGroups": 0,
+          "scope": "No error/fatal records returned for this exact deployment; not an all-time availability claim"
+        },
+        "actualProviderPostId": null,
+        "publicPostUrl": null,
+        "socialState": "not-reserved; publisher alone owns queue selection and existing executor",
+        "sourceQuality": "Published October7 analysis unchanged; NCUA AppendixB written-workout controls plus NIST voluntary accountability guidance. Four-part layout is editorial synthesis, not new rule, legal-applicability certification or proven AI outcome. No confidential member data or third-party artwork."
+      }
+    },
+    "2026-10-15-podcast": {
+      "assetId": "podcast-2026-10-15",
+      "state": "unchanged-source-qualified385word-script; narrated-production-capacity-held",
+      "draftSha256": "3bcdbdc39e242fc5278ffd50d2a2aeef6ad256eafb2d5e399ddb30d9700703b9",
+      "nextOwner": "cuai-media-coordinator",
+      "dependencies": [
+        "permitted actual hearing/alignment",
+        "accepted narration",
+        "fresh live entitlement/model budget within full-ledger ceiling",
+        "final audio accessibility/playback",
+        "existing-show authenticated upload authority for Spotify",
+        "not before October15"
+      ]
+    },
+    "2026-10-15-short": {
+      "assetId": "short-video-2026-10-15",
+      "state": "unchanged-source-qualified93word-script; picture-led still/private comparison prepared; narrated final nativeVideo null",
+      "draftSha256": "1a2c0b06eb9ac879f033ff9473f9b5d38084e557103a797a01776e9257b3ac1d",
+      "nextOwner": "cuai-media-coordinator",
+      "dependencies": [
+        "accepted current-story audio and actual hearing/alignment",
+        "professional picture-led final render",
+        "final exact-hash captions/transcript/full playback",
+        "provider playable native MP4 after sole publisher handoff",
+        "presenter natural animation separately blocked; no retry/spend",
+        "not before October15"
+      ]
+    },
+    "2026-10-16": {
+      "assetId": "cartoon-2026-10-16",
+      "state": "ready-original-fictional-local-art; unpublished until October16",
+      "assetSha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
+      "privateQA": "currentmain CSS/JS390/1440 two cases passed,axe0",
+      "nextOwner": "cuai-media-coordinator",
+      "dependencies": [
+        "October16 due date",
+        "source recheck and exact production release gates",
+        "same-parent social dedup"
+      ]
+    }
+  },
+  "preparedPackage": {
+    "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
+    "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215",
+    "reuse": "Existing scripts/artifacts retained; no regeneration"
+  },
+  "social": {
+    "todayQueueReservationCount": 0,
+    "todayArticle": "Bank Regulators Probe Agentic AI Shutdown Controls;Standard-ineligible; original article/history untouched",
+    "decision": "Website independent. Handoff released card to sole publisher; do not create queue items or call provider. All four adaptations share one underlying parent; at most one underlying-publication promotion. Preserve one weekday/day/five/week and midday11:30ET; timing plan inactive until baseline."
+  },
+  "usage": {
+    "generationCalls": 0,
+    "creditsConsumed": 0,
+    "topupsPurchases": 0,
+    "newSchedules": 0,
+    "socialProviderCalls": 0,
+    "queueWrites": 0,
+    "actualSoundViewedReferences": 0
+  },
+  "previousHeldItems": {
+    "oct8": "Existing103credit correction recorded once; original preserved, no certified splice/caption timing, no catch-up publication",
+    "oct9": "Earlier local cartoon Git transfer hold preserved; no unchanged retry",
+    "engineering": "PR258/259 remain separate holds; no activation/merge"
+  },
+  "videoReviews": {
+    "newVideoPublication": false,
+    "actualSoundPlayback": "not claimed",
+    "sevenDaySamePostMetrics": "No new verified video/post from this pass; missing playback/metrics unknown, never zero; preserve earlier history/owners, no new schedules"
+  },
+  "preservedPaths": [
+    "automation/social-queue.json",
+    "automation/daily-cycle-state.json",
+    "automation/coverage-ledger.json",
+    "automation/media-policy.json",
+    "automation/scheduled-tasks/cuai-media-coordinator.md"
+  ]
+}
