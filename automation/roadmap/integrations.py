@@ -10,7 +10,7 @@ import re
 import subprocess
 from pathlib import Path
 from engine import BUS
-from receipts import approval, handoff, checkpoint, recovery
+from receipts import approval, handoff, checkpoint, recovery, decision
 
 QA_COMMANDS = {
     'cuai': (('python3', '-m', 'unittest', 'discover', '-s', 'tests/roadmap', '-q'),
@@ -90,7 +90,7 @@ def receipt_from_issue(comments, brand, comment_id, kind):
     matches = [c for c in comments if str(c.get('id')) == str(comment_id)]
     if len(matches) != 1:
         raise ValueError('receipt comment missing or ambiguous')
-    parser = {'checkpoint':checkpoint, 'recovery':recovery}[kind]
+    parser = {'checkpoint':checkpoint, 'recovery':recovery, 'decision':decision}[kind]
     return parser(matches[0],brand)
 
 def vercel_list_result(raw, expected, artifact_receipt=None):
