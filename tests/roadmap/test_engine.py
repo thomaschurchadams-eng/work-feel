@@ -2,8 +2,10 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'automation' / 'roadmap'))
-from engine import apply, blank, next_item, reconcile
+from engine import apply, blank, next_item, reconcile, digest
 from receipts import approval as verified_approval_comment
+from integrations import issue_read, approval_from_issue, deployment_read, qa_run
+from orchestrate import run_once
 
 NOW = '2026-10-13'
 QA = dict(testCommand='python -m unittest', testResult='passed', artifactHash='artifact-A', commitSha='commit-A', sourceVersion='source-A')
@@ -30,7 +32,8 @@ class RoadmapTest(unittest.TestCase):
         verifier = (lambda _: accepted_receipt(key, self.s['items'][key]['owner'])) if stage == 'building' else None
         qa_verifier = (lambda _: {**evidence, 'source':'local test runner receipt', 'sourceVerified':True}) if stage == 'qa' else None
         deployment_verifier = (lambda _: {**evidence, 'source':'production deployment receipt', 'sourceVerified':True}) if stage in ('released','verified-complete') else None
-        self.s = apply(self.s, e, handoff_verifier=verifier, qa_verifier=qa_verifier, deployment_verifier=deployment_verifier)
+        fresh_approval = (lambda _: approved_receipt()) if stage == 'released' else None
+        self.s = apply(self.s, e, handoff_verifier=verifier, qa_verifier=qa_verifier, deployment_verifier=deployment_verifier, approval_verifier=fresh_approval)
     def build_to_gate(self):
         self.event('r','ranked',dict(source='report', observedAt=NOW, finding='qualified'))
         self.event('b','building',dict(acceptedHandoff='handoff-1',acceptedBy=self.s['items']['dataset']['owner'],scope='bounded',sourceVersion='source-A'))
@@ -85,7 +88,11 @@ class RoadmapTest(unittest.TestCase):
         self.assertEqual(reconcile(conflict,'b',[],fresh_complete=True)['outbox']['b']['status'],'conflict')
         misleading=body.replace('eventId: b','eventId: b2')
         self.assertEqual(reconcile(self.s,'b',[misleading],fresh_complete=True)['outbox']['b']['status'],'pending')
-        self.assertEqual(reconcile(conflict,'b',[],recovery_receipt=dict(eventId='b',status='resolved',source='owner check',posted=False))['outbox']['b']['status'],'pending')
+        with self.assertRaisesRegex(ValueError,'invalid authoritative recovery receipt'):
+            reconcile(conflict,'b',[],recovery_receipt=dict(eventId='b',status='resolved',source='owner check',posted=False))
+        key='roadmap:cuai:dataset'
+        recovery=dict(eventId='b',dedupeKey=key,owner=self.s['items']['dataset']['owner'],bodyHash=digest(body),priorStatus='conflict',status='resolved',source='owner check',sourceVerified=True,observedAt=NOW,posted=False)
+        self.assertEqual(reconcile(conflict,'b',[],recovery_receipt=recovery,recovery_verifier=lambda _: recovery)['outbox']['b']['status'],'pending')
     def test_stale_evidence_unknown_source_and_user_next(self):
         s=apply(self.s,dict(eventId='choice',action='override',key='other',choice='next',authority='Tom',reason='October PRODUCT direction'))
         s=apply(s,dict(eventId='new',action='evidence',key='dataset',evidence=dict(source='report',observedAt=NOW),signals={'goal':5}))
@@ -107,12 +114,31 @@ class RoadmapTest(unittest.TestCase):
         self.event('g','blocked-release',dict(gate='approval',releaseOwner='Tom'))
         self.approval()
         with self.assertRaisesRegex(ValueError,'authoritative deployment receipt'):
-            apply(self.s,dict(eventId='unverified-release',action='transition',key='dataset',stage='released',scope='dataset-release',evidence=RELEASE))
+            apply(self.s,dict(eventId='unverified-release',action='transition',key='dataset',stage='released',scope='dataset-release',evidence=RELEASE),approval_verifier=lambda _:approved_receipt())
         with self.assertRaisesRegex(ValueError,'tested artifact'):
             self.event('wrong','released',{**RELEASE,'commitSha':'commit-B'},scope='dataset-release')
         self.event('rel','released',RELEASE,scope='dataset-release')
         for evidence,error in [({**COMPLETE,'artifactHash':'old'},'tested QA'),({**COMPLETE,'environment':'preview'},'preview'),({**COMPLETE,'deploymentId':'deployment-Y'},'released deployment')]:
             with self.assertRaisesRegex(ValueError,error): self.event('bad-'+error,'verified-complete',evidence)
+    def test_rebuild_requires_new_version_bound_handoff(self):
+        self.build_to_gate()
+        e=dict(eventId='rebuild',action='transition',key='dataset',stage='building',
+               evidence=dict(acceptedHandoff='handoff-2',acceptedBy=self.s['items']['dataset']['owner'],scope='changed',sourceVersion='source-B'))
+        with self.assertRaisesRegex(ValueError,'authoritative receiving-owner receipt'):
+            apply(self.s,e,handoff_verifier=lambda _:accepted_receipt('dataset',self.s['items']['dataset']['owner']))
+        new={**accepted_receipt('dataset',self.s['items']['dataset']['owner']),'receiptId':'handoff-2','sourceVersion':'source-B'}
+        s=apply(self.s,e,handoff_verifier=lambda _:new)
+        self.assertEqual(s['items']['dataset']['stage'],'building')
+        self.assertEqual(s['items']['dataset']['history'][-1]['evidence']['sourceVersion'],'source-B')
+
+    def test_revocation_between_registration_and_release(self):
+        self.build_to_gate()
+        self.approval()
+        e=dict(eventId='rel',action='transition',key='dataset',stage='released',scope='dataset-release',evidence=RELEASE)
+        with self.assertRaisesRegex(ValueError,'fresh authoritative approval'):
+            apply(self.s,e,approval_verifier=lambda _:approved_receipt(status='revoked'),
+                  deployment_verifier=lambda _:{**RELEASE,'source':'production','sourceVerified':True})
+
     def test_unverified_revoked_expired_or_changed_approval_fails(self):
         self.build_to_gate()
         e=dict(eventId='a',action='approval',key='dataset',scope='dataset-release',actionClass='public-release',observedAt=NOW,evidence={'approvalId':'approval-1'})
@@ -121,8 +147,8 @@ class RoadmapTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,error): apply(self.s,e,approval_verifier=lambda _,changed=changed: approved_receipt(**changed))
         self.approval()
         revoked=apply(self.s,dict(eventId='revoke',action='revoke-approval',key='dataset'),approval_verifier=lambda _:dict(approvalId='approval-1',status='revoked',source='authoritative revocation',sourceVerified=True))
-        with self.assertRaisesRegex(ValueError,'missing release authority'):
-            apply(revoked,dict(eventId='rel',action='transition',key='dataset',stage='released',scope='dataset-release',evidence=RELEASE))
+        with self.assertRaisesRegex(ValueError,'fresh authoritative approval'):
+            apply(revoked,dict(eventId='rel',action='transition',key='dataset',stage='released',scope='dataset-release',evidence=RELEASE),approval_verifier=lambda _:approved_receipt(status='revoked'))
         with self.assertRaisesRegex(ValueError,'missing release authority'):
             self.event('marketing','released',{**RELEASE,'actionClass':'training'},scope='dataset-release')
     def test_enabled_owner_and_authoritative_handoff(self):
@@ -140,12 +166,55 @@ class RoadmapTest(unittest.TestCase):
         self.assertEqual(s['outbox']['c3']['destination'],'thomaschurchadams-eng/cooperative-ai-institute-rebuild#12')
     def test_approval_comment_adapter_rejects_wrong_issue_or_author(self):
         body='\n'.join(f'{k}: {v}' for k,v in approved_receipt().items() if k in ('approvalId','itemKey','actionClass','scope','artifactHash','commitSha','sourceVersion','status'))
-        good=dict(html_url='https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-123',user={'login':'thomaschurchadams-eng'},body=body)
+        good=dict(url='https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-123',user={'login':'thomaschurchadams-eng'},body=body)
         self.assertEqual(verified_approval_comment(good,'cuai')['artifactHash'],'artifact-A')
         with self.assertRaisesRegex(ValueError,'authoritative issue'):
             verified_approval_comment({**good,'user':{'login':'someone-else'}},'cuai')
         with self.assertRaisesRegex(ValueError,'authoritative issue'):
-            verified_approval_comment({**good,'html_url':'https://github.com/thomaschurchadams-eng/work-feel/issues/161#issuecomment-123'},'cuai')
+            verified_approval_comment({**good,'url':'https://github.com/thomaschurchadams-eng/work-feel/issues/161#issuecomment-123'},'cuai')
+
+    def test_connected_read_contracts_fail_closed(self):
+        body='\n'.join(f'{k}: {v}' for k,v in approved_receipt().items() if k in ('approvalId','itemKey','actionClass','scope','artifactHash','commitSha','sourceVersion','status'))
+        comment=dict(id=123,url='https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-123',user={'login':'thomaschurchadams-eng'},body=body)
+        comments=issue_read({'comments':[comment]},'cuai',fresh_complete=True)
+        self.assertEqual(approval_from_issue(comments,'cuai',123)['approvalId'],'approval-1')
+        with self.assertRaisesRegex(ValueError,'fresh complete'): issue_read({'comments':[comment]},'cuai',fresh_complete=False)
+        with self.assertRaisesRegex(ValueError,'outside authoritative issue'):
+            issue_read({'comments':[{**comment,'url':comment['url'].replace('/160#','/161#')}]},'cuai',fresh_complete=True)
+        with self.assertRaisesRegex(ValueError,'missing or ambiguous'): approval_from_issue(comments,'cuai',999)
+        expected=dict(deploymentId='deployment-X',commitSha='commit-A',artifactHash='artifact-A')
+        actual={**expected,'environment':'production','state':'READY','source':'trusted Vercel read'}
+        self.assertEqual(deployment_read(actual,expected)['sourceVerified'],True)
+        with self.assertRaisesRegex(ValueError,'differs'): deployment_read({**actual,'commitSha':'wrong'},expected)
+        with self.assertRaisesRegex(ValueError,'not READY'): deployment_read({**actual,'environment':'preview'},expected)
+        with self.assertRaisesRegex(ValueError,'exact identity'): deployment_read({'state':'READY'},expected)
+        with self.assertRaisesRegex(ValueError,'source version differs'):
+            qa_run(Path(__file__).resolve().parents[2],'cuai','automation/roadmap/engine.py','stale-commit')
+
+    def test_orchestrator_uses_fresh_owner_receipt_and_blocks_missing_one(self):
+        s=apply(self.s,dict(eventId='r',action='transition',key='dataset',stage='ranked',evidence=dict(source='report',observedAt=NOW,finding='qualified')))
+        body='\n'.join((f'itemKey: dataset',f'owner: {s["items"]["dataset"]["owner"]}',
+                         'receiptId: handoff-1','actionClass: build','sourceVersion: source-A','status: accepted'))
+        comment=dict(id=123,url='https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-123',
+                     user={'login':'thomaschurchadams-eng'},body=body)
+        class Provider:
+            def __init__(self, comments): self.comments=comments
+            def fetch_issue_comments(self, brand): return {'comments':self.comments},True
+            def fetch_deployment(self, brand, deployment_id): raise AssertionError('no deployment read')
+            def checkout_root(self, brand): raise AssertionError('no QA checkout')
+        event=dict(eventId='build',action='transition',key='dataset',stage='building',
+                   evidence=dict(acceptedHandoff='handoff-1',acceptedBy=s['items']['dataset']['owner'],
+                                 scope='bounded',sourceVersion='source-A',commentId=123))
+        advanced,result=run_once(s,[event],Provider([comment]))
+        self.assertEqual(result['applied'],['build'])
+        self.assertEqual(advanced['items']['dataset']['stage'],'building')
+        unchanged,blocked=run_once(s,[event],Provider([]))
+        self.assertEqual(unchanged['items']['dataset']['stage'],'ranked')
+        self.assertIn('missing or ambiguous',blocked['blocked'][0][1])
+        class Partial(Provider):
+            def fetch_issue_comments(self, brand): return {'comments':[comment]},False
+        unchanged,blocked=run_once(s,[event],Partial([comment]))
+        self.assertEqual(unchanged['items']['dataset']['stage'],'ranked')
 
     def test_evidence_required(self):
         with self.assertRaisesRegex(ValueError,'stage evidence'): self.event('r','ranked',{})
