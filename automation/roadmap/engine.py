@@ -109,8 +109,10 @@ def apply(state, event):
         if action == "evidence":
             if not evidence.get("source") or not evidence.get("observedAt"):
                 raise ValueError("dated source required")
+            latest = max((v["observedAt"] for v in item["evidence"].values()), default="")
             item["evidence"][eid] = evidence
-            item["signals"] = event.get("signals", item["signals"])
+            if evidence["observedAt"] >= latest:
+                item["signals"] = event.get("signals", item["signals"])
         elif action == "override":
             choice = event.get("choice")
             if choice not in ("next", "defer", "reject", "clear") or not event.get("authority"):
@@ -147,6 +149,10 @@ def apply(state, event):
                 chosen = next_item(state)
                 if chosen["id"] != key and not event.get("safeCheckpoint"):
                     raise ValueError("higher ranked Next exists; record safe checkpoint")
+            if stage == "verified-complete":
+                qa_hashes = [h["evidence"]["artifactHash"] for h in item["history"] if h["stage"] == "qa"]
+                if not qa_hashes or evidence["artifactHash"] != qa_hashes[-1]:
+                    raise ValueError("final artifact differs from tested QA version")
             if stage == "released":
                 required = event.get("scope")
                 if not required or not any(x["scope"] == required and x["approvalId"] == evidence["approvalId"]
