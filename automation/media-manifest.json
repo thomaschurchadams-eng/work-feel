@@ -479,7 +479,7 @@
       "distributionMode": "native-video",
       "nativeVideo": null,
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "Tom-selected narration variant1 byte-verified; private intro/music/visual assembly and final listening/caption/playback gates pending",
+      "preparationStatus": "selectedtake1narratedprivateMP4withlicensedintro/musicready; actualfull-listening/caption-sync and male-presenter footage remainpending",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -516,7 +516,7 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Assemble private selectedtake1 with brief branded intro and rights-verified music/visuals; preserve originals, no additional speech/presenter generation. Final actual full-video listening and caption sync required before due-date release/publisher gates.",
+      "nextStep": "Tom reviews actualprivate45.33secondMP4 for intro/musictransition,intelligibility,qualifiersandcaption sync. Coordinator adjusts assemblyfrom realfeedbackwithout regeneratingnarration; no paidpresenterproduction orpublication before applicablegates/Oct15.",
       "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
       "craftLearning": "Private silent A/B preparation remains unaccepted and is not narrated completion. Tom rejected text-card treatment for YouTube; approved still direction uses an original fictional presenter, story imagery and one caption layer. No actual sound-viewed benchmark claim. Six-second natural presenter animation remains blocked: existing account lip-sync route blank, account-specific quote/model terms/entitlement and explicit bounded test approval unavailable. Do not retry unchanged blank route or spend.",
       "storyboardMemberPath": "short-video-oct15-storyboard.json",
@@ -650,13 +650,237 @@
         "actualListeningByCoordinator": false,
         "fullVideoPlaybackAccepted": false,
         "captionAlignmentVerified": false,
-        "introMusicAssembly": "private preparation in progress; past rejectedopener concepts not reused",
+        "introMusicAssembly": "completedtechnicalprivateMP4;actualfullreviewpending",
         "presenterGenerationApproved": false,
         "providerActionsByCoordinator": 0,
-        "status": "selected-narration-byte-verified; private assembly and final listening/playback gates incomplete",
+        "status": "selected-narration-byte-verified; narratedprivateMP4delivered; actualcaption/listening/releasegatespending",
         "budgetRole": "existing planned baseline production, not extra experiment",
         "productionVerified": false,
-        "nativeVideo": null
+        "nativeVideo": null,
+        "privateReview": {
+          "preparedAt": "2026-10-13T20:11:42.009837+00:00",
+          "status": "narrated-private-review-ready; caption/full-listening acceptance pending",
+          "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+          "fileId": "file_0000000008a48246b7bd549af745c0af",
+          "fileName": "CUAI_OCT15_SELECTED_TAKE1_INTRO_MUSIC_PRIVATE_REVIEW.mp4",
+          "version": 0,
+          "bytes": 10076062,
+          "sha256": "832293d87df020cb5ff93daa06207e15f5dcc8b86c2258e70bc5eaf1ee523be4",
+          "durationSeconds": 45.333333333333336,
+          "width": 720,
+          "height": 1280,
+          "frameRate": 24,
+          "videoCodec": "H264",
+          "audioCodec": "AAC",
+          "audioTracks": 1,
+          "decodedVideoFrames": 1088,
+          "fullAudioVideoDecodeVerified": true,
+          "faststartVerified": true,
+          "sampleClippingObserved": false,
+          "selectedNarration": {
+            "fileName": "hardship_narration_variant_1.mp3",
+            "libraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+            "sha256": "99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+            "sourceDurationSeconds": 40.829375,
+            "selectedByTom": true,
+            "trimmed": false,
+            "timeStretched": false,
+            "gain": 1,
+            "startsAtSeconds": 1.5
+          },
+          "opening": {
+            "brandedIntroSeconds": 1.5,
+            "music": "NewsSting",
+            "composer": "Kevin MacLeod",
+            "license": "CC BY4.0",
+            "sourceURL": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+            "rightsEvidence": "OfficialcomposertrackcatalogandtrackrendererCCBY4attribution;officiallicensingpagefreewithcredit. Endcardandreviewnotesincludeauthor/source/licenseandtrim/fadechange. No purchase, music-generationcredit or endorsementclaim.",
+            "fadeUnderNarrationBeforeStarts": true,
+            "targetMusicRMSBelowVoiceDB": 24,
+            "musicFadeOutStartsAtSeconds": 4.5,
+            "musicEndsAtSeconds": 5.5,
+            "pastRejectedCueReused": false,
+            "musicApproval": "Finalactualmusic/transition/intelligibilityreviewpending"
+          },
+          "visuals": "Original existing fictional desk/workflow imagery and original native animated diagram; earlier female-presenter still removed. Male fictionalnewscaster isintendedbutunproduced; no still represented asanimated/talking.",
+          "presenter": {
+            "intended": "male fictional AI newscaster paired with selectedLiamtake1",
+            "animatedFootagePresent": false,
+            "paidGenerationApproved": false,
+            "observedPickerRatesCreditsPerSecond": {
+              "HeyGenAvatar4": 1212,
+              "CreatifyAurora": 848,
+              "SyncLipsync2Pro": 66,
+              "VeedLipsync": 41
+            },
+            "rateScope": "Providerread-onlypickerlabels; cheapermodelsrequireexistingmovingpresenterfootage. No submittedpresenterquoteor generation."
+          },
+          "browserQA": [
+            {
+              "width": 390,
+              "overflow": false,
+              "videoControls": true,
+              "actualNarrationLabel": true,
+              "provisionalTiming": true,
+              "unpublished": true,
+              "errors": []
+            },
+            {
+              "width": 1440,
+              "overflow": false,
+              "videoControls": true,
+              "actualNarrationLabel": true,
+              "provisionalTiming": true,
+              "unpublished": true,
+              "errors": []
+            },
+            {
+              "ended": true,
+              "muted": false,
+              "volume": 1,
+              "duration": 45.333333,
+              "currentTime": 45.333333,
+              "events": 171,
+              "elapsedSeconds": 45.41220000004768,
+              "scope": "Continuous unmuted browser playback/decode test; not actual listening or full editorial viewing acceptance."
+            }
+          ],
+          "nativeFrameViewingScopeSeconds": [
+            0.75,
+            1.55,
+            21.0,
+            44.0
+          ],
+          "allEightFramesExtracted": true,
+          "audioReview": {
+            "TomAudioTakeChoiceRecorded": true,
+            "actualListeningByCoordinator": false,
+            "fullVideoListeningAccepted": false,
+            "captionSpeechSyncAccepted": false,
+            "captionTiming": "10semanticdisplaycuesrescaledtoactualaudio durationandintrooffset;editorialestimates,notverifiedspeechalignment",
+            "smallestUserReview": "Onefullwatch/listentothisactual45.33secondMP4:openingmusic/brandintro,cleantransition,upbeatclearnarrationandqualifiers,captionphraseaccuracy/sync,cleanfade/close. No timestamphomework."
+          },
+          "productionVerified": false,
+          "nativeVideo": null,
+          "publisherAction": "none; private review only, Oct15 due gate and all release/publisher controls remain",
+          "additionalSpeechCredits": 0,
+          "musicPurchases": 0,
+          "presenterGenerations": 0
+        }
+      },
+      "privateNarratedReview": {
+        "preparedAt": "2026-10-13T20:11:42.009837+00:00",
+        "status": "narrated-private-review-ready; caption/full-listening acceptance pending",
+        "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+        "fileId": "file_0000000008a48246b7bd549af745c0af",
+        "fileName": "CUAI_OCT15_SELECTED_TAKE1_INTRO_MUSIC_PRIVATE_REVIEW.mp4",
+        "version": 0,
+        "bytes": 10076062,
+        "sha256": "832293d87df020cb5ff93daa06207e15f5dcc8b86c2258e70bc5eaf1ee523be4",
+        "durationSeconds": 45.333333333333336,
+        "width": 720,
+        "height": 1280,
+        "frameRate": 24,
+        "videoCodec": "H264",
+        "audioCodec": "AAC",
+        "audioTracks": 1,
+        "decodedVideoFrames": 1088,
+        "fullAudioVideoDecodeVerified": true,
+        "faststartVerified": true,
+        "sampleClippingObserved": false,
+        "selectedNarration": {
+          "fileName": "hardship_narration_variant_1.mp3",
+          "libraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+          "sha256": "99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+          "sourceDurationSeconds": 40.829375,
+          "selectedByTom": true,
+          "trimmed": false,
+          "timeStretched": false,
+          "gain": 1,
+          "startsAtSeconds": 1.5
+        },
+        "opening": {
+          "brandedIntroSeconds": 1.5,
+          "music": "NewsSting",
+          "composer": "Kevin MacLeod",
+          "license": "CC BY4.0",
+          "sourceURL": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+          "rightsEvidence": "OfficialcomposertrackcatalogandtrackrendererCCBY4attribution;officiallicensingpagefreewithcredit. Endcardandreviewnotesincludeauthor/source/licenseandtrim/fadechange. No purchase, music-generationcredit or endorsementclaim.",
+          "fadeUnderNarrationBeforeStarts": true,
+          "targetMusicRMSBelowVoiceDB": 24,
+          "musicFadeOutStartsAtSeconds": 4.5,
+          "musicEndsAtSeconds": 5.5,
+          "pastRejectedCueReused": false,
+          "musicApproval": "Finalactualmusic/transition/intelligibilityreviewpending"
+        },
+        "visuals": "Original existing fictional desk/workflow imagery and original native animated diagram; earlier female-presenter still removed. Male fictionalnewscaster isintendedbutunproduced; no still represented asanimated/talking.",
+        "presenter": {
+          "intended": "male fictional AI newscaster paired with selectedLiamtake1",
+          "animatedFootagePresent": false,
+          "paidGenerationApproved": false,
+          "observedPickerRatesCreditsPerSecond": {
+            "HeyGenAvatar4": 1212,
+            "CreatifyAurora": 848,
+            "SyncLipsync2Pro": 66,
+            "VeedLipsync": 41
+          },
+          "rateScope": "Providerread-onlypickerlabels; cheapermodelsrequireexistingmovingpresenterfootage. No submittedpresenterquoteor generation."
+        },
+        "browserQA": [
+          {
+            "width": 390,
+            "overflow": false,
+            "videoControls": true,
+            "actualNarrationLabel": true,
+            "provisionalTiming": true,
+            "unpublished": true,
+            "errors": []
+          },
+          {
+            "width": 1440,
+            "overflow": false,
+            "videoControls": true,
+            "actualNarrationLabel": true,
+            "provisionalTiming": true,
+            "unpublished": true,
+            "errors": []
+          },
+          {
+            "ended": true,
+            "muted": false,
+            "volume": 1,
+            "duration": 45.333333,
+            "currentTime": 45.333333,
+            "events": 171,
+            "elapsedSeconds": 45.41220000004768,
+            "scope": "Continuous unmuted browser playback/decode test; not actual listening or full editorial viewing acceptance."
+          }
+        ],
+        "nativeFrameViewingScopeSeconds": [
+          0.75,
+          1.55,
+          21.0,
+          44.0
+        ],
+        "allEightFramesExtracted": true,
+        "audioReview": {
+          "TomAudioTakeChoiceRecorded": true,
+          "actualListeningByCoordinator": false,
+          "fullVideoListeningAccepted": false,
+          "captionSpeechSyncAccepted": false,
+          "captionTiming": "10semanticdisplaycuesrescaledtoactualaudio durationandintrooffset;editorialestimates,notverifiedspeechalignment",
+          "smallestUserReview": "Onefullwatch/listentothisactual45.33secondMP4:openingmusic/brandintro,cleantransition,upbeatclearnarrationandqualifiers,captionphraseaccuracy/sync,cleanfade/close. No timestamphomework."
+        },
+        "productionVerified": false,
+        "nativeVideo": null,
+        "publisherAction": "none; private review only, Oct15 due gate and all release/publisher controls remain",
+        "additionalSpeechCredits": 0,
+        "musicPurchases": 0,
+        "presenterGenerations": 0
       }
     },
     {
