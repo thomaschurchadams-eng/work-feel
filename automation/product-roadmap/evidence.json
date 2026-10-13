@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "private evaluation fixture; source rights review pending",
+  "records": [{
+    "id": "ornl-kobalt-selection-2026-09-04",
+    "institution": "ORNL Federal Credit Union",
+    "useCase": "third-party risk and vendor reviews",
+    "stage": "selected; production deployment unverified",
+    "claim": {"text": "Kobalt says its platform extracts evidence, identifies control gaps and produces risk analyses", "attribution": "provider announcement", "status": "claimed"},
+    "independentlySupportedResult": null,
+    "dates": {"originalAnnouncement": "2026-09-04", "cuaiReporting": "2026-09-07", "goLive": null, "resultMeasurement": null},
+    "sources": [{"url": "https://www.cuinsight.com/press-release/ornl-fcu-selects-kobalt-labs-to-modernize-risk-and-compliance-operations/", "type": "provider announcement", "rights": "facts only; no redistribution or training license established"}, {"path": "news/ornl-fcu-kobalt-ai-vendor-risk.html", "type": "CUAI reporting", "rights": "internal factual index only"}],
+    "uncertainty": ["go-live unknown", "independent efficiency or risk-quality result unknown", "final vendor decision authority unknown"],
+    "corrections": []
+  }],
+  "evaluationCases": [
+    {"id": "selection-versus-live", "recordId": "ornl-kobalt-selection-2026-09-04", "predicate": "hasVerifiedGoLive", "expected": false},
+    {"id": "claim-versus-result", "recordId": "ornl-kobalt-selection-2026-09-04", "predicate": "hasIndependentResult", "expected": false},
+    {"id": "rights", "recordId": "ornl-kobalt-selection-2026-09-04", "predicate": "hasTrainingLicense", "expected": false}
+  ]
+}
