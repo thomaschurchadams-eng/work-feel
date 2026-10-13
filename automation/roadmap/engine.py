@@ -74,7 +74,7 @@ def bus_comment(state, item, kind, event_id, evidence):
                       f"nextOwner: {item['owner']}"))
 
 
-def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoint_verifier=None):
+def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoint_verifier=None, qa_verifier=None):
     """Pure reducer. A repeated event is a no-op; conflicting identity fails closed."""
     state = copy.deepcopy(state)
     if state["brand"] not in BRANDS:
@@ -196,6 +196,9 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                 build = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "building"), None)
                 if not build or evidence["sourceVersion"] != build["sourceVersion"]:
                     raise ValueError("QA source version differs from accepted handoff")
+                result = qa_verifier(event) if qa_verifier else None
+                if not isinstance(result, dict) or not result.get("sourceVerified") or not result.get("source") or any(result.get(k) != evidence[k] for k in ("testCommand", "testResult", "artifactHash", "commitSha", "sourceVersion")):
+                    raise ValueError("QA needs verified exact-version test receipt")
             if stage == "verified-complete":
                 qa = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "qa"), None)
                 if not qa or any(evidence[k] != qa[k] for k in ("artifactHash", "commitSha")):
