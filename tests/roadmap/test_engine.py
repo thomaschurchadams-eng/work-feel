@@ -345,3 +345,33 @@ class IntegrationBoundaryTest(unittest.TestCase):
         self.assertEqual(result,state)
         self.assertEqual(report['applied'],[])
         self.assertEqual(report['blocked'][0][0],'approval')
+
+class IntakeIdentityTest(unittest.TestCase):
+    def test_two_sources_one_new_key_no_collision(self):
+        from intake import planning_events
+        records=[dict(key='Pilot',kind='data-asset',title='Pilot',source=source,observedAt=date,finding='qualified')
+                 for source,date in [('report-a','2026-10-12'),('report-b','2026-10-13')]]
+        state=blank('cuai')
+        events=planning_events(state,records)
+        self.assertEqual([e['action'] for e in events],['intake','evidence','evidence','transition'])
+        for event in events: state=apply(state,event)
+        self.assertEqual(state['items']['pilot']['sources'],['report-a','report-b'])
+        self.assertEqual(state['items']['pilot']['stage'],'ranked')
+        for event in events: state=apply(state,event)
+        self.assertEqual(len(state['seenEvents']),4)
+
+    def test_new_rank_after_defer_and_clear_has_new_identity(self):
+        from intake import planning_events
+        state=blank('cuai')
+        first=dict(key='Pilot',kind='data-asset',title='Pilot',source='report-a',observedAt='2026-10-12',finding='qualified')
+        old=planning_events(state,[first])
+        for event in old: state=apply(state,event)
+        defer=dict(eventId='defer',action='override',key='pilot',choice='defer',authority='Tom')
+        clear=dict(eventId='clear',action='override',key='pilot',choice='clear',authority='Tom')
+        state=apply(state,defer,decision_verifier=lambda _:decision_receipt('pilot','defer'))
+        state=apply(state,clear,decision_verifier=lambda _:decision_receipt('pilot','clear'))
+        newer=first.copy()
+        events=planning_events(state,[newer])
+        self.assertNotEqual(events[-1]['eventId'],old[-1]['eventId'])
+        for event in events: state=apply(state,event)
+        self.assertEqual(state['items']['pilot']['stage'],'ranked')
