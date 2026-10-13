@@ -7,7 +7,7 @@
 +
 +## Proposed roadmap invocation under existing cadence
 +
-+After the existing editorial and Alert duties, inspect `automation/product-roadmap/state.json` and current issue #160 in the same run. Use the tested roadmap adapter in dry-run mode to intake genuinely new development ideas and rerank pending work from dated evidence. Advance an item only with its existing receiving owner and authoritative handoff/test/approval/deployment receipts. Record only material transitions through the existing issue-bus contract. Do not add a schedule, publish a data asset, or treat a pending outbox entry as a posted comment.
++After the existing editorial and Alert duties, read issue #160 with the connected GitHub tool. In the same run, pass its complete fresh comment result to `python3 automation/roadmap/host_bridge.py --brand cuai --state automation/product-roadmap/state.json --snapshot <temporary-connector-result.json>` and inspect the no-write proposal. Advance only within the existing role policy and authoritative receipt gates; remove the temporary snapshot. No extra schedule or publication authority is created.
  
  ## Operating principle
  
