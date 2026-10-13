@@ -54,3 +54,10 @@ def recovery(comment, brand):
         raise ValueError('recovery posted must be explicit')
     result['posted'] = result['posted'] == 'true'
     return result
+
+DECISION_FIELDS = ('itemKey', 'choice', 'status')
+
+def decision(comment, brand):
+    result = issue_comment(comment, brand, TOM_LOGIN, DECISION_FIELDS)
+    result['authority'] = 'Tom'
+    return result
