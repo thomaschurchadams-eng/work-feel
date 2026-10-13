@@ -262,8 +262,8 @@ class RoadmapTest(unittest.TestCase):
             vercel_list_result(production,expected)
         proof=dict(deploymentId='deployment-X',artifactHash='artifact-A',sourceVerified=True)
         self.assertEqual(vercel_list_result(production,expected,proof)['sourceVerified'],True)
-        with self.assertRaisesRegex(ValueError,'Git tracked'):
-            qa_run(Path(__file__).resolve().parents[2],'cuai','automation/roadmap/engine.py','stale-commit')
+        with self.assertRaisesRegex(ValueError,'checkout HEAD changed'):
+            qa_run(Path(__file__).resolve().parents[2],'cuai','automation/publishing-rules.json','stale-commit')
 
     def test_orchestrator_uses_fresh_owner_receipt_and_blocks_missing_one(self):
         s=apply(self.s,dict(eventId='r',action='transition',key='dataset',stage='ranked',evidence=dict(source='report',observedAt=NOW,finding='qualified')))
