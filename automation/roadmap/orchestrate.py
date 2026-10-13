@@ -57,6 +57,10 @@ def run_once(state, events, provider):
                 raw, complete = provider.fetch_issue_comments(brand)
                 found = issue_read(raw,brand,fresh_complete=complete)
                 return handoff_from_issue(found,brand,evidence['commentId'],'thomaschurchadams-eng')
+            def verified_decision(_):
+                raw, complete = provider.fetch_issue_comments(brand)
+                found = issue_read(raw,brand,fresh_complete=complete)
+                return receipt_from_issue(found,brand,evidence.get('decisionCommentId') or evidence['commentId'],'decision')
             def verified_checkpoint(_):
                 raw, complete = provider.fetch_issue_comments(brand)
                 found = issue_read(raw,brand,fresh_complete=complete)
@@ -72,6 +76,7 @@ def run_once(state, events, provider):
                 approval_verifier=fresh_approval if action in ('approval','revoke-approval') or stage == 'released' else None,
                 handoff_verifier=fresh_handoff if stage == 'building' else None,
                 checkpoint_verifier=verified_checkpoint if action == 'override' and event.get('choice') in ('defer','reject') else None,
+                decision_verifier=verified_decision if action == 'override' else None,
                 qa_verifier=verified_qa if stage == 'qa' else None,
                 deployment_verifier=verified_deployment if stage in ('released','verified-complete') else None)
             result['applied'].append(event['eventId'])
