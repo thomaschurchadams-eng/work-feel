@@ -31,6 +31,11 @@ class SnapshotProvider(ReadProvider):
         return self.checkout
 
 
+def require_planning_events(events):
+    if any(e.get('action') not in ('intake','evidence') and
+           not (e.get('action') == 'transition' and e.get('stage') == 'ranked') for e in events):
+        raise ValueError('saved-snapshot bridge permits planning events only; protected transitions need fresh live provider reads')
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--brand',choices=('cuai','cai'),required=True)
@@ -44,6 +49,7 @@ def main():
     payload=json.loads(args.snapshot.read_text())
     provider=SnapshotProvider(payload,args.brand,args.checkout_root)
     events=json.loads(args.events.read_text()) if args.events else []
+    require_planning_events(events)
     proposed,result=run_once(state,events,provider)
     nxt=next_item(proposed)
     print(json.dumps({'brand':args.brand,'next':nxt['id'] if nxt else None,
