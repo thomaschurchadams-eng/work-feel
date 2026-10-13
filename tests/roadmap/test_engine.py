@@ -17,10 +17,10 @@ class RoadmapTest(unittest.TestCase):
         self.event('q','qa',dict(testCommand='python -m unittest',testResult='passed',artifactHash='abc'))
         self.event('g','blocked-release',dict(gate='approval',releaseOwner='Tom'))
         with self.assertRaisesRegex(ValueError,'missing release authority'):
-            self.event('bad','released',dict(approvalId='approved',deploymentId='preview'),scope='marketing')
+            self.event('bad','released',dict(approvalId='approved',deploymentId='preview',commitSha='abc',rollbackOwner='owner',rollbackSteps='revert'),scope='marketing')
         self.s=apply(self.s,dict(eventId='a',action='approval',key='dataset',scope='dataset-release',authority='Tom',evidence={'approvalId':'approved'}))
-        self.event('rel','released',dict(approvalId='approved',deploymentId='fixture'),scope='dataset-release')
-        self.event('done','verified-complete',dict(verification='independent check',observedAt='2026-10-13',artifactHash='abc'))
+        self.event('rel','released',dict(approvalId='approved',deploymentId='fixture',commitSha='abc',rollbackOwner='owner',rollbackSteps='revert'),scope='dataset-release')
+        self.event('done','verified-complete',dict(verification='independent check',observedAt='2026-10-13',artifactHash='abc',environment='production',deploymentId='fixture'))
         self.assertEqual(self.s['items']['dataset']['stage'],'verified-complete')
         self.assertEqual(next_item(self.s)['id'],'other')
     def test_duplicate_and_conflict(self):
@@ -64,9 +64,11 @@ class RoadmapTest(unittest.TestCase):
         self.event('q','qa',dict(testCommand='tests',testResult='passed',artifactHash='final-hash'))
         self.event('g','blocked-release',dict(gate='approval',releaseOwner='Tom'))
         self.s=apply(self.s,dict(eventId='a',action='approval',key='dataset',scope='release',authority='Tom',evidence={'approvalId':'a1'}))
-        self.event('rel','released',dict(approvalId='a1',deploymentId='fixture'),scope='release')
+        self.event('rel','released',dict(approvalId='a1',deploymentId='fixture',commitSha='abc',rollbackOwner='owner',rollbackSteps='revert'),scope='release')
         with self.assertRaisesRegex(ValueError,'differs from tested QA version'):
-            self.event('wrong','verified-complete',dict(verification='preview only',observedAt='today',artifactHash='old-hash'))
+            self.event('wrong','verified-complete',dict(verification='preview only',observedAt='today',artifactHash='old-hash',environment='preview',deploymentId='fixture'))
+        with self.assertRaisesRegex(ValueError,'preview cannot verify production completion'):
+            self.event('preview','verified-complete',dict(verification='preview only',observedAt='today',artifactHash='final-hash',environment='preview',deploymentId='fixture'))
 
     def test_cai_separate_brand_and_acceptance_evidence(self):
         s=blank('cai')
