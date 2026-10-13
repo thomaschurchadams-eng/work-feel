@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'automation' / 'roadmap'))
 from engine import apply, blank, next_item, reconcile, digest
 from receipts import approval as verified_approval_comment
-from integrations import issue_read, approval_from_issue, deployment_read, qa_run
+from integrations import issue_read, approval_from_issue, deployment_read, qa_run, QA_COMMANDS
 from orchestrate import run_once
 
 NOW = '2026-10-13'
@@ -172,6 +172,11 @@ class RoadmapTest(unittest.TestCase):
             verified_approval_comment({**good,'user':{'login':'someone-else'}},'cuai')
         with self.assertRaisesRegex(ValueError,'authoritative issue'):
             verified_approval_comment({**good,'url':'https://github.com/thomaschurchadams-eng/work-feel/issues/161#issuecomment-123'},'cuai')
+
+    def test_qa_command_contracts(self):
+        for brand, commands in QA_COMMANDS.items():
+            self.assertTrue(commands)
+            self.assertTrue(all(isinstance(cmd,tuple) and cmd[0] == 'python3' for cmd in commands),brand)
 
     def test_connected_read_contracts_fail_closed(self):
         body='\n'.join(f'{k}: {v}' for k,v in approved_receipt().items() if k in ('approvalId','itemKey','actionClass','scope','artifactHash','commitSha','sourceVersion','status'))
