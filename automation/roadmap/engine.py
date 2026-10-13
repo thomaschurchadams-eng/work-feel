@@ -11,14 +11,15 @@ KINDS = ("enhancement", "new-product", "data-asset", "evaluation", "model-asset"
 STAGES = ("idea", "ranked", "building", "qa", "blocked-release", "released", "verified-complete", "deferred", "rejected")
 TERMINAL = {"verified-complete", "deferred", "rejected"}
 BUS = {"cuai": "thomaschurchadams-eng/work-feel#160", "cai": "thomaschurchadams-eng/cooperative-ai-institute-rebuild#12"}
-OWNER = {"cuai": "existing development owner via Watney coordination", "cai": "existing CAI product/implementation owner"}
+OWNER = {"cuai": "cuai-operating-system", "cai": "chief-of-staff"}
+ENABLED_OWNERS = {"cuai": {"cuai-operating-system", "daily-publisher", "reliability-watch"}, "cai": {"chief-of-staff"}}
 EVIDENCE = {
     "ranked": ("source", "observedAt", "finding"),
-    "building": ("acceptedHandoff", "acceptedBy", "scope"),
-    "qa": ("testCommand", "testResult", "artifactHash"),
+    "building": ("acceptedHandoff", "acceptedBy", "scope", "sourceVersion"),
+    "qa": ("testCommand", "testResult", "artifactHash", "commitSha", "sourceVersion"),
     "blocked-release": ("gate", "releaseOwner"),
-    "released": ("approvalId", "deploymentId", "commitSha", "rollbackOwner", "rollbackSteps"),
-    "verified-complete": ("verification", "observedAt", "artifactHash", "environment", "deploymentId"),
+    "released": ("approvalId", "deploymentId", "commitSha", "artifactHash", "sourceVersion", "actionClass", "observedAt", "rollbackOwner", "rollbackSteps"),
+    "verified-complete": ("verification", "observedAt", "artifactHash", "commitSha", "environment", "deploymentId"),
 }
 
 
@@ -73,7 +74,7 @@ def bus_comment(state, item, kind, event_id, evidence):
                       f"nextOwner: {item['owner']}"))
 
 
-def apply(state, event):
+def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoint_verifier=None):
     """Pure reducer. A repeated event is a no-op; conflicting identity fails closed."""
     state = copy.deepcopy(state)
     if state["brand"] not in BRANDS:
@@ -90,6 +91,8 @@ def apply(state, event):
     if action == "intake":
         if not key or not event.get("title") or event.get("kind") not in KINDS:
             raise ValueError("intake requires stable key, title, kind")
+        if (event.get("owner") or OWNER[state["brand"]]) not in ENABLED_OWNERS[state["brand"]]:
+            raise ValueError("owner is not an enabled existing role")
         if key in state["items"]:
             item = state["items"][key]
             if item["kind"] != event["kind"]:
@@ -120,19 +123,49 @@ def apply(state, event):
             item["override"] = None if choice == "clear" else choice
             if choice in ("defer", "reject"):
                 if item in active(state):
-                    raise ValueError("active work requires safe checkpoint before override")
+                    receipt = checkpoint_verifier(event) if checkpoint_verifier else None
+                    if not isinstance(receipt, dict) or any(receipt.get(k) != v for k, v in
+                        (("itemKey", key), ("owner", item["owner"]), ("status", "accepted"))):
+                        raise ValueError("active work requires authoritative safe checkpoint")
+                    if not receipt.get("source") or not receipt.get("sourceVerified") or not receipt.get("artifactHash") or receipt.get("recoveryOwner") not in ENABLED_OWNERS[state["brand"]]:
+                        raise ValueError("checkpoint lacks verified recovery evidence")
+                    item["history"].append({"eventId": eid, "stage": "safe-checkpoint", "evidence": receipt})
                 item["stage"] = "deferred" if choice == "defer" else "rejected"
+                item["history"].append({"eventId": eid, "stage": item["stage"], "evidence": {"authority": event["authority"], "reason": event.get("reason")}})
             elif item["stage"] in ("deferred", "rejected"):
                 item["stage"] = "idea"
             state["decisions"].append({"eventId": eid, "key": key, "choice": choice,
                                        "authority": event["authority"], "reason": event.get("reason")})
         elif action == "approval":
-            scope = event.get("scope")
-            if not scope or not event.get("authority") or not evidence.get("approvalId"):
-                raise ValueError("approval needs exact scope and evidence")
-            if not any(x["scope"] == scope and x["approvalId"] == evidence["approvalId"] for x in item["approvalScopes"]):
-                item["approvalScopes"].append({"scope": scope, "approvalId": evidence["approvalId"],
-                                               "authority": event["authority"]})
+            if approval_verifier is None:
+                raise ValueError("approval requires authoritative source verification")
+            receipt = approval_verifier(event)
+            fields = ("approvalId", "source", "authority", "scope", "actionClass", "itemKey", "artifactHash", "commitSha", "sourceVersion", "status")
+            if not isinstance(receipt, dict) or any(not receipt.get(k) for k in fields):
+                raise ValueError("unverified approval receipt")
+            if receipt["status"] != "active" or receipt["authority"] != "Tom":
+                raise ValueError("approval is not active Tom authority")
+            if receipt["scope"] != event.get("scope") or receipt["approvalId"] != evidence.get("approvalId") or receipt["itemKey"] != key or receipt["actionClass"] != event.get("actionClass"):
+                raise ValueError("approval source differs from requested item, action, scope or ID")
+            if not receipt.get("sourceVerified"):
+                raise ValueError("unverified approval source")
+            qa = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "qa"), None)
+            if not qa or any(receipt[k] != qa[k] for k in ("artifactHash", "commitSha", "sourceVersion")):
+                raise ValueError("approval differs from tested artifact")
+            if receipt.get("expiresAt") and receipt["expiresAt"] <= max(event.get("observedAt", ""), datetime.now(timezone.utc).date().isoformat()):
+                raise ValueError("approval expired")
+            if not any(x["approvalId"] == receipt["approvalId"] for x in item["approvalScopes"]):
+                item["approvalScopes"].append(receipt)
+        elif action == "revoke-approval":
+            if approval_verifier is None:
+                raise ValueError("revocation requires authoritative source verification")
+            receipt = approval_verifier(event)
+            matches = [x for x in item["approvalScopes"] if x["approvalId"] == receipt.get("approvalId")]
+            if not matches or receipt.get("status") != "revoked" or not receipt.get("source") or not receipt.get("sourceVerified"):
+                raise ValueError("unverified approval revocation")
+            for prior in matches:
+                prior["status"] = "revoked"
+                prior["revocationSource"] = receipt["source"]
         elif action == "transition":
             stage = event.get("stage")
             if stage not in STAGES:
@@ -146,20 +179,45 @@ def apply(state, event):
             if stage == "building" and item["stage"] == "ranked":
                 if evidence["acceptedBy"] != item["owner"]:
                     raise ValueError("receiving owner must accept handoff")
+                receipt = handoff_verifier(event) if handoff_verifier else None
+                if not isinstance(receipt, dict) or any(receipt.get(k) != v for k, v in
+                    (("itemKey", key), ("owner", item["owner"]), ("receiptId", evidence["acceptedHandoff"]), ("actionClass", "build"), ("sourceVersion", evidence["sourceVersion"]), ("status", "accepted"))):
+                    raise ValueError("handoff needs authoritative receiving-owner receipt")
+                if not receipt.get("source") or not receipt.get("sourceVerified"):
+                    raise ValueError("unverified handoff source")
                 if active(state):
                     raise ValueError("one active development item per brand")
                 chosen = next_item(state)
                 if chosen["id"] != key and not event.get("safeCheckpoint"):
                     raise ValueError("higher ranked Next exists; record safe checkpoint")
+            if stage == "qa":
+                if evidence["testResult"] != "passed":
+                    raise ValueError("failed QA cannot advance")
+                build = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "building"), None)
+                if not build or evidence["sourceVersion"] != build["sourceVersion"]:
+                    raise ValueError("QA source version differs from accepted handoff")
             if stage == "verified-complete":
-                qa_hashes = [h["evidence"]["artifactHash"] for h in item["history"] if h["stage"] == "qa"]
-                if not qa_hashes or evidence["artifactHash"] != qa_hashes[-1]:
+                qa = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "qa"), None)
+                if not qa or any(evidence[k] != qa[k] for k in ("artifactHash", "commitSha")):
                     raise ValueError("final artifact differs from tested QA version")
                 if evidence["environment"] != "production":
                     raise ValueError("preview cannot verify production completion")
+                release = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "released"), None)
+                if not release or any(evidence[k] != release[k] for k in ("deploymentId", "commitSha", "artifactHash")):
+                    raise ValueError("completion differs from released deployment")
             if stage == "released":
                 required = event.get("scope")
+                qa = next((h["evidence"] for h in reversed(item["history"]) if h["stage"] == "qa"), None)
+                if not qa or any(evidence[k] != qa[k] for k in ("artifactHash", "commitSha", "sourceVersion")):
+                    raise ValueError("release differs from tested artifact")
                 if not required or not any(x["scope"] == required and x["approvalId"] == evidence["approvalId"]
+                                           and x["artifactHash"] == evidence["artifactHash"]
+                                           and x["commitSha"] == evidence["commitSha"]
+                                           and x["sourceVersion"] == evidence["sourceVersion"]
+                                           and x["actionClass"] == evidence["actionClass"]
+                                           and x["itemKey"] == key
+                                           and x["status"] == "active"
+                                           and (not x.get("expiresAt") or x["expiresAt"] > max(evidence["observedAt"], datetime.now(timezone.utc).date().isoformat()))
                                            for x in item["approvalScopes"]):
                     raise ValueError("genuinely missing release authority")
             item["stage"] = stage
@@ -173,15 +231,31 @@ def apply(state, event):
     return state
 
 
-def reconcile(state, event_id, remote_comments):
-    """Read-only remote comments are needed before retrying an ambiguous post."""
+def reconcile(state, event_id, remote_comments, fresh_complete=False, recovery_receipt=None):
+    """Never downgrade a known receipt from a stale or partial issue read."""
     state = copy.deepcopy(state)
     entry = state["outbox"][event_id]
-    matches = [x for x in remote_comments if f"eventId: {event_id}" in x]
+    if recovery_receipt:
+        if recovery_receipt.get("eventId") != event_id or recovery_receipt.get("status") != "resolved" or not recovery_receipt.get("source"):
+            raise ValueError("invalid authoritative recovery receipt")
+        entry["status"] = "confirmed" if recovery_receipt.get("posted") else "pending"
+        entry["recoverySource"] = recovery_receipt["source"]
+        return state
+    if not fresh_complete:
+        if entry["status"] == "pending":
+            entry["status"] = "uncertain"
+        return state
+    expected_key = re.search(r"(?m)^dedupeKey: (.+)$", entry["body"]).group(1)
+    matches = []
+    for body in remote_comments:
+        event_match = re.search(r"(?m)^eventId: ([^\r\n]+)$", body)
+        key_match = re.search(r"(?m)^dedupeKey: ([^\r\n]+)$", body)
+        if event_match and event_match.group(1) == event_id and key_match and key_match.group(1) == expected_key:
+            matches.append(body)
     if len(matches) > 1 or (matches and matches[0] != entry["body"]):
         entry["status"] = "conflict"
-    elif matches:
+    elif matches and entry["status"] != "conflict":
         entry["status"] = "confirmed"
-    else:
+    elif entry["status"] not in ("confirmed", "conflict"):
         entry["status"] = "pending"
     return state
