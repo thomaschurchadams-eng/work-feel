@@ -2955,6 +2955,35 @@
       ],
       "summary": "Published original October13 hardship-treatment decision card and replaced home media feature, retaining previous chart archive; exact production READY/public page and PNG hashes verified, existing operations succeeded. Preserved completed October13 Standard article/history and all42 queue items; publisher alone selects released card for otherwise free11:30ET slot. Complete98 historical credit entries preserved;103 correction debit not re-added. Reused qualified385word podcast/93word short scripts, existing silent/private picture-led concept evidence, original Friday cartoon with current-script mobile/desktop QA. No hearing/forced alignment, accepted narrated final, natural animated presenter, Spotify upload authority or native provider post fabricated. No unchanged blank-route/audio retry, generation, credits, purchase/topup, queue/provider action, new schedule/perms or engineering activation. Timing inactive and future publication-not-before dates retained.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-13T11:34:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "reliability-watch",
+      "trigger": "October 13 reliability check found the published decision-card social handoff unconsumed after the fixed 11:30 a.m. Eastern slot.",
+      "status": "blocked",
+      "workUnits": {
+        "recentCommitsReviewed": 5,
+        "workflowRunsInspected": 3,
+        "workflowArtifactsInspected": 2,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "livePageChecks": 2,
+        "socialQueueEntriesInspected": 42,
+        "overdueHandoffsDetected": 1,
+        "missedFixedSlotsDetected": 1,
+        "socialSchedulingAttempts": 0,
+        "providerCallsObserved": 0,
+        "queueItemsCreated": 0,
+        "duplicateReservationsCreated": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The October 13 hardship-treatment decision card was published and production-verified at 9:01 a.m. Eastern, then handed to the sole daily publisher at 9:09 a.m. for the existing 11:30 a.m. slot. Current main still contains 42 queue items with no October 13 reservation or hardship-parent promotion, and no later publisher commit or workflow run occurred before the fixed time passed. The article cycle had already completed at 7:35 a.m.; no status:planned reservation existed, so the publisher had no scheduled execution after media release. This is a handoff/schedule-contract failure, not a provider failure. Verified-operations receipts and the coordinator record show no provider call, no queue write and no duplicate side effect. No same-day recovery was attempted because policy forbids an arbitrary later time and assigns queue writes/provider execution exclusively to the publisher. Next authorized publisher pass should re-read main, the queue and the manifest, then reserve the same card only at the next eligible free fixed weekday slot if High-news priority, one-per-day/five-per-week caps and parent dedup still pass. Durable prevention: create the supported immutable status:planned reservation before the due-date release, or separately authorize a bounded post-release publisher execution; do not change schedules, permissions or gates.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
