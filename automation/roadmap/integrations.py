@@ -14,9 +14,13 @@ from receipts import approval, handoff, checkpoint, recovery
 
 QA_COMMANDS = {
     'cuai': (('python3', '-m', 'unittest', 'discover', '-s', 'tests/roadmap', '-q'),
-             ('python3', 'automation/product-roadmap/verify.py')),
+             ('python3', 'automation/product-roadmap/verify.py'),
+             ('npm', 'test'), ('npm', 'run', 'check:design')),
     'cai': (('python3', '-m', 'py_compile', 'operations/product-roadmap/engine.py',
-             'operations/product-roadmap/cli.py', 'operations/product-roadmap/receipts.py'),),
+             'operations/product-roadmap/cli.py', 'operations/product-roadmap/receipts.py'),
+            ('./node_modules/.bin/vinext', 'build'),
+            ('node', '--test'),
+            ('./node_modules/.bin/eslint', '.', '--ignore-pattern', 'dist', '--ignore-pattern', '.next')),
 }
 
 def issue_read(result, brand, *, fresh_complete):
@@ -56,11 +60,16 @@ def qa_run(repo_root, brand, artifact_path, source_version):
     status = subprocess.run(('git','status','--porcelain','--',str(relative)), cwd=root, capture_output=True, text=True, check=True)
     if status.stdout.strip():
         raise ValueError('artifact is not committed at exact checkout head')
+    commands = []
     for argv in QA_COMMANDS[brand]:
+        if brand == 'cai' and argv == ('node','--test'):
+            argv = ('node','--test',*(str(p.relative_to(root)) for p in sorted((root/'tests').glob('*.test.mjs'))))
+            if len(argv) == 2: raise ValueError('CAI tests missing')
+        commands.append(argv)
         outcome = subprocess.run(argv, cwd=root, capture_output=True, text=True)
         if outcome.returncode:
             raise ValueError(f'QA failed: {" ".join(argv)}: {outcome.stderr[-500:]}')
-    return dict(testCommand=' && '.join(' '.join(c) for c in QA_COMMANDS[brand]), testResult='passed',
+    return dict(testCommand=' && '.join(' '.join(c) for c in commands), testResult='passed',
                 artifactHash=hashlib.sha256(artifact.read_bytes()).hexdigest(), commitSha=commit,
                 sourceVersion=commit, source=f'local checkout {root} at {commit}', sourceVerified=True)
 
@@ -83,3 +92,26 @@ def receipt_from_issue(comments, brand, comment_id, kind):
         raise ValueError('receipt comment missing or ambiguous')
     parser = {'checkpoint':checkpoint, 'recovery':recovery}[kind]
     return parser(matches[0],brand)
+
+def vercel_list_result(raw, expected, artifact_receipt=None):
+    """Normalize connected Vercel list result; require separate exact asset proof.
+
+    Vercel's deployment list supplies id/commit/state/target, not asset bytes.
+    `artifact_receipt` must come from a trusted exact deployment-file read.
+    """
+    if not isinstance(raw, dict): raise ValueError('invalid Vercel result')
+    outer = raw.get('result',raw)
+    group = outer.get('deployments',{})
+    rows = group.get('deployments',[]) if isinstance(group,dict) else []
+    matches = [r for r in rows if r.get('id') == expected.get('deploymentId')]
+    if len(matches) != 1: raise ValueError('exact deployment missing or ambiguous')
+    row = matches[0]
+    if row.get('state') != 'READY' or row.get('target') != 'production':
+        raise ValueError('exact deployment is not READY production')
+    if (row.get('meta') or {}).get('githubCommitSha') != expected.get('commitSha'):
+        raise ValueError('Vercel commit differs from expected')
+    if not isinstance(artifact_receipt,dict) or artifact_receipt.get('deploymentId') != row['id'] or artifact_receipt.get('artifactHash') != expected.get('artifactHash') or not artifact_receipt.get('sourceVerified'):
+        raise ValueError('exact deployment artifact proof unavailable')
+    return deployment_read(dict(deploymentId=row['id'],commitSha=expected['commitSha'],
+                                artifactHash=artifact_receipt['artifactHash'],environment='production',
+                                state='READY',source=row.get('inspectorUrl') or 'Vercel exact deployment'),expected)
