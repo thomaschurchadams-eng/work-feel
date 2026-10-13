@@ -4,7 +4,7 @@
 
 ## Verified access boundary, October 13
 
-`gh api repos/thomaschurchadams-eng/work-feel/issues/160` returned `Get "https://api.github.com/repos/thomaschurchadams-eng/work-feel/issues/160": Forbidden`. The connected `github_fetch_issue_comments` read succeeded and returned all 143 comments with `url`, `id`, `body` and `user.login` fields. A standalone Python or scheduled task cannot call that ChatGPT connector directly. The existing scheduled owner must supply its fresh connected read to the adapter; saved JSON fixtures cannot be treated as current authority. The current Vercel combined-status result says `success` but does not by itself supply a production deployment ID, exact source SHA and artifact hash, so it cannot satisfy the release or completion adapter.
+`gh api repos/thomaschurchadams-eng/work-feel/issues/160` returned `Get "https://api.github.com/repos/thomaschurchadams-eng/work-feel/issues/160": Forbidden`. The connected `github_fetch_issue_comments` read succeeded and returned all 143 comments with `url`, `id`, `body` and `user.login` fields. A standalone Python or scheduled task cannot call that ChatGPT connector directly. The existing scheduled owner must supply its fresh connected read to the adapter; saved JSON fixtures cannot be treated as current authority. A live connected Vercel list read for CAI draft head `f920922c` returned deployment `dpl_DmTBNwiKTLTTyZey1sqooaNoMgk7`, state `READY`, target `null` (preview), and the exact Git SHA, but no artifact hash. The adapter rejects this as production evidence. A future production check must combine an exact production deployment read with an independently verified hash of the deployed asset; a green status alone cannot satisfy release or completion.
 
 ## Draft-only use
 
