@@ -16,7 +16,7 @@ QA_COMMANDS = {
     'cuai': (('python3', '-m', 'unittest', 'discover', '-s', 'tests/roadmap', '-q'),
              ('python3', 'automation/product-roadmap/verify.py')),
     'cai': (('python3', '-m', 'py_compile', 'operations/product-roadmap/engine.py',
-             'operations/product-roadmap/cli.py', 'operations/product-roadmap/receipts.py')),
+             'operations/product-roadmap/cli.py', 'operations/product-roadmap/receipts.py'),),
 }
 
 def issue_read(result, brand, *, fresh_complete):
