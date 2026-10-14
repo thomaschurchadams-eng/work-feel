@@ -143,22 +143,22 @@
       },
       "assetPackageMemberPath": "site/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
       "preparedPageMemberPath": "site/media/hardship-treatment-decision-card.html",
-      "socialDecision": "not-reserved; existing publisher selects only after due-date production gates and underlying-publication dedup",
+      "socialDecision": "scheduled-2026-10-15-11:30-et-verified-secure-receipt; same-parent promotion consumed",
       "releaseGates": {
         "sourceAndClaims": "October12 story200 unchanged hash352c3de9; current eCFR written-workout-policy baseline/NIST voluntary governance; editorial four-part synthesis, no new directive/performance claim",
         "desktopMobileAndAccessibilityQA": "October13 current-main390/1440 card/home four local and four livecases; axe0, navigation/Escape, no overflow/broken images/errors",
         "dueDate": "passed-2026-10-13",
         "productionIdentityAndPublicURL": "exact-production-READY; public page/image/home byte identity verified"
       },
-      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00",
+      "coordinationRecheckedAt": "2026-10-14T08:38:37-04:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
         "version": 0,
         "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
       },
-      "nextOwner": "daily-publisher",
-      "nextStep": "Re-read current manifest and queue; sole publisher may select this released card for the existing October13 11:30ET slot if still free and parent not promoted. Existing trusted executor only; no additional post or reservation replacement.",
+      "nextOwner": "none",
+      "nextStep": "Existing October15 11:30ET company-page reservation is authoritative. Do not create, replace or reschedule another promotion for this parent.",
       "publishedAt": "2026-10-13T13:01:55.431000+00:00",
       "publicationReceipt": {
         "assetId": "decision-card-2026-10-13",
@@ -216,9 +216,17 @@
           "returnedGroups": 0,
           "scope": "No error/fatal records returned for this exact deployment; not an all-time availability claim"
         },
-        "actualProviderPostId": null,
+        "actualProviderPostId": "6acf6646be984f4200f4db74",
         "publicPostUrl": null,
-        "socialState": "not-reserved; publisher alone owns queue selection and existing executor",
+        "socialState": "scheduled-2026-10-15-11:30-et-verified-secure-receipt",
+        "socialQueueItemId": "linkedin-decision-card-2026-10-13-2026-10-15",
+        "socialScheduledFor": "2026-10-15T11:30:00-04:00",
+        "socialScheduledAt": "2026-10-14T11:23:51.062Z",
+        "socialBufferDueAt": "2026-10-15T15:30:00.000Z",
+        "socialChannelId": "6a53df0880cc80cdcaa76fb8",
+        "socialChannelName": "CreditUnionAI News",
+        "socialDuplicate": false,
+        "socialImageAttached": true,
         "sourceQuality": "Published October7 analysis unchanged; NCUA AppendixB written-workout controls plus NIST voluntary accountability guidance. Four-part layout is editorial synthesis, not new rule, legal-applicability certification or proven AI outcome. No confidential member data or third-party artwork."
       }
     },
