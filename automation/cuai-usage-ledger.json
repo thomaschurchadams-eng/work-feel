@@ -3111,6 +3111,35 @@
       "receiptPath": "automation/reports/cuai-media-coordination-2026-10-14.json",
       "summary": "Read complete103-entry ledger/current manifest/all44reservations/restored daily history. Reused exact selected45.33-second private MP4 with93-word actual-timestamp caption checks; no narration regeneration, actual hearing or presenter spending. Consumed exact publisher decision-card reservationOctober15 11:30ET/post6acf6646be984f4200f4db74; same-parent podcast/video/cartoon cannot add a promotion. Original Fridaycartoon390/1440 axe0 unchanged hash; podcast385word script unchanged, fresh account/cycle/model quote and actual listening/creator upload access held. October1 existing episode preserved. Chart preliminary19impressions/16reach snapshot predates actual seven-day dueOctober14 15:30:29.942Z and doesnot counttoward baseline. Timing remains inactive. No public content release, queue/provider mutation, duplicateanalytics schedule or credentials/permissions/spend change. Original587 and103debits notaddedagain.",
       "usageAttribution": "operational-proxy; zero provider credit consumption"
+    },
+    {
+      "timestamp": "2026-10-14T11:42:19-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Issue #160 reconciliation found five historical blocker events whose authoritative outcomes had already completed or been replaced by newer dated coordination state, but whose original dedupe keys still appeared unresolved.",
+      "status": "recovered-coordination-state",
+      "workUnits": {
+        "agentBusEventsInspected": 105,
+        "staleBlockedDedupeKeysClosed": 4,
+        "staleBlockedDedupeKeysSuperseded": 1,
+        "canonicalLedgerEntriesVerified": 5,
+        "productionDeploymentChecks": 1,
+        "workflowRunsInspected": 1,
+        "liveRoutesChecked": 4,
+        "runtimeErrorChecks": 1,
+        "socialQueueEntriesInspected": 44,
+        "sentStateReconciliationsObserved": 1,
+        "socialSchedulingAttempts": 0,
+        "providerCallsMade": 0,
+        "duplicateReservationsCreated": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News production"
+      ],
+      "summary": "Closed four historical issue-bus blockers after verifying their exact authoritative outcomes in current repository state: the August 31 Operating System recovery usage record, September 7 reliability usage record, September 11 third-party-risk Alert recovery through PR #206, and the September 11 CEO plus reliability ledger appends. Superseded the stale October 8 media handoff because the missed target remains explicitly held with no automatic catch-up while newer October 14 coordination owns any future capability/release work and does not assign Tom by default. Current Production was READY, the latest verified-operations run succeeded, four public routes returned HTTP 200, no recent runtime errors were present, daily-cycle JSON retained 60 history entries, and the 44-item social queue had no duplicate ids, URLs or exact scheduled times. During the check, the October 14 company-page item reconciled to sent exactly once at 11:30:28.971 a.m. ET with its original post ID, image and immutable UTMs; the October 15 reservation remained unique and verified. Reliability Watch made no scheduler/provider call, publication, content, schedule, credential, permission, editorial gate, spend or Cloud-task configuration change.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
