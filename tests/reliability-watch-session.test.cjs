@@ -66,6 +66,23 @@ test('task tool runtime loads only pinned recovery modules and replays closed ke
   assert.equal(result.alreadyClosed,true);assert.equal(closes,0);
 });
 
+test('loaded task modules checkpoint without structuredClone in tool runtime',async()=>{
+  const f=fake(),original=f.args.tools.mcp__codex_apps__github_fetch_file;
+  f.args.tools.mcp__codex_apps__github_fetch_file=async({path:p,ref,...other})=>
+    p.startsWith('automation/recovery/') && p.endsWith('.cjs')
+      ? {structuredContent:{content:fs.readFileSync(path.join(__dirname,'..',p),'utf8')},isError:false}
+      : original({path:p,ref,...other});
+  const prior=global.structuredClone;
+  global.structuredClone=undefined;
+  try {
+    const run=await loadReliabilityWatchSession({tools:f.args.tools,repository:captured.repository,ref:'f'.repeat(40)});
+    let closes=0;const result=await run({...f.args,
+      steps:[{id:'deployment',reconcile:async()=> 'done',verify:async()=>true,run:async()=>{throw Error('should not run')}}],
+      closeBusKey:async()=>{closes++;f.appendCompletion()}});
+    assert.equal(result.status,'completed');assert.equal(closes,1);
+  } finally {global.structuredClone=prior}
+});
+
 test('delayed deployment resumes from saved checkpoint and closes original bus key once',async()=>{
   const f=fake({lostResponse:true});let ready=false,checks=0,writes=0,closes=0;
   const steps=[{id:'deployment',safeToResume:true,reconcile:async()=>ready?'done':'not-done',
