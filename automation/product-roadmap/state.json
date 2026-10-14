@@ -4,7 +4,13 @@
   "items": {
     "cuai-deployment-evidence-v1": {
       "approvalScopes": [],
-      "evidence": {},
+      "evidence": {
+        "cuai-roadmap-handoff-evidence-20261014": {
+          "finding": "bounded pilot handoff proposed; receiving owner acceptance pending",
+          "observedAt": "2026-10-14",
+          "source": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6175417087"
+        }
+      },
       "goalId": null,
       "history": [
         {
@@ -37,6 +43,7 @@
   "schema": 1,
   "seenEvents": {
     "cuai-pilot-intake-20261013": "2efcbba8d005c9ed8e73fd7323bf9b452c35c464fca6c8f60592c305ffbdfb7f",
-    "cuai-pilot-rank-20261013": "bd1aabbfba9adb9b378ba9ac30fa243631c1a5a31422916e4662bc7b2ed4d82c"
+    "cuai-pilot-rank-20261013": "bd1aabbfba9adb9b378ba9ac30fa243631c1a5a31422916e4662bc7b2ed4d82c",
+    "cuai-roadmap-handoff-evidence-20261014": "574d6d313ae487acbb0e947be566a0cdf513e028ead42cc65abdac57303a9307"
   }
 }
