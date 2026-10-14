@@ -3068,6 +3068,7 @@
         "socialQueueEntriesInspected": 44,
         "dailyHistoryEntriesRestored": 60,
         "recoveredSocialHandoffsVerified": 1,
+        "staleMediaHandoffsClosed": 1,
         "durableValidationTestsAdded": 1,
         "workflowFailClosedGuardsAdded": 1,
         "socialSchedulingAttempts": 0,
@@ -3079,7 +3080,7 @@
         "Vercel",
         "CreditUnionAI News production"
       ],
-      "summary": "Current main 371407f retained both October 14 articles and two unique verified company-page reservations, including recovery of the missed October 13 decision-card handoff into the next eligible fixed slot on October 15. The second article write had replaced most of automation/daily-cycle-state.json with a connector truncation warning and shortened history, while verified-operations runs 38555963266 and 38556448832 still concluded success because the production workflow did not parse the durable state before external operations. Recovery restored the complete 60-entry history from the exact last valid commit 3955caf, reapplied only the observed final October 14 outcomes, and added a fail-closed JSON/audit-shape test to pull-request validation and the production operations job. No article, social reservation, UTM, posting time, provider state, schedule, credential, permission or editorial gate was changed.",
+      "summary": "Current main 371407f retained both October 14 articles and two unique verified company-page reservations, including recovery of the missed October 13 decision-card handoff into the next eligible fixed slot on October 15. The second article write had replaced most of automation/daily-cycle-state.json with a connector truncation warning and shortened history, while verified-operations runs 38555963266 and 38556448832 still concluded success because the production workflow did not parse the durable state before external operations. Recovery restored the complete 60-entry history from the exact last valid commit 3955caf, reapplied only the observed final October 14 outcomes, added a fail-closed JSON/audit-shape test to pull-request validation and the production operations job, and reconciled the stale media-manifest handoff to the queue's exact verified October 15 receipt. No article, social reservation, UTM, posting time, provider state, schedule, credential, permission or editorial gate was changed.",
       "usageAttribution": "operational-proxy"
     }
   ]
