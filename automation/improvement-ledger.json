@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T20:38:23.907Z",
+  "updatedAt": "2026-10-14T08:29:49-04:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -294,6 +294,25 @@
         "recommendation": "Audition the modern candidate first for composed build/title/resolution and ducking into voice. A 2–5-second CUAI treatment is only a proposal; user has not selected it and actual structure/timing cannot be certified without listening.",
         "executionRestriction": "Do not use paid previews in production. No purchase, asset download, new audio generation, provider credits, spending or intro selection authorized. Keep all previous cue concepts rejected."
       }
+    },
+    {
+      "id": "daily-cycle-json-preflight-2026-10-14",
+      "evidence": "Commit 0d75deb embedded connector truncation output into automation/daily-cycle-state.json and removed most audit history. Verified-operations runs 38555963266 and 38556448832 still concluded success because the operations job did not parse the canonical daily-cycle state before acting.",
+      "proposedChange": "Restore the complete state from the exact last valid commit, reapply only the verified October 14 outcomes, and make both pull-request validation and the main-branch operations job fail closed unless the daily-cycle state parses and retains the required audit shape.",
+      "expectedBenefit": "Prevent connector-truncated state from being accepted as a successful cycle or reaching bounded external operations, while retaining all existing publication, social, schedule and authority gates.",
+      "risk": "low; the recovery changes operational JSON and validation only, with no content, schedule, credential, provider or permission change",
+      "validation": [
+        "restored state parses as UTF-8 JSON",
+        "all 60 history entries from exact valid commit 3955caf remain unchanged",
+        "October 14 current state retains both verified article outcomes and the verified October 14 and October 15 social receipts",
+        "new targeted state test passes locally",
+        "full repository test suite passes locally",
+        "daily-cycle preservation validator passes against exact valid commit 3955caf"
+      ],
+      "status": "completed",
+      "owner": "Reliability Watch / Daily Publisher",
+      "result": "Canonical audit state restored on the recovery branch and a fail-closed preflight added to the existing verified-operations workflow; final merge, Preview, Production and exact-commit verification are recorded in the reliability recovery event.",
+      "rollback": "Revert the recovery PR only if a later authoritative state proves the restored 60-entry baseline incorrect; do not restore the truncated blob. The workflow guard can be reverted independently without affecting content or social state."
     }
   ]
 }

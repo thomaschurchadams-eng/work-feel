@@ -3052,6 +3052,35 @@
       },
       "summary": "Recorded actualone-request587creditLiam/v3hardship narration debit once:used10928→11515. BothdownloadedMP3variantsbyte/hash/durationverified; Tomselectedfilevariant1(40.829375s), variant2preserved. ProviderGenerationIDscharge587and0; filename-to-IDmappingunknown and retained. ThisisplannedOctober15baselineproduction,notextraexperiment. Original587charactersunchanged; no extra generation/presenter/creditconsume by recorder. Original103correctiondebit remainsalreadyincluded and isnotaddedagain. Privateintro/music/visualassembly and actualfull-video listening/caption-sync acceptance remainpending; no publication/queue/executor action.",
       "usageAttribution": "actualproviderdebitfromexclusiveownerreceipt; coordinatorworkloadoperationalproxy"
+    },
+    {
+      "timestamp": "2026-10-14T08:29:49-04:00",
+      "actor": "reliability-watch",
+      "runType": "reliability-watch",
+      "trigger": "October 14 current-main reconciliation found the daily-cycle audit file corrupted by connector-truncation output even though verified operations reported success.",
+      "status": "recovered-state-and-validation",
+      "workUnits": {
+        "recentArticleCommitsReviewed": 4,
+        "workflowRunsInspected": 2,
+        "workflowArtifactInventoriesInspected": 2,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "socialQueueEntriesInspected": 44,
+        "dailyHistoryEntriesRestored": 60,
+        "recoveredSocialHandoffsVerified": 1,
+        "durableValidationTestsAdded": 1,
+        "workflowFailClosedGuardsAdded": 1,
+        "socialSchedulingAttempts": 0,
+        "providerCallsMade": 0,
+        "duplicateReservationsCreated": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News production"
+      ],
+      "summary": "Current main 371407f retained both October 14 articles and two unique verified company-page reservations, including recovery of the missed October 13 decision-card handoff into the next eligible fixed slot on October 15. The second article write had replaced most of automation/daily-cycle-state.json with a connector truncation warning and shortened history, while verified-operations runs 38555963266 and 38556448832 still concluded success because the production workflow did not parse the durable state before external operations. Recovery restored the complete 60-entry history from the exact last valid commit 3955caf, reapplied only the observed final October 14 outcomes, and added a fail-closed JSON/audit-shape test to pull-request validation and the production operations job. No article, social reservation, UTM, posting time, provider state, schedule, credential, permission or editorial gate was changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
