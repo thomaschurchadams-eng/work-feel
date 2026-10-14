@@ -3,6 +3,43 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "msufcu-ufcu-13-5-billion-combination",
+      "title": "MSUFCU and UFCU Plan $13.5 Billion Combination",
+      "url": "/news/msufcu-ufcu-13-5-billion-combination.html",
+      "publishedAt": "2026-10-14T07:05:00-04:00",
+      "section": "news",
+      "beat": "board-strategy",
+      "functions": [
+        "board-strategy",
+        "operations",
+        "member-service",
+        "it-data-cybersecurity",
+        "hr-training"
+      ],
+      "technologies": [
+        "industry-development",
+        "core-api-cloud"
+      ],
+      "format": "reported-news",
+      "audience": "executive",
+      "primaryAudience": "Board, strategy, operations and integration leaders",
+      "secondaryAudiences": [
+        "technology leaders",
+        "member-experience leaders",
+        "human-resources leaders"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-priority-pending-live-verification",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test does not apply to this non-AI consolidation story. The headline leads with the concrete proposed scale; no performance claim is inferred from the announcement.",
+      "internalLinkTargets": [
+        "/news/sharetec-core-outage-credit-union-failover.html",
+        "/insight-credit-union-ai-product-governance-outcome-gate.html"
+      ],
+      "sourceTier": 1,
+      "score": 91.6
+    },
+    {
       "id": "bank-regulators-agentic-ai-shutdown-controls",
       "title": "Bank Regulators Probe Agentic AI Shutdown Controls",
       "url": "/news/bank-regulators-agentic-ai-shutdown-controls.html",
