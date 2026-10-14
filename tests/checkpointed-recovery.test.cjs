@@ -61,6 +61,17 @@ test('permission denial and ambiguous outcome stop without unchanged approval re
   const g=fixture([{id:'external',reconcile:async()=> 'ambiguous',run:async()=>{throw Error('should not run')},verify:async()=>true}]);
   assert.equal((await recover(g.args)).status,'blocked-ambiguous');
 });
+test('checkpoint never persists a raw external error message',async()=>{
+  const f=fixture([{id:'external',reconcile:async()=> 'not-done',
+    run:async()=>{throw Object.assign(Error('secret-token-xyz'),{mayHaveCommitted:true})},verify:async()=>true}]);
+  assert.equal((await recover(f.args)).status,'blocked-ambiguous');
+  assert.equal(f.get().state.reason,'external:run:blocked-ambiguous');
+  assert.ok(!JSON.stringify(f.get().state).includes('secret-token-xyz'));
+  const g=fixture([{id:'external',reconcile:async()=>{throw Error('private-response-body')},
+    run:async()=>{},verify:async()=>true}]);
+  assert.equal((await recover(g.args)).status,'retryable');
+  assert.ok(!JSON.stringify(g.get().state).includes('private-response-body'));
+});
 test('file adapter serializes simultaneous calls and keeps a durable checkpoint', async () => {
   const directory=await fs.mkdtemp(path.join(os.tmpdir(),'cuai-recovery-'));
   try {

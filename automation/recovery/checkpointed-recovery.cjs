@@ -27,7 +27,7 @@ async function recover({ key, steps, load, save, acquire, isClosed, close, maxAt
     const call = async (fn, reason) => {
       try { return { ok:true, value:await fn() }; }
       catch (error) {
-        state.status=classify(error); state.reason=`${reason}:${error.message}`;
+        state.status=classify(error); state.reason=`${reason}:${state.status}`;
         await save(state); return { ok:false };
       }
     };
@@ -52,7 +52,7 @@ async function recover({ key, steps, load, save, acquire, isClosed, close, maxAt
       state.attempts++;
       state.steps[step.id] = { status: 'started' }; await save(state);
       try { await step.run(); }
-      catch (error) { state.status = classify(error); state.reason = error.message; await save(state); return state; }
+      catch (error) { state.status = classify(error); state.reason = `${step.id}:run:${state.status}`; await save(state); return state; }
       const after=await call(step.reconcile,`${step.id}:post-reconcile`);
       if (!after.ok) return state;
       const postVerified=after.value==='done' ? await call(step.verify,`${step.id}:post-verify`) : {ok:true,value:false};
