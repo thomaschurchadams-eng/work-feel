@@ -1111,16 +1111,13 @@
   };
 
 
-  const getRecentAlerts = (alerts, days = 14) => {
-    const cutoff = new Date();
-    cutoff.setDate(cutoff.getDate() - days);
-
+  const prepareAlerts = (alerts, cutoff = null) => {
     const seenUrls = new Set();
     const seenHeadlines = new Set();
 
     return alerts
       .map((alert) => ({ ...alert, parsedDate: parseAlertDate(alert) }))
-      .filter(({ parsedDate }) => parsedDate && parsedDate.getTime() >= cutoff.getTime())
+      .filter(({ parsedDate }) => parsedDate && (!cutoff || parsedDate.getTime() >= cutoff.getTime()))
       .sort((a, b) => b.parsedDate - a.parsedDate)
       .filter((alert) => {
         const urlKey = alert.sourceUrl?.trim().toLowerCase();
@@ -1136,7 +1133,14 @@
       .map(({ parsedDate, ...rest }) => rest);
   };
 
-  // Keep the archive and ticker on their existing recent window; homepage priority needs a stricter freshness rule.
+  const getRecentAlerts = (alerts, days = 14) => {
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - days);
+    return prepareAlerts(alerts, cutoff);
+  };
+
+  // The archive is searchable in full; ticker and homepage retain their freshness windows.
+  const archiveAlerts = prepareAlerts(alertsData);
   const preparedAlerts = getRecentAlerts(alertsData);
   const homepageAlerts = getRecentAlerts(alertsData, 3);
   const tickerAlerts = preparedAlerts;
@@ -1667,6 +1671,7 @@
 
   const alertsList = document.querySelector('#alerts-list');
   const alertSearch = document.querySelector('#alert-search');
+  const alertRecentOnly = document.querySelector('#alert-recent-only');
   const alertCount = document.querySelector('#alert-count');
   const alertsMore = document.querySelector('#alerts-more');
   const showMoreAlerts = document.querySelector('#show-more-alerts');
@@ -1675,11 +1680,18 @@
   const renderAlerts = () => {
     if (!alertsList) return;
     const query = (alertSearch?.value || '').trim().toLowerCase();
-    const filtered = preparedAlerts.filter((item) => !query || [item.label, item.headline, item.summary, item.impact, item.sourceName].join(' ').toLowerCase().includes(query));
+    const recentOnly = alertRecentOnly?.checked || false;
+    const scope = recentOnly ? getRecentAlerts(archiveAlerts) : archiveAlerts;
+    const filtered = scope.filter((item) => !query || [item.label, item.headline, item.summary, item.impact, item.sourceName].join(' ').toLowerCase().includes(query));
     const visible = filtered.slice(0, alertLimit);
-    if (alertCount) alertCount.textContent = query ? `${filtered.length} matching alerts` : `${filtered.length} recent alerts`;
+    if (alertCount) {
+      const noun = filtered.length === 1 ? 'alert' : 'alerts';
+      const matches = query ? `${filtered.length} matching ${noun}` : `${filtered.length} ${noun}`;
+      const total = !query && !recentOnly ? `${matches} in archive` : `${matches}${recentOnly ? ' in last 14 days' : ''} · ${archiveAlerts.length} in archive`;
+      alertCount.textContent = `${total} · Showing ${visible.length}`;
+    }
     if (!filtered.length) {
-      alertsList.innerHTML = '<article class="card alert-card" aria-live="polite"><div class="alert-content"><h3 class="card-title">No matching alerts.</h3><p>Try a broader topic or vendor name.</p></div></article>';
+      alertsList.innerHTML = `<article class="card alert-card" aria-live="polite"><div class="alert-content"><h3 class="card-title">No matching alerts.</h3><p>${recentOnly ? 'Try turning off Last 14 days to search the full archive, or use a broader topic or vendor name.' : 'Try a broader topic or vendor name.'}</p></div></article>`;
     } else {
       alertsList.innerHTML = visible.map((item) => `
         <article class="card alert-card" id="${item.slug}">
@@ -1691,8 +1703,31 @@
   };
 
   alertSearch?.addEventListener('input', () => { alertLimit = 12; renderAlerts(); });
+  alertRecentOnly?.addEventListener('change', () => { alertLimit = 12; renderAlerts(); });
   showMoreAlerts?.addEventListener('click', () => { alertLimit += 12; renderAlerts(); });
-  renderAlerts();
+
+  const revealLinkedAlert = () => {
+    if (!alertsList) return false;
+    let slug;
+    try { slug = decodeURIComponent(window.location.hash.slice(1)); } catch { return false; }
+    const index = archiveAlerts.findIndex((item) => item.slug === slug);
+    if (index < 0) return false;
+    // A direct alert link takes precedence over a previous search or date filter.
+    if (alertSearch) alertSearch.value = '';
+    if (alertRecentOnly) alertRecentOnly.checked = false;
+    alertLimit = Math.max(12, Math.ceil((index + 1) / 12) * 12);
+    renderAlerts();
+    window.requestAnimationFrame(() => {
+      const target = document.getElementById(slug);
+      if (!target) return;
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({ block: 'start' });
+    });
+    return true;
+  };
+  if (alertsList) window.addEventListener('hashchange', revealLinkedAlert);
+  if (!revealLinkedAlert()) renderAlerts();
 
 
   const addArticleNewsletterCta = () => {
