@@ -1,4 +1,4 @@
-Warning: truncated output (original token count: 72533)
+Warning: truncated output (original token count: 72531)
 Total output lines: 5822
 
 {
@@ -16,7 +16,7 @@ Total output lines: 5822
     "beatsSearchedCount": 12,
     "beatsSearched": ["credit-union-consolidation-and-strategy", "financial-services-workforce-and-compensation", "agentic-ai-security-and-deposit-competition", "voice-security-and-identity", "digital-banking-and-member-guidance", "payments-and-open-banking", "regulatory-and-supervisory-policy", "cybersecurity-resources", "vendor-management-and-investment", "member-service", "marketing-and-consent", "lending-and-product-technology"],
     "publications": [
-      {"type":"article","classification":"News","title":"MSUFCU and UFCU Plan $13.5 Billion Combination","url":"https://creditunionainews.com/news/msufcu-ufcu-13-5-billion-combination.html","primaryFunctionalAudience":"Board, strategy, operations and integration leaders","promotionPriority":"High","socialDecision":"scheduled-2026-10-14-11:30-et-pending-secure-receipt"},
+      {"type":"article","classification":"News","title":"MSUFCU and UFCU Plan $13.5 Billion Combination","url":"https://creditunionainews.com/news/msufcu-ufcu-13-5-billion-combination.html","primaryFunctionalAudience":"Board, strategy, operations and integration leaders","promotionPriority":"High","socialDecision":"scheduled-2026-10-14-11:30-et-verified-secure-receipt"},
       {"type":"article","classification":"News","title":"Financial Firms Start Tying AI Skills to Pay and Promotion","url":"https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html","primaryFunctionalAudience":"Human resources, learning, operations and risk leaders","promotionPriority":"Standard","socialDecision":"not-created-standard-ineligible"}
     ],
     "rejections": [
@@ -31,12 +31,12 @@ Total output lines: 5822
       {"title":"OnePay Goes Live in ChatGPT","reason":"retail-fintech distribution launch without a direct credit-union deployment or source-supported member outcome"},
       {"title":"Consumers Credit Union and Scott Credit Union Plan to Combine","reason":"October 1 announcement outside the current-event window and superseded by the larger, newer MSUFCU-UFCU proposal"}
     ],
-    "status": "two-article-cycle-production-pending",
+    "status": "two-article-cycle-complete",
     "activeExperimentContext": "The first non-AI consolidation headline leads with proposed scale without inferring performance. The second article reflects the October 5 workflow-outcome hook only in presentation: the headline names the pay-and-promotion outcome and the opening separates visible AI use from measured job results. Selection, sourcing and classification were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
-    "recoveredMissedMediaAsset": {"id":"decision-card-2026-10-13","scheduledFor":"2026-10-15T11:30:00-04:00","socialDecision":"reserved-pending-secure-receipt"},
+    "recoveredMissedMediaAsset": {"id":"decision-card-2026-10-13","scheduledFor":"2026-10-15T11:30:00-04:00","socialDecision":"scheduled-verified-secure-receipt"},
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-14T07:25:00-04:00"
+    "updatedAt": "2026-10-14T07:30:00-04:00"
   },
   "history": [
     {
@@ -1172,7 +1172,7 @@ Total output lines: 5822
         },
         {
           "title": "Workers Credit Union Creates AI Leadership Roles",
-          "reason": "a useful organizational signal …32533 tokens truncated…egulation",
+          "reason": "a useful organizational signal without…32531 tokens truncated…egulation",
           "reason": "advocacy position rather than enacted guidance or an operating event, with weaker direct credit-union applicability",
           "primaryAudience": "risk and governance leaders",
           "secondaryAudiences": [
