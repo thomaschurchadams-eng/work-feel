@@ -3,8 +3,12 @@ from engine import digest, next_item
 from orchestrate import run_once
 from persistence import commit
 
+CAI_OPERATING_TASK_ID = "6acfca2f2b2081919b429a3ec852f53a"
 
-def run_bound(store, provider, brand, events):
+
+def run_bound(store, provider, brand, events, *, owner_task_id=None):
+    if brand == "cai" and owner_task_id != CAI_OPERATING_TASK_ID:
+        raise ValueError("CAI requires verified existing Watney operating task identity")
     state, revision = store.read(brand)
     original_hash = digest(state)
     proposed, result = run_once(state, events, provider)
