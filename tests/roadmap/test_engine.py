@@ -12,7 +12,7 @@ from integrations import issue_read, approval_from_issue, deployment_read, qa_ru
 from orchestrate import run_once
 from host_bridge import SnapshotProvider, require_planning_events
 
-NOW = '2026-10-13'
+NOW = datetime.now(timezone.utc).date().isoformat()
 QA = dict(testCommand='python -m unittest', testResult='passed', artifactHash='artifact-A', commitSha='commit-A', sourceVersion='source-A')
 RELEASE = dict(approvalId='approval-1', deploymentId='deployment-X', artifactHash='artifact-A', commitSha='commit-A', sourceVersion='source-A', actionClass='public-release', observedAt=NOW, rollbackOwner='owner', rollbackSteps='revert')
 COMPLETE = dict(verification='observed exact production', observedAt=NOW, artifactHash='artifact-A', commitSha='commit-A', deploymentId='deployment-X', environment='production')
@@ -375,3 +375,107 @@ class IntakeIdentityTest(unittest.TestCase):
         self.assertNotEqual(events[-1]['eventId'],old[-1]['eventId'])
         for event in events: state=apply(state,event)
         self.assertEqual(state['items']['pilot']['stage'],'ranked')
+
+class GithubStateStoreTest(unittest.TestCase):
+    def test_exact_branch_cas_and_lost_response(self):
+        import json
+        from github_store import GithubContentsStateStore
+        from persistence import commit, Conflict
+        current=blank('cuai'); revision='blob-a'; writes=[]
+        def fetch_file(**kw):
+            self.assertEqual(kw['repository_full_name'],'thomaschurchadams-eng/work-feel')
+            self.assertEqual(kw['path'],'automation/product-roadmap/state.json')
+            self.assertEqual(kw['ref'],'draft/roadmap')
+            return dict(content=json.dumps(current),encoding='utf-8',sha=revision,isError=False)
+        def update_file(**kw):
+            nonlocal current,revision
+            self.assertEqual(kw['branch'],'draft/roadmap')
+            if kw['sha'] != revision: return dict(isError=True)
+            current=json.loads(kw['content']);revision='blob-b';writes.append(kw)
+            return dict(content_sha=revision,isError=False)
+        store=GithubContentsStateStore('draft/roadmap',fetch_file,update_file)
+        proposed=apply(current,dict(eventId='new',action='intake',key='pilot',kind='data-asset',title='Pilot'))
+        self.assertEqual(commit(store,'cuai','blob-a',digest(current),proposed),(revision,'committed'))
+        self.assertEqual(commit(store,'cuai','blob-a',digest(blank('cuai')),proposed)[1],'already-committed')
+        self.assertEqual(len(writes),1)
+        with self.assertRaises(Conflict): commit(store,'cuai','blob-a',digest(blank('cuai')),blank('cuai'))
+        self.assertEqual(len(writes),1)
+
+    def test_failed_cas_never_retries_changed_store(self):
+        import json
+        from github_store import GithubContentsStateStore
+        from persistence import commit, Conflict
+        state=blank('cai'); revision='blob-1'; calls=0
+        def fetch_file(**kw): return dict(content=json.dumps(state),encoding='utf-8',sha=revision,isError=False)
+        def update_file(**kw):
+            nonlocal state,revision,calls
+            calls+=1
+            state=apply(state,dict(eventId='other',action='intake',key='other',kind='enhancement',title='Other'))
+            revision='blob-2'
+            return dict(isError=True)
+        store=GithubContentsStateStore('draft/roadmap',fetch_file,update_file)
+        candidate=apply(state,dict(eventId='mine',action='intake',key='mine',kind='enhancement',title='Mine'))
+        with self.assertRaisesRegex(Conflict,'reconcile before retry'):
+            commit(store,'cai','blob-1',digest(state),candidate)
+        self.assertEqual(calls,1)
+
+class BoundRunTest(unittest.TestCase):
+    def test_existing_owner_pass_persists_only_applied_planning_events(self):
+        from run_bound import run_bound
+        class Store:
+            state=blank('cuai');rev='one';writes=0
+            def read(self, brand): return self.state,self.rev
+            def compare_and_swap(self, brand, revision, proposed, proposal_hash):
+                self.state=proposed;self.rev='two';self.writes+=1;return self.rev
+        class Provider:
+            def fetch_issue_comments(self, brand): return {'comments':[]},True
+        store=Store()
+        event=dict(eventId='plan',action='intake',key='pilot',kind='data-asset',title='Pilot')
+        first=run_bound(store,Provider(),'cuai',[event])
+        self.assertEqual(first['writeStatus'],'committed')
+        self.assertEqual(first['next'],'pilot')
+        second=run_bound(store,Provider(),'cuai',[event])
+        self.assertEqual(second['writeStatus'],'already-committed')
+        self.assertEqual(store.writes,1)
+        self.assertEqual(store.state['items']['pilot']['stage'],'idea')
+
+class OutboxDispatchTest(unittest.TestCase):
+    def test_uncertain_post_reconciles_once_without_retry(self):
+        from outbox import dispatch_one
+        state=blank('cuai')
+        state=apply(state,dict(eventId='i',action='intake',key='pilot',kind='data-asset',title='Pilot'))
+        state=apply(state,dict(eventId='r',action='transition',key='pilot',stage='ranked',evidence=dict(source='report',observedAt=NOW,finding='qualified')))
+        owner=state['items']['pilot']['owner']
+        event=dict(eventId='b',action='transition',key='pilot',stage='building',evidence=dict(acceptedHandoff='h',acceptedBy=owner,scope='bounded',sourceVersion='v'))
+        state=apply(state,event,handoff_verifier=lambda _:dict(itemKey='pilot',owner=owner,receiptId='h',actionClass='build',sourceVersion='v',status='accepted',source='issue',sourceVerified=True))
+        class Store:
+            rev=0
+            def __init__(self,s):self.state=s
+            def read(self,brand):return self.state,self.rev
+            def compare_and_swap(self,brand,revision,proposed,hash):
+                self.state=proposed;self.rev+=1;return self.rev
+        class Provider:
+            comments=[]
+            def fetch_issue_comments(self,brand):return {'comments':[dict(id=i,url=f'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-{i}',body=b) for i,b in enumerate(self.comments,1)]},True
+        store=Store(state);provider=Provider();calls=[]
+        def post(brand,body):
+            calls.append(body);provider.comments.append(body)
+            raise TimeoutError('response lost')
+        self.assertEqual(dispatch_one(store,provider,'cuai','b',post),'confirmed')
+        self.assertEqual(dispatch_one(store,provider,'cuai','b',post),'confirmed')
+        self.assertEqual(len(calls),1)
+    def test_uncertain_without_remote_receipt_stays_blocked(self):
+        from outbox import dispatch_one
+        state=blank('cuai')
+        state['outbox']['x']={'destination':'thomaschurchadams-eng/work-feel#160','status':'pending','body':'eventId: x\ndedupeKey: roadmap:cuai:x\nnextOwner: cuai-operating-system'}
+        class Store:
+            rev=0
+            def __init__(self,s):self.state=s
+            def read(self,brand):return self.state,self.rev
+            def compare_and_swap(self,brand,revision,proposed,hash):self.state=proposed;self.rev+=1;return self.rev
+        class Provider:
+            def fetch_issue_comments(self,brand):return {'comments':[]},True
+        store=Store(state);calls=[]
+        self.assertEqual(dispatch_one(store,Provider(),'cuai','x',lambda b,c:calls.append(c)),'uncertain')
+        self.assertEqual(dispatch_one(store,Provider(),'cuai','x',lambda b,c:calls.append(c)),'uncertain')
+        self.assertEqual(len(calls),1)
