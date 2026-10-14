@@ -281,6 +281,6 @@ def reconcile(state, event_id, remote_comments, fresh_complete=False, recovery_r
         entry["status"] = "conflict"
     elif matches and entry["status"] != "conflict":
         entry["status"] = "confirmed"
-    elif entry["status"] not in ("confirmed", "conflict"):
+    elif entry["status"] not in ("confirmed", "conflict", "uncertain"):
         entry["status"] = "pending"
     return state
