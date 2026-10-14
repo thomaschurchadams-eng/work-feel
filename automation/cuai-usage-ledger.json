@@ -3082,6 +3082,35 @@
       ],
       "summary": "Current main 371407f retained both October 14 articles and two unique verified company-page reservations, including recovery of the missed October 13 decision-card handoff into the next eligible fixed slot on October 15. The second article write had replaced most of automation/daily-cycle-state.json with a connector truncation warning and shortened history, while verified-operations runs 38555963266 and 38556448832 still concluded success because the production workflow did not parse the durable state before external operations. Recovery restored the complete 60-entry history from the exact last valid commit 3955caf, reapplied only the observed final October 14 outcomes, added a fail-closed JSON/audit-shape test to pull-request validation and the production operations job, and reconciled the stale media-manifest handoff to the queue's exact verified October 15 receipt. No article, social reservation, UTM, posting time, provider state, schedule, credential, permission or editorial gate was changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-14T12:43:59.320754+00:00",
+      "actor": "cuai-media-coordinator",
+      "runType": "scheduled",
+      "trigger": "Existing authorized October14 media coordination pass; reuse selected private take1 and future original preparation after consuming publisher recovery.",
+      "status": "existing-assets-rechecked; decision-card-handoff-consumed; future-narrated-releases-held",
+      "workUnits": {
+        "mediaPublished": 0,
+        "speechGenerated": 0,
+        "creditsConsumed": 0,
+        "newSocialCalls": 0,
+        "newReservations": 0,
+        "newSchedulesCredentialsPermissions": 0,
+        "actualSoundViewedReferenceVideos": 0,
+        "nodeTestsPassed": 107,
+        "privateCartoonDesktopMobileCases": 2,
+        "sourceURLsRechecked": 4,
+        "existingScheduledMediaHandoffsConsumed": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "ChatGPT Library metadata",
+        "Spotify public catalog",
+        "CreditUnionAI News and public primary source websites"
+      ],
+      "receiptPath": "automation/reports/cuai-media-coordination-2026-10-14.json",
+      "summary": "Read complete103-entry ledger/current manifest/all44reservations/restored daily history. Reused exact selected45.33-second private MP4 with93-word actual-timestamp caption checks; no narration regeneration, actual hearing or presenter spending. Consumed exact publisher decision-card reservationOctober15 11:30ET/post6acf6646be984f4200f4db74; same-parent podcast/video/cartoon cannot add a promotion. Original Fridaycartoon390/1440 axe0 unchanged hash; podcast385word script unchanged, fresh account/cycle/model quote and actual listening/creator upload access held. October1 existing episode preserved. Chart preliminary19impressions/16reach snapshot predates actual seven-day dueOctober14 15:30:29.942Z and doesnot counttoward baseline. Timing remains inactive. No public content release, queue/provider mutation, duplicateanalytics schedule or credentials/permissions/spend change. Original587 and103debits notaddedagain.",
+      "usageAttribution": "operational-proxy; zero provider credit consumption"
     }
   ]
 }

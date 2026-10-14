@@ -103,6 +103,61 @@
         "verifiedAt": "2026-10-08T13:03:17.625632+00:00",
         "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
         "sentEvidence": "Canonical social queue in main07d6d64 plus recovered trusted operations37623147936 attempt2; exact existing ID/channel/trackedURL/image match; no new provider action"
+      },
+      "sevenDayReview": {
+        "dueAt": "2026-10-14T15:30:29.942000+00:00",
+        "status": "not-yet-seven-days-old; current snapshot is preliminary, not a validated baseline",
+        "checkedAt": "2026-10-14T12:43:59.320754+00:00",
+        "samePostId": "6ac62b4f0ea81feae6a7620f",
+        "channelId": "6a53df0880cc80cdcaa76fb8",
+        "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+        "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
+        "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
+        "snapshotGeneratedAt": "2026-10-14T11:25:48.854Z",
+        "metricsUpdatedAt": "2026-10-14T08:21:30.612Z",
+        "metrics": [
+          {
+            "type": "reactions",
+            "name": "Reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "name": "Comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "name": "Eng. Rate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "impressions",
+            "name": "Impressions",
+            "value": 19,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "name": "Reach",
+            "value": 16,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "name": "Shares",
+            "value": 0,
+            "unit": "count"
+          }
+        ],
+        "evidenceRunId": 38556448832,
+        "evidenceArtifactId": 11890372538,
+        "nextOwner": "cuai-media-coordinator",
+        "nextStep": "First existing coordinator pass after actual seven-day due time must consume fresh same-post/channel/UTM metrics at matching age; do not create another analytics job. This early snapshot does not count toward timing baseline.",
+        "inference": "19 impressions/16 reach in this preliminary snapshot are small-sample counts, not evidence of a timing winner. Clicks, retention and GA4 same-age landing-path conversion remain unknown here."
       }
     },
     {
@@ -238,7 +293,7 @@
       "title": "Approved by whom?",
       "preparationStatus": "ready-local-original-fictional-cartoon; source-rights-accessibility-tested-unpublished",
       "preparedAt": "2026-10-12T13:39:33.834078+00:00",
-      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
+      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "publicationNotBefore": "2026-10-16",
       "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
@@ -270,16 +325,16 @@
       },
       "assetPackageMemberPath": "site/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
       "preparedPageMemberPath": "site/media/human-decision-owner-cartoon.html",
-      "socialDecision": "not-reserved; same parent asOctober13card/October15podcast/video; at most one underlying-publication promotion",
+      "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "releaseGates": {
         "dueDate": "hold-until-2026-10-16",
         "sourceAndClaims": "fictional editorial synthesis from verified hardship-reporting/NCUA/NIST sources; not new rule or real-event claim",
-        "desktopMobileAndAccessibilityQA": "October13 unchanged original image/page, current main CSS/JS390/1440 two private cases;axe0/no overflow/broken images/errors; draft retained",
+        "desktopMobileAndAccessibilityQA": "October14 current-main styles/app, unchanged original page/PNG, 390/1440 two private cases; axe0/no overflow/broken images/script errors; navigation/Escape passed; draft retained",
         "productionIdentityAndPublicURL": "not-published"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Retain October16 publication-not-before; coordinator runs source and exact production gates on due date. Same-parent social dedup applies; publisher alone selects, no additional promotion.",
-      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00"
+      "nextStep": "Reuse original verified package; hold website publication until October16 and recheck normal due-date/production gates. No social request: same hardship parent is already reserved.",
+      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00"
     }
   ],
   "planned": [
@@ -420,7 +475,7 @@
       "targetDate": "2026-10-15",
       "status": "planned",
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "unchanged-source-qualified-script; narrated production held for fresh entitlement and permitted hearing/alignment route",
+      "preparationStatus": "unchanged verified 385-word script reused; no accepted full narration; fresh account/cycle/model quote, actual listening and destination upload access held",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -431,7 +486,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
+      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -456,10 +511,10 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator retains production ownership: establish permitted hearing/alignment capability and accepted current-story narration; refresh live billing/balance/model-specific cost against full ledger before any authorized synthesis. Then actual listening, measured duration, final accessible playback and October15 release gates. No unchanged audio/lip-sync retry or silent substitution.",
-      "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
+      "nextStep": "Coordinator retains production ownership. Existing native-Safari provider owner must refresh actual account/cycle and model-specific quote before any bounded baseline synthesis. Preserve385-word/2636-character script and October1 episode; verify actual listening/final playback. Existing Spotify show metadata is verified, but creator upload access is not verified here. Release qualified destinations independently after October15; no second social promotion.",
+      "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
-      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00",
+      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -467,9 +522,9 @@
         "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
       },
       "capacityDependency": {
-        "audioInputStatus": "unsupported; no unchanged retry during this calendar pass",
+        "audioInputStatus": "Direct assistant hearing unavailable here; installed on-device speech recognition can verify words/timestamps, not voice/music performance.",
         "narration": "no accepted current-story audio",
-        "freshProviderEntitlement": "required before synthesis; October12 readonly remaining28753/allowance39681/used10928 is historical, exact monthly reset not exposed",
+        "freshProviderEntitlement": "October13 actual used11515 and derived remaining28166 are historical; no current account-specific monthly reset shown. Refresh account/cycle and full ledger before any future consumption; zero consumption this pass.",
         "creditCeiling": 30000,
         "plannedBaseline": 21306,
         "planningMarginBeforeRevisions": 8694,
@@ -487,7 +542,7 @@
       "distributionMode": "native-video",
       "nativeVideo": null,
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "Tom-selectedtake1privateMP4withlicensedintro/music andactualaudio-word-timedcaptionsverified; fullperceptualreleaseacceptance andmaleanimatedpresenterremainpending",
+      "preparationStatus": "selected take1 private MP4 reused byte-for-byte; actual-word-timed captions verified; perceptual voice/music acceptance held; no animated presenter or paid footage authorized",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -498,7 +553,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
+      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -522,13 +577,13 @@
         "measuredDurationSeconds": 40.829375,
         "actualDebit": 587
       },
-      "measuredDurationSeconds": null,
+      "measuredDurationSeconds": 45.333333333333336,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Review actualprivate Libraryversion1 for overallmusic/voiceperformance; captionwordtiming andsafearea gap isclosedthroughsupportedon-devicechecks. No newnarration,presenter spending,orpublicationbefore existingperceptual/source/rights/due-date/publishergates.",
-      "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
-      "craftLearning": "Private silent A/B preparation remains unaccepted and is not narrated completion. Tom rejected text-card treatment for YouTube; approved still direction uses an original fictional presenter, story imagery and one caption layer. No actual sound-viewed benchmark claim. Six-second natural presenter animation remains blocked: existing account lip-sync route blank, account-specific quote/model terms/entitlement and explicit bounded test approval unavailable. Do not retry unchanged blank route or spend.",
+      "nextStep": "Coordinator retains release ownership. Obtain actual full-cut voice/music/perceptual acceptance through a permitted listening route; reuse Library version1, then verify due-date, transcript, full deployed MP4 hash and production identity. No narration regeneration, presenter spend or second social promotion.",
+      "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
+      "craftLearning": "No actual sound-viewed craft benchmark claimed. Earlier text-card treatment was rejected; current version1 uses original workflow visuals, selected Liam take1 and one caption layer. Native Safari provider task01a136c5-789c-7603-8bc4-d6124fab50ec worked October13; its controller is absent in this executor today. Historical blank-route limitation is not evidence that Safari settings require changes. Male fictional presenter is a format preference; no animated presenter or paid footage authorization.",
       "storyboardMemberPath": "short-video-oct15-storyboard.json",
-      "coordinationRecheckedAt": "2026-10-13T13:06:07.099358+00:00",
+      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -566,12 +621,12 @@
       "capacityDependency": {
         "audioInputStatus": "Directassistantaudioinputunavailable; on-deviceAppleSpeechAnalyzer nowverifiesactualword/timestampalignment without downloads or permissions.",
         "narration": "selected hardship_narration_variant_1.mp3 delivered",
-        "freshProviderEntitlement": "Fresh provider request used10928→11515, one587debit; monthly reset timestamp not exposed; future consumption still fresh-checked",
+        "freshProviderEntitlement": "October13 actual used11515 and derived remaining28166 are historical; no current account-specific monthly reset shown. Refresh account/cycle and full ledger before any future consumption; zero consumption this pass.",
         "creditCeiling": 30000,
         "plannedBaseline": 21306,
         "planningMarginBeforeRevisions": 8694,
         "creditsUsedThisPass": 0,
-        "finalListeningAlignmentPlayback": "required and not certified",
+        "finalListeningAlignmentPlayback": "Actual word/caption timing and technical playback verified in existing receipt; overall voice/music/perceptual acceptance remains unverified. No claim of hearing from unmuted playback.",
         "nextOwner": "cuai-media-coordinator",
         "spotifyUploadAuthority": null
       },
@@ -1309,5 +1364,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-13.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-14.json"
 }
