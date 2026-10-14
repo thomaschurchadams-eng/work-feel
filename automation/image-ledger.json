@@ -3,6 +3,67 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "financial-firms-ai-skills-pay-promotion",
+      "articleUrl": "/news/financial-firms-ai-skills-pay-promotion.html",
+      "imagePath": "/assets/financial-firms-ai-skills-pay-promotion.jpg",
+      "publishedAt": "2026-10-14T07:25:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut",
+      "subject": "people-and-teams",
+      "composition": "diagonal-flow",
+      "perspective": "overhead",
+      "palette": "graphite-electric-yellow-coral",
+      "lighting": "graphic-soft-shadow",
+      "texture": "layered-paper-and-cork",
+      "scene": "employee-development-path-connects-training-human-review-measured-results-and-a-compensation-decision-checkpoint",
+      "conceptScore": 98.6,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "6d6eb42c5e00ecc44ad59cbfb8fc2a620e74c794a98e17b11044d64f02e47df0",
+      "conceptAlternatives": [
+        {"medium": "editorial-collage", "subject": "ai-skills-and-compensation", "score": 91.6},
+        {"medium": "architectural-isometric", "subject": "workforce-learning-controls", "score": 90.8}
+      ]
+    },
+    {
+      "id": "msufcu-ufcu-13-5-billion-combination",
+      "articleUrl": "/news/msufcu-ufcu-13-5-billion-combination.html",
+      "imagePath": "/assets/msufcu-ufcu-13-5-billion-combination.jpg",
+      "publishedAt": "2026-10-14T07:05:00-04:00",
+      "medium": "editorial-photography",
+      "subject": "architecture-and-infrastructure",
+      "composition": "split-comparison",
+      "perspective": "through-glass",
+      "palette": "terracotta-sky",
+      "lighting": "natural-window-light",
+      "texture": "fabric-and-wood",
+      "scene": "two-campus-rooted-member-service-paths-converge-on-a-shared-central-operating-structure-while-distinct-brand-channels-remain-visible",
+      "conceptScore": 98.8
+    },
+    {
+      "id": "bank-regulators-agentic-ai-shutdown-controls",
+      "articleUrl": "/news/bank-regulators-agentic-ai-shutdown-controls.html",
+      "imagePath": "/assets/bank-regulators-agentic-ai-shutdown-controls.jpg",
+      "publishedAt": "2026-10-13T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "handcrafted-macro-still-life",
+      "subject": "agentic-ai-control-and-recovery",
+      "composition": "asymmetric-control-gate",
+      "perspective": "wide-eye-level",
+      "palette": "midnight-navy-copper-ivory-cyan",
+      "lighting": "controlled-side-light",
+      "texture": "deckled-paper-brushed-metal-translucent-resin",
+      "scene": "autonomous-decision-path-approaches-manual-authorization-gate-audit-markers-and-shutdown-lever-with-recovery-routes",
+      "conceptScore": 98.4,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "283753d131485520da3ab6d98ed8774f212b9bd35af15a882181b97fe28ad0d9",
+      "conceptAlternatives": [
+        {"medium": "architectural-isometric", "subject": "agent-authority-and-recovery", "score": 91.2},
+        {"medium": "editorial-collage", "subject": "ai-audit-and-shutdown-controls", "score": 90.4}
+      ]
+    },
+    {
       "id": "noffcu-duome-shared-equity-homeownership",
       "articleUrl": "/news/noffcu-duome-shared-equity-homeownership.html",
       "imagePath": "/assets/noffcu-duome-shared-equity-homeownership.jpg",

@@ -1753,6 +1753,12 @@ a:hover {
   border-radius: 0;
 }
 
+.alerts-archive-note { margin: 0 0 18px; }
+.alerts-filter { display:flex; align-items:center; gap:8px; min-height:44px; cursor:pointer; }
+.alerts-filter input { width:20px; height:20px; margin:0; accent-color:var(--navy); }
+.page-alerts-index .alert-date { font-weight:700; }
+.page-alerts-index .alert-card { scroll-margin-top:120px; }
+
 .page-alerts-index #alerts-list > .alert-card:first-child {
   background: var(--navy-deep);
   border: 0;

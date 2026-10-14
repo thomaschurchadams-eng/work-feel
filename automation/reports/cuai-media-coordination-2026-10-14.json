@@ -1,0 +1,242 @@
+{
+  "date": "2026-10-14",
+  "timeZone": "America/New_York",
+  "checkedAt": "2026-10-14T12:43:59.320754+00:00",
+  "owner": "cuai-media-coordinator",
+  "baseMainSha": "3897fc04329bdbe9433dadc813d78cddf475bc86",
+  "status": "existing-assets-rechecked; decision-card-handoff-consumed; future-narrated-releases-held",
+  "recordsFullyRead": [
+    "current coordinator task and media policy",
+    "complete media manifest",
+    "full103-entry credit ledger",
+    "all44social reservations",
+    "restored complete daily cycle/history and coverage ledger",
+    "source registry/editorial-routing/voice and publishing rules",
+    "all existing hardship narration/caption rights/selection receipts",
+    "existing issue160 publisher/reliability handoffs"
+  ],
+  "outcomes": {
+    "decisionCard": {
+      "state": "website remains published; existing publisher scheduled October15 11:30ET; not sent",
+      "assetId": "decision-card-2026-10-13",
+      "postId": "6acf6646be984f4200f4db74",
+      "publicPostUrl": null,
+      "queueWrittenByThisPass": false
+    },
+    "shortVideo": {
+      "state": "reused private version1; not published",
+      "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+      "fileId": "file_00000000f0c48209ad74f941baa11391",
+      "version": 1,
+      "sha256": "189dec49aae160e22d0cb56487ec6dafe2c1eb71c9bce12ccde1c749ce9ccc06",
+      "bytes": 10047049,
+      "durationSeconds": 45.333333333333336,
+      "scriptWords": 93,
+      "actualTimestampCaptionVerification": "Existing final-AAC word timestamps/93-word match/16cue OCR and safe-area evidence retained",
+      "actualListening": false,
+      "animatedPresenter": false,
+      "releaseBlocker": "overall voice/music/perceptual acceptance; due date and deployed canonical transcript/native file/identity checks remain",
+      "speechRegenerated": false
+    },
+    "podcast": {
+      "state": "385word script unchanged; no accepted full narration",
+      "sha256": "3bcdbdc39e242fc5278ffd50d2a2aeef6ad256eafb2d5e399ddb30d9700703b9",
+      "characters": 2636,
+      "sourceQualified": true,
+      "freshAccountQuote": false,
+      "spotifyShowIdentity": "CreditUnionAI News /75lxapwEB5R0cILl84bJMg catalog verified",
+      "spotifyCreatorUploadAuthority": false,
+      "nextOwner": "cuai-media-coordinator with existing native-Safari provider owner"
+    },
+    "cartoon": {
+      "state": "original ready preparation retained; unpublished until October16",
+      "assetId": "cartoon-2026-10-16",
+      "sha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
+      "browserQA": [
+        {
+          "width": 390,
+          "http": 200,
+          "h1": 1,
+          "overflow": false,
+          "brokenImages": 0,
+          "draft": true,
+          "alt": "Original fictional editorial cartoon: a colleague points to an AI recommendation marked Approved while its human-owner field is blank and the chair labeled Decision Owner is empty. Invented dialogue: Approved by whom?",
+          "errors": [],
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "http": 200,
+          "h1": 1,
+          "overflow": false,
+          "brokenImages": 0,
+          "draft": true,
+          "alt": "Original fictional editorial cartoon: a colleague points to an AI recommendation marked Approved while its human-owner field is blank and the chair labeled Decision Owner is empty. Invented dialogue: Approved by whom?",
+          "errors": [],
+          "violations": []
+        }
+      ],
+      "socialRequest": false
+    },
+    "october1Podcast": "Existing website episode remains200; no recreation",
+    "october8Short": "Held original/correction unchanged; no automatic catch-up",
+    "october20Chart": {
+      "state": "planned; no qualified new numerical chart prepared in this bounded pass",
+      "candidate": "Existing October14 finance AI-skills survey article",
+      "evidenceGap": "Reuters primary reporting page unavailable to current browser fetch; no survey questionnaire/response-rate data verified here. No numbers manufactured or public draft released."
+    }
+  },
+  "sourceQuality": {
+    "articleSha256": "352c3de966f9c46effa73688b911b98a6626cd6c5ff45e5aa7a772e593f18a2e",
+    "sourcesRechecked": [
+      "https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html",
+      "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/appendix-Appendix%20B%20to%20Part%20741",
+      "https://airc.nist.gov/airmf-resources/playbook/govern/",
+      "https://www.nist.gov/itl/ai-risk-management-framework"
+    ],
+    "limitation": "Four-part layout is editorial control synthesis, not a new NCUA rule, legal-applicability certification or proven AI outcome; NIST guidance voluntary. Sources unchanged and public."
+  },
+  "publicChecks": [
+    {
+      "url": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+      "http": 200,
+      "bytes": 7442,
+      "sha256": "df306248a0534837e79e903e6d396b2740cc0565d8eba8d23255b2ccd365af28"
+    },
+    {
+      "url": "https://creditunionainews.com/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
+      "http": 200,
+      "bytes": 79845,
+      "sha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f"
+    },
+    {
+      "url": "https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html",
+      "http": 200,
+      "bytes": 17896,
+      "sha256": "352c3de966f9c46effa73688b911b98a6626cd6c5ff45e5aa7a772e593f18a2e"
+    },
+    {
+      "url": "https://creditunionainews.com/episodes/when-ai-becomes-the-members-front-door.html",
+      "http": 200,
+      "bytes": 14522,
+      "sha256": "ef68c34015b06d0d80cfe3a6cc0b9bdc4227366549de1704c437e5ebaf4f372b"
+    },
+    {
+      "url": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
+      "http": 404
+    },
+    {
+      "url": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
+      "http": 404
+    }
+  ],
+  "budget": {
+    "creditsConsumedThisPass": 0,
+    "generateClicksThisPass": 0,
+    "historicalOctober13Used": 11515,
+    "historicalAllowanceIncludingRollover": 39681,
+    "historicalRemainingDerived": 28166,
+    "recurringMonthlyCeiling": 30000,
+    "plannedMonthlyBaseline": 21306,
+    "actual587DebitAlreadyRecordedOnce": true,
+    "actual103CorrectionNotReadded": true,
+    "freshAccountCycleBeforeFurtherConsumption": true,
+    "currentMonthlyResetTimestamp": "unknown",
+    "nativeControllerAvailableHere": false,
+    "workingExistingProviderOwnerThread": "01a136c5-789c-7603-8bc4-d6124fab50ec",
+    "noSettingsChanges": true
+  },
+  "reviews": {
+    "publishedVideoCount": 0,
+    "videoAfterPublicationCraftAndPlayback": "not due: no verified published short-video; no fabricated hearing/reference viewing",
+    "chartSevenDay": {
+      "dueAt": "2026-10-14T15:30:29.942000+00:00",
+      "status": "not-yet-seven-days-old; current snapshot is preliminary, not a validated baseline",
+      "checkedAt": "2026-10-14T12:43:59.320754+00:00",
+      "samePostId": "6ac62b4f0ea81feae6a7620f",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+      "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
+      "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
+      "snapshotGeneratedAt": "2026-10-14T11:25:48.854Z",
+      "metricsUpdatedAt": "2026-10-14T08:21:30.612Z",
+      "metrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count"
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count"
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage"
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 19,
+          "unit": "count"
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 16,
+          "unit": "count"
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count"
+        }
+      ],
+      "evidenceRunId": 38556448832,
+      "evidenceArtifactId": 11890372538,
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "First existing coordinator pass after actual seven-day due time must consume fresh same-post/channel/UTM metrics at matching age; do not create another analytics job. This early snapshot does not count toward timing baseline.",
+      "inference": "19 impressions/16 reach in this preliminary snapshot are small-sample counts, not evidence of a timing winner. Clicks, retention and GA4 same-age landing-path conversion remain unknown here."
+    },
+    "timingExperimentStatus": "inactive; zero validated comparable seven-day observations; retain current midday slots",
+    "newAnalyticsJobs": 0
+  },
+  "validation": {
+    "nodeTestsPassed": 107,
+    "nodeTestsFailed": 0,
+    "cartoonBrowserCases": 2,
+    "axeViolations": 0,
+    "immutableAssetHashes": "selected MP4/podcast draft/cartoon PNG exact",
+    "futurePublicDestinations": "expected404 before approved not-before dates"
+  },
+  "preservation": {
+    "priorLedgerEntries": 103,
+    "socialQueueItems": 44,
+    "queueChanged": false,
+    "dailyCycleChanged": false,
+    "coverageChanged": false,
+    "mediaPolicyChanged": false,
+    "articleFilesChanged": false,
+    "priorNarrationReceiptChanged": false
+  },
+  "workUnits": {
+    "mediaPublished": 0,
+    "speechGenerated": 0,
+    "creditsConsumed": 0,
+    "newSocialCalls": 0,
+    "newReservations": 0,
+    "newSchedulesCredentialsPermissions": 0,
+    "actualSoundViewedReferenceVideos": 0
+  },
+  "nextOwner": "existing cuai-media-coordinator; publisher retains scheduled social receipt/executor; native provider owner refreshes entitlement only before further consumption",
+  "concurrentStatePreserved": {
+    "commit": "3897fc04329bdbe9433dadc813d78cddf475bc86",
+    "description": "Parent reliability closed recovered card handoff while preparation ran; entire latest card asset/publication receipt and prior103ledger entries preserved. Coordinator consumes completed recovery, does not reopen its owner or rewrite its social receipt."
+  }
+}

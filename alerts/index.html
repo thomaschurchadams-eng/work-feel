@@ -44,7 +44,13 @@
       <section class="section">
         <div class="container">
           <div class="section-header"><div><p class="eyebrow">AI Newsroom</p><h1 class="page-title">AI Newsroom Alerts</h1><p class="lead">Fast, source-linked developments with practical implications for credit-union leaders.</p></div></div>
-          <div class="alerts-toolbar"><div class="alerts-search"><label for="alert-search">Search recent alerts</label><input id="alert-search" type="search" placeholder="Search topic, company or vendor"></div><div id="alert-count" class="alert-count" aria-live="polite"></div></div><div class="grid cards-3" id="alerts-list"></div><div id="alerts-more" class="alerts-more"><button type="button" id="show-more-alerts" class="btn btn-primary">Show more alerts</button></div>
+          <p class="alerts-archive-note">Search the full alert archive, newest first. Dates show when each alert was published; older developments may have changed.</p>
+          <div class="alerts-toolbar">
+            <div class="alerts-search"><label for="alert-search">Search all alerts</label><input id="alert-search" type="search" placeholder="Search topic, company or vendor" aria-controls="alerts-list"></div>
+            <label class="alerts-filter" for="alert-recent-only"><input id="alert-recent-only" type="checkbox" aria-controls="alerts-list"> Last 14 days</label>
+            <div id="alert-count" class="alert-count" role="status" aria-live="polite"></div>
+          </div>
+          <div class="grid cards-3" id="alerts-list"></div><div id="alerts-more" class="alerts-more"><button type="button" id="show-more-alerts" class="btn btn-primary" aria-controls="alerts-list">Show more alerts</button></div>
         </div>
       </section>
     </main>

@@ -103,15 +103,70 @@
         "verifiedAt": "2026-10-08T13:03:17.625632+00:00",
         "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
         "sentEvidence": "Canonical social queue in main07d6d64 plus recovered trusted operations37623147936 attempt2; exact existing ID/channel/trackedURL/image match; no new provider action"
+      },
+      "sevenDayReview": {
+        "dueAt": "2026-10-14T15:30:29.942000+00:00",
+        "status": "not-yet-seven-days-old; current snapshot is preliminary, not a validated baseline",
+        "checkedAt": "2026-10-14T12:43:59.320754+00:00",
+        "samePostId": "6ac62b4f0ea81feae6a7620f",
+        "channelId": "6a53df0880cc80cdcaa76fb8",
+        "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+        "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
+        "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
+        "snapshotGeneratedAt": "2026-10-14T11:25:48.854Z",
+        "metricsUpdatedAt": "2026-10-14T08:21:30.612Z",
+        "metrics": [
+          {
+            "type": "reactions",
+            "name": "Reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "name": "Comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "name": "Eng. Rate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "impressions",
+            "name": "Impressions",
+            "value": 19,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "name": "Reach",
+            "value": 16,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "name": "Shares",
+            "value": 0,
+            "unit": "count"
+          }
+        ],
+        "evidenceRunId": 38556448832,
+        "evidenceArtifactId": 11890372538,
+        "nextOwner": "cuai-media-coordinator",
+        "nextStep": "First existing coordinator pass after actual seven-day due time must consume fresh same-post/channel/UTM metrics at matching age; do not create another analytics job. This early snapshot does not count toward timing baseline.",
+        "inference": "19 impressions/16 reach in this preliminary snapshot are small-sample counts, not evidence of a timing winner. Clicks, retention and GA4 same-age landing-path conversion remain unknown here."
       }
     },
     {
       "id": "decision-card-2026-10-13",
       "format": "decision-card",
       "targetDate": "2026-10-13",
-      "status": "ready",
+      "status": "published",
       "title": "Before AI Recommends Hardship Treatment, Connect Four Parts of the Decision",
-      "preparationStatus": "ready-local-source-rights-accessibility-tested; unpublished until due-date production gates",
+      "preparationStatus": "published-verified-independent-website-decision-card",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
@@ -122,11 +177,11 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-13T13:06:07.099358+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": true,
-      "productionVerified": false,
+      "productionVerified": true,
       "publicationNotBefore": "2026-10-13",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
       "assetSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
@@ -143,22 +198,92 @@
       },
       "assetPackageMemberPath": "site/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
       "preparedPageMemberPath": "site/media/hardship-treatment-decision-card.html",
-      "socialDecision": "not-reserved; existing publisher selects only after due-date production gates and underlying-publication dedup",
+      "socialDecision": "scheduled-2026-10-15-11:30-et-verified-secure-receipt; same-parent promotion consumed",
       "releaseGates": {
         "sourceAndClaims": "October12 story200 unchanged hash352c3de9; current eCFR written-workout-policy baseline/NIST voluntary governance; editorial four-part synthesis, no new directive/performance claim",
-        "desktopMobileAndAccessibilityQA": "October12 current-main shell/CSS/JS390/1440, image/alt/text alternative/navigation/Escape;axe0, no overflow/errors",
-        "dueDate": "hold-until-2026-10-13",
-        "productionIdentityAndPublicURL": "not-published"
+        "desktopMobileAndAccessibilityQA": "October13 current-main390/1440 card/home four local and four livecases; axe0, navigation/Escape, no overflow/broken images/errors",
+        "dueDate": "passed-2026-10-13",
+        "productionIdentityAndPublicURL": "exact-production-READY; public page/image/home byte identity verified"
       },
-      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "coordinationRecheckedAt": "2026-10-14T08:38:37-04:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
         "version": 0,
         "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
       },
-      "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Run independent due-date website release/source gates onOctober13; publisher alone selects/promotes any same-parent reservation after production verification."
+      "nextOwner": "none",
+      "nextStep": "Existing October15 11:30ET company-page reservation is authoritative. Do not create, replace or reschedule another promotion for this parent.",
+      "publishedAt": "2026-10-13T13:01:55.431000+00:00",
+      "publicationReceipt": {
+        "assetId": "decision-card-2026-10-13",
+        "assetSha256": "42088b2b12e31f98cf8d20ff3290c91d1267ada2aae9612029c7f43599b14d6f",
+        "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+        "publishedAt": "2026-10-13T13:01:55.431000+00:00",
+        "verifiedAt": "2026-10-13T13:06:07.099358+00:00",
+        "productionCommitSha": "e00505ac0df983df7b8a2d802eac35383bbdb0f5",
+        "deploymentId": "dpl_2CjjBRMNA1dKguWR55HGbQNVHwL2",
+        "deploymentTarget": "production",
+        "deploymentState": "READY",
+        "productionAlias": "creditunionainews.com",
+        "workflowRunId": 38401722842,
+        "workflowConclusion": "success",
+        "receiptArtifactId": 11815926092,
+        "receiptArtifactSha256": "1c2cbee6eec4611947f6f237f0681d877830d53d8a4a9fdaa4012e69332cf774",
+        "publicPageSha256": "df306248a0534837e79e903e6d396b2740cc0565d8eba8d23255b2ccd365af28",
+        "publicByteMatches": [
+          "card HTML",
+          "card PNG",
+          "homepage",
+          "sitemap",
+          "lending topic return path",
+          "previous chart archive"
+        ],
+        "sourceVerified": true,
+        "rightsVerified": true,
+        "accessibilityVerified": true,
+        "browserQA": {
+          "viewports": [
+            390,
+            1440
+          ],
+          "routes": [
+            "card",
+            "home"
+          ],
+          "cases": 4,
+          "axeViolations": 0,
+          "overflow": false,
+          "brokenImages": 0,
+          "scriptErrors": 0,
+          "mobileNavigationEscape": "passed"
+        },
+        "tests": {
+          "nodePassed": 106,
+          "renderedSitePassed": 40,
+          "canonicalShellStale": 0,
+          "topicHubs": 13,
+          "localCardHomeCases": 4
+        },
+        "runtimeErrorFatalScan": {
+          "window": "30m",
+          "deploymentId": "dpl_2CjjBRMNA1dKguWR55HGbQNVHwL2",
+          "returnedGroups": 0,
+          "scope": "No error/fatal records returned for this exact deployment; not an all-time availability claim"
+        },
+        "actualProviderPostId": "6acf6646be984f4200f4db74",
+        "publicPostUrl": null,
+        "socialState": "scheduled-2026-10-15-11:30-et-verified-secure-receipt",
+        "socialQueueItemId": "linkedin-decision-card-2026-10-13-2026-10-15",
+        "socialScheduledFor": "2026-10-15T11:30:00-04:00",
+        "socialScheduledAt": "2026-10-14T11:23:51.062Z",
+        "socialBufferDueAt": "2026-10-15T15:30:00.000Z",
+        "socialChannelId": "6a53df0880cc80cdcaa76fb8",
+        "socialChannelName": "CreditUnionAI News",
+        "socialDuplicate": false,
+        "socialImageAttached": true,
+        "sourceQuality": "Published October7 analysis unchanged; NCUA AppendixB written-workout controls plus NIST voluntary accountability guidance. Four-part layout is editorial synthesis, not new rule, legal-applicability certification or proven AI outcome. No confidential member data or third-party artwork."
+      }
     },
     {
       "id": "cartoon-2026-10-16",
@@ -168,7 +293,7 @@
       "title": "Approved by whom?",
       "preparationStatus": "ready-local-original-fictional-cartoon; source-rights-accessibility-tested-unpublished",
       "preparedAt": "2026-10-12T13:39:33.834078+00:00",
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "publicationNotBefore": "2026-10-16",
       "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
@@ -200,15 +325,16 @@
       },
       "assetPackageMemberPath": "site/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
       "preparedPageMemberPath": "site/media/human-decision-owner-cartoon.html",
-      "socialDecision": "not-reserved; same parent asOctober13card/October15podcast/video; at most one underlying-publication promotion",
+      "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "releaseGates": {
         "dueDate": "hold-until-2026-10-16",
         "sourceAndClaims": "fictional editorial synthesis from verified hardship-reporting/NCUA/NIST sources; not new rule or real-event claim",
-        "desktopMobileAndAccessibilityQA": "October12 four visualpage cases total390/1440;Fridaypage2cases axe0, no overflow/broken images/script errors;navigation/Escape",
+        "desktopMobileAndAccessibilityQA": "October14 current-main styles/app, unchanged original page/PNG, 390/1440 two private cases; axe0/no overflow/broken images/script errors; navigation/Escape passed; draft retained",
         "productionIdentityAndPublicURL": "not-published"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Independent due-date website release gates; preserve original PNG identity and underlying-publication social dedup."
+      "nextStep": "Reuse original verified package; hold website publication until October16 and recheck normal due-date/production gates. No social request: same hardship parent is already reserved.",
+      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00"
     }
   ],
   "planned": [
@@ -349,7 +475,7 @@
       "targetDate": "2026-10-15",
       "status": "planned",
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "unchanged-source-qualified-script; narrated production held for fresh entitlement and permitted hearing/alignment route",
+      "preparationStatus": "unchanged verified 385-word script reused; no accepted full narration; fresh account/cycle/model quote, actual listening and destination upload access held",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -360,7 +486,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -385,15 +511,27 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator verifies actual live billing/balance/model budget and available hearing/alignment capability before new synthesis; then actual listening, measured duration, final accessibility/playback and due-date release gates. No generation during this pass.",
-      "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
+      "nextStep": "Coordinator retains production ownership. Existing native-Safari provider owner must refresh actual account/cycle and model-specific quote before any bounded baseline synthesis. Preserve385-word/2636-character script and October1 episode; verify actual listening/final playback. Existing Spotify show metadata is verified, but creator upload access is not verified here. Release qualified destinations independently after October15; no second social promotion.",
+      "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
-      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
         "version": 0,
         "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
+      },
+      "capacityDependency": {
+        "audioInputStatus": "Direct assistant hearing unavailable here; installed on-device speech recognition can verify words/timestamps, not voice/music performance.",
+        "narration": "no accepted current-story audio",
+        "freshProviderEntitlement": "October13 actual used11515 and derived remaining28166 are historical; no current account-specific monthly reset shown. Refresh account/cycle and full ledger before any future consumption; zero consumption this pass.",
+        "creditCeiling": 30000,
+        "plannedBaseline": 21306,
+        "planningMarginBeforeRevisions": 8694,
+        "creditsUsedThisPass": 0,
+        "finalListeningAlignmentPlayback": "required and not certified",
+        "nextOwner": "cuai-media-coordinator",
+        "spotifyUploadAuthority": "public show identity is not upload authority; no authenticated existing-show upload access verified"
       }
     },
     {
@@ -404,7 +542,7 @@
       "distributionMode": "native-video",
       "nativeVideo": null,
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
-      "preparationStatus": "unchanged-source-qualified-script; narrated production held for fresh entitlement and permitted hearing/alignment route",
+      "preparationStatus": "selected take1 private MP4 reused byte-for-byte; actual-word-timed captions verified; perceptual voice/music acceptance held; no animated presenter or paid footage authorized",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
       "canonicalUrl": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
@@ -415,7 +553,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -432,19 +570,20 @@
         "assetId": "short-video-2026-10-15",
         "characters": 587,
         "words": 93,
-        "creditEstimate": null,
-        "estimateLimitation": "voice/model not yet confirmed against live authorized provider; character count is workload evidence, not guaranteed model-specific price",
+        "creditEstimate": 587,
+        "estimateLimitation": "Publishedv3website1credit/character and live stagedLiam withoutmultiplierwarning; actualsingle-request587debit now verified from provider history.",
         "retryBudget": 0,
         "fullNarrationRegeneration": false,
-        "measuredDurationSeconds": null
+        "measuredDurationSeconds": 40.829375,
+        "actualDebit": 587
       },
-      "measuredDurationSeconds": null,
+      "measuredDurationSeconds": 45.333333333333336,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator verifies actual live billing/balance/model budget and available hearing/alignment capability before new synthesis; then actual listening, measured duration, final accessibility/playback and due-date release gates. No generation during this pass.",
-      "socialDecision": "not-reserved; podcast/video/card share parent, at most one eligible underlying-publication promotion by sole publisher",
-      "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
+      "nextStep": "Coordinator retains release ownership. Obtain actual full-cut voice/music/perceptual acceptance through a permitted listening route; reuse Library version1, then verify due-date, transcript, full deployed MP4 hash and production identity. No narration regeneration, presenter spend or second social promotion.",
+      "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
+      "craftLearning": "No actual sound-viewed craft benchmark claimed. Earlier text-card treatment was rejected; current version1 uses original workflow visuals, selected Liam take1 and one caption layer. Native Safari provider task01a136c5-789c-7603-8bc4-d6124fab50ec worked October13; its controller is absent in this executor today. Historical blank-route limitation is not evidence that Safari settings require changes. Male fictional presenter is a format preference; no animated presenter or paid footage authorization.",
       "storyboardMemberPath": "short-video-oct15-storyboard.json",
-      "coordinationRecheckedAt": "2026-10-12T13:39:33.834078+00:00",
+      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -478,6 +617,704 @@
         "productionVerified": false,
         "nativeVideo": null,
         "draftTooling": "PR259 tested locally only; remains draft/unmerged, no active production integration"
+      },
+      "capacityDependency": {
+        "audioInputStatus": "Directassistantaudioinputunavailable; on-deviceAppleSpeechAnalyzer nowverifiesactualword/timestampalignment without downloads or permissions.",
+        "narration": "selected hardship_narration_variant_1.mp3 delivered",
+        "freshProviderEntitlement": "October13 actual used11515 and derived remaining28166 are historical; no current account-specific monthly reset shown. Refresh account/cycle and full ledger before any future consumption; zero consumption this pass.",
+        "creditCeiling": 30000,
+        "plannedBaseline": 21306,
+        "planningMarginBeforeRevisions": 8694,
+        "creditsUsedThisPass": 0,
+        "finalListeningAlignmentPlayback": "Actual word/caption timing and technical playback verified in existing receipt; overall voice/music/perceptual acceptance remains unverified. No claim of hearing from unmuted playback.",
+        "nextOwner": "cuai-media-coordinator",
+        "spotifyUploadAuthority": null
+      },
+      "pictureLedPreparation": {
+        "originalPresenterStillLibraryFileId": "libfile_72cd3a093a3c8191b991463bc59e912f",
+        "originalPresenterStillSha256": "68a163680294fd25a7f4ca1c99b3b8740e73b2e2778030fae8516dbadda68341",
+        "status": "still concept only, not animated presenter or release-ready video",
+        "privateCutBLibraryFileId": "libfile_37a85c46da4c81919d748af8ff2f967e",
+        "privateCutBSha256": "9817b8ebbefeb38a9b81c7fd80f17281d680ca770c139a738d5ea41586728da1",
+        "privateCutBStatus": "silent visual comparison only; not substitute for accepted narration/professional final cut",
+        "presenterAnimation": "blocked-account-readable-quote-terms-and-specific-test-approval; no retry or spend",
+        "benchmarkUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0&list=YS",
+        "benchmarkScope": "Earlier visual-only observation; audio not heard, production vendor/identity unknown; no new viewing claim."
+      },
+      "narrationArtifacts": {
+        "id": "oct15-hardship-narration-single-request-2026-10-13",
+        "source": "Verified original local hardship_narration_manifest.md from existing exclusive native-CUA provider; bothfiles byte/hash/afinfo verified by coordinator",
+        "generatedAt": "2026-10-13T19:46:00Z",
+        "generationTimePrecision": "provider reports about19:46UTC, not exact second",
+        "receivedAt": "2026-10-13T19:57:38.252881+00:00",
+        "scriptCharacters": 587,
+        "scriptWords": 93,
+        "exactScriptSha256": "9d1aef8400e21a656121840bad8e1559af6c44d052d512672b2578e739d87b49",
+        "voice": "Liam - Energetic, Social Media Creator",
+        "model": "Eleven v3",
+        "stability": 0.5,
+        "format": {
+          "codec": "MP3",
+          "sampleRate": 44100,
+          "bitRate": 128000,
+          "channels": 1
+        },
+        "providerCreditObservation": {
+          "usedBefore": 10928,
+          "usedAfter": 11515,
+          "actualDebit": 587,
+          "allowanceIncludingRollover": 39681,
+          "remainingAfterCalculated": 28166,
+          "remainingCalculation": "39681-11515; derived from unchanged allowance, not an independent after-generation remaining-UI claim",
+          "alreadyRecorded103CorrectionIncludedInUsedBefore": true
+        },
+        "generateClicks": 1,
+        "automaticVariantsReturned": 2,
+        "generationRecords": [
+          {
+            "generationId": "FpIjgcRABiApAiBtb4x6",
+            "credits": 587
+          },
+          {
+            "generationId": "mmc3oOjZWS4fhBDOrLai",
+            "credits": 0
+          }
+        ],
+        "fileGenerationMappingVerified": false,
+        "fileGenerationMappingNote": "Filevariant1 had download suffix-2, variant2 no suffix; labels follow sorted filenames. Do not map selectedvariant1 to Generation1 ID without evidence.",
+        "variants": [
+          {
+            "fileName": "hardship_narration_variant_1.mp3",
+            "libraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+            "bytes": 670208,
+            "sha256": "99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+            "durationSeconds": 40.829375,
+            "selectedByTom": true
+          },
+          {
+            "fileName": "hardship_narration_variant_2.mp3",
+            "libraryFileId": "libfile_eae6f8f8d2848191922c2345ecb2db6a",
+            "bytes": 640951,
+            "sha256": "c0ad6d0a666fe5b2e4ef1f6b3a01387493142dac70ad6bcf19df47aa800cfc62",
+            "durationSeconds": 39.000812,
+            "selectedByTom": false
+          }
+        ],
+        "selection": {
+          "selectedFileName": "hardship_narration_variant_1.mp3",
+          "selectedLibraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+          "selectedBy": "Tom",
+          "sourceMessage": "Sentinel_3b8cc8b69a808191881a51d2832b1c0f",
+          "selectedAt": "2026-10-13T19:54:00Z",
+          "selectionMeaning": "Audio take choice; no claim of full-video listening/caption sync or paid-presenter approval"
+        },
+        "retryBudget": 0,
+        "additionalNarrationRequested": false,
+        "actualListeningByCoordinator": false,
+        "fullVideoPlaybackAccepted": false,
+        "captionAlignmentVerified": true,
+        "introMusicAssembly": "completedtechnicalprivateMP4;actualfullreviewpending",
+        "presenterGenerationApproved": false,
+        "providerActionsByCoordinator": 0,
+        "status": "selected-narration-byte-verified; final-audio-caption-wordtiming-verified; privatefullperceptualreviewpending",
+        "budgetRole": "existing planned baseline production, not extra experiment",
+        "productionVerified": false,
+        "nativeVideo": null,
+        "privateReview": {
+          "preparedAt": "2026-10-13T20:38:20.205436+00:00",
+          "status": "narratedprivate-review-caption-wordtiming-verified; actualperceptualreviewpending",
+          "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+          "fileId": "file_00000000f0c48209ad74f941baa11391",
+          "fileName": "CUAI_OCT15_SELECTED_TAKE1_AUDIO_TIMED_VERIFIED_PRIVATE_REVIEW.mp4",
+          "version": 1,
+          "bytes": 10047049,
+          "sha256": "189dec49aae160e22d0cb56487ec6dafe2c1eb71c9bce12ccde1c749ce9ccc06",
+          "durationSeconds": 45.333333333333336,
+          "width": 720,
+          "height": 1280,
+          "frameRate": 24,
+          "videoCodec": "H264",
+          "audioCodec": "AAC",
+          "audioTracks": 1,
+          "decodedVideoFrames": 1088,
+          "fullAudioVideoDecodeVerified": true,
+          "faststartVerified": true,
+          "sampleClippingObserved": false,
+          "selectedNarration": {
+            "fileName": "hardship_narration_variant_1.mp3",
+            "libraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+            "sha256": "99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+            "sourceDurationSeconds": 40.829375,
+            "selectedByTom": true,
+            "trimmed": false,
+            "timeStretched": false,
+            "gain": 1,
+            "startsAtSeconds": 1.5
+          },
+          "opening": {
+            "brandedIntroSeconds": 1.5,
+            "music": "NewsSting",
+            "composer": "Kevin MacLeod",
+            "license": "CC BY4.0",
+            "sourceURL": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+            "rightsEvidence": "OfficialcomposertrackcatalogandtrackrendererCCBY4attribution;officiallicensingpagefreewithcredit. Endcardandreviewnotesincludeauthor/source/licenseandtrim/fadechange. No purchase, music-generationcredit or endorsementclaim.",
+            "fadeUnderNarrationBeforeStarts": true,
+            "targetMusicRMSBelowVoiceDB": 24,
+            "musicFadeOutStartsAtSeconds": 4.5,
+            "musicEndsAtSeconds": 5.5,
+            "pastRejectedCueReused": false,
+            "musicApproval": "Finalactualmusic/transition/intelligibilityreviewpending",
+            "actualAttributionVerification": {
+              "license": "CC BY4.0",
+              "licenseSource": "https://incompetech.com/music/royalty-free/licenses/",
+              "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+              "trackSource": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+              "composer": "Kevin MacLeod",
+              "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+              "actualFinalEndCardOCR": [
+                "Opening music credit",
+                "NewsSting - Kevin MacLeod",
+                "Incompetech.com • CC BY 4.0",
+                "creativecommons.org/licenses/by/4.0",
+                "Trimmed and faded excerpt. No endorsement implied.",
+                "PRIVATE REVIEW • AUDIO-TIMED CAPTIONS"
+              ],
+              "titleAuthorSourceLicenseAndChangesPresent": true,
+              "noEndorsementClaim": true,
+              "pastRejectedOpenerReused": false,
+              "musicUnchangedSinceRightsReview": true,
+              "purchases": 0
+            }
+          },
+          "visuals": "Original existing fictional desk/workflow imagery and original native animated diagram; earlier female-presenter still removed. Male fictionalnewscaster isintendedbutunproduced; no still represented asanimated/talking.",
+          "presenter": {
+            "intended": "male fictional AI newscaster paired with selectedLiamtake1",
+            "animatedFootagePresent": false,
+            "paidGenerationApproved": false,
+            "observedPickerRatesCreditsPerSecond": {
+              "HeyGenAvatar4": 1212,
+              "CreatifyAurora": 848,
+              "SyncLipsync2Pro": 66,
+              "VeedLipsync": 41
+            },
+            "rateScope": "Providerread-onlypickerlabels; cheapermodelsrequireexistingmovingpresenterfootage. No submittedpresenterquoteor generation."
+          },
+          "browserQA": [
+            {
+              "width": 390,
+              "overflow": false,
+              "videoControls": true,
+              "actualNarrationLabel": true,
+              "verifiedTiming": true,
+              "unpublished": true,
+              "errors": []
+            },
+            {
+              "width": 1440,
+              "overflow": false,
+              "videoControls": true,
+              "actualNarrationLabel": true,
+              "verifiedTiming": true,
+              "unpublished": true,
+              "errors": []
+            },
+            {
+              "ended": true,
+              "muted": false,
+              "volume": 1,
+              "duration": 45.333333,
+              "currentTime": 45.333333,
+              "events": 171,
+              "elapsedSeconds": 45.39310000002384,
+              "scope": "Continuous unmuted browser playback/decode test; not actual listening or full editorial viewing acceptance."
+            }
+          ],
+          "nativeFrameViewingScopeSeconds": [
+            0.75,
+            1.55,
+            21.0,
+            44.0
+          ],
+          "allEightFramesExtracted": true,
+          "audioReview": {
+            "TomAudioTakeChoiceRecorded": true,
+            "actualListeningByCoordinator": false,
+            "fullVideoListeningAccepted": false,
+            "captionTiming": "ActualfinalAACSpeechAnalyzerwordtimestamps; all93approvedwords matched,16cueframesandglyphsafeareasverified;no uniformtotalduration-estimate schedule.",
+            "smallestUserReview": "Onefullwatch/listenfor overallvoice/musicperformanceandmixpreference. Captionwordtimings arealready machineverified; no knownprovisionalcaptionfixassignedtoTom.",
+            "captionWordTimingVerifiedByMachine": true,
+            "perceptualCaptionSyncAccepted": false
+          },
+          "productionVerified": false,
+          "nativeVideo": null,
+          "publisherAction": "none; private review only, Oct15 due gate and all release/publisher controls remain",
+          "additionalSpeechCredits": 0,
+          "musicPurchases": 0,
+          "presenterGenerations": 0,
+          "previousVersion": {
+            "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+            "version": 0,
+            "fileId": "file_0000000008a48246b7bd549af745c0af",
+            "sha256": "832293d87df020cb5ff93daa06207e15f5dcc8b86c2258e70bc5eaf1ee523be4",
+            "captionStatus": "historical provisional version0; superseded by audio-timedversion1"
+          },
+          "captionAlignmentVerification": {
+            "checkedAt": "2026-10-13T20:38:20.205436+00:00",
+            "assetId": "short-video-2026-10-15",
+            "sha256": "189dec49aae160e22d0cb56487ec6dafe2c1eb71c9bce12ccde1c749ce9ccc06",
+            "bytes": 10047049,
+            "durationSeconds": 45.333333333333336,
+            "status": "captionalignmentverified-machine-audio-timing; private full-perceptual-review pending",
+            "method": "Already-installed AppleSpeechAnalyzer/SpeechTranscriber on-device en_US audioTimeRange; selectedoriginalMP3 and actualfinalAAC independently transcribed; approvedwords matched bynormalizedcharacterstreams",
+            "approvedWords": 93,
+            "allApprovedWordsMatchedInOriginalAndFinalAudio": true,
+            "speechCues": 15,
+            "musicCue": 1,
+            "wordNormalization": "punctuation/case;four/4;CreditUnionAI/credit union AI;follow-up/follow up;collections/collection’s; noapprovedword changes",
+            "timingSource": "ActualfinalAACwordtimestamps; firstonsetclampedtoknown1.5secondnarrationmixstart; no uniformduration rescale",
+            "finalAudioIdentity": {
+              "channels": 2,
+              "decodedPCMIdenticalToTimingReference": true,
+              "decodedPCMsha256": "a190fcf521e33aabeb14d0336219d50f8a466c46961657ebf33a8abcd5fb06d1",
+              "frames": 1999200,
+              "newDecodedPCMsha256": "a190fcf521e33aabeb14d0336219d50f8a466c46961657ebf33a8abcd5fb06d1",
+              "sampleRate": 44100,
+              "scope": "Decodedfinalaudioidentity,timingreferencereusable;notactualhearing"
+            },
+            "captionSafeArea": {
+              "leftPixels": 72,
+              "rightPixels": 72,
+              "bottomPixels": 240,
+              "sidePercent": 10,
+              "bottomPercent": 18.75,
+              "fontSize": 34,
+              "maxLines": 2,
+              "glyphBoundsVerifiedForAll16Cues": true
+            },
+            "captionFrameQA": {
+              "all16CaptionFramesMatched": true,
+              "maxLines": 2,
+              "ocrGlyphAmbiguities": [
+                {
+                  "cue": 1,
+                  "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+                },
+                {
+                  "cue": 10,
+                  "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+                },
+                {
+                  "cue": 14,
+                  "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+                },
+                {
+                  "cue": 15,
+                  "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+                }
+              ],
+              "oneCaptionLayerEvidence": "Singlewritercaptiondraw; sourceworkflowvideohasblankcaptionrail; noHTMLtrackorMP4subtitletrack; entirecaptionregionOCRcontainsexactlytheexpectedcueonce"
+            },
+            "nativeFramesVisuallyInspected": [
+              0,
+              1,
+              10,
+              15
+            ],
+            "oneBurnedCaptionLayer": true,
+            "embeddedSubtitleTracks": 0,
+            "htmlCaptionTracks": 0,
+            "readingCharactersPerSecondMaximum": 18.095238095238145,
+            "max24fpsCueQuantizationDelaySeconds": 0.038333333333330444,
+            "fullAVDecode": {
+              "actualListeningVerified": false,
+              "audioDecodeCompleted": true,
+              "audioTracks": 1,
+              "captionLayoutVerified": true,
+              "durationSeconds": 45.333333333333336,
+              "frameRate": 24,
+              "fullScaleSamples": 0,
+              "height": 1280,
+              "peakDBFS": -3.7921201333285226,
+              "rmsDBFS": -23.270949401428908,
+              "videoCodec": "avc1",
+              "videoDecodeCompleted": true,
+              "videoFrames": 1088,
+              "width": 720
+            },
+            "faststartVerified": true,
+            "browserQA": [
+              {
+                "width": 390,
+                "overflow": false,
+                "videoControls": true,
+                "actualNarrationLabel": true,
+                "verifiedTiming": true,
+                "unpublished": true,
+                "errors": []
+              },
+              {
+                "width": 1440,
+                "overflow": false,
+                "videoControls": true,
+                "actualNarrationLabel": true,
+                "verifiedTiming": true,
+                "unpublished": true,
+                "errors": []
+              },
+              {
+                "ended": true,
+                "muted": false,
+                "volume": 1,
+                "duration": 45.333333,
+                "currentTime": 45.333333,
+                "events": 171,
+                "elapsedSeconds": 45.39310000002384,
+                "scope": "Continuous unmuted browser playback/decode test; not actual listening or full editorial viewing acceptance."
+              }
+            ],
+            "musicAttribution": {
+              "license": "CC BY4.0",
+              "licenseSource": "https://incompetech.com/music/royalty-free/licenses/",
+              "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+              "trackSource": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+              "composer": "Kevin MacLeod",
+              "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+              "actualFinalEndCardOCR": [
+                "Opening music credit",
+                "NewsSting - Kevin MacLeod",
+                "Incompetech.com • CC BY 4.0",
+                "creativecommons.org/licenses/by/4.0",
+                "Trimmed and faded excerpt. No endorsement implied.",
+                "PRIVATE REVIEW • AUDIO-TIMED CAPTIONS"
+              ],
+              "titleAuthorSourceLicenseAndChangesPresent": true,
+              "noEndorsementClaim": true,
+              "pastRejectedOpenerReused": false,
+              "musicUnchangedSinceRightsReview": true,
+              "purchases": 0
+            },
+            "actualListeningByCoordinator": false,
+            "listeningLimit": "Assistantaudioinputisnotavailable; on-devicerecognitionverifieswords/timestamps, notvoice/musicperformance. Unmutedbrowserplaybackisnothearing.",
+            "narrationOriginalUnchanged": true,
+            "voiceSelection": "Tomselectedtake1,originalSHA99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+            "creditsConsumed": 0,
+            "generationCalls": 0,
+            "modelDownloads": 0,
+            "permissionChanges": 0,
+            "purchases": 0,
+            "presenterGenerations": 0,
+            "publicRelease": false,
+            "productionVerified": false,
+            "nativeVideo": null,
+            "library": {
+              "library_file_id": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+              "file_id": "file_00000000f0c48209ad74f941baa11391",
+              "file_name": "CUAI_OCT15_SELECTED_TAKE1_AUDIO_TIMED_VERIFIED_PRIVATE_REVIEW.mp4",
+              "current_version_number": 1,
+              "file_size_bytes": 10047049
+            }
+          }
+        },
+        "captionAlignmentVerificationScope": "On-device actualaudio word recognition/timestamps, unchangedapprovedwordmapping and exactfinalaudioidentity; perceptualhearingnotclaimed"
+      },
+      "privateNarratedReview": {
+        "preparedAt": "2026-10-13T20:38:20.205436+00:00",
+        "status": "narratedprivate-review-caption-wordtiming-verified; actualperceptualreviewpending",
+        "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+        "fileId": "file_00000000f0c48209ad74f941baa11391",
+        "fileName": "CUAI_OCT15_SELECTED_TAKE1_AUDIO_TIMED_VERIFIED_PRIVATE_REVIEW.mp4",
+        "version": 1,
+        "bytes": 10047049,
+        "sha256": "189dec49aae160e22d0cb56487ec6dafe2c1eb71c9bce12ccde1c749ce9ccc06",
+        "durationSeconds": 45.333333333333336,
+        "width": 720,
+        "height": 1280,
+        "frameRate": 24,
+        "videoCodec": "H264",
+        "audioCodec": "AAC",
+        "audioTracks": 1,
+        "decodedVideoFrames": 1088,
+        "fullAudioVideoDecodeVerified": true,
+        "faststartVerified": true,
+        "sampleClippingObserved": false,
+        "selectedNarration": {
+          "fileName": "hardship_narration_variant_1.mp3",
+          "libraryFileId": "libfile_dfa50ac115448191bdbee0cdbf387b8d",
+          "sha256": "99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+          "sourceDurationSeconds": 40.829375,
+          "selectedByTom": true,
+          "trimmed": false,
+          "timeStretched": false,
+          "gain": 1,
+          "startsAtSeconds": 1.5
+        },
+        "opening": {
+          "brandedIntroSeconds": 1.5,
+          "music": "NewsSting",
+          "composer": "Kevin MacLeod",
+          "license": "CC BY4.0",
+          "sourceURL": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+          "rightsEvidence": "OfficialcomposertrackcatalogandtrackrendererCCBY4attribution;officiallicensingpagefreewithcredit. Endcardandreviewnotesincludeauthor/source/licenseandtrim/fadechange. No purchase, music-generationcredit or endorsementclaim.",
+          "fadeUnderNarrationBeforeStarts": true,
+          "targetMusicRMSBelowVoiceDB": 24,
+          "musicFadeOutStartsAtSeconds": 4.5,
+          "musicEndsAtSeconds": 5.5,
+          "pastRejectedCueReused": false,
+          "musicApproval": "Finalactualmusic/transition/intelligibilityreviewpending",
+          "actualAttributionVerification": {
+            "license": "CC BY4.0",
+            "licenseSource": "https://incompetech.com/music/royalty-free/licenses/",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "trackSource": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+            "composer": "Kevin MacLeod",
+            "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+            "actualFinalEndCardOCR": [
+              "Opening music credit",
+              "NewsSting - Kevin MacLeod",
+              "Incompetech.com • CC BY 4.0",
+              "creativecommons.org/licenses/by/4.0",
+              "Trimmed and faded excerpt. No endorsement implied.",
+              "PRIVATE REVIEW • AUDIO-TIMED CAPTIONS"
+            ],
+            "titleAuthorSourceLicenseAndChangesPresent": true,
+            "noEndorsementClaim": true,
+            "pastRejectedOpenerReused": false,
+            "musicUnchangedSinceRightsReview": true,
+            "purchases": 0
+          }
+        },
+        "visuals": "Original existing fictional desk/workflow imagery and original native animated diagram; earlier female-presenter still removed. Male fictionalnewscaster isintendedbutunproduced; no still represented asanimated/talking.",
+        "presenter": {
+          "intended": "male fictional AI newscaster paired with selectedLiamtake1",
+          "animatedFootagePresent": false,
+          "paidGenerationApproved": false,
+          "observedPickerRatesCreditsPerSecond": {
+            "HeyGenAvatar4": 1212,
+            "CreatifyAurora": 848,
+            "SyncLipsync2Pro": 66,
+            "VeedLipsync": 41
+          },
+          "rateScope": "Providerread-onlypickerlabels; cheapermodelsrequireexistingmovingpresenterfootage. No submittedpresenterquoteor generation."
+        },
+        "browserQA": [
+          {
+            "width": 390,
+            "overflow": false,
+            "videoControls": true,
+            "actualNarrationLabel": true,
+            "verifiedTiming": true,
+            "unpublished": true,
+            "errors": []
+          },
+          {
+            "width": 1440,
+            "overflow": false,
+            "videoControls": true,
+            "actualNarrationLabel": true,
+            "verifiedTiming": true,
+            "unpublished": true,
+            "errors": []
+          },
+          {
+            "ended": true,
+            "muted": false,
+            "volume": 1,
+            "duration": 45.333333,
+            "currentTime": 45.333333,
+            "events": 171,
+            "elapsedSeconds": 45.39310000002384,
+            "scope": "Continuous unmuted browser playback/decode test; not actual listening or full editorial viewing acceptance."
+          }
+        ],
+        "nativeFrameViewingScopeSeconds": [
+          0.75,
+          1.55,
+          21.0,
+          44.0
+        ],
+        "allEightFramesExtracted": true,
+        "audioReview": {
+          "TomAudioTakeChoiceRecorded": true,
+          "actualListeningByCoordinator": false,
+          "fullVideoListeningAccepted": false,
+          "captionTiming": "ActualfinalAACSpeechAnalyzerwordtimestamps; all93approvedwords matched,16cueframesandglyphsafeareasverified;no uniformtotalduration-estimate schedule.",
+          "smallestUserReview": "Onefullwatch/listenfor overallvoice/musicperformanceandmixpreference. Captionwordtimings arealready machineverified; no knownprovisionalcaptionfixassignedtoTom.",
+          "captionWordTimingVerifiedByMachine": true,
+          "perceptualCaptionSyncAccepted": false
+        },
+        "productionVerified": false,
+        "nativeVideo": null,
+        "publisherAction": "none; private review only, Oct15 due gate and all release/publisher controls remain",
+        "additionalSpeechCredits": 0,
+        "musicPurchases": 0,
+        "presenterGenerations": 0,
+        "previousVersion": {
+          "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+          "version": 0,
+          "fileId": "file_0000000008a48246b7bd549af745c0af",
+          "sha256": "832293d87df020cb5ff93daa06207e15f5dcc8b86c2258e70bc5eaf1ee523be4",
+          "captionStatus": "historical provisional version0; superseded by audio-timedversion1"
+        },
+        "captionAlignmentVerification": {
+          "checkedAt": "2026-10-13T20:38:20.205436+00:00",
+          "assetId": "short-video-2026-10-15",
+          "sha256": "189dec49aae160e22d0cb56487ec6dafe2c1eb71c9bce12ccde1c749ce9ccc06",
+          "bytes": 10047049,
+          "durationSeconds": 45.333333333333336,
+          "status": "captionalignmentverified-machine-audio-timing; private full-perceptual-review pending",
+          "method": "Already-installed AppleSpeechAnalyzer/SpeechTranscriber on-device en_US audioTimeRange; selectedoriginalMP3 and actualfinalAAC independently transcribed; approvedwords matched bynormalizedcharacterstreams",
+          "approvedWords": 93,
+          "allApprovedWordsMatchedInOriginalAndFinalAudio": true,
+          "speechCues": 15,
+          "musicCue": 1,
+          "wordNormalization": "punctuation/case;four/4;CreditUnionAI/credit union AI;follow-up/follow up;collections/collection’s; noapprovedword changes",
+          "timingSource": "ActualfinalAACwordtimestamps; firstonsetclampedtoknown1.5secondnarrationmixstart; no uniformduration rescale",
+          "finalAudioIdentity": {
+            "channels": 2,
+            "decodedPCMIdenticalToTimingReference": true,
+            "decodedPCMsha256": "a190fcf521e33aabeb14d0336219d50f8a466c46961657ebf33a8abcd5fb06d1",
+            "frames": 1999200,
+            "newDecodedPCMsha256": "a190fcf521e33aabeb14d0336219d50f8a466c46961657ebf33a8abcd5fb06d1",
+            "sampleRate": 44100,
+            "scope": "Decodedfinalaudioidentity,timingreferencereusable;notactualhearing"
+          },
+          "captionSafeArea": {
+            "leftPixels": 72,
+            "rightPixels": 72,
+            "bottomPixels": 240,
+            "sidePercent": 10,
+            "bottomPercent": 18.75,
+            "fontSize": 34,
+            "maxLines": 2,
+            "glyphBoundsVerifiedForAll16Cues": true
+          },
+          "captionFrameQA": {
+            "all16CaptionFramesMatched": true,
+            "maxLines": 2,
+            "ocrGlyphAmbiguities": [
+              {
+                "cue": 1,
+                "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+              },
+              {
+                "cue": 10,
+                "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+              },
+              {
+                "cue": 14,
+                "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+              },
+              {
+                "cue": 15,
+                "ocrGlyphAmbiguity": "I/l in AI or CreditUnionAI; actual source/glyph text inspected, not an editorial-word change"
+              }
+            ],
+            "oneCaptionLayerEvidence": "Singlewritercaptiondraw; sourceworkflowvideohasblankcaptionrail; noHTMLtrackorMP4subtitletrack; entirecaptionregionOCRcontainsexactlytheexpectedcueonce"
+          },
+          "nativeFramesVisuallyInspected": [
+            0,
+            1,
+            10,
+            15
+          ],
+          "oneBurnedCaptionLayer": true,
+          "embeddedSubtitleTracks": 0,
+          "htmlCaptionTracks": 0,
+          "readingCharactersPerSecondMaximum": 18.095238095238145,
+          "max24fpsCueQuantizationDelaySeconds": 0.038333333333330444,
+          "fullAVDecode": {
+            "actualListeningVerified": false,
+            "audioDecodeCompleted": true,
+            "audioTracks": 1,
+            "captionLayoutVerified": true,
+            "durationSeconds": 45.333333333333336,
+            "frameRate": 24,
+            "fullScaleSamples": 0,
+            "height": 1280,
+            "peakDBFS": -3.7921201333285226,
+            "rmsDBFS": -23.270949401428908,
+            "videoCodec": "avc1",
+            "videoDecodeCompleted": true,
+            "videoFrames": 1088,
+            "width": 720
+          },
+          "faststartVerified": true,
+          "browserQA": [
+            {
+              "width": 390,
+              "overflow": false,
+              "videoControls": true,
+              "actualNarrationLabel": true,
+              "verifiedTiming": true,
+              "unpublished": true,
+              "errors": []
+            },
+            {
+              "width": 1440,
+              "overflow": false,
+              "videoControls": true,
+              "actualNarrationLabel": true,
+              "verifiedTiming": true,
+              "unpublished": true,
+              "errors": []
+            },
+            {
+              "ended": true,
+              "muted": false,
+              "volume": 1,
+              "duration": 45.333333,
+              "currentTime": 45.333333,
+              "events": 171,
+              "elapsedSeconds": 45.39310000002384,
+              "scope": "Continuous unmuted browser playback/decode test; not actual listening or full editorial viewing acceptance."
+            }
+          ],
+          "musicAttribution": {
+            "license": "CC BY4.0",
+            "licenseSource": "https://incompetech.com/music/royalty-free/licenses/",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "trackSource": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100361",
+            "composer": "Kevin MacLeod",
+            "musicSha256": "a3160b8ed4540b0b6f92bbd6ee3b8ddb6a567cf6e376379048d4b50a47621b58",
+            "actualFinalEndCardOCR": [
+              "Opening music credit",
+              "NewsSting - Kevin MacLeod",
+              "Incompetech.com • CC BY 4.0",
+              "creativecommons.org/licenses/by/4.0",
+              "Trimmed and faded excerpt. No endorsement implied.",
+              "PRIVATE REVIEW • AUDIO-TIMED CAPTIONS"
+            ],
+            "titleAuthorSourceLicenseAndChangesPresent": true,
+            "noEndorsementClaim": true,
+            "pastRejectedOpenerReused": false,
+            "musicUnchangedSinceRightsReview": true,
+            "purchases": 0
+          },
+          "actualListeningByCoordinator": false,
+          "listeningLimit": "Assistantaudioinputisnotavailable; on-devicerecognitionverifieswords/timestamps, notvoice/musicperformance. Unmutedbrowserplaybackisnothearing.",
+          "narrationOriginalUnchanged": true,
+          "voiceSelection": "Tomselectedtake1,originalSHA99edf667c873a2e5301b29d19b78b8a764bca965ad6151df14be33fe4e2f4f1d",
+          "creditsConsumed": 0,
+          "generationCalls": 0,
+          "modelDownloads": 0,
+          "permissionChanges": 0,
+          "purchases": 0,
+          "presenterGenerations": 0,
+          "publicRelease": false,
+          "productionVerified": false,
+          "nativeVideo": null,
+          "library": {
+            "library_file_id": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+            "file_id": "file_00000000f0c48209ad74f941baa11391",
+            "file_name": "CUAI_OCT15_SELECTED_TAKE1_AUDIO_TIMED_VERIFIED_PRIVATE_REVIEW.mp4",
+            "current_version_number": 1,
+            "file_size_bytes": 10047049
+          }
+        }
       }
     },
     {
@@ -527,5 +1364,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-12.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-14.json"
 }

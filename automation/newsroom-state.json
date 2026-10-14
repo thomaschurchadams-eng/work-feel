@@ -1,14 +1,25 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-10-12T07:35:00-04:00",
+  "lastStandardRun": "2026-10-13T07:35:00-04:00",
   "lastBreakingRun": "2026-10-09T07:05:00-04:00",
   "lastPublishedArticle": {
-    "title": "New Orleans Firemen’s FCU Invests in Shared-Equity Homeownership CUSO",
-    "url": "https://creditunionainews.com/news/noffcu-duome-shared-equity-homeownership.html",
-    "publishedAt": "2026-10-12T07:35:00-04:00",
+    "title": "Bank Regulators Probe Agentic AI Shutdown Controls",
+    "url": "https://creditunionainews.com/news/bank-regulators-agentic-ai-shutdown-controls.html",
+    "publishedAt": "2026-10-13T07:35:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {"date":"2026-10-13","headline":"IMF Warns AI Could Amplify Financial-Stability and Cyber Risk","reason":"important global analysis but no discrete U.S. credit-union directive or implementation event"},
+    {"date":"2026-10-13","headline":"Self-Help Credit Union Plans a Digital Experience Upgrade","reason":"migration announcement without a completed implementation or measured member outcome"},
+    {"date":"2026-10-13","headline":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud area"},
+    {"date":"2026-10-13","headline":"Delfi Launches Risk and Return Benchmark for Credit Unions","reason":"vendor launch without independently measured operating results and near-duplicate of recent Delfi coverage"},
+    {"date":"2026-10-13","headline":"PenFed Launches Defender Rewards Credit Card","reason":"product promotion without a material technology, regulatory or system-wide operating change"},
+    {"date":"2026-10-13","headline":"TransUnion Launches First Look Mortgage Tool","reason":"vendor launch without a named credit-union deployment or independently measured borrower outcome"},
+    {"date":"2026-10-13","headline":"Revolut Expands Proprietary AI Models","reason":"international fintech development with limited direct U.S. credit-union consequence"},
+    {"date":"2026-10-13","headline":"UFCU Names Digital Strategy Vice President","reason":"routine personnel announcement without a new implementation or measurable operating outcome"},
+    {"date":"2026-10-13","headline":"OnPoint Opens New Branch","reason":"local branch expansion without a system-wide operating implication"},
+    {"date":"2026-10-13","headline":"Hughes Launches Affinity Debit Cards","reason":"member-promotion announcement without a consequential operating or technology change"},
+    {"date":"2026-10-13","headline":"Google Raises Employee Data Acquisition Concerns","reason":"general enterprise issue without a concrete credit-union operating consequence"},
     {"date":"2026-10-12","headline":"Alkami and BioCatch Report $263 Million in Fraud Losses Prevented","reason":"vendor-supplied aggregate and case-study claims without independent validation, in a recently saturated fraud and Raiz coverage area"},
     {"date":"2026-10-12","headline":"Delfi Launches Risk and Return Benchmark for Credit Unions","reason":"vendor launch without independently measured operating results and near-duplicate of recent Delfi coverage"},
     {"date":"2026-10-12","headline":"PenFed Launches Defender Rewards Credit Card","reason":"product promotion without a material technology, regulatory or system-wide operating change"},
@@ -2736,6 +2747,11 @@
     {
       "functionalArea": "product-management-member-outcomes",
       "opportunity": "AI-assisted product governance, member-outcome monitoring and product-retirement controls",
+      "priority": "completed-2026-10-05"
+    },
+    {
+      "functionalArea": "marketing-growth-member-consent",
+      "opportunity": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
       "priority": "next"
     }
   ]
