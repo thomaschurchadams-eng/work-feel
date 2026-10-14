@@ -180,6 +180,8 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                 raise ValueError("unsafe stage transition")
             require_evidence(stage, evidence)
             if stage == "building":
+                if state["brand"] == "cai" and not evidence.get("builderTaskId"):
+                    raise ValueError("CAI builder handoff needs exact task ID")
                 if evidence["acceptedBy"] != item["owner"]:
                     raise ValueError("receiving owner must accept handoff")
                 receipt = handoff_verifier(event) if handoff_verifier else None
@@ -188,6 +190,8 @@ def apply(state, event, approval_verifier=None, handoff_verifier=None, checkpoin
                     raise ValueError("handoff needs authoritative receiving-owner receipt")
                 if not receipt.get("source") or not receipt.get("sourceVerified"):
                     raise ValueError("unverified handoff source")
+                if state["brand"] == "cai" and receipt.get("builderTaskId") != evidence["builderTaskId"]:
+                    raise ValueError("CAI builder task ID differs from accepted receipt")
                 if item["stage"] == "ranked":
                     if active(state):
                         raise ValueError("one active development item per brand")
