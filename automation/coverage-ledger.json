@@ -3,6 +3,42 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "financial-firms-ai-skills-pay-promotion",
+      "title": "Financial Firms Start Tying AI Skills to Pay and Promotion",
+      "url": "/news/financial-firms-ai-skills-pay-promotion.html",
+      "publishedAt": "2026-10-14T07:25:00-04:00",
+      "section": "news",
+      "beat": "financial-services-workforce-and-compensation",
+      "functions": [
+        "hr-training",
+        "operations",
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "workforce-learning",
+        "generative-ai"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Human resources, learning, operations and risk leaders",
+      "secondaryAudiences": [
+        "business-line leaders",
+        "technology leaders",
+        "internal-audit leaders"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 workflow-outcome hook cohort is reflected only in presentation: the headline leads with the concrete pay-and-promotion outcome and the opening distinguishes visible AI use from measured job results. Selection, sourcing and classification were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-employee-coaching-scorecard.html",
+        "/insight-credit-union-ai-product-governance-outcome-gate.html"
+      ],
+      "sourceTier": 2,
+      "score": 84.4
+    },
+    {
       "id": "msufcu-ufcu-13-5-billion-combination",
       "title": "MSUFCU and UFCU Plan $13.5 Billion Combination",
       "url": "/news/msufcu-ufcu-13-5-billion-combination.html",
@@ -30,7 +66,7 @@
       ],
       "maturity": "emerging",
       "promotionPriority": "High",
-      "socialDecision": "eligible-high-priority-pending-live-verification",
+      "socialDecision": "scheduled-2026-10-14-11:30-et-pending-secure-receipt",
       "activeExperimentContext": "The October 5 workflow-outcome hook test does not apply to this non-AI consolidation story. The headline leads with the concrete proposed scale; no performance claim is inferred from the announcement.",
       "internalLinkTargets": [
         "/news/sharetec-core-outage-credit-union-failover.html",

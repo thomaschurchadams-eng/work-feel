@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "financial-firms-ai-skills-pay-promotion",
+      "articleUrl": "/news/financial-firms-ai-skills-pay-promotion.html",
+      "imagePath": "/assets/financial-firms-ai-skills-pay-promotion.jpg",
+      "publishedAt": "2026-10-14T07:25:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut",
+      "subject": "people-and-teams",
+      "composition": "diagonal-flow",
+      "perspective": "overhead",
+      "palette": "graphite-electric-yellow-coral",
+      "lighting": "graphic-soft-shadow",
+      "texture": "layered-paper-and-cork",
+      "scene": "employee-development-path-connects-training-human-review-measured-results-and-a-compensation-decision-checkpoint",
+      "conceptScore": 98.6,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "6d6eb42c5e00ecc44ad59cbfb8fc2a620e74c794a98e17b11044d64f02e47df0",
+      "conceptAlternatives": [
+        {"medium": "editorial-collage", "subject": "ai-skills-and-compensation", "score": 91.6},
+        {"medium": "architectural-isometric", "subject": "workforce-learning-controls", "score": 90.8}
+      ]
+    },
+    {
       "id": "msufcu-ufcu-13-5-billion-combination",
       "articleUrl": "/news/msufcu-ufcu-13-5-billion-combination.html",
       "imagePath": "/assets/msufcu-ufcu-13-5-billion-combination.jpg",
