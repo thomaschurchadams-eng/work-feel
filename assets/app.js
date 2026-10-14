@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'NCUA Rule Proposals',
+      headline: 'NCUA Proposes Changes to Bond, Incidental-Power and CLF Rules',
+      summary:
+        'The NCUA announced three proposed rule changes on October 14. The package would simplify fidelity-bond requirements while retaining adequate-coverage and approved-form safeguards; clarify that federal credit unions may apply directly to the Board for approval of an unrecognized incidental power without first obtaining an advisory opinion; and modernize Central Liquidity Facility membership, reporting and capital-stock subscription provisions.',
+      impact:
+        'Credit-union compliance, legal, insurance, treasury and liquidity teams should compare the proposals with current bond purchasing and renewal controls, incidental-powers approval paths, and CLF membership, reporting and capital-stock procedures. Existing requirements remain in force while the rules are proposed; institutions should review the Federal Register notices after publication and decide whether operational burden, clarity or implementation concerns warrant comment.',
+      sourceName: 'National Credit Union Administration',
+      sourceUrl:
+        'https://ncua.gov/newsroom/press-release/2026/ncua-announces-twelfth-round-deregulation-proposals',
+      date: 'Oct 14, 2026',
+      slug: 'ncua-proposes-bond-incidental-powers-clf-rule-changes'
+    },
+    {
       label: 'Stablecoin Reporting',
       headline: 'NCUA Proposes Stablecoin Activity Reporting on Form 5300',
       summary:
