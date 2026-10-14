@@ -1,5 +1,6 @@
 'use strict';
 const crypto=require('node:crypto');
+const clone=value=>JSON.parse(JSON.stringify(value)); // Checkpoint document is JSON.
 
 // Adapter for a dedicated non-main Git ref containing one checkpoint document.
 // `cas(expectedSha, document)` must atomically reject a changed ref. Binding to
@@ -17,7 +18,7 @@ function gitRefCheckpointStore({read,cas,executionId,ownerLive,newId=()=>crypto.
     const current=await read();
     if(!current || !current.sha || !current.document) throw Error('checkpoint_snapshot_missing');
     const tx=await id();
-    const next=structuredClone(current.document);
+    const next=clone(current.document);
     change(next);
     next.appliedTransactions=[...(next.appliedTransactions||[]),tx].slice(-100);
     try { await cas(current.sha,next); }
@@ -57,11 +58,11 @@ function gitRefCheckpointStore({read,cas,executionId,ownerLive,newId=()=>crypto.
       }); token=null; };
       } catch(error) { token=null; throw error; }
     },
-    async load(key) { const snapshot=await read(); return structuredClone(snapshot.document.states?.[key]||null); },
+    async load(key) { const snapshot=await read(); return clone(snapshot.document.states?.[key]||null); },
     async save(state) {
       await update(doc=>{
         if(doc.leases?.[state.key]?.token!==token) throw Error('recovery_lease_lost');
-        doc.states={...doc.states,[state.key]:structuredClone(state)};
+        doc.states={...doc.states,[state.key]:clone(state)};
       });
     }
   };
