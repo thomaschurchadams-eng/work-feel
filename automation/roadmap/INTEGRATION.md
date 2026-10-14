@@ -8,7 +8,7 @@
 
 ## Draft-only use
 
-Run `python3 -m unittest discover -s tests/roadmap -q`, `python3 automation/product-roadmap/verify.py`, and `python3 automation/roadmap/cli.py dry-run --brand cuai --state automation/product-roadmap/state.json --events <candidate-events.json>` in a checkout. CAI uses the same CLI under `operations/product-roadmap/`. `OWNER_INVOCATION_DRAFT.patch` shows the smallest owner-policy insertion; it has not been applied to live instructions. No extra schedule or PM reactivation is needed.
+Run `python3 -m unittest discover -s tests/roadmap -q`, `python3 automation/product-roadmap/verify.py`, and `python3 automation/roadmap/cli.py dry-run --brand cuai --state automation/product-roadmap/state.json --events <candidate-events.json>` in a checkout. CAI uses the same CLI under `operations/product-roadmap/`. `OWNER_INVOCATION_DRAFT.patch` preserves the original minimal insertion. The fuller bounded invocation is present in the draft PR copy of `automation/scheduled-tasks/cuai-operating-system.md`; main and the live task instructions have not changed. No extra schedule or PM reactivation is needed.
 
 ## Activation evidence still required
 
