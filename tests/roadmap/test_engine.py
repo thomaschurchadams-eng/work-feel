@@ -27,7 +27,7 @@ def decision_receipt(item, choice):
     return dict(itemKey=item,choice=choice,authority='Tom',status='approved',source='verified owner decision',sourceVerified=True)
 
 def accepted_receipt(item, owner):
-    return dict(itemKey=item, owner=owner, receiptId='handoff-1', actionClass='build', sourceVersion='source-A', status='accepted',
+    return dict(itemKey=item, owner=owner, receiptId='handoff-1', actionClass='build', sourceVersion='source-A', builderTaskId='builder-task-123', status='accepted',
                 source='https://github.com/example/issue/2#comment', sourceVerified=True)
 
 class RoadmapTest(unittest.TestCase):
@@ -168,7 +168,7 @@ class RoadmapTest(unittest.TestCase):
         s=blank('cai')
         s=apply(s,dict(eventId='c1',action='intake',key='product',title='PRODUCT',kind='enhancement'))
         s=apply(s,dict(eventId='c2',action='transition',key='product',stage='ranked',evidence=dict(source='decision',observedAt=NOW,finding='selected')))
-        e=dict(eventId='c3',action='transition',key='product',stage='building',evidence=dict(acceptedHandoff='handoff-1',acceptedBy=s['items']['product']['owner'],scope='private',sourceVersion='source-A'))
+        e=dict(eventId='c3',action='transition',key='product',stage='building',evidence=dict(acceptedHandoff='handoff-1',acceptedBy=s['items']['product']['owner'],scope='private',sourceVersion='source-A',builderTaskId='builder-task-123'))
         with self.assertRaisesRegex(ValueError,'authoritative receiving-owner receipt'): apply(s,e)
         with self.assertRaisesRegex(ValueError,'unverified handoff source'): apply(s,e,handoff_verifier=lambda _: {**accepted_receipt('product',s['items']['product']['owner']),'sourceVerified':False})
         with self.assertRaisesRegex(ValueError,'authoritative receiving-owner receipt'): apply(s,e,handoff_verifier=lambda _: {**accepted_receipt('product',s['items']['product']['owner']),'sourceVersion':'source-B'})
@@ -479,3 +479,28 @@ class OutboxDispatchTest(unittest.TestCase):
         self.assertEqual(dispatch_one(store,Provider(),'cuai','x',lambda b,c:calls.append(c)),'uncertain')
         self.assertEqual(dispatch_one(store,Provider(),'cuai','x',lambda b,c:calls.append(c)),'uncertain')
         self.assertEqual(len(calls),1)
+
+class CaiOwnerBoundaryTest(unittest.TestCase):
+    def test_cai_run_requires_exact_existing_watney_task(self):
+        from run_bound import run_bound, CAI_OPERATING_TASK_ID
+        class Store:
+            def read(self,brand):return blank('cai'),'blob'
+        class Provider:
+            def fetch_issue_comments(self,brand):return {'comments':[]},True
+        with self.assertRaisesRegex(ValueError,'Watney operating task identity'):
+            run_bound(Store(),Provider(),'cai',[])
+        self.assertEqual(CAI_OPERATING_TASK_ID,'6acfca2f2b2081919b429a3ec852f53a')
+    def test_cai_build_needs_accepted_builder_task_id(self):
+        state=blank('cai')
+        state=apply(state,dict(eventId='i',action='intake',key='product',kind='enhancement',title='Product'))
+        state=apply(state,dict(eventId='r',action='transition',key='product',stage='ranked',evidence=dict(source='PRODUCT',observedAt=NOW,finding='selected')))
+        evidence=dict(acceptedHandoff='h',acceptedBy='chief-of-staff',scope='private prototype',sourceVersion='commit-a')
+        event=dict(eventId='b',action='transition',key='product',stage='building',evidence=evidence)
+        receipt=lambda _:dict(itemKey='product',owner='chief-of-staff',receiptId='h',actionClass='build',sourceVersion='commit-a',status='accepted',source='issue',sourceVerified=True)
+        with self.assertRaisesRegex(ValueError,'exact task ID'):
+            apply(state,event,handoff_verifier=receipt)
+        event['evidence']['builderTaskId']='builder-task-123'
+        with self.assertRaisesRegex(ValueError,'differs'):
+            apply(state,event,handoff_verifier=receipt)
+        accepted=apply(state,event,handoff_verifier=lambda e:{**receipt(e),'builderTaskId':'builder-task-123'})
+        self.assertEqual(accepted['items']['product']['stage'],'building')
