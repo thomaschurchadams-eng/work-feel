@@ -66,7 +66,7 @@
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
       "copy": "Before AI recommends a hardship treatment, connect four parts of the decision: member facts, approved options, a named human decision and follow-up. If a required part is missing, hold the recommendation. This is an editorial control suggestion, not a new regulatory requirement. https://creditunionainews.com/media/hardship-treatment-decision-card.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-decision-card-2026-10-13-2026-10-15",
       "scheduledFor": "2026-10-15T11:30:00-04:00",
-      "status": "scheduled",
+      "status": "sent",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-10-14T07:20:00-04:00",
       "imageUrl": "https://creditunionainews.com/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
@@ -79,7 +79,9 @@
       "lastAttemptAt": "2026-10-14T11:23:51.062Z",
       "lastResult": "verified secure workflow receipt",
       "duplicate": false,
-      "imageAttached": true
+      "imageAttached": true,
+      "sentAt": "2026-10-15T15:30:52.559Z",
+      "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7516520980979171328"
     },
     {
       "id": "linkedin-american-express-aml-enforcement-2026-10-09",
