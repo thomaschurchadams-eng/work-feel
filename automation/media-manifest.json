@@ -106,15 +106,16 @@
       },
       "sevenDayReview": {
         "dueAt": "2026-10-14T15:30:29.942000+00:00",
-        "status": "not-yet-seven-days-old; current snapshot is preliminary, not a validated baseline",
-        "checkedAt": "2026-10-14T12:43:59.320754+00:00",
+        "status": "due reviewed using fresh exact-post snapshot; fixed seven-day cohort remains unvalidated",
+        "checkedAt": "2026-10-15T12:58:50.971319+00:00",
         "samePostId": "6ac62b4f0ea81feae6a7620f",
         "channelId": "6a53df0880cc80cdcaa76fb8",
         "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
         "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
         "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
-        "snapshotGeneratedAt": "2026-10-14T11:25:48.854Z",
-        "metricsUpdatedAt": "2026-10-14T08:21:30.612Z",
+        "snapshotGeneratedAt": "2026-10-15T11:14:57.232Z",
+        "metricsUpdatedAt": "2026-10-15T07:22:02.800Z",
+        "metricSnapshotAgeDays": 7.660796967592593,
         "metrics": [
           {
             "type": "reactions",
@@ -153,11 +154,81 @@
             "unit": "count"
           }
         ],
-        "evidenceRunId": 38556448832,
-        "evidenceArtifactId": 11890372538,
+        "evidenceRunId": 38725929521,
+        "evidenceArtifactId": 11968197176,
+        "evidenceArtifactSha256": "eddb5604e9ecc81b635c80c0d2fd7a658ad5e9bbb23e0741d5a83dbec2ff6738",
+        "observedCounts": {
+          "impressions": 19,
+          "reach": 16,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0
+        },
+        "unknown": [
+          "clicks not supplied",
+          "same-age GA4 landing-path conversions not established",
+          "reproducible engagement-rate denominator/formula not established",
+          "exact168-hour snapshot unavailable"
+        ],
+        "baselineValidated": false,
+        "inference": "One small19-impression/16-reach observation after seven-day due time; not causal evidence or a timing winner. Snapshot is approximately7.66days old rather than an exact seven-day cohort. Provider reports0% engagement; do not infer unknown clicks as zero.",
         "nextOwner": "cuai-media-coordinator",
-        "nextStep": "First existing coordinator pass after actual seven-day due time must consume fresh same-post/channel/UTM metrics at matching age; do not create another analytics job. This early snapshot does not count toward timing baseline.",
-        "inference": "19 impressions/16 reach in this preliminary snapshot are small-sample counts, not evidence of a timing winner. Clicks, retention and GA4 same-age landing-path conversion remain unknown here."
+        "nextStep": "Retain same immutable post evidence; consume any later validated comparable observation through existing reporting. Do not create analytics jobs, change dates or activate timing with fewer than three comparable validated observations.",
+        "previousSnapshot": {
+          "dueAt": "2026-10-14T15:30:29.942000+00:00",
+          "status": "not-yet-seven-days-old; current snapshot is preliminary, not a validated baseline",
+          "checkedAt": "2026-10-14T12:43:59.320754+00:00",
+          "samePostId": "6ac62b4f0ea81feae6a7620f",
+          "channelId": "6a53df0880cc80cdcaa76fb8",
+          "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+          "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
+          "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
+          "snapshotGeneratedAt": "2026-10-14T11:25:48.854Z",
+          "metricsUpdatedAt": "2026-10-14T08:21:30.612Z",
+          "metrics": [
+            {
+              "type": "reactions",
+              "name": "Reactions",
+              "value": 0,
+              "unit": "count"
+            },
+            {
+              "type": "comments",
+              "name": "Comments",
+              "value": 0,
+              "unit": "count"
+            },
+            {
+              "type": "engagementRate",
+              "name": "Eng. Rate",
+              "value": 0,
+              "unit": "percentage"
+            },
+            {
+              "type": "impressions",
+              "name": "Impressions",
+              "value": 19,
+              "unit": "count"
+            },
+            {
+              "type": "reach",
+              "name": "Reach",
+              "value": 16,
+              "unit": "count"
+            },
+            {
+              "type": "shares",
+              "name": "Shares",
+              "value": 0,
+              "unit": "count"
+            }
+          ],
+          "evidenceRunId": 38556448832,
+          "evidenceArtifactId": 11890372538,
+          "nextOwner": "cuai-media-coordinator",
+          "nextStep": "First existing coordinator pass after actual seven-day due time must consume fresh same-post/channel/UTM metrics at matching age; do not create another analytics job. This early snapshot does not count toward timing baseline.",
+          "inference": "19 impressions/16 reach in this preliminary snapshot are small-sample counts, not evidence of a timing winner. Clicks, retention and GA4 same-age landing-path conversion remain unknown here."
+        }
       }
     },
     {
@@ -293,7 +364,7 @@
       "title": "Approved by whom?",
       "preparationStatus": "ready-local-original-fictional-cartoon; source-rights-accessibility-tested-unpublished",
       "preparedAt": "2026-10-12T13:39:33.834078+00:00",
-      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
+      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
       "publicationNotBefore": "2026-10-16",
       "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
@@ -329,12 +400,63 @@
       "releaseGates": {
         "dueDate": "hold-until-2026-10-16",
         "sourceAndClaims": "fictional editorial synthesis from verified hardship-reporting/NCUA/NIST sources; not new rule or real-event claim",
-        "desktopMobileAndAccessibilityQA": "October14 current-main styles/app, unchanged original page/PNG, 390/1440 two private cases; axe0/no overflow/broken images/script errors; navigation/Escape passed; draft retained",
+        "desktopMobileAndAccessibilityQA": "October15 current-main390/1440 two private cases; unchanged original PNG/page, axe0/no overflow/broken images/errors; navigation/Escape passed; draft retained",
         "productionIdentityAndPublicURL": "not-published"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Reuse original verified package; hold website publication until October16 and recheck normal due-date/production gates. No social request: same hardship parent is already reserved.",
-      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00"
+      "nextStep": "Reuse original package for October16 website release after source/due-date/exact-production gates. Friday existing High-news reservation and same hardship-parent promotion remain untouched; no additional social request.",
+      "coordinationRecheckedAt": "2026-10-15T12:58:50.971319+00:00"
+    },
+    {
+      "id": "chart-2026-10-20",
+      "format": "chart",
+      "targetDate": "2026-10-20",
+      "status": "ready",
+      "title": "Three ways finance firms are measuring AI at work",
+      "preparationStatus": "original source-qualified private chart, data table and page prepared; not published",
+      "preparedAt": "2026-10-15T12:58:50.971319+00:00",
+      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "publicationNotBefore": "2026-10-20",
+      "canonicalUrl": "https://creditunionainews.com/media/finance-ai-skills-measurement-chart.html",
+      "thumbnailUrl": "https://creditunionainews.com/assets/cuai-finance-ai-skills-chart-2026-10-20.png",
+      "altText": "Three survey measures: formal criteria 42 percent; review disclosure 30 percent; AI-return measurement teams 30 percent.",
+      "sourceURLs": [
+        "https://www.reuters.com/business/finance/wall-street-firms-tie-bonuses-promotions-ai-skills-survey-finds-2026-10-14/",
+        "https://www.eeoc.gov/employers/small-business/5-im-conducting-performance-evaluations",
+        "https://www.nist.gov/itl/ai-risk-management-framework",
+        "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html"
+      ],
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": true,
+      "productionVerified": false,
+      "parentPublicationId": "financial-firms-ai-skills-pay-promotion",
+      "assetSha256": "cb329d40078bfeab5c84844cea05eebe82dd6b53c1d76d9653b1aef2747fbe89",
+      "assetBytes": 71397,
+      "assetMimeType": "image/png",
+      "width": 1200,
+      "height": 630,
+      "methodology": "Separate survey measures; no addition, confidence intervals or trend inferred. 500financeexecutive sample; no verified credit-union subset, response rate or question wording.",
+      "rightsNote": "Original CUAI SVG/PNG; independently drawn bars using reported facts, no copied source graphics, logos or quotes.",
+      "preparedPackage": {
+        "libraryFileId": "libfile_4ec0927a35e08191be9f4e831e0cf667",
+        "fileId": "file_00000000c92881f4a4b417935542ba83",
+        "fileName": "cuai-oct15-media-preparation-handoff.zip",
+        "sha256": "2d2068ea4a356aac846bdf24504a2197b7d501d7b6bcac55371fb9883de81806",
+        "bytes": 363931
+      },
+      "assetPackageMemberPath": "site/assets/cuai-finance-ai-skills-chart-2026-10-20.png",
+      "preparedPageMemberPath": "site/media/finance-ai-skills-measurement-chart.html",
+      "releaseGates": {
+        "dueDate": "hold until October20",
+        "sourceAndClaims": "Reuters reporting accessible October15; tier2 fact source; questionnaire and response rate unverified. Three overlapping cross-sectional measures, not CU estimates or results. EEOC/NIST support separately labeled editorial review suggestion.",
+        "desktopMobileAndAccessibilityQA": "October15 current main390/1440 two private chart cases; accessible table/alt, axe0, no overflow/broken images/script errors; mobile navigation/Escape passed",
+        "productionIdentityAndPublicURL": "unpublished private preparation; public404 confirmed",
+        "timing": "inactive experiment; ordinary Tuesday11:30ET baseline only"
+      },
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "Recheck sources and release original chart/page on October20 through existing production gates. Publisher alone may promote exact planned reservation after full live URL/image/hash verification; no new reservation or replacement.",
+      "socialDecision": "planned immutable October20 11:30ET reservation; not queued, submitted or sent; publisher owns promotion after production gates"
     }
   ],
   "planned": [
@@ -473,7 +595,7 @@
       "id": "podcast-2026-10-15",
       "format": "podcast",
       "targetDate": "2026-10-15",
-      "status": "planned",
+      "status": "held",
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
       "preparationStatus": "unchanged verified 385-word script reused; no accepted full narration; fresh account/cycle/model quote, actual listening and destination upload access held",
       "preparedAt": "2026-10-08T13:03:17.625632+00:00",
@@ -486,7 +608,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
+      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -511,10 +633,10 @@
       },
       "measuredDurationSeconds": null,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator retains production ownership. Existing native-Safari provider owner must refresh actual account/cycle and model-specific quote before any bounded baseline synthesis. Preserve385-word/2636-character script and October1 episode; verify actual listening/final playback. Existing Spotify show metadata is verified, but creator upload access is not verified here. Release qualified destinations independently after October15; no second social promotion.",
+      "nextStep": "Preserve approved385-word script; existing native provider owner must establish readable signed-in account/identity/cycle/quote, reconcile full ledger, then use bounded baseline synthesis only if all caps pass. Actual listening/final playback and authenticated existing-show upload access remain necessary. No unchanged access retry or October1 recreation.",
       "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
-      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00",
+      "coordinationRecheckedAt": "2026-10-15T12:58:50.971319+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -532,13 +654,35 @@
         "finalListeningAlignmentPlayback": "required and not certified",
         "nextOwner": "cuai-media-coordinator",
         "spotifyUploadAuthority": "public show identity is not upload authority; no authenticated existing-show upload access verified"
+      },
+      "targetOutcomeRecordedAt": "2026-10-15T12:58:50.971319+00:00",
+      "targetOutcome": "October15 narrated target held at existing quality/access gates; no automatic catch-up or replacement social item",
+      "accessCheck": {
+        "checkedAt": "2026-10-15T12:58:50.971319+00:00",
+        "safariMetadataReadable": true,
+        "pageJavaScript": "disabled; native-command route error8",
+        "screenBasedAccountCheck": "black capture; no readable account/balance/creator UI",
+        "nativeControllerAvailableHere": false,
+        "currentLockState": "not established by metadata/black capture",
+        "accountQuoteBalanceCycleVerified": false,
+        "spotifyCreatorUploadAccessVerified": false,
+        "providerMutations": 0,
+        "settingChanges": 0,
+        "furtherAccessRetries": 0,
+        "sameCapabilityClassPreviouslyBlocked": true,
+        "priorRun": "October14 provider explicitly reported locked; today only unusable screen/UI established",
+        "priorUnlockQuestionAlreadyAsked": true,
+        "priorQuestionMessage": "Sentinel_447ddd7caa588191a7e0d30b041273ad",
+        "newUserQuestionAsked": false,
+        "nextOwner": "existing media coordinator; parent/existing native provider owner handles genuine access exception",
+        "pauseQuestionAlreadyAsked": "Not evidenced in this task. The known October14 message asks to unlock; it is not evidence of a pause question or pause decision."
       }
     },
     {
       "id": "short-video-2026-10-15",
       "format": "short-video",
       "targetDate": "2026-10-15",
-      "status": "planned",
+      "status": "held",
       "distributionMode": "native-video",
       "nativeVideo": null,
       "title": "Can You Reconstruct an AI-Assisted Hardship Decision?",
@@ -553,7 +697,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-14T12:43:59.320754+00:00",
+      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -579,11 +723,11 @@
       },
       "measuredDurationSeconds": 45.333333333333336,
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Coordinator retains release ownership. Obtain actual full-cut voice/music/perceptual acceptance through a permitted listening route; reuse Library version1, then verify due-date, transcript, full deployed MP4 hash and production identity. No narration regeneration, presenter spend or second social promotion.",
+      "nextStep": "Reuse existing private version1 unchanged;93-word actual-timestamp caption checks retained. Obtain actual overall voice/music/full-cut acceptance through a permitted hearing route before transcript/permanent-MP4/hash/production release. No new narration or presenter/footage spend; same hardship-parent social reservation unchanged.",
       "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "craftLearning": "No actual sound-viewed craft benchmark claimed. Earlier text-card treatment was rejected; current version1 uses original workflow visuals, selected Liam take1 and one caption layer. Native Safari provider task01a136c5-789c-7603-8bc4-d6124fab50ec worked October13; its controller is absent in this executor today. Historical blank-route limitation is not evidence that Safari settings require changes. Male fictional presenter is a format preference; no animated presenter or paid footage authorization.",
       "storyboardMemberPath": "short-video-oct15-storyboard.json",
-      "coordinationRecheckedAt": "2026-10-14T12:43:59.320754+00:00",
+      "coordinationRecheckedAt": "2026-10-15T12:58:50.971319+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -1315,13 +1459,29 @@
             "file_size_bytes": 10047049
           }
         }
+      },
+      "targetOutcomeRecordedAt": "2026-10-15T12:58:50.971319+00:00",
+      "targetOutcome": "October15 narrated target held at existing quality/access gates; no automatic catch-up or replacement social item",
+      "accessCheck": {
+        "checkedAt": "2026-10-15T12:58:50.971319+00:00",
+        "safariMetadataReadable": true,
+        "pageJavaScript": "disabled; native-command route error8",
+        "screenBasedAccountCheck": "black capture; no readable account/balance/creator UI",
+        "nativeControllerAvailableHere": false,
+        "currentLockState": "not established by metadata/black capture",
+        "accountQuoteBalanceCycleVerified": false,
+        "spotifyCreatorUploadAccessVerified": false,
+        "providerMutations": 0,
+        "settingChanges": 0,
+        "furtherAccessRetries": 0,
+        "sameCapabilityClassPreviouslyBlocked": true,
+        "priorRun": "October14 provider explicitly reported locked; today only unusable screen/UI established",
+        "priorUnlockQuestionAlreadyAsked": true,
+        "priorQuestionMessage": "Sentinel_447ddd7caa588191a7e0d30b041273ad",
+        "newUserQuestionAsked": false,
+        "nextOwner": "existing media coordinator; parent/existing native provider owner handles genuine access exception",
+        "pauseQuestionAlreadyAsked": "Not evidenced in this task. The known October14 message asks to unlock; it is not evidence of a pause question or pause decision."
       }
-    },
-    {
-      "id": "chart-2026-10-20",
-      "format": "chart",
-      "targetDate": "2026-10-20",
-      "status": "planned"
     },
     {
       "id": "short-video-2026-10-22",
@@ -1329,7 +1489,46 @@
       "targetDate": "2026-10-22",
       "status": "planned",
       "distributionMode": "native-video",
-      "nativeVideo": null
+      "nativeVideo": null,
+      "title": "Before AI Skills Affect Pay, Check the Evidence",
+      "preparationStatus": "92-word draft and original shot plan source-qualified; no narration or finished MP4",
+      "preparedAt": "2026-10-15T12:58:50.971319+00:00",
+      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "publicationNotBefore": "2026-10-22",
+      "canonicalUrl": "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html",
+      "parentPublicationId": "financial-firms-ai-skills-pay-promotion",
+      "sourceURLs": [
+        "https://www.reuters.com/business/finance/wall-street-firms-tie-bonuses-promotions-ai-skills-survey-finds-2026-10-14/",
+        "https://www.eeoc.gov/employers/small-business/5-im-conducting-performance-evaluations",
+        "https://www.nist.gov/itl/ai-risk-management-framework",
+        "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html"
+      ],
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": false,
+      "productionVerified": false,
+      "narrationDraftMemberPath": "short-video-oct22-narration-draft.txt",
+      "narrationDraftSha256": "1c8e6236bbf0acb995c493f180c9b235c7574de7d9ee621fb24c91293e310cac",
+      "narrationBudget": {
+        "characters": 590,
+        "words": 92,
+        "creditEstimate": null,
+        "retryBudget": 0,
+        "protectiveForecastCredits": 5000,
+        "estimateLimitation": "Draft size is known; fresh account/cycle/voice/model quote required. Keep existing protective future5000forecast until actual quote is reconciled."
+      },
+      "preparedPackage": {
+        "libraryFileId": "libfile_4ec0927a35e08191be9f4e831e0cf667",
+        "fileId": "file_00000000c92881f4a4b417935542ba83",
+        "fileName": "cuai-oct15-media-preparation-handoff.zip",
+        "sha256": "2d2068ea4a356aac846bdf24504a2197b7d501d7b6bcac55371fb9883de81806",
+        "bytes": 363931
+      },
+      "storyboardMemberPath": "short-video-oct22-storyboard.json",
+      "socialDecision": "same finance-skills parent prospectively held by October20chart; no second promotion/reservation",
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "Review draft and shot plan; refresh actual account/model quote/full ledger before any synthesis. Preserve protective forecast, require actual listening, final visual/caption/native metadata/production checks. No paid presenter/footage or automatic second promotion. Exact short transcript must be publicly present on the canonical page before native release.",
+      "plannedTranscriptPlacement": "Exact final short transcript must be added as an accessible media module on the canonical source page at any qualified release; current article is source analysis, not yet the short transcript."
     },
     {
       "id": "cartoon-2026-10-23",
@@ -1364,5 +1563,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-14.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-15.json"
 }

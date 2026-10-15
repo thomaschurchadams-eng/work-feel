@@ -1,0 +1,388 @@
+{
+  "date": "2026-10-15",
+  "checkedAt": "2026-10-15T12:58:50.971319+00:00",
+  "timeZone": "America/New_York",
+  "owner": "cuai-media-coordinator",
+  "baseMainSha": "875d8a732561e9fd80dac917729870a49a9322e7",
+  "status": "today-narrated-targets-held; independent-future-chart-and-short-prepared; seven-day-review-recorded",
+  "recordsFullyRead": [
+    "current-main coordinator task/media policy",
+    "complete manifest/provider receipts",
+    "full106-entry credit ledger",
+    "all45existing social reservations",
+    "completed daily cycle/history/coverage ledger",
+    "publishing/source/editorial-routing rules",
+    "current issue160 publisher and reliability receipts"
+  ],
+  "today": {
+    "podcast": "held; no accepted full narration, current account quote/cycle and Spotify creator access unverified",
+    "shortVideo": {
+      "status": "held at actual perceptual acceptance gate; reused exact private MP4",
+      "libraryFileId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+      "version": 1,
+      "sha256": "189dec49aae160e22d0cb56487ec6dafe2c1eb71c9bce12ccde1c749ce9ccc06",
+      "durationSeconds": 45.333333333333336,
+      "actualTimestampCaptionChecks": "existing93-word final-AAC evidence retained",
+      "actualListening": false,
+      "speechRegenerated": false,
+      "animatedPresenterOrPaidFootage": false
+    },
+    "existingSocialReservation": {
+      "id": "linkedin-decision-card-2026-10-13-2026-10-15",
+      "postId": "6acf6646be984f4200f4db74",
+      "scheduledFor": "2026-10-15T11:30:00-04:00",
+      "status": "scheduled; before due, not yet sent",
+      "executor": "existing publisher/trusted workflow only"
+    },
+    "accessCheck": {
+      "checkedAt": "2026-10-15T12:58:50.971319+00:00",
+      "safariMetadataReadable": true,
+      "pageJavaScript": "disabled; native-command route error8",
+      "screenBasedAccountCheck": "black capture; no readable account/balance/creator UI",
+      "nativeControllerAvailableHere": false,
+      "currentLockState": "not established by metadata/black capture",
+      "accountQuoteBalanceCycleVerified": false,
+      "spotifyCreatorUploadAccessVerified": false,
+      "providerMutations": 0,
+      "settingChanges": 0,
+      "furtherAccessRetries": 0,
+      "sameCapabilityClassPreviouslyBlocked": true,
+      "priorRun": "October14 provider explicitly reported locked; today only unusable screen/UI established",
+      "priorUnlockQuestionAlreadyAsked": true,
+      "priorQuestionMessage": "Sentinel_447ddd7caa588191a7e0d30b041273ad",
+      "newUserQuestionAsked": false,
+      "nextOwner": "existing media coordinator; parent/existing native provider owner handles genuine access exception",
+      "pauseQuestionAlreadyAsked": "Not evidenced in this task. The known October14 message asks to unlock; it is not evidence of a pause question or pause decision."
+    }
+  },
+  "independentPreparation": {
+    "october16Cartoon": "original ready/unpublished; current-main browser QA passed; Friday High reservation retained",
+    "october20Chart": {
+      "id": "chart-2026-10-20",
+      "format": "chart",
+      "targetDate": "2026-10-20",
+      "status": "ready",
+      "title": "Three ways finance firms are measuring AI at work",
+      "preparationStatus": "original source-qualified private chart, data table and page prepared; not published",
+      "preparedAt": "2026-10-15T12:58:50.971319+00:00",
+      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "publicationNotBefore": "2026-10-20",
+      "canonicalUrl": "https://creditunionainews.com/media/finance-ai-skills-measurement-chart.html",
+      "thumbnailUrl": "https://creditunionainews.com/assets/cuai-finance-ai-skills-chart-2026-10-20.png",
+      "altText": "Three survey measures: formal criteria 42 percent; review disclosure 30 percent; AI-return measurement teams 30 percent.",
+      "sourceURLs": [
+        "https://www.reuters.com/business/finance/wall-street-firms-tie-bonuses-promotions-ai-skills-survey-finds-2026-10-14/",
+        "https://www.eeoc.gov/employers/small-business/5-im-conducting-performance-evaluations",
+        "https://www.nist.gov/itl/ai-risk-management-framework",
+        "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html"
+      ],
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": true,
+      "productionVerified": false,
+      "parentPublicationId": "financial-firms-ai-skills-pay-promotion",
+      "assetSha256": "cb329d40078bfeab5c84844cea05eebe82dd6b53c1d76d9653b1aef2747fbe89",
+      "assetBytes": 71397,
+      "assetMimeType": "image/png",
+      "width": 1200,
+      "height": 630,
+      "methodology": "Separate survey measures; no addition, confidence intervals or trend inferred. 500financeexecutive sample; no verified credit-union subset, response rate or question wording.",
+      "rightsNote": "Original CUAI SVG/PNG; independently drawn bars using reported facts, no copied source graphics, logos or quotes.",
+      "preparedPackage": {
+        "libraryFileId": "libfile_4ec0927a35e08191be9f4e831e0cf667",
+        "fileId": "file_00000000c92881f4a4b417935542ba83",
+        "fileName": "cuai-oct15-media-preparation-handoff.zip",
+        "sha256": "2d2068ea4a356aac846bdf24504a2197b7d501d7b6bcac55371fb9883de81806",
+        "bytes": 363931
+      },
+      "assetPackageMemberPath": "site/assets/cuai-finance-ai-skills-chart-2026-10-20.png",
+      "preparedPageMemberPath": "site/media/finance-ai-skills-measurement-chart.html",
+      "releaseGates": {
+        "dueDate": "hold until October20",
+        "sourceAndClaims": "Reuters reporting accessible October15; tier2 fact source; questionnaire and response rate unverified. Three overlapping cross-sectional measures, not CU estimates or results. EEOC/NIST support separately labeled editorial review suggestion.",
+        "desktopMobileAndAccessibilityQA": "October15 current main390/1440 two private chart cases; accessible table/alt, axe0, no overflow/broken images/script errors; mobile navigation/Escape passed",
+        "productionIdentityAndPublicURL": "unpublished private preparation; public404 confirmed",
+        "timing": "inactive experiment; ordinary Tuesday11:30ET baseline only"
+      },
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "Recheck sources and release original chart/page on October20 through existing production gates. Publisher alone may promote exact planned reservation after full live URL/image/hash verification; no new reservation or replacement.",
+      "socialDecision": "planned immutable October20 11:30ET reservation; not queued, submitted or sent; publisher owns promotion after production gates"
+    },
+    "october22Short": {
+      "id": "short-video-2026-10-22",
+      "format": "short-video",
+      "targetDate": "2026-10-22",
+      "status": "planned",
+      "distributionMode": "native-video",
+      "nativeVideo": null,
+      "title": "Before AI Skills Affect Pay, Check the Evidence",
+      "preparationStatus": "92-word draft and original shot plan source-qualified; no narration or finished MP4",
+      "preparedAt": "2026-10-15T12:58:50.971319+00:00",
+      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "publicationNotBefore": "2026-10-22",
+      "canonicalUrl": "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html",
+      "parentPublicationId": "financial-firms-ai-skills-pay-promotion",
+      "sourceURLs": [
+        "https://www.reuters.com/business/finance/wall-street-firms-tie-bonuses-promotions-ai-skills-survey-finds-2026-10-14/",
+        "https://www.eeoc.gov/employers/small-business/5-im-conducting-performance-evaluations",
+        "https://www.nist.gov/itl/ai-risk-management-framework",
+        "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html"
+      ],
+      "sourceVerified": true,
+      "rightsVerified": true,
+      "accessibilityVerified": false,
+      "productionVerified": false,
+      "narrationDraftMemberPath": "short-video-oct22-narration-draft.txt",
+      "narrationDraftSha256": "1c8e6236bbf0acb995c493f180c9b235c7574de7d9ee621fb24c91293e310cac",
+      "narrationBudget": {
+        "characters": 590,
+        "words": 92,
+        "creditEstimate": null,
+        "retryBudget": 0,
+        "protectiveForecastCredits": 5000,
+        "estimateLimitation": "Draft size is known; fresh account/cycle/voice/model quote required. Keep existing protective future5000forecast until actual quote is reconciled."
+      },
+      "preparedPackage": {
+        "libraryFileId": "libfile_4ec0927a35e08191be9f4e831e0cf667",
+        "fileId": "file_00000000c92881f4a4b417935542ba83",
+        "fileName": "cuai-oct15-media-preparation-handoff.zip",
+        "sha256": "2d2068ea4a356aac846bdf24504a2197b7d501d7b6bcac55371fb9883de81806",
+        "bytes": 363931
+      },
+      "storyboardMemberPath": "short-video-oct22-storyboard.json",
+      "socialDecision": "same finance-skills parent prospectively held by October20chart; no second promotion/reservation",
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "Review draft and shot plan; refresh actual account/model quote/full ledger before any synthesis. Preserve protective forecast, require actual listening, final visual/caption/native metadata/production checks. No paid presenter/footage or automatic second promotion. Exact short transcript must be publicly present on the canonical page before native release.",
+      "plannedTranscriptPlacement": "Exact final short transcript must be added as an accessible media module on the canonical source page at any qualified release; current article is source analysis, not yet the short transcript."
+    },
+    "package": {
+      "libraryFileId": "libfile_4ec0927a35e08191be9f4e831e0cf667",
+      "fileId": "file_00000000c92881f4a4b417935542ba83",
+      "fileName": "cuai-oct15-media-preparation-handoff.zip",
+      "sha256": "2d2068ea4a356aac846bdf24504a2197b7d501d7b6bcac55371fb9883de81806",
+      "bytes": 363931
+    }
+  },
+  "budget": {
+    "creditsConsumedThisPass": 0,
+    "latestLedgerUsed": 11515,
+    "historicalDerivedRemaining": 28166,
+    "currentProviderBalance": "unknown; not read today",
+    "currentAccountSpecificResetTimestamp": "unknown",
+    "monthlyCeiling": 30000,
+    "headroomFromHistoricalUsed": 18485,
+    "protectiveFutureForecast": {
+      "oct15Podcast": 2636,
+      "oct22Short": 5000,
+      "oct29Podcast": 5000,
+      "oct29Short": 5000,
+      "total": 17636
+    },
+    "projectedTotalAtThoseEstimates": 29151,
+    "protectiveCushion": 849,
+    "forecastIsNotAQuoteOrPricedReservation": true,
+    "retries": 0,
+    "prior103And587DebitsNotReadded": true
+  },
+  "sourcesAndRights": {
+    "reusedHardshipArticleSHA256": "352c3de966f9c46effa73688b911b98a6626cd6c5ff45e5aa7a772e593f18a2e",
+    "newSourceEvidence": "Reuters October14 survey reporting became accessible in October15 search; existing CUAI workforce article200. EEOC and NIST primary guidance checked separately. Three original bars use reported facts, no copied source assets/quotes. No CU sample, outcome or causal inference fabricated.",
+    "sourceURLs": [
+      "https://www.reuters.com/business/finance/wall-street-firms-tie-bonuses-promotions-ai-skills-survey-finds-2026-10-14/",
+      "https://www.eeoc.gov/employers/small-business/5-im-conducting-performance-evaluations",
+      "https://www.nist.gov/itl/ai-risk-management-framework",
+      "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html"
+    ],
+    "qualityLimits": "Separate survey measures; no addition, confidence intervals or trend inferred. 500financeexecutive sample; no verified credit-union subset, response rate or question wording."
+  },
+  "reviews": {
+    "publishedVideoCount": 0,
+    "postPublicationVideoCraft": "not due; no published short, no invented actual sound-viewed examples",
+    "sevenDayChart": {
+      "dueAt": "2026-10-14T15:30:29.942000+00:00",
+      "status": "due reviewed using fresh exact-post snapshot; fixed seven-day cohort remains unvalidated",
+      "checkedAt": "2026-10-15T12:58:50.971319+00:00",
+      "samePostId": "6ac62b4f0ea81feae6a7620f",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+      "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
+      "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
+      "snapshotGeneratedAt": "2026-10-15T11:14:57.232Z",
+      "metricsUpdatedAt": "2026-10-15T07:22:02.800Z",
+      "metricSnapshotAgeDays": 7.660796967592593,
+      "metrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count"
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count"
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage"
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 19,
+          "unit": "count"
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 16,
+          "unit": "count"
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count"
+        }
+      ],
+      "evidenceRunId": 38725929521,
+      "evidenceArtifactId": 11968197176,
+      "evidenceArtifactSha256": "eddb5604e9ecc81b635c80c0d2fd7a658ad5e9bbb23e0741d5a83dbec2ff6738",
+      "observedCounts": {
+        "impressions": 19,
+        "reach": 16,
+        "reactions": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "unknown": [
+        "clicks not supplied",
+        "same-age GA4 landing-path conversions not established",
+        "reproducible engagement-rate denominator/formula not established",
+        "exact168-hour snapshot unavailable"
+      ],
+      "baselineValidated": false,
+      "inference": "One small19-impression/16-reach observation after seven-day due time; not causal evidence or a timing winner. Snapshot is approximately7.66days old rather than an exact seven-day cohort. Provider reports0% engagement; do not infer unknown clicks as zero.",
+      "nextOwner": "cuai-media-coordinator",
+      "nextStep": "Retain same immutable post evidence; consume any later validated comparable observation through existing reporting. Do not create analytics jobs, change dates or activate timing with fewer than three comparable validated observations.",
+      "previousSnapshot": {
+        "dueAt": "2026-10-14T15:30:29.942000+00:00",
+        "status": "not-yet-seven-days-old; current snapshot is preliminary, not a validated baseline",
+        "checkedAt": "2026-10-14T12:43:59.320754+00:00",
+        "samePostId": "6ac62b4f0ea81feae6a7620f",
+        "channelId": "6a53df0880cc80cdcaa76fb8",
+        "canonicalUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+        "distributionUrl": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-chart-2026-10-06-2026-10-07",
+        "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7513621783284011008",
+        "snapshotGeneratedAt": "2026-10-14T11:25:48.854Z",
+        "metricsUpdatedAt": "2026-10-14T08:21:30.612Z",
+        "metrics": [
+          {
+            "type": "reactions",
+            "name": "Reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "name": "Comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "name": "Eng. Rate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "impressions",
+            "name": "Impressions",
+            "value": 19,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "name": "Reach",
+            "value": 16,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "name": "Shares",
+            "value": 0,
+            "unit": "count"
+          }
+        ],
+        "evidenceRunId": 38556448832,
+        "evidenceArtifactId": 11890372538,
+        "nextOwner": "cuai-media-coordinator",
+        "nextStep": "First existing coordinator pass after actual seven-day due time must consume fresh same-post/channel/UTM metrics at matching age; do not create another analytics job. This early snapshot does not count toward timing baseline.",
+        "inference": "19 impressions/16 reach in this preliminary snapshot are small-sample counts, not evidence of a timing winner. Clicks, retention and GA4 same-age landing-path conversion remain unknown here."
+      }
+    },
+    "timingTest": "inactive; baseline remains0<3. October20planned10:00test arm cannot activate; hold normal11:30ET rather than shift cohort or alter frequency.",
+    "newAnalyticsJobs": 0
+  },
+  "validation": {
+    "nodeTestsPassed": 114,
+    "privatePageBrowserCases": 4,
+    "axeViolations": 0,
+    "overflow": false,
+    "brokenImages": 0,
+    "scriptErrors": 0,
+    "originalChartVisualInspection": "full1200x630 inspected, source/limits visible,42/30/30 labels and bar lengths correct; accessible HTML table and alt mirror values",
+    "packageMemberHashesVerified": 15
+  },
+  "publicChecks": [
+    {
+      "url": "https://creditunionainews.com/insight-credit-union-ai-collections-hardship-treatment-record.html",
+      "http": 200,
+      "bytes": 17896,
+      "sha256": "352c3de966f9c46effa73688b911b98a6626cd6c5ff45e5aa7a772e593f18a2e"
+    },
+    {
+      "url": "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html",
+      "http": 200,
+      "bytes": 14493,
+      "sha256": "d2ae534b6bceeb302a83b0508a553503c507521e3ad6a41a72efcdfcac356724"
+    },
+    {
+      "url": "https://creditunionainews.com/episodes/hardship-treatment-decision-record.html",
+      "http": 404
+    },
+    {
+      "url": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
+      "http": 404
+    },
+    {
+      "url": "https://creditunionainews.com/media/finance-ai-skills-measurement-chart.html",
+      "http": 404
+    }
+  ],
+  "preservation": {
+    "priorLedgerEntries": 106,
+    "priorSocialQueueItems": 45,
+    "newPlannedOnlyReservation": 1,
+    "allExistingQueueObjectsUnchanged": true,
+    "dailyCycleHistoryCoveragePoliciesUnchanged": true,
+    "articleFilesChanged": false,
+    "earlierNarrationReceiptsUnchanged": true,
+    "october1Recreated": false
+  },
+  "workUnits": {
+    "mediaPublished": 0,
+    "speechGenerated": 0,
+    "creditsConsumed": 0,
+    "newProviderCalls": 0,
+    "newPlannedReservations": 1,
+    "preparedCharts": 1,
+    "preparedShortDrafts": 1,
+    "newSchedulesCredentialsPermissions": 0,
+    "actualSoundViewedReferenceVideos": 0
+  },
+  "nextOwner": "Existing media coordinator owns qualified website release and access/quality completion; publisher owns exact planned-item promotion and sole provider execution."
+}
