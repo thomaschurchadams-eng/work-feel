@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "illinois-interchange-fee-appeal-credit-unions",
+      "articleUrl": "/news/illinois-interchange-fee-appeal-credit-unions.html",
+      "imagePath": "/assets/illinois-interchange-fee-appeal-credit-unions.jpg",
+      "publishedAt": "2026-10-15T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d-editorial-conceptual",
+      "subject": "payments-and-legal-process",
+      "composition": "central-gateway-flow",
+      "perspective": "eye-level-wide",
+      "palette": "navy-teal-brass",
+      "lighting": "precise-studio",
+      "texture": "glass-metal-stone",
+      "scene": "payment-card-moves-through-appellate-review-gate-beneath-balanced-scales",
+      "conceptScore": 98.9,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "78d32a679a633e0ecd05737c652bd29fc2a662116d41da1b1244961cb134eb0d",
+      "conceptAlternatives": [
+        {"medium": "architectural-paper-cut", "subject": "charter-specific-payment-control-map", "score": 91.8},
+        {"medium": "editorial-collage", "subject": "appeal-path-and-interchange-data", "score": 90.9}
+      ]
+    },
+    {
       "id": "financial-firms-ai-skills-pay-promotion",
       "articleUrl": "/news/financial-firms-ai-skills-pay-promotion.html",
       "imagePath": "/assets/financial-firms-ai-skills-pay-promotion.jpg",

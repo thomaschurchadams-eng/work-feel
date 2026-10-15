@@ -6,107 +6,191 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-14",
-    "fullArticleCount": 2,
-    "alertCount": 1,
+    "date": "2026-10-15",
+    "fullArticleCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "credit-union-consolidation-and-strategy",
-      "financial-services-workforce-and-compensation",
-      "agentic-ai-security-and-deposit-competition",
-      "voice-security-and-identity",
-      "digital-banking-and-member-guidance",
-      "payments-and-open-banking",
-      "regulatory-and-supervisory-policy",
-      "cybersecurity-resources",
-      "vendor-management-and-investment",
-      "member-service",
-      "marketing-and-consent",
-      "lending-and-product-technology"
+      "payments-and-interchange-litigation",
+      "stablecoin-and-interbank-settlement",
+      "agentic-ai-supervision",
+      "financial-services-workforce",
+      "bsa-aml-and-financial-crime",
+      "account-access-and-debanking",
+      "ai-budgeting-and-vendor-management",
+      "earned-wage-access",
+      "digital-banking-transformation",
+      "cyber-threat-intelligence",
+      "frontier-model-platforms",
+      "sanctions-compliance"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "MSUFCU and UFCU Plan $13.5 Billion Combination",
-        "url": "https://creditunionainews.com/news/msufcu-ufcu-13-5-billion-combination.html",
-        "primaryFunctionalAudience": "Board, strategy, operations and integration leaders",
+        "title": "Illinois Appeals Ruling Shielding Federal Credit Unions From Swipe-Fee Law",
+        "url": "https://creditunionainews.com/news/illinois-interchange-fee-appeal-credit-unions.html",
+        "primaryFunctionalAudience": "Payments, card operations, finance, legal and compliance leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-10-14-11:30-et-verified-secure-receipt"
-      },
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "Financial Firms Start Tying AI Skills to Pay and Promotion",
-        "url": "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html",
-        "primaryFunctionalAudience": "Human resources, learning, operations and risk leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "alert",
-        "title": "NCUA Proposes Changes to Bond, Incidental-Power and CLF Rules",
-        "url": "https://creditunionainews.com/alerts/#ncua-proposes-bond-incidental-powers-clf-rule-changes",
-        "source": "National Credit Union Administration",
-        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-twelfth-round-deregulation-proposals",
-        "operatingImplication": "Compare current fidelity-bond purchasing and renewal controls, incidental-powers approval paths, and CLF membership, reporting and capital-stock procedures with the proposals; keep current requirements in force and assess whether to comment after Federal Register publication."
+        "socialDecision": "eligible-high-next-free-slot-after-production"
       }
     ],
     "rejections": [
       {
-        "title": "JPMorgan Builds Gates Against External AI Agents",
-        "reason": "near-duplicate of the October 13 supervisory article on agent authority, shutdown and recovery controls"
+        "title": "Roughrider Coin Pilot Names Two Credit Unions",
+        "reason": "an October 14 re-release of an early-October launch already screened, with limited new operating evidence"
       },
       {
-        "title": "Illuma Secures Investments From Three Credit Unions",
-        "reason": "vendor investment announcement with product claims but no independently measured deployment outcome"
+        "title": "Banks Finance and Adopt AI While Risks Grow",
+        "reason": "overlaps the October 13 agent-shutdown and October 14 workforce articles without a distinct new credit-union event"
       },
       {
-        "title": "PSECU Expands Gemini-Powered Banking Plans",
-        "reason": "duplicate of the October 9 CreditUnionAI News article on the same PSECU program"
+        "title": "Bank Regulators Increase AI Scrutiny",
+        "reason": "duplicate basis of the October 13 supervisory article"
       },
       {
-        "title": "UFCU Names a Vice President of Data and AI",
-        "reason": "routine personnel announcement without a new implementation or measured operating outcome"
+        "title": "Bank of America Continues AML Remediation",
+        "reason": "bank-specific and overlaps October 9 AML-enforcement coverage"
       },
       {
-        "title": "Payoneer Canada Registers as a Payment Service Provider",
-        "reason": "foreign registration with limited direct U.S. credit-union operating consequence"
+        "title": "OCC Publishes Debanking Review",
+        "reason": "large-bank review without a specific credit-union event or new obligation"
       },
       {
-        "title": "Nacha Publishes Cybersecurity Awareness Resources",
-        "reason": "useful resources but no distinct rule, incident or implementation change"
+        "title": "Multimodal AI Report Forecasts Larger Budgets",
+        "reason": "vendor self-promotion without independent evidence or a named credit-union implementation"
       },
       {
-        "title": "Visa Receives Approval to Prepare a China Domestic Entity",
-        "reason": "international market-entry milestone without a concrete U.S. credit-union decision"
+        "title": "Branch Flex Launches Earned Wage Access",
+        "reason": "vendor launch without a named credit-union adopter or measured outcome"
       },
       {
-        "title": "Eltropy Promotes an AI Member-Authentication Webinar",
-        "reason": "event promotion rather than a completed implementation or independently measured result"
+        "title": "BrightBridge Promotes a Transformation Conference Case",
+        "reason": "promotional material without sufficient public measurements or implementation detail"
       },
       {
-        "title": "OnePay Goes Live in ChatGPT",
-        "reason": "retail-fintech distribution launch without a direct credit-union deployment or source-supported member outcome"
+        "title": "Anthropic Publishes a Threat-Intelligence Report",
+        "reason": "broad cyber research without a credit-union event and overlapping recent security coverage"
       },
       {
-        "title": "Consumers Credit Union and Scott Credit Union Plan to Combine",
-        "reason": "October 1 announcement outside the current-event window and superseded by the larger, newer MSUFCU-UFCU proposal"
+        "title": "Google Announces Gemini 4 Argon",
+        "reason": "vendor release without a named credit-union deployment or immediate operating decision"
+      },
+      {
+        "title": "America's Credit Unions Publishes OFAC Compliance 101",
+        "reason": "educational resource rather than a new rule, incident or implementation change"
       }
     ],
-    "status": "two-article-plus-alert-cycle-complete",
-    "activeExperimentContext": "The first non-AI consolidation headline leads with proposed scale without inferring performance. The second article reflects the October 5 workflow-outcome hook only in presentation: the headline names the pay-and-promotion outcome and the opening separates visible AI use from measured job results. Selection, sourcing and classification were unchanged; measurement is not yet aged.",
+    "status": "one-article-cycle-complete",
+    "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI payments-litigation story. The headline leads with the concrete appellate action and does not imply that the injunction has been reversed.",
     "recoveredMissedHighArticle": null,
-    "recoveredMissedMediaAsset": {
-      "id": "decision-card-2026-10-13",
-      "scheduledFor": "2026-10-15T11:30:00-04:00",
-      "socialDecision": "scheduled-verified-secure-receipt"
-    },
+    "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-14T15:37:00-04:00"
+    "updatedAt": "2026-10-15T07:05:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-14",
+      "fullArticleCount": 2,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "credit-union-consolidation-and-strategy",
+        "financial-services-workforce-and-compensation",
+        "agentic-ai-security-and-deposit-competition",
+        "voice-security-and-identity",
+        "digital-banking-and-member-guidance",
+        "payments-and-open-banking",
+        "regulatory-and-supervisory-policy",
+        "cybersecurity-resources",
+        "vendor-management-and-investment",
+        "member-service",
+        "marketing-and-consent",
+        "lending-and-product-technology"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "MSUFCU and UFCU Plan $13.5 Billion Combination",
+          "url": "https://creditunionainews.com/news/msufcu-ufcu-13-5-billion-combination.html",
+          "primaryFunctionalAudience": "Board, strategy, operations and integration leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-10-14-11:30-et-verified-secure-receipt"
+        },
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Financial Firms Start Tying AI Skills to Pay and Promotion",
+          "url": "https://creditunionainews.com/news/financial-firms-ai-skills-pay-promotion.html",
+          "primaryFunctionalAudience": "Human resources, learning, operations and risk leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "alert",
+          "title": "NCUA Proposes Changes to Bond, Incidental-Power and CLF Rules",
+          "url": "https://creditunionainews.com/alerts/#ncua-proposes-bond-incidental-powers-clf-rule-changes",
+          "source": "National Credit Union Administration",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-twelfth-round-deregulation-proposals",
+          "operatingImplication": "Compare current fidelity-bond purchasing and renewal controls, incidental-powers approval paths, and CLF membership, reporting and capital-stock procedures with the proposals; keep current requirements in force and assess whether to comment after Federal Register publication."
+        }
+      ],
+      "rejections": [
+        {
+          "title": "JPMorgan Builds Gates Against External AI Agents",
+          "reason": "near-duplicate of the October 13 supervisory article on agent authority, shutdown and recovery controls"
+        },
+        {
+          "title": "Illuma Secures Investments From Three Credit Unions",
+          "reason": "vendor investment announcement with product claims but no independently measured deployment outcome"
+        },
+        {
+          "title": "PSECU Expands Gemini-Powered Banking Plans",
+          "reason": "duplicate of the October 9 CreditUnionAI News article on the same PSECU program"
+        },
+        {
+          "title": "UFCU Names a Vice President of Data and AI",
+          "reason": "routine personnel announcement without a new implementation or measured operating outcome"
+        },
+        {
+          "title": "Payoneer Canada Registers as a Payment Service Provider",
+          "reason": "foreign registration with limited direct U.S. credit-union operating consequence"
+        },
+        {
+          "title": "Nacha Publishes Cybersecurity Awareness Resources",
+          "reason": "useful resources but no distinct rule, incident or implementation change"
+        },
+        {
+          "title": "Visa Receives Approval to Prepare a China Domestic Entity",
+          "reason": "international market-entry milestone without a concrete U.S. credit-union decision"
+        },
+        {
+          "title": "Eltropy Promotes an AI Member-Authentication Webinar",
+          "reason": "event promotion rather than a completed implementation or independently measured result"
+        },
+        {
+          "title": "OnePay Goes Live in ChatGPT",
+          "reason": "retail-fintech distribution launch without a direct credit-union deployment or source-supported member outcome"
+        },
+        {
+          "title": "Consumers Credit Union and Scott Credit Union Plan to Combine",
+          "reason": "October 1 announcement outside the current-event window and superseded by the larger, newer MSUFCU-UFCU proposal"
+        }
+      ],
+      "status": "two-article-plus-alert-cycle-complete",
+      "activeExperimentContext": "The first non-AI consolidation headline leads with proposed scale without inferring performance. The second article reflects the October 5 workflow-outcome hook only in presentation: the headline names the pay-and-promotion outcome and the opening separates visible AI use from measured job results. Selection, sourcing and classification were unchanged; measurement is not yet aged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": {
+        "id": "decision-card-2026-10-13",
+        "scheduledFor": "2026-10-15T11:30:00-04:00",
+        "socialDecision": "scheduled-verified-secure-receipt"
+      },
+      "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
+      "updatedAt": "2026-10-14T15:37:00-04:00"
+    },
     {
       "date": "2026-10-13",
       "fullArticleCount": 1,

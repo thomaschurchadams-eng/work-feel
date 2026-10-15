@@ -3,6 +3,42 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "illinois-interchange-fee-appeal-credit-unions",
+      "title": "Illinois Appeals Ruling Shielding Federal Credit Unions From Swipe-Fee Law",
+      "url": "/news/illinois-interchange-fee-appeal-credit-unions.html",
+      "publishedAt": "2026-10-15T07:05:00-04:00",
+      "section": "news",
+      "beat": "payments-interchange-litigation",
+      "functions": [
+        "payments-deposits",
+        "risk-compliance",
+        "finance-treasury",
+        "operations",
+        "board-strategy"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, card operations, finance, legal and compliance leaders",
+      "secondaryAudiences": [
+        "issuer-processing and network teams",
+        "executive and board leaders",
+        "vendor-management teams"
+      ],
+      "maturity": "breaking",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-next-free-slot-after-production",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI payments-litigation story. The headline leads with the concrete appellate action and does not imply that the injunction has been reversed.",
+      "internalLinkTargets": [
+        "/news/apple-pay-card-issuer-class-certification.html",
+        "/news/credit-unions-fed-payment-account-guardrails.html"
+      ],
+      "sourceTier": 1,
+      "score": 94.3
+    },
+    {
       "id": "financial-firms-ai-skills-pay-promotion",
       "title": "Financial Firms Start Tying AI Skills to Pay and Promotion",
       "url": "/news/financial-firms-ai-skills-pay-promotion.html",
