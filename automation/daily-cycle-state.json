@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-10-15",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -34,6 +34,14 @@
         "primaryFunctionalAudience": "Payments, card operations, finance, legal and compliance leaders",
         "promotionPriority": "High",
         "socialDecision": "scheduled-2026-10-16-12:30-et-verified-secure-receipt"
+      },
+      {
+        "type": "alert",
+        "title": "NCUA Offers Up to $15,000 in Disaster-Recovery Grants",
+        "url": "https://creditunionainews.com/alerts/#ncua-disaster-recovery-grants-low-income-credit-unions",
+        "source": "National Credit Union Administration",
+        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/grant-funds-available-low-income-credit-unions-affected-hurricanes",
+        "operatingImplication": "Confirm program eligibility and allowable uses, document disaster-related damage or member-service recovery needs, assign finance and operations owners, and apply promptly through the NCUA's Newly Chartered and Urgent Need program."
       }
     ],
     "rejections": [
@@ -82,12 +90,12 @@
         "reason": "educational resource rather than a new rule, incident or implementation change"
       }
     ],
-    "status": "one-article-cycle-complete",
+    "status": "article-and-alert-cycle-complete",
     "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI payments-litigation story. The headline leads with the concrete appellate action and does not imply that the injunction has been reversed.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-15T07:25:00-04:00"
+    "updatedAt": "2026-10-15T15:45:00-04:00"
   },
   "history": [
     {

@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Disaster Recovery Grants',
+      headline: 'NCUA Offers Up to $15,000 in Disaster-Recovery Grants',
+      summary:
+        'The NCUA said on October 15 that low-income-designated credit unions affected by hurricanes, flooding and other severe weather can apply for grants through the Community Development Revolving Loan Fund Newly Chartered and Urgent Need program. Eligible credit unions can receive up to $15,000 to repair disaster damage, replace equipment needed to restore member services or provide financial services to affected members.',
+      impact:
+        'Eligible credit unions should confirm the program requirements and allowable uses, document the damage or member-service recovery need, identify the responsible finance and operations owners, and apply as soon after the emergency as possible. The NCUA said there is no application deadline, but prompt filing supports timely disbursement; institutions should use the agency guidelines rather than assume every recovery expense qualifies.',
+      sourceName: 'National Credit Union Administration',
+      sourceUrl:
+        'https://ncua.gov/newsroom/press-release/2026/grant-funds-available-low-income-credit-unions-affected-hurricanes',
+      date: 'Oct 15, 2026',
+      slug: 'ncua-disaster-recovery-grants-low-income-credit-unions'
+    },
+    {
       label: 'NCUA Rule Proposals',
       headline: 'NCUA Proposes Changes to Bond, Incidental-Power and CLF Rules',
       summary:
