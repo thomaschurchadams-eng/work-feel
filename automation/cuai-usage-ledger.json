@@ -3350,6 +3350,56 @@
       },
       "summary": "Fresh baseline routing rules empty/versionnull, no staged concurrent change. OfficialVerceldocs verified project rules apply across deployments and support exacthost/path set-status actions. Staged four narrowly targeted equals-path404rules for two historical deployment hosts, inspected fullstage/diff, promoted reviewedversionbe403142-2c8f-4aea-8a93-20c117e12263only. AnonymousGETallfour returns404/textplain79bytes withno PNG/cartoon markup; four unrelated oldhost card/page controls200exacthash; canonicalsitehome/sitemap/card200unchanged, removedpage/image404. Both historicaldeployments andsourcehistory retained; originalpublicationreceipt unchanged; no permissions/securitysettings/deploymentdeletion. Reversal remainsavailable by disablingonlyfourrecordedrouteIDs, inspectingstageddiff preservinglaterconcurrentrules, thenpromoting; not executed becauseitwouldreexposewithdrawncontent. Knownhistoricalcopyblocker resolved; no newcartoon/replacement, spend,provider action orschedule.",
       "usageAttribution": "operational-proxy; zero provider credit consumption"
+    },
+    {
+      "timestamp": "2026-10-16T15:48:00-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded October 16 editorial portfolio, Alert, homepage-freshness, measurement, reliability and Friday weekly review after the recorded publisher outcome.",
+      "status": "success-with-friday-receipt",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 164,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 2,
+        "mediaHandoffsConsumed": 3,
+        "portfolioArticlesReviewed": 70,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 8,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 4,
+        "alertsPublished": 0,
+        "activeFreshAlertsVerified": 1,
+        "homepageFreshnessWrites": 0,
+        "dailyHistoryEntriesObserved": 62,
+        "analyticsWindowsReviewed": 1,
+        "weeklyDistributionScanReceiptsConsumed": 1,
+        "competitiveDistributionScansRun": 0,
+        "productionDeploymentChecks": 1,
+        "verifiedOperationsRunsChecked": 1,
+        "siteOriginRuntimeErrorsObserved": 0,
+        "sentStateReconciliationsObserved": 2,
+        "sentStateReconciliationsBlocked": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "weeklyReceipt": {
+        "outputSla": "met — 8/8 articles; 7 News and 1 Insight across three formats",
+        "actualOutput": "Eight articles across eight distinct beats; two qualified Alerts were published during the week; the current Alert remains homepage-eligible.",
+        "reliability": "Current production READY, latest verified operations successful, and no runtime errors in the two-hour check. The FSB Monday social reservation recovered to one verified provider receipt. The rejected cartoon was withdrawn from current production and its four known historical snapshot URLs now return 404.",
+        "operationalLearning": "Technical, source and accessibility checks did not establish substantive fit for the rejected cartoon. User acceptance exposed a media-fit failure despite passing implementation checks; the withdrawal and narrow reversible routing recovery are complete.",
+        "competitiveDistribution": "The W42 public scan was completed Monday and identified five bounded earned-distribution surfaces: CUbroadcast, CU 2.0, The Credit Union Connection, ACUMA and CU Today. No outreach, submission, trial or spend occurred.",
+        "blockers": "The October 16 Illinois article queue item remains internally scheduled after its 12:30 p.m. ET due time because exact authenticated Buffer sentAt evidence is unavailable. Latest trusted audience/search measurement remains October 2; independent CAI-destination conversion evidence and a current October goal window remain unavailable. Global shell checking still reports two pre-existing sync findings on today's article pages, while bounded publisher tests and production checks pass. Narrated-media account quote, creator upload access and overall listening acceptance remain held at existing evidence gates."
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "summary": "Friday completed two qualified articles, bringing the week to 8 of 8: seven News and one Insight across three formats and eight distinct beats. Two source-led Alerts were published during the week. No new Alert qualified today because the October 16 NCUA Call Report comment notice materially duplicates the October 9 stablecoin-reporting Alert; the October 15 disaster-recovery Alert remains within the 72-hour homepage window. The latest 15 articles are 12 News and 3 Insights; risk/compliance appears in 13, IT/data/cybersecurity and operations in 9 each, member service in 8, payments/deposits in 1, and HR/training in 2. Today's Insight closes the prior offer-evidence gap; the next candidate is AI-assisted member-communications experimentation, holdout design and channel-conflict controls. Current production is READY with no recent runtime errors. Reliability recovered the FSB Monday reservation to one verified provider receipt. The rejected cartoon was removed from current production and its four known historical snapshot URLs now return 404; the operational learning is that technical/source/accessibility QA did not establish substantive media fit. The W42 distribution scan was not duplicated; its five approval-gated opportunities remain internal and no outreach occurred. The Friday Illinois queue item remains scheduled internally because exact authenticated Buffer sentAt evidence is unavailable, so no reconciliation write was made. Latest trusted measurement remains October 2, independent CAI conversion remains unavailable, and the October goal window is stale. No full article, new social post, external contact, spend, credential, schedule, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
