@@ -3,6 +3,43 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fsb-ai-sound-practices-financial-institutions",
+      "title": "FSB Finalizes 12 AI Practices for Financial Institutions",
+      "url": "/news/fsb-ai-sound-practices-financial-institutions.html",
+      "publishedAt": "2026-10-16T07:05:00-04:00",
+      "section": "news",
+      "beat": "responsible-ai-and-financial-stability",
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "operations",
+        "vendor-management",
+        "board-strategy"
+      ],
+      "technologies": [
+        "generative-ai",
+        "agents-automation"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Risk, compliance, technology, model-risk and operational-resilience leaders",
+      "secondaryAudiences": [
+        "board and strategy leaders",
+        "vendor-management teams",
+        "internal-audit leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-priority-pending-live-verification-and-shared-slot-selection",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline names the finalized financial-institution practice set and the opening leads with an end-to-end evidence test. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": [
+        "/news/bank-regulators-agentic-ai-shutdown-controls.html",
+        "/insight-credit-union-ai-inventory-change-control.html"
+      ],
+      "sourceTier": 1,
+      "score": 94.6
+    },
+    {
       "id": "illinois-interchange-fee-appeal-credit-unions",
       "title": "Illinois Appeals Ruling Shielding Federal Credit Unions From Swipe-Fee Law",
       "url": "/news/illinois-interchange-fee-appeal-credit-unions.html",

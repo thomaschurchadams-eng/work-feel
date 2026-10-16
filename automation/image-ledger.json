@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fsb-ai-sound-practices-financial-institutions",
+      "articleUrl": "/news/fsb-ai-sound-practices-financial-institutions.html",
+      "imagePath": "/assets/g7-ai-cyber-tabletop-finance.jpg",
+      "publishedAt": "2026-10-16T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "cinematic-editorial-diorama",
+      "subject": "financial-system-ai-resilience",
+      "composition": "networked-tabletop-scenario",
+      "perspective": "elevated-wide",
+      "palette": "midnight-navy-teal-amber",
+      "lighting": "controlled-cinematic-glow",
+      "texture": "matte-metal-glass-and-paper",
+      "scene": "financial-institutions-connected-across-a-tabletop-while-protected-nodes-withstand-simulated-ai-enabled-attack-signals",
+      "conceptScore": 98.8,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "b1d18f9d0f644f8a9c5eeb7166e3d8de2e23f3a68c372ae6fe0301ddf71362b2",
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "board-to-vendor-ai-control-lifecycle",
+          "score": 92.1
+        },
+        {
+          "medium": "editorial-collage",
+          "subject": "twelve-practices-and-financial-resilience",
+          "score": 90.7
+        }
+      ]
+    },
+    {
       "id": "illinois-interchange-fee-appeal-credit-unions",
       "articleUrl": "/news/illinois-interchange-fee-appeal-credit-unions.html",
       "imagePath": "/assets/illinois-interchange-fee-appeal-credit-unions.jpg",

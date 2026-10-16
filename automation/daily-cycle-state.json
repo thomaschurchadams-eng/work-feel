@@ -6,98 +6,182 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "fullArticleCount": 1,
-    "alertCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "payments-and-interchange-litigation",
-      "stablecoin-and-interbank-settlement",
-      "agentic-ai-supervision",
-      "financial-services-workforce",
-      "bsa-aml-and-financial-crime",
-      "account-access-and-debanking",
-      "ai-budgeting-and-vendor-management",
-      "earned-wage-access",
-      "digital-banking-transformation",
-      "cyber-threat-intelligence",
-      "frontier-model-platforms",
-      "sanctions-compliance"
+      "responsible-ai-and-financial-stability",
+      "ai-cyber-resilience-and-g7-coordination",
+      "credit-union-regulatory-relief",
+      "stablecoin-and-mortgage-policy",
+      "financial-stability-and-third-party-risk",
+      "frontier-model-evaluation",
+      "capital-markets-and-ai-risk",
+      "private-credit-and-deposit-competition",
+      "international-bank-policy",
+      "frontier-ai-platforms",
+      "industry-association-and-education",
+      "marketing-consent-and-member-outcomes"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Illinois Appeals Ruling Shielding Federal Credit Unions From Swipe-Fee Law",
-        "url": "https://creditunionainews.com/news/illinois-interchange-fee-appeal-credit-unions.html",
-        "primaryFunctionalAudience": "Payments, card operations, finance, legal and compliance leaders",
+        "title": "FSB Finalizes 12 AI Practices for Financial Institutions",
+        "url": "https://creditunionainews.com/news/fsb-ai-sound-practices-financial-institutions.html",
+        "primaryFunctionalAudience": "Risk, compliance, technology, model-risk and operational-resilience leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-10-16-12:30-et-verified-secure-receipt"
-      },
-      {
-        "type": "alert",
-        "title": "NCUA Offers Up to $15,000 in Disaster-Recovery Grants",
-        "url": "https://creditunionainews.com/alerts/#ncua-disaster-recovery-grants-low-income-credit-unions",
-        "source": "National Credit Union Administration",
-        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/grant-funds-available-low-income-credit-unions-affected-hurricanes",
-        "operatingImplication": "Confirm program eligibility and allowable uses, document disaster-related damage or member-service recovery needs, assign finance and operations owners, and apply promptly through the NCUA's Newly Chartered and Urgent Need program."
+        "socialDecision": "eligible-high-priority-pending-live-verification-and-shared-slot-selection"
       }
     ],
     "rejections": [
       {
-        "title": "Roughrider Coin Pilot Names Two Credit Unions",
-        "reason": "an October 14 re-release of an early-October launch already screened, with limited new operating evidence"
+        "title": "G7 Approves AI Cyber Tabletop Exercises",
+        "reason": "material supporting evidence incorporated into the selected FSB lifecycle-and-resilience article rather than split into overlapping coverage"
       },
       {
-        "title": "Banks Finance and Adopt AI While Risks Grow",
-        "reason": "overlaps the October 13 agent-shutdown and October 14 workforce articles without a distinct new credit-union event"
+        "title": "NCUA Opens a Twelfth Regulatory-Relief Round",
+        "reason": "a current trade report, but the primary proposal record was not sufficiently accessible for independent publication verification"
       },
       {
-        "title": "Bank Regulators Increase AI Scrutiny",
-        "reason": "duplicate basis of the October 13 supervisory article"
+        "title": "America’s Credit Unions Promotes a Stablecoin and Mortgage Webinar",
+        "reason": "promotional and educational programming rather than a completed rule, implementation or measured result"
       },
       {
-        "title": "Bank of America Continues AML Remediation",
-        "reason": "bank-specific and overlaps October 9 AML-enforcement coverage"
+        "title": "NCUA Disaster-Recovery Grants",
+        "reason": "duplicate of the October 15 Alert already published from the primary NCUA announcement"
       },
       {
-        "title": "OCC Publishes Debanking Review",
-        "reason": "large-bank review without a specific credit-union event or new obligation"
+        "title": "IMF Warns AI Could Amplify Financial-Stability Risk",
+        "reason": "broad analysis that overlaps the newer, finalized FSB practice set without a separate credit-union operating event"
       },
       {
-        "title": "Multimodal AI Report Forecasts Larger Budgets",
-        "reason": "vendor self-promotion without independent evidence or a named credit-union implementation"
+        "title": "Anthropic Expands Evaluator Access Through METR",
+        "reason": "AI-lab governance development with limited direct credit-union operating consequence"
       },
       {
-        "title": "Branch Flex Launches Earned Wage Access",
-        "reason": "vendor launch without a named credit-union adopter or measured outcome"
+        "title": "Investors Price AI-Related Default Insurance Risk",
+        "reason": "capital-markets signal without a discrete credit-union implementation, rule or operational event"
       },
       {
-        "title": "BrightBridge Promotes a Transformation Conference Case",
-        "reason": "promotional material without sufficient public measurements or implementation detail"
+        "title": "Private-Credit Firms Face AI-Driven Funding Pressure",
+        "reason": "indirect competitive context without a specific credit-union decision or new operating evidence"
       },
       {
-        "title": "Anthropic Publishes a Threat-Intelligence Report",
-        "reason": "broad cyber research without a credit-union event and overlapping recent security coverage"
+        "title": "UK Reviews Bank Tax Options",
+        "reason": "foreign bank-specific policy discussion without a concrete U.S. credit-union consequence"
       },
       {
-        "title": "Google Announces Gemini 4 Argon",
-        "reason": "vendor release without a named credit-union deployment or immediate operating decision"
+        "title": "OpenAI Announces New Education Products",
+        "reason": "vendor launch without a named credit-union deployment or immediate operating decision"
       },
       {
-        "title": "America's Credit Unions Publishes OFAC Compliance 101",
-        "reason": "educational resource rather than a new rule, incident or implementation change"
+        "title": "Credit Union Association Marks International Credit Union Day",
+        "reason": "routine association and promotional material rather than a consequential operating development"
       }
     ],
-    "status": "article-and-alert-cycle-complete",
-    "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI payments-litigation story. The headline leads with the concrete appellate action and does not imply that the injunction has been reversed.",
+    "status": "article-slot-1-complete",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline names the finalized financial-institution practice set and the opening leads with an end-to-end evidence test. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-15T15:45:00-04:00"
+    "updatedAt": "2026-10-16T07:20:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-15",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "payments-and-interchange-litigation",
+        "stablecoin-and-interbank-settlement",
+        "agentic-ai-supervision",
+        "financial-services-workforce",
+        "bsa-aml-and-financial-crime",
+        "account-access-and-debanking",
+        "ai-budgeting-and-vendor-management",
+        "earned-wage-access",
+        "digital-banking-transformation",
+        "cyber-threat-intelligence",
+        "frontier-model-platforms",
+        "sanctions-compliance"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Illinois Appeals Ruling Shielding Federal Credit Unions From Swipe-Fee Law",
+          "url": "https://creditunionainews.com/news/illinois-interchange-fee-appeal-credit-unions.html",
+          "primaryFunctionalAudience": "Payments, card operations, finance, legal and compliance leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-10-16-12:30-et-verified-secure-receipt"
+        },
+        {
+          "type": "alert",
+          "title": "NCUA Offers Up to $15,000 in Disaster-Recovery Grants",
+          "url": "https://creditunionainews.com/alerts/#ncua-disaster-recovery-grants-low-income-credit-unions",
+          "source": "National Credit Union Administration",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/grant-funds-available-low-income-credit-unions-affected-hurricanes",
+          "operatingImplication": "Confirm program eligibility and allowable uses, document disaster-related damage or member-service recovery needs, assign finance and operations owners, and apply promptly through the NCUA's Newly Chartered and Urgent Need program."
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Roughrider Coin Pilot Names Two Credit Unions",
+          "reason": "an October 14 re-release of an early-October launch already screened, with limited new operating evidence"
+        },
+        {
+          "title": "Banks Finance and Adopt AI While Risks Grow",
+          "reason": "overlaps the October 13 agent-shutdown and October 14 workforce articles without a distinct new credit-union event"
+        },
+        {
+          "title": "Bank Regulators Increase AI Scrutiny",
+          "reason": "duplicate basis of the October 13 supervisory article"
+        },
+        {
+          "title": "Bank of America Continues AML Remediation",
+          "reason": "bank-specific and overlaps October 9 AML-enforcement coverage"
+        },
+        {
+          "title": "OCC Publishes Debanking Review",
+          "reason": "large-bank review without a specific credit-union event or new obligation"
+        },
+        {
+          "title": "Multimodal AI Report Forecasts Larger Budgets",
+          "reason": "vendor self-promotion without independent evidence or a named credit-union implementation"
+        },
+        {
+          "title": "Branch Flex Launches Earned Wage Access",
+          "reason": "vendor launch without a named credit-union adopter or measured outcome"
+        },
+        {
+          "title": "BrightBridge Promotes a Transformation Conference Case",
+          "reason": "promotional material without sufficient public measurements or implementation detail"
+        },
+        {
+          "title": "Anthropic Publishes a Threat-Intelligence Report",
+          "reason": "broad cyber research without a credit-union event and overlapping recent security coverage"
+        },
+        {
+          "title": "Google Announces Gemini 4 Argon",
+          "reason": "vendor release without a named credit-union deployment or immediate operating decision"
+        },
+        {
+          "title": "America's Credit Unions Publishes OFAC Compliance 101",
+          "reason": "educational resource rather than a new rule, incident or implementation change"
+        }
+      ],
+      "status": "article-and-alert-cycle-complete",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI payments-litigation story. The headline leads with the concrete appellate action and does not imply that the injunction has been reversed.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
+      "updatedAt": "2026-10-15T15:45:00-04:00"
+    },
     {
       "date": "2026-10-14",
       "fullArticleCount": 2,
