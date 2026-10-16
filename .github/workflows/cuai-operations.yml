@@ -40,6 +40,11 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
+          fetch-depth: 0
+      - name: Validate daily-cycle history against PR base
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/validate-daily-cycle-preservation.mjs automation/daily-cycle-state.json "$BASE_SHA"
       - name: Use Node for design checks
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
@@ -86,6 +91,9 @@ jobs:
         with:
           ref: ${{ env.DEPLOYED_SHA }}
           persist-credentials: false
+          fetch-depth: 2
+      - name: Validate daily-cycle history against previous main
+        run: node scripts/validate-daily-cycle-preservation.mjs automation/daily-cycle-state.json HEAD^1
       - name: Validate durable daily-cycle state
         run: node --test tests/daily-cycle-state.test.cjs
       - name: Verify authorization and process bounded operations
