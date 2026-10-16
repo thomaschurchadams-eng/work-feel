@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-16",
+  "timeZone": "America/New_York",
+  "checkedAt": "2026-10-16T13:23:41.820541+00:00",
+  "owner": "cuai-media-coordinator",
+  "baseMainBeforeContent": "aa417dbaebebee9e0b3c2585973aefe199cab447",
+  "contentCommit": "6dc01c8f3dd383670f36cc7b29711bbf83d9969a",
+  "status": "cartoon-website-published-and-verified; narrated-work-held; future-preparation-reused",
+  "recordsFullyRead": [
+    "current main coordinator task/media policy",
+    "complete media manifest and provider receipts",
+    "all47social reservations",
+    "full109entry credit ledger",
+    "completed daily history and coverage",
+    "source/publishing/routing rules",
+    "existing issue160 publisher and recovered reliability outcomes"
+  ],
+  "published": {
+    "assetId": "cartoon-2026-10-16",
+    "assetSha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
+    "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
+    "publishedAt": "2026-10-16T13:21:11.034Z",
+    "verifiedAt": "2026-10-16T13:23:41.820541+00:00",
+    "productionCommitSha": "6dc01c8f3dd383670f36cc7b29711bbf83d9969a",
+    "deploymentId": "dpl_2qWEEAPUudVbwrKiuQfeZJuDqKkh",
+    "deploymentTarget": "production",
+    "deploymentState": "READY",
+    "productionAlias": "creditunionainews.com",
+    "workflowRunId": 38907157924,
+    "workflowConclusion": "success",
+    "receiptArtifactId": 12048054207,
+    "receiptArtifactSha256": "f422f5671051a35f79c762b333926943291d317249812384615dcb1814bde714",
+    "publicPageSha256": "feecfd601e69c106e937be9af54287b48dcf6c44289d146b2794d8b0dc1296d0",
+    "publicByteChecks": [
+      {
+        "path": "media/human-decision-owner-cartoon.html",
+        "http": 200,
+        "bytes": 6975,
+        "sha256": "feecfd601e69c106e937be9af54287b48dcf6c44289d146b2794d8b0dc1296d0",
+        "byteIdentical": true
+      },
+      {
+        "path": "assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+        "http": 200,
+        "bytes": 51953,
+        "sha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
+        "byteIdentical": true
+      },
+      {
+        "path": "index.html",
+        "http": 200,
+        "bytes": 40311,
+        "sha256": "a39129387af1b6b49b2514aa218dc25cdcf5c74b58a2b4fd7636af709399d3ee",
+        "byteIdentical": true
+      },
+      {
+        "path": "sitemap.xml",
+        "http": 200,
+        "bytes": 20726,
+        "sha256": "a7943c7907c522d7bc81be28269e1456227cab8d3b4d60b826acd679367a06e4",
+        "byteIdentical": true
+      },
+      {
+        "path": "media/hardship-treatment-decision-card.html",
+        "http": 200,
+        "bytes": 7442,
+        "sha256": "df306248a0534837e79e903e6d396b2740cc0565d8eba8d23255b2ccd365af28",
+        "byteIdentical": true
+      },
+      {
+        "path": "media/credit-union-membership-q2-2026.html",
+        "http": 200,
+        "bytes": 9332,
+        "sha256": "8b01bdf5eac6773d1060531d0947b113e460dd12ab0f90d8a0a9536863796e69",
+        "byteIdentical": true
+      },
+      {
+        "path": "topics/lending-ai.html",
+        "http": 200,
+        "bytes": 10316,
+        "sha256": "afa5fd238fd8e1ed874be9695815f7c8860b512703dc9626aba86490bb8c2888",
+        "byteIdentical": true
+      }
+    ],
+    "sourceVerified": true,
+    "rightsVerified": true,
+    "accessibilityVerified": true,
+    "qualityReview": "Original full-size PNG inspected: invented dialogue/fictional scene labels visible; human-owner field and empty Decision Owner chair communicate the joke. No real-event/vendor allegation, new regulatory requirement or proven performance claim. Text alternative and source/return links retained.",
+    "browserQA": {
+      "viewports": [
+        390,
+        1440
+      ],
+      "routes": [
+        "cartoon",
+        "home"
+      ],
+      "localCases": 4,
+      "liveCases": 4,
+      "axeViolations": 0,
+      "overflow": false,
+      "brokenImages": 0,
+      "scriptErrors": 0,
+      "navigationEscape": "passed"
+    },
+    "tests": {
+      "nodePassed": 114,
+      "renderedSitePassed": 40,
+      "releaseShellFilesStale": 0,
+      "topicHubs": 13,
+      "articlePlacements": 74,
+      "globalShellCheck": "reports2pre-existing unrelated article files; exact base-main bytes unchanged"
+    },
+    "actualProviderPostId": null,
+    "publicPostUrl": null,
+    "socialState": "website-only; no cartoon reservation/provider submission; same hardship-parent decision card already sent October15",
+    "sourceQuality": "Current NCUA AppendixB written workout controls and voluntary NIST governance guidance checked October16; existing October7 source analysis remains200/unchanged hash352c3de9. Cartoon is original fictional editorial synthesis, not legal certification."
+  },
+  "homepageFeature": "Replaced decision-card feature with original Friday cartoon; previous card and membership chart remain linked as archives. No accumulated extra feature or article count.",
+  "social": {
+    "cartoon": "no provider call/reservation: parent already promoted",
+    "decisionCardSentReceipt": {
+      "postId": "6acf6646be984f4200f4db74",
+      "status": "sent",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "channelName": "CreditUnionAI News",
+      "scheduledFor": "2026-10-15T11:30:00-04:00",
+      "sentAt": "2026-10-15T15:30:52.559Z",
+      "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7516520980979171328",
+      "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+      "distributionUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-decision-card-2026-10-13-2026-10-15",
+      "evidence": "Current main authoritative social queue exact immutable item/post/channel/URLs and existing publisher/verified-operations reconciliation; no retry by coordinator",
+      "publicPostViewedThisPass": false
+    },
+    "decisionCardSevenDayDueAt": "2026-10-22T15:30:52.559000+00:00",
+    "fridayExistingReservation": "linkedin-illinois-interchange-fee-appeal-credit-unions-2026-10-16,12:30ET,post6ad0b546f26224326062ca9e; scheduled before due, not recreated",
+    "mondayExistingReservation": "linkedin-fsb-ai-sound-practices-financial-institutions-2026-10-19,12:30ET,post6ad20dda2fe657de6ea0f6d9; consumed completed reliability recovery, no replay",
+    "october20": "Exact planned chart reservation retained at11:30ET. Publisher alone promotes after due-date public release gates."
+  },
+  "narratedWork": {
+    "state": "held; existing selected private MP4 and385word podcast script reused",
+    "privateMP4LibraryId": "libfile_1eec4a47da9c81919658ce0ad2616cdd",
+    "privateMP4SHA256": "189dec49aae160e22d0cb56487ec6dafe2c1eb71c9bce12ccde1c749ce9ccc06",
+    "actualTimestampCaptionEvidence": "existing93word final-AAC timing evidence retained; no claim of hearing",
+    "actualFullCutListeningAccepted": false,
+    "freshAccountCycleBalanceQuote": "unverified; no current entitlement inferred from historic11515used/28166derivedremaining",
+    "spotifyCreatorUploadAccess": "unverified; known public show identity does not establish upload access",
+    "providerAccessRetriesThisPass": 0,
+    "pauseQuestionState": "Parent explicitly reports askedOctober15whether to pause or continue preparation; no answer. No repeat question or unauthorized pause.",
+    "nextOwner": "existing coordinator; existing native provider owner/parent retains genuine access exception",
+    "paidFootagePresenterOrStudioAgentEditing": false
+  },
+  "futurePreparation": {
+    "october20Chart": "Existing package/chart hash retained; no duplicate research, drawing, reservation or early release",
+    "october22Short": "Existing92word590character script/shotplan hash unchanged; draft only, no narration/nativeMP4",
+    "packageLibraryId": "libfile_4ec0927a35e08191be9f4e831e0cf667",
+    "packageSHA256": "2d2068ea4a356aac846bdf24504a2197b7d501d7b6bcac55371fb9883de81806"
+  },
+  "qualityAndResults": {
+    "focusedReview": "Original full-size PNG inspected: invented dialogue/fictional scene labels visible; human-owner field and empty Decision Owner chair communicate the joke. No real-event/vendor allegation, new regulatory requirement or proven performance claim. Text alternative and source/return links retained.",
+    "publishedVideoCount": 0,
+    "videoAfterPublicationCraftReview": "not due; no genuine sound-viewed examples or playback hearing invented",
+    "membershipChartSevenDay": "Existing October15same-post review retained; no duplicate analytics query/job. Missing exact fixed-age evidence remains unknown.",
+    "timing": "inactive;0validated baseline observations;114tests include exact-date/integration scheduler gates but baseline is not met. Existing midday reservations unchanged.",
+    "newSchedules": 0
+  },
+  "validation": {
+    "nodePassed": 114,
+    "renderedSitePassed": 40,
+    "focusedLocalLiveBrowserCases": 8,
+    "axeViolations": 0,
+    "globalShellCheck": {
+      "status": "two pre-existing mismatches, unrelated files unchanged from base",
+      "files": [
+        "news/fsb-ai-sound-practices-financial-institutions.html",
+        "insight-credit-union-ai-member-offer-evidence-loop.html"
+      ],
+      "releaseFilesPass": true,
+      "owner": "existing article publisher; separate normal review for canonical-shell cleanup"
+    }
+  },
+  "preservation": {
+    "allPriorLedgerEntries": 109,
+    "allQueueEntries": 47,
+    "queueBytesUnchanged": true,
+    "dailyCycleHistoryCoverageMediaPolicyBytesUnchanged": true,
+    "earlierNarrationReceiptBytesUnchanged": true,
+    "articleFilesChanged": false,
+    "actual103And587SpeechDebitsNotReadded": true
+  },
+  "workUnits": {
+    "mediaPublished": 1,
+    "speechGenerated": 0,
+    "creditsConsumed": 0,
+    "newSocialCalls": 0,
+    "newReservations": 0,
+    "newAssetsGenerated": 0,
+    "sourceURLsRechecked": 4,
+    "newSchedulesCredentialsPermissions": 0,
+    "actualSoundViewedReferenceVideos": 0
+  },
+  "nextOwner": "Existing media coordinator for next due release/access gates; sole publisher for existing queue promotion and unrelated article shell cleanup."
+}

@@ -269,14 +269,14 @@
       },
       "assetPackageMemberPath": "site/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
       "preparedPageMemberPath": "site/media/hardship-treatment-decision-card.html",
-      "socialDecision": "scheduled-2026-10-15-11:30-et-verified-secure-receipt; same-parent promotion consumed",
+      "socialDecision": "sent-2026-10-15-exact-existing-publisher-receipt; same-parent promotion consumed",
       "releaseGates": {
         "sourceAndClaims": "October12 story200 unchanged hash352c3de9; current eCFR written-workout-policy baseline/NIST voluntary governance; editorial four-part synthesis, no new directive/performance claim",
         "desktopMobileAndAccessibilityQA": "October13 current-main390/1440 card/home four local and four livecases; axe0, navigation/Escape, no overflow/broken images/errors",
         "dueDate": "passed-2026-10-13",
         "productionIdentityAndPublicURL": "exact-production-READY; public page/image/home byte identity verified"
       },
-      "coordinationRecheckedAt": "2026-10-14T08:38:37-04:00",
+      "coordinationRecheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -284,7 +284,7 @@
         "sha256": "543a14c3007a7c9bbbaaef24c3a9c879f70b8a79e7b9b0c0e391a5006c61a215"
       },
       "nextOwner": "none",
-      "nextStep": "Existing October15 11:30ET company-page reservation is authoritative. Do not create, replace or reschedule another promotion for this parent.",
+      "nextStep": "Completed existing social handoff; preserve exact sent receipt and no duplicate parent promotion.",
       "publishedAt": "2026-10-13T13:01:55.431000+00:00",
       "publicationReceipt": {
         "assetId": "decision-card-2026-10-13",
@@ -343,8 +343,8 @@
           "scope": "No error/fatal records returned for this exact deployment; not an all-time availability claim"
         },
         "actualProviderPostId": "6acf6646be984f4200f4db74",
-        "publicPostUrl": null,
-        "socialState": "scheduled-2026-10-15-11:30-et-verified-secure-receipt",
+        "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7516520980979171328",
+        "socialState": "sent-2026-10-15-exact-existing-publisher-receipt",
         "socialQueueItemId": "linkedin-decision-card-2026-10-13-2026-10-15",
         "socialScheduledFor": "2026-10-15T11:30:00-04:00",
         "socialScheduledAt": "2026-10-14T11:23:51.062Z",
@@ -353,18 +353,42 @@
         "socialChannelName": "CreditUnionAI News",
         "socialDuplicate": false,
         "socialImageAttached": true,
-        "sourceQuality": "Published October7 analysis unchanged; NCUA AppendixB written-workout controls plus NIST voluntary accountability guidance. Four-part layout is editorial synthesis, not new rule, legal-applicability certification or proven AI outcome. No confidential member data or third-party artwork."
+        "sourceQuality": "Published October7 analysis unchanged; NCUA AppendixB written-workout controls plus NIST voluntary accountability guidance. Four-part layout is editorial synthesis, not new rule, legal-applicability certification or proven AI outcome. No confidential member data or third-party artwork.",
+        "socialSentAt": "2026-10-15T15:30:52.559Z"
+      },
+      "socialReceipt": {
+        "postId": "6acf6646be984f4200f4db74",
+        "status": "sent",
+        "channelId": "6a53df0880cc80cdcaa76fb8",
+        "channelName": "CreditUnionAI News",
+        "scheduledFor": "2026-10-15T11:30:00-04:00",
+        "sentAt": "2026-10-15T15:30:52.559Z",
+        "publicPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7516520980979171328",
+        "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+        "distributionUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-decision-card-2026-10-13-2026-10-15",
+        "evidence": "Current main authoritative social queue exact immutable item/post/channel/URLs and existing publisher/verified-operations reconciliation; no retry by coordinator",
+        "publicPostViewedThisPass": false
+      },
+      "sevenDayReview": {
+        "dueAt": "2026-10-22T15:30:52.559000+00:00",
+        "status": "not-due",
+        "samePostId": "6acf6646be984f4200f4db74",
+        "channelId": "6a53df0880cc80cdcaa76fb8",
+        "canonicalUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+        "distributionUrl": "https://creditunionainews.com/media/hardship-treatment-decision-card.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-decision-card-2026-10-13-2026-10-15",
+        "nextOwner": "cuai-media-coordinator",
+        "nextStep": "First existing pass after actual seven-day due time consumes fresh matching metrics; no additional analytics schedule. Publication is image media, not native video playback."
       }
     },
     {
       "id": "cartoon-2026-10-16",
       "format": "cartoon",
       "targetDate": "2026-10-16",
-      "status": "ready",
+      "status": "published",
       "title": "Approved by whom?",
-      "preparationStatus": "ready-local-original-fictional-cartoon; source-rights-accessibility-tested-unpublished",
+      "preparationStatus": "published-verified-independent-website-cartoon",
       "preparedAt": "2026-10-12T13:39:33.834078+00:00",
-      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "sourceCheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "publicationNotBefore": "2026-10-16",
       "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
       "thumbnailUrl": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
@@ -380,7 +404,7 @@
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": true,
-      "productionVerified": false,
+      "productionVerified": true,
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
       "rightsNote": "Original locally drawn CUAI vector illustration; invented fictional scene/dialogue, no third-party assets, logos, real member facts or paid footage.",
       "assetSha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
@@ -396,16 +420,118 @@
       },
       "assetPackageMemberPath": "site/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
       "preparedPageMemberPath": "site/media/human-decision-owner-cartoon.html",
-      "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
+      "socialDecision": "not-selected; same hardship parent already sentOctober15 and Friday existing High reservation remains occupied",
       "releaseGates": {
-        "dueDate": "hold-until-2026-10-16",
-        "sourceAndClaims": "fictional editorial synthesis from verified hardship-reporting/NCUA/NIST sources; not new rule or real-event claim",
-        "desktopMobileAndAccessibilityQA": "October15 current-main390/1440 two private cases; unchanged original PNG/page, axe0/no overflow/broken images/errors; navigation/Escape passed; draft retained",
-        "productionIdentityAndPublicURL": "not-published"
+        "dueDate": "passed-2026-10-16",
+        "sourceAndClaims": "Current NCUA AppendixB written workout controls and voluntary NIST governance guidance checked October16; existing October7 source analysis remains200/unchanged hash352c3de9. Cartoon is original fictional editorial synthesis, not legal certification.",
+        "desktopMobileAndAccessibilityQA": "October16four local/four live390/1440cartoon/home cases, axe0/no overflow/broken images/errors, navigation/Escape passed",
+        "productionIdentityAndPublicURL": "exact productionREADY6dc01c8; full public page/PNG/home/sitemap and archive/lending return bytes verified"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Reuse original package for October16 website release after source/due-date/exact-production gates. Friday existing High-news reservation and same hardship-parent promotion remain untouched; no additional social request.",
-      "coordinationRecheckedAt": "2026-10-15T12:58:50.971319+00:00"
+      "nextStep": "Retain original published cartoon/archive; no extra hardship promotion. Continue existing October20chart andOctober22short preparation/release gates; no duplicate manager.",
+      "coordinationRecheckedAt": "2026-10-16T13:23:41.820541+00:00",
+      "publishedAt": "2026-10-16T13:21:11.034Z",
+      "publicationReceipt": {
+        "assetId": "cartoon-2026-10-16",
+        "assetSha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
+        "canonicalUrl": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
+        "publishedAt": "2026-10-16T13:21:11.034Z",
+        "verifiedAt": "2026-10-16T13:23:41.820541+00:00",
+        "productionCommitSha": "6dc01c8f3dd383670f36cc7b29711bbf83d9969a",
+        "deploymentId": "dpl_2qWEEAPUudVbwrKiuQfeZJuDqKkh",
+        "deploymentTarget": "production",
+        "deploymentState": "READY",
+        "productionAlias": "creditunionainews.com",
+        "workflowRunId": 38907157924,
+        "workflowConclusion": "success",
+        "receiptArtifactId": 12048054207,
+        "receiptArtifactSha256": "f422f5671051a35f79c762b333926943291d317249812384615dcb1814bde714",
+        "publicPageSha256": "feecfd601e69c106e937be9af54287b48dcf6c44289d146b2794d8b0dc1296d0",
+        "publicByteChecks": [
+          {
+            "path": "media/human-decision-owner-cartoon.html",
+            "http": 200,
+            "bytes": 6975,
+            "sha256": "feecfd601e69c106e937be9af54287b48dcf6c44289d146b2794d8b0dc1296d0",
+            "byteIdentical": true
+          },
+          {
+            "path": "assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+            "http": 200,
+            "bytes": 51953,
+            "sha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
+            "byteIdentical": true
+          },
+          {
+            "path": "index.html",
+            "http": 200,
+            "bytes": 40311,
+            "sha256": "a39129387af1b6b49b2514aa218dc25cdcf5c74b58a2b4fd7636af709399d3ee",
+            "byteIdentical": true
+          },
+          {
+            "path": "sitemap.xml",
+            "http": 200,
+            "bytes": 20726,
+            "sha256": "a7943c7907c522d7bc81be28269e1456227cab8d3b4d60b826acd679367a06e4",
+            "byteIdentical": true
+          },
+          {
+            "path": "media/hardship-treatment-decision-card.html",
+            "http": 200,
+            "bytes": 7442,
+            "sha256": "df306248a0534837e79e903e6d396b2740cc0565d8eba8d23255b2ccd365af28",
+            "byteIdentical": true
+          },
+          {
+            "path": "media/credit-union-membership-q2-2026.html",
+            "http": 200,
+            "bytes": 9332,
+            "sha256": "8b01bdf5eac6773d1060531d0947b113e460dd12ab0f90d8a0a9536863796e69",
+            "byteIdentical": true
+          },
+          {
+            "path": "topics/lending-ai.html",
+            "http": 200,
+            "bytes": 10316,
+            "sha256": "afa5fd238fd8e1ed874be9695815f7c8860b512703dc9626aba86490bb8c2888",
+            "byteIdentical": true
+          }
+        ],
+        "sourceVerified": true,
+        "rightsVerified": true,
+        "accessibilityVerified": true,
+        "qualityReview": "Original full-size PNG inspected: invented dialogue/fictional scene labels visible; human-owner field and empty Decision Owner chair communicate the joke. No real-event/vendor allegation, new regulatory requirement or proven performance claim. Text alternative and source/return links retained.",
+        "browserQA": {
+          "viewports": [
+            390,
+            1440
+          ],
+          "routes": [
+            "cartoon",
+            "home"
+          ],
+          "localCases": 4,
+          "liveCases": 4,
+          "axeViolations": 0,
+          "overflow": false,
+          "brokenImages": 0,
+          "scriptErrors": 0,
+          "navigationEscape": "passed"
+        },
+        "tests": {
+          "nodePassed": 114,
+          "renderedSitePassed": 40,
+          "releaseShellFilesStale": 0,
+          "topicHubs": 13,
+          "articlePlacements": 74,
+          "globalShellCheck": "reports2pre-existing unrelated article files; exact base-main bytes unchanged"
+        },
+        "actualProviderPostId": null,
+        "publicPostUrl": null,
+        "socialState": "website-only; no cartoon reservation/provider submission; same hardship-parent decision card already sent October15",
+        "sourceQuality": "Current NCUA AppendixB written workout controls and voluntary NIST governance guidance checked October16; existing October7 source analysis remains200/unchanged hash352c3de9. Cartoon is original fictional editorial synthesis, not legal certification."
+      }
     },
     {
       "id": "chart-2026-10-20",
@@ -608,7 +734,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "sourceCheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -636,7 +762,7 @@
       "nextStep": "Preserve approved385-word script; existing native provider owner must establish readable signed-in account/identity/cycle/quote, reconcile full ledger, then use bounded baseline synthesis only if all caps pass. Actual listening/final playback and authenticated existing-show upload access remain necessary. No unchanged access retry or October1 recreation.",
       "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "craftLearning": "Existing professional/social rubric retained; one proposed improvement is early decision framing with full-width mobile graphics and sound-off readability. No actual sound-viewed reference, previous full-cut comparison, shares/retention or seven-day outcome claimed.",
-      "coordinationRecheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "coordinationRecheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -676,6 +802,15 @@
         "newUserQuestionAsked": false,
         "nextOwner": "existing media coordinator; parent/existing native provider owner handles genuine access exception",
         "pauseQuestionAlreadyAsked": "Not evidenced in this task. The known October14 message asks to unlock; it is not evidence of a pause question or pause decision."
+      },
+      "coordinationDecision": {
+        "date": "2026-10-16",
+        "providerAccessAttempts": 0,
+        "reason": "Connected report supplies no changed usable account-view evidence after October15black capture/page-script route failure. Existing access/billing/quote and actual listening gates remain; no unchanged retry.",
+        "pauseQuestionAlreadyAsked": "Parent reports October15pause-or-continue-preparation question already asked; no answer. No repeat question and no pause without approval.",
+        "consumption": 0,
+        "newPermissions": 0,
+        "nextOwner": "existing cuai-media-coordinator with existing native provider owner/parent for genuine capability exception"
       }
     },
     {
@@ -697,7 +832,7 @@
         "https://airc.nist.gov/airmf-resources/playbook/govern/",
         "https://www.nist.gov/itl/ai-risk-management-framework"
       ],
-      "sourceCheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "sourceCheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": false,
@@ -727,7 +862,7 @@
       "socialDecision": "same-parent decision card already scheduled for October15 11:30ET; no second promotion or reservation; independent qualified website release remains possible after its own gates",
       "craftLearning": "No actual sound-viewed craft benchmark claimed. Earlier text-card treatment was rejected; current version1 uses original workflow visuals, selected Liam take1 and one caption layer. Native Safari provider task01a136c5-789c-7603-8bc4-d6124fab50ec worked October13; its controller is absent in this executor today. Historical blank-route limitation is not evidence that Safari settings require changes. Male fictional presenter is a format preference; no animated presenter or paid footage authorization.",
       "storyboardMemberPath": "short-video-oct15-storyboard.json",
-      "coordinationRecheckedAt": "2026-10-15T12:58:50.971319+00:00",
+      "coordinationRecheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "latestPreparationPackage": {
         "libraryFileId": "libfile_490258613ccc81918327cd0ded71aebc",
         "fileName": "cuai-oct12-media-preparation-handoff.zip",
@@ -1481,6 +1616,15 @@
         "newUserQuestionAsked": false,
         "nextOwner": "existing media coordinator; parent/existing native provider owner handles genuine access exception",
         "pauseQuestionAlreadyAsked": "Not evidenced in this task. The known October14 message asks to unlock; it is not evidence of a pause question or pause decision."
+      },
+      "coordinationDecision": {
+        "date": "2026-10-16",
+        "providerAccessAttempts": 0,
+        "reason": "Connected report supplies no changed usable account-view evidence after October15black capture/page-script route failure. Existing access/billing/quote and actual listening gates remain; no unchanged retry.",
+        "pauseQuestionAlreadyAsked": "Parent reports October15pause-or-continue-preparation question already asked; no answer. No repeat question and no pause without approval.",
+        "consumption": 0,
+        "newPermissions": 0,
+        "nextOwner": "existing cuai-media-coordinator with existing native provider owner/parent for genuine capability exception"
       }
     },
     {
@@ -1563,5 +1707,5 @@
       "status": "planned"
     }
   ],
-  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-15.json"
+  "lastCoordinationPass": "automation/reports/cuai-media-coordination-2026-10-16.json"
 }
