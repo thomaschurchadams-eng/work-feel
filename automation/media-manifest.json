@@ -384,9 +384,9 @@
       "id": "cartoon-2026-10-16",
       "format": "cartoon",
       "targetDate": "2026-10-16",
-      "status": "published",
+      "status": "withdrawn",
       "title": "Approved by whom?",
-      "preparationStatus": "published-verified-independent-website-cartoon",
+      "preparationStatus": "withdrawn per explicit user feedback; no replacement authorized",
       "preparedAt": "2026-10-12T13:39:33.834078+00:00",
       "sourceCheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "publicationNotBefore": "2026-10-16",
@@ -404,7 +404,7 @@
       "sourceVerified": true,
       "rightsVerified": true,
       "accessibilityVerified": true,
-      "productionVerified": true,
+      "productionVerified": false,
       "parentPublicationId": "credit-union-ai-collections-hardship-treatment-record",
       "rightsNote": "Original locally drawn CUAI vector illustration; invented fictional scene/dialogue, no third-party assets, logos, real member facts or paid footage.",
       "assetSha256": "1736772bdd0e7d7021526571a7e026734ce02492293f3956895847db7d1aefe9",
@@ -420,7 +420,7 @@
       },
       "assetPackageMemberPath": "site/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
       "preparedPageMemberPath": "site/media/human-decision-owner-cartoon.html",
-      "socialDecision": "not-selected; same hardship parent already sentOctober15 and Friday existing High reservation remains occupied",
+      "socialDecision": "withdrawn; never promote or automatically replace; no cartoon social reservation exists",
       "releaseGates": {
         "dueDate": "passed-2026-10-16",
         "sourceAndClaims": "Current NCUA AppendixB written workout controls and voluntary NIST governance guidance checked October16; existing October7 source analysis remains200/unchanged hash352c3de9. Cartoon is original fictional editorial synthesis, not legal certification.",
@@ -428,7 +428,7 @@
         "productionIdentityAndPublicURL": "exact productionREADY6dc01c8; full public page/PNG/home/sitemap and archive/lending return bytes verified"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Retain original published cartoon/archive; no extra hardship promotion. Continue existing October20chart andOctober22short preparation/release gates; no duplicate manager.",
+      "nextStep": "Complete live withdrawal verification and preserve this withdrawn state. Do not republish, recreate or substitute another cartoon without a new explicit instruction.",
       "coordinationRecheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "publishedAt": "2026-10-16T13:21:11.034Z",
       "publicationReceipt": {
@@ -531,6 +531,18 @@
         "publicPostUrl": null,
         "socialState": "website-only; no cartoon reservation/provider submission; same hardship-parent decision card already sent October15",
         "sourceQuality": "Current NCUA AppendixB written workout controls and voluntary NIST governance guidance checked October16; existing October7 source analysis remains200/unchanged hash352c3de9. Cartoon is original fictional editorial synthesis, not legal certification."
+      },
+      "withdrawnAt": "2026-10-16T13:29:47.906600+00:00",
+      "withdrawal": {
+        "requestedBy": "Tom",
+        "requestMessage": "Sentinel_0b2c47101b948191b00407584a77002b",
+        "userFeedback": "Remove the cartoon. It does not fit the requirements at all.",
+        "recordedAt": "2026-10-16T13:29:47.906600+00:00",
+        "reason": "Explicit user removal request; suitability requirements not met.",
+        "action": "Remove page, PNG, homepage media block and sitemap entry; retain source/release receipt in Git history and existing private preparation package. No replacement.",
+        "originalPublicationReceiptPreserved": true,
+        "siteVerification": "pending exact withdrawal deployment and public404 checks",
+        "distributionCheck": "No cartoon mediaAssetId or canonical/asset URL exists in current47item social queue; earlier decision-card promotion is a different asset and is unchanged."
       }
     },
     {
