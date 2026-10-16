@@ -428,7 +428,7 @@
         "productionIdentityAndPublicURL": "exact productionREADY6dc01c8; full public page/PNG/home/sitemap and archive/lending return bytes verified"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Keep withdrawn; never republish or replace automatically. Main production URLs are404 and all entry points removed. Report two public historical snapshots to parent for targeted historical-copy cleanup; preserve original source and receipt.",
+      "nextStep": "Keep withdrawn; do not republish or replace. Canonical URLs and all four identified historical page/image URLs are404. Four exact routing rules retain reversible control; preserve deployment/source/history and original publication receipt.",
       "coordinationRecheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "publishedAt": "2026-10-16T13:21:11.034Z",
       "publicationReceipt": {
@@ -619,16 +619,203 @@
         },
         "distributionCheck": "No cartoon mediaAssetId or canonical/asset URL exists in current47item social queue; earlier decision-card promotion is a different asset and is unchanged.",
         "independentCopies": {
-          "status": "two prior immutable deployment copies remain anonymously accessible; do not claim global deletion",
-          "deploymentIds": [
-            "dpl_2qWEEAPUudVbwrKiuQfeZJuDqKkh",
-            "dpl_3kxkK45QeYH3K9uc3hnkmEn5bpdg"
-          ],
-          "publicImageHTTP": 200,
-          "originalImageHashMatches": true,
-          "checkedAt": "2026-10-16T13:33:56.020225+00:00",
-          "blocker": "Current toolset exposes no deployment-delete/per-deployment-protection action and no Vercel CLI is installed. Broad project protection/permission changes and deletion of deployment history were not performed. Parent needs the exact snapshot cleanup decision/control; canonical-site withdrawal is complete."
-        }
+          "status": "resolved; all four identified historical page/image URLs return404 without cartoon bytes",
+          "initialObservation": {
+            "status": "two prior immutable deployment copies remain anonymously accessible; do not claim global deletion",
+            "deploymentIds": [
+              "dpl_2qWEEAPUudVbwrKiuQfeZJuDqKkh",
+              "dpl_3kxkK45QeYH3K9uc3hnkmEn5bpdg"
+            ],
+            "publicImageHTTP": 200,
+            "originalImageHashMatches": true,
+            "checkedAt": "2026-10-16T13:33:56.020225+00:00",
+            "blocker": "Current toolset exposes no deployment-delete/per-deployment-protection action and no Vercel CLI is installed. Broad project protection/permission changes and deletion of deployment history were not performed. Parent needs the exact snapshot cleanup decision/control; canonical-site withdrawal is complete."
+          },
+          "resolution": {
+            "checkedAt": "2026-10-16T13:43:07.765989+00:00",
+            "status": "resolved; all four identified historical page/image URLs return404 without cartoon bytes",
+            "projectId": "prj_EwkHkhqbYo1v87ZjITxqdLyy9gI7",
+            "liveVersionId": "be403142-2c8f-4aea-8a93-20c117e12263",
+            "baselineRoutes": [],
+            "baselineVersion": null,
+            "rules": [
+              {
+                "id": "1deb218d-9bb9-4d83-91a8-d6c267d626e4",
+                "name": "withdraw-cartoon-oct16-1-1",
+                "description": "Explicit user withdrawal Sentinel_0b2c47101b948191b00407584a77002b; exact historical host and cartoon path only.",
+                "enabled": true,
+                "staged": false,
+                "route": {
+                  "src": "/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+                  "status": 404,
+                  "has": [
+                    {
+                      "type": "host",
+                      "value": "work-feel-kvs8h1nha-tcas-projects-cf2e0d2a.vercel.app"
+                    }
+                  ]
+                },
+                "srcSyntax": "equals",
+                "routeType": "set_status"
+              },
+              {
+                "id": "db710e5e-a20a-4a4d-a4f9-d9bbd6c61714",
+                "name": "withdraw-cartoon-oct16-1-2",
+                "description": "Explicit user withdrawal Sentinel_0b2c47101b948191b00407584a77002b; exact historical host and cartoon path only.",
+                "enabled": true,
+                "staged": false,
+                "route": {
+                  "src": "/media/human-decision-owner-cartoon.html",
+                  "status": 404,
+                  "has": [
+                    {
+                      "type": "host",
+                      "value": "work-feel-kvs8h1nha-tcas-projects-cf2e0d2a.vercel.app"
+                    }
+                  ]
+                },
+                "srcSyntax": "equals",
+                "routeType": "set_status"
+              },
+              {
+                "id": "2d8109b0-4bd9-4887-8b43-589f867ac158",
+                "name": "withdraw-cartoon-oct16-2-1",
+                "description": "Explicit user withdrawal Sentinel_0b2c47101b948191b00407584a77002b; exact historical host and cartoon path only.",
+                "enabled": true,
+                "staged": false,
+                "route": {
+                  "src": "/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+                  "status": 404,
+                  "has": [
+                    {
+                      "type": "host",
+                      "value": "work-feel-kypqr57py-tcas-projects-cf2e0d2a.vercel.app"
+                    }
+                  ]
+                },
+                "srcSyntax": "equals",
+                "routeType": "set_status"
+              },
+              {
+                "id": "a5de2992-c484-4792-aaf1-a01ab38a0eeb",
+                "name": "withdraw-cartoon-oct16-2-2",
+                "description": "Explicit user withdrawal Sentinel_0b2c47101b948191b00407584a77002b; exact historical host and cartoon path only.",
+                "enabled": true,
+                "staged": false,
+                "route": {
+                  "src": "/media/human-decision-owner-cartoon.html",
+                  "status": 404,
+                  "has": [
+                    {
+                      "type": "host",
+                      "value": "work-feel-kypqr57py-tcas-projects-cf2e0d2a.vercel.app"
+                    }
+                  ]
+                },
+                "srcSyntax": "equals",
+                "routeType": "set_status"
+              }
+            ],
+            "anonymousChecks": {
+              "checkedAt": "2026-10-16T13:41:24.423058+00:00",
+              "checks": [
+                {
+                  "url": "https://work-feel-kvs8h1nha-tcas-projects-cf2e0d2a.vercel.app/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+                  "http": 404,
+                  "mime": "text/plain; charset=utf-8",
+                  "responseBytes": 79,
+                  "containsCartoonBytes": false,
+                  "anonymous": true,
+                  "redirected": false
+                },
+                {
+                  "url": "https://work-feel-kvs8h1nha-tcas-projects-cf2e0d2a.vercel.app/media/human-decision-owner-cartoon.html",
+                  "http": 404,
+                  "mime": "text/plain; charset=utf-8",
+                  "responseBytes": 79,
+                  "containsCartoonBytes": false,
+                  "anonymous": true,
+                  "redirected": false
+                },
+                {
+                  "url": "https://work-feel-kvs8h1nha-tcas-projects-cf2e0d2a.vercel.app/media/hardship-treatment-decision-card.html",
+                  "http": 200,
+                  "unrelatedBytesUnchanged": true
+                },
+                {
+                  "url": "https://work-feel-kvs8h1nha-tcas-projects-cf2e0d2a.vercel.app/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
+                  "http": 200,
+                  "unrelatedBytesUnchanged": true
+                },
+                {
+                  "url": "https://work-feel-kypqr57py-tcas-projects-cf2e0d2a.vercel.app/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+                  "http": 404,
+                  "mime": "text/plain; charset=utf-8",
+                  "responseBytes": 79,
+                  "containsCartoonBytes": false,
+                  "anonymous": true,
+                  "redirected": false
+                },
+                {
+                  "url": "https://work-feel-kypqr57py-tcas-projects-cf2e0d2a.vercel.app/media/human-decision-owner-cartoon.html",
+                  "http": 404,
+                  "mime": "text/plain; charset=utf-8",
+                  "responseBytes": 79,
+                  "containsCartoonBytes": false,
+                  "anonymous": true,
+                  "redirected": false
+                },
+                {
+                  "url": "https://work-feel-kypqr57py-tcas-projects-cf2e0d2a.vercel.app/media/hardship-treatment-decision-card.html",
+                  "http": 200,
+                  "unrelatedBytesUnchanged": true
+                },
+                {
+                  "url": "https://work-feel-kypqr57py-tcas-projects-cf2e0d2a.vercel.app/assets/cuai-hardship-treatment-decision-card-2026-10-13.png",
+                  "http": 200,
+                  "unrelatedBytesUnchanged": true
+                },
+                {
+                  "url": "https://creditunionainews.com/index.html",
+                  "http": 200,
+                  "canonicalBytesUnchanged": true
+                },
+                {
+                  "url": "https://creditunionainews.com/sitemap.xml",
+                  "http": 200,
+                  "canonicalBytesUnchanged": true
+                },
+                {
+                  "url": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+                  "http": 200,
+                  "canonicalBytesUnchanged": true
+                },
+                {
+                  "url": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+                  "http": 404,
+                  "canonicalStillWithdrawn": true
+                },
+                {
+                  "url": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
+                  "http": 404,
+                  "canonicalStillWithdrawn": true
+                }
+              ]
+            },
+            "rollback": {
+              "originalProductionVersion": null,
+              "method": "Use vercel_edit_route on ONLY the four recorded IDs with each full retained rule object and enabled:false; inspect staged diff preserving any later/concurrent routes; promote that reviewed version. Do not delete historical deployments or change project protection.",
+              "automaticRollbackAuthorized": false
+            },
+            "officialReferences": [
+              "https://vercel.com/docs/routing/project-routing-rules",
+              "https://vercel.com/docs/cli/routes"
+            ],
+            "scope": "Only four equals-path/host-specific404 rules. No wildcard, access/security setting, deployment deletion, source restoration or replacement. Existing deployment history retained."
+          },
+          "blocker": null
+        },
+        "historicalRoutingReceiptVersion": "be403142-2c8f-4aea-8a93-20c117e12263"
       }
     },
     {
