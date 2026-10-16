@@ -428,7 +428,7 @@
         "productionIdentityAndPublicURL": "exact productionREADY6dc01c8; full public page/PNG/home/sitemap and archive/lending return bytes verified"
       },
       "nextOwner": "cuai-media-coordinator",
-      "nextStep": "Complete live withdrawal verification and preserve this withdrawn state. Do not republish, recreate or substitute another cartoon without a new explicit instruction.",
+      "nextStep": "Keep withdrawn; never republish or replace automatically. Main production URLs are404 and all entry points removed. Report two public historical snapshots to parent for targeted historical-copy cleanup; preserve original source and receipt.",
       "coordinationRecheckedAt": "2026-10-16T13:23:41.820541+00:00",
       "publishedAt": "2026-10-16T13:21:11.034Z",
       "publicationReceipt": {
@@ -541,8 +541,94 @@
         "reason": "Explicit user removal request; suitability requirements not met.",
         "action": "Remove page, PNG, homepage media block and sitemap entry; retain source/release receipt in Git history and existing private preparation package. No replacement.",
         "originalPublicationReceiptPreserved": true,
-        "siteVerification": "pending exact withdrawal deployment and public404 checks",
-        "distributionCheck": "No cartoon mediaAssetId or canonical/asset URL exists in current47item social queue; earlier decision-card promotion is a different asset and is unchanged."
+        "siteVerification": {
+          "verifiedAt": "2026-10-16T13:33:56.020225+00:00",
+          "withdrawalCommit": "0048e7954da0f709eb378cc75bfacd0ebd1cf70d",
+          "deploymentId": "dpl_5p5VPVi8jM35XcYHpLmHp73kkpbi",
+          "deploymentTarget": "production",
+          "deploymentState": "READY",
+          "workflowRunId": 38908487375,
+          "workflowConclusion": "success",
+          "publicChecks": [
+            {
+              "url": "https://creditunionainews.com/media/human-decision-owner-cartoon.html",
+              "http": 404
+            },
+            {
+              "url": "https://creditunionainews.com/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+              "http": 404
+            },
+            {
+              "url": "https://work-feel.vercel.app/media/human-decision-owner-cartoon.html",
+              "http": 404
+            },
+            {
+              "url": "https://work-feel.vercel.app/assets/cuai-human-decision-owner-cartoon-2026-10-16.png",
+              "http": 404
+            },
+            {
+              "url": "https://creditunionainews.com/index.html",
+              "http": 200,
+              "noCartoonReference": true,
+              "bytesMatchReviewed": true
+            },
+            {
+              "url": "https://creditunionainews.com/sitemap.xml",
+              "http": 200,
+              "noCartoonReference": true,
+              "bytesMatchReviewed": true
+            },
+            {
+              "url": "https://creditunionainews.com/media/hardship-treatment-decision-card.html",
+              "http": 200,
+              "noCartoonReference": true,
+              "bytesMatchReviewed": true
+            },
+            {
+              "url": "https://creditunionainews.com/media/credit-union-membership-q2-2026.html",
+              "http": 200,
+              "noCartoonReference": true,
+              "bytesMatchReviewed": true
+            }
+          ],
+          "liveHomepageQA": [
+            {
+              "width": 390,
+              "http": 200,
+              "h1": 1,
+              "overflow": false,
+              "brokenImages": 0,
+              "draft": false,
+              "cartoonReferences": false,
+              "errors": [],
+              "violations": []
+            },
+            {
+              "width": 1440,
+              "http": 200,
+              "h1": 1,
+              "overflow": false,
+              "brokenImages": 0,
+              "draft": false,
+              "cartoonReferences": false,
+              "errors": [],
+              "violations": []
+            }
+          ],
+          "nodeTestsPassed": 114
+        },
+        "distributionCheck": "No cartoon mediaAssetId or canonical/asset URL exists in current47item social queue; earlier decision-card promotion is a different asset and is unchanged.",
+        "independentCopies": {
+          "status": "two prior immutable deployment copies remain anonymously accessible; do not claim global deletion",
+          "deploymentIds": [
+            "dpl_2qWEEAPUudVbwrKiuQfeZJuDqKkh",
+            "dpl_3kxkK45QeYH3K9uc3hnkmEn5bpdg"
+          ],
+          "publicImageHTTP": 200,
+          "originalImageHashMatches": true,
+          "checkedAt": "2026-10-16T13:33:56.020225+00:00",
+          "blocker": "Current toolset exposes no deployment-delete/per-deployment-protection action and no Vercel CLI is installed. Broad project protection/permission changes and deletion of deployment history were not performed. Parent needs the exact snapshot cleanup decision/control; canonical-site withdrawal is complete."
+        }
       }
     },
     {
