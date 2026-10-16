@@ -3246,6 +3246,35 @@
       ],
       "summary": "The daily publisher completed one High News article, bringing the week to 6 of 8 and meeting Thursday's 1-of-1 slot. Its exact company-page reservation remains unique and scheduled for October 16 at 12:30 p.m. ET; the existing October 15 media reservation was not recreated or modified. Published one distinct source-led Alert on NCUA urgent disaster-recovery grants of up to $15,000 for eligible low-income-designated credit unions. The atomic package preserves the complete 61-entry daily history and appends this operating receipt. The latest 15 articles remain 13 News and 2 Insights across 15 distinct beats; risk/compliance appears in 13, member service in 9, operations in 8, board strategy and IT/data/cybersecurity in 7 each, while marketing/growth, HR/training and payments/deposits appear in 2 each. The strongest next candidate remains AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes, preferably an Insight, data brief or case study. Latest trusted measurement remains October 2, so acquisition depth and CAI conversion evidence remain constrained and the goal window is stale. The W42 distribution scan was not duplicated. No full article, new social post, external contact, spend, credential, schedule, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-16T07:45:00-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "CUAI verified-operations run 38893369076 attempt 1 failed at Verify authorization and process bounded operations for commit 44d81cfffdc1c733df9f1acce9ceca6e1540626a.",
+      "status": "recovered",
+      "workUnits": {
+        "workflowRunsInspected": 1,
+        "workflowAttemptsInspected": 2,
+        "operationReceiptArtifactsRead": 2,
+        "providerStateSnapshotsReconciled": 1,
+        "sameRunFailedJobRetries": 1,
+        "socialSchedulingAttempts": 1,
+        "providerPostsCreated": 1,
+        "socialQueueEntriesInspected": 47,
+        "productionDeploymentsChecked": 2,
+        "liveRoutesChecked": 3,
+        "runtimeErrorChecks": 1,
+        "duplicateReservationsCreated": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer",
+        "CreditUnionAI News production"
+      ],
+      "summary": "Attempt 1 received an acknowledged HTTP 400 queue_item_not_found before any Buffer mutation while the exact-SHA production deployment was completing its initial route propagation. The preserved Buffer snapshot contained no matching post, current main retained one unique queued reservation, and the failed stage had no ambiguous write. Retried only the failed job as attempt 2 of the original run/SHA. Attempt 2 returned HTTP 201 with duplicate=false, post 6ad20dda2fe657de6ea0f6d9, company channel CreditUnionAI News, approved image attached, and dueAt 2026-10-19T16:30:00.000Z. Run 38893369076 then completed successfully, main recorded the verified receipt at e6855385c647a317760fcce9ac0cf5d00b21b66c, its production deployment is READY, both Friday articles and the homepage return HTTP 200, and no production runtime errors were observed. No PR #260 code or unapproved shared-checkpoint adapter was used. Durable prevention remains to publish an authoritative recovery README and, before any automatic cross-run recovery, separately authorize and release a tested shared checkpoint with atomic per-key lease and closure read.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
