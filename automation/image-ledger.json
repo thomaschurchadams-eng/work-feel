@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-member-offer-evidence-loop",
+      "articleUrl": "/insight-credit-union-ai-member-offer-evidence-loop.html",
+      "imagePath": "/assets/credit-union-ai-member-offer-controls.jpg",
+      "publishedAt": "2026-10-16T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-editorial-paper-art",
+      "subject": "member-offer-governance",
+      "composition": "closed-loop-workflow",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-teal-warm-coral",
+      "lighting": "soft-directional-studio",
+      "texture": "layered-paper-matte-card-and-translucent-acrylic",
+      "scene": "member-offer-cards-pass-through-permission-eligibility-suppression-delivery-and-outcome-checkpoints-before-returning-to-review",
+      "conceptScore": 98.9,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "4408fcfd14c73c6125fc53b1d6371d078964e0456aba04b959735e0a9f40a29b",
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "member-offer-evidence-loop",
+          "score": 92.4
+        },
+        {
+          "medium": "editorial-collage",
+          "subject": "consent-suppression-and-outcomes",
+          "score": 91.2
+        }
+      ]
+    },
+    {
       "id": "fsb-ai-sound-practices-financial-institutions",
       "articleUrl": "/news/fsb-ai-sound-practices-financial-institutions.html",
       "imagePath": "/assets/g7-ai-cyber-tabletop-finance.jpg",

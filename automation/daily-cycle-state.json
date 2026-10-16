@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-16",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -34,6 +34,15 @@
         "primaryFunctionalAudience": "Risk, compliance, technology, model-risk and operational-resilience leaders",
         "promotionPriority": "High",
         "socialDecision": "eligible-high-priority-pending-live-verification-and-shared-slot-selection"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "An Evidence Loop for AI-Assisted Credit Union Member Offers",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-member-offer-evidence-loop.html",
+        "primaryFunctionalAudience": "Marketing, growth, digital-banking, member-experience and compliance leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "not-selected-high-news-precedence-and-shared-daily-cap"
       }
     ],
     "rejections": [
@@ -82,12 +91,12 @@
         "reason": "routine association and promotional material rather than a consequential operating development"
       }
     ],
-    "status": "article-slot-1-complete",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline names the finalized financial-institution practice set and the opening leads with an end-to-end evidence test. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "two-article-cycle-complete",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the News headline names the finalized practice set and its opening leads with an end-to-end evidence test; the Insight headline and opening lead with the offer workflow and reconstructable member outcome. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "nextCoverageGap": "AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes",
-    "updatedAt": "2026-10-16T07:20:00-04:00"
+    "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
+    "updatedAt": "2026-10-16T08:05:00-04:00"
   },
   "history": [
     {

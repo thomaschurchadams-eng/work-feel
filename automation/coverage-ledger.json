@@ -3,6 +3,43 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-member-offer-evidence-loop",
+      "title": "An Evidence Loop for AI-Assisted Credit Union Member Offers",
+      "url": "/insight-credit-union-ai-member-offer-evidence-loop.html",
+      "publishedAt": "2026-10-16T07:35:00-04:00",
+      "section": "insights",
+      "beat": "marketing-consent-and-member-outcomes",
+      "functions": [
+        "marketing-growth",
+        "member-service",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "generative-ai"
+      ],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing, growth, digital-banking, member-experience and compliance leaders",
+      "secondaryAudiences": [
+        "privacy and legal teams",
+        "data and analytics leaders",
+        "internal-audit leaders"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "not-selected-high-news-precedence-and-shared-daily-cap",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening lead with the offer workflow and reconstructable member outcome. Selection, sourcing and classification were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": [
+        "/news/dort-financial-movemint-personalization-cloud.html",
+        "/insight-credit-union-ai-member-communications-review.html"
+      ],
+      "sourceTier": 1,
+      "score": 90.8
+    },
+    {
       "id": "fsb-ai-sound-practices-financial-institutions",
       "title": "FSB Finalizes 12 AI Practices for Financial Institutions",
       "url": "/news/fsb-ai-sound-practices-financial-institutions.html",
