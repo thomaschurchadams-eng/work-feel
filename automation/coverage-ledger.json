@@ -3,6 +3,41 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-board-meeting-guidance-gap",
+      "title": "Credit Unions Seek Guidance as Board Meetings Move Off Monthly Cycle",
+      "url": "/news/credit-union-board-meeting-guidance-gap.html",
+      "publishedAt": "2026-10-19T07:35:00-04:00",
+      "section": "news",
+      "beat": "board-governance-and-meeting-cadence",
+      "functions": [
+        "board-strategy",
+        "risk-compliance",
+        "finance-treasury",
+        "operations"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Board, governance, compliance, finance and risk leaders",
+      "secondaryAudiences": [
+        "legal teams",
+        "internal-audit leaders",
+        "credit-union executives"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: both News packages lead with the concrete operating distinction—preview versus availability, and meeting frequency versus control frequency. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-board-reporting-decision-evidence.html",
+        "/news/msufcu-ufcu-13-5-billion-combination.html"
+      ],
+      "sourceTier": 1,
+      "score": 83.2
+    },
+    {
       "id": "jack-henry-google-cloud-tokenized-deposits",
       "title": "Jack Henry Plans Tokenized-Deposit Path for Credit Unions",
       "url": "/news/jack-henry-google-cloud-tokenized-deposits.html",

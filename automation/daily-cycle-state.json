@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-19",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -32,6 +32,15 @@
         "title": "Jack Henry Plans Tokenized-Deposit Path for Credit Unions",
         "url": "https://creditunionainews.com/news/jack-henry-google-cloud-tokenized-deposits.html",
         "primaryFunctionalAudience": "Payments, treasury, digital-assets, core-technology and risk leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved"
+      },
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Credit Unions Seek Guidance as Board Meetings Move Off Monthly Cycle",
+        "url": "https://creditunionainews.com/news/credit-union-board-meeting-guidance-gap.html",
+        "primaryFunctionalAudience": "Board, governance, compliance, finance and risk leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved"
       }
@@ -78,12 +87,12 @@
         "reason": "secondary reporting without a named credit-union deployment or sufficient primary corroboration"
       }
     ],
-    "status": "first-article-published-second-slot-pending",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening distinguish a planned core integration from an available credit-union product. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "two-article-cycle-complete",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: both News packages lead with the concrete operating distinction—preview versus availability, and meeting frequency versus control frequency. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
-    "updatedAt": "2026-10-19T07:20:00-04:00"
+    "updatedAt": "2026-10-19T07:50:00-04:00"
   },
   "history": [
     {

@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-board-meeting-guidance-gap",
+      "articleUrl": "/news/credit-union-board-meeting-guidance-gap.html",
+      "imagePath": "/assets/cubma-board-meeting-guidance.jpg",
+      "publishedAt": "2026-10-19T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-isometric-illustration",
+      "subject": "board-meeting-cadence-and-control-evidence",
+      "composition": "calendar-to-governance-checkpoints",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-teal-warm-gold",
+      "lighting": "soft-directional-studio",
+      "texture": "matte-dimensional-paper-and-glass",
+      "scene": "twelve-month-calendar-consolidates-into-six-board-checkpoints-while-continuous-reporting-controls-remain-visible",
+      "conceptScore": 96.1,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "6f44b1d1b6fd0938008e6efd1106c8c11d7d9949b897dd1d302dc9bbd06d4548",
+      "conceptAlternatives": [
+        {
+          "medium": "tactile-editorial-paper-art",
+          "subject": "board-calendar-controls",
+          "score": 92.1
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "governance-cadence",
+          "score": 91.4
+        }
+      ]
+    },
+    {
       "id": "jack-henry-google-cloud-tokenized-deposits",
       "articleUrl": "/news/jack-henry-google-cloud-tokenized-deposits.html",
       "imagePath": "/assets/jack-henry-google-cloud-tokenized-deposits.jpg",
