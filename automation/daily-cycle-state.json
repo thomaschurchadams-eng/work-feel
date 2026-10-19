@@ -6,99 +6,179 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-16",
-    "fullArticleCount": 2,
+    "date": "2026-10-19",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
+      "tokenized-deposits-and-core-payments",
+      "board-governance-and-meeting-cadence",
+      "payments-antitrust",
+      "cybersecurity-and-phishing",
+      "consumer-lending-and-ai-trust",
+      "ach-and-first-party-fraud",
       "responsible-ai-and-financial-stability",
-      "ai-cyber-resilience-and-g7-coordination",
-      "credit-union-regulatory-relief",
-      "stablecoin-and-mortgage-policy",
-      "financial-stability-and-third-party-risk",
-      "frontier-model-evaluation",
-      "capital-markets-and-ai-risk",
-      "private-credit-and-deposit-competition",
-      "international-bank-policy",
-      "frontier-ai-platforms",
-      "industry-association-and-education",
-      "marketing-consent-and-member-outcomes"
+      "disaster-recovery",
+      "fidelity-bond-regulation",
+      "cybersecurity-vendor-consolidation",
+      "macroeconomics-and-ai-inflation",
+      "digital-identity-and-agent-authorization"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "FSB Finalizes 12 AI Practices for Financial Institutions",
-        "url": "https://creditunionainews.com/news/fsb-ai-sound-practices-financial-institutions.html",
-        "primaryFunctionalAudience": "Risk, compliance, technology, model-risk and operational-resilience leaders",
-        "promotionPriority": "High",
-        "socialDecision": "eligible-high-priority-pending-live-verification-and-shared-slot-selection"
-      },
-      {
-        "type": "article",
-        "classification": "Insights",
-        "title": "An Evidence Loop for AI-Assisted Credit Union Member Offers",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-member-offer-evidence-loop.html",
-        "primaryFunctionalAudience": "Marketing, growth, digital-banking, member-experience and compliance leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "not-selected-high-news-precedence-and-shared-daily-cap"
+        "title": "Jack Henry Plans Tokenized-Deposit Path for Credit Unions",
+        "url": "https://creditunionainews.com/news/jack-henry-google-cloud-tokenized-deposits.html",
+        "primaryFunctionalAudience": "Payments, treasury, digital-assets, core-technology and risk leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved"
       }
     ],
     "rejections": [
       {
-        "title": "G7 Approves AI Cyber Tabletop Exercises",
-        "reason": "material supporting evidence incorporated into the selected FSB lifecycle-and-resilience article rather than split into overlapping coverage"
+        "title": "Apple Seeks Review of Credit-Union Card-Issuer Antitrust Class Action",
+        "reason": "the controlling appellate filing was not accessible in the bounded scan, so the paywalled report could not support independent publication verification"
       },
       {
-        "title": "NCUA Opens a Twelfth Regulatory-Relief Round",
-        "reason": "a current trade report, but the primary proposal record was not sufficiently accessible for independent publication verification"
+        "title": "Managed-IT Report Warns Credit Unions About AI Phishing",
+        "reason": "a vendor-origin report without accessible methodology and with substantial overlap with recent cyber-resilience coverage"
       },
       {
-        "title": "America’s Credit Unions Promotes a Stablecoin and Mortgage Webinar",
-        "reason": "promotional and educational programming rather than a completed rule, implementation or measured result"
+        "title": "Survey Says AI Discourages Some Consumers From Seeking Loans",
+        "reason": "the paywalled survey methodology and sample could not be independently evaluated"
+      },
+      {
+        "title": "Nacha Proposes First-Party Fraud Rules",
+        "reason": "an older October 13 development whose primary proposal record was not independently verified in the bounded scan"
+      },
+      {
+        "title": "FSB Finalizes AI Sound Practices",
+        "reason": "duplicate of the October 16 High-priority article already published"
       },
       {
         "title": "NCUA Disaster-Recovery Grants",
-        "reason": "duplicate of the October 15 Alert already published from the primary NCUA announcement"
+        "reason": "duplicate of the October 15 Alert already published"
       },
       {
-        "title": "IMF Warns AI Could Amplify Financial-Stability Risk",
-        "reason": "broad analysis that overlaps the newer, finalized FSB practice set without a separate credit-union operating event"
+        "title": "NCUA Proposes Fidelity-Bond Relief",
+        "reason": "duplicate of the October 14 Alert and subsequent operating review"
       },
       {
-        "title": "Anthropic Expands Evaluator Access Through METR",
-        "reason": "AI-lab governance development with limited direct credit-union operating consequence"
+        "title": "Proofpoint Announces Varonis Acquisition",
+        "reason": "broad cybersecurity-vendor consolidation without a distinct credit-union implementation or immediate control change"
       },
       {
-        "title": "Investors Price AI-Related Default Insurance Risk",
-        "reason": "capital-markets signal without a discrete credit-union implementation, rule or operational event"
+        "title": "Federal Reserve Officials Discuss AI and Inflation",
+        "reason": "macroeconomic context without a specific credit-union action, rule or measured operating result"
       },
       {
-        "title": "Private-Credit Firms Face AI-Driven Funding Pressure",
-        "reason": "indirect competitive context without a specific credit-union decision or new operating evidence"
-      },
-      {
-        "title": "UK Reviews Bank Tax Options",
-        "reason": "foreign bank-specific policy discussion without a concrete U.S. credit-union consequence"
-      },
-      {
-        "title": "OpenAI Announces New Education Products",
-        "reason": "vendor launch without a named credit-union deployment or immediate operating decision"
-      },
-      {
-        "title": "Credit Union Association Marks International Credit Union Day",
-        "reason": "routine association and promotional material rather than a consequential operating development"
+        "title": "World ID Promotes Agent Authorization for Banks",
+        "reason": "secondary reporting without a named credit-union deployment or sufficient primary corroboration"
       }
     ],
-    "status": "two-article-cycle-complete",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the News headline names the finalized practice set and its opening leads with an end-to-end evidence test; the Insight headline and opening lead with the offer workflow and reconstructable member outcome. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "first-article-published-second-slot-pending",
+    "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening distinguish a planned core integration from an available credit-union product. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
-    "updatedAt": "2026-10-16T08:05:00-04:00"
+    "updatedAt": "2026-10-19T07:20:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-16",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "responsible-ai-and-financial-stability",
+        "ai-cyber-resilience-and-g7-coordination",
+        "credit-union-regulatory-relief",
+        "stablecoin-and-mortgage-policy",
+        "financial-stability-and-third-party-risk",
+        "frontier-model-evaluation",
+        "capital-markets-and-ai-risk",
+        "private-credit-and-deposit-competition",
+        "international-bank-policy",
+        "frontier-ai-platforms",
+        "industry-association-and-education",
+        "marketing-consent-and-member-outcomes"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "FSB Finalizes 12 AI Practices for Financial Institutions",
+          "url": "https://creditunionainews.com/news/fsb-ai-sound-practices-financial-institutions.html",
+          "primaryFunctionalAudience": "Risk, compliance, technology, model-risk and operational-resilience leaders",
+          "promotionPriority": "High",
+          "socialDecision": "eligible-high-priority-pending-live-verification-and-shared-slot-selection"
+        },
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "An Evidence Loop for AI-Assisted Credit Union Member Offers",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-member-offer-evidence-loop.html",
+          "primaryFunctionalAudience": "Marketing, growth, digital-banking, member-experience and compliance leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "not-selected-high-news-precedence-and-shared-daily-cap"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "G7 Approves AI Cyber Tabletop Exercises",
+          "reason": "material supporting evidence incorporated into the selected FSB lifecycle-and-resilience article rather than split into overlapping coverage"
+        },
+        {
+          "title": "NCUA Opens a Twelfth Regulatory-Relief Round",
+          "reason": "a current trade report, but the primary proposal record was not sufficiently accessible for independent publication verification"
+        },
+        {
+          "title": "America’s Credit Unions Promotes a Stablecoin and Mortgage Webinar",
+          "reason": "promotional and educational programming rather than a completed rule, implementation or measured result"
+        },
+        {
+          "title": "NCUA Disaster-Recovery Grants",
+          "reason": "duplicate of the October 15 Alert already published from the primary NCUA announcement"
+        },
+        {
+          "title": "IMF Warns AI Could Amplify Financial-Stability Risk",
+          "reason": "broad analysis that overlaps the newer, finalized FSB practice set without a separate credit-union operating event"
+        },
+        {
+          "title": "Anthropic Expands Evaluator Access Through METR",
+          "reason": "AI-lab governance development with limited direct credit-union operating consequence"
+        },
+        {
+          "title": "Investors Price AI-Related Default Insurance Risk",
+          "reason": "capital-markets signal without a discrete credit-union implementation, rule or operational event"
+        },
+        {
+          "title": "Private-Credit Firms Face AI-Driven Funding Pressure",
+          "reason": "indirect competitive context without a specific credit-union decision or new operating evidence"
+        },
+        {
+          "title": "UK Reviews Bank Tax Options",
+          "reason": "foreign bank-specific policy discussion without a concrete U.S. credit-union consequence"
+        },
+        {
+          "title": "OpenAI Announces New Education Products",
+          "reason": "vendor launch without a named credit-union deployment or immediate operating decision"
+        },
+        {
+          "title": "Credit Union Association Marks International Credit Union Day",
+          "reason": "routine association and promotional material rather than a consequential operating development"
+        }
+      ],
+      "status": "two-article-cycle-complete",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the News headline names the finalized practice set and its opening leads with an end-to-end evidence test; the Insight headline and opening lead with the offer workflow and reconstructable member outcome. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
+      "updatedAt": "2026-10-16T08:05:00-04:00"
+    },
     {
       "date": "2026-10-15",
       "fullArticleCount": 1,

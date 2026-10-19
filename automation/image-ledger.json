@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "jack-henry-google-cloud-tokenized-deposits",
+      "articleUrl": "/news/jack-henry-google-cloud-tokenized-deposits.html",
+      "imagePath": "/assets/jack-henry-google-cloud-tokenized-deposits.jpg",
+      "publishedAt": "2026-10-19T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-isometric-illustration",
+      "subject": "tokenized-deposit-core-connection",
+      "composition": "institution-to-ledger-connection",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-teal-warm-gold",
+      "lighting": "soft-directional-studio",
+      "texture": "matte-dimensional-paper-and-glass",
+      "scene": "community-financial-institution-links-deposit-records-to-secure-programmable-ledger-with-control-checkpoints",
+      "conceptScore": 96.4,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "af25a115c1bdbe02effbc787650d3d6fc47b6f9bf67be652cd93f4da43c4930d",
+      "conceptAlternatives": [
+        {
+          "medium": "tactile-editorial-paper-art",
+          "subject": "tokenized-deposit-ledger",
+          "score": 91.8
+        },
+        {
+          "medium": "editorial-collage",
+          "subject": "core-and-programmable-settlement",
+          "score": 90.9
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-member-offer-evidence-loop",
       "articleUrl": "/insight-credit-union-ai-member-offer-evidence-loop.html",
       "imagePath": "/assets/credit-union-ai-member-offer-controls.jpg",
@@ -86,11 +120,22 @@
       "texture": "glass-metal-stone",
       "scene": "payment-card-moves-through-appellate-review-gate-beneath-balanced-scales",
       "conceptScore": 98.9,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "78d32a679a633e0ecd05737c652bd29fc2a662116d41da1b1244961cb134eb0d",
       "conceptAlternatives": [
-        {"medium": "architectural-paper-cut", "subject": "charter-specific-payment-control-map", "score": 91.8},
-        {"medium": "editorial-collage", "subject": "appeal-path-and-interchange-data", "score": 90.9}
+        {
+          "medium": "architectural-paper-cut",
+          "subject": "charter-specific-payment-control-map",
+          "score": 91.8
+        },
+        {
+          "medium": "editorial-collage",
+          "subject": "appeal-path-and-interchange-data",
+          "score": 90.9
+        }
       ]
     },
     {
@@ -109,11 +154,22 @@
       "texture": "layered-paper-and-cork",
       "scene": "employee-development-path-connects-training-human-review-measured-results-and-a-compensation-decision-checkpoint",
       "conceptScore": 98.6,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "6d6eb42c5e00ecc44ad59cbfb8fc2a620e74c794a98e17b11044d64f02e47df0",
       "conceptAlternatives": [
-        {"medium": "editorial-collage", "subject": "ai-skills-and-compensation", "score": 91.6},
-        {"medium": "architectural-isometric", "subject": "workforce-learning-controls", "score": 90.8}
+        {
+          "medium": "editorial-collage",
+          "subject": "ai-skills-and-compensation",
+          "score": 91.6
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "workforce-learning-controls",
+          "score": 90.8
+        }
       ]
     },
     {
@@ -147,11 +203,22 @@
       "texture": "deckled-paper-brushed-metal-translucent-resin",
       "scene": "autonomous-decision-path-approaches-manual-authorization-gate-audit-markers-and-shutdown-lever-with-recovery-routes",
       "conceptScore": 98.4,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "283753d131485520da3ab6d98ed8774f212b9bd35af15a882181b97fe28ad0d9",
       "conceptAlternatives": [
-        {"medium": "architectural-isometric", "subject": "agent-authority-and-recovery", "score": 91.2},
-        {"medium": "editorial-collage", "subject": "ai-audit-and-shutdown-controls", "score": 90.4}
+        {
+          "medium": "architectural-isometric",
+          "subject": "agent-authority-and-recovery",
+          "score": 91.2
+        },
+        {
+          "medium": "editorial-collage",
+          "subject": "ai-audit-and-shutdown-controls",
+          "score": 90.4
+        }
       ]
     },
     {
@@ -170,11 +237,22 @@
       "texture": "matte-clay",
       "scene": "homeownership-structure-splits-between-member-mortgage-and-shared-equity-capital-with-credit-union-governance-visible",
       "conceptScore": 98.7,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "6bbcfa4393598eb2e54c2a61f73b38869838b40a86aa6ece7a79dec0baabe0ea",
       "conceptAlternatives": [
-        {"medium": "ink-and-linocut", "subject": "shared-home-ownership", "score": 91.5},
-        {"medium": "tactile-paper-cut", "subject": "mortgage-and-equity-paths", "score": 90.9}
+        {
+          "medium": "ink-and-linocut",
+          "subject": "shared-home-ownership",
+          "score": 91.5
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "mortgage-and-equity-paths",
+          "score": 90.9
+        }
       ]
     },
     {
@@ -193,11 +271,22 @@
       "texture": "newsprint-grain",
       "scene": "credit-report-and-legal-documents-approach-a-congressional-vote-through-balanced-review-scales",
       "conceptScore": 98.9,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "facd9d73aa9ee085c1402c1261d809d1c7ce80004157b8582c12ee33d67acc58",
       "conceptAlternatives": [
-        {"medium": "architectural-isometric", "subject": "legislative-process-and-controls", "score": 91.8},
-        {"medium": "tactile-paper-cut", "subject": "consumer-reporting-documents", "score": 90.7}
+        {
+          "medium": "architectural-isometric",
+          "subject": "legislative-process-and-controls",
+          "score": 91.8
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "consumer-reporting-documents",
+          "score": 90.7
+        }
       ]
     },
     {
@@ -216,11 +305,22 @@
       "texture": "frosted-glass",
       "scene": "member-reviews-ai-generated-financial-guidance-with-consent-evidence-and-human-action-controls-visible",
       "conceptScore": 99.1,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "3066c067c268d9d902153d0dc26cbd5b07967b57b858acfea5af4329ced34425",
       "conceptAlternatives": [
-        {"medium": "editorial-photography", "subject": "member-digital-guidance", "score": 92.4},
-        {"medium": "editorial-illustration", "subject": "ai-guidance-controls", "score": 91.2}
+        {
+          "medium": "editorial-photography",
+          "subject": "member-digital-guidance",
+          "score": 92.4
+        },
+        {
+          "medium": "editorial-illustration",
+          "subject": "ai-guidance-controls",
+          "score": 91.2
+        }
       ]
     },
     {
@@ -239,11 +339,22 @@
       "texture": "polished-metal",
       "scene": "card-transaction-streams-pass-monitoring-control-gates-while-warning-paths-remain-open",
       "conceptScore": 98.6,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "ad59009a01eb9891e79bc78a8d5e0a6289c709034469911bf526e6edf1d5f0ac",
       "conceptAlternatives": [
-        {"medium": "tactile-paper-cut", "subject": "documents-and-controls", "score": 91.6},
-        {"medium": "architectural-isometric", "subject": "architecture-and-infrastructure", "score": 90.4}
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "score": 91.6
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "architecture-and-infrastructure",
+          "score": 90.4
+        }
       ]
     },
     {
@@ -262,10 +373,21 @@
       "texture": "frosted-glass-paper-and-metal",
       "scene": "publication-pages-and-member-search-signals-flow-through-a-transparent-answer-prism-toward-neutral-financial-product-cards",
       "conceptScore": 94.3,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "editorial-paper-cut", "subject": "ai-search-citation-paths", "score": 82.7},
-        {"medium": "architectural-editorial", "subject": "financial-product-discovery-gateway", "score": 81.1}
+        {
+          "medium": "editorial-paper-cut",
+          "subject": "ai-search-citation-paths",
+          "score": 82.7
+        },
+        {
+          "medium": "architectural-editorial",
+          "subject": "financial-product-discovery-gateway",
+          "score": 81.1
+        }
       ]
     },
     {
@@ -284,10 +406,21 @@
       "texture": "paper-glass-metal-and-luminous-data-paths",
       "scene": "member-account-paths-move-through-an-analytical-layer-to-a-human-controlled-gate-for-contact-hardship-treatment-review-and-remediation",
       "conceptScore": 94.2,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "editorial-collage", "subject": "hardship-treatment-decision-record", "score": 82.4},
-        {"medium": "architectural-editorial", "subject": "collections-outcome-monitoring", "score": 81.0}
+        {
+          "medium": "editorial-collage",
+          "subject": "hardship-treatment-decision-record",
+          "score": 82.4
+        },
+        {
+          "medium": "architectural-editorial",
+          "subject": "collections-outcome-monitoring",
+          "score": 81
+        }
       ]
     },
     {
@@ -306,10 +439,21 @@
       "texture": "paper-glass-metal-and-luminous-data-paths",
       "scene": "organizational-layers-and-two-credit-scoring-paths-converge-around-a-transparent-risk-gauge-and-lender-decision-checkpoint",
       "conceptScore": 93.7,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "editorial-collage", "subject": "vendor-restructuring-and-credit-score-choice", "score": 82.2},
-        {"medium": "architectural-editorial", "subject": "model-provider-change-review", "score": 80.8}
+        {
+          "medium": "editorial-collage",
+          "subject": "vendor-restructuring-and-credit-score-choice",
+          "score": 82.2
+        },
+        {
+          "medium": "architectural-editorial",
+          "subject": "model-provider-change-review",
+          "score": 80.8
+        }
       ]
     },
     {
@@ -328,10 +472,21 @@
       "texture": "glass-metal-paper-and-luminous-data-paths",
       "scene": "income-bill-savings-and-expense-markers-retain-their-order-through-an-analysis-lens-before-a-neutral-lending-decision",
       "conceptScore": 94.1,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "editorial-paper-cut", "subject": "cash-flow-sequence-and-credit-decision", "score": 82.5},
-        {"medium": "macro-still-life", "subject": "transaction-timeline-and-model-validation", "score": 80.9}
+        {
+          "medium": "editorial-paper-cut",
+          "subject": "cash-flow-sequence-and-credit-decision",
+          "score": 82.5
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "transaction-timeline-and-model-validation",
+          "score": 80.9
+        }
       ]
     },
     {
@@ -350,10 +505,21 @@
       "texture": "paper-metal-glass-and-stone",
       "scene": "three-product-paths-connect-member-complaint-cost-risk-and-owner-evidence-to-continue-change-and-archive-outcomes",
       "conceptScore": 94.4,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "editorial-paper-cut", "subject": "product-outcome-review-lanes", "score": 82.6},
-        {"medium": "macro-still-life", "subject": "keep-change-retire-decision-record", "score": 81.2}
+        {
+          "medium": "editorial-paper-cut",
+          "subject": "product-outcome-review-lanes",
+          "score": 82.6
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "keep-change-retire-decision-record",
+          "score": 81.2
+        }
       ]
     },
     {
@@ -371,11 +537,22 @@
       "lighting": "cool-morning-with-controlled-amber-highlight",
       "texture": "brass-glass-stone-and-polished-wood",
       "scene": "a-brass-scale-balances-a-traditional-vault-key-against-a-secured-digital-asset-in-a-courtroom-setting",
-      "conceptScore": 94.0,
-      "dimensions": {"width": 1200, "height": 630},
+      "conceptScore": 94,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "editorial-paper-cut", "subject": "charter-boundary-and-payment-rails", "score": 82.3},
-        {"medium": "architectural-illustration", "subject": "trust-charter-entry-path", "score": 80.7}
+        {
+          "medium": "editorial-paper-cut",
+          "subject": "charter-boundary-and-payment-rails",
+          "score": 82.3
+        },
+        {
+          "medium": "architectural-illustration",
+          "subject": "trust-charter-entry-path",
+          "score": 80.7
+        }
       ]
     },
     {
@@ -394,10 +571,21 @@
       "texture": "glass-paper-metal-and-luminous-data-paths",
       "scene": "community-financial-institution-moves-through-activity-measurement-and-governance-review-toward-a-revised-certification-gateway",
       "conceptScore": 93.8,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "editorial-paper-cut", "subject": "target-market-activity-evidence", "score": 82.4},
-        {"medium": "isometric-editorial", "subject": "cdfi-certification-transition", "score": 80.9}
+        {
+          "medium": "editorial-paper-cut",
+          "subject": "target-market-activity-evidence",
+          "score": 82.4
+        },
+        {
+          "medium": "isometric-editorial",
+          "subject": "cdfi-certification-transition",
+          "score": 80.9
+        }
       ]
     },
     {
@@ -416,10 +604,21 @@
       "texture": "glass-metal-and-luminous-signal-rings",
       "scene": "secure-mobile-notification-remains-active-while-separate-communication-categories-are-switched-on-or-off",
       "conceptScore": 94.1,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "conceptAlternatives": [
-        {"medium": "paper-cut-editorial", "subject": "consent-categories-and-fraud-alert-channel", "score": 82.0},
-        {"medium": "macro-still-life", "subject": "message-routing-and-revocation-controls", "score": 80.8}
+        {
+          "medium": "paper-cut-editorial",
+          "subject": "consent-categories-and-fraud-alert-channel",
+          "score": 82
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "message-routing-and-revocation-controls",
+          "score": 80.8
+        }
       ]
     },
     {
@@ -446,7 +645,7 @@
         {
           "medium": "macro-still-life",
           "subject": "integration-ledgers-and-branch-network-map",
-          "score": 82.0
+          "score": 82
         },
         {
           "medium": "soft-editorial-illustration",
@@ -470,7 +669,7 @@
       "lighting": "confident-natural-boardroom-light",
       "texture": "paper-evidence-glass-data-layers-and-polished-wood",
       "scene": "credit-union-directors-review-a-decision-packet-connected-to-source-evidence-risk-thresholds-and-accountable-management-owners",
-      "conceptScore": 94.0,
+      "conceptScore": 94,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -578,7 +777,7 @@
         {
           "medium": "editorial-photography",
           "subject": "contract-review-operations",
-          "score": 81.0
+          "score": 81
         },
         {
           "medium": "paper-cut-diagram",
