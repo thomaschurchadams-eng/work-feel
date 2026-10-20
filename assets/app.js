@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Deregulation Proposals',
+      headline: 'NCUA Proposes Reserve, Charter-Conversion and Share-Notice Changes',
+      summary:
+        'The NCUA said on October 20 that its thirteenth deregulation round includes three proposals: remove the special-reserve requirement for certain nonconforming investments at federally insured state-chartered credit unions; remove an outdated federal rule on maintaining federal share insurance after a federal-to-state charter conversion because the process is already addressed in the Chartering and Field of Membership Manual; and allow more flexibility in how federally insured credit unions deliver share-insurance notices that currently require hard-copy materials.',
+      impact:
+        'Finance, compliance, legal and member-communications teams should map current controls to 12 CFR 741.3(a), 741.7 and 745.13; identify potential reserve-accounting, charter-conversion and notice-delivery changes; preserve current requirements while the proposals are pending; and decide whether operational cost, member access or implementation concerns warrant comment by December 14.',
+      sourceName: 'National Credit Union Administration',
+      sourceUrl:
+        'https://ncua.gov/newsroom/press-release/2026/ncua-announces-thirteenth-round-deregulation-proposals',
+      date: 'Oct 20, 2026',
+      slug: 'ncua-thirteenth-deregulation-reserve-conversion-share-notice'
+    },
+    {
       label: 'Disaster Recovery Grants',
       headline: 'NCUA Offers Up to $15,000 in Disaster-Recovery Grants',
       summary:
