@@ -82,6 +82,8 @@
     },
     {
       "id": "ncr-voyix",
+      "promotionStatus": "withheld-pending-source-verification",
+      "promotionNote": "2026-10-20: ATM attribution requires specific launch-source verification following the NCR Atleos separation; retain record and article history without promotion.",
       "name": "NCR Voyix",
       "category": "Digital commerce and self-service",
       "capabilities": [
