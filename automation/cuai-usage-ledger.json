@@ -3495,6 +3495,47 @@
       ],
       "summary": "Monday completed two qualified Standard News articles, meeting 2 of 2 Monday slots and placing the week at 2 of 8. The portfolio now contains 72 articles; the latest 15 are 13 News and 2 Insights, with 10 reported-news items. Risk/compliance appears in 12 of 15, operations in 10 and IT/data/cybersecurity in 9, while payments/deposits and HR/training appear in 2 each and marketing/growth in 3. Preserve the next candidate: AI-assisted member-communications experimentation, holdout design and channel-conflict controls; prefer an Insight, data brief or case study when sources support it. No new source-led Alert qualified after the October 16 cycle: the newest official NCUA item duplicates existing stablecoin-reporting coverage and the October 16 Federal Reserve enforcement termination is not a material credit-union action. The October 15 grant Alert is older than 72 hours. Every timely internal candidate already appears in the homepage grid, so homepageWatchState remains empty and the maintained vendor due-diligence fallback was refreshed and production-verified on commit 001d354210f3d113720f75b3d497195a0915efeb, with no recent runtime errors. The previously blocked Friday Illinois social item is now reconciled sent once, and today's FSB item is reconciled sent once at 12:31:37.934 p.m. ET; both retain duplicate=false and no provider action was taken by this run. Latest trusted audience/search measurement remains October 2; acquisition depth, independent CAI-destination conversion and a current October goal window remain unresolved. The W43 public/free competitive-distribution scan identified five new surfaces: CUInsight, CUES/CU Management, Callahan/CreditUnions.com, Filene Research Institute and America's Credit Unions events. No outreach, submission, trial, membership, spend or new assignment occurred. No full article, new social post, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-20T15:13:36-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded October 20 editorial portfolio, Alert, homepage-freshness, measurement, reliability and handoff review after the recorded daily publisher outcome.",
+      "status": "success",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 169,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 0,
+        "mediaHandoffsConsumed": 1,
+        "portfolioArticlesReviewed": 73,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 3,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 4,
+        "alertsPublished": 1,
+        "alertPackageFilesChanged": 3,
+        "dailyHistoryEntriesPreserved": 64,
+        "analyticsWindowsReviewed": 1,
+        "weeklyDistributionScanReceiptsConsumed": 1,
+        "competitiveDistributionScansRun": 0,
+        "productionDeploymentChecks": 1,
+        "verifiedOperationsRunsChecked": 1,
+        "siteOriginRuntimeErrorsObserved": 0,
+        "sentStateReconciliationsObserved": 2,
+        "sentStateReconciliationsBlocked": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "summary": "The daily publisher completed one High News article, meeting Tuesday's 1-of-1 slot and placing the week at 3 of 8. Published one distinct source-led Alert on the NCUA's October 20 thirteenth deregulation round covering a state-credit-union special reserve, federal-to-state charter conversion language and member share-insurance notices. The atomic package preserves the complete 64-entry daily history and appends this operating receipt. The latest 15 articles are 13 News and 2 Insights: risk/compliance appears in 12, operations in 11, IT/data/cybersecurity in 9 and member service in 7, while payments/deposits and HR/training appear in 2 each. Preserve the next candidate: AI-assisted member-communications experimentation, holdout design and channel-conflict controls, preferably an Insight, data brief or case study. The planned October 20 chart reservation has no provider receipt because manifest and receipt persistence is blocked; it was not retried, promoted or reconciled. Tomorrow's verified TruStage reservation remains scheduled and unique. Latest trusted measurement remains October 2; acquisition depth, independent CAI conversion and a current October goal window remain unavailable. The W43 distribution scan was consumed and not duplicated. No full article, new social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
