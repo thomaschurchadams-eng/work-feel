@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-10-20",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -34,6 +34,14 @@
         "primaryFunctionalAudience": "Technology, cybersecurity, business-continuity, insurance-product, member-service and vendor-management leaders",
         "promotionPriority": "High",
         "socialDecision": "scheduled-2026-10-21-11:30-et-verified-secure-receipt-october-20-planned-media-reservation-preserved"
+      },
+      {
+        "type": "alert",
+        "title": "NCUA Proposes Reserve, Charter-Conversion and Share-Notice Changes",
+        "url": "https://creditunionainews.com/alerts/#ncua-thirteenth-deregulation-reserve-conversion-share-notice",
+        "source": "National Credit Union Administration",
+        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-thirteenth-round-deregulation-proposals",
+        "operatingImplication": "Map current controls to 12 CFR 741.3(a), 741.7 and 745.13; identify potential reserve-accounting, charter-conversion and member-notice changes; preserve current requirements while the proposals are pending; and decide whether to comment by December 14."
       }
     ],
     "rejections": [
@@ -82,12 +90,12 @@
         "reason": "the controlling appellate filing remained inaccessible, so paywalled reporting could not support independent publication verification"
       }
     ],
-    "status": "one-article-cycle-complete",
+    "status": "article-and-alert-cycle-complete",
     "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI cyber-recovery story. The headline and opening lead with the source-supported duration and continuing partial availability without implying a breach, total outage or completed recovery.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
-    "updatedAt": "2026-10-20T07:13:31-04:00"
+    "updatedAt": "2026-10-20T15:13:36-04:00"
   },
   "history": [
     {
