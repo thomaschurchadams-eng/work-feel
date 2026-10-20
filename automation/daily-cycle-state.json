@@ -6,95 +6,179 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-19",
-    "fullArticleCount": 2,
+    "date": "2026-10-20",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "tokenized-deposits-and-core-payments",
-      "board-governance-and-meeting-cadence",
-      "payments-antitrust",
-      "cybersecurity-and-phishing",
-      "consumer-lending-and-ai-trust",
-      "ach-and-first-party-fraud",
-      "responsible-ai-and-financial-stability",
-      "disaster-recovery",
-      "fidelity-bond-regulation",
-      "cybersecurity-vendor-consolidation",
+      "cyber-resilience-and-insurance-servicing",
+      "agency-independence-and-ncua-governance",
+      "share-insurance-and-legislation",
+      "credit-union-regulatory-relief",
+      "industry-governance-and-committees",
+      "education-and-professional-development",
+      "fraud-operations-and-frontline-training",
+      "international-fintech-and-capital-markets",
+      "foreign-bank-supervision-and-private-credit",
       "macroeconomics-and-ai-inflation",
-      "digital-identity-and-agent-authorization"
+      "agentic-ai-and-bank-controls",
+      "payments-antitrust"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Jack Henry Plans Tokenized-Deposit Path for Credit Unions",
-        "url": "https://creditunionainews.com/news/jack-henry-google-cloud-tokenized-deposits.html",
-        "primaryFunctionalAudience": "Payments, treasury, digital-assets, core-technology and risk leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved"
-      },
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "Credit Unions Seek Guidance as Board Meetings Move Off Monthly Cycle",
-        "url": "https://creditunionainews.com/news/credit-union-board-meeting-guidance-gap.html",
-        "primaryFunctionalAudience": "Board, governance, compliance, finance and risk leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved"
+        "title": "TruStage Cyberattack Recovery Remains Partial After 100 Days",
+        "url": "https://creditunionainews.com/news/trustage-cyberattack-recovery-credit-unions.html",
+        "primaryFunctionalAudience": "Technology, cybersecurity, business-continuity, insurance-product, member-service and vendor-management leaders",
+        "promotionPriority": "High",
+        "socialDecision": "eligible-high-priority-pending-live-verification-october-20-planned-media-reservation-preserved"
       }
     ],
     "rejections": [
       {
+        "title": "Supreme Court Declines NLRB Firing Appeal While NCUA Board Fight Continues",
+        "reason": "the October 19 order adds only an incremental signal; the June Supreme Court order already supplied the material NCUA-specific operating baseline"
+      },
+      {
+        "title": "Credit Unions Seek NCUSIF Parity in Deposit-Insurance Bill",
+        "reason": "a current advocacy position on pending legislation, but lower immediacy and operating consequence than the active multi-product TruStage disruption"
+      },
+      {
+        "title": "NCUA Announces Twelfth Round of Deregulation Proposals",
+        "reason": "an October 14 proposal set already available to the separate regulatory operating cycle and less time-sensitive than the selected recovery event"
+      },
+      {
+        "title": "America's Credit Unions Opens Committee Applications",
+        "reason": "routine association governance notice without a material credit-union operating consequence"
+      },
+      {
+        "title": "America's Credit Unions Publishes 2027 Education Lineup",
+        "reason": "promotional programming rather than a rule, implementation, incident or measured outcome"
+      },
+      {
+        "title": "Frontline Fraud Training for Credit Unions",
+        "reason": "educational guidance without a discrete new event, obligation or measured implementation result"
+      },
+      {
+        "title": "Sea Prepares Monee Initial Public Offering",
+        "reason": "an international fintech capital-markets development without a direct U.S. credit-union operating decision"
+      },
+      {
+        "title": "Bank of England Reviews Barclays Private-Credit Exposure",
+        "reason": "foreign bank supervision without a specific credit-union action, rule or current U.S. operating effect"
+      },
+      {
+        "title": "Federal Reserve Officials Link AI Investment to Inflation Pressure",
+        "reason": "macroeconomic context without a discrete credit-union action, obligation or measured operating result"
+      },
+      {
+        "title": "Banks Add Gates for External AI Agents",
+        "reason": "substantially overlaps the October 13 article on agentic-AI monitoring, approval and shutdown controls without a new credit-union event"
+      },
+      {
         "title": "Apple Seeks Review of Credit-Union Card-Issuer Antitrust Class Action",
-        "reason": "the controlling appellate filing was not accessible in the bounded scan, so the paywalled report could not support independent publication verification"
-      },
-      {
-        "title": "Managed-IT Report Warns Credit Unions About AI Phishing",
-        "reason": "a vendor-origin report without accessible methodology and with substantial overlap with recent cyber-resilience coverage"
-      },
-      {
-        "title": "Survey Says AI Discourages Some Consumers From Seeking Loans",
-        "reason": "the paywalled survey methodology and sample could not be independently evaluated"
-      },
-      {
-        "title": "Nacha Proposes First-Party Fraud Rules",
-        "reason": "an older October 13 development whose primary proposal record was not independently verified in the bounded scan"
-      },
-      {
-        "title": "FSB Finalizes AI Sound Practices",
-        "reason": "duplicate of the October 16 High-priority article already published"
-      },
-      {
-        "title": "NCUA Disaster-Recovery Grants",
-        "reason": "duplicate of the October 15 Alert already published"
-      },
-      {
-        "title": "NCUA Proposes Fidelity-Bond Relief",
-        "reason": "duplicate of the October 14 Alert and subsequent operating review"
-      },
-      {
-        "title": "Proofpoint Announces Varonis Acquisition",
-        "reason": "broad cybersecurity-vendor consolidation without a distinct credit-union implementation or immediate control change"
-      },
-      {
-        "title": "Federal Reserve Officials Discuss AI and Inflation",
-        "reason": "macroeconomic context without a specific credit-union action, rule or measured operating result"
-      },
-      {
-        "title": "World ID Promotes Agent Authorization for Banks",
-        "reason": "secondary reporting without a named credit-union deployment or sufficient primary corroboration"
+        "reason": "the controlling appellate filing remained inaccessible, so paywalled reporting could not support independent publication verification"
       }
     ],
-    "status": "two-article-cycle-complete",
-    "activeExperimentContext": "October 5 workflow-outcome hook cohort: both News packages lead with the concrete operating distinction—preview versus availability, and meeting frequency versus control frequency. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+    "status": "one-article-cycle-complete",
+    "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI cyber-recovery story. The headline and opening lead with the source-supported duration and continuing partial availability without implying a breach, total outage or completed recovery.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
-    "updatedAt": "2026-10-19T07:50:00-04:00"
+    "updatedAt": "2026-10-20T07:05:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-19",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "tokenized-deposits-and-core-payments",
+        "board-governance-and-meeting-cadence",
+        "payments-antitrust",
+        "cybersecurity-and-phishing",
+        "consumer-lending-and-ai-trust",
+        "ach-and-first-party-fraud",
+        "responsible-ai-and-financial-stability",
+        "disaster-recovery",
+        "fidelity-bond-regulation",
+        "cybersecurity-vendor-consolidation",
+        "macroeconomics-and-ai-inflation",
+        "digital-identity-and-agent-authorization"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Jack Henry Plans Tokenized-Deposit Path for Credit Unions",
+          "url": "https://creditunionainews.com/news/jack-henry-google-cloud-tokenized-deposits.html",
+          "primaryFunctionalAudience": "Payments, treasury, digital-assets, core-technology and risk leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved"
+        },
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Credit Unions Seek Guidance as Board Meetings Move Off Monthly Cycle",
+          "url": "https://creditunionainews.com/news/credit-union-board-meeting-guidance-gap.html",
+          "primaryFunctionalAudience": "Board, governance, compliance, finance and risk leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible-existing-fsb-daily-slot-preserved"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Apple Seeks Review of Credit-Union Card-Issuer Antitrust Class Action",
+          "reason": "the controlling appellate filing was not accessible in the bounded scan, so the paywalled report could not support independent publication verification"
+        },
+        {
+          "title": "Managed-IT Report Warns Credit Unions About AI Phishing",
+          "reason": "a vendor-origin report without accessible methodology and with substantial overlap with recent cyber-resilience coverage"
+        },
+        {
+          "title": "Survey Says AI Discourages Some Consumers From Seeking Loans",
+          "reason": "the paywalled survey methodology and sample could not be independently evaluated"
+        },
+        {
+          "title": "Nacha Proposes First-Party Fraud Rules",
+          "reason": "an older October 13 development whose primary proposal record was not independently verified in the bounded scan"
+        },
+        {
+          "title": "FSB Finalizes AI Sound Practices",
+          "reason": "duplicate of the October 16 High-priority article already published"
+        },
+        {
+          "title": "NCUA Disaster-Recovery Grants",
+          "reason": "duplicate of the October 15 Alert already published"
+        },
+        {
+          "title": "NCUA Proposes Fidelity-Bond Relief",
+          "reason": "duplicate of the October 14 Alert and subsequent operating review"
+        },
+        {
+          "title": "Proofpoint Announces Varonis Acquisition",
+          "reason": "broad cybersecurity-vendor consolidation without a distinct credit-union implementation or immediate control change"
+        },
+        {
+          "title": "Federal Reserve Officials Discuss AI and Inflation",
+          "reason": "macroeconomic context without a specific credit-union action, rule or measured operating result"
+        },
+        {
+          "title": "World ID Promotes Agent Authorization for Banks",
+          "reason": "secondary reporting without a named credit-union deployment or sufficient primary corroboration"
+        }
+      ],
+      "status": "two-article-cycle-complete",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: both News packages lead with the concrete operating distinction—preview versus availability, and meeting frequency versus control frequency. Selection, sourcing, classification and factual nuance were unchanged; measurement is not yet aged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
+      "updatedAt": "2026-10-19T07:50:00-04:00"
+    },
     {
       "date": "2026-10-16",
       "fullArticleCount": 2,

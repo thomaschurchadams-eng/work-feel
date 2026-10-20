@@ -3,6 +3,42 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "trustage-cyberattack-recovery-credit-unions",
+      "title": "TruStage Cyberattack Recovery Remains Partial After 100 Days",
+      "url": "/news/trustage-cyberattack-recovery-credit-unions.html",
+      "publishedAt": "2026-10-20T07:05:00-04:00",
+      "section": "news",
+      "beat": "cyber-resilience-and-insurance-servicing",
+      "functions": [
+        "it-data-cybersecurity",
+        "operations",
+        "risk-compliance",
+        "vendor-management",
+        "member-service"
+      ],
+      "technologies": [
+        "privacy-security"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Technology, cybersecurity, business-continuity, insurance-product, member-service and vendor-management leaders",
+      "secondaryAudiences": [
+        "board and risk committees",
+        "internal-audit leaders",
+        "retirement and lending-product teams"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-priority-pending-live-verification-october-20-planned-media-reservation-preserved",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI cyber-recovery story. The headline and opening lead with the source-supported duration and continuing partial availability without implying a breach, total outage or completed recovery.",
+      "internalLinkTargets": [
+        "/news/sharetec-core-outage-credit-union-failover.html",
+        "/insight-credit-union-ai-contract-monitoring-controls.html"
+      ],
+      "sourceTier": 1,
+      "score": 94.6
+    },
+    {
       "id": "credit-union-board-meeting-guidance-gap",
       "title": "Credit Unions Seek Guidance as Board Meetings Move Off Monthly Cycle",
       "url": "/news/credit-union-board-meeting-guidance-gap.html",

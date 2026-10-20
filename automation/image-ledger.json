@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "trustage-cyberattack-recovery-credit-unions",
+      "articleUrl": "/news/trustage-cyberattack-recovery-credit-unions.html",
+      "imagePath": "/assets/trustage-cyberattack-recovery-credit-unions.jpg",
+      "publishedAt": "2026-10-20T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-isometric-illustration",
+      "subject": "phased-financial-service-restoration",
+      "composition": "connected-service-modules-with-incomplete-recovery-paths",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-muted-teal-controlled-amber",
+      "lighting": "directional-recovery-glow",
+      "texture": "crisp-geometric-forms-with-subtle-paper-texture",
+      "scene": "financial-service-network-restores-core-modules-while-several-dependent-paths-remain-isolated",
+      "conceptScore": 95.2,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "4b3cfd952d9a10f8e128b597c50176711557c05ceca9c9321e248d160804dd29",
+      "conceptAlternatives": [
+        {
+          "medium": "tactile-editorial-paper-art",
+          "subject": "phased-vendor-recovery",
+          "score": 91.7
+        },
+        {
+          "medium": "architectural-editorial-collage",
+          "subject": "partial-service-restoration",
+          "score": 90.8
+        }
+      ]
+    },
+    {
       "id": "credit-union-board-meeting-guidance-gap",
       "articleUrl": "/news/credit-union-board-meeting-guidance-gap.html",
       "imagePath": "/assets/cubma-board-meeting-guidance.jpg",
