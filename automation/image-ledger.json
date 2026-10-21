@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-member-communications-holdout-test",
+      "articleUrl": "/insight-credit-union-ai-member-communications-holdout-test.html",
+      "imagePath": "/assets/credit-union-ai-member-communications-holdout-test.jpg",
+      "publishedAt": "2026-10-21T07:35:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "ink-and-linocut-editorial-illustration",
+      "subject": "member-communication-holdout-experiment",
+      "composition": "modular-grid-of-test-control-and-suppression-cells",
+      "perspective": "overhead",
+      "palette": "monochrome-ink",
+      "lighting": "graphic-flat-light",
+      "texture": "newsprint-grain",
+      "scene": "message-cards-assigned-to-test-control-and-suppression-cells-with-channel-and-outcome-records",
+      "conceptScore": 89.8,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "9427c039d7a40d3a1b9a3943977c0cb80a4201ae0e59b4c15fcec69b9447f672",
+      "conceptAlternatives": [
+        {
+          "medium": "refined-data-visualization",
+          "subject": "holdout-assignment-and-outcomes",
+          "score": 84.3
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "communication-experiment-review",
+          "score": 81
+        }
+      ]
+    },
+    {
       "id": "dfcu-gulfside-bank-acquisition",
       "articleUrl": "/news/dfcu-gulfside-bank-acquisition.html",
       "imagePath": "/assets/dfcu-gulfside-bank-acquisition.jpg",

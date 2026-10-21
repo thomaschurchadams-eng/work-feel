@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-21",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -34,6 +34,15 @@
         "primaryFunctionalAudience": "Board, strategy, integration, member-service and compliance leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible-existing-trustage-daily-slot-preserved"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "A Holdout Test for AI-Assisted Credit Union Member Communications",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-member-communications-holdout-test.html",
+        "primaryFunctionalAudience": "Marketing, member-experience, digital-banking, compliance and analytics leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-library-queued-2026-10-22-11:30-et-pending-live-verification-and-secure-workflow"
       }
     ],
     "rejections": [
@@ -82,12 +91,12 @@
         "reason": "promotional programming rather than a rule, implementation, incident or measured outcome"
       }
     ],
-    "status": "first-article-published-second-slot-pending",
+    "status": "two-article-cycle-complete",
     "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI acquisition story. The headline and lead identify the completed board decision while the article keeps regulatory approval, integration and member outcomes prospective.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
-    "updatedAt": "2026-10-21T07:20:00-04:00"
+    "nextCoverageGap": "AI-assisted small-business onboarding, beneficial-ownership evidence and channel-handoff controls",
+    "updatedAt": "2026-10-21T07:50:00-04:00"
   },
   "history": [
     {
