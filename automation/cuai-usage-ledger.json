@@ -3536,6 +3536,48 @@
       ],
       "summary": "The daily publisher completed one High News article, meeting Tuesday's 1-of-1 slot and placing the week at 3 of 8. Published one distinct source-led Alert on the NCUA's October 20 thirteenth deregulation round covering a state-credit-union special reserve, federal-to-state charter conversion language and member share-insurance notices. The atomic package preserves the complete 64-entry daily history and appends this operating receipt. The latest 15 articles are 13 News and 2 Insights: risk/compliance appears in 12, operations in 11, IT/data/cybersecurity in 9 and member service in 7, while payments/deposits and HR/training appear in 2 each. Preserve the next candidate: AI-assisted member-communications experimentation, holdout design and channel-conflict controls, preferably an Insight, data brief or case study. The planned October 20 chart reservation has no provider receipt because manifest and receipt persistence is blocked; it was not retried, promoted or reconciled. Tomorrow's verified TruStage reservation remains scheduled and unique. Latest trusted measurement remains October 2; acquisition depth, independent CAI conversion and a current October goal window remain unavailable. The W43 distribution scan was consumed and not duplicated. No full article, new social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-21T15:37:02-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded October 21 editorial portfolio, Alert, homepage-freshness, measurement, reliability and handoff review after the recorded daily publisher outcome.",
+      "status": "success-no-alert",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 171,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 0,
+        "mediaHandoffsConsumed": 1,
+        "portfolioArticlesReviewed": 75,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 5,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "alertsPublished": 0,
+        "activeFreshAlertsVerified": 1,
+        "homepageFreshnessWrites": 0,
+        "dailyHistoryEntriesObserved": 65,
+        "analyticsWindowsReviewed": 1,
+        "weeklyDistributionScanReceiptsConsumed": 1,
+        "competitiveDistributionScansRun": 0,
+        "productionDeploymentChecks": 1,
+        "verifiedOperationsRunsChecked": 0,
+        "siteOriginRuntimeErrorsObserved": 0,
+        "sentStateReconciliationsObserved": 2,
+        "sentStateReconciliationsBlocked": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "summary": "The daily publisher completed two qualified articles—one Standard News and one Library Insight—meeting Wednesday's 2-of-2 slots and placing the week at 5 of 8. No distinct source-led Alert qualified: the October 21 Google Cloud London outage report does not establish U.S. credit-union impact and overlaps recent continuity coverage, while the October 21 NCUA Federal Register notice repeats a component of the October 20 deregulation Alert. That October 20 Alert remains inside the 72-hour freshness window and active on the homepage, so no homepage write was required. The portfolio now contains 75 articles; the latest 15 are 13 News and 2 Insights across 11 reported-news items, two explainers, one data brief and one case study. Risk/compliance appears in 12, operations in 11, IT/data/cybersecurity in 10, member service and board strategy in 7 each, finance and vendor management in 4 each, marketing in 3, and payments, HR and lending in 2 each. Today's Insight closes the prior member-communications experimentation gap; preserve the next candidate: AI-assisted small-business onboarding, beneficial-ownership evidence and channel-handoff controls. The October 21 TruStage item remains internally scheduled after its due time because the exact authenticated Buffer metrics endpoint returned 401 and no sentAt evidence was available, so no queue write was made. The October 22 holdout-test reservation remains scheduled once with a unique provider receipt; the October 20 chart remains unpromoted because production verification and provider-receipt evidence are absent. Current production is READY with no recent runtime errors. Latest trusted audience/search measurement remains October 2; independent CAI conversion and a current October goal window remain unavailable. The W43 distribution scan was consumed and not duplicated. No full article, new social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
