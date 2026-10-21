@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "dfcu-gulfside-bank-acquisition",
+      "articleUrl": "/news/dfcu-gulfside-bank-acquisition.html",
+      "imagePath": "/assets/dfcu-gulfside-bank-acquisition.jpg",
+      "publishedAt": "2026-10-21T07:05:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "mixed-media-editorial-collage",
+      "subject": "credit-union-bank-acquisition-and-regulatory-review",
+      "composition": "layered-depth-across-regional-financial-architecture",
+      "perspective": "eye-level",
+      "palette": "plum-gold",
+      "lighting": "soft-daylight",
+      "texture": "newsprint-grain",
+      "scene": "michigan-and-florida-community-financial-architecture-connect-through-a-regulatory-review-gateway",
+      "conceptScore": 82.1,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "75ac6827a062b8b5736c4002437ab430bc2a445d58592f23045951fb5314ec85",
+      "conceptAlternatives": [
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "regional-financial-expansion",
+          "score": 80.5
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "acquisition-review-record",
+          "score": 78.6
+        }
+      ]
+    },
+    {
       "id": "trustage-cyberattack-recovery-credit-unions",
       "articleUrl": "/news/trustage-cyberattack-recovery-credit-unions.html",
       "imagePath": "/assets/trustage-cyberattack-recovery-credit-unions.jpg",

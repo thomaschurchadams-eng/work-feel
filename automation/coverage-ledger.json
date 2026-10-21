@@ -3,6 +3,41 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "dfcu-gulfside-bank-acquisition",
+      "title": "DFCU Financial Plans Fourth Florida Bank Deal Since 2023",
+      "url": "/news/dfcu-gulfside-bank-acquisition.html",
+      "publishedAt": "2026-10-21T07:05:00-04:00",
+      "section": "news",
+      "beat": "credit-union-bank-acquisitions-and-integration",
+      "functions": [
+        "board-strategy",
+        "operations",
+        "risk-compliance",
+        "member-service"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Board, strategy, integration, member-service and compliance leaders",
+      "secondaryAudiences": [
+        "digital-banking leaders",
+        "branch and contact-center leaders",
+        "internal-audit teams"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible-existing-trustage-daily-slot-preserved",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI acquisition story. The headline and lead identify the completed board decision while the article keeps regulatory approval, integration and member outcomes prospective.",
+      "internalLinkTargets": [
+        "/news/gulf-winds-peoples-exchange-bank-acquisition.html",
+        "/insight-credit-union-ai-board-reporting-decision-evidence.html"
+      ],
+      "sourceTier": 1,
+      "score": 86.8
+    },
+    {
       "id": "trustage-cyberattack-recovery-credit-unions",
       "title": "TruStage Cyberattack Recovery Remains Partial After 100 Days",
       "url": "/news/trustage-cyberattack-recovery-credit-unions.html",

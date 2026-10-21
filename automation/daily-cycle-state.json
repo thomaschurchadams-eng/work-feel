@@ -6,98 +6,182 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "fullArticleCount": 1,
-    "alertCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "cyber-resilience-and-insurance-servicing",
-      "agency-independence-and-ncua-governance",
-      "share-insurance-and-legislation",
-      "credit-union-regulatory-relief",
-      "industry-governance-and-committees",
-      "education-and-professional-development",
-      "fraud-operations-and-frontline-training",
-      "international-fintech-and-capital-markets",
-      "foreign-bank-supervision-and-private-credit",
-      "macroeconomics-and-ai-inflation",
-      "agentic-ai-and-bank-controls",
-      "payments-antitrust"
+      "credit-union-bank-acquisitions-and-integration",
+      "cloud-concentration-and-operational-resilience",
+      "credit-union-regulatory-change",
+      "payments-litigation",
+      "credit-union-mergers-and-member-votes",
+      "digital-banking-vendor-selection",
+      "stablecoin-rulemaking-and-advocacy",
+      "federal-register-and-regulatory-administration",
+      "consumer-reporting-and-legislation",
+      "ai-capital-markets-and-infrastructure",
+      "industry-governance-and-personnel",
+      "education-and-professional-development"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "TruStage Cyberattack Recovery Remains Partial After 100 Days",
-        "url": "https://creditunionainews.com/news/trustage-cyberattack-recovery-credit-unions.html",
-        "primaryFunctionalAudience": "Technology, cybersecurity, business-continuity, insurance-product, member-service and vendor-management leaders",
-        "promotionPriority": "High",
-        "socialDecision": "scheduled-2026-10-21-11:30-et-verified-secure-receipt-october-20-planned-media-reservation-preserved"
-      },
-      {
-        "type": "alert",
-        "title": "NCUA Proposes Reserve, Charter-Conversion and Share-Notice Changes",
-        "url": "https://creditunionainews.com/alerts/#ncua-thirteenth-deregulation-reserve-conversion-share-notice",
-        "source": "National Credit Union Administration",
-        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-thirteenth-round-deregulation-proposals",
-        "operatingImplication": "Map current controls to 12 CFR 741.3(a), 741.7 and 745.13; identify potential reserve-accounting, charter-conversion and member-notice changes; preserve current requirements while the proposals are pending; and decide whether to comment by December 14."
+        "title": "DFCU Financial Plans Fourth Florida Bank Deal Since 2023",
+        "url": "https://creditunionainews.com/news/dfcu-gulfside-bank-acquisition.html",
+        "primaryFunctionalAudience": "Board, strategy, integration, member-service and compliance leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible-existing-trustage-daily-slot-preserved"
       }
     ],
     "rejections": [
       {
-        "title": "Supreme Court Declines NLRB Firing Appeal While NCUA Board Fight Continues",
-        "reason": "the October 19 order adds only an incremental signal; the June Supreme Court order already supplied the material NCUA-specific operating baseline"
+        "title": "Google Cloud London Outage Disrupts Financial Firms",
+        "reason": "material foreign cloud-resilience event, but no verified U.S. credit-union impact and substantial overlap with recent Sharetec and TruStage continuity coverage"
       },
       {
-        "title": "Credit Unions Seek NCUSIF Parity in Deposit-Insurance Bill",
-        "reason": "a current advocacy position on pending legislation, but lower immediacy and operating consequence than the active multi-product TruStage disruption"
+        "title": "NCUA Thirteenth Deregulation Proposals",
+        "reason": "duplicate of the October 20 Alert already published from the primary NCUA announcement"
       },
       {
-        "title": "NCUA Announces Twelfth Round of Deregulation Proposals",
-        "reason": "an October 14 proposal set already available to the separate regulatory operating cycle and less time-sensitive than the selected recovery event"
+        "title": "Illinois Interchange-Fee Appeal Briefing Schedule",
+        "reason": "incremental procedure following the October 15 High-priority appeal article, without a new merits decision or current operating change"
       },
       {
-        "title": "America's Credit Unions Opens Committee Applications",
-        "reason": "routine association governance notice without a material credit-union operating consequence"
+        "title": "CASE and Team One Member Vote",
+        "reason": "no independently verified member-vote result was available during the bounded scan"
       },
       {
-        "title": "America's Credit Unions Publishes 2027 Education Lineup",
+        "title": "City & County Credit Union Selects Mahalo",
+        "reason": "routine vendor-selection announcement without implementation results or a material operating change"
+      },
+      {
+        "title": "Defense Credit Union Council Comments on GENIUS Act Rules",
+        "reason": "advocacy input to pending rulemaking rather than a final obligation or implemented change"
+      },
+      {
+        "title": "NCUA Federal Register Administrative Notices",
+        "reason": "no discrete new operating consequence beyond items already covered in the regulatory cycle"
+      },
+      {
+        "title": "Credit-Union FCRA Advocacy Developments",
+        "reason": "substantially overlaps the October 12 liability-cap article without a new vote or enacted requirement"
+      },
+      {
+        "title": "Finance AI Infrastructure Fundraising and IPO Activity",
+        "reason": "capital-markets activity without a direct credit-union implementation, obligation or measured result"
+      },
+      {
+        "title": "Credit-Union Executive Awards and Personnel Notices",
+        "reason": "routine personnel recognition without a material credit-union operating consequence"
+      },
+      {
+        "title": "Small-Credit-Union Education and Webinar Notices",
         "reason": "promotional programming rather than a rule, implementation, incident or measured outcome"
-      },
-      {
-        "title": "Frontline Fraud Training for Credit Unions",
-        "reason": "educational guidance without a discrete new event, obligation or measured implementation result"
-      },
-      {
-        "title": "Sea Prepares Monee Initial Public Offering",
-        "reason": "an international fintech capital-markets development without a direct U.S. credit-union operating decision"
-      },
-      {
-        "title": "Bank of England Reviews Barclays Private-Credit Exposure",
-        "reason": "foreign bank supervision without a specific credit-union action, rule or current U.S. operating effect"
-      },
-      {
-        "title": "Federal Reserve Officials Link AI Investment to Inflation Pressure",
-        "reason": "macroeconomic context without a discrete credit-union action, obligation or measured operating result"
-      },
-      {
-        "title": "Banks Add Gates for External AI Agents",
-        "reason": "substantially overlaps the October 13 article on agentic-AI monitoring, approval and shutdown controls without a new credit-union event"
-      },
-      {
-        "title": "Apple Seeks Review of Credit-Union Card-Issuer Antitrust Class Action",
-        "reason": "the controlling appellate filing remained inaccessible, so paywalled reporting could not support independent publication verification"
       }
     ],
-    "status": "article-and-alert-cycle-complete",
-    "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI cyber-recovery story. The headline and opening lead with the source-supported duration and continuing partial availability without implying a breach, total outage or completed recovery.",
+    "status": "first-article-published-second-slot-pending",
+    "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI acquisition story. The headline and lead identify the completed board decision while the article keeps regulatory approval, integration and member outcomes prospective.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
-    "updatedAt": "2026-10-20T15:13:36-04:00"
+    "updatedAt": "2026-10-21T07:20:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-20",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "cyber-resilience-and-insurance-servicing",
+        "agency-independence-and-ncua-governance",
+        "share-insurance-and-legislation",
+        "credit-union-regulatory-relief",
+        "industry-governance-and-committees",
+        "education-and-professional-development",
+        "fraud-operations-and-frontline-training",
+        "international-fintech-and-capital-markets",
+        "foreign-bank-supervision-and-private-credit",
+        "macroeconomics-and-ai-inflation",
+        "agentic-ai-and-bank-controls",
+        "payments-antitrust"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "TruStage Cyberattack Recovery Remains Partial After 100 Days",
+          "url": "https://creditunionainews.com/news/trustage-cyberattack-recovery-credit-unions.html",
+          "primaryFunctionalAudience": "Technology, cybersecurity, business-continuity, insurance-product, member-service and vendor-management leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-2026-10-21-11:30-et-verified-secure-receipt-october-20-planned-media-reservation-preserved"
+        },
+        {
+          "type": "alert",
+          "title": "NCUA Proposes Reserve, Charter-Conversion and Share-Notice Changes",
+          "url": "https://creditunionainews.com/alerts/#ncua-thirteenth-deregulation-reserve-conversion-share-notice",
+          "source": "National Credit Union Administration",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-thirteenth-round-deregulation-proposals",
+          "operatingImplication": "Map current controls to 12 CFR 741.3(a), 741.7 and 745.13; identify potential reserve-accounting, charter-conversion and member-notice changes; preserve current requirements while the proposals are pending; and decide whether to comment by December 14."
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Supreme Court Declines NLRB Firing Appeal While NCUA Board Fight Continues",
+          "reason": "the October 19 order adds only an incremental signal; the June Supreme Court order already supplied the material NCUA-specific operating baseline"
+        },
+        {
+          "title": "Credit Unions Seek NCUSIF Parity in Deposit-Insurance Bill",
+          "reason": "a current advocacy position on pending legislation, but lower immediacy and operating consequence than the active multi-product TruStage disruption"
+        },
+        {
+          "title": "NCUA Announces Twelfth Round of Deregulation Proposals",
+          "reason": "an October 14 proposal set already available to the separate regulatory operating cycle and less time-sensitive than the selected recovery event"
+        },
+        {
+          "title": "America's Credit Unions Opens Committee Applications",
+          "reason": "routine association governance notice without a material credit-union operating consequence"
+        },
+        {
+          "title": "America's Credit Unions Publishes 2027 Education Lineup",
+          "reason": "promotional programming rather than a rule, implementation, incident or measured outcome"
+        },
+        {
+          "title": "Frontline Fraud Training for Credit Unions",
+          "reason": "educational guidance without a discrete new event, obligation or measured implementation result"
+        },
+        {
+          "title": "Sea Prepares Monee Initial Public Offering",
+          "reason": "an international fintech capital-markets development without a direct U.S. credit-union operating decision"
+        },
+        {
+          "title": "Bank of England Reviews Barclays Private-Credit Exposure",
+          "reason": "foreign bank supervision without a specific credit-union action, rule or current U.S. operating effect"
+        },
+        {
+          "title": "Federal Reserve Officials Link AI Investment to Inflation Pressure",
+          "reason": "macroeconomic context without a discrete credit-union action, obligation or measured operating result"
+        },
+        {
+          "title": "Banks Add Gates for External AI Agents",
+          "reason": "substantially overlaps the October 13 article on agentic-AI monitoring, approval and shutdown controls without a new credit-union event"
+        },
+        {
+          "title": "Apple Seeks Review of Credit-Union Card-Issuer Antitrust Class Action",
+          "reason": "the controlling appellate filing remained inaccessible, so paywalled reporting could not support independent publication verification"
+        }
+      ],
+      "status": "article-and-alert-cycle-complete",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI cyber-recovery story. The headline and opening lead with the source-supported duration and continuing partial availability without implying a breach, total outage or completed recovery.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted member-communications experimentation, holdout design and channel-conflict controls",
+      "updatedAt": "2026-10-20T15:13:36-04:00"
+    },
     {
       "date": "2026-10-19",
       "fullArticleCount": 2,

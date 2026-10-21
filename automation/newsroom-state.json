@@ -1,14 +1,69 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-10-19T07:35:00-04:00",
-  "lastBreakingRun": "2026-10-19T07:35:00-04:00",
+  "lastStandardRun": "2026-10-21T07:20:00-04:00",
+  "lastBreakingRun": "2026-10-21T07:20:00-04:00",
   "lastPublishedArticle": {
-    "title": "Credit Unions Seek Guidance as Board Meetings Move Off Monthly Cycle",
-    "url": "https://creditunionainews.com/news/credit-union-board-meeting-guidance-gap.html",
-    "publishedAt": "2026-10-19T07:35:00-04:00",
+    "title": "DFCU Financial Plans Fourth Florida Bank Deal Since 2023",
+    "url": "https://creditunionainews.com/news/dfcu-gulfside-bank-acquisition.html",
+    "publishedAt": "2026-10-21T07:05:00-04:00",
     "route": "news"
   },
   "failedCandidates": [
+    {
+      "date": "2026-10-21",
+      "headline": "Google Cloud London Outage Disrupts Financial Firms",
+      "reason": "material foreign cloud-resilience event, but no verified U.S. credit-union impact and substantial overlap with recent Sharetec and TruStage continuity coverage"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "NCUA Thirteenth Deregulation Proposals",
+      "reason": "duplicate of the October 20 Alert already published from the primary NCUA announcement"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "Illinois Interchange-Fee Appeal Briefing Schedule",
+      "reason": "incremental procedure following the October 15 High-priority appeal article, without a new merits decision or current operating change"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "CASE and Team One Member Vote",
+      "reason": "no independently verified member-vote result was available during the bounded scan"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "City & County Credit Union Selects Mahalo",
+      "reason": "routine vendor-selection announcement without implementation results or a material operating change"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "Defense Credit Union Council Comments on GENIUS Act Rules",
+      "reason": "advocacy input to pending rulemaking rather than a final obligation or implemented change"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "NCUA Federal Register Administrative Notices",
+      "reason": "no discrete new operating consequence beyond items already covered in the regulatory cycle"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "Credit-Union FCRA Advocacy Developments",
+      "reason": "substantially overlaps the October 12 liability-cap article without a new vote or enacted requirement"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "Finance AI Infrastructure Fundraising and IPO Activity",
+      "reason": "capital-markets activity without a direct credit-union implementation, obligation or measured result"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "Credit-Union Executive Awards and Personnel Notices",
+      "reason": "routine personnel recognition without a material credit-union operating consequence"
+    },
+    {
+      "date": "2026-10-21",
+      "headline": "Small-Credit-Union Education and Webinar Notices",
+      "reason": "promotional programming rather than a rule, implementation, incident or measured outcome"
+    },
     {
       "date": "2026-10-19",
       "headline": "Apple Seeks Review of Credit-Union Card-Issuer Antitrust Class Action",
