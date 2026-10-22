@@ -3,6 +3,44 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "velera-ai-payment-trust-gap",
+      "title": "Velera Finds AI Use Rising as Members Resist AI Transactions",
+      "url": "/news/velera-ai-payment-trust-gap.html",
+      "publishedAt": "2026-10-22T07:10:00-04:00",
+      "section": "news",
+      "beat": "payments-ai-trust-and-agent-authorization",
+      "functions": [
+        "payments-deposits",
+        "member-service",
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "marketing-growth"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "agents-automation",
+        "realtime-embedded-finance"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, digital-banking, member-experience, risk and fraud leaders",
+      "secondaryAudiences": [
+        "product leaders",
+        "contact-center leaders",
+        "data and analytics teams"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible-existing-october-22-daily-slot-preserved",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening lead with the source-supported product boundary between informational AI use and delegated transaction authority. Vendor-study limits remain explicit; selection, scoring and source gates were unchanged.",
+      "internalLinkTargets": [
+        "/news/bank-regulators-agentic-ai-shutdown-controls.html",
+        "/insight-credit-union-ai-member-communications-holdout-test.html"
+      ],
+      "sourceTier": 1,
+      "score": 88.6
+    },
+    {
       "id": "credit-union-ai-member-communications-holdout-test",
       "title": "A Holdout Test for AI-Assisted Credit Union Member Communications",
       "url": "/insight-credit-union-ai-member-communications-holdout-test.html",

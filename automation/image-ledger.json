@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "velera-ai-payment-trust-gap",
+      "articleUrl": "/news/velera-ai-payment-trust-gap.html",
+      "imagePath": "/assets/velera-ai-payment-trust-gap.jpg",
+      "publishedAt": "2026-10-22T07:10:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "premium-3d-editorial-illustration",
+      "subject": "ai-payment-trust-and-human-authorization-boundary",
+      "composition": "wide-horizontal-secure-decision-boundary",
+      "perspective": "eye-level",
+      "palette": "deep-navy-teal-cyan-amber",
+      "lighting": "controlled-studio-light",
+      "texture": "glass-metal-and-paper",
+      "scene": "payment-card-pauses-between-an-ai-interface-and-a-human-controlled-authorization-switch",
+      "conceptScore": 88.9,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "901780478f84530aa1edb971213238f4afcb7e933d2a92a437850e87453125ae",
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-data-collage",
+          "subject": "ai-use-and-transaction-authority-gap",
+          "score": 83.4
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "payment-card-and-consent-control",
+          "score": 80.8
+        }
+      ]
+    },
+    {
       "id": "credit-union-ai-member-communications-holdout-test",
       "articleUrl": "/insight-credit-union-ai-member-communications-holdout-test.html",
       "imagePath": "/assets/credit-union-ai-member-communications-holdout-test.jpg",

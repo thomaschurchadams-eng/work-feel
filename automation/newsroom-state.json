@@ -1,14 +1,25 @@
 {
   "version": 1,
-  "lastStandardRun": "2026-10-21T07:50:00-04:00",
-  "lastBreakingRun": "2026-10-21T07:50:00-04:00",
+  "lastStandardRun": "2026-10-22T07:25:00-04:00",
+  "lastBreakingRun": "2026-10-22T07:25:00-04:00",
   "lastPublishedArticle": {
-    "title": "A Holdout Test for AI-Assisted Credit Union Member Communications",
-    "url": "https://creditunionainews.com/insight-credit-union-ai-member-communications-holdout-test.html",
-    "publishedAt": "2026-10-21T07:35:00-04:00",
-    "route": "insights"
+    "title": "Velera Finds AI Use Rising as Members Resist AI Transactions",
+    "url": "https://creditunionainews.com/news/velera-ai-payment-trust-gap.html",
+    "publishedAt": "2026-10-22T07:10:00-04:00",
+    "route": "news"
   },
   "failedCandidates": [
+    {"date": "2026-10-22", "headline": "OCC Finalizes GENIUS Act Stablecoin Issuer Rule", "reason": "material national-bank and issuer framework, but not a direct credit-union rule; other primary-regulator implementation remains incomplete and recent coverage already established the preparation baseline"},
+    {"date": "2026-10-22", "headline": "NCUA Proposes Flexible Digital Share-Insurance Notices", "reason": "the October 21 Federal Register proposal repeats the member-notice element of the October 20 NCUA deregulation Alert"},
+    {"date": "2026-10-22", "headline": "PenAir and Fort McClellan Plan Credit-Union Merger", "reason": "credible current consolidation announcement, but pending approvals and lower portfolio value one day after the DFCU acquisition article"},
+    {"date": "2026-10-22", "headline": "Credit Union Coalition Renews Opposition to Credit Card Competition Act", "reason": "advocacy response to campaign remarks rather than a bill vote, enacted requirement or current operating change"},
+    {"date": "2026-10-22", "headline": "Credit Unions Comment on GENIUS Act Implementation", "reason": "industry recommendations to pending Treasury rulemaking rather than final obligations or an implemented product change"},
+    {"date": "2026-10-22", "headline": "Velera October Payments Index", "reason": "older economic and portfolio update with less distinct operating evidence than the selected new member-payments study"},
+    {"date": "2026-10-22", "headline": "Axios Fintech AI Trust Roundtable", "reason": "sponsored discussion offering practitioner views but no new credit-union-specific measurement, rule or implementation result"},
+    {"date": "2026-10-22", "headline": "Large Banks Restrict External AI-Agent Account Access", "reason": "material competitive signal but substantial overlap with the October 13 article on agent authorization, monitoring and shutdown controls"},
+    {"date": "2026-10-22", "headline": "SWBC Announces Stellar Financial Group Partnership", "reason": "vendor partnership announcement without a named credit-union implementation or independently measured member outcome"},
+    {"date": "2026-10-22", "headline": "Credit Unions Testify on Oklahoma Financial Access", "reason": "useful policy context but no enacted change, discrete institution decision or new operating requirement"},
+    {"date": "2026-10-22", "headline": "Credit-Union Executive and Conference Notices", "reason": "routine personnel and promotional programming without a material credit-union operating consequence"},
     {
       "date": "2026-10-21",
       "headline": "Google Cloud London Outage Disrupts Financial Firms",
