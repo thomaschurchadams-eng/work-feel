@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "bank-ai-autonomy-control-gap-survey",
+      "articleUrl": "/news/bank-ai-autonomy-control-gap-survey.html",
+      "imagePath": "/assets/bank-ai-control-gap-survey.jpg",
+      "publishedAt": "2026-10-23T07:20:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "macro-still-life",
+      "subject": "autonomous-ai-decisioning-and-control-readiness-gap",
+      "composition": "asymmetric-editorial",
+      "perspective": "macro",
+      "palette": "burgundy-sand",
+      "lighting": "high-contrast-studio",
+      "texture": "polished-metal-and-frosted-glass",
+      "scene": "decision-engine-approaches-approval-gate-while-monitoring-console-remains-disconnected",
+      "conceptScore": 91.2,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "3702127e8ac4e5fd95a4a13274e4193ea64978711db95674fbeb40531500b9f8",
+      "conceptAlternatives": [
+        {"medium": "refined-data-abstraction", "subject": "autonomy-and-governance-gap", "score": 86.1},
+        {"medium": "mixed-media-collage", "subject": "decision-authority-and-model-controls", "score": 82.7}
+      ]
+    },
+    {
       "id": "velera-ai-payment-trust-gap",
       "articleUrl": "/news/velera-ai-payment-trust-gap.html",
       "imagePath": "/assets/velera-ai-payment-trust-gap.jpg",

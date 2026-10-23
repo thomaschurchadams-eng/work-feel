@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "bank-ai-autonomy-control-gap-survey",
+      "title": "Bank AI Ambitions Outpace Control Systems, Survey Finds",
+      "url": "/news/bank-ai-autonomy-control-gap-survey.html",
+      "publishedAt": "2026-10-23T07:20:00-04:00",
+      "section": "news",
+      "beat": "bank-ai-autonomy-and-control-readiness",
+      "functions": ["it-data-cybersecurity", "risk-compliance", "lending-collections", "finance-treasury"],
+      "technologies": ["data-decisioning", "agents-automation", "regtech-monitoring"],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Technology, model-risk, credit, treasury and compliance leaders",
+      "secondaryAudiences": ["board risk committees", "internal-audit teams", "AI product owners"],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and lead focus on the measured operating gap between planned autonomous authority and current control maturity. Vendor-study limitations remain explicit; selection and evidence gates were unchanged.",
+      "internalLinkTargets": ["/news/fsb-ai-sound-practices-financial-institutions.html", "/insight-credit-union-ai-inventory-change-control.html"],
+      "sourceTier": 1,
+      "score": 64.1
+    },
+    {
       "id": "velera-ai-payment-trust-gap",
       "title": "Velera Finds AI Use Rising as Members Resist AI Transactions",
       "url": "/news/velera-ai-payment-trust-gap.html",
