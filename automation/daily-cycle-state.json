@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-23",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -34,6 +34,15 @@
         "primaryFunctionalAudience": "Technology, model-risk, credit, treasury and compliance leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "An Evidence Record for AI-Assisted Business Account Onboarding",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-business-onboarding-evidence-record.html",
+        "primaryFunctionalAudience": "Business banking, BSA/AML, digital-onboarding and operations leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
       }
     ],
     "rejections": [
@@ -49,12 +58,12 @@
       {"title": "Barclays Links Job Cuts to Technology Productivity", "reason": "material foreign workforce development but not sufficiently specific to U.S. credit-union operations and overlaps October 14 workforce coverage"},
       {"title": "OpenAI, Anthropic, Microsoft and Google Financial-Services Announcements", "reason": "the bounded official-source scan found no new financial-services release with a concrete credit-union operating implication"}
     ],
-    "status": "first-of-two-article-slots-complete",
+    "status": "two-article-cycle-complete",
     "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and lead focus on the measured operating gap between planned autonomous authority and current control maturity. Vendor-study limitations remain explicit; selection and evidence gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "nextCoverageGap": "AI-assisted small-business onboarding, beneficial-ownership evidence and channel-handoff controls",
-    "updatedAt": "2026-10-23T07:25:00-04:00"
+    "nextCoverageGap": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls",
+    "updatedAt": "2026-10-23T07:55:00-04:00"
   },
   "history": [
     {

@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-business-onboarding-evidence-record",
+      "articleUrl": "/insight-credit-union-ai-business-onboarding-evidence-record.html",
+      "imagePath": "/assets/credit-union-ai-business-onboarding-evidence-record.jpg",
+      "publishedAt": "2026-10-23T07:50:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut-editorial-illustration",
+      "subject": "small-business-onboarding-evidence-and-channel-handoff",
+      "composition": "diagonal-convergence",
+      "perspective": "overhead",
+      "palette": "emerald-cream",
+      "lighting": "soft-natural-window-light",
+      "texture": "paper-fiber",
+      "scene": "digital-and-branch-paths-converge-into-one-evidence-record",
+      "conceptScore": 92.0,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "6b98096db8314e9c4eeb10cbd72d6965dadbc80aa96ce41f703c7e0b849b9566",
+      "conceptAlternatives": [
+        {"medium": "macro-still-life", "subject": "entity-owner-signer-evidence-record", "score": 86.4},
+        {"medium": "refined-data-abstraction", "subject": "business-onboarding-channel-handoff", "score": 82.8}
+      ]
+    },
+    {
       "id": "bank-ai-autonomy-control-gap-survey",
       "articleUrl": "/news/bank-ai-autonomy-control-gap-survey.html",
       "imagePath": "/assets/bank-ai-control-gap-survey.jpg",
