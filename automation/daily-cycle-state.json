@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-26",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -33,7 +33,16 @@
         "url": "https://creditunionainews.com/news/fhfa-mortgage-insurance-cancellation-pilot.html",
         "primaryFunctionalAudience": "Mortgage lending, servicing, compliance, member-service and technology leaders",
         "promotionPriority": "High",
-        "socialDecision": "eligible-high-priority-pending-live-verification-and-shared-slot-selection"
+        "socialDecision": "scheduled-for-2026-10-26T12:30:00-04:00-verified-provider-receipt-6adf378de814d8fcd1f92c1f"
+      },
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "CUES Survey Flags Five-Year Credit Union CEO Succession Gap",
+        "url": "https://creditunionainews.com/news/cues-credit-union-ceo-succession-survey.html",
+        "primaryFunctionalAudience": "Board, HR, talent-development and executive leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible-existing-high-daily-slot-preserved"
       }
     ],
     "rejections": [
@@ -48,12 +57,12 @@
       {"title": "Mahalo Core-Conversion Tally", "reason": "vendor-reported deployment count without independent implementation outcomes or a distinct operating change"},
       {"title": "DCUC Stablecoin Rule Comments", "reason": "advocacy input to pending rulemaking rather than a final credit-union obligation or implemented product"}
     ],
-    "status": "first-article-package-complete",
+    "status": "two-article-cycle-complete",
     "activeExperimentContext": "The October 5 AI workflow-outcome hook test is reflected in presentation only: the headline and lead center the future servicing outcome and the evidence needed before cancellation. Selection, sourcing and classification were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "nextCoverageGap": "credit-union leadership succession, specialized-role development and transition evidence",
-    "updatedAt": "2026-10-26T07:20:00-04:00"
+    "nextCoverageGap": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls",
+    "updatedAt": "2026-10-26T07:55:00-04:00"
   },
   "history": [
     {
