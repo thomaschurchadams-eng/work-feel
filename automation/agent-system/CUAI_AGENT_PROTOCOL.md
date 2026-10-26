@@ -120,6 +120,8 @@ Treat the following as coordination incidents when material:
 
 Diagnose before acting. Recover only within existing authority. Do not create comments for healthy no-op checks.
 
+For a failed operation, `reliability-watch` owns bounded checkpointed recovery under the original `dedupeKey`. Classify the failure, reconcile each prior external side effect from authoritative evidence, resume only unfinished steps whose non-execution is proven, verify postconditions, and close the original incident key. A delayed exact deployment READY result can complete a failed identity wait without replaying writes. Treat uncertain external outcomes as blocked, and preserve permission denials without bypassing or repeatedly requesting unchanged approval. Use the attempt cap and checkpoint contract in `automation/recovery/README.md`; do not create a scheduler or manager.
+
 ## Reporting relationship
 
 Issue #160 is the live conversation and assignment history. Existing canonical files remain authoritative for their domains, including:
