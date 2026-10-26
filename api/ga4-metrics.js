@@ -1,5 +1,6 @@
 const { authorize } = require('../lib/operations-auth');
 const crypto = require('node:crypto');
+const { validateDates, queryDirect } = require('../lib/ga4-direct');
 
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const DATA_API_BASE = 'https://analyticsdata.googleapis.com/v1beta';
@@ -100,7 +101,7 @@ async function getAccessToken(config) {
   const assertion = `${unsigned}.${signature}`;
 
   const response = await fetch(TOKEN_URL, {
-    method: 'POST',
+    method: 'POST', redirect: 'error', signal: AbortSignal.timeout(10000),
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({
       grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer',
@@ -155,6 +156,7 @@ function mapReport(payload) {
       dataLossFromOtherRow: Boolean(payload.metadata?.dataLossFromOtherRow),
       subjectToThresholding: Boolean(payload.metadata?.subjectToThresholding),
       samplingMetadatas: payload.metadata?.samplingMetadatas || [],
+      dataTruncationReasons: payload.metadata?.dataTruncationReasons || [],
       schemaRestrictionResponse: payload.metadata?.schemaRestrictionResponse || null,
       emptyReason: payload.metadata?.emptyReason || null
     }
@@ -169,9 +171,19 @@ function reportEvidence(report) {
   };
 }
 
+async function checkCompatibility(config, token, body) {
+  const response = await fetch(`${DATA_API_BASE}/properties/${config.propertyId}:checkCompatibility`, {
+    method: 'POST', redirect: 'error', signal: AbortSignal.timeout(10000),
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  if (!response.ok) { const error = new Error('GA4 compatibility check failed'); error.code = response.status === 403 ? 'ga4_property_access_denied' : 'ga4_compatibility_check_failed'; throw error; }
+  return response.json();
+}
+
 async function runReport(config, token, body) {
   const response = await fetch(`${DATA_API_BASE}/properties/${config.propertyId}:runReport`, {
-    method: 'POST',
+    method: 'POST', redirect: 'error', signal: AbortSignal.timeout(10000),
     headers: {
       Authorization: `Bearer ${token}`,
       'Content-Type': 'application/json'
@@ -337,6 +349,13 @@ module.exports = async function handler(req, res) {
     return res.status(403).json({ ok: false, error: 'deployment_commit_mismatch' });
   }
 
+  const diagnostic = requestValue(req, 'diagnostic');
+  if (diagnostic && diagnostic !== 'direct') return res.status(400).json({ ok: false, error: 'invalid_diagnostic' });
+  const requestedDates = { startDate: requestValue(req, 'startDate'), endDate: requestValue(req, 'endDate') };
+  if (diagnostic) {
+    try { validateDates(requestedDates); } catch { return res.status(400).json({ ok: false, error: 'invalid_dates' }); }
+  }
+
   let config;
   try {
     config = loadConfig();
@@ -357,7 +376,15 @@ module.exports = async function handler(req, res) {
   }
 
   try {
+    if (diagnostic && config.propertyId !== '520110560') return res.status(503).json({ ok: false, error: 'unexpected_ga4_property' });
     const token = await getAccessToken(config);
+    if (diagnostic) {
+      const result = await queryDirect(requestedDates, {
+        report: body => runReport(config, token, body),
+        compatibility: body => checkCompatibility(config, token, body)
+      });
+      return res.status(200).json(result);
+    }
     const [sevenDay, twentyEightDay] = await Promise.all([
       queryWindow(config, token, 7),
       queryWindow(config, token, 28)
@@ -372,11 +399,11 @@ module.exports = async function handler(req, res) {
       windows: { sevenDay, twentyEightDay }
     });
   } catch (error) {
-    const status = error.code === 'ga4_property_access_denied' ? 403 : 502;
+    const status = error.code === 'ga4_property_access_denied' ? 403 : error.code === 'invalid_dates' ? 400 : 502;
     return res.status(status).json({
       ok: false,
       error: error.code || 'ga4_reporting_failed',
-      message: error.message
+      message: diagnostic ? 'Direct diagnostic unavailable; no publishing action was attempted.' : error.message
     });
   }
 };
