@@ -3669,6 +3669,103 @@
       },
       "summary": "The publisher completed Friday's two-article cycle: one Standard News data brief and one Library Insight, taking the week to 8 of 8 (6 News, 2 Insights) across eight distinct beats and three formats. No new source-led Alert qualified from eight official surfaces; the October 20 Alert had aged past the 72-hour homepage window, so the homepage review timestamp was advanced and the evergreen fallback retained with no fresh-watch items. Exact commit 50b5ab645052576f36fb6c2879d76751042e553c deployed READY, exposed the current review state and fallback asset, and showed no runtime errors in the two-hour check. The latest 15 items are 12 News and 3 Insights: nine reported-news items, three explainers and three data briefs; risk/compliance remains present in 12, operations in 11 and IT/data/cybersecurity in 10, while lending and payments appear in three each and HR in two. Today's Insight closes the onboarding evidence gap; the next bounded candidate is AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls. The October 23 Library LinkedIn item remains internally scheduled because authenticated Buffer metrics returned 401, so no sent-state write, retry or replacement occurred. The October 20 chart remains unpromoted because productionVerified is false and no provider receipt exists. Latest trusted audience/search measurement remains October 2, independent CAI conversion is unavailable, and the October goal window is stale. The W43 distribution scan was consumed without duplication and no external action followed. No full article, extra social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-26T15:21:17-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded October 26 Monday editorial portfolio, Alert, homepage-freshness, analytics, reliability, handoff and weekly competitive-distribution review after the recorded publisher outcome.",
+      "status": "success-with-monday-review",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 177,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 0,
+        "mediaHandoffsConsumed": 1,
+        "portfolioArticlesReviewed": 80,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 2,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "alertsPublished": 0,
+        "activeFreshAlertsVerified": 0,
+        "homepageFreshnessWrites": 1,
+        "dailyHistoryEntriesObserved": 68,
+        "analyticsWindowsReviewed": 1,
+        "weeklyDistributionScanReceiptsConsumed": 0,
+        "competitiveDistributionScansRun": 1,
+        "competitiveDistributionOpportunitiesRecorded": 5,
+        "productionDeploymentChecks": 2,
+        "verifiedOperationsRunsChecked": 0,
+        "siteOriginRuntimeErrorsObserved": 0,
+        "sentStateReconciliationsObserved": 3,
+        "sentStateReconciliationsBlocked": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "mondayReview": {
+        "outputSlaTrajectory": "On trajectory: Monday completed 2 of 2 article slots; week is 2 of 8.",
+        "portfolio": "80 total articles. Latest 15 are 12 News and 3 Insights across eight reported-news items, four data briefs and three explainers. Risk/compliance and operations each appear in 12, IT/data/cybersecurity in 10, member service in 8 and board strategy in 6. HR improved to 3; lending, payments, marketing and vendor management each remain at 3 or fewer.",
+        "nextCandidate": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls; prefer an Insight, case study or data brief if timely news is weak.",
+        "reliability": "Publisher validation passed 114 repository checks plus article, SEO, analytics, image, JSON, diff and 68-entry preservation checks. Homepage freshness deployed READY and the two-hour runtime window showed no errors.",
+        "measurement": "Latest trusted audience/search evidence remains October 2: 379 active users, 405 sessions, 122 engaged sessions and 16 Search Console clicks from 1,260 impressions. Independent CAI conversion and a current October goal window remain unavailable.",
+        "competitiveDistribution": [
+          {
+            "surface": "Credit Union Times",
+            "type": "newsletter | referral | backlink | other",
+            "mechanism": "Earned editorial citation, podcast/webcast or resource-center placement reaches credit-union executives already consuming daily reporting and specialist content.",
+            "audienceFit": "Credit-union executives and functional leaders.",
+            "smallestAction": "Prepare a concise evidence-led pitch around small-business servicing controls.",
+            "approval": "Tom approval before any contact or submission.",
+            "successMeasure": "Earned citation or placement plus attributable engaged visits."
+          },
+          {
+            "surface": "The Financial Brand",
+            "type": "newsletter | syndication | event/resource | other",
+            "mechanism": "Content-partner, webinar, podcast or Forum exposure reaches banking and credit-union executives focused on AI, growth, digital banking and payments.",
+            "audienceFit": "Senior banking and credit-union strategy, marketing and technology leaders.",
+            "smallestAction": "Prepare one speaker/resource brief using an existing CUAI framework.",
+            "approval": "Tom approval before contact, submission, registration or spend.",
+            "successMeasure": "Accepted contribution or invitation plus qualified referral traffic."
+          },
+          {
+            "surface": "NACUSO",
+            "type": "community | event/resource | backlink",
+            "mechanism": "Knowledge Hub, newsletter and Reimagine ecosystem can place CUAI frameworks with CUSO and credit-union innovation leaders.",
+            "audienceFit": "CUSO executives, technology partners and credit-union innovation leaders.",
+            "smallestAction": "Prepare a one-page controls briefing mapped to CUSO due diligence and implementation evidence.",
+            "approval": "Tom approval before contact, submission, membership or spend.",
+            "successMeasure": "Accepted resource/session or earned backlink and qualified visits."
+          },
+          {
+            "surface": "Banking Dive",
+            "type": "newsletter | referral | backlink | other",
+            "mechanism": "Free Daily Dive and Fintech Weekly newsletters, opinion section, events and credit-union topic coverage can expose CUAI analysis to banking technology and policy readers.",
+            "audienceFit": "Bank and credit-union executives, technology, payments and regulatory leaders.",
+            "smallestAction": "Prepare a differentiated opinion abstract tied to published CUAI evidence.",
+            "approval": "Tom approval before submission, contact, promotion or spend.",
+            "successMeasure": "Published opinion/citation and attributable engaged referrals."
+          },
+          {
+            "surface": "The League of Credit Unions and Affiliates",
+            "type": "newsletter | community | event/resource",
+            "mechanism": "Regional executive newsletters, Credit Union Central and conferences reach credit-union leaders in Georgia, Alabama, Florida and Virginia.",
+            "audienceFit": "Local CEOs, directors and functional leaders, including CUAI's Georgia home market.",
+            "smallestAction": "Prepare a Georgia-relevant session/resource outline on governed AI operating controls.",
+            "approval": "Tom approval before contact, submission, registration, sponsorship or spend.",
+            "successMeasure": "Accepted newsletter/resource/session and attributable regional executive visits."
+          }
+        ]
+      },
+      "summary": "Monday delivered two News articles, including one High mortgage-servicing report and one Standard succession data brief, meeting the 2-of-2 daily target and placing the week at 2 of 8. The 80-article portfolio's latest 15 are 12 News and 3 Insights, with stronger HR/board coverage today but continued concentration in risk/compliance, operations and IT/data/cybersecurity. The next bounded candidate remains AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls. Eight official source surfaces produced no distinct current Alert: NCUA had nothing newer than the already covered October 20 proposals, while the newer CISA catalog addition lacked demonstrated credit-union impact. All timely recent articles already appear in the homepage grid, so the review timestamp advanced and the evergreen fallback remained. The October 23 LinkedIn item is now reconciled sent; today's High item remains internally scheduled because authenticated Buffer metrics returned 401 and supplied no exact sentAt evidence. The October 20 chart remains unpromoted because productionVerified is false and no provider receipt exists. The W44 public/free distribution scan recorded five bounded opportunities: Credit Union Times, The Financial Brand, NACUSO, Banking Dive and The League of Credit Unions and Affiliates. No outreach, submission, account creation, trial, registration or spend occurred. Latest trusted analytics remain dated October 2; CAI conversion and a current goal window remain unavailable. No full article, new social post, external contact, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
