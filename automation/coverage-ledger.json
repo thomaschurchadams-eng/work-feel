@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fhfa-mortgage-insurance-cancellation-pilot",
+      "title": "Housing Order Directs FHFA Toward Proactive Mortgage-Insurance Cancellation",
+      "url": "/news/fhfa-mortgage-insurance-cancellation-pilot.html",
+      "publishedAt": "2026-10-26T07:20:00-04:00",
+      "section": "news",
+      "beat": "mortgage-servicing-and-automated-valuation",
+      "functions": ["lending-collections", "member-service", "operations", "risk-compliance", "it-data-cybersecurity"],
+      "technologies": ["data-decisioning", "regtech-monitoring"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Mortgage lending, servicing, compliance, member-service and technology leaders",
+      "secondaryAudiences": ["secondary-market teams", "model-risk leaders", "operations leaders"],
+      "maturity": "emerging",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-priority-pending-live-verification-and-shared-slot-selection",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test is reflected in presentation only: the headline and lead center the future servicing outcome and the evidence needed before cancellation. Selection, sourcing and classification were unchanged.",
+      "internalLinkTargets": ["/news/fannie-freddie-vantagescore-credit-union-mortgages.html", "/insight-credit-union-mortgage-ai-go-live-tests.html"],
+      "sourceTier": 1,
+      "score": 95.2
+    },
+    {
       "id": "credit-union-ai-business-onboarding-evidence-record",
       "title": "An Evidence Record for AI-Assisted Business Account Onboarding",
       "url": "/insight-credit-union-ai-business-onboarding-evidence-record.html",
