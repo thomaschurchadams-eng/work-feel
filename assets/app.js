@@ -1843,7 +1843,7 @@
         experiment_id: experimentId,
         variant_id: variantId,
         banner_location: placement,
-        campaign: caiBannerExperiment.campaign
+        promotion_campaign: caiBannerExperiment.campaign
       };
       sendEvent(bannerCellEventName('imp', placement, variantId), impressionEvent);
       sendEvent('cai_banner_impression', impressionEvent);
@@ -1933,7 +1933,7 @@
           ...dimensions,
           experiment_id: experimentId,
           variant_id: variantId,
-          campaign: caiBannerExperiment.campaign,
+          promotion_campaign: caiBannerExperiment.campaign,
           banner_location: placement,
           destination_path: url.pathname,
           link_label: label

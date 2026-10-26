@@ -1,5 +1,6 @@
 const { authorize } = require('../lib/operations-auth');
 const crypto = require('node:crypto');
+const { closedRange, acquisitionDiagnostic } = require('../lib/ga4-acquisition-diagnostic');
 
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const DATA_API_BASE = 'https://analyticsdata.googleapis.com/v1beta';
@@ -146,9 +147,14 @@ function mapReport(payload) {
     return result;
   });
 
+  const providerTotals = (payload.totals || []).map((row) => Object.fromEntries(metrics.map((name, index) => {
+    const raw = row.metricValues?.[index]?.value;
+    return [name, raw !== undefined && Number.isFinite(Number(raw)) ? Number(raw) : (raw ?? null)];
+  })));
   return {
     rowCount: payload.rowCount ?? rows.length,
     rows,
+    ...(payload.totals ? { providerTotals } : {}),
     metadata: {
       currencyCode: payload.metadata?.currencyCode || null,
       timeZone: payload.metadata?.timeZone || null,
@@ -337,6 +343,14 @@ module.exports = async function handler(req, res) {
     return res.status(403).json({ ok: false, error: 'deployment_commit_mismatch' });
   }
 
+  let diagnosticDates;
+  const diagnosticStart = requestValue(req, 'diagnosticStart');
+  const diagnosticEnd = requestValue(req, 'diagnosticEnd');
+  if (diagnosticStart || diagnosticEnd) {
+    try { diagnosticDates = closedRange(diagnosticStart, diagnosticEnd); }
+    catch (error) { return res.status(400).json({ ok: false, error: error.code, message: error.message }); }
+  }
+
   let config;
   try {
     config = loadConfig();
@@ -362,6 +376,14 @@ module.exports = async function handler(req, res) {
       queryWindow(config, token, 7),
       queryWindow(config, token, 28)
     ]);
+    let diagnostic = null;
+    if (diagnosticDates) {
+      try {
+        diagnostic = await acquisitionDiagnostic((body) => runReport(config, token, body), diagnosticDates);
+      } catch (error) {
+        diagnostic = { dateRanges: diagnosticDates, status: 'unavailable', error: error.code || 'ga4_diagnostic_failed' };
+      }
+    }
 
     return res.status(200).json({
       ok: true,
@@ -369,7 +391,8 @@ module.exports = async function handler(req, res) {
       source: 'google-analytics-data-api',
       propertyId: config.propertyId,
       privacy: 'Aggregate reporting only. The endpoint does not return names, emails, form values, client IDs, user IDs or free-form reader input.',
-      windows: { sevenDay, twentyEightDay }
+      windows: { sevenDay, twentyEightDay },
+      ...(diagnostic ? { acquisitionDiagnostic: diagnostic } : {})
     });
   } catch (error) {
     const status = error.code === 'ga4_property_access_denied' ? 403 : 502;
