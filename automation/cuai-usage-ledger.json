@@ -3766,6 +3766,48 @@
       },
       "summary": "Monday delivered two News articles, including one High mortgage-servicing report and one Standard succession data brief, meeting the 2-of-2 daily target and placing the week at 2 of 8. The 80-article portfolio's latest 15 are 12 News and 3 Insights, with stronger HR/board coverage today but continued concentration in risk/compliance, operations and IT/data/cybersecurity. The next bounded candidate remains AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls. Eight official source surfaces produced no distinct current Alert: NCUA had nothing newer than the already covered October 20 proposals, while the newer CISA catalog addition lacked demonstrated credit-union impact. All timely recent articles already appear in the homepage grid, so the review timestamp advanced and the evergreen fallback remained. The October 23 LinkedIn item is now reconciled sent; today's High item remains internally scheduled because authenticated Buffer metrics returned 401 and supplied no exact sentAt evidence. The October 20 chart remains unpromoted because productionVerified is false and no provider receipt exists. The W44 public/free distribution scan recorded five bounded opportunities: Credit Union Times, The Financial Brand, NACUSO, Banking Dive and The League of Credit Unions and Affiliates. No outreach, submission, account creation, trial, registration or spend occurred. Latest trusted analytics remain dated October 2; CAI conversion and a current goal window remain unavailable. No full article, new social post, external contact, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-27T15:15:58-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded October 27 editorial portfolio, Alert, homepage-freshness, analytics, reliability and handoff review after the recorded daily publisher outcome.",
+      "status": "success-no-alert",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 179,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 0,
+        "mediaHandoffsConsumed": 1,
+        "portfolioArticlesReviewed": 81,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 3,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "alertsPublished": 0,
+        "activeFreshAlertsVerified": 0,
+        "homepageFreshnessWrites": 1,
+        "dailyHistoryEntriesObserved": 69,
+        "analyticsWindowsReviewed": 1,
+        "weeklyDistributionScanReceiptsConsumed": 1,
+        "competitiveDistributionScansRun": 0,
+        "productionDeploymentChecks": 2,
+        "verifiedOperationsRunsChecked": 0,
+        "siteOriginRuntimeErrorsObserved": 0,
+        "sentStateReconciliationsObserved": 2,
+        "sentStateReconciliationsBlocked": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "summary": "The publisher completed the Tuesday one-article target with High News on the Eighth Circuit's debit-interchange ruling, taking the week to 3 of 8. The 81-article portfolio's latest 15 remain 12 News and 3 Insights across eight reported-news items, four data briefs and three explainers. Risk/compliance appears in 13, operations in 12 and IT/data/cybersecurity in 9; today's article improves payments coverage to 4 and finance/treasury to 5. Preserve the next bounded candidate: AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls, preferably an Insight, case study or data brief if timely news is weak. A fresh primary-source scan found no development newer than the October 26 completed review that cleared the Alert gates; NCUA's latest material remains the October 20 proposal package already covered, and other official surfaces exposed no distinct new credit-union operating action. All timely recent articles, including today's publication, already appear in the homepage grid, so homepageWatchState.reviewedAt advanced while items remained empty and the evergreen fallback stayed active. The narrow freshness commit 4f929ad349deb35f5c26ec3c7082ffbab3706997 deployed READY; the exact deployment served the updated review state and live article, and the two-hour runtime check found no errors. Monday's mortgage-insurance LinkedIn item is now durably reconciled sent; today's debit-interchange item remains internally scheduled after its due time because authenticated Buffer metrics returned 401, so no sent-state write, retry or replacement occurred. The October 20 chart remains unpromoted because the manifest still says productionVerified=false and no provider receipt is persisted. The W44 competitive-distribution scan was consumed without duplication. Latest trusted audience/search measurement remains October 2; independent CAI conversion and a current October goal window remain unavailable. No full article, new social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
