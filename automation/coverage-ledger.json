@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "eighth-circuit-debit-interchange-cap",
+      "title": "Eighth Circuit Vacates Fed’s Debit Interchange Fee Cap",
+      "url": "/news/eighth-circuit-debit-interchange-cap.html",
+      "publishedAt": "2026-10-27T07:20:00-04:00",
+      "section": "news",
+      "beat": "debit-interchange-litigation-and-payments-economics",
+      "functions": ["payments-deposits", "finance-treasury", "risk-compliance", "operations"],
+      "technologies": ["realtime-embedded-finance", "regtech-monitoring"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, finance, fraud, compliance and deposit-product leaders",
+      "secondaryAudiences": ["board finance committees", "processor-management teams", "member-pricing leaders"],
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "eligible-high-pending-live-verification-and-slot-selection",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the concrete rule-vacatur event and the decision-ready debit scenario credit unions need. Selection, sourcing and classification were unchanged.",
+      "internalLinkTargets": ["/news/illinois-interchange-fee-law-appeal.html", "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html"],
+      "sourceTier": 1,
+      "score": 96.2
+    },
+    {
       "id": "cues-credit-union-ceo-succession-survey",
       "title": "CUES Survey Flags Five-Year Credit Union CEO Succession Gap",
       "url": "/news/cues-credit-union-ceo-succession-survey.html",

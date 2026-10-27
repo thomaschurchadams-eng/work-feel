@@ -6,65 +6,116 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-26",
-    "fullArticleCount": 2,
+    "date": "2026-10-27",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "mortgage-servicing-and-automated-valuation",
-      "credit-union-compensation-and-succession",
-      "housing-market-and-institutional-investors",
-      "ai-enabled-auto-lending",
-      "debit-interchange-litigation",
-      "securities-ai-examination-priorities",
-      "agentic-payments-and-liability",
-      "credit-union-regulatory-guidance",
-      "corporate-credit-union-governance",
-      "community-impact-and-financial-access",
+      "debit-interchange-litigation-and-payments-economics",
+      "credit-union-fraud-decisioning",
       "core-conversions-and-digital-banking",
-      "stablecoin-rulemaking-and-advocacy"
+      "regulation-e-compliance-operations",
+      "credit-union-regulatory-guidance",
+      "embedded-and-virtual-payments",
+      "international-core-modernization",
+      "stablecoin-payments",
+      "credit-data-and-analytics",
+      "agentic-chargebacks-and-liability",
+      "alternative-credit-scoring",
+      "ai-assisted-small-business-servicing"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Housing Order Directs FHFA Toward Proactive Mortgage-Insurance Cancellation",
-        "url": "https://creditunionainews.com/news/fhfa-mortgage-insurance-cancellation-pilot.html",
-        "primaryFunctionalAudience": "Mortgage lending, servicing, compliance, member-service and technology leaders",
+        "title": "Eighth Circuit Vacates Fed’s Debit Interchange Fee Cap",
+        "url": "https://creditunionainews.com/news/eighth-circuit-debit-interchange-cap.html",
+        "primaryFunctionalAudience": "Payments, finance, fraud, compliance and deposit-product leaders",
         "promotionPriority": "High",
-        "socialDecision": "scheduled-for-2026-10-26T12:30:00-04:00-verified-provider-receipt-6adf378de814d8fcd1f92c1f"
-      },
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "CUES Survey Flags Five-Year Credit Union CEO Succession Gap",
-        "url": "https://creditunionainews.com/news/cues-credit-union-ceo-succession-survey.html",
-        "primaryFunctionalAudience": "Board, HR, talent-development and executive leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible-existing-high-daily-slot-preserved"
+        "socialDecision": "eligible-high-pending-live-verification-and-slot-selection"
       }
     ],
     "rejections": [
-      {"title": "Treasury Institutional-Investor Housing Rule", "reason": "authoritative and current, but it primarily regulates large housing investors and has a less direct credit-union operating consequence than the selected mortgage-servicing order"},
-      {"title": "MIT Federal Credit Union Expands Upstart Into Indirect Auto Lending", "reason": "a named credit-union implementation, but the vendor announcement reports no realized approval, pricing, loss or borrower-outcome evidence"},
-      {"title": "Regulation II Oral Arguments", "reason": "material payments litigation, but the hearing produced no decision or present operating change"},
-      {"title": "SEC 2027 AI Examination Priorities", "reason": "authoritative but directed to securities firms rather than credit unions, with no nearer credit-union obligation"},
-      {"title": "AI Agents Are Changing How Money Moves", "reason": "credible discussion of liability and trust, but substantially overlaps recent agent-authorization and payment-trust coverage without a new rule or implementation"},
-      {"title": "NCUA Weekend Guidance Scan", "reason": "the bounded primary-source scan found no new NCUA release after the already covered October deregulatory proposals"},
-      {"title": "Corporate One Committee Appointments", "reason": "routine governance appointments without a new operating requirement or measured member outcome"},
-      {"title": "Unitus Foster-Youth Savings Grant", "reason": "worthwhile community-impact work but limited portfolio value compared with the selected nationwide mortgage-servicing change"},
-      {"title": "Mahalo Core-Conversion Tally", "reason": "vendor-reported deployment count without independent implementation outcomes or a distinct operating change"},
-      {"title": "DCUC Stablecoin Rule Comments", "reason": "advocacy input to pending rulemaking rather than a final credit-union obligation or implemented product"}
+      {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a current named credit-union fraud implementation, but the vendor announcement reports no realized loss, approval or member-outcome evidence"},
+      {"title": "TEN Credit Union Selects Bankjoy During KeyStone Conversion", "reason": "a material coordinated core and digital conversion, but the October 23 vendor release reports selection rather than completed implementation outcomes"},
+      {"title": "Compliance Navigator Regulation E Series", "reason": "useful operational education but a membership resource launch rather than a new rule, institution decision or measured outcome"},
+      {"title": "NCUA Primary-Source Scan", "reason": "the bounded scan found no new NCUA release after September 23 with a distinct current operating consequence"},
+      {"title": "Tech Mahindra and Mastercard Virtual Payments Partnership", "reason": "broad commercial partnership without a named credit-union implementation or measurable member result"},
+      {"title": "Vancity Selects Temenos for Modernization", "reason": "significant Canadian credit-union implementation but outside the U.S. regulatory and operating focus of the selected national payments ruling"},
+      {"title": "HSBC Launches RedCoin Stablecoin", "reason": "material international payments development, but no U.S. credit-union implementation and recent stablecoin coverage already established the nearer decision set"},
+      {"title": "Cognitive Credit Raises Growth Capital", "reason": "AI and analytics financing activity without a credit-union implementation, obligation or measured operating outcome"},
+      {"title": "Chargebacks911 Launches AI Agent Purchase Indemnification", "reason": "new product claim without independent adoption evidence, contractual detail or credit-union operating result"},
+      {"title": "Plaid LendScore 2", "reason": "relevant alternative-credit model update but more than two weeks old and without a named credit-union deployment or outcome"},
+      {"title": "AI-Assisted Small-Business Servicing Evidence Record", "reason": "the documented Library gap remains valuable, but today’s fresh High-priority court decision takes precedence under the publishing hierarchy"}
     ],
-    "status": "two-article-cycle-complete",
-    "activeExperimentContext": "The October 5 AI workflow-outcome hook test is reflected in presentation only: the headline and lead center the future servicing outcome and the evidence needed before cancellation. Selection, sourcing and classification were unchanged.",
+    "status": "one-article-cycle-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the concrete rule-vacatur event and the decision-ready debit scenario credit unions need. Selection, sourcing and classification were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls",
-    "updatedAt": "2026-10-26T07:55:00-04:00"
+    "updatedAt": "2026-10-27T07:20:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-26",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "mortgage-servicing-and-automated-valuation",
+        "credit-union-compensation-and-succession",
+        "housing-market-and-institutional-investors",
+        "ai-enabled-auto-lending",
+        "debit-interchange-litigation",
+        "securities-ai-examination-priorities",
+        "agentic-payments-and-liability",
+        "credit-union-regulatory-guidance",
+        "corporate-credit-union-governance",
+        "community-impact-and-financial-access",
+        "core-conversions-and-digital-banking",
+        "stablecoin-rulemaking-and-advocacy"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Housing Order Directs FHFA Toward Proactive Mortgage-Insurance Cancellation",
+          "url": "https://creditunionainews.com/news/fhfa-mortgage-insurance-cancellation-pilot.html",
+          "primaryFunctionalAudience": "Mortgage lending, servicing, compliance, member-service and technology leaders",
+          "promotionPriority": "High",
+          "socialDecision": "scheduled-for-2026-10-26T12:30:00-04:00-verified-provider-receipt-6adf378de814d8fcd1f92c1f"
+        },
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "CUES Survey Flags Five-Year Credit Union CEO Succession Gap",
+          "url": "https://creditunionainews.com/news/cues-credit-union-ceo-succession-survey.html",
+          "primaryFunctionalAudience": "Board, HR, talent-development and executive leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible-existing-high-daily-slot-preserved"
+        }
+      ],
+      "rejections": [
+        {"title": "Treasury Institutional-Investor Housing Rule", "reason": "authoritative and current, but it primarily regulates large housing investors and has a less direct credit-union operating consequence than the selected mortgage-servicing order"},
+        {"title": "MIT Federal Credit Union Expands Upstart Into Indirect Auto Lending", "reason": "a named credit-union implementation, but the vendor announcement reports no realized approval, pricing, loss or borrower-outcome evidence"},
+        {"title": "Regulation II Oral Arguments", "reason": "material payments litigation, but the hearing produced no decision or present operating change"},
+        {"title": "SEC 2027 AI Examination Priorities", "reason": "authoritative but directed to securities firms rather than credit unions, with no nearer credit-union obligation"},
+        {"title": "AI Agents Are Changing How Money Moves", "reason": "credible discussion of liability and trust, but substantially overlaps recent agent-authorization and payment-trust coverage without a new rule or implementation"},
+        {"title": "NCUA Weekend Guidance Scan", "reason": "the bounded primary-source scan found no new NCUA release after the already covered October deregulatory proposals"},
+        {"title": "Corporate One Committee Appointments", "reason": "routine governance appointments without a new operating requirement or measured member outcome"},
+        {"title": "Unitus Foster-Youth Savings Grant", "reason": "worthwhile community-impact work but limited portfolio value compared with the selected nationwide mortgage-servicing change"},
+        {"title": "Mahalo Core-Conversion Tally", "reason": "vendor-reported deployment count without independent implementation outcomes or a distinct operating change"},
+        {"title": "DCUC Stablecoin Rule Comments", "reason": "advocacy input to pending rulemaking rather than a final credit-union obligation or implemented product"}
+      ],
+      "status": "two-article-cycle-complete",
+      "activeExperimentContext": "The October 5 AI workflow-outcome hook test is reflected in presentation only: the headline and lead center the future servicing outcome and the evidence needed before cancellation. Selection, sourcing and classification were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls",
+      "updatedAt": "2026-10-26T07:55:00-04:00"
+    },
     {
       "date": "2026-10-23",
       "fullArticleCount": 2,
