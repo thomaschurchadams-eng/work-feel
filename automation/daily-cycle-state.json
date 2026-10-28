@@ -6,57 +6,86 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-27",
+    "date": "2026-10-28",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "debit-interchange-litigation-and-payments-economics",
-      "credit-union-fraud-decisioning",
-      "core-conversions-and-digital-banking",
-      "regulation-e-compliance-operations",
-      "credit-union-regulatory-guidance",
-      "embedded-and-virtual-payments",
-      "international-core-modernization",
-      "stablecoin-payments",
-      "credit-data-and-analytics",
-      "agentic-chargebacks-and-liability",
-      "alternative-credit-scoring",
-      "ai-assisted-small-business-servicing"
+      "credit-union-digital-banking-outcomes",
+      "credit-union-origination-fraud-decisioning",
+      "credit-union-regulatory-budget-and-supervision",
+      "ai-infrastructure-financing-and-concentration",
+      "core-platform-engagement-measurement",
+      "agentic-account-access-and-authorization",
+      "financial-sector-cyber-resilience",
+      "ach-and-credit-push-fraud-controls",
+      "credit-union-workforce-and-training",
+      "business-email-compromise-and-vendor-change-controls",
+      "ai-assisted-small-business-servicing",
+      "member-authentication-and-account-recovery"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Eighth Circuit Vacates Fed’s Debit Interchange Fee Cap",
-        "url": "https://creditunionainews.com/news/eighth-circuit-debit-interchange-cap.html",
-        "primaryFunctionalAudience": "Payments, finance, fraud, compliance and deposit-product leaders",
-        "promotionPriority": "High",
-        "socialDecision": "eligible-high-pending-live-verification-and-slot-selection"
+        "title": "Connexus Says Digital Banking Drives 41% of Loan Funding",
+        "url": "https://creditunionainews.com/news/connexus-digital-banking-loan-funding.html",
+        "primaryFunctionalAudience": "Digital banking, lending, marketing-growth and member-experience leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
       }
     ],
     "rejections": [
-      {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a current named credit-union fraud implementation, but the vendor announcement reports no realized loss, approval or member-outcome evidence"},
-      {"title": "TEN Credit Union Selects Bankjoy During KeyStone Conversion", "reason": "a material coordinated core and digital conversion, but the October 23 vendor release reports selection rather than completed implementation outcomes"},
-      {"title": "Compliance Navigator Regulation E Series", "reason": "useful operational education but a membership resource launch rather than a new rule, institution decision or measured outcome"},
-      {"title": "NCUA Primary-Source Scan", "reason": "the bounded scan found no new NCUA release after September 23 with a distinct current operating consequence"},
-      {"title": "Tech Mahindra and Mastercard Virtual Payments Partnership", "reason": "broad commercial partnership without a named credit-union implementation or measurable member result"},
-      {"title": "Vancity Selects Temenos for Modernization", "reason": "significant Canadian credit-union implementation but outside the U.S. regulatory and operating focus of the selected national payments ruling"},
-      {"title": "HSBC Launches RedCoin Stablecoin", "reason": "material international payments development, but no U.S. credit-union implementation and recent stablecoin coverage already established the nearer decision set"},
-      {"title": "Cognitive Credit Raises Growth Capital", "reason": "AI and analytics financing activity without a credit-union implementation, obligation or measured operating outcome"},
-      {"title": "Chargebacks911 Launches AI Agent Purchase Indemnification", "reason": "new product claim without independent adoption evidence, contractual detail or credit-union operating result"},
-      {"title": "Plaid LendScore 2", "reason": "relevant alternative-credit model update but more than two weeks old and without a named credit-union deployment or outcome"},
-      {"title": "AI-Assisted Small-Business Servicing Evidence Record", "reason": "the documented Library gap remains valuable, but today’s fresh High-priority court decision takes precedence under the publishing hierarchy"}
+      {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a current named credit-union fraud selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"},
+      {"title": "NCUA 2027–2028 Proposed Budget", "reason": "authoritative and current, but the budget and hearing notice create no distinct technology obligation or immediate credit-union operating change"},
+      {"title": "Banks Finance $63 Billion of Anthropic Compute Capacity", "reason": "material AI infrastructure financing, but the syndicated transaction has an indirect and speculative credit-union operating consequence"},
+      {"title": "Bankjoy Reports Corelation Credit-Union Engagement Results", "reason": "useful vendor case-study data, but older than the selected Connexus disclosure and less current for today’s evidence-gated news slot"},
+      {"title": "Large Banks Restrict External AI-Agent Account Access", "reason": "credible competitive signal but substantially duplicative of recent agent-authorization and shutdown-control coverage"},
+      {"title": "SBI Opens Cybersecurity Center After Data-Leak Alert", "reason": "material foreign-bank response with no verified U.S. credit-union impact or distinct domestic operating requirement"},
+      {"title": "America’s Credit Unions Training Opportunities", "reason": "professional-development promotion rather than a completed operating event or measured credit-union outcome"},
+      {"title": "Nacha Credit-Push Fraud Resources", "reason": "authoritative evergreen operating guidance used as evidence for the Library article, not a new event qualifying for News"},
+      {"title": "NCUA Latest-News Primary-Source Scan", "reason": "the bounded scan found no new technology or supervision release beyond the October 27 budget notice with a stronger operating consequence"},
+      {"title": "Mastercard Agentic-Commerce Trust Services", "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"}
     ],
-    "status": "one-article-cycle-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the concrete rule-vacatur event and the decision-ready debit scenario credit unions need. Selection, sourcing and classification were unchanged.",
+    "status": "first-wednesday-article-package-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the news headline centers the reported loan-funding outcome and the evidence needed to interpret it. Selection, sourcing and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls",
-    "updatedAt": "2026-10-27T07:20:00-04:00"
+    "updatedAt": "2026-10-28T07:15:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-27",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": ["debit-interchange-litigation-and-payments-economics", "credit-union-fraud-decisioning", "core-conversions-and-digital-banking", "regulation-e-compliance-operations", "credit-union-regulatory-guidance", "embedded-and-virtual-payments", "international-core-modernization", "stablecoin-payments", "credit-data-and-analytics", "agentic-chargebacks-and-liability", "alternative-credit-scoring", "ai-assisted-small-business-servicing"],
+      "publications": [
+        {"type": "article", "classification": "News", "title": "Eighth Circuit Vacates Fed’s Debit Interchange Fee Cap", "url": "https://creditunionainews.com/news/eighth-circuit-debit-interchange-cap.html", "primaryFunctionalAudience": "Payments, finance, fraud, compliance and deposit-product leaders", "promotionPriority": "High", "socialDecision": "eligible-high-pending-live-verification-and-slot-selection"}
+      ],
+      "rejections": [
+        {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a current named credit-union fraud implementation, but the vendor announcement reports no realized loss, approval or member-outcome evidence"},
+        {"title": "TEN Credit Union Selects Bankjoy During KeyStone Conversion", "reason": "a material coordinated core and digital conversion, but the October 23 vendor release reports selection rather than completed implementation outcomes"},
+        {"title": "Compliance Navigator Regulation E Series", "reason": "useful operational education but a membership resource launch rather than a new rule, institution decision or measured outcome"},
+        {"title": "NCUA Primary-Source Scan", "reason": "the bounded scan found no new NCUA release after September 23 with a distinct current operating consequence"},
+        {"title": "Tech Mahindra and Mastercard Virtual Payments Partnership", "reason": "broad commercial partnership without a named credit-union implementation or measurable member result"},
+        {"title": "Vancity Selects Temenos for Modernization", "reason": "significant Canadian credit-union implementation but outside the U.S. regulatory and operating focus of the selected national payments ruling"},
+        {"title": "HSBC Launches RedCoin Stablecoin", "reason": "material international payments development, but no U.S. credit-union implementation and recent stablecoin coverage already established the nearer decision set"},
+        {"title": "Cognitive Credit Raises Growth Capital", "reason": "AI and analytics financing activity without a credit-union implementation, obligation or measured operating outcome"},
+        {"title": "Chargebacks911 Launches AI Agent Purchase Indemnification", "reason": "new product claim without independent adoption evidence, contractual detail or credit-union operating result"},
+        {"title": "Plaid LendScore 2", "reason": "relevant alternative-credit model update but more than two weeks old and without a named credit-union deployment or outcome"},
+        {"title": "AI-Assisted Small-Business Servicing Evidence Record", "reason": "the documented Library gap remains valuable, but today’s fresh High-priority court decision takes precedence under the publishing hierarchy"}
+      ],
+      "status": "one-article-cycle-complete",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the concrete rule-vacatur event and the decision-ready debit scenario credit unions need. Selection, sourcing and classification were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls",
+      "updatedAt": "2026-10-27T07:20:00-04:00"
+    },
     {
       "date": "2026-10-26",
       "fullArticleCount": 2,

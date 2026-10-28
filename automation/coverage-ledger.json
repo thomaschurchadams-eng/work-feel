@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "connexus-digital-banking-loan-funding",
+      "title": "Connexus Says Digital Banking Drives 41% of Loan Funding",
+      "url": "/news/connexus-digital-banking-loan-funding.html",
+      "publishedAt": "2026-10-28T07:15:00-04:00",
+      "section": "news",
+      "beat": "credit-union-digital-banking-outcomes",
+      "functions": ["marketing-growth", "lending-collections", "member-service", "operations", "vendor-management"],
+      "technologies": ["core-api-cloud", "personalization", "data-decisioning"],
+      "format": "case-study",
+      "audience": "functional-leader",
+      "primaryAudience": "Digital banking, lending, marketing-growth and member-experience leaders",
+      "secondaryAudiences": ["technology leaders", "vendor-management teams", "operations leaders"],
+      "maturity": "scaling",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the reported loan-funding outcome and the evidence needed to interpret it. Selection, sourcing and classification were unchanged.",
+      "internalLinkTargets": ["/news/raiz-digital-account-opening-case-study.html", "/insight-credit-union-ai-member-offer-evidence-loop.html"],
+      "sourceTier": 2,
+      "score": 88.4
+    },
+    {
       "id": "eighth-circuit-debit-interchange-cap",
       "title": "Eighth Circuit Vacates Fed’s Debit Interchange Fee Cap",
       "url": "/news/eighth-circuit-debit-interchange-cap.html",
