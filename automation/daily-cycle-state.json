@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-10-28",
     "fullArticleCount": 2,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -43,6 +43,14 @@
         "primaryFunctionalAudience": "Business banking, treasury-management, operations and BSA/AML leaders",
         "promotionPriority": "Library",
         "socialDecision": "selected-library-queued-2026-10-28-11:30-et-pending-secure-workflow"
+      },
+      {
+        "type": "alert",
+        "title": "Fed Holds Rates at 3.75%–4%; Two Officials Favor an Increase",
+        "url": "https://creditunionainews.com/alerts/#federal-reserve-holds-rates-october-2026",
+        "source": "Federal Reserve Board",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "operatingImplication": "Keep the current policy-rate range in the base case; refresh deposit-pricing, loan-yield, funding and liquidity sensitivities for a possible higher-for-longer path; and tie any product-rate or balance-sheet action to approved thresholds rather than treating the split vote as a rate change."
       }
     ],
     "rejections": [
@@ -57,12 +65,12 @@
       {"title": "NCUA Latest-News Primary-Source Scan", "reason": "the bounded scan found no new technology or supervision release beyond the October 27 budget notice with a stronger operating consequence"},
       {"title": "Mastercard Agentic-Commerce Trust Services", "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"}
     ],
-    "status": "two-article-cycle-complete",
+    "status": "article-and-alert-cycle-complete",
     "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the news headline centers the reported loan-funding outcome, while the Insight headline centers the reconstructable servicing exception record. Selection, evidence and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member authentication, credential reset and account-recovery exception controls",
-    "updatedAt": "2026-10-28T07:45:00-04:00"
+    "updatedAt": "2026-10-28T15:46:38-04:00"
   },
   "history": [
     {

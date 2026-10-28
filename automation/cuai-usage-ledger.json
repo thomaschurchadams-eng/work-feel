@@ -3808,6 +3808,47 @@
       ],
       "summary": "The publisher completed the Tuesday one-article target with High News on the Eighth Circuit's debit-interchange ruling, taking the week to 3 of 8. The 81-article portfolio's latest 15 remain 12 News and 3 Insights across eight reported-news items, four data briefs and three explainers. Risk/compliance appears in 13, operations in 12 and IT/data/cybersecurity in 9; today's article improves payments coverage to 4 and finance/treasury to 5. Preserve the next bounded candidate: AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls, preferably an Insight, case study or data brief if timely news is weak. A fresh primary-source scan found no development newer than the October 26 completed review that cleared the Alert gates; NCUA's latest material remains the October 20 proposal package already covered, and other official surfaces exposed no distinct new credit-union operating action. All timely recent articles, including today's publication, already appear in the homepage grid, so homepageWatchState.reviewedAt advanced while items remained empty and the evergreen fallback stayed active. The narrow freshness commit 4f929ad349deb35f5c26ec3c7082ffbab3706997 deployed READY; the exact deployment served the updated review state and live article, and the two-hour runtime check found no errors. Monday's mortgage-insurance LinkedIn item is now durably reconciled sent; today's debit-interchange item remains internally scheduled after its due time because authenticated Buffer metrics returned 401, so no sent-state write, retry or replacement occurred. The October 20 chart remains unpromoted because the manifest still says productionVerified=false and no provider receipt is persisted. The W44 competitive-distribution scan was consumed without duplication. Latest trusted audience/search measurement remains October 2; independent CAI conversion and a current October goal window remain unavailable. No full article, new social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-28T15:46:38-04:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded October 28 editorial portfolio, Alert, homepage-freshness, analytics, reliability and handoff review after the recorded daily publisher outcome.",
+      "status": "success-alert-published",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 181,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 0,
+        "mediaHandoffsConsumed": 1,
+        "portfolioArticlesReviewed": 83,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 5,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "alertsPublished": 1,
+        "alertPackageFilesChanged": 3,
+        "dailyHistoryEntriesPreserved": 70,
+        "analyticsWindowsReviewed": 1,
+        "weeklyDistributionScanReceiptsConsumed": 1,
+        "competitiveDistributionScansRun": 0,
+        "productionDeploymentChecks": 2,
+        "verifiedOperationsRunsChecked": 1,
+        "siteOriginRuntimeErrorsObserved": 0,
+        "sentStateReconciliationsObserved": 2,
+        "sentStateReconciliationsBlocked": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "summary": "The publisher completed Wednesday's two-article target, taking the week to 5 of 8 with one Standard News case study and one Library Insight. The 83-article portfolio's latest 15 are 11 News and 4 Insights across seven reported-news items, four explainers, three data briefs and one case study. Risk/compliance and operations appear in 12 each, member service and IT/data/cybersecurity in 9 each, while today's coverage improves marketing, lending and vendor management and closes the small-business servicing gap. Preserve the next bounded candidate: AI-assisted member authentication, credential reset and account-recovery exception controls. The Federal Reserve's 2 p.m. October 28 decision is a distinct current-window development: the FOMC held the target range at 3.75%–4%, kept reserve and primary-credit settings unchanged, and recorded two dissents favoring a quarter-point increase. Published one source-led Alert with an ALM, deposit-pricing, lending, funding and liquidity implication; the atomic package preserves all 70 daily-history entries and appends this operating receipt. The October 27 debit-interchange LinkedIn item is now durably sent once with exact sentAt, external link and duplicate=false. Today's Library item remains internally scheduled after its due time because authenticated Buffer metrics returned 401, so no sent-state write, retry or replacement occurred. The October 20 chart remains unpromoted because productionVerified is false and no provider receipt persists. The W44 competitive-distribution scan was consumed without duplication. Latest trusted audience/search measurement remains October 2; independent CAI conversion and a current October goal window remain unavailable. No full article, new social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
