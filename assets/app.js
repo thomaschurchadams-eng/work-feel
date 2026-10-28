@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'Interest Rates',
+      headline: 'Fed Holds Rates at 3.75%–4%; Two Officials Favor an Increase',
+      summary:
+        'The Federal Open Market Committee said on October 28 that it kept the federal funds target range at 3.75% to 4%. The Board also kept the interest rate paid on reserve balances at 3.90% and the primary credit rate at 4%. Two Committee members voted against the decision because they preferred a quarter-point increase.',
+      impact:
+        'Credit-union finance, ALM, lending and deposit teams should keep the current policy-rate range in their base case, refresh deposit-pricing, loan-yield, funding and liquidity sensitivities for a possible higher-for-longer path, and tie any product-rate or balance-sheet action to approved thresholds rather than treating the split vote as a rate change.',
+      sourceName: 'Federal Reserve Board',
+      sourceUrl:
+        'https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm',
+      date: 'Oct 28, 2026',
+      slug: 'federal-reserve-holds-rates-october-2026'
+    },
+    {
       label: 'Deregulation Proposals',
       headline: 'NCUA Proposes Reserve, Charter-Conversion and Share-Notice Changes',
       summary:
