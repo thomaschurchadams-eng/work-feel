@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-28",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -34,6 +34,15 @@
         "primaryFunctionalAudience": "Digital banking, lending, marketing-growth and member-experience leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "An Exception Ledger for AI-Assisted Small-Business Banking",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-small-business-servicing-exception-ledger.html",
+        "primaryFunctionalAudience": "Business banking, treasury-management, operations and BSA/AML leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
       }
     ],
     "rejections": [
@@ -48,12 +57,12 @@
       {"title": "NCUA Latest-News Primary-Source Scan", "reason": "the bounded scan found no new technology or supervision release beyond the October 27 budget notice with a stronger operating consequence"},
       {"title": "Mastercard Agentic-Commerce Trust Services", "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"}
     ],
-    "status": "first-wednesday-article-package-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the news headline centers the reported loan-funding outcome and the evidence needed to interpret it. Selection, sourcing and classification gates were unchanged.",
+    "status": "two-article-cycle-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the news headline centers the reported loan-funding outcome, while the Insight headline centers the reconstructable servicing exception record. Selection, evidence and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "nextCoverageGap": "AI-assisted small-business servicing, cash-management setup and post-onboarding exception controls",
-    "updatedAt": "2026-10-28T07:15:00-04:00"
+    "nextCoverageGap": "AI-assisted member authentication, credential reset and account-recovery exception controls",
+    "updatedAt": "2026-10-28T07:45:00-04:00"
   },
   "history": [
     {

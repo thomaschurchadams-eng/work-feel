@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-small-business-servicing-exception-ledger",
+      "title": "An Exception Ledger for AI-Assisted Small-Business Banking",
+      "url": "/insight-credit-union-ai-small-business-servicing-exception-ledger.html",
+      "publishedAt": "2026-10-28T07:45:00-04:00",
+      "section": "insights",
+      "beat": "ai-assisted-small-business-servicing-and-cash-management",
+      "functions": ["operations", "payments-deposits", "risk-compliance", "member-service", "it-data-cybersecurity"],
+      "technologies": ["agents-automation", "regtech-monitoring", "fraud-analytics"],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Business banking, treasury-management, operations and BSA/AML leaders",
+      "secondaryAudiences": ["payments teams", "member-service leaders", "information-security teams"],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-library-pending-live-verification-and-slot-selection",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the servicing exception ledger and the reconstructable approval outcome. Selection, evidence and publication gates were unchanged.",
+      "internalLinkTargets": ["/insight-credit-union-ai-business-onboarding-evidence-record.html", "/insight-credit-union-ai-complaint-analysis-controls.html"],
+      "sourceTier": 1,
+      "score": 92.8
+    },
+    {
       "id": "connexus-digital-banking-loan-funding",
       "title": "Connexus Says Digital Banking Drives 41% of Loan Funding",
       "url": "/news/connexus-digital-banking-loan-funding.html",
