@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ncua-ai-supervision-budget",
+      "title": "NCUA Plans $4.3 Million for AI-Supported Supervision",
+      "url": "/news/ncua-ai-supervision-budget.html",
+      "publishedAt": "2026-10-29T07:10:00-04:00",
+      "section": "news",
+      "beat": "credit-union-supervisory-ai-and-fraud-analytics",
+      "functions": ["risk-compliance", "it-data-cybersecurity", "vendor-management"],
+      "technologies": ["regtech-monitoring", "fraud-analytics", "data-decisioning"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Compliance, risk, technology, fraud and examination-management leaders",
+      "secondaryAudiences": ["executive leaders", "data-governance teams", "internal audit teams"],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the specific proposed allocation and its supervisory use boundary. Selection, sourcing and classification gates were unchanged.",
+      "internalLinkTargets": ["/news/fsb-ai-sound-practices-financial-institutions.html", "/news/bank-regulators-agentic-ai-shutdown-controls.html"],
+      "sourceTier": 1,
+      "score": 89.6
+    },
+    {
       "id": "credit-union-ai-small-business-servicing-exception-ledger",
       "title": "An Exception Ledger for AI-Assisted Small-Business Banking",
       "url": "/insight-credit-union-ai-small-business-servicing-exception-ledger.html",

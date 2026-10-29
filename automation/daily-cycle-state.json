@@ -6,73 +6,187 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-28",
-    "fullArticleCount": 2,
-    "alertCount": 1,
+    "date": "2026-10-29",
+    "fullArticleCount": 1,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "credit-union-digital-banking-outcomes",
-      "credit-union-origination-fraud-decisioning",
-      "credit-union-regulatory-budget-and-supervision",
-      "ai-infrastructure-financing-and-concentration",
-      "core-platform-engagement-measurement",
-      "agentic-account-access-and-authorization",
-      "financial-sector-cyber-resilience",
-      "ach-and-credit-push-fraud-controls",
-      "credit-union-workforce-and-training",
-      "business-email-compromise-and-vendor-change-controls",
-      "ai-assisted-small-business-servicing",
-      "member-authentication-and-account-recovery"
+      "credit-union-supervisory-ai-and-fraud-analytics",
+      "state-ai-compliance-and-lending-decisions",
+      "digital-banking-brand-acquisitions",
+      "agentic-fraud-case-resolution",
+      "enterprise-ai-workflow-platforms",
+      "credit-union-origination-fraud-selection",
+      "account-takeover-behavioral-analytics",
+      "agentic-payments-identity-and-intent",
+      "aml-investigation-automation",
+      "credit-union-fraud-collaboration",
+      "credit-union-leadership-events",
+      "post-election-regulatory-advocacy"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Connexus Says Digital Banking Drives 41% of Loan Funding",
-        "url": "https://creditunionainews.com/news/connexus-digital-banking-loan-funding.html",
-        "primaryFunctionalAudience": "Digital banking, lending, marketing-growth and member-experience leaders",
+        "title": "NCUA Plans $4.3 Million for AI-Supported Supervision",
+        "url": "https://creditunionainews.com/news/ncua-ai-supervision-budget.html",
+        "primaryFunctionalAudience": "Compliance, risk, technology, fraud and examination-management leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "article",
-        "classification": "Insights",
-        "title": "An Exception Ledger for AI-Assisted Small-Business Banking",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-small-business-servicing-exception-ledger.html",
-        "primaryFunctionalAudience": "Business banking, treasury-management, operations and BSA/AML leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "selected-library-queued-2026-10-28-11:30-et-pending-secure-workflow"
-      },
-      {
-        "type": "alert",
-        "title": "Fed Holds Rates at 3.75%–4%; Two Officials Favor an Increase",
-        "url": "https://creditunionainews.com/alerts/#federal-reserve-holds-rates-october-2026",
-        "source": "Federal Reserve Board",
-        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-        "operatingImplication": "Keep the current policy-rate range in the base case; refresh deposit-pricing, loan-yield, funding and liquidity sensitivities for a possible higher-for-longer path; and tie any product-rate or balance-sheet action to approved thresholds rather than treating the split vote as a rate change."
       }
     ],
     "rejections": [
-      {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a current named credit-union fraud selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"},
-      {"title": "NCUA 2027–2028 Proposed Budget", "reason": "authoritative and current, but the budget and hearing notice create no distinct technology obligation or immediate credit-union operating change"},
-      {"title": "Banks Finance $63 Billion of Anthropic Compute Capacity", "reason": "material AI infrastructure financing, but the syndicated transaction has an indirect and speculative credit-union operating consequence"},
-      {"title": "Bankjoy Reports Corelation Credit-Union Engagement Results", "reason": "useful vendor case-study data, but older than the selected Connexus disclosure and less current for today’s evidence-gated news slot"},
-      {"title": "Large Banks Restrict External AI-Agent Account Access", "reason": "credible competitive signal but substantially duplicative of recent agent-authorization and shutdown-control coverage"},
-      {"title": "SBI Opens Cybersecurity Center After Data-Leak Alert", "reason": "material foreign-bank response with no verified U.S. credit-union impact or distinct domestic operating requirement"},
-      {"title": "America’s Credit Unions Training Opportunities", "reason": "professional-development promotion rather than a completed operating event or measured credit-union outcome"},
-      {"title": "Nacha Credit-Push Fraud Resources", "reason": "authoritative evergreen operating guidance used as evidence for the Library article, not a new event qualifying for News"},
-      {"title": "NCUA Latest-News Primary-Source Scan", "reason": "the bounded scan found no new technology or supervision release beyond the October 27 budget notice with a stronger operating consequence"},
-      {"title": "Mastercard Agentic-Commerce Trust Services", "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"}
+      {
+        "title": "Colorado AI Rulemaking and Credit-Union Burden Letter",
+        "reason": "the statute and implementing rules remain in a proposed and advocacy stage, without a final operating requirement beyond the already known January 1 effective date"
+      },
+      {
+        "title": "Harborstone Credit Union to Acquire HUSTL Digital Brand",
+        "reason": "a credible current transaction, but pending close and narrower operating evidence than the selected national supervisory-technology allocation"
+      },
+      {
+        "title": "Lloyds Agentic Fraud Case-Resolution Deployment",
+        "reason": "a measurable bank case study with more than 10,600 cases, but not credit-union-specific and less direct than the selected primary-regulator development"
+      },
+      {
+        "title": "OpenAI and ServiceNow Enterprise AI Partnership",
+        "reason": "a broad platform partnership whose regulated-finance availability and customer operating results remain largely prospective"
+      },
+      {
+        "title": "Diversified Members Credit Union Selects Scienaptic AI",
+        "reason": "a named credit-union implementation selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"
+      },
+      {
+        "title": "Q2 Account-Takeover Behavioral Analytics Report",
+        "reason": "useful fraud-control evidence but published October 14 and less current than the selected October 28 supervisory budget detail"
+      },
+      {
+        "title": "Mastercard Agentic-Commerce Trust Services",
+        "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"
+      },
+      {
+        "title": "FIS AML Investigation Agent",
+        "reason": "an October 15 bank-oriented product announcement built around vendor projections rather than a named credit-union operating result"
+      },
+      {
+        "title": "Oregon Credit-Union Fraud Roundtable",
+        "reason": "useful practitioner discussion but no new rule, deployed control or measured operating outcome"
+      },
+      {
+        "title": "CCUA APEX Leadership Event",
+        "reason": "event promotion without a completed operating decision, measurable result or new obligation"
+      },
+      {
+        "title": "Post-Election Regulatory Webinar and Training Notices",
+        "reason": "advocacy and professional-development promotion rather than a completed credit-union operating event"
+      }
     ],
-    "status": "article-and-alert-cycle-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the news headline centers the reported loan-funding outcome, while the Insight headline centers the reconstructable servicing exception record. Selection, evidence and classification gates were unchanged.",
+    "status": "one-article-cycle-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the specific proposed allocation and the boundary between an investment signal and deployed supervisory authority. Selection, sourcing and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member authentication, credential reset and account-recovery exception controls",
-    "updatedAt": "2026-10-28T15:46:38-04:00"
+    "updatedAt": "2026-10-29T07:10:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-28",
+      "fullArticleCount": 2,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "credit-union-digital-banking-outcomes",
+        "credit-union-origination-fraud-decisioning",
+        "credit-union-regulatory-budget-and-supervision",
+        "ai-infrastructure-financing-and-concentration",
+        "core-platform-engagement-measurement",
+        "agentic-account-access-and-authorization",
+        "financial-sector-cyber-resilience",
+        "ach-and-credit-push-fraud-controls",
+        "credit-union-workforce-and-training",
+        "business-email-compromise-and-vendor-change-controls",
+        "ai-assisted-small-business-servicing",
+        "member-authentication-and-account-recovery"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Connexus Says Digital Banking Drives 41% of Loan Funding",
+          "url": "https://creditunionainews.com/news/connexus-digital-banking-loan-funding.html",
+          "primaryFunctionalAudience": "Digital banking, lending, marketing-growth and member-experience leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "An Exception Ledger for AI-Assisted Small-Business Banking",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-small-business-servicing-exception-ledger.html",
+          "primaryFunctionalAudience": "Business banking, treasury-management, operations and BSA/AML leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "selected-library-queued-2026-10-28-11:30-et-pending-secure-workflow"
+        },
+        {
+          "type": "alert",
+          "title": "Fed Holds Rates at 3.75%–4%; Two Officials Favor an Increase",
+          "url": "https://creditunionainews.com/alerts/#federal-reserve-holds-rates-october-2026",
+          "source": "Federal Reserve Board",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+          "operatingImplication": "Keep the current policy-rate range in the base case; refresh deposit-pricing, loan-yield, funding and liquidity sensitivities for a possible higher-for-longer path; and tie any product-rate or balance-sheet action to approved thresholds rather than treating the split vote as a rate change."
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Diversified Members Credit Union Selects Scienaptic AI",
+          "reason": "a current named credit-union fraud selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"
+        },
+        {
+          "title": "NCUA 2027–2028 Proposed Budget",
+          "reason": "authoritative and current, but the budget and hearing notice create no distinct technology obligation or immediate credit-union operating change"
+        },
+        {
+          "title": "Banks Finance $63 Billion of Anthropic Compute Capacity",
+          "reason": "material AI infrastructure financing, but the syndicated transaction has an indirect and speculative credit-union operating consequence"
+        },
+        {
+          "title": "Bankjoy Reports Corelation Credit-Union Engagement Results",
+          "reason": "useful vendor case-study data, but older than the selected Connexus disclosure and less current for today’s evidence-gated news slot"
+        },
+        {
+          "title": "Large Banks Restrict External AI-Agent Account Access",
+          "reason": "credible competitive signal but substantially duplicative of recent agent-authorization and shutdown-control coverage"
+        },
+        {
+          "title": "SBI Opens Cybersecurity Center After Data-Leak Alert",
+          "reason": "material foreign-bank response with no verified U.S. credit-union impact or distinct domestic operating requirement"
+        },
+        {
+          "title": "America’s Credit Unions Training Opportunities",
+          "reason": "professional-development promotion rather than a completed operating event or measured credit-union outcome"
+        },
+        {
+          "title": "Nacha Credit-Push Fraud Resources",
+          "reason": "authoritative evergreen operating guidance used as evidence for the Library article, not a new event qualifying for News"
+        },
+        {
+          "title": "NCUA Latest-News Primary-Source Scan",
+          "reason": "the bounded scan found no new technology or supervision release beyond the October 27 budget notice with a stronger operating consequence"
+        },
+        {
+          "title": "Mastercard Agentic-Commerce Trust Services",
+          "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"
+        }
+      ],
+      "status": "article-and-alert-cycle-complete",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the news headline centers the reported loan-funding outcome, while the Insight headline centers the reconstructable servicing exception record. Selection, evidence and classification gates were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted member authentication, credential reset and account-recovery exception controls",
+      "updatedAt": "2026-10-28T15:46:38-04:00"
+    },
     {
       "date": "2026-10-27",
       "fullArticleCount": 1,

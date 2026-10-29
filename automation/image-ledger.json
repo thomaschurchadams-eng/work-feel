@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ncua-ai-supervision-budget",
+      "articleUrl": "/news/ncua-ai-supervision-budget.html",
+      "imagePath": "/assets/ncua-ai-supervision-budget.jpg",
+      "publishedAt": "2026-10-29T07:10:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "premium-3d-editorial-illustration",
+      "subject": "ai-supported-credit-union-supervision-and-fraud-analytics",
+      "composition": "institution-network-focused-through-central-analytics-lens",
+      "perspective": "elevated-oblique",
+      "palette": "deep-navy-teal-controlled-amber",
+      "lighting": "soft-studio-light",
+      "texture": "paper-cut-and-soft-3d-surfaces",
+      "scene": "financial-institutions-connect-to-a-supervisory-analytics-lens-with-an-anomaly-path-and-human-review-checkpoint",
+      "conceptScore": 91.4,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "54d4606783d45e4a2ab542e313c2770fe72131864cf76f8df0df7e304249edd4",
+      "conceptAlternatives": [
+        {"medium": "editorial-data-collage", "subject": "supervisory-analytics-and-evidence-flow", "score": 86.8},
+        {"medium": "macro-still-life", "subject": "budget-allocation-and-human-review-boundary", "score": 82.5}
+      ]
+    },
+    {
       "id": "credit-union-ai-business-onboarding-evidence-record",
       "articleUrl": "/insight-credit-union-ai-business-onboarding-evidence-record.html",
       "imagePath": "/assets/credit-union-ai-business-onboarding-evidence-record.jpg",
