@@ -3849,6 +3849,36 @@
       ],
       "summary": "The publisher completed Wednesday's two-article target, taking the week to 5 of 8 with one Standard News case study and one Library Insight. The 83-article portfolio's latest 15 are 11 News and 4 Insights across seven reported-news items, four explainers, three data briefs and one case study. Risk/compliance and operations appear in 12 each, member service and IT/data/cybersecurity in 9 each, while today's coverage improves marketing, lending and vendor management and closes the small-business servicing gap. Preserve the next bounded candidate: AI-assisted member authentication, credential reset and account-recovery exception controls. The Federal Reserve's 2 p.m. October 28 decision is a distinct current-window development: the FOMC held the target range at 3.75%–4%, kept reserve and primary-credit settings unchanged, and recorded two dissents favoring a quarter-point increase. Published one source-led Alert with an ALM, deposit-pricing, lending, funding and liquidity implication; the atomic package preserves all 70 daily-history entries and appends this operating receipt. The October 27 debit-interchange LinkedIn item is now durably sent once with exact sentAt, external link and duplicate=false. Today's Library item remains internally scheduled after its due time because authenticated Buffer metrics returned 401, so no sent-state write, retry or replacement occurred. The October 20 chart remains unpromoted because productionVerified is false and no provider receipt persists. The W44 competitive-distribution scan was consumed without duplication. Latest trusted audience/search measurement remains October 2; independent CAI conversion and a current October goal window remain unavailable. No full article, new social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-10-29T07:47:04-04:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Close the original verified-operations incident for run 40757907030 at SHA 18fe83a691c297cf0e3a827e0de9fed22c3b4a19 after the design-check stage failed closed on seven stale canonical-shell files.",
+      "status": "recovered",
+      "incidentKey": "cuai-verified-operations:40757907030:18fe83a691c297cf0e3a827e0de9fed22c3b4a19:design-checks",
+      "workUnits": {
+        "failedVerifiedOperationsRunsReviewed": 1,
+        "workflowJobsReviewed": 2,
+        "workflowArtifactsReviewed": 1,
+        "operationReceiptArtifactsFound": 0,
+        "failedStageLogsReviewed": 1,
+        "staleDesignFilesObserved": 7,
+        "staleDesignFilesReconciled": 7,
+        "productionDeploymentsChecked": 1,
+        "livePagesChecked": 3,
+        "runtimeErrorsObserved": 0,
+        "externalWriteRetries": 0,
+        "socialSchedulingAttempts": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "Verified-operations run 40757907030 failed closed at design-checks on seven pre-existing stale article shells; the operate job was skipped, so no distribution action started and no cuai-operation-receipts artifact existed. Current main commit 3b4d78dd53ca666ca469c4643c21bf1f39990f8b updated exactly those seven stale pages while publishing the October 29 article. The publisher's canonical design check, JSON/diff/history validators and 114 policy tests passed. Production deployment dpl_CRfCxpvag4gt6YtuNQK3jqj8mtvE is READY on that exact SHA; the article, homepage and Alerts page returned HTTP 200 and the 12-hour runtime-error scan was clean. No workflow retry, provider call, schedule change, permission change or duplicate social reservation occurred. Durable prevention remains the existing fail-closed canonical design check plus running the controlled design-sync step before verified operations whenever shared shell markup changes. Cross-run automatic recovery remains unavailable because automation/recovery/README.md and an authorized shared checkpoint adapter are absent; neither was needed for this pre-operation reconciliation.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
