@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T07:20:00-04:00",
+  "updatedAt": "2026-10-30T07:45:00-04:00",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -63,6 +63,11 @@
       "technology": "fraud-identity",
       "articles": [
         {
+          "path": "insight-credit-union-account-recovery-evidence-record.html",
+          "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
+          "summary": "Separate routine authentication from recovery, then preserve evidence, exceptions, notifications and post-recovery monitoring."
+        },
+        {
           "path": "news/fatf-ai-enabled-scams-credit-union-controls.html",
           "title": "FATF President Warns AI Is Lowering the Cost of Global Scams",
           "summary": "Join member reports, verification, payment intervention and recovery on one fraud-response clock."
@@ -112,6 +117,11 @@
       "function": "operations",
       "technology": "agents-automation",
       "articles": [
+        {
+          "path": "insight-credit-union-account-recovery-evidence-record.html",
+          "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
+          "summary": "Separate routine authentication from recovery, then preserve evidence, exceptions, notifications and post-recovery monitoring."
+        },
         {
           "path": "news/sharetec-core-outage-credit-union-failover.html",
           "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",
@@ -212,6 +222,11 @@
       "function": "member-service",
       "technology": "personalization-service",
       "articles": [
+        {
+          "path": "insight-credit-union-account-recovery-evidence-record.html",
+          "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
+          "summary": "Separate routine authentication from recovery, then preserve evidence, exceptions, notifications and post-recovery monitoring."
+        },
         {
           "path": "news/commonwealth-personalized-offers-business-deposits.html",
           "title": "Commonwealth Extends Personalized Offers Into Business Deposits",

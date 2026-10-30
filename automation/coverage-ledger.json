@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-account-recovery-evidence-record",
+      "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
+      "url": "/insight-credit-union-account-recovery-evidence-record.html",
+      "publishedAt": "2026-10-30T07:45:00-04:00",
+      "section": "insights",
+      "beat": "ai-assisted-member-authentication-and-account-recovery",
+      "functions": ["member-service", "risk-compliance", "operations", "it-data-cybersecurity"],
+      "technologies": ["fraud-analytics", "regtech-monitoring", "agents-automation"],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Member-service, fraud, digital-banking, identity and compliance leaders",
+      "secondaryAudiences": ["contact-center leaders", "information-security teams", "internal-audit teams"],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-library-pending-live-verification-and-slot-selection",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the separate recovery-path evidence record and accountable restoration outcome. Selection, evidence and publication gates were unchanged.",
+      "internalLinkTargets": ["/news/fincen-ncua-digital-credentials-credit-union-cip.html", "/insight-credit-union-ai-complaint-analysis-controls.html"],
+      "sourceTier": 1,
+      "score": 94.6
+    },
+    {
       "id": "commonwealth-personalized-offers-business-deposits",
       "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
       "url": "/news/commonwealth-personalized-offers-business-deposits.html",

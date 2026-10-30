@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-account-recovery-evidence-record",
+      "articleUrl": "/insight-credit-union-account-recovery-evidence-record.html",
+      "imagePath": "/assets/credit-union-account-recovery-evidence-record.jpg",
+      "publishedAt": "2026-10-30T07:45:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "architectural-isometric",
+      "subject": "risk-and-security",
+      "composition": "split-comparison",
+      "perspective": "cutaway",
+      "palette": "slate-lime",
+      "lighting": "graphic-flat-light",
+      "texture": "matte-clay",
+      "scene": "normal-login-and-account-recovery-paths-separated-by-human-review-and-member-notification",
+      "conceptScore": 91.1,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "7286b18baf6b781189e19a94ab052aa570951e3bb21e769d2ddb5016b882ced2",
+      "conceptAlternatives": [
+        {"medium": "macro-still-life", "subject": "documents-and-controls", "score": 76.7},
+        {"medium": "mixed-media-collage", "subject": "human-machine-handoff", "score": 75.4}
+      ]
+    },
+    {
       "id": "commonwealth-personalized-offers-business-deposits",
       "articleUrl": "/news/commonwealth-personalized-offers-business-deposits.html",
       "imagePath": "/assets/commonwealth-personalized-offers-business-deposits.jpg",

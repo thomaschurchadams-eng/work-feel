@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-10-30",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -34,6 +34,15 @@
         "primaryFunctionalAudience": "Marketing-growth, lending, business-banking, digital and operations leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
+        "url": "https://creditunionainews.com/insight-credit-union-account-recovery-evidence-record.html",
+        "primaryFunctionalAudience": "Member-service, fraud, digital-banking, identity and compliance leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
       }
     ],
     "rejections": [
@@ -42,10 +51,6 @@
       {
         "title": "Colorado AI Rulemaking and Credit-Union Burden Letter",
         "reason": "the implementing rules remain proposed and the current filing is advocacy rather than a final operating requirement"
-      },
-      {
-        "title": "Harborstone Credit Union to Acquire HUSTL Digital Brand",
-        "reason": "a credible current transaction, but the close and integration results remain pending"
       },
       {
         "title": "Lloyds Agentic Fraud Case-Resolution Deployment",
@@ -76,13 +81,12 @@
         "reason": "a bank-processor roadmap and trust commentary, not a completed credit-union pilot or measured authorization outcome"
       }
     ],
-    "qualifiedFollowOnCandidate": "A recovery-path evidence record for AI-assisted member authentication",
-    "status": "first-of-two-article-packages-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the new business-deposit rollout and measured cumulative loan outcome. Selection, sourcing and classification gates were unchanged.",
+    "status": "two-article-cycle-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the new business-deposit rollout and measured cumulative loan outcome, while the Insight headline centers a separate recovery-path evidence record and accountable access-restoration outcome. Selection, evidence and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "nextCoverageGap": "AI-assisted member authentication, credential reset and account-recovery exception controls",
-    "updatedAt": "2026-10-30T07:20:00-04:00"
+    "nextCoverageGap": "AI-assisted card-dispute intake, provisional-credit timing and error-investigation evidence controls",
+    "updatedAt": "2026-10-30T07:45:00-04:00"
   },
   "history": [
     {
