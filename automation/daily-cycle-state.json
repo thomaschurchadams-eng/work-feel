@@ -42,12 +42,18 @@
         "url": "https://creditunionainews.com/insight-credit-union-account-recovery-evidence-record.html",
         "primaryFunctionalAudience": "Member-service, fraud, digital-banking, identity and compliance leaders",
         "promotionPriority": "Library",
-        "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
+        "socialDecision": "eligible-library-queued-2026-10-30-12:30-et-pending-verified-secure-receipt"
       }
     ],
     "rejections": [
-      {"title": "Member Driven Technologies Automates User Access Reviews", "reason": "a current CUSO deployment with useful governance detail, but the vendor supplies no quantified time, control-failure or audit-outcome measure"},
-      {"title": "America’s Credit Unions ‘Black October’ Cybersecurity Guidance", "reason": "timely practitioner guidance used as evidence for the follow-on Library package, not a distinct completed operating event"},
+      {
+        "title": "Member Driven Technologies Automates User Access Reviews",
+        "reason": "a current CUSO deployment with useful governance detail, but the vendor supplies no quantified time, control-failure or audit-outcome measure"
+      },
+      {
+        "title": "America’s Credit Unions ‘Black October’ Cybersecurity Guidance",
+        "reason": "timely practitioner guidance used as evidence for the follow-on Library package, not a distinct completed operating event"
+      },
       {
         "title": "Colorado AI Rulemaking and Credit-Union Burden Letter",
         "reason": "the implementing rules remain proposed and the current filing is advocacy rather than a final operating requirement"
@@ -86,7 +92,7 @@
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted card-dispute intake, provisional-credit timing and error-investigation evidence controls",
-    "updatedAt": "2026-10-30T07:45:00-04:00"
+    "updatedAt": "2026-10-30T07:50:00-04:00"
   },
   "history": [
     {
@@ -121,17 +127,50 @@
         }
       ],
       "rejections": [
-        {"title": "Colorado AI Rulemaking and Credit-Union Burden Letter", "reason": "the statute and implementing rules remain in a proposed and advocacy stage, without a final operating requirement beyond the already known January 1 effective date"},
-        {"title": "Harborstone Credit Union to Acquire HUSTL Digital Brand", "reason": "a credible current transaction, but pending close and narrower operating evidence than the selected national supervisory-technology allocation"},
-        {"title": "Lloyds Agentic Fraud Case-Resolution Deployment", "reason": "a measurable bank case study with more than 10,600 cases, but not credit-union-specific and less direct than the selected primary-regulator development"},
-        {"title": "OpenAI and ServiceNow Enterprise AI Partnership", "reason": "a broad platform partnership whose regulated-finance availability and customer operating results remain largely prospective"},
-        {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a named credit-union implementation selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"},
-        {"title": "Q2 Account-Takeover Behavioral Analytics Report", "reason": "useful fraud-control evidence but published October 14 and less current than the selected October 28 supervisory budget detail"},
-        {"title": "Mastercard Agentic-Commerce Trust Services", "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"},
-        {"title": "FIS AML Investigation Agent", "reason": "an October 15 bank-oriented product announcement built around vendor projections rather than a named credit-union operating result"},
-        {"title": "Oregon Credit-Union Fraud Roundtable", "reason": "useful practitioner discussion but no new rule, deployed control or measured operating outcome"},
-        {"title": "CCUA APEX Leadership Event", "reason": "event promotion without a completed operating decision, measurable result or new obligation"},
-        {"title": "Post-Election Regulatory Webinar and Training Notices", "reason": "advocacy and professional-development promotion rather than a completed credit-union operating event"}
+        {
+          "title": "Colorado AI Rulemaking and Credit-Union Burden Letter",
+          "reason": "the statute and implementing rules remain in a proposed and advocacy stage, without a final operating requirement beyond the already known January 1 effective date"
+        },
+        {
+          "title": "Harborstone Credit Union to Acquire HUSTL Digital Brand",
+          "reason": "a credible current transaction, but pending close and narrower operating evidence than the selected national supervisory-technology allocation"
+        },
+        {
+          "title": "Lloyds Agentic Fraud Case-Resolution Deployment",
+          "reason": "a measurable bank case study with more than 10,600 cases, but not credit-union-specific and less direct than the selected primary-regulator development"
+        },
+        {
+          "title": "OpenAI and ServiceNow Enterprise AI Partnership",
+          "reason": "a broad platform partnership whose regulated-finance availability and customer operating results remain largely prospective"
+        },
+        {
+          "title": "Diversified Members Credit Union Selects Scienaptic AI",
+          "reason": "a named credit-union implementation selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"
+        },
+        {
+          "title": "Q2 Account-Takeover Behavioral Analytics Report",
+          "reason": "useful fraud-control evidence but published October 14 and less current than the selected October 28 supervisory budget detail"
+        },
+        {
+          "title": "Mastercard Agentic-Commerce Trust Services",
+          "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"
+        },
+        {
+          "title": "FIS AML Investigation Agent",
+          "reason": "an October 15 bank-oriented product announcement built around vendor projections rather than a named credit-union operating result"
+        },
+        {
+          "title": "Oregon Credit-Union Fraud Roundtable",
+          "reason": "useful practitioner discussion but no new rule, deployed control or measured operating outcome"
+        },
+        {
+          "title": "CCUA APEX Leadership Event",
+          "reason": "event promotion without a completed operating decision, measurable result or new obligation"
+        },
+        {
+          "title": "Post-Election Regulatory Webinar and Training Notices",
+          "reason": "advocacy and professional-development promotion rather than a completed credit-union operating event"
+        }
       ],
       "status": "one-article-cycle-complete",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the specific proposed allocation and the boundary between an investment signal and deployed supervisory authority. Selection, sourcing and classification gates were unchanged.",
@@ -243,22 +282,76 @@
       "alertCount": 0,
       "evaluatedCandidateCount": 12,
       "beatsSearchedCount": 12,
-      "beatsSearched": ["debit-interchange-litigation-and-payments-economics", "credit-union-fraud-decisioning", "core-conversions-and-digital-banking", "regulation-e-compliance-operations", "credit-union-regulatory-guidance", "embedded-and-virtual-payments", "international-core-modernization", "stablecoin-payments", "credit-data-and-analytics", "agentic-chargebacks-and-liability", "alternative-credit-scoring", "ai-assisted-small-business-servicing"],
+      "beatsSearched": [
+        "debit-interchange-litigation-and-payments-economics",
+        "credit-union-fraud-decisioning",
+        "core-conversions-and-digital-banking",
+        "regulation-e-compliance-operations",
+        "credit-union-regulatory-guidance",
+        "embedded-and-virtual-payments",
+        "international-core-modernization",
+        "stablecoin-payments",
+        "credit-data-and-analytics",
+        "agentic-chargebacks-and-liability",
+        "alternative-credit-scoring",
+        "ai-assisted-small-business-servicing"
+      ],
       "publications": [
-        {"type": "article", "classification": "News", "title": "Eighth Circuit Vacates Fed’s Debit Interchange Fee Cap", "url": "https://creditunionainews.com/news/eighth-circuit-debit-interchange-cap.html", "primaryFunctionalAudience": "Payments, finance, fraud, compliance and deposit-product leaders", "promotionPriority": "High", "socialDecision": "eligible-high-pending-live-verification-and-slot-selection"}
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Eighth Circuit Vacates Fed’s Debit Interchange Fee Cap",
+          "url": "https://creditunionainews.com/news/eighth-circuit-debit-interchange-cap.html",
+          "primaryFunctionalAudience": "Payments, finance, fraud, compliance and deposit-product leaders",
+          "promotionPriority": "High",
+          "socialDecision": "eligible-high-pending-live-verification-and-slot-selection"
+        }
       ],
       "rejections": [
-        {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a current named credit-union fraud implementation, but the vendor announcement reports no realized loss, approval or member-outcome evidence"},
-        {"title": "TEN Credit Union Selects Bankjoy During KeyStone Conversion", "reason": "a material coordinated core and digital conversion, but the October 23 vendor release reports selection rather than completed implementation outcomes"},
-        {"title": "Compliance Navigator Regulation E Series", "reason": "useful operational education but a membership resource launch rather than a new rule, institution decision or measured outcome"},
-        {"title": "NCUA Primary-Source Scan", "reason": "the bounded scan found no new NCUA release after September 23 with a distinct current operating consequence"},
-        {"title": "Tech Mahindra and Mastercard Virtual Payments Partnership", "reason": "broad commercial partnership without a named credit-union implementation or measurable member result"},
-        {"title": "Vancity Selects Temenos for Modernization", "reason": "significant Canadian credit-union implementation but outside the U.S. regulatory and operating focus of the selected national payments ruling"},
-        {"title": "HSBC Launches RedCoin Stablecoin", "reason": "material international payments development, but no U.S. credit-union implementation and recent stablecoin coverage already established the nearer decision set"},
-        {"title": "Cognitive Credit Raises Growth Capital", "reason": "AI and analytics financing activity without a credit-union implementation, obligation or measured operating outcome"},
-        {"title": "Chargebacks911 Launches AI Agent Purchase Indemnification", "reason": "new product claim without independent adoption evidence, contractual detail or credit-union operating result"},
-        {"title": "Plaid LendScore 2", "reason": "relevant alternative-credit model update but more than two weeks old and without a named credit-union deployment or outcome"},
-        {"title": "AI-Assisted Small-Business Servicing Evidence Record", "reason": "the documented Library gap remains valuable, but today’s fresh High-priority court decision takes precedence under the publishing hierarchy"}
+        {
+          "title": "Diversified Members Credit Union Selects Scienaptic AI",
+          "reason": "a current named credit-union fraud implementation, but the vendor announcement reports no realized loss, approval or member-outcome evidence"
+        },
+        {
+          "title": "TEN Credit Union Selects Bankjoy During KeyStone Conversion",
+          "reason": "a material coordinated core and digital conversion, but the October 23 vendor release reports selection rather than completed implementation outcomes"
+        },
+        {
+          "title": "Compliance Navigator Regulation E Series",
+          "reason": "useful operational education but a membership resource launch rather than a new rule, institution decision or measured outcome"
+        },
+        {
+          "title": "NCUA Primary-Source Scan",
+          "reason": "the bounded scan found no new NCUA release after September 23 with a distinct current operating consequence"
+        },
+        {
+          "title": "Tech Mahindra and Mastercard Virtual Payments Partnership",
+          "reason": "broad commercial partnership without a named credit-union implementation or measurable member result"
+        },
+        {
+          "title": "Vancity Selects Temenos for Modernization",
+          "reason": "significant Canadian credit-union implementation but outside the U.S. regulatory and operating focus of the selected national payments ruling"
+        },
+        {
+          "title": "HSBC Launches RedCoin Stablecoin",
+          "reason": "material international payments development, but no U.S. credit-union implementation and recent stablecoin coverage already established the nearer decision set"
+        },
+        {
+          "title": "Cognitive Credit Raises Growth Capital",
+          "reason": "AI and analytics financing activity without a credit-union implementation, obligation or measured operating outcome"
+        },
+        {
+          "title": "Chargebacks911 Launches AI Agent Purchase Indemnification",
+          "reason": "new product claim without independent adoption evidence, contractual detail or credit-union operating result"
+        },
+        {
+          "title": "Plaid LendScore 2",
+          "reason": "relevant alternative-credit model update but more than two weeks old and without a named credit-union deployment or outcome"
+        },
+        {
+          "title": "AI-Assisted Small-Business Servicing Evidence Record",
+          "reason": "the documented Library gap remains valuable, but today’s fresh High-priority court decision takes precedence under the publishing hierarchy"
+        }
       ],
       "status": "one-article-cycle-complete",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the concrete rule-vacatur event and the decision-ready debit scenario credit unions need. Selection, sourcing and classification were unchanged.",
@@ -308,16 +401,46 @@
         }
       ],
       "rejections": [
-        {"title": "Treasury Institutional-Investor Housing Rule", "reason": "authoritative and current, but it primarily regulates large housing investors and has a less direct credit-union operating consequence than the selected mortgage-servicing order"},
-        {"title": "MIT Federal Credit Union Expands Upstart Into Indirect Auto Lending", "reason": "a named credit-union implementation, but the vendor announcement reports no realized approval, pricing, loss or borrower-outcome evidence"},
-        {"title": "Regulation II Oral Arguments", "reason": "material payments litigation, but the hearing produced no decision or present operating change"},
-        {"title": "SEC 2027 AI Examination Priorities", "reason": "authoritative but directed to securities firms rather than credit unions, with no nearer credit-union obligation"},
-        {"title": "AI Agents Are Changing How Money Moves", "reason": "credible discussion of liability and trust, but substantially overlaps recent agent-authorization and payment-trust coverage without a new rule or implementation"},
-        {"title": "NCUA Weekend Guidance Scan", "reason": "the bounded primary-source scan found no new NCUA release after the already covered October deregulatory proposals"},
-        {"title": "Corporate One Committee Appointments", "reason": "routine governance appointments without a new operating requirement or measured member outcome"},
-        {"title": "Unitus Foster-Youth Savings Grant", "reason": "worthwhile community-impact work but limited portfolio value compared with the selected nationwide mortgage-servicing change"},
-        {"title": "Mahalo Core-Conversion Tally", "reason": "vendor-reported deployment count without independent implementation outcomes or a distinct operating change"},
-        {"title": "DCUC Stablecoin Rule Comments", "reason": "advocacy input to pending rulemaking rather than a final credit-union obligation or implemented product"}
+        {
+          "title": "Treasury Institutional-Investor Housing Rule",
+          "reason": "authoritative and current, but it primarily regulates large housing investors and has a less direct credit-union operating consequence than the selected mortgage-servicing order"
+        },
+        {
+          "title": "MIT Federal Credit Union Expands Upstart Into Indirect Auto Lending",
+          "reason": "a named credit-union implementation, but the vendor announcement reports no realized approval, pricing, loss or borrower-outcome evidence"
+        },
+        {
+          "title": "Regulation II Oral Arguments",
+          "reason": "material payments litigation, but the hearing produced no decision or present operating change"
+        },
+        {
+          "title": "SEC 2027 AI Examination Priorities",
+          "reason": "authoritative but directed to securities firms rather than credit unions, with no nearer credit-union obligation"
+        },
+        {
+          "title": "AI Agents Are Changing How Money Moves",
+          "reason": "credible discussion of liability and trust, but substantially overlaps recent agent-authorization and payment-trust coverage without a new rule or implementation"
+        },
+        {
+          "title": "NCUA Weekend Guidance Scan",
+          "reason": "the bounded primary-source scan found no new NCUA release after the already covered October deregulatory proposals"
+        },
+        {
+          "title": "Corporate One Committee Appointments",
+          "reason": "routine governance appointments without a new operating requirement or measured member outcome"
+        },
+        {
+          "title": "Unitus Foster-Youth Savings Grant",
+          "reason": "worthwhile community-impact work but limited portfolio value compared with the selected nationwide mortgage-servicing change"
+        },
+        {
+          "title": "Mahalo Core-Conversion Tally",
+          "reason": "vendor-reported deployment count without independent implementation outcomes or a distinct operating change"
+        },
+        {
+          "title": "DCUC Stablecoin Rule Comments",
+          "reason": "advocacy input to pending rulemaking rather than a final credit-union obligation or implemented product"
+        }
       ],
       "status": "two-article-cycle-complete",
       "activeExperimentContext": "The October 5 AI workflow-outcome hook test is reflected in presentation only: the headline and lead center the future servicing outcome and the evidence needed before cancellation. Selection, sourcing and classification were unchanged.",
@@ -332,23 +455,85 @@
       "alertCount": 0,
       "evaluatedCandidateCount": 12,
       "beatsSearchedCount": 12,
-      "beatsSearched": ["bank-ai-autonomy-and-control-readiness", "agentic-ai-account-access", "financial-stability-and-ai-market-risk", "ai-enabled-cyberattacks-and-patching", "stablecoin-networks-and-cross-border-payments", "credit-union-executive-and-event-news", "financial-access-and-affordability-policy", "aml-cft-rulemaking-and-advocacy", "check-fraud-and-deposit-operations", "digital-asset-lending-platforms", "ai-workforce-restructuring", "frontier-model-financial-services-announcements"],
+      "beatsSearched": [
+        "bank-ai-autonomy-and-control-readiness",
+        "agentic-ai-account-access",
+        "financial-stability-and-ai-market-risk",
+        "ai-enabled-cyberattacks-and-patching",
+        "stablecoin-networks-and-cross-border-payments",
+        "credit-union-executive-and-event-news",
+        "financial-access-and-affordability-policy",
+        "aml-cft-rulemaking-and-advocacy",
+        "check-fraud-and-deposit-operations",
+        "digital-asset-lending-platforms",
+        "ai-workforce-restructuring",
+        "frontier-model-financial-services-announcements"
+      ],
       "publications": [
-        {"type": "article", "classification": "News", "title": "Bank AI Ambitions Outpace Control Systems, Survey Finds", "url": "https://creditunionainews.com/news/bank-ai-autonomy-control-gap-survey.html", "primaryFunctionalAudience": "Technology, model-risk, credit, treasury and compliance leaders", "promotionPriority": "Standard", "socialDecision": "not-created-standard-ineligible"},
-        {"type": "article", "classification": "Insights", "title": "An Evidence Record for AI-Assisted Business Account Onboarding", "url": "https://creditunionainews.com/insight-credit-union-ai-business-onboarding-evidence-record.html", "primaryFunctionalAudience": "Business banking, BSA/AML, digital-onboarding and operations leaders", "promotionPriority": "Library", "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"}
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Bank AI Ambitions Outpace Control Systems, Survey Finds",
+          "url": "https://creditunionainews.com/news/bank-ai-autonomy-control-gap-survey.html",
+          "primaryFunctionalAudience": "Technology, model-risk, credit, treasury and compliance leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "An Evidence Record for AI-Assisted Business Account Onboarding",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-business-onboarding-evidence-record.html",
+          "primaryFunctionalAudience": "Business banking, BSA/AML, digital-onboarding and operations leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
+        }
       ],
       "rejections": [
-        {"title": "Large Banks Restrict External AI-Agent Account Access", "reason": "credible competitive signal, but rejected again because it remains substantially duplicative of the October 13 agentic-AI shutdown-controls article and the October 22 evaluation"},
-        {"title": "Bank of Japan Warns of AI Market Shock and Cyber Risk", "reason": "authoritative financial-stability warning, but foreign-system context and no distinct U.S. credit-union operating change"},
-        {"title": "Microsoft Reports AI-Assisted ConnectWise Campaign", "reason": "material cyber reporting but no verified credit-union impact and substantial overlap with recent AI-enabled cyber and recovery coverage"},
-        {"title": "Western Union Expands Stablecoin Payment Network", "reason": "competitive payments development, but recent tokenized-deposit and stablecoin coverage already establishes the nearer credit-union decision set"},
-        {"title": "Teachers Federal Credit Union Executive Forum", "reason": "promotional event programming without a discrete rule, implementation or measured member outcome"},
-        {"title": "Credit Unions Discuss Ohio Affordability", "reason": "useful policy dialogue but no enacted change or new operating requirement"},
-        {"title": "Credit Unions Comment on AML/CFT Relief", "reason": "advocacy input to pending rulemaking rather than a final obligation or implemented change"},
-        {"title": "Alkami Publishes Check-Fraud Guidance", "reason": "vendor guidance relying on broader bank data without a new named credit-union implementation or measured result"},
-        {"title": "BankSocial Promotes Digital-Asset Lending", "reason": "vendor-supplied product claims without independent adoption or outcome evidence"},
-        {"title": "Barclays Links Job Cuts to Technology Productivity", "reason": "material foreign workforce development but not sufficiently specific to U.S. credit-union operations and overlaps October 14 workforce coverage"},
-        {"title": "OpenAI, Anthropic, Microsoft and Google Financial-Services Announcements", "reason": "the bounded official-source scan found no new financial-services release with a concrete credit-union operating implication"}
+        {
+          "title": "Large Banks Restrict External AI-Agent Account Access",
+          "reason": "credible competitive signal, but rejected again because it remains substantially duplicative of the October 13 agentic-AI shutdown-controls article and the October 22 evaluation"
+        },
+        {
+          "title": "Bank of Japan Warns of AI Market Shock and Cyber Risk",
+          "reason": "authoritative financial-stability warning, but foreign-system context and no distinct U.S. credit-union operating change"
+        },
+        {
+          "title": "Microsoft Reports AI-Assisted ConnectWise Campaign",
+          "reason": "material cyber reporting but no verified credit-union impact and substantial overlap with recent AI-enabled cyber and recovery coverage"
+        },
+        {
+          "title": "Western Union Expands Stablecoin Payment Network",
+          "reason": "competitive payments development, but recent tokenized-deposit and stablecoin coverage already establishes the nearer credit-union decision set"
+        },
+        {
+          "title": "Teachers Federal Credit Union Executive Forum",
+          "reason": "promotional event programming without a discrete rule, implementation or measured member outcome"
+        },
+        {
+          "title": "Credit Unions Discuss Ohio Affordability",
+          "reason": "useful policy dialogue but no enacted change or new operating requirement"
+        },
+        {
+          "title": "Credit Unions Comment on AML/CFT Relief",
+          "reason": "advocacy input to pending rulemaking rather than a final obligation or implemented change"
+        },
+        {
+          "title": "Alkami Publishes Check-Fraud Guidance",
+          "reason": "vendor guidance relying on broader bank data without a new named credit-union implementation or measured result"
+        },
+        {
+          "title": "BankSocial Promotes Digital-Asset Lending",
+          "reason": "vendor-supplied product claims without independent adoption or outcome evidence"
+        },
+        {
+          "title": "Barclays Links Job Cuts to Technology Productivity",
+          "reason": "material foreign workforce development but not sufficiently specific to U.S. credit-union operations and overlaps October 14 workforce coverage"
+        },
+        {
+          "title": "OpenAI, Anthropic, Microsoft and Google Financial-Services Announcements",
+          "reason": "the bounded official-source scan found no new financial-services release with a concrete credit-union operating implication"
+        }
       ],
       "status": "two-article-cycle-complete",
       "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and lead focus on the measured operating gap between planned autonomous authority and current control maturity. Vendor-study limitations remain explicit; selection and evidence gates were unchanged.",
@@ -363,20 +548,76 @@
       "alertCount": 0,
       "evaluatedCandidateCount": 12,
       "beatsSearchedCount": 12,
-      "beatsSearched": ["payments-ai-trust-and-agent-authorization", "stablecoin-rulemaking-and-issuer-supervision", "share-insurance-member-notices", "credit-union-mergers-and-integration", "credit-card-interchange-policy", "stablecoin-advocacy-and-rule-comments", "payments-performance-and-digital-wallets", "ai-fintech-consumer-trust", "agentic-ai-account-access", "credit-union-vendor-partnerships", "financial-access-and-state-policy", "industry-governance-and-education"],
-      "publications": [{"type": "article", "classification": "News", "title": "Velera Finds AI Use Rising as Members Resist AI Transactions", "url": "https://creditunionainews.com/news/velera-ai-payment-trust-gap.html", "primaryFunctionalAudience": "Payments, digital-banking, member-experience, risk and fraud leaders", "promotionPriority": "Standard", "socialDecision": "not-created-standard-ineligible-existing-october-22-daily-slot-preserved"}],
+      "beatsSearched": [
+        "payments-ai-trust-and-agent-authorization",
+        "stablecoin-rulemaking-and-issuer-supervision",
+        "share-insurance-member-notices",
+        "credit-union-mergers-and-integration",
+        "credit-card-interchange-policy",
+        "stablecoin-advocacy-and-rule-comments",
+        "payments-performance-and-digital-wallets",
+        "ai-fintech-consumer-trust",
+        "agentic-ai-account-access",
+        "credit-union-vendor-partnerships",
+        "financial-access-and-state-policy",
+        "industry-governance-and-education"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Velera Finds AI Use Rising as Members Resist AI Transactions",
+          "url": "https://creditunionainews.com/news/velera-ai-payment-trust-gap.html",
+          "primaryFunctionalAudience": "Payments, digital-banking, member-experience, risk and fraud leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible-existing-october-22-daily-slot-preserved"
+        }
+      ],
       "rejections": [
-        {"title": "OCC Finalizes GENIUS Act Stablecoin Issuer Rule", "reason": "material national-bank and issuer framework, but not a direct credit-union rule; NCUA and other primary-regulator implementation remains incomplete and recent stablecoin coverage already established the credit-union preparation baseline"},
-        {"title": "NCUA Proposes Flexible Digital Share-Insurance Notices", "reason": "the October 21 Federal Register proposal repeats the member-notice element of the October 20 NCUA deregulation Alert"},
-        {"title": "PenAir and Fort McClellan Plan Credit-Union Merger", "reason": "credible current consolidation announcement, but pending approvals and lower portfolio value one day after the DFCU acquisition article"},
-        {"title": "Credit Union Coalition Renews Opposition to Credit Card Competition Act", "reason": "advocacy response to campaign remarks rather than a bill vote, enacted requirement or current operating change"},
-        {"title": "Credit Unions Comment on GENIUS Act Implementation", "reason": "industry recommendations to pending Treasury rulemaking rather than final obligations or an implemented product change"},
-        {"title": "Velera October Payments Index", "reason": "older economic and portfolio update with less distinct operating evidence than the selected new 1,750-person member-payments study"},
-        {"title": "Axios Fintech AI Trust Roundtable", "reason": "sponsored discussion offering practitioner views but no new credit-union-specific measurement, rule or implementation result"},
-        {"title": "Large Banks Restrict External AI-Agent Account Access", "reason": "material competitive signal but substantial overlap with the October 13 article on agent authorization, monitoring and shutdown controls"},
-        {"title": "SWBC Announces Stellar Financial Group Partnership", "reason": "vendor partnership announcement without a named credit-union implementation or independently measured member outcome"},
-        {"title": "Credit Unions Testify on Oklahoma Financial Access", "reason": "useful policy context but no enacted change, discrete institution decision or new operating requirement"},
-        {"title": "Credit-Union Executive and Conference Notices", "reason": "routine personnel and promotional programming without a material credit-union operating consequence"}
+        {
+          "title": "OCC Finalizes GENIUS Act Stablecoin Issuer Rule",
+          "reason": "material national-bank and issuer framework, but not a direct credit-union rule; NCUA and other primary-regulator implementation remains incomplete and recent stablecoin coverage already established the credit-union preparation baseline"
+        },
+        {
+          "title": "NCUA Proposes Flexible Digital Share-Insurance Notices",
+          "reason": "the October 21 Federal Register proposal repeats the member-notice element of the October 20 NCUA deregulation Alert"
+        },
+        {
+          "title": "PenAir and Fort McClellan Plan Credit-Union Merger",
+          "reason": "credible current consolidation announcement, but pending approvals and lower portfolio value one day after the DFCU acquisition article"
+        },
+        {
+          "title": "Credit Union Coalition Renews Opposition to Credit Card Competition Act",
+          "reason": "advocacy response to campaign remarks rather than a bill vote, enacted requirement or current operating change"
+        },
+        {
+          "title": "Credit Unions Comment on GENIUS Act Implementation",
+          "reason": "industry recommendations to pending Treasury rulemaking rather than final obligations or an implemented product change"
+        },
+        {
+          "title": "Velera October Payments Index",
+          "reason": "older economic and portfolio update with less distinct operating evidence than the selected new 1,750-person member-payments study"
+        },
+        {
+          "title": "Axios Fintech AI Trust Roundtable",
+          "reason": "sponsored discussion offering practitioner views but no new credit-union-specific measurement, rule or implementation result"
+        },
+        {
+          "title": "Large Banks Restrict External AI-Agent Account Access",
+          "reason": "material competitive signal but substantial overlap with the October 13 article on agent authorization, monitoring and shutdown controls"
+        },
+        {
+          "title": "SWBC Announces Stellar Financial Group Partnership",
+          "reason": "vendor partnership announcement without a named credit-union implementation or independently measured member outcome"
+        },
+        {
+          "title": "Credit Unions Testify on Oklahoma Financial Access",
+          "reason": "useful policy context but no enacted change, discrete institution decision or new operating requirement"
+        },
+        {
+          "title": "Credit-Union Executive and Conference Notices",
+          "reason": "routine personnel and promotional programming without a material credit-union operating consequence"
+        }
       ],
       "status": "one-article-cycle-complete",
       "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and opening lead with the source-supported product boundary between informational AI use and delegated transaction authority. Vendor-study limits remain explicit; selection, scoring and source gates were unchanged.",
@@ -426,17 +667,50 @@
         }
       ],
       "rejections": [
-        {"title": "Google Cloud London Outage Disrupts Financial Firms", "reason": "material foreign cloud-resilience event, but no verified U.S. credit-union impact and substantial overlap with recent Sharetec and TruStage continuity coverage"},
-        {"title": "NCUA Thirteenth Deregulation Proposals", "reason": "duplicate of the October 20 Alert already published from the primary NCUA announcement"},
-        {"title": "Illinois Interchange-Fee Appeal Briefing Schedule", "reason": "incremental procedure following the October 15 High-priority appeal article, without a new merits decision or current operating change"},
-        {"title": "CASE and Team One Member Vote", "reason": "no independently verified member-vote result was available during the bounded scan"},
-        {"title": "City & County Credit Union Selects Mahalo", "reason": "routine vendor-selection announcement without implementation results or a material operating change"},
-        {"title": "Defense Credit Union Council Comments on GENIUS Act Rules", "reason": "advocacy input to pending rulemaking rather than a final obligation or implemented change"},
-        {"title": "NCUA Federal Register Administrative Notices", "reason": "no discrete new operating consequence beyond items already covered in the regulatory cycle"},
-        {"title": "Credit-Union FCRA Advocacy Developments", "reason": "substantially overlaps the October 12 liability-cap article without a new vote or enacted requirement"},
-        {"title": "Finance AI Infrastructure Fundraising and IPO Activity", "reason": "capital-markets activity without a direct credit-union implementation, obligation or measured result"},
-        {"title": "Credit-Union Executive Awards and Personnel Notices", "reason": "routine personnel recognition without a material credit-union operating consequence"},
-        {"title": "Small-Credit-Union Education and Webinar Notices", "reason": "promotional programming rather than a rule, implementation, incident or measured outcome"}
+        {
+          "title": "Google Cloud London Outage Disrupts Financial Firms",
+          "reason": "material foreign cloud-resilience event, but no verified U.S. credit-union impact and substantial overlap with recent Sharetec and TruStage continuity coverage"
+        },
+        {
+          "title": "NCUA Thirteenth Deregulation Proposals",
+          "reason": "duplicate of the October 20 Alert already published from the primary NCUA announcement"
+        },
+        {
+          "title": "Illinois Interchange-Fee Appeal Briefing Schedule",
+          "reason": "incremental procedure following the October 15 High-priority appeal article, without a new merits decision or current operating change"
+        },
+        {
+          "title": "CASE and Team One Member Vote",
+          "reason": "no independently verified member-vote result was available during the bounded scan"
+        },
+        {
+          "title": "City & County Credit Union Selects Mahalo",
+          "reason": "routine vendor-selection announcement without implementation results or a material operating change"
+        },
+        {
+          "title": "Defense Credit Union Council Comments on GENIUS Act Rules",
+          "reason": "advocacy input to pending rulemaking rather than a final obligation or implemented change"
+        },
+        {
+          "title": "NCUA Federal Register Administrative Notices",
+          "reason": "no discrete new operating consequence beyond items already covered in the regulatory cycle"
+        },
+        {
+          "title": "Credit-Union FCRA Advocacy Developments",
+          "reason": "substantially overlaps the October 12 liability-cap article without a new vote or enacted requirement"
+        },
+        {
+          "title": "Finance AI Infrastructure Fundraising and IPO Activity",
+          "reason": "capital-markets activity without a direct credit-union implementation, obligation or measured result"
+        },
+        {
+          "title": "Credit-Union Executive Awards and Personnel Notices",
+          "reason": "routine personnel recognition without a material credit-union operating consequence"
+        },
+        {
+          "title": "Small-Credit-Union Education and Webinar Notices",
+          "reason": "promotional programming rather than a rule, implementation, incident or measured outcome"
+        }
       ],
       "status": "two-article-cycle-complete",
       "activeExperimentContext": "The October 5 AI workflow-outcome hook test does not apply to this non-AI acquisition story. The headline and lead identify the completed board decision while the article keeps regulatory approval, integration and member outcomes prospective.",

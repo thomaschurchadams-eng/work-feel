@@ -9,17 +9,33 @@
       "publishedAt": "2026-10-30T07:45:00-04:00",
       "section": "insights",
       "beat": "ai-assisted-member-authentication-and-account-recovery",
-      "functions": ["member-service", "risk-compliance", "operations", "it-data-cybersecurity"],
-      "technologies": ["fraud-analytics", "regtech-monitoring", "agents-automation"],
+      "functions": [
+        "member-service",
+        "risk-compliance",
+        "operations",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "fraud-analytics",
+        "regtech-monitoring",
+        "agents-automation"
+      ],
       "format": "explainer",
       "audience": "functional-leader",
       "primaryAudience": "Member-service, fraud, digital-banking, identity and compliance leaders",
-      "secondaryAudiences": ["contact-center leaders", "information-security teams", "internal-audit teams"],
+      "secondaryAudiences": [
+        "contact-center leaders",
+        "information-security teams",
+        "internal-audit teams"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Library",
-      "socialDecision": "eligible-library-pending-live-verification-and-slot-selection",
+      "socialDecision": "eligible-library-queued-2026-10-30-12:30-et-pending-verified-secure-receipt",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the separate recovery-path evidence record and accountable restoration outcome. Selection, evidence and publication gates were unchanged.",
-      "internalLinkTargets": ["/news/fincen-ncua-digital-credentials-credit-union-cip.html", "/insight-credit-union-ai-complaint-analysis-controls.html"],
+      "internalLinkTargets": [
+        "/news/fincen-ncua-digital-credentials-credit-union-cip.html",
+        "/insight-credit-union-ai-complaint-analysis-controls.html"
+      ],
       "sourceTier": 1,
       "score": 94.6
     },
@@ -30,17 +46,34 @@
       "publishedAt": "2026-10-30T07:20:00-04:00",
       "section": "news",
       "beat": "credit-union-personalized-offers-and-business-deposits",
-      "functions": ["marketing-growth", "lending-collections", "payments-deposits", "operations", "member-service"],
-      "technologies": ["personalization", "data-decisioning", "core-api-cloud"],
+      "functions": [
+        "marketing-growth",
+        "lending-collections",
+        "payments-deposits",
+        "operations",
+        "member-service"
+      ],
+      "technologies": [
+        "personalization",
+        "data-decisioning",
+        "core-api-cloud"
+      ],
       "format": "case-study",
       "audience": "functional-leader",
       "primaryAudience": "Marketing-growth, lending, business-banking, digital and operations leaders",
-      "secondaryAudiences": ["deposit-product leaders", "member-service leaders", "data-governance teams"],
+      "secondaryAudiences": [
+        "deposit-product leaders",
+        "member-service leaders",
+        "data-governance teams"
+      ],
       "maturity": "scaling",
       "promotionPriority": "Standard",
       "socialDecision": "not-created-standard-ineligible",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the new business-deposit rollout and measured cumulative loan outcome. Selection, sourcing and classification gates were unchanged.",
-      "internalLinkTargets": ["/insight-credit-union-ai-member-offer-evidence-loop.html", "/news/connexus-digital-banking-loan-funding.html"],
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-member-offer-evidence-loop.html",
+        "/news/connexus-digital-banking-loan-funding.html"
+      ],
       "sourceTier": 2,
       "score": 90.8
     },
@@ -51,17 +84,32 @@
       "publishedAt": "2026-10-29T07:10:00-04:00",
       "section": "news",
       "beat": "credit-union-supervisory-ai-and-fraud-analytics",
-      "functions": ["risk-compliance", "it-data-cybersecurity", "vendor-management"],
-      "technologies": ["regtech-monitoring", "fraud-analytics", "data-decisioning"],
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "vendor-management"
+      ],
+      "technologies": [
+        "regtech-monitoring",
+        "fraud-analytics",
+        "data-decisioning"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Compliance, risk, technology, fraud and examination-management leaders",
-      "secondaryAudiences": ["executive leaders", "data-governance teams", "internal audit teams"],
+      "secondaryAudiences": [
+        "executive leaders",
+        "data-governance teams",
+        "internal audit teams"
+      ],
       "maturity": "emerging",
       "promotionPriority": "Standard",
       "socialDecision": "not-created-standard-ineligible",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the specific proposed allocation and its supervisory use boundary. Selection, sourcing and classification gates were unchanged.",
-      "internalLinkTargets": ["/news/fsb-ai-sound-practices-financial-institutions.html", "/news/bank-regulators-agentic-ai-shutdown-controls.html"],
+      "internalLinkTargets": [
+        "/news/fsb-ai-sound-practices-financial-institutions.html",
+        "/news/bank-regulators-agentic-ai-shutdown-controls.html"
+      ],
       "sourceTier": 1,
       "score": 89.6
     },
@@ -72,17 +120,34 @@
       "publishedAt": "2026-10-28T07:45:00-04:00",
       "section": "insights",
       "beat": "ai-assisted-small-business-servicing-and-cash-management",
-      "functions": ["operations", "payments-deposits", "risk-compliance", "member-service", "it-data-cybersecurity"],
-      "technologies": ["agents-automation", "regtech-monitoring", "fraud-analytics"],
+      "functions": [
+        "operations",
+        "payments-deposits",
+        "risk-compliance",
+        "member-service",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "agents-automation",
+        "regtech-monitoring",
+        "fraud-analytics"
+      ],
       "format": "explainer",
       "audience": "functional-leader",
       "primaryAudience": "Business banking, treasury-management, operations and BSA/AML leaders",
-      "secondaryAudiences": ["payments teams", "member-service leaders", "information-security teams"],
+      "secondaryAudiences": [
+        "payments teams",
+        "member-service leaders",
+        "information-security teams"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Library",
       "socialDecision": "selected-library-queued-2026-10-28-11:30-et-pending-secure-workflow",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the servicing exception ledger and the reconstructable approval outcome. Selection, evidence and publication gates were unchanged.",
-      "internalLinkTargets": ["/insight-credit-union-ai-business-onboarding-evidence-record.html", "/insight-credit-union-ai-complaint-analysis-controls.html"],
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-business-onboarding-evidence-record.html",
+        "/insight-credit-union-ai-complaint-analysis-controls.html"
+      ],
       "sourceTier": 1,
       "score": 92.8
     },
@@ -93,17 +158,34 @@
       "publishedAt": "2026-10-28T07:15:00-04:00",
       "section": "news",
       "beat": "credit-union-digital-banking-outcomes",
-      "functions": ["marketing-growth", "lending-collections", "member-service", "operations", "vendor-management"],
-      "technologies": ["core-api-cloud", "personalization", "data-decisioning"],
+      "functions": [
+        "marketing-growth",
+        "lending-collections",
+        "member-service",
+        "operations",
+        "vendor-management"
+      ],
+      "technologies": [
+        "core-api-cloud",
+        "personalization",
+        "data-decisioning"
+      ],
       "format": "case-study",
       "audience": "functional-leader",
       "primaryAudience": "Digital banking, lending, marketing-growth and member-experience leaders",
-      "secondaryAudiences": ["technology leaders", "vendor-management teams", "operations leaders"],
+      "secondaryAudiences": [
+        "technology leaders",
+        "vendor-management teams",
+        "operations leaders"
+      ],
       "maturity": "scaling",
       "promotionPriority": "Standard",
       "socialDecision": "not-created-standard-ineligible",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the reported loan-funding outcome and the evidence needed to interpret it. Selection, sourcing and classification were unchanged.",
-      "internalLinkTargets": ["/news/raiz-digital-account-opening-case-study.html", "/insight-credit-union-ai-member-offer-evidence-loop.html"],
+      "internalLinkTargets": [
+        "/news/raiz-digital-account-opening-case-study.html",
+        "/insight-credit-union-ai-member-offer-evidence-loop.html"
+      ],
       "sourceTier": 2,
       "score": 88.4
     },
@@ -114,17 +196,32 @@
       "publishedAt": "2026-10-27T07:20:00-04:00",
       "section": "news",
       "beat": "debit-interchange-litigation-and-payments-economics",
-      "functions": ["payments-deposits", "finance-treasury", "risk-compliance", "operations"],
-      "technologies": ["realtime-embedded-finance", "regtech-monitoring"],
+      "functions": [
+        "payments-deposits",
+        "finance-treasury",
+        "risk-compliance",
+        "operations"
+      ],
+      "technologies": [
+        "realtime-embedded-finance",
+        "regtech-monitoring"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Payments, finance, fraud, compliance and deposit-product leaders",
-      "secondaryAudiences": ["board finance committees", "processor-management teams", "member-pricing leaders"],
+      "secondaryAudiences": [
+        "board finance committees",
+        "processor-management teams",
+        "member-pricing leaders"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "High",
       "socialDecision": "eligible-high-pending-live-verification-and-slot-selection",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the concrete rule-vacatur event and the decision-ready debit scenario credit unions need. Selection, sourcing and classification were unchanged.",
-      "internalLinkTargets": ["/news/illinois-interchange-fee-law-appeal.html", "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html"],
+      "internalLinkTargets": [
+        "/news/illinois-interchange-fee-law-appeal.html",
+        "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html"
+      ],
       "sourceTier": 1,
       "score": 96.2
     },
@@ -135,17 +232,31 @@
       "publishedAt": "2026-10-26T07:55:00-04:00",
       "section": "news",
       "beat": "credit-union-compensation-and-succession",
-      "functions": ["hr-training", "board-strategy", "operations"],
-      "technologies": ["workforce-learning", "industry-development"],
+      "functions": [
+        "hr-training",
+        "board-strategy",
+        "operations"
+      ],
+      "technologies": [
+        "workforce-learning",
+        "industry-development"
+      ],
       "format": "data-brief",
       "audience": "functional-leader",
       "primaryAudience": "Board, HR, talent-development and executive leaders",
-      "secondaryAudiences": ["compensation committees", "operations leaders", "digital and cybersecurity leaders"],
+      "secondaryAudiences": [
+        "compensation committees",
+        "operations leaders",
+        "digital and cybersecurity leaders"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Standard",
       "socialDecision": "not-created-standard-ineligible-existing-high-daily-slot-preserved",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the measured five-year succession horizon and the readiness evidence boards need. Selection, sourcing and classification were unchanged.",
-      "internalLinkTargets": ["/news/financial-firms-ai-skills-pay-promotion.html", "/insight-credit-union-ai-employee-coaching-scorecard.html"],
+      "internalLinkTargets": [
+        "/news/financial-firms-ai-skills-pay-promotion.html",
+        "/insight-credit-union-ai-employee-coaching-scorecard.html"
+      ],
       "sourceTier": 2,
       "score": 86.4
     },
@@ -156,17 +267,33 @@
       "publishedAt": "2026-10-26T07:20:00-04:00",
       "section": "news",
       "beat": "mortgage-servicing-and-automated-valuation",
-      "functions": ["lending-collections", "member-service", "operations", "risk-compliance", "it-data-cybersecurity"],
-      "technologies": ["data-decisioning", "regtech-monitoring"],
+      "functions": [
+        "lending-collections",
+        "member-service",
+        "operations",
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "regtech-monitoring"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Mortgage lending, servicing, compliance, member-service and technology leaders",
-      "secondaryAudiences": ["secondary-market teams", "model-risk leaders", "operations leaders"],
+      "secondaryAudiences": [
+        "secondary-market teams",
+        "model-risk leaders",
+        "operations leaders"
+      ],
       "maturity": "emerging",
       "promotionPriority": "High",
       "socialDecision": "scheduled-for-2026-10-26T12:30:00-04:00-verified-provider-receipt-6adf378de814d8fcd1f92c1f",
       "activeExperimentContext": "The October 5 AI workflow-outcome hook test is reflected in presentation only: the headline and lead center the future servicing outcome and the evidence needed before cancellation. Selection, sourcing and classification were unchanged.",
-      "internalLinkTargets": ["/news/fannie-freddie-vantagescore-credit-union-mortgages.html", "/insight-credit-union-mortgage-ai-go-live-tests.html"],
+      "internalLinkTargets": [
+        "/news/fannie-freddie-vantagescore-credit-union-mortgages.html",
+        "/insight-credit-union-mortgage-ai-go-live-tests.html"
+      ],
       "sourceTier": 1,
       "score": 95.2
     },
@@ -177,17 +304,33 @@
       "publishedAt": "2026-10-23T07:50:00-04:00",
       "section": "insights",
       "beat": "ai-assisted-business-account-onboarding",
-      "functions": ["operations", "risk-compliance", "lending-collections", "member-service"],
-      "technologies": ["regtech-monitoring", "data-decisioning", "agents-automation"],
+      "functions": [
+        "operations",
+        "risk-compliance",
+        "lending-collections",
+        "member-service"
+      ],
+      "technologies": [
+        "regtech-monitoring",
+        "data-decisioning",
+        "agents-automation"
+      ],
       "format": "explainer",
       "audience": "functional-leader",
       "primaryAudience": "Business banking, BSA/AML, digital-onboarding and operations leaders",
-      "secondaryAudiences": ["branch leaders", "internal-audit teams", "vendor-management teams"],
+      "secondaryAudiences": [
+        "branch leaders",
+        "internal-audit teams",
+        "vendor-management teams"
+      ],
       "maturity": "practical-now",
       "promotionPriority": "Library",
       "socialDecision": "eligible-library-pending-live-verification-and-slot-selection",
       "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and lead frame the shared evidence record as the operational outcome across digital, branch and back-office channels. Selection and evidence gates were unchanged.",
-      "internalLinkTargets": ["/news/fincen-boi-rule-credit-union-cdd.html", "/insight-credit-union-ai-small-business-lending-controls.html"],
+      "internalLinkTargets": [
+        "/news/fincen-boi-rule-credit-union-cdd.html",
+        "/insight-credit-union-ai-small-business-lending-controls.html"
+      ],
       "sourceTier": 1,
       "score": 92.1
     },
@@ -198,17 +341,33 @@
       "publishedAt": "2026-10-23T07:20:00-04:00",
       "section": "news",
       "beat": "bank-ai-autonomy-and-control-readiness",
-      "functions": ["it-data-cybersecurity", "risk-compliance", "lending-collections", "finance-treasury"],
-      "technologies": ["data-decisioning", "agents-automation", "regtech-monitoring"],
+      "functions": [
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "lending-collections",
+        "finance-treasury"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "agents-automation",
+        "regtech-monitoring"
+      ],
       "format": "data-brief",
       "audience": "functional-leader",
       "primaryAudience": "Technology, model-risk, credit, treasury and compliance leaders",
-      "secondaryAudiences": ["board risk committees", "internal-audit teams", "AI product owners"],
+      "secondaryAudiences": [
+        "board risk committees",
+        "internal-audit teams",
+        "AI product owners"
+      ],
       "maturity": "emerging",
       "promotionPriority": "Standard",
       "socialDecision": "not-created-standard-ineligible",
       "activeExperimentContext": "October 5 workflow-outcome hook cohort: the headline and lead focus on the measured operating gap between planned autonomous authority and current control maturity. Vendor-study limitations remain explicit; selection and evidence gates were unchanged.",
-      "internalLinkTargets": ["/news/fsb-ai-sound-practices-financial-institutions.html", "/insight-credit-union-ai-inventory-change-control.html"],
+      "internalLinkTargets": [
+        "/news/fsb-ai-sound-practices-financial-institutions.html",
+        "/insight-credit-union-ai-inventory-change-control.html"
+      ],
       "sourceTier": 1,
       "score": 64.1
     },
