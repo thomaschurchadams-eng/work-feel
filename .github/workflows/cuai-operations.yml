@@ -5,6 +5,11 @@ on:
   pull_request:
     paths:
       - 'automation/daily-cycle-state.json'
+      - 'automation/agent-system/CUAI_AGENT_PROTOCOL.md'
+      - 'automation/scheduled-tasks/**'
+      - 'automation/native-video-handoff.md'
+      - 'lib/operational-policy.cjs'
+      - 'scripts/check-operational-policy.cjs'
       - '**.html'
       - 'assets/styles.css'
       - 'assets/app.js'
@@ -51,6 +56,9 @@ jobs:
         run: npx playwright-core install --with-deps chromium
       - name: Check canonical shell and existing regressions
         run: |
+          node scripts/check-operational-policy.cjs daily-publisher
+          node scripts/check-operational-policy.cjs cuai-operating-system
+          node scripts/check-operational-policy.cjs cuai-media-coordinator
           npm run check:design
           npm test
       - name: Check rendered interactions, typography and accessibility

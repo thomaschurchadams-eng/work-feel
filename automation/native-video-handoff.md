@@ -4,6 +4,10 @@ The existing company channel, shared social queue and trusted verified-operation
 
 A narration-only audio file is not a video. October 8 still needs full composition, source/rights review, burned-in captions, canonical transcript and an exact production-verified file. Do not mark any planned asset ready or enqueue an asset merely because infrastructure supports video. No video has been created, rendered, uploaded or posted by this change.
 
+## Inspect before handoff
+
+Apply the immediate acceptance loop in `automation/agent-system/CUAI_AGENT_PROTOCOL.md` and the existing media coordinator policy before readiness: actual output versus latest brief/references/prior feedback, scoped repair and reinspection. The production runner's structural end-user review gate remains a separate PRIVATE candidate; it is not installed by this amendment. Structural checks cannot authenticate supplied perceptual observations. Missing moving presenter, required voice/style, real continuous watch/listen or accessible playback remains blocked; no graphics substitution, codec check or test fixture clears those requirements. Preserve the exact finished version, reviewer observations, fixes and recheck in its existing asset receipt. Local review never substitutes for the existing deployed/provider/publication gates below.
+
 ## Finished asset and immutable queue fields
 
 Keep all existing manifest fields and preparation/source/rights/accessibility/production gates. A native asset adds `distributionMode: "native-video"`, `transcriptUrl` equal to its `canonicalUrl`, and a `nativeVideo` object with these fields:

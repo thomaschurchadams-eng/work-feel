@@ -104,3 +104,10 @@ Do not reopen or duplicate the publisher's work in the same run. The bounded Ale
 Record decisions and non-publication outcomes in the appropriate existing operational ledger/state. Keep the result concise and auditable.
 
 If the required evidence, source access, production validation, or a clearly authorized workflow is missing, stop and report the exact blocker. Do not invent content, bypass safeguards, alter Cloud task configuration, or make unrelated site changes.
+
+## Immediate acceptance before handoff
+
+<!-- cuai-cycle-acceptance-v1 -->
+Use the existing agent protocol's immediate acceptance loop for this run: produce, inspect the actual output against the latest accepted direction, references and prior feedback, repair mismatches within scope, and recheck before handoff. Daily/weekly reviews are backstops. Before calling a built output ready, record a capable end-user review of the exact version, separately from its builder where practical, covering normal/error/mobile/accessibility journeys or specific inapplicability, actual observations, fixes and recheck. Tom is not the default tester. Missing access, inspection or unresolved defects block readiness. Tests and supplied pass flags alone cannot certify the journey.
+
+Run `node scripts/check-operational-policy.cjs cuai-operating-system` with this policy's role (`daily-publisher`, `cuai-operating-system`, or `cuai-media-coordinator`) to record the controlling local policy paths and byte hashes before handoff. This resolves checked-out sources only; it cannot prove Cloud task bootstrap, actual perceptual acceptance, merge, activation or live delivery. On scheduled execution, read the controlling files from authorized main as already required. Private branches and Library snapshots never replace active main. Preserve all existing permission and release gates.

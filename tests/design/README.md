@@ -29,3 +29,9 @@ The publisher can run `npm run check:design` and bounded affected-route rendered
 checks before its existing handoff. New pages must use the shared shell and
 heading roles via `node scripts/sync-site-design.mjs`; no publisher schedule or
 Cloud task prompt is changed by this implementation.
+
+## Acceptance in the current cycle
+
+Apply the existing agent protocol's immediate output acceptance before handing off a built output. Inspect actual desktop/mobile journeys against the latest direction, references and prior feedback; record the exact version, reviewer, normal/error/accessibility observations, defects, scoped fixes and recheck. Use a separate capable reviewer where practical; Tom is not the default tester. An inaccessible or blank HTTP200 preview is not ready. For tools verify arithmetic and privacy; mocks and dry-run analytics cannot establish live payment/API/GA delivery. Screenshots and unit tests alone do not establish usefulness or perceptual creative acceptance. Keep observations with the existing asset/project evidence. Daily/weekly checks are backstops, not a deferred repair plan.
+
+Product-specific private readiness engines remain with their product candidates; this operational-only integration does not add or release the private Decision Tools app. The existing sitewide design command retains its route scope and cannot certify private product or hosted scheduled-task activation.
