@@ -12,7 +12,7 @@
       "contentKind": "article",
       "copy": "Account recovery is where attackers try to turn a failed login into a successful reset. The operating takeaway for credit unions: separate routine authentication from recovery, then keep identity evidence, automated risk signals, human exceptions, new-authenticator binding, member notification and post-recovery monitoring in one record. https://creditunionainews.com/insight-credit-union-account-recovery-evidence-record.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-credit-union-account-recovery-evidence-record-2026-10-30",
       "scheduledFor": "2026-10-30T12:30:00-04:00",
-      "status": "scheduled",
+      "status": "sent",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-10-30T07:50:00-04:00",
       "imageUrl": "https://creditunionainews.com/assets/credit-union-account-recovery-evidence-record.jpg",
@@ -25,7 +25,9 @@
       "lastAttemptAt": "2026-10-30T11:18:39.315Z",
       "lastResult": "verified secure workflow receipt",
       "duplicate": false,
-      "imageAttached": true
+      "imageAttached": true,
+      "sentAt": "2026-10-30T16:31:14.780Z",
+      "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7521971991797637120"
     },
     {
       "id": "linkedin-credit-union-ai-small-business-servicing-exception-ledger-2026-10-28",
