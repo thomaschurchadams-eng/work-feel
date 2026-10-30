@@ -141,3 +141,12 @@ A bus event should link to or summarize authoritative evidence rather than dupli
 - One material run should normally create no more than one handoff plus one necessary assignment/escalation.
 - Reuse `dedupeKey` for repeated work on the same problem so Reliability and the CEO can identify recurrence.
 - When the issue becomes unwieldy, the CEO may open a successor runtime-bus issue and link both directions; this is an internal coordination action and must not change external authority.
+
+## Immediate output acceptance
+
+<!-- cuai-cycle-acceptance-v1 -->
+Within each authorized cycle, produce, inspect the actual output against the latest accepted requirements, reference and prior feedback, detect mismatch, fix within scope, rerun relevant verification and inspect the repaired output before handoff. Daily/weekly reviews are backstops, not the first quality check. Use a separate capable end-user reviewer where practical; record exact version, reviewer, actual normal/error/mobile/accessibility observations, defects, fixes and recheck. If independence is impractical record why. Tom is not the default tester.
+
+An inaccessible or blank preview is not ready even when HTTP returns200. Tool review includes arithmetic, intended browser/mobile journey, privacy and actual user feedback. Mock payment/API and dry-run analytics are not live delivery. Creative acceptance requires the requested format/presenter/voice and genuine watch/listen evidence; graphics or a technical decode cannot substitute. Missing evidence remains unknown. Market effectiveness requires actual usage and is never inferred from technical checks. Reject a four-week substitute for a requested immediate repair and a claimed procedure update that changes only a parallel guide.
+
+Keep the controlling procedures in their existing repository homes and evidence in their existing asset/project receipts. The source-of-truth map is an index, not executable policy. No schedule, model, credential, spending, publishing, denial or approval boundary changes through this acceptance loop.
