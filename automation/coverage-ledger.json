@@ -3,6 +3,27 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "commonwealth-personalized-offers-business-deposits",
+      "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
+      "url": "/news/commonwealth-personalized-offers-business-deposits.html",
+      "publishedAt": "2026-10-30T07:20:00-04:00",
+      "section": "news",
+      "beat": "credit-union-personalized-offers-and-business-deposits",
+      "functions": ["marketing-growth", "lending-collections", "payments-deposits", "operations", "member-service"],
+      "technologies": ["personalization", "data-decisioning", "core-api-cloud"],
+      "format": "case-study",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing-growth, lending, business-banking, digital and operations leaders",
+      "secondaryAudiences": ["deposit-product leaders", "member-service leaders", "data-governance teams"],
+      "maturity": "scaling",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the new business-deposit rollout and measured cumulative loan outcome. Selection, sourcing and classification gates were unchanged.",
+      "internalLinkTargets": ["/insight-credit-union-ai-member-offer-evidence-loop.html", "/news/connexus-digital-banking-loan-funding.html"],
+      "sourceTier": 2,
+      "score": 90.8
+    },
+    {
       "id": "ncua-ai-supervision-budget",
       "title": "NCUA Plans $4.3 Million for AI-Supported Supervision",
       "url": "/news/ncua-ai-supervision-budget.html",

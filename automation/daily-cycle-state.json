@@ -6,48 +6,50 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "credit-union-supervisory-ai-and-fraud-analytics",
+      "credit-union-personalized-offers-and-business-deposits",
+      "member-authentication-and-account-recovery",
+      "credit-union-identity-and-access-governance",
+      "ai-enabled-cybersecurity-and-vulnerability-response",
       "state-ai-compliance-and-lending-decisions",
       "digital-banking-brand-acquisitions",
       "agentic-fraud-case-resolution",
       "enterprise-ai-workflow-platforms",
       "credit-union-origination-fraud-selection",
-      "account-takeover-behavioral-analytics",
       "agentic-payments-identity-and-intent",
-      "aml-investigation-automation",
-      "credit-union-fraud-collaboration",
-      "credit-union-leadership-events",
-      "post-election-regulatory-advocacy"
+      "aml-payment-screening",
+      "credit-union-core-platform-selection"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "NCUA Plans $4.3 Million for AI-Supported Supervision",
-        "url": "https://creditunionainews.com/news/ncua-ai-supervision-budget.html",
-        "primaryFunctionalAudience": "Compliance, risk, technology, fraud and examination-management leaders",
+        "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
+        "url": "https://creditunionainews.com/news/commonwealth-personalized-offers-business-deposits.html",
+        "primaryFunctionalAudience": "Marketing-growth, lending, business-banking, digital and operations leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
       }
     ],
     "rejections": [
+      {"title": "Member Driven Technologies Automates User Access Reviews", "reason": "a current CUSO deployment with useful governance detail, but the vendor supplies no quantified time, control-failure or audit-outcome measure"},
+      {"title": "America’s Credit Unions ‘Black October’ Cybersecurity Guidance", "reason": "timely practitioner guidance used as evidence for the follow-on Library package, not a distinct completed operating event"},
       {
         "title": "Colorado AI Rulemaking and Credit-Union Burden Letter",
-        "reason": "the statute and implementing rules remain in a proposed and advocacy stage, without a final operating requirement beyond the already known January 1 effective date"
+        "reason": "the implementing rules remain proposed and the current filing is advocacy rather than a final operating requirement"
       },
       {
         "title": "Harborstone Credit Union to Acquire HUSTL Digital Brand",
-        "reason": "a credible current transaction, but pending close and narrower operating evidence than the selected national supervisory-technology allocation"
+        "reason": "a credible current transaction, but the close and integration results remain pending"
       },
       {
         "title": "Lloyds Agentic Fraud Case-Resolution Deployment",
-        "reason": "a measurable bank case study with more than 10,600 cases, but not credit-union-specific and less direct than the selected primary-regulator development"
+        "reason": "a measurable bank case study, but not credit-union-specific and less direct than the selected member-outcome evidence"
       },
       {
         "title": "OpenAI and ServiceNow Enterprise AI Partnership",
@@ -58,38 +60,82 @@
         "reason": "a named credit-union implementation selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"
       },
       {
-        "title": "Q2 Account-Takeover Behavioral Analytics Report",
-        "reason": "useful fraud-control evidence but published October 14 and less current than the selected October 28 supervisory budget detail"
+        "title": "Napier AI Adds LSEG World-Check On Demand",
+        "reason": "a current screening integration, but no named credit-union implementation or measured false-positive, speed or risk outcome"
       },
       {
-        "title": "Mastercard Agentic-Commerce Trust Services",
-        "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"
+        "title": "Corelation Reports Six KeyStone Selections",
+        "reason": "a multi-credit-union core-selection announcement without completed conversions or measured operating outcomes"
       },
       {
-        "title": "FIS AML Investigation Agent",
-        "reason": "an October 15 bank-oriented product announcement built around vendor projections rather than a named credit-union operating result"
+        "title": "Bank of America and Capital One Use Smaller AI Models",
+        "reason": "a useful cost-management signal from large banks without a disclosed credit-union result or deployable benchmark"
       },
       {
-        "title": "Oregon Credit-Union Fraud Roundtable",
-        "reason": "useful practitioner discussion but no new rule, deployed control or measured operating outcome"
-      },
-      {
-        "title": "CCUA APEX Leadership Event",
-        "reason": "event promotion without a completed operating decision, measurable result or new obligation"
-      },
-      {
-        "title": "Post-Election Regulatory Webinar and Training Notices",
-        "reason": "advocacy and professional-development promotion rather than a completed credit-union operating event"
+        "title": "Elavon Prepares Agentic-Commerce Pilots",
+        "reason": "a bank-processor roadmap and trust commentary, not a completed credit-union pilot or measured authorization outcome"
       }
     ],
-    "status": "one-article-cycle-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the specific proposed allocation and the boundary between an investment signal and deployed supervisory authority. Selection, sourcing and classification gates were unchanged.",
+    "qualifiedFollowOnCandidate": "A recovery-path evidence record for AI-assisted member authentication",
+    "status": "first-of-two-article-packages-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the new business-deposit rollout and measured cumulative loan outcome. Selection, sourcing and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted member authentication, credential reset and account-recovery exception controls",
-    "updatedAt": "2026-10-29T07:10:00-04:00"
+    "updatedAt": "2026-10-30T07:20:00-04:00"
   },
   "history": [
+    {
+      "date": "2026-10-29",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "credit-union-supervisory-ai-and-fraud-analytics",
+        "state-ai-compliance-and-lending-decisions",
+        "digital-banking-brand-acquisitions",
+        "agentic-fraud-case-resolution",
+        "enterprise-ai-workflow-platforms",
+        "credit-union-origination-fraud-selection",
+        "account-takeover-behavioral-analytics",
+        "agentic-payments-identity-and-intent",
+        "aml-investigation-automation",
+        "credit-union-fraud-collaboration",
+        "credit-union-leadership-events",
+        "post-election-regulatory-advocacy"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "NCUA Plans $4.3 Million for AI-Supported Supervision",
+          "url": "https://creditunionainews.com/news/ncua-ai-supervision-budget.html",
+          "primaryFunctionalAudience": "Compliance, risk, technology, fraud and examination-management leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        }
+      ],
+      "rejections": [
+        {"title": "Colorado AI Rulemaking and Credit-Union Burden Letter", "reason": "the statute and implementing rules remain in a proposed and advocacy stage, without a final operating requirement beyond the already known January 1 effective date"},
+        {"title": "Harborstone Credit Union to Acquire HUSTL Digital Brand", "reason": "a credible current transaction, but pending close and narrower operating evidence than the selected national supervisory-technology allocation"},
+        {"title": "Lloyds Agentic Fraud Case-Resolution Deployment", "reason": "a measurable bank case study with more than 10,600 cases, but not credit-union-specific and less direct than the selected primary-regulator development"},
+        {"title": "OpenAI and ServiceNow Enterprise AI Partnership", "reason": "a broad platform partnership whose regulated-finance availability and customer operating results remain largely prospective"},
+        {"title": "Diversified Members Credit Union Selects Scienaptic AI", "reason": "a named credit-union implementation selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"},
+        {"title": "Q2 Account-Takeover Behavioral Analytics Report", "reason": "useful fraud-control evidence but published October 14 and less current than the selected October 28 supervisory budget detail"},
+        {"title": "Mastercard Agentic-Commerce Trust Services", "reason": "older product expansion already represented in recent agentic-payments coverage and without a named credit-union implementation result"},
+        {"title": "FIS AML Investigation Agent", "reason": "an October 15 bank-oriented product announcement built around vendor projections rather than a named credit-union operating result"},
+        {"title": "Oregon Credit-Union Fraud Roundtable", "reason": "useful practitioner discussion but no new rule, deployed control or measured operating outcome"},
+        {"title": "CCUA APEX Leadership Event", "reason": "event promotion without a completed operating decision, measurable result or new obligation"},
+        {"title": "Post-Election Regulatory Webinar and Training Notices", "reason": "advocacy and professional-development promotion rather than a completed credit-union operating event"}
+      ],
+      "status": "one-article-cycle-complete",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the specific proposed allocation and the boundary between an investment signal and deployed supervisory authority. Selection, sourcing and classification gates were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted member authentication, credential reset and account-recovery exception controls",
+      "updatedAt": "2026-10-29T07:10:00-04:00"
+    },
     {
       "date": "2026-10-28",
       "fullArticleCount": 2,

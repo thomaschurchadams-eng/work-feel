@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T07:30:00-04:00",
+  "updatedAt": "2026-10-30T07:20:00-04:00",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -12,6 +12,11 @@
       "function": "lending-collections",
       "technology": "decisioning-underwriting",
       "articles": [
+        {
+          "path": "news/commonwealth-personalized-offers-business-deposits.html",
+          "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
+          "summary": "A cross-channel personalized-offer program connects cumulative loan results to a new business-deposit rollout."
+        },
         {
           "path": "insight-credit-union-ai-loan-pricing-controls.html",
           "title": "Seven Controls for AI-Assisted Loan Pricing at Credit Unions",
@@ -207,6 +212,11 @@
       "function": "member-service",
       "technology": "personalization-service",
       "articles": [
+        {
+          "path": "news/commonwealth-personalized-offers-business-deposits.html",
+          "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
+          "summary": "A cross-channel personalized-offer program connects cumulative loan results to a new business-deposit rollout."
+        },
         {
           "path": "news/ai-personalization-digital-banking.html",
           "title": "AI Personalization in Digital Banking",
@@ -413,6 +423,11 @@
       "technology": "cross-technology",
       "articles": [
         {
+          "path": "news/commonwealth-personalized-offers-business-deposits.html",
+          "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
+          "summary": "A cross-channel personalized-offer program connects cumulative loan results to a new business-deposit rollout."
+        },
+        {
           "path": "news/illinois-interchange-fee-appeal-credit-unions.html",
           "title": "Illinois Appeals Ruling Shielding Federal Credit Unions From Swipe-Fee Law",
           "summary": "Illinois appealed the injunction protecting federal credit unions from its interchange-fee limit, keeping charter-specific payment controls and scenarios in play."
@@ -447,6 +462,11 @@
       "function": "cross-functional",
       "technology": "cross-technology",
       "articles": [
+        {
+          "path": "news/commonwealth-personalized-offers-business-deposits.html",
+          "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
+          "summary": "A cross-channel personalized-offer program connects cumulative loan results to a new business-deposit rollout."
+        },
         {
           "path": "news/sharetec-core-outage-credit-union-failover.html",
           "title": "Sharetec Outage Exposes Core-Provider Failover Risk for Credit Unions",

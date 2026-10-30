@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "commonwealth-personalized-offers-business-deposits",
+      "articleUrl": "/news/commonwealth-personalized-offers-business-deposits.html",
+      "imagePath": "/assets/commonwealth-personalized-offers-business-deposits.jpg",
+      "publishedAt": "2026-10-30T07:20:00-04:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-photography",
+      "subject": "member-interaction",
+      "composition": "foreground-background-tension",
+      "perspective": "through-glass",
+      "palette": "terracotta-sky",
+      "lighting": "natural-window-light",
+      "texture": "fabric-and-wood",
+      "scene": "member-and-frontline-employee-reviewing-a-personalized-offer-path-across-digital-and-branch-channels",
+      "conceptScore": 97.6,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "014aa46fe43a58f896fddf25ade06e3d3862cbd3f0511050d28bed9ef1187e19",
+      "conceptAlternatives": [
+        {"medium": "refined-data-abstraction", "subject": "abstract-data-system", "score": 95.3},
+        {"medium": "soft-editorial-illustration", "subject": "frontline-workflow", "score": 90.3}
+      ]
+    },
+    {
       "id": "ncua-ai-supervision-budget",
       "articleUrl": "/news/ncua-ai-supervision-budget.html",
       "imagePath": "/assets/ncua-ai-supervision-budget.jpg",
