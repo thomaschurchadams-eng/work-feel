@@ -3,6 +3,43 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-card-dispute-evidence-clock",
+      "title": "A Provisional-Credit Clock for AI-Assisted Card Disputes",
+      "url": "/insight-credit-union-ai-card-dispute-evidence-clock.html",
+      "publishedAt": "2026-11-02T07:45:00-05:00",
+      "section": "insights",
+      "beat": "ai-assisted-card-dispute-error-resolution",
+      "functions": [
+        "payments-deposits",
+        "member-service",
+        "risk-compliance",
+        "operations"
+      ],
+      "technologies": [
+        "fraud-analytics",
+        "agents-automation",
+        "regtech-monitoring"
+      ],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Card operations, member service, fraud, compliance and payments leaders",
+      "secondaryAudiences": [
+        "contact-center leaders",
+        "internal-audit teams",
+        "card-program managers"
+      ],
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "eligible-library-pending-live-verification-and-slot-selection",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the provisional-credit clock and the reviewable member outcome. Selection, legal sourcing, evidence and publication gates were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-complaint-analysis-controls.html",
+        "/news/velera-ai-payment-trust-gap.html"
+      ],
+      "sourceTier": 1,
+      "score": 96.8
+    },
+    {
       "id": "dark-matter-agentic-ai-mortgage-platform",
       "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
       "url": "/news/dark-matter-agentic-ai-mortgage-platform.html",

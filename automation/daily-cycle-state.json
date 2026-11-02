@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-02",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
@@ -34,6 +34,15 @@
         "primaryFunctionalAudience": "Mortgage lending, loan operations, technology, compliance and vendor-management leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "A Provisional-Credit Clock for AI-Assisted Card Disputes",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-card-dispute-evidence-clock.html",
+        "primaryFunctionalAudience": "Card operations, member service, fraud, compliance and payments leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
       }
     ],
     "rejections": [
@@ -78,12 +87,12 @@
         "reason": "current advocacy without an enacted policy change or completed operating consequence"
       }
     ],
-    "status": "first-article-complete-second-package-pending",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the acquired production mortgage workflow and the evidence still required before a credit-union rollout. Selection, sourcing and classification gates were unchanged.",
+    "status": "two-article-cycle-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the acquired production mortgage workflow and the Insight headline centers a separate provisional-credit evidence clock and accountable member outcome. Selection, sourcing, legal-evidence and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "nextCoverageGap": "AI-assisted card-dispute intake, provisional-credit timing and error-investigation evidence controls",
-    "updatedAt": "2026-11-02T07:15:00-05:00"
+    "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
+    "updatedAt": "2026-11-02T07:45:00-05:00"
   },
   "history": [
     {

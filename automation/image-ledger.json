@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-ai-card-dispute-evidence-clock",
+      "articleUrl": "/insight-credit-union-ai-card-dispute-evidence-clock.html",
+      "imagePath": "/assets/credit-union-ai-card-dispute-evidence-clock.jpg",
+      "publishedAt": "2026-11-02T07:45:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "macro-still-life",
+      "subject": "financial-object-study",
+      "composition": "single-object-negative-space",
+      "perspective": "macro",
+      "palette": "amber-charcoal",
+      "lighting": "high-contrast-studio",
+      "texture": "polished-metal",
+      "scene": "stopwatch-payment-card-and-evidence-slips-marking-provisional-credit-and-investigation-deadlines",
+      "conceptScore": 76.4,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "88f1b3564f7b465d7fe3f2733faa2b91c5f1ff659f3e390d1d38aaf9f935ee54",
+      "conceptAlternatives": [
+        {"medium": "editorial-data-collage", "subject": "member-notice-and-case-evidence", "score": 75.9},
+        {"medium": "soft-editorial-illustration", "subject": "human-reviewed-dispute-clock", "score": 74.8}
+      ]
+    },
+    {
       "id": "dark-matter-agentic-ai-mortgage-platform",
       "articleUrl": "/news/dark-matter-agentic-ai-mortgage-platform.html",
       "imagePath": "/assets/dark-matter-agentic-mortgage-platform.jpg",
