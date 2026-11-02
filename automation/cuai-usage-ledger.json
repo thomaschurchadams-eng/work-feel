@@ -4006,6 +4006,110 @@
       ],
       "summary": "Verified-operations run 41442557062 failed closed at the operate stage with production_identity_refresh_failed while Vercel deployment metadata and the production operations route were converging on the new social-queue commit. The failed attempt stopped in read-only source authorization before buffer-schedule-tracked; the repository queue retained status=queued with no postId, so no ambiguous provider write existed. The uploaded attempt-1 receipt was present but its temporary file download returned repeated 503 responses; the job log, failed-stage boundary and reviewed secure-operations control flow independently confirmed zero distribution actions before failure. After deployment dpl_6sgxyUY4S748YnMShEVihAu6PmPA was READY on exact SHA af23ae6d423b72a157c6fba301ae6ec95be64f95 and the homepage, both articles and JPEG returned HTTP 200, only the failed job was retried on the original run/SHA. Attempt 2 succeeded with one distribution attempt and zero source/action exceptions. Buffer acknowledged post 6ae88406c5c4672c3e72b6d7 once for the CreditUnionAI News company page at the original 2026-11-02 12:30 ET slot; UTMs and image are preserved and duplicate=false. Durable prevention recommendation: retain the fail-closed identity gate, but add a bounded pre-action poll for the production operations route to report the exact deployed SHA after Vercel marks a deployment READY, then rerun the same route check before any provider action.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-02T16:04:00-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded November 2 Monday editorial portfolio, Alert, homepage-freshness, measurement, reliability, handoff and weekly competitive-distribution review after the recorded daily publisher outcome.",
+      "status": "success-with-monday-review",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 189,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 1,
+        "mediaHandoffsConsumed": 0,
+        "portfolioArticlesReviewed": 88,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 2,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "alertsPublished": 0,
+        "activeFreshAlertsVerified": 0,
+        "historicalAlertBackfillsDeclined": 1,
+        "homepageFreshnessWrites": 1,
+        "dailyHistoryEntriesObserved": 73,
+        "analyticsWindowsReviewed": 0,
+        "analyticsReadsBlocked": 3,
+        "weeklyDistributionScanReceiptsConsumed": 0,
+        "competitiveDistributionScansRun": 1,
+        "competitiveDistributionOpportunitiesRecorded": 5,
+        "productionDeploymentChecks": 4,
+        "verifiedOperationsRecoveriesReviewed": 1,
+        "siteOriginRuntimeErrorsObserved": 0,
+        "sentStateReconciliationsObserved": 0,
+        "sentStateReconciliationsBlocked": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "mondayReview": {
+        "outputSlaTrajectory": "On trajectory: Monday completed 2 of 2 article slots; week is 2 of 8.",
+        "portfolio": "88 total articles. Latest 15 are 10 News and 5 Insights across five reported-news items, five explainers, three data briefs and two case studies. Every latest-15 beat is distinct. Risk/compliance appears in 12, operations in 11, member service in 10 and IT/data/cybersecurity in 8; HR appears in 1 and board, finance and vendor management in 2 each.",
+        "nextCandidate": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls; prefer an Insight, case study or data brief if timely news is weak.",
+        "reliability": "Publisher validation passed 117 of 117 policy tests plus article-package, SEO, analytics, design, image-dimension and state-preservation checks. Reliability Watch closed the original production-identity race through PR 277, preserving the unique post receipt and duplicate=false. Exact production is READY and the available 30-minute runtime-error check is clean.",
+        "measurement": "Authenticated Buffer, GA4 and Search Console reads remain blocked by Vercel Authentication 401. Latest trusted audience/search evidence remains October 2: 379 active users, 405 sessions, 122 engaged sessions and 16 Search Console clicks from 1,260 impressions. Independent CAI conversion and a current goal window remain unavailable.",
+        "competitiveDistribution": [
+          {
+            "surface": "CUToday.info",
+            "evidence": "https://www.cutoday.info/site/layout/set/print/About-Us; https://www.cutoday.info/site/content/download/201853/1887978/version/1/file/CUToday%2BMedia%2Bkit%2B2026.pdf",
+            "type": "newsletter | referral | backlink | other",
+            "mechanism": "Fresh Today daily e-news and original reporting reach credit-union decision-makers; publisher-reported audience figures are directional, not independently verified.",
+            "audienceFit": "Credit-union CEOs and C-level functional leaders.",
+            "smallestAction": "Prepare a source-led guest/commentary abstract using an existing CUAI operating-control framework.",
+            "approval": "Tom approval before contact, submission, advertising or spend.",
+            "successMeasure": "Earned article/citation or newsletter placement plus attributable engaged referrals."
+          },
+          {
+            "surface": "CUbroadcast",
+            "evidence": "https://www.cubroadcast.com/about.html",
+            "type": "syndication | event/resource | other",
+            "mechanism": "Video interviews and the CU Knowledge Hub distribute expert conversations to credit-union, CUSO, vendor, regulator and league audiences.",
+            "audienceFit": "Credit-union executives, innovation leaders and technology buyers.",
+            "smallestAction": "Prepare a concise interview brief on governed AI workflow evidence using already-published CUAI material.",
+            "approval": "Tom approval before contact, interview commitment or paid video service.",
+            "successMeasure": "Accepted interview/resource placement and attributable qualified visits."
+          },
+          {
+            "surface": "CULytics",
+            "evidence": "https://culytics.com/about",
+            "type": "community | event/resource | backlink",
+            "mechanism": "Its community, Solution Gallery and Analytics Summit convene data, digital, analytics and AI leaders from credit unions.",
+            "audienceFit": "Credit-union data, digital, analytics, technology and C-level leaders.",
+            "smallestAction": "Prepare a one-page session/resource concept on AI evidence, measurement and accountable human review.",
+            "approval": "Tom approval before contact, submission, membership, registration or spend.",
+            "successMeasure": "Accepted session/resource or earned backlink and qualified referrals."
+          },
+          {
+            "surface": "Grow Your Credit Union",
+            "evidence": "https://growyourcreditunion.com/; https://growyourcreditunion.com/sponsor/",
+            "type": "newsletter | syndication | event/resource | other",
+            "mechanism": "Daily roundups, podcast/video episodes, guest articles and explicitly disclosed sponsor formats reach credit-union leaders.",
+            "audienceFit": "Credit-union executives and companies serving the movement.",
+            "smallestAction": "Prepare an unpaid guest-article or interview abstract first; keep any sponsorship path separate and clearly labeled.",
+            "approval": "Tom approval before contact or submission; separate approval for any pricing, sponsorship or spend.",
+            "successMeasure": "Accepted guest article/episode and attributable engaged referrals; any paid activity measured separately."
+          },
+          {
+            "surface": "Future of Credit Unions initiative",
+            "evidence": "https://growyourcreditunion.com/articles/are-credit-unions-running-on-bank-code/; https://www.cutoday.info/Fresh-Today/Credit-Union-Leaders-Launch-Industry-Wide-Initiative-To-Shape-Next-Decade",
+            "type": "community | event/resource | other",
+            "mechanism": "The open survey and facilitated visioning sessions feed a year-end narrative and dataset shaped by credit-union executives, advisors, researchers and industry media.",
+            "audienceFit": "Credit-union executives, board leaders, advisors and researchers.",
+            "smallestAction": "Prepare a bounded evidence response from existing CUAI findings for the survey or a visioning session.",
+            "approval": "Tom approval before survey submission, session booking or external participation.",
+            "successMeasure": "CUAI evidence included or cited in the report, a qualified relationship, or attributable referral visibility."
+          }
+        ]
+      },
+      "summary": "Monday delivered the scheduled Standard News report on Dark Matter's agentic mortgage acquisition and the Library Insight on card-dispute provisional-credit evidence, placing the week at 2 of 8. The 88-article portfolio's latest 15 are 10 News and 5 Insights across five reported-news items, five explainers, three data briefs and two case studies; every beat is distinct. Risk/compliance and operations remain concentrated at 12 and 11, while HR appears once and board, finance and vendor management twice each. Preserve the next bounded candidate: AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. The October 30 FinCEN foreign-agent transaction alert includes current red flags and SAR keyword FIN2026FOREIGNAGENT, but it predates Friday's completed Alert cycle and is already outside the homepage's 72-hour window; it was explicitly not backfilled merely to fill the archive. No newer official development cleared the Alert gates. The expired October 28 Fed Alert was allowed to age out, homepageWatchState advanced with no non-duplicative watch items because all timely recent coverage is already in the homepage grid, and the evergreen fallback remains. Reliability Watch closed the production-identity race through PR 277; the unique Library post is scheduled once with duplicate=false. Buffer, GA4 and Search Console reads are still blocked by Vercel Authentication 401, so no sent-state or current measurement claim was made. Production is READY, both articles and the homepage return 200, and the available 30-minute runtime-error check is clean. The W45 public/free scan recorded CUToday.info, CUbroadcast, CULytics, Grow Your Credit Union and the Future of Credit Unions initiative; no outreach, submission, signup, trial, registration, membership or spend occurred. Public Similarweb did not provide defensible estimates, so none were asserted. No full article, extra social post, external contact, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
