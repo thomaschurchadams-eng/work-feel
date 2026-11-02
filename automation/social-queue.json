@@ -12,7 +12,7 @@
       "contentKind": "article",
       "copy": "A card-dispute clock starts when the member gives notice, not when an automated intake is complete. The operating takeaway for credit unions: keep the notice timestamp, error type, investigation evidence, provisional-credit decision, member notices, AI outputs and accountable human review in one case record. https://creditunionainews.com/insight-credit-union-ai-card-dispute-evidence-clock.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-credit-union-ai-card-dispute-evidence-clock-2026-11-02",
       "scheduledFor": "2026-11-02T12:30:00-05:00",
-      "status": "scheduled",
+      "status": "sent",
       "trackingStatus": "utm-tagged",
       "queuedAt": "2026-11-02T07:10:00-05:00",
       "imageUrl": "https://creditunionainews.com/assets/credit-union-ai-card-dispute-evidence-clock.jpg",
@@ -25,7 +25,9 @@
       "lastAttemptAt": "2026-11-02T12:37:26.661Z",
       "lastResult": "verified secure workflow receipt",
       "duplicate": false,
-      "imageAttached": true
+      "imageAttached": true,
+      "sentAt": "2026-11-02T17:31:21.167Z",
+      "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7523074280650096640"
     },
     {
       "id": "linkedin-credit-union-account-recovery-evidence-record-2026-10-30",
