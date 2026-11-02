@@ -6,95 +6,175 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-10-30",
-    "fullArticleCount": 2,
+    "date": "2026-11-02",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "credit-union-personalized-offers-and-business-deposits",
-      "member-authentication-and-account-recovery",
-      "credit-union-identity-and-access-governance",
-      "ai-enabled-cybersecurity-and-vulnerability-response",
-      "state-ai-compliance-and-lending-decisions",
-      "digital-banking-brand-acquisitions",
-      "agentic-fraud-case-resolution",
-      "enterprise-ai-workflow-platforms",
-      "credit-union-origination-fraud-selection",
-      "agentic-payments-identity-and-intent",
-      "aml-payment-screening",
-      "credit-union-core-platform-selection"
+      "agentic-ai-mortgage-workflows",
+      "ai-assisted-card-dispute-error-resolution",
+      "credit-union-financial-performance",
+      "mortgage-affordability-programs",
+      "stablecoin-regulatory-reporting",
+      "credit-union-chartering-and-financial-inclusion",
+      "identity-protection-partnerships",
+      "credit-union-enforcement",
+      "macroeconomic-performance",
+      "credit-union-leadership",
+      "debit-interchange-policy",
+      "small-business-financial-inclusion"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
-        "url": "https://creditunionainews.com/news/commonwealth-personalized-offers-business-deposits.html",
-        "primaryFunctionalAudience": "Marketing-growth, lending, business-banking, digital and operations leaders",
+        "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
+        "url": "https://creditunionainews.com/news/dark-matter-agentic-ai-mortgage-platform.html",
+        "primaryFunctionalAudience": "Mortgage lending, loan operations, technology, compliance and vendor-management leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "article",
-        "classification": "Insights",
-        "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
-        "url": "https://creditunionainews.com/insight-credit-union-account-recovery-evidence-record.html",
-        "primaryFunctionalAudience": "Member-service, fraud, digital-banking, identity and compliance leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "scheduled-2026-10-30-12:30-et-verified-secure-receipt-6ae47d0fe972705505570419"
       }
     ],
     "rejections": [
       {
-        "title": "Member Driven Technologies Automates User Access Reviews",
-        "reason": "a current CUSO deployment with useful governance detail, but the vendor supplies no quantified time, control-failure or audit-outcome measure"
+        "title": "PenFed Reports Third-Quarter Lending and Earnings Growth",
+        "reason": "credible credit-union financial results, but less connected to the active operating-control gap than the selected mortgage-agent acquisition and follow-on evidence tool"
       },
       {
-        "title": "America’s Credit Unions ‘Black October’ Cybersecurity Guidance",
-        "reason": "timely practitioner guidance used as evidence for the follow-on Library package, not a distinct completed operating event"
+        "title": "Michigan Legacy Reports 118 Mortgages Through Its 4.99% Program",
+        "reason": "a useful affordability case study, but projected lifetime savings are modeled customer figures and the program is narrower than the selected workflow change"
       },
       {
-        "title": "Colorado AI Rulemaking and Credit-Union Burden Letter",
-        "reason": "the implementing rules remain proposed and the current filing is advocacy rather than a final operating requirement"
+        "title": "NCUA Proposes Stablecoin Call Report Schedule",
+        "reason": "the primary proposal dates to October 16 and the current October 30 development is an advocacy comment rather than a final reporting requirement"
       },
       {
-        "title": "Lloyds Agentic Fraud Case-Resolution Deployment",
-        "reason": "a measurable bank case study, but not credit-union-specific and less direct than the selected member-outcome evidence"
+        "title": "NCUA Charters All Peoples United Federal Credit Union",
+        "reason": "an important financial-inclusion development with limited operating results at charter stage"
       },
       {
-        "title": "OpenAI and ServiceNow Enterprise AI Partnership",
-        "reason": "a broad platform partnership whose regulated-finance availability and customer operating results remain largely prospective"
+        "title": "NCUA Charters Accion Opportunity Federal Credit Union",
+        "reason": "an important small-business access development with limited operating results at charter stage"
       },
       {
-        "title": "Diversified Members Credit Union Selects Scienaptic AI",
-        "reason": "a named credit-union implementation selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"
+        "title": "Veridian Adds Allstate Identity Protection",
+        "reason": "a vendor-and-credit-union announcement without measured enrollment, fraud-loss, recovery or member-outcome evidence"
       },
       {
-        "title": "Napier AI Adds LSEG World-Check On Demand",
-        "reason": "a current screening integration, but no named credit-union implementation or measured false-positive, speed or risk outcome"
+        "title": "NCUA October Enforcement Actions",
+        "reason": "routine individual enforcement notices without a broader new operating requirement or reusable control signal"
       },
       {
-        "title": "Corelation Reports Six KeyStone Selections",
-        "reason": "a multi-credit-union core-selection announcement without completed conversions or measured operating outcomes"
+        "title": "U.S. Real GDP Grows 3.4 Percent",
+        "reason": "a broad macroeconomic release without a distinct new credit-union technology or operating decision"
       },
       {
-        "title": "Bank of America and Capital One Use Smaller AI Models",
-        "reason": "a useful cost-management signal from large banks without a disclosed credit-union result or deployable benchmark"
+        "title": "Georgia’s Own Names a New Chief Executive",
+        "reason": "a routine personnel appointment that does not clear the publication threshold"
       },
       {
-        "title": "Elavon Prepares Agentic-Commerce Pilots",
-        "reason": "a bank-processor roadmap and trust commentary, not a completed credit-union pilot or measured authorization outcome"
+        "title": "DCUC Seeks Commissary Interchange Amendment",
+        "reason": "current advocacy without an enacted policy change or completed operating consequence"
       }
     ],
-    "status": "two-article-cycle-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the new business-deposit rollout and measured cumulative loan outcome, while the Insight headline centers a separate recovery-path evidence record and accountable access-restoration outcome. Selection, evidence and classification gates were unchanged.",
+    "status": "first-article-complete-second-package-pending",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the acquired production mortgage workflow and the evidence still required before a credit-union rollout. Selection, sourcing and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted card-dispute intake, provisional-credit timing and error-investigation evidence controls",
-    "updatedAt": "2026-10-30T07:51:00-04:00"
+    "updatedAt": "2026-11-02T07:15:00-05:00"
   },
   "history": [
+    {
+      "date": "2026-10-30",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "credit-union-personalized-offers-and-business-deposits",
+        "member-authentication-and-account-recovery",
+        "credit-union-identity-and-access-governance",
+        "ai-enabled-cybersecurity-and-vulnerability-response",
+        "state-ai-compliance-and-lending-decisions",
+        "digital-banking-brand-acquisitions",
+        "agentic-fraud-case-resolution",
+        "enterprise-ai-workflow-platforms",
+        "credit-union-origination-fraud-selection",
+        "agentic-payments-identity-and-intent",
+        "aml-payment-screening",
+        "credit-union-core-platform-selection"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
+          "url": "https://creditunionainews.com/news/commonwealth-personalized-offers-business-deposits.html",
+          "primaryFunctionalAudience": "Marketing-growth, lending, business-banking, digital and operations leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
+          "url": "https://creditunionainews.com/insight-credit-union-account-recovery-evidence-record.html",
+          "primaryFunctionalAudience": "Member-service, fraud, digital-banking, identity and compliance leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "scheduled-2026-10-30-12:30-et-verified-secure-receipt-6ae47d0fe972705505570419"
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Member Driven Technologies Automates User Access Reviews",
+          "reason": "a current CUSO deployment with useful governance detail, but the vendor supplies no quantified time, control-failure or audit-outcome measure"
+        },
+        {
+          "title": "America’s Credit Unions ‘Black October’ Cybersecurity Guidance",
+          "reason": "timely practitioner guidance used as evidence for the follow-on Library package, not a distinct completed operating event"
+        },
+        {
+          "title": "Colorado AI Rulemaking and Credit-Union Burden Letter",
+          "reason": "the implementing rules remain proposed and the current filing is advocacy rather than a final operating requirement"
+        },
+        {
+          "title": "Lloyds Agentic Fraud Case-Resolution Deployment",
+          "reason": "a measurable bank case study, but not credit-union-specific and less direct than the selected member-outcome evidence"
+        },
+        {
+          "title": "OpenAI and ServiceNow Enterprise AI Partnership",
+          "reason": "a broad platform partnership whose regulated-finance availability and customer operating results remain largely prospective"
+        },
+        {
+          "title": "Diversified Members Credit Union Selects Scienaptic AI",
+          "reason": "a named credit-union implementation selection, but the vendor announcement still reports no realized loss, approval or member-outcome evidence"
+        },
+        {
+          "title": "Napier AI Adds LSEG World-Check On Demand",
+          "reason": "a current screening integration, but no named credit-union implementation or measured false-positive, speed or risk outcome"
+        },
+        {
+          "title": "Corelation Reports Six KeyStone Selections",
+          "reason": "a multi-credit-union core-selection announcement without completed conversions or measured operating outcomes"
+        },
+        {
+          "title": "Bank of America and Capital One Use Smaller AI Models",
+          "reason": "a useful cost-management signal from large banks without a disclosed credit-union result or deployable benchmark"
+        },
+        {
+          "title": "Elavon Prepares Agentic-Commerce Pilots",
+          "reason": "a bank-processor roadmap and trust commentary, not a completed credit-union pilot or measured authorization outcome"
+        }
+      ],
+      "status": "two-article-cycle-complete",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the new business-deposit rollout and measured cumulative loan outcome, while the Insight headline centers a separate recovery-path evidence record and accountable access-restoration outcome. Selection, evidence and classification gates were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted card-dispute intake, provisional-credit timing and error-investigation evidence controls",
+      "updatedAt": "2026-10-30T07:51:00-04:00"
+    },
     {
       "date": "2026-10-29",
       "fullArticleCount": 1,

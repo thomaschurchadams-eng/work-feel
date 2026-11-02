@@ -3,6 +3,43 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "dark-matter-agentic-ai-mortgage-platform",
+      "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
+      "url": "/news/dark-matter-agentic-ai-mortgage-platform.html",
+      "publishedAt": "2026-11-02T07:15:00-05:00",
+      "section": "news",
+      "beat": "agentic-ai-mortgage-workflows",
+      "functions": [
+        "lending-collections",
+        "operations",
+        "it-data-cybersecurity",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "agents-automation",
+        "document-automation",
+        "core-api-cloud"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Mortgage lending, loan operations, technology, compliance and vendor-management leaders",
+      "secondaryAudiences": [
+        "mortgage underwriting teams",
+        "enterprise architecture teams",
+        "internal-audit teams"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the acquired production workflow and the evidence still required before a credit-union rollout. Selection, evidence and classification gates were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-mortgage-ai-go-live-tests.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
+      "sourceTier": 2,
+      "score": 88.4
+    },
+    {
       "id": "credit-union-account-recovery-evidence-record",
       "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
       "url": "/insight-credit-union-account-recovery-evidence-record.html",

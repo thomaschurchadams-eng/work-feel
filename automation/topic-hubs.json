@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T07:45:00-04:00",
+  "updatedAt": "2026-11-02T07:15:00-05:00",
   "baseUrl": "https://creditunionainews.com",
   "minimumArticles": 4,
   "hubs": [
@@ -12,6 +12,11 @@
       "function": "lending-collections",
       "technology": "decisioning-underwriting",
       "articles": [
+        {
+          "path": "news/dark-matter-agentic-ai-mortgage-platform.html",
+          "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
+          "summary": "Dark Matter is adding production mortgage AI agents with lender-set authority, human oversight and audit trails."
+        },
         {
           "path": "news/commonwealth-personalized-offers-business-deposits.html",
           "title": "Commonwealth Extends Personalized Offers Into Business Deposits",
@@ -117,6 +122,11 @@
       "function": "operations",
       "technology": "agents-automation",
       "articles": [
+        {
+          "path": "news/dark-matter-agentic-ai-mortgage-platform.html",
+          "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
+          "summary": "Dark Matter is adding production mortgage AI agents with lender-set authority, human oversight and audit trails."
+        },
         {
           "path": "insight-credit-union-account-recovery-evidence-record.html",
           "title": "A Recovery-Path Evidence Record for Credit Union Account Access",
@@ -267,6 +277,11 @@
       "function": "operations",
       "technology": "agents-automation",
       "articles": [
+        {
+          "path": "news/dark-matter-agentic-ai-mortgage-platform.html",
+          "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
+          "summary": "Dark Matter is adding production mortgage AI agents with lender-set authority, human oversight and audit trails."
+        },
         {
           "path": "news/banks-ai-agents-daily-operations-credit-unions.html",
           "title": "Major Banks Move AI Agents Into Daily Operations",
@@ -512,6 +527,11 @@
       "function": "cross-functional",
       "technology": "cross-technology",
       "articles": [
+        {
+          "path": "news/dark-matter-agentic-ai-mortgage-platform.html",
+          "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
+          "summary": "Dark Matter is adding production mortgage AI agents with lender-set authority, human oversight and audit trails."
+        },
         {
           "path": "news/ornl-fcu-kobalt-ai-vendor-risk.html",
           "title": "ORNL FCU Selects AI Platform for Vendor Risk Reviews",

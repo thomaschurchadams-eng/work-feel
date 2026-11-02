@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "dark-matter-agentic-ai-mortgage-platform",
+      "articleUrl": "/news/dark-matter-agentic-ai-mortgage-platform.html",
+      "imagePath": "/assets/dark-matter-agentic-mortgage-platform.jpg",
+      "publishedAt": "2026-11-02T07:15:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "refined-data-abstraction",
+      "subject": "human-machine-handoff",
+      "composition": "diagonal-motion",
+      "perspective": "isometric",
+      "palette": "graphite-electric-yellow",
+      "lighting": "rim-light",
+      "texture": "frosted-glass",
+      "scene": "mortgage-files-moving-through-agentic-processing-lanes-with-human-review-gates-and-a-home-checkpoint",
+      "conceptScore": 98.6,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "0e3037540957be49f72a1ac1c2dc192ebe4468a59883b4cea01299f578e65488",
+      "conceptAlternatives": [
+        {"medium": "macro-still-life", "subject": "documents-and-controls", "score": 92.7},
+        {"medium": "soft-editorial-illustration", "subject": "mortgage-workflow", "score": 89.4}
+      ]
+    },
+    {
       "id": "credit-union-account-recovery-evidence-record",
       "articleUrl": "/insight-credit-union-account-recovery-evidence-record.html",
       "imagePath": "/assets/credit-union-account-recovery-evidence-record.jpg",
