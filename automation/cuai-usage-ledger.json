@@ -3972,6 +3972,40 @@
       },
       "summary": "Friday delivered the scheduled Standard News case study on Commonwealth's personalized business-deposit offers and the Library Insight on account-recovery evidence controls, completing the week at 8 of 8 (6 News, 2 Insights). The 86-article portfolio's latest 15 are 11 News and 4 Insights across six reported-news items, four explainers, three data briefs and two case studies. Risk/compliance appears in 12, operations in 11, member service in 10 and IT/data/cybersecurity in 8, while HR appears in 1. Preserve the next bounded candidate: AI-assisted card-dispute intake, provisional-credit timing and error-investigation evidence controls, preferably an Insight, data brief or case study if timely news is weak. The publisher screened 12 candidates across 12 beats and recovered no missed High item. A fresh public-source Alert retrieval attempt produced no usable evidence, so no new Alert was asserted; the October 28 Fed Alert remains within 72 hours and active on the homepage, requiring no freshness write. Exact production commit 6e45374a88aafb445c08062fdea93013e2723849 is READY; the current articles and homepage are present, daily history remains 72 entries, and the available 30-minute runtime-error check is clean. Today's Library LinkedIn item remains internally scheduled because authenticated Buffer metrics returned 401, so no sent-state rewrite, retry or replacement occurred. GA4 and Search Console reads are likewise authentication-blocked; latest trusted audience/search evidence remains October 2 and independent CAI conversion is unavailable. The October 20 chart remains unpromoted because productionVerified is false and no provider receipt exists. The W44 distribution scan was consumed without duplication and no external action followed. No full article, extra social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-02T07:39:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Recover verified-operations run 41442557062 on original SHA af23ae6d423b72a157c6fba301ae6ec95be64f95 after the operate stage failed closed during production-identity refresh.",
+      "status": "recovered",
+      "incidentKey": "cuai-verified-operations:41442557062:af23ae6d423b72a157c6fba301ae6ec95be64f95:operate",
+      "workUnits": {
+        "failedVerifiedOperationsRunsReviewed": 1,
+        "workflowAttemptsReviewed": 2,
+        "workflowJobsReviewed": 4,
+        "operationReceiptArtifactsFound": 2,
+        "operationReceiptArtifactDownloadFailures": 1,
+        "failedStageLogsReviewed": 1,
+        "productionDeploymentsChecked": 2,
+        "livePagesChecked": 4,
+        "runtimeErrorsObserved": 0,
+        "failedWorkflowJobsRetried": 1,
+        "distributionAttemptsObserved": 1,
+        "providerAcknowledgmentsObserved": 1,
+        "socialReservationsRecovered": 1,
+        "externalWriteRetries": 0,
+        "duplicateSocialReservationsObserved": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer via verified operations"
+      ],
+      "summary": "Verified-operations run 41442557062 failed closed at the operate stage with production_identity_refresh_failed while Vercel deployment metadata and the production operations route were converging on the new social-queue commit. The failed attempt stopped in read-only source authorization before buffer-schedule-tracked; the repository queue retained status=queued with no postId, so no ambiguous provider write existed. The uploaded attempt-1 receipt was present but its temporary file download returned repeated 503 responses; the job log, failed-stage boundary and reviewed secure-operations control flow independently confirmed zero distribution actions before failure. After deployment dpl_6sgxyUY4S748YnMShEVihAu6PmPA was READY on exact SHA af23ae6d423b72a157c6fba301ae6ec95be64f95 and the homepage, both articles and JPEG returned HTTP 200, only the failed job was retried on the original run/SHA. Attempt 2 succeeded with one distribution attempt and zero source/action exceptions. Buffer acknowledged post 6ae88406c5c4672c3e72b6d7 once for the CreditUnionAI News company page at the original 2026-11-02 12:30 ET slot; UTMs and image are preserved and duplicate=false. Durable prevention recommendation: retain the fail-closed identity gate, but add a bounded pre-action poll for the production operations route to report the exact deployed SHA after Vercel marks a deployment READY, then rerun the same route check before any provider action.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
