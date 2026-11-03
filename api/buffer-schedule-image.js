@@ -74,6 +74,9 @@ function loadItem(itemId) {
     nativeVideo = item.mediaType === 'video' ? asset?.nativeVideo : null;
     if (item.mediaType === 'video' && (!asset?.nativeVideo || validateVideo(asset.nativeVideo) || item.mediaFormat !== 'short-video' || asset.nativeVideo.url !== item.videoUrl || asset.nativeVideo.sha256 !== item.videoSha256 || asset.transcriptUrl !== item.articleUrl)) return { error: 'native_video_manifest_mismatch' };
     if (!Number.isFinite(due.getTime()) || !mediaReady(asset, easternDate(due)) || asset.canonicalUrl !== item.articleUrl || asset.thumbnailUrl !== item.imageUrl || asset.format !== item.mediaFormat || asset.altText !== item.imageAlt) return { error: 'media_package_not_verified' };
+  } else if (item.contentKind === 'house-campaign') {
+    const error = require('../lib/house-campaign.cjs').validateHouseItem(item);
+    if (error) return { error };
   } else if (item.mediaType === 'video') return { error: 'native_video_requires_verified_media' };
   else if (item.contentKind && item.contentKind !== 'article') return { error: 'queue_item_content_kind_invalid' };
   if (item.mediaType && !['image', 'video'].includes(item.mediaType)) return { error: 'unsupported_media_type' };
@@ -163,6 +166,7 @@ module.exports = async function handler(req, res) {
       }
     }`, { organizationId, channelId: channel.id });
     if (loaded.nativeVideo && existingData.posts?.pageInfo?.hasNextPage !== false) return res.status(409).json({ ok: false, error: 'buffer_video_inventory_incomplete' });
+    if (loaded.item.contentKind === 'house-campaign' && existingData.posts?.pageInfo?.hasNextPage !== false) return res.status(409).json({ ok: false, error: 'buffer_house_inventory_incomplete' });
     const existing = (existingData.posts?.edges || []).map((edge) => edge.node);
     const duplicate = existing.find((post) => post.text === loaded.item.copy);
     if (duplicate) {

@@ -59,7 +59,7 @@
       "No active LinkedIn copy experiment. Use normal editorial discretion for otherwise-eligible High/selective-Library posts while preserving fixed cadence, eligibility, immutable UTMs and image rules. Do not start another copy-only treatment until post-level attribution integrity is resolved or a different specific measurable constraint is established."
     ],
     "articleOpeningGuidance": [
-      "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80–120-word template. Normal editorial discretion and all sourcing/factual-nuance gates apply."
+      "EDITORIAL LEARNING from the completed article-decision-first-opening-2026-08-18 cohort: state the operating decision or consequence early when it materially improves clarity, but do not force a fixed 80\u2013120-word template. Normal editorial discretion and all sourcing/factual-nuance gates apply."
     ],
     "visualGuidance": [],
     "conversionGuidance": [],
@@ -154,5 +154,14 @@
     "attribution": "Exact asset/post/channel and UTM landing-path match; missing, stale or mismatched is unknown.",
     "xStatus": "blocked-unverified-identity-routing",
     "budget": "30000 recurring monthly credits; corrected remaining28856 including current rollover allowance; refresh live balance/billing period before synthesis."
+  },
+  "approvedHouseCampaign": {
+    "path": "automation/house-campaign.json",
+    "approvedOn": "2026-11-03",
+    "approvalReference": "Sentinel_49f140f977248191b053657128260f4b",
+    "remit": "Ongoing approved CUAI reader-value and clearly commercial sponsorship messages. Narrow house-message exception only; preserve all editorial priorities, shared posting caps, reservations, live gates, fixed times and sole existing publisher. No mandatory social quota, new executor or schedule.",
+    "learningLoop": "Each existing cycle inspect actual outputs, accepted direction, feedback and comparable evidence; fix and reverify immediately. Unknown results remain unknown. Old copy experiments stay closed.",
+    "handoffStatus": "prepared file only; no native publisher contact, acceptance, queueing, scheduling or sending proved",
+    "outreachBoundary": "Separate sponsor owner; no outbound email by website/operating-system owner. Sender-compliance hold remains in force."
   }
 }

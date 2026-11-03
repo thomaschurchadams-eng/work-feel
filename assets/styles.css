@@ -2593,3 +2593,15 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
   .page-alerts-index #alerts-list > .alert-card:first-child h3 { font-size: 1.55rem; line-height: 1.18; }
   .page-alerts-index .alert-image { max-height: 160px; object-fit: cover; }
 }
+
+/* Approved CUAI house campaign: restrained index placements, separate from CAI ads. */
+.house-invitation-shell,.house-reader-shell{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:2rem;border-top:3px solid var(--navy);background:#fff}
+.house-invitation-shell>div,.house-reader-shell>div{max-width:48rem}.house-invitation h2,.house-reader h2{font-size:clamp(1.4rem,2.5vw,2rem);line-height:1.25;margin:.4rem 0 .8rem}.house-invitation .btn{flex-shrink:0}.house-reader-shell{border-color:#167b88}.house-reader .link{color:#0b5360;flex-shrink:0}
+.page-sponsorships .hero .page-title{max-width:19ch}.page-sponsorships .hero .lead{max-width:44rem}.sponsor-mail-note{font-size:.9rem;margin-top:1rem;max-width:48rem}.sponsor-proof{background:#fff;border-bottom:1px solid var(--soft-gray)}.sponsor-proof-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:center}.sponsor-growth{font-size:clamp(4.5rem,10vw,8rem);font-weight:800;line-height:1.1;letter-spacing:-.06em;color:var(--navy)}.sponsor-growth span{font-size:.5em}.sponsor-proof h2{font-size:1.4rem;max-width:24ch}.sponsor-method{font-size:.92rem;margin-top:1rem;color:#42566a}.sponsor-card h3{font-size:1.3rem;margin-bottom:.8rem}.sponsor-card p+p{margin-top:.8rem}.sponsor-contact{max-width:48rem;margin:3rem auto 0;padding-top:2rem;border-top:1px solid #bbc6d2}.sponsor-contact p{margin:1rem 0}.page-sponsorships #sponsorship-approach{scroll-margin-top:7rem}
+@media(max-width:760px){.house-invitation-shell,.house-reader-shell{align-items:flex-start;flex-direction:column;padding:1.4rem;gap:1.2rem}.sponsor-proof-grid{grid-template-columns:1fr;gap:1.5rem}.house-reader .link{flex-shrink:1}.page-sponsorships .button-row .btn{width:100%;text-align:center}}
+@media(max-width:720px){
+  body.page-house-campaign .institute-banner:not(.institute-banner--compact){min-height:0;background-image:none}
+  body.page-house-campaign .institute-banner:not(.institute-banner--compact) .institute-banner-inner{min-height:0;padding-block:14px}
+  body.page-house-campaign .institute-banner-copy{gap:8px}
+  body.page-house-campaign .institute-banner strong{font-size:1.12rem}
+}

@@ -6,4 +6,6 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) { console.error('Usage: node script
 const manifest = JSON.parse(fs.readFileSync('automation/media-manifest.json', 'utf8'));
 const queue = JSON.parse(fs.readFileSync('automation/social-queue.json', 'utf8'));
 const articles = process.argv[3] ? JSON.parse(fs.readFileSync(process.argv[3], 'utf8')) : [];
-console.log(JSON.stringify(selectSlot({ date, queue: queue.items, media: manifest.assets, articles }), null, 2));
+const { preparedHouseItems } = require('../lib/house-campaign.cjs');
+// A prepared selection is not a reservation or proof of current provider capacity.
+console.log(JSON.stringify(selectSlot({ date, queue: queue.items, media: manifest.assets, articles, campaigns: preparedHouseItems() }), null, 2));
