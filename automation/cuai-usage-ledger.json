@@ -4110,6 +4110,40 @@
       },
       "summary": "Monday delivered the scheduled Standard News report on Dark Matter's agentic mortgage acquisition and the Library Insight on card-dispute provisional-credit evidence, placing the week at 2 of 8. The 88-article portfolio's latest 15 are 10 News and 5 Insights across five reported-news items, five explainers, three data briefs and two case studies; every beat is distinct. Risk/compliance and operations remain concentrated at 12 and 11, while HR appears once and board, finance and vendor management twice each. Preserve the next bounded candidate: AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. The October 30 FinCEN foreign-agent transaction alert includes current red flags and SAR keyword FIN2026FOREIGNAGENT, but it predates Friday's completed Alert cycle and is already outside the homepage's 72-hour window; it was explicitly not backfilled merely to fill the archive. No newer official development cleared the Alert gates. The expired October 28 Fed Alert was allowed to age out, homepageWatchState advanced with no non-duplicative watch items because all timely recent coverage is already in the homepage grid, and the evergreen fallback remains. Reliability Watch closed the production-identity race through PR 277; the unique Library post is scheduled once with duplicate=false. Buffer, GA4 and Search Console reads are still blocked by Vercel Authentication 401, so no sent-state or current measurement claim was made. Production is READY, both articles and the homepage return 200, and the available 30-minute runtime-error check is clean. The W45 public/free scan recorded CUToday.info, CUbroadcast, CULytics, Grow Your Credit Union and the Future of Credit Unions initiative; no outreach, submission, signup, trial, registration, membership or spend occurred. Public Similarweb did not provide defensible estimates, so none were asserted. No full article, extra social post, external contact, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-03T11:47:24-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Recover verified-operations run 41549877758 on original SHA aefc7303e31ca72539162aedfb91e0c8fbe97cc1 after the operate stage failed on a read-only GA4 source timeout.",
+      "status": "recovered",
+      "incidentKey": "cuai-verified-operations:41549877758:aefc7303e31ca72539162aedfb91e0c8fbe97cc1:operate",
+      "workUnits": {
+        "failedVerifiedOperationsRunsReviewed": 1,
+        "workflowAttemptsReviewed": 1,
+        "workflowJobsReviewed": 2,
+        "operationReceiptArtifactsDownloaded": 2,
+        "failedStageLogsReviewed": 1,
+        "successfulVerificationRunsReviewed": 1,
+        "productionDeploymentsChecked": 2,
+        "livePagesChecked": 3,
+        "runtimeErrorChecks": 2,
+        "runtimeErrorsObserved": 0,
+        "distributionAttemptsObserved": 0,
+        "providerWriteAcknowledgmentsObserved": 0,
+        "externalWriteRetries": 0,
+        "duplicateSocialReservationsObserved": 0,
+        "recoveryRunbookReferencesMissing": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Google Analytics via verified operations"
+      ],
+      "summary": "Verified-operations run 41549877758 failed at the operate stage because the read-only ga4-metrics request exceeded its 25-second timeout. The attempt-1 receipt proves authentication was verified, production exactly matched SHA aefc7303e31ca72539162aedfb91e0c8fbe97cc1, actions and reconciliations were empty, and no external write had an ambiguous outcome. Its Buffer receipt independently confirmed the already-sent November 2 company-page item, exact post ID, approved destination and preserved UTM URL; no distribution retry was authorized or attempted. Later verified-operations run 41667681223 on current main completed with errors=[], actions=[] and status=verified, proving the GA4/source path recovered without intervention. Current main 389b02d445a2a71d4e048c9484763602a5107889 is READY in Production with the canonical domain assigned, no runtime errors in the available 24-hour error view, and the November 3 article, homepage listing and image all return HTTP 200. The original incident key is closed once. automation/recovery/README.md is absent from current main, so no unreleased recovery code or shared-checkpoint adapter was used. Durable prevention recommendation: if this read-only timeout pattern recurs, add a bounded idempotent retry only for source reads while preserving fail-closed write handling and never retrying an ambiguous provider action.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
