@@ -21,7 +21,7 @@
     "Subscribe"
   ],
   "voice": {
-    "lengthWords": {"min": 600, "max": 1000},
+    "lengthWords": {"min": 600, "max": 750},
     "principles": ["concise", "reported", "operational", "varied", "human editorial voice"],
     "avoid": ["article-summary collage", "repetitive intros", "inflated urgency", "AI-written framing", "unsourced predictions"]
   },
