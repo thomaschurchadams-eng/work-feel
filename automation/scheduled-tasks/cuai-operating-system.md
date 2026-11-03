@@ -86,7 +86,18 @@ This is internal state repair only. It does not authorize a new post, schedule c
 
 ## Analytics learning loop
 
-Use the available analytics records to learn across content, not just individual posts:
+Use the available analytics records to learn across content, not just individual posts.
+
+### Authenticated measurement evidence
+
+Prefer a direct authorized read when it succeeds. If an interactive or preview read of GA4, Search Console, or Buffer is blocked only by Vercel Authentication with HTTP 401, do not treat that response as zero data or as proof that the provider is unavailable. Instead, the operating run may consume the latest successful `CUAI verified operations` receipt artifact only when all of these conditions hold:
+
+- the workflow run completed successfully on the exact current `main` SHA;
+- `run.json` reports `authentication: verified`, `status: verified`, and `errors: []`;
+- the matching `ga4-metrics.json`, `search-console-metrics.json`, or `buffer-metrics.json` file reports HTTP 200 and `data.ok: true`;
+- the artifact timestamp is recorded with the run ID and SHA, and any Buffer evidence identifies the approved CreditUnionAI News company channel.
+
+This is a read-only evidence fallback, not permission to rerun providers, retry a social action, change credentials, or infer delivery from missing data. If the artifact is absent, stale, failed, mismatched to current `main`, or lacks the required source file, keep that source blocked and report the exact gap.
 
 - Track qualified engagement by functional audience, topic, format, source type, classification, homepage treatment, and LinkedIn decision.
 - Look for repeatable signals and coverage gaps.

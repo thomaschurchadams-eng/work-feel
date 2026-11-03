@@ -4190,6 +4190,41 @@
       },
       "summary": "Consumed the completed Standard News handoff for Credit Union of Colorado auto-loan pricing and the completed no-write recovery of a single read-only GA4 timeout. The week is 3 of 8 articles. The 89-article portfolio's latest 15 remain 10 News and 5 Insights across five reported-news items, five explainers, three data briefs and two case studies; all 15 beats are distinct. Risk/compliance appears in 12 and operations in 11, while HR and board strategy appear once each. Preserve the next candidate on AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. Published one same-day NCUA Alert covering removal of obsolete commercial-lending transition text, permanent PPP-loan regulatory treatment and a redundant statutory-lien definition, with no full article or social action. The November 2 LinkedIn item is already durably sent once; today's Standard article created none. The approved house campaign is technically live on the website and has one prepared LinkedIn asset, but no queue item or provider receipt, so no adoption or performance claim was made. GA4, Search Console and Buffer reads remain blocked by Vercel Authentication 401; the latest trusted audience/search snapshot remains October 2. No external contact, spend, new social post, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-03T16:41:46-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Repeated operating reviews reported GA4, Search Console, and Buffer as unavailable after Vercel Authentication returned HTTP 401 even though exact-current-main verified-operations artifacts contained authorized successful source reads.",
+      "status": "recovered",
+      "incidentKey": "cuai-measurement-handoff:verified-ops-artifact-fallback:2026-11-03",
+      "workUnits": {
+        "affectedOperatingReceiptsReviewed": 10,
+        "successfulVerifiedOperationsRunsReviewed": 1,
+        "operationReceiptArtifactsDownloaded": 1,
+        "authenticatedSourceFilesReviewed": 3,
+        "sourceReadsRecovered": 3,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "externalWriteRetries": 0,
+        "socialSchedulingAttempts": 0,
+        "recoveryBranchesCreated": 1,
+        "operatingPolicyFilesChanged": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Google Analytics via verified operations",
+        "Google Search Console via verified operations",
+        "Buffer via verified operations"
+      ],
+      "summary": "Diagnosed a repeated access-path reporting failure rather than a GA4, Search Console, Buffer, production, or social-delivery outage. Operating reviews had treated Vercel Authentication 401 responses from their interactive path as current source unavailability. The authorized receipt for verified-operations run 41711138611 on exact current main c8f3a6d97a9391de427e009af03d58d7e61c18d4 reports authentication=verified, status=verified, errors=[], actions=[], and reconciliations=[]; its ga4-metrics.json, search-console-metrics.json, and buffer-metrics.json were generated on November 3 and each returned HTTP 200 with data.ok=true. Buffer identifies the approved CreditUnionAI News company channel. The social queue already records the November 2 item sent once with its original post ID and UTMs, and no November 3 reservation exists, so no provider or queue write was needed. Updated the existing operating policy with a fail-closed, read-only fallback that permits consuming only a successful exact-main-SHA verified-operations artifact and otherwise preserves the blocker. Durable lesson: distinguish deployment-protection access from provider health and reuse the already-authorized workflow receipt before declaring current measurement unavailable.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
