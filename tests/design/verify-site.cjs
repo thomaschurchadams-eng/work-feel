@@ -105,6 +105,7 @@ async function serve() {
       }
     }
     await require('./verify-alerts.cjs')(browser, base, out, axePath);
+    await require('./verify-analytics-journeys.cjs')(browser, base, out, axePath);
   } finally { await browser.close(); if (local) await new Promise(resolve => local.server.close(resolve)); }
   const failures = results.filter(r => r.failed.length);
   console.log(`${results.length} rendered checks; ${failures.length} failed. Evidence: design-results/`);

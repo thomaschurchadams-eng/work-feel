@@ -2566,3 +2566,30 @@ body main .latest-alert-shell h2.section-title { font-size:clamp(1.7rem,3vw,2.6r
 body main a.btn.btn-primary, body main a.btn.btn-primary:hover { color:var(--white); }
 
 body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { color:#dce4e9; }
+
+/* Approved mobile reading improvements: preserve labels, sources and all copy. */
+.article-reading-link { margin: 0 0 20px; font-weight: 700; }
+.article-reading-link a, .alert-source a { display: inline-flex; align-items: center; min-height: 44px; }
+.article-next-step { border-block: 1px solid var(--rule); background: var(--paper); margin: 32px 0; padding: 22px; }
+.article-next-step h2 { scroll-margin-top: 130px; }
+.article-next-step li { margin-bottom: 14px; }
+.article-next-step a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 720px) {
+  body:is(.page-alerts-index, .article-decision, .page-newsletter) .institute-banner:not(.institute-banner--compact) { min-height: 0; background-image: none; }
+  body:is(.page-alerts-index, .article-decision, .page-newsletter) .institute-banner:not(.institute-banner--compact) .institute-banner-inner { min-height: 0; padding-block: 14px; }
+  body:is(.page-alerts-index, .article-decision, .page-newsletter) .institute-banner-copy { gap: 8px; }
+  body:is(.page-alerts-index, .article-decision, .page-newsletter) .institute-banner strong { font-size: 1.12rem; }
+  body.article-decision main > .section, .page-alerts-index main > .section { padding-top: 24px; }
+  body.article-decision h1.page-title { font-size: clamp(2rem, 8vw, 2.35rem); line-height: 1.08; }
+  .article-decision .article-date, .article-decision .article-byline { display: inline; }
+  .article-decision .article-byline { margin-left: 8px; }
+  .article-decision .article-tags { margin-block: 8px; gap: 4px 8px; }
+  .article-decision .article-summary { font-size: 1.08rem; line-height: 1.5; margin: 14px 0 6px; padding: 12px 0; }
+  .article-decision .article-hero { margin-top: 16px; }
+  .page-alerts-index .section-header { margin-bottom: 12px; }
+  .page-alerts-index .section-header .lead { font-size: 1.02rem; line-height: 1.5; padding-block: 12px; }
+  .page-alerts-index .alerts-toolbar { padding: 12px; gap: 10px; }
+  .page-alerts-index #alerts-list > .alert-card:first-child { padding: 20px; }
+  .page-alerts-index #alerts-list > .alert-card:first-child h3 { font-size: 1.55rem; line-height: 1.18; }
+  .page-alerts-index .alert-image { max-height: 160px; object-fit: cover; }
+}

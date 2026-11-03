@@ -1634,15 +1634,10 @@
       const status = newsletterForm.querySelector('.status');
 
       const now = new Date();
-      addSignup({
-        email,
-        firstName,
-        timestamp: formatTimestamp(now),
-        isoTimestamp: now.toISOString()
-      });
+      // An email request is not provider-confirmed enrollment. Do not store new personal data locally.
 
       if (status) {
-        status.textContent = 'Thanks for subscribing.';
+        status.textContent = 'Email request opened. Send it in your email app; your subscription is not confirmed.';
         status.style.display = 'block';
       }
 
@@ -1803,11 +1798,14 @@
   // Privacy-safe publication analytics. Never include email addresses, names, or article text.
   const initPublicationAnalytics = () => {
     const sendEvent = (name, params = {}) => {
-      if (typeof window.gtag !== 'function') return false;
+      // Private previews and known internal/automated checks are never reader demand.
+      let internal = navigator.webdriver === true || window.CUAIInternalTraffic === true || ['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname);
+      try { internal ||= window.localStorage.getItem('cuai_internal_traffic') === 'true'; } catch { /* explicit and automated markers still apply */ }
+      if (internal || typeof window.gtag !== 'function') return false;
       const cleanParams = Object.fromEntries(
         Object.entries(params).filter(([, value]) => value !== undefined && value !== null && value !== '')
       );
-      window.gtag('event', name, cleanParams);
+      window.gtag('event', name, { ...cleanParams, measurement_version: 'publication-v2' });
       return true;
     };
 
@@ -1912,9 +1910,10 @@
       const sameHost = url.hostname === window.location.hostname;
       const inArticle = Boolean(link.closest('.article-body'));
       const inRelated = Boolean(link.closest('.related-coverage'));
-      const isSubscribe =
-        /newsletter|subscribe/i.test(url.pathname + label) ||
-        (url.protocol === 'mailto:' && /subscribe/i.test(url.search + label));
+      const isSubscribe = url.protocol === 'mailto:' && /subscribe/i.test(url.search + label);
+      if (sameHost && /\/(newsletter|subscribe)\.html$/.test(url.pathname)) {
+        sendEvent('briefing_open', { ...dimensions, link_location: inArticle ? 'article' : 'site' });
+      }
 
       if (isSubscribe) {
         sendEvent('newsletter_intent', {

@@ -4,25 +4,7 @@ const crypto = require('node:crypto');
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const DATA_API_BASE = 'https://analyticsdata.googleapis.com/v1beta';
 const ANALYTICS_READ_SCOPE = 'https://www.googleapis.com/auth/analytics.readonly';
-const CUAI_EVENTS = [
-  'article_view',
-  'engaged_reader',
-  'scroll_depth',
-  'source_click',
-  'related_content_click',
-  'newsletter_intent',
-  'outbound_click',
-  'cai_banner_impression',
-  'cai_banner_click',
-  'cai_bn_imp_hdr_v1a',
-  'cai_bn_imp_hdr_v1b',
-  'cai_bn_imp_ctx_v1a',
-  'cai_bn_imp_ctx_v1b',
-  'cai_bn_click_hdr_v1a',
-  'cai_bn_click_hdr_v1b',
-  'cai_bn_click_ctx_v1a',
-  'cai_bn_click_ctx_v1b'
-];
+const CUAI_EVENTS = Object.keys(require('../automation/analytics-measurement.json').events);
 
 function requestValue(req, key) {
   const queryValue = req.query?.[key];
@@ -75,6 +57,10 @@ function loadConfig() {
   }
   if (!/^\d+$/.test(propertyId)) {
     return { ok: false, missing: [], invalid: ['property_id_must_be_numeric'] };
+  }
+
+  if (propertyId !== '520110560') {
+    return { ok: false, missing: [], invalid: ['cuai_property_must_be_520110560'] };
   }
 
   return {
@@ -368,6 +354,10 @@ module.exports = async function handler(req, res) {
       generatedAt: new Date().toISOString(),
       source: 'google-analytics-data-api',
       propertyId: config.propertyId,
+      measurementSchemaVersion: 4,
+      eventsRequested: CUAI_EVENTS,
+      internalTrafficExclusion: 'not verified by this aggregate endpoint',
+      confirmedSubscriptionCollection: 'unconnected; email requests are not confirmed enrollments',
       privacy: 'Aggregate reporting only. The endpoint does not return names, emails, form values, client IDs, user IDs or free-form reader input.',
       windows: { sevenDay, twentyEightDay }
     });
@@ -381,4 +371,4 @@ module.exports = async function handler(req, res) {
   }
 };
 
-module.exports._test = { mapReport, reportEvidence };
+module.exports._test = { mapReport, reportEvidence, CUAI_EVENTS };
