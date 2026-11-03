@@ -3,6 +3,42 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-colorado-ai-auto-loan-pricing",
+      "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
+      "url": "/news/credit-union-colorado-ai-auto-loan-pricing.html",
+      "publishedAt": "2026-11-03T07:15:00-05:00",
+      "section": "news",
+      "beat": "deal-level-auto-loan-pricing",
+      "functions": [
+        "lending-collections",
+        "risk-compliance",
+        "finance-treasury",
+        "operations"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "agents-automation"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Auto-lending, pricing, credit-risk, compliance and finance leaders",
+      "secondaryAudiences": [
+        "dealer-indirect lending teams",
+        "fair-lending teams",
+        "model-risk and internal-audit teams"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the move beyond uniform rate tiers and the evidence required to judge the member-facing outcome. Selection, sourcing, fair-lending and classification gates were unchanged.",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-loan-pricing-controls.html",
+        "/news/communication-fcu-scienaptic-ai-lending.html"
+      ],
+      "sourceTier": 2,
+      "score": 76.8
+    },
+    {
       "id": "credit-union-ai-card-dispute-evidence-clock",
       "title": "A Provisional-Credit Clock for AI-Assisted Card Disputes",
       "url": "/insight-credit-union-ai-card-dispute-evidence-clock.html",

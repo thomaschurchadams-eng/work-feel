@@ -3,6 +3,29 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-colorado-ai-auto-loan-pricing",
+      "articleUrl": "/news/credit-union-colorado-ai-auto-loan-pricing.html",
+      "imagePath": "/assets/credit-union-colorado-ai-auto-loan-pricing.jpg",
+      "publishedAt": "2026-11-03T07:15:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut",
+      "subject": "deal-level-auto-loan-pricing",
+      "composition": "asymmetric-editorial",
+      "perspective": "overhead",
+      "palette": "cobalt-coral-cream-graphite",
+      "lighting": "soft-daylight",
+      "texture": "paper-fiber",
+      "scene": "uniform-auto-rate-grid-gives-way-to-a-deal-assembled-from-borrower-vehicle-collateral-and-market-inputs",
+      "conceptScore": 94.2,
+      "dimensions": {"width": 1200, "height": 630},
+      "sha256": "02d33bdb4968fecf13da59820290b1d7ba3e5514b5707e9d17db54490b2e31dd",
+      "conceptAlternatives": [
+        {"medium": "ink-and-linocut", "subject": "vehicle-collateral-and-price-boundary", "score": 91.1},
+        {"medium": "cinematic-conceptual", "subject": "rate-tier-to-individual-deal-transition", "score": 88.9}
+      ]
+    },
+    {
       "id": "credit-union-ai-card-dispute-evidence-clock",
       "articleUrl": "/insight-credit-union-ai-card-dispute-evidence-clock.html",
       "imagePath": "/assets/credit-union-ai-card-dispute-evidence-clock.jpg",

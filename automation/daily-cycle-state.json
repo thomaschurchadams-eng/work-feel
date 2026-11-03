@@ -6,95 +6,149 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-02",
-    "fullArticleCount": 2,
+    "date": "2026-11-03",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "agentic-ai-mortgage-workflows",
-      "ai-assisted-card-dispute-error-resolution",
+      "deal-level-auto-loan-pricing",
+      "digital-personalization-member-websites",
+      "bank-lending-standards-and-demand",
+      "atm-surcharge-fee-sensitivity",
+      "credit-union-wellbeing-and-financial-education",
+      "credit-union-mergers-and-conversions",
+      "digital-banking-system-conversions",
+      "fintech-leadership",
+      "ai-assisted-origination-fraud",
       "credit-union-financial-performance",
-      "mortgage-affordability-programs",
       "stablecoin-regulatory-reporting",
-      "credit-union-chartering-and-financial-inclusion",
-      "identity-protection-partnerships",
-      "credit-union-enforcement",
-      "macroeconomic-performance",
-      "credit-union-leadership",
-      "debit-interchange-policy",
-      "small-business-financial-inclusion"
+      "credit-union-ai-strategy-commentary"
     ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
-        "url": "https://creditunionainews.com/news/dark-matter-agentic-ai-mortgage-platform.html",
-        "primaryFunctionalAudience": "Mortgage lending, loan operations, technology, compliance and vendor-management leaders",
+        "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
+        "url": "https://creditunionainews.com/news/credit-union-colorado-ai-auto-loan-pricing.html",
+        "primaryFunctionalAudience": "Auto-lending, pricing, credit-risk, compliance and finance leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "article",
-        "classification": "Insights",
-        "title": "A Provisional-Credit Clock for AI-Assisted Card Disputes",
-        "url": "https://creditunionainews.com/insight-credit-union-ai-card-dispute-evidence-clock.html",
-        "primaryFunctionalAudience": "Card operations, member service, fraud, compliance and payments leaders",
-        "promotionPriority": "Library",
-        "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
       }
     ],
     "rejections": [
       {
+        "title": "Travis Credit Union Launches a Personalized Website Experience",
+        "reason": "a live credit-union implementation, but the vendor announcement provides no conversion, funded-account, complaint or accessibility outcome and closely follows recent personalization coverage"
+      },
+      {
+        "title": "Federal Reserve October Senior Loan Officer Survey",
+        "reason": "a current primary data release, but it surveys banks rather than credit unions and offered a less direct credit-union operating decision than the selected auto-pricing change"
+      },
+      {
+        "title": "Federal Reserve Researches ATM Surcharge Sensitivity",
+        "reason": "useful consumer-fee research without a sufficiently direct new credit-union policy or operating change"
+      },
+      {
+        "title": "Affinity Federal Credit Union Launches a Wellbeing Institute",
+        "reason": "a promotion-led financial-education initiative without measured member outcomes or a distinct operating change"
+      },
+      {
+        "title": "Cincinnati Interagency FCU Completes KEMBA Combination",
+        "reason": "a previously announced merger and conversion milestone without new financial, service or integration evidence"
+      },
+      {
+        "title": "International UAW FCU Closes for System Conversion",
+        "reason": "a routine planned core-conversion notice without a material new incident or reusable operating result"
+      },
+      {
+        "title": "Nuuvia Adds Credit-Union and Fintech Executives to Its Board",
+        "reason": "a personnel announcement that does not clear the publication threshold"
+      },
+      {
+        "title": "Diversified Members Credit Union Selects Scienaptic Fraud Detection",
+        "reason": "an October 26 vendor-selection announcement already screened in prior cycles and without new deployment or outcome evidence"
+      },
+      {
         "title": "PenFed Reports Third-Quarter Lending and Earnings Growth",
-        "reason": "credible credit-union financial results, but less connected to the active operating-control gap than the selected mortgage-agent acquisition and follow-on evidence tool"
+        "reason": "credible credit-union financial results already screened in the prior cycle and less actionable than the selected pricing-model change"
       },
       {
-        "title": "Michigan Legacy Reports 118 Mortgages Through Its 4.99% Program",
-        "reason": "a useful affordability case study, but projected lifetime savings are modeled customer figures and the program is narrower than the selected workflow change"
+        "title": "America’s Credit Unions Comments on Stablecoin Call Reports",
+        "reason": "an advocacy comment on an October 16 proposal rather than a final reporting requirement"
       },
       {
-        "title": "NCUA Proposes Stablecoin Call Report Schedule",
-        "reason": "the primary proposal dates to October 16 and the current October 30 development is an advocacy comment rather than a final reporting requirement"
-      },
-      {
-        "title": "NCUA Charters All Peoples United Federal Credit Union",
-        "reason": "an important financial-inclusion development with limited operating results at charter stage"
-      },
-      {
-        "title": "NCUA Charters Accion Opportunity Federal Credit Union",
-        "reason": "an important small-business access development with limited operating results at charter stage"
-      },
-      {
-        "title": "Veridian Adds Allstate Identity Protection",
-        "reason": "a vendor-and-credit-union announcement without measured enrollment, fraud-loss, recovery or member-outcome evidence"
-      },
-      {
-        "title": "NCUA October Enforcement Actions",
-        "reason": "routine individual enforcement notices without a broader new operating requirement or reusable control signal"
-      },
-      {
-        "title": "U.S. Real GDP Grows 3.4 Percent",
-        "reason": "a broad macroeconomic release without a distinct new credit-union technology or operating decision"
-      },
-      {
-        "title": "Georgia’s Own Names a New Chief Executive",
-        "reason": "a routine personnel appointment that does not clear the publication threshold"
-      },
-      {
-        "title": "DCUC Seeks Commissary Interchange Amendment",
-        "reason": "current advocacy without an enacted policy change or completed operating consequence"
+        "title": "Filene Summarizes AI Themes From Money20/20",
+        "reason": "useful strategy commentary but not a distinct evidence-backed operating development"
       }
     ],
-    "status": "two-article-cycle-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the acquired production mortgage workflow and the Insight headline centers a separate provisional-credit evidence clock and accountable member outcome. Selection, sourcing, legal-evidence and classification gates were unchanged.",
+    "status": "one-article-cycle-complete",
+    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the move beyond uniform rate tiers and the evidence required to judge a member-facing pricing outcome. Selection, sourcing, fair-lending and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
-    "updatedAt": "2026-11-02T07:45:00-05:00"
+    "updatedAt": "2026-11-03T07:15:00-05:00"
   },
   "history": [
+    {
+      "date": "2026-11-02",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "agentic-ai-mortgage-workflows",
+        "ai-assisted-card-dispute-error-resolution",
+        "credit-union-financial-performance",
+        "mortgage-affordability-programs",
+        "stablecoin-regulatory-reporting",
+        "credit-union-chartering-and-financial-inclusion",
+        "identity-protection-partnerships",
+        "credit-union-enforcement",
+        "macroeconomic-performance",
+        "credit-union-leadership",
+        "debit-interchange-policy",
+        "small-business-financial-inclusion"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Dark Matter Buys Agentic AI Platform for Mortgage Workflows",
+          "url": "https://creditunionainews.com/news/dark-matter-agentic-ai-mortgage-platform.html",
+          "primaryFunctionalAudience": "Mortgage lending, loan operations, technology, compliance and vendor-management leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "article",
+          "classification": "Insights",
+          "title": "A Provisional-Credit Clock for AI-Assisted Card Disputes",
+          "url": "https://creditunionainews.com/insight-credit-union-ai-card-dispute-evidence-clock.html",
+          "primaryFunctionalAudience": "Card operations, member service, fraud, compliance and payments leaders",
+          "promotionPriority": "Library",
+          "socialDecision": "eligible-library-pending-live-verification-and-slot-selection"
+        }
+      ],
+      "rejections": [
+        {"title": "PenFed Reports Third-Quarter Lending and Earnings Growth", "reason": "credible credit-union financial results, but less connected to the active operating-control gap than the selected mortgage-agent acquisition and follow-on evidence tool"},
+        {"title": "Michigan Legacy Reports 118 Mortgages Through Its 4.99% Program", "reason": "a useful affordability case study, but projected lifetime savings are modeled customer figures and the program is narrower than the selected workflow change"},
+        {"title": "NCUA Proposes Stablecoin Call Report Schedule", "reason": "the primary proposal dates to October 16 and the current October 30 development is an advocacy comment rather than a final reporting requirement"},
+        {"title": "NCUA Charters All Peoples United Federal Credit Union", "reason": "an important financial-inclusion development with limited operating results at charter stage"},
+        {"title": "NCUA Charters Accion Opportunity Federal Credit Union", "reason": "an important small-business access development with limited operating results at charter stage"},
+        {"title": "Veridian Adds Allstate Identity Protection", "reason": "a vendor-and-credit-union announcement without measured enrollment, fraud-loss, recovery or member-outcome evidence"},
+        {"title": "NCUA October Enforcement Actions", "reason": "routine individual enforcement notices without a broader new operating requirement or reusable control signal"},
+        {"title": "U.S. Real GDP Grows 3.4 Percent", "reason": "a broad macroeconomic release without a distinct new credit-union technology or operating decision"},
+        {"title": "Georgia’s Own Names a New Chief Executive", "reason": "a routine personnel appointment that does not clear the publication threshold"},
+        {"title": "DCUC Seeks Commissary Interchange Amendment", "reason": "current advocacy without an enacted policy change or completed operating consequence"}
+      ],
+      "status": "two-article-cycle-complete",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the acquired production mortgage workflow and the Insight headline centers a separate provisional-credit evidence clock and accountable member outcome. Selection, sourcing, legal-evidence and classification gates were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
+      "updatedAt": "2026-11-02T07:45:00-05:00"
+    },
     {
       "date": "2026-10-30",
       "fullArticleCount": 2,
