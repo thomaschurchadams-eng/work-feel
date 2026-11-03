@@ -56,7 +56,7 @@ async function serve() {
             for (const line of range.getClientRects()) if (line.right > box.right+2 || line.left < box.left-2) overruns.push(heading.textContent.trim());
           }
           const ordinary = [...document.querySelectorAll('body[data-section="topics"] .card h2,.intelligence-record h2')].map(h => parseFloat(getComputedStyle(h).fontSize));
-          return { blank:!document.body.innerText.trim(), mainCount:document.querySelectorAll('main').length, h1Count:document.querySelectorAll('h1').length, titleSize, ordinaryCardSizes:ordinary, primaryNavigation:[...document.querySelectorAll('header nav a')].map(a => a.textContent.trim()), overflow:document.documentElement.scrollWidth>innerWidth, overruns, brokenImages:[...document.images].filter(i => !i.complete || !i.naturalWidth).map(i => i.getAttribute('src')), sponsorCount:document.querySelectorAll('[data-cai-banner-placement="sitewide_header"]').length };
+          return { blank:!document.body.innerText.trim(), mainCount:document.querySelectorAll('main').length, h1Count:document.querySelectorAll('h1').length, titleSize, ordinaryCardSizes:ordinary, primaryNavigation:[...document.querySelectorAll('header nav a')].map(a => a.textContent.trim()), overflow:document.documentElement.scrollWidth>innerWidth, overruns, brokenImages:[...document.images].filter(i => !i.complete || !i.naturalWidth).map(i => i.getAttribute('src')), sponsorCount:document.querySelectorAll('[data-cai-banner-placement="sitewide_header"]').length, houseCampaignCount:document.querySelectorAll('.cuai-house-campaign').length, sponsorEmail:[...document.querySelectorAll('.cuai-house-campaign .cuai-campaign-email')].map(a=>({text:a.textContent.trim(),href:a.getAttribute('href'),visible:a.getClientRects().length>0})) };
         });
         let menuPassed = true;
         if (width < 700) {
@@ -95,6 +95,7 @@ async function serve() {
         if (facts.brokenImages.length || errors.length) failed.push('images-or-page-errors');
         if (!menuPassed || !searchPassed || !transcriptPassed) failed.push('interaction');
         if (accessibility.length) failed.push('accessibility');
+        if (facts.houseCampaignCount !== 1 || facts.sponsorEmail.length !== 1 || facts.sponsorEmail[0].text !== 'info@creditunionainews.com' || facts.sponsorEmail[0].href !== 'mailto:info@creditunionainews.com?subject=CUAI%20sponsorship%20inquiry' || !facts.sponsorEmail[0].visible) failed.push('sitewide-campaign-contact');
         await page.evaluate(() => { document.activeElement?.blur(); scrollTo(0,0); });
         const name = (route === '/' ? 'home' : route.replace(/[^a-z0-9]/gi,'-')) + '-' + width;
         await page.screenshot({ path:path.join(out,name+'.png'), fullPage:true, animations:'disabled' });
@@ -104,6 +105,7 @@ async function serve() {
         await context.close();
       }
     }
+    await require('./verify-card-artwork.cjs')(browser, base, out, axePath);
     await require('./verify-alerts.cjs')(browser, base, out, axePath);
     await require('./verify-analytics-journeys.cjs')(browser, base, out, axePath);
   } finally { await browser.close(); if (local) await new Promise(resolve => local.server.close(resolve)); }

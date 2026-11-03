@@ -34,6 +34,7 @@ For each qualifying article, sequentially:
 - Preserve all existing site content and concurrent work. Re-read `main` immediately before writing and merge current changes rather than overwriting them.
 - Use one atomic commit for the complete article package. Do not create scan-only commits.
 - Run all applicable validation and production checks. Verify the production deployment is ready and the live article, image, listing, and any homepage placement render correctly.
+- Artwork must be explicitly selected and relevant; never fill missing listing artwork with rotating generic or placeholder assets. Legacy cards without approved art may be intentionally text-only. Inspect listing cards on desktop/mobile, preserve working authored art, and exercise image-error behavior: retain readable title/summary/link without a broken-image box or unrelated replacement. Unexpected failed assets still fail readiness even if the interface degrades gracefully. Run the normal rendered acceptance path, including its card-artwork regressions, before handoff.
 - Never publish unsupported claims, invented quotes, implied partnerships, fabricated performance results, or stale facts presented as current.
 
 ## Machine-observable run outcome

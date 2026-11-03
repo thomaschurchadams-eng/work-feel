@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T08:29:49-04:00",
+  "updatedAt": "2026-11-03T18:23:46+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -313,6 +313,30 @@
       "owner": "Reliability Watch / Daily Publisher",
       "result": "Canonical audit state restored on the recovery branch and a fail-closed preflight added to the existing verified-operations workflow; final merge, Preview, Production and exact-commit verification are recorded in the reliability recovery event.",
       "rollback": "Revert the recovery PR only if a later authoritative state proves the restored 60-entry baseline incorrect; do not restore the truncated blob. The workflow guard can be reverted independently without affecting content or social state."
+    },
+    {
+      "id": "listing-artwork-no-placeholder-2026-11-03",
+      "owner": "Existing CUAI website builder; existing publisher retains distribution ownership",
+      "evidence": "Tom reported a visible fallback image. At main0cc99c49, applyFallbackImages inserted unrelated numbered art into cards missing approved images and prioritized SVG placeholders. News has89authored-image cards and8cards without authored art; several similarly named real JPGs are valid and must be preserved.",
+      "proposedChange": "Remove shared generic-art insertion; present intentionally text-only cards when no approved art exists. Hide failed image boxes without replacing URLs, retain diagnostics for readiness, and restore real art when it loads. Put the rule in the existing daily publisher procedure and actual normal rendered readiness path.",
+      "expectedBenefit": "Prevent unrelated placeholder artwork from masquerading as article art while preserving readable listings, source-selected imagery and honest image-error detection. No audience/revenue or time-saving gain is inferred.",
+      "risk": "Low; shared listing presentation and tests. No editorial text, image files, model settings, credentials, schedules, outreach or paid service changes.",
+      "artifactVersion": {
+        "baseCommit": "0cc99c49addf5172e5535721906dbbce87e41f8d",
+        "appSha256": "b6abdedb284141f88e70a6d27671231e0fe00aa4748c155a22a6a50adc3c6dee",
+        "stylesSha256": "e4071bdd2b56feee84d54b12fdc9dce3dab808f789d71ae3a0a5fc1ed9b999c4"
+      },
+      "validation": [
+        "Independent actual390/1440px review preserves89authored News images and8text-only cards, titles and links; homepage56, Insights31 and briefing3authored images retained.",
+        "Review caught low contrast on initial textcard cream background and an empty featured-card column under forced404. Darker scoped labels/links and higher-specificity single-column text layout repaired both; independent same-version recheck passed.",
+        "Forced404 leaves readable text/links with no broken-image box or generic replacement; failure remains detectable, and same-src recovery restores authored art.",
+        "Normal rendered readiness now requires no injected placeholder artwork, healthy normal images and explicit expected404/recovery behavior. Existing144unit tests pass; final full normal rendered command result is preserved with the private release receipt.",
+        "Latest user direction also adds one shared responsive campaign footer with visible clickable info@creditunionainews.com; representative desktop/mobile review confirms separate reader/commercial content and preserved CAI placement."
+      ],
+      "status": "private-verified-awaiting-scoped-release",
+      "result": "KEEP removal of indiscriminate substitution and explicit text-only fallback. Immediate UX corrections are privately verified; production remains unchanged until this exact candidate is released and live-verified. Campaign placement/email changes are coordinated in the same candidate, not a parallel branch.",
+      "nextTrigger": "At the next listing-card/artwork edit or reported image failure, run the existing normal browser readiness path and inspect mobile/desktop cards. Unexpected broken source assets still block release even when degraded UI is readable. Reuse approved specific art or intentional text; never arbitrary generic substitution.",
+      "rollback": "Revert only this candidate if a verified regression is found; do not restore placeholder injection as a remedy. Preserve real authored art and campaign release history."
     }
   ]
 }

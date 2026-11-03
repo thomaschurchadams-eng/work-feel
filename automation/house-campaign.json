@@ -5,38 +5,61 @@
   "approvalReference": "Sentinel_49f140f977248191b053657128260f4b",
   "approvedOn": "2026-11-03",
   "mode": "ongoing; review and repair each cycle, no fixed rollout horizon",
-  "readerMessage": "Less AI noise. More credit-union relevance. CUAI explains what’s changing, what the evidence says and what it means for your credit union.",
+  "readerMessage": "Less AI noise. More credit-union relevance. CUAI explains what\u2019s changing, what the evidence says and what it means for your credit union.",
   "sponsorMessage": "Reach a credit-union-focused audience with a clearly labeled, useful story.",
   "historicalGrowth": {
     "publicPercent": 176,
     "metric": "CUAI GA4 sessions",
     "property": "520110560",
     "timeZone": "America/New_York",
-    "window": ["2026-09-30", "2026-10-29"],
-    "comparison": ["2026-08-31", "2026-09-29"],
+    "window": [
+      "2026-09-30",
+      "2026-10-29"
+    ],
+    "comparison": [
+      "2026-08-31",
+      "2026-09-29"
+    ],
     "observedOn": "2026-10-30",
     "evidence": "Original analytics-owner observed-report receipt; not a downloaded raw export. Private original counts retained outside the public site.",
     "caveats": "Rounded down to whole percent. Processing revisions possible. Sessions are not verified unique decision-makers, qualified demand or guaranteed future reach. Internal-traffic exclusion coverage is incomplete."
   },
-  "channels": ["cuai-website", "cuai-company-linkedin"],
-  "excluded": ["x", "personal-profiles", "paid-ads", "outbound-email-by-this-owner"],
+  "channels": [
+    "cuai-website",
+    "cuai-company-linkedin"
+  ],
+  "excluded": [
+    "x",
+    "personal-profiles",
+    "paid-ads",
+    "outbound-email-by-this-owner"
+  ],
   "selection": "Only after qualified High news, prepared media and selective Library; preserve all reservations. Sole existing publisher must freshly inspect main queue and provider state before reserving. No mandatory campaign quota.",
-  "preparedItems": [{
-    "id": "linkedin-cuai-sponsorship-invitation-2026-11",
-    "platform": "linkedin",
-    "contentKind": "house-campaign",
-    "campaignId": "cuai-reader-sponsor-2026-11",
-    "status": "prepared",
-    "articleUrl": "https://creditunionainews.com/sponsorships/",
-    "distributionUrl": "https://creditunionainews.com/sponsorships/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-cuai-sponsorship-invitation-2026-11",
-    "trackingStatus": "utm-tagged",
-    "imageUrl": "https://creditunionainews.com/assets/cuai-sponsorship-invitation.png",
-    "imageAlt": "CUAI sponsorship invitation: a useful story, a clearly labeled sponsorship, credit-union relevance and independent reporting.",
-    "copy": "Sponsorship invitation from CreditUnionAI News.\n\nReach a credit-union-focused audience with a clearly labeled, useful story. Explore a defined website sponsorship while preserving independent editorial coverage. Placement, availability, measurement and price are agreed before any commitment; no guaranteed reach.\n\nhttps://creditunionainews.com/sponsorships/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-cuai-sponsorship-invitation-2026-11"
-  }],
+  "preparedItems": [
+    {
+      "id": "linkedin-cuai-sponsorship-invitation-2026-11",
+      "platform": "linkedin",
+      "contentKind": "house-campaign",
+      "campaignId": "cuai-reader-sponsor-2026-11",
+      "status": "prepared",
+      "articleUrl": "https://creditunionainews.com/sponsorships/",
+      "distributionUrl": "https://creditunionainews.com/sponsorships/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-cuai-sponsorship-invitation-2026-11",
+      "trackingStatus": "utm-tagged",
+      "imageUrl": "https://creditunionainews.com/assets/cuai-sponsorship-invitation.png",
+      "imageAlt": "CUAI sponsorship invitation: a useful story, a clearly labeled sponsorship, credit-union relevance and independent reporting.",
+      "copy": "Sponsorship invitation from CreditUnionAI News.\n\nReach a credit-union-focused audience with a clearly labeled, useful story. Explore a defined website sponsorship while preserving independent editorial coverage. Placement, availability, measurement and price are agreed before any commitment; no guaranteed reach.\n\nhttps://creditunionainews.com/sponsorships/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-cuai-sponsorship-invitation-2026-11"
+    }
+  ],
   "publisherHandoff": {
     "ownerConversation": "6a6b2edc-076c-83ea-97b3-048862bd418d",
     "state": "file-only prepared handoff; not contacted, accepted, queued, scheduled or sent",
     "boundary": "No substitute publisher. Existing publisher reads current main policy and applies live destination, provider, reservation, timing, rights, accessibility and immutable tracking gates."
+  },
+  "websitePlacement": {
+    "direction": "Tom: i want this on every page; make info@ email visible instead of hidden behind a button",
+    "implementation": "One shared responsive footer placement on every public site-shell page; keep CAI placement and editorial content. Replace index-only duplicates.",
+    "visibleContact": "info@creditunionainews.com",
+    "inquiryMeaning": "Opens visitor email app; not sent/delivered/booked.",
+    "claimBoundary": "Historical176% and full dated methodology remain only on sponsorship page; no new reach or outcome claims."
   }
 }

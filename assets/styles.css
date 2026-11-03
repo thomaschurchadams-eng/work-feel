@@ -2605,3 +2605,33 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
   body.page-house-campaign .institute-banner-copy{gap:8px}
   body.page-house-campaign .institute-banner strong{font-size:1.12rem}
 }
+
+/* Missing artwork is intentional typography, never a generic image slot. */
+.grid.cards-3 > .card.card--text-only {
+  display:flex;flex-direction:column;align-items:stretch;
+  background:var(--paper-deep);border-top:2px solid var(--navy-deep);
+  padding:22px;gap:12px;
+}
+.grid.cards-3 > .card.card--text-only > * { grid-column:auto; }
+.grid.cards-3 > .card.card--text-only .card-title { font-size:1.6rem;line-height:1.2; }
+.grid.cards-3 > .card.card--text-only .actions { margin-top:auto;padding-top:12px; }
+.grid.cards-3 > .card.card--text-only .meta,
+.grid.cards-3 > .card.card--text-only .tag,
+.grid.cards-3 > .card.card--text-only .label-tag,
+.grid.cards-3 > .card.card--text-only .pill,
+.grid.cards-3 > .card.card--text-only a:not(.btn) { color:#874b28; }
+.grid.cards-3 > .card.card--text-only:first-child { display:flex;grid-template-columns:none; }
+.card img[hidden],.card .card-image[hidden] { display:none; }
+@media(max-width:700px){.grid.cards-3 > .card.card--text-only{padding:20px}}
+
+/* One shared campaign footer; readable content stays ahead of commercial contact. */
+.cuai-house-campaign{background:#fff;border-top:2px solid var(--navy-deep);padding:32px 0}
+.cuai-house-campaign-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.cuai-house-campaign h2{font-family:Georgia,serif;font-size:clamp(1.45rem,2.4vw,2rem);line-height:1.18;margin:10px 0 12px;color:var(--navy-deep)}
+.cuai-house-campaign h3{font-family:Georgia,serif;font-size:1.25rem;line-height:1.25;margin:10px 0 12px;color:var(--navy-deep)}
+.cuai-house-campaign p{margin:8px 0;color:#425261}.cuai-house-campaign .eyebrow,.cuai-house-campaign a{color:#874b28}
+.cuai-house-commercial{border-left:1px solid #c5cdd3;padding-left:32px}.cuai-house-campaign .link{display:inline-block;margin-top:12px;min-height:44px;padding-block:10px}
+.cuai-house-campaign .cuai-campaign-email,.sponsor-email{display:inline-block;font-size:1.1rem;font-weight:700;text-transform:none;letter-spacing:normal;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere;min-height:44px;padding-block:10px}
+.cuai-house-campaign .cuai-campaign-email{color:var(--navy-deep)}.sponsorships-hero .sponsor-email{color:#fff}.sponsor-contact .sponsor-email{color:#874b28}.cuai-house-campaign .cuai-house-note{font-size:.87rem;line-height:1.5}
+.cuai-house-campaign a:focus-visible,.sponsor-email:focus-visible{outline:3px solid #167b88;outline-offset:4px}
+@media(max-width:700px){.cuai-house-campaign-grid{grid-template-columns:1fr;gap:24px}.cuai-house-commercial{border-left:0;border-top:1px solid #c5cdd3;padding:20px 0 0}.cuai-house-campaign{padding:28px 0}}
