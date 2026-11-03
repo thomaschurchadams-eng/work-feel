@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'NCUA Deregulation',
+      headline: 'NCUA Finalizes PPP and Lien Changes, Removes Obsolete Lending Rule',
+      summary:
+        'The NCUA said on November 3 that it is removing an obsolete commercial-lending transition rule, making permanent the regulatory treatment of Paycheck Protection Program loans adopted during the pandemic, and deleting a redundant definition from the federal-credit-union statutory-lien rule. The three documents are scheduled for Federal Register publication on November 4.',
+      impact:
+        'Credit-union commercial-lending, finance, capital, compliance and legal teams should map the changes to 12 CFR 723.9, Parts 702 and 723, and 12 CFR 701.39; confirm that procedures and regulatory references distinguish the removed transition provision from still-applicable lending controls; retain current statutory-lien legal checks; and review the final Federal Register text before changing policy or system rules.',
+      sourceName: 'National Credit Union Administration',
+      sourceUrl:
+        'https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals',
+      date: 'Nov 3, 2026',
+      slug: 'ncua-fourteenth-deregulation-lending-ppp-statutory-lien'
+    },
+    {
       label: 'Interest Rates',
       headline: 'Fed Holds Rates at 3.75%–4%; Two Officials Favor an Increase',
       summary:
@@ -1128,7 +1141,7 @@
 
   // Maintained by the weekday operating cycle. Items expire automatically after seven days.
   const homepageWatchState = {
-    reviewedAt: '2026-11-02T16:02:00-05:00',
+    reviewedAt: '2026-11-03T15:22:00-05:00',
     items: []
   };
 
