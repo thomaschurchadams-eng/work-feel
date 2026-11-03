@@ -22,7 +22,23 @@ module.exports=async function verifyAnalyticsJourneys(browser,base,out,axePath){
   }finally{await context.close();}
  }
  for(const width of [390,1440]){
-  const c=await browser.newContext({viewport:{width,height:844}}),p=await c.newPage();try{await c.route('**/*',r=>new URL(r.request().url()).origin===new URL(base).origin?r.continue():r.abort());await p.goto(base+'/newsletter.html');assert.match(await p.locator('.newsletter-request-note').innerText(),/not connected/);assert.equal(await p.locator('#newsletter-form').count(),0);const link=p.getByRole('link',{name:'Request email updates'});assert.match(await link.getAttribute('href'),/^mailto:info@creditunionainews.com/);assert.equal(await p.locator('body').innerText().then(t=>/Thanks for subscribing|Subscription confirmed/.test(t)),false);results.push({route:'/newsletter.html',width,emailRequestOnly:true,providerConfirmationConnected:false});}finally{await c.close();}
+  const c=await browser.newContext({viewport:{width,height:844}}),p=await c.newPage();try{await c.route('**/*',r=>new URL(r.request().url()).origin===new URL(base).origin?r.continue():r.abort());await p.goto(base+'/newsletter.html');assert.match(await p.locator('.newsletter-request-note').innerText(),/signup.*(?:not available|unavailable)|(?:not available|unavailable).*signup/i);assert.equal(await p.locator('#newsletter-form').count(),0);const link=p.locator('.newsletter-subscribe-action');assert.match(await link.getAttribute('href'),/^mailto:info@creditunionainews.com/);assert.equal(await p.locator('body').innerText().then(t=>/Thanks for subscribing|Subscription confirmed/.test(t)),false);results.push({route:'/newsletter.html',width,emailRequestOnly:true,providerConfirmationConnected:false});}finally{await c.close();}
+ }
+ for(const width of [390,1440]){
+  const c=await browser.newContext({viewport:{width,height:844}}),p=await c.newPage();
+  try{
+   await c.addInitScript(()=>{window.CUAIInternalTraffic=true;localStorage.setItem('cuai_newsletter_signups',JSON.stringify([{email:'reader@example.invalid',firstName:'Example, \"Reader\"',timestamp:'Nov 3, 2026, 12:00'}]));});
+   await c.route('**/*',r=>new URL(r.request().url()).origin===new URL(base).origin&&['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
+   await p.goto(base+'/newsletter-log.html');
+   assert.match(await p.locator('main').innerText(),/not confirmed subscriptions/);
+   assert.doesNotMatch(await p.locator('table').innerText(),/Subscribed At/);
+   const downloadPromise=p.waitForEvent('download');await p.locator('#export-signups').click();const download=await downloadPromise;
+   assert.equal(download.suggestedFilename(),'creditunionai-saved-email-requests.csv');
+   const file=path.join(out,`saved-email-requests-${width}.csv`);await download.saveAs(file);const csv=fs.readFileSync(file,'utf8');
+   assert.equal(csv.split('\n')[0],'Email,First Name,Saved At');assert.equal(csv.split('\n')[1],'"reader@example.invalid","Example, ""Reader""","Nov 3, 2026, 12:00"');assert.doesNotMatch(csv,/Subscribed/);
+   await p.screenshot({path:path.join(out,`saved-email-requests-${width}.png`)});
+   results.push({route:'/newsletter-log.html',width,fixtureOnly:true,savedRequestNotSubscription:true,exportFilename:download.suggestedFilename(),exportHeader:csv.split('\n')[0]});
+  }finally{await c.close();}
  }
  fs.writeFileSync(path.join(out,'analytics-journeys.json'),JSON.stringify(results,null,2)+'\n');
 };

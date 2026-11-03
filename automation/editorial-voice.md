@@ -38,3 +38,7 @@ Do not use filler such as “in today’s rapidly evolving landscape,” “game
 ## Functional relevance
 
 Name the affected roles naturally in the article. Do not bolt on a generic “What this means for credit unions” section when the relevance can be integrated into the reporting.
+
+## Visitor-facing interface copy
+
+Keep a sentence when it helps a visitor choose, act, understand a material limit or assess evidence. Remove repeated control instructions, obvious mechanics and internal implementation notes. Prefer a clear label or visible destination over explaining the same action again. Preserve material offer terms, sponsorship labels, editorial independence, privacy warnings, metric context and honest availability/confirmation states. An email link needs no generic booking/payment disclaimer; an unavailable signup must still be clear. Check the actual first-time journey and latest feedback, rather than treating a passing layout check as copy approval.

@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CreditUnionAI News | Newsletter Log</title>
   <link rel="canonical" href="https://creditunionainews.com/newsletter-log.html">
-  <meta name="description" content="Newsletter Signups (Local Preview). These signups are stored in this browser only (localStorage). For production, we will connect this form to a real…">
+  <meta name="description" content="Saved email requests in this browser. These records do not confirm a subscription.">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -45,8 +45,8 @@
   <main id="main-content" tabindex="-1">
     <section class="section">
       <div class="container">
-        <h1 style="color:#0b1f3b; margin-bottom:10px" class="page-title">Newsletter Signups (Local Preview)</h1>
-        <p class="lead">These signups are stored in this browser only (localStorage). For production, we will connect this form to a real email platform.</p>
+        <h1 style="color:#0b1f3b; margin-bottom:10px" class="page-title">Saved email requests</h1>
+        <p class="lead">Records saved in this browser. These are not confirmed subscriptions.</p>
         <div class="signup-actions" style="margin:16px 0;">
           <button type="button" class="signup-action-btn" id="export-signups">Export CSV</button>
           <button type="button" class="signup-action-btn ghost" id="clear-signups">Clear log</button>
@@ -57,12 +57,12 @@
               <tr>
                 <th style="text-align:left; padding:12px;">Email</th>
                 <th style="text-align:left; padding:12px;">First Name</th>
-                <th style="text-align:left; padding:12px;">Subscribed At</th>
+                <th style="text-align:left; padding:12px;">Saved at</th>
               </tr>
             </thead>
             <tbody id="signup-table-body"></tbody>
           </table>
-          <p id="signup-empty" class="muted-text" style="padding:12px; margin:0;">No signups captured on this browser yet.</p>
+          <p id="signup-empty" class="muted-text" style="padding:12px; margin:0;">No saved email requests in this browser.</p>
         </div>
       </div>
     </section>
