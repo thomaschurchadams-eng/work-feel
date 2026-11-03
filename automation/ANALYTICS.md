@@ -1,5 +1,11 @@
 # Analytics measurement
 
+## Approved CUAI house campaign
+
+The November 3 campaign is defined in `house-campaign.json`, independently of the existing CAI promotion. `cuai_house_view` records at least 50% visible once per surface/page load; `cuai_house_click` records the first click per link/page load. Compare clicks and viewable impressions for the same campaign, message, placement and matched dates; these are not unique people or a strict cohort funnel. `cuai_sponsor_inquiry_intent` records one mailto opening per page load, never a sent email, accepted inquiry, booking or sale. No email addresses, message text or organization details enter these event payloads. Known local/internal/automated traffic is suppressed by the existing sender and guarded tag bootstrap on these four campaign routes. Filter effectiveness and actual collected events still require observed production evidence.
+
+Public historical growth is the approved conservative 176%, CUAI GA4 sessions for September 30–October 29 versus August 31–September 29, 2026, America/New_York. The original October 30 analytics-owner observed-report receipt supports it; it is not a raw export or a fresh GA verification. Underlying counts remain private. Preserve exact dates, processing/internal-exclusion uncertainty and the distinction from unique qualified decision makers or guaranteed reach. Later unmatched CUAI/CAI banner windows cannot update this claim. Each existing review cycle checks actual journeys and comparable evidence, repairs failures immediately and reports unknowns; no new analytics job or schedule is created.
+
 CreditUnionAI News uses GA4 measurement ID `G-RF6EFK06G5` and Vercel Web Analytics. The shared `assets/app.js` layer sends privacy-safe editorial events to GA4 when `gtag` is available.
 
 ## Publication requirements

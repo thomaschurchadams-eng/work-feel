@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RF6EFK06G5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RF6EFK06G5');
-</script>
+  <script src="/assets/measurement-bootstrap.js"></script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +18,7 @@
   <meta name="twitter:image" content="https://creditunionainews.com/assets/download.png">
   <link rel="stylesheet" href="assets/styles.css">
 <style>.weekly-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:2rem;align-items:center}.weekly-grid img{display:block;width:100%;height:auto;border-radius:8px}.weekly-grid h2{font-size:clamp(1.7rem,3vw,2.6rem);line-height:1.15}.weekly-grid .btn-outline{color:#142536;border-color:#142536}.weekly-grid a:focus-visible{outline:3px solid #167b88;outline-offset:5px}@media(max-width:700px){.weekly-grid{grid-template-columns:1fr;gap:1rem}}</style></head>
-<body class="page-home">
+<body class="page-home page-house-campaign">
         <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -50,13 +42,13 @@
   </header>
 
   <main id="main-content" tabindex="-1">
-    <section class="hero">
+    <section class="hero" data-house-surface="reader" data-house-placement="home-hero">
       <div class="container hero-grid">
         <div>
           <p class="tag">CreditUnionAI News</p>
-          <h1 class="page-title">News and practical insights for credit union leaders</h1>
-          <p>AI, core technology, payments, and regulation for credit union leaders, fintechs, and service providers.</p>
-          <div class="button-row"><a class="btn btn-primary" href="newsletter.html">Explore Weekly Briefings</a><a class="btn btn-outline" href="news.html">Read Latest News</a></div>
+          <h1 class="page-title">Less AI noise. More credit-union relevance.</h1>
+          <p>CUAI explains what’s changing, what the evidence says and what it means for your credit union.</p>
+          <div class="button-row"><a class="btn btn-primary" data-house-link="reader" href="/news.html">Read the latest reporting</a><a class="btn btn-outline" data-house-link="reader" href="/insights.html">Explore practical insights</a></div>
         </div>
       </div>
     </section>
@@ -523,7 +515,7 @@
       </div>
     </section>
 
-    <section class="growth-band"><div class="container"><div class="growth-band-shell"><div><p class="eyebrow">CreditUnionAI Weekly Briefing</p><h2 class="section-title">A useful briefing to revisit and share.</h2><p>Watch the latest published CUAI Weekly and follow its sources. Browse coverage for your team, institution, or credit-union clients.</p></div><div class="button-row"><a class="btn btn-primary" href="/newsletter.html">Browse web briefings</a></div></div></div></section>
+    <aside class="house-invitation section" aria-labelledby="sponsor-invitation" data-house-surface="sponsor" data-house-placement="home-bottom"><div class="container"><div class="house-invitation-shell"><div><p class="eyebrow">Sponsorship invitation · CUAI house promotion</p><h2 id="sponsor-invitation" class="section-title">Reach a credit-union-focused audience with a clearly labeled, useful story.</h2><p>Explore a defined sponsorship with clear disclosure and independent editorial coverage.</p></div><a class="btn btn-primary" data-house-link="sponsor" href="/sponsorships/">Explore sponsorships</a></div></div></aside>
 
 
   </main>

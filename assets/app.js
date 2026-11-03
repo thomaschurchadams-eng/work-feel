@@ -1810,6 +1810,39 @@
     };
 
     const body = document.body;
+    // House promotion remains distinct from CAI ads and independent editorial.
+    document.querySelectorAll('[data-house-surface]').forEach(surface => {
+      const message = surface.dataset.houseSurface;
+      const placement = surface.dataset.housePlacement;
+      if (!['reader', 'sponsor'].includes(message) || !['home-hero', 'home-bottom', 'news-bottom', 'insights-bottom', 'sponsorship-hero'].includes(placement)) return;
+      const fixed = { campaign_id: 'cuai-reader-sponsor-2026-11', message_id: message, placement };
+      if (typeof IntersectionObserver === 'function') {
+        const observer = new IntersectionObserver(entries => {
+          if (entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= 0.5)) {
+            sendEvent('cuai_house_view', fixed);
+            observer.disconnect();
+          }
+        }, { threshold: [0.5] });
+        observer.observe(surface);
+      }
+      surface.querySelectorAll('[data-house-link]').forEach(link => {
+        let clicked = false;
+        link.addEventListener('click', () => {
+          if (clicked) return;
+          clicked = true;
+          sendEvent('cuai_house_click', fixed);
+        });
+      });
+    });
+    let inquirySent = false;
+    document.querySelectorAll('[data-house-link="inquiry"]').forEach(link => {
+      link.addEventListener('click', () => {
+        if (inquirySent) return;
+        inquirySent = true;
+        sendEvent('cuai_sponsor_inquiry_intent', { campaign_id: 'cuai-reader-sponsor-2026-11', placement: 'sponsorship-page' });
+      });
+    });
+
     const path = window.location.pathname;
     const articleBody = document.querySelector('.article-body');
     const isArticle = Boolean(articleBody);

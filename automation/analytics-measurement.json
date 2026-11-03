@@ -97,7 +97,10 @@
     "roi_view": "One visible standalone calculator view per page load. Private implementation remains dry-run.",
     "roi_start": "One calculator workflow start per page load; denominator for completion rate.",
     "roi_calculation_complete": "One successful valid calculation per started page load; invalid inputs and repeated calculations do not add completions. No financial values are sent.",
-    "roi_feedback_click": "One feedback entry opening per calculator page load; not delivery or resolution."
+    "roi_feedback_click": "One feedback entry opening per calculator page load; not delivery or resolution.",
+    "cuai_house_view": "At least half of one approved CUAI house surface is visible; once per surface per page load, fixed campaign/message/placement only. Distinct from CAI ads and editorial views.",
+    "cuai_house_click": "First click on a house link per link per page load; fixed campaign/message/placement only. Placement click rate is directional, not a unique-human conversion funnel.",
+    "cuai_sponsor_inquiry_intent": "One sponsorship mailto opening per page load. Not an email sent, delivered inquiry, booking or sale."
   },
   "bodyDataAttributes": {
     "data-section": "news or insights",
@@ -133,7 +136,7 @@
     "caiProperty": "538586591",
     "calculatorStatus": "private dry-run; hosted receipt and approved consent/tag activation pending",
     "confirmedSubscriptionStatus": "unconnected; mailto request is neither enrollment nor delivery",
-    "internalTests": "Private publication events suppressed for loopback, webdriver, CUAIInternalTraffic or cuai_internal_traffic local marker. Existing GA admin internal/developer filter coverage must be verified independently. Never silently subtract undated historic test counts. On Alerts, PSECU, Plaid and Briefings, the shared tag bootstrap also skips automatic pageviews/tag loading off the production host or when internal/automated markers are present. This does not certify GA admin filters or alter legacy bootstrap on other routes.",
+    "internalTests": "Private publication events suppressed for loopback, webdriver, CUAIInternalTraffic or cuai_internal_traffic local marker. Existing GA admin internal/developer filter coverage must be verified independently. Never silently subtract undated historic test counts. On Alerts, PSECU, Plaid and Briefings, the shared tag bootstrap also skips automatic pageviews/tag loading off the production host or when internal/automated markers are present. This does not certify GA admin filters or alter legacy bootstrap on other routes. Campaign homepage, News/Insights indexes and sponsorship page also use the guarded bootstrap; this does not certify historic GA exclusion coverage.",
     "completionDenominator": "Distinct per-page roi_start workflows; distinct per-page valid roi_calculation_complete numerator. Repeated calculations, users, sessions and page loads are different units.",
     "signupDenominator": "Confirmed provider opt-ins divided by eligible subscription starts in a matched window only after both are connected; never newsletter_intent or briefing_open as confirmed opt-ins.",
     "crossPropertyJoin": "Compare matched dates/timezone, source/medium/campaign/placement/variant. Generic clicks are not added to cell events. A click is not necessarily one destination session. Unknown destination or exclusion coverage remains null, never zero.",
