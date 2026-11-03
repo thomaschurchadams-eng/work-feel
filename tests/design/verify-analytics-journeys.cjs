@@ -41,6 +41,7 @@ module.exports=async function verifyAnalyticsJourneys(browser,base,out,axePath){
     results.push({route:'/newsletter-log.html',width,redirectedTo:'/newsletter.html',legacyLogExposed:false,fixtureDownloadExercised:false});
     continue;
    }
+   assert.ok(['localhost','127.0.0.1','[::1]'].includes(new URL(base).hostname),'A hosted legacy-log route must stay redirected; CSV UI checks are local fixtures only');
    assert.match(await p.locator('main').innerText(),/not confirmed subscriptions/);
    assert.doesNotMatch(await p.locator('table').innerText(),/Subscribed At/);
    const downloadPromise=p.waitForEvent('download');await p.locator('#export-signups').click();const download=await downloadPromise;
