@@ -1,16 +1,78 @@
 {
-  "version": 3,
+  "version": 4,
   "privacy": {
-    "prohibitedParameters": ["email", "first_name", "last_name", "full_name", "article_text", "form_value"],
+    "prohibitedParameters": [
+      "email",
+      "first_name",
+      "last_name",
+      "full_name",
+      "article_text",
+      "form_value"
+    ],
     "rule": "Never send personally identifiable information or free-form user input to analytics."
   },
   "editorialDimensions": {
-    "content_section": ["news", "insights", "alerts", "site"],
-    "editorial_function": ["board-strategy", "lending-collections", "payments-deposits", "risk-compliance", "it-data-cybersecurity", "operations", "member-service", "marketing-growth", "finance-treasury", "hr-training", "vendor-management"],
-    "technology": ["industry-development", "generative-ai", "agents-automation", "fraud-analytics", "identity-biometrics", "core-api-cloud", "data-decisioning", "conversational-ai", "personalization", "realtime-embedded-finance", "workforce-learning", "regtech-monitoring", "privacy-security"],
-    "content_format": ["breaking-brief", "reported-news", "analysis", "case-study", "interview", "comparison", "checklist", "explainer", "data-brief", "opinion", "weekly-roundup"],
-    "audience": ["board", "executive", "functional-leader", "practitioner", "frontline"],
-    "maturity": ["breaking", "emerging", "practical-now", "scaling", "long-term"]
+    "content_section": [
+      "news",
+      "insights",
+      "alerts",
+      "site"
+    ],
+    "editorial_function": [
+      "board-strategy",
+      "lending-collections",
+      "payments-deposits",
+      "risk-compliance",
+      "it-data-cybersecurity",
+      "operations",
+      "member-service",
+      "marketing-growth",
+      "finance-treasury",
+      "hr-training",
+      "vendor-management"
+    ],
+    "technology": [
+      "industry-development",
+      "generative-ai",
+      "agents-automation",
+      "fraud-analytics",
+      "identity-biometrics",
+      "core-api-cloud",
+      "data-decisioning",
+      "conversational-ai",
+      "personalization",
+      "realtime-embedded-finance",
+      "workforce-learning",
+      "regtech-monitoring",
+      "privacy-security"
+    ],
+    "content_format": [
+      "breaking-brief",
+      "reported-news",
+      "analysis",
+      "case-study",
+      "interview",
+      "comparison",
+      "checklist",
+      "explainer",
+      "data-brief",
+      "opinion",
+      "weekly-roundup"
+    ],
+    "audience": [
+      "board",
+      "executive",
+      "functional-leader",
+      "practitioner",
+      "frontline"
+    ],
+    "maturity": [
+      "breaking",
+      "emerging",
+      "practical-now",
+      "scaling",
+      "long-term"
+    ]
   },
   "events": {
     "article_view": "A full News or Insights article loads.",
@@ -18,7 +80,7 @@
     "scroll_depth": "The reader reaches 25, 50, 75 or 90 percent.",
     "source_click": "The reader opens an external source from an article.",
     "related_content_click": "The reader follows an internal related-coverage link.",
-    "newsletter_intent": "The reader clicks a newsletter or subscribe action.",
+    "newsletter_intent": "From publication-v2: a reader opens a subscription email request. Earlier versions also counted web-briefing navigation; do not compare as confirmed signups.",
     "outbound_click": "The reader opens another external destination.",
     "cai_banner_impression": "At least half of a labeled Cooperative AI Institute promotional banner becomes visible.",
     "cai_banner_click": "The reader clicks a labeled Cooperative AI Institute promotional banner.",
@@ -29,7 +91,13 @@
     "cai_bn_click_hdr_v1a": "Header click for current-training message A.",
     "cai_bn_click_hdr_v1b": "Header click for current-readiness message B.",
     "cai_bn_click_ctx_v1a": "Contextual click for current-training message A.",
-    "cai_bn_click_ctx_v1b": "Contextual click for current-readiness message B."
+    "cai_bn_click_ctx_v1b": "Contextual click for current-readiness message B.",
+    "briefing_open": "A reader opens the web-briefing page; not an email signup.",
+    "newsletter_subscription_confirmed": "Provider-confirmed opt-in only, deduplicated by the provider confirmation receipt. UNCONNECTED: no enrollment backend or confirmation callback exists; no browser event is emitted.",
+    "roi_view": "One visible standalone calculator view per page load. Private implementation remains dry-run.",
+    "roi_start": "One calculator workflow start per page load; denominator for completion rate.",
+    "roi_calculation_complete": "One successful valid calculation per started page load; invalid inputs and repeated calculations do not add completions. No financial values are sent.",
+    "roi_feedback_click": "One feedback entry opening per calculator page load; not delivery or resolution."
   },
   "bodyDataAttributes": {
     "data-section": "news or insights",
@@ -59,5 +127,16 @@
     "operationalDays": 7,
     "trendDays": 28,
     "rule": "Use the 7-day view for current operations and the 28-day view for directional decisions. Do not treat pending or unavailable metrics as zero."
+  },
+  "measurementBoundaries": {
+    "cuaiProperty": "520110560",
+    "caiProperty": "538586591",
+    "calculatorStatus": "private dry-run; hosted receipt and approved consent/tag activation pending",
+    "confirmedSubscriptionStatus": "unconnected; mailto request is neither enrollment nor delivery",
+    "internalTests": "Private publication events suppressed for loopback, webdriver, CUAIInternalTraffic or cuai_internal_traffic local marker. Existing GA admin internal/developer filter coverage must be verified independently. Never silently subtract undated historic test counts. On Alerts, PSECU, Plaid and Briefings, the shared tag bootstrap also skips automatic pageviews/tag loading off the production host or when internal/automated markers are present. This does not certify GA admin filters or alter legacy bootstrap on other routes.",
+    "completionDenominator": "Distinct per-page roi_start workflows; distinct per-page valid roi_calculation_complete numerator. Repeated calculations, users, sessions and page loads are different units.",
+    "signupDenominator": "Confirmed provider opt-ins divided by eligible subscription starts in a matched window only after both are connected; never newsletter_intent or briefing_open as confirmed opt-ins.",
+    "crossPropertyJoin": "Compare matched dates/timezone, source/medium/campaign/placement/variant. Generic clicks are not added to cell events. A click is not necessarily one destination session. Unknown destination or exclusion coverage remains null, never zero.",
+    "reviewAfter": "Seven complete days after an approved release, excluding internal tests; prepare baseline now, do not start the clock from this private build."
   }
 }

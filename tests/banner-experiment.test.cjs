@@ -6,7 +6,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const app = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
 const styles = fs.readFileSync(path.join(root, 'assets/styles.css'), 'utf8');
-const reportingApi = fs.readFileSync(path.join(root, 'api/ga4-metrics.js'), 'utf8');
+const { CUAI_EVENTS } = require('../api/ga4-metrics.js')._test;
 const plan = JSON.parse(fs.readFileSync(path.join(root, 'automation/cai-banner-experiment.json'), 'utf8'));
 
 test('CAI experiment assigns one stable message and renders both placements', () => {
@@ -35,7 +35,7 @@ test('each banner carries privacy-safe placement and variant attribution', () =>
 test('GA4 event names remain valid and the plan prevents an unverified certification claim', () => {
   for (const eventName of [...plan.measurement.genericEvents, ...plan.measurement.cellEvents]) {
     assert.ok(eventName.length <= 40, `${eventName} exceeds GA4's 40-character limit`);
-    assert.match(reportingApi, new RegExp(`['\"]${eventName}['\"]`));
+    assert.ok(CUAI_EVENTS.includes(eventName), `${eventName} must be requested by reporting`);
   }
   assert.match(plan.claimBoundary, /does not claim.*formal certification/i);
   assert.equal(plan.audienceAllocation.personalData, false);
