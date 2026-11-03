@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-03",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -34,6 +34,14 @@
         "primaryFunctionalAudience": "Auto-lending, pricing, credit-risk, compliance and finance leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "alert",
+        "title": "NCUA Finalizes PPP and Lien Changes, Removes Obsolete Lending Rule",
+        "url": "https://creditunionainews.com/alerts/#ncua-fourteenth-deregulation-lending-ppp-statutory-lien",
+        "source": "National Credit Union Administration",
+        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
+        "operatingImplication": "Credit-union commercial-lending, finance, capital, compliance and legal teams should map the changes to 12 CFR 723.9, Parts 702 and 723, and 12 CFR 701.39; confirm that procedures and regulatory references distinguish the removed transition provision from still-applicable lending controls; retain current statutory-lien legal checks; and review the final Federal Register text before changing policy or system rules."
       }
     ],
     "rejections": [
@@ -82,12 +90,12 @@
         "reason": "useful strategy commentary but not a distinct evidence-backed operating development"
       }
     ],
-    "status": "one-article-cycle-complete",
+    "status": "article-and-alert-cycle-complete",
     "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the move beyond uniform rate tiers and the evidence required to judge a member-facing pricing outcome. Selection, sourcing, fair-lending and classification gates were unchanged.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
     "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
-    "updatedAt": "2026-11-03T07:15:00-05:00"
+    "updatedAt": "2026-11-03T15:22:00-05:00"
   },
   "history": [
     {
@@ -131,16 +139,46 @@
         }
       ],
       "rejections": [
-        {"title": "PenFed Reports Third-Quarter Lending and Earnings Growth", "reason": "credible credit-union financial results, but less connected to the active operating-control gap than the selected mortgage-agent acquisition and follow-on evidence tool"},
-        {"title": "Michigan Legacy Reports 118 Mortgages Through Its 4.99% Program", "reason": "a useful affordability case study, but projected lifetime savings are modeled customer figures and the program is narrower than the selected workflow change"},
-        {"title": "NCUA Proposes Stablecoin Call Report Schedule", "reason": "the primary proposal dates to October 16 and the current October 30 development is an advocacy comment rather than a final reporting requirement"},
-        {"title": "NCUA Charters All Peoples United Federal Credit Union", "reason": "an important financial-inclusion development with limited operating results at charter stage"},
-        {"title": "NCUA Charters Accion Opportunity Federal Credit Union", "reason": "an important small-business access development with limited operating results at charter stage"},
-        {"title": "Veridian Adds Allstate Identity Protection", "reason": "a vendor-and-credit-union announcement without measured enrollment, fraud-loss, recovery or member-outcome evidence"},
-        {"title": "NCUA October Enforcement Actions", "reason": "routine individual enforcement notices without a broader new operating requirement or reusable control signal"},
-        {"title": "U.S. Real GDP Grows 3.4 Percent", "reason": "a broad macroeconomic release without a distinct new credit-union technology or operating decision"},
-        {"title": "Georgia’s Own Names a New Chief Executive", "reason": "a routine personnel appointment that does not clear the publication threshold"},
-        {"title": "DCUC Seeks Commissary Interchange Amendment", "reason": "current advocacy without an enacted policy change or completed operating consequence"}
+        {
+          "title": "PenFed Reports Third-Quarter Lending and Earnings Growth",
+          "reason": "credible credit-union financial results, but less connected to the active operating-control gap than the selected mortgage-agent acquisition and follow-on evidence tool"
+        },
+        {
+          "title": "Michigan Legacy Reports 118 Mortgages Through Its 4.99% Program",
+          "reason": "a useful affordability case study, but projected lifetime savings are modeled customer figures and the program is narrower than the selected workflow change"
+        },
+        {
+          "title": "NCUA Proposes Stablecoin Call Report Schedule",
+          "reason": "the primary proposal dates to October 16 and the current October 30 development is an advocacy comment rather than a final reporting requirement"
+        },
+        {
+          "title": "NCUA Charters All Peoples United Federal Credit Union",
+          "reason": "an important financial-inclusion development with limited operating results at charter stage"
+        },
+        {
+          "title": "NCUA Charters Accion Opportunity Federal Credit Union",
+          "reason": "an important small-business access development with limited operating results at charter stage"
+        },
+        {
+          "title": "Veridian Adds Allstate Identity Protection",
+          "reason": "a vendor-and-credit-union announcement without measured enrollment, fraud-loss, recovery or member-outcome evidence"
+        },
+        {
+          "title": "NCUA October Enforcement Actions",
+          "reason": "routine individual enforcement notices without a broader new operating requirement or reusable control signal"
+        },
+        {
+          "title": "U.S. Real GDP Grows 3.4 Percent",
+          "reason": "a broad macroeconomic release without a distinct new credit-union technology or operating decision"
+        },
+        {
+          "title": "Georgia’s Own Names a New Chief Executive",
+          "reason": "a routine personnel appointment that does not clear the publication threshold"
+        },
+        {
+          "title": "DCUC Seeks Commissary Interchange Amendment",
+          "reason": "current advocacy without an enacted policy change or completed operating consequence"
+        }
       ],
       "status": "two-article-cycle-complete",
       "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the News headline centers the acquired production mortgage workflow and the Insight headline centers a separate provisional-credit evidence clock and accountable member outcome. Selection, sourcing, legal-evidence and classification gates were unchanged.",
