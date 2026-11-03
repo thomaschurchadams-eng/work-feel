@@ -1489,15 +1489,16 @@
     exportSignupsBtn.addEventListener('click', () => {
       const entries = loadSignups();
       if (!entries.length) return;
-      const header = 'Email,First Name,Subscribed At\n';
+      const header = 'Email,First Name,Saved At\n';
+      const csvCell = value => `"${String(value ?? '').replace(/"/g, '""')}"`;
       const rows = entries
-        .map((entry) => `${entry.email},${entry.firstName || ''},${entry.timestamp || ''}`)
+        .map(entry => [entry.email, entry.firstName, entry.timestamp].map(csvCell).join(','))
         .join('\n');
       const blob = new Blob([header + rows], { type: 'text/csv' });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'creditunionai-newsletter-signups.csv';
+      link.download = 'creditunionai-saved-email-requests.csv';
       link.click();
       URL.revokeObjectURL(url);
     });
@@ -1610,7 +1611,6 @@
           <h3>Reach a credit-union-focused audience with a clearly labeled, useful story.</h3>
           <p>Discuss a defined website sponsorship. <a data-house-link="sponsor" href="/sponsorships/">See the scope and editorial safeguards.</a></p>
           <a class="cuai-campaign-email" data-house-link="inquiry" href="mailto:info@creditunionainews.com?subject=CUAI%20sponsorship%20inquiry">info@creditunionainews.com</a>
-          <p class="cuai-house-note">Opens your email app. An inquiry does not book a placement or commit you to a purchase.</p>
         </div>
       </div>`;
     footer.before(invitation);
