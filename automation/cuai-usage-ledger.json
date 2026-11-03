@@ -4144,6 +4144,52 @@
       ],
       "summary": "Verified-operations run 41549877758 failed at the operate stage because the read-only ga4-metrics request exceeded its 25-second timeout. The attempt-1 receipt proves authentication was verified, production exactly matched SHA aefc7303e31ca72539162aedfb91e0c8fbe97cc1, actions and reconciliations were empty, and no external write had an ambiguous outcome. Its Buffer receipt independently confirmed the already-sent November 2 company-page item, exact post ID, approved destination and preserved UTM URL; no distribution retry was authorized or attempted. Later verified-operations run 41667681223 on current main completed with errors=[], actions=[] and status=verified, proving the GA4/source path recovered without intervention. Current main 389b02d445a2a71d4e048c9484763602a5107889 is READY in Production with the canonical domain assigned, no runtime errors in the available 24-hour error view, and the November 3 article, homepage listing and image all return HTTP 200. The original incident key is closed once. automation/recovery/README.md is absent from current main, so no unreleased recovery code or shared-checkpoint adapter was used. Durable prevention recommendation: if this read-only timeout pattern recurs, add a bounded idempotent retry only for source reads while preserving fail-closed write handling and never retrying an ambiguous provider action.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-03T15:24:00-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded November 3 editorial portfolio, Alert, homepage-freshness, analytics, reliability, approved-house-campaign and handoff review after the recorded daily publisher outcome.",
+      "status": "success-with-alert",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 191,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 1,
+        "portfolioArticlesReviewed": 89,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 3,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "qualifiedAlertsPublished": 1,
+        "homepageFreshnessWrites": 1,
+        "dailyHistoryEntriesPreserved": 74,
+        "analyticsReadsBlocked": 3,
+        "houseCampaignSurfacesReviewed": 4,
+        "houseCampaignPreparedItemsObserved": 1,
+        "houseCampaignQueueItemsObserved": 0,
+        "socialSentStatesConsumed": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "operationalLearning": {
+        "issue": "The November 3 NCUA package was a same-day, primary-source, credit-union-specific change that arrived after the publisher cycle; leaving the homepage on an evergreen fallback would miss a qualified operating development.",
+        "correction": "Added one Alert and the matching current-day state record, keeping the full-article package unchanged. The approved reader/sponsorship campaign was inspected as released website state; its one LinkedIn item remains prepared only, with no queue or provider delivery evidence.",
+        "controllingVersion": "NCUA release dated November 3, 2026; main before the Alert package was 5c234f4eed941084fafd55c318bcdf12ff2bde83.",
+        "owner": "cuai-operating-system for Alert/homepage state; daily-publisher remains sole owner of any future house-campaign reservation.",
+        "test": "Syntax and JSON parsing passed; the exact live homepage, sponsorship page and current article returned HTTP 200 before the change; production analytics endpoints remained blocked by Vercel Authentication 401. Post-merge production and rendered Alert/ticker/homepage checks are required before completion.",
+        "decision": "keep",
+        "nextTrigger": "On the next weekday, expire or replace the Alert only under the 72-hour and non-duplication rules; do not treat prepared campaign files as queued, sent or outcome-verified."
+      },
+      "summary": "Consumed the completed Standard News handoff for Credit Union of Colorado auto-loan pricing and the completed no-write recovery of a single read-only GA4 timeout. The week is 3 of 8 articles. The 89-article portfolio's latest 15 remain 10 News and 5 Insights across five reported-news items, five explainers, three data briefs and two case studies; all 15 beats are distinct. Risk/compliance appears in 12 and operations in 11, while HR and board strategy appear once each. Preserve the next candidate on AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. Published one same-day NCUA Alert covering removal of obsolete commercial-lending transition text, permanent PPP-loan regulatory treatment and a redundant statutory-lien definition, with no full article or social action. The November 2 LinkedIn item is already durably sent once; today's Standard article created none. The approved house campaign is technically live on the website and has one prepared LinkedIn asset, but no queue item or provider receipt, so no adoption or performance claim was made. GA4, Search Console and Buffer reads remain blocked by Vercel Authentication 401; the latest trusted audience/search snapshot remains October 2. No external contact, spend, new social post, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
