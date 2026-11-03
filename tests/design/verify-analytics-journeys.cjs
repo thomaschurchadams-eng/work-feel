@@ -29,7 +29,18 @@ module.exports=async function verifyAnalyticsJourneys(browser,base,out,axePath){
   try{
    await c.addInitScript(()=>{window.CUAIInternalTraffic=true;localStorage.setItem('cuai_newsletter_signups',JSON.stringify([{email:'reader@example.invalid',firstName:'Example, \"Reader\"',timestamp:'Nov 3, 2026, 12:00'}]));});
    await c.route('**/*',r=>new URL(r.request().url()).origin===new URL(base).origin&&['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
-   await p.goto(base+'/newsletter-log.html');
+   const logResponse=await p.goto(base+'/newsletter-log.html');
+   if(new URL(p.url()).pathname==='/newsletter.html'){
+    // Production intentionally redirects this legacy browser-only utility.
+    // Verify the real route contract; do not expose it or pretend a CSV UI ran.
+    const rule=JSON.parse(fs.readFileSync(path.join(__dirname,'../../vercel.json'),'utf8')).redirects.find(r=>r.source==='/newsletter-log.html');
+    assert.equal(rule?.destination,'/newsletter.html');assert.equal(rule.permanent,true);assert.equal(logResponse.status(),200);
+    const previous=logResponse.request().redirectedFrom();assert.ok(previous);assert.equal(new URL(previous.url()).pathname,'/newsletter-log.html');
+    assert.ok([301,308].includes((await previous.response()).status()));
+    assert.equal(await p.locator('.newsletter-hero h1').count(),1);assert.equal(await p.locator('#newsletter-form').count(),0);assert.equal(await p.locator('#signup-table-body').count(),0);
+    results.push({route:'/newsletter-log.html',width,redirectedTo:'/newsletter.html',legacyLogExposed:false,fixtureDownloadExercised:false});
+    continue;
+   }
    assert.match(await p.locator('main').innerText(),/not confirmed subscriptions/);
    assert.doesNotMatch(await p.locator('table').innerText(),/Subscribed At/);
    const downloadPromise=p.waitForEvent('download');await p.locator('#export-signups').click();const download=await downloadPromise;
