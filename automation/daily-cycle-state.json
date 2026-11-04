@@ -6,98 +6,233 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-03",
-    "fullArticleCount": 1,
-    "alertCount": 1,
+    "date": "2026-11-04",
+    "fullArticleCount": 0,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "deal-level-auto-loan-pricing",
-      "digital-personalization-member-websites",
-      "bank-lending-standards-and-demand",
-      "atm-surcharge-fee-sensitivity",
-      "credit-union-wellbeing-and-financial-education",
-      "credit-union-mergers-and-conversions",
-      "digital-banking-system-conversions",
-      "fintech-leadership",
-      "ai-assisted-origination-fraud",
-      "credit-union-financial-performance",
-      "stablecoin-regulatory-reporting",
-      "credit-union-ai-strategy-commentary"
+      "credit-union-workforce-scheduling",
+      "credit-union-prudential-regulation",
+      "insurance-provider-cyber-recovery",
+      "consumer-account-acquisition",
+      "lending-and-balance-sheet-partnerships",
+      "core-system-conversions",
+      "ai-platform-provenance",
+      "advocacy-crisis-readiness",
+      "workplace-ai-access-controls",
+      "auto-refinancing-promotions",
+      "us-credit-union-deregulation",
+      "digital-banking-payment-cutovers"
     ],
-    "publications": [
+    "publications": [],
+    "candidateEvaluations": [
       {
-        "type": "article",
+        "title": "OCCU expands its 32-hour workweek",
+        "sourceUrl": "https://myoccu.org/learn/press-center/occu-expands-32-hour-workweek-deepening-investment-employees-and-local",
+        "sourceDate": "2026-10-29",
         "classification": "News",
-        "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
-        "url": "https://creditunionainews.com/news/credit-union-colorado-ai-auto-loan-pricing.html",
-        "primaryFunctionalAudience": "Auto-lending, pricing, credit-risk, compliance and finance leaders",
         "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
+        "status": "shortlisted-not-production-cleared",
+        "rationale": "Named credit-union phased workforce change and reported call-center results serve a thin HR audience. Official announcement is October 29, not today's trade re-report; results are self-reported, not causal proof. Final scoring/drafting stopped at the rendering blocker."
       },
       {
-        "type": "alert",
-        "title": "NCUA Finalizes PPP and Lien Changes, Removes Obsolete Lending Rule",
-        "url": "https://creditunionainews.com/alerts/#ncua-fourteenth-deregulation-lending-ppp-statutory-lien",
-        "source": "National Credit Union Administration",
+        "title": "PRA and FCA open discussion on the UK credit-union regime",
+        "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/credit-unions-supporting-sustainable-growth-and-resilience-discussion-paper",
+        "sourceDate": "2026-11-03",
+        "classification": "News",
+        "promotionPriority": "Standard",
+        "status": "research-candidate-not-production-cleared",
+        "rationale": "Primary joint discussion paper, March 5 2027 response deadline, and material capital/governance options. UK scope only; no committed policy change or U.S. requirement. Not selected or scored for production before the blocker."
+      },
+      {
+        "title": "TruStage November 3 recovery update",
+        "sourceUrl": "https://www.trustage.com/outage/business/credit-union",
+        "sourceDate": "2026-11-03",
+        "status": "not-selected",
+        "rationale": "New bulk lending-claim intake and staged capability detail, but much of the continuing partial-recovery thesis overlaps October 20 coverage. A new full article would require a sharper independently substantiated change and product-specific limits."
+      },
+      {
+        "title": "J.D. Power third-quarter account acquisition findings",
+        "sourceUrl": "https://thecudaily.com/younger-consumers-driving-growth-in-new-accounts-heres-whats-taking-place-j-d-power-analysis-reveals/",
+        "sourceDate": "2026-11-04",
+        "status": "not-selected",
+        "rationale": "Interesting secondary-account and younger-customer evidence, but the underlying report was not retrieved; no direct CU outcome or validated transfer to membership growth."
+      },
+      {
+        "title": "Acumen Financial Advantage and Wade& partnership",
+        "sourceUrl": "https://thecudaily.com/acumen-financial-advantage-wade-in-partnership-to-help-cus-with-lending-stronger-balance-sheets/",
+        "sourceDate": "2026-11-04",
+        "status": "not-selected",
+        "rationale": "Proposed cross-selling partnership without a named implementation, financial terms, timetable or measured credit-union results; promotion-led rather than a demonstrated operating change."
+      },
+      {
+        "title": "CASE Credit Union system upgrade",
+        "sourceUrl": "https://www.casecu.org/updates/system-update-2026",
+        "sourceDate": null,
+        "status": "not-selected",
+        "rationale": "Official November 2 status block says digital banking is available while Zelle and EZ Cash refinements continue. Routine conversion update; first source-publication date unknown and no measured outcome or distinct material incident established."
+      },
+      {
+        "title": "Anthropic adds text-watermark release-note details",
+        "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview?entry=september-30-2026",
+        "sourceDate": "2026-11-03",
+        "status": "not-selected",
+        "rationale": "Official platform-specific provenance limitation, not proof of reliable detection or a CU deployment; narrower operating consequence than the workforce and prudential candidates."
+      },
+      {
+        "title": "GoWest Red Alert Advocacy Playbook",
+        "sourceUrl": "https://www.cuinsight.com/before-the-crisis-hits-gowests-red-alert-playbook-helps-credit-unions-move-faster-together/",
+        "sourceDate": null,
+        "status": "not-selected",
+        "rationale": "Attributable association commentary; full underlying playbook and demonstrated operating outcomes not inspected. Relative Today/Yesterday labels do not establish an exact publication date."
+      },
+      {
+        "title": "Goldman Sachs restricts some workplace AI tools",
+        "sourceUrl": "https://thecudaily.com/goldman-sachs-restricts-bankers-from-using-some-ai-tools/",
+        "sourceDate": "2026-11-04",
+        "status": "not-selected",
+        "rationale": "Secondary account of Bloomberg reporting about internal bank guidance; original guidance not inspected, no CU change, and limits on tools must not be generalized into a blanket AI ban."
+      },
+      {
+        "title": "Compass FCU anniversary auto-refinance offer",
+        "sourceUrl": "https://thecudaily.com/compass-fcu-marking-anniversary-by-offering-160bp-reduction-on-current-auto-loan-rate/",
+        "sourceDate": "2026-11-04",
+        "status": "not-selected",
+        "rationale": "Short-lived product promotion without take-up or member outcome evidence; recent auto-pricing coverage already serves this audience."
+      },
+      {
+        "title": "NCUA fourteenth deregulation package",
         "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
-        "operatingImplication": "Credit-union commercial-lending, finance, capital, compliance and legal teams should map the changes to 12 CFR 723.9, Parts 702 and 723, and 12 CFR 701.39; confirm that procedures and regulatory references distinguish the removed transition provision from still-applicable lending controls; retain current statutory-lien legal checks; and review the final Federal Register text before changing policy or system rules."
+        "sourceDate": "2026-11-03",
+        "status": "duplicate-covered-by-existing-alert",
+        "rationale": "Already represented by the November 3 Alert on obsolete commercial-lending transition text, PPP treatment and statutory-lien language; no distinct new full-article evidence established."
+      },
+      {
+        "title": "United Teletech November 11 digital-banking cutover",
+        "sourceUrl": "https://www.utfinancial.org/digital/",
+        "sourceDate": null,
+        "status": "not-selected",
+        "rationale": "Official future conversion and November 4-10 Bill Pay interruption instructions; source first-publication date unknown. No actual outage result, tested security benefit or new implementation outcome established."
       }
     ],
     "rejections": [
       {
-        "title": "Travis Credit Union Launches a Personalized Website Experience",
-        "reason": "a live credit-union implementation, but the vendor announcement provides no conversion, funded-account, complaint or accessibility outcome and closely follows recent personalization coverage"
-      },
-      {
-        "title": "Federal Reserve October Senior Loan Officer Survey",
-        "reason": "a current primary data release, but it surveys banks rather than credit unions and offered a less direct credit-union operating decision than the selected auto-pricing change"
-      },
-      {
-        "title": "Federal Reserve Researches ATM Surcharge Sensitivity",
-        "reason": "useful consumer-fee research without a sufficiently direct new credit-union policy or operating change"
-      },
-      {
-        "title": "Affinity Federal Credit Union Launches a Wellbeing Institute",
-        "reason": "a promotion-led financial-education initiative without measured member outcomes or a distinct operating change"
-      },
-      {
-        "title": "Cincinnati Interagency FCU Completes KEMBA Combination",
-        "reason": "a previously announced merger and conversion milestone without new financial, service or integration evidence"
-      },
-      {
-        "title": "International UAW FCU Closes for System Conversion",
-        "reason": "a routine planned core-conversion notice without a material new incident or reusable operating result"
-      },
-      {
-        "title": "Nuuvia Adds Credit-Union and Fintech Executives to Its Board",
-        "reason": "a personnel announcement that does not clear the publication threshold"
-      },
-      {
-        "title": "Diversified Members Credit Union Selects Scienaptic Fraud Detection",
-        "reason": "an October 26 vendor-selection announcement already screened in prior cycles and without new deployment or outcome evidence"
-      },
-      {
-        "title": "PenFed Reports Third-Quarter Lending and Earnings Growth",
-        "reason": "credible credit-union financial results already screened in the prior cycle and less actionable than the selected pricing-model change"
-      },
-      {
-        "title": "America’s Credit Unions Comments on Stablecoin Call Reports",
-        "reason": "an advocacy comment on an October 16 proposal rather than a final reporting requirement"
-      },
-      {
-        "title": "Filene Summarizes AI Themes From Money20/20",
-        "reason": "useful strategy commentary but not a distinct evidence-backed operating development"
+        "title": "Article slots one and two",
+        "reason": "Material pre-publication runtime blocker; no article or image package created and no fallback attempted after the required rendering capability failed. This is not a claim that all editorial candidates failed the score threshold."
       }
     ],
-    "status": "article-and-alert-cycle-complete",
-    "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the move beyond uniform rate tiers and the evidence required to judge a member-facing pricing outcome. Selection, sourcing, fair-lending and classification gates were unchanged.",
+    "status": "blocked",
+    "blockedReason": "Required normal rendered acceptance could not start: npm run test:design failed because /root/.cache/ms-playwright/chromium_headless_shell-1200/chrome-headless-shell-linux64/chrome-headless-shell is absent. The existing Chromium 143.0.7499.4 build 1200 installer exhausted its mirrors with empty/truncated ZIPs (End of central directory record signature not found) and HTTP 400 GatewayExceptionResponse. Desktop/mobile, accessibility and card-artwork 404/recovery regressions were not executed; no readiness claim is made.",
+    "validation": {
+      "policyBaseCommit": "0739de1ccda492b80146f1c1ed1a58dc18dbc224",
+      "staticDesign": "passed; zero stale files; 13 hubs / 90 placements",
+      "dailyStateTest": "passed before outcome edit; preservation recheck required",
+      "renderedAcceptance": "blocked-before-browser-launch",
+      "endUserReview": "not-performed; no candidate output released",
+      "installationRecovery": "existing installer attempted once; built-in mirror retries failed; no gate, dependency version, browser permission or schedule change",
+      "policyResolutionSha256": "eefbb6f90877f4b1301a6fd86662fecd7ba10e2c61c4e2473e5d5913febc5aa7"
+    },
+    "socialDecision": "not-attempted-prepublication-blocker; no new queue item or provider submission; all existing reservations preserved. House item remains prepared, not queued or scheduled; no fresh complete provider inventory established in this run.",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
+    "coordination": "Issue 160 read through comment 6616235172. Raiz correction dedupe is completed; historical media holds remain with their existing owners and are not replayed. No new unresolved daily-publisher assignment.",
     "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
-    "updatedAt": "2026-11-03T15:22:00-05:00"
+    "updatedAt": "2026-11-04T12:07:52Z"
   },
   "history": [
+    {
+      "date": "2026-11-03",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "deal-level-auto-loan-pricing",
+        "digital-personalization-member-websites",
+        "bank-lending-standards-and-demand",
+        "atm-surcharge-fee-sensitivity",
+        "credit-union-wellbeing-and-financial-education",
+        "credit-union-mergers-and-conversions",
+        "digital-banking-system-conversions",
+        "fintech-leadership",
+        "ai-assisted-origination-fraud",
+        "credit-union-financial-performance",
+        "stablecoin-regulatory-reporting",
+        "credit-union-ai-strategy-commentary"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
+          "url": "https://creditunionainews.com/news/credit-union-colorado-ai-auto-loan-pricing.html",
+          "primaryFunctionalAudience": "Auto-lending, pricing, credit-risk, compliance and finance leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "alert",
+          "title": "NCUA Finalizes PPP and Lien Changes, Removes Obsolete Lending Rule",
+          "url": "https://creditunionainews.com/alerts/#ncua-fourteenth-deregulation-lending-ppp-statutory-lien",
+          "source": "National Credit Union Administration",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
+          "operatingImplication": "Credit-union commercial-lending, finance, capital, compliance and legal teams should map the changes to 12 CFR 723.9, Parts 702 and 723, and 12 CFR 701.39; confirm that procedures and regulatory references distinguish the removed transition provision from still-applicable lending controls; retain current statutory-lien legal checks; and review the final Federal Register text before changing policy or system rules."
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Travis Credit Union Launches a Personalized Website Experience",
+          "reason": "a live credit-union implementation, but the vendor announcement provides no conversion, funded-account, complaint or accessibility outcome and closely follows recent personalization coverage"
+        },
+        {
+          "title": "Federal Reserve October Senior Loan Officer Survey",
+          "reason": "a current primary data release, but it surveys banks rather than credit unions and offered a less direct credit-union operating decision than the selected auto-pricing change"
+        },
+        {
+          "title": "Federal Reserve Researches ATM Surcharge Sensitivity",
+          "reason": "useful consumer-fee research without a sufficiently direct new credit-union policy or operating change"
+        },
+        {
+          "title": "Affinity Federal Credit Union Launches a Wellbeing Institute",
+          "reason": "a promotion-led financial-education initiative without measured member outcomes or a distinct operating change"
+        },
+        {
+          "title": "Cincinnati Interagency FCU Completes KEMBA Combination",
+          "reason": "a previously announced merger and conversion milestone without new financial, service or integration evidence"
+        },
+        {
+          "title": "International UAW FCU Closes for System Conversion",
+          "reason": "a routine planned core-conversion notice without a material new incident or reusable operating result"
+        },
+        {
+          "title": "Nuuvia Adds Credit-Union and Fintech Executives to Its Board",
+          "reason": "a personnel announcement that does not clear the publication threshold"
+        },
+        {
+          "title": "Diversified Members Credit Union Selects Scienaptic Fraud Detection",
+          "reason": "an October 26 vendor-selection announcement already screened in prior cycles and without new deployment or outcome evidence"
+        },
+        {
+          "title": "PenFed Reports Third-Quarter Lending and Earnings Growth",
+          "reason": "credible credit-union financial results already screened in the prior cycle and less actionable than the selected pricing-model change"
+        },
+        {
+          "title": "America’s Credit Unions Comments on Stablecoin Call Reports",
+          "reason": "an advocacy comment on an October 16 proposal rather than a final reporting requirement"
+        },
+        {
+          "title": "Filene Summarizes AI Themes From Money20/20",
+          "reason": "useful strategy commentary but not a distinct evidence-backed operating development"
+        }
+      ],
+      "status": "article-and-alert-cycle-complete",
+      "activeExperimentContext": "The October 5 workflow-outcome hook test is reflected in presentation only: the headline and lead center the move beyond uniform rate tiers and the evidence required to judge a member-facing pricing outcome. Selection, sourcing, fair-lending and classification gates were unchanged.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
+      "updatedAt": "2026-11-03T15:22:00-05:00"
+    },
     {
       "date": "2026-11-02",
       "fullArticleCount": 2,
