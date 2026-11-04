@@ -4263,6 +4263,56 @@
       ],
       "summary": "The daily publisher completed its bounded November 4 research and correctly failed closed before drafting or release because the required Playwright Chromium 143.0.7499.4 build 1200 executable was absent. Reliability retries reproduced an execution-environment failure rather than a repository, production or provider defect: the Chromium-only installer exhausted its routes with zero-byte or truncated archives and HTTP 400 GatewayExceptionResponse, while the dependency-inclusive command additionally could not complete sandboxed apt privilege setup. No weaker validation was substituted and the reliability role did not resume routine editorial selection. Current main 4e8f5a506e57565ebfba53f1b1e7aae95bb88fd0 is READY in Production; the homepage, latest article and Alerts surface return HTTP 200; the 24-hour runtime-error view is clean. Verified-operations run 41826808837 reports authentication=verified, status=verified, errors=[], actions=[] and reconciliations=[]; GA4, Search Console and Buffer each returned HTTP 200 with data.ok=true. The social queue has no conflicting dates, no November 4 reservation and no duplicate flag; no queue or provider write was attempted. Recovery remains blocked until the publisher execution environment again exposes the pinned browser executable or can retrieve a valid browser archive. Durable prevention recommendation: provide the publisher a preinstalled compatible browser path or route the unchanged rendered gate through the existing isolated design-check runner; do not weaken or bypass rendered, accessibility, mobile or card-artwork checks.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-04T15:24:00-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded November 4 editorial portfolio, Alert, homepage-freshness, analytics, reliability, approved-house-campaign and handoff review after the recorded blocked daily publisher outcome.",
+      "status": "degraded",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 196,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityIncidentsConsumed": 1,
+        "portfolioArticlesReviewed": 89,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 3,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "qualifiedAlertsPublished": 0,
+        "homepageFreshnessWrites": 0,
+        "verifiedMeasurementSourceHealthChecks": 3,
+        "detailedMeasurementArtifactDownloadFailures": 2,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "liveCampaignAndFreshnessSurfacesReviewed": 2,
+        "houseCampaignPreparedItemsObserved": 1,
+        "houseCampaignQueueItemsObserved": 0,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search",
+        "Google Analytics via verified operations",
+        "Google Search Console via verified operations",
+        "Buffer via verified operations"
+      ],
+      "operationalLearning": {
+        "issue": "The publisher's mandatory rendered-acceptance gate could not launch because the pinned Playwright Chromium executable was absent and distribution mirrors returned empty or truncated archives; separately, interactive 401 responses no longer justify classifying the underlying measurement providers as unavailable.",
+        "correction": "Preserved the blocked publisher outcome and all rendered gates, consumed the exact-current-main verified-operations receipt for source-health status, kept detailed metrics blocked because the artifact source files could not be retrieved, and made no Alert or homepage write because the November 4 Federal Register items duplicate the November 3 NCUA package already live.",
+        "controllingVersion": "Main 6181179911a28f41f43b8e2397b1e2b55c6bae66; operating policy blob 28fd27deae2bf56b69960c194bc45d71750efb8f; verified-operations run 41836629728.",
+        "owner": "daily-publisher retains the existing rendered-acceptance recovery; cuai-operating-system owns this bounded review and receipt.",
+        "test": "Exact-main verified operations reports authentication=verified, status=verified and errors=[] with GA4, Search Console and Buffer source health HTTP 200/data.ok=true; two bounded artifact downloads failed with HTTP 503, so no detailed metric was claimed. Production is READY on the exact main SHA, the live homepage and sponsorship page render the approved campaign and November 3 Alert, and the 24-hour runtime-error view is clean.",
+        "decision": "keep",
+        "nextTrigger": "On the next weekday, consume the publisher result and exact-main measurement receipt again; do not bypass rendered checks, duplicate the existing NCUA Alert, or treat a prepared campaign asset as queued or sent."
+      },
+      "summary": "Wednesday produced no full article because the mandatory Playwright rendered-acceptance suite could not launch in the publisher environment; the week remains 3 of 8 and the Wednesday trajectory is 0 of 2. This is an infrastructure block, not an editorial rejection: 12 candidates across 12 beats were recorded, with the OCCU 32-hour-workweek story shortlisted. The 89-article portfolio's latest 15 remain 10 News and 5 Insights across five reported-news items, five explainers, three data briefs and two case studies; all 15 beats are distinct. Risk/compliance appears in 12 and operations in 11, while HR and board appear once each. Preserve the next candidate on AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. No new primary-source development cleared the Alert gates; November 4 Federal Register publication repeated the November 3 NCUA package already live, so the current Alert remains fresh and no homepage change was made. Exact-main verified operations proves GA4, Search Console and Buffer source health, but detailed current metrics remain blocked because the artifact ZIP could not be retrieved after two bounded HTTP 503 failures. The approved reader and sponsorship campaign remains live with the 176% sessions claim and caveats; its one LinkedIn asset remains prepared only, with no queue or provider evidence. Production is READY and the 24-hour runtime-error view is clean. No article, Alert, extra social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
