@@ -2,6 +2,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const os = require('node:os');
+const { execFileSync } = require('node:child_process');
 const { probeBrowser, launchOptions, cachePath } = require('../lib/browser-readiness.cjs');
 const { selectRoutes, reviewRoutes } = require('../lib/design-review-routes.cjs');
 const root = path.resolve(__dirname, '..');
@@ -43,4 +45,23 @@ test('existing isolated job keeps schedules, permissions and production ownershi
   for (const name of ['verify-card-artwork.cjs', 'verify-alerts.cjs', 'verify-analytics-journeys.cjs']) assert.ok(verifier.includes(name));
   const pkg = require('../package.json'); assert.equal(pkg.scripts['pretest:design'], 'npm run check:browser');
   assert.equal(pkg.devDependencies['playwright-core'], '1.57.0');
+});
+
+test('a concurrent main-only article is not mistaken for a deleted candidate route', t => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'cuai-route-base-'));
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+  const git = args => execFileSync('git', args, { cwd: dir, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+  git(['init', '--initial-branch=main']);
+  git(['config', 'user.name', 'CUAI Test']); git(['config', 'user.email', 'test@example.invalid']);
+  fs.mkdirSync(path.join(dir, 'automation')); fs.mkdirSync(path.join(dir, 'news'));
+  fs.writeFileSync(path.join(dir, 'automation/coverage-ledger.json'), '{"articles":[]}');
+  git(['add', '.']); git(['commit', '-m', 'Base fixture']);
+  git(['checkout', '-b', 'candidate']);
+  fs.writeFileSync(path.join(dir, 'news/candidate.html'), '<h1>Candidate fixture</h1>');
+  git(['add', '.']); git(['commit', '-m', 'Candidate fixture']);
+  git(['checkout', 'main']);
+  fs.writeFileSync(path.join(dir, 'news/main-only.html'), '<h1>Concurrent main fixture</h1>');
+  git(['add', '.']); git(['commit', '-m', 'Concurrent fixture']);
+  const base = git(['rev-parse', 'HEAD']); git(['checkout', 'candidate']);
+  assert.deepEqual(reviewRoutes(dir, ['/'], { CUAI_DESIGN_BASE_REF: base }), ['/', '/news/candidate.html']);
 });
