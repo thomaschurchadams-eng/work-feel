@@ -9,7 +9,10 @@ on:
       - 'automation/scheduled-tasks/**'
       - 'automation/native-video-handoff.md'
       - 'lib/operational-policy.cjs'
+      - 'lib/browser-readiness.cjs'
+      - 'lib/design-review-routes.cjs'
       - 'scripts/check-operational-policy.cjs'
+      - 'scripts/publisher-browser-preflight.cjs'
       - '**.html'
       - 'assets/styles.css'
       - 'assets/app.js'
@@ -39,12 +42,16 @@ jobs:
     timeout-minutes: 12
     permissions:
       contents: read
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/cuai-design-browsers
+      CUAI_DESIGN_BASE_REF: ${{ github.event.pull_request.base.sha }}
     steps:
       - name: Read exact review revision
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
+          fetch-depth: 0
       - name: Use Node for design checks
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
@@ -54,6 +61,8 @@ jobs:
         run: npm ci
       - name: Install test browser
         run: npx playwright-core install --with-deps chromium
+      - name: Prove actual browser launch before acceptance
+        run: npm run check:browser
       - name: Check canonical shell and existing regressions
         run: |
           node scripts/check-operational-policy.cjs daily-publisher

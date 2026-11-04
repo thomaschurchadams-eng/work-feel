@@ -2,6 +2,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const http = require('node:http');
 const { chromium } = require('playwright-core');
+const { launchOptions, revision, cachePath, cacheSnapshot } = require('../../lib/browser-readiness.cjs');
+const { reviewRoutes } = require('../../lib/design-review-routes.cjs');
 const axePath = require.resolve('axe-core/axe.min.js');
 const contract = require('./contracts.json');
 const root = path.resolve(__dirname, '../..');
@@ -23,12 +25,17 @@ async function serve() {
 }
 
 (async () => {
+  const routes = reviewRoutes(root, contract.routes);
+  const reviewedRevision = revision(root);
+  const cacheBefore = cacheSnapshot(cachePath());
+  fs.writeFileSync(path.join(out, 'review-input.json'), JSON.stringify({ ...reviewedRevision, routes, cacheBefore }, null, 2));
+  // Launch before opening the loopback server, so a missing browser cannot leave it running.
+  const browser = await chromium.launch(launchOptions());
   const local = process.env.CUAI_DESIGN_BASE_URL ? null : await serve();
   const base = process.env.CUAI_DESIGN_BASE_URL || local.url;
-  const browser = await chromium.launch({ headless: true, ...(process.env.CUAI_BROWSER_EXECUTABLE ? { executablePath:process.env.CUAI_BROWSER_EXECUTABLE } : {}) });
   const results = [];
   try {
-    for (const route of contract.routes) {
+    for (const route of routes) {
       const widths = ['/topics.html','/topics/payments.html','/intelligence/regulatory-watch.html'].includes(route) ? [320,390,1024,1440] : [390,1440];
       for (const width of widths) {
         const context = await browser.newContext({ viewport:{width,height:width < 700 ? 844 : 1000}, reducedMotion:'reduce' });
@@ -101,7 +108,7 @@ async function serve() {
         const name = (route === '/' ? 'home' : route.replace(/[^a-z0-9]/gi,'-')) + '-' + width;
         await page.screenshot({ path:path.join(out,name+'.png'), fullPage:true, animations:'disabled' });
         results.push({route,width,httpStatus:response.status(),facts,menuPassed,searchPassed,transcriptPassed,accessibility,errors,failed,screenshot:name+'.png'});
-        fs.writeFileSync(path.join(out,'results.json'), JSON.stringify({base,contractVersion:contract.version,results},null,2));
+        fs.writeFileSync(path.join(out,'results.json'), JSON.stringify({base,...reviewedRevision,routes,contractVersion:contract.version,results},null,2));
         console.log(`${route} ${width}: ${failed.length ? 'FAIL '+failed.join(', ') : 'PASS'}`);
         await context.close();
       }
@@ -111,6 +118,10 @@ async function serve() {
     await require('./verify-analytics-journeys.cjs')(browser, base, out, axePath);
   } finally { await browser.close(); if (local) await new Promise(resolve => local.server.close(resolve)); }
   const failures = results.filter(r => r.failed.length);
+  const cacheAfter = cacheSnapshot(cachePath());
+  const unchanged = cacheBefore.fingerprint === cacheAfter.fingerprint;
+  fs.writeFileSync(path.join(out, 'review-completion.json'), JSON.stringify({ ...reviewedRevision, routes, renderedChecks: results.length, failedChecks: failures.length, cacheAfter, cacheUnchanged: unchanged, cardArtwork: 'completed', alerts: 'completed', analyticsJourneys: 'completed' }, null, 2));
+  if (!unchanged) throw new Error('browser-cache-changed-during-rendered-acceptance');
   console.log(`${results.length} rendered checks; ${failures.length} failed. Evidence: design-results/`);
   if (failures.length) process.exitCode = 1;
 })().catch(error => { console.error(error); process.exitCode = 1; });
