@@ -43,7 +43,6 @@ jobs:
     permissions:
       contents: read
     env:
-      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/cuai-design-browsers
       CUAI_DESIGN_BASE_REF: ${{ github.event.pull_request.base.sha }}
     steps:
       - name: Read exact review revision
@@ -52,6 +51,8 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
           fetch-depth: 0
+      - name: Isolate the test browser cache for this job
+        run: printf '%s\n' "PLAYWRIGHT_BROWSERS_PATH=${RUNNER_TEMP}/cuai-design-browsers" >> "$GITHUB_ENV"
       - name: Use Node for design checks
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:

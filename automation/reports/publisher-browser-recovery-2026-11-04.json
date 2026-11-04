@@ -91,6 +91,7 @@
     "Publisher policy/runbook names reliability-watch for triage and daily-publisher for exact article acceptance. No new executor, recurring task, dependency version, schedule, model, permission or persistent-access change."
   ],
   "validationAtPreparation": { "nodeTests": "152 passed including5 new readiness/route regressions; mocks are not browser recovery", "staticDesign": "passed;13 hubs/90 placements", "localActualBrowser": "blocked", "fallbackCurrentRevision": "not yet run; historical success is not clearance" },
+  "preReleaseIteration": "The first PR revision used runner.temp in job-level env, a context unavailable at that evaluation point under GitHub's context rules. No design run was observed and it was not merged. Corrected to the existing runner's RUNNER_TEMP via a job-scoped GITHUB_ENV step; no persistent environment or permission change. Only the corrected exact head can establish acceptance.",
   "remainingGate": "Run this exact prevention revision through the existing isolated PR job and inspect actual screenshots/receipts. Every later ordinary article requires its own exact-revision desktop/mobile/accessibility/artwork acceptance before release. Shared local runtime isolation and original missing-cache cause remain unresolved.",
   "boundaries": "No article/research/social replay, new publication, Alert, queue/provider write, reservation displacement or private33 expansion release. Existing canonical content/daily/social/coverage/media files remain byte-identical to base."
 }

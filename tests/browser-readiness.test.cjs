@@ -30,11 +30,13 @@ test('exact changed News and Insight routes augment, never replace, the full bas
   assert.deepEqual(selectRoutes({ baseline: ['/', '/news.html'], changed: ['news/ordinary-next.html', 'insight-ordinary-next.html', 'assets/app.js'], explicit: ['/news/ordinary-next.html'] }), ['/', '/news.html', '/news/ordinary-next.html', '/insight-ordinary-next.html']);
   assert.throws(() => selectRoutes({ baseline: [], explicit: ['https://external.test/'] }), /invalid-review/);
   assert.throws(() => selectRoutes({ baseline: [], explicit: ['../private.html'] }), /invalid-review/);
-  assert.throws(() => reviewRoutes(root, ['/'], { CUAI_DESIGN_BASE_REF: 'missing-ref' }), /Command failed/);
+  assert.throws(() => reviewRoutes(root, ['/'], { CUAI_DESIGN_BASE_REF: 'missing-ref' }), /invalid-review-base-sha/);
 });
 test('existing isolated job keeps schedules, permissions and production ownership; normal command retains all regressions', () => {
   const workflow = fs.readFileSync(path.join(root, '.github/workflows/cuai-operations.yml'), 'utf8');
-  assert.match(workflow, /PLAYWRIGHT_BROWSERS_PATH: \$\{\{ runner.temp \}\}\/cuai-design-browsers/);
+  assert.ok(workflow.includes('PLAYWRIGHT_BROWSERS_PATH=${RUNNER_TEMP}/cuai-design-browsers'));
+  assert.ok(workflow.includes('>> "$GITHUB_ENV"'));
+  assert.ok(!workflow.includes('${{ runner.temp }}'), 'runner context is unavailable at job env evaluation');
   assert.match(workflow, /run: npm run check:browser/);
   assert.match(workflow, /CUAI_DESIGN_BASE_REF: \$\{\{ github.event.pull_request.base.sha \}\}/);
   const verifier = fs.readFileSync(path.join(root, 'tests/design/verify-site.cjs'), 'utf8');
