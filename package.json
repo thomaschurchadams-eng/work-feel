@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "test": "node --test tests/*.test.cjs",
+    "check:browser": "node scripts/publisher-browser-preflight.cjs",
+    "pretest:design": "npm run check:browser",
     "check:design": "node scripts/sync-site-design.mjs --check && node scripts/generate-topic-hubs.mjs --check",
     "test:design": "node tests/design/verify-site.cjs"
   },

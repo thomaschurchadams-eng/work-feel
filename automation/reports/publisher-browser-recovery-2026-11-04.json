@@ -1,0 +1,97 @@
+{
+  "phase": "pre-CI implementation and chronology record; final exact-run outcome belongs in the originating issue receipt",
+  "incidentDedupeKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
+  "baseMain": "85f57f537e98ca3027e47cbf5b7dd69c8012fb98",
+  "reviewStartedAt": "2026-11-04T23:39:26Z",
+  "owners": { "browserGateAndExactArticleAcceptance": "daily-publisher", "incidentTriage": "reliability-watch" },
+  "deduplication": "Read issue160 through comment6641332326 and searched open Chromium recovery PRs; no equivalent active implementation found. Continue original incident; no publication/social replay or new executor.",
+  "localRuntime": {
+    "platform": "Linux x86_64",
+    "uid": 0,
+    "publisherWorktree": "/workspace/scratch/66ccdfddb6bb/cuai-20261104",
+    "publisherLocalCommit": "0fc83a9ca7c0a54d8c453427989f6e1a4a09e30b",
+    "recoveryWorktree": "/workspace/scratch/66ccdfddb6bb/cuai-browser-recovery-20261104",
+    "playwrightVersion": "1.57.0",
+    "packageLockSha256": "8ec2f498bb818057996decbf24b299de287a9aecdee975f81e618e2c81890175",
+    "cachePath": "/root/.cache/ms-playwright",
+    "missingDefaultLaunchTarget": "/root/.cache/ms-playwright/chromium_headless_shell-1200/chrome-headless-shell-linux64/chrome-headless-shell",
+    "fullChromiumTargetAlsoAbsent": "/root/.cache/ms-playwright/chromium-1200/chrome-linux64/chrome",
+    "compatibleBrowserSearch": "No executable found in inspected standard /usr/bin, /usr/lib/chromium, /usr/lib/chromium-browser, /opt/google/chrome, /opt/chromium, /root/.cache, /opt or /tmp candidates. This is not an exhaustive historical host inventory.",
+    "cacheWritableByCurrentUid": true,
+    "environmentOverridesAtInspection": { "PLAYWRIGHT_BROWSERS_PATH": null, "XDG_CACHE_HOME": null },
+    "preflightAt": "2026-11-04T23:44:09.275Z",
+    "preflightResult": "blocked-before-rendering; actual chromium.launch attempted once; no installer or apt retry",
+    "cacheFingerprintBeforeAndAfter": "7923ca45530eaee1a182f588e308b23f80abfb832888d1e57fccc369a477bc76",
+    "currentContentionInspection": "ps failed with fatal library error, lookup self. No reliable process/concurrency inventory was obtained."
+  },
+  "chronologyUTC": [
+    {
+      "time": "2026-11-03T21:42:39Z to 2026-11-03T21:45:23Z",
+      "evidence": "Existing isolated PR job126224677466, run41724232255, head97649989f1aa75c248c21b49e5e874f09526cc32, ubuntu24.04 hosted runner. Browser install and forty rendered baseline checks, both artwork widths, Alerts and analytics journeys passed. Artifact13273348916.",
+      "limit": "Historical alternate-runner success, not proof that the ordinary publisher had a persistent compatible browser or that the current recovery revision passes."
+    },
+    {
+      "time": "2026-11-04T04:45:00Z to 2026-11-04T04:54:00Z approximate",
+      "evidence": "Private-section review interval supplied by the user. The Mac checkout and private commit353ef6f are not available in the current Linux checkout/object store.",
+      "limit": "No retained command/process/browser-cache record from this interval was located here. Exact review-time runtime identity, cache path, install/removal actions and contention remain unknown. An undeployed branch does not prove runtime isolation."
+    },
+    {
+      "time": "2026-11-04T11:28:14Z",
+      "evidence": "Current filesystem birth times for base repo and older November3 worktree; their modification times and reflog retain earlier dates.",
+      "limit": "Consistent with later materialization/restoration, but the platform lifecycle and whether cache state was restored or excluded are unverified. Kernel uptime is not a container/task identity and was not used to assert a restart cause."
+    },
+    {
+      "time": "2026-11-04T12:00:57Z",
+      "evidence": "Publisher worktree birth time and reflog: cuai-20261104 created from0739de1. Base user worktree was not reset or cleaned."
+    },
+    {
+      "time": "2026-11-04T12:04:49Z to 2026-11-04T12:05:21Z",
+      "evidence": "Observed npm log command metadata: npm ci --ignore-scripts, npm exec playwright-core install chromium, then npm run test:design in cuai-20261104. Cache birth12:04:56.102Z; first .links registration12:04:56.118Z points to that worktree. Original tool receipt records empty/truncated archives and HTTP400; launch failed for missing headless shell.",
+      "limit": "The cache birth time is later than the private review. It cannot identify whether an older cache was deleted, never persisted, restored incompletely or was located elsewhere."
+    },
+    {
+      "time": "2026-11-04T12:07:52Z",
+      "evidence": "Canonical publisher blocked outcome updatedAt; state-only4e8f5a5, zero articles/social writes. This recovery preserves that completed outcome."
+    },
+    {
+      "time": "2026-11-04T13:11:51Z to 2026-11-04T13:14:58Z",
+      "evidence": "Later reliability npm commands in /workspace/scratch/ddebc4a02089/repo: pinned dependency install, dependency-inclusive Chromium install, plain Chromium install, static design and Node tests. Second .links entry13:11:59.763Z points to that different worktree. Cache directory last changed13:12:18.299Z.",
+      "limit": "This later retry cannot have caused the earlier12:05 launch failure. Both surviving package links use the same root cache; this demonstrates shared cache state, not a private-review deletion."
+    }
+  ],
+  "interferenceAssessment": {
+    "verified": [
+      "Current publisher and later reliability package registrations share /root/.cache/ms-playwright and current UID0 can write it. Separate Git worktrees do not enforce browser/cache isolation.",
+      "Installed Playwright1.57 registry code calls _validateInstallationCache during installation and can remove unreferenced browser directories or broken installation links. This is a possible interference mechanism, not evidence it occurred in the private review.",
+      "The current launch preflight itself made no observed cache directory/link metadata change. Default headless launches use separate temporary profiles; no shared persistent profile was selected by the inspected launch code."
+    ],
+    "notProven": [
+      "Why a browser working in earlier executions was absent here; who or what removed it, if anything.",
+      "Private-review runtime/cache identity and whether it consumed CPU, memory, process capacity or browser installation state needed by this publisher.",
+      "Isolation between all development and publisher executions. A writable shared cache and missing historical telemetry preclude a zero-interference claim."
+    ]
+  },
+  "preservation": {
+    "sourceFiles": "Inspected original worktrees, cache links and installed registry source not edited or cleaned. New code is isolated in the recovery worktree.",
+    "rawLogs": "Seven remaining12:05-13:14 npm logs copied byte-for-byte with timestamps into ignored design-results/incident-source-logs before further npm use; hashes below.12:04 npm command metadata was captured in this review's tool output, but its two original full log files had rotated out by the time of the preservation copy. No04:45-04:54 logs were found. Do not treat missing logs as absence of actions.",
+    "rawLogHashes": {
+      "2026-11-04T12_05_20_952Z-debug-0.log": "f0378a8e6bd373fc94abe17d9372f38822aca489cfebdbd539dae99d369cf634",
+      "2026-11-04T12_06_27_146Z-debug-0.log": "85a36acd037496d83de97732edc63e6be7dde8ccd6fe877f64ee337d9efe1514",
+      "2026-11-04T13_11_51_170Z-debug-0.log": "62bad00ad1b6819b7e5501b5bafe279071477aa85b89e1faaaffefda0672a3d1",
+      "2026-11-04T13_11_54_489Z-debug-0.log": "9bd4739ddc3d0740dd2557e0dc40a31e9863942e214de6bdda37bfe754dfb870",
+      "2026-11-04T13_11_59_337Z-debug-0.log": "bdf7a51cf3861d6134c1aa6c9bcefaa6be763262b30dc293eb3c25ee3cf67813",
+      "2026-11-04T13_14_58_377Z-debug-0.log": "151c0bd0266c4269c1a1de97b28f5ea6bde6d5c4b5a4e4a46823319f95c488bc",
+      "2026-11-04T13_14_58_672Z-debug-0.log": "02b83e7700c5db44e8589b6c35bce9049da91492b90ad18b267bff0254dbd86b"
+    }
+  },
+  "preventionPrepared": [
+    "Early actual browser launch/smoke with bounded timeout, revision and cache metadata fingerprints; no automatic install/cleanup or weaker acceptance.",
+    "Normal test:design preflight and original desktop/mobile, accessibility, artwork404/recovery, Alerts and analytics journeys retained.",
+    "Existing read-only isolated PR job uses job-local ephemeral cache and exact-head checkout; records current News/Insight and changed ordinary article routes plus all baseline routes.",
+    "Publisher policy/runbook names reliability-watch for triage and daily-publisher for exact article acceptance. No new executor, recurring task, dependency version, schedule, model, permission or persistent-access change."
+  ],
+  "validationAtPreparation": { "nodeTests": "152 passed including5 new readiness/route regressions; mocks are not browser recovery", "staticDesign": "passed;13 hubs/90 placements", "localActualBrowser": "blocked", "fallbackCurrentRevision": "not yet run; historical success is not clearance" },
+  "preReleaseIteration": "The first PR revision used runner.temp in job-level env, a context unavailable at that evaluation point under GitHub's context rules. No design run was observed and it was not merged. Corrected to the existing runner's RUNNER_TEMP via a job-scoped GITHUB_ENV step; no persistent environment or permission change. Only the corrected exact head can establish acceptance.",
+  "remainingGate": "Run this exact prevention revision through the existing isolated PR job and inspect actual screenshots/receipts. Every later ordinary article requires its own exact-revision desktop/mobile/accessibility/artwork acceptance before release. Shared local runtime isolation and original missing-cache cause remain unresolved.",
+  "boundaries": "No article/research/social replay, new publication, Alert, queue/provider write, reservation displacement or private33 expansion release. Existing canonical content/daily/social/coverage/media files remain byte-identical to base."
+}

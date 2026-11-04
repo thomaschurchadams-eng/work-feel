@@ -1,5 +1,26 @@
 # Rendered design acceptance
 
+Start the ordinary publisher with `npm run check:browser` before research/image work.
+It records actual pinned-browser launch, 390/1440 smoke rendering, revision and
+cache fingerprints in `design-results/browser-preflight.json`. It installs or
+deletes nothing and is not full site acceptance. The normal `test:design` command
+also runs it automatically. Missing browser or cache mutation fails closed.
+
+The existing read-only PR job is the fallback when the publisher's runtime cannot
+launch. Its ephemeral job-local cache avoids sharing the publisher's default
+cache; it does not establish isolation between other local worktrees. Exact PR
+head and base are recorded. Normal rendered coverage always includes the newest
+News and Insight plus all changed article paths relative to the PR base, without
+removing baseline routes, accessibility, card-artwork404/recovery, Alerts or
+analytics journeys. For local candidate work use
+`CUAI_DESIGN_ARTICLE_PATHS=news/exact-slug.html npm run test:design`.
+Review `review-input.json`, `results.json`, `review-completion.json`, the artwork
+receipt and actual desktop/mobile screenshots against the exact revision before
+release. Missing artifacts or a changed revision invalidate acceptance. Smoke and
+unit fixtures are not a substitute. `reliability-watch` owns incident triage;
+`daily-publisher` retains sole article/release ownership. Preserve the original
+incident key and today's completed publication/social outcome.
+
 Run `npm ci`, `npx playwright-core install chromium`, and `npm run test:design`.
 The test starts its own loopback static server unless `CUAI_DESIGN_BASE_URL` is set
 to the exact review Preview. `CUAI_BROWSER_EXECUTABLE` can point to an existing
