@@ -60,6 +60,7 @@ test('a concurrent main-only article is not mistaken for a deleted candidate rou
   fs.writeFileSync(path.join(dir, 'news/candidate.html'), '<h1>Candidate fixture</h1>');
   git(['add', '.']); git(['commit', '-m', 'Candidate fixture']);
   git(['checkout', 'main']);
+  fs.mkdirSync(path.join(dir, 'news'), { recursive: true });
   fs.writeFileSync(path.join(dir, 'news/main-only.html'), '<h1>Concurrent main fixture</h1>');
   git(['add', '.']); git(['commit', '-m', 'Concurrent fixture']);
   const base = git(['rev-parse', 'HEAD']); git(['checkout', 'candidate']);
