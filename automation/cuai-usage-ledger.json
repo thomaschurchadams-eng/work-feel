@@ -4225,6 +4225,44 @@
       ],
       "summary": "Diagnosed a repeated access-path reporting failure rather than a GA4, Search Console, Buffer, production, or social-delivery outage. Operating reviews had treated Vercel Authentication 401 responses from their interactive path as current source unavailability. The authorized receipt for verified-operations run 41711138611 on exact current main c8f3a6d97a9391de427e009af03d58d7e61c18d4 reports authentication=verified, status=verified, errors=[], actions=[], and reconciliations=[]; its ga4-metrics.json, search-console-metrics.json, and buffer-metrics.json were generated on November 3 and each returned HTTP 200 with data.ok=true. Buffer identifies the approved CreditUnionAI News company channel. The social queue already records the November 2 item sent once with its original post ID and UTMs, and no November 3 reservation exists, so no provider or queue write was needed. Updated the existing operating policy with a fail-closed, read-only fallback that permits consuming only a successful exact-main-SHA verified-operations artifact and otherwise preserves the blocker. Durable lesson: distinguish deployment-protection access from provider health and reuse the already-authorized workflow receipt before declaring current measurement unavailable.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-04T08:15:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 4 daily publisher persisted a blocked outcome after required rendered acceptance could not launch because the pinned Playwright Chromium executable was absent and its installer could not retrieve a valid archive.",
+      "status": "blocked",
+      "incidentKey": "cuai-daily-publisher:2026-11-04:rendered-acceptance",
+      "workUnits": {
+        "publisherRunsReviewed": 1,
+        "publisherCandidatesReviewed": 12,
+        "publisherBeatsReviewed": 12,
+        "renderedBrowserInstallCommandsRetried": 2,
+        "successfulVerifiedOperationsRunsReviewed": 1,
+        "operationReceiptArtifactsDownloaded": 1,
+        "authenticatedSourceFilesReviewed": 3,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "liveSurfaceChecks": 3,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "externalWriteRetries": 0,
+        "socialSchedulingAttempts": 0,
+        "recoveryBranchesCreated": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Playwright browser distribution mirrors",
+        "Google Analytics via verified operations",
+        "Google Search Console via verified operations",
+        "Buffer via verified operations"
+      ],
+      "summary": "The daily publisher completed its bounded November 4 research and correctly failed closed before drafting or release because the required Playwright Chromium 143.0.7499.4 build 1200 executable was absent. Reliability retries reproduced an execution-environment failure rather than a repository, production or provider defect: the Chromium-only installer exhausted its routes with zero-byte or truncated archives and HTTP 400 GatewayExceptionResponse, while the dependency-inclusive command additionally could not complete sandboxed apt privilege setup. No weaker validation was substituted and the reliability role did not resume routine editorial selection. Current main 4e8f5a506e57565ebfba53f1b1e7aae95bb88fd0 is READY in Production; the homepage, latest article and Alerts surface return HTTP 200; the 24-hour runtime-error view is clean. Verified-operations run 41826808837 reports authentication=verified, status=verified, errors=[], actions=[] and reconciliations=[]; GA4, Search Console and Buffer each returned HTTP 200 with data.ok=true. The social queue has no conflicting dates, no November 4 reservation and no duplicate flag; no queue or provider write was attempted. Recovery remains blocked until the publisher execution environment again exposes the pinned browser executable or can retrieve a valid browser archive. Durable prevention recommendation: provide the publisher a preinstalled compatible browser path or route the unchanged rendered gate through the existing isolated design-check runner; do not weaken or bypass rendered, accessibility, mobile or card-artwork checks.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
