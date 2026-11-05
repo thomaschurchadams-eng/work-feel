@@ -4313,6 +4313,40 @@
       },
       "summary": "Wednesday produced no full article because the mandatory Playwright rendered-acceptance suite could not launch in the publisher environment; the week remains 3 of 8 and the Wednesday trajectory is 0 of 2. This is an infrastructure block, not an editorial rejection: 12 candidates across 12 beats were recorded, with the OCCU 32-hour-workweek story shortlisted. The 89-article portfolio's latest 15 remain 10 News and 5 Insights across five reported-news items, five explainers, three data briefs and two case studies; all 15 beats are distinct. Risk/compliance appears in 12 and operations in 11, while HR and board appear once each. Preserve the next candidate on AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. No new primary-source development cleared the Alert gates; November 4 Federal Register publication repeated the November 3 NCUA package already live, so the current Alert remains fresh and no homepage change was made. Exact-main verified operations proves GA4, Search Console and Buffer source health, but detailed current metrics remain blocked because the artifact ZIP could not be retrieved after two bounded HTTP 503 failures. The approved reader and sponsorship campaign remains live with the 176% sessions claim and caveats; its one LinkedIn asset remains prepared only, with no queue or provider evidence. Production is READY and the 24-hour runtime-error view is clean. No article, Alert, extra social post, external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-05T07:55:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The November 4 publisher rendered-acceptance incident was closed operationally by the tested exact-revision fallback in PR #290 and then exercised successfully by the next ordinary publisher cycle, but the canonical usage ledger still contained only the original blocked record.",
+      "status": "recovered",
+      "incidentKey": "cuai-daily-publisher:2026-11-04:rendered-acceptance",
+      "workUnits": {
+        "blockedPublisherIncidentsReviewed": 1,
+        "publisherRecoveryReceiptsReviewed": 1,
+        "successfulPublisherCyclesReviewed": 1,
+        "exactHeadDesignRunsReviewed": 2,
+        "renderedChecksObserved": 88,
+        "repositoryTestsObserved": 306,
+        "productionDeploymentChecks": 2,
+        "liveSurfaceChecks": 5,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "successfulVerifiedOperationsRunsReviewed": 1,
+        "distributionAttemptsObserved": 0,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "providerWriteRetries": 0,
+        "recoveryBranchesCreated": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "PR #290 restored a tested fail-closed acceptance path without replaying the blocked November 4 cycle: an early actual browser-launch preflight now stops unavailable local rendering before research, while the existing read-only pull-request design job may provide exact-head acceptance from a job-local browser cache without changing schedules, permissions, dependency versions or editorial gates. Its exact-head run 41937037129 passed 153 repository tests and 44 desktop/mobile, accessibility and artwork normal/404/recovery checks. The next ordinary publisher cycle then exercised that path on exact candidate dc0b269aa5057bf0a95f4c98e6db2dd10c296938: run 42025158074 again passed 153 tests and 44 rendered checks, after which PR #291 merged the November 5 GECU Standard News package. Production deployment dpl_Fonv433oM5YKyW9Gi1kuHLhcCAiJ is READY on exact main f9ae630dd129423e7c01331e76a1564776385776; the article, authored JPEG, homepage, News index and sitemap return HTTP 200; the 24-hour runtime-error view is clean. Daily state preserves 76 history records and records one November 5 article. Social state remains 55 items with only the November 2 company-page item this week, already sent once, and no duplicate dates. Post-merge verified operations succeeded with zero distribution attempts and zero source/action exceptions. The original issue #160 dedupe key was already closed once by the publisher recovery receipt and was not reopened. Local default Chromium and strong cross-task cache isolation remain unproven, so each future ordinary article still requires its own exact-head rendered acceptance; the operational blocker is nevertheless recovered through the tested existing runner path.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
