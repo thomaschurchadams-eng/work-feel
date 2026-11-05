@@ -3,6 +3,40 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "gecu-bank-of-the-southwest-integration",
+      "articleUrl": "/news/gecu-bank-of-the-southwest-integration.html",
+      "imagePath": "/assets/gecu-bank-of-the-southwest-integration.jpg",
+      "publishedAt": "2026-11-05T07:11:11-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "ink-and-linocut",
+      "subject": "architecture-and-infrastructure",
+      "composition": "wide-environmental",
+      "perspective": "eye-level",
+      "palette": "burgundy-sand",
+      "lighting": "diffused-overcast",
+      "texture": "ink-wash",
+      "scene": "illustrative-independent-branch-service-paths-in-a-new-mexico-desert-streetscape",
+      "conceptScore": 83.9,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "3707adbc46e2b655d2450ab54b32b8b35f53f38178c606de08bd09f3c5d2cce9",
+      "conceptAlternatives": [
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "documents-and-controls",
+          "score": 65.3
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "physical-metaphor",
+          "score": 50.6
+        }
+      ]
+    },
+    {
       "id": "credit-union-colorado-ai-auto-loan-pricing",
       "articleUrl": "/news/credit-union-colorado-ai-auto-loan-pricing.html",
       "imagePath": "/assets/credit-union-colorado-ai-auto-loan-pricing.jpg",
