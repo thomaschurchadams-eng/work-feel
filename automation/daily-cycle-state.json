@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-05",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
@@ -34,6 +34,14 @@
         "primaryFunctionalAudience": "Credit-union operations, integration, branch, digital-banking and member-service leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "alert",
+        "title": "OCC Gives Examiners a Framework for AI and Agentic-System Risk",
+        "url": "https://creditunionainews.com/alerts/#occ-ai-agentic-system-supervisory-framework",
+        "source": "Office of the Comptroller of the Currency",
+        "sourceUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html",
+        "operatingImplication": "This is not an NCUA rule and does not apply directly to credit unions. Credit-union board, risk, technology, compliance and vendor-management teams can use it as a comparative signal: inventory higher-consequence and agentic use cases, document transferred authority and human oversight, scale controls to potential failure or misuse, and monitor NCUA and state regulators rather than treating the OCC guide as a current requirement."
       }
     ],
     "candidateEvaluations": [
@@ -141,7 +149,7 @@
         "rationale": "The corporate CU summary gives direction, but underlying cohorts and measures were not independently reconciled for this cycle."
       }
     ],
-    "status": "article-published",
+    "status": "article-and-alert-cycle-complete",
     "validation": {
       "policyBaseCommit": "c0e365fef5dd42baf65356d12880f5f5063131fe",
       "localPreflight": "blocked; pinned Chromium headless shell build 1200 absent; no install retry",
@@ -152,7 +160,7 @@
     "recoveredMissedMediaAsset": null,
     "coordination": "Issue #160 checked; November 4 recovery terminal for fallback capability, not article acceptance. Existing holds preserved.",
     "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
-    "updatedAt": "2026-11-05T12:11:11.595Z"
+    "updatedAt": "2026-11-05T15:18:36-05:00"
   },
   "history": [
     {
