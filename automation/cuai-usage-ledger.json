@@ -4391,6 +4391,52 @@
       ],
       "summary": "Run 41937984319 failed because the read-only ga4-metrics request exceeded its 25-second timeout. Its uploaded receipt proves authentication and exact Production identity were verified, actions=[] and reconciliations=[], so no provider write had an unknown outcome and no scheduling retry was authorized. Search Console and Buffer receipts were preserved. Later exact-current-main run 42068865163 completed with zero distribution attempts and zero source/action exceptions, proving the provider/source path recovered. Because the same GA4 timeout pattern occurred in run 41549877758 on November 3, PR #294 implements the previously recommended durable prevention: one bounded retry only around read-only source invocation timeouts, with persistent timeouts still observable. Two regression tests prove a transient timeout recovers and a persistent timeout is capped while scheduling and queue writes remain single-attempt. Two intermediate exact-head validations correctly rejected refactor defects; accepted head b973961905cee0d97204faa0324bc9ee73cc595e passed 155 repository tests and 44 rendered checks with the actual pinned browser, and its Vercel Preview is READY. Current Production remains READY on exact main 4ac764c1ff5047baacf17f51128cf38065289864; the homepage, latest article and News index return HTTP 200, and the available 30-minute runtime-error view is clean. Daily state records one November 5 Standard article; the 55-item social queue has only the November 2 company-page post this week and no duplicate active date. automation/recovery/README.md remains absent, so no unreleased recovery code or shared checkpoint adapter was used. No credential, schedule, permission, editorial gate, social limit, UTM, destination or external-write authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-05T15:18:36-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Bounded November 5 editorial portfolio, Alert, homepage-freshness, analytics-learning, reliability, commercial-state and handoff review after the recorded daily publisher outcome.",
+      "status": "success-with-alert-audience-assessment-blocked",
+      "workUnits": {
+        "policyFilesReviewed": 5,
+        "busIssueCommentsReviewed": 200,
+        "completedPublisherHandoffsConsumed": 1,
+        "reliabilityRecoveriesConsumed": 2,
+        "portfolioArticlesReviewed": 90,
+        "recentPortfolioArticlesAnalyzed": 15,
+        "currentWeekArticlesReviewed": 4,
+        "editorialCandidatesConsumedFromPublisher": 12,
+        "primarySourceSurfacesScreened": 8,
+        "qualifiedAlertsPublished": 1,
+        "homepageFreshnessWrites": 1,
+        "dailyHistoryEntriesPreserved": 76,
+        "exactMainMeasurementRunsReviewed": 1,
+        "measurementArtifactDownloadFailures": 2,
+        "audienceAssessmentsBlocked": 1,
+        "houseCampaignPreparedItemsObserved": 1,
+        "socialSchedulingAttempts": 0,
+        "externalContacts": 0,
+        "spendAuthorized": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public web search"
+      ],
+      "operationalLearning": {
+        "issue": "The current policy version requires actual fresh audience values and a comparable dated reference, but the exact-current-main verified-operations run succeeded while its receipt artifact remained unreadable after two bounded HTTP 503 download failures.",
+        "correction": "Consumed policy commit fb8d00db79d1ebbc3d55b4ad170cc070c6dff341 on ordinary work, kept the audience assessment open and blocked instead of treating source health or report completion as audience learning, retained CUAI Operating System ownership and routed the material read/access blocker through the existing issue #160 reliability path. Separately published one source-led OCC Alert without changing the completed article or social handoff.",
+        "controllingVersion": "Main fb8d00db79d1ebbc3d55b4ad170cc070c6dff341; operating-policy blob b5dea31e; verified-operations run 42089122601 and artifact 13443593198; OCC Bulletin 2026-54 dated November 4, 2026.",
+        "owner": "cuai-operating-system retains the unfinished audience assessment; existing Reliability Watch owns material read/access failures; Watney owns any cross-owner decision.",
+        "test": "Run 42089122601 on exact current main completed successfully with authentication and production identity verified, zero distribution attempts and zero source/action exceptions. Artifact download returned HTTP 503 twice, so no GA4, Search Console or Buffer value, channel identity, period comparison or audience outcome is claimed. The Alert source is the primary OCC bulletin and the copy explicitly limits applicability to a comparative signal, not an NCUA requirement.",
+        "decision": "observe",
+        "actualResult": "Ordinary-owner policy adoption is demonstrated by this receipt. Detailed audience assessment remains blocked; audience benefit is unmeasured. The Alert package still requires exact-head CI/rendered acceptance and post-merge production verification.",
+        "nextTrigger": "On the next weekday, retry the existing authorized exact-main artifact read once and carry this same assessment forward if values remain unreadable. Check PR #279 outcomes only after the agreed seven-day age from November 3; do not restart completed fixes or create a new analytics job."
+      },
+      "summary": "Thursday met its one-article target with the production-cleared GECU integration News item; the week is 4 of 8. Across the latest 15 of 90 articles, coverage remains 11 News and 4 Insights, with six reported-news items, four explainers, three data briefs and two case studies; all 15 beats are distinct. Operations and risk/compliance remain concentrated while HR, board, finance and vendor leadership are relatively thin. Preserve the next candidate on AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. Published one November 4 OCC Alert because it is a new primary-source examiner framework with a concrete governance implication; copy states it is not an NCUA rule and creates no direct credit-union requirement. The completed Standard article remains ineligible for LinkedIn and no social action occurred. The approved house campaign remains prepared only with no new provider delivery evidence. Exact-main measurement source health is current, but actual audience values and a comparable reference are unknown because artifact retrieval returned HTTP 503 twice; the assessment remains open with CUAI Operating System and the existing reliability path. No external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
