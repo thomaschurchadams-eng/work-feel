@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T18:32:00+00:00",
+  "updatedAt": "2026-11-05T18:35:00+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -353,13 +353,13 @@
       "owner": "CUAI Operating System for assessment; existing Reliability Watch for read/access failures; Watney for cross-owner decisions",
       "controllingPolicy": "automation/scheduled-tasks/cuai-operating-system.md",
       "validation": [
-        "Preserve all prior improvement entries and every pre-existing operating safeguard.",
-        "Review the exact two-file candidate and replay the November 2 evidence-divergence and November 4 unreadable-metrics cases against the new instructions."
+        "Local preservation check passed: all prior operating-policy content remains unchanged outside the new section, and all 18 prior improvement entries are unchanged.",
+        "Independent instruction review replayed November 2 evidence divergence, November 4 unreadable metrics and already-completed November 3 repairs; closure behavior passed. Review corrected rollback wording to retain this history. Exact-head repository CI and next ordinary-owner consumption are separate gates."
       ],
       "status": "configured-pending-ordinary-owner-consumption",
       "result": "Existing mobile reading improvements (PR279) and offline date/acquisition fixes (PR281) are already merged and must not be restarted. This policy change does not establish current event ingestion, reconciled CAI outcomes, ordinary operating adoption or audience improvement. Configuration validation and eventual merge receipts belong with this change; adoption and measured results remain open.",
       "nextTrigger": "The next ordinary CUAI Operating System run after merge must identify the policy version, consume available fresh evidence, and retain the existing owner and precise review trigger if detailed/comparable evidence is blocked. Reuse the existing analytics investigation rather than dispatching a new job. Check PR279 outcomes after its agreed seven-day age from November 3 implementation, not from the October 30 diagnosis; check immediate failures sooner. Use subsequent existing daily/weekly reviews for keep/revise/stop or an evidence-backed inconclusive result.",
-      "rollback": "Revert only this six-step analytics-loop addition and its new ledger entry if it causes verified friction or conflicting instructions; retain history and all pre-existing source, privacy, permission and editorial gates."
+      "rollback": "Revert only the six-step analytics-loop addition if it causes verified friction or conflicting instructions. Preserve this ledger entry and its history, recording a reverted/stopped disposition with reason and evidence; retain all pre-existing source, privacy, permission and editorial gates."
     }
   ]
 }
