@@ -49,11 +49,23 @@ class ProductionIdentityRefreshError extends Error {
  constructor(message='production_identity_refresh_failed'){super(message);this.name='ProductionIdentityRefreshError';this.code='production_identity_refresh_failed';}
 }
 async function readSource(route){
- let response;
- for(let attempt=1;attempt<=3;attempt++){
-  response=await invoke(route,{});
+ let deploymentAttempts=0;
+ let timeoutRetries=0;
+ while(true){
+  let response;
+  try {
+   response=await invoke(route,{});
+  }catch(error){
+   const timeout=error?.name==='TimeoutError'||error?.name==='AbortError';
+   if(!timeout||timeoutRetries===1)throw error;
+   timeoutRetries++;
+   receipts.sourceRetries.push({route,reason:'source_timeout',attempt:timeoutRetries});save();
+   await sleep(1000);
+   continue;
+  }
   const deploymentRace=response.status===403&&response.data?.error==='deployment_commit_mismatch';
-  if(!deploymentRace||attempt===3)return response;
+  deploymentAttempts++;
+  if(!deploymentRace||deploymentAttempts===3)return response;
   try {
   const previousCommit=operationCommit;
   const current=await github('/commits/main');
