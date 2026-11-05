@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'AI Supervision',
+      headline: 'OCC Gives Examiners a Framework for AI and Agentic-System Risk',
+      summary:
+        'The OCC said on November 4 that its new examiner framework for advanced and agentic AI focuses supervisory work on a use case’s potential consequences, transfer of agency and human oversight. The agency says the guide does not create enforceable standards, prescriptive requirements or new supervisory expectations for banks.',
+      impact:
+        'This is not an NCUA rule and does not apply directly to credit unions. Credit-union board, risk, technology, compliance and vendor-management teams can use it as a comparative signal: inventory higher-consequence and agentic use cases, document transferred authority and human oversight, scale controls to potential failure or misuse, and monitor NCUA and state regulators rather than treating the OCC guide as a current requirement.',
+      sourceName: 'Office of the Comptroller of the Currency',
+      sourceUrl:
+        'https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html',
+      date: 'Nov 4, 2026',
+      slug: 'occ-ai-agentic-system-supervisory-framework'
+    },
+    {
       label: 'NCUA Deregulation',
       headline: 'NCUA Finalizes PPP and Lien Changes, Removes Obsolete Lending Rule',
       summary:
@@ -1141,7 +1154,7 @@
 
   // Maintained by the weekday operating cycle. Items expire automatically after seven days.
   const homepageWatchState = {
-    reviewedAt: '2026-11-03T15:22:00-05:00',
+    reviewedAt: '2026-11-05T15:18:36-05:00',
     items: []
   };
 
