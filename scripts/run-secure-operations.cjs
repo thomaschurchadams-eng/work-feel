@@ -1,4 +1,5 @@
 const fs=require('node:fs');
+const {closedRange}=require('../lib/ga4-acquisition-diagnostic');
 const MEDIA_POLICY=require('../automation/media-policy.json');
 const REPO='thomaschurchadams-eng/work-feel';
 const API='https://api.github.com/repos/'+REPO;
@@ -21,6 +22,38 @@ function receiptResponse(route,response){
   window.queryTextPersistence='omitted_from_operation_receipts';
  }
  return sanitized;
+}
+// Diagnostic artifacts contain aggregate metrics/quality evidence, not raw
+// source, medium, campaign or other dimension strings from provider responses.
+function diagnosticReceipt(response){
+ const data=response.data||{};
+ const diagnostic=data.acquisitionDiagnostic;
+ const metrics=row=>({sessions:Number(row?.sessions)||0,engagedSessions:Number(row?.engagedSessions)||0});
+ const reports={};
+ for(const name of ['overview','sourceMedium','sourceMediumCampaign']){
+  const report=diagnostic?.reports?.[name];
+  if(!report)continue;
+  reports[name]={rowCount:report.rowCount,returnedRows:report.returnedRows,truncated:report.truncated,
+   rowSums:metrics(report.rowSums),providerTotals:(report.providerTotals||[]).map(metrics),
+   evidence:(report.evidence||[]).map(page=>({rowCount:page.rowCount,metadata:page.metadata,providerTotals:(page.providerTotals||[]).map(metrics)}))};
+ }
+ return {status:response.status,data:{ok:data.ok===true,
+  acquisitionDiagnostic:diagnostic?{dateRanges:diagnostic.dateRanges,status:diagnostic.status,
+   ...(diagnostic.status==='unavailable'?{error:'ga4_diagnostic_unavailable'}:{}),
+   reports,limits:diagnostic.limits,generatedAt:diagnostic.generatedAt}:undefined,
+  dimensionTextPersistence:'omitted_from_operation_receipts'}};
+}
+function runMode(){
+ const mode=process.env.CUAI_OPERATION_MODE||'operations';
+ const diagnosticStart=process.env.CUAI_DIAGNOSTIC_START||'',diagnosticEnd=process.env.CUAI_DIAGNOSTIC_END||'';
+ if(!['operations','ga4-readonly'].includes(mode))throw Error('invalid_operation_mode');
+ if(mode==='operations'){
+  if(diagnosticStart||diagnosticEnd)throw Error('unexpected_diagnostic_dates');
+  return {mode,payload:{}};
+ }
+ if(process.env.GITHUB_EVENT_NAME!=='workflow_dispatch')throw Error('diagnostic_requires_manual_dispatch');
+ closedRange(diagnosticStart,diagnosticEnd);
+ return {mode,payload:{diagnosticStart,diagnosticEnd}};
 }
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function github(path,options={}){const response=await fetch(API+path,{...options,headers:{...headers,...options.headers},signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error('github_'+response.status);return response.json();}
@@ -48,10 +81,10 @@ async function reportOnlyDrift(productionSha,runSha){
 class ProductionIdentityRefreshError extends Error {
  constructor(message='production_identity_refresh_failed'){super(message);this.name='ProductionIdentityRefreshError';this.code='production_identity_refresh_failed';}
 }
-async function readSource(route){
+async function readSource(route,payload={}){
  let response;
  for(let attempt=1;attempt<=3;attempt++){
-  response=await invoke(route,{});
+  response=await invoke(route,payload);
   const deploymentRace=response.status===403&&response.data?.error==='deployment_commit_mismatch';
   if(!deploymentRace||attempt===3)return response;
   try {
@@ -105,6 +138,8 @@ async function reconcileSentQueue(bufferResponse){
  return changed;
 }
 (async()=>{
+ const configuration=runMode();
+ receipts.mode=configuration.mode;
  if(!/^[a-f0-9]{40}$/.test(process.env.DEPLOYED_SHA||''))throw Error('invalid_deployment_sha');
  const current=await github('/commits/main');if(current.sha!==process.env.DEPLOYED_SHA){receipts.status='superseded';save();console.log('A newer main commit exists; its production deployment owns the next run.');return;}
  // Main pushes can precede Vercel promotion. A report-only commit may also be
@@ -117,16 +152,28 @@ async function reconcileSentQueue(bufferResponse){
   try {
    const health=await invoke('operations-health',{});
    const drift=health.status===200&&health.data?.ok===true?await reportOnlyDrift(health.data.commit,process.env.DEPLOYED_SHA):{allowed:false,files:[]};
-   receipts.productionCheck={status:health.status,commit:health.data.commit,runCommit:process.env.DEPLOYED_SHA,environment:health.data.environment,error:health.data.error,reportOnlyDrift:drift.allowed,driftFiles:drift.files};
+   receipts.productionCheck={status:health.status,commit:health.data.commit,runCommit:process.env.DEPLOYED_SHA,environment:health.data.environment,error:configuration.mode==='ga4-readonly'?(health.data.error?'production_identity_check_failed':undefined):health.data.error,reportOnlyDrift:drift.allowed,driftFiles:drift.files};
    productionReady=health.status===200&&health.data.ok===true&&health.data.environment==='production'&&drift.allowed;
    if(productionReady)operationCommit=health.data.commit;
-  }catch(error){receipts.productionCheck={error:error.message};}
+  }catch(error){receipts.productionCheck={error:configuration.mode==='ga4-readonly'?'production_identity_check_failed':error.message};}
   if(productionReady)break;
   if(Date.now()>=deadline)break;
   await sleep(5000);
  }while(Date.now()<deadline);
  if(!productionReady)throw Error('production_identity_check_failed');
  receipts.authentication='verified';save();
+ if(configuration.mode==='ga4-readonly'){
+  // This branch ends the run on success, unavailable data or any exception.
+  // Never fall through to other sources, reconciliation, scheduling or writes.
+  try{
+   const response=await readSource('ga4-metrics',configuration.payload);
+   fs.writeFileSync('operation-receipts/ga4-metrics.json',JSON.stringify(diagnosticReceipt(response),null,2)+'\n');
+   if(response.status!==200||response.data?.ok!==true||!response.data?.acquisitionDiagnostic||response.data.acquisitionDiagnostic.status==='unavailable')receipts.errors.push({route:'ga4-metrics',error:'ga4_diagnostic_unavailable'});
+  }catch(error){receipts.errors.push({route:'ga4-metrics',error:error instanceof ProductionIdentityRefreshError?'production_identity_refresh_failed':'ga4_diagnostic_request_failed'});}
+  receipts.completedAt=new Date().toISOString();receipts.status=receipts.errors.length?'attention':'verified';save();
+  if(receipts.errors.length)process.exitCode=1;
+  return;
+ }
  // Metrics are read-only. Vercel route propagation can briefly lag the verified
  // production health check, so retry only the exact deployment-mismatch case.
  // Other source failures remain visible immediately and never become zero data.
@@ -146,4 +193,4 @@ async function reconcileSentQueue(bufferResponse){
  receipts.completedAt=new Date().toISOString();receipts.status=receipts.errors.length?'attention':'verified';save();
  console.log('Production identity verified; '+receipts.actions.length+' distribution attempts; '+receipts.errors.length+' source/action exceptions.');
  if(receipts.errors.length)process.exitCode=1;
-})().catch(error=>{receipts.errors.push({error:error.message});receipts.status='failed';save();console.error(error.message);process.exitCode=1;});
+})().catch(error=>{const message=process.env.CUAI_OPERATION_MODE==='ga4-readonly'?'ga4_readonly_run_failed':error.message;receipts.errors.push({error:message});receipts.status='failed';save();console.error(message);process.exitCode=1;});
