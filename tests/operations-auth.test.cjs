@@ -8,8 +8,8 @@ test('signature, algorithm and key failures reject the token',async()=>{for(cons
 test('all endpoints reject public SHA-only calls before any downstream request',async()=>{let calls=0;const saved=global.fetch;global.fetch=async()=>{calls++;throw Error('Unexpected external request');};try{for(const name of ['buffer-schedule','buffer-schedule-image','buffer-schedule-tracked','buffer-metrics','ga4-metrics','search-console-metrics','operations-health']){const handler=require('../api/'+name);let status,result;const response={setHeader(){},status(value){status=value;return this;},json(value){result=value;return this;}};await handler({method:'POST',headers:{},query:{commitSha:'public'},body:{commitSha:'public'}},response);assert.equal(status,401,name);assert.equal(result.ok,false);}assert.equal(calls,0);}finally{global.fetch=saved;}});
 const vm=require('node:vm');const fs=require('node:fs');
 const runner=fs.readFileSync(require('node:path').join(__dirname,'../scripts/run-secure-operations.cjs'),'utf8');
-async function runWorkflow({moved=false,healthFailure=false,timeout=false,queued=false,noReceipt=false,queueChanged=false,delayedHealth=false,productionDrift=null,sourceRace=null,queryFixture=false,refreshFailure=null,reconcile=false,metricFailure=false,nativeReceipt=null,nativeItem=false,nativeQueueChanged=false,videoSent=false,videoMissingAsset=false}={}){
- const sha='a'.repeat(40),productionSha=productionDrift||sourceRace?'c'.repeat(40):sha,calls=[],files={};let healthCalls=0,virtualNow=Date.now(),currentProductionSha=productionSha,refreshPending=false,refreshFaultInjected=false;class Clock extends Date {static now(){return virtualNow;}};const item={id:'linkedin-test',status:'queued',scheduledFor:new Date(Date.now()+86400000).toISOString(),articleUrl:'https://creditunionainews.com/article',copy:'example'};
+async function runWorkflow({moved=false,healthFailure=false,timeout=false,queued=false,noReceipt=false,queueChanged=false,delayedHealth=false,productionDrift=null,sourceRace=null,queryFixture=false,refreshFailure=null,reconcile=false,metricFailure=false,metricTimeouts=0,nativeReceipt=null,nativeItem=false,nativeQueueChanged=false,videoSent=false,videoMissingAsset=false}={}){
+ const sha='a'.repeat(40),productionSha=productionDrift||sourceRace?'c'.repeat(40):sha,calls=[],files={};let healthCalls=0,metricTimeoutCalls=0,virtualNow=Date.now(),currentProductionSha=productionSha,refreshPending=false,refreshFaultInjected=false;class Clock extends Date {static now(){return virtualNow;}};const item={id:'linkedin-test',status:'queued',scheduledFor:new Date(Date.now()+86400000).toISOString(),articleUrl:'https://creditunionainews.com/article',copy:'example'};
  if(nativeItem)Object.assign(item,{mediaType:'video',videoUrl:'https://creditunionainews.com/assets/video-aaaaaaaaaaaa.mp4',videoSha256:'a'.repeat(64)});
  const scheduled={id:'scheduled-test',status:'scheduled',postId:'sent-post',scheduledFor:new Date(Date.now()-60000).toISOString(),articleUrl:'https://creditunionainews.com/sent-article',distributionUrl:'https://creditunionainews.com/sent-article?utm_source=linkedin',channelId:'channel-test'};
  if(videoSent||videoMissingAsset)Object.assign(scheduled,{status:'blocked',mediaType:'video',reconciliationRequired:true});
@@ -30,7 +30,7 @@ async function runWorkflow({moved=false,healthFailure=false,timeout=false,queued
  else if(String(url).startsWith('https://identity.example/'))body={value:'signed-fixture'};
  else if(String(url).endsWith('/operations-health')){healthCalls++;if(sourceRace&&healthCalls>1)currentProductionSha=sourceRace==='unsafe'||failureTarget==='compare'?'b'.repeat(40):sha;body=healthFailure||(delayedHealth&&healthCalls===1)?{ok:false}:{ok:true,commit:currentProductionSha,environment:'production'};}
  else if(String(url).includes('/contents/automation/social-queue.json')&&options.method!=='PUT')body={sha:'queue-version',content:Buffer.from(JSON.stringify({items:[...(queued?[{...item,...(queueChanged?{copy:'Changed after scheduling'}:{}),...(nativeQueueChanged?{videoUrl:'https://creditunionainews.com/assets/changed-bbbbbbbbbbbb.mp4'}:{})}]:[]),...(reconcile?[scheduled]:[]),{id:'untouched',status:'sent'}]})).toString('base64')};
- else if(String(url).includes('/api/')){assert.equal(options.method,'POST');assert.equal(options.headers.Authorization,'Bearer signed-fixture');const suppliedCommit=JSON.parse(options.body).commitSha;if(sourceRace&&String(url).endsWith('/ga4-metrics')&&suppliedCommit===productionSha){status=403;body={ok:false,error:'deployment_commit_mismatch'};refreshPending=true;}else if(!refreshFailure)assert.equal(suppliedCommit,currentProductionSha);if(metricFailure&&String(url).endsWith('/ga4-metrics'))throw Error('metric retrieval unavailable');if(reconcile&&String(url).endsWith('/buffer-metrics'))body={ok:true,channel:{id:'channel-test'},posts:[{...scheduled,itemId:scheduled.id,sentAt:new Date(Date.now()-30000).toISOString(),externalLink:'https://linkedin.com/posts/fixture',videoAttached:videoSent===true}]};if(queryFixture&&String(url).endsWith('/search-console-metrics'))body={ok:true,windows:{sevenDay:{aggregate:{clicks:2},topPages:[{page:'https://creditunionainews.com/news.html',clicks:2}],topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:2}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',page:'https://creditunionainews.com/news.html',clicks:2}],queryReporting:{queries:{status:'available'}}},twentyEightDay:{topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}]}}};if(String(url).endsWith('/buffer-schedule-tracked')){if(timeout)throw Error('ambiguous timeout');if(nativeReceipt){status=202;body=nativeReceipt;}else if(!noReceipt)body={ok:true,postId:'buffer-receipt',status:'scheduled'};}}
+ else if(String(url).includes('/api/')){assert.equal(options.method,'POST');assert.equal(options.headers.Authorization,'Bearer signed-fixture');const suppliedCommit=JSON.parse(options.body).commitSha;if(sourceRace&&String(url).endsWith('/ga4-metrics')&&suppliedCommit===productionSha){status=403;body={ok:false,error:'deployment_commit_mismatch'};refreshPending=true;}else if(!refreshFailure)assert.equal(suppliedCommit,currentProductionSha);if(metricTimeouts&&String(url).endsWith('/ga4-metrics')&&metricTimeoutCalls++<metricTimeouts){const error=Error('transient source timeout');error.name='TimeoutError';throw error;}if(metricFailure&&String(url).endsWith('/ga4-metrics'))throw Error('metric retrieval unavailable');if(reconcile&&String(url).endsWith('/buffer-metrics'))body={ok:true,channel:{id:'channel-test'},posts:[{...scheduled,itemId:scheduled.id,sentAt:new Date(Date.now()-30000).toISOString(),externalLink:'https://linkedin.com/posts/fixture',videoAttached:videoSent===true}]};if(queryFixture&&String(url).endsWith('/search-console-metrics'))body={ok:true,windows:{sevenDay:{aggregate:{clicks:2},topPages:[{page:'https://creditunionainews.com/news.html',clicks:2}],topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:2}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',page:'https://creditunionainews.com/news.html',clicks:2}],queryReporting:{queries:{status:'available'}}},twentyEightDay:{topQueries:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}],topQueryPages:[{query:'PRIVATE_QUERY_SENTINEL',clicks:3}]}}};if(String(url).endsWith('/buffer-schedule-tracked')){if(timeout)throw Error('ambiguous timeout');if(nativeReceipt){status=202;body=nativeReceipt;}else if(!noReceipt)body={ok:true,postId:'buffer-receipt',status:'scheduled'};}}
  return {ok:status<400,status,json:async()=>body};};
  await vm.runInNewContext(runner,{require:name=>name==='node:fs'?fakeFs:require(name),process:processStub,fetch:fetcher,URL,AbortSignal,Buffer,Date:Clock,setTimeout:(fn,delay)=>{virtualNow+=delay;fn();},console:{log(){},error(){}}});
  return {calls,files,process:processStub,productionSha};
@@ -84,6 +84,29 @@ test('ordinary metric failure stays nonfatal for a verified queued reservation',
  assert.equal(result.calls.filter(c=>c.options.method==='PUT').length,1);
  assert.equal(result.process.exitCode,1);
  assert.equal(JSON.parse(result.files['operation-receipts/run.json']).status,'attention');
+});
+
+test('read-only source timeout retries once without retrying a scheduling write',async()=>{
+ const result=await runWorkflow({queued:true,metricTimeouts:1});
+ assert.equal(result.calls.filter(c=>c.url.endsWith('/ga4-metrics')).length,2);
+ assert.equal(result.calls.filter(c=>c.url.endsWith('/buffer-schedule-tracked')).length,1);
+ assert.equal(result.calls.filter(c=>c.options.method==='PUT').length,1);
+ const receipt=JSON.parse(result.files['operation-receipts/run.json']);
+ assert.deepEqual(receipt.sourceRetries,[{route:'ga4-metrics',reason:'source_timeout',attempt:1}]);
+ assert.equal(receipt.status,'verified');
+ assert.equal(result.process.exitCode,undefined);
+});
+
+test('persistent source timeout is capped after one retry and remains observable',async()=>{
+ const result=await runWorkflow({queued:true,metricTimeouts:2});
+ assert.equal(result.calls.filter(c=>c.url.endsWith('/ga4-metrics')).length,2);
+ assert.equal(result.calls.filter(c=>c.url.endsWith('/buffer-schedule-tracked')).length,1);
+ assert.equal(result.calls.filter(c=>c.options.method==='PUT').length,1);
+ const receipt=JSON.parse(result.files['operation-receipts/run.json']);
+ assert.deepEqual(receipt.sourceRetries,[{route:'ga4-metrics',reason:'source_timeout',attempt:1}]);
+ assert.equal(receipt.errors[0].route,'ga4-metrics');
+ assert.equal(receipt.status,'attention');
+ assert.equal(result.process.exitCode,1);
 });
 
 test('native processing and unknown receipts block the same queue item and preserve any provider ID',async()=>{
