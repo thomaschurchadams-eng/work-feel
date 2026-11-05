@@ -4347,6 +4347,50 @@
       ],
       "summary": "PR #290 restored a tested fail-closed acceptance path without replaying the blocked November 4 cycle: an early actual browser-launch preflight now stops unavailable local rendering before research, while the existing read-only pull-request design job may provide exact-head acceptance from a job-local browser cache without changing schedules, permissions, dependency versions or editorial gates. Its exact-head run 41937037129 passed 153 repository tests and 44 desktop/mobile, accessibility and artwork normal/404/recovery checks. The next ordinary publisher cycle then exercised that path on exact candidate dc0b269aa5057bf0a95f4c98e6db2dd10c296938: run 42025158074 again passed 153 tests and 44 rendered checks, after which PR #291 merged the November 5 GECU Standard News package. Production deployment dpl_Fonv433oM5YKyW9Gi1kuHLhcCAiJ is READY on exact main f9ae630dd129423e7c01331e76a1564776385776; the article, authored JPEG, homepage, News index and sitemap return HTTP 200; the 24-hour runtime-error view is clean. Daily state preserves 76 history records and records one November 5 article. Social state remains 55 items with only the November 2 company-page item this week, already sent once, and no duplicate dates. Post-merge verified operations succeeded with zero distribution attempts and zero source/action exceptions. The original issue #160 dedupe key was already closed once by the publisher recovery receipt and was not reopened. Local default Chromium and strong cross-task cache isolation remain unproven, so each future ordinary article still requires its own exact-head rendered acceptance; the operational blocker is nevertheless recovered through the tested existing runner path.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-05T12:28:23-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Verified-operations run 41937984319 on original SHA c0e365fef5dd42baf65356d12880f5f5063131fe failed at the operate stage on a repeated read-only GA4 timeout after production identity was verified.",
+      "status": "recovered",
+      "incidentKey": "cuai-verified-operations:41937984319:c0e365fef5dd42baf65356d12880f5f5063131fe:operate",
+      "workUnits": {
+        "failedVerifiedOperationsRunsReviewed": 1,
+        "workflowJobsReviewed": 2,
+        "operationReceiptArtifactsDownloaded": 1,
+        "operationReceiptFilesReviewed": 3,
+        "successfulVerifiedOperationsRunsReviewed": 1,
+        "repeatedFailurePatternsConfirmed": 1,
+        "sourceRetryCodeFilesChanged": 1,
+        "regressionTestsAdded": 2,
+        "failedValidationRunsReviewed": 2,
+        "successfulValidationRunsReviewed": 1,
+        "repositoryTestsObserved": 155,
+        "renderedChecksObserved": 44,
+        "previewDeploymentChecks": 1,
+        "productionDeploymentChecks": 1,
+        "liveSurfaceChecks": 3,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "distributionAttemptsObserved": 0,
+        "providerWriteAcknowledgmentsObserved": 0,
+        "externalWriteRetries": 0,
+        "recoveryRunbookReferencesMissing": 1,
+        "recoveryBranchesCreated": 1,
+        "pullRequestsCreated": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Google Analytics via verified operations"
+      ],
+      "summary": "Run 41937984319 failed because the read-only ga4-metrics request exceeded its 25-second timeout. Its uploaded receipt proves authentication and exact Production identity were verified, actions=[] and reconciliations=[], so no provider write had an unknown outcome and no scheduling retry was authorized. Search Console and Buffer receipts were preserved. Later exact-current-main run 42068865163 completed with zero distribution attempts and zero source/action exceptions, proving the provider/source path recovered. Because the same GA4 timeout pattern occurred in run 41549877758 on November 3, PR #294 implements the previously recommended durable prevention: one bounded retry only around read-only source invocation timeouts, with persistent timeouts still observable. Two regression tests prove a transient timeout recovers and a persistent timeout is capped while scheduling and queue writes remain single-attempt. Two intermediate exact-head validations correctly rejected refactor defects; accepted head b973961905cee0d97204faa0324bc9ee73cc595e passed 155 repository tests and 44 rendered checks with the actual pinned browser, and its Vercel Preview is READY. Current Production remains READY on exact main 4ac764c1ff5047baacf17f51128cf38065289864; the homepage, latest article and News index return HTTP 200, and the available 30-minute runtime-error view is clean. Daily state records one November 5 Standard article; the 55-item social queue has only the November 2 company-page post this week and no duplicate active date. automation/recovery/README.md remains absent, so no unreleased recovery code or shared checkpoint adapter was used. No credential, schedule, permission, editorial gate, social limit, UTM, destination or external-write authority changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
