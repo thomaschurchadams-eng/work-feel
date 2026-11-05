@@ -4437,6 +4437,51 @@
       },
       "summary": "Thursday met its one-article target with the production-cleared GECU integration News item; the week is 4 of 8. Across the latest 15 of 90 articles, coverage remains 11 News and 4 Insights, with six reported-news items, four explainers, three data briefs and two case studies; all 15 beats are distinct. Operations and risk/compliance remain concentrated while HR, board, finance and vendor leadership are relatively thin. Preserve the next candidate on AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls. Published one November 4 OCC Alert because it is a new primary-source examiner framework with a concrete governance implication; copy states it is not an NCUA rule and creates no direct credit-union requirement. The completed Standard article remains ineligible for LinkedIn and no social action occurred. The approved house campaign remains prepared only with no new provider delivery evidence. Exact-main measurement source health is current, but actual audience values and a comparable reference are unknown because artifact retrieval returned HTTP 503 twice; the assessment remains open with CUAI Operating System and the existing reliability path. No external contact, spend, credential, schedule, model, permission, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-05T17:36:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The November 5 operating review left its audience assessment explicitly blocked after two HTTP 503 responses while reading the authorized exact-main verified-operations artifact.",
+      "status": "recovered",
+      "incidentKey": "cuai-measurement-handoff:verified-ops-artifact-read:42089122601:2026-11-05",
+      "workUnits": {
+        "currentMainCommitsReviewed": 3,
+        "policyAndProtocolFilesReviewed": 5,
+        "operatingReceiptsReviewed": 1,
+        "failedArtifactDownloadAttemptsReviewed": 2,
+        "verifiedOperationsRunsReviewed": 1,
+        "workflowArtifactsListed": 1,
+        "operationReceiptArtifactsDownloaded": 1,
+        "artifactDigestsVerified": 1,
+        "operationReceiptFilesReviewed": 4,
+        "verifiedMeasurementSourcesReviewed": 3,
+        "verifiedMeasurementSourcesHealthy": 3,
+        "productionDeploymentChecks": 1,
+        "liveSurfaceChecks": 3,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "dailyStateChecks": 1,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "distributionAttemptsObserved": 0,
+        "providerWriteAcknowledgmentsObserved": 0,
+        "externalWriteRetries": 0,
+        "recoveryRunbookReferencesMissing": 1,
+        "recoveryBranchesCreated": 1,
+        "pullRequestsCreated": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Google Analytics via verified operations",
+        "Google Search Console via verified operations",
+        "Buffer via verified operations"
+      ],
+      "summary": "The operating review correctly failed closed after two transient HTTP 503 responses prevented reading artifact 13443593198 from exact-main verified-operations run 42089122601. Reliability retried only the authorized read. The artifact now downloads successfully, its SHA-256 digest matches GitHub's authoritative digest, and all four receipt files parse. run.json reports status=verified, authentication=verified, errors=[], actions=[] and reconciliations=[] on commit fb8d00db79d1ebbc3d55b4ad170cc070c6dff341; GA4, Search Console and Buffer receipts each report HTTP 200 with data.ok=true, and Buffer identifies the approved CreditUnionAI News LinkedIn company channel. No distribution or provider write was retried. This restores the blocked evidence handoff but does not perform or claim the ordinary owner's audience assessment; CUAI Operating System retains that assessment under its existing policy and next-review trigger. Current main cd908d2a209be92b5826fb68df7dc172e1b258ae is deployed READY in Production, the homepage, current article and Alerts surface return HTTP 200, the available 30-minute runtime-error view is clean, daily state records one article and one Alert with 76 history entries, and the 55-item social queue has one sent item this week with no duplicate date reservation. automation/recovery/README.md remains absent, so no unreleased recovery code or shared-checkpoint adapter was used. No credential, schedule, permission, editorial gate, social limit, UTM, destination or external-write authority changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
