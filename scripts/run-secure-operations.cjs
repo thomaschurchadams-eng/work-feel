@@ -83,6 +83,7 @@ async function readSource(route){
    // JSON and malformed identity errors. Do not persist raw provider error text.
    throw new ProductionIdentityRefreshError(error?.message==='main_changed_during_source_retry'?error.message:undefined);
   }
+  continue;
  }
  return response;
 }
