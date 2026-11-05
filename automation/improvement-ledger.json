@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T18:23:46+00:00",
+  "updatedAt": "2026-11-05T18:35:00+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -337,6 +337,29 @@
       "result": "KEEP removal of indiscriminate substitution and explicit text-only fallback. Immediate UX corrections are privately verified; production remains unchanged until this exact candidate is released and live-verified. Campaign placement/email changes are coordinated in the same candidate, not a parallel branch.",
       "nextTrigger": "At the next listing-card/artwork edit or reported image failure, run the existing normal browser readiness path and inspect mobile/desktop cards. Unexpected broken source assets still block release even when degraded UI is readable. Reuse approved specific art or intentional text; never arbitrary generic substitution.",
       "rollback": "Revert only this candidate if a verified regression is found; do not restore placeholder injection as a remedy. Preserve real authored art and campaign release history."
+    },
+    {
+      "id": "audience-learning-owner-closure-2026-11-05",
+      "evidence": "The November 2 weekly editorial review consumed fresh audience evidence while the same day's operating receipt still cited October 2. Reliability's November 3 receipt documented ten interactive-401 measurement handoffs since October 21 and introduced the verified-artifact fallback. November 4's operating receipt confirmed source health but left detailed metrics unread after artifact-download failures, with completed status and no next owner. Source recovery and report completion did not establish a completed audience assessment.",
+      "sources": [
+        "https://chatgpt.com/space/page_dd06e75a08b881918fb28962280bd491",
+        "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6588359895",
+        "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6616235172",
+        "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6641332326"
+      ],
+      "proposedChange": "Require the existing operating analytics loop to record fresh dated evidence and comparable observations, disposition, accepted owner/action or blocker, actual implementation/result and next review. Preserve material gaps across reviews instead of closing them with report completion; reuse existing receipts and the improvement ledger.",
+      "expectedBenefit": "Earlier useful detection and accountable follow-through without another role, report, schedule or analytics job. Audience and time-saving gains remain unmeasured.",
+      "risk": "Low: operating instructions and one additive improvement record only. No executable code, public content, provider, credential, access, schedule, model, quota, social or release-gate changes.",
+      "owner": "CUAI Operating System for assessment; existing Reliability Watch for read/access failures; Watney for cross-owner decisions",
+      "controllingPolicy": "automation/scheduled-tasks/cuai-operating-system.md",
+      "validation": [
+        "Local preservation check passed: all prior operating-policy content remains unchanged outside the new section, and all 18 prior improvement entries are unchanged.",
+        "Independent instruction review replayed November 2 evidence divergence, November 4 unreadable metrics and already-completed November 3 repairs; closure behavior passed. Review corrected rollback wording to retain this history. Exact-head repository CI and next ordinary-owner consumption are separate gates."
+      ],
+      "status": "configured-pending-ordinary-owner-consumption",
+      "result": "Existing mobile reading improvements (PR279) and offline date/acquisition fixes (PR281) are already merged and must not be restarted. This policy change does not establish current event ingestion, reconciled CAI outcomes, ordinary operating adoption or audience improvement. Configuration validation and eventual merge receipts belong with this change; adoption and measured results remain open.",
+      "nextTrigger": "The next ordinary CUAI Operating System run after merge must identify the policy version, consume available fresh evidence, and retain the existing owner and precise review trigger if detailed/comparable evidence is blocked. Reuse the existing analytics investigation rather than dispatching a new job. Check PR279 outcomes after its agreed seven-day age from November 3 implementation, not from the October 30 diagnosis; check immediate failures sooner. Use subsequent existing daily/weekly reviews for keep/revise/stop or an evidence-backed inconclusive result.",
+      "rollback": "Revert only the six-step analytics-loop addition if it causes verified friction or conflicting instructions. Preserve this ledger entry and its history, recording a reverted/stopped disposition with reason and evidence; retain all pre-existing source, privacy, permission and editorial gates."
     }
   ]
 }
