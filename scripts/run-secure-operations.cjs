@@ -76,7 +76,7 @@ async function readSource(route){
   const refreshed=health.status===200&&health.data.ok===true&&health.data.environment==='production'&&drift.allowed;
   if(!refreshed)throw Error('production_identity_refresh_failed');
   operationCommit=health.data.commit;
-  receipts.sourceRetries.push({route,reason:'deployment_commit_mismatch',attempt,fromCommit:previousCommit,toCommit:operationCommit});save();
+  receipts.sourceRetries.push({route,reason:'deployment_commit_mismatch',attempt:deploymentAttempts,fromCommit:previousCommit,toCommit:operationCommit});save();
   await sleep(5000);
   }catch(error){
    // Every refresh failure invalidates action authorization, including transport,
