@@ -3,6 +3,39 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "gecu-bank-of-the-southwest-integration",
+      "title": "GECU Closes Bank of the Southwest Deal; Customer Services Stay Separate",
+      "url": "/news/gecu-bank-of-the-southwest-integration.html",
+      "publishedAt": "2026-11-05T07:11:11-05:00",
+      "section": "news",
+      "beat": "credit-union-bank-acquisition-integration",
+      "functions": [
+        "operations",
+        "board-strategy",
+        "member-service"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union operations, integration, branch, digital-banking and member-service leaders",
+      "secondaryAudiences": [
+        "credit-union executives",
+        "integration and conversion managers"
+      ],
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/dfcu-gulfside-bank-acquisition.html",
+        "/news/sharetec-core-outage-credit-union-failover.html"
+      ],
+      "sourceTier": 1,
+      "score": 69.3
+    },
+    {
       "id": "credit-union-colorado-ai-auto-loan-pricing",
       "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
       "url": "/news/credit-union-colorado-ai-auto-loan-pricing.html",

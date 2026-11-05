@@ -6,141 +6,290 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-04",
-    "fullArticleCount": 0,
+    "date": "2026-11-05",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearchedCount": 12,
     "beatsSearched": [
-      "credit-union-workforce-scheduling",
-      "credit-union-prudential-regulation",
-      "insurance-provider-cyber-recovery",
-      "consumer-account-acquisition",
-      "lending-and-balance-sheet-partnerships",
-      "core-system-conversions",
-      "ai-platform-provenance",
-      "advocacy-crisis-readiness",
-      "workplace-ai-access-controls",
-      "auto-refinancing-promotions",
-      "us-credit-union-deregulation",
-      "digital-banking-payment-cutovers"
+      "merger-integration",
+      "commercial-lending-ai",
+      "payments-provider-strategy",
+      "core-vendor-contracting",
+      "digital-banking-conversion",
+      "marketing-personalization",
+      "consumer-credit-marketplace",
+      "credit-risk-macro",
+      "public-policy-advocacy",
+      "trade-association-governance",
+      "prudential-compliance",
+      "finance-liquidity"
     ],
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "GECU Closes Bank of the Southwest Deal; Customer Services Stay Separate",
+        "url": "https://creditunionainews.com/news/gecu-bank-of-the-southwest-integration.html",
+        "primaryFunctionalAudience": "Credit-union operations, integration, branch, digital-banking and member-service leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
+      }
+    ],
     "candidateEvaluations": [
       {
-        "title": "OCCU expands its 32-hour workweek",
-        "sourceUrl": "https://myoccu.org/learn/press-center/occu-expands-32-hour-workweek-deepening-investment-employees-and-local",
-        "sourceDate": "2026-10-29",
+        "title": "GECU closes Bank of the Southwest acquisition",
+        "beat": "merger-integration",
+        "sourceUrl": "https://www.cuinsight.com/press-release/gecu-completes-acquisition-of-bank-of-the-southwest/",
+        "sourceDate": "2026-11-02",
+        "status": "selected",
+        "rationale": "New closing milestone, not the August approval; bank FAQ confirms unchanged customer access and expected, not guaranteed, June integration.",
         "classification": "News",
         "promotionPriority": "Standard",
-        "status": "shortlisted-not-production-cleared",
-        "rationale": "Named credit-union phased workforce change and reported call-center results serve a thin HR audience. Official announcement is October 29, not today's trade re-report; results are self-reported, not causal proof. Final scoring/drafting stopped at the rendering blocker."
+        "score": 69.3,
+        "sourceTier": 1,
+        "confidence": 0.94,
+        "sourceDatePrecision": "date only; start of Eastern date used as conservative scorer input, not a reported timestamp",
+        "sourceLimits": "Both primary accounts are parties to the transaction. No integration completion, future service availability or customer outcomes inferred."
       },
       {
-        "title": "PRA and FCA open discussion on the UK credit-union regime",
-        "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/credit-unions-supporting-sustainable-growth-and-resilience-discussion-paper",
-        "sourceDate": "2026-11-03",
-        "classification": "News",
-        "promotionPriority": "Standard",
-        "status": "research-candidate-not-production-cleared",
-        "rationale": "Primary joint discussion paper, March 5 2027 response deadline, and material capital/governance options. UK scope only; no committed policy change or U.S. requirement. Not selected or scored for production before the blocker."
-      },
-      {
-        "title": "TruStage November 3 recovery update",
-        "sourceUrl": "https://www.trustage.com/outage/business/credit-union",
-        "sourceDate": "2026-11-03",
+        "title": "Glia Prospect Snapshot",
+        "beat": "commercial-lending-ai",
+        "sourceUrl": "https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity",
+        "sourceDate": "2026-11-02",
         "status": "not-selected",
-        "rationale": "New bulk lending-claim intake and staged capability detail, but much of the continuing partial-recovery thesis overlaps October 20 coverage. A new full article would require a sharper independently substantiated change and product-specific limits."
+        "rationale": "General availability verified; no named CU results. Overlaps recent AI small-business banking coverage."
       },
       {
-        "title": "J.D. Power third-quarter account acquisition findings",
-        "sourceUrl": "https://thecudaily.com/younger-consumers-driving-growth-in-new-accounts-heres-whats-taking-place-j-d-power-analysis-reveals/",
-        "sourceDate": "2026-11-04",
-        "status": "not-selected",
-        "rationale": "Interesting secondary-account and younger-customer evidence, but the underlying report was not retrieved; no direct CU outcome or validated transfer to membership growth."
-      },
-      {
-        "title": "Acumen Financial Advantage and Wade& partnership",
-        "sourceUrl": "https://thecudaily.com/acumen-financial-advantage-wade-in-partnership-to-help-cus-with-lending-stronger-balance-sheets/",
-        "sourceDate": "2026-11-04",
-        "status": "not-selected",
-        "rationale": "Proposed cross-selling partnership without a named implementation, financial terms, timetable or measured credit-union results; promotion-led rather than a demonstrated operating change."
-      },
-      {
-        "title": "CASE Credit Union system upgrade",
-        "sourceUrl": "https://www.casecu.org/updates/system-update-2026",
-        "sourceDate": null,
-        "status": "not-selected",
-        "rationale": "Official November 2 status block says digital banking is available while Zelle and EZ Cash refinements continue. Routine conversion update; first source-publication date unknown and no measured outcome or distinct material incident established."
-      },
-      {
-        "title": "Anthropic adds text-watermark release-note details",
-        "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview?entry=september-30-2026",
+        "title": "Fiserv quarterly results and portfolio review",
+        "beat": "payments-provider-strategy",
+        "sourceUrl": "https://investors.fiserv.com/news-releases/news-release-details/fiserv-reports-third-quarter-2026-results",
         "sourceDate": "2026-11-03",
         "status": "not-selected",
-        "rationale": "Official platform-specific provenance limitation, not proof of reliable detection or a CU deployment; narrower operating consequence than the workforce and prudential candidates."
+        "rationale": "Impairment is non-cash; filing does not establish which CU products or clients face a migration."
       },
       {
-        "title": "GoWest Red Alert Advocacy Playbook",
-        "sourceUrl": "https://www.cuinsight.com/before-the-crisis-hits-gowests-red-alert-playbook-helps-credit-unions-move-faster-together/",
-        "sourceDate": null,
+        "title": "Jack Henry deconversion revenue",
+        "beat": "core-vendor-contracting",
+        "sourceUrl": "https://jackhenryandassociatesinc.gcs-web.com/news-releases/news-release-details/jack-henry-associates-inc-reports-first-quarter-fiscal-2027",
+        "sourceDate": "2026-11-03",
         "status": "not-selected",
-        "rationale": "Attributable association commentary; full underlying playbook and demonstrated operating outcomes not inspected. Relative Today/Yesterday labels do not establish an exact publication date."
+        "rationale": "Revenue is not a count of departing institutions or a CU contract quote; the figure was already disclosed October 29."
       },
       {
-        "title": "Goldman Sachs restricts some workplace AI tools",
-        "sourceUrl": "https://thecudaily.com/goldman-sachs-restricts-bankers-from-using-some-ai-tools/",
+        "title": "Texoma selects Alkami",
+        "beat": "digital-banking-conversion",
+        "sourceUrl": "https://investors.alkami.com/2026-11-03-Texoma-Community-Credit-Union-to-Build-a-More-Connected-Member-Experience-with-Alkamis-Digital-Sales-Service-Platform",
+        "sourceDate": "2026-11-03",
+        "status": "not-selected",
+        "rationale": "Named selection but future benefits are unmeasured; overlaps recent Connexus digital-platform coverage."
+      },
+      {
+        "title": "Travis CU personalization launch",
+        "beat": "marketing-personalization",
+        "sourceUrl": "https://finance.minyanville.com/minyanville/article/bizwire-2026-11-2-finalyticsai-launches-a-personalized-digital-experience-for-travis-credit-union",
+        "sourceDate": "2026-11-02",
+        "status": "not-selected",
+        "rationale": "Attributed launch but no member outcomes, with a similar personalization workflow already covered October 30."
+      },
+      {
+        "title": "Upstart Q3 results",
+        "beat": "consumer-credit-marketplace",
+        "sourceUrl": "https://ir.upstart.com/node/13461/pdf",
+        "sourceDate": "2026-11-03",
+        "status": "not-selected",
+        "rationale": "Marketplace originations are aggregated, not a CU approval, pricing, loss or take-up result. Recent auto-lending coverage already serves the function."
+      },
+      {
+        "title": "Fed survey shows changed bank credit standards",
+        "beat": "credit-risk-macro",
+        "sourceUrl": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
+        "sourceDate": "2026-11-02",
+        "status": "not-selected",
+        "rationale": "Primary survey is of banks, not a credit-union underwriting change; transfer to CU results unsupported."
+      },
+      {
+        "title": "Credit-union trade groups report election results",
+        "beat": "public-policy-advocacy",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-union-champions-see-electoral-success",
         "sourceDate": "2026-11-04",
         "status": "not-selected",
-        "rationale": "Secondary account of Bloomberg reporting about internal bank guidance; original guidance not inspected, no CU change, and limits on tools must not be generalized into a blanket AI ban."
+        "rationale": "Association tally is preliminary and its supported candidates are not a policy outcome."
       },
       {
-        "title": "Compass FCU anniversary auto-refinance offer",
-        "sourceUrl": "https://thecudaily.com/compass-fcu-marking-anniversary-by-offering-160bp-reduction-on-current-auto-loan-rate/",
-        "sourceDate": "2026-11-04",
+        "title": "League and MD|DCCUA approve merger",
+        "beat": "trade-association-governance",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/league-credit-unions-mddccua-vote-approve-merger",
+        "sourceDate": "2026-11-03",
         "status": "not-selected",
-        "rationale": "Short-lived product promotion without take-up or member outcome evidence; recent auto-pricing coverage already serves this audience."
+        "rationale": "A credible association vote, but a less immediate member-service implication than a completed bank transaction."
       },
       {
-        "title": "NCUA fourteenth deregulation package",
+        "title": "NCUA commercial lending, PPP and statutory lien changes",
+        "beat": "prudential-compliance",
         "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
         "sourceDate": "2026-11-03",
-        "status": "duplicate-covered-by-existing-alert",
-        "rationale": "Already represented by the November 3 Alert on obsolete commercial-lending transition text, PPP treatment and statutory-lien language; no distinct new full-article evidence established."
+        "status": "duplicate",
+        "rationale": "Existing November 3 Alert covers the operative changes; November 4 trade recap is not a separate event."
       },
       {
-        "title": "United Teletech November 11 digital-banking cutover",
-        "sourceUrl": "https://www.utfinancial.org/digital/",
-        "sourceDate": null,
+        "title": "Catalyst Q3 credit-union industry update",
+        "beat": "finance-liquidity",
+        "sourceUrl": "https://www.catalystcorp.org/resources/news-insights?Month=November-2026",
+        "sourceDate": "2026-11-04",
         "status": "not-selected",
-        "rationale": "Official future conversion and November 4-10 Bill Pay interruption instructions; source first-publication date unknown. No actual outage result, tested security benefit or new implementation outcome established."
+        "rationale": "The corporate CU summary gives direction, but underlying cohorts and measures were not independently reconciled for this cycle."
       }
     ],
-    "rejections": [
-      {
-        "title": "Article slots one and two",
-        "reason": "Material pre-publication runtime blocker; no article or image package created and no fallback attempted after the required rendering capability failed. This is not a claim that all editorial candidates failed the score threshold."
-      }
-    ],
-    "status": "blocked",
-    "blockedReason": "Required normal rendered acceptance could not start: npm run test:design failed because /root/.cache/ms-playwright/chromium_headless_shell-1200/chrome-headless-shell-linux64/chrome-headless-shell is absent. The existing Chromium 143.0.7499.4 build 1200 installer exhausted its mirrors with empty/truncated ZIPs (End of central directory record signature not found) and HTTP 400 GatewayExceptionResponse. Desktop/mobile, accessibility and card-artwork 404/recovery regressions were not executed; no readiness claim is made.",
+    "status": "article-published",
     "validation": {
-      "policyBaseCommit": "0739de1ccda492b80146f1c1ed1a58dc18dbc224",
-      "staticDesign": "passed; zero stale files; 13 hubs / 90 placements",
-      "dailyStateTest": "passed before outcome edit; preservation recheck required",
-      "renderedAcceptance": "blocked-before-browser-launch",
-      "endUserReview": "not-performed; no candidate output released",
-      "installationRecovery": "existing installer attempted once; built-in mirror retries failed; no gate, dependency version, browser permission or schedule change",
-      "policyResolutionSha256": "eefbb6f90877f4b1301a6fd86662fecd7ba10e2c61c4e2473e5d5913febc5aa7"
+      "policyBaseCommit": "c0e365fef5dd42baf65356d12880f5f5063131fe",
+      "localPreflight": "blocked; pinned Chromium headless shell build 1200 absent; no install retry",
+      "releaseGate": "Exact PR head must pass desktop/mobile, accessibility and artwork normal/404/recovery plus actual screenshot review before merge. Receipt in issue #160."
     },
-    "socialDecision": "not-attempted-prepublication-blocker; no new queue item or provider submission; all existing reservations preserved. House item remains prepared, not queued or scheduled; no fresh complete provider inventory established in this run.",
+    "socialDecision": "not-created-standard-ineligible",
     "recoveredMissedHighArticle": null,
     "recoveredMissedMediaAsset": null,
-    "coordination": "Issue 160 read through comment 6616235172. Raiz correction dedupe is completed; historical media holds remain with their existing owners and are not replayed. No new unresolved daily-publisher assignment.",
+    "coordination": "Issue #160 checked; November 4 recovery terminal for fallback capability, not article acceptance. Existing holds preserved.",
     "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
-    "updatedAt": "2026-11-04T12:07:52Z"
+    "updatedAt": "2026-11-05T12:11:11.595Z"
   },
   "history": [
+    {
+      "date": "2026-11-04",
+      "fullArticleCount": 0,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "credit-union-workforce-scheduling",
+        "credit-union-prudential-regulation",
+        "insurance-provider-cyber-recovery",
+        "consumer-account-acquisition",
+        "lending-and-balance-sheet-partnerships",
+        "core-system-conversions",
+        "ai-platform-provenance",
+        "advocacy-crisis-readiness",
+        "workplace-ai-access-controls",
+        "auto-refinancing-promotions",
+        "us-credit-union-deregulation",
+        "digital-banking-payment-cutovers"
+      ],
+      "publications": [],
+      "candidateEvaluations": [
+        {
+          "title": "OCCU expands its 32-hour workweek",
+          "sourceUrl": "https://myoccu.org/learn/press-center/occu-expands-32-hour-workweek-deepening-investment-employees-and-local",
+          "sourceDate": "2026-10-29",
+          "classification": "News",
+          "promotionPriority": "Standard",
+          "status": "shortlisted-not-production-cleared",
+          "rationale": "Named credit-union phased workforce change and reported call-center results serve a thin HR audience. Official announcement is October 29, not today's trade re-report; results are self-reported, not causal proof. Final scoring/drafting stopped at the rendering blocker."
+        },
+        {
+          "title": "PRA and FCA open discussion on the UK credit-union regime",
+          "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/credit-unions-supporting-sustainable-growth-and-resilience-discussion-paper",
+          "sourceDate": "2026-11-03",
+          "classification": "News",
+          "promotionPriority": "Standard",
+          "status": "research-candidate-not-production-cleared",
+          "rationale": "Primary joint discussion paper, March 5 2027 response deadline, and material capital/governance options. UK scope only; no committed policy change or U.S. requirement. Not selected or scored for production before the blocker."
+        },
+        {
+          "title": "TruStage November 3 recovery update",
+          "sourceUrl": "https://www.trustage.com/outage/business/credit-union",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "New bulk lending-claim intake and staged capability detail, but much of the continuing partial-recovery thesis overlaps October 20 coverage. A new full article would require a sharper independently substantiated change and product-specific limits."
+        },
+        {
+          "title": "J.D. Power third-quarter account acquisition findings",
+          "sourceUrl": "https://thecudaily.com/younger-consumers-driving-growth-in-new-accounts-heres-whats-taking-place-j-d-power-analysis-reveals/",
+          "sourceDate": "2026-11-04",
+          "status": "not-selected",
+          "rationale": "Interesting secondary-account and younger-customer evidence, but the underlying report was not retrieved; no direct CU outcome or validated transfer to membership growth."
+        },
+        {
+          "title": "Acumen Financial Advantage and Wade& partnership",
+          "sourceUrl": "https://thecudaily.com/acumen-financial-advantage-wade-in-partnership-to-help-cus-with-lending-stronger-balance-sheets/",
+          "sourceDate": "2026-11-04",
+          "status": "not-selected",
+          "rationale": "Proposed cross-selling partnership without a named implementation, financial terms, timetable or measured credit-union results; promotion-led rather than a demonstrated operating change."
+        },
+        {
+          "title": "CASE Credit Union system upgrade",
+          "sourceUrl": "https://www.casecu.org/updates/system-update-2026",
+          "sourceDate": null,
+          "status": "not-selected",
+          "rationale": "Official November 2 status block says digital banking is available while Zelle and EZ Cash refinements continue. Routine conversion update; first source-publication date unknown and no measured outcome or distinct material incident established."
+        },
+        {
+          "title": "Anthropic adds text-watermark release-note details",
+          "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview?entry=september-30-2026",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "Official platform-specific provenance limitation, not proof of reliable detection or a CU deployment; narrower operating consequence than the workforce and prudential candidates."
+        },
+        {
+          "title": "GoWest Red Alert Advocacy Playbook",
+          "sourceUrl": "https://www.cuinsight.com/before-the-crisis-hits-gowests-red-alert-playbook-helps-credit-unions-move-faster-together/",
+          "sourceDate": null,
+          "status": "not-selected",
+          "rationale": "Attributable association commentary; full underlying playbook and demonstrated operating outcomes not inspected. Relative Today/Yesterday labels do not establish an exact publication date."
+        },
+        {
+          "title": "Goldman Sachs restricts some workplace AI tools",
+          "sourceUrl": "https://thecudaily.com/goldman-sachs-restricts-bankers-from-using-some-ai-tools/",
+          "sourceDate": "2026-11-04",
+          "status": "not-selected",
+          "rationale": "Secondary account of Bloomberg reporting about internal bank guidance; original guidance not inspected, no CU change, and limits on tools must not be generalized into a blanket AI ban."
+        },
+        {
+          "title": "Compass FCU anniversary auto-refinance offer",
+          "sourceUrl": "https://thecudaily.com/compass-fcu-marking-anniversary-by-offering-160bp-reduction-on-current-auto-loan-rate/",
+          "sourceDate": "2026-11-04",
+          "status": "not-selected",
+          "rationale": "Short-lived product promotion without take-up or member outcome evidence; recent auto-pricing coverage already serves this audience."
+        },
+        {
+          "title": "NCUA fourteenth deregulation package",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
+          "sourceDate": "2026-11-03",
+          "status": "duplicate-covered-by-existing-alert",
+          "rationale": "Already represented by the November 3 Alert on obsolete commercial-lending transition text, PPP treatment and statutory-lien language; no distinct new full-article evidence established."
+        },
+        {
+          "title": "United Teletech November 11 digital-banking cutover",
+          "sourceUrl": "https://www.utfinancial.org/digital/",
+          "sourceDate": null,
+          "status": "not-selected",
+          "rationale": "Official future conversion and November 4-10 Bill Pay interruption instructions; source first-publication date unknown. No actual outage result, tested security benefit or new implementation outcome established."
+        }
+      ],
+      "rejections": [
+        {
+          "title": "Article slots one and two",
+          "reason": "Material pre-publication runtime blocker; no article or image package created and no fallback attempted after the required rendering capability failed. This is not a claim that all editorial candidates failed the score threshold."
+        }
+      ],
+      "status": "blocked",
+      "blockedReason": "Required normal rendered acceptance could not start: npm run test:design failed because /root/.cache/ms-playwright/chromium_headless_shell-1200/chrome-headless-shell-linux64/chrome-headless-shell is absent. The existing Chromium 143.0.7499.4 build 1200 installer exhausted its mirrors with empty/truncated ZIPs (End of central directory record signature not found) and HTTP 400 GatewayExceptionResponse. Desktop/mobile, accessibility and card-artwork 404/recovery regressions were not executed; no readiness claim is made.",
+      "validation": {
+        "policyBaseCommit": "0739de1ccda492b80146f1c1ed1a58dc18dbc224",
+        "staticDesign": "passed; zero stale files; 13 hubs / 90 placements",
+        "dailyStateTest": "passed before outcome edit; preservation recheck required",
+        "renderedAcceptance": "blocked-before-browser-launch",
+        "endUserReview": "not-performed; no candidate output released",
+        "installationRecovery": "existing installer attempted once; built-in mirror retries failed; no gate, dependency version, browser permission or schedule change",
+        "policyResolutionSha256": "eefbb6f90877f4b1301a6fd86662fecd7ba10e2c61c4e2473e5d5913febc5aa7"
+      },
+      "socialDecision": "not-attempted-prepublication-blocker; no new queue item or provider submission; all existing reservations preserved. House item remains prepared, not queued or scheduled; no fresh complete provider inventory established in this run.",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "coordination": "Issue 160 read through comment 6616235172. Raiz correction dedupe is completed; historical media holds remain with their existing owners and are not replayed. No new unresolved daily-publisher assignment.",
+      "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
+      "updatedAt": "2026-11-04T12:07:52Z"
+    },
     {
       "date": "2026-11-03",
       "fullArticleCount": 1,
