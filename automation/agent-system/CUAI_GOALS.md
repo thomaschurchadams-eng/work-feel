@@ -1,3 +1,114 @@
+# CUAI Goals — Current Direction and Historical Record
+
+## Authority and status
+
+**Direction reconciled:** November 5, 2026  
+**Owner:** Tom  
+**Operating coordinator:** Watney, through the existing scoped owners  
+**Numerical scorecard:** Proposals pending Tom's approval; no new target or operating-cycle deadline is adopted by this update.
+
+This file states why CUAI's work matters and how to judge progress. The current direction below supersedes the expired September cycle's mission wording, owner and current-cycle status. The complete earlier version remains unchanged in the historical section. Its former role assignments, priority order, dates and numerical targets are historical, not renewed instructions.
+
+The standalone scheduled `cuai-ceo` role remains retired under [the coordination protocol](CUAI_AGENT_PROTOCOL.md). Watney coordinates priorities, evidence and follow-through through the existing publishing, operating, media, reliability, commercial and product owners. Historical compatibility receipts do not reactivate the retired role or require a new management report.
+
+Goals never override role policies or expand publication, outreach, spending, credential, permission, schedule or release authority. Reuse valid existing approvals; raise only the specific new decision when approval is actually required. This update changes no executable policy, schedule, posting cap, production setting or owner assignment.
+
+## Mission and audience
+
+**Help credit-union, fintech and financial-services professionals keep pace with rapid AI and industry change by making complex developments timely, clear and useful.**
+
+CUAI is a news and information platform for financial-services and fintech professionals generally, including people across credit-union functions and the vendors and advisers serving the industry. Credit-union professionals remain an important audience segment, not the only people CUAI aims to reach.
+
+Cover consequential industry developments and explain what happened, why it matters and how it relates to readers' work without assuming specialist knowledge. AI and technology are signature strengths, not mandatory angles. The existing [publishing policy](../scheduled-tasks/publish-cuai-daily-article.md) continues to control article eligibility and material credit-union relevance; the broader audience does not silently remove that gate.
+
+Keep pace with important developments through timely reporting, useful explanations and maintained information. Speed must not weaken source verification, accuracy, corrections or quality. Faster change is not permission to manufacture urgency, increase publishing volume or bypass review.
+
+## North Star
+
+**NS1 — Become a trusted, widely read, commercially sustainable source of clear, timely industry intelligence that grows both its overall audience and relevant professional segments, supports CUAI's own advertising and sponsorship business, and contributes measurable interest to CAI.**
+
+Growing readership is the primary practical signal that CUAI is becoming useful and easier to understand. Engagement and returning-reader evidence provide context, not a separate comprehension score. Readership growth does not by itself prove that an individual reader understood an article.
+
+Commercial performance and editorial judgment remain separate. Audience scale and professional relevance both matter: a small engaged group is not a substitute for the larger audience needed to make advertising attractive.
+
+## Current qualitative goals
+
+### G1 — Grow overall readership and relevant professional audiences
+
+Grow website readership and the overall LinkedIn following organically, while also growing the financial-services, fintech and credit-union professional segments that readers and advertisers value.
+
+Track website users and sessions separately from LinkedIn followers, post impressions and reach. Track the observed industry-professional follower count or share where authorized LinkedIn evidence supports it, with credit-union roles identified separately when available. Do not assume every follower works in the industry, infer decision-making authority from a broad industry label, or add overlapping channels into a supposed unique audience.
+
+Use existing historical analytics rather than starting a new 90-day baseline. Missing audience composition is a measurement gap, not zero and not a verified audience claim. Preserve source quality, coverage breadth and current publishing/social limits. No paid advertising is authorized by this goal.
+
+### G2 — Make complex industries easier to understand and use
+
+Provide accurate explanations and useful reporting for readers who do not already know every technology, product or regulatory detail. Give readers a clear account of the change, its evidence, significance and practical implications.
+
+Use readership growth as the main practical signal of progress, with existing reading-depth, return and next-action measures as diagnostic context. Do not create a separate comprehension-scoring system.
+
+Maintain useful coverage across credit-union functions alongside relevant fintech and financial-services context. The requested coverage audit remains with the existing editorial work and follows verification that the new sections are complete. It is not authorization for extra publishing capacity.
+
+Use the existing improvement record and keep/revise/stop decisions to improve actual work. Retain the existing limit on simultaneous experiments, and do not reopen a closed experiment or change a working method merely to create activity. Comparison benchmarks may evolve as capabilities and reader expectations change; accuracy and usefulness remain durable standards.
+
+### G3 — Deliver reliably with less need for Tom to intervene
+
+Routine publishing, distribution, measurement, recovery and coordination should produce verified outcomes through the existing owners, without asking Tom to repeat decisions or supervise routine handoffs.
+
+Use the existing [output cadence](CUAI_OUTPUT_CADENCE.md), role policies, shared social queue and quality gates. Distinguish delivered work from a qualified non-publication, a blocked cycle, a prepared asset and a scheduled post. A valid blocked receipt is useful evidence but is not a published article or a completed business outcome.
+
+Preserve the sole publisher, duplicate prevention, editorial/source controls and historical state. Record the specific blocker, accountable owner and next step when delivery is incomplete. Autonomy does not expand external authority.
+
+### G4 — Turn audience growth into CUAI advertising and sponsorship revenue
+
+Build a large enough, relevant audience to make CUAI attractive to advertisers and sponsors, then convert that audience value into credible commercial revenue through the existing authorized commercial work.
+
+Present dated, supportable audience scale and professional-composition evidence. Distinguish inquiries, approved outreach responses, proposals, paid bookings, collected revenue and verified delivery. A sales pack, researched prospect or mailto opening is not a sale.
+
+Use the current approved offer and valid campaign permissions without repeatedly seeking the same approval. New pricing, spending, contractual commitments, materially different claims or out-of-scope outreach remain subject to the applicable approval boundaries. No audience threshold is represented as sufficient for advertisers without evidence.
+
+Sponsorship never buys favorable independent reporting, suppresses criticism or controls editorial selection. Paid content and house promotion must remain clearly labeled.
+
+### G5 — Make CUAI a measurable growth channel for CAI
+
+Send relevant readers into CAI's commercial funnel through useful, clearly labeled promotional surfaces while preserving CUAI's editorial independence.
+
+Use matched dates and actual evidence to distinguish CUAI outbound clicks, attributed CAI sessions, intent, leads and customer outcomes. A click is not a confirmed signup or purchase, and internal testing is not customer demand. Repair an evidenced attribution defect through its existing authorized owner rather than inventing conversion results.
+
+CUAI's audience and editorial value stand on their own; CAI promotion must not distort news selection, factual framing or criticism. Do not imply independent endorsement where ownership is shared.
+
+## Numerical proposals — pending approval
+
+The September targets below have expired and are not automatically carried forward. Fresh numerical targets and an exact review window remain proposals until Tom explicitly adopts them.
+
+Proposed target forms for review:
+- Beat the strongest verified, comparable complete-period website readership result, then agree a larger audience-scale ambition.
+- Sustain or improve the last verified absolute increase in LinkedIn followers over a comparable period, rather than promising to repeat a percentage spike.
+- Increase the observed number of industry-professional followers as well as total followers. Set a numerical segment target only after the available composition evidence has been recovered.
+- Use engagement and return behavior to explain audience results, rather than substituting a separate comprehension target.
+- Set revenue and CAI-conversion targets from the current authorized offer, accepted owners and actual pipeline/attribution evidence, not from expired September figures.
+
+Underlying private audience counts and unapproved numerical commitments are not reproduced in this public repository. Review the dated evidence privately with Tom. This section contains proposals, not an approved scorecard, forecast, spending authorization or new baseline-collection period.
+
+## Evidence and use in existing work
+
+- Use the current goals together with the relevant role policy. Keep `G1`–`G5` and `NS1` as the existing goal identifiers.
+- For material discretionary work, identify the constrained goal, evidence, existing owner, smallest authorized action, expected result, approval boundary and next review point.
+- Use existing operational receipts, analytics and the improvement record to distinguish a recommendation, implementation, release, owner adoption and measured outcome.
+- Review actual audience, commercial and delivery results through existing reviews. The orchestration map remains an index, not a duplicate scorecard or a new management layer.
+- Use complete, matched date windows and label partial-day, missing, sampled or otherwise limited evidence. The current aggregate GA4 endpoint includes the current day; a rolling window from that feed is not automatically comparable with a completed monthly report. Buffer post metrics are not follower demographics, site readership or unique cross-channel reach.
+- An updated document alone does not prove that a scheduled owner consumed it or that business results improved. Any proposed preflight/code integration must be separately scoped, reviewed and verified; none is implemented by this document.
+- At the end of the next explicitly adopted cycle, record achieved, partial, missed or superseded with evidence. Preserve the earlier targets and decisions rather than silently replacing history.
+
+## Commercial/editorial firewall
+
+Editorial selection, sourcing, factual framing, corrections and criticism remain independent of advertisers, sponsors and CAI commercial interests. Paid/sponsored content and CAI house promotion stay clearly labeled and analytically separate from independent coverage. A material conflict is resolved in favor of editorial trust and raised with Tom.
+
+## Historical record — August 31 through September 30, 2026
+
+The complete earlier document follows unchanged. Its wording, former owners, deadlines, priorities and figures are retained as history only; the current direction and pending-target status above control.
+
+<!-- BEGIN UNCHANGED SEPTEMBER GOALS -->
 # CUAI Goals — Authoritative Goal Hierarchy
 
 ## Authority and review window
@@ -111,3 +222,4 @@ CUAI may monetize its audience and promote CAI, but commercial goals never overr
 ## Month-end reset
 
 During the final CEO review of September, assess each goal as `achieved | partial | missed | superseded`, record the evidence, and propose the next short operating cycle. Do not automatically roll the same goals forward or create another 90-day period without Tom's approval.
+<!-- END UNCHANGED SEPTEMBER GOALS -->
