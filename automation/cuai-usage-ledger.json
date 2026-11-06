@@ -4673,6 +4673,46 @@
       ],
       "summary": "Friday weekly receipt: CUAI delivered 6 of the 8 planned articles, including both November 6 regular slots, so the weekly output SLA is partially met. Wednesday's rendered-review failure accounts for the shortfall; the daily publisher has prepared two authorized Standard catch-up candidates for November 7–8 but has not published them, and retains ownership for sequential rebuild, exact-head validation, complete visual review, deployment and live-byte verification. Production exact main 0b3f96c39aa0bff62e16bd8b1e264acde3edbc45 is READY with zero recent runtime errors; 77 publication-history entries remain preserved. The latest 15-article portfolio is diverse by beat but remains concentrated in operations and risk/compliance, with HR, board, marketing, vendor and finance relatively thin; the next editorial candidate remains AI-assisted deceased-member servicing and beneficiary/estate-document evidence. The Monday competitive-distribution scan's five public opportunities remain evidence-backed and unchanged, with no outreach or submission performed. No new Alert qualified: the November 4 OCC supervisory framework is already represented, and newer official postings were routine or outside the material credit-union threshold; the existing Alert remains within the homepage freshness window. Audience assessment remains blocked because no verified exact-current-main measurement artifact exists; the previously readable artifact is tied to an older commit and its values could not be inspected in this run's unavailable execution environment. The actual publisher recovery reinforced retained ownership through terminal status, rejection of a failed changed head, and exact-head visual acceptance; the separate prevention patch remains unaccepted and was not applied. The required local operational-policy checker could not execute because no usable execution environment was available; no policy, permission, schedule, social, pricing, legal, privacy, credential or editorial gate changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-06T16:37:40-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The immediate publisher recovery run for the approved November 7–8 catch-up completed after the prior reliability checkpoint, replacing an unknown in-progress outcome with an owner-accepted prepared handoff.",
+      "status": "degraded",
+      "incidentKey": "cuai-publisher:2026-11-02-week:two-slot-catchup",
+      "workUnits": {
+        "publisherAutomationsReviewed": 1,
+        "matchingPublisherRunsReconciled": 1,
+        "publisherOwnerAcceptanceReceiptsObserved": 1,
+        "preparedCatchupCandidatesObserved": 2,
+        "heldPullRequestsReviewed": 1,
+        "exactHeadValidationRunsReviewed": 1,
+        "repositoryTestsObserved": 155,
+        "renderedChecksObserved": 48,
+        "completeCandidateVisualReviewsObserved": 1,
+        "incompleteCandidateVisualReviewsObserved": 1,
+        "nonmergeablePullRequestsObserved": 1,
+        "weekendPublisherSchedulesObserved": 0,
+        "schedulesChanged": 0,
+        "publicationAttemptsObserved": 0,
+        "articlesPublished": 0,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "productionDeploymentChecks": 1,
+        "liveSurfaceChecks": 3,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "ChatGPT Automations",
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "Reliability reconciled immediate publisher run 79fb0fc2-9114-832b-bd07-f0422f2461b6 through its matching completed result and owner receipt. The publisher accepted the approved weekend catch-up, screened 12 candidates, and prepared two Standard News candidates in draft PR #302 without publishing Friday or creating social activity. Exact draft head cf27a7c481b6e7a646b32d60190483db1b45b212 passed run 42275729960 with 155 repository tests and 48 rendered checks; Mountain America received complete desktop/mobile visual review, while the Q2 captures omitted the page header and metadata and therefore remain visually incomplete. PR #302 is intentionally held, draft and non-mergeable after main advanced; it cannot be reused as release clearance. The existing publisher must rebuild from current main at the approved Saturday 9:00 a.m. Eastern checkpoint, revalidate exact heads, complete visual review, deploy sequentially and verify live bytes. No weekend schedule exists, and reliability did not add or change one, create a second publisher, merge content, retry any provider write, or use PR #260. Current production is READY on exact main 8cd5803eb56956c3cb99d03136b04baad3839ef8 with no recent runtime errors; Friday's two articles remain recorded live-verified, all 77 history entries are preserved, and the 55-item company social queue has no duplicate IDs or active-date conflicts.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
