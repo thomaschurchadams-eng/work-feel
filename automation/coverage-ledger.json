@@ -3,6 +3,35 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "foster-real-time-regulatory-reporting-draft",
+      "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
+      "url": "/news/foster-real-time-regulatory-reporting-draft.html",
+      "publishedAt": "2026-11-06T07:08:18-05:00",
+      "section": "news",
+      "beat": "regulatory-technology",
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "finance-treasury"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union regulatory reporting, compliance, finance and data leaders",
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/ncua-ai-supervision-budget.html",
+        "/news/bank-ai-autonomy-control-gap-survey.html"
+      ],
+      "sourceTier": 1,
+      "score": 71.5
+    },
+    {
       "id": "gecu-bank-of-the-southwest-integration",
       "title": "GECU Closes Bank of the Southwest Deal; Customer Services Stay Separate",
       "url": "/news/gecu-bank-of-the-southwest-integration.html",

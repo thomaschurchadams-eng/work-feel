@@ -6,163 +6,303 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "fullArticleCount": 1,
-    "alertCount": 1,
-    "evaluatedCandidateCount": 12,
-    "beatsSearchedCount": 12,
-    "beatsSearched": [
-      "merger-integration",
-      "commercial-lending-ai",
-      "payments-provider-strategy",
-      "core-vendor-contracting",
-      "digital-banking-conversion",
-      "marketing-personalization",
-      "consumer-credit-marketplace",
-      "credit-risk-macro",
-      "public-policy-advocacy",
-      "trade-association-governance",
-      "prudential-compliance",
-      "finance-liquidity"
-    ],
+    "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "GECU Closes Bank of the Southwest Deal; Customer Services Stay Separate",
-        "url": "https://creditunionainews.com/news/gecu-bank-of-the-southwest-integration.html",
-        "primaryFunctionalAudience": "Credit-union operations, integration, branch, digital-banking and member-service leaders",
+        "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
+        "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
+        "primaryFunctionalAudience": "Credit-union regulatory reporting, compliance, finance and data leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "alert",
-        "title": "OCC Gives Examiners a Framework for AI and Agentic-System Risk",
-        "url": "https://creditunionainews.com/alerts/#occ-ai-agentic-system-supervisory-framework",
-        "source": "Office of the Comptroller of the Currency",
-        "sourceUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html",
-        "operatingImplication": "This is not an NCUA rule and does not apply directly to credit unions. Credit-union board, risk, technology, compliance and vendor-management teams can use it as a comparative signal: inventory higher-consequence and agentic use cases, document transferred authority and human oversight, scale controls to potential failure or misuse, and monitor NCUA and state regulators rather than treating the OCC guide as a current requirement."
       }
     ],
     "candidateEvaluations": [
       {
-        "title": "GECU closes Bank of the Southwest acquisition",
-        "beat": "merger-integration",
-        "sourceUrl": "https://www.cuinsight.com/press-release/gecu-completes-acquisition-of-bank-of-the-southwest/",
-        "sourceDate": "2026-11-02",
+        "title": "Foster releases regulatory reporting discussion draft",
+        "beat": "regulatory-technology",
+        "sourceUrl": "https://foster.house.gov/media/press-releases/rep-foster-unveils-discussion-draft-legislation-modernize-financial-regulatory",
+        "sourceDate": "2026-11-05",
         "status": "selected",
-        "rationale": "New closing milestone, not the August approval; bank FAQ confirms unchanged customer access and expected, not guaranteed, June integration.",
-        "classification": "News",
-        "promotionPriority": "Standard",
-        "score": 69.3,
-        "sourceTier": 1,
-        "confidence": 0.94,
-        "sourceDatePrecision": "date only; start of Eastern date used as conservative scorer input, not a reported timestamp",
-        "sourceLimits": "Both primary accounts are parties to the transaction. No integration completion, future service availability or customer outcomes inferred."
+        "rationale": "Fresh congressional proposal explicitly addresses credit unions; not enacted or a current reporting requirement."
       },
       {
-        "title": "Glia Prospect Snapshot",
-        "beat": "commercial-lending-ai",
-        "sourceUrl": "https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity",
-        "sourceDate": "2026-11-02",
+        "title": "Anthropic personal-finance beta",
+        "beat": "consumer-ai-data-access",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+        "sourceDate": "2026-11-05",
+        "status": "qualified-for-sequential-review",
+        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution."
+      },
+      {
+        "title": "NCUA seeks additional argument in Jackson Area case",
+        "beat": "fraud-recovery",
+        "sourceUrl": "https://thecudaily.com/ncua-asks-judge-to-consider-additional-arguments-as-it-seeks-access-to-retirement-funds-in-giant-cu-embezzlement-case/",
+        "sourceDate": "2026-11-06",
         "status": "not-selected",
-        "rationale": "General availability verified; no named CU results. Overlaps recent AI small-business banking coverage."
+        "rationale": "Procedural request, not ruling; underlying memorandum and opposing motions not independently inspected."
       },
       {
-        "title": "Fiserv quarterly results and portfolio review",
-        "beat": "payments-provider-strategy",
-        "sourceUrl": "https://investors.fiserv.com/news-releases/news-release-details/fiserv-reports-third-quarter-2026-results",
-        "sourceDate": "2026-11-03",
+        "title": "CFPB explains Navy Federal overdraft termination",
+        "beat": "consumer-protection",
+        "sourceUrl": "https://thecudaily.com/cfpb-defends-decision-to-terminate-od-enforcement-order-against-navy-fcu-and-to-waive-80m-in-refunds/",
+        "sourceDate": "2026-10-27",
         "status": "not-selected",
-        "rationale": "Impairment is non-cash; filing does not establish which CU products or clients face a migration."
+        "rationale": "New trade coverage of an October report and earlier termination, not a fresh legal change."
       },
       {
-        "title": "Jack Henry deconversion revenue",
-        "beat": "core-vendor-contracting",
-        "sourceUrl": "https://jackhenryandassociatesinc.gcs-web.com/news-releases/news-release-details/jack-henry-associates-inc-reports-first-quarter-fiscal-2027",
-        "sourceDate": "2026-11-03",
+        "title": "Redwood CEO describes tape backups",
+        "beat": "cyber-resilience",
+        "sourceUrl": "https://thecudaily.com/underground-coverage-one-ceo-talks-member-growth-ai-and-why-it-has-returned-to-tape-drive-backups/",
+        "sourceDate": "2026-11-06",
         "status": "not-selected",
-        "rationale": "Revenue is not a count of departing institutions or a CU contract quote; the figure was already disclosed October 29."
+        "rationale": "Useful reported practice; timing and independent restore evidence not established."
       },
       {
-        "title": "Texoma selects Alkami",
-        "beat": "digital-banking-conversion",
-        "sourceUrl": "https://investors.alkami.com/2026-11-03-Texoma-Community-Credit-Union-to-Build-a-More-Connected-Member-Experience-with-Alkamis-Digital-Sales-Service-Platform",
-        "sourceDate": "2026-11-03",
+        "title": "U.S. Bank Payment Switch",
+        "beat": "payments-competition",
+        "sourceUrl": "https://ir.usbank.com/news-events/news/news-details/2026/U-S--Bank-Launches-Payment-Switch-to-Help-Customers-Move-Recurring-Bills-With-Ease/default.aspx",
+        "sourceDate": "2026-10-19",
         "status": "not-selected",
-        "rationale": "Named selection but future benefits are unmeasured; overlaps recent Connexus digital-platform coverage."
+        "rationale": "New recap does not reset the October launch date."
       },
       {
-        "title": "Travis CU personalization launch",
-        "beat": "marketing-personalization",
-        "sourceUrl": "https://finance.minyanville.com/minyanville/article/bizwire-2026-11-2-finalyticsai-launches-a-personalized-digital-experience-for-travis-credit-union",
-        "sourceDate": "2026-11-02",
+        "title": "Addition Financial school affinity debit card",
+        "beat": "community-banking",
+        "sourceUrl": "https://thecudaily.com/addition-financial-partners-on-debit-card-with-thomas-county-schools/",
+        "sourceDate": "2026-11-01",
         "status": "not-selected",
-        "rationale": "Attributed launch but no member outcomes, with a similar personalization workflow already covered October 30."
+        "rationale": "Older local program extension with no observed adoption for the new market."
       },
       {
-        "title": "Upstart Q3 results",
-        "beat": "consumer-credit-marketplace",
-        "sourceUrl": "https://ir.upstart.com/node/13461/pdf",
-        "sourceDate": "2026-11-03",
-        "status": "not-selected",
-        "rationale": "Marketplace originations are aggregated, not a CU approval, pricing, loss or take-up result. Recent auto-lending coverage already serves the function."
-      },
-      {
-        "title": "Fed survey shows changed bank credit standards",
-        "beat": "credit-risk-macro",
+        "title": "Fed bank lending standards survey",
+        "beat": "credit-risk",
         "sourceUrl": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
         "sourceDate": "2026-11-02",
         "status": "not-selected",
-        "rationale": "Primary survey is of banks, not a credit-union underwriting change; transfer to CU results unsupported."
+        "rationale": "Bank respondents, not credit unions; no new policy or measurable CU outcome."
       },
       {
-        "title": "Credit-union trade groups report election results",
-        "beat": "public-policy-advocacy",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-union-champions-see-electoral-success",
+        "title": "DaLand Coin2Core certification",
+        "beat": "digital-assets",
+        "sourceUrl": "https://creditunions.com/press_releases/daland-cuso-receives-blockchain-certification/",
+        "sourceDate": "2026-11-05",
+        "status": "not-selected",
+        "rationale": "Certification announcement does not establish CU deployment, member use or operational results."
+      },
+      {
+        "title": "MEMBERS1st selects Mahalo",
+        "beat": "digital-banking",
+        "sourceUrl": "https://www.cuinsight.com/press-releases/page/3/",
+        "sourceDate": "2026-11-03",
+        "status": "not-selected",
+        "rationale": "Selection without a documented launch or observed benefits; similar digital-platform coverage is recent."
+      },
+      {
+        "title": "OCC examiner AI guidance",
+        "beat": "bank-supervision",
+        "sourceUrl": "https://www.reuters.com/business/finance/us-bank-regulator-issues-first-ever-ai-guidance-examiners-2026-11-04/",
         "sourceDate": "2026-11-04",
-        "status": "not-selected",
-        "rationale": "Association tally is preliminary and its supported candidates are not a policy outcome."
-      },
-      {
-        "title": "League and MD|DCCUA approve merger",
-        "beat": "trade-association-governance",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/league-credit-unions-mddccua-vote-approve-merger",
-        "sourceDate": "2026-11-03",
-        "status": "not-selected",
-        "rationale": "A credible association vote, but a less immediate member-service implication than a completed bank transaction."
-      },
-      {
-        "title": "NCUA commercial lending, PPP and statutory lien changes",
-        "beat": "prudential-compliance",
-        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
-        "sourceDate": "2026-11-03",
         "status": "duplicate",
-        "rationale": "Existing November 3 Alert covers the operative changes; November 4 trade recap is not a separate event."
+        "rationale": "Already covered by the November 5 CUAI Alert."
       },
       {
-        "title": "Catalyst Q3 credit-union industry update",
-        "beat": "finance-liquidity",
-        "sourceUrl": "https://www.catalystcorp.org/resources/news-insights?Month=November-2026",
+        "title": "Texans CU workplace recognition",
+        "beat": "workforce",
+        "sourceUrl": "https://www.morningstar.com/news/pr-newswire/20261104da89214/texans-credit-union-named-a-2026-dallas-morning-news-top-workplace-for-fourth-consecutive-year",
         "sourceDate": "2026-11-04",
         "status": "not-selected",
-        "rationale": "The corporate CU summary gives direction, but underlying cohorts and measures were not independently reconciled for this cycle."
+        "rationale": "Repeat award, not a new measurable workforce operating change."
       }
     ],
-    "status": "article-and-alert-cycle-complete",
+    "evaluatedCandidateCount": 12,
+    "beatsSearched": [
+      "regulatory-technology",
+      "consumer-ai-data-access",
+      "fraud-recovery",
+      "consumer-protection",
+      "cyber-resilience",
+      "payments-competition",
+      "community-banking",
+      "credit-risk",
+      "digital-assets",
+      "digital-banking",
+      "bank-supervision",
+      "workforce"
+    ],
+    "beatsSearchedCount": 12,
+    "status": "article-published",
     "validation": {
-      "policyBaseCommit": "c0e365fef5dd42baf65356d12880f5f5063131fe",
-      "localPreflight": "blocked; pinned Chromium headless shell build 1200 absent; no install retry",
-      "releaseGate": "Exact PR head must pass desktop/mobile, accessibility and artwork normal/404/recovery plus actual screenshot review before merge. Receipt in issue #160."
+      "releaseGate": "Exact-head isolated browser run and actual visual review required before merge; see issue #160.",
+      "localPreflight": "pinned Chromium build 1200 absent"
     },
     "socialDecision": "not-created-standard-ineligible",
     "recoveredMissedHighArticle": null,
-    "recoveredMissedMediaAsset": null,
-    "coordination": "Issue #160 checked; November 4 recovery terminal for fallback capability, not article acceptance. Existing holds preserved.",
-    "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
-    "updatedAt": "2026-11-05T15:18:36-05:00"
+    "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+    "updatedAt": "2026-11-06T12:08:18.466Z",
+    "secondSlot": "Second slot pending separate qualification and exact-revision acceptance."
   },
   "history": [
+    {
+      "date": "2026-11-05",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearchedCount": 12,
+      "beatsSearched": [
+        "merger-integration",
+        "commercial-lending-ai",
+        "payments-provider-strategy",
+        "core-vendor-contracting",
+        "digital-banking-conversion",
+        "marketing-personalization",
+        "consumer-credit-marketplace",
+        "credit-risk-macro",
+        "public-policy-advocacy",
+        "trade-association-governance",
+        "prudential-compliance",
+        "finance-liquidity"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "GECU Closes Bank of the Southwest Deal; Customer Services Stay Separate",
+          "url": "https://creditunionainews.com/news/gecu-bank-of-the-southwest-integration.html",
+          "primaryFunctionalAudience": "Credit-union operations, integration, branch, digital-banking and member-service leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "alert",
+          "title": "OCC Gives Examiners a Framework for AI and Agentic-System Risk",
+          "url": "https://creditunionainews.com/alerts/#occ-ai-agentic-system-supervisory-framework",
+          "source": "Office of the Comptroller of the Currency",
+          "sourceUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html",
+          "operatingImplication": "This is not an NCUA rule and does not apply directly to credit unions. Credit-union board, risk, technology, compliance and vendor-management teams can use it as a comparative signal: inventory higher-consequence and agentic use cases, document transferred authority and human oversight, scale controls to potential failure or misuse, and monitor NCUA and state regulators rather than treating the OCC guide as a current requirement."
+        }
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "GECU closes Bank of the Southwest acquisition",
+          "beat": "merger-integration",
+          "sourceUrl": "https://www.cuinsight.com/press-release/gecu-completes-acquisition-of-bank-of-the-southwest/",
+          "sourceDate": "2026-11-02",
+          "status": "selected",
+          "rationale": "New closing milestone, not the August approval; bank FAQ confirms unchanged customer access and expected, not guaranteed, June integration.",
+          "classification": "News",
+          "promotionPriority": "Standard",
+          "score": 69.3,
+          "sourceTier": 1,
+          "confidence": 0.94,
+          "sourceDatePrecision": "date only; start of Eastern date used as conservative scorer input, not a reported timestamp",
+          "sourceLimits": "Both primary accounts are parties to the transaction. No integration completion, future service availability or customer outcomes inferred."
+        },
+        {
+          "title": "Glia Prospect Snapshot",
+          "beat": "commercial-lending-ai",
+          "sourceUrl": "https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity",
+          "sourceDate": "2026-11-02",
+          "status": "not-selected",
+          "rationale": "General availability verified; no named CU results. Overlaps recent AI small-business banking coverage."
+        },
+        {
+          "title": "Fiserv quarterly results and portfolio review",
+          "beat": "payments-provider-strategy",
+          "sourceUrl": "https://investors.fiserv.com/news-releases/news-release-details/fiserv-reports-third-quarter-2026-results",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "Impairment is non-cash; filing does not establish which CU products or clients face a migration."
+        },
+        {
+          "title": "Jack Henry deconversion revenue",
+          "beat": "core-vendor-contracting",
+          "sourceUrl": "https://jackhenryandassociatesinc.gcs-web.com/news-releases/news-release-details/jack-henry-associates-inc-reports-first-quarter-fiscal-2027",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "Revenue is not a count of departing institutions or a CU contract quote; the figure was already disclosed October 29."
+        },
+        {
+          "title": "Texoma selects Alkami",
+          "beat": "digital-banking-conversion",
+          "sourceUrl": "https://investors.alkami.com/2026-11-03-Texoma-Community-Credit-Union-to-Build-a-More-Connected-Member-Experience-with-Alkamis-Digital-Sales-Service-Platform",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "Named selection but future benefits are unmeasured; overlaps recent Connexus digital-platform coverage."
+        },
+        {
+          "title": "Travis CU personalization launch",
+          "beat": "marketing-personalization",
+          "sourceUrl": "https://finance.minyanville.com/minyanville/article/bizwire-2026-11-2-finalyticsai-launches-a-personalized-digital-experience-for-travis-credit-union",
+          "sourceDate": "2026-11-02",
+          "status": "not-selected",
+          "rationale": "Attributed launch but no member outcomes, with a similar personalization workflow already covered October 30."
+        },
+        {
+          "title": "Upstart Q3 results",
+          "beat": "consumer-credit-marketplace",
+          "sourceUrl": "https://ir.upstart.com/node/13461/pdf",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "Marketplace originations are aggregated, not a CU approval, pricing, loss or take-up result. Recent auto-lending coverage already serves the function."
+        },
+        {
+          "title": "Fed survey shows changed bank credit standards",
+          "beat": "credit-risk-macro",
+          "sourceUrl": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
+          "sourceDate": "2026-11-02",
+          "status": "not-selected",
+          "rationale": "Primary survey is of banks, not a credit-union underwriting change; transfer to CU results unsupported."
+        },
+        {
+          "title": "Credit-union trade groups report election results",
+          "beat": "public-policy-advocacy",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-union-champions-see-electoral-success",
+          "sourceDate": "2026-11-04",
+          "status": "not-selected",
+          "rationale": "Association tally is preliminary and its supported candidates are not a policy outcome."
+        },
+        {
+          "title": "League and MD|DCCUA approve merger",
+          "beat": "trade-association-governance",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/league-credit-unions-mddccua-vote-approve-merger",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "A credible association vote, but a less immediate member-service implication than a completed bank transaction."
+        },
+        {
+          "title": "NCUA commercial lending, PPP and statutory lien changes",
+          "beat": "prudential-compliance",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
+          "sourceDate": "2026-11-03",
+          "status": "duplicate",
+          "rationale": "Existing November 3 Alert covers the operative changes; November 4 trade recap is not a separate event."
+        },
+        {
+          "title": "Catalyst Q3 credit-union industry update",
+          "beat": "finance-liquidity",
+          "sourceUrl": "https://www.catalystcorp.org/resources/news-insights?Month=November-2026",
+          "sourceDate": "2026-11-04",
+          "status": "not-selected",
+          "rationale": "The corporate CU summary gives direction, but underlying cohorts and measures were not independently reconciled for this cycle."
+        }
+      ],
+      "status": "article-and-alert-cycle-complete",
+      "validation": {
+        "policyBaseCommit": "c0e365fef5dd42baf65356d12880f5f5063131fe",
+        "localPreflight": "blocked; pinned Chromium headless shell build 1200 absent; no install retry",
+        "releaseGate": "Exact PR head must pass desktop/mobile, accessibility and artwork normal/404/recovery plus actual screenshot review before merge. Receipt in issue #160."
+      },
+      "socialDecision": "not-created-standard-ineligible",
+      "recoveredMissedHighArticle": null,
+      "recoveredMissedMediaAsset": null,
+      "coordination": "Issue #160 checked; November 4 recovery terminal for fallback capability, not article acceptance. Existing holds preserved.",
+      "nextCoverageGap": "AI-assisted deceased-member servicing, beneficiary verification and estate-document evidence controls",
+      "updatedAt": "2026-11-05T15:18:36-05:00"
+    },
     {
       "date": "2026-11-04",
       "fullArticleCount": 0,

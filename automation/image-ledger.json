@@ -3,6 +3,38 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "foster-real-time-regulatory-reporting-draft",
+      "articleUrl": "/news/foster-real-time-regulatory-reporting-draft.html",
+      "imagePath": "/assets/foster-real-time-regulatory-reporting-draft.jpg",
+      "publishedAt": "2026-11-06T07:08:18-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "mixed-media-collage",
+      "subject": "documents-and-controls",
+      "composition": "modular-grid",
+      "perspective": "overhead",
+      "palette": "plum-gold",
+      "lighting": "warm-practical",
+      "texture": "newsprint-grain",
+      "conceptScore": 91.5,
+      "scene": "reporting-records-test-grid-and-exception",
+      "conceptAlternatives": [
+        {
+          "medium": "dimensional-3d",
+          "score": 59.4
+        },
+        {
+          "medium": "editorial-photography",
+          "score": 48.3
+        }
+      ],
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "666a6278d3af0844d712d6efd7b030365fc856f4f83e09c48f1a50a06bfddb04"
+    },
+    {
       "id": "gecu-bank-of-the-southwest-integration",
       "articleUrl": "/news/gecu-bank-of-the-southwest-integration.html",
       "imagePath": "/assets/gecu-bank-of-the-southwest-integration.jpg",
