@@ -25,5 +25,10 @@
       "destination": "/",
       "permanent": false
     }
-  ]
+  ],
+  "functions": {
+    "api/ga4-metrics.js": {
+      "maxDuration": 60
+    }
+  }
 }
