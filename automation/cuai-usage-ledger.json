@@ -4563,6 +4563,71 @@
       ],
       "summary": "The November 6 second regular-publication slot is recovered under the existing daily-publisher owner. The publisher preserved the first live article and the PR #300 closeout history, reconciled PR #299 onto current main, rejected an intermediate head after strict canonical navigation validation failed, and accepted only exact head b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d after run 42247119627 completed successfully. Its design artifact 13518873572 matches that head; the publisher recorded 302 rendered checks plus actual desktop/mobile, accessibility and artwork normal/404/recovery review. PR #299 merged as 0549c060730efa97b999ae0957d8838c85addbab. The subsequent report-only commit aa43cf2782628289bd927c480799ba15b45af4be is READY in Production. Daily state now records two live-verified Friday slots, both Standard and ineligible for LinkedIn, while preserving all 77 history entries. The homepage, both articles, the second article image and News index return HTTP 200; the available 30-minute runtime-error view is clean. The 55-item social queue remains unchanged with only the November 2 company-page post this week and no duplicate date reservation. No content was republished, and no provider, reservation, UTM, destination, schedule, permission, credential or editorial gate changed. The prevention lesson was exercised on the real recovery: the publisher retained ownership while validation was pending, observed terminal status, rejected a failed changed head, and visually reviewed the exact accepted head before merge. Future evidence entry, recheck and escalation remain manual rather than claimed automatic. automation/recovery/README.md remains absent; no unreleased PR #260 code or shared checkpoint adapter was used.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-06T14:00:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "A high-priority issue #160 assignment approved a one-time November 7–8 catch-up, but it arrived after the Friday publisher run and the saved publisher schedule has no weekend execution.",
+      "status": "degraded",
+      "incidentKey": "cuai-publisher:2026-11-02-week:two-slot-catchup",
+      "workUnits": {
+        "publisherAutomationsReviewed": 1,
+        "publisherScheduleGapsObserved": 1,
+        "immediatePublisherRunRequests": 1,
+        "immediatePublisherRunsStarted": 1,
+        "matchingPublisherOutcomeReceiptsObserved": 0,
+        "coordinationEventsReviewed": 4,
+        "dailyStateChecks": 1,
+        "regularPublicationSlotsVerified": 2,
+        "publicationHistoryEntriesPreserved": 77,
+        "productionDeploymentChecks": 2,
+        "liveSurfaceChecks": 7,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "schedulesChanged": 0,
+        "distributionAttemptsObserved": 0,
+        "providerWriteAcknowledgmentsObserved": 0,
+        "externalWriteRetries": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "ChatGPT Automations",
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The one-time weekend catch-up handoff had no supported scheduled execution before Monday. Reliability requested one immediate run of the existing enabled Publish CUAI Daily Article task; its saved schedule remained unchanged and the task recorded run 79fb0fc2-9114-832b-bd07-f0422f2461b6 as in progress. No matching result, issue receipt, branch, commit, publication or social write was observable at this checkpoint; the older morning result was explicitly rejected as stale evidence. Current main 5b98f7eecab7455a8969067662ad8b116cb6411e remains READY in Production. The News index, both Friday articles, the second article image, homepage and Alerts return HTTP 200; recent runtime errors are zero. Daily state retains two live-verified Friday slots and all 77 history entries. The 55-item social queue has no duplicate IDs or date conflicts and only the November 2 company-page post this week. Do not create a second publisher or alter schedules. Reconcile the immediate run's own result and issue #160 receipt before any weekend publication claim or retry.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-06T14:01:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Issue #160 supplied a corrected durable-prevention patch for the repeated publisher closeout race after independent testing invalidated the earlier patch.",
+      "status": "blocked",
+      "incidentKey": "cuai-publishing:async-closeout-prevention:2026-11-06",
+      "workUnits": {
+        "preventionPatchVersionsReviewed": 2,
+        "reproducedDefectsReported": 2,
+        "repositoryNodeTestsReportedPassing": 218,
+        "focusedTestsReportedPassing": 64,
+        "operationalPolicyChecksReportedPassing": 3,
+        "exactHeadRenderedChecksObserved": 0,
+        "ownerAcceptanceReceiptsObserved": 0,
+        "stalePullRequestsInspected": 1,
+        "pullRequestFilesInspected": 2,
+        "productionOrSocialActionsObserved": 0,
+        "unreleasedCheckpointAdaptersActivated": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub"
+      ],
+      "summary": "The corrected source-only delta addresses both newly reproduced defects: rollover count/duplicate identity checks and loss of exact job head/attempt fields through the normalized GitHub jobs response. Reported source tests pass, but existing PR #268 is stale and non-mergeable against current main, and the handoff explicitly lacks exact-head CI/rendered acceptance, actual visual review, publisher binding, and a real same-owner no-production-write acceptance receipt. The original patch remains on hold; neither patch was applied or merged, and PR #260 was not used or activated. This remains blocked pending reconciliation of PR #268 onto current main, exact-head remote validation and visual acceptance, then daily-publisher acceptance under the same incident key.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
