@@ -4523,6 +4523,46 @@
       ],
       "summary": "The Friday publisher successfully released the first Standard News article after exact-head run 42215445592 passed 44 rendered checks and production became READY. A distinct Standard second-slot package remained unmerged because run 42216241300 was still installing the browser when the publisher closed. Reliability reconciled the later outcome: job 127886844998 completed successfully and artifact 13501189332 exists for exact PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd. This was a transient validation delay, not a browser-download failure. The handoff is nevertheless still blocked because publisher closeout commit 8f00ca6e2741a099f979e256d700f4f72a95d36b changed automation/daily-cycle-state.json after PR #299 branched, leaving the article PR non-mergeable. Choosing the old accepted file would overwrite the canonical blocked record, while rebasing changes the exact reviewed revision and therefore requires a fresh exact-head rendered run and actual screenshot review by the existing daily-publisher owner. Reliability repaired the stale state description and did not publish, merge the content PR, weaken the rendered gate or create social activity. Exact current main is READY in Production; homepage, first article, News index and Alerts return HTTP 200; the available 30-minute runtime-error view is clean. Daily state preserves one published article and 77 history entries. The 55-item social queue still has only the November 2 company-page post this week and no duplicate date reservation. Durable prevention recommendation: if an asynchronous exact-head check is still running at closeout, retain daily-publisher ownership and re-read its terminal result before committing a state-only closeout that conflicts with the candidate PR. automation/recovery/README.md remains absent, and no unreleased PR #260 code or shared checkpoint adapter was used.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-06T12:10:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The existing daily publisher completed the blocked November 6 second-slot handoff after reconciling PR #299 onto current main, but the canonical usage ledger still ended with the earlier blocked reliability state.",
+      "status": "recovered",
+      "incidentKey": "cuai-daily-publisher:2026-11-06:second-slot-handoff",
+      "workUnits": {
+        "publisherRecoveryReceiptsReviewed": 1,
+        "blockedIncidentEntriesReconciled": 1,
+        "pullRequestsReviewed": 2,
+        "exactHeadValidationRunsReviewed": 3,
+        "workflowJobsReviewed": 2,
+        "designArtifactsVerified": 1,
+        "renderedChecksObserved": 302,
+        "dailyStateChecks": 1,
+        "regularPublicationSlotsVerified": 2,
+        "publicationHistoryEntriesPreserved": 77,
+        "productionDeploymentChecks": 2,
+        "liveSurfaceChecks": 5,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "distributionAttemptsObserved": 0,
+        "providerWriteAcknowledgmentsObserved": 0,
+        "externalWriteRetries": 0,
+        "recoveryRunbookReferencesMissing": 1,
+        "recoveryBranchesCreated": 1,
+        "pullRequestsCreated": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The November 6 second regular-publication slot is recovered under the existing daily-publisher owner. The publisher preserved the first live article and the PR #300 closeout history, reconciled PR #299 onto current main, rejected an intermediate head after strict canonical navigation validation failed, and accepted only exact head b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d after run 42247119627 completed successfully. Its design artifact 13518873572 matches that head; the publisher recorded 302 rendered checks plus actual desktop/mobile, accessibility and artwork normal/404/recovery review. PR #299 merged as 0549c060730efa97b999ae0957d8838c85addbab. The subsequent report-only commit aa43cf2782628289bd927c480799ba15b45af4be is READY in Production. Daily state now records two live-verified Friday slots, both Standard and ineligible for LinkedIn, while preserving all 77 history entries. The homepage, both articles, the second article image and News index return HTTP 200; the available 30-minute runtime-error view is clean. The 55-item social queue remains unchanged with only the November 2 company-page post this week and no duplicate date reservation. No content was republished, and no provider, reservation, UTM, destination, schedule, permission, credential or editorial gate changed. The prevention lesson was exercised on the real recovery: the publisher retained ownership while validation was pending, observed terminal status, rejected a failed changed head, and visually reviewed the exact accepted head before merge. Future evidence entry, recheck and escalation remain manual rather than claimed automatic. automation/recovery/README.md remains absent; no unreleased PR #260 code or shared checkpoint adapter was used.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
