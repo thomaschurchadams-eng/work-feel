@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-06",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
@@ -16,6 +16,15 @@
         "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
         "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
         "primaryFunctionalAudience": "Credit-union regulatory reporting, compliance, finance and data leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Claude’s Finance Beta Can Read Linked Accounts, Not Move Money",
+        "url": "https://creditunionainews.com/news/claude-plaid-personal-finance-beta.html",
+        "primaryFunctionalAudience": "Credit-union member-service, digital-banking, data-access and privacy leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
       }
@@ -34,8 +43,11 @@
         "beat": "consumer-ai-data-access",
         "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
         "sourceDate": "2026-11-05",
-        "status": "qualified-for-sequential-review",
-        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution."
+        "status": "selected-second-slot",
+        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution.",
+        "score": 78.7,
+        "classification": "News",
+        "promotionPriority": "Standard"
       },
       {
         "title": "NCUA seeks additional argument in Jackson Area case",
@@ -142,8 +154,8 @@
     "socialDecision": "not-created-standard-ineligible",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "updatedAt": "2026-11-06T12:08:18.466Z",
-    "secondSlot": "Second slot pending separate qualification and exact-revision acceptance."
+    "updatedAt": "2026-11-06T12:14:50.212Z",
+    "secondSlot": "Filled; distinct Standard News package."
   },
   "history": [
     {

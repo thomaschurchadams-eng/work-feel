@@ -3,6 +3,38 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "claude-plaid-personal-finance-beta",
+      "articleUrl": "/news/claude-plaid-personal-finance-beta.html",
+      "imagePath": "/assets/claude-plaid-personal-finance-beta.jpg",
+      "publishedAt": "2026-11-06T07:14:50-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "financial-object-study",
+      "composition": "foreground-background-tension",
+      "perspective": "cutaway",
+      "palette": "emerald-cream",
+      "lighting": "rim-light",
+      "texture": "frosted-glass",
+      "conceptScore": 55.7,
+      "scene": "read-only-view-of-transaction-records-behind-glass",
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "score": 49.7
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "score": 41.5
+        }
+      ],
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "ef899f68e70cf2bccdbc96c6a23529ce02a08970a5e0b45c7d12f14b7b30f9da"
+    },
+    {
       "id": "foster-real-time-regulatory-reporting-draft",
       "articleUrl": "/news/foster-real-time-regulatory-reporting-draft.html",
       "imagePath": "/assets/foster-real-time-regulatory-reporting-draft.jpg",
