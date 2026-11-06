@@ -3,6 +3,35 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "claude-plaid-personal-finance-beta",
+      "title": "Claude’s Finance Beta Can Read Linked Accounts, Not Move Money",
+      "url": "/news/claude-plaid-personal-finance-beta.html",
+      "publishedAt": "2026-11-06T10:41:17-05:00",
+      "section": "news",
+      "beat": "consumer-ai-data-access",
+      "functions": [
+        "member-service",
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "technologies": [
+        "conversational-ai"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union member-service, digital-banking, data-access and privacy leaders",
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-account-recovery-evidence-record.html",
+        "/news/plaid-ai-cash-flow-underwriting.html"
+      ],
+      "sourceTier": 1,
+      "score": 78.7
+    },
+    {
       "id": "foster-real-time-regulatory-reporting-draft",
       "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
       "url": "/news/foster-real-time-regulatory-reporting-draft.html",
