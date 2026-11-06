@@ -1,7 +1,7 @@
 {
   "version": 1,
   "reviewRequired": "Changes to these acceptance bounds need explicit PR rationale and before/after Preview evidence. Tests never regenerate or accept their own baselines.",
-  "primaryNavigation": ["Alerts", "News", "Topics", "Insights", "Intelligence", "Episodes", "Briefings", "LinkedIn"],
+  "primaryNavigation": ["Alerts", "News", "Topics", "Insights", "Intelligence", "Tools", "Episodes", "Briefings", "LinkedIn"],
   "pageTitleMinimumPx": 32,
   "ordinaryCardTitleMaximumPx": 28,
   "normalTextContrastMinimum": 4.5,
