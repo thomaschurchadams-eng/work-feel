@@ -4482,6 +4482,47 @@
       ],
       "summary": "The operating review correctly failed closed after two transient HTTP 503 responses prevented reading artifact 13443593198 from exact-main verified-operations run 42089122601. Reliability retried only the authorized read. The artifact now downloads successfully, its SHA-256 digest matches GitHub's authoritative digest, and all four receipt files parse. run.json reports status=verified, authentication=verified, errors=[], actions=[] and reconciliations=[] on commit fb8d00db79d1ebbc3d55b4ad170cc070c6dff341; GA4, Search Console and Buffer receipts each report HTTP 200 with data.ok=true, and Buffer identifies the approved CreditUnionAI News LinkedIn company channel. No distribution or provider write was retried. This restores the blocked evidence handoff but does not perform or claim the ordinary owner's audience assessment; CUAI Operating System retains that assessment under its existing policy and next-review trigger. Current main cd908d2a209be92b5826fb68df7dc172e1b258ae is deployed READY in Production, the homepage, current article and Alerts surface return HTTP 200, the available 30-minute runtime-error view is clean, daily state records one article and one Alert with 76 history entries, and the 55-item social queue has one sent item this week with no duplicate date reservation. automation/recovery/README.md remains absent, so no unreleased recovery code or shared-checkpoint adapter was used. No credential, schedule, permission, editorial gate, social limit, UTM, destination or external-write authority changed.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-06T07:40:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 6 publisher recorded its second Friday article slot blocked while exact-head validation was still installing the browser; that run completed successfully moments after closeout, but the article PR is now non-mergeable against the state-only main commit.",
+      "status": "blocked",
+      "incidentKey": "cuai-daily-publisher:2026-11-06:second-slot-handoff",
+      "workUnits": {
+        "currentMainCommitsReviewed": 3,
+        "policyAndProtocolFilesReviewed": 5,
+        "publisherOutcomesReviewed": 1,
+        "pullRequestsReviewed": 2,
+        "exactHeadValidationRunsReviewed": 2,
+        "workflowJobsReviewed": 2,
+        "designArtifactsListed": 1,
+        "mergeConflictsObserved": 1,
+        "dailyStateChecks": 1,
+        "dailyStateRecordsReconciled": 1,
+        "publicationHistoryEntriesPreserved": 77,
+        "productionDeploymentChecks": 1,
+        "liveSurfaceChecks": 4,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "distributionAttemptsObserved": 0,
+        "providerWriteAcknowledgmentsObserved": 0,
+        "externalWriteRetries": 0,
+        "recoveryRunbookReferencesMissing": 1,
+        "recoveryBranchesCreated": 1,
+        "pullRequestsCreated": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The Friday publisher successfully released the first Standard News article after exact-head run 42215445592 passed 44 rendered checks and production became READY. A distinct Standard second-slot package remained unmerged because run 42216241300 was still installing the browser when the publisher closed. Reliability reconciled the later outcome: job 127886844998 completed successfully and artifact 13501189332 exists for exact PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd. This was a transient validation delay, not a browser-download failure. The handoff is nevertheless still blocked because publisher closeout commit 8f00ca6e2741a099f979e256d700f4f72a95d36b changed automation/daily-cycle-state.json after PR #299 branched, leaving the article PR non-mergeable. Choosing the old accepted file would overwrite the canonical blocked record, while rebasing changes the exact reviewed revision and therefore requires a fresh exact-head rendered run and actual screenshot review by the existing daily-publisher owner. Reliability repaired the stale state description and did not publish, merge the content PR, weaken the rendered gate or create social activity. Exact current main is READY in Production; homepage, first article, News index and Alerts return HTTP 200; the available 30-minute runtime-error view is clean. Daily state preserves one published article and 77 history entries. The 55-item social queue still has only the November 2 company-page post this week and no duplicate date reservation. Durable prevention recommendation: if an asynchronous exact-head check is still running at closeout, retain daily-publisher ownership and re-read its terminal result before committing a state-only closeout that conflicts with the candidate PR. automation/recovery/README.md remains absent, and no unreleased PR #260 code or shared checkpoint adapter was used.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

@@ -34,12 +34,12 @@
         "beat": "consumer-ai-data-access",
         "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
         "sourceDate": "2026-11-05",
-        "status": "held-rendered-acceptance",
+        "status": "held-merge-conflict-after-late-validation",
         "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution.",
         "score": 78.7,
         "classification": "News",
         "promotionPriority": "Standard",
-        "blockedReason": "GitHub Actions exact-head run 42216241300 (job 127886844998) remained in Install test browser without a passing desktop/mobile, accessibility and artwork acceptance artifact during this cycle; local pinned Chromium build 1200 is absent. PR #299 was not merged."
+        "blockedReason": "Exact-head run 42216241300 completed successfully after the publisher closeout and produced artifact 13501189332 for PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd. PR #299 is now non-mergeable against current main 8f00ca6e2741a099f979e256d700f4f72a95d36b because both revisions changed automation/daily-cycle-state.json. The daily publisher must re-read main, resolve the state conflict, and obtain new exact-head rendered acceptance plus actual visual review before merge."
       },
       {
         "title": "NCUA seeks additional argument in Jackson Area case",
@@ -141,13 +141,14 @@
     "status": "article-published",
     "validation": {
       "releaseGate": "Exact-head isolated browser run and actual visual review required before merge; see issue #160.",
-      "localPreflight": "pinned Chromium build 1200 absent"
+      "localPreflight": "pinned Chromium build 1200 absent",
+      "secondSlotReconciliation": "Late run 42216241300 succeeded on superseded PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd; this is evidence of runner recovery, not clearance of a rebased article package."
     },
     "socialDecision": "not-created-standard-ineligible",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "updatedAt": "2026-11-06T12:22:05.001Z",
-    "secondSlot": "Blocked: GitHub Actions exact-head run 42216241300 (job 127886844998) remained in Install test browser without a passing desktop/mobile, accessibility and artwork acceptance artifact during this cycle; local pinned Chromium build 1200 is absent. PR #299 was not merged."
+    "updatedAt": "2026-11-06T07:40:00-05:00",
+    "secondSlot": "Blocked pending daily-publisher rebase and revalidation: late exact-head run 42216241300 succeeded, but PR #299 is non-mergeable against current main after the state-only closeout commit. No article or social action occurred."
   },
   "history": [
     {
