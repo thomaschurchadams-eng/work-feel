@@ -41,3 +41,11 @@ Run with:
 ```bash
 node scripts/score-editorial-candidates.mjs candidates.json
 ```
+
+## Regular publication slot review
+
+Run `node scripts/report-publisher-slots.mjs YYYY-MM-DD` from a current-main checkout. The read-only view joins current weekday targets, daily-cycle state and the coverage ledger; issue #160 remains the coordination evidence. It does not infer a deadline from the 7 a.m. start or count private expansion. A ledger link without a dated production check is not live proof.
+
+The existing daily-publisher records `current.regularPublicationSlots` in the authoritative daily-cycle state when evidence is available. Each record identifies the slot, status (`live-verified`, `editorial-hold`, `technical-failure`, `pending-validation`, or `late-validation`), verified URL/time and production commit when applicable, next action and offset-qualified review time, and the existing issue/PR/run evidence. The history-preserving daily write carries the records forward with their date. Missing records remain unverified.
+
+Before closeout, re-read the exact-head design job. If it is still pending, do not call it a failed test or write a closeout that conflicts with the candidate. Keep the same PR, head and run under the daily-publisher, record a concrete Eastern review time, and recheck before release or another closeout. A terminal technical failure or missed review goes through the existing issue #160 escalation path. A late pass applies only to that head; actual visual review and every release gate still apply. Recording proof and following up are manual unless an existing execution is observed doing them.

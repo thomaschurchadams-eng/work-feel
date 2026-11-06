@@ -159,7 +159,63 @@
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
     "updatedAt": "2026-11-06T15:41:17.602Z",
-    "secondSlot": "Filled by bounded publisher recovery of PR #299, subject to exact-head release checks before merge. No separate cycle or LinkedIn reservation."
+    "secondSlot": "Filled by bounded publisher recovery of PR #299, subject to exact-head release checks before merge. No separate cycle or LinkedIn reservation.",
+    "regularPublicationSlots": [
+      {
+        "slot": 1,
+        "status": "live-verified",
+        "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
+        "verifiedAt": "2026-11-06T16:06:38Z",
+        "productionCommit": "0549c060730efa97b999ae0957d8838c85addbab",
+        "accountableOwner": "daily-publisher",
+        "nextAction": "Reconcile verified result in the existing operating review; do not republish.",
+        "nextReviewAt": "2026-11-06T15:00:00-05:00",
+        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6684733019",
+        "evidence": {
+          "firstObserved": {
+            "at": "2026-11-06T15:54:32Z",
+            "productionCommit": "017f9f5336d4aa6e923b9fa88e3cd8bba0419910"
+          }
+        }
+      },
+      {
+        "slot": 2,
+        "status": "live-verified",
+        "url": "https://creditunionainews.com/news/claude-plaid-personal-finance-beta.html",
+        "verifiedAt": "2026-11-06T16:06:38Z",
+        "productionCommit": "0549c060730efa97b999ae0957d8838c85addbab",
+        "accountableOwner": "daily-publisher",
+        "nextAction": "Review recovered publication at the existing operating review; do not republish.",
+        "nextReviewAt": "2026-11-06T15:00:00-05:00",
+        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6685079897",
+        "evidence": {
+          "pending": {
+            "head": "b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d",
+            "run": 42247119627,
+            "observedAt": "2026-11-06T15:55:01.796Z",
+            "job": 127992133254,
+            "stage": "Check rendered interactions, typography and accessibility"
+          },
+          "ownedReviewAt": "2026-11-06T16:07:37.227Z",
+          "oldLatePass": {
+            "head": "ae6cf1969fa1e935c32198b1e251adb0fadedcdd",
+            "run": 42216241300,
+            "passedAt": "2026-11-06T07:26:24-05:00"
+          },
+          "technicalFailure": {
+            "head": "1b4b470e59596bb8ed3f35f1b8362636c90109de",
+            "run": 42245567273,
+            "reason": "Strict canonical navigation expectation lacked the approved Tools entry."
+          },
+          "terminalAcceptance": {
+            "head": "b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d",
+            "run": 42247119627,
+            "artifact": 13518873572,
+            "visualReviewedAt": "2026-11-06T16:05:19Z"
+          }
+        }
+      }
+    ]
   },
   "history": [
     {
