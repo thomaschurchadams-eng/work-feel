@@ -34,8 +34,12 @@
         "beat": "consumer-ai-data-access",
         "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
         "sourceDate": "2026-11-05",
-        "status": "qualified-for-sequential-review",
-        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution."
+        "status": "held-rendered-acceptance",
+        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution.",
+        "score": 78.7,
+        "classification": "News",
+        "promotionPriority": "Standard",
+        "blockedReason": "GitHub Actions exact-head run 42216241300 (job 127886844998) remained in Install test browser without a passing desktop/mobile, accessibility and artwork acceptance artifact during this cycle; local pinned Chromium build 1200 is absent. PR #299 was not merged."
       },
       {
         "title": "NCUA seeks additional argument in Jackson Area case",
@@ -142,8 +146,8 @@
     "socialDecision": "not-created-standard-ineligible",
     "recoveredMissedHighArticle": null,
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "updatedAt": "2026-11-06T12:08:18.466Z",
-    "secondSlot": "Second slot pending separate qualification and exact-revision acceptance."
+    "updatedAt": "2026-11-06T12:22:05.001Z",
+    "secondSlot": "Blocked: GitHub Actions exact-head run 42216241300 (job 127886844998) remained in Install test browser without a passing desktop/mobile, accessibility and artwork acceptance artifact during this cycle; local pinned Chromium build 1200 is absent. PR #299 was not merged."
   },
   "history": [
     {
