@@ -6,218 +6,379 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-06",
-    "fullArticleCount": 2,
+    "date": "2026-11-07",
+    "fullArticleCount": 1,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
-        "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
-        "primaryFunctionalAudience": "Credit-union regulatory reporting, compliance, finance and data leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "Claude’s Finance Beta Can Read Linked Accounts, Not Move Money",
-        "url": "https://creditunionainews.com/news/claude-plaid-personal-finance-beta.html",
-        "primaryFunctionalAudience": "Credit-union member-service, digital-banking, data-access and privacy leaders",
+        "title": "Mountain America Moves Business Billing Outside Its Core",
+        "url": "https://creditunionainews.com/news/mountain-america-business-billing-modernization.html",
+        "primaryFunctionalAudience": "Credit-union finance, business-banking and operations leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
       }
     ],
     "candidateEvaluations": [
       {
-        "title": "Foster releases regulatory reporting discussion draft",
-        "beat": "regulatory-technology",
-        "sourceUrl": "https://foster.house.gov/media/press-releases/rep-foster-unveils-discussion-draft-legislation-modernize-financial-regulatory",
-        "sourceDate": "2026-11-05",
+        "title": "Mountain America business billing implementation",
+        "beat": "business-banking-billing",
+        "sourceUrl": "https://www.suntecgroup.com/press_release/suntec-xelerate-account-analysis-and-billing-solution-supports-mountain-america-credit-union/",
+        "sourceDate": "2026-11-04",
         "status": "selected",
-        "rationale": "Fresh congressional proposal explicitly addresses credit unions; not enacted or a current reporting requirement."
+        "score": 71.5,
+        "rationale": "Completed billing cycles and a named credit-union executive establish a live implementation; qualitative benefits remain unquantified."
       },
       {
-        "title": "Anthropic personal-finance beta",
-        "beat": "consumer-ai-data-access",
-        "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+        "title": "Q2 AIUC-1 certification",
+        "beat": "ai-vendor-governance",
+        "sourceUrl": "https://www.q2.com/company/news/pr/q2-becomes-first-digital-banking-provider-with-aiuc-1-certified-ai-capabilities",
         "sourceDate": "2026-11-05",
-        "status": "selected-second-slot",
-        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution.",
-        "score": 78.7,
-        "classification": "News",
-        "promotionPriority": "Standard"
+        "status": "qualified-for-sequential-second-slot",
+        "score": 67.7,
+        "rationale": "Current provider evidence names a third-party audit and adversarial testing; the underlying report, exceptions and product scope are not public."
       },
       {
-        "title": "NCUA seeks additional argument in Jackson Area case",
-        "beat": "fraud-recovery",
-        "sourceUrl": "https://thecudaily.com/ncua-asks-judge-to-consider-additional-arguments-as-it-seeks-access-to-retirement-funds-in-giant-cu-embezzlement-case/",
-        "sourceDate": "2026-11-06",
-        "status": "not-selected",
-        "rationale": "Procedural request, not ruling; underlying memorandum and opposing motions not independently inspected."
-      },
-      {
-        "title": "CFPB explains Navy Federal overdraft termination",
-        "beat": "consumer-protection",
-        "sourceUrl": "https://thecudaily.com/cfpb-defends-decision-to-terminate-od-enforcement-order-against-navy-fcu-and-to-waive-80m-in-refunds/",
-        "sourceDate": "2026-10-27",
-        "status": "not-selected",
-        "rationale": "New trade coverage of an October report and earlier termination, not a fresh legal change."
-      },
-      {
-        "title": "Redwood CEO describes tape backups",
-        "beat": "cyber-resilience",
-        "sourceUrl": "https://thecudaily.com/underground-coverage-one-ceo-talks-member-growth-ai-and-why-it-has-returned-to-tape-drive-backups/",
-        "sourceDate": "2026-11-06",
-        "status": "not-selected",
-        "rationale": "Useful reported practice; timing and independent restore evidence not established."
-      },
-      {
-        "title": "U.S. Bank Payment Switch",
-        "beat": "payments-competition",
-        "sourceUrl": "https://ir.usbank.com/news-events/news/news-details/2026/U-S--Bank-Launches-Payment-Switch-to-Help-Customers-Move-Recurring-Bills-With-Ease/default.aspx",
-        "sourceDate": "2026-10-19",
-        "status": "not-selected",
-        "rationale": "New recap does not reset the October launch date."
-      },
-      {
-        "title": "Addition Financial school affinity debit card",
-        "beat": "community-banking",
-        "sourceUrl": "https://thecudaily.com/addition-financial-partners-on-debit-card-with-thomas-county-schools/",
-        "sourceDate": "2026-11-01",
-        "status": "not-selected",
-        "rationale": "Older local program extension with no observed adoption for the new market."
-      },
-      {
-        "title": "Fed bank lending standards survey",
-        "beat": "credit-risk",
-        "sourceUrl": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
-        "sourceDate": "2026-11-02",
-        "status": "not-selected",
-        "rationale": "Bank respondents, not credit unions; no new policy or measurable CU outcome."
-      },
-      {
-        "title": "DaLand Coin2Core certification",
-        "beat": "digital-assets",
-        "sourceUrl": "https://creditunions.com/press_releases/daland-cuso-receives-blockchain-certification/",
+        "title": "NCUA stablecoin call-report proposal",
+        "beat": "digital-assets-reporting",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/feedback-four-ncua-proposals-due-month",
         "sourceDate": "2026-11-05",
         "status": "not-selected",
-        "rationale": "Certification announcement does not establish CU deployment, member use or operational results."
+        "score": 66.7,
+        "rationale": "Qualified but ranked below the two selected catch-up candidates and overlaps recent stablecoin coverage."
       },
       {
-        "title": "MEMBERS1st selects Mahalo",
-        "beat": "digital-banking",
-        "sourceUrl": "https://www.cuinsight.com/press-releases/page/3/",
+        "title": "TDECU insurance-operation transfer",
+        "beat": "operating-model",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
+        "sourceDate": "2026-11-05",
+        "status": "not-selected",
+        "score": 65.4,
+        "rationale": "Qualified transaction but less distinctive than a completed billing implementation; member-service outcomes remain prospective."
+      },
+      {
+        "title": "Post-election credit-union policy priorities",
+        "beat": "public-policy",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-build-advocacy-momentum-heading-next-congress",
+        "sourceDate": "2026-11-06",
+        "status": "not-selected",
+        "score": 64.7,
+        "rationale": "Qualified advocacy agenda, not an enacted policy outcome."
+      },
+      {
+        "title": "NCUA permanent PPP treatment",
+        "beat": "prudential-compliance",
+        "sourceUrl": "https://ncua.gov/news/deregulation-project",
         "sourceDate": "2026-11-03",
         "status": "not-selected",
-        "rationale": "Selection without a documented launch or observed benefits; similar digital-platform coverage is recent."
+        "score": 62.6,
+        "rationale": "Qualified official development but less fresh and less differentiated from recent NCUA coverage."
       },
       {
-        "title": "OCC examiner AI guidance",
-        "beat": "bank-supervision",
-        "sourceUrl": "https://www.reuters.com/business/finance/us-bank-regulator-issues-first-ever-ai-guidance-examiners-2026-11-04/",
-        "sourceDate": "2026-11-04",
-        "status": "duplicate",
-        "rationale": "Already covered by the November 5 CUAI Alert."
+        "title": "Whole-economy fraud agenda",
+        "beat": "fraud-policy",
+        "sourceUrl": "https://www.americascreditunions.org/blogs/americas-credit-unions/why-americas-credit-unions-wants-whole-economy-fight-against-fraud",
+        "sourceDate": "2026-11-02",
+        "status": "rejected",
+        "score": 61.2,
+        "rationale": "Below the existing 62 threshold."
       },
       {
-        "title": "Texans CU workplace recognition",
-        "beat": "workforce",
-        "sourceUrl": "https://www.morningstar.com/news/pr-newswire/20261104da89214/texans-credit-union-named-a-2026-dallas-morning-news-top-workplace-for-fourth-consecutive-year",
-        "sourceDate": "2026-11-04",
-        "status": "not-selected",
-        "rationale": "Repeat award, not a new measurable workforce operating change."
+        "title": "Texoma digital-sales selection",
+        "beat": "digital-banking",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/financial-services-latest-news/financial-services-latest-news-list/?page=5&pagesize=100",
+        "sourceDate": "2026-11-03",
+        "status": "rejected",
+        "score": 60.6,
+        "rationale": "Below threshold; selection without activation or measured results."
+      },
+      {
+        "title": "MEMBERS1st platform replacements",
+        "beat": "digital-banking",
+        "sourceUrl": "https://finance.yahoo.com/small-business/articles/members1st-community-credit-union-partners-131500516.html",
+        "sourceDate": "2026-11-03",
+        "status": "rejected",
+        "score": 59.9,
+        "rationale": "Below threshold; implementation and outcomes remain prospective."
+      },
+      {
+        "title": "Technology-cutover vendor study",
+        "beat": "vendor-management",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/business-technology-latest-news/financial-technology-list/?page=1&pagesize=100",
+        "sourceDate": "2026-11-03",
+        "status": "rejected",
+        "score": 57.7,
+        "rationale": "Below threshold; vendor-study methodology and credit-union applicability are limited."
+      },
+      {
+        "title": "Tax-verification agentic partnership",
+        "beat": "commercial-lending",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/business-technology-latest-news/financial-technology-list/?page=1&pagesize=100",
+        "sourceDate": "2026-11-03",
+        "status": "rejected",
+        "score": 54.3,
+        "rationale": "Below threshold and no named credit-union deployment."
+      },
+      {
+        "title": "Appli technology award",
+        "beat": "marketing-growth",
+        "sourceUrl": "https://www.cuinsight.com/press-release/applis-tim-pranger-wins-2026-cu-times-luminaries-award-for-technology-providers/",
+        "sourceDate": "2026-11-06",
+        "status": "rejected",
+        "score": 46.7,
+        "rationale": "Award announcement without a new implementation or operating result."
       }
     ],
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "regulatory-technology",
-      "consumer-ai-data-access",
-      "fraud-recovery",
-      "consumer-protection",
-      "cyber-resilience",
-      "payments-competition",
-      "community-banking",
-      "credit-risk",
-      "digital-assets",
+      "business-banking-billing",
+      "ai-vendor-governance",
+      "digital-assets-reporting",
+      "operating-model",
+      "public-policy",
+      "prudential-compliance",
+      "fraud-policy",
       "digital-banking",
-      "bank-supervision",
-      "workforce"
+      "vendor-management",
+      "commercial-lending",
+      "marketing-growth"
     ],
-    "beatsSearchedCount": 12,
+    "beatsSearchedCount": 11,
     "status": "article-published",
     "validation": {
-      "releaseGate": "Exact-head isolated browser run and actual visual review required before merge; see issue #160.",
-      "localPreflight": "pinned Chromium build 1200 absent",
-      "secondSlotReconciliation": "Late run 42216241300 succeeded on superseded PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd; this is evidence of runner recovery, not clearance of a rebased article package.",
-      "priorSecondSlotCloseout": "Blocked pending daily-publisher rebase and revalidation: late exact-head run 42216241300 succeeded, but PR #299 is non-mergeable against current main after the state-only closeout commit. No article or social action occurred.",
-      "priorSecondSlotBlockedReason": "Exact-head run 42216241300 completed successfully after the publisher closeout and produced artifact 13501189332 for PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd. PR #299 is now non-mergeable against current main 8f00ca6e2741a099f979e256d700f4f72a95d36b because both revisions changed automation/daily-cycle-state.json. The daily publisher must re-read main, resolve the state conflict, and obtain new exact-head rendered acceptance plus actual visual review before merge.",
-      "recoveryAcceptance": "Current PR #299 exact head requires terminal design-checks success, digest-verified artifact and publisher visual review before release; old head does not qualify."
+      "policyBaseCommit": "ca75d86069aadda54ec0f2f8d7bc4979bb6c95be",
+      "localPreflight": "blocked; Playwright 1.62.1 pinned Chromium headless shell build 1234 absent; cache absent and unchanged; no install attempted",
+      "releaseGate": "Exact release-package PR head must pass isolated desktop/mobile, accessibility and artwork checks plus complete actual visual review before merge.",
+      "preparationEvidence": "Draft PR 302 informed the package but is not release clearance."
     },
     "socialDecision": "not-created-standard-ineligible",
     "recoveredMissedHighArticle": null,
+    "catchup": {
+      "dedupeKey": "cuai-publisher:2026-11-02-week:two-slot-catchup",
+      "authorization": "one-time November 7-8 weekend catch-up for two missed November 4 slots",
+      "combinedWeekendMaximum": 2,
+      "dayMaximum": 2,
+      "completedThisWeekend": 1,
+      "remainingAuthorized": 1
+    },
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "updatedAt": "2026-11-06T15:41:17.602Z",
-    "secondSlot": "Filled by bounded publisher recovery of PR #299, subject to exact-head release checks before merge. No separate cycle or LinkedIn reservation.",
-    "regularPublicationSlots": [
-      {
-        "slot": 1,
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
-        "verifiedAt": "2026-11-06T16:06:38Z",
-        "productionCommit": "0549c060730efa97b999ae0957d8838c85addbab",
-        "accountableOwner": "daily-publisher",
-        "nextAction": "Reconcile verified result in the existing operating review; do not republish.",
-        "nextReviewAt": "2026-11-06T15:00:00-05:00",
-        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6684733019",
-        "evidence": {
-          "firstObserved": {
-            "at": "2026-11-06T15:54:32Z",
-            "productionCommit": "017f9f5336d4aa6e923b9fa88e3cd8bba0419910"
-          }
-        }
-      },
-      {
-        "slot": 2,
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/claude-plaid-personal-finance-beta.html",
-        "verifiedAt": "2026-11-06T16:06:38Z",
-        "productionCommit": "0549c060730efa97b999ae0957d8838c85addbab",
-        "accountableOwner": "daily-publisher",
-        "nextAction": "Review recovered publication at the existing operating review; do not republish.",
-        "nextReviewAt": "2026-11-06T15:00:00-05:00",
-        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6685079897",
-        "evidence": {
-          "pending": {
-            "head": "b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d",
-            "run": 42247119627,
-            "observedAt": "2026-11-06T15:55:01.796Z",
-            "job": 127992133254,
-            "stage": "Check rendered interactions, typography and accessibility"
-          },
-          "ownedReviewAt": "2026-11-06T16:07:37.227Z",
-          "oldLatePass": {
-            "head": "ae6cf1969fa1e935c32198b1e251adb0fadedcdd",
-            "run": 42216241300,
-            "passedAt": "2026-11-06T07:26:24-05:00"
-          },
-          "technicalFailure": {
-            "head": "1b4b470e59596bb8ed3f35f1b8362636c90109de",
-            "run": 42245567273,
-            "reason": "Strict canonical navigation expectation lacked the approved Tools entry."
-          },
-          "terminalAcceptance": {
-            "head": "b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d",
-            "run": 42247119627,
-            "artifact": 13518873572,
-            "visualReviewedAt": "2026-11-06T16:05:19Z"
-          }
-        }
-      }
-    ]
+    "updatedAt": "2026-11-07T09:30:00-05:00",
+    "secondSlot": "Q2 AI-agent control certification qualified at 67.7 but remains sequentially held until the first package is live-verified and a fresh complete top-of-page visual review passes."
   },
   "history": [
+    {
+      "date": "2026-11-06",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
+          "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
+          "primaryFunctionalAudience": "Credit-union regulatory reporting, compliance, finance and data leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Claude’s Finance Beta Can Read Linked Accounts, Not Move Money",
+          "url": "https://creditunionainews.com/news/claude-plaid-personal-finance-beta.html",
+          "primaryFunctionalAudience": "Credit-union member-service, digital-banking, data-access and privacy leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        }
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "Foster releases regulatory reporting discussion draft",
+          "beat": "regulatory-technology",
+          "sourceUrl": "https://foster.house.gov/media/press-releases/rep-foster-unveils-discussion-draft-legislation-modernize-financial-regulatory",
+          "sourceDate": "2026-11-05",
+          "status": "selected",
+          "rationale": "Fresh congressional proposal explicitly addresses credit unions; not enacted or a current reporting requirement."
+        },
+        {
+          "title": "Anthropic personal-finance beta",
+          "beat": "consumer-ai-data-access",
+          "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+          "sourceDate": "2026-11-05",
+          "status": "selected-second-slot",
+          "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution.",
+          "score": 78.7,
+          "classification": "News",
+          "promotionPriority": "Standard"
+        },
+        {
+          "title": "NCUA seeks additional argument in Jackson Area case",
+          "beat": "fraud-recovery",
+          "sourceUrl": "https://thecudaily.com/ncua-asks-judge-to-consider-additional-arguments-as-it-seeks-access-to-retirement-funds-in-giant-cu-embezzlement-case/",
+          "sourceDate": "2026-11-06",
+          "status": "not-selected",
+          "rationale": "Procedural request, not ruling; underlying memorandum and opposing motions not independently inspected."
+        },
+        {
+          "title": "CFPB explains Navy Federal overdraft termination",
+          "beat": "consumer-protection",
+          "sourceUrl": "https://thecudaily.com/cfpb-defends-decision-to-terminate-od-enforcement-order-against-navy-fcu-and-to-waive-80m-in-refunds/",
+          "sourceDate": "2026-10-27",
+          "status": "not-selected",
+          "rationale": "New trade coverage of an October report and earlier termination, not a fresh legal change."
+        },
+        {
+          "title": "Redwood CEO describes tape backups",
+          "beat": "cyber-resilience",
+          "sourceUrl": "https://thecudaily.com/underground-coverage-one-ceo-talks-member-growth-ai-and-why-it-has-returned-to-tape-drive-backups/",
+          "sourceDate": "2026-11-06",
+          "status": "not-selected",
+          "rationale": "Useful reported practice; timing and independent restore evidence not established."
+        },
+        {
+          "title": "U.S. Bank Payment Switch",
+          "beat": "payments-competition",
+          "sourceUrl": "https://ir.usbank.com/news-events/news/news-details/2026/U-S--Bank-Launches-Payment-Switch-to-Help-Customers-Move-Recurring-Bills-With-Ease/default.aspx",
+          "sourceDate": "2026-10-19",
+          "status": "not-selected",
+          "rationale": "New recap does not reset the October launch date."
+        },
+        {
+          "title": "Addition Financial school affinity debit card",
+          "beat": "community-banking",
+          "sourceUrl": "https://thecudaily.com/addition-financial-partners-on-debit-card-with-thomas-county-schools/",
+          "sourceDate": "2026-11-01",
+          "status": "not-selected",
+          "rationale": "Older local program extension with no observed adoption for the new market."
+        },
+        {
+          "title": "Fed bank lending standards survey",
+          "beat": "credit-risk",
+          "sourceUrl": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
+          "sourceDate": "2026-11-02",
+          "status": "not-selected",
+          "rationale": "Bank respondents, not credit unions; no new policy or measurable CU outcome."
+        },
+        {
+          "title": "DaLand Coin2Core certification",
+          "beat": "digital-assets",
+          "sourceUrl": "https://creditunions.com/press_releases/daland-cuso-receives-blockchain-certification/",
+          "sourceDate": "2026-11-05",
+          "status": "not-selected",
+          "rationale": "Certification announcement does not establish CU deployment, member use or operational results."
+        },
+        {
+          "title": "MEMBERS1st selects Mahalo",
+          "beat": "digital-banking",
+          "sourceUrl": "https://www.cuinsight.com/press-releases/page/3/",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "rationale": "Selection without a documented launch or observed benefits; similar digital-platform coverage is recent."
+        },
+        {
+          "title": "OCC examiner AI guidance",
+          "beat": "bank-supervision",
+          "sourceUrl": "https://www.reuters.com/business/finance/us-bank-regulator-issues-first-ever-ai-guidance-examiners-2026-11-04/",
+          "sourceDate": "2026-11-04",
+          "status": "duplicate",
+          "rationale": "Already covered by the November 5 CUAI Alert."
+        },
+        {
+          "title": "Texans CU workplace recognition",
+          "beat": "workforce",
+          "sourceUrl": "https://www.morningstar.com/news/pr-newswire/20261104da89214/texans-credit-union-named-a-2026-dallas-morning-news-top-workplace-for-fourth-consecutive-year",
+          "sourceDate": "2026-11-04",
+          "status": "not-selected",
+          "rationale": "Repeat award, not a new measurable workforce operating change."
+        }
+      ],
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "regulatory-technology",
+        "consumer-ai-data-access",
+        "fraud-recovery",
+        "consumer-protection",
+        "cyber-resilience",
+        "payments-competition",
+        "community-banking",
+        "credit-risk",
+        "digital-assets",
+        "digital-banking",
+        "bank-supervision",
+        "workforce"
+      ],
+      "beatsSearchedCount": 12,
+      "status": "article-published",
+      "validation": {
+        "releaseGate": "Exact-head isolated browser run and actual visual review required before merge; see issue #160.",
+        "localPreflight": "pinned Chromium build 1200 absent",
+        "secondSlotReconciliation": "Late run 42216241300 succeeded on superseded PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd; this is evidence of runner recovery, not clearance of a rebased article package.",
+        "priorSecondSlotCloseout": "Blocked pending daily-publisher rebase and revalidation: late exact-head run 42216241300 succeeded, but PR #299 is non-mergeable against current main after the state-only closeout commit. No article or social action occurred.",
+        "priorSecondSlotBlockedReason": "Exact-head run 42216241300 completed successfully after the publisher closeout and produced artifact 13501189332 for PR head ae6cf1969fa1e935c32198b1e251adb0fadedcdd. PR #299 is now non-mergeable against current main 8f00ca6e2741a099f979e256d700f4f72a95d36b because both revisions changed automation/daily-cycle-state.json. The daily publisher must re-read main, resolve the state conflict, and obtain new exact-head rendered acceptance plus actual visual review before merge.",
+        "recoveryAcceptance": "Current PR #299 exact head requires terminal design-checks success, digest-verified artifact and publisher visual review before release; old head does not qualify."
+      },
+      "socialDecision": "not-created-standard-ineligible",
+      "recoveredMissedHighArticle": null,
+      "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+      "updatedAt": "2026-11-06T15:41:17.602Z",
+      "secondSlot": "Filled by bounded publisher recovery of PR #299, subject to exact-head release checks before merge. No separate cycle or LinkedIn reservation.",
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
+          "verifiedAt": "2026-11-06T16:06:38Z",
+          "productionCommit": "0549c060730efa97b999ae0957d8838c85addbab",
+          "accountableOwner": "daily-publisher",
+          "nextAction": "Reconcile verified result in the existing operating review; do not republish.",
+          "nextReviewAt": "2026-11-06T15:00:00-05:00",
+          "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6684733019",
+          "evidence": {
+            "firstObserved": {
+              "at": "2026-11-06T15:54:32Z",
+              "productionCommit": "017f9f5336d4aa6e923b9fa88e3cd8bba0419910"
+            }
+          }
+        },
+        {
+          "slot": 2,
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/claude-plaid-personal-finance-beta.html",
+          "verifiedAt": "2026-11-06T16:06:38Z",
+          "productionCommit": "0549c060730efa97b999ae0957d8838c85addbab",
+          "accountableOwner": "daily-publisher",
+          "nextAction": "Review recovered publication at the existing operating review; do not republish.",
+          "nextReviewAt": "2026-11-06T15:00:00-05:00",
+          "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6685079897",
+          "evidence": {
+            "pending": {
+              "head": "b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d",
+              "run": 42247119627,
+              "observedAt": "2026-11-06T15:55:01.796Z",
+              "job": 127992133254,
+              "stage": "Check rendered interactions, typography and accessibility"
+            },
+            "ownedReviewAt": "2026-11-06T16:07:37.227Z",
+            "oldLatePass": {
+              "head": "ae6cf1969fa1e935c32198b1e251adb0fadedcdd",
+              "run": 42216241300,
+              "passedAt": "2026-11-06T07:26:24-05:00"
+            },
+            "technicalFailure": {
+              "head": "1b4b470e59596bb8ed3f35f1b8362636c90109de",
+              "run": 42245567273,
+              "reason": "Strict canonical navigation expectation lacked the approved Tools entry."
+            },
+            "terminalAcceptance": {
+              "head": "b50c7fcfd0b4be68177ee0ae1249dfdfdd26263d",
+              "run": 42247119627,
+              "artifact": 13518873572,
+              "visualReviewedAt": "2026-11-06T16:05:19Z"
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-05",
       "fullArticleCount": 1,

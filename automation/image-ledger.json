@@ -3,6 +3,27 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "mountain-america-business-billing-modernization",
+      "articleUrl": "/news/mountain-america-business-billing-modernization.html",
+      "imagePath": "/assets/mountain-america-business-billing-modernization.jpg",
+      "publishedAt": "2026-11-07T09:30:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "business-billing-workflow",
+      "composition": "modular-flow",
+      "perspective": "wide-editorial",
+      "palette": "navy-teal-amber",
+      "lighting": "soft-daylight",
+      "texture": "translucent-glass",
+      "scene": "account-analysis records move through modular billing controls toward a net-charge statement",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "eff0ff075c846bf4621fe22fbd6154c1a997b5b154fc8adf0d674435c918fb02"
+    },
+    {
       "id": "claude-plaid-personal-finance-beta",
       "articleUrl": "/news/claude-plaid-personal-finance-beta.html",
       "imagePath": "/assets/claude-plaid-personal-finance-beta.jpg",
@@ -116,11 +137,22 @@
       "texture": "paper-fiber",
       "scene": "uniform-auto-rate-grid-gives-way-to-a-deal-assembled-from-borrower-vehicle-collateral-and-market-inputs",
       "conceptScore": 94.2,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "02d33bdb4968fecf13da59820290b1d7ba3e5514b5707e9d17db54490b2e31dd",
       "conceptAlternatives": [
-        {"medium": "ink-and-linocut", "subject": "vehicle-collateral-and-price-boundary", "score": 91.1},
-        {"medium": "cinematic-conceptual", "subject": "rate-tier-to-individual-deal-transition", "score": 88.9}
+        {
+          "medium": "ink-and-linocut",
+          "subject": "vehicle-collateral-and-price-boundary",
+          "score": 91.1
+        },
+        {
+          "medium": "cinematic-conceptual",
+          "subject": "rate-tier-to-individual-deal-transition",
+          "score": 88.9
+        }
       ]
     },
     {
@@ -139,11 +171,22 @@
       "texture": "polished-metal",
       "scene": "stopwatch-payment-card-and-evidence-slips-marking-provisional-credit-and-investigation-deadlines",
       "conceptScore": 76.4,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "88f1b3564f7b465d7fe3f2733faa2b91c5f1ff659f3e390d1d38aaf9f935ee54",
       "conceptAlternatives": [
-        {"medium": "editorial-data-collage", "subject": "member-notice-and-case-evidence", "score": 75.9},
-        {"medium": "soft-editorial-illustration", "subject": "human-reviewed-dispute-clock", "score": 74.8}
+        {
+          "medium": "editorial-data-collage",
+          "subject": "member-notice-and-case-evidence",
+          "score": 75.9
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "human-reviewed-dispute-clock",
+          "score": 74.8
+        }
       ]
     },
     {
@@ -162,11 +205,22 @@
       "texture": "frosted-glass",
       "scene": "mortgage-files-moving-through-agentic-processing-lanes-with-human-review-gates-and-a-home-checkpoint",
       "conceptScore": 98.6,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "0e3037540957be49f72a1ac1c2dc192ebe4468a59883b4cea01299f578e65488",
       "conceptAlternatives": [
-        {"medium": "macro-still-life", "subject": "documents-and-controls", "score": 92.7},
-        {"medium": "soft-editorial-illustration", "subject": "mortgage-workflow", "score": 89.4}
+        {
+          "medium": "macro-still-life",
+          "subject": "documents-and-controls",
+          "score": 92.7
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "mortgage-workflow",
+          "score": 89.4
+        }
       ]
     },
     {
@@ -185,11 +239,22 @@
       "texture": "matte-clay",
       "scene": "normal-login-and-account-recovery-paths-separated-by-human-review-and-member-notification",
       "conceptScore": 91.1,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "7286b18baf6b781189e19a94ab052aa570951e3bb21e769d2ddb5016b882ced2",
       "conceptAlternatives": [
-        {"medium": "macro-still-life", "subject": "documents-and-controls", "score": 76.7},
-        {"medium": "mixed-media-collage", "subject": "human-machine-handoff", "score": 75.4}
+        {
+          "medium": "macro-still-life",
+          "subject": "documents-and-controls",
+          "score": 76.7
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "human-machine-handoff",
+          "score": 75.4
+        }
       ]
     },
     {
@@ -208,11 +273,22 @@
       "texture": "fabric-and-wood",
       "scene": "member-and-frontline-employee-reviewing-a-personalized-offer-path-across-digital-and-branch-channels",
       "conceptScore": 97.6,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "014aa46fe43a58f896fddf25ade06e3d3862cbd3f0511050d28bed9ef1187e19",
       "conceptAlternatives": [
-        {"medium": "refined-data-abstraction", "subject": "abstract-data-system", "score": 95.3},
-        {"medium": "soft-editorial-illustration", "subject": "frontline-workflow", "score": 90.3}
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "score": 95.3
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "frontline-workflow",
+          "score": 90.3
+        }
       ]
     },
     {
@@ -231,11 +307,22 @@
       "texture": "paper-cut-and-soft-3d-surfaces",
       "scene": "financial-institutions-connect-to-a-supervisory-analytics-lens-with-an-anomaly-path-and-human-review-checkpoint",
       "conceptScore": 91.4,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "54d4606783d45e4a2ab542e313c2770fe72131864cf76f8df0df7e304249edd4",
       "conceptAlternatives": [
-        {"medium": "editorial-data-collage", "subject": "supervisory-analytics-and-evidence-flow", "score": 86.8},
-        {"medium": "macro-still-life", "subject": "budget-allocation-and-human-review-boundary", "score": 82.5}
+        {
+          "medium": "editorial-data-collage",
+          "subject": "supervisory-analytics-and-evidence-flow",
+          "score": 86.8
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "budget-allocation-and-human-review-boundary",
+          "score": 82.5
+        }
       ]
     },
     {
@@ -253,12 +340,23 @@
       "lighting": "soft-natural-window-light",
       "texture": "paper-fiber",
       "scene": "digital-and-branch-paths-converge-into-one-evidence-record",
-      "conceptScore": 92.0,
-      "dimensions": {"width": 1200, "height": 630},
+      "conceptScore": 92,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "6b98096db8314e9c4eeb10cbd72d6965dadbc80aa96ce41f703c7e0b849b9566",
       "conceptAlternatives": [
-        {"medium": "macro-still-life", "subject": "entity-owner-signer-evidence-record", "score": 86.4},
-        {"medium": "refined-data-abstraction", "subject": "business-onboarding-channel-handoff", "score": 82.8}
+        {
+          "medium": "macro-still-life",
+          "subject": "entity-owner-signer-evidence-record",
+          "score": 86.4
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "business-onboarding-channel-handoff",
+          "score": 82.8
+        }
       ]
     },
     {
@@ -277,11 +375,22 @@
       "texture": "polished-metal-and-frosted-glass",
       "scene": "decision-engine-approaches-approval-gate-while-monitoring-console-remains-disconnected",
       "conceptScore": 91.2,
-      "dimensions": {"width": 1200, "height": 630},
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
       "sha256": "3702127e8ac4e5fd95a4a13274e4193ea64978711db95674fbeb40531500b9f8",
       "conceptAlternatives": [
-        {"medium": "refined-data-abstraction", "subject": "autonomy-and-governance-gap", "score": 86.1},
-        {"medium": "mixed-media-collage", "subject": "decision-authority-and-model-controls", "score": 82.7}
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "autonomy-and-governance-gap",
+          "score": 86.1
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "decision-authority-and-model-controls",
+          "score": 82.7
+        }
       ]
     },
     {
