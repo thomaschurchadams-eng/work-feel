@@ -51,10 +51,14 @@ Before terminal closeout, use `inspectUsingGitHubTools` from `lib/publisher-vali
 
 #### Executable binding in the tools runtime
 
-At this entry point, run the following in the ordinary `functions.exec` runtime, then call `await inspectOwnedValidation(pending)` with the exact owned checkpoint described above. Ordinary work without a pending checkpoint and valid editorial/approval holds do not enter this binding. Repeated reads perform no writes; a closed PR returns reconciliation and must not be reopened. Use the actual current clock and observations; never manufacture a pending result from a terminal run.
+At this entry point, run the following in the ordinary `functions.exec` runtime, then call `await inspectOwnedValidation({ kind: 'validation', pending })` with the exact owned checkpoint described above. Use `kind: 'ordinary'` for work without a pending checkpoint and `kind: 'held'` for valid editorial/approval holds; both return before any GitHub read. Repeated validation reads perform no writes; a closed PR returns reconciliation and must not be reopened. Use the actual current clock and observations; never manufacture a pending result from a terminal run.
 
 ```javascript
-async function inspectOwnedValidation(pending) {
+async function inspectOwnedValidation({ kind, pending }) {
+  if (!['validation', 'ordinary', 'held'].includes(kind)) throw Error('unknown-validation-mode');
+  if (kind !== 'validation') return {
+    decision: 'not-applicable', reason: kind, releaseReady: false, shouldEscalate: false
+  };
   const repository = 'thomaschurchadams-eng/work-feel';
   const expectedBlob = '3cf8d0c54f0031e2ac1bd388eda601dca6e1eed7';
   const mainRead = await tools.mcp__codex_apps__github_fetch({

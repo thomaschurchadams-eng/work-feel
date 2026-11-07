@@ -20,7 +20,7 @@ function fixture(options={}) {
     mcp__codex_apps__github_update_ref:()=>{throw Error('writer invoked');}
   };
   const fn=vm.runInNewContext(`${code}\ninspectOwnedValidation`,{tools});
-  return {calls,run:()=>fn(pending)};
+  return {calls,run:()=>fn({kind:options.kind || 'validation',pending})};
 }
 test('controlling policy loader runs without Node globals and reads source from exact current main',async()=>{
   assert.equal(blob,'3cf8d0c54f0031e2ac1bd388eda601dca6e1eed7');
@@ -31,3 +31,5 @@ test('controlling loader refuses changed source identity before candidate reads'
 test('controlling loader stops on denial without retrying or selecting a fallback source',async()=>{const f=fixture({denied:true});await assert.rejects(f.run(),/source-unavailable-or-mismatched/);assert.equal(f.calls.length,2);});
 test('completed PR under the controlling loader performs no historical job/run reads',async()=>{const f=fixture({completed:true}),r=await f.run();assert.equal(r.decision,'reconcile-existing-release');assert.equal(r.shouldEscalate,false);assert.equal(f.calls.length,3);});
 test('duplicate terminal reads remain read-only with no release grant',async()=>{const f=fixture();const a=await f.run(),b=await f.run();assert.equal(a.decision,b.decision);assert.equal(a.releaseReady,false);assert.equal(b.releaseReady,false);assert.equal(f.calls.length,10);});
+for(const kind of ['ordinary','held'])test(`controlling loader excludes ${kind} work before all GitHub reads`,async()=>{const f=fixture({kind}),r=await f.run();assert.equal(r.decision,'not-applicable');assert.equal(r.reason,kind);assert.equal(r.shouldEscalate,false);assert.equal(r.releaseReady,false);assert.equal(f.calls.length,0);});
+test('controlling loader rejects unknown work kinds without GitHub reads',async()=>{const f=fixture({kind:'unknown'});await assert.rejects(f.run(),/unknown-validation-mode/);assert.equal(f.calls.length,0);});
