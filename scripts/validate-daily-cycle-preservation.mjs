@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { isDeepStrictEqual } from 'node:util';
+import guards from '../lib/daily-cycle-guards.cjs';
 
 const statePath = process.argv[2] || 'automation/daily-cycle-state.json';
 const requestedBaseRef = process.argv[3] || process.env.CUAI_BASE_REF || 'main';
@@ -27,11 +28,16 @@ function readJson(label, bytes) {
   }
 }
 
-if (!fs.existsSync(statePath)) {
+const candidateRef = process.argv[4];
+if (candidateRef && !/^[a-f0-9]{40}$/.test(candidateRef)) fail('candidate ref must be an exact commit SHA');
+if (!candidateRef && !fs.existsSync(statePath)) {
   fail(`candidate file is missing: ${statePath}`);
 }
 
-const candidate = readJson('candidate state', fs.readFileSync(statePath));
+let candidateBytes;
+try { candidateBytes = candidateRef ? execFileSync('git', ['show', `${candidateRef}:${statePath}`]) : fs.readFileSync(statePath); }
+catch { fail('candidate state unavailable at exact revision'); }
+const candidate = readJson('candidate state', candidateBytes);
 
 let baseBytes;
 let baseRef = requestedBaseRef;
@@ -50,6 +56,10 @@ try {
 }
 
 const base = readJson(`base state (${baseRef})`, baseBytes);
+try {
+  guards.validateCurrentContinuity(base.current, candidate.current);
+  for (const entry of candidate.history || []) guards.validatePendingSlots(entry, { allowLegacyAttempt: true });
+} catch (error) { fail(error.message); }
 
 if (!Array.isArray(base.history)) {
   fail('base state does not contain a history array');

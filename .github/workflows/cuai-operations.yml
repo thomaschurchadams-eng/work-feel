@@ -10,6 +10,8 @@ on:
       - 'automation/native-video-handoff.md'
       - 'lib/operational-policy.cjs'
       - 'lib/browser-readiness.cjs'
+      - 'lib/daily-cycle-guards.cjs'
+      - 'lib/publisher-validation.cjs'
       - 'lib/design-review-routes.cjs'
       - 'scripts/check-operational-policy.cjs'
       - 'scripts/publisher-browser-preflight.cjs'
@@ -19,6 +21,7 @@ on:
       - 'templates/**'
       - 'scripts/*design*.mjs'
       - 'scripts/validate-daily-cycle-preservation.mjs'
+      - 'scripts/validate-daily-cycle-chain.mjs'
       - 'scripts/generate-topic-hubs.mjs'
       - 'scripts/remediate-site-qc.mjs'
       - 'tests/*.test.cjs'
@@ -51,6 +54,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
           fetch-depth: 0
+      - name: Validate daily-cycle history against PR base
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/validate-daily-cycle-preservation.mjs automation/daily-cycle-state.json "$BASE_SHA"
       - name: Isolate the test browser cache for this job
         run: printf '%s\n' "PLAYWRIGHT_BROWSERS_PATH=${RUNNER_TEMP}/cuai-design-browsers" >> "$GITHUB_ENV"
       - name: Use Node for design checks
@@ -104,6 +111,11 @@ jobs:
         with:
           ref: ${{ env.DEPLOYED_SHA }}
           persist-credentials: false
+          fetch-depth: 0
+      - name: Validate daily-cycle history from accepted baseline and pre-push main
+        env:
+          CUAI_PUSH_BEFORE: ${{ github.event.before }}
+        run: node scripts/validate-daily-cycle-chain.mjs
       - name: Validate durable daily-cycle state
         run: node --test tests/daily-cycle-state.test.cjs
       - name: Verify authorization and process bounded operations
