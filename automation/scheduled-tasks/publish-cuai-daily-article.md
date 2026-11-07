@@ -49,6 +49,41 @@ While an exact-head PR check is running, retain `daily-publisher` ownership of t
 
 Before terminal closeout, use `inspectUsingGitHubTools` from `lib/publisher-validation.cjs` through the existing authorized GitHub readers. Supply the exact PR number, head SHA, run/job IDs, verified attempt, owner and review time. A pending, unknown, inaccessible or stale-head result cannot clear a release or remove ownership. The run and exact job must agree on head and attempt. An older checkpoint with unknown attempt must first record `attemptResolution` from matching authoritative run/job observations and persist that attempt before closeout. On a changed candidate or attempt, retain the previous checkpoint and any terminal receipt in `evidence.validationHistory` as superseded and validate the new head. A terminal success requires exact-artifact inspection and actual visual review; the helper never grants publication permission or claims live verification. It creates no follow-up execution or external write.
 
+#### Executable binding in the tools runtime
+
+At this entry point, run the following in the ordinary `functions.exec` runtime, then call `await inspectOwnedValidation(pending)` with the exact owned checkpoint described above. Ordinary work without a pending checkpoint and valid editorial/approval holds do not enter this binding. Repeated reads perform no writes; a closed PR returns reconciliation and must not be reopened. Use the actual current clock and observations; never manufacture a pending result from a terminal run.
+
+```javascript
+async function inspectOwnedValidation(pending) {
+  const repository = 'thomaschurchadams-eng/work-feel';
+  const expectedBlob = '3cf8d0c54f0031e2ac1bd388eda601dca6e1eed7';
+  const mainRead = await tools.mcp__codex_apps__github_fetch({
+    url: `https://api.github.com/repos/${repository}/commits/main`
+  });
+  if (mainRead?.isError || mainRead?.structuredContent?.error) throw Error('main-read-blocked');
+  const sourceCommit = JSON.parse(mainRead.structuredContent.content).sha;
+  if (!/^[a-f0-9]{40}$/.test(sourceCommit)) throw Error('main-identity-unavailable');
+  const fetched = await tools.mcp__codex_apps__github_fetch_file({
+    repository_full_name: repository, path: 'lib/publisher-validation.cjs', ref: sourceCommit
+  });
+  const source = fetched?.structuredContent;
+  if (fetched?.isError || source?.error || source?.sha !== expectedBlob ||
+      source?.encoding !== 'utf-8' || typeof source?.content !== 'string')
+    throw Error('reviewed-helper-source-unavailable-or-mismatched');
+  const helperModule = { exports: {} };
+  new Function('module', 'exports', 'require', 'tools', 'fetch', source.content)(
+    helperModule, helperModule.exports, undefined, undefined, undefined
+  );
+  const readers = Object.freeze({
+    mcp__codex_apps__github_get_pr_info: args => tools.mcp__codex_apps__github_get_pr_info(args),
+    mcp__codex_apps__github_fetch: args => tools.mcp__codex_apps__github_fetch(args)
+  });
+  return helperModule.exports.inspectUsingGitHubTools({ tools: readers, repository, pending });
+}
+```
+
+A source/read/loader error preserves the existing owner and checkpoint and blocks closeout; do not retry a denied read or substitute another source. The blob pin is the reviewed helper version; update it only alongside a separately reviewed helper change. This binding resolves authorized main, so it becomes available only after release. The November 7 draft acceptance separately loaded the same blob from frozen candidate `383f305824e8141d83427fed73be7d3ae3395012`; that test does not activate the draft. Artifact identity, actual visual review and every release gate remain separate.
+
 Store the observed terminal receipt as `evidence.terminalValidation` with matching head/run/job, attempt, conclusion and observation time. Any new entry into live from any status also requires matching `terminalAcceptance` including the job and actual `visualReviewedAt`, plus the normal live URL, production commit and verification time. Retain owner/review on a technical failure. Run the existing preservation validator against freshly read current main before writing; its PR/main workflow gates reject lost same-day publications, reduced counts, dropped unresolved or completed slots and unsupported terminal closeouts. Completed receipts are append-only and cannot be reopened; a new problem uses its own linked incident. The main gate checks every state-changing first-parent revision since the reviewed `aa43cf2782628289bd927c480799ba15b45af4be` baseline plus the actual pre-push SHA, so an unrelated follow-up, scheduled or manual run cannot clear an earlier rejected transition. Missing baselines fail closed. An invalid historical transition remains blocked even after full state restoration; activation therefore requires an agreed recovery procedure using a separately reviewed baseline migration, never an automatic reset. Expected-version reconciliation and every existing editorial/visual/deployment/social gate still apply. If the externally managed owner has not yet bound this read-only helper, report integration as unverified rather than claim autonomous recovery.
 
 ## Machine-observable run outcome
