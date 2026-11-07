@@ -3,6 +3,38 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "mountain-america-business-billing-modernization",
+      "title": "Mountain America Moves Business Billing Outside Its Core",
+      "url": "/news/mountain-america-business-billing-modernization.html",
+      "publishedAt": "2026-11-07T09:30:00-05:00",
+      "section": "news",
+      "beat": "business-banking-billing",
+      "functions": [
+        "finance-treasury",
+        "operations",
+        "payments-deposits"
+      ],
+      "technologies": [
+        "core-api-cloud",
+        "data-decisioning"
+      ],
+      "format": "case-study",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union finance, business-banking and operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-small-business-servicing-exception-ledger.html",
+        "/news/commonwealth-personalized-offers-business-deposits.html"
+      ],
+      "sourceTier": 2,
+      "confidence": 0.84,
+      "sourceLimit": "The implementation and qualitative improvements are attributed to SunTec and a named Mountain America executive; no counts, cost, error rate, exception evidence or measurement window are public.",
+      "score": 71.5
+    },
+    {
       "id": "claude-plaid-personal-finance-beta",
       "title": "Claude’s Finance Beta Can Read Linked Accounts, Not Move Money",
       "url": "/news/claude-plaid-personal-finance-beta.html",
