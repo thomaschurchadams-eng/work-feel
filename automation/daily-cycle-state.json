@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-07",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
@@ -16,6 +16,15 @@
         "title": "Mountain America Moves Business Billing Outside Its Core",
         "url": "https://creditunionainews.com/news/mountain-america-business-billing-modernization.html",
         "primaryFunctionalAudience": "Credit-union finance, business-banking and operations leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Q2 Adds Third-Party Evidence for AI-Agent Controls",
+        "url": "https://creditunionainews.com/news/q2-aiuc-agent-control-certification.html",
+        "primaryFunctionalAudience": "Credit-union technology, AI governance, risk and vendor-management leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
       }
@@ -35,7 +44,7 @@
         "beat": "ai-vendor-governance",
         "sourceUrl": "https://www.q2.com/company/news/pr/q2-becomes-first-digital-banking-provider-with-aiuc-1-certified-ai-capabilities",
         "sourceDate": "2026-11-05",
-        "status": "qualified-for-sequential-second-slot",
+        "status": "selected-second-slot",
         "score": 67.7,
         "rationale": "Current provider evidence names a third-party audit and adversarial testing; the underlying report, exceptions and product scope are not public."
       },
@@ -150,7 +159,9 @@
       "policyBaseCommit": "ca75d86069aadda54ec0f2f8d7bc4979bb6c95be",
       "localPreflight": "blocked; Playwright 1.62.1 pinned Chromium headless shell build 1234 absent; cache absent and unchanged; no install attempted",
       "releaseGate": "Exact release-package PR head must pass isolated desktop/mobile, accessibility and artwork checks plus complete actual visual review before merge.",
-      "preparationEvidence": "Draft PR 302 informed the package but is not release clearance."
+      "preparationEvidence": "Draft PR 302 informed the package but is not release clearance.",
+      "firstSlot": "Mountain America package merged as 75059e080aaa2925ba936acf786d4ffcd2d7cb26, production READY and live bytes verified on article, hero, homepage and News index.",
+      "secondSlot": "Exact Q2 release-package PR head must pass isolated desktop/mobile, accessibility and artwork checks plus complete actual visual review before merge."
     },
     "socialDecision": "not-created-standard-ineligible",
     "recoveredMissedHighArticle": null,
@@ -159,12 +170,35 @@
       "authorization": "one-time November 7-8 weekend catch-up for two missed November 4 slots",
       "combinedWeekendMaximum": 2,
       "dayMaximum": 2,
-      "completedThisWeekend": 1,
-      "remainingAuthorized": 1
+      "completedThisWeekend": 2,
+      "remainingAuthorized": 0
     },
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "updatedAt": "2026-11-07T09:30:00-05:00",
-    "secondSlot": "Q2 AI-agent control certification qualified at 67.7 but remains sequentially held until the first package is live-verified and a fresh complete top-of-page visual review passes."
+    "updatedAt": "2026-11-07T09:55:00-05:00",
+    "secondSlot": "Filled sequentially by Q2 AI-agent control certification after the first package became production READY and live-verified; no weekend social action.",
+    "catchupSlots": [
+      {
+        "slot": 1,
+        "plannedDate": "2026-11-07",
+        "status": "live-verified",
+        "url": "https://creditunionainews.com/news/mountain-america-business-billing-modernization.html",
+        "verifiedAt": "2026-11-07T14:50:00Z",
+        "productionCommit": "75059e080aaa2925ba936acf786d4ffcd2d7cb26",
+        "accountableOwner": "daily-publisher",
+        "nextAction": "Do not republish; include in the final two-slot catch-up handoff.",
+        "nextReviewAt": "2026-11-09T07:00:00-05:00"
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-07",
+        "status": "pending-exact-head-validation",
+        "url": "https://creditunionainews.com/news/q2-aiuc-agent-control-certification.html",
+        "liveProof": null,
+        "accountableOwner": "daily-publisher",
+        "nextAction": "Run the exact package through isolated desktop/mobile, accessibility and artwork gates, visually review it, then merge and verify production bytes.",
+        "nextReviewAt": "2026-11-07T10:25:00-05:00"
+      }
+    ]
   },
   "history": [
     {
