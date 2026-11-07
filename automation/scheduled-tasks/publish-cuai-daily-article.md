@@ -43,6 +43,53 @@ For each qualifying article, sequentially:
 - Artwork must be explicitly selected and relevant; never fill missing listing artwork with rotating generic or placeholder assets. Legacy cards without approved art may be intentionally text-only. Inspect listing cards on desktop/mobile, preserve working authored art, and exercise image-error behavior: retain readable title/summary/link without a broken-image box or unrelated replacement. Unexpected failed assets still fail readiness even if the interface degrades gracefully. Run the normal rendered acceptance path, including its card-artwork regressions, before handoff.
 - Never publish unsupported claims, invented quotes, implied partnerships, fabricated performance results, or stale facts presented as current.
 
+### Pending validation ownership and terminal evidence
+
+While an exact-head PR check is running, retain `daily-publisher` ownership of the same PR, head, run, job and attempt. Persist its checkpoint in the existing slot evidence and issue #160, with an offset-qualified `nextReviewAt`; a review timestamp is not a scheduled execution. Do not replace an already persisted article outcome with a competing state-only closeout merely because the next slot is still validating.
+
+Before terminal closeout, use `inspectUsingGitHubTools` from `lib/publisher-validation.cjs` through the existing authorized GitHub readers. Supply the exact PR number, head SHA, run/job IDs, verified attempt, owner and review time. A pending, unknown, inaccessible or stale-head result cannot clear a release or remove ownership. The run and exact job must agree on head and attempt. An older checkpoint with unknown attempt must first record `attemptResolution` from matching authoritative run/job observations and persist that attempt before closeout. On a changed candidate or attempt, retain the previous checkpoint and any terminal receipt in `evidence.validationHistory` as superseded and validate the new head. A terminal success requires exact-artifact inspection and actual visual review; the helper never grants publication permission or claims live verification. It creates no follow-up execution or external write.
+
+#### Executable binding in the tools runtime
+
+At this entry point, run the following in the ordinary `functions.exec` runtime, then call `await inspectOwnedValidation({ kind: 'validation', pending })` with the exact owned checkpoint described above. Use `kind: 'ordinary'` for work without a pending checkpoint and `kind: 'held'` for valid editorial/approval holds; both return before any GitHub read. Repeated validation reads perform no writes; a closed PR returns reconciliation and must not be reopened. Use the actual current clock and observations; never manufacture a pending result from a terminal run.
+
+```javascript
+async function inspectOwnedValidation({ kind, pending }) {
+  if (!['validation', 'ordinary', 'held'].includes(kind)) throw Error('unknown-validation-mode');
+  if (kind !== 'validation') return {
+    decision: 'not-applicable', reason: kind, releaseReady: false, shouldEscalate: false
+  };
+  const repository = 'thomaschurchadams-eng/work-feel';
+  const expectedBlob = '3cf8d0c54f0031e2ac1bd388eda601dca6e1eed7';
+  const mainRead = await tools.mcp__codex_apps__github_fetch({
+    url: `https://api.github.com/repos/${repository}/commits/main`
+  });
+  if (mainRead?.isError || mainRead?.structuredContent?.error) throw Error('main-read-blocked');
+  const sourceCommit = JSON.parse(mainRead.structuredContent.content).sha;
+  if (!/^[a-f0-9]{40}$/.test(sourceCommit)) throw Error('main-identity-unavailable');
+  const fetched = await tools.mcp__codex_apps__github_fetch_file({
+    repository_full_name: repository, path: 'lib/publisher-validation.cjs', ref: sourceCommit
+  });
+  const source = fetched?.structuredContent;
+  if (fetched?.isError || source?.error || source?.sha !== expectedBlob ||
+      source?.encoding !== 'utf-8' || typeof source?.content !== 'string')
+    throw Error('reviewed-helper-source-unavailable-or-mismatched');
+  const helperModule = { exports: {} };
+  new Function('module', 'exports', 'require', 'tools', 'fetch', source.content)(
+    helperModule, helperModule.exports, undefined, undefined, undefined
+  );
+  const readers = Object.freeze({
+    mcp__codex_apps__github_get_pr_info: args => tools.mcp__codex_apps__github_get_pr_info(args),
+    mcp__codex_apps__github_fetch: args => tools.mcp__codex_apps__github_fetch(args)
+  });
+  return helperModule.exports.inspectUsingGitHubTools({ tools: readers, repository, pending });
+}
+```
+
+A source/read/loader error preserves the existing owner and checkpoint and blocks closeout; do not retry a denied read or substitute another source. The blob pin is the reviewed helper version; update it only alongside a separately reviewed helper change. This binding resolves authorized main, so it becomes available only after release. The November 7 draft acceptance separately loaded the same blob from frozen candidate `383f305824e8141d83427fed73be7d3ae3395012`; that test does not activate the draft. Artifact identity, actual visual review and every release gate remain separate.
+
+Store the observed terminal receipt as `evidence.terminalValidation` with matching head/run/job, attempt, conclusion and observation time. Any new entry into live from any status also requires matching `terminalAcceptance` including the job and actual `visualReviewedAt`, plus the normal live URL, production commit and verification time. Retain owner/review on a technical failure. Run the existing preservation validator against freshly read current main before writing; its PR/main workflow gates reject lost same-day publications, reduced counts, dropped unresolved or completed slots and unsupported terminal closeouts. Completed receipts are append-only and cannot be reopened; a new problem uses its own linked incident. The main gate checks every state-changing first-parent revision since the reviewed `aa43cf2782628289bd927c480799ba15b45af4be` baseline plus the actual pre-push SHA, so an unrelated follow-up, scheduled or manual run cannot clear an earlier rejected transition. Missing baselines fail closed. An invalid historical transition remains blocked even after full state restoration; activation therefore requires an agreed recovery procedure using a separately reviewed baseline migration, never an automatic reset. Expected-version reconciliation and every existing editorial/visual/deployment/social gate still apply. If the externally managed owner has not yet bound this read-only helper, report integration as unverified rather than claim autonomous recovery.
+
 ## Machine-observable run outcome
 
 Every scheduled weekday article cycle must leave exactly one dated, machine-readable outcome in `automation/daily-cycle-state.json` so the CEO and Reliability Watch can distinguish a valid non-publication from a failed or missing run.
