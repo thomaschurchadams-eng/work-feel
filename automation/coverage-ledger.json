@@ -3,6 +3,38 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "q2-aiuc-agent-control-certification",
+      "title": "Q2 Adds Third-Party Evidence for AI-Agent Controls",
+      "url": "/news/q2-aiuc-agent-control-certification.html",
+      "publishedAt": "2026-11-07T09:55:00-05:00",
+      "section": "news",
+      "beat": "ai-vendor-governance",
+      "functions": [
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "vendor-management"
+      ],
+      "technologies": [
+        "privacy-security",
+        "conversational-ai"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union technology, AI governance, risk and vendor-management leaders",
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/fsb-ai-sound-practices-financial-institutions.html",
+        "/news/bank-ai-autonomy-control-gap-survey.html"
+      ],
+      "sourceTier": 2,
+      "confidence": 0.78,
+      "sourceLimit": "Q2 reports the AIUC-1 certification, audit and adversarial testing. The underlying audit report, tests, exceptions, sampled configurations and exact product scope are not public, and the AIUC updates page supplied no separate Q2 notice when checked November 7.",
+      "score": 67.7
+    },
+    {
       "id": "mountain-america-business-billing-modernization",
       "title": "Mountain America Moves Business Billing Outside Its Core",
       "url": "/news/mountain-america-business-billing-modernization.html",

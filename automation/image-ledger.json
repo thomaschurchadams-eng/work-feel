@@ -3,6 +3,27 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "q2-aiuc-agent-control-certification",
+      "articleUrl": "/news/q2-aiuc-agent-control-certification.html",
+      "imagePath": "/assets/q2-aiuc-agent-control-certification.jpg",
+      "publishedAt": "2026-11-07T09:55:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "ai-agent-control-gates",
+      "composition": "sequential-gates",
+      "perspective": "wide-editorial",
+      "palette": "navy-cyan-amber",
+      "lighting": "controlled-studio",
+      "texture": "translucent-glass",
+      "scene": "an abstract AI agent passes through six control gates beside audit evidence and permission boundaries",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "fcdbf9bdcf87d50c50a0843c11f09d7c6246a6c1c892f52839cd04f4b17058ef"
+    },
+    {
       "id": "mountain-america-business-billing-modernization",
       "articleUrl": "/news/mountain-america-business-billing-modernization.html",
       "imagePath": "/assets/mountain-america-business-billing-modernization.jpg",
