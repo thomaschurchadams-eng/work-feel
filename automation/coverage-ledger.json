@@ -3,6 +3,36 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fincen-fed-cross-border-transfer-travel-rule-withdrawal",
+      "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
+      "url": "/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
+      "publishedAt": "2026-11-09T07:05:12-05:00",
+      "section": "news",
+      "beat": "payments-compliance",
+      "functions": [
+        "payments-deposits",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union payments, wire operations and BSA/AML leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/credit-unions-fed-payment-account-guardrails.html",
+        "/news/treasury-stablecoin-rule-credit-union-shares.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.97,
+      "sourceLimit": "Withdrawal establishes no new operating obligation or change to existing controls. Operational review suggestions are editorial implications.",
+      "score": 76.8
+    },
+    {
       "id": "q2-aiuc-agent-control-certification",
       "title": "Q2 Adds Third-Party Evidence for AI-Agent Controls",
       "url": "/news/q2-aiuc-agent-control-certification.html",
