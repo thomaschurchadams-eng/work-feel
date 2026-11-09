@@ -4713,6 +4713,71 @@
       ],
       "summary": "Reliability reconciled immediate publisher run 79fb0fc2-9114-832b-bd07-f0422f2461b6 through its matching completed result and owner receipt. The publisher accepted the approved weekend catch-up, screened 12 candidates, and prepared two Standard News candidates in draft PR #302 without publishing Friday or creating social activity. Exact draft head cf27a7c481b6e7a646b32d60190483db1b45b212 passed run 42275729960 with 155 repository tests and 48 rendered checks; Mountain America received complete desktop/mobile visual review, while the Q2 captures omitted the page header and metadata and therefore remain visually incomplete. PR #302 is intentionally held, draft and non-mergeable after main advanced; it cannot be reused as release clearance. The existing publisher must rebuild from current main at the approved Saturday 9:00 a.m. Eastern checkpoint, revalidate exact heads, complete visual review, deploy sequentially and verify live bytes. No weekend schedule exists, and reliability did not add or change one, create a second publisher, merge content, retry any provider write, or use PR #260. Current production is READY on exact main 8cd5803eb56956c3cb99d03136b04baad3839ef8 with no recent runtime errors; Friday's two articles remain recorded live-verified, all 77 history entries are preserved, and the 55-item company social queue has no duplicate IDs or active-date conflicts.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-09T07:36:16-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The canonical usage ledger still ended with the approved November 7–8 catch-up marked degraded even though the existing publisher had completed both authorized publications and reconciled the canonical slot state.",
+      "status": "recovered",
+      "incidentKey": "cuai-publisher:2026-11-02-week:two-slot-catchup",
+      "workUnits": {
+        "publisherRecoveryReceiptsReviewed": 2,
+        "catchupPublicationsVerified": 2,
+        "publicationPullRequestsReviewed": 3,
+        "exactHeadValidationRunsReviewed": 3,
+        "publicationHistoryEntriesPreserved": 78,
+        "productionDeploymentChecks": 3,
+        "liveSurfaceChecks": 4,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "schedulesChanged": 0,
+        "providerWritesRetried": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The authorized two-slot November 7 catch-up is fully recovered under the existing daily-publisher owner. Mountain America published through PR #306 after exact-head run 42382739273 and complete desktop/mobile, accessibility, artwork and visual review; Q2 published sequentially through PR #307 after exact-head run 42383641535 passed the same release gates, including complete top-of-page review. Production deployments dpl_6YwM1XGBWZncdQJ2d9TWKQwxp7wr and dpl_5WyWg9gvK5PV6Uad2gfet3cGawXK were READY and the live articles, homepage, News index and hero bytes were verified. PR #308 then reconciled the canonical slot record without another publication, preserving all 78 history entries. Both articles are Standard and weekend-ineligible for LinkedIn; the 55-item company queue remains unchanged with no duplicate IDs or active-date conflicts. No schedule, credential, permission, destination, UTM, editorial gate or social limit changed, and no catch-up authority remains.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-09T07:36:16-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The canonical usage ledger still marked the November 6 async-closeout prevention incident blocked even though exact-head PR #268 had received final consuming-owner acceptance, merged, deployed and was exercised by the next ordinary publisher cycle.",
+      "status": "recovered",
+      "incidentKey": "cuai-publishing:async-closeout-prevention:2026-11-06",
+      "workUnits": {
+        "safeguardReleaseReceiptsReviewed": 1,
+        "consumingOwnerAcceptanceReceiptsObserved": 1,
+        "exactHeadValidationRunsReviewed": 1,
+        "repositoryTestsObserved": 227,
+        "renderedChecksObserved": 44,
+        "policyBindingTestsObserved": 8,
+        "postMergeVerifiedOperationsRunsReviewed": 1,
+        "releasedMainBindingChecks": 1,
+        "completedCheckpointReconciliationsObserved": 1,
+        "historicalWorkflowReadsAvoided": 1,
+        "naturalPublisherCyclesReviewed": 1,
+        "pendingCheckpointsObserved": 2,
+        "terminalValidationOutcomesObserved": 2,
+        "productionDeploymentChecks": 2,
+        "liveSurfaceChecks": 3,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "unreleasedCheckpointAdaptersActivated": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The repeated publisher closeout-race prevention is released and operationally recovered under the original incident key. Exact accepted PR #268 head aa7a036580a3c7babcbca4c7aa118aea574d9f15 passed run 42393178231 with 227 repository tests, 44 rendered checks, eight executable policy-binding tests and consuming-owner desktop/mobile, accessibility and artwork review. It merged as a10847c9e6a27405a896ee4639323ed900012ccc and Production dpl_BbUcP3e16HnMePQ3f9yyP8qgtWs8 is READY; natural post-merge verified-operations run 42395515847 succeeded. A current-main binding check resolved main ad01aaf1f00959665840e82318d1477940b6b107, loaded the pinned helper blob 3cf8d0c54f0031e2ac1bd388eda601dca6e1eed7, and reconciled closed PR #268 as reconcile-existing-release after only main, helper and PR reads, with no historical run/job reads and no write. The November 9 ordinary publisher cycle then retained checkpoint ownership through an exact-head test failure, recorded the superseded terminal result, validated the replacement head ee51b53a587fc313b3c46205450bbef79136b13c through successful run 42614631185, completed visual acceptance, published once and persisted the live slot without a conflicting state-only closeout. This demonstrates released binding and the ordinary retained-owner path; a future naturally occurring live failure-escalation transition remains unobserved and is not claimed. PR #260 and any shared checkpoint adapter remain unactivated.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
