@@ -146,10 +146,110 @@
       }
     ],
     "status": "article-published",
-    "updatedAt": "2026-11-09T07:05:12-05:00",
-    "socialDecision": "not-created-standard-ineligible",
+    "updatedAt": "2026-11-09T12:14:40Z",
+    "socialDecision": "No new LinkedIn reservation: Standard article ineligible; no unsent eligible High recovery found; house item prepared only, complete future provider inventory unavailable.",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Verify exact release and reconcile the second slot only after first-slot live proof."
+    "nextAction": "Preserve the live slot and editorial hold; do not replay this cycle.",
+    "regularPublicationSlots": [
+      {
+        "slot": 1,
+        "plannedDate": "2026-11-09",
+        "status": "live-verified",
+        "accountableOwner": "daily-publisher",
+        "url": "https://creditunionainews.com/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
+        "verifiedAt": "2026-11-09T12:14:40Z",
+        "productionCommit": "0fc2e5b1254f79e9b8044474122ceeab34ddea8d",
+        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6739696317",
+        "nextReviewAt": "2026-11-10T07:00:00-05:00",
+        "nextAction": "Do not republish; retain the live and validation receipts.",
+        "evidence": {
+          "pending": {
+            "prNumber": 309,
+            "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
+            "run": 42614631185,
+            "job": 129151327417,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-09T07:25:00-05:00"
+          },
+          "validationHistory": [
+            {
+              "prNumber": 309,
+              "head": "1c6a5cadbd36f94e6836334faa784dd5ba1e7a3c",
+              "run": 42614300868,
+              "job": 129150229365,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-09T07:22:00-05:00",
+              "status": "superseded",
+              "observedAt": "2026-11-09T12:07:52.441Z",
+              "terminalValidation": {
+                "head": "1c6a5cadbd36f94e6836334faa784dd5ba1e7a3c",
+                "run": 42614300868,
+                "job": 129150229365,
+                "runAttempt": 1,
+                "conclusion": "failure",
+                "runConclusion": "failure",
+                "jobConclusion": "failure",
+                "observedAt": "2026-11-09T12:07:52.441Z"
+              }
+            }
+          ],
+          "terminalValidation": {
+            "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
+            "run": 42614631185,
+            "job": 129151327417,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-09T12:12:07.717Z"
+          },
+          "terminalAcceptance": {
+            "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
+            "run": 42614631185,
+            "job": 129151327417,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-09T12:14:06.221Z",
+            "artifactId": 13672192416
+          }
+        }
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-09",
+        "status": "editorial-hold",
+        "accountableOwner": "daily-publisher",
+        "liveProof": "none; no second package released",
+        "nextReviewAt": "2026-11-10T07:00:00-05:00",
+        "nextAction": "Retain deceased-member servicing as an evergreen coverage lead; reconsider only with a stronger evidence or coverage case."
+      }
+    ],
+    "validation": {
+      "localPreflight": "Pinned Chromium headless shell 1234 absent; cache absent and unchanged.",
+      "isolated": "Replacement design job passed exact-head Chromium, rendered, accessibility, artwork and actual publisher visual checks.",
+      "artifactId": 13672192416,
+      "productionCommit": "0fc2e5b1254f79e9b8044474122ceeab34ddea8d",
+      "productionDeployment": "dpl_8S82tZbYDYvxZYn2bBMJK2eCBVXp",
+      "verifiedAt": "2026-11-09T12:14:40Z"
+    },
+    "secondSlot": "No second current-event candidate cleared the scoring and editorial gates. The distinct deceased-member fallback scored 60.5 below 62; no draft or release. The TDECU case and November regulatory roundup did not clear threshold and lacked a stronger independent operating result or material new dataset.",
+    "fallbackEvaluations": [
+      {
+        "title": "After a Member Dies, AI Can Sort Documents but Cannot Establish Authority",
+        "classification": "Insights — Library candidate",
+        "sourceUrl": "https://www.affinityfcu.com/personal-banking/services/deceased-member-affairs",
+        "supportingSourceUrls": [
+          "https://flcu.org/next-steps-after-a-loss/",
+          "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/artificial-intelligence-ai"
+        ],
+        "sourceDate": null,
+        "score": 60.5,
+        "threshold": 62,
+        "status": "editorial-hold",
+        "rationale": "Document-routing is useful, but public examples describe institution-specific bereavement procedures, not a newly tested AI implementation; no defensible recency boost."
+      }
+    ]
   },
   "history": [
     {
