@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'BSA / Payments',
+      headline: 'FinCEN Orders Financial Institutions to Block MEXC Global Transfers',
+      summary:
+        'FinCEN said on November 6 that it issued an order finding MEXC Global, including covered subsidiaries, branches, offices and successor entities outside the United States, to be a primary money-laundering concern in connection with Russian illicit finance. The public-inspection notice is scheduled for Federal Register publication on November 10, and the prohibition takes effect 30 days after publication.',
+      impact:
+        'Credit-union BSA/AML, sanctions, wire, payment, fraud and digital-asset teams should identify direct and indirect MEXC Global exposure; confirm that intermediaries, vendors and screening controls can block prohibited transfers by the effective date; preserve current suspicious-activity and OFAC procedures; and retain escalation and testing evidence. The order is not yet effective, so teams should verify the final Federal Register publication date before changing transaction controls.',
+      sourceName: 'Financial Crimes Enforcement Network',
+      sourceUrl:
+        'https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system',
+      date: 'Nov 6, 2026',
+      slug: 'fincen-mexc-global-transfer-prohibition'
+    },
+    {
       label: 'AI Supervision',
       headline: 'OCC Gives Examiners a Framework for AI and Agentic-System Risk',
       summary:
@@ -1154,7 +1167,7 @@
 
   // Maintained by the weekday operating cycle. Items expire automatically after seven days.
   const homepageWatchState = {
-    reviewedAt: '2026-11-05T15:18:36-05:00',
+    reviewedAt: '2026-11-09T15:30:15-05:00',
     items: []
   };
 
