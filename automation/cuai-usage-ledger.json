@@ -4778,6 +4778,70 @@
       ],
       "summary": "The repeated publisher closeout-race prevention is released and operationally recovered under the original incident key. Exact accepted PR #268 head aa7a036580a3c7babcbca4c7aa118aea574d9f15 passed run 42393178231 with 227 repository tests, 44 rendered checks, eight executable policy-binding tests and consuming-owner desktop/mobile, accessibility and artwork review. It merged as a10847c9e6a27405a896ee4639323ed900012ccc and Production dpl_BbUcP3e16HnMePQ3f9yyP8qgtWs8 is READY; natural post-merge verified-operations run 42395515847 succeeded. A current-main binding check resolved main ad01aaf1f00959665840e82318d1477940b6b107, loaded the pinned helper blob 3cf8d0c54f0031e2ac1bd388eda601dca6e1eed7, and reconciled closed PR #268 as reconcile-existing-release after only main, helper and PR reads, with no historical run/job reads and no write. The November 9 ordinary publisher cycle then retained checkpoint ownership through an exact-head test failure, recorded the superseded terminal result, validated the replacement head ee51b53a587fc313b3c46205450bbef79136b13c through successful run 42614631185, completed visual acceptance, published once and persisted the live slot without a conflicting state-only closeout. This demonstrates released binding and the ordinary retained-owner path; a future naturally occurring live failure-escalation transition remains unobserved and is not claimed. PR #260 and any shared checkpoint adapter remain unactivated.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-09T15:30:15-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Monday bounded operating review after the daily publisher recorded the first regular article slot and the second-slot editorial hold.",
+      "status": "degraded",
+      "incidentKey": "cuai-operating:2026-11-09:monday-review",
+      "workUnits": {
+        "authoritativePolicyFilesReviewed": 5,
+        "coordinationBusCommentsReviewed": 219,
+        "publisherHandoffsConsumed": 1,
+        "reliabilityHandoffsConsumed": 2,
+        "weeklyArticlesTarget": 8,
+        "weeklyArticlesLiveVerified": 1,
+        "mondayRegularSlotsLiveVerified": 1,
+        "mondayRegularSlotsOnEditorialHold": 1,
+        "publicationHistoryEntriesPreserved": 79,
+        "portfolioArticlesReviewed": 95,
+        "recentPortfolioArticlesCompared": 15,
+        "candidatePoolItemsReviewed": 12,
+        "primaryOfficialSourceSurfacesChecked": 8,
+        "qualifiedNewAlerts": 1,
+        "homepageOrAlertWrites": 1,
+        "competitiveDistributionOpportunitiesReviewed": 5,
+        "externalDistributionActions": 0,
+        "audienceDirectReadsAttempted": 3,
+        "audienceDirectReadsSucceeded": 0,
+        "exactCurrentMainMeasurementArtifactsFound": 0,
+        "audienceAssessmentsCompleted": 0,
+        "priorVerifiedMeasurementArtifactsReviewed": 1,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "policyCheckerAttempts": 1,
+        "policyCheckerSuccesses": 1,
+        "socialQueueWrites": 0,
+        "externalContacts": 0,
+        "spendActions": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public official-source web"
+      ],
+      "operationalLearning": {
+        "issue": "The audience-learning loop now has a verified historical artifact, but direct reads for GA4, Search Console and Buffer returned deployment authentication errors and no exact-current-main verified-operations artifact exists. The November 7 artifact also contains rolling partial windows rather than two matched complete GA4 weeks.",
+        "correction": "Applied the existing ordinary-review gate: separate historical provisional evidence from exact-current evidence, record the blocker instead of treating unavailable metrics as zero, retain the operating-system owner, and leave the November 10 outcome checkpoint intact.",
+        "controllingVersion": {
+          "repositoryMain": "259d6a5c50f0dd97d90c8e052af9b5bd48920326",
+          "policyBlob": "b5dea31e9bbd8fd52246f52423fc70aa6f8b44ab",
+          "priorVerifiedOperationsRun": 42395515847,
+          "priorMeasurementArtifact": 13582618220
+        },
+        "owner": "cuai-operating-system retains the audience assessment; reliability-watch retains measurement-access prevention.",
+        "test": "Three exact-deployment metric endpoints were attempted and each returned HTTP 401 deployment_authentication_required; no verified-operations run exists for exact main 259d6a5c50f0dd97d90c8e052af9b5bd48920326. The prior artifact remains readable evidence for its then-current commit but cannot establish the requested matched weekly comparison or causal onset.",
+        "decision": "observe",
+        "actualResult": "Known delivered-output evidence shows one company LinkedIn post in Nov. 1–7 versus four in Oct. 25–31 while eight articles were delivered in each period, but exact matched audience and conversion outcomes remain unmeasured, so no causal conclusion or automatic distribution change was made.",
+        "nextTrigger": "At the November 10 ordinary review, consume a fresh direct provider read or an exact-current-main verified measurement artifact and complete the seven-day PR #279 outcome check; otherwise preserve the exact blocker."
+      },
+      "summary": "Monday operating review: one of eight weekly articles is live, the second Monday slot is on an evidence-based editorial hold, and all 79 historical state entries remain preserved. The latest 15 articles span 15 distinct beats but are concentrated in reported news (9/15), operations (11/15) and risk/compliance (10/15); deceased-member servicing and beneficiary or estate-document evidence remains the next coverage gap. One distinct FinCEN MEXC Global Alert qualified and was prepared for the Alerts surface; the Travel Rule withdrawal was already covered by today's article and was not duplicated. Production exact main was READY with no recent runtime errors, the async-closeout safeguard is closed after a natural publisher-cycle proof, and no social, external contact, spend, credential, permission, schedule, pricing, legal, privacy or editorial-gate change occurred. The weekly public distribution scan produced five bounded opportunities for internal preparation only; all outreach, submission, event participation or paid action requires Tom approval. Audience learning remains evidence-blocked at exact current main: known sent volume fell from four company posts to one while article output stayed at eight, but direct current reads failed and the prior artifact cannot support matched complete weeks or causation.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
