@@ -1,0 +1,291 @@
+{
+  "source": {
+    "before": "c3724bc99da14b9ef8d6d4fe3de3d4ab90779e37",
+    "after": "8f00ca6e2741a099f979e256d700f4f72a95d36b",
+    "scope": "Exact current records; immutable history omitted for focused regression only."
+  },
+  "before": {
+    "date": "2026-11-06",
+    "fullArticleCount": 1,
+    "alertCount": 0,
+    "publications": [
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
+        "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
+        "primaryFunctionalAudience": "Credit-union regulatory reporting, compliance, finance and data leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
+      }
+    ],
+    "candidateEvaluations": [
+      {
+        "title": "Foster releases regulatory reporting discussion draft",
+        "beat": "regulatory-technology",
+        "sourceUrl": "https://foster.house.gov/media/press-releases/rep-foster-unveils-discussion-draft-legislation-modernize-financial-regulatory",
+        "sourceDate": "2026-11-05",
+        "status": "selected",
+        "rationale": "Fresh congressional proposal explicitly addresses credit unions; not enacted or a current reporting requirement."
+      },
+      {
+        "title": "Anthropic personal-finance beta",
+        "beat": "consumer-ai-data-access",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+        "sourceDate": "2026-11-05",
+        "status": "qualified-for-sequential-review",
+        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution."
+      },
+      {
+        "title": "NCUA seeks additional argument in Jackson Area case",
+        "beat": "fraud-recovery",
+        "sourceUrl": "https://thecudaily.com/ncua-asks-judge-to-consider-additional-arguments-as-it-seeks-access-to-retirement-funds-in-giant-cu-embezzlement-case/",
+        "sourceDate": "2026-11-06",
+        "status": "not-selected",
+        "rationale": "Procedural request, not ruling; underlying memorandum and opposing motions not independently inspected."
+      },
+      {
+        "title": "CFPB explains Navy Federal overdraft termination",
+        "beat": "consumer-protection",
+        "sourceUrl": "https://thecudaily.com/cfpb-defends-decision-to-terminate-od-enforcement-order-against-navy-fcu-and-to-waive-80m-in-refunds/",
+        "sourceDate": "2026-10-27",
+        "status": "not-selected",
+        "rationale": "New trade coverage of an October report and earlier termination, not a fresh legal change."
+      },
+      {
+        "title": "Redwood CEO describes tape backups",
+        "beat": "cyber-resilience",
+        "sourceUrl": "https://thecudaily.com/underground-coverage-one-ceo-talks-member-growth-ai-and-why-it-has-returned-to-tape-drive-backups/",
+        "sourceDate": "2026-11-06",
+        "status": "not-selected",
+        "rationale": "Useful reported practice; timing and independent restore evidence not established."
+      },
+      {
+        "title": "U.S. Bank Payment Switch",
+        "beat": "payments-competition",
+        "sourceUrl": "https://ir.usbank.com/news-events/news/news-details/2026/U-S--Bank-Launches-Payment-Switch-to-Help-Customers-Move-Recurring-Bills-With-Ease/default.aspx",
+        "sourceDate": "2026-10-19",
+        "status": "not-selected",
+        "rationale": "New recap does not reset the October launch date."
+      },
+      {
+        "title": "Addition Financial school affinity debit card",
+        "beat": "community-banking",
+        "sourceUrl": "https://thecudaily.com/addition-financial-partners-on-debit-card-with-thomas-county-schools/",
+        "sourceDate": "2026-11-01",
+        "status": "not-selected",
+        "rationale": "Older local program extension with no observed adoption for the new market."
+      },
+      {
+        "title": "Fed bank lending standards survey",
+        "beat": "credit-risk",
+        "sourceUrl": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
+        "sourceDate": "2026-11-02",
+        "status": "not-selected",
+        "rationale": "Bank respondents, not credit unions; no new policy or measurable CU outcome."
+      },
+      {
+        "title": "DaLand Coin2Core certification",
+        "beat": "digital-assets",
+        "sourceUrl": "https://creditunions.com/press_releases/daland-cuso-receives-blockchain-certification/",
+        "sourceDate": "2026-11-05",
+        "status": "not-selected",
+        "rationale": "Certification announcement does not establish CU deployment, member use or operational results."
+      },
+      {
+        "title": "MEMBERS1st selects Mahalo",
+        "beat": "digital-banking",
+        "sourceUrl": "https://www.cuinsight.com/press-releases/page/3/",
+        "sourceDate": "2026-11-03",
+        "status": "not-selected",
+        "rationale": "Selection without a documented launch or observed benefits; similar digital-platform coverage is recent."
+      },
+      {
+        "title": "OCC examiner AI guidance",
+        "beat": "bank-supervision",
+        "sourceUrl": "https://www.reuters.com/business/finance/us-bank-regulator-issues-first-ever-ai-guidance-examiners-2026-11-04/",
+        "sourceDate": "2026-11-04",
+        "status": "duplicate",
+        "rationale": "Already covered by the November 5 CUAI Alert."
+      },
+      {
+        "title": "Texans CU workplace recognition",
+        "beat": "workforce",
+        "sourceUrl": "https://www.morningstar.com/news/pr-newswire/20261104da89214/texans-credit-union-named-a-2026-dallas-morning-news-top-workplace-for-fourth-consecutive-year",
+        "sourceDate": "2026-11-04",
+        "status": "not-selected",
+        "rationale": "Repeat award, not a new measurable workforce operating change."
+      }
+    ],
+    "evaluatedCandidateCount": 12,
+    "beatsSearched": [
+      "regulatory-technology",
+      "consumer-ai-data-access",
+      "fraud-recovery",
+      "consumer-protection",
+      "cyber-resilience",
+      "payments-competition",
+      "community-banking",
+      "credit-risk",
+      "digital-assets",
+      "digital-banking",
+      "bank-supervision",
+      "workforce"
+    ],
+    "beatsSearchedCount": 12,
+    "status": "article-published",
+    "validation": {
+      "releaseGate": "Exact-head isolated browser run and actual visual review required before merge; see issue #160.",
+      "localPreflight": "pinned Chromium build 1200 absent"
+    },
+    "socialDecision": "not-created-standard-ineligible",
+    "recoveredMissedHighArticle": null,
+    "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+    "updatedAt": "2026-11-06T12:08:18.466Z",
+    "secondSlot": "Second slot pending separate qualification and exact-revision acceptance."
+  },
+  "after": {
+    "date": "2026-11-06",
+    "fullArticleCount": 1,
+    "alertCount": 0,
+    "publications": [
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Foster Draft Would Test Real-Time Reporting for Financial Regulators",
+        "url": "https://creditunionainews.com/news/foster-real-time-regulatory-reporting-draft.html",
+        "primaryFunctionalAudience": "Credit-union regulatory reporting, compliance, finance and data leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
+      }
+    ],
+    "candidateEvaluations": [
+      {
+        "title": "Foster releases regulatory reporting discussion draft",
+        "beat": "regulatory-technology",
+        "sourceUrl": "https://foster.house.gov/media/press-releases/rep-foster-unveils-discussion-draft-legislation-modernize-financial-regulatory",
+        "sourceDate": "2026-11-05",
+        "status": "selected",
+        "rationale": "Fresh congressional proposal explicitly addresses credit unions; not enacted or a current reporting requirement."
+      },
+      {
+        "title": "Anthropic personal-finance beta",
+        "beat": "consumer-ai-data-access",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+        "sourceDate": "2026-11-05",
+        "status": "held-rendered-acceptance",
+        "rationale": "Read-only U.S. beta; distinct consumer data-access story. Actual rollout and institution support require precise attribution.",
+        "score": 78.7,
+        "classification": "News",
+        "promotionPriority": "Standard",
+        "blockedReason": "GitHub Actions exact-head run 42216241300 (job 127886844998) remained in Install test browser without a passing desktop/mobile, accessibility and artwork acceptance artifact during this cycle; local pinned Chromium build 1200 is absent. PR #299 was not merged."
+      },
+      {
+        "title": "NCUA seeks additional argument in Jackson Area case",
+        "beat": "fraud-recovery",
+        "sourceUrl": "https://thecudaily.com/ncua-asks-judge-to-consider-additional-arguments-as-it-seeks-access-to-retirement-funds-in-giant-cu-embezzlement-case/",
+        "sourceDate": "2026-11-06",
+        "status": "not-selected",
+        "rationale": "Procedural request, not ruling; underlying memorandum and opposing motions not independently inspected."
+      },
+      {
+        "title": "CFPB explains Navy Federal overdraft termination",
+        "beat": "consumer-protection",
+        "sourceUrl": "https://thecudaily.com/cfpb-defends-decision-to-terminate-od-enforcement-order-against-navy-fcu-and-to-waive-80m-in-refunds/",
+        "sourceDate": "2026-10-27",
+        "status": "not-selected",
+        "rationale": "New trade coverage of an October report and earlier termination, not a fresh legal change."
+      },
+      {
+        "title": "Redwood CEO describes tape backups",
+        "beat": "cyber-resilience",
+        "sourceUrl": "https://thecudaily.com/underground-coverage-one-ceo-talks-member-growth-ai-and-why-it-has-returned-to-tape-drive-backups/",
+        "sourceDate": "2026-11-06",
+        "status": "not-selected",
+        "rationale": "Useful reported practice; timing and independent restore evidence not established."
+      },
+      {
+        "title": "U.S. Bank Payment Switch",
+        "beat": "payments-competition",
+        "sourceUrl": "https://ir.usbank.com/news-events/news/news-details/2026/U-S--Bank-Launches-Payment-Switch-to-Help-Customers-Move-Recurring-Bills-With-Ease/default.aspx",
+        "sourceDate": "2026-10-19",
+        "status": "not-selected",
+        "rationale": "New recap does not reset the October launch date."
+      },
+      {
+        "title": "Addition Financial school affinity debit card",
+        "beat": "community-banking",
+        "sourceUrl": "https://thecudaily.com/addition-financial-partners-on-debit-card-with-thomas-county-schools/",
+        "sourceDate": "2026-11-01",
+        "status": "not-selected",
+        "rationale": "Older local program extension with no observed adoption for the new market."
+      },
+      {
+        "title": "Fed bank lending standards survey",
+        "beat": "credit-risk",
+        "sourceUrl": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
+        "sourceDate": "2026-11-02",
+        "status": "not-selected",
+        "rationale": "Bank respondents, not credit unions; no new policy or measurable CU outcome."
+      },
+      {
+        "title": "DaLand Coin2Core certification",
+        "beat": "digital-assets",
+        "sourceUrl": "https://creditunions.com/press_releases/daland-cuso-receives-blockchain-certification/",
+        "sourceDate": "2026-11-05",
+        "status": "not-selected",
+        "rationale": "Certification announcement does not establish CU deployment, member use or operational results."
+      },
+      {
+        "title": "MEMBERS1st selects Mahalo",
+        "beat": "digital-banking",
+        "sourceUrl": "https://www.cuinsight.com/press-releases/page/3/",
+        "sourceDate": "2026-11-03",
+        "status": "not-selected",
+        "rationale": "Selection without a documented launch or observed benefits; similar digital-platform coverage is recent."
+      },
+      {
+        "title": "OCC examiner AI guidance",
+        "beat": "bank-supervision",
+        "sourceUrl": "https://www.reuters.com/business/finance/us-bank-regulator-issues-first-ever-ai-guidance-examiners-2026-11-04/",
+        "sourceDate": "2026-11-04",
+        "status": "duplicate",
+        "rationale": "Already covered by the November 5 CUAI Alert."
+      },
+      {
+        "title": "Texans CU workplace recognition",
+        "beat": "workforce",
+        "sourceUrl": "https://www.morningstar.com/news/pr-newswire/20261104da89214/texans-credit-union-named-a-2026-dallas-morning-news-top-workplace-for-fourth-consecutive-year",
+        "sourceDate": "2026-11-04",
+        "status": "not-selected",
+        "rationale": "Repeat award, not a new measurable workforce operating change."
+      }
+    ],
+    "evaluatedCandidateCount": 12,
+    "beatsSearched": [
+      "regulatory-technology",
+      "consumer-ai-data-access",
+      "fraud-recovery",
+      "consumer-protection",
+      "cyber-resilience",
+      "payments-competition",
+      "community-banking",
+      "credit-risk",
+      "digital-assets",
+      "digital-banking",
+      "bank-supervision",
+      "workforce"
+    ],
+    "beatsSearchedCount": 12,
+    "status": "article-published",
+    "validation": {
+      "releaseGate": "Exact-head isolated browser run and actual visual review required before merge; see issue #160.",
+      "localPreflight": "pinned Chromium build 1200 absent"
+    },
+    "socialDecision": "not-created-standard-ineligible",
+    "recoveredMissedHighArticle": null,
+    "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+    "updatedAt": "2026-11-06T12:22:05.001Z",
+    "secondSlot": "Blocked: GitHub Actions exact-head run 42216241300 (job 127886844998) remained in Install test browser without a passing desktop/mobile, accessibility and artwork acceptance artifact during this cycle; local pinned Chromium build 1200 is absent. PR #299 was not merged."
+  }
+}

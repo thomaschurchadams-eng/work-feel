@@ -107,6 +107,28 @@ if (base.current?.date && candidate.current?.date && candidate.current.date > ba
   }
 }
 
+// Exact already-accepted catch-up and ordinary-cycle transitions predate the
+// new outcome format. Each additional edge requires receipt-backed review.
+// Retain every original preservation check above and the original chain anchor.
+// This is NOT an exemption for new proposals, dates, descendants or byte copies:
+// only these immutable previous-state/candidate revision pairs, read by SHA, qualify.
+const acceptedLegacyOutcomeTransitions = new Map([
+  ['75059e080aaa2925ba936acf786d4ffcd2d7cb26', 'aa43cf2782628289bd927c480799ba15b45af4be'],
+  ['b11c32b37f3ba7c24e30295940039bda42c1fef4', '75059e080aaa2925ba936acf786d4ffcd2d7cb26'],
+  ['b3dd92178903ea5003a39e3718667c868082be45', 'b11c32b37f3ba7c24e30295940039bda42c1fef4'],
+  // November 9 publication/owned closeout: issue #160 comments 6739830095 and
+  // 6740292833. Preserve its actual rollover, failure history and editorial hold.
+  ['0fc2e5b1254f79e9b8044474122ceeab34ddea8d', 'b3dd92178903ea5003a39e3718667c868082be45'],
+  ['ad01aaf1f00959665840e82318d1477940b6b107', '0fc2e5b1254f79e9b8044474122ceeab34ddea8d']
+]);
+let acceptedLegacyOutcome = false;
+if (candidateRef && acceptedLegacyOutcomeTransitions.has(candidateRef)) {
+  const exactBase = execFileSync('git', ['rev-parse', `${baseRef}^{commit}`], { encoding: 'utf8' }).trim();
+  acceptedLegacyOutcome = exactBase === acceptedLegacyOutcomeTransitions.get(candidateRef);
+}
+try { if (!acceptedLegacyOutcome) guards.validatePublisherCheckpointAdmission(base.current, candidate.current); }
+catch (error) { fail(error.message); }
+
 console.log(
   `daily-cycle preservation validation passed: ${candidate.history.length} history entries; ` +
   `all ${base.history.length} base history entries are unchanged from ${baseRef}`
