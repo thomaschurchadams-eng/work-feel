@@ -46,7 +46,7 @@ test('today legitimate hold stays unchanged; a new hold update uses explicit rea
   assert.throws(()=>check(before,updated),/hold reason/);updated.regularPublicationSlots[1].holdReason=before.secondSlot;check(before,updated);
 });
 test('future ordinary/prepared rollover preserves actual Nov9 live, failed and held receipts',t=>{
-  const f=fixture(t,refs.main),next=copy(current);next.history.push(copy(next.current));next.current={date:'2026-11-10',status:'in-progress',fullArticleCount:0,alertCount:0,publications:[],outcomeSlot:1,regularPublicationSlots:[{slot:1,status:'prepared',candidateTitle:'Isolated future candidate',accountableOwner:'daily-publisher',nextReviewAt:'2026-11-10T12:15:00Z'}]};
+  const f=fixture(t,refs.main),next=copy(current);next.history.push(copy(next.current));next.current={date:'2026-11-10',status:'in-progress',fullArticleCount:0,alertCount:0,publications:[],outcomeSlot:1,regularPublicationSlots:[{slot:1,status:'prepared',candidateTitle:'Isolated future candidate',url:'/news/isolated-future.html',accountableOwner:'daily-publisher',nextReviewAt:'2026-11-10T12:15:00Z'}]};
   f.write(next);const good=command(f.dir,f.base);assert.equal(good.status,0,good.stderr);
   const lost=copy(next);lost.history.at(-1).regularPublicationSlots[0].evidence.validationHistory=[];f.write(lost);const bad=command(f.dir,f.base);assert.equal(bad.status,1);assert.match(bad.stderr,/complete prior current/);
 });

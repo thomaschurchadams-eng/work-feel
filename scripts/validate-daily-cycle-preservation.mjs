@@ -126,7 +126,13 @@ if (candidateRef && acceptedLegacyOutcomeTransitions.has(candidateRef)) {
   const exactBase = execFileSync('git', ['rev-parse', `${baseRef}^{commit}`], { encoding: 'utf8' }).trim();
   acceptedLegacyOutcome = exactBase === acceptedLegacyOutcomeTransitions.get(candidateRef);
 }
-try { if (!acceptedLegacyOutcome) guards.validatePublisherCheckpointAdmission(base.current, candidate.current); }
+try {
+  if (!acceptedLegacyOutcome) {
+    guards.validatePublisherCheckpointAdmission(base.current, candidate.current);
+    const rules = readJson('publisher cadence rules', fs.readFileSync(new URL('../automation/publishing-rules.json', import.meta.url)));
+    guards.validatePublisherCadence(base.current, candidate.current, rules);
+  }
+}
 catch (error) { fail(error.message); }
 
 console.log(
