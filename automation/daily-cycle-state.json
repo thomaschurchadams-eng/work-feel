@@ -6,203 +6,349 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-07",
-    "fullArticleCount": 2,
+    "date": "2026-11-09",
+    "fullArticleCount": 1,
     "alertCount": 0,
+    "evaluatedCandidateCount": 12,
+    "beatsSearched": [
+      "payments-compliance",
+      "regulatory-reporting",
+      "operating-model",
+      "workforce-ai",
+      "embedded-investing",
+      "public-policy",
+      "association-strategy",
+      "government-relations",
+      "community-development-lending",
+      "vendor-cybersecurity",
+      "small-business-member-service",
+      "vendor-management"
+    ],
     "publications": [
       {
         "type": "article",
         "classification": "News",
-        "title": "Mountain America Moves Business Billing Outside Its Core",
-        "url": "https://creditunionainews.com/news/mountain-america-business-billing-modernization.html",
-        "primaryFunctionalAudience": "Credit-union finance, business-banking and operations leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "Q2 Adds Third-Party Evidence for AI-Agent Controls",
-        "url": "https://creditunionainews.com/news/q2-aiuc-agent-control-certification.html",
-        "primaryFunctionalAudience": "Credit-union technology, AI governance, risk and vendor-management leaders",
+        "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
+        "url": "https://creditunionainews.com/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
+        "primaryFunctionalAudience": "Credit-union payments, wire operations and BSA/AML leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
       }
     ],
     "candidateEvaluations": [
       {
-        "title": "Mountain America business billing implementation",
-        "beat": "business-banking-billing",
-        "sourceUrl": "https://www.suntecgroup.com/press_release/suntec-xelerate-account-analysis-and-billing-solution-supports-mountain-america-credit-union/",
-        "sourceDate": "2026-11-04",
+        "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
+        "beat": "payments-compliance",
+        "sourceUrl": "https://www.federalregister.gov/d/2026-22809",
+        "sourceDate": "2026-11-09",
+        "score": 76.8,
         "status": "selected",
-        "score": 71.5,
-        "rationale": "Completed billing cycles and a named credit-union executive establish a live implementation; qualitative benefits remain unquantified."
+        "rationale": "Selected: current official withdrawal; existing requirements stay in effect."
       },
       {
-        "title": "Q2 AIUC-1 certification",
-        "beat": "ai-vendor-governance",
-        "sourceUrl": "https://www.q2.com/company/news/pr/q2-becomes-first-digital-banking-provider-with-aiuc-1-certified-ai-capabilities",
-        "sourceDate": "2026-11-05",
-        "status": "selected-second-slot",
-        "score": 67.7,
-        "rationale": "Current provider evidence names a third-party audit and adversarial testing; the underlying report, exceptions and product scope are not public."
-      },
-      {
-        "title": "NCUA stablecoin call-report proposal",
-        "beat": "digital-assets-reporting",
+        "title": "NCUA November Comment Deadlines",
+        "beat": "regulatory-reporting",
         "sourceUrl": "https://www.americascreditunions.org/news-media/news/feedback-four-ncua-proposals-due-month",
         "sourceDate": "2026-11-05",
+        "score": 58.1,
         "status": "not-selected",
-        "score": 66.7,
-        "rationale": "Qualified but ranked below the two selected catch-up candidates and overlaps recent stablecoin coverage."
+        "rationale": "Previously screened; aggregation of existing proposals and overlapping stablecoin coverage."
       },
       {
-        "title": "TDECU insurance-operation transfer",
+        "title": "TDECU Insurance Operations Transfer",
         "beat": "operating-model",
         "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
         "sourceDate": "2026-11-05",
+        "score": 57.4,
         "status": "not-selected",
-        "score": 65.4,
-        "rationale": "Qualified transaction but less distinctive than a completed billing implementation; member-service outcomes remain prospective."
+        "rationale": "Previously screened; announced transfer, with member-service effects still prospective."
       },
       {
-        "title": "Post-election credit-union policy priorities",
+        "title": "Anthropic Announces Frontier Engineer Training Investment",
+        "beat": "workforce-ai",
+        "sourceUrl": "https://www.anthropic.com/news",
+        "sourceDate": "2026-11-08",
+        "score": 57.1,
+        "status": "not-selected",
+        "rationale": "Prospective company training program; insufficient specific credit-union operating consequence."
+      },
+      {
+        "title": "Navari and InvestiFi Embedded Investing Partnership",
+        "beat": "embedded-investing",
+        "sourceUrl": "https://www.cuinsight.com/press-releases/page/2/",
+        "sourceDate": "2026-11-05",
+        "score": 56.2,
+        "status": "not-selected",
+        "rationale": "Partner announcement; named live adoption and member outcomes unverified."
+      },
+      {
+        "title": "Post-Election Advocacy Priorities",
         "beat": "public-policy",
         "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-build-advocacy-momentum-heading-next-congress",
         "sourceDate": "2026-11-06",
+        "score": 55.8,
         "status": "not-selected",
-        "score": 64.7,
-        "rationale": "Qualified advocacy agenda, not an enacted policy outcome."
+        "rationale": "Advocacy posture, not enacted change; screened November 7."
       },
       {
-        "title": "NCUA permanent PPP treatment",
-        "beat": "prudential-compliance",
-        "sourceUrl": "https://ncua.gov/news/deregulation-project",
-        "sourceDate": "2026-11-03",
-        "status": "not-selected",
-        "score": 62.6,
-        "rationale": "Qualified official development but less fresh and less differentiated from recent NCUA coverage."
-      },
-      {
-        "title": "Whole-economy fraud agenda",
-        "beat": "fraud-policy",
-        "sourceUrl": "https://www.americascreditunions.org/blogs/americas-credit-unions/why-americas-credit-unions-wants-whole-economy-fight-against-fraud",
+        "title": "League and MD|DC Member Credit Unions Approve Trade Group Merger",
+        "beat": "association-strategy",
+        "sourceUrl": "https://theleagueinsider.the-league.coop/uncategorized/the-league-of-credit-unions-affiliates-and-the-mddc-credit-union-association-pave-the-way-for-expanded-credit-union-support/",
         "sourceDate": "2026-11-02",
-        "status": "rejected",
-        "score": 61.2,
-        "rationale": "Below the existing 62 threshold."
+        "score": 55.4,
+        "status": "not-selected",
+        "rationale": "Member vote confirmed; public detail on service transitions is limited and the primary announcement predates the window."
       },
       {
-        "title": "Texoma digital-sales selection",
-        "beat": "digital-banking",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/financial-services-latest-news/financial-services-latest-news-list/?page=5&pagesize=100",
-        "sourceDate": "2026-11-03",
-        "status": "rejected",
-        "score": 60.6,
-        "rationale": "Below threshold; selection without activation or measured results."
-      },
-      {
-        "title": "MEMBERS1st platform replacements",
-        "beat": "digital-banking",
-        "sourceUrl": "https://finance.yahoo.com/small-business/articles/members1st-community-credit-union-partners-131500516.html",
-        "sourceDate": "2026-11-03",
-        "status": "rejected",
-        "score": 59.9,
-        "rationale": "Below threshold; implementation and outcomes remain prospective."
-      },
-      {
-        "title": "Technology-cutover vendor study",
-        "beat": "vendor-management",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/business-technology-latest-news/financial-technology-list/?page=1&pagesize=100",
-        "sourceDate": "2026-11-03",
-        "status": "rejected",
-        "score": 57.7,
-        "rationale": "Below threshold; vendor-study methodology and credit-union applicability are limited."
-      },
-      {
-        "title": "Tax-verification agentic partnership",
-        "beat": "commercial-lending",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/business-technology-latest-news/financial-technology-list/?page=1&pagesize=100",
-        "sourceDate": "2026-11-03",
-        "status": "rejected",
+        "title": "Election Results Recap for Credit Unions",
+        "beat": "government-relations",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/election-results-recap-what-it-all-means-credit-unions",
+        "sourceDate": "2026-11-09",
         "score": 54.3,
-        "rationale": "Below threshold and no named credit-union deployment."
+        "status": "not-selected",
+        "rationale": "Trade group interpretation; no distinct operating requirement."
       },
       {
-        "title": "Appli technology award",
-        "beat": "marketing-growth",
-        "sourceUrl": "https://www.cuinsight.com/press-release/applis-tim-pranger-wins-2026-cu-times-luminaries-award-for-technology-providers/",
+        "title": "CDFI Credit Union Loan Participation Webinar",
+        "beat": "community-development-lending",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/webinar-provide-loan-participation-information-cdfi-credit-unions",
         "sourceDate": "2026-11-06",
-        "status": "rejected",
-        "score": 46.7,
-        "rationale": "Award announcement without a new implementation or operating result."
-      }
-    ],
-    "evaluatedCandidateCount": 12,
-    "beatsSearched": [
-      "business-banking-billing",
-      "ai-vendor-governance",
-      "digital-assets-reporting",
-      "operating-model",
-      "public-policy",
-      "prudential-compliance",
-      "fraud-policy",
-      "digital-banking",
-      "vendor-management",
-      "commercial-lending",
-      "marketing-growth"
-    ],
-    "beatsSearchedCount": 11,
-    "status": "article-published",
-    "validation": {
-      "policyBaseCommit": "ca75d86069aadda54ec0f2f8d7bc4979bb6c95be",
-      "localPreflight": "blocked; Playwright 1.62.1 pinned Chromium headless shell build 1234 absent; cache absent and unchanged; no install attempted",
-      "releaseGate": "Exact release-package PR head must pass isolated desktop/mobile, accessibility and artwork checks plus complete actual visual review before merge.",
-      "preparationEvidence": "Draft PR 302 informed the package but is not release clearance.",
-      "firstSlot": "Mountain America package merged as 75059e080aaa2925ba936acf786d4ffcd2d7cb26, production READY and live bytes verified on article, hero, homepage and News index.",
-      "secondSlot": "Q2 exact PR head 959423f316d49ef21a4b786943cee7e64a01718c passed isolated run 42383641535 with 44 desktop/mobile views, zero accessibility violations, artwork recovery and actual visual review; merged as b11c32b37f3ba7c24e30295940039bda42c1fef4 and production deployment dpl_5WyWg9gvK5PV6Uad2gfet3cGawXK was READY with article, hero, homepage and News index live-byte verified."
-    },
-    "socialDecision": "not-created-standard-ineligible",
-    "recoveredMissedHighArticle": null,
-    "catchup": {
-      "dedupeKey": "cuai-publisher:2026-11-02-week:two-slot-catchup",
-      "authorization": "one-time November 7-8 weekend catch-up for two missed November 4 slots",
-      "combinedWeekendMaximum": 2,
-      "dayMaximum": 2,
-      "completedThisWeekend": 2,
-      "remainingAuthorized": 0
-    },
-    "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "updatedAt": "2026-11-07T10:01:00-05:00",
-    "secondSlot": "Filled sequentially by Q2 AI-agent control certification after the first package became production READY and live-verified; no weekend social action.",
-    "catchupSlots": [
-      {
-        "slot": 1,
-        "plannedDate": "2026-11-07",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/mountain-america-business-billing-modernization.html",
-        "verifiedAt": "2026-11-07T14:50:00Z",
-        "productionCommit": "75059e080aaa2925ba936acf786d4ffcd2d7cb26",
-        "accountableOwner": "daily-publisher",
-        "nextAction": "Do not republish; include in the final two-slot catch-up handoff.",
-        "nextReviewAt": "2026-11-09T07:00:00-05:00"
+        "score": 54.1,
+        "status": "not-selected",
+        "rationale": "Training announcement, not a program launch or rule change."
       },
       {
-        "slot": 2,
-        "plannedDate": "2026-11-07",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/q2-aiuc-agent-control-certification.html",
-        "verifiedAt": "2026-11-07T15:01:00Z",
-        "productionCommit": "b11c32b37f3ba7c24e30295940039bda42c1fef4",
-        "liveProof": "Production deployment dpl_5WyWg9gvK5PV6Uad2gfet3cGawXK READY; article, hero, homepage and News index returned HTTP 200 and the expected article/asset bytes.",
-        "accountableOwner": "daily-publisher",
-        "nextAction": "Do not republish; preserve the completed two-slot catch-up and resume the ordinary weekday cycle on the next scheduled run.",
-        "nextReviewAt": "2026-11-09T07:00:00-05:00"
+        "title": "OpenAI Partners with Hacktron to Test Third-Party Connections",
+        "beat": "vendor-cybersecurity",
+        "sourceUrl": "https://openai.com/news/?display=list",
+        "sourceDate": "2026-11-05",
+        "score": 50.6,
+        "status": "not-selected",
+        "rationale": "No named credit-union deployment or institution-facing testing capability shown."
+      },
+      {
+        "title": "Abound Entrepreneur Event",
+        "beat": "small-business-member-service",
+        "sourceUrl": "https://www.cuinsight.com/Press%20Releases/",
+        "sourceDate": "2026-11-06",
+        "score": 47.5,
+        "status": "not-selected",
+        "rationale": "Local event without an ongoing operating change or material measured outcome."
+      },
+      {
+        "title": "Eltropy Executive Award",
+        "beat": "vendor-management",
+        "sourceUrl": "https://www.cuinsight.com/Press%20Releases/",
+        "sourceDate": "2026-11-06",
+        "score": 47.4,
+        "status": "not-selected",
+        "rationale": "Award only; no product, deployment or member outcome."
       }
-    ]
+    ],
+    "status": "article-published",
+    "updatedAt": "2026-11-09T07:05:12-05:00",
+    "socialDecision": "not-created-standard-ineligible",
+    "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+    "nextAction": "Verify exact release and reconcile the second slot only after first-slot live proof."
   },
   "history": [
+    {
+      "date": "2026-11-07",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Mountain America Moves Business Billing Outside Its Core",
+          "url": "https://creditunionainews.com/news/mountain-america-business-billing-modernization.html",
+          "primaryFunctionalAudience": "Credit-union finance, business-banking and operations leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Q2 Adds Third-Party Evidence for AI-Agent Controls",
+          "url": "https://creditunionainews.com/news/q2-aiuc-agent-control-certification.html",
+          "primaryFunctionalAudience": "Credit-union technology, AI governance, risk and vendor-management leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        }
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "Mountain America business billing implementation",
+          "beat": "business-banking-billing",
+          "sourceUrl": "https://www.suntecgroup.com/press_release/suntec-xelerate-account-analysis-and-billing-solution-supports-mountain-america-credit-union/",
+          "sourceDate": "2026-11-04",
+          "status": "selected",
+          "score": 71.5,
+          "rationale": "Completed billing cycles and a named credit-union executive establish a live implementation; qualitative benefits remain unquantified."
+        },
+        {
+          "title": "Q2 AIUC-1 certification",
+          "beat": "ai-vendor-governance",
+          "sourceUrl": "https://www.q2.com/company/news/pr/q2-becomes-first-digital-banking-provider-with-aiuc-1-certified-ai-capabilities",
+          "sourceDate": "2026-11-05",
+          "status": "selected-second-slot",
+          "score": 67.7,
+          "rationale": "Current provider evidence names a third-party audit and adversarial testing; the underlying report, exceptions and product scope are not public."
+        },
+        {
+          "title": "NCUA stablecoin call-report proposal",
+          "beat": "digital-assets-reporting",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/feedback-four-ncua-proposals-due-month",
+          "sourceDate": "2026-11-05",
+          "status": "not-selected",
+          "score": 66.7,
+          "rationale": "Qualified but ranked below the two selected catch-up candidates and overlaps recent stablecoin coverage."
+        },
+        {
+          "title": "TDECU insurance-operation transfer",
+          "beat": "operating-model",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
+          "sourceDate": "2026-11-05",
+          "status": "not-selected",
+          "score": 65.4,
+          "rationale": "Qualified transaction but less distinctive than a completed billing implementation; member-service outcomes remain prospective."
+        },
+        {
+          "title": "Post-election credit-union policy priorities",
+          "beat": "public-policy",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-build-advocacy-momentum-heading-next-congress",
+          "sourceDate": "2026-11-06",
+          "status": "not-selected",
+          "score": 64.7,
+          "rationale": "Qualified advocacy agenda, not an enacted policy outcome."
+        },
+        {
+          "title": "NCUA permanent PPP treatment",
+          "beat": "prudential-compliance",
+          "sourceUrl": "https://ncua.gov/news/deregulation-project",
+          "sourceDate": "2026-11-03",
+          "status": "not-selected",
+          "score": 62.6,
+          "rationale": "Qualified official development but less fresh and less differentiated from recent NCUA coverage."
+        },
+        {
+          "title": "Whole-economy fraud agenda",
+          "beat": "fraud-policy",
+          "sourceUrl": "https://www.americascreditunions.org/blogs/americas-credit-unions/why-americas-credit-unions-wants-whole-economy-fight-against-fraud",
+          "sourceDate": "2026-11-02",
+          "status": "rejected",
+          "score": 61.2,
+          "rationale": "Below the existing 62 threshold."
+        },
+        {
+          "title": "Texoma digital-sales selection",
+          "beat": "digital-banking",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/financial-services-latest-news/financial-services-latest-news-list/?page=5&pagesize=100",
+          "sourceDate": "2026-11-03",
+          "status": "rejected",
+          "score": 60.6,
+          "rationale": "Below threshold; selection without activation or measured results."
+        },
+        {
+          "title": "MEMBERS1st platform replacements",
+          "beat": "digital-banking",
+          "sourceUrl": "https://finance.yahoo.com/small-business/articles/members1st-community-credit-union-partners-131500516.html",
+          "sourceDate": "2026-11-03",
+          "status": "rejected",
+          "score": 59.9,
+          "rationale": "Below threshold; implementation and outcomes remain prospective."
+        },
+        {
+          "title": "Technology-cutover vendor study",
+          "beat": "vendor-management",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/business-technology-latest-news/financial-technology-list/?page=1&pagesize=100",
+          "sourceDate": "2026-11-03",
+          "status": "rejected",
+          "score": 57.7,
+          "rationale": "Below threshold; vendor-study methodology and credit-union applicability are limited."
+        },
+        {
+          "title": "Tax-verification agentic partnership",
+          "beat": "commercial-lending",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/business-technology-latest-news/financial-technology-list/?page=1&pagesize=100",
+          "sourceDate": "2026-11-03",
+          "status": "rejected",
+          "score": 54.3,
+          "rationale": "Below threshold and no named credit-union deployment."
+        },
+        {
+          "title": "Appli technology award",
+          "beat": "marketing-growth",
+          "sourceUrl": "https://www.cuinsight.com/press-release/applis-tim-pranger-wins-2026-cu-times-luminaries-award-for-technology-providers/",
+          "sourceDate": "2026-11-06",
+          "status": "rejected",
+          "score": 46.7,
+          "rationale": "Award announcement without a new implementation or operating result."
+        }
+      ],
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "business-banking-billing",
+        "ai-vendor-governance",
+        "digital-assets-reporting",
+        "operating-model",
+        "public-policy",
+        "prudential-compliance",
+        "fraud-policy",
+        "digital-banking",
+        "vendor-management",
+        "commercial-lending",
+        "marketing-growth"
+      ],
+      "beatsSearchedCount": 11,
+      "status": "article-published",
+      "validation": {
+        "policyBaseCommit": "ca75d86069aadda54ec0f2f8d7bc4979bb6c95be",
+        "localPreflight": "blocked; Playwright 1.62.1 pinned Chromium headless shell build 1234 absent; cache absent and unchanged; no install attempted",
+        "releaseGate": "Exact release-package PR head must pass isolated desktop/mobile, accessibility and artwork checks plus complete actual visual review before merge.",
+        "preparationEvidence": "Draft PR 302 informed the package but is not release clearance.",
+        "firstSlot": "Mountain America package merged as 75059e080aaa2925ba936acf786d4ffcd2d7cb26, production READY and live bytes verified on article, hero, homepage and News index.",
+        "secondSlot": "Q2 exact PR head 959423f316d49ef21a4b786943cee7e64a01718c passed isolated run 42383641535 with 44 desktop/mobile views, zero accessibility violations, artwork recovery and actual visual review; merged as b11c32b37f3ba7c24e30295940039bda42c1fef4 and production deployment dpl_5WyWg9gvK5PV6Uad2gfet3cGawXK was READY with article, hero, homepage and News index live-byte verified."
+      },
+      "socialDecision": "not-created-standard-ineligible",
+      "recoveredMissedHighArticle": null,
+      "catchup": {
+        "dedupeKey": "cuai-publisher:2026-11-02-week:two-slot-catchup",
+        "authorization": "one-time November 7-8 weekend catch-up for two missed November 4 slots",
+        "combinedWeekendMaximum": 2,
+        "dayMaximum": 2,
+        "completedThisWeekend": 2,
+        "remainingAuthorized": 0
+      },
+      "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+      "updatedAt": "2026-11-07T10:01:00-05:00",
+      "secondSlot": "Filled sequentially by Q2 AI-agent control certification after the first package became production READY and live-verified; no weekend social action.",
+      "catchupSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-07",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/mountain-america-business-billing-modernization.html",
+          "verifiedAt": "2026-11-07T14:50:00Z",
+          "productionCommit": "75059e080aaa2925ba936acf786d4ffcd2d7cb26",
+          "accountableOwner": "daily-publisher",
+          "nextAction": "Do not republish; include in the final two-slot catch-up handoff.",
+          "nextReviewAt": "2026-11-09T07:00:00-05:00"
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-07",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/q2-aiuc-agent-control-certification.html",
+          "verifiedAt": "2026-11-07T15:01:00Z",
+          "productionCommit": "b11c32b37f3ba7c24e30295940039bda42c1fef4",
+          "liveProof": "Production deployment dpl_5WyWg9gvK5PV6Uad2gfet3cGawXK READY; article, hero, homepage and News index returned HTTP 200 and the expected article/asset bytes.",
+          "accountableOwner": "daily-publisher",
+          "nextAction": "Do not republish; preserve the completed two-slot catch-up and resume the ordinary weekday cycle on the next scheduled run.",
+          "nextReviewAt": "2026-11-09T07:00:00-05:00"
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "fullArticleCount": 2,

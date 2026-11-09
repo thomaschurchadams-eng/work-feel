@@ -64,8 +64,11 @@ test('actual completed slots cannot disappear, reopen, or lose receipts and owne
   ]) { const c = copy(b); mutate(c); assert.throws(() => validateCurrentContinuity(b, c)); }
   const c = copy(b); c.regularPublicationSlots[1].nextAction = 'Reconciled; no replay'; c.regularPublicationSlots[1].nextReviewAt = '2026-11-07T17:00:00Z'; validateCurrentContinuity(b, c);
 });
-test('actual completed catch-up slots remain intact on the current date', () => {
-  const b = copy(require('../automation/daily-cycle-state.json').current);
+test('actual completed catch-up slots remain intact in same-date transitions after rollover', () => {
+  const ledger = require('../automation/daily-cycle-state.json');
+  const b = copy([ledger.current, ...ledger.history].find(entry => entry.date === '2026-11-07'));
+  assert.equal(b?.catchupSlots?.length, 2, 'both completed November 7 catch-up receipts must exist');
+  assert.ok(b.catchupSlots.every(slot => slot.status === 'live-verified'));
   for (const mutate of [
     c => { delete c.catchupSlots; },
     c => { c.catchupSlots.pop(); },
