@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-09",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "payments-compliance",
@@ -33,6 +33,14 @@
         "primaryFunctionalAudience": "Credit-union payments, wire operations and BSA/AML leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "alert",
+        "title": "FinCEN Orders Financial Institutions to Block MEXC Global Transfers",
+        "url": "https://creditunionainews.com/alerts/#fincen-mexc-global-transfer-prohibition",
+        "source": "Financial Crimes Enforcement Network",
+        "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+        "operatingImplication": "Credit-union BSA/AML, sanctions, wire, payment, fraud and digital-asset teams should identify direct and indirect MEXC Global exposure; confirm that intermediaries, vendors and screening controls can block prohibited transfers by the effective date; preserve current suspicious-activity and OFAC procedures; and retain escalation and testing evidence. The order is not yet effective, so teams should verify the final Federal Register publication date before changing transaction controls."
       }
     ],
     "candidateEvaluations": [
@@ -145,11 +153,11 @@
         "rationale": "Award only; no product, deployment or member outcome."
       }
     ],
-    "status": "article-published",
-    "updatedAt": "2026-11-09T12:14:40Z",
+    "status": "article-and-alert-cycle-complete",
+    "updatedAt": "2026-11-09T20:30:15Z",
     "socialDecision": "No new LinkedIn reservation: Standard article ineligible; no unsent eligible High recovery found; house item prepared only, complete future provider inventory unavailable.",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Preserve the live slot and editorial hold; do not replay this cycle.",
+    "nextAction": "Preserve the live article and qualified Alert; retain the second-slot editorial hold and do not replay either cycle.",
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -249,7 +257,16 @@
         "status": "editorial-hold",
         "rationale": "Document-routing is useful, but public examples describe institution-specific bereavement procedures, not a newly tested AI implementation; no defensible recency boost."
       }
-    ]
+    ],
+    "alertCycle": {
+      "status": "one-qualified-alert",
+      "reviewedAt": "2026-11-09T15:30:15-05:00",
+      "sourceDate": "2026-11-06",
+      "publicationDateExpected": "2026-11-10",
+      "effectiveDateRule": "30 days after Federal Register publication",
+      "duplicateCheck": "No existing MEXC Global coverage found in the current repository; the same-day Travel Rule withdrawal is already covered by the live article and was not duplicated as an Alert.",
+      "homepageFreshness": "Homepage watch reviewed; no separate 72-hour homepage item was needed because the qualified Alert is published on the Alerts surface and the existing Nov. 5 watch had aged out."
+    }
   },
   "history": [
     {
