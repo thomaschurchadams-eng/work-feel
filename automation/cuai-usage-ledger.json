@@ -4842,6 +4842,71 @@
       },
       "summary": "Monday operating review: one of eight weekly articles is live, the second Monday slot is on an evidence-based editorial hold, and all 79 historical state entries remain preserved. The latest 15 articles span 15 distinct beats but are concentrated in reported news (9/15), operations (11/15) and risk/compliance (10/15); deceased-member servicing and beneficiary or estate-document evidence remains the next coverage gap. One distinct FinCEN MEXC Global Alert qualified and was prepared for the Alerts surface; the Travel Rule withdrawal was already covered by today's article and was not duplicated. Production exact main was READY with no recent runtime errors, the async-closeout safeguard is closed after a natural publisher-cycle proof, and no social, external contact, spend, credential, permission, schedule, pricing, legal, privacy or editorial-gate change occurred. The weekly public distribution scan produced five bounded opportunities for internal preparation only; all outreach, submission, event participation or paid action requires Tom approval. Audience learning remains evidence-blocked at exact current main: known sent volume fell from four company posts to one while article output stayed at eight, but direct current reads failed and the prior artifact cannot support matched complete weeks or causation.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-10T15:20:11-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Tuesday bounded operating review after the daily publisher recorded the verified November 10 article handoff and the existing audience-learning plan reached its PR #279 seven-day checkpoint.",
+      "status": "degraded",
+      "incidentKey": "cuai-operating:2026-11-10:daily-review",
+      "workUnits": {
+        "authoritativePolicyFilesReviewed": 5,
+        "coordinationBusCommentsReviewed": 222,
+        "publisherHandoffsConsumed": 1,
+        "weeklyArticlesTarget": 8,
+        "weeklyArticlesLiveVerified": 2,
+        "tuesdayRegularSlotsLiveVerified": 1,
+        "publicationHistoryEntriesPreserved": 80,
+        "portfolioArticlesReviewed": 96,
+        "recentPortfolioArticlesCompared": 15,
+        "candidatePoolItemsReviewed": 12,
+        "primaryOfficialSourceSurfacesChecked": 8,
+        "qualifiedNewAlerts": 0,
+        "homepageFreshnessReviews": 1,
+        "homepageWatchItemsSelected": 0,
+        "competitiveDistributionScansRepeated": 0,
+        "audienceDirectReadsAttempted": 3,
+        "audienceDirectReadsSucceeded": 0,
+        "exactCurrentMainMeasurementArtifactsFound": 0,
+        "priorVerifiedMeasurementArtifactsReviewed": 1,
+        "pr279ReleasedSurfacesVerified": 4,
+        "pr279AudienceOutcomeChecksDue": 1,
+        "pr279AudienceOutcomeChecksInconclusive": 1,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "policyCheckerAttempts": 1,
+        "policyCheckerSuccesses": 1,
+        "socialQueueWrites": 0,
+        "externalContacts": 0,
+        "spendActions": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public official-source web"
+      ],
+      "operationalLearning": {
+        "issue": "PR #279 reached its agreed seven-day outcome checkpoint, but exact-current audience evidence is unavailable. The last readable artifact was generated November 7, includes the current partial day, and captures only roughly four post-release days for the four scoped surfaces.",
+        "correction": "Applied the configured audience loop to the actual checkpoint: verified the released surfaces, attempted each direct provider read once, inspected the historical artifact's scoped page rows and metadata, and recorded an explicit inconclusive outcome instead of restarting the repair, inventing a baseline or closing the assessment.",
+        "controllingVersion": {
+          "repositoryMain": "f2260a0269b03c30029df993b17bf56647a5fa05",
+          "policyBlob": "b5dea31e9bbd8fd52246f52423fc70aa6f8b44ab",
+          "pr279Merge": "389b02d445a2a71d4e048c9484763602a5107889",
+          "priorVerifiedOperationsRun": 42395515847,
+          "priorMeasurementArtifact": 13582618220
+        },
+        "owner": "cuai-operating-system retains the audience assessment; reliability-watch remains the existing path for read/access capability.",
+        "test": "All four PR #279 surfaces returned HTTP 200 on the public domain and retained the released production measurement bootstrap; the two scoped articles retained questions and next-step modules. Exact-current GA4, Search Console and Buffer reads each returned HTTP 401 deployment_authentication_required, and no workflow artifact exists for current main. The readable November 7 artifact is valid for its then-current commit but not for the seven-complete-day comparison.",
+        "decision": "inconclusive-observe",
+        "actualResult": "PR #279 remains technically released without an observed immediate surface regression. Audience and engagement benefit cannot be determined at comparable exposure ages; no keep, revise or stop claim is supported.",
+        "nextTrigger": "Use the existing Friday November 13 ordinary review for a fresh exact-current direct read or verified artifact. Reconcile implemented actions and early outcomes while keeping the unfinished current week provisional; retain the same owner if evidence remains blocked."
+      },
+      "summary": "Tuesday operating review: the verified Allegacy Standard News article brings the week to 2 of 8 planned articles; no second Tuesday slot exists and no completed publisher work was reopened. The 96-article portfolio remains diverse by beat but the latest 15 are 12 News/3 Insights and remain concentrated in operations (11/15) and risk/compliance (10/15); the next evidence-led candidate remains AI-assisted deceased-member servicing and beneficiary or estate-document controls. No new Alert qualified after eight official-source surfaces were checked. The November 6 MEXC Alert is older than 72 hours, no timely non-duplicative watch item cleared the homepage-card duplication gate, and the approved evergreen fallback remains. Production exact main is READY with no 24-hour runtime errors. The PR #279 seven-day audience outcome check is explicitly inconclusive because current metrics are inaccessible and the last readable artifact covers only a partial, shorter post-release period; the four released surfaces remain technically live. Monday's competitive-distribution scan was not repeated. No social, external contact, spend, credential, permission, schedule, pricing, legal, privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

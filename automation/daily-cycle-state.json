@@ -141,11 +141,11 @@
         "rationale": "Already covered."
       }
     ],
-    "status": "article-published",
-    "updatedAt": "2026-11-10T12:16:27Z",
+    "status": "article-and-alert-cycle-complete",
+    "updatedAt": "2026-11-10T20:20:11Z",
     "socialDecision": "not-created-standard-ineligible",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Slot 1 delivered; no second Tuesday slot. Consider the evergreen deceased-member service lead only with stronger public evidence.",
+    "nextAction": "Preserve the verified Allegacy article; retain the deceased-member servicing coverage lead for stronger evidence; no Alert or homepage-watch item qualified.",
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -211,6 +211,24 @@
       "recoveredMissedHigh": false,
       "houseCampaign": "prepared-selection only; complete current provider reservation inventory unavailable, so no reservation was made",
       "nextReviewAt": "2026-11-11T07:00:00-05:00"
+    },
+    "alertCycle": {
+      "status": "no-qualified-alert",
+      "reviewedAt": "2026-11-10T15:20:11-05:00",
+      "lastQualifiedAlert": "fincen-mexc-global-transfer-prohibition",
+      "evidence": "Fresh official review found no post-November 9 regulatory, enforcement or cybersecurity development with a distinct urgent credit-union action. FinCEN's November 9 scam-center Exchange readout reiterated vigilance and prior guidance without a new rule, deadline or control requirement. NIST's November 9 adversarial-machine-learning taxonomy is a voluntary cross-sector draft, not a credit-union directive.",
+      "duplicateCheck": "The November 10 Federal Register publication of the MEXC Global order is already represented by the November 9 Alert; no duplicate was created.",
+      "homepageFreshness": "The November 6 MEXC Alert has exceeded the 72-hour homepage window. Current homepage cards already represent the timely recent portfolio, so homepageWatchState remains empty and the approved evergreen fallback is used.",
+      "sourcesChecked": [
+        "NCUA newsroom and press releases",
+        "Federal Reserve releases",
+        "OCC 2026 releases and enforcement actions",
+        "CFPB newsroom",
+        "FinCEN newsroom and Federal Register notices",
+        "Federal Register current/public-inspection notices",
+        "NIST CSRC updates",
+        "CISA and FTC current alerts"
+      ]
     }
   },
   "history": [
