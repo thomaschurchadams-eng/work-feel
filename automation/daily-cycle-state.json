@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-10",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -20,7 +20,17 @@
       "hr-training",
       "operations"
     ],
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
+        "url": "https://creditunionainews.com/news/allegacy-kobalt-risk-compliance-migration.html",
+        "primaryFunctionalAudience": "Credit-union risk, compliance, vendor-management and internal-audit leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
+      }
+    ],
     "candidateEvaluations": [
       {
         "title": "Allegacy picks Kobalt for enterprise risk and compliance migration",
@@ -28,7 +38,7 @@
         "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398255/0/en/allegacy-financial-selects-kobalt-labs-to-replace-legacy-systems-and-unify-tprm-erm-and-compliance-on-an-ai-native-platform.html",
         "sourceDate": "2026-11-09",
         "score": 74.4,
-        "status": "selected-pending-validation",
+        "status": "selected-published",
         "rationale": "Cross-function system of record, agent findings still reviewed by staff; deployment metrics absent."
       },
       {
@@ -131,23 +141,77 @@
         "rationale": "Already covered."
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-11-10T07:08:57-05:00",
+    "status": "article-published",
+    "updatedAt": "2026-11-10T12:16:27Z",
     "socialDecision": "not-created-standard-ineligible",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Review the exact candidate article and record actual production proof before counting the slot.",
+    "nextAction": "Slot 1 delivered; no second Tuesday slot. Consider the evergreen deceased-member service lead only with stronger public evidence.",
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-10",
-        "status": "prepared",
+        "status": "live-verified",
         "accountableOwner": "daily-publisher",
         "candidateTitle": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
-        "liveProof": "none; exact-head acceptance and production verification pending",
-        "nextReviewAt": "2026-11-10T07:40:00-05:00",
-        "nextAction": "Record the exact PR, head, design run/job and attempt; complete actual visual review before ordinary release."
+        "liveProof": "Exact READY production deployment and live article, artwork, homepage, News index and sitemaps verified.",
+        "nextReviewAt": "2026-11-11T07:00:00-05:00",
+        "nextAction": "Do not republish; preserve the exact validation and production receipts.",
+        "url": "https://creditunionainews.com/news/allegacy-kobalt-risk-compliance-migration.html",
+        "verifiedAt": "2026-11-10T12:16:27Z",
+        "productionCommit": "7ab4c73a58b5c965bc559e01bab5acfe6e692ef8",
+        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6766942735",
+        "evidence": {
+          "pending": {
+            "prNumber": 313,
+            "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+            "run": 42813406645,
+            "job": 129820286964,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-10T07:22:00-05:00"
+          },
+          "terminalValidation": {
+            "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+            "run": 42813406645,
+            "job": 129820286964,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-10T12:12:42.363Z"
+          },
+          "terminalAcceptance": {
+            "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+            "run": 42813406645,
+            "job": 129820286964,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-10T12:15:03.575Z",
+            "artifactId": 13763247335,
+            "artifactDigest": "sha256:43b210cafc179c1891e3f5d19cf048e0c77b840ba294d96fb55de00c3b84a9f7"
+          },
+          "productionDeploymentId": "dpl_AL3CuWukDFjgdihuiXjYswvsuofG"
+        }
       }
-    ]
+    ],
+    "validation": {
+      "status": "production-verified",
+      "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+      "run": 42813406645,
+      "job": 129820286964,
+      "attempt": 1,
+      "artifactId": 13763247335,
+      "visualReviewedAt": "2026-11-10T12:15:03.575Z",
+      "productionCommit": "7ab4c73a58b5c965bc559e01bab5acfe6e692ef8",
+      "deploymentId": "dpl_AL3CuWukDFjgdihuiXjYswvsuofG",
+      "verifiedAt": "2026-11-10T12:16:27Z"
+    },
+    "socialDistribution": {
+      "status": "not-created",
+      "articleDecision": "not-created-standard-ineligible",
+      "recoveredMissedHigh": false,
+      "houseCampaign": "prepared-selection only; complete current provider reservation inventory unavailable, so no reservation was made",
+      "nextReviewAt": "2026-11-11T07:00:00-05:00"
+    }
   },
   "history": [
     {
