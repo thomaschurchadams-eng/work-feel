@@ -6,267 +6,148 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-09",
-    "fullArticleCount": 1,
-    "alertCount": 1,
+    "date": "2026-11-10",
+    "fullArticleCount": 0,
+    "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "payments-compliance",
-      "regulatory-reporting",
-      "operating-model",
-      "workforce-ai",
-      "embedded-investing",
-      "public-policy",
-      "association-strategy",
-      "government-relations",
-      "community-development-lending",
-      "vendor-cybersecurity",
-      "small-business-member-service",
-      "vendor-management"
+      "risk-compliance",
+      "board-strategy",
+      "finance-treasury",
+      "payments-deposits",
+      "lending-collections",
+      "it-data-cybersecurity",
+      "hr-training",
+      "operations"
     ],
-    "publications": [
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
-        "url": "https://creditunionainews.com/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
-        "primaryFunctionalAudience": "Credit-union payments, wire operations and BSA/AML leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "alert",
-        "title": "FinCEN Orders Financial Institutions to Block MEXC Global Transfers",
-        "url": "https://creditunionainews.com/alerts/#fincen-mexc-global-transfer-prohibition",
-        "source": "Financial Crimes Enforcement Network",
-        "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
-        "operatingImplication": "Credit-union BSA/AML, sanctions, wire, payment, fraud and digital-asset teams should identify direct and indirect MEXC Global exposure; confirm that intermediaries, vendors and screening controls can block prohibited transfers by the effective date; preserve current suspicious-activity and OFAC procedures; and retain escalation and testing evidence. The order is not yet effective, so teams should verify the final Federal Register publication date before changing transaction controls."
-      }
-    ],
+    "publications": [],
     "candidateEvaluations": [
       {
-        "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
-        "beat": "payments-compliance",
-        "sourceUrl": "https://www.federalregister.gov/d/2026-22809",
+        "title": "Allegacy picks Kobalt for enterprise risk and compliance migration",
+        "beat": "risk-compliance",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398255/0/en/allegacy-financial-selects-kobalt-labs-to-replace-legacy-systems-and-unify-tprm-erm-and-compliance-on-an-ai-native-platform.html",
         "sourceDate": "2026-11-09",
-        "score": 76.8,
-        "status": "selected",
-        "rationale": "Selected: current official withdrawal; existing requirements stay in effect."
+        "score": 74.4,
+        "status": "selected-pending-validation",
+        "rationale": "Cross-function system of record, agent findings still reviewed by staff; deployment metrics absent."
       },
       {
-        "title": "NCUA November Comment Deadlines",
-        "beat": "regulatory-reporting",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/feedback-four-ncua-proposals-due-month",
-        "sourceDate": "2026-11-05",
-        "score": 58.1,
+        "title": "TDECU and Smart Financial announce completed merger",
+        "beat": "board-strategy",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398452/0/en/tdecu-and-smart-financial-credit-union-complete-merger-to-build-a-stronger-organization.html",
+        "sourceDate": "2026-11-09",
+        "score": 71.9,
         "status": "not-selected",
-        "rationale": "Previously screened; aggregation of existing proposals and overlapping stablecoin coverage."
+        "rationale": "Credible, but recent acquisition integration coverage; no exact systems cutover disclosed."
       },
       {
-        "title": "TDECU Insurance Operations Transfer",
-        "beat": "operating-model",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
-        "sourceDate": "2026-11-05",
-        "score": 57.4,
+        "title": "Ohio credit union merger distribution",
+        "beat": "finance-treasury",
+        "sourceUrl": "https://www.cutimes.com/2026/11/09/members-receive-portion-of-ohio-credit-unions-net-worth-before-merger-closes/",
+        "sourceDate": "2026-11-09",
+        "score": 68.2,
         "status": "not-selected",
-        "rationale": "Previously screened; announced transfer, with member-service effects still prospective."
+        "rationale": "Full particulars not accessible from report; primary identity and terms unverified."
       },
       {
-        "title": "Anthropic Announces Frontier Engineer Training Investment",
-        "beat": "workforce-ai",
+        "title": "FinCEN MEXC Global order",
+        "beat": "payments-deposits",
+        "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+        "sourceDate": "2026-11-06",
+        "score": 67.7,
+        "status": "not-selected",
+        "rationale": "Already covered November 9 Alert; no materially different angle."
+      },
+      {
+        "title": "Nacha expands approved rules",
+        "beat": "payments-deposits",
+        "sourceUrl": "https://www.nacha.org/news/three-new-nacha-rules-approved",
+        "sourceDate": "2026-08",
+        "score": 61.8,
+        "status": "not-selected",
+        "rationale": "Useful upcoming operations milestone, earlier rule approval not new."
+      },
+      {
+        "title": "NCUA two final rules and proposed interim rule",
+        "beat": "risk-compliance",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/ncua-issues-two-final-rules-proposes-interim-final-rule",
+        "sourceDate": "2026-11-04",
+        "score": 59.4,
+        "status": "not-selected",
+        "rationale": "Earlier rule release, related board-meeting coverage; no stronger separate trigger established."
+      },
+      {
+        "title": "FHA alternative credit score implementation guide",
+        "beat": "lending-collections",
+        "sourceUrl": "https://www.hud.gov/program_offices/housing/sfh/FHA_info_messages",
+        "sourceDate": "2026-10-08",
+        "score": 58.6,
+        "status": "not-selected",
+        "rationale": "No fresh event in current window."
+      },
+      {
+        "title": "Diversified Members selects Scienaptic fraud origination screening",
+        "beat": "it-data-cybersecurity",
+        "sourceUrl": "https://www.scienaptic.ai/news/diversified-members-credit-union-selects-scienaptic-ai-to-strengthen-fraud-detection",
+        "sourceDate": "2026-10-26",
+        "score": 57,
+        "status": "not-selected",
+        "rationale": "Older vendor selection, no new deployment milestone; no private candidate reuse."
+      },
+      {
+        "title": "Anthropic economic modeling announcement",
+        "beat": "hr-training",
         "sourceUrl": "https://www.anthropic.com/news",
-        "sourceDate": "2026-11-08",
-        "score": 57.1,
-        "status": "not-selected",
-        "rationale": "Prospective company training program; insufficient specific credit-union operating consequence."
-      },
-      {
-        "title": "Navari and InvestiFi Embedded Investing Partnership",
-        "beat": "embedded-investing",
-        "sourceUrl": "https://www.cuinsight.com/press-releases/page/2/",
-        "sourceDate": "2026-11-05",
-        "score": 56.2,
-        "status": "not-selected",
-        "rationale": "Partner announcement; named live adoption and member outcomes unverified."
-      },
-      {
-        "title": "Post-Election Advocacy Priorities",
-        "beat": "public-policy",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-build-advocacy-momentum-heading-next-congress",
-        "sourceDate": "2026-11-06",
-        "score": 55.8,
-        "status": "not-selected",
-        "rationale": "Advocacy posture, not enacted change; screened November 7."
-      },
-      {
-        "title": "League and MD|DC Member Credit Unions Approve Trade Group Merger",
-        "beat": "association-strategy",
-        "sourceUrl": "https://theleagueinsider.the-league.coop/uncategorized/the-league-of-credit-unions-affiliates-and-the-mddc-credit-union-association-pave-the-way-for-expanded-credit-union-support/",
-        "sourceDate": "2026-11-02",
-        "score": 55.4,
-        "status": "not-selected",
-        "rationale": "Member vote confirmed; public detail on service transitions is limited and the primary announcement predates the window."
-      },
-      {
-        "title": "Election Results Recap for Credit Unions",
-        "beat": "government-relations",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/election-results-recap-what-it-all-means-credit-unions",
         "sourceDate": "2026-11-09",
-        "score": 54.3,
+        "score": 55.5,
         "status": "not-selected",
-        "rationale": "Trade group interpretation; no distinct operating requirement."
+        "rationale": "Generic modeled scenarios, no institution-specific operating evidence."
       },
       {
-        "title": "CDFI Credit Union Loan Participation Webinar",
-        "beat": "community-development-lending",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/webinar-provide-loan-participation-information-cdfi-credit-unions",
-        "sourceDate": "2026-11-06",
-        "score": 54.1,
+        "title": "Agency financial data standards final rule",
+        "beat": "operations",
+        "sourceUrl": "https://www.fhfa.gov/regulation/federal-register/final-rule/financial-data-transparency-act-joint-data-standards-final-rule",
+        "sourceDate": "2026-10-01",
+        "score": 53.9,
         "status": "not-selected",
-        "rationale": "Training announcement, not a program launch or rule change."
+        "rationale": "Older and nearby reporting/data-standards coverage; no new deadline milestone."
       },
       {
-        "title": "OpenAI Partners with Hacktron to Test Third-Party Connections",
-        "beat": "vendor-cybersecurity",
-        "sourceUrl": "https://openai.com/news/?display=list",
-        "sourceDate": "2026-11-05",
-        "score": 50.6,
+        "title": "CD pricing comparison",
+        "beat": "finance-treasury",
+        "sourceUrl": "https://fortune.com/article/cd-rates-11-9-26/",
+        "sourceDate": "2026-11-09",
+        "score": 48.1,
         "status": "not-selected",
-        "rationale": "No named credit-union deployment or institution-facing testing capability shown."
+        "rationale": "Retail snapshots, no material CU development."
       },
       {
-        "title": "Abound Entrepreneur Event",
-        "beat": "small-business-member-service",
-        "sourceUrl": "https://www.cuinsight.com/Press%20Releases/",
-        "sourceDate": "2026-11-06",
-        "score": 47.5,
+        "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
+        "beat": "lending-collections",
+        "sourceUrl": "https://www.scienaptic.ai/news",
+        "sourceDate": "2026-11-02",
+        "score": 46.9,
         "status": "not-selected",
-        "rationale": "Local event without an ongoing operating change or material measured outcome."
-      },
-      {
-        "title": "Eltropy Executive Award",
-        "beat": "vendor-management",
-        "sourceUrl": "https://www.cuinsight.com/Press%20Releases/",
-        "sourceDate": "2026-11-06",
-        "score": 47.4,
-        "status": "not-selected",
-        "rationale": "Award only; no product, deployment or member outcome."
+        "rationale": "Already covered."
       }
     ],
-    "status": "article-and-alert-cycle-complete",
-    "updatedAt": "2026-11-09T20:30:15Z",
-    "socialDecision": "No new LinkedIn reservation: Standard article ineligible; no unsent eligible High recovery found; house item prepared only, complete future provider inventory unavailable.",
+    "status": "in-progress",
+    "updatedAt": "2026-11-10T07:08:57-05:00",
+    "socialDecision": "not-created-standard-ineligible",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Preserve the live article and qualified Alert; retain the second-slot editorial hold and do not replay either cycle.",
+    "nextAction": "Review the exact candidate article and record actual production proof before counting the slot.",
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-09",
-        "status": "live-verified",
+        "plannedDate": "2026-11-10",
+        "status": "prepared",
         "accountableOwner": "daily-publisher",
-        "url": "https://creditunionainews.com/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
-        "verifiedAt": "2026-11-09T12:14:40Z",
-        "productionCommit": "0fc2e5b1254f79e9b8044474122ceeab34ddea8d",
-        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6739696317",
-        "nextReviewAt": "2026-11-10T07:00:00-05:00",
-        "nextAction": "Do not republish; retain the live and validation receipts.",
-        "evidence": {
-          "pending": {
-            "prNumber": 309,
-            "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
-            "run": 42614631185,
-            "job": 129151327417,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-09T07:25:00-05:00"
-          },
-          "validationHistory": [
-            {
-              "prNumber": 309,
-              "head": "1c6a5cadbd36f94e6836334faa784dd5ba1e7a3c",
-              "run": 42614300868,
-              "job": 129150229365,
-              "runAttempt": 1,
-              "accountableOwner": "daily-publisher",
-              "nextReviewAt": "2026-11-09T07:22:00-05:00",
-              "status": "superseded",
-              "observedAt": "2026-11-09T12:07:52.441Z",
-              "terminalValidation": {
-                "head": "1c6a5cadbd36f94e6836334faa784dd5ba1e7a3c",
-                "run": 42614300868,
-                "job": 129150229365,
-                "runAttempt": 1,
-                "conclusion": "failure",
-                "runConclusion": "failure",
-                "jobConclusion": "failure",
-                "observedAt": "2026-11-09T12:07:52.441Z"
-              }
-            }
-          ],
-          "terminalValidation": {
-            "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
-            "run": 42614631185,
-            "job": 129151327417,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-09T12:12:07.717Z"
-          },
-          "terminalAcceptance": {
-            "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
-            "run": 42614631185,
-            "job": 129151327417,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-09T12:14:06.221Z",
-            "artifactId": 13672192416
-          }
-        }
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-09",
-        "status": "editorial-hold",
-        "accountableOwner": "daily-publisher",
-        "liveProof": "none; no second package released",
-        "nextReviewAt": "2026-11-10T07:00:00-05:00",
-        "nextAction": "Retain deceased-member servicing as an evergreen coverage lead; reconsider only with a stronger evidence or coverage case."
+        "candidateTitle": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
+        "liveProof": "none; exact-head acceptance and production verification pending",
+        "nextReviewAt": "2026-11-10T07:40:00-05:00",
+        "nextAction": "Record the exact PR, head, design run/job and attempt; complete actual visual review before ordinary release."
       }
-    ],
-    "validation": {
-      "localPreflight": "Pinned Chromium headless shell 1234 absent; cache absent and unchanged.",
-      "isolated": "Replacement design job passed exact-head Chromium, rendered, accessibility, artwork and actual publisher visual checks.",
-      "artifactId": 13672192416,
-      "productionCommit": "0fc2e5b1254f79e9b8044474122ceeab34ddea8d",
-      "productionDeployment": "dpl_8S82tZbYDYvxZYn2bBMJK2eCBVXp",
-      "verifiedAt": "2026-11-09T12:14:40Z"
-    },
-    "secondSlot": "No second current-event candidate cleared the scoring and editorial gates. The distinct deceased-member fallback scored 60.5 below 62; no draft or release. The TDECU case and November regulatory roundup did not clear threshold and lacked a stronger independent operating result or material new dataset.",
-    "fallbackEvaluations": [
-      {
-        "title": "After a Member Dies, AI Can Sort Documents but Cannot Establish Authority",
-        "classification": "Insights — Library candidate",
-        "sourceUrl": "https://www.affinityfcu.com/personal-banking/services/deceased-member-affairs",
-        "supportingSourceUrls": [
-          "https://flcu.org/next-steps-after-a-loss/",
-          "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/artificial-intelligence-ai"
-        ],
-        "sourceDate": null,
-        "score": 60.5,
-        "threshold": 62,
-        "status": "editorial-hold",
-        "rationale": "Document-routing is useful, but public examples describe institution-specific bereavement procedures, not a newly tested AI implementation; no defensible recency boost."
-      }
-    ],
-    "alertCycle": {
-      "status": "one-qualified-alert",
-      "reviewedAt": "2026-11-09T15:30:15-05:00",
-      "sourceDate": "2026-11-06",
-      "publicationDateExpected": "2026-11-10",
-      "effectiveDateRule": "30 days after Federal Register publication",
-      "duplicateCheck": "No existing MEXC Global coverage found in the current repository; the same-day Travel Rule withdrawal is already covered by the live article and was not duplicated as an Alert.",
-      "homepageFreshness": "Homepage watch reviewed; no separate 72-hour homepage item was needed because the qualified Alert is published on the Alerts surface and the existing Nov. 5 watch had aged out."
-    }
+    ]
   },
   "history": [
     {
@@ -8592,6 +8473,269 @@
       ],
       "status": "in-progress",
       "updatedAt": "2026-07-20T15:35:00-04:00"
+    },
+    {
+      "date": "2026-11-09",
+      "fullArticleCount": 1,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "payments-compliance",
+        "regulatory-reporting",
+        "operating-model",
+        "workforce-ai",
+        "embedded-investing",
+        "public-policy",
+        "association-strategy",
+        "government-relations",
+        "community-development-lending",
+        "vendor-cybersecurity",
+        "small-business-member-service",
+        "vendor-management"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
+          "url": "https://creditunionainews.com/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
+          "primaryFunctionalAudience": "Credit-union payments, wire operations and BSA/AML leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "alert",
+          "title": "FinCEN Orders Financial Institutions to Block MEXC Global Transfers",
+          "url": "https://creditunionainews.com/alerts/#fincen-mexc-global-transfer-prohibition",
+          "source": "Financial Crimes Enforcement Network",
+          "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+          "operatingImplication": "Credit-union BSA/AML, sanctions, wire, payment, fraud and digital-asset teams should identify direct and indirect MEXC Global exposure; confirm that intermediaries, vendors and screening controls can block prohibited transfers by the effective date; preserve current suspicious-activity and OFAC procedures; and retain escalation and testing evidence. The order is not yet effective, so teams should verify the final Federal Register publication date before changing transaction controls."
+        }
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
+          "beat": "payments-compliance",
+          "sourceUrl": "https://www.federalregister.gov/d/2026-22809",
+          "sourceDate": "2026-11-09",
+          "score": 76.8,
+          "status": "selected",
+          "rationale": "Selected: current official withdrawal; existing requirements stay in effect."
+        },
+        {
+          "title": "NCUA November Comment Deadlines",
+          "beat": "regulatory-reporting",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/feedback-four-ncua-proposals-due-month",
+          "sourceDate": "2026-11-05",
+          "score": 58.1,
+          "status": "not-selected",
+          "rationale": "Previously screened; aggregation of existing proposals and overlapping stablecoin coverage."
+        },
+        {
+          "title": "TDECU Insurance Operations Transfer",
+          "beat": "operating-model",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
+          "sourceDate": "2026-11-05",
+          "score": 57.4,
+          "status": "not-selected",
+          "rationale": "Previously screened; announced transfer, with member-service effects still prospective."
+        },
+        {
+          "title": "Anthropic Announces Frontier Engineer Training Investment",
+          "beat": "workforce-ai",
+          "sourceUrl": "https://www.anthropic.com/news",
+          "sourceDate": "2026-11-08",
+          "score": 57.1,
+          "status": "not-selected",
+          "rationale": "Prospective company training program; insufficient specific credit-union operating consequence."
+        },
+        {
+          "title": "Navari and InvestiFi Embedded Investing Partnership",
+          "beat": "embedded-investing",
+          "sourceUrl": "https://www.cuinsight.com/press-releases/page/2/",
+          "sourceDate": "2026-11-05",
+          "score": 56.2,
+          "status": "not-selected",
+          "rationale": "Partner announcement; named live adoption and member outcomes unverified."
+        },
+        {
+          "title": "Post-Election Advocacy Priorities",
+          "beat": "public-policy",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-build-advocacy-momentum-heading-next-congress",
+          "sourceDate": "2026-11-06",
+          "score": 55.8,
+          "status": "not-selected",
+          "rationale": "Advocacy posture, not enacted change; screened November 7."
+        },
+        {
+          "title": "League and MD|DC Member Credit Unions Approve Trade Group Merger",
+          "beat": "association-strategy",
+          "sourceUrl": "https://theleagueinsider.the-league.coop/uncategorized/the-league-of-credit-unions-affiliates-and-the-mddc-credit-union-association-pave-the-way-for-expanded-credit-union-support/",
+          "sourceDate": "2026-11-02",
+          "score": 55.4,
+          "status": "not-selected",
+          "rationale": "Member vote confirmed; public detail on service transitions is limited and the primary announcement predates the window."
+        },
+        {
+          "title": "Election Results Recap for Credit Unions",
+          "beat": "government-relations",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/election-results-recap-what-it-all-means-credit-unions",
+          "sourceDate": "2026-11-09",
+          "score": 54.3,
+          "status": "not-selected",
+          "rationale": "Trade group interpretation; no distinct operating requirement."
+        },
+        {
+          "title": "CDFI Credit Union Loan Participation Webinar",
+          "beat": "community-development-lending",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/webinar-provide-loan-participation-information-cdfi-credit-unions",
+          "sourceDate": "2026-11-06",
+          "score": 54.1,
+          "status": "not-selected",
+          "rationale": "Training announcement, not a program launch or rule change."
+        },
+        {
+          "title": "OpenAI Partners with Hacktron to Test Third-Party Connections",
+          "beat": "vendor-cybersecurity",
+          "sourceUrl": "https://openai.com/news/?display=list",
+          "sourceDate": "2026-11-05",
+          "score": 50.6,
+          "status": "not-selected",
+          "rationale": "No named credit-union deployment or institution-facing testing capability shown."
+        },
+        {
+          "title": "Abound Entrepreneur Event",
+          "beat": "small-business-member-service",
+          "sourceUrl": "https://www.cuinsight.com/Press%20Releases/",
+          "sourceDate": "2026-11-06",
+          "score": 47.5,
+          "status": "not-selected",
+          "rationale": "Local event without an ongoing operating change or material measured outcome."
+        },
+        {
+          "title": "Eltropy Executive Award",
+          "beat": "vendor-management",
+          "sourceUrl": "https://www.cuinsight.com/Press%20Releases/",
+          "sourceDate": "2026-11-06",
+          "score": 47.4,
+          "status": "not-selected",
+          "rationale": "Award only; no product, deployment or member outcome."
+        }
+      ],
+      "status": "article-and-alert-cycle-complete",
+      "updatedAt": "2026-11-09T20:30:15Z",
+      "socialDecision": "No new LinkedIn reservation: Standard article ineligible; no unsent eligible High recovery found; house item prepared only, complete future provider inventory unavailable.",
+      "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+      "nextAction": "Preserve the live article and qualified Alert; retain the second-slot editorial hold and do not replay either cycle.",
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-09",
+          "status": "live-verified",
+          "accountableOwner": "daily-publisher",
+          "url": "https://creditunionainews.com/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
+          "verifiedAt": "2026-11-09T12:14:40Z",
+          "productionCommit": "0fc2e5b1254f79e9b8044474122ceeab34ddea8d",
+          "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6739696317",
+          "nextReviewAt": "2026-11-10T07:00:00-05:00",
+          "nextAction": "Do not republish; retain the live and validation receipts.",
+          "evidence": {
+            "pending": {
+              "prNumber": 309,
+              "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
+              "run": 42614631185,
+              "job": 129151327417,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-09T07:25:00-05:00"
+            },
+            "validationHistory": [
+              {
+                "prNumber": 309,
+                "head": "1c6a5cadbd36f94e6836334faa784dd5ba1e7a3c",
+                "run": 42614300868,
+                "job": 129150229365,
+                "runAttempt": 1,
+                "accountableOwner": "daily-publisher",
+                "nextReviewAt": "2026-11-09T07:22:00-05:00",
+                "status": "superseded",
+                "observedAt": "2026-11-09T12:07:52.441Z",
+                "terminalValidation": {
+                  "head": "1c6a5cadbd36f94e6836334faa784dd5ba1e7a3c",
+                  "run": 42614300868,
+                  "job": 129150229365,
+                  "runAttempt": 1,
+                  "conclusion": "failure",
+                  "runConclusion": "failure",
+                  "jobConclusion": "failure",
+                  "observedAt": "2026-11-09T12:07:52.441Z"
+                }
+              }
+            ],
+            "terminalValidation": {
+              "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
+              "run": 42614631185,
+              "job": 129151327417,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-09T12:12:07.717Z"
+            },
+            "terminalAcceptance": {
+              "head": "ee51b53a587fc313b3c46205450bbef79136b13c",
+              "run": 42614631185,
+              "job": 129151327417,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-09T12:14:06.221Z",
+              "artifactId": 13672192416
+            }
+          }
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-09",
+          "status": "editorial-hold",
+          "accountableOwner": "daily-publisher",
+          "liveProof": "none; no second package released",
+          "nextReviewAt": "2026-11-10T07:00:00-05:00",
+          "nextAction": "Retain deceased-member servicing as an evergreen coverage lead; reconsider only with a stronger evidence or coverage case."
+        }
+      ],
+      "validation": {
+        "localPreflight": "Pinned Chromium headless shell 1234 absent; cache absent and unchanged.",
+        "isolated": "Replacement design job passed exact-head Chromium, rendered, accessibility, artwork and actual publisher visual checks.",
+        "artifactId": 13672192416,
+        "productionCommit": "0fc2e5b1254f79e9b8044474122ceeab34ddea8d",
+        "productionDeployment": "dpl_8S82tZbYDYvxZYn2bBMJK2eCBVXp",
+        "verifiedAt": "2026-11-09T12:14:40Z"
+      },
+      "secondSlot": "No second current-event candidate cleared the scoring and editorial gates. The distinct deceased-member fallback scored 60.5 below 62; no draft or release. The TDECU case and November regulatory roundup did not clear threshold and lacked a stronger independent operating result or material new dataset.",
+      "fallbackEvaluations": [
+        {
+          "title": "After a Member Dies, AI Can Sort Documents but Cannot Establish Authority",
+          "classification": "Insights — Library candidate",
+          "sourceUrl": "https://www.affinityfcu.com/personal-banking/services/deceased-member-affairs",
+          "supportingSourceUrls": [
+            "https://flcu.org/next-steps-after-a-loss/",
+            "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/artificial-intelligence-ai"
+          ],
+          "sourceDate": null,
+          "score": 60.5,
+          "threshold": 62,
+          "status": "editorial-hold",
+          "rationale": "Document-routing is useful, but public examples describe institution-specific bereavement procedures, not a newly tested AI implementation; no defensible recency boost."
+        }
+      ],
+      "alertCycle": {
+        "status": "one-qualified-alert",
+        "reviewedAt": "2026-11-09T15:30:15-05:00",
+        "sourceDate": "2026-11-06",
+        "publicationDateExpected": "2026-11-10",
+        "effectiveDateRule": "30 days after Federal Register publication",
+        "duplicateCheck": "No existing MEXC Global coverage found in the current repository; the same-day Travel Rule withdrawal is already covered by the live article and was not duplicated as an Alert.",
+        "homepageFreshness": "Homepage watch reviewed; no separate 72-hour homepage item was needed because the qualified Alert is published on the Alerts surface and the existing Nov. 5 watch had aged out."
+      }
     }
   ],
   "note": "Shared idempotent state for the Daily Edition and Alerts desk. Move the prior current object to history when the date changes."

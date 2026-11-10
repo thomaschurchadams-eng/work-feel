@@ -3,6 +3,27 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "allegacy-kobalt-risk-compliance-migration",
+      "articleUrl": "/news/allegacy-kobalt-risk-compliance-migration.html",
+      "imagePath": "/assets/allegacy-kobalt-risk-compliance-migration.jpg",
+      "publishedAt": "2026-11-10T07:08:57-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut",
+      "subject": "physical-metaphor",
+      "composition": "layered-depth",
+      "perspective": "low-angle",
+      "palette": "monochrome-ink",
+      "lighting": "cinematic-side-light",
+      "texture": "paper-fiber",
+      "scene": "three stacks of cut-paper files entering a divided folio",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "5816755c21d101ecddd66f74ddb4374d2ec256b37e9013230d0965258b69f195"
+    },
+    {
       "id": "fincen-fed-cross-border-transfer-travel-rule-withdrawal",
       "articleUrl": "/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
       "imagePath": "/assets/fincen-fed-cross-border-transfer-travel-rule-withdrawal.jpg",

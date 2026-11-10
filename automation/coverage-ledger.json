@@ -3,6 +3,38 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "allegacy-kobalt-risk-compliance-migration",
+      "title": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
+      "url": "/news/allegacy-kobalt-risk-compliance-migration.html",
+      "publishedAt": "2026-11-10T07:08:57-05:00",
+      "section": "news",
+      "beat": "enterprise-risk-compliance-migration",
+      "functions": [
+        "risk-compliance",
+        "vendor-management",
+        "operations"
+      ],
+      "technologies": [
+        "regtech-monitoring",
+        "agents-automation"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union risk, compliance, vendor-management and internal-audit leaders",
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/ornl-fcu-kobalt-ai-vendor-risk.html",
+        "/news/q2-aiuc-agent-control-certification.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "sourceLimit": "Vendor announcement establishes selection and intended scope only; no go-live, outcomes, or demonstrated control performance.",
+      "score": 74.4
+    },
+    {
       "id": "fincen-fed-cross-border-transfer-travel-rule-withdrawal",
       "title": "FinCEN and Fed Withdraw $250 Cross-Border Transfer Proposal",
       "url": "/news/fincen-fed-cross-border-transfer-travel-rule-withdrawal.html",
