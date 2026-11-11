@@ -4907,6 +4907,47 @@
       },
       "summary": "Tuesday operating review: the verified Allegacy Standard News article brings the week to 2 of 8 planned articles; no second Tuesday slot exists and no completed publisher work was reopened. The 96-article portfolio remains diverse by beat but the latest 15 are 12 News/3 Insights and remain concentrated in operations (11/15) and risk/compliance (10/15); the next evidence-led candidate remains AI-assisted deceased-member servicing and beneficiary or estate-document controls. No new Alert qualified after eight official-source surfaces were checked. The November 6 MEXC Alert is older than 72 hours, no timely non-duplicative watch item cleared the homepage-card duplication gate, and the approved evergreen fallback remains. Production exact main is READY with no 24-hour runtime errors. The PR #279 seven-day audience outcome check is explicitly inconclusive because current metrics are inaccessible and the last readable artifact covers only a partial, shorter post-release period; the four released surfaces remain technically live. Monday's competitive-distribution scan was not repeated. No social, external contact, spend, credential, permission, schedule, pricing, legal, privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-11T12:08:32-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The daily publisher closed the high-priority PR #317 validation incident after the earlier external package-mirror and checkout-ownership failures were corrected and the exact accepted head was released.",
+      "status": "recovered",
+      "incidentKey": "release:cuai:pr-317:date-overlap",
+      "workUnits": {
+        "blockedIncidentReceiptsReviewed": 1,
+        "completionReceiptsReviewed": 1,
+        "validationFailureReceiptsPreserved": 3,
+        "exactHeadValidationRunsReviewed": 1,
+        "repositoryTestsObserved": 235,
+        "renderedChecksObserved": 44,
+        "productionDeploymentsChecked": 1,
+        "nativeViewportChecksObserved": 2,
+        "liveBoundaryChecksObserved": 8,
+        "naturalPostMergeRunsReviewed": 1,
+        "liveSurfaceChecks": 7,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "dailyStateChecks": 1,
+        "publicationHistoryEntriesPreserved": 81,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "distributionAttemptsObserved": 0,
+        "publisherCyclesStarted": 0,
+        "stateOrQueueBlobsChangedByRelease": 0,
+        "unreleasedCheckpointAdaptersActivated": 0,
+        "recoveryBranchesCreated": 1,
+        "pullRequestsCreated": 1,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The scoped PR #317 Alert-date and article-header repair is recovered under its existing incident key. The original exact-head design checks failed closed because Ubuntu dependency downloads could not resolve azure.archive.ubuntu.com; a later isolated container run then failed Git ownership validation. Those transient environment and checkout-configuration failures remain preserved in issue #160. Exact accepted head 273c65af51e7b92143d3cc509dccc3ebe9fcb988 subsequently passed run 43062388319 with 235 source tests and 44 rendered checks after using the pinned Playwright image and scoping Git trust to the exact checkout. The daily publisher inspected the actual 390px and 1440px artifact, and PR #317 merged as 148162480210fb5fa226fea838eac41f0cedb8eb. Production deployment dpl_6KGcBvXBvC6d2kknR716CCEbnE2Q is READY on creditunionainews.com at that exact commit. Native live verification checked Alert chronology, separate CUAI/source dates, unknown-history labels, filtering, homepage freshness, non-sticky article title behavior, navigation and eight 72-hour/14-day boundary cases with no overflow or page errors. Natural post-merge run 43063755133 passed with zero distribution attempts and unchanged daily-cycle/social-queue blobs. Reliability independently rechecked the deployment identity, seven public surfaces at HTTP 200, the two November 11 article records, all 81 history entries, the 55-item social queue with no duplicate reservation, and a clean 30-minute runtime-error window. No publisher cycle, content, social, provider, credential, schedule, permission or editorial gate changed. PR #311 remains held and untouched; PR #260 and any shared checkpoint adapter remain inactive. Durable prevention: retain the pinned browser image and exact-checkout Git trust in the isolated design-check job while preserving fail-closed exact-head and visual gates.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
