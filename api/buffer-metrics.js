@@ -1,19 +1,22 @@
 const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
+const { readInventory } = require('../lib/buffer-inventory.cjs');
+const { distribution } = require('../automation/media-policy.json');
 
 const BUFFER_API_URL = 'https://api.buffer.com';
 const LINKEDIN_CHANNEL_NAME = 'creditunionai news';
 const DAY_MS = 24 * 60 * 60 * 1000;
 
-async function bufferRequest(apiKey, query, variables = {}) {
+async function bufferRequest(apiKey, query, variables = {}, signal) {
   const response = await fetch(BUFFER_API_URL, {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ query, variables })
+    body: JSON.stringify({ query, variables }),
+    ...(signal ? { signal } : {})
   });
 
   const payload = await response.json().catch(() => null);
@@ -193,20 +196,22 @@ module.exports = async function handler(req, res) {
           name
           displayName
           service
+          isQueuePaused
         }
       }`,
       { organizationId: organization.id }
     );
 
-    const channel = (channelData?.channels || []).find(
+    const channels = (channelData?.channels || []).filter(
       (entry) =>
-        String(entry.service || '').toLowerCase().includes('linkedin') &&
+        entry.id === distribution.channelId && entry.service === 'linkedin' &&
         normalizedName(entry) === LINKEDIN_CHANNEL_NAME
     );
 
-    if (!channel) {
-      return res.status(409).json({ ok: false, error: 'creditunionai_linkedin_channel_not_found' });
+    if (channels.length !== 1) {
+      return res.status(409).json({ ok: false, error: 'creditunionai_linkedin_channel_identity_mismatch' });
     }
+    const channel = channels[0];
 
     const postsData = await bufferRequest(
       apiKey,
@@ -277,6 +282,10 @@ module.exports = async function handler(req, res) {
         };
       });
 
+    const reservationInventory = await readInventory(
+      (query, variables, signal) => bufferRequest(apiKey, query, variables, signal),
+      { organizationId: organization.id, channel, commitSha: deploymentCommit }
+    );
     const now = new Date();
     return res.status(200).json({
       ok: true,
@@ -289,6 +298,7 @@ module.exports = async function handler(req, res) {
       },
       privacy: 'No names, email addresses, form values, or free-form reader data are returned.',
       freshness: 'Buffer refreshes post metrics approximately daily; recent sent posts may have pending metrics.',
+      reservationInventory,
       windows: {
         sevenDay: summarize(posts, 7, now),
         twentyEightDay: summarize(posts, 28, now)
