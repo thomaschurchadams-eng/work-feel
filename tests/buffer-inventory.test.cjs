@@ -93,6 +93,7 @@ test('inventory minimizes content and flags unknown destinations and paused/unkn
   const f = pagesFixture([page([post('private', { text: 'PRIVATE DRAFT person@example.com https://outside.example/private?token=SECRET https://creditunionainews.com/person%40example.com https://creditunionainews.com/news/example.html?token=SECRET#private' })])]);
   const r = await readInventory(f.request, identity, () => now);
   assert.deepEqual(r.records[0].canonicalUrls, ['https://creditunionainews.com/news/example.html']);
+  assert.equal(r.records[0].requiresReview, true); assert.equal(r.requiresReview, true);
   assert.doesNotMatch(JSON.stringify(r), /PRIVATE|person@|outside.example|SECRET/);
   for (const isQueuePaused of [true, undefined]) {
     const paused = await readInventory(pagesFixture([page()]).request, { ...identity, channel: { ...channel, isQueuePaused } }, () => now);
@@ -100,6 +101,21 @@ test('inventory minimizes content and flags unknown destinations and paused/unkn
   }
   const unknown = await readInventory(pagesFixture([page([post('no-url', { text: 'https://buff.ly/unknown' })])]).request, identity, () => now);
   assert.equal(unknown.records[0].requiresReview, true);
+});
+test('a recognized CUAI link cannot hide a second unresolved destination', async () => {
+  const known = 'https://creditunionainews.com/news/a.html';
+  for (const unresolved of ['https://buff.ly/unknown', 'http://buff.ly/unknown', 'www.buff.ly/unknown', 'https://[invalid', 'https://creditunionainews.com/person%40example.com', 'https://user:SECRET@creditunionainews.com/news/b.html']) {
+    for (const text of [`${known} plus ${unresolved}`, `${unresolved} plus ${known}`]) {
+      const f = pagesFixture([page([post('mixed', { text })])]);
+      const r = await readInventory(f.request, identity, () => now);
+      assert.equal(r.complete, true); assert.equal(r.records[0].requiresReview, true, text); assert.equal(r.requiresReview, true);
+      assert.deepEqual(r.records[0].canonicalUrls, [known]); assert.equal(f.calls.length, 1);
+      assert.doesNotMatch(JSON.stringify(r), /buff\.ly|invalid|person%40|SECRET|plus/);
+    }
+  }
+  const valid = await readInventory(pagesFixture([page([post('known', { text: `${known}?utm_source=linkedin ${known}#summary https://creditunionainews.com/news/b.html` })])]).request, identity, () => now);
+  assert.equal(valid.complete, true); assert.equal(valid.requiresReview, false); assert.equal(valid.records[0].requiresReview, false);
+  assert.deepEqual(valid.records[0].canonicalUrls, [known, 'https://creditunionainews.com/news/b.html']);
 });
 
 function endpointFixture({ authorized = true, commitSha = identity.commitSha, channels = [channel], inventory = [page()], metricFailure = false } = {}) {
@@ -136,6 +152,15 @@ test('actual authenticated endpoint exposes complete paginated read while preser
   assert.equal(f.response.body.windows.sevenDay.postCount, 0); assert.equal(f.response.body.posts.length, 0);
   assert.equal(f.calls.length, 5); assert.equal(f.queueReads(), 1);
   assert.match(f.response.headers['Cache-Control'], /no-store/); assert.match(f.response.headers['X-Robots-Tag'], /noindex/);
+});
+test('actual endpoint propagates mixed-link review without retaining text or resolving links', async () => {
+  const f = endpointFixture({ inventory: [page([post('mixed', { text: 'https://creditunionainews.com/news/a.html plus https://buff.ly/unknown?token=SECRET' })])] });
+  await f.run();
+  const r = f.response.body.reservationInventory;
+  assert.equal(f.response.statusCode, 200); assert.equal(f.response.body.ok, true);
+  assert.equal(r.complete, true); assert.equal(r.records[0].requiresReview, true); assert.equal(r.requiresReview, true);
+  assert.deepEqual(r.records[0].canonicalUrls, ['https://creditunionainews.com/news/a.html']);
+  assert.doesNotMatch(JSON.stringify(r), /buff\.ly|SECRET|plus|token/); assert.equal(f.calls.length, 4);
 });
 test('unauthorized, mismatched commit/method/channel all fail before inventory; duplicate channel identity is rejected', async () => {
   for (const [options, method, code] of [[{ authorized: false }, 'GET', 401], [{ commitSha: 'wrong' }, 'POST', 403], [{}, 'DELETE', 405], [{ channels: [{ ...channel, id: 'other' }] }, 'GET', 409], [{ channels: [channel, channel] }, 'GET', 409]]) {

@@ -35,7 +35,9 @@ become an empty successful inventory. Draft/approval/error/sending states,
 overdue scheduled posts, unknown destinations and a paused/unknown channel queue
 set `requiresReview`. Post text, non-CUAI URLs, query strings and fragments are
 not included in the inventory receipt; ambiguous or shortened destinations need
-the existing owner's review. No arbitrary link expansion is performed.
+the existing owner's review even when the same post also has a recognized CUAI
+URL. Dropping an unresolved URL from the receipt does not clear that review
+requirement. No arbitrary link expansion is performed.
 
 Before reserving any article, media or house slot, the sole publisher must read
 this field from a current authorized response, verify `complete: true`, resolve
