@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-11",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -31,6 +31,15 @@
         "primaryFunctionalAudience": "Credit-union boards, merger-integration teams and member-service leaders",
         "promotionPriority": "Standard",
         "socialDecision": "not-created-standard-ineligible"
+      },
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
+        "url": "https://creditunionainews.com/news/claude-sheets-credit-union-forecast-controls.html",
+        "primaryFunctionalAudience": "Credit-union finance, treasury, FP&A and enterprise AI administrators",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
       }
     ],
     "candidateEvaluations": [
@@ -40,7 +49,7 @@
         "sourceUrl": "https://claude.com/resources/articles/sheets-whiteboards-data",
         "sourceDate": "2026-11-10",
         "score": 77.8,
-        "status": "selected-pending-validation",
+        "status": "selected-published",
         "rationale": "Distinct credit-union finance workflow; real beta and Enterprise admin setting, not verified credit-union adoption."
       },
       {
@@ -143,11 +152,11 @@
         "rationale": "Event promotion; not a launch or evidence of a measured outcome."
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-11-11T12:15:29.150Z",
+    "status": "article-published",
+    "updatedAt": "2026-11-11T12:21:40.496Z",
     "socialDecision": "not-created-standard-ineligible",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Prepare and independently verify slot 2.",
+    "nextAction": "Both Wednesday slots delivered; consider the deceased-member servicing gap only with stronger public evidence.",
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -197,25 +206,60 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-11",
-        "status": "prepared",
+        "status": "live-verified",
         "accountableOwner": "daily-publisher",
         "candidateTitle": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
-        "liveProof": "none; exact-head acceptance and production verification pending",
-        "nextReviewAt": "2026-11-11T08:12:00-05:00",
-        "nextAction": "Retain the exact validation checkpoint; review the matching artifact before release."
+        "liveProof": "READY exact production and matching live article, hero, homepage, News and sitemaps.",
+        "nextReviewAt": "2026-11-12T07:00:00-05:00",
+        "nextAction": "Do not republish; retain validation and live receipts.",
+        "url": "https://creditunionainews.com/news/claude-sheets-credit-union-forecast-controls.html",
+        "verifiedAt": "2026-11-11T12:21:40.496Z",
+        "productionCommit": "dd65b2c1785d126f52c0e4089fdd3f1e875621af",
+        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6795574932",
+        "evidence": {
+          "pending": {
+            "prNumber": 316,
+            "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+            "run": 43019055021,
+            "job": 130517346422,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-11T08:12:00-05:00"
+          },
+          "terminalValidation": {
+            "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+            "run": 43019055021,
+            "job": 130517346422,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-11T12:20:47.640Z"
+          },
+          "terminalAcceptance": {
+            "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+            "run": 43019055021,
+            "job": 130517346422,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-11T12:21:14.913Z",
+            "artifactId": 13853599034,
+            "artifactDigest": "sha256:0b0415d6b0362e69be991eb1d173fd673387749504721abb15ce3c7292cd7382"
+          },
+          "productionDeploymentId": "dpl_8zx6FXrUqeGmdqnpUPqRkLjWoFBn"
+        }
       }
     ],
     "validation": {
       "status": "production-verified",
-      "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
-      "run": 43018180201,
-      "job": 130514419009,
+      "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+      "run": 43019055021,
+      "job": 130517346422,
       "attempt": 1,
-      "artifactId": 13853159620,
-      "visualReviewedAt": "2026-11-11T12:14:57.123Z",
-      "productionCommit": "040e54901be0677622f009668aafc21ae5317ed6",
-      "deploymentId": "dpl_HWrD4aPJkbsCVffn1dTNcbkUyLfS",
-      "verifiedAt": "2026-11-11T12:15:29.150Z"
+      "artifactId": 13853599034,
+      "visualReviewedAt": "2026-11-11T12:21:14.913Z",
+      "productionCommit": "dd65b2c1785d126f52c0e4089fdd3f1e875621af",
+      "deploymentId": "dpl_8zx6FXrUqeGmdqnpUPqRkLjWoFBn",
+      "verifiedAt": "2026-11-11T12:21:40.496Z"
     },
     "socialDistribution": {
       "status": "not-created",
