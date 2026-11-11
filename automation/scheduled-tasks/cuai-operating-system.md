@@ -26,7 +26,7 @@ Each operating review should:
 4. Recommend or hand off the next strongest candidate to the daily-article policy. If daily news is weak, prioritize an approved evergreen-backlog topic rather than forcing low-quality news.
 5. Treat **High**, **Standard**, and **Library** as operational classifications:
    - High: material and time-sensitive; may qualify for selective LinkedIn consideration.
-   - Standard: useful site content; no routine LinkedIn promotion.
+   - Standard: useful site content; eligible for selective LinkedIn consideration when the publisher verifies a specific, current practical takeaway and all existing safeguards.
    - Library: durable, evergreen portfolio asset; eligible for selective LinkedIn consideration only when it is executive-relevant, concretely actionable, and passes all cadence and duplicate safeguards.
 6. Keep a clear distinction between a recommendation, a publication decision, and a completed production action.
 
@@ -69,7 +69,7 @@ The November 3 owner-approved ongoing reader/sponsorship campaign lives in `auto
 
 LinkedIn is a selective channel:
 
-- Consider promotion for High articles with a clear practical implication and a live, validated URL.
+- Consider High and useful Standard articles with a clear practical implication and a live, validated URL. Classification alone is not a promotion decision. The existing publisher compares the strongest mix of qualified news, analysis and already-prepared media under its reasoned-selection policy; this role does not reserve or post.
 - Consider Library Insights without requiring a content-type exception when they address a material executive or functional-leader decision and provide a concrete action, control, operating framework, or decision tool. Classification alone must not exclude them.
 - Do not mirror every article, Alert, or evergreen item to LinkedIn.
 - Preserve existing social safeguards, voice, approvals, schedules, credentials, and permissions.

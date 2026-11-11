@@ -4,7 +4,7 @@
 
 This is the authoritative operating policy for the **Publish CUAI Daily Article** ChatGPT Cloud task. Read this file from `main` before every run. If a task prompt, prior chat, or stale memory conflicts with this file, this file controls.
 
-This policy governs one daily article cycle plus the bounded LinkedIn distribution step for qualifying **High** articles and selectively qualified **Library** Insights. It does not authorize new scheduled tasks, changes to Cloud schedules/models/permissions, unrelated maintenance, new Alerts, or publication outside the normal site workflow.
+This policy governs one daily article cycle plus the bounded LinkedIn distribution step for qualifying **High** and useful **Standard** articles, selectively qualified **Library** Insights, and already-qualified media within the existing shared slots. It does not authorize new scheduled tasks, changes to Cloud schedules/models/permissions, unrelated maintenance, new Alerts, or publication outside the normal site workflow.
 
 ## Mission
 
@@ -26,7 +26,7 @@ If local launch is unavailable, the existing pull-request `design-checks` job in
 4. Avoid repeating a recent topic, source, organization, format, or functional audience unless there is material new information.
 5. Classify the candidate before drafting:
    - **High** — material, time-sensitive, primary-source-backed development with a clear operating implication. Eligible for selective LinkedIn promotion.
-   - **Standard** — useful, credible article that serves the portfolio but is not a must-know event. Publish to site when it passes all gates; normally do not promote on LinkedIn.
+   - **Standard** — useful, credible article that serves the portfolio but is not a must-know event. Publish to site when it passes all gates; consider for LinkedIn when it passes the practical-usefulness gate below. A major-event label is not required.
    - **Library** — durable, evergreen, multi-source guide, case study, or explainer. Use to strengthen the evergreen backlog; consider for LinkedIn only when it passes the selective Library gate below.
 6. If no current-event candidate qualifies, use the approved content-portfolio fallback: select the strongest unserved **Library** topic from the evergreen backlog, then a durable multi-source Insight, credit-union case study, or data-led explainer. The fallback must still pass the credit-union relevance gate. Do not lower standards merely to fill a daily slot.
 7. If nothing clears the evidence, mission-fit, and quality gates, do not publish. Record the non-publication result as the machine-observable outcome required below.
@@ -114,26 +114,26 @@ Do not consider the scheduled article cycle complete until either the published 
 
 ## Selective LinkedIn distribution
 
-LinkedIn is a selective distribution channel, not a mirror of daily output. The daily article cycle owns the bounded social-distribution action for qualifying High articles and selectively qualified Library Insights so that no separate handoff is required.
+LinkedIn is a selective distribution channel, not a mirror of daily output. The daily article cycle owns the bounded social-distribution action for qualifying High and Standard articles and selectively qualified Library Insights so that no separate handoff is required. Tom approved useful Standard-story eligibility on November 11, 2026; he did not approve a higher posting cap or restarting paused multimedia production.
 
 ### Eligibility
 
-- Create and schedule a LinkedIn post for a qualifying **High** article, or for a **Library** Insight only when all of these are true:
+- Consider a qualifying **High** article, useful **Standard** story, or **Library** Insight only when all of these are true:
   1. it addresses an executive or functional-leader decision with material credit-union relevance;
   2. it gives leaders a concrete action, control, operating framework, or decision tool they can apply;
   3. the promotion angle is specific and useful rather than a generic summary of evergreen content; and
   4. every existing live-URL, quality, duplicate, daily/weekly cadence, fixed-time, queue, tracking, image, deployment, and Buffer safeguard below passes.
-- Classification alone must never automatically include or exclude a Library Insight. Do not create a social post for Standard content, or for a Library Insight that fails any part of the selective Library gate, merely because an article was published.
+- Classification alone must not automatically include or exclude a High, Standard or Library story. Standard is now eligible for the same practical-usefulness review; publication alone is not promotion qualification. Keep Library’s executive-relevance and concrete-action gate intact. Recheck source currency and the live body, record the actual reader decision and takeaway, and mark only passing candidates `eligible: true`. Do not relabel a story High, inflate its editorial score, invent urgency or automatically backfill previously excluded Standard stories.
 - Under this gate, **“An AI Vendor Exit Playbook for Credit Unions” qualifies**: it addresses an executive vendor-risk and continuity decision and provides an actionable exit-planning framework. It must still be withheld or deferred if a duplicate or cadence/scheduling safeguard fails.
 - The article must already be live and production-verified before scheduling LinkedIn.
 - The post must accurately reflect the published article, include one concrete operational takeaway, avoid unverified claims, and use the approved CreditUnionAI News company-page workflow only. Never post automatically to Tom Church-Adams's personal LinkedIn profile.
 
 ### Queue and tracking requirements
 
-For each qualifying High article or selectively qualified Library Insight:
+For the selected qualifying High, Standard or Library article:
 
 1. Re-read `automation/social-queue.json` from current `main` immediately before writing.
-2. Confirm there is no existing queue item or Buffer post for the same article and no item already reserved for the chosen America/New_York calendar date.
+2. Freshly inspect the complete current provider reservation inventory as well as main: confirm there is no existing queue item or Buffer post for the same article/underlying publication and no item already reserved for the chosen America/New_York calendar date. Missing provider access or incomplete inventory leaves the selection prepared, not reserved. Sent-post metrics alone cannot clear future capacity; never invoke a scheduling endpoint just to obtain a read.
 3. Enforce a hard limit of one CreditUnionAI News LinkedIn post per America/New_York calendar day and five per week.
 4. Create one immutable queue item whose id begins with `linkedin-`, preserving the established schema and using:
    - `articleUrl` as the canonical live article URL;
@@ -148,13 +148,21 @@ For each qualifying High article or selectively qualified Library Insight:
 9. The verified workflow records the queue receipt automatically. On success, re-read current `main` and verify that the queue item contains the returned scheduling receipt, including `status` (`scheduled` or `sent` as reported), `postId`, `channelId`, `channelName`, `scheduledAt`, `bufferDueAt`, `lastAttemptAt`, `lastResult`, `duplicate`, and image-attachment metadata when returned. Confirm the resulting production deployment is READY. Do not write the same receipt a second time. If the receipt is missing, report the reconciliation blocker and check the preserved workflow artifact before attempting a repair; do not reschedule the post.
 10. On scheduler failure, keep exactly one queued item, record the precise blocker and attempt time, do not create a duplicate item, and report the failure.
 
-### One-time recovery of missed High handoffs
+### Choose the strongest useful mix
+
+The sole publisher compares all currently qualified candidates for an unreserved slot. Prioritize the concrete credit-union decision, evidence quality, source currency and any genuine time sensitivity. Among similarly useful candidates, prefer a different functional audience, topic or format from the recent sent/reserved mix. Examine the existing queue and complete current provider inventory; unknown observations remain unknown. Mix is a tie-break, not a quota, new score or justification to promote weak material. An urgent High item can lead on its evidence; a useful Standard, Library Insight or verified media piece can also lead. A genuinely empty qualified pool stays empty.
+
+Use the existing selector with `{ "articles": [...], "editorialOrder": [{ "canonicalUrl": "...", "rationale": "..." }, ...] }`. `editorialOrder` lists every currently qualified, unduplicated article/media destination exactly once, strongest first. Each reason records why the item belongs in this slot relative to the other choices and recent mix. Preserve this dated comparison in the existing run/selection receipt, not a new tracker. A legacy article array still works for one qualified candidate. With multiple choices and no complete reasoned order, the selector returns `needs-editorial-selection`; it must not silently choose by input order or fall through to a house campaign. Inspect its returned pool, complete the comparison and run it again. The result is read-only preparation, not a reservation, proof of provider capacity or permission to publish unverified media.
+
+This change leaves one weekday post/day, five/week, fixed Eastern times, all immutable reservations, deduplication, the selective Library gate, media rights/accessibility/live verification and sole-publisher ownership intact. It does not restart paused multimedia, timing or copy experiments. Existing experiment cohorts retain their original eligibility and must not silently absorb the broadened pool. Review cadence separately using comparable evidence before proposing a different cap.
+
+### Recovery candidates from missed High handoffs
 
 At the start of each weekday article cycle, inspect the prior seven calendar days in the established publication/daily-cycle ledger for any article recorded as High with a social decision equivalent to `eligible-high-priority-handed-off` or otherwise eligible but not represented in `automation/social-queue.json`.
 
-- Recover at most one such missed High article per run, newest first, using the same queue, tracking, fixed-time, duplicate, weekly-limit, deployment and Buffer scheduling rules above.
-- Recover only if the article is still materially current and the live article remains production-valid.
-- If the current day's article also qualifies as High, preserve the one-post-per-day rule and reserve the second qualifying item for the next eligible free weekday slot.
+- Nominate at most one such missed High article per run, newest first, only if it is still materially current and the live article remains production-valid.
+- Recovery nominates a candidate; it must not reserve or schedule a slot before the strongest-useful-mix comparison. Add the recovered candidate to the same complete `editorialOrder` as today's qualified High/Standard articles, selective Library and prepared media. Its earlier High classification or missed handoff creates no automatic precedence.
+- Apply the same queue, tracking, fixed-time, duplicate, weekly-limit, deployment and complete-current-Buffer safeguards to the selected item. Do not automatically reserve the runner-up for a later day; reassess unselected candidates in the next ordinary eligible-slot comparison. Record nomination separately from actual selection, reservation and delivery.
 - Once no qualifying missed High article remains, this recovery step becomes a no-op.
 
 Do not change LinkedIn credentials, Buffer credentials, channel permissions, posting-time policy, or Cloud automation schedules in this cycle.
@@ -201,13 +209,13 @@ Review two full weeks on October 16: delivery, corrections, breadth, actual usag
 
 Tom approved the reader-value and sponsorship messages and ongoing CUAI website/company-page campaign in `automation/house-campaign.json` (approval `Sentinel_49f140f977248191b053657128260f4b`). This is a narrow exception for those approved house messages to the article-only/generic-growth restriction, not a change to editorial classification or a revival of old copy experiments. The existing daily publisher remains the sole social owner; no new publisher or schedule is authorized.
 
-After qualified High news, prepared media and selectively qualified Library material, the selector may return an approved house item as `prepared-selection`. This is a file handoff, not evidence of acceptance, queueing or delivery. Never displace an existing reservation, delay news/media to force a house post, or add a mandatory campaign quota. Preserve every current daily/weekly cap, fixed Eastern time, live destination/image, rights, accessibility, deduplication, immutable copy/UTM and provider receipt gate. X, personal profiles and paid ads remain excluded. This owner performs no outbound sponsor email.
+After qualified High/Standard articles, selectively qualified Library material and already-prepared qualified media, the selector may return an approved house item as `prepared-selection`. This is a file handoff, not evidence of acceptance, queueing or delivery. Never displace an existing reservation, delay news/media to force a house post, or add a mandatory campaign quota. Preserve every current daily/weekly cap, fixed Eastern time, live destination/image, rights, accessibility, deduplication, immutable copy/UTM and provider receipt gate. X, personal profiles and paid ads remain excluded. This owner performs no outbound sponsor email.
 
 Before any reservation, freshly read current main queue AND real existing provider state, check the campaign against the latest approval and reader feedback, and inspect the actual live destination/mobile journey. With no provider access or incomplete inventory, leave the item prepared and record the blocker. A stored sent-post metrics receipt is not a complete future reservation inventory. Copy the approved item unchanged into the existing queue only when eligible, adding the normal fixed `scheduledFor` and `status: queued` through the established flow; retain `contentKind: house-campaign` and `campaignId`. The existing authenticated scheduler validates the exact approved package, then applies its usual live and provider gates. Do not call it separately or use an article identity to bypass approval.
 
 Each existing cycle: produce or select within the approved remit, inspect actual output against accepted requirements and prior feedback, fix mismatches and reverify before handoff. Use available comparable evidence for routine iterations; preserve historical metric/date context and unknowns. Review failures immediately; daily/weekly checks are backstops. New prices, spend or materially different claims need separate approval. A deployment or merged policy is not proof this ordinary publisher has consumed it; report prepared, policy merged, queued, scheduled, sent and verified separately.
 
-Before reserving a future LinkedIn day, read media-policy.json, media-manifest.json and current social-queue.json; use scripts/select-media-slot.cjs with already-qualified article candidates. The queue remains the sole per-day slot ledger. High news takes precedence, then published/verified media prepared two business days ahead, then selective Library. This adds no article cycle or extra social post. Keep an existing reservation unchanged; never cancel, overwrite or rewrite its content/time merely to fit media. Never select the same canonical destination or underlying parentPublicationId twice.
+Before reserving a future LinkedIn day, read media-policy.json, media-manifest.json and current social-queue.json; use scripts/select-media-slot.cjs with already-qualified article candidates. The queue remains the sole per-day slot ledger. Compare qualified High/Standard news, selective Library analysis and already-prepared verified media together using the reasoned ordering below; there is no automatic classification or format precedence. This adds no article cycle or extra social post. Keep an existing reservation unchanged; never cancel, overwrite or rewrite its content/time merely to fit media. Never select the same canonical destination or underlying parentPublicationId twice.
 
 For a selected media item, preserve the existing linkedin-prefixed immutable ID and articleUrl/distributionUrl compatibility fields; add contentKind:media, mediaAssetId, mediaFormat and parentPublicationId where applicable. Use the verified manifest thumbnail/alt text and the same exact LinkedIn UTMs. All source, rights, accessibility and production gates must pass before queue reservation. News/Library eligibility otherwise remains unchanged. X is blocked. Existing image promotion remains supported. For a completed short video, use `../native-video-handoff.md`: preserve the same immutable queue item, canonical URL, UTMs, shared caps and timing; add mediaType:video, videoUrl and videoSha256 matching the production-verified manifest.nativeVideo. Only the existing verified executor submits one native MP4; no separate publisher or link-plus-image substitution.
 
