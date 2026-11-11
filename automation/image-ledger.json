@@ -3,6 +3,27 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "claude-sheets-credit-union-forecast-controls",
+      "articleUrl": "/news/claude-sheets-credit-union-forecast-controls.html",
+      "imagePath": "/assets/claude-sheets-credit-union-forecast-controls.jpg",
+      "publishedAt": "2026-11-11T07:17:08-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "refined-data-abstraction",
+      "subject": "human-machine-handoff",
+      "composition": "diagonal-motion",
+      "perspective": "isometric",
+      "palette": "plum-gold",
+      "lighting": "high-contrast-studio",
+      "texture": "matte-clay",
+      "scene": "Three lifted gold tiles trace a diagonal through an ivory grid on a plum background",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "64ec2b64818943a95f29c617dd65658819f3059068e4727a56fe876bd82dfaf5"
+    },
+    {
       "id": "safe-becu-member-support-final-approval",
       "articleUrl": "/news/safe-becu-member-support-final-approval.html",
       "imagePath": "/assets/safe-becu-member-support-final-approval.jpg",

@@ -40,7 +40,7 @@
         "sourceUrl": "https://claude.com/resources/articles/sheets-whiteboards-data",
         "sourceDate": "2026-11-10",
         "score": 77.8,
-        "status": "qualified-for-sequential-review",
+        "status": "selected-pending-validation",
         "rationale": "Distinct credit-union finance workflow; real beta and Enterprise admin setting, not verified credit-union adoption."
       },
       {
@@ -193,6 +193,16 @@
           },
           "productionDeploymentId": "dpl_HWrD4aPJkbsCVffn1dTNcbkUyLfS"
         }
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-11",
+        "status": "prepared",
+        "accountableOwner": "daily-publisher",
+        "candidateTitle": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
+        "liveProof": "none; exact-head acceptance and production verification pending",
+        "nextReviewAt": "2026-11-11T08:12:00-05:00",
+        "nextAction": "Retain the exact validation checkpoint; review the matching artifact before release."
       }
     ],
     "validation": {

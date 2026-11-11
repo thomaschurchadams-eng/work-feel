@@ -3,6 +3,37 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "claude-sheets-credit-union-forecast-controls",
+      "title": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
+      "url": "/news/claude-sheets-credit-union-forecast-controls.html",
+      "publishedAt": "2026-11-11T07:17:08-05:00",
+      "section": "news",
+      "beat": "finance-spreadsheet-governance",
+      "functions": [
+        "finance-treasury",
+        "it-data-cybersecurity",
+        "operations"
+      ],
+      "technologies": [
+        "generative-ai"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union finance, treasury, FP&A and enterprise AI administrators",
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-business-case-framework.html",
+        "/news/claude-plaid-personal-finance-beta.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.95,
+      "sourceLimit": "Anthropic beta documentation supports capabilities and limitations, not observed CU adoption, accuracy or savings.",
+      "score": 77.8
+    },
+    {
       "id": "safe-becu-member-support-final-approval",
       "title": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
       "url": "/news/safe-becu-member-support-final-approval.html",
