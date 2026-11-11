@@ -156,13 +156,13 @@ Use the existing selector with `{ "articles": [...], "editorialOrder": [{ "canon
 
 This change leaves one weekday post/day, five/week, fixed Eastern times, all immutable reservations, deduplication, the selective Library gate, media rights/accessibility/live verification and sole-publisher ownership intact. It does not restart paused multimedia, timing or copy experiments. Existing experiment cohorts retain their original eligibility and must not silently absorb the broadened pool. Review cadence separately using comparable evidence before proposing a different cap.
 
-### One-time recovery of missed High handoffs
+### Recovery candidates from missed High handoffs
 
 At the start of each weekday article cycle, inspect the prior seven calendar days in the established publication/daily-cycle ledger for any article recorded as High with a social decision equivalent to `eligible-high-priority-handed-off` or otherwise eligible but not represented in `automation/social-queue.json`.
 
-- Recover at most one such missed High article per run, newest first, using the same queue, tracking, fixed-time, duplicate, weekly-limit, deployment and Buffer scheduling rules above.
-- Recover only if the article is still materially current and the live article remains production-valid.
-- If the current day's article also qualifies as High, preserve the one-post-per-day rule and reserve the second qualifying item for the next eligible free weekday slot.
+- Nominate at most one such missed High article per run, newest first, only if it is still materially current and the live article remains production-valid.
+- Recovery nominates a candidate; it must not reserve or schedule a slot before the strongest-useful-mix comparison. Add the recovered candidate to the same complete `editorialOrder` as today's qualified High/Standard articles, selective Library and prepared media. Its earlier High classification or missed handoff creates no automatic precedence.
+- Apply the same queue, tracking, fixed-time, duplicate, weekly-limit, deployment and complete-current-Buffer safeguards to the selected item. Do not automatically reserve the runner-up for a later day; reassess unselected candidates in the next ordinary eligible-slot comparison. Record nomination separately from actual selection, reservation and delivery.
 - Once no qualifying missed High article remains, this recovery step becomes a no-op.
 
 Do not change LinkedIn credentials, Buffer credentials, channel permissions, posting-time policy, or Cloud automation schedules in this cycle.
