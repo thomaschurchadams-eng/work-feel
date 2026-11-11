@@ -70,11 +70,50 @@ test('selection is idempotent and duplicates/adaptations cannot create another p
   assert.deepEqual(selectSlot(args), selectSlot(args));
   for (const q of [[{ ...queueItem('old', '2026-10-05'), articleUrl: asset.canonicalUrl }], [{ ...queueItem('old', '2026-10-05'), parentPublicationId: asset.parentPublicationId }]]) assert.equal(selectSlot({ ...args, queue: q }).status, 'no-qualified-selection');
 });
-test('qualified urgent news wins; media competes before Library without padding', () => {
+test('qualified High, useful Standard and selective Library all compete without automatic format priority', () => {
   const article = { id: 'news', canonicalUrl: 'https://creditunionainews.com/news/new.html', eligible: true, classification: 'High' };
-  assert.equal(selectSlot({ date: '2026-10-06', queue: [], media: [asset], articles: [article] }).assetId, 'news');
-  assert.equal(selectSlot({ date: '2026-10-06', queue: [], media: [asset], articles: [{ ...article, classification: 'Library' }] }).assetId, asset.id);
-  assert.equal(selectSlot({ date: '2026-10-06', queue: [], media: [], articles: [{ ...article, eligible: false }] }).status, 'no-qualified-selection');
+  const args = { date: '2026-10-06', queue: [], media: [asset], articles: [article] };
+  const order = (first, second) => [
+    { canonicalUrl: first.canonicalUrl, rationale: 'Specific current member-service decision; stronger fit for this slot after the recent mix review.' },
+    { canonicalUrl: second.canonicalUrl, rationale: 'Useful alternative retained for later consideration; no urgency invented.' }
+  ];
+  for (const classification of ['High', 'Standard', 'Library']) {
+    const candidate = { ...article, classification };
+    assert.equal(selectSlot({ ...args, articles: [candidate] }).status, 'needs-editorial-selection');
+    assert.equal(selectSlot({ ...args, articles: [candidate], editorialOrder: order(candidate, asset) }).assetId, candidate.id);
+    assert.equal(selectSlot({ ...args, articles: [candidate], editorialOrder: order(asset, candidate) }).assetId, asset.id);
+    assert.equal(selectSlot({ ...args, media: [], articles: [candidate] }).assetId, candidate.id);
+    assert.equal(selectSlot({ ...args, media: [], articles: [{ ...candidate, eligible: false }] }).status, 'no-qualified-selection');
+  }
+});
+test('reasoned mixed selection is deterministic, read-only and independent of input order', () => {
+  const high = { id: 'high', canonicalUrl: 'https://creditunionainews.com/news/high.html', eligible: true, classification: 'High' };
+  const standard = { ...high, id: 'standard', canonicalUrl: 'https://creditunionainews.com/news/standard.html', classification: 'Standard' };
+  const editorialOrder = [
+    { canonicalUrl: standard.canonicalUrl, rationale: 'Actionable servicing change addresses a different audience from the recent posts.' },
+    { canonicalUrl: asset.canonicalUrl, rationale: 'Verified chart is useful but repeats the latest topic.' },
+    { canonicalUrl: high.canonicalUrl, rationale: 'Material news, but this decision is less useful to the audience in this slot.' }
+  ];
+  const args = { date: '2026-10-06', queue: [], articles: [high, standard], media: [asset], editorialOrder };
+  const before = JSON.stringify(args), result = selectSlot(args);
+  assert.equal(result.assetId, standard.id); assert.equal(result.selectionRationale, editorialOrder[0].rationale);
+  assert.deepEqual(selectSlot({ ...args, articles: [standard, high] }), result);
+  assert.deepEqual(selectSlot(args), result); assert.equal(JSON.stringify(args), before);
+  for (const invalid of [null, [], editorialOrder.slice(1), [...editorialOrder, editorialOrder[0]], editorialOrder.map(e => ({ ...e, rationale: ' ' })), [editorialOrder[0], editorialOrder[0], editorialOrder[2]], [{ canonicalUrl: 'https://other.example', rationale: 'Unsupported' }, ...editorialOrder.slice(1)]]) {
+    const blocked = selectSlot({ ...args, editorialOrder: invalid });
+    assert.equal(blocked.status, 'needs-editorial-selection'); assert.equal(blocked.assetId, undefined);
+  }
+  const duplicate = selectSlot({ ...args, articles: [standard, { ...standard, id: 'alias' }], media: [], editorialOrder: editorialOrder.slice(0, 2) });
+  assert.equal(duplicate.status, 'needs-editorial-selection');
+});
+test('Standard qualification never overrides capacity, parent identity or reservations', () => {
+  const standard = { id: 'standard', eligible: true, classification: 'Standard', canonicalUrl: 'https://creditunionainews.com/news/standard.html', parentPublicationId: 'parent' };
+  const args = { date: '2026-10-06', queue: [], articles: [standard] };
+  assert.equal(selectSlot({ ...args, queue: [queueItem('reserved', args.date)] }).status, 'reserved');
+  assert.equal(selectSlot({ ...args, queue: [{ ...queueItem('parent', '2026-10-05'), parentPublicationId: 'parent' }] }).status, 'no-qualified-selection');
+  assert.equal(selectSlot({ ...args, providerPosts: [{ id: 'external', status: 'scheduled', dueAt: '2026-10-06T15:30:00Z' }] }).status, 'blocked');
+  assert.equal(selectSlot({ ...args, providerPosts: ['05', '07', '08', '09', '10'].map(d => ({ id: d, status: 'sent', sentAt: '2026-10-' + d + 'T16:30:00Z' })) }).reason, 'linkedin_weekly_cap_conflict');
+  for (const changes of [{ eligible: undefined }, { eligible: 'true' }, { classification: 'unknown' }, { canonicalUrl: 'https://other.example/' }]) assert.equal(selectSlot({ ...args, articles: [{ ...standard, ...changes }] }).status, 'no-qualified-selection');
 });
 test('X stays blocked, baseline inactive and budget arithmetic separates remaining from ceiling', () => {
   assert.equal(policy.distribution.x.status, 'blocked'); assert.equal(policy.timingTest.status, 'planned'); assert.equal(testValid(policy.timingTest), false); assert.equal(policy.timingTest.assignments.length, 8);
@@ -128,7 +167,7 @@ test('calendar and crossover match the enabled coordinator exactly', () => {
   const shifted=timedPolicy().timingTest; shifted.assignments[0].date='2026-10-19'; assert.equal(testValid(shifted),false);
 });
 
-for (const branch of ['High', 'Library', 'media']) test(`${branch} selection rejects a different-URL adaptation of an already reserved parent`, () => {
+for (const branch of ['High', 'Standard', 'Library', 'media']) test(`${branch} selection rejects a different-URL adaptation of an already reserved parent`, () => {
   const candidate = branch === 'media' ? asset : { id: 'adaptation', canonicalUrl: 'https://creditunionainews.com/news/adaptation.html', eligible: true, classification: branch, parentPublicationId: asset.parentPublicationId };
   for (const status of ['planned', 'queued', 'sent']) {
     const queue = [{ ...queueItem('original', '2026-10-05', status), parentPublicationId: asset.parentPublicationId }];
@@ -141,10 +180,38 @@ for (const branch of ['High', 'Library', 'media']) test(`${branch} selection rej
   }
 });
 test('article candidates without parent IDs retain URL deduplication and legacy eligibility', () => {
-  for (const classification of ['High', 'Library']) {
+  for (const classification of ['High', 'Standard', 'Library']) {
     const queue = [queueItem('old', '2026-10-05')];
     const candidate = { id: 'legacy', canonicalUrl: 'https://creditunionainews.com/news/legacy.html', eligible: true, classification };
     assert.equal(selectSlot({ date: '2026-10-06', queue, articles: [candidate] }).assetId, 'legacy');
     assert.equal(selectSlot({ date: '2026-10-06', queue, articles: [{ ...candidate, canonicalUrl: queue[0].articleUrl }] }).status, 'no-qualified-selection');
   }
+});
+
+test('publisher CLI accepts a useful Standard, explains a mixed hold, and leaves the queue unchanged', () => {
+  const os = require('node:os'), path = require('node:path'), { spawnSync } = require('node:child_process');
+  const cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'cuai-selection-'));
+  try {
+    fs.mkdirSync(path.join(cwd, 'automation'));
+    const queuePath = path.join(cwd, 'automation/social-queue.json'), queueBytes = JSON.stringify({ items: [] });
+    fs.writeFileSync(queuePath, queueBytes);
+    fs.writeFileSync(path.join(cwd, 'automation/media-manifest.json'), JSON.stringify({ assets: [] }));
+    const candidatePath = path.join(cwd, 'candidates.json');
+    const standard = { id: 'standard', eligible: true, classification: 'Standard', canonicalUrl: 'https://creditunionainews.com/news/standard.html' };
+    const library = { ...standard, id: 'library', classification: 'Library', canonicalUrl: 'https://creditunionainews.com/insight-example.html' };
+    const run = input => {
+      fs.writeFileSync(candidatePath, JSON.stringify(input));
+      return spawnSync(process.execPath, [require.resolve('../scripts/select-media-slot.cjs'), '2026-11-12', candidatePath], { cwd, encoding: 'utf8' });
+    };
+    let result = run([standard]); assert.equal(result.status, 0); assert.equal(JSON.parse(result.stdout).assetId, 'standard');
+    result = run([standard, library]); assert.equal(result.status, 0); assert.equal(JSON.parse(result.stdout).status, 'needs-editorial-selection');
+    result = run({ articles: [standard, library], editorialOrder: [
+      { canonicalUrl: library.canonicalUrl, rationale: 'Decision tool serves the next audience after the recent news-heavy mix.' },
+      { canonicalUrl: standard.canonicalUrl, rationale: 'Useful news, but no deadline warrants displacing the stronger tool.' }
+    ] });
+    assert.equal(result.status, 0); assert.equal(JSON.parse(result.stdout).assetId, 'library');
+    assert.match(JSON.parse(result.stdout).selectionRationale, /next audience/);
+    result = run({ articles: null }); assert.equal(result.status, 1); assert.match(result.stderr, /Candidates must be/);
+    assert.equal(fs.readFileSync(queuePath, 'utf8'), queueBytes);
+  } finally { fs.rmSync(cwd, { recursive: true, force: true }); }
 });
