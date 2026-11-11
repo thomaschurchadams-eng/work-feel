@@ -115,6 +115,7 @@ async function serve() {
     }
     await require('./verify-card-artwork.cjs')(browser, base, out, axePath);
     await require('./verify-alerts.cjs')(browser, base, out, axePath);
+    await require('./verify-date-header.cjs')(browser, base, out);
     await require('./verify-analytics-journeys.cjs')(browser, base, out, axePath);
   } finally { await browser.close(); if (local) await new Promise(resolve => local.server.close(resolve)); }
   const failures = results.filter(r => r.failed.length);

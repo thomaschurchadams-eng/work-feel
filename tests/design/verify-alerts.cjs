@@ -13,7 +13,7 @@ const archive = records.filter(item => !Number.isNaN(new Date(item.date).getTime
   if (headline) headlines.add(headline);
   return true;
 });
-const recentCount = archive.filter(item => new Date(item.date) >= new Date('2026-09-30T15:00:00Z')).length;
+const recentCount = archive.filter(item => item.publicationEvidence && /T.*(?:Z|[+-]\d{2}:\d{2})$/.test(item.publishedAt || '') && new Date(item.publishedAt) >= new Date('2026-09-30T15:00:00Z') && new Date(item.publishedAt) <= new Date('2026-10-14T15:00:00Z')).length;
 const visaIndex = archive.findIndex(item => item.slug === 'visa-ai-financial-assistant-us-issuer-pilot');
 const visaPageCount = Math.min(archive.length, Math.max(12, Math.ceil((visaIndex + 1) / 12) * 12));
 
@@ -42,7 +42,7 @@ module.exports = async function verifyAlerts(browser, base, out, axePath) {
       assert.equal((await page.goto(new URL('/alerts/', base).href)).status(), 200);
       const cards = page.locator('#alerts-list > article[id]');
       const search = page.getByRole('searchbox', { name: 'Search all alerts' });
-      const recent = page.getByRole('checkbox', { name: 'Last 14 days' });
+      const recent = page.getByRole('checkbox', { name: 'Published in last 14 days' });
       const more = page.getByRole('button', { name: 'Show more alerts' });
       assert.equal(await cards.count(), 12);
       assert.equal(await recent.isChecked(), false);
@@ -53,7 +53,7 @@ module.exports = async function verifyAlerts(browser, base, out, axePath) {
       assert.match(await cards.allTextContents().then(text => text.join(' ')), /Jul 18, 2026/);
       await recent.check();
       assert.equal(await cards.count(), 0);
-      assert.match(await page.locator('#alert-count').innerText(), /^0 matching alerts in last 14 days/);
+      assert.match(await page.locator('#alert-count').innerText(), /^0 matching alerts published in last 14 days/);
       await recent.uncheck(); assert.ok(await cards.count() > 0);
       await search.fill('Jackson'); assert.equal(await cards.count(), 1);
       await page.screenshot({ path: path.join(out, `alerts-old-search-${width}.png`), fullPage: true });

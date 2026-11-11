@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T15:20:11-05:00",
+  "updatedAt": "2026-11-11T15:36:30+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -436,6 +436,28 @@
       "result": "Ordinary owner adoption is now demonstrated: the November 9 and November 10 CUAI Operating System reviews consumed the configured loop, kept the assessment owner, separated current exact evidence from historical evidence, and did not restart PR #279 or PR #281. PR #279 remains released and technically live on all four scoped surfaces. Its seven-day audience outcome is inconclusive because exact-current comparable metrics are unavailable; this is not evidence that the repair succeeded or failed for readership. The broader audience assessment remains open under the same owner and dedupe/improvement key.",
       "nextTrigger": "At the existing Friday November 13 ordinary review, reconcile implemented actions and early audience/engagement outcomes using a fresh authorized direct read or an exact-current-main verified artifact. Keep November 8–13 provisional, preserve internal-test/ingestion caveats, and return keep/revise/stop or another explicit evidence-backed inconclusive result without starting a new report, job or baseline.",
       "rollback": "Revert only the six-step analytics-loop addition if it causes verified friction or conflicting instructions. Preserve this ledger entry and its history, recording a reverted/stopped disposition with reason and evidence; retain all pre-existing source, privacy, permission and editorial gates."
+    },
+    {
+      "id": "alert-date-meaning-and-article-header-scope-2026-11-11",
+      "evidence": "Tom read the MEXC November 6 source date as the last CUAI publication although PR312 production was verified November 9. The date field was rendered without a role label and was also the homepage freshness input. Tom separately reported the card-dispute article title floating over its hero/navigation. Generic sticky header CSS introduced in b6f0c93 applies to nested article headers; the affected card-dispute markup was published in 119ec29. The November 7 private d1ca532 correction was never on current main, so its private acceptance did not establish a live fix.",
+      "sources": [
+        "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6750832840",
+        "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6778484294",
+        "https://creditunionainews.com/insight-credit-union-ai-card-dispute-evidence-clock.html"
+      ],
+      "proposedChange": "Label source/CUAI dates separately; bind MEXC to the original production READY instant and use verified CUAI publication chronology/freshness. Keep unknown history searchable without inventing posting time. Label the existing FIS signal date. Scope sticky chrome to .site-header; include all-content-header scrolling, hit targets and publication-clock boundary/ordering tests in the existing rendered gate.",
+      "expectedBenefit": "Readers can distinguish publication from source age and read articles without title overlays. No audience or performance gains measured.",
+      "risk": "Bounded shared CSS/Alert presentation repair. Preserve content, URLs, source dates, original history, cadence, quota, scoring and permissions. Shared selector requires full affected-header rendered coverage.",
+      "owner": "Existing CUAI site engineer for private correction; daily-publisher for final release; existing independent UI reviewer for acceptance",
+      "controllingPolicy": "tests/design/README.md; automation/scheduled-tasks/cuai-operating-system.md",
+      "validation": [
+        "Exact-base source investigation completed on 7893f89b4718863d2360821962ae1f484f704f24. Unit and actual rendered evidence retained in the version-bound private review receipt; final release/live verification remains separate.",
+        "Read existing production deployment dpl_CY1jytSuXLQnC1FyVA3eGksRqjYm: target production, READY, exact introducing commit, creditunionainews.com alias and no alias error. Combined with issue160 comment6750832840, this supports the original posting instant; creation time, later edit time and source date are not substituted. Revalidation includes known-publication/older-source ordering, unknown/day-only history, future/invalid instants, timezone offsets, DST and exact72-hour/14-day boundaries.",
+        "Actual rendering of4c493bd exposed two homepage contrast failures: nested .alert-date styling used gray on the dark active Alert. Scoped that descendant to the existing light metadata color and added fixed-clock active-homepage contrast checks, preventing the fallback state from hiding this defect. Prior failed evidence is retained; final exact-candidate results are separate."
+      ],
+      "status": "private-candidate-revalidation",
+      "result": "Independent review rejected cc642566 because it retained source-date sorting/expiry contrary to Tom’s posting-date direction. That candidate and receipt are preserved. Correction uses the exact original MEXC production deployment READY instant, 2026-11-09T20:35:32.856Z, for commit2c6d7cc9c99c987c1ed5ae7ba0a2dacbda29b422. Existing source date remains November6. Unknown historical posting dates do not qualify as fresh. Original November10 no-new-Alert outcome remains; the old source-clock homepage fallback is superseded by the authorized publication-clock behavior. Header repair and all prior history remain intact. No deployment, publication, scan or schedule change performed.",
+      "rollback": "Revert only these scoped display/selector changes if a verified regression appears. Preserve this evidence and all original dates; do not restore ambiguous date labels or broad sticky selectors as a substitute for a targeted correction."
     }
   ]
 }

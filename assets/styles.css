@@ -53,7 +53,7 @@ img {
   max-width: 880px;
 }
 
-header {
+.site-header {
   background: var(--white);
   box-shadow: 0 12px 30px rgba(11, 31, 59, 0.08);
   position: sticky;
@@ -1022,7 +1022,7 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
-  header {
+  .site-header {
     min-height: 56px;
   }
 
@@ -1722,6 +1722,7 @@ a:hover {
 
 .latest-alert-date,
 .latest-alert-summary,
+.latest-alert-shell .alert-date,
 .latest-alert-shell .alert-source,
 .latest-alert-shell .alert-source a {
   color: #dce4e9;
@@ -2635,3 +2636,6 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
 .cuai-house-campaign .cuai-campaign-email{color:var(--navy-deep)}.sponsorships-hero .sponsor-email{color:#fff}.sponsor-contact .sponsor-email{color:#874b28}
 .cuai-house-campaign a:focus-visible,.sponsor-email:focus-visible{outline:3px solid #167b88;outline-offset:4px}
 @media(max-width:700px){.cuai-house-campaign-grid{grid-template-columns:1fr;gap:24px}.cuai-house-commercial{border-left:0;border-top:1px solid #c5cdd3;padding:20px 0 0}.cuai-house-campaign{padding:28px 0}}
+
+/* Keep publication and source dates distinct, including narrow Alert cards. */
+.alert-dates { display: inline-flex; flex-wrap: wrap; column-gap: 1rem; row-gap: .25rem; }

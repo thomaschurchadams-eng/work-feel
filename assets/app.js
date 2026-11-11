@@ -108,7 +108,10 @@
       sourceName: 'Financial Crimes Enforcement Network',
       sourceUrl:
         'https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system',
-      date: 'Nov 6, 2026',
+      date: 'Nov 6, 2026', // Original source date, separate from CUAI publication.
+      publishedAt: '2026-11-09T20:35:32.856Z',
+      publicationDeployment: 'dpl_CY1jytSuXLQnC1FyVA3eGksRqjYm',
+      publicationEvidence: 'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6750832840',
       slug: 'fincen-mexc-global-transfer-prohibition'
     },
     {
@@ -1172,21 +1175,40 @@
   };
 
 
+  // Date-only sources use UTC midnight: no source publication time is inferred.
+  // Only an evidenced CUAI publication instant can qualify for freshness.
   const parseAlertDate = (entry) => {
-    const raw = entry?.date || entry?.published || entry?.timestamp || '';
-    if (!raw) return null;
+    const raw = entry?.date || entry?.timestamp || '';
+    if (typeof raw !== 'string' || !raw.trim()) return null;
+    const value = raw.trim();
+    const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(value);
+    const writtenDate = /^[A-Za-z]{3,9} \d{1,2}, \d{4}$/.test(value);
+    const parsed = new Date(dateOnly ? `${value}T00:00:00Z` : writtenDate ? `${value} 00:00:00 GMT` : value);
+    if (Number.isNaN(parsed.getTime())) return null;
+    if (dateOnly && parsed.toISOString().slice(0, 10) !== value) return null;
+    return parsed;
+  };
 
-    const normalized = typeof raw === 'string' ? raw.trim() : raw;
-    const parsed = new Date(normalized);
+  const getAlertPublication = (item, now = Date.now()) => {
+    if (typeof item.publicationEvidence !== 'string' || !/^https:\/\//.test(item.publicationEvidence)) return null;
+    const value = item.publishedAt;
+    if (typeof value !== 'string') return null;
+    const dayOnly = /^\d{4}-\d{2}-\d{2}$/.test(value);
+    const instant = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?(?:Z|[+-]\d{2}:\d{2})$/.test(value);
+    if (!dayOnly && !instant) return null;
+    // Reject impossible calendar dates before Date can silently normalize them.
+    if (!parseAlertDate({ date: value.slice(0, 10) })) return null;
+    const date = parseAlertDate({ date: value });
+    if (!date || date.getTime() > now) return null;
+    return { date, precision: instant ? 'instant' : 'day' };
+  };
 
-    if (!Number.isNaN(parsed.getTime())) return parsed;
-
-    if (typeof normalized === 'string') {
-      const fallback = new Date(normalized.replace(/-/g, '/'));
-      if (!Number.isNaN(fallback.getTime())) return fallback;
-    }
-
-    return null;
+  const renderAlertDates = (item) => {
+    const source = parseAlertDate(item);
+    const published = getAlertPublication(item);
+    const format = (date, timeZone) => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone });
+    const posted = published ? `<span class="alert-date">CUAI published <time datetime="${published.precision === 'instant' ? published.date.toISOString() : item.publishedAt}">${format(published.date, published.precision === 'instant' ? 'America/New_York' : 'UTC')}</time></span>` : '<span class="alert-date">CUAI publication date not verified</span>';
+    return `<span class="alert-dates">${posted}${source ? `<span class="alert-date">Source date <time datetime="${source.toISOString().slice(0, 10)}">${format(source, 'UTC')}</time></span>` : ''}</span>`;
   };
 
   const getFreshHomepageWatchItems = () => {
@@ -1202,14 +1224,16 @@
   };
 
 
-  const prepareAlerts = (alerts, cutoff = null) => {
+  const prepareAlerts = (alerts, cutoff = null, now = Date.now()) => {
     const seenUrls = new Set();
     const seenHeadlines = new Set();
 
     return alerts
-      .map((alert) => ({ ...alert, parsedDate: parseAlertDate(alert) }))
-      .filter(({ parsedDate }) => parsedDate && (!cutoff || parsedDate.getTime() >= cutoff.getTime()))
-      .sort((a, b) => b.parsedDate - a.parsedDate)
+      .map((alert) => ({ ...alert, sourceDate: parseAlertDate(alert), publication: getAlertPublication(alert, now) }))
+      .filter(({ sourceDate, publication }) => (sourceDate || publication) && (!cutoff || (publication?.precision === 'instant' && publication.date.getTime() >= cutoff.getTime())))
+      // Verified publication dates first. Unknown history stays searchable below,
+      // ordered by its labeled source date, without inventing a posting date.
+      .sort((a, b) => a.publication && b.publication ? b.publication.date - a.publication.date : a.publication ? -1 : b.publication ? 1 : b.sourceDate - a.sourceDate)
       .filter((alert) => {
         const urlKey = alert.sourceUrl?.trim().toLowerCase();
         const headlineKey = alert.headline?.trim().toLowerCase();
@@ -1221,13 +1245,13 @@
         if (headlineKey) seenHeadlines.add(headlineKey);
         return true;
       })
-      .map(({ parsedDate, ...rest }) => rest);
+      .map(({ sourceDate, publication, ...rest }) => rest);
   };
 
   const getRecentAlerts = (alerts, days = 14) => {
-    const cutoff = new Date();
-    cutoff.setDate(cutoff.getDate() - days);
-    return prepareAlerts(alerts, cutoff);
+    const now = Date.now();
+    const cutoff = new Date(now - days * 24 * 60 * 60 * 1000);
+    return prepareAlerts(alerts, cutoff, now);
   };
 
   // The archive is searchable in full; ticker and homepage retain their freshness windows.
@@ -1300,7 +1324,7 @@
       <div class="latest-alert-header">
         <div>
           <p class="eyebrow">Latest AI Newsroom Alert</p>
-          <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span><span class="latest-alert-date">${item.date}</span></div>
+          <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span><span class="latest-alert-date">${renderAlertDates(item)}</span></div>
         </div>
         <a class="btn btn-outline" href="/alerts/">View all Alerts</a>
       </div>
@@ -1569,16 +1593,16 @@
     if (alertCount) {
       const noun = filtered.length === 1 ? 'alert' : 'alerts';
       const matches = query ? `${filtered.length} matching ${noun}` : `${filtered.length} ${noun}`;
-      const total = !query && !recentOnly ? `${matches} in archive` : `${matches}${recentOnly ? ' in last 14 days' : ''} · ${archiveAlerts.length} in archive`;
+      const total = !query && !recentOnly ? `${matches} in archive` : `${matches}${recentOnly ? ' published in last 14 days' : ''} · ${archiveAlerts.length} in archive`;
       alertCount.textContent = `${total} · Showing ${visible.length}`;
     }
     if (!filtered.length) {
-      alertsList.innerHTML = `<article class="card alert-card" aria-live="polite"><div class="alert-content"><h3 class="card-title">No matching alerts.</h3><p>${recentOnly ? 'Try turning off Last 14 days to search the full archive, or use a broader topic or vendor name.' : 'Try a broader topic or vendor name.'}</p></div></article>`;
+      alertsList.innerHTML = `<article class="card alert-card" aria-live="polite"><div class="alert-content"><h3 class="card-title">No matching alerts.</h3><p>${recentOnly ? 'Try turning off Published in last 14 days to search the full archive, or use a broader topic or vendor name.' : 'Try a broader topic or vendor name.'}</p></div></article>`;
     } else {
       alertsList.innerHTML = visible.map((item) => `
         <article class="card alert-card" id="${item.slug}">
           <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span></div>
-          <div class="alert-content"><h3 class="card-title">${item.headline}</h3><p class="alert-summary">${item.summary}</p><p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p><p class="alert-meta"><span class="alert-date">${item.date || ''}</span> · <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p></div>
+          <div class="alert-content"><h3 class="card-title">${item.headline}</h3><p class="alert-summary">${item.summary}</p><p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p><p class="alert-meta">${renderAlertDates(item)} <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p></div>
         </article>`).join('');
     }
     if (alertsMore) alertsMore.hidden = visible.length >= filtered.length;
