@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-11",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -22,7 +22,17 @@
       "marketing-growth",
       "lending-collections"
     ],
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "classification": "News",
+        "title": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
+        "url": "https://creditunionainews.com/news/safe-becu-member-support-final-approval.html",
+        "primaryFunctionalAudience": "Credit-union boards, merger-integration teams and member-service leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "not-created-standard-ineligible"
+      }
+    ],
     "candidateEvaluations": [
       {
         "title": "Claude Sheets beta brings model edits into shared spreadsheets",
@@ -39,7 +49,7 @@
         "sourceUrl": "https://www.becuandsafe.org/",
         "sourceDate": "2026-11-10",
         "score": 75.2,
-        "status": "selected-pending-validation",
+        "status": "selected-published",
         "rationale": "Joint November 10 update distinguishes member support from pending final DFPI approval; no vote count or closing proof."
       },
       {
@@ -134,22 +144,76 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-11T07:10:31-05:00",
+    "updatedAt": "2026-11-11T12:15:29.150Z",
     "socialDecision": "not-created-standard-ineligible",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Verify slot 1 live before preparing slot 2.",
+    "nextAction": "Prepare and independently verify slot 2.",
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-11",
-        "status": "prepared",
+        "status": "live-verified",
         "accountableOwner": "daily-publisher",
         "candidateTitle": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
-        "liveProof": "none; exact-head acceptance and production verification pending",
-        "nextReviewAt": "2026-11-11T07:42:00-05:00",
-        "nextAction": "Retain the exact validation checkpoint; review the matching artifact before release."
+        "liveProof": "READY exact production and matching live article, hero, homepage, News and sitemaps.",
+        "nextReviewAt": "2026-11-11T08:15:00-05:00",
+        "nextAction": "Keep slot 1 live and proceed sequentially with independently qualified slot 2.",
+        "url": "https://creditunionainews.com/news/safe-becu-member-support-final-approval.html",
+        "verifiedAt": "2026-11-11T12:15:29.150Z",
+        "productionCommit": "040e54901be0677622f009668aafc21ae5317ed6",
+        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6795454593",
+        "evidence": {
+          "pending": {
+            "prNumber": 315,
+            "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
+            "run": 43018180201,
+            "job": 130514419009,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-11T07:42:00-05:00"
+          },
+          "terminalValidation": {
+            "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
+            "run": 43018180201,
+            "job": 130514419009,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-11T12:14:28.207Z"
+          },
+          "terminalAcceptance": {
+            "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
+            "run": 43018180201,
+            "job": 130514419009,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-11T12:14:57.123Z",
+            "artifactId": 13853159620,
+            "artifactDigest": "sha256:955d587a7393973b6ea3c54999bfa1563ea058cd142e539be5329ae1c7551841"
+          },
+          "productionDeploymentId": "dpl_HWrD4aPJkbsCVffn1dTNcbkUyLfS"
+        }
       }
-    ]
+    ],
+    "validation": {
+      "status": "production-verified",
+      "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
+      "run": 43018180201,
+      "job": 130514419009,
+      "attempt": 1,
+      "artifactId": 13853159620,
+      "visualReviewedAt": "2026-11-11T12:14:57.123Z",
+      "productionCommit": "040e54901be0677622f009668aafc21ae5317ed6",
+      "deploymentId": "dpl_HWrD4aPJkbsCVffn1dTNcbkUyLfS",
+      "verifiedAt": "2026-11-11T12:15:29.150Z"
+    },
+    "socialDistribution": {
+      "status": "not-created",
+      "articleDecision": "not-created-standard-ineligible",
+      "recoveredMissedHigh": false,
+      "houseCampaign": "prepared only; complete current future provider inventory unavailable",
+      "nextReviewAt": "2026-11-12T07:00:00-05:00"
+    }
   },
   "history": [
     {
