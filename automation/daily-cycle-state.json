@@ -6,230 +6,150 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-10",
-    "fullArticleCount": 1,
+    "date": "2026-11-11",
+    "fullArticleCount": 0,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "risk-compliance",
-      "board-strategy",
       "finance-treasury",
+      "board-strategy",
       "payments-deposits",
-      "lending-collections",
       "it-data-cybersecurity",
+      "risk-compliance",
       "hr-training",
-      "operations"
+      "operations",
+      "vendor-management",
+      "marketing-growth",
+      "lending-collections"
     ],
-    "publications": [
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
-        "url": "https://creditunionainews.com/news/allegacy-kobalt-risk-compliance-migration.html",
-        "primaryFunctionalAudience": "Credit-union risk, compliance, vendor-management and internal-audit leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
-      }
-    ],
+    "publications": [],
     "candidateEvaluations": [
       {
-        "title": "Allegacy picks Kobalt for enterprise risk and compliance migration",
-        "beat": "risk-compliance",
-        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398255/0/en/allegacy-financial-selects-kobalt-labs-to-replace-legacy-systems-and-unify-tprm-erm-and-compliance-on-an-ai-native-platform.html",
-        "sourceDate": "2026-11-09",
-        "score": 74.4,
-        "status": "selected-published",
-        "rationale": "Cross-function system of record, agent findings still reviewed by staff; deployment metrics absent."
+        "title": "Claude Sheets beta brings model edits into shared spreadsheets",
+        "beat": "finance-treasury",
+        "sourceUrl": "https://claude.com/resources/articles/sheets-whiteboards-data",
+        "sourceDate": "2026-11-10",
+        "score": 77.8,
+        "status": "qualified-for-sequential-review",
+        "rationale": "Distinct credit-union finance workflow; real beta and Enterprise admin setting, not verified credit-union adoption."
+      },
+      {
+        "title": "SAFE reports member support for BECU combination",
+        "beat": "board-strategy",
+        "sourceUrl": "https://www.becuandsafe.org/",
+        "sourceDate": "2026-11-10",
+        "score": 75.2,
+        "status": "selected-pending-validation",
+        "rationale": "Joint November 10 update distinguishes member support from pending final DFPI approval; no vote count or closing proof."
       },
       {
         "title": "TDECU and Smart Financial announce completed merger",
         "beat": "board-strategy",
         "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398452/0/en/tdecu-and-smart-financial-credit-union-complete-merger-to-build-a-stronger-organization.html",
         "sourceDate": "2026-11-09",
-        "score": 71.9,
+        "score": 71.1,
         "status": "not-selected",
-        "rationale": "Credible, but recent acquisition integration coverage; no exact systems cutover disclosed."
+        "rationale": "Credible completed combination; defer in favor of fresher distinct approval-stage reporting and portfolio breadth."
       },
       {
-        "title": "Ohio credit union merger distribution",
-        "beat": "finance-treasury",
-        "sourceUrl": "https://www.cutimes.com/2026/11/09/members-receive-portion-of-ohio-credit-unions-net-worth-before-merger-closes/",
-        "sourceDate": "2026-11-09",
-        "score": 68.2,
-        "status": "not-selected",
-        "rationale": "Full particulars not accessible from report; primary identity and terms unverified."
-      },
-      {
-        "title": "FinCEN MEXC Global order",
+        "title": "Yolo Federal adds Aries for card fraud",
         "beat": "payments-deposits",
-        "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
-        "sourceDate": "2026-11-06",
-        "score": 67.7,
+        "sourceUrl": "https://www.cuinsight.com/press-release/yolo-federal-credit-union-takes-proactive-approach-to-card-fraud-prevention-through-partnership-with-aries-fraud-solutions/",
+        "sourceDate": "2026-11-10",
+        "score": 69.6,
         "status": "not-selected",
-        "rationale": "Already covered November 9 Alert; no materially different angle."
+        "rationale": "Primary release details not retrievable; outcomes and operating scope unverified."
       },
       {
-        "title": "Nacha expands approved rules",
-        "beat": "payments-deposits",
-        "sourceUrl": "https://www.nacha.org/news/three-new-nacha-rules-approved",
-        "sourceDate": "2026-08",
-        "score": 61.8,
-        "status": "not-selected",
-        "rationale": "Useful upcoming operations milestone, earlier rule approval not new."
-      },
-      {
-        "title": "NCUA two final rules and proposed interim rule",
-        "beat": "risk-compliance",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/ncua-issues-two-final-rules-proposes-interim-final-rule",
-        "sourceDate": "2026-11-04",
-        "score": 59.4,
-        "status": "not-selected",
-        "rationale": "Earlier rule release, related board-meeting coverage; no stronger separate trigger established."
-      },
-      {
-        "title": "FHA alternative credit score implementation guide",
-        "beat": "lending-collections",
-        "sourceUrl": "https://www.hud.gov/program_offices/housing/sfh/FHA_info_messages",
-        "sourceDate": "2026-10-08",
-        "score": 58.6,
-        "status": "not-selected",
-        "rationale": "No fresh event in current window."
-      },
-      {
-        "title": "Diversified Members selects Scienaptic fraud origination screening",
+        "title": "ORNL member security update",
         "beat": "it-data-cybersecurity",
-        "sourceUrl": "https://www.scienaptic.ai/news/diversified-members-credit-union-selects-scienaptic-ai-to-strengthen-fraud-detection",
-        "sourceDate": "2026-10-26",
-        "score": 57,
+        "sourceUrl": "https://ornlfcu.com/learn/news/detail/2026/11/10/member-security-update",
+        "sourceDate": "2026-11-10",
+        "score": 68.7,
         "status": "not-selected",
-        "rationale": "Older vendor selection, no new deployment milestone; no private candidate reuse."
+        "rationale": "Source body inaccessible; headline alone does not establish an incident or operating change."
       },
       {
-        "title": "Anthropic economic modeling announcement",
+        "title": "FinCEN MEXC transfer order Federal Register publication",
+        "beat": "risk-compliance",
+        "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+        "sourceDate": "2026-11-10",
+        "score": 68.4,
+        "status": "not-selected",
+        "rationale": "Already covered by Nov. 9 Alert; the expected publication is not a distinct second story."
+      },
+      {
+        "title": "Anthropic frontier-engineer training initiative",
         "beat": "hr-training",
-        "sourceUrl": "https://www.anthropic.com/news",
-        "sourceDate": "2026-11-09",
-        "score": 55.5,
+        "sourceUrl": "https://www.anthropic.com/news/announcements",
+        "sourceDate": "2026-11-10",
+        "score": 67.6,
         "status": "not-selected",
-        "rationale": "Generic modeled scenarios, no institution-specific operating evidence."
+        "rationale": "Vendor program, not a named CU deployment or a proven workforce outcome."
       },
       {
-        "title": "Agency financial data standards final rule",
+        "title": "Anthropic Claude Meetings demonstration",
         "beat": "operations",
-        "sourceUrl": "https://www.fhfa.gov/regulation/federal-register/final-rule/financial-data-transparency-act-joint-data-standards-final-rule",
-        "sourceDate": "2026-10-01",
-        "score": 53.9,
+        "sourceUrl": "https://www.anthropic.com/events/the-briefing-work-at-the-frontier-ls",
+        "sourceDate": "2026-11-10",
+        "score": 63.6,
         "status": "not-selected",
-        "rationale": "Older and nearby reporting/data-standards coverage; no new deadline milestone."
+        "rationale": "Product event has limited availability detail; prefer documented Sheets beta and avoid double coverage of the launch."
       },
       {
-        "title": "CD pricing comparison",
-        "beat": "finance-treasury",
-        "sourceUrl": "https://fortune.com/article/cd-rates-11-9-26/",
-        "sourceDate": "2026-11-09",
-        "score": 48.1,
+        "title": "TDECU insurance operations acquired by Confie",
+        "beat": "vendor-management",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
+        "sourceDate": "2026-11-05",
+        "score": 62.5,
         "status": "not-selected",
-        "rationale": "Retail snapshots, no material CU development."
+        "rationale": "Older transaction, narrow scope; no newer transition detail."
       },
       {
-        "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
+        "title": "Raiz awards local education grants",
+        "beat": "marketing-growth",
+        "sourceUrl": "https://www.cuinsight.com/press-releases/page/2/",
+        "sourceDate": "2026-11-10",
+        "score": 55.4,
+        "status": "not-selected",
+        "rationale": "Local awards, no scalable operating development."
+      },
+      {
+        "title": "NCUA 2027–2028 budget hearing",
+        "beat": "risk-compliance",
+        "sourceUrl": "https://ncua.gov/news/latest-news",
+        "sourceDate": "2026-10-27",
+        "score": 52.6,
+        "status": "not-selected",
+        "rationale": "Existing coverage; no fresh budget decision."
+      },
+      {
+        "title": "Rally CU modern lending webinar",
         "beat": "lending-collections",
-        "sourceUrl": "https://www.scienaptic.ai/news",
-        "sourceDate": "2026-11-02",
-        "score": 46.9,
+        "sourceUrl": "https://www.prnewswire.com/news-releases/alkami-to-host-webinar-with-rally-credit-union-and-cornerstone-advisors-on-accelerating-loan-growth-through-modern-lending-experiences-302929298.html",
+        "sourceDate": "2026-11-05",
+        "score": 52,
         "status": "not-selected",
-        "rationale": "Already covered."
+        "rationale": "Event promotion; not a launch or evidence of a measured outcome."
       }
     ],
-    "status": "article-and-alert-cycle-complete",
-    "updatedAt": "2026-11-10T20:20:11Z",
+    "status": "in-progress",
+    "updatedAt": "2026-11-11T07:10:31-05:00",
     "socialDecision": "not-created-standard-ineligible",
     "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Preserve the verified Allegacy article; retain the deceased-member servicing coverage lead for stronger evidence; no Alert or homepage-watch item qualified.",
+    "nextAction": "Verify slot 1 live before preparing slot 2.",
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-10",
-        "status": "live-verified",
+        "plannedDate": "2026-11-11",
+        "status": "prepared",
         "accountableOwner": "daily-publisher",
-        "candidateTitle": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
-        "liveProof": "Exact READY production deployment and live article, artwork, homepage, News index and sitemaps verified.",
-        "nextReviewAt": "2026-11-11T07:00:00-05:00",
-        "nextAction": "Do not republish; preserve the exact validation and production receipts.",
-        "url": "https://creditunionainews.com/news/allegacy-kobalt-risk-compliance-migration.html",
-        "verifiedAt": "2026-11-10T12:16:27Z",
-        "productionCommit": "7ab4c73a58b5c965bc559e01bab5acfe6e692ef8",
-        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6766942735",
-        "evidence": {
-          "pending": {
-            "prNumber": 313,
-            "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
-            "run": 42813406645,
-            "job": 129820286964,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-10T07:22:00-05:00"
-          },
-          "terminalValidation": {
-            "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
-            "run": 42813406645,
-            "job": 129820286964,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-10T12:12:42.363Z"
-          },
-          "terminalAcceptance": {
-            "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
-            "run": 42813406645,
-            "job": 129820286964,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-10T12:15:03.575Z",
-            "artifactId": 13763247335,
-            "artifactDigest": "sha256:43b210cafc179c1891e3f5d19cf048e0c77b840ba294d96fb55de00c3b84a9f7"
-          },
-          "productionDeploymentId": "dpl_AL3CuWukDFjgdihuiXjYswvsuofG"
-        }
+        "candidateTitle": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
+        "liveProof": "none; exact-head acceptance and production verification pending",
+        "nextReviewAt": "2026-11-11T07:42:00-05:00",
+        "nextAction": "Retain the exact validation checkpoint; review the matching artifact before release."
       }
-    ],
-    "validation": {
-      "status": "production-verified",
-      "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
-      "run": 42813406645,
-      "job": 129820286964,
-      "attempt": 1,
-      "artifactId": 13763247335,
-      "visualReviewedAt": "2026-11-10T12:15:03.575Z",
-      "productionCommit": "7ab4c73a58b5c965bc559e01bab5acfe6e692ef8",
-      "deploymentId": "dpl_AL3CuWukDFjgdihuiXjYswvsuofG",
-      "verifiedAt": "2026-11-10T12:16:27Z"
-    },
-    "socialDistribution": {
-      "status": "not-created",
-      "articleDecision": "not-created-standard-ineligible",
-      "recoveredMissedHigh": false,
-      "houseCampaign": "prepared-selection only; complete current provider reservation inventory unavailable, so no reservation was made",
-      "nextReviewAt": "2026-11-11T07:00:00-05:00"
-    },
-    "alertCycle": {
-      "status": "no-qualified-alert",
-      "reviewedAt": "2026-11-10T15:20:11-05:00",
-      "lastQualifiedAlert": "fincen-mexc-global-transfer-prohibition",
-      "evidence": "Fresh official review found no post-November 9 regulatory, enforcement or cybersecurity development with a distinct urgent credit-union action. FinCEN's November 9 scam-center Exchange readout reiterated vigilance and prior guidance without a new rule, deadline or control requirement. NIST's November 9 adversarial-machine-learning taxonomy is a voluntary cross-sector draft, not a credit-union directive.",
-      "duplicateCheck": "The November 10 Federal Register publication of the MEXC Global order is already represented by the November 9 Alert; no duplicate was created.",
-      "homepageFreshness": "The November 6 MEXC Alert has exceeded the 72-hour homepage window. Current homepage cards already represent the timely recent portfolio, so homepageWatchState remains empty and the approved evergreen fallback is used.",
-      "sourcesChecked": [
-        "NCUA newsroom and press releases",
-        "Federal Reserve releases",
-        "OCC 2026 releases and enforcement actions",
-        "CFPB newsroom",
-        "FinCEN newsroom and Federal Register notices",
-        "Federal Register current/public-inspection notices",
-        "NIST CSRC updates",
-        "CISA and FTC current alerts"
-      ]
-    }
+    ]
   },
   "history": [
     {
@@ -8817,6 +8737,232 @@
         "effectiveDateRule": "30 days after Federal Register publication",
         "duplicateCheck": "No existing MEXC Global coverage found in the current repository; the same-day Travel Rule withdrawal is already covered by the live article and was not duplicated as an Alert.",
         "homepageFreshness": "Homepage watch reviewed; no separate 72-hour homepage item was needed because the qualified Alert is published on the Alerts surface and the existing Nov. 5 watch had aged out."
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "fullArticleCount": 1,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "risk-compliance",
+        "board-strategy",
+        "finance-treasury",
+        "payments-deposits",
+        "lending-collections",
+        "it-data-cybersecurity",
+        "hr-training",
+        "operations"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
+          "url": "https://creditunionainews.com/news/allegacy-kobalt-risk-compliance-migration.html",
+          "primaryFunctionalAudience": "Credit-union risk, compliance, vendor-management and internal-audit leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        }
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "Allegacy picks Kobalt for enterprise risk and compliance migration",
+          "beat": "risk-compliance",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398255/0/en/allegacy-financial-selects-kobalt-labs-to-replace-legacy-systems-and-unify-tprm-erm-and-compliance-on-an-ai-native-platform.html",
+          "sourceDate": "2026-11-09",
+          "score": 74.4,
+          "status": "selected-published",
+          "rationale": "Cross-function system of record, agent findings still reviewed by staff; deployment metrics absent."
+        },
+        {
+          "title": "TDECU and Smart Financial announce completed merger",
+          "beat": "board-strategy",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398452/0/en/tdecu-and-smart-financial-credit-union-complete-merger-to-build-a-stronger-organization.html",
+          "sourceDate": "2026-11-09",
+          "score": 71.9,
+          "status": "not-selected",
+          "rationale": "Credible, but recent acquisition integration coverage; no exact systems cutover disclosed."
+        },
+        {
+          "title": "Ohio credit union merger distribution",
+          "beat": "finance-treasury",
+          "sourceUrl": "https://www.cutimes.com/2026/11/09/members-receive-portion-of-ohio-credit-unions-net-worth-before-merger-closes/",
+          "sourceDate": "2026-11-09",
+          "score": 68.2,
+          "status": "not-selected",
+          "rationale": "Full particulars not accessible from report; primary identity and terms unverified."
+        },
+        {
+          "title": "FinCEN MEXC Global order",
+          "beat": "payments-deposits",
+          "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+          "sourceDate": "2026-11-06",
+          "score": 67.7,
+          "status": "not-selected",
+          "rationale": "Already covered November 9 Alert; no materially different angle."
+        },
+        {
+          "title": "Nacha expands approved rules",
+          "beat": "payments-deposits",
+          "sourceUrl": "https://www.nacha.org/news/three-new-nacha-rules-approved",
+          "sourceDate": "2026-08",
+          "score": 61.8,
+          "status": "not-selected",
+          "rationale": "Useful upcoming operations milestone, earlier rule approval not new."
+        },
+        {
+          "title": "NCUA two final rules and proposed interim rule",
+          "beat": "risk-compliance",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/ncua-issues-two-final-rules-proposes-interim-final-rule",
+          "sourceDate": "2026-11-04",
+          "score": 59.4,
+          "status": "not-selected",
+          "rationale": "Earlier rule release, related board-meeting coverage; no stronger separate trigger established."
+        },
+        {
+          "title": "FHA alternative credit score implementation guide",
+          "beat": "lending-collections",
+          "sourceUrl": "https://www.hud.gov/program_offices/housing/sfh/FHA_info_messages",
+          "sourceDate": "2026-10-08",
+          "score": 58.6,
+          "status": "not-selected",
+          "rationale": "No fresh event in current window."
+        },
+        {
+          "title": "Diversified Members selects Scienaptic fraud origination screening",
+          "beat": "it-data-cybersecurity",
+          "sourceUrl": "https://www.scienaptic.ai/news/diversified-members-credit-union-selects-scienaptic-ai-to-strengthen-fraud-detection",
+          "sourceDate": "2026-10-26",
+          "score": 57,
+          "status": "not-selected",
+          "rationale": "Older vendor selection, no new deployment milestone; no private candidate reuse."
+        },
+        {
+          "title": "Anthropic economic modeling announcement",
+          "beat": "hr-training",
+          "sourceUrl": "https://www.anthropic.com/news",
+          "sourceDate": "2026-11-09",
+          "score": 55.5,
+          "status": "not-selected",
+          "rationale": "Generic modeled scenarios, no institution-specific operating evidence."
+        },
+        {
+          "title": "Agency financial data standards final rule",
+          "beat": "operations",
+          "sourceUrl": "https://www.fhfa.gov/regulation/federal-register/final-rule/financial-data-transparency-act-joint-data-standards-final-rule",
+          "sourceDate": "2026-10-01",
+          "score": 53.9,
+          "status": "not-selected",
+          "rationale": "Older and nearby reporting/data-standards coverage; no new deadline milestone."
+        },
+        {
+          "title": "CD pricing comparison",
+          "beat": "finance-treasury",
+          "sourceUrl": "https://fortune.com/article/cd-rates-11-9-26/",
+          "sourceDate": "2026-11-09",
+          "score": 48.1,
+          "status": "not-selected",
+          "rationale": "Retail snapshots, no material CU development."
+        },
+        {
+          "title": "Credit Union of Colorado Moves Auto Pricing Beyond Rate Tiers",
+          "beat": "lending-collections",
+          "sourceUrl": "https://www.scienaptic.ai/news",
+          "sourceDate": "2026-11-02",
+          "score": 46.9,
+          "status": "not-selected",
+          "rationale": "Already covered."
+        }
+      ],
+      "status": "article-and-alert-cycle-complete",
+      "updatedAt": "2026-11-10T20:20:11Z",
+      "socialDecision": "not-created-standard-ineligible",
+      "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+      "nextAction": "Preserve the verified Allegacy article; retain the deceased-member servicing coverage lead for stronger evidence; no Alert or homepage-watch item qualified.",
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-10",
+          "status": "live-verified",
+          "accountableOwner": "daily-publisher",
+          "candidateTitle": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
+          "liveProof": "Exact READY production deployment and live article, artwork, homepage, News index and sitemaps verified.",
+          "nextReviewAt": "2026-11-11T07:00:00-05:00",
+          "nextAction": "Do not republish; preserve the exact validation and production receipts.",
+          "url": "https://creditunionainews.com/news/allegacy-kobalt-risk-compliance-migration.html",
+          "verifiedAt": "2026-11-10T12:16:27Z",
+          "productionCommit": "7ab4c73a58b5c965bc559e01bab5acfe6e692ef8",
+          "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6766942735",
+          "evidence": {
+            "pending": {
+              "prNumber": 313,
+              "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+              "run": 42813406645,
+              "job": 129820286964,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-10T07:22:00-05:00"
+            },
+            "terminalValidation": {
+              "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+              "run": 42813406645,
+              "job": 129820286964,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-10T12:12:42.363Z"
+            },
+            "terminalAcceptance": {
+              "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+              "run": 42813406645,
+              "job": 129820286964,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-10T12:15:03.575Z",
+              "artifactId": 13763247335,
+              "artifactDigest": "sha256:43b210cafc179c1891e3f5d19cf048e0c77b840ba294d96fb55de00c3b84a9f7"
+            },
+            "productionDeploymentId": "dpl_AL3CuWukDFjgdihuiXjYswvsuofG"
+          }
+        }
+      ],
+      "validation": {
+        "status": "production-verified",
+        "head": "4e973f783a5d10b2e2457837a01b2bda6a9805e0",
+        "run": 42813406645,
+        "job": 129820286964,
+        "attempt": 1,
+        "artifactId": 13763247335,
+        "visualReviewedAt": "2026-11-10T12:15:03.575Z",
+        "productionCommit": "7ab4c73a58b5c965bc559e01bab5acfe6e692ef8",
+        "deploymentId": "dpl_AL3CuWukDFjgdihuiXjYswvsuofG",
+        "verifiedAt": "2026-11-10T12:16:27Z"
+      },
+      "socialDistribution": {
+        "status": "not-created",
+        "articleDecision": "not-created-standard-ineligible",
+        "recoveredMissedHigh": false,
+        "houseCampaign": "prepared-selection only; complete current provider reservation inventory unavailable, so no reservation was made",
+        "nextReviewAt": "2026-11-11T07:00:00-05:00"
+      },
+      "alertCycle": {
+        "status": "no-qualified-alert",
+        "reviewedAt": "2026-11-10T15:20:11-05:00",
+        "lastQualifiedAlert": "fincen-mexc-global-transfer-prohibition",
+        "evidence": "Fresh official review found no post-November 9 regulatory, enforcement or cybersecurity development with a distinct urgent credit-union action. FinCEN's November 9 scam-center Exchange readout reiterated vigilance and prior guidance without a new rule, deadline or control requirement. NIST's November 9 adversarial-machine-learning taxonomy is a voluntary cross-sector draft, not a credit-union directive.",
+        "duplicateCheck": "The November 10 Federal Register publication of the MEXC Global order is already represented by the November 9 Alert; no duplicate was created.",
+        "homepageFreshness": "The November 6 MEXC Alert has exceeded the 72-hour homepage window. Current homepage cards already represent the timely recent portfolio, so homepageWatchState remains empty and the approved evergreen fallback is used.",
+        "sourcesChecked": [
+          "NCUA newsroom and press releases",
+          "Federal Reserve releases",
+          "OCC 2026 releases and enforcement actions",
+          "CFPB newsroom",
+          "FinCEN newsroom and Federal Register notices",
+          "Federal Register current/public-inspection notices",
+          "NIST CSRC updates",
+          "CISA and FTC current alerts"
+        ]
       }
     }
   ],

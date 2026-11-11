@@ -3,6 +3,27 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "safe-becu-member-support-final-approval",
+      "articleUrl": "/news/safe-becu-member-support-final-approval.html",
+      "imagePath": "/assets/safe-becu-member-support-final-approval.jpg",
+      "publishedAt": "2026-11-11T07:10:31-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "soft-editorial-illustration",
+      "subject": "architecture-and-infrastructure",
+      "composition": "split-comparison",
+      "perspective": "long-lens",
+      "palette": "terracotta-sky",
+      "lighting": "natural-window-light",
+      "texture": "fabric-and-wood",
+      "scene": "Two terracotta bridge sections stop just short of joining over a wooded waterway",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "c99f932bdfc2f28745c06b8e6bd19cfd160c92bf57c99b4187e25fa7de26fa5b"
+    },
+    {
       "id": "allegacy-kobalt-risk-compliance-migration",
       "articleUrl": "/news/allegacy-kobalt-risk-compliance-migration.html",
       "imagePath": "/assets/allegacy-kobalt-risk-compliance-migration.jpg",
