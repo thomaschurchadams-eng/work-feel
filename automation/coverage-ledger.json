@@ -3,6 +3,37 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "safe-becu-member-support-final-approval",
+      "title": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
+      "url": "/news/safe-becu-member-support-final-approval.html",
+      "publishedAt": "2026-11-11T07:10:31-05:00",
+      "section": "news",
+      "beat": "credit-union-merger-member-communications",
+      "functions": [
+        "board-strategy",
+        "operations",
+        "member-service"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union boards, merger-integration teams and member-service leaders",
+      "maturity": "emerging",
+      "promotionPriority": "Standard",
+      "socialDecision": "not-created-standard-ineligible",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/gecu-bank-of-the-southwest-integration.html",
+        "/news/msufcu-ufcu-13-5-billion-combination.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.97,
+      "sourceLimit": "Joint update reports strong support but publishes no vote totals, final approval, or completion proof.",
+      "score": 75.2
+    },
+    {
       "id": "allegacy-kobalt-risk-compliance-migration",
       "title": "Allegacy Picks One AI Platform for Vendor Risk and Compliance",
       "url": "/news/allegacy-kobalt-risk-compliance-migration.html",
