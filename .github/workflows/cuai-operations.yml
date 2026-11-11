@@ -42,6 +42,8 @@ jobs:
   design-checks:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-24.04
+    container:
+      image: mcr.microsoft.com/playwright:v1.57.0-noble@sha256:3bed4b1a12f2338642f3d8cba28e291deef3c66bd4a964bbeb3e57bbff511dbd
     timeout-minutes: 12
     permissions:
       contents: read
@@ -68,7 +70,7 @@ jobs:
       - name: Install pinned free test dependencies
         run: npm ci
       - name: Install test browser
-        run: npx playwright-core install --with-deps chromium
+        run: npx playwright-core install chromium
       - name: Prove actual browser launch before acceptance
         run: npm run check:browser
       - name: Check canonical shell and existing regressions
