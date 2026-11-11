@@ -62,3 +62,32 @@ Product-specific private readiness engines remain with their product candidates;
 ## Approved mobile and measurement journeys
 
 The normal rendered command also runs `verify-analytics-journeys.cjs` for the PSECU/Plaid mobile openings, keyboard pilot-question links, genuine related destinations and the Briefings email-request boundary. The existing Alerts harness retains full-archive search, empty/recovery, recent filter, keyboard, pagination and accessibility checks. All QA traffic is isolated; source preflights, browser tests and caller-supplied aggregate exclusions do not prove hosted GA delivery, genuine subscription confirmation, CAI fulfillment or external customer demand. Keep the actual independent version-bound walkthrough with this change's existing review receipts.
+
+
+## Source dates and article scroll regression
+
+The ordinary rendered gate runs `verify-date-header.cjs`. It discovers every
+public News/Insight containing a content header, scrolls past each header at
+390/1440px, verifies that only site navigation stays sticky, and checks that a
+prose link can receive the pointer. The card-dispute page also exercises its
+Back to Insights link with pointer, keyboard and browser Back. Inspect actual
+scrolled and opening screenshots; a top-of-page screenshot cannot detect this
+failure. Shared semantic `header` selectors must not style navigation chrome.
+The source regression covers public and template header identities.
+
+Alerts must distinguish source dates from evidenced original CUAI publication
+dates. Inspect the archive and homepage at 320/390/1440px, including the exact
+72-hour CUAI publication boundary and one millisecond after it, the 14-day
+publication boundary, and a future posting timestamp. An older source can belong
+to a newly published CUAI Alert; the publication instant, not the source date,
+controls freshness. Preserve the original instant across edits/backfills. Keep
+full-archive search, empty/recovery and deep links. Unknown history remains
+searchable but never qualifies as fresh; day-only evidence does not invent a
+time. Explicit synthetic rendered fixtures verify opposite publication/source
+ordering, unknown history, and day-only exclusion. Unit checks cover timezone
+offsets and daylight-saving transitions. Every simulated fresh-homepage branch
+also runs the date-label contrast check, even when the real clock has expired
+the Alert. Editing is not republication.
+Also inspect tracker signal dates and existing publication/reporting-period
+labels when changing shared date presentation. These checks augment the existing
+release gate; they do not authorize publication or certify untouched content.
