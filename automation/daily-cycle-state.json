@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-12",
-    "fullArticleCount": 5,
+    "fullArticleCount": 6,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -187,10 +187,19 @@
         "primaryFunctionalAudience": "functional-leader",
         "promotionPriority": "Library",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-credit-union-proposed-vendor-risk-guidance.html",
+        "title": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
+        "classification": "Insights",
+        "primaryFunctionalAudience": "functional-leader",
+        "promotionPriority": "Library",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-11-12T23:32:40.736Z",
+    "status": "completed",
+    "updatedAt": "2026-11-12T23:33:43.160Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -503,12 +512,12 @@
       {
         "slot": 6,
         "plannedDate": "2026-11-12",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/insight-credit-union-proposed-vendor-risk-guidance.html",
         "candidateTitle": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-12T23:38:47.019Z",
-        "nextAction": "Release the visually accepted article and verify exact production before counting publication.",
+        "nextAction": "Retain live proof; do not republish.",
         "evidence": {
           "validationHistory": [],
           "pending": {
@@ -538,8 +547,12 @@
             "visualReviewedAt": "2026-11-12T23:32:37.800Z",
             "artifactId": 13994660997,
             "artifactDigest": "sha256:c20afd874958303f78504b2e1f45dcf00c1304bab2a3d4a010fd98873953e4f1"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_26K7st1i2RwaVdpGgGjv3QiSCsxC"
+        },
+        "productionCommit": "dcb4c62b7b9c9432be00ee14f33f07fa91437857",
+        "verifiedAt": "2026-11-12T23:33:43.160Z",
+        "liveProof": "Exact production READY; desktop/mobile article, original 1200×630 image, Insights listing and first homepage card verified without overflow or runtime errors."
       }
     ],
     "socialDistribution": {
@@ -549,7 +562,7 @@
       "recoveredMissedHigh": false,
       "nextReviewAt": "2026-11-13T07:00:00-05:00"
     },
-    "nextAction": "Release the visually accepted article and verify exact production before counting publication.",
+    "nextAction": "Article target completed. Existing Operating System owns qualified Alerts; distribution remains prepared pending provider review.",
     "validation": {
       "status": "production-verified",
       "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
@@ -566,14 +579,14 @@
     "additionalCycleProgress": {
       "baselineArticleCount": 1,
       "requestedAdditionalArticles": 5,
-      "completedAdditionalArticles": 4,
-      "remainingAdditionalArticles": 1,
+      "completedAdditionalArticles": 5,
+      "remainingAdditionalArticles": 0,
       "requestedAdditionalAlerts": 3,
       "publishedAdditionalAlerts": 0,
       "unattendedExecution": "unproven",
-      "pendingArticlePR": 332,
       "preparedPacketBranch": "cuai/nov12-continuation-packet",
-      "updatedAt": "2026-11-12T23:18:24.188Z"
+      "updatedAt": "2026-11-12T23:33:43.160Z",
+      "lastCompletedArticlePR": 332
     }
   },
   "history": [
