@@ -181,7 +181,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T23:08:17.327Z",
+    "updatedAt": "2026-11-12T23:08:42.121Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -445,6 +445,19 @@
         "productionCommit": "7de4fd0d8777fcd3c5ee471d6fbde2c24e9fd127",
         "verifiedAt": "2026-11-12T23:08:17.327Z",
         "liveProof": "Exact production READY; desktop/mobile article, original 1200×630 image, Insights listing and first homepage card verified without overflow or runtime errors."
+      },
+      {
+        "slot": 5,
+        "plannedDate": "2026-11-12",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/insight-credit-union-savers-match-2027-ira-readiness.html",
+        "candidateTitle": "Preparing Credit Union IRAs for the 2027 Saver’s Match",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-12T23:28:42.121Z",
+        "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
+        "evidence": {
+          "validationHistory": []
+        }
       }
     ],
     "socialDistribution": {
@@ -467,7 +480,7 @@
       "deploymentId": "dpl_5iimvNS6AM88zm4w6H6WAc7u8SFk",
       "verifiedAt": "2026-11-12T12:10:48.475Z"
     },
-    "outcomeSlot": 4,
+    "outcomeSlot": 5,
     "additionalCycleProgress": {
       "baselineArticleCount": 1,
       "requestedAdditionalArticles": 5,
