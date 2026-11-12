@@ -40,7 +40,8 @@ test('existing isolated job keeps schedules, permissions and production ownershi
   assert.ok(workflow.includes('>> "$GITHUB_ENV"'));
   assert.ok(!workflow.includes('${{ runner.temp }}'), 'runner context is unavailable at job env evaluation');
   assert.match(workflow, /run: npm run check:browser/);
-  assert.match(workflow, /CUAI_DESIGN_BASE_REF: \$\{\{ github.event.pull_request.base.sha \}\}/);
+  assert.match(workflow, /CANONICAL_BASE_SHA=\$\(git rev-parse refs\/remotes\/origin\/main\)/);
+  assert.match(workflow, /CUAI_DESIGN_BASE_REF=%s/);
   const verifier = fs.readFileSync(path.join(root, 'tests/design/verify-site.cjs'), 'utf8');
   for (const name of ['verify-card-artwork.cjs', 'verify-alerts.cjs', 'verify-analytics-journeys.cjs']) assert.ok(verifier.includes(name));
   const pkg = require('../package.json'); assert.equal(pkg.scripts['pretest:design'], 'npm run check:browser');

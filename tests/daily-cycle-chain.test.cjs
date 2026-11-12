@@ -49,6 +49,18 @@ test('missing, zero, inaccessible or non-ancestor baseline fails closed', t => {
   const file = path.join(f.dir, 'scripts/validate-daily-cycle-chain.mjs'); fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replace(f.baseline, 'f'.repeat(40)));
   for (const event of ['schedule', 'workflow_dispatch']) { const r = f.check(event); assert.equal(r.status, 1); assert.match(r.stderr, /baseline is unavailable/); }
 });
+test('pull-request chain audits the explicit canonical revision while preserving existing event boundaries', t => {
+  const f = fixture(t), canonical = f.git('rev-parse', 'HEAD');
+  const check = (event, revision) => f.exec(process.execPath, ['scripts/validate-daily-cycle-chain.mjs', ...(revision ? [revision] : [])], { GITHUB_EVENT_NAME: event });
+  assert.equal(check('pull_request', canonical).status, 0);
+  assert.match(check('pull_request').stderr, /explicit canonical review revision required/);
+  assert.match(check('schedule', canonical).stderr, /only supported for pull_request/);
+  const bad = structuredClone(f.state); bad.current.publications = []; bad.current.fullArticleCount = 0;
+  f.write(bad); f.commit('isolated canonical loss'); f.write(f.state); const restored = f.commit('exact restoration');
+  f.git('checkout', '--detach', canonical);
+  const result = check('pull_request', restored); assert.equal(result.status, 1);
+  assert.match(result.stderr, /dropped a same-day publication/);
+});
 for (const badDate of [undefined, '2026-02-30', '2026-13-01', '2026-11-6']) test(`malformed intermediate date ${badDate} cannot launder lost publications`, t => {
   const f = fixture(t);
   const damaged = JSON.parse(JSON.stringify(f.state)); damaged.current.date = badDate; damaged.current.publications = []; damaged.current.fullArticleCount = 0;
