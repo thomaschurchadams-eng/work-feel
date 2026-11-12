@@ -154,7 +154,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T20:59:49.304Z",
+    "updatedAt": "2026-11-12T21:16:37.508Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -205,7 +205,7 @@
       },
       {
         "slot": 2,
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/news/heloc-balances-third-quarter-2026-credit-unions.html",
         "candidateTitle": "HELOC Balances Post Their Largest Quarterly Rise Since 2005",
         "accountableOwner": "daily-publisher",
@@ -265,7 +265,26 @@
                 "observedAt": "2026-11-12T21:10:14.751Z"
               }
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "2c0559e7d2be5ea9dfd78a41a66f0314f58eceb1",
+            "run": 43307410715,
+            "job": 131494708692,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-12T21:16:35.942Z"
+          },
+          "terminalAcceptance": {
+            "head": "2c0559e7d2be5ea9dfd78a41a66f0314f58eceb1",
+            "run": 43307410715,
+            "job": 131494708692,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-12T21:16:37.508Z",
+            "artifactId": 13983819588,
+            "artifactDigest": "sha256:9ef083881c31c59483bce428009169a9ffb97f3b7c7a15ab3dbe1a8703005a4e"
+          }
         },
         "nextAction": "Complete exact-head checks and visual review; retain this PR and checkpoint."
       }
