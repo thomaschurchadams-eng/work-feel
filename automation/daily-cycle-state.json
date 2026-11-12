@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-12",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -138,32 +138,91 @@
         "sourceUrl": "https://flcu.org/next-steps-after-a-loss/",
         "sourceDate": null,
         "score": 74.5,
-        "status": "selected-pending-validation",
+        "status": "selected-published",
         "rationale": "Durable documented gap; two first-party CU workflows and federal primary sources support separating intake, authority and release. No vendor outcomes or uniform legal checklist."
       }
     ],
-    "publications": [],
-    "status": "in-progress",
-    "updatedAt": "2026-11-12T12:03:05.494Z",
+    "publications": [
+      {
+        "type": "article",
+        "classification": "Insights",
+        "title": "When a Credit Union Member Dies, Notice Is Not Authority",
+        "url": "https://creditunionainews.com/insight-credit-union-deceased-member-servicing-authority.html",
+        "primaryFunctionalAudience": "Credit-union member service, deposit operations and mortgage-servicing leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "prepared-not-reserved-provider-review"
+      }
+    ],
+    "status": "article-published",
+    "updatedAt": "2026-11-12T12:10:48.475Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-12",
-        "status": "prepared",
+        "status": "live-verified",
         "accountableOwner": "daily-publisher",
         "candidateTitle": "When a Credit Union Member Dies, Notice Is Not Authority",
-        "liveProof": "none; exact-head rendered acceptance and production verification pending",
-        "nextReviewAt": "2026-11-12T07:40:00-05:00",
-        "nextAction": "Obtain exact CI receipt and review article, homepage and Insights screenshots before release."
+        "liveProof": "Exact accepted tree and production READY; live article, 1200×630 JPEG, home, Insights and both standard sitemaps verified.",
+        "nextReviewAt": "2026-11-13T07:00:00-05:00",
+        "nextAction": "Do not republish; retain exact validation and production proof.",
+        "url": "https://creditunionainews.com/insight-credit-union-deceased-member-servicing-authority.html",
+        "verifiedAt": "2026-11-12T12:10:48.475Z",
+        "productionCommit": "33a53184da1908e6edd393ec4180de250ff51cc5",
+        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6823125595",
+        "evidence": {
+          "pending": {
+            "prNumber": 322,
+            "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
+            "run": 43214677786,
+            "job": 131170776415,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-12T07:40:00-05:00"
+          },
+          "terminalValidation": {
+            "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
+            "run": 43214677786,
+            "job": 131170776415,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-12T12:08:40.886Z"
+          },
+          "terminalAcceptance": {
+            "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
+            "run": 43214677786,
+            "job": 131170776415,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-12T12:09:56.671Z",
+            "artifactId": 13942882279,
+            "artifactDigest": "sha256:1c27954316a4e0eb0863bf48e65e4daf5639abe4d9b17eca2f5f4b32d835476a"
+          },
+          "productionDeploymentId": "dpl_5iimvNS6AM88zm4w6H6WAc7u8SFk"
+        }
       }
     ],
     "socialDistribution": {
       "status": "not-created",
-      "articleDecision": "Useful Library candidate on practical grounds; not reserved because current Buffer destination review is unresolved and contemporaneous duplicate/cap evidence is unavailable.",
+      "articleDecision": "qualified Library / prepared, not reserved",
+      "blocker": "Production operations artifact 13943376990: complete inventory, requiresReview true, 78/78 retained sent records flagged for unresolved destinations; no distribution attempts or sent receipt for this article.",
       "recoveredMissedHigh": false,
-      "nextReviewAt": "2026-11-12T07:40:00-05:00"
+      "nextReviewAt": "2026-11-13T07:00:00-05:00"
+    },
+    "nextAction": "Do not republish. Keep the qualified promotion prepared only until a fresh, reconciled Buffer inventory resolves destination review.",
+    "validation": {
+      "status": "production-verified",
+      "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
+      "run": 43214677786,
+      "job": 131170776415,
+      "attempt": 1,
+      "artifactId": 13942882279,
+      "visualReviewedAt": "2026-11-12T12:09:56.671Z",
+      "productionCommit": "33a53184da1908e6edd393ec4180de250ff51cc5",
+      "deploymentId": "dpl_5iimvNS6AM88zm4w6H6WAc7u8SFk",
+      "verifiedAt": "2026-11-12T12:10:48.475Z"
     }
   },
   "history": [
