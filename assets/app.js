@@ -99,6 +99,36 @@
 
   const alertsData = [
     {
+      "label": "Cybersecurity / Vendors",
+      "headline": "ScreenConnect Incident Prompts Urgent Client and Vendor Checks",
+      "summary": "ConnectWise updated its ScreenConnect incident guidance on November 12 after reports of unauthorized access to partner environments. It directs partners to disable identified third-party extensions and verify every technician client runs version 26.6.5 or later; updating the cloud console does not automatically update those clients. Credit unions should obtain confirmation from internal IT and managed-service providers, including whether their endpoints were exposed. Suspected compromised systems require investigation through separate security tools, preserved logs and session revocation. The roughly 400 environments identified had relevant extensions installed; that figure is not a confirmed compromise count.",
+      "impact": "Credit-union IT, security and vendor-management teams should confirm extension status and technician-client versions with managed-service providers, assess endpoint exposure, and investigate suspected compromise through separate trusted security tools. Client updates and disabled extensions do not remove an existing compromise.",
+      "sourceName": "ConnectWise",
+      "sourceUrl": "https://www.connectwise.com/company/trust/advisories",
+      "date": "Nov 12, 2026",
+      "slug": "screenconnect-incident-client-vendor-checks-november-2026"
+    },
+    {
+      "label": "Cybersecurity / Infrastructure",
+      "headline": "Check Point Discloses Exploited Gateway Attack Chain; Hotfix Urged",
+      "summary": "Check Point disclosed on November 12 that attackers chained PHP2Shell with a separate privilege-escalation flaw to compromise unpatched Security Gateways. The observed attacks ran from October 30 through November 4. The vendor recommends installing its November Jumbo Hotfix on Management Servers and Security Gateways. Internet-facing Mobile Access deployments warrant priority review. Credit unions using these products should confirm patch status with their IT teams or providers and review the published compromise indicators. The new disclosure concerns the exploited gateway chain; PHP2Shell fixes had already been available.",
+      "impact": "Credit-union security and infrastructure teams using affected Check Point products should verify the vendor-recommended hotfix, prioritize internet-facing Mobile Access systems and investigate relevant compromise indicators. A patch-status check alone does not establish that an earlier intrusion is absent.",
+      "sourceName": "Check Point",
+      "sourceUrl": "https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/",
+      "date": "Nov 12, 2026",
+      "slug": "check-point-exploited-gateway-chain-november-2026"
+    },
+    {
+      "label": "Cybersecurity / Digital Services",
+      "headline": "Apache Releases Fix for Critical HTTP/2 Remote-Code-Execution Flaw",
+      "summary": "Apache released HTTP Server 2.4.71 on November 11 to fix three vulnerabilities, including a critical flaw in its HTTP/2 module that can permit remote code execution. CVE-2026-119618 affects HTTP Server versions 2.4.55 through 2.4.70; separately distributed mod_h2 releases 2.0.8 through 2.0.42 are also affected. Credit unions should ask hosting and digital-service providers to identify exposed installations and confirm remediation, while internal teams prioritize affected public-facing servers. Apache’s notice identifies the critical risk and fixed release but does not report active exploitation.",
+      "impact": "Credit-union technology and vendor-management teams should identify affected Apache installations, prioritize remediation of exposed services and obtain patch evidence from hosting and digital-service providers. Teams using separately distributed mod_h2 should check that component’s affected range as well.",
+      "sourceName": "Apache HTTP Server Project",
+      "sourceUrl": "https://httpd.apache.org/security/vulnerabilities_24.html",
+      "date": "Nov 11, 2026",
+      "slug": "apache-http-server-critical-http2-fix-november-2026"
+    },
+    {
       label: 'BSA / Payments',
       headline: 'FinCEN Orders Financial Institutions to Block MEXC Global Transfers',
       summary:
