@@ -190,7 +190,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T23:18:24.188Z",
+    "updatedAt": "2026-11-12T23:18:47.019Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -499,6 +499,19 @@
         "productionCommit": "111882ae52fc7cb189ee4c22abe34f0ff9300db6",
         "verifiedAt": "2026-11-12T23:18:24.188Z",
         "liveProof": "Exact production READY; desktop/mobile article, original 1200×630 image, Insights listing and first homepage card verified without overflow or runtime errors."
+      },
+      {
+        "slot": 6,
+        "plannedDate": "2026-11-12",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/insight-credit-union-proposed-vendor-risk-guidance.html",
+        "candidateTitle": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-12T23:38:47.019Z",
+        "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
+        "evidence": {
+          "validationHistory": []
+        }
       }
     ],
     "socialDistribution": {
@@ -521,7 +534,7 @@
       "deploymentId": "dpl_5iimvNS6AM88zm4w6H6WAc7u8SFk",
       "verifiedAt": "2026-11-12T12:10:48.475Z"
     },
-    "outcomeSlot": 5,
+    "outcomeSlot": 6,
     "additionalCycleProgress": {
       "baselineArticleCount": 1,
       "requestedAdditionalArticles": 5,
