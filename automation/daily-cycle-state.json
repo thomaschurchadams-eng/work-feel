@@ -163,7 +163,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T21:26:50.594Z",
+    "updatedAt": "2026-11-12T22:07:18.628Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -304,7 +304,7 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-12",
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/insight-credit-union-fednow-2027-discount-economics.html",
         "candidateTitle": "FedNow’s 2027 Credits Come With Volume Tests and a Fee Cap",
         "accountableOwner": "daily-publisher",
@@ -343,6 +343,25 @@
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-12T21:44:20.198Z"
+          },
+          "terminalValidation": {
+            "head": "d838e79ac9da120ae179b5d903551db1e57b80f3",
+            "run": 43310300093,
+            "job": 131504312831,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-12T22:07:17.612Z"
+          },
+          "terminalAcceptance": {
+            "head": "d838e79ac9da120ae179b5d903551db1e57b80f3",
+            "run": 43310300093,
+            "job": 131504312831,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-12T22:07:18.628Z",
+            "artifactId": 13984854926,
+            "artifactDigest": "sha256:aa49d234880f32122a1e0dd6aaf60c488e9ef57fa3763642e8f1fb8074dd4580"
           }
         }
       }
