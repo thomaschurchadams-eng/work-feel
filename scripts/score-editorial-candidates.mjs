@@ -17,6 +17,12 @@ const candidates = JSON.parse(fs.readFileSync(path.resolve(inputPath), 'utf8'));
 if (!Array.isArray(candidates)) throw new Error('Candidate input must be a JSON array.');
 
 const now = new Date();
+const easternDate = date => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(date));
+const today = easternDate(now);
+const monday = new Date(today + 'T12:00:00Z');
+monday.setUTCDate(monday.getUTCDate() - (monday.getUTCDay() + 6) % 7);
+const weekStart = monday.toISOString().slice(0, 10);
+const week = ledger.articles.filter(a => Number.isFinite(Date.parse(a.publishedAt)) && new Date(a.publishedAt) <= now && easternDate(a.publishedAt) >= weekStart);
 const daysAgo = (date) => (now - new Date(date)) / 86400000;
 const recent = ledger.articles.filter((a) => daysAgo(a.publishedAt) <= rules.selection.lookbackDays);
 const tokens = (text='') => new Set(text.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter((x)=>x.length>3));
@@ -66,11 +72,12 @@ const scored=candidates.map((candidate)=>{
 const selected=[];
 for(const candidate of scored.filter((c)=>!c.rejected)){
   const primaryFunction=candidate.functions[0], primaryTechnology=candidate.technologies[0];
-  const fnCount=selected.filter((x)=>x.functions[0]===primaryFunction).length;
-  const techCount=selected.filter((x)=>x.technologies[0]===primaryTechnology).length;
+  if (week.length + selected.length >= rules.weeklyTargets.siteStoriesMax) break;
+  const fnCount=[...week,...selected].filter((x)=>x.functions?.[0]===primaryFunction).length;
+  const techCount=[...week,...selected].filter((x)=>x.technologies?.[0]===primaryTechnology).length;
   if(fnCount>=rules.selection.maximumSamePrimaryFunctionPerWeek || (primaryTechnology !== 'industry-development' && techCount>=rules.selection.maximumSamePrimaryTechnologyPerWeek)) continue;
   selected.push(candidate);
   if(selected.length>=rules.weeklyTargets.siteStoriesMax) break;
 }
 
-process.stdout.write(JSON.stringify({generatedAt:now.toISOString(),selected,rejected:scored.filter((c)=>c.rejected),ranked:scored},null,2)+'\n');
+process.stdout.write(JSON.stringify({generatedAt:now.toISOString(),weekStart,alreadyPublishedThisWeek:week.length,selected,rejected:scored.filter((c)=>c.rejected),ranked:scored},null,2)+'\n');

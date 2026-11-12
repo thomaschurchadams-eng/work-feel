@@ -101,7 +101,8 @@ test('prospective rules are five each weekday, twenty-five full week, same bound
   assert.equal(rules.standardCycle.minimumCandidatesToEvaluate, 12); assert.equal(rules.standardCycle.minimumDistinctBeatsToSearch, 6);
   const before = JSON.parse(execFileSync('git', ['show', '2445fa393c5291e12a840d7f57bbc83a162ba8a8:automation/publishing-rules.json'], { cwd: root }));
   assert.deepEqual(rules.standardCycle.fallbackOrder, before.standardCycle.fallbackOrder);
-  assert.deepEqual(rules.hardStops, before.hardStops); assert.deepEqual(rules.selection, before.selection);
+  assert.deepEqual(rules.hardStops, before.hardStops);
+  assert.deepEqual(rules.selection, { ...before.selection, maximumSamePrimaryFunctionPerWeek: 3 });
 });
 test('five sequential packages pass actual CLI; repeat is read-only and reporter shows five distinct live fixtures', t => {
   const f = fixture(t); for (let n = 1; n <= 5; n++) fill(f, n);
