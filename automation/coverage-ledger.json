@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-proposed-vendor-risk-guidance",
+      "title": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
+      "url": "/insight-credit-union-proposed-vendor-risk-guidance.html",
+      "publishedAt": "2026-11-12T18:19:05-05:00",
+      "section": "insights",
+      "beat": "credit-union-proposed-vendor-risk-guidance",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "analysis",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor Management leaders",
+      "maturity": "emerging",
+      "promotionPriority": "Library",
+      "socialDecision": "prepared-not-reserved-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/news/sharetec-core-outage-credit-union-failover.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "sourceLimit": "Policy analysis built around bargaining limits, residual risk and a primary-source dissent; avoids a generic checklist."
+    },
+    {
       "id": "credit-union-savers-match-2027-ira-readiness",
       "title": "Preparing Credit Union IRAs for the 2027 Saver’s Match",
       "url": "/insight-credit-union-savers-match-2027-ira-readiness.html",
