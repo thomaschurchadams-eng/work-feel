@@ -5015,6 +5015,47 @@
       },
       "summary": "Wednesday operating review: both verified Standard News articles bring the week to 4 of 8. The 98-article portfolio's latest 15 are 13 News/2 Insights and remain concentrated in operations (11/15), risk/compliance (9/15) and IT/data/cybersecurity (7/15); deceased-member servicing and beneficiary/estate-document evidence remains the next gap, preferably in a non-News format when evidence qualifies. No new Alert qualified across eight official-source surfaces. The repaired publication clock keeps the November 9 MEXC Alert fresh until November 12 at 3:35 p.m. Eastern, so no homepage watch/fallback change was made. Exact current main is READY with no 24-hour runtime errors. Audience learning remains open and evidence-blocked after three 401 reads and no exact-current artifact; Friday's existing checkpoint remains. Monday's competitive-distribution scan was not repeated. No article/social publication by OS, external contact, spend, credential, permission, schedule, pricing, legal/privacy or editorial-gate change occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-12T08:00:01-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The November 11 operating review remained unmerged after its exact-head GitHub Actions run stayed queued with zero jobs while main advanced through four later production commits.",
+      "status": "recovered",
+      "incidentKey": "cuai-operating:2026-11-11:daily-review",
+      "workUnits": {
+        "blockedHandoffReceiptsReviewed": 1,
+        "queuedWorkflowRunsReconciled": 1,
+        "queuedWorkflowJobsObserved": 0,
+        "queuedWorkflowArtifactsObserved": 0,
+        "stalePullRequestsReviewed": 1,
+        "currentMainCommitsReconciled": 4,
+        "recoveryPullRequestsCreated": 1,
+        "failedRecoveryValidationRunsObserved": 1,
+        "immutableHistoryMutationsRejected": 1,
+        "operatingLedgerEntriesRecovered": 1,
+        "improvementEntriesAdvanced": 1,
+        "publicationHistoryEntriesPreserved": 82,
+        "dailyCurrentRecordsPreserved": 1,
+        "socialQueueChecks": 1,
+        "socialQueueItemsPreserved": 55,
+        "duplicateSocialReservationsObserved": 0,
+        "productionDeploymentChecks": 2,
+        "liveSurfaceChecks": 5,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "distributionAttemptsObserved": 0,
+        "providerWriteRetries": 0,
+        "unreleasedCheckpointAdaptersActivated": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "The November 11 operating-state handoff is recovered without replaying editorial or provider work. PR #319 head 27983915acc85ee8f4222f63451e2a2342dcb3b2 remained queued in CUAI verified-operations run 43098404889 with zero jobs or artifacts while main advanced from 9b2b6fada29d4d2f77cd31ce26359699b42c1917 through four later commits, making the branch stale. Reliability rebuilt the accepted record from current main in PR #323. Its first exact-head run 43222571321 correctly rejected an attempted mutation of the immutable November 11 history entry before browser or design tests ran. Reliability then preserved daily-cycle-state.json byte-for-byte and narrowed the recovery to the append-only surfaces: one existing November 11 operating usage entry and the existing PR #317 improvement outcome. JSON and preservation checks passed, today's November 12 article state and all 82 history entries remained intact, and the 55-item social queue was unchanged with no duplicate reservation. PR #323 merged as f362e72aac6f90d3b4e961bd32e5d4bb361aa624; production deployment dpl_3DSWYxGks4ktXJ7updqVcDU4VULc is READY on that exact commit. No article, Alert, social/provider write, schedule, credential, permission, model, editorial gate, PR #311 or PR #260 action occurred. Durable prevention: once daily state has rolled into immutable history, recover a missed operating receipt only through append-only usage/improvement records; if an exact-head run remains active while main advances, reconcile onto current main before any release and never merge the stale branch.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
