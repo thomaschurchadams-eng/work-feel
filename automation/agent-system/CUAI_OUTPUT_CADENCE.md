@@ -6,9 +6,10 @@ This file defines the outward-facing work CreditUnionAI News should produce. It 
 ## Weekday production SLA
 
 ### 1. Full editorial output
-- **Target:** eight qualified full News or Insights articles per full week through the existing Daily Publisher: Monday/Wednesday/Friday two, Tuesday/Thursday one; maximum two per weekday.
+- **Target:** three distinct qualified full News or Insights articles per weekday, fifteen per full week, maximum three per weekday through the same sequential Daily Publisher and unchanged weekday schedule. Apply prospectively after authorized release; do not reopen a closed cycle or add weekend work.
 - A valid non-publication outcome is acceptable when no candidate clears the editorial/source gates. Quality gates are never lowered to hit volume.
 - Every cycle must still leave a machine-observable outcome and handoff.
+- Preserve the same bounded twelve-candidate research pool and approved fallbacks. Record every unfilled slot's actual reason; complete and verify one package before the next. This target does not guarantee source supply, throughput or additional usage/spend.
 
 ### 2. Distribution output
 - For each published article, make an explicit LinkedIn decision under the existing policy: `posted | scheduled | not selected | blocked`.

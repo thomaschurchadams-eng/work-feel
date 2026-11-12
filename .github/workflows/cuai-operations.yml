@@ -12,6 +12,8 @@ on:
       - 'lib/media-slots.cjs'
       - 'lib/browser-readiness.cjs'
       - 'lib/daily-cycle-guards.cjs'
+      - 'lib/publisher-write-plan.cjs'
+      - 'scripts/validate-publisher-review.mjs'
       - 'lib/publisher-validation.cjs'
       - 'lib/design-review-routes.cjs'
       - 'scripts/check-operational-policy.cjs'
@@ -50,8 +52,6 @@ jobs:
     timeout-minutes: 12
     permissions:
       contents: read
-    env:
-      CUAI_DESIGN_BASE_REF: ${{ github.event.pull_request.base.sha }}
     steps:
       - name: Read exact review revision
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
@@ -61,10 +61,15 @@ jobs:
           fetch-depth: 0
       - name: Trust the exact checkout inside the isolated container
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
-      - name: Validate daily-cycle history against PR base
+      - name: Validate daily-cycle history against PR base and refreshed main
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: node scripts/validate-daily-cycle-preservation.mjs automation/daily-cycle-state.json "$BASE_SHA"
+          EVENT_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          EVENT_BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          test "$EVENT_BASE_REF" = main
+          CANONICAL_BASE_SHA=$(git rev-parse refs/remotes/origin/main)
+          node scripts/validate-publisher-review.mjs "$EVENT_BASE_SHA" "$(git rev-parse HEAD)" "$CANONICAL_BASE_SHA"
+          printf 'CUAI_DESIGN_BASE_REF=%s\n' "$CANONICAL_BASE_SHA" >> "$GITHUB_ENV"
       - name: Isolate the test browser cache for this job
         run: printf '%s\n' "PLAYWRIGHT_BROWSERS_PATH=${RUNNER_TEMP}/cuai-design-browsers" >> "$GITHUB_ENV"
       - name: Use Node for design checks

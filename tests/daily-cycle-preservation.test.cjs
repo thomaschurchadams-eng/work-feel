@@ -10,7 +10,7 @@ test('actual CLI rejects history loss, same-day loss and pending closeout agains
   const file = 'automation/daily-cycle-state.json'; fs.mkdirSync(path.join(directory, 'automation'));
   const base = { version: 1, timezone: 'America/New_York', history: Array.from({ length: 60 }, (_, i) => ({ date: new Date(Date.UTC(2026, 7, i + 1)).toISOString().slice(0, 10), audit: i })), current: {
     date: '2026-11-06', fullArticleCount: 1, alertCount: 0, publications: [{ type: 'article', url: '/news/first.html' }],
-    regularPublicationSlots: [{ slot: 2, status: 'pending-validation', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-06T17:00:00Z', evidence: { pending: { head: 'a'.repeat(40), run: 101, job: 201, runAttempt: 1 } } }]
+    regularPublicationSlots: [{ slot: 2, status: 'pending-validation', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-06T17:00:00Z', evidence: { pending: { prNumber: 1, head: 'a'.repeat(40), run: 101, job: 201, runAttempt: 1 } } }]
   } };
   const write = state => fs.writeFileSync(path.join(directory, file), JSON.stringify(state));
   const run = (exe, args) => spawnSync(exe, args, { cwd: directory, encoding: 'utf8' });

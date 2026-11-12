@@ -19,19 +19,26 @@ const intended = rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0;
 const daily = [state.current, ...state.history].find(entry => entry?.date === date);
 const tracked = daily?.regularPublicationSlots ?? [];
 const canonical = value => typeof value === 'string' ? new URL(value, 'https://creditunionainews.com').href : null;
-const statuses = new Set(['live-verified', 'editorial-hold', 'technical-failure', 'pending-validation', 'late-validation']);
+const statuses = new Set(['live-verified', 'editorial-hold', 'approval-hold', 'technical-failure', 'pending-validation', 'late-validation', 'prepared', 'validated', 'pre-validation-blocked']);
+const liveCounts = new Map();
+for (const fact of tracked.filter(entry => entry.status === 'live-verified' && entry.url)) {
+  const url = canonical(fact.url);
+  liveCounts.set(url, (liveCounts.get(url) ?? 0) + 1);
+}
 const slots = Array.from({ length: intended }, (_, index) => {
   const slot = index + 1;
   const fact = tracked.find(entry => entry.slot === slot);
   const publications = (daily?.publications ?? []).filter(entry => entry.type === 'article');
-  const matched = fact?.url ? publications.find(entry => canonical(entry.url) === canonical(fact.url)) : publications[index];
+  const matched = fact?.url ? publications.find(entry => canonical(entry.url) === canonical(fact.url)) : !fact ? publications[index] : undefined;
   const ledger = matched && coverage.articles.find(entry => canonical(entry.url) === canonical(matched.url));
-  const liveProof = fact?.status === 'live-verified' && fact.url && matched && ledger &&
+  const duplicateLive = fact?.status === 'live-verified' && liveCounts.get(canonical(fact.url)) > 1;
+  const liveProof = !duplicateLive && fact?.status === 'live-verified' && fact.url && matched && ledger &&
     canonical(fact.url) === canonical(matched.url) && /(?:Z|[+-]\d\d:\d\d)$/.test(fact.verifiedAt ?? '') && Number.isFinite(Date.parse(fact.verifiedAt)) &&
     /^[a-f0-9]{40}$/.test(fact.productionCommit ?? '');
   let status = liveProof ? 'live-verified' : statuses.has(fact?.status) && fact.status !== 'live-verified' ? fact.status :
     matched ? 'recorded-publication-no-live-proof' : 'unclassified-no-slot-evidence';
   if (!liveProof && fact?.status === 'live-verified') status = 'recorded-publication-no-live-proof';
+  if (duplicateLive) status = 'duplicate-live-publication';
   return {
     plannedDate: date, slot, timezone: zone, status,
     liveUrl: liveProof ? canonical(fact.url) : null,
@@ -42,8 +49,10 @@ const slots = Array.from({ length: intended }, (_, index) => {
     accountableOwner: 'daily-publisher',
     nextAction: fact?.nextAction ?? 'Reconcile this slot against production and issue #160; record evidence and the next check.',
     nextReviewAt: fact?.nextReviewAt ?? null,
+    unfilledReason: liveProof ? null : fact?.holdReason ?? fact?.blocker?.reason ?? null,
+    candidateTitle: fact?.candidateTitle ?? null,
     issueEvent: fact?.issueEvent ?? null,
     evidence: fact?.evidence ?? null
   };
 });
-console.log(JSON.stringify({ date, weekday, timezone: zone, intended, basis: 'Current weekday targets; no publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));
+console.log(JSON.stringify({ date, weekday, timezone: zone, intended, basis: 'Current prospective weekday targets; not retrospective obligations or permission to reopen closed cycles. No publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));

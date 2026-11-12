@@ -11,9 +11,15 @@ function fail(message) { console.error(`daily-cycle chain validation failed: ${m
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
 const ancestor = (base, head) => { try { git('merge-base', '--is-ancestor', base, head); return true; } catch { return false; } };
 const eventName = process.env.GITHUB_EVENT_NAME;
-if (!['push', 'schedule', 'workflow_dispatch'].includes(eventName)) fail('unsupported or missing event');
+if (!['push', 'schedule', 'workflow_dispatch', 'pull_request'].includes(eventName)) fail('unsupported or missing event');
 let head;
-try { head = git('rev-parse', 'HEAD'); } catch { fail('checked-out revision unavailable'); }
+if (eventName === 'pull_request') {
+  if (!sha(process.argv[2])) fail('explicit canonical review revision required');
+  head = process.argv[2];
+} else {
+  if (process.argv[2]) fail('explicit canonical revision is only supported for pull_request review');
+  try { head = git('rev-parse', 'HEAD'); } catch { fail('checked-out revision unavailable'); }
+}
 if (!sha(head) || !ancestor(acceptedBaseline, head)) fail('reviewed baseline is unavailable or is not an ancestor');
 const before = process.env.CUAI_PUSH_BEFORE;
 if (eventName === 'push' && (!sha(before) || !ancestor(acceptedBaseline, before) || !ancestor(before, head))) fail('valid pre-push main boundary unavailable');

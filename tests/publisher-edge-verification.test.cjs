@@ -25,13 +25,15 @@ for (const kind of ['count mismatch', 'duplicate identities']) test(`rollover re
   assert.throws(() => validateCurrentContinuity(next, next), /same-day article identities|identities are duplicated/);
 });
 test('actual CLI rejects malformed rollover while legitimate next-day reset and repeated reconciliation pass', t => {
-  const base = { version: 1, history: [], current: { ...empty('2026-11-06'), publications: [{ type: 'article', url: '/news/a.html' }], fullArticleCount: 1 } };
-  const f = repo(t, base); const next = { ...base, history: [clone(base.current)], current: empty('2026-11-07') };
+  const base = { version: 1, history: [], current: { ...empty('2026-11-09'), publications: [{ type: 'article', url: '/news/a.html' }], fullArticleCount: 1 } };
+  const f = repo(t, base); const next = { ...base, history: [clone(base.current)], current: empty('2026-11-10') };
   for (const mutate of [c => { c.current.fullArticleCount = 1; }, c => { c.current.publications = [{ type: 'article', url: '/news/a.html' }, { type: 'article', url: 'https://creditunionainews.com/news/a.html' }]; c.current.fullArticleCount = 2; }]) {
     const bad = clone(next); mutate(bad); f.write(bad); assert.equal(f.validate().status, 1);
   }
   f.write(next); assert.equal(f.validate().status, 0); const landed = f.commit('legitimate rollover'); assert.equal(f.validate(landed).status, 0);
-  const appended = clone(next); appended.current.publications.push({ type: 'article', url: '/news/new-day.html' }); appended.current.fullArticleCount = 1;
+  const appended = clone(next);
+  appended.current.status = 'in-progress'; appended.current.outcomeSlot = 1;
+  appended.current.regularPublicationSlots = [{ slot: 1, status: 'prepared', candidateTitle: 'Isolated weekday article', url: '/news/new-day.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-10T12:30:00Z' }];
   f.write(appended); assert.equal(f.validate(landed).status, 0);
 });
 test('historical rollover preserves actual completed receipts and unresolved legacy checkpoints exactly', t => {

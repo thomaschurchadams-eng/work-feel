@@ -9,10 +9,13 @@ function fixture(t) {
   git('init', '-q'); git('config', 'user.name', 'Test'); git('config', 'user.email', 'test@example.invalid');
   fs.mkdirSync(path.join(dir, 'automation')); fs.mkdirSync(path.join(dir, 'scripts')); fs.mkdirSync(path.join(dir, 'lib'));
   const state = { version: 1, history: [], current: { date: '2026-11-06', fullArticleCount: 1, alertCount: 0, publications: [{ type: 'article', url: '/news/one.html' }] } };
+  // Explicit isolated prior live proof; count alone cannot authorize slot two.
+  const pending = { prNumber: 990001, head: 'a'.repeat(40), run: 990101, job: 990201, runAttempt: 1 };
+  state.current.regularPublicationSlots = [{ slot: 1, status: 'live-verified', url: '/news/one.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-06T12:30:00Z', verifiedAt: '2026-11-06T12:20:00Z', productionCommit: pending.head, evidence: { pending, terminalValidation: { ...pending, conclusion: 'success', observedAt: '2026-11-06T12:18:00Z' }, terminalAcceptance: { ...pending, visualReviewedAt: '2026-11-06T12:19:00Z' } } }];
   const write = s => fs.writeFileSync(path.join(dir, 'automation/daily-cycle-state.json'), JSON.stringify(s));
   const commit = title => { git('add', '.'); git('commit', '-qm', title); return git('rev-parse', 'HEAD'); };
   write(state); const baseline = commit('accepted test baseline');
-  for (const file of ['scripts/validate-daily-cycle-preservation.mjs', 'lib/daily-cycle-guards.cjs']) fs.copyFileSync(path.join(__dirname, '..', file), path.join(dir, file));
+  for (const file of ['scripts/validate-daily-cycle-preservation.mjs', 'lib/daily-cycle-guards.cjs', 'automation/publishing-rules.json']) fs.copyFileSync(path.join(__dirname, '..', file), path.join(dir, file));
   const source = fs.readFileSync(path.join(__dirname, '../scripts/validate-daily-cycle-chain.mjs'), 'utf8');
   assert.equal((source.match(/aa43cf2782628289bd927c480799ba15b45af4be/g) || []).length, 1);
   // Only the isolated test copy substitutes the synthetic accepted commit.
@@ -33,7 +36,9 @@ test('main chain rejects deletion in a multi-commit push and every later event w
 });
 test('main chain accepts legitimate single commit, merge commit and unchanged manual/scheduled checks', t => {
   const f = fixture(t), before = f.git('rev-parse', 'HEAD');
-  f.state.current.publications.push({ type: 'article', url: '/news/two.html' }); f.state.current.fullArticleCount = 2; f.write(f.state); f.commit('valid same-day append');
+  f.state.current.status = 'in-progress'; f.state.current.outcomeSlot = 2;
+  f.state.current.regularPublicationSlots.push({ slot: 2, status: 'prepared', candidateTitle: 'Isolated second article', url: '/news/two.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-06T12:30:00Z' });
+  f.write(f.state); f.commit('valid same-day owned preparation without publication');
   assert.equal(f.check('push', before).status, 0);
   const main = f.git('branch', '--show-current'); f.git('checkout', '-qb', 'feature'); fs.writeFileSync(path.join(f.dir, 'feature.txt'), 'metadata'); f.commit('feature'); f.git('checkout', main); const preMerge = f.git('rev-parse', 'HEAD'); f.git('merge', '--no-ff', '-m', 'merge reviewed feature', 'feature');
   for (const [event, boundary] of [['push', preMerge], ['schedule'], ['workflow_dispatch']]) { const r = f.check(event, boundary); assert.equal(r.status, 0, r.stderr); }
@@ -43,6 +48,18 @@ test('missing, zero, inaccessible or non-ancestor baseline fails closed', t => {
   for (const before of ['', '0'.repeat(40), 'f'.repeat(40)]) { const r = f.check('push', before); assert.equal(r.status, 1); assert.match(r.stderr, /pre-push main boundary/); }
   const file = path.join(f.dir, 'scripts/validate-daily-cycle-chain.mjs'); fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replace(f.baseline, 'f'.repeat(40)));
   for (const event of ['schedule', 'workflow_dispatch']) { const r = f.check(event); assert.equal(r.status, 1); assert.match(r.stderr, /baseline is unavailable/); }
+});
+test('pull-request chain audits the explicit canonical revision while preserving existing event boundaries', t => {
+  const f = fixture(t), canonical = f.git('rev-parse', 'HEAD');
+  const check = (event, revision) => f.exec(process.execPath, ['scripts/validate-daily-cycle-chain.mjs', ...(revision ? [revision] : [])], { GITHUB_EVENT_NAME: event });
+  assert.equal(check('pull_request', canonical).status, 0);
+  assert.match(check('pull_request').stderr, /explicit canonical review revision required/);
+  assert.match(check('schedule', canonical).stderr, /only supported for pull_request/);
+  const bad = structuredClone(f.state); bad.current.publications = []; bad.current.fullArticleCount = 0;
+  f.write(bad); f.commit('isolated canonical loss'); f.write(f.state); const restored = f.commit('exact restoration');
+  f.git('checkout', '--detach', canonical);
+  const result = check('pull_request', restored); assert.equal(result.status, 1);
+  assert.match(result.stderr, /dropped a same-day publication/);
 });
 for (const badDate of [undefined, '2026-02-30', '2026-13-01', '2026-11-6']) test(`malformed intermediate date ${badDate} cannot launder lost publications`, t => {
   const f = fixture(t);
