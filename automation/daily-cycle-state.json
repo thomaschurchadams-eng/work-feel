@@ -190,7 +190,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T23:21:05.363Z",
+    "updatedAt": "2026-11-12T23:32:40.736Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -503,12 +503,12 @@
       {
         "slot": 6,
         "plannedDate": "2026-11-12",
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/insight-credit-union-proposed-vendor-risk-guidance.html",
         "candidateTitle": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-12T23:38:47.019Z",
-        "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
+        "nextAction": "Release the visually accepted article and verify exact production before counting publication.",
         "evidence": {
           "validationHistory": [],
           "pending": {
@@ -519,6 +519,25 @@
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-12T23:38:47.019Z"
+          },
+          "terminalValidation": {
+            "head": "b43527ed6d354e99f14a42febd574b58b2fb8b7d",
+            "run": 43328030940,
+            "job": 131565363328,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-12T23:32:39.711Z"
+          },
+          "terminalAcceptance": {
+            "head": "b43527ed6d354e99f14a42febd574b58b2fb8b7d",
+            "run": 43328030940,
+            "job": 131565363328,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-12T23:32:37.800Z",
+            "artifactId": 13994660997,
+            "artifactDigest": "sha256:c20afd874958303f78504b2e1f45dcf00c1304bab2a3d4a010fd98873953e4f1"
           }
         }
       }
@@ -530,7 +549,7 @@
       "recoveredMissedHigh": false,
       "nextReviewAt": "2026-11-13T07:00:00-05:00"
     },
-    "nextAction": "Resume this exact PR only when authorized artifact bytes can be inspected; preserve successful CI and all live receipts. Do not bypass the download gate or claim visual acceptance. If publication moves to another Eastern date, preserve this held day and rebase/retimestamp the candidate under that actual publication day before a new acceptance.",
+    "nextAction": "Release the visually accepted article and verify exact production before counting publication.",
     "validation": {
       "status": "production-verified",
       "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
@@ -552,7 +571,7 @@
       "requestedAdditionalAlerts": 3,
       "publishedAdditionalAlerts": 0,
       "unattendedExecution": "unproven",
-      "pendingArticlePR": 330,
+      "pendingArticlePR": 332,
       "preparedPacketBranch": "cuai/nov12-continuation-packet",
       "updatedAt": "2026-11-12T23:18:24.188Z"
     }
