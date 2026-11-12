@@ -26,7 +26,7 @@ for (const kind of ['count mismatch', 'duplicate identities']) test(`rollover re
 });
 test('actual CLI rejects malformed rollover while legitimate next-day reset and repeated reconciliation pass', t => {
   const base = { version: 1, history: [], current: { ...empty('2026-11-09'), publications: [{ type: 'article', url: '/news/a.html' }], fullArticleCount: 1 } };
-  const f = repo(t, base); const next = { ...base, history: [clone(base.current)], current: empty('2026-11-10') };
+  const f = repo(t, base); const next = { ...base, history: [clone(base.current)], current: empty('2026-11-13') };
   for (const mutate of [c => { c.current.fullArticleCount = 1; }, c => { c.current.publications = [{ type: 'article', url: '/news/a.html' }, { type: 'article', url: 'https://creditunionainews.com/news/a.html' }]; c.current.fullArticleCount = 2; }]) {
     const bad = clone(next); mutate(bad); f.write(bad); assert.equal(f.validate().status, 1);
   }

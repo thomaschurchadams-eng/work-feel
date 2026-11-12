@@ -1,10 +1,10 @@
 {
-  "version": 7,
+  "version": 8,
   "mode": "automatic-production",
   "humanApprovalRequired": false,
   "weeklyTargets": {
-    "siteStoriesMin": 15,
-    "siteStoriesMax": 15,
+    "siteStoriesMin": 25,
+    "siteStoriesMax": 25,
     "linkedinPosts": 5
   },
   "missionFit": {
@@ -55,13 +55,13 @@
     "urgency": 0.1
   },
   "cycleOwnership": {
-    "articleCycle": "Owns News and Insights only: target three distinct qualified articles per weekday, maximum three, through the same sequential daily publisher and unchanged schedule. Fifteen per full week is a target, not a guarantee or minimum output obligation. No weekend cycle or retrospective filling of closed days. No Alerts. Never extend bounded research or weaken gates to fill slots.",
-    "alertCycle": "Owns Alerts separately under automation/scheduled-tasks/cuai-operating-system.md. It may publish at most one genuinely new, time-sensitive, qualified Alert per weekday and has no quota or minimum target. Any legacy alert target count in daily-cycle-state.json is non-authoritative metadata and must not drive publication behavior."
+    "articleCycle": "Owns News and Insights only: target five distinct qualified articles per weekday from November 13, maximum five, through the same sequential daily publisher and unchanged schedule. Twenty-five per full week is a target, not a guarantee or minimum obligation. On November 12 only, five additional articles are authorized above the frozen baseline of one. No weekend cycle or retrospective filling of other closed days. No Alerts. Never extend bounded research or weaken gates to fill slots.",
+    "alertCycle": "Owns Alerts separately under automation/scheduled-tasks/cuai-operating-system.md. It may publish at most three genuinely new, time-sensitive, qualified Alerts per weekday and has no quota or minimum target. November 12 authorizes up to three additional qualified Alerts above its frozen zero baseline. Any legacy alert target count in daily-cycle-state.json is non-authoritative metadata and must not drive publication behavior."
   },
   "standardCycle": {
-    "fullArticleTarget": 3,
+    "fullArticleTarget": 5,
     "alertTarget": null,
-    "alertMaximumPerWeekday": 1,
+    "alertMaximumPerWeekday": 3,
     "alertQuotaEnabled": false,
     "minimumCandidatesToEvaluate": 12,
     "minimumDistinctBeatsToSearch": 6,
@@ -74,22 +74,33 @@
       "credit-union-specific-case-study",
       "data-led-explainer"
     ],
-    "completionRule": "Prospectively after release, use fullArticleTargetByWeekday for the Eastern date in the next ordinary weekday cycle; never reopen a completed cycle to fill the new target. Each article independently passes all gates, uses a distinct event and preferably different beat/format, and is committed and production-verified sequentially before starting the next package. Stop at three, an unresolved technical/permission gate, or exhaustion of the same bounded candidate pool and approved fallbacks. Preserve every earlier same-day publication, exact validation receipt and count. Alerts and social caps remain separate and unchanged.",
-    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. Record each unfilled slot in regularPublicationSlots with its actual editorial/approval hold or owned technical checkpoint/blocker, explicit reason and bounded next action. Record candidates evaluated, rejection reasons, beats/sources and exact evidence gaps. Do not invent run identities or label a technical block an editorial hold. Fifteen per full week is not a mandatory minimum; siteStoriesMin is legacy target metadata. The separate Alert cycle has no quota.",
+    "completionRule": "From the effective date, use fullArticleTargetByWeekday for the Eastern date in the ordinary weekday cycle; never reopen completed receipts or retrospectively fill other closed cycles. The one-time November 12 exception permits five additional articles above the immutable one-article baseline. Each article independently passes all gates, uses a distinct event and preferably different beat/format, and is committed and production-verified sequentially before starting the next package. Stop at the applicable configured maximum, an unresolved technical/permission gate, or exhaustion of the same bounded candidate pool and approved fallbacks. Preserve every earlier same-day publication, exact validation receipt and count. Alerts and social caps remain separate.",
+    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. Record each unfilled slot in regularPublicationSlots with its actual editorial/approval hold or owned technical checkpoint/blocker, explicit reason and bounded next action. Record candidates evaluated, rejection reasons, beats/sources and exact evidence gaps. Do not invent run identities or label a technical block an editorial hold. Twenty-five per full week is not a mandatory minimum; siteStoriesMin is legacy target metadata. The separate Alert cycle has no quota.",
     "fullArticleTargetByWeekday": {
-      "Monday": 3,
-      "Tuesday": 3,
-      "Wednesday": 3,
-      "Thursday": 3,
-      "Friday": 3
+      "Monday": 5,
+      "Tuesday": 5,
+      "Wednesday": 5,
+      "Thursday": 5,
+      "Friday": 5
     },
-    "fullArticleMaximumPerWeekday": 3
+    "fullArticleMaximumPerWeekday": 5,
+    "effectiveDate": "2026-11-13",
+    "oneTimeException": {
+      "date": "2026-11-12",
+      "baselineArticleCount": 1,
+      "additionalArticleMaximum": 5,
+      "baselineAlertCount": 0,
+      "additionalAlertMaximum": 3,
+      "baselineArticleUrl": "https://creditunionainews.com/insight-credit-union-deceased-member-servicing-authority.html",
+      "baselineProductionCommit": "33a53184da1908e6edd393ec4180de250ff51cc5",
+      "baselineHead": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907"
+    }
   },
   "expansionReview": {
-    "approvedDate": "2026-11-09",
-    "activation": "Next ordinary weekday cycle after an authorized release; private preparation is not activation. No retroactive filling of closed cycles.",
+    "approvedDate": "2026-11-12",
+    "activation": "November 12 one-time exception above frozen baseline; ordinary five-article weekday cadence begins November 13 after authorized release. No retrospective filling of other closed cycles.",
     "reviewAfterCompletedWeeks": 2,
-    "target": "15 qualified articles per full week; partial weeks and explicit held slots are not an obligation to backfill",
+    "target": "25 qualified articles per full week; partial weeks and explicit held slots are not an obligation to backfill",
     "formatRule": "Aim for at least three formats and five functions per week. At most two framework/checklist articles combined per week absent a recorded material-news exception. No rigid topic quota and no padding.",
     "nextStage": "Any further volume increase requires a new owner decision; no automatic escalation.",
     "continueCriteria": "Review actual qualified output, held and failed slots, corrections, breadth, production correctness, existing usage and available engagement after two completed weeks. Do not infer capacity or source supply from synthetic tests. No new recurring spend.",

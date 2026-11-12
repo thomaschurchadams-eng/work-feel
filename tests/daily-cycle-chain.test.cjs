@@ -8,7 +8,7 @@ function fixture(t) {
   const git = (...args) => { const r = exec('git', args); assert.equal(r.status, 0, r.stderr); return r.stdout.trim(); };
   git('init', '-q'); git('config', 'user.name', 'Test'); git('config', 'user.email', 'test@example.invalid');
   fs.mkdirSync(path.join(dir, 'automation')); fs.mkdirSync(path.join(dir, 'scripts')); fs.mkdirSync(path.join(dir, 'lib'));
-  const state = { version: 1, history: [], current: { date: '2026-11-06', fullArticleCount: 1, alertCount: 0, publications: [{ type: 'article', url: '/news/one.html' }] } };
+  const state = { version: 1, history: [], current: { date: '2026-11-13', fullArticleCount: 1, alertCount: 0, publications: [{ type: 'article', url: '/news/one.html' }] } };
   // Explicit isolated prior live proof; count alone cannot authorize slot two.
   const pending = { prNumber: 990001, head: 'a'.repeat(40), run: 990101, job: 990201, runAttempt: 1 };
   state.current.regularPublicationSlots = [{ slot: 1, status: 'live-verified', url: '/news/one.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-06T12:30:00Z', verifiedAt: '2026-11-06T12:20:00Z', productionCommit: pending.head, evidence: { pending, terminalValidation: { ...pending, conclusion: 'success', observedAt: '2026-11-06T12:18:00Z' }, terminalAcceptance: { ...pending, visualReviewedAt: '2026-11-06T12:19:00Z' } } }];

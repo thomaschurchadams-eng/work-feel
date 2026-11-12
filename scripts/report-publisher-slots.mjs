@@ -15,7 +15,8 @@ const weekday = new Intl.DateTimeFormat('en-US', { weekday: 'long', timeZone: zo
 const rules = read('publishing-rules.json');
 const state = read('daily-cycle-state.json');
 const coverage = read('coverage-ledger.json');
-const intended = rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0;
+const exception = rules.standardCycle.oneTimeException;
+const intended = date === exception?.date ? exception.baselineArticleCount + exception.additionalArticleMaximum : (rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0);
 const daily = [state.current, ...state.history].find(entry => entry?.date === date);
 const tracked = daily?.regularPublicationSlots ?? [];
 const canonical = value => typeof value === 'string' ? new URL(value, 'https://creditunionainews.com').href : null;

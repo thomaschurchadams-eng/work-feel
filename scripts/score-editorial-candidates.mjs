@@ -68,7 +68,7 @@ for(const candidate of scored.filter((c)=>!c.rejected)){
   const primaryFunction=candidate.functions[0], primaryTechnology=candidate.technologies[0];
   const fnCount=selected.filter((x)=>x.functions[0]===primaryFunction).length;
   const techCount=selected.filter((x)=>x.technologies[0]===primaryTechnology).length;
-  if(fnCount>=rules.selection.maximumSamePrimaryFunctionPerWeek || techCount>=rules.selection.maximumSamePrimaryTechnologyPerWeek) continue;
+  if(fnCount>=rules.selection.maximumSamePrimaryFunctionPerWeek || (primaryTechnology !== 'industry-development' && techCount>=rules.selection.maximumSamePrimaryTechnologyPerWeek)) continue;
   selected.push(candidate);
   if(selected.length>=rules.weeklyTargets.siteStoriesMax) break;
 }
