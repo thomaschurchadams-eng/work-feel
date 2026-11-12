@@ -154,7 +154,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T12:10:48.475Z",
+    "updatedAt": "2026-11-12T20:59:49.304Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -205,11 +205,23 @@
       },
       {
         "slot": 2,
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/heloc-balances-third-quarter-2026-credit-unions.html",
         "candidateTitle": "HELOC Balances Post Their Largest Quarterly Rise Since 2005",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-12T21:15:19.064Z"
+        "nextReviewAt": "2026-11-12T21:19:49.303Z",
+        "evidence": {
+          "pending": {
+            "prNumber": 328,
+            "head": "2560f0cebef1a082fd33573df7b5ae9662abcca4",
+            "run": 43305281909,
+            "job": 131486812950,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-12T21:19:49.303Z"
+          }
+        },
+        "nextAction": "Complete exact-head checks and visual review; retain this PR and checkpoint."
       }
     ],
     "socialDistribution": {
@@ -219,7 +231,7 @@
       "recoveredMissedHigh": false,
       "nextReviewAt": "2026-11-13T07:00:00-05:00"
     },
-    "nextAction": "Do not republish. Keep the qualified promotion prepared only until a fresh, reconciled Buffer inventory resolves destination review.",
+    "nextAction": "Complete exact-head checks and visual review; retain this PR and checkpoint.",
     "validation": {
       "status": "production-verified",
       "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
