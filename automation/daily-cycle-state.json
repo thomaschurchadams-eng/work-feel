@@ -172,7 +172,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T22:17:32.694Z",
+    "updatedAt": "2026-11-12T22:19:40.404Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -381,14 +381,23 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-12",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
         "candidateTitle": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-12T22:37:32.695Z",
         "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
         "evidence": {
-          "validationHistory": []
+          "validationHistory": [],
+          "pending": {
+            "prNumber": 330,
+            "head": "2a4ec368c7122c954bced0159eb8ccc44af28ed1",
+            "run": 43318810114,
+            "job": 131533769655,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-12T22:37:32.695Z"
+          }
         }
       }
     ],
