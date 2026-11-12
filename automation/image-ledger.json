@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ncua-accion-all-peoples-united-credit-union-charters",
+      "articleUrl": "/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
+      "imagePath": "/assets/ncua-accion-all-peoples-united-credit-union-charters.jpg",
+      "publishedAt": "2026-11-12T17:18:32-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "soft-editorial-illustration",
+      "subject": "member-interaction",
+      "composition": "wide-environmental",
+      "perspective": "eye-level",
+      "palette": "burgundy-sand",
+      "lighting": "warm-practical",
+      "texture": "paper-fiber",
+      "scene": "Illustrated neighborhood businesses and two financial-service counters serving different members",
+      "conceptScore": 75.2,
+      "conceptAlternatives": [
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "member-interaction",
+          "scene": "Illustrated neighborhood businesses and two financial-service counters serving different members",
+          "score": 75.2,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "documents-and-controls",
+          "scene": "Blank charter papers layered with neighborhood silhouettes and faceless member portraits",
+          "score": 53.5,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "architecture-and-infrastructure",
+          "scene": "Two distinct community centers surrounded by small businesses and homes, no real institution or signage",
+          "score": 50.9,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept from three distinct mediums and subjects; actual artwork visually reviewed.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "7cdb7d73a95d56e27926dce62c672298f0f4cac1c4c0a81b2013421e24bd3754"
+    },
+    {
       "id": "credit-union-fednow-2027-discount-economics",
       "articleUrl": "/insight-credit-union-fednow-2027-discount-economics.html",
       "imagePath": "/assets/credit-union-fednow-2027-discount-economics.jpg",
