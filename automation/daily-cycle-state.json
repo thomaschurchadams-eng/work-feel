@@ -220,7 +220,7 @@
       }
     ],
     "status": "completed",
-    "updatedAt": "2026-11-12T23:34:25.975525+00:00",
+    "updatedAt": "2026-11-12T23:52:50.354Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -583,7 +583,7 @@
       "recoveredMissedHigh": false,
       "nextReviewAt": "2026-11-13T07:00:00-05:00"
     },
-    "nextAction": "Article target completed. Existing Operating System owns qualified Alerts; distribution remains prepared pending provider review.",
+    "nextAction": "Five additional articles and three additional Alerts completed above the original morning article. Preserve these receipts; verify the existing next scheduled cycle without user intervention before accepting unattended operation.",
     "validation": {
       "status": "production-verified",
       "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
@@ -606,14 +606,14 @@
       "publishedAdditionalAlerts": 3,
       "unattendedExecution": "unproven",
       "preparedPacketBranch": "cuai/nov12-continuation-packet",
-      "updatedAt": "2026-11-12T23:33:43.160Z",
+      "updatedAt": "2026-11-12T23:52:50.354Z",
       "lastCompletedArticlePR": 332
     },
     "alertCycle": {
       "owner": "cuai-operating-system",
-      "status": "qualified-package",
+      "status": "live-verified",
       "sourceReviewAt": "2026-11-12T23:13:49.656502+00:00",
-      "note": "Three newly uncovered, primary-source-verified security advisories. Original CUAI publication instant will be bound to the exact first READY production deployment, then recorded without changing original source dates or counts.",
+      "note": "Three distinct Alerts verified in the exact first READY production deployment. Their original posting instant activates recency; original source dates, article receipts and all history remain unchanged.",
       "validationHistory": [
         {
           "prNumber": 333,
@@ -626,7 +626,12 @@
           "reason": "Historical date/header boundary test incorrectly assumed FinCEN was first in the changing full catalogue, including before its publication time. All 353 source checks, 44 rendered route checks and three archive-width journeys passed before that assertion failed.",
           "recovery": "Retain the real historical publication as the isolated boundary fixture. Keep complete current-catalogue rendered/archive checks and separate mixed known/unknown ordering journeys."
         }
-      ]
+      ],
+      "firstProductionCommit": "991db1d2eede5ca0c39c251adcb7c93567c69f53",
+      "productionDeployment": "dpl_At5kB4ubqc34s8EfexVn927ntDVA",
+      "publishedAt": "2026-11-12T23:52:30.661Z",
+      "verifiedAt": "2026-11-12T23:52:50.354Z",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157"
     }
   },
   "history": [
