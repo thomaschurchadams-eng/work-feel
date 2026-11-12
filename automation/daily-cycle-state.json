@@ -213,13 +213,37 @@
         "evidence": {
           "pending": {
             "prNumber": 328,
-            "head": "2560f0cebef1a082fd33573df7b5ae9662abcca4",
-            "run": 43305281909,
-            "job": 131486812950,
+            "head": "8216b11789bd796d6bcbfc638e81621bd288602d",
+            "run": 43306686732,
+            "job": 131491726437,
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-12T21:19:49.303Z"
-          }
+          },
+          "validationHistory": [
+            {
+              "prNumber": 328,
+              "head": "2560f0cebef1a082fd33573df7b5ae9662abcca4",
+              "run": 43305281909,
+              "job": 131486812950,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-12T21:19:49.303Z",
+              "status": "superseded",
+              "observedAt": "2026-11-12T21:05:25.110Z",
+              "terminalValidation": {
+                "head": "2560f0cebef1a082fd33573df7b5ae9662abcca4",
+                "run": 43305281909,
+                "job": 131486812950,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-12T21:02:20.079Z"
+              },
+              "reason": "Visual review found duplicate newsletter invitation; corrected package and news sitemap; original success retained, not reused."
+            }
+          ]
         },
         "nextAction": "Complete exact-head checks and visual review; retain this PR and checkpoint."
       }
