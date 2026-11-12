@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-proposed-vendor-risk-guidance",
+      "articleUrl": "/insight-credit-union-proposed-vendor-risk-guidance.html",
+      "imagePath": "/assets/credit-union-proposed-vendor-risk-guidance.jpg",
+      "publishedAt": "2026-11-12T18:19:05-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "mixed-media-collage",
+      "subject": "documents-and-controls",
+      "composition": "asymmetric-editorial",
+      "perspective": "overhead",
+      "palette": "slate-lime",
+      "lighting": "diffused-overcast",
+      "texture": "newsprint-grain",
+      "scene": "Unmarked vendor files connected to a modest branching diagram made from physical thread, no readable labels",
+      "conceptScore": 79.7,
+      "conceptAlternatives": [
+        {
+          "medium": "mixed-media-collage",
+          "subject": "documents-and-controls",
+          "scene": "Unmarked vendor files connected to a modest branching diagram made from physical thread, no readable labels",
+          "score": 79.7,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "physical-metaphor",
+          "scene": "Four connected blocks with one loose linkage, illustrating a vendor dependency",
+          "score": 68,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "cinematic-conceptual",
+          "subject": "operations-environment",
+          "scene": "A quiet service operations room seen through a window, indicating dependence on outside infrastructure",
+          "score": 59.2,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept from three distinct mediums and subjects; actual artwork visually reviewed.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "1625f821f934171e123730fd7068a08524f96113c5b52bcdd06f5989a2c21a55"
+    },
+    {
       "id": "credit-union-savers-match-2027-ira-readiness",
       "articleUrl": "/insight-credit-union-savers-match-2027-ira-readiness.html",
       "imagePath": "/assets/credit-union-savers-match-2027-ira-readiness.jpg",
