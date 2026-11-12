@@ -171,8 +171,8 @@
         "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-11-12T22:19:40.404Z",
+    "status": "blocked",
+    "updatedAt": "2026-11-12T22:53:09.648Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -381,12 +381,12 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-12",
-        "status": "pending-validation",
+        "status": "approval-hold",
         "url": "https://creditunionainews.com/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
         "candidateTitle": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-12T22:37:32.695Z",
-        "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
+        "nextReviewAt": "2026-11-13T07:00:00-05:00",
+        "nextAction": "Resume this exact PR only when authorized artifact bytes can be inspected; preserve successful CI and all live receipts. Do not bypass the download gate or claim visual acceptance. If publication moves to another Eastern date, preserve this held day and rebase/retimestamp the candidate under that actual publication day before a new acceptance.",
         "evidence": {
           "validationHistory": [],
           "pending": {
@@ -397,8 +397,26 @@
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-12T22:37:32.695Z"
+          },
+          "terminalValidation": {
+            "head": "2a4ec368c7122c954bced0159eb8ccc44af28ed1",
+            "run": 43318810114,
+            "job": 131533769655,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-12T22:53:08.782Z"
+          },
+          "artifactAccess": {
+            "artifactId": 13989392990,
+            "artifactDigest": "sha256:7a01cdafc9cd88c2632acd8f1cf4c49839545ccf400ca6273464b974398758fa",
+            "status": "download-blocked-not-visually-reviewed",
+            "observedAt": "2026-11-12T22:53:09.648Z",
+            "artifactFileId": "file_000000003ab081f59033cbd26651e04e"
           }
-        }
+        },
+        "holdReason": "Automated exact-head validation succeeded, but actual artifact/visual acceptance is unavailable in this runtime. Browser download approval first could not determine the origin; after establishing the source context the transfer timed out, and the subsequent current signed URL was blocked with net::ERR_BLOCKED_BY_CLIENT. The approved file-transfer helper also could not download bytes in the network-restricted terminal. User publishing authority is already granted; this is a platform artifact-access hold, not an editorial rejection or failed CI."
       }
     ],
     "socialDistribution": {
@@ -408,7 +426,7 @@
       "recoveredMissedHigh": false,
       "nextReviewAt": "2026-11-13T07:00:00-05:00"
     },
-    "nextAction": "Continue remaining additional article slots sequentially; preserve today's original article.",
+    "nextAction": "Resume this exact PR only when authorized artifact bytes can be inspected; preserve successful CI and all live receipts. Do not bypass the download gate or claim visual acceptance. If publication moves to another Eastern date, preserve this held day and rebase/retimestamp the candidate under that actual publication day before a new acceptance.",
     "validation": {
       "status": "production-verified",
       "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
@@ -421,7 +439,19 @@
       "deploymentId": "dpl_5iimvNS6AM88zm4w6H6WAc7u8SFk",
       "verifiedAt": "2026-11-12T12:10:48.475Z"
     },
-    "outcomeSlot": 4
+    "outcomeSlot": 4,
+    "blockedReason": "Slot 4 passed exact CI but required artifact/visual review is blocked by runtime download access. Five-plus-three target is incomplete.",
+    "additionalCycleProgress": {
+      "baselineArticleCount": 1,
+      "requestedAdditionalArticles": 5,
+      "completedAdditionalArticles": 2,
+      "remainingAdditionalArticles": 3,
+      "requestedAdditionalAlerts": 3,
+      "publishedAdditionalAlerts": 0,
+      "unattendedExecution": "unproven",
+      "pendingArticlePR": 330,
+      "preparedPacketBranch": "cuai/nov12-continuation-packet"
+    }
   },
   "history": [
     {
