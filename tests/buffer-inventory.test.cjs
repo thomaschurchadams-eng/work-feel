@@ -8,7 +8,8 @@ const policy = require('../automation/media-policy.json');
 const now = Date.parse('2026-11-11T22:00:00Z');
 const channel = { id: policy.distribution.channelId, displayName: 'CreditUnionAI News', service: 'linkedin', isQueuePaused: false };
 const identity = { channel, organizationId: 'fixture-org', commitSha: 'a'.repeat(40) };
-const post = (id = 'p1', overrides = {}) => ({ id, channelId: channel.id, status: 'scheduled', text: 'Useful story https://creditunionainews.com/news/example.html?utm_source=linkedin', dueAt: '2026-11-12T16:30:00Z', sentAt: null, ...overrides });
+const post = (id = 'p1', overrides = {}) => ({ id, channelId: channel.id, status: 'scheduled', text: 'Useful story https://creditunionainews.com/news/example.html?utm_source=linkedin', dueAt: '2026-11-12T16:30:00Z', sentAt: null, metadata: null, ...overrides });
+const linkedin = (overrides = {}) => ({ __typename: 'LinkedInPostMetadata', firstComment: null, linkAttachment: null, ...overrides });
 const page = (posts = [], hasNextPage = false, endCursor = null) => ({ posts: { edges: posts.map(node => ({ node })), pageInfo: { hasNextPage, endCursor } } });
 function pagesFixture(pages) {
   const calls = [];
@@ -117,6 +118,82 @@ test('a recognized CUAI link cannot hide a second unresolved destination', async
   assert.equal(valid.complete, true); assert.equal(valid.requiresReview, false); assert.equal(valid.records[0].requiresReview, false);
   assert.deepEqual(valid.records[0].canonicalUrls, [known, 'https://creditunionainews.com/news/b.html']);
 });
+test('reads body, first-comment and attachment-only destinations through the documented metadata union', async () => {
+  const url = 'https://creditunionainews.com/news/a.html';
+  for (const fields of [
+    { text: url, metadata: null },
+    { text: 'Read our coverage', metadata: linkedin({ firstComment: `Full story ${url}?utm_source=linkedin#summary` }) },
+    { text: 'Read our coverage', metadata: linkedin({ linkAttachment: { url, expandedUrl: null } }) },
+    { text: url, metadata: linkedin({ firstComment: url, linkAttachment: { url: `${url}?utm_source=linkedin`, expandedUrl: url } }) }
+  ]) {
+    const f = pagesFixture([page([post('destination', fields)])]);
+    const r = await readInventory(f.request, identity, () => now);
+    assert.equal(r.complete, true); assert.equal(r.requiresReview, false);
+    assert.deepEqual(r.records[0].canonicalUrls, [url]); assert.equal(f.calls.length, 1);
+    assert.match(f.calls[0].query, /metadata\s*\{\s*__typename\s*\.\.\. on LinkedInPostMetadata\s*\{\s*firstComment\s*linkAttachment\s*\{\s*url\s+expandedUrl/);
+    assert.doesNotMatch(f.calls[0].query, /externalLink/);
+  }
+});
+test('expandedUrl is evidence only for its paired attachment, never a separate body or comment link', async () => {
+  const url = 'https://creditunionainews.com/news/a.html';
+  const attachment = { url: 'https://buff.ly/paired', expandedUrl: url };
+  const resolved = await readInventory(pagesFixture([page([post('attached', { text: 'Read our coverage', metadata: linkedin({ linkAttachment: attachment }) })])]).request, identity, () => now);
+  assert.equal(resolved.complete, true); assert.equal(resolved.requiresReview, false);
+  assert.deepEqual(resolved.records[0].canonicalUrls, [url]);
+  for (const other of ['https://buff.ly/unrelated', 'https://buff.ly/paired']) {
+    for (const fields of [{ text: other, metadata: linkedin({ linkAttachment: attachment }) }, { text: 'Read our coverage', metadata: linkedin({ firstComment: other, linkAttachment: attachment }) }]) {
+      const r = await readInventory(pagesFixture([page([post('separate', fields)])]).request, identity, () => now);
+      assert.equal(r.complete, true); assert.equal(r.requiresReview, true); assert.equal(r.records[0].requiresReview, true);
+      assert.deepEqual(r.records[0].canonicalUrls, [url]); assert.doesNotMatch(JSON.stringify(r), /buff\.ly/);
+    }
+  }
+});
+test('conflicting or unresolved attachment pairs retain review and every recognized candidate', async () => {
+  const a = 'https://creditunionainews.com/news/a.html', b = 'https://creditunionainews.com/news/b.html';
+  for (const [linkAttachment, expected] of [
+    [{ url: a, expandedUrl: b }, [a, b]],
+    [{ url: a, expandedUrl: 'https://foreign.example/private' }, [a]],
+    [{ url: 'https://buff.ly/unresolved', expandedUrl: null }, []],
+    [{ url: 'https://foreign.example/a', expandedUrl: 'https://foreign.example/b' }, []],
+    [{ url: 'https://[bad', expandedUrl: a }, [a]],
+    [{ url: `https://user:SECRET@creditunionainews.com/news/a.html`, expandedUrl: a }, [a]]
+  ]) {
+    const r = await readInventory(pagesFixture([page([post('pair', { text: '', metadata: linkedin({ linkAttachment }) })])]).request, identity, () => now);
+    assert.equal(r.complete, true); assert.equal(r.requiresReview, true); assert.equal(r.records[0].requiresReview, true);
+    assert.deepEqual(r.records[0].canonicalUrls, expected); assert.doesNotMatch(JSON.stringify(r), /foreign\.example|buff\.ly|SECRET|\[bad/);
+  }
+});
+test('malformed or omitted metadata stays reviewable; explicit null is a valid absence', async () => {
+  for (const metadata of [undefined, [], 'bad', {}, { __typename: 'OtherPostMetadata' }, linkedin({ firstComment: 42 }), linkedin({ firstComment: undefined }), linkedin({ firstComment: 'a'.repeat(100001) }), linkedin({ linkAttachment: [] }), linkedin({ linkAttachment: undefined }), linkedin({ linkAttachment: {} }), linkedin({ linkAttachment: { url: null, expandedUrl: null } }), linkedin({ linkAttachment: { url: 'https://creditunionainews.com/news/a.html', expandedUrl: 42 } })]) {
+    const r = await readInventory(pagesFixture([page([post('bad-meta', { metadata })])]).request, identity, () => now);
+    assert.equal(r.complete, true); assert.equal(r.requiresReview, true); assert.equal(r.records[0].requiresReview, true);
+    assert.ok(r.records[0].canonicalUrls.includes('https://creditunionainews.com/news/example.html'));
+  }
+  for (const metadata of [null, linkedin()]) {
+    const known = await readInventory(pagesFixture([page([post('known', { metadata })])]).request, identity, () => now);
+    assert.equal(known.requiresReview, false);
+    const absent = await readInventory(pagesFixture([page([post('none', { text: '', metadata })])]).request, identity, () => now);
+    assert.equal(absent.requiresReview, true); assert.deepEqual(absent.records[0].canonicalUrls, []);
+  }
+});
+test('metadata output is redacted, and a service permalink is not an article destination', async () => {
+  const r = await readInventory(pagesFixture([page([post('redact', { text: 'PRIVATE BODY', externalLink: 'https://creditunionainews.com/news/not-a-destination.html', metadata: linkedin({ firstComment: 'PRIVATE COMMENT person@example.com https://foreign.example/private?token=SECRET https://creditunionainews.com/news/a.html?token=SECRET#private', linkAttachment: { url: 'https://buff.ly/paired?token=SECRET', expandedUrl: 'https://creditunionainews.com/news/b.html?token=SECRET#private', title: 'PRIVATE TITLE' } }) })])]).request, identity, () => now);
+  assert.deepEqual(r.records[0].canonicalUrls, ['https://creditunionainews.com/news/a.html', 'https://creditunionainews.com/news/b.html']);
+  assert.equal(r.requiresReview, true);
+  assert.doesNotMatch(JSON.stringify(r), /PRIVATE|person@|foreign\.example|buff\.ly|SECRET|not-a-destination|firstComment|linkAttachment/);
+  const permalinkOnly = await readInventory(pagesFixture([page([post('permalink', { text: '', externalLink: 'https://www.linkedin.com/feed/update/example', metadata: null })])]).request, identity, () => now);
+  assert.deepEqual(permalinkOnly.records[0].canonicalUrls, []); assert.equal(permalinkOnly.requiresReview, true);
+});
+test('metadata destinations survive pagination beyond the first 100 without extra requests', async () => {
+  const f = pagesFixture([page(Array.from({ length: 100 }, (_, i) => post(`p${i}`)), true, 'next'), page([
+    post('comment', { text: '', metadata: linkedin({ firstComment: 'https://creditunionainews.com/news/comment.html' }) }),
+    post('attachment', { text: '', metadata: linkedin({ linkAttachment: { url: 'https://buff.ly/paired', expandedUrl: 'https://creditunionainews.com/news/attachment.html' } }) })
+  ])]);
+  const r = await readInventory(f.request, identity, () => now);
+  assert.equal(r.complete, true); assert.equal(r.requiresReview, false); assert.equal(r.recordCount, 102); assert.equal(f.calls.length, 2);
+  assert.deepEqual(r.records[100].canonicalUrls, ['https://creditunionainews.com/news/comment.html']);
+  assert.deepEqual(r.records[101].canonicalUrls, ['https://creditunionainews.com/news/attachment.html']);
+});
 
 function endpointFixture({ authorized = true, commitSha = identity.commitSha, channels = [channel], inventory = [page()], metricFailure = false } = {}) {
   const calls = [], module = { exports: {} }; let pageIndex = 0, queueReads = 0;
@@ -161,6 +238,19 @@ test('actual endpoint propagates mixed-link review without retaining text or res
   assert.equal(r.complete, true); assert.equal(r.records[0].requiresReview, true); assert.equal(r.requiresReview, true);
   assert.deepEqual(r.records[0].canonicalUrls, ['https://creditunionainews.com/news/a.html']);
   assert.doesNotMatch(JSON.stringify(r), /buff\.ly|SECRET|plus|token/); assert.equal(f.calls.length, 4);
+});
+test('actual endpoint reads comment and attachment destinations with no expansion, mutation or private output', async () => {
+  const f = endpointFixture({ inventory: [page([post('comment', { text: '', metadata: linkedin({ firstComment: 'https://creditunionainews.com/news/a.html' }) })], true, 'next'), page([
+    post('attachment', { text: '', metadata: linkedin({ linkAttachment: { url: 'https://buff.ly/paired', expandedUrl: 'https://creditunionainews.com/news/b.html?token=SECRET' } }) }),
+    post('mixed', { metadata: linkedin({ firstComment: 'https://buff.ly/unknown' }) })
+  ])] });
+  await f.run();
+  const r = f.response.body.reservationInventory;
+  assert.equal(f.response.statusCode, 200); assert.equal(f.response.body.ok, true); assert.equal(r.complete, true); assert.equal(r.requiresReview, true);
+  assert.deepEqual(r.records.map(p => p.requiresReview), [false, false, true]);
+  assert.deepEqual(r.records[0].canonicalUrls, ['https://creditunionainews.com/news/a.html']);
+  assert.deepEqual(r.records[1].canonicalUrls, ['https://creditunionainews.com/news/b.html']);
+  assert.doesNotMatch(JSON.stringify(r), /buff\.ly|SECRET|firstComment|linkAttachment/); assert.equal(f.calls.length, 5); assert.equal(f.queueReads(), 1);
 });
 test('unauthorized, mismatched commit/method/channel all fail before inventory; duplicate channel identity is rejected', async () => {
   for (const [options, method, code] of [[{ authorized: false }, 'GET', 401], [{ commitSha: 'wrong' }, 'POST', 403], [{}, 'DELETE', 405], [{ channels: [{ ...channel, id: 'other' }] }, 'GET', 409], [{ channels: [channel, channel] }, 'GET', 409]]) {
