@@ -213,9 +213,9 @@
         "evidence": {
           "pending": {
             "prNumber": 328,
-            "head": "8216b11789bd796d6bcbfc638e81621bd288602d",
-            "run": 43306686732,
-            "job": 131491726437,
+            "head": "2c0559e7d2be5ea9dfd78a41a66f0314f58eceb1",
+            "run": 43307410715,
+            "job": 131494708692,
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-12T21:19:49.303Z"
@@ -242,6 +242,28 @@
                 "observedAt": "2026-11-12T21:02:20.079Z"
               },
               "reason": "Visual review found duplicate newsletter invitation; corrected package and news sitemap; original success retained, not reused."
+            },
+            {
+              "prNumber": 328,
+              "head": "8216b11789bd796d6bcbfc638e81621bd288602d",
+              "run": 43306686732,
+              "job": 131491726437,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-12T21:19:49.303Z",
+              "status": "superseded",
+              "observedAt": "2026-11-12T21:10:14.751Z",
+              "reason": "Completed three-concept artwork selection and generated the highest-ranked valid concept; source/layout unchanged except matching image and alt text.",
+              "terminalValidation": {
+                "head": "8216b11789bd796d6bcbfc638e81621bd288602d",
+                "run": 43306686732,
+                "job": 131491726437,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-12T21:10:14.751Z"
+              }
             }
           ]
         },
