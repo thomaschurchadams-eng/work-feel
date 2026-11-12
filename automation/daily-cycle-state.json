@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-12",
     "fullArticleCount": 6,
-    "alertCount": 0,
+    "alertCount": 3,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "payments-deposits",
@@ -196,10 +196,31 @@
         "primaryFunctionalAudience": "functional-leader",
         "promotionPriority": "Library",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "alert",
+        "title": "ScreenConnect Incident Prompts Urgent Client and Vendor Checks",
+        "url": "https://creditunionainews.com/alerts/#screenconnect-incident-client-vendor-checks-november-2026",
+        "sourceUrl": "https://www.connectwise.com/company/trust/advisories",
+        "sourceDate": "Nov 12, 2026"
+      },
+      {
+        "type": "alert",
+        "title": "Check Point Discloses Exploited Gateway Attack Chain; Hotfix Urged",
+        "url": "https://creditunionainews.com/alerts/#check-point-exploited-gateway-chain-november-2026",
+        "sourceUrl": "https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/",
+        "sourceDate": "Nov 12, 2026"
+      },
+      {
+        "type": "alert",
+        "title": "Apache Releases Fix for Critical HTTP/2 Remote-Code-Execution Flaw",
+        "url": "https://creditunionainews.com/alerts/#apache-http-server-critical-http2-fix-november-2026",
+        "sourceUrl": "https://httpd.apache.org/security/vulnerabilities_24.html",
+        "sourceDate": "Nov 11, 2026"
       }
     ],
     "status": "completed",
-    "updatedAt": "2026-11-12T23:33:43.160Z",
+    "updatedAt": "2026-11-12T23:34:25.975525+00:00",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -582,11 +603,30 @@
       "completedAdditionalArticles": 5,
       "remainingAdditionalArticles": 0,
       "requestedAdditionalAlerts": 3,
-      "publishedAdditionalAlerts": 0,
+      "publishedAdditionalAlerts": 3,
       "unattendedExecution": "unproven",
       "preparedPacketBranch": "cuai/nov12-continuation-packet",
       "updatedAt": "2026-11-12T23:33:43.160Z",
       "lastCompletedArticlePR": 332
+    },
+    "alertCycle": {
+      "owner": "cuai-operating-system",
+      "status": "qualified-package",
+      "sourceReviewAt": "2026-11-12T23:13:49.656502+00:00",
+      "note": "Three newly uncovered, primary-source-verified security advisories. Original CUAI publication instant will be bound to the exact first READY production deployment, then recorded without changing original source dates or counts.",
+      "validationHistory": [
+        {
+          "prNumber": 333,
+          "head": "f08b8954d462f379db06d52bf253eccd6f219db1",
+          "run": 43330144082,
+          "job": 131572494979,
+          "runAttempt": 1,
+          "conclusion": "failure",
+          "observedAt": "2026-11-12T23:41:59.283Z",
+          "reason": "Historical date/header boundary test incorrectly assumed FinCEN was first in the changing full catalogue, including before its publication time. All 353 source checks, 44 rendered route checks and three archive-width journeys passed before that assertion failed.",
+          "recovery": "Retain the real historical publication as the isolated boundary fixture. Keep complete current-catalogue rendered/archive checks and separate mixed known/unknown ordering journeys."
+        }
+      ]
     }
   },
   "history": [

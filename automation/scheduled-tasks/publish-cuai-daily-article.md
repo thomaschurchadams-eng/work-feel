@@ -37,11 +37,20 @@ For each qualifying article, sequentially:
 
 - Route as News when the thesis depends on a recent event; otherwise route as Insights.
 - Produce a complete, source-linked article with accurate date, clear headline, neutral framing, practical implication, relevant internal links, appropriate image, metadata, correct section index, homepage placement where warranted, sitemap/ledger updates, and required analytics/SEO data.
+- Use the existing article components: one newsletter invitation per article, and `class="log-table"` with scoped column headers for comparison tables. Inspect the rendered body on desktop and mobile before release.
 - Preserve all existing site content and concurrent work. Re-read `main` immediately before writing and merge current changes rather than overwriting them.
 - Use one atomic commit for all article, artwork, listing, sitemap and coverage-ledger changes. Canonical checkpoint/outcome state is written separately by this same publisher through the ordered protocol below; the article PR must not change `automation/daily-cycle-state.json`. Do not create scan-only content commits.
 - Run all applicable validation and production checks. Verify the production deployment is ready and the live article, image, listing, and any homepage placement render correctly.
 - Artwork must be explicitly selected and relevant; never fill missing listing artwork with rotating generic or placeholder assets. Legacy cards without approved art may be intentionally text-only. Inspect listing cards on desktop/mobile, preserve working authored art, and exercise image-error behavior: retain readable title/summary/link without a broken-image box or unrelated replacement. Unexpected failed assets still fail readiness even if the interface degrades gracefully. Run the normal rendered acceptance path, including its card-artwork regressions, before handoff.
 - Never publish unsupported claims, invented quotes, implied partnerships, fabricated performance results, or stale facts presented as current.
+
+### Unattended execution acceptance
+
+Tom has authorized the ordinary weekday cycle within the current publishing limits. Do not ask him to approve each article, routine repository write, merge or deployment again. Use the existing authorized connected actions and exact-head CI artifact path; visual acceptance is the publishing agent’s work, not a new user sign-off. Prefer the GitHub artifact download’s authorized file reference/direct transfer over an interactive browser-download flow when available, verify the artifact SHA-256 and revision, and inspect the actual screenshots.
+
+A platform permission prompt or missing runtime capability is still a real execution dependency: existing editorial authorization does not disable it. Retain the exact owned checkpoint, identify the prompting action when the platform exposes it, and report the dependency through the existing Reliability Watch incident. Do not retry an unchanged denial, weaken security controls, manufacture approval or call the process unattended because a human clicked through it. A same-conversation inline continuation is not a scheduled-worker test.
+
+Accept the expanded unattended process only from an observed independently scheduled cycle with its actual article/Alert outcomes, preserved same-day counts, complete release evidence and no required user intervention. Distinguish this evidence from a prepared configuration, an earlier one-article run, and a supervised five-article run. Keep any remaining dependency open in the existing improvement entry; do not create another owner or approval gate.
 
 ### Pending validation ownership and terminal evidence
 
