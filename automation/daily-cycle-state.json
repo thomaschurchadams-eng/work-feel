@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-12",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -169,10 +169,19 @@
         "primaryFunctionalAudience": "Credit-union finance and treasury leaders",
         "promotionPriority": "Library",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
+        "title": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
+        "classification": "Insights",
+        "primaryFunctionalAudience": "executive",
+        "promotionPriority": "Library",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T23:05:53.434Z",
+    "updatedAt": "2026-11-12T23:08:17.327Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -381,12 +390,12 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-12",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
         "candidateTitle": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T07:00:00-05:00",
-        "nextAction": "Resume this exact PR only when authorized artifact bytes can be inspected; preserve successful CI and all live receipts. Do not bypass the download gate or claim visual acceptance. If publication moves to another Eastern date, preserve this held day and rebase/retimestamp the candidate under that actual publication day before a new acceptance.",
+        "nextAction": "Retain live proof; do not republish.",
         "evidence": {
           "validationHistory": [],
           "pending": {
@@ -430,8 +439,12 @@
             "visualReviewedAt": "2026-11-12T23:05:49.025Z",
             "artifactId": 13989392990,
             "artifactDigest": "sha256:7a01cdafc9cd88c2632acd8f1cf4c49839545ccf400ca6273464b974398758fa"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_GmFV8ZGJAVuKyopn1o2N9V6G9yEX"
+        },
+        "productionCommit": "7de4fd0d8777fcd3c5ee471d6fbde2c24e9fd127",
+        "verifiedAt": "2026-11-12T23:08:17.327Z",
+        "liveProof": "Exact production READY; desktop/mobile article, original 1200×630 image, Insights listing and first homepage card verified without overflow or runtime errors."
       }
     ],
     "socialDistribution": {
@@ -458,13 +471,14 @@
     "additionalCycleProgress": {
       "baselineArticleCount": 1,
       "requestedAdditionalArticles": 5,
-      "completedAdditionalArticles": 2,
-      "remainingAdditionalArticles": 3,
+      "completedAdditionalArticles": 3,
+      "remainingAdditionalArticles": 2,
       "requestedAdditionalAlerts": 3,
       "publishedAdditionalAlerts": 0,
       "unattendedExecution": "unproven",
       "pendingArticlePR": 330,
-      "preparedPacketBranch": "cuai/nov12-continuation-packet"
+      "preparedPacketBranch": "cuai/nov12-continuation-packet",
+      "updatedAt": "2026-11-12T23:08:17.327Z"
     }
   },
   "history": [
