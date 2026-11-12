@@ -1,10 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "mode": "automatic-production",
   "humanApprovalRequired": false,
   "weeklyTargets": {
-    "siteStoriesMin": 8,
-    "siteStoriesMax": 8,
+    "siteStoriesMin": 15,
+    "siteStoriesMax": 15,
     "linkedinPosts": 5
   },
   "missionFit": {
@@ -39,7 +39,7 @@
     "missing-credit-union-operating-implication",
     "unsafe-secondary-daily-state-finalization"
   ],
-  "productionBehavior": "Candidates that pass hard stops and score at or above the minimum publish directly to main. Failed candidates are logged with reasons and do not request routine human approval.",
+  "productionBehavior": "Candidates that pass hard stops and score at or above the minimum proceed through the existing exact-head PR checks and authorized release path. The same publisher verifies production and reconciles canonical state through the permitted checkout-capable preservation path. Failed candidates are logged with reasons and do not request routine human approval.",
   "statePersistence": {
     "auditPath": "automation/daily-cycle-state.json",
     "connectorOnlySecondaryFinalization": "forbidden",
@@ -55,11 +55,11 @@
     "urgency": 0.1
   },
   "cycleOwnership": {
-    "articleCycle": "Owns News and Insights only: one primary article each weekday, plus one distinct qualified article Monday, Wednesday and Friday. Maximum two per day; no Alerts. Never extend the cycle to fill weak slots.",
+    "articleCycle": "Owns News and Insights only: target three distinct qualified articles per weekday, maximum three, through the same sequential daily publisher and unchanged schedule. Fifteen per full week is a target, not a guarantee or minimum output obligation. No weekend cycle or retrospective filling of closed days. No Alerts. Never extend bounded research or weaken gates to fill slots.",
     "alertCycle": "Owns Alerts separately under automation/scheduled-tasks/cuai-operating-system.md. It may publish at most one genuinely new, time-sensitive, qualified Alert per weekday and has no quota or minimum target. Any legacy alert target count in daily-cycle-state.json is non-authoritative metadata and must not drive publication behavior."
   },
   "standardCycle": {
-    "fullArticleTarget": 1,
+    "fullArticleTarget": 3,
     "alertTarget": null,
     "alertMaximumPerWeekday": 1,
     "alertQuotaEnabled": false,
@@ -74,25 +74,25 @@
       "credit-union-specific-case-study",
       "data-led-explainer"
     ],
-    "completionRule": "Use fullArticleTargetByWeekday for the Eastern date. Each article independently passes all gates, uses a distinct event and preferably different beat/format, and is committed and production-verified sequentially. Stop at the dated target or after exhausting the bounded candidate pool and fallbacks. Preserve earlier same-day publications and counts; never overwrite them with a zero-publication outcome for a later slot. Alerts remain separate.",
-    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. When the article target remains unfilled, record the candidates evaluated, rejection reason for each, beats and sources searched, and the exact evidence gap. The separate Alert cycle records a no-Alert outcome when nothing qualifies; that is not a quota shortfall.",
+    "completionRule": "Prospectively after release, use fullArticleTargetByWeekday for the Eastern date in the next ordinary weekday cycle; never reopen a completed cycle to fill the new target. Each article independently passes all gates, uses a distinct event and preferably different beat/format, and is committed and production-verified sequentially before starting the next package. Stop at three, an unresolved technical/permission gate, or exhaustion of the same bounded candidate pool and approved fallbacks. Preserve every earlier same-day publication, exact validation receipt and count. Alerts and social caps remain separate and unchanged.",
+    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. Record each unfilled slot in regularPublicationSlots with its actual editorial/approval hold or owned technical checkpoint/blocker, explicit reason and bounded next action. Record candidates evaluated, rejection reasons, beats/sources and exact evidence gaps. Do not invent run identities or label a technical block an editorial hold. Fifteen per full week is not a mandatory minimum; siteStoriesMin is legacy target metadata. The separate Alert cycle has no quota.",
     "fullArticleTargetByWeekday": {
-      "Monday": 2,
-      "Tuesday": 1,
-      "Wednesday": 2,
-      "Thursday": 1,
-      "Friday": 2
+      "Monday": 3,
+      "Tuesday": 3,
+      "Wednesday": 3,
+      "Thursday": 3,
+      "Friday": 3
     },
-    "fullArticleMaximumPerWeekday": 2
+    "fullArticleMaximumPerWeekday": 3
   },
   "expansionReview": {
-    "effectiveDate": "2026-09-30",
+    "approvedDate": "2026-11-09",
+    "activation": "Next ordinary weekday cycle after an authorized release; private preparation is not activation. No retroactive filling of closed cycles.",
     "reviewAfterCompletedWeeks": 2,
-    "reviewDate": "2026-10-16",
-    "target": "8 articles per full week; partial first week is not a full-week shortfall",
+    "target": "15 qualified articles per full week; partial weeks and explicit held slots are not an obligation to backfill",
     "formatRule": "Aim for at least three formats and five functions per week. At most two framework/checklist articles combined per week absent a recorded material-news exception. No rigid topic quota and no padding.",
-    "nextStage": "10 per week is a proposal only after review, not authorized automatic escalation.",
-    "continueCriteria": "At least 14 of 16 intended slots across two complete weeks, all published packages verified, no unresolved material sourcing/production failure, no new recurring spend, and available engagement reviewed without inventing missing evidence.",
-    "stopOrRevise": "Pause second slots on material sourcing/deployment failures or exhausted existing usage; retain healthy primary cycle. If 14 of16 is missed, resolve source or capacity shortfalls before expansion. Missing audience data cannot justify 10/week."
+    "nextStage": "Any further volume increase requires a new owner decision; no automatic escalation.",
+    "continueCriteria": "Review actual qualified output, held and failed slots, corrections, breadth, production correctness, existing usage and available engagement after two completed weeks. Do not infer capacity or source supply from synthetic tests. No new recurring spend.",
+    "stopOrRevise": "Stop later packages on unresolved material sourcing/deployment failures, permission blocks or exhausted existing usage; preserve all completed packages and owned checkpoints. Record explicit reasons for unfilled slots, diagnose repeated capacity/source shortfalls, and never add scans, spend, schedules or weaker gates to fill the target."
   }
 }

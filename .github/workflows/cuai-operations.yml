@@ -12,6 +12,8 @@ on:
       - 'lib/media-slots.cjs'
       - 'lib/browser-readiness.cjs'
       - 'lib/daily-cycle-guards.cjs'
+      - 'lib/publisher-write-plan.cjs'
+      - 'scripts/validate-publisher-review.mjs'
       - 'lib/publisher-validation.cjs'
       - 'lib/design-review-routes.cjs'
       - 'scripts/check-operational-policy.cjs'
@@ -64,7 +66,7 @@ jobs:
       - name: Validate daily-cycle history against PR base
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: node scripts/validate-daily-cycle-preservation.mjs automation/daily-cycle-state.json "$BASE_SHA"
+        run: node scripts/validate-publisher-review.mjs "$BASE_SHA"
       - name: Isolate the test browser cache for this job
         run: printf '%s\n' "PLAYWRIGHT_BROWSERS_PATH=${RUNNER_TEMP}/cuai-design-browsers" >> "$GITHUB_ENV"
       - name: Use Node for design checks

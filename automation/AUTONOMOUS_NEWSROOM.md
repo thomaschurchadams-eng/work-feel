@@ -8,7 +8,7 @@ Publish reliable, credible CreditUnionAI News coverage directly to production wi
 
 The newsroom uses separate, single-purpose cycles:
 
-1. **Article cycle** — publishes one primary News or Insights article plus one distinct qualified second article on Monday, Wednesday and Friday, under publishing-rules.json.
+1. **Article cycle** — targets three distinct qualified News or Insights articles per weekday, maximum three, sequentially through the same Daily Publisher under publishing-rules.json. No schedule or weekend expansion.
 2. **Alert cycle** — publishes Alerts and maintains the ticker.
 3. **Maintenance cycle** — handles archive migration, Intelligence maintenance, corrections, source health, newsletters and retention.
 
@@ -20,12 +20,12 @@ For Alert quantity, cadence and task authority, `automation/scheduled-tasks/cuai
 
 1. Read only the files required for the article: `editorial-routing.json`, `editorial-taxonomy.json`, `publishing-rules.json`, `coverage-ledger.json`, `image-taxonomy.json`, `image-ledger.json`, `editorial-voice.md`, `analytics-measurement.json`, `seo-policy.json`, the relevant article template, the homepage, the correct section index, sitemaps and articles from the prior 14 days.
 2. Search the prior 24–72 hours across at least six distinct beats and evaluate at least twelve credible candidates. Prefer primary documents and developments with a clear credit-union operating implication.
-3. Select one candidate that clears all hard stops. If no current-event candidate qualifies, use the fallback order in `publishing-rules.json`: durable multi-source Insight, credit-union case study, then data-led explainer. Do not publish weak or unsupported material.
+3. Select the strongest distinct candidate that clears all hard stops for each successive slot from the same bounded pool. If no current-event candidate qualifies, use the fallback order in `publishing-rules.json`: durable multi-source Insight, credit-union case study, then data-led explainer. Do not publish weak or unsupported material or expand research to force three stories.
 4. Route the article before drafting. Use News when the headline depends on a recent event; otherwise use Insights.
-5. Produce each complete article package sequentially: article, one passing 1200×630 image, metadata, byline, sources, internal links, correct section index, homepage placement, sitemaps, coverage ledger, image ledger, newsroom state, daily-cycle state and social queue when appropriate.
+5. Produce each complete article package sequentially: article, one passing 1200×630 image, metadata, byline, sources, internal links, correct section index, homepage placement, sitemaps, coverage ledger, image ledger and newsroom state. Leave daily-cycle state unchanged on the article branch; the same publisher persists canonical checkpoints and live closeout through the existing checkout-capable preservation path in its policy. Social selection follows actual live verification under the separate unchanged shared caps. Finish exact validation, actual visual review and production verification before starting the next package; an unresolved technical/permission block stops later packages under the same owner.
 6. Run only the validators relevant to the article package, including analytics and SEO. Do not run unrelated Intelligence, corrections, retention, newsletter or archive-migration work.
-7. Re-read `main` immediately before writing, preserve concurrent changes, commit the complete package directly to `main`, confirm the Vercel deployment is READY and verify the live article, image, listing and homepage.
-8. Every scheduled article cycle must leave one dated machine-observable outcome in `automation/daily-cycle-state.json`. A published article records the normal package state. If nothing qualifies, persist `fullArticleCount: 0`, the candidate/beat evidence available, rejection/evidence-gap detail and a `no-article-published` status. If a material pre-publication blocker occurs and GitHub remains writable, persist a `blocked` status with the exact blocker. This outcome-only state is reliability evidence, not editorial content.
+7. Re-read `main` immediately before writing, preserve concurrent changes, submit the atomic package through the existing exact-head PR checks and authorized merge path, confirm the Vercel deployment is READY and verify the live article, image, listing and homepage. The same publisher then verifies its canonical closeout from a fresh checkout and exact stored blob; connector-only secondary whole-file finalization remains forbidden.
+8. Every scheduled article cycle must leave one dated machine-observable outcome in `automation/daily-cycle-state.json`, preserving all earlier same-day publications and exact receipts. Record each unfilled slot and its actual reason using the structured admission rules in the publisher policy. Zero publications is valid only when no article has already been recorded that day. Preparation before CI uses an owned nonterminal `prepared` slot, then its real exact checkpoint; do not invent run IDs. Pending/failure ownership remains with the same daily publisher. This outcome-only state is reliability evidence, not editorial content.
 
 ## Alert cycle
 
@@ -46,7 +46,7 @@ Maintenance work is separate from publishing. Growth review, source health, corr
 - Do not schedule article, Alert or feature publishers for the same start time.
 - `daily-cycle-state.json` is a reporting ledger, not a lock. When the date changes, move the prior `current` object to `history` and initialize the new date before recording output.
 - Re-read `main` immediately before every write. If another commit landed during the run, merge its current content rather than overwriting it.
-- Use one commit per completed article package. Do not create repeated scan-only content commits when nothing publishes. A single state-only commit recording a scheduled cycle's `no-article-published` or `blocked` outcome is required machine-observable reliability state and is not considered scan noise.
+- Use one atomic content/coverage commit per article package. The same publisher separately persists canonical preparation, checkpoint, validated acceptance and verified live outcome through the executable two-ref protocol in its controlling policy; the article branch leaves daily-cycle state untouched. Do not create repeated scan-only content commits when nothing publishes. A single state-only commit recording a scheduled cycle's `no-article-published` or `blocked` outcome is required machine-observable reliability state and is not considered scan noise.
 
 ## Failure behavior
 
@@ -60,4 +60,4 @@ For every full article, add valid editorial analytics attributes and complete ca
 
 ## Weekly portfolio
 
-Target eight articles across the existing five weekday cycles: 2/1/2/1/2. Follow the September 29 expansion section in the article policy and the version 6 publishing rules. Alerts remain separate and have no quota. Preserve earlier same-day outcomes; stop second slots if quality or existing usage cannot support them.
+Target fifteen qualified articles across the existing five weekday cycles: three per weekday, maximum three. Follow the prospective November 9 cadence section and version 7 publishing rules. This is a target, not a guarantee or requirement to fill weak slots; the twelve-candidate pool, approved fallbacks, sourcing gates and existing usage remain bounded. Preserve earlier same-day outcomes and record held/unfilled slots; do not reopen completed cycles. Alerts remain separate with no quota; LinkedIn remains at one company post per weekday and five per week across all eligible article/media selections.
