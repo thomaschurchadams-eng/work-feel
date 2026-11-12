@@ -6,270 +6,431 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-11",
-    "fullArticleCount": 2,
+    "date": "2026-11-12",
+    "fullArticleCount": 0,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "finance-treasury",
-      "board-strategy",
       "payments-deposits",
-      "it-data-cybersecurity",
       "risk-compliance",
-      "hr-training",
+      "board-strategy",
+      "finance-treasury",
+      "lending-collections",
       "operations",
-      "vendor-management",
-      "marketing-growth",
-      "lending-collections"
-    ],
-    "publications": [
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
-        "url": "https://creditunionainews.com/news/safe-becu-member-support-final-approval.html",
-        "primaryFunctionalAudience": "Credit-union boards, merger-integration teams and member-service leaders",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
-      },
-      {
-        "type": "article",
-        "classification": "News",
-        "title": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
-        "url": "https://creditunionainews.com/news/claude-sheets-credit-union-forecast-controls.html",
-        "primaryFunctionalAudience": "Credit-union finance, treasury, FP&A and enterprise AI administrators",
-        "promotionPriority": "Standard",
-        "socialDecision": "not-created-standard-ineligible"
-      }
+      "hr-training",
+      "it-data-cybersecurity",
+      "member-service"
     ],
     "candidateEvaluations": [
       {
-        "title": "Claude Sheets beta brings model edits into shared spreadsheets",
-        "beat": "finance-treasury",
-        "sourceUrl": "https://claude.com/resources/articles/sheets-whiteboards-data",
-        "sourceDate": "2026-11-10",
-        "score": 77.8,
-        "status": "selected-published",
-        "rationale": "Distinct credit-union finance workflow; real beta and Enterprise admin setting, not verified credit-union adoption."
-      },
-      {
-        "title": "SAFE reports member support for BECU combination",
-        "beat": "board-strategy",
-        "sourceUrl": "https://www.becuandsafe.org/",
-        "sourceDate": "2026-11-10",
-        "score": 75.2,
-        "status": "selected-published",
-        "rationale": "Joint November 10 update distinguishes member support from pending final DFPI approval; no vote count or closing proof."
-      },
-      {
-        "title": "TDECU and Smart Financial announce completed merger",
-        "beat": "board-strategy",
-        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398452/0/en/tdecu-and-smart-financial-credit-union-complete-merger-to-build-a-stronger-organization.html",
-        "sourceDate": "2026-11-09",
-        "score": 71.1,
-        "status": "not-selected",
-        "rationale": "Credible completed combination; defer in favor of fresher distinct approval-stage reporting and portfolio breadth."
-      },
-      {
-        "title": "Yolo Federal adds Aries for card fraud",
+        "title": "Yolo Federal selects Aries for card fraud",
         "beat": "payments-deposits",
         "sourceUrl": "https://www.cuinsight.com/press-release/yolo-federal-credit-union-takes-proactive-approach-to-card-fraud-prevention-through-partnership-with-aries-fraud-solutions/",
         "sourceDate": "2026-11-10",
-        "score": 69.6,
+        "score": 66.4,
         "status": "not-selected",
-        "rationale": "Primary release details not retrievable; outcomes and operating scope unverified."
+        "rationale": "Release body returned 403; accessible discovery evidence does not establish rollout, workflow change or outcomes."
       },
       {
-        "title": "ORNL member security update",
-        "beat": "it-data-cybersecurity",
-        "sourceUrl": "https://ornlfcu.com/learn/news/detail/2026/11/10/member-security-update",
-        "sourceDate": "2026-11-10",
-        "score": 68.7,
-        "status": "not-selected",
-        "rationale": "Source body inaccessible; headline alone does not establish an incident or operating change."
-      },
-      {
-        "title": "FinCEN MEXC transfer order Federal Register publication",
-        "beat": "risk-compliance",
-        "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
-        "sourceDate": "2026-11-10",
-        "score": 68.4,
-        "status": "not-selected",
-        "rationale": "Already covered by Nov. 9 Alert; the expected publication is not a distinct second story."
-      },
-      {
-        "title": "Anthropic frontier-engineer training initiative",
-        "beat": "hr-training",
-        "sourceUrl": "https://www.anthropic.com/news/announcements",
-        "sourceDate": "2026-11-10",
-        "score": 67.6,
-        "status": "not-selected",
-        "rationale": "Vendor program, not a named CU deployment or a proven workforce outcome."
-      },
-      {
-        "title": "Anthropic Claude Meetings demonstration",
-        "beat": "operations",
-        "sourceUrl": "https://www.anthropic.com/events/the-briefing-work-at-the-frontier-ls",
-        "sourceDate": "2026-11-10",
-        "score": 63.6,
-        "status": "not-selected",
-        "rationale": "Product event has limited availability detail; prefer documented Sheets beta and avoid double coverage of the launch."
-      },
-      {
-        "title": "TDECU insurance operations acquired by Confie",
-        "beat": "vendor-management",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
-        "sourceDate": "2026-11-05",
-        "score": 62.5,
-        "status": "not-selected",
-        "rationale": "Older transaction, narrow scope; no newer transition detail."
-      },
-      {
-        "title": "Raiz awards local education grants",
-        "beat": "marketing-growth",
-        "sourceUrl": "https://www.cuinsight.com/press-releases/page/2/",
-        "sourceDate": "2026-11-10",
-        "score": 55.4,
-        "status": "not-selected",
-        "rationale": "Local awards, no scalable operating development."
-      },
-      {
-        "title": "NCUA 2027–2028 budget hearing",
+        "title": "NCUA confirms November 17 draft-budget hearing",
         "beat": "risk-compliance",
         "sourceUrl": "https://ncua.gov/news/latest-news",
-        "sourceDate": "2026-10-27",
-        "score": 52.6,
+        "sourceDate": "2026-11-10",
+        "score": 62.5,
         "status": "not-selected",
-        "rationale": "Existing coverage; no fresh budget decision."
+        "rationale": "Hearing already announced and budget covered; no new appropriation or supervisory decision."
       },
       {
-        "title": "Rally CU modern lending webinar",
-        "beat": "lending-collections",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/alkami-to-host-webinar-with-rally-credit-union-and-cornerstone-advisors-on-accelerating-loan-growth-through-modern-lending-experiences-302929298.html",
-        "sourceDate": "2026-11-05",
-        "score": 52,
+        "title": "TDECU and Smart Financial complete legal merger",
+        "beat": "board-strategy",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398452/0/en/tdecu-and-smart-financial-credit-union-complete-merger-to-build-a-stronger-organization.html",
+        "sourceDate": "2026-11-09",
+        "score": 68.1,
         "status": "not-selected",
-        "rationale": "Event promotion; not a launch or evidence of a measured outcome."
+        "rationale": "Previously evaluated; no newly verified integration event; same function as Wednesday’s merger reporting."
+      },
+      {
+        "title": "FHLB Topeka 10-Q reports higher advances",
+        "beat": "finance-treasury",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1325878/000132587826000235/fhlbt-20260930.htm",
+        "sourceDate": "2026-11-10",
+        "score": 61.8,
+        "status": "not-selected",
+        "rationale": "Aggregate growth attributed largely to insurance and large depositories, not shown to be a CU liquidity shift."
+      },
+      {
+        "title": "FHLB Des Moines indicative advance rates",
+        "beat": "finance-treasury",
+        "sourceUrl": "https://www.fhlbdm.com/products-services/advances/7/market-rates/",
+        "sourceDate": "2026-11-10",
+        "score": 56.3,
+        "status": "not-selected",
+        "rationale": "Rate indications are not a discrete funding-policy change or a CU operating outcome."
+      },
+      {
+        "title": "OCC guidance addresses guarantor support in commercial credit ratings",
+        "beat": "lending-collections",
+        "sourceUrl": "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/bulletins/2026-bulletins.html",
+        "sourceDate": "2026-11-10",
+        "score": 60.6,
+        "status": "not-selected",
+        "rationale": "Bank supervisory bulletin; do not import it as a credit-union rule. No direct CU change verified."
+      },
+      {
+        "title": "Memphis CU member access after conversion",
+        "beat": "operations",
+        "sourceUrl": "https://growyourcreditunion.com/credit-union-news/2026-11-06/",
+        "sourceDate": "2026-11-06",
+        "score": 58.7,
+        "status": "not-selected",
+        "rationale": "Older trade report; no fresh CU-issued resolution or independently verified duration."
+      },
+      {
+        "title": "Constant AI appoints chief product officer",
+        "beat": "hr-training",
+        "sourceUrl": "https://cfotech.co.uk/story/constant-ai-appoints-angela-faust-cpo-in-leadership-changes",
+        "sourceDate": "2026-11-11",
+        "score": 53,
+        "status": "not-selected",
+        "rationale": "Personnel announcement, not a new implementation or independently verified portfolio result."
+      },
+      {
+        "title": "Michigan credit-union league publishes cybersecurity awareness videos",
+        "beat": "it-data-cybersecurity",
+        "sourceUrl": "https://www.cuinsight.com/press-release/page/2/",
+        "sourceDate": "2026-11-09",
+        "score": 56.7,
+        "status": "not-selected",
+        "rationale": "Education material without a newly implemented control or measured effect."
+      },
+      {
+        "title": "Campaign argues against card interchange routing mandates",
+        "beat": "payments-deposits",
+        "sourceUrl": "https://www.americascreditunions.org/news-media",
+        "sourceDate": "2026-11-10",
+        "score": 58.2,
+        "status": "not-selected",
+        "rationale": "Advocacy campaign, not a bill action, final rule or new operating mandate."
+      },
+      {
+        "title": "Trade group responds to mortgage-servicing-rights recapture proposal",
+        "beat": "lending-collections",
+        "sourceUrl": "https://www.americascreditunions.org/news-media",
+        "sourceDate": "2026-11-10",
+        "score": 59.6,
+        "status": "not-selected",
+        "rationale": "Commentary on pending proposal; no final requirement or separately verified immediate action."
+      },
+      {
+        "title": "FinCEN and Fed withdraw cross-border transfer proposal",
+        "beat": "risk-compliance",
+        "sourceUrl": "https://www.americascreditunions.org/news-media",
+        "sourceDate": "2026-11-10",
+        "score": 57.7,
+        "status": "not-selected",
+        "rationale": "Near-duplicate of November 9 CUAI article on the same agency withdrawal."
       }
     ],
-    "status": "article-published",
-    "updatedAt": "2026-11-11T12:21:40.496Z",
-    "socialDecision": "not-created-standard-ineligible",
-    "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-    "nextAction": "Both Wednesday slots delivered; consider the deceased-member servicing gap only with stronger public evidence.",
+    "fallbackEvaluations": [
+      {
+        "title": "When a Credit Union Member Dies, Notice Is Not Authority",
+        "beat": "member-service",
+        "sourceUrl": "https://flcu.org/next-steps-after-a-loss/",
+        "sourceDate": null,
+        "score": 74.5,
+        "status": "selected-pending-validation",
+        "rationale": "Durable documented gap; two first-party CU workflows and federal primary sources support separating intake, authority and release. No vendor outcomes or uniform legal checklist."
+      }
+    ],
+    "publications": [],
+    "status": "in-progress",
+    "updatedAt": "2026-11-12T12:03:05.494Z",
+    "socialDecision": "prepared-not-reserved-provider-review",
+    "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-11",
-        "status": "live-verified",
+        "plannedDate": "2026-11-12",
+        "status": "prepared",
         "accountableOwner": "daily-publisher",
-        "candidateTitle": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
-        "liveProof": "READY exact production and matching live article, hero, homepage, News and sitemaps.",
-        "nextReviewAt": "2026-11-11T08:15:00-05:00",
-        "nextAction": "Keep slot 1 live and proceed sequentially with independently qualified slot 2.",
-        "url": "https://creditunionainews.com/news/safe-becu-member-support-final-approval.html",
-        "verifiedAt": "2026-11-11T12:15:29.150Z",
-        "productionCommit": "040e54901be0677622f009668aafc21ae5317ed6",
-        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6795454593",
-        "evidence": {
-          "pending": {
-            "prNumber": 315,
-            "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
-            "run": 43018180201,
-            "job": 130514419009,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-11T07:42:00-05:00"
-          },
-          "terminalValidation": {
-            "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
-            "run": 43018180201,
-            "job": 130514419009,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-11T12:14:28.207Z"
-          },
-          "terminalAcceptance": {
-            "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
-            "run": 43018180201,
-            "job": 130514419009,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-11T12:14:57.123Z",
-            "artifactId": 13853159620,
-            "artifactDigest": "sha256:955d587a7393973b6ea3c54999bfa1563ea058cd142e539be5329ae1c7551841"
-          },
-          "productionDeploymentId": "dpl_HWrD4aPJkbsCVffn1dTNcbkUyLfS"
-        }
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-11",
-        "status": "live-verified",
-        "accountableOwner": "daily-publisher",
-        "candidateTitle": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
-        "liveProof": "READY exact production and matching live article, hero, homepage, News and sitemaps.",
-        "nextReviewAt": "2026-11-12T07:00:00-05:00",
-        "nextAction": "Do not republish; retain validation and live receipts.",
-        "url": "https://creditunionainews.com/news/claude-sheets-credit-union-forecast-controls.html",
-        "verifiedAt": "2026-11-11T12:21:40.496Z",
-        "productionCommit": "dd65b2c1785d126f52c0e4089fdd3f1e875621af",
-        "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6795574932",
-        "evidence": {
-          "pending": {
-            "prNumber": 316,
-            "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
-            "run": 43019055021,
-            "job": 130517346422,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-11T08:12:00-05:00"
-          },
-          "terminalValidation": {
-            "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
-            "run": 43019055021,
-            "job": 130517346422,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-11T12:20:47.640Z"
-          },
-          "terminalAcceptance": {
-            "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
-            "run": 43019055021,
-            "job": 130517346422,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-11T12:21:14.913Z",
-            "artifactId": 13853599034,
-            "artifactDigest": "sha256:0b0415d6b0362e69be991eb1d173fd673387749504721abb15ce3c7292cd7382"
-          },
-          "productionDeploymentId": "dpl_8zx6FXrUqeGmdqnpUPqRkLjWoFBn"
-        }
+        "candidateTitle": "When a Credit Union Member Dies, Notice Is Not Authority",
+        "liveProof": "none; exact-head rendered acceptance and production verification pending",
+        "nextReviewAt": "2026-11-12T07:40:00-05:00",
+        "nextAction": "Obtain exact CI receipt and review article, homepage and Insights screenshots before release."
       }
     ],
-    "validation": {
-      "status": "production-verified",
-      "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
-      "run": 43019055021,
-      "job": 130517346422,
-      "attempt": 1,
-      "artifactId": 13853599034,
-      "visualReviewedAt": "2026-11-11T12:21:14.913Z",
-      "productionCommit": "dd65b2c1785d126f52c0e4089fdd3f1e875621af",
-      "deploymentId": "dpl_8zx6FXrUqeGmdqnpUPqRkLjWoFBn",
-      "verifiedAt": "2026-11-11T12:21:40.496Z"
-    },
     "socialDistribution": {
       "status": "not-created",
-      "articleDecision": "not-created-standard-ineligible",
+      "articleDecision": "Useful Library candidate on practical grounds; not reserved because current Buffer destination review is unresolved and contemporaneous duplicate/cap evidence is unavailable.",
       "recoveredMissedHigh": false,
-      "houseCampaign": "prepared only; complete current future provider inventory unavailable",
-      "nextReviewAt": "2026-11-12T07:00:00-05:00"
+      "nextReviewAt": "2026-11-12T07:40:00-05:00"
     }
   },
   "history": [
+    {
+      "date": "2026-11-11",
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "finance-treasury",
+        "board-strategy",
+        "payments-deposits",
+        "it-data-cybersecurity",
+        "risk-compliance",
+        "hr-training",
+        "operations",
+        "vendor-management",
+        "marketing-growth",
+        "lending-collections"
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
+          "url": "https://creditunionainews.com/news/safe-becu-member-support-final-approval.html",
+          "primaryFunctionalAudience": "Credit-union boards, merger-integration teams and member-service leaders",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        },
+        {
+          "type": "article",
+          "classification": "News",
+          "title": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
+          "url": "https://creditunionainews.com/news/claude-sheets-credit-union-forecast-controls.html",
+          "primaryFunctionalAudience": "Credit-union finance, treasury, FP&A and enterprise AI administrators",
+          "promotionPriority": "Standard",
+          "socialDecision": "not-created-standard-ineligible"
+        }
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "Claude Sheets beta brings model edits into shared spreadsheets",
+          "beat": "finance-treasury",
+          "sourceUrl": "https://claude.com/resources/articles/sheets-whiteboards-data",
+          "sourceDate": "2026-11-10",
+          "score": 77.8,
+          "status": "selected-published",
+          "rationale": "Distinct credit-union finance workflow; real beta and Enterprise admin setting, not verified credit-union adoption."
+        },
+        {
+          "title": "SAFE reports member support for BECU combination",
+          "beat": "board-strategy",
+          "sourceUrl": "https://www.becuandsafe.org/",
+          "sourceDate": "2026-11-10",
+          "score": 75.2,
+          "status": "selected-published",
+          "rationale": "Joint November 10 update distinguishes member support from pending final DFPI approval; no vote count or closing proof."
+        },
+        {
+          "title": "TDECU and Smart Financial announce completed merger",
+          "beat": "board-strategy",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/09/3398452/0/en/tdecu-and-smart-financial-credit-union-complete-merger-to-build-a-stronger-organization.html",
+          "sourceDate": "2026-11-09",
+          "score": 71.1,
+          "status": "not-selected",
+          "rationale": "Credible completed combination; defer in favor of fresher distinct approval-stage reporting and portfolio breadth."
+        },
+        {
+          "title": "Yolo Federal adds Aries for card fraud",
+          "beat": "payments-deposits",
+          "sourceUrl": "https://www.cuinsight.com/press-release/yolo-federal-credit-union-takes-proactive-approach-to-card-fraud-prevention-through-partnership-with-aries-fraud-solutions/",
+          "sourceDate": "2026-11-10",
+          "score": 69.6,
+          "status": "not-selected",
+          "rationale": "Primary release details not retrievable; outcomes and operating scope unverified."
+        },
+        {
+          "title": "ORNL member security update",
+          "beat": "it-data-cybersecurity",
+          "sourceUrl": "https://ornlfcu.com/learn/news/detail/2026/11/10/member-security-update",
+          "sourceDate": "2026-11-10",
+          "score": 68.7,
+          "status": "not-selected",
+          "rationale": "Source body inaccessible; headline alone does not establish an incident or operating change."
+        },
+        {
+          "title": "FinCEN MEXC transfer order Federal Register publication",
+          "beat": "risk-compliance",
+          "sourceUrl": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system",
+          "sourceDate": "2026-11-10",
+          "score": 68.4,
+          "status": "not-selected",
+          "rationale": "Already covered by Nov. 9 Alert; the expected publication is not a distinct second story."
+        },
+        {
+          "title": "Anthropic frontier-engineer training initiative",
+          "beat": "hr-training",
+          "sourceUrl": "https://www.anthropic.com/news/announcements",
+          "sourceDate": "2026-11-10",
+          "score": 67.6,
+          "status": "not-selected",
+          "rationale": "Vendor program, not a named CU deployment or a proven workforce outcome."
+        },
+        {
+          "title": "Anthropic Claude Meetings demonstration",
+          "beat": "operations",
+          "sourceUrl": "https://www.anthropic.com/events/the-briefing-work-at-the-frontier-ls",
+          "sourceDate": "2026-11-10",
+          "score": 63.6,
+          "status": "not-selected",
+          "rationale": "Product event has limited availability detail; prefer documented Sheets beta and avoid double coverage of the launch."
+        },
+        {
+          "title": "TDECU insurance operations acquired by Confie",
+          "beat": "vendor-management",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/confie-acquires-insurance-operations-of-tdecu-expanding-credit-union-partnerships-into-texas-302930887.html",
+          "sourceDate": "2026-11-05",
+          "score": 62.5,
+          "status": "not-selected",
+          "rationale": "Older transaction, narrow scope; no newer transition detail."
+        },
+        {
+          "title": "Raiz awards local education grants",
+          "beat": "marketing-growth",
+          "sourceUrl": "https://www.cuinsight.com/press-releases/page/2/",
+          "sourceDate": "2026-11-10",
+          "score": 55.4,
+          "status": "not-selected",
+          "rationale": "Local awards, no scalable operating development."
+        },
+        {
+          "title": "NCUA 2027–2028 budget hearing",
+          "beat": "risk-compliance",
+          "sourceUrl": "https://ncua.gov/news/latest-news",
+          "sourceDate": "2026-10-27",
+          "score": 52.6,
+          "status": "not-selected",
+          "rationale": "Existing coverage; no fresh budget decision."
+        },
+        {
+          "title": "Rally CU modern lending webinar",
+          "beat": "lending-collections",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/alkami-to-host-webinar-with-rally-credit-union-and-cornerstone-advisors-on-accelerating-loan-growth-through-modern-lending-experiences-302929298.html",
+          "sourceDate": "2026-11-05",
+          "score": 52,
+          "status": "not-selected",
+          "rationale": "Event promotion; not a launch or evidence of a measured outcome."
+        }
+      ],
+      "status": "article-published",
+      "updatedAt": "2026-11-11T12:21:40.496Z",
+      "socialDecision": "not-created-standard-ineligible",
+      "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
+      "nextAction": "Both Wednesday slots delivered; consider the deceased-member servicing gap only with stronger public evidence.",
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-11",
+          "status": "live-verified",
+          "accountableOwner": "daily-publisher",
+          "candidateTitle": "SAFE Reports Member Support for BECU Merger; Final Approval Still Pending",
+          "liveProof": "READY exact production and matching live article, hero, homepage, News and sitemaps.",
+          "nextReviewAt": "2026-11-11T08:15:00-05:00",
+          "nextAction": "Keep slot 1 live and proceed sequentially with independently qualified slot 2.",
+          "url": "https://creditunionainews.com/news/safe-becu-member-support-final-approval.html",
+          "verifiedAt": "2026-11-11T12:15:29.150Z",
+          "productionCommit": "040e54901be0677622f009668aafc21ae5317ed6",
+          "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6795454593",
+          "evidence": {
+            "pending": {
+              "prNumber": 315,
+              "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
+              "run": 43018180201,
+              "job": 130514419009,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-11T07:42:00-05:00"
+            },
+            "terminalValidation": {
+              "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
+              "run": 43018180201,
+              "job": 130514419009,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-11T12:14:28.207Z"
+            },
+            "terminalAcceptance": {
+              "head": "8aa15789c3515cabd8aa8c0a79d6a24ee0e9270e",
+              "run": 43018180201,
+              "job": 130514419009,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-11T12:14:57.123Z",
+              "artifactId": 13853159620,
+              "artifactDigest": "sha256:955d587a7393973b6ea3c54999bfa1563ea058cd142e539be5329ae1c7551841"
+            },
+            "productionDeploymentId": "dpl_HWrD4aPJkbsCVffn1dTNcbkUyLfS"
+          }
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-11",
+          "status": "live-verified",
+          "accountableOwner": "daily-publisher",
+          "candidateTitle": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
+          "liveProof": "READY exact production and matching live article, hero, homepage, News and sitemaps.",
+          "nextReviewAt": "2026-11-12T07:00:00-05:00",
+          "nextAction": "Do not republish; retain validation and live receipts.",
+          "url": "https://creditunionainews.com/news/claude-sheets-credit-union-forecast-controls.html",
+          "verifiedAt": "2026-11-11T12:21:40.496Z",
+          "productionCommit": "dd65b2c1785d126f52c0e4089fdd3f1e875621af",
+          "issueEvent": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6795574932",
+          "evidence": {
+            "pending": {
+              "prNumber": 316,
+              "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+              "run": 43019055021,
+              "job": 130517346422,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-11T08:12:00-05:00"
+            },
+            "terminalValidation": {
+              "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+              "run": 43019055021,
+              "job": 130517346422,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-11T12:20:47.640Z"
+            },
+            "terminalAcceptance": {
+              "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+              "run": 43019055021,
+              "job": 130517346422,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-11T12:21:14.913Z",
+              "artifactId": 13853599034,
+              "artifactDigest": "sha256:0b0415d6b0362e69be991eb1d173fd673387749504721abb15ce3c7292cd7382"
+            },
+            "productionDeploymentId": "dpl_8zx6FXrUqeGmdqnpUPqRkLjWoFBn"
+          }
+        }
+      ],
+      "validation": {
+        "status": "production-verified",
+        "head": "6142537bc44f55c2862db183dc717cdf33b544e1",
+        "run": 43019055021,
+        "job": 130517346422,
+        "attempt": 1,
+        "artifactId": 13853599034,
+        "visualReviewedAt": "2026-11-11T12:21:14.913Z",
+        "productionCommit": "dd65b2c1785d126f52c0e4089fdd3f1e875621af",
+        "deploymentId": "dpl_8zx6FXrUqeGmdqnpUPqRkLjWoFBn",
+        "verifiedAt": "2026-11-11T12:21:40.496Z"
+      },
+      "socialDistribution": {
+        "status": "not-created",
+        "articleDecision": "not-created-standard-ineligible",
+        "recoveredMissedHigh": false,
+        "houseCampaign": "prepared only; complete current future provider inventory unavailable",
+        "nextReviewAt": "2026-11-12T07:00:00-05:00"
+      }
+    },
     {
       "date": "2026-11-07",
       "fullArticleCount": 2,
