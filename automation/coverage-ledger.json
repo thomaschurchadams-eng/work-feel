@@ -3,6 +3,37 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-deceased-member-servicing-authority",
+      "title": "When a Credit Union Member Dies, Notice Is Not Authority",
+      "url": "/insight-credit-union-deceased-member-servicing-authority.html",
+      "publishedAt": "2026-11-12T07:01:55-05:00",
+      "section": "insights",
+      "beat": "deceased-member-servicing",
+      "functions": [
+        "member-service",
+        "operations",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union member service, deposit operations and mortgage-servicing leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "prepared-not-reserved-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-account-recovery-evidence-record.html",
+        "/insight-credit-union-ai-complaint-analysis-controls.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "sourceLimit": "Member-facing examples illustrate institution-specific processes; NCUA and CFPB materials distinguish share insurance and mortgage servicing from authority to release funds. No reported AI deployment or measured result.",
+      "score": 74.5
+    },
+    {
       "id": "claude-sheets-credit-union-forecast-controls",
       "title": "Claude Sheets Can Edit a Forecast. It Can’t Protect Key Ranges Yet",
       "url": "/news/claude-sheets-credit-union-forecast-controls.html",
