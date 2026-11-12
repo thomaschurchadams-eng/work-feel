@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-12",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -151,10 +151,19 @@
         "primaryFunctionalAudience": "Credit-union member service, deposit operations and mortgage-servicing leaders",
         "promotionPriority": "Library",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/heloc-balances-third-quarter-2026-credit-unions.html",
+        "title": "HELOC Balances Post Their Largest Quarterly Rise Since 2005",
+        "classification": "News",
+        "primaryFunctionalAudience": "Credit-union lending and collections leaders",
+        "promotionPriority": "Standard",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T21:16:37.508Z",
+    "updatedAt": "2026-11-12T21:18:16.955Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -205,7 +214,7 @@
       },
       {
         "slot": 2,
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/heloc-balances-third-quarter-2026-credit-unions.html",
         "candidateTitle": "HELOC Balances Post Their Largest Quarterly Rise Since 2005",
         "accountableOwner": "daily-publisher",
@@ -284,9 +293,13 @@
             "visualReviewedAt": "2026-11-12T21:16:37.508Z",
             "artifactId": 13983819588,
             "artifactDigest": "sha256:9ef083881c31c59483bce428009169a9ffb97f3b7c7a15ab3dbe1a8703005a4e"
-          }
+          },
+          "productionDeploymentId": "dpl_6Fvu9N2WJTL4dpt2pNgyyCWxiYX3"
         },
-        "nextAction": "Complete exact-head checks and visual review; retain this PR and checkpoint."
+        "nextAction": "Retain live proof; do not republish this article.",
+        "productionCommit": "4ea2bd1b6baad57960c3db62c40a3d3492cef80d",
+        "verifiedAt": "2026-11-12T21:18:16.955Z",
+        "liveProof": "Exact production READY; desktop/mobile article, original 1200×630 image, News listing and first homepage card verified without overflow or runtime errors."
       }
     ],
     "socialDistribution": {
@@ -296,7 +309,7 @@
       "recoveredMissedHigh": false,
       "nextReviewAt": "2026-11-13T07:00:00-05:00"
     },
-    "nextAction": "Complete exact-head checks and visual review; retain this PR and checkpoint.",
+    "nextAction": "Continue remaining additional article slots sequentially; preserve today's original article.",
     "validation": {
       "status": "production-verified",
       "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
