@@ -153,8 +153,8 @@
         "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
-    "status": "article-published",
-    "updatedAt": "2026-11-12T12:10:48.475Z",
+    "status": "article-and-alert-cycle-complete",
+    "updatedAt": "2026-11-12T15:17:39-05:00",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -211,7 +211,7 @@
       "recoveredMissedHigh": false,
       "nextReviewAt": "2026-11-13T07:00:00-05:00"
     },
-    "nextAction": "Do not republish. Keep the qualified promotion prepared only until a fresh, reconciled Buffer inventory resolves destination review.",
+    "nextAction": "Do not republish. Carry AI-assisted offer suppression and consent evidence in member marketing as the next portfolio-balancing candidate; recheck homepage freshness in the next ordinary weekday cycle without refreshing the expired Alert.",
     "validation": {
       "status": "production-verified",
       "head": "76a6ed45aeeb7592f86f107c7fd65ba4a9a98907",
@@ -223,6 +223,24 @@
       "productionCommit": "33a53184da1908e6edd393ec4180de250ff51cc5",
       "deploymentId": "dpl_5iimvNS6AM88zm4w6H6WAc7u8SFk",
       "verifiedAt": "2026-11-12T12:10:48.475Z"
+    },
+    "alertCycle": {
+      "status": "no-qualified-alert",
+      "reviewedAt": "2026-11-12T15:17:39-05:00",
+      "lastQualifiedAlert": "fincen-mexc-global-transfer-prohibition",
+      "evidence": "A fresh review of eight official-source surfaces found no post-November 10 development with a distinct, urgent credit-union operating action. NCUA's November 10 budget-hearing notice was already screened by the publisher; FinCEN's latest item remained its November 9 scam-center Exchange readout; the latest OCC, CFPB, Federal Reserve, FTC, CISA and Federal Register surfaces added no qualifying credit-union Alert.",
+      "duplicateCheck": "The November 6 Travel Rule withdrawal is already covered by the live November 9 article, and the MEXC Global order is already represented by the live Alert; neither was duplicated.",
+      "homepageFreshness": "At the 2026-11-12T15:17:39-05:00 review, the MEXC Alert's verified original CUAI publication instant remained inside the inclusive 72-hour window through 2026-11-12T15:35:32.856-05:00. No homepageWatchState write was made; the existing code will stop featuring the Alert automatically after expiry.",
+      "sourcesChecked": [
+        "NCUA newsroom and press releases",
+        "FinCEN newsroom and Federal Register notices",
+        "OCC current releases and bulletins",
+        "CFPB newsroom",
+        "Federal Reserve releases and calendar",
+        "FTC current releases",
+        "CISA current updates",
+        "Federal Register current/public-inspection notices"
+      ]
     }
   },
   "history": [
