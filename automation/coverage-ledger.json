@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-fednow-2027-discount-economics",
+      "title": "FedNow’s 2027 Credits Come With Volume Tests and a Fee Cap",
+      "url": "/insight-credit-union-fednow-2027-discount-economics.html",
+      "publishedAt": "2026-11-12T16:19:34-05:00",
+      "section": "insights",
+      "beat": "credit-union-fednow-2027-discount-economics",
+      "functions": [
+        "finance-treasury"
+      ],
+      "technologies": [
+        "realtime-embedded-finance"
+      ],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Finance and Treasury leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "prepared-not-reserved-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/credit-unions-fed-payment-account-guardrails.html",
+        "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "sourceLimit": "Concrete finance explainer; includes current fee schedule, eligibility economics and a labeled worked example. Do not promote as a new November announcement."
+    },
+    {
       "id": "heloc-balances-third-quarter-2026-credit-unions",
       "title": "HELOC Balances Post Their Largest Quarterly Rise Since 2005",
       "url": "/news/heloc-balances-third-quarter-2026-credit-unions.html",
