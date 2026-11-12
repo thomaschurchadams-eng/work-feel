@@ -163,7 +163,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T21:21:09.923Z",
+    "updatedAt": "2026-11-12T21:26:50.594Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -311,11 +311,35 @@
         "nextReviewAt": "2026-11-12T21:44:20.198Z",
         "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
         "evidence": {
+          "validationHistory": [
+            {
+              "prNumber": 329,
+              "head": "472c1cdd4e4ef585774de9316358104002f8c652",
+              "run": 43309234905,
+              "job": 131500585652,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-12T21:44:20.198Z",
+              "status": "superseded",
+              "observedAt": "2026-11-12T21:26:50.594Z",
+              "terminalValidation": {
+                "head": "472c1cdd4e4ef585774de9316358104002f8c652",
+                "run": 43309234905,
+                "job": 131500585652,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-12T21:25:00.197Z"
+              },
+              "reason": "Actual desktop review found an unstyled fee table with cramped headings. Reused the site's existing log-table component and explicit column headers; original successful CI receipt is retained and not reused."
+            }
+          ],
           "pending": {
             "prNumber": 329,
-            "head": "472c1cdd4e4ef585774de9316358104002f8c652",
-            "run": 43309234905,
-            "job": 131500585652,
+            "head": "d838e79ac9da120ae179b5d903551db1e57b80f3",
+            "run": 43310300093,
+            "job": 131504312831,
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-12T21:44:20.198Z"
