@@ -10,6 +10,9 @@ const root = path.resolve(__dirname, '..');
 const cli = path.join(root, 'scripts/validate-daily-cycle-preservation.mjs');
 const rules = require('../automation/publishing-rules.json');
 const actual = require('../automation/daily-cycle-state.json');
+// Freeze the authorized pre-expansion state. Canonical current advances during
+// publication, so using it here would make the next real package fail its CI.
+const november12Baseline = JSON.parse(execFileSync('git', ['show', '2f4ff9ccc0960c54c83dff4eed7753a145fcc5ef:automation/daily-cycle-state.json'], { cwd: root }));
 const stateFile = 'automation/daily-cycle-state.json';
 const copy = value => structuredClone(value);
 const url = number => `https://cadence-fixture.invalid/news/story-${number}.html`;
@@ -66,7 +69,7 @@ function prepared(state, number) {
   next.current.regularPublicationSlots.push({ slot: number, status: 'prepared', url: url(number), candidateTitle: `Isolated distinct story ${number}`, accountableOwner: 'daily-publisher', nextReviewAt: stamp });
   return next;
 }
-function pending(state, number, head = 'abc'[number - 1].repeat(40), attempt = 1) {
+function pending(state, number, head = 'abcdef'[number - 1].repeat(40), attempt = 1) {
   const next = copy(state), s = next.current.regularPublicationSlots.find(s => s.slot === number);
   s.status = 'pending-validation'; s.evidence = { pending: { prNumber: 990100 + number, head, run: 99000000100 + number + (attempt - 1) * 10, job: 99000000200 + number + (attempt - 1) * 10, runAttempt: attempt } };
   return next;
@@ -91,20 +94,21 @@ function fill(f, number) {
   f.accept(validated(f.state, number), 'persist separate validated stage');
   f.accept(completed(f.state, number), `slot ${number} simulated verified result`);
 }
-test('prospective rules are three each weekday, fifteen full week, same bounded research and social cap', () => {
-  assert.deepEqual(Object.values(rules.standardCycle.fullArticleTargetByWeekday), [3, 3, 3, 3, 3]);
-  assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 3);
-  assert.equal(rules.weeklyTargets.siteStoriesMax, 15); assert.equal(rules.weeklyTargets.linkedinPosts, 5);
+test('prospective rules are five each weekday, twenty-five full week, same bounded research and social cap', () => {
+  assert.deepEqual(Object.values(rules.standardCycle.fullArticleTargetByWeekday), [5, 5, 5, 5, 5]);
+  assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 5);
+  assert.equal(rules.weeklyTargets.siteStoriesMax, 25); assert.equal(rules.weeklyTargets.linkedinPosts, 5);
   assert.equal(rules.standardCycle.minimumCandidatesToEvaluate, 12); assert.equal(rules.standardCycle.minimumDistinctBeatsToSearch, 6);
   const before = JSON.parse(execFileSync('git', ['show', '2445fa393c5291e12a840d7f57bbc83a162ba8a8:automation/publishing-rules.json'], { cwd: root }));
   assert.deepEqual(rules.standardCycle.fallbackOrder, before.standardCycle.fallbackOrder);
-  assert.deepEqual(rules.hardStops, before.hardStops); assert.deepEqual(rules.selection, before.selection);
+  assert.deepEqual(rules.hardStops, before.hardStops);
+  assert.deepEqual(rules.selection, { ...before.selection, maximumSamePrimaryFunctionPerWeek: 3 });
 });
-test('three sequential packages pass actual CLI; repeat is read-only and reporter shows three distinct live fixtures', t => {
-  const f = fixture(t); for (let n = 1; n <= 3; n++) fill(f, n);
-  f.repeat(); const report = f.report(); assert.equal(report.intended, 3);
-  assert.deepEqual(report.slots.map(s => s.status), ['live-verified', 'live-verified', 'live-verified']);
-  assert.equal(new Set(report.slots.map(s => s.liveUrl)).size, 3); assert.deepEqual(f.state.history, fresh().history);
+test('five sequential packages pass actual CLI; repeat is read-only and reporter shows five distinct live fixtures', t => {
+  const f = fixture(t); for (let n = 1; n <= 5; n++) fill(f, n);
+  f.repeat(); const report = f.report(); assert.equal(report.intended, 5);
+  assert.deepEqual(report.slots.map(s => s.status), ['live-verified', 'live-verified', 'live-verified', 'live-verified', 'live-verified']);
+  assert.equal(new Set(report.slots.map(s => s.liveUrl)).size, 5); assert.deepEqual(f.state.history, fresh().history);
 });
 test('third-slot editorial hold keeps the first two live receipts and explicit reason', t => {
   const f = fixture(t); fill(f, 1); fill(f, 2); const earlier = f.state.current.regularPublicationSlots;
@@ -153,10 +157,10 @@ test('earlier pending slot blocks later package and a batch cannot invent the ea
   f.reject(prepared(f.state, 3), /earlier article slot/, 'cannot advance behind pending validation');
   f.reject(prepared(completed(f.state, 2), 3), /only one sequential|earlier article slot/, 'cannot batch earlier success with next preparation');
 });
-test('fourth article is rejected with or without slot metadata; ordinary weekends are rejected', t => {
-  const f = fixture(t); for (let n = 1; n <= 3; n++) fill(f, n);
-  f.reject(prepared(f.state, 4), /weekday article maximum/, 'fourth structured article');
-  const untracked = f.state; untracked.current.publications.push({ type: 'article', url: url(4) }); untracked.current.fullArticleCount++;
+test('sixth article is rejected with or without slot metadata; ordinary weekends are rejected', t => {
+  const f = fixture(t); for (let n = 1; n <= 5; n++) fill(f, n);
+  f.reject(prepared(f.state, 6), /weekday article maximum/, 'fourth structured article');
+  const untracked = f.state; untracked.current.publications.push({ type: 'article', url: url(6) }); untracked.current.fullArticleCount++;
   f.reject(untracked, /weekday article maximum/, 'fourth article without slot cannot bypass cap');
   for (const date of ['2026-11-14', '2026-11-15']) {
     const weekend = fixture(t, fresh(date)); weekend.repeat('weekend no-op has no new cycle');
@@ -218,17 +222,17 @@ test('current-main rollover preserves complete actual history and stale concurre
   const bad = f.state; bad.history.find(day => day.date === '2026-11-09').regularPublicationSlots[0].evidence.validationHistory = [];
   f.reject(bad, /mutated existing history/, 'cannot erase actual failed moving-date receipt');
 });
-test('report uses dynamic three-slot weekday targets and zero weekend targets without retroactive obligation', t => {
+test('report uses dynamic five-slot weekday targets and zero weekend targets without retroactive obligation', t => {
   const f = fixture(t); let total = 0;
-  for (const date of ['2026-11-16', '2026-11-17', '2026-11-18', '2026-11-19', '2026-11-20']) { const report = f.report(f.state, date); assert.equal(report.intended, 3); total += report.intended; }
-  assert.equal(total, 15); for (const date of ['2026-11-21', '2026-11-22']) assert.equal(f.report(f.state, date).intended, 0);
+  for (const date of ['2026-11-16', '2026-11-17', '2026-11-18', '2026-11-19', '2026-11-20']) { const report = f.report(f.state, date); assert.equal(report.intended, 5); total += report.intended; }
+  assert.equal(total, 25); for (const date of ['2026-11-21', '2026-11-22']) assert.equal(f.report(f.state, date).intended, 0);
   assert.match(f.report(actual, '2026-11-09').basis, /not retrospective obligations/);
 });
 test('report classifies prepared/approval/pre-validation stages and never gives a held slot a later publication', t => {
   const f = fixture(t), state = fresh();
   state.current.publications = [{ type: 'article', url: url(3) }]; state.current.fullArticleCount = 1;
   state.current.regularPublicationSlots = [{ slot: 1, status: 'approval-hold', holdReason: 'Existing approval has not changed.' }, { slot: 2, status: 'pre-validation-blocked', blocker: { reason: 'Browser preflight unavailable.' } }, { slot: 3, status: 'prepared', url: url(3), candidateTitle: 'Isolated third story' }];
-  const report = f.report(state); assert.deepEqual(report.slots.map(s => s.status), ['approval-hold', 'pre-validation-blocked', 'prepared']);
+  const report = f.report(state); assert.deepEqual(report.slots.slice(0, 3).map(s => s.status), ['approval-hold', 'pre-validation-blocked', 'prepared']);
   assert.equal(report.slots[0].recordedPublicationUrl, null); assert.equal(report.slots[1].recordedPublicationUrl, null);
   assert.equal(report.slots[0].unfilledReason, 'Existing approval has not changed.'); assert.equal(report.slots[1].unfilledReason, 'Browser preflight unavailable.');
   assert.ok(report.slots.every(s => s.liveUrl === null));
@@ -244,4 +248,36 @@ test('three eligible articles still share one social reservation and five weekly
   const provider = [1, 2, 3, 4, 5].map(n => ({ id: `external-fixture-${n}`, status: 'sent', sentAt: '2026-11-09T17:30:00Z' }));
   assert.equal(checkCapacity('2026-11-10', [], provider).error, 'linkedin_weekly_cap_conflict');
   assert.equal(checkCapacity('2026-11-14', []).error, 'scheduled_for_weekend');
+});
+
+test('November 12 frozen baseline admits five additional sequential packages and rejects a seventh', t => {
+  const f = fixture(t, november12Baseline); const baseline = copy(november12Baseline.current.regularPublicationSlots[0]);
+  for (let n = 2; n <= 5; n++) fill(f, n);
+  f.accept(prepared(f.state, 6), 'exception slot six prepared');
+  const reviewState = f.state;
+  for (let n = 2; n <= 5; n++) { reviewState.current.regularPublicationSlots[n - 1].url = `/news/story-${n}.html`; reviewState.current.publications[n - 1].url = `/news/story-${n}.html`; }
+  reviewState.current.regularPublicationSlots[5].url = '/news/exception-six.html';
+  const planner = require('../lib/publisher-write-plan.cjs'), sha = 'a'.repeat(40), blob = 'b'.repeat(40);
+  const review = planner.validateArticleReview({ mergeBase: {sha, stateBlob: blob}, review: {sha, stateBlob: blob, files: [{path: 'news/exception-six.html', status: 'added'}]}, main: {sha, stateBlob: blob, state: reviewState, changedPaths: []}, rules });
+  assert.equal(review.slot, 6);
+  f.accept(pending(f.state, 6), 'exception exact checkpoint'); f.accept(validated(f.state, 6), 'exception validated'); f.accept(completed(f.state, 6), 'exception live');
+  assert.equal(f.state.current.fullArticleCount, 6); assert.deepEqual(f.state.current.regularPublicationSlots[0], baseline);
+  assert.equal(f.report().intended, 6); f.reject(prepared(f.state, 7), /weekday article maximum/, 'seventh article exceeds exception');
+  const changed = f.state; changed.current.regularPublicationSlots[0].evidence.pending.head = 'f'.repeat(40);
+  f.reject(changed, /lost or changed|frozen verified baseline/, 'frozen receipt cannot be rewritten');
+  const damaged = copy(november12Baseline); damaged.current.regularPublicationSlots[0].productionCommit = 'a'.repeat(40);
+  const bad = fixture(t, damaged); bad.reject(prepared(bad.state, 2), /frozen verified baseline/, 'unmatched baseline cannot claim exception');
+});
+test('Alert cap admits three distinct qualified records and rejects a fourth, weekends and historical backfill', t => {
+  const f = fixture(t, november12Baseline);
+  for (let n = 1; n <= 3; n++) { const next = f.state; next.current.publications.push({type:'alert', url:`/alerts.html#fixture-${n}`}); next.current.alertCount++; f.accept(next, `alert ${n}`); }
+  const fourth = f.state; fourth.current.publications.push({type:'alert',url:'/alerts.html#fixture-4'}); fourth.current.alertCount++;
+  f.reject(fourth, /Alert maximum/, 'fourth Alert');
+  const dup = f.state; dup.current.publications.push(copy(dup.current.publications.at(-1))); dup.current.alertCount++; f.reject(dup, /duplicated/, 'duplicate Alert');
+  const ordinary = fixture(t, fresh('2026-11-13'));
+  for (let n = 1; n <= 3; n++) { const next = ordinary.state; next.current.publications.push({type:'alert', url:`/alerts.html#ordinary-${n}`}); next.current.alertCount++; ordinary.accept(next, `ordinary alert ${n}`); }
+  const over = ordinary.state; over.current.publications.push({type:'alert',url:'/alerts.html#ordinary-four'}); over.current.alertCount++; ordinary.reject(over, /Alert maximum/, 'ordinary fourth Alert');
+  const mismatched = ordinary.state; mismatched.current.alertCount = 2; ordinary.reject(mismatched, /alertCount regressed/, 'Alert count cannot be erased');
+  const weekend = fixture(t, fresh('2026-11-14')); const w = weekend.state; w.current.publications.push({type:'alert',url:'/alerts.html#weekend'}); w.current.alertCount++; weekend.reject(w, /weekend Alert/, 'weekend Alert');
+  const old = fixture(t, fresh('2026-11-11')); const o = old.state; o.current.publications.push({type:'alert',url:'/alerts.html#old'}); o.current.alertCount++; old.reject(o, /retrospective/, 'historical Alert');
 });

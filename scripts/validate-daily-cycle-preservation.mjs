@@ -98,6 +98,7 @@ try {
     guards.validatePublisherCheckpointAdmission(base.current, candidate.current);
     const rules = readJson('publisher cadence rules', fs.readFileSync(new URL('../automation/publishing-rules.json', import.meta.url)));
     guards.validatePublisherCadence(base.current, candidate.current, rules);
+    guards.validateAlertCadence(base.current, candidate.current, rules);
   }
 }
 catch (error) { fail(error.message); }

@@ -42,20 +42,20 @@ test('current operating state is idempotent and future Alert fields cannot hide 
   assert.throws(() => guards.validateStatePreservation(actual, bad, rules), /structured slot transition/);
 });
 test('future preparation retains full PR314 outcome; altered operating receipt rejects', () => {
-  const next = copy(actual); next.history.push(copy(next.current)); next.current = { date: '2026-11-11', status: 'in-progress', outcomeSlot: 1, fullArticleCount: 0, alertCount: 0, publications: [], regularPublicationSlots: [{ slot: 1, status: 'prepared', candidateTitle: 'Isolated future candidate', url: '/news/pr314-next-fixture.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-11T12:30:00Z' }] };
+  const next = copy(actual); next.history.push(copy(next.current)); next.current = { date: '2026-11-13', status: 'in-progress', outcomeSlot: 1, fullArticleCount: 0, alertCount: 0, publications: [], regularPublicationSlots: [{ slot: 1, status: 'prepared', candidateTitle: 'Isolated future candidate', url: '/news/pr314-next-fixture.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-13T12:30:00Z' }] };
   guards.validateStatePreservation(actual, next, rules);
   const damaged = copy(next); damaged.history.at(-1).alertCycle.evidence = 'Changed historical evidence';
   assert.throws(() => guards.validateStatePreservation(actual, damaged, rules), /complete prior current/);
 });
-test('historical audience and cadence wording is preserved without changing the three-slot target', () => {
+test('historical audience evidence is preserved with the current weekday target', () => {
   const usageBefore = read(before, 'automation/cuai-usage-ledger.json'), usage = read(main, 'automation/cuai-usage-ledger.json');
   assert.equal(usage.entries.length, usageBefore.entries.length + 1); assert.deepEqual(usage.entries.slice(0, -1), usageBefore.entries);
   assert.equal(usage.entries.at(-1).workUnits.weeklyArticlesTarget, 8);
   assert.equal(usage.entries.at(-1).operationalLearning.decision, 'inconclusive-observe');
-  assert.equal(rules.weeklyTargets.siteStoriesMax, 15); assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 3);
-  for (const day of ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']) assert.equal(rules.standardCycle.fullArticleTargetByWeekday[day], 3);
+  assert.equal(rules.weeklyTargets.siteStoriesMax, 25); assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 5);
+  for (const day of ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']) assert.equal(rules.standardCycle.fullArticleTargetByWeekday[day], 5);
   const report = JSON.parse(execFileSync(process.execPath, ['scripts/report-publisher-slots.mjs', '2026-11-10'], { cwd: root, encoding: 'utf8' }));
-  assert.equal(report.intended, 3); assert.equal(report.slots[0].status, 'live-verified'); assert.match(report.basis, /not retrospective obligations/);
+  assert.equal(report.intended, 5); assert.equal(report.slots[0].status, 'live-verified'); assert.match(report.basis, /not retrospective obligations/);
 });
 test('the original unstructured November 6 failure still rejects', () => {
   const result = check(root, 'c3724bc99da14b9ef8d6d4fe3de3d4ab90779e37', '8f00ca6e2741a099f979e256d700f4f72a95d36b');

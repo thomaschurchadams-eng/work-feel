@@ -5,7 +5,9 @@ const fs = require('node:fs'), os = require('node:os'), path = require('node:pat
 const { execFileSync, spawnSync } = require('node:child_process');
 const guards = require('../lib/daily-cycle-guards.cjs');
 const planner = require('../lib/publisher-write-plan.cjs');
-const rules = require('../automation/publishing-rules.json');
+const rules = structuredClone(require('../automation/publishing-rules.json'));
+// Exercise the historic fixture under the policy in force at that time.
+delete rules.standardCycle.effectiveDate; delete rules.standardCycle.oneTimeException;
 const root = path.resolve(__dirname, '..'), file = 'automation/daily-cycle-state.json';
 const cli = path.join(root, 'scripts/validate-daily-cycle-preservation.mjs');
 const refs = {
@@ -57,7 +59,7 @@ test('actual Nov10 and full Nov9 Alert/failure/hold history survive unchanged no
 });
 test('prospective Nov11 preparation/holds retain exact Nov10 cycle; dropped receipts reject', t => {
   const f = fixture(t, refs.main), next = copy(actual); next.history.push(copy(next.current));
-  next.current = { date: '2026-11-11', status: 'in-progress', outcomeSlot: 1, fullArticleCount: 0, alertCount: 0, publications: [], regularPublicationSlots: [{ slot: 1, status: 'prepared', candidateTitle: 'Isolated next-day candidate', url: '/news/nov11-fixture.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-11T12:30:00Z' }] };
+  next.current = { date: '2026-11-13', status: 'in-progress', outcomeSlot: 1, fullArticleCount: 0, alertCount: 0, publications: [], regularPublicationSlots: [{ slot: 1, status: 'prepared', candidateTitle: 'Isolated next-day candidate', url: '/news/nov11-fixture.html', accountableOwner: 'daily-publisher', nextReviewAt: '2026-11-11T12:30:00Z' }] };
   f.write(next); assert.equal(command(f.dir, f.base).status, 0);
   const hold = copy(next); hold.current.regularPublicationSlots[0].status = 'editorial-hold'; hold.current.regularPublicationSlots[0].holdReason = 'Isolated source evidence insufficient';
   guards.validateStatePreservation(next, hold, rules);
@@ -88,10 +90,10 @@ test('isolated additional-slot failure/replacement retains actual live slot and 
   const unstructured = copy(actual); unstructured.current.thirdSlot = 'Validation still pending after turn closed';
   assert.throws(() => guards.validateStatePreservation(actual, unstructured, rules), /structured slot transition|slot 3/);
 });
-test('report retains prospective three-slot target without reopening actual one-article Tuesday', () => {
+test('report retains prospective five-slot target without reopening actual one-article Tuesday', () => {
   const report = JSON.parse(execFileSync(process.execPath, ['scripts/report-publisher-slots.mjs', '2026-11-10'], { cwd: root, encoding: 'utf8' }));
-  assert.equal(report.intended, 3); assert.equal(report.slots[0].status, 'live-verified');
-  assert.deepEqual(report.slots.slice(1).map(s => s.status), ['unclassified-no-slot-evidence', 'unclassified-no-slot-evidence']);
+  assert.equal(report.intended, 5); assert.equal(report.slots[0].status, 'live-verified');
+  assert.deepEqual(report.slots.slice(1).map(s => s.status), Array(4).fill('unclassified-no-slot-evidence'));
   assert.match(report.basis, /not retrospective obligations/);
 });
 test('original Nov6 raw closeout remains rejected after exact historical additions', () => {

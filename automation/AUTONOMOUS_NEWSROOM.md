@@ -8,7 +8,7 @@ Publish reliable, credible CreditUnionAI News coverage directly to production wi
 
 The newsroom uses separate, single-purpose cycles:
 
-1. **Article cycle** — targets three distinct qualified News or Insights articles per weekday, maximum three, sequentially through the same Daily Publisher under publishing-rules.json. No schedule or weekend expansion.
+1. **Article cycle** — targets five distinct qualified News or Insights articles per weekday from November 13, maximum five, sequentially through the same Daily Publisher under publishing-rules.json. No schedule or weekend expansion.
 2. **Alert cycle** — publishes Alerts and maintains the ticker.
 3. **Maintenance cycle** — handles archive migration, Intelligence maintenance, corrections, source health, newsletters and retention.
 
@@ -20,7 +20,7 @@ For Alert quantity, cadence and task authority, `automation/scheduled-tasks/cuai
 
 1. Read only the files required for the article: `editorial-routing.json`, `editorial-taxonomy.json`, `publishing-rules.json`, `coverage-ledger.json`, `image-taxonomy.json`, `image-ledger.json`, `editorial-voice.md`, `analytics-measurement.json`, `seo-policy.json`, the relevant article template, the homepage, the correct section index, sitemaps and articles from the prior 14 days.
 2. Search the prior 24–72 hours across at least six distinct beats and evaluate at least twelve credible candidates. Prefer primary documents and developments with a clear credit-union operating implication.
-3. Select the strongest distinct candidate that clears all hard stops for each successive slot from the same bounded pool. If no current-event candidate qualifies, use the fallback order in `publishing-rules.json`: durable multi-source Insight, credit-union case study, then data-led explainer. Do not publish weak or unsupported material or expand research to force three stories.
+3. Select the strongest distinct candidate that clears all hard stops for each successive slot from the same bounded pool. If no current-event candidate qualifies, use the fallback order in `publishing-rules.json`: durable multi-source Insight, credit-union case study, then data-led explainer. Do not publish weak or unsupported material or expand research to force five stories.
 4. Route the article before drafting. Use News when the headline depends on a recent event; otherwise use Insights.
 5. Produce each complete article package sequentially: article, one passing 1200×630 image, metadata, byline, sources, internal links, correct section index, homepage placement, sitemaps, coverage ledger, image ledger and newsroom state. Leave daily-cycle state unchanged on the article branch; the same publisher persists canonical checkpoints and live closeout through the existing checkout-capable preservation path in its policy. Social selection follows actual live verification under the separate unchanged shared caps. Finish exact validation, actual visual review and production verification before starting the next package; an unresolved technical/permission block stops later packages under the same owner.
 6. Run only the validators relevant to the article package, including analytics and SEO. Do not run unrelated Intelligence, corrections, retention, newsletter or archive-migration work.
@@ -30,7 +30,7 @@ For Alert quantity, cadence and task authority, `automation/scheduled-tasks/cuai
 ## Alert cycle
 
 1. Read the Alerts data/page, ticker implementation, homepage latest-alert module, coverage ledger, source registry, publishing rules, daily-cycle state and the authoritative CUAI Operating System policy.
-2. Search for genuinely new, time-sensitive, qualified developments and publish at most one Alert per weekday. There is no Alert quota or minimum target; if nothing qualifies, record the no-Alert outcome and stop.
+2. Search for genuinely new, time-sensitive, qualified developments and publish at most three Alerts per weekday. There is no Alert quota or minimum target; if nothing qualifies, record the no-Alert outcome and stop.
 3. Each Alert requires a factual headline, neutral summary, specific operational credit-union implication, date, source name and direct source URL.
 4. Enforce exact one-to-one mapping between published Alerts and ticker items, newest-first order and the rolling 14-day window.
 5. Update only the Alerts page/data, ticker, homepage latest-alert module, relevant ledgers and daily-cycle state. Do not create a full article, hero image, topic hub, Intelligence tracker update, correction audit or archive migration during an Alert cycle.
@@ -60,4 +60,4 @@ For every full article, add valid editorial analytics attributes and complete ca
 
 ## Weekly portfolio
 
-Target fifteen qualified articles across the existing five weekday cycles: three per weekday, maximum three. Follow the prospective November 9 cadence section and version 7 publishing rules. This is a target, not a guarantee or requirement to fill weak slots; the twelve-candidate pool, approved fallbacks, sourcing gates and existing usage remain bounded. Preserve earlier same-day outcomes and record held/unfilled slots; do not reopen completed cycles. Alerts remain separate with no quota; LinkedIn remains at one company post per weekday and five per week across all eligible article/media selections.
+Target twenty-five qualified articles across the existing five weekday cycles from November 13: five per weekday, maximum five. November 12 alone permits five additional articles above its frozen one-article baseline and up to three additional qualified Alerts above its zero-Alert baseline. Follow the November 12 cadence section and version 8 publishing rules. This is a target, not a guarantee or requirement to fill weak slots; the twelve-candidate pool, approved fallbacks, sourcing gates and existing usage remain bounded. Preserve earlier same-day outcomes and record held/unfilled slots; do not reopen completed cycles. Alerts remain separate with no quota; LinkedIn remains at one company post per weekday and five per week across all eligible article/media selections.

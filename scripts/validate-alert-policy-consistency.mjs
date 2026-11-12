@@ -11,21 +11,16 @@ const alertCycle = rules?.cycleOwnership?.alertCycle || '';
 const standard = rules?.standardCycle || {};
 
 if (standard.alertTarget !== null) errors.push('publishing-rules standardCycle.alertTarget must remain null');
-if (standard.alertMaximumPerWeekday !== 1) errors.push('publishing-rules alertMaximumPerWeekday must remain 1');
+if (standard.alertMaximumPerWeekday !== 3) errors.push('publishing-rules alertMaximumPerWeekday must remain 3');
 if (standard.alertQuotaEnabled !== false) errors.push('publishing-rules alertQuotaEnabled must remain false');
-if (!/at most one/i.test(alertCycle) || !/no quota|no minimum/i.test(alertCycle)) {
-  errors.push('publishing-rules cycleOwnership.alertCycle must preserve max-one/no-quota semantics');
+if (!/at most three/i.test(alertCycle) || !/no quota|no minimum/i.test(alertCycle)) {
+  errors.push('publishing-rules cycleOwnership.alertCycle must preserve max-three/no-quota semantics');
 }
-if (!/at most one Alert per weekday/i.test(runbook) || !/no Alert quota or minimum target/i.test(runbook)) {
-  errors.push('AUTONOMOUS_NEWSROOM.md must preserve max-one/no-quota Alert semantics');
+if (!/at most three Alerts per weekday/i.test(runbook) || !/no Alert quota or minimum target/i.test(runbook)) {
+  errors.push('AUTONOMOUS_NEWSROOM.md must preserve max-three/no-quota Alert semantics');
 }
-if (!/at most one genuinely new, time-sensitive Alert per weekday/i.test(operating) || !/Do not use a quota, target/i.test(operating)) {
-  errors.push('cuai-operating-system.md must preserve max-one/no-quota Alert semantics');
-}
-
-const policySurfaces = `${JSON.stringify(rules)}\n${runbook}\n${operating}`;
-if (/three[- ]Alert|three Alerts|3 Alerts/i.test(policySurfaces)) {
-  errors.push('an authoritative policy surface reintroduced a three-Alert quota/target');
+if (!/at most three genuinely new, time-sensitive Alerts per weekday/i.test(operating) || !/Do not use a quota, target/i.test(operating)) {
+  errors.push('cuai-operating-system.md must preserve max-three/no-quota Alert semantics');
 }
 
 if (state?.dailyTargets?.alerts != null) {

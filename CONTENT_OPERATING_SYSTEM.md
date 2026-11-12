@@ -34,7 +34,7 @@ Validated routine editorial packages follow the current direct-production articl
 
 ## Current publishing targets
 
-The controlling version 6 publishing rules and September 29 publisher expansion target eight qualified full articles per full week: Monday/Wednesday/Friday two, Tuesday/Thursday one; maximum two per weekday. No candidate is published solely to fill a slot. Alerts remain separate with no quota. The website briefing is not an automated email delivery pipeline.
+The controlling version 8 publishing rules target five qualified full articles each weekday from November 13, twenty-five per full week. November 12 alone permits five additional articles above its frozen one-article baseline. No candidate is published solely to fill a slot. Alerts remain separate with no quota. The website briefing is not an automated email delivery pipeline.
 
 ## Approved recurring media — October 1, 2026
 

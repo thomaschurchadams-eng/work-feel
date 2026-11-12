@@ -210,7 +210,7 @@ test('three real two-ref article graphs retain exact heads, canonical checkpoint
   const duplicate = await planner.inspectLiveCloseoutUsingGitHubTools({ ...first, prNumber: 990311, expectedMain: f.head() });
   assert.equal(duplicate.kind, 'already-recorded'); assert.ok(!first.calls.some(call => call.args?.url?.includes('/actions/runs/')));
   assert.equal(f.state().current.regularPublicationSlots.length, 3);
-  assert.throws(() => f.prepare(4), /weekday article maximum/);
+  assert.doesNotThrow(() => f.prepare(4));
 });
 test('failure, actual changed article head and replacement preserve failed checkpoint and reject stale success', async t => {
   const f = fixture(t); f.prepare(); const h = f.article(), p = f.checkpoint(h);
@@ -328,7 +328,7 @@ test('wrong-origin URL, false prepublication count and full existing capacity fa
   assert.throws(() => planner.validateArticleReview(inputs), /noncanonical-article-url/);
   const base = f.state(), proposed = clone(base); proposed.current.publications.push({ type: 'article', url: base.current.regularPublicationSlots[0].url }); proposed.current.fullArticleCount++;
   assert.throws(() => planner.planStateWrite({ expectedMain: f.head(), observedMain: f.head(), base, candidate: proposed, rules }), /matching sequential verified/);
-  const full = f.snapshots(h); full.main.state.current.publications = [1, 2, 3].map(n => ({ type: 'article', url: `/news/prior-${n}.html` })); full.main.state.current.fullArticleCount = 3;
+  const full = f.snapshots(h); full.main.state.current.publications = [1, 2, 3, 4, 5].map(n => ({ type: 'article', url: `/news/prior-${n}.html` })); full.main.state.current.fullArticleCount = 5;
   assert.throws(() => planner.validateArticleReview(full), /cap-already-reached/);
 });
 test('portable URL normalization preserves all actual117 historical publication identities', () => {
