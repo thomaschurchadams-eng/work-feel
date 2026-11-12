@@ -1,0 +1,84 @@
+[
+  {
+    "medium": "editorial-photography",
+    "subject": "frontline-workflow",
+    "composition": "tight-close-up",
+    "perspective": "eye-level",
+    "palette": "emerald-cream",
+    "lighting": "natural-window-light",
+    "texture": "clean-photographic",
+    "scene": "Operations professional comparing payment activity across two screens with all text obscured",
+    "topicFit": 79,
+    "editorialClarity": 76,
+    "score": 60.3,
+    "metrics": {
+      "novelty": 43,
+      "topicFit": 79,
+      "editorialClarity": 76
+    },
+    "rejected": false,
+    "reasons": []
+  },
+  {
+    "sourceFile": "review/2026-11-12-five-plus-three/artwork/ncua-accion-all-peoples-united-credit-union-charters.jpg",
+    "medium": "soft-editorial-illustration",
+    "subject": "member-interaction",
+    "composition": "wide-environmental",
+    "perspective": "eye-level",
+    "palette": "burgundy-sand",
+    "lighting": "warm-practical",
+    "texture": "paper-fiber",
+    "scene": "Illustrated neighborhood businesses and two financial-service counters serving different members",
+    "topicFit": 94,
+    "editorialClarity": 92,
+    "score": 75.2,
+    "metrics": {
+      "novelty": 57,
+      "topicFit": 94,
+      "editorialClarity": 92
+    },
+    "rejected": false,
+    "reasons": []
+  },
+  {
+    "sourceFile": "review/2026-11-12-five-plus-three/artwork/credit-union-savers-match-2027-ira-readiness.jpg",
+    "medium": "macro-still-life",
+    "subject": "financial-object-study",
+    "composition": "single-object-negative-space",
+    "perspective": "eye-level",
+    "palette": "emerald-cream",
+    "lighting": "cinematic-side-light",
+    "texture": "matte-clay",
+    "scene": "Two gold coins above a cream savings pot against an emerald background",
+    "topicFit": 94,
+    "editorialClarity": 92,
+    "score": 60.9,
+    "metrics": {
+      "novelty": 29,
+      "topicFit": 94,
+      "editorialClarity": 92
+    },
+    "rejected": false,
+    "reasons": []
+  },
+  {
+    "medium": "mixed-media-collage",
+    "subject": "documents-and-controls",
+    "composition": "asymmetric-editorial",
+    "perspective": "overhead",
+    "palette": "slate-lime",
+    "lighting": "diffused-overcast",
+    "texture": "newsprint-grain",
+    "scene": "Unmarked vendor files connected to a modest branching diagram made from physical thread, no readable labels",
+    "topicFit": 90,
+    "editorialClarity": 85,
+    "score": 79.7,
+    "metrics": {
+      "novelty": 71,
+      "topicFit": 90,
+      "editorialClarity": 85
+    },
+    "rejected": false,
+    "reasons": []
+  }
+]

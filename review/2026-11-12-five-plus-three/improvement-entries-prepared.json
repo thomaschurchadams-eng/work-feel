@@ -1,0 +1,36 @@
+[
+  {
+    "id": "article-layout-reuse-2026-11-12",
+    "owner": "daily-publisher",
+    "evidence": "HELOC PR328 first exact artifact passed automated checks but actual review found duplicate newsletter invitations; FedNow PR329 first artifact exposed cramped unstyled table headings. The existing deceased-member article also visibly contains two newsletter invitations, confirmed on production November 12.",
+    "proposedChange": "Recognize an existing authored newsletter CTA before shared injection; reject duplicate newsletter CTA links in the existing rendered suite; require the existing log-table component and scoped headers in the publisher policy.",
+    "expectedBenefit": "Prevent repeat layout defects discovered during real article production.",
+    "risk": "low",
+    "status": "prepared",
+    "validation": [
+      "HELOC manual duplicate removed before accepted head 2c0559e7d2be5ea9dfd78a41a66f0314f58eceb1.",
+      "FedNow table corrected before accepted head d838e79ac9da120ae179b5d903551db1e57b80f3.",
+      "Both actual production articles reviewed on desktop/mobile. Shared prevention still requires its own exact-revision rendered acceptance and production verification."
+    ],
+    "result": "Keep the two authoring corrections; shared prevention awaiting release.",
+    "nextTrigger": "Next exact-head review and production check of the existing deceased-member page.",
+    "rollback": "Revert only shared CTA recognition, rendered duplicate check and associated authoring instruction."
+  },
+  {
+    "id": "five-plus-three-unattended-acceptance-2026-11-12",
+    "owner": "daily-publisher / cuai-operating-system / reliability-watch",
+    "evidence": "Tom reported interactive ChatGPT approval prompts during the authorized full cycle. GitHub app-specific permission is Allow all actions; this alone does not identify the prompting layer. Existing publisher run_now returned inline_run in the same conversation, not a separate unattended worker.",
+    "proposedChange": "Use the existing scheduled publisher and Operating System with current-main cadence and preserved same-day counts; retain exact source/rendered/live gates. Record actual approval or missing-runtime blockers in the existing checkpoint and incident.",
+    "expectedBenefit": "Make the next observed daily result distinguish unattended completion from interactive assistance.",
+    "risk": "low",
+    "status": "unverified",
+    "validation": [
+      "Cadence PR327 released five ordinary weekday article slots, a six-total November 12 exception above the original article, and at most three qualified Alerts.",
+      "Existing publisher is enabled for November 13 07:00 America/New_York; Operating System 15:00; Reliability Watch 08:00.",
+      "No schedule/model/credential or permission change made. Exact model and reasoning selection are not exposed by the automation API."
+    ],
+    "result": "Policy and interactive execution are separate from approval-free scheduled execution; unattended success cannot yet be claimed.",
+    "nextTrigger": "November 13 existing scheduled publisher and Operating System outcomes; Watch reconciles exact owned blockers without duplicate publication.",
+    "rollback": "No new automation or permission change to undo."
+  }
+]

@@ -1,0 +1,226 @@
+{
+  "generatedAt": "2026-11-12T21:25:40.495Z",
+  "weekStart": "2026-11-09",
+  "alreadyPublishedThisWeek": 6,
+  "selected": [
+    {
+      "title": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "analysis",
+      "sourceUrl": "https://ncua.gov/news/events/2026/comments-proposed-third-party-risk-management-guidance-due-november-16",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 86,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-09-15T12:00:00Z",
+      "score": 70,
+      "metrics": {
+        "newsworthiness": 86,
+        "creditUnionRelevance": 96,
+        "coverageGap": 35,
+        "originality": 80,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "title": "FedNow’s 2027 Credits Come With Volume Tests and a Fee Cap",
+      "functions": [
+        "finance-treasury"
+      ],
+      "technologies": [
+        "realtime-embedded-finance"
+      ],
+      "format": "explainer",
+      "sourceUrl": "https://www.frbservices.org/news/fed360/issues/fednow-discount-program-accelerating-next-wave-instant-payment-adoption/",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 75,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-09-15T12:00:00Z",
+      "score": 65.9,
+      "metrics": {
+        "newsworthiness": 75,
+        "creditUnionRelevance": 96,
+        "coverageGap": 11.666666666666666,
+        "originality": 100,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "title": "Preparing Credit Union IRAs for the 2027 Saver’s Match",
+      "functions": [
+        "member-service"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "explainer",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/savers-match",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 78,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-09-28T12:00:00Z",
+      "score": 63.1,
+      "metrics": {
+        "newsworthiness": 78,
+        "creditUnionRelevance": 96,
+        "coverageGap": 6.999999999999999,
+        "originality": 83,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "title": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
+      "functions": [
+        "board-strategy"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "case-study",
+      "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-charters-accion-opportunity-federal-credit-union",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 72,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-10-30T12:00:00Z",
+      "score": 62.9,
+      "metrics": {
+        "newsworthiness": 72,
+        "creditUnionRelevance": 96,
+        "coverageGap": 5.833333333333333,
+        "originality": 92,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    }
+  ],
+  "rejected": [],
+  "ranked": [
+    {
+      "title": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "analysis",
+      "sourceUrl": "https://ncua.gov/news/events/2026/comments-proposed-third-party-risk-management-guidance-due-november-16",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 86,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-09-15T12:00:00Z",
+      "score": 70,
+      "metrics": {
+        "newsworthiness": 86,
+        "creditUnionRelevance": 96,
+        "coverageGap": 35,
+        "originality": 80,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "title": "FedNow’s 2027 Credits Come With Volume Tests and a Fee Cap",
+      "functions": [
+        "finance-treasury"
+      ],
+      "technologies": [
+        "realtime-embedded-finance"
+      ],
+      "format": "explainer",
+      "sourceUrl": "https://www.frbservices.org/news/fed360/issues/fednow-discount-program-accelerating-next-wave-instant-payment-adoption/",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 75,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-09-15T12:00:00Z",
+      "score": 65.9,
+      "metrics": {
+        "newsworthiness": 75,
+        "creditUnionRelevance": 96,
+        "coverageGap": 11.666666666666666,
+        "originality": 100,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "title": "Preparing Credit Union IRAs for the 2027 Saver’s Match",
+      "functions": [
+        "member-service"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "explainer",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/savers-match",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 78,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-09-28T12:00:00Z",
+      "score": 63.1,
+      "metrics": {
+        "newsworthiness": 78,
+        "creditUnionRelevance": 96,
+        "coverageGap": 6.999999999999999,
+        "originality": 83,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "title": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
+      "functions": [
+        "board-strategy"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "case-study",
+      "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-charters-accion-opportunity-federal-credit-union",
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "newsworthiness": 72,
+      "creditUnionRelevance": 96,
+      "sourcePublishedAt": "2026-10-30T12:00:00Z",
+      "score": 62.9,
+      "metrics": {
+        "newsworthiness": 72,
+        "creditUnionRelevance": 96,
+        "coverageGap": 5.833333333333333,
+        "originality": 92,
+        "sourceQuality": 100,
+        "urgency": 0
+      },
+      "rejected": false,
+      "reasons": []
+    }
+  ]
+}

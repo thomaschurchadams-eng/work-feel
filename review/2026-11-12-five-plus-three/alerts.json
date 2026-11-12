@@ -144,5 +144,11 @@
         "turn29search2"
       ]
     }
-  ]
+  ],
+  "sourcesRecheckedAt": "2026-11-12T22:21:14.036871+00:00",
+  "primarySourceReview": {
+    "ConnectWise": "Current advisory remains November 12 18:45 UTC; source and specific client-version/extension caveats confirmed.",
+    "Apache": "Official vulnerabilities page confirms November 11 2.4.71 and affected HTTP Server/mod_h2 ranges.",
+    "Check Point": "Official advisory search extraction and official research confirm October 30–November 4 attacks, November Jumbo Hotfix and prioritize internet-facing Mobile Access. Original URLs retained."
+  }
 }

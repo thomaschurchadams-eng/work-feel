@@ -11,18 +11,48 @@
     "scene": "Cut-paper home above a layer of gold coins, illustrating home equity"
   },
   {
+    "medium": "editorial-photography",
+    "subject": "frontline-workflow",
+    "composition": "tight-close-up",
+    "perspective": "eye-level",
+    "palette": "emerald-cream",
+    "lighting": "natural-window-light",
+    "texture": "clean-photographic",
+    "scene": "Operations professional comparing payment activity across two screens with all text obscured",
     "sourceFile": "review/2026-11-12-five-plus-three/artwork/credit-union-fednow-2027-discount-economics.jpg",
-    "medium": "dimensional-3d",
-    "subject": "physical-metaphor",
-    "composition": "split-comparison",
-    "perspective": "overhead",
-    "palette": "cobalt-coral",
-    "lighting": "high-contrast-studio",
-    "texture": "matte-clay",
-    "scene": "Two ceramic payment paths diverge and rejoin around a single gold coin"
+    "conceptScore": 60.3,
+    "conceptAlternatives": [
+      {
+        "medium": "editorial-photography",
+        "subject": "frontline-workflow",
+        "scene": "Operations professional comparing payment activity across two screens with all text obscured",
+        "score": 60.3,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "dimensional-3d",
+        "subject": "physical-metaphor",
+        "scene": "Two ceramic payment paths diverge and rejoin around a single gold coin",
+        "score": 53.7,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "refined-data-abstraction",
+        "subject": "abstract-data-system",
+        "scene": "Abstract payment paths and cost blocks",
+        "score": 41.6,
+        "rejected": true,
+        "reasons": [
+          "same-medium-consecutive",
+          "exact-combination-repeated"
+        ]
+      }
+    ],
+    "selectionReason": "Highest-scoring valid concept from three distinct mediums and subjects; actual artwork visually reviewed."
   },
   {
-    "sourceFile": "review/2026-11-12-five-plus-three/artwork/ncua-accion-all-peoples-united-credit-union-charters.jpg",
     "medium": "soft-editorial-illustration",
     "subject": "member-interaction",
     "composition": "wide-environmental",
@@ -30,10 +60,38 @@
     "palette": "burgundy-sand",
     "lighting": "warm-practical",
     "texture": "paper-fiber",
-    "scene": "Illustrated neighborhood businesses and two financial-service counters serving different members"
+    "scene": "Illustrated neighborhood businesses and two financial-service counters serving different members",
+    "sourceFile": "review/2026-11-12-five-plus-three/artwork/ncua-accion-all-peoples-united-credit-union-charters.jpg",
+    "conceptScore": 75.2,
+    "conceptAlternatives": [
+      {
+        "medium": "soft-editorial-illustration",
+        "subject": "member-interaction",
+        "scene": "Illustrated neighborhood businesses and two financial-service counters serving different members",
+        "score": 75.2,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "mixed-media-collage",
+        "subject": "documents-and-controls",
+        "scene": "Blank charter papers layered with neighborhood silhouettes and faceless member portraits",
+        "score": 53.5,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "architectural-isometric",
+        "subject": "architecture-and-infrastructure",
+        "scene": "Two distinct community centers surrounded by small businesses and homes, no real institution or signage",
+        "score": 50.9,
+        "rejected": false,
+        "reasons": []
+      }
+    ],
+    "selectionReason": "Highest-scoring valid concept from three distinct mediums and subjects; actual artwork visually reviewed."
   },
   {
-    "sourceFile": "review/2026-11-12-five-plus-three/artwork/credit-union-savers-match-2027-ira-readiness.jpg",
     "medium": "macro-still-life",
     "subject": "financial-object-study",
     "composition": "single-object-negative-space",
@@ -41,17 +99,74 @@
     "palette": "emerald-cream",
     "lighting": "cinematic-side-light",
     "texture": "matte-clay",
-    "scene": "Two gold coins above a cream savings pot against an emerald background"
+    "scene": "Two gold coins above a cream savings pot against an emerald background",
+    "sourceFile": "review/2026-11-12-five-plus-three/artwork/credit-union-savers-match-2027-ira-readiness.jpg",
+    "conceptScore": 60.9,
+    "conceptAlternatives": [
+      {
+        "medium": "macro-still-life",
+        "subject": "financial-object-study",
+        "scene": "Two gold coins above a cream savings pot against an emerald background",
+        "score": 60.9,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "tactile-paper-cut",
+        "subject": "physical-metaphor",
+        "scene": "Two paper retirement savings jars, one with a smaller matching coin contribution",
+        "score": 52.4,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "editorial-photography",
+        "subject": "member-interaction",
+        "scene": "Older saver considering a plain savings passbook with no readable text",
+        "score": 40,
+        "rejected": false,
+        "reasons": []
+      }
+    ],
+    "selectionReason": "Highest-scoring valid concept from three distinct mediums and subjects; actual artwork visually reviewed."
   },
   {
-    "sourceFile": "review/2026-11-12-five-plus-three/artwork/credit-union-proposed-vendor-risk-guidance.jpg",
-    "medium": "ink-and-linocut",
-    "subject": "physical-metaphor",
-    "composition": "foreground-background-tension",
-    "perspective": "isometric",
-    "palette": "monochrome-ink",
-    "lighting": "graphic-flat-light",
+    "medium": "mixed-media-collage",
+    "subject": "documents-and-controls",
+    "composition": "asymmetric-editorial",
+    "perspective": "overhead",
+    "palette": "slate-lime",
+    "lighting": "diffused-overcast",
     "texture": "newsprint-grain",
-    "scene": "Four connected blocks with one loose linkage, illustrating a vendor dependency"
+    "scene": "Unmarked vendor files connected to a modest branching diagram made from physical thread, no readable labels",
+    "sourceFile": "review/2026-11-12-five-plus-three/artwork/credit-union-proposed-vendor-risk-guidance.jpg",
+    "conceptScore": 79.7,
+    "conceptAlternatives": [
+      {
+        "medium": "mixed-media-collage",
+        "subject": "documents-and-controls",
+        "scene": "Unmarked vendor files connected to a modest branching diagram made from physical thread, no readable labels",
+        "score": 79.7,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "ink-and-linocut",
+        "subject": "physical-metaphor",
+        "scene": "Four connected blocks with one loose linkage, illustrating a vendor dependency",
+        "score": 68,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "cinematic-conceptual",
+        "subject": "operations-environment",
+        "scene": "A quiet service operations room seen through a window, indicating dependence on outside infrastructure",
+        "score": 59.2,
+        "rejected": false,
+        "reasons": []
+      }
+    ],
+    "selectionReason": "Highest-scoring valid concept from three distinct mediums and subjects; actual artwork visually reviewed."
   }
 ]
