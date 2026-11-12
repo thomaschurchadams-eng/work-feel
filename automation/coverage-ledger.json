@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ncua-accion-all-peoples-united-credit-union-charters",
+      "title": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
+      "url": "/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
+      "publishedAt": "2026-11-12T17:18:32-05:00",
+      "section": "insights",
+      "beat": "ncua-accion-all-peoples-united-credit-union-charters",
+      "functions": [
+        "board-strategy"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "case-study",
+      "audience": "executive",
+      "primaryAudience": "Board and Strategy leaders",
+      "maturity": "emerging",
+      "promotionPriority": "Library",
+      "socialDecision": "prepared-not-reserved-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-small-business-servicing-exception-ledger.html",
+        "/insight-credit-union-ai-business-onboarding-evidence-record.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "sourceLimit": "Comparative Insights case study of two disclosed October charter designs, not newly announced News or demonstrated operating results."
+    },
+    {
       "id": "credit-union-fednow-2027-discount-economics",
       "title": "FedNow’s 2027 Credits Come With Volume Tests and a Fee Cap",
       "url": "/insight-credit-union-fednow-2027-discount-economics.html",
