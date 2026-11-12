@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-12",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -160,10 +160,19 @@
         "primaryFunctionalAudience": "Credit-union lending and collections leaders",
         "promotionPriority": "Standard",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-credit-union-fednow-2027-discount-economics.html",
+        "title": "FedNow’s 2027 Credits Come With Volume Tests and a Fee Cap",
+        "classification": "Insights",
+        "primaryFunctionalAudience": "Credit-union finance and treasury leaders",
+        "promotionPriority": "Library",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T22:07:18.628Z",
+    "updatedAt": "2026-11-12T22:16:04.579Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -304,12 +313,12 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-12",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/insight-credit-union-fednow-2027-discount-economics.html",
         "candidateTitle": "FedNow’s 2027 Credits Come With Volume Tests and a Fee Cap",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-12T21:44:20.198Z",
-        "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
+        "nextAction": "Retain live proof; do not republish.",
         "evidence": {
           "validationHistory": [
             {
@@ -362,8 +371,12 @@
             "visualReviewedAt": "2026-11-12T22:07:18.628Z",
             "artifactId": 13984854926,
             "artifactDigest": "sha256:aa49d234880f32122a1e0dd6aaf60c488e9ef57fa3763642e8f1fb8074dd4580"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_2Vr5ejJVXSrShjp8wnGLqHHnYzuv"
+        },
+        "productionCommit": "54fd302b53a2101f5874ac9aa595118d7d0f01f5",
+        "verifiedAt": "2026-11-12T22:16:04.579Z",
+        "liveProof": "Exact production READY; desktop/mobile article, 1200×630 original artwork, Insights listing and first homepage card verified. One newsletter CTA, styled fee table, no horizontal overflow or runtime errors."
       }
     ],
     "socialDistribution": {
