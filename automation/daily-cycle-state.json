@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-12",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -178,10 +178,19 @@
         "primaryFunctionalAudience": "executive",
         "promotionPriority": "Library",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-credit-union-savers-match-2027-ira-readiness.html",
+        "title": "Preparing Credit Union IRAs for the 2027 Saver’s Match",
+        "classification": "Insights",
+        "primaryFunctionalAudience": "functional-leader",
+        "promotionPriority": "Library",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-12T23:16:59.812Z",
+    "updatedAt": "2026-11-12T23:18:24.188Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "nextCoverageGap": "AI-assisted offer suppression and consent evidence in member marketing",
     "regularPublicationSlots": [
@@ -449,12 +458,12 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-12",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/insight-credit-union-savers-match-2027-ira-readiness.html",
         "candidateTitle": "Preparing Credit Union IRAs for the 2027 Saver’s Match",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-12T23:28:42.121Z",
-        "nextAction": "Complete the exact-head source/rendered checks and actual visual acceptance.",
+        "nextAction": "Retain live proof; do not republish.",
         "evidence": {
           "validationHistory": [],
           "pending": {
@@ -484,8 +493,12 @@
             "visualReviewedAt": "2026-11-12T23:16:54.711Z",
             "artifactId": 13993123382,
             "artifactDigest": "sha256:5a139126239d1012339cb1def283afb1e92f98c88b7091f4e4ffc46303d8b107"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_HoTqTLVcm36AxWFEWD8Mhyjb9XBF"
+        },
+        "productionCommit": "111882ae52fc7cb189ee4c22abe34f0ff9300db6",
+        "verifiedAt": "2026-11-12T23:18:24.188Z",
+        "liveProof": "Exact production READY; desktop/mobile article, original 1200×630 image, Insights listing and first homepage card verified without overflow or runtime errors."
       }
     ],
     "socialDistribution": {
@@ -512,14 +525,14 @@
     "additionalCycleProgress": {
       "baselineArticleCount": 1,
       "requestedAdditionalArticles": 5,
-      "completedAdditionalArticles": 3,
-      "remainingAdditionalArticles": 2,
+      "completedAdditionalArticles": 4,
+      "remainingAdditionalArticles": 1,
       "requestedAdditionalAlerts": 3,
       "publishedAdditionalAlerts": 0,
       "unattendedExecution": "unproven",
       "pendingArticlePR": 330,
       "preparedPacketBranch": "cuai/nov12-continuation-packet",
-      "updatedAt": "2026-11-12T23:08:17.327Z"
+      "updatedAt": "2026-11-12T23:18:24.188Z"
     }
   },
   "history": [
