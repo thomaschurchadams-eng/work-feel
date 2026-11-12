@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-11T15:36:30+00:00",
+  "updatedAt": "2026-11-12T23:43:37.993287+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -461,6 +461,57 @@
       "result": "PR #317 is released and independently live-verified. The first subsequent ordinary operating review consumed the corrected publication clock and kept the MEXC Alert active while its verified CUAI publication instant remained within 72 hours, demonstrating workflow adoption without reopening the release. The source date remains separately labeled. Article header behavior and all prior Alert history remain intact. No audience, engagement or performance gain is inferred from technical and operating adoption.",
       "rollback": "Revert only these scoped display/selector changes if a verified regression appears. Preserve this evidence and all original dates; do not restore ambiguous date labels or broad sticky selectors as a substitute for a targeted correction.",
       "nextTrigger": "Continue using verified CUAI publication instants in the next naturally scheduled Alert/homepage review; reopen only on a verified chronology, expiry, labeling or header regression."
+    },
+    {
+      "id": "article-layout-reuse-2026-11-12",
+      "owner": "daily-publisher",
+      "evidence": "HELOC PR328 first exact artifact passed automated checks but actual review found duplicate newsletter invitations; FedNow PR329 first artifact exposed cramped unstyled table headings. The existing deceased-member article also visibly contains two newsletter invitations, confirmed on production November 12. Continuation: https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839174455",
+      "proposedChange": "Recognize an existing authored newsletter CTA before shared injection; reject duplicate newsletter CTA links in the existing rendered suite; require the existing log-table component and scoped headers in the publisher policy.",
+      "expectedBenefit": "Prevent repeat layout defects discovered during real article production.",
+      "risk": "low",
+      "status": "implemented-awaiting-exact-rendered-release",
+      "validation": [
+        "HELOC manual duplicate removed before accepted head 2c0559e7d2be5ea9dfd78a41a66f0314f58eceb1.",
+        "FedNow table corrected before accepted head d838e79ac9da120ae179b5d903551db1e57b80f3.",
+        "Both actual production articles reviewed on desktop/mobile. Shared prevention still requires its own exact-revision rendered acceptance and production verification.",
+        "Prepared shared fix: 349 source tests passed on first run; four environment-only failures (temporary worktree lacked dependency link and Node in child-process PATH) all passed after local runtime setup was corrected. No application change was needed for those failures."
+      ],
+      "result": "Shared CTA recognition and duplicate guard are implemented in this package; exact rendered acceptance and production observation remain required. See issue 160 for actual release outcome.",
+      "nextTrigger": "Next exact-head review and production check of the existing deceased-member page.",
+      "rollback": "Revert only shared CTA recognition, rendered duplicate check and associated authoring instruction."
+    },
+    {
+      "id": "five-plus-three-unattended-acceptance-2026-11-12",
+      "owner": "daily-publisher / cuai-operating-system / reliability-watch",
+      "evidence": "Tom reported interactive ChatGPT approval prompts during the authorized full cycle. GitHub app-specific permission is Allow all actions; this alone does not identify the prompting layer. Existing publisher run_now returned inline_run in the same conversation, not a separate unattended worker. Repeated approval prompts were reported again after artifact access resumed. On November 12, both GitHub and Vercel app overrides were independently read as Allow all actions; the default is Allow low-risk actions. The API exposes no approval-event audit for this run and no runnable-environment identity for the existing inherited scheduled task, so the prompting layer remains unidentified. Continuation: https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839174455",
+      "proposedChange": "Use the existing scheduled publisher and Operating System with current-main cadence and preserved same-day counts; retain exact source/rendered/live gates. Record actual approval or missing-runtime blockers in the existing checkpoint and incident.",
+      "expectedBenefit": "Make the next observed daily result distinguish unattended completion from interactive assistance.",
+      "risk": "low",
+      "status": "unverified",
+      "validation": [
+        "Cadence PR327 released five ordinary weekday article slots, a six-total November 12 exception above the original article, and at most three qualified Alerts.",
+        "Existing publisher is enabled for November 13 07:00 America/New_York; Operating System 15:00; Reliability Watch 08:00.",
+        "No schedule/model/credential or permission change made. Exact model and reasoning selection are not exposed by the automation API.",
+        "Existing November 12 07:00 scheduled one-article run completed with requires_user_action=false. This is a recorded task result, not an approval-event audit or proof of the expanded five-plus-three process.",
+        "ChatGPT application inspection was explicitly blocked by the platform; no alternative inspection route or permission weakening was attempted. The exact prompting action remains unavailable."
+      ],
+      "result": "UNRESOLVED: the supervised cycle still required Tom to approve actions. GitHub/Vercel permissions are already automatic. Do not mark the standardized unattended process accepted until an independently scheduled full target cycle completes without user intervention, with actual receipt/runtime evidence. Authorized artifact transfer worked through Node while available, then through an ordinary in-app browser download after that runtime capability disappeared. No browser or security approval requirement was disabled.",
+      "nextTrigger": "November 13 existing scheduled publisher and Operating System outcomes; Watch reconciles exact owned blockers without duplicate publication.",
+      "rollback": "No new automation or permission change to undo."
+    },
+    {
+      "id": "alert-boundary-test-catalogue-isolation-2026-11-12",
+      "owner": "daily-publisher",
+      "evidence": "PR333 exact head f08b8954d462f379db06d52bf253eccd6f219db1 failed run43330144082/job131572494979 after 353 source checks and all 44 route checks passed. Historical date journey assumed the FinCEN record was first even before its publication, when the archive correctly sorts unknown records by source date.",
+      "proposedChange": "Use the retained actual FinCEN record as an explicitly isolated historical boundary fixture. Preserve full current-catalogue archive/rendered tests and separate synthetic mixed-publication ordering checks.",
+      "expectedBenefit": "New legitimate Alerts do not invalidate unrelated historical expiry boundaries; all original expiry, date, sorting, accessibility and archive behavior remains tested.",
+      "risk": "low",
+      "status": "implemented-awaiting-exact-rendered-release",
+      "validation": [
+        "Source test syntax and whitespace checks passed; exact revised-head rendered run required."
+      ],
+      "result": "Failure retained in this Alert package and issue160; revised candidate is not accepted until exact full CI and actual screenshot review pass.",
+      "rollback": "Revert only the historical boundary-fixture isolation; retain published Alert records and evidence."
     }
   ]
 }

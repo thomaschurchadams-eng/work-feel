@@ -1669,7 +1669,9 @@
   const addArticleNewsletterCta = () => {
     if (!document.body.classList.contains('page-article')) return;
     const articleBody = document.querySelector('main .article-body');
-    if (!articleBody || document.querySelector('.article-newsletter-cta')) return;
+    if (!articleBody || document.querySelector('.article-newsletter-cta') ||
+        [...articleBody.querySelectorAll('.article-cta a[href]')].some(link =>
+          new URL(link.href, document.baseURI).pathname === '/newsletter.html')) return;
     const callout = document.createElement('aside');
     callout.className = 'article-newsletter-cta';
     callout.setAttribute('aria-label', 'CreditUnionAI Weekly Briefing');

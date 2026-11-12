@@ -1,6 +1,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
 const { execFileSync } = require('node:child_process');
 const root = path.resolve(__dirname, '../..');
 
@@ -59,11 +60,29 @@ module.exports = async function verifyDateHeader(browser, base, out) {
       }
     } finally { await context.close(); save(); }
   }
+  // These clocks bracket one retained historical publication, not today's
+  // changing catalogue. Isolate that real record for the boundary journeys;
+  // verifyAlerts and verify-site still render the complete current catalogue.
+  // Unknown/newer-source ordering is exercised by the separate fixture below.
+  const actualApp = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
+  const dataStart = actualApp.indexOf('  const alertsData = [');
+  const dataEnd = actualApp.indexOf('  // Maintained by the weekday operating cycle.');
+  assert.ok(dataStart >= 0 && dataEnd > dataStart);
+  const actualAlerts = vm.runInNewContext(actualApp.slice(dataStart, dataEnd) + '\nalertsData');
+  const boundaryRecord = actualAlerts.find(item => item.slug === 'fincen-mexc-global-transfer-prohibition');
+  assert.ok(boundaryRecord, 'retained historical publication is missing');
+  assert.equal(boundaryRecord.publishedAt, '2026-11-09T20:35:32.856Z');
+  const boundaryApp = actualApp.slice(0, dataStart) + '  const alertsData = ' + JSON.stringify([boundaryRecord]) + ';\n' + actualApp.slice(dataEnd);
   for (const width of [320, 390, 1440]) {
     for (const [clock, fresh, known, recent] of [['2026-11-11T12:00:00Z', true, true, true], ['2026-11-12T20:35:32.856Z', true, true, true], ['2026-11-12T20:35:32.857Z', false, true, true], ['2026-11-09T20:35:32.855Z', false, false, false], ['2026-11-23T20:35:32.856Z', false, true, true], ['2026-11-23T20:35:32.857Z', false, true, false]]) {
       const context = await browser.newContext({ viewport: { width, height: 844 }, reducedMotion: 'reduce' });
       await context.addInitScript(clock => { const RealDate = Date; window.Date = class extends RealDate { constructor(...args) { super(...(args.length ? args : [clock])); } static now() { return new RealDate(clock).getTime(); } }; }, clock);
-      await context.route('**/*', route => ['GET', 'HEAD'].includes(route.request().method()) && new URL(route.request().url()).origin === new URL(base).origin ? route.continue() : route.abort());
+      await context.route('**/*', route => {
+        const request = route.request(), url = new URL(request.url());
+        if (!['GET', 'HEAD'].includes(request.method()) || url.origin !== new URL(base).origin) return route.abort();
+        if (url.pathname === '/assets/app.js') return route.fulfill({ status: 200, contentType: 'text/javascript', body: boundaryApp });
+        return route.continue();
+      });
       const page = await context.newPage();
       try {
         await page.goto(new URL('/alerts/', base).href);
@@ -94,7 +113,7 @@ module.exports = async function verifyDateHeader(browser, base, out) {
           assert.deepEqual(dateContrastViolations, [], 'active Alert date labels must meet contrast, independent of the real clock');
         }
         if (clock.includes('11T')) await page.locator('#latest-alert').screenshot({ path: path.join(out, `home-alert-publication-${width}.png`) });
-        results.dates.push({ width, clock, dates, homepageFresh: fresh, verifiedPublication: known, recentFilterAndTicker: recent, dateContrastViolations }); save();
+        results.dates.push({ width, clock, dates, homepageFresh: fresh, verifiedPublication: known, recentFilterAndTicker: recent, dateContrastViolations, catalogueScope: 'retained-historical-publication-boundary-fixture' }); save();
       } finally { await context.close(); }
     }
   }
