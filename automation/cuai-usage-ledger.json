@@ -4948,6 +4948,73 @@
       ],
       "summary": "The scoped PR #317 Alert-date and article-header repair is recovered under its existing incident key. The original exact-head design checks failed closed because Ubuntu dependency downloads could not resolve azure.archive.ubuntu.com; a later isolated container run then failed Git ownership validation. Those transient environment and checkout-configuration failures remain preserved in issue #160. Exact accepted head 273c65af51e7b92143d3cc509dccc3ebe9fcb988 subsequently passed run 43062388319 with 235 source tests and 44 rendered checks after using the pinned Playwright image and scoping Git trust to the exact checkout. The daily publisher inspected the actual 390px and 1440px artifact, and PR #317 merged as 148162480210fb5fa226fea838eac41f0cedb8eb. Production deployment dpl_6KGcBvXBvC6d2kknR716CCEbnE2Q is READY on creditunionainews.com at that exact commit. Native live verification checked Alert chronology, separate CUAI/source dates, unknown-history labels, filtering, homepage freshness, non-sticky article title behavior, navigation and eight 72-hour/14-day boundary cases with no overflow or page errors. Natural post-merge run 43063755133 passed with zero distribution attempts and unchanged daily-cycle/social-queue blobs. Reliability independently rechecked the deployment identity, seven public surfaces at HTTP 200, the two November 11 article records, all 81 history entries, the 55-item social queue with no duplicate reservation, and a clean 30-minute runtime-error window. No publisher cycle, content, social, provider, credential, schedule, permission or editorial gate changed. PR #311 remains held and untouched; PR #260 and any shared checkpoint adapter remain inactive. Durable prevention: retain the pinned browser image and exact-checkout Git trust in the isolated design-check job while preserving fail-closed exact-head and visual gates.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-11T15:43:53-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Wednesday bounded operating review after the daily publisher recorded two verified article handoffs and the completed PR #317 date/header repair became available for ordinary operating consumption.",
+      "status": "degraded",
+      "incidentKey": "cuai-operating:2026-11-11:daily-review",
+      "workUnits": {
+        "authoritativePolicyFilesReviewed": 5,
+        "coordinationBusCommentsReviewed": 228,
+        "publisherHandoffsConsumed": 1,
+        "reliabilityCompletionsConsumed": 1,
+        "weeklyArticlesTarget": 8,
+        "weeklyArticlesLiveVerified": 4,
+        "wednesdayRegularSlotsLiveVerified": 2,
+        "publicationHistoryEntriesPreserved": 81,
+        "portfolioArticlesReviewed": 98,
+        "recentPortfolioArticlesCompared": 15,
+        "recentNewsArticles": 13,
+        "recentInsightArticles": 2,
+        "primaryOfficialSourceSurfacesChecked": 8,
+        "qualifiedNewAlerts": 0,
+        "freshAlertsRetained": 1,
+        "homepageFreshnessReviews": 1,
+        "homepageWatchWrites": 0,
+        "competitiveDistributionScansRepeated": 0,
+        "audienceDirectReadsAttempted": 3,
+        "audienceDirectReadsSucceeded": 0,
+        "exactCurrentMainMeasurementArtifactsFound": 0,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "policyCheckerAttempts": 1,
+        "policyCheckerSuccesses": 1,
+        "improvementEntriesAdvanced": 1,
+        "socialQueueWrites": 0,
+        "externalContacts": 0,
+        "spendActions": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public official-source web"
+      ],
+      "operationalLearning": {
+        "issue": "The released PR #317 corrected a material source-date versus CUAI-publication-date ambiguity, but the improvement entry still described only a private candidate. The ordinary homepage review also needed to prove that the corrected clock changed the real freshness decision. Separately, exact-current audience evidence remains inaccessible.",
+        "correction": "Consumed the completed release receipt, advanced the existing improvement entry to released/live-verified/kept, and applied the verified November 9 CUAI publication instant to today's homepage decision. Attempted each exact-current metric read once and retained the existing Friday audience checkpoint after all three reads failed and no exact-current artifact existed.",
+        "controllingVersion": {
+          "repositoryMain": "9b2b6fada29d4d2f77cd31ce26359699b42c1917",
+          "policyBlob": "0ee96316f49a42970eb269c5b4ea0073a2243c9b",
+          "pr317AcceptedHead": "273c65af51e7b92143d3cc509dccc3ebe9fcb988",
+          "pr317Merge": "148162480210fb5fa226fea838eac41f0cedb8eb",
+          "pr317ValidationRun": 43062388319,
+          "pr317NaturalPushRun": 43063755133,
+          "exactMainDeployment": "dpl_DyBBEvGSm63H5ouQeU3kb1LGBtNY"
+        },
+        "owner": "cuai-operating-system for the daily decision and unfinished audience assessment; reliability-watch remains the existing read/access path.",
+        "test": "The verified MEXC publication instant was about 48 hours old at review and therefore inside its inclusive 72-hour window until 2026-11-12T15:35:32.856-05:00. Exact current main was READY with no 24-hour runtime errors. GA4, Search Console and Buffer reads each returned HTTP 401 deployment_authentication_required, no mapped CLI credentials were available, and exact current main had no verified-operations artifact.",
+        "decision": "keep-publication-clock-fix; observe-blocked-audience",
+        "actualResult": "The active homepage Alert was retained without using its older source date as an expiry clock, and no duplicate Alert, stale fallback or watch-item write occurred. Audience and engagement movement remain unknown, not zero or unchanged.",
+        "nextTrigger": "Recheck Alert freshness in the next ordinary weekday review. At the existing Friday November 13 review, retry audience evidence only through a fresh authorized direct read or exact-current-main verified artifact and return an evidence-backed disposition while keeping the current week provisional."
+      },
+      "summary": "Wednesday operating review: both verified Standard News articles bring the week to 4 of 8. The 98-article portfolio's latest 15 are 13 News/2 Insights and remain concentrated in operations (11/15), risk/compliance (9/15) and IT/data/cybersecurity (7/15); deceased-member servicing and beneficiary/estate-document evidence remains the next gap, preferably in a non-News format when evidence qualifies. No new Alert qualified across eight official-source surfaces. The repaired publication clock keeps the November 9 MEXC Alert fresh until November 12 at 3:35 p.m. Eastern, so no homepage watch/fallback change was made. Exact current main is READY with no 24-hour runtime errors. Audience learning remains open and evidence-blocked after three 401 reads and no exact-current artifact; Friday's existing checkpoint remains. Monday's competitive-distribution scan was not repeated. No article/social publication by OS, external contact, spend, credential, permission, schedule, pricing, legal/privacy or editorial-gate change occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
