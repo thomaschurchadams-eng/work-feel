@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-savers-match-2027-ira-readiness",
+      "articleUrl": "/insight-credit-union-savers-match-2027-ira-readiness.html",
+      "imagePath": "/assets/credit-union-savers-match-2027-ira-readiness.jpg",
+      "publishedAt": "2026-11-12T18:09:02-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "macro-still-life",
+      "subject": "financial-object-study",
+      "composition": "single-object-negative-space",
+      "perspective": "eye-level",
+      "palette": "emerald-cream",
+      "lighting": "cinematic-side-light",
+      "texture": "matte-clay",
+      "scene": "Two gold coins above a cream savings pot against an emerald background",
+      "conceptScore": 60.9,
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "scene": "Two gold coins above a cream savings pot against an emerald background",
+          "score": 60.9,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "physical-metaphor",
+          "scene": "Two paper retirement savings jars, one with a smaller matching coin contribution",
+          "score": 52.4,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "member-interaction",
+          "scene": "Older saver considering a plain savings passbook with no readable text",
+          "score": 40,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept from three distinct mediums and subjects; actual artwork visually reviewed.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "f28a25f28031aad31d015765c2b7f8eb9a3950e7841062a076e77b051e0d385a"
+    },
+    {
       "id": "ncua-accion-all-peoples-united-credit-union-charters",
       "articleUrl": "/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
       "imagePath": "/assets/ncua-accion-all-peoples-united-credit-union-charters.jpg",

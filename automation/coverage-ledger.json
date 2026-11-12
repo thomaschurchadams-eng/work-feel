@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-savers-match-2027-ira-readiness",
+      "title": "Preparing Credit Union IRAs for the 2027 Saver’s Match",
+      "url": "/insight-credit-union-savers-match-2027-ira-readiness.html",
+      "publishedAt": "2026-11-12T18:09:02-05:00",
+      "section": "insights",
+      "beat": "credit-union-savers-match-2027-ira-readiness",
+      "functions": [
+        "member-service"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Member Service leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "prepared-not-reserved-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-member-communications-review.html",
+        "/insight-credit-union-ai-product-governance-outcome-gate.html"
+      ],
+      "sourceTier": 1,
+      "confidence": 0.94,
+      "sourceLimit": "Member-service explainer grounded in current IRS material. Preserves statutory-versus-proposed-process distinction."
+    },
+    {
       "id": "ncua-accion-all-peoples-united-credit-union-charters",
       "title": "NCUA’s First Two 2026 Charters Start With Distinct Member Groups",
       "url": "/insight-ncua-accion-all-peoples-united-credit-union-charters.html",
