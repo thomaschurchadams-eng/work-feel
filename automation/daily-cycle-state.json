@@ -373,11 +373,11 @@
           "rationale": "Event promotion; not a launch or evidence of a measured outcome."
         }
       ],
-      "status": "article-published",
-      "updatedAt": "2026-11-11T12:21:40.496Z",
+      "status": "article-and-alert-cycle-complete",
+      "updatedAt": "2026-11-11T20:43:53Z",
       "socialDecision": "not-created-standard-ineligible",
       "nextCoverageGap": "AI-assisted deceased-member servicing and beneficiary or estate-document evidence",
-      "nextAction": "Both Wednesday slots delivered; consider the deceased-member servicing gap only with stronger public evidence.",
+      "nextAction": "Preserve both verified Wednesday articles; retain the deceased-member servicing evidence gap; no new Alert qualified and the verified November 9 MEXC Alert remains within its 72-hour homepage window.",
       "regularPublicationSlots": [
         {
           "slot": 1,
@@ -488,6 +488,30 @@
         "recoveredMissedHigh": false,
         "houseCampaign": "prepared only; complete current future provider inventory unavailable",
         "nextReviewAt": "2026-11-12T07:00:00-05:00"
+      },
+      "alertCycle": {
+        "status": "no-qualified-alert",
+        "reviewedAt": "2026-11-11T15:43:53-05:00",
+        "lastQualifiedAlert": "fincen-mexc-global-transfer-prohibition",
+        "activeAlert": {
+          "publishedAt": "2026-11-09T20:35:32.856Z",
+          "sourceDate": "2026-11-06",
+          "expiresAt": "2026-11-12T15:35:32.856-05:00",
+          "disposition": "retain-fresh-homepage-alert"
+        },
+        "evidence": "No post-November 10 official development created a distinct urgent credit-union action. NCUA's latest item is the November 10 draft-budget hearing notice; OCC's November 10 guarantor-support bulletin applies to national/community banks and is useful comparative lending guidance but not a direct urgent credit-union requirement; FinCEN's latest remains the November 9 scam-center Exchange readout; CFPB, Federal Reserve, FTC, NIST and CISA review produced no newer qualifying credit-union Alert.",
+        "duplicateCheck": "The November 10 Federal Register publication of the MEXC order is already represented by the existing November 9 CUAI Alert; no duplicate or historical backfill was created.",
+        "homepageFreshness": "PR #317 corrected the clock to the verified CUAI publication instant. At review time the MEXC Alert was approximately 48 hours old and remained inside the inclusive 72-hour window through 2026-11-12T15:35:32.856-05:00. homepageWatchState remains empty and inactive behind the fresh Alert; no fallback or watch-item write was required.",
+        "sourcesChecked": [
+          "NCUA latest news and press releases",
+          "Federal Reserve releases and recent postings",
+          "OCC news, bulletins and enforcement surfaces",
+          "CFPB newsroom",
+          "FinCEN newsroom and notices",
+          "Federal Register current/public-inspection notices",
+          "NIST news and cybersecurity updates",
+          "CISA and FTC current alerts/releases"
+        ]
       }
     },
     {
