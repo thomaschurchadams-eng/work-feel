@@ -140,7 +140,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:56:33.442Z",
+    "updatedAt": "2026-11-13T12:58:10.411Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
@@ -353,13 +353,25 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-13",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
         "candidateTitle": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:25:00-05:00",
-        "nextAction": "Build the qualified evidence-linked Insight, then run the exact article checks."
+        "nextAction": "Read exact terminal CI, verify artifact and visually inspect mobile and desktop before release.",
+        "evidence": {
+          "pending": {
+            "prNumber": 338,
+            "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
+            "run": 43429590650,
+            "job": 131899456322,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-13T08:25:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ],
     "socialDistribution": {
