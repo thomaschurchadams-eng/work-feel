@@ -108,7 +108,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:22:35.366Z",
+    "updatedAt": "2026-11-13T12:24:28.686Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 2,
     "regularPublicationSlots": [
@@ -206,13 +206,25 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-13",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
         "candidateTitle": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Validate the atomic package and exact rendered artifact before release."
+        "nextAction": "Inspect exact-head design artifact and actual desktop/mobile output before releasing.",
+        "evidence": {
+          "pending": {
+            "prNumber": 336,
+            "head": "aa477a9b704e4e1a7af82cad2a079014598b1d92",
+            "run": 43424842473,
+            "job": 131883623517,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-13T08:00:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ],
     "socialDistribution": {
