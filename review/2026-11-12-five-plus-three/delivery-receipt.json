@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "publishingDate": "2026-11-12",
+  "timezone": "America/New_York",
+  "status": "publishing-complete-unattended-unaccepted",
+  "counts": {
+    "baselineArticles": 1,
+    "additionalArticles": 5,
+    "totalArticles": 6,
+    "additionalAlerts": 3
+  },
+  "verifiedAt": "2026-11-13T00:07:00.397Z",
+  "finalHead": "27706a2567866e47e141e574ed84154c88062e06",
+  "finalMerge": "43897a1a18b8e4fce5c68c5be16fc8f500efe3bc",
+  "productionDeploymentId": "dpl_8oTARCkQp2TFWx5kgYhxbuBneXP5",
+  "validation": {
+    "run": 43332662669,
+    "job": 131580930718,
+    "attempt": 1,
+    "conclusion": "success",
+    "artifact": {
+      "id": 13995956743,
+      "digest": "sha256:a113705ccf363bc7b28660bf3db82d1cba9839afa4fc8175fbf9019dc4be604d",
+      "head": "27706a2567866e47e141e574ed84154c88062e06"
+    },
+    "visualReviewedAt": "2026-11-13T00:05:24.240Z",
+    "renderedChecks": 46,
+    "naturalPushRun": 43334233019,
+    "naturalPushConclusion": "success"
+  },
+  "preservation": {
+    "priorHistoryCount": 82,
+    "priorHistoryEqual": true,
+    "originalArticleEntryEqual": true,
+    "socialQueueUnchanged": true,
+    "newDistributionAttempts": 0
+  },
+  "issueReceipt": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839690757",
+  "unattended": {
+    "status": "unaccepted",
+    "reason": "User reports repeated approval prompts; prompting action unavailable; no independent full-target scheduled run observed without intervention.",
+    "nextPublisher": "2026-11-13T07:00:00-05:00",
+    "diagnosticNeeded": "Exact action/wording of one approval prompt"
+  }
+}

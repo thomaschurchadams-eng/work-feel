@@ -1,14 +1,54 @@
 [
   {
-    "sourceFile": "/Users/tca/Documents/Codex/2026-11-12/new-chat/generated_images/exec-119db739-3509-4948-bea3-24a21da32915.png",
-    "medium": "tactile-paper-cut",
-    "subject": "architecture-and-infrastructure",
-    "composition": "layered-depth",
-    "perspective": "cutaway",
-    "palette": "burgundy-sand",
-    "lighting": "warm-practical",
-    "texture": "paper-fiber",
-    "scene": "Cut-paper home above a layer of gold coins, illustrating home equity"
+    "id": "heloc-balances-third-quarter-2026-credit-unions",
+    "articleUrl": "/news/heloc-balances-third-quarter-2026-credit-unions.html",
+    "imagePath": "/assets/heloc-balances-third-quarter-2026-credit-unions.jpg",
+    "publishedAt": "2026-11-12T15:55:56-05:00",
+    "width": 1200,
+    "height": 630,
+    "medium": "refined-data-abstraction",
+    "subject": "abstract-data-system",
+    "composition": "modular-grid",
+    "perspective": "overhead",
+    "palette": "navy-teal",
+    "lighting": "graphic-flat-light",
+    "texture": "frosted-glass",
+    "scene": "A house roof beside frosted-glass blocks and coins, illustrating growth in home-equity borrowing",
+    "dimensions": {
+      "width": 1200,
+      "height": 630
+    },
+    "sha256": "2252e1100ec4d054567c8a0518596905918dd044d7639db85c56e257d1a11a20",
+    "conceptScore": 57.2,
+    "conceptAlternatives": [
+      {
+        "medium": "refined-data-abstraction",
+        "subject": "abstract-data-system",
+        "scene": "Rising translucent blocks representing growth in balances without numeric labels",
+        "score": 57.2,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "tactile-paper-cut",
+        "subject": "architecture-and-infrastructure",
+        "scene": "Cut-paper home above a layer of gold coins, illustrating home equity",
+        "score": 47.6,
+        "rejected": false,
+        "reasons": []
+      },
+      {
+        "medium": "editorial-photography",
+        "subject": "member-interaction",
+        "scene": "Anonymous homeowner reading a lending document at a kitchen table",
+        "score": 39,
+        "rejected": false,
+        "reasons": []
+      }
+    ],
+    "selectionReason": "Highest-scoring valid concept from three different mediums and subjects; generated and visually reviewed for home-equity relevance. Conceptual art, not a scaled statistical chart.",
+    "sourceFile": "https://creditunionainews.com/assets/heloc-balances-third-quarter-2026-credit-unions.jpg",
+    "status": "published-verified-production-ledger-authoritative"
   },
   {
     "medium": "editorial-photography",
