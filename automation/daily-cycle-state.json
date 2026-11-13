@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-13",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -160,10 +160,19 @@
         "promotionPriority": "Library",
         "primaryFunctionalAudience": "Deposit operations, frontline service and compliance leaders",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
+        "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
+        "classification": "Insights",
+        "promotionPriority": "Library",
+        "primaryFunctionalAudience": "Treasury, ALCO and finance leaders",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-11-13T13:18:59.021Z",
+    "status": "completed",
+    "updatedAt": "2026-11-13T13:20:14.721Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
@@ -422,13 +431,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-13",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
         "candidateTitle": "Can Your Credit Union Draw on Its Emergency Funding Line?",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:35:00-05:00",
-        "nextAction": "Merge only the exact reviewed head after a refreshed canonical check.",
+        "nextAction": "Live verified; do not republish.",
         "evidence": {
           "pending": {
             "prNumber": 339,
@@ -458,14 +467,45 @@
             "visualReviewedAt": "2026-11-13T13:18:59.021Z",
             "artifactId": 14038769176,
             "artifactDigest": "sha256:b0c47ce366176d0cfbd2c7f3aafd8cfbe4e98cfdd99212d85d2499176a82dcbc"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_3cmvi94KQ5D8WiEv6751hAPCsT1S"
+        },
+        "productionCommit": "e3e4ba774f37158a5fae6fb247bc6dd8840863b6",
+        "verifiedAt": "2026-11-13T13:20:14.721Z",
+        "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
       }
     ],
     "socialDistribution": {
       "status": "not-reserved",
-      "blocker": "Authenticated provider inventory complete; 78 of 78 retained posts still flagged for destination review. No distribution attempt.",
-      "inventoryArtifactId": 14033809191
+      "blocker": "Complete provider inventory; all 78 retained records still need canonical-destination review. Duplicate clearance not established.",
+      "inventoryArtifactId": 14039628307,
+      "inventoryObservedAt": "2026-11-13T13:11:04.613Z",
+      "selectedUrl": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
+      "editorialOrder": [
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
+          "rationale": "Audit fraud chat handoffs against underlying case records, separating self-service metrics from resolved disputes; fresh named credit-union event with a concrete member-protection action."
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+          "rationale": "Check December 1 trust-account readiness by deduplicating beneficiaries and directing ambiguous records to compliance; binding date is near and both rule and agency guidance support the action."
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
+          "rationale": "Separate legal close and member-channel cutover; keep an authoritative routing and escalation reference through a two-year transition."
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
+          "rationale": "Measure cost per accepted result at the December rate on a controlled test set; Google’s public release and separate defender program are distinct, with no claimed CU outcome."
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
+          "rationale": "Measure elapsed time to usable contingency funds and test an independent backup route; strong treasury control, but standing guidance is less time-sensitive."
+        }
+      ],
+      "providerReservationAttempted": false,
+      "missedHighRecovery": "None qualified in the prior seven days",
+      "qualifiedPreparedMedia": "None at the date; paused media untouched"
     }
   },
   "history": [
