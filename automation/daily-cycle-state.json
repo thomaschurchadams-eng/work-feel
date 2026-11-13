@@ -95,7 +95,22 @@
         "reason": "Routine personnel notices excluded by policy."
       }
     ],
-    "fallbackEvaluations": [],
+    "fallbackEvaluations": [
+      {
+        "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
+        "classification": "Insights — Library",
+        "sourceUrl": "https://www.federalregister.gov/documents/2024/09/30/2024-21888/simplification-of-share-insurance-rules",
+        "supportingSourceUrls": [
+          "https://mycreditunion.gov/about/news-blog/trust-rule-fact-sheet-changes-ncua-share-insurance-coverage",
+          "https://mycreditunion.gov/protect-your-money/share-insurance/share-insurance-estimator"
+        ],
+        "sourceDate": "2024-09-30",
+        "score": 65.4,
+        "threshold": 62,
+        "status": "selected",
+        "rationale": "Current NCUA guidance confirms December 1 effective date. Durable, distinct records-and-member-support framework; no novelty or guaranteed individual coverage inferred."
+      }
+    ],
     "publications": [
       {
         "type": "article",
@@ -125,9 +140,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:56:14.292Z",
+    "updatedAt": "2026-11-13T12:56:33.442Z",
     "socialDecision": "prepared-not-reserved-provider-review",
-    "outcomeSlot": 3,
+    "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -334,6 +349,17 @@
         "productionCommit": "f5191bce4992420041710ebe8d4711719310ea65",
         "verifiedAt": "2026-11-13T12:56:14.292Z",
         "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
+      },
+      {
+        "slot": 4,
+        "plannedDate": "2026-11-13",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+        "candidateTitle": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-13T08:25:00-05:00",
+        "nextAction": "Build the qualified evidence-linked Insight, then run the exact article checks."
       }
     ],
     "socialDistribution": {
