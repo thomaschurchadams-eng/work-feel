@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-13",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -96,22 +96,32 @@
       }
     ],
     "fallbackEvaluations": [],
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
+        "title": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
+        "classification": "News",
+        "promotionPriority": "Standard",
+        "primaryFunctionalAudience": "Contact center, member-service and fraud operations leaders",
+        "socialDecision": "prepared-not-reserved-provider-review"
+      }
+    ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:19:43.320Z",
-    "socialDecision": "not-created-no-verified-publication",
+    "updatedAt": "2026-11-13T12:21:26.511Z",
+    "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-13",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
         "candidateTitle": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Merge exact accepted head, then verify live article, image and listings before recording publication.",
+        "nextAction": "Live verified; do not republish.",
         "evidence": {
           "validationHistory": [
             {
@@ -186,10 +196,19 @@
             "visualReviewedAt": "2026-11-13T12:19:43.320Z",
             "artifactId": 14034822924,
             "artifactDigest": "sha256:069bee4f7dd416e78684fbe3633bfeb686ea254dfbd6300b89fb986e35e3282e"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_Bj4D9TH7u7HqdrC3hSvs7tRpwces"
+        },
+        "productionCommit": "e04ff004a4435da225d874f07bc7103450b46084",
+        "verifiedAt": "2026-11-13T12:21:26.511Z",
+        "liveProof": "Production alias READY on exact merge; article, artwork, News listing and homepage public response bytes equal to merge. Live article and Reporting filter verified; mobile and desktop exact-head artifact inspected."
       }
-    ]
+    ],
+    "socialDistribution": {
+      "status": "not-reserved",
+      "blocker": "Authenticated provider inventory complete; 78 of 78 retained posts still flagged for destination review. No distribution attempt.",
+      "inventoryArtifactId": 14033809191
+    }
   },
   "history": [
     {
