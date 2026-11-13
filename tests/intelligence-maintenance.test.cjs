@@ -57,6 +57,9 @@ test('public counts, review dates and latest NCUA source match records; held ven
     const html=fs.readFileSync(path.join(root,'intelligence',file),'utf8');
     const cards=[...html.matchAll(/<article class="card intelligence-record"[\s\S]*?<\/article>/g)].map(m=>m[0]);
     assert.equal(cards.length,records.length);
+    assert.ok(html.includes(`${records.length} ${file === 'vendors.html' ? 'public vendor records' : 'regulatory watch records'}`));
+    assert.doesNotMatch(html, /type="search"|(?:vendor|reg)-(?:search|reset|empty|status)|data-search=|filterRecords/);
+    for (const card of cards) assert.doesNotMatch(card, /\bhidden\b|display:\s*none/);
     for(const record of records){const card=cards.find(c=>c.includes(`data-record-id="${record.id}"`));assert.ok(card);assert.ok(card.includes(`Record last reviewed: <time datetime="${record.lastReviewed}">`));}
     assert.ok(!html.includes('data-record-id="ncr-voyix"'));
   }
@@ -79,6 +82,9 @@ test('page regeneration never advances review timestamps, run success or ledger 
     inputs.forEach((f,i)=>assert.equal(fs.readFileSync(path.join(dir,f),'utf8'),before[i]));
     const page=fs.readFileSync(path.join(dir,'intelligence/vendors.html'),'utf8');
     assert.ok(page.includes('&lt;Isolated &amp; untrusted&gt;'));assert.ok(!page.includes('<Isolated & untrusted>'));
+    const count=data.vendors.filter(v=>!v.promotionStatus?.startsWith('withheld')).length;
+    assert.ok(page.includes(`${count} public vendor records`));
+    assert.doesNotMatch(page, /type="search"|filterRecords/);
   } finally {fs.rmSync(dir,{recursive:true,force:true});}
   const changes=fs.readFileSync(path.join(root,'intelligence/changes.html'),'utf8');
   assert.ok(!changes.includes('within the existing Alerts workflow'));

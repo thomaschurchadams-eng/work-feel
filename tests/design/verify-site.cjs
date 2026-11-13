@@ -72,21 +72,20 @@ async function serve() {
           await page.keyboard.press('Escape');
           menuPassed = menuPassed && await page.locator('.nav-toggle').getAttribute('aria-expanded') === 'false';
         }
-        let searchPassed = true;
-        const search = route.includes('/intelligence/vendors') ? '#vendor-search' : route.includes('/intelligence/regulatory-watch') ? '#reg-search' : null;
-        if (search) {
-          const before = await page.locator('.intelligence-record:visible').count();
-          const kind = search === '#vendor-search' ? 'vendor' : 'reg';
-          await page.locator(search).fill(kind === 'vendor' ? 'Glia' : 'National Credit Union Administration');
-          const matched = await page.locator('.intelligence-record:visible').count();
-          searchPassed = matched > 0 && matched < before;
-          await page.locator(search).fill('zzzz-cuai-design-no-match');
-          searchPassed = searchPassed && await page.locator('.intelligence-record:visible').count() === 0;
-          const empty = search === '#vendor-search' ? '#vendor-empty' : '#reg-empty';
-          searchPassed = searchPassed && await page.locator(empty).isVisible();
-          await page.locator('#'+kind+'-reset').focus();
-          await page.keyboard.press('Enter');
-          searchPassed = searchPassed && await page.locator('.intelligence-record:visible').count() === before && await page.locator(search).inputValue() === '' && await page.locator(search).evaluate(el => el === document.activeElement);
+        let trackerPassed = true;
+        if (route.includes('/intelligence/vendors') || route.includes('/intelligence/regulatory-watch')) {
+          const vendor = route.includes('/intelligence/vendors');
+          const registry = JSON.parse(fs.readFileSync(path.join(root, 'automation', vendor ? 'vendor-registry.json' : 'regulatory-watch.json'), 'utf8'));
+          const expected = (vendor ? registry.vendors.filter(record=>!record.promotionStatus?.startsWith('withheld')) : registry.records).map(record=>record.id).sort();
+          const actual = await page.locator('.intelligence-record:visible').evaluateAll(cards=>cards.map(card=>card.dataset.recordId).sort());
+          trackerPassed = JSON.stringify(actual) === JSON.stringify(expected)
+            && await page.locator('.intelligence-record').count() === expected.length
+            && await page.locator('input[type="search"], [id$="-reset"], [id$="-empty"]').count() === 0
+            && (await page.locator('main').innerText()).includes(`${expected.length} ${vendor ? 'public vendor records' : 'regulatory watch records'}`)
+            && (await page.locator('main').innerText()).includes('not a complete market scan');
+          const source = page.locator('.intelligence-record .actions a[target="_blank"]').first();
+          await source.focus();
+          trackerPassed = trackerPassed && await source.evaluate(link=>link === document.activeElement && link.href.startsWith('https://'));
         }
         let transcriptPassed = true;
         if (route.startsWith('/episodes/')) {
@@ -105,7 +104,7 @@ async function serve() {
         if (facts.titleSize < contract.pageTitleMinimumPx || facts.ordinaryCardSizes.some(n => n > contract.ordinaryCardTitleMaximumPx || n >= facts.titleSize)) failed.push('typography-hierarchy');
         if (facts.overflow || facts.overruns.length) failed.push('text-layout');
         if (facts.brokenImages.length || errors.length) failed.push('images-or-page-errors');
-        if (!menuPassed || !searchPassed || !transcriptPassed) failed.push('interaction');
+        if (!menuPassed || !trackerPassed || !transcriptPassed) failed.push('interaction');
         if (accessibility.length) failed.push('accessibility');
         if (facts.newsletterCtaCount > 1) failed.push('duplicate-newsletter-cta');
         if (facts.rejectedBoilerplate.length) failed.push('rejected-visitor-copy');
@@ -113,7 +112,7 @@ async function serve() {
         await page.evaluate(() => { document.activeElement?.blur(); scrollTo(0,0); });
         const name = (route === '/' ? 'home' : route.replace(/[^a-z0-9]/gi,'-')) + '-' + width;
         await page.screenshot({ path:path.join(out,name+'.png'), fullPage:true, animations:'disabled' });
-        results.push({route,width,httpStatus:response.status(),facts,menuPassed,searchPassed,transcriptPassed,accessibility,errors,failed,screenshot:name+'.png'});
+        results.push({route,width,httpStatus:response.status(),facts,menuPassed,trackerPassed,transcriptPassed,accessibility,errors,failed,screenshot:name+'.png'});
         fs.writeFileSync(path.join(out,'results.json'), JSON.stringify({base,...reviewedRevision,routes,contractVersion:contract.version,results},null,2));
         console.log(`${route} ${width}: ${failed.length ? 'FAIL '+failed.join(', ') : 'PASS'}`);
         await context.close();
