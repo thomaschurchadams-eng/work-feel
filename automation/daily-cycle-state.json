@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-13",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -105,10 +105,18 @@
         "promotionPriority": "Standard",
         "primaryFunctionalAudience": "Contact center, member-service and fraud operations leaders",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
+        "classification": "News",
+        "promotionPriority": "Standard",
+        "primaryFunctionalAudience": "Credit union boards, strategy and member operations leaders",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:33:25.793Z",
+    "updatedAt": "2026-11-13T12:35:02.650Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 2,
     "regularPublicationSlots": [
@@ -206,13 +214,13 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-13",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
         "candidateTitle": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Merge only the exact reviewed head after a refreshed canonical check.",
+        "nextAction": "Live verified; do not republish.",
         "evidence": {
           "pending": {
             "prNumber": 336,
@@ -242,8 +250,12 @@
             "visualReviewedAt": "2026-11-13T12:33:25.793Z",
             "artifactId": 14036841879,
             "artifactDigest": "sha256:ab63ef3f6992a9b2449ee9afb7e66cfeae797ed4c0b6997739887b8f2f8df7e4"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_Cp8j1TCL9D7Nau4hbqu5pV89foP4"
+        },
+        "productionCommit": "b04b9219567750ff534a446e58c2b35c9c2c0a92",
+        "verifiedAt": "2026-11-13T12:34:47.514Z",
+        "liveProof": "Production alias READY on exact merge; public article, artwork, News listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
       }
     ],
     "socialDistribution": {
