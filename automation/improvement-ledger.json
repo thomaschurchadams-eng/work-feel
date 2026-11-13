@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T23:43:37.993287+00:00",
+  "updatedAt": "2026-11-12T23:53:41.120012+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -469,14 +469,15 @@
       "proposedChange": "Recognize an existing authored newsletter CTA before shared injection; reject duplicate newsletter CTA links in the existing rendered suite; require the existing log-table component and scoped headers in the publisher policy.",
       "expectedBenefit": "Prevent repeat layout defects discovered during real article production.",
       "risk": "low",
-      "status": "implemented-awaiting-exact-rendered-release",
+      "status": "completed",
       "validation": [
         "HELOC manual duplicate removed before accepted head 2c0559e7d2be5ea9dfd78a41a66f0314f58eceb1.",
         "FedNow table corrected before accepted head d838e79ac9da120ae179b5d903551db1e57b80f3.",
         "Both actual production articles reviewed on desktop/mobile. Shared prevention still requires its own exact-revision rendered acceptance and production verification.",
-        "Prepared shared fix: 349 source tests passed on first run; four environment-only failures (temporary worktree lacked dependency link and Node in child-process PATH) all passed after local runtime setup was corrected. No application change was needed for those failures."
+        "Prepared shared fix: 349 source tests passed on first run; four environment-only failures (temporary worktree lacked dependency link and Node in child-process PATH) all passed after local runtime setup was corrected. No application change was needed for those failures.",
+        "PR333 head96fbfcb992bcac1895dedd7d95d40144b97c7b07 passed353 source tests and46 rendered checks; exact artifact13995950742 digest verified; actual desktop/mobile screenshots reviewed. Merge991db1d2eede5ca0c39c251adcb7c93567c69f53 is exact READY production dpl_At5kB4ubqc34s8EfexVn927ntDVA."
       ],
-      "result": "Shared CTA recognition and duplicate guard are implemented in this package; exact rendered acceptance and production observation remain required. See issue 160 for actual release outcome.",
+      "result": "Released and verified. Actual production deceased-member page has one newsletter invitation. Full current-catalogue archive checks, 18 historical date-boundary journeys and two mixed-ordering journeys pass. Receipt: https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157",
       "nextTrigger": "Next exact-head review and production check of the existing deceased-member page.",
       "rollback": "Revert only shared CTA recognition, rendered duplicate check and associated authoring instruction."
     },
@@ -506,11 +507,12 @@
       "proposedChange": "Use the retained actual FinCEN record as an explicitly isolated historical boundary fixture. Preserve full current-catalogue archive/rendered tests and separate synthetic mixed-publication ordering checks.",
       "expectedBenefit": "New legitimate Alerts do not invalidate unrelated historical expiry boundaries; all original expiry, date, sorting, accessibility and archive behavior remains tested.",
       "risk": "low",
-      "status": "implemented-awaiting-exact-rendered-release",
+      "status": "completed",
       "validation": [
-        "Source test syntax and whitespace checks passed; exact revised-head rendered run required."
+        "Source test syntax and whitespace checks passed; exact revised-head rendered run required.",
+        "PR333 head96fbfcb992bcac1895dedd7d95d40144b97c7b07 passed353 source tests and46 rendered checks; exact artifact13995950742 digest verified; actual desktop/mobile screenshots reviewed. Merge991db1d2eede5ca0c39c251adcb7c93567c69f53 is exact READY production dpl_At5kB4ubqc34s8EfexVn927ntDVA."
       ],
-      "result": "Failure retained in this Alert package and issue160; revised candidate is not accepted until exact full CI and actual screenshot review pass.",
+      "result": "Released and verified. Actual production deceased-member page has one newsletter invitation. Full current-catalogue archive checks, 18 historical date-boundary journeys and two mixed-ordering journeys pass. Receipt: https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157",
       "rollback": "Revert only the historical boundary-fixture isolation; retain published Alert records and evidence."
     }
   ]

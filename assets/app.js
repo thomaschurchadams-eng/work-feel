@@ -106,7 +106,10 @@
       "sourceName": "ConnectWise",
       "sourceUrl": "https://www.connectwise.com/company/trust/advisories",
       "date": "Nov 12, 2026",
-      "slug": "screenconnect-incident-client-vendor-checks-november-2026"
+      "slug": "screenconnect-incident-client-vendor-checks-november-2026",
+      "publishedAt": "2026-11-12T23:52:30.661Z",
+      "publicationDeployment": "dpl_At5kB4ubqc34s8EfexVn927ntDVA",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157"
     },
     {
       "label": "Cybersecurity / Infrastructure",
@@ -116,7 +119,10 @@
       "sourceName": "Check Point",
       "sourceUrl": "https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/",
       "date": "Nov 12, 2026",
-      "slug": "check-point-exploited-gateway-chain-november-2026"
+      "slug": "check-point-exploited-gateway-chain-november-2026",
+      "publishedAt": "2026-11-12T23:52:30.661Z",
+      "publicationDeployment": "dpl_At5kB4ubqc34s8EfexVn927ntDVA",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157"
     },
     {
       "label": "Cybersecurity / Digital Services",
@@ -126,7 +132,10 @@
       "sourceName": "Apache HTTP Server Project",
       "sourceUrl": "https://httpd.apache.org/security/vulnerabilities_24.html",
       "date": "Nov 11, 2026",
-      "slug": "apache-http-server-critical-http2-fix-november-2026"
+      "slug": "apache-http-server-critical-http2-fix-november-2026",
+      "publishedAt": "2026-11-12T23:52:30.661Z",
+      "publicationDeployment": "dpl_At5kB4ubqc34s8EfexVn927ntDVA",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157"
     },
     {
       label: 'BSA / Payments',
