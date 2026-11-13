@@ -98,20 +98,32 @@
     "fallbackEvaluations": [],
     "publications": [],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:01:10.742Z",
+    "updatedAt": "2026-11-13T12:04:52.509Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-13",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
         "candidateTitle": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Finish the atomic article package and obtain exact-head CI and actual visual acceptance; local Chromium unavailable."
+        "nextAction": "Inspect exact run and download matched artifact for actual desktop/mobile acceptance.",
+        "evidence": {
+          "validationHistory": [],
+          "pending": {
+            "prNumber": 335,
+            "head": "cd8fd10aadc866359529f50f1ddee38bcb2e3322",
+            "run": 43422115881,
+            "job": 131874396388,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-13T08:00:00-05:00"
+          }
+        }
       }
     ]
   },
