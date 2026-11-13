@@ -62,7 +62,8 @@
           "summary": "Existing newsroom coverage tracks the agency’s public framing of benefits, consumer protection and governance risks.",
           "status": "monitoring",
           "sourceUrl": "https://ncua.gov/newsroom",
-          "relatedCoverage": "news/ncuas-ai-opportunities-risks.html"
+          "relatedCoverage": "news/ncuas-ai-opportunities-risks.html",
+          "publicSummary": "NCUA’s discussion of AI benefits, consumer protection and governance risks."
         }
       ]
     },
@@ -114,7 +115,8 @@
           "summary": "Existing coverage tracks congressional attention to affordability, innovation, accountability and consumer protection.",
           "status": "monitoring",
           "sourceUrl": "https://www.banking.senate.gov/hearings",
-          "relatedCoverage": "news/senate-ai-hearing-credit-unions-2026.html"
+          "relatedCoverage": "news/senate-ai-hearing-credit-unions-2026.html",
+          "publicSummary": "Senate discussion of AI, affordability, innovation, accountability and consumer protection."
         }
       ]
     },

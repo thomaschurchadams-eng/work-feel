@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T20:17:30+00:00",
+  "updatedAt": "2026-11-13T20:30:08.700642+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -528,7 +528,8 @@
       "validation": [
         "Independent local review of both pages at 320/390/1024/1440: all 15 eligible records, exact summaries/primary links/dates and held exclusion preserved; no axe violations or overflow; keyboard source links pass.",
         "Actual before/after: 1440px cards widened from 295 to 600px; long NCUA/FSB titles reduced from three to two lines; date blocks reduced from 74–99px to one 22.4px line; source actions increased to 44px.",
-        "Reviewed output digest 52ecb05720c08bdae3d40701283f5bbcac6bab93e4a4e789be7a1b4e63928969; exact-head full/remote, Preview and production acceptance remain required."
+        "Reviewed output digest 52ecb05720c08bdae3d40701283f5bbcac6bab93e4a4e789be7a1b4e63928969; exact-head full/remote, Preview and production acceptance remain required.",
+        "Post-release independent recheck found eight residual seeded summaries (six vendors, NCUA and Senate) still describing tracker/newsroom mechanics. Prior exact-summary assertions and old-card review missed those phrases. Follow-through preserves original text/dates in records, supplies faithful publicSummary wording, and checks every displayed legacy card; exact-head release/live evidence remains in the same authorized task."
       ],
       "status": "validated-pending-release",
       "result": "Existing Intelligence owner applied the revised workflow in this correction and received independent output review. This records local acceptance only; final version-bound release/live evidence belongs to the authorized task result. Future recurring adoption, broader coverage and audience benefit remain unobserved.",

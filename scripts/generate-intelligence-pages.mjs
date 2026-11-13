@@ -22,7 +22,7 @@ function card(record, signal, vendor) {
 <h2 class="section-title card-title">${escape(heading)}</h2>
 <p><strong>${escape(category)}</strong></p>
 ${vendor ? `<p>${escape(record.capabilities.join(' · '))}</p>` : `<p>${escape(record.jurisdiction)}</p>`}
-<p>${escape(signal.summary)}</p>
+<p>${escape(signal.publicSummary ?? signal.summary)}</p>
 ${dates(record)}
 ${links(signal)}
 </article>`;

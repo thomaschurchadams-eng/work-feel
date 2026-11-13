@@ -81,7 +81,7 @@ async function serve() {
           trackerPassed = JSON.stringify(actual) === JSON.stringify(expected)
             && await page.locator('.intelligence-record').count() === expected.length
             && await page.locator('input[type="search"], [id$="-reset"], [id$="-empty"]').count() === 0
-            && !/Review dates apply|Partial catch-up reviewed|Review scope and history|Evidence labels|public vendor records|regulatory watch records|Earlier developments remain|Tracker-only update|This editorial tracker is not legal advice/.test(await page.locator('main').innerText())
+            && !/Review dates apply|Partial catch-up reviewed|Review scope and history|Evidence labels|public vendor records|regulatory watch records|Earlier developments remain|Tracker-only update|This editorial tracker is not legal advice|tracker initialized|existing (?:newsroom )?(?:coverage|reporting|analysis) (?:tracks|of|on)/i.test(await page.locator('main').innerText())
             && await page.locator('.intelligence-record .intelligence-dates').count() === expected.length;
           const density = await page.locator('.intelligence-record').evaluateAll(cards => cards.map(card => ({
             dateCount: card.querySelectorAll('time').length,

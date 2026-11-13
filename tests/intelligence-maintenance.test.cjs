@@ -52,19 +52,28 @@ test('invalid dates and empty signal records fail closed',()=>{
   assert.notEqual(fixture(d=>{d.vendors.vendors[0].signals=[];}).status,0);
   assert.notEqual(fixture(d=>{d.regulatory.records[0].developments=[];}).status,0);
 });
+test('legacy public summaries keep process history private without admitting empty replacements or visible process narration',()=>{
+  for(const value of ['', '  ', null, 42, {}])assert.notEqual(fixture(d=>{d.vendors.vendors[0].signals[0].publicSummary=value;}).status,0);
+  assert.notEqual(fixture(d=>{delete d.vendors.vendors.find(v=>v.id==='jack-henry').signals[0].publicSummary;}).status,0);
+  assert.notEqual(fixture(d=>{delete d.regulatory.records.find(r=>r.id==='ncua-ai-risk').developments[0].publicSummary;}).status,0);
+  assert.notEqual(fixture(d=>{d.vendors.vendors.at(-1).signals[0].summary='Tracker initialized from existing coverage of an isolated vendor.';}).status,0);
+  assert.notEqual(fixture(d=>{d.regulatory.records.at(-1).developments.at(-1).publicSummary='Existing newsroom coverage tracks an isolated signal.';}).status,0);
+  assert.equal(fixture(()=>{}).status,0,'retained historical and held summaries stay valid');
+});
 test('public records retain dates, attribution and sources without process narration; held vendor stays withheld',()=>{
   for(const [file,records] of [['vendors.html',vendors.vendors.filter(v=>!v.promotionStatus?.startsWith('withheld'))],['regulatory-watch.html',regulatory.records]]){
     const html=fs.readFileSync(path.join(root,'intelligence',file),'utf8');
     const cards=[...html.matchAll(/<article class="card intelligence-record"[\s\S]*?<\/article>/g)].map(m=>m[0]);
     assert.equal(cards.length,records.length);
     assert.doesNotMatch(html, /public vendor records|regulatory watch records|Review dates apply|Partial catch-up reviewed|complete market scan|Review scope and history|Evidence labels|Tracker inclusion is not a recommendation|Earlier developments remain|Tracker-only update|This editorial tracker is not legal advice/);
+    assert.doesNotMatch(html, /tracker initialized|existing (?:newsroom )?(?:coverage|reporting|analysis) (?:tracks|of|on)/i);
     assert.doesNotMatch(html, /type="search"|(?:vendor|reg)-(?:search|reset|empty|status)|data-search=|filterRecords/);
     for (const card of cards) assert.doesNotMatch(card, /\bhidden\b|display:\s*none/);
     const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     for(const record of records){
       const card=cards.find(c=>c.includes(`data-record-id="${record.id}"`));assert.ok(card);
       const signal=file==='vendors.html'?record.signals[0]:record.developments.at(-1);
-      assert.ok(card.includes(escape(signal.summary)),record.id+' preserves qualified summary');
+      assert.ok(card.includes(escape(signal.publicSummary ?? signal.summary)),record.id+' preserves qualified summary');
       assert.ok(card.includes(`href="${escape(signal.sourceUrl)}"`));
       assert.equal([...card.matchAll(/<time\b/g)].length,1,record.id+' has one useful date');
       assert.ok(card.includes(`Reviewed <time datetime="${record.lastReviewed}">`));
@@ -86,12 +95,14 @@ test('page regeneration never advances review timestamps, run success or ledger 
     // An actual new record forces a page change, without interpreting review time as a run.
     const file=path.join(dir,inputs[0]), data=JSON.parse(fs.readFileSync(file));
     data.vendors.push({...structuredClone(data.vendors.at(-1)),id:'isolated-new-record',name:'<Isolated & untrusted>'});
+    data.vendors.at(-1).signals[0].publicSummary='<Qualified & untrusted>';
     fs.writeFileSync(file,JSON.stringify(data));
     const before=inputs.map(f=>fs.readFileSync(path.join(dir,f),'utf8'));
     const result=run('scripts/generate-intelligence-pages.mjs',dir);assert.equal(result.status,0,result.text);
     inputs.forEach((f,i)=>assert.equal(fs.readFileSync(path.join(dir,f),'utf8'),before[i]));
     const page=fs.readFileSync(path.join(dir,'intelligence/vendors.html'),'utf8');
     assert.ok(page.includes('&lt;Isolated &amp; untrusted&gt;'));assert.ok(!page.includes('<Isolated & untrusted>'));
+    assert.ok(page.includes('&lt;Qualified &amp; untrusted&gt;'));assert.ok(!page.includes('<Qualified & untrusted>'));
     const count=data.vendors.filter(v=>!v.promotionStatus?.startsWith('withheld')).length;
     assert.equal([...page.matchAll(/<article class="card intelligence-record"/g)].length,count);
     assert.doesNotMatch(page,/public vendor records|Partial catch-up reviewed|Evidence labels/);

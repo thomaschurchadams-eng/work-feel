@@ -34,7 +34,8 @@
           "summary": "Tracker initialized from existing reporting on AI features associated with digital-banking workflows.",
           "evidenceLevel": "vendor-claim",
           "sourceUrl": "https://www.jackhenry.com/newsroom",
-          "relatedCoverage": "news/jack-henry-ai-features.html"
+          "relatedCoverage": "news/jack-henry-ai-features.html",
+          "publicSummary": "AI features associated with digital-banking workflows."
         }
       ]
     },
@@ -143,7 +144,8 @@
           "summary": "Tracker initialized from existing reporting on network-level AI fraud capabilities.",
           "evidenceLevel": "vendor-claim",
           "sourceUrl": "https://usa.visa.com/about-visa/newsroom.html",
-          "relatedCoverage": "news/visa-mastercard-ai-fraud.html"
+          "relatedCoverage": "news/visa-mastercard-ai-fraud.html",
+          "publicSummary": "Network-level AI fraud-detection capabilities."
         }
       ]
     },
@@ -175,7 +177,8 @@
           "summary": "Tracker initialized from existing reporting on network-level AI fraud capabilities.",
           "evidenceLevel": "vendor-claim",
           "sourceUrl": "https://www.mastercard.com/news/",
-          "relatedCoverage": "news/visa-mastercard-ai-fraud.html"
+          "relatedCoverage": "news/visa-mastercard-ai-fraud.html",
+          "publicSummary": "Network-level AI fraud-detection capabilities."
         }
       ]
     },
@@ -209,7 +212,8 @@
           "summary": "Tracker initialized from existing analysis of enterprise AI governance tooling.",
           "evidenceLevel": "reported",
           "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/",
-          "relatedCoverage": "news/microsoft-optimind-ai-governance-credit-unions.html"
+          "relatedCoverage": "news/microsoft-optimind-ai-governance-credit-unions.html",
+          "publicSummary": "Enterprise AI governance tooling."
         }
       ]
     },
@@ -243,7 +247,8 @@
           "summary": "Tracker initialized from existing reporting on AI-supported banking operating procedures.",
           "evidenceLevel": "vendor-claim",
           "sourceUrl": "https://www.posh.ai/news",
-          "relatedCoverage": "news/posh-ai-operating-procedures-banking.html"
+          "relatedCoverage": "news/posh-ai-operating-procedures-banking.html",
+          "publicSummary": "AI-supported banking operating procedures."
         }
       ]
     },
@@ -276,7 +281,8 @@
           "summary": "Tracker initialized from existing coverage of a credit-union lending risk implementation.",
           "evidenceLevel": "reported",
           "sourceUrl": "https://pointpredictive.com/news/",
-          "relatedCoverage": "news/velocity-ccu-point-predictive-autopass.html"
+          "relatedCoverage": "news/velocity-ccu-point-predictive-autopass.html",
+          "publicSummary": "Reported credit-union implementation of lending fraud-detection technology."
         }
       ]
     },
