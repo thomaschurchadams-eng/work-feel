@@ -146,6 +146,72 @@
           "relatedCoverage": "news/fsb-frontier-ai-cyber-risk-financial-system.html"
         }
       ]
+    },
+    {
+      "id": "us-third-party-risk-guidance",
+      "authority": "NCUA, Federal Reserve, FDIC and OCC",
+      "jurisdiction": "United States — banks and insured credit unions; proposed non-binding guidance",
+      "functions": [
+        "risk-compliance",
+        "board-strategy",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "governance-risk"
+      ],
+      "lastReviewed": "2026-11-13",
+      "addedAt": "2026-11-13",
+      "reviewNote": "Joint announcement and NCUA-hosted extension notice verified. The separate Federal Reserve community-bank guide is not treated as credit-union guidance. AI-vendor oversight relevance is an editorial application of the third-party scope, not a new AI-specific rule.",
+      "developments": [
+        {
+          "date": "2026-11-13",
+          "addedAt": "2026-11-13",
+          "type": "guidance",
+          "title": "Third-party risk guidance: comments extended to December 16",
+          "summary": "Comments on proposed joint third-party risk management guidance for banks and insured credit unions are now due December 16, 2026, extended from November 16. The proposal is non-binding supervisory guidance, not a final rule.",
+          "status": "proposed",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+          "coverageStatus": "tracker-only-no-article",
+          "commentDeadline": "2026-12-16",
+          "previousCommentDeadline": "2026-11-16",
+          "supportingSources": [
+            "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
+            "https://ncua.gov/files/press-releases-news/proposed-third-party-risk-management-guidance-extension-comment-period.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fsb-responsible-ai-adoption",
+      "authority": "Financial Stability Board",
+      "jurisdiction": "International — non-binding practices for financial institutions",
+      "functions": [
+        "board-strategy",
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "governance-risk",
+        "agents-automation"
+      ],
+      "lastReviewed": "2026-11-13",
+      "addedAt": "2026-11-13",
+      "reviewNote": "Saved October 15 historical cursor item inspected: report landing page, executive summary and non-binding status. Twelve practices, not twelve requirements; case studies are illustrative, not expected outcomes or benchmarks.",
+      "developments": [
+        {
+          "date": "2026-10-15",
+          "addedAt": "2026-11-13",
+          "type": "guidance",
+          "title": "Twelve practices for responsible AI adoption",
+          "summary": "The FSB sets out 12 practices covering AI governance and lifecycle risks, including human oversight and third-party dependencies. Institutions can adapt them to their size, complexity and use-case risk; they are not a binding standard or a new U.S. credit-union rule.",
+          "status": "informational",
+          "sourceUrl": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
+          "coverageStatus": "tracker-only-no-article",
+          "supportingSources": [
+            "https://www.fsb.org/uploads/P151026-1.pdf"
+          ]
+        }
+      ]
     }
   ]
 }

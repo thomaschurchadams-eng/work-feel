@@ -82,7 +82,7 @@
       "name": "OCC News and Issuances",
       "owner": "OCC",
       "type": "regulator",
-      "url": "https://www.occ.treas.gov/news-issuances/index-news-issuances.html",
+      "url": "https://www.occ.gov/news-events/newsroom/",
       "priority": "medium",
       "cadence": "daily",
       "functions": [
@@ -91,7 +91,15 @@
       ],
       "technologies": [
         "governance-risk"
-      ]
+      ],
+      "previousUrls": [
+        {
+          "url": "https://www.occ.treas.gov/news-issuances/index-news-issuances.html",
+          "observedAt": "2026-11-13T23:43:04Z",
+          "result": "HTTP 404"
+        }
+      ],
+      "reviewNote": "Official replacement newsroom URL verified; current listing did not render in this read. No complete source review inferred."
     },
     {
       "id": "fdic-news",

@@ -2,7 +2,7 @@
   "version": 1,
   "updatedAt": "2026-11-13",
   "lastSuccessfulRun": "2026-07-20T06:08:00-04:00",
-  "lastAttemptedRun": "2026-11-13T17:54:45.283Z",
+  "lastAttemptedRun": "2026-11-13T23:43:04Z",
   "sourceState": {
     "ncua-ai-resources": {
       "lastChecked": "2026-11-13T17:54:45.283Z",
@@ -12,34 +12,41 @@
       "reviewNote": "Current canonical resource inspected. Source publication date not established; no new rule inferred."
     },
     "ncua-newsroom": {
-      "lastChecked": "2026-07-20T06:08:00-04:00",
-      "lastChanged": null,
-      "lastFingerprint": null,
-      "status": "ok"
+      "lastChecked": "2026-11-13T23:43:04Z",
+      "lastChanged": "2026-11-13",
+      "lastFingerprint": "ncua-newsroom|2026-11-13|https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+      "status": "ok",
+      "reviewNote": "Current press-release listing and November 13 joint extension announcement inspected. Added one proposed-guidance watch; no complete July–November archive review. Four-final-rules release screened separately; no AI-specific change accepted."
     },
     "cfpb-newsroom": {
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-11-13T23:43:04Z",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "ok"
+      "status": "ok",
+      "reviewNote": "Current newsroom listing inspected; latest visible release October 14. No qualifying current AI operating development accepted. Older archive not exhaustively reviewed."
     },
     "federal-reserve-news": {
-      "lastChecked": "2026-07-20T06:08:00-04:00",
-      "lastChanged": null,
-      "lastFingerprint": null,
-      "status": "ok"
+      "lastChecked": "2026-11-13T23:43:04Z",
+      "lastChanged": "2026-11-13",
+      "lastFingerprint": "ncua-newsroom|2026-11-13|https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+      "status": "ok",
+      "reviewNote": "2026 release archive and November 13 joint guidance extension inspected. Same event as NCUA source; deduplicated, not a second watch. Other current releases did not establish a qualifying AI development."
     },
     "occ-news": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "unavailable"
+      "status": "partial",
+      "lastAttemptedAt": "2026-11-13T23:43:04Z",
+      "reviewNote": "Registered URL returned HTTP 404; official replacement newsroom verified, but its listing was absent from retrieved content. Recent risk-report page discovered but no new event accepted. Prior lastChecked retained; next bounded review needs readable current listing."
     },
     "fdic-news": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "ok"
+      "status": "unavailable",
+      "lastAttemptedAt": "2026-11-13T23:43:04Z",
+      "reviewNote": "Primary news URL returned HTTP 403. No retry or alternate access route; prior lastChecked retained. This source channel remains unreviewed."
     },
     "senate-banking-hearings": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
@@ -51,7 +58,9 @@
       "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "unavailable"
+      "status": "unavailable",
+      "lastAttemptedAt": "2026-11-13T23:43:04Z",
+      "reviewNote": "Registered newsroom returned HTTP 404. Official investor-relations discovery returned HTTP 403; stopped that read. Search snippets are discovery only, not a completed vendor review; prior lastChecked and vendor record dates retained."
     },
     "fis-media": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
@@ -116,11 +125,11 @@
       "reviewNote": "Specific ledger event verified; discovery listing identified for future bounded intake. Full listing/history not reviewed."
     },
     "fsb-publications": {
-      "lastChecked": "2026-11-13T17:54:45.283Z",
-      "lastChanged": "2026-08-31",
-      "lastFingerprint": "fsb-publications|2026-08-31|https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
+      "lastChecked": "2026-11-13T23:43:04Z",
+      "lastChanged": "2026-10-15",
+      "lastFingerprint": "fsb-publications|2026-10-15|https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
       "status": "ok",
-      "reviewNote": "Specific ledger event verified; discovery listing identified for future bounded intake. Full listing/history not reviewed."
+      "reviewNote": "Saved October 15 final-report slice verified: landing page and PDF executive summary/non-binding status. Twelve practices with proportional application; no full July–November archive review."
     },
     "glia-news": {
       "lastChecked": "2026-11-13T18:04:39Z",
@@ -142,12 +151,29 @@
     "weakSignalsRejected": 2
   },
   "latestAttempt": {
-    "status": "partial-prepared-not-live-verified",
-    "scope": "Primary-source catch-up: Creatio, SoundHound, FSB, NCUA resource and Glia Prospect Snapshot. All other source timestamps retained.",
-    "checkedSources": 5,
-    "releaseStatus": "pending-exact-head-validation-and-authorized-release",
-    "recurringExecutor": "No dedicated active executor found in coordinator inventory; activation and next-run proof remain open.",
-    "remainingCatchUp": "Continue bounded review of missed July 20–November 13 developments. Glia November 2 added tracker-only; no article fabricated. FSB October 15 responsible-AI publication discovered in listing but not yet inspected; not an accepted watch.",
+    "status": "partial-source-review-completed",
+    "reviewedAt": "2026-11-13T23:43:04Z",
+    "scope": "Six due discovery channels attempted (five regulators and one rotating vendor), plus the single saved FSB October 15 historical slice. No publication or Alert cycle.",
+    "routineSourcesAttempted": 6,
+    "routineSourcesReviewed": 3,
+    "routineSourcesPartial": [
+      "occ-news"
+    ],
+    "routineSourcesUnavailable": [
+      "fdic-news",
+      "jack-henry-news"
+    ],
+    "historicalSlicesReviewed": 1,
+    "materialChanges": 2,
+    "duplicatesNotAdded": 1,
+    "releaseRequirement": "This receipt records source review only. The resulting candidate still requires exact-head checks, independent rendered review, authorized release and live verification; no successful-run advancement is inferred here.",
+    "executionEvidence": {
+      "owner": "existing-intelligence-maintenance-engineer",
+      "invocation": "Existing maintenance cycle delegated into accepted checkout-capable owner on 2026-11-13.",
+      "scheduleVerified": false,
+      "note": "No schedule settings were inspected or changed; no recurring next-run claim."
+    },
+    "remainingCatchUp": "Partial July 20–November 13 coverage remains. Only the saved FSB October 15 slice advances; blocked/uninspected sources keep prior review dates.",
     "catchUpCursor": {
       "since": "2026-07-20",
       "through": "2026-11-13",
@@ -157,8 +183,100 @@
         "soundhound|2026-11-12",
         "fsb|2026-08-31",
         "ncua-resource|review-2026-11-13",
-        "glia|2026-11-02"
-      ]
+        "glia|2026-11-02",
+        "fsb|2026-10-15"
+      ],
+      "nextSlice": "Review the retained July 20 onward NCUA/CFPB archive gap in a bounded future batch; rotate the next due accessible vendor. Source access gaps remain explicit."
+    },
+    "historicalMetricsNote": "Top-level metrics retained as historical counters; they are not a reconciled total for this partial cycle."
+  },
+  "runHistory": [
+    {
+      "attemptedAt": "2026-11-13T17:54:45.283Z",
+      "attempt": {
+        "status": "partial-prepared-not-live-verified",
+        "scope": "Primary-source catch-up: Creatio, SoundHound, FSB, NCUA resource and Glia Prospect Snapshot. All other source timestamps retained.",
+        "checkedSources": 5,
+        "releaseStatus": "pending-exact-head-validation-and-authorized-release",
+        "recurringExecutor": "No dedicated active executor found in coordinator inventory; activation and next-run proof remain open.",
+        "remainingCatchUp": "Continue bounded review of missed July 20–November 13 developments. Glia November 2 added tracker-only; no article fabricated. FSB October 15 responsible-AI publication discovered in listing but not yet inspected; not an accepted watch.",
+        "catchUpCursor": {
+          "since": "2026-07-20",
+          "through": "2026-11-13",
+          "complete": false,
+          "reviewedEvents": [
+            "creatio|2026-07-30",
+            "soundhound|2026-11-12",
+            "fsb|2026-08-31",
+            "ncua-resource|review-2026-11-13",
+            "glia|2026-11-02"
+          ]
+        }
+      },
+      "sourceStateBeforeNextReview": {
+        "ncua-newsroom": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "ok"
+        },
+        "cfpb-newsroom": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "ok"
+        },
+        "federal-reserve-news": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "ok"
+        },
+        "occ-news": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "unavailable"
+        },
+        "fdic-news": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "ok"
+        },
+        "jack-henry-news": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "unavailable"
+        },
+        "fsb-publications": {
+          "lastChecked": "2026-11-13T17:54:45.283Z",
+          "lastChanged": "2026-08-31",
+          "lastFingerprint": "fsb-publications|2026-08-31|https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
+          "status": "ok",
+          "reviewNote": "Specific ledger event verified; discovery listing identified for future bounded intake. Full listing/history not reviewed."
+        }
+      },
+      "releaseReconciliation": {
+        "verifiedAt": "2026-11-13T23:43:04Z",
+        "status": "released-live-verified-catch-up-incomplete",
+        "pullRequest": 342,
+        "mergeCommit": "4fe0373bfeca0f8c08aac18f43b0de3ef6dcdcea",
+        "subsequentReviewedRelease": {
+          "pullRequest": 348,
+          "mergeCommit": "c9dcb130d7c3dbc1bbc4f74d69ab649a33a6777c",
+          "deploymentId": "dpl_92BPCK3WbQbWwb9x9cpzssV7Ehup",
+          "liveVerifiedAt": "2026-11-13T20:43:50Z"
+        },
+        "currentProductionCommit": "7e890af1fc8220c290506efa06d51102256c7067",
+        "currentProductionDeployment": "dpl_Ff5vkeskxHF77pucnome8GXz6P6J",
+        "evidence": [
+          "https://github.com/thomaschurchadams-eng/work-feel/pull/342",
+          "https://github.com/thomaschurchadams-eng/work-feel/pull/348"
+        ],
+        "note": "Supersedes the prior pending-release claim only. PR344, PR346 and PR348 subsequently changed public presentation; their fixes remain present. This does not complete historical catch-up or certify a recurring schedule."
+      }
     }
-  }
+  ]
 }
