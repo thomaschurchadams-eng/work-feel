@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-contingency-funding-line-test",
+      "articleUrl": "/insight-credit-union-contingency-funding-line-test.html",
+      "imagePath": "/assets/credit-union-contingency-funding-line-test.jpg",
+      "publishedAt": "2026-11-13T08:09:15.261-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "cinematic-conceptual",
+      "subject": "risk-and-security",
+      "composition": "tight-close-up",
+      "perspective": "macro",
+      "palette": "slate-lime",
+      "lighting": "high-contrast-studio",
+      "texture": "polished-metal",
+      "scene": "Key, stopwatch and safe latch on a treasury test bench",
+      "conceptScore": 84.2,
+      "conceptAlternatives": [
+        {
+          "medium": "cinematic-conceptual",
+          "subject": "risk-and-security",
+          "scene": "Key, stopwatch and safe latch on a treasury test bench",
+          "score": 84.2,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "scene": "Two funding routes and a checkpoint",
+          "score": 46.9,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "documents-and-controls",
+          "scene": "An inked borrowing authorization and an open vault",
+          "score": 38.3,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest scoring valid concept; original generated editorial illustration inspected for the actual article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "e1f590fc99cbd1f227d86a0bcd82f95abf96bf668fee0496bed925960763ea06"
+    },
+    {
       "id": "credit-union-trust-share-insurance-beneficiary-records",
       "articleUrl": "/insight-credit-union-trust-share-insurance-beneficiary-records.html",
       "imagePath": "/assets/credit-union-trust-share-insurance-beneficiary-records.jpg",

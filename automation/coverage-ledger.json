@@ -3,6 +3,35 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-contingency-funding-line-test",
+      "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
+      "url": "/insight-credit-union-contingency-funding-line-test.html",
+      "publishedAt": "2026-11-13T08:09:15.261-05:00",
+      "section": "insights",
+      "beat": "credit-union-contingency-funding-line-test",
+      "functions": [
+        "finance-treasury"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "checklist",
+      "audience": "functional-leader",
+      "primaryAudience": "Treasury, ALCO and finance leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html",
+        "/insight-credit-union-fednow-2027-discount-economics.html"
+      ],
+      "sourceTier": 1,
+      "score": 64.3,
+      "confidence": 0.94,
+      "sourceLimit": "Standing regulation, interagency guidance and Federal Reserve setup materials; sample drill is editorial, not an institution’s reported result."
+    },
+    {
       "id": "credit-union-trust-share-insurance-beneficiary-records",
       "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
       "url": "/insight-credit-union-trust-share-insurance-beneficiary-records.html",
