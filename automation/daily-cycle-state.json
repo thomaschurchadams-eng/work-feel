@@ -65,10 +65,10 @@
         "reason": "Weekly national data point lacks new CU-specific implication after recent HELOC report."
       },
       {
-        "title": "Google Gemini 4 Carbon access expansion",
-        "sourceUrl": "https://blog.google/",
-        "status": "held",
-        "reason": "Potential cyber-operations relevance; verify entitlements and limitations in official documents before selection."
+        "title": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "status": "selected",
+        "reason": "Google confirms November 10 paid access, distinct Fairwind admission and public model introductory pricing. No CU deployment or performance result claimed."
       },
       {
         "title": "Claude Sheets and Whiteboards",
@@ -116,9 +116,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:35:02.650Z",
+    "updatedAt": "2026-11-13T12:36:07.272Z",
     "socialDecision": "prepared-not-reserved-provider-review",
-    "outcomeSlot": 2,
+    "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -256,6 +256,17 @@
         "productionCommit": "b04b9219567750ff534a446e58c2b35c9c2c0a92",
         "verifiedAt": "2026-11-13T12:34:47.514Z",
         "liveProof": "Production alias READY on exact merge; public article, artwork, News listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
+      },
+      {
+        "slot": 3,
+        "plannedDate": "2026-11-13",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
+        "candidateTitle": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-13T08:10:00-05:00",
+        "nextAction": "Build and verify the model-access and price-change report with Google’s announcement and model card."
       }
     ],
     "socialDistribution": {
