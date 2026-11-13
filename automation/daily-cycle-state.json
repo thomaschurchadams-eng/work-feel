@@ -163,7 +163,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T13:08:27.617Z",
+    "updatedAt": "2026-11-13T13:10:25.467Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
@@ -422,13 +422,25 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-13",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
         "candidateTitle": "Can Your Credit Union Draw on Its Emergency Funding Line?",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:35:00-05:00",
-        "nextAction": "Build the qualified evidence-linked Insight, then run the exact article checks."
+        "nextAction": "Read exact terminal CI, verify artifact and visually inspect mobile and desktop before release.",
+        "evidence": {
+          "pending": {
+            "prNumber": 339,
+            "head": "d684ad3b265ccada08a5278b5aa0ed90c2b16c56",
+            "run": 43431340482,
+            "job": 131905315816,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-13T08:35:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ],
     "socialDistribution": {
