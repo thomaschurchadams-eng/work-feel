@@ -98,20 +98,20 @@
     "fallbackEvaluations": [],
     "publications": [],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:13:35.744Z",
+    "updatedAt": "2026-11-13T12:19:43.320Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-13",
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
         "candidateTitle": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Verify the one bounded retry and inspect the exact desktop and mobile artifact; do not reuse attempt 1 or the previous head.",
+        "nextAction": "Merge exact accepted head, then verify live article, image and listings before recording publication.",
         "evidence": {
           "validationHistory": [
             {
@@ -167,6 +167,25 @@
             "runAttempt": 2,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-13T08:00:00-05:00"
+          },
+          "terminalValidation": {
+            "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+            "run": 43423147333,
+            "job": 131878487821,
+            "runAttempt": 2,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-13T12:19:15.480Z"
+          },
+          "terminalAcceptance": {
+            "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+            "run": 43423147333,
+            "job": 131878487821,
+            "runAttempt": 2,
+            "visualReviewedAt": "2026-11-13T12:19:43.320Z",
+            "artifactId": 14034822924,
+            "artifactDigest": "sha256:069bee4f7dd416e78684fbe3633bfeb686ea254dfbd6300b89fb986e35e3282e"
           }
         }
       }
