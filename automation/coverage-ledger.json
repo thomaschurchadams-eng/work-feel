@@ -3,6 +3,35 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ascend-lge-credit-union-merger-approvals-systems",
+      "title": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
+      "url": "/news/ascend-lge-credit-union-merger-approvals-systems.html",
+      "publishedAt": "2026-11-13T07:26:00-05:00",
+      "section": "news",
+      "beat": "ascend-lge-credit-union-merger-approvals-systems",
+      "functions": [
+        "board-strategy"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Board, strategy and member-operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/news/safe-becu-member-support-final-approval.html",
+        "/news/gecu-bank-of-the-southwest-integration.html"
+      ],
+      "sourceTier": 1,
+      "score": 69.2,
+      "confidence": 0.95,
+      "sourceLimit": "Joint announcement reports approvals; legal effective date and operational integration remain prospective."
+    },
+    {
       "id": "american-heritage-gigi-ai-member-conversations",
       "title": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
       "url": "/news/american-heritage-gigi-ai-member-conversations.html",
