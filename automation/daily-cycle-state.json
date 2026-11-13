@@ -116,7 +116,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:38:43.034Z",
+    "updatedAt": "2026-11-13T12:46:58.550Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
@@ -265,19 +265,42 @@
         "candidateTitle": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-13T08:10:00-05:00",
-        "nextAction": "Read exact terminal CI, verify artifact digest and visually inspect mobile and desktop before release.",
+        "nextReviewAt": "2026-11-13T08:15:00-05:00",
+        "nextAction": "Await exact corrected-head CI and review the real desktop and mobile outputs.",
         "evidence": {
           "pending": {
             "prNumber": 337,
-            "head": "6c05fa115f98c9d613450c7353517766bd661b57",
-            "run": 43426845977,
-            "job": 131890236615,
+            "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
+            "run": 43428064545,
+            "job": 131894321183,
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-13T08:10:00-05:00"
+            "nextReviewAt": "2026-11-13T08:15:00-05:00"
           },
-          "validationHistory": []
+          "validationHistory": [
+            {
+              "prNumber": 337,
+              "head": "6c05fa115f98c9d613450c7353517766bd661b57",
+              "run": 43426845977,
+              "job": 131890236615,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-13T08:10:00-05:00",
+              "terminalValidation": {
+                "head": "6c05fa115f98c9d613450c7353517766bd661b57",
+                "run": 43426845977,
+                "job": 131890236615,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-13T12:46:13.519Z"
+              },
+              "observedAt": "2026-11-13T12:46:58.550Z",
+              "status": "superseded",
+              "reason": "First rendered run passed; explicit local News-package gate then caught a description above 160 characters. Corrected shorter metadata requires new exact-head artifact."
+            }
+          ]
         }
       }
     ],
