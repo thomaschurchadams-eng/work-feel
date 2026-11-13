@@ -98,7 +98,7 @@
     "fallbackEvaluations": [],
     "publications": [],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:04:52.509Z",
+    "updatedAt": "2026-11-13T12:12:29.764Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
@@ -111,14 +111,37 @@
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Inspect exact run and download matched artifact for actual desktop/mobile acceptance.",
+        "nextAction": "Obtain exact rendered artifact and verify the corrected Reporting card and article on mobile and desktop.",
         "evidence": {
-          "validationHistory": [],
+          "validationHistory": [
+            {
+              "prNumber": 335,
+              "head": "cd8fd10aadc866359529f50f1ddee38bcb2e3322",
+              "run": 43422115881,
+              "job": 131874396388,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-13T08:00:00-05:00",
+              "observedAt": "2026-11-13T12:12:29.764Z",
+              "terminalValidation": {
+                "head": "cd8fd10aadc866359529f50f1ddee38bcb2e3322",
+                "run": 43422115881,
+                "job": 131874396388,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-13T12:10:23.607Z"
+              },
+              "status": "superseded",
+              "reason": "Reporting filter markup corrected; first-head CI cannot clear corrected head."
+            }
+          ],
           "pending": {
             "prNumber": 335,
-            "head": "cd8fd10aadc866359529f50f1ddee38bcb2e3322",
-            "run": 43422115881,
-            "job": 131874396388,
+            "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+            "run": 43423147333,
+            "job": 131877850039,
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-13T08:00:00-05:00"
