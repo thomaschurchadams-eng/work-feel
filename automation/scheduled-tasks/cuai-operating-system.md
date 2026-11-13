@@ -6,6 +6,14 @@ This is the authoritative operating policy for the **CUAI Operating System** Cha
 
 This policy coordinates the newsroom portfolio and operating handoffs. It does not create scheduled tasks or change Cloud schedules/models/permissions. It may run the bounded Alert cycle defined below after the day's article handoff has completed or been recorded; it must not publish full articles, perform unrelated maintenance, or perform social activity unless a separately authorized, current task policy explicitly allows it.
 
+## Bounded development-roadmap pass (draft policy; main activation required)
+
+After the normal article handoff, editorial review and bounded Alert duties, inspect current `automation/product-roadmap/state.json`, `automation/roadmap/INTEGRATION.md`, and issue #160. Coordinate at most one development item, currently `cuai-deployment-evidence-v1`, without displacing the eight-article cadence or media/social caps. The assigned one-time builder task `01a13bb8-6a9f-70fa-aed5-1aaebc1990ed` is proposed for that pilot; its acceptance is not yet verified. Require its exact task ID, accepted item/scope, source version and QA return criteria in an authoritative issue receipt before advancing to building.
+
+When the connected host can execute the adapter, bind `GithubContentsStateStore` to the current authorized branch using the connected GitHub Contents fetch/update actions and call `run_bound` with a live provider that fetches the complete issue #160 comments anew for each protected receipt. Supply only reviewed dated candidate events. Compare-and-swap the exact state blob SHA; on conflict or uncertain response, re-read and reconcile rather than replacing the latest SHA blindly. For a generated outbox item, call `outbox.dispatch_one` with the connected issue-comment action; it durably claims one attempt and re-reads the exact comment. If the host cannot execute Python with live connector callbacks or lacks write access to the exact state file, record that concrete blocker and leave the state unchanged. A saved JSON snapshot is for planning only and cannot prove handoff, approval, QA or release.
+
+Keep the dataset pilot private. Its QA must check source provenance, rights, claim versus independently supported result, dates, uncertainty, corrections and the small evaluation cases. Do not infer training or redistribution rights, vendor review, marketing or publication authority. Production release requires the existing exact-scope approval, tested artifact/commit, rollback and independently checked production result. A green preview, issue request or builder completion alone is not `verified-complete`.
+
 ## Operating principle
 
 CreditUnionAI News is a source-led publication for credit-union leaders and functional teams. Optimize for useful coverage across the full operating audience—not a narrow stream of generic AI news.
