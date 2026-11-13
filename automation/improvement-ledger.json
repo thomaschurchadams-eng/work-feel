@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T23:53:41.120012+00:00",
+  "updatedAt": "2026-11-13T19:57:59.746458+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -514,6 +514,23 @@
       ],
       "result": "Released and verified. Actual production deceased-member page has one newsletter invitation. Full current-catalogue archive checks, 18 historical date-boundary journeys and two mixed-ordering journeys pass. Receipt: https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157",
       "rollback": "Revert only the historical boundary-fixture isolation; retain published Alert records and evidence."
+    },
+    {
+      "id": "intelligence-reader-density-review-2026-11-13",
+      "owner": "existing Intelligence maintenance owner",
+      "evidence": "PR342 and PR344 reviews inspected actual desktop/mobile output but accepted repeated date/process narration and four narrow desktop columns; tests positively required some rejected boilerplate. The existing design README already required first-time-reader review. Tom identified the density and formatting defects; the verified gap was acceptance and regression criteria, not absence of screenshots.",
+      "proposedChange": "Correct the canonical generator and tracker-scoped layout, show one truthful record Reviewed date, preserve full underlying provenance, replace boilerplate assertions with objective reader-facing regressions, and apply seven bounded rules in INTELLIGENCE_MONITORING.md with concrete independent before/after review.",
+      "expectedBenefit": "Make the two curated trackers easier to read while preserving attribution, source access, applicability and honest freshness.",
+      "risk": "low",
+      "validation": [
+        "Independent local review of both pages at 320/390/1024/1440: all 15 eligible records, exact summaries/primary links/dates and held exclusion preserved; no axe violations or overflow; keyboard source links pass.",
+        "Actual before/after: 1440px cards widened from 295 to 600px; long NCUA/FSB titles reduced from three to two lines; date blocks reduced from 74–99px to one 22.4px line; source actions increased to 44px.",
+        "Reviewed output digest 52ecb05720c08bdae3d40701283f5bbcac6bab93e4a4e789be7a1b4e63928969; exact-head full/remote, Preview and production acceptance remain required."
+      ],
+      "status": "validated-pending-release",
+      "result": "Existing Intelligence owner applied the revised workflow in this correction and received independent output review. This records local acceptance only; final version-bound release/live evidence belongs to the authorized task result. Future recurring adoption, broader coverage and audience benefit remain unobserved.",
+      "nextTrigger": "Complete exact-head release/Preview/live gates for this correction; apply the same reader-facing review at the next separately authorized Intelligence maintenance run.",
+      "rollback": "Revert only this generator/layout/review correction; preserve all authoritative Intelligence records/history and unrelated publication/provider changes."
     }
   ]
 }

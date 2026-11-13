@@ -4,14 +4,15 @@ import fs from 'node:fs';
 // Static output: no runtime data fetch and no writes outside the two trackers.
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const time = date => `<time datetime="${escape(date)}">${escape(date)}</time>`;
+const time = date => `<time datetime="${escape(date)}">${new Intl.DateTimeFormat('en-US', {month:'short', day:'numeric', year:'numeric', timeZone:'UTC'}).format(new Date(date+'T12:00:00Z'))}</time>`;
 const label = value => escape(value.replaceAll('-', ' '));
-function dates(record, signal) {
-  const kind = signal.dateType === 'review-date-not-publication' ? 'Resource review date (publication unknown)' : signal.addedAt ? 'Source announcement' : 'Recorded date (not necessarily source publication)';
-  return `<p class="intelligence-dates">${kind}: ${time(signal.date)}.${signal.sourceLastModified ? ' Source last modified: '+time(signal.sourceLastModified)+'.' : ''}${record.addedAt ? ' Added: '+time(record.addedAt)+'.' : ''} Record last reviewed: ${time(record.lastReviewed)}.</p>`;
+function dates(record) {
+  // One reader-facing freshness date; announcement/modified/added dates and
+  // publication uncertainty remain in the authoritative record and summary.
+  return `<p class="intelligence-dates">Reviewed ${time(record.lastReviewed)}</p>`;
 }
 function links(signal) {
-  return `<div class="actions">${signal.relatedCoverage ? `<a class="link" href="/${escape(signal.relatedCoverage)}">Related coverage →</a> ` : '<span>Tracker-only update; no related article.</span> '}<a class="link" href="${escape(signal.sourceUrl)}" target="_blank" rel="noopener noreferrer">Primary source ↗</a></div>`;
+  return `<div class="actions">${signal.relatedCoverage ? `<a class="link" href="/${escape(signal.relatedCoverage)}">Related coverage →</a> ` : ''}<a class="link" href="${escape(signal.sourceUrl)}" target="_blank" rel="noopener noreferrer">Primary source ↗</a></div>`;
 }
 function card(record, signal, vendor) {
   const heading = vendor ? record.name : signal.title;
@@ -22,8 +23,7 @@ function card(record, signal, vendor) {
 <p><strong>${escape(category)}</strong></p>
 ${vendor ? `<p>${escape(record.capabilities.join(' · '))}</p>` : `<p>${escape(record.jurisdiction)}</p>`}
 <p>${escape(signal.summary)}</p>
-${dates(record, signal)}
-${!vendor && record.developments.length > 1 ? '<p>Earlier developments remain in the registry history; this card shows the latest recorded review.</p>' : ''}
+${dates(record)}
 ${links(signal)}
 </article>`;
 }
@@ -39,10 +39,11 @@ for (const vendor of [true, false]) {
   const ordered = [...records].sort((a,b) => b.lastReviewed.localeCompare(a.lastReviewed));
   const kind = vendor ? 'vendor' : 'reg', file = `intelligence/${vendor ? 'vendors' : 'regulatory-watch'}.html`;
   const original = fs.readFileSync(file, 'utf8');
-  let result = replaceBlock(original, 'count', `<p>${records.length} ${vendor ? 'public vendor records' : 'regulatory watch records'}. Review dates apply to individual records.</p>`);
-  // Keep these canonical blocks empty: both small curated collections are browsed
-  // in full. Regeneration must not restore obsolete filter/empty-state controls.
-  for (const block of ['controls', 'empty', 'filter-script']) result = replaceBlock(result, block, '');
+  let result = original;
+  // Keep process narration and retired controls out of the reader's path.
+  // Provenance stays in the registries; each card retains its own dates, evidence
+  // label, source and substantive qualifications.
+  for (const block of ['count', 'review-note', 'evidence-notes', 'controls', 'empty', 'filter-script']) result = replaceBlock(result, block, '');
   result = replaceBlock(result, 'records', `<div class="card-grid" id="${kind}-grid">\n`+ordered.map(r => card(r, vendor ? r.signals[0] : r.developments.at(-1), vendor)).join('\n')+'\n</div>');
   if (result !== original) {
     changed++;

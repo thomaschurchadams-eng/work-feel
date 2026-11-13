@@ -52,21 +52,31 @@ test('invalid dates and empty signal records fail closed',()=>{
   assert.notEqual(fixture(d=>{d.vendors.vendors[0].signals=[];}).status,0);
   assert.notEqual(fixture(d=>{d.regulatory.records[0].developments=[];}).status,0);
 });
-test('public counts, review dates and latest NCUA source match records; held vendor stays withheld',()=>{
+test('public records retain dates, attribution and sources without process narration; held vendor stays withheld',()=>{
   for(const [file,records] of [['vendors.html',vendors.vendors.filter(v=>!v.promotionStatus?.startsWith('withheld'))],['regulatory-watch.html',regulatory.records]]){
     const html=fs.readFileSync(path.join(root,'intelligence',file),'utf8');
     const cards=[...html.matchAll(/<article class="card intelligence-record"[\s\S]*?<\/article>/g)].map(m=>m[0]);
     assert.equal(cards.length,records.length);
-    assert.ok(html.includes(`${records.length} ${file === 'vendors.html' ? 'public vendor records' : 'regulatory watch records'}`));
+    assert.doesNotMatch(html, /public vendor records|regulatory watch records|Review dates apply|Partial catch-up reviewed|complete market scan|Review scope and history|Evidence labels|Tracker inclusion is not a recommendation|Earlier developments remain|Tracker-only update|This editorial tracker is not legal advice/);
     assert.doesNotMatch(html, /type="search"|(?:vendor|reg)-(?:search|reset|empty|status)|data-search=|filterRecords/);
     for (const card of cards) assert.doesNotMatch(card, /\bhidden\b|display:\s*none/);
-    for(const record of records){const card=cards.find(c=>c.includes(`data-record-id="${record.id}"`));assert.ok(card);assert.ok(card.includes(`Record last reviewed: <time datetime="${record.lastReviewed}">`));}
+    const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    for(const record of records){
+      const card=cards.find(c=>c.includes(`data-record-id="${record.id}"`));assert.ok(card);
+      const signal=file==='vendors.html'?record.signals[0]:record.developments.at(-1);
+      assert.ok(card.includes(escape(signal.summary)),record.id+' preserves qualified summary');
+      assert.ok(card.includes(`href="${escape(signal.sourceUrl)}"`));
+      assert.equal([...card.matchAll(/<time\b/g)].length,1,record.id+' has one useful date');
+      assert.ok(card.includes(`Reviewed <time datetime="${record.lastReviewed}">`));
+      if(signal.evidenceLevel)assert.ok(card.includes(escape(signal.evidenceLevel.replaceAll('-',' '))));
+      if(record.jurisdiction)assert.ok(card.includes(escape(record.jurisdiction)));
+    }
     assert.ok(!html.includes('data-record-id="ncr-voyix"'));
   }
   const html=fs.readFileSync(path.join(root,'intelligence/regulatory-watch.html'),'utf8');
   assert.ok(regulatory.records.find(r=>r.id==='ncua-ai-resources').developments.length >= 2);
   assert.ok(!html.includes('href="https://ncua.gov/regulation-supervision/regulatory-compliance-resources/credit-union-artificial-intelligence-ai-resources"'));
-  assert.ok(html.includes('Resource review date (publication unknown)'));
+  assert.ok(html.includes('the source publication date was not established'));
 });
 test('page regeneration never advances review timestamps, run success or ledger history',()=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'cuai-intelligence-render-'));
@@ -83,7 +93,8 @@ test('page regeneration never advances review timestamps, run success or ledger 
     const page=fs.readFileSync(path.join(dir,'intelligence/vendors.html'),'utf8');
     assert.ok(page.includes('&lt;Isolated &amp; untrusted&gt;'));assert.ok(!page.includes('<Isolated & untrusted>'));
     const count=data.vendors.filter(v=>!v.promotionStatus?.startsWith('withheld')).length;
-    assert.ok(page.includes(`${count} public vendor records`));
+    assert.equal([...page.matchAll(/<article class="card intelligence-record"/g)].length,count);
+    assert.doesNotMatch(page,/public vendor records|Partial catch-up reviewed|Evidence labels/);
     assert.doesNotMatch(page, /type="search"|filterRecords/);
   } finally {fs.rmSync(dir,{recursive:true,force:true});}
   const changes=fs.readFileSync(path.join(root,'intelligence/changes.html'),'utf8');

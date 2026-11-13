@@ -188,11 +188,13 @@ test('day-only evidence labels a known date but never invents an exact posting t
   }
 });
 
-test('vendor evidence date is identified as the signal date, not CUAI publication', () => {
+test('vendor freshness date is labeled as review, not source or CUAI publication', () => {
   const html = fs.readFileSync(path.join(__dirname, '../intelligence/vendors.html'), 'utf8');
   const fis = html.match(/<article[^>]*data-record-id="fis"[\s\S]*?<\/article>/)?.[0];
   assert.ok(fis);
   assert.match(fis, /vendor claim/);
-  assert.match(fis, /Recorded date \(not necessarily source publication\): <time datetime="2026-07-17">2026-07-17<\/time>/);
-  assert.match(fis, /Record last reviewed:/);
+  assert.match(fis, /Reviewed <time datetime="2026-07-20">Jul 20, 2026<\/time>/);
+  assert.equal([...fis.matchAll(/<time\b/g)].length,1);
+  const registry=JSON.parse(fs.readFileSync(path.join(__dirname,'../automation/vendor-registry.json'),'utf8'));
+  assert.equal(registry.vendors.find(record=>record.id==='fis').signals[0].date,'2026-07-17');
 });
