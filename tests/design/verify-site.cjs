@@ -81,8 +81,16 @@ async function serve() {
           trackerPassed = JSON.stringify(actual) === JSON.stringify(expected)
             && await page.locator('.intelligence-record').count() === expected.length
             && await page.locator('input[type="search"], [id$="-reset"], [id$="-empty"]').count() === 0
-            && (await page.locator('main').innerText()).includes(`${expected.length} ${vendor ? 'public vendor records' : 'regulatory watch records'}`)
-            && (await page.locator('main').innerText()).includes('not a complete market scan');
+            && !/Review dates apply|Partial catch-up reviewed|Review scope and history|Evidence labels|public vendor records|regulatory watch records|Earlier developments remain|Tracker-only update|This editorial tracker is not legal advice/.test(await page.locator('main').innerText())
+            && await page.locator('.intelligence-record .intelligence-dates').count() === expected.length;
+          const density = await page.locator('.intelligence-record').evaluateAll(cards => cards.map(card => ({
+            dateCount: card.querySelectorAll('time').length,
+            reviewed: card.querySelector('.intelligence-dates').textContent.startsWith('Reviewed '),
+            links: [...card.querySelectorAll('.actions a')].map(a=>({height:a.getBoundingClientRect().height,fontSize:parseFloat(getComputedStyle(a).fontSize)}))
+          })));
+          const columns = await page.locator('.card-grid').evaluate(grid=>getComputedStyle(grid).gridTemplateColumns.split(' ').length);
+          trackerPassed = trackerPassed && columns === (width <= 760 ? 1 : 2)
+            && density.every(card=>card.dateCount===1 && card.reviewed && card.links.every(link=>link.height>=44 && link.fontSize>=14));
           const source = page.locator('.intelligence-record .actions a[target="_blank"]').first();
           await source.focus();
           trackerPassed = trackerPassed && await source.evaluate(link=>link === document.activeElement && link.href.startsWith('https://'));
