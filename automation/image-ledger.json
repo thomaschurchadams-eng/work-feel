@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "credit-union-trust-share-insurance-beneficiary-records",
+      "articleUrl": "/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+      "imagePath": "/assets/credit-union-trust-share-insurance-beneficiary-records.jpg",
+      "publishedAt": "2026-11-13T07:57:28.291-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "tactile-paper-cut",
+      "subject": "documents-and-controls",
+      "composition": "overhead-flat-lay",
+      "perspective": "overhead",
+      "palette": "terracotta-sky",
+      "lighting": "soft-daylight",
+      "texture": "paper-fiber",
+      "scene": "Two files with threads converging on one paper beneficiary marker",
+      "conceptScore": 63.1,
+      "conceptAlternatives": [
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "scene": "Two files with threads converging on one paper beneficiary marker",
+          "score": 63.1,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "frontline-workflow",
+          "scene": "A desk with two document trays",
+          "score": 38.9,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "abstract-data-system",
+          "scene": "Three marks overlap across two inked fields",
+          "score": 36,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest scoring valid concept; original generated editorial illustration inspected for the actual article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "2b5b91557c6afd4e7d25c3a15ea5480c2884f1d29801ffa406a40112325e5a3e"
+    },
+    {
       "id": "gemini-4-carbon-credit-union-evaluation",
       "articleUrl": "/news/gemini-4-carbon-credit-union-evaluation.html",
       "imagePath": "/assets/gemini-4-carbon-credit-union-evaluation.jpg",
