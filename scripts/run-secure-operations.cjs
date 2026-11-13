@@ -1,4 +1,5 @@
 const fs=require('node:fs');
+const { stripDiagnostics }=require('../lib/buffer-diagnostics.cjs');
 const MEDIA_POLICY=require('../automation/media-policy.json');
 const REPO='thomaschurchadams-eng/work-feel';
 const API='https://api.github.com/repos/'+REPO;
@@ -12,6 +13,7 @@ const save=()=>fs.writeFileSync('operation-receipts/run.json',JSON.stringify(rec
 // Uploaded receipts have a broader repository audience than the reporting identity.
 // Keep query strings in the authorized response only, never in persisted artifacts.
 function receiptResponse(route,response){
+ if(route==='buffer-metrics')return stripDiagnostics(response);
  if(route!=='search-console-metrics')return response;
  const sanitized=JSON.parse(JSON.stringify(response));
  for(const window of Object.values(sanitized.data?.windows||{})){
