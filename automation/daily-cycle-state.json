@@ -140,7 +140,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:58:10.411Z",
+    "updatedAt": "2026-11-13T13:06:37.180Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
@@ -353,13 +353,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-13",
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
         "candidateTitle": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:25:00-05:00",
-        "nextAction": "Read exact terminal CI, verify artifact and visually inspect mobile and desktop before release.",
+        "nextAction": "Merge only the exact reviewed head after a refreshed canonical check.",
         "evidence": {
           "pending": {
             "prNumber": 338,
@@ -370,7 +370,26 @@
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-13T08:25:00-05:00"
           },
-          "validationHistory": []
+          "validationHistory": [],
+          "terminalValidation": {
+            "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
+            "run": 43429590650,
+            "job": 131899456322,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-13T13:06:10.229Z"
+          },
+          "terminalAcceptance": {
+            "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
+            "run": 43429590650,
+            "job": 131899456322,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-13T13:06:37.180Z",
+            "artifactId": 14040101216,
+            "artifactDigest": "sha256:ffe60e6f16f64f07d19ed1808892117f9781efed926112f73e6dce0dcfe95dfa"
+          }
         }
       }
     ],
