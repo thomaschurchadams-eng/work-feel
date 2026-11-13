@@ -98,20 +98,20 @@
     "fallbackEvaluations": [],
     "publications": [],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:12:29.764Z",
+    "updatedAt": "2026-11-13T12:13:08.636Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-13",
-        "status": "pending-validation",
+        "status": "technical-failure",
         "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
         "candidateTitle": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Obtain exact rendered artifact and verify the corrected Reporting card and article on mobile and desktop.",
+        "nextAction": "Retry the same design job once after the corrected-head checkpoint is durable; the first attempt read stale main.",
         "evidence": {
           "validationHistory": [
             {
@@ -145,6 +145,16 @@
             "runAttempt": 1,
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-13T08:00:00-05:00"
+          },
+          "terminalValidation": {
+            "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+            "run": 43423147333,
+            "job": 131877850039,
+            "runAttempt": 1,
+            "conclusion": "failure",
+            "runConclusion": "failure",
+            "jobConclusion": "failure",
+            "observedAt": "2026-11-13T12:13:02.342Z"
           }
         }
       }
