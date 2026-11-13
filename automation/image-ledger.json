@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "american-heritage-gigi-ai-member-conversations",
+      "articleUrl": "/news/american-heritage-gigi-ai-member-conversations.html",
+      "imagePath": "/assets/american-heritage-gigi-ai-member-conversations.jpg",
+      "publishedAt": "2026-11-13T07:03:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "human-machine-handoff",
+      "composition": "layered-depth",
+      "perspective": "isometric",
+      "palette": "plum-gold",
+      "lighting": "rim-light",
+      "texture": "matte-clay",
+      "scene": "Two simple speech forms meet over a service desk, one automated and one human",
+      "conceptScore": 61.9,
+      "conceptAlternatives": [
+        {
+          "medium": "dimensional-3d",
+          "subject": "human-machine-handoff",
+          "scene": "Two simple speech forms meet over a service desk, one automated and one human",
+          "score": 61.9,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "physical-metaphor",
+          "scene": "Paper speech forms and a separate service queue",
+          "score": 43.6,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "frontline-workflow",
+          "scene": "Unbranded headset and blurred empty contact center",
+          "score": 41.6,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest scoring valid concept; original generated editorial illustration inspected for the actual article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "80bef5d04ea21f14e0eff0b574a4c542d844683256504f02427f7cceeab80a19"
+    },
+    {
       "id": "credit-union-proposed-vendor-risk-guidance",
       "articleUrl": "/insight-credit-union-proposed-vendor-risk-guidance.html",
       "imagePath": "/assets/credit-union-proposed-vendor-risk-guidance.jpg",

@@ -3,6 +3,35 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "american-heritage-gigi-ai-member-conversations",
+      "title": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
+      "url": "/news/american-heritage-gigi-ai-member-conversations.html",
+      "publishedAt": "2026-11-13T07:03:00-05:00",
+      "section": "news",
+      "beat": "american-heritage-gigi-ai-member-conversations",
+      "functions": [
+        "member-service"
+      ],
+      "technologies": [
+        "conversational-ai"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Contact center, member-service and fraud operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-card-dispute-evidence-clock.html",
+        "/insight-credit-union-account-recovery-evidence-record.html"
+      ],
+      "sourceTier": 1,
+      "score": 76,
+      "confidence": 0.94,
+      "sourceLimit": "SoundHound reports operational volumes and chat outcomes; the credit union confirms service functions, not reported metrics."
+    },
+    {
       "id": "credit-union-proposed-vendor-risk-guidance",
       "title": "What the Proposed Vendor-Risk Guidance Would Change for Credit Unions",
       "url": "/insight-credit-union-proposed-vendor-risk-guidance.html",
