@@ -3,6 +3,35 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-trust-share-insurance-beneficiary-records",
+      "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
+      "url": "/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+      "publishedAt": "2026-11-13T07:57:28.291-05:00",
+      "section": "insights",
+      "beat": "credit-union-trust-share-insurance-beneficiary-records",
+      "functions": [
+        "risk-compliance"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "explainer",
+      "audience": "functional-leader",
+      "primaryAudience": "Deposit operations, frontline service and compliance leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-and-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-deceased-member-servicing-authority.html",
+        "/insight-credit-union-savers-match-2027-ira-readiness.html"
+      ],
+      "sourceTier": 1,
+      "score": 65.4,
+      "confidence": 0.96,
+      "sourceLimit": "Published final rule and current NCUA guidance; example is illustrative and does not determine any member’s insured balance."
+    },
+    {
       "id": "gemini-4-carbon-credit-union-evaluation",
       "title": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
       "url": "/news/gemini-4-carbon-credit-union-evaluation.html",
