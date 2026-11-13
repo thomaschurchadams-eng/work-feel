@@ -16,8 +16,7 @@ function links(signal) {
 function card(record, signal, vendor) {
   const heading = vendor ? record.name : signal.title;
   const category = vendor ? record.category : record.authority;
-  const search = [heading, category, signal.summary, ...(record.capabilities || []), ...record.functions, ...record.technologies, signal.type, signal.status || signal.evidenceLevel].join(' ').toLowerCase();
-  return `<article class="card intelligence-record" data-record-id="${escape(record.id)}" data-search="${escape(search)}">
+  return `<article class="card intelligence-record" data-record-id="${escape(record.id)}">
 <span class="label-tag">${label(vendor ? signal.evidenceLevel : signal.type+' · '+signal.status)}</span>
 <h2 class="section-title card-title">${escape(heading)}</h2>
 <p><strong>${escape(category)}</strong></p>
@@ -41,6 +40,9 @@ for (const vendor of [true, false]) {
   const kind = vendor ? 'vendor' : 'reg', file = `intelligence/${vendor ? 'vendors' : 'regulatory-watch'}.html`;
   const original = fs.readFileSync(file, 'utf8');
   let result = replaceBlock(original, 'count', `<p>${records.length} ${vendor ? 'public vendor records' : 'regulatory watch records'}. Review dates apply to individual records.</p>`);
+  // Keep these canonical blocks empty: both small curated collections are browsed
+  // in full. Regeneration must not restore obsolete filter/empty-state controls.
+  for (const block of ['controls', 'empty', 'filter-script']) result = replaceBlock(result, block, '');
   result = replaceBlock(result, 'records', `<div class="card-grid" id="${kind}-grid">\n`+ordered.map(r => card(r, vendor ? r.signals[0] : r.developments.at(-1), vendor)).join('\n')+'\n</div>');
   if (result !== original) {
     changed++;
