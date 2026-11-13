@@ -116,7 +116,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:36:07.272Z",
+    "updatedAt": "2026-11-13T12:38:43.034Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
@@ -260,13 +260,25 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-13",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
         "candidateTitle": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:10:00-05:00",
-        "nextAction": "Build and verify the model-access and price-change report with Google’s announcement and model card."
+        "nextAction": "Read exact terminal CI, verify artifact digest and visually inspect mobile and desktop before release.",
+        "evidence": {
+          "pending": {
+            "prNumber": 337,
+            "head": "6c05fa115f98c9d613450c7353517766bd661b57",
+            "run": 43426845977,
+            "job": 131890236615,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-13T08:10:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ],
     "socialDistribution": {
