@@ -5129,6 +5129,70 @@
       },
       "summary": "Thursday operating review: the verified deceased-member servicing Library Insight brings the week-to-date total to five and fills the prior portfolio gap. The latest 15 are 12 News/3 Insights across 15 distinct beats, but secondary-function concentration remains high in operations (12/15) and risk/compliance (9/15); AI-assisted offer suppression and consent evidence in member marketing is the next balancing candidate. The pre-release cadence delivered 5/6 scheduled slots through today's already-closed cycle, with Monday's second slot explicitly held on evidence. A concurrent authorized release changed the target prospectively to three qualified articles each weekday and 15 per full week; today was not reopened, and Friday is the first ordinary three-slot cycle. No new Alert qualified across eight official-source surfaces. The MEXC Alert remained fresh at review through 3:35:32 p.m. Eastern, so no homepage watch write occurred and the existing time-based fallback behavior was preserved. Exact current main, including the cadence release, is READY in production with no 24-hour runtime errors. Audience learning remains open and evidence-blocked: the Vercel project has no Web Analytics dataset, the browser surface was unavailable and current main has no exact-current verified artifact. Monday's competitive-distribution scan was not repeated. No article or social publication by the operating role, external contact, spend, credential, permission, schedule, pricing, legal/privacy or editorial-gate change occurred. The first exact-head gate rejected a no-Alert daily-state annotation for lacking a structured publisher-slot transition; that mutation was withdrawn, preserving canonical publisher state and all 82 history entries.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-13T08:22:56-05:00",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "The independently scheduled November 13 publisher cycle executed the released five-qualified-article weekday cadence.",
+      "status": "success",
+      "incidentKey": "five-plus-three-unattended-acceptance-2026-11-12",
+      "workUnits": {
+        "candidateLeadsEvaluated": 12,
+        "beatsSearched": 9,
+        "articleSlotsTargeted": 5,
+        "articlesPublished": 5,
+        "exactHeadValidationRunsObserved": 5,
+        "renderedChecksObserved": 230,
+        "publicationHistoryEntriesPreserved": 83,
+        "productionDeploymentsVerified": 5,
+        "liveArticleChecks": 5,
+        "desktopViewportReviewsObserved": 5,
+        "mobileViewportReviewsObserved": 5,
+        "socialQueueChecks": 1,
+        "socialReservationsCreated": 0,
+        "providerWritesAttempted": 0,
+        "userInterventionsObserved": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer"
+      ],
+      "summary": "The scheduled publisher completed all five November 13 article slots sequentially: three News reports and two Insights. Each accepted head passed its exact rendered suite and desktop/mobile review before merge; production and the live article, artwork, listing and homepage bytes were verified. Canonical state records five live-verified articles, preserves all 83 history entries and advances no Alert count. American Heritage ranked first for LinkedIn, but no reservation or provider write occurred because all 78 retained Buffer records still lack resolved canonical destinations; queue bytes stayed unchanged. Scheduled run 4e161e99-ed50-832e-a4d6-28a9794f9965 recorded no user intervention and requires_user_action=false; no approval-event audit is exposed, and the separate 15:00 Alert outcome remains pending for unattended acceptance.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-13T08:34:21-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The completed five-article publisher cycle had canonical state and issue #160 receipts but no corresponding activity entry in automation/cuai-usage-ledger.json; the ledger still ended on November 12.",
+      "status": "recovered",
+      "incidentKey": "cuai-publisher:2026-11-13:missing-usage-ledger-entry",
+      "workUnits": {
+        "scheduledPublisherRunsReviewed": 1,
+        "publisherOutcomeReceiptsReviewed": 1,
+        "articlesVerified": 5,
+        "productionDeploymentChecks": 1,
+        "liveSurfaceChecks": 8,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "publicationHistoryEntriesPreserved": 83,
+        "socialQueueChecks": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "missingPublisherLedgerEntriesRecovered": 1,
+        "durablePolicyCorrectionsPrepared": 1,
+        "ledgerEntriesAppended": 2
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "Reliability reconciled scheduled run 4e161e99-ed50-832e-a4d6-28a9794f9965 against current main 0a62e36e275828cf8e3d45417a78fd77bb2691d1. All five article slots are live-verified, production deployment dpl_7jPfe6E3CWdJajqZjdbymkGCQBfh is READY on that exact main and aliased to creditunionainews.com, eight public surfaces return HTTP 200 with matching listings, and no four-hour runtime errors were observed. Canonical state preserves 83 histories; the 55-item social queue has no duplicate IDs or active-date conflicts. The missing publisher activity record was reconstructed from the canonical state and issue #160 receipt. Durable prevention adds the reporting contract to the authoritative publisher policy so a material issue #160 handoff cannot substitute for the required usage-ledger entry. The existing unattended-acceptance incident remains unverified until the separate 15:00 Alert cycle records its outcome and intervention evidence.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
