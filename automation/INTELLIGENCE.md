@@ -1,4 +1,4 @@
-# Automated intelligence layer
+# Intelligence records
 
 The Intelligence section turns verified public evidence into durable vendor and regulatory records.
 
@@ -16,7 +16,7 @@ For every verified development, decide whether it warrants a tracker-only update
 
 Vendor marketing remains labeled `vendor-claim` until corroborated. Tracker inclusion is not endorsement. Regulatory summaries link to the primary authority and are not legal advice.
 
-Update the registries, affected public pages and related topic hubs in the same production package. Run `node scripts/validate-intelligence.mjs` before publication and verify the live tracker records after deployment.
+Use the separately scoped maintenance workflow in `INTELLIGENCE_MONITORING.md`; do not run article or Alert work here. Related coverage is optional: a verified primary-source tracker update does not require an article. Regenerate the two public trackers with `node scripts/generate-intelligence-pages.mjs`; its `--check` mode detects registry/page drift. Update only the Intelligence package. Run `node scripts/validate-intelligence.mjs` before publication and verify the live tracker records after deployment.
 
 Production release: the Intelligence layer is validated in preview and deployed from `main`.
 

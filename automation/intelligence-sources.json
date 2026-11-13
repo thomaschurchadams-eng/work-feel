@@ -284,7 +284,7 @@
       "name": "Creatio announcements",
       "owner": "Creatio",
       "type": "vendor",
-      "url": "https://www.creatio.com/company/news/24941",
+      "url": "https://www.creatio.com/company/news",
       "priority": "medium",
       "cadence": "weekly",
       "functions": [
@@ -301,7 +301,7 @@
       "name": "SoundHound investor news",
       "owner": "SoundHound AI",
       "type": "vendor",
-      "url": "https://investors.soundhound.com/node/11601/pdf",
+      "url": "https://investors.soundhound.com/news-releases/",
       "priority": "medium",
       "cadence": "weekly",
       "functions": [
@@ -318,7 +318,7 @@
       "name": "FSB publications",
       "owner": "Financial Stability Board",
       "type": "regulator",
-      "url": "https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
+      "url": "https://www.fsb.org/publications/",
       "priority": "medium",
       "cadence": "weekly",
       "functions": [
@@ -328,6 +328,23 @@
       "technologies": [
         "agents-automation",
         "governance-risk"
+      ]
+    },
+    {
+      "id": "glia-news",
+      "name": "Glia newsroom",
+      "owner": "Glia",
+      "type": "vendor",
+      "url": "https://www.glia.com/news",
+      "priority": "medium",
+      "cadence": "weekly",
+      "functions": [
+        "lending-collections",
+        "operations"
+      ],
+      "technologies": [
+        "generative-ai",
+        "decisioning-underwriting"
       ]
     }
   ]

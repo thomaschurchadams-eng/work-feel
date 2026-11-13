@@ -340,10 +340,44 @@
           "date": "2026-11-12",
           "addedAt": "2026-11-13",
           "type": "deployment",
-          "summary": "SoundHound reports 598,000 American Heritage member conversations in 11 months and 88% of fraud/dispute chats resolved without a representative. These are vendor-reported service metrics, not independent validation or evidence of legal dispute resolution.",
+          "summary": "SoundHound reports 598,000 American Heritage member conversations in 11 months. It reports that 88% of fraud/dispute chats were resolved without a representative from July 2025 through May 2026. These are vendor-reported service metrics, not independent validation or evidence of legal dispute resolution.",
           "evidenceLevel": "vendor-claim",
           "sourceUrl": "https://investors.soundhound.com/node/11601/pdf",
           "relatedCoverage": "news/american-heritage-gigi-ai-member-conversations.html"
+        }
+      ]
+    },
+    {
+      "id": "glia",
+      "name": "Glia",
+      "category": "Business banking AI",
+      "capabilities": [
+        "business prospecting",
+        "business-record research",
+        "risk indicators"
+      ],
+      "functions": [
+        "lending-collections",
+        "operations"
+      ],
+      "technologies": [
+        "generative-ai",
+        "decisioning-underwriting"
+      ],
+      "sources": [
+        "https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity"
+      ],
+      "lastReviewed": "2026-11-13",
+      "addedAt": "2026-11-13",
+      "signals": [
+        {
+          "date": "2026-11-02",
+          "addedAt": "2026-11-13",
+          "type": "product-update",
+          "summary": "Glia announced general availability of Prospect Snapshot, which combines business records, contacts, financing indicators and screening information for business-banking prospect research. Product capabilities and efficiency benefits are vendor claims; no credit-union deployment or measured return is established here.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity",
+          "coverageStatus": "tracker-only-no-article"
         }
       ]
     }

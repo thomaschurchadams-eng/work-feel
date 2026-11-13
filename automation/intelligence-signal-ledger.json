@@ -66,6 +66,17 @@
       "decision": "tracker-only",
       "reason": "Primary source inspected for bounded historical catch-up; preserves source event date separately from present addition. Does not trigger an article or Alert cycle.",
       "recordPath": "automation/regulatory-watch.json"
+    },
+    {
+      "fingerprint": "glia-news|2026-11-02|https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity",
+      "detectedAt": "2026-11-13T18:04:39Z",
+      "sourceId": "glia-news",
+      "sourceUrl": "https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity",
+      "title": "Glia Prospect Snapshot general availability",
+      "eventDate": "2026-11-02",
+      "decision": "tracker-only",
+      "reason": "Primary vendor release verified during bounded catch-up. No related CUAI article exists or is required; vendor benefits remain claims. No article or Alert cycle triggered.",
+      "recordPath": "automation/vendor-registry.json"
     }
   ]
 }
