@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "gemini-4-carbon-credit-union-evaluation",
+      "articleUrl": "/news/gemini-4-carbon-credit-union-evaluation.html",
+      "imagePath": "/assets/gemini-4-carbon-credit-union-evaluation.jpg",
+      "publishedAt": "2026-11-13T07:36:42.064-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "macro-still-life",
+      "subject": "physical-metaphor",
+      "composition": "foreground-background-tension",
+      "perspective": "low-angle",
+      "palette": "navy-teal",
+      "lighting": "rim-light",
+      "texture": "frosted-glass",
+      "scene": "Acrylic plates lined up over a lab test circuit",
+      "conceptScore": 69.2,
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "physical-metaphor",
+          "scene": "Acrylic plates lined up over a lab test circuit",
+          "score": 69.2,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "abstract-data-system",
+          "scene": "Two lanes of test signals",
+          "score": 47.4,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "risk-and-security",
+          "scene": "A bench with two test machines",
+          "score": 46.5,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest scoring valid concept; original generated editorial illustration inspected for the actual article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "527eb1df304674d3fcdb64cfd2662829d8f0e190d5aa82a5791234024288f3fa"
+    },
+    {
       "id": "ascend-lge-credit-union-merger-approvals-systems",
       "articleUrl": "/news/ascend-lge-credit-union-merger-approvals-systems.html",
       "imagePath": "/assets/ascend-lge-credit-union-merger-approvals-systems.jpg",
