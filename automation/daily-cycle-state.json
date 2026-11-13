@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-13",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -113,10 +113,19 @@
         "promotionPriority": "Standard",
         "primaryFunctionalAudience": "Credit union boards, strategy and member operations leaders",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
+        "title": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
+        "classification": "news",
+        "promotionPriority": "Standard",
+        "primaryFunctionalAudience": "IT, cybersecurity and AI procurement leaders",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:55:25.709Z",
+    "updatedAt": "2026-11-13T12:56:14.292Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
@@ -260,13 +269,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-13",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
         "candidateTitle": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:15:00-05:00",
-        "nextAction": "Merge only the exact reviewed head after a refreshed canonical check.",
+        "nextAction": "Live verified; do not republish.",
         "evidence": {
           "pending": {
             "prNumber": 337,
@@ -319,8 +328,12 @@
             "visualReviewedAt": "2026-11-13T12:55:25.709Z",
             "artifactId": 14037659815,
             "artifactDigest": "sha256:62e8c3ee53fe1fb7b808137e2d34bf303a5562342c16a4797fed7a38ccd1f3f8"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_2VEAoddukNVTqu95b8Nbpsniz1Vp"
+        },
+        "productionCommit": "f5191bce4992420041710ebe8d4711719310ea65",
+        "verifiedAt": "2026-11-13T12:56:14.292Z",
+        "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
       }
     ],
     "socialDistribution": {
