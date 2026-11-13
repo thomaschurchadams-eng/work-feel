@@ -2,6 +2,7 @@ const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
 const { readInventory } = require('../lib/buffer-inventory.cjs');
+const { emitPrivateLog, stripDiagnostics } = require('../lib/buffer-diagnostics.cjs');
 const { distribution } = require('../automation/media-policy.json');
 
 const BUFFER_API_URL = 'https://api.buffer.com';
@@ -282,10 +283,14 @@ module.exports = async function handler(req, res) {
         };
       });
 
-    const reservationInventory = await readInventory(
+    const privateInventory = await readInventory(
       (query, variables, signal) => bufferRequest(apiKey, query, variables, signal),
-      { organizationId: organization.id, channel, commitSha: deploymentCommit }
+      { organizationId: organization.id, channel, commitSha: deploymentCommit },
+      Date.now,
+      { diagnostics: true }
     );
+    emitPrivateLog(privateInventory);
+    const reservationInventory = stripDiagnostics(privateInventory);
     const now = new Date();
     return res.status(200).json({
       ok: true,

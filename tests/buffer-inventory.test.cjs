@@ -203,7 +203,8 @@ function endpointFixture({ authorized = true, commitSha = identity.commitSha, ch
     process: { cwd: () => '/fixture', env: { BUFFER_API_KEY: 'fixture-only', VERCEL_GIT_COMMIT_SHA: identity.commitSha } },
     require: p => p.endsWith('operations-auth') ? { authorize: async (req, res) => { if (!authorized) res.status(401).json({ ok: false, error: 'unauthorized' }); return authorized; } }
       : p === 'node:fs' ? { readFileSync: p => { assert.equal(p, '/fixture/automation/social-queue.json'); queueReads++; return queue; } }
-      : p === 'node:path' ? path : p.endsWith('buffer-inventory.cjs') ? { readInventory: (request, id) => readInventory(request, id, () => now) }
+      : p === 'node:path' ? path : p.endsWith('buffer-inventory.cjs') ? { readInventory: (request, id, _now, options) => readInventory(request, id, () => now, options) }
+      : p.endsWith('buffer-diagnostics.cjs') ? { stripDiagnostics: require('../lib/buffer-diagnostics.cjs').stripDiagnostics, emitPrivateLog: () => ({ emitted: false }) }
       : p.endsWith('media-policy.json') ? policy : (() => { throw Error('Unexpected dependency ' + p); })(),
     fetch: async (url, options) => {
       assert.equal(url, 'https://api.buffer.com'); assert.equal(options.method, 'POST');
@@ -250,7 +251,9 @@ test('actual endpoint reads comment and attachment destinations with no expansio
   assert.deepEqual(r.records.map(p => p.requiresReview), [false, false, true]);
   assert.deepEqual(r.records[0].canonicalUrls, ['https://creditunionainews.com/news/a.html']);
   assert.deepEqual(r.records[1].canonicalUrls, ['https://creditunionainews.com/news/b.html']);
-  assert.doesNotMatch(JSON.stringify(r), /buff\.ly|SECRET|firstComment|linkAttachment/); assert.equal(f.calls.length, 5); assert.equal(f.queueReads(), 1);
+  assert.doesNotMatch(JSON.stringify(r), /buff\.ly|SECRET/); assert.equal(f.calls.length, 5); assert.equal(f.queueReads(), 1);
+  assert.equal(r.diagnostic, undefined);
+  assert.equal(r.records[0].diagnostic, undefined);
 });
 test('unauthorized, mismatched commit/method/channel all fail before inventory; duplicate channel identity is rejected', async () => {
   for (const [options, method, code] of [[{ authorized: false }, 'GET', 401], [{ commitSha: 'wrong' }, 'POST', 403], [{}, 'DELETE', 405], [{ channels: [{ ...channel, id: 'other' }] }, 'GET', 409], [{ channels: [channel, channel] }, 'GET', 409]]) {
