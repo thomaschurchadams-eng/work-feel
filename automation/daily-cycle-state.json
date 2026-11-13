@@ -116,7 +116,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:46:58.550Z",
+    "updatedAt": "2026-11-13T12:55:25.709Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
@@ -260,13 +260,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-13",
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
         "candidateTitle": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:15:00-05:00",
-        "nextAction": "Await exact corrected-head CI and review the real desktop and mobile outputs.",
+        "nextAction": "Merge only the exact reviewed head after a refreshed canonical check.",
         "evidence": {
           "pending": {
             "prNumber": 337,
@@ -300,7 +300,26 @@
               "status": "superseded",
               "reason": "First rendered run passed; explicit local News-package gate then caught a description above 160 characters. Corrected shorter metadata requires new exact-head artifact."
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
+            "run": 43428064545,
+            "job": 131894321183,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-13T12:54:50.671Z"
+          },
+          "terminalAcceptance": {
+            "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
+            "run": 43428064545,
+            "job": 131894321183,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-13T12:55:25.709Z",
+            "artifactId": 14037659815,
+            "artifactDigest": "sha256:62e8c3ee53fe1fb7b808137e2d34bf303a5562342c16a4797fed7a38ccd1f3f8"
+          }
         }
       }
     ],
