@@ -5262,6 +5262,46 @@
       ],
       "summary": "Consumed the independent November 13 publisher 5/5 outcome and PR341 Buffer recovery hold without reopening either. The 109-article portfolio remains concentrated in functional-leader operations/risk/member-service coverage; next selection should favor an executive, HR/training or marketing-growth angle when evidence clears the normal gate. No new Alert qualified: the November 10 Microsoft Outlook exploited-vulnerability notice could not be proven inside the exact 72-hour source window, and newer official surfaces exposed no distinct urgent CU action. The three November 12 Alerts remain fresh, so no homepage watch/fallback write was needed. Friday audience learning is evidence-backed inconclusive: finalized Search Console reported 8 clicks and 1,111 impressions for November 6-12, but the aggregate cannot isolate PR279 or support an equal-age keep/revise/stop claim; GA4 reads were quota-exhausted and Buffer destination review remains blocked. Current main 1347b1e9db3efa6e36577f8a0361d6cc41382e65 is Production READY as dpl_B7xAa2uqtKYtZzFy2iNdZkEAFbL8 with zero runtime errors in 24 hours. Week output was 15 articles and 4 Alerts; Friday's prospective five-article target was met, while the transition week is partially met because Monday retained one evidence-based hold and the 25-article target was not active for a full week. Monday's five distribution opportunities were carried forward with no external action.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-13T17:26:03-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The post-operating reliability check reconciled the released PR341 Buffer inventory repair and the newer PR347 private diagnostic categories against current main and the latest natural provider receipt.",
+      "status": "blocked",
+      "workUnits": {
+        "currentMainCommitsReviewed": 5,
+        "scheduledPublisherOutcomesReviewed": 1,
+        "scheduledOperatingOutcomesReviewed": 1,
+        "publicationHistoryEntriesPreserved": 83,
+        "liveArticleChecks": 5,
+        "alertArchiveChecks": 1,
+        "productionDeploymentChecks": 1,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "socialQueueItemsPreserved": 55,
+        "staleNonterminalSocialRecordsObserved": 2,
+        "providerSentRecordsReconciledFromReceipt": 78,
+        "providerRecordsWithCanonicalDestinations": 13,
+        "providerRecordsMissingCanonicalDestinations": 65,
+        "providerRecordsRequiringReview": 78,
+        "futureProviderReservationsObserved": 0,
+        "exactHeadDiagnosticValidationRunsObserved": 1,
+        "forcedWorkflowDispatches": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "unreleasedCheckpointAdaptersActivated": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "summary": "Current main c9dcb130d7c3dbc1bbc4f74d69ab649a33a6777c is Production READY and all five November 13 articles plus the Alerts archive return HTTP 200; all 83 publication-history entries and the 55-item social queue remain intact, and Vercel reports no runtime errors in 24 hours. The scheduled Operating System correctly published no Alert because none cleared the 72-hour gate. The released PR341 inventory repair recovered a complete 78-record sent inventory with no future provider reservations, but only 13 records expose canonical destinations, 65 do not, and all 78 remain review-held. PR347's fixed private rejection categories passed exact-head workflow 43500413020 and are released, but no natural post-release provider receipt has yet exposed the exact reason/provenance needed to clear residual holds. One stale scheduled queue row is known only through the aggregate receipt to have been sent; exact sentAt/externalLink evidence is not exposed, and the separate planned row has no provider submission. Reliability therefore did not force a workflow, infer missing sent-state fields, change queue status, reserve/post, or retry a provider write. Next safe recovery is the next existing authorized natural publisher/repair read using the released diagnostics; PR260 remains inactive.",
+      "usageAttribution": "operational-proxy",
+      "incidentKey": "cuai-buffer-destination-recovery-pr341"
     }
   ]
 }
