@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-13",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -137,10 +137,19 @@
         "promotionPriority": "Standard",
         "primaryFunctionalAudience": "IT, cybersecurity and AI procurement leaders",
         "socialDecision": "prepared-not-reserved-provider-review"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+        "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
+        "classification": "Insights",
+        "promotionPriority": "Library",
+        "primaryFunctionalAudience": "Deposit operations, frontline service and compliance leaders",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T13:06:37.180Z",
+    "updatedAt": "2026-11-13T13:08:07.754Z",
     "socialDecision": "prepared-not-reserved-provider-review",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
@@ -353,13 +362,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-13",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
         "candidateTitle": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-13T08:25:00-05:00",
-        "nextAction": "Merge only the exact reviewed head after a refreshed canonical check.",
+        "nextAction": "Live verified; do not republish.",
         "evidence": {
           "pending": {
             "prNumber": 338,
@@ -389,8 +398,12 @@
             "visualReviewedAt": "2026-11-13T13:06:37.180Z",
             "artifactId": 14040101216,
             "artifactDigest": "sha256:ffe60e6f16f64f07d19ed1808892117f9781efed926112f73e6dce0dcfe95dfa"
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_22vUtnLLUaeBEmQfKuQ8J7EZxyEo"
+        },
+        "productionCommit": "cc7e40259c03daa35a9752c7335f5bf11c206a54",
+        "verifiedAt": "2026-11-13T13:08:07.754Z",
+        "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
       }
     ],
     "socialDistribution": {
