@@ -109,6 +109,20 @@
         "threshold": 62,
         "status": "selected",
         "rationale": "Current NCUA guidance confirms December 1 effective date. Durable, distinct records-and-member-support framework; no novelty or guaranteed individual coverage inferred."
+      },
+      {
+        "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
+        "classification": "Insights — Library",
+        "sourceUrl": "https://ncua.gov/newsroom/press-release/2023/agencies-update-guidance-liquidity-risks-and-contingency-planning/addendum-interagency-policy-statement",
+        "supportingSourceUrls": [
+          "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/subpart-A/section-741.12",
+          "https://www.federalreserve.gov/monetarypolicy/discount-window-readiness.htm"
+        ],
+        "sourceDate": "2023-07-28",
+        "score": 64.3,
+        "threshold": 62,
+        "status": "selected",
+        "rationale": "Durable operating drill for borrow authorization, collateral movement and settlement evidence; related earlier coverage concerns AI forecasting rather than draw readiness."
       }
     ],
     "publications": [
@@ -149,9 +163,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T13:08:07.754Z",
+    "updatedAt": "2026-11-13T13:08:27.617Z",
     "socialDecision": "prepared-not-reserved-provider-review",
-    "outcomeSlot": 4,
+    "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -404,6 +418,17 @@
         "productionCommit": "cc7e40259c03daa35a9752c7335f5bf11c206a54",
         "verifiedAt": "2026-11-13T13:08:07.754Z",
         "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
+      },
+      {
+        "slot": 5,
+        "plannedDate": "2026-11-13",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
+        "candidateTitle": "Can Your Credit Union Draw on Its Emergency Funding Line?",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-13T08:35:00-05:00",
+        "nextAction": "Build the qualified evidence-linked Insight, then run the exact article checks."
       }
     ],
     "socialDistribution": {
