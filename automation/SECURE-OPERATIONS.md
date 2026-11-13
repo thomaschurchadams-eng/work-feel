@@ -39,6 +39,22 @@ the existing owner's review even when the same post also has a recognized CUAI
 URL. Dropping an unresolved URL from the receipt does not clear that review
 requirement. No arbitrary link expansion is performed.
 
+Destination evidence includes body text and the documented LinkedIn metadata
+fields `firstComment` and `linkAttachment { url expandedUrl }`. A valid CUAI
+`expandedUrl` can resolve only its paired attachment URL. It never clears a
+separate unresolved body/comment link, even an identical shortened string.
+Different recognized destinations in the same attachment pair remain under
+review; retain both canonical candidates rather than choosing one. Null metadata
+is a valid absence. Missing, malformed or unexpected metadata remains a review
+requirement, while pagination completeness still describes record enumeration.
+`externalLink` is the social-post permalink, not an article destination, and is
+not queried for this purpose. Only validated CUAI canonical paths leave memory;
+comments, attachment data, foreign URLs and queries/fragments are not retained.
+This normalization does not verify a destination is live or authorize a post.
+Provider fields may be absent on historical posts: fixture results do not prove
+recovery of the 78 destinations reported missing in the November 11 receipt.
+Inspect the next authorized live receipt before claiming that outcome.
+
 Before reserving any article, media or house slot, the sole publisher must read
 this field from a current authorized response, verify `complete: true`, resolve
 `requiresReview`, and check its `startedAt`/`observedAt`, exact deployment commit
@@ -65,3 +81,8 @@ Schema references checked November 11, 2026:
 [Buffer pagination](https://developers.buffer.com/guides/pagination.html),
 [posts query and status schema](https://developers.buffer.com/reference.html),
 [stable creation-date sorting](https://developers.buffer.com/types/PostSortableKey.html).
+
+Destination schema independently checked November 12, 2026:
+[LinkedIn post metadata](https://developers.buffer.com/types/LinkedInPostMetadata.html),
+[paired attachment fields](https://developers.buffer.com/types/LinkAttachment.html),
+and [Post metadata union / externalLink meaning](https://developers.buffer.com/reference.html).
