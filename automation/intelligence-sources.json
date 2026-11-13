@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19",
+  "updatedAt": "2026-11-13",
   "policy": {
     "defaultLookbackHours": 72,
     "maxLookbackDays": 7,
@@ -15,7 +15,7 @@
       "name": "NCUA AI Resources",
       "owner": "NCUA",
       "type": "regulator",
-      "url": "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/credit-union-artificial-intelligence-ai-resources",
+      "url": "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/artificial-intelligence-ai",
       "priority": "high",
       "cadence": "daily",
       "functions": [
@@ -277,6 +277,74 @@
       ],
       "technologies": [
         "governance-risk"
+      ]
+    },
+    {
+      "id": "creatio-news",
+      "name": "Creatio announcements",
+      "owner": "Creatio",
+      "type": "vendor",
+      "url": "https://www.creatio.com/company/news",
+      "priority": "medium",
+      "cadence": "weekly",
+      "functions": [
+        "operations",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "agents-automation",
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "soundhound-news",
+      "name": "SoundHound investor news",
+      "owner": "SoundHound AI",
+      "type": "vendor",
+      "url": "https://investors.soundhound.com/news-releases/",
+      "priority": "medium",
+      "cadence": "weekly",
+      "functions": [
+        "operations",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "agents-automation",
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "fsb-publications",
+      "name": "FSB publications",
+      "owner": "Financial Stability Board",
+      "type": "regulator",
+      "url": "https://www.fsb.org/publications/",
+      "priority": "medium",
+      "cadence": "weekly",
+      "functions": [
+        "operations",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "agents-automation",
+        "governance-risk"
+      ]
+    },
+    {
+      "id": "glia-news",
+      "name": "Glia newsroom",
+      "owner": "Glia",
+      "type": "vendor",
+      "url": "https://www.glia.com/news",
+      "priority": "medium",
+      "cadence": "weekly",
+      "functions": [
+        "lending-collections",
+        "operations"
+      ],
+      "technologies": [
+        "generative-ai",
+        "decisioning-underwriting"
       ]
     }
   ]

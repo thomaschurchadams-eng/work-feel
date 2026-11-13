@@ -1,14 +1,15 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20",
+  "updatedAt": "2026-11-13",
   "lastSuccessfulRun": "2026-07-20T06:08:00-04:00",
-  "lastAttemptedRun": "2026-07-20T06:08:00-04:00",
+  "lastAttemptedRun": "2026-11-13T17:54:45.283Z",
   "sourceState": {
     "ncua-ai-resources": {
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-11-13T17:54:45.283Z",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "ok"
+      "status": "ok",
+      "reviewNote": "Current canonical resource inspected. Source publication date not established; no new rule inferred."
     },
     "ncua-newsroom": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
@@ -99,6 +100,34 @@
       "lastChanged": null,
       "lastFingerprint": null,
       "status": "ok"
+    },
+    "creatio-news": {
+      "lastChecked": "2026-11-13T17:54:45.283Z",
+      "lastChanged": "2026-07-30",
+      "lastFingerprint": "creatio-news|2026-07-30|https://www.creatio.com/company/news/24941",
+      "status": "ok",
+      "reviewNote": "Specific ledger event verified; discovery listing identified for future bounded intake. Full listing/history not reviewed."
+    },
+    "soundhound-news": {
+      "lastChecked": "2026-11-13T17:54:45.283Z",
+      "lastChanged": "2026-11-12",
+      "lastFingerprint": "soundhound-news|2026-11-12|https://investors.soundhound.com/node/11601/pdf",
+      "status": "ok",
+      "reviewNote": "Specific ledger event verified; discovery listing identified for future bounded intake. Full listing/history not reviewed."
+    },
+    "fsb-publications": {
+      "lastChecked": "2026-11-13T17:54:45.283Z",
+      "lastChanged": "2026-08-31",
+      "lastFingerprint": "fsb-publications|2026-08-31|https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
+      "status": "ok",
+      "reviewNote": "Specific ledger event verified; discovery listing identified for future bounded intake. Full listing/history not reviewed."
+    },
+    "glia-news": {
+      "lastChecked": "2026-11-13T18:04:39Z",
+      "lastChanged": "2026-11-02",
+      "lastFingerprint": "glia-news|2026-11-02|https://www.glia.com/news/glia-launches-prospect-snapshot-to-help-community-banks-and-credit-unions-find-their-next-business-opportunity",
+      "status": "ok",
+      "reviewNote": "November 2 release verified; discovery listing identified. Not a complete historical scan."
     }
   },
   "metrics": {
@@ -111,5 +140,25 @@
     "articlesPublished": 0,
     "duplicatesRejected": 0,
     "weakSignalsRejected": 2
+  },
+  "latestAttempt": {
+    "status": "partial-prepared-not-live-verified",
+    "scope": "Primary-source catch-up: Creatio, SoundHound, FSB, NCUA resource and Glia Prospect Snapshot. All other source timestamps retained.",
+    "checkedSources": 5,
+    "releaseStatus": "pending-exact-head-validation-and-authorized-release",
+    "recurringExecutor": "No dedicated active executor found in coordinator inventory; activation and next-run proof remain open.",
+    "remainingCatchUp": "Continue bounded review of missed July 20–November 13 developments. Glia November 2 added tracker-only; no article fabricated. FSB October 15 responsible-AI publication discovered in listing but not yet inspected; not an accepted watch.",
+    "catchUpCursor": {
+      "since": "2026-07-20",
+      "through": "2026-11-13",
+      "complete": false,
+      "reviewedEvents": [
+        "creatio|2026-07-30",
+        "soundhound|2026-11-12",
+        "fsb|2026-08-31",
+        "ncua-resource|review-2026-11-13",
+        "glia|2026-11-02"
+      ]
+    }
   }
 }

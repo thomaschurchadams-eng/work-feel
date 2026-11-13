@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updatedAt": "2026-07-19",
+  "version": 2,
+  "updatedAt": "2026-11-13",
   "recordTypes": {
     "vendor": {
       "required": [
@@ -19,8 +19,7 @@
         "type",
         "summary",
         "evidenceLevel",
-        "sourceUrl",
-        "relatedCoverage"
+        "sourceUrl"
       ],
       "allowedSignalTypes": [
         "product-update",
@@ -55,8 +54,7 @@
         "title",
         "summary",
         "status",
-        "sourceUrl",
-        "relatedCoverage"
+        "sourceUrl"
       ],
       "allowedTypes": [
         "guidance",
@@ -89,5 +87,6 @@
     "Never invent pricing, deployments, quotes, integrations or regulatory expectations.",
     "Preserve source URLs and an audit trail when records change.",
     "Do not assign a numeric ranking until the methodology and sample are publishable."
-  ]
+  ],
+  "coveragePolicy": "relatedCoverage is optional. When present it must reference an existing local HTML coverage file; when absent coverageStatus must be tracker-only-no-article. A primary source is always required. Never create an article to satisfy a tracker record."
 }

@@ -190,5 +190,9 @@ test('day-only evidence labels a known date but never invents an exact posting t
 
 test('vendor evidence date is identified as the signal date, not CUAI publication', () => {
   const html = fs.readFileSync(path.join(__dirname, '../intelligence/vendors.html'), 'utf8');
-  assert.match(html, /Vendor claim · Signal date: <time datetime="2026-07-17">July 17, 2026<\/time>/);
+  const fis = html.match(/<article[^>]*data-record-id="fis"[\s\S]*?<\/article>/)?.[0];
+  assert.ok(fis);
+  assert.match(fis, /vendor claim/);
+  assert.match(fis, /Recorded date \(not necessarily source publication\): <time datetime="2026-07-17">2026-07-17<\/time>/);
+  assert.match(fis, /Record last reviewed:/);
 });

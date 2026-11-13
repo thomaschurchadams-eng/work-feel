@@ -76,12 +76,17 @@ async function serve() {
         const search = route.includes('/intelligence/vendors') ? '#vendor-search' : route.includes('/intelligence/regulatory-watch') ? '#reg-search' : null;
         if (search) {
           const before = await page.locator('.intelligence-record:visible').count();
+          const kind = search === '#vendor-search' ? 'vendor' : 'reg';
+          await page.locator(search).fill(kind === 'vendor' ? 'Glia' : 'National Credit Union Administration');
+          const matched = await page.locator('.intelligence-record:visible').count();
+          searchPassed = matched > 0 && matched < before;
           await page.locator(search).fill('zzzz-cuai-design-no-match');
-          searchPassed = await page.locator('.intelligence-record:visible').count() === 0;
+          searchPassed = searchPassed && await page.locator('.intelligence-record:visible').count() === 0;
           const empty = search === '#vendor-search' ? '#vendor-empty' : '#reg-empty';
           searchPassed = searchPassed && await page.locator(empty).isVisible();
-          await page.locator(search).fill('');
-          searchPassed = searchPassed && await page.locator('.intelligence-record:visible').count() === before;
+          await page.locator('#'+kind+'-reset').focus();
+          await page.keyboard.press('Enter');
+          searchPassed = searchPassed && await page.locator('.intelligence-record:visible').count() === before && await page.locator(search).inputValue() === '' && await page.locator(search).evaluate(el => el === document.activeElement);
         }
         let transcriptPassed = true;
         if (route.startsWith('/episodes/')) {
