@@ -29,10 +29,10 @@
         "reason": "Vendor attributes 11 months of observed service volume to Gigi; CU page confirms the service, not the metrics."
       },
       {
-        "title": "Ascend and LGE obtain merger approvals",
-        "sourceUrl": "https://www.ascend.org/",
-        "status": "held",
-        "reason": "Approvals substantive; compare with recent merger coverage and confirm canonical release before a later selection."
+        "title": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
+        "sourceUrl": "https://www.lgeccu.org/post/ascend_federal_credit_union_and_lge_community_credit_union_to_merge.html",
+        "status": "selected",
+        "reason": "Member and regulatory approvals verified by parties; January legal date and early-2028 system integration are separate."
       },
       {
         "title": "Financial Plus and Monroe announce merger intent",
@@ -108,9 +108,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-13T12:21:26.511Z",
+    "updatedAt": "2026-11-13T12:22:35.366Z",
     "socialDecision": "prepared-not-reserved-provider-review",
-    "outcomeSlot": 1,
+    "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -202,6 +202,17 @@
         "productionCommit": "e04ff004a4435da225d874f07bc7103450b46084",
         "verifiedAt": "2026-11-13T12:21:26.511Z",
         "liveProof": "Production alias READY on exact merge; article, artwork, News listing and homepage public response bytes equal to merge. Live article and Reporting filter verified; mobile and desktop exact-head artifact inspected."
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-13",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
+        "candidateTitle": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-13T08:00:00-05:00",
+        "nextAction": "Validate the atomic package and exact rendered artifact before release."
       }
     ],
     "socialDistribution": {
