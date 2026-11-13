@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T19:57:59.746458+00:00",
+  "updatedAt": "2026-11-13T20:17:30+00:00",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -430,11 +430,12 @@
         "Local preservation check passed: all prior operating-policy content remains unchanged outside the new section, and all 18 prior improvement entries are unchanged.",
         "Independent instruction review replayed November 2 evidence divergence, November 4 unreadable metrics and already-completed November 3 repairs; closure behavior passed. Review corrected rollback wording to retain this history. Exact-head repository CI and next ordinary-owner consumption are separate gates.",
         "November 10 ordinary OS review consumed exact current main f2260a0269b03c30029df993b17bf56647a5fa05 and policy blob b5dea31e9bbd8fd52246f52423fc70aa6f8b44ab. The local policy resolver passed. PR #279's four released surfaces returned HTTP 200 with the expected production measurement bootstrap; both scoped articles retained their reader questions and next-step modules.",
-        "The required seven-day PR #279 audience outcome check is evidence-backed inconclusive: three exact-current deployment metric reads returned 401 deployment_authentication_required, no verified-operations artifact exists for exact current main, and the last readable November 7 artifact includes a partial day and only roughly four post-release days. It cannot support matched comparable exposure ages or a keep/revise/stop audience claim."
+        "The required seven-day PR #279 audience outcome check is evidence-backed inconclusive: three exact-current deployment metric reads returned 401 deployment_authentication_required, no verified-operations artifact exists for exact current main, and the last readable November 7 artifact includes a partial day and only roughly four post-release days. It cannot support matched comparable exposure ages or a keep/revise/stop audience claim.",
+        "November 13 Friday review consumed fresh exact-current operational evidence rather than repeating the old access blocker: Search Console reported 8 clicks and 1,111 impressions for the finalized November 6-12 window; GA4 reads returned quota-exhaustion/server errors; the released Buffer inventory recovered authenticated read access but still requires destination review. The aggregate Search Console receipt cannot isolate PR #279 surfaces or provide equal-age matched outcomes."
       ],
-      "status": "adopted-assessment-open-evidence-blocked",
-      "result": "Ordinary owner adoption is now demonstrated: the November 9 and November 10 CUAI Operating System reviews consumed the configured loop, kept the assessment owner, separated current exact evidence from historical evidence, and did not restart PR #279 or PR #281. PR #279 remains released and technically live on all four scoped surfaces. Its seven-day audience outcome is inconclusive because exact-current comparable metrics are unavailable; this is not evidence that the repair succeeded or failed for readership. The broader audience assessment remains open under the same owner and dedupe/improvement key.",
-      "nextTrigger": "At the existing Friday November 13 ordinary review, reconcile implemented actions and early audience/engagement outcomes using a fresh authorized direct read or an exact-current-main verified artifact. Keep November 8–13 provisional, preserve internal-test/ingestion caveats, and return keep/revise/stop or another explicit evidence-backed inconclusive result without starting a new report, job or baseline.",
+      "status": "adopted-assessment-open-evidence-insufficient",
+      "result": "Ordinary-owner adoption remains demonstrated. Friday's fresh evidence narrows the blocker from total source access to decision sufficiency: Search Console aggregate data is available, but it cannot attribute or compare the PR #279 surfaces; GA4 is temporarily quota-exhausted, and unresolved Buffer destinations prevent reliable distribution attribution. The seven-day PR #279 audience outcome remains explicitly inconclusive—not success, failure, zero or unchanged. No repair, new report, provider retry or baseline was started.",
+      "nextTrigger": "At the next ordinary Friday review, use only fresh authorized direct evidence or an exact-current-main verified artifact with comparable page/event rows. Return keep/revise/stop only if the PR #279 surfaces and matched exposure ages are actually identifiable; otherwise retain the evidence-backed inconclusive disposition.",
       "rollback": "Revert only the six-step analytics-loop addition if it causes verified friction or conflicting instructions. Preserve this ledger entry and its history, recording a reverted/stopped disposition with reason and evidence; retain all pre-existing source, privacy, permission and editorial gates."
     },
     {
@@ -488,16 +489,18 @@
       "proposedChange": "Use the existing scheduled publisher and Operating System with current-main cadence and preserved same-day counts; retain exact source/rendered/live gates. Record actual approval or missing-runtime blockers in the existing checkpoint and incident.",
       "expectedBenefit": "Make the next observed daily result distinguish unattended completion from interactive assistance.",
       "risk": "low",
-      "status": "unverified",
+      "status": "partially-verified",
       "validation": [
         "Cadence PR327 released five ordinary weekday article slots, a six-total November 12 exception above the original article, and at most three qualified Alerts.",
         "Existing publisher is enabled for November 13 07:00 America/New_York; Operating System 15:00; Reliability Watch 08:00.",
         "No schedule/model/credential or permission change made. Exact model and reasoning selection are not exposed by the automation API.",
         "Existing November 12 07:00 scheduled one-article run completed with requires_user_action=false. This is a recorded task result, not an approval-event audit or proof of the expanded five-plus-three process.",
-        "ChatGPT application inspection was explicitly blocked by the platform; no alternative inspection route or permission weakening was attempted. The exact prompting action remains unavailable."
+        "ChatGPT application inspection was explicitly blocked by the platform; no alternative inspection route or permission weakening was attempted. The exact prompting action remains unavailable.",
+        "The independently scheduled November 13 publisher execution 4e161e99-ed50-832e-a4d6-28a9794f9965 completed all five article slots live, preserved all 83 historical records and passed the 65-transition chain. No user intervention was observed; no approval-event audit is exposed. Evidence: issue #160 comment 6854162084 and canonical state 0a62e36e275828cf8e3d45417a78fd77bb2691d1.",
+        "The existing November 13 Operating System cycle completed the Alert decision without manufacturing output: seven official source surfaces exposed no distinct candidate provably inside the exact 72-hour gate; the November 10 exploited Outlook notice was held because exact freshness could not be established. The three November 12 Alerts remained fresh, so no homepage mutation was required. This proves the scheduled no-qualifier decision path, not unattended Alert publication."
       ],
-      "result": "UNRESOLVED: the supervised cycle still required Tom to approve actions. GitHub/Vercel permissions are already automatic. Do not mark the standardized unattended process accepted until an independently scheduled full target cycle completes without user intervention, with actual receipt/runtime evidence. Authorized artifact transfer worked through Node while available, then through an ordinary in-app browser download after that runtime capability disappeared. No browser or security approval requirement was disabled.",
-      "nextTrigger": "November 13 existing scheduled publisher and Operating System outcomes; Watch reconciles exact owned blockers without duplicate publication.",
+      "result": "PARTIAL: independent scheduled article execution is verified at 5/5 with no observed user intervention and preserved history. The scheduled Operating System completed a gate-preserving no-Alert decision, but no independently scheduled live Alert publication occurred, and the platform still exposes no approval-event audit. Do not accept the full five-plus-three unattended path yet; no security, permission, schedule, model or editorial gate was changed.",
+      "nextTrigger": "The next existing scheduled Operating System cycle in which one or more Alerts genuinely qualify: require exact package, production/live and history-preservation receipts with no observed intervention. Do not manufacture an Alert or add a new task merely to test acceptance.",
       "rollback": "No new automation or permission change to undo."
     },
     {
