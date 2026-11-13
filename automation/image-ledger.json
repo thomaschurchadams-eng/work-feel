@@ -3,6 +3,63 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ascend-lge-credit-union-merger-approvals-systems",
+      "articleUrl": "/news/ascend-lge-credit-union-merger-approvals-systems.html",
+      "imagePath": "/assets/ascend-lge-credit-union-merger-approvals-systems.jpg",
+      "publishedAt": "2026-11-13T07:26:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "ink-and-linocut",
+      "subject": "architecture-and-infrastructure",
+      "composition": "split-comparison",
+      "perspective": "through-glass",
+      "palette": "monochrome-ink",
+      "lighting": "graphic-flat-light",
+      "texture": "ink-wash",
+      "scene": "Two different branch windows under a shared roof line, with separate entry paths",
+      "score": 69,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 96,
+        "editorialClarity": 94
+      },
+      "rejected": false,
+      "reasons": [],
+      "conceptScore": 69,
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "architecture-and-infrastructure",
+          "scene": "Two different branch windows under a shared roof line, with separate entry paths",
+          "score": 69,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "operations-environment",
+          "scene": "Two paper counters remain distinct beneath a common roof",
+          "score": 49,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "frontline-workflow",
+          "scene": "Separate branch vestibules in a neutral streetscape",
+          "score": 40.3,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest scoring valid concept; original generated editorial illustration inspected for the actual article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "628db2e8b2a89b1c38795616a4131a201f84bbab8ee54f96d3f0b1f15ff645eb"
+    },
+    {
       "id": "american-heritage-gigi-ai-member-conversations",
       "articleUrl": "/news/american-heritage-gigi-ai-member-conversations.html",
       "imagePath": "/assets/american-heritage-gigi-ai-member-conversations.jpg",
