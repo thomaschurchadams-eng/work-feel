@@ -88,5 +88,6 @@
     "Preserve source URLs and an audit trail when records change.",
     "Do not assign a numeric ranking until the methodology and sample are publishable."
   ],
-  "coveragePolicy": "relatedCoverage is optional. When present it must reference an existing local HTML coverage file; when absent coverageStatus must be tracker-only-no-article. A primary source is always required. Never create an article to satisfy a tracker record."
+  "coveragePolicy": "relatedCoverage is optional. When present it must reference an existing local HTML coverage file; when absent coverageStatus must be tracker-only-no-article. A primary source is always required. Never create an article to satisfy a tracker record.",
+  "publicSummaryPolicy": "publicSummary is optional reader-facing wording faithful to the existing summary, evidence level and sources. Keep the original summary and all date/provenance/history fields unchanged for a copy-only correction. It does not record a new source review."
 }

@@ -15,6 +15,11 @@ function coverage(signal,label){
  const resolved=path.resolve(value);
  if(!fs.existsSync(resolved)||!fs.statSync(resolved).isFile())fail(`${label} missing coverage ${value}`);
 }
+function readerCopy(signal,label,visible=false){
+ if(signal.publicSummary!==undefined && (typeof signal.publicSummary!=="string"||!signal.publicSummary.trim()))fail(`${label} invalid publicSummary`);
+ const text=signal.publicSummary??signal.summary;
+ if(visible && /tracker initialized|existing (?:newsroom )?(?:coverage|reporting|analysis) (?:tracks|of|on)/i.test(text))fail(`${label} public summary contains internal process narration`);
+}
 function date(value,label){const parsed=new Date(value);if(!iso.test(value)||!Number.isFinite(parsed.getTime())||parsed.toISOString().slice(0,10)!==value)fail(`${label} invalid date`)}
 const vendorIds=new Set();
 for(const v of vendors.vendors){
@@ -26,6 +31,7 @@ for(const v of vendors.vendors){
   for(const key of schema.recordTypes.vendor.signalRequired)if(!s[key])fail(`${v.id} signal missing ${key}`);
   if(!schema.recordTypes.vendor.allowedSignalTypes.includes(s.type))fail(`${v.id} invalid signal type`);
   if(!schema.recordTypes.vendor.allowedEvidenceLevels.includes(s.evidenceLevel))fail(`${v.id} invalid evidence level`);
+  readerCopy(s,v.id,s===v.signals[0]&&!v.promotionStatus?.startsWith("withheld"));
   date(s.date,`${v.id} signal`);url(s.sourceUrl,`${v.id} source`);coverage(s,v.id);
  }
 }
@@ -39,6 +45,7 @@ for(const r of regulatory.records){
   for(const key of schema.recordTypes.regulatory.developmentRequired)if(!d[key])fail(`${r.id} development missing ${key}`);
   if(!schema.recordTypes.regulatory.allowedTypes.includes(d.type))fail(`${r.id} invalid development type`);
   if(!schema.recordTypes.regulatory.allowedStatuses.includes(d.status))fail(`${r.id} invalid status`);
+  readerCopy(d,r.id,d===r.developments.at(-1));
   date(d.date,`${r.id} development`);url(d.sourceUrl,`${r.id} source`);coverage(d,r.id);
  }
 }
