@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20",
+  "updatedAt": "2026-11-13",
   "description": "Append-only fingerprints for verified intelligence signals. Prevents duplicate tracker updates and repetitive coverage.",
   "signals": [
     {
@@ -33,6 +33,39 @@
       "eventDate": "2026-07-17",
       "decision": "no-action",
       "reason": "Event recap mentions artificial intelligence but reports no specific policy, product, supervisory expectation or operating change; below the tracker threshold."
+    },
+    {
+      "fingerprint": "creatio-news|2026-07-30|https://www.creatio.com/company/news/24941",
+      "detectedAt": "2026-11-13T17:54:45.283Z",
+      "sourceId": "creatio-news",
+      "sourceUrl": "https://www.creatio.com/company/news/24941",
+      "title": "Arizona Financial selects Creatio",
+      "eventDate": "2026-07-30",
+      "decision": "tracker-only",
+      "reason": "Primary source inspected for bounded historical catch-up; preserves source event date separately from present addition. Does not trigger an article or Alert cycle.",
+      "recordPath": "automation/vendor-registry.json"
+    },
+    {
+      "fingerprint": "soundhound-news|2026-11-12|https://investors.soundhound.com/node/11601/pdf",
+      "detectedAt": "2026-11-13T17:54:45.283Z",
+      "sourceId": "soundhound-news",
+      "sourceUrl": "https://investors.soundhound.com/node/11601/pdf",
+      "title": "American Heritage Gigi service report",
+      "eventDate": "2026-11-12",
+      "decision": "tracker-only",
+      "reason": "Primary source inspected for bounded historical catch-up; preserves source event date separately from present addition. Does not trigger an article or Alert cycle.",
+      "recordPath": "automation/vendor-registry.json"
+    },
+    {
+      "fingerprint": "fsb-publications|2026-08-31|https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
+      "detectedAt": "2026-11-13T17:54:45.283Z",
+      "sourceId": "fsb-publications",
+      "sourceUrl": "https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
+      "title": "FSB frontier AI cyber-risk letter",
+      "eventDate": "2026-08-31",
+      "decision": "tracker-only",
+      "reason": "Primary source inspected for bounded historical catch-up; preserves source event date separately from present addition. Does not trigger an article or Alert cycle.",
+      "recordPath": "automation/regulatory-watch.json"
     }
   ]
 }

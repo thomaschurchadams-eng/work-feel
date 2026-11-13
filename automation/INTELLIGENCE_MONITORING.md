@@ -1,18 +1,20 @@
 # Intelligence monitoring
 
-The Alerts desk runs this monitoring layer during its existing scheduled checks. It does not create a separate automation.
+## Ownership and isolation
+Intelligence is a separately scoped maintenance run coordinated by Watney, not work inside the Daily Publisher or Alert cycle. This supersedes this file's former Alerts-desk assignment and follows `AUTONOMOUS_NEWSROOM.md`. Do not change article/Alert schedules, counts, selection, state, queues or publication paths. An Intelligence failure must not block either cycle.
 
-## Each run
+Use one accepted maintenance executor. Before starting, read issue #160 and current source/record state for equivalent active work. A task definition or this document is not proof that recurring execution is enabled. Record the verified task ID/cadence only after activation and a real run; until then describe upkeep as scoped maintenance, not automatic or continuous monitoring.
 
-1. Read `automation/intelligence-sources.json`, monitoring state and the append-only signal ledger.
-2. Check sources due for their cadence, prioritizing high-priority regulators, networks and credit-union technology providers.
-3. Compare the newest attributable item with the source's prior fingerprint.
-4. Normalize the owner, title, event date and canonical source URL; create a stable fingerprint.
-5. Reject duplicates, unverifiable dates, generic marketing and signals without a credible credit-union implication.
-6. Score accepted signals with `automation/intelligence-scoring.json`.
-7. Route to no action, tracker-only, Alert, News or durable Insight.
-8. Update vendor/regulatory records and public pages when evidence materially changes them.
-9. Append accepted and rejected fingerprints with the decision reason, then update monitoring state.
-10. Run `node scripts/validate-intelligence-monitoring.mjs` and `node scripts/validate-intelligence.mjs`.
+## Each bounded run
+1. Read the source registry, monitoring state, append-only signal ledger and vendor/regulatory registries. Read current main before writes and preserve concurrent changes.
+2. Review due sources using their last checked timestamps. Check high-priority regulatory sources and rotate vendors within a bounded batch. Retain uninspected and inaccessible source timestamps; missing coverage is unknown.
+3. Use existing CUAI coverage as discovery, then inspect the canonical primary source. Record what changed, source event/publication date, our discovery/addition date and actual review date separately. No publication date inferred from crawl time or tracker initialization.
+4. Deduplicate by entity, event and canonical source. Reject marketing-only or unverifiable claims; label vendor claims and distinguish proposals/resources/signals from binding rules. Retain NCR attribution holds until specific evidence resolves them.
+5. Add qualifying missing vendors and watches, not only changes to existing entries. Backfill missed developments incrementally since the last verified review. Keep a catch-up cursor and unresolved candidates in monitoring state; do not call a partial batch exhaustive or force a numeric quota.
+6. Update only Intelligence records, sources/state, signal ledger and corresponding public Intelligence pages. Relevant article/Alert ideas are inputs for their existing owners, never authority to run or reopen those cycles.
+7. Keep visible added/reviewed dates and source dates accurate. An overall page update must not imply every row was reverified. Do not promise automatic expansion unless actual scheduled execution is verified.
+8. Append fingerprints/decisions and scope/coverage evidence without rewriting history. Separate researched, patched, tested, released and live-verified states. Advance successful-run evidence only after actual successful maintenance; failed or partial checks retain explicit limits.
+9. Run `node scripts/validate-intelligence-monitoring.mjs` and `node scripts/validate-intelligence.mjs`, plus relevant repository release checks against the exact head. Inspect desktop/mobile rendering, search, empty/reset states, source links and accessibility.
+10. Use the existing authorized exact-head release owner/path. Verify production readiness and live pages before declaring completion. Post one material receipt in issue #160; keep ordinary unchanged reviews quiet.
 
-Never rewrite or delete signal-ledger history during routine publishing. Redact no evidence: store only public titles, dates, URLs, classifications and decision reasons—never reader data or credentials.
+Store only public evidence, classifications and decisions. No credentials, reader information, fabricated gains or altered publication history. A recurring executor gap remains open until an actual owner/task and next-run proof exist.

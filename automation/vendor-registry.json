@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20",
+  "updatedAt": "2026-11-13",
   "description": "Evidence-backed vendor change records supporting CreditUnionAI News coverage. Inclusion is not endorsement.",
   "vendors": [
     {
@@ -277,6 +277,73 @@
           "evidenceLevel": "reported",
           "sourceUrl": "https://pointpredictive.com/news/",
           "relatedCoverage": "news/velocity-ccu-point-predictive-autopass.html"
+        }
+      ]
+    },
+    {
+      "id": "creatio",
+      "name": "Creatio",
+      "category": "CRM and workflow automation",
+      "capabilities": [
+        "sales and service workflows",
+        "referral collaboration",
+        "agentic automation"
+      ],
+      "functions": [
+        "operations",
+        "member-service"
+      ],
+      "technologies": [
+        "agents-automation"
+      ],
+      "sources": [
+        "https://www.creatio.com/company/news/24941"
+      ],
+      "lastReviewed": "2026-11-13",
+      "addedAt": "2026-11-13",
+      "signals": [
+        {
+          "date": "2026-07-30",
+          "addedAt": "2026-11-13",
+          "type": "partnership",
+          "summary": "Creatio announced Arizona Financial Credit Union selected its platform for connected sales and service workflows. Agentic capabilities are planned as the implementation matures; no measured operating outcome is established by this announcement.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://www.creatio.com/company/news/24941",
+          "relatedCoverage": "news/arizona-financial-creatio-agentic-ai-workflows.html"
+        }
+      ]
+    },
+    {
+      "id": "soundhound-ai",
+      "name": "SoundHound AI",
+      "category": "Voice and conversational AI",
+      "capabilities": [
+        "member voice and chat service",
+        "human handoff",
+        "account-service automation"
+      ],
+      "functions": [
+        "member-service",
+        "operations"
+      ],
+      "technologies": [
+        "agents-automation",
+        "personalization-service"
+      ],
+      "sources": [
+        "https://investors.soundhound.com/node/11601/pdf"
+      ],
+      "lastReviewed": "2026-11-13",
+      "addedAt": "2026-11-13",
+      "signals": [
+        {
+          "date": "2026-11-12",
+          "addedAt": "2026-11-13",
+          "type": "deployment",
+          "summary": "SoundHound reports 598,000 American Heritage member conversations in 11 months and 88% of fraud/dispute chats resolved without a representative. These are vendor-reported service metrics, not independent validation or evidence of legal dispute resolution.",
+          "evidenceLevel": "vendor-claim",
+          "sourceUrl": "https://investors.soundhound.com/node/11601/pdf",
+          "relatedCoverage": "news/american-heritage-gigi-ai-member-conversations.html"
         }
       ]
     }

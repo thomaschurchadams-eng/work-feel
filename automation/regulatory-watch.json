@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19",
+  "updatedAt": "2026-11-13",
   "description": "Dated regulatory and supervisory signals relevant to credit-union AI. This is an editorial tracker, not legal advice.",
   "records": [
     {
@@ -16,7 +16,7 @@
         "governance-risk",
         "generative-ai"
       ],
-      "lastReviewed": "2026-07-19",
+      "lastReviewed": "2026-11-13",
       "developments": [
         {
           "date": "2026-07-19",
@@ -26,8 +26,20 @@
           "status": "active",
           "sourceUrl": "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/credit-union-artificial-intelligence-ai-resources",
           "relatedCoverage": "news/ncua-ai-resource-center.html"
+        },
+        {
+          "date": "2026-11-13",
+          "dateType": "review-date-not-publication",
+          "addedAt": "2026-11-13",
+          "type": "resource",
+          "title": "Current NCUA AI risk and vendor-due-diligence resource",
+          "summary": "The agency resource covers model risk, fair lending, member privacy, operational resilience and ongoing third-party monitoring. This is a resource review, not a newly issued rule; the source publication date was not established.",
+          "status": "active",
+          "sourceUrl": "https://ncua.gov/regulation-supervision/regulatory-compliance-resources/artificial-intelligence-ai",
+          "relatedCoverage": "news/bank-regulators-agentic-ai-shutdown-controls.html"
         }
-      ]
+      ],
+      "reviewNote": "2026-11-13: current agency resource inspected and canonical URL corrected; original initialization entry retained as history, not treated as an agency publication date."
     },
     {
       "id": "ncua-ai-risk",
@@ -102,6 +114,33 @@
           "status": "monitoring",
           "sourceUrl": "https://www.banking.senate.gov/hearings",
           "relatedCoverage": "news/senate-ai-hearing-credit-unions-2026.html"
+        }
+      ]
+    },
+    {
+      "id": "fsb-frontier-ai-cyber-risk",
+      "authority": "Financial Stability Board",
+      "jurisdiction": "International — financial-system policy signal; not a U.S. credit-union rule",
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "governance-risk",
+        "agents-automation"
+      ],
+      "lastReviewed": "2026-11-13",
+      "addedAt": "2026-11-13",
+      "developments": [
+        {
+          "date": "2026-08-31",
+          "addedAt": "2026-11-13",
+          "type": "supervisory-signal",
+          "title": "Frontier AI and financial-system cyber resilience",
+          "summary": "The FSB Chair’s G20 letter warns that frontier AI may change the speed, scale and economics of cyber risk and stresses resilience and responsible deployment. It does not create a new NCUA requirement.",
+          "status": "informational",
+          "sourceUrl": "https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
+          "relatedCoverage": "news/fsb-frontier-ai-cyber-risk-financial-system.html"
         }
       ]
     }
