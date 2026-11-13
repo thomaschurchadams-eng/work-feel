@@ -5193,6 +5193,45 @@
       ],
       "summary": "Reliability reconciled scheduled run 4e161e99-ed50-832e-a4d6-28a9794f9965 against current main 0a62e36e275828cf8e3d45417a78fd77bb2691d1. All five article slots are live-verified, production deployment dpl_7jPfe6E3CWdJajqZjdbymkGCQBfh is READY on that exact main and aliased to creditunionainews.com, eight public surfaces return HTTP 200 with matching listings, and no four-hour runtime errors were observed. Canonical state preserves 83 histories; the 55-item social queue has no duplicate IDs or active-date conflicts. The missing publisher activity record was reconstructed from the canonical state and issue #160 receipt. Durable prevention adds the reporting contract to the authoritative publisher policy so a material issue #160 handoff cannot substitute for the required usage-ledger entry. The existing unattended-acceptance incident remains unverified until the separate 15:00 Alert cycle records its outcome and intervention evidence.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-13T17:20:00.182Z",
+      "actor": "daily-publisher",
+      "runType": "recovery",
+      "trigger": "Tom-approved PR341 final acceptance and release routed to the current existing publisher; no new article or social cycle.",
+      "status": "degraded",
+      "incidentKey": "cuai-buffer-destination-recovery-pr341",
+      "workUnits": {
+        "pullRequestsReviewed": 1,
+        "sourceFilesChangedByRepair": 3,
+        "exactHeadValidationRunsObserved": 1,
+        "remoteSourceTestsObserved": 360,
+        "renderedChecksObserved": 46,
+        "actualArtifactScreenshotsReviewed": 4,
+        "artifactDownloadsVerified": 2,
+        "releaseMerges": 1,
+        "productionDeploymentsVerified": 1,
+        "providerInventoryReadsObserved": 1,
+        "providerRecordsReviewed": 78,
+        "providerRecordsWithCanonicalDestinations": 13,
+        "providerRecordsMissingCanonicalDestinations": 65,
+        "providerRecordsRequiringReview": 78,
+        "providerRecordsMatchedToQueue": 54,
+        "providerRecordsUnmatchedToQueue": 24,
+        "distributionAttempts": 0,
+        "providerWritesAttempted": 0,
+        "articlesPublished": 0,
+        "alertsPublished": 0,
+        "historyEntriesPreserved": 83
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer (natural trusted operations receipt)"
+      ],
+      "summary": "Accepted PR341 head e0af3dc7e4e9777f167dc7c762c497b053e364d5 after source review, actual run43463401387/job132016022300/attempt1, artifact14058286063 SHA256 7824378500823e2b0c901569e445f17961e464b0df27b5fc5b18169db9a73a86 revision/completion checks and independent 390/1440 screenshot/artwork-error inspection. Expected-head merge 138e3649f73b9a6980cd9bef4488714d230340d8 has reviewed tree9b61f87d2bbf48dfa4eb4b10373d89b79865c9a1 and parents bd449515c31f7d418ac72f67e2c56b554340e674/e0af3dc7e4e9777f167dc7c762c497b053e364d5. Production dpl_J122c1X6UmVGsiaSyic4m8dVDKRN READY with canonical alias. Natural push run43471352232/attempt1 verified production and 65 state transitions; zero distribution actions/reconciliations. Its separate GA4 quota exception made the run fail; Buffer returned HTTP200/ok=true and complete inventory at2026-11-13T17:18:25.410Z for exact release/channel6a53df0880cc80cdcaa76fb8, one page/78 sent records/no returned future reservations. Thirteen records now expose canonical URLs,65 still do not; all78 retain requiresReview, so no posting recovery or reservation clearance. Queue-ID reconciliation matches54 (including an old scheduled ledger item already sent by provider),leaves24 unmatched,and confirms one canonical URL match; those matches do not clear independent unknown links. Redacted receipt lacks per-record reason codes needed to distinguish missing metadata/unknown links/conflicts. Existing owner must obtain authorized private source evidence or a separately reviewed privacy-safe reason/provenance diagnostic before clearing residual holds; no arbitrary expansion, scheduler read or workflow dispatch. Queue blob293ec1179e85e4db23fb83c6bcc14cce8f8a7dd9 and completed Nov13 five-article cycle remain unchanged. Git checkout probe failed for missing configured username; no retry/access change. All release actions used existing authorized GitHub tools. No two-post cadence change, paused-media restart or new publisher.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
