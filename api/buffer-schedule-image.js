@@ -1,7 +1,8 @@
 const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
-const { validateSchedule, checkCapacity, mediaReady } = require('../lib/media-slots.cjs');
+const { validateSchedule, mediaReady } = require('../lib/media-slots.cjs');
+const { verifyReservation } = require('../lib/buffer-reservation-guard.cjs');
 const MEDIA_POLICY = require('../automation/media-policy.json');
 const { validateVideo, inspectPublicVideo, videoReceipt } = require('../lib/native-video.cjs');
 
@@ -10,9 +11,9 @@ const HOST = 'creditunionainews.com';
 const CHANNEL_NAME = 'creditunionai news';
 const TIME_ZONE = 'America/New_York';
 
-async function bufferRequest(apiKey, query, variables = {}) {
+async function bufferRequest(apiKey, query, variables = {}, signal) {
   const response = await fetch(BUFFER_API_URL, {
-    method: 'POST',
+    method: 'POST', signal,
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ query, variables })
   });
@@ -94,7 +95,7 @@ function meta(html, key, attribute = 'property') {
 }
 
 async function heroImage(item, articleUrl) {
-  const page = await fetch(articleUrl, { headers: { Accept: 'text/html' } });
+  const page = await fetch(articleUrl, { redirect: 'error', headers: { Accept: 'text/html' }, signal: AbortSignal.timeout(10000) });
   if (!page.ok) return { error: 'article_page_unavailable_for_image', status: page.status };
   const pageFinal = new URL(page.url || articleUrl);
   if (pageFinal.hostname !== HOST || pageFinal.protocol !== 'https:') return { error: 'article_page_redirect_not_allowed' };
@@ -113,6 +114,7 @@ async function heroImage(item, articleUrl) {
   if (!/^image\/(jpeg|png|webp)(;|$)/i.test(contentType)) return { error: 'hero_image_content_type_invalid', contentType };
   if ((await image.arrayBuffer()).byteLength === 0) return { error: 'hero_image_empty' };
   return {
+    articleHtml: html,
     url: url.toString(),
     contentType,
     altText: (item.imageAlt || meta(html, 'og:title') || 'CreditUnionAI News article illustration').slice(0, 300)
@@ -182,7 +184,10 @@ module.exports = async function handler(req, res) {
     // The shared queue is the sole slot ledger; reconcile provider receipts without
     // counting the current item twice. The provider also catches external posts.
     const queue = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'automation', 'social-queue.json'), 'utf8'));
-    const capacity = checkCapacity(loaded.schedule.date, queue.items || [], existing, loaded.item.postId || loaded.item.id);
+    const capacity = await verifyReservation({
+      request: (query, variables, signal) => bufferRequest(apiKey, query, variables, signal),
+      organizationId, channel, commitSha: process.env.VERCEL_GIT_COMMIT_SHA, item: loaded.item, queue: queue.items || [], articleHtml: media.articleHtml
+    });
     if (capacity.error) return res.status(409).json({ ok: false, error: capacity.error });
 
     mutationAttempted = true;
@@ -204,13 +209,13 @@ module.exports = async function handler(req, res) {
     } });
     const result = created.createPost;
     if (!result?.post && loaded.nativeVideo) return res.status(202).json({ ok: false, mediaType: 'video', status: 'blocked', channelId: MEDIA_POLICY.distribution.channelId, channelName: 'CreditUnionAI News', dueAt: loaded.schedule.dueAt, videoUrl: loaded.nativeVideo.url, videoAttached: false, nativeVideoReceiptState: 'failed', reconciliationRequired: true, error: 'buffer_video_creation_rejected' });
-    if (!result?.post) return res.status(502).json({ ok: false, error: 'buffer_schedule_creation_failed', message: result?.message });
+    if (!result?.post) return res.status(202).json({ ok: false, status: 'blocked', reconciliationRequired: true, error: 'buffer_creation_requires_reconciliation' });
     if (loaded.nativeVideo) {
       const receipt = videoReceipt(result.post, media, { duplicate: false, itemId: loaded.item.id, dueAt: loaded.schedule.dueAt, channelId: channel.id, channelName: channel.displayName || channel.name });
       return res.status(receipt.ok ? 201 : 202).json(receipt);
     }
     const images = imageAssets(result.post);
-    if (!images.length) return res.status(502).json({ ok: false, error: 'buffer_image_asset_missing', postId: result.post.id });
+    if (!images.length) return res.status(202).json({ ok: false, status: 'blocked', reconciliationRequired: true, error: 'buffer_image_asset_missing', postId: result.post.id });
     return res.status(201).json({
       ok: true, duplicate: false, itemId: loaded.item.id, postId: result.post.id,
       status: result.post.status, dueAt: result.post.dueAt || loaded.schedule.dueAt,
@@ -220,6 +225,7 @@ module.exports = async function handler(req, res) {
     });
   } catch (error) {
     if (loaded.nativeVideo && mutationAttempted) return res.status(202).json({ ok: false, mediaType: 'video', status: 'blocked', channelId: MEDIA_POLICY.distribution.channelId, channelName: 'CreditUnionAI News', dueAt: loaded.schedule.dueAt, videoUrl: loaded.nativeVideo.url, videoAttached: false, nativeVideoReceiptState: 'ambiguous', reconciliationRequired: true, error: 'buffer_video_creation_outcome_unknown' });
+    if (mutationAttempted) return res.status(202).json({ ok: false, status: 'blocked', reconciliationRequired: true, error: 'buffer_creation_outcome_unknown' });
     return res.status(error.status === 401 ? 401 : 502).json({
       ok: false,
       error: error.status === 401 ? 'buffer_authentication_failed' : 'buffer_api_error',

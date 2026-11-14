@@ -1,6 +1,8 @@
 const { authorize } = require('../lib/operations-auth');
 const fs = require('node:fs');
 const path = require('node:path');
+const { verifyReservation } = require('../lib/buffer-reservation-guard.cjs');
+const MEDIA_POLICY = require('../automation/media-policy.json');
 
 const BUFFER_API_URL = 'https://api.buffer.com';
 const ALLOWED_HOST = 'creditunionainews.com';
@@ -9,9 +11,9 @@ const TIME_ZONE = 'America/New_York';
 const MAX_ADVANCE_MS = 8 * 24 * 60 * 60 * 1000;
 const MIN_ADVANCE_MS = 5 * 60 * 1000;
 
-async function bufferRequest(apiKey, query, variables = {}) {
+async function bufferRequest(apiKey, query, variables = {}, signal) {
   const response = await fetch(BUFFER_API_URL, {
-    method: 'POST',
+    method: 'POST', signal,
     headers: {
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json'
@@ -152,7 +154,7 @@ module.exports = async function handler(req, res) {
     });
   }
   const { item, schedule, previewUrl } = loaded;
-
+  let mutationAttempted = false;
   try {
     const accountData = await bufferRequest(apiKey, `query BufferAccount {
       account { organizations { id name } }
@@ -178,6 +180,7 @@ module.exports = async function handler(req, res) {
         normalizedName(entry) === LINKEDIN_CHANNEL_NAME
     );
     if (!channel) return res.status(409).json({ ok: false, error: 'creditunionai_linkedin_channel_not_found' });
+    if (channel.id !== MEDIA_POLICY.distribution.channelId) return res.status(409).json({ ok: false, error: 'linkedin_channel_identity_mismatch' });
     if (channel.isQueuePaused) return res.status(409).json({ ok: false, error: 'linkedin_channel_queue_paused' });
 
     const existingData = await bufferRequest(apiKey, `query ExistingPosts($organizationId: OrganizationId!, $channelId: ChannelId!) {
@@ -192,6 +195,7 @@ module.exports = async function handler(req, res) {
     const existingPosts = (existingData?.posts?.edges || []).map((edge) => edge.node);
     const duplicate = existingPosts.find((post) => post.text === item.copy);
     if (duplicate) {
+      if (item.postId && item.postId !== duplicate.id) return res.status(409).json({ ok: false, error: 'duplicate_post_receipt_mismatch' });
       return res.status(200).json({
         ok: true,
         duplicate: true,
@@ -205,23 +209,17 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    const sameDayPost = existingPosts.find((post) => {
-      const timestamp = post.dueAt || post.sentAt;
-      if (!timestamp) return false;
-      const date = new Date(timestamp);
-      return !Number.isNaN(date.getTime()) && easternDateKey(date) === schedule.easternDate;
+    if (item.postId) return res.status(409).json({ ok: false, error: 'queue_item_existing_receipt_requires_reconciliation' });
+    const page = await fetch(item.articleUrl, { redirect: 'error', signal: AbortSignal.timeout(10000) });
+    if (!page.ok || !String(page.headers.get('content-type') || '').includes('text/html')) return res.status(422).json({ ok: false, error: 'article_page_unavailable' });
+    const queue = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'automation', 'social-queue.json'), 'utf8'));
+    const capacity = await verifyReservation({
+      request: (query, variables, signal) => bufferRequest(apiKey, query, variables, signal),
+      organizationId: organization.id, channel, commitSha: process.env.VERCEL_GIT_COMMIT_SHA, item, queue: queue.items || [], articleHtml: await page.text()
     });
-    if (sameDayPost) {
-      return res.status(409).json({
-        ok: false,
-        error: 'linkedin_daily_cap_conflict',
-        existingPostId: sameDayPost.id,
-        existingStatus: sameDayPost.status,
-        existingDueAt: sameDayPost.dueAt || null,
-        easternDate: schedule.easternDate
-      });
-    }
+    if (capacity.error) return res.status(409).json({ ok: false, error: capacity.error });
 
+    mutationAttempted = true;
     const createdData = await bufferRequest(apiKey, `mutation ScheduleLinkedInPost($input: CreatePostInput!) {
       createPost(input: $input) {
         ... on PostActionSuccess {
@@ -257,20 +255,12 @@ module.exports = async function handler(req, res) {
 
     const result = createdData?.createPost;
     if (!result?.post) {
-      return res.status(502).json({
-        ok: false,
-        error: 'buffer_schedule_creation_failed',
-        message: result?.message || 'Buffer did not return a scheduled post.'
-      });
+      return res.status(202).json({ ok: false, status: 'blocked', reconciliationRequired: true, error: 'buffer_creation_requires_reconciliation' });
     }
 
     const linkAttachment = result.post.metadata?.linkAttachment || null;
     if (!linkAttachment?.url) {
-      return res.status(502).json({
-        ok: false,
-        error: 'buffer_link_preview_missing',
-        message: 'Buffer scheduled the post without returning a LinkedIn link preview.'
-      });
+      return res.status(202).json({ ok: false, status: 'blocked', reconciliationRequired: true, postId: result.post.id, error: 'buffer_link_preview_missing' });
     }
 
     return res.status(201).json({
@@ -291,6 +281,7 @@ module.exports = async function handler(req, res) {
       }
     });
   } catch (error) {
+    if (mutationAttempted) return res.status(202).json({ ok: false, status: 'blocked', reconciliationRequired: true, error: 'buffer_creation_outcome_unknown' });
     return res.status(error.status === 401 ? 401 : 502).json({
       ok: false,
       error: error.status === 401 ? 'buffer_authentication_failed' : 'buffer_api_error',

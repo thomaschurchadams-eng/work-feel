@@ -70,7 +70,31 @@
       "status": "completed",
       "owner": "CUAI Operating System / Reliability Watch",
       "result": "Exact-match reconciliation is established and has been applied repeatedly without duplicate posts or scheduler calls.",
-      "rollback": "Revert only incorrect sent-state fields if exact evidence is later disproved."
+      "rollback": "Revert only incorrect sent-state fields if exact evidence is later disproved.",
+      "followUps": [
+        {
+          "date": "2026-11-14",
+          "scope": "Same authorized Buffer recovery, isolated from cadence; private exact-event exclusion",
+          "observedFailure": "Complete retained inventory has 78 unresolved historic sent records. A global review flag prevents a new story even when independent primary evidence places that exact underlying event after the latest historic send. Exact-empty expansion is not the independent foreign-host cause. Earlier Standard-only omissions and unavailable inventory are documented; a provider-wide outage is not established.",
+          "correction": "Bind one independently reviewed NY Fed Q3 results story to exact article/copy/event/parent, short expiry and unchanged 78-ID set/latest sent time. Preserve all flags, block any active/new/missing record. First reservation push only plus ambiguous-outcome hold prevents an automatic recovery retry after failed receipt persistence.",
+          "reviewFindingsFixed": [
+            "Malformed prior queue rows admitted by first predicate",
+            "Canonical UTM alias missed by raw comparison",
+            "Receipt immutability lacked eventId/contentKind/platform",
+            "Independent recovery-only review found renamed reservation plus stripped parent/event and percent-encoded path alias bypassed scope. Literal-path canonical validation now rejects encoded article paths; both actual endpoints test it with clean reader state."
+          ],
+          "validation": "Private recovery-only tests and independent review pending exact-version publisher acceptance; old mixed package and first review do not clear this candidate.",
+          "status": "private-reviewed-not-released",
+          "result": "No queue/provider send or release. Main posting rules, workflow and schedules retained exactly; American Heritage held; website and Alerts unchanged.",
+          "publisherRejectionCorrection": {
+            "finding": "Publisher reproduced that requiresReview=false skipped every exact-candidate proof check in the shared guard, including changed snapshot, new active record and expired proof with changed bytes. Earlier independent tests validated the validator in isolation and flagged-inventory integration but missed clean-reader integration.",
+            "fix": "Require proof whenever reservation ID, canonical URL, event or parent matches its scope, regardless of requiresReview. All other review-required inventory retains the existing hold.",
+            "regression": "Actual paginated reader and both actual scheduling handlers: clean-reader snapshot change, recognized active record, expired+changed body, expiry/body individually, renamed reservation and syndicated event; positive clean-proof control. Before fix14 bypass subcases reproduced; after fix all41 endpoint tests pass.",
+            "status": "private correction; publisher exact-version acceptance and release still required"
+          },
+          "publisherScopeCorrection": "Publisher rejected cadence bundling. Rebuilt on fresh8ab93f8 main, adding only exact proof metadata and recovery guards; separate cadence work preserved privately and excluded."
+        }
+      ]
     },
     {
       "id": "experiment-state-cross-ledger-sync-2026-08-20",
@@ -259,7 +283,7 @@
       "result": "Idea recorded only. No avatar or presenter asset created; no provider credits used, no schedule/executor change, no publication.",
       "rollback": "Not applicable: no production treatment or asset exists. Retain or close the research candidate after user review.",
       "referenceUrl": "https://www.youtube.com/watch?v=M07ioPdaLs0",
-      "referenceTitle": "ZeroZero — Noon ET Bulletin Oct5",
+      "referenceTitle": "ZeroZero \u2014 Noon ET Bulletin Oct5",
       "referenceLimitations": "The Made with AI disclosure does not prove the presenter is synthetic or identify a vendor. Actual hearing and lip-sync QA are unverified. No provider has been selected.",
       "providerResearch": {
         "checkedAt": "2026-10-05",
@@ -283,14 +307,14 @@
           "licensing": "Official stock/synthetic-avatar guidance allows organic website/social sharing, prohibits any paid promotion; custom-avatar permissions differ. No paid promotion, custom likeness or clone authorized.",
           "licensingSource": "https://help.synthesia.io/en/articles/6341928-synthesia-video-licensing"
         },
-        "possibleFutureTrial": "Research proposal only: private 10–15-second neutral technical insert using an appropriately licensed stock presenter, explicit AI-presenter label and editor accountability; assess fit against source graphics without claiming synthetic provenance for the reference. Provider terms, existing audio permissions, actual hearing/lip-sync and fresh account costs must be cleared first.",
+        "possibleFutureTrial": "Research proposal only: private 10\u201315-second neutral technical insert using an appropriately licensed stock presenter, explicit AI-presenter label and editor accountability; assess fit against source graphics without claiming synthetic provenance for the reference. Provider terms, existing audio permissions, actual hearing/lip-sync and fresh account costs must be cleared first.",
         "executionAuthorization": "none: no new account, clone, upload, generation, purchase, spend, publication or final presenter/intro selection"
       }
     },
     {
       "id": "broadcast-news-opener-reference-research-2026-10-05",
       "evidence": "Tom rejected the three cue concepts after receiving the corrected sound-only samples: these are not intro sounds. The intended brief is a polished news-style opening leading into the presenter. The isolated sound effects missed that brief; louder exports addressed level only and did not resolve the concept.",
-      "proposedChange": "Reference-first research by the existing parent research worker: find 2–3 professionally produced news-opener previews with verified licensing context, document each actual brand cue/build/resolution/voice handoff, then establish a suitable CUAI opening structure for hearing-capable review before proposing any new audio.",
+      "proposedChange": "Reference-first research by the existing parent research worker: find 2\u20133 professionally produced news-opener previews with verified licensing context, document each actual brand cue/build/resolution/voice handoff, then establish a suitable CUAI opening structure for hearing-capable review before proposing any new audio.",
       "expectedBenefit": "Hypothesis only: a professional news-opening structure may better fit the intended presenter format; no benefit, selection or approval is claimed.",
       "risk": "Reference licensing and production permission must be verified independently; previews are references, not licensed production assets. Actual hearing quality, voice handoff, accessibility, source fidelity and final-release acceptance remain unverified.",
       "validation": [
@@ -336,7 +360,7 @@
         "provenance": "Parent research worker findings; two preview links delivered to user. This recording agent has not played the previews or independently certified purchasing/licensing terms. Recheck exact licence, account, claims process and price before any authorized production use.",
         "references": [
           {
-            "name": "WarmWolf — Tech News Logo",
+            "name": "WarmWolf \u2014 Tech News Logo",
             "url": "https://audiojungle.net/item/tech-news-logo/62517237",
             "role": "modern opener audition candidate",
             "description": "Creator-described minimal modern electronic news logo, 9 seconds",
@@ -346,7 +370,7 @@
             "status": "reference-only-unpurchased-unlicensed-unheard"
           },
           {
-            "name": "David Fesliyan — The Team",
+            "name": "David Fesliyan \u2014 The Team",
             "url": "https://www.fesliyanstudios.com/royalty-free-music/download/the-team/370",
             "role": "traditional broadcast comparison",
             "description": "Creator-provided news-intro brass A/B versions",
@@ -356,7 +380,7 @@
             "status": "reference-only-unpurchased-unlicensed-unheard"
           },
           {
-            "name": "Kevin MacLeod — News Theme",
+            "name": "Kevin MacLeod \u2014 News Theme",
             "url": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100544",
             "role": "free attribution-based research alternative",
             "description": "Reported CC BY 4.0 commercial/edit use with creator credit, licence link and change indication",
@@ -365,7 +389,7 @@
             "status": "reference-only-unheard-no-production-use"
           }
         ],
-        "recommendation": "Audition the modern candidate first for composed build/title/resolution and ducking into voice. A 2–5-second CUAI treatment is only a proposal; user has not selected it and actual structure/timing cannot be certified without listening.",
+        "recommendation": "Audition the modern candidate first for composed build/title/resolution and ducking into voice. A 2\u20135-second CUAI treatment is only a proposal; user has not selected it and actual structure/timing cannot be certified without listening.",
         "executionRestriction": "Do not use paid previews in production. No purchase, asset download, new audio generation, provider credits, spending or intro selection authorized. Keep all previous cue concepts rejected."
       }
     },
@@ -434,7 +458,7 @@
         "November 13 Friday review consumed fresh exact-current operational evidence rather than repeating the old access blocker: Search Console reported 8 clicks and 1,111 impressions for the finalized November 6-12 window; GA4 reads returned quota-exhaustion/server errors; the released Buffer inventory recovered authenticated read access but still requires destination review. The aggregate Search Console receipt cannot isolate PR #279 surfaces or provide equal-age matched outcomes."
       ],
       "status": "adopted-assessment-open-evidence-insufficient",
-      "result": "Ordinary-owner adoption remains demonstrated. Friday's fresh evidence narrows the blocker from total source access to decision sufficiency: Search Console aggregate data is available, but it cannot attribute or compare the PR #279 surfaces; GA4 is temporarily quota-exhausted, and unresolved Buffer destinations prevent reliable distribution attribution. The seven-day PR #279 audience outcome remains explicitly inconclusive—not success, failure, zero or unchanged. No repair, new report, provider retry or baseline was started.",
+      "result": "Ordinary-owner adoption remains demonstrated. Friday's fresh evidence narrows the blocker from total source access to decision sufficiency: Search Console aggregate data is available, but it cannot attribute or compare the PR #279 surfaces; GA4 is temporarily quota-exhausted, and unresolved Buffer destinations prevent reliable distribution attribution. The seven-day PR #279 audience outcome remains explicitly inconclusive\u2014not success, failure, zero or unchanged. No repair, new report, provider retry or baseline was started.",
       "nextTrigger": "At the next ordinary Friday review, use only fresh authorized direct evidence or an exact-current-main verified artifact with comparable page/event rows. Return keep/revise/stop only if the PR #279 surfaces and matched exposure ages are actually identifiable; otherwise retain the evidence-backed inconclusive disposition.",
       "rollback": "Revert only the six-step analytics-loop addition if it causes verified friction or conflicting instructions. Preserve this ledger entry and its history, recording a reverted/stopped disposition with reason and evidence; retain all pre-existing source, privacy, permission and editorial gates."
     },
@@ -456,7 +480,7 @@
         "Read existing production deployment dpl_CY1jytSuXLQnC1FyVA3eGksRqjYm: target production, READY, exact introducing commit, creditunionainews.com alias and no alias error. Combined with issue160 comment6750832840, this supports the original posting instant; creation time, later edit time and source date are not substituted. Revalidation includes known-publication/older-source ordering, unknown/day-only history, future/invalid instants, timezone offsets, DST and exact72-hour/14-day boundaries.",
         "Actual rendering of4c493bd exposed two homepage contrast failures: nested .alert-date styling used gray on the dark active Alert. Scoped that descendant to the existing light metadata color and added fixed-clock active-homepage contrast checks, preventing the fallback state from hiding this defect. Prior failed evidence is retained; final exact-candidate results are separate.",
         "Release verification completed under the existing incident: PR #317 exact head 273c65af51e7b92143d3cc509dccc3ebe9fcb988 passed run 43062388319 with 235 source tests and 44 rendered checks; the reviewed artifact matched. It merged as 148162480210fb5fa226fea838eac41f0cedb8eb, production was READY, native live 390px/1440px and exact 72-hour/14-day boundary checks passed, and natural post-merge run 43063755133 completed without distribution or state side effects.",
-        "The November 11 ordinary CUAI Operating System review consumed the released behavior on real work. It used the verified November 9 CUAI publication instant—not the November 6 source date—to calculate the MEXC Alert at approximately 48 hours old, retained the fresh homepage Alert through its exact 72-hour expiry, and made no incorrect fallback/watch-item write."
+        "The November 11 ordinary CUAI Operating System review consumed the released behavior on real work. It used the verified November 9 CUAI publication instant\u2014not the November 6 source date\u2014to calculate the MEXC Alert at approximately 48 hours old, retained the fresh homepage Alert through its exact 72-hour expiry, and made no incorrect fallback/watch-item write."
       ],
       "status": "released-live-verified-kept",
       "result": "PR #317 is released and independently live-verified. The first subsequent ordinary operating review consumed the corrected publication clock and kept the MEXC Alert active while its verified CUAI publication instant remained within 72 hours, demonstrating workflow adoption without reopening the release. The source date remains separately labeled. Article header behavior and all prior Alert history remain intact. No audience, engagement or performance gain is inferred from technical and operating adoption.",
@@ -527,7 +551,7 @@
       "risk": "low",
       "validation": [
         "Independent local review of both pages at 320/390/1024/1440: all 15 eligible records, exact summaries/primary links/dates and held exclusion preserved; no axe violations or overflow; keyboard source links pass.",
-        "Actual before/after: 1440px cards widened from 295 to 600px; long NCUA/FSB titles reduced from three to two lines; date blocks reduced from 74–99px to one 22.4px line; source actions increased to 44px.",
+        "Actual before/after: 1440px cards widened from 295 to 600px; long NCUA/FSB titles reduced from three to two lines; date blocks reduced from 74\u201399px to one 22.4px line; source actions increased to 44px.",
         "Reviewed output digest 52ecb05720c08bdae3d40701283f5bbcac6bab93e4a4e789be7a1b4e63928969; exact-head full/remote, Preview and production acceptance remain required.",
         "Post-release independent recheck found eight residual seeded summaries (six vendors, NCUA and Senate) still describing tracker/newsroom mechanics. Prior exact-summary assertions and old-card review missed those phrases. Follow-through preserves original text/dates in records, supplies faithful publicSummary wording, and checks every displayed legacy card; exact-head release/live evidence remains in the same authorized task."
       ],

@@ -1,4 +1,6 @@
 const fs=require('node:fs');
+const {validateSchedule}=require('../lib/media-slots.cjs');
+const {firstRecoveryAttempt}=require('../lib/buffer-recovery-attempt.cjs');
 const { stripDiagnostics }=require('../lib/buffer-diagnostics.cjs');
 const MEDIA_POLICY=require('../automation/media-policy.json');
 const REPO='thomaschurchadams-eng/work-feel';
@@ -27,15 +29,16 @@ function receiptResponse(route,response){
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function github(path,options={}){const response=await fetch(API+path,{...options,headers:{...headers,...options.headers},signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error('github_'+response.status);return response.json();}
 async function identity(){const url=new URL(process.env.ACTIONS_ID_TOKEN_REQUEST_URL);url.searchParams.set('audience',SITE+'/operations');const response=await fetch(url,{headers:{Authorization:'Bearer '+process.env.ACTIONS_ID_TOKEN_REQUEST_TOKEN},signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error('identity_'+response.status);const data=await response.json();if(typeof data.value!=='string')throw Error('identity_missing');console.log('::add-mask::'+data.value);return data.value;}
-async function invoke(route,payload,nativeVideo=null){
+async function invoke(route,payload,reservation=null){
+ const nativeVideo=reservation?.mediaType==='video'?reservation:null;
  const token=await identity(); // An identity failure occurs before any distribution request.
- const unknown=(known={})=>({status:202,data:{ok:false,postId:typeof known.postId==='string'&&known.postId.length?known.postId:undefined,providerStatus:known.providerStatus,mediaType:'video',status:'blocked',channelId:MEDIA_POLICY.distribution.channelId,channelName:MEDIA_POLICY.distribution.channelName,dueAt:nativeVideo.scheduledFor,videoUrl:nativeVideo.videoUrl,videoAttached:false,nativeVideoReceiptState:'ambiguous',reconciliationRequired:true,error:'native_video_request_outcome_unknown'}});
+ const unknown=(known={})=>({status:202,data:!nativeVideo?{ok:false,postId:typeof known.postId==='string'?known.postId:undefined,status:'blocked',reconciliationRequired:true,error:'distribution_request_outcome_unknown'}:{ok:false,postId:typeof known.postId==='string'&&known.postId.length?known.postId:undefined,providerStatus:known.providerStatus,mediaType:'video',status:'blocked',channelId:MEDIA_POLICY.distribution.channelId,channelName:MEDIA_POLICY.distribution.channelName,dueAt:nativeVideo.scheduledFor,videoUrl:nativeVideo.videoUrl,videoAttached:false,nativeVideoReceiptState:'ambiguous',reconciliationRequired:true,error:'native_video_request_outcome_unknown'}});
  try{
   const response=await fetch(SITE+'/api/'+route,{method:'POST',redirect:'error',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({...payload,commitSha:operationCommit}),signal:AbortSignal.timeout(25000)});
   const data=await response.json();
-  if(nativeVideo&&(response.status>=500||([200,201].includes(response.status)&&!(data?.ok===true&&data.mediaType==='video'&&data.videoAttached===true&&typeof data.postId==='string'&&data.postId.length>0))))return unknown(data);
+  if(reservation&&(response.status>=500||([200,201].includes(response.status)&&!(data?.ok===true&&typeof data.postId==='string'&&data.postId.length>0&&(!nativeVideo||(data.mediaType==='video'&&data.videoAttached===true))))))return unknown(data);
   return {status:response.status,data};
- }catch(error){if(nativeVideo)return unknown();throw error;}
+ }catch(error){if(reservation)return unknown();throw error;}
 }
 async function reportOnlyDrift(productionSha,runSha){
  if(productionSha===runSha)return {allowed:true,files:[]};
@@ -91,12 +94,13 @@ async function readSource(route){
 }
 async function recordQueue(id,original,result){
  const latest=await github('/contents/automation/social-queue.json?ref=main');const queue=JSON.parse(Buffer.from(latest.content,'base64').toString());const item=queue.items.find(x=>x.id===id);
- if(!item||['articleUrl','distributionUrl','copy','scheduledFor','imageUrl','imageAlt','mediaType','mediaAssetId','mediaFormat','parentPublicationId','videoUrl','videoSha256'].some(key=>item[key]!==original[key]))throw Error('queue_changed_reconcile_receipt');
+ if(!item||['articleUrl','distributionUrl','copy','scheduledFor','imageUrl','imageAlt','mediaType','mediaAssetId','mediaFormat','parentPublicationId','eventId','contentKind','platform','videoUrl','videoSha256'].some(key=>item[key]!==original[key]))throw Error('queue_changed_reconcile_receipt');
  if(!['queued','scheduled','sent'].includes(item.status))throw Error('queue_status_changed');
  if(item.postId&&item.postId!==result.postId)throw Error('different_post_receipt_reconcile');
  Object.assign(item,{status:result.status||'scheduled',postId:result.postId,channelId:result.channelId,channelName:result.channelName,scheduledAt:new Date().toISOString(),bufferDueAt:result.dueAt,lastAttemptAt:new Date().toISOString(),lastResult:result.reconciliationRequired?'provider receipt requires reconciliation':'verified secure workflow receipt',duplicate:!!result.duplicate,imageAttached:result.imageAttached});
+ if(result.reconciliationRequired===true)item.reconciliationRequired=true;
  if(result.mediaType==='video')Object.assign(item,{mediaType:'video',videoAttached:result.videoAttached,videoUrl:result.videoUrl,videoMimeType:result.videoMimeType,providerStatus:result.providerStatus,nativeVideoReceiptState:result.nativeVideoReceiptState,reconciliationRequired:result.reconciliationRequired});
- await github('/contents/automation/social-queue.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:result.reconciliationRequired?'Record unresolved CUAI native video receipt':'Record verified CUAI distribution receipt',sha:latest.sha,branch:'main',content:Buffer.from(JSON.stringify(queue,null,2)+'\n').toString('base64')})});
+ await github('/contents/automation/social-queue.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:result.reconciliationRequired?'Record unresolved CUAI distribution receipt':'Record verified CUAI distribution receipt',sha:latest.sha,branch:'main',content:Buffer.from(JSON.stringify(queue,null,2)+'\n').toString('base64')})});
 }
 async function reconcileSentQueue(bufferResponse){
  if(bufferResponse?.status!==200||bufferResponse.data?.ok!==true||!Array.isArray(bufferResponse.data.posts))return 0;
@@ -157,7 +161,17 @@ async function reconcileSentQueue(bufferResponse){
  const candidates=queue.items.filter(x=>x.status==='queued'&&Date.parse(x.scheduledFor)>Date.now()+5*60000).sort((a,b)=>Date.parse(a.scheduledFor)-Date.parse(b.scheduledFor));
  // Process one reserved item per run. Existing endpoint validates channel,
  // quality, tracking, live article/image, fixed time and duplicate/day limits.
- if(candidates.length){const item=candidates[0];const result=await invoke('buffer-schedule-tracked',{itemId:item.id},item.mediaType==='video'?item:null);receipts.actions.push({itemId:item.id,...result});save();if(([200,201].includes(result.status)&&result.data.ok&&typeof result.data.postId==='string'&&result.data.postId.length>0)||(result.status===202&&result.data.mediaType==='video'&&result.data.reconciliationRequired===true&&result.data.status==='blocked')){await recordQueue(item.id,item,result.data);if(result.data.reconciliationRequired)receipts.errors.push({route:'buffer-schedule-tracked',error:'native_video_receipt_requires_reconciliation',postId:result.data.postId});}else receipts.errors.push({route:'buffer-schedule-tracked',error:result.data.error||'schedule_receipt_missing'});}
+ if(candidates.length){const item=candidates[0];
+ const latest=await github('/commits/main');if(latest.sha!==process.env.DEPLOYED_SHA)throw Error('main_changed_before_distribution');
+ const schedule=validateSchedule(item.scheduledFor,item);if(schedule.error)throw Error(schedule.error);
+ const proofs=MEDIA_POLICY.distribution.reviewedEventExclusions||[];
+ if(proofs.some(p=>p.candidateId===item.id)){
+ const event=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,'utf8'));
+ const attempt=await firstRecoveryAttempt({item,proofs,eventName:process.env.GITHUB_EVENT_NAME,runAttempt:process.env.GITHUB_RUN_ATTEMPT,before:event.before,after:event.after,head:process.env.DEPLOYED_SHA,readQueueBefore:async before=>{const prior=await github('/contents/automation/social-queue.json?ref='+before);return JSON.parse(Buffer.from(prior.content,'base64').toString());}});
+ if(attempt.error)throw Error(attempt.error);
+ const rechecked=await github('/commits/main');if(rechecked.sha!==process.env.DEPLOYED_SHA)throw Error('main_changed_before_distribution');
+ }
+ const result=await invoke('buffer-schedule-tracked',{itemId:item.id},item);receipts.actions.push({itemId:item.id,...result});save();if(([200,201].includes(result.status)&&result.data.ok&&typeof result.data.postId==='string'&&result.data.postId.length>0)||(result.status===202&&result.data.reconciliationRequired===true&&result.data.status==='blocked')){await recordQueue(item.id,item,result.data);if(result.data.reconciliationRequired)receipts.errors.push({route:'buffer-schedule-tracked',error:'distribution_receipt_requires_reconciliation',postId:result.data.postId});}else receipts.errors.push({route:'buffer-schedule-tracked',error:result.data.error||'schedule_receipt_missing'});}
  receipts.completedAt=new Date().toISOString();receipts.status=receipts.errors.length?'attention':'verified';save();
  console.log('Production identity verified; '+receipts.actions.length+' distribution attempts; '+receipts.errors.length+' source/action exceptions.');
  if(receipts.errors.length)process.exitCode=1;
