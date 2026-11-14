@@ -120,7 +120,7 @@ test('X stays blocked, baseline inactive and budget arithmetic separates remaini
   assert.equal(policy.budget.observedAllowanceIncludingRollover - policy.budget.observedUsedCredits, policy.budget.observedRemainingCredits);
   assert.equal(policy.budget.recurringMonthlyCreditCeiling - policy.budget.plannedMonthlySpeechBaseline, 8694);
   const source = fs.readFileSync(require.resolve('../api/buffer-schedule-image.js'), 'utf8');
-  assert.match(source, /queue_item_not_linkedin/); assert.match(source, /linkedin_channel_identity_mismatch/); assert.match(source, /checkCapacity/);
+  assert.match(source, /queue_item_not_linkedin/); assert.match(source, /linkedin_channel_identity_mismatch/); assert.match(source, /verifyReservation/);
 });
 
 // Exercise the existing executor with in-memory provider fixtures: no credentials,
@@ -131,7 +131,7 @@ function endpointFixture({ changes = {}, providerPosts = [], channelId = policy.
   const calls = [], module = { exports: {} };
   const script = fs.readFileSync(require.resolve('../api/buffer-schedule-image.js'), 'utf8');
   const fixtureFs = { readFileSync: p => p.endsWith('social-queue.json') ? JSON.stringify({ items: [item] }) : p.endsWith('media-manifest.json') ? JSON.stringify({ assets: [asset] }) : (() => { throw Error('unexpected read'); })() };
-  vm.runInNewContext(script, { module, require: p => p.endsWith('operations-auth') ? { authorize: async () => true } : p === 'node:fs' ? fixtureFs : p === 'node:path' ? path : p.endsWith('native-video.cjs') ? require('../lib/native-video.cjs') : p.endsWith('media-policy.json') ? policy : p.endsWith('media-slots.cjs') ? { validateSchedule: (raw, item) => validateSchedule(raw, item, policy, now), checkCapacity, mediaReady } : (() => { throw Error('unexpected require'); })(), process: { cwd: () => '/fixture', env: { BUFFER_API_KEY: 'fixture-only', VERCEL_GIT_COMMIT_SHA: 'fixture-sha' } }, URL, Date, Intl, Set, fetch: async (url, options) => {
+  vm.runInNewContext(script, { module, require: p => p.endsWith('operations-auth') ? { authorize: async () => true } : p === 'node:fs' ? fixtureFs : p === 'node:path' ? path : p.endsWith('native-video.cjs') ? require('../lib/native-video.cjs') : p.endsWith('buffer-reservation-guard.cjs') ? { verifyReservation: args => require('../lib/buffer-reservation-guard.cjs').verifyReservation({...args, request: async (...v) => { const d = await args.request(...v); if (d.posts) { d.posts.pageInfo ??= {hasNextPage:false}; for (const e of d.posts.edges || []) { e.node = {...e.node, metadata:null, channelId:policy.distribution.channelId, dueAt:e.node.dueAt ?? null, sentAt:e.node.sentAt ?? null, text:e.node.text + ' https://creditunionainews.com/news/fixture-' + e.node.id + '.html'}; } } return d; }}, () => now) } : p.endsWith('media-policy.json') ? policy : p.endsWith('media-slots.cjs') ? { validateSchedule: (raw, item) => validateSchedule(raw, item, policy, now), checkCapacity, mediaReady } : (() => { throw Error('unexpected require'); })(), process: { cwd: () => '/fixture', env: { BUFFER_API_KEY: 'fixture-only', VERCEL_GIT_COMMIT_SHA: 'a'.repeat(40) } }, URL, Date, Intl, Set, AbortSignal, fetch: async (url, options) => {
     calls.push({ url, body: options?.body ? JSON.parse(options.body) : null });
     if (url !== 'https://api.buffer.com') return { ok: true, url, text: async () => '<meta property="og:title" content="Verified chart">', headers: { get: () => 'image/png' }, arrayBuffer: async () => new Uint8Array([1, 2, 3]).buffer };
     const q = JSON.parse(options.body).query;
@@ -139,7 +139,7 @@ function endpointFixture({ changes = {}, providerPosts = [], channelId = policy.
     return { ok: true, json: async () => ({ data }) };
   } });
   const response = { setHeader() {}, status(code) { this.statusCode = code; return this; }, json(body) { this.body = body; return this; } };
-  return { run: () => module.exports({ method: 'POST', body: { itemId: item.id, commitSha: 'fixture-sha' } }, response), response, calls };
+  return { run: () => module.exports({ method: 'POST', body: { itemId: item.id, commitSha: 'a'.repeat(40) } }, response), response, calls };
 }
 test('existing executor schedules one verified media image/link and returns its actual fixture receipt', async () => {
   const f = endpointFixture(); await f.run(); assert.equal(f.response.statusCode, 201); assert.equal(f.response.body.postId, 'receipt-1');

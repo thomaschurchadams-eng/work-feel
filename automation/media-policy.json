@@ -18,7 +18,37 @@
     "x": {
       "status": "blocked",
       "reason": "identity-and-authorized-routing-unverified"
-    }
+    },
+    "reviewedEventExclusions": [
+      {
+        "candidateId": "linkedin-nyfed-2026q3-results-recovery",
+        "status": "reviewed-new-event",
+        "eventId": "nyfed-cmd-quarterly-household-debt-credit-2026q3-results",
+        "parentPublicationId": "heloc-balances-third-quarter-2026-credit-unions",
+        "canonicalUrl": "https://creditunionainews.com/news/heloc-balances-third-quarter-2026-credit-unions.html",
+        "articleSha256": "bf3b4449d35bbb5701116a927310035e8f648227a353afd7a16e2c4fb893e50d",
+        "reviewedAt": "2026-11-14T00:00:00Z",
+        "expiresAt": "2026-11-17T00:00:00Z",
+        "reviewedEventBoundary": "2026-11-03T00:00:00Z",
+        "documentedReleaseAt": "2026-11-10T16:00:00Z",
+        "documentedPressPreviewAt": "2026-11-10T14:30:00Z",
+        "boundaryBasis": "Independent primary-source review accepts this distinct Q3 results publication. November 4 advisory and release calendar schedule November 10; November 10 release says issued today. An unexplained CMD calendar lists November 3. The conservative November 3 boundary accommodates that discrepancy: it is a reviewed timing inference, not proof against every possible earlier disclosure. Older HELOC trend background is not this event.",
+        "sourceUrls": [
+          "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1104-2026",
+          "https://www.newyorkfed.org/newsevents/news/research/2026/20261110",
+          "https://www.newyorkfed.org/research/calendars/nationalecon_cal",
+          "https://www.newyorkfed.org/microeconomics/calendar.html",
+          "https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/pdf/hhdc_2026q3.pdf"
+        ],
+        "history": {
+          "recordCount": 78,
+          "idSetSha256": "cf1c3ac82c706b1acc19ef23bca616c60f7dd623f69712bea56e4ffc2e18191c",
+          "latestSentAt": "2026-11-02T17:31:21.167Z"
+        },
+        "copyLead": "New York Fed Q3 2026 data show HELOC balances rose $23 billion to $481 billion, their largest quarterly increase since 2005. For credit-union lending teams, the useful comparison is product-specific demand and credit risk. The separate $257 billion mortgage-balance rise needs care: roughly half reflects re-reporting. These are national household-credit figures, not credit-union results.",
+        "scope": "One exact reviewed underlying event and body/copy. All retained historical flags stay unchanged. Any active, new or missing provider record invalidates the exception. Existing publisher must accept the exact released proof and qualify this Standard selection; no reservation or post is created here."
+      }
+    ]
   },
   "mediaCadence": {
     "cartoon": {
