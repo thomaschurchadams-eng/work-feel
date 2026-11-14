@@ -77,6 +77,30 @@
       "decision": "tracker-only",
       "reason": "Primary vendor release verified during bounded catch-up. No related CUAI article exists or is required; vendor benefits remain claims. No article or Alert cycle triggered.",
       "recordPath": "automation/vendor-registry.json"
+    },
+    {
+      "fingerprint": "ncua-newsroom|2026-11-13|https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+      "detectedAt": "2026-11-13T23:43:04Z",
+      "sourceId": "ncua-newsroom",
+      "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+      "title": "Third-party risk guidance comment deadline extended",
+      "eventDate": "2026-11-13",
+      "decision": "tracker-only",
+      "reason": "Verified current joint agency announcement and extension notice; relevant to credit-union vendor oversight. Proposed non-binding guidance, not a final rule. Fed mirror deduplicated as the same event; no article or Alert operation.",
+      "recordPath": "automation/regulatory-watch.json",
+      "recordId": "us-third-party-risk-guidance"
+    },
+    {
+      "fingerprint": "fsb-publications|2026-10-15|https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
+      "detectedAt": "2026-11-13T23:43:04Z",
+      "sourceId": "fsb-publications",
+      "sourceUrl": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
+      "title": "FSB responsible AI adoption final report",
+      "eventDate": "2026-10-15",
+      "decision": "tracker-only",
+      "reason": "One saved historical catch-up slice verified. Twelve non-binding practices with proportional application; illustrative case studies are not outcome benchmarks. No article or Alert operation.",
+      "recordPath": "automation/regulatory-watch.json",
+      "recordId": "fsb-responsible-ai-adoption"
     }
   ]
 }

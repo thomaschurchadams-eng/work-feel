@@ -45,7 +45,7 @@ test('missing coverage requires explicit tracker-only disposition, never a missi
 });
 test('regulatory tracker-only records obey the same independent coverage rule',()=>{
   assert.equal(fixture(d=>{const s=d.regulatory.records.at(-1).developments[0];delete s.relatedCoverage;s.coverageStatus='tracker-only-no-article';}).status,0);
-  assert.notEqual(fixture(d=>{delete d.regulatory.records.at(-1).developments[0].relatedCoverage;}).status,0);
+  assert.notEqual(fixture(d=>{const s=d.regulatory.records.at(-1).developments[0];delete s.relatedCoverage;delete s.coverageStatus;}).status,0);
 });
 test('invalid dates and empty signal records fail closed',()=>{
   for (const value of ['2026-02-30','2026-99-99','not-a-date']) assert.notEqual(fixture(d=>{d.vendors.vendors[0].lastReviewed=value;}).status,0);
