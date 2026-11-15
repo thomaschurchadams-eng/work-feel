@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-15",
   "description": "Append-only fingerprints for verified intelligence signals. Prevents duplicate tracker updates and repetitive coverage.",
   "signals": [
     {
@@ -101,6 +101,18 @@
       "reason": "One saved historical catch-up slice verified. Twelve non-binding practices with proportional application; illustrative case studies are not outcome benchmarks. No article or Alert operation.",
       "recordPath": "automation/regulatory-watch.json",
       "recordId": "fsb-responsible-ai-adoption"
+    },
+    {
+      "fingerprint": "cfpb-newsroom|2026-08-14|https://www.consumerfinance.gov/about-us/newsroom/the-cfpb-to-cease-discretionary-publication-of-complaint-narratives-and-visualizations/",
+      "detectedAt": "2026-11-15T00:07:33Z",
+      "sourceId": "cfpb-newsroom",
+      "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/the-cfpb-to-cease-discretionary-publication-of-complaint-narratives-and-visualizations/",
+      "title": "CFPB complaint narrative and visualization publication change",
+      "eventDate": "2026-08-14",
+      "decision": "tracker-only",
+      "reason": "One bounded historical archive slice verified. Agency-announced change to public complaint-data features, relevant to complaint analysis and AI research inputs; not a new AI rule or proof of current FOIA/API availability. No article or Alert operation.",
+      "recordPath": "automation/regulatory-watch.json",
+      "recordId": "cfpb-complaint-publication"
     }
   ]
 }
