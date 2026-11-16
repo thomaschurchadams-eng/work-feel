@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-16",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -103,6 +103,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html"
       }
     ],
     "status": "in-progress",
@@ -213,7 +217,7 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-16",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html",
         "candidateTitle": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
         "outcomeScope": "cycle",
@@ -256,7 +260,9 @@
             ],
             "visualProof": "Viewed exact 390px/1440px article, image, hypothesis wording, homepage placement and News recovery; artifact shows no normal browser errors, broken images, axe violations or overflow."
           }
-        }
+        },
+        "productionCommit": "a02c54f77da91d404f4254aee73d7e97cfeef111",
+        "verifiedAt": "2026-11-16T13:04:44.347Z"
       }
     ]
   },
