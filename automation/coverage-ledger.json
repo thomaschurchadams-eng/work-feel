@@ -3,6 +3,36 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "american-heritage-debit-purchase-installments",
+      "title": "American Heritage Adds Installments After a Debit Purchase",
+      "url": "/news/american-heritage-debit-purchase-installments.html",
+      "publishedAt": "2026-11-16T08:17:39-05:00",
+      "section": "news",
+      "beat": "american-heritage-debit-purchase-installments",
+      "functions": [
+        "lending-collections",
+        "member-service"
+      ],
+      "technologies": [
+        "realtime-embedded-finance"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Consumer lending, payments product, digital banking and member service leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/orion-financial-embedded-digital-lending.html",
+        "/insight-credit-union-ai-card-dispute-evidence-clock.html"
+      ],
+      "sourceTier": 2,
+      "score": 68.9,
+      "confidence": 0.87,
+      "sourceLimit": "Credit union/vendor launch and member FAQ establish product design and published differences, not every offer’s terms or adoption or credit outcomes."
+    },
+    {
       "id": "merchants-ncua-interchange-preemption-lawsuit",
       "title": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
       "url": "/news/merchants-ncua-interchange-preemption-lawsuit.html",

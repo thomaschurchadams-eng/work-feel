@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "american-heritage-debit-purchase-installments",
+      "articleUrl": "/news/american-heritage-debit-purchase-installments.html",
+      "imagePath": "/assets/american-heritage-debit-purchase-installments.jpg",
+      "publishedAt": "2026-11-16T08:17:39-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "soft-editorial-illustration",
+      "subject": "member-interaction",
+      "composition": "single-object-negative-space",
+      "perspective": "isometric",
+      "palette": "emerald-cream",
+      "lighting": "high-contrast-studio",
+      "texture": "matte-clay",
+      "scene": "A faceless illustrative handset screen with a plain card silhouette and three unmarked installment tokens",
+      "conceptScore": 72.8,
+      "conceptAlternatives": [
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "member-interaction",
+          "scene": "A faceless illustrative handset screen with a plain card silhouette and three unmarked installment tokens",
+          "score": 72.8,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "financial-object-study",
+          "scene": "One solid purchase block leads to three already separated pieces in a translucent ledger",
+          "score": 58.3,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "frontline-workflow",
+          "scene": "One terracotta sheet and three smaller tiles on a separate sky-blue row, linked by a simple folded-paper bridge",
+          "score": 55.7,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept; original editorial illustration inspected for this article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "b0ef256ae8aca31dd2f4ac3b9079fbe380d9c7eeb16b49740e92febd64922dc1"
+    },
+    {
       "id": "merchants-ncua-interchange-preemption-lawsuit",
       "articleUrl": "/news/merchants-ncua-interchange-preemption-lawsuit.html",
       "imagePath": "/assets/merchants-ncua-interchange-preemption-lawsuit.jpg",
