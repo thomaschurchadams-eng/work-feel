@@ -110,7 +110,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T13:05:40.854Z",
+    "updatedAt": "2026-11-16T13:06:43.421Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
@@ -267,13 +267,25 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-16",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html",
         "candidateTitle": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:40:00-05:00",
-        "nextAction": "Submit exact article to the existing design fallback, inspect its terminal artifact and verify production before the next slot."
+        "nextAction": "Observe this exact run/job/attempt; inspect actual artifact on desktop and mobile before acceptance.",
+        "evidence": {
+          "pending": {
+            "prNumber": 356,
+            "head": "8ba3829f70316207da084e883ef61097cc0e9729",
+            "run": 43872645715,
+            "job": 133317508599,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-16T08:40:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ]
   },
