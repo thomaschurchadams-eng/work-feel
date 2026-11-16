@@ -76,10 +76,10 @@
         "reason": "Bank merger service notice without a specific new credit union decision."
       },
       {
-        "title": "Federal Reserve governor discusses AI risks",
-        "sourceUrl": "https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/",
-        "status": "held",
-        "reason": "Commentary is not new policy; require actual speech and a distinct operating implication beyond recent AI supervision coverage."
+        "title": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+        "status": "selected",
+        "reason": "Official delivered speech verifies distinct member-side automation and potential liquidity risk; no observed CU outflow or new regulatory obligation."
       },
       {
         "title": "Frontier model developers face litigation",
@@ -106,9 +106,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T12:52:51.343Z",
+    "updatedAt": "2026-11-16T12:54:36.049Z",
     "socialDecision": "not-created-no-verified-publication",
-    "outcomeSlot": 2,
+    "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -209,6 +209,17 @@
         },
         "productionCommit": "322b2c5a543f0ff68a8d7fe32d7a3c4a6a15a191",
         "verifiedAt": "2026-11-16T12:53:42.289Z"
+      },
+      {
+        "slot": 3,
+        "plannedDate": "2026-11-16",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html",
+        "candidateTitle": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-16T08:30:00-05:00",
+        "nextAction": "Submit exact article to the existing design fallback, inspect its terminal artifact and verify production before the next slot."
       }
     ]
   },
