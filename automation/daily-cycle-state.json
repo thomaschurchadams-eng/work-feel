@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-16",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -111,11 +111,20 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
+        "title": "American Heritage Adds Installments After a Debit Purchase",
+        "classification": "News",
+        "promotionPriority": "Standard",
+        "primaryFunctionalAudience": "Consumer lending, payments product, digital banking and member service leaders",
+        "socialDecision": "prepared-not-reserved-provider-review"
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-11-16T13:26:30.363Z",
-    "socialDecision": "not-created-no-verified-publication",
+    "status": "completed",
+    "updatedAt": "2026-11-16T13:27:22.716Z",
+    "socialDecision": "not-reserved-provider-review",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -321,13 +330,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-16",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
         "candidateTitle": "American Heritage Adds Installments After a Debit Purchase",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:50:00-05:00",
-        "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
+        "nextAction": "Live verified; do not republish.",
         "evidence": {
           "pending": {
             "prNumber": 357,
@@ -363,10 +372,21 @@
               1440
             ],
             "visualProof": "Viewed exact 390px and 1440px headline, body opening, illustrative hero, homepage feature and missing-image card presentation; confirmed exact responsive, accessibility, normal artwork and 404/recovery evidence."
-          }
-        }
+          },
+          "productionDeploymentId": "dpl_CKZJEFHrvc2HwaUFz1D2qDrGe7r2"
+        },
+        "productionCommit": "aa1534c74d338fd762f12083faf818b7cd60faf1",
+        "verifiedAt": "2026-11-16T13:27:22.716Z",
+        "liveProof": "Exact production alias READY; public article/catalog, homepage and 1200×630 artwork bytes verified."
       }
-    ]
+    ],
+    "socialDistribution": {
+      "status": "not-reserved",
+      "blocker": "Complete observed provider inventory contains 78 historical sent records requiring destination review. None of today’s articles has candidate-specific clearance. Standing separate reviewed-event window unchanged.",
+      "inventoryArtifactId": 14226707965,
+      "inventoryObservedAt": "2026-11-16T12:42:35.246Z",
+      "providerReservationAttempted": false
+    }
   },
   "history": [
     {
