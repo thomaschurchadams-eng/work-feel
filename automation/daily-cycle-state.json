@@ -97,20 +97,32 @@
     "fallbackEvaluations": [],
     "publications": [],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T12:27:44.706Z",
+    "updatedAt": "2026-11-16T12:31:58.234Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-16",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html",
         "candidateTitle": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:00:00-05:00",
-        "nextAction": "Submit the exact article package to the existing CI fallback; inspect matching desktop/mobile artifact, accessibility and artwork before merge."
+        "nextAction": "Wait for this exact design-check run/job/attempt, then review actual artifact desktop/mobile, artwork and accessibility. Do not proceed to later slots until live verification.",
+        "evidence": {
+          "pending": {
+            "prNumber": 353,
+            "head": "f973d75f94bfc9d5d17b66b983653177010fa3ae",
+            "run": 43867333062,
+            "job": 133299145096,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-16T08:00:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ]
   },
