@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-16",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -107,6 +107,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html"
       }
     ],
     "status": "in-progress",
@@ -267,7 +271,7 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-16",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html",
         "candidateTitle": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
         "outcomeScope": "cycle",
@@ -310,7 +314,9 @@
             ],
             "visualProof": "Viewed exact desktop/mobile article, opening text and illustration, homepage lead positions and both News card missing-artwork fallbacks. Main rendered/accessibility reports show no overflow, broken images, axe violations or page errors."
           }
-        }
+        },
+        "productionCommit": "da56c4424e90e578d853e2b463cd39d4df7eb346",
+        "verifiedAt": "2026-11-16T13:15:57.749Z"
       }
     ]
   },
