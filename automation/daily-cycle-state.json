@@ -114,7 +114,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T13:16:53.640Z",
+    "updatedAt": "2026-11-16T13:17:54.684Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
@@ -321,13 +321,25 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-16",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
         "candidateTitle": "American Heritage Adds Installments After a Debit Purchase",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:50:00-05:00",
-        "nextAction": "Submit exact article to the existing design fallback, inspect its terminal artifact and verify production before the next slot."
+        "nextAction": "Observe this exact run/job/attempt; inspect actual artifact on desktop and mobile before acceptance.",
+        "evidence": {
+          "pending": {
+            "prNumber": 357,
+            "head": "9f87e58322966d747aa624113368d4b0c72f4068",
+            "run": 43874413253,
+            "job": 133323588825,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-16T08:50:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ]
   },
