@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-16",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -99,6 +99,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html"
       }
     ],
     "status": "in-progress",
@@ -159,7 +163,7 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-16",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html",
         "candidateTitle": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
         "outcomeScope": "cycle",
@@ -202,7 +206,9 @@
             ],
             "visualProof": "Viewed exact 390px and 1440px article opening, legible dates/fee summary, homepage feature and both intentional News artwork failure/recovery cases; no normal errors, axe violations or overflow."
           }
-        }
+        },
+        "productionCommit": "322b2c5a543f0ff68a8d7fe32d7a3c4a6a15a191",
+        "verifiedAt": "2026-11-16T12:53:42.289Z"
       }
     ]
   },
