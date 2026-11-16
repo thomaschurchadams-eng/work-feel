@@ -1209,7 +1209,7 @@
 
   // Maintained by the weekday operating cycle. Items expire automatically after seven days.
   const homepageWatchState = {
-    reviewedAt: '2026-11-10T15:20:11-05:00',
+    reviewedAt: '2026-11-16T15:28:16-05:00',
     items: []
   };
 

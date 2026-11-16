@@ -5335,6 +5335,48 @@
       ],
       "summary": "Five independently qualified Standard News articles verified on their accepted production commits; exact CI PRs 353–357 and 390/1440 pixel artwork/accessibility reviewed. Canonical closeout bbbf7cd32229697b9d7ba260615b24417a777bae. Local Chromium executable absent; policy-authorized existing CI gate used for all five. Editorial LinkedIn selection: https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html; complete observed provider inventory still flags 78 historical sent records, and none of this edition has candidate-specific clearance. No changes to cadence, social queue or Alerts.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-16T15:28:16-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Monday operating review after the completed November 16 five-slot publisher handoff.",
+      "status": "success",
+      "dedupeKey": "cuai-operating-system:2026-11-16",
+      "workUnits": {
+        "publisherHandoffsConsumed": 1,
+        "articlesPublishedObserved": 5,
+        "candidatesEvaluatedObserved": 12,
+        "beatsSearchedObserved": 8,
+        "portfolioArticlesReviewed": 114,
+        "portfolioLookbackReviewed": 28,
+        "alertCandidatesEvaluated": 2,
+        "alertsPublished": 0,
+        "duplicateAlertCandidatesHeld": 1,
+        "relevanceHeldAlertCandidates": 1,
+        "homepageFallbackReviews": 1,
+        "homepageWatchItemsSelected": 0,
+        "weeklyDistributionOpportunitiesRecorded": 5,
+        "exactCurrentOperationsArtifactsConsumed": 1,
+        "ga4SevenDaySessionsObserved": 196,
+        "searchConsoleSevenDayClicksObserved": 28,
+        "searchConsoleSevenDayImpressionsObserved": 2230,
+        "providerRecordsObserved": 78,
+        "productionDeploymentsVerified": 1,
+        "runtimeErrorWindowsChecked": 1,
+        "runtimeErrorsObserved": 0,
+        "usageLedgerEntriesAppended": 1,
+        "socialWritesAttempted": 0,
+        "externalOutreachAttempted": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "public web sources"
+      ],
+      "summary": "Consumed the completed five-article publisher receipt and exact-current verified-operations artifact for main 1f49dfa261d17c171ccae36addfa2ee15659a0ce. Held the November 13 CISA Check Point KEV item as duplicative of CUAI's existing Check Point Alert and held the UnrealIRCd item for lack of demonstrated credit-union operating relevance; published no Alert. Refreshed the empty homepage watch review so the evergreen vendor-due-diligence fallback remains active without recycling content already present in the homepage grid. Portfolio review found all five Monday items were Standard News; the existing next candidate remains a Library/Insight on AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes to address the marketing-growth and executive-format gap. Exact-current analytics show 196 GA4 sessions and 65 engaged sessions for November 9–15, plus 28 Search Console clicks and 2,230 impressions; rolling-window overlap makes the increase directional, not causal. Production is READY; the Hobby retention limit constrains runtime-error evidence to the latest 50 minutes, which contained no error/fatal events. No social write, provider retry, outreach, spend or cadence change.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
