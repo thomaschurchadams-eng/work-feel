@@ -102,7 +102,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T12:43:00.490Z",
+    "updatedAt": "2026-11-16T12:45:31.272Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 2,
     "regularPublicationSlots": [
@@ -159,13 +159,25 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-16",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html",
         "candidateTitle": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:20:00-05:00",
-        "nextAction": "Obtain exact design-checks artifact and review desktop/mobile, accessibility and artwork; no merge until acceptance."
+        "nextAction": "Observe this exact run/job/attempt; inspect actual artifact on desktop and mobile before acceptance.",
+        "evidence": {
+          "pending": {
+            "prNumber": 354,
+            "head": "ae8b6b3445b62994353e868bd691fe929c423147",
+            "run": 43869422819,
+            "job": 133306336981,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-16T08:20:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ]
   },
