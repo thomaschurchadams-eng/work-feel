@@ -5302,6 +5302,39 @@
       "summary": "Current main c9dcb130d7c3dbc1bbc4f74d69ab649a33a6777c is Production READY and all five November 13 articles plus the Alerts archive return HTTP 200; all 83 publication-history entries and the 55-item social queue remain intact, and Vercel reports no runtime errors in 24 hours. The scheduled Operating System correctly published no Alert because none cleared the 72-hour gate. The released PR341 inventory repair recovered a complete 78-record sent inventory with no future provider reservations, but only 13 records expose canonical destinations, 65 do not, and all 78 remain review-held. PR347's fixed private rejection categories passed exact-head workflow 43500413020 and are released, but no natural post-release provider receipt has yet exposed the exact reason/provenance needed to clear residual holds. One stale scheduled queue row is known only through the aggregate receipt to have been sent; exact sentAt/externalLink evidence is not exposed, and the separate planned row has no provider submission. Reliability therefore did not force a workflow, infer missing sent-state fields, change queue status, reserve/post, or retry a provider write. Next safe recovery is the next existing authorized natural publisher/repair read using the released diagnostics; PR260 remains inactive.",
       "usageAttribution": "operational-proxy",
       "incidentKey": "cuai-buffer-destination-recovery-pr341"
+    },
+    {
+      "timestamp": "2026-11-16T13:28:05.950Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "November 16 ordinary five-slot weekday article cycle.",
+      "status": "success",
+      "dedupeKey": "cuai-publishing:daily:2026-11-16",
+      "workUnits": {
+        "candidateLeadsEvaluated": 12,
+        "beatsSearched": 8,
+        "articleSlotsTargeted": 5,
+        "articlesPublished": 5,
+        "exactHeadValidationRunsObserved": 5,
+        "renderedChecksObserved": 250,
+        "productionDeploymentsVerified": 5,
+        "desktopViewportReviewsObserved": 5,
+        "mobileViewportReviewsObserved": 5,
+        "historyEntriesPreserved": 84,
+        "providerInventoryShowsReviewFlags": 78,
+        "socialReservationsCreated": 0,
+        "providerWritesAttempted": 0,
+        "userInterventionsObserved": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer (existing natural trusted operations receipt)"
+      ],
+      "summary": "Five independently qualified Standard News articles verified on their accepted production commits; exact CI PRs 353–357 and 390/1440 pixel artwork/accessibility reviewed. Canonical closeout bbbf7cd32229697b9d7ba260615b24417a777bae. Local Chromium executable absent; policy-authorized existing CI gate used for all five. Editorial LinkedIn selection: https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html; complete observed provider inventory still flags 78 historical sent records, and none of this edition has candidate-specific clearance. No changes to cadence, social queue or Alerts.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
