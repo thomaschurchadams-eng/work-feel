@@ -58,10 +58,10 @@
         "reason": "Complaint is not a regulator determination; need direct filing or credit union response."
       },
       {
-        "title": "Retailers challenge NCUA interchange preemption rule",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/retailers-sue-ncua-over-interchange-preemption-rule",
-        "status": "held",
-        "reason": "Trade association account is not the docket, actual complaint or ruling; verify jurisdiction and scope."
+        "title": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
+        "sourceUrl": "https://infobytes.orrick.com/wp-content/uploads/NACS-et-al.-v-NCUA-Complaint.pdf",
+        "status": "selected",
+        "reason": "Actual November 12 federal complaint creates a separate challenge to the agency rule; not the already-published Illinois appeal, a finding or a new processing requirement."
       },
       {
         "title": "Credit union groups seek year-end legislative changes",
@@ -110,9 +110,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T13:03:47.087Z",
+    "updatedAt": "2026-11-16T13:05:40.854Z",
     "socialDecision": "not-created-no-verified-publication",
-    "outcomeSlot": 3,
+    "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -263,6 +263,17 @@
         },
         "productionCommit": "a02c54f77da91d404f4254aee73d7e97cfeef111",
         "verifiedAt": "2026-11-16T13:04:44.347Z"
+      },
+      {
+        "slot": 4,
+        "plannedDate": "2026-11-16",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html",
+        "candidateTitle": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-16T08:40:00-05:00",
+        "nextAction": "Submit exact article to the existing design fallback, inspect its terminal artifact and verify production before the next slot."
       }
     ]
   },
