@@ -110,7 +110,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T13:06:43.421Z",
+    "updatedAt": "2026-11-16T13:15:04.879Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
@@ -267,13 +267,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-16",
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html",
         "candidateTitle": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:40:00-05:00",
-        "nextAction": "Observe this exact run/job/attempt; inspect actual artifact on desktop and mobile before acceptance.",
+        "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 356,
@@ -284,7 +284,32 @@
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-16T08:40:00-05:00"
           },
-          "validationHistory": []
+          "validationHistory": [],
+          "terminalValidation": {
+            "head": "8ba3829f70316207da084e883ef61097cc0e9729",
+            "run": 43872645715,
+            "job": 133317508599,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-16T13:15:01.120Z"
+          },
+          "terminalAcceptance": {
+            "head": "8ba3829f70316207da084e883ef61097cc0e9729",
+            "run": 43872645715,
+            "job": 133317508599,
+            "runAttempt": 1,
+            "artifactId": 14228987063,
+            "artifactDigest": "sha256:d203edffe33ea6b187a01354d0bf7bf162774a33598164b7635523b156326e91",
+            "visualReviewedAt": "2026-11-16T13:15:00.379Z",
+            "renderedChecks": 50,
+            "reviewedViewports": [
+              390,
+              1440
+            ],
+            "visualProof": "Viewed exact desktop/mobile article, opening text and illustration, homepage lead positions and both News card missing-artwork fallbacks. Main rendered/accessibility reports show no overflow, broken images, axe violations or page errors."
+          }
         }
       }
     ]
