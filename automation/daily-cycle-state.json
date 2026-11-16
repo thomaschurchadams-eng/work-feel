@@ -46,10 +46,10 @@
         "reason": "Credit union supplies a timetable but not a publication date, and restored service is not yet confirmed."
       },
       {
-        "title": "American Heritage launches debit-linked installments",
-        "sourceUrl": "https://finance.yahoo.com/small-business/articles/american-heritage-credit-union-launches-181400541.html",
-        "status": "held",
-        "reason": "Distinct product, but participant-issued release; verify member-facing terms and actual availability."
+        "title": "American Heritage Adds Installments After a Debit Purchase",
+        "sourceUrl": "https://www.cuinsight.com/press-release/american-heritage-credit-union-launches-bnpl-on-debit-cards-for-members-to-split-purchases-into-installments/",
+        "status": "selected",
+        "reason": "Named post-purchase lending launch corroborated by credit union member guidance. Different from AI service story; conflicting public thresholds isolated, no member-specific rule or outcomes assumed."
       },
       {
         "title": "SAFE members seek review of merger vote",
@@ -114,9 +114,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T13:15:04.879Z",
+    "updatedAt": "2026-11-16T13:16:53.640Z",
     "socialDecision": "not-created-no-verified-publication",
-    "outcomeSlot": 4,
+    "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -317,6 +317,17 @@
         },
         "productionCommit": "da56c4424e90e578d853e2b463cd39d4df7eb346",
         "verifiedAt": "2026-11-16T13:15:57.749Z"
+      },
+      {
+        "slot": 5,
+        "plannedDate": "2026-11-16",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
+        "candidateTitle": "American Heritage Adds Installments After a Debit Purchase",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-16T08:50:00-05:00",
+        "nextAction": "Submit exact article to the existing design fallback, inspect its terminal artifact and verify production before the next slot."
       }
     ]
   },
