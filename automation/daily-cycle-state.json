@@ -106,7 +106,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T12:54:36.049Z",
+    "updatedAt": "2026-11-16T12:55:39.213Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
@@ -213,13 +213,25 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-16",
-        "status": "prepared",
+        "status": "pending-validation",
         "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html",
         "candidateTitle": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:30:00-05:00",
-        "nextAction": "Submit exact article to the existing design fallback, inspect its terminal artifact and verify production before the next slot."
+        "nextAction": "Observe this exact run/job/attempt; inspect actual artifact on desktop and mobile before acceptance.",
+        "evidence": {
+          "pending": {
+            "prNumber": 355,
+            "head": "a885a43753a874eee6e2eb7d05282475f3087d05",
+            "run": 43870967296,
+            "job": 133311721794,
+            "runAttempt": 1,
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-16T08:30:00-05:00"
+          },
+          "validationHistory": []
+        }
       }
     ]
   },
