@@ -6,509 +6,618 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-13",
-    "fullArticleCount": 5,
+    "date": "2026-11-16",
+    "fullArticleCount": 0,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "member-service",
-      "board-strategy",
-      "hr-training",
       "risk-compliance",
       "lending-collections",
-      "it-data-cybersecurity",
+      "payments-deposits",
       "finance-treasury",
       "vendor-management",
-      "payments-deposits"
+      "member-service",
+      "board-strategy",
+      "it-data-cybersecurity"
     ],
     "candidateEvaluations": [
       {
-        "title": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
-        "sourceUrl": "https://www.soundhound.com/newsroom/american-heritage-credit-unions-ai-agent-surpasses-half-a-million-member-conversations-in-under-a-year-with-soundhound-ai",
+        "title": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
+        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/pdf/2026-23281.pdf",
         "status": "selected",
-        "reason": "Vendor attributes 11 months of observed service volume to Gigi; CU page confirms the service, not the metrics."
+        "reason": "Final rule published November 16; signed official text controls December 16 effective date. Reroutes internal citations without cancelling FHA/ECOA controls."
       },
       {
-        "title": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
-        "sourceUrl": "https://www.lgeccu.org/post/ascend_federal_credit_union_and_lge_community_credit_union_to_merge.html",
-        "status": "selected",
-        "reason": "Member and regulatory approvals verified by parties; January legal date and early-2028 system integration are separate."
-      },
-      {
-        "title": "Financial Plus and Monroe announce merger intent",
-        "sourceUrl": "https://www.mcul.org/News_Archive",
+        "title": "Fed sets 2027 prices and changes check processing",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
         "status": "held",
-        "reason": "Association confirms intent; weaker than an approved deal and overlaps merger beat."
+        "reason": "Potential distinct check operations story; verify specific schedules and distinguish from already published FedNow discount analysis before selection."
       },
       {
-        "title": "DuGood expands school-based services",
-        "sourceUrl": "https://www.beaumontenterprise.com/business/article/dugood-expands-beaumont-united-updates-west-brook-22527479.php",
+        "title": "Proposed vendor-risk comment period extended",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
+        "status": "rejected",
+        "reason": "Already in the regulatory watch; extension alone adds little to the November 12 full analysis of the same proposal."
+      },
+      {
+        "title": "Heartland digital banking cutover",
+        "sourceUrl": "https://heartlandcu.com/digital-banking/",
         "status": "held",
-        "reason": "Concrete youth financial education use case, but local-only reporting; confirm CU primary program detail."
+        "reason": "Credit union supplies a timetable but not a publication date, and restored service is not yet confirmed."
       },
       {
-        "title": "ICBA urges response to credit union bank deal",
-        "sourceUrl": "https://www.icba.org/newsroom",
+        "title": "American Heritage launches debit-linked installments",
+        "sourceUrl": "https://finance.yahoo.com/small-business/articles/american-heritage-credit-union-launches-181400541.html",
+        "status": "held",
+        "reason": "Distinct product, but participant-issued release; verify member-facing terms and actual availability."
+      },
+      {
+        "title": "SAFE members seek review of merger vote",
+        "sourceUrl": "https://cutimes.com/2026/11/13/safe-members-ask-california-regulator-to-investigate-merger-vote/",
+        "status": "held",
+        "reason": "Complaint is not a regulator determination; need direct filing or credit union response."
+      },
+      {
+        "title": "Retailers challenge NCUA interchange preemption rule",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/retailers-sue-ncua-over-interchange-preemption-rule",
+        "status": "held",
+        "reason": "Trade association account is not the docket, actual complaint or ruling; verify jurisdiction and scope."
+      },
+      {
+        "title": "Credit union groups seek year-end legislative changes",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-pursuing-year-end-opportunities",
         "status": "rejected",
-        "reason": "Advocacy rather than enacted change; avoid treating pressure as policy."
+        "reason": "Advocacy, not new legislation enacted or a final rule."
       },
       {
-        "title": "Quarterly HELOC balance acceleration",
-        "sourceUrl": "https://www.newyorkfed.org/newsevents/news/research/2026/20261110",
+        "title": "NexTier integration information",
+        "sourceUrl": "https://www.riverside.bank/merger",
         "status": "rejected",
-        "reason": "Already published November 12."
+        "reason": "Bank merger service notice without a specific new credit union decision."
       },
       {
-        "title": "Freddie Mac weekly mortgage rates",
-        "sourceUrl": "https://apnews.com/article/366d26ae1c60182caa2819bed76ab346",
+        "title": "Federal Reserve governor discusses AI risks",
+        "sourceUrl": "https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/",
+        "status": "held",
+        "reason": "Commentary is not new policy; require actual speech and a distinct operating implication beyond recent AI supervision coverage."
+      },
+      {
+        "title": "Frontier model developers face litigation",
+        "sourceUrl": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
         "status": "rejected",
-        "reason": "Weekly national data point lacks new CU-specific implication after recent HELOC report."
+        "reason": "Filing alone does not establish a service discontinuity or concrete credit union action."
       },
       {
-        "title": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
-        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-        "status": "selected",
-        "reason": "Google confirms November 10 paid access, distinct Fairwind admission and public model introductory pricing. No CU deployment or performance result claimed."
-      },
-      {
-        "title": "Claude Sheets and Whiteboards",
-        "sourceUrl": "https://www.anthropic.com/news",
+        "title": "November 16 deposit rate roundup",
+        "sourceUrl": "https://fortune.com/article/cd-rates-11-16-26/",
         "status": "rejected",
-        "reason": "Claude Sheets forecast-control angle already covered November 11."
-      },
-      {
-        "title": "GFT reports new AI FinOps tooling and partnerships",
-        "sourceUrl": "https://www.gft.com/dam/jcr%3Abb3e9c11-2adc-4c73-b2f7-c97aee876955/gft-interim-statement-q3-2026.pdf",
-        "status": "rejected",
-        "reason": "Vendor statement does not show a CU deployment or measurable result."
-      },
-      {
-        "title": "2027 FedNow incentive terms",
-        "sourceUrl": "https://www.frbservices.org/financial-services/fednow",
-        "status": "rejected",
-        "reason": "Already covered November 12; not a new event."
-      },
-      {
-        "title": "Credit-union trade press leadership appointments",
-        "sourceUrl": "https://www.cutimes.com/press-center/",
-        "status": "rejected",
-        "reason": "Routine personnel notices excluded by policy."
+        "reason": "Retail rate table, without a verified new institutional development or data basis for CU pricing analysis."
       }
     ],
-    "fallbackEvaluations": [
-      {
-        "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
-        "classification": "Insights — Library",
-        "sourceUrl": "https://www.federalregister.gov/documents/2024/09/30/2024-21888/simplification-of-share-insurance-rules",
-        "supportingSourceUrls": [
-          "https://mycreditunion.gov/about/news-blog/trust-rule-fact-sheet-changes-ncua-share-insurance-coverage",
-          "https://mycreditunion.gov/protect-your-money/share-insurance/share-insurance-estimator"
-        ],
-        "sourceDate": "2024-09-30",
-        "score": 65.4,
-        "threshold": 62,
-        "status": "selected",
-        "rationale": "Current NCUA guidance confirms December 1 effective date. Durable, distinct records-and-member-support framework; no novelty or guaranteed individual coverage inferred."
-      },
-      {
-        "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
-        "classification": "Insights — Library",
-        "sourceUrl": "https://ncua.gov/newsroom/press-release/2023/agencies-update-guidance-liquidity-risks-and-contingency-planning/addendum-interagency-policy-statement",
-        "supportingSourceUrls": [
-          "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/subpart-A/section-741.12",
-          "https://www.federalreserve.gov/monetarypolicy/discount-window-readiness.htm"
-        ],
-        "sourceDate": "2023-07-28",
-        "score": 64.3,
-        "threshold": 62,
-        "status": "selected",
-        "rationale": "Durable operating drill for borrow authorization, collateral movement and settlement evidence; related earlier coverage concerns AI forecasting rather than draw readiness."
-      }
-    ],
-    "publications": [
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
-        "title": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
-        "classification": "News",
-        "promotionPriority": "Standard",
-        "primaryFunctionalAudience": "Contact center, member-service and fraud operations leaders",
-        "socialDecision": "prepared-not-reserved-provider-review"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
-        "classification": "News",
-        "promotionPriority": "Standard",
-        "primaryFunctionalAudience": "Credit union boards, strategy and member operations leaders",
-        "socialDecision": "prepared-not-reserved-provider-review"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
-        "title": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
-        "classification": "news",
-        "promotionPriority": "Standard",
-        "primaryFunctionalAudience": "IT, cybersecurity and AI procurement leaders",
-        "socialDecision": "prepared-not-reserved-provider-review"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
-        "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
-        "classification": "Insights",
-        "promotionPriority": "Library",
-        "primaryFunctionalAudience": "Deposit operations, frontline service and compliance leaders",
-        "socialDecision": "prepared-not-reserved-provider-review"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
-        "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
-        "classification": "Insights",
-        "promotionPriority": "Library",
-        "primaryFunctionalAudience": "Treasury, ALCO and finance leaders",
-        "socialDecision": "prepared-not-reserved-provider-review"
-      }
-    ],
-    "status": "completed",
-    "updatedAt": "2026-11-13T13:20:14.721Z",
-    "socialDecision": "prepared-not-reserved-provider-review",
-    "outcomeSlot": 5,
+    "fallbackEvaluations": [],
+    "publications": [],
+    "status": "in-progress",
+    "updatedAt": "2026-11-16T12:27:44.706Z",
+    "socialDecision": "not-created-no-verified-publication",
+    "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-13",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
-        "candidateTitle": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
+        "plannedDate": "2026-11-16",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html",
+        "candidateTitle": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Live verified; do not republish.",
-        "evidence": {
-          "validationHistory": [
-            {
-              "prNumber": 335,
-              "head": "cd8fd10aadc866359529f50f1ddee38bcb2e3322",
-              "run": 43422115881,
-              "job": 131874396388,
-              "runAttempt": 1,
-              "accountableOwner": "daily-publisher",
-              "nextReviewAt": "2026-11-13T08:00:00-05:00",
-              "observedAt": "2026-11-13T12:12:29.764Z",
-              "terminalValidation": {
+        "nextReviewAt": "2026-11-16T08:00:00-05:00",
+        "nextAction": "Submit the exact article package to the existing CI fallback; inspect matching desktop/mobile artifact, accessibility and artwork before merge."
+      }
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-11-13",
+      "fullArticleCount": 5,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "member-service",
+        "board-strategy",
+        "hr-training",
+        "risk-compliance",
+        "lending-collections",
+        "it-data-cybersecurity",
+        "finance-treasury",
+        "vendor-management",
+        "payments-deposits"
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
+          "sourceUrl": "https://www.soundhound.com/newsroom/american-heritage-credit-unions-ai-agent-surpasses-half-a-million-member-conversations-in-under-a-year-with-soundhound-ai",
+          "status": "selected",
+          "reason": "Vendor attributes 11 months of observed service volume to Gigi; CU page confirms the service, not the metrics."
+        },
+        {
+          "title": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
+          "sourceUrl": "https://www.lgeccu.org/post/ascend_federal_credit_union_and_lge_community_credit_union_to_merge.html",
+          "status": "selected",
+          "reason": "Member and regulatory approvals verified by parties; January legal date and early-2028 system integration are separate."
+        },
+        {
+          "title": "Financial Plus and Monroe announce merger intent",
+          "sourceUrl": "https://www.mcul.org/News_Archive",
+          "status": "held",
+          "reason": "Association confirms intent; weaker than an approved deal and overlaps merger beat."
+        },
+        {
+          "title": "DuGood expands school-based services",
+          "sourceUrl": "https://www.beaumontenterprise.com/business/article/dugood-expands-beaumont-united-updates-west-brook-22527479.php",
+          "status": "held",
+          "reason": "Concrete youth financial education use case, but local-only reporting; confirm CU primary program detail."
+        },
+        {
+          "title": "ICBA urges response to credit union bank deal",
+          "sourceUrl": "https://www.icba.org/newsroom",
+          "status": "rejected",
+          "reason": "Advocacy rather than enacted change; avoid treating pressure as policy."
+        },
+        {
+          "title": "Quarterly HELOC balance acceleration",
+          "sourceUrl": "https://www.newyorkfed.org/newsevents/news/research/2026/20261110",
+          "status": "rejected",
+          "reason": "Already published November 12."
+        },
+        {
+          "title": "Freddie Mac weekly mortgage rates",
+          "sourceUrl": "https://apnews.com/article/366d26ae1c60182caa2819bed76ab346",
+          "status": "rejected",
+          "reason": "Weekly national data point lacks new CU-specific implication after recent HELOC report."
+        },
+        {
+          "title": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
+          "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "status": "selected",
+          "reason": "Google confirms November 10 paid access, distinct Fairwind admission and public model introductory pricing. No CU deployment or performance result claimed."
+        },
+        {
+          "title": "Claude Sheets and Whiteboards",
+          "sourceUrl": "https://www.anthropic.com/news",
+          "status": "rejected",
+          "reason": "Claude Sheets forecast-control angle already covered November 11."
+        },
+        {
+          "title": "GFT reports new AI FinOps tooling and partnerships",
+          "sourceUrl": "https://www.gft.com/dam/jcr%3Abb3e9c11-2adc-4c73-b2f7-c97aee876955/gft-interim-statement-q3-2026.pdf",
+          "status": "rejected",
+          "reason": "Vendor statement does not show a CU deployment or measurable result."
+        },
+        {
+          "title": "2027 FedNow incentive terms",
+          "sourceUrl": "https://www.frbservices.org/financial-services/fednow",
+          "status": "rejected",
+          "reason": "Already covered November 12; not a new event."
+        },
+        {
+          "title": "Credit-union trade press leadership appointments",
+          "sourceUrl": "https://www.cutimes.com/press-center/",
+          "status": "rejected",
+          "reason": "Routine personnel notices excluded by policy."
+        }
+      ],
+      "fallbackEvaluations": [
+        {
+          "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
+          "classification": "Insights — Library",
+          "sourceUrl": "https://www.federalregister.gov/documents/2024/09/30/2024-21888/simplification-of-share-insurance-rules",
+          "supportingSourceUrls": [
+            "https://mycreditunion.gov/about/news-blog/trust-rule-fact-sheet-changes-ncua-share-insurance-coverage",
+            "https://mycreditunion.gov/protect-your-money/share-insurance/share-insurance-estimator"
+          ],
+          "sourceDate": "2024-09-30",
+          "score": 65.4,
+          "threshold": 62,
+          "status": "selected",
+          "rationale": "Current NCUA guidance confirms December 1 effective date. Durable, distinct records-and-member-support framework; no novelty or guaranteed individual coverage inferred."
+        },
+        {
+          "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
+          "classification": "Insights — Library",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2023/agencies-update-guidance-liquidity-risks-and-contingency-planning/addendum-interagency-policy-statement",
+          "supportingSourceUrls": [
+            "https://www.ecfr.gov/current/title-12/chapter-VII/subchapter-A/part-741/subpart-A/section-741.12",
+            "https://www.federalreserve.gov/monetarypolicy/discount-window-readiness.htm"
+          ],
+          "sourceDate": "2023-07-28",
+          "score": 64.3,
+          "threshold": 62,
+          "status": "selected",
+          "rationale": "Durable operating drill for borrow authorization, collateral movement and settlement evidence; related earlier coverage concerns AI forecasting rather than draw readiness."
+        }
+      ],
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
+          "title": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
+          "classification": "News",
+          "promotionPriority": "Standard",
+          "primaryFunctionalAudience": "Contact center, member-service and fraud operations leaders",
+          "socialDecision": "prepared-not-reserved-provider-review"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
+          "classification": "News",
+          "promotionPriority": "Standard",
+          "primaryFunctionalAudience": "Credit union boards, strategy and member operations leaders",
+          "socialDecision": "prepared-not-reserved-provider-review"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
+          "title": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
+          "classification": "news",
+          "promotionPriority": "Standard",
+          "primaryFunctionalAudience": "IT, cybersecurity and AI procurement leaders",
+          "socialDecision": "prepared-not-reserved-provider-review"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+          "title": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
+          "classification": "Insights",
+          "promotionPriority": "Library",
+          "primaryFunctionalAudience": "Deposit operations, frontline service and compliance leaders",
+          "socialDecision": "prepared-not-reserved-provider-review"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
+          "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
+          "classification": "Insights",
+          "promotionPriority": "Library",
+          "primaryFunctionalAudience": "Treasury, ALCO and finance leaders",
+          "socialDecision": "prepared-not-reserved-provider-review"
+        }
+      ],
+      "status": "completed",
+      "updatedAt": "2026-11-13T13:20:14.721Z",
+      "socialDecision": "prepared-not-reserved-provider-review",
+      "outcomeSlot": 5,
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-13",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
+          "candidateTitle": "American Heritage’s AI Agent Handled 598,000 Member Conversations, Vendor Says",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-13T08:00:00-05:00",
+          "nextAction": "Live verified; do not republish.",
+          "evidence": {
+            "validationHistory": [
+              {
+                "prNumber": 335,
                 "head": "cd8fd10aadc866359529f50f1ddee38bcb2e3322",
                 "run": 43422115881,
                 "job": 131874396388,
                 "runAttempt": 1,
-                "conclusion": "success",
-                "runConclusion": "success",
-                "jobConclusion": "success",
-                "observedAt": "2026-11-13T12:10:23.607Z"
+                "accountableOwner": "daily-publisher",
+                "nextReviewAt": "2026-11-13T08:00:00-05:00",
+                "observedAt": "2026-11-13T12:12:29.764Z",
+                "terminalValidation": {
+                  "head": "cd8fd10aadc866359529f50f1ddee38bcb2e3322",
+                  "run": 43422115881,
+                  "job": 131874396388,
+                  "runAttempt": 1,
+                  "conclusion": "success",
+                  "runConclusion": "success",
+                  "jobConclusion": "success",
+                  "observedAt": "2026-11-13T12:10:23.607Z"
+                },
+                "status": "superseded",
+                "reason": "Reporting filter markup corrected; first-head CI cannot clear corrected head."
               },
-              "status": "superseded",
-              "reason": "Reporting filter markup corrected; first-head CI cannot clear corrected head."
-            },
-            {
-              "prNumber": 335,
-              "head": "2939164b363cf375f983cf7e46c5e55969614b93",
-              "run": 43423147333,
-              "job": 131877850039,
-              "runAttempt": 1,
-              "accountableOwner": "daily-publisher",
-              "nextReviewAt": "2026-11-13T08:00:00-05:00",
-              "observedAt": "2026-11-13T12:13:35.744Z",
-              "terminalValidation": {
+              {
+                "prNumber": 335,
                 "head": "2939164b363cf375f983cf7e46c5e55969614b93",
                 "run": 43423147333,
                 "job": 131877850039,
                 "runAttempt": 1,
-                "conclusion": "failure",
-                "runConclusion": "failure",
-                "jobConclusion": "failure",
-                "observedAt": "2026-11-13T12:13:02.342Z"
-              },
-              "status": "superseded",
-              "reason": "Attempt 1 used canonical main before replacement checkpoint landed; attempt 2 uses now-durable corrected head."
-            }
-          ],
-          "pending": {
-            "prNumber": 335,
-            "head": "2939164b363cf375f983cf7e46c5e55969614b93",
-            "run": 43423147333,
-            "job": 131878487821,
-            "runAttempt": 2,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-13T08:00:00-05:00"
+                "accountableOwner": "daily-publisher",
+                "nextReviewAt": "2026-11-13T08:00:00-05:00",
+                "observedAt": "2026-11-13T12:13:35.744Z",
+                "terminalValidation": {
+                  "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+                  "run": 43423147333,
+                  "job": 131877850039,
+                  "runAttempt": 1,
+                  "conclusion": "failure",
+                  "runConclusion": "failure",
+                  "jobConclusion": "failure",
+                  "observedAt": "2026-11-13T12:13:02.342Z"
+                },
+                "status": "superseded",
+                "reason": "Attempt 1 used canonical main before replacement checkpoint landed; attempt 2 uses now-durable corrected head."
+              }
+            ],
+            "pending": {
+              "prNumber": 335,
+              "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+              "run": 43423147333,
+              "job": 131878487821,
+              "runAttempt": 2,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-13T08:00:00-05:00"
+            },
+            "terminalValidation": {
+              "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+              "run": 43423147333,
+              "job": 131878487821,
+              "runAttempt": 2,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-13T12:19:15.480Z"
+            },
+            "terminalAcceptance": {
+              "head": "2939164b363cf375f983cf7e46c5e55969614b93",
+              "run": 43423147333,
+              "job": 131878487821,
+              "runAttempt": 2,
+              "visualReviewedAt": "2026-11-13T12:19:43.320Z",
+              "artifactId": 14034822924,
+              "artifactDigest": "sha256:069bee4f7dd416e78684fbe3633bfeb686ea254dfbd6300b89fb986e35e3282e"
+            },
+            "productionDeploymentId": "dpl_Bj4D9TH7u7HqdrC3hSvs7tRpwces"
           },
-          "terminalValidation": {
-            "head": "2939164b363cf375f983cf7e46c5e55969614b93",
-            "run": 43423147333,
-            "job": 131878487821,
-            "runAttempt": 2,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-13T12:19:15.480Z"
-          },
-          "terminalAcceptance": {
-            "head": "2939164b363cf375f983cf7e46c5e55969614b93",
-            "run": 43423147333,
-            "job": 131878487821,
-            "runAttempt": 2,
-            "visualReviewedAt": "2026-11-13T12:19:43.320Z",
-            "artifactId": 14034822924,
-            "artifactDigest": "sha256:069bee4f7dd416e78684fbe3633bfeb686ea254dfbd6300b89fb986e35e3282e"
-          },
-          "productionDeploymentId": "dpl_Bj4D9TH7u7HqdrC3hSvs7tRpwces"
+          "productionCommit": "e04ff004a4435da225d874f07bc7103450b46084",
+          "verifiedAt": "2026-11-13T12:21:26.511Z",
+          "liveProof": "Production alias READY on exact merge; article, artwork, News listing and homepage public response bytes equal to merge. Live article and Reporting filter verified; mobile and desktop exact-head artifact inspected."
         },
-        "productionCommit": "e04ff004a4435da225d874f07bc7103450b46084",
-        "verifiedAt": "2026-11-13T12:21:26.511Z",
-        "liveProof": "Production alias READY on exact merge; article, artwork, News listing and homepage public response bytes equal to merge. Live article and Reporting filter verified; mobile and desktop exact-head artifact inspected."
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-13",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
-        "candidateTitle": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-13T08:00:00-05:00",
-        "nextAction": "Live verified; do not republish.",
-        "evidence": {
-          "pending": {
-            "prNumber": 336,
-            "head": "aa477a9b704e4e1a7af82cad2a079014598b1d92",
-            "run": 43424842473,
-            "job": 131883623517,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-13T08:00:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "aa477a9b704e4e1a7af82cad2a079014598b1d92",
-            "run": 43424842473,
-            "job": 131883623517,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-13T12:30:59.792Z"
-          },
-          "terminalAcceptance": {
-            "head": "aa477a9b704e4e1a7af82cad2a079014598b1d92",
-            "run": 43424842473,
-            "job": 131883623517,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-13T12:33:25.793Z",
-            "artifactId": 14036841879,
-            "artifactDigest": "sha256:ab63ef3f6992a9b2449ee9afb7e66cfeae797ed4c0b6997739887b8f2f8df7e4"
-          },
-          "productionDeploymentId": "dpl_Cp8j1TCL9D7Nau4hbqu5pV89foP4"
-        },
-        "productionCommit": "b04b9219567750ff534a446e58c2b35c9c2c0a92",
-        "verifiedAt": "2026-11-13T12:34:47.514Z",
-        "liveProof": "Production alias READY on exact merge; public article, artwork, News listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
-      },
-      {
-        "slot": 3,
-        "plannedDate": "2026-11-13",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
-        "candidateTitle": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-13T08:15:00-05:00",
-        "nextAction": "Live verified; do not republish.",
-        "evidence": {
-          "pending": {
-            "prNumber": 337,
-            "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
-            "run": 43428064545,
-            "job": 131894321183,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-13T08:15:00-05:00"
-          },
-          "validationHistory": [
-            {
-              "prNumber": 337,
-              "head": "6c05fa115f98c9d613450c7353517766bd661b57",
-              "run": 43426845977,
-              "job": 131890236615,
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-13",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
+          "candidateTitle": "Ascend and LGE Win Merger Approvals, but Systems Will Stay Separate Into 2028",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-13T08:00:00-05:00",
+          "nextAction": "Live verified; do not republish.",
+          "evidence": {
+            "pending": {
+              "prNumber": 336,
+              "head": "aa477a9b704e4e1a7af82cad2a079014598b1d92",
+              "run": 43424842473,
+              "job": 131883623517,
               "runAttempt": 1,
               "accountableOwner": "daily-publisher",
-              "nextReviewAt": "2026-11-13T08:10:00-05:00",
-              "terminalValidation": {
+              "nextReviewAt": "2026-11-13T08:00:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "aa477a9b704e4e1a7af82cad2a079014598b1d92",
+              "run": 43424842473,
+              "job": 131883623517,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-13T12:30:59.792Z"
+            },
+            "terminalAcceptance": {
+              "head": "aa477a9b704e4e1a7af82cad2a079014598b1d92",
+              "run": 43424842473,
+              "job": 131883623517,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-13T12:33:25.793Z",
+              "artifactId": 14036841879,
+              "artifactDigest": "sha256:ab63ef3f6992a9b2449ee9afb7e66cfeae797ed4c0b6997739887b8f2f8df7e4"
+            },
+            "productionDeploymentId": "dpl_Cp8j1TCL9D7Nau4hbqu5pV89foP4"
+          },
+          "productionCommit": "b04b9219567750ff534a446e58c2b35c9c2c0a92",
+          "verifiedAt": "2026-11-13T12:34:47.514Z",
+          "liveProof": "Production alias READY on exact merge; public article, artwork, News listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
+        },
+        {
+          "slot": 3,
+          "plannedDate": "2026-11-13",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
+          "candidateTitle": "Google Opens Gemini 4 Carbon to Paying Users, With a Separate Route for Cyber Defenders",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-13T08:15:00-05:00",
+          "nextAction": "Live verified; do not republish.",
+          "evidence": {
+            "pending": {
+              "prNumber": 337,
+              "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
+              "run": 43428064545,
+              "job": 131894321183,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-13T08:15:00-05:00"
+            },
+            "validationHistory": [
+              {
+                "prNumber": 337,
                 "head": "6c05fa115f98c9d613450c7353517766bd661b57",
                 "run": 43426845977,
                 "job": 131890236615,
                 "runAttempt": 1,
-                "conclusion": "success",
-                "runConclusion": "success",
-                "jobConclusion": "success",
-                "observedAt": "2026-11-13T12:46:13.519Z"
-              },
-              "observedAt": "2026-11-13T12:46:58.550Z",
-              "status": "superseded",
-              "reason": "First rendered run passed; explicit local News-package gate then caught a description above 160 characters. Corrected shorter metadata requires new exact-head artifact."
-            }
-          ],
-          "terminalValidation": {
-            "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
-            "run": 43428064545,
-            "job": 131894321183,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-13T12:54:50.671Z"
+                "accountableOwner": "daily-publisher",
+                "nextReviewAt": "2026-11-13T08:10:00-05:00",
+                "terminalValidation": {
+                  "head": "6c05fa115f98c9d613450c7353517766bd661b57",
+                  "run": 43426845977,
+                  "job": 131890236615,
+                  "runAttempt": 1,
+                  "conclusion": "success",
+                  "runConclusion": "success",
+                  "jobConclusion": "success",
+                  "observedAt": "2026-11-13T12:46:13.519Z"
+                },
+                "observedAt": "2026-11-13T12:46:58.550Z",
+                "status": "superseded",
+                "reason": "First rendered run passed; explicit local News-package gate then caught a description above 160 characters. Corrected shorter metadata requires new exact-head artifact."
+              }
+            ],
+            "terminalValidation": {
+              "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
+              "run": 43428064545,
+              "job": 131894321183,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-13T12:54:50.671Z"
+            },
+            "terminalAcceptance": {
+              "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
+              "run": 43428064545,
+              "job": 131894321183,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-13T12:55:25.709Z",
+              "artifactId": 14037659815,
+              "artifactDigest": "sha256:62e8c3ee53fe1fb7b808137e2d34bf303a5562342c16a4797fed7a38ccd1f3f8"
+            },
+            "productionDeploymentId": "dpl_2VEAoddukNVTqu95b8Nbpsniz1Vp"
           },
-          "terminalAcceptance": {
-            "head": "77b6c7a72cc4eb85ef792278f55a9992af795682",
-            "run": 43428064545,
-            "job": 131894321183,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-13T12:55:25.709Z",
-            "artifactId": 14037659815,
-            "artifactDigest": "sha256:62e8c3ee53fe1fb7b808137e2d34bf303a5562342c16a4797fed7a38ccd1f3f8"
-          },
-          "productionDeploymentId": "dpl_2VEAoddukNVTqu95b8Nbpsniz1Vp"
-        },
-        "productionCommit": "f5191bce4992420041710ebe8d4711719310ea65",
-        "verifiedAt": "2026-11-13T12:56:14.292Z",
-        "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
-      },
-      {
-        "slot": 4,
-        "plannedDate": "2026-11-13",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
-        "candidateTitle": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-13T08:25:00-05:00",
-        "nextAction": "Live verified; do not republish.",
-        "evidence": {
-          "pending": {
-            "prNumber": 338,
-            "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
-            "run": 43429590650,
-            "job": 131899456322,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-13T08:25:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
-            "run": 43429590650,
-            "job": 131899456322,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-13T13:06:10.229Z"
-          },
-          "terminalAcceptance": {
-            "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
-            "run": 43429590650,
-            "job": 131899456322,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-13T13:06:37.180Z",
-            "artifactId": 14040101216,
-            "artifactDigest": "sha256:ffe60e6f16f64f07d19ed1808892117f9781efed926112f73e6dce0dcfe95dfa"
-          },
-          "productionDeploymentId": "dpl_22vUtnLLUaeBEmQfKuQ8J7EZxyEo"
-        },
-        "productionCommit": "cc7e40259c03daa35a9752c7335f5bf11c206a54",
-        "verifiedAt": "2026-11-13T13:08:07.754Z",
-        "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
-      },
-      {
-        "slot": 5,
-        "plannedDate": "2026-11-13",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
-        "candidateTitle": "Can Your Credit Union Draw on Its Emergency Funding Line?",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-13T08:35:00-05:00",
-        "nextAction": "Live verified; do not republish.",
-        "evidence": {
-          "pending": {
-            "prNumber": 339,
-            "head": "d684ad3b265ccada08a5278b5aa0ed90c2b16c56",
-            "run": 43431340482,
-            "job": 131905315816,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-13T08:35:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "d684ad3b265ccada08a5278b5aa0ed90c2b16c56",
-            "run": 43431340482,
-            "job": 131905315816,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-13T13:18:32.070Z"
-          },
-          "terminalAcceptance": {
-            "head": "d684ad3b265ccada08a5278b5aa0ed90c2b16c56",
-            "run": 43431340482,
-            "job": 131905315816,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-13T13:18:59.021Z",
-            "artifactId": 14038769176,
-            "artifactDigest": "sha256:b0c47ce366176d0cfbd2c7f3aafd8cfbe4e98cfdd99212d85d2499176a82dcbc"
-          },
-          "productionDeploymentId": "dpl_3cmvi94KQ5D8WiEv6751hAPCsT1S"
-        },
-        "productionCommit": "e3e4ba774f37158a5fae6fb247bc6dd8840863b6",
-        "verifiedAt": "2026-11-13T13:20:14.721Z",
-        "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
-      }
-    ],
-    "socialDistribution": {
-      "status": "not-reserved",
-      "blocker": "Complete provider inventory; all 78 retained records still need canonical-destination review. Duplicate clearance not established.",
-      "inventoryArtifactId": 14039628307,
-      "inventoryObservedAt": "2026-11-13T13:11:04.613Z",
-      "selectedUrl": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
-      "editorialOrder": [
-        {
-          "canonicalUrl": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
-          "rationale": "Audit fraud chat handoffs against underlying case records, separating self-service metrics from resolved disputes; fresh named credit-union event with a concrete member-protection action."
+          "productionCommit": "f5191bce4992420041710ebe8d4711719310ea65",
+          "verifiedAt": "2026-11-13T12:56:14.292Z",
+          "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
         },
         {
-          "canonicalUrl": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
-          "rationale": "Check December 1 trust-account readiness by deduplicating beneficiaries and directing ambiguous records to compliance; binding date is near and both rule and agency guidance support the action."
+          "slot": 4,
+          "plannedDate": "2026-11-13",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+          "candidateTitle": "Trust Account Insurance Changes December 1. Start With the Beneficiary Records",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-13T08:25:00-05:00",
+          "nextAction": "Live verified; do not republish.",
+          "evidence": {
+            "pending": {
+              "prNumber": 338,
+              "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
+              "run": 43429590650,
+              "job": 131899456322,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-13T08:25:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
+              "run": 43429590650,
+              "job": 131899456322,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-13T13:06:10.229Z"
+            },
+            "terminalAcceptance": {
+              "head": "ae18c86c17c2c37c7a2e2bba456dfa831d367a74",
+              "run": 43429590650,
+              "job": 131899456322,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-13T13:06:37.180Z",
+              "artifactId": 14040101216,
+              "artifactDigest": "sha256:ffe60e6f16f64f07d19ed1808892117f9781efed926112f73e6dce0dcfe95dfa"
+            },
+            "productionDeploymentId": "dpl_22vUtnLLUaeBEmQfKuQ8J7EZxyEo"
+          },
+          "productionCommit": "cc7e40259c03daa35a9752c7335f5bf11c206a54",
+          "verifiedAt": "2026-11-13T13:08:07.754Z",
+          "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
         },
         {
-          "canonicalUrl": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
-          "rationale": "Separate legal close and member-channel cutover; keep an authoritative routing and escalation reference through a two-year transition."
-        },
-        {
-          "canonicalUrl": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
-          "rationale": "Measure cost per accepted result at the December rate on a controlled test set; Google’s public release and separate defender program are distinct, with no claimed CU outcome."
-        },
-        {
-          "canonicalUrl": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
-          "rationale": "Measure elapsed time to usable contingency funds and test an independent backup route; strong treasury control, but standing guidance is less time-sensitive."
+          "slot": 5,
+          "plannedDate": "2026-11-13",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
+          "candidateTitle": "Can Your Credit Union Draw on Its Emergency Funding Line?",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-13T08:35:00-05:00",
+          "nextAction": "Live verified; do not republish.",
+          "evidence": {
+            "pending": {
+              "prNumber": 339,
+              "head": "d684ad3b265ccada08a5278b5aa0ed90c2b16c56",
+              "run": 43431340482,
+              "job": 131905315816,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-13T08:35:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "d684ad3b265ccada08a5278b5aa0ed90c2b16c56",
+              "run": 43431340482,
+              "job": 131905315816,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-13T13:18:32.070Z"
+            },
+            "terminalAcceptance": {
+              "head": "d684ad3b265ccada08a5278b5aa0ed90c2b16c56",
+              "run": 43431340482,
+              "job": 131905315816,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-13T13:18:59.021Z",
+              "artifactId": 14038769176,
+              "artifactDigest": "sha256:b0c47ce366176d0cfbd2c7f3aafd8cfbe4e98cfdd99212d85d2499176a82dcbc"
+            },
+            "productionDeploymentId": "dpl_3cmvi94KQ5D8WiEv6751hAPCsT1S"
+          },
+          "productionCommit": "e3e4ba774f37158a5fae6fb247bc6dd8840863b6",
+          "verifiedAt": "2026-11-13T13:20:14.721Z",
+          "liveProof": "Production alias READY on exact merge; public article, artwork, section listing and homepage bytes match. Exact desktop and mobile artifact visually reviewed."
         }
       ],
-      "providerReservationAttempted": false,
-      "missedHighRecovery": "None qualified in the prior seven days",
-      "qualifiedPreparedMedia": "None at the date; paused media untouched"
-    }
-  },
-  "history": [
+      "socialDistribution": {
+        "status": "not-reserved",
+        "blocker": "Complete provider inventory; all 78 retained records still need canonical-destination review. Duplicate clearance not established.",
+        "inventoryArtifactId": 14039628307,
+        "inventoryObservedAt": "2026-11-13T13:11:04.613Z",
+        "selectedUrl": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
+        "editorialOrder": [
+          {
+            "canonicalUrl": "https://creditunionainews.com/news/american-heritage-gigi-ai-member-conversations.html",
+            "rationale": "Audit fraud chat handoffs against underlying case records, separating self-service metrics from resolved disputes; fresh named credit-union event with a concrete member-protection action."
+          },
+          {
+            "canonicalUrl": "https://creditunionainews.com/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+            "rationale": "Check December 1 trust-account readiness by deduplicating beneficiaries and directing ambiguous records to compliance; binding date is near and both rule and agency guidance support the action."
+          },
+          {
+            "canonicalUrl": "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
+            "rationale": "Separate legal close and member-channel cutover; keep an authoritative routing and escalation reference through a two-year transition."
+          },
+          {
+            "canonicalUrl": "https://creditunionainews.com/news/gemini-4-carbon-credit-union-evaluation.html",
+            "rationale": "Measure cost per accepted result at the December rate on a controlled test set; Google’s public release and separate defender program are distinct, with no claimed CU outcome."
+          },
+          {
+            "canonicalUrl": "https://creditunionainews.com/insight-credit-union-contingency-funding-line-test.html",
+            "rationale": "Measure elapsed time to usable contingency funds and test an independent backup route; strong treasury control, but standing guidance is less time-sensitive."
+          }
+        ],
+        "providerReservationAttempted": false,
+        "missedHighRecovery": "None qualified in the prior seven days",
+        "qualifiedPreparedMedia": "None at the date; paused media untouched"
+      }
+    },
     {
       "date": "2026-11-11",
       "fullArticleCount": 2,
