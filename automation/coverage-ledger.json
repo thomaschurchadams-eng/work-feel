@@ -3,6 +3,36 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fed-check-fees-processing-windows-2027",
+      "title": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
+      "url": "/news/fed-check-fees-processing-windows-2027.html",
+      "publishedAt": "2026-11-16T07:44:32-05:00",
+      "section": "news",
+      "beat": "fed-check-fees-processing-windows-2027",
+      "functions": [
+        "payments-deposits",
+        "finance-treasury"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments operations, deposit operations and treasury leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-fednow-2027-discount-economics.html",
+        "/insight-credit-union-contingency-funding-line-test.html"
+      ],
+      "sourceTier": 1,
+      "score": 69.8,
+      "confidence": 0.97,
+      "sourceLimit": "Official Board notice and schedules establish Reserve Banks changes; not correspondent pricing or evidence of a specific credit union’s costs or funds availability."
+    },
+    {
       "id": "ncua-fair-lending-rule-repeal",
       "title": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
       "url": "/news/ncua-fair-lending-rule-repeal.html",

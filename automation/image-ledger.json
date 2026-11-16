@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fed-check-fees-processing-windows-2027",
+      "articleUrl": "/news/fed-check-fees-processing-windows-2027.html",
+      "imagePath": "/assets/fed-check-fees-processing-windows-2027.jpg",
+      "publishedAt": "2026-11-16T07:44:32-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "ink-and-linocut",
+      "subject": "operations-environment",
+      "composition": "diagonal-motion",
+      "perspective": "cutaway",
+      "palette": "monochrome-ink",
+      "lighting": "cinematic-side-light",
+      "texture": "ink-wash",
+      "scene": "Plain checks moving down a short angled chute toward a narrowed opening",
+      "conceptScore": 66.3,
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "operations-environment",
+          "scene": "Plain checks moving down a short angled chute toward a narrowed opening",
+          "score": 66.3,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "scene": "A stack of unmarked checks tucked below a single clock in side view",
+          "score": 60.1,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "frontline-workflow",
+          "scene": "Two trays of blank check-sized slips and a small unmarked clock seen through a glass processing counter",
+          "score": 48.3,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept; original editorial illustration inspected for this article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "d1b1cc636cfe79e6fc7773d51c62d6d19f3f35e7fa57c2d0d9417390096b1c57"
+    },
+    {
       "id": "ncua-fair-lending-rule-repeal",
       "articleUrl": "/news/ncua-fair-lending-rule-repeal.html",
       "imagePath": "/assets/ncua-fair-lending-rule-repeal.jpg",
