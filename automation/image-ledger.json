@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "fed-barr-ai-agent-deposit-outflow-risk",
+      "articleUrl": "/news/fed-barr-ai-agent-deposit-outflow-risk.html",
+      "imagePath": "/assets/fed-barr-ai-agent-deposit-outflow-risk.jpg",
+      "publishedAt": "2026-11-16T07:55:22-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-photography",
+      "subject": "financial-object-study",
+      "composition": "modular-grid",
+      "perspective": "macro",
+      "palette": "burgundy-sand",
+      "lighting": "natural-window-light",
+      "texture": "fabric-and-wood",
+      "scene": "Rows of blank metallic discs converging into a single deposit slot in a tabletop editorial metaphor",
+      "conceptScore": 73.6,
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "financial-object-study",
+          "scene": "Rows of blank metallic discs converging into a single deposit slot in a tabletop editorial metaphor",
+          "score": 73.6,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "scene": "Layers of translucent rectangular rails; several coinlike discs cross one channel while others remain in a holding recess",
+          "score": 68.2,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "human-machine-handoff",
+          "scene": "A slide carries small blank tokens toward a switch which sits beside a clocklike dial",
+          "score": 44.8,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept; original editorial illustration inspected for this article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "c8882fe394f3bc6da44712401425cdaacd107914e7f2e7797ae85c648c69f399"
+    },
+    {
       "id": "fed-check-fees-processing-windows-2027",
       "articleUrl": "/news/fed-check-fees-processing-windows-2027.html",
       "imagePath": "/assets/fed-check-fees-processing-windows-2027.jpg",

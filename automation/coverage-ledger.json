@@ -3,6 +3,36 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fed-barr-ai-agent-deposit-outflow-risk",
+      "title": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
+      "url": "/news/fed-barr-ai-agent-deposit-outflow-risk.html",
+      "publishedAt": "2026-11-16T07:55:22-05:00",
+      "section": "news",
+      "beat": "fed-barr-ai-agent-deposit-outflow-risk",
+      "functions": [
+        "finance-treasury",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "agents-automation"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit union treasury, ALCO, digital banking and payment-risk leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-contingency-funding-line-test.html",
+        "/news/bank-regulators-agentic-ai-shutdown-controls.html"
+      ],
+      "sourceTier": 1,
+      "score": 74.8,
+      "confidence": 0.96,
+      "sourceLimit": "A November 16 speech describes a possible mechanism, not new Fed/NCUA guidance, a measured credit union outflow or an adoption forecast."
+    },
+    {
       "id": "fed-check-fees-processing-windows-2027",
       "title": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
       "url": "/news/fed-check-fees-processing-windows-2027.html",
