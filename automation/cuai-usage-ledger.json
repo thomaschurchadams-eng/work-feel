@@ -5377,6 +5377,41 @@
       ],
       "summary": "Consumed the completed five-article publisher receipt and exact-current verified-operations artifact for main 1f49dfa261d17c171ccae36addfa2ee15659a0ce. Held the November 13 CISA Check Point KEV item as duplicative of CUAI's existing Check Point Alert and held the UnrealIRCd item for lack of demonstrated credit-union operating relevance; published no Alert. Refreshed the empty homepage watch review so the evergreen vendor-due-diligence fallback remains active without recycling content already present in the homepage grid. Portfolio review found all five Monday items were Standard News; the existing next candidate remains a Library/Insight on AI-assisted offer suppression, member-consent evidence and closed-loop campaign outcomes to address the marketing-growth and executive-format gap. Exact-current analytics show 196 GA4 sessions and 65 engaged sessions for November 9–15, plus 28 Search Console clicks and 2,230 impressions; rolling-window overlap makes the increase directional, not causal. Production is READY; the Hobby retention limit constrains runtime-error evidence to the latest 50 minutes, which contained no error/fatal events. No social write, provider retry, outreach, spend or cadence change.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-16T16:35:44-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 16 Barr LinkedIn article was manually delivered once to the approved CreditUnionAI News company channel, but current main had no reservation/sent record and the exact Buffer post ID was not exposed for authoritative closeout.",
+      "status": "blocked",
+      "incidentKey": "cuai-social:manual-barr-delivery:2026-11-16",
+      "workUnits": {
+        "currentMainCommitsReviewed": 5,
+        "scheduledPublisherOutcomesReviewed": 1,
+        "scheduledOperatingOutcomesReviewed": 1,
+        "publicationHistoryEntriesPreserved": 84,
+        "socialQueueItemsPreserved": 55,
+        "socialQueueChecks": 2,
+        "duplicateSocialReservationsObserved": 0,
+        "manualCompanyPageDeliveriesObserved": 1,
+        "readOnlyProviderIdentityPathsChecked": 2,
+        "authoritativeBufferPostIdsRecovered": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "productionDeploymentChecks": 1,
+        "publicSurfaceChecks": 4,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer read-only evidence"
+      ],
+      "summary": "Observed one manual CreditUnionAI News company-page delivery for the Barr article at approximately 3:59 p.m. ET with LinkedIn share 7528200012464381952 and approved channel 6a53df0880cc80cdcaa76fb8. Current main 22795c3d7159c00a5ce65ca55908d25f478887f9 still has 55 queue items (53 sent, one old scheduled, one planned), no November 16 queue record and no active-date duplicate. The exact Buffer post ID was not exposed in the visible receipt, no post-send natural provider artifact exists, and no authenticated provider session was available in this run. Reliability therefore made no provider call, did not repost, did not infer a Buffer ID from the LinkedIn share/channel IDs and did not mutate the queue. Publishing and production remain healthy: five articles are recorded/live, 84 publication-history entries are preserved, current Production is READY, four checked public surfaces return HTTP 200 and no runtime errors were observed in the available window. Safe closeout remains blocked until an authorized read-only provider receipt returns the exact Buffer post ID and sent timestamp for this same single post; then reconcile only that queue record without a new delivery.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
