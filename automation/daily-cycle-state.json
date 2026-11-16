@@ -114,7 +114,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T13:17:54.684Z",
+    "updatedAt": "2026-11-16T13:26:30.363Z",
     "socialDecision": "not-created-no-verified-publication",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
@@ -321,13 +321,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-16",
-        "status": "pending-validation",
+        "status": "validated",
         "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
         "candidateTitle": "American Heritage Adds Installments After a Debit Purchase",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-16T08:50:00-05:00",
-        "nextAction": "Observe this exact run/job/attempt; inspect actual artifact on desktop and mobile before acceptance.",
+        "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 357,
@@ -338,7 +338,32 @@
             "accountableOwner": "daily-publisher",
             "nextReviewAt": "2026-11-16T08:50:00-05:00"
           },
-          "validationHistory": []
+          "validationHistory": [],
+          "terminalValidation": {
+            "head": "9f87e58322966d747aa624113368d4b0c72f4068",
+            "run": 43874413253,
+            "job": 133323588825,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-16T13:26:28.513Z"
+          },
+          "terminalAcceptance": {
+            "head": "9f87e58322966d747aa624113368d4b0c72f4068",
+            "run": 43874413253,
+            "job": 133323588825,
+            "runAttempt": 1,
+            "artifactId": 14229143934,
+            "artifactDigest": "sha256:963b9e2a99f87560aa93a03c99b2fef9b1dd94ab6559f4c768aa13b3f1b28fbb",
+            "visualReviewedAt": "2026-11-16T13:26:26.794Z",
+            "renderedChecks": 50,
+            "reviewedViewports": [
+              390,
+              1440
+            ],
+            "visualProof": "Viewed exact 390px and 1440px headline, body opening, illustrative hero, homepage feature and missing-image card presentation; confirmed exact responsive, accessibility, normal artwork and 404/recovery evidence."
+          }
         }
       }
     ]
