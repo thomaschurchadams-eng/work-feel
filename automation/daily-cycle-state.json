@@ -28,10 +28,10 @@
         "reason": "Final rule published November 16; signed official text controls December 16 effective date. Reroutes internal citations without cancelling FHA/ECOA controls."
       },
       {
-        "title": "Fed sets 2027 prices and changes check processing",
+        "title": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
         "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
-        "status": "held",
-        "reason": "Potential distinct check operations story; verify specific schedules and distinguish from already published FedNow discount analysis before selection."
+        "status": "selected",
+        "reason": "Separate from FedNow pricing: confirmed Check Services average price effect, January fee changes and May processing hours in official schedules."
       },
       {
         "title": "Proposed vendor-risk comment period extended",
@@ -102,9 +102,9 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-16T12:40:24.345Z",
+    "updatedAt": "2026-11-16T12:43:00.490Z",
     "socialDecision": "not-created-no-verified-publication",
-    "outcomeSlot": 1,
+    "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -155,6 +155,17 @@
         },
         "productionCommit": "1ab8346d4729fc95bd88bdaf5a6aa28e2b979e3f",
         "verifiedAt": "2026-11-16T12:41:51.865Z"
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-16",
+        "status": "prepared",
+        "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html",
+        "candidateTitle": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-16T08:20:00-05:00",
+        "nextAction": "Obtain exact design-checks artifact and review desktop/mobile, accessibility and artwork; no merge until acceptance."
       }
     ]
   },
