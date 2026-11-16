@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ncua-fair-lending-rule-repeal",
+      "articleUrl": "/news/ncua-fair-lending-rule-repeal.html",
+      "imagePath": "/assets/ncua-fair-lending-rule-repeal.jpg",
+      "publishedAt": "2026-11-16T07:29:29-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "architectural-isometric",
+      "subject": "physical-metaphor",
+      "composition": "split-comparison",
+      "perspective": "isometric",
+      "palette": "amber-charcoal",
+      "lighting": "graphic-flat-light",
+      "texture": "matte-clay",
+      "scene": "Two small model houses, one beside a removable divider and both on the same fixed foundation",
+      "conceptScore": 62.5,
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "physical-metaphor",
+          "scene": "Two small model houses, one beside a removable divider and both on the same fixed foundation",
+          "score": 62.5,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "architecture-and-infrastructure",
+          "scene": "A cutaway of a modest house with its deep foundation intact as a small decorative panel is removed",
+          "score": 53.4,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "documents-and-controls",
+          "scene": "A single unlettered index leaf pulled from a book of firmly bound policies, a house motif at the margin",
+          "score": 51.5,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept; generated editorial illustration inspected and not a depiction of actual institutions or properties.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "ce06ff0af3e6e74e523b361d73582af4c8889b4fd484861c9f728da264f631a7"
+    },
+    {
       "id": "credit-union-contingency-funding-line-test",
       "articleUrl": "/insight-credit-union-contingency-funding-line-test.html",
       "imagePath": "/assets/credit-union-contingency-funding-line-test.jpg",

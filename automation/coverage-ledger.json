@@ -3,6 +3,36 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ncua-fair-lending-rule-repeal",
+      "title": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
+      "url": "/news/ncua-fair-lending-rule-repeal.html",
+      "publishedAt": "2026-11-16T07:29:29-05:00",
+      "section": "news",
+      "beat": "ncua-fair-lending-rule-repeal",
+      "functions": [
+        "risk-compliance",
+        "lending-collections"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Federal credit union compliance, fair lending and mortgage operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/fhfa-mortgage-insurance-cancellation-pilot.html",
+        "/insight-credit-union-proposed-vendor-risk-guidance.html"
+      ],
+      "sourceTier": 1,
+      "score": 75.3,
+      "confidence": 0.98,
+      "sourceLimit": "Final rule and official agency materials establish scope and effective date, not institution-specific legal advice or implementation evidence. The official published rule controls the date."
+    },
+    {
       "id": "credit-union-contingency-funding-line-test",
       "title": "Can Your Credit Union Draw on Its Emergency Funding Line?",
       "url": "/insight-credit-union-contingency-funding-line-test.html",
