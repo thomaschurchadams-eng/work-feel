@@ -3,6 +3,36 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "merchants-ncua-interchange-preemption-lawsuit",
+      "title": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
+      "url": "/news/merchants-ncua-interchange-preemption-lawsuit.html",
+      "publishedAt": "2026-11-16T08:06:23-05:00",
+      "section": "news",
+      "beat": "merchants-ncua-interchange-preemption-lawsuit",
+      "functions": [
+        "risk-compliance",
+        "payments-deposits"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Federal credit union card program, payments, legal and compliance leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/illinois-interchange-fee-appeal-credit-unions.html",
+        "/news/eighth-circuit-debit-interchange-cap.html"
+      ],
+      "sourceTier": 1,
+      "score": 65.6,
+      "confidence": 0.94,
+      "sourceLimit": "Filed complaint evidences plaintiff allegations and requested relief, not findings or a new injunction. NCUA source states agency position, not final judicial resolution."
+    },
+    {
       "id": "fed-barr-ai-agent-deposit-outflow-risk",
       "title": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
       "url": "/news/fed-barr-ai-agent-deposit-outflow-risk.html",
