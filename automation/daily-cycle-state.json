@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-16",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -95,7 +95,12 @@
       }
     ],
     "fallbackEvaluations": [],
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html"
+      }
+    ],
     "status": "in-progress",
     "updatedAt": "2026-11-16T12:40:24.345Z",
     "socialDecision": "not-created-no-verified-publication",
@@ -104,7 +109,7 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-16",
-        "status": "validated",
+        "status": "live-verified",
         "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html",
         "candidateTitle": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
         "outcomeScope": "cycle",
@@ -147,7 +152,9 @@
             ],
             "visualProof": "Exact clean artifact: reviewed article opening/body and hero, homepage placement, News listing and missing-artwork recovery on both viewports. No axe violations, overflow, broken normal images or browser errors."
           }
-        }
+        },
+        "productionCommit": "1ab8346d4729fc95bd88bdaf5a6aa28e2b979e3f",
+        "verifiedAt": "2026-11-16T12:41:51.865Z"
       }
     ]
   },
