@@ -3,6 +3,55 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "merchants-ncua-interchange-preemption-lawsuit",
+      "articleUrl": "/news/merchants-ncua-interchange-preemption-lawsuit.html",
+      "imagePath": "/assets/merchants-ncua-interchange-preemption-lawsuit.jpg",
+      "publishedAt": "2026-11-16T08:06:23-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "macro-still-life",
+      "subject": "documents-and-controls",
+      "composition": "split-comparison",
+      "perspective": "cutaway",
+      "palette": "plum-gold",
+      "lighting": "warm-practical",
+      "texture": "fabric-and-wood",
+      "scene": "Two staggered paper folders on independent wooden rails",
+      "conceptScore": 53.3,
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "documents-and-controls",
+          "scene": "Two staggered paper folders on independent wooden rails",
+          "score": 53.3,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "physical-metaphor",
+          "scene": "Two separate model paths lead toward two different courthouse doors",
+          "score": 53,
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "architecture-and-infrastructure",
+          "scene": "Two simple faceted paper courthouse facades viewed through a sheet of translucent vellum, arranged as separate lanes on a gray mat",
+          "score": 47.3,
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "selectionReason": "Highest-scoring valid concept; original editorial illustration inspected for this article.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "b27c0514470b0440d986d0c41b20c8e4b93e57bad12e19b4b35601b10e1efc66"
+    },
+    {
       "id": "fed-barr-ai-agent-deposit-outflow-risk",
       "articleUrl": "/news/fed-barr-ai-agent-deposit-outflow-risk.html",
       "imagePath": "/assets/fed-barr-ai-agent-deposit-outflow-risk.jpg",
