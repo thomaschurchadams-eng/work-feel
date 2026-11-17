@@ -3,6 +3,52 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "cobalt-illuma-voice-authentication-fallback",
+      "articleUrl": "/news/cobalt-illuma-voice-authentication-fallback.html",
+      "imagePath": "/assets/cobalt-illuma-voice-authentication-fallback.jpg",
+      "publishedAt": "2026-11-17T07:31:05-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "editorial-photography",
+      "subject": "risk-and-security",
+      "composition": "foreground-background-tension",
+      "perspective": "oblique",
+      "palette": "petrol-amber",
+      "lighting": "warm-directional",
+      "texture": "matte-plastic-and-fiber",
+      "scene": "A dark desktop phone and its looping cord beneath a warm reading lamp",
+      "conceptScore": 76.2,
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "risk-and-security",
+          "score": 76.2,
+          "rejected": false
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "human-machine-handoff",
+          "score": 68.4,
+          "rejected": false
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "abstract-data-system",
+          "score": 46.7,
+          "rejected": true,
+          "reasons": [
+            "most-recent-combination-repeated"
+          ]
+        }
+      ],
+      "selectionReason": "Highest valid concept; an original phone still life depicts the service channel without suggesting a specific vendor interface or individuals.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "1984c375105fb2030ba1d5e360c0ddf95796d28e85020412550ce4e088faf0f8"
+    },
+    {
       "id": "veritran-prismacampaigns-credit-union-data-controls",
       "articleUrl": "/news/veritran-prismacampaigns-credit-union-data-controls.html",
       "imagePath": "/assets/veritran-prismacampaigns-credit-union-data-controls.jpg",
