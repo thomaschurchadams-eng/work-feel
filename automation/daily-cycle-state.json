@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-17",
     "fullArticleCount": 5,
-    "alertCount": 0,
+    "alertCount": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "marketing-growth",
@@ -116,10 +116,17 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html"
+      },
+      {
+        "type": "alert",
+        "title": "FinCEN Proposes Changes to Beneficial-Owner Checks",
+        "url": "https://creditunionainews.com/alerts/#fincen-beneficial-owner-customer-due-diligence-proposal",
+        "sourceUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-proposed-rule-strengthen-customer-due-diligence-requirements-covered-financial-institutions",
+        "sourceDate": "Nov 17, 2026"
       }
     ],
     "status": "completed",
-    "updatedAt": "2026-11-17T14:06:47.209Z",
+    "updatedAt": "2026-11-17T20:46:38.299Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -493,6 +500,15 @@
           "reason": "Boards can compare bylaws with actual participation before assessing an association; January 4 effective date is still ahead."
         }
       ]
+    },
+    "alertCycle": {
+      "owner": "cuai-operating-system",
+      "status": "released-awaiting-exact-deployment-receipt",
+      "sourceReviewAt": "2026-11-17T20:46:38.299Z",
+      "dedupeKey": "cuai-alert:fincen-cdd-proposal:2026-11-17",
+      "candidatesEvaluated": 2,
+      "alertsPublished": 1,
+      "note": "Selected the new FinCEN CDD proposal after primary-source and NCUA applicability checks. Held the Federal Reserve tokenized-markets speech because it does not create a comparably urgent credit-union operating deadline. Publication time remains intentionally unfilled until the first production deployment is verified."
     }
   },
   "history": [
