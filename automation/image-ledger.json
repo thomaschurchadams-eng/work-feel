@@ -3,6 +3,52 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "veritran-prismacampaigns-credit-union-data-controls",
+      "articleUrl": "/news/veritran-prismacampaigns-credit-union-data-controls.html",
+      "imagePath": "/assets/veritran-prismacampaigns-credit-union-data-controls.jpg",
+      "publishedAt": "2026-11-17T07:11:20-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "mixed-media-collage",
+      "subject": "abstract-data-system",
+      "composition": "asymmetric-editorial",
+      "perspective": "cutaway",
+      "palette": "cobalt-coral",
+      "lighting": "graphic-flat-light",
+      "texture": "paper-fiber",
+      "scene": "Layered cobalt and coral paper channels approach an opening, with some routes stopped before it",
+      "conceptScore": 76.8,
+      "conceptAlternatives": [
+        {
+          "medium": "mixed-media-collage",
+          "subject": "abstract-data-system",
+          "score": 76.8,
+          "rejected": false
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "frontline-workflow",
+          "score": 73.6,
+          "rejected": false
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "score": 45.4,
+          "rejected": true,
+          "reasons": [
+            "exact-combination-repeated"
+          ]
+        }
+      ],
+      "selectionReason": "Highest scoring valid concept; original editorial illustration visually inspected and optimized for the article/card frame.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "18b6b769f4a5c13c5b1ef07f953f6223e3a6845e7f0a65dfed9aac5ec52f8282"
+    },
+    {
       "id": "american-heritage-debit-purchase-installments",
       "articleUrl": "/news/american-heritage-debit-purchase-installments.html",
       "imagePath": "/assets/american-heritage-debit-purchase-installments.jpg",

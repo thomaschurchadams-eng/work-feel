@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "veritran-prismacampaigns-credit-union-data-controls",
+      "title": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
+      "url": "/news/veritran-prismacampaigns-credit-union-data-controls.html",
+      "publishedAt": "2026-11-17T07:11:20-05:00",
+      "section": "news",
+      "beat": "veritran-prismacampaigns-credit-union-data-controls",
+      "functions": [
+        "marketing-growth",
+        "vendor-management"
+      ],
+      "technologies": [
+        "personalization"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union marketing, member growth, and vendor-management leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-vendor-exit-playbook.html",
+        "/insight-credit-union-ai-member-communications-holdout-test.html"
+      ],
+      "sourceTier": 3,
+      "sourceLimit": "Buyer announcement and vendor product materials establish the acquisition and stated product scope, not integration timing, new access or operating results."
+    },
+    {
       "id": "american-heritage-debit-purchase-installments",
       "title": "American Heritage Adds Installments After a Debit Purchase",
       "url": "/news/american-heritage-debit-purchase-installments.html",
