@@ -107,7 +107,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:46:28.884Z",
+    "updatedAt": "2026-11-17T13:01:56.408Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -213,13 +213,50 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-17",
-        "status": "prepared",
+        "status": "validated",
         "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:01:28.884Z",
-        "nextAction": "Prepare plain-language reporting from the published final rule; require exact-artifact review before merge."
+        "nextReviewAt": "2026-11-17T13:02:00.975Z",
+        "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
+        "evidence": {
+          "pending": {
+            "prNumber": 362,
+            "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
+            "run": 44086779022,
+            "job": 134051153311,
+            "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
+            "run": 44086779022,
+            "job": 134051153311,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-17T13:01:21.351Z",
+            "prNumber": 362
+          },
+          "terminalAcceptance": {
+            "prNumber": 362,
+            "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
+            "run": 44086779022,
+            "job": 134051153311,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-17T13:01:56.408Z",
+            "artifactId": 14329519631,
+            "artifactSha256": "sha256:1730a3f0b0c477416cc07670be4f4f864c53e3479b356a0b9ad91f4411390a70",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Opened the exact mobile and desktop article, artwork and both listing cards. Verified that publication and December effective dates are visually distinct and the ad-versus-sign distinction survives the lead and body layouts. Matching reports confirm zero overflow, accessibility violations or unexpected image issues, with intentional 404/recovery passed."
+          }
+        }
       }
     ]
   },
