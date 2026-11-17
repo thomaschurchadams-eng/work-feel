@@ -115,7 +115,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:48:24.606Z",
+    "updatedAt": "2026-11-17T13:52:19.575Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -407,13 +407,22 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-17",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "NCUA Changes How Federal Credit Unions Can Add Associations",
         "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T14:06:24.606Z",
-        "nextAction": "Create and check one exact atomic Standard News article package; record actual design-checks identity before any release."
+        "nextReviewAt": "2026-11-17T14:07:19.575Z",
+        "nextAction": "Review exact CI and design artifact at desktop/mobile sizes; do not release without success and visual acceptance.",
+        "evidence": {
+          "pending": {
+            "prNumber": 365,
+            "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
+            "run": 44096993929,
+            "job": 134086633838,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
