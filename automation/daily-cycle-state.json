@@ -107,7 +107,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:46:28.884Z",
+    "updatedAt": "2026-11-17T12:50:00.975Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -213,13 +213,22 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-17",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:01:28.884Z",
-        "nextAction": "Prepare plain-language reporting from the published final rule; require exact-artifact review before merge."
+        "nextReviewAt": "2026-11-17T13:02:00.975Z",
+        "nextAction": "Read exact terminal CI, verify complete artifact and desktop/mobile evidence, then verify production before closeout.",
+        "evidence": {
+          "pending": {
+            "prNumber": 362,
+            "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
+            "run": 44086779022,
+            "job": 134051153311,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
