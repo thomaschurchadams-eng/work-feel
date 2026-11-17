@@ -1679,7 +1679,7 @@
     if (!document.body.classList.contains('page-article')) return;
     const articleBody = document.querySelector('main .article-body');
     if (!articleBody || document.querySelector('.article-newsletter-cta')) return;
-    const hasBriefingLink = [...articleBody.querySelectorAll('.article-cta a[href]')].some(link =>
+    const existingBriefingLink = [...articleBody.querySelectorAll('.article-cta a[href]')].find(link =>
       new URL(link.href, document.baseURI).pathname === '/newsletter.html');
     const callout = document.createElement('aside');
     callout.className = 'article-newsletter-cta';
@@ -1689,9 +1689,10 @@
       <h2 class="section-title">Credit-union news in your LinkedIn feed.</h2>
       <p>Follow CUAI for reporting and practical analysis on the developments affecting credit unions.</p>
       <div class="button-row"><a class="btn btn-primary" data-linkedin-placement="article_end" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener noreferrer">Follow CUAI on LinkedIn</a>
-      ${hasBriefingLink ? '' : '<a class="link" href="/newsletter.html?source=article-bottom">Browse web briefings →</a>'}</div>
+      <a class="link" href="/newsletter.html?source=article-bottom">Browse web briefings →</a></div>
     `;
-    articleBody.insertAdjacentElement('afterend', callout);
+    if (existingBriefingLink) existingBriefingLink.closest('.article-cta').replaceWith(callout);
+    else articleBody.insertAdjacentElement('afterend', callout);
   };
 
   addArticleNewsletterCta();
