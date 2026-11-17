@@ -2639,3 +2639,20 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
 
 /* Keep publication and source dates distinct, including narrow Alert cards. */
 .alert-dates { display: inline-flex; flex-wrap: wrap; column-gap: 1rem; row-gap: .25rem; }
+
+/* Visible follow action; collapse navigation before labels become crowded. */
+.nav-links .nav-linkedin { gap: 6px; white-space: nowrap; }
+.nav-linkedin .social-icon { flex-shrink: 0; }
+@media (min-width: 901px) and (max-width: 1199px) {
+  .nav-links { position: absolute; right: 0; top: calc(100% + 8px); z-index: 40;
+    background: var(--white); border: 1px solid var(--navy-deep); box-shadow: var(--shadow);
+    padding: 12px; flex-direction: column; align-items: flex-start; min-width: 220px;
+    max-height: calc(100vh - 130px); overflow-y: auto; display: none; }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: flex; }
+  .nav-links a { width: 100%; font-size: 0.76rem; }
+  .nav-links .nav-subscribe { margin-left: 0; text-align: center; }
+}
+.article-newsletter-cta .link { color: #dbe8f2; text-decoration: underline; text-underline-offset: 3px; }
+.article-newsletter-cta .link:hover { color: #ffffff; }
+.article-newsletter-cta .btn-primary { color: #ffffff; text-decoration: none; }
