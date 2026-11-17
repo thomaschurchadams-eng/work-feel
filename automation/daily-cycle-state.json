@@ -111,7 +111,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:32:58.765Z",
+    "updatedAt": "2026-11-17T13:45:25.922Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -353,13 +353,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-17",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
         "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-17T13:45:58.766Z",
-        "nextAction": "Read exact terminal CI, verify complete artifact and desktop/mobile evidence, then verify production before closeout.",
+        "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
         "evidence": {
           "pending": {
             "prNumber": 364,
@@ -367,6 +367,34 @@
             "run": 44093743947,
             "job": 134075331457,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
+            "run": 44093743947,
+            "job": 134075331457,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-17T13:41:56.310Z",
+            "prNumber": 364
+          },
+          "terminalAcceptance": {
+            "prNumber": 364,
+            "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
+            "run": 44093743947,
+            "job": 134075331457,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-17T13:45:25.922Z",
+            "artifactId": 14332183676,
+            "artifactSha256": "sha256:d227cefd936b1a2e2f02aa013a3bc553a66cc0b1b76a992f3a09cb432646ab15",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Reviewed exact artifact at 390px and 1440px: homepage and News lead cards keep basket art and full heading visible; article hero, date, source links and mobile body section render without obstruction. Exact rendered record verified accessibility, navigation and artwork failure/recovery."
           }
         }
       }
