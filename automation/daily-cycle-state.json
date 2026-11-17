@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-17",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -112,10 +112,14 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html"
       }
     ],
-    "status": "in-progress",
-    "updatedAt": "2026-11-17T14:05:07.403Z",
+    "status": "completed",
+    "updatedAt": "2026-11-17T14:06:47.209Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -407,7 +411,7 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-17",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "NCUA Changes How Federal Credit Unions Can Add Associations",
         "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html",
         "outcomeScope": "cycle",
@@ -450,9 +454,46 @@
             ],
             "observations": "I reviewed matching archive screenshots at 390px and 1440px. The current lead headline, effective-date deck, meeting-table art and story link are legible on Home and News; article has correct November 17 publication date, full table art, readable linked Federal Register source, visible January 4 effective date and unobstructed body. Exact automated evidence has no accessibility, overflow or normal/404/recovery artwork errors."
           }
-        }
+        },
+        "productionCommit": "ef719b3dac687a8e021999cc87cad958ea09551d",
+        "verifiedAt": "2026-11-17T14:06:28.874Z"
       }
-    ]
+    ],
+    "socialDecision": "not-reserved-provider-review",
+    "socialDistribution": {
+      "status": "not-reserved",
+      "blocker": "Latest verified complete company inventory showed 79 historical sent records; 79 require destination review. No candidate-specific exclusion proof clears any of today's five. No already-approved recovery candidate was used.",
+      "inventoryArtifactId": 14334783289,
+      "inventoryObservedAt": "2026-11-17T14:06:17.505Z",
+      "providerReservationAttempted": false,
+      "editorialConsideration": [
+        {
+          "slot": 3,
+          "decision": "hold-provider-review",
+          "reason": "Strongest timely and directly usable takeaway: distinguish the December 16 advertising change from the unchanged sign requirements."
+        },
+        {
+          "slot": 2,
+          "decision": "hold-provider-review",
+          "reason": "A contact-center operator can follow the spoofing and fallback path on a real test call."
+        },
+        {
+          "slot": 4,
+          "decision": "hold-provider-review",
+          "reason": "Lending leaders can separate funded plans from completed purchases and test refund handoffs."
+        },
+        {
+          "slot": 1,
+          "decision": "hold-provider-review",
+          "reason": "Marketing and vendor-risk leaders can verify opt-out and data-control ownership before joining campaign data."
+        },
+        {
+          "slot": 5,
+          "decision": "hold-provider-review",
+          "reason": "Boards can compare bylaws with actual participation before assessing an association; January 4 effective date is still ahead."
+        }
+      ]
+    }
   },
   "history": [
     {
