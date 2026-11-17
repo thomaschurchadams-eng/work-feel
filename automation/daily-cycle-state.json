@@ -107,7 +107,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:14:25.154Z",
+    "updatedAt": "2026-11-17T13:15:52.193Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -213,20 +213,20 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-17",
-        "status": "technical-failure",
+        "status": "pending-validation",
         "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:28:25.154Z",
-        "nextAction": "Retry the exact design job only after the terminal run is recorded and rebind the real new attempt; do not reattempt if the checkpoint race repeats.",
+        "nextReviewAt": "2026-11-17T13:27:52.193Z",
+        "nextAction": "Read bounded retry attempt 2, reconcile its actual terminal evidence and require fresh exact rendered review; no further automatic retry.",
         "evidence": {
           "pending": {
             "prNumber": 362,
             "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
             "run": 44090372476,
-            "job": 134063620557,
-            "runAttempt": 1
+            "job": 134065684261,
+            "runAttempt": 2
           },
           "validationHistory": [
             {
@@ -289,21 +289,31 @@
                 "reason": "The article-first reconciliation merge introduced an apparent prepared-to-validated jump on the candidate branch's first-parent chain. CI rejected it before rendered review."
               },
               "reason": "Article-first Git parent order failed canonical-history regressions; verified local corrective rebuild uses canonical main as first parent."
+            },
+            {
+              "prNumber": 362,
+              "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+              "run": 44090372476,
+              "job": 134063620557,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-17T13:15:52.193Z",
+              "terminalValidation": {
+                "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+                "run": 44090372476,
+                "job": 134063620557,
+                "runAttempt": 1,
+                "conclusion": "failure",
+                "runConclusion": "failure",
+                "jobConclusion": "failure",
+                "observedAt": "2026-11-17T13:14:22.228Z",
+                "prNumber": 362,
+                "failedStep": "Validate daily-cycle history against PR base and refreshed main",
+                "reason": "Job passed 98 first-parent transitions; checkout had 03f4aee before the exact new-head checkpoint, then rejected canonical-checkpoint-does-not-match-review-head."
+              },
+              "reason": "Bounded same-head design rerun after the exact replacement checkpoint was recorded on canonical main."
             }
-          ],
-          "terminalValidation": {
-            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
-            "run": 44090372476,
-            "job": 134063620557,
-            "runAttempt": 1,
-            "conclusion": "failure",
-            "runConclusion": "failure",
-            "jobConclusion": "failure",
-            "observedAt": "2026-11-17T13:14:22.228Z",
-            "prNumber": 362,
-            "failedStep": "Validate daily-cycle history against PR base and refreshed main",
-            "reason": "Job passed 98 first-parent transitions; checkout had 03f4aee before the exact new-head checkpoint, then rejected canonical-checkpoint-does-not-match-review-head."
-          }
+          ]
         }
       }
     ]
