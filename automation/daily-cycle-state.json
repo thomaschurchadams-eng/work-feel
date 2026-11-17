@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-17",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -108,6 +108,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html"
       }
     ],
     "status": "in-progress",
@@ -353,7 +357,7 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-17",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
         "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html",
         "outcomeScope": "cycle",
@@ -396,7 +400,9 @@
             ],
             "observations": "Reviewed exact artifact at 390px and 1440px: homepage and News lead cards keep basket art and full heading visible; article hero, date, source links and mobile body section render without obstruction. Exact rendered record verified accessibility, navigation and artwork failure/recovery."
           }
-        }
+        },
+        "productionCommit": "abf42be4b23175e3a5e025d1595f4154b000c9be",
+        "verifiedAt": "2026-11-17T13:47:15.490Z"
       }
     ]
   },
