@@ -1678,17 +1678,18 @@
   const addArticleNewsletterCta = () => {
     if (!document.body.classList.contains('page-article')) return;
     const articleBody = document.querySelector('main .article-body');
-    if (!articleBody || document.querySelector('.article-newsletter-cta') ||
-        [...articleBody.querySelectorAll('.article-cta a[href]')].some(link =>
-          new URL(link.href, document.baseURI).pathname === '/newsletter.html')) return;
+    if (!articleBody || document.querySelector('.article-newsletter-cta')) return;
+    const hasBriefingLink = [...articleBody.querySelectorAll('.article-cta a[href]')].some(link =>
+      new URL(link.href, document.baseURI).pathname === '/newsletter.html');
     const callout = document.createElement('aside');
     callout.className = 'article-newsletter-cta';
-    callout.setAttribute('aria-label', 'CreditUnionAI Weekly Briefing');
+    callout.setAttribute('aria-label', 'Follow CUAI on LinkedIn');
     callout.innerHTML = `
-      <p class="eyebrow">CreditUnionAI Weekly Briefing</p>
-      <h2 class="section-title">Continue with a published weekly briefing.</h2>
-      <p>Explore CUAI Weekly web briefings and follow the original sources behind the reporting.</p>
-      <a class="btn btn-primary" href="/newsletter.html?source=article-bottom">Browse web briefings</a>
+      <p class="eyebrow">Keep following the story</p>
+      <h2 class="section-title">Credit-union news in your LinkedIn feed.</h2>
+      <p>Follow CUAI for reporting and practical analysis on the developments affecting credit unions.</p>
+      <div class="button-row"><a class="btn btn-primary" data-linkedin-placement="article_end" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener noreferrer">Follow CUAI on LinkedIn</a>
+      ${hasBriefingLink ? '' : '<a class="link" href="/newsletter.html?source=article-bottom">Browse web briefings →</a>'}</div>
     `;
     articleBody.insertAdjacentElement('afterend', callout);
   };
@@ -1708,7 +1709,7 @@
           <p class="eyebrow">From CreditUnionAI News</p>
           <h2>Less AI noise. More credit-union relevance.</h2>
           <p>CUAI explains what’s changing, what the evidence says and what it means for your credit union.</p>
-          <a class="link" data-house-link="reader" href="/topics.html">Find coverage for your next decision →</a>
+          <a class="link" data-linkedin-placement="footer_reader" href="https://www.linkedin.com/company/creditunionai-news/" target="_blank" rel="noopener noreferrer">Follow CUAI on LinkedIn →</a>
         </div>
         <div class="cuai-house-commercial" data-house-surface="sponsor" data-house-placement="site-footer">
           <p class="eyebrow">Sponsorship invitation · CUAI house promotion</p>
@@ -1736,6 +1737,28 @@
     };
 
     const body = document.body;
+    // Follow intent is not a confirmed LinkedIn follow. Fixed dimensions only, no identifiers.
+    const viewedFollowPlacements = new Set();
+    const followPageType = document.body.classList.contains('page-home') ? 'home' :
+      document.body.classList.contains('page-article') ? 'article' : 'other';
+    document.querySelectorAll('[data-linkedin-placement]').forEach(link => {
+      const placement = () => link.dataset.linkedinPlacement === 'navigation'
+        ? (window.matchMedia('(max-width: 1100px)').matches ? 'mobile_menu' : 'header')
+        : link.dataset.linkedinPlacement;
+      const params = () => ({ placement: placement(), page_type: followPageType, variant: 'follow-v1' });
+      link.addEventListener('click', () => sendEvent('linkedin_follow_cta_click', params()));
+      if (typeof IntersectionObserver === 'function') {
+        const observer = new IntersectionObserver(entries => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting || entry.intersectionRatio < 0.5 || document.visibilityState === 'hidden') continue;
+            const key = placement();
+            if (!viewedFollowPlacements.has(key) && sendEvent('linkedin_follow_cta_view', params())) viewedFollowPlacements.add(key);
+          }
+        }, { threshold: [0.5] });
+        observer.observe(link);
+      }
+    });
+
     // House promotion remains distinct from CAI ads and independent editorial.
     document.querySelectorAll('[data-house-surface]').forEach(surface => {
       const message = surface.dataset.houseSurface;

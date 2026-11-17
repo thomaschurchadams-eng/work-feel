@@ -78,6 +78,8 @@
     "article_view": "A full News or Insights article loads.",
     "engaged_reader": "The article remains visible for 30 active seconds.",
     "scroll_depth": "The reader reaches 25, 50, 75 or 90 percent.",
+    "linkedin_follow_cta_view": "At least 50% of a follow CTA is visible; once per placement per page. Fixed placement/page_type/variant dimensions; internal and automated checks excluded.",
+    "linkedin_follow_cta_click": "Click intent to the CUAI LinkedIn company page, not a confirmed follow. Fixed placement/page_type/variant dimensions; internal and automated checks excluded.",
     "source_click": "The reader opens an external source from an article.",
     "related_content_click": "The reader follows an internal related-coverage link.",
     "newsletter_intent": "From publication-v2: a reader opens a subscription email request. Earlier versions also counted web-briefing navigation; do not compare as confirmed signups.",
