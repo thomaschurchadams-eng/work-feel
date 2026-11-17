@@ -127,10 +127,11 @@ test('source and CUAI publication dates are separate, with evidence required for
   assert.equal(mexc.publicationDeployment, 'dpl_CY1jytSuXLQnC1FyVA3eGksRqjYm');
   assert.match(mexc.publicationEvidence, /issuecomment-6750832840$/);
   const html = h.read('renderAlertDates(' + JSON.stringify(mexc) + ')');
-  assert.match(html, /CUAI published <time datetime="2026-11-09T20:35:32.856Z">Nov 9, 2026/);
-  assert.match(html, /Source date <time datetime="2026-11-06">Nov 6, 2026/);
-  assert.doesNotMatch(h.read("renderAlertDates({date:'Jul 18, 2026'})"), /CUAI published/);
-  assert.doesNotMatch(h.read("renderAlertDates({date:'Jul 18, 2026',publishedAt:'2026-11-09'})"), /CUAI published/);
+  assert.match(html, /Published <time datetime="2026-11-09T20:35:32.856Z">Nov 9, 2026/);
+  assert.doesNotMatch(html, /Nov 6, 2026/);
+  assert.match(h.read('renderAlertSourceDate(' + JSON.stringify(mexc) + ')'), /source dated <time datetime="2026-11-06">Nov 6, 2026/);
+  assert.doesNotMatch(h.read("renderAlertDates({date:'Jul 18, 2026'})"), /Published/);
+  assert.doesNotMatch(h.read("renderAlertDates({date:'Jul 18, 2026',publishedAt:'2026-11-09'})"), /Published/);
   assert.equal(h.read("parseAlertDate({date:'2026-02-30'})"), null);
 });
 
@@ -163,7 +164,7 @@ test('archive sorts known CUAI publications ahead of unknown history, independen
     {headline:'unknown-older-source',date:'Jul 1, 2026'}
   ];
   assert.deepEqual(Array.from(h.read('prepareAlerts('+JSON.stringify(rows)+')'),x=>x.headline),['newer-post-old-source','older-post-newer-source','unknown-newest-source','unknown-older-source']);
-  assert.match(h.read('renderAlertDates('+JSON.stringify(rows[1])+')'), /CUAI publication date not verified/);
+  assert.match(h.read('renderAlertDates('+JSON.stringify(rows[1])+')'), /Source date/);
 });
 
 test('timezone offsets are equivalent instants; CUAI calendar labels use Eastern time', () => {
@@ -180,7 +181,7 @@ test('timezone offsets are equivalent instants; CUAI calendar labels use Eastern
 test('day-only evidence labels a known date but never invents an exact posting time for freshness', () => {
   const h=harness();
   const row={headline:'day only',date:'Nov 6, 2026',publishedAt:'2026-11-09',publicationEvidence:'https://example.test/receipt'};
-  assert.match(h.read('renderAlertDates('+JSON.stringify(row)+')'), /CUAI published <time datetime="2026-11-09">Nov 9, 2026/);
+  assert.match(h.read('renderAlertDates('+JSON.stringify(row)+')'), /Published <time datetime="2026-11-09">Nov 9, 2026/);
   assert.equal(h.read('getRecentAlerts('+JSON.stringify([row])+',3).length'),0);
   assert.equal(h.read('prepareAlerts('+JSON.stringify([row])+').length'),1);
   for(const value of ['2026-02-30T12:00:00Z','2026-11-10T12:00:00','not-a-date']) {
@@ -197,4 +198,28 @@ test('vendor freshness date is labeled as review, not source or CUAI publication
   assert.equal([...fis.matchAll(/<time\b/g)].length,1);
   const registry=JSON.parse(fs.readFileSync(path.join(__dirname,'../automation/vendor-registry.json'),'utf8'));
   assert.equal(registry.vendors.find(record=>record.id==='fis').signals[0].date,'2026-07-17');
+});
+
+
+test('OCC publication day is recovered from original production closeout, not source date', () => {
+  const h = harness();
+  const row = h.read("alertsData.find(item => item.slug === 'occ-ai-agentic-system-supervisory-framework')");
+  assert.equal(row.date, 'Nov 4, 2026');
+  assert.equal(row.publishedAt, '2026-11-05');
+  assert.match(row.publicationEvidence, /issuecomment-6668435577$/);
+  assert.match(h.read('renderAlertDates('+JSON.stringify(row)+')'), /Published <time datetime="2026-11-05">Nov 5, 2026/);
+  assert.equal(h.read('getRecentAlerts('+JSON.stringify([row])+',14).length'), 0);
+});
+
+test('date display is concise, source dates stay honest, and same-day attribution is not duplicated', () => {
+  const h = harness();
+  const row = {date:'Nov 9, 2026',publishedAt:'2026-11-09T20:00:00Z',publicationEvidence:'https://example.test/receipt'};
+  const html = h.read('renderAlertDates('+JSON.stringify(row)+')');
+  assert.equal((html.match(/<time/g)||[]).length, 1);
+  assert.equal(h.read('renderAlertSourceDate('+JSON.stringify(row)+')'), '');
+  assert.equal(h.read('renderAlertDates({})'), '');
+  assert.doesNotMatch(h.elements['alerts-list'].innerHTML, /publication date not verified/);
+  const policy = fs.readFileSync(path.join(__dirname,'../automation/scheduled-tasks/cuai-operating-system.md'),'utf8');
+  assert.match(policy, /verify the live date display before marking the Alert cycle complete/);
+  assert.match(policy, /do not replay publication to obtain a date/);
 });
