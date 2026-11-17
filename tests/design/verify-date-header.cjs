@@ -89,10 +89,10 @@ module.exports = async function verifyDateHeader(browser, base, out) {
         const card = page.locator('#fincen-mexc-global-transfer-prohibition');
         await card.waitFor();
         const dates = await card.locator('.alert-dates').innerText();
-        if (known) assert.match(dates, /CUAI published Nov 9, 2026/);
-        else assert.match(dates, /CUAI publication date not verified/);
-        assert.match(dates, /Source date Nov 6, 2026/);
-        assert.equal(await page.locator('.alert-dates').filter({ hasText: 'CUAI published' }).count(), known ? 1 : 0);
+        if (known) assert.match(dates, /Published Nov 9, 2026/);
+        else assert.match(dates, /Source date/);
+        if (!known) assert.match(dates, /Source date Nov 6, 2026/);
+        assert.equal(await page.locator('.alert-dates').filter({ hasText: 'Published' }).count(), known ? 1 : 0);
         const filter = page.getByRole('checkbox', { name: 'Published in last 14 days' });
         assert.ok(await filter.count());
         assert.equal(await page.locator('#alerts-list > article[id]').first().getAttribute('id'), 'fincen-mexc-global-transfer-prohibition');
@@ -107,7 +107,7 @@ module.exports = async function verifyDateHeader(browser, base, out) {
         assert.equal(await page.locator('#alerts-ticker a[href="/alerts/#fincen-mexc-global-transfer-prohibition"]').count() > 0, recent);
         let dateContrastViolations = [];
         if (fresh) {
-          assert.match(home, /CUAI published Nov 9, 2026/); assert.match(home, /Source date Nov 6, 2026/);
+          assert.match(home, /Published Nov 9, 2026/); assert.match(home, /source dated Nov 6, 2026/);
           await page.addScriptTag({ path: require.resolve('axe-core/axe.min.js') });
           dateContrastViolations = await page.evaluate(async () => (await axe.run(document.querySelector('#latest-alert'), { runOnly: { type:'rule', values:['color-contrast'] } })).violations.map(v => ({ id:v.id, nodes:v.nodes.map(n => n.target) })));
           assert.deepEqual(dateContrastViolations, [], 'active Alert date labels must meet contrast, independent of the real clock');
@@ -142,7 +142,7 @@ module.exports = async function verifyDateHeader(browser, base, out) {
       await page.goto(new URL('/alerts/', base).href);
       const order = await page.locator('#alerts-list > article[id]').evaluateAll(es => es.map(e => e.id));
       assert.deepEqual(order, ['newer-post','older-post','day-only-post','unknown-post']);
-      assert.match(await page.locator('#unknown-post').innerText(), /CUAI publication date not verified/);
+      assert.match(await page.locator('#unknown-post').innerText(), /Source date/);
       await page.getByRole('checkbox', { name:'Published in last 14 days' }).check();
       assert.deepEqual(await page.locator('#alerts-list > article[id]').evaluateAll(es => es.map(e => e.id)), ['newer-post','older-post']);
       await page.goto(new URL('/', base).href);
