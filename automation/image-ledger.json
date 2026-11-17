@@ -3,6 +3,52 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ncua-associational-common-bond-membership",
+      "articleUrl": "/news/ncua-associational-common-bond-membership.html",
+      "imagePath": "/assets/ncua-associational-common-bond-membership.jpg",
+      "publishedAt": "2026-11-17T08:50:43-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "gouache-and-ink",
+      "subject": "association-participation",
+      "composition": "oval-overhead",
+      "perspective": "angled-overhead",
+      "palette": "indigo-and-terracotta",
+      "lighting": "graphic-soft-shadow",
+      "texture": "gouache-on-paper",
+      "scene": "Illustration of blue chairs around a round meeting table, with one chair pulled back",
+      "conceptScore": 78,
+      "conceptAlternatives": [
+        {
+          "medium": "gouache-and-ink",
+          "subject": "association-participation",
+          "score": 78,
+          "rejected": false
+        },
+        {
+          "medium": "paper-collage",
+          "subject": "charter-paperwork",
+          "score": 68,
+          "rejected": false
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "associational-object-study",
+          "score": 44,
+          "rejected": true,
+          "reasons": [
+            "too-close-to-preceding-object-study"
+          ]
+        }
+      ],
+      "selectionReason": "Original empty chairs suggest actual opportunities to participate; the arrangement is not a depiction of any regulated institution.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "8c74feb54a42e131e2ada66ab275fae383d73fa44abf11ebb0f1ee1bd261df20"
+    },
+    {
       "id": "pioneer-equipifi-app-shopping-financing",
       "articleUrl": "/news/pioneer-equipifi-app-shopping-financing.html",
       "imagePath": "/assets/pioneer-equipifi-app-shopping-financing.jpg",
