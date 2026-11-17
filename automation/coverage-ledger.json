@@ -3,6 +3,35 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "cobalt-illuma-voice-authentication-fallback",
+      "title": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
+      "url": "/news/cobalt-illuma-voice-authentication-fallback.html",
+      "publishedAt": "2026-11-17T07:31:05-05:00",
+      "section": "news",
+      "beat": "cobalt-illuma-voice-authentication-fallback",
+      "functions": [
+        "member-service",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "identity-biometrics",
+        "fraud-analytics"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union contact-center and fraud-operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-account-recovery-evidence-record.html",
+        "/news/rbfcu-impersonation-scam-regulation-e-investigations.html"
+      ],
+      "sourceTier": 3,
+      "sourceLimit": "Illuma’s announcement confirms selection and attributed product scope. Cobalt’s member-facing materials confirm existing fraud instructions, not rollout, adoption, or achieved performance."
+    },
+    {
       "id": "veritran-prismacampaigns-credit-union-data-controls",
       "title": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
       "url": "/news/veritran-prismacampaigns-credit-union-data-controls.html",
