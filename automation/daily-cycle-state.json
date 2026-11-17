@@ -107,7 +107,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:12:20.710Z",
+    "updatedAt": "2026-11-17T13:14:25.154Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -213,13 +213,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-17",
-        "status": "pending-validation",
+        "status": "technical-failure",
         "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:24:20.710Z",
-        "nextAction": "Await exact canonical-first rebuilt revision and inspect artifact before any merge; retain prior success and failure receipts.",
+        "nextReviewAt": "2026-11-17T13:28:25.154Z",
+        "nextAction": "Retry the exact design job only after the terminal run is recorded and rebind the real new attempt; do not reattempt if the checkpoint race repeats.",
         "evidence": {
           "pending": {
             "prNumber": 362,
@@ -290,7 +290,20 @@
               },
               "reason": "Article-first Git parent order failed canonical-history regressions; verified local corrective rebuild uses canonical main as first parent."
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+            "run": 44090372476,
+            "job": 134063620557,
+            "runAttempt": 1,
+            "conclusion": "failure",
+            "runConclusion": "failure",
+            "jobConclusion": "failure",
+            "observedAt": "2026-11-17T13:14:22.228Z",
+            "prNumber": 362,
+            "failedStep": "Validate daily-cycle history against PR base and refreshed main",
+            "reason": "Job passed 98 first-parent transitions; checkout had 03f4aee before the exact new-head checkpoint, then rejected canonical-checkpoint-does-not-match-review-head."
+          }
         }
       }
     ]
