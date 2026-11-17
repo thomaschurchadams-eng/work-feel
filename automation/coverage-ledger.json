@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ncua-advertising-statement-insurance-sign",
+      "title": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
+      "url": "/news/ncua-advertising-statement-insurance-sign.html",
+      "publishedAt": "2026-11-17T07:48:29-05:00",
+      "section": "news",
+      "beat": "ncua-advertising-statement-insurance-sign",
+      "functions": [
+        "risk-compliance",
+        "marketing-growth"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union compliance, digital banking and marketing leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-trust-share-insurance-beneficiary-records.html",
+        "/news/merchants-ncua-interchange-preemption-lawsuit.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Published federal final rule is the controlling dated source. Article distinguishes the federal change from claims about product coverage and other obligations."
+    },
+    {
       "id": "cobalt-illuma-voice-authentication-fallback",
       "title": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
       "url": "/news/cobalt-illuma-voice-authentication-fallback.html",
