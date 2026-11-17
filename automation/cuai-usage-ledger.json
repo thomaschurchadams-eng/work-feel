@@ -5547,6 +5547,48 @@
       ],
       "summary": "Consumed the completed five-article publisher handoff and held all completed article and social delivery work closed. Published one primary-source FinCEN customer-due-diligence proposal Alert after NCUA confirmed applicability to federally insured credit unions; held the Federal Reserve tokenized-markets speech for lack of a comparably urgent credit-union operating deadline. PR 370 exact head passed run 44172879978 and artifact 14369561616, first production deployment dpl_HomdToh9N3NdDBpZLJsk4YZSzRqx is READY, and live Alert/archive behavior was checked. Bound the reader-facing publication clock to the first production deployment rather than the source date. The fresh Alert supersedes homepage-watch fallback; no watch item or date-only refresh was created. Portfolio review counted 47 trailing-window items: risk/compliance remains concentrated at 25 tags, while HR/training has 1 and executive audience has 1; 10 consecutive Standard News items also create a format gap. Retired the stale offer-evidence handoff because that Library asset already exists and today's marketing coverage overlaps it; the next qualified candidate should favor HR/workforce or executive/Library evidence. No exact-current-main verified-operations artifact exists for the current revision, so provider analytics remain blocked rather than inferred from Monday's rolling window. Production is READY and the available one-hour runtime window contained no errors. No social write, provider retry, outreach, spend or cadence change.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-17T16:37:21.063-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The afternoon reliability check reconciled the single November 17 manual LinkedIn fallback and its exact natural provider closeout, then evaluated whether the automatic distribution route had recovered.",
+      "status": "degraded",
+      "workUnits": {
+        "currentMainRevisionsReviewed": 1,
+        "scheduledPublisherOutcomesReviewed": 1,
+        "scheduledOperatingOutcomesReviewed": 1,
+        "issue160EventsReviewed": 6,
+        "verifiedOperationsReceiptsReviewed": 1,
+        "publicationHistoryEntriesPreserved": 85,
+        "articlesVerified": 5,
+        "alertsVerified": 1,
+        "productionDeploymentChecks": 1,
+        "liveSurfaceChecks": 8,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "socialQueueItemsPreserved": 57,
+        "socialQueueRecordsReconciledObserved": 1,
+        "manualCompanyPageDeliveriesObserved": 1,
+        "providerInventoryPagesRead": 1,
+        "providerInventoryRecordsObserved": 80,
+        "providerRecordsRequiringReview": 80,
+        "duplicateSocialReservationsObserved": 0,
+        "automaticSocialSchedulingAttemptsObserved": 0,
+        "forcedWorkflowDispatches": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer",
+        "ChatGPT scheduled-task outcomes"
+      ],
+      "summary": "The single November 17 NCUA advertising-statement LinkedIn item was manually delivered once to the approved CreditUnionAI News company channel and is now fully reconciled without replay: queue item linkedin-ncua-advertising-statement-insurance-sign-2026-11-17 is sent with Buffer post 6afc91dad2540df7ee89a12d, sentAt 2026-11-17T17:42:07.926Z, public share 7528512812684386304, confirmed CUAI UTMs and duplicate=false. The 57-item queue has no duplicate IDs or date conflicts; exactly one sent item exists on each of November 16 and 17, so the one-per-day and five-per-week limits remain intact. Automatic delivery is still degraded, not recovered: the canonical non-sending claim produced zero distribution attempts and required the manual fallback because the complete historical provider inventory could not supply candidate-specific exclusion proof under the existing destination-review hold. This is not a transient connector or scheduler error. Current natural run 44177943337 on main 950fbb1b113d0fd34d653fdf626c750f8f99e6b3 succeeded with verified authentication, production HTTP 200, zero actions/reconciliations/source retries/errors and complete one-page Buffer inventory of 80 sent records; all 80 remain requiresReview. Production dpl_CEy6TE2duH52rW1ySXNdzvN8S6c9 is READY with creditunionainews.com assigned. The homepage, all five articles, Alerts shell and live app.js Alert payload return HTTP 200; the FinCEN Alert slug and first-production timestamp are present. No scheduler retry, provider write, queue mutation, article/Alert cycle, credential/schedule/permission change or PR260 checkpoint activation occurred. Safe durable recovery still requires the existing distribution owner to supply a tested candidate-specific duplicate-clearance contract using authoritative destination evidence, or a separately reviewed privacy-safe reason/provenance diagnostic; manual delivery is not proof of automatic recovery.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
