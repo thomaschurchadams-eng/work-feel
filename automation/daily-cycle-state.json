@@ -36,9 +36,9 @@
       },
       {
         "title": "NCUA revises advertising notice",
-        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/html/2026-23288.htm",
-        "status": "qualifying",
-        "reason": "Official final text is material for marketing and compliance; reserve for distinct follow-up."
+        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/pdf/2026-23288.pdf",
+        "status": "selected",
+        "reason": "Published Federal Register final rule confirms December 16 effective date and removal of § 740.5 only; official sign and advertising accuracy duties remain. Distinct operational compliance story."
       },
       {
         "title": "Cobalt chooses Illuma voice security",
@@ -107,8 +107,8 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:43:34.572Z",
-    "outcomeSlot": 2,
+    "updatedAt": "2026-11-17T12:46:28.884Z",
+    "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -209,6 +209,17 @@
         },
         "productionCommit": "9893d0ba7e2e9c6272d0059f135d313a7d5c88bf",
         "verifiedAt": "2026-11-17T12:45:21.786Z"
+      },
+      {
+        "slot": 3,
+        "plannedDate": "2026-11-17",
+        "status": "prepared",
+        "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
+        "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-17T13:01:28.884Z",
+        "nextAction": "Prepare plain-language reporting from the published final rule; require exact-artifact review before merge."
       }
     ]
   },
