@@ -2643,7 +2643,7 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
 /* Visible follow action; collapse navigation before labels become crowded. */
 .nav-links .nav-linkedin { gap: 6px; white-space: nowrap; }
 .nav-linkedin .social-icon { flex-shrink: 0; }
-@media (min-width: 901px) and (max-width: 1100px) {
+@media (min-width: 901px) and (max-width: 1199px) {
   .nav-links { position: absolute; right: 0; top: calc(100% + 8px); z-index: 40;
     background: var(--white); border: 1px solid var(--navy-deep); box-shadow: var(--shadow);
     padding: 12px; flex-direction: column; align-items: flex-start; min-width: 220px;

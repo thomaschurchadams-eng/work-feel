@@ -1743,7 +1743,7 @@
       document.body.classList.contains('page-article') ? 'article' : 'other';
     document.querySelectorAll('[data-linkedin-placement]').forEach(link => {
       const placement = () => link.dataset.linkedinPlacement === 'navigation'
-        ? (window.matchMedia('(max-width: 1100px)').matches ? 'mobile_menu' : 'header')
+        ? (window.matchMedia('(max-width: 1199px)').matches ? 'mobile_menu' : 'header')
         : link.dataset.linkedinPlacement;
       const params = () => ({ placement: placement(), page_type: followPageType, variant: 'follow-v1' });
       link.addEventListener('click', () => sendEvent('linkedin_follow_cta_click', params()));
