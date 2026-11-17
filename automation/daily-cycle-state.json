@@ -107,7 +107,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:08:14.170Z",
+    "updatedAt": "2026-11-17T13:12:20.710Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -213,19 +213,19 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-17",
-        "status": "technical-failure",
+        "status": "pending-validation",
         "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:22:14.170Z",
-        "nextAction": "Rebuild the same article with canonical main as first parent; verify first-parent guard before any release.",
+        "nextReviewAt": "2026-11-17T13:24:20.710Z",
+        "nextAction": "Await exact canonical-first rebuilt revision and inspect artifact before any merge; retain prior success and failure receipts.",
         "evidence": {
           "pending": {
             "prNumber": 362,
-            "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
-            "run": 44089174408,
-            "job": 134059503120,
+            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+            "run": 44090372476,
+            "job": 134063620557,
             "runAttempt": 1
           },
           "validationHistory": [
@@ -266,21 +266,31 @@
                 "observations": "Opened the exact mobile and desktop article, artwork and both listing cards. Verified that publication and December effective dates are visually distinct and the ad-versus-sign distinction survives the lead and body layouts. Matching reports confirm zero overflow, accessibility violations or unexpected image issues, with intentional 404/recovery passed."
               },
               "reason": "Concurrent authoritative Barr queue/report receipt on main required a fresh exact article revision."
+            },
+            {
+              "prNumber": 362,
+              "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
+              "run": 44089174408,
+              "job": 134059503120,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-17T13:12:20.710Z",
+              "terminalValidation": {
+                "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
+                "run": 44089174408,
+                "job": 134059503120,
+                "runAttempt": 1,
+                "conclusion": "failure",
+                "runConclusion": "failure",
+                "jobConclusion": "failure",
+                "observedAt": "2026-11-17T13:08:11.625Z",
+                "prNumber": 362,
+                "failedStep": "Check canonical shell and existing regressions",
+                "reason": "The article-first reconciliation merge introduced an apparent prepared-to-validated jump on the candidate branch's first-parent chain. CI rejected it before rendered review."
+              },
+              "reason": "Article-first Git parent order failed canonical-history regressions; verified local corrective rebuild uses canonical main as first parent."
             }
-          ],
-          "terminalValidation": {
-            "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
-            "run": 44089174408,
-            "job": 134059503120,
-            "runAttempt": 1,
-            "conclusion": "failure",
-            "runConclusion": "failure",
-            "jobConclusion": "failure",
-            "observedAt": "2026-11-17T13:08:11.625Z",
-            "prNumber": 362,
-            "failedStep": "Check canonical shell and existing regressions",
-            "reason": "The article-first reconciliation merge introduced an apparent prepared-to-validated jump on the candidate branch's first-parent chain. CI rejected it before rendered review."
-          }
+          ]
         }
       }
     ]
