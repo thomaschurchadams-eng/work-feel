@@ -5444,6 +5444,34 @@
       ],
       "summary": "Recovered the missing repository closeout for the one already-delivered November 16 Barr post. Natural operations run 44084254873, artifact cuai-operation-receipts-44084254873-1 (SHA-256 080ee33cbf7a744364f59ab34d65dd2da292994d3b68f1e6cf10ea52faf3d32a), returned complete one-page inventory with 79 records and exact Buffer post 6afb6e881e443d7cc190423c, sent 2026-11-16T20:59:10.745Z on approved channel 6a53df0880cc80cdcaa76fb8, matching LinkedIn share 7528200012464381952 and the canonical Barr article. The public post copy and redirect independently match that same delivery. Its actual link resolved without UTM parameters, so the queue record preserves that historical tracking gap as utm-missing-manual-delivery instead of claiming utm-tagged. No provider or scheduler write occurred, no duplicate was created, and future UTM/cadence gates remain unchanged.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261117-daily-publisher-01",
+      "timestamp": "2026-11-17T14:07:31.568Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "Ordinary November 17 CUAI weekday article cycle",
+      "status": "recovered",
+      "workUnits": {
+        "publisherCandidatesEvaluated": 12,
+        "publisherBeatsSearched": 9,
+        "articlesPublished": 5,
+        "productionDeploymentChecks": 5,
+        "passedRenderedChecksOnReleasedHeads": 250,
+        "liveArticleChecks": 5,
+        "socialSchedulingAttempts": 0,
+        "socialSchedulingSuccesses": 0,
+        "providerInventoryRecordsObserved": 79,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer read-only verified operations evidence"
+      ],
+      "summary": "Five Standard News packages were released sequentially; desktop and mobile screenshots were inspected against exact passing archives and production was independently checked after each merge. The local Chromium binary was unavailable; existing isolated CI was used. Slot 3 recovered from a concurrent state/source advance; all older validation receipts and 85 historical records are preserved. Complete company inventory in natural run 44099392773 flagged all 79 sent records; no candidate-specific clearance, reservation, provider write or Alerts change.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
