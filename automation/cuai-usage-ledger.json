@@ -5472,6 +5472,41 @@
       ],
       "summary": "Five Standard News packages were released sequentially; desktop and mobile screenshots were inspected against exact passing archives and production was independently checked after each merge. The local Chromium binary was unavailable; existing isolated CI was used. Slot 3 recovered from a concurrent state/source advance; all older validation receipts and 85 historical records are preserved. Complete company inventory in natural run 44099392773 flagged all 79 sent records; no candidate-specific clearance, reservation, provider write or Alerts change.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-17T11:47:17.594-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 17 reliability check reconciled the completed five-article cycle and current production, then rechecked the unresolved PR341 Buffer destination-review hold against the latest natural complete provider inventory.",
+      "status": "blocked",
+      "workUnits": {
+        "currentMainRevisionsReviewed": 1,
+        "scheduledPublisherOutcomesReviewed": 1,
+        "verifiedOperationsReceiptsReviewed": 1,
+        "publicationHistoryEntriesPreserved": 85,
+        "articlesVerified": 5,
+        "productionDeploymentChecks": 1,
+        "liveArticleChecks": 5,
+        "socialQueueChecks": 1,
+        "socialQueueItemsPreserved": 56,
+        "duplicateSocialReservationsObserved": 0,
+        "providerInventoryRecordsObserved": 79,
+        "providerRecordsRequiringReview": 79,
+        "unresolvedDistributionBlockersObserved": 1,
+        "outerTaskFailureMarkersReconciled": 1,
+        "forcedWorkflowDispatches": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer",
+        "ChatGPT scheduled-task outcomes"
+      ],
+      "summary": "Current main 4c18709ef97dd844c8874a6d743c2b359b41f3c9 records the complete November 17 five-article cycle with 85 history entries. Production dpl_E1qBPcobbEnEuxei6ZKL7iLbc7xa is READY on that exact commit and aliased to creditunionainews.com; all five recorded article URLs return HTTP 200 with matching canonical URLs. Natural verified-operations run 44099751508 is verified on the same commit with zero actions, reconciliations, source retries, errors or drift. The outer scheduled-task wrapper retained a generic failed marker, but canonical state, issue #160, the usage ledger and natural postconditions completed, so reliability did not replay the publisher. The complete Buffer inventory now contains 79 sent records and remains review-held for all 79; the November 13 PR341 blocker therefore persists because the privacy-safe receipt still lacks the reason/provenance needed to clear unknown destinations independently. The 56-item queue remains intact with no duplicate IDs or active-date conflict: the single Barr record is sent and unique, the July EricaAssist scheduled row is the intentionally retained legacy untagged baseline whose exact provider record is sent, and the October planned media row remains prepared-only and executor-ignored. No candidate-specific social clearance, reservation, scheduler/provider write, article cycle, queue mutation, schedule change or PR260 checkpoint activation occurred. Safe next action remains an existing authorized private evidence read or a separately reviewed privacy-safe reason/provenance diagnostic by the existing recovery owner; no unchanged approval retry is requested.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
