@@ -103,7 +103,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:28:35.344Z",
+    "updatedAt": "2026-11-17T12:33:06.368Z",
     "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
@@ -159,13 +159,22 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-17",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
         "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T12:43:35.344Z",
-        "nextAction": "Prepare a source-linked article; require exact isolated rendered CI and actual visual review before merge."
+        "nextReviewAt": "2026-11-17T12:43:06.368Z",
+        "nextAction": "Observe the exact design-checks terminal result, verify artifact, and inspect 390px and 1440px views before release.",
+        "evidence": {
+          "pending": {
+            "prNumber": 361,
+            "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
+            "run": 44084102181,
+            "job": 134041886721,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
