@@ -98,19 +98,28 @@
     "fallbackEvaluations": [],
     "publications": [],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:06:23.142Z",
+    "updatedAt": "2026-11-17T12:14:50.037Z",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-17",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
         "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T07:40:00-05:00",
-        "nextAction": "Build one atomic article package; obtain isolated exact-head CI and review desktop/mobile evidence before release."
+        "nextReviewAt": "2026-11-17T12:24:50.037Z",
+        "nextAction": "Build one atomic article package; obtain isolated exact-head CI and review desktop/mobile evidence before release.",
+        "evidence": {
+          "pending": {
+            "prNumber": 360,
+            "head": "e2e5e0785f6921142b2454fff166a481e836c378",
+            "run": 44081134592,
+            "job": 134031715929,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
