@@ -98,19 +98,19 @@
     "fallbackEvaluations": [],
     "publications": [],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:14:50.037Z",
+    "updatedAt": "2026-11-17T12:24:32.337Z",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-17",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
         "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-17T12:24:50.037Z",
-        "nextAction": "Build one atomic article package; obtain isolated exact-head CI and review desktop/mobile evidence before release.",
+        "nextAction": "Verify fresh main and exact article head, then merge and verify production before recording publication.",
         "evidence": {
           "pending": {
             "prNumber": 360,
@@ -118,6 +118,34 @@
             "run": 44081134592,
             "job": 134031715929,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e2e5e0785f6921142b2454fff166a481e836c378",
+            "run": 44081134592,
+            "job": 134031715929,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-17T12:21:52.608Z",
+            "prNumber": 360
+          },
+          "terminalAcceptance": {
+            "prNumber": 360,
+            "head": "e2e5e0785f6921142b2454fff166a481e836c378",
+            "run": 44081134592,
+            "job": 134031715929,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-17T12:24:32.337Z",
+            "artifactId": 14327941810,
+            "artifactSha256": "sha256:bb57771d2a6b420b41cc8149332243c1a139f7ab21336e24fe1bdde1a094201c",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Reviewed actual article body, header, source links and hero plus homepage and News cards at both widths. Checks show no axe violations, overflow or broken art; image 404 and recovery passed."
           }
         }
       }
