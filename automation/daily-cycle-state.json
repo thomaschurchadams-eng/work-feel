@@ -48,9 +48,9 @@
       },
       {
         "title": "equipifi launches Shop",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/equipifi-launches-shop-to-help-credit-unions-and-community-banks-compete-head-to-head-with-big-fintech-302940951.html",
-        "status": "held",
-        "reason": "Attributed launch; distinguish pre-purchase checkout and actual deployment from November 16 post-purchase CU coverage."
+        "sourceUrl": "https://www.equipifi.com/products/point-of-purchase",
+        "status": "selected",
+        "reason": "Vendor launch names Pioneer as an early institution and product description shows funding into checking before the member purchases. Pioneer public terms confirm the existing two-stage program but do not independently confirm Shop availability or results. Distinct from post-purchase American Heritage reporting."
       },
       {
         "title": "Golden 1 workplace recognition",
@@ -111,8 +111,8 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:26:49.874Z",
-    "outcomeSlot": 3,
+    "updatedAt": "2026-11-17T13:29:13.274Z",
+    "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -349,6 +349,17 @@
         },
         "productionCommit": "92bb39860ea3718475b5a0f83bdc450169c3f23d",
         "verifiedAt": "2026-11-17T13:28:20.293Z"
+      },
+      {
+        "slot": 4,
+        "plannedDate": "2026-11-17",
+        "status": "prepared",
+        "candidateTitle": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
+        "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-17T13:45:13.274Z",
+        "nextAction": "Prepare attributed reporting about funding before retail purchase, distinct from yesterday’s post-purchase installments. Require exact-artifact and production verification."
       }
     ]
   },
