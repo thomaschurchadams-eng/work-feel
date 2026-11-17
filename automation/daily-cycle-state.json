@@ -111,7 +111,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:29:13.274Z",
+    "updatedAt": "2026-11-17T13:32:58.765Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -353,13 +353,22 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-17",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
         "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:45:13.274Z",
-        "nextAction": "Prepare attributed reporting about funding before retail purchase, distinct from yesterday’s post-purchase installments. Require exact-artifact and production verification."
+        "nextReviewAt": "2026-11-17T13:45:58.766Z",
+        "nextAction": "Read exact terminal CI, verify complete artifact and desktop/mobile evidence, then verify production before closeout.",
+        "evidence": {
+          "pending": {
+            "prNumber": 364,
+            "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
+            "run": 44093743947,
+            "job": 134075331457,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
