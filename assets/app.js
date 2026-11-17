@@ -109,6 +109,9 @@
       sourceUrl:
         'https://www.fincen.gov/news/news-releases/fincen-issues-proposed-rule-strengthen-customer-due-diligence-requirements-covered-financial-institutions',
       date: 'Nov 17, 2026',
+      publishedAt: '2026-11-17T20:59:02.388Z',
+      publicationDeployment: 'dpl_HomdToh9N3NdDBpZLJsk4YZSzRqx',
+      publicationEvidence: 'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6960856432',
       slug: 'fincen-beneficial-owner-customer-due-diligence-proposal'
     },
     {
