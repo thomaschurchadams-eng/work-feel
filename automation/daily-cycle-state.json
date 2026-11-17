@@ -103,7 +103,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:33:06.368Z",
+    "updatedAt": "2026-11-17T12:43:34.572Z",
     "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
@@ -159,13 +159,13 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-17",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
         "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-17T12:43:06.368Z",
-        "nextAction": "Observe the exact design-checks terminal result, verify artifact, and inspect 390px and 1440px views before release.",
+        "nextAction": "Publish only through the expected-head merge and record actual production proof.",
         "evidence": {
           "pending": {
             "prNumber": 361,
@@ -173,6 +173,34 @@
             "run": 44084102181,
             "job": 134041886721,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
+            "run": 44084102181,
+            "job": 134041886721,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-17T12:42:17.483Z",
+            "prNumber": 361
+          },
+          "terminalAcceptance": {
+            "prNumber": 361,
+            "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
+            "run": 44084102181,
+            "job": 134041886721,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-17T12:43:34.572Z",
+            "artifactId": 14328422667,
+            "artifactSha256": "sha256:451563ef15ee9268b5c567b34102e4fe6757ef4db6fbe209723249c0a9aa9124",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Opened actual article header, body and hero; News and homepage card hierarchy, artwork and links reviewed at both widths. No overflow, axe issues or broken imagery in matching results; deliberate 404 and recovery passed."
           }
         }
       }
