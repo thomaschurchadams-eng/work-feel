@@ -99,6 +99,19 @@
 
   const alertsData = [
     {
+      label: 'BSA / Customer Due Diligence',
+      headline: 'FinCEN Proposes Changes to Beneficial-Owner Checks',
+      summary:
+        'FinCEN proposed changes on November 17 to the Customer Due Diligence Rule. The proposal would codify relief from repeating beneficial-owner identification and verification at every new account opening, require refreshed checks when facts call existing information into question or risk-based procedures warrant them, specify identifying information to collect and permit additional information when risk indicators or supervisory concerns justify it. An Individual Tax Identification Number would not substitute for a Social Security number under the proposal. The comment deadline will be 60 days after Federal Register publication; the transmitted proposal is not yet the official Federal Register text.',
+      impact:
+        'Credit-union BSA/AML, legal, account-opening and operations teams should compare current legal-entity onboarding, refresh triggers, identifying-number rules and third-party data use with the proposal; identify implementation and member-impact questions for the public comment period; and avoid changing controls until the official Federal Register text and any final rule are reviewed.',
+      sourceName: 'Financial Crimes Enforcement Network',
+      sourceUrl:
+        'https://www.fincen.gov/news/news-releases/fincen-issues-proposed-rule-strengthen-customer-due-diligence-requirements-covered-financial-institutions',
+      date: 'Nov 17, 2026',
+      slug: 'fincen-beneficial-owner-customer-due-diligence-proposal'
+    },
+    {
       "label": "Cybersecurity / Vendors",
       "headline": "ScreenConnect Incident Prompts Urgent Client and Vendor Checks",
       "summary": "ConnectWise updated its ScreenConnect incident guidance on November 12 after reports of unauthorized access to partner environments. It directs partners to disable identified third-party extensions and verify every technician client runs version 26.6.5 or later; updating the cloud console does not automatically update those clients. Credit unions should obtain confirmation from internal IT and managed-service providers, including whether their endpoints were exposed. Suspected compromised systems require investigation through separate security tools, preserved logs and session revocation. The roughly 400 environments identified had relevant extensions installed; that figure is not a confirmed compromise count.",
