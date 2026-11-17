@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-17",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -96,7 +96,12 @@
       }
     ],
     "fallbackEvaluations": [],
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html"
+      }
+    ],
     "status": "in-progress",
     "updatedAt": "2026-11-17T12:24:32.337Z",
     "outcomeSlot": 1,
@@ -104,7 +109,7 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-17",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
         "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html",
         "outcomeScope": "cycle",
@@ -147,7 +152,9 @@
             ],
             "observations": "Reviewed actual article body, header, source links and hero plus homepage and News cards at both widths. Checks show no axe violations, overflow or broken art; image 404 and recovery passed."
           }
-        }
+        },
+        "productionCommit": "175a1f21266a911d69e08755b8a4c166b3260dac",
+        "verifiedAt": "2026-11-17T12:26:42.903Z"
       }
     ]
   },
