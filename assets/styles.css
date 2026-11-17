@@ -2653,3 +2653,5 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
   .nav-links a { width: 100%; font-size: 0.76rem; }
   .nav-links .nav-subscribe { margin-left: 0; text-align: center; }
 }
+.article-newsletter-cta .link { color: #dbe8f2; text-decoration: underline; text-underline-offset: 3px; }
+.article-newsletter-cta .link:hover { color: #ffffff; }
