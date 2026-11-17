@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-17",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -100,6 +100,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html"
       }
     ],
     "status": "in-progress",
@@ -159,7 +163,7 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-17",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
         "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html",
         "outcomeScope": "cycle",
@@ -202,7 +206,9 @@
             ],
             "observations": "Opened actual article header, body and hero; News and homepage card hierarchy, artwork and links reviewed at both widths. No overflow, axe issues or broken imagery in matching results; deliberate 404 and recovery passed."
           }
-        }
+        },
+        "productionCommit": "9893d0ba7e2e9c6272d0059f135d313a7d5c88bf",
+        "verifiedAt": "2026-11-17T12:45:21.786Z"
       }
     ]
   },
