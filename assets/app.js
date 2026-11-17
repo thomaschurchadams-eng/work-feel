@@ -1954,7 +1954,7 @@
           destination_path: url.pathname,
           link_label: label
         });
-      } else if (!sameHost && url.protocol.startsWith('http')) {
+      } else if (!sameHost && url.protocol.startsWith('http') && !link.hasAttribute('data-linkedin-placement')) {
         sendEvent(inArticle ? 'source_click' : 'outbound_click', {
           ...dimensions,
           destination_host: url.hostname,
