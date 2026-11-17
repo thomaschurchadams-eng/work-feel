@@ -31,8 +31,8 @@
       {
         "title": "NCUA changes associational common-bond criteria",
         "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-final-rule-deregulation",
-        "status": "qualifying",
-        "reason": "Direct final rule relevant to membership expansion; scope and effective date require exact text."
+        "status": "held",
+        "reason": "NCUA program summary lists November 17 as effective, but Federal Register inspection text specifies 45 days after publication. Exact controlling published date is not verified."
       },
       {
         "title": "NCUA revises advertising notice",
@@ -43,7 +43,7 @@
       {
         "title": "Cobalt chooses Illuma voice security",
         "sourceUrl": "https://illuma.cx/press-release/cobalt-credit-union-selects-illuma-voice-security/",
-        "status": "qualifying",
+        "status": "selected",
         "reason": "Named institution and attributable rollout; avoid assuming performance or adoption."
       },
       {
@@ -103,8 +103,8 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T12:24:32.337Z",
-    "outcomeSlot": 1,
+    "updatedAt": "2026-11-17T12:28:35.344Z",
+    "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -155,6 +155,17 @@
         },
         "productionCommit": "175a1f21266a911d69e08755b8a4c166b3260dac",
         "verifiedAt": "2026-11-17T12:26:42.903Z"
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-17",
+        "status": "prepared",
+        "candidateTitle": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
+        "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-17T12:43:35.344Z",
+        "nextAction": "Prepare a source-linked article; require exact isolated rendered CI and actual visual review before merge."
       }
     ]
   },
