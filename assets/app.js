@@ -164,6 +164,10 @@
       sourceUrl:
         'https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-54.html',
       date: 'Nov 4, 2026',
+      // Original closeout confirms the publication day; no exact instant inferred.
+      publishedAt: '2026-11-05',
+      publicationDeployment: 'dpl_2NYr49LwpdAgirKq2KZB1GRUi9La',
+      publicationEvidence: 'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6668435577',
       slug: 'occ-ai-agentic-system-supervisory-framework'
     },
     {
@@ -1242,12 +1246,25 @@
     return { date, precision: instant ? 'instant' : 'day' };
   };
 
+  const formatAlertDate = (date, timeZone) => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone });
+
+  // One reader-facing date. Unknown history uses a clearly labeled source date,
+  // never a fabricated CUAI date; freshness still requires publication evidence.
   const renderAlertDates = (item) => {
+    const published = getAlertPublication(item);
+    if (published) return `<span class="alert-dates"><span class="alert-date">Published <time datetime="${published.precision === 'instant' ? published.date.toISOString() : item.publishedAt}">${formatAlertDate(published.date, published.precision === 'instant' ? 'America/New_York' : 'UTC')}</time></span></span>`;
+    const source = parseAlertDate(item);
+    return source ? `<span class="alert-dates"><span class="alert-date">Source date <time datetime="${source.toISOString().slice(0, 10)}">${formatAlertDate(source, 'UTC')}</time></span></span>` : '';
+  };
+
+  // Keep a different source date with the attribution, not beside the headline.
+  const renderAlertSourceDate = (item) => {
     const source = parseAlertDate(item);
     const published = getAlertPublication(item);
-    const format = (date, timeZone) => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone });
-    const posted = published ? `<span class="alert-date">CUAI published <time datetime="${published.precision === 'instant' ? published.date.toISOString() : item.publishedAt}">${format(published.date, published.precision === 'instant' ? 'America/New_York' : 'UTC')}</time></span>` : '<span class="alert-date">CUAI publication date not verified</span>';
-    return `<span class="alert-dates">${posted}${source ? `<span class="alert-date">Source date <time datetime="${source.toISOString().slice(0, 10)}">${format(source, 'UTC')}</time></span>` : ''}</span>`;
+    if (!source || !published) return '';
+    const label = formatAlertDate(source, 'UTC');
+    if (label === formatAlertDate(published.date, published.precision === 'instant' ? 'America/New_York' : 'UTC')) return '';
+    return ` <span class="alert-source-date">(source dated <time datetime="${source.toISOString().slice(0, 10)}">${label}</time>)</span>`;
   };
 
   const getFreshHomepageWatchItems = () => {
@@ -1372,7 +1389,7 @@
       <p class="latest-alert-impact"><strong>What this means for credit unions:</strong> ${item.impact}</p>
       <div class="latest-alert-actions">
         <a class="link" href="/alerts/#${item.slug}">Read the Alert →</a>
-        <a class="link" href="${item.sourceUrl}" target="_blank" rel="noopener">Source: ${item.sourceName} ↗</a>
+        <a class="link" href="${item.sourceUrl}" target="_blank" rel="noopener">Source: ${item.sourceName} ↗</a>${renderAlertSourceDate(item)}
       </div>
     `;
   };
@@ -1641,7 +1658,7 @@
       alertsList.innerHTML = visible.map((item) => `
         <article class="card alert-card" id="${item.slug}">
           <div class="meta"><span class="tag">${item.label}</span><span class="tag tag-secondary">Alert</span></div>
-          <div class="alert-content"><h3 class="card-title">${item.headline}</h3><p class="alert-summary">${item.summary}</p><p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p><p class="alert-meta">${renderAlertDates(item)} <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a></span></p></div>
+          <div class="alert-content"><h3 class="card-title">${item.headline}</h3><p class="alert-summary">${item.summary}</p><p class="alert-impact"><span class="muted-label">What this means for credit unions:</span> ${item.impact || ''}</p><p class="alert-meta">${renderAlertDates(item)} <span class="alert-source"><span class="muted-label">Source:</span> <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceName}</a>${renderAlertSourceDate(item)}</span></p></div>
         </article>`).join('');
     }
     if (alertsMore) alertsMore.hidden = visible.length >= filtered.length;
