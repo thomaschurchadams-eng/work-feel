@@ -107,7 +107,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:15:52.193Z",
+    "updatedAt": "2026-11-17T13:26:49.874Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -213,13 +213,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-17",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-17T13:27:52.193Z",
-        "nextAction": "Read bounded retry attempt 2, reconcile its actual terminal evidence and require fresh exact rendered review; no further automatic retry.",
+        "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
         "evidence": {
           "pending": {
             "prNumber": 362,
@@ -313,7 +313,35 @@
               },
               "reason": "Bounded same-head design rerun after the exact replacement checkpoint was recorded on canonical main."
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+            "run": 44090372476,
+            "job": 134065684261,
+            "runAttempt": 2,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-17T13:26:15.040Z",
+            "prNumber": 362
+          },
+          "terminalAcceptance": {
+            "prNumber": 362,
+            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+            "run": 44090372476,
+            "job": 134065684261,
+            "runAttempt": 2,
+            "visualReviewedAt": "2026-11-17T13:26:49.874Z",
+            "artifactId": 14332955531,
+            "artifactSha256": "sha256:e62ea32d5cfd1dde6494e53e1187e48143fbb149d99a75e7c2d1ff4054d8622d",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Fresh attempt-2 article, hero and both placement screenshots opened at 390px and 1440px. Visible text keeps the publication date distinct from the December 16 effective date. Matching reports: no accessibility, overflow or unexpected artwork issues; deliberate image failure and recovery passed."
+          }
         }
       }
     ]
