@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ncua-associational-common-bond-membership",
+      "title": "NCUA Changes How Federal Credit Unions Can Add Associations",
+      "url": "/news/ncua-associational-common-bond-membership.html",
+      "publishedAt": "2026-11-17T08:50:43-05:00",
+      "section": "news",
+      "beat": "ncua-associational-common-bond-membership",
+      "functions": [
+        "board-strategy",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Federal credit-union boards, chartering and membership-growth leads",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/credit-union-board-meeting-guidance-gap.html",
+        "/news/ncua-advertising-statement-insurance-sign.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "November 17 Federal Register final rule confirms a January 4, 2027 effective date and governing criteria, not approval of a particular partnership. The NCUA announcement is supporting context."
+    },
+    {
       "id": "pioneer-equipifi-app-shopping-financing",
       "title": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
       "url": "/news/pioneer-equipifi-app-shopping-financing.html",
