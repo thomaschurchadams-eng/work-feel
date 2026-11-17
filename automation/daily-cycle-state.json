@@ -115,7 +115,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:52:19.575Z",
+    "updatedAt": "2026-11-17T14:05:07.403Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -407,13 +407,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-17",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "NCUA Changes How Federal Credit Unions Can Add Associations",
         "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-17T14:07:19.575Z",
-        "nextAction": "Review exact CI and design artifact at desktop/mobile sizes; do not release without success and visual acceptance.",
+        "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
         "evidence": {
           "pending": {
             "prNumber": 365,
@@ -421,6 +421,34 @@
             "run": 44096993929,
             "job": 134086633838,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
+            "run": 44096993929,
+            "job": 134086633838,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-17T14:03:41.074Z",
+            "prNumber": 365
+          },
+          "terminalAcceptance": {
+            "prNumber": 365,
+            "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
+            "run": 44096993929,
+            "job": 134086633838,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-17T14:05:07.403Z",
+            "artifactId": 14336170038,
+            "artifactSha256": "sha256:d7260fff1a24fd25adacc3a369c9d0953db3cc588ddfe060cca3c2f3f8c01cb0",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "I reviewed matching archive screenshots at 390px and 1440px. The current lead headline, effective-date deck, meeting-table art and story link are legible on Home and News; article has correct November 17 publication date, full table art, readable linked Federal Register source, visible January 4 effective date and unobstructed body. Exact automated evidence has no accessibility, overflow or normal/404/recovery artwork errors."
           }
         }
       }
