@@ -3,6 +3,52 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ncua-advertising-statement-insurance-sign",
+      "articleUrl": "/news/ncua-advertising-statement-insurance-sign.html",
+      "imagePath": "/assets/ncua-advertising-statement-insurance-sign.jpg",
+      "publishedAt": "2026-11-17T07:48:29-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "ink-and-linocut",
+      "subject": "architecture-and-infrastructure",
+      "composition": "foreground-background-tension",
+      "perspective": "oblique",
+      "palette": "burgundy-olive",
+      "lighting": "flat-screenprint",
+      "texture": "printed-grain",
+      "scene": "A loose ad sheet beside a mounted plaque and a branch deposit window",
+      "conceptScore": 78.3,
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "architecture-and-infrastructure",
+          "score": 78.3,
+          "rejected": false
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "operations-environment",
+          "score": 71.6,
+          "rejected": false
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "documents-and-controls",
+          "score": 46,
+          "rejected": true,
+          "reasons": [
+            "recent-exact-combination"
+          ]
+        }
+      ],
+      "selectionReason": "The screenprint contrast gives an independent ink palette and distinguishes a fixed sign from removable advertising; no real insurer logo or compliance facsimile.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "371713ec1605410953ae17082ca4312abb8863e7faffaa451cef13e9ce4b2e51"
+    },
+    {
       "id": "cobalt-illuma-voice-authentication-fallback",
       "articleUrl": "/news/cobalt-illuma-voice-authentication-fallback.html",
       "imagePath": "/assets/cobalt-illuma-voice-authentication-fallback.jpg",
