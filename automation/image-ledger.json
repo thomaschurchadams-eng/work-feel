@@ -3,6 +3,52 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "pioneer-equipifi-app-shopping-financing",
+      "articleUrl": "/news/pioneer-equipifi-app-shopping-financing.html",
+      "imagePath": "/assets/pioneer-equipifi-app-shopping-financing.jpg",
+      "publishedAt": "2026-11-17T08:31:15-05:00",
+      "width": 1200,
+      "height": 630,
+      "medium": "dimensional-3d",
+      "subject": "financial-object-study",
+      "composition": "split-comparison",
+      "perspective": "overhead",
+      "palette": "ink-blue-and-sandstone",
+      "lighting": "soft-side-light",
+      "texture": "wire-and-limestone",
+      "scene": "A blue wire basket separated from two geometric tiles on a stone counter",
+      "conceptScore": 77.4,
+      "conceptAlternatives": [
+        {
+          "medium": "dimensional-3d",
+          "subject": "financial-object-study",
+          "score": 77.4,
+          "rejected": false
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "operations-environment",
+          "score": 71.1,
+          "rejected": false
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "member-interaction",
+          "score": 43.8,
+          "rejected": true,
+          "reasons": [
+            "recent-exact-combination"
+          ]
+        }
+      ],
+      "selectionReason": "The separated physical forms distinguish shopping from funding, and are original editorial artwork rather than a product depiction.",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "633ae661bbec2cf66cf4795d35007c05d665450f9d28d9e35f4d49cab67b1b9a"
+    },
+    {
       "id": "ncua-advertising-statement-insurance-sign",
       "articleUrl": "/news/ncua-advertising-statement-insurance-sign.html",
       "imagePath": "/assets/ncua-advertising-statement-insurance-sign.jpg",

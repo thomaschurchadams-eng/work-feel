@@ -3,6 +3,34 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "pioneer-equipifi-app-shopping-financing",
+      "title": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
+      "url": "/news/pioneer-equipifi-app-shopping-financing.html",
+      "publishedAt": "2026-11-17T08:31:15-05:00",
+      "section": "news",
+      "beat": "pioneer-equipifi-app-shopping-financing",
+      "functions": [
+        "lending-collections",
+        "payments-deposits"
+      ],
+      "technologies": [
+        "realtime-embedded-finance"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Credit-union lending, card-product and servicing leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/american-heritage-debit-purchase-installments.html",
+        "/news/plaid-ai-cash-flow-underwriting.html"
+      ],
+      "sourceTier": 3,
+      "sourceLimit": "Provider identifies an early named institution and describes disbursement before purchase; Pioneer’s public page verifies only existing offers, not new feature rollout breadth, member journeys or results."
+    },
+    {
       "id": "ncua-advertising-statement-insurance-sign",
       "title": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
       "url": "/news/ncua-advertising-statement-insurance-sign.html",
