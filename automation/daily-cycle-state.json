@@ -126,7 +126,7 @@
       }
     ],
     "status": "completed",
-    "updatedAt": "2026-11-17T20:46:38.299Z",
+    "updatedAt": "2026-11-17T21:00:34.033Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -503,12 +503,26 @@
     },
     "alertCycle": {
       "owner": "cuai-operating-system",
-      "status": "released-awaiting-exact-deployment-receipt",
+      "status": "live-verified",
       "sourceReviewAt": "2026-11-17T20:46:38.299Z",
       "dedupeKey": "cuai-alert:fincen-cdd-proposal:2026-11-17",
       "candidatesEvaluated": 2,
       "alertsPublished": 1,
-      "note": "Selected the new FinCEN CDD proposal after primary-source and NCUA applicability checks. Held the Federal Reserve tokenized-markets speech because it does not create a comparably urgent credit-union operating deadline. Publication time remains intentionally unfilled until the first production deployment is verified."
+      "note": "Selected the new FinCEN CDD proposal after primary-source and NCUA applicability checks. Held the Federal Reserve tokenized-markets speech because it does not create a comparably urgent credit-union operating deadline. Publication time remains intentionally unfilled until the first production deployment is verified.",
+      "firstProductionCommit": "266d333f7fe0db0353dd02f7cf2f3dc2aba016b5",
+      "productionDeployment": "dpl_HomdToh9N3NdDBpZLJsk4YZSzRqx",
+      "publishedAt": "2026-11-17T20:59:02.388Z",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6960856432",
+      "liveUrl": "https://creditunionainews.com/alerts/#fincen-beneficial-owner-customer-due-diligence-proposal",
+      "validation": {
+        "run": 44172879978,
+        "exactHead": "0ffe0a520d8d9a20a1cb1178e959ca33f9ef4648",
+        "artifactId": 14369561616,
+        "artifactDigest": "sha256:4f65db779a84473ab3c1ea877a8043935bd7e49bb85c28e7bd3d925049e8062c",
+        "conclusion": "success"
+      },
+      "liveVerifiedAt": "2026-11-17T21:00:34.033Z",
+      "homepageDecision": "No watch item selected. The new verified Alert becomes the current freshness surface; the empty evergreen watch state remains the post-expiry fallback without a date-only refresh."
     }
   },
   "history": [
