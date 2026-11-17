@@ -107,7 +107,7 @@
       }
     ],
     "status": "in-progress",
-    "updatedAt": "2026-11-17T13:05:02.042Z",
+    "updatedAt": "2026-11-17T13:08:14.170Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -213,13 +213,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-17",
-        "status": "pending-validation",
+        "status": "technical-failure",
         "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
         "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:17:02.042Z",
-        "nextAction": "Verify terminal status and actual rendered artifact on the rebuilt head; keep the Barr receipt and prior validation archived.",
+        "nextReviewAt": "2026-11-17T13:22:14.170Z",
+        "nextAction": "Rebuild the same article with canonical main as first parent; verify first-parent guard before any release.",
         "evidence": {
           "pending": {
             "prNumber": 362,
@@ -267,7 +267,20 @@
               },
               "reason": "Concurrent authoritative Barr queue/report receipt on main required a fresh exact article revision."
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
+            "run": 44089174408,
+            "job": 134059503120,
+            "runAttempt": 1,
+            "conclusion": "failure",
+            "runConclusion": "failure",
+            "jobConclusion": "failure",
+            "observedAt": "2026-11-17T13:08:11.625Z",
+            "prNumber": 362,
+            "failedStep": "Check canonical shell and existing regressions",
+            "reason": "The article-first reconciliation merge introduced an apparent prepared-to-validated jump on the candidate branch's first-parent chain. CI rejected it before rendered review."
+          }
         }
       }
     ]
