@@ -6,387 +6,113 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-16",
-    "fullArticleCount": 5,
+    "date": "2026-11-17",
+    "fullArticleCount": 0,
     "alertCount": 0,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "risk-compliance",
-      "lending-collections",
-      "payments-deposits",
-      "finance-treasury",
-      "vendor-management",
-      "member-service",
+      "marketing-growth",
       "board-strategy",
-      "it-data-cybersecurity"
+      "risk-compliance",
+      "member-service",
+      "lending-collections",
+      "hr-training",
+      "operations",
+      "it-data-cybersecurity",
+      "finance-treasury"
     ],
     "candidateEvaluations": [
       {
-        "title": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
-        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/pdf/2026-23281.pdf",
+        "title": "Veritran acquires PrismaCampaigns",
+        "sourceUrl": "https://www.veritran.com/en/resources/newsroom/veritran-adds-prisma-campaigns",
         "status": "selected",
-        "reason": "Final rule published November 16; signed official text controls December 16 effective date. Reroutes internal citations without cancelling FHA/ECOA controls."
+        "reason": "Primary November 16 announcement confirms acquisition; practical consent, suppression, export and contractual continuity checks without assuming product integration."
       },
       {
-        "title": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
-        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
-        "status": "selected",
-        "reason": "Separate from FedNow pricing: confirmed Check Services average price effect, January fee changes and May processing hours in official schedules."
+        "title": "NCUA changes associational common-bond criteria",
+        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-final-rule-deregulation",
+        "status": "qualifying",
+        "reason": "Direct final rule relevant to membership expansion; scope and effective date require exact text."
       },
       {
-        "title": "Proposed vendor-risk comment period extended",
-        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
-        "status": "rejected",
-        "reason": "Already in the regulatory watch; extension alone adds little to the November 12 full analysis of the same proposal."
+        "title": "NCUA revises advertising notice",
+        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/html/2026-23288.htm",
+        "status": "qualifying",
+        "reason": "Official final text is material for marketing and compliance; reserve for distinct follow-up."
       },
       {
-        "title": "Heartland digital banking cutover",
-        "sourceUrl": "https://heartlandcu.com/digital-banking/",
+        "title": "Cobalt chooses Illuma voice security",
+        "sourceUrl": "https://illuma.cx/press-release/cobalt-credit-union-selects-illuma-voice-security/",
+        "status": "qualifying",
+        "reason": "Named institution and attributable rollout; avoid assuming performance or adoption."
+      },
+      {
+        "title": "equipifi launches Shop",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/equipifi-launches-shop-to-help-credit-unions-and-community-banks-compete-head-to-head-with-big-fintech-302940951.html",
         "status": "held",
-        "reason": "Credit union supplies a timetable but not a publication date, and restored service is not yet confirmed."
+        "reason": "Attributed launch; distinguish pre-purchase checkout and actual deployment from November 16 post-purchase CU coverage."
       },
       {
-        "title": "American Heritage Adds Installments After a Debit Purchase",
-        "sourceUrl": "https://www.cuinsight.com/press-release/american-heritage-credit-union-launches-bnpl-on-debit-cards-for-members-to-split-purchases-into-installments/",
-        "status": "selected",
-        "reason": "Named post-purchase lending launch corroborated by credit union member guidance. Different from AI service story; conflicting public thresholds isolated, no member-specific rule or outcomes assumed."
+        "title": "Golden 1 workplace recognition",
+        "sourceUrl": "https://thecreditunionwire.com/",
+        "status": "rejected",
+        "reason": "Award without supported workforce operating change."
       },
       {
-        "title": "SAFE members seek review of merger vote",
-        "sourceUrl": "https://cutimes.com/2026/11/13/safe-members-ask-california-regulator-to-investigate-merger-vote/",
+        "title": "Charity Bank selects Temenos",
+        "sourceUrl": "https://ffnews.com/news/charity-bank-selects-temenos-saas-for-core-banking-and-payments-8408c77f",
         "status": "held",
-        "reason": "Complaint is not a regulator determination; need direct filing or credit union response."
+        "reason": "Named institution but secondary discovery evidence and weak direct CU implication."
       },
       {
-        "title": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
-        "sourceUrl": "https://infobytes.orrick.com/wp-content/uploads/NACS-et-al.-v-NCUA-Complaint.pdf",
-        "status": "selected",
-        "reason": "Actual November 12 federal complaint creates a separate challenge to the agency rule; not the already-published Illinois appeal, a finding or a new processing requirement."
+        "title": "Credit union adjusts lending to pressure on members",
+        "sourceUrl": "https://www.cutimes.com/2026/11/16/slow-squeeze-on-members-leads-credit-union-to-change-lending-approach/",
+        "status": "held",
+        "reason": "Trade report leads but insufficient verified evidence on specific underwriting or portfolio results."
       },
       {
-        "title": "Credit union groups seek year-end legislative changes",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-pursuing-year-end-opportunities",
+        "title": "NCUA merger activity reporting",
+        "sourceUrl": "https://cutimes.com/",
+        "status": "held",
+        "reason": "Trade lead; need actual agency material and precise status before drawing a conclusion."
+      },
+      {
+        "title": "Claimed attack on card networks and JPMorgan",
+        "sourceUrl": "https://pasqualepillitteri.it/en/news/34013/n0n-group-claims-attack-on-visa-mastercard-and-jpmorgan",
         "status": "rejected",
-        "reason": "Advocacy, not new legislation enacted or a final rule."
+        "reason": "Claim alone does not establish affected systems or CU exposure."
       },
       {
-        "title": "NexTier integration information",
-        "sourceUrl": "https://www.riverside.bank/merger",
+        "title": "November 17 mortgage-rate roundup",
+        "sourceUrl": "https://fortune.com/article/current-mortgage-rates-11-17-2026/",
         "status": "rejected",
-        "reason": "Bank merger service notice without a specific new credit union decision."
+        "reason": "Retail rate roundup does not establish a new CU operating development."
       },
       {
-        "title": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
+        "title": "Federal Reserve Barr AI speech",
         "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
-        "status": "selected",
-        "reason": "Official delivered speech verifies distinct member-side automation and potential liquidity risk; no observed CU outflow or new regulatory obligation."
-      },
-      {
-        "title": "Frontier model developers face litigation",
-        "sourceUrl": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
         "status": "rejected",
-        "reason": "Filing alone does not establish a service discontinuity or concrete credit union action."
-      },
-      {
-        "title": "November 16 deposit rate roundup",
-        "sourceUrl": "https://fortune.com/article/cd-rates-11-16-26/",
-        "status": "rejected",
-        "reason": "Retail rate table, without a verified new institutional development or data basis for CU pricing analysis."
+        "reason": "Already published with verified November 16 receipt; avoid duplicate."
       }
     ],
     "fallbackEvaluations": [],
-    "publications": [
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
-        "title": "American Heritage Adds Installments After a Debit Purchase",
-        "classification": "News",
-        "promotionPriority": "Standard",
-        "primaryFunctionalAudience": "Consumer lending, payments product, digital banking and member service leaders",
-        "socialDecision": "prepared-not-reserved-provider-review"
-      }
-    ],
-    "status": "completed",
-    "updatedAt": "2026-11-16T13:27:22.716Z",
-    "socialDecision": "not-reserved-provider-review",
-    "outcomeSlot": 5,
+    "publications": [],
+    "status": "in-progress",
+    "updatedAt": "2026-11-17T12:06:23.142Z",
+    "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-16",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html",
-        "candidateTitle": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
+        "plannedDate": "2026-11-17",
+        "status": "prepared",
+        "candidateTitle": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
+        "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-16T08:00:00-05:00",
-        "nextAction": "Re-read current main and merge only the accepted exact head; verify Production READY and public content before closing.",
-        "evidence": {
-          "pending": {
-            "prNumber": 353,
-            "head": "f973d75f94bfc9d5d17b66b983653177010fa3ae",
-            "run": 43867333062,
-            "job": 133299145096,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-16T08:00:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "f973d75f94bfc9d5d17b66b983653177010fa3ae",
-            "run": 43867333062,
-            "job": 133299145096,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-16T12:40:23.226Z"
-          },
-          "terminalAcceptance": {
-            "head": "f973d75f94bfc9d5d17b66b983653177010fa3ae",
-            "run": 43867333062,
-            "job": 133299145096,
-            "runAttempt": 1,
-            "artifactId": 14225094412,
-            "artifactDigest": "sha256:75047cf782f70d29506e07c21111dc2b0eb6c98ca82db9834543402633ac029c",
-            "visualReviewedAt": "2026-11-16T12:40:24.086Z",
-            "renderedChecks": 50,
-            "reviewedViewports": [
-              390,
-              1440
-            ],
-            "visualProof": "Exact clean artifact: reviewed article opening/body and hero, homepage placement, News listing and missing-artwork recovery on both viewports. No axe violations, overflow, broken normal images or browser errors."
-          }
-        },
-        "productionCommit": "1ab8346d4729fc95bd88bdaf5a6aa28e2b979e3f",
-        "verifiedAt": "2026-11-16T12:41:51.865Z"
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-16",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html",
-        "candidateTitle": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-16T08:20:00-05:00",
-        "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
-        "evidence": {
-          "pending": {
-            "prNumber": 354,
-            "head": "ae8b6b3445b62994353e868bd691fe929c423147",
-            "run": 43869422819,
-            "job": 133306336981,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-16T08:20:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "ae8b6b3445b62994353e868bd691fe929c423147",
-            "run": 43869422819,
-            "job": 133306336981,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-16T12:52:49.817Z"
-          },
-          "terminalAcceptance": {
-            "head": "ae8b6b3445b62994353e868bd691fe929c423147",
-            "run": 43869422819,
-            "job": 133306336981,
-            "runAttempt": 1,
-            "artifactId": 14227012719,
-            "artifactDigest": "sha256:20dfc92290f99276e88f11177a7421802ba61c59208d13771ac970a9c5fb819f",
-            "visualReviewedAt": "2026-11-16T12:52:48.915Z",
-            "renderedChecks": 50,
-            "reviewedViewports": [
-              390,
-              1440
-            ],
-            "visualProof": "Viewed exact 390px and 1440px article opening, legible dates/fee summary, homepage feature and both intentional News artwork failure/recovery cases; no normal errors, axe violations or overflow."
-          }
-        },
-        "productionCommit": "322b2c5a543f0ff68a8d7fe32d7a3c4a6a15a191",
-        "verifiedAt": "2026-11-16T12:53:42.289Z"
-      },
-      {
-        "slot": 3,
-        "plannedDate": "2026-11-16",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html",
-        "candidateTitle": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-16T08:30:00-05:00",
-        "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
-        "evidence": {
-          "pending": {
-            "prNumber": 355,
-            "head": "a885a43753a874eee6e2eb7d05282475f3087d05",
-            "run": 43870967296,
-            "job": 133311721794,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-16T08:30:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "a885a43753a874eee6e2eb7d05282475f3087d05",
-            "run": 43870967296,
-            "job": 133311721794,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-16T13:03:45.003Z"
-          },
-          "terminalAcceptance": {
-            "head": "a885a43753a874eee6e2eb7d05282475f3087d05",
-            "run": 43870967296,
-            "job": 133311721794,
-            "runAttempt": 1,
-            "artifactId": 14227574245,
-            "artifactDigest": "sha256:f3dbea2c4b2d062fcf6f8ec1b3b94a12fccc409a4371b2b14707fd906016faad",
-            "visualReviewedAt": "2026-11-16T13:03:44.337Z",
-            "renderedChecks": 50,
-            "reviewedViewports": [
-              390,
-              1440
-            ],
-            "visualProof": "Viewed exact 390px/1440px article, image, hypothesis wording, homepage placement and News recovery; artifact shows no normal browser errors, broken images, axe violations or overflow."
-          }
-        },
-        "productionCommit": "a02c54f77da91d404f4254aee73d7e97cfeef111",
-        "verifiedAt": "2026-11-16T13:04:44.347Z"
-      },
-      {
-        "slot": 4,
-        "plannedDate": "2026-11-16",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html",
-        "candidateTitle": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-16T08:40:00-05:00",
-        "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
-        "evidence": {
-          "pending": {
-            "prNumber": 356,
-            "head": "8ba3829f70316207da084e883ef61097cc0e9729",
-            "run": 43872645715,
-            "job": 133317508599,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-16T08:40:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "8ba3829f70316207da084e883ef61097cc0e9729",
-            "run": 43872645715,
-            "job": 133317508599,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-16T13:15:01.120Z"
-          },
-          "terminalAcceptance": {
-            "head": "8ba3829f70316207da084e883ef61097cc0e9729",
-            "run": 43872645715,
-            "job": 133317508599,
-            "runAttempt": 1,
-            "artifactId": 14228987063,
-            "artifactDigest": "sha256:d203edffe33ea6b187a01354d0bf7bf162774a33598164b7635523b156326e91",
-            "visualReviewedAt": "2026-11-16T13:15:00.379Z",
-            "renderedChecks": 50,
-            "reviewedViewports": [
-              390,
-              1440
-            ],
-            "visualProof": "Viewed exact desktop/mobile article, opening text and illustration, homepage lead positions and both News card missing-artwork fallbacks. Main rendered/accessibility reports show no overflow, broken images, axe violations or page errors."
-          }
-        },
-        "productionCommit": "da56c4424e90e578d853e2b463cd39d4df7eb346",
-        "verifiedAt": "2026-11-16T13:15:57.749Z"
-      },
-      {
-        "slot": 5,
-        "plannedDate": "2026-11-16",
-        "status": "live-verified",
-        "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
-        "candidateTitle": "American Heritage Adds Installments After a Debit Purchase",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-16T08:50:00-05:00",
-        "nextAction": "Live verified; do not republish.",
-        "evidence": {
-          "pending": {
-            "prNumber": 357,
-            "head": "9f87e58322966d747aa624113368d4b0c72f4068",
-            "run": 43874413253,
-            "job": 133323588825,
-            "runAttempt": 1,
-            "accountableOwner": "daily-publisher",
-            "nextReviewAt": "2026-11-16T08:50:00-05:00"
-          },
-          "validationHistory": [],
-          "terminalValidation": {
-            "head": "9f87e58322966d747aa624113368d4b0c72f4068",
-            "run": 43874413253,
-            "job": 133323588825,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-16T13:26:28.513Z"
-          },
-          "terminalAcceptance": {
-            "head": "9f87e58322966d747aa624113368d4b0c72f4068",
-            "run": 43874413253,
-            "job": 133323588825,
-            "runAttempt": 1,
-            "artifactId": 14229143934,
-            "artifactDigest": "sha256:963b9e2a99f87560aa93a03c99b2fef9b1dd94ab6559f4c768aa13b3f1b28fbb",
-            "visualReviewedAt": "2026-11-16T13:26:26.794Z",
-            "renderedChecks": 50,
-            "reviewedViewports": [
-              390,
-              1440
-            ],
-            "visualProof": "Viewed exact 390px and 1440px headline, body opening, illustrative hero, homepage feature and missing-image card presentation; confirmed exact responsive, accessibility, normal artwork and 404/recovery evidence."
-          },
-          "productionDeploymentId": "dpl_CKZJEFHrvc2HwaUFz1D2qDrGe7r2"
-        },
-        "productionCommit": "aa1534c74d338fd762f12083faf818b7cd60faf1",
-        "verifiedAt": "2026-11-16T13:27:22.716Z",
-        "liveProof": "Exact production alias READY; public article/catalog, homepage and 1200×630 artwork bytes verified."
+        "nextReviewAt": "2026-11-17T07:40:00-05:00",
+        "nextAction": "Build one atomic article package; obtain isolated exact-head CI and review desktop/mobile evidence before release."
       }
-    ],
-    "socialDistribution": {
-      "status": "not-reserved",
-      "blocker": "Complete observed provider inventory contains 78 historical sent records requiring destination review. None of today’s articles has candidate-specific clearance. Standing separate reviewed-event window unchanged.",
-      "inventoryArtifactId": 14226707965,
-      "inventoryObservedAt": "2026-11-16T12:42:35.246Z",
-      "providerReservationAttempted": false
-    }
+    ]
   },
   "history": [
     {
@@ -10596,6 +10322,389 @@
         "publishedAt": "2026-11-12T23:52:30.661Z",
         "verifiedAt": "2026-11-12T23:52:50.354Z",
         "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6839436157"
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "fullArticleCount": 5,
+      "alertCount": 0,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "risk-compliance",
+        "lending-collections",
+        "payments-deposits",
+        "finance-treasury",
+        "vendor-management",
+        "member-service",
+        "board-strategy",
+        "it-data-cybersecurity"
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
+          "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/pdf/2026-23281.pdf",
+          "status": "selected",
+          "reason": "Final rule published November 16; signed official text controls December 16 effective date. Reroutes internal citations without cancelling FHA/ECOA controls."
+        },
+        {
+          "title": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+          "status": "selected",
+          "reason": "Separate from FedNow pricing: confirmed Check Services average price effect, January fee changes and May processing hours in official schedules."
+        },
+        {
+          "title": "Proposed vendor-risk comment period extended",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
+          "status": "rejected",
+          "reason": "Already in the regulatory watch; extension alone adds little to the November 12 full analysis of the same proposal."
+        },
+        {
+          "title": "Heartland digital banking cutover",
+          "sourceUrl": "https://heartlandcu.com/digital-banking/",
+          "status": "held",
+          "reason": "Credit union supplies a timetable but not a publication date, and restored service is not yet confirmed."
+        },
+        {
+          "title": "American Heritage Adds Installments After a Debit Purchase",
+          "sourceUrl": "https://www.cuinsight.com/press-release/american-heritage-credit-union-launches-bnpl-on-debit-cards-for-members-to-split-purchases-into-installments/",
+          "status": "selected",
+          "reason": "Named post-purchase lending launch corroborated by credit union member guidance. Different from AI service story; conflicting public thresholds isolated, no member-specific rule or outcomes assumed."
+        },
+        {
+          "title": "SAFE members seek review of merger vote",
+          "sourceUrl": "https://cutimes.com/2026/11/13/safe-members-ask-california-regulator-to-investigate-merger-vote/",
+          "status": "held",
+          "reason": "Complaint is not a regulator determination; need direct filing or credit union response."
+        },
+        {
+          "title": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
+          "sourceUrl": "https://infobytes.orrick.com/wp-content/uploads/NACS-et-al.-v-NCUA-Complaint.pdf",
+          "status": "selected",
+          "reason": "Actual November 12 federal complaint creates a separate challenge to the agency rule; not the already-published Illinois appeal, a finding or a new processing requirement."
+        },
+        {
+          "title": "Credit union groups seek year-end legislative changes",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/credit-unions-pursuing-year-end-opportunities",
+          "status": "rejected",
+          "reason": "Advocacy, not new legislation enacted or a final rule."
+        },
+        {
+          "title": "NexTier integration information",
+          "sourceUrl": "https://www.riverside.bank/merger",
+          "status": "rejected",
+          "reason": "Bank merger service notice without a specific new credit union decision."
+        },
+        {
+          "title": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+          "status": "selected",
+          "reason": "Official delivered speech verifies distinct member-side automation and potential liquidity risk; no observed CU outflow or new regulatory obligation."
+        },
+        {
+          "title": "Frontier model developers face litigation",
+          "sourceUrl": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
+          "status": "rejected",
+          "reason": "Filing alone does not establish a service discontinuity or concrete credit union action."
+        },
+        {
+          "title": "November 16 deposit rate roundup",
+          "sourceUrl": "https://fortune.com/article/cd-rates-11-16-26/",
+          "status": "rejected",
+          "reason": "Retail rate table, without a verified new institutional development or data basis for CU pricing analysis."
+        }
+      ],
+      "fallbackEvaluations": [],
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
+          "title": "American Heritage Adds Installments After a Debit Purchase",
+          "classification": "News",
+          "promotionPriority": "Standard",
+          "primaryFunctionalAudience": "Consumer lending, payments product, digital banking and member service leaders",
+          "socialDecision": "prepared-not-reserved-provider-review"
+        }
+      ],
+      "status": "completed",
+      "updatedAt": "2026-11-16T13:27:22.716Z",
+      "socialDecision": "not-reserved-provider-review",
+      "outcomeSlot": 5,
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-16",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/ncua-fair-lending-rule-repeal.html",
+          "candidateTitle": "NCUA Will Repeal Its Fair-Lending Rule Without Changing Federal Protections",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-16T08:00:00-05:00",
+          "nextAction": "Re-read current main and merge only the accepted exact head; verify Production READY and public content before closing.",
+          "evidence": {
+            "pending": {
+              "prNumber": 353,
+              "head": "f973d75f94bfc9d5d17b66b983653177010fa3ae",
+              "run": 43867333062,
+              "job": 133299145096,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-16T08:00:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "f973d75f94bfc9d5d17b66b983653177010fa3ae",
+              "run": 43867333062,
+              "job": 133299145096,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-16T12:40:23.226Z"
+            },
+            "terminalAcceptance": {
+              "head": "f973d75f94bfc9d5d17b66b983653177010fa3ae",
+              "run": 43867333062,
+              "job": 133299145096,
+              "runAttempt": 1,
+              "artifactId": 14225094412,
+              "artifactDigest": "sha256:75047cf782f70d29506e07c21111dc2b0eb6c98ca82db9834543402633ac029c",
+              "visualReviewedAt": "2026-11-16T12:40:24.086Z",
+              "renderedChecks": 50,
+              "reviewedViewports": [
+                390,
+                1440
+              ],
+              "visualProof": "Exact clean artifact: reviewed article opening/body and hero, homepage placement, News listing and missing-artwork recovery on both viewports. No axe violations, overflow, broken normal images or browser errors."
+            }
+          },
+          "productionCommit": "1ab8346d4729fc95bd88bdaf5a6aa28e2b979e3f",
+          "verifiedAt": "2026-11-16T12:41:51.865Z"
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-16",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/fed-check-fees-processing-windows-2027.html",
+          "candidateTitle": "Fed Check Fees Rise in January; Processing Windows Shrink in May",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-16T08:20:00-05:00",
+          "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
+          "evidence": {
+            "pending": {
+              "prNumber": 354,
+              "head": "ae8b6b3445b62994353e868bd691fe929c423147",
+              "run": 43869422819,
+              "job": 133306336981,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-16T08:20:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "ae8b6b3445b62994353e868bd691fe929c423147",
+              "run": 43869422819,
+              "job": 133306336981,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-16T12:52:49.817Z"
+            },
+            "terminalAcceptance": {
+              "head": "ae8b6b3445b62994353e868bd691fe929c423147",
+              "run": 43869422819,
+              "job": 133306336981,
+              "runAttempt": 1,
+              "artifactId": 14227012719,
+              "artifactDigest": "sha256:20dfc92290f99276e88f11177a7421802ba61c59208d13771ac970a9c5fb819f",
+              "visualReviewedAt": "2026-11-16T12:52:48.915Z",
+              "renderedChecks": 50,
+              "reviewedViewports": [
+                390,
+                1440
+              ],
+              "visualProof": "Viewed exact 390px and 1440px article opening, legible dates/fee summary, homepage feature and both intentional News artwork failure/recovery cases; no normal errors, axe violations or overflow."
+            }
+          },
+          "productionCommit": "322b2c5a543f0ff68a8d7fe32d7a3c4a6a15a191",
+          "verifiedAt": "2026-11-16T12:53:42.289Z"
+        },
+        {
+          "slot": 3,
+          "plannedDate": "2026-11-16",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/fed-barr-ai-agent-deposit-outflow-risk.html",
+          "candidateTitle": "Fed’s Barr Warns AI Agents Could Speed Deposit Outflows",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-16T08:30:00-05:00",
+          "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
+          "evidence": {
+            "pending": {
+              "prNumber": 355,
+              "head": "a885a43753a874eee6e2eb7d05282475f3087d05",
+              "run": 43870967296,
+              "job": 133311721794,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-16T08:30:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "a885a43753a874eee6e2eb7d05282475f3087d05",
+              "run": 43870967296,
+              "job": 133311721794,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-16T13:03:45.003Z"
+            },
+            "terminalAcceptance": {
+              "head": "a885a43753a874eee6e2eb7d05282475f3087d05",
+              "run": 43870967296,
+              "job": 133311721794,
+              "runAttempt": 1,
+              "artifactId": 14227574245,
+              "artifactDigest": "sha256:f3dbea2c4b2d062fcf6f8ec1b3b94a12fccc409a4371b2b14707fd906016faad",
+              "visualReviewedAt": "2026-11-16T13:03:44.337Z",
+              "renderedChecks": 50,
+              "reviewedViewports": [
+                390,
+                1440
+              ],
+              "visualProof": "Viewed exact 390px/1440px article, image, hypothesis wording, homepage placement and News recovery; artifact shows no normal browser errors, broken images, axe violations or overflow."
+            }
+          },
+          "productionCommit": "a02c54f77da91d404f4254aee73d7e97cfeef111",
+          "verifiedAt": "2026-11-16T13:04:44.347Z"
+        },
+        {
+          "slot": 4,
+          "plannedDate": "2026-11-16",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/merchants-ncua-interchange-preemption-lawsuit.html",
+          "candidateTitle": "Merchants Sue NCUA Over Federal Credit Union Interchange Rule",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-16T08:40:00-05:00",
+          "nextAction": "Validate fresh main and press only the exact accepted merge; verify canonical production before live closeout.",
+          "evidence": {
+            "pending": {
+              "prNumber": 356,
+              "head": "8ba3829f70316207da084e883ef61097cc0e9729",
+              "run": 43872645715,
+              "job": 133317508599,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-16T08:40:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "8ba3829f70316207da084e883ef61097cc0e9729",
+              "run": 43872645715,
+              "job": 133317508599,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-16T13:15:01.120Z"
+            },
+            "terminalAcceptance": {
+              "head": "8ba3829f70316207da084e883ef61097cc0e9729",
+              "run": 43872645715,
+              "job": 133317508599,
+              "runAttempt": 1,
+              "artifactId": 14228987063,
+              "artifactDigest": "sha256:d203edffe33ea6b187a01354d0bf7bf162774a33598164b7635523b156326e91",
+              "visualReviewedAt": "2026-11-16T13:15:00.379Z",
+              "renderedChecks": 50,
+              "reviewedViewports": [
+                390,
+                1440
+              ],
+              "visualProof": "Viewed exact desktop/mobile article, opening text and illustration, homepage lead positions and both News card missing-artwork fallbacks. Main rendered/accessibility reports show no overflow, broken images, axe violations or page errors."
+            }
+          },
+          "productionCommit": "da56c4424e90e578d853e2b463cd39d4df7eb346",
+          "verifiedAt": "2026-11-16T13:15:57.749Z"
+        },
+        {
+          "slot": 5,
+          "plannedDate": "2026-11-16",
+          "status": "live-verified",
+          "url": "https://creditunionainews.com/news/american-heritage-debit-purchase-installments.html",
+          "candidateTitle": "American Heritage Adds Installments After a Debit Purchase",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-16T08:50:00-05:00",
+          "nextAction": "Live verified; do not republish.",
+          "evidence": {
+            "pending": {
+              "prNumber": 357,
+              "head": "9f87e58322966d747aa624113368d4b0c72f4068",
+              "run": 43874413253,
+              "job": 133323588825,
+              "runAttempt": 1,
+              "accountableOwner": "daily-publisher",
+              "nextReviewAt": "2026-11-16T08:50:00-05:00"
+            },
+            "validationHistory": [],
+            "terminalValidation": {
+              "head": "9f87e58322966d747aa624113368d4b0c72f4068",
+              "run": 43874413253,
+              "job": 133323588825,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-16T13:26:28.513Z"
+            },
+            "terminalAcceptance": {
+              "head": "9f87e58322966d747aa624113368d4b0c72f4068",
+              "run": 43874413253,
+              "job": 133323588825,
+              "runAttempt": 1,
+              "artifactId": 14229143934,
+              "artifactDigest": "sha256:963b9e2a99f87560aa93a03c99b2fef9b1dd94ab6559f4c768aa13b3f1b28fbb",
+              "visualReviewedAt": "2026-11-16T13:26:26.794Z",
+              "renderedChecks": 50,
+              "reviewedViewports": [
+                390,
+                1440
+              ],
+              "visualProof": "Viewed exact 390px and 1440px headline, body opening, illustrative hero, homepage feature and missing-image card presentation; confirmed exact responsive, accessibility, normal artwork and 404/recovery evidence."
+            },
+            "productionDeploymentId": "dpl_CKZJEFHrvc2HwaUFz1D2qDrGe7r2"
+          },
+          "productionCommit": "aa1534c74d338fd762f12083faf818b7cd60faf1",
+          "verifiedAt": "2026-11-16T13:27:22.716Z",
+          "liveProof": "Exact production alias READY; public article/catalog, homepage and 1200×630 artwork bytes verified."
+        }
+      ],
+      "socialDistribution": {
+        "status": "not-reserved",
+        "blocker": "Complete observed provider inventory contains 78 historical sent records requiring destination review. None of today’s articles has candidate-specific clearance. Standing separate reviewed-event window unchanged.",
+        "inventoryArtifactId": 14226707965,
+        "inventoryObservedAt": "2026-11-16T12:42:35.246Z",
+        "providerReservationAttempted": false
       }
     }
   ],
