@@ -5412,6 +5412,38 @@
       ],
       "summary": "Observed one manual CreditUnionAI News company-page delivery for the Barr article at approximately 3:59 p.m. ET with LinkedIn share 7528200012464381952 and approved channel 6a53df0880cc80cdcaa76fb8. Current main 22795c3d7159c00a5ce65ca55908d25f478887f9 still has 55 queue items (53 sent, one old scheduled, one planned), no November 16 queue record and no active-date duplicate. The exact Buffer post ID was not exposed in the visible receipt, no post-send natural provider artifact exists, and no authenticated provider session was available in this run. Reliability therefore made no provider call, did not repost, did not infer a Buffer ID from the LinkedIn share/channel IDs and did not mutate the queue. Publishing and production remain healthy: five articles are recorded/live, 84 publication-history entries are preserved, current Production is READY, four checked public surfaces return HTTP 200 and no runtime errors were observed in the available window. Safe closeout remains blocked until an authorized read-only provider receipt returns the exact Buffer post ID and sent timestamp for this same single post; then reconcile only that queue record without a new delivery.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-17T12:50:50.846Z",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "A natural verified-operations receipt exposed the exact Buffer identity for the single November 16 Barr company-page delivery that was blocked from authoritative queue closeout.",
+      "status": "recovered",
+      "incidentKey": "cuai-social:manual-barr-delivery:2026-11-16",
+      "workUnits": {
+        "currentMainRevisionsReconciled": 3,
+        "naturalOperationsReceiptsReviewed": 1,
+        "providerInventoryPagesRead": 1,
+        "providerInventoryRecordsObserved": 79,
+        "authoritativeBufferPostIdsRecovered": 1,
+        "publicLinkedInPostsVerified": 1,
+        "publicRedirectTargetsVerified": 1,
+        "socialQueueItemsPreserved": 55,
+        "socialQueueRecordsReconciled": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "providerWriteAttempts": 0,
+        "schedulerCalls": 0,
+        "socialDeliveriesCreated": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "CreditUnionAI News public site",
+        "Buffer read-only evidence",
+        "LinkedIn public post"
+      ],
+      "summary": "Recovered the missing repository closeout for the one already-delivered November 16 Barr post. Natural operations run 44084254873, artifact cuai-operation-receipts-44084254873-1 (SHA-256 080ee33cbf7a744364f59ab34d65dd2da292994d3b68f1e6cf10ea52faf3d32a), returned complete one-page inventory with 79 records and exact Buffer post 6afb6e881e443d7cc190423c, sent 2026-11-16T20:59:10.745Z on approved channel 6a53df0880cc80cdcaa76fb8, matching LinkedIn share 7528200012464381952 and the canonical Barr article. The public post copy and redirect independently match that same delivery. Its actual link resolved without UTM parameters, so the queue record preserves that historical tracking gap as utm-missing-manual-delivery instead of claiming utm-tagged. No provider or scheduler write occurred, no duplicate was created, and future UTM/cadence gates remain unchanged.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
