@@ -123,7 +123,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:17:58.351Z",
+    "updatedAt": "2026-11-18T13:20:17.232Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -279,49 +279,61 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-18",
-        "status": "validated",
+        "status": "pending-validation",
         "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
         "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T13:32:04.111Z",
-        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
+        "nextReviewAt": "2026-11-18T13:50:17.232Z",
+        "nextAction": "Inspect refreshed exact-head terminal artifact and actual visuals; preserve old successful receipt without using it for release.",
         "evidence": {
           "pending": {
             "prNumber": 376,
-            "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
-            "run": 44309608621,
-            "job": 134820012337,
+            "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
+            "run": 44312662006,
+            "job": 134830537082,
             "runAttempt": 1
           },
-          "terminalValidation": {
-            "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
-            "run": 44309608621,
-            "job": 134820012337,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-18T13:17:56.874Z",
-            "prNumber": 376
-          },
-          "terminalAcceptance": {
-            "prNumber": 376,
-            "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
-            "run": 44309608621,
-            "job": 134820012337,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-18T13:17:58.351Z",
-            "artifactId": 14429739307,
-            "artifactSha256": "sha256:c3aafc27da731e1adbe6bacf2628960db9cac5e302ef2ef757089a76bd91a9d3",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally inspected all seven actual artifact crops: Home and News 390/1440 cards, article 390/1440, lower mobile body. No clipping, crop, typography or spacing issue. Visible $1.20/$0.30 example and $8/$40, $2/$10 rates match checked arithmetic; subscription, provider claims, hypothetical and reviewer-time limitations clear. Source links and follow/related panels readable; automated exact-head accessibility/navigation/artwork gates passed."
-          }
+          "validationHistory": [
+            {
+              "prNumber": 376,
+              "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
+              "run": 44309608621,
+              "job": 134820012337,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-18T13:20:17.232Z",
+              "terminalValidation": {
+                "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
+                "run": 44309608621,
+                "job": 134820012337,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-18T13:17:56.874Z",
+                "prNumber": 376
+              },
+              "terminalAcceptance": {
+                "prNumber": 376,
+                "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
+                "run": 44309608621,
+                "job": 134820012337,
+                "runAttempt": 1,
+                "visualReviewedAt": "2026-11-18T13:17:58.351Z",
+                "artifactId": 14429739307,
+                "artifactSha256": "sha256:c3aafc27da731e1adbe6bacf2628960db9cac5e302ef2ef757089a76bd91a9d3",
+                "renderedChecks": 50,
+                "failedChecks": 0,
+                "viewports": [
+                  390,
+                  1440
+                ],
+                "observations": "Personally inspected all seven actual artifact crops: Home and News 390/1440 cards, article 390/1440, lower mobile body. No clipping, crop, typography or spacing issue. Visible $1.20/$0.30 example and $8/$40, $2/$10 rates match checked arithmetic; subscription, provider claims, hypothetical and reviewer-time limitations clear. Source links and follow/related panels readable; automated exact-head accessibility/navigation/artwork gates passed."
+              },
+              "reason": "Concurrent reliability activity-ledger append requires fresh exact-head review."
+            }
+          ]
         }
       }
     ]
