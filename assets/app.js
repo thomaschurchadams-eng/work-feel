@@ -1337,7 +1337,7 @@
   const archiveAlerts = prepareAlerts(alertsData);
   const preparedAlerts = getRecentAlerts(alertsData);
   const homepageAlerts = getRecentAlerts(alertsData, 3);
-  const tickerAlerts = preparedAlerts;
+  const tickerAlerts = homepageAlerts; // Homepage and ticker both feature only the last 72 hours.
 
   const renderAlertsTicker = () => {
     const header = document.querySelector('.site-header');
