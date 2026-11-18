@@ -13,6 +13,8 @@
 
 
   const caiBannerExperiment = {
+    // Temporary owner-requested pause. Keep variants, assets and attribution intact.
+    enabled: false,
     id: 'cai_current_readiness_2026_09',
     storageKey: 'cuai_cai_banner_variant_2026_09',
     campaign: 'cai_current_readiness_sep2026',
@@ -78,6 +80,7 @@
   };
 
   const addInstituteBanners = () => {
+    if (!caiBannerExperiment.enabled) return;
     if (document.querySelector('.institute-banner')) return;
     const header = document.querySelector('header');
     if (!header) return;

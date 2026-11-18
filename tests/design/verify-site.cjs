@@ -6,6 +6,7 @@ const { launchOptions, revision, cachePath, cacheSnapshot } = require('../../lib
 const { reviewRoutes } = require('../../lib/design-review-routes.cjs');
 const axePath = require.resolve('axe-core/axe.min.js');
 const contract = require('./contracts.json');
+const caiBannerPlan = require('../../automation/cai-banner-experiment.json');
 const root = path.resolve(__dirname, '../..');
 const out = path.join(root, 'design-results');
 fs.mkdirSync(out, { recursive: true });
@@ -115,6 +116,8 @@ async function serve() {
         if (!menuPassed || !trackerPassed || !transcriptPassed) failed.push('interaction');
         if (accessibility.length) failed.push('accessibility');
         if (facts.newsletterCtaCount > 1) failed.push('duplicate-newsletter-cta');
+        if (caiBannerPlan.status === 'paused' && await page.locator('.institute-banner, [data-cai-banner-placement]').count() !== 0) failed.push('paused-cai-banner-present');
+        if (caiBannerPlan.status === 'active' && facts.sponsorCount !== 1) failed.push('active-cai-banner-missing');
         if (facts.rejectedBoilerplate.length) failed.push('rejected-visitor-copy');
         if (facts.houseCampaignCount !== 1 || facts.sponsorEmail.length !== 1 || facts.sponsorEmail[0].text !== 'info@creditunionainews.com' || facts.sponsorEmail[0].href !== 'mailto:info@creditunionainews.com?subject=CUAI%20sponsorship%20inquiry' || !facts.sponsorEmail[0].visible) failed.push('sitewide-campaign-contact');
         await page.evaluate(() => { document.activeElement?.blur(); scrollTo(0,0); });

@@ -1,4 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const caiBannerPlan=require('../../automation/cai-banner-experiment.json');
 module.exports=async function verifyAnalyticsJourneys(browser,base,out,axePath){
  const results=[];
  for(const width of [320,390,1440])for(const slug of ['psecu-gemini-member-guidance','plaid-ai-cash-flow-underwriting']){
@@ -9,12 +10,13 @@ module.exports=async function verifyAnalyticsJourneys(browser,base,out,axePath){
    const response=await page.goto(base+'/news/'+slug+'.html');assert.equal(response.status(),200);
    assert.equal(await page.locator('main').count(),1);assert.equal(await page.locator('h1').count(),1);
    const opening=await page.locator('.article-summary').innerText();assert.ok(opening.length<180&&opening.length>60);
-   const before=await page.evaluate(()=>({headlineTop:document.querySelector('h1').getBoundingClientRect().top,summaryTop:document.querySelector('.article-summary').getBoundingClientRect().top,bannerHeight:document.querySelector('.institute-banner').getBoundingClientRect().height,overflow:document.documentElement.scrollWidth>innerWidth}));
+   const before=await page.evaluate(()=>({headlineTop:document.querySelector('h1').getBoundingClientRect().top,summaryTop:document.querySelector('.article-summary').getBoundingClientRect().top,bannerHeight:document.querySelector('.institute-banner')?.getBoundingClientRect().height ?? 0,overflow:document.documentElement.scrollWidth>innerWidth}));
    assert.equal(before.overflow,false);if(width<700){assert.ok(before.bannerHeight<300,JSON.stringify(before));assert.ok(before.headlineTop<620,JSON.stringify(before));}
    await page.locator('.article-reading-link a').click();const questions=page.locator('#pilot-questions');assert.equal(await questions.isVisible(),true);assert.equal(await page.locator('.article-next-step ol li').count(),3);
    const destinations=await page.locator('.article-next-step a').evaluateAll(a=>a.map(x=>new URL(x.href).pathname));for(const dest of destinations)assert.equal((await context.request.get(base+dest)).status(),200,dest);
    const top=await questions.evaluate(e=>e.getBoundingClientRect().top);assert.ok(top>=0&&top<500,'Jump should reveal the pilot questions below navigation');
-   assert.match(await page.locator('.institute-banner-kicker').first().innerText(),/Sponsored · Cooperative AI Institute/i);
+   if(caiBannerPlan.status==='paused')assert.equal(await page.locator('.institute-banner, [data-cai-banner-placement]').count(),0);
+   else {assert.equal(caiBannerPlan.status,'active');assert.match(await page.locator('.institute-banner-kicker').first().innerText(),/Sponsored · Cooperative AI Institute/i);}
    await page.addScriptTag({path:axePath});const violations=await page.evaluate(async()=> (await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}})).violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)})));assert.deepEqual(violations,[]);
    assert.deepEqual(errors,[]);await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(out,slug+'-'+width+'.png'),fullPage:true});await page.screenshot({path:path.join(out,slug+'-opening-'+width+'.png')});
    const emitted=await page.evaluate(()=>Array.from(window.dataLayer||[]).filter(x=>x[0]==='event'));assert.equal(emitted.length,0,'Loopback QA must not become publication demand');

@@ -1,7 +1,13 @@
 {
   "version": 1,
   "experimentId": "cai_current_readiness_2026_09",
-  "status": "active",
+  "status": "paused",
+  "pause": {
+    "requestedAt": "2026-11-18",
+    "reason": "Owner requested temporary removal of CAI promotion while CAI issues are addressed.",
+    "scope": ["sitewide_header", "contextual_followup"],
+    "restore": "After the owner clears the pause, set caiBannerExperiment.enabled to true in assets/app.js and status to active here; recheck both placements on desktop/mobile through the normal release workflow. Preserve variants, storage key, assets and historical analytics."
+  },
   "cost": "$0 incremental recurring cost",
   "objective": "Learn which truthful CAI value proposition produces qualified interest from CUAI readers.",
   "destination": "https://www.cooperativeaiinstitute.com/early-access-guide",
