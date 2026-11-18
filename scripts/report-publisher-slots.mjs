@@ -19,6 +19,12 @@ const exception = rules.standardCycle.oneTimeException;
 const intended = date === exception?.date ? exception.baselineArticleCount + exception.additionalArticleMaximum : (rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0);
 const daily = [state.current, ...state.history].find(entry => entry?.date === date);
 const tracked = daily?.regularPublicationSlots ?? [];
+const extras = rules.standardCycle.optionalExtras;
+const maximum = date === exception?.date ? intended : !intended ? 0 : extras && date < extras.effectiveDate ? extras.previousMaximumPerWeekday : rules.standardCycle.fullArticleMaximumPerWeekday;
+const observedSlots = Math.max(intended, ...tracked.map(entry => entry.slot));
+const optionalNotSelected = Array.from({ length: Math.max(0, maximum - intended) }, (_, index) => intended + index + 1)
+  .filter(slot => !tracked.some(entry => entry.slot === slot))
+  .map(slot => ({ slot, required: false, status: 'optional-not-selected', nextAction: null, shortfall: false }));
 const canonical = value => typeof value === 'string' ? new URL(value, 'https://creditunionainews.com').href : null;
 const statuses = new Set(['live-verified', 'editorial-hold', 'approval-hold', 'technical-failure', 'pending-validation', 'late-validation', 'prepared', 'validated', 'pre-validation-blocked']);
 const liveCounts = new Map();
@@ -26,7 +32,7 @@ for (const fact of tracked.filter(entry => entry.status === 'live-verified' && e
   const url = canonical(fact.url);
   liveCounts.set(url, (liveCounts.get(url) ?? 0) + 1);
 }
-const slots = Array.from({ length: intended }, (_, index) => {
+const slots = Array.from({ length: observedSlots }, (_, index) => {
   const slot = index + 1;
   const fact = tracked.find(entry => entry.slot === slot);
   const publications = (daily?.publications ?? []).filter(entry => entry.type === 'article');
@@ -41,7 +47,7 @@ const slots = Array.from({ length: intended }, (_, index) => {
   if (!liveProof && fact?.status === 'live-verified') status = 'recorded-publication-no-live-proof';
   if (duplicateLive) status = 'duplicate-live-publication';
   return {
-    plannedDate: date, slot, timezone: zone, status,
+    plannedDate: date, slot, required: slot <= intended, timezone: zone, status,
     liveUrl: liveProof ? canonical(fact.url) : null,
     verifiedAt: liveProof ? fact.verifiedAt : null,
     liveProof: liveProof ? { productionCommit: fact.productionCommit, coverageId: ledger.id } : 'No verified live proof in slot record.',
@@ -56,4 +62,4 @@ const slots = Array.from({ length: intended }, (_, index) => {
     evidence: fact?.evidence ?? null
   };
 });
-console.log(JSON.stringify({ date, weekday, timezone: zone, intended, basis: 'Current prospective weekday targets; not retrospective obligations or permission to reopen closed cycles. No publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));
+console.log(JSON.stringify({ date, weekday, timezone: zone, intended, maximum, optionalNotSelected, basis: 'Current prospective weekday targets; not retrospective obligations or permission to reopen closed cycles. Optional capacity is not a quota or shortfall. No publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));

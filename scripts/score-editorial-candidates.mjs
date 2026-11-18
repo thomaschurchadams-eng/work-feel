@@ -1,15 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import discovery from '../lib/editorial-discovery.cjs';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 const taxonomy = read('automation/editorial-taxonomy.json');
 const ledger = read('automation/coverage-ledger.json');
 const rules = read('automation/publishing-rules.json');
+const registry = read('automation/source-registry.json');
 const inputPath = process.argv[2];
 
+if (inputPath === '--plan') {
+  console.log(JSON.stringify(discovery.discoveryPlan(registry, rules, process.argv[3]), null, 2));
+  process.exit(0);
+}
+
 if (!inputPath) {
-  console.error('Usage: node scripts/score-editorial-candidates.mjs candidates.json');
+  console.error('Usage: node scripts/score-editorial-candidates.mjs candidates.json discovery-receipt.json | --plan YYYY-MM-DD');
   process.exit(1);
 }
 
@@ -19,10 +26,14 @@ if (!Array.isArray(candidates)) throw new Error('Candidate input must be a JSON 
 const now = new Date();
 const easternDate = date => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(date));
 const today = easternDate(now);
+if (!process.argv[3]) throw Error('same-day discovery receipt required; a plan is not an executed scan');
+const discoveryReceipt = JSON.parse(fs.readFileSync(path.resolve(process.argv[3]), 'utf8'));
+const discoveryCoverage = discovery.validateDiscoveryReceipt(discoveryReceipt, registry, rules, today, candidates);
 const monday = new Date(today + 'T12:00:00Z');
 monday.setUTCDate(monday.getUTCDate() - (monday.getUTCDay() + 6) % 7);
 const weekStart = monday.toISOString().slice(0, 10);
 const week = ledger.articles.filter(a => Number.isFinite(Date.parse(a.publishedAt)) && new Date(a.publishedAt) <= now && easternDate(a.publishedAt) >= weekStart);
+const alreadyPublishedToday = week.filter(a => easternDate(a.publishedAt) === today).length;
 const daysAgo = (date) => (now - new Date(date)) / 86400000;
 const recent = ledger.articles.filter((a) => daysAgo(a.publishedAt) <= rules.selection.lookbackDays);
 const tokens = (text='') => new Set(text.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter((x)=>x.length>3));
@@ -49,6 +60,8 @@ function validate(c) {
   if (!Number.isInteger(c.sourceTier)||c.sourceTier>2) reasons.push('source-tier-below-2');
   if ((c.confidence??0)<0.7) reasons.push('confidence-below-0.7');
   if (!c.functions?.length||!c.technologies?.length||!c.format) reasons.push('missing-taxonomy-fields');
+  if (c.discoveryDirection === 'international-comparisons' && (!c.sourceJurisdiction?.trim() || !c.usCreditUnionImplication?.trim())) reasons.push('international-jurisdiction-or-us-cu-implication-missing');
+  if (c.discoveryDirection === 'practical-synthesis' && (c.section !== 'Insights' || !Array.isArray(c.primarySourceUrls) || new Set(c.primarySourceUrls).size < 2)) reasons.push('synthesis-requires-multiple-primary-sources-and-insights');
   const similarity=Math.max(0,...recent.map((a)=>jaccard(c.title,a.title)));
   if (similarity>=0.72) reasons.push('duplicate-or-near-duplicate');
   return {reasons,similarity};
@@ -70,14 +83,20 @@ const scored=candidates.map((candidate)=>{
 }).sort((a,b)=>b.score-a.score);
 
 const selected=[];
+const weekday = new Intl.DateTimeFormat('en-US', {weekday:'long', timeZone:'America/New_York'}).format(now);
+const coreTarget = rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0;
+const extraRules = rules.standardCycle.optionalExtras;
+const dailyMaximum = !coreTarget ? 0 : extraRules && today < extraRules.effectiveDate ? extraRules.previousMaximumPerWeekday : rules.standardCycle.fullArticleMaximumPerWeekday;
 for(const candidate of scored.filter((c)=>!c.rejected)){
+  if(alreadyPublishedToday + selected.length >= dailyMaximum) break;
   const primaryFunction=candidate.functions[0], primaryTechnology=candidate.technologies[0];
   if (week.length + selected.length >= rules.weeklyTargets.siteStoriesMax) break;
   const fnCount=[...week,...selected].filter((x)=>x.functions?.[0]===primaryFunction).length;
   const techCount=[...week,...selected].filter((x)=>x.technologies?.[0]===primaryTechnology).length;
   if(fnCount>=rules.selection.maximumSamePrimaryFunctionPerWeek || (primaryTechnology !== 'industry-development' && techCount>=rules.selection.maximumSamePrimaryTechnologyPerWeek)) continue;
-  selected.push(candidate);
+  if (alreadyPublishedToday + selected.length >= coreTarget && !discovery.optionalExtraEligible(candidate)) continue;
+  selected.push({...candidate, selectionRole: alreadyPublishedToday + selected.length < coreTarget ? 'core' : 'optional-extra'});
   if(selected.length>=rules.weeklyTargets.siteStoriesMax) break;
 }
 
-process.stdout.write(JSON.stringify({generatedAt:now.toISOString(),weekStart,alreadyPublishedThisWeek:week.length,selected,rejected:scored.filter((c)=>c.rejected),ranked:scored},null,2)+'\n');
+process.stdout.write(JSON.stringify({generatedAt:now.toISOString(),weekStart,alreadyPublishedThisWeek:week.length,alreadyPublishedToday,coreTarget,dailyMaximum,discoveryCoverage,releaseReady:false,selected,rejected:scored.filter((c)=>c.rejected),ranked:scored},null,2)+'\n');

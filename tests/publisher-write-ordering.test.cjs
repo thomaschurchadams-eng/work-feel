@@ -328,7 +328,8 @@ test('wrong-origin URL, false prepublication count and full existing capacity fa
   assert.throws(() => planner.validateArticleReview(inputs), /noncanonical-article-url/);
   const base = f.state(), proposed = clone(base); proposed.current.publications.push({ type: 'article', url: base.current.regularPublicationSlots[0].url }); proposed.current.fullArticleCount++;
   assert.throws(() => planner.planStateWrite({ expectedMain: f.head(), observedMain: f.head(), base, candidate: proposed, rules }), /matching sequential verified/);
-  const full = f.snapshots(h); full.main.state.current.publications = [1, 2, 3, 4, 5].map(n => ({ type: 'article', url: `/news/prior-${n}.html` })); full.main.state.current.fullArticleCount = 5;
+  const full = f.snapshots(h), maximum = guards.articleLimits(full.main.state.current, rules).maximum;
+  full.main.state.current.publications = Array.from({ length: maximum }, (_, index) => ({ type: 'article', url: `/news/prior-${index + 1}.html` })); full.main.state.current.fullArticleCount = maximum;
   assert.throws(() => planner.validateArticleReview(full), /cap-already-reached/);
 });
 test('portable URL normalization preserves all actual117 historical publication identities', () => {

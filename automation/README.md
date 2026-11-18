@@ -39,7 +39,8 @@ Source tier 1 is an authoritative primary source. Tier 2 is a strong independent
 Run with:
 
 ```bash
-node scripts/score-editorial-candidates.mjs candidates.json
+node scripts/score-editorial-candidates.mjs --plan YYYY-MM-DD
+node scripts/score-editorial-candidates.mjs candidates.json discovery-receipt.json
 ```
 
 ## Regular publication slot review

@@ -52,7 +52,7 @@ test('historical audience evidence is preserved with the current weekday target'
   assert.equal(usage.entries.length, usageBefore.entries.length + 1); assert.deepEqual(usage.entries.slice(0, -1), usageBefore.entries);
   assert.equal(usage.entries.at(-1).workUnits.weeklyArticlesTarget, 8);
   assert.equal(usage.entries.at(-1).operationalLearning.decision, 'inconclusive-observe');
-  assert.equal(rules.weeklyTargets.siteStoriesMax, 25); assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 5);
+  assert.equal(rules.weeklyTargets.siteStoriesMax, 35); assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 7);
   for (const day of ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']) assert.equal(rules.standardCycle.fullArticleTargetByWeekday[day], 5);
   const report = JSON.parse(execFileSync(process.execPath, ['scripts/report-publisher-slots.mjs', '2026-11-10'], { cwd: root, encoding: 'utf8' }));
   assert.equal(report.intended, 5); assert.equal(report.slots[0].status, 'live-verified'); assert.match(report.basis, /not retrospective obligations/);
