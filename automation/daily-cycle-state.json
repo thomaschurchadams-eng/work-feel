@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-18",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "publications": [
       {
@@ -25,9 +25,13 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html"
       }
     ],
-    "status": "in-progress",
+    "status": "completed",
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "hr-training",
@@ -140,7 +144,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:56:14.474Z",
+    "updatedAt": "2026-11-18T13:58:57.737Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -407,13 +411,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-18",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
         "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-18T14:14:28.310Z",
-        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
+        "nextAction": "Completed: exact production verified and five-slot target recorded. Do not replay. LinkedIn remains held pending existing destination/duplicate-clearance recovery.",
         "evidence": {
           "pending": {
             "prNumber": 378,
@@ -450,9 +454,89 @@
             ],
             "observations": "Personally inspected seven actual crops from artifact14432948237 for bb3272d0946e63bd967efa92305b1db43e6dd285: Home/News cards at390/1440, article390/1440, lower mobile. Title, deck and monochrome research art fit without clipping. November18 publication and linked November17 announcement clearly distinct. Attributable deployment, unverified performance limits and expressly hypothetical entity-matching example readable. Source link, related/follow/sponsor panels clear; exact route/accessibility/navigation/image normal404recovery checks passed."
           }
-        }
+        },
+        "productionCommit": "767d39537b9c724bf9792ed1d10a1f420867ed73",
+        "verifiedAt": "2026-11-18T13:57:33.851Z"
       }
-    ]
+    ],
+    "socialDecision": "not-reserved-provider-review",
+    "socialDistribution": {
+      "status": "not-reserved",
+      "blocker": "Complete authenticated company reservationInventory contains80 retained sent records, all80 require destination review. No candidate-specific exclusion proof clears today's five articles; their current-week dates and useful Standard classification do not clear duplicate holds.",
+      "inventoryArtifactId": 14433598458,
+      "inventoryObservedAt": "2026-11-18T13:57:17.235Z",
+      "inventoryCommit": "767d39537b9c724bf9792ed1d10a1f420867ed73",
+      "inventoryRecordCount": 80,
+      "inventoryReviewCount": 80,
+      "activeProviderRecordsObserved": 0,
+      "providerReservationAttempted": false,
+      "providerSubmissionAttempts": 0,
+      "inventoryUse": "Dated complete read-only observation, not a60-second reservation admission or future clearance.",
+      "editorialNomination": "harris-financial-application-abandonment",
+      "nominationScope": "read-only editorial usefulness comparison only",
+      "editorialConsideration": [
+        {
+          "slot": 2,
+          "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html",
+          "decision": "hold-provider-review",
+          "reason": "Strongest cross-functional practical usefulness: funding and identity friction informs acquisition work; nationally surveyed people, not a CU conversion estimate. Distinct audience from this week's two regulatory manual sends. Editorial nomination only, not provider duplicate clearance."
+        },
+        {
+          "slot": 1,
+          "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
+          "decision": "hold-provider-review",
+          "reason": "Specific opt-in/default and attribute visibility change gives underserved HR/IT readers a concrete review question; no deployment or exposure at a credit union is inferred. Editorial usefulness does not remove provider holds."
+        },
+        {
+          "slot": 5,
+          "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
+          "decision": "hold-provider-review",
+          "reason": "Named CU adoption and a clear business-member preparation workflow; narrower relationship-team audience and no measured outcomes. Current source date independently checked. No candidate-specific historical exclusion proof."
+        },
+        {
+          "slot": 3,
+          "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
+          "decision": "hold-provider-review",
+          "reason": "Concrete payments relevance and new provider availability, but rollout and support constraints limit the audience; evidence questions are hypothetical, not a legal or deployed-CU result. Provider clearance remains independent."
+        },
+        {
+          "slot": 4,
+          "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
+          "decision": "hold-provider-review",
+          "reason": "Checked standard-rate arithmetic offers operations value; accepted-deliverable cost comparison is proposed, not a benchmark or a measured saving. Lower distribution priority than the more broadly useful acquisition and HR developments; provider holds remain."
+        }
+      ],
+      "otherPoolDecisions": {
+        "missedHigh": "No qualifying unrepresented High article in prior seven days.",
+        "media": "Existing October20 planned chart reservation retained unchanged; unpublished/unverified media and paused production not promoted.",
+        "library": "No newly qualified Library selection; current-news pool cleared five articles; no automatic backlog fill.",
+        "houseCampaign": "Not used to escape the same provider review hold."
+      },
+      "sharedCaps": "one weekday post/day; five/week; unchanged fixed times and immutable reservations",
+      "naturalRun": {
+        "id": 44318914710,
+        "attempt": 1,
+        "actions": 0,
+        "reconciliations": 0,
+        "errors": 0
+      }
+    },
+    "browserReadiness": {
+      "localStatus": "missing-browser-executable",
+      "observedAt": "2026-11-18T12:05:07.269Z",
+      "cacheChanged": false,
+      "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
+      "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
+      "fallback": "Existing isolated exact-head design-checks artifacts, actual390/1440 screenshot inspection and exact production byte verification for all5 articles",
+      "acceptedRenderedChecks": 250,
+      "localRecoveryProven": false
+    },
+    "executionEvidence": {
+      "unattendedAcceptance": "unverified",
+      "reason": "Existing Reliability Watch recorded a failed outer scheduled wrapper. This same-conversation continuation completed exact checkpoints; it does not prove independently scheduled unattended execution or repair the wrapper.",
+      "completedWithoutRoutineTomApproval": true,
+      "sourcePolicyBlob": "35cd9cf1383e3abfc00fade14a8d7ed993c73d81"
+    }
   },
   "history": [
     {
