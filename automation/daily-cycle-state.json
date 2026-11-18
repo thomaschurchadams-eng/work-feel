@@ -119,7 +119,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T12:46:19.841Z",
+    "updatedAt": "2026-11-18T12:56:42.660Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -225,13 +225,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-18",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
         "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-18T13:16:19.841Z",
-        "nextAction": "Observe actual terminal design result; inspect matching artifact and mobile/desktop pixels before validated closeout.",
+        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 375,
@@ -239,6 +239,34 @@
             "run": 44307091649,
             "job": 134811338746,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
+            "run": 44307091649,
+            "job": 134811338746,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-18T12:56:41.461Z",
+            "prNumber": 375
+          },
+          "terminalAcceptance": {
+            "prNumber": 375,
+            "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
+            "run": 44307091649,
+            "job": 134811338746,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-18T12:56:42.660Z",
+            "artifactId": 14429446643,
+            "artifactSha256": "sha256:316a0f3c6e90e36e897917a122581024fb1339c62e9933604232cc1ba56433e6",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Inspected exact desktop/mobile article header, source link, body, original clay artwork and Home/News lead cards. Supported-card and provider-claim limits are legible; mobile lower body and existing follow/sponsored panels are unobstructed. Matching accessibility, menu, overflow and deliberate artwork 404/recovery checks passed."
           }
         }
       }
