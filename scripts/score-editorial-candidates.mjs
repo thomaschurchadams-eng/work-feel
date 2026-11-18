@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import discovery from '../lib/editorial-discovery.cjs';
+import admission from '../lib/adaptive-admission.cjs';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
@@ -8,15 +9,25 @@ const taxonomy = read('automation/editorial-taxonomy.json');
 const ledger = read('automation/coverage-ledger.json');
 const rules = read('automation/publishing-rules.json');
 const registry = read('automation/source-registry.json');
+const state = read('automation/daily-cycle-state.json');
+const growth = read('automation/growth-strategy.json');
+const admissionContext = { rules, state, growth };
 const inputPath = process.argv[2];
 
+if (inputPath === '--review-admission') {
+  if (!process.argv[3]) throw Error('admission evidence file required');
+  const evidence = JSON.parse(fs.readFileSync(path.resolve(process.argv[3]), 'utf8'));
+  console.log(JSON.stringify(admission.reviewAdmission(evidence, admissionContext, new Date().toISOString()), null, 2));
+  process.exit(0);
+}
+
 if (inputPath === '--plan') {
-  console.log(JSON.stringify(discovery.discoveryPlan(registry, rules, process.argv[3]), null, 2));
+  console.log(JSON.stringify({ ...discovery.discoveryPlan(registry, rules, process.argv[3]), admissionSnapshot: admission.snapshot(admissionContext) }, null, 2));
   process.exit(0);
 }
 
 if (!inputPath) {
-  console.error('Usage: node scripts/score-editorial-candidates.mjs candidates.json discovery-receipt.json | --plan YYYY-MM-DD');
+  console.error('Usage: node scripts/score-editorial-candidates.mjs candidates.json discovery-receipt.json | --plan YYYY-MM-DD | --review-admission evidence.json');
   process.exit(1);
 }
 
@@ -87,6 +98,15 @@ const weekday = new Intl.DateTimeFormat('en-US', {weekday:'long', timeZone:'Amer
 const coreTarget = rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0;
 const extraRules = rules.standardCycle.optionalExtras;
 const dailyMaximum = !coreTarget ? 0 : extraRules && today < extraRules.effectiveDate ? extraRules.previousMaximumPerWeekday : rules.standardCycle.fullArticleMaximumPerWeekday;
+const optionalAdmission = admission.optionalAdmission(admissionContext, discoveryReceipt.operatingEvidence, now.toISOString());
+// Canonical live counts and coverage must agree before discretionary work; a
+// mismatch never makes room for another optional package.
+if (state.current.date !== today || state.current.fullArticleCount !== alreadyPublishedToday) {
+  optionalAdmission.optionalCapacity = 0;
+  optionalAdmission.decision = 'no-optional-capacity';
+  optionalAdmission.reasons.push('canonical-and-coverage-count-mismatch');
+}
+let optionalSelected = 0;
 for(const candidate of scored.filter((c)=>!c.rejected)){
   if(alreadyPublishedToday + selected.length >= dailyMaximum) break;
   const primaryFunction=candidate.functions[0], primaryTechnology=candidate.technologies[0];
@@ -94,9 +114,11 @@ for(const candidate of scored.filter((c)=>!c.rejected)){
   const fnCount=[...week,...selected].filter((x)=>x.functions?.[0]===primaryFunction).length;
   const techCount=[...week,...selected].filter((x)=>x.technologies?.[0]===primaryTechnology).length;
   if(fnCount>=rules.selection.maximumSamePrimaryFunctionPerWeek || (primaryTechnology !== 'industry-development' && techCount>=rules.selection.maximumSamePrimaryTechnologyPerWeek)) continue;
-  if (alreadyPublishedToday + selected.length >= coreTarget && !discovery.optionalExtraEligible(candidate)) continue;
-  selected.push({...candidate, selectionRole: alreadyPublishedToday + selected.length < coreTarget ? 'core' : 'optional-extra'});
+  const isOptional = alreadyPublishedToday + selected.length >= coreTarget;
+  if (isOptional && (!discovery.optionalExtraEligible(candidate) || optionalSelected >= optionalAdmission.optionalCapacity)) continue;
+  selected.push({...candidate, selectionRole: isOptional ? 'optional-extra' : 'core'});
+  if (isOptional) optionalSelected++;
   if(selected.length>=rules.weeklyTargets.siteStoriesMax) break;
 }
 
-process.stdout.write(JSON.stringify({generatedAt:now.toISOString(),weekStart,alreadyPublishedThisWeek:week.length,alreadyPublishedToday,coreTarget,dailyMaximum,discoveryCoverage,releaseReady:false,selected,rejected:scored.filter((c)=>c.rejected),ranked:scored},null,2)+'\n');
+process.stdout.write(JSON.stringify({generatedAt:now.toISOString(),weekStart,alreadyPublishedThisWeek:week.length,alreadyPublishedToday,coreTarget,dailyMaximum,optionalAdmission,discoveryCoverage,releaseReady:false,selected,rejected:scored.filter((c)=>c.rejected),ranked:scored},null,2)+'\n');

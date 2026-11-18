@@ -163,5 +163,10 @@
     "learningLoop": "Each existing cycle inspect actual outputs, accepted direction, feedback and comparable evidence; fix and reverify immediately. Unknown results remain unknown. Old copy experiments stay closed.",
     "handoffStatus": "prepared file only; no native publisher contact, acceptance, queueing, scheduling or sending proved",
     "outreachBoundary": "Separate sponsor owner; no outbound email by website/operating-system owner. Sender-compliance hold remains in force."
+  },
+  "experimentAdmission": {
+    "maximumActive": 2,
+    "owner": "cuai-operating-system",
+    "rule": "Retain the existing two-active-experiment ceiling. Use the controlling operating policy and the existing selector --review-admission entry before a new private editorial/workflow/model evaluation. No new social treatment, scheduled executor, model setting, permission or spending authority is implied. Evidence lives in the existing improvement record and authorized private task receipts; an admission result alone starts no experiment."
   }
 }

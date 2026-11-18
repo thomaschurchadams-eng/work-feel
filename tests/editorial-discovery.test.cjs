@@ -33,7 +33,7 @@ test('one twelve-candidate budget and practical synthesis selection are enforced
 });
 test('the normal selector rejects missing receipt and over-budget input; optional choices require value evidence',t=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'cuai-discovery-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
- for(const file of ['scripts/score-editorial-candidates.mjs','lib/editorial-discovery.cjs','automation/publishing-rules.json','automation/source-registry.json','automation/editorial-taxonomy.json']){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.copyFileSync(path.join(root,file),path.join(dir,file));}
+ for(const file of ['scripts/score-editorial-candidates.mjs','lib/editorial-discovery.cjs','lib/adaptive-admission.cjs','automation/publishing-rules.json','automation/source-registry.json','automation/editorial-taxonomy.json','automation/daily-cycle-state.json','automation/growth-strategy.json']){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.copyFileSync(path.join(root,file),path.join(dir,file));}
  const settings=structuredClone(rules);settings.standardCycle.optionalExtras.effectiveDate='2026-01-01';fs.writeFileSync(path.join(dir,'automation/publishing-rules.json'),JSON.stringify(settings));
  fs.writeFileSync(path.join(dir,'automation/coverage-ledger.json'),JSON.stringify({articles:[]}));
  const functions=require('../automation/editorial-taxonomy.json').functions;
@@ -42,7 +42,7 @@ test('the normal selector rejects missing receipt and over-budget input; optiona
  assert.match(run(rows).stderr,/same-day discovery receipt required/);
  assert.match(run(Array(13).fill(rows[0]),receipt(13)).stderr,/twelve-candidate/);
  const seven=run(rows,receipt(8));assert.equal(seven.status,0,seven.stderr);const result=JSON.parse(seven.stdout);
- if(result.coreTarget){assert.equal(result.selected.length,7);assert.deepEqual(result.selected.slice(5).map(x=>x.selectionRole),['optional-extra','optional-extra']);}
+ if(result.coreTarget){assert.equal(result.selected.length,5);assert.ok(result.selected.every(x=>x.selectionRole==='core'));assert.equal(result.optionalAdmission.optionalCapacity,0);}
  const onlyCore=run(rows.map(({optionalSelection,...c})=>c),receipt(8));assert.equal(onlyCore.status,0,onlyCore.stderr);assert.equal(JSON.parse(onlyCore.stdout).selected.length,result.coreTarget);
  const foreign=run([{...rows[0],discoveryDirection:'international-comparisons'}],receipt(1));assert.match(foreign.stdout,/international-jurisdiction-or-us-cu-implication-missing/);
 });
