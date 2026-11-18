@@ -115,7 +115,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T12:29:00.543Z",
+    "updatedAt": "2026-11-18T12:41:01.176Z",
     "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
@@ -171,13 +171,13 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-18",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
         "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-18T12:59:00.543Z",
-        "nextAction": "Observe actual terminal design result; inspect matching artifact and mobile/desktop pixels before validated closeout.",
+        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 374,
@@ -185,6 +185,34 @@
             "run": 44304322141,
             "job": 134801818294,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
+            "run": 44304322141,
+            "job": 134801818294,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-18T12:40:59.781Z",
+            "prNumber": 374
+          },
+          "terminalAcceptance": {
+            "prNumber": 374,
+            "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
+            "run": 44304322141,
+            "job": 134801818294,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-18T12:41:01.176Z",
+            "artifactId": 14427786896,
+            "artifactSha256": "sha256:44e4a8cd9bd0eba4df5c92d572500ff24a653e939852da7170d5c23f465ad719",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Reviewed exact 390/1440 article, image, Home and News cards and lower mobile body. Date, source links and self-report denominator limits are visible; paragraph hierarchy and related/follow/sponsored panels are unobstructed. Matching accessibility, menu, overflow and normal/404/recovery artwork checks passed."
           }
         }
       }
