@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "tactile-paper-cut",
+      "subject": "physical-metaphor",
+      "composition": "diagonal-motion",
+      "perspective": "overhead",
+      "palette": "slate-lime",
+      "lighting": "graphic-flat-light",
+      "texture": "paper-fiber",
+      "scene": "An incomplete paper application path with a document and a funding step",
+      "topicFit": 94,
+      "editorialClarity": 94,
+      "score": 68.4,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 94,
+        "editorialClarity": 94
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "harris-financial-application-abandonment",
+      "articleUrl": "/news/harris-financial-application-abandonment.html",
+      "imagePath": "/assets/harris-financial-application-abandonment.jpg",
+      "publishedAt": "2026-11-18T07:28:04-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "physical-metaphor",
+          "composition": "diagonal-motion",
+          "perspective": "overhead",
+          "palette": "slate-lime",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "An incomplete paper application path with a document and a funding step",
+          "topicFit": 94,
+          "editorialClarity": 94,
+          "score": 68.4,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 94,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "editorial-photography",
+          "subject": "member-interaction",
+          "composition": "wide-environmental",
+          "perspective": "eye-level",
+          "palette": "amber-charcoal",
+          "lighting": "soft-daylight",
+          "texture": "clean-photographic",
+          "scene": "Member pausing during an online application",
+          "topicFit": 77,
+          "editorialClarity": 78,
+          "score": 53,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 77,
+            "editorialClarity": 78
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "isometric",
+          "palette": "plum-gold",
+          "lighting": "rim-light",
+          "texture": "matte-clay",
+          "scene": "A separated set of account-opening stages",
+          "topicFit": 84,
+          "editorialClarity": 80,
+          "score": 48.3,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 84,
+            "editorialClarity": 80
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "7c3f2d2cbce03ad4da709587fdce8a43f5cc8489d5d3031ec7a7e25645cc1958"
+    },
+    {
       "medium": "soft-editorial-illustration",
       "subject": "frontline-workflow",
       "composition": "wide-environmental",

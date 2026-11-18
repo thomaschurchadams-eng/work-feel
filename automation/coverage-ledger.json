@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "harris-financial-application-abandonment",
+      "title": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
+      "url": "/news/harris-financial-application-abandonment.html",
+      "publishedAt": "2026-11-18T07:28:04-05:00",
+      "section": "news",
+      "beat": "harris-financial-application-abandonment",
+      "functions": [
+        "marketing-growth"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing and Growth leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/connexus-digital-banking-loan-funding.html",
+        "/news/raiz-digital-account-opening-case-study.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Cotribute-sponsored online self-report surveys; public release and report landing page inspected, not gated full report or transaction logs. Subgroups and multiple responses limit comparisons."
+    },
+    {
       "id": "microsoft-hr-profile-attribute-sharing",
       "title": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
       "url": "/news/microsoft-hr-profile-attribute-sharing.html",
