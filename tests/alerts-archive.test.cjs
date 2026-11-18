@@ -110,11 +110,12 @@ test('hash changes reveal an older alert despite active filters; unrelated/malfo
   }
 });
 
-test('homepage and ticker keep their separate freshness windows', () => {
+test('homepage and ticker share 72-hour freshness while archive retains 14 days', () => {
   const h = harness();
   assert.equal(h.read("homepageAlerts.some(item => item.slug === 'ai-fraud-protection-necessity')"), false);
   assert.equal(h.read("tickerAlerts.some(item => item.slug === 'ai-fraud-protection-necessity')"), false);
-  assert.equal(h.read('tickerAlerts === preparedAlerts'), true);
+  assert.equal(h.read('tickerAlerts === homepageAlerts'), true);
+  assert.ok(h.read('preparedAlerts.length >= tickerAlerts.length'));
   assert.equal(h.read(`getRecentAlerts([{headline:'Unknown',date:'Nov 11, 2026'}]).length`), 0);
 });
 
