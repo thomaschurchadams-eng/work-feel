@@ -7,9 +7,14 @@
   },
   "current": {
     "date": "2026-11-18",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html"
+      }
+    ],
     "status": "in-progress",
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -116,7 +121,7 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-18",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
         "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
         "outcomeScope": "cycle",
@@ -159,7 +164,9 @@
             ],
             "observations": "Reviewed actual exact mobile/desktop article, hero and source links, plus Home and News lead cards. Header, November 18 date, full off-default/guest-visibility deck and body are legible and unobstructed. Matching route results have no accessibility, overflow or unexpected-image errors; intentional 404/recovery passed."
           }
-        }
+        },
+        "productionCommit": "a859080949103682ab4314c1ebd27dadcbcb7cd5",
+        "verifiedAt": "2026-11-18T12:26:00.034Z"
       }
     ]
   },
