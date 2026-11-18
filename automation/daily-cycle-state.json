@@ -123,7 +123,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:24:17.618Z",
+    "updatedAt": "2026-11-18T13:24:54.067Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -279,21 +279,14 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-18",
-        "status": "technical-failure",
+        "status": "pending-validation",
         "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
         "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T13:54:17.618Z",
-        "nextAction": "Rebuild article refresh with canonical main as first parent; retain failed candidate and all receipts, then rerun exact-head gates. No validator relaxation.",
+        "nextReviewAt": "2026-11-18T13:54:54.067Z",
+        "nextAction": "Observe exact rebuilt candidate terminal result; inspect matching rendered artifact and pixels before release.",
         "evidence": {
-          "pending": {
-            "prNumber": 376,
-            "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
-            "run": 44312662006,
-            "job": 134830537082,
-            "runAttempt": 1
-          },
           "validationHistory": [
             {
               "prNumber": 376,
@@ -332,18 +325,35 @@
                 "observations": "Personally inspected all seven actual artifact crops: Home and News 390/1440 cards, article 390/1440, lower mobile body. No clipping, crop, typography or spacing issue. Visible $1.20/$0.30 example and $8/$40, $2/$10 rates match checked arithmetic; subscription, provider claims, hypothetical and reviewer-time limitations clear. Source links and follow/related panels readable; automated exact-head accessibility/navigation/artwork gates passed."
               },
               "reason": "Concurrent reliability activity-ledger append requires fresh exact-head review."
+            },
+            {
+              "prNumber": 376,
+              "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
+              "run": 44312662006,
+              "job": 134830537082,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-18T13:24:54.067Z",
+              "terminalValidation": {
+                "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
+                "run": 44312662006,
+                "job": 134830537082,
+                "runAttempt": 1,
+                "conclusion": "failure",
+                "runConclusion": "failure",
+                "jobConclusion": "failure",
+                "observedAt": "2026-11-18T13:24:16.467Z",
+                "prNumber": 376
+              },
+              "reason": "Failed unmerged refresh has noncanonical first-parent state jump; rebuilt with current canonical main as first parent, preserving prior branch ancestry."
             }
           ],
-          "terminalValidation": {
-            "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
-            "run": 44312662006,
-            "job": 134830537082,
-            "runAttempt": 1,
-            "conclusion": "failure",
-            "runConclusion": "failure",
-            "jobConclusion": "failure",
-            "observedAt": "2026-11-18T13:24:16.467Z",
-            "prNumber": 376
+          "pending": {
+            "prNumber": 376,
+            "head": "d491415837553d75273510682af71bcc10a55904",
+            "run": 44313447670,
+            "job": 134833244746,
+            "runAttempt": 1
           }
         }
       }
