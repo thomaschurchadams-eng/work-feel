@@ -123,7 +123,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T12:58:56.752Z",
+    "updatedAt": "2026-11-18T13:02:04.111Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -279,13 +279,22 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-18",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
         "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T13:28:56.752Z",
-        "nextAction": "Prepare a pricing brief with checked hypothetical arithmetic, not a measured credit-union productivity claim."
+        "nextReviewAt": "2026-11-18T13:32:04.111Z",
+        "nextAction": "Observe actual terminal design result; inspect matching artifact and mobile/desktop pixels before validated closeout.",
+        "evidence": {
+          "pending": {
+            "prNumber": 376,
+            "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
+            "run": 44309608621,
+            "job": 134820012337,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
