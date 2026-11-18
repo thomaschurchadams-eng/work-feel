@@ -32,7 +32,7 @@ For Alert quantity, cadence and task authority, `automation/scheduled-tasks/cuai
 1. Read the Alerts data/page, ticker implementation, homepage latest-alert module, coverage ledger, source registry, publishing rules, daily-cycle state and the authoritative CUAI Operating System policy.
 2. Search for genuinely new, time-sensitive, qualified developments and publish at most three Alerts per weekday. There is no Alert quota or minimum target; if nothing qualifies, record the no-Alert outcome and stop.
 3. Each Alert requires a factual headline, neutral summary, specific operational credit-union implication, date, source name and direct source URL.
-4. Enforce exact one-to-one mapping between published Alerts and ticker items, newest-first order and the rolling 14-day window.
+4. Enforce exact one-to-one mapping between eligible Alerts and ticker items, newest-first order and the rolling 72-hour verified-publication window shared with the homepage. Preserve the full archive and its separate 14-day recent-publication filter.
 5. Update only the Alerts page/data, ticker, homepage latest-alert module, relevant ledgers and daily-cycle state. Do not create a full article, hero image, topic hub, Intelligence tracker update, correction audit or archive migration during an Alert cycle.
 6. Re-read `main` immediately before writing, commit one atomic Alert package, confirm Vercel READY and verify the live Alerts page, ticker and homepage.
 
