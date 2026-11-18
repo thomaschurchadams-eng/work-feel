@@ -12,15 +12,20 @@
       "contentKind": "article",
       "copy": "An approved account is not always a funded relationship. A new Cotribute-sponsored Harris Poll study points to funding and identity-document steps as common places people abandon online financial applications. For credit-union growth teams: measure the journey from start to approval to usable funds before spending more to attract applicants. The survey describes people's experiences, not your institution's conversion rate. https://creditunionainews.com/news/harris-financial-application-abandonment.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=cuai_news&utm_content=linkedin-harris-financial-application-abandonment-2026-11-18",
       "scheduledFor": "2026-11-18T11:30:00-05:00",
-      "status": "planned",
+      "status": "sent",
       "trackingStatus": "utm-tagged",
       "imageUrl": "https://creditunionainews.com/assets/harris-financial-application-abandonment.jpg",
       "queuedAt": "2026-11-18T20:25:45.723Z",
-      "lastResult": "DELIVERED ONCE via Tom-authorized manual Buffer fallback. Buffer Sent inventory rose 80 to 81; matching copy, canonical URL and all UTMs, correct channel and LinkedIn permalink verified in signed-in Safari. UI shows Nov 18, 3:30 PM America/New_York (card AX says 3:29 PM); exact provider postId/sentAt pending next natural secure-operations receipt. Keep planned as non-sending reservation until exact receipt reconciliation. DO NOT promote, resubmit or retry. Original missed slot identity preserved; no automatic-path recovery inferred.",
+      "lastResult": "Single Tom-authorized November 18 manual Buffer delivery reconciled from natural verified operations run 44397127750, artifact 14471166548. Exact post ID, channel, canonical URL, public share and CUAI UTMs matched; sent-post evidence confirmed. Original missed slot identity retained; bufferDueAt and sentAt record actual late recovery. No provider replay. Automatic path remains degraded.",
       "channelId": "6a53df0880cc80cdcaa76fb8",
       "channelName": "CreditUnionAI News",
       "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7528917475602780161",
-      "reconciliationRequired": true
+      "reconciliationRequired": false,
+      "postId": "6afe0ab971617e0e412d1705",
+      "bufferDueAt": "2026-11-18T20:29:45.725Z",
+      "sentAt": "2026-11-18T20:30:07.043Z",
+      "lastAttemptAt": "2026-11-18T20:29:45.725Z",
+      "duplicate": false
     },
     {
       "id": "linkedin-ncua-advertising-statement-insurance-sign-2026-11-17",
