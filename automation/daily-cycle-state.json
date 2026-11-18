@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-18",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
       {
@@ -21,6 +21,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html"
       }
     ],
     "status": "in-progress",
@@ -279,13 +283,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-18",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
         "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-18T13:54:54.067Z",
-        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
+        "nextAction": "Completed: exact production verified; do not replay.",
         "evidence": {
           "validationHistory": [
             {
@@ -383,7 +387,9 @@
             ],
             "observations": "Personally reviewed seven actual crops regenerated from artifact 14431414569 for head d491415837553d75273510682af71bcc10a55904: Home/News 390 and1440, article390/1440 and lower mobile. Cards/title/deck and original art correct, no clipping. Visible pricing figures and illustrative arithmetic accurate; API/subscription, provider-claim and review-time caveats clear. Source/related/follow panels readable; exact accessibility/navigation/artwork normal-error-recovery gates passed. This is new-head acceptance, not reuse of old artifact."
           }
-        }
+        },
+        "productionCommit": "0965518bb523d5ec368d6971e191e48667205e0b",
+        "verifiedAt": "2026-11-18T13:39:26.187Z"
       }
     ]
   },
