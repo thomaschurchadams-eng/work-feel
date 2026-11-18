@@ -123,7 +123,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:20:17.232Z",
+    "updatedAt": "2026-11-18T13:24:17.618Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -279,13 +279,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-18",
-        "status": "pending-validation",
+        "status": "technical-failure",
         "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
         "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T13:50:17.232Z",
-        "nextAction": "Inspect refreshed exact-head terminal artifact and actual visuals; preserve old successful receipt without using it for release.",
+        "nextReviewAt": "2026-11-18T13:54:17.618Z",
+        "nextAction": "Rebuild article refresh with canonical main as first parent; retain failed candidate and all receipts, then rerun exact-head gates. No validator relaxation.",
         "evidence": {
           "pending": {
             "prNumber": 376,
@@ -333,7 +333,18 @@
               },
               "reason": "Concurrent reliability activity-ledger append requires fresh exact-head review."
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
+            "run": 44312662006,
+            "job": 134830537082,
+            "runAttempt": 1,
+            "conclusion": "failure",
+            "runConclusion": "failure",
+            "jobConclusion": "failure",
+            "observedAt": "2026-11-18T13:24:16.467Z",
+            "prNumber": 376
+          }
         }
       }
     ]
