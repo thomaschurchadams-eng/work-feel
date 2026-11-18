@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "gemini-agent-card-purchases-evidence",
+      "title": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
+      "url": "/news/gemini-agent-card-purchases-evidence.html",
+      "publishedAt": "2026-11-18T07:45:20-05:00",
+      "section": "news",
+      "beat": "gemini-agent-card-purchases-evidence",
+      "functions": [
+        "payments-deposits"
+      ],
+      "technologies": [
+        "agents-automation"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments and Deposits leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/pioneer-equipifi-app-shopping-financing.html",
+        "/news/q2-aiuc-agent-control-certification.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Google's November 17 announcement establishes its described rollout and controls, not support for every credit-union card, security effectiveness, or a tested dispute workflow."
+    },
+    {
       "id": "harris-financial-application-abandonment",
       "title": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
       "url": "/news/harris-financial-application-abandonment.html",
