@@ -110,19 +110,19 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T12:12:17.203Z",
+    "updatedAt": "2026-11-18T12:24:44.532Z",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-18",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
         "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-18T12:42:17.203Z",
-        "nextAction": "Observe actual terminal design result; inspect matching artifact and mobile/desktop pixels before validated closeout.",
+        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 373,
@@ -130,6 +130,34 @@
             "run": 44301669236,
             "job": 134792675442,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
+            "run": 44301669236,
+            "job": 134792675442,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-18T12:24:43.148Z",
+            "prNumber": 373
+          },
+          "terminalAcceptance": {
+            "prNumber": 373,
+            "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
+            "run": 44301669236,
+            "job": 134792675442,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-18T12:24:44.532Z",
+            "artifactId": 14426302972,
+            "artifactSha256": "sha256:d4eeec898238f62170a506279a4adb68f912ea74993c69496cd20286281a840a",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Reviewed actual exact mobile/desktop article, hero and source links, plus Home and News lead cards. Header, November 18 date, full off-default/guest-visibility deck and body are legible and unobstructed. Matching route results have no accessibility, overflow or unexpected-image errors; intentional 404/recovery passed."
           }
         }
       }
