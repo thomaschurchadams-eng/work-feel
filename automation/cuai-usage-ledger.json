@@ -5774,6 +5774,39 @@
       },
       "summary": "Consumed the completed five-article publisher handoff: HR/training rose from one to two trailing-window items and marketing, payments, operations and lending all received coverage, but the 51-article lookback remains dominated by functional-leader reported news. The next qualified candidate should favor executive/board or durable Library/Insight coverage, especially operational resilience or merger governance, which also matches finalized Search Console demand. No new Alert qualified across eight official-source surfaces; the November 17 FinCEN Alert remains fresh, so no homepage watch or date-only refresh was made. Exact-current analytics were consumed without causal overclaim: GA4 reported 482 sessions and 164 engaged sessions in its rolling seven-day window, while Search Console finalized November 11-17 at 34 clicks and 2,602 impressions. Exact main is production READY with no runtime errors in the available one-hour window. The Harris LinkedIn send is exact in Buffer, but the repository row is planned and the existing publisher owns reconciliation; no queue write or retry occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261118-harris-manual-delivery-reconciled",
+      "timestamp": "2026-11-18T21:36:21.408Z",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The November 18 Harris LinkedIn item was delivered once through the authorized manual Buffer fallback, but its canonical queue row remained planned after the exact provider receipt became available.",
+      "status": "recovered",
+      "incidentKey": "cuai-social:manual-recovery:2026-11-18",
+      "workUnits": {
+        "currentMainRevisionsReconciled": 2,
+        "issue160EventsReviewed": 3,
+        "naturalOperationsReceiptsReviewed": 1,
+        "providerInventoryPagesRead": 1,
+        "providerInventoryRecordsObserved": 81,
+        "authoritativeBufferPostIdsRecovered": 1,
+        "publicLinkedInPostsMatched": 1,
+        "socialQueueItemsPreserved": 58,
+        "socialQueueRecordsReconciled": 1,
+        "duplicateSocialReservationsObserved": 0,
+        "providerWriteAttempts": 0,
+        "schedulerCalls": 0,
+        "socialDeliveriesCreated": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Buffer read-only evidence",
+        "LinkedIn public receipt"
+      ],
+      "summary": "Recovered the missing canonical closeout for the single November 18 Harris application-abandonment LinkedIn delivery without replay. Issue #160 preserved the Tom-authorized manual fallback and public share 7528917475602780161. Natural verified-operations run 44397127750, artifact 14471166548 (SHA-256 eb2f2e0bca88ecbd8273b66dc53c154581afde5e1b181e2c920acdee18295d9f), returned a complete one-page 81-record inventory and exact sent record 6afe0ab971617e0e412d1705 on approved CreditUnionAI News channel 6a53df0880cc80cdcaa76fb8, due 2026-11-18T20:29:45.725Z and sent 2026-11-18T20:30:07.043Z, matching the canonical Harris URL and preserved CUAI UTMs. The existing row was changed only from planned/reconciliationRequired to sent/reconciled with exact provider fields; its original 11:30 a.m. ET slot identity, copy, tracked URL, image and public share were retained. No provider or scheduler call occurred, no duplicate was created, and the manual success does not establish automatic delivery recovery. All 58 queue rows, 86 publication histories, existing review holds and the one-post-per-day/five-per-week caps remain preserved.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
