@@ -5595,7 +5595,7 @@
       "actor": "reliability-watch",
       "runType": "scheduled",
       "trigger": "The November 18 publisher automation recorded a failed outer run after three verified articles while the exact fourth-slot validation remained active and canonically checkpointed.",
-      "status": "blocked",
+      "status": "degraded",
       "incidentKey": "cuai-publishing:daily:2026-11-18",
       "workUnits": {
         "scheduledPublisherRunsReviewed": 1,
@@ -5616,7 +5616,10 @@
         "publisherRetriesAttempted": 0,
         "providerWriteAttempts": 0,
         "socialQueueWrites": 0,
-        "ledgerEntriesAppended": 1
+        "ledgerEntriesAppended": 1,
+        "terminalExactHeadValidationRunsObserved": 1,
+        "successfulExactHeadValidationRunsObserved": 1,
+        "validationArtifactsObserved": 1
       },
       "externalSystemsTouched": [
         "GitHub",
@@ -5624,7 +5627,7 @@
         "CreditUnionAI News public site",
         "ChatGPT scheduled-task outcomes"
       ],
-      "summary": "The November 18 scheduled publisher wrapper started at 2026-11-18T12:36:26.012396Z and recorded failed at 2026-11-18T13:06:30.609358Z, with no current-run result or user-action request. Canonical main 641e04033b0db6c2b38d2edfde6f28201145374b remains internally consistent: three articles are live-verified, 86 history entries are preserved, and slot 4 is pending-validation on PR #376, exact head 6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d, run 44309608621, job 134820012337, attempt 1, with nextReviewAt 2026-11-18T13:32:04.111Z. The GitHub job was still actively executing its rendered interaction, typography and accessibility step; this is not a proven CI failure. Production deployment dpl_D2JaTSMEDwGfCjbGBHr92NLcQaCj is READY on exact main with creditunionainews.com assigned, the homepage and three recorded article surfaces returned HTTP 200, and the available one-hour runtime window had no errors. The 57-item social queue remains unchanged with no duplicate IDs, dates or destinations; no November 18 reservation exists while the publisher is incomplete and the fixed Wednesday slot remains later in the day. Reliability did not rerun the publisher, merge PR #376, inspect/accept its visuals, start slot 5, or touch Buffer: the daily-publisher owns exact artifact/visual acceptance, and an active/unknown external result cannot be retried safely. Safe continuation is the existing daily-publisher resuming the exact persisted checkpoint after terminal CI: inspect the matching artifact and actual visuals, persist validated or technical-failure truthfully, then follow ordinary release/slot rules. The previously reported broad Buffer destination-review degradation is unchanged and was not duplicated as a new incident.",
+      "summary": "The November 18 scheduled publisher wrapper started at 2026-11-18T12:36:26.012396Z and recorded failed at 2026-11-18T13:06:30.609358Z, with no current-run result or user-action request. The platform exposes no more specific outer failure reason; the approximately 30-minute boundary is observed timing, not proof of an internal timeout. Canonical main 641e04033b0db6c2b38d2edfde6f28201145374b remains internally consistent: three articles are live-verified, 86 history entries are preserved, and slot 4 is pending-validation on PR #376, exact head 6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d, run 44309608621, job 134820012337, attempt 1, with nextReviewAt 2026-11-18T13:32:04.111Z. The GitHub job subsequently completed successfully at 2026-11-18T13:13:30Z and produced artifact 14429739307, digest sha256:c3aafc27da731e1adbe6bacf2628960db9cac5e302ef2ef757089a76bd91a9d3. The released-main read-only helper observed awaiting-visual-review at 2026-11-18T13:14:40.541Z: releaseReady false, canRecordTerminalOutcome true, shouldEscalate false and reviewOverdue false. This is a passed exact-head check, not artifact/visual acceptance or release permission. Production deployment dpl_D2JaTSMEDwGfCjbGBHr92NLcQaCj is READY on exact main with creditunionainews.com assigned, the homepage and three recorded article surfaces returned HTTP 200, and the available one-hour runtime window had no errors. The 57-item social queue remains unchanged with no duplicate IDs, dates or destinations; no November 18 reservation exists while the publisher is incomplete and the fixed Wednesday slot remains later in the day. Reliability did not rerun the publisher, merge PR #376, inspect/accept its visuals, start slot 5, or touch Buffer: the daily-publisher owns exact artifact/visual acceptance, and retrying a content cycle would cross the editorial gate. Safe continuation is the existing daily-publisher resuming this exact persisted checkpoint: verify artifact identity and actual visuals, persist validated or technical-failure truthfully, then follow ordinary release/slot rules. The previously reported broad Buffer destination-review degradation is unchanged and was not duplicated as a new incident.",
       "usageAttribution": "operational-proxy"
     }
   ]
