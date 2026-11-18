@@ -17,5 +17,5 @@ test('existing operations schedule and inactive timing experiment are retained',
  assert.equal((workflow.match(/cron:/g)||[]).length,1);assert.match(workflow,/cron: '45 17 \* \* 1-5'/);
  assert.equal(policy.timingTest.status,'planned');assert.equal(policy.timingTest.baselineValidatedObservations,0);
  assert.equal(require('../automation/publishing-rules.json').weeklyTargets.linkedinPosts,5);
- assert.equal(require('../automation/publishing-rules.json').weeklyTargets.siteStoriesMax,25);
+ assert.equal(require('../automation/publishing-rules.json').weeklyTargets.siteStoriesMax,35);
 });

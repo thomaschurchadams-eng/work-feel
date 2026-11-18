@@ -66,12 +66,12 @@ function fixture(t, initial = fresh()) {
 }
 function prepared(state, number) {
   const next = copy(state); next.current.status = 'in-progress'; next.current.outcomeSlot = number;
-  next.current.regularPublicationSlots.push({ slot: number, status: 'prepared', url: url(number), candidateTitle: `Isolated distinct story ${number}`, accountableOwner: 'daily-publisher', nextReviewAt: stamp });
+  next.current.regularPublicationSlots.push({ slot: number, status: 'prepared', url: url(number), candidateTitle: `Isolated distinct story ${number}`, accountableOwner: 'daily-publisher', nextReviewAt: stamp, ...(number > 5 && state.current.date >= rules.standardCycle.optionalExtras.effectiveDate ? {evidence: {optionalSelection: {reason: 'Strong independently sourced operating analysis', distinctValue: 'Different member problem and evidence from prior stories', sourceUrls: ['https://example.invalid/original-evidence']}}} : {}) });
   return next;
 }
-function pending(state, number, head = 'abcdef'[number - 1].repeat(40), attempt = 1) {
+function pending(state, number, head = 'abcdef1'[number - 1].repeat(40), attempt = 1) {
   const next = copy(state), s = next.current.regularPublicationSlots.find(s => s.slot === number);
-  s.status = 'pending-validation'; s.evidence = { pending: { prNumber: 990100 + number, head, run: 99000000100 + number + (attempt - 1) * 10, job: 99000000200 + number + (attempt - 1) * 10, runAttempt: attempt } };
+  s.status = 'pending-validation'; s.evidence = { ...(s.evidence?.optionalSelection ? {optionalSelection:s.evidence.optionalSelection} : {}), pending: { prNumber: 990100 + number, head, run: 99000000100 + number + (attempt - 1) * 10, job: 99000000200 + number + (attempt - 1) * 10, runAttempt: attempt } };
   return next;
 }
 function completed(state, number) {
@@ -89,15 +89,15 @@ function validated(state, number) {
 }
 function fill(f, number) {
   f.accept(prepared(f.state, number), `slot ${number} prepared without CI identity`);
-  assert.equal(f.state.current.regularPublicationSlots.at(-1).evidence, undefined);
+  if (number <= 5) assert.equal(f.state.current.regularPublicationSlots.at(-1).evidence, undefined);
   f.accept(pending(f.state, number), `slot ${number} exact checkpoint persisted`);
   f.accept(validated(f.state, number), 'persist separate validated stage');
   f.accept(completed(f.state, number), `slot ${number} simulated verified result`);
 }
 test('prospective rules are five each weekday, twenty-five full week, same bounded research and social cap', () => {
   assert.deepEqual(Object.values(rules.standardCycle.fullArticleTargetByWeekday), [5, 5, 5, 5, 5]);
-  assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 5);
-  assert.equal(rules.weeklyTargets.siteStoriesMax, 25); assert.equal(rules.weeklyTargets.linkedinPosts, 5);
+  assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 7);
+  assert.equal(rules.weeklyTargets.siteStoriesMax, 35); assert.equal(rules.weeklyTargets.linkedinPosts, 5);
   assert.equal(rules.standardCycle.minimumCandidatesToEvaluate, 12); assert.equal(rules.standardCycle.minimumDistinctBeatsToSearch, 6);
   const before = JSON.parse(execFileSync('git', ['show', '2445fa393c5291e12a840d7f57bbc83a162ba8a8:automation/publishing-rules.json'], { cwd: root }));
   assert.deepEqual(rules.standardCycle.fallbackOrder, before.standardCycle.fallbackOrder);
@@ -132,15 +132,16 @@ for (const outcome of ['pending validation; publisher turn ended', 'technical fa
   const wrongSlot = prepared(f.state, 1); wrongSlot.current.thirdSlot = outcome;
   f.reject(wrongSlot, /matching slot 3/, 'unrelated prepared slot cannot cover third-slot prose');
 });
-for (const number of [2, 3]) test(`slot ${number} pending/failure/replacement retains earlier receipts and rejects stale success`, t => {
+for (const number of [2, 3, 6, 7]) test(`slot ${number} pending/failure/replacement retains earlier receipts and rejects stale success`, t => {
   const f = fixture(t); for (let n = 1; n < number; n++) fill(f, n);
   const earlier = f.state.current.regularPublicationSlots;
   f.accept(prepared(f.state, number), 'prepare later slot'); f.accept(pending(f.state, number), 'persist pending'); f.repeat('duplicate pending observation');
   const failed = f.state, s = failed.current.regularPublicationSlots.at(-1); s.status = 'technical-failure'; s.nextAction = 'Same owner awaits existing recovery specialist result';
   s.evidence.terminalValidation = { ...s.evidence.pending, conclusion: 'failure', observedAt: stamp };
+  if(number>5){const lost=copy(failed);delete lost.current.regularPublicationSlots.at(-1).evidence.optionalSelection;f.reject(lost,/optional selection evidence changed/,'failure must retain optional selection evidence');}
   f.accept(failed, 'matching terminal failure'); f.repeat('duplicate failure observation');
   if (number === 2) f.reject(prepared(f.state, 3), /earlier article slot/, 'slot three cannot start behind failed slot two');
-  const replacement = pending(f.state, number, 'ef'[number - 2].repeat(40), 2), r = replacement.current.regularPublicationSlots.at(-1);
+  const replacement = pending(f.state, number, (number < 4 ? 'ef'[number - 2] : '89'[number - 6]).repeat(40), 2), r = replacement.current.regularPublicationSlots.at(-1);
   r.evidence.validationHistory = [{ ...s.evidence.pending, status: 'superseded', observedAt: stamp, terminalValidation: copy(s.evidence.terminalValidation) }];
   f.accept(replacement, 'replacement keeps original failed checkpoint');
   const stale = completed(f.state, number); stale.current.regularPublicationSlots.at(-1).evidence.terminalValidation = { ...s.evidence.pending, conclusion: 'success', observedAt: stamp };
@@ -157,11 +158,11 @@ test('earlier pending slot blocks later package and a batch cannot invent the ea
   f.reject(prepared(f.state, 3), /earlier article slot/, 'cannot advance behind pending validation');
   f.reject(prepared(completed(f.state, 2), 3), /only one sequential|earlier article slot/, 'cannot batch earlier success with next preparation');
 });
-test('sixth article is rejected with or without slot metadata; ordinary weekends are rejected', t => {
-  const f = fixture(t); for (let n = 1; n <= 5; n++) fill(f, n);
-  f.reject(prepared(f.state, 6), /weekday article maximum/, 'fourth structured article');
-  const untracked = f.state; untracked.current.publications.push({ type: 'article', url: url(6) }); untracked.current.fullArticleCount++;
-  f.reject(untracked, /weekday article maximum/, 'fourth article without slot cannot bypass cap');
+test('eighth article is rejected with or without slot metadata; ordinary weekends are rejected', t => {
+  const f = fixture(t); for (let n = 1; n <= 7; n++) fill(f, n);
+  f.reject(prepared(f.state, 8), /weekday article maximum/, 'eighth structured article');
+  const untracked = f.state; untracked.current.publications.push({ type: 'article', url: url(8) }); untracked.current.fullArticleCount++;
+  f.reject(untracked, /weekday article maximum/, 'eighth article without slot cannot bypass cap');
   for (const date of ['2026-11-14', '2026-11-15']) {
     const weekend = fixture(t, fresh(date)); weekend.repeat('weekend no-op has no new cycle');
     weekend.reject(prepared(weekend.state, 1), /no ordinary article slots/, `${date} new weekend package`);
@@ -280,4 +281,39 @@ test('Alert cap admits three distinct qualified records and rejects a fourth, we
   const mismatched = ordinary.state; mismatched.current.alertCount = 2; ordinary.reject(mismatched, /alertCount regressed/, 'Alert count cannot be erased');
   const weekend = fixture(t, fresh('2026-11-14')); const w = weekend.state; w.current.publications.push({type:'alert',url:'/alerts.html#weekend'}); w.current.alertCount++; weekend.reject(w, /weekend Alert/, 'weekend Alert');
   const old = fixture(t, fresh('2026-11-11')); const o = old.state; o.current.publications.push({type:'alert',url:'/alerts.html#old'}); o.current.alertCount++; old.reject(o, /retrospective/, 'historical Alert');
+});
+
+
+test('optional extras use seven sequential CLI packages without becoming required quota', t => {
+  const f = fixture(t); for (let n=1;n<=5;n++) fill(f,n);
+  const core=copy(f.state.current.regularPublicationSlots), five=f.report();
+  assert.equal(five.intended,5); assert.equal(five.slots.length,5);
+  assert.deepEqual(five.optionalNotSelected.map(s=>[s.slot,s.status,s.shortfall,s.nextAction]),[[6,'optional-not-selected',false,null],[7,'optional-not-selected',false,null]]);
+  const noEvidence=prepared(f.state,6); delete noEvidence.current.regularPublicationSlots.at(-1).evidence;
+  f.reject(noEvidence,/optional extra requires/,'optional strength cannot be assumed from a score');
+  fill(f,6); fill(f,7); const report=f.report();
+  assert.equal(report.intended,5); assert.equal(report.slots.length,7); assert.deepEqual(report.optionalNotSelected,[]);
+  assert.ok(report.slots.slice(5).every(s=>s.required===false && s.status==='live-verified'));
+  assert.deepEqual(f.state.current.regularPublicationSlots.slice(0,5),core);
+  assert.deepEqual(f.state.history,fresh().history);
+});
+test('optional article review accepts a prepared sixth slot but requires its selection evidence', t => {
+ const f=fixture(t);for(let n=1;n<=5;n++)fill(f,n);f.accept(prepared(f.state,6),'prepare optional sixth');
+ const state=f.state;state.current.publications.forEach((p,i)=>p.url=`/news/story-${i+1}.html`);state.current.regularPublicationSlots.forEach(s=>s.url=`/news/story-${s.slot}.html`);
+ const planner=require('../lib/publisher-write-plan.cjs'),sha='e'.repeat(40),blob='f'.repeat(40);
+ const args={mergeBase:{sha,stateBlob:blob},review:{sha,stateBlob:blob,files:[{path:'news/story-6.html',status:'added'}]},main:{sha,stateBlob:blob,state,changedPaths:[]},rules};
+ assert.equal(planner.validateArticleReview(args).slot,6);
+ delete state.current.regularPublicationSlots[5].evidence.optionalSelection;
+ assert.throws(()=>planner.validateArticleReview(args),/optional extra requires/);
+});
+test('historical five cap, closed-cycle protection and frozen exception are not broadened', t => {
+ const guards=require('../lib/daily-cycle-guards.cjs');
+ assert.deepEqual(guards.articleLimits({date:'2026-11-18'},rules),{target:5,maximum:5});
+ assert.deepEqual(guards.articleLimits({date:'2026-11-19'},rules),{target:5,maximum:7});
+ const f=fixture(t);for(let n=1;n<=5;n++)fill(f,n);
+ const closed=f.state;closed.current.status='completed';
+ const proposal=prepared(closed,6);
+ assert.throws(()=>guards.validateStatePreservation(closed,proposal,rules),/cannot reopen/);
+ const historical=fixture(t,{...f.state,current:{...f.state.current,date:'2026-11-18'}});
+ historical.reject(prepared(historical.state,6),/weekday article maximum/,'no extras on closed November 18');
 });

@@ -8,12 +8,15 @@ const candidate = (name, fn, tech = 'industry-development') => ({title:name, sou
 function fixture(t) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'cuai-candidates-'));
   t.after(() => fs.rmSync(dir, {recursive:true, force:true}));
-  fs.mkdirSync(path.join(dir,'scripts')); fs.mkdirSync(path.join(dir,'automation'));
-  for(const file of ['scripts/score-editorial-candidates.mjs','automation/editorial-taxonomy.json','automation/publishing-rules.json']) fs.copyFileSync(path.join(root,file),path.join(dir,file));
+  fs.mkdirSync(path.join(dir,'lib')); fs.mkdirSync(path.join(dir,'scripts')); fs.mkdirSync(path.join(dir,'automation'));
+  for(const file of ['scripts/score-editorial-candidates.mjs','automation/editorial-taxonomy.json','automation/publishing-rules.json','automation/source-registry.json','lib/editorial-discovery.cjs']) fs.copyFileSync(path.join(root,file),path.join(dir,file));
   return (rows, articles = []) => {
     fs.writeFileSync(path.join(dir,'automation/coverage-ledger.json'),JSON.stringify({articles}));
     fs.writeFileSync(path.join(dir,'candidates.json'),JSON.stringify(rows));
-    const r=spawnSync(process.execPath,['scripts/score-editorial-candidates.mjs','candidates.json'],{cwd:dir,encoding:'utf8'});
+    const registry=require('../automation/source-registry.json');
+    const date=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());
+    fs.writeFileSync(path.join(dir,'receipt.json'),JSON.stringify({date,candidateCount:rows.length,beatsSearched:registry.beats.slice(0,6).map(x=>x.id),directions:registry.dailyDiscovery.directions.map(x=>({id:x.id,status:'searched',queryOrRead:'Isolated mock read',observedAt:new Date().toISOString(),sourceUrls:['https://example.invalid/evidence']})),practicalSynthesis:{question:'What useful underserved workflow can be explained?',noCandidateReason:'Fixture contains no verified synthesis sources'}}));
+    const r=spawnSync(process.execPath,['scripts/score-editorial-candidates.mjs','candidates.json','receipt.json'],{cwd:dir,encoding:'utf8'});
     assert.equal(r.status,0,r.stderr); return JSON.parse(r.stdout);
   };
 }
@@ -23,12 +26,12 @@ test('industry marker permits five varied stories; actual technology and functio
   assert.equal(run(functions.map((fn,i)=>candidate(`Unique beta ${i}`,fn,'generative-ai'))).selected.length,2);
   assert.equal(run([0,1,2,3].map(i=>candidate(`Unique gamma ${i}`,functions[0]))).selected.length,3);
 });
-test('expanded function limit can select 25 and counts earlier weekly output across runs', t => {
-  const run=fixture(t), rows=taxonomy.functions.flatMap(({id},n)=>[0,1,2].map(i=>candidate(`Distinct proposal ${n} ${i}`,id)));
-  assert.equal(run(rows).selected.length,25);
+test('one bounded pool selects the five core, never a weekly batch, and retains concentration counts', t => {
+  const run=fixture(t), rows=taxonomy.functions.map(({id},n)=>candidate(`Distinct proposal ${n}`,id));
+  assert.equal(run(rows).selected.length,5);
   const prior=[0,1,2].map(i=>({...candidate(`Recorded earlier outcome ${i}`,taxonomy.functions[0].id),url:`/news/recorded-${i}.html`,publishedAt:new Date().toISOString()}));
   const result=run(rows,prior);
-  assert.equal(result.alreadyPublishedThisWeek,3); assert.equal(result.selected.length,22);
+  assert.equal(result.alreadyPublishedThisWeek,3); assert.equal(result.selected.length,2); assert.equal(result.alreadyPublishedToday,3);
   assert.ok(result.selected.every(x=>x.functions[0]!==taxonomy.functions[0].id));
 });
 test('current-week actual technology counts carry over; prior weeks and future entries do not consume capacity', t => {

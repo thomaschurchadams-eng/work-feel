@@ -6,10 +6,10 @@ This file defines the outward-facing work CreditUnionAI News should produce. It 
 ## Weekday production SLA
 
 ### 1. Full editorial output
-- **Target:** five distinct qualified full News or Insights articles per weekday from November 13, twenty-five per full week, maximum five per weekday through the same sequential Daily Publisher and unchanged weekday schedule. The November 12 exception permits five additional articles above its frozen one-article baseline; do not reopen completed receipts, backfill other days, or add weekend work.
+- **Target:** five distinct qualified full News or Insights articles per weekday from November 13, twenty-five per full week, five core plus up to two strong, distinct optional extras from November 19 after release (maximum seven, never a quota) through the same sequential Daily Publisher and unchanged weekday schedule. The November 12 exception permits five additional articles above its frozen one-article baseline; do not reopen completed receipts, backfill other days, or add weekend work.
 - A valid non-publication outcome is acceptable when no candidate clears the editorial/source gates. Quality gates are never lowered to hit volume.
 - Every cycle must still leave a machine-observable outcome and handoff.
-- Preserve the same bounded twelve-candidate research pool and approved fallbacks. Record every unfilled slot's actual reason; complete and verify one package before the next. This target does not guarantee source supply, throughput or additional usage/spend.
+- Preserve the same bounded twelve-candidate research pool and approved fallbacks. Scan all five permanent discovery directions daily within that one pool; record every unfilled core slot's actual reason. Unselected extras are not a shortfall; selected extras retain their real owner and checkpoints; complete and verify one package before the next. This target does not guarantee source supply, throughput or additional usage/spend.
 
 ### 2. Distribution output
 - For each published article, make an explicit LinkedIn decision under the existing policy: `posted | scheduled | not selected | blocked`.
