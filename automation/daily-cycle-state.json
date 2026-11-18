@@ -6,524 +6,125 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-17",
-    "fullArticleCount": 5,
-    "alertCount": 1,
+    "date": "2026-11-18",
+    "fullArticleCount": 0,
+    "alertCount": 0,
+    "publications": [],
+    "status": "in-progress",
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "marketing-growth",
-      "board-strategy",
-      "risk-compliance",
-      "member-service",
-      "lending-collections",
       "hr-training",
+      "marketing-growth",
+      "payments-deposits",
       "operations",
+      "lending-collections",
+      "risk-compliance",
       "it-data-cybersecurity",
-      "finance-treasury"
+      "finance-treasury",
+      "vendor-management"
     ],
     "candidateEvaluations": [
       {
-        "title": "Veritran acquires PrismaCampaigns",
-        "sourceUrl": "https://www.veritran.com/en/resources/newsroom/veritran-adds-prisma-campaigns",
-        "status": "selected",
-        "reason": "Primary November 16 announcement confirms acquisition; practical consent, suppression, export and contractual continuity checks without assuming product integration."
+        "title": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
+        "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "score": 83.6,
+        "status": "qualified",
+        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
       },
       {
-        "title": "NCUA changes associational common-bond criteria",
-        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-17/pdf/2026-23392.pdf",
-        "status": "selected",
-        "reason": "The issued Federal Register text confirms January 4, 2027 as effective and distinguishes mandatory purchases from predominantly customer groups. Distinct federal charter and membership decision for boards and strategy leaders."
+        "title": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
+        "sourceUrl": "https://www.cuinsight.com/press-release/only-1-in-10-americans-who-abandon-an-online-financial-application-return-to-the-same-institution-harris-poll-finds/",
+        "score": 73.5,
+        "status": "qualified",
+        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
       },
       {
-        "title": "NCUA revises advertising notice",
-        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/pdf/2026-23288.pdf",
-        "status": "selected",
-        "reason": "Published Federal Register final rule confirms December 16 effective date and removal of § 740.5 only; official sign and advertising accuracy duties remain. Distinct operational compliance story."
+        "title": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
+        "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+        "score": 73.3,
+        "status": "qualified",
+        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
       },
       {
-        "title": "Cobalt chooses Illuma voice security",
-        "sourceUrl": "https://illuma.cx/press-release/cobalt-credit-union-selects-illuma-voice-security/",
-        "status": "selected",
-        "reason": "Named institution and attributable rollout; avoid assuming performance or adoption."
+        "title": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "score": 72.6,
+        "status": "qualified",
+        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
       },
       {
-        "title": "equipifi launches Shop",
-        "sourceUrl": "https://www.equipifi.com/products/point-of-purchase",
-        "status": "selected",
-        "reason": "Vendor launch names Pioneer as an early institution and product description shows funding into checking before the member purchases. Pioneer public terms confirm the existing two-stage program but do not independently confirm Shop availability or results. Distinct from post-purchase American Heritage reporting."
+        "title": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
+        "sourceUrl": "https://www.cuinsight.com/press-release/vantage-west-credit-union-becomes-first-credit-union-to-adopt-ai-navigator/",
+        "score": 71.8,
+        "status": "qualified",
+        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
       },
       {
-        "title": "Golden 1 workplace recognition",
-        "sourceUrl": "https://thecreditunionwire.com/",
+        "title": "NCUA Chairman Discusses AI and Staffing at Budget Hearing",
+        "sourceUrl": "https://ncua.gov/newsroom/speech/2026/ncua-chairman-john-crews-statements-2026-budget-hearing",
+        "score": 69.5,
         "status": "rejected",
-        "reason": "Award without supported workforce operating change."
+        "reason": "Existing AI-supervision budget story covers the proposed investment, and primary risk-compliance weekly cap is already reached."
       },
       {
-        "title": "Charity Bank selects Temenos",
-        "sourceUrl": "https://ffnews.com/news/charity-bank-selects-temenos-saas-for-core-banking-and-payments-8408c77f",
-        "status": "held",
-        "reason": "Named institution but secondary discovery evidence and weak direct CU implication."
-      },
-      {
-        "title": "Credit union adjusts lending to pressure on members",
-        "sourceUrl": "https://www.cutimes.com/2026/11/16/slow-squeeze-on-members-leads-credit-union-to-change-lending-approach/",
-        "status": "held",
-        "reason": "Trade report leads but insufficient verified evidence on specific underwriting or portfolio results."
-      },
-      {
-        "title": "NCUA merger activity reporting",
-        "sourceUrl": "https://cutimes.com/",
-        "status": "held",
-        "reason": "Trade lead; need actual agency material and precise status before drawing a conclusion."
-      },
-      {
-        "title": "Claimed attack on card networks and JPMorgan",
-        "sourceUrl": "https://pasqualepillitteri.it/en/news/34013/n0n-group-claims-attack-on-visa-mastercard-and-jpmorgan",
+        "title": "Credit Union HR eSchool Includes Responsible AI and Accommodations",
+        "sourceUrl": "https://www.americascreditunions.org/events-training/eschool/hr-professional-eschool-2026/pricing",
+        "score": 65.7,
         "status": "rejected",
-        "reason": "Claim alone does not establish affected systems or CU exposure."
+        "reason": "Training-event promotion is not independent evidence of a new workplace practice or outcomes."
       },
       {
-        "title": "November 17 mortgage-rate roundup",
-        "sourceUrl": "https://fortune.com/article/current-mortgage-rates-11-17-2026/",
+        "title": "Claude Linked Billing Beta Lets App Customers Pay Their API Usage",
+        "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+        "score": 61,
         "status": "rejected",
-        "reason": "Retail rate roundup does not establish a new CU operating development."
+        "reason": "Developer-beta billing mechanics lack a specific evidenced CU deployment or stronger procurement consequence."
       },
       {
-        "title": "Federal Reserve Barr AI speech",
-        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+        "title": "Cloudflare Reports Resolved Turnstile Verification Incident",
+        "sourceUrl": "https://www.cloudflarestatus.com/history?page=1",
+        "score": 60.6,
         "status": "rejected",
-        "reason": "Already published with verified November 16 receipt; avoid duplicate."
+        "reason": "Status history establishes a provider incident, not a credit-union outage or common cyber cause; sufficient distinctive CU operating impact is unverified."
+      },
+      {
+        "title": "SAFE Promotes Mortgage Rate Discounts Into New Year",
+        "sourceUrl": "https://www.cuinsight.com/press-release/safe-cu-offers-rate-discounts-on-30-year-fixed-jumbo-adjustable-rate-mortgages-and-refinance-loans/",
+        "score": 58,
+        "status": "rejected",
+        "reason": "Promotion-only rate offer without independently reviewed complete eligibility/loan-cost terms."
+      },
+      {
+        "title": "Claude Desktop Adds Stable and Latest Release Channels",
+        "sourceUrl": "https://support.claude.com/en/articles/12138966-release-notes",
+        "score": 57.8,
+        "status": "rejected",
+        "reason": "Routine client-update control without enough additional CU impact for a standalone article."
+      },
+      {
+        "title": "FedGlobal Posts Daily Mexican Peso Exchange Rate",
+        "sourceUrl": "https://www.frbservices.org/resources/financial-services/fedglobal-ach-payments-foreign-exchange-rates/",
+        "score": 48.1,
+        "status": "rejected",
+        "reason": "Routine daily rate is not a material change to payment service terms."
       }
     ],
     "fallbackEvaluations": [],
-    "publications": [
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html"
-      },
-      {
-        "type": "alert",
-        "title": "FinCEN Proposes Changes to Beneficial-Owner Checks",
-        "url": "https://creditunionainews.com/alerts/#fincen-beneficial-owner-customer-due-diligence-proposal",
-        "sourceUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-proposed-rule-strengthen-customer-due-diligence-requirements-covered-financial-institutions",
-        "sourceDate": "Nov 17, 2026"
-      }
-    ],
-    "status": "completed",
-    "updatedAt": "2026-11-17T21:00:34.033Z",
-    "outcomeSlot": 5,
+    "updatedAt": "2026-11-18T12:09:43.556Z",
+    "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-17",
-        "status": "live-verified",
-        "candidateTitle": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
-        "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html",
+        "plannedDate": "2026-11-18",
+        "status": "prepared",
+        "candidateTitle": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
+        "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T12:24:50.037Z",
-        "nextAction": "Verify fresh main and exact article head, then merge and verify production before recording publication.",
-        "evidence": {
-          "pending": {
-            "prNumber": 360,
-            "head": "e2e5e0785f6921142b2454fff166a481e836c378",
-            "run": 44081134592,
-            "job": 134031715929,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "e2e5e0785f6921142b2454fff166a481e836c378",
-            "run": 44081134592,
-            "job": 134031715929,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-17T12:21:52.608Z",
-            "prNumber": 360
-          },
-          "terminalAcceptance": {
-            "prNumber": 360,
-            "head": "e2e5e0785f6921142b2454fff166a481e836c378",
-            "run": 44081134592,
-            "job": 134031715929,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-17T12:24:32.337Z",
-            "artifactId": 14327941810,
-            "artifactSha256": "sha256:bb57771d2a6b420b41cc8149332243c1a139f7ab21336e24fe1bdde1a094201c",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Reviewed actual article body, header, source links and hero plus homepage and News cards at both widths. Checks show no axe violations, overflow or broken art; image 404 and recovery passed."
-          }
-        },
-        "productionCommit": "175a1f21266a911d69e08755b8a4c166b3260dac",
-        "verifiedAt": "2026-11-17T12:26:42.903Z"
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-17",
-        "status": "live-verified",
-        "candidateTitle": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
-        "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T12:43:06.368Z",
-        "nextAction": "Publish only through the expected-head merge and record actual production proof.",
-        "evidence": {
-          "pending": {
-            "prNumber": 361,
-            "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
-            "run": 44084102181,
-            "job": 134041886721,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
-            "run": 44084102181,
-            "job": 134041886721,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-17T12:42:17.483Z",
-            "prNumber": 361
-          },
-          "terminalAcceptance": {
-            "prNumber": 361,
-            "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
-            "run": 44084102181,
-            "job": 134041886721,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-17T12:43:34.572Z",
-            "artifactId": 14328422667,
-            "artifactSha256": "sha256:451563ef15ee9268b5c567b34102e4fe6757ef4db6fbe209723249c0a9aa9124",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Opened actual article header, body and hero; News and homepage card hierarchy, artwork and links reviewed at both widths. No overflow, axe issues or broken imagery in matching results; deliberate 404 and recovery passed."
-          }
-        },
-        "productionCommit": "9893d0ba7e2e9c6272d0059f135d313a7d5c88bf",
-        "verifiedAt": "2026-11-17T12:45:21.786Z"
-      },
-      {
-        "slot": 3,
-        "plannedDate": "2026-11-17",
-        "status": "live-verified",
-        "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
-        "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:27:52.193Z",
-        "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
-        "evidence": {
-          "pending": {
-            "prNumber": 362,
-            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
-            "run": 44090372476,
-            "job": 134065684261,
-            "runAttempt": 2
-          },
-          "validationHistory": [
-            {
-              "prNumber": 362,
-              "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
-              "run": 44086779022,
-              "job": 134051153311,
-              "runAttempt": 1,
-              "status": "superseded",
-              "observedAt": "2026-11-17T13:05:02.042Z",
-              "terminalValidation": {
-                "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
-                "run": 44086779022,
-                "job": 134051153311,
-                "runAttempt": 1,
-                "conclusion": "success",
-                "runConclusion": "success",
-                "jobConclusion": "success",
-                "observedAt": "2026-11-17T13:01:21.351Z",
-                "prNumber": 362
-              },
-              "terminalAcceptance": {
-                "prNumber": 362,
-                "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
-                "run": 44086779022,
-                "job": 134051153311,
-                "runAttempt": 1,
-                "visualReviewedAt": "2026-11-17T13:01:56.408Z",
-                "artifactId": 14329519631,
-                "artifactSha256": "sha256:1730a3f0b0c477416cc07670be4f4f864c53e3479b356a0b9ad91f4411390a70",
-                "renderedChecks": 50,
-                "failedChecks": 0,
-                "viewports": [
-                  390,
-                  1440
-                ],
-                "observations": "Opened the exact mobile and desktop article, artwork and both listing cards. Verified that publication and December effective dates are visually distinct and the ad-versus-sign distinction survives the lead and body layouts. Matching reports confirm zero overflow, accessibility violations or unexpected image issues, with intentional 404/recovery passed."
-              },
-              "reason": "Concurrent authoritative Barr queue/report receipt on main required a fresh exact article revision."
-            },
-            {
-              "prNumber": 362,
-              "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
-              "run": 44089174408,
-              "job": 134059503120,
-              "runAttempt": 1,
-              "status": "superseded",
-              "observedAt": "2026-11-17T13:12:20.710Z",
-              "terminalValidation": {
-                "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
-                "run": 44089174408,
-                "job": 134059503120,
-                "runAttempt": 1,
-                "conclusion": "failure",
-                "runConclusion": "failure",
-                "jobConclusion": "failure",
-                "observedAt": "2026-11-17T13:08:11.625Z",
-                "prNumber": 362,
-                "failedStep": "Check canonical shell and existing regressions",
-                "reason": "The article-first reconciliation merge introduced an apparent prepared-to-validated jump on the candidate branch's first-parent chain. CI rejected it before rendered review."
-              },
-              "reason": "Article-first Git parent order failed canonical-history regressions; verified local corrective rebuild uses canonical main as first parent."
-            },
-            {
-              "prNumber": 362,
-              "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
-              "run": 44090372476,
-              "job": 134063620557,
-              "runAttempt": 1,
-              "status": "superseded",
-              "observedAt": "2026-11-17T13:15:52.193Z",
-              "terminalValidation": {
-                "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
-                "run": 44090372476,
-                "job": 134063620557,
-                "runAttempt": 1,
-                "conclusion": "failure",
-                "runConclusion": "failure",
-                "jobConclusion": "failure",
-                "observedAt": "2026-11-17T13:14:22.228Z",
-                "prNumber": 362,
-                "failedStep": "Validate daily-cycle history against PR base and refreshed main",
-                "reason": "Job passed 98 first-parent transitions; checkout had 03f4aee before the exact new-head checkpoint, then rejected canonical-checkpoint-does-not-match-review-head."
-              },
-              "reason": "Bounded same-head design rerun after the exact replacement checkpoint was recorded on canonical main."
-            }
-          ],
-          "terminalValidation": {
-            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
-            "run": 44090372476,
-            "job": 134065684261,
-            "runAttempt": 2,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-17T13:26:15.040Z",
-            "prNumber": 362
-          },
-          "terminalAcceptance": {
-            "prNumber": 362,
-            "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
-            "run": 44090372476,
-            "job": 134065684261,
-            "runAttempt": 2,
-            "visualReviewedAt": "2026-11-17T13:26:49.874Z",
-            "artifactId": 14332955531,
-            "artifactSha256": "sha256:e62ea32d5cfd1dde6494e53e1187e48143fbb149d99a75e7c2d1ff4054d8622d",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Fresh attempt-2 article, hero and both placement screenshots opened at 390px and 1440px. Visible text keeps the publication date distinct from the December 16 effective date. Matching reports: no accessibility, overflow or unexpected artwork issues; deliberate image failure and recovery passed."
-          }
-        },
-        "productionCommit": "92bb39860ea3718475b5a0f83bdc450169c3f23d",
-        "verifiedAt": "2026-11-17T13:28:20.293Z"
-      },
-      {
-        "slot": 4,
-        "plannedDate": "2026-11-17",
-        "status": "live-verified",
-        "candidateTitle": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
-        "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T13:45:58.766Z",
-        "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
-        "evidence": {
-          "pending": {
-            "prNumber": 364,
-            "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
-            "run": 44093743947,
-            "job": 134075331457,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
-            "run": 44093743947,
-            "job": 134075331457,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-17T13:41:56.310Z",
-            "prNumber": 364
-          },
-          "terminalAcceptance": {
-            "prNumber": 364,
-            "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
-            "run": 44093743947,
-            "job": 134075331457,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-17T13:45:25.922Z",
-            "artifactId": 14332183676,
-            "artifactSha256": "sha256:d227cefd936b1a2e2f02aa013a3bc553a66cc0b1b76a992f3a09cb432646ab15",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Reviewed exact artifact at 390px and 1440px: homepage and News lead cards keep basket art and full heading visible; article hero, date, source links and mobile body section render without obstruction. Exact rendered record verified accessibility, navigation and artwork failure/recovery."
-          }
-        },
-        "productionCommit": "abf42be4b23175e3a5e025d1595f4154b000c9be",
-        "verifiedAt": "2026-11-17T13:47:15.490Z"
-      },
-      {
-        "slot": 5,
-        "plannedDate": "2026-11-17",
-        "status": "live-verified",
-        "candidateTitle": "NCUA Changes How Federal Credit Unions Can Add Associations",
-        "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-17T14:07:19.575Z",
-        "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
-        "evidence": {
-          "pending": {
-            "prNumber": 365,
-            "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
-            "run": 44096993929,
-            "job": 134086633838,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
-            "run": 44096993929,
-            "job": 134086633838,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-17T14:03:41.074Z",
-            "prNumber": 365
-          },
-          "terminalAcceptance": {
-            "prNumber": 365,
-            "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
-            "run": 44096993929,
-            "job": 134086633838,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-17T14:05:07.403Z",
-            "artifactId": 14336170038,
-            "artifactSha256": "sha256:d7260fff1a24fd25adacc3a369c9d0953db3cc588ddfe060cca3c2f3f8c01cb0",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "I reviewed matching archive screenshots at 390px and 1440px. The current lead headline, effective-date deck, meeting-table art and story link are legible on Home and News; article has correct November 17 publication date, full table art, readable linked Federal Register source, visible January 4 effective date and unobstructed body. Exact automated evidence has no accessibility, overflow or normal/404/recovery artwork errors."
-          }
-        },
-        "productionCommit": "ef719b3dac687a8e021999cc87cad958ea09551d",
-        "verifiedAt": "2026-11-17T14:06:28.874Z"
+        "nextReviewAt": "2026-11-18T12:34:43.556Z",
+        "nextAction": "Create one exact brief with original art, then record actual CI checkpoint and review its desktop/mobile artifact."
       }
-    ],
-    "socialDecision": "not-reserved-provider-review",
-    "socialDistribution": {
-      "status": "not-reserved",
-      "blocker": "Latest verified complete company inventory showed 79 historical sent records; 79 require destination review. No candidate-specific exclusion proof clears any of today's five. No already-approved recovery candidate was used.",
-      "inventoryArtifactId": 14334783289,
-      "inventoryObservedAt": "2026-11-17T14:06:17.505Z",
-      "providerReservationAttempted": false,
-      "editorialConsideration": [
-        {
-          "slot": 3,
-          "decision": "hold-provider-review",
-          "reason": "Strongest timely and directly usable takeaway: distinguish the December 16 advertising change from the unchanged sign requirements."
-        },
-        {
-          "slot": 2,
-          "decision": "hold-provider-review",
-          "reason": "A contact-center operator can follow the spoofing and fallback path on a real test call."
-        },
-        {
-          "slot": 4,
-          "decision": "hold-provider-review",
-          "reason": "Lending leaders can separate funded plans from completed purchases and test refund handoffs."
-        },
-        {
-          "slot": 1,
-          "decision": "hold-provider-review",
-          "reason": "Marketing and vendor-risk leaders can verify opt-out and data-control ownership before joining campaign data."
-        },
-        {
-          "slot": 5,
-          "decision": "hold-provider-review",
-          "reason": "Boards can compare bylaws with actual participation before assessing an association; January 4 effective date is still ahead."
-        }
-      ]
-    },
-    "alertCycle": {
-      "owner": "cuai-operating-system",
-      "status": "live-verified",
-      "sourceReviewAt": "2026-11-17T20:46:38.299Z",
-      "dedupeKey": "cuai-alert:fincen-cdd-proposal:2026-11-17",
-      "candidatesEvaluated": 2,
-      "alertsPublished": 1,
-      "note": "Selected the new FinCEN CDD proposal after primary-source and NCUA applicability checks. Held the Federal Reserve tokenized-markets speech because it does not create a comparably urgent credit-union operating deadline. Publication time remains intentionally unfilled until the first production deployment is verified.",
-      "firstProductionCommit": "266d333f7fe0db0353dd02f7cf2f3dc2aba016b5",
-      "productionDeployment": "dpl_HomdToh9N3NdDBpZLJsk4YZSzRqx",
-      "publishedAt": "2026-11-17T20:59:02.388Z",
-      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6960856432",
-      "liveUrl": "https://creditunionainews.com/alerts/#fincen-beneficial-owner-customer-due-diligence-proposal",
-      "validation": {
-        "run": 44172879978,
-        "exactHead": "0ffe0a520d8d9a20a1cb1178e959ca33f9ef4648",
-        "artifactId": 14369561616,
-        "artifactDigest": "sha256:4f65db779a84473ab3c1ea877a8043935bd7e49bb85c28e7bd3d925049e8062c",
-        "conclusion": "success"
-      },
-      "liveVerifiedAt": "2026-11-17T21:00:34.033Z",
-      "homepageDecision": "No watch item selected. The new verified Alert becomes the current freshness surface; the empty evergreen watch state remains the post-expiry fallback without a date-only refresh."
-    }
+    ]
   },
   "history": [
     {
@@ -11116,6 +10717,526 @@
         "inventoryArtifactId": 14226707965,
         "inventoryObservedAt": "2026-11-16T12:42:35.246Z",
         "providerReservationAttempted": false
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "fullArticleCount": 5,
+      "alertCount": 1,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "marketing-growth",
+        "board-strategy",
+        "risk-compliance",
+        "member-service",
+        "lending-collections",
+        "hr-training",
+        "operations",
+        "it-data-cybersecurity",
+        "finance-treasury"
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "Veritran acquires PrismaCampaigns",
+          "sourceUrl": "https://www.veritran.com/en/resources/newsroom/veritran-adds-prisma-campaigns",
+          "status": "selected",
+          "reason": "Primary November 16 announcement confirms acquisition; practical consent, suppression, export and contractual continuity checks without assuming product integration."
+        },
+        {
+          "title": "NCUA changes associational common-bond criteria",
+          "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-17/pdf/2026-23392.pdf",
+          "status": "selected",
+          "reason": "The issued Federal Register text confirms January 4, 2027 as effective and distinguishes mandatory purchases from predominantly customer groups. Distinct federal charter and membership decision for boards and strategy leaders."
+        },
+        {
+          "title": "NCUA revises advertising notice",
+          "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-16/pdf/2026-23288.pdf",
+          "status": "selected",
+          "reason": "Published Federal Register final rule confirms December 16 effective date and removal of § 740.5 only; official sign and advertising accuracy duties remain. Distinct operational compliance story."
+        },
+        {
+          "title": "Cobalt chooses Illuma voice security",
+          "sourceUrl": "https://illuma.cx/press-release/cobalt-credit-union-selects-illuma-voice-security/",
+          "status": "selected",
+          "reason": "Named institution and attributable rollout; avoid assuming performance or adoption."
+        },
+        {
+          "title": "equipifi launches Shop",
+          "sourceUrl": "https://www.equipifi.com/products/point-of-purchase",
+          "status": "selected",
+          "reason": "Vendor launch names Pioneer as an early institution and product description shows funding into checking before the member purchases. Pioneer public terms confirm the existing two-stage program but do not independently confirm Shop availability or results. Distinct from post-purchase American Heritage reporting."
+        },
+        {
+          "title": "Golden 1 workplace recognition",
+          "sourceUrl": "https://thecreditunionwire.com/",
+          "status": "rejected",
+          "reason": "Award without supported workforce operating change."
+        },
+        {
+          "title": "Charity Bank selects Temenos",
+          "sourceUrl": "https://ffnews.com/news/charity-bank-selects-temenos-saas-for-core-banking-and-payments-8408c77f",
+          "status": "held",
+          "reason": "Named institution but secondary discovery evidence and weak direct CU implication."
+        },
+        {
+          "title": "Credit union adjusts lending to pressure on members",
+          "sourceUrl": "https://www.cutimes.com/2026/11/16/slow-squeeze-on-members-leads-credit-union-to-change-lending-approach/",
+          "status": "held",
+          "reason": "Trade report leads but insufficient verified evidence on specific underwriting or portfolio results."
+        },
+        {
+          "title": "NCUA merger activity reporting",
+          "sourceUrl": "https://cutimes.com/",
+          "status": "held",
+          "reason": "Trade lead; need actual agency material and precise status before drawing a conclusion."
+        },
+        {
+          "title": "Claimed attack on card networks and JPMorgan",
+          "sourceUrl": "https://pasqualepillitteri.it/en/news/34013/n0n-group-claims-attack-on-visa-mastercard-and-jpmorgan",
+          "status": "rejected",
+          "reason": "Claim alone does not establish affected systems or CU exposure."
+        },
+        {
+          "title": "November 17 mortgage-rate roundup",
+          "sourceUrl": "https://fortune.com/article/current-mortgage-rates-11-17-2026/",
+          "status": "rejected",
+          "reason": "Retail rate roundup does not establish a new CU operating development."
+        },
+        {
+          "title": "Federal Reserve Barr AI speech",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+          "status": "rejected",
+          "reason": "Already published with verified November 16 receipt; avoid duplicate."
+        }
+      ],
+      "fallbackEvaluations": [],
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html"
+        },
+        {
+          "type": "alert",
+          "title": "FinCEN Proposes Changes to Beneficial-Owner Checks",
+          "url": "https://creditunionainews.com/alerts/#fincen-beneficial-owner-customer-due-diligence-proposal",
+          "sourceUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-proposed-rule-strengthen-customer-due-diligence-requirements-covered-financial-institutions",
+          "sourceDate": "Nov 17, 2026"
+        }
+      ],
+      "status": "completed",
+      "updatedAt": "2026-11-17T21:00:34.033Z",
+      "outcomeSlot": 5,
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-17",
+          "status": "live-verified",
+          "candidateTitle": "Veritran Buys PrismaCampaigns: What Credit Unions Should Check Before Combining Campaign Data",
+          "url": "https://creditunionainews.com/news/veritran-prismacampaigns-credit-union-data-controls.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-17T12:24:50.037Z",
+          "nextAction": "Verify fresh main and exact article head, then merge and verify production before recording publication.",
+          "evidence": {
+            "pending": {
+              "prNumber": 360,
+              "head": "e2e5e0785f6921142b2454fff166a481e836c378",
+              "run": 44081134592,
+              "job": 134031715929,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "e2e5e0785f6921142b2454fff166a481e836c378",
+              "run": 44081134592,
+              "job": 134031715929,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-17T12:21:52.608Z",
+              "prNumber": 360
+            },
+            "terminalAcceptance": {
+              "prNumber": 360,
+              "head": "e2e5e0785f6921142b2454fff166a481e836c378",
+              "run": 44081134592,
+              "job": 134031715929,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-17T12:24:32.337Z",
+              "artifactId": 14327941810,
+              "artifactSha256": "sha256:bb57771d2a6b420b41cc8149332243c1a139f7ab21336e24fe1bdde1a094201c",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Reviewed actual article body, header, source links and hero plus homepage and News cards at both widths. Checks show no axe violations, overflow or broken art; image 404 and recovery passed."
+            }
+          },
+          "productionCommit": "175a1f21266a911d69e08755b8a4c166b3260dac",
+          "verifiedAt": "2026-11-17T12:26:42.903Z"
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-17",
+          "status": "live-verified",
+          "candidateTitle": "Cobalt Picks Voice Authentication. What Happens When It Can’t Verify a Caller?",
+          "url": "https://creditunionainews.com/news/cobalt-illuma-voice-authentication-fallback.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-17T12:43:06.368Z",
+          "nextAction": "Publish only through the expected-head merge and record actual production proof.",
+          "evidence": {
+            "pending": {
+              "prNumber": 361,
+              "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
+              "run": 44084102181,
+              "job": 134041886721,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
+              "run": 44084102181,
+              "job": 134041886721,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-17T12:42:17.483Z",
+              "prNumber": 361
+            },
+            "terminalAcceptance": {
+              "prNumber": 361,
+              "head": "e1d48e33ddb90c19d161a2f290b75d51add84dcd",
+              "run": 44084102181,
+              "job": 134041886721,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-17T12:43:34.572Z",
+              "artifactId": 14328422667,
+              "artifactSha256": "sha256:451563ef15ee9268b5c567b34102e4fe6757ef4db6fbe209723249c0a9aa9124",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Opened actual article header, body and hero; News and homepage card hierarchy, artwork and links reviewed at both widths. No overflow, axe issues or broken imagery in matching results; deliberate 404 and recovery passed."
+            }
+          },
+          "productionCommit": "9893d0ba7e2e9c6272d0059f135d313a7d5c88bf",
+          "verifiedAt": "2026-11-17T12:45:21.786Z"
+        },
+        {
+          "slot": 3,
+          "plannedDate": "2026-11-17",
+          "status": "live-verified",
+          "candidateTitle": "The NCUA Drops the Ad Statement, Not the Insurance Sign",
+          "url": "https://creditunionainews.com/news/ncua-advertising-statement-insurance-sign.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-17T13:27:52.193Z",
+          "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
+          "evidence": {
+            "pending": {
+              "prNumber": 362,
+              "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+              "run": 44090372476,
+              "job": 134065684261,
+              "runAttempt": 2
+            },
+            "validationHistory": [
+              {
+                "prNumber": 362,
+                "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
+                "run": 44086779022,
+                "job": 134051153311,
+                "runAttempt": 1,
+                "status": "superseded",
+                "observedAt": "2026-11-17T13:05:02.042Z",
+                "terminalValidation": {
+                  "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
+                  "run": 44086779022,
+                  "job": 134051153311,
+                  "runAttempt": 1,
+                  "conclusion": "success",
+                  "runConclusion": "success",
+                  "jobConclusion": "success",
+                  "observedAt": "2026-11-17T13:01:21.351Z",
+                  "prNumber": 362
+                },
+                "terminalAcceptance": {
+                  "prNumber": 362,
+                  "head": "61431de031eab79a7e87f83c132bb80eff4adf4f",
+                  "run": 44086779022,
+                  "job": 134051153311,
+                  "runAttempt": 1,
+                  "visualReviewedAt": "2026-11-17T13:01:56.408Z",
+                  "artifactId": 14329519631,
+                  "artifactSha256": "sha256:1730a3f0b0c477416cc07670be4f4f864c53e3479b356a0b9ad91f4411390a70",
+                  "renderedChecks": 50,
+                  "failedChecks": 0,
+                  "viewports": [
+                    390,
+                    1440
+                  ],
+                  "observations": "Opened the exact mobile and desktop article, artwork and both listing cards. Verified that publication and December effective dates are visually distinct and the ad-versus-sign distinction survives the lead and body layouts. Matching reports confirm zero overflow, accessibility violations or unexpected image issues, with intentional 404/recovery passed."
+                },
+                "reason": "Concurrent authoritative Barr queue/report receipt on main required a fresh exact article revision."
+              },
+              {
+                "prNumber": 362,
+                "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
+                "run": 44089174408,
+                "job": 134059503120,
+                "runAttempt": 1,
+                "status": "superseded",
+                "observedAt": "2026-11-17T13:12:20.710Z",
+                "terminalValidation": {
+                  "head": "5ad10634331231c212cc43563206ca2f4ffbfb74",
+                  "run": 44089174408,
+                  "job": 134059503120,
+                  "runAttempt": 1,
+                  "conclusion": "failure",
+                  "runConclusion": "failure",
+                  "jobConclusion": "failure",
+                  "observedAt": "2026-11-17T13:08:11.625Z",
+                  "prNumber": 362,
+                  "failedStep": "Check canonical shell and existing regressions",
+                  "reason": "The article-first reconciliation merge introduced an apparent prepared-to-validated jump on the candidate branch's first-parent chain. CI rejected it before rendered review."
+                },
+                "reason": "Article-first Git parent order failed canonical-history regressions; verified local corrective rebuild uses canonical main as first parent."
+              },
+              {
+                "prNumber": 362,
+                "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+                "run": 44090372476,
+                "job": 134063620557,
+                "runAttempt": 1,
+                "status": "superseded",
+                "observedAt": "2026-11-17T13:15:52.193Z",
+                "terminalValidation": {
+                  "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+                  "run": 44090372476,
+                  "job": 134063620557,
+                  "runAttempt": 1,
+                  "conclusion": "failure",
+                  "runConclusion": "failure",
+                  "jobConclusion": "failure",
+                  "observedAt": "2026-11-17T13:14:22.228Z",
+                  "prNumber": 362,
+                  "failedStep": "Validate daily-cycle history against PR base and refreshed main",
+                  "reason": "Job passed 98 first-parent transitions; checkout had 03f4aee before the exact new-head checkpoint, then rejected canonical-checkpoint-does-not-match-review-head."
+                },
+                "reason": "Bounded same-head design rerun after the exact replacement checkpoint was recorded on canonical main."
+              }
+            ],
+            "terminalValidation": {
+              "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+              "run": 44090372476,
+              "job": 134065684261,
+              "runAttempt": 2,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-17T13:26:15.040Z",
+              "prNumber": 362
+            },
+            "terminalAcceptance": {
+              "prNumber": 362,
+              "head": "fedef2e33dd9d715c8c5ff63f727cfda3d9a5630",
+              "run": 44090372476,
+              "job": 134065684261,
+              "runAttempt": 2,
+              "visualReviewedAt": "2026-11-17T13:26:49.874Z",
+              "artifactId": 14332955531,
+              "artifactSha256": "sha256:e62ea32d5cfd1dde6494e53e1187e48143fbb149d99a75e7c2d1ff4054d8622d",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Fresh attempt-2 article, hero and both placement screenshots opened at 390px and 1440px. Visible text keeps the publication date distinct from the December 16 effective date. Matching reports: no accessibility, overflow or unexpected artwork issues; deliberate image failure and recovery passed."
+            }
+          },
+          "productionCommit": "92bb39860ea3718475b5a0f83bdc450169c3f23d",
+          "verifiedAt": "2026-11-17T13:28:20.293Z"
+        },
+        {
+          "slot": 4,
+          "plannedDate": "2026-11-17",
+          "status": "live-verified",
+          "candidateTitle": "Pioneer’s In-App Shopping Puts the Loan Before the Purchase",
+          "url": "https://creditunionainews.com/news/pioneer-equipifi-app-shopping-financing.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-17T13:45:58.766Z",
+          "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
+          "evidence": {
+            "pending": {
+              "prNumber": 364,
+              "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
+              "run": 44093743947,
+              "job": 134075331457,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
+              "run": 44093743947,
+              "job": 134075331457,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-17T13:41:56.310Z",
+              "prNumber": 364
+            },
+            "terminalAcceptance": {
+              "prNumber": 364,
+              "head": "0df9f5383367abb82afd3638f18c4b63b70fa652",
+              "run": 44093743947,
+              "job": 134075331457,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-17T13:45:25.922Z",
+              "artifactId": 14332183676,
+              "artifactSha256": "sha256:d227cefd936b1a2e2f02aa013a3bc553a66cc0b1b76a992f3a09cb432646ab15",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Reviewed exact artifact at 390px and 1440px: homepage and News lead cards keep basket art and full heading visible; article hero, date, source links and mobile body section render without obstruction. Exact rendered record verified accessibility, navigation and artwork failure/recovery."
+            }
+          },
+          "productionCommit": "abf42be4b23175e3a5e025d1595f4154b000c9be",
+          "verifiedAt": "2026-11-17T13:47:15.490Z"
+        },
+        {
+          "slot": 5,
+          "plannedDate": "2026-11-17",
+          "status": "live-verified",
+          "candidateTitle": "NCUA Changes How Federal Credit Unions Can Add Associations",
+          "url": "https://creditunionainews.com/news/ncua-associational-common-bond-membership.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-17T14:07:19.575Z",
+          "nextAction": "Merge the accepted exact head; verify original production URL, art and placements before recording live publication.",
+          "evidence": {
+            "pending": {
+              "prNumber": 365,
+              "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
+              "run": 44096993929,
+              "job": 134086633838,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
+              "run": 44096993929,
+              "job": 134086633838,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-17T14:03:41.074Z",
+              "prNumber": 365
+            },
+            "terminalAcceptance": {
+              "prNumber": 365,
+              "head": "db92823e11911f1a7b7305b05746ce18b83bbf96",
+              "run": 44096993929,
+              "job": 134086633838,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-17T14:05:07.403Z",
+              "artifactId": 14336170038,
+              "artifactSha256": "sha256:d7260fff1a24fd25adacc3a369c9d0953db3cc588ddfe060cca3c2f3f8c01cb0",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "I reviewed matching archive screenshots at 390px and 1440px. The current lead headline, effective-date deck, meeting-table art and story link are legible on Home and News; article has correct November 17 publication date, full table art, readable linked Federal Register source, visible January 4 effective date and unobstructed body. Exact automated evidence has no accessibility, overflow or normal/404/recovery artwork errors."
+            }
+          },
+          "productionCommit": "ef719b3dac687a8e021999cc87cad958ea09551d",
+          "verifiedAt": "2026-11-17T14:06:28.874Z"
+        }
+      ],
+      "socialDecision": "not-reserved-provider-review",
+      "socialDistribution": {
+        "status": "not-reserved",
+        "blocker": "Latest verified complete company inventory showed 79 historical sent records; 79 require destination review. No candidate-specific exclusion proof clears any of today's five. No already-approved recovery candidate was used.",
+        "inventoryArtifactId": 14334783289,
+        "inventoryObservedAt": "2026-11-17T14:06:17.505Z",
+        "providerReservationAttempted": false,
+        "editorialConsideration": [
+          {
+            "slot": 3,
+            "decision": "hold-provider-review",
+            "reason": "Strongest timely and directly usable takeaway: distinguish the December 16 advertising change from the unchanged sign requirements."
+          },
+          {
+            "slot": 2,
+            "decision": "hold-provider-review",
+            "reason": "A contact-center operator can follow the spoofing and fallback path on a real test call."
+          },
+          {
+            "slot": 4,
+            "decision": "hold-provider-review",
+            "reason": "Lending leaders can separate funded plans from completed purchases and test refund handoffs."
+          },
+          {
+            "slot": 1,
+            "decision": "hold-provider-review",
+            "reason": "Marketing and vendor-risk leaders can verify opt-out and data-control ownership before joining campaign data."
+          },
+          {
+            "slot": 5,
+            "decision": "hold-provider-review",
+            "reason": "Boards can compare bylaws with actual participation before assessing an association; January 4 effective date is still ahead."
+          }
+        ]
+      },
+      "alertCycle": {
+        "owner": "cuai-operating-system",
+        "status": "live-verified",
+        "sourceReviewAt": "2026-11-17T20:46:38.299Z",
+        "dedupeKey": "cuai-alert:fincen-cdd-proposal:2026-11-17",
+        "candidatesEvaluated": 2,
+        "alertsPublished": 1,
+        "note": "Selected the new FinCEN CDD proposal after primary-source and NCUA applicability checks. Held the Federal Reserve tokenized-markets speech because it does not create a comparably urgent credit-union operating deadline. Publication time remains intentionally unfilled until the first production deployment is verified.",
+        "firstProductionCommit": "266d333f7fe0db0353dd02f7cf2f3dc2aba016b5",
+        "productionDeployment": "dpl_HomdToh9N3NdDBpZLJsk4YZSzRqx",
+        "publishedAt": "2026-11-17T20:59:02.388Z",
+        "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6960856432",
+        "liveUrl": "https://creditunionainews.com/alerts/#fincen-beneficial-owner-customer-due-diligence-proposal",
+        "validation": {
+          "run": 44172879978,
+          "exactHead": "0ffe0a520d8d9a20a1cb1178e959ca33f9ef4648",
+          "artifactId": 14369561616,
+          "artifactDigest": "sha256:4f65db779a84473ab3c1ea877a8043935bd7e49bb85c28e7bd3d925049e8062c",
+          "conclusion": "success"
+        },
+        "liveVerifiedAt": "2026-11-17T21:00:34.033Z",
+        "homepageDecision": "No watch item selected. The new verified Alert becomes the current freshness surface; the empty evergreen watch state remains the post-expiry fallback without a date-only refresh."
       }
     }
   ],
