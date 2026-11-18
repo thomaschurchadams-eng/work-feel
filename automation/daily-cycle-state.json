@@ -140,7 +140,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:44:28.310Z",
+    "updatedAt": "2026-11-18T13:56:14.474Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -407,13 +407,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-18",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
         "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-18T14:14:28.310Z",
-        "nextAction": "Observe actual terminal design result; inspect matching artifact and mobile/desktop pixels before validated closeout.",
+        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 378,
@@ -421,6 +421,34 @@
             "run": 44316770112,
             "job": 134844842796,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
+            "run": 44316770112,
+            "job": 134844842796,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-18T13:56:13.158Z",
+            "prNumber": 378
+          },
+          "terminalAcceptance": {
+            "prNumber": 378,
+            "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
+            "run": 44316770112,
+            "job": 134844842796,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-18T13:56:14.474Z",
+            "artifactId": 14432948237,
+            "artifactSha256": "sha256:f60e96c128ba2255e9f709eb2ae4dc7cfb05272ed5693391ab54cfa4a87adb18",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally inspected seven actual crops from artifact14432948237 for bb3272d0946e63bd967efa92305b1db43e6dd285: Home/News cards at390/1440, article390/1440, lower mobile. Title, deck and monochrome research art fit without clipping. November18 publication and linked November17 announcement clearly distinct. Attributable deployment, unverified performance limits and expressly hypothetical entity-matching example readable. Source link, related/follow/sponsor panels clear; exact route/accessibility/navigation/image normal404recovery checks passed."
           }
         }
       }
