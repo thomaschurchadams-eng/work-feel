@@ -5711,6 +5711,69 @@
       ],
       "summary": "Recovered the missing canonical usage-ledger closeout for the authorized PR #380 discovery/optional-extras release. Fresh pre-write reconciliation matched base/main beba463137e6ea6b9ec11e47750346eecfb45841, accepted head e56f3bdd2b586132258d3c0d98dccfabab9fb0cf and tree bfb4a28a0faaaeef4b272e8dbd9652511479f7e7; exact PR run 44349538861 and artifact 14448357668 passed the supplied independent gates. The expected-head merge produced 03043dca64da44aa91462a00973e4fa17bc65f55 with that accepted tree. Production deployment dpl_EUMMbWESUfbLadcgsmjM3kjgXMrj is READY on the exact merge and live homepage/topics/article/artwork checks returned HTTP 200. Natural push run 44354191947 completed successfully; artifact 14450331015, SHA-256 53dcc43e701436758d6bd557038efce98fa979f7372a99e2eb7355526a2b5eb9, recorded verified authentication and exact production identity with zero actions, reconciliations, source retries, errors or drift. Complete Buffer inventory contained 80 records and retained requiresReview on all 80; the 57-item repository queue, its legacy scheduled/planned rows, all holds and all 86 publication histories remained unchanged. No article cycle, provider retry, social reservation/send, manual dispatch, schedule/model/credential/access/spend change or PR260 activation occurred. Released-main adoption remains for the next natural ordinary cycle and was not forced.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261118-operating-system-01",
+      "timestamp": "2026-11-18T21:00:33.494Z",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Wednesday operating review after the completed November 18 five-slot publisher handoff.",
+      "status": "success",
+      "dedupeKey": "cuai-operating-system:2026-11-18",
+      "workUnits": {
+        "publisherHandoffsConsumed": 1,
+        "articlesPublishedObserved": 5,
+        "candidatesEvaluatedObserved": 12,
+        "beatsSearchedObserved": 9,
+        "portfolioArticlesReviewed": 124,
+        "portfolioLookbackArticlesReviewed": 51,
+        "officialAlertSourceSurfacesReviewed": 8,
+        "alertsPublished": 0,
+        "freshAlertsRetained": 1,
+        "homepageFreshnessChecks": 1,
+        "homepageWatchWrites": 0,
+        "exactCurrentOperationsArtifactsConsumed": 1,
+        "ga4SevenDaySessionsObserved": 482,
+        "searchConsoleSevenDayClicksObserved": 34,
+        "searchConsoleSevenDayImpressionsObserved": 2602,
+        "bufferReceiptsObserved": 1,
+        "productionDeploymentsVerified": 1,
+        "runtimeErrorWindowsChecked": 1,
+        "runtimeErrorsObserved": 0,
+        "policyCheckerAttempts": 2,
+        "policyCheckerSuccesses": 1,
+        "usageLedgerEntriesAppended": 1,
+        "socialQueueWrites": 0,
+        "externalOutreachAttempted": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer read-only evidence",
+        "public official web sources"
+      ],
+      "operationalLearning": {
+        "issue": "The portfolio remains heavily functional and reported-news weighted even after today's broader five-story mix. Exact-current analytics are now available, while the verified manual Harris LinkedIn post has an exact Buffer receipt but its repository row remains planned rather than scheduled.",
+        "correction": "Used finalized Search Console and rolling GA4 only as directional evidence, retained the fresh November 17 FinCEN Alert without a duplicate or date-only homepage refresh, and preserved the social queue because automatic sent-state reconciliation is limited to scheduled rows. Kept the exact Buffer receipt available for the existing publisher-owned reconciliation.",
+        "controllingVersion": {
+          "repositoryMain": "7f88fa0720b1f9fb14dbd37d93175abddc1e7a99",
+          "policyBlob": "35cd9cf1383e3abfc00fade14a8d7ed993c73d81",
+          "verifiedOperationsRun": 44391956141,
+          "verifiedOperationsArtifact": 14467682304,
+          "verifiedOperationsDigest": "sha256:13cdb2505285f1901e9d9b1b00132e7a60e3993d73720d5537529e662186124c",
+          "exactMainDeployment": "dpl_5XNATM6iWwjnoFCteEu2wH6kWYyd",
+          "publisherHandoffEvent": "cuai-20261118-daily-publisher-01",
+          "socialReceiptPostId": "6afe0ab971617e0e412d1705"
+        },
+        "owner": "cuai-operating-system retains portfolio and analytics learning; daily-publisher owns the existing exact social-receipt reconciliation.",
+        "test": "Exact-current artifact verified authentication, production identity and zero drift. Search Console finalized November 11-17 at 34 clicks and 2,602 impressions; merger/governance and operational-resilience pages led clicks. GA4's rolling seven-day window reported 482 sessions and 164 engaged sessions, while LinkedIn organic had 6 sessions and 0 engaged sessions; the windows overlap and November 18 is partial, so no causal claim was made. Buffer observed the Harris send at 2026-11-18T20:30:07.043Z with the approved channel, link and UTM. Exact main is production READY and the available one-hour runtime window contained no errors.",
+        "decision": "keep-fresh-alert; favor-executive-or-durable-resilience-next; preserve-publisher-owned-social-reconciliation",
+        "actualResult": "No Alert, homepage watch item, article, social retry, provider reservation, queue mutation, external contact, spend, credential, schedule, pricing, legal/privacy or editorial-gate change was created.",
+        "nextTrigger": "In the next ordinary publisher candidate set, prefer qualified executive/board or durable Library/Insight evidence on operational resilience or merger governance without repeating today's stories. Reconcile the Harris row only in the existing publisher workflow using the exact Buffer receipt."
+      },
+      "summary": "Consumed the completed five-article publisher handoff: HR/training rose from one to two trailing-window items and marketing, payments, operations and lending all received coverage, but the 51-article lookback remains dominated by functional-leader reported news. The next qualified candidate should favor executive/board or durable Library/Insight coverage, especially operational resilience or merger governance, which also matches finalized Search Console demand. No new Alert qualified across eight official-source surfaces; the November 17 FinCEN Alert remains fresh, so no homepage watch or date-only refresh was made. Exact-current analytics were consumed without causal overclaim: GA4 reported 482 sessions and 164 engaged sessions in its rolling seven-day window, while Search Console finalized November 11-17 at 34 clicks and 2,602 impressions. Exact main is production READY with no runtime errors in the available one-hour window. The Harris LinkedIn send is exact in Buffer, but the repository row is planned and the existing publisher owns reconciliation; no queue write or retry occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
