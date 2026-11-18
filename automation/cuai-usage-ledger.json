@@ -5673,6 +5673,44 @@
       ],
       "summary": "Completed the same November18 cycle at canonical closeout80350daa3a72edfefa6577148204aa5908cd1ddd: five distinct Standard News articles for HR/training, marketing/growth, payments/deposits, operations and lending/collections. Each has exact-head passing CI, digest/revision-verified artifact, actual390/1440 screenshot inspection, selected original art and exact READY production/public byte verification. Final source merge767d39537b9c724bf9792ed1d10a1f420867ed73 is READY at dpl_7nXAfZnuxXGAKvhRsf2b4ZXyLzYC. Weekly portfolio now15 stories, nine primary functions and three formats, within actual3/function and2/technology limits. No fallback or additional candidate scan was needed. A concurrent reliability activity-ledger append stopped slot4's original release plan; source refresh preserved that evidence. Its first unmerged refresh failed a history regression because of parent order; actual failure was recorded, then canonical-main-first-parent replacement passed fresh full CI/rendered/visual gates. All original pass/failure/checkpoint receipts retained. A transient readback error after slot4 closeout was reconciled against the one known stored commit; no write or publication replay. All85 old history rows plus the prior completed November17 cycle remain exact; all57 social queue rows, media/policy/Alert assets remain unchanged. Natural source-merge run44318914710 attempt1/artifact14433598458 was verified with zero actions/reconciliations/errors; complete same-channel inventory at13:57:17.235Z contained80 sent records, all80 flagged for destination review. The five current-week useful-Standard candidates were compared; the read-only selector nominated Harris application abandonment, not provider clearance. Every candidate remains hold-provider-review; no reservation/submission or bypass of legacy/active/American Heritage holds. Existing paused/unpublished media and immutable planned reservation retained; house campaign not used to evade holds. Local Chromium executable remains absent with unchanged cache; the already-approved isolated exact-head fallback provided article acceptance, not proof of local runtime repair. Reliability's observed failed outer scheduled wrapper is preserved; completion by this same-conversation continuation does not establish independently scheduled unattended acceptance. Engagement effects are not yet measured; no usage/cost estimate invented.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261118-pr380-release-ledger-closeout",
+      "timestamp": "2026-11-18T17:26:28.302Z",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The authorized PR #380 release completed with a deduplicated issue #160 receipt, but the canonical CUAI usage ledger had no corresponding material reliability-watch entry.",
+      "status": "recovered",
+      "incidentKey": "cuai-publishing:daily-discovery-optional-extras:2026-11-18",
+      "workUnits": {
+        "currentMainRevisionsReconciled": 2,
+        "releasePullRequestsReviewed": 1,
+        "exactHeadValidationRunsReviewed": 1,
+        "acceptedSourceTests": 452,
+        "acceptedRenderedChecks": 50,
+        "acceptedStateTransitions": 137,
+        "historicalPublicationEntriesPreserved": 86,
+        "socialQueueItemsPreserved": 57,
+        "duplicateSocialReservationsObserved": 0,
+        "productionDeploymentsVerified": 1,
+        "liveSurfaceChecks": 4,
+        "naturalOperationsRunsReviewed": 1,
+        "naturalOperationsArtifactsReviewed": 1,
+        "providerInventoryRecordsObserved": 80,
+        "providerReviewFlagsPreserved": 80,
+        "forcedWorkflowDispatches": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer read-only evidence"
+      ],
+      "summary": "Recovered the missing canonical usage-ledger closeout for the authorized PR #380 discovery/optional-extras release. Fresh pre-write reconciliation matched base/main beba463137e6ea6b9ec11e47750346eecfb45841, accepted head e56f3bdd2b586132258d3c0d98dccfabab9fb0cf and tree bfb4a28a0faaaeef4b272e8dbd9652511479f7e7; exact PR run 44349538861 and artifact 14448357668 passed the supplied independent gates. The expected-head merge produced 03043dca64da44aa91462a00973e4fa17bc65f55 with that accepted tree. Production deployment dpl_EUMMbWESUfbLadcgsmjM3kjgXMrj is READY on the exact merge and live homepage/topics/article/artwork checks returned HTTP 200. Natural push run 44354191947 completed successfully; artifact 14450331015, SHA-256 53dcc43e701436758d6bd557038efce98fa979f7372a99e2eb7355526a2b5eb9, recorded verified authentication and exact production identity with zero actions, reconciliations, source retries, errors or drift. Complete Buffer inventory contained 80 records and retained requiresReview on all 80; the 57-item repository queue, its legacy scheduled/planned rows, all holds and all 86 publication histories remained unchanged. No article cycle, provider retry, social reservation/send, manual dispatch, schedule/model/credential/access/spend change or PR260 activation occurred. Released-main adoption remains for the next natural ordinary cycle and was not forced.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
