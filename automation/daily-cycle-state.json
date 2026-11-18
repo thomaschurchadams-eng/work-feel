@@ -72,9 +72,22 @@
       {
         "title": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
         "sourceUrl": "https://www.cuinsight.com/press-release/vantage-west-credit-union-becomes-first-credit-union-to-adopt-ai-navigator/",
-        "score": 71.8,
+        "score": 71.3,
         "status": "qualified",
-        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        "reason": "Qualified after correcting relative source-date label to exact November17 metadata. Named-CU announcement establishes attributable deployment, not independently verified operating or lending outcomes.",
+        "sourcePublishedAt": "2026-11-17T16:12:35+00:00",
+        "scoreInputs": {
+          "confidence": 0.86,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 78,
+            "creditUnionRelevance": 93,
+            "coverageGap": 5,
+            "originality": 86,
+            "sourceQuality": 100,
+            "urgency": 88.81111183449075
+          }
+        }
       },
       {
         "title": "NCUA Chairman Discusses AI and Staffing at Budget Hearing",
@@ -127,8 +140,8 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:38:03.829Z",
-    "outcomeSlot": 4,
+    "updatedAt": "2026-11-18T13:41:33.727Z",
+    "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -390,6 +403,17 @@
         },
         "productionCommit": "0965518bb523d5ec368d6971e191e48667205e0b",
         "verifiedAt": "2026-11-18T13:39:26.187Z"
+      },
+      {
+        "slot": 5,
+        "plannedDate": "2026-11-18",
+        "status": "prepared",
+        "candidateTitle": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
+        "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-18T14:11:33.727Z",
+        "nextAction": "Prepare attributed November17 named-CU research/call-planning adoption brief; no independently verified usage, accuracy or lending outcomes."
       }
     ]
   },
