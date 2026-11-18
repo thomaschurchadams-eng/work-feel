@@ -126,7 +126,7 @@ module.exports = async function verifyDateHeader(browser, base, out) {
     const fixture = [
       { slug:'older-post', headline:'Synthetic older post', date:'Nov 8, 2026', publishedAt:'2026-11-09T20:00:00Z', publicationEvidence:'https://example.test/older' },
       { slug:'unknown-post', headline:'Synthetic unknown history', date:'Nov 11, 2026' },
-      { slug:'newer-post', headline:'Synthetic newer post with old source', date:'Oct 1, 2026', publishedAt:'2026-11-10T20:00:00Z', publicationEvidence:'https://example.test/newer' },
+      { slug:'newer-post', headline:'Synthetic newer post with old source', date:'Oct 1, 2026', sourceUpdatedAt:'2026-11-11T13:00:00Z', publishedAt:'2026-11-10T20:00:00Z', publicationEvidence:'https://example.test/newer' },
       { slug:'day-only-post', headline:'Synthetic known day only', date:'Nov 6, 2026', publishedAt:'2026-11-07', publicationEvidence:'https://example.test/day' }
     ].map(item => ({ ...item, label:'Synthetic fixture', summary:'Test data, not a published Alert.', impact:'No real operating action.', sourceName:'Synthetic source', sourceUrl:'https://example.test/'+item.slug }));
     const app = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
@@ -143,6 +143,8 @@ module.exports = async function verifyDateHeader(browser, base, out) {
       const order = await page.locator('#alerts-list > article[id]').evaluateAll(es => es.map(e => e.id));
       assert.deepEqual(order, ['newer-post','older-post','day-only-post','unknown-post']);
       assert.match(await page.locator('#unknown-post').innerText(), /Source date/);
+      assert.match(await page.locator('#newer-post .alert-dates').innerText(), /Published Nov 10, 2026/);
+      assert.match(await page.locator('#newer-post .alert-source').innerText(), /source updated Nov 11, 2026/);
       await page.getByRole('checkbox', { name:'Published in last 14 days' }).check();
       assert.deepEqual(await page.locator('#alerts-list > article[id]').evaluateAll(es => es.map(e => e.id)), ['newer-post','older-post']);
       await page.goto(new URL('/', base).href);
