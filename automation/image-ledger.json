@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "refined-data-abstraction",
+      "subject": "abstract-data-system",
+      "composition": "modular-grid",
+      "perspective": "isometric",
+      "palette": "monochrome-ink",
+      "lighting": "graphic-flat-light",
+      "texture": "newsprint-grain",
+      "scene": "Research sources arranged into a call plan",
+      "topicFit": 78,
+      "editorialClarity": 78,
+      "score": 67.6,
+      "metrics": {
+        "novelty": 57,
+        "topicFit": 78,
+        "editorialClarity": 78
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "vantage-west-ai-navigator-business-member-research",
+      "articleUrl": "/news/vantage-west-ai-navigator-business-member-research.html",
+      "imagePath": "/assets/vantage-west-ai-navigator-business-member-research.jpg",
+      "publishedAt": "2026-11-18T08:42:48-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "isometric",
+          "palette": "monochrome-ink",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Research sources arranged into a call plan",
+          "topicFit": 78,
+          "editorialClarity": 78,
+          "score": 67.6,
+          "metrics": {
+            "novelty": 57,
+            "topicFit": 78,
+            "editorialClarity": 78
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "frontline-workflow",
+          "composition": "asymmetric-editorial",
+          "perspective": "eye-level",
+          "palette": "emerald-cream",
+          "lighting": "graphic-flat-light",
+          "texture": "ink-wash",
+          "scene": "A business relationship desk with source pages, telephone and open notebook",
+          "topicFit": 95,
+          "editorialClarity": 93,
+          "score": 47.1,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 95,
+            "editorialClarity": 93
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "documents-and-controls",
+          "composition": "diagonal-motion",
+          "perspective": "overhead",
+          "palette": "cobalt-coral",
+          "lighting": "diffused-overcast",
+          "texture": "paper-fiber",
+          "scene": "Source cards joined to a business conversation notebook",
+          "topicFit": 79,
+          "editorialClarity": 80,
+          "score": 46.8,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 79,
+            "editorialClarity": 80
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "84959a8e25745bf22ab91994ad87b1d4887c230e2ee315069f53d48344d656ed"
+    },
+    {
       "medium": "macro-still-life",
       "subject": "financial-object-study",
       "composition": "overhead-flat-lay",

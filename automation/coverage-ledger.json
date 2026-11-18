@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "vantage-west-ai-navigator-business-member-research",
+      "title": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
+      "url": "/news/vantage-west-ai-navigator-business-member-research.html",
+      "publishedAt": "2026-11-18T08:42:48-05:00",
+      "section": "news",
+      "beat": "vantage-west-ai-navigator-business-member-research",
+      "functions": [
+        "lending-collections"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Lending and Collections leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-small-business-servicing-exception-ledger.html",
+        "/news/commonwealth-personalized-offers-business-deposits.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Named credit-union announcement, dated November 17 in publication metadata. Platform capabilities and deployment are attributed; staff adoption, accuracy and lending results have not been independently verified."
+    },
+    {
       "id": "openai-astra-sol-token-price-review-cost",
       "title": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
       "url": "/news/openai-astra-sol-token-price-review-cost.html",
