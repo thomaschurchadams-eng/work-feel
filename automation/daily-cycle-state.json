@@ -115,8 +115,8 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T12:24:44.532Z",
-    "outcomeSlot": 1,
+    "updatedAt": "2026-11-18T12:26:51.782Z",
+    "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -167,6 +167,17 @@
         },
         "productionCommit": "a859080949103682ab4314c1ebd27dadcbcb7cd5",
         "verifiedAt": "2026-11-18T12:26:00.034Z"
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-18",
+        "status": "prepared",
+        "candidateTitle": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
+        "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-18T12:56:51.782Z",
+        "nextAction": "Prepare a bounded data brief with survey denominators, sponsor/methods and no claimed CU conversion effect."
       }
     ]
   },
