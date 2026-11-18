@@ -104,7 +104,7 @@ module.exports = async function verifyDateHeader(browser, base, out) {
         await page.goto(new URL('/', base).href);
         const home = await page.locator('#latest-alert').innerText();
         assert.equal(home.includes('FinCEN Orders'), fresh, 'verified CUAI posting time must control the 72-hour window');
-        assert.equal(await page.locator('#alerts-ticker a[href="/alerts/#fincen-mexc-global-transfer-prohibition"]').count() > 0, recent);
+        assert.equal(await page.locator('#alerts-ticker a[href="/alerts/#fincen-mexc-global-transfer-prohibition"]').count() > 0, fresh);
         let dateContrastViolations = [];
         if (fresh) {
           assert.match(home, /Published Nov 9, 2026/); assert.match(home, /source dated Nov 6, 2026/);
