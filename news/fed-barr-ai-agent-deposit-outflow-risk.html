@@ -40,6 +40,41 @@
 <p>For a tabletop exercise, run the same hypothetical withdrawal amount over two periods: spread over the day, then concentrated in a short window outside normal staffing hours. Use payment and share-account activity your institution can actually see. Measure how long it takes for the activity to appear, an alert to reach someone who can act, and treasury to decide whether it needs funds. Then test what information that person has about available balances and settlement deadlines.</p>
 <p>Keep the exercise separate from member-level restrictions. A spike may reflect legitimate transfers, fraud, or a data problem; a scenario alone is not evidence to block transfers. Give fraud and treasury separate decision paths, with a clear handoff if an incident affects both. The useful result is not a prediction of an AI-driven run. It is evidence about whether the credit union can see a fast outflow, assign it and act while it still has options.</p>
 </div>
+<section id="cai-funding" class="card" aria-labelledby="funding-title">
+<p>Cooperative AI Institute · Free practice</p>
+<h2 id="funding-title">Can you fund the transfers by 10:30?</h2>
+<p>Fictional Pine Bank has $4 million in cash and $6 million in transfers due. You have a $3 million credit line. When do you raise the alert?</p>
+<details><summary>Try the 2-minute challenge</summary>
+<form><fieldset><legend>Starting at 10:00, allow seven minutes for approval and twelve more for the cash to arrive. Which alert gets the funds there in time?</legend>
+<label><input type="radio" required name="alert" value="5"> 10:05</label>
+<label><input type="radio" name="alert" value="15"> 10:15</label>
+<label><input type="radio" name="alert" value="25"> 10:25</label></fieldset>
+<button type="submit">Check my decision</button></form><p role="status"></p>
+</details></section>
+<script>
+(() => {
+  const pilot = document.getElementById('cai-funding');
+  const sent = new Set();
+  function track(step) {
+    if (sent.has(step)) return;
+    sent.add(step);
+    if (location.hostname !== 'creditunionainews.com' || new URLSearchParams(location.search).has('qa')) return;
+    if (typeof gtag === 'function') gtag('event', 'cai_practice_' + step, {module_slug:'funding-challenge', module_version:'deposit_response_v1'});
+  }
+  const observer = new IntersectionObserver(entries => {
+    if (entries.some(entry => entry.isIntersecting)) { track('view'); observer.disconnect(); }
+  });
+  observer.observe(pilot.querySelector('summary'));
+  pilot.querySelector('details').addEventListener('toggle', event => { if (event.target.open) track('start'); });
+  pilot.querySelector('form').addEventListener('submit', event => {
+    event.preventDefault();
+    const minutes = Number(new FormData(event.target).get('alert'));
+    const arrival = minutes + 19;
+    pilot.querySelector('[role=status]').textContent = (minutes === 5 ? 'Correct. ' : 'Too late. ') + 'Your alert delivers cash at 10:' + arrival + '. The 10:05 alert gives you six minutes to spare. The credit line covers the $2 million gap only once the cash arrives.';
+    track('complete');
+  });
+})();
+</script>
 <section class="related-coverage" aria-labelledby="related-heading"><h2 id="related-heading" class="section-title">Related coverage</h2><div class="grid cards-2"><article class="card"><h3 class="card-title"><a href="/insight-credit-union-contingency-funding-line-test.html">Can Your Credit Union Draw on Its Emergency Funding Line?</a></h3><p>A separate test for turning a borrowing commitment into available funds.</p></article><article class="card"><h3 class="card-title"><a href="/news/bank-regulators-agentic-ai-shutdown-controls.html">Bank Regulators Consider Agentic AI Shutdown Controls</a></h3><p>The different question of controlling automated actions inside an institution.</p></article></div></section></article></div></section></main>
   <footer class="footer">
     <div class="container footer-shell">
