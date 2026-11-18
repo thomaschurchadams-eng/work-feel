@@ -123,7 +123,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:24:54.067Z",
+    "updatedAt": "2026-11-18T13:38:03.829Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -279,13 +279,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-18",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
         "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-18T13:54:54.067Z",
-        "nextAction": "Observe exact rebuilt candidate terminal result; inspect matching rendered artifact and pixels before release.",
+        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
         "evidence": {
           "validationHistory": [
             {
@@ -354,6 +354,34 @@
             "run": 44313447670,
             "job": 134833244746,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "d491415837553d75273510682af71bcc10a55904",
+            "run": 44313447670,
+            "job": 134833244746,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-18T13:38:02.391Z",
+            "prNumber": 376
+          },
+          "terminalAcceptance": {
+            "prNumber": 376,
+            "head": "d491415837553d75273510682af71bcc10a55904",
+            "run": 44313447670,
+            "job": 134833244746,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-18T13:38:03.829Z",
+            "artifactId": 14431414569,
+            "artifactSha256": "sha256:e612021408c74dc42ca6e5ff0acf2296bff689b292c164295518ad70e56cc8d0",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed seven actual crops regenerated from artifact 14431414569 for head d491415837553d75273510682af71bcc10a55904: Home/News 390 and1440, article390/1440 and lower mobile. Cards/title/deck and original art correct, no clipping. Visible pricing figures and illustrative arithmetic accurate; API/subscription, provider-claim and review-time caveats clear. Source/related/follow panels readable; exact accessibility/navigation/artwork normal-error-recovery gates passed. This is new-head acceptance, not reuse of old artifact."
           }
         }
       }
