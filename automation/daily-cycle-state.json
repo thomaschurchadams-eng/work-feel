@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-18",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
       {
@@ -17,6 +17,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html"
       }
     ],
     "status": "in-progress",
@@ -225,7 +229,7 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-18",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
         "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
         "outcomeScope": "cycle",
@@ -268,7 +272,9 @@
             ],
             "observations": "Inspected exact desktop/mobile article header, source link, body, original clay artwork and Home/News lead cards. Supported-card and provider-claim limits are legible; mobile lower body and existing follow/sponsored panels are unobstructed. Matching accessibility, menu, overflow and deliberate artwork 404/recovery checks passed."
           }
-        }
+        },
+        "productionCommit": "3589fdb0c1b13c12fe9b21194fdbe9330d9a9597",
+        "verifiedAt": "2026-11-18T12:58:10.478Z"
       }
     ]
   },
