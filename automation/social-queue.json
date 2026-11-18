@@ -16,7 +16,11 @@
       "trackingStatus": "utm-tagged",
       "imageUrl": "https://creditunionainews.com/assets/harris-financial-application-abandonment.jpg",
       "queuedAt": "2026-11-18T20:25:45.723Z",
-      "lastResult": "Non-sending Watney manual Buffer fallback claim. DO NOT promote or retry. Existing planned status reserves today's slot and is ignored by executor. Await one verified manual delivery and exact receipt reconciliation."
+      "lastResult": "DELIVERED ONCE via Tom-authorized manual Buffer fallback. Buffer Sent inventory rose 80 to 81; matching copy, canonical URL and all UTMs, correct channel and LinkedIn permalink verified in signed-in Safari. UI shows Nov 18, 3:30 PM America/New_York (card AX says 3:29 PM); exact provider postId/sentAt pending next natural secure-operations receipt. Keep planned as non-sending reservation until exact receipt reconciliation. DO NOT promote, resubmit or retry. Original missed slot identity preserved; no automatic-path recovery inferred.",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "channelName": "CreditUnionAI News",
+      "externalLink": "https://www.linkedin.com/feed/update/urn:li:share:7528917475602780161",
+      "reconciliationRequired": true
     },
     {
       "id": "linkedin-ncua-advertising-statement-insurance-sign-2026-11-17",
