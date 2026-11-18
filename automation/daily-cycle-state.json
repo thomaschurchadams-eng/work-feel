@@ -119,8 +119,8 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T12:41:01.176Z",
-    "outcomeSlot": 2,
+    "updatedAt": "2026-11-18T12:43:12.599Z",
+    "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -221,6 +221,17 @@
         },
         "productionCommit": "27a4dd779dbc210d2ee01ef18357c7758ba48967",
         "verifiedAt": "2026-11-18T12:42:25.320Z"
+      },
+      {
+        "slot": 3,
+        "plannedDate": "2026-11-18",
+        "status": "prepared",
+        "candidateTitle": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
+        "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-18T13:13:12.599Z",
+        "nextAction": "Prepare one brief about supported-card rollout and a member-service evidence question; no tested CU functionality or universal availability claim."
       }
     ]
   },
