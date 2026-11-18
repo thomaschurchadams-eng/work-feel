@@ -5589,6 +5589,43 @@
       ],
       "summary": "The single November 17 NCUA advertising-statement LinkedIn item was manually delivered once to the approved CreditUnionAI News company channel and is now fully reconciled without replay: queue item linkedin-ncua-advertising-statement-insurance-sign-2026-11-17 is sent with Buffer post 6afc91dad2540df7ee89a12d, sentAt 2026-11-17T17:42:07.926Z, public share 7528512812684386304, confirmed CUAI UTMs and duplicate=false. The 57-item queue has no duplicate IDs or date conflicts; exactly one sent item exists on each of November 16 and 17, so the one-per-day and five-per-week limits remain intact. Automatic delivery is still degraded, not recovered: the canonical non-sending claim produced zero distribution attempts and required the manual fallback because the complete historical provider inventory could not supply candidate-specific exclusion proof under the existing destination-review hold. This is not a transient connector or scheduler error. Current natural run 44177943337 on main 950fbb1b113d0fd34d653fdf626c750f8f99e6b3 succeeded with verified authentication, production HTTP 200, zero actions/reconciliations/source retries/errors and complete one-page Buffer inventory of 80 sent records; all 80 remain requiresReview. Production dpl_CEy6TE2duH52rW1ySXNdzvN8S6c9 is READY with creditunionainews.com assigned. The homepage, all five articles, Alerts shell and live app.js Alert payload return HTTP 200; the FinCEN Alert slug and first-production timestamp are present. No scheduler retry, provider write, queue mutation, article/Alert cycle, credential/schedule/permission change or PR260 checkpoint activation occurred. Safe durable recovery still requires the existing distribution owner to supply a tested candidate-specific duplicate-clearance contract using authoritative destination evidence, or a separately reviewed privacy-safe reason/provenance diagnostic; manual delivery is not proof of automatic recovery.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-18T13:13:53.521Z",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 18 publisher automation recorded a failed outer run after three verified articles while the exact fourth-slot validation remained active and canonically checkpointed.",
+      "status": "blocked",
+      "incidentKey": "cuai-publishing:daily:2026-11-18",
+      "workUnits": {
+        "scheduledPublisherRunsReviewed": 1,
+        "failedPublisherWrappersObserved": 1,
+        "candidateEvaluationsObserved": 12,
+        "beatsSearchedObserved": 9,
+        "articlesLiveVerified": 3,
+        "pendingValidationCheckpointsObserved": 1,
+        "activeExactHeadValidationRunsObserved": 1,
+        "publicationHistoryEntriesPreserved": 86,
+        "productionDeploymentChecks": 1,
+        "liveSurfaceChecks": 4,
+        "runtimeErrorChecks": 1,
+        "runtimeErrorsObserved": 0,
+        "socialQueueChecks": 1,
+        "socialQueueItemsPreserved": 57,
+        "duplicateSocialReservationsObserved": 0,
+        "publisherRetriesAttempted": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "ChatGPT scheduled-task outcomes"
+      ],
+      "summary": "The November 18 scheduled publisher wrapper started at 2026-11-18T12:36:26.012396Z and recorded failed at 2026-11-18T13:06:30.609358Z, with no current-run result or user-action request. Canonical main 641e04033b0db6c2b38d2edfde6f28201145374b remains internally consistent: three articles are live-verified, 86 history entries are preserved, and slot 4 is pending-validation on PR #376, exact head 6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d, run 44309608621, job 134820012337, attempt 1, with nextReviewAt 2026-11-18T13:32:04.111Z. The GitHub job was still actively executing its rendered interaction, typography and accessibility step; this is not a proven CI failure. Production deployment dpl_D2JaTSMEDwGfCjbGBHr92NLcQaCj is READY on exact main with creditunionainews.com assigned, the homepage and three recorded article surfaces returned HTTP 200, and the available one-hour runtime window had no errors. The 57-item social queue remains unchanged with no duplicate IDs, dates or destinations; no November 18 reservation exists while the publisher is incomplete and the fixed Wednesday slot remains later in the day. Reliability did not rerun the publisher, merge PR #376, inspect/accept its visuals, start slot 5, or touch Buffer: the daily-publisher owns exact artifact/visual acceptance, and an active/unknown external result cannot be retried safely. Safe continuation is the existing daily-publisher resuming the exact persisted checkpoint after terminal CI: inspect the matching artifact and actual visuals, persist validated or technical-failure truthfully, then follow ordinary release/slot rules. The previously reported broad Buffer destination-review degradation is unchanged and was not duplicated as a new incident.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
