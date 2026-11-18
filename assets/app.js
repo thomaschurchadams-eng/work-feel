@@ -117,11 +117,12 @@
     {
       "label": "Cybersecurity / Vendors",
       "headline": "ScreenConnect Incident Prompts Urgent Client and Vendor Checks",
-      "summary": "ConnectWise updated its ScreenConnect incident guidance on November 12 after reports of unauthorized access to partner environments. It directs partners to disable identified third-party extensions and verify every technician client runs version 26.6.5 or later; updating the cloud console does not automatically update those clients. Credit unions should obtain confirmation from internal IT and managed-service providers, including whether their endpoints were exposed. Suspected compromised systems require investigation through separate security tools, preserved logs and session revocation. The roughly 400 environments identified had relevant extensions installed; that figure is not a confirmed compromise count.",
+      "summary": "Source update, November 16: ConnectWise says its ScreenConnect investigation is complete, but protective actions remain required. It reports continued activity targeting on-premises environments where the identified third-party extensions remain enabled and ScreenConnect is not updated. On-premises partners should disable the listed extensions and update ScreenConnect; all partners should verify every technician client runs version 26.6.5 or later. Updating the server alone does not establish client protection. Investigation completion does not mean individual customer environments are unaffected, and software updates or disabled extensions do not remove an existing compromise.",
       "impact": "Credit-union IT, security and vendor-management teams should confirm extension status and technician-client versions with managed-service providers, assess endpoint exposure, and investigate suspected compromise through separate trusted security tools. Client updates and disabled extensions do not remove an existing compromise.",
       "sourceName": "ConnectWise",
       "sourceUrl": "https://www.connectwise.com/company/trust/advisories",
       "date": "Nov 12, 2026",
+      "sourceUpdatedAt": "2026-11-16T20:00:00Z",
       "slug": "screenconnect-incident-client-vendor-checks-november-2026",
       "publishedAt": "2026-11-12T23:52:30.661Z",
       "publicationDeployment": "dpl_At5kB4ubqc34s8EfexVn927ntDVA",
@@ -1277,6 +1278,12 @@
   const renderAlertSourceDate = (item) => {
     const source = parseAlertDate(item);
     const published = getAlertPublication(item);
+    const sourceUpdate = parseAlertDate({ date: item.sourceUpdatedAt });
+    // A rolling source may change after our original publication. Label that
+    // explicitly without changing CUAI chronology or publication freshness.
+    if (sourceUpdate && source && sourceUpdate > source && sourceUpdate.getTime() <= Date.now()) {
+      return ` <span class="alert-source-date">(source updated <time datetime="${sourceUpdate.toISOString()}">${formatAlertDate(sourceUpdate, 'UTC')}</time>)</span>`;
+    }
     if (!source || !published) return '';
     const label = formatAlertDate(source, 'UTC');
     if (label === formatAlertDate(published.date, published.precision === 'instant' ? 'America/New_York' : 'UTC')) return '';
@@ -1330,7 +1337,7 @@
   const archiveAlerts = prepareAlerts(alertsData);
   const preparedAlerts = getRecentAlerts(alertsData);
   const homepageAlerts = getRecentAlerts(alertsData, 3);
-  const tickerAlerts = preparedAlerts;
+  const tickerAlerts = homepageAlerts; // Homepage and ticker both feature only the last 72 hours.
 
   const renderAlertsTicker = () => {
     const header = document.querySelector('.site-header');
