@@ -110,19 +110,28 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T12:09:43.556Z",
+    "updatedAt": "2026-11-18T12:12:17.203Z",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-18",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
         "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T12:34:43.556Z",
-        "nextAction": "Create one exact brief with original art, then record actual CI checkpoint and review its desktop/mobile artifact."
+        "nextReviewAt": "2026-11-18T12:42:17.203Z",
+        "nextAction": "Observe actual terminal design result; inspect matching artifact and mobile/desktop pixels before validated closeout.",
+        "evidence": {
+          "pending": {
+            "prNumber": 373,
+            "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
+            "run": 44301669236,
+            "job": 134792675442,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
