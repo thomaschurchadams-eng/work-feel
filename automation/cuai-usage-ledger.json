@@ -5629,6 +5629,50 @@
       ],
       "summary": "The November 18 scheduled publisher wrapper started at 2026-11-18T12:36:26.012396Z and recorded failed at 2026-11-18T13:06:30.609358Z, with no current-run result or user-action request. The platform exposes no more specific outer failure reason; the approximately 30-minute boundary is observed timing, not proof of an internal timeout. Canonical main 641e04033b0db6c2b38d2edfde6f28201145374b remains internally consistent: three articles are live-verified, 86 history entries are preserved, and slot 4 is pending-validation on PR #376, exact head 6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d, run 44309608621, job 134820012337, attempt 1, with nextReviewAt 2026-11-18T13:32:04.111Z. The GitHub job subsequently completed successfully at 2026-11-18T13:13:30Z and produced artifact 14429739307, digest sha256:c3aafc27da731e1adbe6bacf2628960db9cac5e302ef2ef757089a76bd91a9d3. The released-main read-only helper observed awaiting-visual-review at 2026-11-18T13:14:40.541Z: releaseReady false, canRecordTerminalOutcome true, shouldEscalate false and reviewOverdue false. This is a passed exact-head check, not artifact/visual acceptance or release permission. Production deployment dpl_D2JaTSMEDwGfCjbGBHr92NLcQaCj is READY on exact main with creditunionainews.com assigned, the homepage and three recorded article surfaces returned HTTP 200, and the available one-hour runtime window had no errors. The 57-item social queue remains unchanged with no duplicate IDs, dates or destinations; no November 18 reservation exists while the publisher is incomplete and the fixed Wednesday slot remains later in the day. Reliability did not rerun the publisher, merge PR #376, inspect/accept its visuals, start slot 5, or touch Buffer: the daily-publisher owns exact artifact/visual acceptance, and retrying a content cycle would cross the editorial gate. Safe continuation is the existing daily-publisher resuming this exact persisted checkpoint: verify artifact identity and actual visuals, persist validated or technical-failure truthfully, then follow ordinary release/slot rules. The previously reported broad Buffer destination-review degradation is unchanged and was not duplicated as a new incident.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261118-daily-publisher-01",
+      "timestamp": "2026-11-18T14:00:12.057Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "Continue the existing November18 daily publishing cycle under current-main policy, exact owned checkpoints and sole publisher authority; not a repeated cycle.",
+      "status": "degraded",
+      "incidentKey": "cuai-publishing:daily:2026-11-18",
+      "workUnits": {
+        "uniqueCandidatesEvaluated": 12,
+        "beatsSearched": 9,
+        "articlesPublished": 5,
+        "standardNewsArticles": 5,
+        "editorialRejections": 7,
+        "primaryFunctionsServedToday": 5,
+        "originalArtworksGenerated": 5,
+        "artConceptsScored": 15,
+        "acceptedExactHeadDesignRuns": 5,
+        "acceptedRenderedChecks": 250,
+        "supersededSuccessfulDesignRuns": 1,
+        "supersededRenderedChecks": 50,
+        "failedRefreshDesignRunsPreserved": 1,
+        "productionRevisionsVerified": 5,
+        "publicByteComparisons": 30,
+        "historicalCycleRecordsPreserved": 86,
+        "socialQueueItemsPreserved": 57,
+        "providerInventoryRecordsObserved": 80,
+        "providerReviewFlagsRetained": 80,
+        "socialReservationAttempts": 0,
+        "providerSubmissionAttempts": 0,
+        "missedHighCandidatesRecovered": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public primary announcement/report sources",
+        "Image generation",
+        "Buffer receipts from existing natural operations artifacts only"
+      ],
+      "summary": "Completed the same November18 cycle at canonical closeout80350daa3a72edfefa6577148204aa5908cd1ddd: five distinct Standard News articles for HR/training, marketing/growth, payments/deposits, operations and lending/collections. Each has exact-head passing CI, digest/revision-verified artifact, actual390/1440 screenshot inspection, selected original art and exact READY production/public byte verification. Final source merge767d39537b9c724bf9792ed1d10a1f420867ed73 is READY at dpl_7nXAfZnuxXGAKvhRsf2b4ZXyLzYC. Weekly portfolio now15 stories, nine primary functions and three formats, within actual3/function and2/technology limits. No fallback or additional candidate scan was needed. A concurrent reliability activity-ledger append stopped slot4's original release plan; source refresh preserved that evidence. Its first unmerged refresh failed a history regression because of parent order; actual failure was recorded, then canonical-main-first-parent replacement passed fresh full CI/rendered/visual gates. All original pass/failure/checkpoint receipts retained. A transient readback error after slot4 closeout was reconciled against the one known stored commit; no write or publication replay. All85 old history rows plus the prior completed November17 cycle remain exact; all57 social queue rows, media/policy/Alert assets remain unchanged. Natural source-merge run44318914710 attempt1/artifact14433598458 was verified with zero actions/reconciliations/errors; complete same-channel inventory at13:57:17.235Z contained80 sent records, all80 flagged for destination review. The five current-week useful-Standard candidates were compared; the read-only selector nominated Harris application abandonment, not provider clearance. Every candidate remains hold-provider-review; no reservation/submission or bypass of legacy/active/American Heritage holds. Existing paused/unpublished media and immutable planned reservation retained; house campaign not used to evade holds. Local Chromium executable remains absent with unchanged cache; the already-approved isolated exact-head fallback provided article acceptance, not proof of local runtime repair. Reliability's observed failed outer scheduled wrapper is preserved; completion by this same-conversation continuation does not establish independently scheduled unattended acceptance. Engagement effects are not yet measured; no usage/cost estimate invented.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
