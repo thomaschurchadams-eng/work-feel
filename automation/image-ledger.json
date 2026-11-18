@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "macro-still-life",
+      "subject": "financial-object-study",
+      "composition": "overhead-flat-lay",
+      "perspective": "overhead",
+      "palette": "plum-gold",
+      "lighting": "natural-window-light",
+      "texture": "polished-metal",
+      "scene": "An unmarked calculation notebook beside a small mechanical timer",
+      "topicFit": 94,
+      "editorialClarity": 94,
+      "score": 68.4,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 94,
+        "editorialClarity": 94
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "openai-astra-sol-token-price-review-cost",
+      "articleUrl": "/news/openai-astra-sol-token-price-review-cost.html",
+      "imagePath": "/assets/openai-astra-sol-token-price-review-cost.jpg",
+      "publishedAt": "2026-11-18T08:00:56-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "composition": "overhead-flat-lay",
+          "perspective": "overhead",
+          "palette": "plum-gold",
+          "lighting": "natural-window-light",
+          "texture": "polished-metal",
+          "scene": "An unmarked calculation notebook beside a small mechanical timer",
+          "topicFit": 94,
+          "editorialClarity": 94,
+          "score": 68.4,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 94,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "isometric",
+          "palette": "monochrome-ink",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Unlabelled blocks representing generation and review work",
+          "topicFit": 76,
+          "editorialClarity": 78,
+          "score": 67,
+          "metrics": {
+            "novelty": 57,
+            "topicFit": 76,
+            "editorialClarity": 78
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "documents-and-controls",
+          "composition": "asymmetric-editorial",
+          "perspective": "through-glass",
+          "palette": "emerald-cream",
+          "lighting": "diffused-overcast",
+          "texture": "frosted-glass",
+          "scene": "A public report viewed through a translucent sheet",
+          "topicFit": 77,
+          "editorialClarity": 79,
+          "score": 53.2,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 77,
+            "editorialClarity": 79
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "09bbee7744ad048188114aac7dc88ea192853d01d5bbee15eedd57e0e94ec4a4"
+    },
+    {
       "medium": "architectural-isometric",
       "subject": "human-machine-handoff",
       "composition": "layered-depth",
