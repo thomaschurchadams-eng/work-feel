@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "microsoft-hr-profile-attribute-sharing",
+      "title": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
+      "url": "/news/microsoft-hr-profile-attribute-sharing.html",
+      "publishedAt": "2026-11-18T07:10:52-05:00",
+      "section": "news",
+      "beat": "microsoft-hr-profile-attribute-sharing",
+      "functions": [
+        "hr-training"
+      ],
+      "technologies": [
+        "workforce-learning"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "HR and Training leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-employee-coaching-scorecard.html",
+        "/insight-credit-union-ai-workforce-plan.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Official release notes establish settings and visibility, not a credit-union deployment or proof that any particular tenant has the feature."
+    },
+    {
       "id": "ncua-associational-common-bond-membership",
       "title": "NCUA Changes How Federal Credit Unions Can Add Associations",
       "url": "/news/ncua-associational-common-bond-membership.html",
