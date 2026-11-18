@@ -223,3 +223,21 @@ test('date display is concise, source dates stay honest, and same-day attributio
   assert.match(policy, /verify the live date display before marking the Alert cycle complete/);
   assert.match(policy, /do not replay publication to obtain a date/);
 });
+
+
+test('rolling source updates do not redate a CUAI Alert or refresh publication eligibility', () => {
+  const h = harness();
+  const row = {headline:'Rolling source',date:'Nov 1, 2026',publishedAt:'2026-11-02T12:00:00Z',publicationEvidence:'https://example.test/receipt',sourceUpdatedAt:'2026-11-10T20:00:00Z'};
+  assert.match(h.read('renderAlertDates('+JSON.stringify(row)+')'), /Published.*Nov 2, 2026/);
+  assert.match(h.read('renderAlertSourceDate('+JSON.stringify(row)+')'), /source updated.*Nov 10, 2026/);
+  assert.equal(h.read('getRecentAlerts('+JSON.stringify([row])+',3).length'),0);
+  for (const sourceUpdatedAt of ['2026-11-12T20:00:00Z','invalid','2026-10-31']) {
+    assert.doesNotMatch(h.read('renderAlertSourceDate('+JSON.stringify({...row,sourceUpdatedAt})+')'),/source updated/);
+  }
+  const actual=h.read("alertsData.find(item=>item.slug==='screenconnect-incident-client-vendor-checks-november-2026')");
+  assert.equal(actual.date,'Nov 12, 2026');
+  assert.equal(actual.publishedAt,'2026-11-12T23:52:30.661Z');
+  assert.match(actual.publicationEvidence,/issuecomment-6839436157$/);
+  assert.equal(actual.sourceUpdatedAt,'2026-11-16T20:00:00Z');
+  assert.match(actual.summary,/investigation is complete, but protective actions remain required/);
+});
