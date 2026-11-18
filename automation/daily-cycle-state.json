@@ -140,7 +140,7 @@
       }
     ],
     "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:41:33.727Z",
+    "updatedAt": "2026-11-18T13:44:28.310Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -407,13 +407,22 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-18",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
         "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T14:11:33.727Z",
-        "nextAction": "Prepare attributed November17 named-CU research/call-planning adoption brief; no independently verified usage, accuracy or lending outcomes."
+        "nextReviewAt": "2026-11-18T14:14:28.310Z",
+        "nextAction": "Observe actual terminal design result; inspect matching artifact and mobile/desktop pixels before validated closeout.",
+        "evidence": {
+          "pending": {
+            "prNumber": 378,
+            "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
+            "run": 44316770112,
+            "job": 134844842796,
+            "runAttempt": 1
+          }
+        }
       }
     ]
   },
