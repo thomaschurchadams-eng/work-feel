@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "bls-financial-activities-jobs-october-2026",
+      "title": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
+      "url": "/news/bls-financial-activities-jobs-october-2026.html",
+      "publishedAt": "2026-11-19T07:37:08-05:00",
+      "section": "news",
+      "beat": "bls-financial-activities-jobs-october-2026",
+      "functions": [
+        "hr-training"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "HR and Training leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/microsoft-hr-profile-attribute-sharing.html",
+        "/news/financial-firms-ai-skills-pay-promotion.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "National seasonally adjusted CES industry employment, not CU-specific jobs or occupations; latest two months preliminary. November18 recap of October data, not a newly released monthly employment report or evidence of AI causality."
+    },
+    {
       "id": "ecb-ai-shared-supplier-concentration",
       "title": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
       "url": "/news/ecb-ai-shared-supplier-concentration.html",
