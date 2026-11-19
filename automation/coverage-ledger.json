@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "cornerstone-small-business-workflow-primary-account",
+      "title": "Small-Business Research Separates the Primary Account From the Daily Workflow",
+      "url": "/news/cornerstone-small-business-workflow-primary-account.html",
+      "publishedAt": "2026-11-19T08:17:07-05:00",
+      "section": "news",
+      "beat": "cornerstone-small-business-workflow-primary-account",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor Management leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/vantage-west-ai-navigator-business-member-research.html",
+        "/news/commonwealth-personalized-offers-business-deposits.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "November17 Cornerstone research announcement, commissioned by Fiserv, not an independent CU implementation or conversion study. CUInsight copy datedNovember18. Full report and complete methods not retrieved; stated conditional intent is not observed consolidation."
+    },
+    {
       "id": "microsoft-security-agent-availability-controls",
       "title": "Microsoft Separates Available Security Agents From Preview Controls",
       "url": "/news/microsoft-security-agent-availability-controls.html",
