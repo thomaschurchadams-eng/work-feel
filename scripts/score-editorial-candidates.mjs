@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import cadence from '../lib/daily-cycle-guards.cjs';
 import path from 'node:path';
 import discovery from '../lib/editorial-discovery.cjs';
 
@@ -83,8 +84,7 @@ const scored=candidates.map((candidate)=>{
 }).sort((a,b)=>b.score-a.score);
 
 const selected=[];
-const weekday = new Intl.DateTimeFormat('en-US', {weekday:'long', timeZone:'America/New_York'}).format(now);
-const coreTarget = rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0;
+const coreTarget = cadence.articleDayTarget(rules.standardCycle, today);
 const extraRules = rules.standardCycle.optionalExtras;
 const dailyMaximum = !coreTarget ? 0 : extraRules && today < extraRules.effectiveDate ? extraRules.previousMaximumPerWeekday : rules.standardCycle.fullArticleMaximumPerWeekday;
 for(const candidate of scored.filter((c)=>!c.rejected)){

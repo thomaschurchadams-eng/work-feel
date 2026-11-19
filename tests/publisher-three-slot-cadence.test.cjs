@@ -37,6 +37,8 @@ function fixture(t, initial = fresh()) {
   git('config', 'commit.gpgsign', 'false'); git('config', 'core.hooksPath', path.join(dir, 'empty-hooks'));
   fs.mkdirSync(path.join(dir, 'automation')); fs.mkdirSync(path.join(dir, 'scripts'));
   fs.copyFileSync(path.join(root, 'scripts/report-publisher-slots.mjs'), path.join(dir, 'scripts/report-publisher-slots.mjs'));
+  fs.mkdirSync(path.join(dir, 'lib'));
+  fs.copyFileSync(path.join(root, 'lib/daily-cycle-guards.cjs'), path.join(dir, 'lib/daily-cycle-guards.cjs'));
   fs.writeFileSync(path.join(dir, 'automation/publishing-rules.json'), JSON.stringify(rules));
   let value = copy(initial);
   const write = next => fs.writeFileSync(path.join(dir, stateFile), JSON.stringify(next));
@@ -97,7 +99,7 @@ function fill(f, number) {
 test('prospective rules are five each weekday, twenty-five full week, same bounded research and social cap', () => {
   assert.deepEqual(Object.values(rules.standardCycle.fullArticleTargetByWeekday), [5, 5, 5, 5, 5]);
   assert.equal(rules.standardCycle.fullArticleMaximumPerWeekday, 7);
-  assert.equal(rules.weeklyTargets.siteStoriesMax, 35); assert.equal(rules.weeklyTargets.linkedinPosts, 5);
+  assert.equal(rules.weeklyTargets.siteStoriesMax, 35); assert.equal(rules.weeklyTargets.linkedinPosts, 7);
   assert.equal(rules.standardCycle.minimumCandidatesToEvaluate, 12); assert.equal(rules.standardCycle.minimumDistinctBeatsToSearch, 6);
   const before = JSON.parse(execFileSync('git', ['show', '2445fa393c5291e12a840d7f57bbc83a162ba8a8:automation/publishing-rules.json'], { cwd: root }));
   assert.deepEqual(rules.standardCycle.fallbackOrder, before.standardCycle.fallbackOrder);
@@ -158,7 +160,7 @@ test('earlier pending slot blocks later package and a batch cannot invent the ea
   f.reject(prepared(f.state, 3), /earlier article slot/, 'cannot advance behind pending validation');
   f.reject(prepared(completed(f.state, 2), 3), /only one sequential|earlier article slot/, 'cannot batch earlier success with next preparation');
 });
-test('eighth article is rejected with or without slot metadata; ordinary weekends are rejected', t => {
+test('eighth article is rejected with or without slot metadata; pre-activation weekends remain closed', t => {
   const f = fixture(t); for (let n = 1; n <= 7; n++) fill(f, n);
   f.reject(prepared(f.state, 8), /weekday article maximum/, 'eighth structured article');
   const untracked = f.state; untracked.current.publications.push({ type: 'article', url: url(8) }); untracked.current.fullArticleCount++;
@@ -223,10 +225,20 @@ test('current-main rollover preserves complete actual history and stale concurre
   const bad = f.state; bad.history.find(day => day.date === '2026-11-09').regularPublicationSlots[0].evidence.validationHistory = [];
   f.reject(bad, /mutated existing history/, 'cannot erase actual failed moving-date receipt');
 });
-test('report uses dynamic five-slot weekday targets and zero weekend targets without retroactive obligation', t => {
+test('new weekend days pass exact article admission; Alerts still fail closed on the weekend', t => {
+  for (const date of ['2026-11-21', '2026-11-22']) {
+    const f = fixture(t, fresh(date));
+    fill(f, 1);
+    const next = f.state; next.current.publications.push({type:'alert',url:'/alerts.html#weekend'}); next.current.alertCount++;
+    f.reject(next, /weekend Alert/, 'no new weekend Alerts');
+  }
+});
+test('report uses dynamic five-slot daily targets only on eligible dates', t => {
   const f = fixture(t); let total = 0;
   for (const date of ['2026-11-16', '2026-11-17', '2026-11-18', '2026-11-19', '2026-11-20']) { const report = f.report(f.state, date); assert.equal(report.intended, 5); total += report.intended; }
-  assert.equal(total, 25); for (const date of ['2026-11-21', '2026-11-22']) assert.equal(f.report(f.state, date).intended, 0);
+  assert.equal(total, 25);
+  for (const date of ['2026-11-21', '2026-11-22']) { const report = f.report(f.state, date); assert.equal(report.intended, 5); assert.equal(report.maximum, 7); }
+  for (const date of ['2026-11-14', '2026-11-15']) assert.equal(f.report(f.state, date).intended, 0);
   assert.match(f.report(actual, '2026-11-09').basis, /not retrospective obligations/);
 });
 test('report classifies prepared/approval/pre-validation stages and never gives a held slot a later publication', t => {
@@ -238,7 +250,7 @@ test('report classifies prepared/approval/pre-validation stages and never gives 
   assert.equal(report.slots[0].unfilledReason, 'Existing approval has not changed.'); assert.equal(report.slots[1].unfilledReason, 'Browser preflight unavailable.');
   assert.ok(report.slots.every(s => s.liveUrl === null));
 });
-test('three eligible articles still share one social reservation and five weekly posts through actual capacity code', () => {
+test('three eligible articles still share one reservation; historical five-per-week capacity remains unchanged', () => {
   const articles = [1, 2, 3].map(n => ({ id: `fixture-${n}`, eligible: true, classification: ['Standard', 'High', 'Library'][n - 1], canonicalUrl: `https://creditunionainews.com/news/cadence-fixture-${n}.html` }));
   const input = { date: '2026-11-10', queue: [], articles, editorialOrder: articles.map(a => ({ canonicalUrl: a.canonicalUrl, rationale: `Isolated usefulness comparison for ${a.id}` })), now: Date.parse('2026-11-10T12:00:00Z') };
   assert.equal(selectSlot({ ...input, editorialOrder: undefined }).status, 'needs-editorial-selection');

@@ -38,7 +38,7 @@ Every persistent role must read the goals file before acting on agent-bus work. 
 
 ## Persistent roles
 
-- `daily-publisher` — owns the weekday article cycle and bounded eligible LinkedIn distribution under `automation/scheduled-tasks/publish-cuai-daily-article.md`.
+- `daily-publisher` — owns the article cycle and bounded eligible LinkedIn distribution under `automation/scheduled-tasks/publish-cuai-daily-article.md`.
 - `cuai-ceo` — retired standalone scheduled management role; retained as a compatibility receipt destination under the lifecycle clarification above.
 - `reliability-watch` — owns operational failure detection, safe recovery, stale-handoff detection, and duplicate/conflict detection.
 - `specialist:<name>` — temporary delegated subagent; not a persistent role.
@@ -99,7 +99,7 @@ At the start of each material CEO run, identify the most constrained current goa
 
 The daily publisher remains independently responsible for editorial qualification and production safety.
 
-At the end of each material weekday run, post a `handoff` event to `cuai-ceo` containing only: relevant `goalId` when applicable, publication/non-publication outcome, classification, functional audience, live URL when applicable, validation/deployment state, LinkedIn decision/status, material measurement or coverage note, and exact blocker if any.
+At the end of each material article run, post a `handoff` event to `cuai-ceo` containing only: relevant `goalId` when applicable, publication/non-publication outcome, classification, functional audience, live URL when applicable, validation/deployment state, LinkedIn decision/status, material measurement or coverage note, and exact blocker if any.
 
 If the CEO assigns a topic, audience, measurement check, or candidate investigation, treat it as an input to selection—not an instruction to publish. The publisher may reject it under the authoritative publishing gates and should report why.
 
