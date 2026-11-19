@@ -33,7 +33,7 @@ test('one twelve-candidate budget and practical synthesis selection are enforced
 });
 test('the normal selector rejects missing receipt and over-budget input; optional choices require value evidence',t=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'cuai-discovery-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
- for(const file of ['scripts/score-editorial-candidates.mjs','lib/editorial-discovery.cjs','automation/publishing-rules.json','automation/source-registry.json','automation/editorial-taxonomy.json']){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.copyFileSync(path.join(root,file),path.join(dir,file));}
+ for(const file of ['scripts/score-editorial-candidates.mjs','lib/editorial-discovery.cjs','lib/daily-cycle-guards.cjs','automation/publishing-rules.json','automation/source-registry.json','automation/editorial-taxonomy.json']){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.copyFileSync(path.join(root,file),path.join(dir,file));}
  const settings=structuredClone(rules);settings.standardCycle.optionalExtras.effectiveDate='2026-01-01';fs.writeFileSync(path.join(dir,'automation/publishing-rules.json'),JSON.stringify(settings));
  fs.writeFileSync(path.join(dir,'automation/coverage-ledger.json'),JSON.stringify({articles:[]}));
  const functions=require('../automation/editorial-taxonomy.json').functions;

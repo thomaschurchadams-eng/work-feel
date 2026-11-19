@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import cadence from '../lib/daily-cycle-guards.cjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -16,7 +17,7 @@ const rules = read('publishing-rules.json');
 const state = read('daily-cycle-state.json');
 const coverage = read('coverage-ledger.json');
 const exception = rules.standardCycle.oneTimeException;
-const intended = date === exception?.date ? exception.baselineArticleCount + exception.additionalArticleMaximum : (rules.standardCycle.fullArticleTargetByWeekday[weekday] ?? 0);
+const intended = date === exception?.date ? exception.baselineArticleCount + exception.additionalArticleMaximum : cadence.articleDayTarget(rules.standardCycle, date);
 const daily = [state.current, ...state.history].find(entry => entry?.date === date);
 const tracked = daily?.regularPublicationSlots ?? [];
 const extras = rules.standardCycle.optionalExtras;
@@ -62,4 +63,4 @@ const slots = Array.from({ length: observedSlots }, (_, index) => {
     evidence: fact?.evidence ?? null
   };
 });
-console.log(JSON.stringify({ date, weekday, timezone: zone, intended, maximum, optionalNotSelected, basis: 'Current prospective weekday targets; not retrospective obligations or permission to reopen closed cycles. Optional capacity is not a quota or shortfall. No publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));
+console.log(JSON.stringify({ date, weekday, timezone: zone, intended, maximum, optionalNotSelected, basis: 'Current prospective article targets; not retrospective obligations or permission to reopen closed cycles. Optional capacity is not a quota or shortfall. No publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));

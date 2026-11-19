@@ -13,8 +13,14 @@
     "channelId": "6a53df0880cc80cdcaa76fb8",
     "channelName": "CreditUnionAI News",
     "maximumPerDay": 1,
-    "maximumPerWeek": 5,
+    "maximumPerWeek": 7,
     "weekStarts": "Monday",
+    "weekendSlots": {
+      "effectiveDate": "2026-11-21",
+      "previousMaximumPerWeek": 5,
+      "Saturday": "12:30",
+      "Sunday": "12:30"
+    },
     "x": {
       "status": "blocked",
       "reason": "identity-and-authorized-routing-unverified"
