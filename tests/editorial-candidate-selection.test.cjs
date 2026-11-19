@@ -9,7 +9,7 @@ function fixture(t) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'cuai-candidates-'));
   t.after(() => fs.rmSync(dir, {recursive:true, force:true}));
   fs.mkdirSync(path.join(dir,'lib')); fs.mkdirSync(path.join(dir,'scripts')); fs.mkdirSync(path.join(dir,'automation'));
-  for(const file of ['scripts/score-editorial-candidates.mjs','automation/editorial-taxonomy.json','automation/publishing-rules.json','automation/source-registry.json','lib/editorial-discovery.cjs']) fs.copyFileSync(path.join(root,file),path.join(dir,file));
+  for(const file of ['scripts/score-editorial-candidates.mjs','automation/editorial-taxonomy.json','automation/publishing-rules.json','automation/source-registry.json','automation/daily-cycle-state.json','automation/growth-strategy.json','lib/editorial-discovery.cjs','lib/adaptive-admission.cjs']) fs.copyFileSync(path.join(root,file),path.join(dir,file));
   return (rows, articles = []) => {
     fs.writeFileSync(path.join(dir,'automation/coverage-ledger.json'),JSON.stringify({articles}));
     fs.writeFileSync(path.join(dir,'candidates.json'),JSON.stringify(rows));

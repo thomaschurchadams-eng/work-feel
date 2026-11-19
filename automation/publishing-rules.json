@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "mode": "automatic-production",
   "humanApprovalRequired": false,
   "weeklyTargets": {
@@ -102,7 +102,8 @@
       "previousMaximumPerWeekday": 5,
       "required": false,
       "selectionRule": "After all five core articles are live, the same publisher may select at most two genuinely strong, distinct extras from the same twelve-candidate pool. Prefer useful analysis, practical multi-source guides and underserved topics; never manufacture an extra or repeat a story. Record concrete source-backed value and distinction in evidence.optionalSelection. All editorial, concentration, history, exact-head and sequential live gates remain. Do not reopen a completed cycle.",
-      "unselectedRule": "An unselected sixth or seventh is optional-not-selected, never a missing quota, shortfall or permission to catch up. Once prepared, an optional package retains its real checkpoint/blocker and owner until resolved."
+      "unselectedRule": "An unselected sixth or seventh is optional-not-selected, never a missing quota, shortfall or permission to catch up. Once prepared, an optional package retains its real checkpoint/blocker and owner until resolved.",
+      "admissionRule": "Use the normal receipt-bearing selector after canonical core live acceptances. Fresh snapshot-bound operatingEvidence must show owned incident review and verified remaining resources. Unknown evidence yields zero optional capacity, without changing the core target or labeling unselected extras a failure. An unresolved serious article incident stops discretionary admission immediately; retain existing checkpoints and recovery ownership. No cycle is reopened."
     }
   },
   "expansionReview": {
@@ -111,7 +112,7 @@
     "reviewAfterCompletedWeeks": 2,
     "target": "25 core qualified articles per full week plus at most ten optional extras; siteStoriesMax 35 is an outer ceiling, not a target. Unchanged function/technology/format concentration gates may yield a lower feasible total. No backfill obligation.",
     "formatRule": "Aim for at least three formats and five functions per week. At most two framework/checklist articles combined per week absent a recorded material-news exception. No rigid topic quota and no padding.",
-    "nextStage": "Any further volume increase requires a new owner decision; no automatic escalation.",
+    "nextStage": "Use the controlling operating policy and selector --review-admission to recommend only one prospective limit step from actual comparable work, qualified unmet demand, known usage/cost, independent review and rollback evidence. A recorded authorization is not verified authority or activation: the existing owner must verify its exact scope, consumer compatibility and applicable release approval. No automatic cap, model, schedule or permission mutation.",
     "continueCriteria": "Review actual qualified output, held and failed slots, corrections, breadth, production correctness, existing usage and available engagement after two completed weeks. Do not infer capacity or source supply from synthetic tests. No new recurring spend.",
     "stopOrRevise": "Stop later packages on unresolved material sourcing/deployment failures, permission blocks or exhausted existing usage; preserve all completed packages and owned checkpoints. Record explicit reasons for unfilled slots, diagnose repeated capacity/source shortfalls, and never add scans, spend, schedules or weaker gates to fill the target."
   }
