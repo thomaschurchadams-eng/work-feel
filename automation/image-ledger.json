@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "architectural-isometric",
+      "subject": "architecture-and-infrastructure",
+      "composition": "layered-depth",
+      "perspective": "cutaway",
+      "palette": "amber-charcoal",
+      "lighting": "warm-practical",
+      "texture": "matte-clay",
+      "scene": "Several separate small service buildings depend on one shared underground utility hub",
+      "topicFit": 95,
+      "editorialClarity": 94,
+      "score": 61.6,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 95,
+        "editorialClarity": 94
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "ecb-ai-shared-supplier-concentration",
+      "articleUrl": "/news/ecb-ai-shared-supplier-concentration.html",
+      "imagePath": "/assets/ecb-ai-shared-supplier-concentration.jpg",
+      "publishedAt": "2026-11-19T07:13:38-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "architecture-and-infrastructure",
+          "composition": "layered-depth",
+          "perspective": "cutaway",
+          "palette": "amber-charcoal",
+          "lighting": "warm-practical",
+          "texture": "matte-clay",
+          "scene": "Several separate small service buildings depend on one shared underground utility hub",
+          "topicFit": 95,
+          "editorialClarity": 94,
+          "score": 61.6,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 95,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "composition": "foreground-background-tension",
+          "perspective": "macro",
+          "palette": "emerald-cream",
+          "lighting": "natural-window-light",
+          "texture": "polished-metal",
+          "scene": "Three different plugs reveal a shared power strip beneath distinct service cards",
+          "topicFit": 88,
+          "editorialClarity": 89,
+          "score": 58.5,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 88,
+            "editorialClarity": 89
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "physical-metaphor",
+          "composition": "layered-depth",
+          "perspective": "low-angle",
+          "palette": "burgundy-sand",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Several branching trunks share a single visible root",
+          "topicFit": 81,
+          "editorialClarity": 83,
+          "score": 48,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 81,
+            "editorialClarity": 83
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "996c6f9a59d44c400f9b3746aaf32385de80226c503eeef0353e06dd8812804e"
+    },
+    {
       "medium": "refined-data-abstraction",
       "subject": "abstract-data-system",
       "composition": "modular-grid",

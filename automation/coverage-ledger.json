@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "ecb-ai-shared-supplier-concentration",
+      "title": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
+      "url": "/news/ecb-ai-shared-supplier-concentration.html",
+      "publishedAt": "2026-11-19T07:13:38-05:00",
+      "section": "news",
+      "beat": "ecb-ai-shared-supplier-concentration",
+      "functions": [
+        "board-strategy"
+      ],
+      "technologies": [
+        "generative-ai"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Board and Strategy leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/fsb-frontier-ai-cyber-risk-financial-system.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "ECB euro-area comparative analysis, not a US credit-union rule or a measurement of any CU's supplier exposure. Illustrative dependency scenario is hypothetical."
+    },
+    {
       "id": "vantage-west-ai-navigator-business-member-research",
       "title": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
       "url": "/news/vantage-west-ai-navigator-business-member-research.html",
