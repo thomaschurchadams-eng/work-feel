@@ -331,19 +331,28 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T12:10:36.190Z",
+    "updatedAt": "2026-11-19T12:15:13.328Z",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-19",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
         "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T12:40:36.191Z",
-        "nextAction": "Prepare one qualified atomic article package; exact-head CI, actual visual review and verified production remain required."
+        "nextReviewAt": "2026-11-19T12:40:13.328Z",
+        "nextAction": "Observe actual terminal exact-head result; inspect matching artifact and desktop/mobile pixels before acceptance.",
+        "evidence": {
+          "pending": {
+            "prNumber": 389,
+            "head": "2a103516a68247924ca34832796e3d66e72f07fa",
+            "run": 44522091487,
+            "job": 135553034227,
+            "runAttempt": 1
+          }
+        }
       }
     ],
     "socialDecision": "not-reserved-provider-review",
