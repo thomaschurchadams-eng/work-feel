@@ -1,0 +1,22 @@
+.page-sponsorships .offer-intro { max-width: 43rem; }
+.page-sponsorships .sponsorships-hero .sponsor-email { white-space: normal; text-align: center; }
+.page-sponsorships .offer-grid { display: grid; gap: 1.2rem; margin-top: 1.7rem; }
+.page-sponsorships .offer-grid--core { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.page-sponsorships .offer-grid--extras { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.page-sponsorships .offer-sample { background: var(--off-white, #f1f5f8); border-block: 1px solid #dce4ea; }
+.page-sponsorships .offer-sample .eyebrow { color: #874b28; }
+.page-sponsorships .offer-sample-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: center; gap: clamp(1rem, 5vw, 4rem); }
+.page-sponsorships .offer-figure { margin: 0; }
+.page-sponsorships .offer-mock { overflow: hidden; border: 1px solid #b8c8d6; border-radius: .9rem; background: white; box-shadow: 0 12px 30px #16334b15; }
+.page-sponsorships .offer-mock-top { background: #112a3c; color: white; padding: .65rem 1rem; font-weight: 700; font-size: .85rem; }
+.page-sponsorships .offer-mock-image { width: 100%; aspect-ratio: 2.7; object-fit: cover; display: block; }
+.page-sponsorships .offer-mock-body { padding: 1rem 1.2rem; }
+.page-sponsorships .offer-mock-label { display: inline-flex; background: #ddf3ed; color: #164c42; border-radius: .25rem; padding: .2rem .5rem; font-weight: 700; font-size: .8rem; }
+.page-sponsorships .offer-mock-title { margin-block: .5rem .25rem; color: var(--navy-deep,#10283b); font-weight: 800; font-size: 1.25rem; line-height: 1.3; }
+.page-sponsorships .offer-mock-link { display: inline-block; color: #28574d; margin-top: .55rem; font-weight: 700; }
+.page-sponsorships .offer-figure figcaption { font-size: .88rem; margin-top: .6rem; }
+.page-sponsorships .offer-editorial { margin-top: 1.8rem; border-inline-start: 3px solid #19796c; padding: .35rem 1rem; }
+.page-sponsorships .sponsor-contact { margin-inline: 0; }
+@media (max-width: 760px) {
+  .page-sponsorships :is(.offer-grid--core, .offer-grid--extras, .offer-sample-layout) { grid-template-columns: minmax(0,1fr); }
+}
