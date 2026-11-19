@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "corda-appli-calculator-rate-updates",
+      "title": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
+      "url": "/news/corda-appli-calculator-rate-updates.html",
+      "publishedAt": "2026-11-19T08:45:38-05:00",
+      "section": "news",
+      "beat": "corda-appli-calculator-rate-updates",
+      "functions": [
+        "marketing-growth"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing and Growth leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/credit-union-colorado-ai-auto-loan-pricing.html",
+        "/news/raiz-digital-account-opening-case-study.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "November18 supplier announcement, not independent outcome testing. No quantified conversion results, technical AI description or exact launch day; calculator not inspected here."
+    },
+    {
       "id": "cornerstone-small-business-workflow-primary-account",
       "title": "Small-Business Research Separates the Primary Account From the Daily Workflow",
       "url": "/news/cornerstone-small-business-workflow-primary-account.html",
