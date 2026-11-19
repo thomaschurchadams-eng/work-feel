@@ -6,536 +6,769 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "fullArticleCount": 5,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
-        "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html"
+        "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html"
       },
       {
         "type": "article",
-        "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html"
+        "url": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html"
       },
       {
         "type": "article",
-        "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html"
+        "url": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html"
       },
       {
         "type": "article",
-        "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html"
+        "url": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html"
       },
       {
         "type": "article",
-        "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html"
+        "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html"
       }
     ],
     "status": "completed",
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "hr-training",
-      "marketing-growth",
-      "payments-deposits",
-      "operations",
-      "lending-collections",
-      "risk-compliance",
-      "it-data-cybersecurity",
-      "finance-treasury",
-      "vendor-management"
+      "regulation-policy",
+      "security-fraud",
+      "credit-union-industry",
+      "financial-reporting",
+      "payments-core-fintech",
+      "ai-research-platforms",
+      "regional-cu-primary",
+      "workforce-household-data",
+      "international-comparisons"
     ],
     "candidateEvaluations": [
       {
-        "title": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
-        "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
-        "score": 83.6,
+        "title": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
+        "sourceUrl": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/special/html/ecb.fsrart202611_01~dd6e15a84a.el.html",
+        "score": 76.9,
         "status": "qualified",
-        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        "reason": "Source-backed distinct current brief accepted editorially; supplier claims remain attributed and unknown outcomes remain unknown.",
+        "scoreInputs": {
+          "confidence": 0.92,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 82,
+            "creditUnionRelevance": 86,
+            "coverageGap": 35,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
-        "sourceUrl": "https://www.cuinsight.com/press-release/only-1-in-10-americans-who-abandon-an-online-financial-application-return-to-the-same-institution-harris-poll-finds/",
-        "score": 73.5,
+        "title": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
+        "sourceUrl": "https://www.bls.gov/opub/ted/2026/payroll-employment-increased-by-885000-from-october-2025-to-october-2026.htm",
+        "score": 76.6,
         "status": "qualified",
-        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        "reason": "Source-backed distinct current brief accepted editorially; supplier claims remain attributed and unknown outcomes remain unknown.",
+        "scoreInputs": {
+          "confidence": 0.96,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 72,
+            "creditUnionRelevance": 82,
+            "coverageGap": 48.99484536082474,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
-        "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-        "score": 73.3,
-        "status": "qualified",
-        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        "title": "Fed Minutes Describe AI Financing Risks",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+        "score": 73.9,
+        "status": "rejected",
+        "reason": "Official source search provides excerpts, but direct official minutes/release body retrieval failed. Not accepting complete financial-policy framing from secondary or cached fragments alone.",
+        "scoreInputs": {
+          "confidence": 0.78,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 87,
+            "creditUnionRelevance": 84,
+            "coverageGap": 11.666666666666666,
+            "originality": 100,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
-        "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-        "score": 72.6,
+        "title": "Small-Business Research Separates the Primary Account From the Daily Workflow",
+        "sourceUrl": "https://www.cuinsight.com/press-release/new-cornerstone-advisors-research-finds-financial-institutions-still-own-small-business-relationships-but-fintechs-own-increasingly-more-of-the-work/",
+        "score": 72,
         "status": "qualified",
-        "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        "reason": "Source-backed distinct current brief accepted editorially; supplier claims remain attributed and unknown outcomes remain unknown.",
+        "scoreInputs": {
+          "confidence": 0.84,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 76,
+            "creditUnionRelevance": 91,
+            "coverageGap": 17.5,
+            "originality": 85,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
-        "sourceUrl": "https://www.cuinsight.com/press-release/vantage-west-credit-union-becomes-first-credit-union-to-adopt-ai-navigator/",
-        "score": 71.3,
+        "title": "Microsoft Separates Available Security Agents From Preview Controls",
+        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+        "score": 70.7,
         "status": "qualified",
-        "reason": "Qualified after correcting relative source-date label to exact November17 metadata. Named-CU announcement establishes attributable deployment, not independently verified operating or lending outcomes.",
-        "sourcePublishedAt": "2026-11-17T16:12:35+00:00",
+        "reason": "Source-backed distinct current brief accepted editorially; supplier claims remain attributed and unknown outcomes remain unknown.",
+        "scoreInputs": {
+          "confidence": 0.92,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 80,
+            "creditUnionRelevance": 87,
+            "coverageGap": 17.5,
+            "originality": 85,
+            "sourceQuality": 100,
+            "urgency": 68.66198046875
+          }
+        }
+      },
+      {
+        "title": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
+        "sourceUrl": "https://www.cuinsight.com/press-release/credit-union-keeps-65-rates-current-daily-with-applis-ai-powered-calculators/",
+        "score": 70.6,
+        "status": "qualified",
+        "reason": "Source-backed distinct current brief accepted editorially; supplier claims remain attributed and unknown outcomes remain unknown.",
         "scoreInputs": {
           "confidence": 0.86,
           "sourceTier": 1,
           "metrics": {
-            "newsworthiness": 78,
-            "creditUnionRelevance": 93,
-            "coverageGap": 5,
-            "originality": 86,
+            "newsworthiness": 72,
+            "creditUnionRelevance": 88,
+            "coverageGap": 11.666666666666666,
+            "originality": 94,
             "sourceQuality": 100,
-            "urgency": 88.81111183449075
+            "urgency": 81.16198046875
           }
         }
       },
       {
-        "title": "NCUA Chairman Discusses AI and Staffing at Budget Hearing",
-        "sourceUrl": "https://ncua.gov/newsroom/speech/2026/ncua-chairman-john-crews-statements-2026-budget-hearing",
-        "score": 69.5,
+        "title": "Addition Financial Chooses Illuma Voice Security",
+        "sourceUrl": "https://illuma.cx/press-release/addition-financial-credit-union-partners-with-illuma-modernize-voice-interactions/",
+        "score": 69,
         "status": "rejected",
-        "reason": "Existing AI-supervision budget story covers the proposed investment, and primary risk-compliance weekly cap is already reached."
+        "reason": "Same vendor/authentication selection and prospective benefits closely repeat November17 Cobalt coverage; no material new local performance or control evidence.",
+        "scoreInputs": {
+          "confidence": 0.86,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 64,
+            "creditUnionRelevance": 84,
+            "coverageGap": 17.5,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "Credit Union HR eSchool Includes Responsible AI and Accommodations",
-        "sourceUrl": "https://www.americascreditunions.org/events-training/eschool/hr-professional-eschool-2026/pricing",
-        "score": 65.7,
+        "title": "Anthropic Prices Its Initial Public Offering",
+        "sourceUrl": "https://www.anthropic.com/news/announcements",
+        "score": 64.8,
         "status": "rejected",
-        "reason": "Training-event promotion is not independent evidence of a new workplace practice or outcomes."
+        "reason": "Corporate financing news does not establish a CU product, contract or operating change; do not infer safety or service continuity from valuation.",
+        "scoreInputs": {
+          "confidence": 0.9,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 80,
+            "creditUnionRelevance": 50,
+            "coverageGap": 17.5,
+            "originality": 94,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "Claude Linked Billing Beta Lets App Customers Pay Their API Usage",
-        "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
-        "score": 61,
+        "title": "BLS Reports Fewer Employer-Reported Workplace Injuries",
+        "sourceUrl": "https://www.bls.gov/news.release/archives/osh_11182026.htm",
+        "score": 64.3,
         "status": "rejected",
-        "reason": "Developer-beta billing mechanics lack a specific evidenced CU deployment or stronger procurement consequence."
+        "reason": "Broad private-industry total lacks sufficient CU-specific exposure or a stronger distinct staff operating implication for this bounded edition.",
+        "scoreInputs": {
+          "confidence": 0.95,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 57,
+            "creditUnionRelevance": 43,
+            "coverageGap": 48.99484536082474,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "Cloudflare Reports Resolved Turnstile Verification Incident",
-        "sourceUrl": "https://www.cloudflarestatus.com/history?page=1",
-        "score": 60.6,
+        "title": "myCUmortgage Recognizes Conference Award Winners",
+        "sourceUrl": "https://www.cuinsight.com/press-release/credit-unions-and-mortgage-originators-receive-top-honors-during-the-2026-mycumortgage-partner-conference/",
+        "score": 52.9,
         "status": "rejected",
-        "reason": "Status history establishes a provider incident, not a credit-union outage or common cyber cause; sufficient distinctive CU operating impact is unverified."
+        "reason": "Awards/promotional release, October event and prior measurement period; not consequential new operating evidence.",
+        "scoreInputs": {
+          "confidence": 0.9,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 25,
+            "creditUnionRelevance": 52,
+            "coverageGap": 11.666666666666666,
+            "originality": 100,
+            "sourceQuality": 100,
+            "urgency": 81.16198046875
+          }
+        }
       },
       {
-        "title": "SAFE Promotes Mortgage Rate Discounts Into New Year",
-        "sourceUrl": "https://www.cuinsight.com/press-release/safe-cu-offers-rate-discounts-on-30-year-fixed-jumbo-adjustable-rate-mortgages-and-refinance-loans/",
-        "score": 58,
+        "title": "Merger Votes and Service Cutovers Are Different Milestones",
+        "sourceUrl": "https://www.becuandsafe.org/",
+        "score": 52.4,
         "status": "rejected",
-        "reason": "Promotion-only rate offer without independently reviewed complete eligibility/loan-cost terms."
+        "reason": "Practical synthesis assessed, but current Ascend/LGE reporting already distinguishes legal and systems milestones. Distinct multi-source operating evidence for a nonduplicative guide is not established; do not manufacture a Library fallback.",
+        "scoreInputs": {
+          "confidence": 0.78,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 40,
+            "creditUnionRelevance": 81,
+            "coverageGap": 5,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 0
+          }
+        }
       },
       {
-        "title": "Claude Desktop Adds Stable and Latest Release Channels",
-        "sourceUrl": "https://support.claude.com/en/articles/12138966-release-notes",
-        "score": 57.8,
+        "title": "BECU and SAFE Report Member Support While Approval Remains Pending",
+        "sourceUrl": "https://www.becuandsafe.org/",
+        "score": 49.6,
         "status": "rejected",
-        "reason": "Routine client-update control without enough additional CU impact for a standalone article."
-      },
-      {
-        "title": "FedGlobal Posts Daily Mexican Peso Exchange Rate",
-        "sourceUrl": "https://www.frbservices.org/resources/financial-services/fedglobal-ach-payments-foreign-exchange-rates/",
-        "score": 48.1,
-        "status": "rejected",
-        "reason": "Routine daily rate is not a material change to payment service terms."
+        "reason": "Older update; source page also contains an earlier approval milestone that must not be mistaken for current completion. No new final approval independently established.",
+        "scoreInputs": {
+          "confidence": 0.8,
+          "sourceTier": 1,
+          "metrics": {
+            "newsworthiness": 55,
+            "creditUnionRelevance": 80,
+            "coverageGap": 5,
+            "originality": 54,
+            "sourceQuality": 100,
+            "urgency": 0
+          }
+        }
       }
     ],
-    "fallbackEvaluations": [],
-    "updatedAt": "2026-11-18T13:58:57.737Z",
+    "fallbackEvaluations": [
+      {
+        "format": "multi-source Insight",
+        "status": "not-qualified",
+        "reason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
+      }
+    ],
+    "discoveryCoverage": {
+      "date": "2026-11-19",
+      "candidateCount": 12,
+      "beatsSearched": [
+        "regulation-policy",
+        "security-fraud",
+        "credit-union-industry",
+        "financial-reporting",
+        "payments-core-fintech",
+        "ai-research-platforms",
+        "regional-cu-primary",
+        "workforce-household-data",
+        "international-comparisons"
+      ],
+      "directions": [
+        {
+          "id": "regional-cu-leagues-regulators",
+          "queryOrRead": "Reviewed Corda/Appli Iowa calculator announcement and BECU/SAFE member-vote/approval milestones; independently checked NCUA deadline extension for an existing-article Update.",
+          "observedAt": "2026-11-19T12:07:49Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.cuinsight.com/press-release/credit-union-keeps-65-rates-current-daily-with-applis-ai-powered-calculators/",
+            "https://www.becuandsafe.org/"
+          ]
+        },
+        {
+          "id": "function-problem",
+          "queryOrRead": "Reviewed business-account workflow research and Microsoft security-agent availability/preview boundaries against current function and technology coverage.",
+          "observedAt": "2026-11-19T12:07:49Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.cuinsight.com/press-release/new-cornerstone-advisors-research-finds-financial-institutions-still-own-small-business-relationships-but-fintechs-own-increasingly-more-of-the-work/",
+            "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/"
+          ]
+        },
+        {
+          "id": "independent-data-research",
+          "queryOrRead": "Read BLS November18 payroll recap of October annual employment changes; compared broad workplace-injury release and sponsor-funded small-business research methods/limits.",
+          "observedAt": "2026-11-19T12:07:49Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.bls.gov/opub/ted/2026/payroll-employment-increased-by-885000-from-october-2025-to-october-2026.htm",
+            "https://www.bls.gov/news.release/archives/osh_11182026.htm"
+          ]
+        },
+        {
+          "id": "international-comparisons",
+          "queryOrRead": "Read ECB November financial-stability AI analysis for upstream supplier concentration; euro-area jurisdiction is explicit and no foreign rule or exposure is attributed to US credit unions.",
+          "observedAt": "2026-11-19T12:07:49Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/special/html/ecb.fsrart202611_01~dd6e15a84a.el.html"
+          ]
+        },
+        {
+          "id": "practical-synthesis",
+          "queryOrRead": "Assessed merger legal-approval versus systems-cutover operating guide against BECU/SAFE milestone evidence and existing Ascend/LGE coverage; also evaluated shared-upstream dependency explanation as a current-event brief, not a new durable guide.",
+          "observedAt": "2026-11-19T12:07:49Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.becuandsafe.org/",
+            "https://creditunionainews.com/news/ascend-lge-credit-union-merger-approvals-systems.html",
+            "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/special/html/ecb.fsrart202611_01~dd6e15a84a.el.html"
+          ]
+        }
+      ],
+      "practicalSynthesis": {
+        "question": "Which evidence distinguishes legal merger approval from a maintainable member-service cutover?",
+        "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
+      }
+    },
+    "updatedAt": "2026-11-19T16:52:11.883Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-18",
+        "plannedDate": "2026-11-19",
         "status": "live-verified",
-        "candidateTitle": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
-        "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
+        "candidateTitle": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
+        "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T12:42:17.203Z",
-        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
-        "evidence": {
-          "pending": {
-            "prNumber": 373,
-            "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
-            "run": 44301669236,
-            "job": 134792675442,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
-            "run": 44301669236,
-            "job": 134792675442,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-18T12:24:43.148Z",
-            "prNumber": 373
-          },
-          "terminalAcceptance": {
-            "prNumber": 373,
-            "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
-            "run": 44301669236,
-            "job": 134792675442,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-18T12:24:44.532Z",
-            "artifactId": 14426302972,
-            "artifactSha256": "sha256:d4eeec898238f62170a506279a4adb68f912ea74993c69496cd20286281a840a",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Reviewed actual exact mobile/desktop article, hero and source links, plus Home and News lead cards. Header, November 18 date, full off-default/guest-visibility deck and body are legible and unobstructed. Matching route results have no accessibility, overflow or unexpected-image errors; intentional 404/recovery passed."
-          }
-        },
-        "productionCommit": "a859080949103682ab4314c1ebd27dadcbcb7cd5",
-        "verifiedAt": "2026-11-18T12:26:00.034Z"
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-18",
-        "status": "live-verified",
-        "candidateTitle": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
-        "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T12:59:00.543Z",
-        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
-        "evidence": {
-          "pending": {
-            "prNumber": 374,
-            "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
-            "run": 44304322141,
-            "job": 134801818294,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
-            "run": 44304322141,
-            "job": 134801818294,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-18T12:40:59.781Z",
-            "prNumber": 374
-          },
-          "terminalAcceptance": {
-            "prNumber": 374,
-            "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
-            "run": 44304322141,
-            "job": 134801818294,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-18T12:41:01.176Z",
-            "artifactId": 14427786896,
-            "artifactSha256": "sha256:44e4a8cd9bd0eba4df5c92d572500ff24a653e939852da7170d5c23f465ad719",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Reviewed exact 390/1440 article, image, Home and News cards and lower mobile body. Date, source links and self-report denominator limits are visible; paragraph hierarchy and related/follow/sponsored panels are unobstructed. Matching accessibility, menu, overflow and normal/404/recovery artwork checks passed."
-          }
-        },
-        "productionCommit": "27a4dd779dbc210d2ee01ef18357c7758ba48967",
-        "verifiedAt": "2026-11-18T12:42:25.320Z"
-      },
-      {
-        "slot": 3,
-        "plannedDate": "2026-11-18",
-        "status": "live-verified",
-        "candidateTitle": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
-        "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T13:16:19.841Z",
-        "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
-        "evidence": {
-          "pending": {
-            "prNumber": 375,
-            "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
-            "run": 44307091649,
-            "job": 134811338746,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
-            "run": 44307091649,
-            "job": 134811338746,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-18T12:56:41.461Z",
-            "prNumber": 375
-          },
-          "terminalAcceptance": {
-            "prNumber": 375,
-            "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
-            "run": 44307091649,
-            "job": 134811338746,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-18T12:56:42.660Z",
-            "artifactId": 14429446643,
-            "artifactSha256": "sha256:316a0f3c6e90e36e897917a122581024fb1339c62e9933604232cc1ba56433e6",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Inspected exact desktop/mobile article header, source link, body, original clay artwork and Home/News lead cards. Supported-card and provider-claim limits are legible; mobile lower body and existing follow/sponsored panels are unobstructed. Matching accessibility, menu, overflow and deliberate artwork 404/recovery checks passed."
-          }
-        },
-        "productionCommit": "3589fdb0c1b13c12fe9b21194fdbe9330d9a9597",
-        "verifiedAt": "2026-11-18T12:58:10.478Z"
-      },
-      {
-        "slot": 4,
-        "plannedDate": "2026-11-18",
-        "status": "live-verified",
-        "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
-        "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T13:54:54.067Z",
-        "nextAction": "Completed: exact production verified; do not replay.",
+        "nextReviewAt": "2026-11-19T12:47:07.251Z",
+        "nextAction": "Completed and verified; do not replay this article.",
         "evidence": {
           "validationHistory": [
             {
-              "prNumber": 376,
-              "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
-              "run": 44309608621,
-              "job": 134820012337,
+              "prNumber": 389,
+              "head": "2a103516a68247924ca34832796e3d66e72f07fa",
+              "run": 44522091487,
+              "job": 135553034227,
               "runAttempt": 1,
               "status": "superseded",
-              "observedAt": "2026-11-18T13:20:17.232Z",
+              "observedAt": "2026-11-19T12:18:32.344Z",
               "terminalValidation": {
-                "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
-                "run": 44309608621,
-                "job": 134820012337,
-                "runAttempt": 1,
-                "conclusion": "success",
-                "runConclusion": "success",
-                "jobConclusion": "success",
-                "observedAt": "2026-11-18T13:17:56.874Z",
-                "prNumber": 376
-              },
-              "terminalAcceptance": {
-                "prNumber": 376,
-                "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
-                "run": 44309608621,
-                "job": 134820012337,
-                "runAttempt": 1,
-                "visualReviewedAt": "2026-11-18T13:17:58.351Z",
-                "artifactId": 14429739307,
-                "artifactSha256": "sha256:c3aafc27da731e1adbe6bacf2628960db9cac5e302ef2ef757089a76bd91a9d3",
-                "renderedChecks": 50,
-                "failedChecks": 0,
-                "viewports": [
-                  390,
-                  1440
-                ],
-                "observations": "Personally inspected all seven actual artifact crops: Home and News 390/1440 cards, article 390/1440, lower mobile body. No clipping, crop, typography or spacing issue. Visible $1.20/$0.30 example and $8/$40, $2/$10 rates match checked arithmetic; subscription, provider claims, hypothetical and reviewer-time limitations clear. Source links and follow/related panels readable; automated exact-head accessibility/navigation/artwork gates passed."
-              },
-              "reason": "Concurrent reliability activity-ledger append requires fresh exact-head review."
-            },
-            {
-              "prNumber": 376,
-              "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
-              "run": 44312662006,
-              "job": 134830537082,
-              "runAttempt": 1,
-              "status": "superseded",
-              "observedAt": "2026-11-18T13:24:54.067Z",
-              "terminalValidation": {
-                "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
-                "run": 44312662006,
-                "job": 134830537082,
+                "head": "2a103516a68247924ca34832796e3d66e72f07fa",
+                "run": 44522091487,
+                "job": 135553034227,
                 "runAttempt": 1,
                 "conclusion": "failure",
                 "runConclusion": "failure",
                 "jobConclusion": "failure",
-                "observedAt": "2026-11-18T13:24:16.467Z",
-                "prNumber": 376
+                "observedAt": "2026-11-19T12:16:45.204Z"
               },
-              "reason": "Failed unmerged refresh has noncanonical first-parent state jump; rebuilt with current canonical main as first parent, preserving prior branch ancestry."
+              "reason": "Generated article shell corrected on changed head; no failed result erased."
             }
           ],
           "pending": {
-            "prNumber": 376,
-            "head": "d491415837553d75273510682af71bcc10a55904",
-            "run": 44313447670,
-            "job": 134833244746,
+            "prNumber": 389,
+            "head": "7bd56ad17a495ade157831de097268e147baa9cb",
+            "run": 44522645819,
+            "job": 135554941811,
             "runAttempt": 1
           },
           "terminalValidation": {
-            "head": "d491415837553d75273510682af71bcc10a55904",
-            "run": 44313447670,
-            "job": 134833244746,
+            "head": "7bd56ad17a495ade157831de097268e147baa9cb",
+            "run": 44522645819,
+            "job": 135554941811,
             "runAttempt": 1,
             "conclusion": "success",
             "runConclusion": "success",
             "jobConclusion": "success",
-            "observedAt": "2026-11-18T13:38:02.391Z",
-            "prNumber": 376
+            "observedAt": "2026-11-19T12:32:05.014Z",
+            "prNumber": 389
           },
           "terminalAcceptance": {
-            "prNumber": 376,
-            "head": "d491415837553d75273510682af71bcc10a55904",
-            "run": 44313447670,
-            "job": 134833244746,
+            "prNumber": 389,
+            "head": "7bd56ad17a495ade157831de097268e147baa9cb",
+            "run": 44522645819,
+            "job": 135554941811,
             "runAttempt": 1,
-            "visualReviewedAt": "2026-11-18T13:38:03.829Z",
-            "artifactId": 14431414569,
-            "artifactSha256": "sha256:e612021408c74dc42ca6e5ff0acf2296bff689b292c164295518ad70e56cc8d0",
+            "visualReviewedAt": "2026-11-19T12:32:07.251Z",
+            "artifactId": 14529741734,
+            "artifactSha256": "sha256:20efd1e557ba03884c2d094a76787d042d1c378eb600544810262ec734d0e5cf",
             "renderedChecks": 50,
             "failedChecks": 0,
             "viewports": [
               390,
               1440
             ],
-            "observations": "Personally reviewed seven actual crops regenerated from artifact 14431414569 for head d491415837553d75273510682af71bcc10a55904: Home/News 390 and1440, article390/1440 and lower mobile. Cards/title/deck and original art correct, no clipping. Visible pricing figures and illustrative arithmetic accurate; API/subscription, provider-claim and review-time caveats clear. Source/related/follow panels readable; exact accessibility/navigation/artwork normal-error-recovery gates passed. This is new-head acceptance, not reuse of old artifact."
+            "observations": "Personally reviewed exact artifact article top/body/lower, Home/News lead cards and actual404 card screenshots at390/1440. Title/date/hero/source link clear; euro-area versus US distinction and hypothetical example visible; no clipping or asset substitution. Actual route accessibility/menu and artwork normal404recovery checks passed. Same owner reviewed generated content; no second editorial reviewer is claimed."
           }
         },
-        "productionCommit": "0965518bb523d5ec368d6971e191e48667205e0b",
-        "verifiedAt": "2026-11-18T13:39:26.187Z"
+        "productionCommit": "21f32414432b029e2c7f41af3b815d73ac8549ee",
+        "verifiedAt": "2026-11-19T12:34:07.817Z"
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-19",
+        "status": "live-verified",
+        "candidateTitle": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
+        "url": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-19T13:05:03.692Z",
+        "nextAction": "Completed and verified; do not replay.",
+        "evidence": {
+          "pending": {
+            "prNumber": 390,
+            "head": "e9015898ccbc7305650a8ba74d814bca8d196886",
+            "run": 44525598399,
+            "job": 135565203373,
+            "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e9015898ccbc7305650a8ba74d814bca8d196886",
+            "run": 44525598399,
+            "job": 135565203373,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-19T12:50:01.738Z",
+            "prNumber": 390
+          },
+          "terminalAcceptance": {
+            "prNumber": 390,
+            "head": "e9015898ccbc7305650a8ba74d814bca8d196886",
+            "run": 44525598399,
+            "job": 135565203373,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-19T12:50:03.692Z",
+            "artifactId": 14532515573,
+            "artifactSha256": "sha256:d97650d33e9748c622866f611635d9f2509a037b0113f4d44a1708735797c25f",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally inspected exact article top/body/table/lower and Home/News cards at390/1440, plus actual missing-image card screenshots. Signed figures and October2025–October2026 period are readable, November18 recap distinct from November19 publication, preliminary/CU-specific/AI-causality limits explicit. No clipping, broken normal assets or placeholder substitution; exact accessibility/menu and artwork recovery gates passed. Same-owner visual review, not a claimed second editorial reviewer."
+          }
+        },
+        "productionCommit": "b02c3c19762f1486bbc17086987eb1631941c838",
+        "verifiedAt": "2026-11-19T12:51:33.555Z"
+      },
+      {
+        "slot": 3,
+        "plannedDate": "2026-11-19",
+        "status": "live-verified",
+        "candidateTitle": "Microsoft Separates Available Security Agents From Preview Controls",
+        "url": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-19T13:25:55.670Z",
+        "nextAction": "Completed and verified; no replay.",
+        "evidence": {
+          "pending": {
+            "prNumber": 391,
+            "head": "58dbdf61e7ce36c265d823ddda57addad9320990",
+            "run": 44528336385,
+            "job": 135574743818,
+            "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "58dbdf61e7ce36c265d823ddda57addad9320990",
+            "run": 44528336385,
+            "job": 135574743818,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-19T13:10:53.654Z",
+            "prNumber": 391
+          },
+          "terminalAcceptance": {
+            "prNumber": 391,
+            "head": "58dbdf61e7ce36c265d823ddda57addad9320990",
+            "run": 44528336385,
+            "job": 135574743818,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-19T13:10:55.670Z",
+            "artifactId": 14533515908,
+            "artifactSha256": "sha256:4013357dc1638056dc2415fb2322583432ce51beefacd4214479cb5eb9f29352",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact390/1440 Home/News cards, article headline/body/table/lower and actual404 cards. GA, preview and January2027 preview labels are distinct/readable; source dateNovember17 differs honestly from publicationNovember19. Licensing, hypothetical device-isolation and unverified-CU-effectiveness limits visible. Original art fits; no clipping; exact navigation/accessibility and normal404recovery checks passed. Same-owner review, no second editorial reviewer claimed."
+          }
+        },
+        "productionCommit": "b192e7ed17bbdb1204318f6dae242239e4113214",
+        "verifiedAt": "2026-11-19T13:12:45.690Z"
+      },
+      {
+        "slot": 4,
+        "plannedDate": "2026-11-19",
+        "status": "live-verified",
+        "candidateTitle": "Small-Business Research Separates the Primary Account From the Daily Workflow",
+        "url": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-19T13:53:43.339Z",
+        "nextAction": "Merge accepted exact revision, verify actual production and public bytes before live closeout.",
+        "evidence": {
+          "editorialQualification": {
+            "sourceDateCheck": "Original Cornerstone PRNewswire release verified November17,2026 08:41ET; CUInsight republished copy dated November18. Use original November17 in the article, not a new November18 study claim.",
+            "originalSourceUrl": "https://www.prnewswire.com/news-releases/new-cornerstone-advisors-research-finds-financial-institutions-still-own-small-business-relationships-but-fintechs-own-increasingly-more-of-the-work-302941863.html",
+            "sourceLimit": "Fiserv-commissioned survey announcement; full report not retrieved; no CU-specific subgroup, response rate, weighting or fieldwork dates established here."
+          },
+          "pending": {
+            "prNumber": 392,
+            "head": "86539cd8fe3ca5d4c1b8c86f36e50dd42f3cb910",
+            "run": 44531987617,
+            "job": 135587414561,
+            "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "86539cd8fe3ca5d4c1b8c86f36e50dd42f3cb910",
+            "run": 44531987617,
+            "job": 135587414561,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-19T13:38:41.271Z",
+            "prNumber": 392
+          },
+          "terminalAcceptance": {
+            "prNumber": 392,
+            "head": "86539cd8fe3ca5d4c1b8c86f36e50dd42f3cb910",
+            "run": 44531987617,
+            "job": 135587414561,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-19T13:38:43.339Z",
+            "artifactId": 14534294642,
+            "artifactSha256": "sha256:fa8d208858c92943609c27eeaf06c64b7f469ce60310086789d1057cd03276e1",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally inspected exact artifact Home/News cards and article headline/date/deck/body/limitations/related coverage at 390/1440; artwork crop coherent, legible and unlettered; no clipping or overlap. Viewed missing-artwork 404 text-only recovery at both widths. Actual accessibility/navigation/error JSON reports zero failures; source and conditional survey intent clearly separated."
+          }
+        },
+        "productionCommit": "b569458909b9d84755beb01657380f487805f036",
+        "verifiedAt": "2026-11-19T13:41:38.353Z"
       },
       {
         "slot": 5,
-        "plannedDate": "2026-11-18",
+        "plannedDate": "2026-11-19",
         "status": "live-verified",
-        "candidateTitle": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
-        "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
+        "candidateTitle": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
+        "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-18T14:14:28.310Z",
-        "nextAction": "Completed: exact production verified and five-slot target recorded. Do not replay. LinkedIn remains held pending existing destination/duplicate-clearance recovery.",
+        "nextReviewAt": "2026-11-19T14:17:54.880Z",
+        "nextAction": "Merge accepted exact revision, verify actual production and public bytes before live closeout.",
         "evidence": {
+          "editorialQualification": {
+            "sourceUrl": "https://www.cuinsight.com/press-release/credit-union-keeps-65-rates-current-daily-with-applis-ai-powered-calculators/",
+            "sourceDate": "2026-11-18",
+            "classification": "Standard",
+            "confidence": 0.86,
+            "score": 70.6,
+            "sourceLimit": "Appli-authored release includes named Corda marketing account, not independent testing. No conversion, funded-loan, savings or refresh-failure measurements; launch day unspecified. Outside-field activity is not membership eligibility."
+          },
           "pending": {
-            "prNumber": 378,
-            "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
-            "run": 44316770112,
-            "job": 134844842796,
+            "prNumber": 393,
+            "head": "23392289726b29b9f16505fc90f6a8a700cfa9c3",
+            "run": 44536722010,
+            "job": 135603982474,
             "runAttempt": 1
           },
           "terminalValidation": {
-            "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
-            "run": 44316770112,
-            "job": 134844842796,
+            "head": "23392289726b29b9f16505fc90f6a8a700cfa9c3",
+            "run": 44536722010,
+            "job": 135603982474,
             "runAttempt": 1,
             "conclusion": "success",
             "runConclusion": "success",
             "jobConclusion": "success",
-            "observedAt": "2026-11-18T13:56:13.158Z",
-            "prNumber": 378
+            "observedAt": "2026-11-19T14:02:52.290Z",
+            "prNumber": 393
           },
           "terminalAcceptance": {
-            "prNumber": 378,
-            "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
-            "run": 44316770112,
-            "job": 134844842796,
+            "prNumber": 393,
+            "head": "23392289726b29b9f16505fc90f6a8a700cfa9c3",
+            "run": 44536722010,
+            "job": 135603982474,
             "runAttempt": 1,
-            "visualReviewedAt": "2026-11-18T13:56:14.474Z",
-            "artifactId": 14432948237,
-            "artifactSha256": "sha256:f60e96c128ba2255e9f709eb2ae4dc7cfb05272ed5693391ab54cfa4a87adb18",
+            "visualReviewedAt": "2026-11-19T14:02:54.880Z",
+            "artifactId": 14536319200,
+            "artifactSha256": "sha256:5286a99c0223920efa9cb3eefaa02e409d9accf52b3bcb88d49657640d23858c",
             "renderedChecks": 50,
             "failedChecks": 0,
             "viewports": [
               390,
               1440
             ],
-            "observations": "Personally inspected seven actual crops from artifact14432948237 for bb3272d0946e63bd967efa92305b1db43e6dd285: Home/News cards at390/1440, article390/1440, lower mobile. Title, deck and monochrome research art fit without clipping. November18 publication and linked November17 announcement clearly distinct. Attributable deployment, unverified performance limits and expressly hypothetical entity-matching example readable. Source link, related/follow/sponsor panels clear; exact route/accessibility/navigation/image normal404recovery checks passed."
+            "observations": "Personally inspected exact-artifact Home/News lead cards and article headline/date/deck/body/lower/related panels at390/1440, plus actual missing-artwork text-only recovery screenshots. Conceptual linocut crop fits without clipping; November18 supplier announcement is distinct from November19 publication, lack of measured conversion and untested refresh reliability explicit. Hypothetical delayed-refresh scenario is clearly not a reported Corda failure. Exact normal404recovery, accessibility, navigation and error checks passed. Same-owner visual review, not a second editorial reviewer."
           }
         },
-        "productionCommit": "767d39537b9c724bf9792ed1d10a1f420867ed73",
-        "verifiedAt": "2026-11-18T13:57:33.851Z"
+        "productionCommit": "58d141f2bfb1533e32c1c64503aff140f58ff2ec",
+        "verifiedAt": "2026-11-19T14:04:44.183Z"
       }
     ],
     "socialDecision": "not-reserved-provider-review",
-    "socialDistribution": {
-      "status": "not-reserved",
-      "blocker": "Complete authenticated company reservationInventory contains80 retained sent records, all80 require destination review. No candidate-specific exclusion proof clears today's five articles; their current-week dates and useful Standard classification do not clear duplicate holds.",
-      "inventoryArtifactId": 14433598458,
-      "inventoryObservedAt": "2026-11-18T13:57:17.235Z",
-      "inventoryCommit": "767d39537b9c724bf9792ed1d10a1f420867ed73",
-      "inventoryRecordCount": 80,
-      "inventoryReviewCount": 80,
-      "activeProviderRecordsObserved": 0,
-      "providerReservationAttempted": false,
-      "providerSubmissionAttempts": 0,
-      "inventoryUse": "Dated complete read-only observation, not a60-second reservation admission or future clearance.",
-      "editorialNomination": "harris-financial-application-abandonment",
-      "nominationScope": "read-only editorial usefulness comparison only",
-      "editorialConsideration": [
-        {
-          "slot": 2,
-          "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html",
-          "decision": "hold-provider-review",
-          "reason": "Strongest cross-functional practical usefulness: funding and identity friction informs acquisition work; nationally surveyed people, not a CU conversion estimate. Distinct audience from this week's two regulatory manual sends. Editorial nomination only, not provider duplicate clearance."
-        },
-        {
-          "slot": 1,
-          "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
-          "decision": "hold-provider-review",
-          "reason": "Specific opt-in/default and attribute visibility change gives underserved HR/IT readers a concrete review question; no deployment or exposure at a credit union is inferred. Editorial usefulness does not remove provider holds."
-        },
-        {
-          "slot": 5,
-          "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
-          "decision": "hold-provider-review",
-          "reason": "Named CU adoption and a clear business-member preparation workflow; narrower relationship-team audience and no measured outcomes. Current source date independently checked. No candidate-specific historical exclusion proof."
-        },
-        {
-          "slot": 3,
-          "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
-          "decision": "hold-provider-review",
-          "reason": "Concrete payments relevance and new provider availability, but rollout and support constraints limit the audience; evidence questions are hypothetical, not a legal or deployed-CU result. Provider clearance remains independent."
-        },
-        {
-          "slot": 4,
-          "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
-          "decision": "hold-provider-review",
-          "reason": "Checked standard-rate arithmetic offers operations value; accepted-deliverable cost comparison is proposed, not a benchmark or a measured saving. Lower distribution priority than the more broadly useful acquisition and HR developments; provider holds remain."
-        }
-      ],
-      "otherPoolDecisions": {
-        "missedHigh": "No qualifying unrepresented High article in prior seven days.",
-        "media": "Existing October20 planned chart reservation retained unchanged; unpublished/unverified media and paused production not promoted.",
-        "library": "No newly qualified Library selection; current-news pool cleared five articles; no automatic backlog fill.",
-        "houseCampaign": "Not used to escape the same provider review hold."
-      },
-      "sharedCaps": "one weekday post/day; five/week; unchanged fixed times and immutable reservations",
-      "naturalRun": {
-        "id": 44318914710,
-        "attempt": 1,
-        "actions": 0,
-        "reconciliations": 0,
-        "errors": 0
-      }
-    },
     "browserReadiness": {
       "localStatus": "missing-browser-executable",
-      "observedAt": "2026-11-18T12:05:07.269Z",
+      "observedAt": "2026-11-19T11:58:30.819Z",
       "cacheChanged": false,
       "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
-      "fallback": "Existing isolated exact-head design-checks artifacts, actual390/1440 screenshot inspection and exact production byte verification for all5 articles",
-      "acceptedRenderedChecks": 250,
-      "localRecoveryProven": false
+      "fallback": "Five exact-head isolated CI artifacts, own390/1440 pixel review and exact production article/hero/News/Home/app/styles byte checks. Local executable still absent; cache isolation/root cause unproven.",
+      "localRecoveryProven": false,
+      "acceptedRenderedChecks": 250
+    },
+    "candidateReassessments": [
+      {
+        "candidateTitle": "Fed Minutes Describe AI Financing Risks",
+        "observedAt": "2026-11-19T13:43:08.467Z",
+        "status": "held-source-access",
+        "reason": "At the next selection boundary, independently opened the newly supplied official October28 minutes HTML and PDF. Both returned Internal Error/not accessible from this source reader. Parent evidence is not our full primary-body inspection; original rejection retained. No denial bypass or new candidate scan.",
+        "sourceUrls": [
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+          "https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20261028.pdf"
+        ]
+      }
+    ],
+    "optionalSelection": {
+      "decision": "none-qualified",
+      "coreLiveCount": 5,
+      "selected": [],
+      "candidatePoolCount": 12,
+      "selectorObservedAt": "2026-11-19T14:06:03.262Z",
+      "maximum": 7,
+      "reason": "Actual normal receipt-bearing selector returned no extra after five live publications. Remaining candidates retain source/distinctness holds. Slots6/7 are optional-not-selected, not shortfall."
+    },
+    "socialDistribution": {
+      "status": "not-reserved",
+      "blocker": "Complete authenticated company reservationInventory has81 retained sent records; all81 require destination review. No current candidate-specific exclusion proof clears today's five stories. Expired NYFed proof is not renewed.",
+      "inventoryArtifactId": 14538975156,
+      "inventoryArtifactSha256": "df0d47b8d8fb633f71be7857757c18579f2334c7ca33e9b40533b7033e9019cf",
+      "inventoryObservedAt": "2026-11-19T14:04:14.660Z",
+      "inventoryCommit": "58d141f2bfb1533e32c1c64503aff140f58ff2ec",
+      "channelId": "6a53df0880cc80cdcaa76fb8",
+      "inventoryComplete": true,
+      "inventoryRecordCount": 81,
+      "inventoryReviewCount": 81,
+      "activeProviderRecordsObserved": 0,
+      "inventoryUse": "Dated paginated observation, not an atomic slot guarantee or60-second admission. No automatic renewal.",
+      "providerReservationAttempted": false,
+      "providerSubmissionAttempts": 0,
+      "editorialNomination": "ecb-concentration",
+      "nominationScope": "Read-only complete reasoned usefulness comparison only, not provider clearance.",
+      "editorialConsideration": [
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html",
+          "rationale": "Most useful board-level comparison: two nominal suppliers can share one upstream dependency. Explicit euro-area source and US-CU limits; no exposure figure or mandate transferred. Nomination only, provider review holds remain.",
+          "priority": 1,
+          "decision": "hold-provider-review"
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html",
+          "rationale": "Concrete feature-level GA/preview distinction for IT/security decisions, with unverified efficacy and licensing limits. Narrower audience than board-wide dependency mapping; not a test or implementation endorsement.",
+          "priority": 2,
+          "decision": "hold-provider-review"
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html",
+          "rationale": "Separates primary account from operational workflow for business-service decisions. Sponsor-funded conditional intent and incomplete methods limit outcome claims; no CU deposit forecast.",
+          "priority": 3,
+          "decision": "hold-provider-review"
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html",
+          "rationale": "Serves underserved HR with national sector context; annual/preliminary aggregation cannot explain CU staffing or AI effects. Less immediate operating change than the leading control stories.",
+          "priority": 4,
+          "decision": "hold-provider-review"
+        },
+        {
+          "canonicalUrl": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html",
+          "rationale": "Named-CU input-maintenance implementation offers marketing utility, but supplier release and absent measured conversion/reliability results narrow its distribution merit. Existing provider holds independently remain.",
+          "priority": 5,
+          "decision": "hold-provider-review"
+        }
+      ],
+      "otherPoolDecisions": {
+        "missedHigh": "Actual query found no qualifying High article in prior seven days.",
+        "media": "Actual mediaPrepared returned no eligible asset. Old October planned/scheduled reservations unchanged; no paused-media restart.",
+        "library": "No new multi-source Library synthesis cleared.",
+        "houseCampaign": "Not used to escape provider review."
+      },
+      "currentWeekFreshness": "All five original CUAI publication dates are November19, inside current Eastern week. Manual date qualification, not a claim of released freshness code.",
+      "sharedCaps": "One weekday post/day; five/week; Thursday11:30ET unchanged. Three verified earlier manual company sends this week retained, not automated recovery.",
+      "naturalRun": {
+        "id": 44539696178,
+        "attempt": 1,
+        "actions": 0,
+        "reconciliations": 0,
+        "sourceRetries": 0,
+        "errors": 0
+      },
+      "nextOwner": "daily-publisher",
+      "nextAction": "Existing destination-clearance repair must supply actual reviewed evidence; fresh complete inventory immediately before a later ordinary admission remains mandatory. No retry/proof extension.",
+      "nextReviewAt": "2026-11-20T12:00:00Z",
+      "reviewMechanism": "Next existing weekday publisher cycle or genuinely delivered authorized repair receipt. Timestamp creates no execution."
     },
     "executionEvidence": {
       "unattendedAcceptance": "unverified",
-      "reason": "Existing Reliability Watch recorded a failed outer scheduled wrapper. This same-conversation continuation completed exact checkpoints; it does not prove independently scheduled unattended execution or repair the wrapper.",
+      "reason": "Same-conversation continuation and exact CI releases do not independently prove scheduled-worker persistence/full five-plus-three outcomes. Alerts belong to separate owner.",
       "completedWithoutRoutineTomApproval": true,
-      "sourcePolicyBlob": "35cd9cf1383e3abfc00fade14a8d7ed993c73d81"
+      "sourcePolicyBlob": "fccac06a43c98b465e78d9e434b10a657ebed443",
+      "platformDependency": "Local destructive git-restore cleanup was rejected and not retried. Remote V4 readback and clean checkout were reconciled; later local proposals preserved as local Git commits. No canonical write replay.",
+      "initialFailurePreserved": "PR389 original source-shell failure and superseded checkpoint retained."
+    },
+    "closeoutReporting": {
+      "observedAt": "2026-11-19T14:08:03.261Z",
+      "owner": "daily-publisher",
+      "articleResults": "Five required slots are live-verified; no article is pending and no completed cycle may be replayed.",
+      "aggregateStatus": "in-progress retained",
+      "error": "publisher outcome lacks a structured slot transition; persist the pending checkpoint or an explicit hold/blocker",
+      "cause": "Aggregate status was proposed after the last validated-to-live transition had already been committed. No new actionable transition remains; guard correctly refused the post-hoc aggregate change.",
+      "rejectedProposalWrote": false,
+      "nextAction": "Existing Reliability Watch/source-contract review at separate maintenance boundary; preserve all five live slots, do not invent an optional hold or reset a completed slot."
+    },
+    "assignedMaintenance": {
+      "dedupeKey": "cuai-editorial:vendor-risk-comment-deadline:2026-11-19",
+      "status": "held-separate-maintenance",
+      "prNumber": 388,
+      "nextOwner": "daily-publisher",
+      "blocker": "Notice has visible stray-colon/paragraph defect; corrections.html lacks390/1440 rendered acceptance and old PR head/base is stale.",
+      "nextAction": "Separate authorized maintenance continuation: refresh main, repair only notice and obtain both affected pages' exact-head visual/rendered gates before release.",
+      "sourceFinding": "NCUA/OCC deadline extended to December16,2026. Preserve originalNovember12 publication; no new article/social item."
     }
   },
   "history": [
@@ -11649,6 +11882,539 @@
         },
         "liveVerifiedAt": "2026-11-17T21:00:34.033Z",
         "homepageDecision": "No watch item selected. The new verified Alert becomes the current freshness surface; the empty evergreen watch state remains the post-expiry fallback without a date-only refresh."
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "fullArticleCount": 5,
+      "alertCount": 0,
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html"
+        }
+      ],
+      "status": "completed",
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "hr-training",
+        "marketing-growth",
+        "payments-deposits",
+        "operations",
+        "lending-collections",
+        "risk-compliance",
+        "it-data-cybersecurity",
+        "finance-treasury",
+        "vendor-management"
+      ],
+      "candidateEvaluations": [
+        {
+          "title": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
+          "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+          "score": 83.6,
+          "status": "qualified",
+          "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        },
+        {
+          "title": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
+          "sourceUrl": "https://www.cuinsight.com/press-release/only-1-in-10-americans-who-abandon-an-online-financial-application-return-to-the-same-institution-harris-poll-finds/",
+          "score": 73.5,
+          "status": "qualified",
+          "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        },
+        {
+          "title": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
+          "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+          "score": 73.3,
+          "status": "qualified",
+          "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        },
+        {
+          "title": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "score": 72.6,
+          "status": "qualified",
+          "reason": "Primary announcement supports bounded current brief, not achieved CU outcomes."
+        },
+        {
+          "title": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
+          "sourceUrl": "https://www.cuinsight.com/press-release/vantage-west-credit-union-becomes-first-credit-union-to-adopt-ai-navigator/",
+          "score": 71.3,
+          "status": "qualified",
+          "reason": "Qualified after correcting relative source-date label to exact November17 metadata. Named-CU announcement establishes attributable deployment, not independently verified operating or lending outcomes.",
+          "sourcePublishedAt": "2026-11-17T16:12:35+00:00",
+          "scoreInputs": {
+            "confidence": 0.86,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 78,
+              "creditUnionRelevance": 93,
+              "coverageGap": 5,
+              "originality": 86,
+              "sourceQuality": 100,
+              "urgency": 88.81111183449075
+            }
+          }
+        },
+        {
+          "title": "NCUA Chairman Discusses AI and Staffing at Budget Hearing",
+          "sourceUrl": "https://ncua.gov/newsroom/speech/2026/ncua-chairman-john-crews-statements-2026-budget-hearing",
+          "score": 69.5,
+          "status": "rejected",
+          "reason": "Existing AI-supervision budget story covers the proposed investment, and primary risk-compliance weekly cap is already reached."
+        },
+        {
+          "title": "Credit Union HR eSchool Includes Responsible AI and Accommodations",
+          "sourceUrl": "https://www.americascreditunions.org/events-training/eschool/hr-professional-eschool-2026/pricing",
+          "score": 65.7,
+          "status": "rejected",
+          "reason": "Training-event promotion is not independent evidence of a new workplace practice or outcomes."
+        },
+        {
+          "title": "Claude Linked Billing Beta Lets App Customers Pay Their API Usage",
+          "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+          "score": 61,
+          "status": "rejected",
+          "reason": "Developer-beta billing mechanics lack a specific evidenced CU deployment or stronger procurement consequence."
+        },
+        {
+          "title": "Cloudflare Reports Resolved Turnstile Verification Incident",
+          "sourceUrl": "https://www.cloudflarestatus.com/history?page=1",
+          "score": 60.6,
+          "status": "rejected",
+          "reason": "Status history establishes a provider incident, not a credit-union outage or common cyber cause; sufficient distinctive CU operating impact is unverified."
+        },
+        {
+          "title": "SAFE Promotes Mortgage Rate Discounts Into New Year",
+          "sourceUrl": "https://www.cuinsight.com/press-release/safe-cu-offers-rate-discounts-on-30-year-fixed-jumbo-adjustable-rate-mortgages-and-refinance-loans/",
+          "score": 58,
+          "status": "rejected",
+          "reason": "Promotion-only rate offer without independently reviewed complete eligibility/loan-cost terms."
+        },
+        {
+          "title": "Claude Desktop Adds Stable and Latest Release Channels",
+          "sourceUrl": "https://support.claude.com/en/articles/12138966-release-notes",
+          "score": 57.8,
+          "status": "rejected",
+          "reason": "Routine client-update control without enough additional CU impact for a standalone article."
+        },
+        {
+          "title": "FedGlobal Posts Daily Mexican Peso Exchange Rate",
+          "sourceUrl": "https://www.frbservices.org/resources/financial-services/fedglobal-ach-payments-foreign-exchange-rates/",
+          "score": 48.1,
+          "status": "rejected",
+          "reason": "Routine daily rate is not a material change to payment service terms."
+        }
+      ],
+      "fallbackEvaluations": [],
+      "updatedAt": "2026-11-18T13:58:57.737Z",
+      "outcomeSlot": 5,
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-18",
+          "status": "live-verified",
+          "candidateTitle": "Microsoft Adds an Opt-In Route From HR Attributes to Employee Profiles",
+          "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-18T12:42:17.203Z",
+          "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
+          "evidence": {
+            "pending": {
+              "prNumber": 373,
+              "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
+              "run": 44301669236,
+              "job": 134792675442,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
+              "run": 44301669236,
+              "job": 134792675442,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-18T12:24:43.148Z",
+              "prNumber": 373
+            },
+            "terminalAcceptance": {
+              "prNumber": 373,
+              "head": "0c638d26092b12f1a1efc96186c5c987ad8971ec",
+              "run": 44301669236,
+              "job": 134792675442,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-18T12:24:44.532Z",
+              "artifactId": 14426302972,
+              "artifactSha256": "sha256:d4eeec898238f62170a506279a4adb68f912ea74993c69496cd20286281a840a",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Reviewed actual exact mobile/desktop article, hero and source links, plus Home and News lead cards. Header, November 18 date, full off-default/guest-visibility deck and body are legible and unobstructed. Matching route results have no accessibility, overflow or unexpected-image errors; intentional 404/recovery passed."
+            }
+          },
+          "productionCommit": "a859080949103682ab4314c1ebd27dadcbcb7cd5",
+          "verifiedAt": "2026-11-18T12:26:00.034Z"
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-18",
+          "status": "live-verified",
+          "candidateTitle": "Account-Opening Abandonment Often Comes at Funding and Identity Checks",
+          "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-18T12:59:00.543Z",
+          "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
+          "evidence": {
+            "pending": {
+              "prNumber": 374,
+              "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
+              "run": 44304322141,
+              "job": 134801818294,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
+              "run": 44304322141,
+              "job": 134801818294,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-18T12:40:59.781Z",
+              "prNumber": 374
+            },
+            "terminalAcceptance": {
+              "prNumber": 374,
+              "head": "d84b0bbbe20b6696636e03dd9385c2cf553fb9f4",
+              "run": 44304322141,
+              "job": 134801818294,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-18T12:41:01.176Z",
+              "artifactId": 14427786896,
+              "artifactSha256": "sha256:44e4a8cd9bd0eba4df5c92d572500ff24a653e939852da7170d5c23f465ad719",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Reviewed exact 390/1440 article, image, Home and News cards and lower mobile body. Date, source links and self-report denominator limits are visible; paragraph hierarchy and related/follow/sponsored panels are unobstructed. Matching accessibility, menu, overflow and normal/404/recovery artwork checks passed."
+            }
+          },
+          "productionCommit": "27a4dd779dbc210d2ee01ef18357c7758ba48967",
+          "verifiedAt": "2026-11-18T12:42:25.320Z"
+        },
+        {
+          "slot": 3,
+          "plannedDate": "2026-11-18",
+          "status": "live-verified",
+          "candidateTitle": "Gemini Adds Card Purchases, but a Spending Cap Is Not a Dispute Record",
+          "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-18T13:16:19.841Z",
+          "nextAction": "Merge accepted revision, then verify actual production before live closeout.",
+          "evidence": {
+            "pending": {
+              "prNumber": 375,
+              "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
+              "run": 44307091649,
+              "job": 134811338746,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
+              "run": 44307091649,
+              "job": 134811338746,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-18T12:56:41.461Z",
+              "prNumber": 375
+            },
+            "terminalAcceptance": {
+              "prNumber": 375,
+              "head": "204a10266f3797e412723d8d785ed7e2ae5cc753",
+              "run": 44307091649,
+              "job": 134811338746,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-18T12:56:42.660Z",
+              "artifactId": 14429446643,
+              "artifactSha256": "sha256:316a0f3c6e90e36e897917a122581024fb1339c62e9933604232cc1ba56433e6",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Inspected exact desktop/mobile article header, source link, body, original clay artwork and Home/News lead cards. Supported-card and provider-claim limits are legible; mobile lower body and existing follow/sponsored panels are unobstructed. Matching accessibility, menu, overflow and deliberate artwork 404/recovery checks passed."
+            }
+          },
+          "productionCommit": "3589fdb0c1b13c12fe9b21194fdbe9330d9a9597",
+          "verifiedAt": "2026-11-18T12:58:10.478Z"
+        },
+        {
+          "slot": 4,
+          "plannedDate": "2026-11-18",
+          "status": "live-verified",
+          "candidateTitle": "OpenAI Cuts Astra Token Prices; Credit Unions Still Need to Price Review Time",
+          "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-18T13:54:54.067Z",
+          "nextAction": "Completed: exact production verified; do not replay.",
+          "evidence": {
+            "validationHistory": [
+              {
+                "prNumber": 376,
+                "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
+                "run": 44309608621,
+                "job": 134820012337,
+                "runAttempt": 1,
+                "status": "superseded",
+                "observedAt": "2026-11-18T13:20:17.232Z",
+                "terminalValidation": {
+                  "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
+                  "run": 44309608621,
+                  "job": 134820012337,
+                  "runAttempt": 1,
+                  "conclusion": "success",
+                  "runConclusion": "success",
+                  "jobConclusion": "success",
+                  "observedAt": "2026-11-18T13:17:56.874Z",
+                  "prNumber": 376
+                },
+                "terminalAcceptance": {
+                  "prNumber": 376,
+                  "head": "6f3d896dbc7b1d847d1d6d5a03d1f7a433786c2d",
+                  "run": 44309608621,
+                  "job": 134820012337,
+                  "runAttempt": 1,
+                  "visualReviewedAt": "2026-11-18T13:17:58.351Z",
+                  "artifactId": 14429739307,
+                  "artifactSha256": "sha256:c3aafc27da731e1adbe6bacf2628960db9cac5e302ef2ef757089a76bd91a9d3",
+                  "renderedChecks": 50,
+                  "failedChecks": 0,
+                  "viewports": [
+                    390,
+                    1440
+                  ],
+                  "observations": "Personally inspected all seven actual artifact crops: Home and News 390/1440 cards, article 390/1440, lower mobile body. No clipping, crop, typography or spacing issue. Visible $1.20/$0.30 example and $8/$40, $2/$10 rates match checked arithmetic; subscription, provider claims, hypothetical and reviewer-time limitations clear. Source links and follow/related panels readable; automated exact-head accessibility/navigation/artwork gates passed."
+                },
+                "reason": "Concurrent reliability activity-ledger append requires fresh exact-head review."
+              },
+              {
+                "prNumber": 376,
+                "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
+                "run": 44312662006,
+                "job": 134830537082,
+                "runAttempt": 1,
+                "status": "superseded",
+                "observedAt": "2026-11-18T13:24:54.067Z",
+                "terminalValidation": {
+                  "head": "305f9bd2c8163ca785fbf79d685e6672cdd9c030",
+                  "run": 44312662006,
+                  "job": 134830537082,
+                  "runAttempt": 1,
+                  "conclusion": "failure",
+                  "runConclusion": "failure",
+                  "jobConclusion": "failure",
+                  "observedAt": "2026-11-18T13:24:16.467Z",
+                  "prNumber": 376
+                },
+                "reason": "Failed unmerged refresh has noncanonical first-parent state jump; rebuilt with current canonical main as first parent, preserving prior branch ancestry."
+              }
+            ],
+            "pending": {
+              "prNumber": 376,
+              "head": "d491415837553d75273510682af71bcc10a55904",
+              "run": 44313447670,
+              "job": 134833244746,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "d491415837553d75273510682af71bcc10a55904",
+              "run": 44313447670,
+              "job": 134833244746,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-18T13:38:02.391Z",
+              "prNumber": 376
+            },
+            "terminalAcceptance": {
+              "prNumber": 376,
+              "head": "d491415837553d75273510682af71bcc10a55904",
+              "run": 44313447670,
+              "job": 134833244746,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-18T13:38:03.829Z",
+              "artifactId": 14431414569,
+              "artifactSha256": "sha256:e612021408c74dc42ca6e5ff0acf2296bff689b292c164295518ad70e56cc8d0",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed seven actual crops regenerated from artifact 14431414569 for head d491415837553d75273510682af71bcc10a55904: Home/News 390 and1440, article390/1440 and lower mobile. Cards/title/deck and original art correct, no clipping. Visible pricing figures and illustrative arithmetic accurate; API/subscription, provider-claim and review-time caveats clear. Source/related/follow panels readable; exact accessibility/navigation/artwork normal-error-recovery gates passed. This is new-head acceptance, not reuse of old artifact."
+            }
+          },
+          "productionCommit": "0965518bb523d5ec368d6971e191e48667205e0b",
+          "verifiedAt": "2026-11-18T13:39:26.187Z"
+        },
+        {
+          "slot": 5,
+          "plannedDate": "2026-11-18",
+          "status": "live-verified",
+          "candidateTitle": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
+          "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-18T14:14:28.310Z",
+          "nextAction": "Completed: exact production verified and five-slot target recorded. Do not replay. LinkedIn remains held pending existing destination/duplicate-clearance recovery.",
+          "evidence": {
+            "pending": {
+              "prNumber": 378,
+              "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
+              "run": 44316770112,
+              "job": 134844842796,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
+              "run": 44316770112,
+              "job": 134844842796,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-18T13:56:13.158Z",
+              "prNumber": 378
+            },
+            "terminalAcceptance": {
+              "prNumber": 378,
+              "head": "bb3272d0946e63bd967efa92305b1db43e6dd285",
+              "run": 44316770112,
+              "job": 134844842796,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-18T13:56:14.474Z",
+              "artifactId": 14432948237,
+              "artifactSha256": "sha256:f60e96c128ba2255e9f709eb2ae4dc7cfb05272ed5693391ab54cfa4a87adb18",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally inspected seven actual crops from artifact14432948237 for bb3272d0946e63bd967efa92305b1db43e6dd285: Home/News cards at390/1440, article390/1440, lower mobile. Title, deck and monochrome research art fit without clipping. November18 publication and linked November17 announcement clearly distinct. Attributable deployment, unverified performance limits and expressly hypothetical entity-matching example readable. Source link, related/follow/sponsor panels clear; exact route/accessibility/navigation/image normal404recovery checks passed."
+            }
+          },
+          "productionCommit": "767d39537b9c724bf9792ed1d10a1f420867ed73",
+          "verifiedAt": "2026-11-18T13:57:33.851Z"
+        }
+      ],
+      "socialDecision": "not-reserved-provider-review",
+      "socialDistribution": {
+        "status": "not-reserved",
+        "blocker": "Complete authenticated company reservationInventory contains80 retained sent records, all80 require destination review. No candidate-specific exclusion proof clears today's five articles; their current-week dates and useful Standard classification do not clear duplicate holds.",
+        "inventoryArtifactId": 14433598458,
+        "inventoryObservedAt": "2026-11-18T13:57:17.235Z",
+        "inventoryCommit": "767d39537b9c724bf9792ed1d10a1f420867ed73",
+        "inventoryRecordCount": 80,
+        "inventoryReviewCount": 80,
+        "activeProviderRecordsObserved": 0,
+        "providerReservationAttempted": false,
+        "providerSubmissionAttempts": 0,
+        "inventoryUse": "Dated complete read-only observation, not a60-second reservation admission or future clearance.",
+        "editorialNomination": "harris-financial-application-abandonment",
+        "nominationScope": "read-only editorial usefulness comparison only",
+        "editorialConsideration": [
+          {
+            "slot": 2,
+            "url": "https://creditunionainews.com/news/harris-financial-application-abandonment.html",
+            "decision": "hold-provider-review",
+            "reason": "Strongest cross-functional practical usefulness: funding and identity friction informs acquisition work; nationally surveyed people, not a CU conversion estimate. Distinct audience from this week's two regulatory manual sends. Editorial nomination only, not provider duplicate clearance."
+          },
+          {
+            "slot": 1,
+            "url": "https://creditunionainews.com/news/microsoft-hr-profile-attribute-sharing.html",
+            "decision": "hold-provider-review",
+            "reason": "Specific opt-in/default and attribute visibility change gives underserved HR/IT readers a concrete review question; no deployment or exposure at a credit union is inferred. Editorial usefulness does not remove provider holds."
+          },
+          {
+            "slot": 5,
+            "url": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
+            "decision": "hold-provider-review",
+            "reason": "Named CU adoption and a clear business-member preparation workflow; narrower relationship-team audience and no measured outcomes. Current source date independently checked. No candidate-specific historical exclusion proof."
+          },
+          {
+            "slot": 3,
+            "url": "https://creditunionainews.com/news/gemini-agent-card-purchases-evidence.html",
+            "decision": "hold-provider-review",
+            "reason": "Concrete payments relevance and new provider availability, but rollout and support constraints limit the audience; evidence questions are hypothetical, not a legal or deployed-CU result. Provider clearance remains independent."
+          },
+          {
+            "slot": 4,
+            "url": "https://creditunionainews.com/news/openai-astra-sol-token-price-review-cost.html",
+            "decision": "hold-provider-review",
+            "reason": "Checked standard-rate arithmetic offers operations value; accepted-deliverable cost comparison is proposed, not a benchmark or a measured saving. Lower distribution priority than the more broadly useful acquisition and HR developments; provider holds remain."
+          }
+        ],
+        "otherPoolDecisions": {
+          "missedHigh": "No qualifying unrepresented High article in prior seven days.",
+          "media": "Existing October20 planned chart reservation retained unchanged; unpublished/unverified media and paused production not promoted.",
+          "library": "No newly qualified Library selection; current-news pool cleared five articles; no automatic backlog fill.",
+          "houseCampaign": "Not used to escape the same provider review hold."
+        },
+        "sharedCaps": "one weekday post/day; five/week; unchanged fixed times and immutable reservations",
+        "naturalRun": {
+          "id": 44318914710,
+          "attempt": 1,
+          "actions": 0,
+          "reconciliations": 0,
+          "errors": 0
+        }
+      },
+      "browserReadiness": {
+        "localStatus": "missing-browser-executable",
+        "observedAt": "2026-11-18T12:05:07.269Z",
+        "cacheChanged": false,
+        "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
+        "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
+        "fallback": "Existing isolated exact-head design-checks artifacts, actual390/1440 screenshot inspection and exact production byte verification for all5 articles",
+        "acceptedRenderedChecks": 250,
+        "localRecoveryProven": false
+      },
+      "executionEvidence": {
+        "unattendedAcceptance": "unverified",
+        "reason": "Existing Reliability Watch recorded a failed outer scheduled wrapper. This same-conversation continuation completed exact checkpoints; it does not prove independently scheduled unattended execution or repair the wrapper.",
+        "completedWithoutRoutineTomApproval": true,
+        "sourcePolicyBlob": "35cd9cf1383e3abfc00fade14a8d7ed993c73d81"
       }
     }
   ],

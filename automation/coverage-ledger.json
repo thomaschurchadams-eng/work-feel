@@ -3,6 +3,141 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "corda-appli-calculator-rate-updates",
+      "title": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
+      "url": "/news/corda-appli-calculator-rate-updates.html",
+      "publishedAt": "2026-11-19T08:45:38-05:00",
+      "section": "news",
+      "beat": "corda-appli-calculator-rate-updates",
+      "functions": [
+        "marketing-growth"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Marketing and Growth leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/credit-union-colorado-ai-auto-loan-pricing.html",
+        "/news/raiz-digital-account-opening-case-study.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "November18 supplier announcement, not independent outcome testing. No quantified conversion results, technical AI description or exact launch day; calculator not inspected here."
+    },
+    {
+      "id": "cornerstone-small-business-workflow-primary-account",
+      "title": "Small-Business Research Separates the Primary Account From the Daily Workflow",
+      "url": "/news/cornerstone-small-business-workflow-primary-account.html",
+      "publishedAt": "2026-11-19T08:17:07-05:00",
+      "section": "news",
+      "beat": "cornerstone-small-business-workflow-primary-account",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor Management leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/vantage-west-ai-navigator-business-member-research.html",
+        "/news/commonwealth-personalized-offers-business-deposits.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "November17 Cornerstone research announcement, commissioned by Fiserv, not an independent CU implementation or conversion study. CUInsight copy datedNovember18. Full report and complete methods not retrieved; stated conditional intent is not observed consolidation."
+    },
+    {
+      "id": "microsoft-security-agent-availability-controls",
+      "title": "Microsoft Separates Available Security Agents From Preview Controls",
+      "url": "/news/microsoft-security-agent-availability-controls.html",
+      "publishedAt": "2026-11-19T07:54:24-05:00",
+      "section": "news",
+      "beat": "microsoft-security-agent-availability-controls",
+      "functions": [
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "privacy-security"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "IT, Data and Cybersecurity leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/q2-aiuc-agent-control-certification.html",
+        "/insight-credit-union-account-recovery-evidence-record.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Attributable Microsoft announcement and availability labels, not hands-on testing, CU deployment or verified security effectiveness. Primary technology lens is security-control scope/authorization, not an additional claimed agent deployment."
+    },
+    {
+      "id": "bls-financial-activities-jobs-october-2026",
+      "title": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
+      "url": "/news/bls-financial-activities-jobs-october-2026.html",
+      "publishedAt": "2026-11-19T07:37:08-05:00",
+      "section": "news",
+      "beat": "bls-financial-activities-jobs-october-2026",
+      "functions": [
+        "hr-training"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "HR and Training leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/microsoft-hr-profile-attribute-sharing.html",
+        "/news/financial-firms-ai-skills-pay-promotion.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "National seasonally adjusted CES industry employment, not CU-specific jobs or occupations; latest two months preliminary. November18 recap of October data, not a newly released monthly employment report or evidence of AI causality."
+    },
+    {
+      "id": "ecb-ai-shared-supplier-concentration",
+      "title": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
+      "url": "/news/ecb-ai-shared-supplier-concentration.html",
+      "publishedAt": "2026-11-19T07:13:38-05:00",
+      "section": "news",
+      "beat": "ecb-ai-shared-supplier-concentration",
+      "functions": [
+        "board-strategy"
+      ],
+      "technologies": [
+        "generative-ai"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Board and Strategy leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/fsb-frontier-ai-cyber-risk-financial-system.html",
+        "/insight-credit-union-ai-vendor-exit-playbook.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "ECB euro-area comparative analysis, not a US credit-union rule or a measurement of any CU's supplier exposure. Illustrative dependency scenario is hypothetical."
+    },
+    {
       "id": "vantage-west-ai-navigator-business-member-research",
       "title": "Vantage West Puts AI Research Ahead of Business-Member Conversations",
       "url": "/news/vantage-west-ai-navigator-business-member-research.html",

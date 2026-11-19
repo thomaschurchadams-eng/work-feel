@@ -5807,6 +5807,65 @@
       ],
       "summary": "Recovered the missing canonical closeout for the single November 18 Harris application-abandonment LinkedIn delivery without replay. Issue #160 preserved the Tom-authorized manual fallback and public share 7528917475602780161. Natural verified-operations run 44397127750, artifact 14471166548 (SHA-256 eb2f2e0bca88ecbd8273b66dc53c154581afde5e1b181e2c920acdee18295d9f), returned a complete one-page 81-record inventory and exact sent record 6afe0ab971617e0e412d1705 on approved CreditUnionAI News channel 6a53df0880cc80cdcaa76fb8, due 2026-11-18T20:29:45.725Z and sent 2026-11-18T20:30:07.043Z, matching the canonical Harris URL and preserved CUAI UTMs. The existing row was changed only from planned/reconciliationRequired to sent/reconciled with exact provider fields; its original 11:30 a.m. ET slot identity, copy, tracked URL, image and public share were retained. No provider or scheduler call occurred, no duplicate was created, and the manual success does not establish automatic delivery recovery. All 58 queue rows, 86 publication histories, existing review holds and the one-post-per-day/five-per-week caps remain preserved.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-19T14:09:41.797Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "Existing November19 weekday cycle, same-conversation continuation; no duplicate cycle.",
+      "dedupeKey": "cuai-publishing:2026-11-19",
+      "status": "degraded",
+      "workUnits": {
+        "publisherCandidatesEvaluated": 12,
+        "publisherBeatsSearched": 9,
+        "discoveryDirectionsObserved": 5,
+        "articlesPublished": 5,
+        "acceptedRenderedChecks": 250,
+        "articleProductionChecks": 5,
+        "originalHeroImagesGenerated": 5,
+        "socialSchedulingAttempts": 0,
+        "socialSchedulingSuccesses": 0,
+        "specialistSubagentsSpawned": 0,
+        "alertsPublishedByThisOwner": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Public primary-source sites",
+        "Image generation",
+        "Existing natural Buffer operation receipt"
+      ],
+      "summary": "Five Standard articles production-verified across board/strategy, HR, IT/security, vendor management and marketing. Exact-head source/history/rendered gates, actual390/1440 pixels and public-byte identity verified per article.87 histories and58 queue rows retained; no extra qualified. Natural44539696178/attempt1 verified, complete81-record inventory/all81 review flags,0 distribution attempts/reconciliations/errors. Local browser absent; approved isolated CI fallback used. Original PR389 failure retained. Local destructive cleanup denial reconciled without replay; later proposals preserved as local commits. Five slots live, but post-hoc aggregate status closeout rejected for lacking a new slot transition; aggregate in-progress retained with precise reporting blocker. PR388 deadline Update held for stale head, notice defect and missing second-page rendered evidence. No routine Tom approval, new owner/settings/access/spend, Alert or social action.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261119-aggregate-closeout-contract-recovery",
+      "timestamp": "2026-11-19T16:52:11.883Z",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The November 19 publisher completed five exact-live core slots and an explicit none-qualified optional selection, but the preservation guard rejected the aggregate status closeout because no new slot transition remained.",
+      "status": "recovered",
+      "incidentKey": "cuai-publishing:aggregate-closeout:2026-11-19",
+      "workUnits": {
+        "dailyCycleStatesReconciled": 1,
+        "completedCoreSlotsVerified": 5,
+        "optionalSelectorReceiptsVerified": 1,
+        "guardFilesChanged": 1,
+        "guardTestsAdded": 2,
+        "publisherPolicyContractsClarified": 1,
+        "publicationHistoryEntriesPreserved": 87,
+        "socialQueueItemsPreserved": 58,
+        "providerWriteAttempts": 0,
+        "socialSchedulingAttempts": 0,
+        "deploymentsChecked": 1,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel read-only verification"
+      ],
+      "summary": "Recovered the truthful aggregate closeout for the completed November 19 article cycle and added a narrow durable guard path. The new admission applies only to an in-progress-to-completed status change with unchanged candidate and slot evidence, all five configured core slots live, exact article counts and outcomeSlot, no optional slot, and a complete none-qualified optional-selector receipt. It does not admit technical failures, editorial holds, selected extras, partial cycles or any provider action. Five live publications, 87 histories, all 58 social rows and existing provider-review holds remain unchanged.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
