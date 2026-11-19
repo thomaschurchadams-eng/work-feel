@@ -7,12 +7,16 @@
   },
   "current": {
     "date": "2026-11-19",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html"
       }
     ],
     "status": "in-progress",
@@ -414,7 +418,7 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-19",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
         "url": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html",
         "outcomeScope": "cycle",
@@ -457,7 +461,9 @@
             ],
             "observations": "Personally inspected exact article top/body/table/lower and Home/News cards at390/1440, plus actual missing-image card screenshots. Signed figures and October2025–October2026 period are readable, November18 recap distinct from November19 publication, preliminary/CU-specific/AI-causality limits explicit. No clipping, broken normal assets or placeholder substitution; exact accessibility/menu and artwork recovery gates passed. Same-owner visual review, not a claimed second editorial reviewer."
           }
-        }
+        },
+        "productionCommit": "b02c3c19762f1486bbc17086987eb1631941c838",
+        "verifiedAt": "2026-11-19T12:51:33.555Z"
       }
     ],
     "socialDecision": "not-reserved-provider-review",
