@@ -344,8 +344,8 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T13:10:55.670Z",
-    "outcomeSlot": 3,
+    "updatedAt": "2026-11-19T13:13:46.143Z",
+    "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -478,7 +478,7 @@
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-19T13:25:55.670Z",
-        "nextAction": "Merge accepted exact revision, verify actual production and public bytes before live closeout.",
+        "nextAction": "Completed and verified; no replay.",
         "evidence": {
           "pending": {
             "prNumber": 391,
@@ -518,6 +518,24 @@
         },
         "productionCommit": "b192e7ed17bbdb1204318f6dae242239e4113214",
         "verifiedAt": "2026-11-19T13:12:45.690Z"
+      },
+      {
+        "slot": 4,
+        "plannedDate": "2026-11-19",
+        "status": "prepared",
+        "candidateTitle": "Small-Business Research Separates the Primary Account From the Daily Workflow",
+        "url": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-19T13:43:46.143Z",
+        "nextAction": "Prepare a bounded research-announcement brief, preserving sponsorship, source-date and methods limits.",
+        "evidence": {
+          "editorialQualification": {
+            "sourceDateCheck": "Original Cornerstone PRNewswire release verified November17,2026 08:41ET; CUInsight republished copy dated November18. Use original November17 in the article, not a new November18 study claim.",
+            "originalSourceUrl": "https://www.prnewswire.com/news-releases/new-cornerstone-advisors-research-finds-financial-institutions-still-own-small-business-relationships-but-fintechs-own-increasingly-more-of-the-work-302941863.html",
+            "sourceLimit": "Fiserv-commissioned survey announcement; full report not retrieved; no CU-specific subgroup, response rate, weighting or fieldwork dates established here."
+          }
+        }
       }
     ],
     "socialDecision": "not-reserved-provider-review",
