@@ -155,7 +155,7 @@ async function loadPublisherWritePlanner(tools, sourceCommit) {
   const repository = 'thomaschurchadams-eng/work-feel';
   if (!/^[a-f0-9]{40}$/.test(sourceCommit)) throw Error('exact-source-commit-required');
   const pins = {
-    'lib/daily-cycle-guards.cjs': 'bf07dd49ac3fc60a70300c3ea7ffb37dcda29eb8',
+    'lib/daily-cycle-guards.cjs': '31280950685b76b66f670af525fb592a4cf8449c',
     'lib/publisher-write-plan.cjs': '6ddb991d2e0ee1e8a64b5ec5df4c5e9bf4c4f4bc'
   };
   const modules = {};
