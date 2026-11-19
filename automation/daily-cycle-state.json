@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-19",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
       {
@@ -17,6 +17,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html"
       }
     ],
     "status": "in-progress",
@@ -468,7 +472,7 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-19",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Microsoft Separates Available Security Agents From Preview Controls",
         "url": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html",
         "outcomeScope": "cycle",
@@ -511,7 +515,9 @@
             ],
             "observations": "Personally reviewed exact390/1440 Home/News cards, article headline/body/table/lower and actual404 cards. GA, preview and January2027 preview labels are distinct/readable; source dateNovember17 differs honestly from publicationNovember19. Licensing, hypothetical device-isolation and unverified-CU-effectiveness limits visible. Original art fits; no clipping; exact navigation/accessibility and normal404recovery checks passed. Same-owner review, no second editorial reviewer claimed."
           }
-        }
+        },
+        "productionCommit": "b192e7ed17bbdb1204318f6dae242239e4113214",
+        "verifiedAt": "2026-11-19T13:12:45.690Z"
       }
     ],
     "socialDecision": "not-reserved-provider-review",
