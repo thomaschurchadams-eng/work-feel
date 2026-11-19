@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "macro-still-life",
+      "subject": "documents-and-controls",
+      "composition": "single-object-negative-space",
+      "perspective": "eye-level",
+      "palette": "plum-gold",
+      "lighting": "rim-light",
+      "texture": "frosted-glass",
+      "scene": "A clear authorization key beside a sealed translucent key-shaped prototype",
+      "topicFit": 84,
+      "editorialClarity": 85,
+      "score": 70.8,
+      "metrics": {
+        "novelty": 57,
+        "topicFit": 84,
+        "editorialClarity": 85
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "microsoft-security-agent-availability-controls",
+      "articleUrl": "/news/microsoft-security-agent-availability-controls.html",
+      "imagePath": "/assets/microsoft-security-agent-availability-controls.jpg",
+      "publishedAt": "2026-11-19T07:54:24-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "documents-and-controls",
+          "composition": "single-object-negative-space",
+          "perspective": "eye-level",
+          "palette": "plum-gold",
+          "lighting": "rim-light",
+          "texture": "frosted-glass",
+          "scene": "A clear authorization key beside a sealed translucent key-shaped prototype",
+          "topicFit": 84,
+          "editorialClarity": 85,
+          "score": 70.8,
+          "metrics": {
+            "novelty": 57,
+            "topicFit": 84,
+            "editorialClarity": 85
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "risk-and-security",
+          "composition": "modular-grid",
+          "perspective": "overhead",
+          "palette": "cobalt-coral",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "Solid paper security gates alongside translucent unfinished gates, one held behind a small physical barrier",
+          "topicFit": 94,
+          "editorialClarity": 92,
+          "score": 60.9,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 94,
+            "editorialClarity": 92
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "human-machine-handoff",
+          "composition": "asymmetric-editorial",
+          "perspective": "through-glass",
+          "palette": "terracotta-sky",
+          "lighting": "soft-daylight",
+          "texture": "ink-wash",
+          "scene": "Analyst pauses a change at a physical approval gate while a second work area remains unfinished",
+          "topicFit": 86,
+          "editorialClarity": 83,
+          "score": 49.5,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 86,
+            "editorialClarity": 83
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "5bda4113d0ea74d38fc60d863a6f808aa2be4f02225c19395137fc528b289877"
+    },
+    {
       "medium": "editorial-photography",
       "subject": "operations-environment",
       "composition": "wide-environmental",
