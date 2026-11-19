@@ -348,8 +348,8 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T13:38:43.339Z",
-    "outcomeSlot": 4,
+    "updatedAt": "2026-11-19T13:43:08.467Z",
+    "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -577,6 +577,27 @@
         },
         "productionCommit": "b569458909b9d84755beb01657380f487805f036",
         "verifiedAt": "2026-11-19T13:41:38.353Z"
+      },
+      {
+        "slot": 5,
+        "plannedDate": "2026-11-19",
+        "status": "prepared",
+        "candidateTitle": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
+        "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-19T14:08:08.467Z",
+        "nextAction": "Prepare independently qualified named-CU implementation brief, original artwork and exact-head validation; no live evidence yet.",
+        "evidence": {
+          "editorialQualification": {
+            "sourceUrl": "https://www.cuinsight.com/press-release/credit-union-keeps-65-rates-current-daily-with-applis-ai-powered-calculators/",
+            "sourceDate": "2026-11-18",
+            "classification": "Standard",
+            "confidence": 0.86,
+            "score": 70.6,
+            "sourceLimit": "Appli-authored release includes named Corda marketing account, not independent testing. No conversion, funded-loan, savings or refresh-failure measurements; launch day unspecified. Outside-field activity is not membership eligibility."
+          }
+        }
       }
     ],
     "socialDecision": "not-reserved-provider-review",
@@ -588,7 +609,19 @@
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
       "fallback": "Existing isolated exact-head design-checks job; no past artifact clears this article",
       "localRecoveryProven": false
-    }
+    },
+    "candidateReassessments": [
+      {
+        "candidateTitle": "Fed Minutes Describe AI Financing Risks",
+        "observedAt": "2026-11-19T13:43:08.467Z",
+        "status": "held-source-access",
+        "reason": "At the next selection boundary, independently opened the newly supplied official October28 minutes HTML and PDF. Both returned Internal Error/not accessible from this source reader. Parent evidence is not our full primary-body inspection; original rejection retained. No denial bypass or new candidate scan.",
+        "sourceUrls": [
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+          "https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20261028.pdf"
+        ]
+      }
+    ]
   },
   "history": [
     {
