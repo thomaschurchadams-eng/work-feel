@@ -348,7 +348,7 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T13:43:08.467Z",
+    "updatedAt": "2026-11-19T13:46:06.850Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -581,13 +581,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-19",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
         "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T14:08:08.467Z",
-        "nextAction": "Prepare independently qualified named-CU implementation brief, original artwork and exact-head validation; no live evidence yet.",
+        "nextReviewAt": "2026-11-19T14:06:06.850Z",
+        "nextAction": "Observe real terminal exact-head result, inspect complete artifact and actual mobile/desktop pixels, then verify production before live closeout.",
         "evidence": {
           "editorialQualification": {
             "sourceUrl": "https://www.cuinsight.com/press-release/credit-union-keeps-65-rates-current-daily-with-applis-ai-powered-calculators/",
@@ -596,6 +596,13 @@
             "confidence": 0.86,
             "score": 70.6,
             "sourceLimit": "Appli-authored release includes named Corda marketing account, not independent testing. No conversion, funded-loan, savings or refresh-failure measurements; launch day unspecified. Outside-field activity is not membership eligibility."
+          },
+          "pending": {
+            "prNumber": 393,
+            "head": "23392289726b29b9f16505fc90f6a8a700cfa9c3",
+            "run": 44536722010,
+            "job": 135603982474,
+            "runAttempt": 1
           }
         }
       }
