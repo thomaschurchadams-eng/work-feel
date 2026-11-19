@@ -25,6 +25,33 @@ test('cycle outcome must point to the affected structured operation',()=>{const 
 test('pre-validation technical inability records honest bounded ownership without invented run',()=>{const s=base();s.status='blocked';s.outcomeSlot=2;s.regularPublicationSlots=[{slot:2,status:'pre-validation-blocked',...own,blocker:{stage:'browser-preflight',reason:'Test browser unavailable before a validation run exists',nextAction:'Inspect the existing permitted browser runner once',observedAt:'2026-11-06T12:20:00Z'}}];check(base(),s);assert.throws(()=>check(withPending(),s),/discarded the previous|without matching terminal/);const bad=copy(s);delete bad.regularPublicationSlots[0].blocker.nextAction;assert.throws(()=>check(base(),bad),/bounded next action/);});
 test('unknown statuses cannot stand in for actual owned outcomes',()=>{const s=raw();s.regularPublicationSlots=[{...waiting(),status:'blocked'}];assert.throws(()=>check(base(),s),/unrecognized publisher slot outcome/);});
 test('fully evidenced normal article package passes; completed metadata cannot excuse another closeout',()=>{const s=base(),url='https://creditunionainews.com/news/claude-plaid-personal-finance-beta.html';s.publications.push({type:'article',url});s.fullArticleCount++;s.secondSlot='Filled';s.regularPublicationSlots=[{...waiting(),status:'live-verified',url,productionCommit:'c'.repeat(40),verifiedAt:'2026-11-06T12:30:00Z',evidence:{pending:copy(pending),terminalValidation:{...pending,conclusion:'success',observedAt:'2026-11-06T12:27:00Z'},terminalAcceptance:{...pending,visualReviewedAt:'2026-11-06T12:28:00Z'}}}];check(base(),s);const b=copy(s);b.secondSlot='Unowned later technical failure';b.regularPublicationSlots[0].nextAction='unrelated metadata edit';assert.throws(()=>check(s,b),/lacks a structured slot transition/);});
+const aggregateFixture=()=>{
+  const publications=Array.from({length:5},(_,index)=>({type:'article',url:`/news/core-${index+1}.html`}));
+  return {date:'2026-11-19',status:'in-progress',fullArticleCount:5,alertCount:0,publications,outcomeSlot:5,
+    regularPublicationSlots:publications.map((item,index)=>({slot:index+1,status:'live-verified',url:item.url})),
+    optionalSelection:{decision:'none-qualified',coreLiveCount:5,selected:[],candidatePoolCount:12,
+      selectorObservedAt:'2026-11-19T14:06:03.262Z',maximum:7,
+      reason:'Bounded selector found no distinct qualified extra.'}};
+};
+test('fully live core cycle may close after exact none-qualified optional selection',()=>{
+  const before=aggregateFixture(),after=copy(before);after.status='completed';
+  validatePublisherCheckpointAdmission(before,after,require('../automation/publishing-rules.json'));
+});
+test('aggregate closeout cannot hide missing core, selected extras or unrelated outcome changes',()=>{
+  const partial=aggregateFixture();
+  partial.regularPublicationSlots[4]={slot:5,status:'prepared',candidateTitle:'Unfinished core',url:'/news/core-5.html',...own};
+  const partialClose=copy(partial);partialClose.status='completed';
+  assert.throws(()=>validatePublisherCheckpointAdmission(partial,partialClose,require('../automation/publishing-rules.json')),/aggregate closeout/);
+  const before=aggregateFixture();
+  for(const mutate of [
+    after=>{after.optionalSelection.selected=['unexpected'];},
+    after=>{after.optionalSelection.decision='unknown';},
+    after=>{after.blockedReason='unrelated failure';}
+  ]){const after=copy(before);after.status='completed';mutate(after);assert.throws(
+    ()=>validatePublisherCheckpointAdmission(before,after,require('../automation/publishing-rules.json')),
+    /aggregate closeout|structured slot transition/
+  );}
+});
 test('ending a turn without calling a writer is not an event this repository guard can observe',()=>{check(base(),base());assert.equal(base().regularPublicationSlots,undefined);});
 test('honest initial article PR can be prepared before CI exists, then acquire its real checkpoint',()=>{const s=base();s.status='in-progress';s.outcomeSlot=2;s.secondSlot='Candidate prepared; validation not yet started';s.candidateEvaluations.push({title:'Additional screened candidate',status:'not-selected'});s.regularPublicationSlots=[{slot:2,status:'prepared',...own,candidateTitle,outcomeScope:'cycle'}];check(base(),s);const p=copy(s);p.regularPublicationSlots[0]={...waiting()};check(s,p);const bad=copy(s);bad.status='complete';assert.throws(()=>check(base(),bad),/must remain in-progress/);const actual=raw();actual.regularPublicationSlots=copy(s.regularPublicationSlots);assert.throws(()=>check(base(),actual),/must remain in-progress/);assert.throws(()=>check(withPending(),s),/discarded the previous|without matching terminal/);});
 test('legacy format compatibility is limited to exact accepted revision pairs, not copied proposals',t=>{
