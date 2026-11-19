@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "ink-and-linocut",
+      "subject": "documents-and-controls",
+      "composition": "diagonal-motion",
+      "perspective": "low-angle",
+      "palette": "graphite-electric-yellow",
+      "lighting": "high-contrast-studio",
+      "texture": "newsprint-grain",
+      "scene": "A stack of blank rate cards feeds a mechanical calculator through one visible calibration wheel; editorial metaphor, no numbers or claims",
+      "topicFit": 93,
+      "editorialClarity": 91,
+      "score": 74.7,
+      "metrics": {
+        "novelty": 57,
+        "topicFit": 93,
+        "editorialClarity": 91
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "corda-appli-calculator-rate-updates",
+      "articleUrl": "/news/corda-appli-calculator-rate-updates.html",
+      "imagePath": "/assets/corda-appli-calculator-rate-updates.jpg",
+      "publishedAt": "2026-11-19T08:45:38-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "documents-and-controls",
+          "composition": "diagonal-motion",
+          "perspective": "low-angle",
+          "palette": "graphite-electric-yellow",
+          "lighting": "high-contrast-studio",
+          "texture": "newsprint-grain",
+          "scene": "A stack of blank rate cards feeds a mechanical calculator through one visible calibration wheel; editorial metaphor, no numbers or claims",
+          "topicFit": 93,
+          "editorialClarity": 91,
+          "score": 74.7,
+          "metrics": {
+            "novelty": 57,
+            "topicFit": 93,
+            "editorialClarity": 91
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "member-interaction",
+          "composition": "wide-environmental",
+          "perspective": "through-glass",
+          "palette": "burgundy-sand",
+          "lighting": "natural-window-light",
+          "texture": "ink-wash",
+          "scene": "A distant member compares a simple calculator screen with a rate notice in a quiet branch; no legible content",
+          "topicFit": 85,
+          "editorialClarity": 84,
+          "score": 49.4,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 85,
+            "editorialClarity": 84
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "overhead",
+          "palette": "terracotta-sky",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "One orderly set of rate tiles supplies several calculation panels; no numbers or text",
+          "topicFit": 89,
+          "editorialClarity": 87,
+          "score": 44.1,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 89,
+            "editorialClarity": 87
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "3ddadb21b3a9a343f74b167727e7ae28c77d20ea07cd1607444e94ff8126ed8e"
+    },
+    {
       "medium": "mixed-media-collage",
       "subject": "operations-environment",
       "composition": "asymmetric-editorial",
