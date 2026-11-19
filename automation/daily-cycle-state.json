@@ -340,8 +340,8 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T12:50:03.692Z",
-    "outcomeSlot": 2,
+    "updatedAt": "2026-11-19T12:52:27.412Z",
+    "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -424,7 +424,7 @@
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-19T13:05:03.692Z",
-        "nextAction": "Merge accepted exact revision, verify actual production and public bytes before live closeout.",
+        "nextAction": "Completed and verified; do not replay.",
         "evidence": {
           "pending": {
             "prNumber": 390,
@@ -464,6 +464,17 @@
         },
         "productionCommit": "b02c3c19762f1486bbc17086987eb1631941c838",
         "verifiedAt": "2026-11-19T12:51:33.555Z"
+      },
+      {
+        "slot": 3,
+        "plannedDate": "2026-11-19",
+        "status": "prepared",
+        "candidateTitle": "Microsoft Separates Available Security Agents From Preview Controls",
+        "url": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-19T13:22:27.412Z",
+        "nextAction": "Prepare a bounded current announcement brief; verify actual availability distinctions without asserting CU results."
       }
     ],
     "socialDecision": "not-reserved-provider-review",
