@@ -340,7 +340,7 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T12:55:19.273Z",
+    "updatedAt": "2026-11-19T13:10:55.670Z",
     "outcomeSlot": 3,
     "regularPublicationSlots": [
       {
@@ -468,13 +468,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-19",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Microsoft Separates Available Security Agents From Preview Controls",
         "url": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T13:15:19.273Z",
-        "nextAction": "Observe real terminal exact-head result, inspect complete artifact and actual mobile/desktop pixels, then verify production before live closeout.",
+        "nextReviewAt": "2026-11-19T13:25:55.670Z",
+        "nextAction": "Merge accepted exact revision, verify actual production and public bytes before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 391,
@@ -482,6 +482,34 @@
             "run": 44528336385,
             "job": 135574743818,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "58dbdf61e7ce36c265d823ddda57addad9320990",
+            "run": 44528336385,
+            "job": 135574743818,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-19T13:10:53.654Z",
+            "prNumber": 391
+          },
+          "terminalAcceptance": {
+            "prNumber": 391,
+            "head": "58dbdf61e7ce36c265d823ddda57addad9320990",
+            "run": 44528336385,
+            "job": 135574743818,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-19T13:10:55.670Z",
+            "artifactId": 14533515908,
+            "artifactSha256": "sha256:4013357dc1638056dc2415fb2322583432ce51beefacd4214479cb5eb9f29352",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact390/1440 Home/News cards, article headline/body/table/lower and actual404 cards. GA, preview and January2027 preview labels are distinct/readable; source dateNovember17 differs honestly from publicationNovember19. Licensing, hypothetical device-isolation and unverified-CU-effectiveness limits visible. Original art fits; no clipping; exact navigation/accessibility and normal404recovery checks passed. Same-owner review, no second editorial reviewer claimed."
           }
         }
       }
