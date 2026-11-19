@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "editorial-photography",
+      "subject": "operations-environment",
+      "composition": "wide-environmental",
+      "perspective": "through-glass",
+      "palette": "slate-lime",
+      "lighting": "diffused-overcast",
+      "texture": "clean-photographic",
+      "scene": "Empty training room with chairs arranged for a financial-services recruitment session",
+      "topicFit": 77,
+      "editorialClarity": 76,
+      "score": 59.7,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 77,
+        "editorialClarity": 76
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "bls-financial-activities-jobs-october-2026",
+      "articleUrl": "/news/bls-financial-activities-jobs-october-2026.html",
+      "imagePath": "/assets/bls-financial-activities-jobs-october-2026.jpg",
+      "publishedAt": "2026-11-19T07:37:08-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "operations-environment",
+          "composition": "wide-environmental",
+          "perspective": "through-glass",
+          "palette": "slate-lime",
+          "lighting": "diffused-overcast",
+          "texture": "clean-photographic",
+          "scene": "Empty training room with chairs arranged for a financial-services recruitment session",
+          "topicFit": 77,
+          "editorialClarity": 76,
+          "score": 59.7,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 77,
+            "editorialClarity": 76
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "abstract-data-system",
+          "composition": "diagonal-motion",
+          "perspective": "low-angle",
+          "palette": "monochrome-ink",
+          "lighting": "high-contrast-studio",
+          "texture": "newsprint-grain",
+          "scene": "Abstract uneven employment bars against a broad rising horizon",
+          "topicFit": 80,
+          "editorialClarity": 77,
+          "score": 53.7,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 80,
+            "editorialClarity": 77
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "frontline-workflow",
+          "composition": "split-comparison",
+          "perspective": "overhead",
+          "palette": "emerald-cream",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "Two contrasting stacks of unmarked workforce cards separated by a cut-paper divider",
+          "topicFit": 92,
+          "editorialClarity": 91,
+          "score": 52.9,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 92,
+            "editorialClarity": 91
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "818eedee37eed540ec01fd10c677238e80295a452f34edbbccaac62278b6fc80"
+    },
+    {
       "medium": "architectural-isometric",
       "subject": "architecture-and-infrastructure",
       "composition": "layered-depth",
