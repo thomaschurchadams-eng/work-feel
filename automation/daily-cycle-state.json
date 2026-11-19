@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-19",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "publications": [
       {
@@ -25,6 +25,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html"
       }
     ],
     "status": "in-progress",
@@ -581,7 +585,7 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-19",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
         "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html",
         "outcomeScope": "cycle",
@@ -632,7 +636,9 @@
             ],
             "observations": "Personally inspected exact-artifact Home/News lead cards and article headline/date/deck/body/lower/related panels at390/1440, plus actual missing-artwork text-only recovery screenshots. Conceptual linocut crop fits without clipping; November18 supplier announcement is distinct from November19 publication, lack of measured conversion and untested refresh reliability explicit. Hypothetical delayed-refresh scenario is clearly not a reported Corda failure. Exact normal404recovery, accessibility, navigation and error checks passed. Same-owner visual review, not a second editorial reviewer."
           }
-        }
+        },
+        "productionCommit": "58d141f2bfb1533e32c1c64503aff140f58ff2ec",
+        "verifiedAt": "2026-11-19T14:04:44.183Z"
       }
     ],
     "socialDecision": "not-reserved-provider-review",
