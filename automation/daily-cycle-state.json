@@ -344,7 +344,7 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T13:13:46.143Z",
+    "updatedAt": "2026-11-19T13:17:34.113Z",
     "outcomeSlot": 4,
     "regularPublicationSlots": [
       {
@@ -522,18 +522,25 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-19",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Small-Business Research Separates the Primary Account From the Daily Workflow",
         "url": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T13:43:46.143Z",
-        "nextAction": "Prepare a bounded research-announcement brief, preserving sponsorship, source-date and methods limits.",
+        "nextReviewAt": "2026-11-19T13:37:34.113Z",
+        "nextAction": "Observe real terminal exact-head result, inspect complete artifact and actual mobile/desktop pixels, then verify production before live closeout.",
         "evidence": {
           "editorialQualification": {
             "sourceDateCheck": "Original Cornerstone PRNewswire release verified November17,2026 08:41ET; CUInsight republished copy dated November18. Use original November17 in the article, not a new November18 study claim.",
             "originalSourceUrl": "https://www.prnewswire.com/news-releases/new-cornerstone-advisors-research-finds-financial-institutions-still-own-small-business-relationships-but-fintechs-own-increasingly-more-of-the-work-302941863.html",
             "sourceLimit": "Fiserv-commissioned survey announcement; full report not retrieved; no CU-specific subgroup, response rate, weighting or fieldwork dates established here."
+          },
+          "pending": {
+            "prNumber": 392,
+            "head": "86539cd8fe3ca5d4c1b8c86f36e50dd42f3cb910",
+            "run": 44531987617,
+            "job": 135587414561,
+            "runAttempt": 1
           }
         }
       }
