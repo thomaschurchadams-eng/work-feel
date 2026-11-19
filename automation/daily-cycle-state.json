@@ -331,19 +331,19 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T12:18:32.344Z",
+    "updatedAt": "2026-11-19T12:32:07.251Z",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-19",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
         "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T12:38:32.344Z",
-        "nextAction": "Inspect actual terminal changed-head result and exact artifact; retain all release gates.",
+        "nextReviewAt": "2026-11-19T12:47:07.251Z",
+        "nextAction": "Merge exact accepted head using refreshed canonical main, then verify actual Production and public bytes before live closeout.",
         "evidence": {
           "validationHistory": [
             {
@@ -373,6 +373,34 @@
             "run": 44522645819,
             "job": 135554941811,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "7bd56ad17a495ade157831de097268e147baa9cb",
+            "run": 44522645819,
+            "job": 135554941811,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-19T12:32:05.014Z",
+            "prNumber": 389
+          },
+          "terminalAcceptance": {
+            "prNumber": 389,
+            "head": "7bd56ad17a495ade157831de097268e147baa9cb",
+            "run": 44522645819,
+            "job": 135554941811,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-19T12:32:07.251Z",
+            "artifactId": 14529741734,
+            "artifactSha256": "sha256:20efd1e557ba03884c2d094a76787d042d1c378eb600544810262ec734d0e5cf",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact artifact article top/body/lower, Home/News lead cards and actual404 card screenshots at390/1440. Title/date/hero/source link clear; euro-area versus US distinction and hypothetical example visible; no clipping or asset substitution. Actual route accessibility/menu and artwork normal404recovery checks passed. Same owner reviewed generated content; no second editorial reviewer is claimed."
           }
         }
       }
