@@ -112,6 +112,9 @@
       sourceUrl:
         'https://home.treasury.gov/news/press-releases/sb0695',
       date: 'Nov 19, 2026',
+      publishedAt: '2026-11-19T20:29:35.843Z',
+      publicationDeployment: 'dpl_3aNoQpxHf8cZY8nv4zz7XbiW3es1',
+      publicationEvidence: 'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7021368695',
       slug: 'ofac-cyber-scam-operators-november-2026'
     },
     {

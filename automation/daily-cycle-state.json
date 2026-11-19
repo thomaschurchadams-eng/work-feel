@@ -359,7 +359,7 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T20:18:36.000Z",
+    "updatedAt": "2026-11-19T20:30:28.000Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -779,13 +779,30 @@
     },
     "alertCycle": {
       "owner": "cuai-operating-system",
-      "status": "released-awaiting-exact-deployment-receipt",
+      "status": "live-verified",
       "sourceReviewAt": "2026-11-19T20:18:36.000Z",
       "dedupeKey": "cuai-alert:ofac-cyber-scam-designations:2026-11-19",
       "officialSourceSurfacesReviewed": 8,
       "candidatesEvaluated": 4,
       "alertsPublished": 1,
-      "note": "Selected the November 19 OFAC cyber-scam designations because the official release creates immediate blocking, reporting and 50-percent-ownership screening implications. Held the separate transnational-crime designation release as operationally duplicative sanctions-screening work, the Federal Reserve enforcement action as institution-specific, and current OCC material for lacking a distinct urgent credit-union control change. Publication time remains intentionally unfilled until the first exact production deployment is verified."
+      "note": "Selected the November 19 OFAC cyber-scam designations because the official release creates immediate blocking, reporting and 50-percent-ownership screening implications. Held the separate transnational-crime designation release as operationally duplicative sanctions-screening work, the Federal Reserve enforcement action as institution-specific, and current OCC material for lacking a distinct urgent credit-union control change. Publication time remains intentionally unfilled until the first exact production deployment is verified.",
+      "firstProductionCommit": "9d41e21db4bdf0a9f0a3db0335699988b4784432",
+      "productionDeployment": "dpl_3aNoQpxHf8cZY8nv4zz7XbiW3es1",
+      "publishedAt": "2026-11-19T20:29:35.843Z",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7021368695",
+      "liveUrl": "https://creditunionainews.com/alerts/#ofac-cyber-scam-operators-november-2026",
+      "validation": {
+        "run": 44607076764,
+        "exactHead": "df7c889368dd72dbc15fd645b6556a5eb48e2851",
+        "artifactId": 14571367550,
+        "artifactDigest": "sha256:2904ca2a9a71b9c356fd631d3c9705490509e342d900e1bd58293daac93da7f4",
+        "sourceTests": 459,
+        "renderedChecks": 50,
+        "failedChecks": 0,
+        "conclusion": "success"
+      },
+      "liveVerifiedAt": "2026-11-19T20:30:28.000Z",
+      "homepageDecision": "The new verified November 19 Alert becomes the active freshness surface. The November 17 FinCEN publication clock and the empty homepage watch state remain unchanged; no date-only refresh or fallback item was created."
     }
   },
   "history": [

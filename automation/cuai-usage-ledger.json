@@ -5866,6 +5866,75 @@
       ],
       "summary": "Recovered the truthful aggregate closeout for the completed November 19 article cycle and added a narrow durable guard path. The new admission applies only to an in-progress-to-completed status change with unchanged candidate and slot evidence, all five configured core slots live, exact article counts and outcomeSlot, no optional slot, and a complete none-qualified optional-selector receipt. It does not admit technical failures, editorial holds, selected extras, partial cycles or any provider action. Five live publications, 87 histories, all 58 social rows and existing provider-review holds remain unchanged.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261119-operating-system-01",
+      "timestamp": "2026-11-19T20:30:28.000Z",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Thursday operating review after the completed November 19 five-slot publisher handoff.",
+      "status": "success",
+      "dedupeKey": "cuai-operating-system:2026-11-19",
+      "workUnits": {
+        "publisherHandoffsConsumed": 1,
+        "reliabilityHandoffsConsumed": 1,
+        "articlesPublishedObserved": 5,
+        "candidatesEvaluatedObserved": 12,
+        "beatsSearchedObserved": 9,
+        "portfolioArticlesReviewed": 129,
+        "portfolioLookbackArticlesReviewed": 54,
+        "officialAlertSourceSurfacesReviewed": 8,
+        "alertCandidatesEvaluated": 4,
+        "alertsPublished": 1,
+        "heldAlertCandidates": 3,
+        "freshAlertsRetained": 2,
+        "homepageFreshnessChecks": 1,
+        "homepageWatchWrites": 0,
+        "portfolioOpportunitiesCorrected": 1,
+        "nextCandidateHandoffsRecorded": 1,
+        "exactCurrentOperationsArtifactsConsumed": 1,
+        "ga4SevenDaySessionsObserved": 532,
+        "searchConsoleSevenDayClicksObserved": 44,
+        "searchConsoleSevenDayImpressionsObserved": 3060,
+        "socialQueueItemsReviewed": 58,
+        "socialQueueWrites": 0,
+        "sourceHistoryTestsPassed": 459,
+        "renderedChecksPassed": 50,
+        "productionDeploymentsVerified": 1,
+        "usageLedgerEntriesAppended": 1,
+        "externalOutreachAttempted": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer read-only evidence",
+        "public official web sources"
+      ],
+      "operationalLearning": {
+        "issue": "The trailing 54-article portfolio remains functional-leader and brief-format concentrated, and the canonical next-candidate marker still pointed to a marketing offer-evidence Library asset already published on October 16.",
+        "correction": "Retired the stale completed marker and set one bounded next candidate: a CEO succession-readiness and operating-knowledge-transfer framework spanning board and HR decisions. Published one distinct OFAC cyber-scam designations Alert; preserved the existing FinCEN publication clock and all social state.",
+        "controllingVersion": {
+          "repositoryMain": "52a7dc73455947b5f59535bea19665ddf87a82c7",
+          "policyBlob": "01c7484685216de008e59c4cd798599b99a52bfc",
+          "verifiedOperationsRun": 44600130861,
+          "verifiedOperationsArtifact": 14567911671,
+          "verifiedOperationsDigest": "sha256:9d570a640e92a98c3b971638b402f90addc42422eaf3b47f021961223c488b03",
+          "exactMainDeployment": "dpl_HbCqCd3indn9Cpy6BDtGzWHP6vso",
+          "publisherHandoffEvent": "cuai-20261119-publisher-final",
+          "alertReleasePr": 396,
+          "alertValidationRun": 44607076764,
+          "alertValidationArtifact": 14571367550,
+          "alertProductionDeployment": "dpl_3aNoQpxHf8cZY8nv4zz7XbiW3es1"
+        },
+        "owner": "cuai-operating-system retains portfolio and Alert learning; daily-publisher may consume the next candidate under its existing gates.",
+        "test": "Exact-current pre-Alert operations evidence verified authentication, production identity, zero drift and no provider actions. Search Console finalized November 12-18 at 44 clicks and 3,060 impressions; CEO succession and board-meeting pages retained search demand. GA4's rolling seven-day window reported 532 sessions and 176 engaged sessions; LinkedIn organic had 8 sessions and 0 engaged sessions. Windows overlap and November 19 is partial, so no causal claim was made. Alert release passed 459 source/history tests and 50 rendered checks with zero failures, then reached exact READY production.",
+        "decision": "publish-one-qualified-alert; retire-stale-next; favor-executive-board-hr-library-framework",
+        "actualResult": "One Alert was published and exact production verified. No full article, social retry, provider reservation, queue mutation, homepage watch write, external contact, spend, credential, schedule, pricing, legal/privacy or editorial-gate change was created.",
+        "nextTrigger": "In the next ordinary publisher candidate set, evaluate the succession-readiness framework only if primary and durable evidence supports a nonduplicative Library/Insight asset; do not treat this handoff as a publication decision."
+      },
+      "summary": "Consumed the completed five-article publisher handoff and the aggregate-closeout reliability receipt without reopening either. Published one primary-source OFAC cyber-scam sanctions Alert after eight official-source surfaces were reviewed; three other same-day candidates were held as duplicative, institution-specific or non-urgent. Exact head passed 459 source/history tests and 50 rendered checks with zero failures, and the first exact production deployment is READY. The new Alert owns homepage freshness while the November 17 FinCEN clock remains unchanged. Portfolio review found continued functional-leader and brief-format concentration; the stale offer-evidence next marker was retired because that Library asset already exists, and a bounded executive/board/HR succession-readiness framework is now the next candidate. Exact-current analytics were consumed directionally without causal overclaim: GA4 reported 532 sessions and 176 engaged sessions in its rolling seven-day window, while Search Console finalized November 12-18 at 44 clicks and 3,060 impressions. The weekly distribution scan was not repeated; Monday's completed scan remains controlling. Social state remained 56 sent, one intentionally retained legacy scheduled baseline and one planned prepared-only row, with no write or retry.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
