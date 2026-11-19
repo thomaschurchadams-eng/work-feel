@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-19",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
       {
@@ -21,6 +21,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/microsoft-security-agent-availability-controls.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html"
       }
     ],
     "status": "in-progress",
@@ -522,7 +526,7 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-19",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Small-Business Research Separates the Primary Account From the Daily Workflow",
         "url": "https://creditunionainews.com/news/cornerstone-small-business-workflow-primary-account.html",
         "outcomeScope": "cycle",
@@ -570,7 +574,9 @@
             ],
             "observations": "Personally inspected exact artifact Home/News cards and article headline/date/deck/body/limitations/related coverage at 390/1440; artwork crop coherent, legible and unlettered; no clipping or overlap. Viewed missing-artwork 404 text-only recovery at both widths. Actual accessibility/navigation/error JSON reports zero failures; source and conditional survey intent clearly separated."
           }
-        }
+        },
+        "productionCommit": "b569458909b9d84755beb01657380f487805f036",
+        "verifiedAt": "2026-11-19T13:41:38.353Z"
       }
     ],
     "socialDecision": "not-reserved-provider-review",
