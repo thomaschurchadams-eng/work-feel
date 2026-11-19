@@ -5935,6 +5935,42 @@
       },
       "summary": "Consumed the completed five-article publisher handoff and the aggregate-closeout reliability receipt without reopening either. Published one primary-source OFAC cyber-scam sanctions Alert after eight official-source surfaces were reviewed; three other same-day candidates were held as duplicative, institution-specific or non-urgent. Exact head passed 459 source/history tests and 50 rendered checks with zero failures, and the first exact production deployment is READY. The new Alert owns homepage freshness while the November 17 FinCEN clock remains unchanged. Portfolio review found continued functional-leader and brief-format concentration; the stale offer-evidence next marker was retired because that Library asset already exists, and a bounded executive/board/HR succession-readiness framework is now the next candidate. Exact-current analytics were consumed directionally without causal overclaim: GA4 reported 532 sessions and 176 engaged sessions in its rolling seven-day window, while Search Console finalized November 12-18 at 44 clicks and 3,060 impressions. The weekly distribution scan was not repeated; Monday's completed scan remains controlling. Social state remained 56 sent, one intentionally retained legacy scheduled baseline and one planned prepared-only row, with no write or retry.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261119-vendor-risk-correction-handoff-degraded",
+      "timestamp": "2026-11-19T21:48:10.000Z",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "The high-priority November 19 vendor-risk deadline correction remained unreleased after the daily article cycle closed; PR #388 was stale, non-mergeable and still carried an independently observed correction-notice layout defect.",
+      "status": "degraded",
+      "incidentKey": "cuai-editorial:vendor-risk-comment-deadline:2026-11-19",
+      "workUnits": {
+        "currentMainRevisionsReconciled": 1,
+        "correctionPullRequestsReviewed": 1,
+        "issue160CommentsReviewed": 287,
+        "staleBranchCommitsReplaced": 1,
+        "correctionFilesRebased": 3,
+        "correctionNoticeLayoutsRepaired": 1,
+        "previewDeploymentsVerified": 1,
+        "desktopPreviewRoutesChecked": 2,
+        "brokenImagesObserved": 0,
+        "horizontalOverflowViolationsObserved": 0,
+        "publicationHistoryEntriesPreserved": 87,
+        "socialQueueItemsPreserved": 58,
+        "duplicateSocialReservationsObserved": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "articleCyclesStarted": 0,
+        "productionDeploymentsStarted": 0,
+        "usageLedgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel preview",
+        "CreditUnionAI News preview"
+      ],
+      "summary": "Recovered PR #388 from its stale, non-mergeable base onto exact current main and repaired the visible update notice from one colon-bound paragraph to two clean paragraphs without changing the correction meaning. The rebased PR changes only the existing correction ledger, public corrections page and vendor-risk Insight; all 87 publication histories and 58 social rows remain outside the diff. Exact-head preview dpl_HQrvA9HGGEgLTCws9uWYjpRAA3rg is READY; desktop article and corrections-page checks found the notice and public record readable, with zero horizontal overflow or broken imagery. Release remains blocked: the natural exact-head validation run 44621011741 is still in progress, mobile/artifact acceptance is incomplete, and the existing daily-publisher consuming owner has not accepted the repaired exact head. No merge, production deployment, provider action, social write or article cycle occurred. Durable prevention: correction handoffs should not be considered complete until the maintenance owner records exact-head two-page responsive acceptance and a release receipt after the article cycle boundary.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
