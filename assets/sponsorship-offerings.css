@@ -4,6 +4,7 @@
 .page-sponsorships .offer-grid--core { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .page-sponsorships .offer-grid--extras { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .page-sponsorships .offer-sample { background: var(--off-white, #f1f5f8); border-block: 1px solid #dce4ea; }
+.page-sponsorships .offer-sample .eyebrow { color: #874b28; }
 .page-sponsorships .offer-sample-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: center; gap: clamp(1rem, 5vw, 4rem); }
 .page-sponsorships .offer-figure { margin: 0; }
 .page-sponsorships .offer-mock { overflow: hidden; border: 1px solid #b8c8d6; border-radius: .9rem; background: white; box-shadow: 0 12px 30px #16334b15; }
