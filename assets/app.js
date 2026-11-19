@@ -102,6 +102,19 @@
 
   const alertsData = [
     {
+      label: 'Sanctions / Cyber Fraud',
+      headline: 'OFAC Blocks Cyber-Scam Operators and Two Companies',
+      summary:
+        'The U.S. Treasury said on November 19 that the Office of Foreign Assets Control designated three individuals involved in operating or facilitating Southeast Asian cyber-scam centers and two companies owned or controlled by one of them. Treasury said the compounds targeted Americans and Europeans with virtual-currency investment scams and that armed-group facilitators protected scam activity. Property and interests in property of the designated persons in the United States or in U.S. persons’ possession or control are blocked and must be reported to OFAC; entities owned 50 percent or more by blocked persons are also blocked.',
+      impact:
+        'Credit-union sanctions, BSA/AML, payments, fraud, digital-asset and vendor-management teams should confirm current screening-list ingestion, review direct and indirect exposure including OFAC’s 50-percent ownership rule, block and report property when required, and preserve match, escalation and disposition evidence. Treat the designations as an immediate sanctions-control event, not as proof that any credit union or member was involved in the cited scams.',
+      sourceName: 'U.S. Department of the Treasury / Office of Foreign Assets Control',
+      sourceUrl:
+        'https://home.treasury.gov/news/press-releases/sb0695',
+      date: 'Nov 19, 2026',
+      slug: 'ofac-cyber-scam-operators-november-2026'
+    },
+    {
       label: 'BSA / Customer Due Diligence',
       headline: 'FinCEN Proposes Changes to Beneficial-Owner Checks',
       summary:
