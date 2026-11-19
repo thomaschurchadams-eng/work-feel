@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-19",
     "fullArticleCount": 5,
-    "alertCount": 0,
+    "alertCount": 1,
     "publications": [
       {
         "type": "article",
@@ -29,6 +29,13 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html"
+      },
+      {
+        "type": "alert",
+        "title": "OFAC Blocks Cyber-Scam Operators and Two Companies",
+        "url": "https://creditunionainews.com/alerts/#ofac-cyber-scam-operators-november-2026",
+        "sourceUrl": "https://home.treasury.gov/news/press-releases/sb0695",
+        "sourceDate": "Nov 19, 2026"
       }
     ],
     "status": "completed",
@@ -352,7 +359,7 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T16:52:11.883Z",
+    "updatedAt": "2026-11-19T20:18:36.000Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -769,6 +776,16 @@
       "blocker": "Notice has visible stray-colon/paragraph defect; corrections.html lacks390/1440 rendered acceptance and old PR head/base is stale.",
       "nextAction": "Separate authorized maintenance continuation: refresh main, repair only notice and obtain both affected pages' exact-head visual/rendered gates before release.",
       "sourceFinding": "NCUA/OCC deadline extended to December16,2026. Preserve originalNovember12 publication; no new article/social item."
+    },
+    "alertCycle": {
+      "owner": "cuai-operating-system",
+      "status": "released-awaiting-exact-deployment-receipt",
+      "sourceReviewAt": "2026-11-19T20:18:36.000Z",
+      "dedupeKey": "cuai-alert:ofac-cyber-scam-designations:2026-11-19",
+      "officialSourceSurfacesReviewed": 8,
+      "candidatesEvaluated": 4,
+      "alertsPublished": 1,
+      "note": "Selected the November 19 OFAC cyber-scam designations because the official release creates immediate blocking, reporting and 50-percent-ownership screening implications. Held the separate transnational-crime designation release as operationally duplicative sanctions-screening work, the Federal Reserve enforcement action as institution-specific, and current OCC material for lacking a distinct urgent credit-union control change. Publication time remains intentionally unfilled until the first exact production deployment is verified."
     }
   },
   "history": [
