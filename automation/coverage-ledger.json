@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "microsoft-security-agent-availability-controls",
+      "title": "Microsoft Separates Available Security Agents From Preview Controls",
+      "url": "/news/microsoft-security-agent-availability-controls.html",
+      "publishedAt": "2026-11-19T07:54:24-05:00",
+      "section": "news",
+      "beat": "microsoft-security-agent-availability-controls",
+      "functions": [
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "privacy-security"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "IT, Data and Cybersecurity leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/q2-aiuc-agent-control-certification.html",
+        "/insight-credit-union-account-recovery-evidence-record.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Attributable Microsoft announcement and availability labels, not hands-on testing, CU deployment or verified security effectiveness. Primary technology lens is security-control scope/authorization, not an additional claimed agent deployment."
+    },
+    {
       "id": "bls-financial-activities-jobs-october-2026",
       "title": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
       "url": "/news/bls-financial-activities-jobs-october-2026.html",
