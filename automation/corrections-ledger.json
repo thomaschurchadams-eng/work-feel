@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T07:00:00-04:00",
+  "updatedAt": "2026-11-19T12:00:07.966Z",
   "description": "Append-only public-interest audit trail for substantive updates, corrections and retractions. Routine maintenance remains in Git history.",
   "entries": [
     {
@@ -13,6 +13,19 @@
       "trigger": "Independent source review after a bounded factual-accuracy handoff.",
       "sources": [
         "https://www.alkami.com/resources/client-success/case-study/how-raiz-federal-credit-union-is-building-a-digital-forward-member-experience-with-alkamis-digital-sales-service-platform/"
+      ]
+    },
+    {
+      "id": "vendor-risk-comment-extension-2026-11-19",
+      "articlePath": "insight-credit-union-proposed-vendor-risk-guidance.html",
+      "articleUrl": "https://creditunionainews.com/insight-credit-union-proposed-vendor-risk-guidance.html",
+      "type": "update",
+      "publishedAt": "2026-11-19T12:00:07.966Z",
+      "summary": "The comment deadline was extended from November 16 to December 16, 2026. Original publication date preserved; proposed and nonbinding status unchanged.",
+      "trigger": "Existing high-priority publisher handoff; independently verified NCUA announcement and formal extension notice.",
+      "sources": [
+        "https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+        "https://occ.gov/news-issuances/news-releases/2026/nr-ia-2026-100.pdf"
       ]
     }
   ]
