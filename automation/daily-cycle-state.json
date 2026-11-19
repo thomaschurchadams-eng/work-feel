@@ -336,7 +336,7 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T12:37:38.963Z",
+    "updatedAt": "2026-11-19T12:50:03.692Z",
     "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
@@ -414,13 +414,13 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-19",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
         "url": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T12:57:38.963Z",
-        "nextAction": "Observe terminal exact-head CI and inspect matching desktop/mobile artifact; no release on CI status alone.",
+        "nextReviewAt": "2026-11-19T13:05:03.692Z",
+        "nextAction": "Merge accepted exact revision, verify actual production and public bytes before live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 390,
@@ -428,6 +428,34 @@
             "run": 44525598399,
             "job": 135565203373,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e9015898ccbc7305650a8ba74d814bca8d196886",
+            "run": 44525598399,
+            "job": 135565203373,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-19T12:50:01.738Z",
+            "prNumber": 390
+          },
+          "terminalAcceptance": {
+            "prNumber": 390,
+            "head": "e9015898ccbc7305650a8ba74d814bca8d196886",
+            "run": 44525598399,
+            "job": 135565203373,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-19T12:50:03.692Z",
+            "artifactId": 14532515573,
+            "artifactSha256": "sha256:d97650d33e9748c622866f611635d9f2509a037b0113f4d44a1708735797c25f",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally inspected exact article top/body/table/lower and Home/News cards at390/1440, plus actual missing-image card screenshots. Signed figures and October2025–October2026 period are readable, November18 recap distinct from November19 publication, preliminary/CU-specific/AI-causality limits explicit. No clipping, broken normal assets or placeholder substitution; exact accessibility/menu and artwork recovery gates passed. Same-owner visual review, not a claimed second editorial reviewer."
           }
         }
       }
