@@ -7,9 +7,14 @@
   },
   "current": {
     "date": "2026-11-19",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html"
+      }
+    ],
     "status": "in-progress",
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -337,7 +342,7 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-19",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
         "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html",
         "outcomeScope": "cycle",
@@ -402,7 +407,9 @@
             ],
             "observations": "Personally reviewed exact artifact article top/body/lower, Home/News lead cards and actual404 card screenshots at390/1440. Title/date/hero/source link clear; euro-area versus US distinction and hypothetical example visible; no clipping or asset substitution. Actual route accessibility/menu and artwork normal404recovery checks passed. Same owner reviewed generated content; no second editorial reviewer is claimed."
           }
-        }
+        },
+        "productionCommit": "21f32414432b029e2c7f41af3b815d73ac8549ee",
+        "verifiedAt": "2026-11-19T12:34:07.817Z"
       }
     ],
     "socialDecision": "not-reserved-provider-review",
