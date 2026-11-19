@@ -10,7 +10,7 @@
     "fullArticleCount": 0,
     "alertCount": 0,
     "publications": [],
-    "status": "blocked",
+    "status": "in-progress",
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "regulation-policy",
@@ -331,43 +331,49 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T12:16:46.940Z",
+    "updatedAt": "2026-11-19T12:18:32.344Z",
     "outcomeSlot": 1,
     "regularPublicationSlots": [
       {
         "slot": 1,
         "plannedDate": "2026-11-19",
-        "status": "technical-failure",
+        "status": "pending-validation",
         "candidateTitle": "ECB Maps AI Supplier Concentration Beyond the Model Contract",
         "url": "https://creditunionainews.com/news/ecb-ai-shared-supplier-concentration.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T12:31:46.940Z",
-        "nextAction": "Repair generated article shell with existing sync-site-design, preserve failed exact receipt, validate changed head; no later package before release.",
+        "nextReviewAt": "2026-11-19T12:38:32.344Z",
+        "nextAction": "Inspect actual terminal changed-head result and exact artifact; retain all release gates.",
         "evidence": {
+          "validationHistory": [
+            {
+              "prNumber": 389,
+              "head": "2a103516a68247924ca34832796e3d66e72f07fa",
+              "run": 44522091487,
+              "job": 135553034227,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-19T12:18:32.344Z",
+              "terminalValidation": {
+                "head": "2a103516a68247924ca34832796e3d66e72f07fa",
+                "run": 44522091487,
+                "job": 135553034227,
+                "runAttempt": 1,
+                "conclusion": "failure",
+                "runConclusion": "failure",
+                "jobConclusion": "failure",
+                "observedAt": "2026-11-19T12:16:45.204Z"
+              },
+              "reason": "Generated article shell corrected on changed head; no failed result erased."
+            }
+          ],
           "pending": {
             "prNumber": 389,
-            "head": "2a103516a68247924ca34832796e3d66e72f07fa",
-            "run": 44522091487,
-            "job": 135553034227,
+            "head": "7bd56ad17a495ade157831de097268e147baa9cb",
+            "run": 44522645819,
+            "job": 135554941811,
             "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "2a103516a68247924ca34832796e3d66e72f07fa",
-            "run": 44522091487,
-            "job": 135553034227,
-            "runAttempt": 1,
-            "conclusion": "failure",
-            "runConclusion": "failure",
-            "jobConclusion": "failure",
-            "observedAt": "2026-11-19T12:16:45.204Z"
           }
-        },
-        "blocker": {
-          "stage": "candidate-preparation",
-          "reason": "Exact CI failed check:design: new article shell/roles out of sync; rendered checks did not run.",
-          "nextAction": "Repair generated article shell with existing sync-site-design, preserve failed exact receipt, validate changed head; no later package before release.",
-          "observedAt": "2026-11-19T12:16:46.940Z"
         }
       }
     ],
@@ -380,8 +386,7 @@
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
       "fallback": "Existing isolated exact-head design-checks job; no past artifact clears this article",
       "localRecoveryProven": false
-    },
-    "blockedReason": "Exact CI failed check:design: new article shell/roles out of sync; rendered checks did not run."
+    }
   },
   "history": [
     {
