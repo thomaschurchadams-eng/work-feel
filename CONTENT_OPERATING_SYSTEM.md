@@ -34,11 +34,11 @@ Validated routine editorial packages follow the current direct-production articl
 
 ## Current publishing targets
 
-The controlling version 8 publishing rules target five qualified full articles each weekday from November 13, twenty-five per full week. November 12 alone permits five additional articles above its frozen one-article baseline. No candidate is published solely to fill a slot. Alerts remain separate with no quota. The website briefing is not an automated email delivery pipeline.
+The controlling publishing rules target five qualified full articles per eligible day within the 35-article weekly ceiling. Saturday and Sunday are eligible starting November 21 after coordinated release. November 12 alone permits five additional articles above its frozen one-article baseline. No candidate is published solely to fill a slot. Alerts remain separate with no quota. The website briefing is not an automated email delivery pipeline.
 
 ## Approved recurring media — October 1, 2026
 
-Read automation/media-policy.json and automation/scheduled-tasks/cuai-media-coordinator.md. Prepare separate visual modules and source-qualified podcast/video packages at least two business days ahead. Media never replaces an article slot or increments fullArticleCount. The sole LinkedIn executor remains the existing verified workflow; the daily publisher selects media/news inside the shared one-per-weekday/five-per-week cap, preserving all reservations. Keep midday baseline timing; only exact dated timing-test assignments after validated baseline may use 10:00 ET. X remains blocked pending verified identity and authorized routing. Do not add article jobs, paid AI video, subscriptions, credentials or scopes.
+Read automation/media-policy.json and automation/scheduled-tasks/cuai-media-coordinator.md. Prepare separate visual modules and source-qualified podcast/video packages at least two business days ahead. Media never replaces an article slot or increments fullArticleCount. The sole LinkedIn executor remains the existing verified workflow; the daily publisher selects media/news inside the shared one-per-eligible-day/seven-per-Monday–Sunday-week cap starting November 21 after release (previously five per week), preserving all reservations. Keep midday baseline timing; only exact dated timing-test assignments after validated baseline may use 10:00 ET. X remains blocked pending verified identity and authorized routing. Do not add article jobs, paid AI video, subscriptions, credentials or scopes.
 
 ## Status Labels
 - Idea

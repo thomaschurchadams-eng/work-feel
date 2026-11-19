@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { verifyReservation } = require('../lib/buffer-reservation-guard.cjs');
 const MEDIA_POLICY = require('../automation/media-policy.json');
+const { standardSlotTime } = require('../lib/media-slots.cjs');
 
 const BUFFER_API_URL = 'https://api.buffer.com';
 const ALLOWED_HOST = 'creditunionainews.com';
@@ -74,21 +75,18 @@ function validateScheduledFor(value) {
   if (delta > MAX_ADVANCE_MS) return { error: 'scheduled_for_too_far_ahead' };
 
   const parts = easternParts(dueAt);
-  const expected = parts.weekday === 'Mon' || parts.weekday === 'Fri'
-    ? { hour: 12, minute: 30 }
-    : ['Tue', 'Wed', 'Thu'].includes(parts.weekday)
-      ? { hour: 11, minute: 30 }
-      : null;
+  const easternDate = easternDateKey(dueAt);
+  const expected = standardSlotTime(easternDate);
 
   if (!expected) return { error: 'scheduled_for_weekend' };
-  if (Number(parts.hour) !== expected.hour || Number(parts.minute) !== expected.minute) {
+  if (`${parts.hour}:${parts.minute}` !== expected) {
     return {
       error: 'scheduled_for_outside_policy',
-      expectedEasternTime: `${String(expected.hour).padStart(2, '0')}:${String(expected.minute).padStart(2, '0')}`
+      expectedEasternTime: expected
     };
   }
 
-  return { dueAtIso: dueAt.toISOString(), easternDate: easternDateKey(dueAt) };
+  return { dueAtIso: dueAt.toISOString(), easternDate };
 }
 
 function loadQueueItem(itemId) {
