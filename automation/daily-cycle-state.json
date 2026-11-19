@@ -348,7 +348,7 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T13:46:06.850Z",
+    "updatedAt": "2026-11-19T14:02:54.880Z",
     "outcomeSlot": 5,
     "regularPublicationSlots": [
       {
@@ -581,13 +581,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-19",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Corda Automates Calculator Rate Updates; Conversion Results Remain Unreported",
         "url": "https://creditunionainews.com/news/corda-appli-calculator-rate-updates.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-19T14:06:06.850Z",
-        "nextAction": "Observe real terminal exact-head result, inspect complete artifact and actual mobile/desktop pixels, then verify production before live closeout.",
+        "nextReviewAt": "2026-11-19T14:17:54.880Z",
+        "nextAction": "Merge accepted exact revision, verify actual production and public bytes before live closeout.",
         "evidence": {
           "editorialQualification": {
             "sourceUrl": "https://www.cuinsight.com/press-release/credit-union-keeps-65-rates-current-daily-with-applis-ai-powered-calculators/",
@@ -603,6 +603,34 @@
             "run": 44536722010,
             "job": 135603982474,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "23392289726b29b9f16505fc90f6a8a700cfa9c3",
+            "run": 44536722010,
+            "job": 135603982474,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-19T14:02:52.290Z",
+            "prNumber": 393
+          },
+          "terminalAcceptance": {
+            "prNumber": 393,
+            "head": "23392289726b29b9f16505fc90f6a8a700cfa9c3",
+            "run": 44536722010,
+            "job": 135603982474,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-19T14:02:54.880Z",
+            "artifactId": 14536319200,
+            "artifactSha256": "sha256:5286a99c0223920efa9cb3eefaa02e409d9accf52b3bcb88d49657640d23858c",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally inspected exact-artifact Home/News lead cards and article headline/date/deck/body/lower/related panels at390/1440, plus actual missing-artwork text-only recovery screenshots. Conceptual linocut crop fits without clipping; November18 supplier announcement is distinct from November19 publication, lack of measured conversion and untested refresh reliability explicit. Hypothetical delayed-refresh scenario is clearly not a reported Corda failure. Exact normal404recovery, accessibility, navigation and error checks passed. Same-owner visual review, not a second editorial reviewer."
           }
         }
       }
