@@ -336,8 +336,8 @@
         "noCandidateReason": "Existing Ascend/LGE coverage already distinguishes these milestones. BECU/SAFE carries an older pending approval update and differently scoped prior approval announcement; a distinct multi-source operating guide is not sufficiently established in the bounded pool. Do not manufacture a Library fallback or an optional extra."
       }
     },
-    "updatedAt": "2026-11-19T12:32:07.251Z",
-    "outcomeSlot": 1,
+    "updatedAt": "2026-11-19T12:35:01.191Z",
+    "outcomeSlot": 2,
     "regularPublicationSlots": [
       {
         "slot": 1,
@@ -348,7 +348,7 @@
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-19T12:47:07.251Z",
-        "nextAction": "Merge exact accepted head using refreshed canonical main, then verify actual Production and public bytes before live closeout.",
+        "nextAction": "Completed and verified; do not replay this article.",
         "evidence": {
           "validationHistory": [
             {
@@ -410,6 +410,17 @@
         },
         "productionCommit": "21f32414432b029e2c7f41af3b815d73ac8549ee",
         "verifiedAt": "2026-11-19T12:34:07.817Z"
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-19",
+        "status": "prepared",
+        "candidateTitle": "Financial-Sector Jobs Fall Even as US Payrolls Grow",
+        "url": "https://creditunionainews.com/news/bls-financial-activities-jobs-october-2026.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-19T13:05:01.191Z",
+        "nextAction": "Prepare the qualified BLS data brief; exact-head visual and live gates remain."
       }
     ],
     "socialDecision": "not-reserved-provider-review",
