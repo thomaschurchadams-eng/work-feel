@@ -113,11 +113,11 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-20",
-        "status": "pending-validation",
+        "status": "validated",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:42:50.160Z",
-        "nextAction": "Observe actual terminal result; inspect exact artifact and actual390/1440 pixels, then verify production before closeout.",
+        "nextReviewAt": "2026-11-20T17:52:06.957Z",
+        "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
         "candidateTitle": "Velera Reports a Larger Money-Services Slice of Debit Purchases",
         "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html",
         "evidence": {
@@ -127,6 +127,34 @@
             "run": 44782678311,
             "job": 136449211724,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
+            "run": 44782678311,
+            "job": 136449211724,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-20T17:37:06.091Z",
+            "prNumber": 402
+          },
+          "terminalAcceptance": {
+            "prNumber": 402,
+            "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
+            "run": 44782678311,
+            "job": 136449211724,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-20T17:37:06.957Z",
+            "artifactId": 14651114785,
+            "artifactSha256": "sha256:e50dc75fef668aea2c96b4da28e12a0e3467b4ad39c5e1bbc77bbb3b84ca8bf3",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact artifact390/1440 article title/date/deck/hero and complete body, related links/footer, Home and News lead cards, and actual404 artwork fallbacks. Legible typography/wrapping, no overlap/overflow/obstruction; accurate explicit full-report/sample limitation. Actual route menu/tracker and accessibility/error results clean."
           }
         }
       },
@@ -136,13 +164,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextReviewAt": "2026-11-20T17:52:06.957Z",
         "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
           "stage": "candidate-preparation",
-          "reason": "Earlier owned article1 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "reason": "Earlier owned article2 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
           "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T17:17:13.488Z"
+          "observedAt": "2026-11-20T17:37:06.957Z"
         }
       },
       {
@@ -151,13 +179,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextReviewAt": "2026-11-20T17:52:06.957Z",
         "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
           "stage": "candidate-preparation",
-          "reason": "Earlier owned article1 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "reason": "Earlier owned article2 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
           "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T17:17:13.488Z"
+          "observedAt": "2026-11-20T17:37:06.957Z"
         }
       },
       {
@@ -166,13 +194,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextReviewAt": "2026-11-20T17:52:06.957Z",
         "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
           "stage": "candidate-preparation",
-          "reason": "Earlier owned article1 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "reason": "Earlier owned article2 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
           "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T17:17:13.488Z"
+          "observedAt": "2026-11-20T17:37:06.957Z"
         }
       }
     ],
@@ -184,7 +212,7 @@
       "cacheChanged": false,
       "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
-      "fallback": "Actual qualified PR401 exact-head CI executing; no release until exact artifact, own pixels and actual production acceptance.",
+      "fallback": "Qualified PR402 exact-head CI passed and its actual390/1440 pixels personally reviewed; retain actual production gate before closeout. Earlier successful exact fallback remains scoped to its own head; local Chromium remains unavailable.",
       "localRecoveryProven": false,
       "latestObservedAt": "2026-11-20T16:53:44.930Z"
     },
@@ -202,7 +230,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T17:22:50.160Z",
+    "updatedAt": "2026-11-20T17:37:06.957Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
