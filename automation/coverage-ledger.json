@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "velera-money-services-debit-purchase-share",
+      "title": "Velera Reports a Larger Money-Services Slice of Debit Purchases",
+      "url": "/news/velera-money-services-debit-purchase-share.html",
+      "publishedAt": "2026-11-20T12:21:48-05:00",
+      "section": "news",
+      "beat": "velera-money-services-debit-purchase-share",
+      "functions": [
+        "payments-deposits"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments and Deposits leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/raiz-digital-account-opening-case-study.html",
+        "/news/connexus-digital-banking-loan-funding.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "November19 attributable Velera research announcement; full report/sample/methodology not independently inspected. Purchase measure must not be generalized to national market share, individual member behavior or deposit loss; no CU operating outcome verified."
+    },
+    {
       "id": "5point-mahalo-digital-self-service-selection",
       "title": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
       "url": "/news/5point-mahalo-digital-self-service-selection.html",
