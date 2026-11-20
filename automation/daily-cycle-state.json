@@ -50,13 +50,13 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-20",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
         "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:20:01.286Z",
-        "nextAction": "Observe exact terminal result, verify artifact/revision/digest and actual390/1440 pixels before release; same owner retains checkpoint.",
+        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
         "evidence": {
           "editorialQualification": {
             "classification": "Standard",
@@ -72,6 +72,34 @@
             "run": 44778877826,
             "job": 136435960225,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
+            "run": 44778877826,
+            "job": 136435960225,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-20T17:17:12.449Z",
+            "prNumber": 401
+          },
+          "terminalAcceptance": {
+            "prNumber": 401,
+            "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
+            "run": 44778877826,
+            "job": 136435960225,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-20T17:17:13.488Z",
+            "artifactId": 14650774686,
+            "artifactSha256": "sha256:1fac83337e4b7967464e8692bcbceff1916c1d20da5bd662a09f9e433d8b4df0",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact artifact mobile390/desktop1440 Home and News cards, article title/date/deck/hero/body/related links/footer and missing-artwork fallback. Clean legible wrapping, no obstruction or overflow, accurate selection-not-outcome framing; automated accessibility/navigation/error checks clean."
           }
         }
       },
@@ -81,13 +109,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T12:35:18.914Z",
-        "nextAction": "Same owner must complete source qualification and prepare a normal exact-head CI package before any release. Review timestamp creates no execution; existing Reliability Watch retains original browser incident.",
+        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
-          "stage": "browser-preflight",
-          "reason": "Actual local browser launch failed: missing chromium_headless_shell-1234 executable; cache absent/unchanged. Approved exact-head CI fallback remains available but no November20 article package/artifact/pixel acceptance has been produced. Source qualification is incomplete, not exhausted or editorially rejected.",
-          "nextAction": "Use existing permitted isolated CI fallback only after a qualified package; inspect exact artifact/pixels and production. No install/cache/version/access changes.",
-          "observedAt": "2026-11-20T12:02:01.528Z"
+          "stage": "candidate-preparation",
+          "reason": "Earlier owned article1 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
+          "observedAt": "2026-11-20T17:17:13.488Z"
         }
       },
       {
@@ -96,13 +124,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T12:35:18.914Z",
-        "nextAction": "Same owner must complete source qualification and prepare a normal exact-head CI package before any release. Review timestamp creates no execution; existing Reliability Watch retains original browser incident.",
+        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
-          "stage": "browser-preflight",
-          "reason": "Actual local browser launch failed: missing chromium_headless_shell-1234 executable; cache absent/unchanged. Approved exact-head CI fallback remains available but no November20 article package/artifact/pixel acceptance has been produced. Source qualification is incomplete, not exhausted or editorially rejected.",
-          "nextAction": "Use existing permitted isolated CI fallback only after a qualified package; inspect exact artifact/pixels and production. No install/cache/version/access changes.",
-          "observedAt": "2026-11-20T12:02:01.528Z"
+          "stage": "candidate-preparation",
+          "reason": "Earlier owned article1 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
+          "observedAt": "2026-11-20T17:17:13.488Z"
         }
       },
       {
@@ -111,13 +139,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T12:35:18.914Z",
-        "nextAction": "Same owner must complete source qualification and prepare a normal exact-head CI package before any release. Review timestamp creates no execution; existing Reliability Watch retains original browser incident.",
+        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
-          "stage": "browser-preflight",
-          "reason": "Actual local browser launch failed: missing chromium_headless_shell-1234 executable; cache absent/unchanged. Approved exact-head CI fallback remains available but no November20 article package/artifact/pixel acceptance has been produced. Source qualification is incomplete, not exhausted or editorially rejected.",
-          "nextAction": "Use existing permitted isolated CI fallback only after a qualified package; inspect exact artifact/pixels and production. No install/cache/version/access changes.",
-          "observedAt": "2026-11-20T12:02:01.528Z"
+          "stage": "candidate-preparation",
+          "reason": "Earlier owned article1 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
+          "observedAt": "2026-11-20T17:17:13.488Z"
         }
       },
       {
@@ -126,13 +154,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T12:35:18.914Z",
-        "nextAction": "Same owner must complete source qualification and prepare a normal exact-head CI package before any release. Review timestamp creates no execution; existing Reliability Watch retains original browser incident.",
+        "nextReviewAt": "2026-11-20T17:32:13.488Z",
+        "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
-          "stage": "browser-preflight",
-          "reason": "Actual local browser launch failed: missing chromium_headless_shell-1234 executable; cache absent/unchanged. Approved exact-head CI fallback remains available but no November20 article package/artifact/pixel acceptance has been produced. Source qualification is incomplete, not exhausted or editorially rejected.",
-          "nextAction": "Use existing permitted isolated CI fallback only after a qualified package; inspect exact artifact/pixels and production. No install/cache/version/access changes.",
-          "observedAt": "2026-11-20T12:02:01.528Z"
+          "stage": "candidate-preparation",
+          "reason": "Earlier owned article1 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
+          "observedAt": "2026-11-20T17:17:13.488Z"
         }
       }
     ],
@@ -144,8 +172,9 @@
       "cacheChanged": false,
       "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
-      "fallback": "Permitted exact-head CI route not exercised for a November20 article; not unavailable or denied.",
-      "localRecoveryProven": false
+      "fallback": "Actual qualified PR401 exact-head CI executing; no release until exact artifact, own pixels and actual production acceptance.",
+      "localRecoveryProven": false,
+      "latestObservedAt": "2026-11-20T16:53:44.930Z"
     },
     "socialDecision": "not-evaluated-no-new-live-article",
     "socialDistribution": {
@@ -161,7 +190,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T17:00:01.286Z",
+    "updatedAt": "2026-11-20T17:17:13.488Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
