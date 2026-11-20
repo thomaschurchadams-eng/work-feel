@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "bls-five-year-price-rise-october-2026",
+      "title": "BLS Puts Five-Year Price Rise at 22%; That Is Not an Annual Rate",
+      "url": "/news/bls-five-year-price-rise-october-2026.html",
+      "publishedAt": "2026-11-20T12:40:52-05:00",
+      "section": "news",
+      "beat": "bls-five-year-price-rise-october-2026",
+      "functions": [
+        "finance-treasury"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Finance and Treasury leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/bls-financial-activities-jobs-october-2026.html",
+        "/news/fed-barr-ai-agent-deposit-outflow-risk.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Official November19 recap of October2021–October2026 nonseasonally adjusted CPI-U; not a new November20 monthly release, individual household measure, wage result or CU credit outcome. Underlying November10 release explicitly leaves most October2026 12-month changes unavailable because October2025 survey data were missing."
+    },
+    {
       "id": "velera-money-services-debit-purchase-share",
       "title": "Velera Reports a Larger Money-Services Slice of Debit Purchases",
       "url": "/news/velera-money-services-debit-purchase-share.html",
