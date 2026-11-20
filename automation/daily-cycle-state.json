@@ -167,11 +167,11 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-20",
-        "status": "pending-validation",
+        "status": "validated",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T18:02:33.368Z",
-        "nextAction": "Observe actual terminal result; inspect exact artifact and actual390/1440 pixels, then verify production before closeout.",
+        "nextReviewAt": "2026-11-20T18:15:43.929Z",
+        "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
         "candidateTitle": "BLS Puts Five-Year Price Rise at 22%; That Is Not an Annual Rate",
         "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html",
         "evidence": {
@@ -181,6 +181,34 @@
             "run": 44785716279,
             "job": 136459915410,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
+            "run": 44785716279,
+            "job": 136459915410,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-20T18:00:42.446Z",
+            "prNumber": 403
+          },
+          "terminalAcceptance": {
+            "prNumber": 403,
+            "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
+            "run": 44785716279,
+            "job": 136459915410,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-20T18:00:43.929Z",
+            "artifactId": 14655631485,
+            "artifactSha256": "sha256:d1333ef87895531db9c4b1c205813b49aac44429eb788cf2505d7cf7a519f3ad",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally inspected actual390/1440 article title/date/deck/hero, complete body including preserved100-to122 dollar example and distinct five-year/annual/source limitations, source links, related links/footer; Home and News cards and actual404 artwork fallbacks. Clean wrapping, no overlap, unobstructed article content; actual accessibility/menu/tracker/error and recovery results clean."
           }
         }
       },
@@ -190,13 +218,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:52:06.957Z",
+        "nextReviewAt": "2026-11-20T18:15:43.929Z",
         "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
           "stage": "candidate-preparation",
-          "reason": "Earlier owned article2 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "reason": "Earlier owned article3 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
           "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T17:37:06.957Z"
+          "observedAt": "2026-11-20T18:00:43.929Z"
         }
       },
       {
@@ -205,13 +233,13 @@
         "status": "pre-validation-blocked",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:52:06.957Z",
+        "nextReviewAt": "2026-11-20T18:15:43.929Z",
         "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
         "blocker": {
           "stage": "candidate-preparation",
-          "reason": "Earlier owned article2 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
+          "reason": "Earlier owned article3 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
           "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T17:37:06.957Z"
+          "observedAt": "2026-11-20T18:00:43.929Z"
         }
       }
     ],
@@ -223,7 +251,7 @@
       "cacheChanged": false,
       "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
-      "fallback": "Qualified PR402 exact-head CI passed and its actual390/1440 pixels personally reviewed; retain actual production gate before closeout. Earlier successful exact fallback remains scoped to its own head; local Chromium remains unavailable.",
+      "fallback": "Qualified PR403 exact-head CI passed and its actual390/1440 pixels personally reviewed; retain actual production gate before closeout. Earlier successful exact fallback remains scoped to its own head; local Chromium remains unavailable.",
       "localRecoveryProven": false,
       "latestObservedAt": "2026-11-20T16:53:44.930Z"
     },
@@ -241,7 +269,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T17:42:33.368Z",
+    "updatedAt": "2026-11-20T18:00:43.929Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
