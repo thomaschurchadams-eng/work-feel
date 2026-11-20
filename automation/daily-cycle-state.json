@@ -20,7 +20,7 @@
       }
     ],
     "status": "in-progress",
-    "outcomeSlot": 2,
+    "outcomeSlot": 3,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "credit-union-industry",
@@ -167,17 +167,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-20",
-        "status": "pre-validation-blocked",
+        "status": "prepared",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:52:06.957Z",
-        "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-        "blocker": {
-          "stage": "candidate-preparation",
-          "reason": "Earlier owned article2 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
-          "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T17:37:06.957Z"
-        }
+        "nextReviewAt": "2026-11-20T17:59:50.396Z",
+        "nextAction": "Prepare official-data brief distinguishing cumulative five-year, missing annual and household outcomes; exact CI/artifact/own visual/live gates remain.",
+        "candidateTitle": "BLS Puts Five-Year Price Rise at 22%; That Is Not an Annual Rate",
+        "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
       },
       {
         "slot": 4,
@@ -236,7 +232,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T17:37:06.957Z",
+    "updatedAt": "2026-11-20T17:39:50.396Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
@@ -388,7 +384,7 @@
         "sourceUrl": "https://www.bls.gov/opub/ted/2026/consumer-prices-up-22-0-percent-over-5-years-ending-october-2026.htm",
         "score": 68,
         "status": "qualified",
-        "reason": "Specific source-backed brief, not observed implementation or CU-specific household outcome.",
+        "reason": "Actual November19 BLS table and underlying November10 CPI release inspected. Five-year22.0, food24.0,shelter27.8; nonseasonally adjusted Oct2021–Oct2026, not an annual rate or individual/CU outcome. No artificial AI angle; primary finance function remains below3/week.",
         "scoreInputs": {
           "confidence": 0.96,
           "sourceTier": 1,
