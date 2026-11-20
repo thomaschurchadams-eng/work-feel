@@ -167,13 +167,22 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-20",
-        "status": "prepared",
+        "status": "pending-validation",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:59:50.396Z",
-        "nextAction": "Prepare official-data brief distinguishing cumulative five-year, missing annual and household outcomes; exact CI/artifact/own visual/live gates remain.",
+        "nextReviewAt": "2026-11-20T18:02:33.368Z",
+        "nextAction": "Observe actual terminal result; inspect exact artifact and actual390/1440 pixels, then verify production before closeout.",
         "candidateTitle": "BLS Puts Five-Year Price Rise at 22%; That Is Not an Annual Rate",
-        "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
+        "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html",
+        "evidence": {
+          "pending": {
+            "prNumber": 403,
+            "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
+            "run": 44785716279,
+            "job": 136459915410,
+            "runAttempt": 1
+          }
+        }
       },
       {
         "slot": 4,
@@ -232,7 +241,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T17:39:50.396Z",
+    "updatedAt": "2026-11-20T17:42:33.368Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
