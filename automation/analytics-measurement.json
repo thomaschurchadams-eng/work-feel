@@ -75,6 +75,14 @@
     ]
   },
   "events": {
+    "cuai_table_lore_view_home": "At least half of the game card was visible in a foreground tab, once per page load. Placement: homepage_card. Excludes internal, automated and preview traffic.",
+    "cuai_table_lore_first_guess_home": "First answer tapped on the owned game sample, once per page load; no answer is sent. Placement: homepage_card. Excludes internal, automated and preview traffic.",
+    "cuai_table_lore_host_cta_home": "Click on the public host call to action; not a confirmed game or purchase. Placement: homepage_card. Excludes internal, automated and preview traffic.",
+    "cuai_table_lore_copy_link_home": "Public host link successfully copied; not a confirmed share. Placement: homepage_card. Excludes internal, automated and preview traffic.",
+    "cuai_table_lore_view_article": "At least half of the game card was visible in a foreground tab, once per page load. Placement: article_end_card. Excludes internal, automated and preview traffic.",
+    "cuai_table_lore_first_guess_article": "First answer tapped on the owned game sample, once per page load; no answer is sent. Placement: article_end_card. Excludes internal, automated and preview traffic.",
+    "cuai_table_lore_host_cta_article": "Click on the public host call to action; not a confirmed game or purchase. Placement: article_end_card. Excludes internal, automated and preview traffic.",
+    "cuai_table_lore_copy_link_article": "Public host link successfully copied; not a confirmed share. Placement: article_end_card. Excludes internal, automated and preview traffic.",
     "article_view": "A full News or Insights article loads.",
     "engaged_reader": "The article remains visible for 30 active seconds.",
     "scroll_depth": "The reader reaches 25, 50, 75 or 90 percent.",

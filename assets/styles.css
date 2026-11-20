@@ -2656,3 +2656,37 @@ body.page-alerts-index #alerts-list > .alert-card:first-child .muted-label { col
 .article-newsletter-cta .link { color: #dbe8f2; text-decoration: underline; text-underline-offset: 3px; }
 .article-newsletter-cta .link:hover { color: #ffffff; }
 .article-newsletter-cta .btn-primary { color: #ffffff; text-decoration: none; }
+
+/* An owned Pineview game, visibly separate from news and sponsor inventory. */
+.table-lore { color: #322d26; }
+.table-lore--home { padding: 20px 0 6px; }
+.table-lore .tl-card { position: relative; isolation: isolate; overflow: hidden; width: min(calc(100% - 32px), var(--max-width, 1200px)); margin: 0 auto; padding: clamp(20px, 3vw, 38px); background: #fbf0d9; border: 1px solid #d9be92; border-left: 5px solid #874323; border-radius: 12px; }
+.table-lore .tl-card::after { content: ''; position: absolute; z-index: -1; top: -50px; right: -50px; width: 150px; height: 150px; border: 1px dashed #c99f6e; border-radius: 50%; box-shadow: 0 0 0 13px #f9ebce, 0 0 0 14px #dfc39a, 0 0 0 26px #f9ebce, 0 0 0 27px #dfc39a; pointer-events: none; }
+.table-lore--article { max-width: 760px; margin: 1.5rem auto; }
+.table-lore--article .tl-card { width: 100%; padding: clamp(16px, 2vw, 25px); }
+.table-lore .tl-brand { position: relative; color: #76381e; font: 700 .78rem/1.4 system-ui, sans-serif; letter-spacing: .025em; margin: 0 0 .75rem; }
+.table-lore .tl-mark { display: inline-block; margin-right: .38em; color: #934524; }
+.table-lore h2 { max-width: 31ch; margin: 0 0 .5rem; color: #352c23; font: 700 clamp(1.55rem, 3.5vw, 2.55rem)/1.1 var(--font-display, Georgia, serif); letter-spacing: -.025em; }
+.table-lore--article h2 { font-size: clamp(1.45rem, 2.3vw, 1.95rem); }
+.table-lore .tl-clue, .table-lore .tl-story { margin: 0; max-width: 69ch; line-height: 1.5; }
+.table-lore .tl-answers, .table-lore .tl-actions { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; margin-top: .9rem; }
+.table-lore .tl-answers button, .table-lore .tl-copy, .table-lore .tl-host { appearance: none; font: 650 .94rem/1.25 system-ui, sans-serif; cursor: pointer; min-height: 44px; }
+.table-lore .tl-answers button { padding: .55rem .95rem; color: #392d26; border: 1px solid #a58b6d; border-radius: 7px; background: #fffaf0; }
+.table-lore .tl-answers button:hover:not(:disabled) { border-color: #7b371c; background: #fff; }
+.table-lore .tl-answers button:disabled { cursor: default; opacity: 1; }
+.table-lore .tl-answers .tl-chosen { background: #714127; color: #fff; border-color: #714127; }
+.table-lore :is(button, a, input):focus-visible { outline: 3px solid #145b6a; outline-offset: 3px; }
+.table-lore .tl-reveal { margin-top: 1rem; padding-top: .8rem; border-top: 1px solid #d9be92; }
+.table-lore .tl-story { color: #472b1b; font-weight: 650; }
+.table-lore .tl-story:focus { outline: none; }
+.table-lore .tl-host { display: inline-flex; align-items: center; padding: .7rem .95rem; background: #68361e; color: white; border-radius: 7px; text-decoration: none; text-align: left; }
+.table-lore .tl-host:hover { background: #492312; }
+.table-lore .tl-copy { padding: .5rem; color: #55351f; background: transparent; border: 0; text-decoration: underline; text-underline-offset: .15rem; font-size: .84rem; }
+.table-lore .tl-price, .table-lore .tl-feedback { color: #554735; font-size: .86rem; line-height: 1.45; margin: .4rem 0 0; }
+.table-lore .tl-feedback:empty, .table-lore [hidden] { display: none; }
+.table-lore .tl-manual { width: min(100%, 36rem); padding: .55rem; color: #342c22; background: white; border: 1px solid #866e54; border-radius: 3px; }
+@media (max-width: 520px) {
+  .table-lore .tl-card::after { width: 90px; height: 90px; top: -65px; right: -50px; }
+  .table-lore .tl-answers { gap: .4rem; }
+  .table-lore .tl-answers button { padding-inline: .65rem; }
+}
