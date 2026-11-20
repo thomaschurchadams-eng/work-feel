@@ -5971,6 +5971,30 @@
       ],
       "summary": "Recovered PR #388 from its stale, non-mergeable base onto exact current main and repaired the visible update notice from one colon-bound paragraph to two clean paragraphs without changing the correction meaning. The rebased PR changes only the existing correction ledger, public corrections page and vendor-risk Insight; all 87 publication histories and 58 social rows remain outside the diff. Exact-head preview dpl_HQrvA9HGGEgLTCws9uWYjpRAA3rg is READY; desktop article and corrections-page checks found the notice and public record readable, with zero horizontal overflow or broken imagery. Release remains blocked: the natural exact-head validation run 44621011741 is still in progress, mobile/artifact acceptance is incomplete, and the existing daily-publisher consuming owner has not accepted the repaired exact head. No merge, production deployment, provider action, social write or article cycle occurred. Durable prevention: correction handoffs should not be considered complete until the maintenance owner records exact-head two-page responsive acceptance and a release receipt after the article cycle boundary.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-20T12:06:20.606Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "November20 ordinary publisher bootstrap and owned preflight hold; no duplicate cycle",
+      "dedupeKey": "cuai-publishing:2026-11-20",
+      "status": "blocked",
+      "workUnits": {
+        "browserPreflightAttempts": 1,
+        "discoveryPlans": 1,
+        "searchQueries": 8,
+        "publisherCandidatesFullyQualified": 0,
+        "articlesPublished": 0,
+        "socialSchedulingAttempts": 0,
+        "providerWriteAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Public source readers"
+      ],
+      "summary": "Read current main0e20ed2 controlling policy/protocol/bus and reconciled completed November19 five-article cycle plus aggregate recovery. Local check:browser failed on missing chromium_headless_shell-1234 with Playwright1.62.1, absent/unchanged cache. No install/cache/version change. Existing exact-head CI fallback remains permitted but no November20 content package or artifact acceptance was attempted. Bounded preliminary sources/discovery are incomplete, not twelve qualified candidates or editorial exhaustion. Zero publication/Alert/social/reservation/provider actions. All five core slots record the shared owned technical pre-validation hold; exact main state135e6e0 preserves prior complete current in88 histories and all87 previous entries. PR388 current-head CI success observed, but separate correction artifact/pixel acceptance and release not performed. No routine approval requested, no settings/access/spend or recurring-task changes. Usage/cost and unattended throughput remain unverified.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
