@@ -1891,7 +1891,6 @@
     };
 
     const body = document.body;
-    renderTableLore(sendEvent);
     // Follow intent is not a confirmed LinkedIn follow. Fixed dimensions only, no identifiers.
     const viewedFollowPlacements = new Set();
     const followPageType = document.body.classList.contains('page-home') ? 'home' :
@@ -2117,6 +2116,8 @@
         });
       }
     });
+
+    renderTableLore(sendEvent);
   };
 
   initPublicationAnalytics();
