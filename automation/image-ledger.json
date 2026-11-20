@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "soft-editorial-illustration",
+      "subject": "member-interaction",
+      "composition": "wide-environmental",
+      "perspective": "through-glass",
+      "palette": "slate-lime",
+      "lighting": "natural-window-light",
+      "texture": "ink-wash",
+      "scene": "Quiet counter with an anonymous hand and an unlettered payment device",
+      "topicFit": 80,
+      "editorialClarity": 82,
+      "score": 61.8,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 80,
+        "editorialClarity": 82
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "velera-money-services-debit-purchase-share",
+      "articleUrl": "/news/velera-money-services-debit-purchase-share.html",
+      "imagePath": "/assets/velera-money-services-debit-purchase-share.jpg",
+      "publishedAt": "2026-11-20T12:21:48-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "member-interaction",
+          "composition": "wide-environmental",
+          "perspective": "through-glass",
+          "palette": "slate-lime",
+          "lighting": "natural-window-light",
+          "texture": "ink-wash",
+          "scene": "Quiet counter with an anonymous hand and an unlettered payment device",
+          "topicFit": 80,
+          "editorialClarity": 82,
+          "score": 61.8,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 80,
+            "editorialClarity": 82
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "financial-object-study",
+          "composition": "modular-grid",
+          "perspective": "overhead",
+          "palette": "burgundy-sand",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "Unmarked payment card beside separate folded paper channels, no chart or numbers",
+          "topicFit": 91,
+          "editorialClarity": 92,
+          "score": 52.8,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 91,
+            "editorialClarity": 92
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "financial-object-study",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "emerald-cream",
+          "lighting": "rim-light",
+          "texture": "polished-metal",
+          "scene": "One blank card beside several separate metal channels, no bank logos",
+          "topicFit": 84,
+          "editorialClarity": 85,
+          "score": 49.3,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 84,
+            "editorialClarity": 85
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "e9a6322104038606b6d1009338a2e62bf9129e415f5427a951781203ba48a858"
+    },
+    {
       "medium": "macro-still-life",
       "subject": "financial-object-study",
       "composition": "single-object-negative-space",
