@@ -6028,6 +6028,42 @@
       ],
       "summary": "Diagnosed a repeated code/config contract failure, not a production or connector outage. The local publisher runtime lacks the pinned Chromium executable, but the authoritative policy also said both to stop before research and to prepare a qualified package for the existing CI fallback. That ordering contradiction caused all five core slots to inherit one pre-validation blocker with zero fully qualified candidates. A narrow policy/test repair now lets read-only source qualification continue while local visual acceptance and release remain blocked until exact-head CI and capable visual review pass; dummy and unqualified fallback packages remain forbidden. Current production is READY. All 88 publication histories and 58 social rows are preserved, with zero article, provider, reservation or social writes. The runtime browser remains unavailable and the same publisher must provide the next natural consuming-cycle proof.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "id": "cuai-20261120-daily-publisher-ci-fallback-resumption",
+      "timestamp": "2026-11-20T18:05:38.007Z",
+      "actor": "daily-publisher",
+      "runType": "recovery",
+      "trigger": "Resume the SAME November20 cycle through released PR399 exact-head CI fallback; separate from already-recorded morning blocked attempt, not a second article cycle.",
+      "status": "degraded",
+      "workUnits": {
+        "candidatePoolSize": 12,
+        "additionalCandidatesEvaluated": 9,
+        "articlesPublished": 3,
+        "unfilledCoreSlots": 2,
+        "exactHeadCIPackagesAccepted": 3,
+        "sourceTestExecutions": 1380,
+        "renderedCheckExecutions": 150,
+        "imageConceptsEvaluated": 9,
+        "imagesGenerated": 3,
+        "productionPackagesVerified": 3,
+        "localBrowserPreflights": 1,
+        "naturalOperationArtifactsRead": 2,
+        "socialSchedulingAttempts": 0,
+        "providerSubmissionAttempts": 0,
+        "directProviderReadCalls": 0,
+        "historyEntriesPreserved": 88,
+        "socialQueueRowsPreserved": 58,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Primary-source web pages",
+        "Buffer (existing natural-operation artifact only)"
+      ],
+      "summary": "PR401/402/403 independently source-qualified and sequentially passed460 source/50 rendered checks each, actual390/1440 screenshot review, production READY and exact public-byte verification. Published5Point selection, attributed Velera money-services brief and BLS five-year data brief; no verified vendor outcomes implied. Nine candidates held; slots4/5 editorial/source/distinctness/concentration holds, not local-browser blockage. Practical synthesis access403 retained without retry. Current-week social mix reviewed read-only; dated complete inventory81 sent/all81 review-held/16 canonical65 missing/zero active; no reservation or submission. Original local browser/cache incident remains open, exact CI fallback consumption proved. All88 histories and58 queue rows unchanged. No Alert/cadence/model/access change. No exact token, credit or cost evidence.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
