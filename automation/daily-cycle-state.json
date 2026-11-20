@@ -50,13 +50,13 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-20",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
         "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:21:09.833Z",
-        "nextAction": "Prepare qualified source-linked Standard brief and original artwork for exact-head CI; no local-browser acceptance or live claim.",
+        "nextReviewAt": "2026-11-20T17:20:01.286Z",
+        "nextAction": "Observe exact terminal result, verify artifact/revision/digest and actual390/1440 pixels before release; same owner retains checkpoint.",
         "evidence": {
           "editorialQualification": {
             "classification": "Standard",
@@ -65,6 +65,13 @@
             "sourceDate": "2026-11-19",
             "sourceLimit": "Mahalo-authored selection announcement with named5Point IT executive. Planned features/core integration; no launch date, measured service improvement or independently tested results.",
             "selectionRationale": "More clearly scoped named-CU decision than the higher numerical Velera metric, whose full-report denominator still needs inspection."
+          },
+          "pending": {
+            "prNumber": 401,
+            "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
+            "run": 44778877826,
+            "job": 136435960225,
+            "runAttempt": 1
           }
         }
       },
@@ -154,7 +161,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T16:56:09.833Z",
+    "updatedAt": "2026-11-20T17:00:01.286Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
