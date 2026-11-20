@@ -23,8 +23,8 @@
         "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
       }
     ],
-    "status": "in-progress",
-    "outcomeSlot": 3,
+    "status": "completed-with-editorial-holds",
+    "outcomeSlot": 4,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "credit-union-industry",
@@ -36,7 +36,7 @@
       "ai-research-platforms",
       "international-comparisons"
     ],
-    "researchStatus": "bounded12-candidate assessment; practical-synthesis access-blocked explicitly",
+    "researchStatus": "Completed bounded12-candidate/8-beat assessment:3 published,9 held. All five directions attempted; practical-synthesis coverage explicitly access-blocked. Accepted article bodies inspected; Velera full-report/sample remains unverified and excluded from claims. No supplemental scan or optional article.",
     "candidateObservations": [
       {
         "title": "UK AI cyber effective practices",
@@ -221,32 +221,22 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-20",
-        "status": "pre-validation-blocked",
+        "status": "editorial-hold",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T18:15:43.929Z",
-        "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-        "blocker": {
-          "stage": "candidate-preparation",
-          "reason": "Earlier owned article3 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
-          "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T18:00:43.929Z"
-        }
+        "nextReviewAt": "2026-11-21T12:00:00Z",
+        "nextAction": "Use only next existing normal November21 07:00 America/New_York cycle and its refreshed bounded pool; do not reopen November20 or retry denied source access.",
+        "holdReason": "Same bounded12-candidate pool exhausted after3 qualified articles. Remaining candidates do not establish distinct useful evidence: UK cyber thesis repeats existing FS-ISAC/FSB coverage; EmpowerFi exceeds existing primary-function/technology caps; other supplier/promotion/personnel stories do not clear usefulness or verification. No extra scan or lower threshold to fill slot4."
       },
       {
         "slot": 5,
         "plannedDate": "2026-11-20",
-        "status": "pre-validation-blocked",
+        "status": "editorial-hold",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T18:15:43.929Z",
-        "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-        "blocker": {
-          "stage": "candidate-preparation",
-          "reason": "Earlier owned article3 requires exact-head acceptance and live verification before a later package may start; local browser absence alone is no longer treated as blocking qualification.",
-          "nextAction": "Reassess this slot from the same bounded pool after preceding live closeout; no parallel package or fabricated validation identity.",
-          "observedAt": "2026-11-20T18:00:43.929Z"
-        }
+        "nextReviewAt": "2026-11-21T12:00:00Z",
+        "nextAction": "Use only next existing normal November21 07:00 America/New_York cycle and its refreshed bounded pool; do not reopen November20 or retry denied source access.",
+        "holdReason": "No additional source-qualified Library/data/case fallback in this pool. Succession synthesis lacks current second independently inspected primary basis (DFI403, no retry/bypass); Fed minutes direct body remains inaccessible; older Unify selection supplies no new milestone/operating outcome. No article created for slot5."
       }
     ],
     "browserReadiness": {
@@ -257,16 +247,62 @@
       "cacheChanged": false,
       "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
-      "fallback": "Qualified PR403 exact-head CI passed and its actual390/1440 pixels personally reviewed; retain actual production gate before closeout. Earlier successful exact fallback remains scoped to its own head; local Chromium remains unavailable.",
+      "fallback": "Actual exact-head CI fallback consumed successfully for PR401/402/403, each460 source tests/50 rendered checks, own390/1440 visual review and exact public article/hero/listing/Home/app/styles bytes against production READY. Local/shared cache recovery/isolation remains unproven; retain original reliability incident.",
       "localRecoveryProven": false,
       "latestObservedAt": "2026-11-20T16:53:44.930Z"
     },
-    "socialDecision": "not-evaluated-no-new-live-article",
+    "socialDecision": "prepared-nomination-only; all3 current-week Standard stories reasoned together, BLS selected read-only, no reservation/submission; provider destination-review/proof holds and passed fixed slot remain.",
     "socialDistribution": {
-      "status": "not-reserved",
+      "status": "held",
       "providerReservationAttempted": false,
       "providerSubmissionAttempts": 0,
-      "blocker": "Existing historical destination holds retained; no fresh provider inventory acquired this run. Prior dated receipts are not current capacity proof."
+      "blocker": "Complete dated natural inventory still requiresReview for all81 retained sent records; no reviewed current candidate exclusion proof or60-second reservation admission. Today's fixed12:30 Eastern slot has passed. No automatic proof renewal, catch-up or forced post.",
+      "initialObservation": {
+        "status": "not-reserved",
+        "providerReservationAttempted": false,
+        "providerSubmissionAttempts": 0,
+        "blocker": "Existing historical destination holds retained; no fresh provider inventory acquired this run. Prior dated receipts are not current capacity proof."
+      },
+      "latestReview": {
+        "observedAt": "2026-11-20T18:04:19.118Z",
+        "selector": {
+          "status": "selected",
+          "contentKind": "article",
+          "assetId": "bls-five-year-price-rise-october-2026",
+          "canonicalUrl": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html",
+          "selectionRationale": "Strongest transparent primary-data angle for finance/member-service leaders: keep the five-year comparison, missing annual series and individual outcomes separate. Actual current-week original publication and live body rechecked. Nomination only; provider review, proof and fixed-slot gates remain uncleared."
+        },
+        "inventory": {
+          "run": 44788784596,
+          "commit": "b817c7713e0e7099c04334fe999c6d38d6c17729",
+          "operationStatus": "verified",
+          "actions": [],
+          "errors": [],
+          "complete": true,
+          "observedAt": "2026-11-20T18:02:04.836Z",
+          "channelId": "6a53df0880cc80cdcaa76fb8",
+          "recordCount": 81,
+          "statusCounts": {
+            "sent": 81
+          },
+          "reviewCount": 81,
+          "requiresReview": true,
+          "canonicalRecords": 16,
+          "missingCanonicalRecords": 65,
+          "pagesRead": 1,
+          "reservationAdmission": false
+        },
+        "eligibleArticles": 3,
+        "qualifiedPreparedMedia": 0,
+        "recentMissedHigh": 0,
+        "perCandidateDisposition": [
+          "BLS: strongest primary-data/usefulness nomination; held from reservation.",
+          "5Point: useful task/handoff selection brief; held from reservation.",
+          "Velera: useful relationship-versus-payment measure with scope limits; held from reservation."
+        ],
+        "providerMutationAttempts": 0,
+        "nextCheck": "2026-11-21T12:00:00Z"
+      }
     },
     "assignedMaintenance": {
       "prNumber": 388,
@@ -275,7 +311,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T18:00:43.929Z",
+    "updatedAt": "2026-11-20T18:04:19.118Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
@@ -369,7 +405,7 @@
         "title": "Velera Reports a Larger Share of Debit Spending Going to Money Services",
         "sourceUrl": "https://www.cuinsight.com/press-release/the-velera-payments-index-november-2026/",
         "score": 71.3,
-        "status": "qualified-source-announcement",
+        "status": "published",
         "reason": "Actual November19 primary announcement re-read: 14.6 vs13.3 debit-purchase measure (+1.3 percentage points). Full report/sample/count-vs-value denominator unverified and explicitly excluded from claims. No national/account-loss outcome claim. Qualified as bounded attributed brief, not independently tested analysis.",
         "scoreInputs": {
           "confidence": 0.9,
@@ -382,7 +418,8 @@
             "sourceQuality": 100,
             "urgency": 78.68311067708333
           }
-        }
+        },
+        "publishedUrl": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
       },
       {
         "title": "Fed Minutes Describe AI Financing Risks",
@@ -407,7 +444,7 @@
         "title": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
         "sourceUrl": "https://www.cuinsight.com/press-release/5point-credit-union-selects-mahalo-banking-to-elevate-its-digital-banking-experience-and-expand-member-self-service/",
         "score": 70.5,
-        "status": "qualified",
+        "status": "published",
         "reason": "Specific source-backed brief, not observed implementation or CU-specific household outcome.",
         "scoreInputs": {
           "confidence": 0.9,
@@ -420,13 +457,14 @@
             "sourceQuality": 100,
             "urgency": 78.68311067708333
           }
-        }
+        },
+        "publishedUrl": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html"
       },
       {
         "title": "Five-Year Price Growth Is Not This Month’s Inflation Rate",
         "sourceUrl": "https://www.bls.gov/opub/ted/2026/consumer-prices-up-22-0-percent-over-5-years-ending-october-2026.htm",
         "score": 68,
-        "status": "qualified",
+        "status": "published",
         "reason": "Actual November19 BLS table and underlying November10 CPI release inspected. Five-year22.0, food24.0,shelter27.8; nonseasonally adjusted Oct2021–Oct2026, not an annual rate or individual/CU outcome. No artificial AI angle; primary finance function remains below3/week.",
         "scoreInputs": {
           "confidence": 0.96,
@@ -439,7 +477,8 @@
             "sourceQuality": 100,
             "urgency": 78.68311067708333
           }
-        }
+        },
+        "publishedUrl": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
       },
       {
         "title": "UK Regulators Outline AI Cyber Exposure Practices",
@@ -574,7 +613,8 @@
           }
         }
       }
-    ]
+    ],
+    "blockedReason": "3/5 core articles live;2 explicit editorial/source/distinctness/concentration holds after the unchanged12-candidate pool. Exact-head CI fallback worked; local browser absence is not the reason for these2 holds."
   },
   "history": [
     {
