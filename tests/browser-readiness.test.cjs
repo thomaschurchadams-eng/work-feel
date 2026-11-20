@@ -67,3 +67,12 @@ test('a concurrent main-only article is not mistaken for a deleted candidate rou
   const base = git(['rev-parse', 'HEAD']); git(['checkout', 'candidate']);
   assert.deepEqual(reviewRoutes(dir, ['/'], { CUAI_DESIGN_BASE_REF: base }), ['/', '/news/candidate.html']);
 });
+
+test('publisher keeps qualification moving through the isolated fallback while release remains fail closed', () => {
+  const policy = fs.readFileSync(path.join(root, 'automation/scheduled-tasks/publish-cuai-daily-article.md'), 'utf8');
+  assert.match(policy, /does not by itself block read-only research, source qualification, candidate selection or preparation/);
+  assert.match(policy, /Continue the ordinary cycle through read-only research and source qualification/);
+  assert.match(policy, /Hold release until the exact candidate head passes the complete rendered job and capable visual review/);
+  assert.match(policy, /Do not mark every article slot `pre-validation-blocked` solely because the local browser is absent while the CI fallback is available/);
+  assert.match(policy, /never an uncleared private expansion, a dummy content change or an unqualified package created merely to exercise the fallback/);
+});
