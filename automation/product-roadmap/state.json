@@ -1,0 +1,70 @@
+{
+  "brand": "cuai",
+  "decisions": [],
+  "items": {
+    "cuai-deployment-evidence-v1": {
+      "approvalScopes": [],
+      "evidence": {
+        "cuai-roadmap-handoff-evidence-20261014": {
+          "finding": "bounded pilot handoff proposed; receiving owner acceptance pending",
+          "observedAt": "2026-10-14",
+          "source": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-6175417087"
+        }
+      },
+      "goalId": null,
+      "history": [
+        {
+          "eventId": "cuai-pilot-rank-20261013",
+          "evidence": {
+            "finding": "selection and claimed capability distinguished from outcome",
+            "observedAt": "2026-10-13",
+            "source": "CUAI qualified reporting"
+          },
+          "stage": "ranked"
+        },
+        {
+          "eventId": "cuai-pilot-builder-accepted-20261014",
+          "evidence": {
+            "acceptedBy": "cuai-operating-system",
+            "acceptedHandoff": "cuai-pilot-builder-acceptance-20261014",
+            "artifactHash": "264e6038eca2b68a25c902e3a74278c07373f69ac20bd5ea7b3c11188a355cff",
+            "builderTaskId": "01a13bb8-6a9f-70fa-aed5-1aaebc1990ed",
+            "builderTurnId": "01a13bb8-7553-7208-bbb4-9f555dc29683",
+            "commentId": 6175760430,
+            "scope": "private deployment evidence dataset and three evaluation cases; no publication or training rights",
+            "sourceVersion": "bb4cd45fbb6c4c3dedc65511e649f7b03ccd3dc4"
+          },
+          "stage": "building"
+        }
+      ],
+      "id": "cuai-deployment-evidence-v1",
+      "kind": "data-asset",
+      "override": null,
+      "owner": "cuai-operating-system",
+      "signals": {
+        "evidence": 2,
+        "goal": 3,
+        "user": 3
+      },
+      "sources": [
+        "news/ornl-fcu-kobalt-ai-vendor-risk.html"
+      ],
+      "stage": "building",
+      "title": "Deployment evidence data and evaluation asset"
+    }
+  },
+  "outbox": {
+    "cuai-pilot-builder-accepted-20261014": {
+      "body": "eventId: cuai-pilot-builder-accepted-20261014\neventType: handoff\nfrom: roadmap-adapter\nto: cuai-operating-system\ngoalId: unassigned\npriority: normal\nobjective: Deployment evidence data and evaluation asset\ndedupeKey: roadmap:cuai:cuai-deployment-evidence-v1\nstatus: building\nevidence: {\"acceptedBy\": \"cuai-operating-system\", \"acceptedHandoff\": \"cuai-pilot-builder-acceptance-20261014\", \"artifactHash\": \"264e6038eca2b68a25c902e3a74278c07373f69ac20bd5ea7b3c11188a355cff\", \"builderTaskId\": \"01a13bb8-6a9f-70fa-aed5-1aaebc1990ed\", \"builderTurnId\": \"01a13bb8-7553-7208-bbb4-9f555dc29683\", \"commentId\": 6175760430, \"scope\": \"private deployment evidence dataset and three evaluation cases; no publication or training rights\", \"sourceVersion\": \"bb4cd45fbb6c4c3dedc65511e649f7b03ccd3dc4\"}\ntomApprovalRequired: no\nnextOwner: cuai-operating-system",
+      "destination": "thomaschurchadams-eng/work-feel#160",
+      "status": "pending"
+    }
+  },
+  "schema": 1,
+  "seenEvents": {
+    "cuai-pilot-builder-accepted-20261014": "83d288b4d0563ff6ffcd215b4477be9679657d7b1f900099f615dfe4d4bcf477",
+    "cuai-pilot-intake-20261013": "2efcbba8d005c9ed8e73fd7323bf9b452c35c464fca6c8f60592c305ffbdfb7f",
+    "cuai-pilot-rank-20261013": "bd1aabbfba9adb9b378ba9ac30fa243631c1a5a31422916e4662bc7b2ed4d82c",
+    "cuai-roadmap-handoff-evidence-20261014": "574d6d313ae487acbb0e947be566a0cdf513e028ead42cc65abdac57303a9307"
+  }
+}
