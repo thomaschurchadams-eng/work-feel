@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "macro-still-life",
+      "subject": "financial-object-study",
+      "composition": "single-object-negative-space",
+      "perspective": "macro",
+      "palette": "cobalt-coral",
+      "lighting": "rim-light",
+      "texture": "polished-metal",
+      "scene": "A plain device dock beside an empty service ticket tray",
+      "topicFit": 80,
+      "editorialClarity": 79,
+      "score": 54.1,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 80,
+        "editorialClarity": 79
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "5point-mahalo-digital-self-service-selection",
+      "articleUrl": "/news/5point-mahalo-digital-self-service-selection.html",
+      "imagePath": "/assets/5point-mahalo-digital-self-service-selection.jpg",
+      "publishedAt": "2026-11-20T11:57:44-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "cobalt-coral",
+          "lighting": "rim-light",
+          "texture": "polished-metal",
+          "scene": "A plain device dock beside an empty service ticket tray",
+          "topicFit": 80,
+          "editorialClarity": 79,
+          "score": 54.1,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 80,
+            "editorialClarity": 79
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "member-interaction",
+          "composition": "wide-environmental",
+          "perspective": "through-glass",
+          "palette": "burgundy-sand",
+          "lighting": "natural-window-light",
+          "texture": "ink-wash",
+          "scene": "A member using an unlettered tablet in a quiet branch, with a human service desk still visible beyond",
+          "topicFit": 94,
+          "editorialClarity": 93,
+          "score": 53.9,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 94,
+            "editorialClarity": 93
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "overhead",
+          "palette": "terracotta-sky",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "Independent service tiles connect to one plain core, no readable text",
+          "topicFit": 86,
+          "editorialClarity": 84,
+          "score": 42.6,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 86,
+            "editorialClarity": 84
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "7d79b7e9fbe612cde82bfc96dcf44508a1d6710b26377a8ec87dbf10b40a4c54"
+    },
+    {
       "medium": "ink-and-linocut",
       "subject": "documents-and-controls",
       "composition": "diagonal-motion",
