@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-20",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
       {
@@ -17,6 +17,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
       }
     ],
     "status": "in-progress",
@@ -167,7 +171,7 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-20",
-        "status": "validated",
+        "status": "live-verified",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-20T18:15:43.929Z",
@@ -210,7 +214,9 @@
             ],
             "observations": "Personally inspected actual390/1440 article title/date/deck/hero, complete body including preserved100-to122 dollar example and distinct five-year/annual/source limitations, source links, related links/footer; Home and News cards and actual404 artwork fallbacks. Clean wrapping, no overlap, unobstructed article content; actual accessibility/menu/tracker/error and recovery results clean."
           }
-        }
+        },
+        "productionCommit": "b817c7713e0e7099c04334fe999c6d38d6c17729",
+        "verifiedAt": "2026-11-20T18:02:04.508Z"
       },
       {
         "slot": 4,
