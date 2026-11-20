@@ -7,9 +7,14 @@
   },
   "current": {
     "date": "2026-11-20",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html"
+      }
+    ],
     "status": "in-progress",
     "outcomeSlot": 1,
     "evaluatedCandidateCount": 12,
@@ -50,7 +55,7 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-20",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
         "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html",
         "outcomeScope": "cycle",
@@ -101,7 +106,9 @@
             ],
             "observations": "Personally reviewed exact artifact mobile390/desktop1440 Home and News cards, article title/date/deck/hero/body/related links/footer and missing-artwork fallback. Clean legible wrapping, no obstruction or overflow, accurate selection-not-outcome framing; automated accessibility/navigation/error checks clean."
           }
-        }
+        },
+        "productionCommit": "6eff488a8aadf2d83253d5335176d362d0372f9d",
+        "verifiedAt": "2026-11-20T17:18:51.194Z"
       },
       {
         "slot": 2,
