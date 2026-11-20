@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T20:30:08.700642+00:00",
+  "updatedAt": "2026-11-20T13:16:00.000Z",
   "purpose": "Auditable CUAI process, reliability, measurement and operating-improvement backlog. Entries record evidence, proposed change, expected benefit, risk, validation, status, result and rollback.",
   "entries": [
     {
@@ -559,6 +559,23 @@
       "result": "Existing Intelligence owner applied the revised workflow in this correction and received independent output review. This records local acceptance only; final version-bound release/live evidence belongs to the authorized task result. Future recurring adoption, broader coverage and audience benefit remain unobserved.",
       "nextTrigger": "Complete exact-head release/Preview/live gates for this correction; apply the same reader-facing review at the next separately authorized Intelligence maintenance run.",
       "rollback": "Revert only this generator/layout/review correction; preserve all authoritative Intelligence records/history and unrelated publication/provider changes."
+    },
+    {
+      "id": "publisher-browser-fallback-order-2026-11-20",
+      "owner": "reliability-watch / daily-publisher",
+      "evidence": "The November 20 ordinary publisher recorded the shared local browser-preflight incident on all five core slots and stopped with zero fully qualified candidates even though its own receipt confirmed the existing exact-head CI fallback remained available. The authoritative policy first said a missing local executable blocked the cycle before research, then said the same cycle could prepare a qualified package for CI acceptance. Issue #160 comment 7039124247 recorded zero article, social, reservation and provider actions and a missed 12:35Z review checkpoint.",
+      "proposedChange": "Make the preflight stage block local visual acceptance and release, not read-only research or source qualification when the existing exact-head CI fallback is available. Keep every source, editorial, duplication, artwork, history, exact-head rendered and capable visual-review gate fail closed; forbid dummy or unqualified fallback packages.",
+      "expectedBenefit": "Remove a repeated browser-runtime deadlock without installing browsers, changing versions or permissions, weakening publication gates, or manufacturing content.",
+      "risk": "low",
+      "status": "implemented-awaiting-operational-proof",
+      "validation": [
+        "Policy text now separates local browser acceptance from read-only source qualification and requires the distinct failed stage to be recorded.",
+        "A focused contract test pins continued qualification, exact-head rendered acceptance, capable visual review, and the ban on dummy or unqualified packages.",
+        "Exact-head CI, preview/production identity and the next naturally applicable ordinary-cycle receipt remain separate required evidence."
+      ],
+      "result": "A narrow policy and regression-test repair is implemented for release through the normal repository gates. The local runtime remains without its pinned browser; this change does not claim a browser repair, a completed November 20 article cycle, or consuming-owner adoption.",
+      "nextTrigger": "The same daily publisher should resume the existing November 20 cycle, complete source qualification, and use the already-authorized exact-head CI path only for a genuinely qualified package. Record the first natural pending-to-terminal receipt without replaying completed work.",
+      "rollback": "Revert only the browser-fallback ordering paragraph and its focused contract test; preserve all publication, social, provider, schedule, permission and production history."
     }
   ]
 }
