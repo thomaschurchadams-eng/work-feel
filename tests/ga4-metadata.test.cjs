@@ -14,6 +14,7 @@ test('GA4 normalization preserves completeness and thresholding evidence', () =>
       dataLossFromOtherRow: true,
       subjectToThresholding: true,
       samplingMetadatas: [{ samplesReadCount: '10', samplingSpaceSize: '100' }],
+      dataTruncationReasons: [{ dataTruncationType: 'DATA_TRUNCATION_TYPE_PROPERTY', dataTruncationDate: '2026-09-01' }],
       schemaRestrictionResponse: { activeMetricRestrictions: [] },
       emptyReason: 'fixture'
     }
@@ -22,6 +23,7 @@ test('GA4 normalization preserves completeness and thresholding evidence', () =>
   assert.equal(mapped.metadata.subjectToThresholding, true);
   assert.equal(mapped.metadata.dataLossFromOtherRow, true);
   assert.deepEqual(mapped.metadata.samplingMetadatas, [{ samplesReadCount: '10', samplingSpaceSize: '100' }]);
+  assert.deepEqual(mapped.metadata.dataTruncationReasons, [{ dataTruncationType: 'DATA_TRUNCATION_TYPE_PROPERTY', dataTruncationDate: '2026-09-01' }]);
   assert.deepEqual(reportEvidence(mapped), { rowCount: 1, metadata: mapped.metadata });
 });
 
@@ -30,4 +32,5 @@ test('omitted GA4 completeness flags retain the API default of false', () => {
   assert.equal(mapped.metadata.subjectToThresholding, false);
   assert.equal(mapped.metadata.dataLossFromOtherRow, false);
   assert.deepEqual(mapped.metadata.samplingMetadatas, []);
+  assert.deepEqual(mapped.metadata.dataTruncationReasons, []);
 });
