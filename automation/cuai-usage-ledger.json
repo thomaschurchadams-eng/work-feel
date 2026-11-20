@@ -6096,6 +6096,71 @@
       ],
       "summary": "Recovered the November 20 browser-preflight deadlock without replaying the daily cycle. The same publisher assessed the bounded 12-candidate pool across all five discovery directions, used the released exact-head CI fallback only for three source-qualified packages, and live-verified three Standard articles after 460 source tests and 50 rendered checks per package plus actual 390/1440 visual review. Slots 4 and 5 closed as honest editorial/source/distinctness/concentration holds, not technical failures. Exact production is READY. All 88 publication histories and 58 social rows remain preserved; there are 56 sent, one intentionally retained legacy scheduled baseline, one planned item, zero queued items, and no duplicate reservation, provider write, queue write or social submission. The local Chromium executable is still absent, so this proves safe fallback consumption rather than a local runtime repair.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261120-operating-system-01",
+      "timestamp": "2026-11-20T16:03:12-05:00",
+      "actor": "cuai-operating-system",
+      "runType": "scheduled",
+      "trigger": "Friday operating review after the completed November 20 publisher and reliability handoffs.",
+      "status": "completed-with-evidence-backed-blockers",
+      "dedupeKey": "cuai-operating-system:2026-11-20",
+      "workUnits": {
+        "publisherHandoffsConsumed": 1,
+        "reliabilityHandoffsConsumed": 1,
+        "cfoHandoffsConsumed": 0,
+        "articlesPublishedObserved": 3,
+        "coreSlotsHeldObserved": 2,
+        "weeklyArticlesObserved": 23,
+        "weeklyArticleTarget": 25,
+        "candidatesEvaluatedObserved": 12,
+        "beatsSearchedObserved": 8,
+        "portfolioArticlesReviewed": 132,
+        "portfolioLookbackArticlesReviewed": 54,
+        "officialAlertSourceSurfacesReviewed": 5,
+        "alertsPublished": 0,
+        "weeklyAlertsObserved": 2,
+        "freshAlertsRetained": 1,
+        "homepageFreshnessChecks": 1,
+        "homepageWatchWrites": 0,
+        "exactCurrentOperationsArtifactsConsumed": 0,
+        "analyticsSourcesBlocked": 1,
+        "weeklyDistributionOpportunitiesCarriedForward": 5,
+        "externalDistributionActionsCompleted": 0,
+        "socialQueueItemsReviewed": 58,
+        "socialQueueWrites": 0,
+        "productionDeploymentsVerified": 1,
+        "runtimeErrorWindowsChecked": 1,
+        "runtimeErrorsObserved": 0,
+        "policyCheckerAttempts": 1,
+        "policyCheckerSuccesses": 1,
+        "usageLedgerEntriesAppended": 1,
+        "externalOutreachAttempted": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "public official web sources"
+      ],
+      "operationalLearning": {
+        "issue": "The week closed at 23 of 25 full articles because Friday's source-qualified pool cleared only three Standard News items. The 54-article portfolio remains heavily functional-leader and News weighted. Current main has no exact-current verified-operations artifact, so current audience performance cannot be stated safely.",
+        "correction": "Kept both Friday source holds, did not weaken source or editorial gates, retained the November 19 OFAC Alert as the fresh homepage owner, preserved social state, and treated Thursday's exact metrics only as dated prior evidence. Kept the succession framework as evidence-gated rather than retrying the denied DFI route.",
+        "controllingVersion": {
+          "repositoryMain": "0d062363c8925cfc7bfa1fb250445f435322e546",
+          "policyBlob": "01c7484685216de008e59c4cd798599b99a52bfc",
+          "exactMainDeployment": "dpl_D3KEqQRUmFGYbmokUDcPf81vYkkP",
+          "publisherHandoffEvent": "cuai-20261120-publisher-resumption-closeout",
+          "reliabilityHandoffEvent": "cuai-20261120-reliability-browser-fallback-recovered"
+        },
+        "owner": "cuai-operating-system retains portfolio, Alert and analytics learning; daily-publisher may consume a distinct executive/Library candidate under existing gates.",
+        "test": "The policy checker passed for the checked-out policy set. Exact main is production READY, the available 24-hour runtime-error query returned no errors, the live homepage renders the November 19 OFAC Alert as Latest, and all three Friday article links are present. Official-source review produced no qualified new Alert; the November 20 Federal Reserve survey is bank-reserve data rather than an urgent credit-union operating change. No exact-current verified-operations run exists for the current main revision.",
+        "decision": "output-sla-partially-met; keep-quality-gates; current-analytics-inconclusive; retain-fresh-alert; carry-forward-distribution-set-without-external-action",
+        "actualResult": "No full article, Alert, social retry, provider reservation, queue mutation, homepage watch write, external contact, spend, credential, schedule, pricing, legal/privacy or editorial-gate change was created.",
+        "nextTrigger": "At the next ordinary review, require an exact-current verified-operations artifact before current analytics learning. In the next ordinary publisher pool, prefer a source-qualified executive/Library candidate distinct from Friday's three stories; do not retry the succession item unless the missing second primary source becomes available."
+      },
+      "summary": "Friday closed with three verified Standard articles and two documented source/editorial holds, putting the full week at 23 of 25 articles and two Alerts: the output SLA is partially met, while every source and editorial gate held. The 132-article portfolio remains concentrated: the trailing 54 items contain 44 News versus 10 Insights and 53 functional-leader versus one executive item; the trailing 28 are all functional-leader. No new Alert qualified after the completed article handoff; the November 20 Federal Reserve survey did not establish an urgent credit-union action, and the live November 19 OFAC Alert remains fresh, so no homepage write was made. Exact current main is production READY with no observed runtime errors, but no exact-current verified-operations artifact exists, so current analytics are inconclusive rather than zero. Monday's five competitive-distribution opportunities remain controlling; no external action or submission occurred. No relevant CFO handoff was present on the bus for November 20.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
