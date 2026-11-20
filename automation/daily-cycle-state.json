@@ -113,13 +113,22 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-20",
-        "status": "prepared",
+        "status": "pending-validation",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:40:41.492Z",
-        "nextAction": "Prepare clearly attributed single-source research-announcement brief; exact CI/artifact/own visual and live gates required.",
+        "nextReviewAt": "2026-11-20T17:42:50.160Z",
+        "nextAction": "Observe actual terminal result; inspect exact artifact and actual390/1440 pixels, then verify production before closeout.",
         "candidateTitle": "Velera Reports a Larger Money-Services Slice of Debit Purchases",
-        "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
+        "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html",
+        "evidence": {
+          "pending": {
+            "prNumber": 402,
+            "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
+            "run": 44782678311,
+            "job": 136449211724,
+            "runAttempt": 1
+          }
+        }
       },
       {
         "slot": 3,
@@ -193,7 +202,7 @@
       "conclusion": "success",
       "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
     },
-    "updatedAt": "2026-11-20T17:20:41.492Z",
+    "updatedAt": "2026-11-20T17:22:50.160Z",
     "discoveryCoverage": {
       "date": "2026-11-20",
       "candidateCount": 12,
