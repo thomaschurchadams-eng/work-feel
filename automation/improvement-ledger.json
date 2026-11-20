@@ -567,14 +567,17 @@
       "proposedChange": "Make the preflight stage block local visual acceptance and release, not read-only research or source qualification when the existing exact-head CI fallback is available. Keep every source, editorial, duplication, artwork, history, exact-head rendered and capable visual-review gate fail closed; forbid dummy or unqualified fallback packages.",
       "expectedBenefit": "Remove a repeated browser-runtime deadlock without installing browsers, changing versions or permissions, weakening publication gates, or manufacturing content.",
       "risk": "low",
-      "status": "implemented-awaiting-operational-proof",
+      "status": "completed",
       "validation": [
         "Policy text now separates local browser acceptance from read-only source qualification and requires the distinct failed stage to be recorded.",
         "A focused contract test pins continued qualification, exact-head rendered acceptance, capable visual review, and the ban on dummy or unqualified packages.",
-        "Exact-head CI, preview/production identity and the next naturally applicable ordinary-cycle receipt remain separate required evidence."
+        "Exact-head CI, preview/production identity and the next naturally applicable ordinary-cycle receipt remain separate required evidence.",
+        "The same November 20 publisher resumed the existing cycle under released main, assessed the bounded 12-candidate/all-five-direction pool, and used exact-head CI only for three genuinely source-qualified packages.",
+        "PR401/402/403 each passed 460 source tests and 50 rendered checks, received actual 390/1440 visual acceptance, reached exact READY production, and returned live article/artwork behavior.",
+        "Canonical closeout recorded three live-verified articles and two honest editorial holds with 88 publication histories and all 58 social rows preserved; zero provider writes, reservations or social submissions occurred."
       ],
-      "result": "A narrow policy and regression-test repair is implemented for release through the normal repository gates. The local runtime remains without its pinned browser; this change does not claim a browser repair, a completed November 20 article cycle, or consuming-owner adoption.",
-      "nextTrigger": "The same daily publisher should resume the existing November 20 cycle, complete source qualification, and use the already-authorized exact-head CI path only for a genuinely qualified package. Record the first natural pending-to-terminal receipt without replaying completed work.",
+      "result": "Released and naturally consumed by the same publisher. The November 20 cycle recovered from 0/5 preflight blockage to three exact-live Standard articles and two policy-compliant editorial holds without replay, dummy packages or weakened gates. The local Chromium executable remains absent; the proven outcome is safe exact-head CI fallback consumption, not local runtime repair.",
+      "nextTrigger": "On the next ordinary cycle that needs the fallback, retain the same source qualification, exact-head CI, actual visual review and live verification gates. Treat a local-browser recovery as separate evidence; do not reopen November 20.",
       "rollback": "Revert only the browser-fallback ordering paragraph and its focused contract test; preserve all publication, social, provider, schedule, permission and production history."
     }
   ]
