@@ -7,12 +7,16 @@
   },
   "current": {
     "date": "2026-11-20",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
       }
     ],
     "status": "in-progress",
@@ -113,7 +117,7 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-20",
-        "status": "validated",
+        "status": "live-verified",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-20T17:52:06.957Z",
@@ -156,7 +160,9 @@
             ],
             "observations": "Personally reviewed exact artifact390/1440 article title/date/deck/hero and complete body, related links/footer, Home and News lead cards, and actual404 artwork fallbacks. Legible typography/wrapping, no overlap/overflow/obstruction; accurate explicit full-report/sample limitation. Actual route menu/tracker and accessibility/error results clean."
           }
-        }
+        },
+        "productionCommit": "496376dbade74f5aad2d61ed6a6793634029bdfc",
+        "verifiedAt": "2026-11-20T17:38:17.861Z"
       },
       {
         "slot": 3,
