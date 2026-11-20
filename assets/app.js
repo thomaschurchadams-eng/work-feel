@@ -1782,6 +1782,100 @@
   };
   renderHouseCampaign();
 
+  // Table Lore is an owned game, independent of reporting and paid sponsorship.
+  function renderTableLore(sendEvent) {
+    const home = document.body.classList.contains('page-home');
+    const article = document.body.classList.contains('page-article') && !pagePath.endsWith('/article-template.html');
+    if ((!home && !article) || document.querySelector('[data-table-lore]')) return;
+    const anchor = document.querySelector(home ? 'main .latest-alert-section' : 'main .article-body');
+    if (!anchor) return;
+    const placement = home ? 'homepage_card' : 'article_end_card';
+    const surface = home ? 'home' : 'article';
+    const href = 'https://pineview-table-lore.vercel.app/?view=host&utm_source=cuai&utm_medium=owned&utm_campaign=thanksgiving_2026&utm_content=' + placement;
+    const card = document.createElement('aside');
+    card.className = 'table-lore table-lore--' + surface;
+    card.dataset.tableLore = placement;
+    card.setAttribute('aria-labelledby', 'table-lore-question');
+    card.innerHTML = `
+      <div class="tl-card">
+        <div class="tl-brand"><span class="tl-mark" aria-hidden="true">✳</span>Table Lore · A game from Pineview AI</div>
+        <h2 id="table-lore-question">Who packed a toaster for a camping trip?</h2>
+        <p class="tl-clue">Maya packed the tent. Grandad insisted on travelling light. Pat takes breakfast very seriously.</p>
+        <div class="tl-answers" role="group" aria-labelledby="table-lore-question">
+          <button type="button">Aunt Maya</button><button type="button">Grandad</button><button type="button">Uncle Pat</button>
+        </div>
+        <div class="tl-reveal" hidden>
+          <p class="tl-story" tabindex="-1">It was Uncle Pat. He even remembered the extension cord. The nearest socket was five miles away.</p>
+          <div class="tl-actions"><a class="tl-host">Make a game for my table</a><button class="tl-copy" type="button">Copy link for later</button></div>
+          <p class="tl-price">First round free. Then $12 once for the whole table.</p>
+          <p class="tl-feedback" role="status" aria-live="polite"></p>
+          <input class="tl-manual" type="url" aria-label="Public Table Lore link to copy" readonly hidden>
+        </div>
+      </div>`;
+    // Keep a resumed contextual sponsor in its pre-existing slot.
+    const after = anchor.nextElementSibling?.matches('.institute-banner[data-cai-banner-placement="contextual_followup"]')
+      ? anchor.nextElementSibling : anchor;
+    after.after(card);
+    const host = card.querySelector('.tl-host');
+    host.href = href;
+    const evergreenAt = Date.parse('2026-11-30T00:00:00-05:00'); // midnight in New York
+    function refreshLabel() {
+      host.textContent = Date.now() < evergreenAt ? 'Make a game for my Thanksgiving table' : 'Make a game for my table';
+    }
+    const remaining = evergreenAt - Date.now();
+    if (remaining > 0 && remaining <= 2147483647) window.setTimeout(refreshLabel, remaining);
+    document.addEventListener('visibilitychange', refreshLabel);
+    refreshLabel();
+    const track = action => {
+      // Preview deployments must never count as readers. sendEvent also excludes internal/automated traffic.
+      if (!['creditunionainews.com', 'www.creditunionainews.com'].includes(window.location.hostname)) return;
+      sendEvent('cuai_table_lore_' + action + '_' + surface, { campaign_id: 'thanksgiving_2026', placement, variant: 'v1' });
+    };
+    if (typeof IntersectionObserver === 'function') {
+      let inView = false, counted = false;
+      const recordView = () => {
+        if (counted || !inView || document.visibilityState !== 'visible') return;
+        counted = true;
+        track('view');
+        observer.disconnect();
+        document.removeEventListener('visibilitychange', recordView);
+      };
+      const observer = new IntersectionObserver(entries => {
+        for (const entry of entries) if (entry.target === card.querySelector('.tl-card')) {
+          inView = entry.isIntersecting && entry.intersectionRatio >= 0.5; recordView();
+        }
+      }, { threshold: [0, 0.5] });
+      observer.observe(card.querySelector('.tl-card'));
+      document.addEventListener('visibilitychange', recordView);
+    }
+    let guessed = false;
+    const choices = [...card.querySelectorAll('.tl-answers button')];
+    for (const choice of choices) choice.addEventListener('click', () => {
+      if (guessed) return;
+      guessed = true;
+      track('first_guess');
+      choice.classList.add('tl-chosen');
+      for (const button of choices) button.disabled = true;
+      refreshLabel();
+      card.querySelector('.tl-reveal').hidden = false;
+      card.querySelector('.tl-story').focus({ preventScroll: true });
+    });
+    host.addEventListener('click', () => track('host_cta'));
+    const feedback = card.querySelector('.tl-feedback');
+    card.querySelector('.tl-copy').addEventListener('click', async () => {
+      const manual = card.querySelector('.tl-manual');
+      try {
+        await navigator.clipboard.writeText(href);
+        manual.hidden = true;
+        feedback.textContent = 'Link copied.';
+        track('copy_link');
+      } catch {
+        feedback.textContent = 'Select and copy this link:';
+        manual.value = href; manual.hidden = false; manual.focus(); manual.select();
+      }
+    });
+  }
+
   // Privacy-safe publication analytics. Never include email addresses, names, or article text.
   const initPublicationAnalytics = () => {
     const sendEvent = (name, params = {}) => {
@@ -1949,6 +2043,7 @@
     document.addEventListener('click', (event) => {
       const link = event.target.closest('a[href]');
       if (!link) return;
+      if (link.closest('[data-table-lore]')) return; // dedicated owned-game events, never an editorial source click
       const url = new URL(link.href, window.location.href);
       const label = (link.textContent || link.getAttribute('aria-label') || '').trim().slice(0, 80);
       const sameHost = url.hostname === window.location.hostname;
@@ -2021,6 +2116,8 @@
         });
       }
     });
+
+    renderTableLore(sendEvent);
   };
 
   initPublicationAnalytics();
