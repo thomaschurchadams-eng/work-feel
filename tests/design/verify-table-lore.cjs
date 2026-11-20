@@ -27,7 +27,7 @@ module.exports = async (browser, base, out, axePath) => {
       const response=await page.goto(base+route);assert.equal(response.status(),200);
       const card=page.locator('[data-table-lore]');await card.waitFor({state:'visible'});assert.equal(await card.count(),1);
       const placement=name==='home'?'homepage_card':'article_end_card';
-      const href=gameOrigin+'/?utm_source=cuai&utm_medium=owned&utm_campaign=thanksgiving_2026&utm_content='+placement;
+      const href=gameOrigin+'/?view=host&utm_source=cuai&utm_medium=owned&utm_campaign=thanksgiving_2026&utm_content='+placement;
       assert.equal(await card.getAttribute('data-table-lore'),placement);
       assert.equal(await card.locator('h2').innerText(),'Who packed a toaster for a camping trip?');
       assert.equal(await card.locator('.tl-reveal').isVisible(),false);

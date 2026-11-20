@@ -32,7 +32,7 @@ function fixture({home=true, hostname='creditunionainews.com', webdriver=false, 
 }
 for(const home of [true,false])test('Table Lore renders one placement, counts only visible views and first response: '+(home?'homepage':'article'),async()=>{
   const f=fixture({home}),surface=home?'home':'article',placement=home?'homepage_card':'article_end_card';
-  const expected='https://pineview-table-lore.vercel.app/?utm_source=cuai&utm_medium=owned&utm_campaign=thanksgiving_2026&utm_content='+placement;
+  const expected='https://pineview-table-lore.vercel.app/?view=host&utm_source=cuai&utm_medium=owned&utm_campaign=thanksgiving_2026&utm_content='+placement;
   assert.equal(f.card.dataset.tableLore,placement);
   assert.equal(f.nodes['.tl-host'].href,expected);
   assert.equal(f.nodes['.tl-host'].textContent,'Make a game for my Thanksgiving table');

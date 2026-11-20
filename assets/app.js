@@ -1791,7 +1791,7 @@
     if (!anchor) return;
     const placement = home ? 'homepage_card' : 'article_end_card';
     const surface = home ? 'home' : 'article';
-    const href = 'https://pineview-table-lore.vercel.app/?utm_source=cuai&utm_medium=owned&utm_campaign=thanksgiving_2026&utm_content=' + placement;
+    const href = 'https://pineview-table-lore.vercel.app/?view=host&utm_source=cuai&utm_medium=owned&utm_campaign=thanksgiving_2026&utm_content=' + placement;
     const card = document.createElement('aside');
     card.className = 'table-lore table-lore--' + surface;
     card.dataset.tableLore = placement;
