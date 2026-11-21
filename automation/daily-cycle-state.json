@@ -31,7 +31,7 @@
         "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html"
       }
     ],
-    "status": "in-progress",
+    "status": "completed",
     "outcomeSlot": 5,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
@@ -651,7 +651,99 @@
       "fallback": "Use existing exact-head CI for this genuinely qualified ordinary package; no local install/cache mutation or waiver."
     },
     "socialDecision": "not-reserved; existing provider/historical holds retained",
-    "updatedAt": "2026-11-21T12:02:42.111Z"
+    "updatedAt": "2026-11-21T12:02:42.111Z",
+    "distributionOutcome": {
+      "status": "held-provider-review",
+      "accountableOwner": "daily-publisher",
+      "recordedAt": "2026-11-21T14:02:49.599Z",
+      "decision": "No social reservation or submission",
+      "evidence": {
+        "run": 44911765613,
+        "attempt": 1,
+        "artifact": 14709918538,
+        "sha256": "36eeae41c44a40b88481061241d8d1a6030e148a1e50843fe9ddb25d7149445f",
+        "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+        "status": "verified",
+        "production": {
+          "status": 200,
+          "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+          "runCommit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+          "environment": "production",
+          "reportOnlyDrift": true,
+          "driftFiles": []
+        },
+        "completedAt": "2026-11-21T14:01:54.738Z",
+        "actions": 0,
+        "errors": 0,
+        "reconciliations": 0,
+        "inventory": {
+          "complete": true,
+          "requiresReview": true,
+          "observedAt": "2026-11-21T14:01:54.562Z",
+          "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+          "channel": "6a53df0880cc80cdcaa76fb8",
+          "records": 81,
+          "sent": 81,
+          "active": 0,
+          "canonical": 16,
+          "missingCanonical": 65,
+          "reviewFlags": 81,
+          "pagesRead": 1,
+          "latestSent": "2026-11-18T20:30:07.043Z"
+        }
+      },
+      "inventoryPurpose": "Read existing naturally triggered trusted receipt only; this is not a current reservation/capacity guarantee and must never renew proof or the60second freshness bound.",
+      "reason": "Historical/unknown-active holds remain; no reviewed current candidate-specific exclusion/proof clears these new destinations. Complete inventory alone and a fresh article date do not clear duplicate/destination uncertainty. Two old unresolved ledger rows preserved.",
+      "opportunities": [
+        {
+          "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
+          "classification": "Standard",
+          "articlePublicationWeek": "2026-11-16",
+          "disposition": "held-provider-review",
+          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+        },
+        {
+          "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
+          "classification": "Standard",
+          "articlePublicationWeek": "2026-11-16",
+          "disposition": "held-provider-review",
+          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+        },
+        {
+          "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
+          "classification": "Standard",
+          "articlePublicationWeek": "2026-11-16",
+          "disposition": "held-provider-review",
+          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+        },
+        {
+          "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
+          "classification": "Standard",
+          "articlePublicationWeek": "2026-11-16",
+          "disposition": "held-provider-review",
+          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+        },
+        {
+          "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
+          "classification": "Standard",
+          "articlePublicationWeek": "2026-11-16",
+          "disposition": "held-provider-review",
+          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+        }
+      ],
+      "reservations": 0,
+      "submissions": 0,
+      "sentClaim": false
+    },
+    "optionalSelection": {
+      "decision": "none-qualified",
+      "coreLiveCount": 5,
+      "maximum": 7,
+      "selected": [],
+      "candidatePoolCount": 12,
+      "selectorObservedAt": "2026-11-21T14:02:48.552Z",
+      "reason": "The same12-candidate bounded pool yielded five actual verified core articles. Remaining seven leads remain source/confidence/distinctness or natural weekly-function-cap holds, with no independently qualified strong distinct optional extra. No six/seven quota slots or additional scan."
+    }
   },
   "history": [
     {
