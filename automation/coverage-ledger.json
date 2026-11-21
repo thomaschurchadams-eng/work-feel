@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "bill-tpg-corpay-acquisition-agreement",
+      "title": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
+      "url": "/news/bill-tpg-corpay-acquisition-agreement.html",
+      "publishedAt": "2026-11-21T07:50:59-05:00",
+      "section": "news",
+      "beat": "bill-tpg-corpay-acquisition-agreement",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor Management leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/cornerstone-small-business-workflow-primary-account.html",
+        "/insight-credit-union-ai-contract-monitoring-controls.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "BILL November19 definitive-agreement release and Corpay Form8-K furnished announcement read. Equity value not enterprise value; signed agreement not closing. No measured CU adoption, migration, contractual change or service gain established."
+    },
+    {
       "id": "oaknorth-us-combination-approval",
       "title": "US Approval Moves OakNorth’s Community Unity Deal Forward",
       "url": "/news/oaknorth-us-combination-approval.html",

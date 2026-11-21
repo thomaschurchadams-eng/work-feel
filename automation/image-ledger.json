@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "dimensional-3d",
+      "subject": "financial-object-study",
+      "composition": "tight-close-up",
+      "perspective": "low-angle",
+      "palette": "burgundy-sand",
+      "lighting": "rim-light",
+      "texture": "polished-metal",
+      "scene": "Plain ownership key resting between two geometric blocks, no labels",
+      "topicFit": 93,
+      "editorialClarity": 91,
+      "score": 67.5,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 93,
+        "editorialClarity": 91
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "bill-tpg-corpay-acquisition-agreement",
+      "articleUrl": "/news/bill-tpg-corpay-acquisition-agreement.html",
+      "imagePath": "/assets/bill-tpg-corpay-acquisition-agreement.jpg",
+      "publishedAt": "2026-11-21T07:50:59-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "dimensional-3d",
+          "subject": "financial-object-study",
+          "composition": "tight-close-up",
+          "perspective": "low-angle",
+          "palette": "burgundy-sand",
+          "lighting": "rim-light",
+          "texture": "polished-metal",
+          "scene": "Plain ownership key resting between two geometric blocks, no labels",
+          "topicFit": 93,
+          "editorialClarity": 91,
+          "score": 67.5,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 93,
+            "editorialClarity": 91
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "isometric",
+          "palette": "slate-lime",
+          "lighting": "high-contrast-studio",
+          "texture": "frosted-glass",
+          "scene": "Two distinct groups of neutral unlabelled shapes connected by one translucent bridge",
+          "topicFit": 84,
+          "editorialClarity": 85,
+          "score": 63.6,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 84,
+            "editorialClarity": 85
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "architecture-and-infrastructure",
+          "composition": "split-comparison",
+          "perspective": "eye-level",
+          "palette": "amber-charcoal",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Two unlettered building silhouettes beneath a single arch",
+          "topicFit": 88,
+          "editorialClarity": 88,
+          "score": 51.1,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 88,
+            "editorialClarity": 88
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "99774d241c65298626d49746bd94c11080d3bac074cdaa2f494e9383474c1372"
+    },
+    {
       "medium": "mixed-media-collage",
       "subject": "financial-object-study",
       "composition": "foreground-background-tension",
