@@ -524,19 +524,26 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-21",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
         "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:44:12.405Z",
-        "nextAction": "Prepare immutable atomic article; bind actual PR/head/run/job/attempt before terminal outcome.",
+        "nextReviewAt": "2026-11-21T13:36:44.081Z",
+        "nextAction": "Same owner observe actual terminal result, retrieve exact artifact and personally review pixels; no release from CI counts alone.",
         "evidence": {
           "preparation": {
             "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
             "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
             "preparedAt": "2026-11-21T13:14:12.405Z",
             "sourceReview": "Qualified on November19 original reporting plus dated PNC branch plan and2025 service explanation. Actual member-service strategy; AI-era return is expectation, not measured gain. Natural MemberService third seat; industry-development not invented deployed AI."
+          },
+          "pending": {
+            "prNumber": 409,
+            "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
+            "run": 44908022945,
+            "job": 136857671526,
+            "runAttempt": 1
           }
         }
       }
