@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fhlbank-indianapolis-five-credit-union-housing-awards",
+      "title": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
+      "url": "/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
+      "publishedAt": "2026-11-21T08:38:34-05:00",
+      "section": "news",
+      "beat": "fhlbank-indianapolis-five-credit-union-housing-awards",
+      "functions": [
+        "operations"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/noffcu-duome-shared-equity-homeownership.html",
+        "/news/fhfa-mortgage-insurance-cancellation-pilot.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Actual 2026 issuer award PDF pages1,2,4,5 read and visually checked. Five CU entries sum3.6m subsidy and152 AHP-assisted vs154 total project units. Award not disbursement or delivered homes; NewDay intake center figure remains source-defined assisted units, not households. Original public posting clock not independently established; no urgency score attributed."
+    },
+    {
       "id": "pnc-branch-hospitality-human-service",
       "title": "PNC Puts Hospitality Alongside Its Branch Expansion",
       "url": "/news/pnc-branch-hospitality-human-service.html",

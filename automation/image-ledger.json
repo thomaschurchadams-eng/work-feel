@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "refined-data-abstraction",
+      "subject": "abstract-data-system",
+      "composition": "modular-grid",
+      "perspective": "isometric",
+      "palette": "slate-lime",
+      "lighting": "high-contrast-studio",
+      "texture": "frosted-glass",
+      "scene": "Unlabelled small housing-like geometric models grouped beside a plain document slab, no data chart",
+      "topicFit": 85,
+      "editorialClarity": 85,
+      "score": 63.9,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 85,
+        "editorialClarity": 85
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "fhlbank-indianapolis-five-credit-union-housing-awards",
+      "articleUrl": "/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
+      "imagePath": "/assets/fhlbank-indianapolis-five-credit-union-housing-awards.jpg",
+      "publishedAt": "2026-11-21T08:38:34-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "isometric",
+          "palette": "slate-lime",
+          "lighting": "high-contrast-studio",
+          "texture": "frosted-glass",
+          "scene": "Unlabelled small housing-like geometric models grouped beside a plain document slab, no data chart",
+          "topicFit": 85,
+          "editorialClarity": 85,
+          "score": 63.9,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 85,
+            "editorialClarity": 85
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "architecture-and-infrastructure",
+          "composition": "wide-environmental",
+          "perspective": "eye-level",
+          "palette": "graphite-electric-yellow",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Five small abstract housing forms beside an unlettered open project folder, illustrative not a specific development",
+          "topicFit": 94,
+          "editorialClarity": 94,
+          "score": 54.1,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 94,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "composition": "overhead-flat-lay",
+          "perspective": "overhead",
+          "palette": "emerald-cream",
+          "lighting": "soft-daylight",
+          "texture": "paper-fiber",
+          "scene": "Unmarked open project folder with a restrained row of paper housing shapes and neutral documentation, no figures or words",
+          "topicFit": 94,
+          "editorialClarity": 93,
+          "score": 53.9,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 94,
+            "editorialClarity": 93
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "ebeebe20766c3238d1491300d850afb574c78cae47eec14c63ba7cac8e707ca3"
+    },
+    {
       "medium": "editorial-photography",
       "subject": "member-interaction",
       "composition": "layered-depth",
