@@ -7,12 +7,16 @@
   },
   "current": {
     "date": "2026-11-21",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html"
       }
     ],
     "status": "in-progress",
@@ -344,7 +348,7 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-21",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
         "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
         "outcomeScope": "cycle",
@@ -393,7 +397,9 @@
             ],
             "observations": "Personally reviewed exact full article390/1440, mobile News first-card and desktop Home lead pixels. Title/deck/date/source links and original paper-gateway crop readable; approval/closing limits visible; correct executive BoardStrategy metadata checked. Artifact ZIP digest/revision/clean cache/completion matched.50 rendered checks; zero failures/accessibility/runtime errors/overflow/broken assets; normal404recovery checks passed."
           }
-        }
+        },
+        "productionCommit": "7803cec8e7e883bd42921a1d14a627b7c8ea9c91",
+        "verifiedAt": "2026-11-21T12:49:56.524Z"
       }
     ],
     "browserReadiness": {
