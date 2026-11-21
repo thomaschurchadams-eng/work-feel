@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-21",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
       {
@@ -17,6 +17,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html"
       }
     ],
     "status": "in-progress",
@@ -464,7 +468,7 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-21",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
         "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
         "outcomeScope": "cycle",
@@ -513,7 +517,9 @@
             ],
             "observations": "Personally reviewed exact full article390/1440 plus mobile News lead and desktop Home lead pixels. Neutral ownership-key image, correct dollar/price/conditional2027 text, readable sources/related links/date and no clipping. ZIP hash/revision/clean completion/cache matched;50 rendered checks0 failures/accessibility/runtime errors; card normal404recovery passed. Original attempt terminal success, not failure."
           }
-        }
+        },
+        "productionCommit": "b5ad86abeb9702ec5a40301e138a52bb70390793",
+        "verifiedAt": "2026-11-21T13:13:09.536Z"
       }
     ],
     "browserReadiness": {
