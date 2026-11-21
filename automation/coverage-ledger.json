@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "trustage-conditional-data-notification-preparation",
+      "title": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
+      "url": "/news/trustage-conditional-data-notification-preparation.html",
+      "publishedAt": "2026-11-21T07:04:17-05:00",
+      "section": "news",
+      "beat": "trustage-conditional-data-notification-preparation",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "privacy-security"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor Management leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/trustage-cyberattack-recovery-credit-unions.html",
+        "/insight-credit-union-ai-contract-monitoring-controls.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Actual November19 issuer transcript inspected by direct public read; investigation ongoing, affected population unknown,21-day partner advance notice conditional on individual notices being required. Supplier plans/assurances not independent forensic or legal verification."
+    },
+    {
       "id": "bls-five-year-price-rise-october-2026",
       "title": "BLS Puts Five-Year Price Rise at 22%; That Is Not an Annual Rate",
       "url": "/news/bls-five-year-price-rise-october-2026.html",

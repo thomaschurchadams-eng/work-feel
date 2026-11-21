@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "macro-still-life",
+      "subject": "documents-and-controls",
+      "composition": "single-object-negative-space",
+      "perspective": "macro",
+      "palette": "monochrome-ink",
+      "lighting": "cinematic-side-light",
+      "texture": "clean-photographic",
+      "scene": "Sealed unmarked envelope between two stone blocks",
+      "topicFit": 93,
+      "editorialClarity": 93,
+      "score": 53.6,
+      "metrics": {
+        "novelty": 14,
+        "topicFit": 93,
+        "editorialClarity": 93
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "trustage-conditional-data-notification-preparation",
+      "articleUrl": "/news/trustage-conditional-data-notification-preparation.html",
+      "imagePath": "/assets/trustage-conditional-data-notification-preparation.jpg",
+      "publishedAt": "2026-11-21T07:04:17-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "macro-still-life",
+          "subject": "documents-and-controls",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "monochrome-ink",
+          "lighting": "cinematic-side-light",
+          "texture": "clean-photographic",
+          "scene": "Sealed unmarked envelope between two stone blocks",
+          "topicFit": 93,
+          "editorialClarity": 93,
+          "score": 53.6,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 93,
+            "editorialClarity": 93
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "human-machine-handoff",
+          "composition": "asymmetric-editorial",
+          "perspective": "overhead",
+          "palette": "emerald-cream",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Two plain document trays with a closed envelope",
+          "topicFit": 90,
+          "editorialClarity": 90,
+          "score": 52.1,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 90,
+            "editorialClarity": 90
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "operations-environment",
+          "composition": "wide-environmental",
+          "perspective": "isometric",
+          "palette": "plum-gold",
+          "lighting": "soft-daylight",
+          "texture": "matte-clay",
+          "scene": "Quiet service desk with closed unlettered folders",
+          "topicFit": 83,
+          "editorialClarity": 85,
+          "score": 41.9,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 83,
+            "editorialClarity": 85
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "6d3d0c1084014a81396bb13fb71cc6f6715ab5d709a43afbc40d299cd6c947cd"
+    },
+    {
       "medium": "tactile-paper-cut",
       "subject": "financial-object-study",
       "composition": "modular-grid",
