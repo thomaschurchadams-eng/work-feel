@@ -464,19 +464,26 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-21",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
         "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:20:28.292Z",
-        "nextAction": "Prepare immutable atomic article; bind actual PR/head/run/job/attempt before terminal outcome.",
+        "nextReviewAt": "2026-11-21T13:11:40.112Z",
+        "nextAction": "Same owner observe actual terminal result, retrieve exact artifact and personally review pixels; no release from CI counts alone.",
         "evidence": {
           "preparation": {
             "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
             "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
             "preparedAt": "2026-11-21T12:50:28.292Z",
             "sourceReview": "Qualified on November19 signed agreement plus Corpay8-K announcement. Vendor ownership—not completed integration or measured CU performance. Natural VendorManagement third seat after TruStage."
+          },
+          "pending": {
+            "prNumber": 408,
+            "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
+            "run": 44905966731,
+            "job": 136851487765,
+            "runAttempt": 1
           }
         }
       }
