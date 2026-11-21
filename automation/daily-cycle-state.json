@@ -6,615 +6,308 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-20",
-    "fullArticleCount": 3,
+    "date": "2026-11-21",
+    "fullArticleCount": 0,
     "alertCount": 0,
-    "publications": [
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
-      }
-    ],
-    "status": "completed-with-editorial-holds",
-    "outcomeSlot": 4,
+    "publications": [],
+    "status": "in-progress",
+    "outcomeSlot": 1,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
-      "credit-union-industry",
-      "regulation-policy",
       "security-fraud",
-      "financial-reporting",
       "payments-core-fintech",
+      "regulation-policy",
+      "international-comparisons",
+      "financial-reporting",
       "workforce-household-data",
-      "ai-research-platforms",
-      "international-comparisons"
+      "regional-cu-primary",
+      "credit-union-industry"
     ],
-    "researchStatus": "Completed bounded12-candidate/8-beat assessment:3 published,9 held. All five directions attempted; practical-synthesis coverage explicitly access-blocked. Accepted article bodies inspected; Velera full-report/sample remains unverified and excluded from claims. No supplemental scan or optional article.",
-    "candidateObservations": [
+    "discoveryCoverage": {
+      "date": "2026-11-21",
+      "candidateCount": 12,
+      "beatsSearched": [
+        "security-fraud",
+        "payments-core-fintech",
+        "regulation-policy",
+        "international-comparisons",
+        "financial-reporting",
+        "workforce-household-data",
+        "regional-cu-primary",
+        "credit-union-industry"
+      ],
+      "directions": [
+        {
+          "id": "regional-cu-leagues-regulators",
+          "queryOrRead": "FHLBank program original plus CU regional/news discovery",
+          "observedAt": "2026-11-21T12:02:21.428Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.fhlbi.com/services/community-programs/affordable-housing-program/"
+          ]
+        },
+        {
+          "id": "function-problem",
+          "queryOrRead": "TruStage direct issuer transcript and Greenhouse original applicant screening",
+          "observedAt": "2026-11-21T12:02:21.428Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
+            "https://www.greenhouse.com/blog/conversational-ai-candidate-pipeline"
+          ]
+        },
+        {
+          "id": "independent-data-research",
+          "queryOrRead": "Philadelphia Fed November original data and workforce research discovery",
+          "observedAt": "2026-11-21T12:02:21.428Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-11"
+          ]
+        },
+        {
+          "id": "international-comparisons",
+          "queryOrRead": "European Commission and OakNorth original comparisons; international search",
+          "observedAt": "2026-11-21T12:02:21.428Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
+            "https://oaknorth.com/press/oaknorth-us-national-bank-charter/"
+          ]
+        },
+        {
+          "id": "practical-synthesis",
+          "queryOrRead": "Vendor incident partner notice handoff original transcript versus existing coverage; NCUA primary-source discovery",
+          "observedAt": "2026-11-21T12:02:21.428Z",
+          "status": "searched",
+          "sourceUrls": [
+            "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
+            "https://ncua.gov/news/latest-news"
+          ]
+        }
+      ],
+      "practicalSynthesis": {
+        "question": "How does a CU assign vendor incident notification ownership without confusing a conditional vendor lead time with its own obligations?",
+        "noCandidateReason": "Issuer transcript supports new News milestone; league repetition is not an independent second primary basis for a durable synthesis. No Library acceptance established yet; previously denied DFI source not retried."
+      }
+    },
+    "candidateEvaluations": [
       {
-        "title": "UK AI cyber effective practices",
-        "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/effective-practices-cyber-risk-and-resilience-management-relating-to-artificial-intelligence",
-        "sourceDate": "2026-11-19",
-        "status": "not-cleared",
-        "reason": "Primary introduction read; full publication, overlap and operating framing not yet fully inspected. Not rejected."
+        "id": "greenhouse",
+        "title": "Greenhouse Reports Employers Fear Rejecting Genuine Applicants",
+        "score": 77,
+        "metrics": {
+          "newsworthiness": 72,
+          "creditUnionRelevance": 85,
+          "coverageGap": 54.00943396226414,
+          "originality": 93,
+          "sourceQuality": 100,
+          "urgency": 68.72670298032408
+        },
+        "reasons": [
+          "confidence-below-0.7"
+        ],
+        "status": "needs-review-or-capacity-check"
       },
       {
-        "title": "Mid-Atlantic Unify selection",
-        "sourceUrl": "https://www.alogent.com/news/mid-atlantic-federal-credit-union-selects-unify",
-        "sourceDate": "2026-11-12",
-        "status": "not-cleared",
-        "reason": "Named selection not deployment outcomes; older than ordinary72-hour window. No final fallback judgment."
+        "id": "trustage",
+        "title": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
+        "score": 75.8,
+        "metrics": {
+          "newsworthiness": 88,
+          "creditUnionRelevance": 96,
+          "coverageGap": 17.5,
+          "originality": 93,
+          "sourceQuality": 100,
+          "urgency": 68.72670298032408
+        },
+        "reasons": [],
+        "status": "qualified"
       },
       {
-        "title": "Succession and operating-knowledge transfer synthesis",
-        "sourceUrl": "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf",
-        "status": "not-cleared",
-        "reason": "Existing CUES succession coverage identified; current legal applicability and second distinct primary evidence not established. No new mandate claim."
+        "id": "payoneer",
+        "title": "Payoneer Receives Preliminary Conditional Trust Bank Approval",
+        "score": 73.3,
+        "metrics": {
+          "newsworthiness": 87,
+          "creditUnionRelevance": 90,
+          "coverageGap": 6.999999999999999,
+          "originality": 93,
+          "sourceQuality": 100,
+          "urgency": 81.22670298032408
+        },
+        "reasons": [
+          "confidence-below-0.7"
+        ],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "oak",
+        "title": "OakNorth Announces US Charter Acquisition Approval",
+        "score": 71.3,
+        "metrics": {
+          "newsworthiness": 85,
+          "creditUnionRelevance": 85,
+          "coverageGap": 5,
+          "originality": 93,
+          "sourceQuality": 100,
+          "urgency": 81.22670298032408
+        },
+        "reasons": [],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "bill",
+        "title": "BILL Signs Take Private Agreement With TPG and Corpay",
+        "score": 70.6,
+        "metrics": {
+          "newsworthiness": 85,
+          "creditUnionRelevance": 82,
+          "coverageGap": 11.666666666666666,
+          "originality": 92,
+          "sourceQuality": 100,
+          "urgency": 68.72670298032408
+        },
+        "reasons": [],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "scams",
+        "title": "Senate Proposal Would Coordinate National Scam Response",
+        "score": 69.8,
+        "metrics": {
+          "newsworthiness": 80,
+          "creditUnionRelevance": 90,
+          "coverageGap": 4.375,
+          "originality": 92,
+          "sourceQuality": 100,
+          "urgency": 68.72670298032408
+        },
+        "reasons": [],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "eu",
+        "title": "EU Consumer Credit Application Milestone Includes Human Review",
+        "score": 69.7,
+        "metrics": {
+          "newsworthiness": 80,
+          "creditUnionRelevance": 80,
+          "coverageGap": 11.666666666666666,
+          "originality": 88,
+          "sourceQuality": 100,
+          "urgency": 81.22670298032408
+        },
+        "reasons": [],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "ahp",
+        "title": "FHLBank Indianapolis Awards Include Credit Union Members",
+        "score": 68.8,
+        "metrics": {
+          "newsworthiness": 75,
+          "creditUnionRelevance": 90,
+          "coverageGap": 5,
+          "originality": 83,
+          "sourceQuality": 100,
+          "urgency": 81.22670298032408
+        },
+        "reasons": [
+          "confidence-below-0.7"
+        ],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "philly",
+        "title": "Philadelphia Fed Survey Separates Orders From Shipments",
+        "score": 68.2,
+        "metrics": {
+          "newsworthiness": 80,
+          "creditUnionRelevance": 85,
+          "coverageGap": 8.75,
+          "originality": 83,
+          "sourceQuality": 100,
+          "urgency": 68.72670298032408
+        },
+        "reasons": [],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "mobile",
+        "title": "Members Mobile and MeridianLink Combine Wireless and Account Opening",
+        "score": 67.1,
+        "metrics": {
+          "newsworthiness": 65,
+          "creditUnionRelevance": 85,
+          "coverageGap": 11.666666666666666,
+          "originality": 85,
+          "sourceQuality": 100,
+          "urgency": 81.22670298032408
+        },
+        "reasons": [
+          "confidence-below-0.7"
+        ],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "pnc",
+        "title": "PNC Branch Hospitality Signals Human Service Strategy",
+        "score": 66.5,
+        "metrics": {
+          "newsworthiness": 68,
+          "creditUnionRelevance": 85,
+          "coverageGap": 6.999999999999999,
+          "originality": 93,
+          "sourceQuality": 85,
+          "urgency": 81.22670298032408
+        },
+        "reasons": [
+          "confidence-below-0.7"
+        ],
+        "status": "needs-review-or-capacity-check"
+      },
+      {
+        "id": "succession",
+        "title": "Operating Knowledge Handoffs Need More Than a Named Successor",
+        "score": 63.2,
+        "metrics": {
+          "newsworthiness": 55,
+          "creditUnionRelevance": 90,
+          "coverageGap": 30.676100628930815,
+          "originality": 95,
+          "sourceQuality": 100,
+          "urgency": 0
+        },
+        "reasons": [
+          "confidence-below-0.7"
+        ],
+        "status": "needs-review-or-capacity-check"
       }
     ],
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-20",
-        "status": "live-verified",
-        "candidateTitle": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
-        "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html",
+        "plannedDate": "2026-11-21",
+        "status": "prepared",
+        "candidateTitle": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
+        "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:32:13.488Z",
-        "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
-        "evidence": {
-          "editorialQualification": {
-            "classification": "Standard",
-            "score": 70.5,
-            "confidence": 0.9,
-            "sourceDate": "2026-11-19",
-            "sourceLimit": "Mahalo-authored selection announcement with named5Point IT executive. Planned features/core integration; no launch date, measured service improvement or independently tested results.",
-            "selectionRationale": "More clearly scoped named-CU decision than the higher numerical Velera metric, whose full-report denominator still needs inspection."
-          },
-          "pending": {
-            "prNumber": 401,
-            "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
-            "run": 44778877826,
-            "job": 136435960225,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
-            "run": 44778877826,
-            "job": 136435960225,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-20T17:17:12.449Z",
-            "prNumber": 401
-          },
-          "terminalAcceptance": {
-            "prNumber": 401,
-            "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
-            "run": 44778877826,
-            "job": 136435960225,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-20T17:17:13.488Z",
-            "artifactId": 14650774686,
-            "artifactSha256": "sha256:1fac83337e4b7967464e8692bcbceff1916c1d20da5bd662a09f9e433d8b4df0",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally reviewed exact artifact mobile390/desktop1440 Home and News cards, article title/date/deck/hero/body/related links/footer and missing-artwork fallback. Clean legible wrapping, no obstruction or overflow, accurate selection-not-outcome framing; automated accessibility/navigation/error checks clean."
-          }
-        },
-        "productionCommit": "6eff488a8aadf2d83253d5335176d362d0372f9d",
-        "verifiedAt": "2026-11-20T17:18:51.194Z"
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-20",
-        "status": "live-verified",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T17:52:06.957Z",
-        "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
-        "candidateTitle": "Velera Reports a Larger Money-Services Slice of Debit Purchases",
-        "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html",
-        "evidence": {
-          "pending": {
-            "prNumber": 402,
-            "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
-            "run": 44782678311,
-            "job": 136449211724,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
-            "run": 44782678311,
-            "job": 136449211724,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-20T17:37:06.091Z",
-            "prNumber": 402
-          },
-          "terminalAcceptance": {
-            "prNumber": 402,
-            "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
-            "run": 44782678311,
-            "job": 136449211724,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-20T17:37:06.957Z",
-            "artifactId": 14651114785,
-            "artifactSha256": "sha256:e50dc75fef668aea2c96b4da28e12a0e3467b4ad39c5e1bbc77bbb3b84ca8bf3",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally reviewed exact artifact390/1440 article title/date/deck/hero and complete body, related links/footer, Home and News lead cards, and actual404 artwork fallbacks. Legible typography/wrapping, no overlap/overflow/obstruction; accurate explicit full-report/sample limitation. Actual route menu/tracker and accessibility/error results clean."
-          }
-        },
-        "productionCommit": "496376dbade74f5aad2d61ed6a6793634029bdfc",
-        "verifiedAt": "2026-11-20T17:38:17.861Z"
-      },
-      {
-        "slot": 3,
-        "plannedDate": "2026-11-20",
-        "status": "live-verified",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-20T18:15:43.929Z",
-        "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
-        "candidateTitle": "BLS Puts Five-Year Price Rise at 22%; That Is Not an Annual Rate",
-        "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html",
-        "evidence": {
-          "pending": {
-            "prNumber": 403,
-            "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
-            "run": 44785716279,
-            "job": 136459915410,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
-            "run": 44785716279,
-            "job": 136459915410,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-20T18:00:42.446Z",
-            "prNumber": 403
-          },
-          "terminalAcceptance": {
-            "prNumber": 403,
-            "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
-            "run": 44785716279,
-            "job": 136459915410,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-20T18:00:43.929Z",
-            "artifactId": 14655631485,
-            "artifactSha256": "sha256:d1333ef87895531db9c4b1c205813b49aac44429eb788cf2505d7cf7a519f3ad",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally inspected actual390/1440 article title/date/deck/hero, complete body including preserved100-to122 dollar example and distinct five-year/annual/source limitations, source links, related links/footer; Home and News cards and actual404 artwork fallbacks. Clean wrapping, no overlap, unobstructed article content; actual accessibility/menu/tracker/error and recovery results clean."
-          }
-        },
-        "productionCommit": "b817c7713e0e7099c04334fe999c6d38d6c17729",
-        "verifiedAt": "2026-11-20T18:02:04.508Z"
-      },
-      {
-        "slot": 4,
-        "plannedDate": "2026-11-20",
-        "status": "editorial-hold",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T12:00:00Z",
-        "nextAction": "Use only next existing normal November21 07:00 America/New_York cycle and its refreshed bounded pool; do not reopen November20 or retry denied source access.",
-        "holdReason": "Same bounded12-candidate pool exhausted after3 qualified articles. Remaining candidates do not establish distinct useful evidence: UK cyber thesis repeats existing FS-ISAC/FSB coverage; EmpowerFi exceeds existing primary-function/technology caps; other supplier/promotion/personnel stories do not clear usefulness or verification. No extra scan or lower threshold to fill slot4."
-      },
-      {
-        "slot": 5,
-        "plannedDate": "2026-11-20",
-        "status": "editorial-hold",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T12:00:00Z",
-        "nextAction": "Use only next existing normal November21 07:00 America/New_York cycle and its refreshed bounded pool; do not reopen November20 or retry denied source access.",
-        "holdReason": "No additional source-qualified Library/data/case fallback in this pool. Succession synthesis lacks current second independently inspected primary basis (DFI403, no retry/bypass); Fed minutes direct body remains inaccessible; older Unify selection supplies no new milestone/operating outcome. No article created for slot5."
+        "nextReviewAt": "2026-11-21T12:22:42.111Z",
+        "nextAction": "Prepare qualified issuer-update brief; exact-head CI fallback, own artifact/visual review and actual live verification before any later package."
       }
     ],
     "browserReadiness": {
       "localStatus": "missing-browser-executable",
-      "observedAt": "2026-11-20T12:02:01.528Z",
-      "sourceCommit": "0e20ed2f1759288089e0178f7c98cc29ada0324d",
-      "playwrightVersion": "1.62.1",
+      "observedAt": "2026-11-21T11:58:36.861Z",
+      "sourceCommit": "46875d5831257a073587829e5d808d2a120efe19",
       "cacheChanged": false,
-      "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
-      "fallback": "Actual exact-head CI fallback consumed successfully for PR401/402/403, each460 source tests/50 rendered checks, own390/1440 visual review and exact public article/hero/listing/Home/app/styles bytes against production READY. Local/shared cache recovery/isolation remains unproven; retain original reliability incident.",
-      "localRecoveryProven": false,
-      "latestObservedAt": "2026-11-20T16:53:44.930Z"
+      "fallback": "Use existing exact-head CI for this genuinely qualified ordinary package; no local install/cache mutation or waiver."
     },
-    "socialDecision": "prepared-nomination-only; all3 current-week Standard stories reasoned together, BLS selected read-only, no reservation/submission; provider destination-review/proof holds and passed fixed slot remain.",
-    "socialDistribution": {
-      "status": "held",
-      "providerReservationAttempted": false,
-      "providerSubmissionAttempts": 0,
-      "blocker": "Complete dated natural inventory still requiresReview for all81 retained sent records; no reviewed current candidate exclusion proof or60-second reservation admission. Today's fixed12:30 Eastern slot has passed. No automatic proof renewal, catch-up or forced post.",
-      "initialObservation": {
-        "status": "not-reserved",
-        "providerReservationAttempted": false,
-        "providerSubmissionAttempts": 0,
-        "blocker": "Existing historical destination holds retained; no fresh provider inventory acquired this run. Prior dated receipts are not current capacity proof."
-      },
-      "latestReview": {
-        "observedAt": "2026-11-20T18:04:19.118Z",
-        "selector": {
-          "status": "selected",
-          "contentKind": "article",
-          "assetId": "bls-five-year-price-rise-october-2026",
-          "canonicalUrl": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html",
-          "selectionRationale": "Strongest transparent primary-data angle for finance/member-service leaders: keep the five-year comparison, missing annual series and individual outcomes separate. Actual current-week original publication and live body rechecked. Nomination only; provider review, proof and fixed-slot gates remain uncleared."
-        },
-        "inventory": {
-          "run": 44788784596,
-          "commit": "b817c7713e0e7099c04334fe999c6d38d6c17729",
-          "operationStatus": "verified",
-          "actions": [],
-          "errors": [],
-          "complete": true,
-          "observedAt": "2026-11-20T18:02:04.836Z",
-          "channelId": "6a53df0880cc80cdcaa76fb8",
-          "recordCount": 81,
-          "statusCounts": {
-            "sent": 81
-          },
-          "reviewCount": 81,
-          "requiresReview": true,
-          "canonicalRecords": 16,
-          "missingCanonicalRecords": 65,
-          "pagesRead": 1,
-          "reservationAdmission": false
-        },
-        "eligibleArticles": 3,
-        "qualifiedPreparedMedia": 0,
-        "recentMissedHigh": 0,
-        "perCandidateDisposition": [
-          "BLS: strongest primary-data/usefulness nomination; held from reservation.",
-          "5Point: useful task/handoff selection brief; held from reservation.",
-          "Velera: useful relationship-versus-payment measure with scope limits; held from reservation."
-        ],
-        "providerMutationAttempts": 0,
-        "nextCheck": "2026-11-21T12:00:00Z"
-      }
-    },
-    "assignedMaintenance": {
-      "prNumber": 388,
-      "head": "4f91bc2c59b69aec9be9fccd1c2c44c36793c755",
-      "run": 44623782985,
-      "conclusion": "success",
-      "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
-    },
-    "updatedAt": "2026-11-20T18:04:19.118Z",
-    "discoveryCoverage": {
-      "date": "2026-11-20",
-      "candidateCount": 12,
-      "beatsSearched": [
-        "credit-union-industry",
-        "regulation-policy",
-        "security-fraud",
-        "financial-reporting",
-        "payments-core-fintech",
-        "workforce-household-data",
-        "ai-research-platforms",
-        "international-comparisons"
-      ],
-      "directions": [
-        {
-          "id": "regional-cu-leagues-regulators",
-          "queryOrRead": "Continued existing regional pool with named5Point/Mahalo selection, older Mid-Atlantic Unify announcement, Connecticut league partnership and personnel/event discovery; verified dates and announcement boundaries.",
-          "observedAt": "2026-11-20T16:53:00Z",
-          "status": "searched",
-          "sourceUrls": [
-            "https://www.cuinsight.com/press-release/5point-credit-union-selects-mahalo-banking-to-elevate-its-digital-banking-experience-and-expand-member-self-service/",
-            "https://www.alogent.com/news/mid-atlantic-federal-credit-union-selects-unify"
-          ]
-        },
-        {
-          "id": "function-problem",
-          "queryOrRead": "Read Velera money-services share data,5Point self-service feature scope, unnamed-bank Paladin value claim and EmpowerFi website claims against weekly function/technology caps.",
-          "observedAt": "2026-11-20T16:53:00Z",
-          "status": "searched",
-          "sourceUrls": [
-            "https://www.cuinsight.com/press-release/the-velera-payments-index-november-2026/",
-            "https://www.cuinsight.com/press-release/paladin-fs-secures-eight-figure-value-in-card-brand-negotiation-vs-major-duopoly/"
-          ]
-        },
-        {
-          "id": "independent-data-research",
-          "queryOrRead": "Read original BLS November19 five-year CPI table; separated five-year level change from monthly/annual rate and individual household experience. Fed primary minutes inaccessible; held that candidate.",
-          "observedAt": "2026-11-20T16:54:00Z",
-          "status": "searched",
-          "sourceUrls": [
-            "https://www.bls.gov/opub/ted/2026/consumer-prices-up-22-0-percent-over-5-years-ending-october-2026.htm"
-          ]
-        },
-        {
-          "id": "international-comparisons",
-          "queryOrRead": "Read UK November19 AI cyber effective-practices sections, explicit nonformal status and remediation/oversight scope; compared with actual published FS-ISAC/FSB bodies. No new US mandate or repetitive article selected.",
-          "observedAt": "2026-11-20T16:54:00Z",
-          "status": "searched",
-          "sourceUrls": [
-            "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/effective-practices-cyber-risk-and-resilience-management-relating-to-artificial-intelligence"
-          ]
-        },
-        {
-          "id": "practical-synthesis",
-          "queryOrRead": "Assessed operating-knowledge handoff versus a named CEO successor against existing CUES coverage and official succession-source discovery. DFI original bulletin403 was not retried; complete current legal/second-primary inspection absent.",
-          "observedAt": "2026-11-20T16:54:00Z",
-          "status": "access-blocked",
-          "reason": "Washington DFI bulletin returned403; no bypass or unchanged retry. Synthesis assessed but not qualified.",
-          "sourceUrls": [
-            "https://dfi.wa.gov/sites/default/files/credit-unions/bulletins/B-24-02.pdf",
-            "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf"
-          ]
-        }
-      ],
-      "practicalSynthesis": {
-        "question": "How can a credit-union board distinguish naming a successor from preserving the operating knowledge needed for continuity?",
-        "noCandidateReason": "Existing CUES survey already covers the succession gap. DFI original bulletin denied403; current applicability and second independently inspected primary operating evidence incomplete. Do not fabricate a multi-source Library guide or new mandate."
-      }
-    },
-    "candidateEvaluations": [
-      {
-        "title": "EmpowerFi and MetriFi Offer AI-Built Websites",
-        "sourceUrl": "https://www.cuinsight.com/press-release/empowerfi-and-metrifi-team-up-to-bring-ai-built-data-proven-websites-to-credit-unions-and-community-banks/",
-        "score": 73,
-        "status": "held",
-        "reason": "Primary marketing and actual generative-AI weekly caps already reached. Supplier website and attributed226million claim are not independently measured CU outcomes; no reclassification to evade caps.",
-        "scoreInputs": {
-          "confidence": 0.78,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 65,
-            "creditUnionRelevance": 82,
-            "coverageGap": 35,
-            "originality": 100,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        }
-      },
-      {
-        "title": "Velera Reports a Larger Share of Debit Spending Going to Money Services",
-        "sourceUrl": "https://www.cuinsight.com/press-release/the-velera-payments-index-november-2026/",
-        "score": 71.3,
-        "status": "published",
-        "reason": "Actual November19 primary announcement re-read: 14.6 vs13.3 debit-purchase measure (+1.3 percentage points). Full report/sample/count-vs-value denominator unverified and explicitly excluded from claims. No national/account-loss outcome claim. Qualified as bounded attributed brief, not independently tested analysis.",
-        "scoreInputs": {
-          "confidence": 0.9,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 78,
-            "creditUnionRelevance": 90,
-            "coverageGap": 8.75,
-            "originality": 92,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        },
-        "publishedUrl": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
-      },
-      {
-        "title": "Fed Minutes Describe AI Financing Risks",
-        "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
-        "score": 70.6,
-        "status": "held",
-        "reason": "Direct primary HTML again inaccessible at continuation read. Do not accept financial-policy framing from secondary or cached excerpts.",
-        "scoreInputs": {
-          "confidence": 0.65,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 80,
-            "creditUnionRelevance": 83,
-            "coverageGap": 11.666666666666666,
-            "originality": 100,
-            "sourceQuality": 100,
-            "urgency": 66.18311067708333
-          }
-        }
-      },
-      {
-        "title": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
-        "sourceUrl": "https://www.cuinsight.com/press-release/5point-credit-union-selects-mahalo-banking-to-elevate-its-digital-banking-experience-and-expand-member-self-service/",
-        "score": 70.5,
-        "status": "published",
-        "reason": "Specific source-backed brief, not observed implementation or CU-specific household outcome.",
-        "scoreInputs": {
-          "confidence": 0.9,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 78,
-            "creditUnionRelevance": 92,
-            "coverageGap": 11.666666666666666,
-            "originality": 80,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        },
-        "publishedUrl": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html"
-      },
-      {
-        "title": "Five-Year Price Growth Is Not This Month’s Inflation Rate",
-        "sourceUrl": "https://www.bls.gov/opub/ted/2026/consumer-prices-up-22-0-percent-over-5-years-ending-october-2026.htm",
-        "score": 68,
-        "status": "published",
-        "reason": "Actual November19 BLS table and underlying November10 CPI release inspected. Five-year22.0, food24.0,shelter27.8; nonseasonally adjusted Oct2021–Oct2026, not an annual rate or individual/CU outcome. No artificial AI angle; primary finance function remains below3/week.",
-        "scoreInputs": {
-          "confidence": 0.96,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 72,
-            "creditUnionRelevance": 83,
-            "coverageGap": 11.666666666666666,
-            "originality": 86,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        },
-        "publishedUrl": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
-      },
-      {
-        "title": "UK Regulators Outline AI Cyber Exposure Practices",
-        "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/effective-practices-cyber-risk-and-resilience-management-relating-to-artificial-intelligence",
-        "score": 67.8,
-        "status": "held",
-        "reason": "Current source is credible, but the substantive US-CU operating thesis closely repeats existing FS-ISAC patch-speed/asset inventory and FSB supplier/agent-control coverage. No materially distinct article selected merely because another authority issued it.",
-        "scoreInputs": {
-          "confidence": 0.94,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 72,
-            "creditUnionRelevance": 78,
-            "coverageGap": 11.666666666666666,
-            "originality": 92,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        }
-      },
-      {
-        "title": "Paladin Claims Eight-Figure Card-Brand Contract Value",
-        "sourceUrl": "https://www.cuinsight.com/press-release/paladin-fs-secures-eight-figure-value-in-card-brand-negotiation-vs-major-duopoly/",
-        "score": 62.9,
-        "status": "held",
-        "reason": "Unnamed banking client and unspecified contract term/value denominator; commercial attribution is not verified realized income or transferable CU result.",
-        "scoreInputs": {
-          "confidence": 0.65,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 56,
-            "creditUnionRelevance": 72,
-            "coverageGap": 11.666666666666666,
-            "originality": 92,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        }
-      },
-      {
-        "title": "Connecticut League Partners With Enable",
-        "sourceUrl": "https://www.cuinsight.com/press-release/connecticuts-credit-unions-partners-with-enable-technologies-to-advance-digital-innovation/",
-        "score": 62.8,
-        "status": "held",
-        "reason": "Association distribution partnership, no named new adopting CU, implemented handoff or measured result. Generic account-opening benefit thesis weaker than specific5Point implementation selection; no duplicate second selection brief.",
-        "scoreInputs": {
-          "confidence": 0.86,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 52,
-            "creditUnionRelevance": 76,
-            "coverageGap": 11.666666666666666,
-            "originality": 91,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        }
-      },
-      {
-        "title": "Succession Readiness Needs Operating-Knowledge Evidence",
-        "sourceUrl": "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf",
-        "score": 57.9,
-        "status": "held",
-        "reason": "Existing CUES succession coverage read. Washington DFI original bulletin returned403; no retry/bypass. Current legal applicability and a second independently inspected primary operating basis remain incomplete, so no durable guide acceptance or new-mandate claim.",
-        "scoreInputs": {
-          "confidence": 0.65,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 55,
-            "creditUnionRelevance": 92,
-            "coverageGap": 5,
-            "originality": 91,
-            "sourceQuality": 100,
-            "urgency": 0
-          }
-        }
-      },
-      {
-        "title": "Mid-Atlantic Selects Consolidated Deposit Processing",
-        "sourceUrl": "https://www.alogent.com/news/mid-atlantic-federal-credit-union-selects-unify",
-        "score": 55.4,
-        "status": "held",
-        "reason": "Outside ordinary72-hour News window; source describes a planned selection, not a new go-live or independently evidenced operating case. No new milestone established.",
-        "scoreInputs": {
-          "confidence": 0.87,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 52,
-            "creditUnionRelevance": 82,
-            "coverageGap": 6.999999999999999,
-            "originality": 91,
-            "sourceQuality": 100,
-            "urgency": 0
-          }
-        }
-      },
-      {
-        "title": "Credit Union ONE Names CEO Successor",
-        "sourceUrl": "https://www.cuinsight.com/press-releases/",
-        "score": 53.9,
-        "status": "held",
-        "reason": "Routine personnel notice; no distinct operating evidence established. Index discovery is not full-copy implementation review.",
-        "scoreInputs": {
-          "confidence": 0.85,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 30,
-            "creditUnionRelevance": 52,
-            "coverageGap": 28.63711001642036,
-            "originality": 78,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        }
-      },
-      {
-        "title": "AmeriCU Hosts Innovation Chapter Dinner",
-        "sourceUrl": "https://www.cuinsight.com/press-releases/",
-        "score": 50.1,
-        "status": "held",
-        "reason": "Event/promotion notice, not a demonstrated workflow or consequential industry change. No publication acceptance from seed/index alone.",
-        "scoreInputs": {
-          "confidence": 0.85,
-          "sourceTier": 1,
-          "metrics": {
-            "newsworthiness": 25,
-            "creditUnionRelevance": 45,
-            "coverageGap": 6.999999999999999,
-            "originality": 100,
-            "sourceQuality": 100,
-            "urgency": 78.68311067708333
-          }
-        }
-      }
-    ],
-    "blockedReason": "3/5 core articles live;2 explicit editorial/source/distinctness/concentration holds after the unchanged12-candidate pool. Exact-head CI fallback worked; local browser absence is not the reason for these2 holds."
+    "socialDecision": "not-reserved; existing provider/historical holds retained",
+    "updatedAt": "2026-11-21T12:02:42.111Z"
   },
   "history": [
     {
@@ -13061,6 +12754,617 @@
         "liveVerifiedAt": "2026-11-19T20:30:28.000Z",
         "homepageDecision": "The new verified November 19 Alert becomes the active freshness surface. The November 17 FinCEN publication clock and the empty homepage watch state remain unchanged; no date-only refresh or fallback item was created."
       }
+    },
+    {
+      "date": "2026-11-20",
+      "fullArticleCount": 3,
+      "alertCount": 0,
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
+        }
+      ],
+      "status": "completed-with-editorial-holds",
+      "outcomeSlot": 4,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "credit-union-industry",
+        "regulation-policy",
+        "security-fraud",
+        "financial-reporting",
+        "payments-core-fintech",
+        "workforce-household-data",
+        "ai-research-platforms",
+        "international-comparisons"
+      ],
+      "researchStatus": "Completed bounded12-candidate/8-beat assessment:3 published,9 held. All five directions attempted; practical-synthesis coverage explicitly access-blocked. Accepted article bodies inspected; Velera full-report/sample remains unverified and excluded from claims. No supplemental scan or optional article.",
+      "candidateObservations": [
+        {
+          "title": "UK AI cyber effective practices",
+          "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/effective-practices-cyber-risk-and-resilience-management-relating-to-artificial-intelligence",
+          "sourceDate": "2026-11-19",
+          "status": "not-cleared",
+          "reason": "Primary introduction read; full publication, overlap and operating framing not yet fully inspected. Not rejected."
+        },
+        {
+          "title": "Mid-Atlantic Unify selection",
+          "sourceUrl": "https://www.alogent.com/news/mid-atlantic-federal-credit-union-selects-unify",
+          "sourceDate": "2026-11-12",
+          "status": "not-cleared",
+          "reason": "Named selection not deployment outcomes; older than ordinary72-hour window. No final fallback judgment."
+        },
+        {
+          "title": "Succession and operating-knowledge transfer synthesis",
+          "sourceUrl": "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf",
+          "status": "not-cleared",
+          "reason": "Existing CUES succession coverage identified; current legal applicability and second distinct primary evidence not established. No new mandate claim."
+        }
+      ],
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-20",
+          "status": "live-verified",
+          "candidateTitle": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
+          "url": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-20T17:32:13.488Z",
+          "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
+          "evidence": {
+            "editorialQualification": {
+              "classification": "Standard",
+              "score": 70.5,
+              "confidence": 0.9,
+              "sourceDate": "2026-11-19",
+              "sourceLimit": "Mahalo-authored selection announcement with named5Point IT executive. Planned features/core integration; no launch date, measured service improvement or independently tested results.",
+              "selectionRationale": "More clearly scoped named-CU decision than the higher numerical Velera metric, whose full-report denominator still needs inspection."
+            },
+            "pending": {
+              "prNumber": 401,
+              "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
+              "run": 44778877826,
+              "job": 136435960225,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
+              "run": 44778877826,
+              "job": 136435960225,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-20T17:17:12.449Z",
+              "prNumber": 401
+            },
+            "terminalAcceptance": {
+              "prNumber": 401,
+              "head": "5a6e3d4f5ce8050904a407e173ca997e3ee8f456",
+              "run": 44778877826,
+              "job": 136435960225,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-20T17:17:13.488Z",
+              "artifactId": 14650774686,
+              "artifactSha256": "sha256:1fac83337e4b7967464e8692bcbceff1916c1d20da5bd662a09f9e433d8b4df0",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed exact artifact mobile390/desktop1440 Home and News cards, article title/date/deck/hero/body/related links/footer and missing-artwork fallback. Clean legible wrapping, no obstruction or overflow, accurate selection-not-outcome framing; automated accessibility/navigation/error checks clean."
+            }
+          },
+          "productionCommit": "6eff488a8aadf2d83253d5335176d362d0372f9d",
+          "verifiedAt": "2026-11-20T17:18:51.194Z"
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-20",
+          "status": "live-verified",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-20T17:52:06.957Z",
+          "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
+          "candidateTitle": "Velera Reports a Larger Money-Services Slice of Debit Purchases",
+          "url": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html",
+          "evidence": {
+            "pending": {
+              "prNumber": 402,
+              "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
+              "run": 44782678311,
+              "job": 136449211724,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
+              "run": 44782678311,
+              "job": 136449211724,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-20T17:37:06.091Z",
+              "prNumber": 402
+            },
+            "terminalAcceptance": {
+              "prNumber": 402,
+              "head": "e5cc567c9e4e28a90286334db1094663cd21de62",
+              "run": 44782678311,
+              "job": 136449211724,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-20T17:37:06.957Z",
+              "artifactId": 14651114785,
+              "artifactSha256": "sha256:e50dc75fef668aea2c96b4da28e12a0e3467b4ad39c5e1bbc77bbb3b84ca8bf3",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed exact artifact390/1440 article title/date/deck/hero and complete body, related links/footer, Home and News lead cards, and actual404 artwork fallbacks. Legible typography/wrapping, no overlap/overflow/obstruction; accurate explicit full-report/sample limitation. Actual route menu/tracker and accessibility/error results clean."
+            }
+          },
+          "productionCommit": "496376dbade74f5aad2d61ed6a6793634029bdfc",
+          "verifiedAt": "2026-11-20T17:38:17.861Z"
+        },
+        {
+          "slot": 3,
+          "plannedDate": "2026-11-20",
+          "status": "live-verified",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-20T18:15:43.929Z",
+          "nextAction": "Merge exact accepted head, verify actual production before live closeout.",
+          "candidateTitle": "BLS Puts Five-Year Price Rise at 22%; That Is Not an Annual Rate",
+          "url": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html",
+          "evidence": {
+            "pending": {
+              "prNumber": 403,
+              "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
+              "run": 44785716279,
+              "job": 136459915410,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
+              "run": 44785716279,
+              "job": 136459915410,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-20T18:00:42.446Z",
+              "prNumber": 403
+            },
+            "terminalAcceptance": {
+              "prNumber": 403,
+              "head": "9f3e4ad0ed72790666159782b25d531283c765ac",
+              "run": 44785716279,
+              "job": 136459915410,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-20T18:00:43.929Z",
+              "artifactId": 14655631485,
+              "artifactSha256": "sha256:d1333ef87895531db9c4b1c205813b49aac44429eb788cf2505d7cf7a519f3ad",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally inspected actual390/1440 article title/date/deck/hero, complete body including preserved100-to122 dollar example and distinct five-year/annual/source limitations, source links, related links/footer; Home and News cards and actual404 artwork fallbacks. Clean wrapping, no overlap, unobstructed article content; actual accessibility/menu/tracker/error and recovery results clean."
+            }
+          },
+          "productionCommit": "b817c7713e0e7099c04334fe999c6d38d6c17729",
+          "verifiedAt": "2026-11-20T18:02:04.508Z"
+        },
+        {
+          "slot": 4,
+          "plannedDate": "2026-11-20",
+          "status": "editorial-hold",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-21T12:00:00Z",
+          "nextAction": "Use only next existing normal November21 07:00 America/New_York cycle and its refreshed bounded pool; do not reopen November20 or retry denied source access.",
+          "holdReason": "Same bounded12-candidate pool exhausted after3 qualified articles. Remaining candidates do not establish distinct useful evidence: UK cyber thesis repeats existing FS-ISAC/FSB coverage; EmpowerFi exceeds existing primary-function/technology caps; other supplier/promotion/personnel stories do not clear usefulness or verification. No extra scan or lower threshold to fill slot4."
+        },
+        {
+          "slot": 5,
+          "plannedDate": "2026-11-20",
+          "status": "editorial-hold",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-21T12:00:00Z",
+          "nextAction": "Use only next existing normal November21 07:00 America/New_York cycle and its refreshed bounded pool; do not reopen November20 or retry denied source access.",
+          "holdReason": "No additional source-qualified Library/data/case fallback in this pool. Succession synthesis lacks current second independently inspected primary basis (DFI403, no retry/bypass); Fed minutes direct body remains inaccessible; older Unify selection supplies no new milestone/operating outcome. No article created for slot5."
+        }
+      ],
+      "browserReadiness": {
+        "localStatus": "missing-browser-executable",
+        "observedAt": "2026-11-20T12:02:01.528Z",
+        "sourceCommit": "0e20ed2f1759288089e0178f7c98cc29ada0324d",
+        "playwrightVersion": "1.62.1",
+        "cacheChanged": false,
+        "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
+        "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
+        "fallback": "Actual exact-head CI fallback consumed successfully for PR401/402/403, each460 source tests/50 rendered checks, own390/1440 visual review and exact public article/hero/listing/Home/app/styles bytes against production READY. Local/shared cache recovery/isolation remains unproven; retain original reliability incident.",
+        "localRecoveryProven": false,
+        "latestObservedAt": "2026-11-20T16:53:44.930Z"
+      },
+      "socialDecision": "prepared-nomination-only; all3 current-week Standard stories reasoned together, BLS selected read-only, no reservation/submission; provider destination-review/proof holds and passed fixed slot remain.",
+      "socialDistribution": {
+        "status": "held",
+        "providerReservationAttempted": false,
+        "providerSubmissionAttempts": 0,
+        "blocker": "Complete dated natural inventory still requiresReview for all81 retained sent records; no reviewed current candidate exclusion proof or60-second reservation admission. Today's fixed12:30 Eastern slot has passed. No automatic proof renewal, catch-up or forced post.",
+        "initialObservation": {
+          "status": "not-reserved",
+          "providerReservationAttempted": false,
+          "providerSubmissionAttempts": 0,
+          "blocker": "Existing historical destination holds retained; no fresh provider inventory acquired this run. Prior dated receipts are not current capacity proof."
+        },
+        "latestReview": {
+          "observedAt": "2026-11-20T18:04:19.118Z",
+          "selector": {
+            "status": "selected",
+            "contentKind": "article",
+            "assetId": "bls-five-year-price-rise-october-2026",
+            "canonicalUrl": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html",
+            "selectionRationale": "Strongest transparent primary-data angle for finance/member-service leaders: keep the five-year comparison, missing annual series and individual outcomes separate. Actual current-week original publication and live body rechecked. Nomination only; provider review, proof and fixed-slot gates remain uncleared."
+          },
+          "inventory": {
+            "run": 44788784596,
+            "commit": "b817c7713e0e7099c04334fe999c6d38d6c17729",
+            "operationStatus": "verified",
+            "actions": [],
+            "errors": [],
+            "complete": true,
+            "observedAt": "2026-11-20T18:02:04.836Z",
+            "channelId": "6a53df0880cc80cdcaa76fb8",
+            "recordCount": 81,
+            "statusCounts": {
+              "sent": 81
+            },
+            "reviewCount": 81,
+            "requiresReview": true,
+            "canonicalRecords": 16,
+            "missingCanonicalRecords": 65,
+            "pagesRead": 1,
+            "reservationAdmission": false
+          },
+          "eligibleArticles": 3,
+          "qualifiedPreparedMedia": 0,
+          "recentMissedHigh": 0,
+          "perCandidateDisposition": [
+            "BLS: strongest primary-data/usefulness nomination; held from reservation.",
+            "5Point: useful task/handoff selection brief; held from reservation.",
+            "Velera: useful relationship-versus-payment measure with scope limits; held from reservation."
+          ],
+          "providerMutationAttempts": 0,
+          "nextCheck": "2026-11-21T12:00:00Z"
+        }
+      },
+      "assignedMaintenance": {
+        "prNumber": 388,
+        "head": "4f91bc2c59b69aec9be9fccd1c2c44c36793c755",
+        "run": 44623782985,
+        "conclusion": "success",
+        "scope": "Separate held maintenance; actual fresh artifact/pixel and consuming acceptance not performed in this article cycle. No merge."
+      },
+      "updatedAt": "2026-11-20T18:04:19.118Z",
+      "discoveryCoverage": {
+        "date": "2026-11-20",
+        "candidateCount": 12,
+        "beatsSearched": [
+          "credit-union-industry",
+          "regulation-policy",
+          "security-fraud",
+          "financial-reporting",
+          "payments-core-fintech",
+          "workforce-household-data",
+          "ai-research-platforms",
+          "international-comparisons"
+        ],
+        "directions": [
+          {
+            "id": "regional-cu-leagues-regulators",
+            "queryOrRead": "Continued existing regional pool with named5Point/Mahalo selection, older Mid-Atlantic Unify announcement, Connecticut league partnership and personnel/event discovery; verified dates and announcement boundaries.",
+            "observedAt": "2026-11-20T16:53:00Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.cuinsight.com/press-release/5point-credit-union-selects-mahalo-banking-to-elevate-its-digital-banking-experience-and-expand-member-self-service/",
+              "https://www.alogent.com/news/mid-atlantic-federal-credit-union-selects-unify"
+            ]
+          },
+          {
+            "id": "function-problem",
+            "queryOrRead": "Read Velera money-services share data,5Point self-service feature scope, unnamed-bank Paladin value claim and EmpowerFi website claims against weekly function/technology caps.",
+            "observedAt": "2026-11-20T16:53:00Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.cuinsight.com/press-release/the-velera-payments-index-november-2026/",
+              "https://www.cuinsight.com/press-release/paladin-fs-secures-eight-figure-value-in-card-brand-negotiation-vs-major-duopoly/"
+            ]
+          },
+          {
+            "id": "independent-data-research",
+            "queryOrRead": "Read original BLS November19 five-year CPI table; separated five-year level change from monthly/annual rate and individual household experience. Fed primary minutes inaccessible; held that candidate.",
+            "observedAt": "2026-11-20T16:54:00Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.bls.gov/opub/ted/2026/consumer-prices-up-22-0-percent-over-5-years-ending-october-2026.htm"
+            ]
+          },
+          {
+            "id": "international-comparisons",
+            "queryOrRead": "Read UK November19 AI cyber effective-practices sections, explicit nonformal status and remediation/oversight scope; compared with actual published FS-ISAC/FSB bodies. No new US mandate or repetitive article selected.",
+            "observedAt": "2026-11-20T16:54:00Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/effective-practices-cyber-risk-and-resilience-management-relating-to-artificial-intelligence"
+            ]
+          },
+          {
+            "id": "practical-synthesis",
+            "queryOrRead": "Assessed operating-knowledge handoff versus a named CEO successor against existing CUES coverage and official succession-source discovery. DFI original bulletin403 was not retried; complete current legal/second-primary inspection absent.",
+            "observedAt": "2026-11-20T16:54:00Z",
+            "status": "access-blocked",
+            "reason": "Washington DFI bulletin returned403; no bypass or unchanged retry. Synthesis assessed but not qualified.",
+            "sourceUrls": [
+              "https://dfi.wa.gov/sites/default/files/credit-unions/bulletins/B-24-02.pdf",
+              "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf"
+            ]
+          }
+        ],
+        "practicalSynthesis": {
+          "question": "How can a credit-union board distinguish naming a successor from preserving the operating knowledge needed for continuity?",
+          "noCandidateReason": "Existing CUES survey already covers the succession gap. DFI original bulletin denied403; current applicability and second independently inspected primary operating evidence incomplete. Do not fabricate a multi-source Library guide or new mandate."
+        }
+      },
+      "candidateEvaluations": [
+        {
+          "title": "EmpowerFi and MetriFi Offer AI-Built Websites",
+          "sourceUrl": "https://www.cuinsight.com/press-release/empowerfi-and-metrifi-team-up-to-bring-ai-built-data-proven-websites-to-credit-unions-and-community-banks/",
+          "score": 73,
+          "status": "held",
+          "reason": "Primary marketing and actual generative-AI weekly caps already reached. Supplier website and attributed226million claim are not independently measured CU outcomes; no reclassification to evade caps.",
+          "scoreInputs": {
+            "confidence": 0.78,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 65,
+              "creditUnionRelevance": 82,
+              "coverageGap": 35,
+              "originality": 100,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          }
+        },
+        {
+          "title": "Velera Reports a Larger Share of Debit Spending Going to Money Services",
+          "sourceUrl": "https://www.cuinsight.com/press-release/the-velera-payments-index-november-2026/",
+          "score": 71.3,
+          "status": "published",
+          "reason": "Actual November19 primary announcement re-read: 14.6 vs13.3 debit-purchase measure (+1.3 percentage points). Full report/sample/count-vs-value denominator unverified and explicitly excluded from claims. No national/account-loss outcome claim. Qualified as bounded attributed brief, not independently tested analysis.",
+          "scoreInputs": {
+            "confidence": 0.9,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 78,
+              "creditUnionRelevance": 90,
+              "coverageGap": 8.75,
+              "originality": 92,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          },
+          "publishedUrl": "https://creditunionainews.com/news/velera-money-services-debit-purchase-share.html"
+        },
+        {
+          "title": "Fed Minutes Describe AI Financing Risks",
+          "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+          "score": 70.6,
+          "status": "held",
+          "reason": "Direct primary HTML again inaccessible at continuation read. Do not accept financial-policy framing from secondary or cached excerpts.",
+          "scoreInputs": {
+            "confidence": 0.65,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 80,
+              "creditUnionRelevance": 83,
+              "coverageGap": 11.666666666666666,
+              "originality": 100,
+              "sourceQuality": 100,
+              "urgency": 66.18311067708333
+            }
+          }
+        },
+        {
+          "title": "5Point Selects Digital Self-Service; Launch and Service Results Remain Unreported",
+          "sourceUrl": "https://www.cuinsight.com/press-release/5point-credit-union-selects-mahalo-banking-to-elevate-its-digital-banking-experience-and-expand-member-self-service/",
+          "score": 70.5,
+          "status": "published",
+          "reason": "Specific source-backed brief, not observed implementation or CU-specific household outcome.",
+          "scoreInputs": {
+            "confidence": 0.9,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 78,
+              "creditUnionRelevance": 92,
+              "coverageGap": 11.666666666666666,
+              "originality": 80,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          },
+          "publishedUrl": "https://creditunionainews.com/news/5point-mahalo-digital-self-service-selection.html"
+        },
+        {
+          "title": "Five-Year Price Growth Is Not This Month’s Inflation Rate",
+          "sourceUrl": "https://www.bls.gov/opub/ted/2026/consumer-prices-up-22-0-percent-over-5-years-ending-october-2026.htm",
+          "score": 68,
+          "status": "published",
+          "reason": "Actual November19 BLS table and underlying November10 CPI release inspected. Five-year22.0, food24.0,shelter27.8; nonseasonally adjusted Oct2021–Oct2026, not an annual rate or individual/CU outcome. No artificial AI angle; primary finance function remains below3/week.",
+          "scoreInputs": {
+            "confidence": 0.96,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 72,
+              "creditUnionRelevance": 83,
+              "coverageGap": 11.666666666666666,
+              "originality": 86,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          },
+          "publishedUrl": "https://creditunionainews.com/news/bls-five-year-price-rise-october-2026.html"
+        },
+        {
+          "title": "UK Regulators Outline AI Cyber Exposure Practices",
+          "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/effective-practices-cyber-risk-and-resilience-management-relating-to-artificial-intelligence",
+          "score": 67.8,
+          "status": "held",
+          "reason": "Current source is credible, but the substantive US-CU operating thesis closely repeats existing FS-ISAC patch-speed/asset inventory and FSB supplier/agent-control coverage. No materially distinct article selected merely because another authority issued it.",
+          "scoreInputs": {
+            "confidence": 0.94,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 72,
+              "creditUnionRelevance": 78,
+              "coverageGap": 11.666666666666666,
+              "originality": 92,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          }
+        },
+        {
+          "title": "Paladin Claims Eight-Figure Card-Brand Contract Value",
+          "sourceUrl": "https://www.cuinsight.com/press-release/paladin-fs-secures-eight-figure-value-in-card-brand-negotiation-vs-major-duopoly/",
+          "score": 62.9,
+          "status": "held",
+          "reason": "Unnamed banking client and unspecified contract term/value denominator; commercial attribution is not verified realized income or transferable CU result.",
+          "scoreInputs": {
+            "confidence": 0.65,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 56,
+              "creditUnionRelevance": 72,
+              "coverageGap": 11.666666666666666,
+              "originality": 92,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          }
+        },
+        {
+          "title": "Connecticut League Partners With Enable",
+          "sourceUrl": "https://www.cuinsight.com/press-release/connecticuts-credit-unions-partners-with-enable-technologies-to-advance-digital-innovation/",
+          "score": 62.8,
+          "status": "held",
+          "reason": "Association distribution partnership, no named new adopting CU, implemented handoff or measured result. Generic account-opening benefit thesis weaker than specific5Point implementation selection; no duplicate second selection brief.",
+          "scoreInputs": {
+            "confidence": 0.86,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 52,
+              "creditUnionRelevance": 76,
+              "coverageGap": 11.666666666666666,
+              "originality": 91,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          }
+        },
+        {
+          "title": "Succession Readiness Needs Operating-Knowledge Evidence",
+          "sourceUrl": "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf",
+          "score": 57.9,
+          "status": "held",
+          "reason": "Existing CUES succession coverage read. Washington DFI original bulletin returned403; no retry/bypass. Current legal applicability and a second independently inspected primary operating basis remain incomplete, so no durable guide acceptance or new-mandate claim.",
+          "scoreInputs": {
+            "confidence": 0.65,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 55,
+              "creditUnionRelevance": 92,
+              "coverageGap": 5,
+              "originality": 91,
+              "sourceQuality": 100,
+              "urgency": 0
+            }
+          }
+        },
+        {
+          "title": "Mid-Atlantic Selects Consolidated Deposit Processing",
+          "sourceUrl": "https://www.alogent.com/news/mid-atlantic-federal-credit-union-selects-unify",
+          "score": 55.4,
+          "status": "held",
+          "reason": "Outside ordinary72-hour News window; source describes a planned selection, not a new go-live or independently evidenced operating case. No new milestone established.",
+          "scoreInputs": {
+            "confidence": 0.87,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 52,
+              "creditUnionRelevance": 82,
+              "coverageGap": 6.999999999999999,
+              "originality": 91,
+              "sourceQuality": 100,
+              "urgency": 0
+            }
+          }
+        },
+        {
+          "title": "Credit Union ONE Names CEO Successor",
+          "sourceUrl": "https://www.cuinsight.com/press-releases/",
+          "score": 53.9,
+          "status": "held",
+          "reason": "Routine personnel notice; no distinct operating evidence established. Index discovery is not full-copy implementation review.",
+          "scoreInputs": {
+            "confidence": 0.85,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 30,
+              "creditUnionRelevance": 52,
+              "coverageGap": 28.63711001642036,
+              "originality": 78,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          }
+        },
+        {
+          "title": "AmeriCU Hosts Innovation Chapter Dinner",
+          "sourceUrl": "https://www.cuinsight.com/press-releases/",
+          "score": 50.1,
+          "status": "held",
+          "reason": "Event/promotion notice, not a demonstrated workflow or consequential industry change. No publication acceptance from seed/index alone.",
+          "scoreInputs": {
+            "confidence": 0.85,
+            "sourceTier": 1,
+            "metrics": {
+              "newsworthiness": 25,
+              "creditUnionRelevance": 45,
+              "coverageGap": 6.999999999999999,
+              "originality": 100,
+              "sourceQuality": 100,
+              "urgency": 78.68311067708333
+            }
+          }
+        }
+      ],
+      "blockedReason": "3/5 core articles live;2 explicit editorial/source/distinctness/concentration holds after the unchanged12-candidate pool. Exact-head CI fallback worked; local browser absence is not the reason for these2 holds."
     }
   ],
   "note": "Shared idempotent state for the Daily Edition and Alerts desk. Move the prior current object to history when the date changes."
