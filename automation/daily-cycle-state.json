@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-21",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "publications": [
       {
@@ -25,6 +25,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html"
       }
     ],
     "status": "in-progress",
@@ -584,7 +588,7 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-21",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
         "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
         "outcomeScope": "cycle",
@@ -633,7 +637,9 @@
             ],
             "observations": "Personally reviewed full exact article390/1440 and mobile News/desktop Home lead pixels: five named CU entries and amounts legible;152assisted versus154total, special intake-center interpretation and unknown original posting-clock limits visible; source and related links clear, no clipping. Original abstract housing art is illustrative, not a delivered-project photograph or quantitative chart. ZIP digest/revision/clean completion/cache matched;50rendered checks0failures/accessibility/runtime errors; normal404recovery passed;operate skipped."
           }
-        }
+        },
+        "productionCommit": "7445c7ea08f64d58697f2fbee37b65279189b9de",
+        "verifiedAt": "2026-11-21T14:01:09.383Z"
       }
     ],
     "browserReadiness": {
