@@ -20,7 +20,7 @@
       }
     ],
     "status": "in-progress",
-    "outcomeSlot": 1,
+    "outcomeSlot": 3,
     "evaluatedCandidateCount": 12,
     "beatsSearched": [
       "security-fraud",
@@ -102,184 +102,247 @@
     },
     "candidateEvaluations": [
       {
-        "id": "greenhouse",
-        "title": "Greenhouse Reports Employers Fear Rejecting Genuine Applicants",
-        "score": 77,
-        "metrics": {
-          "newsworthiness": 72,
-          "creditUnionRelevance": 85,
-          "coverageGap": 54.00943396226414,
-          "originality": 93,
-          "sourceQuality": 100,
-          "urgency": 68.72670298032408
-        },
-        "reasons": [
-          "confidence-below-0.7"
-        ],
-        "status": "needs-review-or-capacity-check"
-      },
-      {
         "id": "trustage",
         "title": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
+        "sourceUrl": "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
+        "sourcePublishedAt": "2026-11-19",
         "score": 75.8,
+        "status": "source-qualified",
+        "reason": "Qualified on actual November19 issuer transcript; material conditional notice milestone distinct from October restoration. Partner lead time not legal deadline or confirmed exposure.",
+        "primaryFunction": "vendor-management",
+        "primaryTechnology": "privacy-security",
+        "confidence": 0.96,
         "metrics": {
           "newsworthiness": 88,
           "creditUnionRelevance": 96,
           "coverageGap": 17.5,
           "originality": 93,
           "sourceQuality": 100,
-          "urgency": 68.72670298032408
+          "urgency": 68.63837514467593
         },
-        "reasons": [],
-        "status": "qualified"
+        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
       },
       {
         "id": "payoneer",
         "title": "Payoneer Receives Preliminary Conditional Trust Bank Approval",
+        "sourceUrl": "https://occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1395.pdf",
+        "sourcePublishedAt": "2026-11-20",
         "score": 73.3,
+        "status": "held",
+        "reason": "Held: natural Payments/Deposits week already3; conditional decision body not sufficiently verified from inaccessible reader result. Confidence0.6. No first opening claim.",
+        "primaryFunction": "payments-deposits",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.6,
         "metrics": {
           "newsworthiness": 87,
           "creditUnionRelevance": 90,
           "coverageGap": 6.999999999999999,
           "originality": 93,
           "sourceQuality": 100,
-          "urgency": 81.22670298032408
+          "urgency": 81.13837514467593
         },
-        "reasons": [
-          "confidence-below-0.7"
-        ],
-        "status": "needs-review-or-capacity-check"
-      },
-      {
-        "id": "oak",
-        "title": "OakNorth Announces US Charter Acquisition Approval",
-        "score": 71.3,
-        "metrics": {
-          "newsworthiness": 85,
-          "creditUnionRelevance": 85,
-          "coverageGap": 5,
-          "originality": 93,
-          "sourceQuality": 100,
-          "urgency": 81.22670298032408
-        },
-        "reasons": [],
-        "status": "needs-review-or-capacity-check"
-      },
-      {
-        "id": "bill",
-        "title": "BILL Signs Take Private Agreement With TPG and Corpay",
-        "score": 70.6,
-        "metrics": {
-          "newsworthiness": 85,
-          "creditUnionRelevance": 82,
-          "coverageGap": 11.666666666666666,
-          "originality": 92,
-          "sourceQuality": 100,
-          "urgency": 68.72670298032408
-        },
-        "reasons": [],
-        "status": "needs-review-or-capacity-check"
-      },
-      {
-        "id": "scams",
-        "title": "Senate Proposal Would Coordinate National Scam Response",
-        "score": 69.8,
-        "metrics": {
-          "newsworthiness": 80,
-          "creditUnionRelevance": 90,
-          "coverageGap": 4.375,
-          "originality": 92,
-          "sourceQuality": 100,
-          "urgency": 68.72670298032408
-        },
-        "reasons": [],
-        "status": "needs-review-or-capacity-check"
-      },
-      {
-        "id": "eu",
-        "title": "EU Consumer Credit Application Milestone Includes Human Review",
-        "score": 69.7,
-        "metrics": {
-          "newsworthiness": 80,
-          "creditUnionRelevance": 80,
-          "coverageGap": 11.666666666666666,
-          "originality": 88,
-          "sourceQuality": 100,
-          "urgency": 81.22670298032408
-        },
-        "reasons": [],
-        "status": "needs-review-or-capacity-check"
-      },
-      {
-        "id": "ahp",
-        "title": "FHLBank Indianapolis Awards Include Credit Union Members",
-        "score": 68.8,
-        "metrics": {
-          "newsworthiness": 75,
-          "creditUnionRelevance": 90,
-          "coverageGap": 5,
-          "originality": 83,
-          "sourceQuality": 100,
-          "urgency": 81.22670298032408
-        },
-        "reasons": [
-          "confidence-below-0.7"
-        ],
-        "status": "needs-review-or-capacity-check"
-      },
-      {
-        "id": "philly",
-        "title": "Philadelphia Fed Survey Separates Orders From Shipments",
-        "score": 68.2,
-        "metrics": {
-          "newsworthiness": 80,
-          "creditUnionRelevance": 85,
-          "coverageGap": 8.75,
-          "originality": 83,
-          "sourceQuality": 100,
-          "urgency": 68.72670298032408
-        },
-        "reasons": [],
-        "status": "needs-review-or-capacity-check"
+        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
       },
       {
         "id": "mobile",
         "title": "Members Mobile and MeridianLink Combine Wireless and Account Opening",
-        "score": 67.1,
+        "sourceUrl": "https://mtrustcompany.marketminute.com/article/bizwire-2026-11-20-members-mobile-and-meridianlink-partner-to-help-credit-unions-expand-membership",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 67,
+        "status": "held",
+        "reason": "Held: natural Marketing/Growth week already3 and source body not accepted; confidence0.6. Seed promises do not prove measured acquisition/conversion.",
+        "primaryFunction": "marketing-growth",
+        "primaryTechnology": "core-api-cloud",
+        "confidence": 0.6,
         "metrics": {
           "newsworthiness": 65,
           "creditUnionRelevance": 85,
           "coverageGap": 11.666666666666666,
           "originality": 85,
           "sourceQuality": 100,
-          "urgency": 81.22670298032408
+          "urgency": 81.13837514467593
         },
-        "reasons": [
-          "confidence-below-0.7"
-        ],
-        "status": "needs-review-or-capacity-check"
+        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+      },
+      {
+        "id": "scams",
+        "title": "Senate Proposal Would Coordinate National Scam Response",
+        "sourceUrl": "https://www.americascreditunions.org/news-media/news/senate-bill-would-create-office-fraud-and-scam-prevention",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 69.8,
+        "status": "held",
+        "reason": "Held: actual original association account of proposed scam-office legislation read, but Risk/Compliance week already3; no retagging. Proposal is not law; full bill not independently accepted.",
+        "primaryFunction": "risk-compliance",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.85,
+        "metrics": {
+          "newsworthiness": 80,
+          "creditUnionRelevance": 90,
+          "coverageGap": 4.375,
+          "originality": 92,
+          "sourceQuality": 100,
+          "urgency": 68.63837514467593
+        },
+        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+      },
+      {
+        "id": "eu",
+        "title": "EU Consumer Credit Application Milestone Includes Human Review",
+        "sourceUrl": "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 69.6,
+        "status": "held",
+        "reason": "Held: actual European Commission milestone read, EU jurisdiction explicit; natural Lending/Collections week already3. Not a new US mandate or spare-seat Finance story.",
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.93,
+        "metrics": {
+          "newsworthiness": 80,
+          "creditUnionRelevance": 80,
+          "coverageGap": 11.666666666666666,
+          "originality": 88,
+          "sourceQuality": 100,
+          "urgency": 81.13837514467593
+        },
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+      },
+      {
+        "id": "philly",
+        "title": "Philadelphia Fed Survey Separates Orders From Shipments",
+        "sourceUrl": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-11",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 68.8,
+        "status": "held",
+        "reason": "Held: original November survey read; actual commercial-lending risk question belongs to Lending/Collections already3. Diffusion indices not growth percentages; no spare-seat Treasury reclassification.",
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.94,
+        "metrics": {
+          "newsworthiness": 80,
+          "creditUnionRelevance": 85,
+          "coverageGap": 11.666666666666666,
+          "originality": 83,
+          "sourceQuality": 100,
+          "urgency": 68.63837514467593
+        },
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+      },
+      {
+        "id": "oak",
+        "title": "OakNorth Announces US Charter Acquisition Approval",
+        "sourceUrl": "https://oaknorth.com/press/oaknorth-us-national-bank-charter/",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 71.3,
+        "status": "source-qualified",
+        "reason": "Qualified on OCC November19 approval plus attributed November20 issuer statement. Executive/BoardStrategy competitive-entry question; approval not closing or first US lending. Natural weekly Board third seat.",
+        "primaryFunction": "board-strategy",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.95,
+        "metrics": {
+          "newsworthiness": 85,
+          "creditUnionRelevance": 85,
+          "coverageGap": 5,
+          "originality": 93,
+          "sourceQuality": 100,
+          "urgency": 81.13837514467593
+        },
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+      },
+      {
+        "id": "bill",
+        "title": "BILL Signs Take Private Agreement With TPG and Corpay",
+        "sourceUrl": "https://investor.bill.com/news/news-details/2026/BILL-Agrees-to-be-Acquired-by-TPG-in-Partnership-with-Corpay/default.aspx",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 70.6,
+        "status": "source-qualified",
+        "reason": "Qualified on November19 signed agreement plus Corpay8-K announcement. Vendor ownership—not completed integration or measured CU performance. Natural VendorManagement third seat after TruStage.",
+        "primaryFunction": "vendor-management",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.95,
+        "metrics": {
+          "newsworthiness": 85,
+          "creditUnionRelevance": 82,
+          "coverageGap": 11.666666666666666,
+          "originality": 92,
+          "sourceQuality": 100,
+          "urgency": 68.63837514467593
+        },
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+      },
+      {
+        "id": "greenhouse",
+        "title": "Greenhouse Reports Employers Fear Rejecting Genuine Applicants",
+        "sourceUrl": "https://www.greenhouse.com/blog/conversational-ai-candidate-pipeline",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 77,
+        "status": "held",
+        "reason": "Held: employer belief statistic not actual90% candidate false-rejection rate; no independent methodology/outcome corroboration; confidence0.65 fails threshold. No CU-specific sample established.",
+        "primaryFunction": "hr-training",
+        "primaryTechnology": "conversational-ai",
+        "confidence": 0.65,
+        "metrics": {
+          "newsworthiness": 72,
+          "creditUnionRelevance": 85,
+          "coverageGap": 54.00943396226414,
+          "originality": 93,
+          "sourceQuality": 100,
+          "urgency": 68.63837514467593
+        },
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+      },
+      {
+        "id": "ahp",
+        "title": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
+        "sourceUrl": "https://www.fhlbi.com/webres/File/products-services/Affordable%20Housing/AHP/AHP%202026%20Awards.pdf",
+        "sourcePublishedAt": null,
+        "score": 65.1,
+        "status": "source-qualified",
+        "reason": "Qualified data brief from original2026 awards PDF and program resources; five CU entries3.6m/152 assisted versus154 total. Operations handoff natural; awards not disbursement/delivered homes. Original posting clock unknown, urgency0.",
+        "primaryFunction": "operations",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.95,
+        "metrics": {
+          "newsworthiness": 86,
+          "creditUnionRelevance": 97,
+          "coverageGap": 6.999999999999999,
+          "originality": 83,
+          "sourceQuality": 100,
+          "urgency": 0
+        },
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
       },
       {
         "id": "pnc",
-        "title": "PNC Branch Hospitality Signals Human Service Strategy",
-        "score": 66.5,
+        "title": "PNC Puts Hospitality at the Center of Its Branch Expansion",
+        "sourceUrl": "https://www.bankingdive.com/news/pnc-branches-hospitality-ai-disruption-banking/875202/",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 68.1,
+        "status": "source-qualified",
+        "reason": "Qualified on November19 original reporting plus dated PNC branch plan and2025 service explanation. Actual member-service strategy; AI-era return is expectation, not measured gain. Natural MemberService third seat; industry-development not invented deployed AI.",
+        "primaryFunction": "member-service",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.9,
         "metrics": {
-          "newsworthiness": 68,
-          "creditUnionRelevance": 85,
+          "newsworthiness": 78,
+          "creditUnionRelevance": 90,
           "coverageGap": 6.999999999999999,
-          "originality": 93,
+          "originality": 90,
           "sourceQuality": 85,
-          "urgency": 81.22670298032408
+          "urgency": 68.63837514467593
         },
-        "reasons": [
-          "confidence-below-0.7"
-        ],
-        "status": "needs-review-or-capacity-check"
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
       },
       {
         "id": "succession",
         "title": "Operating Knowledge Handoffs Need More Than a Named Successor",
+        "sourceUrl": "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf",
+        "sourcePublishedAt": "2024-12-17",
         "score": 63.2,
+        "status": "held",
+        "reason": "Held: one older NCUA primary and recent CUES overlap do not establish a distinct multi-source durable guide/current applicability; confidence0.6. Prior denied DFI source not retried.",
+        "primaryFunction": "hr-training",
+        "primaryTechnology": "workforce-learning",
+        "confidence": 0.6,
         "metrics": {
           "newsworthiness": 55,
           "creditUnionRelevance": 90,
@@ -288,10 +351,7 @@
           "sourceQuality": 100,
           "urgency": 0
         },
-        "reasons": [
-          "confidence-below-0.7"
-        ],
-        "status": "needs-review-or-capacity-check"
+        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
       }
     ],
     "regularPublicationSlots": [
@@ -400,6 +460,25 @@
         },
         "productionCommit": "7803cec8e7e883bd42921a1d14a627b7c8ea9c91",
         "verifiedAt": "2026-11-21T12:49:56.524Z"
+      },
+      {
+        "slot": 3,
+        "plannedDate": "2026-11-21",
+        "status": "prepared",
+        "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
+        "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-21T13:20:28.292Z",
+        "nextAction": "Prepare immutable atomic article; bind actual PR/head/run/job/attempt before terminal outcome.",
+        "evidence": {
+          "preparation": {
+            "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
+            "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
+            "preparedAt": "2026-11-21T12:50:28.292Z",
+            "sourceReview": "Qualified on November19 signed agreement plus Corpay8-K announcement. Vendor ownership—not completed integration or measured CU performance. Natural VendorManagement third seat after TruStage."
+          }
+        }
       }
     ],
     "browserReadiness": {
