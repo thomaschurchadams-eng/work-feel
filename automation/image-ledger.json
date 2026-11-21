@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "mixed-media-collage",
+      "subject": "financial-object-study",
+      "composition": "foreground-background-tension",
+      "perspective": "eye-level",
+      "palette": "terracotta-sky",
+      "lighting": "diffused-overcast",
+      "texture": "paper-fiber",
+      "scene": "Abstract physical building blocks beside a small plain gateway",
+      "topicFit": 83,
+      "editorialClarity": 85,
+      "score": 56.2,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 83,
+        "editorialClarity": 85
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "oaknorth-us-combination-approval",
+      "articleUrl": "/news/oaknorth-us-combination-approval.html",
+      "imagePath": "/assets/oaknorth-us-combination-approval.jpg",
+      "publishedAt": "2026-11-21T07:35:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "mixed-media-collage",
+          "subject": "financial-object-study",
+          "composition": "foreground-background-tension",
+          "perspective": "eye-level",
+          "palette": "terracotta-sky",
+          "lighting": "diffused-overcast",
+          "texture": "paper-fiber",
+          "scene": "Abstract physical building blocks beside a small plain gateway",
+          "topicFit": 83,
+          "editorialClarity": 85,
+          "score": 56.2,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 83,
+            "editorialClarity": 85
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "architectural-isometric",
+          "subject": "architecture-and-infrastructure",
+          "composition": "layered-depth",
+          "perspective": "cutaway",
+          "palette": "burgundy-sand",
+          "lighting": "soft-daylight",
+          "texture": "matte-clay",
+          "scene": "Two unbranded small bank buildings connected by a restrained walkway in a conceptual architectural model",
+          "topicFit": 94,
+          "editorialClarity": 93,
+          "score": 53.9,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 94,
+            "editorialClarity": 93
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "documents-and-controls",
+          "composition": "asymmetric-editorial",
+          "perspective": "overhead",
+          "palette": "graphite-electric-yellow",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "A plain open document folder alongside an unlettered bank facade drawing",
+          "topicFit": 87,
+          "editorialClarity": 87,
+          "score": 43.5,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 87,
+            "editorialClarity": 87
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "3a9f1873ec09c39c652a3cf1d9c433580fc407ef9a3ffeb684bcac4281eec7b4"
+    },
+    {
       "medium": "macro-still-life",
       "subject": "documents-and-controls",
       "composition": "single-object-negative-space",
