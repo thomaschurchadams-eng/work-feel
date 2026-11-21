@@ -344,13 +344,13 @@
       {
         "slot": 2,
         "plannedDate": "2026-11-21",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
         "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T12:54:42.334Z",
-        "nextAction": "Same owner observe actual terminal result, retrieve exact artifact and personally review pixels; no release from CI counts alone.",
+        "nextReviewAt": "2026-11-21T13:03:24.016Z",
+        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
         "evidence": {
           "preparation": {
             "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
@@ -364,6 +364,34 @@
             "run": 44904588918,
             "job": 136847340528,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
+            "run": 44904588918,
+            "job": 136847340528,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-21T12:48:23.003Z",
+            "prNumber": 407
+          },
+          "terminalAcceptance": {
+            "prNumber": 407,
+            "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
+            "run": 44904588918,
+            "job": 136847340528,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-21T12:48:24.016Z",
+            "artifactId": 14707259377,
+            "artifactSha256": "sha256:1e563a81b1fec98be9dd4a64e5f8e5d22e84afff6424596acf8dc1ff920d9acf",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact full article390/1440, mobile News first-card and desktop Home lead pixels. Title/deck/date/source links and original paper-gateway crop readable; approval/closing limits visible; correct executive BoardStrategy metadata checked. Artifact ZIP digest/revision/clean cache/completion matched.50 rendered checks; zero failures/accessibility/runtime errors/overflow/broken assets; normal404recovery checks passed."
           }
         }
       }
