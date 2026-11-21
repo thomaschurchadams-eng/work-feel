@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-21",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
       {
@@ -21,6 +21,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html"
       }
     ],
     "status": "in-progress",
@@ -524,7 +528,7 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-21",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
         "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
         "outcomeScope": "cycle",
@@ -573,7 +577,9 @@
             ],
             "observations": "Personally reviewed exact full article390/1440, mobile News and desktop Home lead pixels: legible dates/source links, no clipping, appropriate individually selected unbranded branch illustration with explicit non-PNC alt. Older2025 hospitality and future2031 plan remain visibly distinct from current reporting; no measured ROI claim. Existing branch-demand Insight actually read: forecasting/staffing authority thesis, not duplicate PNC hospitality coverage. ZIP digest/revision/completion/cache identity matched;50 checks0failures, zero access/runtime/overflow issues; artwork normal404recovery passed.operate skipped."
           }
-        }
+        },
+        "productionCommit": "e72218429a462a0a14fc6b97f8c991eb6f4832ff",
+        "verifiedAt": "2026-11-21T13:36:34.326Z"
       }
     ],
     "browserReadiness": {
