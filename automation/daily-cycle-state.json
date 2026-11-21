@@ -7,9 +7,14 @@
   },
   "current": {
     "date": "2026-11-21",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html"
+      }
+    ],
     "status": "in-progress",
     "outcomeSlot": 1,
     "evaluatedCandidateCount": 12,
@@ -289,7 +294,7 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-21",
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
         "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
         "outcomeScope": "cycle",
@@ -332,7 +337,9 @@
             ],
             "observations": "Personally reviewed exact artifact article full-page at390/1440, mobile home and desktop News lead pixels. Legible title/body/source/related links, unmarked original envelope hero correctly cropped, no misleading incident text in artwork. Fifty rendered checks report zero failures/accessibility violations/runtime errors/overflow or broken images; navigation and card failure/recovery checks passed. Revision/clean-tree/cache/completion verified; ZIP SHA256 matched."
           }
-        }
+        },
+        "productionCommit": "964f2e0553b8fbcb10217b50c03671707e20c19d",
+        "verifiedAt": "2026-11-21T12:30:42.078Z"
       }
     ],
     "browserReadiness": {
