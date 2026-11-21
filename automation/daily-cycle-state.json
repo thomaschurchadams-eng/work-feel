@@ -584,13 +584,13 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-21",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
         "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:59:40.318Z",
-        "nextAction": "Same owner observe actual terminal result, retrieve exact artifact and personally review pixels; no release from CI counts alone.",
+        "nextReviewAt": "2026-11-21T14:14:15.885Z",
+        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
         "evidence": {
           "preparation": {
             "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
@@ -604,6 +604,34 @@
             "run": 44909930833,
             "job": 136863380184,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
+            "run": 44909930833,
+            "job": 136863380184,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-21T13:59:14.960Z",
+            "prNumber": 410
+          },
+          "terminalAcceptance": {
+            "prNumber": 410,
+            "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
+            "run": 44909930833,
+            "job": 136863380184,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-21T13:59:15.885Z",
+            "artifactId": 14710420239,
+            "artifactSha256": "sha256:b56b91fb57338cdfbb847062b62716844abea5eb7c219da4498fbde7f910034f",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed full exact article390/1440 and mobile News/desktop Home lead pixels: five named CU entries and amounts legible;152assisted versus154total, special intake-center interpretation and unknown original posting-clock limits visible; source and related links clear, no clipping. Original abstract housing art is illustrative, not a delivered-project photograph or quantitative chart. ZIP digest/revision/clean completion/cache matched;50rendered checks0failures/accessibility/runtime errors; normal404recovery passed;operate skipped."
           }
         }
       }
