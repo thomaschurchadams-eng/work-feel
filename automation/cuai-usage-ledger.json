@@ -6161,6 +6161,35 @@
       },
       "summary": "Friday closed with three verified Standard articles and two documented source/editorial holds, putting the full week at 23 of 25 articles and two Alerts: the output SLA is partially met, while every source and editorial gate held. The 132-article portfolio remains concentrated: the trailing 54 items contain 44 News versus 10 Insights and 53 functional-leader versus one executive item; the trailing 28 are all functional-leader. No new Alert qualified after the completed article handoff; the November 20 Federal Reserve survey did not establish an urgent credit-union action, and the live November 19 OFAC Alert remains fresh, so no homepage write was made. Exact current main is production READY with no observed runtime errors, but no exact-current verified-operations artifact exists, so current analytics are inconclusive rather than zero. Monday's five competitive-distribution opportunities remain controlling; no external action or submission occurred. No relevant CFO handoff was present on the bus for November 20.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-21T14:03:52.331Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "CUAI daily-publisher:2026-11-21",
+      "status": "degraded",
+      "workUnits": {
+        "candidateEvaluations": 12,
+        "distinctBeats": 8,
+        "dailyDiscoveryDirections": 5,
+        "articlesPublished": 5,
+        "originalHeroAssets": 5,
+        "exactHeadCIArtifactReviews": 5,
+        "renderedChecksReviewed": 250,
+        "preservedHistoryRecords": 89,
+        "socialReservations": 0,
+        "socialSchedulingAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "Public primary-source sites",
+        "Existing image generation",
+        "Buffer/GA4/SearchConsole trusted natural-operation receipts"
+      ],
+      "summary": "November21 completed5/5 actual Standard News publications through sole sequential P/H/C/V/M/F. Own390/1440artifact/pixel acceptance and exact READY/live article/hero/listing/Home byte proof for PR406/407/408/409/410, all89prior histories and social queue unchanged. No qualified optional extras from same12 pool; no weekend Alerts or replay of completedNovember20. Local browser executable remains absent; exact-head CI fallback succeeded, not local recovery. Natural complete Buffer receipt81sent/all81review flags/65missing canonical destinations/0active records; all historical/unknown-active and candidate-proof holds retained,0distribution actions. No routine user approval asked or observed tool approval prompt; no settings/model/access/dependency/schedule changes. Native per-task token/credit/cost and resource-capacity telemetry unavailable.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
