@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "editorial-photography",
+      "subject": "member-interaction",
+      "composition": "layered-depth",
+      "perspective": "through-glass",
+      "palette": "amber-charcoal",
+      "lighting": "warm-practical",
+      "texture": "fabric-and-wood",
+      "scene": "Conceptual empty branch entry with seating and an unobstructed path to a small service desk, not an actual bank",
+      "topicFit": 90,
+      "editorialClarity": 90,
+      "score": 59.3,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 90,
+        "editorialClarity": 90
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "pnc-branch-hospitality-human-service",
+      "articleUrl": "/news/pnc-branch-hospitality-human-service.html",
+      "imagePath": "/assets/pnc-branch-hospitality-human-service.jpg",
+      "publishedAt": "2026-11-21T08:15:41-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "member-interaction",
+          "composition": "layered-depth",
+          "perspective": "through-glass",
+          "palette": "amber-charcoal",
+          "lighting": "warm-practical",
+          "texture": "fabric-and-wood",
+          "scene": "Conceptual empty branch entry with seating and an unobstructed path to a small service desk, not an actual bank",
+          "topicFit": 90,
+          "editorialClarity": 90,
+          "score": 59.3,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 90,
+            "editorialClarity": 90
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "physical-metaphor",
+          "composition": "split-comparison",
+          "perspective": "overhead",
+          "palette": "cobalt-coral",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "A plain open doorway beside a chair and a quiet counter seen as a hospitality metaphor",
+          "topicFit": 85,
+          "editorialClarity": 86,
+          "score": 57,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 85,
+            "editorialClarity": 86
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "frontline-workflow",
+          "composition": "wide-environmental",
+          "perspective": "eye-level",
+          "palette": "emerald-cream",
+          "lighting": "natural-window-light",
+          "texture": "ink-wash",
+          "scene": "Welcoming unbranded branch entrance with an open doorway, warm wood reception desk and plants, no people",
+          "topicFit": 91,
+          "editorialClarity": 92,
+          "score": 52.8,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 91,
+            "editorialClarity": 92
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "0fd5f053eed8c49160744f952d604f6656edf2b71119cd12e7b946aaa37104df"
+    },
+    {
       "medium": "dimensional-3d",
       "subject": "financial-object-study",
       "composition": "tight-close-up",

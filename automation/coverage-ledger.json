@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "pnc-branch-hospitality-human-service",
+      "title": "PNC Puts Hospitality Alongside Its Branch Expansion",
+      "url": "/news/pnc-branch-hospitality-human-service.html",
+      "publishedAt": "2026-11-21T08:15:41-05:00",
+      "section": "news",
+      "beat": "pnc-branch-hospitality-human-service",
+      "functions": [
+        "member-service"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Member Service leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-branch-demand-staffing-controls.html",
+        "/news/5point-mahalo-digital-self-service-selection.html"
+      ],
+      "sourceTier": 2,
+      "sourceLimit": "November19 original BankingDive reporting plus PNC November6 branch plan and October31,2025 hospitality explanation read. Plan not completed rollout; hospitality approach predates current report; AI-era value and retention/ROI are not measured results. No CU-specific study."
+    },
+    {
       "id": "bill-tpg-corpay-acquisition-agreement",
       "title": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
       "url": "/news/bill-tpg-corpay-acquisition-agreement.html",
