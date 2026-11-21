@@ -524,13 +524,13 @@
       {
         "slot": 4,
         "plannedDate": "2026-11-21",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
         "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:36:44.081Z",
-        "nextAction": "Same owner observe actual terminal result, retrieve exact artifact and personally review pixels; no release from CI counts alone.",
+        "nextReviewAt": "2026-11-21T13:49:59.767Z",
+        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
         "evidence": {
           "preparation": {
             "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
@@ -544,6 +544,34 @@
             "run": 44908022945,
             "job": 136857671526,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
+            "run": 44908022945,
+            "job": 136857671526,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-21T13:34:58.664Z",
+            "prNumber": 409
+          },
+          "terminalAcceptance": {
+            "prNumber": 409,
+            "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
+            "run": 44908022945,
+            "job": 136857671526,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-21T13:34:59.766Z",
+            "artifactId": 14708229330,
+            "artifactSha256": "sha256:6212ed970e58fa5449d80228b291c3435f09a68e6ec0575ecec936a03b594701",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact full article390/1440, mobile News and desktop Home lead pixels: legible dates/source links, no clipping, appropriate individually selected unbranded branch illustration with explicit non-PNC alt. Older2025 hospitality and future2031 plan remain visibly distinct from current reporting; no measured ROI claim. Existing branch-demand Insight actually read: forecasting/staffing authority thesis, not duplicate PNC hospitality coverage. ZIP digest/revision/completion/cache identity matched;50 checks0failures, zero access/runtime/overflow issues; artwork normal404recovery passed.operate skipped."
           }
         }
       }
