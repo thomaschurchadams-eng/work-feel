@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-15",
   "description": "Dated regulatory and supervisory signals relevant to credit-union AI. This is an editorial tracker, not legal advice.",
   "records": [
     {
@@ -210,6 +210,35 @@
           "supportingSources": [
             "https://www.fsb.org/uploads/P151026-1.pdf"
           ]
+        }
+      ]
+    },
+    {
+      "id": "cfpb-complaint-publication",
+      "authority": "Consumer Financial Protection Bureau",
+      "jurisdiction": "United States — public complaint-data resource; no new compliance requirement",
+      "functions": [
+        "risk-compliance",
+        "member-service",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "governance-risk"
+      ],
+      "lastReviewed": "2026-11-15",
+      "addedAt": "2026-11-15",
+      "reviewNote": "One saved historical slice: August 14 agency announcement inspected November 15 UTC. Relevance to complaint analysis and AI research inputs is an editorial application, not an AI-specific rule. Current database/API or FOIA availability was not independently tested; agency criticism of the data is not adopted as an independent finding.",
+      "developments": [
+        {
+          "date": "2026-08-14",
+          "addedAt": "2026-11-15",
+          "type": "resource",
+          "title": "Complaint narratives and public database access",
+          "summary": "The CFPB announced it would stop publishing complaint narratives and visualizations in its database and make previously published narratives available through its FOIA Reading Room. It said complaint collection and response would continue.",
+          "status": "informational",
+          "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/the-cfpb-to-cease-discretionary-publication-of-complaint-narratives-and-visualizations/",
+          "coverageStatus": "tracker-only-no-article",
+          "sourceLastModified": "2026-08-14"
         }
       ]
     }
