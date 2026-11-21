@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "oaknorth-us-combination-approval",
+      "title": "US Approval Moves OakNorth’s Community Unity Deal Forward",
+      "url": "/news/oaknorth-us-combination-approval.html",
+      "publishedAt": "2026-11-21T07:35:00-05:00",
+      "section": "news",
+      "beat": "oaknorth-us-combination-approval",
+      "functions": [
+        "board-strategy"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "reported-news",
+      "audience": "executive",
+      "primaryAudience": "Credit union executives and boards assessing competitive market entry",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/msufcu-ufcu-13-5-billion-combination.html",
+        "/news/cornerstone-small-business-workflow-primary-account.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Actual OCC public application record approvedNovember19; OakNorth November20 issuer announcement corroborates transaction ambition. Approval is not independent proof of closing, operational integration, opened locations or realized competitive impact. No CU member migration or outcome inferred."
+    },
+    {
       "id": "trustage-conditional-data-notification-preparation",
       "title": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
       "url": "/news/trustage-conditional-data-notification-preparation.html",
