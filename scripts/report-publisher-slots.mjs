@@ -20,8 +20,9 @@ const exception = rules.standardCycle.oneTimeException;
 const intended = date === exception?.date ? exception.baselineArticleCount + exception.additionalArticleMaximum : cadence.articleDayTarget(rules.standardCycle, date);
 const daily = [state.current, ...state.history].find(entry => entry?.date === date);
 const tracked = daily?.regularPublicationSlots ?? [];
-const extras = rules.standardCycle.optionalExtras;
-const maximum = date === exception?.date ? intended : !intended ? 0 : extras && date < extras.effectiveDate ? extras.previousMaximumPerWeekday : rules.standardCycle.fullArticleMaximumPerWeekday;
+const morning = cadence.morningArticleProfile(rules.standardCycle, date);
+const maximum = date === exception?.date ? intended : cadence.articleDayMaximum(rules.standardCycle, date);
+const weeklyMaximum = morning?.weeklyMaximum ?? rules.weeklyTargets.siteStoriesMax;
 const observedSlots = Math.max(intended, ...tracked.map(entry => entry.slot));
 const optionalNotSelected = Array.from({ length: Math.max(0, maximum - intended) }, (_, index) => intended + index + 1)
   .filter(slot => !tracked.some(entry => entry.slot === slot))
@@ -63,4 +64,4 @@ const slots = Array.from({ length: observedSlots }, (_, index) => {
     evidence: fact?.evidence ?? null
   };
 });
-console.log(JSON.stringify({ date, weekday, timezone: zone, intended, maximum, optionalNotSelected, basis: 'Current prospective article targets; not retrospective obligations or permission to reopen closed cycles. Optional capacity is not a quota or shortfall. No publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));
+console.log(JSON.stringify({ date, weekday, timezone: zone, intended, maximum, weeklyMaximum, optionalNotSelected, basis: 'Current prospective article targets; not retrospective obligations or permission to reopen closed cycles. Optional capacity is not a quota or shortfall. No publication deadline inferred. Historical days may lack slot evidence.', slots }, null, 2));

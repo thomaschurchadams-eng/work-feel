@@ -144,7 +144,7 @@
     "candidateMaximum": 12,
     "minimumDistinctBeats": 6,
     "categoryRotationAllowed": false,
-    "sourceRotationRule": "Inspect all five directions every daily scan. Rotate individual sources and query variants within each direction when exhaustive inspection is impractical; never rotate a direction off. Use one bounded pool, not five separate twelve-candidate scans.",
+    "sourceRotationRule": "Inspect all five directions every daily scan. Rotate individual sources and query variants within each direction when exhaustive inspection is impractical; never rotate a direction off. Use one date-specific bounded pool from publishing-rules.json, not five separate scans. The candidateMaximum here is legacy and applies before the morning profile.",
     "evidenceRule": "Record actual dated queries/reads, primary source URLs or a precise access limitation in the existing cycle discoveryCoverage receipt. A blocked category is explicit incomplete coverage, not searched successfully. No bypass or repeated unchanged retry. Discovery plans and unit tests are not evidence of an executed scan.",
     "directions": [
       {
@@ -161,6 +161,11 @@
           "state credit union regulator bulletin operational guidance"
         ],
         "sources": [
+          {
+            "name": "NCUA Newsroom",
+            "url": "https://ncua.gov/news",
+            "scope": "Primary U.S. credit union releases, speeches and agency announcements; read the dated original."
+          },
           {
             "name": "BECU public news",
             "url": "https://www.becu.org/members-matter/news-discounts",
@@ -201,7 +206,13 @@
           "credit union finance liquidity deposits lending operational cost evidence",
           "credit union HR training accessibility vendor management fraud practical problem"
         ],
-        "sources": []
+        "sources": [
+          {
+            "name": "Federal Reserve Financial Services press releases",
+            "url": "https://www.frbservices.org/news/press-releases/",
+            "scope": "Primary U.S. payment-system changes and announcements; verify concrete implications for credit unions."
+          }
+        ]
       },
       {
         "id": "independent-data-research",
@@ -217,6 +228,11 @@
           "financial services AI research evaluation operational limitations"
         ],
         "sources": [
+          {
+            "name": "Federal Reserve Survey of Household Economics and Decisionmaking",
+            "url": "https://www.federalreserve.gov/consumerscommunities/shed.htm",
+            "scope": "Published household banking, hardship and affordability data; preserve survey and publication dates."
+          },
           {
             "name": "Bureau of Labor Statistics",
             "url": "https://www.bls.gov/",
@@ -268,7 +284,13 @@
           "credit union vendor cost implementation tradeoffs primary research case study",
           "credit union underserved operating problem multi source comparison"
         ],
-        "sources": [],
+        "sources": [
+          {
+            "name": "CFPB Newsroom",
+            "url": "https://www.consumerfinance.gov/about-us/newsroom/",
+            "scope": "Primary consumer-finance announcements and linked originals; pair with other primary material and check institution applicability."
+          }
+        ],
         "selectionRule": "Every daily scan assesses at least one concrete underserved question from existing coverage and considers a multi-source Insights guide, analysis, case study or explainer against current news. Record a candidate ID or an explicit evidence/gap reason. This is format selection, not a domain list or required publication. Reuse verified evidence where current; date old sources honestly and never relabel a durable guide as fresh News."
       }
     ],

@@ -81,7 +81,13 @@ function fixture(t, { checkoutTransport = false } = {}) {
     const next = state();
     if (next.current.date !== fixtureDate) { next.history.push(clone(next.current)); next.current = { date: fixtureDate, status: 'in-progress', fullArticleCount: 0, alertCount: 0, publications: [], regularPublicationSlots: [] }; }
     next.current.outcomeSlot = number;
-    next.current.regularPublicationSlots.push({ slot: number, status: 'prepared', candidateTitle: `Isolated article ${number}`, url: `https://creditunionainews.com/news/order-fixture-${number}.html`, accountableOwner: 'daily-publisher', nextReviewAt: stamp });
+    if (guards.morningArticleProfile(rules.standardCycle, fixtureDate) && !next.current.discoveryCoverage)
+      next.current.discoveryCoverage = {date:fixtureDate,candidateCount:24,candidateInventory:Array.from({length:24},(_,i)=>({
+        candidateId:'order-'+(i+1),eventKey:'order-fixture-event-'+(i+1),sourceUrl:'https://example.invalid/original',sourcePublishedAt:stamp
+      }))};
+    next.current.regularPublicationSlots.push({ ...(next.current.discoveryCoverage?.candidateInventory ? {evidence:{articleSelection:{
+      ...next.current.discoveryCoverage.candidateInventory[number-1],sourceUrl:'https://example.invalid/original',sourcePublishedAt:stamp
+    }}} : {}), slot: number, status: 'prepared', candidateTitle: `Isolated article ${number}`, url: `https://creditunionainews.com/news/order-fixture-${number}.html`, accountableOwner: 'daily-publisher', nextReviewAt: stamp });
     return persist(next, `P${number}: canonical preparation only`);
   }
   function article(number = 1) {
@@ -108,7 +114,7 @@ function fixture(t, { checkoutTransport = false } = {}) {
     const old = slot.evidence?.pending, terminal = slot.evidence?.terminalValidation;
     const history = clone(slot.evidence?.validationHistory || []);
     if (old) history.push({ ...old, status: 'superseded', observedAt: stamp, ...(terminal ? { terminalValidation: terminal } : {}) });
-    slot.status = 'pending-validation'; slot.evidence = { pending: { prNumber: 990310 + number, head: h, run: 99000000000 + number * 100 + runSerial, job: 99000001000 + number * 100 + runSerial * 10 + attempt, runAttempt: attempt }, ...(history.length ? { validationHistory: history } : {}) };
+    slot.status = 'pending-validation'; slot.evidence = { ...(slot.evidence?.articleSelection ? {articleSelection:slot.evidence.articleSelection} : {}), pending: { prNumber: 990310 + number, head: h, run: 99000000000 + number * 100 + runSerial, job: 99000001000 + number * 100 + runSerial * 10 + attempt, runAttempt: attempt }, ...(history.length ? { validationHistory: history } : {}) };
     persist(next, 'C: exact pending checkpoint on main'); return slot.evidence.pending;
   }
   async function observe(p, status = 'success', actualHead = head('article')) {

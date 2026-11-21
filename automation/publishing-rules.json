@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "mode": "automatic-production",
   "humanApprovalRequired": false,
   "weeklyTargets": {
@@ -55,7 +55,7 @@
     "urgency": 0.1
   },
   "cycleOwnership": {
-    "articleCycle": "Owns News and Insights only: target five distinct qualified articles on each eligible Eastern day, including weekend days beginning November 21, within the unchanged 35-per-week ceiling. From November 19 after release, at most two genuinely strong, distinct optional extras may follow the five core live acceptances in the same sequential cycle (maximum seven, never a seven-article quota). Before that date the ordinary maximum remains five; the frozen November 12 exception remains unchanged. No additional publisher, catch-up or reopening completed days. No Alerts. Never extend bounded research or weaken gates to fill slots.",
+    "articleCycle": "Owns News and Insights only in the existing configured Eastern morning cycle. Apply the dated morningArticleCycle profile prospectively after authorized release, never by reopening a started or completed cycle. Continuing past five needs no separate optional-selection checkpoint in a morningArticleCycle. Preserve one publisher, serial writes, and all evidence, access, cost, quality and release gates. Alerts are separate.",
     "alertCycle": "Owns Alerts separately under automation/scheduled-tasks/cuai-operating-system.md. It may publish at most three genuinely new, time-sensitive, qualified Alerts per weekday and has no quota or minimum target. November 12 authorizes up to three additional qualified Alerts above its frozen zero baseline. Any legacy alert target count in daily-cycle-state.json is non-authoritative metadata and must not drive publication behavior."
   },
   "standardCycle": {
@@ -74,8 +74,8 @@
       "credit-union-specific-case-study",
       "data-led-explainer"
     ],
-    "completionRule": "From the effective date, use the Eastern weekday target or the prospective weekend target for the date in the ordinary article cycle; never reopen completed receipts or retrospectively fill other closed cycles. The one-time November 12 exception permits five additional articles above the immutable one-article baseline. Each article independently passes all gates, uses a distinct event and preferably different beat/format, and is committed and production-verified sequentially before starting the next package. The core target remains five; after five live acceptances consider only qualified optional extras under optionalExtras. Stop at the applicable configured maximum, an unresolved technical/permission gate, or exhaustion of the same bounded candidate pool and approved fallbacks. Preserve every earlier same-day publication, exact validation receipt and count. Alerts and social caps remain separate.",
-    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. Record each unfilled core slot in regularPublicationSlots with its actual editorial/approval hold or owned technical checkpoint/blocker, explicit reason and bounded next action. Record candidates evaluated, rejection reasons, beats/sources and exact evidence gaps. Do not invent run identities or label a technical block an editorial hold. Weekly target metadata is not a mandatory minimum; qualified weekend work competes within the unchanged 35-per-week ceiling. The separate Alert cycle has no quota. Unselected optional capacity is not a failure; selected extras retain the same technical/quality disposition rules.",
+    "completionRule": "From the effective date, use the Eastern weekday target or the prospective weekend target for the date in the ordinary article cycle; never reopen completed receipts or retrospectively fill other closed cycles. The one-time November 12 exception permits five additional articles above the immutable one-article baseline. Each article independently passes all gates, uses a distinct event and preferably different beat/format, and is committed and production-verified sequentially before starting the next package. Apply the date-specific profile. The new morning cycle has one continuous target with no five-article stop; the old optional rules apply only to legacy dates. Stop at the applicable daily/weekly maximum, an unresolved technical/permission gate, or exhaustion of the bounded qualified pool and approved fallbacks. Preserve every earlier same-day publication, exact validation receipt and count. Alerts and social caps remain separate.",
+    "shortfallRule": "Never weaken evidence, mission-fit or quality gates to fill a slot. Record each unfilled core slot in regularPublicationSlots with its actual editorial/approval hold or owned technical checkpoint/blocker, explicit reason and bounded next action. Record candidates evaluated, rejection reasons, beats/sources and exact evidence gaps. Do not invent run identities or label a technical block an editorial hold. Weekly target metadata is not a mandatory minimum; all qualified weekend work counts toward the same date-specific Eastern-week ceiling. The separate Alert cycle has no quota. Unselected optional capacity is not a failure; selected extras retain the same technical/quality disposition rules.",
     "fullArticleTargetByWeekday": {
       "Monday": 5,
       "Tuesday": 5,
@@ -88,6 +88,16 @@
       "targetByDay": { "Saturday": 5, "Sunday": 5 }
     },
     "fullArticleMaximumPerWeekday": 7,
+    "morningArticleCycle": {
+      "effectiveDate": "2026-11-22",
+      "dailyTargetAndMaximum": 10,
+      "weeklyMaximum": 70,
+      "candidateTarget": 24,
+      "candidateMaximum": 30,
+      "backupTarget": 4,
+      "preferredMaximumPerPrimaryFunctionPerWeek": 7,
+      "preferredMaximumPerActualTechnologyPerWeek": 4
+    },
     "effectiveDate": "2026-11-13",
     "oneTimeException": {
       "date": "2026-11-12",
@@ -113,8 +123,8 @@
     "approvedDate": "2026-11-18",
     "activation": "Prospective after authorized release, no earlier than November 19. Preserve the November 12 exception and November 13-18 five-article maximum; do not reopen completed cycles.",
     "reviewAfterCompletedWeeks": 2,
-    "target": "The per-day core targets and optional extras share siteStoriesMax 35 as an outer ceiling, not a target. Unchanged function/technology/format concentration gates may yield a lower feasible total. No backfill obligation.",
-    "formatRule": "Aim for at least three formats and five functions per week. At most two framework/checklist articles combined per week absent a recorded material-news exception. No rigid topic quota and no padding.",
+    "target": "Use the morningArticleCycle daily target and outer weekly ceiling after activation, not the legacy siteStoriesMax. Primary-function and actual-technology counts become diversity preferences reviewed before concentrating coverage; they do not veto distinct qualified stories. Document the source-backed reason if no comparably useful less-concentrated substitute is available. No backfill.",
+    "formatRule": "Aim for at least three formats and five functions per week. At most two framework/checklist articles combined per week absent a recorded material-news exception. No rigid topic quota, near-duplicate or padding.",
     "nextStage": "Any further volume increase requires a new owner decision; no automatic escalation.",
     "continueCriteria": "Review actual qualified output, held and failed slots, corrections, breadth, production correctness, existing usage and available engagement after two completed weeks. Do not infer capacity or source supply from synthetic tests. No new recurring spend.",
     "stopOrRevise": "Stop later packages on unresolved material sourcing/deployment failures, permission blocks or exhausted existing usage; preserve all completed packages and owned checkpoints. Record explicit reasons for unfilled slots, diagnose repeated capacity/source shortfalls, and never add scans, spend, schedules or weaker gates to fill the target."
