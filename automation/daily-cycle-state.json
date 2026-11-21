@@ -464,13 +464,13 @@
       {
         "slot": 3,
         "plannedDate": "2026-11-21",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
         "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:11:40.112Z",
-        "nextAction": "Same owner observe actual terminal result, retrieve exact artifact and personally review pixels; no release from CI counts alone.",
+        "nextReviewAt": "2026-11-21T13:26:36.847Z",
+        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
         "evidence": {
           "preparation": {
             "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
@@ -484,6 +484,34 @@
             "run": 44905966731,
             "job": 136851487765,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
+            "run": 44905966731,
+            "job": 136851487765,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-21T13:11:35.855Z",
+            "prNumber": 408
+          },
+          "terminalAcceptance": {
+            "prNumber": 408,
+            "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
+            "run": 44905966731,
+            "job": 136851487765,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-21T13:11:36.847Z",
+            "artifactId": 14708161819,
+            "artifactSha256": "sha256:ad90bbc0ebb164b98718e7319dd49cd0e1e499f711c4a7cbc4c90cc01524aae3",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact full article390/1440 plus mobile News lead and desktop Home lead pixels. Neutral ownership-key image, correct dollar/price/conditional2027 text, readable sources/related links/date and no clipping. ZIP hash/revision/clean completion/cache matched;50 rendered checks0 failures/accessibility/runtime errors; card normal404recovery passed. Original attempt terminal success, not failure."
           }
         }
       }
