@@ -289,13 +289,13 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-21",
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
         "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T12:25:52.476Z",
-        "nextAction": "Observe actual exact-head terminal result, then inspect matching artifact and own390/1440 pixels; no release or next package before live acceptance.",
+        "nextReviewAt": "2026-11-21T12:39:00.746Z",
+        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
         "evidence": {
           "pending": {
             "prNumber": 406,
@@ -303,6 +303,34 @@
             "run": 44902161577,
             "job": 136840132620,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
+            "run": 44902161577,
+            "job": 136840132620,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-21T12:23:59.852Z",
+            "prNumber": 406
+          },
+          "terminalAcceptance": {
+            "prNumber": 406,
+            "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
+            "run": 44902161577,
+            "job": 136840132620,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-21T12:24:00.746Z",
+            "artifactId": 14707480167,
+            "artifactSha256": "sha256:61f4ee9ff3ecf768584db3bdeac7c5310c55227012f7ceb49fe6588449a5f0b4",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Personally reviewed exact artifact article full-page at390/1440, mobile home and desktop News lead pixels. Legible title/body/source/related links, unmarked original envelope hero correctly cropped, no misleading incident text in artwork. Fifty rendered checks report zero failures/accessibility violations/runtime errors/overflow or broken images; navigation and card failure/recovery checks passed. Revision/clean-tree/cache/completion verified; ZIP SHA256 matched."
           }
         }
       }
