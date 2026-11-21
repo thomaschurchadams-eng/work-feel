@@ -340,6 +340,25 @@
         },
         "productionCommit": "964f2e0553b8fbcb10217b50c03671707e20c19d",
         "verifiedAt": "2026-11-21T12:30:42.078Z"
+      },
+      {
+        "slot": 2,
+        "plannedDate": "2026-11-21",
+        "status": "prepared",
+        "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
+        "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
+        "outcomeScope": "cycle",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-21T13:03:19.348Z",
+        "nextAction": "Prepare immutable atomic article; bind actual PR/head/run/job/attempt before terminal outcome.",
+        "evidence": {
+          "preparation": {
+            "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
+            "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
+            "preparedAt": "2026-11-21T12:33:19.348Z",
+            "sourceReview": "OCC November19 approval and OakNorth November20 issuer statement read; executive segment/approval not closing, distinct source milestone; BoardStrategy third weekly seat."
+          }
+        }
       }
     ],
     "browserReadiness": {
