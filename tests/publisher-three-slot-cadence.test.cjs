@@ -9,7 +9,8 @@ const { checkCapacity, selectSlot } = require('../lib/media-slots.cjs');
 const root = path.resolve(__dirname, '..');
 const cli = path.join(root, 'scripts/validate-daily-cycle-preservation.mjs');
 const rules = require('../automation/publishing-rules.json');
-const actual = require('../automation/daily-cycle-state.json');
+const liveBaseline = require('../automation/daily-cycle-state.json');
+const actual = JSON.parse(execFileSync('git', ['show', '235af17:automation/daily-cycle-state.json'], { cwd: root }));
 // Freeze the authorized pre-expansion state. Canonical current advances during
 // publication, so using it here would make the next real package fail its CI.
 const november12Baseline = JSON.parse(execFileSync('git', ['show', '2f4ff9ccc0960c54c83dff4eed7753a145fcc5ef:automation/daily-cycle-state.json'], { cwd: root }));
@@ -21,7 +22,7 @@ function nextWeekday(date) {
   do { day.setUTCDate(day.getUTCDate() + 1); } while ([0, 6].includes(day.getUTCDay()));
   return day.toISOString().slice(0, 10);
 }
-const fixtureDate = nextWeekday(actual.current.date);
+const fixtureDate = '2026-11-20';
 const stamp = fixtureDate + 'T12:30:00Z';
 const events = [];
 test.after(() => {
@@ -67,13 +68,16 @@ function fixture(t, initial = fresh()) {
   };
 }
 function prepared(state, number) {
+  const morning=state.current.date >= rules.standardCycle.morningArticleCycle.effectiveDate;
   const next = copy(state); next.current.status = 'in-progress'; next.current.outcomeSlot = number;
-  next.current.regularPublicationSlots.push({ slot: number, status: 'prepared', url: url(number), candidateTitle: `Isolated distinct story ${number}`, accountableOwner: 'daily-publisher', nextReviewAt: stamp, ...(number > 5 && state.current.date >= rules.standardCycle.optionalExtras.effectiveDate ? {evidence: {optionalSelection: {reason: 'Strong independently sourced operating analysis', distinctValue: 'Different member problem and evidence from prior stories', sourceUrls: ['https://example.invalid/original-evidence']}}} : {}) });
+  if(morning && !next.current.discoveryCoverage) next.current.discoveryCoverage={date:state.current.date,candidateCount:24,
+    candidateInventory:Array.from({length:24},(_,i)=>({candidateId:'fixture-'+(i+1),eventKey:'fictional-'+state.current.date+'-'+(i+1),sourceUrl:'https://example.invalid/original',sourcePublishedAt:state.current.date+'T11:00:00Z'}))};
+  next.current.regularPublicationSlots.push({ slot: number, status: 'prepared', url: url(number), candidateTitle: `Isolated distinct story ${number}`, accountableOwner: 'daily-publisher', nextReviewAt: stamp, ...(morning ? {evidence:{articleSelection:{candidateId:'fixture-'+number,eventKey:'fictional-'+state.current.date+'-'+number,sourceUrl:'https://example.invalid/original',sourcePublishedAt:state.current.date+'T11:00:00Z'}}} : {}), ...(number > 5 && state.current.date >= rules.standardCycle.optionalExtras.effectiveDate && state.current.date < rules.standardCycle.morningArticleCycle.effectiveDate ? {evidence: {optionalSelection: {reason: 'Strong independently sourced operating analysis', distinctValue: 'Different member problem and evidence from prior stories', sourceUrls: ['https://example.invalid/original-evidence']}}} : {}) });
   return next;
 }
-function pending(state, number, head = 'abcdef1'[number - 1].repeat(40), attempt = 1) {
+function pending(state, number, head = number.toString(16).padStart(40,'0'), attempt = 1) {
   const next = copy(state), s = next.current.regularPublicationSlots.find(s => s.slot === number);
-  s.status = 'pending-validation'; s.evidence = { ...(s.evidence?.optionalSelection ? {optionalSelection:s.evidence.optionalSelection} : {}), pending: { prNumber: 990100 + number, head, run: 99000000100 + number + (attempt - 1) * 10, job: 99000000200 + number + (attempt - 1) * 10, runAttempt: attempt } };
+  s.status = 'pending-validation'; s.evidence = { ...(s.evidence?.articleSelection ? {articleSelection:s.evidence.articleSelection} : {}), ...(s.evidence?.optionalSelection ? {optionalSelection:s.evidence.optionalSelection} : {}), pending: { prNumber: 990100 + number, head, run: 99000000100 + number + (attempt - 1) * 10, job: 99000000200 + number + (attempt - 1) * 10, runAttempt: attempt } };
   return next;
 }
 function completed(state, number) {
@@ -91,7 +95,7 @@ function validated(state, number) {
 }
 function fill(f, number) {
   f.accept(prepared(f.state, number), `slot ${number} prepared without CI identity`);
-  if (number <= 5) assert.equal(f.state.current.regularPublicationSlots.at(-1).evidence, undefined);
+  if (number <= 5 && f.state.current.date < rules.standardCycle.morningArticleCycle.effectiveDate) assert.equal(f.state.current.regularPublicationSlots.at(-1).evidence, undefined);
   f.accept(pending(f.state, number), `slot ${number} exact checkpoint persisted`);
   f.accept(validated(f.state, number), 'persist separate validated stage');
   f.accept(completed(f.state, number), `slot ${number} simulated verified result`);
@@ -174,7 +178,7 @@ test('eighth article is rejected with or without slot metadata; pre-activation w
 });
 test('duplicate article URL or reused review head cannot count as a different slot', t => {
   const f = fixture(t); fill(f, 1); f.accept(prepared(f.state, 2), 'prepare distinct slot two');
-  f.reject(pending(f.state, 2, 'a'.repeat(40), 2), /reuse a validation head/, 'same reviewed head on different run is not another package');
+  f.reject(pending(f.state, 2, f.state.current.regularPublicationSlots[0].evidence.pending.head, 2), /reuse a validation head/, 'same reviewed head on different run is not another package');
   f.accept(pending(f.state, 2), 'distinct slot two head');
   const duplicate = completed(f.state, 2); duplicate.current.regularPublicationSlots[1].url = url(1);
   f.reject(duplicate, /same publication/, 'two live slots cannot count same URL');
@@ -237,7 +241,8 @@ test('report uses dynamic five-slot daily targets only on eligible dates', t => 
   const f = fixture(t); let total = 0;
   for (const date of ['2026-11-16', '2026-11-17', '2026-11-18', '2026-11-19', '2026-11-20']) { const report = f.report(f.state, date); assert.equal(report.intended, 5); total += report.intended; }
   assert.equal(total, 25);
-  for (const date of ['2026-11-21', '2026-11-22']) { const report = f.report(f.state, date); assert.equal(report.intended, 5); assert.equal(report.maximum, 7); }
+  const legacy=f.report(f.state,'2026-11-21'); assert.equal(legacy.intended,5); assert.equal(legacy.maximum,7);
+  const sunday=f.report(f.state,'2026-11-22'); assert.equal(sunday.intended,10); assert.equal(sunday.maximum,10); assert.equal(sunday.weeklyMaximum,70); assert.deepEqual(sunday.optionalNotSelected,[]);
   for (const date of ['2026-11-14', '2026-11-15']) assert.equal(f.report(f.state, date).intended, 0);
   assert.match(f.report(actual, '2026-11-09').basis, /not retrospective obligations/);
 });
@@ -328,4 +333,58 @@ test('historical five cap, closed-cycle protection and frozen exception are not 
  assert.throws(()=>guards.validateStatePreservation(closed,proposal,rules),/cannot reopen/);
  const historical=fixture(t,{...f.state,current:{...f.state.current,date:'2026-11-18'}});
  historical.reject(prepared(historical.state,6),/weekday article maximum/,'no extras on closed November 18');
+});
+
+test('next unopened morning retains real Nov21/current history and advances ten sequential exact checkpoints',t=>{
+  const f=fixture(t,liveBaseline), initial=f.state, date=new Date(Date.parse(initial.current.date)+86400000).toISOString().slice(0,10);
+  const first={...copy(initial),history:[...initial.history,copy(initial.current)],current:empty(date)};
+  const noReceipt=prepared(first,1);delete noReceipt.current.regularPublicationSlots[0].evidence;
+  f.reject(noReceipt,/stable event identity/,'new morning article must record source and event');
+  f.accept(prepared(first,1),'new prospective slot 1; retain entire closed prior day');
+  f.accept(pending(f.state,1),'slot 1 exact checkpoint'); f.accept(validated(f.state,1),'slot 1 validated');
+  f.accept(completed(f.state,1),'slot 1 live');
+  for(let n=2;n<=5;n++) fill(f,n);
+  const early=f.state; early.current.status='completed';
+  f.reject(early,/completion requires every target slot/,'five is not a close');
+  const replaced=prepared(f.state,6); replaced.current.discoveryCoverage.candidateInventory[1].eventKey='different-event';
+  f.reject(replaced,/inventory cannot be replaced/,'retry cannot swap candidate inventory');
+  const late=copy(f.state);delete late.current.discoveryCoverage.candidateInventory;
+  const lateOnly=copy(late);
+  lateOnly.current.discoveryCoverage.candidateInventory=copy(f.state.current.discoveryCoverage.candidateInventory);
+  const lateNext=prepared(late,6);
+  const substituted=prepared(f.state,6);
+  substituted.current.regularPublicationSlots.at(-1).evidence.articleSelection.sourceUrl='https://example.invalid/substituted';
+  f.reject(substituted,/canonical shared candidate inventory/,'cannot change source while keeping candidate identity');
+  const g=require('../lib/daily-cycle-guards.cjs');
+  assert.throws(()=>g.validatePublisherCadence(late.current,lateOnly.current,rules),/do not change its cadence mid-cycle/);
+  assert.throws(()=>g.validatePublisherCadence(late.current,lateNext.current,rules),/do not change its cadence mid-cycle/);
+  for(let n=6;n<=10;n++) fill(f,n);
+  f.reject(prepared(f.state,11),/weekday article maximum/,'eleventh article exceeds original authorized limit');
+  const closed=f.state; closed.current.status='completed';
+  f.accept(closed,'close only once ten exact live receipts exist');
+  f.repeat();
+  const reopening=f.state;reopening.current.status='in-progress';
+  f.reject(reopening,/completed morning article cycle cannot be reopened/,'no reopened completed cycle by status alone');
+  assert.equal(f.report().intended,10);
+  assert.equal(f.report().slots.filter(s=>s.status==='live-verified' && s.required).length,10);
+  assert.deepEqual(f.state.history.at(-1),initial.current);
+});
+test('morning hard weekly limit includes earlier days and rejects another reservation at 70',()=>{
+  const guards=require('../lib/daily-cycle-guards.cjs');
+  const state={history:[{date:'2026-11-23',fullArticleCount:69,publications:[]}], current:{...empty('2026-11-29'),fullArticleCount:1}};
+  assert.doesNotThrow(()=>guards.validateMorningArticleWeek(state,rules));
+  state.current.regularPublicationSlots=[{slot:2,status:'prepared'}];
+  assert.throws(()=>guards.validateMorningArticleWeek(state,rules),/Eastern Monday/);
+  state.current=prepared({current:empty('2026-11-30')},1).current;
+  assert.doesNotThrow(()=>guards.validateMorningArticleWeek(state,rules));
+});
+
+test('a recorded morning event cannot be repeated across days or replaced during checkpointing',()=>{
+ const g=require('../lib/daily-cycle-guards.cjs'), date='2026-11-24';
+ const first=prepared({current:empty(date)},1).current;
+ const earlier=copy(first);earlier.date='2026-11-23';earlier.regularPublicationSlots[0].status='live-verified';
+ assert.throws(()=>g.validateMorningArticleWeek({current:first,history:[earlier]},rules),/event identity duplicates/);
+ const changed=pending({current:first},1).current;
+ changed.regularPublicationSlots[0].evidence.articleSelection.eventKey='retitled';
+ assert.throws(()=>g.validatePublisherCadence(first,changed,rules),/selection evidence changed/);
 });

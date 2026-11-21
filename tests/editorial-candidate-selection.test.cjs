@@ -4,7 +4,8 @@ const fs = require('node:fs'), os = require('node:os'), path = require('node:pat
 const { spawnSync } = require('node:child_process');
 const root = path.resolve(__dirname, '..');
 const taxonomy = require('../automation/editorial-taxonomy.json');
-const candidate = (name, fn, tech = 'industry-development') => ({title:name, sourceUrl:'https://example.invalid/source', sourceTier:1, confidence:1, functions:[fn], technologies:[tech], format:'explainer', newsworthiness:100, creditUnionRelevance:100, sourcePublishedAt:new Date().toISOString()});
+const clock = '2026-11-20T12:00:00-05:00', date = '2026-11-20', time = Date.parse(clock);
+const candidate = (name, fn, tech = 'industry-development') => ({title:name, sourceUrl:'https://example.invalid/source', sourceTier:1, confidence:1, functions:[fn], technologies:[tech], format:'explainer', newsworthiness:100, creditUnionRelevance:100, sourcePublishedAt:new Date(clock).toISOString()});
 function fixture(t) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'cuai-candidates-'));
   t.after(() => fs.rmSync(dir, {recursive:true, force:true}));
@@ -14,9 +15,9 @@ function fixture(t) {
     fs.writeFileSync(path.join(dir,'automation/coverage-ledger.json'),JSON.stringify({articles}));
     fs.writeFileSync(path.join(dir,'candidates.json'),JSON.stringify(rows));
     const registry=require('../automation/source-registry.json');
-    const date=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());
-    fs.writeFileSync(path.join(dir,'receipt.json'),JSON.stringify({date,candidateCount:rows.length,beatsSearched:registry.beats.slice(0,6).map(x=>x.id),directions:registry.dailyDiscovery.directions.map(x=>({id:x.id,status:'searched',queryOrRead:'Isolated mock read',observedAt:new Date().toISOString(),sourceUrls:['https://example.invalid/evidence']})),practicalSynthesis:{question:'What useful underserved workflow can be explained?',noCandidateReason:'Fixture contains no verified synthesis sources'}}));
-    const r=spawnSync(process.execPath,['scripts/score-editorial-candidates.mjs','candidates.json','receipt.json'],{cwd:dir,encoding:'utf8'});
+    fs.writeFileSync(path.join(dir,'clock.cjs'), 'const D=Date; global.Date=class extends D {constructor(...a){super(...(a.length?a:['+time+']));} static now(){return '+time+';}};');
+    fs.writeFileSync(path.join(dir,'receipt.json'),JSON.stringify({date,candidateCount:rows.length,beatsSearched:registry.beats.slice(0,6).map(x=>x.id),directions:registry.dailyDiscovery.directions.map(x=>({id:x.id,status:'searched',queryOrRead:'Isolated mock read',observedAt:new Date(clock).toISOString(),sourceUrls:['https://example.invalid/evidence']})),practicalSynthesis:{question:'What useful underserved workflow can be explained?',noCandidateReason:'Fixture contains no verified synthesis sources'}}));
+    const r=spawnSync(process.execPath,['--require','./clock.cjs','scripts/score-editorial-candidates.mjs','candidates.json','receipt.json'],{cwd:dir,encoding:'utf8'});
     assert.equal(r.status,0,r.stderr); return JSON.parse(r.stdout);
   };
 }
@@ -29,7 +30,7 @@ test('industry marker permits five varied stories; actual technology and functio
 test('one bounded pool selects the five core, never a weekly batch, and retains concentration counts', t => {
   const run=fixture(t), rows=taxonomy.functions.map(({id},n)=>candidate(`Distinct proposal ${n}`,id));
   assert.equal(run(rows).selected.length,5);
-  const prior=[0,1,2].map(i=>({...candidate(`Recorded earlier outcome ${i}`,taxonomy.functions[0].id),url:`/news/recorded-${i}.html`,publishedAt:new Date().toISOString()}));
+  const prior=[0,1,2].map(i=>({...candidate(`Recorded earlier outcome ${i}`,taxonomy.functions[0].id),url:`/news/recorded-${i}.html`,publishedAt:new Date(clock).toISOString()}));
   const result=run(rows,prior);
   assert.equal(result.alreadyPublishedThisWeek,3); assert.equal(result.selected.length,2); assert.equal(result.alreadyPublishedToday,3);
   assert.ok(result.selected.every(x=>x.functions[0]!==taxonomy.functions[0].id));
@@ -37,10 +38,10 @@ test('one bounded pool selects the five core, never a weekly batch, and retains 
 test('current-week actual technology counts carry over; prior weeks and future entries do not consume capacity', t => {
   const run=fixture(t), fn=taxonomy.functions[0].id;
   const rows=taxonomy.functions.slice(0,5).map(({id},i)=>candidate(`Fresh reporting ${i}`,id,'generative-ai'));
-  const prior=[0,1].map(i=>({...candidate(`Existing deployed item ${i}`,fn,'generative-ai'),publishedAt:new Date().toISOString()}));
+  const prior=[0,1].map(i=>({...candidate(`Existing deployed item ${i}`,fn,'generative-ai'),publishedAt:new Date(clock).toISOString()}));
   assert.equal(run(rows,prior).selected.length,0);
-  const old=prior.map(x=>({...x,publishedAt:new Date(Date.now()-14*86400000).toISOString()}));
+  const old=prior.map(x=>({...x,publishedAt:new Date(time-14*86400000).toISOString()}));
   assert.equal(run(rows,old).selected.length,2);
-  const future=prior.map(x=>({...x,publishedAt:new Date(Date.now()+86400000).toISOString()}));
+  const future=prior.map(x=>({...x,publishedAt:new Date(time+86400000).toISOString()}));
   assert.equal(run(rows,future).selected.length,2);
 });

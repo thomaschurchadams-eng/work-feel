@@ -3,13 +3,13 @@
 ## Purpose
 This file defines the outward-facing work CreditUnionAI News should produce. It complements the goal hierarchy and role policies; it does not weaken editorial, sourcing, approval, legal, social, or production guardrails.
 
-## Weekday production SLA
+## Daily production SLA
 
 ### 1. Full editorial output
-- **Target:** five distinct qualified full News or Insights articles per weekday from November 13, twenty-five per full week, five core plus up to two strong, distinct optional extras from November 19 after release (maximum seven, never a quota) through the same sequential Daily Publisher and unchanged weekday schedule. The November 12 exception permits five additional articles above its frozen one-article baseline; do not reopen completed receipts, backfill other days, or add weekend work.
+- **Target:** ten distinct qualified News or Insights articles in the existing configured Eastern morning cycle under the released version 11 effective-date profile. Seventy is the weekly outer ceiling across Monday–Sunday. Do not reopen completed or started legacy scopes, backfill days, add schedules or parallelize writes.
 - A valid non-publication outcome is acceptable when no candidate clears the editorial/source gates. Quality gates are never lowered to hit volume.
 - Every cycle must still leave a machine-observable outcome and handoff.
-- Preserve the same bounded twelve-candidate research pool and approved fallbacks. Scan all five permanent discovery directions daily within that one pool; record every unfilled core slot's actual reason. Unselected extras are not a shortfall; selected extras retain their real owner and checkpoints; complete and verify one package before the next. This target does not guarantee source supply, throughput or additional usage/spend.
+- Follow the date-specific discovery profile and existing fallbacks: 24 credible candidates when available, at most 30 scored, and up to four source-checked backups after activation. Scan all five directions; continue beyond five when candidates qualify, maintain exact checkpoints, and report actual shortfalls and proof. No implied usage/spend increase.
 
 ### 2. Distribution output
 - For each published article, make an explicit LinkedIn decision under the existing policy: `posted | scheduled | not selected | blocked`.
@@ -21,7 +21,7 @@ This file defines the outward-facing work CreditUnionAI News should produce. It 
 
 ## Weekly production SLA
 By the Friday operating brief, CUAI should be able to account for:
-- every weekday article-cycle outcome;
+- every eligible article-cycle outcome (week-to-date at Friday, weekend separately);
 - all material LinkedIn distribution decisions;
 - qualified Alert/homepage-freshness changes;
 - at least one concrete audience-growth or conversion action tied to G1/G2/G5 when evidence supports it;
