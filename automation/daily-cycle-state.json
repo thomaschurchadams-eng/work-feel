@@ -584,19 +584,26 @@
       {
         "slot": 5,
         "plannedDate": "2026-11-21",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
         "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T14:07:15.601Z",
-        "nextAction": "Prepare immutable atomic article; bind actual PR/head/run/job/attempt before terminal outcome.",
+        "nextReviewAt": "2026-11-21T13:59:40.318Z",
+        "nextAction": "Same owner observe actual terminal result, retrieve exact artifact and personally review pixels; no release from CI counts alone.",
         "evidence": {
           "preparation": {
             "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
             "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
             "preparedAt": "2026-11-21T13:37:15.602Z",
             "sourceReview": "Qualified data brief from original2026 awards PDF and program resources; five CU entries3.6m/152 assisted versus154 total. Operations handoff natural; awards not disbursement/delivered homes. Original posting clock unknown, urgency0."
+          },
+          "pending": {
+            "prNumber": 410,
+            "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
+            "run": 44909930833,
+            "job": 136863380184,
+            "runAttempt": 1
           }
         }
       }
