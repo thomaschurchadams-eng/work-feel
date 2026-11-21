@@ -289,13 +289,22 @@
       {
         "slot": 1,
         "plannedDate": "2026-11-21",
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
         "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
         "outcomeScope": "cycle",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T12:22:42.111Z",
-        "nextAction": "Prepare qualified issuer-update brief; exact-head CI fallback, own artifact/visual review and actual live verification before any later package."
+        "nextReviewAt": "2026-11-21T12:25:52.476Z",
+        "nextAction": "Observe actual exact-head terminal result, then inspect matching artifact and own390/1440 pixels; no release or next package before live acceptance.",
+        "evidence": {
+          "pending": {
+            "prNumber": 406,
+            "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
+            "run": 44902161577,
+            "job": 136840132620,
+            "runAttempt": 1
+          }
+        }
       }
     ],
     "browserReadiness": {
