@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "soft-editorial-illustration",
+      "subject": "human-machine-handoff",
+      "composition": "asymmetric-editorial",
+      "perspective": "eye-level",
+      "palette": "cobalt-coral",
+      "lighting": "soft-daylight",
+      "texture": "ink-wash",
+      "scene": "A generic adult credit reviewer looking at an unlettered application folder while a separate machine tray holds another blank folder; human review concept without text flags or logos",
+      "topicFit": 96,
+      "editorialClarity": 94,
+      "score": 69,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 96,
+        "editorialClarity": 94
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "eu-consumer-credit-human-review-comparison",
+      "articleUrl": "/news/eu-consumer-credit-human-review-comparison.html",
+      "imagePath": "/assets/eu-consumer-credit-human-review-comparison.jpg",
+      "publishedAt": "2026-11-22T07:36:56-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "human-machine-handoff",
+          "composition": "asymmetric-editorial",
+          "perspective": "eye-level",
+          "palette": "cobalt-coral",
+          "lighting": "soft-daylight",
+          "texture": "ink-wash",
+          "scene": "A generic adult credit reviewer looking at an unlettered application folder while a separate machine tray holds another blank folder; human review concept without text flags or logos",
+          "topicFit": 96,
+          "editorialClarity": 94,
+          "score": 69,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 96,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "cinematic-conceptual",
+          "subject": "member-interaction",
+          "composition": "wide-environmental",
+          "perspective": "through-glass",
+          "palette": "monochrome-ink",
+          "lighting": "natural-window-light",
+          "texture": "clean-photographic",
+          "scene": "Imagined adult borrower and reviewer seated on opposite sides of a neutral desk with blank paperwork, staged not a real regulated institution",
+          "topicFit": 88,
+          "editorialClarity": 90,
+          "score": 58.7,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 88,
+            "editorialClarity": 90
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "composition": "diagonal-motion",
+          "perspective": "overhead",
+          "palette": "plum-gold",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "Blank application sheets reaching a small paper human review desk instead of a mechanical chute, conceptual and unlabelled",
+          "topicFit": 91,
+          "editorialClarity": 90,
+          "score": 52.4,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 91,
+            "editorialClarity": 90
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "a905386d444e24565bd5cd7e51fffeb74d82b51969d783c7a9752c417d695ea4"
+    },
+    {
       "medium": "mixed-media-collage",
       "subject": "physical-metaphor",
       "composition": "split-comparison",

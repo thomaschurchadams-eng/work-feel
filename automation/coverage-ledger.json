@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "eu-consumer-credit-human-review-comparison",
+      "title": "EU Credit Update Puts Human Review in the Borrower Journey",
+      "url": "/news/eu-consumer-credit-human-review-comparison.html",
+      "publishedAt": "2026-11-22T07:36:56-05:00",
+      "section": "news",
+      "beat": "eu-consumer-credit-human-review-comparison",
+      "functions": [
+        "risk-compliance"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Risk and Compliance leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/cornerstone-small-business-workflow-primary-account.html",
+        "/news/microsoft-hr-profile-attribute-sharing.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Comparative human review/BNPL; jurisdiction and national implementation must be explicit."
+    },
+    {
       "id": "kansas-city-fed-services-growth-expectations",
       "title": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
       "url": "/news/kansas-city-fed-services-growth-expectations.html",
