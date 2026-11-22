@@ -1206,11 +1206,11 @@
       },
       {
         "slot": 6,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
         "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T12:34:01.636Z",
+        "nextReviewAt": "2026-11-22T12:37:24.511Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "kc-services-november",
@@ -1223,8 +1223,16 @@
             "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html",
             "preparedAt": "2026-11-22T12:14:01.636Z",
             "sourceReview": "Regional diffusion survey; forward expectations not realized borrower revenue; revised seasonal factors. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          },
+          "pending": {
+            "prNumber": 417,
+            "head": "2217ad829c20bac795367c3ca1805ba92b93b328",
+            "run": 45021414887,
+            "job": 137204945467,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
       }
     ],
     "browserReadiness": {
