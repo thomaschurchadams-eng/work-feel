@@ -841,11 +841,11 @@
       },
       {
         "slot": 3,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Comhar Linn’s Notice Separates Former-Provider Data From Current Banking",
         "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T11:26:54.742Z",
+        "nextReviewAt": "2026-11-22T11:43:05.453Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "comhar-former-vendor-data",
@@ -865,9 +865,40 @@
             "run": 45015687211,
             "job": 137187380768,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e1e52c8383cdfd80d5b68f289e6a129b18a7d876",
+            "run": 45015687211,
+            "job": 137187380768,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-22T11:23:03.883Z",
+            "prNumber": 414
+          },
+          "terminalAcceptance": {
+            "prNumber": 414,
+            "head": "e1e52c8383cdfd80d5b68f289e6a129b18a7d876",
+            "run": 45015687211,
+            "job": 137187380768,
+            "runAttempt": 1,
+            "artifactId": 14752476286,
+            "artifactSha256": "0cec72662d08bd256af022d85fdb3671618ca5c82da33a95ef28e75df047e6ff",
+            "visualReviewedAt": "2026-11-22T11:23:03.151Z",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "browser": "Chromium 143.0.7499.4 / Playwright1.57.0",
+            "observations": "Own actual full390/1440 article and mobileNews/desktopHome lead/art404 pixels reviewed. Readable long title and date, source link/related links, explicit Irish attribution and unverified cause/current security distinction. Ink archival illustration correctly conceptual. No overflow/errors/a11y violations;404 retains text/link and recovery passes. Exact revision tracked clean, cache unchanged,209 history transitions/90 histories preserved."
           }
         },
-        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
       }
     ],
     "browserReadiness": {
