@@ -20,7 +20,7 @@
       }
     ],
     "status": "in-progress",
-    "outcomeSlot": 2,
+    "outcomeSlot": 3,
     "evaluatedCandidateCount": 24,
     "beatsSearched": [
       "regulation-policy",
@@ -838,6 +838,28 @@
         "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
         "productionCommit": "8ca6697dc8f602dd056a748088c11839a71ff601",
         "verifiedAt": "2026-11-22T11:03:05.920Z"
+      },
+      {
+        "slot": 3,
+        "status": "prepared",
+        "candidateTitle": "Comhar Linn’s Notice Separates Former-Provider Data From Current Banking",
+        "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-22T11:24:02.456Z",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "comhar-former-vendor-data",
+            "eventKey": "comhar-former-vendor-data",
+            "sourceUrl": "https://comharlinnintocu.ie/news-events/important-information-for-affected-members-formerly-education-credit-union-members",
+            "sourcePublishedAt": "2026-11-20"
+          },
+          "preparation": {
+            "candidateTitle": "Comhar Linn’s Notice Separates Former-Provider Data From Current Banking",
+            "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html",
+            "preparedAt": "2026-11-22T11:04:02.456Z",
+            "sourceReview": "Irish CU attributes incident to historical data at former provider, says current banking unaffected; no cause or U.S. breach-law inference. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          }
+        }
       }
     ],
     "browserReadiness": {
@@ -850,7 +872,7 @@
       "fallback": "Existing exact-head PR design-checks, complete rendered artifact and own visual acceptance; no install/cache change."
     },
     "socialDecision": "not-reserved; historical/provider holds retained",
-    "updatedAt": "2026-11-22T10:38:33.441Z"
+    "updatedAt": "2026-11-22T11:04:02.456Z"
   },
   "history": [
     {
