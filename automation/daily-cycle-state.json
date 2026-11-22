@@ -841,11 +841,11 @@
       },
       {
         "slot": 3,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Comhar Linn’s Notice Separates Former-Provider Data From Current Banking",
         "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T11:24:02.456Z",
+        "nextReviewAt": "2026-11-22T11:26:54.742Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "comhar-former-vendor-data",
@@ -858,8 +858,16 @@
             "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html",
             "preparedAt": "2026-11-22T11:04:02.456Z",
             "sourceReview": "Irish CU attributes incident to historical data at former provider, says current banking unaffected; no cause or U.S. breach-law inference. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          },
+          "pending": {
+            "prNumber": 414,
+            "head": "e1e52c8383cdfd80d5b68f289e6a129b18a7d876",
+            "run": 45015687211,
+            "job": 137187380768,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
       }
     ],
     "browserReadiness": {
