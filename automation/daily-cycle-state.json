@@ -28,7 +28,7 @@
       }
     ],
     "status": "in-progress",
-    "outcomeSlot": 4,
+    "outcomeSlot": 5,
     "evaluatedCandidateCount": 24,
     "beatsSearched": [
       "regulation-policy",
@@ -1064,6 +1064,28 @@
         "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
         "productionCommit": "281b0e73b24dc6a7cc0d36b6eb7ea90aaff6c9e0",
         "verifiedAt": "2026-11-22T11:45:37.117Z"
+      },
+      {
+        "slot": 5,
+        "status": "prepared",
+        "candidateTitle": "Canada Names Open-Banking Standards and Complaints Bodies",
+        "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-22T12:06:10.346Z",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "canada-open-banking-designations",
+            "eventKey": "canada-open-banking-designations",
+            "sourceUrl": "https://www.canada.ca/en/department-finance/news/2026/11/canada-takes-next-steps-in-implementing-the-consumer-driven-banking-framework.html",
+            "sourcePublishedAt": "2026-11-20"
+          },
+          "preparation": {
+            "candidateTitle": "Canada Names Open-Banking Standards and Complaints Bodies",
+            "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html",
+            "preparedAt": "2026-11-22T11:46:10.346Z",
+            "sourceReview": "FDX with Canada Council and OBSI; designations not nationwide rollout; Canadian not U.S. rules. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          }
+        }
       }
     ],
     "browserReadiness": {
@@ -1076,7 +1098,7 @@
       "fallback": "Existing exact-head PR design-checks, complete rendered artifact and own visual acceptance; no install/cache change."
     },
     "socialDecision": "not-reserved; historical/provider holds retained",
-    "updatedAt": "2026-11-22T11:25:19.105Z"
+    "updatedAt": "2026-11-22T11:46:10.346Z"
   },
   "history": [
     {
