@@ -954,11 +954,11 @@
       },
       {
         "slot": 4,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Fed Survey Finds Weekend Payment Plans Outpace Added Liquidity Staffing",
         "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T11:47:23.159Z",
+        "nextReviewAt": "2026-11-22T12:04:09.487Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "fed-weekend-liquidity-survey",
@@ -978,9 +978,40 @@
             "run": 45017395940,
             "job": 137192558845,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "9f56dcdac763831c8dd57e0d350eb650d45a7418",
+            "run": 45017395940,
+            "job": 137192558845,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-22T11:44:08.018Z",
+            "prNumber": 415
+          },
+          "terminalAcceptance": {
+            "prNumber": 415,
+            "head": "9f56dcdac763831c8dd57e0d350eb650d45a7418",
+            "run": 45017395940,
+            "job": 137192558845,
+            "runAttempt": 1,
+            "artifactId": 14753001156,
+            "artifactSha256": "c0eb62dd48e4a56b5da21b6389b50ae9a5fb7340aabac93928f011c1b51a35dc",
+            "visualReviewedAt": "2026-11-22T11:44:07.087Z",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "browser": "Chromium143.0.7499.4 / Playwright1.57.0",
+            "observations": "Personally reviewed full390/1440 article including scoped three-column table, mobileNews/desktopHome lead and404 card. Legible table fits mobile, labels numbers and bank-sample/plan-versus-action limitations clear. Paper art conceptual not a chart. No overflow/runtime/a11y failures; normal404recovery passes. Exact revision clean/cache unchanged;214 transitions/90 histories."
           }
         },
-        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
       }
     ],
     "browserReadiness": {
