@@ -15,3 +15,21 @@ test('house cannot fill a slot while the qualified mixed pool still needs editor
  const articles=['High','Standard'].map((classification,i)=>({id:'candidate-'+i,eligible:true,classification,canonicalUrl:'https://creditunionainews.com/news/candidate-'+i+'.html'}));
  const result=selectSlot({...args,articles});assert.equal(result.status,'needs-editorial-selection');assert.equal(result.assetId,undefined);
 });
+
+test('sponsor audience cards show only the four approved comparisons and their source', () => {
+  const page = fs.readFileSync('sponsorships/index.html', 'utf8');
+  const panel = /<section class="section sponsor-audience"[\s\S]*?<\/section>/.exec(page)?.[0];
+  assert.ok(panel);
+  const cards = [...panel.matchAll(/<li class="sponsor-audience-card">\s*<h3>([^<]+)<\/h3>\s*<strong class="sponsor-audience-value">([^<]+)<\/strong>\s*<p class="sponsor-audience-period">(.+?)<\/p>/g)]
+    .map(([, label, value, period]) => [label, value, period.replace(/<\/?span>/g, '')]);
+  assert.deepEqual(cards, [
+    ['Article views', '3.1×', 'Oct vs. Sep 2026'],
+    ['Total site views', '+128%', 'Oct vs. Sep 2026'],
+    ['Active users', '+44%', 'Nov 1–20 vs. Oct 1–20, 2026'],
+    ['Page views', '+73%', 'Nov 1–20 vs. Oct 1–20, 2026']
+  ]);
+  assert.equal((panel.match(/<li class="sponsor-audience-card">/g) || []).length, 4);
+  assert.equal((panel.match(/<p\b/g) || []).length, 5);
+  assert.match(panel, /<p class="sponsor-audience-source">Source: Google Analytics 4<\/p>/);
+  assert.doesNotMatch(panel, /session|LinkedIn|WAU|MAU|55\.6|48\.3|indexed|methodology/i);
+});
