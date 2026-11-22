@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-22",
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "publications": [
       {
@@ -25,6 +25,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html"
       }
     ],
     "status": "in-progress",
@@ -1067,7 +1071,7 @@
       },
       {
         "slot": 5,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Canada Names Open-Banking Standards and Complaints Bodies",
         "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html",
         "accountableOwner": "daily-publisher",
@@ -1148,9 +1152,57 @@
             },
             "actualJobCompletedAt": "2026-11-22T12:08:44Z",
             "observations": "Own full390/1440 article, mobileNews/desktopHome lead and mobile404 reviewed. Natural hands/faces in staged unbranded concept; no real-official depiction. Readable date/headline/body, Canada/US jurisdiction and designations-versus-launch distinction clear. No overflow/a11y/runtime errors, normal404recovery passed. Exact head clean/cache unchanged;217 transitions/90 histories. Job succeeded12seconds after accepted review time; actual terminal-success observation retained, never classified as failed test or live failure escalation."
+          },
+          "productionVerification": {
+            "deploymentId": "dpl_BSyNysDhQFpMGcGqF6rojjwaBTmn",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "9e441f4aea496a5f392c46755c07d03f9c9fe27b",
+            "verifiedAt": "2026-11-22T12:13:33.151Z",
+            "mode": "actual-public-bytes-against-exact-reviewed-static-source; rendered/visual evidence separately from exact-head CI",
+            "publicResponses": [
+              {
+                "path": "news/canada-open-banking-standards-complaints-bodies.html",
+                "status": 200,
+                "bytes": 10979,
+                "sha256": "54800396b88fa6c4cdd6fd57027838c6797fb549070ce8a647adb49ac00349c8"
+              },
+              {
+                "path": "assets/canada-open-banking-standards-complaints-bodies.jpg",
+                "status": 200,
+                "bytes": 144490,
+                "sha256": "71dd27bd01002f2bda8426dc90a0b4a63eb73cda88bc203f769f53043ec8c5f8"
+              },
+              {
+                "path": "news.html",
+                "status": 200,
+                "bytes": 149059,
+                "sha256": "30a03612542a5578bf996e09a5119138ee9911e1049c56a127a7abb627d24174"
+              },
+              {
+                "path": "index.html",
+                "status": 200,
+                "bytes": 92973,
+                "sha256": "a9de46635141ceb7d9585ac3d69ae2ccbb880a2d0d0bd788a59843faf79c6241"
+              },
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "bytes": 143601,
+                "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6"
+              },
+              {
+                "path": "assets/styles.css",
+                "status": 200,
+                "bytes": 70854,
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82"
+              }
+            ]
           }
         },
-        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
+        "productionCommit": "9e441f4aea496a5f392c46755c07d03f9c9fe27b",
+        "verifiedAt": "2026-11-22T12:13:33.151Z"
       }
     ],
     "browserReadiness": {
