@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "tactile-paper-cut",
+      "subject": "physical-metaphor",
+      "composition": "split-comparison",
+      "perspective": "overhead",
+      "palette": "burgundy-sand",
+      "lighting": "graphic-flat-light",
+      "texture": "paper-fiber",
+      "scene": "A weekday desk and a weekend desk connected by a single folded paper path and blank calendar blocks; an imagined liquidity handoff, no chart or numerical claim",
+      "topicFit": 96,
+      "editorialClarity": 93,
+      "score": 61.7,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 96,
+        "editorialClarity": 93
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "fed-survey-weekend-liquidity-staffing",
+      "articleUrl": "/news/fed-survey-weekend-liquidity-staffing.html",
+      "imagePath": "/assets/fed-survey-weekend-liquidity-staffing.jpg",
+      "publishedAt": "2026-11-22T06:26:27-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "physical-metaphor",
+          "composition": "split-comparison",
+          "perspective": "overhead",
+          "palette": "burgundy-sand",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "A weekday desk and a weekend desk connected by a single folded paper path and blank calendar blocks; an imagined liquidity handoff, no chart or numerical claim",
+          "topicFit": 96,
+          "editorialClarity": 93,
+          "score": 61.7,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 96,
+            "editorialClarity": 93
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "soft-editorial-illustration",
+          "subject": "frontline-workflow",
+          "composition": "wide-environmental",
+          "perspective": "eye-level",
+          "palette": "cobalt-coral",
+          "lighting": "natural-window-light",
+          "texture": "ink-wash",
+          "scene": "An imagined treasury operations room with an empty weekday desk and a single staffed weekend desk, blank screens and no institutional identity",
+          "topicFit": 88,
+          "editorialClarity": 86,
+          "score": 57.9,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 88,
+            "editorialClarity": 86
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "graphite-electric-yellow",
+          "lighting": "high-contrast-studio",
+          "texture": "polished-metal",
+          "scene": "Plain metal coins beside an unlettered weekend calendar block and one small service bell; conceptual not data visualization",
+          "topicFit": 92,
+          "editorialClarity": 94,
+          "score": 53.5,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 92,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "5fe1bfbc6fc9f0bc405f04d392fd5f907c282067d0df605e5750a376297fb172"
+    },
+    {
       "medium": "ink-and-linocut",
       "subject": "architecture-and-infrastructure",
       "composition": "diagonal-motion",
