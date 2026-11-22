@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "dimensional-3d",
+      "subject": "architecture-and-infrastructure",
+      "composition": "wide-environmental",
+      "perspective": "cutaway",
+      "palette": "terracotta-sky",
+      "lighting": "soft-daylight",
+      "texture": "matte-clay",
+      "scene": "Conceptual miniature campus courtyard and small service counter without a real institution or signage",
+      "topicFit": 88,
+      "editorialClarity": 87,
+      "score": 58.1,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 88,
+        "editorialClarity": 87
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "uccu-suu-campus-branch-partnership",
+      "articleUrl": "/news/uccu-suu-campus-branch-partnership.html",
+      "imagePath": "/assets/uccu-suu-campus-branch-partnership.jpg",
+      "publishedAt": "2026-11-22T05:40:22-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "dimensional-3d",
+          "subject": "architecture-and-infrastructure",
+          "composition": "wide-environmental",
+          "perspective": "cutaway",
+          "palette": "terracotta-sky",
+          "lighting": "soft-daylight",
+          "texture": "matte-clay",
+          "scene": "Conceptual miniature campus courtyard and small service counter without a real institution or signage",
+          "topicFit": 88,
+          "editorialClarity": 87,
+          "score": 58.1,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 88,
+            "editorialClarity": 87
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "member-interaction",
+          "composition": "diagonal-motion",
+          "perspective": "eye-level",
+          "palette": "plum-gold",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Imagined campus financial-coaching desk with two adult students and one advisor, simple faces and hands, no text, logos or real campus identity",
+          "topicFit": 97,
+          "editorialClarity": 94,
+          "score": 55,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 97,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "graphite-electric-yellow",
+          "lighting": "high-contrast-studio",
+          "texture": "fabric-and-wood",
+          "scene": "Blank student card and a small unlettered notebook beside a plain service bell, illustrative not a product photograph",
+          "topicFit": 82,
+          "editorialClarity": 82,
+          "score": 41,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 82,
+            "editorialClarity": 82
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "512f2bfe7ef6b267b48927e3dc29c0e4622977e426ffb35d67157e9c29cbca39"
+    },
+    {
       "medium": "architectural-isometric",
       "subject": "human-machine-handoff",
       "composition": "layered-depth",

@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "uccu-suu-campus-branch-partnership",
+      "title": "UCCU’s $7 Million SUU Partnership Includes a Campus Branch",
+      "url": "/news/uccu-suu-campus-branch-partnership.html",
+      "publishedAt": "2026-11-22T05:40:22-05:00",
+      "section": "news",
+      "beat": "uccu-suu-campus-branch-partnership",
+      "functions": [
+        "hr-training"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "HR and Training leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/bls-financial-activities-jobs-october-2026.html",
+        "/news/pnc-branch-hospitality-human-service.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Multiyear branch, coaching, student jobs and sponsorship; allocation and opening date not reported."
+    },
+    {
       "id": "textract-insights-page-grounded-document-fields",
       "title": "Textract Adds Page Evidence to AI Document Fields",
       "url": "/news/textract-insights-page-grounded-document-fields.html",
