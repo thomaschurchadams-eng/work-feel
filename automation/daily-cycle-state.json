@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-22",
-    "fullArticleCount": 5,
+    "fullArticleCount": 6,
     "alertCount": 0,
     "publications": [
       {
@@ -29,6 +29,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html"
       }
     ],
     "status": "in-progress",
@@ -1206,7 +1210,7 @@
       },
       {
         "slot": 6,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
         "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html",
         "accountableOwner": "daily-publisher",
@@ -1261,9 +1265,57 @@
             ],
             "browser": "Chromium143.0.7499.4 / Playwright1.57.0",
             "observations": "Personally reviewed full390/1440 article including scoped diffusion-index table, mobileNews/desktopHome lead and404. Table readable without horizontal overflow; revised-series, expectations/current activity and borrower-level limits clear. Collage explicitly conceptual, not actual surveyed business/data chart. Source/related links/date readable; no runtime/a11y/errors; normal404recovery passed; exact head clean/cache unchanged;221 transitions and90 histories."
+          },
+          "productionVerification": {
+            "deploymentId": "dpl_DwM8vQaGae7odkR7xLMpkC39pHwb",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "66aec28b578cbf3a5c0314a294118f72916a7605",
+            "verifiedAt": "2026-11-22T12:34:54.162Z",
+            "mode": "actual-public-bytes-against-exact-reviewed-static-source; rendered/visual evidence separately from exact-head CI",
+            "publicResponses": [
+              {
+                "path": "news/kansas-city-fed-services-growth-expectations.html",
+                "status": 200,
+                "bytes": 11555,
+                "sha256": "64671f853681f077f75f3542fed173c1754f1cec0e445869b4c58037dca2253c"
+              },
+              {
+                "path": "assets/kansas-city-fed-services-growth-expectations.jpg",
+                "status": 200,
+                "bytes": 221638,
+                "sha256": "754c1221738b02c68e376b244e769c1eed82c1e749ca367741066a80fcf5e617"
+              },
+              {
+                "path": "news.html",
+                "status": 200,
+                "bytes": 149851,
+                "sha256": "55b17de371ee9458340e4bb225d420231c9f13fbf7b81db4fbd5c7700fc9b5d5"
+              },
+              {
+                "path": "index.html",
+                "status": 200,
+                "bytes": 93765,
+                "sha256": "cc08905b3a2b26fd5f0e3be77f2918f0d8e66de9162192438ddf40d4d0ea46bd"
+              },
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "bytes": 143601,
+                "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6"
+              },
+              {
+                "path": "assets/styles.css",
+                "status": 200,
+                "bytes": 70854,
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82"
+              }
+            ]
           }
         },
-        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
+        "productionCommit": "66aec28b578cbf3a5c0314a294118f72916a7605",
+        "verifiedAt": "2026-11-22T12:34:54.162Z"
       }
     ],
     "browserReadiness": {
