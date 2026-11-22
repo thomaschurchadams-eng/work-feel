@@ -10,7 +10,7 @@
     "fullArticleCount": 0,
     "alertCount": 0,
     "publications": [],
-    "status": "blocked",
+    "status": "in-progress",
     "outcomeSlot": 1,
     "evaluatedCandidateCount": 24,
     "beatsSearched": [
@@ -590,11 +590,11 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "technical-failure",
+        "status": "pending-validation",
         "candidateTitle": "Textract Adds Page Evidence to AI Document Fields",
         "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T10:28:31.932Z",
+        "nextReviewAt": "2026-11-22T10:35:10.690Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -611,24 +611,36 @@
           },
           "pending": {
             "prNumber": 412,
-            "head": "65f21247f464924fae8622e473a5ad4f38cab33b",
-            "run": 45011090554,
-            "job": 137173370572,
+            "head": "42c4837882a3c0c4f139f9ef2b34bb1eeedd64d1",
+            "run": 45011496762,
+            "job": 137174603863,
             "runAttempt": 1
           },
-          "terminalValidation": {
-            "head": "65f21247f464924fae8622e473a5ad4f38cab33b",
-            "run": 45011090554,
-            "job": 137173370572,
-            "runAttempt": 1,
-            "conclusion": "failure",
-            "runConclusion": "failure",
-            "jobConclusion": "failure",
-            "observedAt": "2026-11-22T10:13:30.439Z",
-            "prNumber": 412
-          }
+          "validationHistory": [
+            {
+              "prNumber": 412,
+              "head": "65f21247f464924fae8622e473a5ad4f38cab33b",
+              "run": 45011090554,
+              "job": 137173370572,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-22T10:15:12.875Z",
+              "terminalValidation": {
+                "head": "65f21247f464924fae8622e473a5ad4f38cab33b",
+                "run": 45011090554,
+                "job": 137173370572,
+                "runAttempt": 1,
+                "conclusion": "failure",
+                "runConclusion": "failure",
+                "jobConclusion": "failure",
+                "observedAt": "2026-11-22T10:13:30.439Z",
+                "prNumber": 412
+              },
+              "reason": "Corrected stale generated heading class; first failed run and its exact terminal receipt retained."
+            }
+          ]
         },
-        "nextAction": "Inspect exact failed source/regression step; correct only proven article-package defect, retain failed head/run/job/attempt, then require replacement exact-head CI and own visual acceptance."
+        "nextAction": "Observe replacement exact-head terminal result; accept actual artifact390/1440 only after all source/rendered gates pass."
       }
     ],
     "browserReadiness": {
@@ -641,8 +653,7 @@
       "fallback": "Existing exact-head PR design-checks, complete rendered artifact and own visual acceptance; no install/cache change."
     },
     "socialDecision": "not-reserved; historical/provider holds retained",
-    "updatedAt": "2026-11-22T10:07:38.025Z",
-    "blockedReason": "PR412 exact-head source/regression gate failed before rendered checks; actual browser installation and launch passed. Failure log under same-owner diagnosis."
+    "updatedAt": "2026-11-22T10:07:38.025Z"
   },
   "history": [
     {
