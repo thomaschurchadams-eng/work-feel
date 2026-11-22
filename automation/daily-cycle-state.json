@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-22",
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
       {
@@ -21,6 +21,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html"
       }
     ],
     "status": "in-progress",
@@ -954,7 +958,7 @@
       },
       {
         "slot": 4,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Fed Survey Finds Weekend Payment Plans Outpace Added Liquidity Staffing",
         "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html",
         "accountableOwner": "daily-publisher",
@@ -1009,9 +1013,57 @@
             ],
             "browser": "Chromium143.0.7499.4 / Playwright1.57.0",
             "observations": "Personally reviewed full390/1440 article including scoped three-column table, mobileNews/desktopHome lead and404 card. Legible table fits mobile, labels numbers and bank-sample/plan-versus-action limitations clear. Paper art conceptual not a chart. No overflow/runtime/a11y failures; normal404recovery passes. Exact revision clean/cache unchanged;214 transitions/90 histories."
+          },
+          "productionVerification": {
+            "deploymentId": "dpl_AJR9NXxPZCdh2LPhQhD3GEq9NQBa",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "281b0e73b24dc6a7cc0d36b6eb7ea90aaff6c9e0",
+            "verifiedAt": "2026-11-22T11:45:37.117Z",
+            "mode": "actual-public-bytes-against-exact-reviewed-static-source; rendered/visual evidence separately from exact-head CI",
+            "publicResponses": [
+              {
+                "path": "news/fed-survey-weekend-liquidity-staffing.html",
+                "status": 200,
+                "bytes": 11544,
+                "sha256": "f5988ae85032a1939fa1059c26df1ecf451778063deedf783d77aa235c30e964"
+              },
+              {
+                "path": "assets/fed-survey-weekend-liquidity-staffing.jpg",
+                "status": 200,
+                "bytes": 207083,
+                "sha256": "5fe1bfbc6fc9f0bc405f04d392fd5f907c282067d0df605e5750a376297fb172"
+              },
+              {
+                "path": "news.html",
+                "status": 200,
+                "bytes": 148306,
+                "sha256": "5b60f14f3e002f505f8a84395e1c9a3b99e850c43aa68e3c22b18ed4fad66c4c"
+              },
+              {
+                "path": "index.html",
+                "status": 200,
+                "bytes": 92220,
+                "sha256": "bfcd4328eacb70c38a198034b673fa571ac91781f5cce7eb6f9e57d29abdb7d0"
+              },
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "bytes": 143601,
+                "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6"
+              },
+              {
+                "path": "assets/styles.css",
+                "status": 200,
+                "bytes": 70854,
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82"
+              }
+            ]
           }
         },
-        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
+        "productionCommit": "281b0e73b24dc6a7cc0d36b6eb7ea90aaff6c9e0",
+        "verifiedAt": "2026-11-22T11:45:37.117Z"
       }
     ],
     "browserReadiness": {
