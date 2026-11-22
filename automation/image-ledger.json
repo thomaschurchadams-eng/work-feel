@@ -3,6 +3,97 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "mixed-media-collage",
+      "subject": "physical-metaphor",
+      "composition": "split-comparison",
+      "perspective": "overhead",
+      "palette": "graphite-electric-yellow",
+      "lighting": "graphic-flat-light",
+      "texture": "paper-fiber",
+      "scene": "A quiet current-period storefront cutout beside a brighter future planning sheet, both unlettered, no chart or numerical growth claim",
+      "topicFit": 90,
+      "editorialClarity": 89,
+      "score": 51.9,
+      "metrics": {
+        "novelty": 14,
+        "topicFit": 90,
+        "editorialClarity": 89
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "kansas-city-fed-services-growth-expectations",
+      "articleUrl": "/news/kansas-city-fed-services-growth-expectations.html",
+      "imagePath": "/assets/kansas-city-fed-services-growth-expectations.jpg",
+      "publishedAt": "2026-11-22T07:15:35-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "operations-environment",
+          "composition": "foreground-background-tension",
+          "perspective": "eye-level",
+          "palette": "slate-lime",
+          "lighting": "diffused-overcast",
+          "texture": "clean-photographic",
+          "scene": "Imagined small regional service business with a quiet reception desk in foreground and prepared workstations in background, no signs brands graphs or identifiable real location",
+          "topicFit": 96,
+          "editorialClarity": 92,
+          "score": 54.3,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 96,
+            "editorialClarity": 92
+          },
+          "rejected": true,
+          "reasons": [
+            "same-medium-consecutive"
+          ]
+        },
+        {
+          "medium": "mixed-media-collage",
+          "subject": "physical-metaphor",
+          "composition": "split-comparison",
+          "perspective": "overhead",
+          "palette": "graphite-electric-yellow",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "A quiet current-period storefront cutout beside a brighter future planning sheet, both unlettered, no chart or numerical growth claim",
+          "topicFit": 90,
+          "editorialClarity": 89,
+          "score": 51.9,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 90,
+            "editorialClarity": 89
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "composition": "tight-close-up",
+          "perspective": "macro",
+          "palette": "burgundy-sand",
+          "lighting": "cinematic-side-light",
+          "texture": "fabric-and-wood",
+          "scene": "A closed appointment book and unused service bell beside a blank planning card, illustrative business expectations rather than measured results",
+          "topicFit": 88,
+          "editorialClarity": 88,
+          "score": 44,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 88,
+            "editorialClarity": 88
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "754c1221738b02c68e376b244e769c1eed82c1e749ca367741066a80fcf5e617"
+    },
+    {
       "medium": "editorial-photography",
       "subject": "member-interaction",
       "composition": "asymmetric-editorial",
