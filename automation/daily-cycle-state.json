@@ -1206,11 +1206,11 @@
       },
       {
         "slot": 6,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
         "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T12:37:24.511Z",
+        "nextReviewAt": "2026-11-22T12:53:19.558Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "kc-services-november",
@@ -1230,9 +1230,40 @@
             "run": 45021414887,
             "job": 137204945467,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "2217ad829c20bac795367c3ca1805ba92b93b328",
+            "run": 45021414887,
+            "job": 137204945467,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-22T12:33:18.041Z",
+            "prNumber": 417
+          },
+          "terminalAcceptance": {
+            "prNumber": 417,
+            "head": "2217ad829c20bac795367c3ca1805ba92b93b328",
+            "run": 45021414887,
+            "job": 137204945467,
+            "runAttempt": 1,
+            "artifactId": 14754546459,
+            "artifactSha256": "520c7dad96b3f676ba2d63591d7f2c744449cbf0bb57e00ec3fbd411f2d211f7",
+            "visualReviewedAt": "2026-11-22T12:33:17.461Z",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "browser": "Chromium143.0.7499.4 / Playwright1.57.0",
+            "observations": "Personally reviewed full390/1440 article including scoped diffusion-index table, mobileNews/desktopHome lead and404. Table readable without horizontal overflow; revised-series, expectations/current activity and borrower-level limits clear. Collage explicitly conceptual, not actual surveyed business/data chart. Source/related links/date readable; no runtime/a11y/errors; normal404recovery passed; exact head clean/cache unchanged;221 transitions and90 histories."
           }
         },
-        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
       }
     ],
     "browserReadiness": {
