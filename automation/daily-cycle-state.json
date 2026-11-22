@@ -1067,11 +1067,11 @@
       },
       {
         "slot": 5,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Canada Names Open-Banking Standards and Complaints Bodies",
         "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T12:08:31.886Z",
+        "nextReviewAt": "2026-11-22T12:32:01.236Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "canada-open-banking-designations",
@@ -1091,9 +1091,66 @@
             "run": 45019089093,
             "job": 137197781741,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "3a10958c31fa0f09b08022aa4b20095a6fb5ea53",
+            "run": 45019089093,
+            "job": 137197781741,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-22T12:11:59.750Z",
+            "prNumber": 416
+          },
+          "terminalAcceptance": {
+            "prNumber": 416,
+            "head": "3a10958c31fa0f09b08022aa4b20095a6fb5ea53",
+            "run": 45019089093,
+            "job": 137197781741,
+            "runAttempt": 1,
+            "artifactId": 14753830780,
+            "artifactSha256": "9227bd4d840dfb68b18bd028bd31b68df2be7f9cc716ba6b33fbc0707ff63cbf",
+            "visualReviewedAt": "2026-11-22T12:10:04.961Z",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "browser": "Chromium143.0.7499.4 / Playwright1.57.0",
+            "checkpointObservation": {
+              "accountableOwner": "daily-publisher",
+              "head": "3a10958c31fa0f09b08022aa4b20095a6fb5ea53",
+              "run": 45019089093,
+              "job": 137197781741,
+              "nextReviewAt": "2026-11-22T12:08:31.886Z",
+              "observedAt": "2026-11-22T12:08:59.943Z",
+              "reviewOverdue": true,
+              "releaseReady": false,
+              "canRecordTerminalOutcome": true,
+              "shouldEscalate": false,
+              "decision": "awaiting-visual-review",
+              "reason": "exact-head-check-passed",
+              "terminalEvidence": {
+                "head": "3a10958c31fa0f09b08022aa4b20095a6fb5ea53",
+                "run": 45019089093,
+                "job": 137197781741,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-22T12:08:59.943Z"
+              },
+              "nextAction": "Verify the exact artifact and perform actual visual review before the existing release gates."
+            },
+            "actualJobCompletedAt": "2026-11-22T12:08:44Z",
+            "observations": "Own full390/1440 article, mobileNews/desktopHome lead and mobile404 reviewed. Natural hands/faces in staged unbranded concept; no real-official depiction. Readable date/headline/body, Canada/US jurisdiction and designations-versus-launch distinction clear. No overflow/a11y/runtime errors, normal404recovery passed. Exact head clean/cache unchanged;217 transitions/90 histories. Job succeeded12seconds after accepted review time; actual terminal-success observation retained, never classified as failed test or live failure escalation."
           }
         },
-        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
       }
     ],
     "browserReadiness": {
