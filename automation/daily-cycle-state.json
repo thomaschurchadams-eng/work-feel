@@ -24,7 +24,7 @@
       }
     ],
     "status": "in-progress",
-    "outcomeSlot": 3,
+    "outcomeSlot": 4,
     "evaluatedCandidateCount": 24,
     "beatsSearched": [
       "regulation-policy",
@@ -951,6 +951,28 @@
         "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
         "productionCommit": "132b391e20b086cfcffd4bb9851ea612c00a6ba9",
         "verifiedAt": "2026-11-22T11:24:48.050Z"
+      },
+      {
+        "slot": 4,
+        "status": "prepared",
+        "candidateTitle": "Fed Survey Finds Weekend Payment Plans Outpace Added Liquidity Staffing",
+        "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-22T11:45:19.105Z",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "fed-weekend-liquidity-survey",
+            "eventKey": "fed-weekend-liquidity-survey",
+            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+            "sourcePublishedAt": "2026-11-20"
+          },
+          "preparation": {
+            "candidateTitle": "Fed Survey Finds Weekend Payment Plans Outpace Added Liquidity Staffing",
+            "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html",
+            "preparedAt": "2026-11-22T11:25:19.105Z",
+            "sourceReview": "91 banks, not a CU survey; plans and actions differ; published Nov20, fielded September. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          }
+        }
       }
     ],
     "browserReadiness": {
@@ -963,7 +985,7 @@
       "fallback": "Existing exact-head PR design-checks, complete rendered artifact and own visual acceptance; no install/cache change."
     },
     "socialDecision": "not-reserved; historical/provider holds retained",
-    "updatedAt": "2026-11-22T11:04:02.456Z"
+    "updatedAt": "2026-11-22T11:25:19.105Z"
   },
   "history": [
     {
