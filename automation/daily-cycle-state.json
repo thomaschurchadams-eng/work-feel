@@ -7,12 +7,16 @@
   },
   "current": {
     "date": "2026-11-22",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/uccu-suu-campus-branch-partnership.html"
       }
     ],
     "status": "in-progress",
@@ -674,6 +678,52 @@
             ],
             "browser": "Chromium 143.0.7499.4 / Playwright1.57.0 job-local chromium_headless_shell-1200",
             "observations": "Personally inspected actual full390/1440 article pixels, mobile News first card, desktop Home lead and mobile forced-artwork404 pixels. Headline/date/function/source link/related links and bounded vendor-versus-CU claims are readable without clipping. Original emerald conceptual art matches the chosen medium; not an actual implementation photograph.404 removes the art box but retains title, deck and link. Actual tests report recovery without broken/placeholder images, no accessibility/runtime violations or overflow, clean exact revision and unchanged isolated browser cache. Independent remote test execution plus own publisher visual/editorial review; no separate human reviewer or native production-browser claim."
+          },
+          "productionVerification": {
+            "deploymentId": "dpl_92R3xNk85ueneVufpzXg9K1U2BXp",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "e90071cac3db74b5de30e231f5a7803d50bd489b",
+            "verifiedAt": "2026-11-22T10:36:40.395Z",
+            "mode": "actual-public-bytes-against-exact-reviewed-static-source; rendered/visual evidence separately from exact-head CI",
+            "publicResponses": [
+              {
+                "path": "news/textract-insights-page-grounded-document-fields.html",
+                "status": 200,
+                "bytes": 11106,
+                "sha256": "32c8400de4cbc94ac003473abe23ed063dc29b448326991f123efa541dc675fa"
+              },
+              {
+                "path": "assets/textract-insights-page-grounded-document-fields.jpg",
+                "status": 200,
+                "bytes": 122938,
+                "sha256": "1b973807cda5f5c22be860b05931be3197f41420b4a66a8fefac1e60268a2b1d"
+              },
+              {
+                "path": "news.html",
+                "status": 200,
+                "bytes": 146076,
+                "sha256": "98a0bbb58a57d01356427fc920722717a310ce19adb082f8e5b30a075e301cee"
+              },
+              {
+                "path": "index.html",
+                "status": 200,
+                "bytes": 89990,
+                "sha256": "210fcfeefb7184558c8b51979b8e3b9b2411f1ba7e2444f3ffee1b85134c82fa"
+              },
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "bytes": 143601,
+                "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6"
+              },
+              {
+                "path": "assets/styles.css",
+                "status": 200,
+                "bytes": 70854,
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82"
+              }
+            ]
           }
         },
         "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
@@ -682,7 +732,7 @@
       },
       {
         "slot": 2,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "UCCU’s $7 Million SUU Partnership Includes a Campus Branch",
         "url": "https://creditunionainews.com/news/uccu-suu-campus-branch-partnership.html",
         "accountableOwner": "daily-publisher",
@@ -737,9 +787,57 @@
             ],
             "browser": "Chromium 143.0.7499.4 / Playwright 1.57.0",
             "observations": "Personally reviewed exact-head full article at390/1440, mobile News card, desktop home lead and mobile artwork404. Readable typography/date/function/primary link/related links; conceptual art correct and not an actual branch design; source distinguishes planned partnership and unknown opening/allocation. No overflow, runtime/a11y failures;404 preserves copy/link without substitute art; recovery passes. Input/completion tracked clean and cache unchanged."
+          },
+          "productionVerification": {
+            "deploymentId": "dpl_DkiebZDAWznX12nFPZTHKQpR1T1p",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "8ca6697dc8f602dd056a748088c11839a71ff601",
+            "verifiedAt": "2026-11-22T11:03:05.920Z",
+            "mode": "actual-public-bytes-against-exact-reviewed-static-source; rendered/visual evidence separately from exact-head CI",
+            "publicResponses": [
+              {
+                "path": "news/uccu-suu-campus-branch-partnership.html",
+                "status": 200,
+                "bytes": 10855,
+                "sha256": "a2a6c634dfa65674acf04d01bc37bb7f52a09857f02bd2fec1f4097bc2f5a26c"
+              },
+              {
+                "path": "assets/uccu-suu-campus-branch-partnership.jpg",
+                "status": 200,
+                "bytes": 200567,
+                "sha256": "512f2bfe7ef6b267b48927e3dc29c0e4622977e426ffb35d67157e9c29cbca39"
+              },
+              {
+                "path": "news.html",
+                "status": 200,
+                "bytes": 146793,
+                "sha256": "59b267900e9f76935467b3b9d1bbc3ae9dbce1c9d38459c0cfb5dfdcf1a7c543"
+              },
+              {
+                "path": "index.html",
+                "status": 200,
+                "bytes": 90707,
+                "sha256": "9e971364af038c4992a4fccf95fac28a21be8dd7526e67cea3feec9d39bf02ed"
+              },
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "bytes": 143601,
+                "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6"
+              },
+              {
+                "path": "assets/styles.css",
+                "status": 200,
+                "bytes": 70854,
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82"
+              }
+            ]
           }
         },
-        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
+        "productionCommit": "8ca6697dc8f602dd056a748088c11839a71ff601",
+        "verifiedAt": "2026-11-22T11:03:05.920Z"
       }
     ],
     "browserReadiness": {
