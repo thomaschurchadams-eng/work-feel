@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-22",
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
       {
@@ -17,6 +17,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/uccu-suu-campus-branch-partnership.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html"
       }
     ],
     "status": "in-progress",
@@ -841,7 +845,7 @@
       },
       {
         "slot": 3,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Comhar Linn’s Notice Separates Former-Provider Data From Current Banking",
         "url": "https://creditunionainews.com/news/comhar-linn-former-provider-payee-data.html",
         "accountableOwner": "daily-publisher",
@@ -896,9 +900,57 @@
             ],
             "browser": "Chromium 143.0.7499.4 / Playwright1.57.0",
             "observations": "Own actual full390/1440 article and mobileNews/desktopHome lead/art404 pixels reviewed. Readable long title and date, source link/related links, explicit Irish attribution and unverified cause/current security distinction. Ink archival illustration correctly conceptual. No overflow/errors/a11y violations;404 retains text/link and recovery passes. Exact revision tracked clean, cache unchanged,209 history transitions/90 histories preserved."
+          },
+          "productionVerification": {
+            "deploymentId": "dpl_2xY78Udww4pPjpKWVKb32H8yj9FX",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "132b391e20b086cfcffd4bb9851ea612c00a6ba9",
+            "verifiedAt": "2026-11-22T11:24:48.050Z",
+            "mode": "actual-public-bytes-against-exact-reviewed-static-source; rendered/visual evidence separately from exact-head CI",
+            "publicResponses": [
+              {
+                "path": "news/comhar-linn-former-provider-payee-data.html",
+                "status": 200,
+                "bytes": 11069,
+                "sha256": "b8a2162b2f82f75b6850185f8705fc1e5297f4ae798f730697a17887ec0cfb64"
+              },
+              {
+                "path": "assets/comhar-linn-former-provider-payee-data.jpg",
+                "status": 200,
+                "bytes": 306992,
+                "sha256": "c753d0db0d1ab6ca418fa9e077eda2f5631f99b3a1731147818b710deed5bb3c"
+              },
+              {
+                "path": "news.html",
+                "status": 200,
+                "bytes": 147567,
+                "sha256": "2e4f3b04a40a9448653ac827af153b845ba6f3decc9adb15de511e3093d43c43"
+              },
+              {
+                "path": "index.html",
+                "status": 200,
+                "bytes": 91481,
+                "sha256": "873ea7c2f1573d8382860307b409cb0f6cc8885d48a8c79c895e7c1ff453c3e4"
+              },
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "bytes": 143601,
+                "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6"
+              },
+              {
+                "path": "assets/styles.css",
+                "status": 200,
+                "bytes": 70854,
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82"
+              }
+            ]
           }
         },
-        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
+        "productionCommit": "132b391e20b086cfcffd4bb9851ea612c00a6ba9",
+        "verifiedAt": "2026-11-22T11:24:48.050Z"
       }
     ],
     "browserReadiness": {
