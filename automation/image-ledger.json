@@ -3,6 +3,97 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "ink-and-linocut",
+      "subject": "architecture-and-infrastructure",
+      "composition": "diagonal-motion",
+      "perspective": "eye-level",
+      "palette": "plum-gold",
+      "lighting": "graphic-flat-light",
+      "texture": "newsprint-grain",
+      "scene": "Two conceptual archive shelves separated by an empty gap, one old unlabelled file remains on the former shelf, no text or institution identity",
+      "topicFit": 90,
+      "editorialClarity": 90,
+      "score": 73.6,
+      "metrics": {
+        "novelty": 57,
+        "topicFit": 90,
+        "editorialClarity": 90
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "comhar-linn-former-provider-payee-data",
+      "articleUrl": "/news/comhar-linn-former-provider-payee-data.html",
+      "imagePath": "/assets/comhar-linn-former-provider-payee-data.jpg",
+      "publishedAt": "2026-11-22T06:05:45-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "ink-and-linocut",
+          "subject": "architecture-and-infrastructure",
+          "composition": "diagonal-motion",
+          "perspective": "eye-level",
+          "palette": "plum-gold",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Two conceptual archive shelves separated by an empty gap, one old unlabelled file remains on the former shelf, no text or institution identity",
+          "topicFit": 90,
+          "editorialClarity": 90,
+          "score": 73.6,
+          "metrics": {
+            "novelty": 57,
+            "topicFit": 90,
+            "editorialClarity": 90
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "macro-still-life",
+          "subject": "financial-object-study",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "graphite-electric-yellow",
+          "lighting": "high-contrast-studio",
+          "texture": "fabric-and-wood",
+          "scene": "A closed wooden archive drawer with one unmarked paper sleeve left on a shelf beside it, a tiny yellow divider separating old retained records from active service; no readable data or security claims",
+          "topicFit": 96,
+          "editorialClarity": 94,
+          "score": 54.7,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 96,
+            "editorialClarity": 94
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "dimensional-3d",
+          "subject": "financial-object-study",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "burgundy-sand",
+          "lighting": "soft-daylight",
+          "texture": "matte-clay",
+          "scene": "A sealed blank archive box beside an empty modern file tray, conceptual retained legacy data",
+          "topicFit": 87,
+          "editorialClarity": 88,
+          "score": 43.7,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 87,
+            "editorialClarity": 88
+          },
+          "rejected": true,
+          "reasons": [
+            "same-medium-consecutive"
+          ]
+        }
+      ],
+      "sha256": "c753d0db0d1ab6ca418fa9e077eda2f5631f99b3a1731147818b710deed5bb3c"
+    },
+    {
       "medium": "dimensional-3d",
       "subject": "architecture-and-infrastructure",
       "composition": "wide-environmental",
