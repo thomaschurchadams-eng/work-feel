@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "kansas-city-fed-services-growth-expectations",
+      "title": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
+      "url": "/news/kansas-city-fed-services-growth-expectations.html",
+      "publishedAt": "2026-11-22T07:15:35-05:00",
+      "section": "news",
+      "beat": "kansas-city-fed-services-growth-expectations",
+      "functions": [
+        "lending-collections"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Lending and Collections leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/cornerstone-small-business-workflow-primary-account.html",
+        "/news/bls-financial-activities-jobs-october-2026.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "Regional diffusion survey; forward expectations not realized borrower revenue; revised seasonal factors."
+    },
+    {
       "id": "canada-open-banking-standards-complaints-bodies",
       "title": "Canada Names Open-Banking Standards and Complaints Bodies",
       "url": "/news/canada-open-banking-standards-complaints-bodies.html",
