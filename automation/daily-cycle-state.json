@@ -954,11 +954,11 @@
       },
       {
         "slot": 4,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Fed Survey Finds Weekend Payment Plans Outpace Added Liquidity Staffing",
         "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T11:45:19.105Z",
+        "nextReviewAt": "2026-11-22T11:47:23.159Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "fed-weekend-liquidity-survey",
@@ -971,8 +971,16 @@
             "url": "https://creditunionainews.com/news/fed-survey-weekend-liquidity-staffing.html",
             "preparedAt": "2026-11-22T11:25:19.105Z",
             "sourceReview": "91 banks, not a CU survey; plans and actions differ; published Nov20, fielded September. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          },
+          "pending": {
+            "prNumber": 415,
+            "head": "9f56dcdac763831c8dd57e0d350eb650d45a7418",
+            "run": 45017395940,
+            "job": 137192558845,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
       }
     ],
     "browserReadiness": {
