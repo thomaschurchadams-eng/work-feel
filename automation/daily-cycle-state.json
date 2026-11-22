@@ -682,11 +682,11 @@
       },
       {
         "slot": 2,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "UCCU’s $7 Million SUU Partnership Includes a Campus Branch",
         "url": "https://creditunionainews.com/news/uccu-suu-campus-branch-partnership.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T10:58:33.441Z",
+        "nextReviewAt": "2026-11-22T11:01:45.304Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "uccu-suu-campus-partnership",
@@ -699,8 +699,16 @@
             "url": "https://creditunionainews.com/news/uccu-suu-campus-branch-partnership.html",
             "preparedAt": "2026-11-22T10:38:33.441Z",
             "sourceReview": "Multiyear branch, coaching, student jobs and sponsorship; allocation and opening date not reported. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          },
+          "pending": {
+            "prNumber": 413,
+            "head": "9d7d133460e83f742905cf64fefbded481bc11fc",
+            "run": 45013637598,
+            "job": 137181161975,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
       }
     ],
     "browserReadiness": {
