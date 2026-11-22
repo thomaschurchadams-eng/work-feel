@@ -1319,11 +1319,11 @@
       },
       {
         "slot": 7,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "EU Credit Update Puts Human Review in the Borrower Journey",
         "url": "https://creditunionainews.com/news/eu-consumer-credit-human-review-comparison.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T12:55:33.692Z",
+        "nextReviewAt": "2026-11-22T12:57:51.282Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "eu-consumer-credit-application",
@@ -1336,8 +1336,16 @@
             "url": "https://creditunionainews.com/news/eu-consumer-credit-human-review-comparison.html",
             "preparedAt": "2026-11-22T12:35:33.692Z",
             "sourceReview": "Comparative human review/BNPL; jurisdiction and national implementation must be explicit. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          },
+          "pending": {
+            "prNumber": 418,
+            "head": "63663c29901f158c9e8667b2672a33b4170457ba",
+            "run": 45023270690,
+            "job": 137210621534,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
       }
     ],
     "browserReadiness": {
