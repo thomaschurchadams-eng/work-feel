@@ -590,11 +590,11 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Textract Adds Page Evidence to AI Document Fields",
         "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T10:35:10.690Z",
+        "nextReviewAt": "2026-11-22T10:55:32.052Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -638,9 +638,40 @@
               },
               "reason": "Corrected stale generated heading class; first failed run and its exact terminal receipt retained."
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "42c4837882a3c0c4f139f9ef2b34bb1eeedd64d1",
+            "run": 45011496762,
+            "job": 137174603863,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-22T10:35:29.673Z",
+            "prNumber": 412
+          },
+          "terminalAcceptance": {
+            "prNumber": 412,
+            "head": "42c4837882a3c0c4f139f9ef2b34bb1eeedd64d1",
+            "run": 45011496762,
+            "job": 137174603863,
+            "runAttempt": 1,
+            "artifactId": 14751035953,
+            "artifactSha256": "e30ea6c8e2ee01a6ef71f27171dda1fcd1e735b67230ed8c9dcdb678abeec703",
+            "visualReviewedAt": "2026-11-22T10:35:29.103Z",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "browser": "Chromium 143.0.7499.4 / Playwright1.57.0 job-local chromium_headless_shell-1200",
+            "observations": "Personally inspected actual full390/1440 article pixels, mobile News first card, desktop Home lead and mobile forced-artwork404 pixels. Headline/date/function/source link/related links and bounded vendor-versus-CU claims are readable without clipping. Original emerald conceptual art matches the chosen medium; not an actual implementation photograph.404 removes the art box but retains title, deck and link. Actual tests report recovery without broken/placeholder images, no accessibility/runtime violations or overflow, clean exact revision and unchanged isolated browser cache. Independent remote test execution plus own publisher visual/editorial review; no separate human reviewer or native production-browser claim."
+          }
         },
-        "nextAction": "Observe replacement exact-head terminal result; accept actual artifact390/1440 only after all source/rendered gates pass."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
       }
     ],
     "browserReadiness": {
