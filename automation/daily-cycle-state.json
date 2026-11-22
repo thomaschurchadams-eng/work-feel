@@ -32,7 +32,7 @@
       }
     ],
     "status": "in-progress",
-    "outcomeSlot": 5,
+    "outcomeSlot": 6,
     "evaluatedCandidateCount": 24,
     "beatsSearched": [
       "regulation-policy",
@@ -1203,6 +1203,28 @@
         "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
         "productionCommit": "9e441f4aea496a5f392c46755c07d03f9c9fe27b",
         "verifiedAt": "2026-11-22T12:13:33.151Z"
+      },
+      {
+        "slot": 6,
+        "status": "prepared",
+        "candidateTitle": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
+        "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-22T12:34:01.636Z",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "kc-services-november",
+            "eventKey": "kc-services-november",
+            "sourceUrl": "https://www.kansascityfed.org/newsroom/2026-news-releases/growth-in-tenth-district-services-activity-cooled-in-november/",
+            "sourcePublishedAt": "2026-11-20"
+          },
+          "preparation": {
+            "candidateTitle": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
+            "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html",
+            "preparedAt": "2026-11-22T12:14:01.636Z",
+            "sourceReview": "Regional diffusion survey; forward expectations not realized borrower revenue; revised seasonal factors. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          }
+        }
       }
     ],
     "browserReadiness": {
@@ -1215,7 +1237,7 @@
       "fallback": "Existing exact-head PR design-checks, complete rendered artifact and own visual acceptance; no install/cache change."
     },
     "socialDecision": "not-reserved; historical/provider holds retained",
-    "updatedAt": "2026-11-22T11:46:10.346Z"
+    "updatedAt": "2026-11-22T12:14:01.636Z"
   },
   "history": [
     {
