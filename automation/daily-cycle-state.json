@@ -682,11 +682,11 @@
       },
       {
         "slot": 2,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "UCCU’s $7 Million SUU Partnership Includes a Campus Branch",
         "url": "https://creditunionainews.com/news/uccu-suu-campus-branch-partnership.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T11:01:45.304Z",
+        "nextReviewAt": "2026-11-22T11:21:56.555Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "uccu-suu-campus-partnership",
@@ -706,9 +706,40 @@
             "run": 45013637598,
             "job": 137181161975,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "9d7d133460e83f742905cf64fefbded481bc11fc",
+            "run": 45013637598,
+            "job": 137181161975,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-22T11:01:54.874Z",
+            "prNumber": 413
+          },
+          "terminalAcceptance": {
+            "prNumber": 413,
+            "head": "9d7d133460e83f742905cf64fefbded481bc11fc",
+            "run": 45013637598,
+            "job": 137181161975,
+            "runAttempt": 1,
+            "artifactId": 14751386942,
+            "artifactSha256": "0ab3b81efea159d51fe8479d0f0578a53efc7b6549c00114c9f2f32d4db53d74",
+            "visualReviewedAt": "2026-11-22T11:01:54.009Z",
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "browser": "Chromium 143.0.7499.4 / Playwright 1.57.0",
+            "observations": "Personally reviewed exact-head full article at390/1440, mobile News card, desktop home lead and mobile artwork404. Readable typography/date/function/primary link/related links; conceptual art correct and not an actual branch design; source distinguishes planned partnership and unknown opening/allocation. No overflow, runtime/a11y failures;404 preserves copy/link without substitute art; recovery passes. Input/completion tracked clean and cache unchanged."
           }
         },
-        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
       }
     ],
     "browserReadiness": {
