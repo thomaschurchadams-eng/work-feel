@@ -26,24 +26,40 @@ test('owner pause prevents both placements before assignment; restoration keeps 
   assert.equal(enabled, plan.status === 'active', 'runtime switch and recorded status must agree');
   assert.ok(['active', 'paused'].includes(plan.status));
   for (const surface of ['home', 'news', 'insight', 'news-index', 'other']) {
-    const render = (code) => {
+    const render = (code, storedVariant) => {
       const inserted = []; let assigned = 0;
       const anchor = {insertAdjacentElement: (_, banner) => inserted.push(banner)};
       const context = {URL, URLSearchParams, Uint32Array, Math,
         pagePath: surface === 'news-index' ? '/news.html' : '/example.html',
         isNewsArticle: surface === 'news', isInsightArticle: surface === 'insight',
-        window: {localStorage: {getItem: () => { assigned++; return 'v1a_current_training'; }, setItem: () => { throw Error('unexpected assignment'); }}},
+        window: {localStorage: {getItem: () => { assigned++; return storedVariant; }, setItem: () => { throw Error('unexpected assignment'); }}},
         document: {body: {classList: {contains: name => name === 'page-home' && surface === 'home'}},
           querySelector: selector => selector === '.institute-banner' ? null : anchor,
           createElement: () => ({dataset: {},setAttribute: () => {}})}
       };
       vm.runInNewContext(code, context); return {inserted, assigned};
     };
-    const paused = render(source.replace(/enabled: (true|false)/, 'enabled: false'));
-    assert.equal(paused.assigned, 0); assert.equal(paused.inserted.length, 0);
-    const restored = render(source.replace(/enabled: (true|false)/, 'enabled: true'));
-    assert.equal(restored.assigned, 1);
-    assert.deepEqual(restored.inserted.map(x => x.dataset.caiBannerPlacement), surface === 'other' ? ['sitewide_header'] : ['sitewide_header','contextual_followup']);
+    for (const { id, headline, cta } of plan.variants) {
+      const paused = render(source.replace(/enabled: (true|false)/, 'enabled: false'), id);
+      assert.equal(paused.assigned, 0); assert.equal(paused.inserted.length, 0);
+      const restored = render(source.replace(/enabled: (true|false)/, 'enabled: true'), id);
+      assert.equal(restored.assigned, 1);
+      assert.deepEqual(restored.inserted.map(x => x.dataset.caiBannerPlacement), surface === 'other' ? ['sitewide_header'] : ['sitewide_header','contextual_followup']);
+      for (const banner of restored.inserted) {
+        const href = new URL(/href="([^"]+)"/.exec(banner.innerHTML)[1]);
+        const placement = banner.dataset.caiBannerPlacement;
+        assert.equal(banner.dataset.caiBannerVariant, id);
+        assert.ok(banner.innerHTML.includes('Sponsored · Cooperative AI Institute'));
+        assert.ok(banner.innerHTML.includes(headline) && banner.innerHTML.includes(cta));
+        assert.deepEqual(Object.fromEntries(href.searchParams), {
+          utm_source: 'creditunionainews', utm_medium: 'site_banner',
+          utm_campaign: plan.measurement.utmCampaign, utm_content: placement + '_' + id
+        });
+        href.search = '';
+        assert.equal(href.href, plan.destination);
+        assert.equal(href.href, 'https://www.cooperativeaiinstitute.com/#plans');
+      }
+    }
   }
 });
 

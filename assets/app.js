@@ -13,8 +13,9 @@
 
 
   const caiBannerExperiment = {
-    // Temporary owner-requested pause. Keep variants, assets and attribution intact.
-    enabled: false,
+    // Owner-controlled gate for both placements; preserve assignment and attribution.
+    enabled: true,
+    destination: 'https://www.cooperativeaiinstitute.com/#plans',
     id: 'cai_current_readiness_2026_09',
     storageKey: 'cuai_cai_banner_variant_2026_09',
     campaign: 'cai_current_readiness_sep2026',
@@ -50,7 +51,7 @@
   };
 
   const instituteBannerMarkup = (variant, placement) => {
-    const destination = new URL('https://www.cooperativeaiinstitute.com/early-access-guide');
+    const destination = new URL(caiBannerExperiment.destination);
     destination.search = new URLSearchParams({
       utm_source: 'creditunionainews',
       utm_medium: 'site_banner',
