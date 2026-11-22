@@ -6,744 +6,623 @@
     "alerts": 3
   },
   "current": {
-    "date": "2026-11-21",
-    "fullArticleCount": 5,
+    "date": "2026-11-22",
+    "fullArticleCount": 0,
     "alertCount": 0,
-    "publications": [
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html"
-      }
-    ],
-    "status": "completed",
-    "outcomeSlot": 5,
-    "evaluatedCandidateCount": 12,
+    "publications": [],
+    "status": "in-progress",
+    "outcomeSlot": 1,
+    "evaluatedCandidateCount": 24,
     "beatsSearched": [
-      "security-fraud",
-      "payments-core-fintech",
       "regulation-policy",
-      "international-comparisons",
+      "security-fraud",
+      "credit-union-industry",
       "financial-reporting",
-      "workforce-household-data",
+      "payments-core-fintech",
+      "ai-research-platforms",
       "regional-cu-primary",
-      "credit-union-industry"
+      "workforce-household-data",
+      "international-comparisons"
     ],
     "discoveryCoverage": {
-      "date": "2026-11-21",
-      "candidateCount": 12,
+      "date": "2026-11-22",
+      "candidateCount": 24,
       "beatsSearched": [
-        "security-fraud",
-        "payments-core-fintech",
         "regulation-policy",
-        "international-comparisons",
+        "security-fraud",
+        "credit-union-industry",
         "financial-reporting",
-        "workforce-household-data",
+        "payments-core-fintech",
+        "ai-research-platforms",
         "regional-cu-primary",
-        "credit-union-industry"
+        "workforce-household-data",
+        "international-comparisons"
       ],
       "directions": [
         {
           "id": "regional-cu-leagues-regulators",
-          "queryOrRead": "FHLBank program original plus CU regional/news discovery",
-          "observedAt": "2026-11-21T12:02:21.428Z",
           "status": "searched",
+          "observedAt": "2026-11-22T10:05:29.118Z",
+          "queryOrRead": "Actual primary/attributable source reads in one shared November22 pool; supplied leads independently inspected, dates and status distinguished.",
           "sourceUrls": [
-            "https://www.fhlbi.com/services/community-programs/affordable-housing-program/"
+            "https://www.safe1.org/other-services/members-mobile/",
+            "https://www.suu.edu/news/2026/11/uccu-partnership.html",
+            "https://www.wecu.com/a-new-chapter-of-growth-and-impact/",
+            "https://questfcu.com/2026/11/19/from-the-ceo-november-2026/",
+            "https://www.greylock.org/post/greylock_welcomes_new_associate_board_member_alison_larocca.html?psrc=1460",
+            "https://www.cuinsight.com/press-release/oneaz-arizona-financial-and-truwest-unite-to-provide-60000-for-northern-arizona-flood-relief/",
+            "https://the-league.coop/grants/",
+            "https://www.dcuc.org/news/dcuc-calls-on-secretary-bessent-to-protect-state-and-federal-credit-union-parity",
+            "https://www.cuinsight.com/press-release/michigan-business-connection-announces-leadership-changes/",
+            "https://landmarkcu.com/news/landmark-credit-union-completes-acquisition-of-american-national-bank-fox-cities/"
           ]
         },
         {
           "id": "function-problem",
-          "queryOrRead": "TruStage direct issuer transcript and Greenhouse original applicant screening",
-          "observedAt": "2026-11-21T12:02:21.428Z",
           "status": "searched",
+          "observedAt": "2026-11-22T10:05:29.118Z",
+          "queryOrRead": "Actual primary/attributable source reads in one shared November22 pool; supplied leads independently inspected, dates and status distinguished.",
           "sourceUrls": [
-            "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
-            "https://www.greenhouse.com/blog/conversational-ai-candidate-pipeline"
+            "https://www.cuinsight.com/press-release/connecticuts-credit-unions-partners-with-enable-technologies-to-advance-digital-innovation/",
+            "https://ofac.treasury.gov/recent-actions/20261119",
+            "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#November_19_2026",
+            "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23669.pdf",
+            "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/"
           ]
         },
         {
           "id": "independent-data-research",
-          "queryOrRead": "Philadelphia Fed November original data and workforce research discovery",
-          "observedAt": "2026-11-21T12:02:21.428Z",
           "status": "searched",
+          "observedAt": "2026-11-22T10:05:29.118Z",
+          "queryOrRead": "Actual primary/attributable source reads in one shared November22 pool; supplied leads independently inspected, dates and status distinguished.",
           "sourceUrls": [
-            "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-11"
+            "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+            "https://www.kansascityfed.org/newsroom/2026-news-releases/growth-in-tenth-district-services-activity-cooled-in-november/"
           ]
         },
         {
           "id": "international-comparisons",
-          "queryOrRead": "European Commission and OakNorth original comparisons; international search",
-          "observedAt": "2026-11-21T12:02:21.428Z",
           "status": "searched",
+          "observedAt": "2026-11-22T10:05:29.118Z",
+          "queryOrRead": "Actual primary/attributable source reads in one shared November22 pool; supplied leads independently inspected, dates and status distinguished.",
           "sourceUrls": [
+            "https://www.osfi-bsif.gc.ca/en/news/osfi-launches-its-competitive-prudential-initiative-putting-resilience-work-support-greater",
             "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
-            "https://oaknorth.com/press/oaknorth-us-national-bank-charter/"
+            "https://www.canada.ca/en/department-finance/news/2026/11/canada-takes-next-steps-in-implementing-the-consumer-driven-banking-framework.html",
+            "https://www.payments.ca/payments-canada-updates-its-compliance-law-support-secure-payment-ecosystem",
+            "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+            "https://comharlinnintocu.ie/news-events/important-information-for-affected-members-formerly-education-credit-union-members"
           ]
         },
         {
           "id": "practical-synthesis",
-          "queryOrRead": "Vendor incident partner notice handoff original transcript versus existing coverage; NCUA primary-source discovery",
-          "observedAt": "2026-11-21T12:02:21.428Z",
           "status": "searched",
+          "observedAt": "2026-11-22T10:05:29.118Z",
+          "queryOrRead": "Actual primary/attributable source reads in one shared November22 pool; supplied leads independently inspected, dates and status distinguished.",
           "sourceUrls": [
-            "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
-            "https://ncua.gov/news/latest-news"
+            "https://www.frbservices.org/about/holiday-schedules/2026-thanksgivingday/"
           ]
         }
       ],
       "practicalSynthesis": {
-        "question": "How does a CU assign vendor incident notification ownership without confusing a conditional vendor lead time with its own obligations?",
-        "noCandidateReason": "Issuer transcript supports new News milestone; league repetition is not an independent second primary basis for a durable synthesis. No Library acceptance established yet; previously denied DFI source not retried."
-      }
+        "question": "How should a CU distinguish holiday cash, ACH, wire and instant-payment handoffs before Thanksgiving?",
+        "candidateId": "thanksgiving-payment-windows"
+      },
+      "rawTriage": {
+        "excluded": [
+          {
+            "sourceUrl": "https://www.census.gov/hfp/btos/data",
+            "reason": "JavaScript-only data body; supplied numerical readings not independently verified."
+          },
+          {
+            "sourceUrl": "https://www.firstent.org/alerts/federal-conversion-notice/",
+            "reason": "Member yes-vote visible but original announcement date unestablished; no final effective-date proof."
+          }
+        ]
+      },
+      "verifiedStructure": true,
+      "completeCoverage": true,
+      "accessBlocked": [],
+      "candidateInventory": [
+        {
+          "candidateId": "fed-weekend-liquidity-survey",
+          "eventKey": "fed-weekend-liquidity-survey",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "safe1-wireless-checking",
+          "eventKey": "safe1-wireless-checking",
+          "sourceUrl": "https://www.safe1.org/other-services/members-mobile/",
+          "sourcePublishedAt": null
+        },
+        {
+          "candidateId": "uccu-suu-campus-partnership",
+          "eventKey": "uccu-suu-campus-partnership",
+          "sourceUrl": "https://www.suu.edu/news/2026/11/uccu-partnership.html",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "wecu-snohomish-vision",
+          "eventKey": "wecu-snohomish-vision",
+          "sourceUrl": "https://www.wecu.com/a-new-chapter-of-growth-and-impact/",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "quest-school-branch",
+          "eventKey": "quest-school-branch",
+          "sourceUrl": "https://questfcu.com/2026/11/19/from-the-ceo-november-2026/",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "osfi-capital-proposal-2028",
+          "eventKey": "osfi-capital-proposal-2028",
+          "sourceUrl": "https://www.osfi-bsif.gc.ca/en/news/osfi-launches-its-competitive-prudential-initiative-putting-resilience-work-support-greater",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "eu-consumer-credit-application",
+          "eventKey": "eu-consumer-credit-application",
+          "sourceUrl": "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "kc-services-november",
+          "eventKey": "kc-services-november",
+          "sourceUrl": "https://www.kansascityfed.org/newsroom/2026-news-releases/growth-in-tenth-district-services-activity-cooled-in-november/",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "greylock-associate-board",
+          "eventKey": "greylock-associate-board",
+          "sourceUrl": "https://www.greylock.org/post/greylock_welcomes_new_associate_board_member_alison_larocca.html?psrc=1460",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "az-flood-grants",
+          "eventKey": "az-flood-grants",
+          "sourceUrl": "https://www.cuinsight.com/press-release/oneaz-arizona-financial-and-truwest-unite-to-provide-60000-for-northern-arizona-flood-relief/",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "league-chapter-mini-grants",
+          "eventKey": "league-chapter-mini-grants",
+          "sourceUrl": "https://the-league.coop/grants/",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "connecticut-enable-partnership",
+          "eventKey": "connecticut-enable-partnership",
+          "sourceUrl": "https://www.cuinsight.com/press-release/connecticuts-credit-unions-partners-with-enable-technologies-to-advance-digital-innovation/",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "ofac-nov19-sanctions",
+          "eventKey": "ofac-nov19-sanctions",
+          "sourceUrl": "https://ofac.treasury.gov/recent-actions/20261119",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "dcuc-charter-parity-letter",
+          "eventKey": "dcuc-charter-parity-letter",
+          "sourceUrl": "https://www.dcuc.org/news/dcuc-calls-on-secretary-bessent-to-protect-state-and-federal-credit-union-parity",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "mbc-leadership",
+          "eventKey": "mbc-leadership",
+          "sourceUrl": "https://www.cuinsight.com/press-release/michigan-business-connection-announces-leadership-changes/",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "thanksgiving-payment-windows",
+          "eventKey": "thanksgiving-payment-windows",
+          "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/2026-thanksgivingday/",
+          "sourcePublishedAt": null
+        },
+        {
+          "candidateId": "canada-open-banking-designations",
+          "eventKey": "canada-open-banking-designations",
+          "sourceUrl": "https://www.canada.ca/en/department-finance/news/2026/11/canada-takes-next-steps-in-implementing-the-consumer-driven-banking-framework.html",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "landmark-anb-close",
+          "eventKey": "landmark-anb-close",
+          "sourceUrl": "https://landmarkcu.com/news/landmark-credit-union-completes-acquisition-of-american-national-bank-fox-cities/",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "payments-canada-compliance",
+          "eventKey": "payments-canada-compliance",
+          "sourceUrl": "https://www.payments.ca/payments-canada-updates-its-compliance-law-support-secure-payment-ecosystem",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "gemini-m365-connector",
+          "eventKey": "gemini-m365-connector",
+          "sourceUrl": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#November_19_2026",
+          "sourcePublishedAt": "2026-11-19"
+        },
+        {
+          "candidateId": "fdic-custodial-deposit-proposal",
+          "eventKey": "fdic-custodial-deposit-proposal",
+          "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23669.pdf",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "textract-insights-launch",
+          "eventKey": "textract-insights-launch",
+          "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "standard-bank-ai-assessment",
+          "eventKey": "standard-bank-ai-assessment",
+          "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+          "sourcePublishedAt": "2026-11-20"
+        },
+        {
+          "candidateId": "comhar-former-vendor-data",
+          "eventKey": "comhar-former-vendor-data",
+          "sourceUrl": "https://comharlinnintocu.ie/news-events/important-information-for-affected-members-formerly-education-credit-union-members",
+          "sourcePublishedAt": "2026-11-20"
+        }
+      ],
+      "candidateTarget": 24,
+      "candidateShortfallReason": null,
+      "releaseReady": false
     },
     "candidateEvaluations": [
       {
-        "id": "trustage",
-        "title": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
-        "sourceUrl": "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
-        "sourcePublishedAt": "2026-11-19",
-        "score": 75.8,
-        "status": "source-qualified",
-        "reason": "Qualified on actual November19 issuer transcript; material conditional notice milestone distinct from October restoration. Partner lead time not legal deadline or confirmed exposure.",
+        "id": "textract-insights-launch",
+        "eventKey": "textract-insights-launch",
+        "title": "Textract adds page-grounded document fields and separate inferred values",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 80,
+        "status": "reviewed",
+        "reason": "Vendor GA announcement, no independent accuracy/CU outcome; explicit vs inferred fields and page evidence. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "vendor-management",
+        "primaryTechnology": "generative-ai",
+        "confidence": 0.96
+      },
+      {
+        "id": "uccu-suu-campus-partnership",
+        "eventKey": "uccu-suu-campus-partnership",
+        "title": "UCCU commits $7 million to SUU partnership including a campus branch",
+        "sourceUrl": "https://www.suu.edu/news/2026/11/uccu-partnership.html",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 79.5,
+        "status": "reviewed",
+        "reason": "Multiyear branch, coaching, student jobs and sponsorship; allocation and opening date not reported. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "hr-training",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "comhar-former-vendor-data",
+        "eventKey": "comhar-former-vendor-data",
+        "title": "Comhar Linn warns former Education members about retained payee data",
+        "sourceUrl": "https://comharlinnintocu.ie/news-events/important-information-for-affected-members-formerly-education-credit-union-members",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 75.9,
+        "status": "reviewed",
+        "reason": "Irish CU attributes incident to historical data at former provider, says current banking unaffected; no cause or U.S. breach-law inference. Qualified for editorial review, not release acceptance.",
         "primaryFunction": "vendor-management",
         "primaryTechnology": "privacy-security",
-        "confidence": 0.96,
-        "metrics": {
-          "newsworthiness": 88,
-          "creditUnionRelevance": 96,
-          "coverageGap": 17.5,
-          "originality": 93,
-          "sourceQuality": 100,
-          "urgency": 68.63837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+        "confidence": 0.96
       },
       {
-        "id": "payoneer",
-        "title": "Payoneer Receives Preliminary Conditional Trust Bank Approval",
-        "sourceUrl": "https://occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1395.pdf",
-        "sourcePublishedAt": "2026-11-20",
-        "score": 73.3,
-        "status": "held",
-        "reason": "Held: natural Payments/Deposits week already3; conditional decision body not sufficiently verified from inaccessible reader result. Confidence0.6. No first opening claim.",
-        "primaryFunction": "payments-deposits",
+        "id": "osfi-capital-proposal-2028",
+        "eventKey": "osfi-capital-proposal-2028",
+        "title": "OSFI proposes lower capital weights for smaller Canadian lenders",
+        "sourceUrl": "https://www.osfi-bsif.gc.ca/en/news/osfi-launches-its-competitive-prudential-initiative-putting-resilience-work-support-greater",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 75.4,
+        "status": "reviewed",
+        "reason": "Draft for Canadian federally regulated smaller institutions incl federal CUs; consultation Feb17,2027; not U.S. requirements. Selector hold: invalid-or-stale-source-date",
+        "primaryFunction": "lending-collections",
         "primaryTechnology": "industry-development",
-        "confidence": 0.6,
-        "metrics": {
-          "newsworthiness": 87,
-          "creditUnionRelevance": 90,
-          "coverageGap": 6.999999999999999,
-          "originality": 93,
-          "sourceQuality": 100,
-          "urgency": 81.13837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+        "confidence": 0.96
       },
       {
-        "id": "mobile",
-        "title": "Members Mobile and MeridianLink Combine Wireless and Account Opening",
-        "sourceUrl": "https://mtrustcompany.marketminute.com/article/bizwire-2026-11-20-members-mobile-and-meridianlink-partner-to-help-credit-unions-expand-membership",
+        "id": "fed-weekend-liquidity-survey",
+        "eventKey": "fed-weekend-liquidity-survey",
+        "title": "Fed survey finds weekend payment plans outpace added liquidity staffing",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
         "sourcePublishedAt": "2026-11-20",
-        "score": 67,
-        "status": "held",
-        "reason": "Held: natural Marketing/Growth week already3 and source body not accepted; confidence0.6. Seed promises do not prove measured acquisition/conversion.",
-        "primaryFunction": "marketing-growth",
+        "score": 74.4,
+        "status": "reviewed",
+        "reason": "91 banks, not a CU survey; plans and actions differ; published Nov20, fielded September. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "finance-treasury",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "canada-open-banking-designations",
+        "eventKey": "canada-open-banking-designations",
+        "title": "Canada names open-banking standards and complaints bodies",
+        "sourceUrl": "https://www.canada.ca/en/department-finance/news/2026/11/canada-takes-next-steps-in-implementing-the-consumer-driven-banking-framework.html",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 74.2,
+        "status": "reviewed",
+        "reason": "FDX with Canada Council and OBSI; designations not nationwide rollout; Canadian not U.S. rules. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "member-service",
         "primaryTechnology": "core-api-cloud",
-        "confidence": 0.6,
-        "metrics": {
-          "newsworthiness": 65,
-          "creditUnionRelevance": 85,
-          "coverageGap": 11.666666666666666,
-          "originality": 85,
-          "sourceQuality": 100,
-          "urgency": 81.13837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+        "confidence": 0.96
       },
       {
-        "id": "scams",
-        "title": "Senate Proposal Would Coordinate National Scam Response",
-        "sourceUrl": "https://www.americascreditunions.org/news-media/news/senate-bill-would-create-office-fraud-and-scam-prevention",
+        "id": "landmark-anb-close",
+        "eventKey": "landmark-anb-close",
+        "title": "Landmark closes ANB acquisition before March account conversion",
+        "sourceUrl": "https://landmarkcu.com/news/landmark-credit-union-completes-acquisition-of-american-national-bank-fox-cities/",
         "sourcePublishedAt": "2026-11-19",
-        "score": 69.8,
-        "status": "held",
-        "reason": "Held: actual original association account of proposed scam-office legislation read, but Risk/Compliance week already3; no retagging. Proposal is not law; full bill not independently accepted.",
-        "primaryFunction": "risk-compliance",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.85,
-        "metrics": {
-          "newsworthiness": 80,
-          "creditUnionRelevance": 90,
-          "coverageGap": 4.375,
-          "originality": 92,
-          "sourceQuality": 100,
-          "urgency": 68.63837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
-      },
-      {
-        "id": "eu",
-        "title": "EU Consumer Credit Application Milestone Includes Human Review",
-        "sourceUrl": "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
-        "sourcePublishedAt": "2026-11-20",
-        "score": 69.6,
-        "status": "held",
-        "reason": "Held: actual European Commission milestone read, EU jurisdiction explicit; natural Lending/Collections week already3. Not a new US mandate or spare-seat Finance story.",
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.93,
-        "metrics": {
-          "newsworthiness": 80,
-          "creditUnionRelevance": 80,
-          "coverageGap": 11.666666666666666,
-          "originality": 88,
-          "sourceQuality": 100,
-          "urgency": 81.13837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
-      },
-      {
-        "id": "philly",
-        "title": "Philadelphia Fed Survey Separates Orders From Shipments",
-        "sourceUrl": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-11",
-        "sourcePublishedAt": "2026-11-19",
-        "score": 68.8,
-        "status": "held",
-        "reason": "Held: original November survey read; actual commercial-lending risk question belongs to Lending/Collections already3. Diffusion indices not growth percentages; no spare-seat Treasury reclassification.",
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.94,
-        "metrics": {
-          "newsworthiness": 80,
-          "creditUnionRelevance": 85,
-          "coverageGap": 11.666666666666666,
-          "originality": 83,
-          "sourceQuality": 100,
-          "urgency": 68.63837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
-      },
-      {
-        "id": "oak",
-        "title": "OakNorth Announces US Charter Acquisition Approval",
-        "sourceUrl": "https://oaknorth.com/press/oaknorth-us-national-bank-charter/",
-        "sourcePublishedAt": "2026-11-20",
-        "score": 71.3,
-        "status": "source-qualified",
-        "reason": "Qualified on OCC November19 approval plus attributed November20 issuer statement. Executive/BoardStrategy competitive-entry question; approval not closing or first US lending. Natural weekly Board third seat.",
-        "primaryFunction": "board-strategy",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.95,
-        "metrics": {
-          "newsworthiness": 85,
-          "creditUnionRelevance": 85,
-          "coverageGap": 5,
-          "originality": 93,
-          "sourceQuality": 100,
-          "urgency": 81.13837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
-      },
-      {
-        "id": "bill",
-        "title": "BILL Signs Take Private Agreement With TPG and Corpay",
-        "sourceUrl": "https://investor.bill.com/news/news-details/2026/BILL-Agrees-to-be-Acquired-by-TPG-in-Partnership-with-Corpay/default.aspx",
-        "sourcePublishedAt": "2026-11-19",
-        "score": 70.6,
-        "status": "source-qualified",
-        "reason": "Qualified on November19 signed agreement plus Corpay8-K announcement. Vendor ownership—not completed integration or measured CU performance. Natural VendorManagement third seat after TruStage.",
-        "primaryFunction": "vendor-management",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.95,
-        "metrics": {
-          "newsworthiness": 85,
-          "creditUnionRelevance": 82,
-          "coverageGap": 11.666666666666666,
-          "originality": 92,
-          "sourceQuality": 100,
-          "urgency": 68.63837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
-      },
-      {
-        "id": "greenhouse",
-        "title": "Greenhouse Reports Employers Fear Rejecting Genuine Applicants",
-        "sourceUrl": "https://www.greenhouse.com/blog/conversational-ai-candidate-pipeline",
-        "sourcePublishedAt": "2026-11-19",
-        "score": 77,
-        "status": "held",
-        "reason": "Held: employer belief statistic not actual90% candidate false-rejection rate; no independent methodology/outcome corroboration; confidence0.65 fails threshold. No CU-specific sample established.",
-        "primaryFunction": "hr-training",
-        "primaryTechnology": "conversational-ai",
-        "confidence": 0.65,
-        "metrics": {
-          "newsworthiness": 72,
-          "creditUnionRelevance": 85,
-          "coverageGap": 54.00943396226414,
-          "originality": 93,
-          "sourceQuality": 100,
-          "urgency": 68.63837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
-      },
-      {
-        "id": "ahp",
-        "title": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
-        "sourceUrl": "https://www.fhlbi.com/webres/File/products-services/Affordable%20Housing/AHP/AHP%202026%20Awards.pdf",
-        "sourcePublishedAt": null,
-        "score": 65.1,
-        "status": "source-qualified",
-        "reason": "Qualified data brief from original2026 awards PDF and program resources; five CU entries3.6m/152 assisted versus154 total. Operations handoff natural; awards not disbursement/delivered homes. Original posting clock unknown, urgency0.",
+        "score": 73.9,
+        "status": "reviewed",
+        "reason": "Closing confirmed Nov19 release; account conversion Mar15,2027; older expected-close welcome copy superseded. Selector hold: invalid-or-stale-source-date",
         "primaryFunction": "operations",
         "primaryTechnology": "industry-development",
-        "confidence": 0.95,
-        "metrics": {
-          "newsworthiness": 86,
-          "creditUnionRelevance": 97,
-          "coverageGap": 6.999999999999999,
-          "originality": 83,
-          "sourceQuality": 100,
-          "urgency": 0
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        "confidence": 0.96
       },
       {
-        "id": "pnc",
-        "title": "PNC Puts Hospitality at the Center of Its Branch Expansion",
-        "sourceUrl": "https://www.bankingdive.com/news/pnc-branches-hospitality-ai-disruption-banking/875202/",
+        "id": "kc-services-november",
+        "eventKey": "kc-services-november",
+        "title": "Kansas City Fed sees slower services growth but firmer expectations",
+        "sourceUrl": "https://www.kansascityfed.org/newsroom/2026-news-releases/growth-in-tenth-district-services-activity-cooled-in-november/",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 72.6,
+        "status": "reviewed",
+        "reason": "Regional diffusion survey; forward expectations not realized borrower revenue; revised seasonal factors. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "data-decisioning",
+        "confidence": 0.96
+      },
+      {
+        "id": "gemini-m365-connector",
+        "eventKey": "gemini-m365-connector",
+        "title": "Gemini consolidates Microsoft365 access but actions remain opt-in",
+        "sourceUrl": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#November_19_2026",
         "sourcePublishedAt": "2026-11-19",
-        "score": 68.1,
-        "status": "source-qualified",
-        "reason": "Qualified on November19 original reporting plus dated PNC branch plan and2025 service explanation. Actual member-service strategy; AI-era return is expectation, not measured gain. Natural MemberService third seat; industry-development not invented deployed AI.",
-        "primaryFunction": "member-service",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.9,
-        "metrics": {
-          "newsworthiness": 78,
-          "creditUnionRelevance": 90,
-          "coverageGap": 6.999999999999999,
-          "originality": 90,
-          "sourceQuality": 85,
-          "urgency": 68.63837514467593
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        "score": 72.6,
+        "status": "reviewed",
+        "reason": "Only Get my profile default; delegated permissions; no CU deployment/results; mail and write scopes require explicit selection. Selector hold: invalid-or-stale-source-date",
+        "primaryFunction": "it-data-cybersecurity",
+        "primaryTechnology": "agents-automation",
+        "confidence": 0.96
       },
       {
-        "id": "succession",
-        "title": "Operating Knowledge Handoffs Need More Than a Named Successor",
-        "sourceUrl": "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf",
-        "sourcePublishedAt": "2024-12-17",
-        "score": 63.2,
-        "status": "held",
-        "reason": "Held: one older NCUA primary and recent CUES overlap do not establish a distinct multi-source durable guide/current applicability; confidence0.6. Prior denied DFI source not retried.",
+        "id": "eu-consumer-credit-application",
+        "eventKey": "eu-consumer-credit-application",
+        "title": "EU consumer-credit protections enter application phase",
+        "sourceUrl": "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 71.1,
+        "status": "reviewed",
+        "reason": "Comparative human review/BNPL; jurisdiction and national implementation must be explicit. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "risk-compliance",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "standard-bank-ai-assessment",
+        "eventKey": "standard-bank-ai-assessment",
+        "title": "Standard Bank describes automated AI evidence assessment",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 71,
+        "status": "reviewed",
+        "reason": "Coauthored six-assessment/two-hour report claims not independent evidence; risk committee retains approval. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "risk-compliance",
+        "primaryTechnology": "generative-ai",
+        "confidence": 0.96
+      },
+      {
+        "id": "fdic-custodial-deposit-proposal",
+        "eventKey": "fdic-custodial-deposit-proposal",
+        "title": "FDIC proposes custodial-deposit brokered funding exception",
+        "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23669.pdf",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 68.8,
+        "status": "reviewed",
+        "reason": "Proposal comments Jan19,2027; banks, not NCUA mandate or proof of pass-through insurance. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "finance-treasury",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "quest-school-branch",
+        "eventKey": "quest-school-branch",
+        "title": "Quest announces student-led school branch",
+        "sourceUrl": "https://questfcu.com/2026/11/19/from-the-ceo-november-2026/",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 66,
+        "status": "reviewed",
+        "reason": "Opening announced, not independently observed; overlaps stronger campus initiative; omit minors' names. Selector hold: invalid-or-stale-source-date",
         "primaryFunction": "hr-training",
         "primaryTechnology": "workforce-learning",
-        "confidence": 0.6,
-        "metrics": {
-          "newsworthiness": 55,
-          "creditUnionRelevance": 90,
-          "coverageGap": 30.676100628930815,
-          "originality": 95,
-          "sourceQuality": 100,
-          "urgency": 0
-        },
-        "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        "confidence": 0.96
+      },
+      {
+        "id": "connecticut-enable-partnership",
+        "eventKey": "connecticut-enable-partnership",
+        "title": "Connecticut association announces Enable origination partnership",
+        "sourceUrl": "https://www.cuinsight.com/press-release/connecticuts-credit-unions-partners-with-enable-technologies-to-advance-digital-innovation/",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 65.6,
+        "status": "reviewed",
+        "reason": "Association access announcement, no CU implementation or measured fraud result; prefer actual scoped product change. Selector hold: invalid-or-stale-source-date",
+        "primaryFunction": "vendor-management",
+        "primaryTechnology": "agents-automation",
+        "confidence": 0.96
+      },
+      {
+        "id": "thanksgiving-payment-windows",
+        "eventKey": "thanksgiving-payment-windows",
+        "title": "Thanksgiving separates cash ordering, ACH, wires and instant payments",
+        "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/2026-thanksgivingday/",
+        "sourcePublishedAt": null,
+        "score": 65.2,
+        "status": "reviewed",
+        "reason": "Durable useful synthesis assessed; published timestamp not established, and rail-specific original schedules still need exact comparative verification. Selector hold: confidence-below-0.7;invalid-or-stale-source-date",
+        "primaryFunction": "operations",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.65
+      },
+      {
+        "id": "payments-canada-compliance",
+        "eventKey": "payments-canada-compliance",
+        "title": "Payments Canada updates investigation and penalty framework",
+        "sourceUrl": "https://www.payments.ca/payments-canada-updates-its-compliance-law-support-secure-payment-ecosystem",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 64.9,
+        "status": "reviewed",
+        "reason": "Canadian by-law explanation; Nov3 effective legal amendment requires Gazette confirmation; CAD1m is maximum not normal penalty. Selector hold: invalid-or-stale-source-date",
+        "primaryFunction": "payments-deposits",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "dcuc-charter-parity-letter",
+        "eventKey": "dcuc-charter-parity-letter",
+        "title": "DCUC seeks state and federal charter parity in stablecoin transition",
+        "sourceUrl": "https://www.dcuc.org/news/dcuc-calls-on-secretary-bessent-to-protect-state-and-federal-credit-union-parity",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 64.8,
+        "status": "reviewed",
+        "reason": "Advocacy letter not Treasury action, no new approval; stronger final-source developments ahead. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "board-strategy",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "league-chapter-mini-grants",
+        "eventKey": "league-chapter-mini-grants",
+        "title": "League chapter mini-grants open through December 4",
+        "sourceUrl": "https://the-league.coop/grants/",
+        "sourcePublishedAt": "2026-11-20",
+        "score": 64.3,
+        "status": "reviewed",
+        "reason": "Source states Nov20 application opening; affiliated chapters only, up to2500, awards subject to funding. Qualified for editorial review, not release acceptance.",
+        "primaryFunction": "operations",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "safe1-wireless-checking",
+        "eventKey": "safe1-wireless-checking",
+        "title": "Safe 1 offers Members Mobile; launch date remains unverified",
+        "sourceUrl": "https://www.safe1.org/other-services/members-mobile/",
+        "sourcePublishedAt": null,
+        "score": 61.8,
+        "status": "reviewed",
+        "reason": "Issuer service page corroborates partnership but dated wire inaccessible; no verified original launch date. Selector hold: confidence-below-0.7;invalid-or-stale-source-date;score-below-minimum",
+        "primaryFunction": "marketing-growth",
+        "primaryTechnology": "realtime-embedded-finance",
+        "confidence": 0.65
+      },
+      {
+        "id": "ofac-nov19-sanctions",
+        "eventKey": "ofac-nov19-sanctions",
+        "title": "OFAC issues November19 sanctions and license updates",
+        "sourceUrl": "https://ofac.treasury.gov/recent-actions/20261119",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 60.9,
+        "status": "reviewed",
+        "reason": "Specific sanctions action; no institution-specific CU exposure or distinct full-article thesis established; Alert owner separate. Selector hold: invalid-or-stale-source-date;score-below-minimum",
+        "primaryFunction": "risk-compliance",
+        "primaryTechnology": "regtech-monitoring",
+        "confidence": 0.96
+      },
+      {
+        "id": "wecu-snohomish-vision",
+        "eventKey": "wecu-snohomish-vision",
+        "title": "WECU plans further Snohomish branches in five-year vision",
+        "sourceUrl": "https://www.wecu.com/a-new-chapter-of-growth-and-impact/",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 60.8,
+        "status": "reviewed",
+        "reason": "Future footprint; no opening dates or investment detail; weaker distinct operating substance than acquisition conversion. Selector hold: invalid-or-stale-source-date;score-below-minimum",
+        "primaryFunction": "board-strategy",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "az-flood-grants",
+        "eventKey": "az-flood-grants",
+        "title": "Three Arizona credit unions announce $60,000 flood-relief grants",
+        "sourceUrl": "https://www.cuinsight.com/press-release/oneaz-arizona-financial-and-truwest-unite-to-provide-60000-for-northern-arizona-flood-relief/",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 59.9,
+        "status": "reviewed",
+        "reason": "Attributable issuer release, two restricted United Way grants not individual member entitlements. Selector hold: invalid-or-stale-source-date;score-below-minimum",
+        "primaryFunction": "member-service",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "greylock-associate-board",
+        "eventKey": "greylock-associate-board",
+        "title": "Greylock starts associate-board pipeline",
+        "sourceUrl": "https://www.greylock.org/post/greylock_welcomes_new_associate_board_member_alison_larocca.html?psrc=1460",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 59.1,
+        "status": "reviewed",
+        "reason": "Routine appointment insufficient unless substantive documented program mechanics add durable usefulness. Selector hold: invalid-or-stale-source-date;score-below-minimum",
+        "primaryFunction": "board-strategy",
+        "primaryTechnology": "workforce-learning",
+        "confidence": 0.96
+      },
+      {
+        "id": "mbc-leadership",
+        "eventKey": "mbc-leadership",
+        "title": "Michigan Business Connection announces phased leadership succession",
+        "sourceUrl": "https://www.cuinsight.com/press-release/michigan-business-connection-announces-leadership-changes/",
+        "sourcePublishedAt": "2026-11-19",
+        "score": 53.9,
+        "status": "reviewed",
+        "reason": "Routine people notice; April30,2027 CEO handoff, no documented change to participant underwriting authority. Selector hold: invalid-or-stale-source-date;score-below-minimum",
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
       }
     ],
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "plannedDate": "2026-11-21",
-        "status": "live-verified",
-        "candidateTitle": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
-        "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
-        "outcomeScope": "cycle",
+        "status": "prepared",
+        "candidateTitle": "Textract Adds Page Evidence to AI Document Fields",
+        "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T12:39:00.746Z",
-        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
-        "evidence": {
-          "pending": {
-            "prNumber": 406,
-            "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
-            "run": 44902161577,
-            "job": 136840132620,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
-            "run": 44902161577,
-            "job": 136840132620,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-21T12:23:59.852Z",
-            "prNumber": 406
-          },
-          "terminalAcceptance": {
-            "prNumber": 406,
-            "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
-            "run": 44902161577,
-            "job": 136840132620,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-21T12:24:00.746Z",
-            "artifactId": 14707480167,
-            "artifactSha256": "sha256:61f4ee9ff3ecf768584db3bdeac7c5310c55227012f7ceb49fe6588449a5f0b4",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally reviewed exact artifact article full-page at390/1440, mobile home and desktop News lead pixels. Legible title/body/source/related links, unmarked original envelope hero correctly cropped, no misleading incident text in artwork. Fifty rendered checks report zero failures/accessibility violations/runtime errors/overflow or broken images; navigation and card failure/recovery checks passed. Revision/clean-tree/cache/completion verified; ZIP SHA256 matched."
-          }
-        },
-        "productionCommit": "964f2e0553b8fbcb10217b50c03671707e20c19d",
-        "verifiedAt": "2026-11-21T12:30:42.078Z"
-      },
-      {
-        "slot": 2,
-        "plannedDate": "2026-11-21",
-        "status": "live-verified",
-        "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
-        "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
+        "nextReviewAt": "2026-11-22T10:27:38.028Z",
         "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:03:24.016Z",
-        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
         "evidence": {
+          "articleSelection": {
+            "candidateId": "textract-insights-launch",
+            "eventKey": "textract-insights-launch",
+            "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+            "sourcePublishedAt": "2026-11-20"
+          },
           "preparation": {
-            "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
-            "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
-            "preparedAt": "2026-11-21T12:33:19.348Z",
-            "sourceReview": "OCC November19 approval and OakNorth November20 issuer statement read; executive segment/approval not closing, distinct source milestone; BoardStrategy third weekly seat."
-          },
-          "pending": {
-            "prNumber": 407,
-            "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
-            "run": 44904588918,
-            "job": 136847340528,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
-            "run": 44904588918,
-            "job": 136847340528,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-21T12:48:23.003Z",
-            "prNumber": 407
-          },
-          "terminalAcceptance": {
-            "prNumber": 407,
-            "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
-            "run": 44904588918,
-            "job": 136847340528,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-21T12:48:24.016Z",
-            "artifactId": 14707259377,
-            "artifactSha256": "sha256:1e563a81b1fec98be9dd4a64e5f8e5d22e84afff6424596acf8dc1ff920d9acf",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally reviewed exact full article390/1440, mobile News first-card and desktop Home lead pixels. Title/deck/date/source links and original paper-gateway crop readable; approval/closing limits visible; correct executive BoardStrategy metadata checked. Artifact ZIP digest/revision/clean cache/completion matched.50 rendered checks; zero failures/accessibility/runtime errors/overflow/broken assets; normal404recovery checks passed."
+            "candidateTitle": "Textract Adds Page Evidence to AI Document Fields",
+            "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html",
+            "preparedAt": "2026-11-22T10:07:38.025Z",
+            "sourceReview": "Vendor GA announcement, no independent accuracy/CU outcome; explicit vs inferred fields and page evidence."
           }
-        },
-        "productionCommit": "7803cec8e7e883bd42921a1d14a627b7c8ea9c91",
-        "verifiedAt": "2026-11-21T12:49:56.524Z"
-      },
-      {
-        "slot": 3,
-        "plannedDate": "2026-11-21",
-        "status": "live-verified",
-        "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
-        "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:26:36.847Z",
-        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
-        "evidence": {
-          "preparation": {
-            "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
-            "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
-            "preparedAt": "2026-11-21T12:50:28.292Z",
-            "sourceReview": "Qualified on November19 signed agreement plus Corpay8-K announcement. Vendor ownership—not completed integration or measured CU performance. Natural VendorManagement third seat after TruStage."
-          },
-          "pending": {
-            "prNumber": 408,
-            "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
-            "run": 44905966731,
-            "job": 136851487765,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
-            "run": 44905966731,
-            "job": 136851487765,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-21T13:11:35.855Z",
-            "prNumber": 408
-          },
-          "terminalAcceptance": {
-            "prNumber": 408,
-            "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
-            "run": 44905966731,
-            "job": 136851487765,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-21T13:11:36.847Z",
-            "artifactId": 14708161819,
-            "artifactSha256": "sha256:ad90bbc0ebb164b98718e7319dd49cd0e1e499f711c4a7cbc4c90cc01524aae3",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally reviewed exact full article390/1440 plus mobile News lead and desktop Home lead pixels. Neutral ownership-key image, correct dollar/price/conditional2027 text, readable sources/related links/date and no clipping. ZIP hash/revision/clean completion/cache matched;50 rendered checks0 failures/accessibility/runtime errors; card normal404recovery passed. Original attempt terminal success, not failure."
-          }
-        },
-        "productionCommit": "b5ad86abeb9702ec5a40301e138a52bb70390793",
-        "verifiedAt": "2026-11-21T13:13:09.536Z"
-      },
-      {
-        "slot": 4,
-        "plannedDate": "2026-11-21",
-        "status": "live-verified",
-        "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
-        "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T13:49:59.767Z",
-        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
-        "evidence": {
-          "preparation": {
-            "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
-            "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
-            "preparedAt": "2026-11-21T13:14:12.405Z",
-            "sourceReview": "Qualified on November19 original reporting plus dated PNC branch plan and2025 service explanation. Actual member-service strategy; AI-era return is expectation, not measured gain. Natural MemberService third seat; industry-development not invented deployed AI."
-          },
-          "pending": {
-            "prNumber": 409,
-            "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
-            "run": 44908022945,
-            "job": 136857671526,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
-            "run": 44908022945,
-            "job": 136857671526,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-21T13:34:58.664Z",
-            "prNumber": 409
-          },
-          "terminalAcceptance": {
-            "prNumber": 409,
-            "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
-            "run": 44908022945,
-            "job": 136857671526,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-21T13:34:59.766Z",
-            "artifactId": 14708229330,
-            "artifactSha256": "sha256:6212ed970e58fa5449d80228b291c3435f09a68e6ec0575ecec936a03b594701",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally reviewed exact full article390/1440, mobile News and desktop Home lead pixels: legible dates/source links, no clipping, appropriate individually selected unbranded branch illustration with explicit non-PNC alt. Older2025 hospitality and future2031 plan remain visibly distinct from current reporting; no measured ROI claim. Existing branch-demand Insight actually read: forecasting/staffing authority thesis, not duplicate PNC hospitality coverage. ZIP digest/revision/completion/cache identity matched;50 checks0failures, zero access/runtime/overflow issues; artwork normal404recovery passed.operate skipped."
-          }
-        },
-        "productionCommit": "e72218429a462a0a14fc6b97f8c991eb6f4832ff",
-        "verifiedAt": "2026-11-21T13:36:34.326Z"
-      },
-      {
-        "slot": 5,
-        "plannedDate": "2026-11-21",
-        "status": "live-verified",
-        "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
-        "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
-        "outcomeScope": "cycle",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-21T14:14:15.885Z",
-        "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
-        "evidence": {
-          "preparation": {
-            "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
-            "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
-            "preparedAt": "2026-11-21T13:37:15.602Z",
-            "sourceReview": "Qualified data brief from original2026 awards PDF and program resources; five CU entries3.6m/152 assisted versus154 total. Operations handoff natural; awards not disbursement/delivered homes. Original posting clock unknown, urgency0."
-          },
-          "pending": {
-            "prNumber": 410,
-            "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
-            "run": 44909930833,
-            "job": 136863380184,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
-            "run": 44909930833,
-            "job": 136863380184,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-21T13:59:14.960Z",
-            "prNumber": 410
-          },
-          "terminalAcceptance": {
-            "prNumber": 410,
-            "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
-            "run": 44909930833,
-            "job": 136863380184,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-21T13:59:15.885Z",
-            "artifactId": 14710420239,
-            "artifactSha256": "sha256:b56b91fb57338cdfbb847062b62716844abea5eb7c219da4498fbde7f910034f",
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": "Personally reviewed full exact article390/1440 and mobile News/desktop Home lead pixels: five named CU entries and amounts legible;152assisted versus154total, special intake-center interpretation and unknown original posting-clock limits visible; source and related links clear, no clipping. Original abstract housing art is illustrative, not a delivered-project photograph or quantitative chart. ZIP digest/revision/clean completion/cache matched;50rendered checks0failures/accessibility/runtime errors; normal404recovery passed;operate skipped."
-          }
-        },
-        "productionCommit": "7445c7ea08f64d58697f2fbee37b65279189b9de",
-        "verifiedAt": "2026-11-21T14:01:09.383Z"
+        }
       }
     ],
     "browserReadiness": {
       "localStatus": "missing-browser-executable",
-      "observedAt": "2026-11-21T11:58:36.861Z",
-      "sourceCommit": "46875d5831257a073587829e5d808d2a120efe19",
+      "observedAt": "2026-11-22T09:58:45.887Z",
+      "sourceCommit": "654370833ea40c712d92a95d504e310e4d5b1588",
       "cacheChanged": false,
+      "cacheFingerprint": "5ad38304b535c2987dbd24657c1a11b884984ff600d9f389deb0d4e634fee792",
       "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
-      "fallback": "Use existing exact-head CI for this genuinely qualified ordinary package; no local install/cache mutation or waiver."
+      "fallback": "Existing exact-head PR design-checks, complete rendered artifact and own visual acceptance; no install/cache change."
     },
-    "socialDecision": "not-reserved; existing provider/historical holds retained",
-    "updatedAt": "2026-11-21T12:02:42.111Z",
-    "distributionOutcome": {
-      "status": "held-provider-review",
-      "accountableOwner": "daily-publisher",
-      "recordedAt": "2026-11-21T14:02:49.599Z",
-      "decision": "No social reservation or submission",
-      "evidence": {
-        "run": 44911765613,
-        "attempt": 1,
-        "artifact": 14709918538,
-        "sha256": "36eeae41c44a40b88481061241d8d1a6030e148a1e50843fe9ddb25d7149445f",
-        "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
-        "status": "verified",
-        "production": {
-          "status": 200,
-          "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
-          "runCommit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
-          "environment": "production",
-          "reportOnlyDrift": true,
-          "driftFiles": []
-        },
-        "completedAt": "2026-11-21T14:01:54.738Z",
-        "actions": 0,
-        "errors": 0,
-        "reconciliations": 0,
-        "inventory": {
-          "complete": true,
-          "requiresReview": true,
-          "observedAt": "2026-11-21T14:01:54.562Z",
-          "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
-          "channel": "6a53df0880cc80cdcaa76fb8",
-          "records": 81,
-          "sent": 81,
-          "active": 0,
-          "canonical": 16,
-          "missingCanonical": 65,
-          "reviewFlags": 81,
-          "pagesRead": 1,
-          "latestSent": "2026-11-18T20:30:07.043Z"
-        }
-      },
-      "inventoryPurpose": "Read existing naturally triggered trusted receipt only; this is not a current reservation/capacity guarantee and must never renew proof or the60second freshness bound.",
-      "reason": "Historical/unknown-active holds remain; no reviewed current candidate-specific exclusion/proof clears these new destinations. Complete inventory alone and a fresh article date do not clear duplicate/destination uncertainty. Two old unresolved ledger rows preserved.",
-      "opportunities": [
-        {
-          "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
-          "classification": "Standard",
-          "articlePublicationWeek": "2026-11-16",
-          "disposition": "held-provider-review",
-          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
-        },
-        {
-          "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
-          "classification": "Standard",
-          "articlePublicationWeek": "2026-11-16",
-          "disposition": "held-provider-review",
-          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
-        },
-        {
-          "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
-          "classification": "Standard",
-          "articlePublicationWeek": "2026-11-16",
-          "disposition": "held-provider-review",
-          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
-        },
-        {
-          "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
-          "classification": "Standard",
-          "articlePublicationWeek": "2026-11-16",
-          "disposition": "held-provider-review",
-          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
-        },
-        {
-          "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
-          "classification": "Standard",
-          "articlePublicationWeek": "2026-11-16",
-          "disposition": "held-provider-review",
-          "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
-        }
-      ],
-      "reservations": 0,
-      "submissions": 0,
-      "sentClaim": false
-    },
-    "optionalSelection": {
-      "decision": "none-qualified",
-      "coreLiveCount": 5,
-      "maximum": 7,
-      "selected": [],
-      "candidatePoolCount": 12,
-      "selectorObservedAt": "2026-11-21T14:02:48.552Z",
-      "reason": "The same12-candidate bounded pool yielded five actual verified core articles. Remaining seven leads remain source/confidence/distinctness or natural weekly-function-cap holds, with no independently qualified strong distinct optional extra. No six/seven quota slots or additional scan."
-    }
+    "socialDecision": "not-reserved; historical/provider holds retained",
+    "updatedAt": "2026-11-22T10:07:38.025Z"
   },
   "history": [
     {
@@ -13801,6 +13680,746 @@
         }
       ],
       "blockedReason": "3/5 core articles live;2 explicit editorial/source/distinctness/concentration holds after the unchanged12-candidate pool. Exact-head CI fallback worked; local browser absence is not the reason for these2 holds."
+    },
+    {
+      "date": "2026-11-21",
+      "fullArticleCount": 5,
+      "alertCount": 0,
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html"
+        }
+      ],
+      "status": "completed",
+      "outcomeSlot": 5,
+      "evaluatedCandidateCount": 12,
+      "beatsSearched": [
+        "security-fraud",
+        "payments-core-fintech",
+        "regulation-policy",
+        "international-comparisons",
+        "financial-reporting",
+        "workforce-household-data",
+        "regional-cu-primary",
+        "credit-union-industry"
+      ],
+      "discoveryCoverage": {
+        "date": "2026-11-21",
+        "candidateCount": 12,
+        "beatsSearched": [
+          "security-fraud",
+          "payments-core-fintech",
+          "regulation-policy",
+          "international-comparisons",
+          "financial-reporting",
+          "workforce-household-data",
+          "regional-cu-primary",
+          "credit-union-industry"
+        ],
+        "directions": [
+          {
+            "id": "regional-cu-leagues-regulators",
+            "queryOrRead": "FHLBank program original plus CU regional/news discovery",
+            "observedAt": "2026-11-21T12:02:21.428Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.fhlbi.com/services/community-programs/affordable-housing-program/"
+            ]
+          },
+          {
+            "id": "function-problem",
+            "queryOrRead": "TruStage direct issuer transcript and Greenhouse original applicant screening",
+            "observedAt": "2026-11-21T12:02:21.428Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
+              "https://www.greenhouse.com/blog/conversational-ai-candidate-pipeline"
+            ]
+          },
+          {
+            "id": "independent-data-research",
+            "queryOrRead": "Philadelphia Fed November original data and workforce research discovery",
+            "observedAt": "2026-11-21T12:02:21.428Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-11"
+            ]
+          },
+          {
+            "id": "international-comparisons",
+            "queryOrRead": "European Commission and OakNorth original comparisons; international search",
+            "observedAt": "2026-11-21T12:02:21.428Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
+              "https://oaknorth.com/press/oaknorth-us-national-bank-charter/"
+            ]
+          },
+          {
+            "id": "practical-synthesis",
+            "queryOrRead": "Vendor incident partner notice handoff original transcript versus existing coverage; NCUA primary-source discovery",
+            "observedAt": "2026-11-21T12:02:21.428Z",
+            "status": "searched",
+            "sourceUrls": [
+              "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
+              "https://ncua.gov/news/latest-news"
+            ]
+          }
+        ],
+        "practicalSynthesis": {
+          "question": "How does a CU assign vendor incident notification ownership without confusing a conditional vendor lead time with its own obligations?",
+          "noCandidateReason": "Issuer transcript supports new News milestone; league repetition is not an independent second primary basis for a durable synthesis. No Library acceptance established yet; previously denied DFI source not retried."
+        }
+      },
+      "candidateEvaluations": [
+        {
+          "id": "trustage",
+          "title": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
+          "sourceUrl": "https://www.trustage.com/outage/business/credit-union/trustage-recovery-update-for-our-partners",
+          "sourcePublishedAt": "2026-11-19",
+          "score": 75.8,
+          "status": "source-qualified",
+          "reason": "Qualified on actual November19 issuer transcript; material conditional notice milestone distinct from October restoration. Partner lead time not legal deadline or confirmed exposure.",
+          "primaryFunction": "vendor-management",
+          "primaryTechnology": "privacy-security",
+          "confidence": 0.96,
+          "metrics": {
+            "newsworthiness": 88,
+            "creditUnionRelevance": 96,
+            "coverageGap": 17.5,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 68.63837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+        },
+        {
+          "id": "payoneer",
+          "title": "Payoneer Receives Preliminary Conditional Trust Bank Approval",
+          "sourceUrl": "https://occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1395.pdf",
+          "sourcePublishedAt": "2026-11-20",
+          "score": 73.3,
+          "status": "held",
+          "reason": "Held: natural Payments/Deposits week already3; conditional decision body not sufficiently verified from inaccessible reader result. Confidence0.6. No first opening claim.",
+          "primaryFunction": "payments-deposits",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.6,
+          "metrics": {
+            "newsworthiness": 87,
+            "creditUnionRelevance": 90,
+            "coverageGap": 6.999999999999999,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 81.13837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+        },
+        {
+          "id": "mobile",
+          "title": "Members Mobile and MeridianLink Combine Wireless and Account Opening",
+          "sourceUrl": "https://mtrustcompany.marketminute.com/article/bizwire-2026-11-20-members-mobile-and-meridianlink-partner-to-help-credit-unions-expand-membership",
+          "sourcePublishedAt": "2026-11-20",
+          "score": 67,
+          "status": "held",
+          "reason": "Held: natural Marketing/Growth week already3 and source body not accepted; confidence0.6. Seed promises do not prove measured acquisition/conversion.",
+          "primaryFunction": "marketing-growth",
+          "primaryTechnology": "core-api-cloud",
+          "confidence": 0.6,
+          "metrics": {
+            "newsworthiness": 65,
+            "creditUnionRelevance": 85,
+            "coverageGap": 11.666666666666666,
+            "originality": 85,
+            "sourceQuality": 100,
+            "urgency": 81.13837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+        },
+        {
+          "id": "scams",
+          "title": "Senate Proposal Would Coordinate National Scam Response",
+          "sourceUrl": "https://www.americascreditunions.org/news-media/news/senate-bill-would-create-office-fraud-and-scam-prevention",
+          "sourcePublishedAt": "2026-11-19",
+          "score": 69.8,
+          "status": "held",
+          "reason": "Held: actual original association account of proposed scam-office legislation read, but Risk/Compliance week already3; no retagging. Proposal is not law; full bill not independently accepted.",
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.85,
+          "metrics": {
+            "newsworthiness": 80,
+            "creditUnionRelevance": 90,
+            "coverageGap": 4.375,
+            "originality": 92,
+            "sourceQuality": 100,
+            "urgency": 68.63837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.292Z"
+        },
+        {
+          "id": "eu",
+          "title": "EU Consumer Credit Application Milestone Includes Human Review",
+          "sourceUrl": "https://commission.europa.eu/news-and-media/news/better-protected-your-next-credit-application-2026-11-20_en",
+          "sourcePublishedAt": "2026-11-20",
+          "score": 69.6,
+          "status": "held",
+          "reason": "Held: actual European Commission milestone read, EU jurisdiction explicit; natural Lending/Collections week already3. Not a new US mandate or spare-seat Finance story.",
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.93,
+          "metrics": {
+            "newsworthiness": 80,
+            "creditUnionRelevance": 80,
+            "coverageGap": 11.666666666666666,
+            "originality": 88,
+            "sourceQuality": 100,
+            "urgency": 81.13837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        },
+        {
+          "id": "philly",
+          "title": "Philadelphia Fed Survey Separates Orders From Shipments",
+          "sourceUrl": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-11",
+          "sourcePublishedAt": "2026-11-19",
+          "score": 68.8,
+          "status": "held",
+          "reason": "Held: original November survey read; actual commercial-lending risk question belongs to Lending/Collections already3. Diffusion indices not growth percentages; no spare-seat Treasury reclassification.",
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.94,
+          "metrics": {
+            "newsworthiness": 80,
+            "creditUnionRelevance": 85,
+            "coverageGap": 11.666666666666666,
+            "originality": 83,
+            "sourceQuality": 100,
+            "urgency": 68.63837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        },
+        {
+          "id": "oak",
+          "title": "OakNorth Announces US Charter Acquisition Approval",
+          "sourceUrl": "https://oaknorth.com/press/oaknorth-us-national-bank-charter/",
+          "sourcePublishedAt": "2026-11-20",
+          "score": 71.3,
+          "status": "source-qualified",
+          "reason": "Qualified on OCC November19 approval plus attributed November20 issuer statement. Executive/BoardStrategy competitive-entry question; approval not closing or first US lending. Natural weekly Board third seat.",
+          "primaryFunction": "board-strategy",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.95,
+          "metrics": {
+            "newsworthiness": 85,
+            "creditUnionRelevance": 85,
+            "coverageGap": 5,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 81.13837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        },
+        {
+          "id": "bill",
+          "title": "BILL Signs Take Private Agreement With TPG and Corpay",
+          "sourceUrl": "https://investor.bill.com/news/news-details/2026/BILL-Agrees-to-be-Acquired-by-TPG-in-Partnership-with-Corpay/default.aspx",
+          "sourcePublishedAt": "2026-11-19",
+          "score": 70.6,
+          "status": "source-qualified",
+          "reason": "Qualified on November19 signed agreement plus Corpay8-K announcement. Vendor ownership—not completed integration or measured CU performance. Natural VendorManagement third seat after TruStage.",
+          "primaryFunction": "vendor-management",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.95,
+          "metrics": {
+            "newsworthiness": 85,
+            "creditUnionRelevance": 82,
+            "coverageGap": 11.666666666666666,
+            "originality": 92,
+            "sourceQuality": 100,
+            "urgency": 68.63837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        },
+        {
+          "id": "greenhouse",
+          "title": "Greenhouse Reports Employers Fear Rejecting Genuine Applicants",
+          "sourceUrl": "https://www.greenhouse.com/blog/conversational-ai-candidate-pipeline",
+          "sourcePublishedAt": "2026-11-19",
+          "score": 77,
+          "status": "held",
+          "reason": "Held: employer belief statistic not actual90% candidate false-rejection rate; no independent methodology/outcome corroboration; confidence0.65 fails threshold. No CU-specific sample established.",
+          "primaryFunction": "hr-training",
+          "primaryTechnology": "conversational-ai",
+          "confidence": 0.65,
+          "metrics": {
+            "newsworthiness": 72,
+            "creditUnionRelevance": 85,
+            "coverageGap": 54.00943396226414,
+            "originality": 93,
+            "sourceQuality": 100,
+            "urgency": 68.63837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        },
+        {
+          "id": "ahp",
+          "title": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
+          "sourceUrl": "https://www.fhlbi.com/webres/File/products-services/Affordable%20Housing/AHP/AHP%202026%20Awards.pdf",
+          "sourcePublishedAt": null,
+          "score": 65.1,
+          "status": "source-qualified",
+          "reason": "Qualified data brief from original2026 awards PDF and program resources; five CU entries3.6m/152 assisted versus154 total. Operations handoff natural; awards not disbursement/delivered homes. Original posting clock unknown, urgency0.",
+          "primaryFunction": "operations",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.95,
+          "metrics": {
+            "newsworthiness": 86,
+            "creditUnionRelevance": 97,
+            "coverageGap": 6.999999999999999,
+            "originality": 83,
+            "sourceQuality": 100,
+            "urgency": 0
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        },
+        {
+          "id": "pnc",
+          "title": "PNC Puts Hospitality at the Center of Its Branch Expansion",
+          "sourceUrl": "https://www.bankingdive.com/news/pnc-branches-hospitality-ai-disruption-banking/875202/",
+          "sourcePublishedAt": "2026-11-19",
+          "score": 68.1,
+          "status": "source-qualified",
+          "reason": "Qualified on November19 original reporting plus dated PNC branch plan and2025 service explanation. Actual member-service strategy; AI-era return is expectation, not measured gain. Natural MemberService third seat; industry-development not invented deployed AI.",
+          "primaryFunction": "member-service",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.9,
+          "metrics": {
+            "newsworthiness": 78,
+            "creditUnionRelevance": 90,
+            "coverageGap": 6.999999999999999,
+            "originality": 90,
+            "sourceQuality": 85,
+            "urgency": 68.63837514467593
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        },
+        {
+          "id": "succession",
+          "title": "Operating Knowledge Handoffs Need More Than a Named Successor",
+          "sourceUrl": "https://ncua.gov/files/agenda-items/succession-planning-final-rule-20241217.pdf",
+          "sourcePublishedAt": "2024-12-17",
+          "score": 63.2,
+          "status": "held",
+          "reason": "Held: one older NCUA primary and recent CUES overlap do not establish a distinct multi-source durable guide/current applicability; confidence0.6. Prior denied DFI source not retried.",
+          "primaryFunction": "hr-training",
+          "primaryTechnology": "workforce-learning",
+          "confidence": 0.6,
+          "metrics": {
+            "newsworthiness": 55,
+            "creditUnionRelevance": 90,
+            "coverageGap": 30.676100628930815,
+            "originality": 95,
+            "sourceQuality": 100,
+            "urgency": 0
+          },
+          "qualificationRecordedAt": "2026-11-21T12:50:28.293Z"
+        }
+      ],
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "plannedDate": "2026-11-21",
+          "status": "live-verified",
+          "candidateTitle": "TruStage Sets Conditional Partner Notice Ahead of Individual Notifications",
+          "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-21T12:39:00.746Z",
+          "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
+          "evidence": {
+            "pending": {
+              "prNumber": 406,
+              "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
+              "run": 44902161577,
+              "job": 136840132620,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
+              "run": 44902161577,
+              "job": 136840132620,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-21T12:23:59.852Z",
+              "prNumber": 406
+            },
+            "terminalAcceptance": {
+              "prNumber": 406,
+              "head": "84a047b646a630e164fe5127fc1ca2c96e01d185",
+              "run": 44902161577,
+              "job": 136840132620,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-21T12:24:00.746Z",
+              "artifactId": 14707480167,
+              "artifactSha256": "sha256:61f4ee9ff3ecf768584db3bdeac7c5310c55227012f7ceb49fe6588449a5f0b4",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed exact artifact article full-page at390/1440, mobile home and desktop News lead pixels. Legible title/body/source/related links, unmarked original envelope hero correctly cropped, no misleading incident text in artwork. Fifty rendered checks report zero failures/accessibility violations/runtime errors/overflow or broken images; navigation and card failure/recovery checks passed. Revision/clean-tree/cache/completion verified; ZIP SHA256 matched."
+            }
+          },
+          "productionCommit": "964f2e0553b8fbcb10217b50c03671707e20c19d",
+          "verifiedAt": "2026-11-21T12:30:42.078Z"
+        },
+        {
+          "slot": 2,
+          "plannedDate": "2026-11-21",
+          "status": "live-verified",
+          "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
+          "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-21T13:03:24.016Z",
+          "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
+          "evidence": {
+            "preparation": {
+              "candidateTitle": "US Approval Moves OakNorth’s Community Unity Deal Forward",
+              "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
+              "preparedAt": "2026-11-21T12:33:19.348Z",
+              "sourceReview": "OCC November19 approval and OakNorth November20 issuer statement read; executive segment/approval not closing, distinct source milestone; BoardStrategy third weekly seat."
+            },
+            "pending": {
+              "prNumber": 407,
+              "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
+              "run": 44904588918,
+              "job": 136847340528,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
+              "run": 44904588918,
+              "job": 136847340528,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-21T12:48:23.003Z",
+              "prNumber": 407
+            },
+            "terminalAcceptance": {
+              "prNumber": 407,
+              "head": "a02c8a3bba9b925bfb6067979601bcc0e94c28d2",
+              "run": 44904588918,
+              "job": 136847340528,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-21T12:48:24.016Z",
+              "artifactId": 14707259377,
+              "artifactSha256": "sha256:1e563a81b1fec98be9dd4a64e5f8e5d22e84afff6424596acf8dc1ff920d9acf",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed exact full article390/1440, mobile News first-card and desktop Home lead pixels. Title/deck/date/source links and original paper-gateway crop readable; approval/closing limits visible; correct executive BoardStrategy metadata checked. Artifact ZIP digest/revision/clean cache/completion matched.50 rendered checks; zero failures/accessibility/runtime errors/overflow/broken assets; normal404recovery checks passed."
+            }
+          },
+          "productionCommit": "7803cec8e7e883bd42921a1d14a627b7c8ea9c91",
+          "verifiedAt": "2026-11-21T12:49:56.524Z"
+        },
+        {
+          "slot": 3,
+          "plannedDate": "2026-11-21",
+          "status": "live-verified",
+          "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
+          "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-21T13:26:36.847Z",
+          "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
+          "evidence": {
+            "preparation": {
+              "candidateTitle": "BILL Signs $6 Billion Take-Private Deal With TPG and Corpay",
+              "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
+              "preparedAt": "2026-11-21T12:50:28.292Z",
+              "sourceReview": "Qualified on November19 signed agreement plus Corpay8-K announcement. Vendor ownership—not completed integration or measured CU performance. Natural VendorManagement third seat after TruStage."
+            },
+            "pending": {
+              "prNumber": 408,
+              "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
+              "run": 44905966731,
+              "job": 136851487765,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
+              "run": 44905966731,
+              "job": 136851487765,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-21T13:11:35.855Z",
+              "prNumber": 408
+            },
+            "terminalAcceptance": {
+              "prNumber": 408,
+              "head": "a6278bb4682e702b0d35ed5a71e30d1b28c7bdd9",
+              "run": 44905966731,
+              "job": 136851487765,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-21T13:11:36.847Z",
+              "artifactId": 14708161819,
+              "artifactSha256": "sha256:ad90bbc0ebb164b98718e7319dd49cd0e1e499f711c4a7cbc4c90cc01524aae3",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed exact full article390/1440 plus mobile News lead and desktop Home lead pixels. Neutral ownership-key image, correct dollar/price/conditional2027 text, readable sources/related links/date and no clipping. ZIP hash/revision/clean completion/cache matched;50 rendered checks0 failures/accessibility/runtime errors; card normal404recovery passed. Original attempt terminal success, not failure."
+            }
+          },
+          "productionCommit": "b5ad86abeb9702ec5a40301e138a52bb70390793",
+          "verifiedAt": "2026-11-21T13:13:09.536Z"
+        },
+        {
+          "slot": 4,
+          "plannedDate": "2026-11-21",
+          "status": "live-verified",
+          "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
+          "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-21T13:49:59.767Z",
+          "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
+          "evidence": {
+            "preparation": {
+              "candidateTitle": "PNC Puts Hospitality Alongside Its Branch Expansion",
+              "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
+              "preparedAt": "2026-11-21T13:14:12.405Z",
+              "sourceReview": "Qualified on November19 original reporting plus dated PNC branch plan and2025 service explanation. Actual member-service strategy; AI-era return is expectation, not measured gain. Natural MemberService third seat; industry-development not invented deployed AI."
+            },
+            "pending": {
+              "prNumber": 409,
+              "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
+              "run": 44908022945,
+              "job": 136857671526,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
+              "run": 44908022945,
+              "job": 136857671526,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-21T13:34:58.664Z",
+              "prNumber": 409
+            },
+            "terminalAcceptance": {
+              "prNumber": 409,
+              "head": "dfd8e620e408384853d8d5e1ca4220120ee4152c",
+              "run": 44908022945,
+              "job": 136857671526,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-21T13:34:59.766Z",
+              "artifactId": 14708229330,
+              "artifactSha256": "sha256:6212ed970e58fa5449d80228b291c3435f09a68e6ec0575ecec936a03b594701",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed exact full article390/1440, mobile News and desktop Home lead pixels: legible dates/source links, no clipping, appropriate individually selected unbranded branch illustration with explicit non-PNC alt. Older2025 hospitality and future2031 plan remain visibly distinct from current reporting; no measured ROI claim. Existing branch-demand Insight actually read: forecasting/staffing authority thesis, not duplicate PNC hospitality coverage. ZIP digest/revision/completion/cache identity matched;50 checks0failures, zero access/runtime/overflow issues; artwork normal404recovery passed.operate skipped."
+            }
+          },
+          "productionCommit": "e72218429a462a0a14fc6b97f8c991eb6f4832ff",
+          "verifiedAt": "2026-11-21T13:36:34.326Z"
+        },
+        {
+          "slot": 5,
+          "plannedDate": "2026-11-21",
+          "status": "live-verified",
+          "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
+          "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
+          "outcomeScope": "cycle",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-21T14:14:15.885Z",
+          "nextAction": "Verify actual production after expected-head merge, then immutable live closeout.",
+          "evidence": {
+            "preparation": {
+              "candidateTitle": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
+              "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
+              "preparedAt": "2026-11-21T13:37:15.602Z",
+              "sourceReview": "Qualified data brief from original2026 awards PDF and program resources; five CU entries3.6m/152 assisted versus154 total. Operations handoff natural; awards not disbursement/delivered homes. Original posting clock unknown, urgency0."
+            },
+            "pending": {
+              "prNumber": 410,
+              "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
+              "run": 44909930833,
+              "job": 136863380184,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
+              "run": 44909930833,
+              "job": 136863380184,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-21T13:59:14.960Z",
+              "prNumber": 410
+            },
+            "terminalAcceptance": {
+              "prNumber": 410,
+              "head": "6826ceaff530d94c579ff48a248acc963c1b6c81",
+              "run": 44909930833,
+              "job": 136863380184,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-21T13:59:15.885Z",
+              "artifactId": 14710420239,
+              "artifactSha256": "sha256:b56b91fb57338cdfbb847062b62716844abea5eb7c219da4498fbde7f910034f",
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": "Personally reviewed full exact article390/1440 and mobile News/desktop Home lead pixels: five named CU entries and amounts legible;152assisted versus154total, special intake-center interpretation and unknown original posting-clock limits visible; source and related links clear, no clipping. Original abstract housing art is illustrative, not a delivered-project photograph or quantitative chart. ZIP digest/revision/clean completion/cache matched;50rendered checks0failures/accessibility/runtime errors; normal404recovery passed;operate skipped."
+            }
+          },
+          "productionCommit": "7445c7ea08f64d58697f2fbee37b65279189b9de",
+          "verifiedAt": "2026-11-21T14:01:09.383Z"
+        }
+      ],
+      "browserReadiness": {
+        "localStatus": "missing-browser-executable",
+        "observedAt": "2026-11-21T11:58:36.861Z",
+        "sourceCommit": "46875d5831257a073587829e5d808d2a120efe19",
+        "cacheChanged": false,
+        "incidentKey": "reliability:daily-publisher:2026-11-04:rendered-acceptance",
+        "fallback": "Use existing exact-head CI for this genuinely qualified ordinary package; no local install/cache mutation or waiver."
+      },
+      "socialDecision": "not-reserved; existing provider/historical holds retained",
+      "updatedAt": "2026-11-21T12:02:42.111Z",
+      "distributionOutcome": {
+        "status": "held-provider-review",
+        "accountableOwner": "daily-publisher",
+        "recordedAt": "2026-11-21T14:02:49.599Z",
+        "decision": "No social reservation or submission",
+        "evidence": {
+          "run": 44911765613,
+          "attempt": 1,
+          "artifact": 14709918538,
+          "sha256": "36eeae41c44a40b88481061241d8d1a6030e148a1e50843fe9ddb25d7149445f",
+          "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+          "status": "verified",
+          "production": {
+            "status": 200,
+            "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+            "runCommit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+            "environment": "production",
+            "reportOnlyDrift": true,
+            "driftFiles": []
+          },
+          "completedAt": "2026-11-21T14:01:54.738Z",
+          "actions": 0,
+          "errors": 0,
+          "reconciliations": 0,
+          "inventory": {
+            "complete": true,
+            "requiresReview": true,
+            "observedAt": "2026-11-21T14:01:54.562Z",
+            "commit": "b6a9e575aa6e6ed3441b50bb6842563db340d21d",
+            "channel": "6a53df0880cc80cdcaa76fb8",
+            "records": 81,
+            "sent": 81,
+            "active": 0,
+            "canonical": 16,
+            "missingCanonical": 65,
+            "reviewFlags": 81,
+            "pagesRead": 1,
+            "latestSent": "2026-11-18T20:30:07.043Z"
+          }
+        },
+        "inventoryPurpose": "Read existing naturally triggered trusted receipt only; this is not a current reservation/capacity guarantee and must never renew proof or the60second freshness bound.",
+        "reason": "Historical/unknown-active holds remain; no reviewed current candidate-specific exclusion/proof clears these new destinations. Complete inventory alone and a fresh article date do not clear duplicate/destination uncertainty. Two old unresolved ledger rows preserved.",
+        "opportunities": [
+          {
+            "url": "https://creditunionainews.com/news/trustage-conditional-data-notification-preparation.html",
+            "classification": "Standard",
+            "articlePublicationWeek": "2026-11-16",
+            "disposition": "held-provider-review",
+            "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+          },
+          {
+            "url": "https://creditunionainews.com/news/oaknorth-us-combination-approval.html",
+            "classification": "Standard",
+            "articlePublicationWeek": "2026-11-16",
+            "disposition": "held-provider-review",
+            "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+          },
+          {
+            "url": "https://creditunionainews.com/news/bill-tpg-corpay-acquisition-agreement.html",
+            "classification": "Standard",
+            "articlePublicationWeek": "2026-11-16",
+            "disposition": "held-provider-review",
+            "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+          },
+          {
+            "url": "https://creditunionainews.com/news/pnc-branch-hospitality-human-service.html",
+            "classification": "Standard",
+            "articlePublicationWeek": "2026-11-16",
+            "disposition": "held-provider-review",
+            "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+          },
+          {
+            "url": "https://creditunionainews.com/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",
+            "classification": "Standard",
+            "articlePublicationWeek": "2026-11-16",
+            "disposition": "held-provider-review",
+            "nextAction": "Existing publisher retains candidate-proof/destination clearance and requires a new complete <=60second inventory at any later permitted reservation; no automatic retry or backlog fill."
+          }
+        ],
+        "reservations": 0,
+        "submissions": 0,
+        "sentClaim": false
+      },
+      "optionalSelection": {
+        "decision": "none-qualified",
+        "coreLiveCount": 5,
+        "maximum": 7,
+        "selected": [],
+        "candidatePoolCount": 12,
+        "selectorObservedAt": "2026-11-21T14:02:48.552Z",
+        "reason": "The same12-candidate bounded pool yielded five actual verified core articles. Remaining seven leads remain source/confidence/distinctness or natural weekly-function-cap holds, with no independently qualified strong distinct optional extra. No six/seven quota slots or additional scan."
+      }
     }
   ],
   "note": "Shared idempotent state for the Daily Edition and Alerts desk. Move the prior current object to history when the date changes."
