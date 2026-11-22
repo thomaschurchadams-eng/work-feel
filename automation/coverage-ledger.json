@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "canada-open-banking-standards-complaints-bodies",
+      "title": "Canada Names Open-Banking Standards and Complaints Bodies",
+      "url": "/news/canada-open-banking-standards-complaints-bodies.html",
+      "publishedAt": "2026-11-22T06:47:24-05:00",
+      "section": "news",
+      "beat": "canada-open-banking-standards-complaints-bodies",
+      "functions": [
+        "member-service"
+      ],
+      "technologies": [
+        "core-api-cloud"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Member Service leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/cornerstone-small-business-workflow-primary-account.html",
+        "/news/microsoft-hr-profile-attribute-sharing.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "FDX with Canada Council and OBSI; designations not nationwide rollout; Canadian not U.S. rules."
+    },
+    {
       "id": "fed-survey-weekend-liquidity-staffing",
       "title": "Fed Survey Finds Weekend Payment Plans Outpace Added Liquidity Staffing",
       "url": "/news/fed-survey-weekend-liquidity-staffing.html",

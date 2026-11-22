@@ -3,6 +3,97 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "editorial-photography",
+      "subject": "member-interaction",
+      "composition": "asymmetric-editorial",
+      "perspective": "eye-level",
+      "palette": "amber-charcoal",
+      "lighting": "natural-window-light",
+      "texture": "clean-photographic",
+      "scene": "Imagined adult consumer discussing a plain paper folder at a service desk, with a separate unbranded reference shelf; staged editorial scene not actual officials",
+      "topicFit": 85,
+      "editorialClarity": 90,
+      "score": 57.8,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 85,
+        "editorialClarity": 90
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "canada-open-banking-standards-complaints-bodies",
+      "articleUrl": "/news/canada-open-banking-standards-complaints-bodies.html",
+      "imagePath": "/assets/canada-open-banking-standards-complaints-bodies.jpg",
+      "publishedAt": "2026-11-22T06:47:24-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "editorial-photography",
+          "subject": "member-interaction",
+          "composition": "asymmetric-editorial",
+          "perspective": "eye-level",
+          "palette": "amber-charcoal",
+          "lighting": "natural-window-light",
+          "texture": "clean-photographic",
+          "scene": "Imagined adult consumer discussing a plain paper folder at a service desk, with a separate unbranded reference shelf; staged editorial scene not actual officials",
+          "topicFit": 85,
+          "editorialClarity": 90,
+          "score": 57.8,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 85,
+            "editorialClarity": 90
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "composition": "layered-depth",
+          "perspective": "overhead",
+          "palette": "plum-gold",
+          "lighting": "graphic-flat-light",
+          "texture": "paper-fiber",
+          "scene": "Two separate folded paper routes, one through a standards template and another to a consumer complaint desk, open banking concept without flags logos or text",
+          "topicFit": 94,
+          "editorialClarity": 93,
+          "score": 46.8,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 94,
+            "editorialClarity": 93
+          },
+          "rejected": true,
+          "reasons": [
+            "same-medium-consecutive"
+          ]
+        },
+        {
+          "medium": "refined-data-abstraction",
+          "subject": "abstract-data-system",
+          "composition": "modular-grid",
+          "perspective": "isometric",
+          "palette": "monochrome-ink",
+          "lighting": "rim-light",
+          "texture": "frosted-glass",
+          "scene": "Two distinct channels in a restrained abstract system, one connecting uniform data blocks and one routing a single unresolved case, no invented metrics",
+          "topicFit": 90,
+          "editorialClarity": 89,
+          "score": 44.8,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 90,
+            "editorialClarity": 89
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "71dd27bd01002f2bda8426dc90a0b4a63eb73cda88bc203f769f53043ec8c5f8"
+    },
+    {
       "medium": "tactile-paper-cut",
       "subject": "physical-metaphor",
       "composition": "split-comparison",
