@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "fed-survey-weekend-liquidity-staffing",
+      "title": "Fed Survey Finds Weekend Payment Plans Outpace Added Liquidity Staffing",
+      "url": "/news/fed-survey-weekend-liquidity-staffing.html",
+      "publishedAt": "2026-11-22T06:26:27-05:00",
+      "section": "news",
+      "beat": "fed-survey-weekend-liquidity-staffing",
+      "functions": [
+        "finance-treasury"
+      ],
+      "technologies": [
+        "industry-development"
+      ],
+      "format": "data-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Finance and Treasury leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/fed-barr-ai-agent-deposit-outflow-risk.html",
+        "/news/fed-check-fees-processing-windows-2027.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "91 banks, not a CU survey; plans and actions differ; published Nov20, fielded September."
+    },
+    {
       "id": "comhar-linn-former-provider-payee-data",
       "title": "Comhar Linn’s Notice Separates Former-Provider Data From Current Banking",
       "url": "/news/comhar-linn-former-provider-payee-data.html",
