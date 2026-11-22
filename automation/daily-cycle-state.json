@@ -1067,11 +1067,11 @@
       },
       {
         "slot": 5,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Canada Names Open-Banking Standards and Complaints Bodies",
         "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T12:06:10.346Z",
+        "nextReviewAt": "2026-11-22T12:08:31.886Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "canada-open-banking-designations",
@@ -1084,8 +1084,16 @@
             "url": "https://creditunionainews.com/news/canada-open-banking-standards-complaints-bodies.html",
             "preparedAt": "2026-11-22T11:46:10.346Z",
             "sourceReview": "FDX with Canada Council and OBSI; designations not nationwide rollout; Canadian not U.S. rules. Actual source body/date reviewed; Standard classification, bounded claims and relevant related links; no release or performance assertion."
+          },
+          "pending": {
+            "prNumber": 416,
+            "head": "3a10958c31fa0f09b08022aa4b20095a6fb5ea53",
+            "run": 45019089093,
+            "job": 137197781741,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
       }
     ],
     "browserReadiness": {
