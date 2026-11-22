@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "textract-insights-page-grounded-document-fields",
+      "title": "Textract Adds Page Evidence to AI Document Fields",
+      "url": "/news/textract-insights-page-grounded-document-fields.html",
+      "publishedAt": "2026-11-22T05:08:40-05:00",
+      "section": "news",
+      "beat": "textract-insights-page-grounded-document-fields",
+      "functions": [
+        "vendor-management"
+      ],
+      "technologies": [
+        "generative-ai"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor Management leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Standard",
+      "socialDecision": "pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/vantage-west-ai-navigator-business-member-research.html",
+        "/news/5point-mahalo-digital-self-service-selection.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "AWS product announcement, not independent accuracy evidence or a reported credit-union deployment."
+    },
+    {
       "id": "fhlbank-indianapolis-five-credit-union-housing-awards",
       "title": "Five Credit Unions Named in $3.6 Million of FHLBank Housing Awards",
       "url": "/news/fhlbank-indianapolis-five-credit-union-housing-awards.html",

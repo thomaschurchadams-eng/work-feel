@@ -3,6 +3,95 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "medium": "architectural-isometric",
+      "subject": "human-machine-handoff",
+      "composition": "layered-depth",
+      "perspective": "isometric",
+      "palette": "emerald-cream",
+      "lighting": "soft-daylight",
+      "texture": "matte-clay",
+      "scene": "Small human figure receiving a page from a plain sorting desk, no device text",
+      "topicFit": 85,
+      "editorialClarity": 85,
+      "score": 63.9,
+      "metrics": {
+        "novelty": 43,
+        "topicFit": 85,
+        "editorialClarity": 85
+      },
+      "rejected": false,
+      "reasons": [],
+      "id": "textract-insights-page-grounded-document-fields",
+      "articleUrl": "/news/textract-insights-page-grounded-document-fields.html",
+      "imagePath": "/assets/textract-insights-page-grounded-document-fields.jpg",
+      "publishedAt": "2026-11-22T05:08:40-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptAlternatives": [
+        {
+          "medium": "architectural-isometric",
+          "subject": "human-machine-handoff",
+          "composition": "layered-depth",
+          "perspective": "isometric",
+          "palette": "emerald-cream",
+          "lighting": "soft-daylight",
+          "texture": "matte-clay",
+          "scene": "Small human figure receiving a page from a plain sorting desk, no device text",
+          "topicFit": 85,
+          "editorialClarity": 85,
+          "score": 63.9,
+          "metrics": {
+            "novelty": 43,
+            "topicFit": 85,
+            "editorialClarity": 85
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "ink-and-linocut",
+          "subject": "documents-and-controls",
+          "composition": "overhead-flat-lay",
+          "perspective": "overhead",
+          "palette": "plum-gold",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "Layered unlettered loan-file pages, one field isolated by a simple rectangular viewing frame; conceptual illustration, not a real document",
+          "topicFit": 98,
+          "editorialClarity": 96,
+          "score": 62.9,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 98,
+            "editorialClarity": 96
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "medium": "cinematic-conceptual",
+          "subject": "physical-metaphor",
+          "composition": "single-object-negative-space",
+          "perspective": "macro",
+          "palette": "graphite-electric-yellow",
+          "lighting": "cinematic-side-light",
+          "texture": "frosted-glass",
+          "scene": "Blank translucent document suspended over aligned physical page markers",
+          "topicFit": 85,
+          "editorialClarity": 84,
+          "score": 56.6,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 85,
+            "editorialClarity": 84
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "sha256": "1b973807cda5f5c22be860b05931be3197f41420b4a66a8fefac1e60268a2b1d"
+    },
+    {
       "medium": "refined-data-abstraction",
       "subject": "abstract-data-system",
       "composition": "modular-grid",
