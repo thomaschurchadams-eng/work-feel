@@ -590,11 +590,11 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Textract Adds Page Evidence to AI Document Fields",
         "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T10:27:38.028Z",
+        "nextReviewAt": "2026-11-22T10:30:35.120Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -608,8 +608,16 @@
             "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html",
             "preparedAt": "2026-11-22T10:07:38.025Z",
             "sourceReview": "Vendor GA announcement, no independent accuracy/CU outcome; explicit vs inferred fields and page evidence."
+          },
+          "pending": {
+            "prNumber": 412,
+            "head": "65f21247f464924fae8622e473a5ad4f38cab33b",
+            "run": 45011090554,
+            "job": 137173370572,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Retain exact ownership; observe real terminal result, inspect exact artifact and own390/1440 visuals before release."
       }
     ],
     "browserReadiness": {
