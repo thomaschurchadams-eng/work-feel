@@ -7,9 +7,14 @@
   },
   "current": {
     "date": "2026-11-22",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html"
+      }
+    ],
     "status": "in-progress",
     "outcomeSlot": 1,
     "evaluatedCandidateCount": 24,
@@ -590,7 +595,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Textract Adds Page Evidence to AI Document Fields",
         "url": "https://creditunionainews.com/news/textract-insights-page-grounded-document-fields.html",
         "accountableOwner": "daily-publisher",
@@ -671,7 +676,9 @@
             "observations": "Personally inspected actual full390/1440 article pixels, mobile News first card, desktop Home lead and mobile forced-artwork404 pixels. Headline/date/function/source link/related links and bounded vendor-versus-CU claims are readable without clipping. Original emerald conceptual art matches the chosen medium; not an actual implementation photograph.404 removes the art box but retains title, deck and link. Actual tests report recovery without broken/placeholder images, no accessibility/runtime violations or overflow, clean exact revision and unchanged isolated browser cache. Independent remote test execution plus own publisher visual/editorial review; no separate human reviewer or native production-browser claim."
           }
         },
-        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout."
+        "nextAction": "Perform fresh expected-head ordinary merge only after exact source/history/visual gates; verify actual production before closeout.",
+        "productionCommit": "e90071cac3db74b5de30e231f5a7803d50bd489b",
+        "verifiedAt": "2026-11-22T10:36:40.395Z"
       }
     ],
     "browserReadiness": {
