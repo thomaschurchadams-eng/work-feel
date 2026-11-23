@@ -441,11 +441,11 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "AI Trust, Intended Use and Member Outcomes Are Different Measures",
         "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-23T10:32:37.830Z",
+        "nextReviewAt": "2026-11-23T10:45:08.149Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -465,9 +465,59 @@
             "run": 45154683836,
             "job": 137624504451,
             "runAttempt": 1
-          }
+          },
+          "terminalValidation": {
+            "head": "7f7806b775365b7dbaf8d0ec676a2161632e8964",
+            "run": 45154683836,
+            "job": 137624504451,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-23T10:35:05.589Z",
+            "prNumber": 421
+          },
+          "terminalAcceptance": {
+            "prNumber": 421,
+            "head": "7f7806b775365b7dbaf8d0ec676a2161632e8964",
+            "run": 45154683836,
+            "job": 137624504451,
+            "runAttempt": 1,
+            "artifactId": 14809491206,
+            "artifactSha256": "02cb1bd4222f516f38d851bfec2e85e888c786530738c680ca0a1e4db0a1b6f4",
+            "visualReviewedAt": "2026-11-23T10:34:43.638Z",
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "browser": "Chromium143.0.7499.4 / Playwright1.57.0, isolated job cache",
+            "observations": "Personally inspected actual full390/1440 article pixels, both Insights lead cards, both Home lead cards and existing mobile News forced-artwork404 pixels. Headline/date/MemberService/deck/original illustrative hero/dated linked source caveats/body/related links/one newsletter invitation read correctly without clipping. PwC attitudes not presented as CU adoption; historicalCFPB not new rule. Existing News404 preserves title/deck/link without placeholder; recovery tests pass. No accessibility/runtime violations or overflow in50checks. Input/revision/completion all exactH and clean; cache unchanged. No claim of native local or production-browser execution."
+          },
+          "reviewHistory": [
+            {
+              "observedAt": "2026-11-23T10:32:46.293Z",
+              "originalNextReviewAt": "2026-11-23T10:32:37.830Z",
+              "decision": "pending-validation",
+              "reviewOverdue": true,
+              "shouldEscalate": true,
+              "canRecordTerminalOutcome": false,
+              "releaseReady": false,
+              "escalationIssueComment": 7098135337
+            },
+            {
+              "terminalJobCompletedAt": "2026-11-23T10:32:51Z",
+              "observedAt": "2026-11-23T10:35:05.589Z",
+              "decision": "awaiting-visual-review",
+              "conclusion": "success",
+              "releaseReady": false
+            }
+          ]
         },
-        "nextAction": "Exact atomic Insights package and CI fallback; actual article/listing/art404 desktop/mobile pixels before release."
+        "nextAction": "Fresh current-main exact source/history release-plan check and expected-head merge; verify actual READY production bytes before F."
       }
     ],
     "browserReadiness": {
@@ -480,7 +530,7 @@
       "status": "held-no-reservation",
       "reason": "Existing provider identity/proof and historical holds remain; no fresh complete inventory or current candidate proof."
     },
-    "updatedAt": "2026-11-23T10:17:37.830Z"
+    "updatedAt": "2026-11-23T10:35:08.149Z"
   },
   "history": [
     {
