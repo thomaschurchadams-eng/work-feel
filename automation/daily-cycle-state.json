@@ -441,11 +441,11 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "AI Trust, Intended Use and Member Outcomes Are Different Measures",
         "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-23T10:33:06.709Z",
+        "nextReviewAt": "2026-11-23T10:32:37.830Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -458,6 +458,13 @@
             "preparedAt": "2026-11-23T10:13:06.709Z",
             "classification": "Library",
             "sourceReview": "PwC November16/October8–15 survey and CFPB June6,2023 historical report read. Different questions/populations cannot establish an adoption gap or CU outcome. Distinct data-literacy thesis; existing contact-center QA and accessibility guides linked, not rewritten."
+          },
+          "pending": {
+            "prNumber": 421,
+            "head": "7f7806b775365b7dbaf8d0ec676a2161632e8964",
+            "run": 45154683836,
+            "job": 137624504451,
+            "runAttempt": 1
           }
         },
         "nextAction": "Exact atomic Insights package and CI fallback; actual article/listing/art404 desktop/mobile pixels before release."
@@ -473,7 +480,7 @@
       "status": "held-no-reservation",
       "reason": "Existing provider identity/proof and historical holds remain; no fresh complete inventory or current candidate proof."
     },
-    "updatedAt": "2026-11-23T10:13:06.709Z"
+    "updatedAt": "2026-11-23T10:17:37.830Z"
   },
   "history": [
     {
