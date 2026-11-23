@@ -49,7 +49,7 @@ test('historical rollover preserves actual completed receipts and unresolved leg
 test('strict chain remains closed after complete restoration and never invokes downstream operations', t => {
   const base = { version: 1, history: [], current: { ...empty('2026-11-06'), publications: [{ type: 'article', url: '/news/a.html' }], fullArticleCount: 1 } };
   const f = repo(t, base); fs.mkdirSync(path.join(f.dir, 'scripts')); fs.mkdirSync(path.join(f.dir, 'lib'));
-  for (const file of ['scripts/validate-daily-cycle-preservation.mjs', 'lib/daily-cycle-guards.cjs']) fs.copyFileSync(path.join(__dirname, '..', file), path.join(f.dir, file));
+  for (const file of ['scripts/validate-daily-cycle-preservation.mjs', 'lib/daily-cycle-guards.cjs', 'automation/publishing-rules.json']) fs.copyFileSync(path.join(__dirname, '..', file), path.join(f.dir, file));
   const source = fs.readFileSync(path.join(__dirname, '../scripts/validate-daily-cycle-chain.mjs'), 'utf8');
   fs.writeFileSync(path.join(f.dir, 'scripts/validate-daily-cycle-chain.mjs'), source.replace('aa43cf2782628289bd927c480799ba15b45af4be', f.baseline));
   f.commit('install test-only anchored gate');
