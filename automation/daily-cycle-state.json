@@ -7,7 +7,7 @@
   },
   "current": {
     "date": "2026-11-23",
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 1,
     "publications": [
       {
@@ -24,6 +24,17 @@
         "productionCommit": "6036e15e75ced2aff0d36e84a945057797b841b0",
         "productionDeployment": "dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP",
         "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7113234169"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/golden-1-california-hope-check-cashing.html",
+        "title": "Golden 1 Offers No-Fee Check Cashing to California HOPE Recipients",
+        "sourceUrl": "https://www.cuinsight.com/press-release/californias-hope-program-opens-doors-to-financial-independence-for-vulnerable-youth-through-golden-1-partnership/",
+        "sourceDate": "2026-11-23",
+        "publishedAt": "2026-11-23T23:23:26.663Z",
+        "productionCommit": "0f5b92118a9afee32fcd5e90f8d5d180868155b0",
+        "productionDeployment": "dpl_8ymYwkARSA7RVfyFBLrMxqHiHny2",
+        "publicationEvidence": "Vercel canonical alias READY 2026-11-23T23:23:26.663Z; six public HTTP 200 responses matched reviewed bytes 2026-11-23T23:23:42.562Z."
       }
     ],
     "status": "held",
@@ -591,7 +602,7 @@
       },
       {
         "slot": 2,
-        "status": "validated",
+        "status": "live-verified",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-23T23:17:37.652Z",
         "candidateTitle": "Golden 1 Offers No-Fee Check Cashing to California HOPE Recipients",
@@ -662,8 +673,63 @@
               "observedAt": "2026-11-23T23:21:05.481Z",
               "decision": "awaiting-visual-review"
             }
-          ]
-        }
+          ],
+          "productionVerification": {
+            "deploymentId": "dpl_8ymYwkARSA7RVfyFBLrMxqHiHny2",
+            "target": "production",
+            "state": "READY",
+            "commit": "0f5b92118a9afee32fcd5e90f8d5d180868155b0",
+            "url": "https://creditunionainews.com/news/golden-1-california-hope-check-cashing.html",
+            "articleVerified": true,
+            "imageVerified": true,
+            "listingVerified": true,
+            "homePlacementVerified": true,
+            "verifiedAt": "2026-11-23T23:23:42.562Z",
+            "publicResponses": [
+              {
+                "path": "news/golden-1-california-hope-check-cashing.html",
+                "sha256": "971f042d9bd66a72f3a668120fba9ca1bdaca56e4c5e48c8fd7e455b36c19bbe",
+                "bytes": 11287,
+                "status": 200
+              },
+              {
+                "path": "assets/golden-1-california-hope-check-cashing.jpg",
+                "sha256": "7cedd1e74759d86b5ba79f174ed015c7d1901bd1b8863bb7e21e27fb589e8917",
+                "bytes": 292194,
+                "status": 200
+              },
+              {
+                "path": "news.html",
+                "sha256": "3416754c3af3c644bbb19b5ee3587feaac590e74b79e42ec4e7c6cc2d9ac3e2b",
+                "bytes": 150628,
+                "status": 200
+              },
+              {
+                "path": "index.html",
+                "sha256": "164406fcbf9c63ca5150ead4d6c76d3c3d03df8843dfac47ad767e39b66c1237",
+                "bytes": 95263,
+                "status": 200
+              },
+              {
+                "path": "assets/app.js",
+                "sha256": "50701fee20a315bb919943ff5f330734709fd0505a4c3994ace9d5df409dd7e5",
+                "bytes": 145303,
+                "status": 200
+              },
+              {
+                "path": "assets/styles.css",
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82",
+                "bytes": 70854,
+                "status": 200
+              }
+            ],
+            "publishedAt": "2026-11-23T23:23:26.663Z",
+            "publicationEvidence": "Vercel canonical alias READY 2026-11-23T23:23:26.663Z; six public HTTP 200 responses matched reviewed bytes 2026-11-23T23:23:42.562Z.",
+            "mode": "Exact production READY and canonical public byte comparison against reviewed article, artwork, section listing, homepage and assets; desktop/mobile pixels independently reviewed from matching CI artifact."
+          }
+        },
+        "productionCommit": "0f5b92118a9afee32fcd5e90f8d5d180868155b0",
+        "verifiedAt": "2026-11-23T23:23:42.562Z"
       },
       {
         "slot": 3,
