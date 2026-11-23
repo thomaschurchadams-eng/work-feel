@@ -3,6 +3,101 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "golden-1-california-hope-check-cashing",
+      "medium": "ink-and-linocut",
+      "subject": "operations-environment",
+      "composition": "layered-depth",
+      "perspective": "through-glass",
+      "palette": "monochrome-ink",
+      "lighting": "graphic-flat-light",
+      "texture": "newsprint-grain",
+      "scene": "community-branch-counter-and-check",
+      "topicFit": 92,
+      "editorialClarity": 91,
+      "score": 60.1,
+      "metrics": {
+        "novelty": 29,
+        "topicFit": 92,
+        "editorialClarity": 91
+      },
+      "rejected": false,
+      "reasons": [],
+      "articleUrl": "/news/golden-1-california-hope-check-cashing.html",
+      "imagePath": "/assets/golden-1-california-hope-check-cashing.jpg",
+      "publishedAt": "2026-11-23",
+      "width": 1200,
+      "height": 630,
+      "conceptScore": 60.1,
+      "conceptAlternatives": [
+        {
+          "id": "cash-window",
+          "medium": "ink-and-linocut",
+          "subject": "operations-environment",
+          "composition": "layered-depth",
+          "perspective": "through-glass",
+          "palette": "monochrome-ink",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "community-branch-counter-and-check",
+          "topicFit": 92,
+          "editorialClarity": 91,
+          "score": 60.1,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 92,
+            "editorialClarity": 91
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "id": "check-disc",
+          "medium": "dimensional-3d",
+          "subject": "financial-object-study",
+          "composition": "single-object-negative-space",
+          "perspective": "isometric",
+          "palette": "emerald-cream",
+          "lighting": "warm-practical",
+          "texture": "matte-clay",
+          "scene": "paper-check-and-cash-tray",
+          "topicFit": 88,
+          "editorialClarity": 88,
+          "score": 51.1,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 88,
+            "editorialClarity": 88
+          },
+          "rejected": false,
+          "reasons": []
+        },
+        {
+          "id": "counter-handoff",
+          "medium": "tactile-paper-cut",
+          "subject": "member-interaction",
+          "composition": "asymmetric-editorial",
+          "perspective": "eye-level",
+          "palette": "terracotta-sky",
+          "lighting": "natural-window-light",
+          "texture": "paper-fiber",
+          "scene": "two-adults-exchange-an-envelope-at-a-teller-window",
+          "topicFit": 98,
+          "editorialClarity": 96,
+          "score": 48.6,
+          "metrics": {
+            "novelty": 0,
+            "topicFit": 98,
+            "editorialClarity": 96
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "prompt": "Create a wide 1.9:1 editorial hero illustration for a credit-union news report about a California branch offering fee-free cashing of eligible trust distribution checks for young adults. A monochrome hand-carved linocut print with newsprint grain: viewed through a teller window, a modest community branch counter with layered depth, a young adult in profile at a respectful distance, a plain rectangular check and an envelope on the wood counter foreground. Clear focal point on envelope and teller window. Graphic flat light, warm off-white unprinted paper and black ink, engaging human-scale readable composition even as small thumbnail. Illustrative only, no logos, no visible numbers, no legible text, no official insignia, no identifying information, no stereotypes or portrayal of trauma.",
+      "rights": "original AI-generated editorial illustration, not a depiction of a real participant",
+      "sha256": "7cedd1e74759d86b5ba79f174ed015c7d1901bd1b8863bb7e21e27fb589e8917"
+    },
+    {
       "id": "credit-union-ai-survey-evidence",
       "medium": "macro-still-life",
       "subject": "documents-and-controls",
