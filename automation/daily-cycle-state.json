@@ -591,7 +591,7 @@
       },
       {
         "slot": 2,
-        "status": "pending-validation",
+        "status": "validated",
         "accountableOwner": "daily-publisher",
         "nextReviewAt": "2026-11-23T23:17:37.652Z",
         "candidateTitle": "Golden 1 Offers No-Fee Check Cashing to California HOPE Recipients",
@@ -618,7 +618,51 @@
             "run": 45284195123,
             "job": 138076115572,
             "runAttempt": 1
-          }
+          },
+          "terminalValidation": {
+            "head": "e0a3accfe64071d0a04177bf8a551e8bc9806f55",
+            "run": 45284195123,
+            "job": 138076115572,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-23T23:21:05.481Z",
+            "prNumber": 429
+          },
+          "terminalAcceptance": {
+            "prNumber": 429,
+            "head": "e0a3accfe64071d0a04177bf8a551e8bc9806f55",
+            "run": 45284195123,
+            "job": 138076115572,
+            "runAttempt": 1,
+            "artifactId": 14871119895,
+            "artifactSha256": "cb7713148b9c227334ea7744bcdcf2927a1a33205846dacbc266f0392250bb3d",
+            "visualReviewedAt": "2026-11-23T23:21:07.482Z",
+            "sourceTests": 472,
+            "sourceFailures": 0,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Independently viewed 390px and 1440px article: complete headline, November 23 date, Member Service label, legible linocut and clear body links. Seed deposit is not the promised check amount; account conditions are qualified. Home and News show matching art and lead story; the forced missing-image card retains headline, description and Read more."
+          },
+          "reviewHistory": [
+            {
+              "comment": 7116790096,
+              "at": "2026-11-23T23:17:39.227Z",
+              "originalReviewAt": "2026-11-23T23:17:37.652Z",
+              "decision": "pending-validation",
+              "reviewOverdue": true,
+              "shouldEscalate": true
+            },
+            {
+              "observedAt": "2026-11-23T23:21:05.481Z",
+              "decision": "awaiting-visual-review"
+            }
+          ]
         }
       },
       {
