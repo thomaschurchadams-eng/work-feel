@@ -7,9 +7,14 @@
   },
   "current": {
     "date": "2026-11-23",
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html"
+      }
+    ],
     "status": "in-progress",
     "outcomeSlot": 1,
     "evaluatedCandidateCount": 14,
@@ -441,7 +446,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "AI Trust, Intended Use and Member Outcomes Are Different Measures",
         "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html",
         "accountableOwner": "daily-publisher",
@@ -515,9 +520,63 @@
               "conclusion": "success",
               "releaseReady": false
             }
-          ]
+          ],
+          "productionVerification": {
+            "deploymentId": "dpl_9X9KKZh4yPJPmn16rZyrtEhm6P8c",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "4969fe37355b183d78bee45aa15bdf55a7a9aca5",
+            "verifiedAt": "2026-11-23T10:37:22.072Z",
+            "mode": "Actual canonical public bytes against exact accepted static source; actual390/1440render/pixels from exact-head CI, not a local production browser claim.",
+            "publicResponses": [
+              {
+                "path": "insight-credit-union-ai-survey-evidence.html",
+                "status": 200,
+                "bytes": 12449,
+                "sha256": "ae0be547a9d5e1372008f86e2f009b644a1f0293db531a1a030f783693542b77",
+                "matchesReviewedSource": true
+              },
+              {
+                "path": "assets/credit-union-ai-survey-evidence.jpg",
+                "status": 200,
+                "bytes": 143690,
+                "sha256": "6e8e5b7c1fdc9602b7cf7a9b12fd704b4dcfff493308cfa1170cbcab827d8a0d",
+                "matchesReviewedSource": true
+              },
+              {
+                "path": "insights.html",
+                "status": 200,
+                "bytes": 34017,
+                "sha256": "0323b6c6653964f1e316263b2b45bb5766a7e31bff282d69ff9fdf5ee43b0b85",
+                "matchesReviewedSource": true
+              },
+              {
+                "path": "index.html",
+                "status": 200,
+                "bytes": 94486,
+                "sha256": "744d5557f90801deb158c375a90bce761c9c86f57a928fd838b1528112939eec",
+                "matchesReviewedSource": true
+              },
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "bytes": 143601,
+                "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6",
+                "matchesReviewedSource": true
+              },
+              {
+                "path": "assets/styles.css",
+                "status": 200,
+                "bytes": 70854,
+                "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82",
+                "matchesReviewedSource": true
+              }
+            ]
+          }
         },
-        "nextAction": "Fresh current-main exact source/history release-plan check and expected-head merge; verify actual READY production bytes before F."
+        "nextAction": "Publication verified; preserve live receipt and assess remaining already-scanned pool without a second scan or fill.",
+        "productionCommit": "4969fe37355b183d78bee45aa15bdf55a7a9aca5",
+        "verifiedAt": "2026-11-23T10:37:22.072Z"
       }
     ],
     "browserReadiness": {
@@ -530,7 +589,7 @@
       "status": "held-no-reservation",
       "reason": "Existing provider identity/proof and historical holds remain; no fresh complete inventory or current candidate proof."
     },
-    "updatedAt": "2026-11-23T10:35:08.149Z"
+    "updatedAt": "2026-11-23T10:37:54.163Z"
   },
   "history": [
     {
