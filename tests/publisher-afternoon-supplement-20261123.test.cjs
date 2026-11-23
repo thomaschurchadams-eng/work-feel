@@ -90,3 +90,33 @@ test('ordinary scorer admission stays unchanged unless the explicit date-bound s
   assert.throws(()=>guards.inspectAfternoonSourceInventory({...base.current,date:'2026-11-24'},[source],t0),/window is not open/);
   assert.throws(()=>guards.inspectAfternoonSourceInventory({...base.current,fullArticleCount:2},[source],t0),/immutable 1-of-10/);
 });
+
+test('actual Git history CLI rejects forged afternoon snapshot/date both in worktree and committed transition',()=>{
+  const os=require('node:os'), path=require('node:path'), {execFileSync,spawnSync}=require('node:child_process');
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'cuai-afternoon-history-cli-'));
+  const statePath='automation/daily-cycle-state.json';
+  const fullPath=path.join(root,statePath);
+  const validator=path.resolve(__dirname,'../scripts/validate-daily-cycle-preservation.mjs');
+  const git=(...args)=>execFileSync('git',args,{cwd:root,stdio:['ignore','pipe','pipe'],encoding:'utf8'}).trim();
+  const cli=(base,head)=>spawnSync(process.execPath,[validator,statePath,base,...(head?[head]:[])],{cwd:root,encoding:'utf8'});
+  const put=o=>fs.writeFileSync(fullPath,JSON.stringify(o));
+  const commit=(label)=>{git('add',statePath);git('-c','user.name=CUAI Fixture','-c','user.email=fixture@example.org','commit','--quiet','-m',label);return git('rev-parse','HEAD');};
+  try {
+    fs.mkdirSync(path.dirname(fullPath),{recursive:true});
+    git('init','--quiet');
+    const base=exact();put(base);const baseline=commit('frozen morning');
+    const p=prepared(base);put(p);const good=cli(baseline);assert.equal(good.status,0,good.stderr);
+    const opened=commit('valid same-day preparation');assert.equal(cli(baseline,opened).status,0);
+    const forged=structuredClone(p);forged.current.afternoonSupplement.morningSnapshot.shortfall.live=8;
+    put(forged);const bad=cli(opened);assert.equal(bad.status,1,bad.stdout);assert.match(bad.stderr,/immutable original evidence/);
+    const forgedRev=commit('invalid change to immutable receipt');
+    const badCommit=cli(opened,forgedRev);assert.equal(badCommit.status,1,badCommit.stdout);assert.match(badCommit.stderr,/immutable original evidence/);
+    const rollover=structuredClone(p);rollover.history.push(structuredClone(p.current));
+    rollover.current={date:'2026-11-24', status:'in-progress',fullArticleCount:0,alertCount:0,publications:[]};
+    put(rollover);assert.equal(cli(opened).status,0);
+    rollover.current.afternoonSupplement=structuredClone(p.current.afternoonSupplement);
+    put(rollover);const shifted=cli(opened);assert.equal(shifted.status,1,shifted.stdout);assert.match(shifted.stderr,/cannot be opened on rollover/);
+    const shiftedRev=commit('invalid November 24 supplement');
+    const shiftedCommit=cli(opened,shiftedRev);assert.equal(shiftedCommit.status,1,shiftedCommit.stdout);assert.match(shiftedCommit.stderr,/cannot be opened on rollover/);
+  } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
