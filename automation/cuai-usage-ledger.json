@@ -6248,6 +6248,55 @@
       ],
       "summary": "One Library Insights analysis for MemberService actually live through PR421 H7f7806b7/run45154683836/job137624504451/attempt1, artifact14809491206 SHA25602cb1bd4222f516f38d851bfec2e85e888c786530738c680ca0a1e4db0a1b6f4. Actual468source/50rendered checks, own full390/1440article and lead-card pixels plus existing News404/recovery, original hero reviewed; merge4969fe37355b183d78bee45aa15bdf55a7a9aca5, Productiondpl_9X9KKZh4yPJPmn16rZyrtEhm6P8c READY and6canonical public resources byte-equal before F06d50652. Late pending observation10:32:46Z escalated7098135337; actual job succeeded10:32:51Z, not failure, visual acceptance followed. Same14candidate pool yielded1qualified,13rejected,0backups; target24shortfall explicit. Nine source/quality holds persisted a0fafbb1, no filler or second scan, no reopening prior date. Filene403 read stopped. Local browser preflight missing executable; no install/cache/version change, exact CI fallback succeeded. Natural C operation45154801330 artifact14806519700 digest84ea19d8c15477224b535dedbb0d6b819e0529921840fafe03d6a8ed8978608e verified complete company inventory10:18:29.974Z:81sent,16canonical/65missing,81reviewflags,0active;0actions/sourceRetries/errors. No current reservation proof or social action, no automated posting recovery claim. Social queue58rows sameblobd1ec6917; all91prior histories preserved. No new owner, routine approval request, provider write, Alert cycle, settings/model/access/dependency/schedule change. Native task token/credit/cost/capacity unknown; ten-article unattended throughput unproven.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-23T14:08:49.677Z",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability check found the November 19 vendor-risk deadline correction still unresolved in production because its earlier PR #388 was stale and nonmergeable.",
+      "status": "recovered",
+      "incidentKey": "cuai-editorial:vendor-risk-comment-deadline:2026-11-19",
+      "workUnits": {
+        "currentMainRevisionsChecked": 2,
+        "officialSourceDocumentsReviewed": 2,
+        "staleCorrectionPullRequestsDiagnosed": 1,
+        "recoveryPullRequestsCreated": 1,
+        "recoveryPullRequestsMerged": 1,
+        "correctionFilesChanged": 3,
+        "sourceTestsPassed": 468,
+        "renderedChecksPassed": 52,
+        "visualRenderWidthsReviewed": 2,
+        "previewDeploymentsVerified": 1,
+        "productionDeploymentsVerified": 1,
+        "liveSurfacesVerified": 2,
+        "verifiedOperationsRunsObserved": 1,
+        "verifiedOperationsActionsObserved": 0,
+        "providerReservationRecordsObserved": 81,
+        "providerActiveRecordsObserved": 0,
+        "socialQueueItemsPreserved": 58,
+        "socialQueueWrites": 0,
+        "articleCyclesStarted": 0,
+        "publicationHistoryEntriesPreserved": 91,
+        "usageLedgerEntriesAppended": 1,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Buffer read-only inventory",
+        "NCUA",
+        "Federal Register"
+      ],
+      "operationalLearning": {
+        "issue": "The prior correction was prepared on an older base and never reached production; PR #388 later became nonmergeable while the superseded November 16 deadline remained live.",
+        "correction": "Reverified the extension against NCUA and the Federal Register, rebuilt the same narrow correction on current main, added a visible article notice plus public and machine-readable correction records, and released PR #422 after exact-head CI, responsive visual review and READY preview validation.",
+        "test": "PR #422 exact head passed 468 source tests and 52 rendered checks; the merge tree matched the accepted tree; Production is READY on the merge commit; both live correction surfaces show December 16, 2026; the natural verified-operations receipt reports authentication verified with zero actions, reconciliations, retries or errors.",
+        "actualResult": "The material deadline error is corrected in production. All 91 publication-history entries and 58 social-queue records were preserved; no article cycle, provider write, social reservation, post, schedule, credential, permission, model or editorial gate changed.",
+        "nextTrigger": "For future time-sensitive regulatory deadlines, treat a stale or nonmergeable correction PR as an unresolved production incident and rebuild the accepted narrow correction on current main rather than leaving the obsolete deadline live."
+      },
+      "summary": "Recovered the unresolved vendor-risk deadline incident. PR #388 had become stale and nonmergeable, leaving the superseded November 16 deadline live. Rebuilt the three-file correction on current main as PR #422, validated exact-head CI and responsive artifacts, merged commit 6d69465e15712e0c3b3f2504124f74ed1d1a3bd0, verified Vercel Production READY and both live correction surfaces, and reconciled the natural verified-operations receipt with zero provider or social actions. No publication history, social state, schedule, credential, permission, model or editorial gate changed.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
