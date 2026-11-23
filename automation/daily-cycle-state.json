@@ -733,24 +733,28 @@
       },
       {
         "slot": 3,
-        "status": "editorial-hold",
-        "candidateTitle": "Unfilled qualified November23 article slot 3",
+        "status": "prepared",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-24T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "nextReviewAt": "2026-11-23T23:47:18.039Z",
+        "candidateTitle": "AKUVO Connects Its Collections Platform to the CU*Answers CBX Core",
+        "url": "https://creditunionainews.com/news/akuvo-cuanswers-cbx-collections-data.html",
         "evidence": {
-          "qualifiedPool": {
-            "candidateCount": 14,
-            "qualified": 1,
-            "rejected": 13,
-            "backupCandidates": 0,
-            "candidateTarget": 24,
-            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
-            "sameMorningInventoryRetained": true
+          "articleSelection": {
+            "candidateId": "akuvo-cuanswers-cbx-collections-data",
+            "eventKey": "akuvo-cuanswers-cbx-collections-data",
+            "sourceUrl": "https://www.cuinsight.com/press-release/akuvo-announces-integration-with-cuanswers-to-expand-collections-technology-access-for-credit-unions/",
+            "sourcePublishedAt": "2026-11-23"
+          },
+          "afternoonSupplement": {
+            "approval": "Sentinel_de3e44c4f080819180e75054f8ee1dfa",
+            "preparedAt": "2026-11-23T23:25:18.039Z"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-23T23:25:18.039Z",
+            "classification": "Standard",
+            "sourceReview": "AKUVO announcement verified against CU*Answers. Vendor describes connectivity; its specific catalog batch service is marked Coming Soon. No institutional performance results established."
           }
-        },
-        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+        }
       },
       {
         "slot": 4,
@@ -1857,6 +1861,18 @@
           "candidateId": "golden-1-california-hope-check-cashing",
           "eventKey": "golden-1-california-hope-check-cashing",
           "sourceUrl": "https://www.cuinsight.com/press-release/californias-hope-program-opens-doors-to-financial-independence-for-vulnerable-youth-through-golden-1-partnership/",
+          "sourcePublishedAt": "2026-11-23"
+        },
+        {
+          "candidateId": "akuvo-cuanswers-cbx-collections-data",
+          "eventKey": "akuvo-cuanswers-cbx-collections-data",
+          "sourceUrl": "https://www.cuinsight.com/press-release/akuvo-announces-integration-with-cuanswers-to-expand-collections-technology-access-for-credit-unions/",
+          "sourcePublishedAt": "2026-11-23"
+        },
+        {
+          "candidateId": "eecu-san-luis-obispo-atm-before-branch",
+          "eventKey": "eecu-san-luis-obispo-atm-before-branch",
+          "sourceUrl": "https://www.cuinsight.com/press-release/eecu-announces-new-san-luis-obispo-branch-expanding-services-on-the-central-coast/",
           "sourcePublishedAt": "2026-11-23"
         }
       ]
