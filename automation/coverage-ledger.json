@@ -3,6 +3,33 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "credit-union-ai-survey-evidence",
+      "title": "AI Trust, Intended Use and Member Outcomes Are Different Measures",
+      "url": "/insight-credit-union-ai-survey-evidence.html",
+      "publishedAt": "2026-11-23T05:14:00-05:00",
+      "section": "insights",
+      "beat": "ai-research-platforms",
+      "functions": [
+        "member-service"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
+      "format": "analysis",
+      "audience": "functional-leader",
+      "primaryAudience": "Member Service leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "Library",
+      "socialDecision": "held-provider-proof-and-inventory",
+      "homepageTreatment": "latest-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-ai-contact-center-qa-controls.html",
+        "/news/velera-ai-payment-trust-gap.html"
+      ],
+      "sourceTier": 1,
+      "sourceLimit": "PwC November16 survey, October8–15 fieldwork, not CU-specific; questions/populations differ. CFPB June6,2023 report is historical, not a new rule."
+    },
+    {
       "id": "kansas-city-fed-services-growth-expectations",
       "title": "Kansas City Fed Finds Slower Services Growth, Stronger Expectations",
       "url": "/news/kansas-city-fed-services-growth-expectations.html",
