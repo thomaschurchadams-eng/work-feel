@@ -591,24 +591,28 @@
       },
       {
         "slot": 2,
-        "status": "editorial-hold",
-        "candidateTitle": "Unfilled qualified November23 article slot 2",
+        "status": "prepared",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-24T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "nextReviewAt": "2026-11-23T23:16:21.960Z",
+        "candidateTitle": "Golden 1 Offers No-Fee Check Cashing to California HOPE Recipients",
+        "url": "https://creditunionainews.com/news/golden-1-california-hope-check-cashing.html",
         "evidence": {
-          "qualifiedPool": {
-            "candidateCount": 14,
-            "qualified": 1,
-            "rejected": 13,
-            "backupCandidates": 0,
-            "candidateTarget": 24,
-            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
-            "sameMorningInventoryRetained": true
+          "articleSelection": {
+            "candidateId": "golden-1-california-hope-check-cashing",
+            "eventKey": "golden-1-california-hope-check-cashing",
+            "sourceUrl": "https://www.cuinsight.com/press-release/californias-hope-program-opens-doors-to-financial-independence-for-vulnerable-youth-through-golden-1-partnership/",
+            "sourcePublishedAt": "2026-11-23"
+          },
+          "afternoonSupplement": {
+            "approval": "Sentinel_de3e44c4f080819180e75054f8ee1dfa",
+            "preparedAt": "2026-11-23T22:54:21.960Z"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-23T22:54:21.960Z",
+            "classification": "Standard",
+            "sourceReview": "Nov 23 issuer announcement; CA HOPE FAQ and Golden 1 participant instructions read. No fee to cash distribution checks; $3,000 initial seed, not a guaranteed payout; no assertion of membership waiver. Original editorial linocut. No social or Alerts."
           }
-        },
-        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+        }
       },
       {
         "slot": 3,
@@ -870,6 +874,875 @@
           }
         ]
       }
+    },
+    "afternoonSupplement": {
+      "owner": "daily-publisher",
+      "approval": "Sentinel_de3e44c4f080819180e75054f8ee1dfa",
+      "closedMorningReceipt": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7098352141",
+      "openedAt": "2026-11-23T22:54:21.960Z",
+      "morningSnapshot": {
+        "date": "2026-11-23",
+        "fullArticleCount": 1,
+        "publications": [
+          {
+            "type": "article",
+            "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html"
+          }
+        ],
+        "status": "held",
+        "outcomeSlot": 2,
+        "evaluatedCandidateCount": 14,
+        "beatsSearched": [
+          "regulation-policy",
+          "security-fraud",
+          "credit-union-industry",
+          "financial-reporting",
+          "payments-core-fintech",
+          "ai-research-platforms",
+          "regional-cu-primary",
+          "workforce-household-data",
+          "international-comparisons"
+        ],
+        "discoveryCoverage": {
+          "date": "2026-11-23",
+          "candidateCount": 14,
+          "beatsSearched": [
+            "regulation-policy",
+            "security-fraud",
+            "credit-union-industry",
+            "financial-reporting",
+            "payments-core-fintech",
+            "ai-research-platforms",
+            "regional-cu-primary",
+            "workforce-household-data",
+            "international-comparisons"
+          ],
+          "directions": [
+            {
+              "id": "regional-cu-leagues-regulators",
+              "status": "searched",
+              "observedAt": "2026-11-23T10:12:32.161Z",
+              "queryOrRead": "Bounded November23 credit-union/regulator current-news queries and source inspection; NCUA newsroom; distinct discoveries separated from already-covered events.",
+              "sourceUrls": [
+                "https://www.longisland.com/news/11-19-26/investigation-leads-to-return-of-80000-to-victim-by-a-local-credit-union.html",
+                "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
+                "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
+                "https://thefinancialwire.com/at-least-four-federally-insured-credit-unions-were-closed-in-2026/",
+                "https://www.midflorida.com/resources/sweepstakes/holiday-swipestakes-rules"
+              ]
+            },
+            {
+              "id": "function-problem",
+              "status": "searched",
+              "observedAt": "2026-11-23T10:12:32.161Z",
+              "queryOrRead": "Fraud/payment-operating-problem queries; actual Federal Reserve Thanksgiving cash and ACH pages read; date/status limitations retained.",
+              "sourceUrls": [
+                "https://www.frbservices.org/about/holiday-schedules/2026-thanksgivingday/",
+                "https://www.frbservices.org/about/holiday-schedules/"
+              ]
+            },
+            {
+              "id": "independent-data-research",
+              "status": "searched",
+              "observedAt": "2026-11-23T10:12:32.161Z",
+              "queryOrRead": "Research release searches and actual PwC survey/methodology read. Filene research returned403; that exact read stopped, no bypass. Other research sources accessible.",
+              "sourceUrls": [
+                "https://www.pwc.com/us/en/library/market-volatility-survey-fall-2026.html",
+                "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+                "https://www.dallasfed.org/research/surveys/bcs/2026/bcs2607"
+              ]
+            },
+            {
+              "id": "international-comparisons",
+              "status": "searched",
+              "observedAt": "2026-11-23T10:12:32.161Z",
+              "queryOrRead": "Bank of England/BIS query variants; distinguish upcoming calendar and old statistical period from new released facts.",
+              "sourceUrls": [
+                "https://www.bankofengland.co.uk/events/upcoming-events",
+                "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+                "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026"
+              ]
+            },
+            {
+              "id": "practical-synthesis",
+              "status": "searched",
+              "observedAt": "2026-11-23T10:12:32.161Z",
+              "queryOrRead": "Actual PwC survey and CFPB June6,2023 report read; inspected existing AI contact-center QA, accessibility and member-communications coverage to avoid reissuing their checklist.",
+              "sourceUrls": [
+                "https://www.pwc.com/us/en/library/market-volatility-survey-fall-2026.html",
+                "https://www.consumerfinance.gov/data-research/research-reports/chatbots-in-consumer-finance/chatbots-in-consumer-finance/"
+              ]
+            }
+          ],
+          "candidateShortfallReason": "Fourteen distinct credible leads from the single bounded scan; additional raw results were unrelated sports, rate aggregates or undated promotional/template material, not genuinely distinct qualified candidates. No padding or second scan.",
+          "practicalSynthesis": {
+            "question": "What can a consumer AI-attitude survey actually establish about a credit union's member-service outcome?",
+            "candidateId": "pwc-survey-evidence"
+          },
+          "sourceAccessGaps": [
+            {
+              "url": "https://www.filene.org/research",
+              "status": 403,
+              "execution": "read denied; stopped without alternate route"
+            }
+          ],
+          "verifiedStructure": true,
+          "completeCoverage": true,
+          "accessBlocked": [],
+          "candidateInventory": [
+            {
+              "candidateId": "pwc-survey-evidence",
+              "eventKey": "pwc-fall-2026-attitudes-outcomes",
+              "sourceUrl": "https://www.pwc.com/us/en/library/market-volatility-survey-fall-2026.html",
+              "sourcePublishedAt": "2026-11-16"
+            },
+            {
+              "candidateId": "holiday-payment-readiness",
+              "eventKey": "thanksgiving-2026-cash-ach-readiness",
+              "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/2026-thanksgivingday/",
+              "sourcePublishedAt": null
+            },
+            {
+              "candidateId": "boe-upcoming",
+              "eventKey": "boe-events-nov23-2026",
+              "sourceUrl": "https://www.bankofengland.co.uk/events/upcoming-events",
+              "sourcePublishedAt": null
+            },
+            {
+              "candidateId": "boe-mpc",
+              "eventKey": "boe-mpc-nov-2026",
+              "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+              "sourcePublishedAt": null
+            },
+            {
+              "candidateId": "fed-sfos",
+              "eventKey": "fed-sfos-weekend-payments-202609",
+              "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+              "sourcePublishedAt": "2026-11-20T10:00:00-05:00"
+            },
+            {
+              "candidateId": "dallas-bcs",
+              "eventKey": "dallas-bcs-2026-07",
+              "sourceUrl": "https://www.dallasfed.org/research/surveys/bcs/2026/bcs2607",
+              "sourcePublishedAt": null
+            },
+            {
+              "candidateId": "long-island-fraud",
+              "eventKey": "long-island-80000-return-nov19",
+              "sourceUrl": "https://www.longisland.com/news/11-19-26/investigation-leads-to-return-of-80000-to-victim-by-a-local-credit-union.html",
+              "sourcePublishedAt": "2026-11-19"
+            },
+            {
+              "candidateId": "wellington-incident",
+              "eventKey": "wellington-credit-union-breach-2026",
+              "sourceUrl": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
+              "sourcePublishedAt": "2026-11-20"
+            },
+            {
+              "candidateId": "ncua-dereg14",
+              "eventKey": "ncua-deregulation-round14-2026",
+              "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
+              "sourcePublishedAt": "2026-11-03"
+            },
+            {
+              "candidateId": "boe-credit",
+              "eventKey": "boe-money-credit-sept2026",
+              "sourceUrl": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+              "sourcePublishedAt": null
+            },
+            {
+              "candidateId": "alive-fraud",
+              "eventKey": "alive-credit-union-fraud-nov2026",
+              "sourceUrl": "https://growyourcreditunion.com/credit-union-news/2026-11-17/",
+              "sourcePublishedAt": null
+            },
+            {
+              "candidateId": "asset-managers",
+              "eventKey": "asset-manager-ai-pwc-fn-nov23",
+              "sourceUrl": "https://www.fnlondon.com/articles/asset-managers-risk-being-dropped-by-banks-wealth-firms-as-they-struggle-to-scale-ai-e788e73e",
+              "sourcePublishedAt": "2026-11-23"
+            },
+            {
+              "candidateId": "cu-closures",
+              "eventKey": "cu-closures-year-summary2026",
+              "sourceUrl": "https://thefinancialwire.com/at-least-four-federally-insured-credit-unions-were-closed-in-2026/",
+              "sourcePublishedAt": "2026-11-22"
+            },
+            {
+              "candidateId": "midflorida",
+              "eventKey": "midflorida-holiday-swipestakes2026",
+              "sourceUrl": "https://www.midflorida.com/resources/sweepstakes/holiday-swipestakes-rules",
+              "sourcePublishedAt": null
+            }
+          ],
+          "candidateTarget": 24,
+          "releaseReady": false
+        },
+        "candidateEvaluations": [
+          {
+            "id": "pwc-survey-evidence",
+            "eventKey": "pwc-fall-2026-attitudes-outcomes",
+            "title": "AI Trust, Intended Use and Member Outcomes Are Different Measures",
+            "sourceUrl": "https://www.pwc.com/us/en/library/market-volatility-survey-fall-2026.html",
+            "sourcePublishedAt": "2026-11-16",
+            "score": 65.7,
+            "status": "reviewed",
+            "reason": "The dated PwC survey supports a distinct data-literacy explainer, not a renewed contact-center QA checklist.",
+            "selectionRejections": [],
+            "primaryFunction": "member-service",
+            "primaryTechnology": "data-decisioning",
+            "confidence": 0.97
+          },
+          {
+            "id": "asset-managers",
+            "eventKey": "asset-manager-ai-pwc-fn-nov23",
+            "title": "Asset Managers Struggle to Scale AI",
+            "sourceUrl": "https://www.fnlondon.com/articles/asset-managers-risk-being-dropped-by-banks-wealth-firms-as-they-struggle-to-scale-ai-e788e73e",
+            "sourcePublishedAt": "2026-11-23",
+            "score": 59.7,
+            "status": "rejected",
+            "reason": "Paywalled lead; underlying primary research and specific CU operating result not verified.",
+            "selectionRejections": [
+              "confidence-below-0.7",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.6
+          },
+          {
+            "id": "cu-closures",
+            "eventKey": "cu-closures-year-summary2026",
+            "title": "Federally Insured Credit Union Closures in 2026",
+            "sourceUrl": "https://thefinancialwire.com/at-least-four-federally-insured-credit-unions-were-closed-in-2026/",
+            "sourcePublishedAt": "2026-11-22",
+            "score": 55.8,
+            "status": "rejected",
+            "reason": "Retrospective secondary summary, not a newly announced closure; underlying cases not reconciled.",
+            "selectionRejections": [
+              "confidence-below-0.7",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.6
+          },
+          {
+            "id": "long-island-fraud",
+            "eventKey": "long-island-80000-return-nov19",
+            "title": "Investigation Returns $80,000 to Victim",
+            "sourceUrl": "https://www.longisland.com/news/11-19-26/investigation-leads-to-return-of-80000-to-victim-by-a-local-credit-union.html",
+            "sourcePublishedAt": "2026-11-19",
+            "score": 54.7,
+            "status": "rejected",
+            "reason": "Outside News window; original police/source evidence not verified for a distinct durable case.",
+            "selectionRejections": [
+              "confidence-below-0.7",
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.6
+          },
+          {
+            "id": "wellington-incident",
+            "eventKey": "wellington-credit-union-breach-2026",
+            "title": "Credit Unions Affected by Supplier Breach",
+            "sourceUrl": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
+            "sourcePublishedAt": "2026-11-20",
+            "score": 52.7,
+            "status": "rejected",
+            "reason": "Same incident as November22 Comhar article, no verified distinct update; now outside News window.",
+            "selectionRejections": [
+              "confidence-below-0.7",
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.6
+          },
+          {
+            "id": "holiday-payment-readiness",
+            "eventKey": "thanksgiving-2026-cash-ach-readiness",
+            "title": "Thanksgiving Cash and ACH Readiness",
+            "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/2026-thanksgivingday/",
+            "sourcePublishedAt": null,
+            "score": 52.3,
+            "status": "rejected",
+            "reason": "Original publication date not established; effective holiday date is not original source publication.",
+            "selectionRejections": [
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "payments-deposits",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "midflorida",
+            "eventKey": "midflorida-holiday-swipestakes2026",
+            "title": "MIDFLORIDA Holiday Swipestakes",
+            "sourceUrl": "https://www.midflorida.com/resources/sweepstakes/holiday-swipestakes-rules",
+            "sourcePublishedAt": null,
+            "score": 51.8,
+            "status": "rejected",
+            "reason": "Promotion dates not original publication; no evidence of useful distinct operating outcome.",
+            "selectionRejections": [
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "fed-sfos",
+            "eventKey": "fed-sfos-weekend-payments-202609",
+            "title": "Fed Survey of Weekend Liquidity Plans",
+            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+            "sourcePublishedAt": "2026-11-20T10:00:00-05:00",
+            "score": 51.7,
+            "status": "rejected",
+            "reason": "Already published November22; no distinct new fact.",
+            "selectionRejections": [
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "boe-upcoming",
+            "eventKey": "boe-events-nov23-2026",
+            "title": "Bank of England Upcoming Events",
+            "sourceUrl": "https://www.bankofengland.co.uk/events/upcoming-events",
+            "sourcePublishedAt": null,
+            "score": 50.6,
+            "status": "rejected",
+            "reason": "Calendar of future events, not evidence that a decision occurred.",
+            "selectionRejections": [
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "boe-mpc",
+            "eventKey": "boe-mpc-nov-2026",
+            "title": "November Bank of England Monetary Policy",
+            "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "sourcePublishedAt": null,
+            "score": 50.6,
+            "status": "rejected",
+            "reason": "Older meeting, original publication not independently established in this scan; no current News.",
+            "selectionRejections": [
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "boe-credit",
+            "eventKey": "boe-money-credit-sept2026",
+            "title": "Bank of England September Money and Credit",
+            "sourceUrl": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+            "sourcePublishedAt": null,
+            "score": 50.3,
+            "status": "rejected",
+            "reason": "September observation is not a publication date; upcoming November30 release is future.",
+            "selectionRejections": [
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "dallas-bcs",
+            "eventKey": "dallas-bcs-2026-07",
+            "title": "Dallas Fed Banking Conditions Survey",
+            "sourceUrl": "https://www.dallasfed.org/research/surveys/bcs/2026/bcs2607",
+            "sourcePublishedAt": null,
+            "score": 50.1,
+            "status": "rejected",
+            "reason": "Fieldwork dates are not original release date; no new current release established.",
+            "selectionRejections": [
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "ncua-dereg14",
+            "eventKey": "ncua-deregulation-round14-2026",
+            "title": "NCUA Fourteenth Deregulation Proposals",
+            "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-fourteenth-round-deregulation-proposals",
+            "sourcePublishedAt": "2026-11-03",
+            "score": 50,
+            "status": "rejected",
+            "reason": "Old proposals; no new disposition or unserved durable thesis established.",
+            "selectionRejections": [
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.8
+          },
+          {
+            "id": "alive-fraud",
+            "eventKey": "alive-credit-union-fraud-nov2026",
+            "title": "Alive Credit Union Fraud Investigation",
+            "sourceUrl": "https://growyourcreditunion.com/credit-union-news/2026-11-17/",
+            "sourcePublishedAt": null,
+            "score": 47.3,
+            "status": "rejected",
+            "reason": "Aggregation and older incident; primary warrant/evidence not established. No acceptance.",
+            "selectionRejections": [
+              "confidence-below-0.7",
+              "invalid-or-stale-source-date",
+              "score-below-minimum"
+            ],
+            "primaryFunction": "board-strategy",
+            "primaryTechnology": "industry-development",
+            "confidence": 0.6
+          }
+        ],
+        "regularPublicationSlots": [
+          {
+            "slot": 1,
+            "status": "live-verified",
+            "candidateTitle": "AI Trust, Intended Use and Member Outcomes Are Different Measures",
+            "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-23T10:45:08.149Z",
+            "outcomeScope": "cycle",
+            "evidence": {
+              "articleSelection": {
+                "candidateId": "pwc-survey-evidence",
+                "eventKey": "pwc-fall-2026-attitudes-outcomes",
+                "sourceUrl": "https://www.pwc.com/us/en/library/market-volatility-survey-fall-2026.html",
+                "sourcePublishedAt": "2026-11-16"
+              },
+              "preparation": {
+                "preparedAt": "2026-11-23T10:13:06.709Z",
+                "classification": "Library",
+                "sourceReview": "PwC November16/October8–15 survey and CFPB June6,2023 historical report read. Different questions/populations cannot establish an adoption gap or CU outcome. Distinct data-literacy thesis; existing contact-center QA and accessibility guides linked, not rewritten."
+              },
+              "pending": {
+                "prNumber": 421,
+                "head": "7f7806b775365b7dbaf8d0ec676a2161632e8964",
+                "run": 45154683836,
+                "job": 137624504451,
+                "runAttempt": 1
+              },
+              "terminalValidation": {
+                "head": "7f7806b775365b7dbaf8d0ec676a2161632e8964",
+                "run": 45154683836,
+                "job": 137624504451,
+                "runAttempt": 1,
+                "conclusion": "success",
+                "runConclusion": "success",
+                "jobConclusion": "success",
+                "observedAt": "2026-11-23T10:35:05.589Z",
+                "prNumber": 421
+              },
+              "terminalAcceptance": {
+                "prNumber": 421,
+                "head": "7f7806b775365b7dbaf8d0ec676a2161632e8964",
+                "run": 45154683836,
+                "job": 137624504451,
+                "runAttempt": 1,
+                "artifactId": 14809491206,
+                "artifactSha256": "02cb1bd4222f516f38d851bfec2e85e888c786530738c680ca0a1e4db0a1b6f4",
+                "visualReviewedAt": "2026-11-23T10:34:43.638Z",
+                "sourceTests": 468,
+                "sourceFailures": 0,
+                "renderedChecks": 50,
+                "failedChecks": 0,
+                "viewports": [
+                  390,
+                  1440
+                ],
+                "browser": "Chromium143.0.7499.4 / Playwright1.57.0, isolated job cache",
+                "observations": "Personally inspected actual full390/1440 article pixels, both Insights lead cards, both Home lead cards and existing mobile News forced-artwork404 pixels. Headline/date/MemberService/deck/original illustrative hero/dated linked source caveats/body/related links/one newsletter invitation read correctly without clipping. PwC attitudes not presented as CU adoption; historicalCFPB not new rule. Existing News404 preserves title/deck/link without placeholder; recovery tests pass. No accessibility/runtime violations or overflow in50checks. Input/revision/completion all exactH and clean; cache unchanged. No claim of native local or production-browser execution."
+              },
+              "reviewHistory": [
+                {
+                  "observedAt": "2026-11-23T10:32:46.293Z",
+                  "originalNextReviewAt": "2026-11-23T10:32:37.830Z",
+                  "decision": "pending-validation",
+                  "reviewOverdue": true,
+                  "shouldEscalate": true,
+                  "canRecordTerminalOutcome": false,
+                  "releaseReady": false,
+                  "escalationIssueComment": 7098135337
+                },
+                {
+                  "terminalJobCompletedAt": "2026-11-23T10:32:51Z",
+                  "observedAt": "2026-11-23T10:35:05.589Z",
+                  "decision": "awaiting-visual-review",
+                  "conclusion": "success",
+                  "releaseReady": false
+                }
+              ],
+              "productionVerification": {
+                "deploymentId": "dpl_9X9KKZh4yPJPmn16rZyrtEhm6P8c",
+                "target": "production",
+                "state": "READY",
+                "contentCommit": "4969fe37355b183d78bee45aa15bdf55a7a9aca5",
+                "verifiedAt": "2026-11-23T10:37:22.072Z",
+                "mode": "Actual canonical public bytes against exact accepted static source; actual390/1440render/pixels from exact-head CI, not a local production browser claim.",
+                "publicResponses": [
+                  {
+                    "path": "insight-credit-union-ai-survey-evidence.html",
+                    "status": 200,
+                    "bytes": 12449,
+                    "sha256": "ae0be547a9d5e1372008f86e2f009b644a1f0293db531a1a030f783693542b77",
+                    "matchesReviewedSource": true
+                  },
+                  {
+                    "path": "assets/credit-union-ai-survey-evidence.jpg",
+                    "status": 200,
+                    "bytes": 143690,
+                    "sha256": "6e8e5b7c1fdc9602b7cf7a9b12fd704b4dcfff493308cfa1170cbcab827d8a0d",
+                    "matchesReviewedSource": true
+                  },
+                  {
+                    "path": "insights.html",
+                    "status": 200,
+                    "bytes": 34017,
+                    "sha256": "0323b6c6653964f1e316263b2b45bb5766a7e31bff282d69ff9fdf5ee43b0b85",
+                    "matchesReviewedSource": true
+                  },
+                  {
+                    "path": "index.html",
+                    "status": 200,
+                    "bytes": 94486,
+                    "sha256": "744d5557f90801deb158c375a90bce761c9c86f57a928fd838b1528112939eec",
+                    "matchesReviewedSource": true
+                  },
+                  {
+                    "path": "assets/app.js",
+                    "status": 200,
+                    "bytes": 143601,
+                    "sha256": "fa42d3c4892c67a8c3a0e8e16ca422f3584f7cbacb197237aac901cb465b18a6",
+                    "matchesReviewedSource": true
+                  },
+                  {
+                    "path": "assets/styles.css",
+                    "status": 200,
+                    "bytes": 70854,
+                    "sha256": "cdfd0072dc7f15bbf4f8aeb98642ca34a53af56d19b4cec01f3ad3253812ed82",
+                    "matchesReviewedSource": true
+                  }
+                ]
+              }
+            },
+            "nextAction": "Publication verified; preserve live receipt and assess remaining already-scanned pool without a second scan or fill.",
+            "productionCommit": "4969fe37355b183d78bee45aa15bdf55a7a9aca5",
+            "verifiedAt": "2026-11-23T10:37:22.072Z"
+          },
+          {
+            "slot": 2,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 2",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 3,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 3",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 4,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 4",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 5,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 5",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 6,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 6",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 7,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 7",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 8,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 8",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 9,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 9",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          },
+          {
+            "slot": 10,
+            "status": "editorial-hold",
+            "candidateTitle": "Unfilled qualified November23 article slot 10",
+            "accountableOwner": "daily-publisher",
+            "nextReviewAt": "2026-11-24T10:00:00Z",
+            "outcomeScope": "cycle",
+            "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+            "evidence": {
+              "qualifiedPool": {
+                "candidateCount": 14,
+                "qualified": 1,
+                "rejected": 13,
+                "backupCandidates": 0,
+                "candidateTarget": 24,
+                "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+                "sameMorningInventoryRetained": true
+              }
+            },
+            "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+          }
+        ],
+        "browserReadiness": {
+          "observedAt": "2026-11-23T10:03:01.464Z",
+          "status": "local-blocked-ci-fallback-available",
+          "revision": "8395ff913d09e0a38fa4e625f5d7f216c90cbb9e",
+          "reason": "Pinned local browser unavailable; no install/cache change or unchanged retry. Exact-head PR design-checks remains permitted."
+        },
+        "socialDecision": {
+          "status": "held-no-reservation",
+          "reason": "Current-week new Library article is not automatically social-cleared. Complete natural inventory10:18:29.974Z showed81historical review flags/65missing canonical destinations/0active; snapshot is no longer60-second admission proof. No current candidate exclusion proof or hold clearance; no scheduling attempt.",
+          "evidence": {
+            "artifact": 14806519700,
+            "artifactSha256": "84ea19d8c15477224b535dedbb0d6b819e0529921840fafe03d6a8ed8978608e",
+            "run": 45154801330,
+            "attempt": 1,
+            "commit": "109625a0340d1617bdb7c6b2dc10a3cee026f6a2",
+            "channel": "6a53df0880cc80cdcaa76fb8",
+            "observedAt": "2026-11-23T10:18:29.974Z",
+            "complete": true,
+            "recordCount": 81,
+            "sent": 81,
+            "active": 0,
+            "canonical": 16,
+            "missingCanonical": 65,
+            "reviewFlags": 81,
+            "requiresReview": true,
+            "latestSentAt": "2026-11-18T20:30:07.043Z",
+            "queuePaused": false
+          }
+        },
+        "updatedAt": "2026-11-23T20:34:47.416Z",
+        "shortfall": {
+          "target": 10,
+          "live": 1,
+          "unfilled": 9,
+          "classification": "editorial-source-quality",
+          "stage": "find-and-qualify",
+          "reason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+          "recordedAt": "2026-11-23T10:38:47.263Z"
+        },
+        "alertCycle": {
+          "owner": "cuai-operating-system",
+          "status": "live-verified",
+          "sourceReviewAt": "2026-11-23T20:13:56.608Z",
+          "dedupeKey": "cuai-alert:fincen-iranian-shadow-banking-trends:2026-11-23",
+          "officialSourceSurfacesReviewed": 6,
+          "candidatesEvaluated": 2,
+          "alertsPublished": 1,
+          "note": "One distinct primary-source FinCEN Alert was released after the completed article handoff. The exact source head passed 468 source/regression tests and 50 rendered checks; the production deployment for merge commit 6036e15e75ced2aff0d36e84a945057797b841b0 became READY at the recorded publication instant. BSA data remains an investigative lead, not proof.",
+          "publishedAt": "2026-11-23T20:32:01.561Z",
+          "productionCommit": "6036e15e75ced2aff0d36e84a945057797b841b0",
+          "productionDeployment": "dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP",
+          "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7113234169",
+          "liveUrl": "https://creditunionainews.com/alerts/#fincen-iranian-shadow-banking-trends-november-2026",
+          "liveVerifiedAt": "2026-11-23T20:34:47.416Z",
+          "homepageDecision": "published-one-qualified-material-alert; homepage latest-alert freshness restored inside the 72-hour window",
+          "validation": {
+            "sourceHead": "f6d9b8ffb4227cf012cfb61c369dbe91cc47774a",
+            "pullRequest": 426,
+            "workflowRun": 45257250636,
+            "workflowJob": 137982202892,
+            "conclusion": "success",
+            "artifactId": 14859004844,
+            "artifactSha256": "21d63866916fd705f2a1f3dfa4435d24ef0aa559b9bc25a306c2808fa92822fa",
+            "sourceTests": 468,
+            "sourceFailures": 0,
+            "renderedChecks": 50,
+            "renderedFailures": 0
+          },
+          "productionVerification": {
+            "deploymentId": "dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP",
+            "target": "production",
+            "state": "READY",
+            "contentCommit": "6036e15e75ced2aff0d36e84a945057797b841b0",
+            "readyAt": "2026-11-23T20:32:01.561Z",
+            "verifiedAt": "2026-11-23T20:34:47.416Z",
+            "publicResponses": [
+              {
+                "path": "assets/app.js",
+                "status": 200,
+                "contains": "FinCEN Maps $14.7 Billion in Potential Iranian Shadow-Banking Activity"
+              },
+              {
+                "path": "index.html",
+                "status": 200
+              },
+              {
+                "path": "alerts/index.html",
+                "status": 200
+              }
+            ]
+          }
+        }
+      },
+      "candidateInventory": [
+        {
+          "candidateId": "golden-1-california-hope-check-cashing",
+          "eventKey": "golden-1-california-hope-check-cashing",
+          "sourceUrl": "https://www.cuinsight.com/press-release/californias-hope-program-opens-doors-to-financial-independence-for-vulnerable-youth-through-golden-1-partnership/",
+          "sourcePublishedAt": "2026-11-23"
+        }
+      ]
     }
   },
   "history": [
