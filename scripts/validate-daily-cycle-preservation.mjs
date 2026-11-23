@@ -55,11 +55,10 @@ try {
 }
 
 const base = readJson(`base state (${baseRef})`, baseBytes);
-try { guards.validateStateHistory(base, candidate); } catch (error) { fail(error.message); }
 
 // Exact already-accepted catch-up and ordinary-cycle transitions predate the
 // new outcome format. Each additional edge requires receipt-backed review.
-// Retain every original preservation check above and the original chain anchor.
+// Retain every original history-preservation check and the original chain anchor.
 // This is NOT an exemption for new proposals, dates, descendants or byte copies:
 // only these immutable previous-state/candidate revision pairs, read by SHA, qualify.
 const acceptedLegacyOutcomeTransitions = new Map([
@@ -94,12 +93,13 @@ if (candidateRef && acceptedLegacyOutcomeTransitions.has(candidateRef)) {
   acceptedLegacyOutcome = exactBase === acceptedLegacyOutcomeTransitions.get(candidateRef);
 }
 try {
-  if (!acceptedLegacyOutcome) {
+  if (acceptedLegacyOutcome) {
+    guards.validateStateHistory(base, candidate);
+  } else {
     const rules = readJson('publisher cadence rules', fs.readFileSync(new URL('../automation/publishing-rules.json', import.meta.url)));
-    guards.validatePublisherCheckpointAdmission(base.current, candidate.current, rules);
-    guards.validatePublisherCadence(base.current, candidate.current, rules);
-    guards.validateMorningArticleWeek(candidate, rules);
-    guards.validateAlertCadence(base.current, candidate.current, rules);
+    // The checkout, CI history replay and connector planner enforce the same
+    // complete transition, including date-bound supplemental evidence.
+    guards.validateStatePreservation(base, candidate, rules);
   }
 }
 catch (error) { fail(error.message); }

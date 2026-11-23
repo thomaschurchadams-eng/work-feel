@@ -17,7 +17,7 @@ if (inputPath === '--plan') {
 }
 
 if (!inputPath) {
-  console.error('Usage: node scripts/score-editorial-candidates.mjs candidates.json discovery-receipt.json | --plan YYYY-MM-DD');
+  console.error('Usage: node scripts/score-editorial-candidates.mjs candidates.json discovery-receipt.json [--nov23-afternoon-supplement] | --plan YYYY-MM-DD');
   process.exit(1);
 }
 
@@ -40,8 +40,11 @@ const alreadyPublishedToday = week.filter(a => easternDate(a.publishedAt) === to
 const daysAgo = (date) => (now - new Date(date)) / 86400000;
 const recent = ledger.articles.filter((a) => daysAgo(a.publishedAt) <= rules.selection.lookbackDays);
 const state = morning ? read('automation/daily-cycle-state.json') : null;
+const mode = process.argv[4];
+if (mode !== undefined && mode !== '--nov23-afternoon-supplement') throw Error('unrecognized-scoring-mode');
+const afternoon = mode ? cadence.inspectAfternoonSourceInventory(state?.current, discoveryCoverage.candidateInventory, now.toISOString()) : null;
 const lockedInventory = state?.current?.date === today ? state.current.discoveryCoverage?.candidateInventory : null;
-if (lockedInventory) {
+if (lockedInventory && !afternoon) {
   const keys = rows=>rows.map(row=>JSON.stringify([cadence.candidateInventoryKey(row),row.sourceUrl,row.sourcePublishedAt])).sort();
   if (JSON.stringify(keys(lockedInventory)) !== JSON.stringify(keys(discoveryCoverage.candidateInventory)))
     throw Error('same-morning-candidate-inventory-must-be-reused');
@@ -158,7 +161,7 @@ if (morning) {
     ...c, selectionRole:'backup', primarySourceReadRequired:true
   }));
   process.stdout.write(JSON.stringify({generatedAt:now.toISOString(),weekStart,weeklyMaximum,alreadyPublishedThisWeek:week.length,alreadyPublishedToday,
-    coreTarget,dailyMaximum,discoveryCoverage,releaseReady:false,selected,backupCandidates,
+    coreTarget,dailyMaximum,discoveryCoverage,releaseReady:false,...(afternoon ? {afternoon} : {}),selected,backupCandidates,
     backupTarget:morning.backupTarget,backupShortfall:Math.max(0,morning.backupTarget-backupCandidates.length),
     rejectedDistinctness,rejected:scored.filter(c=>c.rejected),ranked:scored},null,2)+'\n');
 } else {
