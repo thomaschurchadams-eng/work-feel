@@ -19,7 +19,11 @@
         "title": "FinCEN Maps $14.7 Billion in Potential Iranian Shadow-Banking Activity",
         "url": "https://creditunionainews.com/alerts/#fincen-iranian-shadow-banking-trends-november-2026",
         "sourceUrl": "https://www.fincen.gov/news/news-releases/treasury-identifies-nearly-15-billion-potential-iranian-shadow-banking/",
-        "sourceDate": "Nov 23, 2026"
+        "sourceDate": "Nov 23, 2026",
+        "publishedAt": "2026-11-23T20:32:01.561Z",
+        "productionCommit": "6036e15e75ced2aff0d36e84a945057797b841b0",
+        "productionDeployment": "dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP",
+        "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7113234169"
       }
     ],
     "status": "held",
@@ -804,7 +808,7 @@
         "queuePaused": false
       }
     },
-    "updatedAt": "2026-11-23T20:13:56.608Z",
+    "updatedAt": "2026-11-23T20:34:47.416Z",
     "shortfall": {
       "target": 10,
       "live": 1,
@@ -816,13 +820,56 @@
     },
     "alertCycle": {
       "owner": "cuai-operating-system",
-      "status": "released-awaiting-exact-deployment-receipt",
+      "status": "live-verified",
       "sourceReviewAt": "2026-11-23T20:13:56.608Z",
       "dedupeKey": "cuai-alert:fincen-iranian-shadow-banking-trends:2026-11-23",
       "officialSourceSurfacesReviewed": 6,
       "candidatesEvaluated": 2,
       "alertsPublished": 1,
-      "note": "Selected FinCEN's November 23 Financial Trend Analysis because it supplies a distinct current BSA/AML monitoring and escalation signal: approximately $14.7 billion of potentially linked activity, recurring cross-border and front-company characteristics, and an explicit warning that BSA reporting is an investigative lead rather than proof of illicit activity. Held a same-day vendor promotion as non-primary performance evidence with no urgent credit-union control change. Publication time remains intentionally unfilled until the first exact production deployment is verified."
+      "note": "One distinct primary-source FinCEN Alert was released after the completed article handoff. The exact source head passed 468 source/regression tests and 50 rendered checks; the production deployment for merge commit 6036e15e75ced2aff0d36e84a945057797b841b0 became READY at the recorded publication instant. BSA data remains an investigative lead, not proof.",
+      "publishedAt": "2026-11-23T20:32:01.561Z",
+      "productionCommit": "6036e15e75ced2aff0d36e84a945057797b841b0",
+      "productionDeployment": "dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7113234169",
+      "liveUrl": "https://creditunionainews.com/alerts/#fincen-iranian-shadow-banking-trends-november-2026",
+      "liveVerifiedAt": "2026-11-23T20:34:47.416Z",
+      "homepageDecision": "published-one-qualified-material-alert; homepage latest-alert freshness restored inside the 72-hour window",
+      "validation": {
+        "sourceHead": "f6d9b8ffb4227cf012cfb61c369dbe91cc47774a",
+        "pullRequest": 426,
+        "workflowRun": 45257250636,
+        "workflowJob": 137982202892,
+        "conclusion": "success",
+        "artifactId": 14859004844,
+        "artifactSha256": "21d63866916fd705f2a1f3dfa4435d24ef0aa559b9bc25a306c2808fa92822fa",
+        "sourceTests": 468,
+        "sourceFailures": 0,
+        "renderedChecks": 50,
+        "renderedFailures": 0
+      },
+      "productionVerification": {
+        "deploymentId": "dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP",
+        "target": "production",
+        "state": "READY",
+        "contentCommit": "6036e15e75ced2aff0d36e84a945057797b841b0",
+        "readyAt": "2026-11-23T20:32:01.561Z",
+        "verifiedAt": "2026-11-23T20:34:47.416Z",
+        "publicResponses": [
+          {
+            "path": "assets/app.js",
+            "status": 200,
+            "contains": "FinCEN Maps $14.7 Billion in Potential Iranian Shadow-Banking Activity"
+          },
+          {
+            "path": "index.html",
+            "status": 200
+          },
+          {
+            "path": "alerts/index.html",
+            "status": 200
+          }
+        ]
+      }
     }
   },
   "history": [

@@ -112,6 +112,9 @@
       sourceUrl:
         'https://www.fincen.gov/news/news-releases/treasury-identifies-nearly-15-billion-potential-iranian-shadow-banking/',
       date: 'Nov 23, 2026',
+      publishedAt: '2026-11-23T20:32:01.561Z',
+      publicationDeployment: 'dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP',
+      publicationEvidence: 'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7113234169',
       slug: 'fincen-iranian-shadow-banking-trends-november-2026'
     },
     {
