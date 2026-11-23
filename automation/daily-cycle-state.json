@@ -8,11 +8,18 @@
   "current": {
     "date": "2026-11-23",
     "fullArticleCount": 1,
-    "alertCount": 0,
+    "alertCount": 1,
     "publications": [
       {
         "type": "article",
         "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html"
+      },
+      {
+        "type": "alert",
+        "title": "FinCEN Maps $14.7 Billion in Potential Iranian Shadow-Banking Activity",
+        "url": "https://creditunionainews.com/alerts/#fincen-iranian-shadow-banking-trends-november-2026",
+        "sourceUrl": "https://www.fincen.gov/news/news-releases/treasury-identifies-nearly-15-billion-potential-iranian-shadow-banking/",
+        "sourceDate": "Nov 23, 2026"
       }
     ],
     "status": "held",
@@ -797,7 +804,7 @@
         "queuePaused": false
       }
     },
-    "updatedAt": "2026-11-23T10:38:47.263Z",
+    "updatedAt": "2026-11-23T20:13:56.608Z",
     "shortfall": {
       "target": 10,
       "live": 1,
@@ -806,6 +813,16 @@
       "stage": "find-and-qualify",
       "reason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
       "recordedAt": "2026-11-23T10:38:47.263Z"
+    },
+    "alertCycle": {
+      "owner": "cuai-operating-system",
+      "status": "released-awaiting-exact-deployment-receipt",
+      "sourceReviewAt": "2026-11-23T20:13:56.608Z",
+      "dedupeKey": "cuai-alert:fincen-iranian-shadow-banking-trends:2026-11-23",
+      "officialSourceSurfacesReviewed": 6,
+      "candidatesEvaluated": 2,
+      "alertsPublished": 1,
+      "note": "Selected FinCEN's November 23 Financial Trend Analysis because it supplies a distinct current BSA/AML monitoring and escalation signal: approximately $14.7 billion of potentially linked activity, recurring cross-border and front-company characteristics, and an explicit warning that BSA reporting is an investigative lead rather than proof of illicit activity. Held a same-day vendor promotion as non-primary performance evidence with no urgent credit-union control change. Publication time remains intentionally unfilled until the first exact production deployment is verified."
     }
   },
   "history": [
