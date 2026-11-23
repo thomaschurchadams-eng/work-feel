@@ -77,3 +77,16 @@ test('ordinary path, duplicate/parallel queue, expired review, forged approval a
   p=prepared(base);p.current.afternoonSupplement.candidateInventory.push({...source,candidateId:'alias',eventKey:'Golden 1 California HOPE check cashing'});
   assert.throws(()=>guards.validateStatePreservation(base,p,rules),/distinct append-only/);
 });
+
+test('ordinary scorer admission stays unchanged unless the explicit date-bound supplement inventory passes',()=>{
+  const base=exact();
+  const observed=guards.inspectAfternoonSourceInventory(base.current,[source],t0);
+  assert.deepEqual(observed,{date:'2026-11-23',owner:'daily-publisher',approval,releaseReady:false});
+  assert.equal(base.current.afternoonSupplement,undefined);
+  const p=prepared(base);
+  assert.equal(guards.inspectAfternoonSourceInventory(p.current,[source],t1).approval,approval);
+  assert.throws(()=>guards.inspectAfternoonSourceInventory(p.current,[{...source,sourcePublishedAt:'2026-11-22'}],t1),/append-only source inventory/);
+  assert.throws(()=>guards.inspectAfternoonSourceInventory(base.current,[source],'2026-11-24T05:00:00Z'),/window is not open/);
+  assert.throws(()=>guards.inspectAfternoonSourceInventory({...base.current,date:'2026-11-24'},[source],t0),/window is not open/);
+  assert.throws(()=>guards.inspectAfternoonSourceInventory({...base.current,fullArticleCount:2},[source],t0),/immutable 1-of-10/);
+});
