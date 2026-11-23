@@ -15,8 +15,8 @@
         "url": "https://creditunionainews.com/insight-credit-union-ai-survey-evidence.html"
       }
     ],
-    "status": "in-progress",
-    "outcomeSlot": 1,
+    "status": "held",
+    "outcomeSlot": 2,
     "evaluatedCandidateCount": 14,
     "beatsSearched": [
       "regulation-policy",
@@ -577,6 +577,195 @@
         "nextAction": "Publication verified; preserve live receipt and assess remaining already-scanned pool without a second scan or fill.",
         "productionCommit": "4969fe37355b183d78bee45aa15bdf55a7a9aca5",
         "verifiedAt": "2026-11-23T10:37:22.072Z"
+      },
+      {
+        "slot": 2,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 2",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 3,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 3",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 4,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 4",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 5,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 5",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 6,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 6",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 7,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 7",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 8,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 8",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 9,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 9",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
+      },
+      {
+        "slot": 10,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November23 article slot 10",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 14,
+            "qualified": 1,
+            "rejected": 13,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sourceAccessGap": "Filene research403 read stopped without bypass; other research sources available.",
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "Next existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of this November23 pool."
       }
     ],
     "browserReadiness": {
@@ -587,9 +776,37 @@
     },
     "socialDecision": {
       "status": "held-no-reservation",
-      "reason": "Existing provider identity/proof and historical holds remain; no fresh complete inventory or current candidate proof."
+      "reason": "Current-week new Library article is not automatically social-cleared. Complete natural inventory10:18:29.974Z showed81historical review flags/65missing canonical destinations/0active; snapshot is no longer60-second admission proof. No current candidate exclusion proof or hold clearance; no scheduling attempt.",
+      "evidence": {
+        "artifact": 14806519700,
+        "artifactSha256": "84ea19d8c15477224b535dedbb0d6b819e0529921840fafe03d6a8ed8978608e",
+        "run": 45154801330,
+        "attempt": 1,
+        "commit": "109625a0340d1617bdb7c6b2dc10a3cee026f6a2",
+        "channel": "6a53df0880cc80cdcaa76fb8",
+        "observedAt": "2026-11-23T10:18:29.974Z",
+        "complete": true,
+        "recordCount": 81,
+        "sent": 81,
+        "active": 0,
+        "canonical": 16,
+        "missingCanonical": 65,
+        "reviewFlags": 81,
+        "requiresReview": true,
+        "latestSentAt": "2026-11-18T20:30:07.043Z",
+        "queuePaused": false
+      }
     },
-    "updatedAt": "2026-11-23T10:37:54.163Z"
+    "updatedAt": "2026-11-23T10:38:47.263Z",
+    "shortfall": {
+      "target": 10,
+      "live": 1,
+      "unfilled": 9,
+      "classification": "editorial-source-quality",
+      "stage": "find-and-qualify",
+      "reason": "One source-qualified Library analysis from the single14-candidate pool;13 rejected and no qualified backup. Other leads are already-covered events, old News, future events, undated sources, secondary summaries/paywalled unverified primary evidence or promotions without a distinct CU operating implication. The Thanksgiving synthesis has useful primary pages but no established original publication date; do not substitute its effective date. Existing contact-center QA/accessibility guides are already served. No second scan, stale repackaging or filler to reach10. Local missing browser is NOT the cause of these editorial holds; permitted exact-head CI fallback actually succeeded for slot1.",
+      "recordedAt": "2026-11-23T10:38:47.263Z"
+    }
   },
   "history": [
     {
