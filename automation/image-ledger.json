@@ -3,6 +3,105 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "akuvo-cuanswers-cbx-collections-data",
+      "medium": "tactile-paper-cut",
+      "subject": "abstract-data-system",
+      "composition": "diagonal-motion",
+      "perspective": "cutaway",
+      "palette": "cobalt-coral",
+      "lighting": "soft-daylight",
+      "texture": "paper-fiber",
+      "scene": "pair-of-joined-account-file-trays",
+      "topicFit": 87,
+      "editorialClarity": 86,
+      "score": 50.4,
+      "metrics": {
+        "novelty": 14,
+        "topicFit": 87,
+        "editorialClarity": 86
+      },
+      "rejected": false,
+      "reasons": [],
+      "articleUrl": "/news/akuvo-cuanswers-cbx-collections-data.html",
+      "imagePath": "/assets/akuvo-cuanswers-cbx-collections-data.jpg",
+      "publishedAt": "2026-11-23 GMT-0500",
+      "width": 1200,
+      "height": 630,
+      "conceptScore": 50.4,
+      "conceptAlternatives": [
+        {
+          "id": "desk",
+          "medium": "macro-still-life",
+          "subject": "frontline-workflow",
+          "composition": "overhead-flat-lay",
+          "perspective": "overhead",
+          "palette": "plum-gold",
+          "lighting": "high-contrast-studio",
+          "texture": "fabric-and-wood",
+          "scene": "collections-desk-two-unsynced-piles",
+          "topicFit": 89,
+          "editorialClarity": 82,
+          "score": 57.4,
+          "metrics": {
+            "novelty": 29,
+            "topicFit": 89,
+            "editorialClarity": 82
+          },
+          "rejected": true,
+          "reasons": [
+            "same-medium-consecutive"
+          ]
+        },
+        {
+          "id": "lag",
+          "medium": "dimensional-3d",
+          "subject": "physical-metaphor",
+          "composition": "split-comparison",
+          "perspective": "isometric",
+          "palette": "burgundy-sand",
+          "lighting": "cinematic-side-light",
+          "texture": "matte-clay",
+          "scene": "payment-token-crossing-between-ledgers",
+          "topicFit": 96,
+          "editorialClarity": 93,
+          "score": 54.5,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 96,
+            "editorialClarity": 93
+          },
+          "rejected": true,
+          "reasons": [
+            "palette-overused"
+          ]
+        },
+        {
+          "id": "links",
+          "medium": "tactile-paper-cut",
+          "subject": "abstract-data-system",
+          "composition": "diagonal-motion",
+          "perspective": "cutaway",
+          "palette": "cobalt-coral",
+          "lighting": "soft-daylight",
+          "texture": "paper-fiber",
+          "scene": "pair-of-joined-account-file-trays",
+          "topicFit": 87,
+          "editorialClarity": 86,
+          "score": 50.4,
+          "metrics": {
+            "novelty": 14,
+            "topicFit": 87,
+            "editorialClarity": 86
+          },
+          "rejected": false,
+          "reasons": []
+        }
+      ],
+      "prompt": "Tactile paper-cut account-file trays joined diagonally with a single coral slip; cobalt cards, paper fibers, soft daylight. No text, branding or actual software.",
+      "rights": "Original AI-generated illustrative art, not a depiction of an actual vendor interface or EECU location.",
+      "sha256": "8988c656f1946d87f19918cc351acc76d1148dc737e44da587d548debfb61864"
+    },
+    {
       "id": "golden-1-california-hope-check-cashing",
       "medium": "ink-and-linocut",
       "subject": "operations-environment",
