@@ -35,7 +35,7 @@
         "url": "https://creditunionainews.com/news/kansas-city-fed-services-growth-expectations.html"
       }
     ],
-    "status": "in-progress",
+    "status": "held",
     "outcomeSlot": 7,
     "evaluatedCandidateCount": 24,
     "beatsSearched": [
@@ -1319,11 +1319,11 @@
       },
       {
         "slot": 7,
-        "status": "pending-validation",
+        "status": "editorial-hold",
         "candidateTitle": "EU Credit Update Puts Human Review in the Borrower Journey",
         "url": "https://creditunionainews.com/news/eu-consumer-credit-human-review-comparison.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-22T12:57:51.282Z",
+        "nextReviewAt": "2026-11-23T10:30:00Z",
         "evidence": {
           "articleSelection": {
             "candidateId": "eu-consumer-credit-application",
@@ -1343,9 +1343,26 @@
             "run": 45023270690,
             "job": 137210621534,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "63663c29901f158c9e8667b2672a33b4170457ba",
+            "run": 45023270690,
+            "job": 137210621534,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-23T10:03:30.045Z"
+          },
+          "reconciliation": {
+            "observedAt": "2026-11-23T10:03:30.045Z",
+            "prState": "open-unmerged",
+            "visualAccepted": false,
+            "reason": "Prior-day unpublished package held, not technical test failure."
           }
         },
-        "nextAction": "Observe exact terminal result, inspect matching artifact and own390/1440 visuals before any release."
+        "nextAction": "Retain PR418 unmerged and all receipts; no backdated release or duplicate cycle. Proceed only with independently qualified current-day work.",
+        "holdReason": "November22 morning cycle ended without this article releasing after execution environment loss. No retrospective fill or original-publication timestamp rewrite. Original November20 source is beyond the normal News freshness window on November23; any future treatment needs current editorial qualification. CI succeeded; actual visual acceptance was never completed."
       }
     ],
     "browserReadiness": {
@@ -1358,7 +1375,7 @@
       "fallback": "Existing exact-head PR design-checks, complete rendered artifact and own visual acceptance; no install/cache change."
     },
     "socialDecision": "not-reserved; historical/provider holds retained",
-    "updatedAt": "2026-11-22T12:35:33.692Z"
+    "updatedAt": "2026-11-23T10:04:35.549Z"
   },
   "history": [
     {
