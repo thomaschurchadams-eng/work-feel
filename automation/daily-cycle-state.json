@@ -591,9 +591,9 @@
       },
       {
         "slot": 2,
-        "status": "prepared",
+        "status": "pending-validation",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-23T23:16:21.960Z",
+        "nextReviewAt": "2026-11-23T23:17:37.652Z",
         "candidateTitle": "Golden 1 Offers No-Fee Check Cashing to California HOPE Recipients",
         "url": "https://creditunionainews.com/news/golden-1-california-hope-check-cashing.html",
         "evidence": {
@@ -611,6 +611,13 @@
             "preparedAt": "2026-11-23T22:54:21.960Z",
             "classification": "Standard",
             "sourceReview": "Nov 23 issuer announcement; CA HOPE FAQ and Golden 1 participant instructions read. No fee to cash distribution checks; $3,000 initial seed, not a guaranteed payout; no assertion of membership waiver. Original editorial linocut. No social or Alerts."
+          },
+          "pending": {
+            "prNumber": 429,
+            "head": "e0a3accfe64071d0a04177bf8a551e8bc9806f55",
+            "run": 45284195123,
+            "job": 138076115572,
+            "runAttempt": 1
           }
         }
       },
