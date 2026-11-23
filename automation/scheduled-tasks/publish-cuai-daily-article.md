@@ -1,5 +1,12 @@
 # Publish CUAI Daily Article — Authoritative Cloud Task Policy
 
+## November 23, 2026 only: owner-approved afternoon supplement
+
+Tom's explicit one-time authorization is Sentinel_de3e44c4f080819180e75054f8ee1dfa. This is a continuation by the existing daily publisher only, not a replacement or correction of the closed morning issue #160 receipt (comment 7098352141, 1 of 10). Today only from 3:34 p.m. Eastern until midnight Eastern, release up to nine additional independently qualifying packages, one at a time, with ordinary P/C/V/M/F checks and no social reservation, post, Alert change, schedule change or invented release time. Stage actual verified candidates, starting with the three drafted by the user; no retrospective action if the time window or release checks cannot be met. Tuesday's 5 a.m. run is unchanged.
+
+Before first preparation, set `current.afternoonSupplement` to `{owner:"daily-publisher",approval:"Sentinel_de3e44c4f080819180e75054f8ee1dfa",closedMorningReceipt:"https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7098352141",openedAt:<observed time>,morningSnapshot:<prior current minus alertCount/afternoonSupplement and with article-only publications>,candidateInventory:[<approved distinct primary-source entries, each candidateId,eventKey,sourceUrl,sourcePublishedAt>]}`. Leave `status:"held"`, `outcomeSlot:2`, the morning's shortfall, discovery, original verified slot, and all history intact. The immutable snapshot retains the original dispositions of all ten slots. Prepare the next unused numbered slot (starting at 2) normally, adding `evidence.afternoonSupplement:{approval:"Sentinel_de3e44c4f080819180e75054f8ee1dfa",preparedAt:<actual time>}` and using the separate append-only inventory. Keep every observed terminal/visual/public time in the exact authorized window. Recheck its remaining time before a merge; if there is not enough time for normal verification before midnight, do not merge. No more than one active slot may advance, and every earlier slot must be production verified. Close the supplement with `current.afternoonSupplement.closedAt` when no package remains in flight. Report the afternoon URLs and actual public times separately from the preserved morning count.
+
+
 ## Status and authority
 
 This is the authoritative operating policy for the **Publish CUAI Daily Article** ChatGPT Cloud task. Read this file from `main` before every run. If a task prompt, prior chat, or stale memory conflicts with this file, this file controls.
@@ -155,8 +162,8 @@ async function loadPublisherWritePlanner(tools, sourceCommit) {
   const repository = 'thomaschurchadams-eng/work-feel';
   if (!/^[a-f0-9]{40}$/.test(sourceCommit)) throw Error('exact-source-commit-required');
   const pins = {
-    'lib/daily-cycle-guards.cjs': '2590c4f861692ec0fca580933b9c31d6d68731b1',
-    'lib/publisher-write-plan.cjs': '6ddb991d2e0ee1e8a64b5ec5df4c5e9bf4c4f4bc'
+    'lib/daily-cycle-guards.cjs': '38e884a0719e6e467dbbb7c78792bb5d08dbcc4e',
+    'lib/publisher-write-plan.cjs': '0527302479006a765f0ca03a6b95cdef230fe71b'
   };
   const modules = {};
   for (const [path, expectedBlob] of Object.entries(pins)) {
