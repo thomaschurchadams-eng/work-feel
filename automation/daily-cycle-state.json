@@ -9,7 +9,7 @@
     "date": "2026-11-24",
     "status": "in-progress",
     "outcomeSlot": 5,
-    "fullArticleCount": 4,
+    "fullArticleCount": 5,
     "alertCount": 0,
     "publications": [
       {
@@ -27,6 +27,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/treasury-institutional-investor-credit-unions.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/straitsx-ocbc-stablecoin-business-bank-pilot.html"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -882,7 +886,7 @@
       },
       {
         "slot": 5,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "StraitsX and OCBC Test Stablecoin Settlement Behind a Bank Account",
         "url": "https://creditunionainews.com/news/straitsx-ocbc-stablecoin-business-bank-pilot.html",
         "accountableOwner": "daily-publisher",
@@ -936,7 +940,9 @@
             "observations": "Verified the exact artifact ZIP digest, size and revision.txt, then opened the actual 390px and 1440px article plus 390px and 1440px homepage placement. Confirmed November 24 date, selected-flow pilot framing, NTT DOCOMO ASIA attribution, original artwork, responsive hierarchy, complete source links and leading homepage card; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Merge only PR 435 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
+        "nextAction": "Merge only PR 435 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
+        "productionCommit": "e62412e074bffed754b7ff1f83c0667c69e010bf",
+        "verifiedAt": "2026-11-24T13:01:15.000Z"
       }
     ]
   },
