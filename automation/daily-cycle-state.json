@@ -818,7 +818,7 @@
       },
       {
         "slot": 4,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Credit Unions Seek Clear Boundaries in Treasury’s Institutional-Investor Rule",
         "url": "https://creditunionainews.com/news/treasury-institutional-investor-credit-unions.html",
         "accountableOwner": "daily-publisher",
@@ -842,9 +842,37 @@
             "run": 45390708485,
             "job": 138433330337,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "a90afd817819a7a78cae4a7b799e1ebaa74fddfe",
+            "run": 45390708485,
+            "job": 138433330337,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-24T12:28:46.261Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 434,
+            "head": "a90afd817819a7a78cae4a7b799e1ebaa74fddfe",
+            "run": 45390708485,
+            "job": 138433330337,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-24T12:29:15.000Z",
+            "artifactId": 14919033847,
+            "artifactSha256": "sha256:8a7992965de25033d44845580dbc33ca4fe7b43612e868428760f85f68991ff9",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Verified the exact artifact ZIP digest, size and revision.txt, then opened the actual 390px and 1440px article plus 390px News listing. Confirmed November 24 date, proposal/comment distinctions, 350-home context, original artwork, responsive hierarchy, complete source links and leading News card; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Observe the exact run/job attempt; terminal success still requires the matching artifact, revision and actual desktop/mobile review before merge."
+        "nextAction": "Merge only PR 434 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
       }
     ]
   },
