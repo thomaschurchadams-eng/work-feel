@@ -576,7 +576,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Credit Unions Challenge Special Merger Tests for Bank Acquisitions",
         "url": "https://creditunionainews.com/news/fdic-bank-credit-union-merger-rule.html",
         "accountableOwner": "daily-publisher",
@@ -592,11 +592,42 @@
           "preparation": {
             "preparedAt": "2026-11-24T10:10:00.000Z",
             "classification": "High",
-            "sourceReview": "Read the November 24 association comment summary and the FDIC September 22 proposal. The article will distinguish submitted advocacy from the agency proposal, preserve dual FDIC/NCUA review, and avoid implying a final rule or completed transaction."
-          }
+          "sourceReview": "Read the November 24 association comment summary and the FDIC September 22 proposal. The article will distinguish submitted advocacy from the agency proposal, preserve dual FDIC/NCUA review, and avoid implying a final rule or completed transaction."
         },
-        "nextAction": "Create one atomic exact-head article package from this preparation; local browser is blocked, so exact-head hosted design checks and actual artifact review are required."
+        "pending": {
+          "prNumber": 431,
+          "head": "4e38b9dbc28b367a12d0a926a385e3010b6565ee",
+          "run": 45374970561,
+          "job": 138378634744,
+          "runAttempt": 1
+        },
+        "validationHistory": [
+          {
+            "prNumber": 431,
+            "head": "5ce974d58ab443212d6f32482fd1cea754c0f6d8",
+            "run": 45373844963,
+            "job": 138374674731,
+            "runAttempt": 1,
+            "status": "superseded",
+            "observedAt": "2026-11-24T10:21:54.000Z",
+            "terminalValidation": {
+              "prNumber": 431,
+              "head": "5ce974d58ab443212d6f32482fd1cea754c0f6d8",
+              "run": 45373844963,
+              "job": 138374674731,
+              "runAttempt": 1,
+              "conclusion": "failure",
+              "runConclusion": "failure",
+              "jobConclusion": "failure",
+              "observedAt": "2026-11-24T10:21:54.000Z",
+              "failedStep": "Check canonical shell and existing regressions",
+              "reason": "Exact-head CI launched the browser and passed policy checks, then rejected the new article because its generated design shell was out of sync."
+            },
+            "reason": "Applied the repository's deterministic site-design synchronizer and created a distinct replacement head; no unchanged-job retry."
+          }
+        ]
       }
+    }
     ]
   },
   "history": [
