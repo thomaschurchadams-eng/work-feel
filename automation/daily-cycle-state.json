@@ -9,12 +9,16 @@
     "date": "2026-11-24",
     "status": "in-progress",
     "outcomeSlot": 2,
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/fdic-bank-credit-union-merger-rule.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/cdfi-consumer-loan-reporting-level.html"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -690,7 +694,7 @@
       },
       {
         "slot": 2,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "A 204,000-Loan Example Tests CDFI Transaction Reporting",
         "url": "https://creditunionainews.com/news/cdfi-consumer-loan-reporting-level.html",
         "accountableOwner": "daily-publisher",
@@ -744,7 +748,9 @@
             "observations": "Verified the exact artifact ZIP digest and revision.txt, then opened the actual 390px and 1440px article plus News listing evidence. Confirmed November 24 date, complete headline/dek, submitted-example and proposal framing, original artwork, responsive hierarchy and leading card placement; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Merge only PR 432 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
+        "nextAction": "Merge only PR 432 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
+        "productionCommit": "bef263bc52b0e595249ced6d425cd3ffd375331e",
+        "verifiedAt": "2026-11-24T11:30:00.000Z"
       }
     ]
   },
