@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-24",
     "status": "in-progress",
-    "outcomeSlot": 4,
+    "outcomeSlot": 5,
     "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
@@ -879,6 +879,29 @@
         "nextAction": "Merge only PR 434 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
         "productionCommit": "2cbfd11243e4093e35d91e052e72e603341081fd",
         "verifiedAt": "2026-11-24T12:31:00.000Z"
+      },
+      {
+        "slot": 5,
+        "status": "prepared",
+        "candidateTitle": "StraitsX and OCBC Test Stablecoin Settlement Behind a Bank Account",
+        "url": "https://creditunionainews.com/news/straitsx-ocbc-stablecoin-business-bank-pilot.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T13:20:00.000Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "straitsx-ocbc-stablecoin-pilot",
+            "eventKey": "straitsx-ocbc-b2b-stablecoin-bank-pilot-20261123",
+            "sourceUrl": "https://www.straitsx.com/blog-post/straitsx-and-ocbc-pilot-cross-border-stablecoin-payments-into-business-bank-accounts",
+            "sourcePublishedAt": "2026-11-23T08:00:00+08:00"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-24T12:33:00.000Z",
+            "classification": "High",
+            "sourceReview": "Read the November 23 StraitsX announcement and MAS BLOOM use-case record. The article will identify NTT DOCOMO ASIA as the first participant, explain the dedicated-wallet-address and fiat-off-ramp roles, and preserve that this is a selected-flow B2B pilot subject to regulatory, compliance and operational requirements—not a general launch or proven performance result."
+          }
+        },
+        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
       }
     ]
   },
