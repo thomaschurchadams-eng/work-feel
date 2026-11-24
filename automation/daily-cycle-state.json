@@ -9,7 +9,7 @@
     "date": "2026-11-24",
     "status": "in-progress",
     "outcomeSlot": 4,
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
       {
@@ -23,6 +23,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/boe-insurance-crisis-rehearsal.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/treasury-institutional-investor-credit-unions.html"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -818,7 +822,7 @@
       },
       {
         "slot": 4,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Credit Unions Seek Clear Boundaries in Treasury’s Institutional-Investor Rule",
         "url": "https://creditunionainews.com/news/treasury-institutional-investor-credit-unions.html",
         "accountableOwner": "daily-publisher",
@@ -872,7 +876,9 @@
             "observations": "Verified the exact artifact ZIP digest, size and revision.txt, then opened the actual 390px and 1440px article plus 390px News listing. Confirmed November 24 date, proposal/comment distinctions, 350-home context, original artwork, responsive hierarchy, complete source links and leading News card; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Merge only PR 434 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
+        "nextAction": "Merge only PR 434 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
+        "productionCommit": "2cbfd11243e4093e35d91e052e72e603341081fd",
+        "verifiedAt": "2026-11-24T12:31:00.000Z"
       }
     ]
   },
