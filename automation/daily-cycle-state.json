@@ -754,11 +754,11 @@
       },
       {
         "slot": 3,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "A UK Crisis Exercise Shows What Recovery Rehearsals Need to Prove",
         "url": "https://creditunionainews.com/news/boe-insurance-crisis-rehearsal.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-24T12:05:00.000Z",
+        "nextReviewAt": "2026-11-24T12:10:00.000Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -771,9 +771,16 @@
             "preparedAt": "2026-11-24T11:32:00.000Z",
             "classification": "High",
             "sourceReview": "Read the November 23 Bank of England release and full DyGIST results. The article will treat the near-real-time exercise as a bounded operational rehearsal lesson, not a U.S. requirement, pass/fail test or comprehensive resilience finding; it will preserve the exercise's stated scenario and validation limits."
+          },
+          "pending": {
+            "prNumber": 433,
+            "head": "e82db87f9cca9f4c447379f3d82eac9f74fcbabf",
+            "run": 45385395294,
+            "job": 138414865052,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
+        "nextAction": "Observe the exact run/job attempt; terminal success still requires the matching artifact, revision and actual desktop/mobile review before merge."
       }
     ]
   },
