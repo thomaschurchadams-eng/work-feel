@@ -754,7 +754,7 @@
       },
       {
         "slot": 3,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "A UK Crisis Exercise Shows What Recovery Rehearsals Need to Prove",
         "url": "https://creditunionainews.com/news/boe-insurance-crisis-rehearsal.html",
         "accountableOwner": "daily-publisher",
@@ -778,9 +778,37 @@
             "run": 45385395294,
             "job": 138414865052,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e82db87f9cca9f4c447379f3d82eac9f74fcbabf",
+            "run": 45385395294,
+            "job": 138414865052,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-24T12:01:43.167Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 433,
+            "head": "e82db87f9cca9f4c447379f3d82eac9f74fcbabf",
+            "run": 45385395294,
+            "job": 138414865052,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-24T12:02:30.000Z",
+            "artifactId": 14916624161,
+            "artifactSha256": "sha256:ff03f80576eec9de453914c1b8e3652a3a163050f25c66bbff6b8bd214855e9c",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Verified the exact artifact ZIP digest, size and revision.txt, then opened the actual 390px and 1440px article, 390px News listing and desktop homepage evidence. Confirmed November 24 date, UK/non-U.S. and exploratory/non-pass-fail limits, original artwork, responsive hierarchy, complete source links and leading News card; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Observe the exact run/job attempt; terminal success still requires the matching artifact, revision and actual desktop/mobile review before merge."
+        "nextAction": "Merge only PR 433 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
       }
     ]
   },
