@@ -818,11 +818,11 @@
       },
       {
         "slot": 4,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Credit Unions Seek Clear Boundaries in Treasury’s Institutional-Investor Rule",
         "url": "https://creditunionainews.com/news/treasury-institutional-investor-credit-unions.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-24T13:00:00.000Z",
+        "nextReviewAt": "2026-11-24T12:45:00.000Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -835,9 +835,16 @@
             "preparedAt": "2026-11-24T12:08:00.000Z",
             "classification": "High",
             "sourceReview": "Read the November 24 credit-union comment summary and Treasury's October 22 proposed-rule release. The article will treat the January 7, 2027 purchase restriction and 350-home threshold as proposal/statutory context, distinguish foreclosure and loss-mitigation exceptions from ordinary acquisitions, and present the requested CUSO/subsidiary clarifications as commenter recommendations rather than adopted law."
+          },
+          "pending": {
+            "prNumber": 434,
+            "head": "a90afd817819a7a78cae4a7b799e1ebaa74fddfe",
+            "run": 45390708485,
+            "job": 138433330337,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
+        "nextAction": "Observe the exact run/job attempt; terminal success still requires the matching artifact, revision and actual desktop/mobile review before merge."
       }
     ]
   },
