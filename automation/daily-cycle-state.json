@@ -946,11 +946,11 @@
       },
       {
         "slot": 6,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "UK Regulators Sketch How Critical-Provider Oversight Could Be Funded",
         "url": "https://creditunionainews.com/news/uk-critical-provider-oversight-fees.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-24T14:00:00.000Z",
+        "nextReviewAt": "2026-11-24T14:15:00.000Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -963,9 +963,16 @@
             "preparedAt": "2026-11-24T13:02:30.000Z",
             "classification": "High",
             "sourceReview": "Read the November 24 Bank of England/PRA/FCA discussion paper and current UK critical-third-party overview. The article will distinguish developing charging principles, tariff base, fee model and calculation questions from any final fee; identify the January 19, 2027 response date and Spring 2027 update; and frame this as a UK vendor-oversight governance signal, not a U.S. requirement."
+          },
+          "pending": {
+            "prNumber": 436,
+            "head": "f4cf877a4afff84c1338fd94c56125ccb3c2a296",
+            "run": 45399861074,
+            "job": 138465293082,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
+        "nextAction": "Observe the exact natural design-checks result for PR 436; preserve this checkpoint and owner until terminal evidence is reconciled."
       }
     ]
   },
