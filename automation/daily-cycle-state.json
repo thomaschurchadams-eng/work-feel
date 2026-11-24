@@ -598,8 +598,8 @@
           "prNumber": 431,
           "head": "4e38b9dbc28b367a12d0a926a385e3010b6565ee",
           "run": 45374970561,
-          "job": 138378634744,
-          "runAttempt": 1
+          "job": 138380222885,
+          "runAttempt": 2
         },
         "validationHistory": [
           {
@@ -624,6 +624,29 @@
               "reason": "Exact-head CI launched the browser and passed policy checks, then rejected the new article because its generated design shell was out of sync."
             },
             "reason": "Applied the repository's deterministic site-design synchronizer and created a distinct replacement head; no unchanged-job retry."
+          },
+          {
+            "prNumber": 431,
+            "head": "4e38b9dbc28b367a12d0a926a385e3010b6565ee",
+            "run": 45374970561,
+            "job": 138378634744,
+            "runAttempt": 1,
+            "status": "superseded",
+            "observedAt": "2026-11-24T10:28:30.000Z",
+            "terminalValidation": {
+              "prNumber": 431,
+              "head": "4e38b9dbc28b367a12d0a926a385e3010b6565ee",
+              "run": 45374970561,
+              "job": 138378634744,
+              "runAttempt": 1,
+              "conclusion": "failure",
+              "runConclusion": "failure",
+              "jobConclusion": "failure",
+              "observedAt": "2026-11-24T10:28:30.000Z",
+              "failedStep": "Validate daily-cycle history against PR base and refreshed main",
+              "reason": "Fresh-history validation detected a malformed intermediate state blob introduced by the connector serialization route before article tests began."
+            },
+            "reason": "The malformed state-only commits were replaced under a force-with-lease by one clean commit from the immutable preparation parent; exact state readback and ancestry passed before the bounded rerun."
           }
         ]
       }
