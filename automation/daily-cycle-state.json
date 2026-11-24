@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-24",
     "status": "in-progress",
-    "outcomeSlot": 1,
+    "outcomeSlot": 2,
     "fullArticleCount": 1,
     "alertCount": 0,
     "publications": [
@@ -687,6 +687,29 @@
         "nextAction": "Merge only the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
         "productionCommit": "db2355da7162919271b5b5eb549b6f6950de985e",
         "verifiedAt": "2026-11-24T10:54:54.000Z"
+      },
+      {
+        "slot": 2,
+        "status": "prepared",
+        "candidateTitle": "A 204,000-Loan Example Tests CDFI Transaction Reporting",
+        "url": "https://creditunionainews.com/news/cdfi-consumer-loan-reporting-level.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T11:25:00.000Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "cdfi-consumer-loan-reporting",
+            "eventKey": "cdfi-acr-tlr-consumer-loan-reporting-comments-20261123",
+            "sourceUrl": "https://www.custrategicplanning.com/post/the-cdfi-briefing-2026",
+            "sourcePublishedAt": "2026-11-23T10:00:00-05:00"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-24T10:58:00.000Z",
+            "classification": "High",
+            "sourceReview": "Read the November 23 public briefing and the November 18 ACR/TLR comment-letter evidence. The article will distinguish aggregate reporting from loan-level transaction reporting, use the 204,000-loan example as submitted evidence rather than an agency finding, and avoid treating the proposal as final."
+          }
+        },
+        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
       }
     ]
   },
