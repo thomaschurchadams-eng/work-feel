@@ -882,7 +882,7 @@
       },
       {
         "slot": 5,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "StraitsX and OCBC Test Stablecoin Settlement Behind a Bank Account",
         "url": "https://creditunionainews.com/news/straitsx-ocbc-stablecoin-business-bank-pilot.html",
         "accountableOwner": "daily-publisher",
@@ -906,9 +906,37 @@
             "run": 45395156717,
             "job": 138448836845,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "2d63f2ced46ee5029bd81d1b3826f2fe72a74389",
+            "run": 45395156717,
+            "job": 138448836845,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-24T12:57:25.268Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 435,
+            "head": "2d63f2ced46ee5029bd81d1b3826f2fe72a74389",
+            "run": 45395156717,
+            "job": 138448836845,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-24T12:58:30.000Z",
+            "artifactId": 14921647759,
+            "artifactSha256": "sha256:313e62089a5bb2891d495e0a0c9817296f461f656f14fba2357aae7dfd4de8b7",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Verified the exact artifact ZIP digest, size and revision.txt, then opened the actual 390px and 1440px article plus 390px and 1440px homepage placement. Confirmed November 24 date, selected-flow pilot framing, NTT DOCOMO ASIA attribution, original artwork, responsive hierarchy, complete source links and leading homepage card; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Observe the exact natural design-checks result for PR 435; preserve this checkpoint and owner until terminal evidence is reconciled."
+        "nextAction": "Merge only PR 435 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
       }
     ]
   },
