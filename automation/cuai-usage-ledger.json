@@ -6342,6 +6342,47 @@
       },
       "summary": "Monday operating review consumed the publisher's honest one-of-ten outcome and documented find/qualify as the evidenced bottleneck. It released one current FinCEN Alert after exact-head source and rendered validation, reviewed an exact-current analytics artifact, diagnosed but did not edit one stale topic page, found no additional qualified November 23 lead, and recorded five approval-gated public distribution opportunities. Recent search traffic accelerated while direct traffic remained dominant and less engaged; this does not establish subscriptions or revenue. No external outreach or social write occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-24T12:04:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability check found the November 24 sixth publication checkpoint stranded after exact-head validation because the existing publisher runtime could not open the artifact pixels.",
+      "status": "degraded",
+      "incidentKey": "cuai-publishing:daily-cycle:2026-11-24",
+      "workUnits": {
+        "dailyCycleStatesReviewed": 1,
+        "publicationHistoryEntriesPreserved": 92,
+        "openPublicationCheckpointsDiagnosed": 1,
+        "exactArtifactsIntegrityChecked": 1,
+        "responsiveArticleViewsReviewed": 2,
+        "responsiveListingViewsReviewed": 2,
+        "renderedChecksReviewed": 50,
+        "previewRoutesVerified": 2,
+        "productionDeploymentsVerified": 1,
+        "productionRoutesVerified": 2,
+        "issueBusEventsAppended": 1,
+        "socialQueueItemsReviewed": 58,
+        "socialQueueWrites": 0,
+        "providerWrites": 0,
+        "articleCyclesStarted": 0,
+        "pullRequestsMerged": 0,
+        "deploymentsTriggered": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "operationalLearning": {
+        "issue": "The daily publisher completed five live articles and left slot 6 at a valid exact-head checkpoint after its execution environment could not open the required screenshots. PR #436 stayed draft/unmerged despite successful CI and a READY exact preview.",
+        "correction": "Reliability Watch downloaded artifact 14923982572, verified SHA-256 09844792b57377256097d5445de62b169f302a2d781b2716be85e445992a1901, opened the actual 390px and 1440px article plus mobile listing evidence, and recorded the recovered visual evidence under the original incident key without taking publisher ownership.",
+        "test": "The artifact revision matches f4cf877a4afff84c1338fd94c56125ccb3c2a296; 50 rendered checks report zero failures; inspected views show no clipping, collision, overflow or broken imagery; the preview article and artwork return 200. Production dpl_EAojR6UPQGNEcEVrtpiyR6uq6YsW is READY on main 030373b12dd2a63b419fb03aa52405771271ff6c, where the unreleased route correctly returns 404.",
+        "actualResult": "The visual evidence gap is recovered. Release and canonical slot closeout remain blocked on the existing daily publisher's acceptance and sole-writer action. All 92 daily-cycle history entries and 58 social records were preserved; no merge, deployment, provider action, social reservation, schedule, credential, permission, model or editorial gate changed.",
+        "nextTrigger": "The same daily publisher should reconcile the unchanged PR/head/run/artifact, consume the independently observed pixels, and either complete its normal accepted release/closeout or retain an explicit editorial/technical hold. Do not replay the cycle or transfer the writer lease."
+      },
+      "summary": "Recovered the read-only visual evidence gap for November 24 slot 6, but did not cross the publisher ownership boundary. PR #436 remains draft and unmerged at the exact successful head; production is READY on current main and correctly does not contain the unreleased route. Recorded the same-key issue #160 handoff, preserved all ledgers and social state, and left release/closeout to the existing daily publisher.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
