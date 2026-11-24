@@ -690,7 +690,7 @@
       },
       {
         "slot": 2,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "A 204,000-Loan Example Tests CDFI Transaction Reporting",
         "url": "https://creditunionainews.com/news/cdfi-consumer-loan-reporting-level.html",
         "accountableOwner": "daily-publisher",
@@ -707,9 +707,16 @@
             "preparedAt": "2026-11-24T10:58:00.000Z",
             "classification": "High",
             "sourceReview": "Read the November 23 public briefing and the November 18 ACR/TLR comment-letter evidence. The article will distinguish aggregate reporting from loan-level transaction reporting, use the 204,000-loan example as submitted evidence rather than an agency finding, and avoid treating the proposal as final."
+          },
+          "pending": {
+            "prNumber": 432,
+            "head": "3a51761b9f8e8594ded8e754744c926065b31aba",
+            "run": 45380809081,
+            "job": 138399035631,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
+        "nextAction": "Observe the exact run/job attempt; terminal success still requires the matching artifact, revision and actual desktop/mobile review before merge."
       }
     ]
   },
