@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-24",
     "status": "in-progress",
-    "outcomeSlot": 3,
+    "outcomeSlot": 4,
     "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
@@ -815,6 +815,29 @@
         "nextAction": "Merge only PR 433 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
         "productionCommit": "5f87739fd0f240bd7afecf2de1318f4d8c1c1b27",
         "verifiedAt": "2026-11-24T12:04:30.000Z"
+      },
+      {
+        "slot": 4,
+        "status": "prepared",
+        "candidateTitle": "Credit Unions Seek Clear Boundaries in Treasury’s Institutional-Investor Rule",
+        "url": "https://creditunionainews.com/news/treasury-institutional-investor-credit-unions.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T13:00:00.000Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "treasury-institutional-investor-comments",
+            "eventKey": "treasury-institutional-investor-prohibition-comments-20261124",
+            "sourceUrl": "https://www.americascreditunions.org/news-media/news/recommendations-treasurys-institutional-investor-prohibition",
+            "sourcePublishedAt": "2026-11-24T04:00:00-05:00"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-24T12:08:00.000Z",
+            "classification": "High",
+            "sourceReview": "Read the November 24 credit-union comment summary and Treasury's October 22 proposed-rule release. The article will treat the January 7, 2027 purchase restriction and 350-home threshold as proposal/statutory context, distinguish foreclosure and loss-mitigation exceptions from ordinary acquisitions, and present the requested CUSO/subsidiary clarifications as commenter recommendations rather than adopted law."
+          }
+        },
+        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
       }
     ]
   },
