@@ -690,7 +690,7 @@
       },
       {
         "slot": 2,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "A 204,000-Loan Example Tests CDFI Transaction Reporting",
         "url": "https://creditunionainews.com/news/cdfi-consumer-loan-reporting-level.html",
         "accountableOwner": "daily-publisher",
@@ -714,9 +714,37 @@
             "run": 45380809081,
             "job": 138399035631,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "3a51761b9f8e8594ded8e754744c926065b31aba",
+            "run": 45380809081,
+            "job": 138399035631,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-24T11:24:45.424Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 432,
+            "head": "3a51761b9f8e8594ded8e754744c926065b31aba",
+            "run": 45380809081,
+            "job": 138399035631,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-24T11:27:00.000Z",
+            "artifactId": 14914917494,
+            "artifactSha256": "sha256:d473c7ecaa9097a5c242a1277e0417a3957135b92138436f5cd88a53311c88c6",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Verified the exact artifact ZIP digest and revision.txt, then opened the actual 390px and 1440px article plus News listing evidence. Confirmed November 24 date, complete headline/dek, submitted-example and proposal framing, original artwork, responsive hierarchy and leading card placement; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Observe the exact run/job attempt; terminal success still requires the matching artifact, revision and actual desktop/mobile review before merge."
+        "nextAction": "Merge only PR 432 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
       }
     ]
   },
