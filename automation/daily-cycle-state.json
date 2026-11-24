@@ -9,7 +9,7 @@
     "date": "2026-11-24",
     "status": "in-progress",
     "outcomeSlot": 3,
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
       {
@@ -19,6 +19,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/cdfi-consumer-loan-reporting-level.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/boe-insurance-crisis-rehearsal.html"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -754,7 +758,7 @@
       },
       {
         "slot": 3,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "A UK Crisis Exercise Shows What Recovery Rehearsals Need to Prove",
         "url": "https://creditunionainews.com/news/boe-insurance-crisis-rehearsal.html",
         "accountableOwner": "daily-publisher",
@@ -808,7 +812,9 @@
             "observations": "Verified the exact artifact ZIP digest, size and revision.txt, then opened the actual 390px and 1440px article, 390px News listing and desktop homepage evidence. Confirmed November 24 date, UK/non-U.S. and exploratory/non-pass-fail limits, original artwork, responsive hierarchy, complete source links and leading News card; CI reported zero rendered failures."
           }
         },
-        "nextAction": "Merge only PR 433 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
+        "nextAction": "Merge only PR 433 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
+        "productionCommit": "5f87739fd0f240bd7afecf2de1318f4d8c1c1b27",
+        "verifiedAt": "2026-11-24T12:04:30.000Z"
       }
     ]
   },
