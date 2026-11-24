@@ -576,7 +576,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Credit Unions Challenge Special Merger Tests for Bank Acquisitions",
         "url": "https://creditunionainews.com/news/fdic-bank-credit-union-merger-rule.html",
         "accountableOwner": "daily-publisher",
@@ -648,8 +648,38 @@
             },
             "reason": "The malformed state-only commits were replaced under a force-with-lease by one clean commit from the immutable preparation parent; exact state readback and ancestry passed before the bounded rerun."
           }
-        ]
-      }
+        ],
+        "terminalValidation": {
+          "prNumber": 431,
+          "head": "4e38b9dbc28b367a12d0a926a385e3010b6565ee",
+          "run": 45374970561,
+          "job": 138380222885,
+          "runAttempt": 2,
+          "conclusion": "success",
+          "runConclusion": "success",
+          "jobConclusion": "success",
+          "observedAt": "2026-11-24T10:48:19.000Z"
+        },
+        "terminalAcceptance": {
+          "prNumber": 431,
+          "head": "4e38b9dbc28b367a12d0a926a385e3010b6565ee",
+          "run": 45374970561,
+          "job": 138380222885,
+          "runAttempt": 2,
+          "visualReviewedAt": "2026-11-24T10:51:30.000Z",
+          "artifactId": 14912212657,
+          "artifactSha256": "sha256:38ff51adbb62c1d6752a3f4eb18252db916ad3dc051eb46decb01d554af7a286",
+          "sourceTests": 472,
+          "renderedChecks": 50,
+          "failedChecks": 0,
+          "viewports": [
+            390,
+            1440
+          ],
+          "observations": "Opened the exact mobile and desktop article plus mobile homepage and desktop News listing evidence. Verified the November 24 label, complete headline and dek, source links, original regulatory artwork, card placement and responsive hierarchy. The artifact reports zero failed rendered checks, no overflow or accessibility failures, and matching revision.txt."
+        }
+      },
+      "nextAction": "Merge only the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
     }
     ]
   },
