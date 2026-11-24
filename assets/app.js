@@ -102,6 +102,22 @@
 
   const alertsData = [
     {
+      label: 'BSA / Sanctions',
+      headline: 'FinCEN Maps $14.7 Billion in Potential Iranian Shadow-Banking Activity',
+      summary:
+        'FinCEN said on November 23 that Bank Secrecy Act reporting identified approximately $14.7 billion in financial activity from January 2025 through August 2026 potentially linked to Iranian shadow banking. The analysis describes recurring cross-border routes and front-company indicators, including opaque ownership, limited public business presence, recent incorporation, wires inconsistent with the stated business and missing source-of-funds information. FinCEN says BSA reports are investigative leads, not proof that a transaction or party is illicit.',
+      impact:
+        'Credit-union BSA/AML, sanctions, payments, wire, fraud and vendor teams should compare current monitoring and escalation logic with the listed account, entity and transaction characteristics; verify higher-risk matches against current FinCEN advisories and OFAC lists; preserve source-of-funds, ownership and disposition evidence; and avoid treating a jurisdiction, company profile or large transfer by itself as proof of illegal activity.',
+      sourceName: 'Financial Crimes Enforcement Network',
+      sourceUrl:
+        'https://www.fincen.gov/news/news-releases/treasury-identifies-nearly-15-billion-potential-iranian-shadow-banking/',
+      date: 'Nov 23, 2026',
+      publishedAt: '2026-11-23T20:32:01.561Z',
+      publicationDeployment: 'dpl_Aea8X8fgBTVHiyrZSooJaLDHKYwP',
+      publicationEvidence: 'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7113234169',
+      slug: 'fincen-iranian-shadow-banking-trends-november-2026'
+    },
+    {
       label: 'Sanctions / Cyber Fraud',
       headline: 'OFAC Blocks Cyber-Scam Operators and Two Companies',
       summary:
