@@ -882,11 +882,11 @@
       },
       {
         "slot": 5,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "StraitsX and OCBC Test Stablecoin Settlement Behind a Bank Account",
         "url": "https://creditunionainews.com/news/straitsx-ocbc-stablecoin-business-bank-pilot.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-24T13:20:00.000Z",
+        "nextReviewAt": "2026-11-24T13:15:00.000Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -899,9 +899,16 @@
             "preparedAt": "2026-11-24T12:33:00.000Z",
             "classification": "High",
             "sourceReview": "Read the November 23 StraitsX announcement and MAS BLOOM use-case record. The article will identify NTT DOCOMO ASIA as the first participant, explain the dedicated-wallet-address and fiat-off-ramp roles, and preserve that this is a selected-flow B2B pilot subject to regulatory, compliance and operational requirements—not a general launch or proven performance result."
+          },
+          "pending": {
+            "prNumber": 435,
+            "head": "2d63f2ced46ee5029bd81d1b3826f2fe72a74389",
+            "run": 45395156717,
+            "job": 138448836845,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
+        "nextAction": "Observe the exact natural design-checks result for PR 435; preserve this checkpoint and owner until terminal evidence is reconciled."
       }
     ]
   },
