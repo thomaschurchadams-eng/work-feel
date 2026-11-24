@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-24",
     "status": "in-progress",
-    "outcomeSlot": 5,
+    "outcomeSlot": 6,
     "fullArticleCount": 5,
     "alertCount": 0,
     "publications": [
@@ -943,6 +943,29 @@
         "nextAction": "Merge only PR 435 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
         "productionCommit": "e62412e074bffed754b7ff1f83c0667c69e010bf",
         "verifiedAt": "2026-11-24T13:01:15.000Z"
+      },
+      {
+        "slot": 6,
+        "status": "prepared",
+        "candidateTitle": "UK Regulators Sketch How Critical-Provider Oversight Could Be Funded",
+        "url": "https://creditunionainews.com/news/uk-critical-provider-oversight-fees.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T14:00:00.000Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "boe-critical-third-party-fees",
+            "eventKey": "uk-ctp-regulatory-fee-discussion-20261124",
+            "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/critical-third-parties-regulatory-fees-and-cost-recovery",
+            "sourcePublishedAt": "2026-11-24T07:00:00Z"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-24T13:02:30.000Z",
+            "classification": "High",
+            "sourceReview": "Read the November 24 Bank of England/PRA/FCA discussion paper and current UK critical-third-party overview. The article will distinguish developing charging principles, tariff base, fee model and calculation questions from any final fee; identify the January 19, 2027 response date and Spring 2027 update; and frame this as a UK vendor-oversight governance signal, not a U.S. requirement."
+          }
+        },
+        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
       }
     ]
   },
