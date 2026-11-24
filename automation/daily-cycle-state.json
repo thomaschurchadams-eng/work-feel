@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-24",
     "status": "in-progress",
-    "outcomeSlot": 2,
+    "outcomeSlot": 3,
     "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
@@ -751,6 +751,29 @@
         "nextAction": "Merge only PR 432 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
         "productionCommit": "bef263bc52b0e595249ced6d425cd3ffd375331e",
         "verifiedAt": "2026-11-24T11:30:00.000Z"
+      },
+      {
+        "slot": 3,
+        "status": "prepared",
+        "candidateTitle": "A UK Crisis Exercise Shows What Recovery Rehearsals Need to Prove",
+        "url": "https://creditunionainews.com/news/boe-insurance-crisis-rehearsal.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-24T12:05:00.000Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "boe-insurance-crisis-exercise",
+            "eventKey": "boe-dygist-insurance-crisis-exercise-20261123",
+            "sourceUrl": "https://www.bankofengland.co.uk/news/2026/november/general-insurance-stress-test-highlights-value-of-rehearsing-crisis-response-and-recovery",
+            "sourcePublishedAt": "2026-11-23T07:00:00Z"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-24T11:32:00.000Z",
+            "classification": "High",
+            "sourceReview": "Read the November 23 Bank of England release and full DyGIST results. The article will treat the near-real-time exercise as a bounded operational rehearsal lesson, not a U.S. requirement, pass/fail test or comprehensive resilience finding; it will preserve the exercise's stated scenario and validation limits."
+          }
+        },
+        "nextAction": "Create one atomic exact-head article package from this preparation; hosted design checks and actual artifact review remain required."
       }
     ]
   },
