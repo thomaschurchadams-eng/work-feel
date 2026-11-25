@@ -9,7 +9,7 @@
     "date": "2026-11-25",
     "status": "in-progress",
     "outcomeSlot": 3,
-    "fullArticleCount": 2,
+    "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
       {
@@ -19,6 +19,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -725,7 +729,7 @@
       },
       {
         "slot": 3,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "DuPage Credit Union’s Data Unification Project Puts Member Context Before AI",
         "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html",
         "accountableOwner": "daily-publisher",
@@ -817,7 +821,9 @@
             ]
           }
         },
-        "nextAction": "Merge only PR 440 at exact head 4f209a72 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout."
+        "nextAction": "Merge only PR 440 at exact head 4f209a72 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+        "productionCommit": "2e094362db82473cb654b2f0e35af4cbecf4e328",
+        "verifiedAt": "2026-11-25T12:19:41.266Z"
       }
     ]
   },
