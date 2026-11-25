@@ -725,7 +725,7 @@
       },
       {
         "slot": 3,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "DuPage Credit Union’s Data Unification Project Puts Member Context Before AI",
         "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html",
         "accountableOwner": "daily-publisher",
@@ -782,9 +782,42 @@
               },
               "reason": "attempt 1 fetched main before the replacement checkpoint was visible and failed the exact checkpoint gate before source or rendered tests"
             }
-          ]
+          ],
+          "terminalValidation": {
+            "head": "4f209a72eae387141436aee47adef8352be4e659",
+            "run": 45608381606,
+            "job": 139186107577,
+            "runAttempt": 2,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-25T12:15:51.411Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 440,
+            "head": "4f209a72eae387141436aee47adef8352be4e659",
+            "run": 45608381606,
+            "job": 139186107577,
+            "runAttempt": 2,
+            "visualReviewedAt": "2026-11-25T12:15:53.089Z",
+            "artifactId": 15019839031,
+            "artifactSha256": "sha256:960c9b41b589cbfba7d1fe99c985accf9059655583a0340b7a6c0e6598e55646",
+            "artifactRevision": "4f209a72eae387141436aee47adef8352be4e659",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": [
+              "Exact artifact ZIP digest and integrity passed; revision.txt matched the attempt-2 head.",
+              "Desktop and mobile article title, date, byline, section, original hero artwork, body hierarchy, source link, related coverage and footer render correctly without visible overflow.",
+              "Hosted regression suite passed 472 source tests, 50 rendered checks, 148 scrolled-header checks, 18 date/freshness journeys and two ordering journeys."
+            ]
+          }
         },
-        "nextAction": "Retain attempt 2 as the only active exact checkpoint; attempt 1 remains failed and superseded."
+        "nextAction": "Merge only PR 440 at exact head 4f209a72 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout."
       }
     ]
   },
