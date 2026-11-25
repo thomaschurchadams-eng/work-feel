@@ -3,6 +3,37 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "ncua-final-rules-operating-controls",
+      "medium": "vector-editorial",
+      "subject": "documents-and-controls",
+      "composition": "three-path-convergence",
+      "perspective": "flat-orthographic",
+      "palette": "navy-burgundy-gold",
+      "lighting": "graphic-flat-light",
+      "texture": "clean-vector",
+      "scene": "three-control-records-to-governance-table",
+      "topicFit": 95,
+      "editorialClarity": 94,
+      "score": 68.2,
+      "metrics": {"novelty": 34, "topicFit": 95, "editorialClarity": 94},
+      "rejected": false,
+      "reasons": [],
+      "articleUrl": "/insight-ncua-final-rules-operating-controls.html",
+      "imagePath": "/assets/ncua-final-rules-operating-controls.svg",
+      "publishedAt": "2026-11-25T05:32:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptScore": 68.2,
+      "conceptAlternatives": [
+        {"id":"three-control-paths","medium":"vector-editorial","subject":"documents-and-controls","composition":"three-path-convergence","perspective":"flat-orthographic","palette":"navy-burgundy-gold","lighting":"graphic-flat-light","texture":"clean-vector","scene":"three-control-records-to-governance-table","topicFit":95,"editorialClarity":94},
+        {"id":"governance-ledger","medium":"tactile-paper-cut","subject":"documents-and-controls","composition":"modular-grid","perspective":"overhead","palette":"emerald-cream","lighting":"soft-daylight","texture":"paper-fiber","scene":"separate-policy-control-ledgers","topicFit":91,"editorialClarity":90},
+        {"id":"deadline-workbench","medium":"macro-still-life","subject":"operations-environment","composition":"layered-depth","perspective":"eye-level","palette":"terracotta-sky","lighting":"natural-window-light","texture":"wood-and-paper","scene":"three-unmarked-files-and-calendar-tab","topicFit":88,"editorialClarity":87}
+      ],
+      "selectionReason": "Highest passing concept score68.2; three distinct mediums and compositions. Original vector illustration contains no logo, person, official document or fabricated data.",
+      "generationPrompt": "Original editorial vector illustration: three distinct unlabelled control records for ALCO/reporting, interlocks and audits converge on a shared governance table; navy, burgundy and gold; no words, numbers, logos, people, agency seal or fabricated chart; landscape 1200x630.",
+      "rights": "Original CUAI-owned vector illustration; no third-party logo, official document or identifiable person."
+    },
+    {
       "id": "golden-1-california-hope-check-cashing",
       "medium": "ink-and-linocut",
       "subject": "operations-environment",
