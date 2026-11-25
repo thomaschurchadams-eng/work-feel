@@ -33,7 +33,11 @@
         "title": "FinCEN Extends SDTM Filing Deadlines After Service Disruption",
         "url": "https://creditunionainews.com/alerts/#fincen-sdtm-filing-relief-service-disruption-november-2026",
         "sourceUrl": "https://www.fincen.gov/news/news-releases/temporary-limited-exceptive-relief-certain-bank-secrecy-act-corporate-transparency-act-submissions/",
-        "sourceDate": "Nov 24, 2026"
+        "sourceDate": "Nov 24, 2026",
+        "publishedAt": "2026-11-25T20:53:34.953Z",
+        "productionCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
+        "productionDeployment": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
+        "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7174367834"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -923,16 +927,54 @@
       }
     ],
     "blockedReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
-    "updatedAt": "2026-11-25T20:31:26.317Z",
+    "updatedAt": "2026-11-25T20:56:05.144Z",
     "alertCycle": {
       "owner": "cuai-operating-system",
-      "status": "released-awaiting-exact-deployment-receipt",
+      "status": "live-verified",
       "sourceReviewAt": "2026-11-25T20:31:26.317Z",
       "dedupeKey": "cuai-alert:fincen-sdtm-filing-relief:2026-11-24",
       "officialSourceSurfacesReviewed": 4,
       "candidatesEvaluated": 1,
       "alertsPublished": 1,
-      "note": "Selected FinCEN Order FIN-2026-R002 because it creates a distinct current filing-operations change tied to a service disruption: eligible financial institutions using SDTM as of November 18 receive temporary relief for covered BSA reports otherwise due November 18 through December 29, with a December 30 filing deadline. Other BSA/AML obligations, including ongoing suspicious-activity monitoring, remain in force. The item is absent from canonical coverage and current handoffs. Publication time remains intentionally unfilled until the first exact production deployment is verified."
+      "note": "One distinct primary-source FinCEN filing-operations Alert was released after the completed article handoff. The exact source head passed 472 source-regression tests and 50 rendered checks while preserving all 93 history entries. The production deployment for source merge b53334e9af3c79846b085dff136ee8387692d64e became READY at the recorded original publication instant. Relief is limited to eligible SDTM filers and does not suspend other BSA/AML obligations.",
+      "publishedAt": "2026-11-25T20:53:34.953Z",
+      "productionCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
+      "productionDeployment": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
+      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7174367834",
+      "liveUrl": "https://creditunionainews.com/alerts/#fincen-sdtm-filing-relief-service-disruption-november-2026",
+      "liveVerifiedAt": "2026-11-25T20:56:05.144Z",
+      "homepageDecision": "published-one-qualified-material-alert; new Alert becomes homepage/ticker eligible only from the verified original CUAI publication instant",
+      "validation": {
+        "sourceHead": "2f65973943a5c0baaba773b30a21f72306643991",
+        "pullRequest": 446,
+        "workflowRun": 45695849504,
+        "workflowJob": 139492913767,
+        "conclusion": "success",
+        "artifactId": 15060209562,
+        "artifactSha256": "542665fbfd2eb234a19b88e580425c53f9240d822f04037af0c6949a0ac19c0b",
+        "sourceTests": 472,
+        "sourceFailures": 0,
+        "renderedChecks": 50,
+        "renderedFailures": 0
+      },
+      "productionVerification": {
+        "deploymentId": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
+        "target": "production",
+        "state": "READY",
+        "contentCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
+        "readyAt": "2026-11-25T20:53:34.953Z",
+        "verifiedAt": "2026-11-25T20:56:05.144Z",
+        "publicResponses": [
+          {
+            "path": "index.html",
+            "status": 200
+          },
+          {
+            "path": "alerts/index.html",
+            "status": 200
+          }
+        ]
+      }
     }
   },
   "history": [

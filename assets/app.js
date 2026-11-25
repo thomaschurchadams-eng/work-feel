@@ -112,6 +112,9 @@
       sourceUrl:
         'https://www.fincen.gov/news/news-releases/temporary-limited-exceptive-relief-certain-bank-secrecy-act-corporate-transparency-act-submissions/',
       date: 'Nov 24, 2026',
+      publishedAt: '2026-11-25T20:53:34.953Z',
+      publicationDeployment: 'dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ',
+      publicationEvidence: 'https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7174367834',
       slug: 'fincen-sdtm-filing-relief-service-disruption-november-2026'
     },
     {
