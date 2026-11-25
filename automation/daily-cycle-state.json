@@ -656,7 +656,7 @@
       },
       {
         "slot": 2,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Federal Anti-Scam Push Gives Credit Unions a Member-Education Test",
         "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html",
         "accountableOwner": "daily-publisher",
@@ -680,9 +680,42 @@
             "run": 45602130041,
             "job": 139165410021,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+            "run": 45602130041,
+            "job": 139165410021,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-25T11:41:00.000Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 439,
+            "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+            "run": 45602130041,
+            "job": 139165410021,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-25T11:41:10.307Z",
+            "artifactId": 15017827147,
+            "artifactSha256": "sha256:0a163af1f059545ca9366741fd94ea3ec64bc9a59c8dbb83c250323a2eb29316",
+            "artifactRevision": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": [
+              "Desktop and mobile article title, dek, date, byline, section and original anti-scam artwork render correctly.",
+              "Body hierarchy, source links, related coverage, footer and News placement are readable without visible overflow.",
+              "Hosted interaction, typography, accessibility, scrolled-header, date/freshness, artwork and ordering gates passed on the exact corrected head."
+            ]
           }
         },
-        "nextAction": "Retain the exact PR 439 checkpoint while corrected-head design checks finish; accept no terminal outcome from superseded run 45601786305."
+        "nextAction": "Merge only PR 439 at exact corrected head 8dc1b54b after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout."
       }
     ]
   },
