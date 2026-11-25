@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-25",
     "status": "in-progress",
-    "outcomeSlot": 2,
+    "outcomeSlot": 3,
     "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
@@ -722,6 +722,29 @@
         "nextAction": "Merge only PR 439 at exact corrected head 8dc1b54b after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout.",
         "productionCommit": "bfacc79c281bb972fa87bd56540bd5355e167c7d",
         "verifiedAt": "2026-11-25T11:46:08.078Z"
+      },
+      {
+        "slot": 3,
+        "status": "prepared",
+        "candidateTitle": "DuPage Credit Union’s Data Unification Project Puts Member Context Before AI",
+        "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-25T12:27:01.774Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "dupage-arkatechture",
+            "eventKey": "dupage-arkatechture-data-platform-20261124",
+            "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
+            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-25T11:47:01.774Z",
+            "classification": "Standard",
+            "sourceReview": "Reviewed the November 24 DuPage Credit Union and Arkatechture announcement as vendor-and-institution supplied evidence. The article frames the work as a member-data foundation and implementation decision, not a proven AI outcome, and preserves the absence of independent performance results."
+          }
+        },
+        "nextAction": "Create one atomic article PR from this persisted preparation; record its exact PR/head/run/job/attempt checkpoint before any terminal or live claim."
       }
     ]
   },
