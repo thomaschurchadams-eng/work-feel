@@ -747,8 +747,8 @@
             "prNumber": 440,
             "head": "4f209a72eae387141436aee47adef8352be4e659",
             "run": 45608381606,
-            "job": 139185134527,
-            "runAttempt": 1
+            "job": 139186107577,
+            "runAttempt": 2
           },
           "validationHistory": [
             {
@@ -760,10 +760,31 @@
               "status": "superseded",
               "observedAt": "2026-11-25T11:52:39.783Z",
               "reason": "article route corrected to the already persisted canonical slot URL before terminal acceptance"
+            },
+            {
+              "prNumber": 440,
+              "head": "4f209a72eae387141436aee47adef8352be4e659",
+              "run": 45608381606,
+              "job": 139185134527,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-25T11:54:30.126Z",
+              "terminalValidation": {
+                "prNumber": 440,
+                "head": "4f209a72eae387141436aee47adef8352be4e659",
+                "run": 45608381606,
+                "job": 139185134527,
+                "runAttempt": 1,
+                "conclusion": "failure",
+                "runConclusion": "failure",
+                "jobConclusion": "failure",
+                "observedAt": "2026-11-25T11:53:03Z"
+              },
+              "reason": "attempt 1 fetched main before the replacement checkpoint was visible and failed the exact checkpoint gate before source or rendered tests"
             }
           ]
         },
-        "nextAction": "Retain the replacement exact PR/head/run/job/attempt checkpoint until terminal validation; the earlier head is superseded and cannot clear release."
+        "nextAction": "Retain attempt 2 as the only active exact checkpoint; attempt 1 remains failed and superseded."
       }
     ]
   },
