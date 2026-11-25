@@ -656,11 +656,11 @@
       },
       {
         "slot": 2,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Federal Anti-Scam Push Gives Credit Unions a Member-Education Test",
         "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-25T11:53:12.085Z",
+        "nextReviewAt": "2026-11-25T11:47:36.387Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -673,9 +673,16 @@
             "preparedAt": "2026-11-25T11:08:12.085Z",
             "classification": "High",
             "sourceReview": "Read current CFPB and Justice Department November 24 releases and standing FTC verification guidance. The package distinguishes federal enforcement totals from institution-level prevention, preserves allegation status, and does not present the campaign as a new credit-union rule or reimbursement standard."
+          },
+          "pending": {
+            "prNumber": 439,
+            "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+            "run": 45602130041,
+            "job": 139165410021,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic article package with canonical state unchanged; persist exact PR/head/run/job/attempt before terminal closeout."
+        "nextAction": "Retain the exact PR 439 checkpoint while corrected-head design checks finish; accept no terminal outcome from superseded run 45601786305."
       }
     ]
   },
