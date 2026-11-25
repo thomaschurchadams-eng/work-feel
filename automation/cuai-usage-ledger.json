@@ -6378,6 +6378,47 @@
       ],
       "summary": "November 25 completed four independently qualified live articles through the sole sequential publisher path: NCUA final-rules operating controls, federal anti-scam member education, DuPage/Arkatechture member-data foundation, and Mesh MCP payment-integration controls. The complete 24-candidate pool produced 4 qualified, 20 rejected and 0 backups, so slot 5 closed as an honest editorial hold with no filler, second scan or relaxed gate. Canonical closeout commit 7398d123652033d8ee8cdc9865fc9216f633b2e4 and natural run 45618836097 preserved history and reported zero distribution attempts/source-action exceptions. LinkedIn remained held with no provider read, reservation, submission or social write.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-25T08:24:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability follow-up verified that the existing daily publisher consumed the recovered PR #436 visual evidence, released the held sixth article, and reconciled the November 24 canonical state.",
+      "status": "recovered",
+      "incidentKey": "cuai-publishing:daily-cycle:2026-11-24",
+      "workUnits": {
+        "priorPublisherCheckpointsReconciled": 1,
+        "exactArtifactsIntegrityChecked": 1,
+        "responsiveArticleViewsReviewed": 2,
+        "responsiveListingViewsReviewed": 2,
+        "renderedChecksReviewed": 50,
+        "recoveredPublicationPullRequestsVerified": 1,
+        "productionDeploymentsVerified": 1,
+        "liveArticleRoutesVerified": 1,
+        "liveArtworkRoutesVerified": 1,
+        "homePlacementsVerified": 1,
+        "dailyCycleStatesReviewed": 2,
+        "publicationHistoryEntriesPreserved": 93,
+        "socialQueueItemsReviewed": 58,
+        "socialQueueWrites": 0,
+        "providerWrites": 0,
+        "articleCyclesStarted": 0,
+        "incidentClosuresRecorded": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "operationalLearning": {
+        "issue": "The November 24 sixth article remained publisher-owned and unmerged after the publisher runtime could not open the required exact screenshots, even though exact-head CI and the preview had succeeded.",
+        "correction": "Reliability Watch independently opened artifact 14923982572 at SHA-256 09844792b57377256097d5445de62b169f302a2d781b2716be85e445992a1901 and recorded the read-only visual observations under the original incident key. On the next ordinary publisher run, the same owner reconciled the unchanged head/run/artifact, performed its own terminal acceptance, merged PR #436, and completed canonical closeout.",
+        "test": "PR #436 merged as adc28a8f5996e453043e87dc75f9638b91f93b3c. The November 24 history now records six live articles and slot 6 as live-verified with the exact artifact, 472 source tests, 50 rendered checks and zero failures. The production article, artwork and homepage placement each return 200. Current production is READY and the November 25 cycle completed separately with four live articles plus one explicit editorial hold.",
+        "actualResult": "The transient visual-review handoff failure is recovered end to end without transferring publisher authority. All 93 daily-cycle history entries and 58 social records were preserved; no Reliability Watch article cycle, provider action, social reservation, schedule, credential, permission, model or editorial gate changed.",
+        "nextTrigger": "Keep exact artifact pixels accessible to the sole publisher. When the publisher runtime loses image-view capability, preserve the owned checkpoint and allow Reliability Watch to supply read-only observations, but require the same publisher to consume them and perform release and canonical closeout."
+      },
+      "summary": "Recovered and verified the November 24 slot-6 handoff. The existing publisher consumed the independently observed exact artifact, accepted and merged PR #436, verified production and closed the canonical state at six live articles. No authority transfer, duplicate cycle, provider write or social action occurred.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
