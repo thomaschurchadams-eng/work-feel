@@ -827,7 +827,7 @@
       },
       {
         "slot": 4,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
         "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html",
         "accountableOwner": "daily-publisher",
@@ -851,9 +851,42 @@
             "run": 45613340720,
             "job": 139202270952,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+            "run": 45613340720,
+            "job": 139202270952,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-25T12:51:13Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 441,
+            "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+            "run": 45613340720,
+            "job": 139202270952,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-25T12:53:56.362Z",
+            "artifactId": 15023461504,
+            "artifactSha256": "sha256:bad19949f2cf74838708c6393db67b9f5b4805e1f3ea7d8fbbc5ee75ea2f2757",
+            "artifactRevision": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+            "sourceTests": 472,
+            "renderedChecks": 52,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": [
+              "Exact artifact ZIP digest and integrity passed; revision.txt matched the persisted head.",
+              "Desktop and mobile article title, date, byline, section, original SVG, body hierarchy, source link, related coverage and footer render correctly without visible overflow.",
+              "Hosted gates passed 472 source tests, 52 rendered checks, 150 scrolled-article checks, 18 date/freshness journeys, two ordering journeys and eight Table Lore reader journeys."
+            ]
           }
         },
-        "nextAction": "Observe exact PR 441 design-checks result; require matching terminal validation and visual artifact review before release."
+        "nextAction": "Merge only PR 441 at exact head ad4ad1f0 after release planning confirms this persisted validated checkpoint; then verify exact production before live closeout."
       }
     ]
   },
