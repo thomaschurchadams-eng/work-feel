@@ -1435,7 +1435,7 @@
       "format": "role-specific-excerpt",
       "copy": "The most useful detail in Bank of America’s EricaAssist upgrade is not the model. It is the placement: AI assembles guidance inside the service employee’s workflow while the employee remains responsible for the conversation. For credit-union contact centers, that suggests a practical sequence—start with approved-source retrieval and next-step prompts, measure accuracy and repeat contacts alongside speed, and keep account changes behind existing approvals. What evidence would your team require before putting real-time AI guidance beside frontline staff? https://creditunionainews.com/news/bank-of-america-ericaassist-generative-ai.html",
       "scheduledFor": "2026-07-22T16:58:00-04:00",
-      "status": "scheduled",
+      "status": "sent",
       "trackingStatus": "legacy-untagged-baseline",
       "bufferPostId": "6a610ac5233e19378b1c1db4",
       "bufferChannelId": "6a53df0880cc80cdcaa76fb8",
@@ -1443,6 +1443,7 @@
       "draftedAt": "2026-07-22T14:24:06-04:00",
       "scheduledAt": "2026-07-22T14:29:39-04:00",
       "bufferDueAt": "2026-07-22T20:58:00.000Z",
+      "sentAt": "2026-07-22T20:58:00.884Z",
       "lastAttemptAt": "2026-07-22T14:29:39-04:00",
       "lastResult": "promoted-draft-to-queue"
     },
