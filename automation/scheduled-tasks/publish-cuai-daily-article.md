@@ -164,7 +164,7 @@ async function loadPublisherWritePlanner(tools, sourceCommit) {
   const repository = 'thomaschurchadams-eng/work-feel';
   if (!/^[a-f0-9]{40}$/.test(sourceCommit)) throw Error('exact-source-commit-required');
   const pins = {
-    'lib/daily-cycle-guards.cjs': '37595ff563802b891817f59ad116fa6c778ff666',
+    'lib/daily-cycle-guards.cjs': '6ae5b71906dbc8adf46a1285fa0be8c2cbf657ea',
     'lib/publisher-write-plan.cjs': '0527302479006a765f0ca03a6b95cdef230fe71b'
   };
   const modules = {};
@@ -285,6 +285,8 @@ The Cloud task must finish with a concise operational record: published or not p
 ## Owner-approved morning article target
 
 Use the current date-specific profile from `publishing-rules.json`, version 11. Beginning with the next not-yet-started eligible cycle after release, no earlier than Sunday November 22 Eastern, use the configured daily Eastern morning start and target ten distinct qualified articles, at most ten per day and 70 per Eastern Monday–Sunday week. Count all earlier published articles in the same week, including before activation. Release gate: confirm this exact effective day is still before its configured ordinary start, with no existing article-cycle start/checkpoint for that day. If that window is missed, do not merge this revision; move the effectiveDate to the next unopened day and reverify the changed exact head. Finish any started cycle at its original scope; do not reopen it, run again, or retroactively fill it. November 12’s six-article exception, the November 13–18 five-article limits, and the November 19–21 five-plus-optional history remain intact. A newer dated profile must not be used to reinterpret old receipts.
+
+For an ordinary morning edition on or after `morningArticleCycle.explicitHoldSlotsFrom`, an editorial-shortfall closeout must account for every effective target slot in `regularPublicationSlots`. Keep each verified live receipt; for each genuinely unfilled slot after the required editorial review, record an explicit owned `editorial-hold` with its reason. Never turn a pending technical checkpoint into an editorial hold to close the edition, add filler, or rewrite an earlier edition. Use the applicable in-progress, technical or approval path when the work is not actually closed.
 
 The same bounded morning cycle continues from article five into six through ten without a separate optional gate, intermediate closeout, different owner or later schedule. Prepare independent research or draft work only when it does not advance shared state. The sole daily publisher performs all canonical writes, PR release and live checks sequentially, keeping the exact existing source/preview/artifact/visual/production checks, open checkpoints, old receipts and all existing spending/access/security boundaries. No additional alerts or social slots; the existing Alert and LinkedIn rules, owners and holds remain unchanged.
 
