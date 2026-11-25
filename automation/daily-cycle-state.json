@@ -745,13 +745,25 @@
           },
           "pending": {
             "prNumber": 440,
-            "head": "2822f2aceda8bd47bcc92c4d69ff9916fcab166d",
-            "run": 45608095286,
-            "job": 139184136065,
+            "head": "4f209a72eae387141436aee47adef8352be4e659",
+            "run": 45608381606,
+            "job": 139185134527,
             "runAttempt": 1
-          }
+          },
+          "validationHistory": [
+            {
+              "prNumber": 440,
+              "head": "2822f2aceda8bd47bcc92c4d69ff9916fcab166d",
+              "run": 45608095286,
+              "job": 139184136065,
+              "runAttempt": 1,
+              "status": "superseded",
+              "observedAt": "2026-11-25T11:52:39.783Z",
+              "reason": "article route corrected to the already persisted canonical slot URL before terminal acceptance"
+            }
+          ]
         },
-        "nextAction": "Retain this exact PR/head/run/job/attempt checkpoint until terminal validation; do not infer release readiness."
+        "nextAction": "Retain the replacement exact PR/head/run/job/attempt checkpoint until terminal validation; the earlier head is superseded and cannot clear release."
       }
     ]
   },
