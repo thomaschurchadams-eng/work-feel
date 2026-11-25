@@ -725,7 +725,7 @@
       },
       {
         "slot": 3,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "DuPage Credit Union’s Data Unification Project Puts Member Context Before AI",
         "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html",
         "accountableOwner": "daily-publisher",
@@ -742,9 +742,16 @@
             "preparedAt": "2026-11-25T11:47:01.774Z",
             "classification": "Standard",
             "sourceReview": "Reviewed the November 24 DuPage Credit Union and Arkatechture announcement as vendor-and-institution supplied evidence. The article frames the work as a member-data foundation and implementation decision, not a proven AI outcome, and preserves the absence of independent performance results."
+          },
+          "pending": {
+            "prNumber": 440,
+            "head": "2822f2aceda8bd47bcc92c4d69ff9916fcab166d",
+            "run": 45608095286,
+            "job": 139184136065,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic article PR from this persisted preparation; record its exact PR/head/run/job/attempt checkpoint before any terminal or live claim."
+        "nextAction": "Retain this exact PR/head/run/job/attempt checkpoint until terminal validation; do not infer release readiness."
       }
     ]
   },
