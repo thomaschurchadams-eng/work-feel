@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-25",
     "status": "in-progress",
-    "outcomeSlot": 1,
+    "outcomeSlot": 2,
     "fullArticleCount": 1,
     "alertCount": 0,
     "publications": [
@@ -653,6 +653,29 @@
         "nextAction": "Merge only PR 438 at exact head 70db13fe after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout.",
         "productionCommit": "b3d6d1522f8d81a8c2d05a0057d949c212fe6f25",
         "verifiedAt": "2026-11-25T11:03:57.342Z"
+      },
+      {
+        "slot": 2,
+        "status": "prepared",
+        "candidateTitle": "Federal Anti-Scam Push Gives Credit Unions a Member-Education Test",
+        "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-25T11:53:12.085Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "cfpb-doj-anti-scam",
+            "eventKey": "cfpb-doj-anti-scam-surge-20261124",
+            "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
+            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-25T11:08:12.085Z",
+            "classification": "High",
+            "sourceReview": "Read current CFPB and Justice Department November 24 releases and standing FTC verification guidance. The package distinguishes federal enforcement totals from institution-level prevention, preserves allegation status, and does not present the campaign as a new credit-union rule or reimbursement standard."
+          }
+        },
+        "nextAction": "Create one atomic article package with canonical state unchanged; persist exact PR/head/run/job/attempt before terminal closeout."
       }
     ]
   },
