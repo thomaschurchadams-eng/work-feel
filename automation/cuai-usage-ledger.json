@@ -6419,6 +6419,51 @@
       },
       "summary": "Recovered and verified the November 24 slot-6 handoff. The existing publisher consumed the independently observed exact artifact, accepted and merged PR #436, verified production and closed the canonical state at six live articles. No authority transfer, duplicate cycle, provider write or social action occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261125-pr430-stale-handoff-degraded",
+      "timestamp": "2026-11-25T11:57:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 25 reliability check found the November 23 afternoon supplement still open with its original publisher handoff overdue and no terminal acceptance or explicit hold.",
+      "status": "degraded",
+      "incidentKey": "cuai-publishing:2026-11-23-afternoon:ak:pending",
+      "workUnits": {
+        "stalePublisherCheckpointsReconciled": 1,
+        "exactHeadValidationRunsReviewed": 1,
+        "successfulExactHeadValidationRunsObserved": 1,
+        "exactArtifactsIntegrityChecked": 1,
+        "responsiveArticleViewsReviewed": 2,
+        "responsiveListingViewsReviewed": 2,
+        "renderedChecksReviewed": 50,
+        "openPullRequestsReviewed": 1,
+        "dailyCycleStatesReviewed": 2,
+        "productionDeploymentsVerified": 1,
+        "runtimeErrorWindowsChecked": 1,
+        "publicationHistoryEntriesPreserved": 93,
+        "socialQueueItemsReviewed": 58,
+        "duplicateSocialReservationsObserved": 0,
+        "publisherRetriesAttempted": 0,
+        "articleCyclesStarted": 0,
+        "releaseActionsAttempted": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "operationalLearning": {
+        "issue": "PR #430 remained in pending-validation after its exact-head design job completed successfully. The canonical November 23 state never recorded terminal visual acceptance, an explicit editorial hold or a closed handoff, and the branch later became non-mergeable as main advanced.",
+        "correction": "Reliability Watch reconciled the original run, job and artifact without retrying publication. Artifact 14874137590 matched SHA-256 90bd7294c4df830e6c6a529e807c4b13554a4b8b8d2b0d24bfbaa8fb0fc9ec31 and revision 162842a55f45eda89689d32edcaa2b07e1547869; its 50 rendered checks had zero failures. Read-only review of the exact article and News listing at 390px and 1440px found no visible clipping, collision, overflow or broken imagery.",
+        "test": "Current main remains aa1464e98546b736ea4c0fd824f62fd688188343 and current production remains READY on that exact commit with no runtime errors in the inspected 24-hour window. The November 25 canonical cycle is complete with four live articles and one explicit editorial hold. The 58-row social queue has zero queued items, duplicate IDs or reservation conflicts.",
+        "actualResult": "The stale handoff is now precisely bounded but not released. PR #430 is still open and non-mergeable; no rebase, merge, deployment, publisher retry, article cycle, provider action, reservation or social write occurred. The existing daily-publisher retains authority to reconcile current-main freshness and either create a newly validated release candidate or explicitly hold and close the original incident key.",
+        "nextTrigger": "Every pending publisher checkpoint must receive a same-owner terminal acceptance, explicit hold or technical-failure record after the exact run finishes. Reliability Watch should treat an overdue pending checkpoint as degraded and restore the original-key handoff without assuming editorial or release authority."
+      },
+      "summary": "Detected and bounded an overdue November 23 publisher handoff. Exact-head CI and the frozen artifact succeeded and responsive visuals are clean, but PR #430 is now stale and non-mergeable and has no terminal publisher decision. The existing daily-publisher must reconcile current-main freshness and either revalidate a release candidate or explicitly hold and close the original incident key. No article, release, provider, queue, social, schedule, credential, permission or model action was taken.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
