@@ -586,11 +586,11 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "NCUA Final Rules Split the Work Across ALCO, Interlocks and Audits",
         "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-25T11:11:41.959Z",
+        "nextReviewAt": "2026-11-25T11:12:36.452Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -603,9 +603,16 @@
             "preparedAt": "2026-11-25T10:26:41.959Z",
             "classification": "High",
             "sourceReview": "Read the November 24 NCUA release and linked final-rule materials. The article will distinguish the corporate-credit-union ALCO/reporting changes, management-interlock threshold changes and supervisory-audit changes, retain effective-date and remaining-obligation limits, and avoid presenting three separate rules as one blanket deregulation result."
+          },
+          "pending": {
+            "prNumber": 438,
+            "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
+            "run": 45596690137,
+            "job": 139144498455,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic exact-head Insights package from this preparation commit, then persist its real PR/run/job/attempt before any terminal or release action."
+        "nextAction": "Inspect exact run 45596690137 job 139144498455 attempt 1 at head 70db13f; preserve the checkpoint through terminal and visual review."
       }
     ]
   },
