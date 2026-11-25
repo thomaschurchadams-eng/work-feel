@@ -4,6 +4,37 @@
   "images": [
     {"id":"dupage-member-data-foundation","medium":"vector-editorial","subject":"data-foundation","composition":"four-to-one-convergence","perspective":"flat-orthographic","palette":"navy-teal-cream-gold","lighting":"graphic-flat-light","texture":"clean-vector","scene":"data-tiles-joining-governed-foundation","topicFit":95,"editorialClarity":94,"score":68.4,"metrics":{"novelty":34,"topicFit":95,"editorialClarity":94},"rejected":false,"reasons":[],"articleUrl":"/news/dupage-arkatechture-member-data-foundation.html","imagePath":"/assets/dupage-member-data-foundation.svg","publishedAt":"2026-11-25","width":1200,"height":630,"conceptScore":68.4,"conceptAlternatives":[{"id":"governed-foundation","medium":"vector-editorial","subject":"data-foundation","composition":"four-to-one-convergence","perspective":"flat-orthographic","palette":"navy-teal-cream-gold","lighting":"graphic-flat-light","texture":"clean-vector","scene":"data-tiles-joining-governed-foundation","topicFit":95,"editorialClarity":94},{"id":"reconciliation-workbench","medium":"paper-cut","subject":"operations-environment","composition":"modular-grid","perspective":"overhead","palette":"emerald-cream","lighting":"soft-daylight","texture":"paper-fiber","scene":"separate-records-and-review-tray","topicFit":91,"editorialClarity":91},{"id":"lineage-bridge","medium":"ink-linocut","subject":"data-governance","composition":"layered-depth","perspective":"isometric","palette":"charcoal-amber","lighting":"graphic-flat-light","texture":"newsprint-grain","scene":"source-records-crossing-a-lineage-bridge","topicFit":89,"editorialClarity":90}],"selectionReason":"Highest passing concept score 68.4; original vector shows fragmented sources and one governed foundation without depicting an actual system or result.","generationPrompt":"Original editorial vector: four separate financial data tiles converge on a governed analytics foundation; navy, teal, cream and gold; no words, numbers, logos, people, actual dashboards or fabricated charts; landscape 1200x630.","rights":"Original CUAI-owned vector illustration; no third-party logo, actual interface, member data or identifiable person."},
     {
+      "id": "mesh-mcp-payment-integration-controls",
+      "medium": "vector-editorial",
+      "subject": "api-instructions-and-controls",
+      "composition": "prompt-schema-payment-rail",
+      "perspective": "flat-orthographic",
+      "palette": "navy-cream-gold-burgundy",
+      "lighting": "graphic-flat-light",
+      "texture": "clean-vector",
+      "scene": "instructions-pass-through-schema-and-approval-gates",
+      "topicFit": 95,
+      "editorialClarity": 94,
+      "score": 68.7,
+      "metrics": {"novelty": 36, "topicFit": 95, "editorialClarity": 94},
+      "rejected": false,
+      "reasons": [],
+      "articleUrl": "/news/mesh-mcp-payment-integration-controls.html",
+      "imagePath": "/assets/mesh-mcp-payment-controls.svg",
+      "publishedAt": "2026-11-25T07:10:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptScore": 68.7,
+      "conceptAlternatives": [
+        {"id":"prompt-schema-rail","medium":"vector-editorial","subject":"api-instructions-and-controls","composition":"prompt-schema-payment-rail","perspective":"flat-orthographic","palette":"navy-cream-gold-burgundy","lighting":"graphic-flat-light","texture":"clean-vector","scene":"instructions-pass-through-schema-and-approval-gates","topicFit":95,"editorialClarity":94},
+        {"id":"integration-workbench","medium":"paper-cut","subject":"developer-controls","composition":"layered-workbench","perspective":"overhead","palette":"emerald-cream","lighting":"soft-daylight","texture":"paper-fiber","scene":"code-card-separated-from-production-key","topicFit":91,"editorialClarity":92},
+        {"id":"payment-circuit-breaker","medium":"ink-linocut","subject":"payment-controls","composition":"asymmetric-gate","perspective":"side-view","palette":"charcoal-amber","lighting":"graphic-flat-light","texture":"newsprint-grain","scene":"generated-request-stopped-at-control-gate","topicFit":90,"editorialClarity":91}
+      ],
+      "selectionReason": "Highest passing concept score 68.7; the original vector separates prompt, schema validation and payment rail without depicting a real interface, transaction or vendor brand.",
+      "generationPrompt": "Original editorial vector: a prompt card passes through schema and approval gates before a payment rail; navy, cream, gold and burgundy; no words, numbers, logos, people, real interfaces or transactions; landscape 1200x630.",
+      "rights": "Original CUAI-owned vector illustration; no third-party logo, official interface, transaction data or identifiable person."
+    },
+    {
       "id": "federal-anti-scam-member-education",
       "medium": "vector-editorial",
       "subject": "member-verification",
