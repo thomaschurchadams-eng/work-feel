@@ -9,9 +9,14 @@
     "date": "2026-11-25",
     "status": "in-progress",
     "outcomeSlot": 1,
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html"
+      }
+    ],
     "evaluatedCandidateCount": 24,
     "beatsSearched": [
       "regulation-policy",
@@ -586,7 +591,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "NCUA Final Rules Split the Work Across ALCO, Interlocks and Audits",
         "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html",
         "accountableOwner": "daily-publisher",
@@ -645,7 +650,9 @@
             ]
           }
         },
-        "nextAction": "Merge only PR 438 at exact head 70db13fe after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout."
+        "nextAction": "Merge only PR 438 at exact head 70db13fe after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout.",
+        "productionCommit": "b3d6d1522f8d81a8c2d05a0057d949c212fe6f25",
+        "verifiedAt": "2026-11-25T11:03:57.342Z"
       }
     ]
   },
