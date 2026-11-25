@@ -827,7 +827,7 @@
       },
       {
         "slot": 4,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
         "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html",
         "accountableOwner": "daily-publisher",
@@ -844,9 +844,16 @@
             "preparedAt": "2026-11-25T12:21:47.824Z",
             "classification": "Standard",
             "sourceReview": "Reviewed the November 24 Mesh release and first-party product claims. The article reports the hosted MCP integration release, preserves that the read-only operation does not move funds, attributes faster-integration claims to the vendor, and treats schema validation, credential isolation, approval and production monitoring as the credit-union control questions rather than presenting a prompt as payment authorization."
+          },
+          "pending": {
+            "prNumber": 441,
+            "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+            "run": 45613340720,
+            "job": 139202270952,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Create one atomic article PR from this prepared checkpoint, then persist the exact PR/head/run/job/attempt before any terminal outcome."
+        "nextAction": "Observe exact PR 441 design-checks result; require matching terminal validation and visual artifact review before release."
       }
     ]
   },
