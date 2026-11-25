@@ -9,7 +9,7 @@
     "date": "2026-11-24",
     "status": "in-progress",
     "outcomeSlot": 6,
-    "fullArticleCount": 5,
+    "fullArticleCount": 6,
     "alertCount": 0,
     "publications": [
       {
@@ -31,6 +31,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/straitsx-ocbc-stablecoin-business-bank-pilot.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/uk-critical-provider-oversight-fees.html"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -946,7 +950,7 @@
       },
       {
         "slot": 6,
-      "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "UK Regulators Sketch How Critical-Provider Oversight Could Be Funded",
         "url": "https://creditunionainews.com/news/uk-critical-provider-oversight-fees.html",
         "accountableOwner": "daily-publisher",
@@ -970,37 +974,39 @@
             "run": 45399861074,
             "job": 138465293082,
             "runAttempt": 1
-        },
-        "terminalValidation": {
-          "head": "f4cf877a4afff84c1338fd94c56125ccb3c2a296",
-          "run": 45399861074,
-          "job": 138465293082,
-          "runAttempt": 1,
-          "conclusion": "success",
-          "runConclusion": "success",
-          "jobConclusion": "success",
-          "observedAt": "2026-11-25T10:05:46.769Z"
-        },
-        "terminalAcceptance": {
-          "prNumber": 436,
-          "head": "f4cf877a4afff84c1338fd94c56125ccb3c2a296",
-          "run": 45399861074,
-          "job": 138465293082,
-          "runAttempt": 1,
-          "visualReviewedAt": "2026-11-25T10:05:30.000Z",
-          "artifactId": 14923982572,
-          "artifactSha256": "sha256:09844792b57377256097d5445de62b169f302a2d781b2716be85e445992a1901",
-          "sourceTests": 472,
-          "renderedChecks": 50,
-          "failedChecks": 0,
-          "viewports": [
-            390,
-            1440
-          ],
-          "observations": "Verified the exact artifact ZIP digest and revision.txt, then opened the actual 390px and 1440px article, homepage and News listing plus the 390px artwork-404 recovery state. Confirmed the November 24 date, UK jurisdiction and non-final fee framing, original artwork, source links, responsive hierarchy and readable recovery card; exact-head CI reported zero rendered failures."
+          },
+          "terminalValidation": {
+            "head": "f4cf877a4afff84c1338fd94c56125ccb3c2a296",
+            "run": 45399861074,
+            "job": 138465293082,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-25T10:05:46.769Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 436,
+            "head": "f4cf877a4afff84c1338fd94c56125ccb3c2a296",
+            "run": 45399861074,
+            "job": 138465293082,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-25T10:05:30.000Z",
+            "artifactId": 14923982572,
+            "artifactSha256": "sha256:09844792b57377256097d5445de62b169f302a2d781b2716be85e445992a1901",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": "Verified the exact artifact ZIP digest and revision.txt, then opened the actual 390px and 1440px article, homepage and News listing plus the 390px artwork-404 recovery state. Confirmed the November 24 date, UK jurisdiction and non-final fee framing, original artwork, source links, responsive hierarchy and readable recovery card; exact-head CI reported zero rendered failures."
           }
         },
-      "nextAction": "Merge only PR 436 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout."
+        "nextAction": "Merge only PR 436 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
+        "productionCommit": "adc28a8f5996e453043e87dc75f9638b91f93b3c",
+        "verifiedAt": "2026-11-25T10:15:57.809Z"
       }
     ]
   },
