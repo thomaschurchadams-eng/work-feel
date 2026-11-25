@@ -3,6 +3,77 @@
   "description": "Append one record for every production hero image. Keep at least the most recent 50 records.",
   "images": [
     {
+      "id": "federal-anti-scam-member-education",
+      "medium": "vector-editorial",
+      "subject": "member-verification",
+      "composition": "message-gate-account",
+      "perspective": "flat-orthographic",
+      "palette": "navy-cream-gold-burgundy",
+      "lighting": "graphic-flat-light",
+      "texture": "clean-vector",
+      "scene": "suspicious-message-stopped-at-verification-gate",
+      "topicFit": 96,
+      "editorialClarity": 95,
+      "score": 69.1,
+      "metrics": {
+        "novelty": 35,
+        "topicFit": 96,
+        "editorialClarity": 95
+      },
+      "rejected": false,
+      "reasons": [],
+      "articleUrl": "/news/federal-anti-scam-member-education.html",
+      "imagePath": "/assets/federal-anti-scam-member-education.svg",
+      "publishedAt": "2026-11-25T06:08:00-05:00",
+      "width": 1200,
+      "height": 630,
+      "conceptScore": 69.1,
+      "conceptAlternatives": [
+        {
+          "id": "message-verification-gate",
+          "medium": "vector-editorial",
+          "subject": "member-verification",
+          "composition": "message-gate-account",
+          "perspective": "flat-orthographic",
+          "palette": "navy-cream-gold-burgundy",
+          "lighting": "graphic-flat-light",
+          "texture": "clean-vector",
+          "scene": "suspicious-message-stopped-at-verification-gate",
+          "topicFit": 96,
+          "editorialClarity": 95
+        },
+        {
+          "id": "trusted-channel-desk",
+          "medium": "paper-cut",
+          "subject": "operations-environment",
+          "composition": "layered-depth",
+          "perspective": "overhead",
+          "palette": "emerald-cream",
+          "lighting": "soft-daylight",
+          "texture": "paper-fiber",
+          "scene": "message-card-separated-from-trusted-contact-card",
+          "topicFit": 91,
+          "editorialClarity": 91
+        },
+        {
+          "id": "transfer-stop",
+          "medium": "ink-linocut",
+          "subject": "payments-and-controls",
+          "composition": "asymmetric-gate",
+          "perspective": "side-view",
+          "palette": "charcoal-amber",
+          "lighting": "graphic-flat-light",
+          "texture": "newsprint-grain",
+          "scene": "payment-path-stopping-at-review-marker",
+          "topicFit": 89,
+          "editorialClarity": 90
+        }
+      ],
+      "selectionReason": "Highest passing concept score 69.1; original vector keeps the verification decision clear without depicting a real message, account, agency or victim.",
+      "generationPrompt": "Original editorial vector: a suspicious message stops at a verification shield before reaching a protected member account; navy, cream, gold and burgundy; no words, numbers, logos, people, real messages or agency seals; landscape 1200x630.",
+      "rights": "Original CUAI-owned vector illustration; no third-party logo, official document, real message, account data or identifiable person."
+    },
+    {
       "id": "ncua-final-rules-operating-controls",
       "medium": "vector-editorial",
       "subject": "documents-and-controls",
@@ -15,7 +86,11 @@
       "topicFit": 95,
       "editorialClarity": 94,
       "score": 68.2,
-      "metrics": {"novelty": 34, "topicFit": 95, "editorialClarity": 94},
+      "metrics": {
+        "novelty": 34,
+        "topicFit": 95,
+        "editorialClarity": 94
+      },
       "rejected": false,
       "reasons": [],
       "articleUrl": "/insight-ncua-final-rules-operating-controls.html",
@@ -25,9 +100,45 @@
       "height": 630,
       "conceptScore": 68.2,
       "conceptAlternatives": [
-        {"id":"three-control-paths","medium":"vector-editorial","subject":"documents-and-controls","composition":"three-path-convergence","perspective":"flat-orthographic","palette":"navy-burgundy-gold","lighting":"graphic-flat-light","texture":"clean-vector","scene":"three-control-records-to-governance-table","topicFit":95,"editorialClarity":94},
-        {"id":"governance-ledger","medium":"tactile-paper-cut","subject":"documents-and-controls","composition":"modular-grid","perspective":"overhead","palette":"emerald-cream","lighting":"soft-daylight","texture":"paper-fiber","scene":"separate-policy-control-ledgers","topicFit":91,"editorialClarity":90},
-        {"id":"deadline-workbench","medium":"macro-still-life","subject":"operations-environment","composition":"layered-depth","perspective":"eye-level","palette":"terracotta-sky","lighting":"natural-window-light","texture":"wood-and-paper","scene":"three-unmarked-files-and-calendar-tab","topicFit":88,"editorialClarity":87}
+        {
+          "id": "three-control-paths",
+          "medium": "vector-editorial",
+          "subject": "documents-and-controls",
+          "composition": "three-path-convergence",
+          "perspective": "flat-orthographic",
+          "palette": "navy-burgundy-gold",
+          "lighting": "graphic-flat-light",
+          "texture": "clean-vector",
+          "scene": "three-control-records-to-governance-table",
+          "topicFit": 95,
+          "editorialClarity": 94
+        },
+        {
+          "id": "governance-ledger",
+          "medium": "tactile-paper-cut",
+          "subject": "documents-and-controls",
+          "composition": "modular-grid",
+          "perspective": "overhead",
+          "palette": "emerald-cream",
+          "lighting": "soft-daylight",
+          "texture": "paper-fiber",
+          "scene": "separate-policy-control-ledgers",
+          "topicFit": 91,
+          "editorialClarity": 90
+        },
+        {
+          "id": "deadline-workbench",
+          "medium": "macro-still-life",
+          "subject": "operations-environment",
+          "composition": "layered-depth",
+          "perspective": "eye-level",
+          "palette": "terracotta-sky",
+          "lighting": "natural-window-light",
+          "texture": "wood-and-paper",
+          "scene": "three-unmarked-files-and-calendar-tab",
+          "topicFit": 88,
+          "editorialClarity": 87
+        }
       ],
       "selectionReason": "Highest passing concept score68.2; three distinct mediums and compositions. Original vector illustration contains no logo, person, official document or fabricated data.",
       "generationPrompt": "Original editorial vector illustration: three distinct unlabelled control records for ALCO/reporting, interlocks and audits converge on a shared governance table; navy, burgundy and gold; no words, numbers, logos, people, agency seal or fabricated chart; landscape 1200x630.",

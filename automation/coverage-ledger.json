@@ -3,14 +3,54 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "federal-anti-scam-member-education",
+      "title": "Federal Anti-Scam Push Gives Credit Unions a Member-Education Test",
+      "url": "/news/federal-anti-scam-member-education.html",
+      "publishedAt": "2026-11-25T06:08:00-05:00",
+      "section": "news",
+      "beat": "security-fraud",
+      "functions": [
+        "risk-compliance",
+        "member-service",
+        "operations"
+      ],
+      "technologies": [
+        "fraud-analytics",
+        "identity-biometrics"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Fraud, member-service and operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "held-pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
+        "/insight-credit-union-account-recovery-evidence-record.html"
+      ],
+      "sourceTier": 1,
+      "score": 72.4,
+      "eventKey": "cfpb-doj-anti-scam-surge-20261124",
+      "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
+      "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+      "sourceLimit": "Federal enforcement and education campaign, not a new credit-union rule or proof of institution-level prevention results. Charges remain allegations unless proved."
+    },
+    {
       "id": "ncua-final-rules-operating-controls",
       "title": "NCUA Final Rules Split the Work Across ALCO, Interlocks and Audits",
       "url": "/insight-ncua-final-rules-operating-controls.html",
       "publishedAt": "2026-11-25T05:32:00-05:00",
       "section": "insights",
       "beat": "regulation-policy",
-      "functions": ["risk-compliance", "operations", "board-strategy"],
-      "technologies": ["regtech-monitoring"],
+      "functions": [
+        "risk-compliance",
+        "operations",
+        "board-strategy"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
       "format": "analysis",
       "audience": "functional-leader",
       "primaryAudience": "Compliance, operations and board-governance leaders",
@@ -18,7 +58,10 @@
       "promotionPriority": "High",
       "socialDecision": "held-pending-live-and-provider-review",
       "homepageTreatment": "latest-insights-first-card",
-      "internalLinkTargets": ["/insight-credit-union-proposed-vendor-risk-guidance.html", "/news/credit-union-board-ai-risk-oversight.html"],
+      "internalLinkTargets": [
+        "/insight-credit-union-proposed-vendor-risk-guidance.html",
+        "/news/credit-union-board-ai-risk-oversight.html"
+      ],
       "sourceTier": 1,
       "score": 77.4,
       "eventKey": "ncua-three-final-deregulation-rules-20261124",
