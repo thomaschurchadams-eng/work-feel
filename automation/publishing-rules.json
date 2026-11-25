@@ -90,6 +90,7 @@
     "fullArticleMaximumPerWeekday": 7,
     "morningArticleCycle": {
       "effectiveDate": "2026-11-22",
+      "explicitHoldSlotsFrom": "2026-11-26",
       "dailyTargetAndMaximum": 10,
       "weeklyMaximum": 70,
       "candidateTarget": 24,

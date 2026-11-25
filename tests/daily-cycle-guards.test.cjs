@@ -109,3 +109,33 @@ test('required current schema is checked for both sides before date continuity',
     const b = state(), c = copy(b); mutate(c); assert.throws(() => validateCurrentContinuity(b, c)); assert.throws(() => validateCurrentContinuity(c, b));
   }
 });
+
+test('prospective held morning closeout accounts for ten slots without publishing filler', () => {
+  const { validatePublisherCadence } = require('../lib/daily-cycle-guards.cjs');
+  const rules = require('../automation/publishing-rules.json');
+  const start = rules.standardCycle.morningArticleCycle.explicitHoldSlotsFrom;
+  const record = date => {
+    const publications = Array.from({ length: 4 }, (_, i) => ({ type: 'article', url: '/news/closeout-fixture-' + (i + 1) + '.html' }));
+    return { date, status: 'in-progress', publications, fullArticleCount: 4,
+      discoveryCoverage: { candidateInventory: [] },
+      regularPublicationSlots: publications.map((p, i) => ({ slot: i + 1, status: 'live-verified', url: p.url })) };
+  };
+  const makeClose = (before, last) => ({ ...copy(before), status: 'completed-with-editorial-holds',
+    regularPublicationSlots: [...before.regularPublicationSlots, ...Array.from({ length: last - 4 }, (_, i) => ({
+      slot: i + 5, status: 'editorial-hold', accountableOwner: 'daily-publisher',
+      holdReason: 'Fixture: no independently qualifying story.'
+    }))] });
+  const before = record(start), missing = makeClose(before, 5), complete = makeClose(before, 10);
+  const error = /held morning closeout requires an explicit outcome for every target slot/;
+  assert.throws(() => validatePublisherCadence(before, missing, rules), error);
+  validatePublisherCadence(before, complete, rules);
+  const staleDate = new Date(Date.parse(start + 'T12:00:00Z') - 86400000).toISOString().slice(0, 10);
+  const historical = record(staleDate);
+  validatePublisherCadence(historical, makeClose(historical, 5), rules);
+  for (const replacement of [{ holdReason: ' ' }, { status: 'prepared' }, { accountableOwner: 'other' }]) {
+    const bad = copy(complete);
+    Object.assign(bad.regularPublicationSlots[9], replacement);
+    assert.throws(() => validatePublisherCadence(before, bad, rules), error);
+  }
+  assert.equal(complete.fullArticleCount, 4);
+});
