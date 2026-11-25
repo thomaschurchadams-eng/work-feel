@@ -102,6 +102,19 @@
 
   const alertsData = [
     {
+      label: 'BSA / Filing Operations',
+      headline: 'FinCEN Extends SDTM Filing Deadlines After Service Disruption',
+      summary:
+        'FinCEN issued temporary, limited relief on November 24 for financial institutions that used Secure Data Transfer Mode to submit Bank Secrecy Act reports as of November 18. Reports otherwise due from November 18 through December 29 must instead be filed by December 30. The order says the relief responds to a service disruption and does not suspend other BSA/AML obligations, including ongoing monitoring for suspicious transactions.',
+      impact:
+        'Credit-union BSA/AML, compliance and filing-operations teams should confirm whether their institution used SDTM on November 18, inventory affected reports due from November 18 through December 29, document the revised December 30 filing deadline, preserve ongoing monitoring and escalation, and use FinCEN’s unaffected hotline when suspicious-activity information must reach law enforcement urgently.',
+      sourceName: 'Financial Crimes Enforcement Network',
+      sourceUrl:
+        'https://www.fincen.gov/news/news-releases/temporary-limited-exceptive-relief-certain-bank-secrecy-act-corporate-transparency-act-submissions/',
+      date: 'Nov 24, 2026',
+      slug: 'fincen-sdtm-filing-relief-service-disruption-november-2026'
+    },
+    {
       label: 'BSA / Sanctions',
       headline: 'FinCEN Maps $14.7 Billion in Potential Iranian Shadow-Banking Activity',
       summary:

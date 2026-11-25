@@ -10,7 +10,7 @@
     "status": "completed-with-editorial-holds",
     "outcomeSlot": 5,
     "fullArticleCount": 4,
-    "alertCount": 0,
+    "alertCount": 1,
     "publications": [
       {
         "type": "article",
@@ -27,6 +27,13 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html"
+      },
+      {
+        "type": "alert",
+        "title": "FinCEN Extends SDTM Filing Deadlines After Service Disruption",
+        "url": "https://creditunionainews.com/alerts/#fincen-sdtm-filing-relief-service-disruption-november-2026",
+        "sourceUrl": "https://www.fincen.gov/news/news-releases/temporary-limited-exceptive-relief-certain-bank-secrecy-act-corporate-transparency-act-submissions/",
+        "sourceDate": "Nov 24, 2026"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -916,7 +923,17 @@
       }
     ],
     "blockedReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
-    "updatedAt": "2026-11-25T12:57:48.936Z"
+    "updatedAt": "2026-11-25T20:31:26.317Z",
+    "alertCycle": {
+      "owner": "cuai-operating-system",
+      "status": "released-awaiting-exact-deployment-receipt",
+      "sourceReviewAt": "2026-11-25T20:31:26.317Z",
+      "dedupeKey": "cuai-alert:fincen-sdtm-filing-relief:2026-11-24",
+      "officialSourceSurfacesReviewed": 4,
+      "candidatesEvaluated": 1,
+      "alertsPublished": 1,
+      "note": "Selected FinCEN Order FIN-2026-R002 because it creates a distinct current filing-operations change tied to a service disruption: eligible financial institutions using SDTM as of November 18 receive temporary relief for covered BSA reports otherwise due November 18 through December 29, with a December 30 filing deadline. Other BSA/AML obligations, including ongoing suspicious-activity monitoring, remain in force. The item is absent from canonical coverage and current handoffs. Publication time remains intentionally unfilled until the first exact production deployment is verified."
+    }
   },
   "history": [
     {
