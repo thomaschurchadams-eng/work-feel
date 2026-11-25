@@ -7,8 +7,8 @@
   },
   "current": {
     "date": "2026-11-25",
-    "status": "in-progress",
-    "outcomeSlot": 4,
+    "status": "completed-with-editorial-holds",
+    "outcomeSlot": 5,
     "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
@@ -598,7 +598,7 @@
     },
     "socialDecision": {
       "status": "held-no-reservation",
-      "reason": "No November 25 article is live yet and no fresh complete provider inventory was obtained. Historical destination-review holds remain; no reservation or distribution attempt was made."
+      "reason": "Four November 25 articles are live, but no fresh complete provider inventory was obtained and historical destination-review holds remain. No LinkedIn reservation, submission or distribution attempt was made."
     },
     "regularPublicationSlots": [
       {
@@ -893,8 +893,30 @@
         "nextAction": "Merge only PR 441 at exact head ad4ad1f0 after release planning confirms this persisted validated checkpoint; then verify exact production before live closeout.",
         "productionCommit": "2a4ed19d6f5dfd6e02df1c7514e800348b8b2897",
         "verifiedAt": "2026-11-25T12:56:12.530Z"
+      },
+      {
+        "slot": 5,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November25 core article slot 5",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-26T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 24,
+            "qualified": 4,
+            "rejected": 20,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "The next existing scheduled weekday cycle performs its own refreshed current-source bootstrap; no retrospective fill or reopening of the November 25 pool."
       }
-    ]
+    ],
+    "blockedReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
+    "updatedAt": "2026-11-25T12:57:48.936Z"
   },
   "history": [
     {
