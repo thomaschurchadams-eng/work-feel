@@ -7,8 +7,8 @@
   },
   "current": {
     "date": "2026-11-24",
-    "status": "in-progress",
-    "outcomeSlot": 6,
+    "status": "held",
+    "outcomeSlot": 10,
     "fullArticleCount": 6,
     "alertCount": 0,
     "publications": [
@@ -1007,6 +1007,86 @@
         "nextAction": "Merge only PR 436 at the accepted exact head with expected-head protection, then verify the production deployment, live article, artwork and placements before closeout.",
         "productionCommit": "adc28a8f5996e453043e87dc75f9638b91f93b3c",
         "verifiedAt": "2026-11-25T10:15:57.809Z"
+      },
+      {
+        "slot": 7,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November24 article slot 7",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-25T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "The single bounded November 24 pool screened 24 unique candidates. Six independently qualified and were released; the other 18 were rejected for duplicate or already-covered events, stale or invalid source dates, insufficient confidence or score, non-distinct product/advocacy framing, or absent operating results. No qualified backup remained. No filler, backfill, second scan or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 24,
+            "qualified": 6,
+            "rejected": 18,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "The November 25 existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of the November 24 pool."
+      },
+      {
+        "slot": 8,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November24 article slot 8",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-25T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "The single bounded November 24 pool screened 24 unique candidates. Six independently qualified and were released; the other 18 were rejected for duplicate or already-covered events, stale or invalid source dates, insufficient confidence or score, non-distinct product/advocacy framing, or absent operating results. No qualified backup remained. No filler, backfill, second scan or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 24,
+            "qualified": 6,
+            "rejected": 18,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "The November 25 existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of the November 24 pool."
+      },
+      {
+        "slot": 9,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November24 article slot 9",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-25T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "The single bounded November 24 pool screened 24 unique candidates. Six independently qualified and were released; the other 18 were rejected for duplicate or already-covered events, stale or invalid source dates, insufficient confidence or score, non-distinct product/advocacy framing, or absent operating results. No qualified backup remained. No filler, backfill, second scan or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 24,
+            "qualified": 6,
+            "rejected": 18,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "The November 25 existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of the November 24 pool."
+      },
+      {
+        "slot": 10,
+        "status": "editorial-hold",
+        "candidateTitle": "Unfilled qualified November24 article slot 10",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-25T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "The single bounded November 24 pool screened 24 unique candidates. Six independently qualified and were released; the other 18 were rejected for duplicate or already-covered events, stale or invalid source dates, insufficient confidence or score, non-distinct product/advocacy framing, or absent operating results. No qualified backup remained. No filler, backfill, second scan or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateCount": 24,
+            "qualified": 6,
+            "rejected": 18,
+            "backupCandidates": 0,
+            "candidateTarget": 24,
+            "sameMorningInventoryRetained": true
+          }
+        },
+        "nextAction": "The November 25 existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of the November 24 pool."
       }
     ]
   },
