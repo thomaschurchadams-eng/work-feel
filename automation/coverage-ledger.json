@@ -2,6 +2,133 @@
   "version": 1,
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
+    {"id":"dupage-member-data-foundation","title":"DuPage Credit Union Plans a Unified Member-Data Foundation","url":"/news/dupage-arkatechture-member-data-foundation.html","publishedAt":"2026-11-25","publicationTimeBasis":"Original publication date at Eastern day precision; exact first production verification will be retained in canonical state.","section":"news","beat":"credit-union-industry","functions":["it-data-cybersecurity","member-service","operations"],"technologies":["data-decisioning","agents-automation"],"format":"reported-news","audience":"functional-leader","primaryAudience":"Data, technology and operations leaders","maturity":"developing","promotionPriority":"Standard","socialDecision":"held-pending-live-and-provider-review","homepageTreatment":"latest-news-first-card","internalLinkTargets":["/news/data-governance-trust-credit-unions.html","/insight-ai-inventory-change-control-playbook-credit-unions.html"],"sourceTier":2,"score":70.2,"eventKey":"dupage-arkatechture-data-platform-20261124","sourceUrl":"https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/","sourcePublishedAt":"2026-11-24T09:00:00-05:00","sourceLimit":"Issuer/vendor announcement establishes selection and intended inputs. Production migration, data quality, employee adoption, AI use and member outcomes remain unreported."},
+    {
+      "id": "mesh-mcp-payment-integration-controls",
+      "title": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
+      "url": "/news/mesh-mcp-payment-integration-controls.html",
+      "publishedAt": "2026-11-25T07:10:00-05:00",
+      "section": "news",
+      "beat": "payments-core-fintech",
+      "functions": ["payments-deposits", "it-data-cybersecurity", "vendor-management"],
+      "technologies": ["generative-ai", "api-integration"],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Payments, technology and vendor-management leaders",
+      "maturity": "developing",
+      "promotionPriority": "Standard",
+      "socialDecision": "held-pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": ["/news/gemini-agent-card-purchases-evidence.html", "/news/bank-regulators-agentic-ai-shutdown-controls.html"],
+      "sourceTier": 1,
+      "score": 70.8,
+      "eventKey": "mesh-mcp-payments-integration-20261124",
+      "sourceUrl": "https://www.meshpay.com/press-releases/mesh-mcp-launch",
+      "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
+      "sourceLimit": "Mesh says the hosted MCP server is live to partners, read-only and validates requests against its API specification. Integration-time, security and performance statements are vendor claims, not independent results, and the server does not itself authorize or move funds."
+    },
+    {
+      "id": "federal-anti-scam-member-education",
+      "title": "Federal Anti-Scam Push Gives Credit Unions a Member-Education Test",
+      "url": "/news/federal-anti-scam-member-education.html",
+      "publishedAt": "2026-11-25T06:08:00-05:00",
+      "section": "news",
+      "beat": "security-fraud",
+      "functions": [
+        "risk-compliance",
+        "member-service",
+        "operations"
+      ],
+      "technologies": [
+        "fraud-analytics",
+        "identity-biometrics"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Fraud, member-service and operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "held-pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/rbfcu-impersonation-scam-regulation-e-investigations.html",
+        "/insight-credit-union-account-recovery-evidence-record.html"
+      ],
+      "sourceTier": 1,
+      "score": 72.4,
+      "eventKey": "cfpb-doj-anti-scam-surge-20261124",
+      "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
+      "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+      "sourceLimit": "Federal enforcement and education campaign, not a new credit-union rule or proof of institution-level prevention results. Charges remain allegations unless proved."
+    },
+    {
+      "id": "ncua-final-rules-operating-controls",
+      "title": "NCUA Final Rules Split the Work Across ALCO, Interlocks and Audits",
+      "url": "/insight-ncua-final-rules-operating-controls.html",
+      "publishedAt": "2026-11-25T05:32:00-05:00",
+      "section": "insights",
+      "beat": "regulation-policy",
+      "functions": [
+        "risk-compliance",
+        "operations",
+        "board-strategy"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
+      "format": "analysis",
+      "audience": "functional-leader",
+      "primaryAudience": "Compliance, operations and board-governance leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "held-pending-live-and-provider-review",
+      "homepageTreatment": "latest-insights-first-card",
+      "internalLinkTargets": [
+        "/insight-credit-union-proposed-vendor-risk-guidance.html",
+        "/news/credit-union-board-ai-risk-oversight.html"
+      ],
+      "sourceTier": 1,
+      "score": 77.4,
+      "eventKey": "ncua-three-final-deregulation-rules-20261124",
+      "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-three-final-rules-deregulation",
+      "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+      "sourceLimit": "Three distinct final rules effective December 28, 2026. Removed filing or prescriptive provisions do not erase retained monthly ALCO review, board oversight, examiner access, statutory audit, account-verification or other interlock controls."
+    },
+    {
+      "id": "uk-critical-provider-oversight-fees",
+      "title": "UK Regulators Sketch How Critical-Provider Oversight Could Be Funded",
+      "url": "/news/uk-critical-provider-oversight-fees.html",
+      "publishedAt": "2026-11-24 GMT-0500",
+      "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production/live time will be recorded in the November 24 canonical slot after release.",
+      "section": "news",
+      "beat": "vendor-management",
+      "functions": [
+        "vendor-management",
+        "risk-compliance",
+        "operations"
+      ],
+      "technologies": [
+        "privacy-security",
+        "cloud-infrastructure"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Vendor-management, operational-resilience and risk leaders",
+      "maturity": "developing",
+      "promotionPriority": "High",
+      "socialDecision": "held-pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/ecb-ai-shared-supplier-concentration.html",
+        "/news/trustage-conditional-data-notification-preparation.html"
+      ],
+      "sourceTier": 1,
+      "score": 68,
+      "eventKey": "uk-ctp-regulatory-fee-discussion-20261124",
+      "sourceUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/november/critical-third-parties-regulatory-fees-and-cost-recovery",
+      "sourcePublishedAt": "2026-11-24T07:00:00Z",
+      "sourceLimit": "The regulators are discussing charging principles, tariff base, fee model and calculation and requesting income data; responses are due January 19, 2027 and a further update is expected in Spring 2027. No final fee, U.S. requirement or credit-union result is established."
+    },
     {
       "id": "straitsx-ocbc-stablecoin-business-bank-pilot",
       "title": "StraitsX and OCBC Test Stablecoin Settlement Behind a Bank Account",
@@ -10,8 +137,14 @@
       "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production/live time will be recorded in the November 24 canonical slot after release.",
       "section": "news",
       "beat": "payments-digital-assets",
-      "functions": ["payments-deposits", "operations"],
-      "technologies": ["realtime-embedded-finance", "data-decisioning"],
+      "functions": [
+        "payments-deposits",
+        "operations"
+      ],
+      "technologies": [
+        "realtime-embedded-finance",
+        "data-decisioning"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Payments, treasury-management and operations leaders",
@@ -19,7 +152,10 @@
       "promotionPriority": "High",
       "socialDecision": "held-pending-live-and-provider-review",
       "homepageTreatment": "latest-news-first-card",
-      "internalLinkTargets": ["/news/alloya-cuusd-stablecoin-pilot.html", "/news/sofi-stablecoin-card-settlement.html"],
+      "internalLinkTargets": [
+        "/news/alloya-cuusd-stablecoin-pilot.html",
+        "/news/sofi-stablecoin-card-settlement.html"
+      ],
       "sourceTier": 1,
       "score": 69.8,
       "eventKey": "straitsx-ocbc-b2b-stablecoin-bank-pilot-20261123",
@@ -35,8 +171,13 @@
       "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production/live time will be recorded in the November 24 canonical slot after release.",
       "section": "news",
       "beat": "regulation-policy",
-      "functions": ["risk-compliance", "lending-collections"],
-      "technologies": ["regtech-monitoring"],
+      "functions": [
+        "risk-compliance",
+        "lending-collections"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Mortgage, collections, legal and compliance leaders",
@@ -44,7 +185,10 @@
       "promotionPriority": "High",
       "socialDecision": "held-pending-live-and-provider-review",
       "homepageTreatment": "latest-news-first-card",
-      "internalLinkTargets": ["/news/fhfa-mortgage-insurance-cancellation-pilot.html", "/news/noffcu-duome-shared-equity-homeownership.html"],
+      "internalLinkTargets": [
+        "/news/fhfa-mortgage-insurance-cancellation-pilot.html",
+        "/news/noffcu-duome-shared-equity-homeownership.html"
+      ],
       "sourceTier": 1,
       "score": 75,
       "eventKey": "treasury-institutional-investor-prohibition-comments-20261124",
@@ -60,8 +204,14 @@
       "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production/live time will be recorded in the November 24 canonical slot after release.",
       "section": "news",
       "beat": "security-fraud",
-      "functions": ["operations", "risk-compliance"],
-      "technologies": ["privacy-security", "regtech-monitoring"],
+      "functions": [
+        "operations",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "privacy-security",
+        "regtech-monitoring"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Operations, risk and business-continuity leaders",
@@ -69,7 +219,10 @@
       "promotionPriority": "High",
       "socialDecision": "held-pending-live-and-provider-review",
       "homepageTreatment": "latest-news-first-card",
-      "internalLinkTargets": ["/news/trustage-cyberattack-recovery-credit-unions.html", "/insight-credit-union-ai-contract-monitoring-controls.html"],
+      "internalLinkTargets": [
+        "/news/trustage-cyberattack-recovery-credit-unions.html",
+        "/insight-credit-union-ai-contract-monitoring-controls.html"
+      ],
       "sourceTier": 1,
       "score": 75.1,
       "eventKey": "boe-dygist-insurance-crisis-exercise-20261123",
@@ -85,8 +238,14 @@
       "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production/live time will be recorded in the November 24 canonical slot after release.",
       "section": "news",
       "beat": "regulation-policy",
-      "functions": ["risk-compliance", "it-data-cybersecurity"],
-      "technologies": ["data-decisioning", "regtech-monitoring"],
+      "functions": [
+        "risk-compliance",
+        "it-data-cybersecurity"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "regtech-monitoring"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Risk, compliance and data leaders at CDFI credit unions",
@@ -94,7 +253,10 @@
       "promotionPriority": "High",
       "socialDecision": "held-pending-live-and-provider-review",
       "homepageTreatment": "latest-news-first-card",
-      "internalLinkTargets": ["/news/cdfi-certification-credit-union-accountability-proposal.html", "/news/ncua-ai-supervision-budget.html"],
+      "internalLinkTargets": [
+        "/news/cdfi-certification-credit-union-accountability-proposal.html",
+        "/news/ncua-ai-supervision-budget.html"
+      ],
       "sourceTier": 1,
       "score": 76,
       "eventKey": "cdfi-acr-tlr-consumer-loan-reporting-comments-20261123",
@@ -110,8 +272,13 @@
       "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production/live time will be recorded in the November 24 canonical slot after release.",
       "section": "news",
       "beat": "regulation-policy",
-      "functions": ["board-strategy", "risk-compliance"],
-      "technologies": ["regtech-monitoring"],
+      "functions": [
+        "board-strategy",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Board, strategy and compliance leaders",
@@ -119,7 +286,10 @@
       "promotionPriority": "High",
       "socialDecision": "held-pending-live-and-provider-review",
       "homepageTreatment": "latest-news-first-card",
-      "internalLinkTargets": ["/news/ascend-lge-credit-union-merger-approvals-systems.html", "/news/gecu-bank-of-the-southwest-integration.html"],
+      "internalLinkTargets": [
+        "/news/ascend-lge-credit-union-merger-approvals-systems.html",
+        "/news/gecu-bank-of-the-southwest-integration.html"
+      ],
       "sourceTier": 1,
       "score": 80.6,
       "eventKey": "fdic-bank-sale-credit-union-merger-comments-20261124",

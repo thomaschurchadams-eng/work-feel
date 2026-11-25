@@ -6342,6 +6342,128 @@
       },
       "summary": "Monday operating review consumed the publisher's honest one-of-ten outcome and documented find/qualify as the evidenced bottleneck. It released one current FinCEN Alert after exact-head source and rendered validation, reviewed an exact-current analytics artifact, diagnosed but did not edit one stale topic page, found no additional qualified November 23 lead, and recorded five approval-gated public distribution opportunities. Recent search traffic accelerated while direct traffic remained dominant and less engaged; this does not establish subscriptions or revenue. No external outreach or social write occurred.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-25T13:01:40.661Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "CUAI daily-publisher:2026-11-25",
+      "status": "completed-with-editorial-holds",
+      "eventId": "cuai-publisher-2026-11-25-closeout",
+      "dedupeKey": "cuai-publishing:daily-cycle:2026-11-25",
+      "workUnits": {
+        "publisherCycles": 1,
+        "candidateEvaluations": 24,
+        "distinctDailyDirectionsCovered": 5,
+        "articlesPublished": 4,
+        "rejectedCandidates": 20,
+        "backupCandidates": 0,
+        "editorialHeldSlots": 1,
+        "articlePullRequestsReleased": 4,
+        "exactHeadCIArtifactReviews": 4,
+        "productionDeploymentsVerified": 4,
+        "liveArticleChecks": 4,
+        "issueBusHandoffs": 1,
+        "socialReservations": 0,
+        "socialSchedulingAttempts": 0,
+        "distributionAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "Public primary-source sites",
+        "Existing image generation"
+      ],
+      "summary": "November 25 completed four independently qualified live articles through the sole sequential publisher path: NCUA final-rules operating controls, federal anti-scam member education, DuPage/Arkatechture member-data foundation, and Mesh MCP payment-integration controls. The complete 24-candidate pool produced 4 qualified, 20 rejected and 0 backups, so slot 5 closed as an honest editorial hold with no filler, second scan or relaxed gate. Canonical closeout commit 7398d123652033d8ee8cdc9865fc9216f633b2e4 and natural run 45618836097 preserved history and reported zero distribution attempts/source-action exceptions. LinkedIn remained held with no provider read, reservation, submission or social write.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-25T08:24:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "recovery",
+      "trigger": "Scheduled reliability follow-up verified that the existing daily publisher consumed the recovered PR #436 visual evidence, released the held sixth article, and reconciled the November 24 canonical state.",
+      "status": "recovered",
+      "incidentKey": "cuai-publishing:daily-cycle:2026-11-24",
+      "workUnits": {
+        "priorPublisherCheckpointsReconciled": 1,
+        "exactArtifactsIntegrityChecked": 1,
+        "responsiveArticleViewsReviewed": 2,
+        "responsiveListingViewsReviewed": 2,
+        "renderedChecksReviewed": 50,
+        "recoveredPublicationPullRequestsVerified": 1,
+        "productionDeploymentsVerified": 1,
+        "liveArticleRoutesVerified": 1,
+        "liveArtworkRoutesVerified": 1,
+        "homePlacementsVerified": 1,
+        "dailyCycleStatesReviewed": 2,
+        "publicationHistoryEntriesPreserved": 93,
+        "socialQueueItemsReviewed": 58,
+        "socialQueueWrites": 0,
+        "providerWrites": 0,
+        "articleCyclesStarted": 0,
+        "incidentClosuresRecorded": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "operationalLearning": {
+        "issue": "The November 24 sixth article remained publisher-owned and unmerged after the publisher runtime could not open the required exact screenshots, even though exact-head CI and the preview had succeeded.",
+        "correction": "Reliability Watch independently opened artifact 14923982572 at SHA-256 09844792b57377256097d5445de62b169f302a2d781b2716be85e445992a1901 and recorded the read-only visual observations under the original incident key. On the next ordinary publisher run, the same owner reconciled the unchanged head/run/artifact, performed its own terminal acceptance, merged PR #436, and completed canonical closeout.",
+        "test": "PR #436 merged as adc28a8f5996e453043e87dc75f9638b91f93b3c. The November 24 history now records six live articles and slot 6 as live-verified with the exact artifact, 472 source tests, 50 rendered checks and zero failures. The production article, artwork and homepage placement each return 200. Current production is READY and the November 25 cycle completed separately with four live articles plus one explicit editorial hold.",
+        "actualResult": "The transient visual-review handoff failure is recovered end to end without transferring publisher authority. All 93 daily-cycle history entries and 58 social records were preserved; no Reliability Watch article cycle, provider action, social reservation, schedule, credential, permission, model or editorial gate changed.",
+        "nextTrigger": "Keep exact artifact pixels accessible to the sole publisher. When the publisher runtime loses image-view capability, preserve the owned checkpoint and allow Reliability Watch to supply read-only observations, but require the same publisher to consume them and perform release and canonical closeout."
+      },
+      "summary": "Recovered and verified the November 24 slot-6 handoff. The existing publisher consumed the independently observed exact artifact, accepted and merged PR #436, verified production and closed the canonical state at six live articles. No authority transfer, duplicate cycle, provider write or social action occurred.",
+      "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261125-pr430-stale-handoff-degraded",
+      "timestamp": "2026-11-25T11:57:00-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 25 reliability check found the November 23 afternoon supplement still open with its original publisher handoff overdue and no terminal acceptance or explicit hold.",
+      "status": "degraded",
+      "incidentKey": "cuai-publishing:2026-11-23-afternoon:ak:pending",
+      "workUnits": {
+        "stalePublisherCheckpointsReconciled": 1,
+        "exactHeadValidationRunsReviewed": 1,
+        "successfulExactHeadValidationRunsObserved": 1,
+        "exactArtifactsIntegrityChecked": 1,
+        "responsiveArticleViewsReviewed": 2,
+        "responsiveListingViewsReviewed": 2,
+        "renderedChecksReviewed": 50,
+        "openPullRequestsReviewed": 1,
+        "dailyCycleStatesReviewed": 2,
+        "productionDeploymentsVerified": 1,
+        "runtimeErrorWindowsChecked": 1,
+        "publicationHistoryEntriesPreserved": 93,
+        "socialQueueItemsReviewed": 58,
+        "duplicateSocialReservationsObserved": 0,
+        "publisherRetriesAttempted": 0,
+        "articleCyclesStarted": 0,
+        "releaseActionsAttempted": 0,
+        "providerWriteAttempts": 0,
+        "socialQueueWrites": 0,
+        "ledgerEntriesAppended": 1
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site"
+      ],
+      "operationalLearning": {
+        "issue": "PR #430 remained in pending-validation after its exact-head design job completed successfully. The canonical November 23 state never recorded terminal visual acceptance, an explicit editorial hold or a closed handoff, and the branch later became non-mergeable as main advanced.",
+        "correction": "Reliability Watch reconciled the original run, job and artifact without retrying publication. Artifact 14874137590 matched SHA-256 90bd7294c4df830e6c6a529e807c4b13554a4b8b8d2b0d24bfbaa8fb0fc9ec31 and revision 162842a55f45eda89689d32edcaa2b07e1547869; its 50 rendered checks had zero failures. Read-only review of the exact article and News listing at 390px and 1440px found no visible clipping, collision, overflow or broken imagery.",
+        "test": "Current main remains aa1464e98546b736ea4c0fd824f62fd688188343 and current production remains READY on that exact commit with no runtime errors in the inspected 24-hour window. The November 25 canonical cycle is complete with four live articles and one explicit editorial hold. The 58-row social queue has zero queued items, duplicate IDs or reservation conflicts.",
+        "actualResult": "The stale handoff is now precisely bounded but not released. PR #430 is still open and non-mergeable; no rebase, merge, deployment, publisher retry, article cycle, provider action, reservation or social write occurred. The existing daily-publisher retains authority to reconcile current-main freshness and either create a newly validated release candidate or explicitly hold and close the original incident key.",
+        "nextTrigger": "Every pending publisher checkpoint must receive a same-owner terminal acceptance, explicit hold or technical-failure record after the exact run finishes. Reliability Watch should treat an overdue pending checkpoint as degraded and restore the original-key handoff without assuming editorial or release authority."
+      },
+      "summary": "Detected and bounded an overdue November 23 publisher handoff. Exact-head CI and the frozen artifact succeeded and responsive visuals are clean, but PR #430 is now stale and non-mergeable and has no terminal publisher decision. The existing daily-publisher must reconcile current-main freshness and either revalidate a release candidate or explicitly hold and close the original incident key. No article, release, provider, queue, social, schedule, credential, permission or model action was taken.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T17:50:00Z",
+  "updatedAt": "2026-11-25",
   "description": "Append-only public-interest audit trail for substantive updates, corrections and retractions. Routine maintenance remains in Git history.",
   "entries": [
     {
@@ -29,11 +29,11 @@
       ]
     },
     {
-      "id": "vantage-west-ai-navigator-headline-2026-11-24",
+      "id": "vantage-west-ai-navigator-headline-2026-11-25",
       "articlePath": "news/vantage-west-ai-navigator-business-member-research.html",
       "articleUrl": "https://creditunionainews.com/news/vantage-west-ai-navigator-business-member-research.html",
       "type": "correction",
-      "publishedAt": "2026-11-24T17:50:00Z",
+      "publishedAt": "2026-11-25",
       "summary": "The original headline could imply that Vantage West prioritizes AI research over conversations with business members. Vantage West uses AI Navigator to help staff prepare for those conversations. The reporting and original publication date are unchanged.",
       "trigger": "Clarified misleading headline wording against Vantage West Credit Union’s November 17 announcement.",
       "sources": [
