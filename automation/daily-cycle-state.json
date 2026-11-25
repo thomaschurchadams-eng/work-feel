@@ -586,7 +586,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "NCUA Final Rules Split the Work Across ALCO, Interlocks and Audits",
         "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html",
         "accountableOwner": "daily-publisher",
@@ -610,9 +610,42 @@
             "run": 45596690137,
             "job": 139144498455,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
+            "run": 45596690137,
+            "job": 139144498455,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-25T11:00:38.303Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 438,
+            "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
+            "run": 45596690137,
+            "job": 139144498455,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-25T11:00:38.303Z",
+            "artifactId": 15014437731,
+            "artifactSha256": "sha256:c4150c7ff8db14c43f04e1afc44e1db81a8303cec0ea746ea0d1db1376d390d7",
+            "artifactRevision": "70db13fe1da89989fd0f0e596948659e48144dbd",
+            "sourceTests": 472,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": [
+              "Desktop and mobile article title, dek, date, byline, section and original hero artwork render correctly.",
+              "Body hierarchy, links, related coverage, footer and Insights listing placement are readable without visible overflow.",
+              "Hosted interaction, typography, accessibility, scrolled-header, date/freshness and ordering gates passed on the exact head."
+            ]
           }
         },
-        "nextAction": "Inspect exact run 45596690137 job 139144498455 attempt 1 at head 70db13f; preserve the checkpoint through terminal and visual review."
+        "nextAction": "Merge only PR 438 at exact head 70db13fe after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout."
       }
     ]
   },
