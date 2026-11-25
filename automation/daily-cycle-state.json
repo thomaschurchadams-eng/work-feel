@@ -8,7 +8,7 @@
   "current": {
     "date": "2026-11-25",
     "status": "in-progress",
-    "outcomeSlot": 3,
+    "outcomeSlot": 4,
     "fullArticleCount": 3,
     "alertCount": 0,
     "publications": [
@@ -824,6 +824,29 @@
         "nextAction": "Merge only PR 440 at exact head 4f209a72 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
         "productionCommit": "2e094362db82473cb654b2f0e35af4cbecf4e328",
         "verifiedAt": "2026-11-25T12:19:41.266Z"
+      },
+      {
+        "slot": 4,
+        "status": "prepared",
+        "candidateTitle": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
+        "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-25T13:01:47.824Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "mesh-mcp-payments",
+            "eventKey": "mesh-mcp-payments-integration-20261124",
+            "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
+            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-25T12:21:47.824Z",
+            "classification": "Standard",
+            "sourceReview": "Reviewed the November 24 Mesh release and first-party product claims. The article reports the hosted MCP integration release, preserves that the read-only operation does not move funds, attributes faster-integration claims to the vendor, and treats schema validation, credential isolation, approval and production monitoring as the credit-union control questions rather than presenting a prompt as payment authorization."
+          }
+        },
+        "nextAction": "Create one atomic article PR from this prepared checkpoint, then persist the exact PR/head/run/job/attempt before any terminal outcome."
       }
     ]
   },
