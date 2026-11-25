@@ -9,7 +9,7 @@
     "date": "2026-11-25",
     "status": "in-progress",
     "outcomeSlot": 4,
-    "fullArticleCount": 3,
+    "fullArticleCount": 4,
     "alertCount": 0,
     "publications": [
       {
@@ -23,6 +23,10 @@
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html"
       }
     ],
     "evaluatedCandidateCount": 24,
@@ -827,7 +831,7 @@
       },
       {
         "slot": 4,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
         "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html",
         "accountableOwner": "daily-publisher",
@@ -886,7 +890,9 @@
             ]
           }
         },
-        "nextAction": "Merge only PR 441 at exact head ad4ad1f0 after release planning confirms this persisted validated checkpoint; then verify exact production before live closeout."
+        "nextAction": "Merge only PR 441 at exact head ad4ad1f0 after release planning confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+        "productionCommit": "2a4ed19d6f5dfd6e02df1c7514e800348b8b2897",
+        "verifiedAt": "2026-11-25T12:56:12.530Z"
       }
     ]
   },
