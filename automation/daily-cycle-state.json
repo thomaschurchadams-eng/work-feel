@@ -5,12 +5,16 @@
     "date": "2026-11-26",
     "status": "in-progress",
     "outcomeSlot": 2,
-    "fullArticleCount": 1,
+    "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
       {
         "type": "article",
         "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html"
+      },
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html"
       }
     ],
     "evaluatedCandidateCount": 25,
@@ -640,7 +644,7 @@
       },
       {
         "slot": 2,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
         "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html",
         "accountableOwner": "daily-publisher",
@@ -699,7 +703,9 @@
             ]
           }
         },
-        "nextAction": "Merge only PR 450 at exact head e2905c737c90d8e9b3676938e3e57dd6dc748f69 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout."
+        "nextAction": "Merge only PR 450 at exact head e2905c737c90d8e9b3676938e3e57dd6dc748f69 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+        "productionCommit": "d52d5c2220750b669cfab95abddbee11a2fd88ea",
+        "verifiedAt": "2026-11-26T12:30:26.012Z"
       }
     ],
     "updatedAt": "2026-11-26T12:25:19.623Z",
