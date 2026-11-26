@@ -2,7 +2,75 @@
   "version": 1,
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
-    {"id":"dupage-member-data-foundation","title":"DuPage Credit Union Plans a Unified Member-Data Foundation","url":"/news/dupage-arkatechture-member-data-foundation.html","publishedAt":"2026-11-25","publicationTimeBasis":"Original publication date at Eastern day precision; exact first production verification will be retained in canonical state.","section":"news","beat":"credit-union-industry","functions":["it-data-cybersecurity","member-service","operations"],"technologies":["data-decisioning","agents-automation"],"format":"reported-news","audience":"functional-leader","primaryAudience":"Data, technology and operations leaders","maturity":"developing","promotionPriority":"Standard","socialDecision":"held-pending-live-and-provider-review","homepageTreatment":"latest-news-first-card","internalLinkTargets":["/news/data-governance-trust-credit-unions.html","/insight-ai-inventory-change-control-playbook-credit-unions.html"],"sourceTier":2,"score":70.2,"eventKey":"dupage-arkatechture-data-platform-20261124","sourceUrl":"https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/","sourcePublishedAt":"2026-11-24T09:00:00-05:00","sourceLimit":"Issuer/vendor announcement establishes selection and intended inputs. Production migration, data quality, employee adoption, AI use and member outcomes remain unreported."},
+    {
+      "id": "fed-beige-book-credit-demand-november-2026",
+      "title": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
+      "url": "/news/fed-beige-book-credit-demand-november-2026.html",
+      "publishedAt": "2026-11-26",
+      "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production verification is retained in canonical state.",
+      "section": "news",
+      "beat": "financial-reporting",
+      "functions": [
+        "board-strategy",
+        "lending-collections",
+        "finance-treasury"
+      ],
+      "technologies": [
+        "data-decisioning"
+      ],
+      "format": "analysis",
+      "audience": "functional-leader",
+      "primaryAudience": "Strategy, finance and lending leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "held-no-reservation",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/fed-barr-ai-agent-deposit-outflow-risk.html",
+        "/insight-credit-union-ai-liquidity-deposit-pricing-controls.html"
+      ],
+      "sourceTier": 1,
+      "score": 78.5,
+      "eventKey": "federal-reserve-november-2026-beige-book",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
+      "sourcePublishedAt": "2026-11-25T19:00:00Z",
+      "sourceLimit": "The Beige Book is qualitative district-contact evidence collected through November 16, not a representative national sample, a forecast, or proof of any credit union's results."
+    },
+    {
+      "id": "dupage-member-data-foundation",
+      "title": "DuPage Credit Union Plans a Unified Member-Data Foundation",
+      "url": "/news/dupage-arkatechture-member-data-foundation.html",
+      "publishedAt": "2026-11-25",
+      "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production verification will be retained in canonical state.",
+      "section": "news",
+      "beat": "credit-union-industry",
+      "functions": [
+        "it-data-cybersecurity",
+        "member-service",
+        "operations"
+      ],
+      "technologies": [
+        "data-decisioning",
+        "agents-automation"
+      ],
+      "format": "reported-news",
+      "audience": "functional-leader",
+      "primaryAudience": "Data, technology and operations leaders",
+      "maturity": "developing",
+      "promotionPriority": "Standard",
+      "socialDecision": "held-pending-live-and-provider-review",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/data-governance-trust-credit-unions.html",
+        "/insight-ai-inventory-change-control-playbook-credit-unions.html"
+      ],
+      "sourceTier": 2,
+      "score": 70.2,
+      "eventKey": "dupage-arkatechture-data-platform-20261124",
+      "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
+      "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
+      "sourceLimit": "Issuer/vendor announcement establishes selection and intended inputs. Production migration, data quality, employee adoption, AI use and member outcomes remain unreported."
+    },
     {
       "id": "mesh-mcp-payment-integration-controls",
       "title": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
@@ -10,8 +78,15 @@
       "publishedAt": "2026-11-25T07:10:00-05:00",
       "section": "news",
       "beat": "payments-core-fintech",
-      "functions": ["payments-deposits", "it-data-cybersecurity", "vendor-management"],
-      "technologies": ["generative-ai", "api-integration"],
+      "functions": [
+        "payments-deposits",
+        "it-data-cybersecurity",
+        "vendor-management"
+      ],
+      "technologies": [
+        "generative-ai",
+        "api-integration"
+      ],
       "format": "reported-news",
       "audience": "functional-leader",
       "primaryAudience": "Payments, technology and vendor-management leaders",
@@ -19,7 +94,10 @@
       "promotionPriority": "Standard",
       "socialDecision": "held-pending-live-and-provider-review",
       "homepageTreatment": "latest-news-first-card",
-      "internalLinkTargets": ["/news/gemini-agent-card-purchases-evidence.html", "/news/bank-regulators-agentic-ai-shutdown-controls.html"],
+      "internalLinkTargets": [
+        "/news/gemini-agent-card-purchases-evidence.html",
+        "/news/bank-regulators-agentic-ai-shutdown-controls.html"
+      ],
       "sourceTier": 1,
       "score": 70.8,
       "eventKey": "mesh-mcp-payments-integration-20261124",
