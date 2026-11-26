@@ -3,8 +3,8 @@
   "timezone": "America/New_York",
   "current": {
     "date": "2026-11-26",
-    "status": "in-progress",
-    "outcomeSlot": 2,
+    "status": "completed-with-editorial-holds",
+    "outcomeSlot": 3,
     "fullArticleCount": 2,
     "alertCount": 0,
     "publications": [
@@ -706,13 +706,182 @@
         "nextAction": "Merge only PR 450 at exact head e2905c737c90d8e9b3676938e3e57dd6dc748f69 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
         "productionCommit": "d52d5c2220750b669cfab95abddbee11a2fd88ea",
         "verifiedAt": "2026-11-26T12:30:26.012Z"
+      },
+      {
+        "slot": 3,
+        "status": "editorial-hold",
+        "candidateTitle": "Heritage Ridge Extends Hosted Core and Payments Deal for Seven Years",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "hrcu-synergent-core-renewal",
+            "eventKey": "heritage-ridge-synergent-seven-year-renewal",
+            "score": 75.6,
+            "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
+            "sourcePublishedAt": "2026-11-25T13:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+      },
+      {
+        "slot": 4,
+        "status": "editorial-hold",
+        "candidateTitle": "2027 Conforming Loan Limit Rises to $855,400",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "fhfa-2027-conforming-limit",
+            "eventKey": "fhfa-2027-conforming-loan-limits",
+            "score": 74.6,
+            "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+            "sourcePublishedAt": "2026-11-24T15:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+      },
+      {
+        "slot": 5,
+        "status": "editorial-hold",
+        "candidateTitle": "What Payment Choice Data Says About Channel Resilience",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "payment-choice-resilience-synthesis",
+            "eventKey": "payment-choice-resilience-synthesis-2026",
+            "score": 72.1,
+            "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+            "sourcePublishedAt": "2026-11-25T10:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+      },
+      {
+        "slot": 6,
+        "status": "editorial-hold",
+        "candidateTitle": "ECB Token Model Maps Eight Layers Needed for Interoperable Markets",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "ecb-token-reference-model",
+            "eventKey": "ecb-tokenisation-reference-model-nov-2026",
+            "score": 70.7,
+            "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
+            "sourcePublishedAt": "2026-11-24T10:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+      },
+      {
+        "slot": 7,
+        "status": "editorial-hold",
+        "candidateTitle": "Cards Edge Past Cash in ECB Survey, but Payment Choice Still Matters",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "ecb-space-payment-choice-2026",
+            "eventKey": "ecb-2026-space-payment-attitudes",
+            "score": 69.8,
+            "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+            "sourcePublishedAt": "2026-11-25T10:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+      },
+      {
+        "slot": 8,
+        "status": "editorial-hold",
+        "candidateTitle": "FHFA Sets FICO 10T Roadmap for Enterprise Mortgage Delivery",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "fhfa-fico-10t-roadmap",
+            "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
+            "score": 74.2,
+            "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
+            "sourcePublishedAt": "2026-11-24T16:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+      },
+      {
+        "slot": 9,
+        "status": "editorial-hold",
+        "candidateTitle": "Reg Z and Reg M Coverage Threshold Rises to $76,300 for 2027",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "fed-reg-z-m-2027-threshold",
+            "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
+            "score": 72.1,
+            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+            "sourcePublishedAt": "2026-11-25T15:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+      },
+      {
+        "slot": 10,
+        "status": "editorial-hold",
+        "candidateTitle": "U.S. Home Prices Rose 2.5% Year Over Year in the Third Quarter",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-27T10:00:00Z",
+        "outcomeScope": "cycle",
+        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+        "evidence": {
+          "qualifiedPool": {
+            "candidateId": "fhfa-q3-2026-hpi",
+            "eventKey": "fhfa-q3-2026-house-price-index",
+            "score": 70.3,
+            "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
+            "sourcePublishedAt": "2026-11-24T15:00:00Z",
+            "qualificationStatus": "reviewed",
+            "checkpointCreated": false
+          }
+        },
+        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
       }
     ],
-    "updatedAt": "2026-11-26T12:25:19.623Z",
+    "updatedAt": "2026-11-26T12:31:50.924Z",
     "alertCycle": {
       "status": "not-run",
       "reason": "Alerts remain owned by the separate CUAI Operating System."
-    }
+    },
+    "blockedReason": "2/10 core articles are live after a complete 25-candidate scan with nine additional independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate."
   },
   "history": [
     {
