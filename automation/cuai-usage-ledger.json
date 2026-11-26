@@ -6495,6 +6495,51 @@
       ],
       "summary": "Completed the November 26 bounded discovery scan across nine beats and screened 25 unique candidates. Published and independently verified two High-classification articles: the Federal Reserve Beige Book operating brief and the 2027 HPML appraisal-threshold update. Repaired one initial state-schema omission and one broken artwork path through new exact-head validation; preserved both failed receipts. Exact production operations runs succeeded with zero distribution actions or source-action exceptions. Closed slots 3-10 as explicit holds because serial P/H/C/V/M/F validation throughput exhausted the run's safe execution window; no checkpoint, filler, parallel release, retrospective carryover, Alert or LinkedIn action was invented.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261126-release-throughput-degraded",
+      "timestamp": "2026-11-26T13:00:48.017Z",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 26 reliability check reconciled a completed but materially degraded daily cycle: ten qualified core candidates and four qualified backups were found, but only two articles completed the sole serialized release path before the safe execution window ended.",
+      "status": "degraded",
+      "incidentKey": "cuai-publishing:daily-cycle:2026-11-26",
+      "workUnits": {
+        "publisherTaskOutcomesReconciled": 1,
+        "dailyCycleStatesReviewed": 1,
+        "qualifiedCoreCandidatesObserved": 10,
+        "qualifiedBackupsObserved": 4,
+        "liveArticlesVerified": 2,
+        "heldQualifiedSlotsObserved": 8,
+        "exactProductionDeploymentsVerified": 1,
+        "verifiedOperationsRunsObserved": 1,
+        "verifiedOperationsActionsObserved": 0,
+        "publicationHistoryEntriesPreserved": 94,
+        "socialQueueItemsReviewed": 58,
+        "queuedSocialItemsObserved": 0,
+        "duplicateSocialReservationsObserved": 0,
+        "articleCyclesStarted": 0,
+        "publisherRetriesAttempted": 0,
+        "providerWrites": 0,
+        "socialQueueWrites": 0,
+        "ledgerEntriesAppended": 1,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News public site",
+        "ChatGPT task outcome"
+      ],
+      "operationalLearning": {
+        "issue": "The complete 25-candidate scan produced enough material—10 qualified core candidates and 4 qualified backups—but the sole serialized P/H/C/V/M/F path released only 2 before the safe run window ended. One state-schema regression and one article-artwork path regression required new exact-head validation, and the scheduled task attempt was recorded failed at 11:41Z even though the same owner later completed canonical degraded closeout at 12:34Z.",
+        "correction": "Reliability Watch reconciled canonical state, exact production identity, both live article surfaces, the task outcome, the natural verified-operations artifact and the social queue. It did not replay the cycle, publish held candidates, retry the provider, alter a schedule or relax a gate.",
+        "test": "Current main 4c815f4ce485f48afc9481b761c315fb580136f2 matches READY Production deployment dpl_8EMxBDdVWREtjET56ZbM1t9x9zER. Live homepage and both November 26 article routes show the two releases. Natural run 45820874124 artifact 15117388609 has digest sha256:f3277905a35d3c462eed5dc718a0834cb99e717a7f09ac4b551bd4a734e4c069, verified authentication, HTTP 200 exact production identity and zero actions, reconciliations, source retries, errors or drift. The 58-row social queue remains 57 sent, 1 planned, 0 queued and has no duplicate IDs.",
+        "actualResult": "No ambiguous external write, deployment failure or live mismatch remains, but the throughput incident is not recovered. Slots 3–10 are explicit publisher-owned editorial holds without resumable checkpoints and require fresh qualification; Reliability Watch has no authority to turn them into releases.",
+        "nextTrigger": "Before unattended ten-article reliability can be claimed, separately review and release a capacity/recovery design that keeps the current editorial, exact-head, visual, production and social safeguards while giving the sole publisher a bounded same-day resume path. Do not use PR #260, force another cycle or carry held candidates forward without fresh qualification."
+      },
+      "summary": "Detected and bounded the November 26 publisher-capacity failure. Ten qualified core candidates and four backups yielded only two live articles because the serialized release path exhausted the safe run window after two repaired candidate defects. Exact production, live pages, the natural no-action operations receipt and the unchanged social queue are verified. No replay or publication retry was safe; eight held slots remain a policy-owned throughput blocker.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
