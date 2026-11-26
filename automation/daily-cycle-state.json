@@ -1,54 +1,20 @@
 {
-  "version": 1,
-  "timezone": "America/New_York",
-  "dailyTargets": {
-    "fullArticles": 1,
-    "alerts": 3
-  },
   "current": {
-    "date": "2026-11-25",
-    "status": "completed-with-editorial-holds",
-    "outcomeSlot": 5,
-    "fullArticleCount": 4,
-    "alertCount": 1,
-    "publications": [
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html"
-      },
-      {
-        "type": "alert",
-        "title": "FinCEN Extends SDTM Filing Deadlines After Service Disruption",
-        "url": "https://creditunionainews.com/alerts/#fincen-sdtm-filing-relief-service-disruption-november-2026",
-        "sourceUrl": "https://www.fincen.gov/news/news-releases/temporary-limited-exceptive-relief-certain-bank-secrecy-act-corporate-transparency-act-submissions/",
-        "sourceDate": "Nov 24, 2026",
-        "publishedAt": "2026-11-25T20:53:34.953Z",
-        "productionCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
-        "productionDeployment": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
-        "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7174367834"
-      }
-    ],
-    "evaluatedCandidateCount": 24,
+    "date": "2026-11-26",
+    "status": "in-progress",
+    "outcomeSlot": 1,
+    "fullArticleCount": 0,
+    "alertCount": 0,
+    "publications": [],
+    "evaluatedCandidateCount": 25,
     "beatsSearched": [
       "regulation-policy",
-      "credit-union-industry",
-      "regional-cu-primary",
-      "payments-core-fintech",
-      "financial-reporting",
       "security-fraud",
+      "credit-union-industry",
+      "financial-reporting",
+      "payments-core-fintech",
       "ai-research-platforms",
+      "regional-cu-primary",
       "workforce-household-data",
       "international-comparisons"
     ],
@@ -56,152 +22,158 @@
       "verifiedStructure": true,
       "completeCoverage": true,
       "accessBlocked": [],
-      "date": "2026-11-25",
-      "candidateCount": 24,
+      "date": "2026-11-26",
+      "candidateCount": 25,
       "candidateInventory": [
         {
-          "candidateId": "ncua-final-rules-package",
-          "eventKey": "ncua-three-final-deregulation-rules-20261124",
-          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-three-final-rules-deregulation",
-          "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          "candidateId": "fed-reg-z-m-2027-threshold",
+          "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+          "sourcePublishedAt": "2026-11-25T15:00:00Z"
         },
         {
-          "candidateId": "cfpb-doj-anti-scam",
-          "eventKey": "cfpb-doj-anti-scam-surge-20261124",
-          "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
-          "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          "candidateId": "fed-hpml-2027-appraisal-threshold",
+          "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+          "sourcePublishedAt": "2026-11-25T15:00:00Z"
         },
         {
-          "candidateId": "tpasc-third-party-standards",
-          "eventKey": "fdic-csbs-tpasc-launch-20261124",
-          "sourceUrl": "https://www.csbs.org/newsroom/fdic-and-csbs-announce-support-third-party-assessments-and-standards-council",
-          "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          "candidateId": "fhfa-fico-10t-roadmap",
+          "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
+          "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
+          "sourcePublishedAt": "2026-11-24T16:00:00Z"
         },
         {
-          "candidateId": "dupage-arkatechture",
-          "eventKey": "dupage-arkatechture-data-platform-20261124",
-          "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
-          "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          "candidateId": "fhfa-2027-conforming-limit",
+          "eventKey": "fhfa-2027-conforming-loan-limits",
+          "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+          "sourcePublishedAt": "2026-11-24T15:00:00Z"
         },
         {
-          "candidateId": "mesh-mcp-payments",
-          "eventKey": "mesh-mcp-payments-integration-20261124",
-          "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
-          "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          "candidateId": "fhfa-q3-2026-hpi",
+          "eventKey": "fhfa-q3-2026-house-price-index",
+          "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
+          "sourcePublishedAt": "2026-11-24T15:00:00Z"
         },
         {
-          "candidateId": "rev-bnpl-repost",
-          "eventKey": "rev-equipifi-bnpl-shop-20261124",
-          "sourceUrl": "https://www.finopotamus.com/post/rev-federal-credit-union-unveils-buy-now-pay-later-feature-within-its-digital-banking-platform",
-          "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          "candidateId": "fed-nov-2026-beige-book",
+          "eventKey": "federal-reserve-november-2026-beige-book",
+          "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
+          "sourcePublishedAt": "2026-11-25T19:00:00Z"
         },
         {
-          "candidateId": "alkami-merit-award",
-          "eventKey": "alkami-merit-award-20261124",
-          "sourceUrl": "https://www.alkami.com/news/",
-          "sourcePublishedAt": "2026-11-24T08:00:00-05:00"
+          "candidateId": "fed-bowman-supervision-accountability",
+          "eventKey": "bowman-nov-2026-supervision-accountability-speech",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z"
         },
         {
-          "candidateId": "gulf-winds-benefit",
-          "eventKey": "gulf-winds-palafox-benefit-20261124",
-          "sourceUrl": "https://creditunions.com/press/",
-          "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          "candidateId": "ecb-space-payment-choice-2026",
+          "eventKey": "ecb-2026-space-payment-attitudes",
+          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+          "sourcePublishedAt": "2026-11-25T10:00:00Z"
         },
         {
-          "candidateId": "icba-cu-acquisition-criticism",
-          "eventKey": "icba-credit-union-bank-acquisition-criticism-20261124",
-          "sourceUrl": "https://www.tcmbank.com/web/guest/newsroom",
-          "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          "candidateId": "ecb-sweden-t2",
+          "eventKey": "sweden-riksbank-t2-agreement-2030",
+          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+          "sourcePublishedAt": "2026-11-25T10:00:00Z"
         },
         {
-          "candidateId": "finbox-gxs-hackcelerator",
-          "eventKey": "finbox-gxs-risk-platform-20261125",
-          "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
-          "sourcePublishedAt": "2026-11-25T09:00:00+08:00"
+          "candidateId": "ecb-token-reference-model",
+          "eventKey": "ecb-tokenisation-reference-model-nov-2026",
+          "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
+          "sourcePublishedAt": "2026-11-24T10:00:00Z"
         },
         {
-          "candidateId": "tencent-connected-payments",
-          "eventKey": "tencent-connected-payments-sff-20261125",
-          "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
-          "sourcePublishedAt": "2026-11-25T09:00:00+08:00"
+          "candidateId": "ant-bny-treasury-mou",
+          "eventKey": "ant-international-bny-24-7-treasury-mou",
+          "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/ant-international-and-bny-sign-mou-to-explore-24-7-cross-border-treasury-management-solutions.html",
+          "sourcePublishedAt": "2026-11-25T08:00:00Z"
         },
         {
-          "candidateId": "aryza-jdm-auto-finance",
-          "eventKey": "aryza-jdm-ai-conversations-20261125",
-          "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
-          "sourcePublishedAt": "2026-11-25T00:37:00Z"
+          "candidateId": "hrcu-synergent-core-renewal",
+          "eventKey": "heritage-ridge-synergent-seven-year-renewal",
+          "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z"
         },
         {
-          "candidateId": "cambridge-ai-report",
-          "eventKey": "cambridge-global-ai-finance-report-2026",
-          "sourceUrl": "https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/",
-          "sourcePublishedAt": "2026-11-18T12:00:00Z"
+          "candidateId": "payment-choice-resilience-synthesis",
+          "eventKey": "payment-choice-resilience-synthesis-2026",
+          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+          "sourcePublishedAt": "2026-11-25T10:00:00Z"
         },
         {
-          "candidateId": "fed-ach-thanksgiving",
-          "eventKey": "fedach-thanksgiving-2026-schedule",
-          "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/",
-          "sourcePublishedAt": "2026-01-01T12:00:00-05:00"
+          "candidateId": "fhfa-multifamily-caps-2027",
+          "eventKey": "fhfa-2027-enterprise-multifamily-caps",
+          "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-2027-multifamily-loan-purchase-caps-for-fannie-mae-and-freddie-mac",
+          "sourcePublishedAt": "2026-11-23T15:00:00Z"
         },
         {
-          "candidateId": "boe-fsr-calendar",
-          "eventKey": "boe-fsr-future-calendar-20261126",
-          "sourceUrl": "https://www.bankofengland.co.uk/events/upcoming-events",
-          "sourcePublishedAt": "2026-11-25T04:00:00Z"
+          "candidateId": "fed-repo-haircuts-note",
+          "eventKey": "fed-hedge-fund-repo-haircuts-note-2026",
+          "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/hedge-fund-treasury-repo-haircuts-20261125.html",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z"
         },
         {
-          "candidateId": "finvolution-future-results",
-          "eventKey": "finvolution-q3-future-results-20261125",
-          "sourceUrl": "https://ir.finvgroup.com/news-releases/news-release-details/finvolution-group-report-third-quarter-2026-financial-results",
-          "sourcePublishedAt": "2026-11-13T04:00:00Z"
+          "candidateId": "ncua-fed-bsa-disruption",
+          "eventKey": "bsa-sar-ctr-service-disruption-supervisory-statement",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-issue-guidance-bsa-reporting-requirements-service-disruptions",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z"
         },
         {
-          "candidateId": "cobalt-illuma",
-          "eventKey": "cobalt-illuma-voice-security-20261117",
-          "sourceUrl": "https://www.cuinsight.com/press-release/cobalt-credit-union-selects-illuma-to-strengthen-voice-security-and-enhance-member-experience/",
-          "sourcePublishedAt": "2026-11-17T09:00:00-05:00"
+          "candidateId": "bis-gsib-2026",
+          "eventKey": "bis-2026-global-systemically-important-banks",
+          "sourceUrl": "https://www.bis.org/press/p261125.htm",
+          "sourcePublishedAt": "2026-11-25T09:00:00Z"
         },
         {
-          "candidateId": "community-first-velera",
-          "eventKey": "community-first-velera-processing-20261114",
-          "sourceUrl": "https://www.cubroadcast.com/news",
-          "sourcePublishedAt": "2026-11-14T09:00:00-05:00"
+          "candidateId": "occ-nov-enforcement-actions",
+          "eventKey": "occ-november-2026-enforcement-actions",
+          "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-115.html",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z"
         },
         {
-          "candidateId": "fivepoint-mahalo",
-          "eventKey": "fivepoint-mahalo-selection-20261119",
-          "sourceUrl": "https://thecreditunionwire.com/",
-          "sourcePublishedAt": "2026-11-19T09:00:00-05:00"
+          "candidateId": "advia-foundation-grant",
+          "eventKey": "advia-foundation-community-grant-nov-2026",
+          "sourceUrl": "https://www.cuinsight.com/press-release/advia-foundation-awards-community-grant/",
+          "sourcePublishedAt": "2026-11-25T12:00:00Z"
         },
         {
-          "candidateId": "abnb-community-award",
-          "eventKey": "abnb-community-award-20261120",
-          "sourceUrl": "https://thecreditunionwire.com/",
-          "sourcePublishedAt": "2026-11-20T09:00:00-05:00"
+          "candidateId": "vizo-education-calendar",
+          "eventKey": "vizo-2027-education-calendar",
+          "sourceUrl": "https://www.cuinsight.com/press-release/vizo-financial-unveils-2027-education-calendar/",
+          "sourcePublishedAt": "2026-11-25T12:00:00Z"
         },
         {
-          "candidateId": "wellington-incident-update",
-          "eventKey": "wellington-credit-union-breach-20261121",
-          "sourceUrl": "https://www.thetimes.com/world/ireland-world/article/security-warning-threats-cyberattack-credit-union-wellington-it-belfast-cvvhgnmt6",
-          "sourcePublishedAt": "2026-11-21T20:15:00Z"
+          "candidateId": "eecu-branch-opening",
+          "eventKey": "eecu-new-fort-worth-branch-nov-2026",
+          "sourceUrl": "https://www.eecu.org/news/eecu-opens-new-branch",
+          "sourcePublishedAt": "2026-11-23T10:00:00Z"
         },
         {
-          "candidateId": "mesh-agent-control-synthesis",
-          "eventKey": "agent-coded-payments-control-synthesis-20261125",
-          "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
-          "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          "candidateId": "gulf-winds-donation",
+          "eventKey": "gulf-winds-community-donation-nov-2026",
+          "sourceUrl": "https://www.cuinsight.com/press-release/gulf-winds-credit-union-supports-local-nonprofit/",
+          "sourcePublishedAt": "2026-11-25T12:00:00Z"
         },
         {
-          "candidateId": "cfpb-credit-trends",
-          "eventKey": "cfpb-credit-trends-dashboard-20261109",
-          "sourceUrl": "https://www.consumerfinance.gov/data-research/consumer-credit-trends/",
-          "sourcePublishedAt": "2026-11-09T12:00:00-05:00"
+          "candidateId": "pnc-investor-conference",
+          "eventKey": "pnc-december-2026-investor-conference",
+          "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Executive-to-Speak-at-Investor-Conference",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z"
         },
         {
-          "candidateId": "bls-state-employment",
-          "eventKey": "bls-state-employment-october-2026",
-          "sourceUrl": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
-          "sourcePublishedAt": "2026-11-20T10:00:00-05:00"
+          "candidateId": "pnc-chief-economist",
+          "eventKey": "pnc-chief-economist-appointment-2026",
+          "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Names-New-Chief-Economist",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z"
+        },
+        {
+          "candidateId": "fed-global-trade-feds-note",
+          "eventKey": "fed-global-trade-supply-chains-feds-note-2026",
+          "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/global-trade-and-supply-chains-20261125.html",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z"
         }
       ],
       "candidateTarget": 24,
@@ -210,771 +182,417 @@
     },
     "candidateEvaluations": [
       {
-        "id": "ncua-final-rules-package",
-        "eventKey": "ncua-three-final-deregulation-rules-20261124",
-        "title": "Three NCUA Final Rules Change Corporate, Interlock and Audit Requirements",
-        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-three-final-rules-deregulation",
-        "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
-        "score": 77.4,
+        "id": "fed-nov-2026-beige-book",
+        "eventKey": "federal-reserve-november-2026-beige-book",
+        "title": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
+        "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
+        "sourcePublishedAt": "2026-11-25T19:00:00Z",
+        "score": 78.5,
         "status": "reviewed",
-        "reason": "Current NCUA primary release supports a distinct three-rule operating-control package; each rule and retained obligation will be separated.",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "board-strategy",
+        "primaryTechnology": "data-decisioning",
+        "confidence": 0.97
+      },
+      {
+        "id": "fed-hpml-2027-appraisal-threshold",
+        "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+        "title": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+        "sourcePublishedAt": "2026-11-25T15:00:00Z",
+        "score": 76.2,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "regtech-monitoring",
+        "confidence": 0.98
+      },
+      {
+        "id": "hrcu-synergent-core-renewal",
+        "eventKey": "heritage-ridge-synergent-seven-year-renewal",
+        "title": "Heritage Ridge Extends Hosted Core and Payments Deal for Seven Years",
+        "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
+        "sourcePublishedAt": "2026-11-25T13:00:00Z",
+        "score": 75.6,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "vendor-management",
+        "primaryTechnology": "core-api-cloud",
+        "confidence": 0.88
+      },
+      {
+        "id": "ncua-fed-bsa-disruption",
+        "eventKey": "bsa-sar-ctr-service-disruption-supervisory-statement",
+        "title": "Supervisors Outline BSA Filing Expectations During Service Disruptions",
+        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-issue-guidance-bsa-reporting-requirements-service-disruptions",
+        "sourcePublishedAt": "2026-11-25T13:00:00Z",
+        "score": 74.9,
+        "status": "rejected",
+        "reason": "Rejected after editorial review as overlapping the November 25 FinCEN service-disruption Alert; the daily article cycle will not republish the same event.",
+        "selectionRejections": [
+          "same-event-duplicate-with-existing-alert"
+        ],
+        "primaryFunction": "risk-compliance",
+        "primaryTechnology": "regtech-monitoring",
+        "confidence": 0.98
+      },
+      {
+        "id": "fhfa-2027-conforming-limit",
+        "eventKey": "fhfa-2027-conforming-loan-limits",
+        "title": "2027 Conforming Loan Limit Rises to $855,400",
+        "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+        "sourcePublishedAt": "2026-11-24T15:00:00Z",
+        "score": 74.6,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.99
+      },
+      {
+        "id": "fhfa-fico-10t-roadmap",
+        "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
+        "title": "FHFA Sets FICO 10T Roadmap for Enterprise Mortgage Delivery",
+        "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
+        "sourcePublishedAt": "2026-11-24T16:00:00Z",
+        "score": 74.2,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "data-decisioning",
+        "confidence": 0.97
+      },
+      {
+        "id": "fed-reg-z-m-2027-threshold",
+        "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
+        "title": "Reg Z and Reg M Coverage Threshold Rises to $76,300 for 2027",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+        "sourcePublishedAt": "2026-11-25T15:00:00Z",
+        "score": 72.1,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
         "selectionRejections": [],
         "primaryFunction": "risk-compliance",
         "primaryTechnology": "regtech-monitoring",
         "confidence": 0.98
       },
       {
-        "id": "cfpb-doj-anti-scam",
-        "eventKey": "cfpb-doj-anti-scam-surge-20261124",
-        "title": "Federal Anti-Scam Surge Adds a Credit-Union Member-Education Checklist",
-        "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
-        "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
-        "score": 72.4,
+        "id": "payment-choice-resilience-synthesis",
+        "eventKey": "payment-choice-resilience-synthesis-2026",
+        "title": "What Payment Choice Data Says About Channel Resilience",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+        "sourcePublishedAt": "2026-11-25T10:00:00Z",
+        "score": 72.1,
         "status": "reviewed",
-        "reason": "Current CFPB and DOJ primary releases support a bounded member-education and fraud-operations story.",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "operations",
+        "primaryTechnology": "realtime-embedded-finance",
+        "confidence": 0.93
+      },
+      {
+        "id": "ecb-token-reference-model",
+        "eventKey": "ecb-tokenisation-reference-model-nov-2026",
+        "title": "ECB Token Model Maps Eight Layers Needed for Interoperable Markets",
+        "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
+        "sourcePublishedAt": "2026-11-24T10:00:00Z",
+        "score": 70.7,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "vendor-management",
+        "primaryTechnology": "realtime-embedded-finance",
+        "confidence": 0.97
+      },
+      {
+        "id": "fhfa-q3-2026-hpi",
+        "eventKey": "fhfa-q3-2026-house-price-index",
+        "title": "U.S. Home Prices Rose 2.5% Year Over Year in the Third Quarter",
+        "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
+        "sourcePublishedAt": "2026-11-24T15:00:00Z",
+        "score": 70.3,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "data-decisioning",
+        "confidence": 0.98
+      },
+      {
+        "id": "ecb-space-payment-choice-2026",
+        "eventKey": "ecb-2026-space-payment-attitudes",
+        "title": "Cards Edge Past Cash in ECB Survey, but Payment Choice Still Matters",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+        "sourcePublishedAt": "2026-11-25T10:00:00Z",
+        "score": 69.8,
+        "status": "reviewed",
+        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+        "selectionRejections": [],
+        "primaryFunction": "payments-deposits",
+        "primaryTechnology": "realtime-embedded-finance",
+        "confidence": 0.98
+      },
+      {
+        "id": "fed-bowman-supervision-accountability",
+        "eventKey": "bowman-nov-2026-supervision-accountability-speech",
+        "title": "Bowman Calls for Timely, Risk-Focused Bank Supervision",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+        "sourcePublishedAt": "2026-11-25T14:00:00Z",
+        "score": 69.7,
+        "status": "qualified-backup",
+        "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
         "selectionRejections": [],
         "primaryFunction": "risk-compliance",
-        "primaryTechnology": "fraud-analytics",
+        "primaryTechnology": "regtech-monitoring",
         "confidence": 0.96
       },
       {
-        "id": "tpasc-third-party-standards",
-        "eventKey": "fdic-csbs-tpasc-launch-20261124",
-        "title": "FDIC and State Regulators Back a Voluntary Third-Party Assessment Council",
-        "sourceUrl": "https://www.csbs.org/newsroom/fdic-and-csbs-announce-support-third-party-assessments-and-standards-council",
-        "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
-        "score": 72.6,
-        "status": "rejected",
-        "reason": "Held: the current official CSBS/FDIC announcement could not be read through the authorized source path, so an exact primary-source review is incomplete.",
-        "selectionRejections": [
-          "primary-source-or-date-not-proven"
-        ],
-        "primaryFunction": "vendor-management",
-        "primaryTechnology": "privacy-security",
-        "confidence": 0.94
-      },
-      {
-        "id": "dupage-arkatechture",
-        "eventKey": "dupage-arkatechture-data-platform-20261124",
-        "title": "DuPage Credit Union Plans a Unified Member-Data Foundation",
-        "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
-        "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
-        "score": 70.2,
-        "status": "reviewed",
-        "reason": "Current issuer press release supports a reported platform-selection story; vendor benefits remain attributed and no results are claimed.",
+        "id": "ant-bny-treasury-mou",
+        "eventKey": "ant-international-bny-24-7-treasury-mou",
+        "title": "Ant International and BNY Explore 24/7 Cross-Border Treasury Tools",
+        "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/ant-international-and-bny-sign-mou-to-explore-24-7-cross-border-treasury-management-solutions.html",
+        "sourcePublishedAt": "2026-11-25T08:00:00Z",
+        "score": 68.3,
+        "status": "qualified-backup",
+        "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
         "selectionRejections": [],
-        "primaryFunction": "it-data-cybersecurity",
-        "primaryTechnology": "data-decisioning",
-        "confidence": 0.88
+        "primaryFunction": "finance-treasury",
+        "primaryTechnology": "realtime-embedded-finance",
+        "confidence": 0.86
       },
       {
-        "id": "mesh-mcp-payments",
-        "eventKey": "mesh-mcp-payments-integration-20261124",
-        "title": "Mesh Gives Coding Agents a Hosted Payments Integration Interface",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
-        "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
-        "score": 67,
-        "status": "rejected",
-        "reason": "Rejected as the same underlying Mesh MCP announcement as the stronger durable control-focused synthesis; one event is one article.",
-        "selectionRejections": [
-          "same-event-duplicate"
-        ],
+        "id": "ecb-sweden-t2",
+        "eventKey": "sweden-riksbank-t2-agreement-2030",
+        "title": "Sweden Targets 2030 Move of Krona Settlement to T2",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+        "sourcePublishedAt": "2026-11-25T10:00:00Z",
+        "score": 67.9,
+        "status": "qualified-backup",
+        "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
+        "selectionRejections": [],
         "primaryFunction": "payments-deposits",
-        "primaryTechnology": "agents-automation",
+        "primaryTechnology": "realtime-embedded-finance",
+        "confidence": 0.98
+      },
+      {
+        "id": "fhfa-multifamily-caps-2027",
+        "eventKey": "fhfa-2027-enterprise-multifamily-caps",
+        "title": "FHFA Sets $88 Billion 2027 Multifamily Caps for Each Enterprise",
+        "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-2027-multifamily-loan-purchase-caps-for-fannie-mae-and-freddie-mac",
+        "sourcePublishedAt": "2026-11-23T15:00:00Z",
+        "score": 65.8,
+        "status": "rejected",
+        "reason": "Not selected within the bounded qualified core and backup set.",
+        "selectionRejections": [],
+        "primaryFunction": "lending-collections",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.96
+      },
+      {
+        "id": "vizo-education-calendar",
+        "eventKey": "vizo-2027-education-calendar",
+        "title": "Vizo Publishes 2027 Education Calendar",
+        "sourceUrl": "https://www.cuinsight.com/press-release/vizo-financial-unveils-2027-education-calendar/",
+        "sourcePublishedAt": "2026-11-25T12:00:00Z",
+        "score": 61.7,
+        "status": "rejected",
+        "reason": "score-below-minimum",
+        "selectionRejections": [
+          "score-below-minimum"
+        ],
+        "primaryFunction": "hr-training",
+        "primaryTechnology": "workforce-learning",
         "confidence": 0.82
       },
       {
-        "id": "rev-bnpl-repost",
-        "eventKey": "rev-equipifi-bnpl-shop-20261124",
-        "title": "REV Federal Credit Union Adds a Digital-Banking Shopping Entry Point",
-        "sourceUrl": "https://www.finopotamus.com/post/rev-federal-credit-union-unveils-buy-now-pay-later-feature-within-its-digital-banking-platform",
-        "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
-        "score": 67.7,
+        "id": "fed-repo-haircuts-note",
+        "eventKey": "fed-hedge-fund-repo-haircuts-note-2026",
+        "title": "Fed Researchers Find Uneven Repo Haircuts Across Hedge Fund Trades",
+        "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/hedge-fund-treasury-repo-haircuts-20261125.html",
+        "sourcePublishedAt": "2026-11-25T14:00:00Z",
+        "score": 61.4,
         "status": "rejected",
-        "reason": "confidence-below-0.7",
+        "reason": "score-below-minimum",
         "selectionRejections": [
-          "confidence-below-0.7"
-        ],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "realtime-embedded-finance",
-        "confidence": 0.66
-      },
-      {
-        "id": "alkami-merit-award",
-        "eventKey": "alkami-merit-award-20261124",
-        "title": "Alkami Wins a Technology Award",
-        "sourceUrl": "https://www.alkami.com/news/",
-        "sourcePublishedAt": "2026-11-24T08:00:00-05:00",
-        "score": 57.3,
-        "status": "rejected",
-        "reason": "confidence-below-0.7; score-below-minimum",
-        "selectionRejections": [
-          "confidence-below-0.7",
           "score-below-minimum"
         ],
-        "primaryFunction": "marketing-growth",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.52
+        "primaryFunction": "finance-treasury",
+        "primaryTechnology": "data-decisioning",
+        "confidence": 0.9
       },
       {
-        "id": "gulf-winds-benefit",
-        "eventKey": "gulf-winds-palafox-benefit-20261124",
-        "title": "Gulf Winds Sponsors a Community Benefit",
-        "sourceUrl": "https://creditunions.com/press/",
-        "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
-        "score": 56.8,
+        "id": "fed-global-trade-feds-note",
+        "eventKey": "fed-global-trade-supply-chains-feds-note-2026",
+        "title": "Fed Note Reviews Global Trade and Supply Chain Shifts",
+        "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/global-trade-and-supply-chains-20261125.html",
+        "sourcePublishedAt": "2026-11-25T14:00:00Z",
+        "score": 61.1,
         "status": "rejected",
-        "reason": "confidence-below-0.7; score-below-minimum",
+        "reason": "score-below-minimum",
         "selectionRejections": [
-          "confidence-below-0.7",
           "score-below-minimum"
-        ],
-        "primaryFunction": "marketing-growth",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.55
-      },
-      {
-        "id": "icba-cu-acquisition-criticism",
-        "eventKey": "icba-credit-union-bank-acquisition-criticism-20261124",
-        "title": "ICBA Repeats Its Objection to Credit-Union Bank Acquisitions",
-        "sourceUrl": "https://www.tcmbank.com/web/guest/newsroom",
-        "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
-        "score": 63.7,
-        "status": "rejected",
-        "reason": "confidence-below-0.7",
-        "selectionRejections": [
-          "confidence-below-0.7"
         ],
         "primaryFunction": "board-strategy",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.62
+        "primaryTechnology": "data-decisioning",
+        "confidence": 0.9
       },
       {
-        "id": "finbox-gxs-hackcelerator",
-        "eventKey": "finbox-gxs-risk-platform-20261125",
-        "title": "FinBox Wins a Singapore Credit-and-Fraud Risk Challenge",
-        "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
-        "sourcePublishedAt": "2026-11-25T09:00:00+08:00",
-        "score": 59.5,
+        "id": "eecu-branch-opening",
+        "eventKey": "eecu-new-fort-worth-branch-nov-2026",
+        "title": "EECU Opens New Fort Worth Branch",
+        "sourceUrl": "https://www.eecu.org/news/eecu-opens-new-branch",
+        "sourcePublishedAt": "2026-11-23T10:00:00Z",
+        "score": 57.7,
+        "status": "rejected",
+        "reason": "invalid-or-stale-source-date; score-below-minimum",
+        "selectionRejections": [
+          "invalid-or-stale-source-date",
+          "score-below-minimum"
+        ],
+        "primaryFunction": "member-service",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.8
+      },
+      {
+        "id": "advia-foundation-grant",
+        "eventKey": "advia-foundation-community-grant-nov-2026",
+        "title": "Advia Foundation Awards $20,000 Community Grant",
+        "sourceUrl": "https://www.cuinsight.com/press-release/advia-foundation-awards-community-grant/",
+        "sourcePublishedAt": "2026-11-25T12:00:00Z",
+        "score": 57,
+        "status": "rejected",
+        "reason": "score-below-minimum",
+        "selectionRejections": [
+          "score-below-minimum"
+        ],
+        "primaryFunction": "marketing-growth",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.85
+      },
+      {
+        "id": "bis-gsib-2026",
+        "eventKey": "bis-2026-global-systemically-important-banks",
+        "title": "Basel Committee Publishes 2026 G-SIB Assessment",
+        "sourceUrl": "https://www.bis.org/press/p261125.htm",
+        "sourcePublishedAt": "2026-11-25T09:00:00Z",
+        "score": 55.7,
         "status": "rejected",
         "reason": "score-below-minimum",
         "selectionRejections": [
           "score-below-minimum"
         ],
         "primaryFunction": "risk-compliance",
-        "primaryTechnology": "fraud-analytics",
-        "confidence": 0.72
-      },
-      {
-        "id": "tencent-connected-payments",
-        "eventKey": "tencent-connected-payments-sff-20261125",
-        "title": "Tencent Highlights Connected Cross-Border Payment Wallets",
-        "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
-        "sourcePublishedAt": "2026-11-25T09:00:00+08:00",
-        "score": 57.9,
-        "status": "rejected",
-        "reason": "confidence-below-0.7; score-below-minimum",
-        "selectionRejections": [
-          "confidence-below-0.7",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "payments-deposits",
-        "primaryTechnology": "realtime-embedded-finance",
-        "confidence": 0.68
-      },
-      {
-        "id": "aryza-jdm-auto-finance",
-        "eventKey": "aryza-jdm-ai-conversations-20261125",
-        "title": "Aryza Adds AI-Driven Conversations to an Irish Auto-Finance Company",
-        "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
-        "sourcePublishedAt": "2026-11-25T00:37:00Z",
-        "score": 61.2,
-        "status": "rejected",
-        "reason": "confidence-below-0.7; score-below-minimum",
-        "selectionRejections": [
-          "confidence-below-0.7",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "conversational-ai",
-        "confidence": 0.64
-      },
-      {
-        "id": "cambridge-ai-report",
-        "eventKey": "cambridge-global-ai-finance-report-2026",
-        "title": "Global AI Survey Separates Adoption From Measurable Financial Value",
-        "sourceUrl": "https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/",
-        "sourcePublishedAt": "2026-11-18T12:00:00Z",
-        "score": 65.9,
-        "status": "rejected",
-        "reason": "Held: the opened Cambridge report page did not establish an exact original publication date, so the freshness gate is unproven.",
-        "selectionRejections": [
-          "primary-source-or-date-not-proven"
-        ],
-        "primaryFunction": "board-strategy",
-        "primaryTechnology": "agents-automation",
-        "confidence": 0.9
-      },
-      {
-        "id": "fed-ach-thanksgiving",
-        "eventKey": "fedach-thanksgiving-2026-schedule",
-        "title": "FedACH Lists Its Thanksgiving Processing Window",
-        "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/",
-        "sourcePublishedAt": "2026-01-01T12:00:00-05:00",
-        "score": 61.6,
-        "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
-        "selectionRejections": [
-          "invalid-or-stale-source-date",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "operations",
-        "primaryTechnology": "core-api-cloud",
-        "confidence": 0.95
-      },
-      {
-        "id": "boe-fsr-calendar",
-        "eventKey": "boe-fsr-future-calendar-20261126",
-        "title": "Bank of England Lists a Future Financial Stability Release",
-        "sourceUrl": "https://www.bankofengland.co.uk/events/upcoming-events",
-        "sourcePublishedAt": "2026-11-25T04:00:00Z",
-        "score": 52.4,
-        "status": "rejected",
-        "reason": "confidence-below-0.7; score-below-minimum",
-        "selectionRejections": [
-          "confidence-below-0.7",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "board-strategy",
         "primaryTechnology": "industry-development",
-        "confidence": 0.58
+        "confidence": 0.97
       },
       {
-        "id": "finvolution-future-results",
-        "eventKey": "finvolution-q3-future-results-20261125",
-        "title": "FinVolution Schedules Results After the U.S. Market Close",
-        "sourceUrl": "https://ir.finvgroup.com/news-releases/news-release-details/finvolution-group-report-third-quarter-2026-financial-results",
-        "sourcePublishedAt": "2026-11-13T04:00:00Z",
-        "score": 41.1,
+        "id": "gulf-winds-donation",
+        "eventKey": "gulf-winds-community-donation-nov-2026",
+        "title": "Gulf Winds Announces Community Donation",
+        "sourceUrl": "https://www.cuinsight.com/press-release/gulf-winds-credit-union-supports-local-nonprofit/",
+        "sourcePublishedAt": "2026-11-25T12:00:00Z",
+        "score": 53,
         "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
+        "reason": "score-below-minimum",
         "selectionRejections": [
-          "invalid-or-stale-source-date",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "finance-treasury",
-        "primaryTechnology": "data-decisioning",
-        "confidence": 0.8
-      },
-      {
-        "id": "cobalt-illuma",
-        "eventKey": "cobalt-illuma-voice-security-20261117",
-        "title": "Cobalt Credit Union Selects Passive Voice Authentication",
-        "sourceUrl": "https://www.cuinsight.com/press-release/cobalt-credit-union-selects-illuma-to-strengthen-voice-security-and-enhance-member-experience/",
-        "sourcePublishedAt": "2026-11-17T09:00:00-05:00",
-        "score": 60.9,
-        "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
-        "selectionRejections": [
-          "invalid-or-stale-source-date",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "member-service",
-        "primaryTechnology": "identity-biometrics",
-        "confidence": 0.87
-      },
-      {
-        "id": "community-first-velera",
-        "eventKey": "community-first-velera-processing-20261114",
-        "title": "Community First Expands Card Processing With Velera",
-        "sourceUrl": "https://www.cubroadcast.com/news",
-        "sourcePublishedAt": "2026-11-14T09:00:00-05:00",
-        "score": 58,
-        "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
-        "selectionRejections": [
-          "invalid-or-stale-source-date",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "payments-deposits",
-        "primaryTechnology": "core-api-cloud",
-        "confidence": 0.83
-      },
-      {
-        "id": "fivepoint-mahalo",
-        "eventKey": "fivepoint-mahalo-selection-20261119",
-        "title": "5Point Credit Union Selects Mahalo Digital Banking",
-        "sourceUrl": "https://thecreditunionwire.com/",
-        "sourcePublishedAt": "2026-11-19T09:00:00-05:00",
-        "score": 57.5,
-        "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
-        "selectionRejections": [
-          "invalid-or-stale-source-date",
-          "score-below-minimum"
-        ],
-        "primaryFunction": "member-service",
-        "primaryTechnology": "core-api-cloud",
-        "confidence": 0.76
-      },
-      {
-        "id": "abnb-community-award",
-        "eventKey": "abnb-community-award-20261120",
-        "title": "ABNB Receives a Community-Minded Business Award",
-        "sourceUrl": "https://thecreditunionwire.com/",
-        "sourcePublishedAt": "2026-11-20T09:00:00-05:00",
-        "score": 50.6,
-        "status": "rejected",
-        "reason": "confidence-below-0.7; invalid-or-stale-source-date; score-below-minimum",
-        "selectionRejections": [
-          "confidence-below-0.7",
-          "invalid-or-stale-source-date",
           "score-below-minimum"
         ],
         "primaryFunction": "marketing-growth",
         "primaryTechnology": "industry-development",
-        "confidence": 0.52
+        "confidence": 0.8
       },
       {
-        "id": "wellington-incident-update",
-        "eventKey": "wellington-credit-union-breach-20261121",
-        "title": "Wellington IT Breach Reporting Expands",
-        "sourceUrl": "https://www.thetimes.com/world/ireland-world/article/security-warning-threats-cyberattack-credit-union-wellington-it-belfast-cvvhgnmt6",
-        "sourcePublishedAt": "2026-11-21T20:15:00Z",
-        "score": 66.1,
+        "id": "occ-nov-enforcement-actions",
+        "eventKey": "occ-november-2026-enforcement-actions",
+        "title": "OCC Releases November 2026 Enforcement Actions",
+        "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-115.html",
+        "sourcePublishedAt": "2026-11-25T14:00:00Z",
+        "score": 51.5,
         "status": "rejected",
-        "reason": "confidence-below-0.7; invalid-or-stale-source-date",
+        "reason": "score-below-minimum",
         "selectionRejections": [
-          "confidence-below-0.7",
-          "invalid-or-stale-source-date"
-        ],
-        "primaryFunction": "it-data-cybersecurity",
-        "primaryTechnology": "privacy-security",
-        "confidence": 0.67
-      },
-      {
-        "id": "mesh-agent-control-synthesis",
-        "eventKey": "agent-coded-payments-control-synthesis-20261125",
-        "title": "What an AI-Written Payments Integration Still Has to Prove",
-        "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
-        "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
-        "score": 69.2,
-        "status": "reviewed",
-        "reason": "Current Mesh announcement and public product documentation support a durable control-focused synthesis; no achieved institution results are claimed.",
-        "selectionRejections": [],
-        "primaryFunction": "vendor-management",
-        "primaryTechnology": "agents-automation",
-        "confidence": 0.78
-      },
-      {
-        "id": "cfpb-credit-trends",
-        "eventKey": "cfpb-credit-trends-dashboard-20261109",
-        "title": "CFPB Updates Consumer Credit Trend Dashboards",
-        "sourceUrl": "https://www.consumerfinance.gov/data-research/consumer-credit-trends/",
-        "sourcePublishedAt": "2026-11-09T12:00:00-05:00",
-        "score": 55.5,
-        "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
-        "selectionRejections": [
-          "invalid-or-stale-source-date",
           "score-below-minimum"
         ],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "data-decisioning",
+        "primaryFunction": "risk-compliance",
+        "primaryTechnology": "industry-development",
+        "confidence": 0.95
+      },
+      {
+        "id": "pnc-chief-economist",
+        "eventKey": "pnc-chief-economist-appointment-2026",
+        "title": "PNC Names New Chief Economist",
+        "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Names-New-Chief-Economist",
+        "sourcePublishedAt": "2026-11-25T13:00:00Z",
+        "score": 45.5,
+        "status": "rejected",
+        "reason": "score-below-minimum",
+        "selectionRejections": [
+          "score-below-minimum"
+        ],
+        "primaryFunction": "board-strategy",
+        "primaryTechnology": "industry-development",
         "confidence": 0.9
       },
       {
-        "id": "bls-state-employment",
-        "eventKey": "bls-state-employment-october-2026",
-        "title": "BLS Publishes October State Employment Data",
-        "sourceUrl": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
-        "sourcePublishedAt": "2026-11-20T10:00:00-05:00",
-        "score": 57.5,
+        "id": "pnc-investor-conference",
+        "eventKey": "pnc-december-2026-investor-conference",
+        "title": "PNC Executive to Speak at Investor Conference",
+        "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Executive-to-Speak-at-Investor-Conference",
+        "sourcePublishedAt": "2026-11-25T13:00:00Z",
+        "score": 43,
         "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
+        "reason": "score-below-minimum",
         "selectionRejections": [
-          "invalid-or-stale-source-date",
           "score-below-minimum"
         ],
         "primaryFunction": "finance-treasury",
-        "primaryTechnology": "data-decisioning",
+        "primaryTechnology": "industry-development",
         "confidence": 0.9
       }
     ],
     "browserReadiness": {
-      "observedAt": "2026-11-25T10:26:41.959Z",
+      "observedAt": "2026-11-26T10:20:00Z",
       "status": "local-blocked-ci-fallback-available",
-      "revision": "adb2d7cec5fb35f4c94c16d04cd504504a61303a",
-      "reason": "Pinned Playwright Chromium is absent from this owner workspace. No install or cache change was made; the policy-permitted exact-head PR design-check artifact remains required."
+      "revision": "88fbde3c0f7a537e2242bddd89248c4291592856",
+      "reason": "This owner runtime has no checked-out repository or pinned Playwright Chromium. No install or cache change was made; the policy-permitted exact-head PR design-check artifact is required."
     },
     "socialDecision": {
       "status": "held-no-reservation",
-      "reason": "Four November 25 articles are live, but no fresh complete provider inventory was obtained and historical destination-review holds remain. No LinkedIn reservation, submission or distribution attempt was made."
+      "reason": "The article cycle is separate from distribution. No fresh complete provider inventory was obtained, historical destination-review holds remain, and no LinkedIn reservation or attempt is authorized in this cycle."
     },
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "live-verified",
-        "candidateTitle": "NCUA Final Rules Split the Work Across ALCO, Interlocks and Audits",
-        "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html",
+        "status": "prepared",
+        "candidateTitle": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
+        "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-25T11:12:36.452Z",
+        "nextReviewAt": "2026-11-26T10:50:00Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
-            "candidateId": "ncua-final-rules-package",
-            "eventKey": "ncua-three-final-deregulation-rules-20261124",
-            "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-three-final-rules-deregulation",
-            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+            "candidateId": "fed-nov-2026-beige-book",
+            "eventKey": "federal-reserve-november-2026-beige-book",
+            "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
+            "sourcePublishedAt": "2026-11-25T19:00:00Z"
           },
           "preparation": {
-            "preparedAt": "2026-11-25T10:26:41.959Z",
+            "preparedAt": "2026-11-26T10:20:00Z",
             "classification": "High",
-            "sourceReview": "Read the November 24 NCUA release and linked final-rule materials. The article will distinguish the corporate-credit-union ALCO/reporting changes, management-interlock threshold changes and supervisory-audit changes, retain effective-date and remaining-obligation limits, and avoid presenting three separate rules as one blanket deregulation result."
-          },
-          "pending": {
-            "prNumber": 438,
-            "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
-            "run": 45596690137,
-            "job": 139144498455,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
-            "run": 45596690137,
-            "job": 139144498455,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-25T11:00:38.303Z"
-          },
-          "terminalAcceptance": {
-            "prNumber": 438,
-            "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
-            "run": 45596690137,
-            "job": 139144498455,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-25T11:00:38.303Z",
-            "artifactId": 15014437731,
-            "artifactSha256": "sha256:c4150c7ff8db14c43f04e1afc44e1db81a8303cec0ea746ea0d1db1376d390d7",
-            "artifactRevision": "70db13fe1da89989fd0f0e596948659e48144dbd",
-            "sourceTests": 472,
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": [
-              "Desktop and mobile article title, dek, date, byline, section and original hero artwork render correctly.",
-              "Body hierarchy, links, related coverage, footer and Insights listing placement are readable without visible overflow.",
-              "Hosted interaction, typography, accessibility, scrolled-header, date/freshness and ordering gates passed on the exact head."
-            ]
+            "sourceReview": "Read the Federal Reserve's November 25 Beige Book national summary and retained its eight-district growth, four-district flat, price-sensitive consumer, housing and credit-demand limits. The article will not treat district anecdotes as national forecasts or invent credit-union results."
           }
-        },
-        "nextAction": "Merge only PR 438 at exact head 70db13fe after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout.",
-        "productionCommit": "b3d6d1522f8d81a8c2d05a0057d949c212fe6f25",
-        "verifiedAt": "2026-11-25T11:03:57.342Z"
-      },
-      {
-        "slot": 2,
-        "status": "live-verified",
-        "candidateTitle": "Federal Anti-Scam Push Gives Credit Unions a Member-Education Test",
-        "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-25T11:47:36.387Z",
-        "outcomeScope": "cycle",
-        "evidence": {
-          "articleSelection": {
-            "candidateId": "cfpb-doj-anti-scam",
-            "eventKey": "cfpb-doj-anti-scam-surge-20261124",
-            "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
-            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
-          },
-          "preparation": {
-            "preparedAt": "2026-11-25T11:08:12.085Z",
-            "classification": "High",
-            "sourceReview": "Read current CFPB and Justice Department November 24 releases and standing FTC verification guidance. The package distinguishes federal enforcement totals from institution-level prevention, preserves allegation status, and does not present the campaign as a new credit-union rule or reimbursement standard."
-          },
-          "pending": {
-            "prNumber": 439,
-            "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
-            "run": 45602130041,
-            "job": 139165410021,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
-            "run": 45602130041,
-            "job": 139165410021,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-25T11:41:00.000Z"
-          },
-          "terminalAcceptance": {
-            "prNumber": 439,
-            "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
-            "run": 45602130041,
-            "job": 139165410021,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-25T11:41:10.307Z",
-            "artifactId": 15017827147,
-            "artifactSha256": "sha256:0a163af1f059545ca9366741fd94ea3ec64bc9a59c8dbb83c250323a2eb29316",
-            "artifactRevision": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
-            "sourceTests": 472,
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": [
-              "Desktop and mobile article title, dek, date, byline, section and original anti-scam artwork render correctly.",
-              "Body hierarchy, source links, related coverage, footer and News placement are readable without visible overflow.",
-              "Hosted interaction, typography, accessibility, scrolled-header, date/freshness, artwork and ordering gates passed on the exact corrected head."
-            ]
-          }
-        },
-        "nextAction": "Merge only PR 439 at exact corrected head 8dc1b54b after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout.",
-        "productionCommit": "bfacc79c281bb972fa87bd56540bd5355e167c7d",
-        "verifiedAt": "2026-11-25T11:46:08.078Z"
-      },
-      {
-        "slot": 3,
-        "status": "live-verified",
-        "candidateTitle": "DuPage Credit Union’s Data Unification Project Puts Member Context Before AI",
-        "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-25T12:27:01.774Z",
-        "outcomeScope": "cycle",
-        "evidence": {
-          "articleSelection": {
-            "candidateId": "dupage-arkatechture",
-            "eventKey": "dupage-arkatechture-data-platform-20261124",
-            "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
-            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
-          },
-          "preparation": {
-            "preparedAt": "2026-11-25T11:47:01.774Z",
-            "classification": "Standard",
-            "sourceReview": "Reviewed the November 24 DuPage Credit Union and Arkatechture announcement as vendor-and-institution supplied evidence. The article frames the work as a member-data foundation and implementation decision, not a proven AI outcome, and preserves the absence of independent performance results."
-          },
-          "pending": {
-            "prNumber": 440,
-            "head": "4f209a72eae387141436aee47adef8352be4e659",
-            "run": 45608381606,
-            "job": 139186107577,
-            "runAttempt": 2
-          },
-          "validationHistory": [
-            {
-              "prNumber": 440,
-              "head": "2822f2aceda8bd47bcc92c4d69ff9916fcab166d",
-              "run": 45608095286,
-              "job": 139184136065,
-              "runAttempt": 1,
-              "status": "superseded",
-              "observedAt": "2026-11-25T11:52:39.783Z",
-              "reason": "article route corrected to the already persisted canonical slot URL before terminal acceptance"
-            },
-            {
-              "prNumber": 440,
-              "head": "4f209a72eae387141436aee47adef8352be4e659",
-              "run": 45608381606,
-              "job": 139185134527,
-              "runAttempt": 1,
-              "status": "superseded",
-              "observedAt": "2026-11-25T11:54:30.126Z",
-              "terminalValidation": {
-                "prNumber": 440,
-                "head": "4f209a72eae387141436aee47adef8352be4e659",
-                "run": 45608381606,
-                "job": 139185134527,
-                "runAttempt": 1,
-                "conclusion": "failure",
-                "runConclusion": "failure",
-                "jobConclusion": "failure",
-                "observedAt": "2026-11-25T11:53:03Z"
-              },
-              "reason": "attempt 1 fetched main before the replacement checkpoint was visible and failed the exact checkpoint gate before source or rendered tests"
-            }
-          ],
-          "terminalValidation": {
-            "head": "4f209a72eae387141436aee47adef8352be4e659",
-            "run": 45608381606,
-            "job": 139186107577,
-            "runAttempt": 2,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-25T12:15:51.411Z"
-          },
-          "terminalAcceptance": {
-            "prNumber": 440,
-            "head": "4f209a72eae387141436aee47adef8352be4e659",
-            "run": 45608381606,
-            "job": 139186107577,
-            "runAttempt": 2,
-            "visualReviewedAt": "2026-11-25T12:15:53.089Z",
-            "artifactId": 15019839031,
-            "artifactSha256": "sha256:960c9b41b589cbfba7d1fe99c985accf9059655583a0340b7a6c0e6598e55646",
-            "artifactRevision": "4f209a72eae387141436aee47adef8352be4e659",
-            "sourceTests": 472,
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": [
-              "Exact artifact ZIP digest and integrity passed; revision.txt matched the attempt-2 head.",
-              "Desktop and mobile article title, date, byline, section, original hero artwork, body hierarchy, source link, related coverage and footer render correctly without visible overflow.",
-              "Hosted regression suite passed 472 source tests, 50 rendered checks, 148 scrolled-header checks, 18 date/freshness journeys and two ordering journeys."
-            ]
-          }
-        },
-        "nextAction": "Merge only PR 440 at exact head 4f209a72 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
-        "productionCommit": "2e094362db82473cb654b2f0e35af4cbecf4e328",
-        "verifiedAt": "2026-11-25T12:19:41.266Z"
-      },
-      {
-        "slot": 4,
-        "status": "live-verified",
-        "candidateTitle": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
-        "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-25T13:01:47.824Z",
-        "outcomeScope": "cycle",
-        "evidence": {
-          "articleSelection": {
-            "candidateId": "mesh-mcp-payments",
-            "eventKey": "mesh-mcp-payments-integration-20261124",
-            "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
-            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
-          },
-          "preparation": {
-            "preparedAt": "2026-11-25T12:21:47.824Z",
-            "classification": "Standard",
-            "sourceReview": "Reviewed the November 24 Mesh release and first-party product claims. The article reports the hosted MCP integration release, preserves that the read-only operation does not move funds, attributes faster-integration claims to the vendor, and treats schema validation, credential isolation, approval and production monitoring as the credit-union control questions rather than presenting a prompt as payment authorization."
-          },
-          "pending": {
-            "prNumber": 441,
-            "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
-            "run": 45613340720,
-            "job": 139202270952,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
-            "run": 45613340720,
-            "job": 139202270952,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-25T12:51:13Z"
-          },
-          "terminalAcceptance": {
-            "prNumber": 441,
-            "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
-            "run": 45613340720,
-            "job": 139202270952,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-25T12:53:56.362Z",
-            "artifactId": 15023461504,
-            "artifactSha256": "sha256:bad19949f2cf74838708c6393db67b9f5b4805e1f3ea7d8fbbc5ee75ea2f2757",
-            "artifactRevision": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
-            "sourceTests": 472,
-            "renderedChecks": 52,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": [
-              "Exact artifact ZIP digest and integrity passed; revision.txt matched the persisted head.",
-              "Desktop and mobile article title, date, byline, section, original SVG, body hierarchy, source link, related coverage and footer render correctly without visible overflow.",
-              "Hosted gates passed 472 source tests, 52 rendered checks, 150 scrolled-article checks, 18 date/freshness journeys, two ordering journeys and eight Table Lore reader journeys."
-            ]
-          }
-        },
-        "nextAction": "Merge only PR 441 at exact head ad4ad1f0 after release planning confirms this persisted validated checkpoint; then verify exact production before live closeout.",
-        "productionCommit": "2a4ed19d6f5dfd6e02df1c7514e800348b8b2897",
-        "verifiedAt": "2026-11-25T12:56:12.530Z"
-      },
-      {
-        "slot": 5,
-        "status": "editorial-hold",
-        "candidateTitle": "Unfilled qualified November25 core article slot 5",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-26T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateCount": 24,
-            "qualified": 4,
-            "rejected": 20,
-            "backupCandidates": 0,
-            "candidateTarget": 24,
-            "sameMorningInventoryRetained": true
-          }
-        },
-        "nextAction": "The next existing scheduled weekday cycle performs its own refreshed current-source bootstrap; no retrospective fill or reopening of the November 25 pool."
+        }
       }
     ],
-    "blockedReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
-    "updatedAt": "2026-11-25T20:56:05.144Z",
+    "updatedAt": "2026-11-26T10:20:00Z",
     "alertCycle": {
-      "owner": "cuai-operating-system",
-      "status": "live-verified",
-      "sourceReviewAt": "2026-11-25T20:31:26.317Z",
-      "dedupeKey": "cuai-alert:fincen-sdtm-filing-relief:2026-11-24",
-      "officialSourceSurfacesReviewed": 4,
-      "candidatesEvaluated": 1,
-      "alertsPublished": 1,
-      "note": "One distinct primary-source FinCEN filing-operations Alert was released after the completed article handoff. The exact source head passed 472 source-regression tests and 50 rendered checks while preserving all 93 history entries. The production deployment for source merge b53334e9af3c79846b085dff136ee8387692d64e became READY at the recorded original publication instant. Relief is limited to eligible SDTM filers and does not suspend other BSA/AML obligations.",
-      "publishedAt": "2026-11-25T20:53:34.953Z",
-      "productionCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
-      "productionDeployment": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
-      "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7174367834",
-      "liveUrl": "https://creditunionainews.com/alerts/#fincen-sdtm-filing-relief-service-disruption-november-2026",
-      "liveVerifiedAt": "2026-11-25T20:56:05.144Z",
-      "homepageDecision": "published-one-qualified-material-alert; new Alert becomes homepage/ticker eligible only from the verified original CUAI publication instant",
-      "validation": {
-        "sourceHead": "2f65973943a5c0baaba773b30a21f72306643991",
-        "pullRequest": 446,
-        "workflowRun": 45695849504,
-        "workflowJob": 139492913767,
-        "conclusion": "success",
-        "artifactId": 15060209562,
-        "artifactSha256": "542665fbfd2eb234a19b88e580425c53f9240d822f04037af0c6949a0ac19c0b",
-        "sourceTests": 472,
-        "sourceFailures": 0,
-        "renderedChecks": 50,
-        "renderedFailures": 0
-      },
-      "productionVerification": {
-        "deploymentId": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
-        "target": "production",
-        "state": "READY",
-        "contentCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
-        "readyAt": "2026-11-25T20:53:34.953Z",
-        "verifiedAt": "2026-11-25T20:56:05.144Z",
-        "publicResponses": [
-          {
-            "path": "index.html",
-            "status": 200
-          },
-          {
-            "path": "alerts/index.html",
-            "status": 200
-          }
-        ]
-      }
+      "status": "not-run",
+      "reason": "Alerts remain owned by the separate CUAI Operating System."
     }
   },
   "history": [
@@ -19110,7 +18728,978 @@
           "nextAction": "The November 25 existing daily run performs its own current-source bootstrap; no retrospective fill or reopening of the November 24 pool."
         }
       ]
+    },
+    {
+      "date": "2026-11-25",
+      "status": "completed-with-editorial-holds",
+      "outcomeSlot": 5,
+      "fullArticleCount": 4,
+      "alertCount": 1,
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html"
+        },
+        {
+          "type": "alert",
+          "title": "FinCEN Extends SDTM Filing Deadlines After Service Disruption",
+          "url": "https://creditunionainews.com/alerts/#fincen-sdtm-filing-relief-service-disruption-november-2026",
+          "sourceUrl": "https://www.fincen.gov/news/news-releases/temporary-limited-exceptive-relief-certain-bank-secrecy-act-corporate-transparency-act-submissions/",
+          "sourceDate": "Nov 24, 2026",
+          "publishedAt": "2026-11-25T20:53:34.953Z",
+          "productionCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
+          "productionDeployment": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
+          "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7174367834"
+        }
+      ],
+      "evaluatedCandidateCount": 24,
+      "beatsSearched": [
+        "regulation-policy",
+        "credit-union-industry",
+        "regional-cu-primary",
+        "payments-core-fintech",
+        "financial-reporting",
+        "security-fraud",
+        "ai-research-platforms",
+        "workforce-household-data",
+        "international-comparisons"
+      ],
+      "discoveryCoverage": {
+        "verifiedStructure": true,
+        "completeCoverage": true,
+        "accessBlocked": [],
+        "date": "2026-11-25",
+        "candidateCount": 24,
+        "candidateInventory": [
+          {
+            "candidateId": "ncua-final-rules-package",
+            "eventKey": "ncua-three-final-deregulation-rules-20261124",
+            "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-three-final-rules-deregulation",
+            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          },
+          {
+            "candidateId": "cfpb-doj-anti-scam",
+            "eventKey": "cfpb-doj-anti-scam-surge-20261124",
+            "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
+            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          },
+          {
+            "candidateId": "tpasc-third-party-standards",
+            "eventKey": "fdic-csbs-tpasc-launch-20261124",
+            "sourceUrl": "https://www.csbs.org/newsroom/fdic-and-csbs-announce-support-third-party-assessments-and-standards-council",
+            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          },
+          {
+            "candidateId": "dupage-arkatechture",
+            "eventKey": "dupage-arkatechture-data-platform-20261124",
+            "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
+            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          },
+          {
+            "candidateId": "mesh-mcp-payments",
+            "eventKey": "mesh-mcp-payments-integration-20261124",
+            "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
+            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          },
+          {
+            "candidateId": "rev-bnpl-repost",
+            "eventKey": "rev-equipifi-bnpl-shop-20261124",
+            "sourceUrl": "https://www.finopotamus.com/post/rev-federal-credit-union-unveils-buy-now-pay-later-feature-within-its-digital-banking-platform",
+            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          },
+          {
+            "candidateId": "alkami-merit-award",
+            "eventKey": "alkami-merit-award-20261124",
+            "sourceUrl": "https://www.alkami.com/news/",
+            "sourcePublishedAt": "2026-11-24T08:00:00-05:00"
+          },
+          {
+            "candidateId": "gulf-winds-benefit",
+            "eventKey": "gulf-winds-palafox-benefit-20261124",
+            "sourceUrl": "https://creditunions.com/press/",
+            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          },
+          {
+            "candidateId": "icba-cu-acquisition-criticism",
+            "eventKey": "icba-credit-union-bank-acquisition-criticism-20261124",
+            "sourceUrl": "https://www.tcmbank.com/web/guest/newsroom",
+            "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+          },
+          {
+            "candidateId": "finbox-gxs-hackcelerator",
+            "eventKey": "finbox-gxs-risk-platform-20261125",
+            "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
+            "sourcePublishedAt": "2026-11-25T09:00:00+08:00"
+          },
+          {
+            "candidateId": "tencent-connected-payments",
+            "eventKey": "tencent-connected-payments-sff-20261125",
+            "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
+            "sourcePublishedAt": "2026-11-25T09:00:00+08:00"
+          },
+          {
+            "candidateId": "aryza-jdm-auto-finance",
+            "eventKey": "aryza-jdm-ai-conversations-20261125",
+            "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
+            "sourcePublishedAt": "2026-11-25T00:37:00Z"
+          },
+          {
+            "candidateId": "cambridge-ai-report",
+            "eventKey": "cambridge-global-ai-finance-report-2026",
+            "sourceUrl": "https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/",
+            "sourcePublishedAt": "2026-11-18T12:00:00Z"
+          },
+          {
+            "candidateId": "fed-ach-thanksgiving",
+            "eventKey": "fedach-thanksgiving-2026-schedule",
+            "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/",
+            "sourcePublishedAt": "2026-01-01T12:00:00-05:00"
+          },
+          {
+            "candidateId": "boe-fsr-calendar",
+            "eventKey": "boe-fsr-future-calendar-20261126",
+            "sourceUrl": "https://www.bankofengland.co.uk/events/upcoming-events",
+            "sourcePublishedAt": "2026-11-25T04:00:00Z"
+          },
+          {
+            "candidateId": "finvolution-future-results",
+            "eventKey": "finvolution-q3-future-results-20261125",
+            "sourceUrl": "https://ir.finvgroup.com/news-releases/news-release-details/finvolution-group-report-third-quarter-2026-financial-results",
+            "sourcePublishedAt": "2026-11-13T04:00:00Z"
+          },
+          {
+            "candidateId": "cobalt-illuma",
+            "eventKey": "cobalt-illuma-voice-security-20261117",
+            "sourceUrl": "https://www.cuinsight.com/press-release/cobalt-credit-union-selects-illuma-to-strengthen-voice-security-and-enhance-member-experience/",
+            "sourcePublishedAt": "2026-11-17T09:00:00-05:00"
+          },
+          {
+            "candidateId": "community-first-velera",
+            "eventKey": "community-first-velera-processing-20261114",
+            "sourceUrl": "https://www.cubroadcast.com/news",
+            "sourcePublishedAt": "2026-11-14T09:00:00-05:00"
+          },
+          {
+            "candidateId": "fivepoint-mahalo",
+            "eventKey": "fivepoint-mahalo-selection-20261119",
+            "sourceUrl": "https://thecreditunionwire.com/",
+            "sourcePublishedAt": "2026-11-19T09:00:00-05:00"
+          },
+          {
+            "candidateId": "abnb-community-award",
+            "eventKey": "abnb-community-award-20261120",
+            "sourceUrl": "https://thecreditunionwire.com/",
+            "sourcePublishedAt": "2026-11-20T09:00:00-05:00"
+          },
+          {
+            "candidateId": "wellington-incident-update",
+            "eventKey": "wellington-credit-union-breach-20261121",
+            "sourceUrl": "https://www.thetimes.com/world/ireland-world/article/security-warning-threats-cyberattack-credit-union-wellington-it-belfast-cvvhgnmt6",
+            "sourcePublishedAt": "2026-11-21T20:15:00Z"
+          },
+          {
+            "candidateId": "mesh-agent-control-synthesis",
+            "eventKey": "agent-coded-payments-control-synthesis-20261125",
+            "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
+            "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+          },
+          {
+            "candidateId": "cfpb-credit-trends",
+            "eventKey": "cfpb-credit-trends-dashboard-20261109",
+            "sourceUrl": "https://www.consumerfinance.gov/data-research/consumer-credit-trends/",
+            "sourcePublishedAt": "2026-11-09T12:00:00-05:00"
+          },
+          {
+            "candidateId": "bls-state-employment",
+            "eventKey": "bls-state-employment-october-2026",
+            "sourceUrl": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+            "sourcePublishedAt": "2026-11-20T10:00:00-05:00"
+          }
+        ],
+        "candidateTarget": 24,
+        "candidateShortfallReason": null,
+        "releaseReady": false
+      },
+      "candidateEvaluations": [
+        {
+          "id": "ncua-final-rules-package",
+          "eventKey": "ncua-three-final-deregulation-rules-20261124",
+          "title": "Three NCUA Final Rules Change Corporate, Interlock and Audit Requirements",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-three-final-rules-deregulation",
+          "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+          "score": 77.4,
+          "status": "reviewed",
+          "reason": "Current NCUA primary release supports a distinct three-rule operating-control package; each rule and retained obligation will be separated.",
+          "selectionRejections": [],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "regtech-monitoring",
+          "confidence": 0.98
+        },
+        {
+          "id": "cfpb-doj-anti-scam",
+          "eventKey": "cfpb-doj-anti-scam-surge-20261124",
+          "title": "Federal Anti-Scam Surge Adds a Credit-Union Member-Education Checklist",
+          "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
+          "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+          "score": 72.4,
+          "status": "reviewed",
+          "reason": "Current CFPB and DOJ primary releases support a bounded member-education and fraud-operations story.",
+          "selectionRejections": [],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "fraud-analytics",
+          "confidence": 0.96
+        },
+        {
+          "id": "tpasc-third-party-standards",
+          "eventKey": "fdic-csbs-tpasc-launch-20261124",
+          "title": "FDIC and State Regulators Back a Voluntary Third-Party Assessment Council",
+          "sourceUrl": "https://www.csbs.org/newsroom/fdic-and-csbs-announce-support-third-party-assessments-and-standards-council",
+          "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+          "score": 72.6,
+          "status": "rejected",
+          "reason": "Held: the current official CSBS/FDIC announcement could not be read through the authorized source path, so an exact primary-source review is incomplete.",
+          "selectionRejections": [
+            "primary-source-or-date-not-proven"
+          ],
+          "primaryFunction": "vendor-management",
+          "primaryTechnology": "privacy-security",
+          "confidence": 0.94
+        },
+        {
+          "id": "dupage-arkatechture",
+          "eventKey": "dupage-arkatechture-data-platform-20261124",
+          "title": "DuPage Credit Union Plans a Unified Member-Data Foundation",
+          "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
+          "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
+          "score": 70.2,
+          "status": "reviewed",
+          "reason": "Current issuer press release supports a reported platform-selection story; vendor benefits remain attributed and no results are claimed.",
+          "selectionRejections": [],
+          "primaryFunction": "it-data-cybersecurity",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.88
+        },
+        {
+          "id": "mesh-mcp-payments",
+          "eventKey": "mesh-mcp-payments-integration-20261124",
+          "title": "Mesh Gives Coding Agents a Hosted Payments Integration Interface",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
+          "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
+          "score": 67,
+          "status": "rejected",
+          "reason": "Rejected as the same underlying Mesh MCP announcement as the stronger durable control-focused synthesis; one event is one article.",
+          "selectionRejections": [
+            "same-event-duplicate"
+          ],
+          "primaryFunction": "payments-deposits",
+          "primaryTechnology": "agents-automation",
+          "confidence": 0.82
+        },
+        {
+          "id": "rev-bnpl-repost",
+          "eventKey": "rev-equipifi-bnpl-shop-20261124",
+          "title": "REV Federal Credit Union Adds a Digital-Banking Shopping Entry Point",
+          "sourceUrl": "https://www.finopotamus.com/post/rev-federal-credit-union-unveils-buy-now-pay-later-feature-within-its-digital-banking-platform",
+          "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
+          "score": 67.7,
+          "status": "rejected",
+          "reason": "confidence-below-0.7",
+          "selectionRejections": [
+            "confidence-below-0.7"
+          ],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "realtime-embedded-finance",
+          "confidence": 0.66
+        },
+        {
+          "id": "alkami-merit-award",
+          "eventKey": "alkami-merit-award-20261124",
+          "title": "Alkami Wins a Technology Award",
+          "sourceUrl": "https://www.alkami.com/news/",
+          "sourcePublishedAt": "2026-11-24T08:00:00-05:00",
+          "score": 57.3,
+          "status": "rejected",
+          "reason": "confidence-below-0.7; score-below-minimum",
+          "selectionRejections": [
+            "confidence-below-0.7",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "marketing-growth",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.52
+        },
+        {
+          "id": "gulf-winds-benefit",
+          "eventKey": "gulf-winds-palafox-benefit-20261124",
+          "title": "Gulf Winds Sponsors a Community Benefit",
+          "sourceUrl": "https://creditunions.com/press/",
+          "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+          "score": 56.8,
+          "status": "rejected",
+          "reason": "confidence-below-0.7; score-below-minimum",
+          "selectionRejections": [
+            "confidence-below-0.7",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "marketing-growth",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.55
+        },
+        {
+          "id": "icba-cu-acquisition-criticism",
+          "eventKey": "icba-credit-union-bank-acquisition-criticism-20261124",
+          "title": "ICBA Repeats Its Objection to Credit-Union Bank Acquisitions",
+          "sourceUrl": "https://www.tcmbank.com/web/guest/newsroom",
+          "sourcePublishedAt": "2026-11-24T12:00:00-05:00",
+          "score": 63.7,
+          "status": "rejected",
+          "reason": "confidence-below-0.7",
+          "selectionRejections": [
+            "confidence-below-0.7"
+          ],
+          "primaryFunction": "board-strategy",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.62
+        },
+        {
+          "id": "finbox-gxs-hackcelerator",
+          "eventKey": "finbox-gxs-risk-platform-20261125",
+          "title": "FinBox Wins a Singapore Credit-and-Fraud Risk Challenge",
+          "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
+          "sourcePublishedAt": "2026-11-25T09:00:00+08:00",
+          "score": 59.5,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "fraud-analytics",
+          "confidence": 0.72
+        },
+        {
+          "id": "tencent-connected-payments",
+          "eventKey": "tencent-connected-payments-sff-20261125",
+          "title": "Tencent Highlights Connected Cross-Border Payment Wallets",
+          "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
+          "sourcePublishedAt": "2026-11-25T09:00:00+08:00",
+          "score": 57.9,
+          "status": "rejected",
+          "reason": "confidence-below-0.7; score-below-minimum",
+          "selectionRejections": [
+            "confidence-below-0.7",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "payments-deposits",
+          "primaryTechnology": "realtime-embedded-finance",
+          "confidence": 0.68
+        },
+        {
+          "id": "aryza-jdm-auto-finance",
+          "eventKey": "aryza-jdm-ai-conversations-20261125",
+          "title": "Aryza Adds AI-Driven Conversations to an Irish Auto-Finance Company",
+          "sourceUrl": "https://en.prnasia.com/all_releases/industry_FNT.shtml",
+          "sourcePublishedAt": "2026-11-25T00:37:00Z",
+          "score": 61.2,
+          "status": "rejected",
+          "reason": "confidence-below-0.7; score-below-minimum",
+          "selectionRejections": [
+            "confidence-below-0.7",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "conversational-ai",
+          "confidence": 0.64
+        },
+        {
+          "id": "cambridge-ai-report",
+          "eventKey": "cambridge-global-ai-finance-report-2026",
+          "title": "Global AI Survey Separates Adoption From Measurable Financial Value",
+          "sourceUrl": "https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/",
+          "sourcePublishedAt": "2026-11-18T12:00:00Z",
+          "score": 65.9,
+          "status": "rejected",
+          "reason": "Held: the opened Cambridge report page did not establish an exact original publication date, so the freshness gate is unproven.",
+          "selectionRejections": [
+            "primary-source-or-date-not-proven"
+          ],
+          "primaryFunction": "board-strategy",
+          "primaryTechnology": "agents-automation",
+          "confidence": 0.9
+        },
+        {
+          "id": "fed-ach-thanksgiving",
+          "eventKey": "fedach-thanksgiving-2026-schedule",
+          "title": "FedACH Lists Its Thanksgiving Processing Window",
+          "sourceUrl": "https://www.frbservices.org/about/holiday-schedules/",
+          "sourcePublishedAt": "2026-01-01T12:00:00-05:00",
+          "score": 61.6,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "operations",
+          "primaryTechnology": "core-api-cloud",
+          "confidence": 0.95
+        },
+        {
+          "id": "boe-fsr-calendar",
+          "eventKey": "boe-fsr-future-calendar-20261126",
+          "title": "Bank of England Lists a Future Financial Stability Release",
+          "sourceUrl": "https://www.bankofengland.co.uk/events/upcoming-events",
+          "sourcePublishedAt": "2026-11-25T04:00:00Z",
+          "score": 52.4,
+          "status": "rejected",
+          "reason": "confidence-below-0.7; score-below-minimum",
+          "selectionRejections": [
+            "confidence-below-0.7",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "board-strategy",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.58
+        },
+        {
+          "id": "finvolution-future-results",
+          "eventKey": "finvolution-q3-future-results-20261125",
+          "title": "FinVolution Schedules Results After the U.S. Market Close",
+          "sourceUrl": "https://ir.finvgroup.com/news-releases/news-release-details/finvolution-group-report-third-quarter-2026-financial-results",
+          "sourcePublishedAt": "2026-11-13T04:00:00Z",
+          "score": 41.1,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "finance-treasury",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.8
+        },
+        {
+          "id": "cobalt-illuma",
+          "eventKey": "cobalt-illuma-voice-security-20261117",
+          "title": "Cobalt Credit Union Selects Passive Voice Authentication",
+          "sourceUrl": "https://www.cuinsight.com/press-release/cobalt-credit-union-selects-illuma-to-strengthen-voice-security-and-enhance-member-experience/",
+          "sourcePublishedAt": "2026-11-17T09:00:00-05:00",
+          "score": 60.9,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "member-service",
+          "primaryTechnology": "identity-biometrics",
+          "confidence": 0.87
+        },
+        {
+          "id": "community-first-velera",
+          "eventKey": "community-first-velera-processing-20261114",
+          "title": "Community First Expands Card Processing With Velera",
+          "sourceUrl": "https://www.cubroadcast.com/news",
+          "sourcePublishedAt": "2026-11-14T09:00:00-05:00",
+          "score": 58,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "payments-deposits",
+          "primaryTechnology": "core-api-cloud",
+          "confidence": 0.83
+        },
+        {
+          "id": "fivepoint-mahalo",
+          "eventKey": "fivepoint-mahalo-selection-20261119",
+          "title": "5Point Credit Union Selects Mahalo Digital Banking",
+          "sourceUrl": "https://thecreditunionwire.com/",
+          "sourcePublishedAt": "2026-11-19T09:00:00-05:00",
+          "score": 57.5,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "member-service",
+          "primaryTechnology": "core-api-cloud",
+          "confidence": 0.76
+        },
+        {
+          "id": "abnb-community-award",
+          "eventKey": "abnb-community-award-20261120",
+          "title": "ABNB Receives a Community-Minded Business Award",
+          "sourceUrl": "https://thecreditunionwire.com/",
+          "sourcePublishedAt": "2026-11-20T09:00:00-05:00",
+          "score": 50.6,
+          "status": "rejected",
+          "reason": "confidence-below-0.7; invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "confidence-below-0.7",
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "marketing-growth",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.52
+        },
+        {
+          "id": "wellington-incident-update",
+          "eventKey": "wellington-credit-union-breach-20261121",
+          "title": "Wellington IT Breach Reporting Expands",
+          "sourceUrl": "https://www.thetimes.com/world/ireland-world/article/security-warning-threats-cyberattack-credit-union-wellington-it-belfast-cvvhgnmt6",
+          "sourcePublishedAt": "2026-11-21T20:15:00Z",
+          "score": 66.1,
+          "status": "rejected",
+          "reason": "confidence-below-0.7; invalid-or-stale-source-date",
+          "selectionRejections": [
+            "confidence-below-0.7",
+            "invalid-or-stale-source-date"
+          ],
+          "primaryFunction": "it-data-cybersecurity",
+          "primaryTechnology": "privacy-security",
+          "confidence": 0.67
+        },
+        {
+          "id": "mesh-agent-control-synthesis",
+          "eventKey": "agent-coded-payments-control-synthesis-20261125",
+          "title": "What an AI-Written Payments Integration Still Has to Prove",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
+          "sourcePublishedAt": "2026-11-24T09:00:00-05:00",
+          "score": 69.2,
+          "status": "reviewed",
+          "reason": "Current Mesh announcement and public product documentation support a durable control-focused synthesis; no achieved institution results are claimed.",
+          "selectionRejections": [],
+          "primaryFunction": "vendor-management",
+          "primaryTechnology": "agents-automation",
+          "confidence": 0.78
+        },
+        {
+          "id": "cfpb-credit-trends",
+          "eventKey": "cfpb-credit-trends-dashboard-20261109",
+          "title": "CFPB Updates Consumer Credit Trend Dashboards",
+          "sourceUrl": "https://www.consumerfinance.gov/data-research/consumer-credit-trends/",
+          "sourcePublishedAt": "2026-11-09T12:00:00-05:00",
+          "score": 55.5,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.9
+        },
+        {
+          "id": "bls-state-employment",
+          "eventKey": "bls-state-employment-october-2026",
+          "title": "BLS Publishes October State Employment Data",
+          "sourceUrl": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+          "sourcePublishedAt": "2026-11-20T10:00:00-05:00",
+          "score": 57.5,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "finance-treasury",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.9
+        }
+      ],
+      "browserReadiness": {
+        "observedAt": "2026-11-25T10:26:41.959Z",
+        "status": "local-blocked-ci-fallback-available",
+        "revision": "adb2d7cec5fb35f4c94c16d04cd504504a61303a",
+        "reason": "Pinned Playwright Chromium is absent from this owner workspace. No install or cache change was made; the policy-permitted exact-head PR design-check artifact remains required."
+      },
+      "socialDecision": {
+        "status": "held-no-reservation",
+        "reason": "Four November 25 articles are live, but no fresh complete provider inventory was obtained and historical destination-review holds remain. No LinkedIn reservation, submission or distribution attempt was made."
+      },
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "status": "live-verified",
+          "candidateTitle": "NCUA Final Rules Split the Work Across ALCO, Interlocks and Audits",
+          "url": "https://creditunionainews.com/insight-ncua-final-rules-operating-controls.html",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-25T11:12:36.452Z",
+          "outcomeScope": "cycle",
+          "evidence": {
+            "articleSelection": {
+              "candidateId": "ncua-final-rules-package",
+              "eventKey": "ncua-three-final-deregulation-rules-20261124",
+              "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/ncua-announces-three-final-rules-deregulation",
+              "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+            },
+            "preparation": {
+              "preparedAt": "2026-11-25T10:26:41.959Z",
+              "classification": "High",
+              "sourceReview": "Read the November 24 NCUA release and linked final-rule materials. The article will distinguish the corporate-credit-union ALCO/reporting changes, management-interlock threshold changes and supervisory-audit changes, retain effective-date and remaining-obligation limits, and avoid presenting three separate rules as one blanket deregulation result."
+            },
+            "pending": {
+              "prNumber": 438,
+              "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
+              "run": 45596690137,
+              "job": 139144498455,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
+              "run": 45596690137,
+              "job": 139144498455,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-25T11:00:38.303Z"
+            },
+            "terminalAcceptance": {
+              "prNumber": 438,
+              "head": "70db13fe1da89989fd0f0e596948659e48144dbd",
+              "run": 45596690137,
+              "job": 139144498455,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-25T11:00:38.303Z",
+              "artifactId": 15014437731,
+              "artifactSha256": "sha256:c4150c7ff8db14c43f04e1afc44e1db81a8303cec0ea746ea0d1db1376d390d7",
+              "artifactRevision": "70db13fe1da89989fd0f0e596948659e48144dbd",
+              "sourceTests": 472,
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": [
+                "Desktop and mobile article title, dek, date, byline, section and original hero artwork render correctly.",
+                "Body hierarchy, links, related coverage, footer and Insights listing placement are readable without visible overflow.",
+                "Hosted interaction, typography, accessibility, scrolled-header, date/freshness and ordering gates passed on the exact head."
+              ]
+            }
+          },
+          "nextAction": "Merge only PR 438 at exact head 70db13fe after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout.",
+          "productionCommit": "b3d6d1522f8d81a8c2d05a0057d949c212fe6f25",
+          "verifiedAt": "2026-11-25T11:03:57.342Z"
+        },
+        {
+          "slot": 2,
+          "status": "live-verified",
+          "candidateTitle": "Federal Anti-Scam Push Gives Credit Unions a Member-Education Test",
+          "url": "https://creditunionainews.com/news/federal-anti-scam-member-education.html",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-25T11:47:36.387Z",
+          "outcomeScope": "cycle",
+          "evidence": {
+            "articleSelection": {
+              "candidateId": "cfpb-doj-anti-scam",
+              "eventKey": "cfpb-doj-anti-scam-surge-20261124",
+              "sourceUrl": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-joins-department-of-justice-and-other-federal-partners-in-anti-scam-efforts/",
+              "sourcePublishedAt": "2026-11-24T12:00:00-05:00"
+            },
+            "preparation": {
+              "preparedAt": "2026-11-25T11:08:12.085Z",
+              "classification": "High",
+              "sourceReview": "Read current CFPB and Justice Department November 24 releases and standing FTC verification guidance. The package distinguishes federal enforcement totals from institution-level prevention, preserves allegation status, and does not present the campaign as a new credit-union rule or reimbursement standard."
+            },
+            "pending": {
+              "prNumber": 439,
+              "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+              "run": 45602130041,
+              "job": 139165410021,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+              "run": 45602130041,
+              "job": 139165410021,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-25T11:41:00.000Z"
+            },
+            "terminalAcceptance": {
+              "prNumber": 439,
+              "head": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+              "run": 45602130041,
+              "job": 139165410021,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-25T11:41:10.307Z",
+              "artifactId": 15017827147,
+              "artifactSha256": "sha256:0a163af1f059545ca9366741fd94ea3ec64bc9a59c8dbb83c250323a2eb29316",
+              "artifactRevision": "8dc1b54b0ff3a0129e322f9568a558566e00c295",
+              "sourceTests": 472,
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": [
+                "Desktop and mobile article title, dek, date, byline, section and original anti-scam artwork render correctly.",
+                "Body hierarchy, source links, related coverage, footer and News placement are readable without visible overflow.",
+                "Hosted interaction, typography, accessibility, scrolled-header, date/freshness, artwork and ordering gates passed on the exact corrected head."
+              ]
+            }
+          },
+          "nextAction": "Merge only PR 439 at exact corrected head 8dc1b54b after the release planner confirms the persisted validated checkpoint; then verify exact production before live closeout.",
+          "productionCommit": "bfacc79c281bb972fa87bd56540bd5355e167c7d",
+          "verifiedAt": "2026-11-25T11:46:08.078Z"
+        },
+        {
+          "slot": 3,
+          "status": "live-verified",
+          "candidateTitle": "DuPage Credit Union’s Data Unification Project Puts Member Context Before AI",
+          "url": "https://creditunionainews.com/news/dupage-arkatechture-member-data-foundation.html",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-25T12:27:01.774Z",
+          "outcomeScope": "cycle",
+          "evidence": {
+            "articleSelection": {
+              "candidateId": "dupage-arkatechture",
+              "eventKey": "dupage-arkatechture-data-platform-20261124",
+              "sourceUrl": "https://www.cuinsight.com/press-release/dupage-credit-union-partners-with-arkatechture-to-unify-member-data-and-strengthen-member-experience/",
+              "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+            },
+            "preparation": {
+              "preparedAt": "2026-11-25T11:47:01.774Z",
+              "classification": "Standard",
+              "sourceReview": "Reviewed the November 24 DuPage Credit Union and Arkatechture announcement as vendor-and-institution supplied evidence. The article frames the work as a member-data foundation and implementation decision, not a proven AI outcome, and preserves the absence of independent performance results."
+            },
+            "pending": {
+              "prNumber": 440,
+              "head": "4f209a72eae387141436aee47adef8352be4e659",
+              "run": 45608381606,
+              "job": 139186107577,
+              "runAttempt": 2
+            },
+            "validationHistory": [
+              {
+                "prNumber": 440,
+                "head": "2822f2aceda8bd47bcc92c4d69ff9916fcab166d",
+                "run": 45608095286,
+                "job": 139184136065,
+                "runAttempt": 1,
+                "status": "superseded",
+                "observedAt": "2026-11-25T11:52:39.783Z",
+                "reason": "article route corrected to the already persisted canonical slot URL before terminal acceptance"
+              },
+              {
+                "prNumber": 440,
+                "head": "4f209a72eae387141436aee47adef8352be4e659",
+                "run": 45608381606,
+                "job": 139185134527,
+                "runAttempt": 1,
+                "status": "superseded",
+                "observedAt": "2026-11-25T11:54:30.126Z",
+                "terminalValidation": {
+                  "prNumber": 440,
+                  "head": "4f209a72eae387141436aee47adef8352be4e659",
+                  "run": 45608381606,
+                  "job": 139185134527,
+                  "runAttempt": 1,
+                  "conclusion": "failure",
+                  "runConclusion": "failure",
+                  "jobConclusion": "failure",
+                  "observedAt": "2026-11-25T11:53:03Z"
+                },
+                "reason": "attempt 1 fetched main before the replacement checkpoint was visible and failed the exact checkpoint gate before source or rendered tests"
+              }
+            ],
+            "terminalValidation": {
+              "head": "4f209a72eae387141436aee47adef8352be4e659",
+              "run": 45608381606,
+              "job": 139186107577,
+              "runAttempt": 2,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-25T12:15:51.411Z"
+            },
+            "terminalAcceptance": {
+              "prNumber": 440,
+              "head": "4f209a72eae387141436aee47adef8352be4e659",
+              "run": 45608381606,
+              "job": 139186107577,
+              "runAttempt": 2,
+              "visualReviewedAt": "2026-11-25T12:15:53.089Z",
+              "artifactId": 15019839031,
+              "artifactSha256": "sha256:960c9b41b589cbfba7d1fe99c985accf9059655583a0340b7a6c0e6598e55646",
+              "artifactRevision": "4f209a72eae387141436aee47adef8352be4e659",
+              "sourceTests": 472,
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": [
+                "Exact artifact ZIP digest and integrity passed; revision.txt matched the attempt-2 head.",
+                "Desktop and mobile article title, date, byline, section, original hero artwork, body hierarchy, source link, related coverage and footer render correctly without visible overflow.",
+                "Hosted regression suite passed 472 source tests, 50 rendered checks, 148 scrolled-header checks, 18 date/freshness journeys and two ordering journeys."
+              ]
+            }
+          },
+          "nextAction": "Merge only PR 440 at exact head 4f209a72 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+          "productionCommit": "2e094362db82473cb654b2f0e35af4cbecf4e328",
+          "verifiedAt": "2026-11-25T12:19:41.266Z"
+        },
+        {
+          "slot": 4,
+          "status": "live-verified",
+          "candidateTitle": "Mesh’s MCP Launch Turns Payment Integration Into a Control Question",
+          "url": "https://creditunionainews.com/news/mesh-mcp-payment-integration-controls.html",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-25T13:01:47.824Z",
+          "outcomeScope": "cycle",
+          "evidence": {
+            "articleSelection": {
+              "candidateId": "mesh-mcp-payments",
+              "eventKey": "mesh-mcp-payments-integration-20261124",
+              "sourceUrl": "https://www.prnewswire.com/news-releases/mesh-launches-mesh-mcp-turning-one-prompt-into-a-payments-integration-302949189.html",
+              "sourcePublishedAt": "2026-11-24T09:00:00-05:00"
+            },
+            "preparation": {
+              "preparedAt": "2026-11-25T12:21:47.824Z",
+              "classification": "Standard",
+              "sourceReview": "Reviewed the November 24 Mesh release and first-party product claims. The article reports the hosted MCP integration release, preserves that the read-only operation does not move funds, attributes faster-integration claims to the vendor, and treats schema validation, credential isolation, approval and production monitoring as the credit-union control questions rather than presenting a prompt as payment authorization."
+            },
+            "pending": {
+              "prNumber": 441,
+              "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+              "run": 45613340720,
+              "job": 139202270952,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+              "run": 45613340720,
+              "job": 139202270952,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-25T12:51:13Z"
+            },
+            "terminalAcceptance": {
+              "prNumber": 441,
+              "head": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+              "run": 45613340720,
+              "job": 139202270952,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-25T12:53:56.362Z",
+              "artifactId": 15023461504,
+              "artifactSha256": "sha256:bad19949f2cf74838708c6393db67b9f5b4805e1f3ea7d8fbbc5ee75ea2f2757",
+              "artifactRevision": "ad4ad1f0600c67100b0cb0a3596c8e621d4c2186",
+              "sourceTests": 472,
+              "renderedChecks": 52,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": [
+                "Exact artifact ZIP digest and integrity passed; revision.txt matched the persisted head.",
+                "Desktop and mobile article title, date, byline, section, original SVG, body hierarchy, source link, related coverage and footer render correctly without visible overflow.",
+                "Hosted gates passed 472 source tests, 52 rendered checks, 150 scrolled-article checks, 18 date/freshness journeys, two ordering journeys and eight Table Lore reader journeys."
+              ]
+            }
+          },
+          "nextAction": "Merge only PR 441 at exact head ad4ad1f0 after release planning confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+          "productionCommit": "2a4ed19d6f5dfd6e02df1c7514e800348b8b2897",
+          "verifiedAt": "2026-11-25T12:56:12.530Z"
+        },
+        {
+          "slot": 5,
+          "status": "editorial-hold",
+          "candidateTitle": "Unfilled qualified November25 core article slot 5",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-26T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateCount": 24,
+              "qualified": 4,
+              "rejected": 20,
+              "backupCandidates": 0,
+              "candidateTarget": 24,
+              "sameMorningInventoryRetained": true
+            }
+          },
+          "nextAction": "The next existing scheduled weekday cycle performs its own refreshed current-source bootstrap; no retrospective fill or reopening of the November 25 pool."
+        }
+      ],
+      "blockedReason": "4/5 core articles live after the complete 24-candidate pool. Four independently qualified; the other 20 were rejected for source/date proof, duplicate event, existing coverage, relevance, confidence, score, concentration or non-operational promotional framing. No qualified backup remained; no filler, second scan or relaxed evidence gate.",
+      "updatedAt": "2026-11-25T20:56:05.144Z",
+      "alertCycle": {
+        "owner": "cuai-operating-system",
+        "status": "live-verified",
+        "sourceReviewAt": "2026-11-25T20:31:26.317Z",
+        "dedupeKey": "cuai-alert:fincen-sdtm-filing-relief:2026-11-24",
+        "officialSourceSurfacesReviewed": 4,
+        "candidatesEvaluated": 1,
+        "alertsPublished": 1,
+        "note": "One distinct primary-source FinCEN filing-operations Alert was released after the completed article handoff. The exact source head passed 472 source-regression tests and 50 rendered checks while preserving all 93 history entries. The production deployment for source merge b53334e9af3c79846b085dff136ee8387692d64e became READY at the recorded original publication instant. Relief is limited to eligible SDTM filers and does not suspend other BSA/AML obligations.",
+        "publishedAt": "2026-11-25T20:53:34.953Z",
+        "productionCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
+        "productionDeployment": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
+        "publicationEvidence": "https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7174367834",
+        "liveUrl": "https://creditunionainews.com/alerts/#fincen-sdtm-filing-relief-service-disruption-november-2026",
+        "liveVerifiedAt": "2026-11-25T20:56:05.144Z",
+        "homepageDecision": "published-one-qualified-material-alert; new Alert becomes homepage/ticker eligible only from the verified original CUAI publication instant",
+        "validation": {
+          "sourceHead": "2f65973943a5c0baaba773b30a21f72306643991",
+          "pullRequest": 446,
+          "workflowRun": 45695849504,
+          "workflowJob": 139492913767,
+          "conclusion": "success",
+          "artifactId": 15060209562,
+          "artifactSha256": "542665fbfd2eb234a19b88e580425c53f9240d822f04037af0c6949a0ac19c0b",
+          "sourceTests": 472,
+          "sourceFailures": 0,
+          "renderedChecks": 50,
+          "renderedFailures": 0
+        },
+        "productionVerification": {
+          "deploymentId": "dpl_F9VbC9EyPnHLWMWPpALqi8Rn5TfZ",
+          "target": "production",
+          "state": "READY",
+          "contentCommit": "b53334e9af3c79846b085dff136ee8387692d64e",
+          "readyAt": "2026-11-25T20:53:34.953Z",
+          "verifiedAt": "2026-11-25T20:56:05.144Z",
+          "publicResponses": [
+            {
+              "path": "index.html",
+              "status": 200
+            },
+            {
+              "path": "alerts/index.html",
+              "status": 200
+            }
+          ]
+        }
+      }
     }
-  ],
-  "note": "Shared idempotent state for the Daily Edition and Alerts desk. Move the prior current object to history when the date changes."
+  ]
 }
