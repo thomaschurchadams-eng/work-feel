@@ -640,7 +640,7 @@
       },
       {
         "slot": 2,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
         "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html",
         "accountableOwner": "daily-publisher",
@@ -657,12 +657,19 @@
             "preparedAt": "2026-11-26T11:16:10.898Z",
             "classification": "High",
             "sourceReview": "Read the November 25 joint Federal Reserve, CFPB and OCC release. It raises the 2027 higher-priced mortgage appraisal exemption threshold from $34,200 to $35,500 effective January 1, 2027, based on the 3.9% CPI-W increase. The article will distinguish the small-loan threshold exemption from appraisal rules generally and will not imply every higher-priced mortgage is exempt."
+          },
+          "pending": {
+            "prNumber": 450,
+            "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+            "run": 45815967652,
+            "job": 139895666512,
+            "runAttempt": 1
           }
         },
-        "nextAction": "Prepare one atomic article revision, validate it against this stored preparation and retain the exact owned PR/head/run/job/attempt before any terminal or live outcome."
+        "nextAction": "Review the exact-head terminal run and artifact; persist visual acceptance before any merge."
       }
     ],
-    "updatedAt": "2026-11-26T11:16:10.898Z",
+    "updatedAt": "2026-11-26T12:24:48.126Z",
     "alertCycle": {
       "status": "not-run",
       "reason": "Alerts remain owned by the separate CUAI Operating System."
