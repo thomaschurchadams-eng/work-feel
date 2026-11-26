@@ -4,7 +4,7 @@
   "current": {
     "date": "2026-11-26",
     "status": "in-progress",
-    "outcomeSlot": 1,
+    "outcomeSlot": 2,
     "fullArticleCount": 1,
     "alertCount": 0,
     "publications": [
@@ -637,9 +637,32 @@
         "nextAction": "Merge only PR 449 at exact head 61c9452 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
         "productionCommit": "052f4c6e94306ea7678c090d3fb84efa00334c79",
         "verifiedAt": "2026-11-26T11:14:30.010Z"
+      },
+      {
+        "slot": 2,
+        "status": "prepared",
+        "candidateTitle": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
+        "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html",
+        "accountableOwner": "daily-publisher",
+        "nextReviewAt": "2026-11-26T11:31:10.898Z",
+        "outcomeScope": "cycle",
+        "evidence": {
+          "articleSelection": {
+            "candidateId": "fed-hpml-2027-appraisal-threshold",
+            "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+            "sourcePublishedAt": "2026-11-25T15:00:00Z"
+          },
+          "preparation": {
+            "preparedAt": "2026-11-26T11:16:10.898Z",
+            "classification": "High",
+            "sourceReview": "Read the November 25 joint Federal Reserve, CFPB and OCC release. It raises the 2027 higher-priced mortgage appraisal exemption threshold from $34,200 to $35,500 effective January 1, 2027, based on the 3.9% CPI-W increase. The article will distinguish the small-loan threshold exemption from appraisal rules generally and will not imply every higher-priced mortgage is exempt."
+          }
+        },
+        "nextAction": "Prepare one atomic article revision, validate it against this stored preparation and retain the exact owned PR/head/run/job/attempt before any terminal or live outcome."
       }
     ],
-    "updatedAt": "2026-11-26T11:10:00Z",
+    "updatedAt": "2026-11-26T11:16:10.898Z",
     "alertCycle": {
       "status": "not-run",
       "reason": "Alerts remain owned by the separate CUAI Operating System."
