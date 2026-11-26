@@ -570,11 +570,11 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "prepared",
+        "status": "pending-validation",
         "candidateTitle": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
         "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-26T10:50:00Z",
+        "nextReviewAt": "2026-11-26T11:14:00Z",
         "outcomeScope": "cycle",
         "evidence": {
           "articleSelection": {
@@ -587,11 +587,19 @@
             "preparedAt": "2026-11-26T10:20:00Z",
             "classification": "High",
             "sourceReview": "Read the Federal Reserve's November 25 Beige Book national summary and retained its eight-district growth, four-district flat, price-sensitive consumer, housing and credit-demand limits. The article will not treat district anecdotes as national forecasts or invent credit-union results."
+          },
+          "pending": {
+            "prNumber": 449,
+            "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+            "run": 45804318176,
+            "job": 139855408809,
+            "runAttempt": 1
           }
-        }
+        },
+        "nextAction": "Review the exact-head terminal run and artifact; persist visual acceptance before any merge."
       }
     ],
-    "updatedAt": "2026-11-26T10:20:00Z",
+    "updatedAt": "2026-11-26T11:09:11Z",
     "alertCycle": {
       "status": "not-run",
       "reason": "Alerts remain owned by the separate CUAI Operating System."
