@@ -3,6 +3,39 @@
   "description": "Append one normalized record after each production publication. The scoring engine uses the trailing 28 and 90 days to prevent repetition and identify coverage gaps.",
   "articles": [
     {
+      "id": "hpml-appraisal-exemption-threshold-2027",
+      "title": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
+      "url": "/news/hpml-appraisal-exemption-threshold-2027.html",
+      "publishedAt": "2026-11-26",
+      "publicationTimeBasis": "Original publication date at Eastern day precision; exact first production verification will be retained in canonical state.",
+      "section": "news",
+      "beat": "lending",
+      "functions": [
+        "lending-collections",
+        "risk-compliance"
+      ],
+      "technologies": [
+        "regtech-monitoring"
+      ],
+      "format": "breaking-brief",
+      "audience": "functional-leader",
+      "primaryAudience": "Mortgage lending, compliance and operations leaders",
+      "maturity": "practical-now",
+      "promotionPriority": "High",
+      "socialDecision": "held-no-reservation",
+      "homepageTreatment": "latest-news-first-card",
+      "internalLinkTargets": [
+        "/news/treasury-institutional-investor-credit-unions.html",
+        "/news/heloc-balances-third-quarter-2026-credit-unions.html"
+      ],
+      "sourceTier": 1,
+      "score": 75.9,
+      "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+      "sourcePublishedAt": "2026-11-25T15:00:00Z",
+      "sourceLimit": "The joint agency release changes only the annually indexed small-loan exemption threshold. It does not establish a general appraisal exemption or change the tests that determine whether a mortgage is higher priced."
+    },
+    {
       "id": "fed-beige-book-credit-demand-november-2026",
       "title": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
       "url": "/news/fed-beige-book-credit-demand-november-2026.html",
