@@ -5,9 +5,14 @@
     "date": "2026-11-26",
     "status": "in-progress",
     "outcomeSlot": 1,
-    "fullArticleCount": 0,
+    "fullArticleCount": 1,
     "alertCount": 0,
-    "publications": [],
+    "publications": [
+      {
+        "type": "article",
+        "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html"
+      }
+    ],
     "evaluatedCandidateCount": 25,
     "beatsSearched": [
       "regulation-policy",
@@ -570,7 +575,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "validated",
+        "status": "live-verified",
         "candidateTitle": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
         "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html",
         "accountableOwner": "daily-publisher",
@@ -629,7 +634,9 @@
             ]
           }
         },
-        "nextAction": "Merge only PR 449 at exact head 61c9452 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout."
+        "nextAction": "Merge only PR 449 at exact head 61c9452 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+        "productionCommit": "052f4c6e94306ea7678c090d3fb84efa00334c79",
+        "verifiedAt": "2026-11-26T11:14:30.010Z"
       }
     ],
     "updatedAt": "2026-11-26T11:10:00Z",
