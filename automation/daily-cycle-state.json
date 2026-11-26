@@ -570,7 +570,7 @@
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
         "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html",
         "accountableOwner": "daily-publisher",
@@ -594,12 +594,45 @@
             "run": 45804318176,
             "job": 139855408809,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+            "run": 45804318176,
+            "job": 139855408809,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-26T11:09:11Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 449,
+            "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+            "run": 45804318176,
+            "job": 139855408809,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-26T11:09:11Z",
+            "artifactId": 15109483357,
+            "artifactSha256": "sha256:912f3e5fd0ea28699ff56ce67c88146228ba03f1a35349e64a4c3967523fd43f",
+            "artifactRevision": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+            "sourceTests": 473,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": [
+              "Desktop and mobile article title, summary, date, byline, section and original hero artwork render correctly.",
+              "Article body, source link, Table Lore placement, house promotion, related coverage and footer are readable without overflow or broken images.",
+              "Exact-head rendered checks report HTTP 200, zero overflow, zero broken images, zero accessibility findings and zero runtime errors."
+            ]
           }
         },
-        "nextAction": "Review the exact-head terminal run and artifact; persist visual acceptance before any merge."
+        "nextAction": "Merge only PR 449 at exact head 61c9452 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout."
       }
     ],
-    "updatedAt": "2026-11-26T11:09:11Z",
+    "updatedAt": "2026-11-26T11:10:00Z",
     "alertCycle": {
       "status": "not-run",
       "reason": "Alerts remain owned by the separate CUAI Operating System."
