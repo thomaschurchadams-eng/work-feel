@@ -6464,6 +6464,37 @@
       },
       "summary": "Detected and bounded an overdue November 23 publisher handoff. Exact-head CI and the frozen artifact succeeded and responsive visuals are clean, but PR #430 is now stale and non-mergeable and has no terminal publisher decision. The existing daily-publisher must reconcile current-main freshness and either revalidate a release candidate or explicitly hold and close the original incident key. No article, release, provider, queue, social, schedule, credential, permission or model action was taken.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-26T12:32:45.189Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "Authorized November 26 CreditUnionAI News daily publishing cycle under the current main policy and issue #160 coordination layer.",
+      "status": "degraded",
+      "workUnits": {
+        "discoveryCandidatesScreened": 25,
+        "candidateEvaluations": 25,
+        "beatsSearched": 9,
+        "qualifiedCoreCandidates": 11,
+        "qualifiedBackups": 4,
+        "articlesPublished": 2,
+        "articlePullRequestsMerged": 2,
+        "exactHeadWorkflowRunsObserved": 4,
+        "renderedArtifactsInspected": 2,
+        "productionDeploymentsChecked": 2,
+        "liveArticleChecks": 2,
+        "canonicalStateWrites": 10,
+        "socialSchedulingAttempts": 0,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "public primary sources",
+        "creditunionainews.com"
+      ],
+      "summary": "Completed the November 26 bounded discovery scan across nine beats and screened 25 unique candidates. Published and independently verified two High-classification articles: the Federal Reserve Beige Book operating brief and the 2027 HPML appraisal-threshold update. Repaired one initial state-schema omission and one broken artwork path through new exact-head validation; preserved both failed receipts. Exact production operations runs succeeded with zero distribution actions or source-action exceptions. Closed slots 3-10 as explicit holds because serial P/H/C/V/M/F validation throughput exhausted the run's safe execution window; no checkpoint, filler, parallel release, retrospective carryover, Alert or LinkedIn action was invented.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
