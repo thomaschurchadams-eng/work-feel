@@ -640,7 +640,7 @@
       },
       {
         "slot": 2,
-        "status": "pending-validation",
+        "status": "validated",
         "candidateTitle": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
         "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html",
         "accountableOwner": "daily-publisher",
@@ -664,12 +664,45 @@
             "run": 45815967652,
             "job": 139895666512,
             "runAttempt": 1
+          },
+          "terminalValidation": {
+            "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+            "run": 45815967652,
+            "job": 139895666512,
+            "runAttempt": 1,
+            "conclusion": "success",
+            "runConclusion": "success",
+            "jobConclusion": "success",
+            "observedAt": "2026-11-26T12:24:46.007Z"
+          },
+          "terminalAcceptance": {
+            "prNumber": 450,
+            "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+            "run": 45815967652,
+            "job": 139895666512,
+            "runAttempt": 1,
+            "visualReviewedAt": "2026-11-26T12:25:19.623Z",
+            "artifactId": 15117001525,
+            "artifactSha256": "sha256:696e3391c47b3197d5cdee22ec64dffc3cca319efbb7e2dc79951a5e744788e2",
+            "artifactRevision": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+            "sourceTests": 473,
+            "renderedChecks": 50,
+            "failedChecks": 0,
+            "viewports": [
+              390,
+              1440
+            ],
+            "observations": [
+              "Mobile and desktop title, summary, date, byline, section and original threshold artwork render correctly.",
+              "Article body, primary agency source, Table Lore placement, house promotion, related coverage and footer are readable without overflow or broken images.",
+              "Exact-head rendered report covers 22 routes and 50 checks with zero failures, zero page errors, zero broken images and zero accessibility findings."
+            ]
           }
         },
-        "nextAction": "Review the exact-head terminal run and artifact; persist visual acceptance before any merge."
+        "nextAction": "Merge only PR 450 at exact head e2905c737c90d8e9b3676938e3e57dd6dc748f69 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout."
       }
     ],
-    "updatedAt": "2026-11-26T12:24:48.126Z",
+    "updatedAt": "2026-11-26T12:25:19.623Z",
     "alertCycle": {
       "status": "not-run",
       "reason": "Alerts remain owned by the separate CUAI Operating System."
