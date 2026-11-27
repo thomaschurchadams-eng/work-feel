@@ -6567,6 +6567,51 @@
       ],
       "summary": "Completed a fresh November 27 bounded discovery scan across all five required directions and nine beats, screened 24 unique candidates, and obtained a released-scorer result of 10 qualified core candidates plus four backups. Publication stopped before preparation because this ordinary owner runtime has GitHub connector access but no authenticated Git checkout/readback route required for every canonical P/C/V/F state transition; the local pinned browser executable is also absent, although exact-head CI remains an authorized later visual fallback. No canonical state, article, PR, queue, provider, social, Alert or production write was attempted. The November 24 lead packet was expired and ignored; prior history and holds remain untouched.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261127-publisher-runtime-blocked",
+      "timestamp": "2026-11-27T12:55:08.193Z",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 27 daily publisher completed fresh qualification but could not enter canonical preparation because its ordinary runtime lacked the required authenticated Git checkout and strict stored-commit readback path.",
+      "status": "blocked",
+      "incidentKey": "cuai-publishing:daily-cycle:2026-11-27",
+      "workUnits": {
+        "publisherTaskOutcomesReconciled": 1,
+        "dailyCycleStatesReviewed": 1,
+        "discoveryCandidatesObserved": 24,
+        "qualifiedCoreCandidatesObserved": 10,
+        "qualifiedBackupsObserved": 4,
+        "canonicalStateWritesObserved": 0,
+        "articlePullRequestsObserved": 0,
+        "productionDeploymentsVerified": 1,
+        "verifiedOperationsRunsObserved": 1,
+        "verifiedOperationsActionsObserved": 0,
+        "socialQueueItemsReviewed": 58,
+        "queuedSocialItemsObserved": 0,
+        "duplicateSocialReservationsObserved": 0,
+        "publisherRetriesAttempted": 0,
+        "providerWrites": 0,
+        "socialQueueWrites": 0,
+        "ledgerEntriesAppended": 1,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News production",
+        "ChatGPT task outcome"
+      ],
+      "operationalLearning": {
+        "issue": "The November 27 scan covered all five discovery directions and nine beats and returned 10 qualified core candidates plus four backups, but zero packages entered preparation. The canonical daily-cycle state therefore still points to November 26 while the publisher outcome is recorded only in issue #160 and the usage ledger.",
+        "rootCause": "The publisher runtime had GitHub connector reads but no authenticated current-main Git checkout/readback path. Current policy requires checkout-capable same-owner validation for every P/C/V/F canonical state transition and explicitly forbids connector-only whole-file finalization. The local pinned Chromium executable was also absent, although exact-head CI remains available only after a compliant preparation checkpoint exists.",
+        "correction": "Reliability Watch reconciled the task result, current main, the unchanged canonical cycle state, READY production identity, the successful no-action verified-operations receipt, open PRs and the social queue. It did not replay the cycle, fabricate a checkpoint, publish a candidate, mutate canonical state, retry a provider, alter credentials or bypass the sole-writer guard.",
+        "test": "Main d450fd2461235d57f1f8d49bb2a7504f041e0ea3 has READY Production deployment dpl_4EFrc6Eq4EXXG4h3Rso3PvAs6Lic. Natural run 45980383251 completed successfully; artifact 15188534063 is bound to exact main with digest sha256:90e874d1b814df9c8fc9d0dc76e52b9123c3119285e89a6f3df536da0b728c04. The exact deployment homepage and News index return HTTP 200, recent production runtime logs contain no warning/error/fatal entries, and the 58-row social queue remains 57 sent, one planned and zero queued with no duplicate IDs.",
+        "actualResult": "The reporting and production surfaces are healthy and no ambiguous external write exists, but today's article cycle remains blocked at the pre-preparation runtime boundary. The qualified candidates have no canonical preparation checkpoints and are not authorized for Reliability Watch release or carryover.",
+        "nextTrigger": "Resume only in the same daily-publisher role when an authenticated current-main checkout plus strict stored-commit readback is available; re-read main and policy, reconcile this original incident key, and use normal source/editorial and exact-head gates. Do not use connector-only state replacement, PR #260, a duplicate cycle, a provider retry or relaxed publication checks."
+      },
+      "summary": "Detected and bounded the November 27 publisher-runtime failure. Fresh sourcing and qualification succeeded, but the same owner could not begin canonical preparation because its ordinary runtime lacked the required authenticated checkout/readback path. Production and verified operations are healthy, the queue is unchanged, and no publication or social action occurred. The article cycle remains blocked without a safe Reliability Watch recovery route.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
