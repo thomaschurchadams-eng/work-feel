@@ -6540,6 +6540,33 @@
       },
       "summary": "Detected and bounded the November 26 publisher-capacity failure. Ten qualified core candidates and four backups yielded only two live articles because the serialized release path exhausted the safe run window after two repaired candidate defects. Exact production, live pages, the natural no-action operations receipt and the unchanged social queue are verified. No replay or publication retry was safe; eight held slots remain a policy-owned throughput blocker.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "timestamp": "2026-11-27T10:20:00.000Z",
+      "actor": "daily-publisher",
+      "runType": "scheduled",
+      "trigger": "Authorized November 27 CreditUnionAI News daily publishing cycle under the current main policy and issue #160 coordination layer.",
+      "status": "blocked",
+      "workUnits": {
+        "discoveryCandidatesScreened": 24,
+        "candidateEvaluations": 24,
+        "beatsSearched": 9,
+        "qualifiedCoreCandidates": 10,
+        "qualifiedBackups": 4,
+        "articlesPublished": 0,
+        "articlePullRequestsCreated": 0,
+        "canonicalStateWrites": 0,
+        "productionDeploymentsChecked": 0,
+        "socialSchedulingAttempts": 0,
+        "issueHandoffsPrepared": 1,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "public primary sources"
+      ],
+      "summary": "Completed a fresh November 27 bounded discovery scan across all five required directions and nine beats, screened 24 unique candidates, and obtained a released-scorer result of 10 qualified core candidates plus four backups. Publication stopped before preparation because this ordinary owner runtime has GitHub connector access but no authenticated Git checkout/readback route required for every canonical P/C/V/F state transition; the local pinned browser executable is also absent, although exact-head CI remains an authorized later visual fallback. No canonical state, article, PR, queue, provider, social, Alert or production write was attempted. The November 24 lead packet was expired and ignored; prior history and holds remain untouched.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
