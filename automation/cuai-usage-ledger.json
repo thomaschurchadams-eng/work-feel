@@ -6612,6 +6612,52 @@
       },
       "summary": "Detected and bounded the November 27 publisher-runtime failure. Fresh sourcing and qualification succeeded, but the same owner could not begin canonical preparation because its ordinary runtime lacked the required authenticated checkout/readback path. Production and verified operations are healthy, the queue is unchanged, and no publication or social action occurred. The article cycle remains blocked without a safe Reliability Watch recovery route.",
       "usageAttribution": "operational-proxy"
+    },
+    {
+      "eventId": "cuai-20261127-checkout-recovered-preparation-write-blocked",
+      "timestamp": "2026-11-27T17:24:24-05:00",
+      "actor": "reliability-watch",
+      "runType": "scheduled",
+      "trigger": "The November 27 reliability follow-up reconciled the owner-approved checkout recovery and the same publisher's supervised continuation, which restored exact current-main state access but was denied before its first canonical preparation write.",
+      "status": "blocked",
+      "incidentKey": "cuai-publishing:daily-cycle:2026-11-27",
+      "workUnits": {
+        "publisherTaskOutcomesReconciled": 1,
+        "checkoutRecoveryPullRequestsVerified": 1,
+        "checkoutReadbacksVerified": 1,
+        "candidateDraftsPreserved": 10,
+        "approvalDenialsObserved": 1,
+        "canonicalStateWritesObserved": 0,
+        "articlePullRequestsObserved": 0,
+        "productionDeploymentsVerified": 1,
+        "publicRoutesVerified": 2,
+        "runtimeErrorWindowsChecked": 1,
+        "socialQueueItemsReviewed": 58,
+        "queuedSocialItemsObserved": 0,
+        "duplicateSocialReservationsObserved": 0,
+        "publisherRetriesAttempted": 0,
+        "articleCyclesStarted": 0,
+        "providerWrites": 0,
+        "socialQueueWrites": 0,
+        "ledgerEntriesAppended": 1,
+        "specialistSubagentsSpawned": 0
+      },
+      "externalSystemsTouched": [
+        "GitHub",
+        "Vercel",
+        "CreditUnionAI News production",
+        "ChatGPT task outcome"
+      ],
+      "operationalLearning": {
+        "issue": "The first-stage runtime blocker was fixed, but the November 27 edition still has no canonical preparation checkpoint, article pull request or live Friday URL.",
+        "rootCause": "PR #453 supplied the same publisher with a real Git checkout bound to current main and the authenticated daily-cycle state blob, so the missing-checkout defect is recovered. The continuation then encountered a distinct approval boundary: automatic review rejected the first state-only preparation write because it assessed risk to existing publishing history. This is an external permission denial, not a failed checkout, validation, deployment or provider call.",
+        "correction": "Reliability Watch reconciled the rejected action against canonical GitHub state, current production and the social queue. Main and the daily-cycle blob remain unchanged from the approved checkout recovery, no Friday state commit or article PR exists, and the same publisher retains ownership. The denied write was not replayed and no alternative writer, article cycle, provider route or relaxed gate was introduced.",
+        "test": "Main d5272f46057fd4b6715c0aadd79f38d1d1ce8723 is the merge of PR #453 and has READY Production deployment dpl_8FrGB7Z7ZVmUz2DEE2tHFKGhQLKN. The exact deployment homepage and News index return HTTP 200, current production logs contain no warning/error/fatal entries in the inspected 30-minute window, and the 58-row social queue remains 57 sent, one planned and zero queued. Issue #160 records the successful exact checkout/state-blob readback and the unexecuted approval denial under the original incident key.",
+        "actualResult": "The authenticated-checkout failure is recovered, but Friday publication remains blocked before the first canonical write. Ten private source-linked drafts are preserved by the existing publisher; zero Friday reader URLs, state writes, article PRs, LinkedIn reservations or submissions were created. There is no ambiguous external write to reconcile.",
+        "nextTrigger": "Do not repeat the unchanged denied write. Resume only when the existing daily publisher has a materially new approval outcome for the exact history-preserving state-only preparation action, then re-read current main and the canonical blob and continue under the original incident key. A durable prevention path should make the atomic expected-parent, one-path, full-history preservation evidence explicit to approval review without weakening the canonical-state or editorial gates."
+      },
+      "summary": "Verified that PR #453 recovered the missing authenticated checkout and exact state readback, then bounded a new permission blocker: automatic approval denied the first canonical preparation write before execution. Production and the social queue remain healthy and unchanged, but the November 27 edition still has zero canonical checkpoints, article PRs or live URLs. No retry or authority transfer was safe.",
+      "usageAttribution": "operational-proxy"
     }
   ]
 }
