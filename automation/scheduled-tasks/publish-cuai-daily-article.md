@@ -1,5 +1,9 @@
 # Publish CUAI Daily Article — Authoritative Cloud Task Policy
 
+## Friday, November 27, 2026 website edition recovery
+
+Tom approved the checkout repair and immediate resumption of Friday’s existing edition. For this on-demand November 27 continuation, the existing daily publisher owns incident `cuai-publishing:daily-cycle:2026-11-27` ([morning receipt](https://github.com/thomaschurchadams-eng/work-feel/issues/160#issuecomment-7215647910)). Start by running the checkout startup below in this worker, reading current main and reconciling Friday’s state, open PRs and public articles. Reuse Friday’s source inventory from the morning publisher wherever available. Where evidence is missing, retrieve and requalify it at the actual observation time. The reported ten selections and four backups alone do not establish any story’s eligibility. Continue the website edition up to ten distinct verified Friday articles through the normal editorial, artwork, history, exact-head and public URL checks. Save recoverable work and record the observed outcome on the existing incident. This continuation is website-only: omit all article, catch-up, media and house social distribution steps, leave reservations and queues untouched, and issue no Alert. The ordinary schedule and subsequent editions retain their existing policy.
+
 ## November 23, 2026 only: owner-approved afternoon supplement
 
 Tom's explicit one-time authorization is Sentinel_de3e44c4f080819180e75054f8ee1dfa. This is a continuation by the existing daily publisher only, not a replacement or correction of the closed morning issue #160 receipt (comment 7098352141, 1 of 10). Today only from 3:34 p.m. Eastern until midnight Eastern, release up to nine additional independently qualifying packages, one at a time, with ordinary P/C/V/M/F checks and no social reservation, post, Alert change, schedule change or invented release time. Stage actual verified candidates, starting with the three drafted by the user; no retrospective action if the time window or release checks cannot be met. Tuesday's 5 a.m. run is unchanged.
@@ -145,6 +149,20 @@ This replaces the unsupported practice of inserting CI identities into their own
 Every P/C/V/F canonical write is an individual ordinary main state transition and receives the unchanged natural main-push history/operations gates. Do not batch them into a push whose pre-push base skips the required pending stage. These natural runs are not new schedules or article cycles; their runtime cost and eventual throughput remain operating limits to observe.
 
 **Same-owner checkout binding:** `publishing-rules.json.statePersistence` already permits checkout-capable, history-preserving reconciliation. Use that path for every P/C/V/F write, including live closeout. The same daily publisher must have its actual Node/Git checkout, complete canonical state and authenticated current-main read/write/readback route available before preparing the cycle. The planner remains read-only and grants no release permission. A connector-only runtime must not finalize by replacing the whole file; retain the checkpoint and report the exact missing checkout/readback capability instead of bypassing the prohibition or assigning another writer. Existing ordinary-cycle authority covers this checkout path; successful private tests still do not establish consumer capability or acceptance.
+
+**Checkout startup for the daily publisher.** Before sourcing, establish the checkout and authenticated ref tools in this same worker. A missing GitHub CLI login is not a capability test. If the ordinary authenticated checkout is available, retain it. Otherwise use this site's public Git HTTPS transport for a real local checkout, and bind it to the current main SHA and canonical state blob SHA read independently through the authorized GitHub connector. Download the helper from that immutable main, verify its Git blob against the scripts tree, and run it with Bash in this worker. Use an empty dedicated checkout directory. Resolve Node from the existing runtime (set NODE_BINARY to its absolute executable when needed). The helper disables native Git pushes in the new checkout.
+
+    bash publisher-checkout.sh open "$checkout" thomaschurchadams-eng/work-feel main "$expectedMain" "$stateBlob"
+
+Keep using the ordinary reader-bound write planner below. Save its candidateJson as exact UTF-8 bytes outside the checkout. Before the existing state-only write, validate that file locally in the checkout at the plan's expectedMain. Open a fresh checkout at each new base if required. An outdated proposal requires re-reading main and re-planning.
+
+    bash publisher-checkout.sh prepare "$checkout" thomaschurchadams-eng/work-feel main "$expectedMain" "$candidateFile"
+
+The same worker creates the tree and commit using the existing authorized GitHub methods, records the proposed commit identity before moving the ref, and performs the non-forced expected-old ref update. After the write, independently read main through the connector again. Run the existing authenticated verifyStoredStateUsingGitHubTools check AND verify the stored bytes through native Git:
+
+    bash publisher-checkout.sh verify "$checkout" thomaschurchadams-eng/work-feel main "$expectedMain" "$storedCommit" "$observedMain" "$candidateFile"
+
+On a missing acknowledgement, reconcile the known stored commit by both read paths before considering any retry. If the checkout, authenticated tools, exact validation or readback are unavailable, record the specific failing operation and retain the original incident. Production, article, visual and distribution decisions still use all normal gates.
 
 For each state transition, resolve fresh canonical main through the existing authorized reader, obtain that exact commit and complete blob in the checkout, and write only the plan's immutable `candidateJson` bytes to `automation/daily-cycle-state.json`. Use these existing commands with the actual observed 40-character SHAs; never substitute symbolic `main` or `HEAD^`:
 
