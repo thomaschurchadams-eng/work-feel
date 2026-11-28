@@ -15,3 +15,22 @@ test('house cannot fill a slot while the qualified mixed pool still needs editor
  const articles=['High','Standard'].map((classification,i)=>({id:'candidate-'+i,eligible:true,classification,canonicalUrl:'https://creditunionainews.com/news/candidate-'+i+'.html'}));
  const result=selectSlot({...args,articles});assert.equal(result.status,'needs-editorial-selection');assert.equal(result.assetId,undefined);
 });
+
+test('sponsor hero and audience cards show only the three approved comparisons and their source', () => {
+  const page = fs.readFileSync('sponsorships/index.html', 'utf8');
+  const panel = /<section class="section sponsor-audience"[\s\S]*?<\/section>/.exec(page)?.[0];
+  assert.ok(panel);
+  const hero = /<section class="hero sponsorships-hero"[\s\S]*?<\/section>/.exec(page)?.[0];
+  assert.match(hero, /<strong class="sponsor-hero-value">3.1×<\/strong>\s*<span class="sponsor-hero-label">Article views <span>Oct vs\. Sep 2026<\/span>/);
+  assert.doesNotMatch(page, /\+139%|\+128%|Website sessions|Total site views/i);
+  const cards = [...panel.matchAll(/<li class="sponsor-audience-card">\s*<h3>([^<]+)<\/h3>\s*<strong class="sponsor-audience-value">([^<]+)<\/strong>\s*<p class="sponsor-audience-period">(.+?)<\/p>/g)]
+    .map(([, label, value, period]) => [label, value, period.replace(/<\/?span>/g, '')]);
+  assert.deepEqual(cards, [
+    ['Active users', '+44%', 'Nov 1–20 vs. Oct 1–20, 2026'],
+    ['Page views', '+73%', 'Nov 1–20 vs. Oct 1–20, 2026']
+  ]);
+  assert.equal((panel.match(/<li class="sponsor-audience-card">/g) || []).length, 2);
+  assert.equal((panel.match(/<p\b/g) || []).length, 3);
+  assert.match(panel, /<p class="sponsor-audience-source">Source: Google Analytics 4<\/p>/);
+  assert.doesNotMatch(panel, /session|LinkedIn|WAU|MAU|55\.6|48\.3|indexed|methodology/i);
+});
