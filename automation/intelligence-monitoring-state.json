@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-15",
   "lastSuccessfulRun": "2026-07-20T06:08:00-04:00",
-  "lastAttemptedRun": "2026-11-13T23:43:04Z",
+  "lastAttemptedRun": "2026-11-15T00:01:16Z",
   "sourceState": {
     "ncua-ai-resources": {
       "lastChecked": "2026-11-13T17:54:45.283Z",
@@ -12,25 +12,25 @@
       "reviewNote": "Current canonical resource inspected. Source publication date not established; no new rule inferred."
     },
     "ncua-newsroom": {
-      "lastChecked": "2026-11-13T23:43:04Z",
+      "lastChecked": "2026-11-15T00:07:33Z",
       "lastChanged": "2026-11-13",
       "lastFingerprint": "ncua-newsroom|2026-11-13|https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
       "status": "ok",
-      "reviewNote": "Current press-release listing and November 13 joint extension announcement inspected. Added one proposed-guidance watch; no complete July–November archive review. Four-final-rules release screened separately; no AI-specific change accepted."
+      "reviewNote": "Current press-release listing inspected. November 13 guidance extension already recorded; no additional qualifying current change. July onward archive not fully reviewed."
     },
     "cfpb-newsroom": {
-      "lastChecked": "2026-11-13T23:43:04Z",
-      "lastChanged": null,
-      "lastFingerprint": null,
+      "lastChecked": "2026-11-15T00:07:33Z",
+      "lastChanged": "2026-08-14",
+      "lastFingerprint": "cfpb-newsroom|2026-08-14|https://www.consumerfinance.gov/about-us/newsroom/the-cfpb-to-cease-discretionary-publication-of-complaint-narratives-and-visualizations/",
       "status": "ok",
-      "reviewNote": "Current newsroom listing inspected; latest visible release October 14. No qualifying current AI operating development accepted. Older archive not exhaustively reviewed."
+      "reviewNote": "Current newsroom listing inspected; no qualifying current-window addition. One saved August 14 historical release inspected and added as a resource watch; current database/API and FOIA availability not independently tested."
     },
     "federal-reserve-news": {
-      "lastChecked": "2026-11-13T23:43:04Z",
+      "lastChecked": "2026-11-15T00:07:33Z",
       "lastChanged": "2026-11-13",
       "lastFingerprint": "ncua-newsroom|2026-11-13|https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
       "status": "ok",
-      "reviewNote": "2026 release archive and November 13 joint guidance extension inspected. Same event as NCUA source; deduplicated, not a second watch. Other current releases did not establish a qualifying AI development."
+      "reviewNote": "Current 2026 press-release listing inspected. November 13 joint guidance extension already recorded; no additional qualifying current AI development. Not a complete archive review."
     },
     "occ-news": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
@@ -49,10 +49,11 @@
       "reviewNote": "Primary news URL returned HTTP 403. No retry or alternate access route; prior lastChecked retained. This source channel remains unreviewed."
     },
     "senate-banking-hearings": {
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-11-15T00:07:33Z",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "ok"
+      "status": "ok",
+      "reviewNote": "Current hearing list inspected, including upcoming November 19 nomination hearing. No qualifying current AI hearing added. Older hearing records were not reverified."
     },
     "jack-henry-news": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
@@ -66,7 +67,9 @@
       "lastChecked": "2026-07-20T06:08:00-04:00",
       "lastChanged": "2026-07-17",
       "lastFingerprint": "fis|fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services|2026-07-17|https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services",
-      "status": "ok"
+      "status": "partial",
+      "lastAttemptedAt": "2026-11-15T00:07:33Z",
+      "reviewNote": "Official media room featured November 5 and November 4 releases, outside the routine seven-day window. Full press-release index returned a year selector without release rows. No event detail or vendor record re-review; prior lastChecked retained and no complete listing claim."
     },
     "ncr-voyix-news": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
@@ -87,10 +90,11 @@
       "status": "ok"
     },
     "microsoft-365-blog": {
-      "lastChecked": "2026-07-20T06:08:00-04:00",
+      "lastChecked": "2026-11-15T00:07:33Z",
       "lastChanged": null,
       "lastFingerprint": null,
-      "status": "ok"
+      "status": "ok",
+      "reviewNote": "Registered URL resolved to Microsoft Copilot Blog; its current listing was inspected. Visible featured releases were outside the seven-day routine window; no event detail or vendor record re-review. No historical slice taken here."
     },
     "point-predictive-news": {
       "lastChecked": "2026-07-20T06:08:00-04:00",
@@ -152,31 +156,30 @@
   },
   "latestAttempt": {
     "status": "partial-source-review-completed",
-    "reviewedAt": "2026-11-13T23:43:04Z",
-    "scope": "Six due discovery channels attempted (five regulators and one rotating vendor), plus the single saved FSB October 15 historical slice. No publication or Alert cycle.",
+    "scheduledFor": "2026-11-14T23:30:00Z",
+    "startedAt": "2026-11-15T00:01:16Z",
+    "reviewedAt": "2026-11-15T00:07:33Z",
+    "scope": "Six due discovery channels attempted (four regulators and two rotating vendors), plus one saved CFPB August 14 historical slice. Actual review November 15 UTC; no article or Alert cycle.",
     "routineSourcesAttempted": 6,
-    "routineSourcesReviewed": 3,
+    "routineSourcesReviewed": 5,
     "routineSourcesPartial": [
-      "occ-news"
+      "fis-media"
     ],
-    "routineSourcesUnavailable": [
-      "fdic-news",
-      "jack-henry-news"
-    ],
+    "routineSourcesUnavailable": [],
     "historicalSlicesReviewed": 1,
-    "materialChanges": 2,
-    "duplicatesNotAdded": 1,
+    "materialChanges": 1,
+    "currentPeriodMaterialChanges": 0,
     "releaseRequirement": "This receipt records source review only. The resulting candidate still requires exact-head checks, independent rendered review, authorized release and live verification; no successful-run advancement is inferred here.",
     "executionEvidence": {
       "owner": "existing-intelligence-maintenance-engineer",
-      "invocation": "Existing maintenance cycle delegated into accepted checkout-capable owner on 2026-11-13.",
+      "invocation": "November 14 23:30 UTC maintenance cycle delegated into the same accepted owner; execution observed November 15 UTC.",
       "scheduleVerified": false,
-      "note": "No schedule settings were inspected or changed; no recurring next-run claim."
+      "note": "Scheduled time comes from the coordinator request. No automation configuration, task ID or next-run proof was inspected; no schedule changed."
     },
-    "remainingCatchUp": "Partial July 20–November 13 coverage remains. Only the saved FSB October 15 slice advances; blocked/uninspected sources keep prior review dates.",
+    "remainingCatchUp": "Partial July 20–November 15 coverage remains. Only the CFPB August 14 slice advances. FIS current listing is partial; prior OCC, FDIC and Jack Henry gaps and all uninspected source/record dates remain unchanged.",
     "catchUpCursor": {
       "since": "2026-07-20",
-      "through": "2026-11-13",
+      "through": "2026-11-15",
       "complete": false,
       "reviewedEvents": [
         "creatio|2026-07-30",
@@ -184,9 +187,10 @@
         "fsb|2026-08-31",
         "ncua-resource|review-2026-11-13",
         "glia|2026-11-02",
-        "fsb|2026-10-15"
+        "fsb|2026-10-15",
+        "cfpb|2026-08-14"
       ],
-      "nextSlice": "Review the retained July 20 onward NCUA/CFPB archive gap in a bounded future batch; rotate the next due accessible vendor. Source access gaps remain explicit."
+      "nextSlice": "Continue the remaining July 20 onward NCUA/CFPB archive gap in one bounded slice; the CFPB August 14 event is already recorded. Rotate the next due accessible vendor. FIS listing and prior access gaps remain explicit."
     },
     "historicalMetricsNote": "Top-level metrics retained as historical counters; they are not a reconciled total for this partial cycle."
   },
@@ -276,6 +280,90 @@
           "https://github.com/thomaschurchadams-eng/work-feel/pull/348"
         ],
         "note": "Supersedes the prior pending-release claim only. PR344, PR346 and PR348 subsequently changed public presentation; their fixes remain present. This does not complete historical catch-up or certify a recurring schedule."
+      }
+    },
+    {
+      "attemptedAt": "2026-11-13T23:43:04Z",
+      "attempt": {
+        "status": "partial-source-review-completed",
+        "reviewedAt": "2026-11-13T23:43:04Z",
+        "scope": "Six due discovery channels attempted (five regulators and one rotating vendor), plus the single saved FSB October 15 historical slice. No publication or Alert cycle.",
+        "routineSourcesAttempted": 6,
+        "routineSourcesReviewed": 3,
+        "routineSourcesPartial": [
+          "occ-news"
+        ],
+        "routineSourcesUnavailable": [
+          "fdic-news",
+          "jack-henry-news"
+        ],
+        "historicalSlicesReviewed": 1,
+        "materialChanges": 2,
+        "duplicatesNotAdded": 1,
+        "releaseRequirement": "This receipt records source review only. The resulting candidate still requires exact-head checks, independent rendered review, authorized release and live verification; no successful-run advancement is inferred here.",
+        "executionEvidence": {
+          "owner": "existing-intelligence-maintenance-engineer",
+          "invocation": "Existing maintenance cycle delegated into accepted checkout-capable owner on 2026-11-13.",
+          "scheduleVerified": false,
+          "note": "No schedule settings were inspected or changed; no recurring next-run claim."
+        },
+        "remainingCatchUp": "Partial July 20–November 13 coverage remains. Only the saved FSB October 15 slice advances; blocked/uninspected sources keep prior review dates.",
+        "catchUpCursor": {
+          "since": "2026-07-20",
+          "through": "2026-11-13",
+          "complete": false,
+          "reviewedEvents": [
+            "creatio|2026-07-30",
+            "soundhound|2026-11-12",
+            "fsb|2026-08-31",
+            "ncua-resource|review-2026-11-13",
+            "glia|2026-11-02",
+            "fsb|2026-10-15"
+          ],
+          "nextSlice": "Review the retained July 20 onward NCUA/CFPB archive gap in a bounded future batch; rotate the next due accessible vendor. Source access gaps remain explicit."
+        },
+        "historicalMetricsNote": "Top-level metrics retained as historical counters; they are not a reconciled total for this partial cycle."
+      },
+      "sourceStateBeforeNextReview": {
+        "ncua-newsroom": {
+          "lastChecked": "2026-11-13T23:43:04Z",
+          "lastChanged": "2026-11-13",
+          "lastFingerprint": "ncua-newsroom|2026-11-13|https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+          "status": "ok",
+          "reviewNote": "Current press-release listing and November 13 joint extension announcement inspected. Added one proposed-guidance watch; no complete July–November archive review. Four-final-rules release screened separately; no AI-specific change accepted."
+        },
+        "cfpb-newsroom": {
+          "lastChecked": "2026-11-13T23:43:04Z",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "ok",
+          "reviewNote": "Current newsroom listing inspected; latest visible release October 14. No qualifying current AI operating development accepted. Older archive not exhaustively reviewed."
+        },
+        "federal-reserve-news": {
+          "lastChecked": "2026-11-13T23:43:04Z",
+          "lastChanged": "2026-11-13",
+          "lastFingerprint": "ncua-newsroom|2026-11-13|https://ncua.gov/newsroom/press-release/2026/agencies-extend-comment-period-proposed-third-party-risk-management-guidance",
+          "status": "ok",
+          "reviewNote": "2026 release archive and November 13 joint guidance extension inspected. Same event as NCUA source; deduplicated, not a second watch. Other current releases did not establish a qualifying AI development."
+        },
+        "senate-banking-hearings": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "ok"
+        },
+        "fis-media": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": "2026-07-17",
+          "lastFingerprint": "fis|fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services|2026-07-17|https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-and-anthropic-extend-partnership-on-trusted-ai-for-financial-services",
+          "status": "ok"
+        },
+        "microsoft-365-blog": {
+          "lastChecked": "2026-07-20T06:08:00-04:00",
+          "lastChanged": null,
+          "lastFingerprint": null,
+          "status": "ok"
+        }
       }
     }
   ]
