@@ -2,886 +2,275 @@
   "version": 1,
   "timezone": "America/New_York",
   "current": {
-    "date": "2026-11-26",
-    "status": "completed-with-editorial-holds",
-    "outcomeSlot": 3,
-    "fullArticleCount": 2,
+    "date": "2026-11-28",
+    "status": "in-progress",
+    "outcomeSlot": 1,
+    "fullArticleCount": 0,
     "alertCount": 0,
-    "publications": [
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html"
-      },
-      {
-        "type": "article",
-        "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html"
-      }
-    ],
-    "evaluatedCandidateCount": 25,
+    "publications": [],
+    "evaluatedCandidateCount": 9,
     "beatsSearched": [
       "regulation-policy",
       "security-fraud",
       "credit-union-industry",
       "financial-reporting",
       "payments-core-fintech",
-      "ai-research-platforms",
       "regional-cu-primary",
       "workforce-household-data",
       "international-comparisons"
     ],
     "discoveryCoverage": {
+      "date": "2026-11-28",
+      "candidateCount": 9,
+      "candidateShortfallReason": "Nine distinct source/event screens in the shared pool after widening; holiday-week agency and issuer output was thin, and search yielded older, covered, weakly relevant and duplicate listings that were not inflated into new candidates.",
+      "beatsSearched": [
+        "regulation-policy",
+        "security-fraud",
+        "credit-union-industry",
+        "financial-reporting",
+        "payments-core-fintech",
+        "regional-cu-primary",
+        "workforce-household-data",
+        "international-comparisons"
+      ],
+      "directions": [
+        {
+          "id": "regional-cu-leagues-regulators",
+          "status": "searched",
+          "observedAt": "2026-11-28T10:07:46Z",
+          "queryOrRead": "NCUA current release index and sector release listings; read dated credit-union transaction and hosted-core originals",
+          "sourceUrls": [
+            "https://ncua.gov/news/press-releases",
+            "https://www.cuinsight.com/press-release/family-savings-credit-union-to-enter-into-transaction-with-liberty-bank/",
+            "https://synergentcorp.com/company-news/hrcu-renews-core-processing-partnership-with-synergent/"
+          ]
+        },
+        {
+          "id": "function-problem",
+          "status": "searched",
+          "observedAt": "2026-11-28T10:07:46Z",
+          "queryOrRead": "U.S. lending and member-service operating changes; compare vendor beta scope and agency threshold original",
+          "sourceUrls": [
+            "https://eltropy.com/press/eltropy-expands-cuanswers-integration-helping-credit-unions-keep-members-informed-and-give-staff-time-back/",
+            "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+            "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm"
+          ]
+        },
+        {
+          "id": "independent-data-research",
+          "status": "searched",
+          "observedAt": "2026-11-28T10:07:46Z",
+          "queryOrRead": "Household and finance evidence across Federal Reserve H.8, BLS and NCUA quarterly data",
+          "sourceUrls": [
+            "https://www.federalreserve.gov/releases/h8/current/default.htm",
+            "https://www.bls.gov/news.release/empsit.toc.htm",
+            "https://ncua.gov/analysis/credit-union-corporate-call-report-data/quarterly-data-summary-reports"
+          ]
+        },
+        {
+          "id": "international-comparisons",
+          "status": "searched",
+          "observedAt": "2026-11-28T10:07:46Z",
+          "queryOrRead": "Canadian public statistical release, global open-finance study and UK financial-stability cloud and payments comparison",
+          "sourceUrls": [
+            "https://www150.statcan.gc.ca/n1/daily-quotidien/261127/dq261127a-eng.htm",
+            "https://www.bis.org/publications/fsi-insight-79-carrot-stick-and-yardstick-big-techs-implications-open-finance",
+            "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
+          ]
+        },
+        {
+          "id": "practical-synthesis",
+          "status": "searched",
+          "observedAt": "2026-11-28T10:07:46Z",
+          "queryOrRead": "Compare UK payments continuity and cloud exercise findings with domestic NCUA third-party oversight evidence",
+          "sourceUrls": [
+            "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026",
+            "https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise",
+            "https://ncua.gov/regulation-supervision/letters-credit-unions-other-guidance/evaluating-third-party-relationships"
+          ]
+        }
+      ],
+      "practicalSynthesis": {
+        "question": "Which minimum member payment services should a credit union and its providers be able to restore or sustain together?",
+        "candidateId": "boe-payment-continuity-synthesis"
+      },
       "verifiedStructure": true,
       "completeCoverage": true,
       "accessBlocked": [],
-      "date": "2026-11-26",
-      "candidateCount": 25,
       "candidateInventory": [
         {
-          "candidateId": "fed-reg-z-m-2027-threshold",
-          "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
-          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
-          "sourcePublishedAt": "2026-11-25T15:00:00Z"
+          "candidateId": "fed-h8-nonbank-consumer-loans",
+          "eventKey": "fed-h8-nov27-2026-consumer-loan-transfer",
+          "sourceUrl": "https://www.federalreserve.gov/releases/h8/current/default.htm",
+          "sourcePublishedAt": "2026-11-27T16:15:00-05:00"
         },
         {
-          "candidateId": "fed-hpml-2027-appraisal-threshold",
+          "candidateId": "boe-payment-continuity-synthesis",
+          "eventKey": "boe-nov26-2026-fsr-minimum-payments-continuity",
+          "sourceUrl": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026",
+          "sourcePublishedAt": "2026-11-26"
+        },
+        {
+          "candidateId": "bis-open-finance-participation",
+          "eventKey": "bis-fsi-79-open-finance-2026-11-26",
+          "sourceUrl": "https://www.bis.org/publications/fsi-insight-79-carrot-stick-and-yardstick-big-techs-implications-open-finance",
+          "sourcePublishedAt": "2026-11-26"
+        },
+        {
+          "candidateId": "hrcu-synergent-renewal",
+          "eventKey": "holy-rosary-cu-synergent-renewal-nov2026",
+          "sourceUrl": "https://synergentcorp.com/company-news/hrcu-renews-core-processing-partnership-with-synergent/",
+          "sourcePublishedAt": "2026-11-24"
+        },
+        {
+          "candidateId": "eltropy-cuanswers-cbx",
+          "eventKey": "eltropy-cuanswers-cbx-nov2026",
+          "sourceUrl": "https://eltropy.com/press/eltropy-expands-cuanswers-integration-helping-credit-unions-keep-members-informed-and-give-staff-time-back/",
+          "sourcePublishedAt": "2026-11-24"
+        },
+        {
+          "candidateId": "family-savings-liberty",
+          "eventKey": "family-savings-liberty-bank-transaction-2026-11-24",
+          "sourceUrl": "https://www.cuinsight.com/press-release/family-savings-credit-union-to-enter-into-transaction-with-liberty-bank/",
+          "sourcePublishedAt": "2026-11-24"
+        },
+        {
+          "candidateId": "fhfa-2027-cll",
+          "eventKey": "fhfa-2027-conforming-loan-limits-2026-11-24",
+          "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+          "sourcePublishedAt": "2026-11-24"
+        },
+        {
+          "candidateId": "statcan-q3-bop",
+          "eventKey": "statcan-2026-q3-balance-of-payments",
+          "sourceUrl": "https://www150.statcan.gc.ca/n1/daily-quotidien/261127/dq261127a-eng.htm",
+          "sourcePublishedAt": "2026-11-27"
+        },
+        {
+          "candidateId": "hpml-threshold",
           "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
           "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
-          "sourcePublishedAt": "2026-11-25T15:00:00Z"
-        },
-        {
-          "candidateId": "fhfa-fico-10t-roadmap",
-          "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
-          "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
-          "sourcePublishedAt": "2026-11-24T16:00:00Z"
-        },
-        {
-          "candidateId": "fhfa-2027-conforming-limit",
-          "eventKey": "fhfa-2027-conforming-loan-limits",
-          "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
-          "sourcePublishedAt": "2026-11-24T15:00:00Z"
-        },
-        {
-          "candidateId": "fhfa-q3-2026-hpi",
-          "eventKey": "fhfa-q3-2026-house-price-index",
-          "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
-          "sourcePublishedAt": "2026-11-24T15:00:00Z"
-        },
-        {
-          "candidateId": "fed-nov-2026-beige-book",
-          "eventKey": "federal-reserve-november-2026-beige-book",
-          "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
-          "sourcePublishedAt": "2026-11-25T19:00:00Z"
-        },
-        {
-          "candidateId": "fed-bowman-supervision-accountability",
-          "eventKey": "bowman-nov-2026-supervision-accountability-speech",
-          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
-          "sourcePublishedAt": "2026-11-25T14:00:00Z"
-        },
-        {
-          "candidateId": "ecb-space-payment-choice-2026",
-          "eventKey": "ecb-2026-space-payment-attitudes",
-          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
-          "sourcePublishedAt": "2026-11-25T10:00:00Z"
-        },
-        {
-          "candidateId": "ecb-sweden-t2",
-          "eventKey": "sweden-riksbank-t2-agreement-2030",
-          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
-          "sourcePublishedAt": "2026-11-25T10:00:00Z"
-        },
-        {
-          "candidateId": "ecb-token-reference-model",
-          "eventKey": "ecb-tokenisation-reference-model-nov-2026",
-          "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
-          "sourcePublishedAt": "2026-11-24T10:00:00Z"
-        },
-        {
-          "candidateId": "ant-bny-treasury-mou",
-          "eventKey": "ant-international-bny-24-7-treasury-mou",
-          "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/ant-international-and-bny-sign-mou-to-explore-24-7-cross-border-treasury-management-solutions.html",
-          "sourcePublishedAt": "2026-11-25T08:00:00Z"
-        },
-        {
-          "candidateId": "hrcu-synergent-core-renewal",
-          "eventKey": "heritage-ridge-synergent-seven-year-renewal",
-          "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
-          "sourcePublishedAt": "2026-11-25T13:00:00Z"
-        },
-        {
-          "candidateId": "payment-choice-resilience-synthesis",
-          "eventKey": "payment-choice-resilience-synthesis-2026",
-          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
-          "sourcePublishedAt": "2026-11-25T10:00:00Z"
-        },
-        {
-          "candidateId": "fhfa-multifamily-caps-2027",
-          "eventKey": "fhfa-2027-enterprise-multifamily-caps",
-          "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-2027-multifamily-loan-purchase-caps-for-fannie-mae-and-freddie-mac",
-          "sourcePublishedAt": "2026-11-23T15:00:00Z"
-        },
-        {
-          "candidateId": "fed-repo-haircuts-note",
-          "eventKey": "fed-hedge-fund-repo-haircuts-note-2026",
-          "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/hedge-fund-treasury-repo-haircuts-20261125.html",
-          "sourcePublishedAt": "2026-11-25T14:00:00Z"
-        },
-        {
-          "candidateId": "ncua-fed-bsa-disruption",
-          "eventKey": "bsa-sar-ctr-service-disruption-supervisory-statement",
-          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-issue-guidance-bsa-reporting-requirements-service-disruptions",
-          "sourcePublishedAt": "2026-11-25T13:00:00Z"
-        },
-        {
-          "candidateId": "bis-gsib-2026",
-          "eventKey": "bis-2026-global-systemically-important-banks",
-          "sourceUrl": "https://www.bis.org/press/p261125.htm",
-          "sourcePublishedAt": "2026-11-25T09:00:00Z"
-        },
-        {
-          "candidateId": "occ-nov-enforcement-actions",
-          "eventKey": "occ-november-2026-enforcement-actions",
-          "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-115.html",
-          "sourcePublishedAt": "2026-11-25T14:00:00Z"
-        },
-        {
-          "candidateId": "advia-foundation-grant",
-          "eventKey": "advia-foundation-community-grant-nov-2026",
-          "sourceUrl": "https://www.cuinsight.com/press-release/advia-foundation-awards-community-grant/",
-          "sourcePublishedAt": "2026-11-25T12:00:00Z"
-        },
-        {
-          "candidateId": "vizo-education-calendar",
-          "eventKey": "vizo-2027-education-calendar",
-          "sourceUrl": "https://www.cuinsight.com/press-release/vizo-financial-unveils-2027-education-calendar/",
-          "sourcePublishedAt": "2026-11-25T12:00:00Z"
-        },
-        {
-          "candidateId": "eecu-branch-opening",
-          "eventKey": "eecu-new-fort-worth-branch-nov-2026",
-          "sourceUrl": "https://www.eecu.org/news/eecu-opens-new-branch",
-          "sourcePublishedAt": "2026-11-23T10:00:00Z"
-        },
-        {
-          "candidateId": "gulf-winds-donation",
-          "eventKey": "gulf-winds-community-donation-nov-2026",
-          "sourceUrl": "https://www.cuinsight.com/press-release/gulf-winds-credit-union-supports-local-nonprofit/",
-          "sourcePublishedAt": "2026-11-25T12:00:00Z"
-        },
-        {
-          "candidateId": "pnc-investor-conference",
-          "eventKey": "pnc-december-2026-investor-conference",
-          "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Executive-to-Speak-at-Investor-Conference",
-          "sourcePublishedAt": "2026-11-25T13:00:00Z"
-        },
-        {
-          "candidateId": "pnc-chief-economist",
-          "eventKey": "pnc-chief-economist-appointment-2026",
-          "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Names-New-Chief-Economist",
-          "sourcePublishedAt": "2026-11-25T13:00:00Z"
-        },
-        {
-          "candidateId": "fed-global-trade-feds-note",
-          "eventKey": "fed-global-trade-supply-chains-feds-note-2026",
-          "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/global-trade-and-supply-chains-20261125.html",
-          "sourcePublishedAt": "2026-11-25T14:00:00Z"
+          "sourcePublishedAt": "2026-11-25"
         }
       ],
       "candidateTarget": 24,
-      "candidateShortfallReason": null,
       "releaseReady": false
     },
     "candidateEvaluations": [
       {
-        "id": "fed-nov-2026-beige-book",
-        "eventKey": "federal-reserve-november-2026-beige-book",
-        "title": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
-        "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
-        "sourcePublishedAt": "2026-11-25T19:00:00Z",
-        "score": 78.5,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "board-strategy",
-        "primaryTechnology": "data-decisioning",
-        "confidence": 0.97
+        "candidateId": "bis-open-finance-participation",
+        "title": "BIS Study Offers Three Questions for Credit Unions Assessing Open Finance",
+        "score": 74.5,
+        "disposition": "selected",
+        "reasons": []
       },
       {
-        "id": "fed-hpml-2027-appraisal-threshold",
-        "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+        "candidateId": "fed-h8-nonbank-consumer-loans",
+        "title": "Fed Data Shows a $7.2 Billion Shift of Consumer Loans From Banks to Nonbanks",
+        "score": 73.3,
+        "disposition": "qualified",
+        "reasons": []
+      },
+      {
+        "candidateId": "boe-payment-continuity-synthesis",
+        "title": "What Credit Unions Can Learn From the UK’s Minimum-Payments Recovery Test",
+        "score": 71.4,
+        "disposition": "qualified",
+        "reasons": []
+      },
+      {
+        "candidateId": "family-savings-liberty",
+        "title": "Family Savings Signs Agreement to Assume Liberty Bank Assets and Liabilities",
+        "score": 70.2,
+        "disposition": "rejected",
+        "reasons": [
+          "invalid-or-stale-source-date"
+        ]
+      },
+      {
+        "candidateId": "fhfa-2027-cll",
+        "title": "FHFA Raises 2027 Baseline Conforming Loan Limit",
+        "score": 69.6,
+        "disposition": "rejected",
+        "reasons": [
+          "invalid-or-stale-source-date"
+        ]
+      },
+      {
+        "candidateId": "hrcu-synergent-renewal",
+        "title": "Holy Rosary Credit Union Renews Hosted Symitar and Payments Services for Seven Years",
+        "score": 69,
+        "disposition": "rejected",
+        "reasons": [
+          "invalid-or-stale-source-date"
+        ]
+      },
+      {
+        "candidateId": "eltropy-cuanswers-cbx",
+        "title": "Eltropy Extends Loan Texting to CU*Answers CBX and Opens Voice Beta",
+        "score": 67,
+        "disposition": "rejected",
+        "reasons": [
+          "invalid-or-stale-source-date"
+        ]
+      },
+      {
+        "candidateId": "hpml-threshold",
         "title": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
-        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
-        "sourcePublishedAt": "2026-11-25T15:00:00Z",
-        "score": 76.2,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "regtech-monitoring",
-        "confidence": 0.98
-      },
-      {
-        "id": "hrcu-synergent-core-renewal",
-        "eventKey": "heritage-ridge-synergent-seven-year-renewal",
-        "title": "Heritage Ridge Extends Hosted Core and Payments Deal for Seven Years",
-        "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
-        "sourcePublishedAt": "2026-11-25T13:00:00Z",
-        "score": 75.6,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "vendor-management",
-        "primaryTechnology": "core-api-cloud",
-        "confidence": 0.88
-      },
-      {
-        "id": "ncua-fed-bsa-disruption",
-        "eventKey": "bsa-sar-ctr-service-disruption-supervisory-statement",
-        "title": "Supervisors Outline BSA Filing Expectations During Service Disruptions",
-        "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-issue-guidance-bsa-reporting-requirements-service-disruptions",
-        "sourcePublishedAt": "2026-11-25T13:00:00Z",
-        "score": 74.9,
-        "status": "rejected",
-        "reason": "Rejected after editorial review as overlapping the November 25 FinCEN service-disruption Alert; the daily article cycle will not republish the same event.",
-        "selectionRejections": [
-          "same-event-duplicate-with-existing-alert"
-        ],
-        "primaryFunction": "risk-compliance",
-        "primaryTechnology": "regtech-monitoring",
-        "confidence": 0.98
-      },
-      {
-        "id": "fhfa-2027-conforming-limit",
-        "eventKey": "fhfa-2027-conforming-loan-limits",
-        "title": "2027 Conforming Loan Limit Rises to $855,400",
-        "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
-        "sourcePublishedAt": "2026-11-24T15:00:00Z",
-        "score": 74.6,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.99
-      },
-      {
-        "id": "fhfa-fico-10t-roadmap",
-        "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
-        "title": "FHFA Sets FICO 10T Roadmap for Enterprise Mortgage Delivery",
-        "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
-        "sourcePublishedAt": "2026-11-24T16:00:00Z",
-        "score": 74.2,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "data-decisioning",
-        "confidence": 0.97
-      },
-      {
-        "id": "fed-reg-z-m-2027-threshold",
-        "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
-        "title": "Reg Z and Reg M Coverage Threshold Rises to $76,300 for 2027",
-        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
-        "sourcePublishedAt": "2026-11-25T15:00:00Z",
-        "score": 72.1,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "risk-compliance",
-        "primaryTechnology": "regtech-monitoring",
-        "confidence": 0.98
-      },
-      {
-        "id": "payment-choice-resilience-synthesis",
-        "eventKey": "payment-choice-resilience-synthesis-2026",
-        "title": "What Payment Choice Data Says About Channel Resilience",
-        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
-        "sourcePublishedAt": "2026-11-25T10:00:00Z",
-        "score": 72.1,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "operations",
-        "primaryTechnology": "realtime-embedded-finance",
-        "confidence": 0.93
-      },
-      {
-        "id": "ecb-token-reference-model",
-        "eventKey": "ecb-tokenisation-reference-model-nov-2026",
-        "title": "ECB Token Model Maps Eight Layers Needed for Interoperable Markets",
-        "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
-        "sourcePublishedAt": "2026-11-24T10:00:00Z",
-        "score": 70.7,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "vendor-management",
-        "primaryTechnology": "realtime-embedded-finance",
-        "confidence": 0.97
-      },
-      {
-        "id": "fhfa-q3-2026-hpi",
-        "eventKey": "fhfa-q3-2026-house-price-index",
-        "title": "U.S. Home Prices Rose 2.5% Year Over Year in the Third Quarter",
-        "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
-        "sourcePublishedAt": "2026-11-24T15:00:00Z",
-        "score": 70.3,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "data-decisioning",
-        "confidence": 0.98
-      },
-      {
-        "id": "ecb-space-payment-choice-2026",
-        "eventKey": "ecb-2026-space-payment-attitudes",
-        "title": "Cards Edge Past Cash in ECB Survey, but Payment Choice Still Matters",
-        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
-        "sourcePublishedAt": "2026-11-25T10:00:00Z",
-        "score": 69.8,
-        "status": "reviewed",
-        "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
-        "selectionRejections": [],
-        "primaryFunction": "payments-deposits",
-        "primaryTechnology": "realtime-embedded-finance",
-        "confidence": 0.98
-      },
-      {
-        "id": "fed-bowman-supervision-accountability",
-        "eventKey": "bowman-nov-2026-supervision-accountability-speech",
-        "title": "Bowman Calls for Timely, Risk-Focused Bank Supervision",
-        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
-        "sourcePublishedAt": "2026-11-25T14:00:00Z",
-        "score": 69.7,
-        "status": "qualified-backup",
-        "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
-        "selectionRejections": [],
-        "primaryFunction": "risk-compliance",
-        "primaryTechnology": "regtech-monitoring",
-        "confidence": 0.96
-      },
-      {
-        "id": "ant-bny-treasury-mou",
-        "eventKey": "ant-international-bny-24-7-treasury-mou",
-        "title": "Ant International and BNY Explore 24/7 Cross-Border Treasury Tools",
-        "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/ant-international-and-bny-sign-mou-to-explore-24-7-cross-border-treasury-management-solutions.html",
-        "sourcePublishedAt": "2026-11-25T08:00:00Z",
-        "score": 68.3,
-        "status": "qualified-backup",
-        "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
-        "selectionRejections": [],
-        "primaryFunction": "finance-treasury",
-        "primaryTechnology": "realtime-embedded-finance",
-        "confidence": 0.86
-      },
-      {
-        "id": "ecb-sweden-t2",
-        "eventKey": "sweden-riksbank-t2-agreement-2030",
-        "title": "Sweden Targets 2030 Move of Krona Settlement to T2",
-        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
-        "sourcePublishedAt": "2026-11-25T10:00:00Z",
-        "score": 67.9,
-        "status": "qualified-backup",
-        "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
-        "selectionRejections": [],
-        "primaryFunction": "payments-deposits",
-        "primaryTechnology": "realtime-embedded-finance",
-        "confidence": 0.98
-      },
-      {
-        "id": "fhfa-multifamily-caps-2027",
-        "eventKey": "fhfa-2027-enterprise-multifamily-caps",
-        "title": "FHFA Sets $88 Billion 2027 Multifamily Caps for Each Enterprise",
-        "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-2027-multifamily-loan-purchase-caps-for-fannie-mae-and-freddie-mac",
-        "sourcePublishedAt": "2026-11-23T15:00:00Z",
-        "score": 65.8,
-        "status": "rejected",
-        "reason": "Not selected within the bounded qualified core and backup set.",
-        "selectionRejections": [],
-        "primaryFunction": "lending-collections",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.96
-      },
-      {
-        "id": "vizo-education-calendar",
-        "eventKey": "vizo-2027-education-calendar",
-        "title": "Vizo Publishes 2027 Education Calendar",
-        "sourceUrl": "https://www.cuinsight.com/press-release/vizo-financial-unveils-2027-education-calendar/",
-        "sourcePublishedAt": "2026-11-25T12:00:00Z",
-        "score": 61.7,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "hr-training",
-        "primaryTechnology": "workforce-learning",
-        "confidence": 0.82
-      },
-      {
-        "id": "fed-repo-haircuts-note",
-        "eventKey": "fed-hedge-fund-repo-haircuts-note-2026",
-        "title": "Fed Researchers Find Uneven Repo Haircuts Across Hedge Fund Trades",
-        "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/hedge-fund-treasury-repo-haircuts-20261125.html",
-        "sourcePublishedAt": "2026-11-25T14:00:00Z",
-        "score": 61.4,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "finance-treasury",
-        "primaryTechnology": "data-decisioning",
-        "confidence": 0.9
-      },
-      {
-        "id": "fed-global-trade-feds-note",
-        "eventKey": "fed-global-trade-supply-chains-feds-note-2026",
-        "title": "Fed Note Reviews Global Trade and Supply Chain Shifts",
-        "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/global-trade-and-supply-chains-20261125.html",
-        "sourcePublishedAt": "2026-11-25T14:00:00Z",
-        "score": 61.1,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "board-strategy",
-        "primaryTechnology": "data-decisioning",
-        "confidence": 0.9
-      },
-      {
-        "id": "eecu-branch-opening",
-        "eventKey": "eecu-new-fort-worth-branch-nov-2026",
-        "title": "EECU Opens New Fort Worth Branch",
-        "sourceUrl": "https://www.eecu.org/news/eecu-opens-new-branch",
-        "sourcePublishedAt": "2026-11-23T10:00:00Z",
-        "score": 57.7,
-        "status": "rejected",
-        "reason": "invalid-or-stale-source-date; score-below-minimum",
-        "selectionRejections": [
+        "score": 58.4,
+        "disposition": "rejected",
+        "reasons": [
           "invalid-or-stale-source-date",
+          "duplicate-or-near-duplicate",
+          "duplicate-or-near-duplicate",
           "score-below-minimum"
-        ],
-        "primaryFunction": "member-service",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.8
+        ]
       },
       {
-        "id": "advia-foundation-grant",
-        "eventKey": "advia-foundation-community-grant-nov-2026",
-        "title": "Advia Foundation Awards $20,000 Community Grant",
-        "sourceUrl": "https://www.cuinsight.com/press-release/advia-foundation-awards-community-grant/",
-        "sourcePublishedAt": "2026-11-25T12:00:00Z",
-        "score": 57,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
+        "candidateId": "statcan-q3-bop",
+        "title": "Statistics Canada Publishes Q3 Balance of Payments",
+        "score": 47.4,
+        "disposition": "rejected",
+        "reasons": [
           "score-below-minimum"
-        ],
-        "primaryFunction": "marketing-growth",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.85
-      },
-      {
-        "id": "bis-gsib-2026",
-        "eventKey": "bis-2026-global-systemically-important-banks",
-        "title": "Basel Committee Publishes 2026 G-SIB Assessment",
-        "sourceUrl": "https://www.bis.org/press/p261125.htm",
-        "sourcePublishedAt": "2026-11-25T09:00:00Z",
-        "score": 55.7,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "risk-compliance",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.97
-      },
-      {
-        "id": "gulf-winds-donation",
-        "eventKey": "gulf-winds-community-donation-nov-2026",
-        "title": "Gulf Winds Announces Community Donation",
-        "sourceUrl": "https://www.cuinsight.com/press-release/gulf-winds-credit-union-supports-local-nonprofit/",
-        "sourcePublishedAt": "2026-11-25T12:00:00Z",
-        "score": 53,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "marketing-growth",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.8
-      },
-      {
-        "id": "occ-nov-enforcement-actions",
-        "eventKey": "occ-november-2026-enforcement-actions",
-        "title": "OCC Releases November 2026 Enforcement Actions",
-        "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-115.html",
-        "sourcePublishedAt": "2026-11-25T14:00:00Z",
-        "score": 51.5,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "risk-compliance",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.95
-      },
-      {
-        "id": "pnc-chief-economist",
-        "eventKey": "pnc-chief-economist-appointment-2026",
-        "title": "PNC Names New Chief Economist",
-        "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Names-New-Chief-Economist",
-        "sourcePublishedAt": "2026-11-25T13:00:00Z",
-        "score": 45.5,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "board-strategy",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.9
-      },
-      {
-        "id": "pnc-investor-conference",
-        "eventKey": "pnc-december-2026-investor-conference",
-        "title": "PNC Executive to Speak at Investor Conference",
-        "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Executive-to-Speak-at-Investor-Conference",
-        "sourcePublishedAt": "2026-11-25T13:00:00Z",
-        "score": 43,
-        "status": "rejected",
-        "reason": "score-below-minimum",
-        "selectionRejections": [
-          "score-below-minimum"
-        ],
-        "primaryFunction": "finance-treasury",
-        "primaryTechnology": "industry-development",
-        "confidence": 0.9
+        ]
       }
     ],
     "browserReadiness": {
-      "observedAt": "2026-11-26T10:20:00Z",
+      "observedAt": "2026-11-28T10:05:31.432Z",
       "status": "local-blocked-ci-fallback-available",
-      "revision": "88fbde3c0f7a537e2242bddd89248c4291592856",
-      "reason": "This owner runtime has no checked-out repository or pinned Playwright Chromium. No install or cache change was made; the policy-permitted exact-head PR design-check artifact is required."
+      "revision": "6a99310cdc0f41acfe1684588d19f932e37f9e97",
+      "reason": "Missing Chromium headless shell revision 1234; cache absent and unchanged. Exact-head PR design-check artifact and actual visual review required."
+    },
+    "alertCycle": {
+      "status": "not-run",
+      "reason": "Separate Operating System ownership."
     },
     "socialDecision": {
       "status": "held-no-reservation",
-      "reason": "The article cycle is separate from distribution. No fresh complete provider inventory was obtained, historical destination-review holds remain, and no LinkedIn reservation or attempt is authorized in this cycle."
+      "reason": "No live article or verified fresh complete inventory; retained provider holds unchanged."
     },
     "regularPublicationSlots": [
       {
         "slot": 1,
-        "status": "live-verified",
-        "candidateTitle": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
-        "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html",
+        "status": "prepared",
         "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-26T11:14:00Z",
+        "candidateTitle": "BIS Study Offers Three Questions for Credit Unions Assessing Open Finance",
+        "url": "https://creditunionainews.com/insight-bis-open-finance-credit-union-partner-questions.html",
         "outcomeScope": "cycle",
+        "nextReviewAt": "2026-11-28T10:38:38.831Z",
+        "nextAction": "Create one atomic exact-head Insights PR leaving canonical state unchanged; retain full visual and production gates.",
         "evidence": {
           "articleSelection": {
-            "candidateId": "fed-nov-2026-beige-book",
-            "eventKey": "federal-reserve-november-2026-beige-book",
-            "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
-            "sourcePublishedAt": "2026-11-25T19:00:00Z"
-          },
-          "preparation": {
-            "preparedAt": "2026-11-26T10:20:00Z",
-            "classification": "High",
-            "sourceReview": "Read the Federal Reserve's November 25 Beige Book national summary and retained its eight-district growth, four-district flat, price-sensitive consumer, housing and credit-demand limits. The article will not treat district anecdotes as national forecasts or invent credit-union results."
-          },
-          "pending": {
-            "prNumber": 449,
-            "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
-            "run": 45804318176,
-            "job": 139855408809,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
-            "run": 45804318176,
-            "job": 139855408809,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-26T11:09:11Z"
-          },
-          "terminalAcceptance": {
-            "prNumber": 449,
-            "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
-            "run": 45804318176,
-            "job": 139855408809,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-26T11:09:11Z",
-            "artifactId": 15109483357,
-            "artifactSha256": "sha256:912f3e5fd0ea28699ff56ce67c88146228ba03f1a35349e64a4c3967523fd43f",
-            "artifactRevision": "61c945292d1442ce550dfee3fba18e3bab8e154d",
-            "sourceTests": 473,
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": [
-              "Desktop and mobile article title, summary, date, byline, section and original hero artwork render correctly.",
-              "Article body, source link, Table Lore placement, house promotion, related coverage and footer are readable without overflow or broken images.",
-              "Exact-head rendered checks report HTTP 200, zero overflow, zero broken images, zero accessibility findings and zero runtime errors."
-            ]
+            "candidateId": "bis-open-finance-participation",
+            "eventKey": "bis-fsi-79-open-finance-2026-11-26",
+            "sourceUrl": "https://www.bis.org/publications/fsi-insight-79-carrot-stick-and-yardstick-big-techs-implications-open-finance",
+            "sourcePublishedAt": "2026-11-26"
           }
-        },
-        "nextAction": "Merge only PR 449 at exact head 61c9452 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
-        "productionCommit": "052f4c6e94306ea7678c090d3fb84efa00334c79",
-        "verifiedAt": "2026-11-26T11:14:30.010Z"
-      },
-      {
-        "slot": 2,
-        "status": "live-verified",
-        "candidateTitle": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
-        "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-26T11:31:10.898Z",
-        "outcomeScope": "cycle",
-        "evidence": {
-          "articleSelection": {
-            "candidateId": "fed-hpml-2027-appraisal-threshold",
-            "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
-            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
-            "sourcePublishedAt": "2026-11-25T15:00:00Z"
-          },
-          "preparation": {
-            "preparedAt": "2026-11-26T11:16:10.898Z",
-            "classification": "High",
-            "sourceReview": "Read the November 25 joint Federal Reserve, CFPB and OCC release. It raises the 2027 higher-priced mortgage appraisal exemption threshold from $34,200 to $35,500 effective January 1, 2027, based on the 3.9% CPI-W increase. The article will distinguish the small-loan threshold exemption from appraisal rules generally and will not imply every higher-priced mortgage is exempt."
-          },
-          "pending": {
-            "prNumber": 450,
-            "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
-            "run": 45815967652,
-            "job": 139895666512,
-            "runAttempt": 1
-          },
-          "terminalValidation": {
-            "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
-            "run": 45815967652,
-            "job": 139895666512,
-            "runAttempt": 1,
-            "conclusion": "success",
-            "runConclusion": "success",
-            "jobConclusion": "success",
-            "observedAt": "2026-11-26T12:24:46.007Z"
-          },
-          "terminalAcceptance": {
-            "prNumber": 450,
-            "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
-            "run": 45815967652,
-            "job": 139895666512,
-            "runAttempt": 1,
-            "visualReviewedAt": "2026-11-26T12:25:19.623Z",
-            "artifactId": 15117001525,
-            "artifactSha256": "sha256:696e3391c47b3197d5cdee22ec64dffc3cca319efbb7e2dc79951a5e744788e2",
-            "artifactRevision": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
-            "sourceTests": 473,
-            "renderedChecks": 50,
-            "failedChecks": 0,
-            "viewports": [
-              390,
-              1440
-            ],
-            "observations": [
-              "Mobile and desktop title, summary, date, byline, section and original threshold artwork render correctly.",
-              "Article body, primary agency source, Table Lore placement, house promotion, related coverage and footer are readable without overflow or broken images.",
-              "Exact-head rendered report covers 22 routes and 50 checks with zero failures, zero page errors, zero broken images and zero accessibility findings."
-            ]
-          }
-        },
-        "nextAction": "Merge only PR 450 at exact head e2905c737c90d8e9b3676938e3e57dd6dc748f69 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
-        "productionCommit": "d52d5c2220750b669cfab95abddbee11a2fd88ea",
-        "verifiedAt": "2026-11-26T12:30:26.012Z"
-      },
-      {
-        "slot": 3,
-        "status": "editorial-hold",
-        "candidateTitle": "Heritage Ridge Extends Hosted Core and Payments Deal for Seven Years",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "hrcu-synergent-core-renewal",
-            "eventKey": "heritage-ridge-synergent-seven-year-renewal",
-            "score": 75.6,
-            "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
-            "sourcePublishedAt": "2026-11-25T13:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
-      },
-      {
-        "slot": 4,
-        "status": "editorial-hold",
-        "candidateTitle": "2027 Conforming Loan Limit Rises to $855,400",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "fhfa-2027-conforming-limit",
-            "eventKey": "fhfa-2027-conforming-loan-limits",
-            "score": 74.6,
-            "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
-            "sourcePublishedAt": "2026-11-24T15:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
-      },
-      {
-        "slot": 5,
-        "status": "editorial-hold",
-        "candidateTitle": "What Payment Choice Data Says About Channel Resilience",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "payment-choice-resilience-synthesis",
-            "eventKey": "payment-choice-resilience-synthesis-2026",
-            "score": 72.1,
-            "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
-            "sourcePublishedAt": "2026-11-25T10:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
-      },
-      {
-        "slot": 6,
-        "status": "editorial-hold",
-        "candidateTitle": "ECB Token Model Maps Eight Layers Needed for Interoperable Markets",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "ecb-token-reference-model",
-            "eventKey": "ecb-tokenisation-reference-model-nov-2026",
-            "score": 70.7,
-            "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
-            "sourcePublishedAt": "2026-11-24T10:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
-      },
-      {
-        "slot": 7,
-        "status": "editorial-hold",
-        "candidateTitle": "Cards Edge Past Cash in ECB Survey, but Payment Choice Still Matters",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "ecb-space-payment-choice-2026",
-            "eventKey": "ecb-2026-space-payment-attitudes",
-            "score": 69.8,
-            "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
-            "sourcePublishedAt": "2026-11-25T10:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
-      },
-      {
-        "slot": 8,
-        "status": "editorial-hold",
-        "candidateTitle": "FHFA Sets FICO 10T Roadmap for Enterprise Mortgage Delivery",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "fhfa-fico-10t-roadmap",
-            "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
-            "score": 74.2,
-            "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
-            "sourcePublishedAt": "2026-11-24T16:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
-      },
-      {
-        "slot": 9,
-        "status": "editorial-hold",
-        "candidateTitle": "Reg Z and Reg M Coverage Threshold Rises to $76,300 for 2027",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "fed-reg-z-m-2027-threshold",
-            "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
-            "score": 72.1,
-            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
-            "sourcePublishedAt": "2026-11-25T15:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
-      },
-      {
-        "slot": 10,
-        "status": "editorial-hold",
-        "candidateTitle": "U.S. Home Prices Rose 2.5% Year Over Year in the Third Quarter",
-        "accountableOwner": "daily-publisher",
-        "nextReviewAt": "2026-11-27T10:00:00Z",
-        "outcomeScope": "cycle",
-        "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
-        "evidence": {
-          "qualifiedPool": {
-            "candidateId": "fhfa-q3-2026-hpi",
-            "eventKey": "fhfa-q3-2026-house-price-index",
-            "score": 70.3,
-            "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
-            "sourcePublishedAt": "2026-11-24T15:00:00Z",
-            "qualificationStatus": "reviewed",
-            "checkpointCreated": false
-          }
-        },
-        "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        }
       }
     ],
-    "updatedAt": "2026-11-26T12:33:33.528Z",
-    "alertCycle": {
-      "status": "not-run",
-      "reason": "Alerts remain owned by the separate CUAI Operating System."
-    },
-    "blockedReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate."
+    "updatedAt": "2026-11-28T10:08:38.831Z"
   },
   "history": [
     {
@@ -19988,6 +19377,888 @@
           ]
         }
       }
+    },
+    {
+      "date": "2026-11-26",
+      "status": "completed-with-editorial-holds",
+      "outcomeSlot": 3,
+      "fullArticleCount": 2,
+      "alertCount": 0,
+      "publications": [
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html"
+        },
+        {
+          "type": "article",
+          "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html"
+        }
+      ],
+      "evaluatedCandidateCount": 25,
+      "beatsSearched": [
+        "regulation-policy",
+        "security-fraud",
+        "credit-union-industry",
+        "financial-reporting",
+        "payments-core-fintech",
+        "ai-research-platforms",
+        "regional-cu-primary",
+        "workforce-household-data",
+        "international-comparisons"
+      ],
+      "discoveryCoverage": {
+        "verifiedStructure": true,
+        "completeCoverage": true,
+        "accessBlocked": [],
+        "date": "2026-11-26",
+        "candidateCount": 25,
+        "candidateInventory": [
+          {
+            "candidateId": "fed-reg-z-m-2027-threshold",
+            "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
+            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+            "sourcePublishedAt": "2026-11-25T15:00:00Z"
+          },
+          {
+            "candidateId": "fed-hpml-2027-appraisal-threshold",
+            "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+            "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+            "sourcePublishedAt": "2026-11-25T15:00:00Z"
+          },
+          {
+            "candidateId": "fhfa-fico-10t-roadmap",
+            "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
+            "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
+            "sourcePublishedAt": "2026-11-24T16:00:00Z"
+          },
+          {
+            "candidateId": "fhfa-2027-conforming-limit",
+            "eventKey": "fhfa-2027-conforming-loan-limits",
+            "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+            "sourcePublishedAt": "2026-11-24T15:00:00Z"
+          },
+          {
+            "candidateId": "fhfa-q3-2026-hpi",
+            "eventKey": "fhfa-q3-2026-house-price-index",
+            "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
+            "sourcePublishedAt": "2026-11-24T15:00:00Z"
+          },
+          {
+            "candidateId": "fed-nov-2026-beige-book",
+            "eventKey": "federal-reserve-november-2026-beige-book",
+            "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
+            "sourcePublishedAt": "2026-11-25T19:00:00Z"
+          },
+          {
+            "candidateId": "fed-bowman-supervision-accountability",
+            "eventKey": "bowman-nov-2026-supervision-accountability-speech",
+            "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+            "sourcePublishedAt": "2026-11-25T14:00:00Z"
+          },
+          {
+            "candidateId": "ecb-space-payment-choice-2026",
+            "eventKey": "ecb-2026-space-payment-attitudes",
+            "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+            "sourcePublishedAt": "2026-11-25T10:00:00Z"
+          },
+          {
+            "candidateId": "ecb-sweden-t2",
+            "eventKey": "sweden-riksbank-t2-agreement-2030",
+            "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+            "sourcePublishedAt": "2026-11-25T10:00:00Z"
+          },
+          {
+            "candidateId": "ecb-token-reference-model",
+            "eventKey": "ecb-tokenisation-reference-model-nov-2026",
+            "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
+            "sourcePublishedAt": "2026-11-24T10:00:00Z"
+          },
+          {
+            "candidateId": "ant-bny-treasury-mou",
+            "eventKey": "ant-international-bny-24-7-treasury-mou",
+            "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/ant-international-and-bny-sign-mou-to-explore-24-7-cross-border-treasury-management-solutions.html",
+            "sourcePublishedAt": "2026-11-25T08:00:00Z"
+          },
+          {
+            "candidateId": "hrcu-synergent-core-renewal",
+            "eventKey": "heritage-ridge-synergent-seven-year-renewal",
+            "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
+            "sourcePublishedAt": "2026-11-25T13:00:00Z"
+          },
+          {
+            "candidateId": "payment-choice-resilience-synthesis",
+            "eventKey": "payment-choice-resilience-synthesis-2026",
+            "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+            "sourcePublishedAt": "2026-11-25T10:00:00Z"
+          },
+          {
+            "candidateId": "fhfa-multifamily-caps-2027",
+            "eventKey": "fhfa-2027-enterprise-multifamily-caps",
+            "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-2027-multifamily-loan-purchase-caps-for-fannie-mae-and-freddie-mac",
+            "sourcePublishedAt": "2026-11-23T15:00:00Z"
+          },
+          {
+            "candidateId": "fed-repo-haircuts-note",
+            "eventKey": "fed-hedge-fund-repo-haircuts-note-2026",
+            "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/hedge-fund-treasury-repo-haircuts-20261125.html",
+            "sourcePublishedAt": "2026-11-25T14:00:00Z"
+          },
+          {
+            "candidateId": "ncua-fed-bsa-disruption",
+            "eventKey": "bsa-sar-ctr-service-disruption-supervisory-statement",
+            "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-issue-guidance-bsa-reporting-requirements-service-disruptions",
+            "sourcePublishedAt": "2026-11-25T13:00:00Z"
+          },
+          {
+            "candidateId": "bis-gsib-2026",
+            "eventKey": "bis-2026-global-systemically-important-banks",
+            "sourceUrl": "https://www.bis.org/press/p261125.htm",
+            "sourcePublishedAt": "2026-11-25T09:00:00Z"
+          },
+          {
+            "candidateId": "occ-nov-enforcement-actions",
+            "eventKey": "occ-november-2026-enforcement-actions",
+            "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-115.html",
+            "sourcePublishedAt": "2026-11-25T14:00:00Z"
+          },
+          {
+            "candidateId": "advia-foundation-grant",
+            "eventKey": "advia-foundation-community-grant-nov-2026",
+            "sourceUrl": "https://www.cuinsight.com/press-release/advia-foundation-awards-community-grant/",
+            "sourcePublishedAt": "2026-11-25T12:00:00Z"
+          },
+          {
+            "candidateId": "vizo-education-calendar",
+            "eventKey": "vizo-2027-education-calendar",
+            "sourceUrl": "https://www.cuinsight.com/press-release/vizo-financial-unveils-2027-education-calendar/",
+            "sourcePublishedAt": "2026-11-25T12:00:00Z"
+          },
+          {
+            "candidateId": "eecu-branch-opening",
+            "eventKey": "eecu-new-fort-worth-branch-nov-2026",
+            "sourceUrl": "https://www.eecu.org/news/eecu-opens-new-branch",
+            "sourcePublishedAt": "2026-11-23T10:00:00Z"
+          },
+          {
+            "candidateId": "gulf-winds-donation",
+            "eventKey": "gulf-winds-community-donation-nov-2026",
+            "sourceUrl": "https://www.cuinsight.com/press-release/gulf-winds-credit-union-supports-local-nonprofit/",
+            "sourcePublishedAt": "2026-11-25T12:00:00Z"
+          },
+          {
+            "candidateId": "pnc-investor-conference",
+            "eventKey": "pnc-december-2026-investor-conference",
+            "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Executive-to-Speak-at-Investor-Conference",
+            "sourcePublishedAt": "2026-11-25T13:00:00Z"
+          },
+          {
+            "candidateId": "pnc-chief-economist",
+            "eventKey": "pnc-chief-economist-appointment-2026",
+            "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Names-New-Chief-Economist",
+            "sourcePublishedAt": "2026-11-25T13:00:00Z"
+          },
+          {
+            "candidateId": "fed-global-trade-feds-note",
+            "eventKey": "fed-global-trade-supply-chains-feds-note-2026",
+            "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/global-trade-and-supply-chains-20261125.html",
+            "sourcePublishedAt": "2026-11-25T14:00:00Z"
+          }
+        ],
+        "candidateTarget": 24,
+        "candidateShortfallReason": null,
+        "releaseReady": false
+      },
+      "candidateEvaluations": [
+        {
+          "id": "fed-nov-2026-beige-book",
+          "eventKey": "federal-reserve-november-2026-beige-book",
+          "title": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
+          "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
+          "sourcePublishedAt": "2026-11-25T19:00:00Z",
+          "score": 78.5,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "board-strategy",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.97
+        },
+        {
+          "id": "fed-hpml-2027-appraisal-threshold",
+          "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+          "title": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+          "sourcePublishedAt": "2026-11-25T15:00:00Z",
+          "score": 76.2,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "regtech-monitoring",
+          "confidence": 0.98
+        },
+        {
+          "id": "hrcu-synergent-core-renewal",
+          "eventKey": "heritage-ridge-synergent-seven-year-renewal",
+          "title": "Heritage Ridge Extends Hosted Core and Payments Deal for Seven Years",
+          "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z",
+          "score": 75.6,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "vendor-management",
+          "primaryTechnology": "core-api-cloud",
+          "confidence": 0.88
+        },
+        {
+          "id": "ncua-fed-bsa-disruption",
+          "eventKey": "bsa-sar-ctr-service-disruption-supervisory-statement",
+          "title": "Supervisors Outline BSA Filing Expectations During Service Disruptions",
+          "sourceUrl": "https://ncua.gov/newsroom/press-release/2026/agencies-issue-guidance-bsa-reporting-requirements-service-disruptions",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z",
+          "score": 74.9,
+          "status": "rejected",
+          "reason": "Rejected after editorial review as overlapping the November 25 FinCEN service-disruption Alert; the daily article cycle will not republish the same event.",
+          "selectionRejections": [
+            "same-event-duplicate-with-existing-alert"
+          ],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "regtech-monitoring",
+          "confidence": 0.98
+        },
+        {
+          "id": "fhfa-2027-conforming-limit",
+          "eventKey": "fhfa-2027-conforming-loan-limits",
+          "title": "2027 Conforming Loan Limit Rises to $855,400",
+          "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+          "sourcePublishedAt": "2026-11-24T15:00:00Z",
+          "score": 74.6,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.99
+        },
+        {
+          "id": "fhfa-fico-10t-roadmap",
+          "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
+          "title": "FHFA Sets FICO 10T Roadmap for Enterprise Mortgage Delivery",
+          "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
+          "sourcePublishedAt": "2026-11-24T16:00:00Z",
+          "score": 74.2,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.97
+        },
+        {
+          "id": "fed-reg-z-m-2027-threshold",
+          "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
+          "title": "Reg Z and Reg M Coverage Threshold Rises to $76,300 for 2027",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+          "sourcePublishedAt": "2026-11-25T15:00:00Z",
+          "score": 72.1,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "regtech-monitoring",
+          "confidence": 0.98
+        },
+        {
+          "id": "payment-choice-resilience-synthesis",
+          "eventKey": "payment-choice-resilience-synthesis-2026",
+          "title": "What Payment Choice Data Says About Channel Resilience",
+          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+          "sourcePublishedAt": "2026-11-25T10:00:00Z",
+          "score": 72.1,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "operations",
+          "primaryTechnology": "realtime-embedded-finance",
+          "confidence": 0.93
+        },
+        {
+          "id": "ecb-token-reference-model",
+          "eventKey": "ecb-tokenisation-reference-model-nov-2026",
+          "title": "ECB Token Model Maps Eight Layers Needed for Interoperable Markets",
+          "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
+          "sourcePublishedAt": "2026-11-24T10:00:00Z",
+          "score": 70.7,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "vendor-management",
+          "primaryTechnology": "realtime-embedded-finance",
+          "confidence": 0.97
+        },
+        {
+          "id": "fhfa-q3-2026-hpi",
+          "eventKey": "fhfa-q3-2026-house-price-index",
+          "title": "U.S. Home Prices Rose 2.5% Year Over Year in the Third Quarter",
+          "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
+          "sourcePublishedAt": "2026-11-24T15:00:00Z",
+          "score": 70.3,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.98
+        },
+        {
+          "id": "ecb-space-payment-choice-2026",
+          "eventKey": "ecb-2026-space-payment-attitudes",
+          "title": "Cards Edge Past Cash in ECB Survey, but Payment Choice Still Matters",
+          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+          "sourcePublishedAt": "2026-11-25T10:00:00Z",
+          "score": 69.8,
+          "status": "reviewed",
+          "reason": "Qualified by the released scorer and primary-source review for sequential editorial preparation.",
+          "selectionRejections": [],
+          "primaryFunction": "payments-deposits",
+          "primaryTechnology": "realtime-embedded-finance",
+          "confidence": 0.98
+        },
+        {
+          "id": "fed-bowman-supervision-accountability",
+          "eventKey": "bowman-nov-2026-supervision-accountability-speech",
+          "title": "Bowman Calls for Timely, Risk-Focused Bank Supervision",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z",
+          "score": 69.7,
+          "status": "qualified-backup",
+          "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
+          "selectionRejections": [],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "regtech-monitoring",
+          "confidence": 0.96
+        },
+        {
+          "id": "ant-bny-treasury-mou",
+          "eventKey": "ant-international-bny-24-7-treasury-mou",
+          "title": "Ant International and BNY Explore 24/7 Cross-Border Treasury Tools",
+          "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/ant-international-and-bny-sign-mou-to-explore-24-7-cross-border-treasury-management-solutions.html",
+          "sourcePublishedAt": "2026-11-25T08:00:00Z",
+          "score": 68.3,
+          "status": "qualified-backup",
+          "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
+          "selectionRejections": [],
+          "primaryFunction": "finance-treasury",
+          "primaryTechnology": "realtime-embedded-finance",
+          "confidence": 0.86
+        },
+        {
+          "id": "ecb-sweden-t2",
+          "eventKey": "sweden-riksbank-t2-agreement-2030",
+          "title": "Sweden Targets 2030 Move of Krona Settlement to T2",
+          "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+          "sourcePublishedAt": "2026-11-25T10:00:00Z",
+          "score": 67.9,
+          "status": "qualified-backup",
+          "reason": "Qualified backup retained for this bounded daily pool; it is not opened while a core package is active.",
+          "selectionRejections": [],
+          "primaryFunction": "payments-deposits",
+          "primaryTechnology": "realtime-embedded-finance",
+          "confidence": 0.98
+        },
+        {
+          "id": "fhfa-multifamily-caps-2027",
+          "eventKey": "fhfa-2027-enterprise-multifamily-caps",
+          "title": "FHFA Sets $88 Billion 2027 Multifamily Caps for Each Enterprise",
+          "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-2027-multifamily-loan-purchase-caps-for-fannie-mae-and-freddie-mac",
+          "sourcePublishedAt": "2026-11-23T15:00:00Z",
+          "score": 65.8,
+          "status": "rejected",
+          "reason": "Not selected within the bounded qualified core and backup set.",
+          "selectionRejections": [],
+          "primaryFunction": "lending-collections",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.96
+        },
+        {
+          "id": "vizo-education-calendar",
+          "eventKey": "vizo-2027-education-calendar",
+          "title": "Vizo Publishes 2027 Education Calendar",
+          "sourceUrl": "https://www.cuinsight.com/press-release/vizo-financial-unveils-2027-education-calendar/",
+          "sourcePublishedAt": "2026-11-25T12:00:00Z",
+          "score": 61.7,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "hr-training",
+          "primaryTechnology": "workforce-learning",
+          "confidence": 0.82
+        },
+        {
+          "id": "fed-repo-haircuts-note",
+          "eventKey": "fed-hedge-fund-repo-haircuts-note-2026",
+          "title": "Fed Researchers Find Uneven Repo Haircuts Across Hedge Fund Trades",
+          "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/hedge-fund-treasury-repo-haircuts-20261125.html",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z",
+          "score": 61.4,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "finance-treasury",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.9
+        },
+        {
+          "id": "fed-global-trade-feds-note",
+          "eventKey": "fed-global-trade-supply-chains-feds-note-2026",
+          "title": "Fed Note Reviews Global Trade and Supply Chain Shifts",
+          "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/global-trade-and-supply-chains-20261125.html",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z",
+          "score": 61.1,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "board-strategy",
+          "primaryTechnology": "data-decisioning",
+          "confidence": 0.9
+        },
+        {
+          "id": "eecu-branch-opening",
+          "eventKey": "eecu-new-fort-worth-branch-nov-2026",
+          "title": "EECU Opens New Fort Worth Branch",
+          "sourceUrl": "https://www.eecu.org/news/eecu-opens-new-branch",
+          "sourcePublishedAt": "2026-11-23T10:00:00Z",
+          "score": 57.7,
+          "status": "rejected",
+          "reason": "invalid-or-stale-source-date; score-below-minimum",
+          "selectionRejections": [
+            "invalid-or-stale-source-date",
+            "score-below-minimum"
+          ],
+          "primaryFunction": "member-service",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.8
+        },
+        {
+          "id": "advia-foundation-grant",
+          "eventKey": "advia-foundation-community-grant-nov-2026",
+          "title": "Advia Foundation Awards $20,000 Community Grant",
+          "sourceUrl": "https://www.cuinsight.com/press-release/advia-foundation-awards-community-grant/",
+          "sourcePublishedAt": "2026-11-25T12:00:00Z",
+          "score": 57,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "marketing-growth",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.85
+        },
+        {
+          "id": "bis-gsib-2026",
+          "eventKey": "bis-2026-global-systemically-important-banks",
+          "title": "Basel Committee Publishes 2026 G-SIB Assessment",
+          "sourceUrl": "https://www.bis.org/press/p261125.htm",
+          "sourcePublishedAt": "2026-11-25T09:00:00Z",
+          "score": 55.7,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.97
+        },
+        {
+          "id": "gulf-winds-donation",
+          "eventKey": "gulf-winds-community-donation-nov-2026",
+          "title": "Gulf Winds Announces Community Donation",
+          "sourceUrl": "https://www.cuinsight.com/press-release/gulf-winds-credit-union-supports-local-nonprofit/",
+          "sourcePublishedAt": "2026-11-25T12:00:00Z",
+          "score": 53,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "marketing-growth",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.8
+        },
+        {
+          "id": "occ-nov-enforcement-actions",
+          "eventKey": "occ-november-2026-enforcement-actions",
+          "title": "OCC Releases November 2026 Enforcement Actions",
+          "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-115.html",
+          "sourcePublishedAt": "2026-11-25T14:00:00Z",
+          "score": 51.5,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "risk-compliance",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.95
+        },
+        {
+          "id": "pnc-chief-economist",
+          "eventKey": "pnc-chief-economist-appointment-2026",
+          "title": "PNC Names New Chief Economist",
+          "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Names-New-Chief-Economist",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z",
+          "score": 45.5,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "board-strategy",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.9
+        },
+        {
+          "id": "pnc-investor-conference",
+          "eventKey": "pnc-december-2026-investor-conference",
+          "title": "PNC Executive to Speak at Investor Conference",
+          "sourceUrl": "https://pnc.mediaroom.com/2026-11-25-PNC-Executive-to-Speak-at-Investor-Conference",
+          "sourcePublishedAt": "2026-11-25T13:00:00Z",
+          "score": 43,
+          "status": "rejected",
+          "reason": "score-below-minimum",
+          "selectionRejections": [
+            "score-below-minimum"
+          ],
+          "primaryFunction": "finance-treasury",
+          "primaryTechnology": "industry-development",
+          "confidence": 0.9
+        }
+      ],
+      "browserReadiness": {
+        "observedAt": "2026-11-26T10:20:00Z",
+        "status": "local-blocked-ci-fallback-available",
+        "revision": "88fbde3c0f7a537e2242bddd89248c4291592856",
+        "reason": "This owner runtime has no checked-out repository or pinned Playwright Chromium. No install or cache change was made; the policy-permitted exact-head PR design-check artifact is required."
+      },
+      "socialDecision": {
+        "status": "held-no-reservation",
+        "reason": "The article cycle is separate from distribution. No fresh complete provider inventory was obtained, historical destination-review holds remain, and no LinkedIn reservation or attempt is authorized in this cycle."
+      },
+      "regularPublicationSlots": [
+        {
+          "slot": 1,
+          "status": "live-verified",
+          "candidateTitle": "Beige Book Finds Price-Sensitive Consumers and Uneven Credit Demand",
+          "url": "https://creditunionainews.com/news/fed-beige-book-credit-demand-november-2026.html",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-26T11:14:00Z",
+          "outcomeScope": "cycle",
+          "evidence": {
+            "articleSelection": {
+              "candidateId": "fed-nov-2026-beige-book",
+              "eventKey": "federal-reserve-november-2026-beige-book",
+              "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm",
+              "sourcePublishedAt": "2026-11-25T19:00:00Z"
+            },
+            "preparation": {
+              "preparedAt": "2026-11-26T10:20:00Z",
+              "classification": "High",
+              "sourceReview": "Read the Federal Reserve's November 25 Beige Book national summary and retained its eight-district growth, four-district flat, price-sensitive consumer, housing and credit-demand limits. The article will not treat district anecdotes as national forecasts or invent credit-union results."
+            },
+            "pending": {
+              "prNumber": 449,
+              "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+              "run": 45804318176,
+              "job": 139855408809,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+              "run": 45804318176,
+              "job": 139855408809,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-26T11:09:11Z"
+            },
+            "terminalAcceptance": {
+              "prNumber": 449,
+              "head": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+              "run": 45804318176,
+              "job": 139855408809,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-26T11:09:11Z",
+              "artifactId": 15109483357,
+              "artifactSha256": "sha256:912f3e5fd0ea28699ff56ce67c88146228ba03f1a35349e64a4c3967523fd43f",
+              "artifactRevision": "61c945292d1442ce550dfee3fba18e3bab8e154d",
+              "sourceTests": 473,
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": [
+                "Desktop and mobile article title, summary, date, byline, section and original hero artwork render correctly.",
+                "Article body, source link, Table Lore placement, house promotion, related coverage and footer are readable without overflow or broken images.",
+                "Exact-head rendered checks report HTTP 200, zero overflow, zero broken images, zero accessibility findings and zero runtime errors."
+              ]
+            }
+          },
+          "nextAction": "Merge only PR 449 at exact head 61c9452 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+          "productionCommit": "052f4c6e94306ea7678c090d3fb84efa00334c79",
+          "verifiedAt": "2026-11-26T11:14:30.010Z"
+        },
+        {
+          "slot": 2,
+          "status": "live-verified",
+          "candidateTitle": "Higher-Priced Mortgage Appraisal Exemption Rises to $35,500",
+          "url": "https://creditunionainews.com/news/hpml-appraisal-exemption-threshold-2027.html",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-26T11:31:10.898Z",
+          "outcomeScope": "cycle",
+          "evidence": {
+            "articleSelection": {
+              "candidateId": "fed-hpml-2027-appraisal-threshold",
+              "eventKey": "fed-cfpb-occ-2027-hpml-appraisal-threshold",
+              "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+              "sourcePublishedAt": "2026-11-25T15:00:00Z"
+            },
+            "preparation": {
+              "preparedAt": "2026-11-26T11:16:10.898Z",
+              "classification": "High",
+              "sourceReview": "Read the November 25 joint Federal Reserve, CFPB and OCC release. It raises the 2027 higher-priced mortgage appraisal exemption threshold from $34,200 to $35,500 effective January 1, 2027, based on the 3.9% CPI-W increase. The article will distinguish the small-loan threshold exemption from appraisal rules generally and will not imply every higher-priced mortgage is exempt."
+            },
+            "pending": {
+              "prNumber": 450,
+              "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+              "run": 45815967652,
+              "job": 139895666512,
+              "runAttempt": 1
+            },
+            "terminalValidation": {
+              "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+              "run": 45815967652,
+              "job": 139895666512,
+              "runAttempt": 1,
+              "conclusion": "success",
+              "runConclusion": "success",
+              "jobConclusion": "success",
+              "observedAt": "2026-11-26T12:24:46.007Z"
+            },
+            "terminalAcceptance": {
+              "prNumber": 450,
+              "head": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+              "run": 45815967652,
+              "job": 139895666512,
+              "runAttempt": 1,
+              "visualReviewedAt": "2026-11-26T12:25:19.623Z",
+              "artifactId": 15117001525,
+              "artifactSha256": "sha256:696e3391c47b3197d5cdee22ec64dffc3cca319efbb7e2dc79951a5e744788e2",
+              "artifactRevision": "e2905c737c90d8e9b3676938e3e57dd6dc748f69",
+              "sourceTests": 473,
+              "renderedChecks": 50,
+              "failedChecks": 0,
+              "viewports": [
+                390,
+                1440
+              ],
+              "observations": [
+                "Mobile and desktop title, summary, date, byline, section and original threshold artwork render correctly.",
+                "Article body, primary agency source, Table Lore placement, house promotion, related coverage and footer are readable without overflow or broken images.",
+                "Exact-head rendered report covers 22 routes and 50 checks with zero failures, zero page errors, zero broken images and zero accessibility findings."
+              ]
+            }
+          },
+          "nextAction": "Merge only PR 450 at exact head e2905c737c90d8e9b3676938e3e57dd6dc748f69 after the release planner confirms this persisted validated checkpoint; then verify exact production before live closeout.",
+          "productionCommit": "d52d5c2220750b669cfab95abddbee11a2fd88ea",
+          "verifiedAt": "2026-11-26T12:30:26.012Z"
+        },
+        {
+          "slot": 3,
+          "status": "editorial-hold",
+          "candidateTitle": "Heritage Ridge Extends Hosted Core and Payments Deal for Seven Years",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "hrcu-synergent-core-renewal",
+              "eventKey": "heritage-ridge-synergent-seven-year-renewal",
+              "score": 75.6,
+              "sourceUrl": "https://www.cuinsight.com/press-release/synergent-announces-7-year-renewal-with-heritage-ridge-credit-union/",
+              "sourcePublishedAt": "2026-11-25T13:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        },
+        {
+          "slot": 4,
+          "status": "editorial-hold",
+          "candidateTitle": "2027 Conforming Loan Limit Rises to $855,400",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "fhfa-2027-conforming-limit",
+              "eventKey": "fhfa-2027-conforming-loan-limits",
+              "score": 74.6,
+              "sourceUrl": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027",
+              "sourcePublishedAt": "2026-11-24T15:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        },
+        {
+          "slot": 5,
+          "status": "editorial-hold",
+          "candidateTitle": "What Payment Choice Data Says About Channel Resilience",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "payment-choice-resilience-synthesis",
+              "eventKey": "payment-choice-resilience-synthesis-2026",
+              "score": 72.1,
+              "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+              "sourcePublishedAt": "2026-11-25T10:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        },
+        {
+          "slot": 6,
+          "status": "editorial-hold",
+          "candidateTitle": "ECB Token Model Maps Eight Layers Needed for Interoperable Markets",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "ecb-token-reference-model",
+              "eventKey": "ecb-tokenisation-reference-model-nov-2026",
+              "score": 70.7,
+              "sourceUrl": "https://www.ecb.europa.eu/pub/pdf/other/ecb.introproposalTRM2026.en.pdf",
+              "sourcePublishedAt": "2026-11-24T10:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        },
+        {
+          "slot": 7,
+          "status": "editorial-hold",
+          "candidateTitle": "Cards Edge Past Cash in ECB Survey, but Payment Choice Still Matters",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "ecb-space-payment-choice-2026",
+              "eventKey": "ecb-2026-space-payment-attitudes",
+              "score": 69.8,
+              "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+              "sourcePublishedAt": "2026-11-25T10:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        },
+        {
+          "slot": 8,
+          "status": "editorial-hold",
+          "candidateTitle": "FHFA Sets FICO 10T Roadmap for Enterprise Mortgage Delivery",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "fhfa-fico-10t-roadmap",
+              "eventKey": "fhfa-fico-10t-enterprise-implementation-roadmap",
+              "score": 74.2,
+              "sourceUrl": "https://www.fhfa.gov/news/news-release/u.s.-federal-housing-approves-fico-10t-and-publishes-timeline-for-safe-and-sound-implementation",
+              "sourcePublishedAt": "2026-11-24T16:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        },
+        {
+          "slot": 9,
+          "status": "editorial-hold",
+          "candidateTitle": "Reg Z and Reg M Coverage Threshold Rises to $76,300 for 2027",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "fed-reg-z-m-2027-threshold",
+              "eventKey": "fed-cfpb-2027-reg-z-m-dollar-threshold",
+              "score": 72.1,
+              "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+              "sourcePublishedAt": "2026-11-25T15:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        },
+        {
+          "slot": 10,
+          "status": "editorial-hold",
+          "candidateTitle": "U.S. Home Prices Rose 2.5% Year Over Year in the Third Quarter",
+          "accountableOwner": "daily-publisher",
+          "nextReviewAt": "2026-11-27T10:00:00Z",
+          "outcomeScope": "cycle",
+          "holdReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate.",
+          "evidence": {
+            "qualifiedPool": {
+              "candidateId": "fhfa-q3-2026-hpi",
+              "eventKey": "fhfa-q3-2026-house-price-index",
+              "score": 70.3,
+              "sourceUrl": "https://www.fhfa.gov/reports/house-price-index/2026/Q3",
+              "sourcePublishedAt": "2026-11-24T15:00:00Z",
+              "qualificationStatus": "reviewed",
+              "checkpointCreated": false
+            }
+          },
+          "nextAction": "The next existing scheduled cycle performs a refreshed current-source bootstrap. This held item is not a carryover obligation and must not be published without fresh qualification."
+        }
+      ],
+      "updatedAt": "2026-11-26T12:33:33.528Z",
+      "alertCycle": {
+        "status": "not-run",
+        "reason": "Alerts remain owned by the separate CUAI Operating System."
+      },
+      "blockedReason": "2/10 core articles are live after a complete 25-candidate scan with eight remaining independently qualified core candidates and four qualified backups. The serialized exact-head release path consumed this run's safe execution window while repairing one state-schema regression and one article-asset path regression; the remaining packages could not complete P/H/C/V/M/F without weakening validation or inventing checkpoints. No filler, parallel release, retrospective carryover, or relaxed evidence gate."
     }
   ]
 }
